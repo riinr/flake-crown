@@ -1,4 +1,5 @@
 {
+  files.gitignore.pattern.updateLock = true;
   files.cmds.nimble-unwrapped = true;
   files.cmds.nim-unwrapped = true;
   files.cmds.yj = true;
