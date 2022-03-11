@@ -32,7 +32,7 @@
     };
     libs = nixpkgs.lib;
     pkgs = nixpkgs.legacyPackages.x86_64-linux;
-    first = builtins.head (builtins.head a.dependencies);
+    first = builtins.toString (map (d: "${d}") a.dependencies);
   in a // {
     packages.x86_64-linux.first = pkgs.writeText "first.txt" "${first}";
   };
