@@ -22,11 +22,18 @@
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
 
   outputs = { self, nixpkgs, flakeNimbleLib, src-about-master, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
+  let 
+    lib = flakeNimbleLib.lib;
+    a = lib.mkRefOutput {
       inherit self nixpkgs ;
       src = src-about-master;
       deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-about-master"];
       meta = builtins.fromJSON (builtins.readFile ./meta.json);
     };
+    libs = nixpkgs.lib;
+    pkgs = nixpkgs.legacyPackages.x86_64-linux;
+    first = builtins.head (builtins.head a.dependencies);
+  in a // {
+    packages.x86_64-linux.first = pkgs.writeText "first.txt" "${first}";
+  };
 }
