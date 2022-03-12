@@ -153,12 +153,12 @@ proc projectFlake(pkg: JsonNode): auto =
   writeFile(fmt"../{flakeDir}/flake.nix", flakeContent)
   writeFile(fmt"../{flakeDir}/meta.json", $pkg)
   exec fmt"""
-    cd ../{flakeDir};
-    git init;
-    git add .
-    git commit -m "chore: re index {nameLo}" . \
+    strace cd ../{flakeDir};
+    strace git init;
+    strace git add .
+    strace git commit -m "chore: re index {nameLo}" . \
       || echo "nothing to commit"
-    gh repo create nim-nix-pkgs/{nameLo}                \
+    strace gh repo create nim-nix-pkgs/{nameLo}                \
       --description "Automatic nix flake of {nameLo}"   \
       --disable-issues                                  \
       --disable-wiki                                    \
