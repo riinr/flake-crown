@@ -150,7 +150,7 @@
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib"]
+    args = ["self" "nixpkgs" "flakeNimbleLib"];
   in lib.mkProjectOutput {
     inherit self nixpkgs;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
