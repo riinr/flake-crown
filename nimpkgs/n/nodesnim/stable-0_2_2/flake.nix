@@ -1,23 +1,26 @@
 {
   description = ''The Nim GUI/2D framework based on OpenGL and SDL2.'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-nodesnim-stable-0_2_2.flake = false;
-  inputs.src-nodesnim-stable-0_2_2.type = "github";
-  inputs.src-nodesnim-stable-0_2_2.owner = "Ethosa";
-  inputs.src-nodesnim-stable-0_2_2.repo = "nodesnim";
-  inputs.src-nodesnim-stable-0_2_2.ref = "refs/tags/stable-0.2.2";
-  inputs.src-nodesnim-stable-0_2_2.inputs.nixpkgs.follows = "nixpkgs";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-nodesnim-stable-0_2_2, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-nodesnim-stable-0_2_2;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nodesnim-stable-0_2_2"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  inputs.src-nodesnim-stable-0_2_2.flake = false;
+  inputs.src-nodesnim-stable-0_2_2.owner = "Ethosa";
+  inputs.src-nodesnim-stable-0_2_2.ref   = "refs/tags/stable-0.2.2";
+  inputs.src-nodesnim-stable-0_2_2.repo  = "nodesnim";
+  inputs.src-nodesnim-stable-0_2_2.type  = "github";
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-nodesnim-stable-0_2_2"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-nodesnim-stable-0_2_2";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

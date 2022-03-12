@@ -1,23 +1,26 @@
 {
   description = ''LAPACK bindings'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-nimlapack-master.flake = false;
-  inputs.src-nimlapack-master.type = "github";
-  inputs.src-nimlapack-master.owner = "andreaferretti";
-  inputs.src-nimlapack-master.repo = "nimlapack";
-  inputs.src-nimlapack-master.ref = "refs/heads/master";
-  inputs.src-nimlapack-master.inputs.nixpkgs.follows = "nixpkgs";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-nimlapack-master, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-nimlapack-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimlapack-master"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  inputs.src-nimlapack-master.flake = false;
+  inputs.src-nimlapack-master.owner = "andreaferretti";
+  inputs.src-nimlapack-master.ref   = "refs/heads/master";
+  inputs.src-nimlapack-master.repo  = "nimlapack";
+  inputs.src-nimlapack-master.type  = "github";
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-nimlapack-master"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-nimlapack-master";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

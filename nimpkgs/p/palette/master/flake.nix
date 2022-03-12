@@ -1,23 +1,26 @@
 {
   description = ''Color Library'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-Palette-master.flake = false;
-  inputs.src-Palette-master.type = "github";
-  inputs.src-Palette-master.owner = "momeemt";
-  inputs.src-Palette-master.repo = "Palette";
-  inputs.src-Palette-master.ref = "refs/heads/master";
-  inputs.src-Palette-master.inputs.nixpkgs.follows = "nixpkgs";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-Palette-master, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-Palette-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-Palette-master"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  inputs.src-Palette-master.flake = false;
+  inputs.src-Palette-master.owner = "momeemt";
+  inputs.src-Palette-master.ref   = "refs/heads/master";
+  inputs.src-Palette-master.repo  = "Palette";
+  inputs.src-Palette-master.type  = "github";
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-Palette-master"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-Palette-master";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

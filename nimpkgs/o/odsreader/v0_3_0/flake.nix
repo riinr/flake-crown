@@ -1,23 +1,26 @@
 {
   description = ''OpenDocument Spreadhseet reader'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-odsreader-v0_3_0.flake = false;
-  inputs.src-odsreader-v0_3_0.type = "github";
-  inputs.src-odsreader-v0_3_0.owner = "dariolah";
-  inputs.src-odsreader-v0_3_0.repo = "odsreader";
-  inputs.src-odsreader-v0_3_0.ref = "refs/tags/v0.3.0";
-  inputs.src-odsreader-v0_3_0.inputs.nixpkgs.follows = "nixpkgs";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-odsreader-v0_3_0, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-odsreader-v0_3_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-odsreader-v0_3_0"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  inputs.src-odsreader-v0_3_0.flake = false;
+  inputs.src-odsreader-v0_3_0.owner = "dariolah";
+  inputs.src-odsreader-v0_3_0.ref   = "refs/tags/v0.3.0";
+  inputs.src-odsreader-v0_3_0.repo  = "odsreader";
+  inputs.src-odsreader-v0_3_0.type  = "github";
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-odsreader-v0_3_0"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-odsreader-v0_3_0";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

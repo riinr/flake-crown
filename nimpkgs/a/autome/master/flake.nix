@@ -1,23 +1,26 @@
 {
   description = ''Write GUI automation scripts with Nim'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-autome-master.flake = false;
-  inputs.src-autome-master.type = "github";
-  inputs.src-autome-master.owner = "miere43";
-  inputs.src-autome-master.repo = "autome";
-  inputs.src-autome-master.ref = "refs/heads/master";
-  inputs.src-autome-master.inputs.nixpkgs.follows = "nixpkgs";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-autome-master, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-autome-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-autome-master"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  inputs.src-autome-master.flake = false;
+  inputs.src-autome-master.owner = "miere43";
+  inputs.src-autome-master.ref   = "refs/heads/master";
+  inputs.src-autome-master.repo  = "autome";
+  inputs.src-autome-master.type  = "github";
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-autome-master"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-autome-master";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

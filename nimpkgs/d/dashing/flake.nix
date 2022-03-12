@@ -1,33 +1,27 @@
 {
   description = ''Terminal dashboards.'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs."dashing-master".type = "github";
-  inputs."dashing-master".owner = "riinr";
-  inputs."dashing-master".repo = "flake-nimble";
-  inputs."dashing-master".ref = "flake-pinning";
-  inputs."dashing-master".dir = "nimpkgs/d/dashing/master";
+  
+  inputs."dashing-master".url = "path:./master";
   inputs."dashing-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dashing-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-
-    inputs."dashing-0_1_1".type = "github";
-  inputs."dashing-0_1_1".owner = "riinr";
-  inputs."dashing-0_1_1".repo = "flake-nimble";
-  inputs."dashing-0_1_1".ref = "flake-pinning";
-  inputs."dashing-0_1_1".dir = "nimpkgs/d/dashing/0_1_1";
+  
+  inputs."dashing-0_1_1".url = "path:./0_1_1";
   inputs."dashing-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dashing-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkProjectOutput {
-      inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib"]
+  in lib.mkProjectOutput {
+    inherit self nixpkgs;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+    refs = builtins.removeAttrs inputs args;
+  };
 }

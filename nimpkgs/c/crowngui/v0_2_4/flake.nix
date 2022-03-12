@@ -1,104 +1,98 @@
 {
   description = ''Web Technologies based Crossplatform GUI Framework'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-crowngui-v0_2_4.flake = false;
-  inputs.src-crowngui-v0_2_4.type = "github";
+  
+  inputs.src-crowngui-v0_2_4.flake = false;
   inputs.src-crowngui-v0_2_4.owner = "bung87";
-  inputs.src-crowngui-v0_2_4.repo = "crowngui";
-  inputs.src-crowngui-v0_2_4.ref = "refs/tags/v0.2.4";
-  inputs.src-crowngui-v0_2_4.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-crowngui-v0_2_4.ref   = "refs/tags/v0.2.4";
+  inputs.src-crowngui-v0_2_4.repo  = "crowngui";
+  inputs.src-crowngui-v0_2_4.type  = "github";
   
-  
-  inputs."nimble".type = "github";
+  inputs."nimble".dir   = "nimpkgs/n/nimble";
   inputs."nimble".owner = "riinr";
-  inputs."nimble".repo = "flake-nimble";
-  inputs."nimble".ref = "flake-pinning";
-  inputs."nimble".dir = "nimpkgs/n/nimble";
+  inputs."nimble".ref   = "flake-pinning";
+  inputs."nimble".repo  = "flake-nimble";
+  inputs."nimble".type  = "github";
   inputs."nimble".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimble".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."plists".type = "github";
+  inputs."plists".dir   = "nimpkgs/p/plists";
   inputs."plists".owner = "riinr";
-  inputs."plists".repo = "flake-nimble";
-  inputs."plists".ref = "flake-pinning";
-  inputs."plists".dir = "nimpkgs/p/plists";
+  inputs."plists".ref   = "flake-pinning";
+  inputs."plists".repo  = "flake-nimble";
+  inputs."plists".type  = "github";
   inputs."plists".inputs.nixpkgs.follows = "nixpkgs";
   inputs."plists".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."cligen".type = "github";
+  inputs."cligen".dir   = "nimpkgs/c/cligen";
   inputs."cligen".owner = "riinr";
-  inputs."cligen".repo = "flake-nimble";
-  inputs."cligen".ref = "flake-pinning";
-  inputs."cligen".dir = "nimpkgs/c/cligen";
+  inputs."cligen".ref   = "flake-pinning";
+  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."imageman".type = "github";
+  inputs."imageman".dir   = "nimpkgs/i/imageman";
   inputs."imageman".owner = "riinr";
-  inputs."imageman".repo = "flake-nimble";
-  inputs."imageman".ref = "flake-pinning";
-  inputs."imageman".dir = "nimpkgs/i/imageman";
+  inputs."imageman".ref   = "flake-pinning";
+  inputs."imageman".repo  = "flake-nimble";
+  inputs."imageman".type  = "github";
   inputs."imageman".inputs.nixpkgs.follows = "nixpkgs";
   inputs."imageman".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."zopflipng".type = "github";
+  inputs."zopflipng".dir   = "nimpkgs/z/zopflipng";
   inputs."zopflipng".owner = "riinr";
-  inputs."zopflipng".repo = "flake-nimble";
-  inputs."zopflipng".ref = "flake-pinning";
-  inputs."zopflipng".dir = "nimpkgs/z/zopflipng";
+  inputs."zopflipng".ref   = "flake-pinning";
+  inputs."zopflipng".repo  = "flake-nimble";
+  inputs."zopflipng".type  = "github";
   inputs."zopflipng".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zopflipng".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."rcedit".type = "github";
+  inputs."rcedit".dir   = "nimpkgs/r/rcedit";
   inputs."rcedit".owner = "riinr";
-  inputs."rcedit".repo = "flake-nimble";
-  inputs."rcedit".ref = "flake-pinning";
-  inputs."rcedit".dir = "nimpkgs/r/rcedit";
+  inputs."rcedit".ref   = "flake-pinning";
+  inputs."rcedit".repo  = "flake-nimble";
+  inputs."rcedit".type  = "github";
   inputs."rcedit".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rcedit".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."https://github.com/bung87/static_server".type = "github";
+  inputs."https://github.com/bung87/static_server".dir   = "nimpkgs/h/https://github.com/bung87/static_server";
   inputs."https://github.com/bung87/static_server".owner = "riinr";
-  inputs."https://github.com/bung87/static_server".repo = "flake-nimble";
-  inputs."https://github.com/bung87/static_server".ref = "flake-pinning";
-  inputs."https://github.com/bung87/static_server".dir = "nimpkgs/h/https://github.com/bung87/static_server";
+  inputs."https://github.com/bung87/static_server".ref   = "flake-pinning";
+  inputs."https://github.com/bung87/static_server".repo  = "flake-nimble";
+  inputs."https://github.com/bung87/static_server".type  = "github";
   inputs."https://github.com/bung87/static_server".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/bung87/static_server".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."https://github.com/bung87/icon".type = "github";
+  inputs."https://github.com/bung87/icon".dir   = "nimpkgs/h/https://github.com/bung87/icon";
   inputs."https://github.com/bung87/icon".owner = "riinr";
-  inputs."https://github.com/bung87/icon".repo = "flake-nimble";
-  inputs."https://github.com/bung87/icon".ref = "flake-pinning";
-  inputs."https://github.com/bung87/icon".dir = "nimpkgs/h/https://github.com/bung87/icon";
+  inputs."https://github.com/bung87/icon".ref   = "flake-pinning";
+  inputs."https://github.com/bung87/icon".repo  = "flake-nimble";
+  inputs."https://github.com/bung87/icon".type  = "github";
   inputs."https://github.com/bung87/icon".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/bung87/icon".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."jsonschema".type = "github";
+  inputs."jsonschema".dir   = "nimpkgs/j/jsonschema";
   inputs."jsonschema".owner = "riinr";
-  inputs."jsonschema".repo = "flake-nimble";
-  inputs."jsonschema".ref = "flake-pinning";
-  inputs."jsonschema".dir = "nimpkgs/j/jsonschema";
+  inputs."jsonschema".ref   = "flake-pinning";
+  inputs."jsonschema".repo  = "flake-nimble";
+  inputs."jsonschema".type  = "github";
   inputs."jsonschema".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsonschema".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-  outputs = { self, nixpkgs, flakeNimbleLib, src-crowngui-v0_2_4, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-crowngui-v0_2_4;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-crowngui-v0_2_4"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-crowngui-v0_2_4"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-crowngui-v0_2_4";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

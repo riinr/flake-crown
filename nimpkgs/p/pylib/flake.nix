@@ -1,25 +1,23 @@
 {
   description = ''Nim library with python-like functions and operators'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs."pylib-master".type = "github";
-  inputs."pylib-master".owner = "riinr";
-  inputs."pylib-master".repo = "flake-nimble";
-  inputs."pylib-master".ref = "flake-pinning";
-  inputs."pylib-master".dir = "nimpkgs/p/pylib/master";
+  
+  inputs."pylib-master".url = "path:./master";
   inputs."pylib-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pylib-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkProjectOutput {
-      inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib"]
+  in lib.mkProjectOutput {
+    inherit self nixpkgs;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+    refs = builtins.removeAttrs inputs args;
+  };
 }

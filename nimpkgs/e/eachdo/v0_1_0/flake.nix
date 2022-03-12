@@ -1,32 +1,34 @@
 {
   description = ''eachdo executes commands with each multidimensional values'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-eachdo-v0_1_0.flake = false;
-  inputs.src-eachdo-v0_1_0.type = "github";
+  
+  inputs.src-eachdo-v0_1_0.flake = false;
   inputs.src-eachdo-v0_1_0.owner = "jiro4989";
-  inputs.src-eachdo-v0_1_0.repo = "eachdo";
-  inputs.src-eachdo-v0_1_0.ref = "refs/tags/v0.1.0";
-  inputs.src-eachdo-v0_1_0.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-eachdo-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-eachdo-v0_1_0.repo  = "eachdo";
+  inputs.src-eachdo-v0_1_0.type  = "github";
   
-  
-  inputs."argparse".type = "github";
+  inputs."argparse".dir   = "nimpkgs/a/argparse";
   inputs."argparse".owner = "riinr";
-  inputs."argparse".repo = "flake-nimble";
-  inputs."argparse".ref = "flake-pinning";
-  inputs."argparse".dir = "nimpkgs/a/argparse";
+  inputs."argparse".ref   = "flake-pinning";
+  inputs."argparse".repo  = "flake-nimble";
+  inputs."argparse".type  = "github";
   inputs."argparse".inputs.nixpkgs.follows = "nixpkgs";
   inputs."argparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-  outputs = { self, nixpkgs, flakeNimbleLib, src-eachdo-v0_1_0, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-eachdo-v0_1_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-eachdo-v0_1_0"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-eachdo-v0_1_0"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-eachdo-v0_1_0";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

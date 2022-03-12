@@ -1,25 +1,23 @@
 {
   description = ''A zxcvbn clone for Nim. Written in Nim'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs."zxcvbnim-main".type = "github";
-  inputs."zxcvbnim-main".owner = "riinr";
-  inputs."zxcvbnim-main".repo = "flake-nimble";
-  inputs."zxcvbnim-main".ref = "flake-pinning";
-  inputs."zxcvbnim-main".dir = "nimpkgs/z/zxcvbnim/main";
+  
+  inputs."zxcvbnim-main".url = "path:./main";
   inputs."zxcvbnim-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zxcvbnim-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkProjectOutput {
-      inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib"]
+  in lib.mkProjectOutput {
+    inherit self nixpkgs;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+    refs = builtins.removeAttrs inputs args;
+  };
 }

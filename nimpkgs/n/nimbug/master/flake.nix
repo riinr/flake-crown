@@ -1,23 +1,26 @@
 {
   description = ''Nim Semi-Auto Bug Report Tool'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-nimbug-master.flake = false;
-  inputs.src-nimbug-master.type = "github";
-  inputs.src-nimbug-master.owner = "juancarlospaco";
-  inputs.src-nimbug-master.repo = "nimbug";
-  inputs.src-nimbug-master.ref = "refs/heads/master";
-  inputs.src-nimbug-master.inputs.nixpkgs.follows = "nixpkgs";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-nimbug-master, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-nimbug-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimbug-master"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  inputs.src-nimbug-master.flake = false;
+  inputs.src-nimbug-master.owner = "juancarlospaco";
+  inputs.src-nimbug-master.ref   = "refs/heads/master";
+  inputs.src-nimbug-master.repo  = "nimbug";
+  inputs.src-nimbug-master.type  = "github";
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-nimbug-master"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-nimbug-master";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

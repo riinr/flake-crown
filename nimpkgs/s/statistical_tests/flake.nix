@@ -1,33 +1,27 @@
 {
   description = ''Statistical tests in Nim.'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs."statistical_tests-master".type = "github";
-  inputs."statistical_tests-master".owner = "riinr";
-  inputs."statistical_tests-master".repo = "flake-nimble";
-  inputs."statistical_tests-master".ref = "flake-pinning";
-  inputs."statistical_tests-master".dir = "nimpkgs/s/statistical_tests/master";
+  
+  inputs."statistical_tests-master".url = "path:./master";
   inputs."statistical_tests-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."statistical_tests-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-
-    inputs."statistical_tests-v0_1_0".type = "github";
-  inputs."statistical_tests-v0_1_0".owner = "riinr";
-  inputs."statistical_tests-v0_1_0".repo = "flake-nimble";
-  inputs."statistical_tests-v0_1_0".ref = "flake-pinning";
-  inputs."statistical_tests-v0_1_0".dir = "nimpkgs/s/statistical_tests/v0_1_0";
+  
+  inputs."statistical_tests-v0_1_0".url = "path:./v0_1_0";
   inputs."statistical_tests-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."statistical_tests-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkProjectOutput {
-      inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib"]
+  in lib.mkProjectOutput {
+    inherit self nixpkgs;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+    refs = builtins.removeAttrs inputs args;
+  };
 }

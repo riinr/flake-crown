@@ -1,23 +1,26 @@
 {
   description = ''threadsafe memory pool '';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-sharedmempool-master.flake = false;
-  inputs.src-sharedmempool-master.type = "github";
-  inputs.src-sharedmempool-master.owner = "mikra01";
-  inputs.src-sharedmempool-master.repo = "sharedmempool";
-  inputs.src-sharedmempool-master.ref = "refs/heads/master";
-  inputs.src-sharedmempool-master.inputs.nixpkgs.follows = "nixpkgs";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-sharedmempool-master, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-sharedmempool-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-sharedmempool-master"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  inputs.src-sharedmempool-master.flake = false;
+  inputs.src-sharedmempool-master.owner = "mikra01";
+  inputs.src-sharedmempool-master.ref   = "refs/heads/master";
+  inputs.src-sharedmempool-master.repo  = "sharedmempool";
+  inputs.src-sharedmempool-master.type  = "github";
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-sharedmempool-master"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-sharedmempool-master";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

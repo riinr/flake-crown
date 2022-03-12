@@ -1,25 +1,23 @@
 {
   description = ''A lightweight discrete event simulator'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs."desim-master".type = "github";
-  inputs."desim-master".owner = "riinr";
-  inputs."desim-master".repo = "flake-nimble";
-  inputs."desim-master".ref = "flake-pinning";
-  inputs."desim-master".dir = "nimpkgs/d/desim/master";
+  
+  inputs."desim-master".url = "path:./master";
   inputs."desim-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."desim-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkProjectOutput {
-      inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib"]
+  in lib.mkProjectOutput {
+    inherit self nixpkgs;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+    refs = builtins.removeAttrs inputs args;
+  };
 }

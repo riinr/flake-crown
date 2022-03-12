@@ -1,25 +1,23 @@
 {
   description = ''Nim bindings for Clutter toolkit.'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs."nimclutter-master".type = "github";
-  inputs."nimclutter-master".owner = "riinr";
-  inputs."nimclutter-master".repo = "flake-nimble";
-  inputs."nimclutter-master".ref = "flake-pinning";
-  inputs."nimclutter-master".dir = "nimpkgs/n/nimclutter/master";
+  
+  inputs."nimclutter-master".url = "path:./master";
   inputs."nimclutter-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimclutter-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkProjectOutput {
-      inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib"]
+  in lib.mkProjectOutput {
+    inherit self nixpkgs;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+    refs = builtins.removeAttrs inputs args;
+  };
 }

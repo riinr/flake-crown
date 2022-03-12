@@ -1,50 +1,50 @@
 {
   description = ''functions to tracks for genomics data files'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-genoiser-master.flake = false;
-  inputs.src-genoiser-master.type = "github";
+  
+  inputs.src-genoiser-master.flake = false;
   inputs.src-genoiser-master.owner = "brentp";
-  inputs.src-genoiser-master.repo = "genoiser";
-  inputs.src-genoiser-master.ref = "refs/heads/master";
-  inputs.src-genoiser-master.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-genoiser-master.ref   = "refs/heads/master";
+  inputs.src-genoiser-master.repo  = "genoiser";
+  inputs.src-genoiser-master.type  = "github";
   
-  
-  inputs."hts".type = "github";
+  inputs."hts".dir   = "nimpkgs/h/hts";
   inputs."hts".owner = "riinr";
-  inputs."hts".repo = "flake-nimble";
-  inputs."hts".ref = "flake-pinning";
-  inputs."hts".dir = "nimpkgs/h/hts";
+  inputs."hts".ref   = "flake-pinning";
+  inputs."hts".repo  = "flake-nimble";
+  inputs."hts".type  = "github";
   inputs."hts".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hts".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."docopt".type = "github";
+  inputs."docopt".dir   = "nimpkgs/d/docopt";
   inputs."docopt".owner = "riinr";
-  inputs."docopt".repo = "flake-nimble";
-  inputs."docopt".ref = "flake-pinning";
-  inputs."docopt".dir = "nimpkgs/d/docopt";
+  inputs."docopt".ref   = "flake-pinning";
+  inputs."docopt".repo  = "flake-nimble";
+  inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."kexpr".type = "github";
+  inputs."kexpr".dir   = "nimpkgs/k/kexpr";
   inputs."kexpr".owner = "riinr";
-  inputs."kexpr".repo = "flake-nimble";
-  inputs."kexpr".ref = "flake-pinning";
-  inputs."kexpr".dir = "nimpkgs/k/kexpr";
+  inputs."kexpr".ref   = "flake-pinning";
+  inputs."kexpr".repo  = "flake-nimble";
+  inputs."kexpr".type  = "github";
   inputs."kexpr".inputs.nixpkgs.follows = "nixpkgs";
   inputs."kexpr".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-  outputs = { self, nixpkgs, flakeNimbleLib, src-genoiser-master, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-genoiser-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-genoiser-master"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-genoiser-master"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-genoiser-master";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

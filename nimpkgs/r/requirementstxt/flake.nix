@@ -1,25 +1,23 @@
 {
   description = ''Python requirements.txt generic parser for Nim'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs."requirementstxt-master".type = "github";
-  inputs."requirementstxt-master".owner = "riinr";
-  inputs."requirementstxt-master".repo = "flake-nimble";
-  inputs."requirementstxt-master".ref = "flake-pinning";
-  inputs."requirementstxt-master".dir = "nimpkgs/r/requirementstxt/master";
+  
+  inputs."requirementstxt-master".url = "path:./master";
   inputs."requirementstxt-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."requirementstxt-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkProjectOutput {
-      inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib"]
+  in lib.mkProjectOutput {
+    inherit self nixpkgs;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+    refs = builtins.removeAttrs inputs args;
+  };
 }

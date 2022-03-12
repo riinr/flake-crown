@@ -1,87 +1,51 @@
 {
   description = ''Command line tools for Prologue.'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs."logue-master".type = "github";
-  inputs."logue-master".owner = "riinr";
-  inputs."logue-master".repo = "flake-nimble";
-  inputs."logue-master".ref = "flake-pinning";
-  inputs."logue-master".dir = "nimpkgs/l/logue/master";
+  
+  inputs."logue-master".url = "path:./master";
   inputs."logue-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."logue-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-
-    inputs."logue-v0_1_0".type = "github";
-  inputs."logue-v0_1_0".owner = "riinr";
-  inputs."logue-v0_1_0".repo = "flake-nimble";
-  inputs."logue-v0_1_0".ref = "flake-pinning";
-  inputs."logue-v0_1_0".dir = "nimpkgs/l/logue/v0_1_0";
+  
+  inputs."logue-v0_1_0".url = "path:./v0_1_0";
   inputs."logue-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."logue-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-
-    inputs."logue-v0_1_2".type = "github";
-  inputs."logue-v0_1_2".owner = "riinr";
-  inputs."logue-v0_1_2".repo = "flake-nimble";
-  inputs."logue-v0_1_2".ref = "flake-pinning";
-  inputs."logue-v0_1_2".dir = "nimpkgs/l/logue/v0_1_2";
+  
+  inputs."logue-v0_1_2".url = "path:./v0_1_2";
   inputs."logue-v0_1_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."logue-v0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-
-    inputs."logue-v0_1_6".type = "github";
-  inputs."logue-v0_1_6".owner = "riinr";
-  inputs."logue-v0_1_6".repo = "flake-nimble";
-  inputs."logue-v0_1_6".ref = "flake-pinning";
-  inputs."logue-v0_1_6".dir = "nimpkgs/l/logue/v0_1_6";
+  
+  inputs."logue-v0_1_6".url = "path:./v0_1_6";
   inputs."logue-v0_1_6".inputs.nixpkgs.follows = "nixpkgs";
   inputs."logue-v0_1_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-
-    inputs."logue-v0_1_8".type = "github";
-  inputs."logue-v0_1_8".owner = "riinr";
-  inputs."logue-v0_1_8".repo = "flake-nimble";
-  inputs."logue-v0_1_8".ref = "flake-pinning";
-  inputs."logue-v0_1_8".dir = "nimpkgs/l/logue/v0_1_8";
+  
+  inputs."logue-v0_1_8".url = "path:./v0_1_8";
   inputs."logue-v0_1_8".inputs.nixpkgs.follows = "nixpkgs";
   inputs."logue-v0_1_8".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-
-    inputs."logue-v0_2_0".type = "github";
-  inputs."logue-v0_2_0".owner = "riinr";
-  inputs."logue-v0_2_0".repo = "flake-nimble";
-  inputs."logue-v0_2_0".ref = "flake-pinning";
-  inputs."logue-v0_2_0".dir = "nimpkgs/l/logue/v0_2_0";
+  
+  inputs."logue-v0_2_0".url = "path:./v0_2_0";
   inputs."logue-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."logue-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-
-    inputs."logue-v0_2_2".type = "github";
-  inputs."logue-v0_2_2".owner = "riinr";
-  inputs."logue-v0_2_2".repo = "flake-nimble";
-  inputs."logue-v0_2_2".ref = "flake-pinning";
-  inputs."logue-v0_2_2".dir = "nimpkgs/l/logue/v0_2_2";
+  
+  inputs."logue-v0_2_2".url = "path:./v0_2_2";
   inputs."logue-v0_2_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."logue-v0_2_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-
-    inputs."logue-v0_2_4".type = "github";
-  inputs."logue-v0_2_4".owner = "riinr";
-  inputs."logue-v0_2_4".repo = "flake-nimble";
-  inputs."logue-v0_2_4".ref = "flake-pinning";
-  inputs."logue-v0_2_4".dir = "nimpkgs/l/logue/v0_2_4";
+  
+  inputs."logue-v0_2_4".url = "path:./v0_2_4";
   inputs."logue-v0_2_4".inputs.nixpkgs.follows = "nixpkgs";
   inputs."logue-v0_2_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkProjectOutput {
-      inherit self nixpkgs;
-      refs = builtins.removeAttrs inputs ["self" "nixpkgs" "flakeNimbleLib"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib"]
+  in lib.mkProjectOutput {
+    inherit self nixpkgs;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+    refs = builtins.removeAttrs inputs args;
+  };
 }

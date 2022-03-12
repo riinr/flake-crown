@@ -1,59 +1,58 @@
 {
   description = ''The core types and functions of the SciNim ecosystem'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-scinim-v0_2_2.flake = false;
-  inputs.src-scinim-v0_2_2.type = "github";
+  
+  inputs.src-scinim-v0_2_2.flake = false;
   inputs.src-scinim-v0_2_2.owner = "SciNim";
-  inputs.src-scinim-v0_2_2.repo = "scinim";
-  inputs.src-scinim-v0_2_2.ref = "refs/tags/v0.2.2";
-  inputs.src-scinim-v0_2_2.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-scinim-v0_2_2.ref   = "refs/tags/v0.2.2";
+  inputs.src-scinim-v0_2_2.repo  = "scinim";
+  inputs.src-scinim-v0_2_2.type  = "github";
   
-  
-  inputs."fusion".type = "github";
+  inputs."fusion".dir   = "nimpkgs/f/fusion";
   inputs."fusion".owner = "riinr";
-  inputs."fusion".repo = "flake-nimble";
-  inputs."fusion".ref = "flake-pinning";
-  inputs."fusion".dir = "nimpkgs/f/fusion";
+  inputs."fusion".ref   = "flake-pinning";
+  inputs."fusion".repo  = "flake-nimble";
+  inputs."fusion".type  = "github";
   inputs."fusion".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fusion".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."arraymancer".type = "github";
+  inputs."arraymancer".dir   = "nimpkgs/a/arraymancer";
   inputs."arraymancer".owner = "riinr";
-  inputs."arraymancer".repo = "flake-nimble";
-  inputs."arraymancer".ref = "flake-pinning";
-  inputs."arraymancer".dir = "nimpkgs/a/arraymancer";
+  inputs."arraymancer".ref   = "flake-pinning";
+  inputs."arraymancer".repo  = "flake-nimble";
+  inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."polynumeric".type = "github";
+  inputs."polynumeric".dir   = "nimpkgs/p/polynumeric";
   inputs."polynumeric".owner = "riinr";
-  inputs."polynumeric".repo = "flake-nimble";
-  inputs."polynumeric".ref = "flake-pinning";
-  inputs."polynumeric".dir = "nimpkgs/p/polynumeric";
+  inputs."polynumeric".ref   = "flake-pinning";
+  inputs."polynumeric".repo  = "flake-nimble";
+  inputs."polynumeric".type  = "github";
   inputs."polynumeric".inputs.nixpkgs.follows = "nixpkgs";
   inputs."polynumeric".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."nimpy".type = "github";
+  inputs."nimpy".dir   = "nimpkgs/n/nimpy";
   inputs."nimpy".owner = "riinr";
-  inputs."nimpy".repo = "flake-nimble";
-  inputs."nimpy".ref = "flake-pinning";
-  inputs."nimpy".dir = "nimpkgs/n/nimpy";
+  inputs."nimpy".ref   = "flake-pinning";
+  inputs."nimpy".repo  = "flake-nimble";
+  inputs."nimpy".type  = "github";
   inputs."nimpy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-  outputs = { self, nixpkgs, flakeNimbleLib, src-scinim-v0_2_2, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-scinim-v0_2_2;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-scinim-v0_2_2"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-scinim-v0_2_2"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-scinim-v0_2_2";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

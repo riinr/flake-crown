@@ -1,23 +1,26 @@
 {
   description = ''PCP PMDA module bindings'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-nimpmda-master.flake = false;
-  inputs.src-nimpmda-master.type = "github";
-  inputs.src-nimpmda-master.owner = "jasonk000";
-  inputs.src-nimpmda-master.repo = "nimpmda";
-  inputs.src-nimpmda-master.ref = "refs/heads/master";
-  inputs.src-nimpmda-master.inputs.nixpkgs.follows = "nixpkgs";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-nimpmda-master, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-nimpmda-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimpmda-master"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  inputs.src-nimpmda-master.flake = false;
+  inputs.src-nimpmda-master.owner = "jasonk000";
+  inputs.src-nimpmda-master.ref   = "refs/heads/master";
+  inputs.src-nimpmda-master.repo  = "nimpmda";
+  inputs.src-nimpmda-master.type  = "github";
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-nimpmda-master"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-nimpmda-master";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

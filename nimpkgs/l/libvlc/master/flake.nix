@@ -1,32 +1,34 @@
 {
   description = ''libvlc bindings for Nim'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-libvlc-master.flake = false;
-  inputs.src-libvlc-master.type = "github";
+  
+  inputs.src-libvlc-master.flake = false;
   inputs.src-libvlc-master.owner = "Yardanico";
-  inputs.src-libvlc-master.repo = "nim-libvlc";
-  inputs.src-libvlc-master.ref = "refs/heads/master";
-  inputs.src-libvlc-master.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-libvlc-master.ref   = "refs/heads/master";
+  inputs.src-libvlc-master.repo  = "nim-libvlc";
+  inputs.src-libvlc-master.type  = "github";
   
-  
-  inputs."nimterop".type = "github";
+  inputs."nimterop".dir   = "nimpkgs/n/nimterop";
   inputs."nimterop".owner = "riinr";
-  inputs."nimterop".repo = "flake-nimble";
-  inputs."nimterop".ref = "flake-pinning";
-  inputs."nimterop".dir = "nimpkgs/n/nimterop";
+  inputs."nimterop".ref   = "flake-pinning";
+  inputs."nimterop".repo  = "flake-nimble";
+  inputs."nimterop".type  = "github";
   inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-  outputs = { self, nixpkgs, flakeNimbleLib, src-libvlc-master, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-libvlc-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-libvlc-master"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-libvlc-master"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-libvlc-master";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

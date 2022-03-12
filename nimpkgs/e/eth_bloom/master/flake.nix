@@ -1,41 +1,42 @@
 {
   description = ''Ethereum bloom filter (deprecated, now part of the 'eth' package)'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-eth_bloom-master.flake = false;
-  inputs.src-eth_bloom-master.type = "github";
+  
+  inputs.src-eth_bloom-master.flake = false;
   inputs.src-eth_bloom-master.owner = "status-im";
-  inputs.src-eth_bloom-master.repo = "nim-eth-bloom";
-  inputs.src-eth_bloom-master.ref = "refs/heads/master";
-  inputs.src-eth_bloom-master.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-eth_bloom-master.ref   = "refs/heads/master";
+  inputs.src-eth_bloom-master.repo  = "nim-eth-bloom";
+  inputs.src-eth_bloom-master.type  = "github";
   
-  
-  inputs."nimcrypto".type = "github";
+  inputs."nimcrypto".dir   = "nimpkgs/n/nimcrypto";
   inputs."nimcrypto".owner = "riinr";
-  inputs."nimcrypto".repo = "flake-nimble";
-  inputs."nimcrypto".ref = "flake-pinning";
-  inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
+  inputs."nimcrypto".ref   = "flake-pinning";
+  inputs."nimcrypto".repo  = "flake-nimble";
+  inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."stint".type = "github";
+  inputs."stint".dir   = "nimpkgs/s/stint";
   inputs."stint".owner = "riinr";
-  inputs."stint".repo = "flake-nimble";
-  inputs."stint".ref = "flake-pinning";
-  inputs."stint".dir = "nimpkgs/s/stint";
+  inputs."stint".ref   = "flake-pinning";
+  inputs."stint".repo  = "flake-nimble";
+  inputs."stint".type  = "github";
   inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-  outputs = { self, nixpkgs, flakeNimbleLib, src-eth_bloom-master, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-eth_bloom-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-eth_bloom-master"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-eth_bloom-master"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-eth_bloom-master";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

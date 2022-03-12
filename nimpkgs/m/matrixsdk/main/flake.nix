@@ -1,23 +1,26 @@
 {
   description = ''A Matrix (https://matrix.org) client and appservice API wrapper for Nim!'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-matrixsdk-main.flake = false;
-  inputs.src-matrixsdk-main.type = "github";
-  inputs.src-matrixsdk-main.owner = "dylhack";
-  inputs.src-matrixsdk-main.repo = "matrix-nim-sdk";
-  inputs.src-matrixsdk-main.ref = "refs/heads/main";
-  inputs.src-matrixsdk-main.inputs.nixpkgs.follows = "nixpkgs";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-matrixsdk-main, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-matrixsdk-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-matrixsdk-main"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  inputs.src-matrixsdk-main.flake = false;
+  inputs.src-matrixsdk-main.owner = "dylhack";
+  inputs.src-matrixsdk-main.ref   = "refs/heads/main";
+  inputs.src-matrixsdk-main.repo  = "matrix-nim-sdk";
+  inputs.src-matrixsdk-main.type  = "github";
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-matrixsdk-main"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-matrixsdk-main";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

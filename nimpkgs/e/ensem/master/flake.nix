@@ -1,23 +1,26 @@
 {
   description = ''Support for ensemble file format and arithmetic using jackknife/bootstrap propagation of errors'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-ensem-master.flake = false;
-  inputs.src-ensem-master.type = "github";
-  inputs.src-ensem-master.owner = "JeffersonLab";
-  inputs.src-ensem-master.repo = "ensem";
-  inputs.src-ensem-master.ref = "refs/heads/master";
-  inputs.src-ensem-master.inputs.nixpkgs.follows = "nixpkgs";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-ensem-master, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-ensem-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-ensem-master"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  inputs.src-ensem-master.flake = false;
+  inputs.src-ensem-master.owner = "JeffersonLab";
+  inputs.src-ensem-master.ref   = "refs/heads/master";
+  inputs.src-ensem-master.repo  = "ensem";
+  inputs.src-ensem-master.type  = "github";
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-ensem-master"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-ensem-master";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

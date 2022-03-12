@@ -1,41 +1,42 @@
 {
   description = ''Utilities for the Encoding for Robust Immutable Storage (ERIS)'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-eris_utils-0_3_0.flake = false;
-  inputs.src-eris_utils-0_3_0.type = "other";
+  
+  inputs.src-eris_utils-0_3_0.flake = false;
   inputs.src-eris_utils-0_3_0.owner = "~ehmry";
-  inputs.src-eris_utils-0_3_0.repo = "eris_utils";
-  inputs.src-eris_utils-0_3_0.ref = "refs/tags/0.3.0";
-  inputs.src-eris_utils-0_3_0.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-eris_utils-0_3_0.ref   = "refs/tags/0.3.0";
+  inputs.src-eris_utils-0_3_0.repo  = "eris_utils";
+  inputs.src-eris_utils-0_3_0.type  = "other";
   
-  
-  inputs."eris".type = "github";
+  inputs."eris".dir   = "nimpkgs/e/eris";
   inputs."eris".owner = "riinr";
-  inputs."eris".repo = "flake-nimble";
-  inputs."eris".ref = "flake-pinning";
-  inputs."eris".dir = "nimpkgs/e/eris";
+  inputs."eris".ref   = "flake-pinning";
+  inputs."eris".repo  = "flake-nimble";
+  inputs."eris".type  = "github";
   inputs."eris".inputs.nixpkgs.follows = "nixpkgs";
   inputs."eris".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."tkrzw".type = "github";
+  inputs."tkrzw".dir   = "nimpkgs/t/tkrzw";
   inputs."tkrzw".owner = "riinr";
-  inputs."tkrzw".repo = "flake-nimble";
-  inputs."tkrzw".ref = "flake-pinning";
-  inputs."tkrzw".dir = "nimpkgs/t/tkrzw";
+  inputs."tkrzw".ref   = "flake-pinning";
+  inputs."tkrzw".repo  = "flake-nimble";
+  inputs."tkrzw".type  = "github";
   inputs."tkrzw".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tkrzw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-  outputs = { self, nixpkgs, flakeNimbleLib, src-eris_utils-0_3_0, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-eris_utils-0_3_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-eris_utils-0_3_0"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-eris_utils-0_3_0"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-eris_utils-0_3_0";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

@@ -1,23 +1,26 @@
 {
   description = ''Discord library for Nim'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-discordnim-develop.flake = false;
-  inputs.src-discordnim-develop.type = "github";
-  inputs.src-discordnim-develop.owner = "Krognol";
-  inputs.src-discordnim-develop.repo = "discordnim";
-  inputs.src-discordnim-develop.ref = "refs/heads/develop";
-  inputs.src-discordnim-develop.inputs.nixpkgs.follows = "nixpkgs";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-discordnim-develop, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-discordnim-develop;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-discordnim-develop"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  inputs.src-discordnim-develop.flake = false;
+  inputs.src-discordnim-develop.owner = "Krognol";
+  inputs.src-discordnim-develop.ref   = "refs/heads/develop";
+  inputs.src-discordnim-develop.repo  = "discordnim";
+  inputs.src-discordnim-develop.type  = "github";
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-discordnim-develop"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-discordnim-develop";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

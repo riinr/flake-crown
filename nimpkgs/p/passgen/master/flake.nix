@@ -1,32 +1,34 @@
 {
   description = ''Password generation library in Nim'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-passgen-master.flake = false;
-  inputs.src-passgen-master.type = "github";
+  
+  inputs.src-passgen-master.flake = false;
   inputs.src-passgen-master.owner = "rustomax";
-  inputs.src-passgen-master.repo = "nim-passgen";
-  inputs.src-passgen-master.ref = "refs/heads/master";
-  inputs.src-passgen-master.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-passgen-master.ref   = "refs/heads/master";
+  inputs.src-passgen-master.repo  = "nim-passgen";
+  inputs.src-passgen-master.type  = "github";
   
-  
-  inputs."nimcrypto".type = "github";
+  inputs."nimcrypto".dir   = "nimpkgs/n/nimcrypto";
   inputs."nimcrypto".owner = "riinr";
-  inputs."nimcrypto".repo = "flake-nimble";
-  inputs."nimcrypto".ref = "flake-pinning";
-  inputs."nimcrypto".dir = "nimpkgs/n/nimcrypto";
+  inputs."nimcrypto".ref   = "flake-pinning";
+  inputs."nimcrypto".repo  = "flake-nimble";
+  inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-  outputs = { self, nixpkgs, flakeNimbleLib, src-passgen-master, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-passgen-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-passgen-master"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-passgen-master"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-passgen-master";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

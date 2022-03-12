@@ -1,32 +1,34 @@
 {
   description = ''Mustache templating for Nim.'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-moustachu-master.flake = false;
-  inputs.src-moustachu-master.type = "github";
+  
+  inputs.src-moustachu-master.flake = false;
   inputs.src-moustachu-master.owner = "fenekku";
-  inputs.src-moustachu-master.repo = "moustachu";
-  inputs.src-moustachu-master.ref = "refs/heads/master";
-  inputs.src-moustachu-master.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-moustachu-master.ref   = "refs/heads/master";
+  inputs.src-moustachu-master.repo  = "moustachu";
+  inputs.src-moustachu-master.type  = "github";
   
-  
-  inputs."commandeer".type = "github";
+  inputs."commandeer".dir   = "nimpkgs/c/commandeer";
   inputs."commandeer".owner = "riinr";
-  inputs."commandeer".repo = "flake-nimble";
-  inputs."commandeer".ref = "flake-pinning";
-  inputs."commandeer".dir = "nimpkgs/c/commandeer";
+  inputs."commandeer".ref   = "flake-pinning";
+  inputs."commandeer".repo  = "flake-nimble";
+  inputs."commandeer".type  = "github";
   inputs."commandeer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."commandeer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-  outputs = { self, nixpkgs, flakeNimbleLib, src-moustachu-master, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-moustachu-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-moustachu-master"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-moustachu-master"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-moustachu-master";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

@@ -1,32 +1,34 @@
 {
   description = ''Linear algebra for Nim'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-linalg-0_4_1.flake = false;
-  inputs.src-linalg-0_4_1.type = "github";
+  
+  inputs.src-linalg-0_4_1.flake = false;
   inputs.src-linalg-0_4_1.owner = "andreaferretti";
-  inputs.src-linalg-0_4_1.repo = "linear-algebra";
-  inputs.src-linalg-0_4_1.ref = "refs/tags/0.4.1";
-  inputs.src-linalg-0_4_1.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-linalg-0_4_1.ref   = "refs/tags/0.4.1";
+  inputs.src-linalg-0_4_1.repo  = "linear-algebra";
+  inputs.src-linalg-0_4_1.type  = "github";
   
-  
-  inputs."nimblas".type = "github";
+  inputs."nimblas".dir   = "nimpkgs/n/nimblas";
   inputs."nimblas".owner = "riinr";
-  inputs."nimblas".repo = "flake-nimble";
-  inputs."nimblas".ref = "flake-pinning";
-  inputs."nimblas".dir = "nimpkgs/n/nimblas";
+  inputs."nimblas".ref   = "flake-pinning";
+  inputs."nimblas".repo  = "flake-nimble";
+  inputs."nimblas".type  = "github";
   inputs."nimblas".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimblas".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-  outputs = { self, nixpkgs, flakeNimbleLib, src-linalg-0_4_1, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-linalg-0_4_1;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-linalg-0_4_1"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-linalg-0_4_1"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-linalg-0_4_1";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

@@ -1,32 +1,34 @@
 {
   description = ''libarchive wrapper for Nim'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-nimarchive-v0_2_1.flake = false;
-  inputs.src-nimarchive-v0_2_1.type = "github";
+  
+  inputs.src-nimarchive-v0_2_1.flake = false;
   inputs.src-nimarchive-v0_2_1.owner = "genotrance";
-  inputs.src-nimarchive-v0_2_1.repo = "nimarchive";
-  inputs.src-nimarchive-v0_2_1.ref = "refs/tags/v0.2.1";
-  inputs.src-nimarchive-v0_2_1.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-nimarchive-v0_2_1.ref   = "refs/tags/v0.2.1";
+  inputs.src-nimarchive-v0_2_1.repo  = "nimarchive";
+  inputs.src-nimarchive-v0_2_1.type  = "github";
   
-  
-  inputs."nimgen".type = "github";
+  inputs."nimgen".dir   = "nimpkgs/n/nimgen";
   inputs."nimgen".owner = "riinr";
-  inputs."nimgen".repo = "flake-nimble";
-  inputs."nimgen".ref = "flake-pinning";
-  inputs."nimgen".dir = "nimpkgs/n/nimgen";
+  inputs."nimgen".ref   = "flake-pinning";
+  inputs."nimgen".repo  = "flake-nimble";
+  inputs."nimgen".type  = "github";
   inputs."nimgen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimgen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-  outputs = { self, nixpkgs, flakeNimbleLib, src-nimarchive-v0_2_1, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-nimarchive-v0_2_1;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nimarchive-v0_2_1"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-nimarchive-v0_2_1"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-nimarchive-v0_2_1";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

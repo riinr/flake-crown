@@ -1,32 +1,34 @@
 {
   description = ''Surfing is a highly functional CLI for Base64.'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-surfing-main.flake = false;
-  inputs.src-surfing-main.type = "github";
+  
+  inputs.src-surfing-main.flake = false;
   inputs.src-surfing-main.owner = "momeemt";
-  inputs.src-surfing-main.repo = "surfing";
-  inputs.src-surfing-main.ref = "refs/heads/main";
-  inputs.src-surfing-main.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-surfing-main.ref   = "refs/heads/main";
+  inputs.src-surfing-main.repo  = "surfing";
+  inputs.src-surfing-main.type  = "github";
   
-  
-  inputs."cligen".type = "github";
+  inputs."cligen".dir   = "nimpkgs/c/cligen";
   inputs."cligen".owner = "riinr";
-  inputs."cligen".repo = "flake-nimble";
-  inputs."cligen".ref = "flake-pinning";
-  inputs."cligen".dir = "nimpkgs/c/cligen";
+  inputs."cligen".ref   = "flake-pinning";
+  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-  outputs = { self, nixpkgs, flakeNimbleLib, src-surfing-main, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-surfing-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-surfing-main"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-surfing-main"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-surfing-main";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

@@ -1,50 +1,50 @@
 {
   description = ''Collection of helper utilities'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-hmisc-v0_11_19.flake = false;
-  inputs.src-hmisc-v0_11_19.type = "github";
+  
+  inputs.src-hmisc-v0_11_19.flake = false;
   inputs.src-hmisc-v0_11_19.owner = "haxscramper";
-  inputs.src-hmisc-v0_11_19.repo = "hmisc";
-  inputs.src-hmisc-v0_11_19.ref = "refs/tags/v0.11.19";
-  inputs.src-hmisc-v0_11_19.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-hmisc-v0_11_19.ref   = "refs/tags/v0.11.19";
+  inputs.src-hmisc-v0_11_19.repo  = "hmisc";
+  inputs.src-hmisc-v0_11_19.type  = "github";
   
-  
-  inputs."fusion".type = "github";
+  inputs."fusion".dir   = "nimpkgs/f/fusion";
   inputs."fusion".owner = "riinr";
-  inputs."fusion".repo = "flake-nimble";
-  inputs."fusion".ref = "flake-pinning";
-  inputs."fusion".dir = "nimpkgs/f/fusion";
+  inputs."fusion".ref   = "flake-pinning";
+  inputs."fusion".repo  = "flake-nimble";
+  inputs."fusion".type  = "github";
   inputs."fusion".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fusion".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."benchy".type = "github";
+  inputs."benchy".dir   = "nimpkgs/b/benchy";
   inputs."benchy".owner = "riinr";
-  inputs."benchy".repo = "flake-nimble";
-  inputs."benchy".ref = "flake-pinning";
-  inputs."benchy".dir = "nimpkgs/b/benchy";
+  inputs."benchy".ref   = "flake-pinning";
+  inputs."benchy".repo  = "flake-nimble";
+  inputs."benchy".type  = "github";
   inputs."benchy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."benchy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."jsony".type = "github";
+  inputs."jsony".dir   = "nimpkgs/j/jsony";
   inputs."jsony".owner = "riinr";
-  inputs."jsony".repo = "flake-nimble";
-  inputs."jsony".ref = "flake-pinning";
-  inputs."jsony".dir = "nimpkgs/j/jsony";
+  inputs."jsony".ref   = "flake-pinning";
+  inputs."jsony".repo  = "flake-nimble";
+  inputs."jsony".type  = "github";
   inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-  outputs = { self, nixpkgs, flakeNimbleLib, src-hmisc-v0_11_19, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-hmisc-v0_11_19;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-hmisc-v0_11_19"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-hmisc-v0_11_19"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-hmisc-v0_11_19";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

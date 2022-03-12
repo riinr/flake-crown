@@ -1,68 +1,66 @@
 {
   description = ''A Discord Bot & REST Library.'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-dimscord-v1_3_0.flake = false;
-  inputs.src-dimscord-v1_3_0.type = "github";
+  
+  inputs.src-dimscord-v1_3_0.flake = false;
   inputs.src-dimscord-v1_3_0.owner = "krisppurg";
-  inputs.src-dimscord-v1_3_0.repo = "dimscord";
-  inputs.src-dimscord-v1_3_0.ref = "refs/tags/v1.3.0";
-  inputs.src-dimscord-v1_3_0.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-dimscord-v1_3_0.ref   = "refs/tags/v1.3.0";
+  inputs.src-dimscord-v1_3_0.repo  = "dimscord";
+  inputs.src-dimscord-v1_3_0.type  = "github";
   
-  
-  inputs."zippy".type = "github";
+  inputs."zippy".dir   = "nimpkgs/z/zippy";
   inputs."zippy".owner = "riinr";
-  inputs."zippy".repo = "flake-nimble";
-  inputs."zippy".ref = "flake-pinning";
-  inputs."zippy".dir = "nimpkgs/z/zippy";
+  inputs."zippy".ref   = "flake-pinning";
+  inputs."zippy".repo  = "flake-nimble";
+  inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."ws".type = "github";
+  inputs."ws".dir   = "nimpkgs/w/ws";
   inputs."ws".owner = "riinr";
-  inputs."ws".repo = "flake-nimble";
-  inputs."ws".ref = "flake-pinning";
-  inputs."ws".dir = "nimpkgs/w/ws";
+  inputs."ws".ref   = "flake-pinning";
+  inputs."ws".repo  = "flake-nimble";
+  inputs."ws".type  = "github";
   inputs."ws".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ws".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."regex".type = "github";
+  inputs."regex".dir   = "nimpkgs/r/regex";
   inputs."regex".owner = "riinr";
-  inputs."regex".repo = "flake-nimble";
-  inputs."regex".ref = "flake-pinning";
-  inputs."regex".dir = "nimpkgs/r/regex";
+  inputs."regex".ref   = "flake-pinning";
+  inputs."regex".repo  = "flake-nimble";
+  inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."libsodium".type = "github";
+  inputs."libsodium".dir   = "nimpkgs/l/libsodium";
   inputs."libsodium".owner = "riinr";
-  inputs."libsodium".repo = "flake-nimble";
-  inputs."libsodium".ref = "flake-pinning";
-  inputs."libsodium".dir = "nimpkgs/l/libsodium";
+  inputs."libsodium".ref   = "flake-pinning";
+  inputs."libsodium".repo  = "flake-nimble";
+  inputs."libsodium".type  = "github";
   inputs."libsodium".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libsodium".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."flatty".type = "github";
+  inputs."flatty".dir   = "nimpkgs/f/flatty";
   inputs."flatty".owner = "riinr";
-  inputs."flatty".repo = "flake-nimble";
-  inputs."flatty".ref = "flake-pinning";
-  inputs."flatty".dir = "nimpkgs/f/flatty";
+  inputs."flatty".ref   = "flake-pinning";
+  inputs."flatty".repo  = "flake-nimble";
+  inputs."flatty".type  = "github";
   inputs."flatty".inputs.nixpkgs.follows = "nixpkgs";
   inputs."flatty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-  outputs = { self, nixpkgs, flakeNimbleLib, src-dimscord-v1_3_0, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-dimscord-v1_3_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-dimscord-v1_3_0"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-dimscord-v1_3_0"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-dimscord-v1_3_0";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

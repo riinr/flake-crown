@@ -1,23 +1,26 @@
 {
   description = ''A library for managing your CouchDB. Easy & comfortably to use.'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-couchdb-master.flake = false;
-  inputs.src-couchdb-master.type = "github";
-  inputs.src-couchdb-master.owner = "theAkito";
-  inputs.src-couchdb-master.repo = "nim-couchdb";
-  inputs.src-couchdb-master.ref = "refs/heads/master";
-  inputs.src-couchdb-master.inputs.nixpkgs.follows = "nixpkgs";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-couchdb-master, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-couchdb-master;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-couchdb-master"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  inputs.src-couchdb-master.flake = false;
+  inputs.src-couchdb-master.owner = "theAkito";
+  inputs.src-couchdb-master.ref   = "refs/heads/master";
+  inputs.src-couchdb-master.repo  = "nim-couchdb";
+  inputs.src-couchdb-master.type  = "github";
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-couchdb-master"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-couchdb-master";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

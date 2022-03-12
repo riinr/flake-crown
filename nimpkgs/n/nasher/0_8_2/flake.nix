@@ -1,50 +1,50 @@
 {
   description = ''A build tool for Neverwinter Nights projects'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-nasher-0_8_2.flake = false;
-  inputs.src-nasher-0_8_2.type = "github";
+  
+  inputs.src-nasher-0_8_2.flake = false;
   inputs.src-nasher-0_8_2.owner = "squattingmonk";
-  inputs.src-nasher-0_8_2.repo = "nasher.nim";
-  inputs.src-nasher-0_8_2.ref = "refs/tags/0.8.2";
-  inputs.src-nasher-0_8_2.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-nasher-0_8_2.ref   = "refs/tags/0.8.2";
+  inputs.src-nasher-0_8_2.repo  = "nasher.nim";
+  inputs.src-nasher-0_8_2.type  = "github";
   
-  
-  inputs."neverwinter".type = "github";
+  inputs."neverwinter".dir   = "nimpkgs/n/neverwinter";
   inputs."neverwinter".owner = "riinr";
-  inputs."neverwinter".repo = "flake-nimble";
-  inputs."neverwinter".ref = "flake-pinning";
-  inputs."neverwinter".dir = "nimpkgs/n/neverwinter";
+  inputs."neverwinter".ref   = "flake-pinning";
+  inputs."neverwinter".repo  = "flake-nimble";
+  inputs."neverwinter".type  = "github";
   inputs."neverwinter".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neverwinter".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."glob".type = "github";
+  inputs."glob".dir   = "nimpkgs/g/glob";
   inputs."glob".owner = "riinr";
-  inputs."glob".repo = "flake-nimble";
-  inputs."glob".ref = "flake-pinning";
-  inputs."glob".dir = "nimpkgs/g/glob";
+  inputs."glob".ref   = "flake-pinning";
+  inputs."glob".repo  = "flake-nimble";
+  inputs."glob".type  = "github";
   inputs."glob".inputs.nixpkgs.follows = "nixpkgs";
   inputs."glob".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."regex".type = "github";
+  inputs."regex".dir   = "nimpkgs/r/regex";
   inputs."regex".owner = "riinr";
-  inputs."regex".repo = "flake-nimble";
-  inputs."regex".ref = "flake-pinning";
-  inputs."regex".dir = "nimpkgs/r/regex";
+  inputs."regex".ref   = "flake-pinning";
+  inputs."regex".repo  = "flake-nimble";
+  inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-  outputs = { self, nixpkgs, flakeNimbleLib, src-nasher-0_8_2, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-nasher-0_8_2;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nasher-0_8_2"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-nasher-0_8_2"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-nasher-0_8_2";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

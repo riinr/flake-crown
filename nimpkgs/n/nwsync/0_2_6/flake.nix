@@ -1,41 +1,42 @@
 {
   description = ''NWSync Repository Management utilities'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-nwsync-0_2_6.flake = false;
-  inputs.src-nwsync-0_2_6.type = "github";
+  
+  inputs.src-nwsync-0_2_6.flake = false;
   inputs.src-nwsync-0_2_6.owner = "Beamdog";
-  inputs.src-nwsync-0_2_6.repo = "nwsync";
-  inputs.src-nwsync-0_2_6.ref = "refs/tags/0.2.6";
-  inputs.src-nwsync-0_2_6.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-nwsync-0_2_6.ref   = "refs/tags/0.2.6";
+  inputs.src-nwsync-0_2_6.repo  = "nwsync";
+  inputs.src-nwsync-0_2_6.type  = "github";
   
-  
-  inputs."zip".type = "github";
+  inputs."zip".dir   = "nimpkgs/z/zip";
   inputs."zip".owner = "riinr";
-  inputs."zip".repo = "flake-nimble";
-  inputs."zip".ref = "flake-pinning";
-  inputs."zip".dir = "nimpkgs/z/zip";
+  inputs."zip".ref   = "flake-pinning";
+  inputs."zip".repo  = "flake-nimble";
+  inputs."zip".type  = "github";
   inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."neverwinter".type = "github";
+  inputs."neverwinter".dir   = "nimpkgs/n/neverwinter";
   inputs."neverwinter".owner = "riinr";
-  inputs."neverwinter".repo = "flake-nimble";
-  inputs."neverwinter".ref = "flake-pinning";
-  inputs."neverwinter".dir = "nimpkgs/n/neverwinter";
+  inputs."neverwinter".ref   = "flake-pinning";
+  inputs."neverwinter".repo  = "flake-nimble";
+  inputs."neverwinter".type  = "github";
   inputs."neverwinter".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neverwinter".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-  outputs = { self, nixpkgs, flakeNimbleLib, src-nwsync-0_2_6, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-nwsync-0_2_6;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-nwsync-0_2_6"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-nwsync-0_2_6"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-nwsync-0_2_6";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

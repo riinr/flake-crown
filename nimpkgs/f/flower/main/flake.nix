@@ -1,23 +1,26 @@
 {
   description = ''A pure Nim bloom filter.'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-flower-main.flake = false;
-  inputs.src-flower-main.type = "github";
-  inputs.src-flower-main.owner = "dizzyliam";
-  inputs.src-flower-main.repo = "flower";
-  inputs.src-flower-main.ref = "refs/heads/main";
-  inputs.src-flower-main.inputs.nixpkgs.follows = "nixpkgs";
   
-  outputs = { self, nixpkgs, flakeNimbleLib, src-flower-main, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-flower-main;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-flower-main"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  inputs.src-flower-main.flake = false;
+  inputs.src-flower-main.owner = "dizzyliam";
+  inputs.src-flower-main.ref   = "refs/heads/main";
+  inputs.src-flower-main.repo  = "flower";
+  inputs.src-flower-main.type  = "github";
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-flower-main"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-flower-main";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

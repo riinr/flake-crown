@@ -1,41 +1,42 @@
 {
   description = ''A game library'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-paranim-0_6_0.flake = false;
-  inputs.src-paranim-0_6_0.type = "github";
+  
+  inputs.src-paranim-0_6_0.flake = false;
   inputs.src-paranim-0_6_0.owner = "paranim";
-  inputs.src-paranim-0_6_0.repo = "paranim";
-  inputs.src-paranim-0_6_0.ref = "refs/tags/0.6.0";
-  inputs.src-paranim-0_6_0.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-paranim-0_6_0.ref   = "refs/tags/0.6.0";
+  inputs.src-paranim-0_6_0.repo  = "paranim";
+  inputs.src-paranim-0_6_0.type  = "github";
   
-  
-  inputs."nimgl".type = "github";
+  inputs."nimgl".dir   = "nimpkgs/n/nimgl";
   inputs."nimgl".owner = "riinr";
-  inputs."nimgl".repo = "flake-nimble";
-  inputs."nimgl".ref = "flake-pinning";
-  inputs."nimgl".dir = "nimpkgs/n/nimgl";
+  inputs."nimgl".ref   = "flake-pinning";
+  inputs."nimgl".repo  = "flake-nimble";
+  inputs."nimgl".type  = "github";
   inputs."nimgl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimgl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."glm".type = "github";
+  inputs."glm".dir   = "nimpkgs/g/glm";
   inputs."glm".owner = "riinr";
-  inputs."glm".repo = "flake-nimble";
-  inputs."glm".ref = "flake-pinning";
-  inputs."glm".dir = "nimpkgs/g/glm";
+  inputs."glm".ref   = "flake-pinning";
+  inputs."glm".repo  = "flake-nimble";
+  inputs."glm".type  = "github";
   inputs."glm".inputs.nixpkgs.follows = "nixpkgs";
   inputs."glm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-  outputs = { self, nixpkgs, flakeNimbleLib, src-paranim-0_6_0, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-paranim-0_6_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-paranim-0_6_0"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-paranim-0_6_0"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-paranim-0_6_0";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

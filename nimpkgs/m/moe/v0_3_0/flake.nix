@@ -1,50 +1,50 @@
 {
   description = ''A command lined based text editor inspired by vi/vim'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-moe-v0_3_0.flake = false;
-  inputs.src-moe-v0_3_0.type = "github";
+  
+  inputs.src-moe-v0_3_0.flake = false;
   inputs.src-moe-v0_3_0.owner = "fox0430";
-  inputs.src-moe-v0_3_0.repo = "moe";
-  inputs.src-moe-v0_3_0.ref = "refs/tags/v0.3.0";
-  inputs.src-moe-v0_3_0.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-moe-v0_3_0.ref   = "refs/tags/v0.3.0";
+  inputs.src-moe-v0_3_0.repo  = "moe";
+  inputs.src-moe-v0_3_0.type  = "github";
   
-  
-  inputs."ncurses".type = "github";
+  inputs."ncurses".dir   = "nimpkgs/n/ncurses";
   inputs."ncurses".owner = "riinr";
-  inputs."ncurses".repo = "flake-nimble";
-  inputs."ncurses".ref = "flake-pinning";
-  inputs."ncurses".dir = "nimpkgs/n/ncurses";
+  inputs."ncurses".ref   = "flake-pinning";
+  inputs."ncurses".repo  = "flake-nimble";
+  inputs."ncurses".type  = "github";
   inputs."ncurses".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ncurses".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."unicodedb".type = "github";
+  inputs."unicodedb".dir   = "nimpkgs/u/unicodedb";
   inputs."unicodedb".owner = "riinr";
-  inputs."unicodedb".repo = "flake-nimble";
-  inputs."unicodedb".ref = "flake-pinning";
-  inputs."unicodedb".dir = "nimpkgs/u/unicodedb";
+  inputs."unicodedb".ref   = "flake-pinning";
+  inputs."unicodedb".repo  = "flake-nimble";
+  inputs."unicodedb".type  = "github";
   inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."parsetoml".type = "github";
+  inputs."parsetoml".dir   = "nimpkgs/p/parsetoml";
   inputs."parsetoml".owner = "riinr";
-  inputs."parsetoml".repo = "flake-nimble";
-  inputs."parsetoml".ref = "flake-pinning";
-  inputs."parsetoml".dir = "nimpkgs/p/parsetoml";
+  inputs."parsetoml".ref   = "flake-pinning";
+  inputs."parsetoml".repo  = "flake-nimble";
+  inputs."parsetoml".type  = "github";
   inputs."parsetoml".inputs.nixpkgs.follows = "nixpkgs";
   inputs."parsetoml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-  outputs = { self, nixpkgs, flakeNimbleLib, src-moe-v0_3_0, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-moe-v0_3_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-moe-v0_3_0"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-moe-v0_3_0"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-moe-v0_3_0";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

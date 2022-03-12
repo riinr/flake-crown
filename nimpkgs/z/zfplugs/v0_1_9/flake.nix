@@ -1,50 +1,50 @@
 {
   description = ''This is the plugins for the zfcore framework https://github.com/zendbit/nim.zfcore'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-zfplugs-v0_1_9.flake = false;
-  inputs.src-zfplugs-v0_1_9.type = "github";
+  
+  inputs.src-zfplugs-v0_1_9.flake = false;
   inputs.src-zfplugs-v0_1_9.owner = "zendbit";
-  inputs.src-zfplugs-v0_1_9.repo = "nim.zfplugs";
-  inputs.src-zfplugs-v0_1_9.ref = "refs/tags/v0.1.9";
-  inputs.src-zfplugs-v0_1_9.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-zfplugs-v0_1_9.ref   = "refs/tags/v0.1.9";
+  inputs.src-zfplugs-v0_1_9.repo  = "nim.zfplugs";
+  inputs.src-zfplugs-v0_1_9.type  = "github";
   
-  
-  inputs."zfdbms".type = "github";
+  inputs."zfdbms".dir   = "nimpkgs/z/zfdbms";
   inputs."zfdbms".owner = "riinr";
-  inputs."zfdbms".repo = "flake-nimble";
-  inputs."zfdbms".ref = "flake-pinning";
-  inputs."zfdbms".dir = "nimpkgs/z/zfdbms";
+  inputs."zfdbms".ref   = "flake-pinning";
+  inputs."zfdbms".repo  = "flake-nimble";
+  inputs."zfdbms".type  = "github";
   inputs."zfdbms".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfdbms".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."zfcore".type = "github";
+  inputs."zfcore".dir   = "nimpkgs/z/zfcore";
   inputs."zfcore".owner = "riinr";
-  inputs."zfcore".repo = "flake-nimble";
-  inputs."zfcore".ref = "flake-pinning";
-  inputs."zfcore".dir = "nimpkgs/z/zfcore";
+  inputs."zfcore".ref   = "flake-pinning";
+  inputs."zfcore".repo  = "flake-nimble";
+  inputs."zfcore".type  = "github";
   inputs."zfcore".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfcore".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."moustachu".type = "github";
+  inputs."moustachu".dir   = "nimpkgs/m/moustachu";
   inputs."moustachu".owner = "riinr";
-  inputs."moustachu".repo = "flake-nimble";
-  inputs."moustachu".ref = "flake-pinning";
-  inputs."moustachu".dir = "nimpkgs/m/moustachu";
+  inputs."moustachu".ref   = "flake-pinning";
+  inputs."moustachu".repo  = "flake-nimble";
+  inputs."moustachu".type  = "github";
   inputs."moustachu".inputs.nixpkgs.follows = "nixpkgs";
   inputs."moustachu".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-  outputs = { self, nixpkgs, flakeNimbleLib, src-zfplugs-v0_1_9, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-zfplugs-v0_1_9;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-zfplugs-v0_1_9"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-zfplugs-v0_1_9"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-zfplugs-v0_1_9";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }

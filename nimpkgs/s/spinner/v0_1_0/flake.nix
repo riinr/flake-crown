@@ -1,41 +1,42 @@
 {
   description = ''Prebuilt components for the Fidget GUI library.'';
-    inputs.flakeNimbleLib.type = "github";
+
   inputs.flakeNimbleLib.owner = "riinr";
-  inputs.flakeNimbleLib.repo = "nim-flakes-lib";
-  inputs.flakeNimbleLib.ref = "master";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-    inputs.src-spinner-v0_1_0.flake = false;
-  inputs.src-spinner-v0_1_0.type = "github";
+  
+  inputs.src-spinner-v0_1_0.flake = false;
   inputs.src-spinner-v0_1_0.owner = "tonogram";
-  inputs.src-spinner-v0_1_0.repo = "spinner";
-  inputs.src-spinner-v0_1_0.ref = "refs/tags/v0.1.0";
-  inputs.src-spinner-v0_1_0.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.src-spinner-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-spinner-v0_1_0.repo  = "spinner";
+  inputs.src-spinner-v0_1_0.type  = "github";
   
-  
-  inputs."fidget".type = "github";
+  inputs."fidget".dir   = "nimpkgs/f/fidget";
   inputs."fidget".owner = "riinr";
-  inputs."fidget".repo = "flake-nimble";
-  inputs."fidget".ref = "flake-pinning";
-  inputs."fidget".dir = "nimpkgs/f/fidget";
+  inputs."fidget".ref   = "flake-pinning";
+  inputs."fidget".repo  = "flake-nimble";
+  inputs."fidget".type  = "github";
   inputs."fidget".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fidget".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
   
-  inputs."gradient".type = "github";
+  inputs."gradient".dir   = "nimpkgs/g/gradient";
   inputs."gradient".owner = "riinr";
-  inputs."gradient".repo = "flake-nimble";
-  inputs."gradient".ref = "flake-pinning";
-  inputs."gradient".dir = "nimpkgs/g/gradient";
+  inputs."gradient".ref   = "flake-pinning";
+  inputs."gradient".repo  = "flake-nimble";
+  inputs."gradient".type  = "github";
   inputs."gradient".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gradient".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-
-  outputs = { self, nixpkgs, flakeNimbleLib, src-spinner-v0_1_0, ...}@deps:
-    let lib = flakeNimbleLib.lib;
-    in lib.mkRefOutput {
-      inherit self nixpkgs ;
-      src = src-spinner-v0_1_0;
-      deps = builtins.removeAttrs deps ["self" "nixpkgs" "flakeNimbleLib" "src-spinner-v0_1_0"];
-      meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    };
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-spinner-v0_1_0"];
+  in lib.mkRefOutput {
+    inherit self nixpkgs ;
+    src  = deps."src-spinner-v0_1_0";
+    deps = builtins.removeAttrs deps args;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+  };
 }
