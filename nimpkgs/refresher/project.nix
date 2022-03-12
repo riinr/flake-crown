@@ -5,6 +5,7 @@
   files.cmds.yj = true;
   files.cmds.jq = true;
   files.cmds.git = true;
+  files.cmds.gcc = true;
   files.cmds.mercurial = true;
   files.alias.update-pkg-of-name = ''
     curl -s "https://raw.githubusercontent.com/nim-lang/packages/master/packages.json"|jq '.[]|select(.name == "'$1'")'|./updatePkg.nims

@@ -1,28 +1,26 @@
-import std/[json, sequtils, strutils, os]
+import std/[json, sequtils, strutils, strformat, os, osproc]
 
-let 
-  base = paramStr(1).parseFile
-  flakeNimbleLibLock = base["flakeNimbleLibLock"]
-  nimPkgsLock = base["nimPkgsLock"]
-
-for i in 2..paramCount():
+for i in 1..paramCount():
   let 
-    d = paramStr(i)
-    j = d.parseFile
-    ks = j["nodes"].keys.toSeq.filterIt(
-      j["nodes"][it].hasKey("locked") and
-      j["nodes"][it]["locked"].hasKey("dir") and
-      j["nodes"][it]["locked"]["dir"].getStr.startsWith("nimpkgs/")
-    )
-  for k in ks:
-    let locked = j["nodes"][k]["locked"]
-    locked["lastModified"] = nimPkgsLock["lastModified"]
-    locked["narHash"] = nimPkgsLock["narHash"]
-    locked["rev"] = nimPkgsLock["rev"]
-
-  if j["nodes"].hasKey "flakeNimbleLib":
-    j["nodes"]["flakeNimbleLib"]["locked"] = flakeNimbleLibLock
-  echo d
-  writeFile(d, j.pretty & "\n")
+    metaPath = paramStr(i)
+    metaJson = metaPath.parseFile
+    deps =
+      if metaJson.hasKey "requires":
+        metaJson["requires"].items.toSeq.filterIt(
+          it["name"].getStr != "nim" and
+          it["name"].getStr != "nimrod"
+        ).mapIt("--update-input " & it["name"].getStr)
+      else: @[]
+    cmd = "nix flake lock " & deps.join " "
+  echo metaPath
+  if deps.len > 0:
+    echo cmd
+    let (o, e) = execCmdEx fmt"""
+      cd `dirname {metaPath}`
+      {cmd}
+      git add .
+      git commit -m "chore: update lock" || echo "ok"
+    """
+    echo fmt"{e} {o}"
 
 echo paramCount()

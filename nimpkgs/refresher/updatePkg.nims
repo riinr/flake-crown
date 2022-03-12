@@ -7,10 +7,10 @@ proc isTag(x: string): bool =
 
 proc isHead(x: string): bool =
   x.startsWith("refs/heads") and (
-    x.endsWith("/master")   or 
-    x.endsWith("/main")     or
-    x.endsWith("/staging")  or 
-    x.endsWith("/unstable") or
+    x.endsWith("/master")    or 
+    x.endsWith("/main")      or
+    x.endsWith("/staging")   or 
+    x.endsWith("/unstable")  or
     x.endsWith("/develop")
   )
 
@@ -51,14 +51,16 @@ proc staticUrl(pkg: JsonNode, gitRef: string): seq[string] =
       fmt"{url}/blob/{gitRef}/{nameLo}.nimble"
     ]
   if url.contains "gitlab.com":
-    let tag    = gitRef.replace("refs/heads/", "").replace("refs/tags/", "")
-    let prefix = url.replace(".git", "")
+    let 
+      tag    = gitRef.replace("refs/heads/", "").replace("refs/tags/", "")
+      prefix = url.replace(".git", "")
     return @[
       fmt"{prefix}/-/raw/{tag}/{name}.nimble",
       fmt"{prefix}/-/raw/{tag}/{nameLo}.nimble"
     ]
-  let tag    = gitRef.replace("refs/heads/", "").replace("refs/tags/", "")
-  let prefix = url.replace(".git", "")
+  let 
+    tag    = gitRef.replace("refs/heads/", "").replace("refs/tags/", "")
+    prefix = url.replace(".git", "")
   return @[
     fmt"{prefix}/raw/{tag}/{name}.nimble",
     fmt"{prefix}/raw/{tag}/{nameLo}.nimble"
@@ -96,11 +98,11 @@ proc fetchInfo(pkg: JsonNode): auto =
       let msg = fmt"NoNimble file {name} {urls} {versionInfo}"
       exec(fmt"echo {msg.quoteShell} 1>&2")
     return %* {
-      "desc":    pkg["description"],
+      "desc"   : pkg["description"],
       "license": pkg["license"],
-      "name":    pkg["name"],
-      "ref":     gitRef,
-      "url":     pkg["url"],
+      "name"   : pkg["name"],
+      "ref"    : gitRef,
+      "url"    : pkg["url"],
       "version": %* flakeName,
     }
 
@@ -150,11 +152,24 @@ proc projectFlake(pkg: JsonNode): auto =
   mkdir fmt"../{flakeDir}"
   writeFile(fmt"../{flakeDir}/flake.nix", flakeContent)
   writeFile(fmt"../{flakeDir}/meta.json", $pkg)
-  #exec fmt"""
-  #  cd ../{flakeDir};
-  #  git init;
-  #  git add .
-  #"""
+  exec fmt"""
+    cd ../{flakeDir};
+    git init;
+    git add .
+    git commit -m "chore: re index {nameLo}" . \
+      || echo "nothing to commit"
+    gh repo create nim-nix-pkgs/{nameLo}                \
+      --description "Automatic nix flake of {nameLo}"   \
+      --disable-issues                                  \
+      --disable-wiki                                    \
+      --homepage=https://github.com/riinr/flake-nimble  \
+      --public                                          \
+      --push                                            \
+      --remote=origin                                   \
+      --source=.                                        \
+      || echo "maybe it exists"
+    echo {nameLo} ready
+  """
 
 proc inputInfo(refInfo: JsonNode, url: string): JsonNode =
   let nimbleUrls = (%* {
@@ -162,10 +177,11 @@ proc inputInfo(refInfo: JsonNode, url: string): JsonNode =
     "url": url
   }).staticUrl(refInfo["ref"].getStr)
   for nimbleUrl in nimbleUrls:
-    let repoInfo = nimbleUrl.replace("https://", "").split("/")
-    let owner    = repoInfo[1]
-    let repo     = repoInfo[2]
-    let repoType =
+    let 
+      repoInfo = nimbleUrl.replace("https://", "").split("/")
+      owner    = repoInfo[1]
+      repo     = repoInfo[2]
+      repoType =
         if repoInfo[0].contains "github":
           "github"
         elif repoInfo[0].contains "gitlab":
@@ -176,9 +192,9 @@ proc inputInfo(refInfo: JsonNode, url: string): JsonNode =
           "other"
     return %* {
       "owner": %* owner,
-      "ref":   %* refInfo["ref"],
-      "repo":  %* repo,
-      "type":  %* repoType,
+      "ref"  : %* refInfo["ref"],
+      "repo" : %* repo,
+      "type" : %* repoType,
     }
 
 iterator refInputs(refInfo: JsonNode, url: string): string =
@@ -190,7 +206,7 @@ iterator refInputs(refInfo: JsonNode, url: string): string =
   yield fmt"""
 
   inputs.{itName}.flake = false;
-  inputs.{itName}.owner = "{inputInfo["owner"].getStr()}";
+  inputs.{itName}.owner = "{inputInfo["owner"].getStr}";
   inputs.{itName}.ref   = "{inputInfo["ref"].getStr}";
   inputs.{itName}.repo  = "{inputInfo["repo"].getStr}";
   inputs.{itName}.type  = "{inputInfo["type"].getStr}";
@@ -205,10 +221,9 @@ iterator refInputs(refInfo: JsonNode, url: string): string =
         continue
       yield fmt"""
 
-  inputs."{depName}".dir   = "nimpkgs/{initial}/{depName}";
-  inputs."{depName}".owner = "riinr";
-  inputs."{depName}".ref   = "flake-pinning";
-  inputs."{depName}".repo  = "flake-nimble";
+  inputs."{depName}".owner = "nim-nix-pkgs";
+  inputs."{depName}".ref   = "master";
+  inputs."{depName}".repo  = "{depName}";
   inputs."{depName}".type  = "github";
   inputs."{depName}".inputs.nixpkgs.follows = "nixpkgs";
   inputs."{depName}".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -244,13 +259,16 @@ proc refsFlake(pkg: JsonNode): auto =
     mkdir flakeDir
     writeFile(fmt"{flakeDir}/flake.nix", flakeContent)
     writeFile(fmt"{flakeDir}/meta.json", $refInfo)
-    #exec fmt"""
-    #  cd {flakeDir};
-    #  git add .
-    #"""
+    let a = gorge fmt"""
+      strace cd {flakeDir};
+      strace git add .
+      strace echo `git commit -m "chore: re-index {flakeDir}" .`
+      strace git push
+    """
 
-let pkg  = readAllFromStdin().parseJson
-let refs = pkg["url"].getRefs
+let 
+  pkg  = readAllFromStdin().parseJson
+  refs = pkg["url"].getRefs
 pkg["refs"]  = %* refs
 pkg["tags"]  = %* refs.filter(isTag).map(fetchInfo pkg).filter("name".isKey)
 pkg["heads"] = %* refs.filter(isHead).map(fetchInfo pkg).filter("name".isKey)
