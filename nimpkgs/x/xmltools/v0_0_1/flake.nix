@@ -13,10 +13,9 @@
   inputs.src-xmltools-v0_0_1.repo  = "xmltools";
   inputs.src-xmltools-v0_0_1.type  = "github";
   
-  inputs."nimfp".dir   = "nimpkgs/n/nimfp";
-  inputs."nimfp".owner = "riinr";
-  inputs."nimfp".ref   = "flake-pinning";
-  inputs."nimfp".repo  = "flake-nimble";
+  inputs."nimfp".owner = "nim-nix-pkgs";
+  inputs."nimfp".ref   = "master";
+  inputs."nimfp".repo  = "nimfp";
   inputs."nimfp".type  = "github";
   inputs."nimfp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimfp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

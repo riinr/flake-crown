@@ -13,26 +13,23 @@
   inputs.src-dimscord-v1_0_1.repo  = "dimscord";
   inputs.src-dimscord-v1_0_1.type  = "github";
   
-  inputs."zip".dir   = "nimpkgs/z/zip";
-  inputs."zip".owner = "riinr";
-  inputs."zip".ref   = "flake-pinning";
-  inputs."zip".repo  = "flake-nimble";
+  inputs."zip".owner = "nim-nix-pkgs";
+  inputs."zip".ref   = "master";
+  inputs."zip".repo  = "zip";
   inputs."zip".type  = "github";
   inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."ws".dir   = "nimpkgs/w/ws";
-  inputs."ws".owner = "riinr";
-  inputs."ws".ref   = "flake-pinning";
-  inputs."ws".repo  = "flake-nimble";
+  inputs."ws".owner = "nim-nix-pkgs";
+  inputs."ws".ref   = "master";
+  inputs."ws".repo  = "ws";
   inputs."ws".type  = "github";
   inputs."ws".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ws".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."regex".dir   = "nimpkgs/r/regex";
-  inputs."regex".owner = "riinr";
-  inputs."regex".ref   = "flake-pinning";
-  inputs."regex".repo  = "flake-nimble";
+  inputs."regex".owner = "nim-nix-pkgs";
+  inputs."regex".ref   = "master";
+  inputs."regex".repo  = "regex";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

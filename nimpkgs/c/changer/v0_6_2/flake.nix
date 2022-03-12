@@ -13,26 +13,23 @@
   inputs.src-changer-v0_6_2.repo  = "changer";
   inputs.src-changer-v0_6_2.type  = "github";
   
-  inputs."argparse".dir   = "nimpkgs/a/argparse";
-  inputs."argparse".owner = "riinr";
-  inputs."argparse".ref   = "flake-pinning";
-  inputs."argparse".repo  = "flake-nimble";
+  inputs."argparse".owner = "nim-nix-pkgs";
+  inputs."argparse".ref   = "master";
+  inputs."argparse".repo  = "argparse";
   inputs."argparse".type  = "github";
   inputs."argparse".inputs.nixpkgs.follows = "nixpkgs";
   inputs."argparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."regex".dir   = "nimpkgs/r/regex";
-  inputs."regex".owner = "riinr";
-  inputs."regex".ref   = "flake-pinning";
-  inputs."regex".repo  = "flake-nimble";
+  inputs."regex".owner = "nim-nix-pkgs";
+  inputs."regex".ref   = "master";
+  inputs."regex".repo  = "regex";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."parsetoml".dir   = "nimpkgs/p/parsetoml";
-  inputs."parsetoml".owner = "riinr";
-  inputs."parsetoml".ref   = "flake-pinning";
-  inputs."parsetoml".repo  = "flake-nimble";
+  inputs."parsetoml".owner = "nim-nix-pkgs";
+  inputs."parsetoml".ref   = "master";
+  inputs."parsetoml".repo  = "parsetoml";
   inputs."parsetoml".type  = "github";
   inputs."parsetoml".inputs.nixpkgs.follows = "nixpkgs";
   inputs."parsetoml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

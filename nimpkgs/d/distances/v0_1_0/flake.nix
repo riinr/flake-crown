@@ -13,18 +13,16 @@
   inputs.src-distances-v0_1_0.repo  = "distances";
   inputs.src-distances-v0_1_0.type  = "github";
   
-  inputs."arraymancer".dir   = "nimpkgs/a/arraymancer";
-  inputs."arraymancer".owner = "riinr";
-  inputs."arraymancer".ref   = "flake-pinning";
-  inputs."arraymancer".repo  = "flake-nimble";
+  inputs."arraymancer".owner = "nim-nix-pkgs";
+  inputs."arraymancer".ref   = "master";
+  inputs."arraymancer".repo  = "arraymancer";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."neo".dir   = "nimpkgs/n/neo";
-  inputs."neo".owner = "riinr";
-  inputs."neo".ref   = "flake-pinning";
-  inputs."neo".repo  = "flake-nimble";
+  inputs."neo".owner = "nim-nix-pkgs";
+  inputs."neo".ref   = "master";
+  inputs."neo".repo  = "neo";
   inputs."neo".type  = "github";
   inputs."neo".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neo".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

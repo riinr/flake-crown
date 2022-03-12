@@ -13,10 +13,9 @@
   inputs.src-composition-main.repo  = "composition";
   inputs.src-composition-main.type  = "github";
   
-  inputs."macrosex".dir   = "nimpkgs/m/macrosex";
-  inputs."macrosex".owner = "riinr";
-  inputs."macrosex".ref   = "flake-pinning";
-  inputs."macrosex".repo  = "flake-nimble";
+  inputs."macrosex".owner = "nim-nix-pkgs";
+  inputs."macrosex".ref   = "master";
+  inputs."macrosex".repo  = "macrosex";
   inputs."macrosex".type  = "github";
   inputs."macrosex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."macrosex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

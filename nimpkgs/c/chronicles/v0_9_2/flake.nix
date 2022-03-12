@@ -13,18 +13,16 @@
   inputs.src-chronicles-v0_9_2.repo  = "nim-chronicles";
   inputs.src-chronicles-v0_9_2.type  = "github";
   
-  inputs."json_serialization".dir   = "nimpkgs/j/json_serialization";
-  inputs."json_serialization".owner = "riinr";
-  inputs."json_serialization".ref   = "flake-pinning";
-  inputs."json_serialization".repo  = "flake-nimble";
+  inputs."json_serialization".owner = "nim-nix-pkgs";
+  inputs."json_serialization".ref   = "master";
+  inputs."json_serialization".repo  = "json_serialization";
   inputs."json_serialization".type  = "github";
   inputs."json_serialization".inputs.nixpkgs.follows = "nixpkgs";
   inputs."json_serialization".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."testutils".dir   = "nimpkgs/t/testutils";
-  inputs."testutils".owner = "riinr";
-  inputs."testutils".ref   = "flake-pinning";
-  inputs."testutils".repo  = "flake-nimble";
+  inputs."testutils".owner = "nim-nix-pkgs";
+  inputs."testutils".ref   = "master";
+  inputs."testutils".repo  = "testutils";
   inputs."testutils".type  = "github";
   inputs."testutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."testutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

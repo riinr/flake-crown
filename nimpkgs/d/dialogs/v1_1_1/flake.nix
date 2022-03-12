@@ -13,10 +13,9 @@
   inputs.src-dialogs-v1_1_1.repo  = "dialogs";
   inputs.src-dialogs-v1_1_1.type  = "github";
   
-  inputs."gtk2".dir   = "nimpkgs/g/gtk2";
-  inputs."gtk2".owner = "riinr";
-  inputs."gtk2".ref   = "flake-pinning";
-  inputs."gtk2".repo  = "flake-nimble";
+  inputs."gtk2".owner = "nim-nix-pkgs";
+  inputs."gtk2".ref   = "master";
+  inputs."gtk2".repo  = "gtk2";
   inputs."gtk2".type  = "github";
   inputs."gtk2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gtk2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

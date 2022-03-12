@@ -13,10 +13,9 @@
   inputs.src-xmlio-v0_2_2.repo  = "xmlio";
   inputs.src-xmlio-v0_2_2.type  = "github";
   
-  inputs."vtable".dir   = "nimpkgs/v/vtable";
-  inputs."vtable".owner = "riinr";
-  inputs."vtable".ref   = "flake-pinning";
-  inputs."vtable".repo  = "flake-nimble";
+  inputs."vtable".owner = "nim-nix-pkgs";
+  inputs."vtable".ref   = "master";
+  inputs."vtable".repo  = "vtable";
   inputs."vtable".type  = "github";
   inputs."vtable".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vtable".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

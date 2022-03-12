@@ -13,10 +13,9 @@
   inputs.src-NimbleImGui-master.repo  = "NimbleImGui";
   inputs.src-NimbleImGui-master.type  = "github";
   
-  inputs."nimgl".dir   = "nimpkgs/n/nimgl";
-  inputs."nimgl".owner = "riinr";
-  inputs."nimgl".ref   = "flake-pinning";
-  inputs."nimgl".repo  = "flake-nimble";
+  inputs."nimgl".owner = "nim-nix-pkgs";
+  inputs."nimgl".ref   = "master";
+  inputs."nimgl".repo  = "nimgl";
   inputs."nimgl".type  = "github";
   inputs."nimgl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimgl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

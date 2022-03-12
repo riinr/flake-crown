@@ -13,10 +13,9 @@
   inputs.src-fugitive-v0_7_1.repo  = "fugitive";
   inputs.src-fugitive-v0_7_1.type  = "github";
   
-  inputs."tempfile".dir   = "nimpkgs/t/tempfile";
-  inputs."tempfile".owner = "riinr";
-  inputs."tempfile".ref   = "flake-pinning";
-  inputs."tempfile".repo  = "flake-nimble";
+  inputs."tempfile".owner = "nim-nix-pkgs";
+  inputs."tempfile".ref   = "master";
+  inputs."tempfile".repo  = "tempfile";
   inputs."tempfile".type  = "github";
   inputs."tempfile".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tempfile".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

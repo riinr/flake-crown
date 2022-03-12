@@ -13,10 +13,9 @@
   inputs.src-epub-master.repo  = "nim-epub";
   inputs.src-epub-master.type  = "github";
   
-  inputs."nim>=".dir   = "nimpkgs/n/nim>=";
-  inputs."nim>=".owner = "riinr";
-  inputs."nim>=".ref   = "flake-pinning";
-  inputs."nim>=".repo  = "flake-nimble";
+  inputs."nim>=".owner = "nim-nix-pkgs";
+  inputs."nim>=".ref   = "master";
+  inputs."nim>=".repo  = "nim>=";
   inputs."nim>=".type  = "github";
   inputs."nim>=".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nim>=".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,18 +13,16 @@
   inputs.src-duckduckgo-master.repo  = "duckduckgo";
   inputs.src-duckduckgo-master.type  = "gitlab";
   
-  inputs."scraper".dir   = "nimpkgs/s/scraper";
-  inputs."scraper".owner = "riinr";
-  inputs."scraper".ref   = "flake-pinning";
-  inputs."scraper".repo  = "flake-nimble";
+  inputs."scraper".owner = "nim-nix-pkgs";
+  inputs."scraper".ref   = "master";
+  inputs."scraper".repo  = "scraper";
   inputs."scraper".type  = "github";
   inputs."scraper".inputs.nixpkgs.follows = "nixpkgs";
   inputs."scraper".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://gitlab.com/lurlo/useragent".dir   = "nimpkgs/h/https://gitlab.com/lurlo/useragent";
-  inputs."https://gitlab.com/lurlo/useragent".owner = "riinr";
-  inputs."https://gitlab.com/lurlo/useragent".ref   = "flake-pinning";
-  inputs."https://gitlab.com/lurlo/useragent".repo  = "flake-nimble";
+  inputs."https://gitlab.com/lurlo/useragent".owner = "nim-nix-pkgs";
+  inputs."https://gitlab.com/lurlo/useragent".ref   = "master";
+  inputs."https://gitlab.com/lurlo/useragent".repo  = "https://gitlab.com/lurlo/useragent";
   inputs."https://gitlab.com/lurlo/useragent".type  = "github";
   inputs."https://gitlab.com/lurlo/useragent".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://gitlab.com/lurlo/useragent".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

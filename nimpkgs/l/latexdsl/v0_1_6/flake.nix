@@ -13,10 +13,9 @@
   inputs.src-latexdsl-v0_1_6.repo  = "LatexDSL";
   inputs.src-latexdsl-v0_1_6.type  = "github";
   
-  inputs."datamancer".dir   = "nimpkgs/d/datamancer";
-  inputs."datamancer".owner = "riinr";
-  inputs."datamancer".ref   = "flake-pinning";
-  inputs."datamancer".repo  = "flake-nimble";
+  inputs."datamancer".owner = "nim-nix-pkgs";
+  inputs."datamancer".ref   = "master";
+  inputs."datamancer".repo  = "datamancer";
   inputs."datamancer".type  = "github";
   inputs."datamancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."datamancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

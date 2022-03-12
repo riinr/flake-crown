@@ -13,10 +13,9 @@
   inputs.src-isocodes-1_7_1.repo  = "isocodes";
   inputs.src-isocodes-1_7_1.type  = "github";
   
-  inputs."jsony".dir   = "nimpkgs/j/jsony";
-  inputs."jsony".owner = "riinr";
-  inputs."jsony".ref   = "flake-pinning";
-  inputs."jsony".repo  = "flake-nimble";
+  inputs."jsony".owner = "nim-nix-pkgs";
+  inputs."jsony".ref   = "master";
+  inputs."jsony".repo  = "jsony";
   inputs."jsony".type  = "github";
   inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

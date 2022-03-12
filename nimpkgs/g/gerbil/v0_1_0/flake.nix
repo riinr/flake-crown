@@ -13,66 +13,58 @@
   inputs.src-gerbil-v0_1_0.repo  = "gerbil";
   inputs.src-gerbil-v0_1_0.type  = "github";
   
-  inputs."argparse".dir   = "nimpkgs/a/argparse";
-  inputs."argparse".owner = "riinr";
-  inputs."argparse".ref   = "flake-pinning";
-  inputs."argparse".repo  = "flake-nimble";
+  inputs."argparse".owner = "nim-nix-pkgs";
+  inputs."argparse".ref   = "master";
+  inputs."argparse".repo  = "argparse";
   inputs."argparse".type  = "github";
   inputs."argparse".inputs.nixpkgs.follows = "nixpkgs";
   inputs."argparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."jester".dir   = "nimpkgs/j/jester";
-  inputs."jester".owner = "riinr";
-  inputs."jester".ref   = "flake-pinning";
-  inputs."jester".repo  = "flake-nimble";
+  inputs."jester".owner = "nim-nix-pkgs";
+  inputs."jester".ref   = "master";
+  inputs."jester".repo  = "jester";
   inputs."jester".type  = "github";
   inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."markdown".dir   = "nimpkgs/m/markdown";
-  inputs."markdown".owner = "riinr";
-  inputs."markdown".ref   = "flake-pinning";
-  inputs."markdown".repo  = "flake-nimble";
+  inputs."markdown".owner = "nim-nix-pkgs";
+  inputs."markdown".ref   = "master";
+  inputs."markdown".repo  = "markdown";
   inputs."markdown".type  = "github";
   inputs."markdown".inputs.nixpkgs.follows = "nixpkgs";
   inputs."markdown".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."mustache".dir   = "nimpkgs/m/mustache";
-  inputs."mustache".owner = "riinr";
-  inputs."mustache".ref   = "flake-pinning";
-  inputs."mustache".repo  = "flake-nimble";
+  inputs."mustache".owner = "nim-nix-pkgs";
+  inputs."mustache".ref   = "master";
+  inputs."mustache".repo  = "mustache";
   inputs."mustache".type  = "github";
   inputs."mustache".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mustache".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimcrypto".dir   = "nimpkgs/n/nimcrypto";
-  inputs."nimcrypto".owner = "riinr";
-  inputs."nimcrypto".ref   = "flake-pinning";
-  inputs."nimcrypto".repo  = "flake-nimble";
+  inputs."nimcrypto".owner = "nim-nix-pkgs";
+  inputs."nimcrypto".ref   = "master";
+  inputs."nimcrypto".repo  = "nimcrypto";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."regex".dir   = "nimpkgs/r/regex";
-  inputs."regex".owner = "riinr";
-  inputs."regex".ref   = "flake-pinning";
-  inputs."regex".repo  = "flake-nimble";
+  inputs."regex".owner = "nim-nix-pkgs";
+  inputs."regex".ref   = "master";
+  inputs."regex".repo  = "regex";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."uuids".dir   = "nimpkgs/u/uuids";
-  inputs."uuids".owner = "riinr";
-  inputs."uuids".ref   = "flake-pinning";
-  inputs."uuids".repo  = "flake-nimble";
+  inputs."uuids".owner = "nim-nix-pkgs";
+  inputs."uuids".ref   = "master";
+  inputs."uuids".repo  = "uuids";
   inputs."uuids".type  = "github";
   inputs."uuids".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uuids".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

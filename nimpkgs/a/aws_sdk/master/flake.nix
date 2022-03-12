@@ -13,18 +13,16 @@
   inputs.src-aws_sdk-master.repo  = "aws_sdk.nim";
   inputs.src-aws_sdk-master.type  = "github";
   
-  inputs."stringinterpolation".dir   = "nimpkgs/s/stringinterpolation";
-  inputs."stringinterpolation".owner = "riinr";
-  inputs."stringinterpolation".ref   = "flake-pinning";
-  inputs."stringinterpolation".repo  = "flake-nimble";
+  inputs."stringinterpolation".owner = "nim-nix-pkgs";
+  inputs."stringinterpolation".ref   = "master";
+  inputs."stringinterpolation".repo  = "stringinterpolation";
   inputs."stringinterpolation".type  = "github";
   inputs."stringinterpolation".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stringinterpolation".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."sph".dir   = "nimpkgs/s/sph";
-  inputs."sph".owner = "riinr";
-  inputs."sph".ref   = "flake-pinning";
-  inputs."sph".repo  = "flake-nimble";
+  inputs."sph".owner = "nim-nix-pkgs";
+  inputs."sph".ref   = "master";
+  inputs."sph".repo  = "sph";
   inputs."sph".type  = "github";
   inputs."sph".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sph".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

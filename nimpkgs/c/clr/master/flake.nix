@@ -13,18 +13,16 @@
   inputs.src-clr-master.repo  = "clr";
   inputs.src-clr-master.type  = "github";
   
-  inputs."chroma".dir   = "nimpkgs/c/chroma";
-  inputs."chroma".owner = "riinr";
-  inputs."chroma".ref   = "flake-pinning";
-  inputs."chroma".repo  = "flake-nimble";
+  inputs."chroma".owner = "nim-nix-pkgs";
+  inputs."chroma".ref   = "master";
+  inputs."chroma".repo  = "chroma";
   inputs."chroma".type  = "github";
   inputs."chroma".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chroma".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

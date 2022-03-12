@@ -13,10 +13,9 @@
   inputs.src-vscds-master.repo  = "vscds";
   inputs.src-vscds-master.type  = "github";
   
-  inputs."nimlevenshtein".dir   = "nimpkgs/n/nimlevenshtein";
-  inputs."nimlevenshtein".owner = "riinr";
-  inputs."nimlevenshtein".ref   = "flake-pinning";
-  inputs."nimlevenshtein".repo  = "flake-nimble";
+  inputs."nimlevenshtein".owner = "nim-nix-pkgs";
+  inputs."nimlevenshtein".ref   = "master";
+  inputs."nimlevenshtein".repo  = "nimlevenshtein";
   inputs."nimlevenshtein".type  = "github";
   inputs."nimlevenshtein".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimlevenshtein".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

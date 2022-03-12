@@ -13,10 +13,9 @@
   inputs.src-googleapi-v0_1_0.repo  = "googleapi";
   inputs.src-googleapi-v0_1_0.type  = "github";
   
-  inputs."quickjwt".dir   = "nimpkgs/q/quickjwt";
-  inputs."quickjwt".owner = "riinr";
-  inputs."quickjwt".ref   = "flake-pinning";
-  inputs."quickjwt".repo  = "flake-nimble";
+  inputs."quickjwt".owner = "nim-nix-pkgs";
+  inputs."quickjwt".ref   = "master";
+  inputs."quickjwt".repo  = "quickjwt";
   inputs."quickjwt".type  = "github";
   inputs."quickjwt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."quickjwt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

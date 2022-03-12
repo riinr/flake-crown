@@ -13,18 +13,16 @@
   inputs.src-rapid-master.repo  = "rapid";
   inputs.src-rapid-master.type  = "github";
   
-  inputs."aglet".dir   = "nimpkgs/a/aglet";
-  inputs."aglet".owner = "riinr";
-  inputs."aglet".ref   = "flake-pinning";
-  inputs."aglet".repo  = "flake-nimble";
+  inputs."aglet".owner = "nim-nix-pkgs";
+  inputs."aglet".ref   = "master";
+  inputs."aglet".repo  = "aglet";
   inputs."aglet".type  = "github";
   inputs."aglet".inputs.nixpkgs.follows = "nixpkgs";
   inputs."aglet".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."stbimage".dir   = "nimpkgs/s/stbimage";
-  inputs."stbimage".owner = "riinr";
-  inputs."stbimage".ref   = "flake-pinning";
-  inputs."stbimage".repo  = "flake-nimble";
+  inputs."stbimage".owner = "nim-nix-pkgs";
+  inputs."stbimage".ref   = "master";
+  inputs."stbimage".repo  = "stbimage";
   inputs."stbimage".type  = "github";
   inputs."stbimage".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stbimage".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

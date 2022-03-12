@@ -13,34 +13,30 @@
   inputs.src-halonium-0_2_3.repo  = "halonium";
   inputs.src-halonium-0_2_3.type  = "github";
   
-  inputs."regex".dir   = "nimpkgs/r/regex";
-  inputs."regex".owner = "riinr";
-  inputs."regex".ref   = "flake-pinning";
-  inputs."regex".repo  = "flake-nimble";
+  inputs."regex".owner = "nim-nix-pkgs";
+  inputs."regex".ref   = "master";
+  inputs."regex".repo  = "regex";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."tempfile".dir   = "nimpkgs/t/tempfile";
-  inputs."tempfile".owner = "riinr";
-  inputs."tempfile".ref   = "flake-pinning";
-  inputs."tempfile".repo  = "flake-nimble";
+  inputs."tempfile".owner = "nim-nix-pkgs";
+  inputs."tempfile".ref   = "master";
+  inputs."tempfile".repo  = "tempfile";
   inputs."tempfile".type  = "github";
   inputs."tempfile".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tempfile".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."uuids".dir   = "nimpkgs/u/uuids";
-  inputs."uuids".owner = "riinr";
-  inputs."uuids".ref   = "flake-pinning";
-  inputs."uuids".repo  = "flake-nimble";
+  inputs."uuids".owner = "nim-nix-pkgs";
+  inputs."uuids".ref   = "master";
+  inputs."uuids".repo  = "uuids";
   inputs."uuids".type  = "github";
   inputs."uuids".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uuids".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."zip".dir   = "nimpkgs/z/zip";
-  inputs."zip".owner = "riinr";
-  inputs."zip".ref   = "flake-pinning";
-  inputs."zip".repo  = "flake-nimble";
+  inputs."zip".owner = "nim-nix-pkgs";
+  inputs."zip".ref   = "master";
+  inputs."zip".repo  = "zip";
   inputs."zip".type  = "github";
   inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

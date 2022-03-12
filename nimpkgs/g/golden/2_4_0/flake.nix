@@ -13,58 +13,51 @@
   inputs.src-golden-2_4_0.repo  = "golden";
   inputs.src-golden-2_4_0.type  = "github";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."foreach".dir   = "nimpkgs/f/foreach";
-  inputs."foreach".owner = "riinr";
-  inputs."foreach".ref   = "flake-pinning";
-  inputs."foreach".repo  = "flake-nimble";
+  inputs."foreach".owner = "nim-nix-pkgs";
+  inputs."foreach".ref   = "master";
+  inputs."foreach".repo  = "foreach";
   inputs."foreach".type  = "github";
   inputs."foreach".inputs.nixpkgs.follows = "nixpkgs";
   inputs."foreach".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimetry".dir   = "nimpkgs/n/nimetry";
-  inputs."nimetry".owner = "riinr";
-  inputs."nimetry".ref   = "flake-pinning";
-  inputs."nimetry".repo  = "flake-nimble";
+  inputs."nimetry".owner = "nim-nix-pkgs";
+  inputs."nimetry".ref   = "master";
+  inputs."nimetry".repo  = "nimetry";
   inputs."nimetry".type  = "github";
   inputs."nimetry".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimetry".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."msgpack4nim".dir   = "nimpkgs/m/msgpack4nim";
-  inputs."msgpack4nim".owner = "riinr";
-  inputs."msgpack4nim".ref   = "flake-pinning";
-  inputs."msgpack4nim".repo  = "flake-nimble";
+  inputs."msgpack4nim".owner = "nim-nix-pkgs";
+  inputs."msgpack4nim".ref   = "master";
+  inputs."msgpack4nim".repo  = "msgpack4nim";
   inputs."msgpack4nim".type  = "github";
   inputs."msgpack4nim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."msgpack4nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."lmdb".dir   = "nimpkgs/l/lmdb";
-  inputs."lmdb".owner = "riinr";
-  inputs."lmdb".ref   = "flake-pinning";
-  inputs."lmdb".repo  = "flake-nimble";
+  inputs."lmdb".owner = "nim-nix-pkgs";
+  inputs."lmdb".ref   = "master";
+  inputs."lmdb".repo  = "lmdb";
   inputs."lmdb".type  = "github";
   inputs."lmdb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."lmdb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."terminaltables".dir   = "nimpkgs/t/terminaltables";
-  inputs."terminaltables".owner = "riinr";
-  inputs."terminaltables".ref   = "flake-pinning";
-  inputs."terminaltables".repo  = "flake-nimble";
+  inputs."terminaltables".owner = "nim-nix-pkgs";
+  inputs."terminaltables".ref   = "master";
+  inputs."terminaltables".repo  = "terminaltables";
   inputs."terminaltables".type  = "github";
   inputs."terminaltables".inputs.nixpkgs.follows = "nixpkgs";
   inputs."terminaltables".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimgit2".dir   = "nimpkgs/n/nimgit2";
-  inputs."nimgit2".owner = "riinr";
-  inputs."nimgit2".ref   = "flake-pinning";
-  inputs."nimgit2".repo  = "flake-nimble";
+  inputs."nimgit2".owner = "nim-nix-pkgs";
+  inputs."nimgit2".ref   = "master";
+  inputs."nimgit2".repo  = "nimgit2";
   inputs."nimgit2".type  = "github";
   inputs."nimgit2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimgit2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

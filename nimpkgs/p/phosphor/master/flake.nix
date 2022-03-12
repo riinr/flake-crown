@@ -13,10 +13,9 @@
   inputs.src-Phosphor-master.repo  = "Phosphor";
   inputs.src-Phosphor-master.type  = "github";
   
-  inputs."opengl".dir   = "nimpkgs/o/opengl";
-  inputs."opengl".owner = "riinr";
-  inputs."opengl".ref   = "flake-pinning";
-  inputs."opengl".repo  = "flake-nimble";
+  inputs."opengl".owner = "nim-nix-pkgs";
+  inputs."opengl".ref   = "master";
+  inputs."opengl".repo  = "opengl";
   inputs."opengl".type  = "github";
   inputs."opengl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."opengl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

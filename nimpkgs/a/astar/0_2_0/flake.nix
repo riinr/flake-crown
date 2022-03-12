@@ -13,18 +13,16 @@
   inputs.src-astar-0_2_0.repo  = "AStarNim";
   inputs.src-astar-0_2_0.type  = "github";
   
-  inputs."binaryheap".dir   = "nimpkgs/b/binaryheap";
-  inputs."binaryheap".owner = "riinr";
-  inputs."binaryheap".ref   = "flake-pinning";
-  inputs."binaryheap".repo  = "flake-nimble";
+  inputs."binaryheap".owner = "nim-nix-pkgs";
+  inputs."binaryheap".ref   = "master";
+  inputs."binaryheap".repo  = "binaryheap";
   inputs."binaryheap".type  = "github";
   inputs."binaryheap".inputs.nixpkgs.follows = "nixpkgs";
   inputs."binaryheap".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."optional_t".dir   = "nimpkgs/o/optional_t";
-  inputs."optional_t".owner = "riinr";
-  inputs."optional_t".ref   = "flake-pinning";
-  inputs."optional_t".repo  = "flake-nimble";
+  inputs."optional_t".owner = "nim-nix-pkgs";
+  inputs."optional_t".ref   = "master";
+  inputs."optional_t".repo  = "optional_t";
   inputs."optional_t".type  = "github";
   inputs."optional_t".inputs.nixpkgs.follows = "nixpkgs";
   inputs."optional_t".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

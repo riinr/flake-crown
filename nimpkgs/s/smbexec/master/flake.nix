@@ -13,26 +13,23 @@
   inputs.src-SMBExec-master.repo  = "SMB-Nim";
   inputs.src-SMBExec-master.type  = "github";
   
-  inputs."hashlib".dir   = "nimpkgs/h/hashlib";
-  inputs."hashlib".owner = "riinr";
-  inputs."hashlib".ref   = "flake-pinning";
-  inputs."hashlib".repo  = "flake-nimble";
+  inputs."hashlib".owner = "nim-nix-pkgs";
+  inputs."hashlib".ref   = "master";
+  inputs."hashlib".repo  = "hashlib";
   inputs."hashlib".type  = "github";
   inputs."hashlib".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hashlib".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."hmac".dir   = "nimpkgs/h/hmac";
-  inputs."hmac".owner = "riinr";
-  inputs."hmac".ref   = "flake-pinning";
-  inputs."hmac".repo  = "flake-nimble";
+  inputs."hmac".owner = "nim-nix-pkgs";
+  inputs."hmac".ref   = "master";
+  inputs."hmac".repo  = "hmac";
   inputs."hmac".type  = "github";
   inputs."hmac".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hmac".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."regex".dir   = "nimpkgs/r/regex";
-  inputs."regex".owner = "riinr";
-  inputs."regex".ref   = "flake-pinning";
-  inputs."regex".repo  = "flake-nimble";
+  inputs."regex".owner = "nim-nix-pkgs";
+  inputs."regex".ref   = "master";
+  inputs."regex".repo  = "regex";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

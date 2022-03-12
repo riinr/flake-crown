@@ -13,10 +13,9 @@
   inputs.src-dnd-v0_6_1.repo  = "dnd";
   inputs.src-dnd-v0_6_1.type  = "github";
   
-  inputs."gintro".dir   = "nimpkgs/g/gintro";
-  inputs."gintro".owner = "riinr";
-  inputs."gintro".ref   = "flake-pinning";
-  inputs."gintro".repo  = "flake-nimble";
+  inputs."gintro".owner = "nim-nix-pkgs";
+  inputs."gintro".ref   = "master";
+  inputs."gintro".repo  = "gintro";
   inputs."gintro".type  = "github";
   inputs."gintro".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gintro".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

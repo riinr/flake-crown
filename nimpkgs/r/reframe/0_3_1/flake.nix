@@ -13,10 +13,9 @@
   inputs.src-reframe-0_3_1.repo  = "reframe.nim";
   inputs.src-reframe-0_3_1.type  = "github";
   
-  inputs."edn".dir   = "nimpkgs/e/edn";
-  inputs."edn".owner = "riinr";
-  inputs."edn".ref   = "flake-pinning";
-  inputs."edn".repo  = "flake-nimble";
+  inputs."edn".owner = "nim-nix-pkgs";
+  inputs."edn".ref   = "master";
+  inputs."edn".repo  = "edn";
   inputs."edn".type  = "github";
   inputs."edn".inputs.nixpkgs.follows = "nixpkgs";
   inputs."edn".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

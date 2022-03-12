@@ -13,34 +13,30 @@
   inputs.src-chronos-master.repo  = "nim-chronos";
   inputs.src-chronos-master.type  = "github";
   
-  inputs."stew".dir   = "nimpkgs/s/stew";
-  inputs."stew".owner = "riinr";
-  inputs."stew".ref   = "flake-pinning";
-  inputs."stew".repo  = "flake-nimble";
+  inputs."stew".owner = "nim-nix-pkgs";
+  inputs."stew".ref   = "master";
+  inputs."stew".repo  = "stew";
   inputs."stew".type  = "github";
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."bearssl".dir   = "nimpkgs/b/bearssl";
-  inputs."bearssl".owner = "riinr";
-  inputs."bearssl".ref   = "flake-pinning";
-  inputs."bearssl".repo  = "flake-nimble";
+  inputs."bearssl".owner = "nim-nix-pkgs";
+  inputs."bearssl".ref   = "master";
+  inputs."bearssl".repo  = "bearssl";
   inputs."bearssl".type  = "github";
   inputs."bearssl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bearssl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."httputils".dir   = "nimpkgs/h/httputils";
-  inputs."httputils".owner = "riinr";
-  inputs."httputils".ref   = "flake-pinning";
-  inputs."httputils".repo  = "flake-nimble";
+  inputs."httputils".owner = "nim-nix-pkgs";
+  inputs."httputils".ref   = "master";
+  inputs."httputils".repo  = "httputils";
   inputs."httputils".type  = "github";
   inputs."httputils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."httputils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/status-im/nim-unittest2.git".dir   = "nimpkgs/h/https://github.com/status-im/nim-unittest2.git";
-  inputs."https://github.com/status-im/nim-unittest2.git".owner = "riinr";
-  inputs."https://github.com/status-im/nim-unittest2.git".ref   = "flake-pinning";
-  inputs."https://github.com/status-im/nim-unittest2.git".repo  = "flake-nimble";
+  inputs."https://github.com/status-im/nim-unittest2.git".owner = "nim-nix-pkgs";
+  inputs."https://github.com/status-im/nim-unittest2.git".ref   = "master";
+  inputs."https://github.com/status-im/nim-unittest2.git".repo  = "https://github.com/status-im/nim-unittest2.git";
   inputs."https://github.com/status-im/nim-unittest2.git".type  = "github";
   inputs."https://github.com/status-im/nim-unittest2.git".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/status-im/nim-unittest2.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,26 +13,23 @@
   inputs.src-NiMPC-v0_3_0.repo  = "nimpc";
   inputs.src-NiMPC-v0_3_0.type  = "github";
   
-  inputs."sysrandom".dir   = "nimpkgs/s/sysrandom";
-  inputs."sysrandom".owner = "riinr";
-  inputs."sysrandom".ref   = "flake-pinning";
-  inputs."sysrandom".repo  = "flake-nimble";
+  inputs."sysrandom".owner = "nim-nix-pkgs";
+  inputs."sysrandom".ref   = "master";
+  inputs."sysrandom".repo  = "sysrandom";
   inputs."sysrandom".type  = "github";
   inputs."sysrandom".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sysrandom".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."simpleot".dir   = "nimpkgs/s/simpleot";
-  inputs."simpleot".owner = "riinr";
-  inputs."simpleot".ref   = "flake-pinning";
-  inputs."simpleot".repo  = "flake-nimble";
+  inputs."simpleot".owner = "nim-nix-pkgs";
+  inputs."simpleot".ref   = "master";
+  inputs."simpleot".repo  = "simpleot";
   inputs."simpleot".type  = "github";
   inputs."simpleot".inputs.nixpkgs.follows = "nixpkgs";
   inputs."simpleot".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."monocypher".dir   = "nimpkgs/m/monocypher";
-  inputs."monocypher".owner = "riinr";
-  inputs."monocypher".ref   = "flake-pinning";
-  inputs."monocypher".repo  = "flake-nimble";
+  inputs."monocypher".owner = "nim-nix-pkgs";
+  inputs."monocypher".ref   = "master";
+  inputs."monocypher".repo  = "monocypher";
   inputs."monocypher".type  = "github";
   inputs."monocypher".inputs.nixpkgs.follows = "nixpkgs";
   inputs."monocypher".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

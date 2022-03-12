@@ -13,10 +13,9 @@
   inputs.src-gigi-v0_1_1.repo  = "gigi";
   inputs.src-gigi-v0_1_1.type  = "github";
   
-  inputs."puppy".dir   = "nimpkgs/p/puppy";
-  inputs."puppy".owner = "riinr";
-  inputs."puppy".ref   = "flake-pinning";
-  inputs."puppy".repo  = "flake-nimble";
+  inputs."puppy".owner = "nim-nix-pkgs";
+  inputs."puppy".ref   = "master";
+  inputs."puppy".repo  = "puppy";
   inputs."puppy".type  = "github";
   inputs."puppy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."puppy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

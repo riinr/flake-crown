@@ -13,18 +13,16 @@
   inputs.src-jwt-master.repo  = "nim-jwt";
   inputs.src-jwt-master.type  = "github";
   
-  inputs."bearssl".dir   = "nimpkgs/b/bearssl";
-  inputs."bearssl".owner = "riinr";
-  inputs."bearssl".ref   = "flake-pinning";
-  inputs."bearssl".repo  = "flake-nimble";
+  inputs."bearssl".owner = "nim-nix-pkgs";
+  inputs."bearssl".ref   = "master";
+  inputs."bearssl".repo  = "bearssl";
   inputs."bearssl".type  = "github";
   inputs."bearssl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bearssl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/yglukhov/bearssl_pkey_decoder".dir   = "nimpkgs/h/https://github.com/yglukhov/bearssl_pkey_decoder";
-  inputs."https://github.com/yglukhov/bearssl_pkey_decoder".owner = "riinr";
-  inputs."https://github.com/yglukhov/bearssl_pkey_decoder".ref   = "flake-pinning";
-  inputs."https://github.com/yglukhov/bearssl_pkey_decoder".repo  = "flake-nimble";
+  inputs."https://github.com/yglukhov/bearssl_pkey_decoder".owner = "nim-nix-pkgs";
+  inputs."https://github.com/yglukhov/bearssl_pkey_decoder".ref   = "master";
+  inputs."https://github.com/yglukhov/bearssl_pkey_decoder".repo  = "https://github.com/yglukhov/bearssl_pkey_decoder";
   inputs."https://github.com/yglukhov/bearssl_pkey_decoder".type  = "github";
   inputs."https://github.com/yglukhov/bearssl_pkey_decoder".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/yglukhov/bearssl_pkey_decoder".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

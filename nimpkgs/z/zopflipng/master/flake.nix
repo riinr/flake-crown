@@ -13,10 +13,9 @@
   inputs.src-zopflipng-master.repo  = "zopflipng";
   inputs.src-zopflipng-master.type  = "github";
   
-  inputs."nimpng".dir   = "nimpkgs/n/nimpng";
-  inputs."nimpng".owner = "riinr";
-  inputs."nimpng".ref   = "flake-pinning";
-  inputs."nimpng".repo  = "flake-nimble";
+  inputs."nimpng".owner = "nim-nix-pkgs";
+  inputs."nimpng".ref   = "master";
+  inputs."nimpng".repo  = "nimpng";
   inputs."nimpng".type  = "github";
   inputs."nimpng".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpng".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

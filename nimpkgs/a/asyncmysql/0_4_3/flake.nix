@@ -13,10 +13,9 @@
   inputs.src-asyncmysql-0_4_3.repo  = "asyncmysql";
   inputs.src-asyncmysql-0_4_3.type  = "github";
   
-  inputs."mysqlparser".dir   = "nimpkgs/m/mysqlparser";
-  inputs."mysqlparser".owner = "riinr";
-  inputs."mysqlparser".ref   = "flake-pinning";
-  inputs."mysqlparser".repo  = "flake-nimble";
+  inputs."mysqlparser".owner = "nim-nix-pkgs";
+  inputs."mysqlparser".ref   = "master";
+  inputs."mysqlparser".repo  = "mysqlparser";
   inputs."mysqlparser".type  = "github";
   inputs."mysqlparser".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mysqlparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

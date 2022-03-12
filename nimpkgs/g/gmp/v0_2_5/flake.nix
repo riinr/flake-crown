@@ -13,10 +13,9 @@
   inputs.src-gmp-v0_2_5.repo  = "nim-gmp";
   inputs.src-gmp-v0_2_5.type  = "github";
   
-  inputs."nimrod".dir   = "nimpkgs/n/nimrod";
-  inputs."nimrod".owner = "riinr";
-  inputs."nimrod".ref   = "flake-pinning";
-  inputs."nimrod".repo  = "flake-nimble";
+  inputs."nimrod".owner = "nim-nix-pkgs";
+  inputs."nimrod".ref   = "master";
+  inputs."nimrod".repo  = "nimrod";
   inputs."nimrod".type  = "github";
   inputs."nimrod".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimrod".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,10 +13,9 @@
   inputs.src-wings-v0_0_7-alpha.repo  = "wings";
   inputs.src-wings-v0_0_7-alpha.type  = "github";
   
-  inputs."stones".dir   = "nimpkgs/s/stones";
-  inputs."stones".owner = "riinr";
-  inputs."stones".ref   = "flake-pinning";
-  inputs."stones".repo  = "flake-nimble";
+  inputs."stones".owner = "nim-nix-pkgs";
+  inputs."stones".ref   = "master";
+  inputs."stones".repo  = "stones";
   inputs."stones".type  = "github";
   inputs."stones".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stones".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

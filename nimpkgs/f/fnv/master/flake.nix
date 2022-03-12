@@ -13,10 +13,9 @@
   inputs.src-fnv-master.repo  = "nim-fnv";
   inputs.src-fnv-master.type  = "gitlab";
   
-  inputs."stint".dir   = "nimpkgs/s/stint";
-  inputs."stint".owner = "riinr";
-  inputs."stint".ref   = "flake-pinning";
-  inputs."stint".repo  = "flake-nimble";
+  inputs."stint".owner = "nim-nix-pkgs";
+  inputs."stint".ref   = "master";
+  inputs."stint".repo  = "stint";
   inputs."stint".type  = "github";
   inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

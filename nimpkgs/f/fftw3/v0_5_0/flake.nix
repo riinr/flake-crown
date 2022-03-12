@@ -13,26 +13,23 @@
   inputs.src-fftw3-v0_5_0.repo  = "nimfftw3";
   inputs.src-fftw3-v0_5_0.type  = "github";
   
-  inputs."arraymancer".dir   = "nimpkgs/a/arraymancer";
-  inputs."arraymancer".owner = "riinr";
-  inputs."arraymancer".ref   = "flake-pinning";
-  inputs."arraymancer".repo  = "flake-nimble";
+  inputs."arraymancer".owner = "nim-nix-pkgs";
+  inputs."arraymancer".ref   = "master";
+  inputs."arraymancer".repo  = "arraymancer";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."weave".dir   = "nimpkgs/w/weave";
-  inputs."weave".owner = "riinr";
-  inputs."weave".ref   = "flake-pinning";
-  inputs."weave".repo  = "flake-nimble";
+  inputs."weave".owner = "nim-nix-pkgs";
+  inputs."weave".ref   = "master";
+  inputs."weave".repo  = "weave";
   inputs."weave".type  = "github";
   inputs."weave".inputs.nixpkgs.follows = "nixpkgs";
   inputs."weave".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."zippy".dir   = "nimpkgs/z/zippy";
-  inputs."zippy".owner = "riinr";
-  inputs."zippy".ref   = "flake-pinning";
-  inputs."zippy".repo  = "flake-nimble";
+  inputs."zippy".owner = "nim-nix-pkgs";
+  inputs."zippy".ref   = "master";
+  inputs."zippy".repo  = "zippy";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

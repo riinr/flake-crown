@@ -13,10 +13,9 @@
   inputs.src-iterrr-main.repo  = "iterrr";
   inputs.src-iterrr-main.type  = "github";
   
-  inputs."macroplus".dir   = "nimpkgs/m/macroplus";
-  inputs."macroplus".owner = "riinr";
-  inputs."macroplus".ref   = "flake-pinning";
-  inputs."macroplus".repo  = "flake-nimble";
+  inputs."macroplus".owner = "nim-nix-pkgs";
+  inputs."macroplus".ref   = "master";
+  inputs."macroplus".repo  = "macroplus";
   inputs."macroplus".type  = "github";
   inputs."macroplus".inputs.nixpkgs.follows = "nixpkgs";
   inputs."macroplus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

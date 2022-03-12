@@ -13,18 +13,16 @@
   inputs.src-rect-v1_0_1.repo  = "rect";
   inputs.src-rect-v1_0_1.type  = "github";
   
-  inputs."eastasianwidth".dir   = "nimpkgs/e/eastasianwidth";
-  inputs."eastasianwidth".owner = "riinr";
-  inputs."eastasianwidth".ref   = "flake-pinning";
-  inputs."eastasianwidth".repo  = "flake-nimble";
+  inputs."eastasianwidth".owner = "nim-nix-pkgs";
+  inputs."eastasianwidth".ref   = "master";
+  inputs."eastasianwidth".repo  = "eastasianwidth";
   inputs."eastasianwidth".type  = "github";
   inputs."eastasianwidth".inputs.nixpkgs.follows = "nixpkgs";
   inputs."eastasianwidth".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."docopt".dir   = "nimpkgs/d/docopt";
-  inputs."docopt".owner = "riinr";
-  inputs."docopt".ref   = "flake-pinning";
-  inputs."docopt".repo  = "flake-nimble";
+  inputs."docopt".owner = "nim-nix-pkgs";
+  inputs."docopt".ref   = "master";
+  inputs."docopt".repo  = "docopt";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,58 +13,51 @@
   inputs.src-ggplotnim-v0_5_1.repo  = "ggplotnim";
   inputs.src-ggplotnim-v0_5_1.type  = "github";
   
-  inputs."https://github.com/vindaar/seqmath".dir   = "nimpkgs/h/https://github.com/vindaar/seqmath";
-  inputs."https://github.com/vindaar/seqmath".owner = "riinr";
-  inputs."https://github.com/vindaar/seqmath".ref   = "flake-pinning";
-  inputs."https://github.com/vindaar/seqmath".repo  = "flake-nimble";
+  inputs."https://github.com/vindaar/seqmath".owner = "nim-nix-pkgs";
+  inputs."https://github.com/vindaar/seqmath".ref   = "master";
+  inputs."https://github.com/vindaar/seqmath".repo  = "https://github.com/vindaar/seqmath";
   inputs."https://github.com/vindaar/seqmath".type  = "github";
   inputs."https://github.com/vindaar/seqmath".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/vindaar/seqmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."ginger".dir   = "nimpkgs/g/ginger";
-  inputs."ginger".owner = "riinr";
-  inputs."ginger".ref   = "flake-pinning";
-  inputs."ginger".repo  = "flake-nimble";
+  inputs."ginger".owner = "nim-nix-pkgs";
+  inputs."ginger".ref   = "master";
+  inputs."ginger".repo  = "ginger";
   inputs."ginger".type  = "github";
   inputs."ginger".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ginger".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."datamancer".dir   = "nimpkgs/d/datamancer";
-  inputs."datamancer".owner = "riinr";
-  inputs."datamancer".ref   = "flake-pinning";
-  inputs."datamancer".repo  = "flake-nimble";
+  inputs."datamancer".owner = "nim-nix-pkgs";
+  inputs."datamancer".ref   = "master";
+  inputs."datamancer".repo  = "datamancer";
   inputs."datamancer".type  = "github";
   inputs."datamancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."datamancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."arraymancer".dir   = "nimpkgs/a/arraymancer";
-  inputs."arraymancer".owner = "riinr";
-  inputs."arraymancer".ref   = "flake-pinning";
-  inputs."arraymancer".repo  = "flake-nimble";
+  inputs."arraymancer".owner = "nim-nix-pkgs";
+  inputs."arraymancer".ref   = "master";
+  inputs."arraymancer".repo  = "arraymancer";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."shell".dir   = "nimpkgs/s/shell";
-  inputs."shell".owner = "riinr";
-  inputs."shell".ref   = "flake-pinning";
-  inputs."shell".repo  = "flake-nimble";
+  inputs."shell".owner = "nim-nix-pkgs";
+  inputs."shell".ref   = "master";
+  inputs."shell".repo  = "shell";
   inputs."shell".type  = "github";
   inputs."shell".inputs.nixpkgs.follows = "nixpkgs";
   inputs."shell".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."webview".dir   = "nimpkgs/w/webview";
-  inputs."webview".owner = "riinr";
-  inputs."webview".ref   = "flake-pinning";
-  inputs."webview".repo  = "flake-nimble";
+  inputs."webview".owner = "nim-nix-pkgs";
+  inputs."webview".ref   = "master";
+  inputs."webview".repo  = "webview";
   inputs."webview".type  = "github";
   inputs."webview".inputs.nixpkgs.follows = "nixpkgs";
   inputs."webview".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/scinim/scinim".dir   = "nimpkgs/h/https://github.com/scinim/scinim";
-  inputs."https://github.com/scinim/scinim".owner = "riinr";
-  inputs."https://github.com/scinim/scinim".ref   = "flake-pinning";
-  inputs."https://github.com/scinim/scinim".repo  = "flake-nimble";
+  inputs."https://github.com/scinim/scinim".owner = "nim-nix-pkgs";
+  inputs."https://github.com/scinim/scinim".ref   = "master";
+  inputs."https://github.com/scinim/scinim".repo  = "https://github.com/scinim/scinim";
   inputs."https://github.com/scinim/scinim".type  = "github";
   inputs."https://github.com/scinim/scinim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/scinim/scinim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

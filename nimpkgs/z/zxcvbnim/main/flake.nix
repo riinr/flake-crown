@@ -13,18 +13,16 @@
   inputs.src-zxcvbnim-main.repo  = "zxcvbnim";
   inputs.src-zxcvbnim-main.type  = "github";
   
-  inputs."jsony".dir   = "nimpkgs/j/jsony";
-  inputs."jsony".owner = "riinr";
-  inputs."jsony".ref   = "flake-pinning";
-  inputs."jsony".repo  = "flake-nimble";
+  inputs."jsony".owner = "nim-nix-pkgs";
+  inputs."jsony".ref   = "master";
+  inputs."jsony".repo  = "jsony";
   inputs."jsony".type  = "github";
   inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."supersnappy".dir   = "nimpkgs/s/supersnappy";
-  inputs."supersnappy".owner = "riinr";
-  inputs."supersnappy".ref   = "flake-pinning";
-  inputs."supersnappy".repo  = "flake-nimble";
+  inputs."supersnappy".owner = "nim-nix-pkgs";
+  inputs."supersnappy".ref   = "master";
+  inputs."supersnappy".repo  = "supersnappy";
   inputs."supersnappy".type  = "github";
   inputs."supersnappy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."supersnappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

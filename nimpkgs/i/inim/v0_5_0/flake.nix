@@ -13,18 +13,16 @@
   inputs.src-inim-v0_5_0.repo  = "INim";
   inputs.src-inim-v0_5_0.type  = "github";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."noise".dir   = "nimpkgs/n/noise";
-  inputs."noise".owner = "riinr";
-  inputs."noise".ref   = "flake-pinning";
-  inputs."noise".repo  = "flake-nimble";
+  inputs."noise".owner = "nim-nix-pkgs";
+  inputs."noise".ref   = "master";
+  inputs."noise".repo  = "noise";
   inputs."noise".type  = "github";
   inputs."noise".inputs.nixpkgs.follows = "nixpkgs";
   inputs."noise".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

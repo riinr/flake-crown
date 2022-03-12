@@ -13,18 +13,16 @@
   inputs.src-bump-1_1_0.repo  = "bump";
   inputs.src-bump-1_1_0.type  = "github";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."git://github.com/disruptek/cutelog.git".dir   = "nimpkgs/g/git://github.com/disruptek/cutelog.git";
-  inputs."git://github.com/disruptek/cutelog.git".owner = "riinr";
-  inputs."git://github.com/disruptek/cutelog.git".ref   = "flake-pinning";
-  inputs."git://github.com/disruptek/cutelog.git".repo  = "flake-nimble";
+  inputs."git://github.com/disruptek/cutelog.git".owner = "nim-nix-pkgs";
+  inputs."git://github.com/disruptek/cutelog.git".ref   = "master";
+  inputs."git://github.com/disruptek/cutelog.git".repo  = "git://github.com/disruptek/cutelog.git";
   inputs."git://github.com/disruptek/cutelog.git".type  = "github";
   inputs."git://github.com/disruptek/cutelog.git".inputs.nixpkgs.follows = "nixpkgs";
   inputs."git://github.com/disruptek/cutelog.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

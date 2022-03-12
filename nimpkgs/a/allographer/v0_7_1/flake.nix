@@ -13,18 +13,16 @@
   inputs.src-allographer-v0_7_1.repo  = "nim-allographer";
   inputs.src-allographer-v0_7_1.type  = "github";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."progress".dir   = "nimpkgs/p/progress";
-  inputs."progress".owner = "riinr";
-  inputs."progress".ref   = "flake-pinning";
-  inputs."progress".repo  = "flake-nimble";
+  inputs."progress".owner = "nim-nix-pkgs";
+  inputs."progress".ref   = "master";
+  inputs."progress".repo  = "progress";
   inputs."progress".type  = "github";
   inputs."progress".inputs.nixpkgs.follows = "nixpkgs";
   inputs."progress".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,10 +13,9 @@
   inputs.src-linalg-master.repo  = "linear-algebra";
   inputs.src-linalg-master.type  = "github";
   
-  inputs."nimblas".dir   = "nimpkgs/n/nimblas";
-  inputs."nimblas".owner = "riinr";
-  inputs."nimblas".ref   = "flake-pinning";
-  inputs."nimblas".repo  = "flake-nimble";
+  inputs."nimblas".owner = "nim-nix-pkgs";
+  inputs."nimblas".ref   = "master";
+  inputs."nimblas".repo  = "nimblas";
   inputs."nimblas".type  = "github";
   inputs."nimblas".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimblas".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

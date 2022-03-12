@@ -13,18 +13,16 @@
   inputs.src-eth_keys-master.repo  = "nim-eth-keys";
   inputs.src-eth_keys-master.type  = "github";
   
-  inputs."nimcrypto".dir   = "nimpkgs/n/nimcrypto";
-  inputs."nimcrypto".owner = "riinr";
-  inputs."nimcrypto".ref   = "flake-pinning";
-  inputs."nimcrypto".repo  = "flake-nimble";
+  inputs."nimcrypto".owner = "nim-nix-pkgs";
+  inputs."nimcrypto".ref   = "master";
+  inputs."nimcrypto".repo  = "nimcrypto";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."secp256k1".dir   = "nimpkgs/s/secp256k1";
-  inputs."secp256k1".owner = "riinr";
-  inputs."secp256k1".ref   = "flake-pinning";
-  inputs."secp256k1".repo  = "flake-nimble";
+  inputs."secp256k1".owner = "nim-nix-pkgs";
+  inputs."secp256k1".ref   = "master";
+  inputs."secp256k1".repo  = "secp256k1";
   inputs."secp256k1".type  = "github";
   inputs."secp256k1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."secp256k1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

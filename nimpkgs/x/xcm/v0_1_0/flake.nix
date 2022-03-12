@@ -13,18 +13,16 @@
   inputs.src-xcm-v0_1_0.repo  = "xcm";
   inputs.src-xcm-v0_1_0.type  = "github";
   
-  inputs."https://github.com/solitudesf/x11".dir   = "nimpkgs/h/https://github.com/solitudesf/x11";
-  inputs."https://github.com/solitudesf/x11".owner = "riinr";
-  inputs."https://github.com/solitudesf/x11".ref   = "flake-pinning";
-  inputs."https://github.com/solitudesf/x11".repo  = "flake-nimble";
+  inputs."https://github.com/solitudesf/x11".owner = "nim-nix-pkgs";
+  inputs."https://github.com/solitudesf/x11".ref   = "master";
+  inputs."https://github.com/solitudesf/x11".repo  = "https://github.com/solitudesf/x11";
   inputs."https://github.com/solitudesf/x11".type  = "github";
   inputs."https://github.com/solitudesf/x11".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/solitudesf/x11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,10 +13,9 @@
   inputs.src-alut-master.repo  = "alut";
   inputs.src-alut-master.type  = "github";
   
-  inputs."openal".dir   = "nimpkgs/o/openal";
-  inputs."openal".owner = "riinr";
-  inputs."openal".ref   = "flake-pinning";
-  inputs."openal".repo  = "flake-nimble";
+  inputs."openal".owner = "nim-nix-pkgs";
+  inputs."openal".ref   = "master";
+  inputs."openal".repo  = "openal";
   inputs."openal".type  = "github";
   inputs."openal".inputs.nixpkgs.follows = "nixpkgs";
   inputs."openal".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,10 +13,9 @@
   inputs.src-asyncredis-v0_8_2.repo  = "redis.nim";
   inputs.src-asyncredis-v0_8_2.type  = "github";
   
-  inputs."networkutils".dir   = "nimpkgs/n/networkutils";
-  inputs."networkutils".owner = "riinr";
-  inputs."networkutils".ref   = "flake-pinning";
-  inputs."networkutils".repo  = "flake-nimble";
+  inputs."networkutils".owner = "nim-nix-pkgs";
+  inputs."networkutils".ref   = "master";
+  inputs."networkutils".repo  = "networkutils";
   inputs."networkutils".type  = "github";
   inputs."networkutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."networkutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

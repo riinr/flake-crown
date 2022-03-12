@@ -13,10 +13,9 @@
   inputs.src-nimscripter-master.repo  = "nimscripter";
   inputs.src-nimscripter-master.type  = "github";
   
-  inputs."https://github.com/disruptek/assume".dir   = "nimpkgs/h/https://github.com/disruptek/assume";
-  inputs."https://github.com/disruptek/assume".owner = "riinr";
-  inputs."https://github.com/disruptek/assume".ref   = "flake-pinning";
-  inputs."https://github.com/disruptek/assume".repo  = "flake-nimble";
+  inputs."https://github.com/disruptek/assume".owner = "nim-nix-pkgs";
+  inputs."https://github.com/disruptek/assume".ref   = "master";
+  inputs."https://github.com/disruptek/assume".repo  = "https://github.com/disruptek/assume";
   inputs."https://github.com/disruptek/assume".type  = "github";
   inputs."https://github.com/disruptek/assume".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/disruptek/assume".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

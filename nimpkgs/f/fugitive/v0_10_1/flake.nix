@@ -13,26 +13,23 @@
   inputs.src-fugitive-v0_10_1.repo  = "fugitive";
   inputs.src-fugitive-v0_10_1.type  = "github";
   
-  inputs."gara".dir   = "nimpkgs/g/gara";
-  inputs."gara".owner = "riinr";
-  inputs."gara".ref   = "flake-pinning";
-  inputs."gara".repo  = "flake-nimble";
+  inputs."gara".owner = "nim-nix-pkgs";
+  inputs."gara".ref   = "master";
+  inputs."gara".repo  = "gara";
   inputs."gara".type  = "github";
   inputs."gara".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gara".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."tempfile".dir   = "nimpkgs/t/tempfile";
-  inputs."tempfile".owner = "riinr";
-  inputs."tempfile".ref   = "flake-pinning";
-  inputs."tempfile".repo  = "flake-nimble";
+  inputs."tempfile".owner = "nim-nix-pkgs";
+  inputs."tempfile".ref   = "master";
+  inputs."tempfile".repo  = "tempfile";
   inputs."tempfile".type  = "github";
   inputs."tempfile".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tempfile".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."unpack".dir   = "nimpkgs/u/unpack";
-  inputs."unpack".owner = "riinr";
-  inputs."unpack".ref   = "flake-pinning";
-  inputs."unpack".repo  = "flake-nimble";
+  inputs."unpack".owner = "nim-nix-pkgs";
+  inputs."unpack".ref   = "master";
+  inputs."unpack".repo  = "unpack";
   inputs."unpack".type  = "github";
   inputs."unpack".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unpack".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

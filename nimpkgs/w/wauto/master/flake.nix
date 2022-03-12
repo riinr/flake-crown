@@ -13,26 +13,23 @@
   inputs.src-wauto-master.repo  = "wAuto";
   inputs.src-wauto-master.type  = "github";
   
-  inputs."winim".dir   = "nimpkgs/w/winim";
-  inputs."winim".owner = "riinr";
-  inputs."winim".ref   = "flake-pinning";
-  inputs."winim".repo  = "flake-nimble";
+  inputs."winim".owner = "nim-nix-pkgs";
+  inputs."winim".ref   = "master";
+  inputs."winim".repo  = "winim";
   inputs."winim".type  = "github";
   inputs."winim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."winim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."wnim".dir   = "nimpkgs/w/wnim";
-  inputs."wnim".owner = "riinr";
-  inputs."wnim".ref   = "flake-pinning";
-  inputs."wnim".repo  = "flake-nimble";
+  inputs."wnim".owner = "nim-nix-pkgs";
+  inputs."wnim".ref   = "master";
+  inputs."wnim".repo  = "wnim";
   inputs."wnim".type  = "github";
   inputs."wnim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."wnim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."npeg".dir   = "nimpkgs/n/npeg";
-  inputs."npeg".owner = "riinr";
-  inputs."npeg".ref   = "flake-pinning";
-  inputs."npeg".repo  = "flake-nimble";
+  inputs."npeg".owner = "nim-nix-pkgs";
+  inputs."npeg".ref   = "master";
+  inputs."npeg".repo  = "npeg";
   inputs."npeg".type  = "github";
   inputs."npeg".inputs.nixpkgs.follows = "nixpkgs";
   inputs."npeg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

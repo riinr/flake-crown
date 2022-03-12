@@ -13,18 +13,16 @@
   inputs.src-emmy-master.repo  = "emmy";
   inputs.src-emmy-master.type  = "github";
   
-  inputs."bigints".dir   = "nimpkgs/b/bigints";
-  inputs."bigints".owner = "riinr";
-  inputs."bigints".ref   = "flake-pinning";
-  inputs."bigints".repo  = "flake-nimble";
+  inputs."bigints".owner = "nim-nix-pkgs";
+  inputs."bigints".ref   = "master";
+  inputs."bigints".repo  = "bigints";
   inputs."bigints".type  = "github";
   inputs."bigints".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bigints".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."stint".dir   = "nimpkgs/s/stint";
-  inputs."stint".owner = "riinr";
-  inputs."stint".ref   = "flake-pinning";
-  inputs."stint".repo  = "flake-nimble";
+  inputs."stint".owner = "nim-nix-pkgs";
+  inputs."stint".ref   = "master";
+  inputs."stint".repo  = "stint";
   inputs."stint".type  = "github";
   inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

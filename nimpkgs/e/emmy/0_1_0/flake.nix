@@ -13,26 +13,23 @@
   inputs.src-emmy-0_1_0.repo  = "emmy";
   inputs.src-emmy-0_1_0.type  = "github";
   
-  inputs."neo".dir   = "nimpkgs/n/neo";
-  inputs."neo".owner = "riinr";
-  inputs."neo".ref   = "flake-pinning";
-  inputs."neo".repo  = "flake-nimble";
+  inputs."neo".owner = "nim-nix-pkgs";
+  inputs."neo".ref   = "master";
+  inputs."neo".repo  = "neo";
   inputs."neo".type  = "github";
   inputs."neo".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neo".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."bigints".dir   = "nimpkgs/b/bigints";
-  inputs."bigints".owner = "riinr";
-  inputs."bigints".ref   = "flake-pinning";
-  inputs."bigints".repo  = "flake-nimble";
+  inputs."bigints".owner = "nim-nix-pkgs";
+  inputs."bigints".ref   = "master";
+  inputs."bigints".repo  = "bigints";
   inputs."bigints".type  = "github";
   inputs."bigints".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bigints".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."stint".dir   = "nimpkgs/s/stint";
-  inputs."stint".owner = "riinr";
-  inputs."stint".ref   = "flake-pinning";
-  inputs."stint".repo  = "flake-nimble";
+  inputs."stint".owner = "nim-nix-pkgs";
+  inputs."stint".ref   = "master";
+  inputs."stint".repo  = "stint";
   inputs."stint".type  = "github";
   inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

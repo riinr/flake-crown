@@ -13,18 +13,16 @@
   inputs.src-gplay-master.repo  = "gplay";
   inputs.src-gplay-master.type  = "github";
   
-  inputs."jwt".dir   = "nimpkgs/j/jwt";
-  inputs."jwt".owner = "riinr";
-  inputs."jwt".ref   = "flake-pinning";
-  inputs."jwt".repo  = "flake-nimble";
+  inputs."jwt".owner = "nim-nix-pkgs";
+  inputs."jwt".ref   = "master";
+  inputs."jwt".repo  = "jwt";
   inputs."jwt".type  = "github";
   inputs."jwt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jwt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,18 +13,16 @@
   inputs.src-qwertycd-v0_1_3.repo  = "qwertycd";
   inputs.src-qwertycd-v0_1_3.type  = "github";
   
-  inputs."illwill".dir   = "nimpkgs/i/illwill";
-  inputs."illwill".owner = "riinr";
-  inputs."illwill".ref   = "flake-pinning";
-  inputs."illwill".repo  = "flake-nimble";
+  inputs."illwill".owner = "nim-nix-pkgs";
+  inputs."illwill".ref   = "master";
+  inputs."illwill".repo  = "illwill";
   inputs."illwill".type  = "github";
   inputs."illwill".inputs.nixpkgs.follows = "nixpkgs";
   inputs."illwill".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."parsetoml".dir   = "nimpkgs/p/parsetoml";
-  inputs."parsetoml".owner = "riinr";
-  inputs."parsetoml".ref   = "flake-pinning";
-  inputs."parsetoml".repo  = "flake-nimble";
+  inputs."parsetoml".owner = "nim-nix-pkgs";
+  inputs."parsetoml".ref   = "master";
+  inputs."parsetoml".repo  = "parsetoml";
   inputs."parsetoml".type  = "github";
   inputs."parsetoml".inputs.nixpkgs.follows = "nixpkgs";
   inputs."parsetoml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,10 +13,9 @@
   inputs.src-alignment-v1_2_1.repo  = "alignment";
   inputs.src-alignment-v1_2_1.type  = "github";
   
-  inputs."eastasianwidth".dir   = "nimpkgs/e/eastasianwidth";
-  inputs."eastasianwidth".owner = "riinr";
-  inputs."eastasianwidth".ref   = "flake-pinning";
-  inputs."eastasianwidth".repo  = "flake-nimble";
+  inputs."eastasianwidth".owner = "nim-nix-pkgs";
+  inputs."eastasianwidth".ref   = "master";
+  inputs."eastasianwidth".repo  = "eastasianwidth";
   inputs."eastasianwidth".type  = "github";
   inputs."eastasianwidth".inputs.nixpkgs.follows = "nixpkgs";
   inputs."eastasianwidth".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

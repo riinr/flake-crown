@@ -13,26 +13,23 @@
   inputs.src-inumon-v0_2_2.repo  = "inumon";
   inputs.src-inumon-v0_2_2.type  = "github";
   
-  inputs."nimterop".dir   = "nimpkgs/n/nimterop";
-  inputs."nimterop".owner = "riinr";
-  inputs."nimterop".ref   = "flake-pinning";
-  inputs."nimterop".repo  = "flake-nimble";
+  inputs."nimterop".owner = "nim-nix-pkgs";
+  inputs."nimterop".ref   = "master";
+  inputs."nimterop".repo  = "nimterop";
   inputs."nimterop".type  = "github";
   inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."arraymancer".dir   = "nimpkgs/a/arraymancer";
-  inputs."arraymancer".owner = "riinr";
-  inputs."arraymancer".ref   = "flake-pinning";
-  inputs."arraymancer".repo  = "flake-nimble";
+  inputs."arraymancer".owner = "nim-nix-pkgs";
+  inputs."arraymancer".ref   = "master";
+  inputs."arraymancer".repo  = "arraymancer";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nigui".dir   = "nimpkgs/n/nigui";
-  inputs."nigui".owner = "riinr";
-  inputs."nigui".ref   = "flake-pinning";
-  inputs."nigui".repo  = "flake-nimble";
+  inputs."nigui".owner = "nim-nix-pkgs";
+  inputs."nigui".ref   = "master";
+  inputs."nigui".repo  = "nigui";
   inputs."nigui".type  = "github";
   inputs."nigui".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nigui".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

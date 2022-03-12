@@ -13,10 +13,9 @@
   inputs.src-zfplugs-v0_0_5.repo  = "nim.zfplugs";
   inputs.src-zfplugs-v0_0_5.type  = "github";
   
-  inputs."zfcore".dir   = "nimpkgs/z/zfcore";
-  inputs."zfcore".owner = "riinr";
-  inputs."zfcore".ref   = "flake-pinning";
-  inputs."zfcore".repo  = "flake-nimble";
+  inputs."zfcore".owner = "nim-nix-pkgs";
+  inputs."zfcore".ref   = "master";
+  inputs."zfcore".repo  = "zfcore";
   inputs."zfcore".type  = "github";
   inputs."zfcore".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfcore".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

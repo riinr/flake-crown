@@ -13,18 +13,16 @@
   inputs.src-aglet-0_1_0.repo  = "aglet";
   inputs.src-aglet-0_1_0.type  = "github";
   
-  inputs."nimterop".dir   = "nimpkgs/n/nimterop";
-  inputs."nimterop".owner = "riinr";
-  inputs."nimterop".ref   = "flake-pinning";
-  inputs."nimterop".repo  = "flake-nimble";
+  inputs."nimterop".owner = "nim-nix-pkgs";
+  inputs."nimterop".ref   = "master";
+  inputs."nimterop".repo  = "nimterop";
   inputs."nimterop".type  = "github";
   inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."glm".dir   = "nimpkgs/g/glm";
-  inputs."glm".owner = "riinr";
-  inputs."glm".ref   = "flake-pinning";
-  inputs."glm".repo  = "flake-nimble";
+  inputs."glm".owner = "nim-nix-pkgs";
+  inputs."glm".ref   = "master";
+  inputs."glm".repo  = "glm";
   inputs."glm".type  = "github";
   inputs."glm".inputs.nixpkgs.follows = "nixpkgs";
   inputs."glm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

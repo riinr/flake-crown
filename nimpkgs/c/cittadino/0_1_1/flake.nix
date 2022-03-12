@@ -13,10 +13,9 @@
   inputs.src-cittadino-0_1_1.repo  = "cittadino";
   inputs.src-cittadino-0_1_1.type  = "github";
   
-  inputs."stomp".dir   = "nimpkgs/s/stomp";
-  inputs."stomp".owner = "riinr";
-  inputs."stomp".ref   = "flake-pinning";
-  inputs."stomp".repo  = "flake-nimble";
+  inputs."stomp".owner = "nim-nix-pkgs";
+  inputs."stomp".ref   = "master";
+  inputs."stomp".repo  = "stomp";
   inputs."stomp".type  = "github";
   inputs."stomp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stomp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

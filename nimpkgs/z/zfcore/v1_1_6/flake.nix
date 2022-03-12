@@ -13,34 +13,30 @@
   inputs.src-zfcore-v1_1_6.repo  = "nim.zfcore";
   inputs.src-zfcore-v1_1_6.type  = "github";
   
-  inputs."zfblast".dir   = "nimpkgs/z/zfblast";
-  inputs."zfblast".owner = "riinr";
-  inputs."zfblast".ref   = "flake-pinning";
-  inputs."zfblast".repo  = "flake-nimble";
+  inputs."zfblast".owner = "nim-nix-pkgs";
+  inputs."zfblast".ref   = "master";
+  inputs."zfblast".repo  = "zfblast";
   inputs."zfblast".type  = "github";
   inputs."zfblast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfblast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."uri3".dir   = "nimpkgs/u/uri3";
-  inputs."uri3".owner = "riinr";
-  inputs."uri3".ref   = "flake-pinning";
-  inputs."uri3".repo  = "flake-nimble";
+  inputs."uri3".owner = "nim-nix-pkgs";
+  inputs."uri3".ref   = "master";
+  inputs."uri3".repo  = "uri3";
   inputs."uri3".type  = "github";
   inputs."uri3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uri3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."stdext".dir   = "nimpkgs/s/stdext";
-  inputs."stdext".owner = "riinr";
-  inputs."stdext".ref   = "flake-pinning";
-  inputs."stdext".repo  = "flake-nimble";
+  inputs."stdext".owner = "nim-nix-pkgs";
+  inputs."stdext".ref   = "master";
+  inputs."stdext".repo  = "stdext";
   inputs."stdext".type  = "github";
   inputs."stdext".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stdext".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."zip".dir   = "nimpkgs/z/zip";
-  inputs."zip".owner = "riinr";
-  inputs."zip".ref   = "flake-pinning";
-  inputs."zip".repo  = "flake-nimble";
+  inputs."zip".owner = "nim-nix-pkgs";
+  inputs."zip".ref   = "master";
+  inputs."zip".repo  = "zip";
   inputs."zip".type  = "github";
   inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,18 +13,16 @@
   inputs.src-gnu-v0_1_2.repo  = "gnu";
   inputs.src-gnu-v0_1_2.type  = "github";
   
-  inputs."godot".dir   = "nimpkgs/g/godot";
-  inputs."godot".owner = "riinr";
-  inputs."godot".ref   = "flake-pinning";
-  inputs."godot".repo  = "flake-nimble";
+  inputs."godot".owner = "nim-nix-pkgs";
+  inputs."godot".ref   = "master";
+  inputs."godot".repo  = "godot";
   inputs."godot".type  = "github";
   inputs."godot".inputs.nixpkgs.follows = "nixpkgs";
   inputs."godot".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,26 +13,23 @@
   inputs.src-astdot-main.repo  = "astdot";
   inputs.src-astdot-main.type  = "github";
   
-  inputs."strings".dir   = "nimpkgs/s/strings";
-  inputs."strings".owner = "riinr";
-  inputs."strings".ref   = "flake-pinning";
-  inputs."strings".repo  = "flake-nimble";
+  inputs."strings".owner = "nim-nix-pkgs";
+  inputs."strings".ref   = "master";
+  inputs."strings".repo  = "strings";
   inputs."strings".type  = "github";
   inputs."strings".inputs.nixpkgs.follows = "nixpkgs";
   inputs."strings".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."clapfn".dir   = "nimpkgs/c/clapfn";
-  inputs."clapfn".owner = "riinr";
-  inputs."clapfn".ref   = "flake-pinning";
-  inputs."clapfn".repo  = "flake-nimble";
+  inputs."clapfn".owner = "nim-nix-pkgs";
+  inputs."clapfn".ref   = "master";
+  inputs."clapfn".repo  = "clapfn";
   inputs."clapfn".type  = "github";
   inputs."clapfn".inputs.nixpkgs.follows = "nixpkgs";
   inputs."clapfn".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimgraphviz".dir   = "nimpkgs/n/nimgraphviz";
-  inputs."nimgraphviz".owner = "riinr";
-  inputs."nimgraphviz".ref   = "flake-pinning";
-  inputs."nimgraphviz".repo  = "flake-nimble";
+  inputs."nimgraphviz".owner = "nim-nix-pkgs";
+  inputs."nimgraphviz".ref   = "master";
+  inputs."nimgraphviz".repo  = "nimgraphviz";
   inputs."nimgraphviz".type  = "github";
   inputs."nimgraphviz".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimgraphviz".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

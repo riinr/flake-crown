@@ -13,10 +13,9 @@
   inputs.src-rodster-1_0_0.repo  = "rodster";
   inputs.src-rodster-1_0_0.type  = "github";
   
-  inputs."xam".dir   = "nimpkgs/x/xam";
-  inputs."xam".owner = "riinr";
-  inputs."xam".ref   = "flake-pinning";
-  inputs."xam".repo  = "flake-nimble";
+  inputs."xam".owner = "nim-nix-pkgs";
+  inputs."xam".ref   = "master";
+  inputs."xam".repo  = "xam";
   inputs."xam".type  = "github";
   inputs."xam".inputs.nixpkgs.follows = "nixpkgs";
   inputs."xam".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

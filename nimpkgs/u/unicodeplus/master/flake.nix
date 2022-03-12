@@ -13,18 +13,16 @@
   inputs.src-unicodeplus-master.repo  = "nim-unicodeplus";
   inputs.src-unicodeplus-master.type  = "github";
   
-  inputs."unicodedb".dir   = "nimpkgs/u/unicodedb";
-  inputs."unicodedb".owner = "riinr";
-  inputs."unicodedb".ref   = "flake-pinning";
-  inputs."unicodedb".repo  = "flake-nimble";
+  inputs."unicodedb".owner = "nim-nix-pkgs";
+  inputs."unicodedb".ref   = "master";
+  inputs."unicodedb".repo  = "unicodedb";
   inputs."unicodedb".type  = "github";
   inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."segmentation".dir   = "nimpkgs/s/segmentation";
-  inputs."segmentation".owner = "riinr";
-  inputs."segmentation".ref   = "flake-pinning";
-  inputs."segmentation".repo  = "flake-nimble";
+  inputs."segmentation".owner = "nim-nix-pkgs";
+  inputs."segmentation".ref   = "master";
+  inputs."segmentation".repo  = "segmentation";
   inputs."segmentation".type  = "github";
   inputs."segmentation".inputs.nixpkgs.follows = "nixpkgs";
   inputs."segmentation".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

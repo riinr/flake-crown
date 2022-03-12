@@ -13,18 +13,16 @@
   inputs.src-zfblast-v0_2_4.repo  = "nim.zfblast";
   inputs.src-zfblast-v0_2_4.type  = "github";
   
-  inputs."uri3".dir   = "nimpkgs/u/uri3";
-  inputs."uri3".owner = "riinr";
-  inputs."uri3".ref   = "flake-pinning";
-  inputs."uri3".repo  = "flake-nimble";
+  inputs."uri3".owner = "nim-nix-pkgs";
+  inputs."uri3".ref   = "master";
+  inputs."uri3".repo  = "uri3";
   inputs."uri3".type  = "github";
   inputs."uri3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uri3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."sha1".dir   = "nimpkgs/s/sha1";
-  inputs."sha1".owner = "riinr";
-  inputs."sha1".ref   = "flake-pinning";
-  inputs."sha1".repo  = "flake-nimble";
+  inputs."sha1".owner = "nim-nix-pkgs";
+  inputs."sha1".ref   = "master";
+  inputs."sha1".repo  = "sha1";
   inputs."sha1".type  = "github";
   inputs."sha1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sha1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

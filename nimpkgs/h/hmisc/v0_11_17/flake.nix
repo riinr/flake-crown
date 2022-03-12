@@ -13,26 +13,23 @@
   inputs.src-hmisc-v0_11_17.repo  = "hmisc";
   inputs.src-hmisc-v0_11_17.type  = "github";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."fusion".dir   = "nimpkgs/f/fusion";
-  inputs."fusion".owner = "riinr";
-  inputs."fusion".ref   = "flake-pinning";
-  inputs."fusion".repo  = "flake-nimble";
+  inputs."fusion".owner = "nim-nix-pkgs";
+  inputs."fusion".ref   = "master";
+  inputs."fusion".repo  = "fusion";
   inputs."fusion".type  = "github";
   inputs."fusion".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fusion".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."benchy".dir   = "nimpkgs/b/benchy";
-  inputs."benchy".owner = "riinr";
-  inputs."benchy".ref   = "flake-pinning";
-  inputs."benchy".repo  = "flake-nimble";
+  inputs."benchy".owner = "nim-nix-pkgs";
+  inputs."benchy".ref   = "master";
+  inputs."benchy".repo  = "benchy";
   inputs."benchy".type  = "github";
   inputs."benchy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."benchy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

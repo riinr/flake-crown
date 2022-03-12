@@ -13,10 +13,9 @@
   inputs.src-eachdo-v0_1_0.repo  = "eachdo";
   inputs.src-eachdo-v0_1_0.type  = "github";
   
-  inputs."argparse".dir   = "nimpkgs/a/argparse";
-  inputs."argparse".owner = "riinr";
-  inputs."argparse".ref   = "flake-pinning";
-  inputs."argparse".repo  = "flake-nimble";
+  inputs."argparse".owner = "nim-nix-pkgs";
+  inputs."argparse".ref   = "master";
+  inputs."argparse".repo  = "argparse";
   inputs."argparse".type  = "github";
   inputs."argparse".inputs.nixpkgs.follows = "nixpkgs";
   inputs."argparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,10 +13,9 @@
   inputs.src-localize-master.repo  = "localize";
   inputs.src-localize-master.type  = "github";
   
-  inputs."fusion".dir   = "nimpkgs/f/fusion";
-  inputs."fusion".owner = "riinr";
-  inputs."fusion".ref   = "flake-pinning";
-  inputs."fusion".repo  = "flake-nimble";
+  inputs."fusion".owner = "nim-nix-pkgs";
+  inputs."fusion".ref   = "master";
+  inputs."fusion".repo  = "fusion";
   inputs."fusion".type  = "github";
   inputs."fusion".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fusion".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

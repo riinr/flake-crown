@@ -13,66 +13,58 @@
   inputs.src-ansiwave-1_3_4.repo  = "ansiwave";
   inputs.src-ansiwave-1_3_4.type  = "github";
   
-  inputs."pararules".dir   = "nimpkgs/p/pararules";
-  inputs."pararules".owner = "riinr";
-  inputs."pararules".ref   = "flake-pinning";
-  inputs."pararules".repo  = "flake-nimble";
+  inputs."pararules".owner = "nim-nix-pkgs";
+  inputs."pararules".ref   = "master";
+  inputs."pararules".repo  = "pararules";
   inputs."pararules".type  = "github";
   inputs."pararules".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pararules".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."paramidi".dir   = "nimpkgs/p/paramidi";
-  inputs."paramidi".owner = "riinr";
-  inputs."paramidi".ref   = "flake-pinning";
-  inputs."paramidi".repo  = "flake-nimble";
+  inputs."paramidi".owner = "nim-nix-pkgs";
+  inputs."paramidi".ref   = "master";
+  inputs."paramidi".repo  = "paramidi";
   inputs."paramidi".type  = "github";
   inputs."paramidi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."paramidi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."paramidi_soundfonts".dir   = "nimpkgs/p/paramidi_soundfonts";
-  inputs."paramidi_soundfonts".owner = "riinr";
-  inputs."paramidi_soundfonts".ref   = "flake-pinning";
-  inputs."paramidi_soundfonts".repo  = "flake-nimble";
+  inputs."paramidi_soundfonts".owner = "nim-nix-pkgs";
+  inputs."paramidi_soundfonts".ref   = "master";
+  inputs."paramidi_soundfonts".repo  = "paramidi_soundfonts";
   inputs."paramidi_soundfonts".type  = "github";
   inputs."paramidi_soundfonts".inputs.nixpkgs.follows = "nixpkgs";
   inputs."paramidi_soundfonts".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."parasound".dir   = "nimpkgs/p/parasound";
-  inputs."parasound".owner = "riinr";
-  inputs."parasound".ref   = "flake-pinning";
-  inputs."parasound".repo  = "flake-nimble";
+  inputs."parasound".owner = "nim-nix-pkgs";
+  inputs."parasound".ref   = "master";
+  inputs."parasound".repo  = "parasound";
   inputs."parasound".type  = "github";
   inputs."parasound".inputs.nixpkgs.follows = "nixpkgs";
   inputs."parasound".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."zippy".dir   = "nimpkgs/z/zippy";
-  inputs."zippy".owner = "riinr";
-  inputs."zippy".ref   = "flake-pinning";
-  inputs."zippy".repo  = "flake-nimble";
+  inputs."zippy".owner = "nim-nix-pkgs";
+  inputs."zippy".ref   = "master";
+  inputs."zippy".repo  = "zippy";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."stb_image".dir   = "nimpkgs/s/stb_image";
-  inputs."stb_image".owner = "riinr";
-  inputs."stb_image".ref   = "flake-pinning";
-  inputs."stb_image".repo  = "flake-nimble";
+  inputs."stb_image".owner = "nim-nix-pkgs";
+  inputs."stb_image".ref   = "master";
+  inputs."stb_image".repo  = "stb_image";
   inputs."stb_image".type  = "github";
   inputs."stb_image".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stb_image".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."wavecore".dir   = "nimpkgs/w/wavecore";
-  inputs."wavecore".owner = "riinr";
-  inputs."wavecore".ref   = "flake-pinning";
-  inputs."wavecore".repo  = "flake-nimble";
+  inputs."wavecore".owner = "nim-nix-pkgs";
+  inputs."wavecore".ref   = "master";
+  inputs."wavecore".repo  = "wavecore";
   inputs."wavecore".type  = "github";
   inputs."wavecore".inputs.nixpkgs.follows = "nixpkgs";
   inputs."wavecore".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."chrono".dir   = "nimpkgs/c/chrono";
-  inputs."chrono".owner = "riinr";
-  inputs."chrono".ref   = "flake-pinning";
-  inputs."chrono".repo  = "flake-nimble";
+  inputs."chrono".owner = "nim-nix-pkgs";
+  inputs."chrono".ref   = "master";
+  inputs."chrono".repo  = "chrono";
   inputs."chrono".type  = "github";
   inputs."chrono".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chrono".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

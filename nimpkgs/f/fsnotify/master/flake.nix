@@ -13,18 +13,16 @@
   inputs.src-fsnotify-master.repo  = "fsnotify";
   inputs.src-fsnotify-master.type  = "github";
   
-  inputs."timerwheel".dir   = "nimpkgs/t/timerwheel";
-  inputs."timerwheel".owner = "riinr";
-  inputs."timerwheel".ref   = "flake-pinning";
-  inputs."timerwheel".repo  = "flake-nimble";
+  inputs."timerwheel".owner = "nim-nix-pkgs";
+  inputs."timerwheel".ref   = "master";
+  inputs."timerwheel".repo  = "timerwheel";
   inputs."timerwheel".type  = "github";
   inputs."timerwheel".inputs.nixpkgs.follows = "nixpkgs";
   inputs."timerwheel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."xio".dir   = "nimpkgs/x/xio";
-  inputs."xio".owner = "riinr";
-  inputs."xio".ref   = "flake-pinning";
-  inputs."xio".repo  = "flake-nimble";
+  inputs."xio".owner = "nim-nix-pkgs";
+  inputs."xio".ref   = "master";
+  inputs."xio".repo  = "xio";
   inputs."xio".type  = "github";
   inputs."xio".inputs.nixpkgs.follows = "nixpkgs";
   inputs."xio".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

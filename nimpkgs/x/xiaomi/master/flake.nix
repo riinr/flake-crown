@@ -13,18 +13,16 @@
   inputs.src-xiaomi-master.repo  = "nim_xiaomi";
   inputs.src-xiaomi-master.type  = "github";
   
-  inputs."multicast".dir   = "nimpkgs/m/multicast";
-  inputs."multicast".owner = "riinr";
-  inputs."multicast".ref   = "flake-pinning";
-  inputs."multicast".repo  = "flake-nimble";
+  inputs."multicast".owner = "nim-nix-pkgs";
+  inputs."multicast".ref   = "master";
+  inputs."multicast".repo  = "multicast";
   inputs."multicast".type  = "github";
   inputs."multicast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."multicast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimcrypto".dir   = "nimpkgs/n/nimcrypto";
-  inputs."nimcrypto".owner = "riinr";
-  inputs."nimcrypto".ref   = "flake-pinning";
-  inputs."nimcrypto".repo  = "flake-nimble";
+  inputs."nimcrypto".owner = "nim-nix-pkgs";
+  inputs."nimcrypto".ref   = "master";
+  inputs."nimcrypto".repo  = "nimcrypto";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

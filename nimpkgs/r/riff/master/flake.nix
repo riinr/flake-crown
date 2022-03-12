@@ -13,10 +13,9 @@
   inputs.src-riff-master.repo  = "nim-riff";
   inputs.src-riff-master.type  = "github";
   
-  inputs."binstreams".dir   = "nimpkgs/b/binstreams";
-  inputs."binstreams".owner = "riinr";
-  inputs."binstreams".ref   = "flake-pinning";
-  inputs."binstreams".repo  = "flake-nimble";
+  inputs."binstreams".owner = "nim-nix-pkgs";
+  inputs."binstreams".ref   = "master";
+  inputs."binstreams".repo  = "binstreams";
   inputs."binstreams".type  = "github";
   inputs."binstreams".inputs.nixpkgs.follows = "nixpkgs";
   inputs."binstreams".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

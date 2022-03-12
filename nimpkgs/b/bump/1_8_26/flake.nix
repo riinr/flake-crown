@@ -13,26 +13,23 @@
   inputs.src-bump-1_8_26.repo  = "bump";
   inputs.src-bump-1_8_26.type  = "github";
   
-  inputs."https://github.com/disruptek/cutelog".dir   = "nimpkgs/h/https://github.com/disruptek/cutelog";
-  inputs."https://github.com/disruptek/cutelog".owner = "riinr";
-  inputs."https://github.com/disruptek/cutelog".ref   = "flake-pinning";
-  inputs."https://github.com/disruptek/cutelog".repo  = "flake-nimble";
+  inputs."https://github.com/disruptek/cutelog".owner = "nim-nix-pkgs";
+  inputs."https://github.com/disruptek/cutelog".ref   = "master";
+  inputs."https://github.com/disruptek/cutelog".repo  = "https://github.com/disruptek/cutelog";
   inputs."https://github.com/disruptek/cutelog".type  = "github";
   inputs."https://github.com/disruptek/cutelog".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/disruptek/cutelog".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/disruptek/testes".dir   = "nimpkgs/h/https://github.com/disruptek/testes";
-  inputs."https://github.com/disruptek/testes".owner = "riinr";
-  inputs."https://github.com/disruptek/testes".ref   = "flake-pinning";
-  inputs."https://github.com/disruptek/testes".repo  = "flake-nimble";
+  inputs."https://github.com/disruptek/testes".owner = "nim-nix-pkgs";
+  inputs."https://github.com/disruptek/testes".ref   = "master";
+  inputs."https://github.com/disruptek/testes".repo  = "https://github.com/disruptek/testes";
   inputs."https://github.com/disruptek/testes".type  = "github";
   inputs."https://github.com/disruptek/testes".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/disruptek/testes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

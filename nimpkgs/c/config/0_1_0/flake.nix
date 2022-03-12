@@ -13,18 +13,16 @@
   inputs.src-config-0_1_0.repo  = "nim-cfg-lib";
   inputs.src-config-0_1_0.type  = "github";
   
-  inputs."nre".dir   = "nimpkgs/n/nre";
-  inputs."nre".owner = "riinr";
-  inputs."nre".ref   = "flake-pinning";
-  inputs."nre".repo  = "flake-nimble";
+  inputs."nre".owner = "nim-nix-pkgs";
+  inputs."nre".ref   = "master";
+  inputs."nre".repo  = "nre";
   inputs."nre".type  = "github";
   inputs."nre".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nre".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."timezones".dir   = "nimpkgs/t/timezones";
-  inputs."timezones".owner = "riinr";
-  inputs."timezones".ref   = "flake-pinning";
-  inputs."timezones".repo  = "flake-nimble";
+  inputs."timezones".owner = "nim-nix-pkgs";
+  inputs."timezones".ref   = "master";
+  inputs."timezones".repo  = "timezones";
   inputs."timezones".type  = "github";
   inputs."timezones".inputs.nixpkgs.follows = "nixpkgs";
   inputs."timezones".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

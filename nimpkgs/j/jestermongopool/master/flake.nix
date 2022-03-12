@@ -13,18 +13,16 @@
   inputs.src-jestermongopool-master.repo  = "jestermongopool";
   inputs.src-jestermongopool-master.type  = "github";
   
-  inputs."jesterwithplugins".dir   = "nimpkgs/j/jesterwithplugins";
-  inputs."jesterwithplugins".owner = "riinr";
-  inputs."jesterwithplugins".ref   = "flake-pinning";
-  inputs."jesterwithplugins".repo  = "flake-nimble";
+  inputs."jesterwithplugins".owner = "nim-nix-pkgs";
+  inputs."jesterwithplugins".ref   = "master";
+  inputs."jesterwithplugins".repo  = "jesterwithplugins";
   inputs."jesterwithplugins".type  = "github";
   inputs."jesterwithplugins".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jesterwithplugins".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."mongopool".dir   = "nimpkgs/m/mongopool";
-  inputs."mongopool".owner = "riinr";
-  inputs."mongopool".ref   = "flake-pinning";
-  inputs."mongopool".repo  = "flake-nimble";
+  inputs."mongopool".owner = "nim-nix-pkgs";
+  inputs."mongopool".ref   = "master";
+  inputs."mongopool".repo  = "mongopool";
   inputs."mongopool".type  = "github";
   inputs."mongopool".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mongopool".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,10 +13,9 @@
   inputs.src-jnim-v0_1_0.repo  = "jnim";
   inputs.src-jnim-v0_1_0.type  = "github";
   
-  inputs."nimfp".dir   = "nimpkgs/n/nimfp";
-  inputs."nimfp".owner = "riinr";
-  inputs."nimfp".ref   = "flake-pinning";
-  inputs."nimfp".repo  = "flake-nimble";
+  inputs."nimfp".owner = "nim-nix-pkgs";
+  inputs."nimfp".ref   = "master";
+  inputs."nimfp".repo  = "nimfp";
   inputs."nimfp".type  = "github";
   inputs."nimfp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimfp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

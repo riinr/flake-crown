@@ -13,18 +13,16 @@
   inputs.src-analytics-v0_2_0.repo  = "analytics";
   inputs.src-analytics-v0_2_0.type  = "github";
   
-  inputs."uuids".dir   = "nimpkgs/u/uuids";
-  inputs."uuids".owner = "riinr";
-  inputs."uuids".ref   = "flake-pinning";
-  inputs."uuids".repo  = "flake-nimble";
+  inputs."uuids".owner = "nim-nix-pkgs";
+  inputs."uuids".ref   = "master";
+  inputs."uuids".repo  = "uuids";
   inputs."uuids".type  = "github";
   inputs."uuids".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uuids".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."osinfo".dir   = "nimpkgs/o/osinfo";
-  inputs."osinfo".owner = "riinr";
-  inputs."osinfo".ref   = "flake-pinning";
-  inputs."osinfo".repo  = "flake-nimble";
+  inputs."osinfo".owner = "nim-nix-pkgs";
+  inputs."osinfo".ref   = "master";
+  inputs."osinfo".repo  = "osinfo";
   inputs."osinfo".type  = "github";
   inputs."osinfo".inputs.nixpkgs.follows = "nixpkgs";
   inputs."osinfo".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

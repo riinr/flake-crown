@@ -13,26 +13,23 @@
   inputs.src-os_files-master.repo  = "os_files";
   inputs.src-os_files-master.type  = "github";
   
-  inputs."oldgtk3".dir   = "nimpkgs/o/oldgtk3";
-  inputs."oldgtk3".owner = "riinr";
-  inputs."oldgtk3".ref   = "flake-pinning";
-  inputs."oldgtk3".repo  = "flake-nimble";
+  inputs."oldgtk3".owner = "nim-nix-pkgs";
+  inputs."oldgtk3".ref   = "master";
+  inputs."oldgtk3".repo  = "oldgtk3";
   inputs."oldgtk3".type  = "github";
   inputs."oldgtk3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."oldgtk3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."jsbind".dir   = "nimpkgs/j/jsbind";
-  inputs."jsbind".owner = "riinr";
-  inputs."jsbind".ref   = "flake-pinning";
-  inputs."jsbind".repo  = "flake-nimble";
+  inputs."jsbind".owner = "nim-nix-pkgs";
+  inputs."jsbind".ref   = "master";
+  inputs."jsbind".repo  = "jsbind";
   inputs."jsbind".type  = "github";
   inputs."jsbind".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsbind".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/yglukhov/darwin".dir   = "nimpkgs/h/https://github.com/yglukhov/darwin";
-  inputs."https://github.com/yglukhov/darwin".owner = "riinr";
-  inputs."https://github.com/yglukhov/darwin".ref   = "flake-pinning";
-  inputs."https://github.com/yglukhov/darwin".repo  = "flake-nimble";
+  inputs."https://github.com/yglukhov/darwin".owner = "nim-nix-pkgs";
+  inputs."https://github.com/yglukhov/darwin".ref   = "master";
+  inputs."https://github.com/yglukhov/darwin".repo  = "https://github.com/yglukhov/darwin";
   inputs."https://github.com/yglukhov/darwin".type  = "github";
   inputs."https://github.com/yglukhov/darwin".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/yglukhov/darwin".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

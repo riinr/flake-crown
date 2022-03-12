@@ -13,18 +13,16 @@
   inputs.src-objc_runtime-v0_1_3.repo  = "objc_runtime";
   inputs.src-objc_runtime-v0_1_3.type  = "github";
   
-  inputs."https://github.com/yglukhov/darwin".dir   = "nimpkgs/h/https://github.com/yglukhov/darwin";
-  inputs."https://github.com/yglukhov/darwin".owner = "riinr";
-  inputs."https://github.com/yglukhov/darwin".ref   = "flake-pinning";
-  inputs."https://github.com/yglukhov/darwin".repo  = "flake-nimble";
+  inputs."https://github.com/yglukhov/darwin".owner = "nim-nix-pkgs";
+  inputs."https://github.com/yglukhov/darwin".ref   = "master";
+  inputs."https://github.com/yglukhov/darwin".repo  = "https://github.com/yglukhov/darwin";
   inputs."https://github.com/yglukhov/darwin".type  = "github";
   inputs."https://github.com/yglukhov/darwin".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/yglukhov/darwin".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."regex".dir   = "nimpkgs/r/regex";
-  inputs."regex".owner = "riinr";
-  inputs."regex".ref   = "flake-pinning";
-  inputs."regex".repo  = "flake-nimble";
+  inputs."regex".owner = "nim-nix-pkgs";
+  inputs."regex".ref   = "master";
+  inputs."regex".repo  = "regex";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

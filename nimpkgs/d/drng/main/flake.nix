@@ -13,10 +13,9 @@
   inputs.src-drng-main.repo  = "nim-drng";
   inputs.src-drng-main.type  = "github";
   
-  inputs."cpuwhat".dir   = "nimpkgs/c/cpuwhat";
-  inputs."cpuwhat".owner = "riinr";
-  inputs."cpuwhat".ref   = "flake-pinning";
-  inputs."cpuwhat".repo  = "flake-nimble";
+  inputs."cpuwhat".owner = "nim-nix-pkgs";
+  inputs."cpuwhat".ref   = "master";
+  inputs."cpuwhat".repo  = "cpuwhat";
   inputs."cpuwhat".type  = "github";
   inputs."cpuwhat".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cpuwhat".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

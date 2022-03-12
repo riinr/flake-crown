@@ -13,34 +13,30 @@
   inputs.src-gamelight-master.repo  = "gamelight";
   inputs.src-gamelight-master.type  = "github";
   
-  inputs."sdl2".dir   = "nimpkgs/s/sdl2";
-  inputs."sdl2".owner = "riinr";
-  inputs."sdl2".ref   = "flake-pinning";
-  inputs."sdl2".repo  = "flake-nimble";
+  inputs."sdl2".owner = "nim-nix-pkgs";
+  inputs."sdl2".ref   = "master";
+  inputs."sdl2".repo  = "sdl2";
   inputs."sdl2".type  = "github";
   inputs."sdl2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sdl2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."chroma".dir   = "nimpkgs/c/chroma";
-  inputs."chroma".owner = "riinr";
-  inputs."chroma".ref   = "flake-pinning";
-  inputs."chroma".repo  = "flake-nimble";
+  inputs."chroma".owner = "nim-nix-pkgs";
+  inputs."chroma".ref   = "master";
+  inputs."chroma".repo  = "chroma";
   inputs."chroma".type  = "github";
   inputs."chroma".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chroma".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."typography".dir   = "nimpkgs/t/typography";
-  inputs."typography".owner = "riinr";
-  inputs."typography".ref   = "flake-pinning";
-  inputs."typography".repo  = "flake-nimble";
+  inputs."typography".owner = "nim-nix-pkgs";
+  inputs."typography".ref   = "master";
+  inputs."typography".repo  = "typography";
   inputs."typography".type  = "github";
   inputs."typography".inputs.nixpkgs.follows = "nixpkgs";
   inputs."typography".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."flippy".dir   = "nimpkgs/f/flippy";
-  inputs."flippy".owner = "riinr";
-  inputs."flippy".ref   = "flake-pinning";
-  inputs."flippy".repo  = "flake-nimble";
+  inputs."flippy".owner = "nim-nix-pkgs";
+  inputs."flippy".ref   = "master";
+  inputs."flippy".repo  = "flippy";
   inputs."flippy".type  = "github";
   inputs."flippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."flippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

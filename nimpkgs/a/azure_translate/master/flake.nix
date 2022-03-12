@@ -13,10 +13,9 @@
   inputs.src-azure_translate-master.repo  = "azure_translate";
   inputs.src-azure_translate-master.type  = "github";
   
-  inputs."nuuid".dir   = "nimpkgs/n/nuuid";
-  inputs."nuuid".owner = "riinr";
-  inputs."nuuid".ref   = "flake-pinning";
-  inputs."nuuid".repo  = "flake-nimble";
+  inputs."nuuid".owner = "nim-nix-pkgs";
+  inputs."nuuid".ref   = "master";
+  inputs."nuuid".repo  = "nuuid";
   inputs."nuuid".type  = "github";
   inputs."nuuid".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nuuid".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

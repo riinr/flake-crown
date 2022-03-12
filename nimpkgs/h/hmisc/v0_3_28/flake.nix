@@ -13,26 +13,23 @@
   inputs.src-hmisc-v0_3_28.repo  = "hmisc";
   inputs.src-hmisc-v0_3_28.type  = "github";
   
-  inputs."with".dir   = "nimpkgs/w/with";
-  inputs."with".owner = "riinr";
-  inputs."with".ref   = "flake-pinning";
-  inputs."with".repo  = "flake-nimble";
+  inputs."with".owner = "nim-nix-pkgs";
+  inputs."with".ref   = "master";
+  inputs."with".repo  = "with";
   inputs."with".type  = "github";
   inputs."with".inputs.nixpkgs.follows = "nixpkgs";
   inputs."with".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."shell".dir   = "nimpkgs/s/shell";
-  inputs."shell".owner = "riinr";
-  inputs."shell".ref   = "flake-pinning";
-  inputs."shell".repo  = "flake-nimble";
+  inputs."shell".owner = "nim-nix-pkgs";
+  inputs."shell".ref   = "master";
+  inputs."shell".repo  = "shell";
   inputs."shell".type  = "github";
   inputs."shell".inputs.nixpkgs.follows = "nixpkgs";
   inputs."shell".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."macroutils".dir   = "nimpkgs/m/macroutils";
-  inputs."macroutils".owner = "riinr";
-  inputs."macroutils".ref   = "flake-pinning";
-  inputs."macroutils".repo  = "flake-nimble";
+  inputs."macroutils".owner = "nim-nix-pkgs";
+  inputs."macroutils".ref   = "master";
+  inputs."macroutils".repo  = "macroutils";
   inputs."macroutils".type  = "github";
   inputs."macroutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."macroutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

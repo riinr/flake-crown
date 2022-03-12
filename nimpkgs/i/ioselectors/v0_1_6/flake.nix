@@ -13,10 +13,9 @@
   inputs.src-ioselectors-v0_1_6.repo  = "ioselectors";
   inputs.src-ioselectors-v0_1_6.type  = "github";
   
-  inputs."timerwheel".dir   = "nimpkgs/t/timerwheel";
-  inputs."timerwheel".owner = "riinr";
-  inputs."timerwheel".ref   = "flake-pinning";
-  inputs."timerwheel".repo  = "flake-nimble";
+  inputs."timerwheel".owner = "nim-nix-pkgs";
+  inputs."timerwheel".ref   = "master";
+  inputs."timerwheel".repo  = "timerwheel";
   inputs."timerwheel".type  = "github";
   inputs."timerwheel".inputs.nixpkgs.follows = "nixpkgs";
   inputs."timerwheel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

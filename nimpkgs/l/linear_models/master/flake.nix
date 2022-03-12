@@ -13,18 +13,16 @@
   inputs.src-linear_models-master.repo  = "linear-models";
   inputs.src-linear_models-master.type  = "github";
   
-  inputs."arraymancer".dir   = "nimpkgs/a/arraymancer";
-  inputs."arraymancer".owner = "riinr";
-  inputs."arraymancer".ref   = "flake-pinning";
-  inputs."arraymancer".repo  = "flake-nimble";
+  inputs."arraymancer".owner = "nim-nix-pkgs";
+  inputs."arraymancer".ref   = "master";
+  inputs."arraymancer".repo  = "arraymancer";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."distributions".dir   = "nimpkgs/d/distributions";
-  inputs."distributions".owner = "riinr";
-  inputs."distributions".ref   = "flake-pinning";
-  inputs."distributions".repo  = "flake-nimble";
+  inputs."distributions".owner = "nim-nix-pkgs";
+  inputs."distributions".ref   = "master";
+  inputs."distributions".repo  = "distributions";
   inputs."distributions".type  = "github";
   inputs."distributions".inputs.nixpkgs.follows = "nixpkgs";
   inputs."distributions".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

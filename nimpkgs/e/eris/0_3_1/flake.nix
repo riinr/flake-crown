@@ -13,34 +13,30 @@
   inputs.src-eris-0_3_1.repo  = "eris";
   inputs.src-eris-0_3_1.type  = "other";
   
-  inputs."base32".dir   = "nimpkgs/b/base32";
-  inputs."base32".owner = "riinr";
-  inputs."base32".ref   = "flake-pinning";
-  inputs."base32".repo  = "flake-nimble";
+  inputs."base32".owner = "nim-nix-pkgs";
+  inputs."base32".ref   = "master";
+  inputs."base32".repo  = "base32";
   inputs."base32".type  = "github";
   inputs."base32".inputs.nixpkgs.follows = "nixpkgs";
   inputs."base32".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."taps".dir   = "nimpkgs/t/taps";
-  inputs."taps".owner = "riinr";
-  inputs."taps".ref   = "flake-pinning";
-  inputs."taps".repo  = "flake-nimble";
+  inputs."taps".owner = "nim-nix-pkgs";
+  inputs."taps".ref   = "master";
+  inputs."taps".repo  = "taps";
   inputs."taps".type  = "github";
   inputs."taps".inputs.nixpkgs.follows = "nixpkgs";
   inputs."taps".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."lmdb".dir   = "nimpkgs/l/lmdb";
-  inputs."lmdb".owner = "riinr";
-  inputs."lmdb".ref   = "flake-pinning";
-  inputs."lmdb".repo  = "flake-nimble";
+  inputs."lmdb".owner = "nim-nix-pkgs";
+  inputs."lmdb".ref   = "master";
+  inputs."lmdb".repo  = "lmdb";
   inputs."lmdb".type  = "github";
   inputs."lmdb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."lmdb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."tkrzw".dir   = "nimpkgs/t/tkrzw";
-  inputs."tkrzw".owner = "riinr";
-  inputs."tkrzw".ref   = "flake-pinning";
-  inputs."tkrzw".repo  = "flake-nimble";
+  inputs."tkrzw".owner = "nim-nix-pkgs";
+  inputs."tkrzw".ref   = "master";
+  inputs."tkrzw".repo  = "tkrzw";
   inputs."tkrzw".type  = "github";
   inputs."tkrzw".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tkrzw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

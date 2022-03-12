@@ -13,18 +13,16 @@
   inputs.src-libnx-master.repo  = "nim-libnx";
   inputs.src-libnx-master.type  = "github";
   
-  inputs."nimgen".dir   = "nimpkgs/n/nimgen";
-  inputs."nimgen".owner = "riinr";
-  inputs."nimgen".ref   = "flake-pinning";
-  inputs."nimgen".repo  = "flake-nimble";
+  inputs."nimgen".owner = "nim-nix-pkgs";
+  inputs."nimgen".ref   = "master";
+  inputs."nimgen".repo  = "nimgen";
   inputs."nimgen".type  = "github";
   inputs."nimgen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimgen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."switch_build".dir   = "nimpkgs/s/switch_build";
-  inputs."switch_build".owner = "riinr";
-  inputs."switch_build".ref   = "flake-pinning";
-  inputs."switch_build".repo  = "flake-nimble";
+  inputs."switch_build".owner = "nim-nix-pkgs";
+  inputs."switch_build".ref   = "master";
+  inputs."switch_build".repo  = "switch_build";
   inputs."switch_build".type  = "github";
   inputs."switch_build".inputs.nixpkgs.follows = "nixpkgs";
   inputs."switch_build".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

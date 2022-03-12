@@ -13,10 +13,9 @@
   inputs.src-zfdbms-v0_0_4.repo  = "nim.zfdbms";
   inputs.src-zfdbms-v0_0_4.type  = "github";
   
-  inputs."stdext".dir   = "nimpkgs/s/stdext";
-  inputs."stdext".owner = "riinr";
-  inputs."stdext".ref   = "flake-pinning";
-  inputs."stdext".repo  = "flake-nimble";
+  inputs."stdext".owner = "nim-nix-pkgs";
+  inputs."stdext".ref   = "master";
+  inputs."stdext".repo  = "stdext";
   inputs."stdext".type  = "github";
   inputs."stdext".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stdext".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

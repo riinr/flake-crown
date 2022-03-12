@@ -13,42 +13,37 @@
   inputs.src-dimscord-master.repo  = "dimscord";
   inputs.src-dimscord-master.type  = "github";
   
-  inputs."zippy".dir   = "nimpkgs/z/zippy";
-  inputs."zippy".owner = "riinr";
-  inputs."zippy".ref   = "flake-pinning";
-  inputs."zippy".repo  = "flake-nimble";
+  inputs."zippy".owner = "nim-nix-pkgs";
+  inputs."zippy".ref   = "master";
+  inputs."zippy".repo  = "zippy";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."ws".dir   = "nimpkgs/w/ws";
-  inputs."ws".owner = "riinr";
-  inputs."ws".ref   = "flake-pinning";
-  inputs."ws".repo  = "flake-nimble";
+  inputs."ws".owner = "nim-nix-pkgs";
+  inputs."ws".ref   = "master";
+  inputs."ws".repo  = "ws";
   inputs."ws".type  = "github";
   inputs."ws".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ws".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."regex".dir   = "nimpkgs/r/regex";
-  inputs."regex".owner = "riinr";
-  inputs."regex".ref   = "flake-pinning";
-  inputs."regex".repo  = "flake-nimble";
+  inputs."regex".owner = "nim-nix-pkgs";
+  inputs."regex".ref   = "master";
+  inputs."regex".repo  = "regex";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."libsodium".dir   = "nimpkgs/l/libsodium";
-  inputs."libsodium".owner = "riinr";
-  inputs."libsodium".ref   = "flake-pinning";
-  inputs."libsodium".repo  = "flake-nimble";
+  inputs."libsodium".owner = "nim-nix-pkgs";
+  inputs."libsodium".ref   = "master";
+  inputs."libsodium".repo  = "libsodium";
   inputs."libsodium".type  = "github";
   inputs."libsodium".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libsodium".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."flatty".dir   = "nimpkgs/f/flatty";
-  inputs."flatty".owner = "riinr";
-  inputs."flatty".ref   = "flake-pinning";
-  inputs."flatty".repo  = "flake-nimble";
+  inputs."flatty".owner = "nim-nix-pkgs";
+  inputs."flatty".ref   = "master";
+  inputs."flatty".repo  = "flatty";
   inputs."flatty".type  = "github";
   inputs."flatty".inputs.nixpkgs.follows = "nixpkgs";
   inputs."flatty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

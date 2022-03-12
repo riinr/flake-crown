@@ -13,10 +13,9 @@
   inputs.src-googleapi-0_1_3.repo  = "googleapi";
   inputs.src-googleapi-0_1_3.type  = "github";
   
-  inputs."jwt".dir   = "nimpkgs/j/jwt";
-  inputs."jwt".owner = "riinr";
-  inputs."jwt".ref   = "flake-pinning";
-  inputs."jwt".repo  = "flake-nimble";
+  inputs."jwt".owner = "nim-nix-pkgs";
+  inputs."jwt".ref   = "master";
+  inputs."jwt".repo  = "jwt";
   inputs."jwt".type  = "github";
   inputs."jwt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jwt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

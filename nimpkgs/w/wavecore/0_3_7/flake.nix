@@ -13,42 +13,37 @@
   inputs.src-wavecore-0_3_7.repo  = "wavecore";
   inputs.src-wavecore-0_3_7.type  = "github";
   
-  inputs."urlly".dir   = "nimpkgs/u/urlly";
-  inputs."urlly".owner = "riinr";
-  inputs."urlly".ref   = "flake-pinning";
-  inputs."urlly".repo  = "flake-nimble";
+  inputs."urlly".owner = "nim-nix-pkgs";
+  inputs."urlly".ref   = "master";
+  inputs."urlly".repo  = "urlly";
   inputs."urlly".type  = "github";
   inputs."urlly".inputs.nixpkgs.follows = "nixpkgs";
   inputs."urlly".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."puppy".dir   = "nimpkgs/p/puppy";
-  inputs."puppy".owner = "riinr";
-  inputs."puppy".ref   = "flake-pinning";
-  inputs."puppy".repo  = "flake-nimble";
+  inputs."puppy".owner = "nim-nix-pkgs";
+  inputs."puppy".ref   = "master";
+  inputs."puppy".repo  = "puppy";
   inputs."puppy".type  = "github";
   inputs."puppy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."puppy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."flatty".dir   = "nimpkgs/f/flatty";
-  inputs."flatty".owner = "riinr";
-  inputs."flatty".ref   = "flake-pinning";
-  inputs."flatty".repo  = "flake-nimble";
+  inputs."flatty".owner = "nim-nix-pkgs";
+  inputs."flatty".ref   = "master";
+  inputs."flatty".repo  = "flatty";
   inputs."flatty".type  = "github";
   inputs."flatty".inputs.nixpkgs.follows = "nixpkgs";
   inputs."flatty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."zippy".dir   = "nimpkgs/z/zippy";
-  inputs."zippy".owner = "riinr";
-  inputs."zippy".ref   = "flake-pinning";
-  inputs."zippy".repo  = "flake-nimble";
+  inputs."zippy".owner = "nim-nix-pkgs";
+  inputs."zippy".ref   = "master";
+  inputs."zippy".repo  = "zippy";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."paramidi".dir   = "nimpkgs/p/paramidi";
-  inputs."paramidi".owner = "riinr";
-  inputs."paramidi".ref   = "flake-pinning";
-  inputs."paramidi".repo  = "flake-nimble";
+  inputs."paramidi".owner = "nim-nix-pkgs";
+  inputs."paramidi".ref   = "master";
+  inputs."paramidi".repo  = "paramidi";
   inputs."paramidi".type  = "github";
   inputs."paramidi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."paramidi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

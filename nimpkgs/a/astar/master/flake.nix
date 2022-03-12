@@ -13,10 +13,9 @@
   inputs.src-astar-master.repo  = "AStarNim";
   inputs.src-astar-master.type  = "github";
   
-  inputs."binaryheap".dir   = "nimpkgs/b/binaryheap";
-  inputs."binaryheap".owner = "riinr";
-  inputs."binaryheap".ref   = "flake-pinning";
-  inputs."binaryheap".repo  = "flake-nimble";
+  inputs."binaryheap".owner = "nim-nix-pkgs";
+  inputs."binaryheap".ref   = "master";
+  inputs."binaryheap".repo  = "binaryheap";
   inputs."binaryheap".type  = "github";
   inputs."binaryheap".inputs.nixpkgs.follows = "nixpkgs";
   inputs."binaryheap".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

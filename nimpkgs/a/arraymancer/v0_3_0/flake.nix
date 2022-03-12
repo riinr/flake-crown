@@ -13,18 +13,16 @@
   inputs.src-arraymancer-v0_3_0.repo  = "Arraymancer";
   inputs.src-arraymancer-v0_3_0.type  = "github";
   
-  inputs."nimblas".dir   = "nimpkgs/n/nimblas";
-  inputs."nimblas".owner = "riinr";
-  inputs."nimblas".ref   = "flake-pinning";
-  inputs."nimblas".repo  = "flake-nimble";
+  inputs."nimblas".owner = "nim-nix-pkgs";
+  inputs."nimblas".ref   = "master";
+  inputs."nimblas".repo  = "nimblas";
   inputs."nimblas".type  = "github";
   inputs."nimblas".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimblas".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimcuda".dir   = "nimpkgs/n/nimcuda";
-  inputs."nimcuda".owner = "riinr";
-  inputs."nimcuda".ref   = "flake-pinning";
-  inputs."nimcuda".repo  = "flake-nimble";
+  inputs."nimcuda".owner = "nim-nix-pkgs";
+  inputs."nimcuda".ref   = "master";
+  inputs."nimcuda".repo  = "nimcuda";
   inputs."nimcuda".type  = "github";
   inputs."nimcuda".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcuda".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,10 +13,9 @@
   inputs.src-asyncredis-v0_8_1.repo  = "redis.nim";
   inputs.src-asyncredis-v0_8_1.type  = "github";
   
-  inputs."https://github.com/q-master/networkutils.nim.git".dir   = "nimpkgs/h/https://github.com/q-master/networkutils.nim.git";
-  inputs."https://github.com/q-master/networkutils.nim.git".owner = "riinr";
-  inputs."https://github.com/q-master/networkutils.nim.git".ref   = "flake-pinning";
-  inputs."https://github.com/q-master/networkutils.nim.git".repo  = "flake-nimble";
+  inputs."https://github.com/q-master/networkutils.nim.git".owner = "nim-nix-pkgs";
+  inputs."https://github.com/q-master/networkutils.nim.git".ref   = "master";
+  inputs."https://github.com/q-master/networkutils.nim.git".repo  = "https://github.com/q-master/networkutils.nim.git";
   inputs."https://github.com/q-master/networkutils.nim.git".type  = "github";
   inputs."https://github.com/q-master/networkutils.nim.git".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/q-master/networkutils.nim.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

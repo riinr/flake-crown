@@ -13,18 +13,16 @@
   inputs.src-jester-v0_4_3.repo  = "jester";
   inputs.src-jester-v0_4_3.type  = "github";
   
-  inputs."httpbeast".dir   = "nimpkgs/h/httpbeast";
-  inputs."httpbeast".owner = "riinr";
-  inputs."httpbeast".ref   = "flake-pinning";
-  inputs."httpbeast".repo  = "flake-nimble";
+  inputs."httpbeast".owner = "nim-nix-pkgs";
+  inputs."httpbeast".ref   = "master";
+  inputs."httpbeast".repo  = "httpbeast";
   inputs."httpbeast".type  = "github";
   inputs."httpbeast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."httpbeast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/timotheecour/asynctools".dir   = "nimpkgs/h/https://github.com/timotheecour/asynctools";
-  inputs."https://github.com/timotheecour/asynctools".owner = "riinr";
-  inputs."https://github.com/timotheecour/asynctools".ref   = "flake-pinning";
-  inputs."https://github.com/timotheecour/asynctools".repo  = "flake-nimble";
+  inputs."https://github.com/timotheecour/asynctools".owner = "nim-nix-pkgs";
+  inputs."https://github.com/timotheecour/asynctools".ref   = "master";
+  inputs."https://github.com/timotheecour/asynctools".repo  = "https://github.com/timotheecour/asynctools";
   inputs."https://github.com/timotheecour/asynctools".type  = "github";
   inputs."https://github.com/timotheecour/asynctools".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/timotheecour/asynctools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

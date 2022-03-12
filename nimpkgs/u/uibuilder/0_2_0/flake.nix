@@ -13,18 +13,16 @@
   inputs.src-uibuilder-0_2_0.repo  = "uibuilder.nim";
   inputs.src-uibuilder-0_2_0.type  = "github";
   
-  inputs."ui".dir   = "nimpkgs/u/ui";
-  inputs."ui".owner = "riinr";
-  inputs."ui".ref   = "flake-pinning";
-  inputs."ui".repo  = "flake-nimble";
+  inputs."ui".owner = "nim-nix-pkgs";
+  inputs."ui".ref   = "master";
+  inputs."ui".repo  = "ui";
   inputs."ui".type  = "github";
   inputs."ui".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ui".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/ba0f3/xml.nim@".dir   = "nimpkgs/h/https://github.com/ba0f3/xml.nim@";
-  inputs."https://github.com/ba0f3/xml.nim@".owner = "riinr";
-  inputs."https://github.com/ba0f3/xml.nim@".ref   = "flake-pinning";
-  inputs."https://github.com/ba0f3/xml.nim@".repo  = "flake-nimble";
+  inputs."https://github.com/ba0f3/xml.nim@".owner = "nim-nix-pkgs";
+  inputs."https://github.com/ba0f3/xml.nim@".ref   = "master";
+  inputs."https://github.com/ba0f3/xml.nim@".repo  = "https://github.com/ba0f3/xml.nim@";
   inputs."https://github.com/ba0f3/xml.nim@".type  = "github";
   inputs."https://github.com/ba0f3/xml.nim@".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/ba0f3/xml.nim@".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

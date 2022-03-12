@@ -13,26 +13,23 @@
   inputs.src-futhark-v0_3_0.repo  = "futhark";
   inputs.src-futhark-v0_3_0.type  = "github";
   
-  inputs."https://github.com/pmunch/libclang-nim".dir   = "nimpkgs/h/https://github.com/pmunch/libclang-nim";
-  inputs."https://github.com/pmunch/libclang-nim".owner = "riinr";
-  inputs."https://github.com/pmunch/libclang-nim".ref   = "flake-pinning";
-  inputs."https://github.com/pmunch/libclang-nim".repo  = "flake-nimble";
+  inputs."https://github.com/pmunch/libclang-nim".owner = "nim-nix-pkgs";
+  inputs."https://github.com/pmunch/libclang-nim".ref   = "master";
+  inputs."https://github.com/pmunch/libclang-nim".repo  = "https://github.com/pmunch/libclang-nim";
   inputs."https://github.com/pmunch/libclang-nim".type  = "github";
   inputs."https://github.com/pmunch/libclang-nim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/pmunch/libclang-nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."termstyle".dir   = "nimpkgs/t/termstyle";
-  inputs."termstyle".owner = "riinr";
-  inputs."termstyle".ref   = "flake-pinning";
-  inputs."termstyle".repo  = "flake-nimble";
+  inputs."termstyle".owner = "nim-nix-pkgs";
+  inputs."termstyle".ref   = "master";
+  inputs."termstyle".repo  = "termstyle";
   inputs."termstyle".type  = "github";
   inputs."termstyle".inputs.nixpkgs.follows = "nixpkgs";
   inputs."termstyle".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."macroutils".dir   = "nimpkgs/m/macroutils";
-  inputs."macroutils".owner = "riinr";
-  inputs."macroutils".ref   = "flake-pinning";
-  inputs."macroutils".repo  = "flake-nimble";
+  inputs."macroutils".owner = "nim-nix-pkgs";
+  inputs."macroutils".ref   = "master";
+  inputs."macroutils".repo  = "macroutils";
   inputs."macroutils".type  = "github";
   inputs."macroutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."macroutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

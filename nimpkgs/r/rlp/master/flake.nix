@@ -13,10 +13,9 @@
   inputs.src-rlp-master.repo  = "nim-rlp";
   inputs.src-rlp-master.type  = "github";
   
-  inputs."ranges".dir   = "nimpkgs/r/ranges";
-  inputs."ranges".owner = "riinr";
-  inputs."ranges".ref   = "flake-pinning";
-  inputs."ranges".repo  = "flake-nimble";
+  inputs."ranges".owner = "nim-nix-pkgs";
+  inputs."ranges".ref   = "master";
+  inputs."ranges".repo  = "ranges";
   inputs."ranges".type  = "github";
   inputs."ranges".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ranges".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

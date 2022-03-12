@@ -13,18 +13,16 @@
   inputs.src-aglet-0_2_0.repo  = "aglet";
   inputs.src-aglet-0_2_0.type  = "github";
   
-  inputs."glm".dir   = "nimpkgs/g/glm";
-  inputs."glm".owner = "riinr";
-  inputs."glm".ref   = "flake-pinning";
-  inputs."glm".repo  = "flake-nimble";
+  inputs."glm".owner = "nim-nix-pkgs";
+  inputs."glm".ref   = "master";
+  inputs."glm".repo  = "glm";
   inputs."glm".type  = "github";
   inputs."glm".inputs.nixpkgs.follows = "nixpkgs";
   inputs."glm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/nimgl/glfw".dir   = "nimpkgs/h/https://github.com/nimgl/glfw";
-  inputs."https://github.com/nimgl/glfw".owner = "riinr";
-  inputs."https://github.com/nimgl/glfw".ref   = "flake-pinning";
-  inputs."https://github.com/nimgl/glfw".repo  = "flake-nimble";
+  inputs."https://github.com/nimgl/glfw".owner = "nim-nix-pkgs";
+  inputs."https://github.com/nimgl/glfw".ref   = "master";
+  inputs."https://github.com/nimgl/glfw".repo  = "https://github.com/nimgl/glfw";
   inputs."https://github.com/nimgl/glfw".type  = "github";
   inputs."https://github.com/nimgl/glfw".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/nimgl/glfw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

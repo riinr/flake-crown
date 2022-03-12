@@ -13,18 +13,16 @@
   inputs.src-openapi-2_0_0.repo  = "openapi";
   inputs.src-openapi-2_0_0.type  = "github";
   
-  inputs."npeg".dir   = "nimpkgs/n/npeg";
-  inputs."npeg".owner = "riinr";
-  inputs."npeg".ref   = "flake-pinning";
-  inputs."npeg".repo  = "flake-nimble";
+  inputs."npeg".owner = "nim-nix-pkgs";
+  inputs."npeg".ref   = "master";
+  inputs."npeg".repo  = "npeg";
   inputs."npeg".type  = "github";
   inputs."npeg".inputs.nixpkgs.follows = "nixpkgs";
   inputs."npeg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."foreach".dir   = "nimpkgs/f/foreach";
-  inputs."foreach".owner = "riinr";
-  inputs."foreach".ref   = "flake-pinning";
-  inputs."foreach".repo  = "flake-nimble";
+  inputs."foreach".owner = "nim-nix-pkgs";
+  inputs."foreach".ref   = "master";
+  inputs."foreach".repo  = "foreach";
   inputs."foreach".type  = "github";
   inputs."foreach".inputs.nixpkgs.follows = "nixpkgs";
   inputs."foreach".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

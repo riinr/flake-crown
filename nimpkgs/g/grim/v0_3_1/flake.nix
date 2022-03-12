@@ -13,18 +13,16 @@
   inputs.src-grim-v0_3_1.repo  = "grim";
   inputs.src-grim-v0_3_1.type  = "github";
   
-  inputs."yaml".dir   = "nimpkgs/y/yaml";
-  inputs."yaml".owner = "riinr";
-  inputs."yaml".ref   = "flake-pinning";
-  inputs."yaml".repo  = "flake-nimble";
+  inputs."yaml".owner = "nim-nix-pkgs";
+  inputs."yaml".ref   = "master";
+  inputs."yaml".repo  = "yaml";
   inputs."yaml".type  = "github";
   inputs."yaml".inputs.nixpkgs.follows = "nixpkgs";
   inputs."yaml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."zero_functional".dir   = "nimpkgs/z/zero_functional";
-  inputs."zero_functional".owner = "riinr";
-  inputs."zero_functional".ref   = "flake-pinning";
-  inputs."zero_functional".repo  = "flake-nimble";
+  inputs."zero_functional".owner = "nim-nix-pkgs";
+  inputs."zero_functional".ref   = "master";
+  inputs."zero_functional".repo  = "zero_functional";
   inputs."zero_functional".type  = "github";
   inputs."zero_functional".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zero_functional".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

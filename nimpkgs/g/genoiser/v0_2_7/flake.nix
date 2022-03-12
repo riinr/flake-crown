@@ -13,26 +13,23 @@
   inputs.src-genoiser-v0_2_7.repo  = "genoiser";
   inputs.src-genoiser-v0_2_7.type  = "github";
   
-  inputs."hts".dir   = "nimpkgs/h/hts";
-  inputs."hts".owner = "riinr";
-  inputs."hts".ref   = "flake-pinning";
-  inputs."hts".repo  = "flake-nimble";
+  inputs."hts".owner = "nim-nix-pkgs";
+  inputs."hts".ref   = "master";
+  inputs."hts".repo  = "hts";
   inputs."hts".type  = "github";
   inputs."hts".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hts".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."docopt".dir   = "nimpkgs/d/docopt";
-  inputs."docopt".owner = "riinr";
-  inputs."docopt".ref   = "flake-pinning";
-  inputs."docopt".repo  = "flake-nimble";
+  inputs."docopt".owner = "nim-nix-pkgs";
+  inputs."docopt".ref   = "master";
+  inputs."docopt".repo  = "docopt";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."kexpr".dir   = "nimpkgs/k/kexpr";
-  inputs."kexpr".owner = "riinr";
-  inputs."kexpr".ref   = "flake-pinning";
-  inputs."kexpr".repo  = "flake-nimble";
+  inputs."kexpr".owner = "nim-nix-pkgs";
+  inputs."kexpr".ref   = "master";
+  inputs."kexpr".repo  = "kexpr";
   inputs."kexpr".type  = "github";
   inputs."kexpr".inputs.nixpkgs.follows = "nixpkgs";
   inputs."kexpr".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

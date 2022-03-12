@@ -13,26 +13,23 @@
   inputs.src-algebraicdatas-main.repo  = "AlgebraicDataTypes";
   inputs.src-algebraicdatas-main.type  = "github";
   
-  inputs."ast_pattern_matching".dir   = "nimpkgs/a/ast_pattern_matching";
-  inputs."ast_pattern_matching".owner = "riinr";
-  inputs."ast_pattern_matching".ref   = "flake-pinning";
-  inputs."ast_pattern_matching".repo  = "flake-nimble";
+  inputs."ast_pattern_matching".owner = "nim-nix-pkgs";
+  inputs."ast_pattern_matching".ref   = "master";
+  inputs."ast_pattern_matching".repo  = "ast_pattern_matching";
   inputs."ast_pattern_matching".type  = "github";
   inputs."ast_pattern_matching".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ast_pattern_matching".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."macroutils".dir   = "nimpkgs/m/macroutils";
-  inputs."macroutils".owner = "riinr";
-  inputs."macroutils".ref   = "flake-pinning";
-  inputs."macroutils".repo  = "flake-nimble";
+  inputs."macroutils".owner = "nim-nix-pkgs";
+  inputs."macroutils".ref   = "master";
+  inputs."macroutils".repo  = "macroutils";
   inputs."macroutils".type  = "github";
   inputs."macroutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."macroutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."optionsutils".dir   = "nimpkgs/o/optionsutils";
-  inputs."optionsutils".owner = "riinr";
-  inputs."optionsutils".ref   = "flake-pinning";
-  inputs."optionsutils".repo  = "flake-nimble";
+  inputs."optionsutils".owner = "nim-nix-pkgs";
+  inputs."optionsutils".ref   = "master";
+  inputs."optionsutils".repo  = "optionsutils";
   inputs."optionsutils".type  = "github";
   inputs."optionsutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."optionsutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

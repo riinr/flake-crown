@@ -13,10 +13,9 @@
   inputs.src-diffoutput-v0_1_2.repo  = "diffoutput";
   inputs.src-diffoutput-v0_1_2.type  = "github";
   
-  inputs."diff".dir   = "nimpkgs/d/diff";
-  inputs."diff".owner = "riinr";
-  inputs."diff".ref   = "flake-pinning";
-  inputs."diff".repo  = "flake-nimble";
+  inputs."diff".owner = "nim-nix-pkgs";
+  inputs."diff".ref   = "master";
+  inputs."diff".repo  = "diff";
   inputs."diff".type  = "github";
   inputs."diff".inputs.nixpkgs.follows = "nixpkgs";
   inputs."diff".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

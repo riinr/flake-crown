@@ -13,10 +13,9 @@
   inputs.src-bionim-0_0_3.repo  = "bionim";
   inputs.src-bionim-0_0_3.type  = "github";
   
-  inputs."phylogeni".dir   = "nimpkgs/p/phylogeni";
-  inputs."phylogeni".owner = "riinr";
-  inputs."phylogeni".ref   = "flake-pinning";
-  inputs."phylogeni".repo  = "flake-nimble";
+  inputs."phylogeni".owner = "nim-nix-pkgs";
+  inputs."phylogeni".ref   = "master";
+  inputs."phylogeni".repo  = "phylogeni";
   inputs."phylogeni".type  = "github";
   inputs."phylogeni".inputs.nixpkgs.follows = "nixpkgs";
   inputs."phylogeni".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

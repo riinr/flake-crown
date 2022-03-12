@@ -13,10 +13,9 @@
   inputs.src-googlesearch-v0_2_0.repo  = "googlesearch.nim";
   inputs.src-googlesearch-v0_2_0.type  = "github";
   
-  inputs."nimquery".dir   = "nimpkgs/n/nimquery";
-  inputs."nimquery".owner = "riinr";
-  inputs."nimquery".ref   = "flake-pinning";
-  inputs."nimquery".repo  = "flake-nimble";
+  inputs."nimquery".owner = "nim-nix-pkgs";
+  inputs."nimquery".ref   = "master";
+  inputs."nimquery".repo  = "nimquery";
   inputs."nimquery".type  = "github";
   inputs."nimquery".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimquery".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

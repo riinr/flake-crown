@@ -13,10 +13,9 @@
   inputs.src-oaitools-v0_2_5.repo  = "oaitools.nim";
   inputs.src-oaitools-v0_2_5.type  = "github";
   
-  inputs."xmltools".dir   = "nimpkgs/x/xmltools";
-  inputs."xmltools".owner = "riinr";
-  inputs."xmltools".ref   = "flake-pinning";
-  inputs."xmltools".repo  = "flake-nimble";
+  inputs."xmltools".owner = "nim-nix-pkgs";
+  inputs."xmltools".ref   = "master";
+  inputs."xmltools".repo  = "xmltools";
   inputs."xmltools".type  = "github";
   inputs."xmltools".inputs.nixpkgs.follows = "nixpkgs";
   inputs."xmltools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

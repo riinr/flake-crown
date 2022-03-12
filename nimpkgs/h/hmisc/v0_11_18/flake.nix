@@ -13,26 +13,23 @@
   inputs.src-hmisc-v0_11_18.repo  = "hmisc";
   inputs.src-hmisc-v0_11_18.type  = "github";
   
-  inputs."fusion".dir   = "nimpkgs/f/fusion";
-  inputs."fusion".owner = "riinr";
-  inputs."fusion".ref   = "flake-pinning";
-  inputs."fusion".repo  = "flake-nimble";
+  inputs."fusion".owner = "nim-nix-pkgs";
+  inputs."fusion".ref   = "master";
+  inputs."fusion".repo  = "fusion";
   inputs."fusion".type  = "github";
   inputs."fusion".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fusion".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."benchy".dir   = "nimpkgs/b/benchy";
-  inputs."benchy".owner = "riinr";
-  inputs."benchy".ref   = "flake-pinning";
-  inputs."benchy".repo  = "flake-nimble";
+  inputs."benchy".owner = "nim-nix-pkgs";
+  inputs."benchy".ref   = "master";
+  inputs."benchy".repo  = "benchy";
   inputs."benchy".type  = "github";
   inputs."benchy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."benchy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."jsony".dir   = "nimpkgs/j/jsony";
-  inputs."jsony".owner = "riinr";
-  inputs."jsony".ref   = "flake-pinning";
-  inputs."jsony".repo  = "flake-nimble";
+  inputs."jsony".owner = "nim-nix-pkgs";
+  inputs."jsony".ref   = "master";
+  inputs."jsony".repo  = "jsony";
   inputs."jsony".type  = "github";
   inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

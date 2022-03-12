@@ -13,26 +13,23 @@
   inputs.src-ratel-v0_2_0.repo  = "ratel";
   inputs.src-ratel-v0_2_0.type  = "github";
   
-  inputs."nimscripter".dir   = "nimpkgs/n/nimscripter";
-  inputs."nimscripter".owner = "riinr";
-  inputs."nimscripter".ref   = "flake-pinning";
-  inputs."nimscripter".repo  = "flake-nimble";
+  inputs."nimscripter".owner = "nim-nix-pkgs";
+  inputs."nimscripter".ref   = "master";
+  inputs."nimscripter".repo  = "nimscripter";
   inputs."nimscripter".type  = "github";
   inputs."nimscripter".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimscripter".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."compiler".dir   = "nimpkgs/c/compiler";
-  inputs."compiler".owner = "riinr";
-  inputs."compiler".ref   = "flake-pinning";
-  inputs."compiler".repo  = "flake-nimble";
+  inputs."compiler".owner = "nim-nix-pkgs";
+  inputs."compiler".ref   = "master";
+  inputs."compiler".repo  = "compiler";
   inputs."compiler".type  = "github";
   inputs."compiler".inputs.nixpkgs.follows = "nixpkgs";
   inputs."compiler".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,26 +13,23 @@
   inputs.src-gen-0_6_0.repo  = "gen";
   inputs.src-gen-0_6_0.type  = "github";
   
-  inputs."progress".dir   = "nimpkgs/p/progress";
-  inputs."progress".owner = "riinr";
-  inputs."progress".ref   = "flake-pinning";
-  inputs."progress".repo  = "flake-nimble";
+  inputs."progress".owner = "nim-nix-pkgs";
+  inputs."progress".ref   = "master";
+  inputs."progress".repo  = "progress";
   inputs."progress".type  = "github";
   inputs."progress".inputs.nixpkgs.follows = "nixpkgs";
   inputs."progress".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."docopt".dir   = "nimpkgs/d/docopt";
-  inputs."docopt".owner = "riinr";
-  inputs."docopt".ref   = "flake-pinning";
-  inputs."docopt".repo  = "flake-nimble";
+  inputs."docopt".owner = "nim-nix-pkgs";
+  inputs."docopt".ref   = "master";
+  inputs."docopt".repo  = "docopt";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."fab".dir   = "nimpkgs/f/fab";
-  inputs."fab".owner = "riinr";
-  inputs."fab".ref   = "flake-pinning";
-  inputs."fab".repo  = "flake-nimble";
+  inputs."fab".owner = "nim-nix-pkgs";
+  inputs."fab".ref   = "master";
+  inputs."fab".repo  = "fab";
   inputs."fab".type  = "github";
   inputs."fab".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fab".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,18 +13,16 @@
   inputs.src-rethinkdb-master.repo  = "rethinkdb.nim";
   inputs.src-rethinkdb-master.type  = "github";
   
-  inputs."struct".dir   = "nimpkgs/s/struct";
-  inputs."struct".owner = "riinr";
-  inputs."struct".ref   = "flake-pinning";
-  inputs."struct".repo  = "flake-nimble";
+  inputs."struct".owner = "nim-nix-pkgs";
+  inputs."struct".ref   = "master";
+  inputs."struct".repo  = "struct";
   inputs."struct".type  = "github";
   inputs."struct".inputs.nixpkgs.follows = "nixpkgs";
   inputs."struct".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."scram".dir   = "nimpkgs/s/scram";
-  inputs."scram".owner = "riinr";
-  inputs."scram".ref   = "flake-pinning";
-  inputs."scram".repo  = "flake-nimble";
+  inputs."scram".owner = "nim-nix-pkgs";
+  inputs."scram".ref   = "master";
+  inputs."scram".repo  = "scram";
   inputs."scram".type  = "github";
   inputs."scram".inputs.nixpkgs.follows = "nixpkgs";
   inputs."scram".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

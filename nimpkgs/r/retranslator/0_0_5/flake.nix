@@ -13,10 +13,9 @@
   inputs.src-retranslator-0_0_5.repo  = "RegularExpressions.Transformer";
   inputs.src-retranslator-0_0_5.type  = "github";
   
-  inputs."nre".dir   = "nimpkgs/n/nre";
-  inputs."nre".owner = "riinr";
-  inputs."nre".ref   = "flake-pinning";
-  inputs."nre".repo  = "flake-nimble";
+  inputs."nre".owner = "nim-nix-pkgs";
+  inputs."nre".ref   = "master";
+  inputs."nre".repo  = "nre";
   inputs."nre".type  = "github";
   inputs."nre".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nre".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

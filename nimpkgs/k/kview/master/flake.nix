@@ -13,10 +13,9 @@
   inputs.src-kview-master.repo  = "kview";
   inputs.src-kview-master.type  = "github";
   
-  inputs."karax".dir   = "nimpkgs/k/karax";
-  inputs."karax".owner = "riinr";
-  inputs."karax".ref   = "flake-pinning";
-  inputs."karax".repo  = "flake-nimble";
+  inputs."karax".owner = "nim-nix-pkgs";
+  inputs."karax".ref   = "master";
+  inputs."karax".repo  = "karax";
   inputs."karax".type  = "github";
   inputs."karax".inputs.nixpkgs.follows = "nixpkgs";
   inputs."karax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

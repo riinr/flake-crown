@@ -13,10 +13,9 @@
   inputs.src-hexclock-master.repo  = "hexclock";
   inputs.src-hexclock-master.type  = "github";
   
-  inputs."sdl2".dir   = "nimpkgs/s/sdl2";
-  inputs."sdl2".owner = "riinr";
-  inputs."sdl2".ref   = "flake-pinning";
-  inputs."sdl2".repo  = "flake-nimble";
+  inputs."sdl2".owner = "nim-nix-pkgs";
+  inputs."sdl2".ref   = "master";
+  inputs."sdl2".repo  = "sdl2";
   inputs."sdl2".type  = "github";
   inputs."sdl2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sdl2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

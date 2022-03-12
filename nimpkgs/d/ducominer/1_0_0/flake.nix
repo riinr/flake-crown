@@ -13,10 +13,9 @@
   inputs.src-ducominer-1_0_0.repo  = "ducominer";
   inputs.src-ducominer-1_0_0.type  = "github";
   
-  inputs."hashlib".dir   = "nimpkgs/h/hashlib";
-  inputs."hashlib".owner = "riinr";
-  inputs."hashlib".ref   = "flake-pinning";
-  inputs."hashlib".repo  = "flake-nimble";
+  inputs."hashlib".owner = "nim-nix-pkgs";
+  inputs."hashlib".ref   = "master";
+  inputs."hashlib".repo  = "hashlib";
   inputs."hashlib".type  = "github";
   inputs."hashlib".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hashlib".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

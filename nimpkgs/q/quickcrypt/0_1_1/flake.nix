@@ -13,18 +13,16 @@
   inputs.src-quickcrypt-0_1_1.repo  = "nim-quickcrypt";
   inputs.src-quickcrypt-0_1_1.type  = "github";
   
-  inputs."nimaes".dir   = "nimpkgs/n/nimaes";
-  inputs."nimaes".owner = "riinr";
-  inputs."nimaes".ref   = "flake-pinning";
-  inputs."nimaes".repo  = "flake-nimble";
+  inputs."nimaes".owner = "nim-nix-pkgs";
+  inputs."nimaes".ref   = "master";
+  inputs."nimaes".repo  = "nimaes";
   inputs."nimaes".type  = "github";
   inputs."nimaes".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimaes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."neoid".dir   = "nimpkgs/n/neoid";
-  inputs."neoid".owner = "riinr";
-  inputs."neoid".ref   = "flake-pinning";
-  inputs."neoid".repo  = "flake-nimble";
+  inputs."neoid".owner = "nim-nix-pkgs";
+  inputs."neoid".ref   = "master";
+  inputs."neoid".repo  = "neoid";
   inputs."neoid".type  = "github";
   inputs."neoid".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neoid".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

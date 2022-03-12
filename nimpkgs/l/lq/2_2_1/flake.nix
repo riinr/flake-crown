@@ -13,18 +13,16 @@
   inputs.src-lq-2_2_1.repo  = "lq";
   inputs.src-lq-2_2_1.type  = "github";
   
-  inputs."nap".dir   = "nimpkgs/n/nap";
-  inputs."nap".owner = "riinr";
-  inputs."nap".ref   = "flake-pinning";
-  inputs."nap".repo  = "flake-nimble";
+  inputs."nap".owner = "nim-nix-pkgs";
+  inputs."nap".ref   = "master";
+  inputs."nap".repo  = "nap";
   inputs."nap".type  = "github";
   inputs."nap".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nap".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."parsetoml".dir   = "nimpkgs/p/parsetoml";
-  inputs."parsetoml".owner = "riinr";
-  inputs."parsetoml".ref   = "flake-pinning";
-  inputs."parsetoml".repo  = "flake-nimble";
+  inputs."parsetoml".owner = "nim-nix-pkgs";
+  inputs."parsetoml".ref   = "master";
+  inputs."parsetoml".repo  = "parsetoml";
   inputs."parsetoml".type  = "github";
   inputs."parsetoml".inputs.nixpkgs.follows = "nixpkgs";
   inputs."parsetoml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

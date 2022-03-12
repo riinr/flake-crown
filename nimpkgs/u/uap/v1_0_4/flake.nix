@@ -13,18 +13,16 @@
   inputs.src-uap-v1_0_4.repo  = "nim-uap";
   inputs.src-uap-v1_0_4.type  = "gitlab";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."yaml".dir   = "nimpkgs/y/yaml";
-  inputs."yaml".owner = "riinr";
-  inputs."yaml".ref   = "flake-pinning";
-  inputs."yaml".repo  = "flake-nimble";
+  inputs."yaml".owner = "nim-nix-pkgs";
+  inputs."yaml".ref   = "master";
+  inputs."yaml".repo  = "yaml";
   inputs."yaml".type  = "github";
   inputs."yaml".inputs.nixpkgs.follows = "nixpkgs";
   inputs."yaml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

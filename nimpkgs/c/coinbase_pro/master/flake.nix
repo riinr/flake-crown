@@ -13,26 +13,23 @@
   inputs.src-coinbase_pro-master.repo  = "coinbase-pro-nim";
   inputs.src-coinbase_pro-master.type  = "github";
   
-  inputs."ws".dir   = "nimpkgs/w/ws";
-  inputs."ws".owner = "riinr";
-  inputs."ws".ref   = "flake-pinning";
-  inputs."ws".repo  = "flake-nimble";
+  inputs."ws".owner = "nim-nix-pkgs";
+  inputs."ws".ref   = "master";
+  inputs."ws".repo  = "ws";
   inputs."ws".type  = "github";
   inputs."ws".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ws".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."decimal".dir   = "nimpkgs/d/decimal";
-  inputs."decimal".owner = "riinr";
-  inputs."decimal".ref   = "flake-pinning";
-  inputs."decimal".repo  = "flake-nimble";
+  inputs."decimal".owner = "nim-nix-pkgs";
+  inputs."decimal".ref   = "master";
+  inputs."decimal".repo  = "decimal";
   inputs."decimal".type  = "github";
   inputs."decimal".inputs.nixpkgs.follows = "nixpkgs";
   inputs."decimal".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."uuids".dir   = "nimpkgs/u/uuids";
-  inputs."uuids".owner = "riinr";
-  inputs."uuids".ref   = "flake-pinning";
-  inputs."uuids".repo  = "flake-nimble";
+  inputs."uuids".owner = "nim-nix-pkgs";
+  inputs."uuids".ref   = "master";
+  inputs."uuids".repo  = "uuids";
   inputs."uuids".type  = "github";
   inputs."uuids".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uuids".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

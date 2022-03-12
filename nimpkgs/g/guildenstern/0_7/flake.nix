@@ -13,10 +13,9 @@
   inputs.src-guildenstern-0_7.repo  = "GuildenStern";
   inputs.src-guildenstern-0_7.type  = "github";
   
-  inputs."weave".dir   = "nimpkgs/w/weave";
-  inputs."weave".owner = "riinr";
-  inputs."weave".ref   = "flake-pinning";
-  inputs."weave".repo  = "flake-nimble";
+  inputs."weave".owner = "nim-nix-pkgs";
+  inputs."weave".ref   = "master";
+  inputs."weave".repo  = "weave";
   inputs."weave".type  = "github";
   inputs."weave".inputs.nixpkgs.follows = "nixpkgs";
   inputs."weave".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

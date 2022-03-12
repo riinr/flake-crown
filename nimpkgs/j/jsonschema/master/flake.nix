@@ -13,10 +13,9 @@
   inputs.src-jsonschema-master.repo  = "jsonschema";
   inputs.src-jsonschema-master.type  = "github";
   
-  inputs."ast_pattern_matching".dir   = "nimpkgs/a/ast_pattern_matching";
-  inputs."ast_pattern_matching".owner = "riinr";
-  inputs."ast_pattern_matching".ref   = "flake-pinning";
-  inputs."ast_pattern_matching".repo  = "flake-nimble";
+  inputs."ast_pattern_matching".owner = "nim-nix-pkgs";
+  inputs."ast_pattern_matching".ref   = "master";
+  inputs."ast_pattern_matching".repo  = "ast_pattern_matching";
   inputs."ast_pattern_matching".type  = "github";
   inputs."ast_pattern_matching".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ast_pattern_matching".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

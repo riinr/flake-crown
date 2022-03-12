@@ -13,10 +13,9 @@
   inputs.src-cbor-master.repo  = "nim_cbor";
   inputs.src-cbor-master.type  = "other";
   
-  inputs."bigints".dir   = "nimpkgs/b/bigints";
-  inputs."bigints".owner = "riinr";
-  inputs."bigints".ref   = "flake-pinning";
-  inputs."bigints".repo  = "flake-nimble";
+  inputs."bigints".owner = "nim-nix-pkgs";
+  inputs."bigints".ref   = "master";
+  inputs."bigints".repo  = "bigints";
   inputs."bigints".type  = "github";
   inputs."bigints".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bigints".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

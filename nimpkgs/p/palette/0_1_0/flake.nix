@@ -13,18 +13,16 @@
   inputs.src-Palette-0_1_0.repo  = "Palette";
   inputs.src-Palette-0_1_0.type  = "github";
   
-  inputs."nigui".dir   = "nimpkgs/n/nigui";
-  inputs."nigui".owner = "riinr";
-  inputs."nigui".ref   = "flake-pinning";
-  inputs."nigui".repo  = "flake-nimble";
+  inputs."nigui".owner = "nim-nix-pkgs";
+  inputs."nigui".ref   = "master";
+  inputs."nigui".repo  = "nigui";
   inputs."nigui".type  = "github";
   inputs."nigui".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nigui".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

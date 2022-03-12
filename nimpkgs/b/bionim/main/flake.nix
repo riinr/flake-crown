@@ -13,18 +13,16 @@
   inputs.src-bionim-main.repo  = "bionim";
   inputs.src-bionim-main.type  = "github";
   
-  inputs."phylogeni".dir   = "nimpkgs/p/phylogeni";
-  inputs."phylogeni".owner = "riinr";
-  inputs."phylogeni".ref   = "flake-pinning";
-  inputs."phylogeni".repo  = "flake-nimble";
+  inputs."phylogeni".owner = "nim-nix-pkgs";
+  inputs."phylogeni".ref   = "master";
+  inputs."phylogeni".repo  = "phylogeni";
   inputs."phylogeni".type  = "github";
   inputs."phylogeni".inputs.nixpkgs.follows = "nixpkgs";
   inputs."phylogeni".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."bio_seq".dir   = "nimpkgs/b/bio_seq";
-  inputs."bio_seq".owner = "riinr";
-  inputs."bio_seq".ref   = "flake-pinning";
-  inputs."bio_seq".repo  = "flake-nimble";
+  inputs."bio_seq".owner = "nim-nix-pkgs";
+  inputs."bio_seq".ref   = "master";
+  inputs."bio_seq".repo  = "bio_seq";
   inputs."bio_seq".type  = "github";
   inputs."bio_seq".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bio_seq".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

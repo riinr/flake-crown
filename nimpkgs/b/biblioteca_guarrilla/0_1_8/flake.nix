@@ -13,18 +13,16 @@
   inputs.src-biblioteca_guarrilla-0_1_8.repo  = "biblioteca-guarrilla";
   inputs.src-biblioteca_guarrilla-0_1_8.type  = "github";
   
-  inputs."webp".dir   = "nimpkgs/w/webp";
-  inputs."webp".owner = "riinr";
-  inputs."webp".ref   = "flake-pinning";
-  inputs."webp".repo  = "flake-nimble";
+  inputs."webp".owner = "nim-nix-pkgs";
+  inputs."webp".ref   = "master";
+  inputs."webp".repo  = "webp";
   inputs."webp".type  = "github";
   inputs."webp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."webp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."zip".dir   = "nimpkgs/z/zip";
-  inputs."zip".owner = "riinr";
-  inputs."zip".ref   = "flake-pinning";
-  inputs."zip".repo  = "flake-nimble";
+  inputs."zip".owner = "nim-nix-pkgs";
+  inputs."zip".ref   = "master";
+  inputs."zip".repo  = "zip";
   inputs."zip".type  = "github";
   inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

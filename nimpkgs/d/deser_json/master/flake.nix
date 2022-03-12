@@ -13,18 +13,16 @@
   inputs.src-deser_json-master.repo  = "deser_json";
   inputs.src-deser_json-master.type  = "github";
   
-  inputs."faststreams".dir   = "nimpkgs/f/faststreams";
-  inputs."faststreams".owner = "riinr";
-  inputs."faststreams".ref   = "flake-pinning";
-  inputs."faststreams".repo  = "flake-nimble";
+  inputs."faststreams".owner = "nim-nix-pkgs";
+  inputs."faststreams".ref   = "master";
+  inputs."faststreams".repo  = "faststreams";
   inputs."faststreams".type  = "github";
   inputs."faststreams".inputs.nixpkgs.follows = "nixpkgs";
   inputs."faststreams".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."deser".dir   = "nimpkgs/d/deser";
-  inputs."deser".owner = "riinr";
-  inputs."deser".ref   = "flake-pinning";
-  inputs."deser".repo  = "flake-nimble";
+  inputs."deser".owner = "nim-nix-pkgs";
+  inputs."deser".ref   = "master";
+  inputs."deser".repo  = "deser";
   inputs."deser".type  = "github";
   inputs."deser".inputs.nixpkgs.follows = "nixpkgs";
   inputs."deser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

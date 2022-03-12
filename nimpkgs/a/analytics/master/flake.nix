@@ -13,26 +13,23 @@
   inputs.src-analytics-master.repo  = "analytics";
   inputs.src-analytics-master.type  = "github";
   
-  inputs."uuids".dir   = "nimpkgs/u/uuids";
-  inputs."uuids".owner = "riinr";
-  inputs."uuids".ref   = "flake-pinning";
-  inputs."uuids".repo  = "flake-nimble";
+  inputs."uuids".owner = "nim-nix-pkgs";
+  inputs."uuids".ref   = "master";
+  inputs."uuids".repo  = "uuids";
   inputs."uuids".type  = "github";
   inputs."uuids".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uuids".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."osinfo".dir   = "nimpkgs/o/osinfo";
-  inputs."osinfo".owner = "riinr";
-  inputs."osinfo".ref   = "flake-pinning";
-  inputs."osinfo".repo  = "flake-nimble";
+  inputs."osinfo".owner = "nim-nix-pkgs";
+  inputs."osinfo".ref   = "master";
+  inputs."osinfo".repo  = "osinfo";
   inputs."osinfo".type  = "github";
   inputs."osinfo".inputs.nixpkgs.follows = "nixpkgs";
   inputs."osinfo".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."puppy".dir   = "nimpkgs/p/puppy";
-  inputs."puppy".owner = "riinr";
-  inputs."puppy".ref   = "flake-pinning";
-  inputs."puppy".repo  = "flake-nimble";
+  inputs."puppy".owner = "nim-nix-pkgs";
+  inputs."puppy".ref   = "master";
+  inputs."puppy".repo  = "puppy";
   inputs."puppy".type  = "github";
   inputs."puppy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."puppy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

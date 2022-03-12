@@ -13,10 +13,9 @@
   inputs.src-denim_ui_canvas-master.repo  = "denim-ui-canvas";
   inputs.src-denim_ui_canvas-master.type  = "github";
   
-  inputs."denim_ui".dir   = "nimpkgs/d/denim_ui";
-  inputs."denim_ui".owner = "riinr";
-  inputs."denim_ui".ref   = "flake-pinning";
-  inputs."denim_ui".repo  = "flake-nimble";
+  inputs."denim_ui".owner = "nim-nix-pkgs";
+  inputs."denim_ui".ref   = "master";
+  inputs."denim_ui".repo  = "denim_ui";
   inputs."denim_ui".type  = "github";
   inputs."denim_ui".inputs.nixpkgs.follows = "nixpkgs";
   inputs."denim_ui".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,10 +13,9 @@
   inputs.src-grim-v_0_2_0.repo  = "grim";
   inputs.src-grim-v_0_2_0.type  = "github";
   
-  inputs."yaml".dir   = "nimpkgs/y/yaml";
-  inputs."yaml".owner = "riinr";
-  inputs."yaml".ref   = "flake-pinning";
-  inputs."yaml".repo  = "flake-nimble";
+  inputs."yaml".owner = "nim-nix-pkgs";
+  inputs."yaml".ref   = "master";
+  inputs."yaml".repo  = "yaml";
   inputs."yaml".type  = "github";
   inputs."yaml".inputs.nixpkgs.follows = "nixpkgs";
   inputs."yaml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

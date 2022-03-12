@@ -13,10 +13,9 @@
   inputs.src-ytextractor-master.repo  = "ytextractor";
   inputs.src-ytextractor-master.type  = "github";
   
-  inputs."ajax".dir   = "nimpkgs/a/ajax";
-  inputs."ajax".owner = "riinr";
-  inputs."ajax".ref   = "flake-pinning";
-  inputs."ajax".repo  = "flake-nimble";
+  inputs."ajax".owner = "nim-nix-pkgs";
+  inputs."ajax".ref   = "master";
+  inputs."ajax".repo  = "ajax";
   inputs."ajax".type  = "github";
   inputs."ajax".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ajax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

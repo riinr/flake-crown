@@ -13,10 +13,9 @@
   inputs.src-delight-master.repo  = "delight";
   inputs.src-delight-master.type  = "github";
   
-  inputs."glm".dir   = "nimpkgs/g/glm";
-  inputs."glm".owner = "riinr";
-  inputs."glm".ref   = "flake-pinning";
-  inputs."glm".repo  = "flake-nimble";
+  inputs."glm".owner = "nim-nix-pkgs";
+  inputs."glm".ref   = "master";
+  inputs."glm".repo  = "glm";
   inputs."glm".type  = "github";
   inputs."glm".inputs.nixpkgs.follows = "nixpkgs";
   inputs."glm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

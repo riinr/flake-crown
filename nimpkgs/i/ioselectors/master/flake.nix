@@ -13,10 +13,9 @@
   inputs.src-ioselectors-master.repo  = "ioselectors";
   inputs.src-ioselectors-master.type  = "github";
   
-  inputs."wepoll".dir   = "nimpkgs/w/wepoll";
-  inputs."wepoll".owner = "riinr";
-  inputs."wepoll".ref   = "flake-pinning";
-  inputs."wepoll".repo  = "flake-nimble";
+  inputs."wepoll".owner = "nim-nix-pkgs";
+  inputs."wepoll".ref   = "master";
+  inputs."wepoll".repo  = "wepoll";
   inputs."wepoll".type  = "github";
   inputs."wepoll".inputs.nixpkgs.follows = "nixpkgs";
   inputs."wepoll".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

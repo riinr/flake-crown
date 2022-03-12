@@ -13,26 +13,23 @@
   inputs.src-denim_ui-master.repo  = "denim-ui";
   inputs.src-denim_ui-master.type  = "github";
   
-  inputs."itertools".dir   = "nimpkgs/i/itertools";
-  inputs."itertools".owner = "riinr";
-  inputs."itertools".ref   = "flake-pinning";
-  inputs."itertools".repo  = "flake-nimble";
+  inputs."itertools".owner = "nim-nix-pkgs";
+  inputs."itertools".ref   = "master";
+  inputs."itertools".repo  = "itertools";
   inputs."itertools".type  = "github";
   inputs."itertools".inputs.nixpkgs.follows = "nixpkgs";
   inputs."itertools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."macroutils".dir   = "nimpkgs/m/macroutils";
-  inputs."macroutils".owner = "riinr";
-  inputs."macroutils".ref   = "flake-pinning";
-  inputs."macroutils".repo  = "flake-nimble";
+  inputs."macroutils".owner = "nim-nix-pkgs";
+  inputs."macroutils".ref   = "master";
+  inputs."macroutils".repo  = "macroutils";
   inputs."macroutils".type  = "github";
   inputs."macroutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."macroutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."rx_nim".dir   = "nimpkgs/r/rx_nim";
-  inputs."rx_nim".owner = "riinr";
-  inputs."rx_nim".ref   = "flake-pinning";
-  inputs."rx_nim".repo  = "flake-nimble";
+  inputs."rx_nim".owner = "nim-nix-pkgs";
+  inputs."rx_nim".ref   = "master";
+  inputs."rx_nim".repo  = "rx_nim";
   inputs."rx_nim".type  = "github";
   inputs."rx_nim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rx_nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

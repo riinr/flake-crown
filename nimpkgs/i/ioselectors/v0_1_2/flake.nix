@@ -13,18 +13,16 @@
   inputs.src-ioselectors-v0_1_2.repo  = "ioselectors";
   inputs.src-ioselectors-v0_1_2.type  = "github";
   
-  inputs."wepoll".dir   = "nimpkgs/w/wepoll";
-  inputs."wepoll".owner = "riinr";
-  inputs."wepoll".ref   = "flake-pinning";
-  inputs."wepoll".repo  = "flake-nimble";
+  inputs."wepoll".owner = "nim-nix-pkgs";
+  inputs."wepoll".ref   = "master";
+  inputs."wepoll".repo  = "wepoll";
   inputs."wepoll".type  = "github";
   inputs."wepoll".inputs.nixpkgs.follows = "nixpkgs";
   inputs."wepoll".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."timerwheel".dir   = "nimpkgs/t/timerwheel";
-  inputs."timerwheel".owner = "riinr";
-  inputs."timerwheel".ref   = "flake-pinning";
-  inputs."timerwheel".repo  = "flake-nimble";
+  inputs."timerwheel".owner = "nim-nix-pkgs";
+  inputs."timerwheel".ref   = "master";
+  inputs."timerwheel".repo  = "timerwheel";
   inputs."timerwheel".type  = "github";
   inputs."timerwheel".inputs.nixpkgs.follows = "nixpkgs";
   inputs."timerwheel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,18 +13,16 @@
   inputs.src-nimdata-master.repo  = "NimData";
   inputs.src-nimdata-master.type  = "github";
   
-  inputs."zip".dir   = "nimpkgs/z/zip";
-  inputs."zip".owner = "riinr";
-  inputs."zip".ref   = "flake-pinning";
-  inputs."zip".repo  = "flake-nimble";
+  inputs."zip".owner = "nim-nix-pkgs";
+  inputs."zip".ref   = "master";
+  inputs."zip".repo  = "zip";
   inputs."zip".type  = "github";
   inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."plotly".dir   = "nimpkgs/p/plotly";
-  inputs."plotly".owner = "riinr";
-  inputs."plotly".ref   = "flake-pinning";
-  inputs."plotly".repo  = "flake-nimble";
+  inputs."plotly".owner = "nim-nix-pkgs";
+  inputs."plotly".ref   = "master";
+  inputs."plotly".repo  = "plotly";
   inputs."plotly".type  = "github";
   inputs."plotly".inputs.nixpkgs.follows = "nixpkgs";
   inputs."plotly".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

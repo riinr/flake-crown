@@ -13,26 +13,23 @@
   inputs.src-openapi-3_0_1.repo  = "openapi";
   inputs.src-openapi-3_0_1.type  = "github";
   
-  inputs."npeg".dir   = "nimpkgs/n/npeg";
-  inputs."npeg".owner = "riinr";
-  inputs."npeg".ref   = "flake-pinning";
-  inputs."npeg".repo  = "flake-nimble";
+  inputs."npeg".owner = "nim-nix-pkgs";
+  inputs."npeg".ref   = "master";
+  inputs."npeg".repo  = "npeg";
   inputs."npeg".type  = "github";
   inputs."npeg".inputs.nixpkgs.follows = "nixpkgs";
   inputs."npeg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."foreach".dir   = "nimpkgs/f/foreach";
-  inputs."foreach".owner = "riinr";
-  inputs."foreach".ref   = "flake-pinning";
-  inputs."foreach".repo  = "flake-nimble";
+  inputs."foreach".owner = "nim-nix-pkgs";
+  inputs."foreach".ref   = "master";
+  inputs."foreach".repo  = "foreach";
   inputs."foreach".type  = "github";
   inputs."foreach".inputs.nixpkgs.follows = "nixpkgs";
   inputs."foreach".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/disruptek/rest.git".dir   = "nimpkgs/h/https://github.com/disruptek/rest.git";
-  inputs."https://github.com/disruptek/rest.git".owner = "riinr";
-  inputs."https://github.com/disruptek/rest.git".ref   = "flake-pinning";
-  inputs."https://github.com/disruptek/rest.git".repo  = "flake-nimble";
+  inputs."https://github.com/disruptek/rest.git".owner = "nim-nix-pkgs";
+  inputs."https://github.com/disruptek/rest.git".ref   = "master";
+  inputs."https://github.com/disruptek/rest.git".repo  = "https://github.com/disruptek/rest.git";
   inputs."https://github.com/disruptek/rest.git".type  = "github";
   inputs."https://github.com/disruptek/rest.git".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/disruptek/rest.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

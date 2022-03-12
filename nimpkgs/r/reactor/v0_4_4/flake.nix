@@ -13,10 +13,9 @@
   inputs.src-reactor-v0_4_4.repo  = "reactor.nim";
   inputs.src-reactor-v0_4_4.type  = "github";
   
-  inputs."collections".dir   = "nimpkgs/c/collections";
-  inputs."collections".owner = "riinr";
-  inputs."collections".ref   = "flake-pinning";
-  inputs."collections".repo  = "flake-nimble";
+  inputs."collections".owner = "nim-nix-pkgs";
+  inputs."collections".ref   = "master";
+  inputs."collections".repo  = "collections";
   inputs."collections".type  = "github";
   inputs."collections".inputs.nixpkgs.follows = "nixpkgs";
   inputs."collections".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

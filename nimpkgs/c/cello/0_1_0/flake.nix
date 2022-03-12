@@ -13,10 +13,9 @@
   inputs.src-cello-0_1_0.repo  = "cello";
   inputs.src-cello-0_1_0.type  = "github";
   
-  inputs."spills".dir   = "nimpkgs/s/spills";
-  inputs."spills".owner = "riinr";
-  inputs."spills".ref   = "flake-pinning";
-  inputs."spills".repo  = "flake-nimble";
+  inputs."spills".owner = "nim-nix-pkgs";
+  inputs."spills".ref   = "master";
+  inputs."spills".repo  = "spills";
   inputs."spills".type  = "github";
   inputs."spills".inputs.nixpkgs.follows = "nixpkgs";
   inputs."spills".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

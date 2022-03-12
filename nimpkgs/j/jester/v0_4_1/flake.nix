@@ -13,18 +13,16 @@
   inputs.src-jester-v0_4_1.repo  = "jester";
   inputs.src-jester-v0_4_1.type  = "github";
   
-  inputs."httpbeast".dir   = "nimpkgs/h/httpbeast";
-  inputs."httpbeast".owner = "riinr";
-  inputs."httpbeast".ref   = "flake-pinning";
-  inputs."httpbeast".repo  = "flake-nimble";
+  inputs."httpbeast".owner = "nim-nix-pkgs";
+  inputs."httpbeast".ref   = "master";
+  inputs."httpbeast".repo  = "httpbeast";
   inputs."httpbeast".type  = "github";
   inputs."httpbeast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."httpbeast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."asynctools".dir   = "nimpkgs/a/asynctools";
-  inputs."asynctools".owner = "riinr";
-  inputs."asynctools".ref   = "flake-pinning";
-  inputs."asynctools".repo  = "flake-nimble";
+  inputs."asynctools".owner = "nim-nix-pkgs";
+  inputs."asynctools".ref   = "master";
+  inputs."asynctools".repo  = "asynctools";
   inputs."asynctools".type  = "github";
   inputs."asynctools".inputs.nixpkgs.follows = "nixpkgs";
   inputs."asynctools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

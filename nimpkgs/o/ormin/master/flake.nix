@@ -13,10 +13,9 @@
   inputs.src-ormin-master.repo  = "ormin";
   inputs.src-ormin-master.type  = "github";
   
-  inputs."websocket".dir   = "nimpkgs/w/websocket";
-  inputs."websocket".owner = "riinr";
-  inputs."websocket".ref   = "flake-pinning";
-  inputs."websocket".repo  = "flake-nimble";
+  inputs."websocket".owner = "nim-nix-pkgs";
+  inputs."websocket".ref   = "master";
+  inputs."websocket".repo  = "websocket";
   inputs."websocket".type  = "github";
   inputs."websocket".inputs.nixpkgs.follows = "nixpkgs";
   inputs."websocket".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

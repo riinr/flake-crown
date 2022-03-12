@@ -13,10 +13,9 @@
   inputs.src-onedrive-master.repo  = "nim_onedrive";
   inputs.src-onedrive-master.type  = "github";
   
-  inputs."packedjson".dir   = "nimpkgs/p/packedjson";
-  inputs."packedjson".owner = "riinr";
-  inputs."packedjson".ref   = "flake-pinning";
-  inputs."packedjson".repo  = "flake-nimble";
+  inputs."packedjson".owner = "nim-nix-pkgs";
+  inputs."packedjson".ref   = "master";
+  inputs."packedjson".repo  = "packedjson";
   inputs."packedjson".type  = "github";
   inputs."packedjson".inputs.nixpkgs.follows = "nixpkgs";
   inputs."packedjson".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

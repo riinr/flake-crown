@@ -13,10 +13,9 @@
   inputs.src-unalix-v0_7.repo  = "Unalix-nim";
   inputs.src-unalix-v0_7.type  = "github";
   
-  inputs."htmlunescape".dir   = "nimpkgs/h/htmlunescape";
-  inputs."htmlunescape".owner = "riinr";
-  inputs."htmlunescape".ref   = "flake-pinning";
-  inputs."htmlunescape".repo  = "flake-nimble";
+  inputs."htmlunescape".owner = "nim-nix-pkgs";
+  inputs."htmlunescape".ref   = "master";
+  inputs."htmlunescape".repo  = "htmlunescape";
   inputs."htmlunescape".type  = "github";
   inputs."htmlunescape".inputs.nixpkgs.follows = "nixpkgs";
   inputs."htmlunescape".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,34 +13,30 @@
   inputs.src-hcparse-master.repo  = "hcparse";
   inputs.src-hcparse-master.type  = "github";
   
-  inputs."hnimast".dir   = "nimpkgs/h/hnimast";
-  inputs."hnimast".owner = "riinr";
-  inputs."hnimast".ref   = "flake-pinning";
-  inputs."hnimast".repo  = "flake-nimble";
+  inputs."hnimast".owner = "nim-nix-pkgs";
+  inputs."hnimast".ref   = "master";
+  inputs."hnimast".repo  = "hnimast";
   inputs."hnimast".type  = "github";
   inputs."hnimast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hnimast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."htsparse".dir   = "nimpkgs/h/htsparse";
-  inputs."htsparse".owner = "riinr";
-  inputs."htsparse".ref   = "flake-pinning";
-  inputs."htsparse".repo  = "flake-nimble";
+  inputs."htsparse".owner = "nim-nix-pkgs";
+  inputs."htsparse".ref   = "master";
+  inputs."htsparse".repo  = "htsparse";
   inputs."htsparse".type  = "github";
   inputs."htsparse".inputs.nixpkgs.follows = "nixpkgs";
   inputs."htsparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/haxscramper/frosty".dir   = "nimpkgs/h/https://github.com/haxscramper/frosty";
-  inputs."https://github.com/haxscramper/frosty".owner = "riinr";
-  inputs."https://github.com/haxscramper/frosty".ref   = "flake-pinning";
-  inputs."https://github.com/haxscramper/frosty".repo  = "flake-nimble";
+  inputs."https://github.com/haxscramper/frosty".owner = "nim-nix-pkgs";
+  inputs."https://github.com/haxscramper/frosty".ref   = "master";
+  inputs."https://github.com/haxscramper/frosty".repo  = "https://github.com/haxscramper/frosty";
   inputs."https://github.com/haxscramper/frosty".type  = "github";
   inputs."https://github.com/haxscramper/frosty".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/haxscramper/frosty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."hmisc".dir   = "nimpkgs/h/hmisc";
-  inputs."hmisc".owner = "riinr";
-  inputs."hmisc".ref   = "flake-pinning";
-  inputs."hmisc".repo  = "flake-nimble";
+  inputs."hmisc".owner = "nim-nix-pkgs";
+  inputs."hmisc".ref   = "master";
+  inputs."hmisc".repo  = "hmisc";
   inputs."hmisc".type  = "github";
   inputs."hmisc".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hmisc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

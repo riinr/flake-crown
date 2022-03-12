@@ -13,10 +13,9 @@
   inputs.src-dimscmd-1_3_1.repo  = "dimscordCommandHandler";
   inputs.src-dimscmd-1_3_1.type  = "github";
   
-  inputs."https://github.com/krisppurg/dimscord".dir   = "nimpkgs/h/https://github.com/krisppurg/dimscord";
-  inputs."https://github.com/krisppurg/dimscord".owner = "riinr";
-  inputs."https://github.com/krisppurg/dimscord".ref   = "flake-pinning";
-  inputs."https://github.com/krisppurg/dimscord".repo  = "flake-nimble";
+  inputs."https://github.com/krisppurg/dimscord".owner = "nim-nix-pkgs";
+  inputs."https://github.com/krisppurg/dimscord".ref   = "master";
+  inputs."https://github.com/krisppurg/dimscord".repo  = "https://github.com/krisppurg/dimscord";
   inputs."https://github.com/krisppurg/dimscord".type  = "github";
   inputs."https://github.com/krisppurg/dimscord".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/krisppurg/dimscord".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,18 +13,16 @@
   inputs.src-discord_rpc-v0_1_0.repo  = "discord_rpc";
   inputs.src-discord_rpc-v0_1_0.type  = "github";
   
-  inputs."uuids".dir   = "nimpkgs/u/uuids";
-  inputs."uuids".owner = "riinr";
-  inputs."uuids".ref   = "flake-pinning";
-  inputs."uuids".repo  = "flake-nimble";
+  inputs."uuids".owner = "nim-nix-pkgs";
+  inputs."uuids".ref   = "master";
+  inputs."uuids".repo  = "uuids";
   inputs."uuids".type  = "github";
   inputs."uuids".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uuids".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."packedjson".dir   = "nimpkgs/p/packedjson";
-  inputs."packedjson".owner = "riinr";
-  inputs."packedjson".ref   = "flake-pinning";
-  inputs."packedjson".repo  = "flake-nimble";
+  inputs."packedjson".owner = "nim-nix-pkgs";
+  inputs."packedjson".ref   = "master";
+  inputs."packedjson".repo  = "packedjson";
   inputs."packedjson".type  = "github";
   inputs."packedjson".inputs.nixpkgs.follows = "nixpkgs";
   inputs."packedjson".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

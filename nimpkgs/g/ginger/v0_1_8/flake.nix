@@ -13,26 +13,23 @@
   inputs.src-ginger-v0_1_8.repo  = "ginger";
   inputs.src-ginger-v0_1_8.type  = "github";
   
-  inputs."chroma".dir   = "nimpkgs/c/chroma";
-  inputs."chroma".owner = "riinr";
-  inputs."chroma".ref   = "flake-pinning";
-  inputs."chroma".repo  = "flake-nimble";
+  inputs."chroma".owner = "nim-nix-pkgs";
+  inputs."chroma".ref   = "master";
+  inputs."chroma".repo  = "chroma";
   inputs."chroma".type  = "github";
   inputs."chroma".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chroma".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/vindaar/seqmath".dir   = "nimpkgs/h/https://github.com/vindaar/seqmath";
-  inputs."https://github.com/vindaar/seqmath".owner = "riinr";
-  inputs."https://github.com/vindaar/seqmath".ref   = "flake-pinning";
-  inputs."https://github.com/vindaar/seqmath".repo  = "flake-nimble";
+  inputs."https://github.com/vindaar/seqmath".owner = "nim-nix-pkgs";
+  inputs."https://github.com/vindaar/seqmath".ref   = "master";
+  inputs."https://github.com/vindaar/seqmath".repo  = "https://github.com/vindaar/seqmath";
   inputs."https://github.com/vindaar/seqmath".type  = "github";
   inputs."https://github.com/vindaar/seqmath".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/vindaar/seqmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cairo".dir   = "nimpkgs/c/cairo";
-  inputs."cairo".owner = "riinr";
-  inputs."cairo".ref   = "flake-pinning";
-  inputs."cairo".repo  = "flake-nimble";
+  inputs."cairo".owner = "nim-nix-pkgs";
+  inputs."cairo".ref   = "master";
+  inputs."cairo".repo  = "cairo";
   inputs."cairo".type  = "github";
   inputs."cairo".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cairo".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

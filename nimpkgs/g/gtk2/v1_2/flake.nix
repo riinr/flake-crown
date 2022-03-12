@@ -13,10 +13,9 @@
   inputs.src-gtk2-v1_2.repo  = "gtk2";
   inputs.src-gtk2-v1_2.type  = "github";
   
-  inputs."cairo".dir   = "nimpkgs/c/cairo";
-  inputs."cairo".owner = "riinr";
-  inputs."cairo".ref   = "flake-pinning";
-  inputs."cairo".repo  = "flake-nimble";
+  inputs."cairo".owner = "nim-nix-pkgs";
+  inputs."cairo".ref   = "master";
+  inputs."cairo".repo  = "cairo";
   inputs."cairo".type  = "github";
   inputs."cairo".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cairo".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

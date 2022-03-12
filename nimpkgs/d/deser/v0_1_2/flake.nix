@@ -13,10 +13,9 @@
   inputs.src-deser-v0_1_2.repo  = "deser";
   inputs.src-deser-v0_1_2.type  = "github";
   
-  inputs."https://github.com/gabbhack/anycase-fork".dir   = "nimpkgs/h/https://github.com/gabbhack/anycase-fork";
-  inputs."https://github.com/gabbhack/anycase-fork".owner = "riinr";
-  inputs."https://github.com/gabbhack/anycase-fork".ref   = "flake-pinning";
-  inputs."https://github.com/gabbhack/anycase-fork".repo  = "flake-nimble";
+  inputs."https://github.com/gabbhack/anycase-fork".owner = "nim-nix-pkgs";
+  inputs."https://github.com/gabbhack/anycase-fork".ref   = "master";
+  inputs."https://github.com/gabbhack/anycase-fork".repo  = "https://github.com/gabbhack/anycase-fork";
   inputs."https://github.com/gabbhack/anycase-fork".type  = "github";
   inputs."https://github.com/gabbhack/anycase-fork".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/gabbhack/anycase-fork".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

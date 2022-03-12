@@ -13,18 +13,16 @@
   inputs.src-feta-0_0_4.repo  = "office-DSL-thesis";
   inputs.src-feta-0_0_4.type  = "github";
   
-  inputs."mime".dir   = "nimpkgs/m/mime";
-  inputs."mime".owner = "riinr";
-  inputs."mime".ref   = "flake-pinning";
-  inputs."mime".repo  = "flake-nimble";
+  inputs."mime".owner = "nim-nix-pkgs";
+  inputs."mime".ref   = "master";
+  inputs."mime".repo  = "mime";
   inputs."mime".type  = "github";
   inputs."mime".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mime".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."jester".dir   = "nimpkgs/j/jester";
-  inputs."jester".owner = "riinr";
-  inputs."jester".ref   = "flake-pinning";
-  inputs."jester".repo  = "flake-nimble";
+  inputs."jester".owner = "nim-nix-pkgs";
+  inputs."jester".ref   = "master";
+  inputs."jester".repo  = "jester";
   inputs."jester".type  = "github";
   inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

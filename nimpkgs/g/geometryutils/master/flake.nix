@@ -13,18 +13,16 @@
   inputs.src-geometryutils-master.repo  = "geometryutils";
   inputs.src-geometryutils-master.type  = "github";
   
-  inputs."sdl2".dir   = "nimpkgs/s/sdl2";
-  inputs."sdl2".owner = "riinr";
-  inputs."sdl2".ref   = "flake-pinning";
-  inputs."sdl2".repo  = "flake-nimble";
+  inputs."sdl2".owner = "nim-nix-pkgs";
+  inputs."sdl2".ref   = "master";
+  inputs."sdl2".repo  = "sdl2";
   inputs."sdl2".type  = "github";
   inputs."sdl2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sdl2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."opengl".dir   = "nimpkgs/o/opengl";
-  inputs."opengl".owner = "riinr";
-  inputs."opengl".ref   = "flake-pinning";
-  inputs."opengl".repo  = "flake-nimble";
+  inputs."opengl".owner = "nim-nix-pkgs";
+  inputs."opengl".ref   = "master";
+  inputs."opengl".repo  = "opengl";
   inputs."opengl".type  = "github";
   inputs."opengl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."opengl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

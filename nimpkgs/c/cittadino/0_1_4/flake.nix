@@ -13,10 +13,9 @@
   inputs.src-cittadino-0_1_4.repo  = "cittadino";
   inputs.src-cittadino-0_1_4.type  = "github";
   
-  inputs."https://github.com/subsetpark/nim-stomp.git".dir   = "nimpkgs/h/https://github.com/subsetpark/nim-stomp.git";
-  inputs."https://github.com/subsetpark/nim-stomp.git".owner = "riinr";
-  inputs."https://github.com/subsetpark/nim-stomp.git".ref   = "flake-pinning";
-  inputs."https://github.com/subsetpark/nim-stomp.git".repo  = "flake-nimble";
+  inputs."https://github.com/subsetpark/nim-stomp.git".owner = "nim-nix-pkgs";
+  inputs."https://github.com/subsetpark/nim-stomp.git".ref   = "master";
+  inputs."https://github.com/subsetpark/nim-stomp.git".repo  = "https://github.com/subsetpark/nim-stomp.git";
   inputs."https://github.com/subsetpark/nim-stomp.git".type  = "github";
   inputs."https://github.com/subsetpark/nim-stomp.git".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/subsetpark/nim-stomp.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

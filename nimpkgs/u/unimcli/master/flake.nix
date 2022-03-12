@@ -13,18 +13,16 @@
   inputs.src-unimcli-master.repo  = "unimcli";
   inputs.src-unimcli-master.type  = "github";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimble".dir   = "nimpkgs/n/nimble";
-  inputs."nimble".owner = "riinr";
-  inputs."nimble".ref   = "flake-pinning";
-  inputs."nimble".repo  = "flake-nimble";
+  inputs."nimble".owner = "nim-nix-pkgs";
+  inputs."nimble".ref   = "master";
+  inputs."nimble".repo  = "nimble";
   inputs."nimble".type  = "github";
   inputs."nimble".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimble".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

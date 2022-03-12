@@ -13,10 +13,9 @@
   inputs.src-genieos-master.repo  = "genieos";
   inputs.src-genieos-master.type  = "github";
   
-  inputs."x11".dir   = "nimpkgs/x/x11";
-  inputs."x11".owner = "riinr";
-  inputs."x11".ref   = "flake-pinning";
-  inputs."x11".repo  = "flake-nimble";
+  inputs."x11".owner = "nim-nix-pkgs";
+  inputs."x11".ref   = "master";
+  inputs."x11".repo  = "x11";
   inputs."x11".type  = "github";
   inputs."x11".inputs.nixpkgs.follows = "nixpkgs";
   inputs."x11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,10 +13,9 @@
   inputs.src-cirru_edn-v0_3_4.repo  = "cirru-edn.nim";
   inputs.src-cirru_edn-v0_3_4.type  = "github";
   
-  inputs."cirru_parser".dir   = "nimpkgs/c/cirru_parser";
-  inputs."cirru_parser".owner = "riinr";
-  inputs."cirru_parser".ref   = "flake-pinning";
-  inputs."cirru_parser".repo  = "flake-nimble";
+  inputs."cirru_parser".owner = "nim-nix-pkgs";
+  inputs."cirru_parser".ref   = "master";
+  inputs."cirru_parser".repo  = "cirru_parser";
   inputs."cirru_parser".type  = "github";
   inputs."cirru_parser".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cirru_parser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,10 +13,9 @@
   inputs.src-wZeeGrid-master.repo  = "wZeeGrid";
   inputs.src-wZeeGrid-master.type  = "github";
   
-  inputs."wnim".dir   = "nimpkgs/w/wnim";
-  inputs."wnim".owner = "riinr";
-  inputs."wnim".ref   = "flake-pinning";
-  inputs."wnim".repo  = "flake-nimble";
+  inputs."wnim".owner = "nim-nix-pkgs";
+  inputs."wnim".ref   = "master";
+  inputs."wnim".repo  = "wnim";
   inputs."wnim".type  = "github";
   inputs."wnim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."wnim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

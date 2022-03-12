@@ -13,34 +13,30 @@
   inputs.src-ggplotnim-v0_2_3.repo  = "ggplotnim";
   inputs.src-ggplotnim-v0_2_3.type  = "github";
   
-  inputs."https://github.com/vindaar/seqmath".dir   = "nimpkgs/h/https://github.com/vindaar/seqmath";
-  inputs."https://github.com/vindaar/seqmath".owner = "riinr";
-  inputs."https://github.com/vindaar/seqmath".ref   = "flake-pinning";
-  inputs."https://github.com/vindaar/seqmath".repo  = "flake-nimble";
+  inputs."https://github.com/vindaar/seqmath".owner = "nim-nix-pkgs";
+  inputs."https://github.com/vindaar/seqmath".ref   = "master";
+  inputs."https://github.com/vindaar/seqmath".repo  = "https://github.com/vindaar/seqmath";
   inputs."https://github.com/vindaar/seqmath".type  = "github";
   inputs."https://github.com/vindaar/seqmath".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/vindaar/seqmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."ginger".dir   = "nimpkgs/g/ginger";
-  inputs."ginger".owner = "riinr";
-  inputs."ginger".ref   = "flake-pinning";
-  inputs."ginger".repo  = "flake-nimble";
+  inputs."ginger".owner = "nim-nix-pkgs";
+  inputs."ginger".ref   = "master";
+  inputs."ginger".repo  = "ginger";
   inputs."ginger".type  = "github";
   inputs."ginger".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ginger".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."persvector".dir   = "nimpkgs/p/persvector";
-  inputs."persvector".owner = "riinr";
-  inputs."persvector".ref   = "flake-pinning";
-  inputs."persvector".repo  = "flake-nimble";
+  inputs."persvector".owner = "nim-nix-pkgs";
+  inputs."persvector".ref   = "master";
+  inputs."persvector".repo  = "persvector";
   inputs."persvector".type  = "github";
   inputs."persvector".inputs.nixpkgs.follows = "nixpkgs";
   inputs."persvector".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."shell".dir   = "nimpkgs/s/shell";
-  inputs."shell".owner = "riinr";
-  inputs."shell".ref   = "flake-pinning";
-  inputs."shell".repo  = "flake-nimble";
+  inputs."shell".owner = "nim-nix-pkgs";
+  inputs."shell".ref   = "master";
+  inputs."shell".repo  = "shell";
   inputs."shell".type  = "github";
   inputs."shell".inputs.nixpkgs.follows = "nixpkgs";
   inputs."shell".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,18 +13,16 @@
   inputs.src-cirru_edn-v0_4_0.repo  = "cirru-edn.nim";
   inputs.src-cirru_edn-v0_4_0.type  = "github";
   
-  inputs."cirru_parser".dir   = "nimpkgs/c/cirru_parser";
-  inputs."cirru_parser".owner = "riinr";
-  inputs."cirru_parser".ref   = "flake-pinning";
-  inputs."cirru_parser".repo  = "flake-nimble";
+  inputs."cirru_parser".owner = "nim-nix-pkgs";
+  inputs."cirru_parser".ref   = "master";
+  inputs."cirru_parser".repo  = "cirru_parser";
   inputs."cirru_parser".type  = "github";
   inputs."cirru_parser".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cirru_parser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/cirru/writer.nim".dir   = "nimpkgs/h/https://github.com/cirru/writer.nim";
-  inputs."https://github.com/cirru/writer.nim".owner = "riinr";
-  inputs."https://github.com/cirru/writer.nim".ref   = "flake-pinning";
-  inputs."https://github.com/cirru/writer.nim".repo  = "flake-nimble";
+  inputs."https://github.com/cirru/writer.nim".owner = "nim-nix-pkgs";
+  inputs."https://github.com/cirru/writer.nim".ref   = "master";
+  inputs."https://github.com/cirru/writer.nim".repo  = "https://github.com/cirru/writer.nim";
   inputs."https://github.com/cirru/writer.nim".type  = "github";
   inputs."https://github.com/cirru/writer.nim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/cirru/writer.nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

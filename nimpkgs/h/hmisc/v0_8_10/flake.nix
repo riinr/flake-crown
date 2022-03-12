@@ -13,18 +13,16 @@
   inputs.src-hmisc-v0_8_10.repo  = "hmisc";
   inputs.src-hmisc-v0_8_10.type  = "github";
   
-  inputs."sorta".dir   = "nimpkgs/s/sorta";
-  inputs."sorta".owner = "riinr";
-  inputs."sorta".ref   = "flake-pinning";
-  inputs."sorta".repo  = "flake-nimble";
+  inputs."sorta".owner = "nim-nix-pkgs";
+  inputs."sorta".ref   = "master";
+  inputs."sorta".repo  = "sorta";
   inputs."sorta".type  = "github";
   inputs."sorta".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sorta".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

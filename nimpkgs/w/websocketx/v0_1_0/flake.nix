@@ -13,18 +13,16 @@
   inputs.src-websocketx-v0_1_0.repo  = "websocketx";
   inputs.src-websocketx-v0_1_0.type  = "github";
   
-  inputs."ws".dir   = "nimpkgs/w/ws";
-  inputs."ws".owner = "riinr";
-  inputs."ws".ref   = "flake-pinning";
-  inputs."ws".repo  = "flake-nimble";
+  inputs."ws".owner = "nim-nix-pkgs";
+  inputs."ws".ref   = "master";
+  inputs."ws".repo  = "ws";
   inputs."ws".type  = "github";
   inputs."ws".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ws".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."httpx".dir   = "nimpkgs/h/httpx";
-  inputs."httpx".owner = "riinr";
-  inputs."httpx".ref   = "flake-pinning";
-  inputs."httpx".repo  = "flake-nimble";
+  inputs."httpx".owner = "nim-nix-pkgs";
+  inputs."httpx".ref   = "master";
+  inputs."httpx".repo  = "httpx";
   inputs."httpx".type  = "github";
   inputs."httpx".inputs.nixpkgs.follows = "nixpkgs";
   inputs."httpx".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

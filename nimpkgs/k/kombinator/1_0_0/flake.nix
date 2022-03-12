@@ -13,26 +13,23 @@
   inputs.src-kombinator-1_0_0.repo  = "kombinator";
   inputs.src-kombinator-1_0_0.type  = "gitlab";
   
-  inputs."parsetoml".dir   = "nimpkgs/p/parsetoml";
-  inputs."parsetoml".owner = "riinr";
-  inputs."parsetoml".ref   = "flake-pinning";
-  inputs."parsetoml".repo  = "flake-nimble";
+  inputs."parsetoml".owner = "nim-nix-pkgs";
+  inputs."parsetoml".ref   = "master";
+  inputs."parsetoml".repo  = "parsetoml";
   inputs."parsetoml".type  = "github";
   inputs."parsetoml".inputs.nixpkgs.follows = "nixpkgs";
   inputs."parsetoml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."suru".dir   = "nimpkgs/s/suru";
-  inputs."suru".owner = "riinr";
-  inputs."suru".ref   = "flake-pinning";
-  inputs."suru".repo  = "flake-nimble";
+  inputs."suru".owner = "nim-nix-pkgs";
+  inputs."suru".ref   = "master";
+  inputs."suru".repo  = "suru";
   inputs."suru".type  = "github";
   inputs."suru".inputs.nixpkgs.follows = "nixpkgs";
   inputs."suru".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

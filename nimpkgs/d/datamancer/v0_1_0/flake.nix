@@ -13,18 +13,16 @@
   inputs.src-datamancer-v0_1_0.repo  = "datamancer";
   inputs.src-datamancer-v0_1_0.type  = "github";
   
-  inputs."https://github.com/vindaar/seqmath".dir   = "nimpkgs/h/https://github.com/vindaar/seqmath";
-  inputs."https://github.com/vindaar/seqmath".owner = "riinr";
-  inputs."https://github.com/vindaar/seqmath".ref   = "flake-pinning";
-  inputs."https://github.com/vindaar/seqmath".repo  = "flake-nimble";
+  inputs."https://github.com/vindaar/seqmath".owner = "nim-nix-pkgs";
+  inputs."https://github.com/vindaar/seqmath".ref   = "master";
+  inputs."https://github.com/vindaar/seqmath".repo  = "https://github.com/vindaar/seqmath";
   inputs."https://github.com/vindaar/seqmath".type  = "github";
   inputs."https://github.com/vindaar/seqmath".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/vindaar/seqmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."arraymancer".dir   = "nimpkgs/a/arraymancer";
-  inputs."arraymancer".owner = "riinr";
-  inputs."arraymancer".ref   = "flake-pinning";
-  inputs."arraymancer".repo  = "flake-nimble";
+  inputs."arraymancer".owner = "nim-nix-pkgs";
+  inputs."arraymancer".ref   = "master";
+  inputs."arraymancer".repo  = "arraymancer";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

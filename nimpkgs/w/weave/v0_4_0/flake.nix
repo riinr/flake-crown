@@ -13,10 +13,9 @@
   inputs.src-weave-v0_4_0.repo  = "weave";
   inputs.src-weave-v0_4_0.type  = "github";
   
-  inputs."synthesis".dir   = "nimpkgs/s/synthesis";
-  inputs."synthesis".owner = "riinr";
-  inputs."synthesis".ref   = "flake-pinning";
-  inputs."synthesis".repo  = "flake-nimble";
+  inputs."synthesis".owner = "nim-nix-pkgs";
+  inputs."synthesis".ref   = "master";
+  inputs."synthesis".repo  = "synthesis";
   inputs."synthesis".type  = "github";
   inputs."synthesis".inputs.nixpkgs.follows = "nixpkgs";
   inputs."synthesis".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

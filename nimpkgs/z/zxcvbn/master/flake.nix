@@ -13,10 +13,9 @@
   inputs.src-zxcvbn-master.repo  = "nim-zxcvbn";
   inputs.src-zxcvbn-master.type  = "github";
   
-  inputs."testutils".dir   = "nimpkgs/t/testutils";
-  inputs."testutils".owner = "riinr";
-  inputs."testutils".ref   = "flake-pinning";
-  inputs."testutils".repo  = "flake-nimble";
+  inputs."testutils".owner = "nim-nix-pkgs";
+  inputs."testutils".ref   = "master";
+  inputs."testutils".repo  = "testutils";
   inputs."testutils".type  = "github";
   inputs."testutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."testutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

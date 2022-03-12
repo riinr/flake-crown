@@ -13,18 +13,16 @@
   inputs.src-fftw3-v0_4_2.repo  = "nimfftw3";
   inputs.src-fftw3-v0_4_2.type  = "github";
   
-  inputs."arraymancer".dir   = "nimpkgs/a/arraymancer";
-  inputs."arraymancer".owner = "riinr";
-  inputs."arraymancer".ref   = "flake-pinning";
-  inputs."arraymancer".repo  = "flake-nimble";
+  inputs."arraymancer".owner = "nim-nix-pkgs";
+  inputs."arraymancer".ref   = "master";
+  inputs."arraymancer".repo  = "arraymancer";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."weave".dir   = "nimpkgs/w/weave";
-  inputs."weave".owner = "riinr";
-  inputs."weave".ref   = "flake-pinning";
-  inputs."weave".repo  = "flake-nimble";
+  inputs."weave".owner = "nim-nix-pkgs";
+  inputs."weave".ref   = "master";
+  inputs."weave".repo  = "weave";
   inputs."weave".type  = "github";
   inputs."weave".inputs.nixpkgs.follows = "nixpkgs";
   inputs."weave".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

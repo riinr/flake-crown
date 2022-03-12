@@ -13,10 +13,9 @@
   inputs.src-flickr_image_bot-master.repo  = "flickr-image-bot";
   inputs.src-flickr_image_bot-master.type  = "github";
   
-  inputs."https://github.com/snus-kin/twitter.nim".dir   = "nimpkgs/h/https://github.com/snus-kin/twitter.nim";
-  inputs."https://github.com/snus-kin/twitter.nim".owner = "riinr";
-  inputs."https://github.com/snus-kin/twitter.nim".ref   = "flake-pinning";
-  inputs."https://github.com/snus-kin/twitter.nim".repo  = "flake-nimble";
+  inputs."https://github.com/snus-kin/twitter.nim".owner = "nim-nix-pkgs";
+  inputs."https://github.com/snus-kin/twitter.nim".ref   = "master";
+  inputs."https://github.com/snus-kin/twitter.nim".repo  = "https://github.com/snus-kin/twitter.nim";
   inputs."https://github.com/snus-kin/twitter.nim".type  = "github";
   inputs."https://github.com/snus-kin/twitter.nim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/snus-kin/twitter.nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

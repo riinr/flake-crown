@@ -13,10 +13,9 @@
   inputs.src-binarylang-v0_5_0.repo  = "binarylang";
   inputs.src-binarylang-v0_5_0.type  = "github";
   
-  inputs."bitstreams".dir   = "nimpkgs/b/bitstreams";
-  inputs."bitstreams".owner = "riinr";
-  inputs."bitstreams".ref   = "flake-pinning";
-  inputs."bitstreams".repo  = "flake-nimble";
+  inputs."bitstreams".owner = "nim-nix-pkgs";
+  inputs."bitstreams".ref   = "master";
+  inputs."bitstreams".repo  = "bitstreams";
   inputs."bitstreams".type  = "github";
   inputs."bitstreams".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bitstreams".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

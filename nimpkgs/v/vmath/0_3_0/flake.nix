@@ -13,10 +13,9 @@
   inputs.src-vmath-0_3_0.repo  = "vmath";
   inputs.src-vmath-0_3_0.type  = "github";
   
-  inputs."mddoc".dir   = "nimpkgs/m/mddoc";
-  inputs."mddoc".owner = "riinr";
-  inputs."mddoc".ref   = "flake-pinning";
-  inputs."mddoc".repo  = "flake-nimble";
+  inputs."mddoc".owner = "nim-nix-pkgs";
+  inputs."mddoc".ref   = "master";
+  inputs."mddoc".repo  = "mddoc";
   inputs."mddoc".type  = "github";
   inputs."mddoc".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mddoc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

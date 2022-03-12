@@ -13,18 +13,16 @@
   inputs.src-isocodes-0_3_1.repo  = "isocodes";
   inputs.src-isocodes-0_3_1.type  = "github";
   
-  inputs."jsony".dir   = "nimpkgs/j/jsony";
-  inputs."jsony".owner = "riinr";
-  inputs."jsony".ref   = "flake-pinning";
-  inputs."jsony".repo  = "flake-nimble";
+  inputs."jsony".owner = "nim-nix-pkgs";
+  inputs."jsony".ref   = "master";
+  inputs."jsony".repo  = "jsony";
   inputs."jsony".type  = "github";
   inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/disruptek/bump".dir   = "nimpkgs/h/https://github.com/disruptek/bump";
-  inputs."https://github.com/disruptek/bump".owner = "riinr";
-  inputs."https://github.com/disruptek/bump".ref   = "flake-pinning";
-  inputs."https://github.com/disruptek/bump".repo  = "flake-nimble";
+  inputs."https://github.com/disruptek/bump".owner = "nim-nix-pkgs";
+  inputs."https://github.com/disruptek/bump".ref   = "master";
+  inputs."https://github.com/disruptek/bump".repo  = "https://github.com/disruptek/bump";
   inputs."https://github.com/disruptek/bump".type  = "github";
   inputs."https://github.com/disruptek/bump".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/disruptek/bump".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

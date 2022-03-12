@@ -13,26 +13,23 @@
   inputs.src-impulse_engine-master.repo  = "Nim-Impulse-Engine";
   inputs.src-impulse_engine-master.type  = "github";
   
-  inputs."opengl".dir   = "nimpkgs/o/opengl";
-  inputs."opengl".owner = "riinr";
-  inputs."opengl".ref   = "flake-pinning";
-  inputs."opengl".repo  = "flake-nimble";
+  inputs."opengl".owner = "nim-nix-pkgs";
+  inputs."opengl".ref   = "master";
+  inputs."opengl".repo  = "opengl";
   inputs."opengl".type  = "github";
   inputs."opengl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."opengl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."x11".dir   = "nimpkgs/x/x11";
-  inputs."x11".owner = "riinr";
-  inputs."x11".ref   = "flake-pinning";
-  inputs."x11".repo  = "flake-nimble";
+  inputs."x11".owner = "nim-nix-pkgs";
+  inputs."x11".ref   = "master";
+  inputs."x11".repo  = "x11";
   inputs."x11".type  = "github";
   inputs."x11".inputs.nixpkgs.follows = "nixpkgs";
   inputs."x11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nim-glfw".dir   = "nimpkgs/n/nim-glfw";
-  inputs."nim-glfw".owner = "riinr";
-  inputs."nim-glfw".ref   = "flake-pinning";
-  inputs."nim-glfw".repo  = "flake-nimble";
+  inputs."nim-glfw".owner = "nim-nix-pkgs";
+  inputs."nim-glfw".ref   = "master";
+  inputs."nim-glfw".repo  = "nim-glfw";
   inputs."nim-glfw".type  = "github";
   inputs."nim-glfw".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nim-glfw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

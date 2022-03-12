@@ -13,26 +13,23 @@
   inputs.src-whip-0_2.repo  = "whip";
   inputs.src-whip-0_2.type  = "github";
   
-  inputs."packedjson".dir   = "nimpkgs/p/packedjson";
-  inputs."packedjson".owner = "riinr";
-  inputs."packedjson".ref   = "flake-pinning";
-  inputs."packedjson".repo  = "flake-nimble";
+  inputs."packedjson".owner = "nim-nix-pkgs";
+  inputs."packedjson".ref   = "master";
+  inputs."packedjson".repo  = "packedjson";
   inputs."packedjson".type  = "github";
   inputs."packedjson".inputs.nixpkgs.follows = "nixpkgs";
   inputs."packedjson".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nest".dir   = "nimpkgs/n/nest";
-  inputs."nest".owner = "riinr";
-  inputs."nest".ref   = "flake-pinning";
-  inputs."nest".repo  = "flake-nimble";
+  inputs."nest".owner = "nim-nix-pkgs";
+  inputs."nest".ref   = "master";
+  inputs."nest".repo  = "nest";
   inputs."nest".type  = "github";
   inputs."nest".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nest".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."httpbeast".dir   = "nimpkgs/h/httpbeast";
-  inputs."httpbeast".owner = "riinr";
-  inputs."httpbeast".ref   = "flake-pinning";
-  inputs."httpbeast".repo  = "flake-nimble";
+  inputs."httpbeast".owner = "nim-nix-pkgs";
+  inputs."httpbeast".ref   = "master";
+  inputs."httpbeast".repo  = "httpbeast";
   inputs."httpbeast".type  = "github";
   inputs."httpbeast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."httpbeast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,26 +13,23 @@
   inputs.src-zfplugs-v0_1_8.repo  = "nim.zfplugs";
   inputs.src-zfplugs-v0_1_8.type  = "github";
   
-  inputs."zfdbms".dir   = "nimpkgs/z/zfdbms";
-  inputs."zfdbms".owner = "riinr";
-  inputs."zfdbms".ref   = "flake-pinning";
-  inputs."zfdbms".repo  = "flake-nimble";
+  inputs."zfdbms".owner = "nim-nix-pkgs";
+  inputs."zfdbms".ref   = "master";
+  inputs."zfdbms".repo  = "zfdbms";
   inputs."zfdbms".type  = "github";
   inputs."zfdbms".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfdbms".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."zfcore".dir   = "nimpkgs/z/zfcore";
-  inputs."zfcore".owner = "riinr";
-  inputs."zfcore".ref   = "flake-pinning";
-  inputs."zfcore".repo  = "flake-nimble";
+  inputs."zfcore".owner = "nim-nix-pkgs";
+  inputs."zfcore".ref   = "master";
+  inputs."zfcore".repo  = "zfcore";
   inputs."zfcore".type  = "github";
   inputs."zfcore".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfcore".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."moustachu".dir   = "nimpkgs/m/moustachu";
-  inputs."moustachu".owner = "riinr";
-  inputs."moustachu".ref   = "flake-pinning";
-  inputs."moustachu".repo  = "flake-nimble";
+  inputs."moustachu".owner = "nim-nix-pkgs";
+  inputs."moustachu".ref   = "master";
+  inputs."moustachu".repo  = "moustachu";
   inputs."moustachu".type  = "github";
   inputs."moustachu".inputs.nixpkgs.follows = "nixpkgs";
   inputs."moustachu".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

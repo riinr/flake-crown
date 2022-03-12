@@ -13,34 +13,30 @@
   inputs.src-eth_trie-master.repo  = "nim-eth-trie";
   inputs.src-eth_trie-master.type  = "github";
   
-  inputs."rlp".dir   = "nimpkgs/r/rlp";
-  inputs."rlp".owner = "riinr";
-  inputs."rlp".ref   = "flake-pinning";
-  inputs."rlp".repo  = "flake-nimble";
+  inputs."rlp".owner = "nim-nix-pkgs";
+  inputs."rlp".ref   = "master";
+  inputs."rlp".repo  = "rlp";
   inputs."rlp".type  = "github";
   inputs."rlp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rlp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimcrypto".dir   = "nimpkgs/n/nimcrypto";
-  inputs."nimcrypto".owner = "riinr";
-  inputs."nimcrypto".ref   = "flake-pinning";
-  inputs."nimcrypto".repo  = "flake-nimble";
+  inputs."nimcrypto".owner = "nim-nix-pkgs";
+  inputs."nimcrypto".ref   = "master";
+  inputs."nimcrypto".repo  = "nimcrypto";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."ranges".dir   = "nimpkgs/r/ranges";
-  inputs."ranges".owner = "riinr";
-  inputs."ranges".ref   = "flake-pinning";
-  inputs."ranges".repo  = "flake-nimble";
+  inputs."ranges".owner = "nim-nix-pkgs";
+  inputs."ranges".ref   = "master";
+  inputs."ranges".repo  = "ranges";
   inputs."ranges".type  = "github";
   inputs."ranges".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ranges".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."rocksdb".dir   = "nimpkgs/r/rocksdb";
-  inputs."rocksdb".owner = "riinr";
-  inputs."rocksdb".ref   = "flake-pinning";
-  inputs."rocksdb".repo  = "flake-nimble";
+  inputs."rocksdb".owner = "nim-nix-pkgs";
+  inputs."rocksdb".ref   = "master";
+  inputs."rocksdb".repo  = "rocksdb";
   inputs."rocksdb".type  = "github";
   inputs."rocksdb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rocksdb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

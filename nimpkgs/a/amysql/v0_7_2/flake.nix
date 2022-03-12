@@ -13,42 +13,37 @@
   inputs.src-amysql-v0_7_2.repo  = "amysql";
   inputs.src-amysql-v0_7_2.type  = "github";
   
-  inputs."nimcrypto".dir   = "nimpkgs/n/nimcrypto";
-  inputs."nimcrypto".owner = "riinr";
-  inputs."nimcrypto".ref   = "flake-pinning";
-  inputs."nimcrypto".repo  = "flake-nimble";
+  inputs."nimcrypto".owner = "nim-nix-pkgs";
+  inputs."nimcrypto".ref   = "master";
+  inputs."nimcrypto".repo  = "nimcrypto";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."regex".dir   = "nimpkgs/r/regex";
-  inputs."regex".owner = "riinr";
-  inputs."regex".ref   = "flake-pinning";
-  inputs."regex".repo  = "flake-nimble";
+  inputs."regex".owner = "nim-nix-pkgs";
+  inputs."regex".ref   = "master";
+  inputs."regex".repo  = "regex";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/bung87/zstd".dir   = "nimpkgs/h/https://github.com/bung87/zstd";
-  inputs."https://github.com/bung87/zstd".owner = "riinr";
-  inputs."https://github.com/bung87/zstd".ref   = "flake-pinning";
-  inputs."https://github.com/bung87/zstd".repo  = "flake-nimble";
+  inputs."https://github.com/bung87/zstd".owner = "nim-nix-pkgs";
+  inputs."https://github.com/bung87/zstd".ref   = "master";
+  inputs."https://github.com/bung87/zstd".repo  = "https://github.com/bung87/zstd";
   inputs."https://github.com/bung87/zstd".type  = "github";
   inputs."https://github.com/bung87/zstd".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/bung87/zstd".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/treeform/urlly".dir   = "nimpkgs/h/https://github.com/treeform/urlly";
-  inputs."https://github.com/treeform/urlly".owner = "riinr";
-  inputs."https://github.com/treeform/urlly".ref   = "flake-pinning";
-  inputs."https://github.com/treeform/urlly".repo  = "flake-nimble";
+  inputs."https://github.com/treeform/urlly".owner = "nim-nix-pkgs";
+  inputs."https://github.com/treeform/urlly".ref   = "master";
+  inputs."https://github.com/treeform/urlly".repo  = "https://github.com/treeform/urlly";
   inputs."https://github.com/treeform/urlly".type  = "github";
   inputs."https://github.com/treeform/urlly".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/treeform/urlly".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."chronos".dir   = "nimpkgs/c/chronos";
-  inputs."chronos".owner = "riinr";
-  inputs."chronos".ref   = "flake-pinning";
-  inputs."chronos".repo  = "flake-nimble";
+  inputs."chronos".owner = "nim-nix-pkgs";
+  inputs."chronos".ref   = "master";
+  inputs."chronos".repo  = "chronos";
   inputs."chronos".type  = "github";
   inputs."chronos".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,10 +13,9 @@
   inputs.src-fugitive-v0_1_1.repo  = "fugitive";
   inputs.src-fugitive-v0_1_1.type  = "github";
   
-  inputs."colorize".dir   = "nimpkgs/c/colorize";
-  inputs."colorize".owner = "riinr";
-  inputs."colorize".ref   = "flake-pinning";
-  inputs."colorize".repo  = "flake-nimble";
+  inputs."colorize".owner = "nim-nix-pkgs";
+  inputs."colorize".ref   = "master";
+  inputs."colorize".repo  = "colorize";
   inputs."colorize".type  = "github";
   inputs."colorize".inputs.nixpkgs.follows = "nixpkgs";
   inputs."colorize".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

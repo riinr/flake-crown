@@ -13,34 +13,30 @@
   inputs.src-hmisc-v0_13_0.repo  = "hmisc";
   inputs.src-hmisc-v0_13_0.type  = "github";
   
-  inputs."https://github.com/nim-lang/fusion.git".dir   = "nimpkgs/h/https://github.com/nim-lang/fusion.git";
-  inputs."https://github.com/nim-lang/fusion.git".owner = "riinr";
-  inputs."https://github.com/nim-lang/fusion.git".ref   = "flake-pinning";
-  inputs."https://github.com/nim-lang/fusion.git".repo  = "flake-nimble";
+  inputs."https://github.com/nim-lang/fusion.git".owner = "nim-nix-pkgs";
+  inputs."https://github.com/nim-lang/fusion.git".ref   = "master";
+  inputs."https://github.com/nim-lang/fusion.git".repo  = "https://github.com/nim-lang/fusion.git";
   inputs."https://github.com/nim-lang/fusion.git".type  = "github";
   inputs."https://github.com/nim-lang/fusion.git".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/nim-lang/fusion.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."benchy".dir   = "nimpkgs/b/benchy";
-  inputs."benchy".owner = "riinr";
-  inputs."benchy".ref   = "flake-pinning";
-  inputs."benchy".repo  = "flake-nimble";
+  inputs."benchy".owner = "nim-nix-pkgs";
+  inputs."benchy".ref   = "master";
+  inputs."benchy".repo  = "benchy";
   inputs."benchy".type  = "github";
   inputs."benchy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."benchy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."jsony".dir   = "nimpkgs/j/jsony";
-  inputs."jsony".owner = "riinr";
-  inputs."jsony".ref   = "flake-pinning";
-  inputs."jsony".repo  = "flake-nimble";
+  inputs."jsony".owner = "nim-nix-pkgs";
+  inputs."jsony".ref   = "master";
+  inputs."jsony".repo  = "jsony";
   inputs."jsony".type  = "github";
   inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."unicodedb".dir   = "nimpkgs/u/unicodedb";
-  inputs."unicodedb".owner = "riinr";
-  inputs."unicodedb".ref   = "flake-pinning";
-  inputs."unicodedb".repo  = "flake-nimble";
+  inputs."unicodedb".owner = "nim-nix-pkgs";
+  inputs."unicodedb".ref   = "master";
+  inputs."unicodedb".repo  = "unicodedb";
   inputs."unicodedb".type  = "github";
   inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

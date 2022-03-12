@@ -13,18 +13,16 @@
   inputs.src-OTP-master.repo  = "otp.nim";
   inputs.src-OTP-master.type  = "github";
   
-  inputs."hmac".dir   = "nimpkgs/h/hmac";
-  inputs."hmac".owner = "riinr";
-  inputs."hmac".ref   = "flake-pinning";
-  inputs."hmac".repo  = "flake-nimble";
+  inputs."hmac".owner = "nim-nix-pkgs";
+  inputs."hmac".ref   = "master";
+  inputs."hmac".repo  = "hmac";
   inputs."hmac".type  = "github";
   inputs."hmac".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hmac".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."base32".dir   = "nimpkgs/b/base32";
-  inputs."base32".owner = "riinr";
-  inputs."base32".ref   = "flake-pinning";
-  inputs."base32".repo  = "flake-nimble";
+  inputs."base32".owner = "nim-nix-pkgs";
+  inputs."base32".ref   = "master";
+  inputs."base32".repo  = "base32";
   inputs."base32".type  = "github";
   inputs."base32".inputs.nixpkgs.follows = "nixpkgs";
   inputs."base32".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

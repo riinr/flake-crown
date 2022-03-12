@@ -13,10 +13,9 @@
   inputs.src-jesterjson-v1_0_1.repo  = "jesterjson";
   inputs.src-jesterjson-v1_0_1.type  = "github";
   
-  inputs."jesterwithplugins".dir   = "nimpkgs/j/jesterwithplugins";
-  inputs."jesterwithplugins".owner = "riinr";
-  inputs."jesterwithplugins".ref   = "flake-pinning";
-  inputs."jesterwithplugins".repo  = "flake-nimble";
+  inputs."jesterwithplugins".owner = "nim-nix-pkgs";
+  inputs."jesterwithplugins".ref   = "master";
+  inputs."jesterwithplugins".repo  = "jesterwithplugins";
   inputs."jesterwithplugins".type  = "github";
   inputs."jesterwithplugins".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jesterwithplugins".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

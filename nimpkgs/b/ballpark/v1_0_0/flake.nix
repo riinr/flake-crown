@@ -13,10 +13,9 @@
   inputs.src-ballpark-v1_0_0.repo  = "ballpark";
   inputs.src-ballpark-v1_0_0.type  = "github";
   
-  inputs."fsnotify".dir   = "nimpkgs/f/fsnotify";
-  inputs."fsnotify".owner = "riinr";
-  inputs."fsnotify".ref   = "flake-pinning";
-  inputs."fsnotify".repo  = "flake-nimble";
+  inputs."fsnotify".owner = "nim-nix-pkgs";
+  inputs."fsnotify".ref   = "master";
+  inputs."fsnotify".repo  = "fsnotify";
   inputs."fsnotify".type  = "github";
   inputs."fsnotify".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fsnotify".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

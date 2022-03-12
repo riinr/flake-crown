@@ -13,10 +13,9 @@
   inputs.src-redisclient-0_1_1.repo  = "nim-redisclient";
   inputs.src-redisclient-0_1_1.type  = "github";
   
-  inputs."redisparser".dir   = "nimpkgs/r/redisparser";
-  inputs."redisparser".owner = "riinr";
-  inputs."redisparser".ref   = "flake-pinning";
-  inputs."redisparser".repo  = "flake-nimble";
+  inputs."redisparser".owner = "nim-nix-pkgs";
+  inputs."redisparser".ref   = "master";
+  inputs."redisparser".repo  = "redisparser";
   inputs."redisparser".type  = "github";
   inputs."redisparser".inputs.nixpkgs.follows = "nixpkgs";
   inputs."redisparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

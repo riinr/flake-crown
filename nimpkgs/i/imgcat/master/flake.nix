@@ -13,18 +13,16 @@
   inputs.src-imgcat-master.repo  = "imgcat";
   inputs.src-imgcat-master.type  = "github";
   
-  inputs."imageman".dir   = "nimpkgs/i/imageman";
-  inputs."imageman".owner = "riinr";
-  inputs."imageman".ref   = "flake-pinning";
-  inputs."imageman".repo  = "flake-nimble";
+  inputs."imageman".owner = "nim-nix-pkgs";
+  inputs."imageman".ref   = "master";
+  inputs."imageman".repo  = "imageman";
   inputs."imageman".type  = "github";
   inputs."imageman".inputs.nixpkgs.follows = "nixpkgs";
   inputs."imageman".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."argparse".dir   = "nimpkgs/a/argparse";
-  inputs."argparse".owner = "riinr";
-  inputs."argparse".ref   = "flake-pinning";
-  inputs."argparse".repo  = "flake-nimble";
+  inputs."argparse".owner = "nim-nix-pkgs";
+  inputs."argparse".ref   = "master";
+  inputs."argparse".repo  = "argparse";
   inputs."argparse".type  = "github";
   inputs."argparse".inputs.nixpkgs.follows = "nixpkgs";
   inputs."argparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

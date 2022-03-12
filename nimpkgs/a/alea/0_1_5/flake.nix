@@ -13,10 +13,9 @@
   inputs.src-alea-0_1_5.repo  = "alea";
   inputs.src-alea-0_1_5.type  = "github";
   
-  inputs."random".dir   = "nimpkgs/r/random";
-  inputs."random".owner = "riinr";
-  inputs."random".ref   = "flake-pinning";
-  inputs."random".repo  = "flake-nimble";
+  inputs."random".owner = "nim-nix-pkgs";
+  inputs."random".ref   = "master";
+  inputs."random".repo  = "random";
   inputs."random".type  = "github";
   inputs."random".inputs.nixpkgs.follows = "nixpkgs";
   inputs."random".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

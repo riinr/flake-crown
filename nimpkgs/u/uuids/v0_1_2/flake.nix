@@ -13,10 +13,9 @@
   inputs.src-uuids-v0_1_2.repo  = "uuids";
   inputs.src-uuids-v0_1_2.type  = "github";
   
-  inputs."isaac".dir   = "nimpkgs/i/isaac";
-  inputs."isaac".owner = "riinr";
-  inputs."isaac".ref   = "flake-pinning";
-  inputs."isaac".repo  = "flake-nimble";
+  inputs."isaac".owner = "nim-nix-pkgs";
+  inputs."isaac".ref   = "master";
+  inputs."isaac".repo  = "isaac";
   inputs."isaac".type  = "github";
   inputs."isaac".inputs.nixpkgs.follows = "nixpkgs";
   inputs."isaac".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

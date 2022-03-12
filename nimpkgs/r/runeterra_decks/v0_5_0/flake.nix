@@ -13,10 +13,9 @@
   inputs.src-runeterra_decks-v0_5_0.repo  = "runeterra_decks";
   inputs.src-runeterra_decks-v0_5_0.type  = "github";
   
-  inputs."base32".dir   = "nimpkgs/b/base32";
-  inputs."base32".owner = "riinr";
-  inputs."base32".ref   = "flake-pinning";
-  inputs."base32".repo  = "flake-nimble";
+  inputs."base32".owner = "nim-nix-pkgs";
+  inputs."base32".ref   = "master";
+  inputs."base32".repo  = "base32";
   inputs."base32".type  = "github";
   inputs."base32".inputs.nixpkgs.follows = "nixpkgs";
   inputs."base32".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

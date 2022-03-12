@@ -13,10 +13,9 @@
   inputs.src-reactorfuse-master.repo  = "reactorfuse";
   inputs.src-reactorfuse-master.type  = "github";
   
-  inputs."reactor".dir   = "nimpkgs/r/reactor";
-  inputs."reactor".owner = "riinr";
-  inputs."reactor".ref   = "flake-pinning";
-  inputs."reactor".repo  = "flake-nimble";
+  inputs."reactor".owner = "nim-nix-pkgs";
+  inputs."reactor".ref   = "master";
+  inputs."reactor".repo  = "reactor";
   inputs."reactor".type  = "github";
   inputs."reactor".inputs.nixpkgs.follows = "nixpkgs";
   inputs."reactor".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

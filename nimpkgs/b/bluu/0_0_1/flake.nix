@@ -13,10 +13,9 @@
   inputs.src-bluu-0_0_1.repo  = "bluu";
   inputs.src-bluu-0_0_1.type  = "github";
   
-  inputs."openapi".dir   = "nimpkgs/o/openapi";
-  inputs."openapi".owner = "riinr";
-  inputs."openapi".ref   = "flake-pinning";
-  inputs."openapi".repo  = "flake-nimble";
+  inputs."openapi".owner = "nim-nix-pkgs";
+  inputs."openapi".ref   = "master";
+  inputs."openapi".repo  = "openapi";
   inputs."openapi".type  = "github";
   inputs."openapi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."openapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

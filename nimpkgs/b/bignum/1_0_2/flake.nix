@@ -13,10 +13,9 @@
   inputs.src-bignum-1_0_2.repo  = "bignum";
   inputs.src-bignum-1_0_2.type  = "github";
   
-  inputs."gmp".dir   = "nimpkgs/g/gmp";
-  inputs."gmp".owner = "riinr";
-  inputs."gmp".ref   = "flake-pinning";
-  inputs."gmp".repo  = "flake-nimble";
+  inputs."gmp".owner = "nim-nix-pkgs";
+  inputs."gmp".ref   = "master";
+  inputs."gmp".repo  = "gmp";
   inputs."gmp".type  = "github";
   inputs."gmp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gmp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,10 +13,9 @@
   inputs.src-getmac-master.repo  = "getmac";
   inputs.src-getmac-master.type  = "github";
   
-  inputs."optionsutils".dir   = "nimpkgs/o/optionsutils";
-  inputs."optionsutils".owner = "riinr";
-  inputs."optionsutils".ref   = "flake-pinning";
-  inputs."optionsutils".repo  = "flake-nimble";
+  inputs."optionsutils".owner = "nim-nix-pkgs";
+  inputs."optionsutils".ref   = "master";
+  inputs."optionsutils".repo  = "optionsutils";
   inputs."optionsutils".type  = "github";
   inputs."optionsutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."optionsutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

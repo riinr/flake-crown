@@ -13,18 +13,16 @@
   inputs.src-kdb-master.repo  = "kdb_nim";
   inputs.src-kdb-master.type  = "github";
   
-  inputs."terminaltables".dir   = "nimpkgs/t/terminaltables";
-  inputs."terminaltables".owner = "riinr";
-  inputs."terminaltables".ref   = "flake-pinning";
-  inputs."terminaltables".repo  = "flake-nimble";
+  inputs."terminaltables".owner = "nim-nix-pkgs";
+  inputs."terminaltables".ref   = "master";
+  inputs."terminaltables".repo  = "terminaltables";
   inputs."terminaltables".type  = "github";
   inputs."terminaltables".inputs.nixpkgs.follows = "nixpkgs";
   inputs."terminaltables".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."uuids".dir   = "nimpkgs/u/uuids";
-  inputs."uuids".owner = "riinr";
-  inputs."uuids".ref   = "flake-pinning";
-  inputs."uuids".repo  = "flake-nimble";
+  inputs."uuids".owner = "nim-nix-pkgs";
+  inputs."uuids".ref   = "master";
+  inputs."uuids".repo  = "uuids";
   inputs."uuids".type  = "github";
   inputs."uuids".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uuids".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

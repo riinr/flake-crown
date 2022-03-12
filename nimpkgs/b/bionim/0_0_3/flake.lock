@@ -32,10 +32,81 @@
         "type": "indirect"
       }
     },
+    "phylogeni": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "phylogeni-main": "phylogeni-main",
+        "phylogeni-v0_0_2": "phylogeni-v0_0_2"
+      },
+      "locked": {
+        "lastModified": 1647054715,
+        "narHash": "sha256-lCcGwriSf6nOyh2rI5c1gMiDAQ5fcHpsxBUqT3yAnRc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "phylogeni",
+        "rev": "10f8503ae3be0d5722060ea68daa7981eabd62ee",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "phylogeni",
+        "type": "github"
+      }
+    },
+    "phylogeni-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "phylogeni",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "phylogeni",
+          "nixpkgs"
+        ],
+        "src-phylogeni-main": "src-phylogeni-main"
+      },
+      "locked": {
+        "narHash": "sha256-QufH8P5efhd4uWgfw+cEsG6e8T6YXr11y/vbSOEbKak=",
+        "path": "./main",
+        "type": "path"
+      },
+      "original": {
+        "path": "./main",
+        "type": "path"
+      }
+    },
+    "phylogeni-v0_0_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "phylogeni",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "phylogeni",
+          "nixpkgs"
+        ],
+        "src-phylogeni-v0_0_2": "src-phylogeni-v0_0_2"
+      },
+      "locked": {
+        "narHash": "sha256-CNCIliED0jS6Po30egpEOsI/GYfUQQ9eUUKJksSQjjE=",
+        "path": "./v0_0_2",
+        "type": "path"
+      },
+      "original": {
+        "path": "./v0_0_2",
+        "type": "path"
+      }
+    },
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
+        "phylogeni": "phylogeni",
         "src-bionim-0_0_3": "src-bionim-0_0_3"
       }
     },
@@ -53,6 +124,40 @@
         "owner": "Unaimend",
         "ref": "refs/tags/0.0.3",
         "repo": "bionim",
+        "type": "github"
+      }
+    },
+    "src-phylogeni-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1625367908,
+        "narHash": "sha256-y1BAn/JU+8xeRriSQYWWs/yWnwqWkyNZL2aX7TNVFiQ=",
+        "owner": "kerrycobb",
+        "repo": "PhylogeNi",
+        "rev": "c8c7eea1c3de30a74ccc753851e1b7f898b47562",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kerrycobb",
+        "ref": "refs/heads/main",
+        "repo": "PhylogeNi",
+        "type": "github"
+      }
+    },
+    "src-phylogeni-v0_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1614888309,
+        "narHash": "sha256-fZK2ub0lG0bOfvoYq8C8zrr9JwcL29LDcx2jJQv0I0E=",
+        "owner": "kerrycobb",
+        "repo": "PhylogeNi",
+        "rev": "b33dc6e4013e68ee182474413c1571ba136a7bad",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kerrycobb",
+        "ref": "refs/tags/v0.0.2",
+        "repo": "PhylogeNi",
         "type": "github"
       }
     }

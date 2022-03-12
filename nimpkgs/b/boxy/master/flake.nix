@@ -13,34 +13,30 @@
   inputs.src-boxy-master.repo  = "boxy";
   inputs.src-boxy-master.type  = "github";
   
-  inputs."pixie".dir   = "nimpkgs/p/pixie";
-  inputs."pixie".owner = "riinr";
-  inputs."pixie".ref   = "flake-pinning";
-  inputs."pixie".repo  = "flake-nimble";
+  inputs."pixie".owner = "nim-nix-pkgs";
+  inputs."pixie".ref   = "master";
+  inputs."pixie".repo  = "pixie";
   inputs."pixie".type  = "github";
   inputs."pixie".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pixie".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."vmath".dir   = "nimpkgs/v/vmath";
-  inputs."vmath".owner = "riinr";
-  inputs."vmath".ref   = "flake-pinning";
-  inputs."vmath".repo  = "flake-nimble";
+  inputs."vmath".owner = "nim-nix-pkgs";
+  inputs."vmath".ref   = "master";
+  inputs."vmath".repo  = "vmath";
   inputs."vmath".type  = "github";
   inputs."vmath".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."opengl".dir   = "nimpkgs/o/opengl";
-  inputs."opengl".owner = "riinr";
-  inputs."opengl".ref   = "flake-pinning";
-  inputs."opengl".repo  = "flake-nimble";
+  inputs."opengl".owner = "nim-nix-pkgs";
+  inputs."opengl".ref   = "master";
+  inputs."opengl".repo  = "opengl";
   inputs."opengl".type  = "github";
   inputs."opengl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."opengl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."bitty".dir   = "nimpkgs/b/bitty";
-  inputs."bitty".owner = "riinr";
-  inputs."bitty".ref   = "flake-pinning";
-  inputs."bitty".repo  = "flake-nimble";
+  inputs."bitty".owner = "nim-nix-pkgs";
+  inputs."bitty".ref   = "master";
+  inputs."bitty".repo  = "bitty";
   inputs."bitty".type  = "github";
   inputs."bitty".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bitty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

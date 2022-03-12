@@ -13,10 +13,9 @@
   inputs.src-rdgui-master.repo  = "rdgui";
   inputs.src-rdgui-master.type  = "github";
   
-  inputs."rapid".dir   = "nimpkgs/r/rapid";
-  inputs."rapid".owner = "riinr";
-  inputs."rapid".ref   = "flake-pinning";
-  inputs."rapid".repo  = "flake-nimble";
+  inputs."rapid".owner = "nim-nix-pkgs";
+  inputs."rapid".ref   = "master";
+  inputs."rapid".repo  = "rapid";
   inputs."rapid".type  = "github";
   inputs."rapid".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rapid".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,18 +13,16 @@
   inputs.src-eris_utils-0_4_0.repo  = "eris_utils";
   inputs.src-eris_utils-0_4_0.type  = "other";
   
-  inputs."eris".dir   = "nimpkgs/e/eris";
-  inputs."eris".owner = "riinr";
-  inputs."eris".ref   = "flake-pinning";
-  inputs."eris".repo  = "flake-nimble";
+  inputs."eris".owner = "nim-nix-pkgs";
+  inputs."eris".ref   = "master";
+  inputs."eris".repo  = "eris";
   inputs."eris".type  = "github";
   inputs."eris".inputs.nixpkgs.follows = "nixpkgs";
   inputs."eris".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."tkrzw".dir   = "nimpkgs/t/tkrzw";
-  inputs."tkrzw".owner = "riinr";
-  inputs."tkrzw".ref   = "flake-pinning";
-  inputs."tkrzw".repo  = "flake-nimble";
+  inputs."tkrzw".owner = "nim-nix-pkgs";
+  inputs."tkrzw".ref   = "master";
+  inputs."tkrzw".repo  = "tkrzw";
   inputs."tkrzw".type  = "github";
   inputs."tkrzw".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tkrzw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

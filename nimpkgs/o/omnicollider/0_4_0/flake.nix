@@ -13,18 +13,16 @@
   inputs.src-omnicollider-0_4_0.repo  = "omnicollider";
   inputs.src-omnicollider-0_4_0.type  = "github";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."omni".dir   = "nimpkgs/o/omni";
-  inputs."omni".owner = "riinr";
-  inputs."omni".ref   = "flake-pinning";
-  inputs."omni".repo  = "flake-nimble";
+  inputs."omni".owner = "nim-nix-pkgs";
+  inputs."omni".ref   = "master";
+  inputs."omni".repo  = "omni";
   inputs."omni".type  = "github";
   inputs."omni".inputs.nixpkgs.follows = "nixpkgs";
   inputs."omni".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

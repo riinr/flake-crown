@@ -13,10 +13,9 @@
   inputs.src-eris_utils-0_1_2.repo  = "eris_utils";
   inputs.src-eris_utils-0_1_2.type  = "other";
   
-  inputs."eris".dir   = "nimpkgs/e/eris";
-  inputs."eris".owner = "riinr";
-  inputs."eris".ref   = "flake-pinning";
-  inputs."eris".repo  = "flake-nimble";
+  inputs."eris".owner = "nim-nix-pkgs";
+  inputs."eris".ref   = "master";
+  inputs."eris".repo  = "eris";
   inputs."eris".type  = "github";
   inputs."eris".inputs.nixpkgs.follows = "nixpkgs";
   inputs."eris".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

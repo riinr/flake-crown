@@ -13,10 +13,9 @@
   inputs.src-keyring-v0_3_0.repo  = "nim-keyring";
   inputs.src-keyring-v0_3_0.type  = "github";
   
-  inputs."dbus".dir   = "nimpkgs/d/dbus";
-  inputs."dbus".owner = "riinr";
-  inputs."dbus".ref   = "flake-pinning";
-  inputs."dbus".repo  = "flake-nimble";
+  inputs."dbus".owner = "nim-nix-pkgs";
+  inputs."dbus".ref   = "master";
+  inputs."dbus".repo  = "dbus";
   inputs."dbus".type  = "github";
   inputs."dbus".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dbus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

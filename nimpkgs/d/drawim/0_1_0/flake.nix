@@ -13,18 +13,16 @@
   inputs.src-drawim-0_1_0.repo  = "drawim";
   inputs.src-drawim-0_1_0.type  = "github";
   
-  inputs."staticglfw".dir   = "nimpkgs/s/staticglfw";
-  inputs."staticglfw".owner = "riinr";
-  inputs."staticglfw".ref   = "flake-pinning";
-  inputs."staticglfw".repo  = "flake-nimble";
+  inputs."staticglfw".owner = "nim-nix-pkgs";
+  inputs."staticglfw".ref   = "master";
+  inputs."staticglfw".repo  = "staticglfw";
   inputs."staticglfw".type  = "github";
   inputs."staticglfw".inputs.nixpkgs.follows = "nixpkgs";
   inputs."staticglfw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."jscanvas".dir   = "nimpkgs/j/jscanvas";
-  inputs."jscanvas".owner = "riinr";
-  inputs."jscanvas".ref   = "flake-pinning";
-  inputs."jscanvas".repo  = "flake-nimble";
+  inputs."jscanvas".owner = "nim-nix-pkgs";
+  inputs."jscanvas".ref   = "master";
+  inputs."jscanvas".repo  = "jscanvas";
   inputs."jscanvas".type  = "github";
   inputs."jscanvas".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jscanvas".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

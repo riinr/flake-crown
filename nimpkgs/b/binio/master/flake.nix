@@ -13,10 +13,9 @@
   inputs.src-binio-master.repo  = "binio";
   inputs.src-binio-master.type  = "github";
   
-  inputs."struct".dir   = "nimpkgs/s/struct";
-  inputs."struct".owner = "riinr";
-  inputs."struct".ref   = "flake-pinning";
-  inputs."struct".repo  = "flake-nimble";
+  inputs."struct".owner = "nim-nix-pkgs";
+  inputs."struct".ref   = "master";
+  inputs."struct".repo  = "struct";
   inputs."struct".type  = "github";
   inputs."struct".inputs.nixpkgs.follows = "nixpkgs";
   inputs."struct".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

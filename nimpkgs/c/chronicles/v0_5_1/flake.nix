@@ -13,10 +13,9 @@
   inputs.src-chronicles-v0_5_1.repo  = "nim-chronicles";
   inputs.src-chronicles-v0_5_1.type  = "github";
   
-  inputs."json_serialization".dir   = "nimpkgs/j/json_serialization";
-  inputs."json_serialization".owner = "riinr";
-  inputs."json_serialization".ref   = "flake-pinning";
-  inputs."json_serialization".repo  = "flake-nimble";
+  inputs."json_serialization".owner = "nim-nix-pkgs";
+  inputs."json_serialization".ref   = "master";
+  inputs."json_serialization".repo  = "json_serialization";
   inputs."json_serialization".type  = "github";
   inputs."json_serialization".inputs.nixpkgs.follows = "nixpkgs";
   inputs."json_serialization".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

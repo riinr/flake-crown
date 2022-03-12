@@ -13,18 +13,16 @@
   inputs.src-libnx-0_1_8.repo  = "nim-libnx";
   inputs.src-libnx-0_1_8.type  = "github";
   
-  inputs."https://github.com/genotrance/nimgen".dir   = "nimpkgs/h/https://github.com/genotrance/nimgen";
-  inputs."https://github.com/genotrance/nimgen".owner = "riinr";
-  inputs."https://github.com/genotrance/nimgen".ref   = "flake-pinning";
-  inputs."https://github.com/genotrance/nimgen".repo  = "flake-nimble";
+  inputs."https://github.com/genotrance/nimgen".owner = "nim-nix-pkgs";
+  inputs."https://github.com/genotrance/nimgen".ref   = "master";
+  inputs."https://github.com/genotrance/nimgen".repo  = "https://github.com/genotrance/nimgen";
   inputs."https://github.com/genotrance/nimgen".type  = "github";
   inputs."https://github.com/genotrance/nimgen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/genotrance/nimgen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."switch-build".dir   = "nimpkgs/s/switch-build";
-  inputs."switch-build".owner = "riinr";
-  inputs."switch-build".ref   = "flake-pinning";
-  inputs."switch-build".repo  = "flake-nimble";
+  inputs."switch-build".owner = "nim-nix-pkgs";
+  inputs."switch-build".ref   = "master";
+  inputs."switch-build".repo  = "switch-build";
   inputs."switch-build".type  = "github";
   inputs."switch-build".inputs.nixpkgs.follows = "nixpkgs";
   inputs."switch-build".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

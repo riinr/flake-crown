@@ -13,18 +13,16 @@
   inputs.src-cmixer_sdl2-master.repo  = "cmixer_sdl2-nim";
   inputs.src-cmixer_sdl2-master.type  = "github";
   
-  inputs."cmixer".dir   = "nimpkgs/c/cmixer";
-  inputs."cmixer".owner = "riinr";
-  inputs."cmixer".ref   = "flake-pinning";
-  inputs."cmixer".repo  = "flake-nimble";
+  inputs."cmixer".owner = "nim-nix-pkgs";
+  inputs."cmixer".ref   = "master";
+  inputs."cmixer".repo  = "cmixer";
   inputs."cmixer".type  = "github";
   inputs."cmixer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cmixer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."sdl2".dir   = "nimpkgs/s/sdl2";
-  inputs."sdl2".owner = "riinr";
-  inputs."sdl2".ref   = "flake-pinning";
-  inputs."sdl2".repo  = "flake-nimble";
+  inputs."sdl2".owner = "nim-nix-pkgs";
+  inputs."sdl2".ref   = "master";
+  inputs."sdl2".repo  = "sdl2";
   inputs."sdl2".type  = "github";
   inputs."sdl2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sdl2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

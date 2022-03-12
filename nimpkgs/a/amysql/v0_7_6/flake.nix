@@ -13,42 +13,37 @@
   inputs.src-amysql-v0_7_6.repo  = "amysql";
   inputs.src-amysql-v0_7_6.type  = "github";
   
-  inputs."nimcrypto".dir   = "nimpkgs/n/nimcrypto";
-  inputs."nimcrypto".owner = "riinr";
-  inputs."nimcrypto".ref   = "flake-pinning";
-  inputs."nimcrypto".repo  = "flake-nimble";
+  inputs."nimcrypto".owner = "nim-nix-pkgs";
+  inputs."nimcrypto".ref   = "master";
+  inputs."nimcrypto".repo  = "nimcrypto";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."regex".dir   = "nimpkgs/r/regex";
-  inputs."regex".owner = "riinr";
-  inputs."regex".ref   = "flake-pinning";
-  inputs."regex".repo  = "flake-nimble";
+  inputs."regex".owner = "nim-nix-pkgs";
+  inputs."regex".ref   = "master";
+  inputs."regex".repo  = "regex";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."zstd".dir   = "nimpkgs/z/zstd";
-  inputs."zstd".owner = "riinr";
-  inputs."zstd".ref   = "flake-pinning";
-  inputs."zstd".repo  = "flake-nimble";
+  inputs."zstd".owner = "nim-nix-pkgs";
+  inputs."zstd".ref   = "master";
+  inputs."zstd".repo  = "zstd";
   inputs."zstd".type  = "github";
   inputs."zstd".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zstd".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."urlly".dir   = "nimpkgs/u/urlly";
-  inputs."urlly".owner = "riinr";
-  inputs."urlly".ref   = "flake-pinning";
-  inputs."urlly".repo  = "flake-nimble";
+  inputs."urlly".owner = "nim-nix-pkgs";
+  inputs."urlly".ref   = "master";
+  inputs."urlly".repo  = "urlly";
   inputs."urlly".type  = "github";
   inputs."urlly".inputs.nixpkgs.follows = "nixpkgs";
   inputs."urlly".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."chronos".dir   = "nimpkgs/c/chronos";
-  inputs."chronos".owner = "riinr";
-  inputs."chronos".ref   = "flake-pinning";
-  inputs."chronos".repo  = "flake-nimble";
+  inputs."chronos".owner = "nim-nix-pkgs";
+  inputs."chronos".ref   = "master";
+  inputs."chronos".repo  = "chronos";
   inputs."chronos".type  = "github";
   inputs."chronos".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

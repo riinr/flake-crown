@@ -13,10 +13,9 @@
   inputs.src-dali-v0_1_0.repo  = "dali";
   inputs.src-dali-v0_1_0.type  = "github";
   
-  inputs."patty".dir   = "nimpkgs/p/patty";
-  inputs."patty".owner = "riinr";
-  inputs."patty".ref   = "flake-pinning";
-  inputs."patty".repo  = "flake-nimble";
+  inputs."patty".owner = "nim-nix-pkgs";
+  inputs."patty".ref   = "master";
+  inputs."patty".repo  = "patty";
   inputs."patty".type  = "github";
   inputs."patty".inputs.nixpkgs.follows = "nixpkgs";
   inputs."patty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

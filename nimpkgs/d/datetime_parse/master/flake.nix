@@ -13,10 +13,9 @@
   inputs.src-datetime_parse-master.repo  = "datetime_parse";
   inputs.src-datetime_parse-master.type  = "github";
   
-  inputs."timezones".dir   = "nimpkgs/t/timezones";
-  inputs."timezones".owner = "riinr";
-  inputs."timezones".ref   = "flake-pinning";
-  inputs."timezones".repo  = "flake-nimble";
+  inputs."timezones".owner = "nim-nix-pkgs";
+  inputs."timezones".ref   = "master";
+  inputs."timezones".repo  = "timezones";
   inputs."timezones".type  = "github";
   inputs."timezones".inputs.nixpkgs.follows = "nixpkgs";
   inputs."timezones".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

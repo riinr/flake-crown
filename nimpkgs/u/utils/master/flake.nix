@@ -13,10 +13,9 @@
   inputs.src-utils-master.repo  = "utils";
   inputs.src-utils-master.type  = "github";
   
-  inputs."values".dir   = "nimpkgs/v/values";
-  inputs."values".owner = "riinr";
-  inputs."values".ref   = "flake-pinning";
-  inputs."values".repo  = "flake-nimble";
+  inputs."values".owner = "nim-nix-pkgs";
+  inputs."values".ref   = "master";
+  inputs."values".repo  = "values";
   inputs."values".type  = "github";
   inputs."values".inputs.nixpkgs.follows = "nixpkgs";
   inputs."values".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

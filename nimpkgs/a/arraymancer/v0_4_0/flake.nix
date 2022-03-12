@@ -13,42 +13,37 @@
   inputs.src-arraymancer-v0_4_0.repo  = "Arraymancer";
   inputs.src-arraymancer-v0_4_0.type  = "github";
   
-  inputs."nimblas".dir   = "nimpkgs/n/nimblas";
-  inputs."nimblas".owner = "riinr";
-  inputs."nimblas".ref   = "flake-pinning";
-  inputs."nimblas".repo  = "flake-nimble";
+  inputs."nimblas".owner = "nim-nix-pkgs";
+  inputs."nimblas".ref   = "master";
+  inputs."nimblas".repo  = "nimblas";
   inputs."nimblas".type  = "github";
   inputs."nimblas".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimblas".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimlapack".dir   = "nimpkgs/n/nimlapack";
-  inputs."nimlapack".owner = "riinr";
-  inputs."nimlapack".ref   = "flake-pinning";
-  inputs."nimlapack".repo  = "flake-nimble";
+  inputs."nimlapack".owner = "nim-nix-pkgs";
+  inputs."nimlapack".ref   = "master";
+  inputs."nimlapack".repo  = "nimlapack";
   inputs."nimlapack".type  = "github";
   inputs."nimlapack".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimlapack".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimcuda".dir   = "nimpkgs/n/nimcuda";
-  inputs."nimcuda".owner = "riinr";
-  inputs."nimcuda".ref   = "flake-pinning";
-  inputs."nimcuda".repo  = "flake-nimble";
+  inputs."nimcuda".owner = "nim-nix-pkgs";
+  inputs."nimcuda".ref   = "master";
+  inputs."nimcuda".repo  = "nimcuda";
   inputs."nimcuda".type  = "github";
   inputs."nimcuda".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcuda".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimcl".dir   = "nimpkgs/n/nimcl";
-  inputs."nimcl".owner = "riinr";
-  inputs."nimcl".ref   = "flake-pinning";
-  inputs."nimcl".repo  = "flake-nimble";
+  inputs."nimcl".owner = "nim-nix-pkgs";
+  inputs."nimcl".ref   = "master";
+  inputs."nimcl".repo  = "nimcl";
   inputs."nimcl".type  = "github";
   inputs."nimcl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."clblast".dir   = "nimpkgs/c/clblast";
-  inputs."clblast".owner = "riinr";
-  inputs."clblast".ref   = "flake-pinning";
-  inputs."clblast".repo  = "flake-nimble";
+  inputs."clblast".owner = "nim-nix-pkgs";
+  inputs."clblast".ref   = "master";
+  inputs."clblast".repo  = "clblast";
   inputs."clblast".type  = "github";
   inputs."clblast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."clblast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

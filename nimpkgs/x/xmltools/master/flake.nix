@@ -13,18 +13,16 @@
   inputs.src-xmltools-master.repo  = "xmltools";
   inputs.src-xmltools-master.type  = "github";
   
-  inputs."nimfp".dir   = "nimpkgs/n/nimfp";
-  inputs."nimfp".owner = "riinr";
-  inputs."nimfp".ref   = "flake-pinning";
-  inputs."nimfp".repo  = "flake-nimble";
+  inputs."nimfp".owner = "nim-nix-pkgs";
+  inputs."nimfp".ref   = "master";
+  inputs."nimfp".repo  = "nimfp";
   inputs."nimfp".type  = "github";
   inputs."nimfp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimfp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimboost".dir   = "nimpkgs/n/nimboost";
-  inputs."nimboost".owner = "riinr";
-  inputs."nimboost".ref   = "flake-pinning";
-  inputs."nimboost".repo  = "flake-nimble";
+  inputs."nimboost".owner = "nim-nix-pkgs";
+  inputs."nimboost".ref   = "master";
+  inputs."nimboost".repo  = "nimboost";
   inputs."nimboost".type  = "github";
   inputs."nimboost".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimboost".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
