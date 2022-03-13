@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."db_nimternalsql-main".url = "path:./main";
+  inputs."db_nimternalsql-main".dir   = "main";
+  inputs."db_nimternalsql-main".owner = "nim-nix-pkgs";
+  inputs."db_nimternalsql-main".ref   = "master";
+  inputs."db_nimternalsql-main".repo  = "db_nimternalsql";
+  inputs."db_nimternalsql-main".type  = "github";
   inputs."db_nimternalsql-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."db_nimternalsql-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."db_nimternalsql-v1_0_0".url = "path:./v1_0_0";
+  inputs."db_nimternalsql-v1_0_0".dir   = "v1_0_0";
+  inputs."db_nimternalsql-v1_0_0".owner = "nim-nix-pkgs";
+  inputs."db_nimternalsql-v1_0_0".ref   = "master";
+  inputs."db_nimternalsql-v1_0_0".repo  = "db_nimternalsql";
+  inputs."db_nimternalsql-v1_0_0".type  = "github";
   inputs."db_nimternalsql-v1_0_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."db_nimternalsql-v1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."db_nimternalsql-v1_1_0".url = "path:./v1_1_0";
+  inputs."db_nimternalsql-v1_1_0".dir   = "v1_1_0";
+  inputs."db_nimternalsql-v1_1_0".owner = "nim-nix-pkgs";
+  inputs."db_nimternalsql-v1_1_0".ref   = "master";
+  inputs."db_nimternalsql-v1_1_0".repo  = "db_nimternalsql";
+  inputs."db_nimternalsql-v1_1_0".type  = "github";
   inputs."db_nimternalsql-v1_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."db_nimternalsql-v1_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

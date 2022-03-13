@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."prettyvec-main".url = "path:./main";
+  inputs."prettyvec-main".dir   = "main";
+  inputs."prettyvec-main".owner = "nim-nix-pkgs";
+  inputs."prettyvec-main".ref   = "master";
+  inputs."prettyvec-main".repo  = "prettyvec";
+  inputs."prettyvec-main".type  = "github";
   inputs."prettyvec-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."prettyvec-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

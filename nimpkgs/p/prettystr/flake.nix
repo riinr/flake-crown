@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."prettystr-main".url = "path:./main";
+  inputs."prettystr-main".dir   = "main";
+  inputs."prettystr-main".owner = "nim-nix-pkgs";
+  inputs."prettystr-main".ref   = "master";
+  inputs."prettystr-main".repo  = "prettystr";
+  inputs."prettystr-main".type  = "github";
   inputs."prettystr-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."prettystr-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

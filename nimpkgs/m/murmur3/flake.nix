@@ -7,27 +7,51 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."murmur3-master".url = "path:./master";
+  inputs."murmur3-master".dir   = "master";
+  inputs."murmur3-master".owner = "nim-nix-pkgs";
+  inputs."murmur3-master".ref   = "master";
+  inputs."murmur3-master".repo  = "murmur3";
+  inputs."murmur3-master".type  = "github";
   inputs."murmur3-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."murmur3-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."murmur3-v0_1_0".url = "path:./v0_1_0";
+  inputs."murmur3-v0_1_0".dir   = "v0_1_0";
+  inputs."murmur3-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."murmur3-v0_1_0".ref   = "master";
+  inputs."murmur3-v0_1_0".repo  = "murmur3";
+  inputs."murmur3-v0_1_0".type  = "github";
   inputs."murmur3-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."murmur3-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."murmur3-v0_1_1".url = "path:./v0_1_1";
+  inputs."murmur3-v0_1_1".dir   = "v0_1_1";
+  inputs."murmur3-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."murmur3-v0_1_1".ref   = "master";
+  inputs."murmur3-v0_1_1".repo  = "murmur3";
+  inputs."murmur3-v0_1_1".type  = "github";
   inputs."murmur3-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."murmur3-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."murmur3-v0_1_2".url = "path:./v0_1_2";
+  inputs."murmur3-v0_1_2".dir   = "v0_1_2";
+  inputs."murmur3-v0_1_2".owner = "nim-nix-pkgs";
+  inputs."murmur3-v0_1_2".ref   = "master";
+  inputs."murmur3-v0_1_2".repo  = "murmur3";
+  inputs."murmur3-v0_1_2".type  = "github";
   inputs."murmur3-v0_1_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."murmur3-v0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."murmur3-v0_1_3".url = "path:./v0_1_3";
+  inputs."murmur3-v0_1_3".dir   = "v0_1_3";
+  inputs."murmur3-v0_1_3".owner = "nim-nix-pkgs";
+  inputs."murmur3-v0_1_3".ref   = "master";
+  inputs."murmur3-v0_1_3".repo  = "murmur3";
+  inputs."murmur3-v0_1_3".type  = "github";
   inputs."murmur3-v0_1_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."murmur3-v0_1_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."murmur3-v0_2_0".url = "path:./v0_2_0";
+  inputs."murmur3-v0_2_0".dir   = "v0_2_0";
+  inputs."murmur3-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."murmur3-v0_2_0".ref   = "master";
+  inputs."murmur3-v0_2_0".repo  = "murmur3";
+  inputs."murmur3-v0_2_0".type  = "github";
   inputs."murmur3-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."murmur3-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

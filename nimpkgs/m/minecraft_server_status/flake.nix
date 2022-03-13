@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."minecraft_server_status-main".url = "path:./main";
+  inputs."minecraft_server_status-main".dir   = "main";
+  inputs."minecraft_server_status-main".owner = "nim-nix-pkgs";
+  inputs."minecraft_server_status-main".ref   = "master";
+  inputs."minecraft_server_status-main".repo  = "minecraft_server_status";
+  inputs."minecraft_server_status-main".type  = "github";
   inputs."minecraft_server_status-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."minecraft_server_status-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."minecraft_server_status-0_1_1".url = "path:./0_1_1";
+  inputs."minecraft_server_status-0_1_1".dir   = "0_1_1";
+  inputs."minecraft_server_status-0_1_1".owner = "nim-nix-pkgs";
+  inputs."minecraft_server_status-0_1_1".ref   = "master";
+  inputs."minecraft_server_status-0_1_1".repo  = "minecraft_server_status";
+  inputs."minecraft_server_status-0_1_1".type  = "github";
   inputs."minecraft_server_status-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."minecraft_server_status-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

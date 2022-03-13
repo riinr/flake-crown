@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."slicerator-master".url = "path:./master";
+  inputs."slicerator-master".dir   = "master";
+  inputs."slicerator-master".owner = "nim-nix-pkgs";
+  inputs."slicerator-master".ref   = "master";
+  inputs."slicerator-master".repo  = "slicerator";
+  inputs."slicerator-master".type  = "github";
   inputs."slicerator-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."slicerator-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -13,18 +13,16 @@
   inputs.src-memlib-master.repo  = "memlib";
   inputs.src-memlib-master.type  = "github";
   
-  inputs."winim".dir   = "nimpkgs/w/winim";
-  inputs."winim".owner = "riinr";
-  inputs."winim".ref   = "flake-pinning";
-  inputs."winim".repo  = "flake-nimble";
+  inputs."winim".owner = "nim-nix-pkgs";
+  inputs."winim".ref   = "master";
+  inputs."winim".repo  = "winim";
   inputs."winim".type  = "github";
   inputs."winim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."winim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."minhook".dir   = "nimpkgs/m/minhook";
-  inputs."minhook".owner = "riinr";
-  inputs."minhook".ref   = "flake-pinning";
-  inputs."minhook".repo  = "flake-nimble";
+  inputs."minhook".owner = "nim-nix-pkgs";
+  inputs."minhook".ref   = "master";
+  inputs."minhook".repo  = "minhook";
   inputs."minhook".type  = "github";
   inputs."minhook".inputs.nixpkgs.follows = "nixpkgs";
   inputs."minhook".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

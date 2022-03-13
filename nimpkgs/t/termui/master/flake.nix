@@ -13,18 +13,16 @@
   inputs.src-termui-master.repo  = "nim-termui";
   inputs.src-termui-master.type  = "github";
   
-  inputs."classes".dir   = "nimpkgs/c/classes";
-  inputs."classes".owner = "riinr";
-  inputs."classes".ref   = "flake-pinning";
-  inputs."classes".repo  = "flake-nimble";
+  inputs."classes".owner = "nim-nix-pkgs";
+  inputs."classes".ref   = "master";
+  inputs."classes".repo  = "classes";
   inputs."classes".type  = "github";
   inputs."classes".inputs.nixpkgs.follows = "nixpkgs";
   inputs."classes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."elvis".dir   = "nimpkgs/e/elvis";
-  inputs."elvis".owner = "riinr";
-  inputs."elvis".ref   = "flake-pinning";
-  inputs."elvis".repo  = "flake-nimble";
+  inputs."elvis".owner = "nim-nix-pkgs";
+  inputs."elvis".ref   = "master";
+  inputs."elvis".repo  = "elvis";
   inputs."elvis".type  = "github";
   inputs."elvis".inputs.nixpkgs.follows = "nixpkgs";
   inputs."elvis".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

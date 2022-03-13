@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."haraka-master".url = "path:./master";
+  inputs."haraka-master".dir   = "master";
+  inputs."haraka-master".owner = "nim-nix-pkgs";
+  inputs."haraka-master".ref   = "master";
+  inputs."haraka-master".repo  = "haraka";
+  inputs."haraka-master".type  = "github";
   inputs."haraka-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."haraka-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."haraka-v0_1_0".url = "path:./v0_1_0";
+  inputs."haraka-v0_1_0".dir   = "v0_1_0";
+  inputs."haraka-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."haraka-v0_1_0".ref   = "master";
+  inputs."haraka-v0_1_0".repo  = "haraka";
+  inputs."haraka-v0_1_0".type  = "github";
   inputs."haraka-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."haraka-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

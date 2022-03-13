@@ -13,10 +13,9 @@
   inputs.src-nimpcre-v0_2_1.repo  = "nimpcre";
   inputs.src-nimpcre-v0_2_1.type  = "github";
   
-  inputs."nimterop".dir   = "nimpkgs/n/nimterop";
-  inputs."nimterop".owner = "riinr";
-  inputs."nimterop".ref   = "flake-pinning";
-  inputs."nimterop".repo  = "flake-nimble";
+  inputs."nimterop".owner = "nim-nix-pkgs";
+  inputs."nimterop".ref   = "master";
+  inputs."nimterop".repo  = "nimterop";
   inputs."nimterop".type  = "github";
   inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

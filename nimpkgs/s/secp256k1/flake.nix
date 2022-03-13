@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."secp256k1-master".url = "path:./master";
+  inputs."secp256k1-master".dir   = "master";
+  inputs."secp256k1-master".owner = "nim-nix-pkgs";
+  inputs."secp256k1-master".ref   = "master";
+  inputs."secp256k1-master".repo  = "secp256k1";
+  inputs."secp256k1-master".type  = "github";
   inputs."secp256k1-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."secp256k1-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -13,10 +13,9 @@
   inputs.src-nim7z-v0_1_5.repo  = "nim7z";
   inputs.src-nim7z-v0_1_5.type  = "github";
   
-  inputs."nimgen".dir   = "nimpkgs/n/nimgen";
-  inputs."nimgen".owner = "riinr";
-  inputs."nimgen".ref   = "flake-pinning";
-  inputs."nimgen".repo  = "flake-nimble";
+  inputs."nimgen".owner = "nim-nix-pkgs";
+  inputs."nimgen".ref   = "master";
+  inputs."nimgen".repo  = "nimgen";
   inputs."nimgen".type  = "github";
   inputs."nimgen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimgen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

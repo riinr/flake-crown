@@ -13,18 +13,16 @@
   inputs.src-strunicode-master.repo  = "nim-strunicode";
   inputs.src-strunicode-master.type  = "github";
   
-  inputs."normalize".dir   = "nimpkgs/n/normalize";
-  inputs."normalize".owner = "riinr";
-  inputs."normalize".ref   = "flake-pinning";
-  inputs."normalize".repo  = "flake-nimble";
+  inputs."normalize".owner = "nim-nix-pkgs";
+  inputs."normalize".ref   = "master";
+  inputs."normalize".repo  = "normalize";
   inputs."normalize".type  = "github";
   inputs."normalize".inputs.nixpkgs.follows = "nixpkgs";
   inputs."normalize".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."graphemes".dir   = "nimpkgs/g/graphemes";
-  inputs."graphemes".owner = "riinr";
-  inputs."graphemes".ref   = "flake-pinning";
-  inputs."graphemes".repo  = "flake-nimble";
+  inputs."graphemes".owner = "nim-nix-pkgs";
+  inputs."graphemes".ref   = "master";
+  inputs."graphemes".repo  = "graphemes";
   inputs."graphemes".type  = "github";
   inputs."graphemes".inputs.nixpkgs.follows = "nixpkgs";
   inputs."graphemes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

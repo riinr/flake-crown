@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."ffbookmarks-master".url = "path:./master";
+  inputs."ffbookmarks-master".dir   = "master";
+  inputs."ffbookmarks-master".owner = "nim-nix-pkgs";
+  inputs."ffbookmarks-master".ref   = "master";
+  inputs."ffbookmarks-master".repo  = "ffbookmarks";
+  inputs."ffbookmarks-master".type  = "github";
   inputs."ffbookmarks-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ffbookmarks-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

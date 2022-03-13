@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nimp-master".url = "path:./master";
+  inputs."nimp-master".dir   = "master";
+  inputs."nimp-master".owner = "nim-nix-pkgs";
+  inputs."nimp-master".ref   = "master";
+  inputs."nimp-master".repo  = "nimp";
+  inputs."nimp-master".type  = "github";
   inputs."nimp-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimp-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimp-v0_1_0".url = "path:./v0_1_0";
+  inputs."nimp-v0_1_0".dir   = "v0_1_0";
+  inputs."nimp-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."nimp-v0_1_0".ref   = "master";
+  inputs."nimp-v0_1_0".repo  = "nimp";
+  inputs."nimp-v0_1_0".type  = "github";
   inputs."nimp-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimp-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

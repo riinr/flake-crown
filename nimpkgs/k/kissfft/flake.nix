@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."kissfft-master".url = "path:./master";
+  inputs."kissfft-master".dir   = "master";
+  inputs."kissfft-master".owner = "nim-nix-pkgs";
+  inputs."kissfft-master".ref   = "master";
+  inputs."kissfft-master".repo  = "kissfft";
+  inputs."kissfft-master".type  = "github";
   inputs."kissfft-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."kissfft-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

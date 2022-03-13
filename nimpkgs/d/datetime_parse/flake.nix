@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."datetime_parse-master".url = "path:./master";
+  inputs."datetime_parse-master".dir   = "master";
+  inputs."datetime_parse-master".owner = "nim-nix-pkgs";
+  inputs."datetime_parse-master".ref   = "master";
+  inputs."datetime_parse-master".repo  = "datetime_parse";
+  inputs."datetime_parse-master".type  = "github";
   inputs."datetime_parse-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."datetime_parse-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

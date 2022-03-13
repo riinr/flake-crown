@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."pastebin-master".url = "path:./master";
+  inputs."pastebin-master".dir   = "master";
+  inputs."pastebin-master".owner = "nim-nix-pkgs";
+  inputs."pastebin-master".ref   = "master";
+  inputs."pastebin-master".repo  = "pastebin";
+  inputs."pastebin-master".type  = "github";
   inputs."pastebin-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pastebin-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

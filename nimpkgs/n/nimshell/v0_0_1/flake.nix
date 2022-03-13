@@ -13,10 +13,9 @@
   inputs.src-nimshell-v0_0_1.repo  = "nimshell";
   inputs.src-nimshell-v0_0_1.type  = "github";
   
-  inputs."monad".dir   = "nimpkgs/m/monad";
-  inputs."monad".owner = "riinr";
-  inputs."monad".ref   = "flake-pinning";
-  inputs."monad".repo  = "flake-nimble";
+  inputs."monad".owner = "nim-nix-pkgs";
+  inputs."monad".ref   = "master";
+  inputs."monad".repo  = "monad";
   inputs."monad".type  = "github";
   inputs."monad".inputs.nixpkgs.follows = "nixpkgs";
   inputs."monad".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

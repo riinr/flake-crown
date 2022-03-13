@@ -13,34 +13,30 @@
   inputs.src-textformats-main.repo  = "textformats";
   inputs.src-textformats-main.type  = "github";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."yaml".dir   = "nimpkgs/y/yaml";
-  inputs."yaml".owner = "riinr";
-  inputs."yaml".ref   = "flake-pinning";
-  inputs."yaml".repo  = "flake-nimble";
+  inputs."yaml".owner = "nim-nix-pkgs";
+  inputs."yaml".ref   = "master";
+  inputs."yaml".repo  = "yaml";
   inputs."yaml".type  = "github";
   inputs."yaml".inputs.nixpkgs.follows = "nixpkgs";
   inputs."yaml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."regex".dir   = "nimpkgs/r/regex";
-  inputs."regex".owner = "riinr";
-  inputs."regex".ref   = "flake-pinning";
-  inputs."regex".repo  = "flake-nimble";
+  inputs."regex".owner = "nim-nix-pkgs";
+  inputs."regex".ref   = "master";
+  inputs."regex".repo  = "regex";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimpy".dir   = "nimpkgs/n/nimpy";
-  inputs."nimpy".owner = "riinr";
-  inputs."nimpy".ref   = "flake-pinning";
-  inputs."nimpy".repo  = "flake-nimble";
+  inputs."nimpy".owner = "nim-nix-pkgs";
+  inputs."nimpy".ref   = "master";
+  inputs."nimpy".repo  = "nimpy";
   inputs."nimpy".type  = "github";
   inputs."nimpy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

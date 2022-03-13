@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."randgen-master".url = "path:./master";
+  inputs."randgen-master".dir   = "master";
+  inputs."randgen-master".owner = "nim-nix-pkgs";
+  inputs."randgen-master".ref   = "master";
+  inputs."randgen-master".repo  = "randgen";
+  inputs."randgen-master".type  = "github";
   inputs."randgen-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."randgen-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

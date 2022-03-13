@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."timerpool-master".url = "path:./master";
+  inputs."timerpool-master".dir   = "master";
+  inputs."timerpool-master".owner = "nim-nix-pkgs";
+  inputs."timerpool-master".ref   = "master";
+  inputs."timerpool-master".repo  = "timerpool";
+  inputs."timerpool-master".type  = "github";
   inputs."timerpool-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."timerpool-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

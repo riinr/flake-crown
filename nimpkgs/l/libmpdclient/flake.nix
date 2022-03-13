@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."libmpdclient-master".url = "path:./master";
+  inputs."libmpdclient-master".dir   = "master";
+  inputs."libmpdclient-master".owner = "nim-nix-pkgs";
+  inputs."libmpdclient-master".ref   = "master";
+  inputs."libmpdclient-master".repo  = "libmpdclient";
+  inputs."libmpdclient-master".type  = "github";
   inputs."libmpdclient-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libmpdclient-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

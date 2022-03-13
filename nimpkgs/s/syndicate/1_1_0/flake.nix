@@ -13,18 +13,16 @@
   inputs.src-syndicate-1_1_0.repo  = "syndicate-nim";
   inputs.src-syndicate-1_1_0.type  = "other";
   
-  inputs."nimsha2".dir   = "nimpkgs/n/nimsha2";
-  inputs."nimsha2".owner = "riinr";
-  inputs."nimsha2".ref   = "flake-pinning";
-  inputs."nimsha2".repo  = "flake-nimble";
+  inputs."nimsha2".owner = "nim-nix-pkgs";
+  inputs."nimsha2".ref   = "master";
+  inputs."nimsha2".repo  = "nimsha2";
   inputs."nimsha2".type  = "github";
   inputs."nimsha2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimsha2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."preserves".dir   = "nimpkgs/p/preserves";
-  inputs."preserves".owner = "riinr";
-  inputs."preserves".ref   = "flake-pinning";
-  inputs."preserves".repo  = "flake-nimble";
+  inputs."preserves".owner = "nim-nix-pkgs";
+  inputs."preserves".ref   = "master";
+  inputs."preserves".repo  = "preserves";
   inputs."preserves".type  = "github";
   inputs."preserves".inputs.nixpkgs.follows = "nixpkgs";
   inputs."preserves".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

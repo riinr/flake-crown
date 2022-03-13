@@ -7,19 +7,35 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."binstreams-master".url = "path:./master";
+  inputs."binstreams-master".dir   = "master";
+  inputs."binstreams-master".owner = "nim-nix-pkgs";
+  inputs."binstreams-master".ref   = "master";
+  inputs."binstreams-master".repo  = "binstreams";
+  inputs."binstreams-master".type  = "github";
   inputs."binstreams-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."binstreams-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."binstreams-v0_1_0".url = "path:./v0_1_0";
+  inputs."binstreams-v0_1_0".dir   = "v0_1_0";
+  inputs."binstreams-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."binstreams-v0_1_0".ref   = "master";
+  inputs."binstreams-v0_1_0".repo  = "binstreams";
+  inputs."binstreams-v0_1_0".type  = "github";
   inputs."binstreams-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."binstreams-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."binstreams-v0_1_1".url = "path:./v0_1_1";
+  inputs."binstreams-v0_1_1".dir   = "v0_1_1";
+  inputs."binstreams-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."binstreams-v0_1_1".ref   = "master";
+  inputs."binstreams-v0_1_1".repo  = "binstreams";
+  inputs."binstreams-v0_1_1".type  = "github";
   inputs."binstreams-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."binstreams-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."binstreams-v0_2_0".url = "path:./v0_2_0";
+  inputs."binstreams-v0_2_0".dir   = "v0_2_0";
+  inputs."binstreams-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."binstreams-v0_2_0".ref   = "master";
+  inputs."binstreams-v0_2_0".repo  = "binstreams";
+  inputs."binstreams-v0_2_0".type  = "github";
   inputs."binstreams-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."binstreams-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

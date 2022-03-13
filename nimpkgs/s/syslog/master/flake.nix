@@ -13,10 +13,9 @@
   inputs.src-syslog-master.repo  = "nim-syslog";
   inputs.src-syslog-master.type  = "github";
   
-  inputs."nake".dir   = "nimpkgs/n/nake";
-  inputs."nake".owner = "riinr";
-  inputs."nake".ref   = "flake-pinning";
-  inputs."nake".repo  = "flake-nimble";
+  inputs."nake".owner = "nim-nix-pkgs";
+  inputs."nake".ref   = "master";
+  inputs."nake".repo  = "nake";
   inputs."nake".type  = "github";
   inputs."nake".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nake".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

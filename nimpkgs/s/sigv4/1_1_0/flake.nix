@@ -13,18 +13,16 @@
   inputs.src-sigv4-1_1_0.repo  = "sigv4";
   inputs.src-sigv4-1_1_0.type  = "github";
   
-  inputs."https://github.com/jangko/nimsha2".dir   = "nimpkgs/h/https://github.com/jangko/nimsha2";
-  inputs."https://github.com/jangko/nimsha2".owner = "riinr";
-  inputs."https://github.com/jangko/nimsha2".ref   = "flake-pinning";
-  inputs."https://github.com/jangko/nimsha2".repo  = "flake-nimble";
+  inputs."https://github.com/jangko/nimsha2".owner = "nim-nix-pkgs";
+  inputs."https://github.com/jangko/nimsha2".ref   = "master";
+  inputs."https://github.com/jangko/nimsha2".repo  = "https://github.com/jangko/nimsha2";
   inputs."https://github.com/jangko/nimsha2".type  = "github";
   inputs."https://github.com/jangko/nimsha2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/jangko/nimsha2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/disruptek/balls".dir   = "nimpkgs/h/https://github.com/disruptek/balls";
-  inputs."https://github.com/disruptek/balls".owner = "riinr";
-  inputs."https://github.com/disruptek/balls".ref   = "flake-pinning";
-  inputs."https://github.com/disruptek/balls".repo  = "flake-nimble";
+  inputs."https://github.com/disruptek/balls".owner = "nim-nix-pkgs";
+  inputs."https://github.com/disruptek/balls".ref   = "master";
+  inputs."https://github.com/disruptek/balls".repo  = "https://github.com/disruptek/balls";
   inputs."https://github.com/disruptek/balls".type  = "github";
   inputs."https://github.com/disruptek/balls".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/disruptek/balls".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

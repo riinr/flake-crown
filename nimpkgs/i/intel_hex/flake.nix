@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."intel_hex-master".url = "path:./master";
+  inputs."intel_hex-master".dir   = "master";
+  inputs."intel_hex-master".owner = "nim-nix-pkgs";
+  inputs."intel_hex-master".ref   = "master";
+  inputs."intel_hex-master".repo  = "intel_hex";
+  inputs."intel_hex-master".type  = "github";
   inputs."intel_hex-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."intel_hex-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

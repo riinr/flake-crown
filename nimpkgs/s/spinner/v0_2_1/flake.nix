@@ -13,18 +13,16 @@
   inputs.src-spinner-v0_2_1.repo  = "spinner";
   inputs.src-spinner-v0_2_1.type  = "github";
   
-  inputs."fidget".dir   = "nimpkgs/f/fidget";
-  inputs."fidget".owner = "riinr";
-  inputs."fidget".ref   = "flake-pinning";
-  inputs."fidget".repo  = "flake-nimble";
+  inputs."fidget".owner = "nim-nix-pkgs";
+  inputs."fidget".ref   = "master";
+  inputs."fidget".repo  = "fidget";
   inputs."fidget".type  = "github";
   inputs."fidget".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fidget".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."gradient".dir   = "nimpkgs/g/gradient";
-  inputs."gradient".owner = "riinr";
-  inputs."gradient".ref   = "flake-pinning";
-  inputs."gradient".repo  = "flake-nimble";
+  inputs."gradient".owner = "nim-nix-pkgs";
+  inputs."gradient".ref   = "master";
+  inputs."gradient".repo  = "gradient";
   inputs."gradient".type  = "github";
   inputs."gradient".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gradient".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

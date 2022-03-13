@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."seccomp-master".url = "path:./master";
+  inputs."seccomp-master".dir   = "master";
+  inputs."seccomp-master".owner = "nim-nix-pkgs";
+  inputs."seccomp-master".ref   = "master";
+  inputs."seccomp-master".repo  = "seccomp";
+  inputs."seccomp-master".type  = "github";
   inputs."seccomp-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."seccomp-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."seccomp-0_2_0".url = "path:./0_2_0";
+  inputs."seccomp-0_2_0".dir   = "0_2_0";
+  inputs."seccomp-0_2_0".owner = "nim-nix-pkgs";
+  inputs."seccomp-0_2_0".ref   = "master";
+  inputs."seccomp-0_2_0".repo  = "seccomp";
+  inputs."seccomp-0_2_0".type  = "github";
   inputs."seccomp-0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."seccomp-0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."seccomp-0_2_1".url = "path:./0_2_1";
+  inputs."seccomp-0_2_1".dir   = "0_2_1";
+  inputs."seccomp-0_2_1".owner = "nim-nix-pkgs";
+  inputs."seccomp-0_2_1".ref   = "master";
+  inputs."seccomp-0_2_1".repo  = "seccomp";
+  inputs."seccomp-0_2_1".type  = "github";
   inputs."seccomp-0_2_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."seccomp-0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

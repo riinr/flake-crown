@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."morepretty-master".url = "path:./master";
+  inputs."morepretty-master".dir   = "master";
+  inputs."morepretty-master".owner = "nim-nix-pkgs";
+  inputs."morepretty-master".ref   = "master";
+  inputs."morepretty-master".repo  = "morepretty";
+  inputs."morepretty-master".type  = "github";
   inputs."morepretty-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."morepretty-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."morepretty-0_1_0".url = "path:./0_1_0";
+  inputs."morepretty-0_1_0".dir   = "0_1_0";
+  inputs."morepretty-0_1_0".owner = "nim-nix-pkgs";
+  inputs."morepretty-0_1_0".ref   = "master";
+  inputs."morepretty-0_1_0".repo  = "morepretty";
+  inputs."morepretty-0_1_0".type  = "github";
   inputs."morepretty-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."morepretty-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

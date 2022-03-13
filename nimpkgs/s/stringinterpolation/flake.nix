@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."stringinterpolation-master".url = "path:./master";
+  inputs."stringinterpolation-master".dir   = "master";
+  inputs."stringinterpolation-master".owner = "nim-nix-pkgs";
+  inputs."stringinterpolation-master".ref   = "master";
+  inputs."stringinterpolation-master".repo  = "stringinterpolation";
+  inputs."stringinterpolation-master".type  = "github";
   inputs."stringinterpolation-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stringinterpolation-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

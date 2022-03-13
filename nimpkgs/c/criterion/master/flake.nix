@@ -13,10 +13,9 @@
   inputs.src-criterion-master.repo  = "criterion";
   inputs.src-criterion-master.type  = "github";
   
-  inputs."https://github.com/disruptek/balls".dir   = "nimpkgs/h/https://github.com/disruptek/balls";
-  inputs."https://github.com/disruptek/balls".owner = "riinr";
-  inputs."https://github.com/disruptek/balls".ref   = "flake-pinning";
-  inputs."https://github.com/disruptek/balls".repo  = "flake-nimble";
+  inputs."https://github.com/disruptek/balls".owner = "nim-nix-pkgs";
+  inputs."https://github.com/disruptek/balls".ref   = "master";
+  inputs."https://github.com/disruptek/balls".repo  = "https://github.com/disruptek/balls";
   inputs."https://github.com/disruptek/balls".type  = "github";
   inputs."https://github.com/disruptek/balls".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/disruptek/balls".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

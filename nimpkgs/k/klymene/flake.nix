@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."klymene-main".url = "path:./main";
+  inputs."klymene-main".dir   = "main";
+  inputs."klymene-main".owner = "nim-nix-pkgs";
+  inputs."klymene-main".ref   = "master";
+  inputs."klymene-main".repo  = "klymene";
+  inputs."klymene-main".type  = "github";
   inputs."klymene-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."klymene-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

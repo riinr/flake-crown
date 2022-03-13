@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."phylogeni-main".url = "path:./main";
+  inputs."phylogeni-main".dir   = "main";
+  inputs."phylogeni-main".owner = "nim-nix-pkgs";
+  inputs."phylogeni-main".ref   = "master";
+  inputs."phylogeni-main".repo  = "phylogeni";
+  inputs."phylogeni-main".type  = "github";
   inputs."phylogeni-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."phylogeni-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."phylogeni-v0_0_2".url = "path:./v0_0_2";
+  inputs."phylogeni-v0_0_2".dir   = "v0_0_2";
+  inputs."phylogeni-v0_0_2".owner = "nim-nix-pkgs";
+  inputs."phylogeni-v0_0_2".ref   = "master";
+  inputs."phylogeni-v0_0_2".repo  = "phylogeni";
+  inputs."phylogeni-v0_0_2".type  = "github";
   inputs."phylogeni-v0_0_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."phylogeni-v0_0_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

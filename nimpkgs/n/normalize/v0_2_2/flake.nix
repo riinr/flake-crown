@@ -13,10 +13,9 @@
   inputs.src-normalize-v0_2_2.repo  = "nim-normalize";
   inputs.src-normalize-v0_2_2.type  = "github";
   
-  inputs."unicodedb".dir   = "nimpkgs/u/unicodedb";
-  inputs."unicodedb".owner = "riinr";
-  inputs."unicodedb".ref   = "flake-pinning";
-  inputs."unicodedb".repo  = "flake-nimble";
+  inputs."unicodedb".owner = "nim-nix-pkgs";
+  inputs."unicodedb".ref   = "master";
+  inputs."unicodedb".repo  = "unicodedb";
   inputs."unicodedb".type  = "github";
   inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."anttweakbar-master".url = "path:./master";
+  inputs."anttweakbar-master".dir   = "master";
+  inputs."anttweakbar-master".owner = "nim-nix-pkgs";
+  inputs."anttweakbar-master".ref   = "master";
+  inputs."anttweakbar-master".repo  = "anttweakbar";
+  inputs."anttweakbar-master".type  = "github";
   inputs."anttweakbar-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."anttweakbar-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."anttweakbar-v1_0_2".url = "path:./v1_0_2";
+  inputs."anttweakbar-v1_0_2".dir   = "v1_0_2";
+  inputs."anttweakbar-v1_0_2".owner = "nim-nix-pkgs";
+  inputs."anttweakbar-v1_0_2".ref   = "master";
+  inputs."anttweakbar-v1_0_2".repo  = "anttweakbar";
+  inputs."anttweakbar-v1_0_2".type  = "github";
   inputs."anttweakbar-v1_0_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."anttweakbar-v1_0_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

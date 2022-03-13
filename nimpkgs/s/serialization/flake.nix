@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."serialization-master".url = "path:./master";
+  inputs."serialization-master".dir   = "master";
+  inputs."serialization-master".owner = "nim-nix-pkgs";
+  inputs."serialization-master".ref   = "master";
+  inputs."serialization-master".repo  = "serialization";
+  inputs."serialization-master".type  = "github";
   inputs."serialization-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."serialization-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

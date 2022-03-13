@@ -7,19 +7,35 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."meow-master".url = "path:./master";
+  inputs."meow-master".dir   = "master";
+  inputs."meow-master".owner = "nim-nix-pkgs";
+  inputs."meow-master".ref   = "master";
+  inputs."meow-master".repo  = "meow";
+  inputs."meow-master".type  = "github";
   inputs."meow-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."meow-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."meow-0_1_0".url = "path:./0_1_0";
+  inputs."meow-0_1_0".dir   = "0_1_0";
+  inputs."meow-0_1_0".owner = "nim-nix-pkgs";
+  inputs."meow-0_1_0".ref   = "master";
+  inputs."meow-0_1_0".repo  = "meow";
+  inputs."meow-0_1_0".type  = "github";
   inputs."meow-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."meow-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."meow-0_2_0".url = "path:./0_2_0";
+  inputs."meow-0_2_0".dir   = "0_2_0";
+  inputs."meow-0_2_0".owner = "nim-nix-pkgs";
+  inputs."meow-0_2_0".ref   = "master";
+  inputs."meow-0_2_0".repo  = "meow";
+  inputs."meow-0_2_0".type  = "github";
   inputs."meow-0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."meow-0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."meow-v0_1_0".url = "path:./v0_1_0";
+  inputs."meow-v0_1_0".dir   = "v0_1_0";
+  inputs."meow-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."meow-v0_1_0".ref   = "master";
+  inputs."meow-v0_1_0".repo  = "meow";
+  inputs."meow-v0_1_0".type  = "github";
   inputs."meow-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."meow-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

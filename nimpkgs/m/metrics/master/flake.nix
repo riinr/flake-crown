@@ -13,10 +13,9 @@
   inputs.src-metrics-master.repo  = "nim-metrics";
   inputs.src-metrics-master.type  = "github";
   
-  inputs."chronos".dir   = "nimpkgs/c/chronos";
-  inputs."chronos".owner = "riinr";
-  inputs."chronos".ref   = "flake-pinning";
-  inputs."chronos".repo  = "flake-nimble";
+  inputs."chronos".owner = "nim-nix-pkgs";
+  inputs."chronos".ref   = "master";
+  inputs."chronos".repo  = "chronos";
   inputs."chronos".type  = "github";
   inputs."chronos".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

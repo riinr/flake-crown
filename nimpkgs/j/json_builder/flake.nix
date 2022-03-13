@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."json_builder-master".url = "path:./master";
+  inputs."json_builder-master".dir   = "master";
+  inputs."json_builder-master".owner = "nim-nix-pkgs";
+  inputs."json_builder-master".ref   = "master";
+  inputs."json_builder-master".repo  = "json_builder";
+  inputs."json_builder-master".type  = "github";
   inputs."json_builder-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."json_builder-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

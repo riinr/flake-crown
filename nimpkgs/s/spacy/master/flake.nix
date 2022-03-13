@@ -13,18 +13,16 @@
   inputs.src-spacy-master.repo  = "spacy";
   inputs.src-spacy-master.type  = "github";
   
-  inputs."vmath".dir   = "nimpkgs/v/vmath";
-  inputs."vmath".owner = "riinr";
-  inputs."vmath".ref   = "flake-pinning";
-  inputs."vmath".repo  = "flake-nimble";
+  inputs."vmath".owner = "nim-nix-pkgs";
+  inputs."vmath".ref   = "master";
+  inputs."vmath".repo  = "vmath";
   inputs."vmath".type  = "github";
   inputs."vmath".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."bumpy".dir   = "nimpkgs/b/bumpy";
-  inputs."bumpy".owner = "riinr";
-  inputs."bumpy".ref   = "flake-pinning";
-  inputs."bumpy".repo  = "flake-nimble";
+  inputs."bumpy".owner = "nim-nix-pkgs";
+  inputs."bumpy".ref   = "master";
+  inputs."bumpy".repo  = "bumpy";
   inputs."bumpy".type  = "github";
   inputs."bumpy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bumpy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."tencil-main".url = "path:./main";
+  inputs."tencil-main".dir   = "main";
+  inputs."tencil-main".owner = "nim-nix-pkgs";
+  inputs."tencil-main".ref   = "master";
+  inputs."tencil-main".repo  = "tencil";
+  inputs."tencil-main".type  = "github";
   inputs."tencil-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tencil-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

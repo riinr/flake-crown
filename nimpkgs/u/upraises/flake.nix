@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."upraises-main".url = "path:./main";
+  inputs."upraises-main".dir   = "main";
+  inputs."upraises-main".owner = "nim-nix-pkgs";
+  inputs."upraises-main".ref   = "master";
+  inputs."upraises-main".repo  = "upraises";
+  inputs."upraises-main".type  = "github";
   inputs."upraises-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."upraises-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."upraises-0_1_0".url = "path:./0_1_0";
+  inputs."upraises-0_1_0".dir   = "0_1_0";
+  inputs."upraises-0_1_0".owner = "nim-nix-pkgs";
+  inputs."upraises-0_1_0".ref   = "master";
+  inputs."upraises-0_1_0".repo  = "upraises";
+  inputs."upraises-0_1_0".type  = "github";
   inputs."upraises-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."upraises-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

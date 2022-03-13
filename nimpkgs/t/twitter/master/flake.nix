@@ -13,18 +13,16 @@
   inputs.src-twitter-master.repo  = "twitter.nim";
   inputs.src-twitter-master.type  = "github";
   
-  inputs."uuids".dir   = "nimpkgs/u/uuids";
-  inputs."uuids".owner = "riinr";
-  inputs."uuids".ref   = "flake-pinning";
-  inputs."uuids".repo  = "flake-nimble";
+  inputs."uuids".owner = "nim-nix-pkgs";
+  inputs."uuids".ref   = "master";
+  inputs."uuids".repo  = "uuids";
   inputs."uuids".type  = "github";
   inputs."uuids".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uuids".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."hmac".dir   = "nimpkgs/h/hmac";
-  inputs."hmac".owner = "riinr";
-  inputs."hmac".ref   = "flake-pinning";
-  inputs."hmac".repo  = "flake-nimble";
+  inputs."hmac".owner = "nim-nix-pkgs";
+  inputs."hmac".ref   = "master";
+  inputs."hmac".repo  = "hmac";
   inputs."hmac".type  = "github";
   inputs."hmac".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hmac".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

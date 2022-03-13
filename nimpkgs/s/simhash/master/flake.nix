@@ -13,10 +13,9 @@
   inputs.src-simhash-master.repo  = "simhash-nim";
   inputs.src-simhash-master.type  = "github";
   
-  inputs."lc".dir   = "nimpkgs/l/lc";
-  inputs."lc".owner = "riinr";
-  inputs."lc".ref   = "flake-pinning";
-  inputs."lc".repo  = "flake-nimble";
+  inputs."lc".owner = "nim-nix-pkgs";
+  inputs."lc".ref   = "master";
+  inputs."lc".repo  = "lc";
   inputs."lc".type  = "github";
   inputs."lc".inputs.nixpkgs.follows = "nixpkgs";
   inputs."lc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."c_alikes-master".url = "path:./master";
+  inputs."c_alikes-master".dir   = "master";
+  inputs."c_alikes-master".owner = "nim-nix-pkgs";
+  inputs."c_alikes-master".ref   = "master";
+  inputs."c_alikes-master".repo  = "c_alikes";
+  inputs."c_alikes-master".type  = "github";
   inputs."c_alikes-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."c_alikes-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."c_alikes-v0_2_0".url = "path:./v0_2_0";
+  inputs."c_alikes-v0_2_0".dir   = "v0_2_0";
+  inputs."c_alikes-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."c_alikes-v0_2_0".ref   = "master";
+  inputs."c_alikes-v0_2_0".repo  = "c_alikes";
+  inputs."c_alikes-v0_2_0".type  = "github";
   inputs."c_alikes-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."c_alikes-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

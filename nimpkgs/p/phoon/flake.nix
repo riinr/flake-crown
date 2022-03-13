@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."phoon-master".url = "path:./master";
+  inputs."phoon-master".dir   = "master";
+  inputs."phoon-master".owner = "nim-nix-pkgs";
+  inputs."phoon-master".ref   = "master";
+  inputs."phoon-master".repo  = "phoon";
+  inputs."phoon-master".type  = "github";
   inputs."phoon-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."phoon-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."phoon-v0_1_0".url = "path:./v0_1_0";
+  inputs."phoon-v0_1_0".dir   = "v0_1_0";
+  inputs."phoon-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."phoon-v0_1_0".ref   = "master";
+  inputs."phoon-v0_1_0".repo  = "phoon";
+  inputs."phoon-v0_1_0".type  = "github";
   inputs."phoon-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."phoon-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

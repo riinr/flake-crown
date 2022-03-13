@@ -13,10 +13,9 @@
   inputs.src-moustachu-0_14_0.repo  = "moustachu";
   inputs.src-moustachu-0_14_0.type  = "github";
   
-  inputs."commandeer".dir   = "nimpkgs/c/commandeer";
-  inputs."commandeer".owner = "riinr";
-  inputs."commandeer".ref   = "flake-pinning";
-  inputs."commandeer".repo  = "flake-nimble";
+  inputs."commandeer".owner = "nim-nix-pkgs";
+  inputs."commandeer".ref   = "master";
+  inputs."commandeer".repo  = "commandeer";
   inputs."commandeer".type  = "github";
   inputs."commandeer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."commandeer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

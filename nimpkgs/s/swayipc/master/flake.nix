@@ -13,18 +13,16 @@
   inputs.src-swayipc-master.repo  = "swayipc";
   inputs.src-swayipc-master.type  = "github";
   
-  inputs."nesm".dir   = "nimpkgs/n/nesm";
-  inputs."nesm".owner = "riinr";
-  inputs."nesm".ref   = "flake-pinning";
-  inputs."nesm".repo  = "flake-nimble";
+  inputs."nesm".owner = "nim-nix-pkgs";
+  inputs."nesm".ref   = "master";
+  inputs."nesm".repo  = "nesm";
   inputs."nesm".type  = "github";
   inputs."nesm".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nesm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

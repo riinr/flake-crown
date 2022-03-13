@@ -13,10 +13,9 @@
   inputs.src-netty-master.repo  = "netty";
   inputs.src-netty-master.type  = "github";
   
-  inputs."flatty".dir   = "nimpkgs/f/flatty";
-  inputs."flatty".owner = "riinr";
-  inputs."flatty".ref   = "flake-pinning";
-  inputs."flatty".repo  = "flake-nimble";
+  inputs."flatty".owner = "nim-nix-pkgs";
+  inputs."flatty".ref   = "master";
+  inputs."flatty".repo  = "flatty";
   inputs."flatty".type  = "github";
   inputs."flatty".inputs.nixpkgs.follows = "nixpkgs";
   inputs."flatty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

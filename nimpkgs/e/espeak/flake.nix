@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."espeak-master".url = "path:./master";
+  inputs."espeak-master".dir   = "master";
+  inputs."espeak-master".owner = "nim-nix-pkgs";
+  inputs."espeak-master".ref   = "master";
+  inputs."espeak-master".repo  = "espeak";
+  inputs."espeak-master".type  = "github";
   inputs."espeak-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."espeak-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

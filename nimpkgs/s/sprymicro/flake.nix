@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."sprymicro-master".url = "path:./master";
+  inputs."sprymicro-master".dir   = "master";
+  inputs."sprymicro-master".owner = "nim-nix-pkgs";
+  inputs."sprymicro-master".ref   = "master";
+  inputs."sprymicro-master".repo  = "sprymicro";
+  inputs."sprymicro-master".type  = "github";
   inputs."sprymicro-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sprymicro-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -13,10 +13,9 @@
   inputs.src-nim_tiled-master.repo  = "nim-tiled";
   inputs.src-nim_tiled-master.type  = "github";
   
-  inputs."zippy".dir   = "nimpkgs/z/zippy";
-  inputs."zippy".owner = "riinr";
-  inputs."zippy".ref   = "flake-pinning";
-  inputs."zippy".repo  = "flake-nimble";
+  inputs."zippy".owner = "nim-nix-pkgs";
+  inputs."zippy".ref   = "master";
+  inputs."zippy".repo  = "zippy";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

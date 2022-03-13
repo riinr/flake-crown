@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."mdevolve-master".url = "path:./master";
+  inputs."mdevolve-master".dir   = "master";
+  inputs."mdevolve-master".owner = "nim-nix-pkgs";
+  inputs."mdevolve-master".ref   = "master";
+  inputs."mdevolve-master".repo  = "mdevolve";
+  inputs."mdevolve-master".type  = "github";
   inputs."mdevolve-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mdevolve-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."mdevolve-v0_1_1".url = "path:./v0_1_1";
+  inputs."mdevolve-v0_1_1".dir   = "v0_1_1";
+  inputs."mdevolve-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."mdevolve-v0_1_1".ref   = "master";
+  inputs."mdevolve-v0_1_1".repo  = "mdevolve";
+  inputs."mdevolve-v0_1_1".type  = "github";
   inputs."mdevolve-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mdevolve-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."mdevolve-v1_0_0".url = "path:./v1_0_0";
+  inputs."mdevolve-v1_0_0".dir   = "v1_0_0";
+  inputs."mdevolve-v1_0_0".owner = "nim-nix-pkgs";
+  inputs."mdevolve-v1_0_0".ref   = "master";
+  inputs."mdevolve-v1_0_0".repo  = "mdevolve";
+  inputs."mdevolve-v1_0_0".type  = "github";
   inputs."mdevolve-v1_0_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mdevolve-v1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

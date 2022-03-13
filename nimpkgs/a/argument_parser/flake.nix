@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."argument_parser-master".url = "path:./master";
+  inputs."argument_parser-master".dir   = "master";
+  inputs."argument_parser-master".owner = "nim-nix-pkgs";
+  inputs."argument_parser-master".ref   = "master";
+  inputs."argument_parser-master".repo  = "argument_parser";
+  inputs."argument_parser-master".type  = "github";
   inputs."argument_parser-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."argument_parser-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

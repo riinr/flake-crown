@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."calibre-master".url = "path:./master";
+  inputs."calibre-master".dir   = "master";
+  inputs."calibre-master".owner = "nim-nix-pkgs";
+  inputs."calibre-master".ref   = "master";
+  inputs."calibre-master".repo  = "calibre";
+  inputs."calibre-master".type  = "github";
   inputs."calibre-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."calibre-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

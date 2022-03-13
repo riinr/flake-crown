@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."stb_truetype-master".url = "path:./master";
+  inputs."stb_truetype-master".dir   = "master";
+  inputs."stb_truetype-master".owner = "nim-nix-pkgs";
+  inputs."stb_truetype-master".ref   = "master";
+  inputs."stb_truetype-master".repo  = "stb_truetype";
+  inputs."stb_truetype-master".type  = "github";
   inputs."stb_truetype-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stb_truetype-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."stb_truetype-0_0_1".url = "path:./0_0_1";
+  inputs."stb_truetype-0_0_1".dir   = "0_0_1";
+  inputs."stb_truetype-0_0_1".owner = "nim-nix-pkgs";
+  inputs."stb_truetype-0_0_1".ref   = "master";
+  inputs."stb_truetype-0_0_1".repo  = "stb_truetype";
+  inputs."stb_truetype-0_0_1".type  = "github";
   inputs."stb_truetype-0_0_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stb_truetype-0_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

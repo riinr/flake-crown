@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."shlex-master".url = "path:./master";
+  inputs."shlex-master".dir   = "master";
+  inputs."shlex-master".owner = "nim-nix-pkgs";
+  inputs."shlex-master".ref   = "master";
+  inputs."shlex-master".repo  = "shlex";
+  inputs."shlex-master".type  = "github";
   inputs."shlex-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."shlex-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."shlex-v0_1_0".url = "path:./v0_1_0";
+  inputs."shlex-v0_1_0".dir   = "v0_1_0";
+  inputs."shlex-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."shlex-v0_1_0".ref   = "master";
+  inputs."shlex-v0_1_0".repo  = "shlex";
+  inputs."shlex-v0_1_0".type  = "github";
   inputs."shlex-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."shlex-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

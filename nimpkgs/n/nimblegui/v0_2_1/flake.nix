@@ -13,10 +13,9 @@
   inputs.src-nimblegui-v0_2_1.repo  = "nim_nimble_gui";
   inputs.src-nimblegui-v0_2_1.type  = "github";
   
-  inputs."webgui".dir   = "nimpkgs/w/webgui";
-  inputs."webgui".owner = "riinr";
-  inputs."webgui".ref   = "flake-pinning";
-  inputs."webgui".repo  = "flake-nimble";
+  inputs."webgui".owner = "nim-nix-pkgs";
+  inputs."webgui".ref   = "master";
+  inputs."webgui".repo  = "webgui";
   inputs."webgui".type  = "github";
   inputs."webgui".inputs.nixpkgs.follows = "nixpkgs";
   inputs."webgui".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

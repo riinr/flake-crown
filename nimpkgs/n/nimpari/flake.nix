@@ -7,23 +7,43 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nimpari-master".url = "path:./master";
+  inputs."nimpari-master".dir   = "master";
+  inputs."nimpari-master".owner = "nim-nix-pkgs";
+  inputs."nimpari-master".ref   = "master";
+  inputs."nimpari-master".repo  = "nimpari";
+  inputs."nimpari-master".type  = "github";
   inputs."nimpari-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpari-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimpari-v0_1_0".url = "path:./v0_1_0";
+  inputs."nimpari-v0_1_0".dir   = "v0_1_0";
+  inputs."nimpari-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."nimpari-v0_1_0".ref   = "master";
+  inputs."nimpari-v0_1_0".repo  = "nimpari";
+  inputs."nimpari-v0_1_0".type  = "github";
   inputs."nimpari-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpari-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimpari-v0_1_1".url = "path:./v0_1_1";
+  inputs."nimpari-v0_1_1".dir   = "v0_1_1";
+  inputs."nimpari-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."nimpari-v0_1_1".ref   = "master";
+  inputs."nimpari-v0_1_1".repo  = "nimpari";
+  inputs."nimpari-v0_1_1".type  = "github";
   inputs."nimpari-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpari-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimpari-v0_1_2".url = "path:./v0_1_2";
+  inputs."nimpari-v0_1_2".dir   = "v0_1_2";
+  inputs."nimpari-v0_1_2".owner = "nim-nix-pkgs";
+  inputs."nimpari-v0_1_2".ref   = "master";
+  inputs."nimpari-v0_1_2".repo  = "nimpari";
+  inputs."nimpari-v0_1_2".type  = "github";
   inputs."nimpari-v0_1_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpari-v0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimpari-v0_2_0".url = "path:./v0_2_0";
+  inputs."nimpari-v0_2_0".dir   = "v0_2_0";
+  inputs."nimpari-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."nimpari-v0_2_0".ref   = "master";
+  inputs."nimpari-v0_2_0".repo  = "nimpari";
+  inputs."nimpari-v0_2_0".type  = "github";
   inputs."nimpari-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpari-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

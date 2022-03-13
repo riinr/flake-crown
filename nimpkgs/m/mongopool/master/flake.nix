@@ -13,18 +13,16 @@
   inputs.src-mongopool-master.repo  = "mongopool";
   inputs.src-mongopool-master.type  = "github";
   
-  inputs."bson".dir   = "nimpkgs/b/bson";
-  inputs."bson".owner = "riinr";
-  inputs."bson".ref   = "flake-pinning";
-  inputs."bson".repo  = "flake-nimble";
+  inputs."bson".owner = "nim-nix-pkgs";
+  inputs."bson".ref   = "master";
+  inputs."bson".repo  = "bson";
   inputs."bson".type  = "github";
   inputs."bson".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bson".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."scram".dir   = "nimpkgs/s/scram";
-  inputs."scram".owner = "riinr";
-  inputs."scram".ref   = "flake-pinning";
-  inputs."scram".repo  = "flake-nimble";
+  inputs."scram".owner = "nim-nix-pkgs";
+  inputs."scram".ref   = "master";
+  inputs."scram".repo  = "scram";
   inputs."scram".type  = "github";
   inputs."scram".inputs.nixpkgs.follows = "nixpkgs";
   inputs."scram".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

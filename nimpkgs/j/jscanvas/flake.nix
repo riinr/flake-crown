@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."jscanvas-master".url = "path:./master";
+  inputs."jscanvas-master".dir   = "master";
+  inputs."jscanvas-master".owner = "nim-nix-pkgs";
+  inputs."jscanvas-master".ref   = "master";
+  inputs."jscanvas-master".repo  = "jscanvas";
+  inputs."jscanvas-master".type  = "github";
   inputs."jscanvas-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jscanvas-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."jscanvas-v0_1_0".url = "path:./v0_1_0";
+  inputs."jscanvas-v0_1_0".dir   = "v0_1_0";
+  inputs."jscanvas-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."jscanvas-v0_1_0".ref   = "master";
+  inputs."jscanvas-v0_1_0".repo  = "jscanvas";
+  inputs."jscanvas-v0_1_0".type  = "github";
   inputs."jscanvas-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jscanvas-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

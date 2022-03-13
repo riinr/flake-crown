@@ -13,10 +13,9 @@
   inputs.src-static_server-master.repo  = "nimhttpd";
   inputs.src-static_server-master.type  = "github";
   
-  inputs."finder".dir   = "nimpkgs/f/finder";
-  inputs."finder".owner = "riinr";
-  inputs."finder".ref   = "flake-pinning";
-  inputs."finder".repo  = "flake-nimble";
+  inputs."finder".owner = "nim-nix-pkgs";
+  inputs."finder".ref   = "master";
+  inputs."finder".repo  = "finder";
   inputs."finder".type  = "github";
   inputs."finder".inputs.nixpkgs.follows = "nixpkgs";
   inputs."finder".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

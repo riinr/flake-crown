@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."chronopipe-master".url = "path:./master";
+  inputs."chronopipe-master".dir   = "master";
+  inputs."chronopipe-master".owner = "nim-nix-pkgs";
+  inputs."chronopipe-master".ref   = "master";
+  inputs."chronopipe-master".repo  = "chronopipe";
+  inputs."chronopipe-master".type  = "github";
   inputs."chronopipe-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronopipe-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."chronopipe-v0_1_0".url = "path:./v0_1_0";
+  inputs."chronopipe-v0_1_0".dir   = "v0_1_0";
+  inputs."chronopipe-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."chronopipe-v0_1_0".ref   = "master";
+  inputs."chronopipe-v0_1_0".repo  = "chronopipe";
+  inputs."chronopipe-v0_1_0".type  = "github";
   inputs."chronopipe-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronopipe-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

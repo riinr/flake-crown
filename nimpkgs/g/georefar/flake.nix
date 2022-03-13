@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."georefar-master".url = "path:./master";
+  inputs."georefar-master".dir   = "master";
+  inputs."georefar-master".owner = "nim-nix-pkgs";
+  inputs."georefar-master".ref   = "master";
+  inputs."georefar-master".repo  = "georefar";
+  inputs."georefar-master".type  = "github";
   inputs."georefar-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."georefar-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."georefar-0_1_5".url = "path:./0_1_5";
+  inputs."georefar-0_1_5".dir   = "0_1_5";
+  inputs."georefar-0_1_5".owner = "nim-nix-pkgs";
+  inputs."georefar-0_1_5".ref   = "master";
+  inputs."georefar-0_1_5".repo  = "georefar";
+  inputs."georefar-0_1_5".type  = "github";
   inputs."georefar-0_1_5".inputs.nixpkgs.follows = "nixpkgs";
   inputs."georefar-0_1_5".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."bncurve-master".url = "path:./master";
+  inputs."bncurve-master".dir   = "master";
+  inputs."bncurve-master".owner = "nim-nix-pkgs";
+  inputs."bncurve-master".ref   = "master";
+  inputs."bncurve-master".repo  = "bncurve";
+  inputs."bncurve-master".type  = "github";
   inputs."bncurve-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bncurve-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

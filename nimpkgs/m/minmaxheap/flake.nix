@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."minmaxheap-master".url = "path:./master";
+  inputs."minmaxheap-master".dir   = "master";
+  inputs."minmaxheap-master".owner = "nim-nix-pkgs";
+  inputs."minmaxheap-master".ref   = "master";
+  inputs."minmaxheap-master".repo  = "minmaxheap";
+  inputs."minmaxheap-master".type  = "github";
   inputs."minmaxheap-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."minmaxheap-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

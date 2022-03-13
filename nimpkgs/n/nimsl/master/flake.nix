@@ -13,10 +13,9 @@
   inputs.src-nimsl-master.repo  = "nimsl";
   inputs.src-nimsl-master.type  = "github";
   
-  inputs."variant".dir   = "nimpkgs/v/variant";
-  inputs."variant".owner = "riinr";
-  inputs."variant".ref   = "flake-pinning";
-  inputs."variant".repo  = "flake-nimble";
+  inputs."variant".owner = "nim-nix-pkgs";
+  inputs."variant".ref   = "master";
+  inputs."variant".repo  = "variant";
   inputs."variant".type  = "github";
   inputs."variant".inputs.nixpkgs.follows = "nixpkgs";
   inputs."variant".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

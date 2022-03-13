@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."redisclient-master".url = "path:./master";
+  inputs."redisclient-master".dir   = "master";
+  inputs."redisclient-master".owner = "nim-nix-pkgs";
+  inputs."redisclient-master".ref   = "master";
+  inputs."redisclient-master".repo  = "redisclient";
+  inputs."redisclient-master".type  = "github";
   inputs."redisclient-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."redisclient-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."redisclient-0_1_1".url = "path:./0_1_1";
+  inputs."redisclient-0_1_1".dir   = "0_1_1";
+  inputs."redisclient-0_1_1".owner = "nim-nix-pkgs";
+  inputs."redisclient-0_1_1".ref   = "master";
+  inputs."redisclient-0_1_1".repo  = "redisclient";
+  inputs."redisclient-0_1_1".type  = "github";
   inputs."redisclient-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."redisclient-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

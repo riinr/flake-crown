@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."compactdict-master".url = "path:./master";
+  inputs."compactdict-master".dir   = "master";
+  inputs."compactdict-master".owner = "nim-nix-pkgs";
+  inputs."compactdict-master".ref   = "master";
+  inputs."compactdict-master".repo  = "compactdict";
+  inputs."compactdict-master".type  = "github";
   inputs."compactdict-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."compactdict-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

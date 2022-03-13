@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."w8crc-master".url = "path:./master";
+  inputs."w8crc-master".dir   = "master";
+  inputs."w8crc-master".owner = "nim-nix-pkgs";
+  inputs."w8crc-master".ref   = "master";
+  inputs."w8crc-master".repo  = "w8crc";
+  inputs."w8crc-master".type  = "github";
   inputs."w8crc-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."w8crc-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."w8crc-v1_0_1".url = "path:./v1_0_1";
+  inputs."w8crc-v1_0_1".dir   = "v1_0_1";
+  inputs."w8crc-v1_0_1".owner = "nim-nix-pkgs";
+  inputs."w8crc-v1_0_1".ref   = "master";
+  inputs."w8crc-v1_0_1".repo  = "w8crc";
+  inputs."w8crc-v1_0_1".type  = "github";
   inputs."w8crc-v1_0_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."w8crc-v1_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

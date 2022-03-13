@@ -13,10 +13,9 @@
   inputs.src-tf2plug-master.repo  = "tf2plug";
   inputs.src-tf2plug-master.type  = "gitlab";
   
-  inputs."docopt".dir   = "nimpkgs/d/docopt";
-  inputs."docopt".owner = "riinr";
-  inputs."docopt".ref   = "flake-pinning";
-  inputs."docopt".repo  = "flake-nimble";
+  inputs."docopt".owner = "nim-nix-pkgs";
+  inputs."docopt".ref   = "master";
+  inputs."docopt".repo  = "docopt";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."linuxfb-master".url = "path:./master";
+  inputs."linuxfb-master".dir   = "master";
+  inputs."linuxfb-master".owner = "nim-nix-pkgs";
+  inputs."linuxfb-master".ref   = "master";
+  inputs."linuxfb-master".repo  = "linuxfb";
+  inputs."linuxfb-master".type  = "github";
   inputs."linuxfb-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."linuxfb-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."linuxfb-v0_1_0".url = "path:./v0_1_0";
+  inputs."linuxfb-v0_1_0".dir   = "v0_1_0";
+  inputs."linuxfb-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."linuxfb-v0_1_0".ref   = "master";
+  inputs."linuxfb-v0_1_0".repo  = "linuxfb";
+  inputs."linuxfb-v0_1_0".type  = "github";
   inputs."linuxfb-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."linuxfb-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."linuxfb-v0_1_1".url = "path:./v0_1_1";
+  inputs."linuxfb-v0_1_1".dir   = "v0_1_1";
+  inputs."linuxfb-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."linuxfb-v0_1_1".ref   = "master";
+  inputs."linuxfb-v0_1_1".repo  = "linuxfb";
+  inputs."linuxfb-v0_1_1".type  = "github";
   inputs."linuxfb-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."linuxfb-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

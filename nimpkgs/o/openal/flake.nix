@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."openal-master".url = "path:./master";
+  inputs."openal-master".dir   = "master";
+  inputs."openal-master".owner = "nim-nix-pkgs";
+  inputs."openal-master".ref   = "master";
+  inputs."openal-master".repo  = "openal";
+  inputs."openal-master".type  = "github";
   inputs."openal-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."openal-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."openal-0_1_1".url = "path:./0_1_1";
+  inputs."openal-0_1_1".dir   = "0_1_1";
+  inputs."openal-0_1_1".owner = "nim-nix-pkgs";
+  inputs."openal-0_1_1".ref   = "master";
+  inputs."openal-0_1_1".repo  = "openal";
+  inputs."openal-0_1_1".type  = "github";
   inputs."openal-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."openal-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."openal-v0_1_0".url = "path:./v0_1_0";
+  inputs."openal-v0_1_0".dir   = "v0_1_0";
+  inputs."openal-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."openal-v0_1_0".ref   = "master";
+  inputs."openal-v0_1_0".repo  = "openal";
+  inputs."openal-v0_1_0".type  = "github";
   inputs."openal-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."openal-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

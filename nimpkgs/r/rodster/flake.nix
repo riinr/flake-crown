@@ -7,31 +7,59 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."rodster-main".url = "path:./main";
+  inputs."rodster-main".dir   = "main";
+  inputs."rodster-main".owner = "nim-nix-pkgs";
+  inputs."rodster-main".ref   = "master";
+  inputs."rodster-main".repo  = "rodster";
+  inputs."rodster-main".type  = "github";
   inputs."rodster-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rodster-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."rodster-0_1_0".url = "path:./0_1_0";
+  inputs."rodster-0_1_0".dir   = "0_1_0";
+  inputs."rodster-0_1_0".owner = "nim-nix-pkgs";
+  inputs."rodster-0_1_0".ref   = "master";
+  inputs."rodster-0_1_0".repo  = "rodster";
+  inputs."rodster-0_1_0".type  = "github";
   inputs."rodster-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rodster-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."rodster-0_2_0".url = "path:./0_2_0";
+  inputs."rodster-0_2_0".dir   = "0_2_0";
+  inputs."rodster-0_2_0".owner = "nim-nix-pkgs";
+  inputs."rodster-0_2_0".ref   = "master";
+  inputs."rodster-0_2_0".repo  = "rodster";
+  inputs."rodster-0_2_0".type  = "github";
   inputs."rodster-0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rodster-0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."rodster-0_3_0".url = "path:./0_3_0";
+  inputs."rodster-0_3_0".dir   = "0_3_0";
+  inputs."rodster-0_3_0".owner = "nim-nix-pkgs";
+  inputs."rodster-0_3_0".ref   = "master";
+  inputs."rodster-0_3_0".repo  = "rodster";
+  inputs."rodster-0_3_0".type  = "github";
   inputs."rodster-0_3_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rodster-0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."rodster-1_0_0".url = "path:./1_0_0";
+  inputs."rodster-1_0_0".dir   = "1_0_0";
+  inputs."rodster-1_0_0".owner = "nim-nix-pkgs";
+  inputs."rodster-1_0_0".ref   = "master";
+  inputs."rodster-1_0_0".repo  = "rodster";
+  inputs."rodster-1_0_0".type  = "github";
   inputs."rodster-1_0_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rodster-1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."rodster-1_1_0".url = "path:./1_1_0";
+  inputs."rodster-1_1_0".dir   = "1_1_0";
+  inputs."rodster-1_1_0".owner = "nim-nix-pkgs";
+  inputs."rodster-1_1_0".ref   = "master";
+  inputs."rodster-1_1_0".repo  = "rodster";
+  inputs."rodster-1_1_0".type  = "github";
   inputs."rodster-1_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rodster-1_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."rodster-1_2_0".url = "path:./1_2_0";
+  inputs."rodster-1_2_0".dir   = "1_2_0";
+  inputs."rodster-1_2_0".owner = "nim-nix-pkgs";
+  inputs."rodster-1_2_0".ref   = "master";
+  inputs."rodster-1_2_0".repo  = "rodster";
+  inputs."rodster-1_2_0".type  = "github";
   inputs."rodster-1_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rodster-1_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

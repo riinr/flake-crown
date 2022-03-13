@@ -13,10 +13,9 @@
   inputs.src-nimarrow-v0_1_1.repo  = "nimarrow";
   inputs.src-nimarrow-v0_1_1.type  = "github";
   
-  inputs."nimarrow_glib".dir   = "nimpkgs/n/nimarrow_glib";
-  inputs."nimarrow_glib".owner = "riinr";
-  inputs."nimarrow_glib".ref   = "flake-pinning";
-  inputs."nimarrow_glib".repo  = "flake-nimble";
+  inputs."nimarrow_glib".owner = "nim-nix-pkgs";
+  inputs."nimarrow_glib".ref   = "master";
+  inputs."nimarrow_glib".repo  = "nimarrow_glib";
   inputs."nimarrow_glib".type  = "github";
   inputs."nimarrow_glib".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimarrow_glib".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

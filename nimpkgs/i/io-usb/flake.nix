@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."io-usb-master".url = "path:./master";
+  inputs."io-usb-master".dir   = "master";
+  inputs."io-usb-master".owner = "nim-nix-pkgs";
+  inputs."io-usb-master".ref   = "master";
+  inputs."io-usb-master".repo  = "io-usb";
+  inputs."io-usb-master".type  = "github";
   inputs."io-usb-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."io-usb-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

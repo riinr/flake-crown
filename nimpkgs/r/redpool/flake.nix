@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."redpool-master".url = "path:./master";
+  inputs."redpool-master".dir   = "master";
+  inputs."redpool-master".owner = "nim-nix-pkgs";
+  inputs."redpool-master".ref   = "master";
+  inputs."redpool-master".repo  = "redpool";
+  inputs."redpool-master".type  = "github";
   inputs."redpool-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."redpool-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

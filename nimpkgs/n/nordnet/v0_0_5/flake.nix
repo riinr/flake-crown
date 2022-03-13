@@ -13,18 +13,16 @@
   inputs.src-nordnet-v0_0_5.repo  = "nim_nordnet_api";
   inputs.src-nordnet-v0_0_5.type  = "github";
   
-  inputs."nmqtt".dir   = "nimpkgs/n/nmqtt";
-  inputs."nmqtt".owner = "riinr";
-  inputs."nmqtt".ref   = "flake-pinning";
-  inputs."nmqtt".repo  = "flake-nimble";
+  inputs."nmqtt".owner = "nim-nix-pkgs";
+  inputs."nmqtt".ref   = "master";
+  inputs."nmqtt".repo  = "nmqtt";
   inputs."nmqtt".type  = "github";
   inputs."nmqtt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nmqtt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."q".dir   = "nimpkgs/q/q";
-  inputs."q".owner = "riinr";
-  inputs."q".ref   = "flake-pinning";
-  inputs."q".repo  = "flake-nimble";
+  inputs."q".owner = "nim-nix-pkgs";
+  inputs."q".ref   = "master";
+  inputs."q".repo  = "q";
   inputs."q".type  = "github";
   inputs."q".inputs.nixpkgs.follows = "nixpkgs";
   inputs."q".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

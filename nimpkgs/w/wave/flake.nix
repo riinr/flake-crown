@@ -7,19 +7,35 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."wave-develop".url = "path:./develop";
+  inputs."wave-develop".dir   = "develop";
+  inputs."wave-develop".owner = "nim-nix-pkgs";
+  inputs."wave-develop".ref   = "master";
+  inputs."wave-develop".repo  = "wave";
+  inputs."wave-develop".type  = "github";
   inputs."wave-develop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."wave-develop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."wave-master".url = "path:./master";
+  inputs."wave-master".dir   = "master";
+  inputs."wave-master".owner = "nim-nix-pkgs";
+  inputs."wave-master".ref   = "master";
+  inputs."wave-master".repo  = "wave";
+  inputs."wave-master".type  = "github";
   inputs."wave-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."wave-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."wave-v1_0_0".url = "path:./v1_0_0";
+  inputs."wave-v1_0_0".dir   = "v1_0_0";
+  inputs."wave-v1_0_0".owner = "nim-nix-pkgs";
+  inputs."wave-v1_0_0".ref   = "master";
+  inputs."wave-v1_0_0".repo  = "wave";
+  inputs."wave-v1_0_0".type  = "github";
   inputs."wave-v1_0_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."wave-v1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."wave-v1_1_0".url = "path:./v1_1_0";
+  inputs."wave-v1_1_0".dir   = "v1_1_0";
+  inputs."wave-v1_1_0".owner = "nim-nix-pkgs";
+  inputs."wave-v1_1_0".ref   = "master";
+  inputs."wave-v1_1_0".repo  = "wave";
+  inputs."wave-v1_1_0".type  = "github";
   inputs."wave-v1_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."wave-v1_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

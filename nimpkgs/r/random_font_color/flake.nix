@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."random_font_color-master".url = "path:./master";
+  inputs."random_font_color-master".dir   = "master";
+  inputs."random_font_color-master".owner = "nim-nix-pkgs";
+  inputs."random_font_color-master".ref   = "master";
+  inputs."random_font_color-master".repo  = "random_font_color";
+  inputs."random_font_color-master".type  = "github";
   inputs."random_font_color-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."random_font_color-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

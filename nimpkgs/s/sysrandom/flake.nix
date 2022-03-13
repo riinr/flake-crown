@@ -7,19 +7,35 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."sysrandom-master".url = "path:./master";
+  inputs."sysrandom-master".dir   = "master";
+  inputs."sysrandom-master".owner = "nim-nix-pkgs";
+  inputs."sysrandom-master".ref   = "master";
+  inputs."sysrandom-master".repo  = "sysrandom";
+  inputs."sysrandom-master".type  = "github";
   inputs."sysrandom-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sysrandom-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."sysrandom-v0_1_0".url = "path:./v0_1_0";
+  inputs."sysrandom-v0_1_0".dir   = "v0_1_0";
+  inputs."sysrandom-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."sysrandom-v0_1_0".ref   = "master";
+  inputs."sysrandom-v0_1_0".repo  = "sysrandom";
+  inputs."sysrandom-v0_1_0".type  = "github";
   inputs."sysrandom-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sysrandom-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."sysrandom-v1_0_0".url = "path:./v1_0_0";
+  inputs."sysrandom-v1_0_0".dir   = "v1_0_0";
+  inputs."sysrandom-v1_0_0".owner = "nim-nix-pkgs";
+  inputs."sysrandom-v1_0_0".ref   = "master";
+  inputs."sysrandom-v1_0_0".repo  = "sysrandom";
+  inputs."sysrandom-v1_0_0".type  = "github";
   inputs."sysrandom-v1_0_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sysrandom-v1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."sysrandom-v1_1_0".url = "path:./v1_1_0";
+  inputs."sysrandom-v1_1_0".dir   = "v1_1_0";
+  inputs."sysrandom-v1_1_0".owner = "nim-nix-pkgs";
+  inputs."sysrandom-v1_1_0".ref   = "master";
+  inputs."sysrandom-v1_1_0".repo  = "sysrandom";
+  inputs."sysrandom-v1_1_0".type  = "github";
   inputs."sysrandom-v1_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sysrandom-v1_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."notificatcher-master".url = "path:./master";
+  inputs."notificatcher-master".dir   = "master";
+  inputs."notificatcher-master".owner = "nim-nix-pkgs";
+  inputs."notificatcher-master".ref   = "master";
+  inputs."notificatcher-master".repo  = "notificatcher";
+  inputs."notificatcher-master".type  = "github";
   inputs."notificatcher-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."notificatcher-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."notificatcher-v0_2_0".url = "path:./v0_2_0";
+  inputs."notificatcher-v0_2_0".dir   = "v0_2_0";
+  inputs."notificatcher-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."notificatcher-v0_2_0".ref   = "master";
+  inputs."notificatcher-v0_2_0".repo  = "notificatcher";
+  inputs."notificatcher-v0_2_0".type  = "github";
   inputs."notificatcher-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."notificatcher-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."notificatcher-v0_3_0".url = "path:./v0_3_0";
+  inputs."notificatcher-v0_3_0".dir   = "v0_3_0";
+  inputs."notificatcher-v0_3_0".owner = "nim-nix-pkgs";
+  inputs."notificatcher-v0_3_0".ref   = "master";
+  inputs."notificatcher-v0_3_0".repo  = "notificatcher";
+  inputs."notificatcher-v0_3_0".type  = "github";
   inputs."notificatcher-v0_3_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."notificatcher-v0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

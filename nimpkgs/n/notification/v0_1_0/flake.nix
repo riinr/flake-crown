@@ -13,18 +13,16 @@
   inputs.src-notification-v0_1_0.repo  = "notification";
   inputs.src-notification-v0_1_0.type  = "github";
   
-  inputs."https://github.com/solitudesf/nim-dbus".dir   = "nimpkgs/h/https://github.com/solitudesf/nim-dbus";
-  inputs."https://github.com/solitudesf/nim-dbus".owner = "riinr";
-  inputs."https://github.com/solitudesf/nim-dbus".ref   = "flake-pinning";
-  inputs."https://github.com/solitudesf/nim-dbus".repo  = "flake-nimble";
+  inputs."https://github.com/solitudesf/nim-dbus".owner = "nim-nix-pkgs";
+  inputs."https://github.com/solitudesf/nim-dbus".ref   = "master";
+  inputs."https://github.com/solitudesf/nim-dbus".repo  = "https://github.com/solitudesf/nim-dbus";
   inputs."https://github.com/solitudesf/nim-dbus".type  = "github";
   inputs."https://github.com/solitudesf/nim-dbus".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/solitudesf/nim-dbus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."imageman".dir   = "nimpkgs/i/imageman";
-  inputs."imageman".owner = "riinr";
-  inputs."imageman".ref   = "flake-pinning";
-  inputs."imageman".repo  = "flake-nimble";
+  inputs."imageman".owner = "nim-nix-pkgs";
+  inputs."imageman".ref   = "master";
+  inputs."imageman".repo  = "imageman";
   inputs."imageman".type  = "github";
   inputs."imageman".inputs.nixpkgs.follows = "nixpkgs";
   inputs."imageman".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

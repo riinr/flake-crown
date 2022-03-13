@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."synthesis-master".url = "path:./master";
+  inputs."synthesis-master".dir   = "master";
+  inputs."synthesis-master".owner = "nim-nix-pkgs";
+  inputs."synthesis-master".ref   = "master";
+  inputs."synthesis-master".repo  = "synthesis";
+  inputs."synthesis-master".type  = "github";
   inputs."synthesis-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."synthesis-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."synthesis-v0_1_0".url = "path:./v0_1_0";
+  inputs."synthesis-v0_1_0".dir   = "v0_1_0";
+  inputs."synthesis-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."synthesis-v0_1_0".ref   = "master";
+  inputs."synthesis-v0_1_0".repo  = "synthesis";
+  inputs."synthesis-v0_1_0".type  = "github";
   inputs."synthesis-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."synthesis-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."synthesis-v0_2_0".url = "path:./v0_2_0";
+  inputs."synthesis-v0_2_0".dir   = "v0_2_0";
+  inputs."synthesis-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."synthesis-v0_2_0".ref   = "master";
+  inputs."synthesis-v0_2_0".repo  = "synthesis";
+  inputs."synthesis-v0_2_0".type  = "github";
   inputs."synthesis-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."synthesis-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

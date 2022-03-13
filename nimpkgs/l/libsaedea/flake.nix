@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."libsaedea-master".url = "path:./master";
+  inputs."libsaedea-master".dir   = "master";
+  inputs."libsaedea-master".owner = "nim-nix-pkgs";
+  inputs."libsaedea-master".ref   = "master";
+  inputs."libsaedea-master".repo  = "libsaedea";
+  inputs."libsaedea-master".type  = "github";
   inputs."libsaedea-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libsaedea-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

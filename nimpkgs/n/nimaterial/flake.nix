@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nimaterial-master".url = "path:./master";
+  inputs."nimaterial-master".dir   = "master";
+  inputs."nimaterial-master".owner = "nim-nix-pkgs";
+  inputs."nimaterial-master".ref   = "master";
+  inputs."nimaterial-master".repo  = "nimaterial";
+  inputs."nimaterial-master".type  = "github";
   inputs."nimaterial-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimaterial-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimaterial-ver_0_3_0".url = "path:./ver_0_3_0";
+  inputs."nimaterial-ver_0_3_0".dir   = "ver_0_3_0";
+  inputs."nimaterial-ver_0_3_0".owner = "nim-nix-pkgs";
+  inputs."nimaterial-ver_0_3_0".ref   = "master";
+  inputs."nimaterial-ver_0_3_0".repo  = "nimaterial";
+  inputs."nimaterial-ver_0_3_0".type  = "github";
   inputs."nimaterial-ver_0_3_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimaterial-ver_0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."exporttosqlite3-main".url = "path:./main";
+  inputs."exporttosqlite3-main".dir   = "main";
+  inputs."exporttosqlite3-main".owner = "nim-nix-pkgs";
+  inputs."exporttosqlite3-main".ref   = "master";
+  inputs."exporttosqlite3-main".repo  = "exporttosqlite3";
+  inputs."exporttosqlite3-main".type  = "github";
   inputs."exporttosqlite3-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."exporttosqlite3-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

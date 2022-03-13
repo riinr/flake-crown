@@ -13,10 +13,9 @@
   inputs.src-nerve-0_1_0.repo  = "nerve-rpc";
   inputs.src-nerve-0_1_0.type  = "github";
   
-  inputs."httpbeast".dir   = "nimpkgs/h/httpbeast";
-  inputs."httpbeast".owner = "riinr";
-  inputs."httpbeast".ref   = "flake-pinning";
-  inputs."httpbeast".repo  = "flake-nimble";
+  inputs."httpbeast".owner = "nim-nix-pkgs";
+  inputs."httpbeast".ref   = "master";
+  inputs."httpbeast".repo  = "httpbeast";
   inputs."httpbeast".type  = "github";
   inputs."httpbeast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."httpbeast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

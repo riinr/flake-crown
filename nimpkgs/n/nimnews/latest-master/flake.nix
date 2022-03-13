@@ -13,74 +13,65 @@
   inputs.src-nimnews-latest-master.repo  = "nimnews";
   inputs.src-nimnews-latest-master.type  = "github";
   
-  inputs."docopt".dir   = "nimpkgs/d/docopt";
-  inputs."docopt".owner = "riinr";
-  inputs."docopt".ref   = "flake-pinning";
-  inputs."docopt".repo  = "flake-nimble";
+  inputs."docopt".owner = "nim-nix-pkgs";
+  inputs."docopt".ref   = "master";
+  inputs."docopt".repo  = "docopt";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nuuid".dir   = "nimpkgs/n/nuuid";
-  inputs."nuuid".owner = "riinr";
-  inputs."nuuid".ref   = "flake-pinning";
-  inputs."nuuid".repo  = "flake-nimble";
+  inputs."nuuid".owner = "nim-nix-pkgs";
+  inputs."nuuid".ref   = "master";
+  inputs."nuuid".repo  = "nuuid";
   inputs."nuuid".type  = "github";
   inputs."nuuid".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nuuid".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."scram".dir   = "nimpkgs/s/scram";
-  inputs."scram".owner = "riinr";
-  inputs."scram".ref   = "flake-pinning";
-  inputs."scram".repo  = "flake-nimble";
+  inputs."scram".owner = "nim-nix-pkgs";
+  inputs."scram".ref   = "master";
+  inputs."scram".repo  = "scram";
   inputs."scram".type  = "github";
   inputs."scram".inputs.nixpkgs.follows = "nixpkgs";
   inputs."scram".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."passgen".dir   = "nimpkgs/p/passgen";
-  inputs."passgen".owner = "riinr";
-  inputs."passgen".ref   = "flake-pinning";
-  inputs."passgen".repo  = "flake-nimble";
+  inputs."passgen".owner = "nim-nix-pkgs";
+  inputs."passgen".ref   = "master";
+  inputs."passgen".repo  = "passgen";
   inputs."passgen".type  = "github";
   inputs."passgen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."passgen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."npeg".dir   = "nimpkgs/n/npeg";
-  inputs."npeg".owner = "riinr";
-  inputs."npeg".ref   = "flake-pinning";
-  inputs."npeg".repo  = "flake-nimble";
+  inputs."npeg".owner = "nim-nix-pkgs";
+  inputs."npeg".ref   = "master";
+  inputs."npeg".repo  = "npeg";
   inputs."npeg".type  = "github";
   inputs."npeg".inputs.nixpkgs.follows = "nixpkgs";
   inputs."npeg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimassets".dir   = "nimpkgs/n/nimassets";
-  inputs."nimassets".owner = "riinr";
-  inputs."nimassets".ref   = "flake-pinning";
-  inputs."nimassets".repo  = "flake-nimble";
+  inputs."nimassets".owner = "nim-nix-pkgs";
+  inputs."nimassets".ref   = "master";
+  inputs."nimassets".repo  = "nimassets";
   inputs."nimassets".type  = "github";
   inputs."nimassets".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimassets".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."jester".dir   = "nimpkgs/j/jester";
-  inputs."jester".owner = "riinr";
-  inputs."jester".ref   = "flake-pinning";
-  inputs."jester".repo  = "flake-nimble";
+  inputs."jester".owner = "nim-nix-pkgs";
+  inputs."jester".ref   = "master";
+  inputs."jester".repo  = "jester";
   inputs."jester".type  = "github";
   inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."templates".dir   = "nimpkgs/t/templates";
-  inputs."templates".owner = "riinr";
-  inputs."templates".ref   = "flake-pinning";
-  inputs."templates".repo  = "flake-nimble";
+  inputs."templates".owner = "nim-nix-pkgs";
+  inputs."templates".ref   = "master";
+  inputs."templates".repo  = "templates";
   inputs."templates".type  = "github";
   inputs."templates".inputs.nixpkgs.follows = "nixpkgs";
   inputs."templates".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."asynctools".dir   = "nimpkgs/a/asynctools";
-  inputs."asynctools".owner = "riinr";
-  inputs."asynctools".ref   = "flake-pinning";
-  inputs."asynctools".repo  = "flake-nimble";
+  inputs."asynctools".owner = "nim-nix-pkgs";
+  inputs."asynctools".ref   = "master";
+  inputs."asynctools".repo  = "asynctools";
   inputs."asynctools".type  = "github";
   inputs."asynctools".inputs.nixpkgs.follows = "nixpkgs";
   inputs."asynctools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

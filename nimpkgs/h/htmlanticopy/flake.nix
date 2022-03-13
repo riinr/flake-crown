@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."htmlanticopy-master".url = "path:./master";
+  inputs."htmlanticopy-master".dir   = "master";
+  inputs."htmlanticopy-master".owner = "nim-nix-pkgs";
+  inputs."htmlanticopy-master".ref   = "master";
+  inputs."htmlanticopy-master".repo  = "htmlanticopy";
+  inputs."htmlanticopy-master".type  = "github";
   inputs."htmlanticopy-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."htmlanticopy-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

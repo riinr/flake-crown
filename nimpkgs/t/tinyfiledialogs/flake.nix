@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."tinyfiledialogs-master".url = "path:./master";
+  inputs."tinyfiledialogs-master".dir   = "master";
+  inputs."tinyfiledialogs-master".owner = "nim-nix-pkgs";
+  inputs."tinyfiledialogs-master".ref   = "master";
+  inputs."tinyfiledialogs-master".repo  = "tinyfiledialogs";
+  inputs."tinyfiledialogs-master".type  = "github";
   inputs."tinyfiledialogs-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tinyfiledialogs-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

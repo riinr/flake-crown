@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."tor-master".url = "path:./master";
+  inputs."tor-master".dir   = "master";
+  inputs."tor-master".owner = "nim-nix-pkgs";
+  inputs."tor-master".ref   = "master";
+  inputs."tor-master".repo  = "tor";
+  inputs."tor-master".type  = "github";
   inputs."tor-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tor-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."tor-0_1_0".url = "path:./0_1_0";
+  inputs."tor-0_1_0".dir   = "0_1_0";
+  inputs."tor-0_1_0".owner = "nim-nix-pkgs";
+  inputs."tor-0_1_0".ref   = "master";
+  inputs."tor-0_1_0".repo  = "tor";
+  inputs."tor-0_1_0".type  = "github";
   inputs."tor-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tor-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."tor-0_2_0".url = "path:./0_2_0";
+  inputs."tor-0_2_0".dir   = "0_2_0";
+  inputs."tor-0_2_0".owner = "nim-nix-pkgs";
+  inputs."tor-0_2_0".ref   = "master";
+  inputs."tor-0_2_0".repo  = "tor";
+  inputs."tor-0_2_0".type  = "github";
   inputs."tor-0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tor-0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

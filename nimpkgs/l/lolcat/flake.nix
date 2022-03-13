@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."lolcat-master".url = "path:./master";
+  inputs."lolcat-master".dir   = "master";
+  inputs."lolcat-master".owner = "nim-nix-pkgs";
+  inputs."lolcat-master".ref   = "master";
+  inputs."lolcat-master".repo  = "lolcat";
+  inputs."lolcat-master".type  = "github";
   inputs."lolcat-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."lolcat-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."fae-master".url = "path:./master";
+  inputs."fae-master".dir   = "master";
+  inputs."fae-master".owner = "nim-nix-pkgs";
+  inputs."fae-master".ref   = "master";
+  inputs."fae-master".repo  = "fae";
+  inputs."fae-master".type  = "github";
   inputs."fae-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fae-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."fae-v1_0_0".url = "path:./v1_0_0";
+  inputs."fae-v1_0_0".dir   = "v1_0_0";
+  inputs."fae-v1_0_0".owner = "nim-nix-pkgs";
+  inputs."fae-v1_0_0".ref   = "master";
+  inputs."fae-v1_0_0".repo  = "fae";
+  inputs."fae-v1_0_0".type  = "github";
   inputs."fae-v1_0_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fae-v1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."fae-v1_1_0".url = "path:./v1_1_0";
+  inputs."fae-v1_1_0".dir   = "v1_1_0";
+  inputs."fae-v1_1_0".owner = "nim-nix-pkgs";
+  inputs."fae-v1_1_0".ref   = "master";
+  inputs."fae-v1_1_0".repo  = "fae";
+  inputs."fae-v1_1_0".type  = "github";
   inputs."fae-v1_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fae-v1_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

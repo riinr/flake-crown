@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."db_wrapper-master".url = "path:./master";
+  inputs."db_wrapper-master".dir   = "master";
+  inputs."db_wrapper-master".owner = "nim-nix-pkgs";
+  inputs."db_wrapper-master".ref   = "master";
+  inputs."db_wrapper-master".repo  = "db_wrapper";
+  inputs."db_wrapper-master".type  = "github";
   inputs."db_wrapper-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."db_wrapper-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

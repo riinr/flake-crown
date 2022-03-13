@@ -13,10 +13,9 @@
   inputs.src-nimly-v0_2_1.repo  = "nimly";
   inputs.src-nimly-v0_2_1.type  = "github";
   
-  inputs."patty".dir   = "nimpkgs/p/patty";
-  inputs."patty".owner = "riinr";
-  inputs."patty".ref   = "flake-pinning";
-  inputs."patty".repo  = "flake-nimble";
+  inputs."patty".owner = "nim-nix-pkgs";
+  inputs."patty".ref   = "master";
+  inputs."patty".repo  = "patty";
   inputs."patty".type  = "github";
   inputs."patty".inputs.nixpkgs.follows = "nixpkgs";
   inputs."patty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

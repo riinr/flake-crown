@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nimmonocypher-master".url = "path:./master";
+  inputs."nimmonocypher-master".dir   = "master";
+  inputs."nimmonocypher-master".owner = "nim-nix-pkgs";
+  inputs."nimmonocypher-master".ref   = "master";
+  inputs."nimmonocypher-master".repo  = "nimmonocypher";
+  inputs."nimmonocypher-master".type  = "github";
   inputs."nimmonocypher-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimmonocypher-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimmonocypher-v0_1_1".url = "path:./v0_1_1";
+  inputs."nimmonocypher-v0_1_1".dir   = "v0_1_1";
+  inputs."nimmonocypher-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."nimmonocypher-v0_1_1".ref   = "master";
+  inputs."nimmonocypher-v0_1_1".repo  = "nimmonocypher";
+  inputs."nimmonocypher-v0_1_1".type  = "github";
   inputs."nimmonocypher-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimmonocypher-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimmonocypher-v0_1_2".url = "path:./v0_1_2";
+  inputs."nimmonocypher-v0_1_2".dir   = "v0_1_2";
+  inputs."nimmonocypher-v0_1_2".owner = "nim-nix-pkgs";
+  inputs."nimmonocypher-v0_1_2".ref   = "master";
+  inputs."nimmonocypher-v0_1_2".repo  = "nimmonocypher";
+  inputs."nimmonocypher-v0_1_2".type  = "github";
   inputs."nimmonocypher-v0_1_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimmonocypher-v0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

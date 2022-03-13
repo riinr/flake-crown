@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."therapist-master".url = "path:./master";
+  inputs."therapist-master".dir   = "master";
+  inputs."therapist-master".owner = "nim-nix-pkgs";
+  inputs."therapist-master".ref   = "master";
+  inputs."therapist-master".repo  = "therapist";
+  inputs."therapist-master".type  = "github";
   inputs."therapist-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."therapist-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."therapist-v0_1_0".url = "path:./v0_1_0";
+  inputs."therapist-v0_1_0".dir   = "v0_1_0";
+  inputs."therapist-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."therapist-v0_1_0".ref   = "master";
+  inputs."therapist-v0_1_0".repo  = "therapist";
+  inputs."therapist-v0_1_0".type  = "github";
   inputs."therapist-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."therapist-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -13,18 +13,16 @@
   inputs.src-nicoru-develop.repo  = "nicoru";
   inputs.src-nicoru-develop.type  = "github";
   
-  inputs."https://github.com/def-/nim-syscall".dir   = "nimpkgs/h/https://github.com/def-/nim-syscall";
-  inputs."https://github.com/def-/nim-syscall".owner = "riinr";
-  inputs."https://github.com/def-/nim-syscall".ref   = "flake-pinning";
-  inputs."https://github.com/def-/nim-syscall".repo  = "flake-nimble";
+  inputs."https://github.com/def-/nim-syscall".owner = "nim-nix-pkgs";
+  inputs."https://github.com/def-/nim-syscall".ref   = "master";
+  inputs."https://github.com/def-/nim-syscall".repo  = "https://github.com/def-/nim-syscall";
   inputs."https://github.com/def-/nim-syscall".type  = "github";
   inputs."https://github.com/def-/nim-syscall".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/def-/nim-syscall".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."seccomp".dir   = "nimpkgs/s/seccomp";
-  inputs."seccomp".owner = "riinr";
-  inputs."seccomp".ref   = "flake-pinning";
-  inputs."seccomp".repo  = "flake-nimble";
+  inputs."seccomp".owner = "nim-nix-pkgs";
+  inputs."seccomp".ref   = "master";
+  inputs."seccomp".repo  = "seccomp";
   inputs."seccomp".type  = "github";
   inputs."seccomp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."seccomp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

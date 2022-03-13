@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."joyent_http_parser-master".url = "path:./master";
+  inputs."joyent_http_parser-master".dir   = "master";
+  inputs."joyent_http_parser-master".owner = "nim-nix-pkgs";
+  inputs."joyent_http_parser-master".ref   = "master";
+  inputs."joyent_http_parser-master".repo  = "joyent_http_parser";
+  inputs."joyent_http_parser-master".type  = "github";
   inputs."joyent_http_parser-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."joyent_http_parser-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

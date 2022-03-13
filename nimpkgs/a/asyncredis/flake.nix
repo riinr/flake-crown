@@ -7,19 +7,35 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."asyncredis-master".url = "path:./master";
+  inputs."asyncredis-master".dir   = "master";
+  inputs."asyncredis-master".owner = "nim-nix-pkgs";
+  inputs."asyncredis-master".ref   = "master";
+  inputs."asyncredis-master".repo  = "asyncredis";
+  inputs."asyncredis-master".type  = "github";
   inputs."asyncredis-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."asyncredis-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."asyncredis-v0_8".url = "path:./v0_8";
+  inputs."asyncredis-v0_8".dir   = "v0_8";
+  inputs."asyncredis-v0_8".owner = "nim-nix-pkgs";
+  inputs."asyncredis-v0_8".ref   = "master";
+  inputs."asyncredis-v0_8".repo  = "asyncredis";
+  inputs."asyncredis-v0_8".type  = "github";
   inputs."asyncredis-v0_8".inputs.nixpkgs.follows = "nixpkgs";
   inputs."asyncredis-v0_8".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."asyncredis-v0_8_1".url = "path:./v0_8_1";
+  inputs."asyncredis-v0_8_1".dir   = "v0_8_1";
+  inputs."asyncredis-v0_8_1".owner = "nim-nix-pkgs";
+  inputs."asyncredis-v0_8_1".ref   = "master";
+  inputs."asyncredis-v0_8_1".repo  = "asyncredis";
+  inputs."asyncredis-v0_8_1".type  = "github";
   inputs."asyncredis-v0_8_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."asyncredis-v0_8_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."asyncredis-v0_8_2".url = "path:./v0_8_2";
+  inputs."asyncredis-v0_8_2".dir   = "v0_8_2";
+  inputs."asyncredis-v0_8_2".owner = "nim-nix-pkgs";
+  inputs."asyncredis-v0_8_2".ref   = "master";
+  inputs."asyncredis-v0_8_2".repo  = "asyncredis";
+  inputs."asyncredis-v0_8_2".type  = "github";
   inputs."asyncredis-v0_8_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."asyncredis-v0_8_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

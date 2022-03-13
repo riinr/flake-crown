@@ -13,42 +13,37 @@
   inputs.src-notifishower-v0_6_0.repo  = "notifishower";
   inputs.src-notifishower-v0_6_0.type  = "github";
   
-  inputs."imlib2".dir   = "nimpkgs/i/imlib2";
-  inputs."imlib2".owner = "riinr";
-  inputs."imlib2".ref   = "flake-pinning";
-  inputs."imlib2".repo  = "flake-nimble";
+  inputs."imlib2".owner = "nim-nix-pkgs";
+  inputs."imlib2".ref   = "master";
+  inputs."imlib2".repo  = "imlib2";
   inputs."imlib2".type  = "github";
   inputs."imlib2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."imlib2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/pmunch/x11".dir   = "nimpkgs/h/https://github.com/pmunch/x11";
-  inputs."https://github.com/pmunch/x11".owner = "riinr";
-  inputs."https://github.com/pmunch/x11".ref   = "flake-pinning";
-  inputs."https://github.com/pmunch/x11".repo  = "flake-nimble";
+  inputs."https://github.com/pmunch/x11".owner = "nim-nix-pkgs";
+  inputs."https://github.com/pmunch/x11".ref   = "master";
+  inputs."https://github.com/pmunch/x11".repo  = "https://github.com/pmunch/x11";
   inputs."https://github.com/pmunch/x11".type  = "github";
   inputs."https://github.com/pmunch/x11".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/pmunch/x11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."npeg".dir   = "nimpkgs/n/npeg";
-  inputs."npeg".owner = "riinr";
-  inputs."npeg".ref   = "flake-pinning";
-  inputs."npeg".repo  = "flake-nimble";
+  inputs."npeg".owner = "nim-nix-pkgs";
+  inputs."npeg".ref   = "master";
+  inputs."npeg".repo  = "npeg";
   inputs."npeg".type  = "github";
   inputs."npeg".inputs.nixpkgs.follows = "nixpkgs";
   inputs."npeg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."kiwi".dir   = "nimpkgs/k/kiwi";
-  inputs."kiwi".owner = "riinr";
-  inputs."kiwi".ref   = "flake-pinning";
-  inputs."kiwi".repo  = "flake-nimble";
+  inputs."kiwi".owner = "nim-nix-pkgs";
+  inputs."kiwi".ref   = "master";
+  inputs."kiwi".repo  = "kiwi";
   inputs."kiwi".type  = "github";
   inputs."kiwi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."kiwi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."termstyle".dir   = "nimpkgs/t/termstyle";
-  inputs."termstyle".owner = "riinr";
-  inputs."termstyle".ref   = "flake-pinning";
-  inputs."termstyle".repo  = "flake-nimble";
+  inputs."termstyle".owner = "nim-nix-pkgs";
+  inputs."termstyle".ref   = "master";
+  inputs."termstyle".repo  = "termstyle";
   inputs."termstyle".type  = "github";
   inputs."termstyle".inputs.nixpkgs.follows = "nixpkgs";
   inputs."termstyle".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

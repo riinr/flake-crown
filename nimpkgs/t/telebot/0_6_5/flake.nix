@@ -13,10 +13,9 @@
   inputs.src-telebot-0_6_5.repo  = "telebot.nim";
   inputs.src-telebot-0_6_5.type  = "github";
   
-  inputs."sam".dir   = "nimpkgs/s/sam";
-  inputs."sam".owner = "riinr";
-  inputs."sam".ref   = "flake-pinning";
-  inputs."sam".repo  = "flake-nimble";
+  inputs."sam".owner = "nim-nix-pkgs";
+  inputs."sam".ref   = "master";
+  inputs."sam".repo  = "sam";
   inputs."sam".type  = "github";
   inputs."sam".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sam".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,10 +13,9 @@
   inputs.src-testutils-0_4_1.repo  = "nim-testutils";
   inputs.src-testutils-0_4_1.type  = "github";
   
-  inputs."https://github.com/status-im/nim-unittest2.git".dir   = "nimpkgs/h/https://github.com/status-im/nim-unittest2.git";
-  inputs."https://github.com/status-im/nim-unittest2.git".owner = "riinr";
-  inputs."https://github.com/status-im/nim-unittest2.git".ref   = "flake-pinning";
-  inputs."https://github.com/status-im/nim-unittest2.git".repo  = "flake-nimble";
+  inputs."https://github.com/status-im/nim-unittest2.git".owner = "nim-nix-pkgs";
+  inputs."https://github.com/status-im/nim-unittest2.git".ref   = "master";
+  inputs."https://github.com/status-im/nim-unittest2.git".repo  = "https://github.com/status-im/nim-unittest2.git";
   inputs."https://github.com/status-im/nim-unittest2.git".type  = "github";
   inputs."https://github.com/status-im/nim-unittest2.git".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/status-im/nim-unittest2.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

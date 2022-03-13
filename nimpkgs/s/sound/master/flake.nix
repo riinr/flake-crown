@@ -13,34 +13,30 @@
   inputs.src-sound-master.repo  = "sound";
   inputs.src-sound-master.type  = "github";
   
-  inputs."jnim".dir   = "nimpkgs/j/jnim";
-  inputs."jnim".owner = "riinr";
-  inputs."jnim".ref   = "flake-pinning";
-  inputs."jnim".repo  = "flake-nimble";
+  inputs."jnim".owner = "nim-nix-pkgs";
+  inputs."jnim".ref   = "master";
+  inputs."jnim".repo  = "jnim";
   inputs."jnim".type  = "github";
   inputs."jnim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jnim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/yglukhov/async_http_request".dir   = "nimpkgs/h/https://github.com/yglukhov/async_http_request";
-  inputs."https://github.com/yglukhov/async_http_request".owner = "riinr";
-  inputs."https://github.com/yglukhov/async_http_request".ref   = "flake-pinning";
-  inputs."https://github.com/yglukhov/async_http_request".repo  = "flake-nimble";
+  inputs."https://github.com/yglukhov/async_http_request".owner = "nim-nix-pkgs";
+  inputs."https://github.com/yglukhov/async_http_request".ref   = "master";
+  inputs."https://github.com/yglukhov/async_http_request".repo  = "https://github.com/yglukhov/async_http_request";
   inputs."https://github.com/yglukhov/async_http_request".type  = "github";
   inputs."https://github.com/yglukhov/async_http_request".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/yglukhov/async_http_request".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."jsbind".dir   = "nimpkgs/j/jsbind";
-  inputs."jsbind".owner = "riinr";
-  inputs."jsbind".ref   = "flake-pinning";
-  inputs."jsbind".repo  = "flake-nimble";
+  inputs."jsbind".owner = "nim-nix-pkgs";
+  inputs."jsbind".ref   = "master";
+  inputs."jsbind".repo  = "jsbind";
   inputs."jsbind".type  = "github";
   inputs."jsbind".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsbind".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/yglukhov/android".dir   = "nimpkgs/h/https://github.com/yglukhov/android";
-  inputs."https://github.com/yglukhov/android".owner = "riinr";
-  inputs."https://github.com/yglukhov/android".ref   = "flake-pinning";
-  inputs."https://github.com/yglukhov/android".repo  = "flake-nimble";
+  inputs."https://github.com/yglukhov/android".owner = "nim-nix-pkgs";
+  inputs."https://github.com/yglukhov/android".ref   = "master";
+  inputs."https://github.com/yglukhov/android".repo  = "https://github.com/yglukhov/android";
   inputs."https://github.com/yglukhov/android".type  = "github";
   inputs."https://github.com/yglukhov/android".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/yglukhov/android".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

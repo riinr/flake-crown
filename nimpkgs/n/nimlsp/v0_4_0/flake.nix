@@ -13,10 +13,9 @@
   inputs.src-nimlsp-v0_4_0.repo  = "nimlsp";
   inputs.src-nimlsp-v0_4_0.type  = "github";
   
-  inputs."jsonschema".dir   = "nimpkgs/j/jsonschema";
-  inputs."jsonschema".owner = "riinr";
-  inputs."jsonschema".ref   = "flake-pinning";
-  inputs."jsonschema".repo  = "flake-nimble";
+  inputs."jsonschema".owner = "nim-nix-pkgs";
+  inputs."jsonschema".ref   = "master";
+  inputs."jsonschema".repo  = "jsonschema";
   inputs."jsonschema".type  = "github";
   inputs."jsonschema".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsonschema".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

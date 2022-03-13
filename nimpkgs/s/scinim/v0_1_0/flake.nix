@@ -13,18 +13,16 @@
   inputs.src-scinim-v0_1_0.repo  = "scinim";
   inputs.src-scinim-v0_1_0.type  = "github";
   
-  inputs."arraymancer".dir   = "nimpkgs/a/arraymancer";
-  inputs."arraymancer".owner = "riinr";
-  inputs."arraymancer".ref   = "flake-pinning";
-  inputs."arraymancer".repo  = "flake-nimble";
+  inputs."arraymancer".owner = "nim-nix-pkgs";
+  inputs."arraymancer".ref   = "master";
+  inputs."arraymancer".repo  = "arraymancer";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."polynumeric".dir   = "nimpkgs/p/polynumeric";
-  inputs."polynumeric".owner = "riinr";
-  inputs."polynumeric".ref   = "flake-pinning";
-  inputs."polynumeric".repo  = "flake-nimble";
+  inputs."polynumeric".owner = "nim-nix-pkgs";
+  inputs."polynumeric".ref   = "master";
+  inputs."polynumeric".repo  = "polynumeric";
   inputs."polynumeric".type  = "github";
   inputs."polynumeric".inputs.nixpkgs.follows = "nixpkgs";
   inputs."polynumeric".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

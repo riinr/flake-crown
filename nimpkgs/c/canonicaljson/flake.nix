@@ -7,31 +7,59 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."canonicaljson-master".url = "path:./master";
+  inputs."canonicaljson-master".dir   = "master";
+  inputs."canonicaljson-master".owner = "nim-nix-pkgs";
+  inputs."canonicaljson-master".ref   = "master";
+  inputs."canonicaljson-master".repo  = "canonicaljson";
+  inputs."canonicaljson-master".type  = "github";
   inputs."canonicaljson-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."canonicaljson-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."canonicaljson-1_0_0".url = "path:./1_0_0";
+  inputs."canonicaljson-1_0_0".dir   = "1_0_0";
+  inputs."canonicaljson-1_0_0".owner = "nim-nix-pkgs";
+  inputs."canonicaljson-1_0_0".ref   = "master";
+  inputs."canonicaljson-1_0_0".repo  = "canonicaljson";
+  inputs."canonicaljson-1_0_0".type  = "github";
   inputs."canonicaljson-1_0_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."canonicaljson-1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."canonicaljson-1_0_1".url = "path:./1_0_1";
+  inputs."canonicaljson-1_0_1".dir   = "1_0_1";
+  inputs."canonicaljson-1_0_1".owner = "nim-nix-pkgs";
+  inputs."canonicaljson-1_0_1".ref   = "master";
+  inputs."canonicaljson-1_0_1".repo  = "canonicaljson";
+  inputs."canonicaljson-1_0_1".type  = "github";
   inputs."canonicaljson-1_0_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."canonicaljson-1_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."canonicaljson-1_0_2".url = "path:./1_0_2";
+  inputs."canonicaljson-1_0_2".dir   = "1_0_2";
+  inputs."canonicaljson-1_0_2".owner = "nim-nix-pkgs";
+  inputs."canonicaljson-1_0_2".ref   = "master";
+  inputs."canonicaljson-1_0_2".repo  = "canonicaljson";
+  inputs."canonicaljson-1_0_2".type  = "github";
   inputs."canonicaljson-1_0_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."canonicaljson-1_0_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."canonicaljson-1_1_0".url = "path:./1_1_0";
+  inputs."canonicaljson-1_1_0".dir   = "1_1_0";
+  inputs."canonicaljson-1_1_0".owner = "nim-nix-pkgs";
+  inputs."canonicaljson-1_1_0".ref   = "master";
+  inputs."canonicaljson-1_1_0".repo  = "canonicaljson";
+  inputs."canonicaljson-1_1_0".type  = "github";
   inputs."canonicaljson-1_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."canonicaljson-1_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."canonicaljson-1_1_1".url = "path:./1_1_1";
+  inputs."canonicaljson-1_1_1".dir   = "1_1_1";
+  inputs."canonicaljson-1_1_1".owner = "nim-nix-pkgs";
+  inputs."canonicaljson-1_1_1".ref   = "master";
+  inputs."canonicaljson-1_1_1".repo  = "canonicaljson";
+  inputs."canonicaljson-1_1_1".type  = "github";
   inputs."canonicaljson-1_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."canonicaljson-1_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."canonicaljson-1_1_2".url = "path:./1_1_2";
+  inputs."canonicaljson-1_1_2".dir   = "1_1_2";
+  inputs."canonicaljson-1_1_2".owner = "nim-nix-pkgs";
+  inputs."canonicaljson-1_1_2".ref   = "master";
+  inputs."canonicaljson-1_1_2".repo  = "canonicaljson";
+  inputs."canonicaljson-1_1_2".type  = "github";
   inputs."canonicaljson-1_1_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."canonicaljson-1_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

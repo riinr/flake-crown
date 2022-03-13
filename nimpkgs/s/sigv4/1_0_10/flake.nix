@@ -13,10 +13,9 @@
   inputs.src-sigv4-1_0_10.repo  = "sigv4";
   inputs.src-sigv4-1_0_10.type  = "github";
   
-  inputs."https://github.com/jangko/nimsha2".dir   = "nimpkgs/h/https://github.com/jangko/nimsha2";
-  inputs."https://github.com/jangko/nimsha2".owner = "riinr";
-  inputs."https://github.com/jangko/nimsha2".ref   = "flake-pinning";
-  inputs."https://github.com/jangko/nimsha2".repo  = "flake-nimble";
+  inputs."https://github.com/jangko/nimsha2".owner = "nim-nix-pkgs";
+  inputs."https://github.com/jangko/nimsha2".ref   = "master";
+  inputs."https://github.com/jangko/nimsha2".repo  = "https://github.com/jangko/nimsha2";
   inputs."https://github.com/jangko/nimsha2".type  = "github";
   inputs."https://github.com/jangko/nimsha2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/jangko/nimsha2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

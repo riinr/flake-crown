@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."unrolled-master".url = "path:./master";
+  inputs."unrolled-master".dir   = "master";
+  inputs."unrolled-master".owner = "nim-nix-pkgs";
+  inputs."unrolled-master".ref   = "master";
+  inputs."unrolled-master".repo  = "unrolled";
+  inputs."unrolled-master".type  = "github";
   inputs."unrolled-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unrolled-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."unrolled-v0_1-alpha".url = "path:./v0_1-alpha";
+  inputs."unrolled-v0_1-alpha".dir   = "v0_1-alpha";
+  inputs."unrolled-v0_1-alpha".owner = "nim-nix-pkgs";
+  inputs."unrolled-v0_1-alpha".ref   = "master";
+  inputs."unrolled-v0_1-alpha".repo  = "unrolled";
+  inputs."unrolled-v0_1-alpha".type  = "github";
   inputs."unrolled-v0_1-alpha".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unrolled-v0_1-alpha".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

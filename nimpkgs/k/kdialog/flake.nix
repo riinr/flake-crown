@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."kdialog-master".url = "path:./master";
+  inputs."kdialog-master".dir   = "master";
+  inputs."kdialog-master".owner = "nim-nix-pkgs";
+  inputs."kdialog-master".ref   = "master";
+  inputs."kdialog-master".repo  = "kdialog";
+  inputs."kdialog-master".type  = "github";
   inputs."kdialog-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."kdialog-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."winres-v0_1_0".url = "path:./v0_1_0";
+  inputs."winres-v0_1_0".dir   = "v0_1_0";
+  inputs."winres-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."winres-v0_1_0".ref   = "master";
+  inputs."winres-v0_1_0".repo  = "winres";
+  inputs."winres-v0_1_0".type  = "github";
   inputs."winres-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."winres-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -13,10 +13,9 @@
   inputs.src-noisy-master.repo  = "noisy";
   inputs.src-noisy-master.type  = "github";
   
-  inputs."nimsimd".dir   = "nimpkgs/n/nimsimd";
-  inputs."nimsimd".owner = "riinr";
-  inputs."nimsimd".ref   = "flake-pinning";
-  inputs."nimsimd".repo  = "flake-nimble";
+  inputs."nimsimd".owner = "nim-nix-pkgs";
+  inputs."nimsimd".ref   = "master";
+  inputs."nimsimd".repo  = "nimsimd";
   inputs."nimsimd".type  = "github";
   inputs."nimsimd".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimsimd".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

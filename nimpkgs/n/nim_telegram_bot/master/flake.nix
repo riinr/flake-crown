@@ -13,34 +13,30 @@
   inputs.src-nim_telegram_bot-master.repo  = "nim-telegram-bot";
   inputs.src-nim_telegram_bot-master.type  = "github";
   
-  inputs."openexchangerates".dir   = "nimpkgs/o/openexchangerates";
-  inputs."openexchangerates".owner = "riinr";
-  inputs."openexchangerates".ref   = "flake-pinning";
-  inputs."openexchangerates".repo  = "flake-nimble";
+  inputs."openexchangerates".owner = "nim-nix-pkgs";
+  inputs."openexchangerates".ref   = "master";
+  inputs."openexchangerates".repo  = "openexchangerates";
   inputs."openexchangerates".type  = "github";
   inputs."openexchangerates".inputs.nixpkgs.follows = "nixpkgs";
   inputs."openexchangerates".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."telebot".dir   = "nimpkgs/t/telebot";
-  inputs."telebot".owner = "riinr";
-  inputs."telebot".ref   = "flake-pinning";
-  inputs."telebot".repo  = "flake-nimble";
+  inputs."telebot".owner = "nim-nix-pkgs";
+  inputs."telebot".ref   = "master";
+  inputs."telebot".repo  = "telebot";
   inputs."telebot".type  = "github";
   inputs."telebot".inputs.nixpkgs.follows = "nixpkgs";
   inputs."telebot".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimpy".dir   = "nimpkgs/n/nimpy";
-  inputs."nimpy".owner = "riinr";
-  inputs."nimpy".ref   = "flake-pinning";
-  inputs."nimpy".repo  = "flake-nimble";
+  inputs."nimpy".owner = "nim-nix-pkgs";
+  inputs."nimpy".ref   = "master";
+  inputs."nimpy".repo  = "nimpy";
   inputs."nimpy".type  = "github";
   inputs."nimpy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."zip".dir   = "nimpkgs/z/zip";
-  inputs."zip".owner = "riinr";
-  inputs."zip".ref   = "flake-pinning";
-  inputs."zip".repo  = "flake-nimble";
+  inputs."zip".owner = "nim-nix-pkgs";
+  inputs."zip".ref   = "master";
+  inputs."zip".repo  = "zip";
   inputs."zip".type  = "github";
   inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

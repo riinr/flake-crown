@@ -13,18 +13,16 @@
   inputs.src-hotdoc-main.repo  = "hotdoc";
   inputs.src-hotdoc-main.type  = "github";
   
-  inputs."docopt".dir   = "nimpkgs/d/docopt";
-  inputs."docopt".owner = "riinr";
-  inputs."docopt".ref   = "flake-pinning";
-  inputs."docopt".repo  = "flake-nimble";
+  inputs."docopt".owner = "nim-nix-pkgs";
+  inputs."docopt".ref   = "master";
+  inputs."docopt".repo  = "docopt";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."karax".dir   = "nimpkgs/k/karax";
-  inputs."karax".owner = "riinr";
-  inputs."karax".ref   = "flake-pinning";
-  inputs."karax".repo  = "flake-nimble";
+  inputs."karax".owner = "nim-nix-pkgs";
+  inputs."karax".ref   = "master";
+  inputs."karax".repo  = "karax";
   inputs."karax".type  = "github";
   inputs."karax".inputs.nixpkgs.follows = "nixpkgs";
   inputs."karax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

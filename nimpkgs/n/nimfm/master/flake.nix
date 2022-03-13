@@ -13,18 +13,16 @@
   inputs.src-nimfm-master.repo  = "nimfm";
   inputs.src-nimfm-master.type  = "github";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimlapack".dir   = "nimpkgs/n/nimlapack";
-  inputs."nimlapack".owner = "riinr";
-  inputs."nimlapack".ref   = "flake-pinning";
-  inputs."nimlapack".repo  = "flake-nimble";
+  inputs."nimlapack".owner = "nim-nix-pkgs";
+  inputs."nimlapack".ref   = "master";
+  inputs."nimlapack".repo  = "nimlapack";
   inputs."nimlapack".type  = "github";
   inputs."nimlapack".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimlapack".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

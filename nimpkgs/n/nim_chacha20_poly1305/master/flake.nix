@@ -13,10 +13,9 @@
   inputs.src-nim_chacha20_poly1305-master.repo  = "nim_chacha20_poly1305";
   inputs.src-nim_chacha20_poly1305-master.type  = "github";
   
-  inputs."stint".dir   = "nimpkgs/s/stint";
-  inputs."stint".owner = "riinr";
-  inputs."stint".ref   = "flake-pinning";
-  inputs."stint".repo  = "flake-nimble";
+  inputs."stint".owner = "nim-nix-pkgs";
+  inputs."stint".ref   = "master";
+  inputs."stint".repo  = "stint";
   inputs."stint".type  = "github";
   inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

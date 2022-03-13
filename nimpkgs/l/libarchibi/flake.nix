@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."libarchibi-master".url = "path:./master";
+  inputs."libarchibi-master".dir   = "master";
+  inputs."libarchibi-master".owner = "nim-nix-pkgs";
+  inputs."libarchibi-master".ref   = "master";
+  inputs."libarchibi-master".repo  = "libarchibi";
+  inputs."libarchibi-master".type  = "github";
   inputs."libarchibi-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libarchibi-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

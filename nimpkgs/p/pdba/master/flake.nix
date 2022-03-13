@@ -13,18 +13,16 @@
   inputs.src-pdba-master.repo  = "pdba";
   inputs.src-pdba-master.type  = "github";
   
-  inputs."yaml".dir   = "nimpkgs/y/yaml";
-  inputs."yaml".owner = "riinr";
-  inputs."yaml".ref   = "flake-pinning";
-  inputs."yaml".repo  = "flake-nimble";
+  inputs."yaml".owner = "nim-nix-pkgs";
+  inputs."yaml".ref   = "master";
+  inputs."yaml".repo  = "yaml";
   inputs."yaml".type  = "github";
   inputs."yaml".inputs.nixpkgs.follows = "nixpkgs";
   inputs."yaml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."ndb".dir   = "nimpkgs/n/ndb";
-  inputs."ndb".owner = "riinr";
-  inputs."ndb".ref   = "flake-pinning";
-  inputs."ndb".repo  = "flake-nimble";
+  inputs."ndb".owner = "nim-nix-pkgs";
+  inputs."ndb".ref   = "master";
+  inputs."ndb".repo  = "ndb";
   inputs."ndb".type  = "github";
   inputs."ndb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ndb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

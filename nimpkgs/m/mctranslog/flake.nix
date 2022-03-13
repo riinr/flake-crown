@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."mctranslog-master".url = "path:./master";
+  inputs."mctranslog-master".dir   = "master";
+  inputs."mctranslog-master".owner = "nim-nix-pkgs";
+  inputs."mctranslog-master".ref   = "master";
+  inputs."mctranslog-master".repo  = "mctranslog";
+  inputs."mctranslog-master".type  = "github";
   inputs."mctranslog-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mctranslog-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."mctranslog-v0_1_4".url = "path:./v0_1_4";
+  inputs."mctranslog-v0_1_4".dir   = "v0_1_4";
+  inputs."mctranslog-v0_1_4".owner = "nim-nix-pkgs";
+  inputs."mctranslog-v0_1_4".ref   = "master";
+  inputs."mctranslog-v0_1_4".repo  = "mctranslog";
+  inputs."mctranslog-v0_1_4".type  = "github";
   inputs."mctranslog-v0_1_4".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mctranslog-v0_1_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

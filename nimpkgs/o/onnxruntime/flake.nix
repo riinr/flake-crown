@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."onnxruntime-main".url = "path:./main";
+  inputs."onnxruntime-main".dir   = "main";
+  inputs."onnxruntime-main".owner = "nim-nix-pkgs";
+  inputs."onnxruntime-main".ref   = "master";
+  inputs."onnxruntime-main".repo  = "onnxruntime";
+  inputs."onnxruntime-main".type  = "github";
   inputs."onnxruntime-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."onnxruntime-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

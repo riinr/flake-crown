@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."opencolor-v1_9_1".url = "path:./v1_9_1";
+  inputs."opencolor-v1_9_1".dir   = "v1_9_1";
+  inputs."opencolor-v1_9_1".owner = "nim-nix-pkgs";
+  inputs."opencolor-v1_9_1".ref   = "master";
+  inputs."opencolor-v1_9_1".repo  = "opencolor";
+  inputs."opencolor-v1_9_1".type  = "github";
   inputs."opencolor-v1_9_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."opencolor-v1_9_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."opencolor-v1_9_1_1".url = "path:./v1_9_1_1";
+  inputs."opencolor-v1_9_1_1".dir   = "v1_9_1_1";
+  inputs."opencolor-v1_9_1_1".owner = "nim-nix-pkgs";
+  inputs."opencolor-v1_9_1_1".ref   = "master";
+  inputs."opencolor-v1_9_1_1".repo  = "opencolor";
+  inputs."opencolor-v1_9_1_1".type  = "github";
   inputs."opencolor-v1_9_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."opencolor-v1_9_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -13,18 +13,16 @@
   inputs.src-til-v0_0_2.repo  = "til-tool";
   inputs.src-til-v0_0_2.type  = "github";
   
-  inputs."colorize".dir   = "nimpkgs/c/colorize";
-  inputs."colorize".owner = "riinr";
-  inputs."colorize".ref   = "flake-pinning";
-  inputs."colorize".repo  = "flake-nimble";
+  inputs."colorize".owner = "nim-nix-pkgs";
+  inputs."colorize".ref   = "master";
+  inputs."colorize".repo  = "colorize";
   inputs."colorize".type  = "github";
   inputs."colorize".inputs.nixpkgs.follows = "nixpkgs";
   inputs."colorize".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."argparse".dir   = "nimpkgs/a/argparse";
-  inputs."argparse".owner = "riinr";
-  inputs."argparse".ref   = "flake-pinning";
-  inputs."argparse".repo  = "flake-nimble";
+  inputs."argparse".owner = "nim-nix-pkgs";
+  inputs."argparse".ref   = "master";
+  inputs."argparse".repo  = "argparse";
   inputs."argparse".type  = "github";
   inputs."argparse".inputs.nixpkgs.follows = "nixpkgs";
   inputs."argparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

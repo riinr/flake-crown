@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."ulid-master".url = "path:./master";
+  inputs."ulid-master".dir   = "master";
+  inputs."ulid-master".owner = "nim-nix-pkgs";
+  inputs."ulid-master".ref   = "master";
+  inputs."ulid-master".repo  = "ulid";
+  inputs."ulid-master".type  = "github";
   inputs."ulid-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ulid-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."ulid-v0_2_0".url = "path:./v0_2_0";
+  inputs."ulid-v0_2_0".dir   = "v0_2_0";
+  inputs."ulid-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."ulid-v0_2_0".ref   = "master";
+  inputs."ulid-v0_2_0".repo  = "ulid";
+  inputs."ulid-v0_2_0".type  = "github";
   inputs."ulid-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ulid-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."ulid-v0_3_0".url = "path:./v0_3_0";
+  inputs."ulid-v0_3_0".dir   = "v0_3_0";
+  inputs."ulid-v0_3_0".owner = "nim-nix-pkgs";
+  inputs."ulid-v0_3_0".ref   = "master";
+  inputs."ulid-v0_3_0".repo  = "ulid";
+  inputs."ulid-v0_3_0".type  = "github";
   inputs."ulid-v0_3_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ulid-v0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

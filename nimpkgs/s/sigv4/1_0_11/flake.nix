@@ -13,18 +13,16 @@
   inputs.src-sigv4-1_0_11.repo  = "sigv4";
   inputs.src-sigv4-1_0_11.type  = "github";
   
-  inputs."https://github.com/jangko/nimsha2".dir   = "nimpkgs/h/https://github.com/jangko/nimsha2";
-  inputs."https://github.com/jangko/nimsha2".owner = "riinr";
-  inputs."https://github.com/jangko/nimsha2".ref   = "flake-pinning";
-  inputs."https://github.com/jangko/nimsha2".repo  = "flake-nimble";
+  inputs."https://github.com/jangko/nimsha2".owner = "nim-nix-pkgs";
+  inputs."https://github.com/jangko/nimsha2".ref   = "master";
+  inputs."https://github.com/jangko/nimsha2".repo  = "https://github.com/jangko/nimsha2";
   inputs."https://github.com/jangko/nimsha2".type  = "github";
   inputs."https://github.com/jangko/nimsha2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/jangko/nimsha2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/disruptek/testes".dir   = "nimpkgs/h/https://github.com/disruptek/testes";
-  inputs."https://github.com/disruptek/testes".owner = "riinr";
-  inputs."https://github.com/disruptek/testes".ref   = "flake-pinning";
-  inputs."https://github.com/disruptek/testes".repo  = "flake-nimble";
+  inputs."https://github.com/disruptek/testes".owner = "nim-nix-pkgs";
+  inputs."https://github.com/disruptek/testes".ref   = "master";
+  inputs."https://github.com/disruptek/testes".repo  = "https://github.com/disruptek/testes";
   inputs."https://github.com/disruptek/testes".type  = "github";
   inputs."https://github.com/disruptek/testes".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/disruptek/testes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

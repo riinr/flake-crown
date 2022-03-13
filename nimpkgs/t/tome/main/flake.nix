@@ -13,18 +13,16 @@
   inputs.src-tome-main.repo  = "tome";
   inputs.src-tome-main.type  = "github";
   
-  inputs."zip".dir   = "nimpkgs/z/zip";
-  inputs."zip".owner = "riinr";
-  inputs."zip".ref   = "flake-pinning";
-  inputs."zip".repo  = "flake-nimble";
+  inputs."zip".owner = "nim-nix-pkgs";
+  inputs."zip".ref   = "master";
+  inputs."zip".repo  = "zip";
   inputs."zip".type  = "github";
   inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."untar".dir   = "nimpkgs/u/untar";
-  inputs."untar".owner = "riinr";
-  inputs."untar".ref   = "flake-pinning";
-  inputs."untar".repo  = "flake-nimble";
+  inputs."untar".owner = "nim-nix-pkgs";
+  inputs."untar".ref   = "master";
+  inputs."untar".repo  = "untar";
   inputs."untar".type  = "github";
   inputs."untar".inputs.nixpkgs.follows = "nixpkgs";
   inputs."untar".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

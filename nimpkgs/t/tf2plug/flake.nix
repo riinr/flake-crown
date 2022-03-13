@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."tf2plug-master".url = "path:./master";
+  inputs."tf2plug-master".dir   = "master";
+  inputs."tf2plug-master".owner = "nim-nix-pkgs";
+  inputs."tf2plug-master".ref   = "master";
+  inputs."tf2plug-master".repo  = "tf2plug";
+  inputs."tf2plug-master".type  = "github";
   inputs."tf2plug-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tf2plug-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

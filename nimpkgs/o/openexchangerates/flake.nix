@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."openexchangerates-master".url = "path:./master";
+  inputs."openexchangerates-master".dir   = "master";
+  inputs."openexchangerates-master".owner = "nim-nix-pkgs";
+  inputs."openexchangerates-master".ref   = "master";
+  inputs."openexchangerates-master".repo  = "openexchangerates";
+  inputs."openexchangerates-master".type  = "github";
   inputs."openexchangerates-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."openexchangerates-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

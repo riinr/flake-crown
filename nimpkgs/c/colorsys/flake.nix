@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."colorsys-master".url = "path:./master";
+  inputs."colorsys-master".dir   = "master";
+  inputs."colorsys-master".owner = "nim-nix-pkgs";
+  inputs."colorsys-master".ref   = "master";
+  inputs."colorsys-master".repo  = "colorsys";
+  inputs."colorsys-master".type  = "github";
   inputs."colorsys-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."colorsys-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

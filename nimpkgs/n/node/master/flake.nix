@@ -13,10 +13,9 @@
   inputs.src-node-master.repo  = "nimnode";
   inputs.src-node-master.type  = "github";
   
-  inputs."httpkit".dir   = "nimpkgs/h/httpkit";
-  inputs."httpkit".owner = "riinr";
-  inputs."httpkit".ref   = "flake-pinning";
-  inputs."httpkit".repo  = "flake-nimble";
+  inputs."httpkit".owner = "nim-nix-pkgs";
+  inputs."httpkit".ref   = "master";
+  inputs."httpkit".repo  = "httpkit";
   inputs."httpkit".type  = "github";
   inputs."httpkit".inputs.nixpkgs.follows = "nixpkgs";
   inputs."httpkit".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

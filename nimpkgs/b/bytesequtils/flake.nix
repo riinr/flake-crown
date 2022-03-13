@@ -7,31 +7,59 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."bytesequtils-main".url = "path:./main";
+  inputs."bytesequtils-main".dir   = "main";
+  inputs."bytesequtils-main".owner = "nim-nix-pkgs";
+  inputs."bytesequtils-main".ref   = "master";
+  inputs."bytesequtils-main".repo  = "bytesequtils";
+  inputs."bytesequtils-main".type  = "github";
   inputs."bytesequtils-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bytesequtils-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."bytesequtils-v1_0_0".url = "path:./v1_0_0";
+  inputs."bytesequtils-v1_0_0".dir   = "v1_0_0";
+  inputs."bytesequtils-v1_0_0".owner = "nim-nix-pkgs";
+  inputs."bytesequtils-v1_0_0".ref   = "master";
+  inputs."bytesequtils-v1_0_0".repo  = "bytesequtils";
+  inputs."bytesequtils-v1_0_0".type  = "github";
   inputs."bytesequtils-v1_0_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bytesequtils-v1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."bytesequtils-v1_1_0".url = "path:./v1_1_0";
+  inputs."bytesequtils-v1_1_0".dir   = "v1_1_0";
+  inputs."bytesequtils-v1_1_0".owner = "nim-nix-pkgs";
+  inputs."bytesequtils-v1_1_0".ref   = "master";
+  inputs."bytesequtils-v1_1_0".repo  = "bytesequtils";
+  inputs."bytesequtils-v1_1_0".type  = "github";
   inputs."bytesequtils-v1_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bytesequtils-v1_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."bytesequtils-v1_1_1".url = "path:./v1_1_1";
+  inputs."bytesequtils-v1_1_1".dir   = "v1_1_1";
+  inputs."bytesequtils-v1_1_1".owner = "nim-nix-pkgs";
+  inputs."bytesequtils-v1_1_1".ref   = "master";
+  inputs."bytesequtils-v1_1_1".repo  = "bytesequtils";
+  inputs."bytesequtils-v1_1_1".type  = "github";
   inputs."bytesequtils-v1_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bytesequtils-v1_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."bytesequtils-v1_1_2".url = "path:./v1_1_2";
+  inputs."bytesequtils-v1_1_2".dir   = "v1_1_2";
+  inputs."bytesequtils-v1_1_2".owner = "nim-nix-pkgs";
+  inputs."bytesequtils-v1_1_2".ref   = "master";
+  inputs."bytesequtils-v1_1_2".repo  = "bytesequtils";
+  inputs."bytesequtils-v1_1_2".type  = "github";
   inputs."bytesequtils-v1_1_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bytesequtils-v1_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."bytesequtils-v1_1_3".url = "path:./v1_1_3";
+  inputs."bytesequtils-v1_1_3".dir   = "v1_1_3";
+  inputs."bytesequtils-v1_1_3".owner = "nim-nix-pkgs";
+  inputs."bytesequtils-v1_1_3".ref   = "master";
+  inputs."bytesequtils-v1_1_3".repo  = "bytesequtils";
+  inputs."bytesequtils-v1_1_3".type  = "github";
   inputs."bytesequtils-v1_1_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bytesequtils-v1_1_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."bytesequtils-v1_2_0".url = "path:./v1_2_0";
+  inputs."bytesequtils-v1_2_0".dir   = "v1_2_0";
+  inputs."bytesequtils-v1_2_0".owner = "nim-nix-pkgs";
+  inputs."bytesequtils-v1_2_0".ref   = "master";
+  inputs."bytesequtils-v1_2_0".repo  = "bytesequtils";
+  inputs."bytesequtils-v1_2_0".type  = "github";
   inputs."bytesequtils-v1_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bytesequtils-v1_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

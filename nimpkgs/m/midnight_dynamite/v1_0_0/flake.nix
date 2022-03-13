@@ -13,26 +13,23 @@
   inputs.src-midnight_dynamite-v1_0_0.repo  = "midnight_dynamite";
   inputs.src-midnight_dynamite-v1_0_0.type  = "github";
   
-  inputs."nake".dir   = "nimpkgs/n/nake";
-  inputs."nake".owner = "riinr";
-  inputs."nake".ref   = "flake-pinning";
-  inputs."nake".repo  = "flake-nimble";
+  inputs."nake".owner = "nim-nix-pkgs";
+  inputs."nake".ref   = "master";
+  inputs."nake".repo  = "nake";
   inputs."nake".type  = "github";
   inputs."nake".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nake".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."argument_parser".dir   = "nimpkgs/a/argument_parser";
-  inputs."argument_parser".owner = "riinr";
-  inputs."argument_parser".ref   = "flake-pinning";
-  inputs."argument_parser".repo  = "flake-nimble";
+  inputs."argument_parser".owner = "nim-nix-pkgs";
+  inputs."argument_parser".ref   = "master";
+  inputs."argument_parser".repo  = "argument_parser";
   inputs."argument_parser".type  = "github";
   inputs."argument_parser".inputs.nixpkgs.follows = "nixpkgs";
   inputs."argument_parser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/gradha/badger_bits.git".dir   = "nimpkgs/h/https://github.com/gradha/badger_bits.git";
-  inputs."https://github.com/gradha/badger_bits.git".owner = "riinr";
-  inputs."https://github.com/gradha/badger_bits.git".ref   = "flake-pinning";
-  inputs."https://github.com/gradha/badger_bits.git".repo  = "flake-nimble";
+  inputs."https://github.com/gradha/badger_bits.git".owner = "nim-nix-pkgs";
+  inputs."https://github.com/gradha/badger_bits.git".ref   = "master";
+  inputs."https://github.com/gradha/badger_bits.git".repo  = "https://github.com/gradha/badger_bits.git";
   inputs."https://github.com/gradha/badger_bits.git".type  = "github";
   inputs."https://github.com/gradha/badger_bits.git".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/gradha/badger_bits.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

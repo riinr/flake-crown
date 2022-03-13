@@ -13,18 +13,16 @@
   inputs.src-matplotnim-v0_2_0.repo  = "matplotnim";
   inputs.src-matplotnim-v0_2_0.type  = "github";
   
-  inputs."tempfile".dir   = "nimpkgs/t/tempfile";
-  inputs."tempfile".owner = "riinr";
-  inputs."tempfile".ref   = "flake-pinning";
-  inputs."tempfile".repo  = "flake-nimble";
+  inputs."tempfile".owner = "nim-nix-pkgs";
+  inputs."tempfile".ref   = "master";
+  inputs."tempfile".repo  = "tempfile";
   inputs."tempfile".type  = "github";
   inputs."tempfile".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tempfile".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimpy".dir   = "nimpkgs/n/nimpy";
-  inputs."nimpy".owner = "riinr";
-  inputs."nimpy".ref   = "flake-pinning";
-  inputs."nimpy".repo  = "flake-nimble";
+  inputs."nimpy".owner = "nim-nix-pkgs";
+  inputs."nimpy".ref   = "master";
+  inputs."nimpy".repo  = "nimpy";
   inputs."nimpy".type  = "github";
   inputs."nimpy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

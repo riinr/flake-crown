@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."xlsxio-main".url = "path:./main";
+  inputs."xlsxio-main".dir   = "main";
+  inputs."xlsxio-main".owner = "nim-nix-pkgs";
+  inputs."xlsxio-main".ref   = "master";
+  inputs."xlsxio-main".repo  = "xlsxio";
+  inputs."xlsxio-main".type  = "github";
   inputs."xlsxio-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."xlsxio-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

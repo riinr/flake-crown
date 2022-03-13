@@ -13,26 +13,23 @@
   inputs.src-servclip-master.repo  = "servclip";
   inputs.src-servclip-master.type  = "gitlab";
   
-  inputs."jester".dir   = "nimpkgs/j/jester";
-  inputs."jester".owner = "riinr";
-  inputs."jester".ref   = "flake-pinning";
-  inputs."jester".repo  = "flake-nimble";
+  inputs."jester".owner = "nim-nix-pkgs";
+  inputs."jester".ref   = "master";
+  inputs."jester".repo  = "jester";
   inputs."jester".type  = "github";
   inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimclipboard".dir   = "nimpkgs/n/nimclipboard";
-  inputs."nimclipboard".owner = "riinr";
-  inputs."nimclipboard".ref   = "flake-pinning";
-  inputs."nimclipboard".repo  = "flake-nimble";
+  inputs."nimclipboard".owner = "nim-nix-pkgs";
+  inputs."nimclipboard".ref   = "master";
+  inputs."nimclipboard".repo  = "nimclipboard";
   inputs."nimclipboard".type  = "github";
   inputs."nimclipboard".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimclipboard".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."bluesoftcosmos".dir   = "nimpkgs/b/bluesoftcosmos";
-  inputs."bluesoftcosmos".owner = "riinr";
-  inputs."bluesoftcosmos".ref   = "flake-pinning";
-  inputs."bluesoftcosmos".repo  = "flake-nimble";
+  inputs."bluesoftcosmos".owner = "nim-nix-pkgs";
+  inputs."bluesoftcosmos".ref   = "master";
+  inputs."bluesoftcosmos".repo  = "bluesoftcosmos";
   inputs."bluesoftcosmos".type  = "github";
   inputs."bluesoftcosmos".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bluesoftcosmos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

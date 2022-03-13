@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."circleci_client-master".url = "path:./master";
+  inputs."circleci_client-master".dir   = "master";
+  inputs."circleci_client-master".owner = "nim-nix-pkgs";
+  inputs."circleci_client-master".ref   = "master";
+  inputs."circleci_client-master".repo  = "circleci_client";
+  inputs."circleci_client-master".type  = "github";
   inputs."circleci_client-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."circleci_client-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

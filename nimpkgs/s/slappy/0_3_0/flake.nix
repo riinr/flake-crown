@@ -13,18 +13,16 @@
   inputs.src-slappy-0_3_0.repo  = "slappy";
   inputs.src-slappy-0_3_0.type  = "github";
   
-  inputs."openal".dir   = "nimpkgs/o/openal";
-  inputs."openal".owner = "riinr";
-  inputs."openal".ref   = "flake-pinning";
-  inputs."openal".repo  = "flake-nimble";
+  inputs."openal".owner = "nim-nix-pkgs";
+  inputs."openal".ref   = "master";
+  inputs."openal".repo  = "openal";
   inputs."openal".type  = "github";
   inputs."openal".inputs.nixpkgs.follows = "nixpkgs";
   inputs."openal".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."vmath".dir   = "nimpkgs/v/vmath";
-  inputs."vmath".owner = "riinr";
-  inputs."vmath".ref   = "flake-pinning";
-  inputs."vmath".repo  = "flake-nimble";
+  inputs."vmath".owner = "nim-nix-pkgs";
+  inputs."vmath".ref   = "master";
+  inputs."vmath".repo  = "vmath";
   inputs."vmath".type  = "github";
   inputs."vmath".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

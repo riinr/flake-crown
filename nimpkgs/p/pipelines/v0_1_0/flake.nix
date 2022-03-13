@@ -13,10 +13,9 @@
   inputs.src-pipelines-v0_1_0.repo  = "pipelines";
   inputs.src-pipelines-v0_1_0.type  = "github";
   
-  inputs."python".dir   = "nimpkgs/p/python";
-  inputs."python".owner = "riinr";
-  inputs."python".ref   = "flake-pinning";
-  inputs."python".repo  = "flake-nimble";
+  inputs."python".owner = "nim-nix-pkgs";
+  inputs."python".ref   = "master";
+  inputs."python".repo  = "python";
   inputs."python".type  = "github";
   inputs."python".inputs.nixpkgs.follows = "nixpkgs";
   inputs."python".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

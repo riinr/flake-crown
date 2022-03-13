@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."oculus-master".url = "path:./master";
+  inputs."oculus-master".dir   = "master";
+  inputs."oculus-master".owner = "nim-nix-pkgs";
+  inputs."oculus-master".ref   = "master";
+  inputs."oculus-master".repo  = "oculus";
+  inputs."oculus-master".type  = "github";
   inputs."oculus-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."oculus-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

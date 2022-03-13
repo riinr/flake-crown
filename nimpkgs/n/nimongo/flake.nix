@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nimongo-master".url = "path:./master";
+  inputs."nimongo-master".dir   = "master";
+  inputs."nimongo-master".owner = "nim-nix-pkgs";
+  inputs."nimongo-master".ref   = "master";
+  inputs."nimongo-master".repo  = "nimongo";
+  inputs."nimongo-master".type  = "github";
   inputs."nimongo-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimongo-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimongo-v0_1_0".url = "path:./v0_1_0";
+  inputs."nimongo-v0_1_0".dir   = "v0_1_0";
+  inputs."nimongo-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."nimongo-v0_1_0".ref   = "master";
+  inputs."nimongo-v0_1_0".repo  = "nimongo";
+  inputs."nimongo-v0_1_0".type  = "github";
   inputs."nimongo-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimongo-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimongo-v0_2_0".url = "path:./v0_2_0";
+  inputs."nimongo-v0_2_0".dir   = "v0_2_0";
+  inputs."nimongo-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."nimongo-v0_2_0".ref   = "master";
+  inputs."nimongo-v0_2_0".repo  = "nimongo";
+  inputs."nimongo-v0_2_0".type  = "github";
   inputs."nimongo-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimongo-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

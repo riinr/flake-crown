@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."euclidean-master".url = "path:./master";
+  inputs."euclidean-master".dir   = "master";
+  inputs."euclidean-master".owner = "nim-nix-pkgs";
+  inputs."euclidean-master".ref   = "master";
+  inputs."euclidean-master".repo  = "euclidean";
+  inputs."euclidean-master".type  = "github";
   inputs."euclidean-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."euclidean-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -13,26 +13,23 @@
   inputs.src-neo-0_2_5.repo  = "neo";
   inputs.src-neo-0_2_5.type  = "github";
   
-  inputs."nimblas".dir   = "nimpkgs/n/nimblas";
-  inputs."nimblas".owner = "riinr";
-  inputs."nimblas".ref   = "flake-pinning";
-  inputs."nimblas".repo  = "flake-nimble";
+  inputs."nimblas".owner = "nim-nix-pkgs";
+  inputs."nimblas".ref   = "master";
+  inputs."nimblas".repo  = "nimblas";
   inputs."nimblas".type  = "github";
   inputs."nimblas".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimblas".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimcuda".dir   = "nimpkgs/n/nimcuda";
-  inputs."nimcuda".owner = "riinr";
-  inputs."nimcuda".ref   = "flake-pinning";
-  inputs."nimcuda".repo  = "flake-nimble";
+  inputs."nimcuda".owner = "nim-nix-pkgs";
+  inputs."nimcuda".ref   = "master";
+  inputs."nimcuda".repo  = "nimcuda";
   inputs."nimcuda".type  = "github";
   inputs."nimcuda".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcuda".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimlapack".dir   = "nimpkgs/n/nimlapack";
-  inputs."nimlapack".owner = "riinr";
-  inputs."nimlapack".ref   = "flake-pinning";
-  inputs."nimlapack".repo  = "flake-nimble";
+  inputs."nimlapack".owner = "nim-nix-pkgs";
+  inputs."nimlapack".ref   = "master";
+  inputs."nimlapack".repo  = "nimlapack";
   inputs."nimlapack".type  = "github";
   inputs."nimlapack".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimlapack".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

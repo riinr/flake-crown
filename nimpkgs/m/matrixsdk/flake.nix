@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."matrixsdk-main".url = "path:./main";
+  inputs."matrixsdk-main".dir   = "main";
+  inputs."matrixsdk-main".owner = "nim-nix-pkgs";
+  inputs."matrixsdk-main".ref   = "master";
+  inputs."matrixsdk-main".repo  = "matrixsdk";
+  inputs."matrixsdk-main".type  = "github";
   inputs."matrixsdk-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."matrixsdk-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."matrixsdk-0_1_0".url = "path:./0_1_0";
+  inputs."matrixsdk-0_1_0".dir   = "0_1_0";
+  inputs."matrixsdk-0_1_0".owner = "nim-nix-pkgs";
+  inputs."matrixsdk-0_1_0".ref   = "master";
+  inputs."matrixsdk-0_1_0".repo  = "matrixsdk";
+  inputs."matrixsdk-0_1_0".type  = "github";
   inputs."matrixsdk-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."matrixsdk-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

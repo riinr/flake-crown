@@ -13,26 +13,23 @@
   inputs.src-serialization-master.repo  = "nim-serialization";
   inputs.src-serialization-master.type  = "github";
   
-  inputs."faststreams".dir   = "nimpkgs/f/faststreams";
-  inputs."faststreams".owner = "riinr";
-  inputs."faststreams".ref   = "flake-pinning";
-  inputs."faststreams".repo  = "flake-nimble";
+  inputs."faststreams".owner = "nim-nix-pkgs";
+  inputs."faststreams".ref   = "master";
+  inputs."faststreams".repo  = "faststreams";
   inputs."faststreams".type  = "github";
   inputs."faststreams".inputs.nixpkgs.follows = "nixpkgs";
   inputs."faststreams".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."unittest2".dir   = "nimpkgs/u/unittest2";
-  inputs."unittest2".owner = "riinr";
-  inputs."unittest2".ref   = "flake-pinning";
-  inputs."unittest2".repo  = "flake-nimble";
+  inputs."unittest2".owner = "nim-nix-pkgs";
+  inputs."unittest2".ref   = "master";
+  inputs."unittest2".repo  = "unittest2";
   inputs."unittest2".type  = "github";
   inputs."unittest2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unittest2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."stew".dir   = "nimpkgs/s/stew";
-  inputs."stew".owner = "riinr";
-  inputs."stew".ref   = "flake-pinning";
-  inputs."stew".repo  = "flake-nimble";
+  inputs."stew".owner = "nim-nix-pkgs";
+  inputs."stew".ref   = "master";
+  inputs."stew".repo  = "stew";
   inputs."stew".type  = "github";
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

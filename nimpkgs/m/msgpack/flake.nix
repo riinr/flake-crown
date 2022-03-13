@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."msgpack-master".url = "path:./master";
+  inputs."msgpack-master".dir   = "master";
+  inputs."msgpack-master".owner = "nim-nix-pkgs";
+  inputs."msgpack-master".ref   = "master";
+  inputs."msgpack-master".repo  = "msgpack";
+  inputs."msgpack-master".type  = "github";
   inputs."msgpack-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."msgpack-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

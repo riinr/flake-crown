@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."graphql-master".url = "path:./master";
+  inputs."graphql-master".dir   = "master";
+  inputs."graphql-master".owner = "nim-nix-pkgs";
+  inputs."graphql-master".ref   = "master";
+  inputs."graphql-master".repo  = "graphql";
+  inputs."graphql-master".type  = "github";
   inputs."graphql-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."graphql-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

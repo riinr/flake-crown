@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."todoist-main".url = "path:./main";
+  inputs."todoist-main".dir   = "main";
+  inputs."todoist-main".owner = "nim-nix-pkgs";
+  inputs."todoist-main".ref   = "master";
+  inputs."todoist-main".repo  = "todoist";
+  inputs."todoist-main".type  = "github";
   inputs."todoist-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."todoist-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."todoist-v0_1_0".url = "path:./v0_1_0";
+  inputs."todoist-v0_1_0".dir   = "v0_1_0";
+  inputs."todoist-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."todoist-v0_1_0".ref   = "master";
+  inputs."todoist-v0_1_0".repo  = "todoist";
+  inputs."todoist-v0_1_0".type  = "github";
   inputs."todoist-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."todoist-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."todoist-v0_1_1".url = "path:./v0_1_1";
+  inputs."todoist-v0_1_1".dir   = "v0_1_1";
+  inputs."todoist-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."todoist-v0_1_1".ref   = "master";
+  inputs."todoist-v0_1_1".repo  = "todoist";
+  inputs."todoist-v0_1_1".type  = "github";
   inputs."todoist-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."todoist-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

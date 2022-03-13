@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."smbexec-master".url = "path:./master";
+  inputs."smbexec-master".dir   = "master";
+  inputs."smbexec-master".owner = "nim-nix-pkgs";
+  inputs."smbexec-master".ref   = "master";
+  inputs."smbexec-master".repo  = "smbexec";
+  inputs."smbexec-master".type  = "github";
   inputs."smbexec-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."smbexec-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

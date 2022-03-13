@@ -13,10 +13,9 @@
   inputs.src-mentat-master.repo  = "nim-mentat";
   inputs.src-mentat-master.type  = "github";
   
-  inputs."science".dir   = "nimpkgs/s/science";
-  inputs."science".owner = "riinr";
-  inputs."science".ref   = "flake-pinning";
-  inputs."science".repo  = "flake-nimble";
+  inputs."science".owner = "nim-nix-pkgs";
+  inputs."science".ref   = "master";
+  inputs."science".repo  = "science";
   inputs."science".type  = "github";
   inputs."science".inputs.nixpkgs.follows = "nixpkgs";
   inputs."science".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

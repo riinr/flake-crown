@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."orient-master".url = "path:./master";
+  inputs."orient-master".dir   = "master";
+  inputs."orient-master".owner = "nim-nix-pkgs";
+  inputs."orient-master".ref   = "master";
+  inputs."orient-master".repo  = "orient";
+  inputs."orient-master".type  = "github";
   inputs."orient-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."orient-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

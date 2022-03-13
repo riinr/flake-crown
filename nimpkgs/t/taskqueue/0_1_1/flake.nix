@@ -13,10 +13,9 @@
   inputs.src-taskqueue-0_1_1.repo  = "taskqueue.nim";
   inputs.src-taskqueue-0_1_1.type  = "github";
   
-  inputs."timestamp".dir   = "nimpkgs/t/timestamp";
-  inputs."timestamp".owner = "riinr";
-  inputs."timestamp".ref   = "flake-pinning";
-  inputs."timestamp".repo  = "flake-nimble";
+  inputs."timestamp".owner = "nim-nix-pkgs";
+  inputs."timestamp".ref   = "master";
+  inputs."timestamp".repo  = "timestamp";
   inputs."timestamp".type  = "github";
   inputs."timestamp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."timestamp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

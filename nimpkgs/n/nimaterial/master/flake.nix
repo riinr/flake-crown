@@ -13,10 +13,9 @@
   inputs.src-nimaterial-master.repo  = "nimaterial";
   inputs.src-nimaterial-master.type  = "github";
   
-  inputs."palette".dir   = "nimpkgs/p/palette";
-  inputs."palette".owner = "riinr";
-  inputs."palette".ref   = "flake-pinning";
-  inputs."palette".repo  = "flake-nimble";
+  inputs."palette".owner = "nim-nix-pkgs";
+  inputs."palette".ref   = "master";
+  inputs."palette".repo  = "palette";
   inputs."palette".type  = "github";
   inputs."palette".inputs.nixpkgs.follows = "nixpkgs";
   inputs."palette".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

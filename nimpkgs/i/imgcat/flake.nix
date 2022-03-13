@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."imgcat-master".url = "path:./master";
+  inputs."imgcat-master".dir   = "master";
+  inputs."imgcat-master".owner = "nim-nix-pkgs";
+  inputs."imgcat-master".ref   = "master";
+  inputs."imgcat-master".repo  = "imgcat";
+  inputs."imgcat-master".type  = "github";
   inputs."imgcat-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."imgcat-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

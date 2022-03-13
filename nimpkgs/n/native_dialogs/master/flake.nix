@@ -13,18 +13,16 @@
   inputs.src-native_dialogs-master.repo  = "nim-native-dialogs";
   inputs.src-native_dialogs-master.type  = "github";
   
-  inputs."oldwinapi".dir   = "nimpkgs/o/oldwinapi";
-  inputs."oldwinapi".owner = "riinr";
-  inputs."oldwinapi".ref   = "flake-pinning";
-  inputs."oldwinapi".repo  = "flake-nimble";
+  inputs."oldwinapi".owner = "nim-nix-pkgs";
+  inputs."oldwinapi".ref   = "master";
+  inputs."oldwinapi".repo  = "oldwinapi";
   inputs."oldwinapi".type  = "github";
   inputs."oldwinapi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."oldwinapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."gtk2".dir   = "nimpkgs/g/gtk2";
-  inputs."gtk2".owner = "riinr";
-  inputs."gtk2".ref   = "flake-pinning";
-  inputs."gtk2".repo  = "flake-nimble";
+  inputs."gtk2".owner = "nim-nix-pkgs";
+  inputs."gtk2".ref   = "master";
+  inputs."gtk2".repo  = "gtk2";
   inputs."gtk2".type  = "github";
   inputs."gtk2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gtk2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

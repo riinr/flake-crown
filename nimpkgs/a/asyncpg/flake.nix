@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."asyncpg-master".url = "path:./master";
+  inputs."asyncpg-master".dir   = "master";
+  inputs."asyncpg-master".owner = "nim-nix-pkgs";
+  inputs."asyncpg-master".ref   = "master";
+  inputs."asyncpg-master".repo  = "asyncpg";
+  inputs."asyncpg-master".type  = "github";
   inputs."asyncpg-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."asyncpg-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

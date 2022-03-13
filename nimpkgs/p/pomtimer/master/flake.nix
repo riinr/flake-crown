@@ -13,18 +13,16 @@
   inputs.src-pomTimer-master.repo  = "pomTimer";
   inputs.src-pomTimer-master.type  = "github";
   
-  inputs."progress".dir   = "nimpkgs/p/progress";
-  inputs."progress".owner = "riinr";
-  inputs."progress".ref   = "flake-pinning";
-  inputs."progress".repo  = "flake-nimble";
+  inputs."progress".owner = "nim-nix-pkgs";
+  inputs."progress".ref   = "master";
+  inputs."progress".repo  = "progress";
   inputs."progress".type  = "github";
   inputs."progress".inputs.nixpkgs.follows = "nixpkgs";
   inputs."progress".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."notify".dir   = "nimpkgs/n/notify";
-  inputs."notify".owner = "riinr";
-  inputs."notify".ref   = "flake-pinning";
-  inputs."notify".repo  = "flake-nimble";
+  inputs."notify".owner = "nim-nix-pkgs";
+  inputs."notify".ref   = "master";
+  inputs."notify".repo  = "notify";
   inputs."notify".type  = "github";
   inputs."notify".inputs.nixpkgs.follows = "nixpkgs";
   inputs."notify".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

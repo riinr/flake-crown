@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."kinto-master".url = "path:./master";
+  inputs."kinto-master".dir   = "master";
+  inputs."kinto-master".owner = "nim-nix-pkgs";
+  inputs."kinto-master".ref   = "master";
+  inputs."kinto-master".repo  = "kinto";
+  inputs."kinto-master".type  = "github";
   inputs."kinto-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."kinto-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."kinto-0_2_0".url = "path:./0_2_0";
+  inputs."kinto-0_2_0".dir   = "0_2_0";
+  inputs."kinto-0_2_0".owner = "nim-nix-pkgs";
+  inputs."kinto-0_2_0".ref   = "master";
+  inputs."kinto-0_2_0".repo  = "kinto";
+  inputs."kinto-0_2_0".type  = "github";
   inputs."kinto-0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."kinto-0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."kinto-0_2_2".url = "path:./0_2_2";
+  inputs."kinto-0_2_2".dir   = "0_2_2";
+  inputs."kinto-0_2_2".owner = "nim-nix-pkgs";
+  inputs."kinto-0_2_2".ref   = "master";
+  inputs."kinto-0_2_2".repo  = "kinto";
+  inputs."kinto-0_2_2".type  = "github";
   inputs."kinto-0_2_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."kinto-0_2_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

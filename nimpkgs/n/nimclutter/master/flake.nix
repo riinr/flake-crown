@@ -13,10 +13,9 @@
   inputs.src-nimclutter-master.repo  = "nimclutter";
   inputs.src-nimclutter-master.type  = "github";
   
-  inputs."oldgtk3".dir   = "nimpkgs/o/oldgtk3";
-  inputs."oldgtk3".owner = "riinr";
-  inputs."oldgtk3".ref   = "flake-pinning";
-  inputs."oldgtk3".repo  = "flake-nimble";
+  inputs."oldgtk3".owner = "nim-nix-pkgs";
+  inputs."oldgtk3".ref   = "master";
+  inputs."oldgtk3".repo  = "oldgtk3";
   inputs."oldgtk3".type  = "github";
   inputs."oldgtk3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."oldgtk3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

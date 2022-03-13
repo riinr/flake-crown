@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."shady-master".url = "path:./master";
+  inputs."shady-master".dir   = "master";
+  inputs."shady-master".owner = "nim-nix-pkgs";
+  inputs."shady-master".ref   = "master";
+  inputs."shady-master".repo  = "shady";
+  inputs."shady-master".type  = "github";
   inputs."shady-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."shady-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."shady-0_0_1".url = "path:./0_0_1";
+  inputs."shady-0_0_1".dir   = "0_0_1";
+  inputs."shady-0_0_1".owner = "nim-nix-pkgs";
+  inputs."shady-0_0_1".ref   = "master";
+  inputs."shady-0_0_1".repo  = "shady";
+  inputs."shady-0_0_1".type  = "github";
   inputs."shady-0_0_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."shady-0_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

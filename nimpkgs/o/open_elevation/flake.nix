@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."open_elevation-master".url = "path:./master";
+  inputs."open_elevation-master".dir   = "master";
+  inputs."open_elevation-master".owner = "nim-nix-pkgs";
+  inputs."open_elevation-master".ref   = "master";
+  inputs."open_elevation-master".repo  = "open_elevation";
+  inputs."open_elevation-master".type  = "github";
   inputs."open_elevation-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."open_elevation-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."open_elevation-0_1_5".url = "path:./0_1_5";
+  inputs."open_elevation-0_1_5".dir   = "0_1_5";
+  inputs."open_elevation-0_1_5".owner = "nim-nix-pkgs";
+  inputs."open_elevation-0_1_5".ref   = "master";
+  inputs."open_elevation-0_1_5".repo  = "open_elevation";
+  inputs."open_elevation-0_1_5".type  = "github";
   inputs."open_elevation-0_1_5".inputs.nixpkgs.follows = "nixpkgs";
   inputs."open_elevation-0_1_5".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

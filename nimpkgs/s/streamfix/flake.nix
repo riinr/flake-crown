@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."streamfix-main".url = "path:./main";
+  inputs."streamfix-main".dir   = "main";
+  inputs."streamfix-main".owner = "nim-nix-pkgs";
+  inputs."streamfix-main".ref   = "master";
+  inputs."streamfix-main".repo  = "streamfix";
+  inputs."streamfix-main".type  = "github";
   inputs."streamfix-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."streamfix-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

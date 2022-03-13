@@ -7,43 +7,83 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."csfml-master".url = "path:./master";
+  inputs."csfml-master".dir   = "master";
+  inputs."csfml-master".owner = "nim-nix-pkgs";
+  inputs."csfml-master".ref   = "master";
+  inputs."csfml-master".repo  = "csfml";
+  inputs."csfml-master".type  = "github";
   inputs."csfml-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."csfml-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."csfml-v2_1_0".url = "path:./v2_1_0";
+  inputs."csfml-v2_1_0".dir   = "v2_1_0";
+  inputs."csfml-v2_1_0".owner = "nim-nix-pkgs";
+  inputs."csfml-v2_1_0".ref   = "master";
+  inputs."csfml-v2_1_0".repo  = "csfml";
+  inputs."csfml-v2_1_0".type  = "github";
   inputs."csfml-v2_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."csfml-v2_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."csfml-v2_1_1".url = "path:./v2_1_1";
+  inputs."csfml-v2_1_1".dir   = "v2_1_1";
+  inputs."csfml-v2_1_1".owner = "nim-nix-pkgs";
+  inputs."csfml-v2_1_1".ref   = "master";
+  inputs."csfml-v2_1_1".repo  = "csfml";
+  inputs."csfml-v2_1_1".type  = "github";
   inputs."csfml-v2_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."csfml-v2_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."csfml-v2_1_2".url = "path:./v2_1_2";
+  inputs."csfml-v2_1_2".dir   = "v2_1_2";
+  inputs."csfml-v2_1_2".owner = "nim-nix-pkgs";
+  inputs."csfml-v2_1_2".ref   = "master";
+  inputs."csfml-v2_1_2".repo  = "csfml";
+  inputs."csfml-v2_1_2".type  = "github";
   inputs."csfml-v2_1_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."csfml-v2_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."csfml-v2_1_3".url = "path:./v2_1_3";
+  inputs."csfml-v2_1_3".dir   = "v2_1_3";
+  inputs."csfml-v2_1_3".owner = "nim-nix-pkgs";
+  inputs."csfml-v2_1_3".ref   = "master";
+  inputs."csfml-v2_1_3".repo  = "csfml";
+  inputs."csfml-v2_1_3".type  = "github";
   inputs."csfml-v2_1_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."csfml-v2_1_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."csfml-v2_2_0".url = "path:./v2_2_0";
+  inputs."csfml-v2_2_0".dir   = "v2_2_0";
+  inputs."csfml-v2_2_0".owner = "nim-nix-pkgs";
+  inputs."csfml-v2_2_0".ref   = "master";
+  inputs."csfml-v2_2_0".repo  = "csfml";
+  inputs."csfml-v2_2_0".type  = "github";
   inputs."csfml-v2_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."csfml-v2_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."csfml-v2_3_0".url = "path:./v2_3_0";
+  inputs."csfml-v2_3_0".dir   = "v2_3_0";
+  inputs."csfml-v2_3_0".owner = "nim-nix-pkgs";
+  inputs."csfml-v2_3_0".ref   = "master";
+  inputs."csfml-v2_3_0".repo  = "csfml";
+  inputs."csfml-v2_3_0".type  = "github";
   inputs."csfml-v2_3_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."csfml-v2_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."csfml-v2_3_1".url = "path:./v2_3_1";
+  inputs."csfml-v2_3_1".dir   = "v2_3_1";
+  inputs."csfml-v2_3_1".owner = "nim-nix-pkgs";
+  inputs."csfml-v2_3_1".ref   = "master";
+  inputs."csfml-v2_3_1".repo  = "csfml";
+  inputs."csfml-v2_3_1".type  = "github";
   inputs."csfml-v2_3_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."csfml-v2_3_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."csfml-v2_4_0".url = "path:./v2_4_0";
+  inputs."csfml-v2_4_0".dir   = "v2_4_0";
+  inputs."csfml-v2_4_0".owner = "nim-nix-pkgs";
+  inputs."csfml-v2_4_0".ref   = "master";
+  inputs."csfml-v2_4_0".repo  = "csfml";
+  inputs."csfml-v2_4_0".type  = "github";
   inputs."csfml-v2_4_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."csfml-v2_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."csfml-v2_5_0".url = "path:./v2_5_0";
+  inputs."csfml-v2_5_0".dir   = "v2_5_0";
+  inputs."csfml-v2_5_0".owner = "nim-nix-pkgs";
+  inputs."csfml-v2_5_0".ref   = "master";
+  inputs."csfml-v2_5_0".repo  = "csfml";
+  inputs."csfml-v2_5_0".type  = "github";
   inputs."csfml-v2_5_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."csfml-v2_5_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

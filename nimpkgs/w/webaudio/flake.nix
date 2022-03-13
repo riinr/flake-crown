@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."webaudio-master".url = "path:./master";
+  inputs."webaudio-master".dir   = "master";
+  inputs."webaudio-master".owner = "nim-nix-pkgs";
+  inputs."webaudio-master".ref   = "master";
+  inputs."webaudio-master".repo  = "webaudio";
+  inputs."webaudio-master".type  = "github";
   inputs."webaudio-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."webaudio-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

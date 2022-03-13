@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."io-spacenav-master".url = "path:./master";
+  inputs."io-spacenav-master".dir   = "master";
+  inputs."io-spacenav-master".owner = "nim-nix-pkgs";
+  inputs."io-spacenav-master".ref   = "master";
+  inputs."io-spacenav-master".repo  = "io-spacenav";
+  inputs."io-spacenav-master".type  = "github";
   inputs."io-spacenav-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."io-spacenav-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

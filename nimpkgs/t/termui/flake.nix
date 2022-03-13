@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."termui-master".url = "path:./master";
+  inputs."termui-master".dir   = "master";
+  inputs."termui-master".owner = "nim-nix-pkgs";
+  inputs."termui-master".ref   = "master";
+  inputs."termui-master".repo  = "termui";
+  inputs."termui-master".type  = "github";
   inputs."termui-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."termui-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

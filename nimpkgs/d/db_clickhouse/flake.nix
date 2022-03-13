@@ -7,23 +7,43 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."db_clickhouse-master".url = "path:./master";
+  inputs."db_clickhouse-master".dir   = "master";
+  inputs."db_clickhouse-master".owner = "nim-nix-pkgs";
+  inputs."db_clickhouse-master".ref   = "master";
+  inputs."db_clickhouse-master".repo  = "db_clickhouse";
+  inputs."db_clickhouse-master".type  = "github";
   inputs."db_clickhouse-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."db_clickhouse-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."db_clickhouse-v0_1_0".url = "path:./v0_1_0";
+  inputs."db_clickhouse-v0_1_0".dir   = "v0_1_0";
+  inputs."db_clickhouse-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."db_clickhouse-v0_1_0".ref   = "master";
+  inputs."db_clickhouse-v0_1_0".repo  = "db_clickhouse";
+  inputs."db_clickhouse-v0_1_0".type  = "github";
   inputs."db_clickhouse-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."db_clickhouse-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."db_clickhouse-v0_2_0".url = "path:./v0_2_0";
+  inputs."db_clickhouse-v0_2_0".dir   = "v0_2_0";
+  inputs."db_clickhouse-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."db_clickhouse-v0_2_0".ref   = "master";
+  inputs."db_clickhouse-v0_2_0".repo  = "db_clickhouse";
+  inputs."db_clickhouse-v0_2_0".type  = "github";
   inputs."db_clickhouse-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."db_clickhouse-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."db_clickhouse-v0_3_0".url = "path:./v0_3_0";
+  inputs."db_clickhouse-v0_3_0".dir   = "v0_3_0";
+  inputs."db_clickhouse-v0_3_0".owner = "nim-nix-pkgs";
+  inputs."db_clickhouse-v0_3_0".ref   = "master";
+  inputs."db_clickhouse-v0_3_0".repo  = "db_clickhouse";
+  inputs."db_clickhouse-v0_3_0".type  = "github";
   inputs."db_clickhouse-v0_3_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."db_clickhouse-v0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."db_clickhouse-v0_4_0".url = "path:./v0_4_0";
+  inputs."db_clickhouse-v0_4_0".dir   = "v0_4_0";
+  inputs."db_clickhouse-v0_4_0".owner = "nim-nix-pkgs";
+  inputs."db_clickhouse-v0_4_0".ref   = "master";
+  inputs."db_clickhouse-v0_4_0".repo  = "db_clickhouse";
+  inputs."db_clickhouse-v0_4_0".type  = "github";
   inputs."db_clickhouse-v0_4_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."db_clickhouse-v0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

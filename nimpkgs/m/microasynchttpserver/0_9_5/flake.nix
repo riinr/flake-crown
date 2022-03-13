@@ -13,10 +13,9 @@
   inputs.src-microasynchttpserver-0_9_5.repo  = "microasynchttpserver";
   inputs.src-microasynchttpserver-0_9_5.type  = "github";
   
-  inputs."picohttpparser".dir   = "nimpkgs/p/picohttpparser";
-  inputs."picohttpparser".owner = "riinr";
-  inputs."picohttpparser".ref   = "flake-pinning";
-  inputs."picohttpparser".repo  = "flake-nimble";
+  inputs."picohttpparser".owner = "nim-nix-pkgs";
+  inputs."picohttpparser".ref   = "master";
+  inputs."picohttpparser".repo  = "picohttpparser";
   inputs."picohttpparser".type  = "github";
   inputs."picohttpparser".inputs.nixpkgs.follows = "nixpkgs";
   inputs."picohttpparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

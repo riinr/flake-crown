@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."desim-master".url = "path:./master";
+  inputs."desim-master".dir   = "master";
+  inputs."desim-master".owner = "nim-nix-pkgs";
+  inputs."desim-master".ref   = "master";
+  inputs."desim-master".repo  = "desim";
+  inputs."desim-master".type  = "github";
   inputs."desim-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."desim-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

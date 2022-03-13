@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."drng-main".url = "path:./main";
+  inputs."drng-main".dir   = "main";
+  inputs."drng-main".owner = "nim-nix-pkgs";
+  inputs."drng-main".ref   = "master";
+  inputs."drng-main".repo  = "drng";
+  inputs."drng-main".type  = "github";
   inputs."drng-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."drng-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

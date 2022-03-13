@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."telenim-master".url = "path:./master";
+  inputs."telenim-master".dir   = "master";
+  inputs."telenim-master".owner = "nim-nix-pkgs";
+  inputs."telenim-master".ref   = "master";
+  inputs."telenim-master".repo  = "telenim";
+  inputs."telenim-master".type  = "github";
   inputs."telenim-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."telenim-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

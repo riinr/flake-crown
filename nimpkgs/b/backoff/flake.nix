@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."backoff-master".url = "path:./master";
+  inputs."backoff-master".dir   = "master";
+  inputs."backoff-master".owner = "nim-nix-pkgs";
+  inputs."backoff-master".ref   = "master";
+  inputs."backoff-master".repo  = "backoff";
+  inputs."backoff-master".type  = "github";
   inputs."backoff-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."backoff-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."backoff-v0_1".url = "path:./v0_1";
+  inputs."backoff-v0_1".dir   = "v0_1";
+  inputs."backoff-v0_1".owner = "nim-nix-pkgs";
+  inputs."backoff-v0_1".ref   = "master";
+  inputs."backoff-v0_1".repo  = "backoff";
+  inputs."backoff-v0_1".type  = "github";
   inputs."backoff-v0_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."backoff-v0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

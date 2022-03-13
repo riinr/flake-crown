@@ -13,10 +13,9 @@
   inputs.src-statistical_tests-master.repo  = "statistical-tests";
   inputs.src-statistical_tests-master.type  = "github";
   
-  inputs."distributions".dir   = "nimpkgs/d/distributions";
-  inputs."distributions".owner = "riinr";
-  inputs."distributions".ref   = "flake-pinning";
-  inputs."distributions".repo  = "flake-nimble";
+  inputs."distributions".owner = "nim-nix-pkgs";
+  inputs."distributions".ref   = "master";
+  inputs."distributions".repo  = "distributions";
   inputs."distributions".type  = "github";
   inputs."distributions".inputs.nixpkgs.follows = "nixpkgs";
   inputs."distributions".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

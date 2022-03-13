@@ -13,10 +13,9 @@
   inputs.src-scram-0_1_10.repo  = "scram";
   inputs.src-scram-0_1_10.type  = "github";
   
-  inputs."hmac".dir   = "nimpkgs/h/hmac";
-  inputs."hmac".owner = "riinr";
-  inputs."hmac".ref   = "flake-pinning";
-  inputs."hmac".repo  = "flake-nimble";
+  inputs."hmac".owner = "nim-nix-pkgs";
+  inputs."hmac".ref   = "master";
+  inputs."hmac".repo  = "hmac";
   inputs."hmac".type  = "github";
   inputs."hmac".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hmac".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

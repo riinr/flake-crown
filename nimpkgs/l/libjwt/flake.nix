@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."libjwt-master".url = "path:./master";
+  inputs."libjwt-master".dir   = "master";
+  inputs."libjwt-master".owner = "nim-nix-pkgs";
+  inputs."libjwt-master".ref   = "master";
+  inputs."libjwt-master".repo  = "libjwt";
+  inputs."libjwt-master".type  = "github";
   inputs."libjwt-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libjwt-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

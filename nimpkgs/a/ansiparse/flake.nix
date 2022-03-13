@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."ansiparse-master".url = "path:./master";
+  inputs."ansiparse-master".dir   = "master";
+  inputs."ansiparse-master".owner = "nim-nix-pkgs";
+  inputs."ansiparse-master".ref   = "master";
+  inputs."ansiparse-master".repo  = "ansiparse";
+  inputs."ansiparse-master".type  = "github";
   inputs."ansiparse-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ansiparse-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."ansiparse-v0_2_0".url = "path:./v0_2_0";
+  inputs."ansiparse-v0_2_0".dir   = "v0_2_0";
+  inputs."ansiparse-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."ansiparse-v0_2_0".ref   = "master";
+  inputs."ansiparse-v0_2_0".repo  = "ansiparse";
+  inputs."ansiparse-v0_2_0".type  = "github";
   inputs."ansiparse-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ansiparse-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

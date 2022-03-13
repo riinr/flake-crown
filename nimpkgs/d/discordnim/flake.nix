@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."discordnim-develop".url = "path:./develop";
+  inputs."discordnim-develop".dir   = "develop";
+  inputs."discordnim-develop".owner = "nim-nix-pkgs";
+  inputs."discordnim-develop".ref   = "master";
+  inputs."discordnim-develop".repo  = "discordnim";
+  inputs."discordnim-develop".type  = "github";
   inputs."discordnim-develop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."discordnim-develop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."discordnim-master".url = "path:./master";
+  inputs."discordnim-master".dir   = "master";
+  inputs."discordnim-master".owner = "nim-nix-pkgs";
+  inputs."discordnim-master".ref   = "master";
+  inputs."discordnim-master".repo  = "discordnim";
+  inputs."discordnim-master".type  = "github";
   inputs."discordnim-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."discordnim-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

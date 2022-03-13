@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."mdlldk-main".url = "path:./main";
+  inputs."mdlldk-main".dir   = "main";
+  inputs."mdlldk-main".owner = "nim-nix-pkgs";
+  inputs."mdlldk-main".ref   = "master";
+  inputs."mdlldk-main".repo  = "mdlldk";
+  inputs."mdlldk-main".type  = "github";
   inputs."mdlldk-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mdlldk-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

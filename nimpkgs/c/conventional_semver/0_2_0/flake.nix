@@ -13,18 +13,16 @@
   inputs.src-conventional_semver-0_2_0.repo  = "conventional_semver";
   inputs.src-conventional_semver-0_2_0.type  = "gitlab";
   
-  inputs."semver".dir   = "nimpkgs/s/semver";
-  inputs."semver".owner = "riinr";
-  inputs."semver".ref   = "flake-pinning";
-  inputs."semver".repo  = "flake-nimble";
+  inputs."semver".owner = "nim-nix-pkgs";
+  inputs."semver".ref   = "master";
+  inputs."semver".repo  = "semver";
   inputs."semver".type  = "github";
   inputs."semver".inputs.nixpkgs.follows = "nixpkgs";
   inputs."semver".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."simpleparseopt".dir   = "nimpkgs/s/simpleparseopt";
-  inputs."simpleparseopt".owner = "riinr";
-  inputs."simpleparseopt".ref   = "flake-pinning";
-  inputs."simpleparseopt".repo  = "flake-nimble";
+  inputs."simpleparseopt".owner = "nim-nix-pkgs";
+  inputs."simpleparseopt".ref   = "master";
+  inputs."simpleparseopt".repo  = "simpleparseopt";
   inputs."simpleparseopt".type  = "github";
   inputs."simpleparseopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."simpleparseopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

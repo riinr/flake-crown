@@ -13,10 +13,9 @@
   inputs.src-plz-master.repo  = "nim-pypi";
   inputs.src-plz-master.type  = "github";
   
-  inputs."requirementstxt".dir   = "nimpkgs/r/requirementstxt";
-  inputs."requirementstxt".owner = "riinr";
-  inputs."requirementstxt".ref   = "flake-pinning";
-  inputs."requirementstxt".repo  = "flake-nimble";
+  inputs."requirementstxt".owner = "nim-nix-pkgs";
+  inputs."requirementstxt".ref   = "master";
+  inputs."requirementstxt".repo  = "requirementstxt";
   inputs."requirementstxt".type  = "github";
   inputs."requirementstxt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."requirementstxt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

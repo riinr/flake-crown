@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."geonames-master".url = "path:./master";
+  inputs."geonames-master".dir   = "master";
+  inputs."geonames-master".owner = "nim-nix-pkgs";
+  inputs."geonames-master".ref   = "master";
+  inputs."geonames-master".repo  = "geonames";
+  inputs."geonames-master".type  = "github";
   inputs."geonames-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."geonames-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

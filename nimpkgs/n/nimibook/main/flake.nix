@@ -13,18 +13,16 @@
   inputs.src-nimibook-main.repo  = "nimibook";
   inputs.src-nimibook-main.type  = "github";
   
-  inputs."nimib".dir   = "nimpkgs/n/nimib";
-  inputs."nimib".owner = "riinr";
-  inputs."nimib".ref   = "flake-pinning";
-  inputs."nimib".repo  = "flake-nimble";
+  inputs."nimib".owner = "nim-nix-pkgs";
+  inputs."nimib".ref   = "master";
+  inputs."nimib".repo  = "nimib";
   inputs."nimib".type  = "github";
   inputs."nimib".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimib".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."jsony".dir   = "nimpkgs/j/jsony";
-  inputs."jsony".owner = "riinr";
-  inputs."jsony".ref   = "flake-pinning";
-  inputs."jsony".repo  = "flake-nimble";
+  inputs."jsony".owner = "nim-nix-pkgs";
+  inputs."jsony".ref   = "master";
+  inputs."jsony".repo  = "jsony";
   inputs."jsony".type  = "github";
   inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

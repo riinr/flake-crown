@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."parsesql-master".url = "path:./master";
+  inputs."parsesql-master".dir   = "master";
+  inputs."parsesql-master".owner = "nim-nix-pkgs";
+  inputs."parsesql-master".ref   = "master";
+  inputs."parsesql-master".repo  = "parsesql";
+  inputs."parsesql-master".type  = "github";
   inputs."parsesql-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."parsesql-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."parsesql-v0_1_1".url = "path:./v0_1_1";
+  inputs."parsesql-v0_1_1".dir   = "v0_1_1";
+  inputs."parsesql-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."parsesql-v0_1_1".ref   = "master";
+  inputs."parsesql-v0_1_1".repo  = "parsesql";
+  inputs."parsesql-v0_1_1".type  = "github";
   inputs."parsesql-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."parsesql-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

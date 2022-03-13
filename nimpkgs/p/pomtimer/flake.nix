@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."pomtimer-master".url = "path:./master";
+  inputs."pomtimer-master".dir   = "master";
+  inputs."pomtimer-master".owner = "nim-nix-pkgs";
+  inputs."pomtimer-master".ref   = "master";
+  inputs."pomtimer-master".repo  = "pomtimer";
+  inputs."pomtimer-master".type  = "github";
   inputs."pomtimer-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pomtimer-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

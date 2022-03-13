@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."markx-master".url = "path:./master";
+  inputs."markx-master".dir   = "master";
+  inputs."markx-master".owner = "nim-nix-pkgs";
+  inputs."markx-master".ref   = "master";
+  inputs."markx-master".repo  = "markx";
+  inputs."markx-master".type  = "github";
   inputs."markx-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."markx-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."markx-v1_0_0".url = "path:./v1_0_0";
+  inputs."markx-v1_0_0".dir   = "v1_0_0";
+  inputs."markx-v1_0_0".owner = "nim-nix-pkgs";
+  inputs."markx-v1_0_0".ref   = "master";
+  inputs."markx-v1_0_0".repo  = "markx";
+  inputs."markx-v1_0_0".type  = "github";
   inputs."markx-v1_0_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."markx-v1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."markx-v1_0_1".url = "path:./v1_0_1";
+  inputs."markx-v1_0_1".dir   = "v1_0_1";
+  inputs."markx-v1_0_1".owner = "nim-nix-pkgs";
+  inputs."markx-v1_0_1".ref   = "master";
+  inputs."markx-v1_0_1".repo  = "markx";
+  inputs."markx-v1_0_1".type  = "github";
   inputs."markx-v1_0_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."markx-v1_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

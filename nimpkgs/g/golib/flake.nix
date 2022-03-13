@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."golib-master".url = "path:./master";
+  inputs."golib-master".dir   = "master";
+  inputs."golib-master".owner = "nim-nix-pkgs";
+  inputs."golib-master".ref   = "master";
+  inputs."golib-master".repo  = "golib";
+  inputs."golib-master".type  = "github";
   inputs."golib-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."golib-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

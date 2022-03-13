@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."libu2f-master".url = "path:./master";
+  inputs."libu2f-master".dir   = "master";
+  inputs."libu2f-master".owner = "nim-nix-pkgs";
+  inputs."libu2f-master".ref   = "master";
+  inputs."libu2f-master".repo  = "libu2f";
+  inputs."libu2f-master".type  = "github";
   inputs."libu2f-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libu2f-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."libu2f-0_1_1".url = "path:./0_1_1";
+  inputs."libu2f-0_1_1".dir   = "0_1_1";
+  inputs."libu2f-0_1_1".owner = "nim-nix-pkgs";
+  inputs."libu2f-0_1_1".ref   = "master";
+  inputs."libu2f-0_1_1".repo  = "libu2f";
+  inputs."libu2f-0_1_1".type  = "github";
   inputs."libu2f-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libu2f-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

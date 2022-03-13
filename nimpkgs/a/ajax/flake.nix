@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."ajax-master".url = "path:./master";
+  inputs."ajax-master".dir   = "master";
+  inputs."ajax-master".owner = "nim-nix-pkgs";
+  inputs."ajax-master".ref   = "master";
+  inputs."ajax-master".repo  = "ajax";
+  inputs."ajax-master".type  = "github";
   inputs."ajax-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ajax-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

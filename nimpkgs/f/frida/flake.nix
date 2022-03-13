@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."frida-master".url = "path:./master";
+  inputs."frida-master".dir   = "master";
+  inputs."frida-master".owner = "nim-nix-pkgs";
+  inputs."frida-master".ref   = "master";
+  inputs."frida-master".repo  = "frida";
+  inputs."frida-master".type  = "github";
   inputs."frida-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."frida-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."testify-master".url = "path:./master";
+  inputs."testify-master".dir   = "master";
+  inputs."testify-master".owner = "nim-nix-pkgs";
+  inputs."testify-master".ref   = "master";
+  inputs."testify-master".repo  = "testify";
+  inputs."testify-master".type  = "github";
   inputs."testify-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."testify-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

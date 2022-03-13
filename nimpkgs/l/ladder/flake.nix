@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."ladder-master".url = "path:./master";
+  inputs."ladder-master".dir   = "master";
+  inputs."ladder-master".owner = "nim-nix-pkgs";
+  inputs."ladder-master".ref   = "master";
+  inputs."ladder-master".repo  = "ladder";
+  inputs."ladder-master".type  = "github";
   inputs."ladder-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ladder-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."ladder-0_4_0".url = "path:./0_4_0";
+  inputs."ladder-0_4_0".dir   = "0_4_0";
+  inputs."ladder-0_4_0".owner = "nim-nix-pkgs";
+  inputs."ladder-0_4_0".ref   = "master";
+  inputs."ladder-0_4_0".repo  = "ladder";
+  inputs."ladder-0_4_0".type  = "github";
   inputs."ladder-0_4_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ladder-0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

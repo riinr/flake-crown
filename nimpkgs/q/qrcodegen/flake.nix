@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."qrcodegen-master".url = "path:./master";
+  inputs."qrcodegen-master".dir   = "master";
+  inputs."qrcodegen-master".owner = "nim-nix-pkgs";
+  inputs."qrcodegen-master".ref   = "master";
+  inputs."qrcodegen-master".repo  = "qrcodegen";
+  inputs."qrcodegen-master".type  = "github";
   inputs."qrcodegen-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."qrcodegen-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

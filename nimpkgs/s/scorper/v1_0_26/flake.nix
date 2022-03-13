@@ -13,50 +13,44 @@
   inputs.src-scorper-v1_0_26.repo  = "scorper";
   inputs.src-scorper-v1_0_26.type  = "github";
   
-  inputs."chronos".dir   = "nimpkgs/c/chronos";
-  inputs."chronos".owner = "riinr";
-  inputs."chronos".ref   = "flake-pinning";
-  inputs."chronos".repo  = "flake-nimble";
+  inputs."chronos".owner = "nim-nix-pkgs";
+  inputs."chronos".ref   = "master";
+  inputs."chronos".repo  = "chronos";
   inputs."chronos".type  = "github";
   inputs."chronos".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."npeg".dir   = "nimpkgs/n/npeg";
-  inputs."npeg".owner = "riinr";
-  inputs."npeg".ref   = "flake-pinning";
-  inputs."npeg".repo  = "flake-nimble";
+  inputs."npeg".owner = "nim-nix-pkgs";
+  inputs."npeg".ref   = "master";
+  inputs."npeg".repo  = "npeg";
   inputs."npeg".type  = "github";
   inputs."npeg".inputs.nixpkgs.follows = "nixpkgs";
   inputs."npeg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."zippy".dir   = "nimpkgs/z/zippy";
-  inputs."zippy".owner = "riinr";
-  inputs."zippy".ref   = "flake-pinning";
-  inputs."zippy".repo  = "flake-nimble";
+  inputs."zippy".owner = "nim-nix-pkgs";
+  inputs."zippy".ref   = "master";
+  inputs."zippy".repo  = "zippy";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."jsony".dir   = "nimpkgs/j/jsony";
-  inputs."jsony".owner = "riinr";
-  inputs."jsony".ref   = "flake-pinning";
-  inputs."jsony".repo  = "flake-nimble";
+  inputs."jsony".owner = "nim-nix-pkgs";
+  inputs."jsony".ref   = "master";
+  inputs."jsony".repo  = "jsony";
   inputs."jsony".type  = "github";
   inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."stew".dir   = "nimpkgs/s/stew";
-  inputs."stew".owner = "riinr";
-  inputs."stew".ref   = "flake-pinning";
-  inputs."stew".repo  = "flake-nimble";
+  inputs."stew".owner = "nim-nix-pkgs";
+  inputs."stew".ref   = "master";
+  inputs."stew".repo  = "stew";
   inputs."stew".type  = "github";
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."urlly".dir   = "nimpkgs/u/urlly";
-  inputs."urlly".owner = "riinr";
-  inputs."urlly".ref   = "flake-pinning";
-  inputs."urlly".repo  = "flake-nimble";
+  inputs."urlly".owner = "nim-nix-pkgs";
+  inputs."urlly".ref   = "master";
+  inputs."urlly".repo  = "urlly";
   inputs."urlly".type  = "github";
   inputs."urlly".inputs.nixpkgs.follows = "nixpkgs";
   inputs."urlly".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

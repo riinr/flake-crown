@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."openweathermap-master".url = "path:./master";
+  inputs."openweathermap-master".dir   = "master";
+  inputs."openweathermap-master".owner = "nim-nix-pkgs";
+  inputs."openweathermap-master".ref   = "master";
+  inputs."openweathermap-master".repo  = "openweathermap";
+  inputs."openweathermap-master".type  = "github";
   inputs."openweathermap-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."openweathermap-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

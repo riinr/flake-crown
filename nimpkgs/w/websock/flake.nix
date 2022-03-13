@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."websock-main".url = "path:./main";
+  inputs."websock-main".dir   = "main";
+  inputs."websock-main".owner = "nim-nix-pkgs";
+  inputs."websock-main".ref   = "master";
+  inputs."websock-main".repo  = "websock";
+  inputs."websock-main".type  = "github";
   inputs."websock-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."websock-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

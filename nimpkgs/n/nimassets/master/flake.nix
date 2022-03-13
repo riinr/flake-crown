@@ -13,10 +13,9 @@
   inputs.src-nimassets-master.repo  = "nimassets";
   inputs.src-nimassets-master.type  = "github";
   
-  inputs."zstd".dir   = "nimpkgs/z/zstd";
-  inputs."zstd".owner = "riinr";
-  inputs."zstd".ref   = "flake-pinning";
-  inputs."zstd".repo  = "flake-nimble";
+  inputs."zstd".owner = "nim-nix-pkgs";
+  inputs."zstd".ref   = "master";
+  inputs."zstd".repo  = "zstd";
   inputs."zstd".type  = "github";
   inputs."zstd".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zstd".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

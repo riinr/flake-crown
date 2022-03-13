@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."geohash-master".url = "path:./master";
+  inputs."geohash-master".dir   = "master";
+  inputs."geohash-master".owner = "nim-nix-pkgs";
+  inputs."geohash-master".ref   = "master";
+  inputs."geohash-master".repo  = "geohash";
+  inputs."geohash-master".type  = "github";
   inputs."geohash-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."geohash-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

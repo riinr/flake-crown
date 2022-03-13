@@ -13,26 +13,23 @@
   inputs.src-platformer-master.repo  = "nim-platformer";
   inputs.src-platformer-master.type  = "github";
   
-  inputs."sdl2".dir   = "nimpkgs/s/sdl2";
-  inputs."sdl2".owner = "riinr";
-  inputs."sdl2".ref   = "flake-pinning";
-  inputs."sdl2".repo  = "flake-nimble";
+  inputs."sdl2".owner = "nim-nix-pkgs";
+  inputs."sdl2".ref   = "master";
+  inputs."sdl2".repo  = "sdl2";
   inputs."sdl2".type  = "github";
   inputs."sdl2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sdl2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."strfmt".dir   = "nimpkgs/s/strfmt";
-  inputs."strfmt".owner = "riinr";
-  inputs."strfmt".ref   = "flake-pinning";
-  inputs."strfmt".repo  = "flake-nimble";
+  inputs."strfmt".owner = "nim-nix-pkgs";
+  inputs."strfmt".ref   = "master";
+  inputs."strfmt".repo  = "strfmt";
   inputs."strfmt".type  = "github";
   inputs."strfmt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."strfmt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."basic2d".dir   = "nimpkgs/b/basic2d";
-  inputs."basic2d".owner = "riinr";
-  inputs."basic2d".ref   = "flake-pinning";
-  inputs."basic2d".repo  = "flake-nimble";
+  inputs."basic2d".owner = "nim-nix-pkgs";
+  inputs."basic2d".ref   = "master";
+  inputs."basic2d".repo  = "basic2d";
   inputs."basic2d".type  = "github";
   inputs."basic2d".inputs.nixpkgs.follows = "nixpkgs";
   inputs."basic2d".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."siphash-master".url = "path:./master";
+  inputs."siphash-master".dir   = "master";
+  inputs."siphash-master".owner = "nim-nix-pkgs";
+  inputs."siphash-master".ref   = "master";
+  inputs."siphash-master".repo  = "siphash";
+  inputs."siphash-master".type  = "github";
   inputs."siphash-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."siphash-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."siphash-v0_1_0".url = "path:./v0_1_0";
+  inputs."siphash-v0_1_0".dir   = "v0_1_0";
+  inputs."siphash-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."siphash-v0_1_0".ref   = "master";
+  inputs."siphash-v0_1_0".repo  = "siphash";
+  inputs."siphash-v0_1_0".type  = "github";
   inputs."siphash-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."siphash-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

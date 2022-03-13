@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."soundio-master".url = "path:./master";
+  inputs."soundio-master".dir   = "master";
+  inputs."soundio-master".owner = "nim-nix-pkgs";
+  inputs."soundio-master".ref   = "master";
+  inputs."soundio-master".repo  = "soundio";
+  inputs."soundio-master".type  = "github";
   inputs."soundio-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."soundio-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,19 +7,35 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."osinfo-master".url = "path:./master";
+  inputs."osinfo-master".dir   = "master";
+  inputs."osinfo-master".owner = "nim-nix-pkgs";
+  inputs."osinfo-master".ref   = "master";
+  inputs."osinfo-master".repo  = "osinfo";
+  inputs."osinfo-master".type  = "github";
   inputs."osinfo-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."osinfo-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."osinfo-v0_2_0".url = "path:./v0_2_0";
+  inputs."osinfo-v0_2_0".dir   = "v0_2_0";
+  inputs."osinfo-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."osinfo-v0_2_0".ref   = "master";
+  inputs."osinfo-v0_2_0".repo  = "osinfo";
+  inputs."osinfo-v0_2_0".type  = "github";
   inputs."osinfo-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."osinfo-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."osinfo-v0_3_1".url = "path:./v0_3_1";
+  inputs."osinfo-v0_3_1".dir   = "v0_3_1";
+  inputs."osinfo-v0_3_1".owner = "nim-nix-pkgs";
+  inputs."osinfo-v0_3_1".ref   = "master";
+  inputs."osinfo-v0_3_1".repo  = "osinfo";
+  inputs."osinfo-v0_3_1".type  = "github";
   inputs."osinfo-v0_3_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."osinfo-v0_3_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."osinfo-v0_3_2".url = "path:./v0_3_2";
+  inputs."osinfo-v0_3_2".dir   = "v0_3_2";
+  inputs."osinfo-v0_3_2".owner = "nim-nix-pkgs";
+  inputs."osinfo-v0_3_2".ref   = "master";
+  inputs."osinfo-v0_3_2".repo  = "osinfo";
+  inputs."osinfo-v0_3_2".type  = "github";
   inputs."osinfo-v0_3_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."osinfo-v0_3_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

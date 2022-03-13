@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."sampletodolist-master".url = "path:./master";
+  inputs."sampletodolist-master".dir   = "master";
+  inputs."sampletodolist-master".owner = "nim-nix-pkgs";
+  inputs."sampletodolist-master".ref   = "master";
+  inputs."sampletodolist-master".repo  = "sampletodolist";
+  inputs."sampletodolist-master".type  = "github";
   inputs."sampletodolist-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sampletodolist-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

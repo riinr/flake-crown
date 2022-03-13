@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."bitvector-master".url = "path:./master";
+  inputs."bitvector-master".dir   = "master";
+  inputs."bitvector-master".owner = "nim-nix-pkgs";
+  inputs."bitvector-master".ref   = "master";
+  inputs."bitvector-master".repo  = "bitvector";
+  inputs."bitvector-master".type  = "github";
   inputs."bitvector-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bitvector-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

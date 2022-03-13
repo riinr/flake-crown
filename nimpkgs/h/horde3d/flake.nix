@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."horde3d-master".url = "path:./master";
+  inputs."horde3d-master".dir   = "master";
+  inputs."horde3d-master".owner = "nim-nix-pkgs";
+  inputs."horde3d-master".ref   = "master";
+  inputs."horde3d-master".repo  = "horde3d";
+  inputs."horde3d-master".type  = "github";
   inputs."horde3d-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."horde3d-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

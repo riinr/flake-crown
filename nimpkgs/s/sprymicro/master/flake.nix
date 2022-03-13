@@ -13,10 +13,9 @@
   inputs.src-sprymicro-master.repo  = "sprymicro";
   inputs.src-sprymicro-master.type  = "github";
   
-  inputs."spryvm".dir   = "nimpkgs/s/spryvm";
-  inputs."spryvm".owner = "riinr";
-  inputs."spryvm".ref   = "flake-pinning";
-  inputs."spryvm".repo  = "flake-nimble";
+  inputs."spryvm".owner = "nim-nix-pkgs";
+  inputs."spryvm".ref   = "master";
+  inputs."spryvm".repo  = "spryvm";
   inputs."spryvm".type  = "github";
   inputs."spryvm".inputs.nixpkgs.follows = "nixpkgs";
   inputs."spryvm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

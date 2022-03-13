@@ -7,23 +7,43 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."futhark-master".url = "path:./master";
+  inputs."futhark-master".dir   = "master";
+  inputs."futhark-master".owner = "nim-nix-pkgs";
+  inputs."futhark-master".ref   = "master";
+  inputs."futhark-master".repo  = "futhark";
+  inputs."futhark-master".type  = "github";
   inputs."futhark-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."futhark-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."futhark-v0_3_0".url = "path:./v0_3_0";
+  inputs."futhark-v0_3_0".dir   = "v0_3_0";
+  inputs."futhark-v0_3_0".owner = "nim-nix-pkgs";
+  inputs."futhark-v0_3_0".ref   = "master";
+  inputs."futhark-v0_3_0".repo  = "futhark";
+  inputs."futhark-v0_3_0".type  = "github";
   inputs."futhark-v0_3_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."futhark-v0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."futhark-v0_3_1".url = "path:./v0_3_1";
+  inputs."futhark-v0_3_1".dir   = "v0_3_1";
+  inputs."futhark-v0_3_1".owner = "nim-nix-pkgs";
+  inputs."futhark-v0_3_1".ref   = "master";
+  inputs."futhark-v0_3_1".repo  = "futhark";
+  inputs."futhark-v0_3_1".type  = "github";
   inputs."futhark-v0_3_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."futhark-v0_3_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."futhark-v0_4_0".url = "path:./v0_4_0";
+  inputs."futhark-v0_4_0".dir   = "v0_4_0";
+  inputs."futhark-v0_4_0".owner = "nim-nix-pkgs";
+  inputs."futhark-v0_4_0".ref   = "master";
+  inputs."futhark-v0_4_0".repo  = "futhark";
+  inputs."futhark-v0_4_0".type  = "github";
   inputs."futhark-v0_4_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."futhark-v0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."futhark-v0_5_0".url = "path:./v0_5_0";
+  inputs."futhark-v0_5_0".dir   = "v0_5_0";
+  inputs."futhark-v0_5_0".owner = "nim-nix-pkgs";
+  inputs."futhark-v0_5_0".ref   = "master";
+  inputs."futhark-v0_5_0".repo  = "futhark";
+  inputs."futhark-v0_5_0".type  = "github";
   inputs."futhark-v0_5_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."futhark-v0_5_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

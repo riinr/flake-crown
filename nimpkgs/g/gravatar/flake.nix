@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."gravatar-master".url = "path:./master";
+  inputs."gravatar-master".dir   = "master";
+  inputs."gravatar-master".owner = "nim-nix-pkgs";
+  inputs."gravatar-master".ref   = "master";
+  inputs."gravatar-master".repo  = "gravatar";
+  inputs."gravatar-master".type  = "github";
   inputs."gravatar-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gravatar-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."opusenc-master".url = "path:./master";
+  inputs."opusenc-master".dir   = "master";
+  inputs."opusenc-master".owner = "nim-nix-pkgs";
+  inputs."opusenc-master".ref   = "master";
+  inputs."opusenc-master".repo  = "opusenc";
+  inputs."opusenc-master".type  = "github";
   inputs."opusenc-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."opusenc-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."opusenc-v0_1_0".url = "path:./v0_1_0";
+  inputs."opusenc-v0_1_0".dir   = "v0_1_0";
+  inputs."opusenc-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."opusenc-v0_1_0".ref   = "master";
+  inputs."opusenc-v0_1_0".repo  = "opusenc";
+  inputs."opusenc-v0_1_0".type  = "github";
   inputs."opusenc-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."opusenc-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."opusenc-v0_2_0".url = "path:./v0_2_0";
+  inputs."opusenc-v0_2_0".dir   = "v0_2_0";
+  inputs."opusenc-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."opusenc-v0_2_0".ref   = "master";
+  inputs."opusenc-v0_2_0".repo  = "opusenc";
+  inputs."opusenc-v0_2_0".type  = "github";
   inputs."opusenc-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."opusenc-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

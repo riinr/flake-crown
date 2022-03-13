@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."loopfusion-master".url = "path:./master";
+  inputs."loopfusion-master".dir   = "master";
+  inputs."loopfusion-master".owner = "nim-nix-pkgs";
+  inputs."loopfusion-master".ref   = "master";
+  inputs."loopfusion-master".repo  = "loopfusion";
+  inputs."loopfusion-master".type  = "github";
   inputs."loopfusion-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."loopfusion-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

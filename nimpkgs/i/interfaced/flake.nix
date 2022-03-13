@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."interfaced-master".url = "path:./master";
+  inputs."interfaced-master".dir   = "master";
+  inputs."interfaced-master".owner = "nim-nix-pkgs";
+  inputs."interfaced-master".ref   = "master";
+  inputs."interfaced-master".repo  = "interfaced";
+  inputs."interfaced-master".type  = "github";
   inputs."interfaced-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."interfaced-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."interfaced-0_1_0".url = "path:./0_1_0";
+  inputs."interfaced-0_1_0".dir   = "0_1_0";
+  inputs."interfaced-0_1_0".owner = "nim-nix-pkgs";
+  inputs."interfaced-0_1_0".ref   = "master";
+  inputs."interfaced-0_1_0".repo  = "interfaced";
+  inputs."interfaced-0_1_0".type  = "github";
   inputs."interfaced-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."interfaced-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."interfaced-0_2_0".url = "path:./0_2_0";
+  inputs."interfaced-0_2_0".dir   = "0_2_0";
+  inputs."interfaced-0_2_0".owner = "nim-nix-pkgs";
+  inputs."interfaced-0_2_0".ref   = "master";
+  inputs."interfaced-0_2_0".repo  = "interfaced";
+  inputs."interfaced-0_2_0".type  = "github";
   inputs."interfaced-0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."interfaced-0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

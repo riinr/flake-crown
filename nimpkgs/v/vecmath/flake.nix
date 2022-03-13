@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."vecmath-master".url = "path:./master";
+  inputs."vecmath-master".dir   = "master";
+  inputs."vecmath-master".owner = "nim-nix-pkgs";
+  inputs."vecmath-master".ref   = "master";
+  inputs."vecmath-master".repo  = "vecmath";
+  inputs."vecmath-master".type  = "github";
   inputs."vecmath-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vecmath-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

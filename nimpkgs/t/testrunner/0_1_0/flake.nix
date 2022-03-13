@@ -13,18 +13,16 @@
   inputs.src-testrunner-0_1_0.repo  = "nim-testrunner";
   inputs.src-testrunner-0_1_0.type  = "github";
   
-  inputs."libnotify".dir   = "nimpkgs/l/libnotify";
-  inputs."libnotify".owner = "riinr";
-  inputs."libnotify".ref   = "flake-pinning";
-  inputs."libnotify".repo  = "flake-nimble";
+  inputs."libnotify".owner = "nim-nix-pkgs";
+  inputs."libnotify".ref   = "master";
+  inputs."libnotify".repo  = "libnotify";
   inputs."libnotify".type  = "github";
   inputs."libnotify".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libnotify".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."fswatch".dir   = "nimpkgs/f/fswatch";
-  inputs."fswatch".owner = "riinr";
-  inputs."fswatch".ref   = "flake-pinning";
-  inputs."fswatch".repo  = "flake-nimble";
+  inputs."fswatch".owner = "nim-nix-pkgs";
+  inputs."fswatch".ref   = "master";
+  inputs."fswatch".repo  = "fswatch";
   inputs."fswatch".type  = "github";
   inputs."fswatch".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fswatch".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

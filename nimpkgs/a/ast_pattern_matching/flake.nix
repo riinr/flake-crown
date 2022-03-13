@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."ast_pattern_matching-master".url = "path:./master";
+  inputs."ast_pattern_matching-master".dir   = "master";
+  inputs."ast_pattern_matching-master".owner = "nim-nix-pkgs";
+  inputs."ast_pattern_matching-master".ref   = "master";
+  inputs."ast_pattern_matching-master".repo  = "ast_pattern_matching";
+  inputs."ast_pattern_matching-master".type  = "github";
   inputs."ast_pattern_matching-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ast_pattern_matching-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

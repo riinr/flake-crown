@@ -7,27 +7,51 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."monocypher-master".url = "path:./master";
+  inputs."monocypher-master".dir   = "master";
+  inputs."monocypher-master".owner = "nim-nix-pkgs";
+  inputs."monocypher-master".ref   = "master";
+  inputs."monocypher-master".repo  = "monocypher";
+  inputs."monocypher-master".type  = "github";
   inputs."monocypher-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."monocypher-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."monocypher-v0_1_0".url = "path:./v0_1_0";
+  inputs."monocypher-v0_1_0".dir   = "v0_1_0";
+  inputs."monocypher-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."monocypher-v0_1_0".ref   = "master";
+  inputs."monocypher-v0_1_0".repo  = "monocypher";
+  inputs."monocypher-v0_1_0".type  = "github";
   inputs."monocypher-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."monocypher-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."monocypher-v0_1_1".url = "path:./v0_1_1";
+  inputs."monocypher-v0_1_1".dir   = "v0_1_1";
+  inputs."monocypher-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."monocypher-v0_1_1".ref   = "master";
+  inputs."monocypher-v0_1_1".repo  = "monocypher";
+  inputs."monocypher-v0_1_1".type  = "github";
   inputs."monocypher-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."monocypher-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."monocypher-v0_1_2".url = "path:./v0_1_2";
+  inputs."monocypher-v0_1_2".dir   = "v0_1_2";
+  inputs."monocypher-v0_1_2".owner = "nim-nix-pkgs";
+  inputs."monocypher-v0_1_2".ref   = "master";
+  inputs."monocypher-v0_1_2".repo  = "monocypher";
+  inputs."monocypher-v0_1_2".type  = "github";
   inputs."monocypher-v0_1_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."monocypher-v0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."monocypher-v0_2_0".url = "path:./v0_2_0";
+  inputs."monocypher-v0_2_0".dir   = "v0_2_0";
+  inputs."monocypher-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."monocypher-v0_2_0".ref   = "master";
+  inputs."monocypher-v0_2_0".repo  = "monocypher";
+  inputs."monocypher-v0_2_0".type  = "github";
   inputs."monocypher-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."monocypher-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."monocypher-v0_2_1".url = "path:./v0_2_1";
+  inputs."monocypher-v0_2_1".dir   = "v0_2_1";
+  inputs."monocypher-v0_2_1".owner = "nim-nix-pkgs";
+  inputs."monocypher-v0_2_1".ref   = "master";
+  inputs."monocypher-v0_2_1".repo  = "monocypher";
+  inputs."monocypher-v0_2_1".type  = "github";
   inputs."monocypher-v0_2_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."monocypher-v0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

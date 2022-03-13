@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."vidhdr-master".url = "path:./master";
+  inputs."vidhdr-master".dir   = "master";
+  inputs."vidhdr-master".owner = "nim-nix-pkgs";
+  inputs."vidhdr-master".ref   = "master";
+  inputs."vidhdr-master".repo  = "vidhdr";
+  inputs."vidhdr-master".type  = "github";
   inputs."vidhdr-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vidhdr-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

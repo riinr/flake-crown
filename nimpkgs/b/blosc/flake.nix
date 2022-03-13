@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."blosc-master".url = "path:./master";
+  inputs."blosc-master".dir   = "master";
+  inputs."blosc-master".owner = "nim-nix-pkgs";
+  inputs."blosc-master".ref   = "master";
+  inputs."blosc-master".repo  = "blosc";
+  inputs."blosc-master".type  = "github";
   inputs."blosc-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."blosc-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."blosc-v1_15_0".url = "path:./v1_15_0";
+  inputs."blosc-v1_15_0".dir   = "v1_15_0";
+  inputs."blosc-v1_15_0".owner = "nim-nix-pkgs";
+  inputs."blosc-v1_15_0".ref   = "master";
+  inputs."blosc-v1_15_0".repo  = "blosc";
+  inputs."blosc-v1_15_0".type  = "github";
   inputs."blosc-v1_15_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."blosc-v1_15_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."vmvc-master".url = "path:./master";
+  inputs."vmvc-master".dir   = "master";
+  inputs."vmvc-master".owner = "nim-nix-pkgs";
+  inputs."vmvc-master".ref   = "master";
+  inputs."vmvc-master".repo  = "vmvc";
+  inputs."vmvc-master".type  = "github";
   inputs."vmvc-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vmvc-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

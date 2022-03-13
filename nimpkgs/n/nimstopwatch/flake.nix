@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nimstopwatch-master".url = "path:./master";
+  inputs."nimstopwatch-master".dir   = "master";
+  inputs."nimstopwatch-master".owner = "nim-nix-pkgs";
+  inputs."nimstopwatch-master".ref   = "master";
+  inputs."nimstopwatch-master".repo  = "nimstopwatch";
+  inputs."nimstopwatch-master".type  = "github";
   inputs."nimstopwatch-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimstopwatch-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

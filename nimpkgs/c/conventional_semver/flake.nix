@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."conventional_semver-master".url = "path:./master";
+  inputs."conventional_semver-master".dir   = "master";
+  inputs."conventional_semver-master".owner = "nim-nix-pkgs";
+  inputs."conventional_semver-master".ref   = "master";
+  inputs."conventional_semver-master".repo  = "conventional_semver";
+  inputs."conventional_semver-master".type  = "github";
   inputs."conventional_semver-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."conventional_semver-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."conventional_semver-0_1_0".url = "path:./0_1_0";
+  inputs."conventional_semver-0_1_0".dir   = "0_1_0";
+  inputs."conventional_semver-0_1_0".owner = "nim-nix-pkgs";
+  inputs."conventional_semver-0_1_0".ref   = "master";
+  inputs."conventional_semver-0_1_0".repo  = "conventional_semver";
+  inputs."conventional_semver-0_1_0".type  = "github";
   inputs."conventional_semver-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."conventional_semver-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."conventional_semver-0_2_0".url = "path:./0_2_0";
+  inputs."conventional_semver-0_2_0".dir   = "0_2_0";
+  inputs."conventional_semver-0_2_0".owner = "nim-nix-pkgs";
+  inputs."conventional_semver-0_2_0".ref   = "master";
+  inputs."conventional_semver-0_2_0".repo  = "conventional_semver";
+  inputs."conventional_semver-0_2_0".type  = "github";
   inputs."conventional_semver-0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."conventional_semver-0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

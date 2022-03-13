@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."onedrive-master".url = "path:./master";
+  inputs."onedrive-master".dir   = "master";
+  inputs."onedrive-master".owner = "nim-nix-pkgs";
+  inputs."onedrive-master".ref   = "master";
+  inputs."onedrive-master".repo  = "onedrive";
+  inputs."onedrive-master".type  = "github";
   inputs."onedrive-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."onedrive-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

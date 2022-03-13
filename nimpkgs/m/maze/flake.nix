@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."maze-master".url = "path:./master";
+  inputs."maze-master".dir   = "master";
+  inputs."maze-master".owner = "nim-nix-pkgs";
+  inputs."maze-master".ref   = "master";
+  inputs."maze-master".repo  = "maze";
+  inputs."maze-master".type  = "github";
   inputs."maze-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."maze-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."maze-1_0_0".url = "path:./1_0_0";
+  inputs."maze-1_0_0".dir   = "1_0_0";
+  inputs."maze-1_0_0".owner = "nim-nix-pkgs";
+  inputs."maze-1_0_0".ref   = "master";
+  inputs."maze-1_0_0".repo  = "maze";
+  inputs."maze-1_0_0".type  = "github";
   inputs."maze-1_0_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."maze-1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

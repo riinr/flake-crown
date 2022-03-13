@@ -13,34 +13,30 @@
   inputs.src-nimAGG-master.repo  = "nimAGG";
   inputs.src-nimAGG-master.type  = "github";
   
-  inputs."sdl2_nim".dir   = "nimpkgs/s/sdl2_nim";
-  inputs."sdl2_nim".owner = "riinr";
-  inputs."sdl2_nim".ref   = "flake-pinning";
-  inputs."sdl2_nim".repo  = "flake-nimble";
+  inputs."sdl2_nim".owner = "nim-nix-pkgs";
+  inputs."sdl2_nim".ref   = "master";
+  inputs."sdl2_nim".repo  = "sdl2_nim";
   inputs."sdl2_nim".type  = "github";
   inputs."sdl2_nim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sdl2_nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimbmp".dir   = "nimpkgs/n/nimbmp";
-  inputs."nimbmp".owner = "riinr";
-  inputs."nimbmp".ref   = "flake-pinning";
-  inputs."nimbmp".repo  = "flake-nimble";
+  inputs."nimbmp".owner = "nim-nix-pkgs";
+  inputs."nimbmp".ref   = "master";
+  inputs."nimbmp".repo  = "nimbmp";
   inputs."nimbmp".type  = "github";
   inputs."nimbmp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimbmp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."freetype".dir   = "nimpkgs/f/freetype";
-  inputs."freetype".owner = "riinr";
-  inputs."freetype".ref   = "flake-pinning";
-  inputs."freetype".repo  = "flake-nimble";
+  inputs."freetype".owner = "nim-nix-pkgs";
+  inputs."freetype".ref   = "master";
+  inputs."freetype".repo  = "freetype";
   inputs."freetype".type  = "github";
   inputs."freetype".inputs.nixpkgs.follows = "nixpkgs";
   inputs."freetype".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."polybool".dir   = "nimpkgs/p/polybool";
-  inputs."polybool".owner = "riinr";
-  inputs."polybool".ref   = "flake-pinning";
-  inputs."polybool".repo  = "flake-nimble";
+  inputs."polybool".owner = "nim-nix-pkgs";
+  inputs."polybool".ref   = "master";
+  inputs."polybool".repo  = "polybool";
   inputs."polybool".type  = "github";
   inputs."polybool".inputs.nixpkgs.follows = "nixpkgs";
   inputs."polybool".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

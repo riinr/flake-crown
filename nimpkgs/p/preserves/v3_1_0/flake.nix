@@ -13,18 +13,16 @@
   inputs.src-preserves-v3_1_0.repo  = "preserves-nim";
   inputs.src-preserves-v3_1_0.type  = "other";
   
-  inputs."compiler".dir   = "nimpkgs/c/compiler";
-  inputs."compiler".owner = "riinr";
-  inputs."compiler".ref   = "flake-pinning";
-  inputs."compiler".repo  = "flake-nimble";
+  inputs."compiler".owner = "nim-nix-pkgs";
+  inputs."compiler".ref   = "master";
+  inputs."compiler".repo  = "compiler";
   inputs."compiler".type  = "github";
   inputs."compiler".inputs.nixpkgs.follows = "nixpkgs";
   inputs."compiler".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."npeg".dir   = "nimpkgs/n/npeg";
-  inputs."npeg".owner = "riinr";
-  inputs."npeg".ref   = "flake-pinning";
-  inputs."npeg".repo  = "flake-nimble";
+  inputs."npeg".owner = "nim-nix-pkgs";
+  inputs."npeg".ref   = "master";
+  inputs."npeg".repo  = "npeg";
   inputs."npeg".type  = "github";
   inputs."npeg".inputs.nixpkgs.follows = "nixpkgs";
   inputs."npeg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

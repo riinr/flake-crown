@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."variantsugar-master".url = "path:./master";
+  inputs."variantsugar-master".dir   = "master";
+  inputs."variantsugar-master".owner = "nim-nix-pkgs";
+  inputs."variantsugar-master".ref   = "master";
+  inputs."variantsugar-master".repo  = "variantsugar";
+  inputs."variantsugar-master".type  = "github";
   inputs."variantsugar-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."variantsugar-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."variantsugar-v0_1_0".url = "path:./v0_1_0";
+  inputs."variantsugar-v0_1_0".dir   = "v0_1_0";
+  inputs."variantsugar-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."variantsugar-v0_1_0".ref   = "master";
+  inputs."variantsugar-v0_1_0".repo  = "variantsugar";
+  inputs."variantsugar-v0_1_0".type  = "github";
   inputs."variantsugar-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."variantsugar-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."urlshortener-master".url = "path:./master";
+  inputs."urlshortener-master".dir   = "master";
+  inputs."urlshortener-master".owner = "nim-nix-pkgs";
+  inputs."urlshortener-master".ref   = "master";
+  inputs."urlshortener-master".repo  = "urlshortener";
+  inputs."urlshortener-master".type  = "github";
   inputs."urlshortener-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."urlshortener-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."urlshortener-v0_1_0".url = "path:./v0_1_0";
+  inputs."urlshortener-v0_1_0".dir   = "v0_1_0";
+  inputs."urlshortener-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."urlshortener-v0_1_0".ref   = "master";
+  inputs."urlshortener-v0_1_0".repo  = "urlshortener";
+  inputs."urlshortener-v0_1_0".type  = "github";
   inputs."urlshortener-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."urlshortener-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

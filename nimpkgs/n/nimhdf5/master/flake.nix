@@ -13,10 +13,9 @@
   inputs.src-nimhdf5-master.repo  = "nimhdf5";
   inputs.src-nimhdf5-master.type  = "github";
   
-  inputs."https://github.com/vindaar/seqmath".dir   = "nimpkgs/h/https://github.com/vindaar/seqmath";
-  inputs."https://github.com/vindaar/seqmath".owner = "riinr";
-  inputs."https://github.com/vindaar/seqmath".ref   = "flake-pinning";
-  inputs."https://github.com/vindaar/seqmath".repo  = "flake-nimble";
+  inputs."https://github.com/vindaar/seqmath".owner = "nim-nix-pkgs";
+  inputs."https://github.com/vindaar/seqmath".ref   = "master";
+  inputs."https://github.com/vindaar/seqmath".repo  = "https://github.com/vindaar/seqmath";
   inputs."https://github.com/vindaar/seqmath".type  = "github";
   inputs."https://github.com/vindaar/seqmath".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/vindaar/seqmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -7,27 +7,51 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."neoid-master".url = "path:./master";
+  inputs."neoid-master".dir   = "master";
+  inputs."neoid-master".owner = "nim-nix-pkgs";
+  inputs."neoid-master".ref   = "master";
+  inputs."neoid-master".repo  = "neoid";
+  inputs."neoid-master".type  = "github";
   inputs."neoid-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neoid-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."neoid-0_3_0".url = "path:./0_3_0";
+  inputs."neoid-0_3_0".dir   = "0_3_0";
+  inputs."neoid-0_3_0".owner = "nim-nix-pkgs";
+  inputs."neoid-0_3_0".ref   = "master";
+  inputs."neoid-0_3_0".repo  = "neoid";
+  inputs."neoid-0_3_0".type  = "github";
   inputs."neoid-0_3_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neoid-0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."neoid-0_3_1".url = "path:./0_3_1";
+  inputs."neoid-0_3_1".dir   = "0_3_1";
+  inputs."neoid-0_3_1".owner = "nim-nix-pkgs";
+  inputs."neoid-0_3_1".ref   = "master";
+  inputs."neoid-0_3_1".repo  = "neoid";
+  inputs."neoid-0_3_1".type  = "github";
   inputs."neoid-0_3_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neoid-0_3_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."neoid-0_3_2".url = "path:./0_3_2";
+  inputs."neoid-0_3_2".dir   = "0_3_2";
+  inputs."neoid-0_3_2".owner = "nim-nix-pkgs";
+  inputs."neoid-0_3_2".ref   = "master";
+  inputs."neoid-0_3_2".repo  = "neoid";
+  inputs."neoid-0_3_2".type  = "github";
   inputs."neoid-0_3_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neoid-0_3_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."neoid-v0_1_0".url = "path:./v0_1_0";
+  inputs."neoid-v0_1_0".dir   = "v0_1_0";
+  inputs."neoid-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."neoid-v0_1_0".ref   = "master";
+  inputs."neoid-v0_1_0".repo  = "neoid";
+  inputs."neoid-v0_1_0".type  = "github";
   inputs."neoid-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neoid-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."neoid-v0_2_0".url = "path:./v0_2_0";
+  inputs."neoid-v0_2_0".dir   = "v0_2_0";
+  inputs."neoid-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."neoid-v0_2_0".ref   = "master";
+  inputs."neoid-v0_2_0".repo  = "neoid";
+  inputs."neoid-v0_2_0".type  = "github";
   inputs."neoid-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neoid-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

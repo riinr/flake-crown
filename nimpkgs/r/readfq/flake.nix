@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."readfq-master".url = "path:./master";
+  inputs."readfq-master".dir   = "master";
+  inputs."readfq-master".owner = "nim-nix-pkgs";
+  inputs."readfq-master".ref   = "master";
+  inputs."readfq-master".repo  = "readfq";
+  inputs."readfq-master".type  = "github";
   inputs."readfq-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."readfq-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."readfq-v0_1_1".url = "path:./v0_1_1";
+  inputs."readfq-v0_1_1".dir   = "v0_1_1";
+  inputs."readfq-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."readfq-v0_1_1".ref   = "master";
+  inputs."readfq-v0_1_1".repo  = "readfq";
+  inputs."readfq-v0_1_1".type  = "github";
   inputs."readfq-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."readfq-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

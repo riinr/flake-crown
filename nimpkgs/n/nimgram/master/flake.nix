@@ -13,42 +13,37 @@
   inputs.src-nimgram-master.repo  = "nimgram";
   inputs.src-nimgram-master.type  = "github";
   
-  inputs."zippy".dir   = "nimpkgs/z/zippy";
-  inputs."zippy".owner = "riinr";
-  inputs."zippy".ref   = "flake-pinning";
-  inputs."zippy".repo  = "flake-nimble";
+  inputs."zippy".owner = "nim-nix-pkgs";
+  inputs."zippy".ref   = "master";
+  inputs."zippy".repo  = "zippy";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimcrypto".dir   = "nimpkgs/n/nimcrypto";
-  inputs."nimcrypto".owner = "riinr";
-  inputs."nimcrypto".ref   = "flake-pinning";
-  inputs."nimcrypto".repo  = "flake-nimble";
+  inputs."nimcrypto".owner = "nim-nix-pkgs";
+  inputs."nimcrypto".ref   = "master";
+  inputs."nimcrypto".repo  = "nimcrypto";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."stint".dir   = "nimpkgs/s/stint";
-  inputs."stint".owner = "riinr";
-  inputs."stint".ref   = "flake-pinning";
-  inputs."stint".repo  = "flake-nimble";
+  inputs."stint".owner = "nim-nix-pkgs";
+  inputs."stint".ref   = "master";
+  inputs."stint".repo  = "stint";
   inputs."stint".type  = "github";
   inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."gmp".dir   = "nimpkgs/g/gmp";
-  inputs."gmp".owner = "riinr";
-  inputs."gmp".ref   = "flake-pinning";
-  inputs."gmp".repo  = "flake-nimble";
+  inputs."gmp".owner = "nim-nix-pkgs";
+  inputs."gmp".ref   = "master";
+  inputs."gmp".repo  = "gmp";
   inputs."gmp".type  = "github";
   inputs."gmp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gmp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/dadadani/nim-random".dir   = "nimpkgs/h/https://github.com/dadadani/nim-random";
-  inputs."https://github.com/dadadani/nim-random".owner = "riinr";
-  inputs."https://github.com/dadadani/nim-random".ref   = "flake-pinning";
-  inputs."https://github.com/dadadani/nim-random".repo  = "flake-nimble";
+  inputs."https://github.com/dadadani/nim-random".owner = "nim-nix-pkgs";
+  inputs."https://github.com/dadadani/nim-random".ref   = "master";
+  inputs."https://github.com/dadadani/nim-random".repo  = "https://github.com/dadadani/nim-random";
   inputs."https://github.com/dadadani/nim-random".type  = "github";
   inputs."https://github.com/dadadani/nim-random".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/dadadani/nim-random".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

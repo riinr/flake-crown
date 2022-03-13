@@ -13,10 +13,9 @@
   inputs.src-httpauth-0_1_2.repo  = "nim-httpauth";
   inputs.src-httpauth-0_1_2.type  = "github";
   
-  inputs."libsodium".dir   = "nimpkgs/l/libsodium";
-  inputs."libsodium".owner = "riinr";
-  inputs."libsodium".ref   = "flake-pinning";
-  inputs."libsodium".repo  = "flake-nimble";
+  inputs."libsodium".owner = "nim-nix-pkgs";
+  inputs."libsodium".ref   = "master";
+  inputs."libsodium".repo  = "libsodium";
   inputs."libsodium".type  = "github";
   inputs."libsodium".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libsodium".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,10 +13,9 @@
   inputs.src-nimi3status-0_2_0.repo  = "nimi3status";
   inputs.src-nimi3status-0_2_0.type  = "github";
   
-  inputs."colorsys".dir   = "nimpkgs/c/colorsys";
-  inputs."colorsys".owner = "riinr";
-  inputs."colorsys".ref   = "flake-pinning";
-  inputs."colorsys".repo  = "flake-nimble";
+  inputs."colorsys".owner = "nim-nix-pkgs";
+  inputs."colorsys".ref   = "master";
+  inputs."colorsys".repo  = "colorsys";
   inputs."colorsys".type  = "github";
   inputs."colorsys".inputs.nixpkgs.follows = "nixpkgs";
   inputs."colorsys".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

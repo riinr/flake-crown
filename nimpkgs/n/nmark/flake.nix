@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nmark-develop".url = "path:./develop";
+  inputs."nmark-develop".dir   = "develop";
+  inputs."nmark-develop".owner = "nim-nix-pkgs";
+  inputs."nmark-develop".ref   = "master";
+  inputs."nmark-develop".repo  = "nmark";
+  inputs."nmark-develop".type  = "github";
   inputs."nmark-develop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nmark-develop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nmark-master".url = "path:./master";
+  inputs."nmark-master".dir   = "master";
+  inputs."nmark-master".owner = "nim-nix-pkgs";
+  inputs."nmark-master".ref   = "master";
+  inputs."nmark-master".repo  = "nmark";
+  inputs."nmark-master".type  = "github";
   inputs."nmark-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nmark-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

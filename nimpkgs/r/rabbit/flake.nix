@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."rabbit-main".url = "path:./main";
+  inputs."rabbit-main".dir   = "main";
+  inputs."rabbit-main".owner = "nim-nix-pkgs";
+  inputs."rabbit-main".ref   = "master";
+  inputs."rabbit-main".repo  = "rabbit";
+  inputs."rabbit-main".type  = "github";
   inputs."rabbit-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rabbit-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."rabbit-v0_1_0".url = "path:./v0_1_0";
+  inputs."rabbit-v0_1_0".dir   = "v0_1_0";
+  inputs."rabbit-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."rabbit-v0_1_0".ref   = "master";
+  inputs."rabbit-v0_1_0".repo  = "rabbit";
+  inputs."rabbit-v0_1_0".type  = "github";
   inputs."rabbit-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rabbit-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

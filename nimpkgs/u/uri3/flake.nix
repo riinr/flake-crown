@@ -7,23 +7,43 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."uri3-master".url = "path:./master";
+  inputs."uri3-master".dir   = "master";
+  inputs."uri3-master".owner = "nim-nix-pkgs";
+  inputs."uri3-master".ref   = "master";
+  inputs."uri3-master".repo  = "uri3";
+  inputs."uri3-master".type  = "github";
   inputs."uri3-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uri3-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."uri3-0_1_4".url = "path:./0_1_4";
+  inputs."uri3-0_1_4".dir   = "0_1_4";
+  inputs."uri3-0_1_4".owner = "nim-nix-pkgs";
+  inputs."uri3-0_1_4".ref   = "master";
+  inputs."uri3-0_1_4".repo  = "uri3";
+  inputs."uri3-0_1_4".type  = "github";
   inputs."uri3-0_1_4".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uri3-0_1_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."uri3-v0_1_1".url = "path:./v0_1_1";
+  inputs."uri3-v0_1_1".dir   = "v0_1_1";
+  inputs."uri3-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."uri3-v0_1_1".ref   = "master";
+  inputs."uri3-v0_1_1".repo  = "uri3";
+  inputs."uri3-v0_1_1".type  = "github";
   inputs."uri3-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uri3-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."uri3-v0_1_3".url = "path:./v0_1_3";
+  inputs."uri3-v0_1_3".dir   = "v0_1_3";
+  inputs."uri3-v0_1_3".owner = "nim-nix-pkgs";
+  inputs."uri3-v0_1_3".ref   = "master";
+  inputs."uri3-v0_1_3".repo  = "uri3";
+  inputs."uri3-v0_1_3".type  = "github";
   inputs."uri3-v0_1_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uri3-v0_1_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."uri3-v0_1_4".url = "path:./v0_1_4";
+  inputs."uri3-v0_1_4".dir   = "v0_1_4";
+  inputs."uri3-v0_1_4".owner = "nim-nix-pkgs";
+  inputs."uri3-v0_1_4".ref   = "master";
+  inputs."uri3-v0_1_4".repo  = "uri3";
+  inputs."uri3-v0_1_4".type  = "github";
   inputs."uri3-v0_1_4".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uri3-v0_1_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

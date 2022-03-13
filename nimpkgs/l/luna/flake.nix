@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."luna-master".url = "path:./master";
+  inputs."luna-master".dir   = "master";
+  inputs."luna-master".owner = "nim-nix-pkgs";
+  inputs."luna-master".ref   = "master";
+  inputs."luna-master".repo  = "luna";
+  inputs."luna-master".type  = "github";
   inputs."luna-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."luna-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

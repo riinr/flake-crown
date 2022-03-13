@@ -13,18 +13,16 @@
   inputs.src-neoid-0_3_2.repo  = "nim-neoid";
   inputs.src-neoid-0_3_2.type  = "github";
   
-  inputs."random".dir   = "nimpkgs/r/random";
-  inputs."random".owner = "riinr";
-  inputs."random".ref   = "flake-pinning";
-  inputs."random".repo  = "flake-nimble";
+  inputs."random".owner = "nim-nix-pkgs";
+  inputs."random".ref   = "master";
+  inputs."random".repo  = "random";
   inputs."random".type  = "github";
   inputs."random".inputs.nixpkgs.follows = "nixpkgs";
   inputs."random".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."winim".dir   = "nimpkgs/w/winim";
-  inputs."winim".owner = "riinr";
-  inputs."winim".ref   = "flake-pinning";
-  inputs."winim".repo  = "flake-nimble";
+  inputs."winim".owner = "nim-nix-pkgs";
+  inputs."winim".ref   = "master";
+  inputs."winim".repo  = "winim";
   inputs."winim".type  = "github";
   inputs."winim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."winim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

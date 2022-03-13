@@ -13,34 +13,30 @@
   inputs.src-plotly-master.repo  = "nim-plotly";
   inputs.src-plotly-master.type  = "github";
   
-  inputs."chroma".dir   = "nimpkgs/c/chroma";
-  inputs."chroma".owner = "riinr";
-  inputs."chroma".ref   = "flake-pinning";
-  inputs."chroma".repo  = "flake-nimble";
+  inputs."chroma".owner = "nim-nix-pkgs";
+  inputs."chroma".ref   = "master";
+  inputs."chroma".repo  = "chroma";
   inputs."chroma".type  = "github";
   inputs."chroma".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chroma".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."jsbind".dir   = "nimpkgs/j/jsbind";
-  inputs."jsbind".owner = "riinr";
-  inputs."jsbind".ref   = "flake-pinning";
-  inputs."jsbind".repo  = "flake-nimble";
+  inputs."jsbind".owner = "nim-nix-pkgs";
+  inputs."jsbind".ref   = "master";
+  inputs."jsbind".repo  = "jsbind";
   inputs."jsbind".type  = "github";
   inputs."jsbind".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsbind".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."webview".dir   = "nimpkgs/w/webview";
-  inputs."webview".owner = "riinr";
-  inputs."webview".ref   = "flake-pinning";
-  inputs."webview".repo  = "flake-nimble";
+  inputs."webview".owner = "nim-nix-pkgs";
+  inputs."webview".ref   = "master";
+  inputs."webview".repo  = "webview";
   inputs."webview".type  = "github";
   inputs."webview".inputs.nixpkgs.follows = "nixpkgs";
   inputs."webview".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."ws".dir   = "nimpkgs/w/ws";
-  inputs."ws".owner = "riinr";
-  inputs."ws".ref   = "flake-pinning";
-  inputs."ws".repo  = "flake-nimble";
+  inputs."ws".owner = "nim-nix-pkgs";
+  inputs."ws".ref   = "master";
+  inputs."ws".repo  = "ws";
   inputs."ws".type  = "github";
   inputs."ws".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ws".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

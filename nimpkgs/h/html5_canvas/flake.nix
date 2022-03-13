@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."html5_canvas-master".url = "path:./master";
+  inputs."html5_canvas-master".dir   = "master";
+  inputs."html5_canvas-master".owner = "nim-nix-pkgs";
+  inputs."html5_canvas-master".ref   = "master";
+  inputs."html5_canvas-master".repo  = "html5_canvas";
+  inputs."html5_canvas-master".type  = "github";
   inputs."html5_canvas-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."html5_canvas-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

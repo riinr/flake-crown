@@ -13,10 +13,9 @@
   inputs.src-nimhdf5-v0_2_7.repo  = "nimhdf5";
   inputs.src-nimhdf5-v0_2_7.type  = "github";
   
-  inputs."arraymancer".dir   = "nimpkgs/a/arraymancer";
-  inputs."arraymancer".owner = "riinr";
-  inputs."arraymancer".ref   = "flake-pinning";
-  inputs."arraymancer".repo  = "flake-nimble";
+  inputs."arraymancer".owner = "nim-nix-pkgs";
+  inputs."arraymancer".ref   = "master";
+  inputs."arraymancer".repo  = "arraymancer";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

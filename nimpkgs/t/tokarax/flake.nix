@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."tokarax-master".url = "path:./master";
+  inputs."tokarax-master".dir   = "master";
+  inputs."tokarax-master".owner = "nim-nix-pkgs";
+  inputs."tokarax-master".ref   = "master";
+  inputs."tokarax-master".repo  = "tokarax";
+  inputs."tokarax-master".type  = "github";
   inputs."tokarax-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tokarax-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

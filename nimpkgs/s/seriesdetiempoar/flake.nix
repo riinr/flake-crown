@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."seriesdetiempoar-master".url = "path:./master";
+  inputs."seriesdetiempoar-master".dir   = "master";
+  inputs."seriesdetiempoar-master".owner = "nim-nix-pkgs";
+  inputs."seriesdetiempoar-master".ref   = "master";
+  inputs."seriesdetiempoar-master".repo  = "seriesdetiempoar";
+  inputs."seriesdetiempoar-master".type  = "github";
   inputs."seriesdetiempoar-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."seriesdetiempoar-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

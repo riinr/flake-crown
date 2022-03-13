@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."rbac-master".url = "path:./master";
+  inputs."rbac-master".dir   = "master";
+  inputs."rbac-master".owner = "nim-nix-pkgs";
+  inputs."rbac-master".ref   = "master";
+  inputs."rbac-master".repo  = "rbac";
+  inputs."rbac-master".type  = "github";
   inputs."rbac-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rbac-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."rbac-0_1_0".url = "path:./0_1_0";
+  inputs."rbac-0_1_0".dir   = "0_1_0";
+  inputs."rbac-0_1_0".owner = "nim-nix-pkgs";
+  inputs."rbac-0_1_0".ref   = "master";
+  inputs."rbac-0_1_0".repo  = "rbac";
+  inputs."rbac-0_1_0".type  = "github";
   inputs."rbac-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rbac-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -13,18 +13,16 @@
   inputs.src-pine-v0_1_1.repo  = "pine";
   inputs.src-pine-v0_1_1.type  = "github";
   
-  inputs."markdown".dir   = "nimpkgs/m/markdown";
-  inputs."markdown".owner = "riinr";
-  inputs."markdown".ref   = "flake-pinning";
-  inputs."markdown".repo  = "flake-nimble";
+  inputs."markdown".owner = "nim-nix-pkgs";
+  inputs."markdown".ref   = "master";
+  inputs."markdown".repo  = "markdown";
   inputs."markdown".type  = "github";
   inputs."markdown".inputs.nixpkgs.follows = "nixpkgs";
   inputs."markdown".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."rainbow".dir   = "nimpkgs/r/rainbow";
-  inputs."rainbow".owner = "riinr";
-  inputs."rainbow".ref   = "flake-pinning";
-  inputs."rainbow".repo  = "flake-nimble";
+  inputs."rainbow".owner = "nim-nix-pkgs";
+  inputs."rainbow".ref   = "master";
+  inputs."rainbow".repo  = "rainbow";
   inputs."rainbow".type  = "github";
   inputs."rainbow".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rainbow".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

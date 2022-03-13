@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."qeu-master".url = "path:./master";
+  inputs."qeu-master".dir   = "master";
+  inputs."qeu-master".owner = "nim-nix-pkgs";
+  inputs."qeu-master".ref   = "master";
+  inputs."qeu-master".repo  = "qeu";
+  inputs."qeu-master".type  = "github";
   inputs."qeu-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."qeu-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

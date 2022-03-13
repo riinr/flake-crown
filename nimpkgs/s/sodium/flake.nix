@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."sodium-master".url = "path:./master";
+  inputs."sodium-master".dir   = "master";
+  inputs."sodium-master".owner = "nim-nix-pkgs";
+  inputs."sodium-master".ref   = "master";
+  inputs."sodium-master".repo  = "sodium";
+  inputs."sodium-master".type  = "github";
   inputs."sodium-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sodium-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

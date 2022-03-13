@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."confutils-master".url = "path:./master";
+  inputs."confutils-master".dir   = "master";
+  inputs."confutils-master".owner = "nim-nix-pkgs";
+  inputs."confutils-master".ref   = "master";
+  inputs."confutils-master".repo  = "confutils";
+  inputs."confutils-master".type  = "github";
   inputs."confutils-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."confutils-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

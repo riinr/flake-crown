@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."blackvas_cli-master".url = "path:./master";
+  inputs."blackvas_cli-master".dir   = "master";
+  inputs."blackvas_cli-master".owner = "nim-nix-pkgs";
+  inputs."blackvas_cli-master".ref   = "master";
+  inputs."blackvas_cli-master".repo  = "blackvas_cli";
+  inputs."blackvas_cli-master".type  = "github";
   inputs."blackvas_cli-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."blackvas_cli-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

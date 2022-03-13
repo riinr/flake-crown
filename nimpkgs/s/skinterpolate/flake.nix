@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."skinterpolate-master".url = "path:./master";
+  inputs."skinterpolate-master".dir   = "master";
+  inputs."skinterpolate-master".owner = "nim-nix-pkgs";
+  inputs."skinterpolate-master".ref   = "master";
+  inputs."skinterpolate-master".repo  = "skinterpolate";
+  inputs."skinterpolate-master".type  = "github";
   inputs."skinterpolate-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."skinterpolate-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

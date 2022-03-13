@@ -13,10 +13,9 @@
   inputs.src-nimatic-master.repo  = "nimatic";
   inputs.src-nimatic-master.type  = "github";
   
-  inputs."markdown".dir   = "nimpkgs/m/markdown";
-  inputs."markdown".owner = "riinr";
-  inputs."markdown".ref   = "flake-pinning";
-  inputs."markdown".repo  = "flake-nimble";
+  inputs."markdown".owner = "nim-nix-pkgs";
+  inputs."markdown".ref   = "master";
+  inputs."markdown".repo  = "markdown";
   inputs."markdown".type  = "github";
   inputs."markdown".inputs.nixpkgs.follows = "nixpkgs";
   inputs."markdown".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

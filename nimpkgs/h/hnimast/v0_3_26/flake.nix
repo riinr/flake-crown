@@ -13,34 +13,30 @@
   inputs.src-hnimast-v0_3_26.repo  = "hnimast";
   inputs.src-hnimast-v0_3_26.type  = "github";
   
-  inputs."hmisc".dir   = "nimpkgs/h/hmisc";
-  inputs."hmisc".owner = "riinr";
-  inputs."hmisc".ref   = "flake-pinning";
-  inputs."hmisc".repo  = "flake-nimble";
+  inputs."hmisc".owner = "nim-nix-pkgs";
+  inputs."hmisc".ref   = "master";
+  inputs."hmisc".repo  = "hmisc";
   inputs."hmisc".type  = "github";
   inputs."hmisc".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hmisc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."macroutils".dir   = "nimpkgs/m/macroutils";
-  inputs."macroutils".owner = "riinr";
-  inputs."macroutils".ref   = "flake-pinning";
-  inputs."macroutils".repo  = "flake-nimble";
+  inputs."macroutils".owner = "nim-nix-pkgs";
+  inputs."macroutils".ref   = "master";
+  inputs."macroutils".repo  = "macroutils";
   inputs."macroutils".type  = "github";
   inputs."macroutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."macroutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."compiler".dir   = "nimpkgs/c/compiler";
-  inputs."compiler".owner = "riinr";
-  inputs."compiler".ref   = "flake-pinning";
-  inputs."compiler".repo  = "flake-nimble";
+  inputs."compiler".owner = "nim-nix-pkgs";
+  inputs."compiler".ref   = "master";
+  inputs."compiler".repo  = "compiler";
   inputs."compiler".type  = "github";
   inputs."compiler".inputs.nixpkgs.follows = "nixpkgs";
   inputs."compiler".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimble".dir   = "nimpkgs/n/nimble";
-  inputs."nimble".owner = "riinr";
-  inputs."nimble".ref   = "flake-pinning";
-  inputs."nimble".repo  = "flake-nimble";
+  inputs."nimble".owner = "nim-nix-pkgs";
+  inputs."nimble".ref   = "master";
+  inputs."nimble".repo  = "nimble";
   inputs."nimble".type  = "github";
   inputs."nimble".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimble".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

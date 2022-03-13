@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."dbus-master".url = "path:./master";
+  inputs."dbus-master".dir   = "master";
+  inputs."dbus-master".owner = "nim-nix-pkgs";
+  inputs."dbus-master".ref   = "master";
+  inputs."dbus-master".repo  = "dbus";
+  inputs."dbus-master".type  = "github";
   inputs."dbus-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dbus-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

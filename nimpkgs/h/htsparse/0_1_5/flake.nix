@@ -13,18 +13,16 @@
   inputs.src-htsparse-0_1_5.repo  = "htsparse";
   inputs.src-htsparse-0_1_5.type  = "github";
   
-  inputs."hmisc".dir   = "nimpkgs/h/hmisc";
-  inputs."hmisc".owner = "riinr";
-  inputs."hmisc".ref   = "flake-pinning";
-  inputs."hmisc".repo  = "flake-nimble";
+  inputs."hmisc".owner = "nim-nix-pkgs";
+  inputs."hmisc".ref   = "master";
+  inputs."hmisc".repo  = "hmisc";
   inputs."hmisc".type  = "github";
   inputs."hmisc".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hmisc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."hparse".dir   = "nimpkgs/h/hparse";
-  inputs."hparse".owner = "riinr";
-  inputs."hparse".ref   = "flake-pinning";
-  inputs."hparse".repo  = "flake-nimble";
+  inputs."hparse".owner = "nim-nix-pkgs";
+  inputs."hparse".ref   = "master";
+  inputs."hparse".repo  = "hparse";
   inputs."hparse".type  = "github";
   inputs."hparse".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

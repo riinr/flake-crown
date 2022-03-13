@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nimics-main".url = "path:./main";
+  inputs."nimics-main".dir   = "main";
+  inputs."nimics-main".owner = "nim-nix-pkgs";
+  inputs."nimics-main".ref   = "master";
+  inputs."nimics-main".repo  = "nimics";
+  inputs."nimics-main".type  = "github";
   inputs."nimics-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimics-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimics-0_2_0".url = "path:./0_2_0";
+  inputs."nimics-0_2_0".dir   = "0_2_0";
+  inputs."nimics-0_2_0".owner = "nim-nix-pkgs";
+  inputs."nimics-0_2_0".ref   = "master";
+  inputs."nimics-0_2_0".repo  = "nimics";
+  inputs."nimics-0_2_0".type  = "github";
   inputs."nimics-0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimics-0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimics-v0_1_0".url = "path:./v0_1_0";
+  inputs."nimics-v0_1_0".dir   = "v0_1_0";
+  inputs."nimics-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."nimics-v0_1_0".ref   = "master";
+  inputs."nimics-v0_1_0".repo  = "nimics";
+  inputs."nimics-v0_1_0".type  = "github";
   inputs."nimics-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimics-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

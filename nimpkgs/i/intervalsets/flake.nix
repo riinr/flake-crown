@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."intervalsets-master".url = "path:./master";
+  inputs."intervalsets-master".dir   = "master";
+  inputs."intervalsets-master".owner = "nim-nix-pkgs";
+  inputs."intervalsets-master".ref   = "master";
+  inputs."intervalsets-master".repo  = "intervalsets";
+  inputs."intervalsets-master".type  = "github";
   inputs."intervalsets-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."intervalsets-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

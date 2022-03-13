@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."sorta-master".url = "path:./master";
+  inputs."sorta-master".dir   = "master";
+  inputs."sorta-master".owner = "nim-nix-pkgs";
+  inputs."sorta-master".ref   = "master";
+  inputs."sorta-master".repo  = "sorta";
+  inputs."sorta-master".type  = "github";
   inputs."sorta-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sorta-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

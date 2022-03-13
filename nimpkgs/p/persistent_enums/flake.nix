@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."persistent_enums-master".url = "path:./master";
+  inputs."persistent_enums-master".dir   = "master";
+  inputs."persistent_enums-master".owner = "nim-nix-pkgs";
+  inputs."persistent_enums-master".ref   = "master";
+  inputs."persistent_enums-master".repo  = "persistent_enums";
+  inputs."persistent_enums-master".type  = "github";
   inputs."persistent_enums-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."persistent_enums-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

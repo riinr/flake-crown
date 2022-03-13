@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."libfswatch-master".url = "path:./master";
+  inputs."libfswatch-master".dir   = "master";
+  inputs."libfswatch-master".owner = "nim-nix-pkgs";
+  inputs."libfswatch-master".ref   = "master";
+  inputs."libfswatch-master".repo  = "libfswatch";
+  inputs."libfswatch-master".type  = "github";
   inputs."libfswatch-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libfswatch-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

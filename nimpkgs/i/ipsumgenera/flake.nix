@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."ipsumgenera-master".url = "path:./master";
+  inputs."ipsumgenera-master".dir   = "master";
+  inputs."ipsumgenera-master".owner = "nim-nix-pkgs";
+  inputs."ipsumgenera-master".ref   = "master";
+  inputs."ipsumgenera-master".repo  = "ipsumgenera";
+  inputs."ipsumgenera-master".type  = "github";
   inputs."ipsumgenera-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ipsumgenera-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

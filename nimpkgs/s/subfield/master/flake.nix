@@ -13,10 +13,9 @@
   inputs.src-subfield-master.repo  = "subfield";
   inputs.src-subfield-master.type  = "github";
   
-  inputs."einheit".dir   = "nimpkgs/e/einheit";
-  inputs."einheit".owner = "riinr";
-  inputs."einheit".ref   = "flake-pinning";
-  inputs."einheit".repo  = "flake-nimble";
+  inputs."einheit".owner = "nim-nix-pkgs";
+  inputs."einheit".ref   = "master";
+  inputs."einheit".repo  = "einheit";
   inputs."einheit".type  = "github";
   inputs."einheit".inputs.nixpkgs.follows = "nixpkgs";
   inputs."einheit".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

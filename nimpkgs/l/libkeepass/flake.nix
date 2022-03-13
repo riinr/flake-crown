@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."libkeepass-master".url = "path:./master";
+  inputs."libkeepass-master".dir   = "master";
+  inputs."libkeepass-master".owner = "nim-nix-pkgs";
+  inputs."libkeepass-master".ref   = "master";
+  inputs."libkeepass-master".repo  = "libkeepass";
+  inputs."libkeepass-master".type  = "github";
   inputs."libkeepass-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libkeepass-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

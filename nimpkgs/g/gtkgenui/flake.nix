@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."gtkgenui-master".url = "path:./master";
+  inputs."gtkgenui-master".dir   = "master";
+  inputs."gtkgenui-master".owner = "nim-nix-pkgs";
+  inputs."gtkgenui-master".ref   = "master";
+  inputs."gtkgenui-master".repo  = "gtkgenui";
+  inputs."gtkgenui-master".type  = "github";
   inputs."gtkgenui-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gtkgenui-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

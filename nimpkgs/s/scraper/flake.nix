@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."scraper-master".url = "path:./master";
+  inputs."scraper-master".dir   = "master";
+  inputs."scraper-master".owner = "nim-nix-pkgs";
+  inputs."scraper-master".ref   = "master";
+  inputs."scraper-master".repo  = "scraper";
+  inputs."scraper-master".type  = "github";
   inputs."scraper-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."scraper-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -13,10 +13,9 @@
   inputs.src-torch-v0_1_12.repo  = "nimtorch";
   inputs.src-torch-v0_1_12.type  = "github";
   
-  inputs."fragments".dir   = "nimpkgs/f/fragments";
-  inputs."fragments".owner = "riinr";
-  inputs."fragments".ref   = "flake-pinning";
-  inputs."fragments".repo  = "flake-nimble";
+  inputs."fragments".owner = "nim-nix-pkgs";
+  inputs."fragments".ref   = "master";
+  inputs."fragments".repo  = "fragments";
   inputs."fragments".type  = "github";
   inputs."fragments".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fragments".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."untar-master".url = "path:./master";
+  inputs."untar-master".dir   = "master";
+  inputs."untar-master".owner = "nim-nix-pkgs";
+  inputs."untar-master".ref   = "master";
+  inputs."untar-master".repo  = "untar";
+  inputs."untar-master".type  = "github";
   inputs."untar-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."untar-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

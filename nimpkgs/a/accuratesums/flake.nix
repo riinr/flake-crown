@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."accuratesums-master".url = "path:./master";
+  inputs."accuratesums-master".dir   = "master";
+  inputs."accuratesums-master".owner = "nim-nix-pkgs";
+  inputs."accuratesums-master".ref   = "master";
+  inputs."accuratesums-master".repo  = "accuratesums";
+  inputs."accuratesums-master".type  = "github";
   inputs."accuratesums-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."accuratesums-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

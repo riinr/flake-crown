@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."shiori_charset_convert-master".url = "path:./master";
+  inputs."shiori_charset_convert-master".dir   = "master";
+  inputs."shiori_charset_convert-master".owner = "nim-nix-pkgs";
+  inputs."shiori_charset_convert-master".ref   = "master";
+  inputs."shiori_charset_convert-master".repo  = "shiori_charset_convert";
+  inputs."shiori_charset_convert-master".type  = "github";
   inputs."shiori_charset_convert-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."shiori_charset_convert-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."shiori_charset_convert-v1_0_0".url = "path:./v1_0_0";
+  inputs."shiori_charset_convert-v1_0_0".dir   = "v1_0_0";
+  inputs."shiori_charset_convert-v1_0_0".owner = "nim-nix-pkgs";
+  inputs."shiori_charset_convert-v1_0_0".ref   = "master";
+  inputs."shiori_charset_convert-v1_0_0".repo  = "shiori_charset_convert";
+  inputs."shiori_charset_convert-v1_0_0".type  = "github";
   inputs."shiori_charset_convert-v1_0_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."shiori_charset_convert-v1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

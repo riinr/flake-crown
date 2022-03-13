@@ -13,10 +13,9 @@
   inputs.src-norx-0_4_3.repo  = "norx";
   inputs.src-norx-0_4_3.type  = "github";
   
-  inputs."https://github.com/yglukhov/android".dir   = "nimpkgs/h/https://github.com/yglukhov/android";
-  inputs."https://github.com/yglukhov/android".owner = "riinr";
-  inputs."https://github.com/yglukhov/android".ref   = "flake-pinning";
-  inputs."https://github.com/yglukhov/android".repo  = "flake-nimble";
+  inputs."https://github.com/yglukhov/android".owner = "nim-nix-pkgs";
+  inputs."https://github.com/yglukhov/android".ref   = "master";
+  inputs."https://github.com/yglukhov/android".repo  = "https://github.com/yglukhov/android";
   inputs."https://github.com/yglukhov/android".type  = "github";
   inputs."https://github.com/yglukhov/android".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/yglukhov/android".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

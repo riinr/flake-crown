@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nimbitarray-master".url = "path:./master";
+  inputs."nimbitarray-master".dir   = "master";
+  inputs."nimbitarray-master".owner = "nim-nix-pkgs";
+  inputs."nimbitarray-master".ref   = "master";
+  inputs."nimbitarray-master".repo  = "nimbitarray";
+  inputs."nimbitarray-master".type  = "github";
   inputs."nimbitarray-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimbitarray-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimbitarray-0_2_0".url = "path:./0_2_0";
+  inputs."nimbitarray-0_2_0".dir   = "0_2_0";
+  inputs."nimbitarray-0_2_0".owner = "nim-nix-pkgs";
+  inputs."nimbitarray-0_2_0".ref   = "master";
+  inputs."nimbitarray-0_2_0".repo  = "nimbitarray";
+  inputs."nimbitarray-0_2_0".type  = "github";
   inputs."nimbitarray-0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimbitarray-0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimbitarray-0_2_1".url = "path:./0_2_1";
+  inputs."nimbitarray-0_2_1".dir   = "0_2_1";
+  inputs."nimbitarray-0_2_1".owner = "nim-nix-pkgs";
+  inputs."nimbitarray-0_2_1".ref   = "master";
+  inputs."nimbitarray-0_2_1".repo  = "nimbitarray";
+  inputs."nimbitarray-0_2_1".type  = "github";
   inputs."nimbitarray-0_2_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimbitarray-0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

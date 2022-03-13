@@ -7,55 +7,107 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."mpdclient-master".url = "path:./master";
+  inputs."mpdclient-master".dir   = "master";
+  inputs."mpdclient-master".owner = "nim-nix-pkgs";
+  inputs."mpdclient-master".ref   = "master";
+  inputs."mpdclient-master".repo  = "mpdclient";
+  inputs."mpdclient-master".type  = "github";
   inputs."mpdclient-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mpdclient-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."mpdclient-v0_1_0".url = "path:./v0_1_0";
+  inputs."mpdclient-v0_1_0".dir   = "v0_1_0";
+  inputs."mpdclient-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."mpdclient-v0_1_0".ref   = "master";
+  inputs."mpdclient-v0_1_0".repo  = "mpdclient";
+  inputs."mpdclient-v0_1_0".type  = "github";
   inputs."mpdclient-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mpdclient-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."mpdclient-v0_1_1".url = "path:./v0_1_1";
+  inputs."mpdclient-v0_1_1".dir   = "v0_1_1";
+  inputs."mpdclient-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."mpdclient-v0_1_1".ref   = "master";
+  inputs."mpdclient-v0_1_1".repo  = "mpdclient";
+  inputs."mpdclient-v0_1_1".type  = "github";
   inputs."mpdclient-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mpdclient-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."mpdclient-v0_1_2".url = "path:./v0_1_2";
+  inputs."mpdclient-v0_1_2".dir   = "v0_1_2";
+  inputs."mpdclient-v0_1_2".owner = "nim-nix-pkgs";
+  inputs."mpdclient-v0_1_2".ref   = "master";
+  inputs."mpdclient-v0_1_2".repo  = "mpdclient";
+  inputs."mpdclient-v0_1_2".type  = "github";
   inputs."mpdclient-v0_1_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mpdclient-v0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."mpdclient-v0_1_3".url = "path:./v0_1_3";
+  inputs."mpdclient-v0_1_3".dir   = "v0_1_3";
+  inputs."mpdclient-v0_1_3".owner = "nim-nix-pkgs";
+  inputs."mpdclient-v0_1_3".ref   = "master";
+  inputs."mpdclient-v0_1_3".repo  = "mpdclient";
+  inputs."mpdclient-v0_1_3".type  = "github";
   inputs."mpdclient-v0_1_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mpdclient-v0_1_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."mpdclient-v0_1_4".url = "path:./v0_1_4";
+  inputs."mpdclient-v0_1_4".dir   = "v0_1_4";
+  inputs."mpdclient-v0_1_4".owner = "nim-nix-pkgs";
+  inputs."mpdclient-v0_1_4".ref   = "master";
+  inputs."mpdclient-v0_1_4".repo  = "mpdclient";
+  inputs."mpdclient-v0_1_4".type  = "github";
   inputs."mpdclient-v0_1_4".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mpdclient-v0_1_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."mpdclient-v0_1_5".url = "path:./v0_1_5";
+  inputs."mpdclient-v0_1_5".dir   = "v0_1_5";
+  inputs."mpdclient-v0_1_5".owner = "nim-nix-pkgs";
+  inputs."mpdclient-v0_1_5".ref   = "master";
+  inputs."mpdclient-v0_1_5".repo  = "mpdclient";
+  inputs."mpdclient-v0_1_5".type  = "github";
   inputs."mpdclient-v0_1_5".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mpdclient-v0_1_5".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."mpdclient-v0_1_6".url = "path:./v0_1_6";
+  inputs."mpdclient-v0_1_6".dir   = "v0_1_6";
+  inputs."mpdclient-v0_1_6".owner = "nim-nix-pkgs";
+  inputs."mpdclient-v0_1_6".ref   = "master";
+  inputs."mpdclient-v0_1_6".repo  = "mpdclient";
+  inputs."mpdclient-v0_1_6".type  = "github";
   inputs."mpdclient-v0_1_6".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mpdclient-v0_1_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."mpdclient-v0_1_7".url = "path:./v0_1_7";
+  inputs."mpdclient-v0_1_7".dir   = "v0_1_7";
+  inputs."mpdclient-v0_1_7".owner = "nim-nix-pkgs";
+  inputs."mpdclient-v0_1_7".ref   = "master";
+  inputs."mpdclient-v0_1_7".repo  = "mpdclient";
+  inputs."mpdclient-v0_1_7".type  = "github";
   inputs."mpdclient-v0_1_7".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mpdclient-v0_1_7".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."mpdclient-v0_2_0".url = "path:./v0_2_0";
+  inputs."mpdclient-v0_2_0".dir   = "v0_2_0";
+  inputs."mpdclient-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."mpdclient-v0_2_0".ref   = "master";
+  inputs."mpdclient-v0_2_0".repo  = "mpdclient";
+  inputs."mpdclient-v0_2_0".type  = "github";
   inputs."mpdclient-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mpdclient-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."mpdclient-v0_2_1".url = "path:./v0_2_1";
+  inputs."mpdclient-v0_2_1".dir   = "v0_2_1";
+  inputs."mpdclient-v0_2_1".owner = "nim-nix-pkgs";
+  inputs."mpdclient-v0_2_1".ref   = "master";
+  inputs."mpdclient-v0_2_1".repo  = "mpdclient";
+  inputs."mpdclient-v0_2_1".type  = "github";
   inputs."mpdclient-v0_2_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mpdclient-v0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."mpdclient-v0_2_2".url = "path:./v0_2_2";
+  inputs."mpdclient-v0_2_2".dir   = "v0_2_2";
+  inputs."mpdclient-v0_2_2".owner = "nim-nix-pkgs";
+  inputs."mpdclient-v0_2_2".ref   = "master";
+  inputs."mpdclient-v0_2_2".repo  = "mpdclient";
+  inputs."mpdclient-v0_2_2".type  = "github";
   inputs."mpdclient-v0_2_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mpdclient-v0_2_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."mpdclient-v0_3_0".url = "path:./v0_3_0";
+  inputs."mpdclient-v0_3_0".dir   = "v0_3_0";
+  inputs."mpdclient-v0_3_0".owner = "nim-nix-pkgs";
+  inputs."mpdclient-v0_3_0".ref   = "master";
+  inputs."mpdclient-v0_3_0".repo  = "mpdclient";
+  inputs."mpdclient-v0_3_0".type  = "github";
   inputs."mpdclient-v0_3_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mpdclient-v0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

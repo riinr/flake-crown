@@ -13,10 +13,9 @@
   inputs.src-httpx-v0_2_0.repo  = "httpx";
   inputs.src-httpx-v0_2_0.type  = "github";
   
-  inputs."ioselectors".dir   = "nimpkgs/i/ioselectors";
-  inputs."ioselectors".owner = "riinr";
-  inputs."ioselectors".ref   = "flake-pinning";
-  inputs."ioselectors".repo  = "flake-nimble";
+  inputs."ioselectors".owner = "nim-nix-pkgs";
+  inputs."ioselectors".ref   = "master";
+  inputs."ioselectors".repo  = "ioselectors";
   inputs."ioselectors".type  = "github";
   inputs."ioselectors".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ioselectors".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

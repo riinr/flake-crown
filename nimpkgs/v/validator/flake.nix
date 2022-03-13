@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."validator-master".url = "path:./master";
+  inputs."validator-master".dir   = "master";
+  inputs."validator-master".owner = "nim-nix-pkgs";
+  inputs."validator-master".ref   = "master";
+  inputs."validator-master".repo  = "validator";
+  inputs."validator-master".type  = "github";
   inputs."validator-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."validator-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

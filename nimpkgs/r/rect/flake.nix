@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."rect-master".url = "path:./master";
+  inputs."rect-master".dir   = "master";
+  inputs."rect-master".owner = "nim-nix-pkgs";
+  inputs."rect-master".ref   = "master";
+  inputs."rect-master".repo  = "rect";
+  inputs."rect-master".type  = "github";
   inputs."rect-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rect-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."rect-v1_0_0".url = "path:./v1_0_0";
+  inputs."rect-v1_0_0".dir   = "v1_0_0";
+  inputs."rect-v1_0_0".owner = "nim-nix-pkgs";
+  inputs."rect-v1_0_0".ref   = "master";
+  inputs."rect-v1_0_0".repo  = "rect";
+  inputs."rect-v1_0_0".type  = "github";
   inputs."rect-v1_0_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rect-v1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."rect-v1_0_1".url = "path:./v1_0_1";
+  inputs."rect-v1_0_1".dir   = "v1_0_1";
+  inputs."rect-v1_0_1".owner = "nim-nix-pkgs";
+  inputs."rect-v1_0_1".ref   = "master";
+  inputs."rect-v1_0_1".repo  = "rect";
+  inputs."rect-v1_0_1".type  = "github";
   inputs."rect-v1_0_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rect-v1_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

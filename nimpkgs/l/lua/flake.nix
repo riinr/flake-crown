@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."lua-master".url = "path:./master";
+  inputs."lua-master".dir   = "master";
+  inputs."lua-master".owner = "nim-nix-pkgs";
+  inputs."lua-master".ref   = "master";
+  inputs."lua-master".repo  = "lua";
+  inputs."lua-master".type  = "github";
   inputs."lua-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."lua-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."algebraicdatas-main".url = "path:./main";
+  inputs."algebraicdatas-main".dir   = "main";
+  inputs."algebraicdatas-main".owner = "nim-nix-pkgs";
+  inputs."algebraicdatas-main".ref   = "master";
+  inputs."algebraicdatas-main".repo  = "algebraicdatas";
+  inputs."algebraicdatas-main".type  = "github";
   inputs."algebraicdatas-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."algebraicdatas-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

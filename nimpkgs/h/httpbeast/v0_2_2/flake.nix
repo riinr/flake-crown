@@ -13,10 +13,9 @@
   inputs.src-httpbeast-v0_2_2.repo  = "httpbeast";
   inputs.src-httpbeast-v0_2_2.type  = "github";
   
-  inputs."https://github.com/timotheecour/asynctools".dir   = "nimpkgs/h/https://github.com/timotheecour/asynctools";
-  inputs."https://github.com/timotheecour/asynctools".owner = "riinr";
-  inputs."https://github.com/timotheecour/asynctools".ref   = "flake-pinning";
-  inputs."https://github.com/timotheecour/asynctools".repo  = "flake-nimble";
+  inputs."https://github.com/timotheecour/asynctools".owner = "nim-nix-pkgs";
+  inputs."https://github.com/timotheecour/asynctools".ref   = "master";
+  inputs."https://github.com/timotheecour/asynctools".repo  = "https://github.com/timotheecour/asynctools";
   inputs."https://github.com/timotheecour/asynctools".type  = "github";
   inputs."https://github.com/timotheecour/asynctools".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/timotheecour/asynctools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,26 +13,23 @@
   inputs.src-nimmm-v0_2_0.repo  = "nimmm";
   inputs.src-nimmm-v0_2_0.type  = "github";
   
-  inputs."noise".dir   = "nimpkgs/n/noise";
-  inputs."noise".owner = "riinr";
-  inputs."noise".ref   = "flake-pinning";
-  inputs."noise".repo  = "flake-nimble";
+  inputs."noise".owner = "nim-nix-pkgs";
+  inputs."noise".ref   = "master";
+  inputs."noise".repo  = "noise";
   inputs."noise".type  = "github";
   inputs."noise".inputs.nixpkgs.follows = "nixpkgs";
   inputs."noise".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimbox".dir   = "nimpkgs/n/nimbox";
-  inputs."nimbox".owner = "riinr";
-  inputs."nimbox".ref   = "flake-pinning";
-  inputs."nimbox".repo  = "flake-nimble";
+  inputs."nimbox".owner = "nim-nix-pkgs";
+  inputs."nimbox".ref   = "master";
+  inputs."nimbox".repo  = "nimbox";
   inputs."nimbox".type  = "github";
   inputs."nimbox".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimbox".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."lscolors".dir   = "nimpkgs/l/lscolors";
-  inputs."lscolors".owner = "riinr";
-  inputs."lscolors".ref   = "flake-pinning";
-  inputs."lscolors".repo  = "flake-nimble";
+  inputs."lscolors".owner = "nim-nix-pkgs";
+  inputs."lscolors".ref   = "master";
+  inputs."lscolors".repo  = "lscolors";
   inputs."lscolors".type  = "github";
   inputs."lscolors".inputs.nixpkgs.follows = "nixpkgs";
   inputs."lscolors".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

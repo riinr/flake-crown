@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."steam-master".url = "path:./master";
+  inputs."steam-master".dir   = "master";
+  inputs."steam-master".owner = "nim-nix-pkgs";
+  inputs."steam-master".ref   = "master";
+  inputs."steam-master".repo  = "steam";
+  inputs."steam-master".type  = "github";
   inputs."steam-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."steam-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

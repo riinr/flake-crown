@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."bluesoftcosmos-master".url = "path:./master";
+  inputs."bluesoftcosmos-master".dir   = "master";
+  inputs."bluesoftcosmos-master".owner = "nim-nix-pkgs";
+  inputs."bluesoftcosmos-master".ref   = "master";
+  inputs."bluesoftcosmos-master".repo  = "bluesoftcosmos";
+  inputs."bluesoftcosmos-master".type  = "github";
   inputs."bluesoftcosmos-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bluesoftcosmos-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

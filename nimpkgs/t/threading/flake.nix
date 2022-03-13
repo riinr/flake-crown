@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."threading-master".url = "path:./master";
+  inputs."threading-master".dir   = "master";
+  inputs."threading-master".owner = "nim-nix-pkgs";
+  inputs."threading-master".ref   = "master";
+  inputs."threading-master".repo  = "threading";
+  inputs."threading-master".type  = "github";
   inputs."threading-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."threading-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

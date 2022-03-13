@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."adb-master".url = "path:./master";
+  inputs."adb-master".dir   = "master";
+  inputs."adb-master".owner = "nim-nix-pkgs";
+  inputs."adb-master".ref   = "master";
+  inputs."adb-master".repo  = "adb";
+  inputs."adb-master".type  = "github";
   inputs."adb-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."adb-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."adb-v0_1_0".url = "path:./v0_1_0";
+  inputs."adb-v0_1_0".dir   = "v0_1_0";
+  inputs."adb-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."adb-v0_1_0".ref   = "master";
+  inputs."adb-v0_1_0".repo  = "adb";
+  inputs."adb-v0_1_0".type  = "github";
   inputs."adb-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."adb-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

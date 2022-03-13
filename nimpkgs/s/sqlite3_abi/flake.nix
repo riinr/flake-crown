@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."sqlite3_abi-master".url = "path:./master";
+  inputs."sqlite3_abi-master".dir   = "master";
+  inputs."sqlite3_abi-master".owner = "nim-nix-pkgs";
+  inputs."sqlite3_abi-master".ref   = "master";
+  inputs."sqlite3_abi-master".repo  = "sqlite3_abi";
+  inputs."sqlite3_abi-master".type  = "github";
   inputs."sqlite3_abi-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sqlite3_abi-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

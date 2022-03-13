@@ -13,10 +13,9 @@
   inputs.src-netty-0_2_0.repo  = "netty";
   inputs.src-netty-0_2_0.type  = "github";
   
-  inputs."snappy".dir   = "nimpkgs/s/snappy";
-  inputs."snappy".owner = "riinr";
-  inputs."snappy".ref   = "flake-pinning";
-  inputs."snappy".repo  = "flake-nimble";
+  inputs."snappy".owner = "nim-nix-pkgs";
+  inputs."snappy".ref   = "master";
+  inputs."snappy".repo  = "snappy";
   inputs."snappy".type  = "github";
   inputs."snappy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."snappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

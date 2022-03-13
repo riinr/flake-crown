@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."asyncdocker-master".url = "path:./master";
+  inputs."asyncdocker-master".dir   = "master";
+  inputs."asyncdocker-master".owner = "nim-nix-pkgs";
+  inputs."asyncdocker-master".ref   = "master";
+  inputs."asyncdocker-master".repo  = "asyncdocker";
+  inputs."asyncdocker-master".type  = "github";
   inputs."asyncdocker-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."asyncdocker-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

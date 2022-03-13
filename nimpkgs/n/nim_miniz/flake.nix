@@ -7,19 +7,35 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nim_miniz-master".url = "path:./master";
+  inputs."nim_miniz-master".dir   = "master";
+  inputs."nim_miniz-master".owner = "nim-nix-pkgs";
+  inputs."nim_miniz-master".ref   = "master";
+  inputs."nim_miniz-master".repo  = "nim_miniz";
+  inputs."nim_miniz-master".type  = "github";
   inputs."nim_miniz-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nim_miniz-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nim_miniz-1_0_1".url = "path:./1_0_1";
+  inputs."nim_miniz-1_0_1".dir   = "1_0_1";
+  inputs."nim_miniz-1_0_1".owner = "nim-nix-pkgs";
+  inputs."nim_miniz-1_0_1".ref   = "master";
+  inputs."nim_miniz-1_0_1".repo  = "nim_miniz";
+  inputs."nim_miniz-1_0_1".type  = "github";
   inputs."nim_miniz-1_0_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nim_miniz-1_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nim_miniz-1_1_0".url = "path:./1_1_0";
+  inputs."nim_miniz-1_1_0".dir   = "1_1_0";
+  inputs."nim_miniz-1_1_0".owner = "nim-nix-pkgs";
+  inputs."nim_miniz-1_1_0".ref   = "master";
+  inputs."nim_miniz-1_1_0".repo  = "nim_miniz";
+  inputs."nim_miniz-1_1_0".type  = "github";
   inputs."nim_miniz-1_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nim_miniz-1_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nim_miniz-v1_0_0".url = "path:./v1_0_0";
+  inputs."nim_miniz-v1_0_0".dir   = "v1_0_0";
+  inputs."nim_miniz-v1_0_0".owner = "nim-nix-pkgs";
+  inputs."nim_miniz-v1_0_0".ref   = "master";
+  inputs."nim_miniz-v1_0_0".repo  = "nim_miniz";
+  inputs."nim_miniz-v1_0_0".type  = "github";
   inputs."nim_miniz-v1_0_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nim_miniz-v1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

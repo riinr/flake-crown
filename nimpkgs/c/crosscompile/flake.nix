@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."crosscompile-master".url = "path:./master";
+  inputs."crosscompile-master".dir   = "master";
+  inputs."crosscompile-master".owner = "nim-nix-pkgs";
+  inputs."crosscompile-master".ref   = "master";
+  inputs."crosscompile-master".repo  = "crosscompile";
+  inputs."crosscompile-master".type  = "github";
   inputs."crosscompile-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."crosscompile-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

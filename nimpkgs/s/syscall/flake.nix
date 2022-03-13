@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."syscall-master".url = "path:./master";
+  inputs."syscall-master".dir   = "master";
+  inputs."syscall-master".owner = "nim-nix-pkgs";
+  inputs."syscall-master".ref   = "master";
+  inputs."syscall-master".repo  = "syscall";
+  inputs."syscall-master".type  = "github";
   inputs."syscall-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."syscall-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

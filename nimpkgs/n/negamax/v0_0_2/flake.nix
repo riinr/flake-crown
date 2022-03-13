@@ -13,10 +13,9 @@
   inputs.src-negamax-v0_0_2.repo  = "negamax";
   inputs.src-negamax-v0_0_2.type  = "github";
   
-  inputs."turn_based_game".dir   = "nimpkgs/t/turn_based_game";
-  inputs."turn_based_game".owner = "riinr";
-  inputs."turn_based_game".ref   = "flake-pinning";
-  inputs."turn_based_game".repo  = "flake-nimble";
+  inputs."turn_based_game".owner = "nim-nix-pkgs";
+  inputs."turn_based_game".ref   = "master";
+  inputs."turn_based_game".repo  = "turn_based_game";
   inputs."turn_based_game".type  = "github";
   inputs."turn_based_game".inputs.nixpkgs.follows = "nixpkgs";
   inputs."turn_based_game".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

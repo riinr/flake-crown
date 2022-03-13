@@ -13,10 +13,9 @@
   inputs.src-nimrpc_milis-master.repo  = "nimrpc_milis";
   inputs.src-nimrpc_milis-master.type  = "github";
   
-  inputs."msgpack4nim".dir   = "nimpkgs/m/msgpack4nim";
-  inputs."msgpack4nim".owner = "riinr";
-  inputs."msgpack4nim".ref   = "flake-pinning";
-  inputs."msgpack4nim".repo  = "flake-nimble";
+  inputs."msgpack4nim".owner = "nim-nix-pkgs";
+  inputs."msgpack4nim".ref   = "master";
+  inputs."msgpack4nim".repo  = "msgpack4nim";
   inputs."msgpack4nim".type  = "github";
   inputs."msgpack4nim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."msgpack4nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

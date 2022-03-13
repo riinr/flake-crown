@@ -9,7 +9,7 @@ for i in 1..paramCount():
         metaJson["requires"].items.toSeq.filterIt(
           it["name"].getStr != "nim" and
           it["name"].getStr != "nimrod"
-        ).mapIt("--update-input " & it["name"].getStr)
+        ).mapIt("--update-input " & it["name"].getStr.toLower)
       else: @[]
     cmd = "nix flake lock " & deps.join " "
   echo metaPath
@@ -19,7 +19,9 @@ for i in 1..paramCount():
       cd `dirname {metaPath}`
       {cmd}
       git add .
-      git commit -m "chore: update lock" || echo "ok"
+      git commit -m "chore: update lock" \
+        && \
+      git push || true
     """
     echo fmt"{e} {o}"
 

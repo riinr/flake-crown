@@ -13,18 +13,16 @@
   inputs.src-ndf-0_4_0.repo  = "ndf";
   inputs.src-ndf-0_4_0.type  = "github";
   
-  inputs."docopt".dir   = "nimpkgs/d/docopt";
-  inputs."docopt".owner = "riinr";
-  inputs."docopt".ref   = "flake-pinning";
-  inputs."docopt".repo  = "flake-nimble";
+  inputs."docopt".owner = "nim-nix-pkgs";
+  inputs."docopt".ref   = "master";
+  inputs."docopt".repo  = "docopt";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."murmurhash".dir   = "nimpkgs/m/murmurhash";
-  inputs."murmurhash".owner = "riinr";
-  inputs."murmurhash".ref   = "flake-pinning";
-  inputs."murmurhash".repo  = "flake-nimble";
+  inputs."murmurhash".owner = "nim-nix-pkgs";
+  inputs."murmurhash".ref   = "master";
+  inputs."murmurhash".repo  = "murmurhash";
   inputs."murmurhash".type  = "github";
   inputs."murmurhash".inputs.nixpkgs.follows = "nixpkgs";
   inputs."murmurhash".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

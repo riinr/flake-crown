@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."slacklib-master".url = "path:./master";
+  inputs."slacklib-master".dir   = "master";
+  inputs."slacklib-master".owner = "nim-nix-pkgs";
+  inputs."slacklib-master".ref   = "master";
+  inputs."slacklib-master".repo  = "slacklib";
+  inputs."slacklib-master".type  = "github";
   inputs."slacklib-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."slacklib-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

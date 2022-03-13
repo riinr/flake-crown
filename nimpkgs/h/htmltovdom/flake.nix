@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."htmltovdom-main".url = "path:./main";
+  inputs."htmltovdom-main".dir   = "main";
+  inputs."htmltovdom-main".owner = "nim-nix-pkgs";
+  inputs."htmltovdom-main".ref   = "master";
+  inputs."htmltovdom-main".repo  = "htmltovdom";
+  inputs."htmltovdom-main".type  = "github";
   inputs."htmltovdom-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."htmltovdom-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

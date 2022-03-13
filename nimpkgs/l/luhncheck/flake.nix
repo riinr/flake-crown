@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."luhncheck-master".url = "path:./master";
+  inputs."luhncheck-master".dir   = "master";
+  inputs."luhncheck-master".owner = "nim-nix-pkgs";
+  inputs."luhncheck-master".ref   = "master";
+  inputs."luhncheck-master".repo  = "luhncheck";
+  inputs."luhncheck-master".type  = "github";
   inputs."luhncheck-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."luhncheck-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."crc32-master".url = "path:./master";
+  inputs."crc32-master".dir   = "master";
+  inputs."crc32-master".owner = "nim-nix-pkgs";
+  inputs."crc32-master".ref   = "master";
+  inputs."crc32-master".repo  = "crc32";
+  inputs."crc32-master".type  = "github";
   inputs."crc32-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."crc32-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

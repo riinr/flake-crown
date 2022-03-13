@@ -13,10 +13,9 @@
   inputs.src-passgen-0_1_0.repo  = "nim-passgen";
   inputs.src-passgen-0_1_0.type  = "github";
   
-  inputs."urand".dir   = "nimpkgs/u/urand";
-  inputs."urand".owner = "riinr";
-  inputs."urand".ref   = "flake-pinning";
-  inputs."urand".repo  = "flake-nimble";
+  inputs."urand".owner = "nim-nix-pkgs";
+  inputs."urand".ref   = "master";
+  inputs."urand".repo  = "urand";
   inputs."urand".type  = "github";
   inputs."urand".inputs.nixpkgs.follows = "nixpkgs";
   inputs."urand".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

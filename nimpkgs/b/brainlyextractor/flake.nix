@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."brainlyextractor-master".url = "path:./master";
+  inputs."brainlyextractor-master".dir   = "master";
+  inputs."brainlyextractor-master".owner = "nim-nix-pkgs";
+  inputs."brainlyextractor-master".ref   = "master";
+  inputs."brainlyextractor-master".repo  = "brainlyextractor";
+  inputs."brainlyextractor-master".type  = "github";
   inputs."brainlyextractor-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."brainlyextractor-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

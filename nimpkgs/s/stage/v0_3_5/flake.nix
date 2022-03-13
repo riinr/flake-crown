@@ -13,18 +13,16 @@
   inputs.src-stage-v0_3_5.repo  = "stage";
   inputs.src-stage-v0_3_5.type  = "github";
   
-  inputs."shell".dir   = "nimpkgs/s/shell";
-  inputs."shell".owner = "riinr";
-  inputs."shell".ref   = "flake-pinning";
-  inputs."shell".repo  = "flake-nimble";
+  inputs."shell".owner = "nim-nix-pkgs";
+  inputs."shell".ref   = "master";
+  inputs."shell".repo  = "shell";
   inputs."shell".type  = "github";
   inputs."shell".inputs.nixpkgs.follows = "nixpkgs";
   inputs."shell".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

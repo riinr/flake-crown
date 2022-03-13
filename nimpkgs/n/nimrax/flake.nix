@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nimrax-master".url = "path:./master";
+  inputs."nimrax-master".dir   = "master";
+  inputs."nimrax-master".owner = "nim-nix-pkgs";
+  inputs."nimrax-master".ref   = "master";
+  inputs."nimrax-master".repo  = "nimrax";
+  inputs."nimrax-master".type  = "github";
   inputs."nimrax-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimrax-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimrax-v0_1_0".url = "path:./v0_1_0";
+  inputs."nimrax-v0_1_0".dir   = "v0_1_0";
+  inputs."nimrax-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."nimrax-v0_1_0".ref   = "master";
+  inputs."nimrax-v0_1_0".repo  = "nimrax";
+  inputs."nimrax-v0_1_0".type  = "github";
   inputs."nimrax-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimrax-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimrax-v0_1_1".url = "path:./v0_1_1";
+  inputs."nimrax-v0_1_1".dir   = "v0_1_1";
+  inputs."nimrax-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."nimrax-v0_1_1".ref   = "master";
+  inputs."nimrax-v0_1_1".repo  = "nimrax";
+  inputs."nimrax-v0_1_1".type  = "github";
   inputs."nimrax-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimrax-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

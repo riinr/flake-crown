@@ -13,10 +13,9 @@
   inputs.src-nimflux-v0_1_0.repo  = "nimflux";
   inputs.src-nimflux-v0_1_0.type  = "github";
   
-  inputs."coverage".dir   = "nimpkgs/c/coverage";
-  inputs."coverage".owner = "riinr";
-  inputs."coverage".ref   = "flake-pinning";
-  inputs."coverage".repo  = "flake-nimble";
+  inputs."coverage".owner = "nim-nix-pkgs";
+  inputs."coverage".ref   = "master";
+  inputs."coverage".repo  = "coverage";
   inputs."coverage".type  = "github";
   inputs."coverage".inputs.nixpkgs.follows = "nixpkgs";
   inputs."coverage".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

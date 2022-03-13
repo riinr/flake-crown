@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."libnetfilter_queue-master".url = "path:./master";
+  inputs."libnetfilter_queue-master".dir   = "master";
+  inputs."libnetfilter_queue-master".owner = "nim-nix-pkgs";
+  inputs."libnetfilter_queue-master".ref   = "master";
+  inputs."libnetfilter_queue-master".repo  = "libnetfilter_queue";
+  inputs."libnetfilter_queue-master".type  = "github";
   inputs."libnetfilter_queue-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libnetfilter_queue-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."libnetfilter_queue-0_1_0".url = "path:./0_1_0";
+  inputs."libnetfilter_queue-0_1_0".dir   = "0_1_0";
+  inputs."libnetfilter_queue-0_1_0".owner = "nim-nix-pkgs";
+  inputs."libnetfilter_queue-0_1_0".ref   = "master";
+  inputs."libnetfilter_queue-0_1_0".repo  = "libnetfilter_queue";
+  inputs."libnetfilter_queue-0_1_0".type  = "github";
   inputs."libnetfilter_queue-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libnetfilter_queue-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

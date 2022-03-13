@@ -13,10 +13,9 @@
   inputs.src-networkutils-v0_1.repo  = "networkutils.nim";
   inputs.src-networkutils-v0_1.type  = "github";
   
-  inputs."ptr_math".dir   = "nimpkgs/p/ptr_math";
-  inputs."ptr_math".owner = "riinr";
-  inputs."ptr_math".ref   = "flake-pinning";
-  inputs."ptr_math".repo  = "flake-nimble";
+  inputs."ptr_math".owner = "nim-nix-pkgs";
+  inputs."ptr_math".ref   = "master";
+  inputs."ptr_math".repo  = "ptr_math";
   inputs."ptr_math".type  = "github";
   inputs."ptr_math".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ptr_math".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

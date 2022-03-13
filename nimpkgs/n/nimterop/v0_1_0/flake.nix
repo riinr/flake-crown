@@ -13,18 +13,16 @@
   inputs.src-nimterop-v0_1_0.repo  = "nimterop";
   inputs.src-nimterop-v0_1_0.type  = "github";
   
-  inputs."regex".dir   = "nimpkgs/r/regex";
-  inputs."regex".owner = "riinr";
-  inputs."regex".ref   = "flake-pinning";
-  inputs."regex".repo  = "flake-nimble";
+  inputs."regex".owner = "nim-nix-pkgs";
+  inputs."regex".ref   = "master";
+  inputs."regex".repo  = "regex";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

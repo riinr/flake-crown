@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."sdnotify-master".url = "path:./master";
+  inputs."sdnotify-master".dir   = "master";
+  inputs."sdnotify-master".owner = "nim-nix-pkgs";
+  inputs."sdnotify-master".ref   = "master";
+  inputs."sdnotify-master".repo  = "sdnotify";
+  inputs."sdnotify-master".type  = "github";
   inputs."sdnotify-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sdnotify-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

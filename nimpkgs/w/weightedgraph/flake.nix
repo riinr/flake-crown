@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."weightedgraph-master".url = "path:./master";
+  inputs."weightedgraph-master".dir   = "master";
+  inputs."weightedgraph-master".owner = "nim-nix-pkgs";
+  inputs."weightedgraph-master".ref   = "master";
+  inputs."weightedgraph-master".repo  = "weightedgraph";
+  inputs."weightedgraph-master".type  = "github";
   inputs."weightedgraph-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."weightedgraph-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

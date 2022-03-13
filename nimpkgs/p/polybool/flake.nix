@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."polybool-master".url = "path:./master";
+  inputs."polybool-master".dir   = "master";
+  inputs."polybool-master".owner = "nim-nix-pkgs";
+  inputs."polybool-master".ref   = "master";
+  inputs."polybool-master".repo  = "polybool";
+  inputs."polybool-master".type  = "github";
   inputs."polybool-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."polybool-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

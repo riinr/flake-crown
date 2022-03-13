@@ -13,26 +13,23 @@
   inputs.src-moe-v0_0_61.repo  = "moe";
   inputs.src-moe-v0_0_61.type  = "github";
   
-  inputs."https://github.com/walkre-niboshi/nim-ncurses".dir   = "nimpkgs/h/https://github.com/walkre-niboshi/nim-ncurses";
-  inputs."https://github.com/walkre-niboshi/nim-ncurses".owner = "riinr";
-  inputs."https://github.com/walkre-niboshi/nim-ncurses".ref   = "flake-pinning";
-  inputs."https://github.com/walkre-niboshi/nim-ncurses".repo  = "flake-nimble";
+  inputs."https://github.com/walkre-niboshi/nim-ncurses".owner = "nim-nix-pkgs";
+  inputs."https://github.com/walkre-niboshi/nim-ncurses".ref   = "master";
+  inputs."https://github.com/walkre-niboshi/nim-ncurses".repo  = "https://github.com/walkre-niboshi/nim-ncurses";
   inputs."https://github.com/walkre-niboshi/nim-ncurses".type  = "github";
   inputs."https://github.com/walkre-niboshi/nim-ncurses".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/walkre-niboshi/nim-ncurses".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."unicodedb".dir   = "nimpkgs/u/unicodedb";
-  inputs."unicodedb".owner = "riinr";
-  inputs."unicodedb".ref   = "flake-pinning";
-  inputs."unicodedb".repo  = "flake-nimble";
+  inputs."unicodedb".owner = "nim-nix-pkgs";
+  inputs."unicodedb".ref   = "master";
+  inputs."unicodedb".repo  = "unicodedb";
   inputs."unicodedb".type  = "github";
   inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."parsetoml".dir   = "nimpkgs/p/parsetoml";
-  inputs."parsetoml".owner = "riinr";
-  inputs."parsetoml".ref   = "flake-pinning";
-  inputs."parsetoml".repo  = "flake-nimble";
+  inputs."parsetoml".owner = "nim-nix-pkgs";
+  inputs."parsetoml".ref   = "master";
+  inputs."parsetoml".repo  = "parsetoml";
   inputs."parsetoml".type  = "github";
   inputs."parsetoml".inputs.nixpkgs.follows = "nixpkgs";
   inputs."parsetoml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

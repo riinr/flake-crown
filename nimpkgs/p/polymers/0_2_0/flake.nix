@@ -13,10 +13,9 @@
   inputs.src-Polymers-0_2_0.repo  = "polymers";
   inputs.src-Polymers-0_2_0.type  = "github";
   
-  inputs."polymorph".dir   = "nimpkgs/p/polymorph";
-  inputs."polymorph".owner = "riinr";
-  inputs."polymorph".ref   = "flake-pinning";
-  inputs."polymorph".repo  = "flake-nimble";
+  inputs."polymorph".owner = "nim-nix-pkgs";
+  inputs."polymorph".ref   = "master";
+  inputs."polymorph".repo  = "polymorph";
   inputs."polymorph".type  = "github";
   inputs."polymorph".inputs.nixpkgs.follows = "nixpkgs";
   inputs."polymorph".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

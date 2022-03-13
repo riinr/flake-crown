@@ -13,10 +13,9 @@
   inputs.src-Polymers-v0_3_0.repo  = "polymers";
   inputs.src-Polymers-v0_3_0.type  = "github";
   
-  inputs."https://github.com/rlipsc/polymorph".dir   = "nimpkgs/h/https://github.com/rlipsc/polymorph";
-  inputs."https://github.com/rlipsc/polymorph".owner = "riinr";
-  inputs."https://github.com/rlipsc/polymorph".ref   = "flake-pinning";
-  inputs."https://github.com/rlipsc/polymorph".repo  = "flake-nimble";
+  inputs."https://github.com/rlipsc/polymorph".owner = "nim-nix-pkgs";
+  inputs."https://github.com/rlipsc/polymorph".ref   = "master";
+  inputs."https://github.com/rlipsc/polymorph".repo  = "https://github.com/rlipsc/polymorph";
   inputs."https://github.com/rlipsc/polymorph".type  = "github";
   inputs."https://github.com/rlipsc/polymorph".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/rlipsc/polymorph".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

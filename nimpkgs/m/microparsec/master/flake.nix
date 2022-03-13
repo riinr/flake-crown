@@ -13,10 +13,9 @@
   inputs.src-microparsec-master.repo  = "microparsec";
   inputs.src-microparsec-master.type  = "github";
   
-  inputs."result".dir   = "nimpkgs/r/result";
-  inputs."result".owner = "riinr";
-  inputs."result".ref   = "flake-pinning";
-  inputs."result".repo  = "flake-nimble";
+  inputs."result".owner = "nim-nix-pkgs";
+  inputs."result".ref   = "master";
+  inputs."result".repo  = "result";
   inputs."result".type  = "github";
   inputs."result".inputs.nixpkgs.follows = "nixpkgs";
   inputs."result".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

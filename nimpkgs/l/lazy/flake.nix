@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."lazy-master".url = "path:./master";
+  inputs."lazy-master".dir   = "master";
+  inputs."lazy-master".owner = "nim-nix-pkgs";
+  inputs."lazy-master".ref   = "master";
+  inputs."lazy-master".repo  = "lazy";
+  inputs."lazy-master".type  = "github";
   inputs."lazy-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."lazy-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

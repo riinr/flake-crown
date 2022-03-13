@@ -7,27 +7,51 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."chebyshev-master".url = "path:./master";
+  inputs."chebyshev-master".dir   = "master";
+  inputs."chebyshev-master".owner = "nim-nix-pkgs";
+  inputs."chebyshev-master".ref   = "master";
+  inputs."chebyshev-master".repo  = "chebyshev";
+  inputs."chebyshev-master".type  = "github";
   inputs."chebyshev-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chebyshev-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."chebyshev-v0_0_0".url = "path:./v0_0_0";
+  inputs."chebyshev-v0_0_0".dir   = "v0_0_0";
+  inputs."chebyshev-v0_0_0".owner = "nim-nix-pkgs";
+  inputs."chebyshev-v0_0_0".ref   = "master";
+  inputs."chebyshev-v0_0_0".repo  = "chebyshev";
+  inputs."chebyshev-v0_0_0".type  = "github";
   inputs."chebyshev-v0_0_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chebyshev-v0_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."chebyshev-v0_1_0".url = "path:./v0_1_0";
+  inputs."chebyshev-v0_1_0".dir   = "v0_1_0";
+  inputs."chebyshev-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."chebyshev-v0_1_0".ref   = "master";
+  inputs."chebyshev-v0_1_0".repo  = "chebyshev";
+  inputs."chebyshev-v0_1_0".type  = "github";
   inputs."chebyshev-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chebyshev-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."chebyshev-v0_2_0".url = "path:./v0_2_0";
+  inputs."chebyshev-v0_2_0".dir   = "v0_2_0";
+  inputs."chebyshev-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."chebyshev-v0_2_0".ref   = "master";
+  inputs."chebyshev-v0_2_0".repo  = "chebyshev";
+  inputs."chebyshev-v0_2_0".type  = "github";
   inputs."chebyshev-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chebyshev-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."chebyshev-v0_2_1".url = "path:./v0_2_1";
+  inputs."chebyshev-v0_2_1".dir   = "v0_2_1";
+  inputs."chebyshev-v0_2_1".owner = "nim-nix-pkgs";
+  inputs."chebyshev-v0_2_1".ref   = "master";
+  inputs."chebyshev-v0_2_1".repo  = "chebyshev";
+  inputs."chebyshev-v0_2_1".type  = "github";
   inputs."chebyshev-v0_2_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chebyshev-v0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."chebyshev-v0_2_2".url = "path:./v0_2_2";
+  inputs."chebyshev-v0_2_2".dir   = "v0_2_2";
+  inputs."chebyshev-v0_2_2".owner = "nim-nix-pkgs";
+  inputs."chebyshev-v0_2_2".ref   = "master";
+  inputs."chebyshev-v0_2_2".repo  = "chebyshev";
+  inputs."chebyshev-v0_2_2".type  = "github";
   inputs."chebyshev-v0_2_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chebyshev-v0_2_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

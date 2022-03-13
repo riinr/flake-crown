@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nominatim-master".url = "path:./master";
+  inputs."nominatim-master".dir   = "master";
+  inputs."nominatim-master".owner = "nim-nix-pkgs";
+  inputs."nominatim-master".ref   = "master";
+  inputs."nominatim-master".repo  = "nominatim";
+  inputs."nominatim-master".type  = "github";
   inputs."nominatim-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nominatim-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nominatim-0_1_5".url = "path:./0_1_5";
+  inputs."nominatim-0_1_5".dir   = "0_1_5";
+  inputs."nominatim-0_1_5".owner = "nim-nix-pkgs";
+  inputs."nominatim-0_1_5".ref   = "master";
+  inputs."nominatim-0_1_5".repo  = "nominatim";
+  inputs."nominatim-0_1_5".type  = "github";
   inputs."nominatim-0_1_5".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nominatim-0_1_5".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

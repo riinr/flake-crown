@@ -13,10 +13,9 @@
   inputs.src-telebot-0_3_7.repo  = "telebot.nim";
   inputs.src-telebot-0_3_7.type  = "github";
   
-  inputs."asyncevents".dir   = "nimpkgs/a/asyncevents";
-  inputs."asyncevents".owner = "riinr";
-  inputs."asyncevents".ref   = "flake-pinning";
-  inputs."asyncevents".repo  = "flake-nimble";
+  inputs."asyncevents".owner = "nim-nix-pkgs";
+  inputs."asyncevents".ref   = "master";
+  inputs."asyncevents".repo  = "asyncevents";
   inputs."asyncevents".type  = "github";
   inputs."asyncevents".inputs.nixpkgs.follows = "nixpkgs";
   inputs."asyncevents".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

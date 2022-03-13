@@ -13,10 +13,9 @@
   inputs.src-nimFinLib-master.repo  = "NimFinLib";
   inputs.src-nimFinLib-master.type  = "github";
   
-  inputs."https://github.com/qqtop/nimcx".dir   = "nimpkgs/h/https://github.com/qqtop/nimcx";
-  inputs."https://github.com/qqtop/nimcx".owner = "riinr";
-  inputs."https://github.com/qqtop/nimcx".ref   = "flake-pinning";
-  inputs."https://github.com/qqtop/nimcx".repo  = "flake-nimble";
+  inputs."https://github.com/qqtop/nimcx".owner = "nim-nix-pkgs";
+  inputs."https://github.com/qqtop/nimcx".ref   = "master";
+  inputs."https://github.com/qqtop/nimcx".repo  = "https://github.com/qqtop/nimcx";
   inputs."https://github.com/qqtop/nimcx".type  = "github";
   inputs."https://github.com/qqtop/nimcx".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/qqtop/nimcx".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

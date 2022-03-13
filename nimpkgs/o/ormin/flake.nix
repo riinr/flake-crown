@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."ormin-master".url = "path:./master";
+  inputs."ormin-master".dir   = "master";
+  inputs."ormin-master".owner = "nim-nix-pkgs";
+  inputs."ormin-master".ref   = "master";
+  inputs."ormin-master".repo  = "ormin";
+  inputs."ormin-master".type  = "github";
   inputs."ormin-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ormin-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."ormin-0_1_0".url = "path:./0_1_0";
+  inputs."ormin-0_1_0".dir   = "0_1_0";
+  inputs."ormin-0_1_0".owner = "nim-nix-pkgs";
+  inputs."ormin-0_1_0".ref   = "master";
+  inputs."ormin-0_1_0".repo  = "ormin";
+  inputs."ormin-0_1_0".type  = "github";
   inputs."ormin-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ormin-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

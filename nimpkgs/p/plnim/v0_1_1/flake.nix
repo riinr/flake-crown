@@ -13,10 +13,9 @@
   inputs.src-plnim-v0_1_1.repo  = "plnim";
   inputs.src-plnim-v0_1_1.type  = "github";
   
-  inputs."pgxcrown".dir   = "nimpkgs/p/pgxcrown";
-  inputs."pgxcrown".owner = "riinr";
-  inputs."pgxcrown".ref   = "flake-pinning";
-  inputs."pgxcrown".repo  = "flake-nimble";
+  inputs."pgxcrown".owner = "nim-nix-pkgs";
+  inputs."pgxcrown".ref   = "master";
+  inputs."pgxcrown".repo  = "pgxcrown";
   inputs."pgxcrown".type  = "github";
   inputs."pgxcrown".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pgxcrown".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

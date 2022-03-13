@@ -13,10 +13,9 @@
   inputs.src-nimfp-v0_2_1.repo  = "nimfp";
   inputs.src-nimfp-v0_2_1.type  = "github";
   
-  inputs."nimboost".dir   = "nimpkgs/n/nimboost";
-  inputs."nimboost".owner = "riinr";
-  inputs."nimboost".ref   = "flake-pinning";
-  inputs."nimboost".repo  = "flake-nimble";
+  inputs."nimboost".owner = "nim-nix-pkgs";
+  inputs."nimboost".ref   = "master";
+  inputs."nimboost".repo  = "nimboost";
   inputs."nimboost".type  = "github";
   inputs."nimboost".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimboost".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

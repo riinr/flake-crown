@@ -13,18 +13,16 @@
   inputs.src-numericalnim-v0_6_3.repo  = "numericalnim";
   inputs.src-numericalnim-v0_6_3.type  = "github";
   
-  inputs."arraymancer".dir   = "nimpkgs/a/arraymancer";
-  inputs."arraymancer".owner = "riinr";
-  inputs."arraymancer".ref   = "flake-pinning";
-  inputs."arraymancer".repo  = "flake-nimble";
+  inputs."arraymancer".owner = "nim-nix-pkgs";
+  inputs."arraymancer".ref   = "master";
+  inputs."arraymancer".repo  = "arraymancer";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/hugogranstrom/cdt".dir   = "nimpkgs/h/https://github.com/hugogranstrom/cdt";
-  inputs."https://github.com/hugogranstrom/cdt".owner = "riinr";
-  inputs."https://github.com/hugogranstrom/cdt".ref   = "flake-pinning";
-  inputs."https://github.com/hugogranstrom/cdt".repo  = "flake-nimble";
+  inputs."https://github.com/hugogranstrom/cdt".owner = "nim-nix-pkgs";
+  inputs."https://github.com/hugogranstrom/cdt".ref   = "master";
+  inputs."https://github.com/hugogranstrom/cdt".repo  = "https://github.com/hugogranstrom/cdt";
   inputs."https://github.com/hugogranstrom/cdt".type  = "github";
   inputs."https://github.com/hugogranstrom/cdt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/hugogranstrom/cdt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

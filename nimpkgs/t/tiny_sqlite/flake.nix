@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."tiny_sqlite-master".url = "path:./master";
+  inputs."tiny_sqlite-master".dir   = "master";
+  inputs."tiny_sqlite-master".owner = "nim-nix-pkgs";
+  inputs."tiny_sqlite-master".ref   = "master";
+  inputs."tiny_sqlite-master".repo  = "tiny_sqlite";
+  inputs."tiny_sqlite-master".type  = "github";
   inputs."tiny_sqlite-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tiny_sqlite-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."tiny_sqlite-v0_1_1".url = "path:./v0_1_1";
+  inputs."tiny_sqlite-v0_1_1".dir   = "v0_1_1";
+  inputs."tiny_sqlite-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."tiny_sqlite-v0_1_1".ref   = "master";
+  inputs."tiny_sqlite-v0_1_1".repo  = "tiny_sqlite";
+  inputs."tiny_sqlite-v0_1_1".type  = "github";
   inputs."tiny_sqlite-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tiny_sqlite-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."tiny_sqlite-v0_1_2".url = "path:./v0_1_2";
+  inputs."tiny_sqlite-v0_1_2".dir   = "v0_1_2";
+  inputs."tiny_sqlite-v0_1_2".owner = "nim-nix-pkgs";
+  inputs."tiny_sqlite-v0_1_2".ref   = "master";
+  inputs."tiny_sqlite-v0_1_2".repo  = "tiny_sqlite";
+  inputs."tiny_sqlite-v0_1_2".type  = "github";
   inputs."tiny_sqlite-v0_1_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tiny_sqlite-v0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

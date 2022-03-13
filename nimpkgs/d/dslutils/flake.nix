@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."dslutils-0_1_1".url = "path:./0_1_1";
+  inputs."dslutils-0_1_1".dir   = "0_1_1";
+  inputs."dslutils-0_1_1".owner = "nim-nix-pkgs";
+  inputs."dslutils-0_1_1".ref   = "master";
+  inputs."dslutils-0_1_1".repo  = "dslutils";
+  inputs."dslutils-0_1_1".type  = "github";
   inputs."dslutils-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dslutils-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."dslutils-0_1_2".url = "path:./0_1_2";
+  inputs."dslutils-0_1_2".dir   = "0_1_2";
+  inputs."dslutils-0_1_2".owner = "nim-nix-pkgs";
+  inputs."dslutils-0_1_2".ref   = "master";
+  inputs."dslutils-0_1_2".repo  = "dslutils";
+  inputs."dslutils-0_1_2".type  = "github";
   inputs."dslutils-0_1_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dslutils-0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."dslutils-v0_1_3".url = "path:./v0_1_3";
+  inputs."dslutils-v0_1_3".dir   = "v0_1_3";
+  inputs."dslutils-v0_1_3".owner = "nim-nix-pkgs";
+  inputs."dslutils-v0_1_3".ref   = "master";
+  inputs."dslutils-v0_1_3".repo  = "dslutils";
+  inputs."dslutils-v0_1_3".type  = "github";
   inputs."dslutils-v0_1_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dslutils-v0_1_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

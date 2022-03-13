@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."wzeegrid-master".url = "path:./master";
+  inputs."wzeegrid-master".dir   = "master";
+  inputs."wzeegrid-master".owner = "nim-nix-pkgs";
+  inputs."wzeegrid-master".ref   = "master";
+  inputs."wzeegrid-master".repo  = "wzeegrid";
+  inputs."wzeegrid-master".type  = "github";
   inputs."wzeegrid-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."wzeegrid-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

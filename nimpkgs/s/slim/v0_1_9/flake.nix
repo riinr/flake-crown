@@ -13,18 +13,16 @@
   inputs.src-slim-v0_1_9.repo  = "slim";
   inputs.src-slim-v0_1_9.type  = "github";
   
-  inputs."fusion".dir   = "nimpkgs/f/fusion";
-  inputs."fusion".owner = "riinr";
-  inputs."fusion".ref   = "flake-pinning";
-  inputs."fusion".repo  = "flake-nimble";
+  inputs."fusion".owner = "nim-nix-pkgs";
+  inputs."fusion".ref   = "master";
+  inputs."fusion".repo  = "fusion";
   inputs."fusion".type  = "github";
   inputs."fusion".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fusion".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."compiler".dir   = "nimpkgs/c/compiler";
-  inputs."compiler".owner = "riinr";
-  inputs."compiler".ref   = "flake-pinning";
-  inputs."compiler".repo  = "flake-nimble";
+  inputs."compiler".owner = "nim-nix-pkgs";
+  inputs."compiler".ref   = "master";
+  inputs."compiler".repo  = "compiler";
   inputs."compiler".type  = "github";
   inputs."compiler".inputs.nixpkgs.follows = "nixpkgs";
   inputs."compiler".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

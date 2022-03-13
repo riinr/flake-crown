@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."pythonize-master".url = "path:./master";
+  inputs."pythonize-master".dir   = "master";
+  inputs."pythonize-master".owner = "nim-nix-pkgs";
+  inputs."pythonize-master".ref   = "master";
+  inputs."pythonize-master".repo  = "pythonize";
+  inputs."pythonize-master".type  = "github";
   inputs."pythonize-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pythonize-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

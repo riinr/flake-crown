@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."mailcow-main".url = "path:./main";
+  inputs."mailcow-main".dir   = "main";
+  inputs."mailcow-main".owner = "nim-nix-pkgs";
+  inputs."mailcow-main".ref   = "master";
+  inputs."mailcow-main".repo  = "mailcow";
+  inputs."mailcow-main".type  = "github";
   inputs."mailcow-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mailcow-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

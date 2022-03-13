@@ -13,10 +13,9 @@
   inputs.src-nimtetris-v0_3_1.repo  = "nimtetris";
   inputs.src-nimtetris-v0_3_1.type  = "github";
   
-  inputs."illwill".dir   = "nimpkgs/i/illwill";
-  inputs."illwill".owner = "riinr";
-  inputs."illwill".ref   = "flake-pinning";
-  inputs."illwill".repo  = "flake-nimble";
+  inputs."illwill".owner = "nim-nix-pkgs";
+  inputs."illwill".ref   = "master";
+  inputs."illwill".repo  = "illwill";
   inputs."illwill".type  = "github";
   inputs."illwill".inputs.nixpkgs.follows = "nixpkgs";
   inputs."illwill".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."flickr_image_bot-master".url = "path:./master";
+  inputs."flickr_image_bot-master".dir   = "master";
+  inputs."flickr_image_bot-master".owner = "nim-nix-pkgs";
+  inputs."flickr_image_bot-master".ref   = "master";
+  inputs."flickr_image_bot-master".repo  = "flickr_image_bot";
+  inputs."flickr_image_bot-master".type  = "github";
   inputs."flickr_image_bot-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."flickr_image_bot-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

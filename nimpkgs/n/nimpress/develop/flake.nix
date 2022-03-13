@@ -13,26 +13,23 @@
   inputs.src-nimpress-develop.repo  = "nimpress";
   inputs.src-nimpress-develop.type  = "github";
   
-  inputs."docopt".dir   = "nimpkgs/d/docopt";
-  inputs."docopt".owner = "riinr";
-  inputs."docopt".ref   = "flake-pinning";
-  inputs."docopt".repo  = "flake-nimble";
+  inputs."docopt".owner = "nim-nix-pkgs";
+  inputs."docopt".ref   = "master";
+  inputs."docopt".repo  = "docopt";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."hts".dir   = "nimpkgs/h/hts";
-  inputs."hts".owner = "riinr";
-  inputs."hts".ref   = "flake-pinning";
-  inputs."hts".repo  = "flake-nimble";
+  inputs."hts".owner = "nim-nix-pkgs";
+  inputs."hts".ref   = "master";
+  inputs."hts".repo  = "hts";
   inputs."hts".type  = "github";
   inputs."hts".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hts".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."lapper".dir   = "nimpkgs/l/lapper";
-  inputs."lapper".owner = "riinr";
-  inputs."lapper".ref   = "flake-pinning";
-  inputs."lapper".repo  = "flake-nimble";
+  inputs."lapper".owner = "nim-nix-pkgs";
+  inputs."lapper".ref   = "master";
+  inputs."lapper".repo  = "lapper";
   inputs."lapper".type  = "github";
   inputs."lapper".inputs.nixpkgs.follows = "nixpkgs";
   inputs."lapper".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

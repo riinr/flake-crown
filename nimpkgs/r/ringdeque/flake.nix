@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."ringdeque-master".url = "path:./master";
+  inputs."ringdeque-master".dir   = "master";
+  inputs."ringdeque-master".owner = "nim-nix-pkgs";
+  inputs."ringdeque-master".ref   = "master";
+  inputs."ringdeque-master".repo  = "ringdeque";
+  inputs."ringdeque-master".type  = "github";
   inputs."ringdeque-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ringdeque-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."hackpad-master".url = "path:./master";
+  inputs."hackpad-master".dir   = "master";
+  inputs."hackpad-master".owner = "nim-nix-pkgs";
+  inputs."hackpad-master".ref   = "master";
+  inputs."hackpad-master".repo  = "hackpad";
+  inputs."hackpad-master".type  = "github";
   inputs."hackpad-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hackpad-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

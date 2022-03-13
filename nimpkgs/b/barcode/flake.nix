@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."barcode-master".url = "path:./master";
+  inputs."barcode-master".dir   = "master";
+  inputs."barcode-master".owner = "nim-nix-pkgs";
+  inputs."barcode-master".ref   = "master";
+  inputs."barcode-master".repo  = "barcode";
+  inputs."barcode-master".type  = "github";
   inputs."barcode-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."barcode-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

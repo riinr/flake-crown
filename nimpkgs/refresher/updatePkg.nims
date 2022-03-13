@@ -113,7 +113,11 @@ iterator projectInputs(refs: JsonNode; flakeDir: string): string =
       name   = refInfo["name"].getStr.toLower
     yield fmt"""
 
-  inputs."{name}-{gitRef}".url = "path:./{gitRef}";
+  inputs."{name}-{gitRef}".dir   = "{gitRef}";
+  inputs."{name}-{gitRef}".owner = "nim-nix-pkgs";
+  inputs."{name}-{gitRef}".ref   = "master";
+  inputs."{name}-{gitRef}".repo  = "{name}";
+  inputs."{name}-{gitRef}".type  = "github";
   inputs."{name}-{gitRef}".inputs.nixpkgs.follows = "nixpkgs";
   inputs."{name}-{gitRef}".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   """
@@ -126,49 +130,6 @@ proc nimPkgsLibInput(): string =
   inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
-  """
-
-proc projectFlake(pkg: JsonNode): auto =
-  let 
-    name         = pkg["name"].getStr
-    nameLo       = pkg["name"].getStr.toLower
-    flakeDir     = fmt"{nameLo[0]}/{nameLo}"
-    description  = pkg["description"].getStr
-    heads        = pkg["heads"].projectInputs(flakeDir).toSeq.join ""
-    tags         = pkg["tags"].projectInputs(flakeDir).toSeq.join ""
-    flakeContent = fmt"""{{
-  description = ''{description}'';
-{nimPkgsLibInput()}{heads}{tags}
-  outputs = {{ self, nixpkgs, flakeNimbleLib, ...}}@inputs:
-  let 
-    lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib"];
-  in lib.mkProjectOutput {{
-    inherit self nixpkgs;
-    meta = builtins.fromJSON (builtins.readFile ./meta.json);
-    refs = builtins.removeAttrs inputs args;
-  }};
-}}"""
-  mkdir fmt"../{flakeDir}"
-  writeFile(fmt"../{flakeDir}/flake.nix", flakeContent)
-  writeFile(fmt"../{flakeDir}/meta.json", $pkg)
-  exec fmt"""
-    cd ../{flakeDir};
-    git init;
-    git add .
-    git commit -m "chore: re index {nameLo}" . \
-      || echo "nothing to commit"
-    gh repo create nim-nix-pkgs/{nameLo}                \
-      --description "Automatic nix flake of {nameLo}"   \
-      --disable-issues                                  \
-      --disable-wiki                                    \
-      --homepage=https://github.com/riinr/flake-nimble  \
-      --public                                          \
-      --push                                            \
-      --remote=origin                                   \
-      --source=.                                        \
-      || echo "maybe it exists"
-    echo {nameLo} ready
   """
 
 proc inputInfo(refInfo: JsonNode, url: string): JsonNode =
@@ -259,12 +220,62 @@ proc refsFlake(pkg: JsonNode): auto =
     mkdir flakeDir
     writeFile(fmt"{flakeDir}/flake.nix", flakeContent)
     writeFile(fmt"{flakeDir}/meta.json", $refInfo)
-    let a = gorge fmt"""
+    exec fmt"""
       cd {flakeDir};
       git add .
-      echo `git commit -m "chore: re-index {flakeDir}" .`
-      git push
+      git commit -m "chore: re-index {flakeDir}" . &> /dev/null \
+        || true
     """
+proc projectFlake(pkg: JsonNode): auto =
+  let 
+    name         = pkg["name"].getStr
+    nameLo       = pkg["name"].getStr.toLower
+    flakeDir     = fmt"{nameLo[0]}/{nameLo}"
+    description  = pkg["description"].getStr
+    heads        = pkg["heads"].projectInputs(flakeDir).toSeq.join ""
+    tags         = pkg["tags"].projectInputs(flakeDir).toSeq.join ""
+    flakeContent = fmt"""{{
+  description = ''{description}'';
+{nimPkgsLibInput()}{heads}{tags}
+  outputs = {{ self, nixpkgs, flakeNimbleLib, ...}}@inputs:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib"];
+  in lib.mkProjectOutput {{
+    inherit self nixpkgs;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+    refs = builtins.removeAttrs inputs args;
+  }};
+}}"""
+  mkdir fmt"../{flakeDir}"
+  writeFile(fmt"../{flakeDir}/flake.nix", flakeContent)
+  writeFile(fmt"../{flakeDir}/meta.json", $pkg)
+  exec fmt"""
+    cd ../{flakeDir};
+    git init &>/dev/null
+    git add .
+    git commit -m "chore: re index {nameLo}" . &>/dev/null \
+      || true
+    git remote -v | wc -l | grep -q '0' \
+      &&
+    gh repo create nim-nix-pkgs/{nameLo}                \
+      --description "Automatic nix flake of {nameLo}"   \
+      --disable-issues                                  \
+      --disable-wiki                                    \
+      --homepage=https://github.com/riinr/flake-nimble  \
+      --public                                          \
+      --push                                            \
+      --remote=origin                                   \
+      --source=.                                        \
+      || true
+  """
+  refsFlake pkg
+  # exec fmt"""
+  #   echo push {flakeDir}
+  #   cd ../{flakeDir};
+  #   git push || true
+  # """
+
 
 let 
   pkg  = readAllFromStdin().parseJson
@@ -274,4 +285,3 @@ pkg["tags"]  = %* refs.filter(isTag).map(fetchInfo pkg).filter("name".isKey)
 pkg["heads"] = %* refs.filter(isHead).map(fetchInfo pkg).filter("name".isKey)
 
 projectFlake pkg
-refsFlake pkg

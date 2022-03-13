@@ -7,23 +7,43 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."polypbren-master".url = "path:./master";
+  inputs."polypbren-master".dir   = "master";
+  inputs."polypbren-master".owner = "nim-nix-pkgs";
+  inputs."polypbren-master".ref   = "master";
+  inputs."polypbren-master".repo  = "polypbren";
+  inputs."polypbren-master".type  = "github";
   inputs."polypbren-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."polypbren-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."polypbren-v0_4-paper".url = "path:./v0_4-paper";
+  inputs."polypbren-v0_4-paper".dir   = "v0_4-paper";
+  inputs."polypbren-v0_4-paper".owner = "nim-nix-pkgs";
+  inputs."polypbren-v0_4-paper".ref   = "master";
+  inputs."polypbren-v0_4-paper".repo  = "polypbren";
+  inputs."polypbren-v0_4-paper".type  = "github";
   inputs."polypbren-v0_4-paper".inputs.nixpkgs.follows = "nixpkgs";
   inputs."polypbren-v0_4-paper".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."polypbren-v0_4_1".url = "path:./v0_4_1";
+  inputs."polypbren-v0_4_1".dir   = "v0_4_1";
+  inputs."polypbren-v0_4_1".owner = "nim-nix-pkgs";
+  inputs."polypbren-v0_4_1".ref   = "master";
+  inputs."polypbren-v0_4_1".repo  = "polypbren";
+  inputs."polypbren-v0_4_1".type  = "github";
   inputs."polypbren-v0_4_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."polypbren-v0_4_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."polypbren-v0_4_2".url = "path:./v0_4_2";
+  inputs."polypbren-v0_4_2".dir   = "v0_4_2";
+  inputs."polypbren-v0_4_2".owner = "nim-nix-pkgs";
+  inputs."polypbren-v0_4_2".ref   = "master";
+  inputs."polypbren-v0_4_2".repo  = "polypbren";
+  inputs."polypbren-v0_4_2".type  = "github";
   inputs."polypbren-v0_4_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."polypbren-v0_4_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."polypbren-v0_4_3".url = "path:./v0_4_3";
+  inputs."polypbren-v0_4_3".dir   = "v0_4_3";
+  inputs."polypbren-v0_4_3".owner = "nim-nix-pkgs";
+  inputs."polypbren-v0_4_3".ref   = "master";
+  inputs."polypbren-v0_4_3".repo  = "polypbren";
+  inputs."polypbren-v0_4_3".type  = "github";
   inputs."polypbren-v0_4_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."polypbren-v0_4_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

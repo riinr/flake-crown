@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."sumtypes-master".url = "path:./master";
+  inputs."sumtypes-master".dir   = "master";
+  inputs."sumtypes-master".owner = "nim-nix-pkgs";
+  inputs."sumtypes-master".ref   = "master";
+  inputs."sumtypes-master".repo  = "sumtypes";
+  inputs."sumtypes-master".type  = "github";
   inputs."sumtypes-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sumtypes-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

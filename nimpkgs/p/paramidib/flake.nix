@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."paramidib-main".url = "path:./main";
+  inputs."paramidib-main".dir   = "main";
+  inputs."paramidib-main".owner = "nim-nix-pkgs";
+  inputs."paramidib-main".ref   = "master";
+  inputs."paramidib-main".repo  = "paramidib";
+  inputs."paramidib-main".type  = "github";
   inputs."paramidib-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."paramidib-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

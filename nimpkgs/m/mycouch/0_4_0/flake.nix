@@ -13,26 +13,23 @@
   inputs.src-mycouch-0_4_0.repo  = "mycouch";
   inputs.src-mycouch-0_4_0.type  = "github";
   
-  inputs."macroutils".dir   = "nimpkgs/m/macroutils";
-  inputs."macroutils".owner = "riinr";
-  inputs."macroutils".ref   = "flake-pinning";
-  inputs."macroutils".repo  = "flake-nimble";
+  inputs."macroutils".owner = "nim-nix-pkgs";
+  inputs."macroutils".ref   = "master";
+  inputs."macroutils".repo  = "macroutils";
   inputs."macroutils".type  = "github";
   inputs."macroutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."macroutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."macroplus".dir   = "nimpkgs/m/macroplus";
-  inputs."macroplus".owner = "riinr";
-  inputs."macroplus".ref   = "flake-pinning";
-  inputs."macroplus".repo  = "flake-nimble";
+  inputs."macroplus".owner = "nim-nix-pkgs";
+  inputs."macroplus".ref   = "master";
+  inputs."macroplus".repo  = "macroplus";
   inputs."macroplus".type  = "github";
   inputs."macroplus".inputs.nixpkgs.follows = "nixpkgs";
   inputs."macroplus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/hamidb80/coverage".dir   = "nimpkgs/h/https://github.com/hamidb80/coverage";
-  inputs."https://github.com/hamidb80/coverage".owner = "riinr";
-  inputs."https://github.com/hamidb80/coverage".ref   = "flake-pinning";
-  inputs."https://github.com/hamidb80/coverage".repo  = "flake-nimble";
+  inputs."https://github.com/hamidb80/coverage".owner = "nim-nix-pkgs";
+  inputs."https://github.com/hamidb80/coverage".ref   = "master";
+  inputs."https://github.com/hamidb80/coverage".repo  = "https://github.com/hamidb80/coverage";
   inputs."https://github.com/hamidb80/coverage".type  = "github";
   inputs."https://github.com/hamidb80/coverage".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/hamidb80/coverage".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

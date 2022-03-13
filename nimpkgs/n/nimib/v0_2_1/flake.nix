@@ -13,34 +13,30 @@
   inputs.src-nimib-v0_2_1.repo  = "nimib";
   inputs.src-nimib-v0_2_1.type  = "github";
   
-  inputs."tempfile".dir   = "nimpkgs/t/tempfile";
-  inputs."tempfile".owner = "riinr";
-  inputs."tempfile".ref   = "flake-pinning";
-  inputs."tempfile".repo  = "flake-nimble";
+  inputs."tempfile".owner = "nim-nix-pkgs";
+  inputs."tempfile".ref   = "master";
+  inputs."tempfile".repo  = "tempfile";
   inputs."tempfile".type  = "github";
   inputs."tempfile".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tempfile".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."markdown".dir   = "nimpkgs/m/markdown";
-  inputs."markdown".owner = "riinr";
-  inputs."markdown".ref   = "flake-pinning";
-  inputs."markdown".repo  = "flake-nimble";
+  inputs."markdown".owner = "nim-nix-pkgs";
+  inputs."markdown".ref   = "master";
+  inputs."markdown".repo  = "markdown";
   inputs."markdown".type  = "github";
   inputs."markdown".inputs.nixpkgs.follows = "nixpkgs";
   inputs."markdown".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."mustache".dir   = "nimpkgs/m/mustache";
-  inputs."mustache".owner = "riinr";
-  inputs."mustache".ref   = "flake-pinning";
-  inputs."mustache".repo  = "flake-nimble";
+  inputs."mustache".owner = "nim-nix-pkgs";
+  inputs."mustache".ref   = "master";
+  inputs."mustache".repo  = "mustache";
   inputs."mustache".type  = "github";
   inputs."mustache".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mustache".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."toml_serialization".dir   = "nimpkgs/t/toml_serialization";
-  inputs."toml_serialization".owner = "riinr";
-  inputs."toml_serialization".ref   = "flake-pinning";
-  inputs."toml_serialization".repo  = "flake-nimble";
+  inputs."toml_serialization".owner = "nim-nix-pkgs";
+  inputs."toml_serialization".ref   = "master";
+  inputs."toml_serialization".repo  = "toml_serialization";
   inputs."toml_serialization".type  = "github";
   inputs."toml_serialization".inputs.nixpkgs.follows = "nixpkgs";
   inputs."toml_serialization".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."asciitables-master".url = "path:./master";
+  inputs."asciitables-master".dir   = "master";
+  inputs."asciitables-master".owner = "nim-nix-pkgs";
+  inputs."asciitables-master".ref   = "master";
+  inputs."asciitables-master".repo  = "asciitables";
+  inputs."asciitables-master".type  = "github";
   inputs."asciitables-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."asciitables-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

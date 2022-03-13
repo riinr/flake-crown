@@ -13,18 +13,16 @@
   inputs.src-nimgen-v0_1_1.repo  = "nimgen";
   inputs.src-nimgen-v0_1_1.type  = "github";
   
-  inputs."c2nim".dir   = "nimpkgs/c/c2nim";
-  inputs."c2nim".owner = "riinr";
-  inputs."c2nim".ref   = "flake-pinning";
-  inputs."c2nim".repo  = "flake-nimble";
+  inputs."c2nim".owner = "nim-nix-pkgs";
+  inputs."c2nim".ref   = "master";
+  inputs."c2nim".repo  = "c2nim";
   inputs."c2nim".type  = "github";
   inputs."c2nim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."c2nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."docopt".dir   = "nimpkgs/d/docopt";
-  inputs."docopt".owner = "riinr";
-  inputs."docopt".ref   = "flake-pinning";
-  inputs."docopt".repo  = "flake-nimble";
+  inputs."docopt".owner = "nim-nix-pkgs";
+  inputs."docopt".ref   = "master";
+  inputs."docopt".repo  = "docopt";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

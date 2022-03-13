@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."pcap-master".url = "path:./master";
+  inputs."pcap-master".dir   = "master";
+  inputs."pcap-master".owner = "nim-nix-pkgs";
+  inputs."pcap-master".ref   = "master";
+  inputs."pcap-master".repo  = "pcap";
+  inputs."pcap-master".type  = "github";
   inputs."pcap-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pcap-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

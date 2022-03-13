@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."libfuzzer-master".url = "path:./master";
+  inputs."libfuzzer-master".dir   = "master";
+  inputs."libfuzzer-master".owner = "nim-nix-pkgs";
+  inputs."libfuzzer-master".ref   = "master";
+  inputs."libfuzzer-master".repo  = "libfuzzer";
+  inputs."libfuzzer-master".type  = "github";
   inputs."libfuzzer-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libfuzzer-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

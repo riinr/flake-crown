@@ -13,18 +13,16 @@
   inputs.src-nasher-0_13_0.repo  = "nasher.nim";
   inputs.src-nasher-0_13_0.type  = "github";
   
-  inputs."neverwinter".dir   = "nimpkgs/n/neverwinter";
-  inputs."neverwinter".owner = "riinr";
-  inputs."neverwinter".ref   = "flake-pinning";
-  inputs."neverwinter".repo  = "flake-nimble";
+  inputs."neverwinter".owner = "nim-nix-pkgs";
+  inputs."neverwinter".ref   = "master";
+  inputs."neverwinter".repo  = "neverwinter";
   inputs."neverwinter".type  = "github";
   inputs."neverwinter".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neverwinter".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."glob".dir   = "nimpkgs/g/glob";
-  inputs."glob".owner = "riinr";
-  inputs."glob".ref   = "flake-pinning";
-  inputs."glob".repo  = "flake-nimble";
+  inputs."glob".owner = "nim-nix-pkgs";
+  inputs."glob".ref   = "master";
+  inputs."glob".repo  = "glob";
   inputs."glob".type  = "github";
   inputs."glob".inputs.nixpkgs.follows = "nixpkgs";
   inputs."glob".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

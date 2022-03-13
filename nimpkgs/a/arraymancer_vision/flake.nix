@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."arraymancer_vision-master".url = "path:./master";
+  inputs."arraymancer_vision-master".dir   = "master";
+  inputs."arraymancer_vision-master".owner = "nim-nix-pkgs";
+  inputs."arraymancer_vision-master".ref   = "master";
+  inputs."arraymancer_vision-master".repo  = "arraymancer_vision";
+  inputs."arraymancer_vision-master".type  = "github";
   inputs."arraymancer_vision-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer_vision-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

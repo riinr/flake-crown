@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."firejail-master".url = "path:./master";
+  inputs."firejail-master".dir   = "master";
+  inputs."firejail-master".owner = "nim-nix-pkgs";
+  inputs."firejail-master".ref   = "master";
+  inputs."firejail-master".repo  = "firejail";
+  inputs."firejail-master".type  = "github";
   inputs."firejail-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."firejail-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

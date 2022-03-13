@@ -13,10 +13,9 @@
   inputs.src-pdcurses-master.repo  = "pdcurses";
   inputs.src-pdcurses-master.type  = "github";
   
-  inputs."oldwinapi".dir   = "nimpkgs/o/oldwinapi";
-  inputs."oldwinapi".owner = "riinr";
-  inputs."oldwinapi".ref   = "flake-pinning";
-  inputs."oldwinapi".repo  = "flake-nimble";
+  inputs."oldwinapi".owner = "nim-nix-pkgs";
+  inputs."oldwinapi".ref   = "master";
+  inputs."oldwinapi".repo  = "oldwinapi";
   inputs."oldwinapi".type  = "github";
   inputs."oldwinapi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."oldwinapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,18 +13,16 @@
   inputs.src-packets-master.repo  = "packets.nim";
   inputs.src-packets-master.type  = "github";
   
-  inputs."packedjson".dir   = "nimpkgs/p/packedjson";
-  inputs."packedjson".owner = "riinr";
-  inputs."packedjson".ref   = "flake-pinning";
-  inputs."packedjson".repo  = "flake-nimble";
+  inputs."packedjson".owner = "nim-nix-pkgs";
+  inputs."packedjson".ref   = "master";
+  inputs."packedjson".repo  = "packedjson";
   inputs."packedjson".type  = "github";
   inputs."packedjson".inputs.nixpkgs.follows = "nixpkgs";
   inputs."packedjson".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."crc32".dir   = "nimpkgs/c/crc32";
-  inputs."crc32".owner = "riinr";
-  inputs."crc32".ref   = "flake-pinning";
-  inputs."crc32".repo  = "flake-nimble";
+  inputs."crc32".owner = "nim-nix-pkgs";
+  inputs."crc32".ref   = "master";
+  inputs."crc32".repo  = "crc32";
   inputs."crc32".type  = "github";
   inputs."crc32".inputs.nixpkgs.follows = "nixpkgs";
   inputs."crc32".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

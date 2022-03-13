@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."mpfit-master".url = "path:./master";
+  inputs."mpfit-master".dir   = "master";
+  inputs."mpfit-master".owner = "nim-nix-pkgs";
+  inputs."mpfit-master".ref   = "master";
+  inputs."mpfit-master".repo  = "mpfit";
+  inputs."mpfit-master".type  = "github";
   inputs."mpfit-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mpfit-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."mpfit-v0_1_1".url = "path:./v0_1_1";
+  inputs."mpfit-v0_1_1".dir   = "v0_1_1";
+  inputs."mpfit-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."mpfit-v0_1_1".ref   = "master";
+  inputs."mpfit-v0_1_1".repo  = "mpfit";
+  inputs."mpfit-v0_1_1".type  = "github";
   inputs."mpfit-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mpfit-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."mpfit-v0_1_2".url = "path:./v0_1_2";
+  inputs."mpfit-v0_1_2".dir   = "v0_1_2";
+  inputs."mpfit-v0_1_2".owner = "nim-nix-pkgs";
+  inputs."mpfit-v0_1_2".ref   = "master";
+  inputs."mpfit-v0_1_2".repo  = "mpfit";
+  inputs."mpfit-v0_1_2".type  = "github";
   inputs."mpfit-v0_1_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mpfit-v0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

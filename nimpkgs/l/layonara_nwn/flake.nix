@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."layonara_nwn-master".url = "path:./master";
+  inputs."layonara_nwn-master".dir   = "master";
+  inputs."layonara_nwn-master".owner = "nim-nix-pkgs";
+  inputs."layonara_nwn-master".ref   = "master";
+  inputs."layonara_nwn-master".repo  = "layonara_nwn";
+  inputs."layonara_nwn-master".type  = "github";
   inputs."layonara_nwn-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."layonara_nwn-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

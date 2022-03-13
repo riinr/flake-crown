@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."png-master".url = "path:./master";
+  inputs."png-master".dir   = "master";
+  inputs."png-master".owner = "nim-nix-pkgs";
+  inputs."png-master".ref   = "master";
+  inputs."png-master".repo  = "png";
+  inputs."png-master".type  = "github";
   inputs."png-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."png-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

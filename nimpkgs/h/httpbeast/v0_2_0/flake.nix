@@ -13,10 +13,9 @@
   inputs.src-httpbeast-v0_2_0.repo  = "httpbeast";
   inputs.src-httpbeast-v0_2_0.type  = "github";
   
-  inputs."asynctools".dir   = "nimpkgs/a/asynctools";
-  inputs."asynctools".owner = "riinr";
-  inputs."asynctools".ref   = "flake-pinning";
-  inputs."asynctools".repo  = "flake-nimble";
+  inputs."asynctools".owner = "nim-nix-pkgs";
+  inputs."asynctools".ref   = "master";
+  inputs."asynctools".repo  = "asynctools";
   inputs."asynctools".type  = "github";
   inputs."asynctools".inputs.nixpkgs.follows = "nixpkgs";
   inputs."asynctools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."libuv-master".url = "path:./master";
+  inputs."libuv-master".dir   = "master";
+  inputs."libuv-master".owner = "nim-nix-pkgs";
+  inputs."libuv-master".ref   = "master";
+  inputs."libuv-master".repo  = "libuv";
+  inputs."libuv-master".type  = "github";
   inputs."libuv-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libuv-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

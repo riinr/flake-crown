@@ -13,10 +13,9 @@
   inputs.src-nwsync-0_4_0.repo  = "nwsync";
   inputs.src-nwsync-0_4_0.type  = "github";
   
-  inputs."neverwinter".dir   = "nimpkgs/n/neverwinter";
-  inputs."neverwinter".owner = "riinr";
-  inputs."neverwinter".ref   = "flake-pinning";
-  inputs."neverwinter".repo  = "flake-nimble";
+  inputs."neverwinter".owner = "nim-nix-pkgs";
+  inputs."neverwinter".ref   = "master";
+  inputs."neverwinter".repo  = "neverwinter";
   inputs."neverwinter".type  = "github";
   inputs."neverwinter".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neverwinter".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

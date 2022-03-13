@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nimspice-master".url = "path:./master";
+  inputs."nimspice-master".dir   = "master";
+  inputs."nimspice-master".owner = "nim-nix-pkgs";
+  inputs."nimspice-master".ref   = "master";
+  inputs."nimspice-master".repo  = "nimspice";
+  inputs."nimspice-master".type  = "github";
   inputs."nimspice-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimspice-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimspice-v0_1_0".url = "path:./v0_1_0";
+  inputs."nimspice-v0_1_0".dir   = "v0_1_0";
+  inputs."nimspice-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."nimspice-v0_1_0".ref   = "master";
+  inputs."nimspice-v0_1_0".repo  = "nimspice";
+  inputs."nimspice-v0_1_0".type  = "github";
   inputs."nimspice-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimspice-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimspice-v0_1_2".url = "path:./v0_1_2";
+  inputs."nimspice-v0_1_2".dir   = "v0_1_2";
+  inputs."nimspice-v0_1_2".owner = "nim-nix-pkgs";
+  inputs."nimspice-v0_1_2".ref   = "master";
+  inputs."nimspice-v0_1_2".repo  = "nimspice";
+  inputs."nimspice-v0_1_2".type  = "github";
   inputs."nimspice-v0_1_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimspice-v0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

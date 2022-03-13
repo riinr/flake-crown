@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."presto-master".url = "path:./master";
+  inputs."presto-master".dir   = "master";
+  inputs."presto-master".owner = "nim-nix-pkgs";
+  inputs."presto-master".ref   = "master";
+  inputs."presto-master".repo  = "presto";
+  inputs."presto-master".type  = "github";
   inputs."presto-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."presto-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

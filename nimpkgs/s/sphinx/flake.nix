@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."sphinx-master".url = "path:./master";
+  inputs."sphinx-master".dir   = "master";
+  inputs."sphinx-master".owner = "nim-nix-pkgs";
+  inputs."sphinx-master".ref   = "master";
+  inputs."sphinx-master".repo  = "sphinx";
+  inputs."sphinx-master".type  = "github";
   inputs."sphinx-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sphinx-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

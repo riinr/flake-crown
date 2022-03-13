@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."listsv-master".url = "path:./master";
+  inputs."listsv-master".dir   = "master";
+  inputs."listsv-master".owner = "nim-nix-pkgs";
+  inputs."listsv-master".ref   = "master";
+  inputs."listsv-master".repo  = "listsv";
+  inputs."listsv-master".type  = "github";
   inputs."listsv-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."listsv-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

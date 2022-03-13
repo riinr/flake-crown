@@ -13,10 +13,9 @@
   inputs.src-html_tools-master.repo  = "nim-html-tools";
   inputs.src-html_tools-master.type  = "github";
   
-  inputs."contra".dir   = "nimpkgs/c/contra";
-  inputs."contra".owner = "riinr";
-  inputs."contra".ref   = "flake-pinning";
-  inputs."contra".repo  = "flake-nimble";
+  inputs."contra".owner = "nim-nix-pkgs";
+  inputs."contra".ref   = "master";
+  inputs."contra".repo  = "contra";
   inputs."contra".type  = "github";
   inputs."contra".inputs.nixpkgs.follows = "nixpkgs";
   inputs."contra".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

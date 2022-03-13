@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."robotparser-master".url = "path:./master";
+  inputs."robotparser-master".dir   = "master";
+  inputs."robotparser-master".owner = "nim-nix-pkgs";
+  inputs."robotparser-master".ref   = "master";
+  inputs."robotparser-master".repo  = "robotparser";
+  inputs."robotparser-master".type  = "github";
   inputs."robotparser-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."robotparser-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

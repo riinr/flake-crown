@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nauthy-master".url = "path:./master";
+  inputs."nauthy-master".dir   = "master";
+  inputs."nauthy-master".owner = "nim-nix-pkgs";
+  inputs."nauthy-master".ref   = "master";
+  inputs."nauthy-master".repo  = "nauthy";
+  inputs."nauthy-master".type  = "github";
   inputs."nauthy-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nauthy-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

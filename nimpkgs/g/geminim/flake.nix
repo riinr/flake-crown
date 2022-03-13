@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."geminim-master".url = "path:./master";
+  inputs."geminim-master".dir   = "master";
+  inputs."geminim-master".owner = "nim-nix-pkgs";
+  inputs."geminim-master".ref   = "master";
+  inputs."geminim-master".repo  = "geminim";
+  inputs."geminim-master".type  = "github";
   inputs."geminim-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."geminim-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."latinize-master".url = "path:./master";
+  inputs."latinize-master".dir   = "master";
+  inputs."latinize-master".owner = "nim-nix-pkgs";
+  inputs."latinize-master".ref   = "master";
+  inputs."latinize-master".repo  = "latinize";
+  inputs."latinize-master".type  = "github";
   inputs."latinize-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."latinize-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."latinize-v0_1".url = "path:./v0_1";
+  inputs."latinize-v0_1".dir   = "v0_1";
+  inputs."latinize-v0_1".owner = "nim-nix-pkgs";
+  inputs."latinize-v0_1".ref   = "master";
+  inputs."latinize-v0_1".repo  = "latinize";
+  inputs."latinize-v0_1".type  = "github";
   inputs."latinize-v0_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."latinize-v0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."vaultclient-master".url = "path:./master";
+  inputs."vaultclient-master".dir   = "master";
+  inputs."vaultclient-master".owner = "nim-nix-pkgs";
+  inputs."vaultclient-master".ref   = "master";
+  inputs."vaultclient-master".repo  = "vaultclient";
+  inputs."vaultclient-master".type  = "github";
   inputs."vaultclient-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vaultclient-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."vaultclient-0_1_0".url = "path:./0_1_0";
+  inputs."vaultclient-0_1_0".dir   = "0_1_0";
+  inputs."vaultclient-0_1_0".owner = "nim-nix-pkgs";
+  inputs."vaultclient-0_1_0".ref   = "master";
+  inputs."vaultclient-0_1_0".repo  = "vaultclient";
+  inputs."vaultclient-0_1_0".type  = "github";
   inputs."vaultclient-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vaultclient-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."vaultclient-0_1_1".url = "path:./0_1_1";
+  inputs."vaultclient-0_1_1".dir   = "0_1_1";
+  inputs."vaultclient-0_1_1".owner = "nim-nix-pkgs";
+  inputs."vaultclient-0_1_1".ref   = "master";
+  inputs."vaultclient-0_1_1".repo  = "vaultclient";
+  inputs."vaultclient-0_1_1".type  = "github";
   inputs."vaultclient-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vaultclient-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

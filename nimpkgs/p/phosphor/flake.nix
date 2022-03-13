@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."phosphor-master".url = "path:./master";
+  inputs."phosphor-master".dir   = "master";
+  inputs."phosphor-master".owner = "nim-nix-pkgs";
+  inputs."phosphor-master".ref   = "master";
+  inputs."phosphor-master".repo  = "phosphor";
+  inputs."phosphor-master".type  = "github";
   inputs."phosphor-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."phosphor-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

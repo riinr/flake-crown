@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."glossolalia-master".url = "path:./master";
+  inputs."glossolalia-master".dir   = "master";
+  inputs."glossolalia-master".owner = "nim-nix-pkgs";
+  inputs."glossolalia-master".ref   = "master";
+  inputs."glossolalia-master".repo  = "glossolalia";
+  inputs."glossolalia-master".type  = "github";
   inputs."glossolalia-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."glossolalia-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

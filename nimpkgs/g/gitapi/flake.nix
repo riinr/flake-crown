@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."gitapi-master".url = "path:./master";
+  inputs."gitapi-master".dir   = "master";
+  inputs."gitapi-master".owner = "nim-nix-pkgs";
+  inputs."gitapi-master".ref   = "master";
+  inputs."gitapi-master".repo  = "gitapi";
+  inputs."gitapi-master".type  = "github";
   inputs."gitapi-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gitapi-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."catnip-main".url = "path:./main";
+  inputs."catnip-main".dir   = "main";
+  inputs."catnip-main".owner = "nim-nix-pkgs";
+  inputs."catnip-main".ref   = "master";
+  inputs."catnip-main".repo  = "catnip";
+  inputs."catnip-main".type  = "github";
   inputs."catnip-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."catnip-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."catnip-0_1_0".url = "path:./0_1_0";
+  inputs."catnip-0_1_0".dir   = "0_1_0";
+  inputs."catnip-0_1_0".owner = "nim-nix-pkgs";
+  inputs."catnip-0_1_0".ref   = "master";
+  inputs."catnip-0_1_0".repo  = "catnip";
+  inputs."catnip-0_1_0".type  = "github";
   inputs."catnip-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."catnip-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

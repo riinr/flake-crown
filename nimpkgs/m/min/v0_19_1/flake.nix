@@ -13,10 +13,9 @@
   inputs.src-min-v0_19_1.repo  = "min";
   inputs.src-min-v0_19_1.type  = "github";
   
-  inputs."nifty".dir   = "nimpkgs/n/nifty";
-  inputs."nifty".owner = "riinr";
-  inputs."nifty".ref   = "flake-pinning";
-  inputs."nifty".repo  = "flake-nimble";
+  inputs."nifty".owner = "nim-nix-pkgs";
+  inputs."nifty".ref   = "master";
+  inputs."nifty".repo  = "nifty";
   inputs."nifty".type  = "github";
   inputs."nifty".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nifty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

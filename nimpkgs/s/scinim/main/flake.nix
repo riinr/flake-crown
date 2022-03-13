@@ -13,34 +13,30 @@
   inputs.src-scinim-main.repo  = "scinim";
   inputs.src-scinim-main.type  = "github";
   
-  inputs."fusion".dir   = "nimpkgs/f/fusion";
-  inputs."fusion".owner = "riinr";
-  inputs."fusion".ref   = "flake-pinning";
-  inputs."fusion".repo  = "flake-nimble";
+  inputs."fusion".owner = "nim-nix-pkgs";
+  inputs."fusion".ref   = "master";
+  inputs."fusion".repo  = "fusion";
   inputs."fusion".type  = "github";
   inputs."fusion".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fusion".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."arraymancer".dir   = "nimpkgs/a/arraymancer";
-  inputs."arraymancer".owner = "riinr";
-  inputs."arraymancer".ref   = "flake-pinning";
-  inputs."arraymancer".repo  = "flake-nimble";
+  inputs."arraymancer".owner = "nim-nix-pkgs";
+  inputs."arraymancer".ref   = "master";
+  inputs."arraymancer".repo  = "arraymancer";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."polynumeric".dir   = "nimpkgs/p/polynumeric";
-  inputs."polynumeric".owner = "riinr";
-  inputs."polynumeric".ref   = "flake-pinning";
-  inputs."polynumeric".repo  = "flake-nimble";
+  inputs."polynumeric".owner = "nim-nix-pkgs";
+  inputs."polynumeric".ref   = "master";
+  inputs."polynumeric".repo  = "polynumeric";
   inputs."polynumeric".type  = "github";
   inputs."polynumeric".inputs.nixpkgs.follows = "nixpkgs";
   inputs."polynumeric".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimpy".dir   = "nimpkgs/n/nimpy";
-  inputs."nimpy".owner = "riinr";
-  inputs."nimpy".ref   = "flake-pinning";
-  inputs."nimpy".repo  = "flake-nimble";
+  inputs."nimpy".owner = "nim-nix-pkgs";
+  inputs."nimpy".ref   = "master";
+  inputs."nimpy".repo  = "nimpy";
   inputs."nimpy".type  = "github";
   inputs."nimpy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

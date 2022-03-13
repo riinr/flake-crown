@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."texttospeech-master".url = "path:./master";
+  inputs."texttospeech-master".dir   = "master";
+  inputs."texttospeech-master".owner = "nim-nix-pkgs";
+  inputs."texttospeech-master".ref   = "master";
+  inputs."texttospeech-master".repo  = "texttospeech";
+  inputs."texttospeech-master".type  = "github";
   inputs."texttospeech-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."texttospeech-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."texttospeech-v0_1_0".url = "path:./v0_1_0";
+  inputs."texttospeech-v0_1_0".dir   = "v0_1_0";
+  inputs."texttospeech-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."texttospeech-v0_1_0".ref   = "master";
+  inputs."texttospeech-v0_1_0".repo  = "texttospeech";
+  inputs."texttospeech-v0_1_0".type  = "github";
   inputs."texttospeech-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."texttospeech-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

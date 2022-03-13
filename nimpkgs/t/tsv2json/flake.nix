@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."tsv2json-master".url = "path:./master";
+  inputs."tsv2json-master".dir   = "master";
+  inputs."tsv2json-master".owner = "nim-nix-pkgs";
+  inputs."tsv2json-master".ref   = "master";
+  inputs."tsv2json-master".repo  = "tsv2json";
+  inputs."tsv2json-master".type  = "github";
   inputs."tsv2json-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tsv2json-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

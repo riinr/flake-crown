@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."cmark-master".url = "path:./master";
+  inputs."cmark-master".dir   = "master";
+  inputs."cmark-master".owner = "nim-nix-pkgs";
+  inputs."cmark-master".ref   = "master";
+  inputs."cmark-master".repo  = "cmark";
+  inputs."cmark-master".type  = "github";
   inputs."cmark-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cmark-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cmark-0_1_0".url = "path:./0_1_0";
+  inputs."cmark-0_1_0".dir   = "0_1_0";
+  inputs."cmark-0_1_0".owner = "nim-nix-pkgs";
+  inputs."cmark-0_1_0".ref   = "master";
+  inputs."cmark-0_1_0".repo  = "cmark";
+  inputs."cmark-0_1_0".type  = "github";
   inputs."cmark-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cmark-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

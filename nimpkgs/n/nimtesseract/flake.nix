@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nimtesseract-master".url = "path:./master";
+  inputs."nimtesseract-master".dir   = "master";
+  inputs."nimtesseract-master".owner = "nim-nix-pkgs";
+  inputs."nimtesseract-master".ref   = "master";
+  inputs."nimtesseract-master".repo  = "nimtesseract";
+  inputs."nimtesseract-master".type  = "github";
   inputs."nimtesseract-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimtesseract-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimtesseract-v0_1_0".url = "path:./v0_1_0";
+  inputs."nimtesseract-v0_1_0".dir   = "v0_1_0";
+  inputs."nimtesseract-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."nimtesseract-v0_1_0".ref   = "master";
+  inputs."nimtesseract-v0_1_0".repo  = "nimtesseract";
+  inputs."nimtesseract-v0_1_0".type  = "github";
   inputs."nimtesseract-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimtesseract-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimtesseract-v0_2_0".url = "path:./v0_2_0";
+  inputs."nimtesseract-v0_2_0".dir   = "v0_2_0";
+  inputs."nimtesseract-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."nimtesseract-v0_2_0".ref   = "master";
+  inputs."nimtesseract-v0_2_0".repo  = "nimtesseract";
+  inputs."nimtesseract-v0_2_0".type  = "github";
   inputs."nimtesseract-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimtesseract-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

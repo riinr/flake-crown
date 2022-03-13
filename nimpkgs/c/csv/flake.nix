@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."csv-master".url = "path:./master";
+  inputs."csv-master".dir   = "master";
+  inputs."csv-master".owner = "nim-nix-pkgs";
+  inputs."csv-master".ref   = "master";
+  inputs."csv-master".repo  = "csv";
+  inputs."csv-master".type  = "github";
   inputs."csv-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."csv-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

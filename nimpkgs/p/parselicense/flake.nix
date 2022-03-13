@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."parselicense-master".url = "path:./master";
+  inputs."parselicense-master".dir   = "master";
+  inputs."parselicense-master".owner = "nim-nix-pkgs";
+  inputs."parselicense-master".ref   = "master";
+  inputs."parselicense-master".repo  = "parselicense";
+  inputs."parselicense-master".type  = "github";
   inputs."parselicense-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."parselicense-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."laser-master".url = "path:./master";
+  inputs."laser-master".dir   = "master";
+  inputs."laser-master".owner = "nim-nix-pkgs";
+  inputs."laser-master".ref   = "master";
+  inputs."laser-master".repo  = "laser";
+  inputs."laser-master".type  = "github";
   inputs."laser-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."laser-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

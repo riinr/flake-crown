@@ -13,18 +13,16 @@
   inputs.src-nim_telegram_bot-0_2_0.repo  = "nim-telegram-bot";
   inputs.src-nim_telegram_bot-0_2_0.type  = "github";
   
-  inputs."openexchangerates".dir   = "nimpkgs/o/openexchangerates";
-  inputs."openexchangerates".owner = "riinr";
-  inputs."openexchangerates".ref   = "flake-pinning";
-  inputs."openexchangerates".repo  = "flake-nimble";
+  inputs."openexchangerates".owner = "nim-nix-pkgs";
+  inputs."openexchangerates".ref   = "master";
+  inputs."openexchangerates".repo  = "openexchangerates";
   inputs."openexchangerates".type  = "github";
   inputs."openexchangerates".inputs.nixpkgs.follows = "nixpkgs";
   inputs."openexchangerates".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."telebot".dir   = "nimpkgs/t/telebot";
-  inputs."telebot".owner = "riinr";
-  inputs."telebot".ref   = "flake-pinning";
-  inputs."telebot".repo  = "flake-nimble";
+  inputs."telebot".owner = "nim-nix-pkgs";
+  inputs."telebot".ref   = "master";
+  inputs."telebot".repo  = "telebot";
   inputs."telebot".type  = "github";
   inputs."telebot".inputs.nixpkgs.follows = "nixpkgs";
   inputs."telebot".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

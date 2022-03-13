@@ -13,10 +13,9 @@
   inputs.src-nre-0_6_1.repo  = "nre";
   inputs.src-nre-0_6_1.type  = "github";
   
-  inputs."optional_t".dir   = "nimpkgs/o/optional_t";
-  inputs."optional_t".owner = "riinr";
-  inputs."optional_t".ref   = "flake-pinning";
-  inputs."optional_t".repo  = "flake-nimble";
+  inputs."optional_t".owner = "nim-nix-pkgs";
+  inputs."optional_t".ref   = "master";
+  inputs."optional_t".repo  = "optional_t";
   inputs."optional_t".type  = "github";
   inputs."optional_t".inputs.nixpkgs.follows = "nixpkgs";
   inputs."optional_t".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."rocksdb-master".url = "path:./master";
+  inputs."rocksdb-master".dir   = "master";
+  inputs."rocksdb-master".owner = "nim-nix-pkgs";
+  inputs."rocksdb-master".ref   = "master";
+  inputs."rocksdb-master".repo  = "rocksdb";
+  inputs."rocksdb-master".type  = "github";
   inputs."rocksdb-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rocksdb-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

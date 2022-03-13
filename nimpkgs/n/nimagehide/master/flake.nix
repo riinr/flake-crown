@@ -13,26 +13,23 @@
   inputs.src-nimagehide-master.repo  = "nimagehide";
   inputs.src-nimagehide-master.type  = "github";
   
-  inputs."stb_image".dir   = "nimpkgs/s/stb_image";
-  inputs."stb_image".owner = "riinr";
-  inputs."stb_image".ref   = "flake-pinning";
-  inputs."stb_image".repo  = "flake-nimble";
+  inputs."stb_image".owner = "nim-nix-pkgs";
+  inputs."stb_image".ref   = "master";
+  inputs."stb_image".repo  = "stb_image";
   inputs."stb_image".type  = "github";
   inputs."stb_image".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stb_image".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cli_menu".dir   = "nimpkgs/c/cli_menu";
-  inputs."cli_menu".owner = "riinr";
-  inputs."cli_menu".ref   = "flake-pinning";
-  inputs."cli_menu".repo  = "flake-nimble";
+  inputs."cli_menu".owner = "nim-nix-pkgs";
+  inputs."cli_menu".ref   = "master";
+  inputs."cli_menu".repo  = "cli_menu";
   inputs."cli_menu".type  = "github";
   inputs."cli_menu".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cli_menu".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

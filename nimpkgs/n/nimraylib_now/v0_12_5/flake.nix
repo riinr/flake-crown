@@ -13,10 +13,9 @@
   inputs.src-nimraylib_now-v0_12_5.repo  = "nimraylib_now";
   inputs.src-nimraylib_now-v0_12_5.type  = "github";
   
-  inputs."regex".dir   = "nimpkgs/r/regex";
-  inputs."regex".owner = "riinr";
-  inputs."regex".ref   = "flake-pinning";
-  inputs."regex".repo  = "flake-nimble";
+  inputs."regex".owner = "nim-nix-pkgs";
+  inputs."regex".ref   = "master";
+  inputs."regex".repo  = "regex";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

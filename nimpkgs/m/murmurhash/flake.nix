@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."murmurhash-master".url = "path:./master";
+  inputs."murmurhash-master".dir   = "master";
+  inputs."murmurhash-master".owner = "nim-nix-pkgs";
+  inputs."murmurhash-master".ref   = "master";
+  inputs."murmurhash-master".repo  = "murmurhash";
+  inputs."murmurhash-master".type  = "github";
   inputs."murmurhash-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."murmurhash-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."murmurhash-0_3_0".url = "path:./0_3_0";
+  inputs."murmurhash-0_3_0".dir   = "0_3_0";
+  inputs."murmurhash-0_3_0".owner = "nim-nix-pkgs";
+  inputs."murmurhash-0_3_0".ref   = "master";
+  inputs."murmurhash-0_3_0".repo  = "murmurhash";
+  inputs."murmurhash-0_3_0".type  = "github";
   inputs."murmurhash-0_3_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."murmurhash-0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."murmurhash-0_4_0".url = "path:./0_4_0";
+  inputs."murmurhash-0_4_0".dir   = "0_4_0";
+  inputs."murmurhash-0_4_0".owner = "nim-nix-pkgs";
+  inputs."murmurhash-0_4_0".ref   = "master";
+  inputs."murmurhash-0_4_0".repo  = "murmurhash";
+  inputs."murmurhash-0_4_0".type  = "github";
   inputs."murmurhash-0_4_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."murmurhash-0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

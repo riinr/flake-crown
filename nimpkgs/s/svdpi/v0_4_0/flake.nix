@@ -13,10 +13,9 @@
   inputs.src-svdpi-v0_4_0.repo  = "nim-svdpi";
   inputs.src-svdpi-v0_4_0.type  = "github";
   
-  inputs."nimterop".dir   = "nimpkgs/n/nimterop";
-  inputs."nimterop".owner = "riinr";
-  inputs."nimterop".ref   = "flake-pinning";
-  inputs."nimterop".repo  = "flake-nimble";
+  inputs."nimterop".owner = "nim-nix-pkgs";
+  inputs."nimterop".ref   = "master";
+  inputs."nimterop".repo  = "nimterop";
   inputs."nimterop".type  = "github";
   inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

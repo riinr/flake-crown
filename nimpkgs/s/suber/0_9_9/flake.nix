@@ -13,10 +13,9 @@
   inputs.src-suber-0_9_9.repo  = "Suber";
   inputs.src-suber-0_9_9.type  = "github";
   
-  inputs."stashtable".dir   = "nimpkgs/s/stashtable";
-  inputs."stashtable".owner = "riinr";
-  inputs."stashtable".ref   = "flake-pinning";
-  inputs."stashtable".repo  = "flake-nimble";
+  inputs."stashtable".owner = "nim-nix-pkgs";
+  inputs."stashtable".ref   = "master";
+  inputs."stashtable".repo  = "stashtable";
   inputs."stashtable".type  = "github";
   inputs."stashtable".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stashtable".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

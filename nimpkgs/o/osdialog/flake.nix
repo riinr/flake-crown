@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."osdialog-master".url = "path:./master";
+  inputs."osdialog-master".dir   = "master";
+  inputs."osdialog-master".owner = "nim-nix-pkgs";
+  inputs."osdialog-master".ref   = "master";
+  inputs."osdialog-master".repo  = "osdialog";
+  inputs."osdialog-master".type  = "github";
   inputs."osdialog-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."osdialog-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."osdialog-v0_1_0".url = "path:./v0_1_0";
+  inputs."osdialog-v0_1_0".dir   = "v0_1_0";
+  inputs."osdialog-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."osdialog-v0_1_0".ref   = "master";
+  inputs."osdialog-v0_1_0".repo  = "osdialog";
+  inputs."osdialog-v0_1_0".type  = "github";
   inputs."osdialog-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."osdialog-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

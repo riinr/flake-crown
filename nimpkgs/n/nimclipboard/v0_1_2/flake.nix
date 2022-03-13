@@ -13,10 +13,9 @@
   inputs.src-nimclipboard-v0_1_2.repo  = "nimclipboard";
   inputs.src-nimclipboard-v0_1_2.type  = "github";
   
-  inputs."nimgen".dir   = "nimpkgs/n/nimgen";
-  inputs."nimgen".owner = "riinr";
-  inputs."nimgen".ref   = "flake-pinning";
-  inputs."nimgen".repo  = "flake-nimble";
+  inputs."nimgen".owner = "nim-nix-pkgs";
+  inputs."nimgen".ref   = "master";
+  inputs."nimgen".repo  = "nimgen";
   inputs."nimgen".type  = "github";
   inputs."nimgen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimgen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

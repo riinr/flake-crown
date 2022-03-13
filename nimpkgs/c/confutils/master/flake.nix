@@ -13,10 +13,9 @@
   inputs.src-confutils-master.repo  = "nim-confutils";
   inputs.src-confutils-master.type  = "github";
   
-  inputs."stew".dir   = "nimpkgs/s/stew";
-  inputs."stew".owner = "riinr";
-  inputs."stew".ref   = "flake-pinning";
-  inputs."stew".repo  = "flake-nimble";
+  inputs."stew".owner = "nim-nix-pkgs";
+  inputs."stew".ref   = "master";
+  inputs."stew".repo  = "stew";
   inputs."stew".type  = "github";
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

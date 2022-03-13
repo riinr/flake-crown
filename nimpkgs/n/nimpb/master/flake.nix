@@ -13,10 +13,9 @@
   inputs.src-nimpb-master.repo  = "nimpb";
   inputs.src-nimpb-master.type  = "github";
   
-  inputs."nimpb_protoc".dir   = "nimpkgs/n/nimpb_protoc";
-  inputs."nimpb_protoc".owner = "riinr";
-  inputs."nimpb_protoc".ref   = "flake-pinning";
-  inputs."nimpb_protoc".repo  = "flake-nimble";
+  inputs."nimpb_protoc".owner = "nim-nix-pkgs";
+  inputs."nimpb_protoc".ref   = "master";
+  inputs."nimpb_protoc".repo  = "nimpb_protoc";
   inputs."nimpb_protoc".type  = "github";
   inputs."nimpb_protoc".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpb_protoc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,18 +13,16 @@
   inputs.src-hottext-v1_3.repo  = "hottext";
   inputs.src-hottext-v1_3.type  = "other";
   
-  inputs."sdl2".dir   = "nimpkgs/s/sdl2";
-  inputs."sdl2".owner = "riinr";
-  inputs."sdl2".ref   = "flake-pinning";
-  inputs."sdl2".repo  = "flake-nimble";
+  inputs."sdl2".owner = "nim-nix-pkgs";
+  inputs."sdl2".ref   = "master";
+  inputs."sdl2".repo  = "sdl2";
   inputs."sdl2".type  = "github";
   inputs."sdl2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sdl2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."typography".dir   = "nimpkgs/t/typography";
-  inputs."typography".owner = "riinr";
-  inputs."typography".ref   = "flake-pinning";
-  inputs."typography".repo  = "flake-nimble";
+  inputs."typography".owner = "nim-nix-pkgs";
+  inputs."typography".ref   = "master";
+  inputs."typography".repo  = "typography";
   inputs."typography".type  = "github";
   inputs."typography".inputs.nixpkgs.follows = "nixpkgs";
   inputs."typography".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

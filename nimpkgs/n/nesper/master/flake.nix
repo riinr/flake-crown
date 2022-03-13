@@ -13,18 +13,16 @@
   inputs.src-nesper-master.repo  = "nesper";
   inputs.src-nesper-master.type  = "github";
   
-  inputs."msgpack4nim".dir   = "nimpkgs/m/msgpack4nim";
-  inputs."msgpack4nim".owner = "riinr";
-  inputs."msgpack4nim".ref   = "flake-pinning";
-  inputs."msgpack4nim".repo  = "flake-nimble";
+  inputs."msgpack4nim".owner = "nim-nix-pkgs";
+  inputs."msgpack4nim".ref   = "master";
+  inputs."msgpack4nim".repo  = "msgpack4nim";
   inputs."msgpack4nim".type  = "github";
   inputs."msgpack4nim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."msgpack4nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."stew".dir   = "nimpkgs/s/stew";
-  inputs."stew".owner = "riinr";
-  inputs."stew".ref   = "flake-pinning";
-  inputs."stew".repo  = "flake-nimble";
+  inputs."stew".owner = "nim-nix-pkgs";
+  inputs."stew".ref   = "master";
+  inputs."stew".repo  = "stew";
   inputs."stew".type  = "github";
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

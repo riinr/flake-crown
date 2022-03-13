@@ -13,26 +13,23 @@
   inputs.src-presto-master.repo  = "nim-presto";
   inputs.src-presto-master.type  = "github";
   
-  inputs."chronos".dir   = "nimpkgs/c/chronos";
-  inputs."chronos".owner = "riinr";
-  inputs."chronos".ref   = "flake-pinning";
-  inputs."chronos".repo  = "flake-nimble";
+  inputs."chronos".owner = "nim-nix-pkgs";
+  inputs."chronos".ref   = "master";
+  inputs."chronos".repo  = "chronos";
   inputs."chronos".type  = "github";
   inputs."chronos".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."chronicles".dir   = "nimpkgs/c/chronicles";
-  inputs."chronicles".owner = "riinr";
-  inputs."chronicles".ref   = "flake-pinning";
-  inputs."chronicles".repo  = "flake-nimble";
+  inputs."chronicles".owner = "nim-nix-pkgs";
+  inputs."chronicles".ref   = "master";
+  inputs."chronicles".repo  = "chronicles";
   inputs."chronicles".type  = "github";
   inputs."chronicles".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronicles".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."stew".dir   = "nimpkgs/s/stew";
-  inputs."stew".owner = "riinr";
-  inputs."stew".ref   = "flake-pinning";
-  inputs."stew".repo  = "flake-nimble";
+  inputs."stew".owner = "nim-nix-pkgs";
+  inputs."stew".ref   = "master";
+  inputs."stew".repo  = "stew";
   inputs."stew".type  = "github";
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."std_shims-master".url = "path:./master";
+  inputs."std_shims-master".dir   = "master";
+  inputs."std_shims-master".owner = "nim-nix-pkgs";
+  inputs."std_shims-master".ref   = "master";
+  inputs."std_shims-master".repo  = "std_shims";
+  inputs."std_shims-master".type  = "github";
   inputs."std_shims-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."std_shims-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

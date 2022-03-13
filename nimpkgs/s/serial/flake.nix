@@ -7,39 +7,75 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."serial-master".url = "path:./master";
+  inputs."serial-master".dir   = "master";
+  inputs."serial-master".owner = "nim-nix-pkgs";
+  inputs."serial-master".ref   = "master";
+  inputs."serial-master".repo  = "serial";
+  inputs."serial-master".type  = "github";
   inputs."serial-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."serial-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."serial-v0_1_0".url = "path:./v0_1_0";
+  inputs."serial-v0_1_0".dir   = "v0_1_0";
+  inputs."serial-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."serial-v0_1_0".ref   = "master";
+  inputs."serial-v0_1_0".repo  = "serial";
+  inputs."serial-v0_1_0".type  = "github";
   inputs."serial-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."serial-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."serial-v1_0_0".url = "path:./v1_0_0";
+  inputs."serial-v1_0_0".dir   = "v1_0_0";
+  inputs."serial-v1_0_0".owner = "nim-nix-pkgs";
+  inputs."serial-v1_0_0".ref   = "master";
+  inputs."serial-v1_0_0".repo  = "serial";
+  inputs."serial-v1_0_0".type  = "github";
   inputs."serial-v1_0_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."serial-v1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."serial-v1_1_0".url = "path:./v1_1_0";
+  inputs."serial-v1_1_0".dir   = "v1_1_0";
+  inputs."serial-v1_1_0".owner = "nim-nix-pkgs";
+  inputs."serial-v1_1_0".ref   = "master";
+  inputs."serial-v1_1_0".repo  = "serial";
+  inputs."serial-v1_1_0".type  = "github";
   inputs."serial-v1_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."serial-v1_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."serial-v1_1_1".url = "path:./v1_1_1";
+  inputs."serial-v1_1_1".dir   = "v1_1_1";
+  inputs."serial-v1_1_1".owner = "nim-nix-pkgs";
+  inputs."serial-v1_1_1".ref   = "master";
+  inputs."serial-v1_1_1".repo  = "serial";
+  inputs."serial-v1_1_1".type  = "github";
   inputs."serial-v1_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."serial-v1_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."serial-v1_1_2".url = "path:./v1_1_2";
+  inputs."serial-v1_1_2".dir   = "v1_1_2";
+  inputs."serial-v1_1_2".owner = "nim-nix-pkgs";
+  inputs."serial-v1_1_2".ref   = "master";
+  inputs."serial-v1_1_2".repo  = "serial";
+  inputs."serial-v1_1_2".type  = "github";
   inputs."serial-v1_1_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."serial-v1_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."serial-v1_1_3".url = "path:./v1_1_3";
+  inputs."serial-v1_1_3".dir   = "v1_1_3";
+  inputs."serial-v1_1_3".owner = "nim-nix-pkgs";
+  inputs."serial-v1_1_3".ref   = "master";
+  inputs."serial-v1_1_3".repo  = "serial";
+  inputs."serial-v1_1_3".type  = "github";
   inputs."serial-v1_1_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."serial-v1_1_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."serial-v1_1_4".url = "path:./v1_1_4";
+  inputs."serial-v1_1_4".dir   = "v1_1_4";
+  inputs."serial-v1_1_4".owner = "nim-nix-pkgs";
+  inputs."serial-v1_1_4".ref   = "master";
+  inputs."serial-v1_1_4".repo  = "serial";
+  inputs."serial-v1_1_4".type  = "github";
   inputs."serial-v1_1_4".inputs.nixpkgs.follows = "nixpkgs";
   inputs."serial-v1_1_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."serial-v1_1_5".url = "path:./v1_1_5";
+  inputs."serial-v1_1_5".dir   = "v1_1_5";
+  inputs."serial-v1_1_5".owner = "nim-nix-pkgs";
+  inputs."serial-v1_1_5".ref   = "master";
+  inputs."serial-v1_1_5".repo  = "serial";
+  inputs."serial-v1_1_5".type  = "github";
   inputs."serial-v1_1_5".inputs.nixpkgs.follows = "nixpkgs";
   inputs."serial-v1_1_5".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

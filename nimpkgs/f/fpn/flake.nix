@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."fpn-master".url = "path:./master";
+  inputs."fpn-master".dir   = "master";
+  inputs."fpn-master".owner = "nim-nix-pkgs";
+  inputs."fpn-master".ref   = "master";
+  inputs."fpn-master".repo  = "fpn";
+  inputs."fpn-master".type  = "github";
   inputs."fpn-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fpn-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."fpn-v0_0_1".url = "path:./v0_0_1";
+  inputs."fpn-v0_0_1".dir   = "v0_0_1";
+  inputs."fpn-v0_0_1".owner = "nim-nix-pkgs";
+  inputs."fpn-v0_0_1".ref   = "master";
+  inputs."fpn-v0_0_1".repo  = "fpn";
+  inputs."fpn-v0_0_1".type  = "github";
   inputs."fpn-v0_0_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fpn-v0_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."fpn-v0_1_0".url = "path:./v0_1_0";
+  inputs."fpn-v0_1_0".dir   = "v0_1_0";
+  inputs."fpn-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."fpn-v0_1_0".ref   = "master";
+  inputs."fpn-v0_1_0".repo  = "fpn";
+  inputs."fpn-v0_1_0".type  = "github";
   inputs."fpn-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fpn-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

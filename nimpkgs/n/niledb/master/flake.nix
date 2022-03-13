@@ -13,10 +13,9 @@
   inputs.src-niledb-master.repo  = "niledb";
   inputs.src-niledb-master.type  = "github";
   
-  inputs."serializetools".dir   = "nimpkgs/s/serializetools";
-  inputs."serializetools".owner = "riinr";
-  inputs."serializetools".ref   = "flake-pinning";
-  inputs."serializetools".repo  = "flake-nimble";
+  inputs."serializetools".owner = "nim-nix-pkgs";
+  inputs."serializetools".ref   = "master";
+  inputs."serializetools".repo  = "serializetools";
   inputs."serializetools".type  = "github";
   inputs."serializetools".inputs.nixpkgs.follows = "nixpkgs";
   inputs."serializetools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."libgraph-master".url = "path:./master";
+  inputs."libgraph-master".dir   = "master";
+  inputs."libgraph-master".owner = "nim-nix-pkgs";
+  inputs."libgraph-master".ref   = "master";
+  inputs."libgraph-master".repo  = "libgraph";
+  inputs."libgraph-master".type  = "github";
   inputs."libgraph-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libgraph-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."lrparser-master".url = "path:./master";
+  inputs."lrparser-master".dir   = "master";
+  inputs."lrparser-master".owner = "nim-nix-pkgs";
+  inputs."lrparser-master".ref   = "master";
+  inputs."lrparser-master".repo  = "lrparser";
+  inputs."lrparser-master".type  = "github";
   inputs."lrparser-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."lrparser-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

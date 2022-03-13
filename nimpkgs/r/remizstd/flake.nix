@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."remizstd-v0_1_1".url = "path:./v0_1_1";
+  inputs."remizstd-v0_1_1".dir   = "v0_1_1";
+  inputs."remizstd-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."remizstd-v0_1_1".ref   = "master";
+  inputs."remizstd-v0_1_1".repo  = "remizstd";
+  inputs."remizstd-v0_1_1".type  = "github";
   inputs."remizstd-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."remizstd-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

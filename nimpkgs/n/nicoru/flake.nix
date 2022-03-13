@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nicoru-develop".url = "path:./develop";
+  inputs."nicoru-develop".dir   = "develop";
+  inputs."nicoru-develop".owner = "nim-nix-pkgs";
+  inputs."nicoru-develop".ref   = "master";
+  inputs."nicoru-develop".repo  = "nicoru";
+  inputs."nicoru-develop".type  = "github";
   inputs."nicoru-develop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nicoru-develop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nicoru-main".url = "path:./main";
+  inputs."nicoru-main".dir   = "main";
+  inputs."nicoru-main".owner = "nim-nix-pkgs";
+  inputs."nicoru-main".ref   = "master";
+  inputs."nicoru-main".repo  = "nicoru";
+  inputs."nicoru-main".type  = "github";
   inputs."nicoru-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nicoru-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

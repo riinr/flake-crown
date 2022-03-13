@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."strslice-master".url = "path:./master";
+  inputs."strslice-master".dir   = "master";
+  inputs."strslice-master".owner = "nim-nix-pkgs";
+  inputs."strslice-master".ref   = "master";
+  inputs."strslice-master".repo  = "strslice";
+  inputs."strslice-master".type  = "github";
   inputs."strslice-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."strslice-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."strslice-v0_2_0".url = "path:./v0_2_0";
+  inputs."strslice-v0_2_0".dir   = "v0_2_0";
+  inputs."strslice-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."strslice-v0_2_0".ref   = "master";
+  inputs."strslice-v0_2_0".repo  = "strslice";
+  inputs."strslice-v0_2_0".type  = "github";
   inputs."strslice-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."strslice-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."strslice-v0_2_1".url = "path:./v0_2_1";
+  inputs."strslice-v0_2_1".dir   = "v0_2_1";
+  inputs."strslice-v0_2_1".owner = "nim-nix-pkgs";
+  inputs."strslice-v0_2_1".ref   = "master";
+  inputs."strslice-v0_2_1".repo  = "strslice";
+  inputs."strslice-v0_2_1".type  = "github";
   inputs."strslice-v0_2_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."strslice-v0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

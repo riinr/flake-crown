@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nestegg-master".url = "path:./master";
+  inputs."nestegg-master".dir   = "master";
+  inputs."nestegg-master".owner = "nim-nix-pkgs";
+  inputs."nestegg-master".ref   = "master";
+  inputs."nestegg-master".repo  = "nestegg";
+  inputs."nestegg-master".type  = "github";
   inputs."nestegg-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nestegg-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

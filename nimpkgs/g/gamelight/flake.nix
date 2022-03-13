@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."gamelight-master".url = "path:./master";
+  inputs."gamelight-master".dir   = "master";
+  inputs."gamelight-master".owner = "nim-nix-pkgs";
+  inputs."gamelight-master".ref   = "master";
+  inputs."gamelight-master".repo  = "gamelight";
+  inputs."gamelight-master".type  = "github";
   inputs."gamelight-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gamelight-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

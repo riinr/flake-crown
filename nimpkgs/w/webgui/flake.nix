@@ -7,31 +7,59 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."webgui-master".url = "path:./master";
+  inputs."webgui-master".dir   = "master";
+  inputs."webgui-master".owner = "nim-nix-pkgs";
+  inputs."webgui-master".ref   = "master";
+  inputs."webgui-master".repo  = "webgui";
+  inputs."webgui-master".type  = "github";
   inputs."webgui-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."webgui-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."webgui-0_2_0".url = "path:./0_2_0";
+  inputs."webgui-0_2_0".dir   = "0_2_0";
+  inputs."webgui-0_2_0".owner = "nim-nix-pkgs";
+  inputs."webgui-0_2_0".ref   = "master";
+  inputs."webgui-0_2_0".repo  = "webgui";
+  inputs."webgui-0_2_0".type  = "github";
   inputs."webgui-0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."webgui-0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."webgui-0_4_0".url = "path:./0_4_0";
+  inputs."webgui-0_4_0".dir   = "0_4_0";
+  inputs."webgui-0_4_0".owner = "nim-nix-pkgs";
+  inputs."webgui-0_4_0".ref   = "master";
+  inputs."webgui-0_4_0".repo  = "webgui";
+  inputs."webgui-0_4_0".type  = "github";
   inputs."webgui-0_4_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."webgui-0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."webgui-0_5_0".url = "path:./0_5_0";
+  inputs."webgui-0_5_0".dir   = "0_5_0";
+  inputs."webgui-0_5_0".owner = "nim-nix-pkgs";
+  inputs."webgui-0_5_0".ref   = "master";
+  inputs."webgui-0_5_0".repo  = "webgui";
+  inputs."webgui-0_5_0".type  = "github";
   inputs."webgui-0_5_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."webgui-0_5_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."webgui-0_6_0".url = "path:./0_6_0";
+  inputs."webgui-0_6_0".dir   = "0_6_0";
+  inputs."webgui-0_6_0".owner = "nim-nix-pkgs";
+  inputs."webgui-0_6_0".ref   = "master";
+  inputs."webgui-0_6_0".repo  = "webgui";
+  inputs."webgui-0_6_0".type  = "github";
   inputs."webgui-0_6_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."webgui-0_6_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."webgui-0_8_0".url = "path:./0_8_0";
+  inputs."webgui-0_8_0".dir   = "0_8_0";
+  inputs."webgui-0_8_0".owner = "nim-nix-pkgs";
+  inputs."webgui-0_8_0".ref   = "master";
+  inputs."webgui-0_8_0".repo  = "webgui";
+  inputs."webgui-0_8_0".type  = "github";
   inputs."webgui-0_8_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."webgui-0_8_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."webgui-0_9_0".url = "path:./0_9_0";
+  inputs."webgui-0_9_0".dir   = "0_9_0";
+  inputs."webgui-0_9_0".owner = "nim-nix-pkgs";
+  inputs."webgui-0_9_0".ref   = "master";
+  inputs."webgui-0_9_0".repo  = "webgui";
+  inputs."webgui-0_9_0".type  = "github";
   inputs."webgui-0_9_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."webgui-0_9_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

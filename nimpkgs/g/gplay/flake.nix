@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."gplay-master".url = "path:./master";
+  inputs."gplay-master".dir   = "master";
+  inputs."gplay-master".owner = "nim-nix-pkgs";
+  inputs."gplay-master".ref   = "master";
+  inputs."gplay-master".repo  = "gplay";
+  inputs."gplay-master".type  = "github";
   inputs."gplay-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gplay-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."fastcgi-master".url = "path:./master";
+  inputs."fastcgi-master".dir   = "master";
+  inputs."fastcgi-master".owner = "nim-nix-pkgs";
+  inputs."fastcgi-master".ref   = "master";
+  inputs."fastcgi-master".repo  = "fastcgi";
+  inputs."fastcgi-master".type  = "github";
   inputs."fastcgi-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fastcgi-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."fastcgi-0_1_0".url = "path:./0_1_0";
+  inputs."fastcgi-0_1_0".dir   = "0_1_0";
+  inputs."fastcgi-0_1_0".owner = "nim-nix-pkgs";
+  inputs."fastcgi-0_1_0".ref   = "master";
+  inputs."fastcgi-0_1_0".repo  = "fastcgi";
+  inputs."fastcgi-0_1_0".type  = "github";
   inputs."fastcgi-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fastcgi-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

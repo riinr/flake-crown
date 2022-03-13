@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."cassandra-master".url = "path:./master";
+  inputs."cassandra-master".dir   = "master";
+  inputs."cassandra-master".owner = "nim-nix-pkgs";
+  inputs."cassandra-master".ref   = "master";
+  inputs."cassandra-master".repo  = "cassandra";
+  inputs."cassandra-master".type  = "github";
   inputs."cassandra-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cassandra-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

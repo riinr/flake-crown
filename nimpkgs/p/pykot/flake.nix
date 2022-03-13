@@ -7,31 +7,59 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."pykot-master".url = "path:./master";
+  inputs."pykot-master".dir   = "master";
+  inputs."pykot-master".owner = "nim-nix-pkgs";
+  inputs."pykot-master".ref   = "master";
+  inputs."pykot-master".repo  = "pykot";
+  inputs."pykot-master".type  = "github";
   inputs."pykot-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pykot-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."pykot-v0_1_0".url = "path:./v0_1_0";
+  inputs."pykot-v0_1_0".dir   = "v0_1_0";
+  inputs."pykot-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."pykot-v0_1_0".ref   = "master";
+  inputs."pykot-v0_1_0".repo  = "pykot";
+  inputs."pykot-v0_1_0".type  = "github";
   inputs."pykot-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pykot-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."pykot-v0_1_1".url = "path:./v0_1_1";
+  inputs."pykot-v0_1_1".dir   = "v0_1_1";
+  inputs."pykot-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."pykot-v0_1_1".ref   = "master";
+  inputs."pykot-v0_1_1".repo  = "pykot";
+  inputs."pykot-v0_1_1".type  = "github";
   inputs."pykot-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pykot-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."pykot-v0_1_2".url = "path:./v0_1_2";
+  inputs."pykot-v0_1_2".dir   = "v0_1_2";
+  inputs."pykot-v0_1_2".owner = "nim-nix-pkgs";
+  inputs."pykot-v0_1_2".ref   = "master";
+  inputs."pykot-v0_1_2".repo  = "pykot";
+  inputs."pykot-v0_1_2".type  = "github";
   inputs."pykot-v0_1_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pykot-v0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."pykot-v0_1_3".url = "path:./v0_1_3";
+  inputs."pykot-v0_1_3".dir   = "v0_1_3";
+  inputs."pykot-v0_1_3".owner = "nim-nix-pkgs";
+  inputs."pykot-v0_1_3".ref   = "master";
+  inputs."pykot-v0_1_3".repo  = "pykot";
+  inputs."pykot-v0_1_3".type  = "github";
   inputs."pykot-v0_1_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pykot-v0_1_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."pykot-v0_2_0".url = "path:./v0_2_0";
+  inputs."pykot-v0_2_0".dir   = "v0_2_0";
+  inputs."pykot-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."pykot-v0_2_0".ref   = "master";
+  inputs."pykot-v0_2_0".repo  = "pykot";
+  inputs."pykot-v0_2_0".type  = "github";
   inputs."pykot-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pykot-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."pykot-v0_2_1".url = "path:./v0_2_1";
+  inputs."pykot-v0_2_1".dir   = "v0_2_1";
+  inputs."pykot-v0_2_1".owner = "nim-nix-pkgs";
+  inputs."pykot-v0_2_1".ref   = "master";
+  inputs."pykot-v0_2_1".repo  = "pykot";
+  inputs."pykot-v0_2_1".type  = "github";
   inputs."pykot-v0_2_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pykot-v0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

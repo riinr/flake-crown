@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."astronimy-master".url = "path:./master";
+  inputs."astronimy-master".dir   = "master";
+  inputs."astronimy-master".owner = "nim-nix-pkgs";
+  inputs."astronimy-master".ref   = "master";
+  inputs."astronimy-master".repo  = "astronimy";
+  inputs."astronimy-master".type  = "github";
   inputs."astronimy-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."astronimy-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

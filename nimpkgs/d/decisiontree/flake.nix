@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."decisiontree-master".url = "path:./master";
+  inputs."decisiontree-master".dir   = "master";
+  inputs."decisiontree-master".owner = "nim-nix-pkgs";
+  inputs."decisiontree-master".ref   = "master";
+  inputs."decisiontree-master".repo  = "decisiontree";
+  inputs."decisiontree-master".type  = "github";
   inputs."decisiontree-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."decisiontree-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

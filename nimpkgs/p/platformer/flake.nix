@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."platformer-master".url = "path:./master";
+  inputs."platformer-master".dir   = "master";
+  inputs."platformer-master".owner = "nim-nix-pkgs";
+  inputs."platformer-master".ref   = "master";
+  inputs."platformer-master".repo  = "platformer";
+  inputs."platformer-master".type  = "github";
   inputs."platformer-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."platformer-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

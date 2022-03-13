@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."omnilog-master".url = "path:./master";
+  inputs."omnilog-master".dir   = "master";
+  inputs."omnilog-master".owner = "nim-nix-pkgs";
+  inputs."omnilog-master".ref   = "master";
+  inputs."omnilog-master".repo  = "omnilog";
+  inputs."omnilog-master".type  = "github";
   inputs."omnilog-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."omnilog-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

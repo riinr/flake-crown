@@ -13,34 +13,30 @@
   inputs.src-pixie-0_0_3.repo  = "pixie";
   inputs.src-pixie-0_0_3.type  = "github";
   
-  inputs."vmath".dir   = "nimpkgs/v/vmath";
-  inputs."vmath".owner = "riinr";
-  inputs."vmath".ref   = "flake-pinning";
-  inputs."vmath".repo  = "flake-nimble";
+  inputs."vmath".owner = "nim-nix-pkgs";
+  inputs."vmath".ref   = "master";
+  inputs."vmath".repo  = "vmath";
   inputs."vmath".type  = "github";
   inputs."vmath".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."chroma".dir   = "nimpkgs/c/chroma";
-  inputs."chroma".owner = "riinr";
-  inputs."chroma".ref   = "flake-pinning";
-  inputs."chroma".repo  = "flake-nimble";
+  inputs."chroma".owner = "nim-nix-pkgs";
+  inputs."chroma".ref   = "master";
+  inputs."chroma".repo  = "chroma";
   inputs."chroma".type  = "github";
   inputs."chroma".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chroma".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."zippy".dir   = "nimpkgs/z/zippy";
-  inputs."zippy".owner = "riinr";
-  inputs."zippy".ref   = "flake-pinning";
-  inputs."zippy".repo  = "flake-nimble";
+  inputs."zippy".owner = "nim-nix-pkgs";
+  inputs."zippy".ref   = "master";
+  inputs."zippy".repo  = "zippy";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."flatty".dir   = "nimpkgs/f/flatty";
-  inputs."flatty".owner = "riinr";
-  inputs."flatty".ref   = "flake-pinning";
-  inputs."flatty".repo  = "flake-nimble";
+  inputs."flatty".owner = "nim-nix-pkgs";
+  inputs."flatty".ref   = "master";
+  inputs."flatty".repo  = "flatty";
   inputs."flatty".type  = "github";
   inputs."flatty".inputs.nixpkgs.follows = "nixpkgs";
   inputs."flatty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

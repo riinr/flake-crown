@@ -13,18 +13,16 @@
   inputs.src-nmqtt-v1_0_4.repo  = "nmqtt";
   inputs.src-nmqtt-v1_0_4.type  = "github";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."bcrypt".dir   = "nimpkgs/b/bcrypt";
-  inputs."bcrypt".owner = "riinr";
-  inputs."bcrypt".ref   = "flake-pinning";
-  inputs."bcrypt".repo  = "flake-nimble";
+  inputs."bcrypt".owner = "nim-nix-pkgs";
+  inputs."bcrypt".ref   = "master";
+  inputs."bcrypt".repo  = "bcrypt";
   inputs."bcrypt".type  = "github";
   inputs."bcrypt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bcrypt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

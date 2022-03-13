@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."tissue-master".url = "path:./master";
+  inputs."tissue-master".dir   = "master";
+  inputs."tissue-master".owner = "nim-nix-pkgs";
+  inputs."tissue-master".ref   = "master";
+  inputs."tissue-master".repo  = "tissue";
+  inputs."tissue-master".type  = "github";
   inputs."tissue-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tissue-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

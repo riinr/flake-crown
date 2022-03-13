@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."quickjs4nim-master".url = "path:./master";
+  inputs."quickjs4nim-master".dir   = "master";
+  inputs."quickjs4nim-master".owner = "nim-nix-pkgs";
+  inputs."quickjs4nim-master".ref   = "master";
+  inputs."quickjs4nim-master".repo  = "quickjs4nim";
+  inputs."quickjs4nim-master".type  = "github";
   inputs."quickjs4nim-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."quickjs4nim-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

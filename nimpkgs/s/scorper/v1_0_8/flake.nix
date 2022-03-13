@@ -13,42 +13,37 @@
   inputs.src-scorper-v1_0_8.repo  = "scorper";
   inputs.src-scorper-v1_0_8.type  = "github";
   
-  inputs."chronos".dir   = "nimpkgs/c/chronos";
-  inputs."chronos".owner = "riinr";
-  inputs."chronos".ref   = "flake-pinning";
-  inputs."chronos".repo  = "flake-nimble";
+  inputs."chronos".owner = "nim-nix-pkgs";
+  inputs."chronos".ref   = "master";
+  inputs."chronos".repo  = "chronos";
   inputs."chronos".type  = "github";
   inputs."chronos".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."npeg".dir   = "nimpkgs/n/npeg";
-  inputs."npeg".owner = "riinr";
-  inputs."npeg".ref   = "flake-pinning";
-  inputs."npeg".repo  = "flake-nimble";
+  inputs."npeg".owner = "nim-nix-pkgs";
+  inputs."npeg".ref   = "master";
+  inputs."npeg".repo  = "npeg";
   inputs."npeg".type  = "github";
   inputs."npeg".inputs.nixpkgs.follows = "nixpkgs";
   inputs."npeg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/nortero-code/rx-nim.git".dir   = "nimpkgs/h/https://github.com/nortero-code/rx-nim.git";
-  inputs."https://github.com/nortero-code/rx-nim.git".owner = "riinr";
-  inputs."https://github.com/nortero-code/rx-nim.git".ref   = "flake-pinning";
-  inputs."https://github.com/nortero-code/rx-nim.git".repo  = "flake-nimble";
+  inputs."https://github.com/nortero-code/rx-nim.git".owner = "nim-nix-pkgs";
+  inputs."https://github.com/nortero-code/rx-nim.git".ref   = "master";
+  inputs."https://github.com/nortero-code/rx-nim.git".repo  = "https://github.com/nortero-code/rx-nim.git";
   inputs."https://github.com/nortero-code/rx-nim.git".type  = "github";
   inputs."https://github.com/nortero-code/rx-nim.git".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/nortero-code/rx-nim.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."zippy".dir   = "nimpkgs/z/zippy";
-  inputs."zippy".owner = "riinr";
-  inputs."zippy".ref   = "flake-pinning";
-  inputs."zippy".repo  = "flake-nimble";
+  inputs."zippy".owner = "nim-nix-pkgs";
+  inputs."zippy".ref   = "master";
+  inputs."zippy".repo  = "zippy";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."result".dir   = "nimpkgs/r/result";
-  inputs."result".owner = "riinr";
-  inputs."result".ref   = "flake-pinning";
-  inputs."result".repo  = "flake-nimble";
+  inputs."result".owner = "nim-nix-pkgs";
+  inputs."result".ref   = "master";
+  inputs."result".repo  = "result";
   inputs."result".type  = "github";
   inputs."result".inputs.nixpkgs.follows = "nixpkgs";
   inputs."result".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

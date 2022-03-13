@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."gentabs-master".url = "path:./master";
+  inputs."gentabs-master".dir   = "master";
+  inputs."gentabs-master".owner = "nim-nix-pkgs";
+  inputs."gentabs-master".ref   = "master";
+  inputs."gentabs-master".repo  = "gentabs";
+  inputs."gentabs-master".type  = "github";
   inputs."gentabs-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gentabs-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

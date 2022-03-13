@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."surfing-develop".url = "path:./develop";
+  inputs."surfing-develop".dir   = "develop";
+  inputs."surfing-develop".owner = "nim-nix-pkgs";
+  inputs."surfing-develop".ref   = "master";
+  inputs."surfing-develop".repo  = "surfing";
+  inputs."surfing-develop".type  = "github";
   inputs."surfing-develop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."surfing-develop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."surfing-main".url = "path:./main";
+  inputs."surfing-main".dir   = "main";
+  inputs."surfing-main".owner = "nim-nix-pkgs";
+  inputs."surfing-main".ref   = "master";
+  inputs."surfing-main".repo  = "surfing";
+  inputs."surfing-main".type  = "github";
   inputs."surfing-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."surfing-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."surfing-ver_0_1_0".url = "path:./ver_0_1_0";
+  inputs."surfing-ver_0_1_0".dir   = "ver_0_1_0";
+  inputs."surfing-ver_0_1_0".owner = "nim-nix-pkgs";
+  inputs."surfing-ver_0_1_0".ref   = "master";
+  inputs."surfing-ver_0_1_0".repo  = "surfing";
+  inputs."surfing-ver_0_1_0".type  = "github";
   inputs."surfing-ver_0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."surfing-ver_0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -13,10 +13,9 @@
   inputs.src-sigv4-1_0_1.repo  = "sigv4";
   inputs.src-sigv4-1_0_1.type  = "github";
   
-  inputs."nimcrypto".dir   = "nimpkgs/n/nimcrypto";
-  inputs."nimcrypto".owner = "riinr";
-  inputs."nimcrypto".ref   = "flake-pinning";
-  inputs."nimcrypto".repo  = "flake-nimble";
+  inputs."nimcrypto".owner = "nim-nix-pkgs";
+  inputs."nimcrypto".ref   = "master";
+  inputs."nimcrypto".repo  = "nimcrypto";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

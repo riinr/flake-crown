@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."faststreams-master".url = "path:./master";
+  inputs."faststreams-master".dir   = "master";
+  inputs."faststreams-master".owner = "nim-nix-pkgs";
+  inputs."faststreams-master".ref   = "master";
+  inputs."faststreams-master".repo  = "faststreams";
+  inputs."faststreams-master".type  = "github";
   inputs."faststreams-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."faststreams-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

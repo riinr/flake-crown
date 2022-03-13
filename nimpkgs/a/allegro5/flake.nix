@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."allegro5-master".url = "path:./master";
+  inputs."allegro5-master".dir   = "master";
+  inputs."allegro5-master".owner = "nim-nix-pkgs";
+  inputs."allegro5-master".ref   = "master";
+  inputs."allegro5-master".repo  = "allegro5";
+  inputs."allegro5-master".type  = "github";
   inputs."allegro5-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."allegro5-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."allegro5-v1_0".url = "path:./v1_0";
+  inputs."allegro5-v1_0".dir   = "v1_0";
+  inputs."allegro5-v1_0".owner = "nim-nix-pkgs";
+  inputs."allegro5-v1_0".ref   = "master";
+  inputs."allegro5-v1_0".repo  = "allegro5";
+  inputs."allegro5-v1_0".type  = "github";
   inputs."allegro5-v1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."allegro5-v1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

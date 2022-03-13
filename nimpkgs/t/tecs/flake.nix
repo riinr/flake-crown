@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."tecs-master".url = "path:./master";
+  inputs."tecs-master".dir   = "master";
+  inputs."tecs-master".owner = "nim-nix-pkgs";
+  inputs."tecs-master".ref   = "master";
+  inputs."tecs-master".repo  = "tecs";
+  inputs."tecs-master".type  = "github";
   inputs."tecs-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tecs-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."tecs-v0_1".url = "path:./v0_1";
+  inputs."tecs-v0_1".dir   = "v0_1";
+  inputs."tecs-v0_1".owner = "nim-nix-pkgs";
+  inputs."tecs-v0_1".ref   = "master";
+  inputs."tecs-v0_1".repo  = "tecs";
+  inputs."tecs-v0_1".type  = "github";
   inputs."tecs-v0_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tecs-v0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

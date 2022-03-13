@@ -13,10 +13,9 @@
   inputs.src-nancy-master.repo  = "nancy";
   inputs.src-nancy-master.type  = "github";
   
-  inputs."ansiparse".dir   = "nimpkgs/a/ansiparse";
-  inputs."ansiparse".owner = "riinr";
-  inputs."ansiparse".ref   = "flake-pinning";
-  inputs."ansiparse".repo  = "flake-nimble";
+  inputs."ansiparse".owner = "nim-nix-pkgs";
+  inputs."ansiparse".ref   = "master";
+  inputs."ansiparse".repo  = "ansiparse";
   inputs."ansiparse".type  = "github";
   inputs."ansiparse".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ansiparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."i3ipc-master".url = "path:./master";
+  inputs."i3ipc-master".dir   = "master";
+  inputs."i3ipc-master".owner = "nim-nix-pkgs";
+  inputs."i3ipc-master".ref   = "master";
+  inputs."i3ipc-master".repo  = "i3ipc";
+  inputs."i3ipc-master".type  = "github";
   inputs."i3ipc-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."i3ipc-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

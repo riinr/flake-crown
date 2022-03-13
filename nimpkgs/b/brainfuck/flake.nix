@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."brainfuck-master".url = "path:./master";
+  inputs."brainfuck-master".dir   = "master";
+  inputs."brainfuck-master".owner = "nim-nix-pkgs";
+  inputs."brainfuck-master".ref   = "master";
+  inputs."brainfuck-master".repo  = "brainfuck";
+  inputs."brainfuck-master".type  = "github";
   inputs."brainfuck-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."brainfuck-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

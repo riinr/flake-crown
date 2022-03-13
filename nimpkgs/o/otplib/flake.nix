@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."otplib-master".url = "path:./master";
+  inputs."otplib-master".dir   = "master";
+  inputs."otplib-master".owner = "nim-nix-pkgs";
+  inputs."otplib-master".ref   = "master";
+  inputs."otplib-master".repo  = "otplib";
+  inputs."otplib-master".type  = "github";
   inputs."otplib-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."otplib-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -13,34 +13,30 @@
   inputs.src-protobuf_serialization-master.repo  = "nim-protobuf-serialization";
   inputs.src-protobuf_serialization-master.type  = "github";
   
-  inputs."stew".dir   = "nimpkgs/s/stew";
-  inputs."stew".owner = "riinr";
-  inputs."stew".ref   = "flake-pinning";
-  inputs."stew".repo  = "flake-nimble";
+  inputs."stew".owner = "nim-nix-pkgs";
+  inputs."stew".ref   = "master";
+  inputs."stew".repo  = "stew";
   inputs."stew".type  = "github";
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."faststreams".dir   = "nimpkgs/f/faststreams";
-  inputs."faststreams".owner = "riinr";
-  inputs."faststreams".ref   = "flake-pinning";
-  inputs."faststreams".repo  = "flake-nimble";
+  inputs."faststreams".owner = "nim-nix-pkgs";
+  inputs."faststreams".ref   = "master";
+  inputs."faststreams".repo  = "faststreams";
   inputs."faststreams".type  = "github";
   inputs."faststreams".inputs.nixpkgs.follows = "nixpkgs";
   inputs."faststreams".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."serialization".dir   = "nimpkgs/s/serialization";
-  inputs."serialization".owner = "riinr";
-  inputs."serialization".ref   = "flake-pinning";
-  inputs."serialization".repo  = "flake-nimble";
+  inputs."serialization".owner = "nim-nix-pkgs";
+  inputs."serialization".ref   = "master";
+  inputs."serialization".repo  = "serialization";
   inputs."serialization".type  = "github";
   inputs."serialization".inputs.nixpkgs.follows = "nixpkgs";
   inputs."serialization".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."combparser".dir   = "nimpkgs/c/combparser";
-  inputs."combparser".owner = "riinr";
-  inputs."combparser".ref   = "flake-pinning";
-  inputs."combparser".repo  = "flake-nimble";
+  inputs."combparser".owner = "nim-nix-pkgs";
+  inputs."combparser".ref   = "master";
+  inputs."combparser".repo  = "combparser";
   inputs."combparser".type  = "github";
   inputs."combparser".inputs.nixpkgs.follows = "nixpkgs";
   inputs."combparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

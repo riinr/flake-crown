@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."ratel-master".url = "path:./master";
+  inputs."ratel-master".dir   = "master";
+  inputs."ratel-master".owner = "nim-nix-pkgs";
+  inputs."ratel-master".ref   = "master";
+  inputs."ratel-master".repo  = "ratel";
+  inputs."ratel-master".type  = "github";
   inputs."ratel-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ratel-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."ratel-v0_2_0".url = "path:./v0_2_0";
+  inputs."ratel-v0_2_0".dir   = "v0_2_0";
+  inputs."ratel-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."ratel-v0_2_0".ref   = "master";
+  inputs."ratel-v0_2_0".repo  = "ratel";
+  inputs."ratel-v0_2_0".type  = "github";
   inputs."ratel-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ratel-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

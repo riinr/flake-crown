@@ -13,18 +13,16 @@
   inputs.src-ndns-main.repo  = "nim-ndns";
   inputs.src-ndns-main.type  = "github";
   
-  inputs."dnsprotocol".dir   = "nimpkgs/d/dnsprotocol";
-  inputs."dnsprotocol".owner = "riinr";
-  inputs."dnsprotocol".ref   = "flake-pinning";
-  inputs."dnsprotocol".repo  = "flake-nimble";
+  inputs."dnsprotocol".owner = "nim-nix-pkgs";
+  inputs."dnsprotocol".ref   = "master";
+  inputs."dnsprotocol".repo  = "dnsprotocol";
   inputs."dnsprotocol".type  = "github";
   inputs."dnsprotocol".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dnsprotocol".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."stew".dir   = "nimpkgs/s/stew";
-  inputs."stew".owner = "riinr";
-  inputs."stew".ref   = "flake-pinning";
-  inputs."stew".repo  = "flake-nimble";
+  inputs."stew".owner = "nim-nix-pkgs";
+  inputs."stew".ref   = "master";
+  inputs."stew".repo  = "stew";
   inputs."stew".type  = "github";
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

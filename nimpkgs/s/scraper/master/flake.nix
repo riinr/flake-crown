@@ -13,10 +13,9 @@
   inputs.src-scraper-master.repo  = "scraper";
   inputs.src-scraper-master.type  = "gitlab";
   
-  inputs."https://github.com/thisago/findxml".dir   = "nimpkgs/h/https://github.com/thisago/findxml";
-  inputs."https://github.com/thisago/findxml".owner = "riinr";
-  inputs."https://github.com/thisago/findxml".ref   = "flake-pinning";
-  inputs."https://github.com/thisago/findxml".repo  = "flake-nimble";
+  inputs."https://github.com/thisago/findxml".owner = "nim-nix-pkgs";
+  inputs."https://github.com/thisago/findxml".ref   = "master";
+  inputs."https://github.com/thisago/findxml".repo  = "https://github.com/thisago/findxml";
   inputs."https://github.com/thisago/findxml".type  = "github";
   inputs."https://github.com/thisago/findxml".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/thisago/findxml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

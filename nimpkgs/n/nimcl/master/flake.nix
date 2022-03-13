@@ -13,10 +13,9 @@
   inputs.src-nimcl-master.repo  = "nimcl";
   inputs.src-nimcl-master.type  = "github";
   
-  inputs."opencl".dir   = "nimpkgs/o/opencl";
-  inputs."opencl".owner = "riinr";
-  inputs."opencl".ref   = "flake-pinning";
-  inputs."opencl".repo  = "flake-nimble";
+  inputs."opencl".owner = "nim-nix-pkgs";
+  inputs."opencl".ref   = "master";
+  inputs."opencl".repo  = "opencl";
   inputs."opencl".type  = "github";
   inputs."opencl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."opencl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

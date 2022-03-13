@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."zxcvbn-master".url = "path:./master";
+  inputs."zxcvbn-master".dir   = "master";
+  inputs."zxcvbn-master".owner = "nim-nix-pkgs";
+  inputs."zxcvbn-master".ref   = "master";
+  inputs."zxcvbn-master".repo  = "zxcvbn";
+  inputs."zxcvbn-master".type  = "github";
   inputs."zxcvbn-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zxcvbn-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

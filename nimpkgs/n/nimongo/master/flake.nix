@@ -13,10 +13,9 @@
   inputs.src-nimongo-master.repo  = "nimongo";
   inputs.src-nimongo-master.type  = "github";
   
-  inputs."scram".dir   = "nimpkgs/s/scram";
-  inputs."scram".owner = "riinr";
-  inputs."scram".ref   = "flake-pinning";
-  inputs."scram".repo  = "flake-nimble";
+  inputs."scram".owner = "nim-nix-pkgs";
+  inputs."scram".ref   = "master";
+  inputs."scram".repo  = "scram";
   inputs."scram".type  = "github";
   inputs."scram".inputs.nixpkgs.follows = "nixpkgs";
   inputs."scram".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

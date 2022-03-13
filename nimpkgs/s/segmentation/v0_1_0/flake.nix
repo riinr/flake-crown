@@ -13,10 +13,9 @@
   inputs.src-segmentation-v0_1_0.repo  = "nim-segmentation";
   inputs.src-segmentation-v0_1_0.type  = "github";
   
-  inputs."unicodedb".dir   = "nimpkgs/u/unicodedb";
-  inputs."unicodedb".owner = "riinr";
-  inputs."unicodedb".ref   = "flake-pinning";
-  inputs."unicodedb".repo  = "flake-nimble";
+  inputs."unicodedb".owner = "nim-nix-pkgs";
+  inputs."unicodedb".ref   = "master";
+  inputs."unicodedb".repo  = "unicodedb";
   inputs."unicodedb".type  = "github";
   inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

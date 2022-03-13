@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."sparkline-master".url = "path:./master";
+  inputs."sparkline-master".dir   = "master";
+  inputs."sparkline-master".owner = "nim-nix-pkgs";
+  inputs."sparkline-master".ref   = "master";
+  inputs."sparkline-master".repo  = "sparkline";
+  inputs."sparkline-master".type  = "github";
   inputs."sparkline-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sparkline-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

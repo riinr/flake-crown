@@ -13,10 +13,9 @@
   inputs.src-nerve-0_3_0.repo  = "nerve-rpc";
   inputs.src-nerve-0_3_0.type  = "github";
   
-  inputs."ws".dir   = "nimpkgs/w/ws";
-  inputs."ws".owner = "riinr";
-  inputs."ws".ref   = "flake-pinning";
-  inputs."ws".repo  = "flake-nimble";
+  inputs."ws".owner = "nim-nix-pkgs";
+  inputs."ws".ref   = "master";
+  inputs."ws".repo  = "ws";
   inputs."ws".type  = "github";
   inputs."ws".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ws".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

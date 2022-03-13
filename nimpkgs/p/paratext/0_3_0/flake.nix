@@ -13,10 +13,9 @@
   inputs.src-paratext-0_3_0.repo  = "paratext";
   inputs.src-paratext-0_3_0.type  = "github";
   
-  inputs."paranim".dir   = "nimpkgs/p/paranim";
-  inputs."paranim".owner = "riinr";
-  inputs."paranim".ref   = "flake-pinning";
-  inputs."paranim".repo  = "flake-nimble";
+  inputs."paranim".owner = "nim-nix-pkgs";
+  inputs."paranim".ref   = "master";
+  inputs."paranim".repo  = "paranim";
   inputs."paranim".type  = "github";
   inputs."paranim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."paranim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

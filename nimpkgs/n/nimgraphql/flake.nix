@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nimgraphql-master".url = "path:./master";
+  inputs."nimgraphql-master".dir   = "master";
+  inputs."nimgraphql-master".owner = "nim-nix-pkgs";
+  inputs."nimgraphql-master".ref   = "master";
+  inputs."nimgraphql-master".repo  = "nimgraphql";
+  inputs."nimgraphql-master".type  = "github";
   inputs."nimgraphql-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimgraphql-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimgraphql-v0_1_0".url = "path:./v0_1_0";
+  inputs."nimgraphql-v0_1_0".dir   = "v0_1_0";
+  inputs."nimgraphql-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."nimgraphql-v0_1_0".ref   = "master";
+  inputs."nimgraphql-v0_1_0".repo  = "nimgraphql";
+  inputs."nimgraphql-v0_1_0".type  = "github";
   inputs."nimgraphql-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimgraphql-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimgraphql-v0_2_0".url = "path:./v0_2_0";
+  inputs."nimgraphql-v0_2_0".dir   = "v0_2_0";
+  inputs."nimgraphql-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."nimgraphql-v0_2_0".ref   = "master";
+  inputs."nimgraphql-v0_2_0".repo  = "nimgraphql";
+  inputs."nimgraphql-v0_2_0".type  = "github";
   inputs."nimgraphql-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimgraphql-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

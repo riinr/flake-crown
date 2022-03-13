@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."redux-master".url = "path:./master";
+  inputs."redux-master".dir   = "master";
+  inputs."redux-master".owner = "nim-nix-pkgs";
+  inputs."redux-master".ref   = "master";
+  inputs."redux-master".repo  = "redux";
+  inputs."redux-master".type  = "github";
   inputs."redux-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."redux-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

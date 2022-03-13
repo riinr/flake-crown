@@ -13,18 +13,16 @@
   inputs.src-shady-master.repo  = "shady";
   inputs.src-shady-master.type  = "github";
   
-  inputs."vmath".dir   = "nimpkgs/v/vmath";
-  inputs."vmath".owner = "riinr";
-  inputs."vmath".ref   = "flake-pinning";
-  inputs."vmath".repo  = "flake-nimble";
+  inputs."vmath".owner = "nim-nix-pkgs";
+  inputs."vmath".ref   = "master";
+  inputs."vmath".repo  = "vmath";
   inputs."vmath".type  = "github";
   inputs."vmath".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."pixie".dir   = "nimpkgs/p/pixie";
-  inputs."pixie".owner = "riinr";
-  inputs."pixie".ref   = "flake-pinning";
-  inputs."pixie".repo  = "flake-nimble";
+  inputs."pixie".owner = "nim-nix-pkgs";
+  inputs."pixie".ref   = "master";
+  inputs."pixie".repo  = "pixie";
   inputs."pixie".type  = "github";
   inputs."pixie".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pixie".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

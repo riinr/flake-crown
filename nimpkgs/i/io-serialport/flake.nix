@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."io-serialport-master".url = "path:./master";
+  inputs."io-serialport-master".dir   = "master";
+  inputs."io-serialport-master".owner = "nim-nix-pkgs";
+  inputs."io-serialport-master".ref   = "master";
+  inputs."io-serialport-master".repo  = "io-serialport";
+  inputs."io-serialport-master".type  = "github";
   inputs."io-serialport-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."io-serialport-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

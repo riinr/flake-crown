@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."noaa-master".url = "path:./master";
+  inputs."noaa-master".dir   = "master";
+  inputs."noaa-master".owner = "nim-nix-pkgs";
+  inputs."noaa-master".ref   = "master";
+  inputs."noaa-master".repo  = "noaa";
+  inputs."noaa-master".type  = "github";
   inputs."noaa-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."noaa-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

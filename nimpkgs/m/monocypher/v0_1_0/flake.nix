@@ -13,18 +13,16 @@
   inputs.src-monocypher-v0_1_0.repo  = "monocypher.nim";
   inputs.src-monocypher-v0_1_0.type  = "github";
   
-  inputs."nimterop".dir   = "nimpkgs/n/nimterop";
-  inputs."nimterop".owner = "riinr";
-  inputs."nimterop".ref   = "flake-pinning";
-  inputs."nimterop".repo  = "flake-nimble";
+  inputs."nimterop".owner = "nim-nix-pkgs";
+  inputs."nimterop".ref   = "master";
+  inputs."nimterop".repo  = "nimterop";
   inputs."nimterop".type  = "github";
   inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."sysrandom".dir   = "nimpkgs/s/sysrandom";
-  inputs."sysrandom".owner = "riinr";
-  inputs."sysrandom".ref   = "flake-pinning";
-  inputs."sysrandom".repo  = "flake-nimble";
+  inputs."sysrandom".owner = "nim-nix-pkgs";
+  inputs."sysrandom".ref   = "master";
+  inputs."sysrandom".repo  = "sysrandom";
   inputs."sysrandom".type  = "github";
   inputs."sysrandom".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sysrandom".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

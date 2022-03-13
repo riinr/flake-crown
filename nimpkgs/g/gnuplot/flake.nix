@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."gnuplot-master".url = "path:./master";
+  inputs."gnuplot-master".dir   = "master";
+  inputs."gnuplot-master".owner = "nim-nix-pkgs";
+  inputs."gnuplot-master".ref   = "master";
+  inputs."gnuplot-master".repo  = "gnuplot";
+  inputs."gnuplot-master".type  = "github";
   inputs."gnuplot-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gnuplot-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

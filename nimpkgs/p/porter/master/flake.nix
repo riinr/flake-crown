@@ -13,10 +13,9 @@
   inputs.src-porter-master.repo  = "porter";
   inputs.src-porter-master.type  = "github";
   
-  inputs."mutableseqs".dir   = "nimpkgs/m/mutableseqs";
-  inputs."mutableseqs".owner = "riinr";
-  inputs."mutableseqs".ref   = "flake-pinning";
-  inputs."mutableseqs".repo  = "flake-nimble";
+  inputs."mutableseqs".owner = "nim-nix-pkgs";
+  inputs."mutableseqs".ref   = "master";
+  inputs."mutableseqs".repo  = "mutableseqs";
   inputs."mutableseqs".type  = "github";
   inputs."mutableseqs".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mutableseqs".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

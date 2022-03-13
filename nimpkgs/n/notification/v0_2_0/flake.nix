@@ -13,18 +13,16 @@
   inputs.src-notification-v0_2_0.repo  = "notification";
   inputs.src-notification-v0_2_0.type  = "github";
   
-  inputs."dbus".dir   = "nimpkgs/d/dbus";
-  inputs."dbus".owner = "riinr";
-  inputs."dbus".ref   = "flake-pinning";
-  inputs."dbus".repo  = "flake-nimble";
+  inputs."dbus".owner = "nim-nix-pkgs";
+  inputs."dbus".ref   = "master";
+  inputs."dbus".repo  = "dbus";
   inputs."dbus".type  = "github";
   inputs."dbus".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dbus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."imageman".dir   = "nimpkgs/i/imageman";
-  inputs."imageman".owner = "riinr";
-  inputs."imageman".ref   = "flake-pinning";
-  inputs."imageman".repo  = "flake-nimble";
+  inputs."imageman".owner = "nim-nix-pkgs";
+  inputs."imageman".ref   = "master";
+  inputs."imageman".repo  = "imageman";
   inputs."imageman".type  = "github";
   inputs."imageman".inputs.nixpkgs.follows = "nixpkgs";
   inputs."imageman".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,10 +13,9 @@
   inputs.src-nimbench-master.repo  = "nimbench";
   inputs.src-nimbench-master.type  = "github";
   
-  inputs."strfmt".dir   = "nimpkgs/s/strfmt";
-  inputs."strfmt".owner = "riinr";
-  inputs."strfmt".ref   = "flake-pinning";
-  inputs."strfmt".repo  = "flake-nimble";
+  inputs."strfmt".owner = "nim-nix-pkgs";
+  inputs."strfmt".ref   = "master";
+  inputs."strfmt".repo  = "strfmt";
   inputs."strfmt".type  = "github";
   inputs."strfmt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."strfmt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

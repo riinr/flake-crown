@@ -13,18 +13,16 @@
   inputs.src-paranim-0_10_0.repo  = "paranim";
   inputs.src-paranim-0_10_0.type  = "github";
   
-  inputs."nimgl".dir   = "nimpkgs/n/nimgl";
-  inputs."nimgl".owner = "riinr";
-  inputs."nimgl".ref   = "flake-pinning";
-  inputs."nimgl".repo  = "flake-nimble";
+  inputs."nimgl".owner = "nim-nix-pkgs";
+  inputs."nimgl".ref   = "master";
+  inputs."nimgl".repo  = "nimgl";
   inputs."nimgl".type  = "github";
   inputs."nimgl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimgl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."glm".dir   = "nimpkgs/g/glm";
-  inputs."glm".owner = "riinr";
-  inputs."glm".ref   = "flake-pinning";
-  inputs."glm".repo  = "flake-nimble";
+  inputs."glm".owner = "nim-nix-pkgs";
+  inputs."glm".ref   = "master";
+  inputs."glm".repo  = "glm";
   inputs."glm".type  = "github";
   inputs."glm".inputs.nixpkgs.follows = "nixpkgs";
   inputs."glm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."once-master".url = "path:./master";
+  inputs."once-master".dir   = "master";
+  inputs."once-master".owner = "nim-nix-pkgs";
+  inputs."once-master".ref   = "master";
+  inputs."once-master".repo  = "once";
+  inputs."once-master".type  = "github";
   inputs."once-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."once-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."once-1_0_0".url = "path:./1_0_0";
+  inputs."once-1_0_0".dir   = "1_0_0";
+  inputs."once-1_0_0".owner = "nim-nix-pkgs";
+  inputs."once-1_0_0".ref   = "master";
+  inputs."once-1_0_0".repo  = "once";
+  inputs."once-1_0_0".type  = "github";
   inputs."once-1_0_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."once-1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

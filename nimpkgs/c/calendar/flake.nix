@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."calendar-master".url = "path:./master";
+  inputs."calendar-master".dir   = "master";
+  inputs."calendar-master".owner = "nim-nix-pkgs";
+  inputs."calendar-master".ref   = "master";
+  inputs."calendar-master".repo  = "calendar";
+  inputs."calendar-master".type  = "github";
   inputs."calendar-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."calendar-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

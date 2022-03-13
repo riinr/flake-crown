@@ -13,10 +13,9 @@
   inputs.src-pvim-master.repo  = "pvim";
   inputs.src-pvim-master.type  = "github";
   
-  inputs."paravim".dir   = "nimpkgs/p/paravim";
-  inputs."paravim".owner = "riinr";
-  inputs."paravim".ref   = "flake-pinning";
-  inputs."paravim".repo  = "flake-nimble";
+  inputs."paravim".owner = "nim-nix-pkgs";
+  inputs."paravim".ref   = "master";
+  inputs."paravim".repo  = "paravim";
   inputs."paravim".type  = "github";
   inputs."paravim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."paravim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

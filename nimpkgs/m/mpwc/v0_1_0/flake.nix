@@ -13,18 +13,16 @@
   inputs.src-mpwc-v0_1_0.repo  = "mpwc";
   inputs.src-mpwc-v0_1_0.type  = "github";
   
-  inputs."masterpassword".dir   = "nimpkgs/m/masterpassword";
-  inputs."masterpassword".owner = "riinr";
-  inputs."masterpassword".ref   = "flake-pinning";
-  inputs."masterpassword".repo  = "flake-nimble";
+  inputs."masterpassword".owner = "nim-nix-pkgs";
+  inputs."masterpassword".ref   = "master";
+  inputs."masterpassword".repo  = "masterpassword";
   inputs."masterpassword".type  = "github";
   inputs."masterpassword".inputs.nixpkgs.follows = "nixpkgs";
   inputs."masterpassword".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

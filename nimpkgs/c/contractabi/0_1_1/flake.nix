@@ -13,18 +13,16 @@
   inputs.src-contractabi-0_1_1.repo  = "nim-contract-abi";
   inputs.src-contractabi-0_1_1.type  = "github";
   
-  inputs."stint".dir   = "nimpkgs/s/stint";
-  inputs."stint".owner = "riinr";
-  inputs."stint".ref   = "flake-pinning";
-  inputs."stint".repo  = "flake-nimble";
+  inputs."stint".owner = "nim-nix-pkgs";
+  inputs."stint".ref   = "master";
+  inputs."stint".repo  = "stint";
   inputs."stint".type  = "github";
   inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."upraises".dir   = "nimpkgs/u/upraises";
-  inputs."upraises".owner = "riinr";
-  inputs."upraises".ref   = "flake-pinning";
-  inputs."upraises".repo  = "flake-nimble";
+  inputs."upraises".owner = "nim-nix-pkgs";
+  inputs."upraises".ref   = "master";
+  inputs."upraises".repo  = "upraises";
   inputs."upraises".type  = "github";
   inputs."upraises".inputs.nixpkgs.follows = "nixpkgs";
   inputs."upraises".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

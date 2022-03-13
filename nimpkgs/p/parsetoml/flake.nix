@@ -7,19 +7,35 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."parsetoml-master".url = "path:./master";
+  inputs."parsetoml-master".dir   = "master";
+  inputs."parsetoml-master".owner = "nim-nix-pkgs";
+  inputs."parsetoml-master".ref   = "master";
+  inputs."parsetoml-master".repo  = "parsetoml";
+  inputs."parsetoml-master".type  = "github";
   inputs."parsetoml-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."parsetoml-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."parsetoml-v0_4_0".url = "path:./v0_4_0";
+  inputs."parsetoml-v0_4_0".dir   = "v0_4_0";
+  inputs."parsetoml-v0_4_0".owner = "nim-nix-pkgs";
+  inputs."parsetoml-v0_4_0".ref   = "master";
+  inputs."parsetoml-v0_4_0".repo  = "parsetoml";
+  inputs."parsetoml-v0_4_0".type  = "github";
   inputs."parsetoml-v0_4_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."parsetoml-v0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."parsetoml-v0_5_0".url = "path:./v0_5_0";
+  inputs."parsetoml-v0_5_0".dir   = "v0_5_0";
+  inputs."parsetoml-v0_5_0".owner = "nim-nix-pkgs";
+  inputs."parsetoml-v0_5_0".ref   = "master";
+  inputs."parsetoml-v0_5_0".repo  = "parsetoml";
+  inputs."parsetoml-v0_5_0".type  = "github";
   inputs."parsetoml-v0_5_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."parsetoml-v0_5_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."parsetoml-v0_6_0".url = "path:./v0_6_0";
+  inputs."parsetoml-v0_6_0".dir   = "v0_6_0";
+  inputs."parsetoml-v0_6_0".owner = "nim-nix-pkgs";
+  inputs."parsetoml-v0_6_0".ref   = "master";
+  inputs."parsetoml-v0_6_0".repo  = "parsetoml";
+  inputs."parsetoml-v0_6_0".type  = "github";
   inputs."parsetoml-v0_6_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."parsetoml-v0_6_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."termbox-master".url = "path:./master";
+  inputs."termbox-master".dir   = "master";
+  inputs."termbox-master".owner = "nim-nix-pkgs";
+  inputs."termbox-master".ref   = "master";
+  inputs."termbox-master".repo  = "termbox";
+  inputs."termbox-master".type  = "github";
   inputs."termbox-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."termbox-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

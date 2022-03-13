@@ -7,31 +7,59 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."svgo-master".url = "path:./master";
+  inputs."svgo-master".dir   = "master";
+  inputs."svgo-master".owner = "nim-nix-pkgs";
+  inputs."svgo-master".ref   = "master";
+  inputs."svgo-master".repo  = "svgo";
+  inputs."svgo-master".type  = "github";
   inputs."svgo-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."svgo-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."svgo-v0_1_0".url = "path:./v0_1_0";
+  inputs."svgo-v0_1_0".dir   = "v0_1_0";
+  inputs."svgo-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."svgo-v0_1_0".ref   = "master";
+  inputs."svgo-v0_1_0".repo  = "svgo";
+  inputs."svgo-v0_1_0".type  = "github";
   inputs."svgo-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."svgo-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."svgo-v0_2_0".url = "path:./v0_2_0";
+  inputs."svgo-v0_2_0".dir   = "v0_2_0";
+  inputs."svgo-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."svgo-v0_2_0".ref   = "master";
+  inputs."svgo-v0_2_0".repo  = "svgo";
+  inputs."svgo-v0_2_0".type  = "github";
   inputs."svgo-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."svgo-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."svgo-v0_2_1".url = "path:./v0_2_1";
+  inputs."svgo-v0_2_1".dir   = "v0_2_1";
+  inputs."svgo-v0_2_1".owner = "nim-nix-pkgs";
+  inputs."svgo-v0_2_1".ref   = "master";
+  inputs."svgo-v0_2_1".repo  = "svgo";
+  inputs."svgo-v0_2_1".type  = "github";
   inputs."svgo-v0_2_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."svgo-v0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."svgo-v0_2_2".url = "path:./v0_2_2";
+  inputs."svgo-v0_2_2".dir   = "v0_2_2";
+  inputs."svgo-v0_2_2".owner = "nim-nix-pkgs";
+  inputs."svgo-v0_2_2".ref   = "master";
+  inputs."svgo-v0_2_2".repo  = "svgo";
+  inputs."svgo-v0_2_2".type  = "github";
   inputs."svgo-v0_2_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."svgo-v0_2_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."svgo-v0_3_0".url = "path:./v0_3_0";
+  inputs."svgo-v0_3_0".dir   = "v0_3_0";
+  inputs."svgo-v0_3_0".owner = "nim-nix-pkgs";
+  inputs."svgo-v0_3_0".ref   = "master";
+  inputs."svgo-v0_3_0".repo  = "svgo";
+  inputs."svgo-v0_3_0".type  = "github";
   inputs."svgo-v0_3_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."svgo-v0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."svgo-v0_3_1".url = "path:./v0_3_1";
+  inputs."svgo-v0_3_1".dir   = "v0_3_1";
+  inputs."svgo-v0_3_1".owner = "nim-nix-pkgs";
+  inputs."svgo-v0_3_1".ref   = "master";
+  inputs."svgo-v0_3_1".repo  = "svgo";
+  inputs."svgo-v0_3_1".type  = "github";
   inputs."svgo-v0_3_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."svgo-v0_3_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."fuzzy-master".url = "path:./master";
+  inputs."fuzzy-master".dir   = "master";
+  inputs."fuzzy-master".owner = "nim-nix-pkgs";
+  inputs."fuzzy-master".ref   = "master";
+  inputs."fuzzy-master".repo  = "fuzzy";
+  inputs."fuzzy-master".type  = "github";
   inputs."fuzzy-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fuzzy-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."fuzzy-v0_1_0".url = "path:./v0_1_0";
+  inputs."fuzzy-v0_1_0".dir   = "v0_1_0";
+  inputs."fuzzy-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."fuzzy-v0_1_0".ref   = "master";
+  inputs."fuzzy-v0_1_0".repo  = "fuzzy";
+  inputs."fuzzy-v0_1_0".type  = "github";
   inputs."fuzzy-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fuzzy-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

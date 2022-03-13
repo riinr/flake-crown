@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."spinny-master".url = "path:./master";
+  inputs."spinny-master".dir   = "master";
+  inputs."spinny-master".owner = "nim-nix-pkgs";
+  inputs."spinny-master".ref   = "master";
+  inputs."spinny-master".repo  = "spinny";
+  inputs."spinny-master".type  = "github";
   inputs."spinny-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."spinny-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

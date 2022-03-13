@@ -13,18 +13,16 @@
   inputs.src-py2nim-v0_1_1.repo  = "Py2Nim";
   inputs.src-py2nim-v0_1_1.type  = "github";
   
-  inputs."compiler".dir   = "nimpkgs/c/compiler";
-  inputs."compiler".owner = "riinr";
-  inputs."compiler".ref   = "flake-pinning";
-  inputs."compiler".repo  = "flake-nimble";
+  inputs."compiler".owner = "nim-nix-pkgs";
+  inputs."compiler".ref   = "master";
+  inputs."compiler".repo  = "compiler";
   inputs."compiler".type  = "github";
   inputs."compiler".inputs.nixpkgs.follows = "nixpkgs";
   inputs."compiler".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimscripter".dir   = "nimpkgs/n/nimscripter";
-  inputs."nimscripter".owner = "riinr";
-  inputs."nimscripter".ref   = "flake-pinning";
-  inputs."nimscripter".repo  = "flake-nimble";
+  inputs."nimscripter".owner = "nim-nix-pkgs";
+  inputs."nimscripter".ref   = "master";
+  inputs."nimscripter".repo  = "nimscripter";
   inputs."nimscripter".type  = "github";
   inputs."nimscripter".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimscripter".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

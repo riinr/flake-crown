@@ -13,42 +13,37 @@
   inputs.src-prologue-v0_3_4.repo  = "Prologue";
   inputs.src-prologue-v0_3_4.type  = "github";
   
-  inputs."regex".dir   = "nimpkgs/r/regex";
-  inputs."regex".owner = "riinr";
-  inputs."regex".ref   = "flake-pinning";
-  inputs."regex".repo  = "flake-nimble";
+  inputs."regex".owner = "nim-nix-pkgs";
+  inputs."regex".ref   = "master";
+  inputs."regex".repo  = "regex";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimcrypto".dir   = "nimpkgs/n/nimcrypto";
-  inputs."nimcrypto".owner = "riinr";
-  inputs."nimcrypto".ref   = "flake-pinning";
-  inputs."nimcrypto".repo  = "flake-nimble";
+  inputs."nimcrypto".owner = "nim-nix-pkgs";
+  inputs."nimcrypto".ref   = "master";
+  inputs."nimcrypto".repo  = "nimcrypto";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."karax".dir   = "nimpkgs/k/karax";
-  inputs."karax".owner = "riinr";
-  inputs."karax".ref   = "flake-pinning";
-  inputs."karax".repo  = "flake-nimble";
+  inputs."karax".owner = "nim-nix-pkgs";
+  inputs."karax".ref   = "master";
+  inputs."karax".repo  = "karax";
   inputs."karax".type  = "github";
   inputs."karax".inputs.nixpkgs.follows = "nixpkgs";
   inputs."karax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cookiejar".dir   = "nimpkgs/c/cookiejar";
-  inputs."cookiejar".owner = "riinr";
-  inputs."cookiejar".ref   = "flake-pinning";
-  inputs."cookiejar".repo  = "flake-nimble";
+  inputs."cookiejar".owner = "nim-nix-pkgs";
+  inputs."cookiejar".ref   = "master";
+  inputs."cookiejar".repo  = "cookiejar";
   inputs."cookiejar".type  = "github";
   inputs."cookiejar".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cookiejar".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."httpx".dir   = "nimpkgs/h/httpx";
-  inputs."httpx".owner = "riinr";
-  inputs."httpx".ref   = "flake-pinning";
-  inputs."httpx".repo  = "flake-nimble";
+  inputs."httpx".owner = "nim-nix-pkgs";
+  inputs."httpx".ref   = "master";
+  inputs."httpx".repo  = "httpx";
   inputs."httpx".type  = "github";
   inputs."httpx".inputs.nixpkgs.follows = "nixpkgs";
   inputs."httpx".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

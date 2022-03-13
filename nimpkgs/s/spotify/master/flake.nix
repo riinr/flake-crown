@@ -13,10 +13,9 @@
   inputs.src-spotify-master.repo  = "spotify";
   inputs.src-spotify-master.type  = "github";
   
-  inputs."oauth".dir   = "nimpkgs/o/oauth";
-  inputs."oauth".owner = "riinr";
-  inputs."oauth".ref   = "flake-pinning";
-  inputs."oauth".repo  = "flake-nimble";
+  inputs."oauth".owner = "nim-nix-pkgs";
+  inputs."oauth".ref   = "master";
+  inputs."oauth".repo  = "oauth";
   inputs."oauth".type  = "github";
   inputs."oauth".inputs.nixpkgs.follows = "nixpkgs";
   inputs."oauth".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

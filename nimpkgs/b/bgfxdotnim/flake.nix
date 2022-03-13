@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."bgfxdotnim-master".url = "path:./master";
+  inputs."bgfxdotnim-master".dir   = "master";
+  inputs."bgfxdotnim-master".owner = "nim-nix-pkgs";
+  inputs."bgfxdotnim-master".ref   = "master";
+  inputs."bgfxdotnim-master".repo  = "bgfxdotnim";
+  inputs."bgfxdotnim-master".type  = "github";
   inputs."bgfxdotnim-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bgfxdotnim-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

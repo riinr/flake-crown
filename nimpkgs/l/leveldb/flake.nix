@@ -7,23 +7,43 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."leveldb-master".url = "path:./master";
+  inputs."leveldb-master".dir   = "master";
+  inputs."leveldb-master".owner = "nim-nix-pkgs";
+  inputs."leveldb-master".ref   = "master";
+  inputs."leveldb-master".repo  = "leveldb";
+  inputs."leveldb-master".type  = "github";
   inputs."leveldb-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."leveldb-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."leveldb-0_2_0".url = "path:./0_2_0";
+  inputs."leveldb-0_2_0".dir   = "0_2_0";
+  inputs."leveldb-0_2_0".owner = "nim-nix-pkgs";
+  inputs."leveldb-0_2_0".ref   = "master";
+  inputs."leveldb-0_2_0".repo  = "leveldb";
+  inputs."leveldb-0_2_0".type  = "github";
   inputs."leveldb-0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."leveldb-0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."leveldb-0_3_0".url = "path:./0_3_0";
+  inputs."leveldb-0_3_0".dir   = "0_3_0";
+  inputs."leveldb-0_3_0".owner = "nim-nix-pkgs";
+  inputs."leveldb-0_3_0".ref   = "master";
+  inputs."leveldb-0_3_0".repo  = "leveldb";
+  inputs."leveldb-0_3_0".type  = "github";
   inputs."leveldb-0_3_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."leveldb-0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."leveldb-0_4_0".url = "path:./0_4_0";
+  inputs."leveldb-0_4_0".dir   = "0_4_0";
+  inputs."leveldb-0_4_0".owner = "nim-nix-pkgs";
+  inputs."leveldb-0_4_0".ref   = "master";
+  inputs."leveldb-0_4_0".repo  = "leveldb";
+  inputs."leveldb-0_4_0".type  = "github";
   inputs."leveldb-0_4_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."leveldb-0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."leveldb-0_4_1".url = "path:./0_4_1";
+  inputs."leveldb-0_4_1".dir   = "0_4_1";
+  inputs."leveldb-0_4_1".owner = "nim-nix-pkgs";
+  inputs."leveldb-0_4_1".ref   = "master";
+  inputs."leveldb-0_4_1".repo  = "leveldb";
+  inputs."leveldb-0_4_1".type  = "github";
   inputs."leveldb-0_4_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."leveldb-0_4_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

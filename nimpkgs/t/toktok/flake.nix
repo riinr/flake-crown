@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."toktok-main".url = "path:./main";
+  inputs."toktok-main".dir   = "main";
+  inputs."toktok-main".owner = "nim-nix-pkgs";
+  inputs."toktok-main".ref   = "master";
+  inputs."toktok-main".repo  = "toktok";
+  inputs."toktok-main".type  = "github";
   inputs."toktok-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."toktok-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

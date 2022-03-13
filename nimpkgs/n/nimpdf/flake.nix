@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nimpdf-master".url = "path:./master";
+  inputs."nimpdf-master".dir   = "master";
+  inputs."nimpdf-master".owner = "nim-nix-pkgs";
+  inputs."nimpdf-master".ref   = "master";
+  inputs."nimpdf-master".repo  = "nimpdf";
+  inputs."nimpdf-master".type  = "github";
   inputs."nimpdf-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpdf-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

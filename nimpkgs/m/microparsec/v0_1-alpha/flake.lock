@@ -32,10 +32,65 @@
         "type": "indirect"
       }
     },
+    "result": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "result-master": "result-master"
+      },
+      "locked": {
+        "lastModified": 1647113134,
+        "narHash": "sha256-qRI3+bXsjsSqehW20nCox4RafGnfXlnfmfFtX7J019k=",
+        "owner": "nim-nix-pkgs",
+        "repo": "result",
+        "rev": "d64d637941d8b8848df6ef84e92d4bc8d17c8e86",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "result",
+        "type": "github"
+      }
+    },
+    "result-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "result",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "result",
+          "nixpkgs"
+        ],
+        "src-result-master": "src-result-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647113134,
+        "narHash": "sha256-qRI3+bXsjsSqehW20nCox4RafGnfXlnfmfFtX7J019k=",
+        "owner": "nim-nix-pkgs",
+        "repo": "result",
+        "rev": "d64d637941d8b8848df6ef84e92d4bc8d17c8e86",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "result",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
+        "result": "result",
         "src-microparsec-v0_1-alpha": "src-microparsec-v0_1-alpha"
       }
     },
@@ -53,6 +108,23 @@
         "owner": "schneiderfelipe",
         "ref": "refs/tags/v0.1-alpha",
         "repo": "microparsec",
+        "type": "github"
+      }
+    },
+    "src-result-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1641244549,
+        "narHash": "sha256-Q1++NjHEtY261IiKpRRh5Oa7kfE8qRYO/8aEJ3FUddg=",
+        "owner": "arnetheduck",
+        "repo": "nim-result",
+        "rev": "4ff5f5b59c239c23314240106c6903bb0084e074",
+        "type": "github"
+      },
+      "original": {
+        "owner": "arnetheduck",
+        "ref": "refs/heads/master",
+        "repo": "nim-result",
         "type": "github"
       }
     }

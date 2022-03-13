@@ -13,10 +13,9 @@
   inputs.src-nimtesseract-v0_1_0.repo  = "nimtesseract";
   inputs.src-nimtesseract-v0_1_0.type  = "github";
   
-  inputs."pixie".dir   = "nimpkgs/p/pixie";
-  inputs."pixie".owner = "riinr";
-  inputs."pixie".ref   = "flake-pinning";
-  inputs."pixie".repo  = "flake-nimble";
+  inputs."pixie".owner = "nim-nix-pkgs";
+  inputs."pixie".ref   = "master";
+  inputs."pixie".repo  = "pixie";
   inputs."pixie".type  = "github";
   inputs."pixie".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pixie".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

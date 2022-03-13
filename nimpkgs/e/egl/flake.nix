@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."egl-master".url = "path:./master";
+  inputs."egl-master".dir   = "master";
+  inputs."egl-master".owner = "nim-nix-pkgs";
+  inputs."egl-master".ref   = "master";
+  inputs."egl-master".repo  = "egl";
+  inputs."egl-master".type  = "github";
   inputs."egl-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."egl-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

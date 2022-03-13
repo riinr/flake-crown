@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."fasttext-master".url = "path:./master";
+  inputs."fasttext-master".dir   = "master";
+  inputs."fasttext-master".owner = "nim-nix-pkgs";
+  inputs."fasttext-master".ref   = "master";
+  inputs."fasttext-master".repo  = "fasttext";
+  inputs."fasttext-master".type  = "github";
   inputs."fasttext-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fasttext-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

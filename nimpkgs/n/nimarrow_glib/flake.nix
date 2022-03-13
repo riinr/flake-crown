@@ -7,19 +7,35 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nimarrow_glib-master".url = "path:./master";
+  inputs."nimarrow_glib-master".dir   = "master";
+  inputs."nimarrow_glib-master".owner = "nim-nix-pkgs";
+  inputs."nimarrow_glib-master".ref   = "master";
+  inputs."nimarrow_glib-master".repo  = "nimarrow_glib";
+  inputs."nimarrow_glib-master".type  = "github";
   inputs."nimarrow_glib-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimarrow_glib-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimarrow_glib-v0_1_1".url = "path:./v0_1_1";
+  inputs."nimarrow_glib-v0_1_1".dir   = "v0_1_1";
+  inputs."nimarrow_glib-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."nimarrow_glib-v0_1_1".ref   = "master";
+  inputs."nimarrow_glib-v0_1_1".repo  = "nimarrow_glib";
+  inputs."nimarrow_glib-v0_1_1".type  = "github";
   inputs."nimarrow_glib-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimarrow_glib-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimarrow_glib-v0_1_2".url = "path:./v0_1_2";
+  inputs."nimarrow_glib-v0_1_2".dir   = "v0_1_2";
+  inputs."nimarrow_glib-v0_1_2".owner = "nim-nix-pkgs";
+  inputs."nimarrow_glib-v0_1_2".ref   = "master";
+  inputs."nimarrow_glib-v0_1_2".repo  = "nimarrow_glib";
+  inputs."nimarrow_glib-v0_1_2".type  = "github";
   inputs."nimarrow_glib-v0_1_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimarrow_glib-v0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimarrow_glib-v0_1_3".url = "path:./v0_1_3";
+  inputs."nimarrow_glib-v0_1_3".dir   = "v0_1_3";
+  inputs."nimarrow_glib-v0_1_3".owner = "nim-nix-pkgs";
+  inputs."nimarrow_glib-v0_1_3".ref   = "master";
+  inputs."nimarrow_glib-v0_1_3".repo  = "nimarrow_glib";
+  inputs."nimarrow_glib-v0_1_3".type  = "github";
   inputs."nimarrow_glib-v0_1_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimarrow_glib-v0_1_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

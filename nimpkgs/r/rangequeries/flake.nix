@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."rangequeries-master".url = "path:./master";
+  inputs."rangequeries-master".dir   = "master";
+  inputs."rangequeries-master".owner = "nim-nix-pkgs";
+  inputs."rangequeries-master".ref   = "master";
+  inputs."rangequeries-master".repo  = "rangequeries";
+  inputs."rangequeries-master".type  = "github";
   inputs."rangequeries-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rangequeries-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

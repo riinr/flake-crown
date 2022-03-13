@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."foliant-develop".url = "path:./develop";
+  inputs."foliant-develop".dir   = "develop";
+  inputs."foliant-develop".owner = "nim-nix-pkgs";
+  inputs."foliant-develop".ref   = "master";
+  inputs."foliant-develop".repo  = "foliant";
+  inputs."foliant-develop".type  = "github";
   inputs."foliant-develop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."foliant-develop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."foliant-master".url = "path:./master";
+  inputs."foliant-master".dir   = "master";
+  inputs."foliant-master".owner = "nim-nix-pkgs";
+  inputs."foliant-master".ref   = "master";
+  inputs."foliant-master".repo  = "foliant";
+  inputs."foliant-master".type  = "github";
   inputs."foliant-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."foliant-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."hyperscript-master".url = "path:./master";
+  inputs."hyperscript-master".dir   = "master";
+  inputs."hyperscript-master".owner = "nim-nix-pkgs";
+  inputs."hyperscript-master".ref   = "master";
+  inputs."hyperscript-master".repo  = "hyperscript";
+  inputs."hyperscript-master".type  = "github";
   inputs."hyperscript-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hyperscript-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."hyperscript-v0_1-alpha".url = "path:./v0_1-alpha";
+  inputs."hyperscript-v0_1-alpha".dir   = "v0_1-alpha";
+  inputs."hyperscript-v0_1-alpha".owner = "nim-nix-pkgs";
+  inputs."hyperscript-v0_1-alpha".ref   = "master";
+  inputs."hyperscript-v0_1-alpha".repo  = "hyperscript";
+  inputs."hyperscript-v0_1-alpha".type  = "github";
   inputs."hyperscript-v0_1-alpha".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hyperscript-v0_1-alpha".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

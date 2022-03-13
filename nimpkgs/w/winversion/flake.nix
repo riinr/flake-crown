@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."winversion-master".url = "path:./master";
+  inputs."winversion-master".dir   = "master";
+  inputs."winversion-master".owner = "nim-nix-pkgs";
+  inputs."winversion-master".ref   = "master";
+  inputs."winversion-master".repo  = "winversion";
+  inputs."winversion-master".type  = "github";
   inputs."winversion-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."winversion-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

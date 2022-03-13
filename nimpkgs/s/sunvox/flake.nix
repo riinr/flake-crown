@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."sunvox-master".url = "path:./master";
+  inputs."sunvox-master".dir   = "master";
+  inputs."sunvox-master".owner = "nim-nix-pkgs";
+  inputs."sunvox-master".ref   = "master";
+  inputs."sunvox-master".repo  = "sunvox";
+  inputs."sunvox-master".type  = "github";
   inputs."sunvox-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sunvox-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."sunvox-0_0_1".url = "path:./0_0_1";
+  inputs."sunvox-0_0_1".dir   = "0_0_1";
+  inputs."sunvox-0_0_1".owner = "nim-nix-pkgs";
+  inputs."sunvox-0_0_1".ref   = "master";
+  inputs."sunvox-0_0_1".repo  = "sunvox";
+  inputs."sunvox-0_0_1".type  = "github";
   inputs."sunvox-0_0_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sunvox-0_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."sunvox-0_1_1".url = "path:./0_1_1";
+  inputs."sunvox-0_1_1".dir   = "0_1_1";
+  inputs."sunvox-0_1_1".owner = "nim-nix-pkgs";
+  inputs."sunvox-0_1_1".ref   = "master";
+  inputs."sunvox-0_1_1".repo  = "sunvox";
+  inputs."sunvox-0_1_1".type  = "github";
   inputs."sunvox-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sunvox-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

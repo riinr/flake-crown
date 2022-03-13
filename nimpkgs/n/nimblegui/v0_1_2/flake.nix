@@ -13,18 +13,16 @@
   inputs.src-nimblegui-v0_1_2.repo  = "nim_nimble_gui";
   inputs.src-nimblegui-v0_1_2.type  = "github";
   
-  inputs."uibuilder".dir   = "nimpkgs/u/uibuilder";
-  inputs."uibuilder".owner = "riinr";
-  inputs."uibuilder".ref   = "flake-pinning";
-  inputs."uibuilder".repo  = "flake-nimble";
+  inputs."uibuilder".owner = "nim-nix-pkgs";
+  inputs."uibuilder".ref   = "master";
+  inputs."uibuilder".repo  = "uibuilder";
   inputs."uibuilder".type  = "github";
   inputs."uibuilder".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uibuilder".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."ui".dir   = "nimpkgs/u/ui";
-  inputs."ui".owner = "riinr";
-  inputs."ui".ref   = "flake-pinning";
-  inputs."ui".repo  = "flake-nimble";
+  inputs."ui".owner = "nim-nix-pkgs";
+  inputs."ui".ref   = "master";
+  inputs."ui".repo  = "ui";
   inputs."ui".type  = "github";
   inputs."ui".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ui".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

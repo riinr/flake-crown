@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."pdcurses-master".url = "path:./master";
+  inputs."pdcurses-master".dir   = "master";
+  inputs."pdcurses-master".owner = "nim-nix-pkgs";
+  inputs."pdcurses-master".ref   = "master";
+  inputs."pdcurses-master".repo  = "pdcurses";
+  inputs."pdcurses-master".type  = "github";
   inputs."pdcurses-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pdcurses-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

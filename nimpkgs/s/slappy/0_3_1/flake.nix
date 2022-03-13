@@ -13,26 +13,23 @@
   inputs.src-slappy-0_3_1.repo  = "slappy";
   inputs.src-slappy-0_3_1.type  = "github";
   
-  inputs."openal".dir   = "nimpkgs/o/openal";
-  inputs."openal".owner = "riinr";
-  inputs."openal".ref   = "flake-pinning";
-  inputs."openal".repo  = "flake-nimble";
+  inputs."openal".owner = "nim-nix-pkgs";
+  inputs."openal".ref   = "master";
+  inputs."openal".repo  = "openal";
   inputs."openal".type  = "github";
   inputs."openal".inputs.nixpkgs.follows = "nixpkgs";
   inputs."openal".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."vmath".dir   = "nimpkgs/v/vmath";
-  inputs."vmath".owner = "riinr";
-  inputs."vmath".ref   = "flake-pinning";
-  inputs."vmath".repo  = "flake-nimble";
+  inputs."vmath".owner = "nim-nix-pkgs";
+  inputs."vmath".ref   = "master";
+  inputs."vmath".repo  = "vmath";
   inputs."vmath".type  = "github";
   inputs."vmath".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."supersnappy".dir   = "nimpkgs/s/supersnappy";
-  inputs."supersnappy".owner = "riinr";
-  inputs."supersnappy".ref   = "flake-pinning";
-  inputs."supersnappy".repo  = "flake-nimble";
+  inputs."supersnappy".owner = "nim-nix-pkgs";
+  inputs."supersnappy".ref   = "master";
+  inputs."supersnappy".repo  = "supersnappy";
   inputs."supersnappy".type  = "github";
   inputs."supersnappy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."supersnappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

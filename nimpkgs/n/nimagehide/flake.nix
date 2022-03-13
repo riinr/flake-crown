@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nimagehide-master".url = "path:./master";
+  inputs."nimagehide-master".dir   = "master";
+  inputs."nimagehide-master".owner = "nim-nix-pkgs";
+  inputs."nimagehide-master".ref   = "master";
+  inputs."nimagehide-master".repo  = "nimagehide";
+  inputs."nimagehide-master".type  = "github";
   inputs."nimagehide-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimagehide-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

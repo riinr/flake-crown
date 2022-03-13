@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."syphus-master".url = "path:./master";
+  inputs."syphus-master".dir   = "master";
+  inputs."syphus-master".owner = "nim-nix-pkgs";
+  inputs."syphus-master".ref   = "master";
+  inputs."syphus-master".repo  = "syphus";
+  inputs."syphus-master".type  = "github";
   inputs."syphus-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."syphus-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."syphus-0_4".url = "path:./0_4";
+  inputs."syphus-0_4".dir   = "0_4";
+  inputs."syphus-0_4".owner = "nim-nix-pkgs";
+  inputs."syphus-0_4".ref   = "master";
+  inputs."syphus-0_4".repo  = "syphus";
+  inputs."syphus-0_4".type  = "github";
   inputs."syphus-0_4".inputs.nixpkgs.follows = "nixpkgs";
   inputs."syphus-0_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

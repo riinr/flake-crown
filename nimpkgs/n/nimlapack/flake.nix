@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nimlapack-master".url = "path:./master";
+  inputs."nimlapack-master".dir   = "master";
+  inputs."nimlapack-master".owner = "nim-nix-pkgs";
+  inputs."nimlapack-master".ref   = "master";
+  inputs."nimlapack-master".repo  = "nimlapack";
+  inputs."nimlapack-master".type  = "github";
   inputs."nimlapack-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimlapack-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimlapack-0_1_1".url = "path:./0_1_1";
+  inputs."nimlapack-0_1_1".dir   = "0_1_1";
+  inputs."nimlapack-0_1_1".owner = "nim-nix-pkgs";
+  inputs."nimlapack-0_1_1".ref   = "master";
+  inputs."nimlapack-0_1_1".repo  = "nimlapack";
+  inputs."nimlapack-0_1_1".type  = "github";
   inputs."nimlapack-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimlapack-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimlapack-0_2_0".url = "path:./0_2_0";
+  inputs."nimlapack-0_2_0".dir   = "0_2_0";
+  inputs."nimlapack-0_2_0".owner = "nim-nix-pkgs";
+  inputs."nimlapack-0_2_0".ref   = "master";
+  inputs."nimlapack-0_2_0".repo  = "nimlapack";
+  inputs."nimlapack-0_2_0".type  = "github";
   inputs."nimlapack-0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimlapack-0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

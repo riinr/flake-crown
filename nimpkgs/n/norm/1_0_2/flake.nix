@@ -13,10 +13,9 @@
   inputs.src-norm-1_0_2.repo  = "norm";
   inputs.src-norm-1_0_2.type  = "github";
   
-  inputs."chronicles".dir   = "nimpkgs/c/chronicles";
-  inputs."chronicles".owner = "riinr";
-  inputs."chronicles".ref   = "flake-pinning";
-  inputs."chronicles".repo  = "flake-nimble";
+  inputs."chronicles".owner = "nim-nix-pkgs";
+  inputs."chronicles".ref   = "master";
+  inputs."chronicles".repo  = "chronicles";
   inputs."chronicles".type  = "github";
   inputs."chronicles".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronicles".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

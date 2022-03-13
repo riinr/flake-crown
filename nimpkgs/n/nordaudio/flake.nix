@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nordaudio-main".url = "path:./main";
+  inputs."nordaudio-main".dir   = "main";
+  inputs."nordaudio-main".owner = "nim-nix-pkgs";
+  inputs."nordaudio-main".ref   = "master";
+  inputs."nordaudio-main".repo  = "nordaudio";
+  inputs."nordaudio-main".type  = "github";
   inputs."nordaudio-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nordaudio-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

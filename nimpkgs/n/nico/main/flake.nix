@@ -13,34 +13,30 @@
   inputs.src-nico-main.repo  = "nico";
   inputs.src-nico-main.type  = "github";
   
-  inputs."sdl2_nim".dir   = "nimpkgs/s/sdl2_nim";
-  inputs."sdl2_nim".owner = "riinr";
-  inputs."sdl2_nim".ref   = "flake-pinning";
-  inputs."sdl2_nim".repo  = "flake-nimble";
+  inputs."sdl2_nim".owner = "nim-nix-pkgs";
+  inputs."sdl2_nim".ref   = "master";
+  inputs."sdl2_nim".repo  = "sdl2_nim";
   inputs."sdl2_nim".type  = "github";
   inputs."sdl2_nim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sdl2_nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."gifenc".dir   = "nimpkgs/g/gifenc";
-  inputs."gifenc".owner = "riinr";
-  inputs."gifenc".ref   = "flake-pinning";
-  inputs."gifenc".repo  = "flake-nimble";
+  inputs."gifenc".owner = "nim-nix-pkgs";
+  inputs."gifenc".ref   = "master";
+  inputs."gifenc".repo  = "gifenc";
   inputs."gifenc".type  = "github";
   inputs."gifenc".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gifenc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimpng".dir   = "nimpkgs/n/nimpng";
-  inputs."nimpng".owner = "riinr";
-  inputs."nimpng".ref   = "flake-pinning";
-  inputs."nimpng".repo  = "flake-nimble";
+  inputs."nimpng".owner = "nim-nix-pkgs";
+  inputs."nimpng".ref   = "master";
+  inputs."nimpng".repo  = "nimpng";
   inputs."nimpng".type  = "github";
   inputs."nimpng".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpng".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."zippy".dir   = "nimpkgs/z/zippy";
-  inputs."zippy".owner = "riinr";
-  inputs."zippy".ref   = "flake-pinning";
-  inputs."zippy".repo  = "flake-nimble";
+  inputs."zippy".owner = "nim-nix-pkgs";
+  inputs."zippy".ref   = "master";
+  inputs."zippy".repo  = "zippy";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

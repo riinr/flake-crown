@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."freeimage-master".url = "path:./master";
+  inputs."freeimage-master".dir   = "master";
+  inputs."freeimage-master".owner = "nim-nix-pkgs";
+  inputs."freeimage-master".ref   = "master";
+  inputs."freeimage-master".repo  = "freeimage";
+  inputs."freeimage-master".type  = "github";
   inputs."freeimage-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."freeimage-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

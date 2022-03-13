@@ -7,19 +7,35 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."proxyproto-master".url = "path:./master";
+  inputs."proxyproto-master".dir   = "master";
+  inputs."proxyproto-master".owner = "nim-nix-pkgs";
+  inputs."proxyproto-master".ref   = "master";
+  inputs."proxyproto-master".repo  = "proxyproto";
+  inputs."proxyproto-master".type  = "github";
   inputs."proxyproto-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."proxyproto-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."proxyproto-0_1_0".url = "path:./0_1_0";
+  inputs."proxyproto-0_1_0".dir   = "0_1_0";
+  inputs."proxyproto-0_1_0".owner = "nim-nix-pkgs";
+  inputs."proxyproto-0_1_0".ref   = "master";
+  inputs."proxyproto-0_1_0".repo  = "proxyproto";
+  inputs."proxyproto-0_1_0".type  = "github";
   inputs."proxyproto-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."proxyproto-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."proxyproto-0_1_1".url = "path:./0_1_1";
+  inputs."proxyproto-0_1_1".dir   = "0_1_1";
+  inputs."proxyproto-0_1_1".owner = "nim-nix-pkgs";
+  inputs."proxyproto-0_1_1".ref   = "master";
+  inputs."proxyproto-0_1_1".repo  = "proxyproto";
+  inputs."proxyproto-0_1_1".type  = "github";
   inputs."proxyproto-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."proxyproto-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."proxyproto-0_1_2".url = "path:./0_1_2";
+  inputs."proxyproto-0_1_2".dir   = "0_1_2";
+  inputs."proxyproto-0_1_2".owner = "nim-nix-pkgs";
+  inputs."proxyproto-0_1_2".ref   = "master";
+  inputs."proxyproto-0_1_2".repo  = "proxyproto";
+  inputs."proxyproto-0_1_2".type  = "github";
   inputs."proxyproto-0_1_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."proxyproto-0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

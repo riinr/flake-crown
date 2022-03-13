@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."simpledecimal-master".url = "path:./master";
+  inputs."simpledecimal-master".dir   = "master";
+  inputs."simpledecimal-master".owner = "nim-nix-pkgs";
+  inputs."simpledecimal-master".ref   = "master";
+  inputs."simpledecimal-master".repo  = "simpledecimal";
+  inputs."simpledecimal-master".type  = "github";
   inputs."simpledecimal-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."simpledecimal-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."simpledecimal-0_1_0".url = "path:./0_1_0";
+  inputs."simpledecimal-0_1_0".dir   = "0_1_0";
+  inputs."simpledecimal-0_1_0".owner = "nim-nix-pkgs";
+  inputs."simpledecimal-0_1_0".ref   = "master";
+  inputs."simpledecimal-0_1_0".repo  = "simpledecimal";
+  inputs."simpledecimal-0_1_0".type  = "github";
   inputs."simpledecimal-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."simpledecimal-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

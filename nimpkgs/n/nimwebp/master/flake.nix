@@ -13,18 +13,16 @@
   inputs.src-nimwebp-master.repo  = "nimwebp";
   inputs.src-nimwebp-master.type  = "github";
   
-  inputs."nimpng".dir   = "nimpkgs/n/nimpng";
-  inputs."nimpng".owner = "riinr";
-  inputs."nimpng".ref   = "flake-pinning";
-  inputs."nimpng".repo  = "flake-nimble";
+  inputs."nimpng".owner = "nim-nix-pkgs";
+  inputs."nimpng".ref   = "master";
+  inputs."nimpng".repo  = "nimpng";
   inputs."nimpng".type  = "github";
   inputs."nimpng".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpng".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/yglukhov/clurp".dir   = "nimpkgs/h/https://github.com/yglukhov/clurp";
-  inputs."https://github.com/yglukhov/clurp".owner = "riinr";
-  inputs."https://github.com/yglukhov/clurp".ref   = "flake-pinning";
-  inputs."https://github.com/yglukhov/clurp".repo  = "flake-nimble";
+  inputs."https://github.com/yglukhov/clurp".owner = "nim-nix-pkgs";
+  inputs."https://github.com/yglukhov/clurp".ref   = "master";
+  inputs."https://github.com/yglukhov/clurp".repo  = "https://github.com/yglukhov/clurp";
   inputs."https://github.com/yglukhov/clurp".type  = "github";
   inputs."https://github.com/yglukhov/clurp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/yglukhov/clurp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

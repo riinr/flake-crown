@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."jsonob-master".url = "path:./master";
+  inputs."jsonob-master".dir   = "master";
+  inputs."jsonob-master".owner = "nim-nix-pkgs";
+  inputs."jsonob-master".ref   = "master";
+  inputs."jsonob-master".repo  = "jsonob";
+  inputs."jsonob-master".type  = "github";
   inputs."jsonob-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsonob-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

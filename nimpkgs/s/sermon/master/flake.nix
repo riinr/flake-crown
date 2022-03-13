@@ -13,10 +13,9 @@
   inputs.src-sermon-master.repo  = "nim_sermon";
   inputs.src-sermon-master.type  = "github";
   
-  inputs."jester".dir   = "nimpkgs/j/jester";
-  inputs."jester".owner = "riinr";
-  inputs."jester".ref   = "flake-pinning";
-  inputs."jester".repo  = "flake-nimble";
+  inputs."jester".owner = "nim-nix-pkgs";
+  inputs."jester".ref   = "master";
+  inputs."jester".repo  = "jester";
   inputs."jester".type  = "github";
   inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

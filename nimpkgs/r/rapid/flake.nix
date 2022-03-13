@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."rapid-master".url = "path:./master";
+  inputs."rapid-master".dir   = "master";
+  inputs."rapid-master".owner = "nim-nix-pkgs";
+  inputs."rapid-master".ref   = "master";
+  inputs."rapid-master".repo  = "rapid";
+  inputs."rapid-master".type  = "github";
   inputs."rapid-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rapid-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."rapid-2019_1".url = "path:./2019_1";
+  inputs."rapid-2019_1".dir   = "2019_1";
+  inputs."rapid-2019_1".owner = "nim-nix-pkgs";
+  inputs."rapid-2019_1".ref   = "master";
+  inputs."rapid-2019_1".repo  = "rapid";
+  inputs."rapid-2019_1".type  = "github";
   inputs."rapid-2019_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rapid-2019_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

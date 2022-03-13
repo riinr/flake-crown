@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."aws_sdk-master".url = "path:./master";
+  inputs."aws_sdk-master".dir   = "master";
+  inputs."aws_sdk-master".owner = "nim-nix-pkgs";
+  inputs."aws_sdk-master".ref   = "master";
+  inputs."aws_sdk-master".repo  = "aws_sdk";
+  inputs."aws_sdk-master".type  = "github";
   inputs."aws_sdk-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."aws_sdk-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

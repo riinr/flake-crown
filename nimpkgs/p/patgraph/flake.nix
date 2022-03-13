@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."patgraph-master".url = "path:./master";
+  inputs."patgraph-master".dir   = "master";
+  inputs."patgraph-master".owner = "nim-nix-pkgs";
+  inputs."patgraph-master".ref   = "master";
+  inputs."patgraph-master".repo  = "patgraph";
+  inputs."patgraph-master".type  = "github";
   inputs."patgraph-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."patgraph-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."patgraph-v0_1_0".url = "path:./v0_1_0";
+  inputs."patgraph-v0_1_0".dir   = "v0_1_0";
+  inputs."patgraph-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."patgraph-v0_1_0".ref   = "master";
+  inputs."patgraph-v0_1_0".repo  = "patgraph";
+  inputs."patgraph-v0_1_0".type  = "github";
   inputs."patgraph-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."patgraph-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."patgraph-v0_2_0".url = "path:./v0_2_0";
+  inputs."patgraph-v0_2_0".dir   = "v0_2_0";
+  inputs."patgraph-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."patgraph-v0_2_0".ref   = "master";
+  inputs."patgraph-v0_2_0".repo  = "patgraph";
+  inputs."patgraph-v0_2_0".type  = "github";
   inputs."patgraph-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."patgraph-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

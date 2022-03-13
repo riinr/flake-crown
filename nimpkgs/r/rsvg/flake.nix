@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."rsvg-master".url = "path:./master";
+  inputs."rsvg-master".dir   = "master";
+  inputs."rsvg-master".owner = "nim-nix-pkgs";
+  inputs."rsvg-master".ref   = "master";
+  inputs."rsvg-master".repo  = "rsvg";
+  inputs."rsvg-master".type  = "github";
   inputs."rsvg-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rsvg-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

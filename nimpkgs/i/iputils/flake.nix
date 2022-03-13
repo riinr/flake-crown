@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."iputils-master".url = "path:./master";
+  inputs."iputils-master".dir   = "master";
+  inputs."iputils-master".owner = "nim-nix-pkgs";
+  inputs."iputils-master".ref   = "master";
+  inputs."iputils-master".repo  = "iputils";
+  inputs."iputils-master".type  = "github";
   inputs."iputils-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."iputils-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."iputils-v0_1_0".url = "path:./v0_1_0";
+  inputs."iputils-v0_1_0".dir   = "v0_1_0";
+  inputs."iputils-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."iputils-v0_1_0".ref   = "master";
+  inputs."iputils-v0_1_0".repo  = "iputils";
+  inputs."iputils-v0_1_0".type  = "github";
   inputs."iputils-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."iputils-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."iputils-v0_2_0".url = "path:./v0_2_0";
+  inputs."iputils-v0_2_0".dir   = "v0_2_0";
+  inputs."iputils-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."iputils-v0_2_0".ref   = "master";
+  inputs."iputils-v0_2_0".repo  = "iputils";
+  inputs."iputils-v0_2_0".type  = "github";
   inputs."iputils-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."iputils-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

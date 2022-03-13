@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."lazyseq-main".url = "path:./main";
+  inputs."lazyseq-main".dir   = "main";
+  inputs."lazyseq-main".owner = "nim-nix-pkgs";
+  inputs."lazyseq-main".ref   = "master";
+  inputs."lazyseq-main".repo  = "lazyseq";
+  inputs."lazyseq-main".type  = "github";
   inputs."lazyseq-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."lazyseq-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

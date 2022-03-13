@@ -13,26 +13,23 @@
   inputs.src-nsu-master.repo  = "nsu";
   inputs.src-nsu-master.type  = "github";
   
-  inputs."x11".dir   = "nimpkgs/x/x11";
-  inputs."x11".owner = "riinr";
-  inputs."x11".ref   = "flake-pinning";
-  inputs."x11".repo  = "flake-nimble";
+  inputs."x11".owner = "nim-nix-pkgs";
+  inputs."x11".ref   = "master";
+  inputs."x11".repo  = "x11";
   inputs."x11".type  = "github";
   inputs."x11".inputs.nixpkgs.follows = "nixpkgs";
   inputs."x11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."winim".dir   = "nimpkgs/w/winim";
-  inputs."winim".owner = "riinr";
-  inputs."winim".ref   = "flake-pinning";
-  inputs."winim".repo  = "flake-nimble";
+  inputs."winim".owner = "nim-nix-pkgs";
+  inputs."winim".ref   = "master";
+  inputs."winim".repo  = "winim";
   inputs."winim".type  = "github";
   inputs."winim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."winim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."flippy".dir   = "nimpkgs/f/flippy";
-  inputs."flippy".owner = "riinr";
-  inputs."flippy".ref   = "flake-pinning";
-  inputs."flippy".repo  = "flake-nimble";
+  inputs."flippy".owner = "nim-nix-pkgs";
+  inputs."flippy".ref   = "master";
+  inputs."flippy".repo  = "flippy";
   inputs."flippy".type  = "github";
   inputs."flippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."flippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

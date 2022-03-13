@@ -13,34 +13,30 @@
   inputs.src-spryvm-master.repo  = "spryvm";
   inputs.src-spryvm-master.type  = "github";
   
-  inputs."python".dir   = "nimpkgs/p/python";
-  inputs."python".owner = "riinr";
-  inputs."python".ref   = "flake-pinning";
-  inputs."python".repo  = "flake-nimble";
+  inputs."python".owner = "nim-nix-pkgs";
+  inputs."python".ref   = "master";
+  inputs."python".repo  = "python";
   inputs."python".type  = "github";
   inputs."python".inputs.nixpkgs.follows = "nixpkgs";
   inputs."python".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."ui".dir   = "nimpkgs/u/ui";
-  inputs."ui".owner = "riinr";
-  inputs."ui".ref   = "flake-pinning";
-  inputs."ui".repo  = "flake-nimble";
+  inputs."ui".owner = "nim-nix-pkgs";
+  inputs."ui".ref   = "master";
+  inputs."ui".repo  = "ui";
   inputs."ui".type  = "github";
   inputs."ui".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ui".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."snappy".dir   = "nimpkgs/s/snappy";
-  inputs."snappy".owner = "riinr";
-  inputs."snappy".ref   = "flake-pinning";
-  inputs."snappy".repo  = "flake-nimble";
+  inputs."snappy".owner = "nim-nix-pkgs";
+  inputs."snappy".ref   = "master";
+  inputs."snappy".repo  = "snappy";
   inputs."snappy".type  = "github";
   inputs."snappy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."snappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/status-im/nim-rocksdb.git".dir   = "nimpkgs/h/https://github.com/status-im/nim-rocksdb.git";
-  inputs."https://github.com/status-im/nim-rocksdb.git".owner = "riinr";
-  inputs."https://github.com/status-im/nim-rocksdb.git".ref   = "flake-pinning";
-  inputs."https://github.com/status-im/nim-rocksdb.git".repo  = "flake-nimble";
+  inputs."https://github.com/status-im/nim-rocksdb.git".owner = "nim-nix-pkgs";
+  inputs."https://github.com/status-im/nim-rocksdb.git".ref   = "master";
+  inputs."https://github.com/status-im/nim-rocksdb.git".repo  = "https://github.com/status-im/nim-rocksdb.git";
   inputs."https://github.com/status-im/nim-rocksdb.git".type  = "github";
   inputs."https://github.com/status-im/nim-rocksdb.git".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/status-im/nim-rocksdb.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

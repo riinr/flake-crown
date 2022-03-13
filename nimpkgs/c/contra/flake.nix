@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."contra-master".url = "path:./master";
+  inputs."contra-master".dir   = "master";
+  inputs."contra-master".owner = "nim-nix-pkgs";
+  inputs."contra-master".ref   = "master";
+  inputs."contra-master".repo  = "contra";
+  inputs."contra-master".type  = "github";
   inputs."contra-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."contra-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

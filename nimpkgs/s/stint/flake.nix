@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."stint-master".url = "path:./master";
+  inputs."stint-master".dir   = "master";
+  inputs."stint-master".owner = "nim-nix-pkgs";
+  inputs."stint-master".ref   = "master";
+  inputs."stint-master".repo  = "stint";
+  inputs."stint-master".type  = "github";
   inputs."stint-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stint-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."opencv-master".url = "path:./master";
+  inputs."opencv-master".dir   = "master";
+  inputs."opencv-master".owner = "nim-nix-pkgs";
+  inputs."opencv-master".ref   = "master";
+  inputs."opencv-master".repo  = "opencv";
+  inputs."opencv-master".type  = "github";
   inputs."opencv-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."opencv-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

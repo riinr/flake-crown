@@ -13,18 +13,16 @@
   inputs.src-slim-v0_1_1.repo  = "slim";
   inputs.src-slim-v0_1_1.type  = "github";
   
-  inputs."hmisc".dir   = "nimpkgs/h/hmisc";
-  inputs."hmisc".owner = "riinr";
-  inputs."hmisc".ref   = "flake-pinning";
-  inputs."hmisc".repo  = "flake-nimble";
+  inputs."hmisc".owner = "nim-nix-pkgs";
+  inputs."hmisc".ref   = "master";
+  inputs."hmisc".repo  = "hmisc";
   inputs."hmisc".type  = "github";
   inputs."hmisc".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hmisc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."compiler".dir   = "nimpkgs/c/compiler";
-  inputs."compiler".owner = "riinr";
-  inputs."compiler".ref   = "flake-pinning";
-  inputs."compiler".repo  = "flake-nimble";
+  inputs."compiler".owner = "nim-nix-pkgs";
+  inputs."compiler".ref   = "master";
+  inputs."compiler".repo  = "compiler";
   inputs."compiler".type  = "github";
   inputs."compiler".inputs.nixpkgs.follows = "nixpkgs";
   inputs."compiler".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

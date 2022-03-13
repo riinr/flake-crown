@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."chronos-master".url = "path:./master";
+  inputs."chronos-master".dir   = "master";
+  inputs."chronos-master".owner = "nim-nix-pkgs";
+  inputs."chronos-master".ref   = "master";
+  inputs."chronos-master".repo  = "chronos";
+  inputs."chronos-master".type  = "github";
   inputs."chronos-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronos-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

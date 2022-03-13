@@ -13,10 +13,9 @@
   inputs.src-npg-master.repo  = "npg";
   inputs.src-npg-master.type  = "github";
   
-  inputs."passgen".dir   = "nimpkgs/p/passgen";
-  inputs."passgen".owner = "riinr";
-  inputs."passgen".ref   = "flake-pinning";
-  inputs."passgen".repo  = "flake-nimble";
+  inputs."passgen".owner = "nim-nix-pkgs";
+  inputs."passgen".ref   = "master";
+  inputs."passgen".repo  = "passgen";
   inputs."passgen".type  = "github";
   inputs."passgen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."passgen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

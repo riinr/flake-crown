@@ -13,10 +13,9 @@
   inputs.src-plz-init.repo  = "nim-pypi";
   inputs.src-plz-init.type  = "github";
   
-  inputs."nimarchive".dir   = "nimpkgs/n/nimarchive";
-  inputs."nimarchive".owner = "riinr";
-  inputs."nimarchive".ref   = "flake-pinning";
-  inputs."nimarchive".repo  = "flake-nimble";
+  inputs."nimarchive".owner = "nim-nix-pkgs";
+  inputs."nimarchive".ref   = "master";
+  inputs."nimarchive".repo  = "nimarchive";
   inputs."nimarchive".type  = "github";
   inputs."nimarchive".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimarchive".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

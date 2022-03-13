@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."asyncthreadpool-main".url = "path:./main";
+  inputs."asyncthreadpool-main".dir   = "main";
+  inputs."asyncthreadpool-main".owner = "nim-nix-pkgs";
+  inputs."asyncthreadpool-main".ref   = "master";
+  inputs."asyncthreadpool-main".repo  = "asyncthreadpool";
+  inputs."asyncthreadpool-main".type  = "github";
   inputs."asyncthreadpool-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."asyncthreadpool-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -13,42 +13,37 @@
   inputs.src-prologue-v0_3_2.repo  = "Prologue";
   inputs.src-prologue-v0_3_2.type  = "github";
   
-  inputs."regex".dir   = "nimpkgs/r/regex";
-  inputs."regex".owner = "riinr";
-  inputs."regex".ref   = "flake-pinning";
-  inputs."regex".repo  = "flake-nimble";
+  inputs."regex".owner = "nim-nix-pkgs";
+  inputs."regex".ref   = "master";
+  inputs."regex".repo  = "regex";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimcrypto".dir   = "nimpkgs/n/nimcrypto";
-  inputs."nimcrypto".owner = "riinr";
-  inputs."nimcrypto".ref   = "flake-pinning";
-  inputs."nimcrypto".repo  = "flake-nimble";
+  inputs."nimcrypto".owner = "nim-nix-pkgs";
+  inputs."nimcrypto".ref   = "master";
+  inputs."nimcrypto".repo  = "nimcrypto";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."karax".dir   = "nimpkgs/k/karax";
-  inputs."karax".owner = "riinr";
-  inputs."karax".ref   = "flake-pinning";
-  inputs."karax".repo  = "flake-nimble";
+  inputs."karax".owner = "nim-nix-pkgs";
+  inputs."karax".ref   = "master";
+  inputs."karax".repo  = "karax";
   inputs."karax".type  = "github";
   inputs."karax".inputs.nixpkgs.follows = "nixpkgs";
   inputs."karax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cookies".dir   = "nimpkgs/c/cookies";
-  inputs."cookies".owner = "riinr";
-  inputs."cookies".ref   = "flake-pinning";
-  inputs."cookies".repo  = "flake-nimble";
+  inputs."cookies".owner = "nim-nix-pkgs";
+  inputs."cookies".ref   = "master";
+  inputs."cookies".repo  = "cookies";
   inputs."cookies".type  = "github";
   inputs."cookies".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cookies".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/xflywind/httpx".dir   = "nimpkgs/h/https://github.com/xflywind/httpx";
-  inputs."https://github.com/xflywind/httpx".owner = "riinr";
-  inputs."https://github.com/xflywind/httpx".ref   = "flake-pinning";
-  inputs."https://github.com/xflywind/httpx".repo  = "flake-nimble";
+  inputs."https://github.com/xflywind/httpx".owner = "nim-nix-pkgs";
+  inputs."https://github.com/xflywind/httpx".ref   = "master";
+  inputs."https://github.com/xflywind/httpx".repo  = "https://github.com/xflywind/httpx";
   inputs."https://github.com/xflywind/httpx".type  = "github";
   inputs."https://github.com/xflywind/httpx".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/xflywind/httpx".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,10 +13,9 @@
   inputs.src-nicoru-main.repo  = "nicoru";
   inputs.src-nicoru-main.type  = "github";
   
-  inputs."https://github.com/def-/nim-syscall".dir   = "nimpkgs/h/https://github.com/def-/nim-syscall";
-  inputs."https://github.com/def-/nim-syscall".owner = "riinr";
-  inputs."https://github.com/def-/nim-syscall".ref   = "flake-pinning";
-  inputs."https://github.com/def-/nim-syscall".repo  = "flake-nimble";
+  inputs."https://github.com/def-/nim-syscall".owner = "nim-nix-pkgs";
+  inputs."https://github.com/def-/nim-syscall".ref   = "master";
+  inputs."https://github.com/def-/nim-syscall".repo  = "https://github.com/def-/nim-syscall";
   inputs."https://github.com/def-/nim-syscall".type  = "github";
   inputs."https://github.com/def-/nim-syscall".inputs.nixpkgs.follows = "nixpkgs";
   inputs."https://github.com/def-/nim-syscall".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."unsplash-master".url = "path:./master";
+  inputs."unsplash-master".dir   = "master";
+  inputs."unsplash-master".owner = "nim-nix-pkgs";
+  inputs."unsplash-master".ref   = "master";
+  inputs."unsplash-master".repo  = "unsplash";
+  inputs."unsplash-master".type  = "github";
   inputs."unsplash-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unsplash-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."unsplash-0_1_0".url = "path:./0_1_0";
+  inputs."unsplash-0_1_0".dir   = "0_1_0";
+  inputs."unsplash-0_1_0".owner = "nim-nix-pkgs";
+  inputs."unsplash-0_1_0".ref   = "master";
+  inputs."unsplash-0_1_0".repo  = "unsplash";
+  inputs."unsplash-0_1_0".type  = "github";
   inputs."unsplash-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unsplash-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

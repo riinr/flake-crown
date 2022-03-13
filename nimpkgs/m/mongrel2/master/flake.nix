@@ -13,18 +13,16 @@
   inputs.src-mongrel2-master.repo  = "nim-mongrel2";
   inputs.src-mongrel2-master.type  = "github";
   
-  inputs."tnetstring".dir   = "nimpkgs/t/tnetstring";
-  inputs."tnetstring".owner = "riinr";
-  inputs."tnetstring".ref   = "flake-pinning";
-  inputs."tnetstring".repo  = "flake-nimble";
+  inputs."tnetstring".owner = "nim-nix-pkgs";
+  inputs."tnetstring".ref   = "master";
+  inputs."tnetstring".repo  = "tnetstring";
   inputs."tnetstring".type  = "github";
   inputs."tnetstring".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tnetstring".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."zmq".dir   = "nimpkgs/z/zmq";
-  inputs."zmq".owner = "riinr";
-  inputs."zmq".ref   = "flake-pinning";
-  inputs."zmq".repo  = "flake-nimble";
+  inputs."zmq".owner = "nim-nix-pkgs";
+  inputs."zmq".ref   = "master";
+  inputs."zmq".repo  = "zmq";
   inputs."zmq".type  = "github";
   inputs."zmq".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zmq".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,26 +13,23 @@
   inputs.src-paravim-0_17_1.repo  = "paravim";
   inputs.src-paravim-0_17_1.type  = "github";
   
-  inputs."paranim".dir   = "nimpkgs/p/paranim";
-  inputs."paranim".owner = "riinr";
-  inputs."paranim".ref   = "flake-pinning";
-  inputs."paranim".repo  = "flake-nimble";
+  inputs."paranim".owner = "nim-nix-pkgs";
+  inputs."paranim".ref   = "master";
+  inputs."paranim".repo  = "paranim";
   inputs."paranim".type  = "github";
   inputs."paranim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."paranim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."pararules".dir   = "nimpkgs/p/pararules";
-  inputs."pararules".owner = "riinr";
-  inputs."pararules".ref   = "flake-pinning";
-  inputs."pararules".repo  = "flake-nimble";
+  inputs."pararules".owner = "nim-nix-pkgs";
+  inputs."pararules".ref   = "master";
+  inputs."pararules".repo  = "pararules";
   inputs."pararules".type  = "github";
   inputs."pararules".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pararules".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."paratext".dir   = "nimpkgs/p/paratext";
-  inputs."paratext".owner = "riinr";
-  inputs."paratext".ref   = "flake-pinning";
-  inputs."paratext".repo  = "flake-nimble";
+  inputs."paratext".owner = "nim-nix-pkgs";
+  inputs."paratext".ref   = "master";
+  inputs."paratext".repo  = "paratext";
   inputs."paratext".type  = "github";
   inputs."paratext".inputs.nixpkgs.follows = "nixpkgs";
   inputs."paratext".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

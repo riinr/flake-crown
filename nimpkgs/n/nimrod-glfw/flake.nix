@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nimrod-glfw-master".url = "path:./master";
+  inputs."nimrod-glfw-master".dir   = "master";
+  inputs."nimrod-glfw-master".owner = "nim-nix-pkgs";
+  inputs."nimrod-glfw-master".ref   = "master";
+  inputs."nimrod-glfw-master".repo  = "nimrod-glfw";
+  inputs."nimrod-glfw-master".type  = "github";
   inputs."nimrod-glfw-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimrod-glfw-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

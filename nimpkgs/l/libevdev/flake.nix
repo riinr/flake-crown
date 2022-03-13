@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."libevdev-master".url = "path:./master";
+  inputs."libevdev-master".dir   = "master";
+  inputs."libevdev-master".owner = "nim-nix-pkgs";
+  inputs."libevdev-master".ref   = "master";
+  inputs."libevdev-master".repo  = "libevdev";
+  inputs."libevdev-master".type  = "github";
   inputs."libevdev-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libevdev-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

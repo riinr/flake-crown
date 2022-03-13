@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."colorize-master".url = "path:./master";
+  inputs."colorize-master".dir   = "master";
+  inputs."colorize-master".owner = "nim-nix-pkgs";
+  inputs."colorize-master".ref   = "master";
+  inputs."colorize-master".repo  = "colorize";
+  inputs."colorize-master".type  = "github";
   inputs."colorize-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."colorize-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

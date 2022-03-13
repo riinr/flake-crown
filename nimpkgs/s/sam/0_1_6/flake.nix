@@ -13,10 +13,9 @@
   inputs.src-sam-0_1_6.repo  = "sam.nim";
   inputs.src-sam-0_1_6.type  = "github";
   
-  inputs."jsmn".dir   = "nimpkgs/j/jsmn";
-  inputs."jsmn".owner = "riinr";
-  inputs."jsmn".ref   = "flake-pinning";
-  inputs."jsmn".repo  = "flake-nimble";
+  inputs."jsmn".owner = "nim-nix-pkgs";
+  inputs."jsmn".ref   = "master";
+  inputs."jsmn".repo  = "jsmn";
   inputs."jsmn".type  = "github";
   inputs."jsmn".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsmn".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

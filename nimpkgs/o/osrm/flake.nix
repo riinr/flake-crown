@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."osrm-master".url = "path:./master";
+  inputs."osrm-master".dir   = "master";
+  inputs."osrm-master".owner = "nim-nix-pkgs";
+  inputs."osrm-master".ref   = "master";
+  inputs."osrm-master".repo  = "osrm";
+  inputs."osrm-master".type  = "github";
   inputs."osrm-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."osrm-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."osrm-0_1_5".url = "path:./0_1_5";
+  inputs."osrm-0_1_5".dir   = "0_1_5";
+  inputs."osrm-0_1_5".owner = "nim-nix-pkgs";
+  inputs."osrm-0_1_5".ref   = "master";
+  inputs."osrm-0_1_5".repo  = "osrm";
+  inputs."osrm-0_1_5".type  = "github";
   inputs."osrm-0_1_5".inputs.nixpkgs.follows = "nixpkgs";
   inputs."osrm-0_1_5".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

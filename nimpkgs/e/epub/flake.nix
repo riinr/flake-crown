@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."epub-master".url = "path:./master";
+  inputs."epub-master".dir   = "master";
+  inputs."epub-master".owner = "nim-nix-pkgs";
+  inputs."epub-master".ref   = "master";
+  inputs."epub-master".repo  = "epub";
+  inputs."epub-master".type  = "github";
   inputs."epub-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."epub-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

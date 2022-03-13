@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."soundex-master".url = "path:./master";
+  inputs."soundex-master".dir   = "master";
+  inputs."soundex-master".owner = "nim-nix-pkgs";
+  inputs."soundex-master".ref   = "master";
+  inputs."soundex-master".repo  = "soundex";
+  inputs."soundex-master".type  = "github";
   inputs."soundex-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."soundex-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

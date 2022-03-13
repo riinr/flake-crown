@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."sctp-master".url = "path:./master";
+  inputs."sctp-master".dir   = "master";
+  inputs."sctp-master".owner = "nim-nix-pkgs";
+  inputs."sctp-master".ref   = "master";
+  inputs."sctp-master".repo  = "sctp";
+  inputs."sctp-master".type  = "github";
   inputs."sctp-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sctp-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

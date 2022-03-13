@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."osutil-master".url = "path:./master";
+  inputs."osutil-master".dir   = "master";
+  inputs."osutil-master".owner = "nim-nix-pkgs";
+  inputs."osutil-master".ref   = "master";
+  inputs."osutil-master".repo  = "osutil";
+  inputs."osutil-master".type  = "github";
   inputs."osutil-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."osutil-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

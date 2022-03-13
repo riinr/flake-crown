@@ -13,26 +13,23 @@
   inputs.src-hpprint-v0_2_15.repo  = "hpprint";
   inputs.src-hpprint-v0_2_15.type  = "github";
   
-  inputs."hdrawing".dir   = "nimpkgs/h/hdrawing";
-  inputs."hdrawing".owner = "riinr";
-  inputs."hdrawing".ref   = "flake-pinning";
-  inputs."hdrawing".repo  = "flake-nimble";
+  inputs."hdrawing".owner = "nim-nix-pkgs";
+  inputs."hdrawing".ref   = "master";
+  inputs."hdrawing".repo  = "hdrawing";
   inputs."hdrawing".type  = "github";
   inputs."hdrawing".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hdrawing".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."hnimast".dir   = "nimpkgs/h/hnimast";
-  inputs."hnimast".owner = "riinr";
-  inputs."hnimast".ref   = "flake-pinning";
-  inputs."hnimast".repo  = "flake-nimble";
+  inputs."hnimast".owner = "nim-nix-pkgs";
+  inputs."hnimast".ref   = "master";
+  inputs."hnimast".repo  = "hnimast";
   inputs."hnimast".type  = "github";
   inputs."hnimast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hnimast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."hmisc".dir   = "nimpkgs/h/hmisc";
-  inputs."hmisc".owner = "riinr";
-  inputs."hmisc".ref   = "flake-pinning";
-  inputs."hmisc".repo  = "flake-nimble";
+  inputs."hmisc".owner = "nim-nix-pkgs";
+  inputs."hmisc".ref   = "master";
+  inputs."hmisc".repo  = "hmisc";
   inputs."hmisc".type  = "github";
   inputs."hmisc".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hmisc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

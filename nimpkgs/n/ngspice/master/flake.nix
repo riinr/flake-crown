@@ -13,18 +13,16 @@
   inputs.src-ngspice-master.repo  = "ngspice";
   inputs.src-ngspice-master.type  = "github";
   
-  inputs."sorta".dir   = "nimpkgs/s/sorta";
-  inputs."sorta".owner = "riinr";
-  inputs."sorta".ref   = "flake-pinning";
-  inputs."sorta".repo  = "flake-nimble";
+  inputs."sorta".owner = "nim-nix-pkgs";
+  inputs."sorta".ref   = "master";
+  inputs."sorta".repo  = "sorta";
   inputs."sorta".type  = "github";
   inputs."sorta".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sorta".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."hmisc".dir   = "nimpkgs/h/hmisc";
-  inputs."hmisc".owner = "riinr";
-  inputs."hmisc".ref   = "flake-pinning";
-  inputs."hmisc".repo  = "flake-nimble";
+  inputs."hmisc".owner = "nim-nix-pkgs";
+  inputs."hmisc".ref   = "master";
+  inputs."hmisc".repo  = "hmisc";
   inputs."hmisc".type  = "github";
   inputs."hmisc".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hmisc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

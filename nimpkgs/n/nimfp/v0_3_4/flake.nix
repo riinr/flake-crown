@@ -13,18 +13,16 @@
   inputs.src-nimfp-v0_3_4.repo  = "nimfp";
   inputs.src-nimfp-v0_3_4.type  = "github";
   
-  inputs."nimboost".dir   = "nimpkgs/n/nimboost";
-  inputs."nimboost".owner = "riinr";
-  inputs."nimboost".ref   = "flake-pinning";
-  inputs."nimboost".repo  = "flake-nimble";
+  inputs."nimboost".owner = "nim-nix-pkgs";
+  inputs."nimboost".ref   = "master";
+  inputs."nimboost".repo  = "nimboost";
   inputs."nimboost".type  = "github";
   inputs."nimboost".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimboost".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."classy".dir   = "nimpkgs/c/classy";
-  inputs."classy".owner = "riinr";
-  inputs."classy".ref   = "flake-pinning";
-  inputs."classy".repo  = "flake-nimble";
+  inputs."classy".owner = "nim-nix-pkgs";
+  inputs."classy".ref   = "master";
+  inputs."classy".repo  = "classy";
   inputs."classy".type  = "github";
   inputs."classy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."classy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

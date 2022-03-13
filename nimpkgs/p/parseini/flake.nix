@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."parseini-master".url = "path:./master";
+  inputs."parseini-master".dir   = "master";
+  inputs."parseini-master".owner = "nim-nix-pkgs";
+  inputs."parseini-master".ref   = "master";
+  inputs."parseini-master".repo  = "parseini";
+  inputs."parseini-master".type  = "github";
   inputs."parseini-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."parseini-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."parseini-0_1_0".url = "path:./0_1_0";
+  inputs."parseini-0_1_0".dir   = "0_1_0";
+  inputs."parseini-0_1_0".owner = "nim-nix-pkgs";
+  inputs."parseini-0_1_0".ref   = "master";
+  inputs."parseini-0_1_0".repo  = "parseini";
+  inputs."parseini-0_1_0".type  = "github";
   inputs."parseini-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."parseini-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."parseini-0_2_0".url = "path:./0_2_0";
+  inputs."parseini-0_2_0".dir   = "0_2_0";
+  inputs."parseini-0_2_0".owner = "nim-nix-pkgs";
+  inputs."parseini-0_2_0".ref   = "master";
+  inputs."parseini-0_2_0".repo  = "parseini";
+  inputs."parseini-0_2_0".type  = "github";
   inputs."parseini-0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."parseini-0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

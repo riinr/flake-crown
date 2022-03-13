@@ -13,26 +13,23 @@
   inputs.src-cucumber-v0_0_11.repo  = "cucumber_nim";
   inputs.src-cucumber-v0_0_11.type  = "github";
   
-  inputs."nre".dir   = "nimpkgs/n/nre";
-  inputs."nre".owner = "riinr";
-  inputs."nre".ref   = "flake-pinning";
-  inputs."nre".repo  = "flake-nimble";
+  inputs."nre".owner = "nim-nix-pkgs";
+  inputs."nre".ref   = "master";
+  inputs."nre".repo  = "nre";
   inputs."nre".type  = "github";
   inputs."nre".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nre".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."commandeer".dir   = "nimpkgs/c/commandeer";
-  inputs."commandeer".owner = "riinr";
-  inputs."commandeer".ref   = "flake-pinning";
-  inputs."commandeer".repo  = "flake-nimble";
+  inputs."commandeer".owner = "nim-nix-pkgs";
+  inputs."commandeer".ref   = "master";
+  inputs."commandeer".repo  = "commandeer";
   inputs."commandeer".type  = "github";
   inputs."commandeer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."commandeer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."tempfile".dir   = "nimpkgs/t/tempfile";
-  inputs."tempfile".owner = "riinr";
-  inputs."tempfile".ref   = "flake-pinning";
-  inputs."tempfile".repo  = "flake-nimble";
+  inputs."tempfile".owner = "nim-nix-pkgs";
+  inputs."tempfile".ref   = "master";
+  inputs."tempfile".repo  = "tempfile";
   inputs."tempfile".type  = "github";
   inputs."tempfile".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tempfile".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."timespec_get-master".url = "path:./master";
+  inputs."timespec_get-master".dir   = "master";
+  inputs."timespec_get-master".owner = "nim-nix-pkgs";
+  inputs."timespec_get-master".ref   = "master";
+  inputs."timespec_get-master".repo  = "timespec_get";
+  inputs."timespec_get-master".type  = "github";
   inputs."timespec_get-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."timespec_get-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

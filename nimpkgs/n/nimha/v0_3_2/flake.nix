@@ -13,58 +13,51 @@
   inputs.src-nimha-v0_3_2.repo  = "nim_homeassistant";
   inputs.src-nimha-v0_3_2.type  = "github";
   
-  inputs."jester".dir   = "nimpkgs/j/jester";
-  inputs."jester".owner = "riinr";
-  inputs."jester".ref   = "flake-pinning";
-  inputs."jester".repo  = "flake-nimble";
+  inputs."jester".owner = "nim-nix-pkgs";
+  inputs."jester".ref   = "master";
+  inputs."jester".repo  = "jester";
   inputs."jester".type  = "github";
   inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."recaptcha".dir   = "nimpkgs/r/recaptcha";
-  inputs."recaptcha".owner = "riinr";
-  inputs."recaptcha".ref   = "flake-pinning";
-  inputs."recaptcha".repo  = "flake-nimble";
+  inputs."recaptcha".owner = "nim-nix-pkgs";
+  inputs."recaptcha".ref   = "master";
+  inputs."recaptcha".repo  = "recaptcha";
   inputs."recaptcha".type  = "github";
   inputs."recaptcha".inputs.nixpkgs.follows = "nixpkgs";
   inputs."recaptcha".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."bcrypt".dir   = "nimpkgs/b/bcrypt";
-  inputs."bcrypt".owner = "riinr";
-  inputs."bcrypt".ref   = "flake-pinning";
-  inputs."bcrypt".repo  = "flake-nimble";
+  inputs."bcrypt".owner = "nim-nix-pkgs";
+  inputs."bcrypt".ref   = "master";
+  inputs."bcrypt".repo  = "bcrypt";
   inputs."bcrypt".type  = "github";
   inputs."bcrypt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bcrypt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."multicast".dir   = "nimpkgs/m/multicast";
-  inputs."multicast".owner = "riinr";
-  inputs."multicast".ref   = "flake-pinning";
-  inputs."multicast".repo  = "flake-nimble";
+  inputs."multicast".owner = "nim-nix-pkgs";
+  inputs."multicast".ref   = "master";
+  inputs."multicast".repo  = "multicast";
   inputs."multicast".type  = "github";
   inputs."multicast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."multicast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."websocket".dir   = "nimpkgs/w/websocket";
-  inputs."websocket".owner = "riinr";
-  inputs."websocket".ref   = "flake-pinning";
-  inputs."websocket".repo  = "flake-nimble";
+  inputs."websocket".owner = "nim-nix-pkgs";
+  inputs."websocket".ref   = "master";
+  inputs."websocket".repo  = "websocket";
   inputs."websocket".type  = "github";
   inputs."websocket".inputs.nixpkgs.follows = "nixpkgs";
   inputs."websocket".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."wiringpinim".dir   = "nimpkgs/w/wiringpinim";
-  inputs."wiringpinim".owner = "riinr";
-  inputs."wiringpinim".ref   = "flake-pinning";
-  inputs."wiringpinim".repo  = "flake-nimble";
+  inputs."wiringpinim".owner = "nim-nix-pkgs";
+  inputs."wiringpinim".ref   = "master";
+  inputs."wiringpinim".repo  = "wiringpinim";
   inputs."wiringpinim".type  = "github";
   inputs."wiringpinim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."wiringpinim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."xiaomi".dir   = "nimpkgs/x/xiaomi";
-  inputs."xiaomi".owner = "riinr";
-  inputs."xiaomi".ref   = "flake-pinning";
-  inputs."xiaomi".repo  = "flake-nimble";
+  inputs."xiaomi".owner = "nim-nix-pkgs";
+  inputs."xiaomi".ref   = "master";
+  inputs."xiaomi".repo  = "xiaomi";
   inputs."xiaomi".type  = "github";
   inputs."xiaomi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."xiaomi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

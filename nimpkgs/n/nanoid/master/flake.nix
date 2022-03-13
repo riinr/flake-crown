@@ -13,10 +13,9 @@
   inputs.src-nanoid-master.repo  = "nanoid.nim";
   inputs.src-nanoid-master.type  = "github";
   
-  inputs."random".dir   = "nimpkgs/r/random";
-  inputs."random".owner = "riinr";
-  inputs."random".ref   = "flake-pinning";
-  inputs."random".repo  = "flake-nimble";
+  inputs."random".owner = "nim-nix-pkgs";
+  inputs."random".ref   = "master";
+  inputs."random".repo  = "random";
   inputs."random".type  = "github";
   inputs."random".inputs.nixpkgs.follows = "nixpkgs";
   inputs."random".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

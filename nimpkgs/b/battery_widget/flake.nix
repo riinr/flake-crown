@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."battery_widget-master".url = "path:./master";
+  inputs."battery_widget-master".dir   = "master";
+  inputs."battery_widget-master".owner = "nim-nix-pkgs";
+  inputs."battery_widget-master".ref   = "master";
+  inputs."battery_widget-master".repo  = "battery_widget";
+  inputs."battery_widget-master".type  = "github";
   inputs."battery_widget-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."battery_widget-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

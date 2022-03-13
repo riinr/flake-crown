@@ -7,19 +7,35 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."dialogs-master".url = "path:./master";
+  inputs."dialogs-master".dir   = "master";
+  inputs."dialogs-master".owner = "nim-nix-pkgs";
+  inputs."dialogs-master".ref   = "master";
+  inputs."dialogs-master".repo  = "dialogs";
+  inputs."dialogs-master".type  = "github";
   inputs."dialogs-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dialogs-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."dialogs-v1_0_0".url = "path:./v1_0_0";
+  inputs."dialogs-v1_0_0".dir   = "v1_0_0";
+  inputs."dialogs-v1_0_0".owner = "nim-nix-pkgs";
+  inputs."dialogs-v1_0_0".ref   = "master";
+  inputs."dialogs-v1_0_0".repo  = "dialogs";
+  inputs."dialogs-v1_0_0".type  = "github";
   inputs."dialogs-v1_0_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dialogs-v1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."dialogs-v1_1_0".url = "path:./v1_1_0";
+  inputs."dialogs-v1_1_0".dir   = "v1_1_0";
+  inputs."dialogs-v1_1_0".owner = "nim-nix-pkgs";
+  inputs."dialogs-v1_1_0".ref   = "master";
+  inputs."dialogs-v1_1_0".repo  = "dialogs";
+  inputs."dialogs-v1_1_0".type  = "github";
   inputs."dialogs-v1_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dialogs-v1_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."dialogs-v1_1_1".url = "path:./v1_1_1";
+  inputs."dialogs-v1_1_1".dir   = "v1_1_1";
+  inputs."dialogs-v1_1_1".owner = "nim-nix-pkgs";
+  inputs."dialogs-v1_1_1".ref   = "master";
+  inputs."dialogs-v1_1_1".repo  = "dialogs";
+  inputs."dialogs-v1_1_1".type  = "github";
   inputs."dialogs-v1_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dialogs-v1_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

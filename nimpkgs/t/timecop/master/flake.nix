@@ -13,10 +13,9 @@
   inputs.src-timecop-master.repo  = "timecop.nim";
   inputs.src-timecop-master.type  = "github";
   
-  inputs."subhook".dir   = "nimpkgs/s/subhook";
-  inputs."subhook".owner = "riinr";
-  inputs."subhook".ref   = "flake-pinning";
-  inputs."subhook".repo  = "flake-nimble";
+  inputs."subhook".owner = "nim-nix-pkgs";
+  inputs."subhook".ref   = "master";
+  inputs."subhook".repo  = "subhook";
   inputs."subhook".type  = "github";
   inputs."subhook".inputs.nixpkgs.follows = "nixpkgs";
   inputs."subhook".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."openssl_evp-master".url = "path:./master";
+  inputs."openssl_evp-master".dir   = "master";
+  inputs."openssl_evp-master".owner = "nim-nix-pkgs";
+  inputs."openssl_evp-master".ref   = "master";
+  inputs."openssl_evp-master".repo  = "openssl_evp";
+  inputs."openssl_evp-master".type  = "github";
   inputs."openssl_evp-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."openssl_evp-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -13,10 +13,9 @@
   inputs.src-plists-master.repo  = "plists";
   inputs.src-plists-master.type  = "github";
   
-  inputs."darwin".dir   = "nimpkgs/d/darwin";
-  inputs."darwin".owner = "riinr";
-  inputs."darwin".ref   = "flake-pinning";
-  inputs."darwin".repo  = "flake-nimble";
+  inputs."darwin".owner = "nim-nix-pkgs";
+  inputs."darwin".ref   = "master";
+  inputs."darwin".repo  = "darwin";
   inputs."darwin".type  = "github";
   inputs."darwin".inputs.nixpkgs.follows = "nixpkgs";
   inputs."darwin".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

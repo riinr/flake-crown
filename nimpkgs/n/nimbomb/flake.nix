@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nimbomb-master".url = "path:./master";
+  inputs."nimbomb-master".dir   = "master";
+  inputs."nimbomb-master".owner = "nim-nix-pkgs";
+  inputs."nimbomb-master".ref   = "master";
+  inputs."nimbomb-master".repo  = "nimbomb";
+  inputs."nimbomb-master".type  = "github";
   inputs."nimbomb-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimbomb-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimbomb-v0_1_0".url = "path:./v0_1_0";
+  inputs."nimbomb-v0_1_0".dir   = "v0_1_0";
+  inputs."nimbomb-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."nimbomb-v0_1_0".ref   = "master";
+  inputs."nimbomb-v0_1_0".repo  = "nimbomb";
+  inputs."nimbomb-v0_1_0".type  = "github";
   inputs."nimbomb-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimbomb-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

@@ -13,10 +13,9 @@
   inputs.src-protobuf-master.repo  = "protobuf-nim";
   inputs.src-protobuf-master.type  = "github";
   
-  inputs."combparser".dir   = "nimpkgs/c/combparser";
-  inputs."combparser".owner = "riinr";
-  inputs."combparser".ref   = "flake-pinning";
-  inputs."combparser".repo  = "flake-nimble";
+  inputs."combparser".owner = "nim-nix-pkgs";
+  inputs."combparser".ref   = "master";
+  inputs."combparser".repo  = "combparser";
   inputs."combparser".type  = "github";
   inputs."combparser".inputs.nixpkgs.follows = "nixpkgs";
   inputs."combparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

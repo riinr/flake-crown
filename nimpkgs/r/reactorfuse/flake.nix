@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."reactorfuse-master".url = "path:./master";
+  inputs."reactorfuse-master".dir   = "master";
+  inputs."reactorfuse-master".owner = "nim-nix-pkgs";
+  inputs."reactorfuse-master".ref   = "master";
+  inputs."reactorfuse-master".repo  = "reactorfuse";
+  inputs."reactorfuse-master".type  = "github";
   inputs."reactorfuse-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."reactorfuse-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

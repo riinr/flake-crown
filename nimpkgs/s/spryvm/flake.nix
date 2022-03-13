@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."spryvm-master".url = "path:./master";
+  inputs."spryvm-master".dir   = "master";
+  inputs."spryvm-master".owner = "nim-nix-pkgs";
+  inputs."spryvm-master".ref   = "master";
+  inputs."spryvm-master".repo  = "spryvm";
+  inputs."spryvm-master".type  = "github";
   inputs."spryvm-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."spryvm-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

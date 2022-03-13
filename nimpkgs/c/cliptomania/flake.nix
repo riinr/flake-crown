@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."cliptomania-master".url = "path:./master";
+  inputs."cliptomania-master".dir   = "master";
+  inputs."cliptomania-master".owner = "nim-nix-pkgs";
+  inputs."cliptomania-master".ref   = "master";
+  inputs."cliptomania-master".repo  = "cliptomania";
+  inputs."cliptomania-master".type  = "github";
   inputs."cliptomania-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cliptomania-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

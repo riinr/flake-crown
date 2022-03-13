@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."pokereval-master".url = "path:./master";
+  inputs."pokereval-master".dir   = "master";
+  inputs."pokereval-master".owner = "nim-nix-pkgs";
+  inputs."pokereval-master".ref   = "master";
+  inputs."pokereval-master".repo  = "pokereval";
+  inputs."pokereval-master".type  = "github";
   inputs."pokereval-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pokereval-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."pokereval-v0_1_0".url = "path:./v0_1_0";
+  inputs."pokereval-v0_1_0".dir   = "v0_1_0";
+  inputs."pokereval-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."pokereval-v0_1_0".ref   = "master";
+  inputs."pokereval-v0_1_0".repo  = "pokereval";
+  inputs."pokereval-v0_1_0".type  = "github";
   inputs."pokereval-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pokereval-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

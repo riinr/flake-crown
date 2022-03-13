@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."libclang-master".url = "path:./master";
+  inputs."libclang-master".dir   = "master";
+  inputs."libclang-master".owner = "nim-nix-pkgs";
+  inputs."libclang-master".ref   = "master";
+  inputs."libclang-master".repo  = "libclang";
+  inputs."libclang-master".type  = "github";
   inputs."libclang-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libclang-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

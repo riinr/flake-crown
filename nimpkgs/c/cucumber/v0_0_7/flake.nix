@@ -13,18 +13,16 @@
   inputs.src-cucumber-v0_0_7.repo  = "cucumber_nim";
   inputs.src-cucumber-v0_0_7.type  = "github";
   
-  inputs."nre".dir   = "nimpkgs/n/nre";
-  inputs."nre".owner = "riinr";
-  inputs."nre".ref   = "flake-pinning";
-  inputs."nre".repo  = "flake-nimble";
+  inputs."nre".owner = "nim-nix-pkgs";
+  inputs."nre".ref   = "master";
+  inputs."nre".repo  = "nre";
   inputs."nre".type  = "github";
   inputs."nre".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nre".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."commandeer".dir   = "nimpkgs/c/commandeer";
-  inputs."commandeer".owner = "riinr";
-  inputs."commandeer".ref   = "flake-pinning";
-  inputs."commandeer".repo  = "flake-nimble";
+  inputs."commandeer".owner = "nim-nix-pkgs";
+  inputs."commandeer".ref   = "master";
+  inputs."commandeer".repo  = "commandeer";
   inputs."commandeer".type  = "github";
   inputs."commandeer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."commandeer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

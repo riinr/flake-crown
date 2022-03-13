@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."steganography-master".url = "path:./master";
+  inputs."steganography-master".dir   = "master";
+  inputs."steganography-master".owner = "nim-nix-pkgs";
+  inputs."steganography-master".ref   = "master";
+  inputs."steganography-master".repo  = "steganography";
+  inputs."steganography-master".type  = "github";
   inputs."steganography-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."steganography-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

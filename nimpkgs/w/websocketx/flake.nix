@@ -7,15 +7,27 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."websocketx-master".url = "path:./master";
+  inputs."websocketx-master".dir   = "master";
+  inputs."websocketx-master".owner = "nim-nix-pkgs";
+  inputs."websocketx-master".ref   = "master";
+  inputs."websocketx-master".repo  = "websocketx";
+  inputs."websocketx-master".type  = "github";
   inputs."websocketx-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."websocketx-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."websocketx-v0_1_0".url = "path:./v0_1_0";
+  inputs."websocketx-v0_1_0".dir   = "v0_1_0";
+  inputs."websocketx-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."websocketx-v0_1_0".ref   = "master";
+  inputs."websocketx-v0_1_0".repo  = "websocketx";
+  inputs."websocketx-v0_1_0".type  = "github";
   inputs."websocketx-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."websocketx-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."websocketx-v0_1_2".url = "path:./v0_1_2";
+  inputs."websocketx-v0_1_2".dir   = "v0_1_2";
+  inputs."websocketx-v0_1_2".owner = "nim-nix-pkgs";
+  inputs."websocketx-v0_1_2".ref   = "master";
+  inputs."websocketx-v0_1_2".repo  = "websocketx";
+  inputs."websocketx-v0_1_2".type  = "github";
   inputs."websocketx-v0_1_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."websocketx-v0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

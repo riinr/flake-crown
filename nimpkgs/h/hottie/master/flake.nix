@@ -13,18 +13,16 @@
   inputs.src-hottie-master.repo  = "hottie";
   inputs.src-hottie-master.type  = "github";
   
-  inputs."cligen".dir   = "nimpkgs/c/cligen";
-  inputs."cligen".owner = "riinr";
-  inputs."cligen".ref   = "flake-pinning";
-  inputs."cligen".repo  = "flake-nimble";
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."ptrace".dir   = "nimpkgs/p/ptrace";
-  inputs."ptrace".owner = "riinr";
-  inputs."ptrace".ref   = "flake-pinning";
-  inputs."ptrace".repo  = "flake-nimble";
+  inputs."ptrace".owner = "nim-nix-pkgs";
+  inputs."ptrace".ref   = "master";
+  inputs."ptrace".repo  = "ptrace";
   inputs."ptrace".type  = "github";
   inputs."ptrace".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ptrace".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

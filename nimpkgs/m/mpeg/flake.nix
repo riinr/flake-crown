@@ -7,11 +7,19 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."mpeg-master".url = "path:./master";
+  inputs."mpeg-master".dir   = "master";
+  inputs."mpeg-master".owner = "nim-nix-pkgs";
+  inputs."mpeg-master".ref   = "master";
+  inputs."mpeg-master".repo  = "mpeg";
+  inputs."mpeg-master".type  = "github";
   inputs."mpeg-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mpeg-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."mpeg-v0_1_1".url = "path:./v0_1_1";
+  inputs."mpeg-v0_1_1".dir   = "v0_1_1";
+  inputs."mpeg-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."mpeg-v0_1_1".ref   = "master";
+  inputs."mpeg-v0_1_1".repo  = "mpeg";
+  inputs."mpeg-v0_1_1".type  = "github";
   inputs."mpeg-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mpeg-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

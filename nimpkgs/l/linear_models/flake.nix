@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."linear_models-master".url = "path:./master";
+  inputs."linear_models-master".dir   = "master";
+  inputs."linear_models-master".owner = "nim-nix-pkgs";
+  inputs."linear_models-master".ref   = "master";
+  inputs."linear_models-master".repo  = "linear_models";
+  inputs."linear_models-master".type  = "github";
   inputs."linear_models-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."linear_models-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   

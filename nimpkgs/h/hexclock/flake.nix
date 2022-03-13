@@ -7,7 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."hexclock-master".url = "path:./master";
+  inputs."hexclock-master".dir   = "master";
+  inputs."hexclock-master".owner = "nim-nix-pkgs";
+  inputs."hexclock-master".ref   = "master";
+  inputs."hexclock-master".repo  = "hexclock";
+  inputs."hexclock-master".type  = "github";
   inputs."hexclock-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hexclock-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
