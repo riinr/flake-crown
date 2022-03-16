@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "mailcow-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-mailcow-main": "src-mailcow-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1647311121,
+        "narHash": "sha256-oycijigcF/ccHNL9JGWh22u+kEn2cdrJPlDgYjJeLns=",
+        "owner": "nim-nix-pkgs",
+        "repo": "mailcow",
+        "rev": "cea35daceadab87c152fec01fafac87b9958d0fc",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "mailcow",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "mailcow-main": "mailcow-main",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-mailcow-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1625306118,
+        "narHash": "sha256-z4MaPMgYobuOsoaiLcY2bDHEeMDpKrfcz4YNws6yr0A=",
+        "owner": "Vaipex",
+        "repo": "Mailcow-API",
+        "rev": "484431a75d797fc7c90b3e50d6c8a87c81256d6c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vaipex",
+        "ref": "refs/heads/main",
+        "repo": "Mailcow-API",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

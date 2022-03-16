@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "physfs-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-physfs-master": "src-physfs-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311320,
+        "narHash": "sha256-+u7cGfIgM32MJugCeBbYWE+iH7zLD/ZqceH30dYWqpI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "physfs",
+        "rev": "e409ec4cd853697de74baf8e932c4c0e08bcd648",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "physfs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "physfs-master": "physfs-master"
+      }
+    },
+    "src-physfs-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1399439020,
+        "narHash": "sha256-X1no7tSu7QPI0UcjzB+IcHHKdGWrGOlV0e4TsjLGMdM=",
+        "owner": "fowlmouth",
+        "repo": "physfs",
+        "rev": "2724f417694b16b72be69c64988fab6fa4764081",
+        "type": "github"
+      },
+      "original": {
+        "owner": "fowlmouth",
+        "ref": "refs/heads/master",
+        "repo": "physfs",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

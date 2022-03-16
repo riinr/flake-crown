@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-redissessions-master": "src-redissessions-master"
+      }
+    },
+    "src-redissessions-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1475381231,
+        "narHash": "sha256-am5izu87IkJ2xAgfx6TzOkePM2c+jS8Il3H30PVlASE=",
+        "owner": "ithkuil",
+        "repo": "redissessions",
+        "rev": "7dbc1cf16017df8a17d301d68573c0dae17b3721",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ithkuil",
+        "ref": "refs/heads/master",
+        "repo": "redissessions",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

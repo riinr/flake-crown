@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "asciigraph-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-asciigraph-master": "src-asciigraph-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647310833,
+        "narHash": "sha256-z0wuhYmWOhpVhb1dcv4LU9Juo8wxch1RQX156/3S9kY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "asciigraph",
+        "rev": "4a9c6ff5ae7a0563470c39c34a2be41eb1e48a95",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "asciigraph",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "asciigraph-master": "asciigraph-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-asciigraph-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1614647236,
+        "narHash": "sha256-JMBAW8hkE2wuXkRt4aHqFPoz1HX1J4SslvcaQXfpDNk=",
+        "owner": "Yardanico",
+        "repo": "asciigraph",
+        "rev": "9f51fc4e94d0960ab63fa6ea274518159720aa69",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Yardanico",
+        "ref": "refs/heads/master",
+        "repo": "asciigraph",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

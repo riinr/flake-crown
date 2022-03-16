@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-sequtils2-master": "src-sequtils2-master"
+      }
+    },
+    "src-sequtils2-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569516358,
+        "narHash": "sha256-bLXQL2EM+05YjXYhSL2nPeRIDDoGuV98T3DLzrQpE4Y=",
+        "owner": "Michedev",
+        "repo": "sequtils2",
+        "rev": "7efcb0e34c583e73f34f6f407cb173f58ae79846",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Michedev",
+        "ref": "refs/heads/master",
+        "repo": "sequtils2",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "uri2-master": "uri2-master"
+      }
+    },
+    "src-uri2-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1500824876,
+        "narHash": "sha256-j5bAK5k6KRT3jUhuZOgHPNOx2u593k2fJXKTN8qDQ1Y=",
+        "owner": "achesak",
+        "repo": "nim-uri2",
+        "rev": "2c26766ff43e9bfb07dbf5d7eafad9a8a05a93c1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "achesak",
+        "ref": "refs/heads/master",
+        "repo": "nim-uri2",
+        "type": "github"
+      }
+    },
+    "uri2-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-uri2-master": "src-uri2-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311519,
+        "narHash": "sha256-1fIPWb45e/Na3LiuwzcjRPC/IciNdvOdcE/hjE4OsEI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "uri2",
+        "rev": "5226ce84dbbd039a7e135dcbc639580a686dcd67",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "uri2",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

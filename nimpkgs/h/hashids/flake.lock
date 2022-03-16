@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "hashids-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-hashids-master": "src-hashids-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311040,
+        "narHash": "sha256-NTekjG9Dd1aef2FrP1qwu/UI9Ms87/APsWTQ1QoG5Zs=",
+        "owner": "nim-nix-pkgs",
+        "repo": "hashids",
+        "rev": "616119864b9f282c1c50e13648ab458283e21587",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "hashids",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "hashids-master": "hashids-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-hashids-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1538871789,
+        "narHash": "sha256-mWRSVM6yP2o9J0bQtpqJoefD9rPEh9/274P+pF1diys=",
+        "owner": "achesak",
+        "repo": "nim-hashids",
+        "rev": "e83754f45d2a2efb5efdef569e17ff80240261ca",
+        "type": "github"
+      },
+      "original": {
+        "owner": "achesak",
+        "ref": "refs/heads/master",
+        "repo": "nim-hashids",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

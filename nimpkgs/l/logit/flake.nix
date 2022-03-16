@@ -47,6 +47,14 @@
   inputs."logit-v0_1_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."logit-v0_1_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."logit-v0_1_4".dir   = "v0_1_4";
+  inputs."logit-v0_1_4".owner = "nim-nix-pkgs";
+  inputs."logit-v0_1_4".ref   = "master";
+  inputs."logit-v0_1_4".repo  = "logit";
+  inputs."logit-v0_1_4".type  = "github";
+  inputs."logit-v0_1_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."logit-v0_1_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

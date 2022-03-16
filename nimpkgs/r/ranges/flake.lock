@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "ranges-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ranges-master": "src-ranges-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311362,
+        "narHash": "sha256-y3ezEwA0FCIYPIvs/f7l+H7NP2lOqDjz2alHKLflr9c=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ranges",
+        "rev": "7651b125d2d185ece9784a8e6f1bcd3fae1c89c1",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ranges",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "ranges-master": "ranges-master"
+      }
+    },
+    "src-ranges-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1562439873,
+        "narHash": "sha256-wEk9EY3OxX9345ZhTXTsv+UWqCWNpqDy95rYqaW5M38=",
+        "owner": "status-im",
+        "repo": "nim-ranges",
+        "rev": "54792c5a26858b20a331f0ae38c18f21811b4b5c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-ranges",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "combparser-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-combparser-master": "src-combparser-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647310904,
+        "narHash": "sha256-lirNSsaoA4xYUivUSfBVA73FZVT09sA63oxEVW5fc/o=",
+        "owner": "nim-nix-pkgs",
+        "repo": "combparser",
+        "rev": "4c27693945a0ffdc4dad8f7247b72c01b61d883f",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "combparser",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "combparser-master": "combparser-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-combparser-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1566369514,
+        "narHash": "sha256-hJH0XNwSkBCYthjdKxA4UfsSeczMmonqlIGIxZCECUY=",
+        "owner": "PMunch",
+        "repo": "combparser",
+        "rev": "ba4464c005d7617c008e2ed2ebc1ba52feb469c6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PMunch",
+        "ref": "refs/heads/master",
+        "repo": "combparser",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

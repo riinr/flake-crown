@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "systimes-master": "systimes-master",
+        "systimes-v0_2_0": "systimes-v0_2_0",
+        "systimes-v0_2_1": "systimes-v0_2_1"
+      }
+    },
+    "src-systimes-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1585587829,
+        "narHash": "sha256-4xOzV35kZm7w5bM2qwmsjfE+uH3LO+uAjtLcQOtM34I=",
+        "owner": "GULPF",
+        "repo": "systimes",
+        "rev": "60d38f97abf31243ad88be7dcc19804b2dabc2ec",
+        "type": "github"
+      },
+      "original": {
+        "owner": "GULPF",
+        "ref": "refs/heads/master",
+        "repo": "systimes",
+        "type": "github"
+      }
+    },
+    "src-systimes-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1535117567,
+        "narHash": "sha256-Kj9J9G0zQ4TflOoKMf4j0ffrRuY2EgMyD1qRA9gTsQU=",
+        "owner": "GULPF",
+        "repo": "systimes",
+        "rev": "cfdded98c09f5de689212cb41109272f185c3e6a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "GULPF",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "systimes",
+        "type": "github"
+      }
+    },
+    "src-systimes-v0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1535118034,
+        "narHash": "sha256-p/V92WB0oevmB3F88ZKuHbcoxTp5usqnAsHj1yM1p8w=",
+        "owner": "GULPF",
+        "repo": "systimes",
+        "rev": "eda0f5745a7ce53ef29e677745d72d749a20661c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "GULPF",
+        "ref": "refs/tags/v0.2.1",
+        "repo": "systimes",
+        "type": "github"
+      }
+    },
+    "systimes-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-systimes-master": "src-systimes-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311479,
+        "narHash": "sha256-pyz1Wh4wMxNF4rtozVXRlbrW3Sd7EyCMHm1GQRqIa4U=",
+        "owner": "nim-nix-pkgs",
+        "repo": "systimes",
+        "rev": "161541511694a00c0fcf11364102836c2fa7ae16",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "systimes",
+        "type": "github"
+      }
+    },
+    "systimes-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-systimes-v0_2_0": "src-systimes-v0_2_0"
+      },
+      "locked": {
+        "dir": "v0_2_0",
+        "lastModified": 1647311479,
+        "narHash": "sha256-pyz1Wh4wMxNF4rtozVXRlbrW3Sd7EyCMHm1GQRqIa4U=",
+        "owner": "nim-nix-pkgs",
+        "repo": "systimes",
+        "rev": "161541511694a00c0fcf11364102836c2fa7ae16",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_2_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "systimes",
+        "type": "github"
+      }
+    },
+    "systimes-v0_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-systimes-v0_2_1": "src-systimes-v0_2_1"
+      },
+      "locked": {
+        "dir": "v0_2_1",
+        "lastModified": 1647311479,
+        "narHash": "sha256-pyz1Wh4wMxNF4rtozVXRlbrW3Sd7EyCMHm1GQRqIa4U=",
+        "owner": "nim-nix-pkgs",
+        "repo": "systimes",
+        "rev": "161541511694a00c0fcf11364102836c2fa7ae16",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_2_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "systimes",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

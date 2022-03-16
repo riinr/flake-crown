@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "fasttext-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-fasttext-master": "src-fasttext-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647310990,
+        "narHash": "sha256-nDJc8wlYHpV7AGMVlFIW2mntrFQZRYl2S0bUKxjdI+Y=",
+        "owner": "nim-nix-pkgs",
+        "repo": "fasttext",
+        "rev": "138c6235ad83f014ce59f8719f525917832353d7",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "fasttext",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "fasttext-master": "fasttext-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-fasttext-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1590385631,
+        "narHash": "sha256-waM8eyxt3PoKGVn6DTm2otKtIDSEyhO/cVlHojEEM5c=",
+        "owner": "bung87",
+        "repo": "fastText",
+        "rev": "b17932b7f5b0ee12329e3172b3a4c332efdf2b71",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bung87",
+        "ref": "refs/heads/master",
+        "repo": "fastText",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

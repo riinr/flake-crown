@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "psy-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-psy-main": "src-psy-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1647311345,
+        "narHash": "sha256-PWiFWU3eAajrsKoMny2VumNxV6YCi9jRo+4B8G0mH/I=",
+        "owner": "nim-nix-pkgs",
+        "repo": "psy",
+        "rev": "80725b089aac5188074dc10bfc10cf3db707f2fb",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "psy",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "psy-main": "psy-main"
+      }
+    },
+    "src-psy-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644516963,
+        "narHash": "sha256-/pM94UEJ0Uz08b+hDUcoJq5NfArioZM/JXM3qnHrkdo=",
+        "owner": "psypac",
+        "repo": "psypac",
+        "rev": "e033b0b21646fc14b90d2ecf9bf484f0358f3d56",
+        "type": "github"
+      },
+      "original": {
+        "owner": "psypac",
+        "ref": "refs/heads/main",
+        "repo": "psypac",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

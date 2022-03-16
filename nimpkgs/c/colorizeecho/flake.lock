@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "colorizeecho-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-colorizeEcho-main": "src-colorizeEcho-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1647310901,
+        "narHash": "sha256-J9Q8tGjgARAebm5yoDiFbO/GWbNKd6Fw9jmQPYJXrE4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "colorizeecho",
+        "rev": "e0bed0466eda4774d5aae348c13bb0a0cfa8d79b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "colorizeecho",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "colorizeecho-main": "colorizeecho-main",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-colorizeEcho-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1606629919,
+        "narHash": "sha256-W141VMKDdM8XXs6qeR3ThrkCqWUXgrct8MuudlhoP1M=",
+        "owner": "s3pt3mb3r",
+        "repo": "colorizeEcho",
+        "rev": "2f9661119a1d6d9e4d36ad2c2cd91bfb47b8c0ca",
+        "type": "github"
+      },
+      "original": {
+        "owner": "s3pt3mb3r",
+        "ref": "refs/heads/main",
+        "repo": "colorizeEcho",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

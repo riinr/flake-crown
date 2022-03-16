@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "pathname-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-pathname-master": "src-pathname-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311314,
+        "narHash": "sha256-GNDVO57z53ZiaqOV0D8Csu87SoKShspL3Y+ysB9Xu5k=",
+        "owner": "nim-nix-pkgs",
+        "repo": "pathname",
+        "rev": "a8bfc91184f3b47d2ec1f16221933ff4b08b71e6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "pathname",
+        "type": "github"
+      }
+    },
+    "pathname-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-pathname-v0_1_0": "src-pathname-v0_1_0"
+      },
+      "locked": {
+        "dir": "v0_1_0",
+        "lastModified": 1647311314,
+        "narHash": "sha256-GNDVO57z53ZiaqOV0D8Csu87SoKShspL3Y+ysB9Xu5k=",
+        "owner": "nim-nix-pkgs",
+        "repo": "pathname",
+        "rev": "a8bfc91184f3b47d2ec1f16221933ff4b08b71e6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "pathname",
+        "type": "github"
+      }
+    },
+    "pathname-v0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-pathname-v0_1_1": "src-pathname-v0_1_1"
+      },
+      "locked": {
+        "dir": "v0_1_1",
+        "lastModified": 1647311314,
+        "narHash": "sha256-GNDVO57z53ZiaqOV0D8Csu87SoKShspL3Y+ysB9Xu5k=",
+        "owner": "nim-nix-pkgs",
+        "repo": "pathname",
+        "rev": "a8bfc91184f3b47d2ec1f16221933ff4b08b71e6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "pathname",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "pathname-master": "pathname-master",
+        "pathname-v0_1_0": "pathname-v0_1_0",
+        "pathname-v0_1_1": "pathname-v0_1_1"
+      }
+    },
+    "src-pathname-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1646322320,
+        "narHash": "sha256-rpFElYONbT4kpUCT3dHen6+v9nH9JgtUlBBVAIU5L8Y=",
+        "owner": "RaimundHuebel",
+        "repo": "nimpathname",
+        "rev": "eab6a63e70b8adf6c3eb14ea02f8475ea557a11f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RaimundHuebel",
+        "ref": "refs/heads/master",
+        "repo": "nimpathname",
+        "type": "github"
+      }
+    },
+    "src-pathname-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1598284108,
+        "narHash": "sha256-cNnNcWSZvUodsH4ILOuRsKukWB5jwO6lYb9OYQos4X8=",
+        "owner": "RaimundHuebel",
+        "repo": "nimpathname",
+        "rev": "b919d74c6b82ccf5733172d7aaae449453ae4576",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RaimundHuebel",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "nimpathname",
+        "type": "github"
+      }
+    },
+    "src-pathname-v0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1646322320,
+        "narHash": "sha256-rpFElYONbT4kpUCT3dHen6+v9nH9JgtUlBBVAIU5L8Y=",
+        "owner": "RaimundHuebel",
+        "repo": "nimpathname",
+        "rev": "eab6a63e70b8adf6c3eb14ea02f8475ea557a11f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RaimundHuebel",
+        "ref": "refs/tags/v0.1.1",
+        "repo": "nimpathname",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

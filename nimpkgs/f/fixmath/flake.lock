@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "fixmath-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-fixmath-master": "src-fixmath-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311000,
+        "narHash": "sha256-mcQXLFWy0s+4bmUT2uUtgu21sJKobSFXKW3u2tP2OQ0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "fixmath",
+        "rev": "ce998976fc821fee68f8620469a13a13ca374fd7",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "fixmath",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "fixmath-master": "fixmath-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-fixmath-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1466101844,
+        "narHash": "sha256-Z7R80nrA6Sw/93P/uryFDzXkYVJ4hOi5bbKB0WstUXs=",
+        "owner": "Jeff-Ciesielski",
+        "repo": "fixmath",
+        "rev": "e51e50a4baa63617e8308aed3491986e13672234",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Jeff-Ciesielski",
+        "ref": "refs/heads/master",
+        "repo": "fixmath",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

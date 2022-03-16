@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "sndhdr-master": "sndhdr-master"
+      }
+    },
+    "sndhdr-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sndhdr-master": "src-sndhdr-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311425,
+        "narHash": "sha256-ALng9MK3/MsLmpxlSPyp54wkGYRZlWgcSlXt5pBKwXQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sndhdr",
+        "rev": "bd6e0b6b89a0194aac5eb0265c05e1c3bf22100e",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sndhdr",
+        "type": "github"
+      }
+    },
+    "src-sndhdr-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1472438674,
+        "narHash": "sha256-rR2uE0tCG0S0ISZDTdBiVxLhJKzHr5+tDPNT3fR0EQ4=",
+        "owner": "achesak",
+        "repo": "nim-sndhdr",
+        "rev": "240aa3b36f0305c4f264065eabfaf54a33bfeee5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "achesak",
+        "ref": "refs/heads/master",
+        "repo": "nim-sndhdr",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

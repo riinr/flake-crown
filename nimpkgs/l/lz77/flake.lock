@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "lz77-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-lz77-master": "src-lz77-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311119,
+        "narHash": "sha256-CqAxmmAeEgmbiL/gfP1Yw8rPbTEMn/ca4uEFqZkh22Y=",
+        "owner": "nim-nix-pkgs",
+        "repo": "lz77",
+        "rev": "737385861f9d14cfd057db016d4214e1c22a5ba2",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "lz77",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "lz77-master": "lz77-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-lz77-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1589194089,
+        "narHash": "sha256-zmQQPRDlBwp1HmvsqXlIufTt+uu7rE49k+LytPNRuZU=",
+        "owner": "sealmove",
+        "repo": "LZ77",
+        "rev": "39713096943091baf7fea154aec8c2a7bcc40bb7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sealmove",
+        "ref": "refs/heads/master",
+        "repo": "LZ77",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

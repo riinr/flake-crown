@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "libgcrypt-0_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libgcrypt-0_0_1": "src-libgcrypt-0_0_1"
+      },
+      "locked": {
+        "dir": "0_0_1",
+        "lastModified": 1647311094,
+        "narHash": "sha256-JE/Q1BDNLE07wUYjeEAsYpkZPqdnEI1wD8iP5/agOc4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libgcrypt",
+        "rev": "858fe2fe7205e6a031b5a39c35a96a0e3ade0b03",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_0_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libgcrypt",
+        "type": "github"
+      }
+    },
+    "libgcrypt-0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libgcrypt-0_1_1": "src-libgcrypt-0_1_1"
+      },
+      "locked": {
+        "dir": "0_1_1",
+        "lastModified": 1647311094,
+        "narHash": "sha256-JE/Q1BDNLE07wUYjeEAsYpkZPqdnEI1wD8iP5/agOc4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libgcrypt",
+        "rev": "858fe2fe7205e6a031b5a39c35a96a0e3ade0b03",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_1_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libgcrypt",
+        "type": "github"
+      }
+    },
+    "libgcrypt-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libgcrypt-master": "src-libgcrypt-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311094,
+        "narHash": "sha256-JE/Q1BDNLE07wUYjeEAsYpkZPqdnEI1wD8iP5/agOc4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libgcrypt",
+        "rev": "858fe2fe7205e6a031b5a39c35a96a0e3ade0b03",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libgcrypt",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "libgcrypt-0_0_1": "libgcrypt-0_0_1",
+        "libgcrypt-0_1_1": "libgcrypt-0_1_1",
+        "libgcrypt-master": "libgcrypt-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-libgcrypt-0_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1559422490,
+        "narHash": "sha256-/OnSNDLGNwKl/9AMscq6+ajZkPAXrO1IR7le24SyXLE=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-libgcrypt",
+        "rev": "b33f8afa3a43b87e38084edd39116cbb2844f39e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/tags/0.0.1",
+        "repo": "nim-libgcrypt",
+        "type": "github"
+      }
+    },
+    "src-libgcrypt-0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1570877280,
+        "narHash": "sha256-Xa4fYej/29gYSf3jdYYJyicQAFilkYhrewRbzWuu57M=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-libgcrypt",
+        "rev": "8f9662a004c3078b1d3eff4e7bd2597f0bae7955",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/tags/0.1.1",
+        "repo": "nim-libgcrypt",
+        "type": "github"
+      }
+    },
+    "src-libgcrypt-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1570877280,
+        "narHash": "sha256-Xa4fYej/29gYSf3jdYYJyicQAFilkYhrewRbzWuu57M=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-libgcrypt",
+        "rev": "8f9662a004c3078b1d3eff4e7bd2597f0bae7955",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/heads/master",
+        "repo": "nim-libgcrypt",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

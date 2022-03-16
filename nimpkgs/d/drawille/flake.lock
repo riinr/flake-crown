@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "drawille-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-drawille-master": "src-drawille-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647310962,
+        "narHash": "sha256-d/5CqqG9ZyRCXxy5mMlAoKnm0nePj4YXttTep0xKdmY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "drawille",
+        "rev": "8c7d4789be89f61e2ad0de554691e0b7843599f4",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "drawille",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "drawille-master": "drawille-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-drawille-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1529490765,
+        "narHash": "sha256-VxmairChizBtxjHQR/EwsUeMLszQm/sqd90HdUsLAuY=",
+        "owner": "PMunch",
+        "repo": "drawille-nim",
+        "rev": "1b2daec77e6bbb78bc5a330b92796386e172bd57",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PMunch",
+        "ref": "refs/heads/master",
+        "repo": "drawille-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

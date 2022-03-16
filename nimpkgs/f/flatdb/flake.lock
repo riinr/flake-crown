@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "flatdb-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-flatdb-master": "src-flatdb-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311000,
+        "narHash": "sha256-zcMVNU1sQCGeFb6oR+FCPFSQq+RU+FsKQ7qfQItIsRs=",
+        "owner": "nim-nix-pkgs",
+        "repo": "flatdb",
+        "rev": "1b714a3e5c9b2b4f18100022243699d1e1cb3f9a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "flatdb",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "flatdb-master": "flatdb-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-flatdb-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1601712429,
+        "narHash": "sha256-6Efg6Due0fGO5Xzgv3jjCX8TELwDPxSnYZ/PnCJ6aS8=",
+        "owner": "enthus1ast",
+        "repo": "flatdb",
+        "rev": "8c474d101f4d926e1e3a0acde67986f7f7d16307",
+        "type": "github"
+      },
+      "original": {
+        "owner": "enthus1ast",
+        "ref": "refs/heads/master",
+        "repo": "flatdb",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "python-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-python-master": "src-python-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311352,
+        "narHash": "sha256-r9cYBSHbFIQxcLbs9ogKYNaJc5cnuhvk/SpSgMJzlTg=",
+        "owner": "nim-nix-pkgs",
+        "repo": "python",
+        "rev": "240722def6145aafd17d7716db52521bcfc0e4ee",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "python",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "python-master": "python-master"
+      }
+    },
+    "src-python-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1508670376,
+        "narHash": "sha256-Wl4on0rf4zbNxmwmq/ZkNiPIFCZY+1BdokPQoba2EVI=",
+        "owner": "nim-lang",
+        "repo": "python",
+        "rev": "b7c3b2c447a69fdb0a974ba149062e52182fda08",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/heads/master",
+        "repo": "python",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

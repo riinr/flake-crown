@@ -1,6 +1,4 @@
 {
-  files.gitignore.pattern.updateLock = true;
-  files.gitignore.pattern.outprofiler = true;
   files.cmds.nimble-unwrapped = true;
   files.cmds.nim-unwrapped = true;
   files.cmds.yj = true;

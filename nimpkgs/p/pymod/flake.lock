@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "pymod-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-pymod-master": "src-pymod-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311350,
+        "narHash": "sha256-nxdqiPpSO+y46Czn5X4t5kwAzCy1L5wU0JAZTDzl15o=",
+        "owner": "nim-nix-pkgs",
+        "repo": "pymod",
+        "rev": "604123a5c46f8130a69f26eb435ebc9222b40091",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "pymod",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "pymod-master": "pymod-master"
+      }
+    },
+    "src-pymod-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1478010213,
+        "narHash": "sha256-/AMp2FQ7PgHZKhNUi6j6CUDr6Z7VXooSw4KOC2Fcgw8=",
+        "owner": "jboy",
+        "repo": "nim-pymod",
+        "rev": "3e4c49afdfdab2c3325588b6b823c102f22fc588",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jboy",
+        "ref": "refs/heads/master",
+        "repo": "nim-pymod",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

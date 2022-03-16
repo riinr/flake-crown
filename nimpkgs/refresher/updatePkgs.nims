@@ -21,8 +21,20 @@ let
     .filterIt(it{"name"}.getStr.toLower[0] >= startAt)
     .filterIt(it{"name"}.getStr.toLower[0] <= endAt)
 
+
 for pkg in pkgItems:
   if pkg.hasKey("url") and "git" == pkg["method"].getStr:
     let pkgJSON = $pkg
-    exec(fmt"echo {pkgJSON.quoteShell}|./updatePkg.nims")
+    echo fmt"""Running {pkg["name"]}"""
+    exec(fmt"echo {pkgJSON.quoteShell}|./updatePkg.nims &")
+
+  var procs = 10
+  while procs > 5:
+    procs = gorge("""
+      ps u | \
+        grep 'updatePkg' | \
+        grep -vE 'grep.+updatePkg' | \
+        wc -l""").parseInt
+    if procs > 5:
+      exec "sleep 0.05"
 

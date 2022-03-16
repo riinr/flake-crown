@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "slacklib-master": "slacklib-master"
+      }
+    },
+    "slacklib-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-slacklib-master": "src-slacklib-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311421,
+        "narHash": "sha256-O9EJkZM4dh+9Sf2IMiOqv7PBsHJpLX8HOtRnk4YruhM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "slacklib",
+        "rev": "08f14a9d4b7abb1b6cc4d0ec184e066762baecb0",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "slacklib",
+        "type": "github"
+      }
+    },
+    "src-slacklib-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1502100349,
+        "narHash": "sha256-SmJk3GlX40iIL49pNvobnN50S+uY3phkzTBb4A+j81A=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_slacklib",
+        "rev": "b4f80370b4e6e7701a8b0a9e2756abc952681486",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/heads/master",
+        "repo": "nim_slacklib",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

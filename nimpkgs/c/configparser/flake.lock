@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "configparser-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-configparser-master": "src-configparser-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647310906,
+        "narHash": "sha256-yBn9XvK0AMZSpI6w15HOJw4La1YEt8czt5A6UTaMX5s=",
+        "owner": "nim-nix-pkgs",
+        "repo": "configparser",
+        "rev": "6e84b1177394725e4a4ca3a79c6cef0b0abd9fc5",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "configparser",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "configparser-master": "configparser-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-configparser-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1562839631,
+        "narHash": "sha256-5q4+Cn17CNhD5KaNsbloj00vl/0bxKEDVRCWENwVJ3Y=",
+        "owner": "xmonader",
+        "repo": "nim-configparser",
+        "rev": "7e805b43d76e4943bac26288f6f7d85bfc19eb02",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xmonader",
+        "ref": "refs/heads/master",
+        "repo": "nim-configparser",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimtiingo-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimTiingo-main": "src-nimTiingo-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1647311246,
+        "narHash": "sha256-PPJYoKqV6oYsmWTY2QWpMVpQ1Xyk0hNoQPZLzUoKd1c=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimtiingo",
+        "rev": "6c804ae29930b3e7a049acf96c799da2cae30675",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimtiingo",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimtiingo-main": "nimtiingo-main",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimTiingo-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603117039,
+        "narHash": "sha256-FrnidXJDtED+O9WmnKZCLeQu3uvUXHrrGlHkqpEBRkk=",
+        "owner": "rolandgg",
+        "repo": "nimTiingo",
+        "rev": "ff76a0a6da3daf82b27a40d677dda9cdb263ada7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rolandgg",
+        "ref": "refs/heads/main",
+        "repo": "nimTiingo",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

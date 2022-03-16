@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "cliptomania-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-cliptomania-master": "src-cliptomania-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647310896,
+        "narHash": "sha256-cAAazG8KO4RmEZ3/0Umh+33o+B3kw7T1SNzvoTgX/2A=",
+        "owner": "nim-nix-pkgs",
+        "repo": "cliptomania",
+        "rev": "f7e4257b826b67890a4f6758f58b1aa839600ffc",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "cliptomania",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "cliptomania-master": "cliptomania-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-cliptomania-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1558011440,
+        "narHash": "sha256-iEiTUG2D+uhyRbQKse4sqZdDBZkArKJi27M4Q2mHfQ8=",
+        "owner": "Guevara-chan",
+        "repo": "Cliptomania",
+        "rev": "347b9b1e63dc2bff660a75709129fc90d16bbc18",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Guevara-chan",
+        "ref": "refs/heads/master",
+        "repo": "Cliptomania",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

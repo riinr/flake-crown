@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "awslambda-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-awslambda-master": "src-awslambda-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647310845,
+        "narHash": "sha256-BDFyej2VuNWCtK+qaEm4aGDvAG5dDw5+PIOt/fvjNVc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "awslambda",
+        "rev": "b3732d3136659951d80e41f43b28ac13c9db1250",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "awslambda",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "awslambda-master": "awslambda-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-awslambda-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569275088,
+        "narHash": "sha256-4om7aEPwa9ET2a08OptmxkncLh9+lqXSxPqxw5aYyDU=",
+        "owner": "lambci",
+        "repo": "awslambda.nim",
+        "rev": "0fa0f62bec56eb7e09d8fd3e2a4c31798baba89f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lambci",
+        "ref": "refs/heads/master",
+        "repo": "awslambda.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

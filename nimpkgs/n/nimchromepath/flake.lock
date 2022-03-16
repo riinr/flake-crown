@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimchromepath-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimchromepath-master": "src-nimchromepath-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311196,
+        "narHash": "sha256-OX9esrj+te+Ucj2yjkAU2lvlb4LMFtfzb3IrHU3XalQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimchromepath",
+        "rev": "5d53316725623534bc41630931d4b97eda95d4d0",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimchromepath",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimchromepath-master": "nimchromepath-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimchromepath-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1600886059,
+        "narHash": "sha256-6Fyloc1yRnetjRzdnOwaQ+Gt3lXn3pbgfGAdmuigwFU=",
+        "owner": "felipetesc",
+        "repo": "NimChromePath",
+        "rev": "ddd68d4842f1ec31a5f59ea4b4418c7afc21169d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "felipetesc",
+        "ref": "refs/heads/master",
+        "repo": "NimChromePath",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

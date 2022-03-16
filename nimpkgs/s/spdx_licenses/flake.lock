@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "spdx_licenses-master": "spdx_licenses-master",
+        "spdx_licenses-v1_0_0": "spdx_licenses-v1_0_0"
+      }
+    },
+    "spdx_licenses-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-spdx_licenses-master": "src-spdx_licenses-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311443,
+        "narHash": "sha256-jwZ14wxaJMWR0oc0r3gHPXcVe9ICRJ3QBAn9wVZMcMQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "spdx_licenses",
+        "rev": "1951c13677ed840d8f10aae2e1f000fc20b86090",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "spdx_licenses",
+        "type": "github"
+      }
+    },
+    "spdx_licenses-v1_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-spdx_licenses-v1_0_0": "src-spdx_licenses-v1_0_0"
+      },
+      "locked": {
+        "dir": "v1_0_0",
+        "lastModified": 1647311443,
+        "narHash": "sha256-jwZ14wxaJMWR0oc0r3gHPXcVe9ICRJ3QBAn9wVZMcMQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "spdx_licenses",
+        "rev": "1951c13677ed840d8f10aae2e1f000fc20b86090",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_0_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "spdx_licenses",
+        "type": "github"
+      }
+    },
+    "src-spdx_licenses-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1552755780,
+        "narHash": "sha256-YNBs2P6OWmLHLkVkk1KMQPl0JKMcTlLazJK5PDwpgXs=",
+        "owner": "euantorano",
+        "repo": "spdx_licenses.nim",
+        "rev": "dd50476a74373aa7cb1f4c50ad1d35b59f71cda4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "euantorano",
+        "ref": "refs/heads/master",
+        "repo": "spdx_licenses.nim",
+        "type": "github"
+      }
+    },
+    "src-spdx_licenses-v1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1532547104,
+        "narHash": "sha256-GUacanSt8NOxqPOQtsrNlBFPW/6t0Pz+loimJM03HWU=",
+        "owner": "euantorano",
+        "repo": "spdx_licenses.nim",
+        "rev": "49eca7862d3fb4052ffbecf49194828c82279959",
+        "type": "github"
+      },
+      "original": {
+        "owner": "euantorano",
+        "ref": "refs/tags/v1.0.0",
+        "repo": "spdx_licenses.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

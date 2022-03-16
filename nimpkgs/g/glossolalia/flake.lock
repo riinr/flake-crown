@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "glossolalia-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-glossolalia-master": "src-glossolalia-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311029,
+        "narHash": "sha256-wHbZ2AzHU+2n/809e5DBfu9+vDz5TeD7bC00/xVeNJ4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "glossolalia",
+        "rev": "1bda153ffa9f7a02262312008b5d4fe81959ad0a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "glossolalia",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "glossolalia-master": "glossolalia-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-glossolalia-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1432043881,
+        "narHash": "sha256-0fw6RI3uZ9oGJgmI7mw9poukDcsZMXH/f3U/2QVNNw8=",
+        "owner": "fowlmouth",
+        "repo": "glossolalia",
+        "rev": "f8b89478387e09aaf286fd05cda7323465572532",
+        "type": "github"
+      },
+      "original": {
+        "owner": "fowlmouth",
+        "ref": "refs/heads/master",
+        "repo": "glossolalia",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

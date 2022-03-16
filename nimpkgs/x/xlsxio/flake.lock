@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "xlsxio-main": "xlsxio-main"
+      }
+    },
+    "src-xlsxio-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1641481207,
+        "narHash": "sha256-JlFcOnyBYaRk7Hi93nLdTYqxMvyQy9amjFGa+FY9jC4=",
+        "owner": "jiiihpeeh",
+        "repo": "xlsxio-nim",
+        "rev": "3791eae61832d8fdae88ea4759cc88d75c0a125c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jiiihpeeh",
+        "ref": "refs/heads/main",
+        "repo": "xlsxio-nim",
+        "type": "github"
+      }
+    },
+    "xlsxio-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-xlsxio-main": "src-xlsxio-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1647311566,
+        "narHash": "sha256-l+aK+hI59UEzTOhGWNNvuxwSj2ZYqsjlcOz3hUinwzw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "xlsxio",
+        "rev": "d6bc374b9ed8e42703a47c2bc9c9b3c2d864e98d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "xlsxio",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

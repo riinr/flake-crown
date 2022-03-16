@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-science-master": "src-science-master"
+      }
+    },
+    "src-science-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1557217385,
+        "narHash": "sha256-1JSaNkmRd60gUf/3ZsRNvteGgC3j7qDP+5xgi5a8D20=",
+        "owner": "ruivieira",
+        "repo": "nim-science",
+        "rev": "6a0bba45d0fc75a295f178924a88e2866018ddab",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ruivieira",
+        "ref": "refs/heads/master",
+        "repo": "nim-science",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

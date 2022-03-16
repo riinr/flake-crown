@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "libnetfilter_queue-0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libnetfilter_queue-0_1_0": "src-libnetfilter_queue-0_1_0"
+      },
+      "locked": {
+        "dir": "0_1_0",
+        "lastModified": 1647311098,
+        "narHash": "sha256-kzUYIiMdKb4cCdaepqtyAGIL2c2jds9vCciWuR0GKE4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libnetfilter_queue",
+        "rev": "9f49f681644c9a2366d1437b377d8f09a0ba8d35",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libnetfilter_queue",
+        "type": "github"
+      }
+    },
+    "libnetfilter_queue-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libnetfilter_queue-master": "src-libnetfilter_queue-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311098,
+        "narHash": "sha256-kzUYIiMdKb4cCdaepqtyAGIL2c2jds9vCciWuR0GKE4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libnetfilter_queue",
+        "rev": "9f49f681644c9a2366d1437b377d8f09a0ba8d35",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libnetfilter_queue",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "libnetfilter_queue-0_1_0": "libnetfilter_queue-0_1_0",
+        "libnetfilter_queue-master": "libnetfilter_queue-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-libnetfilter_queue-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1593449648,
+        "narHash": "sha256-uDi/dC4jH7/vXkc1CObvb4fEmut8ArP3P9FWNAZ/5B8=",
+        "owner": "ba0f3",
+        "repo": "libnetfilter_queue.nim",
+        "rev": "ee0e49f69f39d9add5bf1a38796880812d0759af",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/tags/0.1.0",
+        "repo": "libnetfilter_queue.nim",
+        "type": "github"
+      }
+    },
+    "src-libnetfilter_queue-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1633049498,
+        "narHash": "sha256-gfIYimKfvsSk9qFXU29j05i5Rv0kk7ikBjsu+EhReQU=",
+        "owner": "ba0f3",
+        "repo": "libnetfilter_queue.nim",
+        "rev": "71a7099f3b9729a880783f1bbe1228a6f76e46d1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/heads/master",
+        "repo": "libnetfilter_queue.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

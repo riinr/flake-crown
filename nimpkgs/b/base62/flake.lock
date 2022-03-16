@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "base62-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-base62-master": "src-base62-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647310849,
+        "narHash": "sha256-QkIFsDsG95l9nB++XLeUE5eqEqK/qCf0NU7m2NkkmDc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "base62",
+        "rev": "87d66644c2ee92ed0637fd0c53cc97008855ce66",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "base62",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "base62-master": "base62-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-base62-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1435528333,
+        "narHash": "sha256-sdpuq+1mo9V5p2JVk6dsp0LgkXf1uqrp4hkS8SFSHSg=",
+        "owner": "singularperturbation",
+        "repo": "base62-encode",
+        "rev": "40a55eb886822ff1d27bfc4471f4e0c22d70eaec",
+        "type": "github"
+      },
+      "original": {
+        "owner": "singularperturbation",
+        "ref": "refs/heads/master",
+        "repo": "base62-encode",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

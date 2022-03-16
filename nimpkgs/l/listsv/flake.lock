@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "listsv-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-listsv-master": "src-listsv-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311108,
+        "narHash": "sha256-DWZJOoGM24wwKTK0kPoKEgvRGoG5m7WV0wI7vpg96ZA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "listsv",
+        "rev": "f7803da0f32e4c24df615f3c5dfc86215967b066",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "listsv",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "listsv-master": "listsv-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-listsv-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1454362376,
+        "narHash": "sha256-utzEzMRCw8ErdQHN54hTRFhqZRvhSuzkRtqK8qWoPII=",
+        "owner": "srwiley",
+        "repo": "listsv",
+        "rev": "f706ec9d80b3f99e13211bcb218ba3ff95b6330f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "srwiley",
+        "ref": "refs/heads/master",
+        "repo": "listsv",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "webdriver-master": "webdriver-master",
+        "webdriver-v0_1_0": "webdriver-v0_1_0",
+        "webdriver-v0_2_0": "webdriver-v0_2_0"
+      }
+    },
+    "src-webdriver-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1620337266,
+        "narHash": "sha256-hYY01qzPjU56r82SgE1uWHgDRWn7SfUlmc1AtJyLS78=",
+        "owner": "dom96",
+        "repo": "webdriver",
+        "rev": "699d3b9959ed94724521a768f11fcabed47c712b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dom96",
+        "ref": "refs/heads/master",
+        "repo": "webdriver",
+        "type": "github"
+      }
+    },
+    "src-webdriver-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1508071781,
+        "narHash": "sha256-w04c+XvjJR3yifBLm2Mw2GRFE2YAEZftwFJTdcCHAqQ=",
+        "owner": "dom96",
+        "repo": "webdriver",
+        "rev": "879ba8aabcec2df03d8c3ed71dddc8f43ce62fe9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dom96",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "webdriver",
+        "type": "github"
+      }
+    },
+    "src-webdriver-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1508072746,
+        "narHash": "sha256-omZEAw0MHq2x18HuarE46CcM6kcRX+TZ/cJ7RR5hY8o=",
+        "owner": "dom96",
+        "repo": "webdriver",
+        "rev": "1400f3f1d867b7e8d128975cbcca7381b5969db9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dom96",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "webdriver",
+        "type": "github"
+      }
+    },
+    "webdriver-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-webdriver-master": "src-webdriver-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311549,
+        "narHash": "sha256-n1PnoVl3Wf2tKwBDwP37/vLA/HLONAJ0FFez4YPg7SQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "webdriver",
+        "rev": "59185114bb2c8a454a1b5467cbfa0816dd297729",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "webdriver",
+        "type": "github"
+      }
+    },
+    "webdriver-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-webdriver-v0_1_0": "src-webdriver-v0_1_0"
+      },
+      "locked": {
+        "dir": "v0_1_0",
+        "lastModified": 1647311549,
+        "narHash": "sha256-n1PnoVl3Wf2tKwBDwP37/vLA/HLONAJ0FFez4YPg7SQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "webdriver",
+        "rev": "59185114bb2c8a454a1b5467cbfa0816dd297729",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "webdriver",
+        "type": "github"
+      }
+    },
+    "webdriver-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-webdriver-v0_2_0": "src-webdriver-v0_2_0"
+      },
+      "locked": {
+        "dir": "v0_2_0",
+        "lastModified": 1647311549,
+        "narHash": "sha256-n1PnoVl3Wf2tKwBDwP37/vLA/HLONAJ0FFez4YPg7SQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "webdriver",
+        "rev": "59185114bb2c8a454a1b5467cbfa0816dd297729",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_2_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "webdriver",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

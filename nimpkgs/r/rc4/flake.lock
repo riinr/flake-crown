@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "rc4-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-RC4-master": "src-RC4-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311363,
+        "narHash": "sha256-CXRzo/LcvV0O3SwiFwgjZTpHLyjYsNbHJ7JcD9HiNfU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "rc4",
+        "rev": "ac2034af26cc83caa937f6d75b713ce1dbbf2218",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "rc4",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "rc4-master": "rc4-master"
+      }
+    },
+    "src-RC4-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1561660251,
+        "narHash": "sha256-TfAThfWQAHIfkB7SW1NiqjjySmNea+7YQLJuIWzO5FM=",
+        "owner": "OHermesJunior",
+        "repo": "nimRC4",
+        "rev": "694fdb854fba8a255db51550b2e8575fe08207c6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OHermesJunior",
+        "ref": "refs/heads/master",
+        "repo": "nimRC4",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
