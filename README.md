@@ -1,33 +1,47 @@
-# Nimble packages Nix flake
+# Packages nimble packages as Nix flakes
 
 This repository contains experimental-grade, auto-generated
 [Nim](https://nim-lang.org/) packages.
 
 ## TODO:
  - automatic testing
- - back-versioning
  - regular updates
+ - index non packages.json
+ - follow non git dependencies
+ - some way to patch generated code
 
 ## Usage
 
 ```shell
-nix run nimble#fugitive
-  # Build and execute a Nimble binary
+# Build and execute a Nimble binary
+nix run github:nim-nix-pkgs/maze
 
-nix dev-shell nimble
-  # Enter a shell with the Nim and Nimble utilities
+# using maze with gameoflife
+nix run github:nim-nix-pkgs/gameoflife \
+  <(nix run github:nim-nix-pkgs/maze -- -w:0 -r:1 -W:10 -H:10)
+
 ```
 
-For an example of how to refer to Nim packages when building a Nix package you could have a look at [this flake](https://git.sr.ht/~ehmry/upload_bot/tree/master/item/flake.nix)
+Or in Flake like
+
+```nix
+{
+  description = "Replicating NimCR";
+  inputs.nimcr.url = "github:nim-nix-pkgs/nimcr";
+
+  outputs = { self, nimcr }: {
+    defaultPackage.x86_64-linux = nimcr.defaultPackage.x86_64-linux;
+  ];
+}
+```
 
 ## Synchronization
 
 ```sh
-nix run .#package-updater
 
-# …or to update an invidual package…
-
-nix run .#package-updater generate foobar
+cd refresher
+nix develop -c $SHELL
+./updatePkg.nims
 ```
 
 This will prefetch the repositories of new and updated Nimble packages and
@@ -35,6 +49,12 @@ record the necessary metadata to fetch the source as a fixed-output derivation.
 Each package has such a fixed-output that is used as a input to a derivations
 that produce metadata to (attempt to) build the package.
 
-## Overrides
+## Version resolution
 
-Arguments to the Nim package builder may be added to the [./overrides.nix] file.
+Version resolutions is done by the [lib project](https://github.com/riinr/nim-flakes-lib)
+
+## Special thanks
+
+- @ehmry, author of [project](https://github.com/nix-community/flake-nimble) we forked
+- @nix-community, to keep his [project](https://github.com/nix-community/flake-nimble) aline
+- @jiro4989 for his really fast reply
