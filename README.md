@@ -31,7 +31,7 @@ Or in Flake like
 
   outputs = { self, nimcr }: {
     defaultPackage.x86_64-linux = nimcr.defaultPackage.x86_64-linux;
-  ];
+  };
 }
 ```
 
