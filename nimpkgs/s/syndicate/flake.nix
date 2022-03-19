@@ -23,6 +23,14 @@
   inputs."syndicate-1_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."syndicate-1_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."syndicate-nim-syndicate-1_2_0".dir   = "nim-syndicate-1_2_0";
+  inputs."syndicate-nim-syndicate-1_2_0".owner = "nim-nix-pkgs";
+  inputs."syndicate-nim-syndicate-1_2_0".ref   = "master";
+  inputs."syndicate-nim-syndicate-1_2_0".repo  = "syndicate";
+  inputs."syndicate-nim-syndicate-1_2_0".type  = "github";
+  inputs."syndicate-nim-syndicate-1_2_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."syndicate-nim-syndicate-1_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

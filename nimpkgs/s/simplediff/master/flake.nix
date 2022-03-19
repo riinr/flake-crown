@@ -9,9 +9,9 @@
   
   inputs.src-simplediff-master.flake = false;
   inputs.src-simplediff-master.owner = "~reesmichael1";
-  inputs.src-simplediff-master.ref   = "refs/heads/master";
+  inputs.src-simplediff-master.ref   = "master";
   inputs.src-simplediff-master.repo  = "nim-simplediff";
-  inputs.src-simplediff-master.type  = "other";
+  inputs.src-simplediff-master.type  = "sourcehut";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

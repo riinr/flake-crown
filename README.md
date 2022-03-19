@@ -56,5 +56,5 @@ Version resolutions is done by the [lib project](https://github.com/riinr/nim-fl
 ## Special thanks
 
 - @ehmry, author of [project](https://github.com/nix-community/flake-nimble) we forked
-- @nix-community, to keep his [project](https://github.com/nix-community/flake-nimble) aline
+- @nix-community, to keep his [project](https://github.com/nix-community/flake-nimble)
 - @jiro4989 for his really fast reply

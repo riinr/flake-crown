@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-distances-master": "src-distances-master"
+      }
+    },
+    "src-distances-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1623286743,
+        "narHash": "sha256-6wYMojg0A0ZqtThuXOMhNVazwihksDmu5t3DJ00mP1c=",
+        "owner": "ayman-albaz",
+        "repo": "distances",
+        "rev": "4b040c012b2e81c1a5510539e7cbf3c69d90e854",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ayman-albaz",
+        "ref": "refs/heads/master",
+        "repo": "distances",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

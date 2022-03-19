@@ -13,13 +13,6 @@
   inputs.src-ggplotnim-v0_2_11.repo  = "ggplotnim";
   inputs.src-ggplotnim-v0_2_11.type  = "github";
   
-  inputs."https://github.com/vindaar/seqmath".owner = "nim-nix-pkgs";
-  inputs."https://github.com/vindaar/seqmath".ref   = "master";
-  inputs."https://github.com/vindaar/seqmath".repo  = "https://github.com/vindaar/seqmath";
-  inputs."https://github.com/vindaar/seqmath".type  = "github";
-  inputs."https://github.com/vindaar/seqmath".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/vindaar/seqmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."ginger".owner = "nim-nix-pkgs";
   inputs."ginger".ref   = "master";
   inputs."ginger".repo  = "ginger";

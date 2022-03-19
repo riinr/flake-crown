@@ -27,13 +27,6 @@
   inputs."bcrypt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bcrypt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."contra".owner = "nim-nix-pkgs";
-  inputs."contra".ref   = "master";
-  inputs."contra".repo  = "contra";
-  inputs."contra".type  = "github";
-  inputs."contra".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."contra".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."datetime2human".owner = "nim-nix-pkgs";
   inputs."datetime2human".ref   = "master";
   inputs."datetime2human".repo  = "datetime2human";
@@ -47,13 +40,6 @@
   inputs."firejail".type  = "github";
   inputs."firejail".inputs.nixpkgs.follows = "nixpkgs";
   inputs."firejail".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."libravatar".owner = "nim-nix-pkgs";
-  inputs."libravatar".ref   = "master";
-  inputs."libravatar".repo  = "libravatar";
-  inputs."libravatar".type  = "github";
-  inputs."libravatar".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."libravatar".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."otp".owner = "nim-nix-pkgs";
   inputs."otp".ref   = "master";

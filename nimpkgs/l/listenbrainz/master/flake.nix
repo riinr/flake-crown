@@ -27,20 +27,6 @@
   inputs."nodejs".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nodejs".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/alaviss/union".owner = "nim-nix-pkgs";
-  inputs."https://github.com/alaviss/union".ref   = "master";
-  inputs."https://github.com/alaviss/union".repo  = "https://github.com/alaviss/union";
-  inputs."https://github.com/alaviss/union".type  = "github";
-  inputs."https://github.com/alaviss/union".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/alaviss/union".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."https://github.com/tandy-1000/uniony".owner = "nim-nix-pkgs";
-  inputs."https://github.com/tandy-1000/uniony".ref   = "master";
-  inputs."https://github.com/tandy-1000/uniony".repo  = "https://github.com/tandy-1000/uniony";
-  inputs."https://github.com/tandy-1000/uniony".type  = "github";
-  inputs."https://github.com/tandy-1000/uniony".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/tandy-1000/uniony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

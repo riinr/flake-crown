@@ -13,13 +13,6 @@
   inputs.src-moe-v0_2_0_1.repo  = "moe";
   inputs.src-moe-v0_2_0_1.type  = "github";
   
-  inputs."https://github.com/walkre-niboshi/nim-ncurses".owner = "nim-nix-pkgs";
-  inputs."https://github.com/walkre-niboshi/nim-ncurses".ref   = "master";
-  inputs."https://github.com/walkre-niboshi/nim-ncurses".repo  = "https://github.com/walkre-niboshi/nim-ncurses";
-  inputs."https://github.com/walkre-niboshi/nim-ncurses".type  = "github";
-  inputs."https://github.com/walkre-niboshi/nim-ncurses".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/walkre-niboshi/nim-ncurses".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."unicodedb".owner = "nim-nix-pkgs";
   inputs."unicodedb".ref   = "master";
   inputs."unicodedb".repo  = "unicodedb";

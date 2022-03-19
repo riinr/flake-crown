@@ -27,40 +27,12 @@
   inputs."stb_image".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stb_image".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/yglukhov/android.git".owner = "nim-nix-pkgs";
-  inputs."https://github.com/yglukhov/android.git".ref   = "master";
-  inputs."https://github.com/yglukhov/android.git".repo  = "https://github.com/yglukhov/android.git";
-  inputs."https://github.com/yglukhov/android.git".type  = "github";
-  inputs."https://github.com/yglukhov/android.git".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/yglukhov/android.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."x11".owner = "nim-nix-pkgs";
   inputs."x11".ref   = "master";
   inputs."x11".repo  = "x11";
   inputs."x11".type  = "github";
   inputs."x11".inputs.nixpkgs.follows = "nixpkgs";
   inputs."x11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."https://github.com/fragworks/nim-chipmunk.git".owner = "nim-nix-pkgs";
-  inputs."https://github.com/fragworks/nim-chipmunk.git".ref   = "master";
-  inputs."https://github.com/fragworks/nim-chipmunk.git".repo  = "https://github.com/fragworks/nim-chipmunk.git";
-  inputs."https://github.com/fragworks/nim-chipmunk.git".type  = "github";
-  inputs."https://github.com/fragworks/nim-chipmunk.git".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/fragworks/nim-chipmunk.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."https://github.com/zacharycarter/bgfx.nim.git".owner = "nim-nix-pkgs";
-  inputs."https://github.com/zacharycarter/bgfx.nim.git".ref   = "master";
-  inputs."https://github.com/zacharycarter/bgfx.nim.git".repo  = "https://github.com/zacharycarter/bgfx.nim.git";
-  inputs."https://github.com/zacharycarter/bgfx.nim.git".type  = "github";
-  inputs."https://github.com/zacharycarter/bgfx.nim.git".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/zacharycarter/bgfx.nim.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."https://github.com/zacharycarter/bgfx.extras.nim.git".owner = "nim-nix-pkgs";
-  inputs."https://github.com/zacharycarter/bgfx.extras.nim.git".ref   = "master";
-  inputs."https://github.com/zacharycarter/bgfx.extras.nim.git".repo  = "https://github.com/zacharycarter/bgfx.extras.nim.git";
-  inputs."https://github.com/zacharycarter/bgfx.extras.nim.git".type  = "github";
-  inputs."https://github.com/zacharycarter/bgfx.extras.nim.git".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/zacharycarter/bgfx.extras.nim.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."sound".owner = "nim-nix-pkgs";
   inputs."sound".ref   = "master";
@@ -69,33 +41,12 @@
   inputs."sound".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sound".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/zacharycarter/nuklear-nim.git".owner = "nim-nix-pkgs";
-  inputs."https://github.com/zacharycarter/nuklear-nim.git".ref   = "master";
-  inputs."https://github.com/zacharycarter/nuklear-nim.git".repo  = "https://github.com/zacharycarter/nuklear-nim.git";
-  inputs."https://github.com/zacharycarter/nuklear-nim.git".type  = "github";
-  inputs."https://github.com/zacharycarter/nuklear-nim.git".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/zacharycarter/nuklear-nim.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."https://github.com/zacharycarter/nanovg.nim.git".owner = "nim-nix-pkgs";
-  inputs."https://github.com/zacharycarter/nanovg.nim.git".ref   = "master";
-  inputs."https://github.com/zacharycarter/nanovg.nim.git".repo  = "https://github.com/zacharycarter/nanovg.nim.git";
-  inputs."https://github.com/zacharycarter/nanovg.nim.git".type  = "github";
-  inputs."https://github.com/zacharycarter/nanovg.nim.git".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/zacharycarter/nanovg.nim.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."strfmt".owner = "nim-nix-pkgs";
   inputs."strfmt".ref   = "master";
   inputs."strfmt".repo  = "strfmt";
   inputs."strfmt".type  = "github";
   inputs."strfmt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."strfmt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."https://github.com/zacharycarter/nimassimp.git".owner = "nim-nix-pkgs";
-  inputs."https://github.com/zacharycarter/nimassimp.git".ref   = "master";
-  inputs."https://github.com/zacharycarter/nimassimp.git".repo  = "https://github.com/zacharycarter/nimassimp.git";
-  inputs."https://github.com/zacharycarter/nimassimp.git".type  = "github";
-  inputs."https://github.com/zacharycarter/nimassimp.git".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/zacharycarter/nimassimp.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

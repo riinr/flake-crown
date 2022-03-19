@@ -34,13 +34,6 @@
   inputs."karax".inputs.nixpkgs.follows = "nixpkgs";
   inputs."karax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/planety/cookies".owner = "nim-nix-pkgs";
-  inputs."https://github.com/planety/cookies".ref   = "master";
-  inputs."https://github.com/planety/cookies".repo  = "https://github.com/planety/cookies";
-  inputs."https://github.com/planety/cookies".type  = "github";
-  inputs."https://github.com/planety/cookies".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/planety/cookies".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."httpbeast".owner = "nim-nix-pkgs";
   inputs."httpbeast".ref   = "master";
   inputs."httpbeast".repo  = "httpbeast";

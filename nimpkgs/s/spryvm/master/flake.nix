@@ -34,13 +34,6 @@
   inputs."snappy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."snappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/status-im/nim-rocksdb.git".owner = "nim-nix-pkgs";
-  inputs."https://github.com/status-im/nim-rocksdb.git".ref   = "master";
-  inputs."https://github.com/status-im/nim-rocksdb.git".repo  = "https://github.com/status-im/nim-rocksdb.git";
-  inputs."https://github.com/status-im/nim-rocksdb.git".type  = "github";
-  inputs."https://github.com/status-im/nim-rocksdb.git".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/status-im/nim-rocksdb.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

@@ -13,20 +13,6 @@
   inputs.src-bluu-master.repo  = "bluu";
   inputs.src-bluu-master.type  = "github";
   
-  inputs."https://github.com/disruptek/rest.git".owner = "nim-nix-pkgs";
-  inputs."https://github.com/disruptek/rest.git".ref   = "master";
-  inputs."https://github.com/disruptek/rest.git".repo  = "https://github.com/disruptek/rest.git";
-  inputs."https://github.com/disruptek/rest.git".type  = "github";
-  inputs."https://github.com/disruptek/rest.git".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/disruptek/rest.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."https://github.com/disruptek/openapi.git".owner = "nim-nix-pkgs";
-  inputs."https://github.com/disruptek/openapi.git".ref   = "master";
-  inputs."https://github.com/disruptek/openapi.git".repo  = "https://github.com/disruptek/openapi.git";
-  inputs."https://github.com/disruptek/openapi.git".type  = "github";
-  inputs."https://github.com/disruptek/openapi.git".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/disruptek/openapi.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."npeg".owner = "nim-nix-pkgs";
   inputs."npeg".ref   = "master";
   inputs."npeg".repo  = "npeg";

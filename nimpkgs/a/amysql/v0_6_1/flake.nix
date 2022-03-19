@@ -27,20 +27,6 @@
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/bung87/zstd".owner = "nim-nix-pkgs";
-  inputs."https://github.com/bung87/zstd".ref   = "master";
-  inputs."https://github.com/bung87/zstd".repo  = "https://github.com/bung87/zstd";
-  inputs."https://github.com/bung87/zstd".type  = "github";
-  inputs."https://github.com/bung87/zstd".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/bung87/zstd".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."https://github.com/treeform/urlly".owner = "nim-nix-pkgs";
-  inputs."https://github.com/treeform/urlly".ref   = "master";
-  inputs."https://github.com/treeform/urlly".repo  = "https://github.com/treeform/urlly";
-  inputs."https://github.com/treeform/urlly".type  = "github";
-  inputs."https://github.com/treeform/urlly".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/treeform/urlly".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."chronos".owner = "nim-nix-pkgs";
   inputs."chronos".ref   = "master";
   inputs."chronos".repo  = "chronos";

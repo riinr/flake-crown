@@ -9,9 +9,9 @@
   
   inputs.src-once-1_0_0.flake = false;
   inputs.src-once-1_0_0.owner = "~euantorano";
-  inputs.src-once-1_0_0.ref   = "refs/tags/1.0.0";
+  inputs.src-once-1_0_0.ref   = "1.0.0";
   inputs.src-once-1_0_0.repo  = "once.nim";
-  inputs.src-once-1_0_0.type  = "other";
+  inputs.src-once-1_0_0.type  = "sourcehut";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

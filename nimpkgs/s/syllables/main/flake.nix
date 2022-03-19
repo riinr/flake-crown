@@ -20,13 +20,6 @@
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/disruptek/testes".owner = "nim-nix-pkgs";
-  inputs."https://github.com/disruptek/testes".ref   = "master";
-  inputs."https://github.com/disruptek/testes".repo  = "https://github.com/disruptek/testes";
-  inputs."https://github.com/disruptek/testes".type  = "github";
-  inputs."https://github.com/disruptek/testes".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/disruptek/testes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

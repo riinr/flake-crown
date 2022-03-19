@@ -1,32 +1,5 @@
 {
   "nodes": {
-    "amka-master": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "src-amka-master": "src-amka-master"
-      },
-      "locked": {
-        "dir": "master",
-        "lastModified": 1647310817,
-        "narHash": "sha256-IV2G/avA3vA88BbINTnvMLC8r8jgyLlbFzBk4pzDU68=",
-        "owner": "nim-nix-pkgs",
-        "repo": "amka",
-        "rev": "a4523dfbd22da62eef7d7e411ee5ad4f56238040",
-        "type": "github"
-      },
-      "original": {
-        "dir": "master",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "amka",
-        "type": "github"
-      }
-    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -61,26 +34,8 @@
     },
     "root": {
       "inputs": {
-        "amka-master": "amka-master",
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs"
-      }
-    },
-    "src-amka-master": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1608489154,
-        "narHash": "sha256-m64w9ATbWvNibFLFyDFSaT7/94rT2R7uoZjNlVv4lLQ=",
-        "owner": "zoispag",
-        "repo": "amka-nim",
-        "rev": "2b048f22b98712597c467864aa0d2cef8de46739",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zoispag",
-        "ref": "refs/heads/master",
-        "repo": "amka-nim",
-        "type": "github"
       }
     }
   },

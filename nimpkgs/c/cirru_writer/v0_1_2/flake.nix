@@ -13,13 +13,6 @@
   inputs.src-cirru_writer-v0_1_2.repo  = "writer.nim";
   inputs.src-cirru_writer-v0_1_2.type  = "github";
   
-  inputs."https://github.com/rosado/edn.nim".owner = "nim-nix-pkgs";
-  inputs."https://github.com/rosado/edn.nim".ref   = "master";
-  inputs."https://github.com/rosado/edn.nim".repo  = "https://github.com/rosado/edn.nim";
-  inputs."https://github.com/rosado/edn.nim".type  = "github";
-  inputs."https://github.com/rosado/edn.nim".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/rosado/edn.nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

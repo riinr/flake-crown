@@ -27,13 +27,6 @@
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/status-im/nim-taskpools.git".owner = "nim-nix-pkgs";
-  inputs."https://github.com/status-im/nim-taskpools.git".ref   = "master";
-  inputs."https://github.com/status-im/nim-taskpools.git".repo  = "https://github.com/status-im/nim-taskpools.git";
-  inputs."https://github.com/status-im/nim-taskpools.git".type  = "github";
-  inputs."https://github.com/status-im/nim-taskpools.git".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/status-im/nim-taskpools.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

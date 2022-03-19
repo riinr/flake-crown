@@ -13,6 +13,20 @@
   inputs.src-mycouch-main.repo  = "mycouch";
   inputs.src-mycouch-main.type  = "github";
   
+  inputs."macroutils".owner = "nim-nix-pkgs";
+  inputs."macroutils".ref   = "master";
+  inputs."macroutils".repo  = "macroutils";
+  inputs."macroutils".type  = "github";
+  inputs."macroutils".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."macroutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."macroplus".owner = "nim-nix-pkgs";
+  inputs."macroplus".ref   = "master";
+  inputs."macroplus".repo  = "macroplus";
+  inputs."macroplus".type  = "github";
+  inputs."macroplus".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."macroplus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

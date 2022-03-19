@@ -48,6 +48,13 @@
   inputs."paramidi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."paramidi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."threading".owner = "nim-nix-pkgs";
+  inputs."threading".ref   = "master";
+  inputs."threading".repo  = "threading";
+  inputs."threading".type  = "github";
+  inputs."threading".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."threading".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

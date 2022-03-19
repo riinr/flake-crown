@@ -9,9 +9,9 @@
   
   inputs.src-syndicate-1_0_0.flake = false;
   inputs.src-syndicate-1_0_0.owner = "~ehmry";
-  inputs.src-syndicate-1_0_0.ref   = "refs/tags/1.0.0";
+  inputs.src-syndicate-1_0_0.ref   = "1.0.0";
   inputs.src-syndicate-1_0_0.repo  = "syndicate-nim";
-  inputs.src-syndicate-1_0_0.type  = "other";
+  inputs.src-syndicate-1_0_0.type  = "sourcehut";
   
   inputs."nimsha2".owner = "nim-nix-pkgs";
   inputs."nimsha2".ref   = "master";

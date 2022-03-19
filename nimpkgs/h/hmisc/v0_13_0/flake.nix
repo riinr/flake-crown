@@ -13,13 +13,6 @@
   inputs.src-hmisc-v0_13_0.repo  = "hmisc";
   inputs.src-hmisc-v0_13_0.type  = "github";
   
-  inputs."https://github.com/nim-lang/fusion.git".owner = "nim-nix-pkgs";
-  inputs."https://github.com/nim-lang/fusion.git".ref   = "master";
-  inputs."https://github.com/nim-lang/fusion.git".repo  = "https://github.com/nim-lang/fusion.git";
-  inputs."https://github.com/nim-lang/fusion.git".type  = "github";
-  inputs."https://github.com/nim-lang/fusion.git".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/nim-lang/fusion.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."benchy".owner = "nim-nix-pkgs";
   inputs."benchy".ref   = "master";
   inputs."benchy".repo  = "benchy";

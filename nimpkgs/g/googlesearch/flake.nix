@@ -71,6 +71,14 @@
   inputs."googlesearch-v0_4_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."googlesearch-v0_4_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."googlesearch-v0_4_2".dir   = "v0_4_2";
+  inputs."googlesearch-v0_4_2".owner = "nim-nix-pkgs";
+  inputs."googlesearch-v0_4_2".ref   = "master";
+  inputs."googlesearch-v0_4_2".repo  = "googlesearch";
+  inputs."googlesearch-v0_4_2".type  = "github";
+  inputs."googlesearch-v0_4_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."googlesearch-v0_4_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

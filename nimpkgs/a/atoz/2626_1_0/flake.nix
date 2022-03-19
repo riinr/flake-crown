@@ -20,20 +20,6 @@
   inputs."sigv4".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sigv4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/disruptek/rest".owner = "nim-nix-pkgs";
-  inputs."https://github.com/disruptek/rest".ref   = "master";
-  inputs."https://github.com/disruptek/rest".repo  = "https://github.com/disruptek/rest";
-  inputs."https://github.com/disruptek/rest".type  = "github";
-  inputs."https://github.com/disruptek/rest".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/disruptek/rest".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."https://github.com/disruptek/openapi".owner = "nim-nix-pkgs";
-  inputs."https://github.com/disruptek/openapi".ref   = "master";
-  inputs."https://github.com/disruptek/openapi".repo  = "https://github.com/disruptek/openapi";
-  inputs."https://github.com/disruptek/openapi".type  = "github";
-  inputs."https://github.com/disruptek/openapi".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/disruptek/openapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."npeg".owner = "nim-nix-pkgs";
   inputs."npeg".ref   = "master";
   inputs."npeg".repo  = "npeg";

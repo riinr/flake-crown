@@ -13,20 +13,6 @@
   inputs.src-sigv4-1_0_12.repo  = "sigv4";
   inputs.src-sigv4-1_0_12.type  = "github";
   
-  inputs."https://github.com/jangko/nimsha2".owner = "nim-nix-pkgs";
-  inputs."https://github.com/jangko/nimsha2".ref   = "master";
-  inputs."https://github.com/jangko/nimsha2".repo  = "https://github.com/jangko/nimsha2";
-  inputs."https://github.com/jangko/nimsha2".type  = "github";
-  inputs."https://github.com/jangko/nimsha2".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/jangko/nimsha2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."https://github.com/disruptek/testes".owner = "nim-nix-pkgs";
-  inputs."https://github.com/disruptek/testes".ref   = "master";
-  inputs."https://github.com/disruptek/testes".repo  = "https://github.com/disruptek/testes";
-  inputs."https://github.com/disruptek/testes".type  = "github";
-  inputs."https://github.com/disruptek/testes".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/disruptek/testes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

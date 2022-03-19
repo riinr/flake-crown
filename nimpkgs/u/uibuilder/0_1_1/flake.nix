@@ -27,13 +27,6 @@
   inputs."q".inputs.nixpkgs.follows = "nixpkgs";
   inputs."q".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/ba0f3/xml.nim".owner = "nim-nix-pkgs";
-  inputs."https://github.com/ba0f3/xml.nim".ref   = "master";
-  inputs."https://github.com/ba0f3/xml.nim".repo  = "https://github.com/ba0f3/xml.nim";
-  inputs."https://github.com/ba0f3/xml.nim".type  = "github";
-  inputs."https://github.com/ba0f3/xml.nim".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/ba0f3/xml.nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

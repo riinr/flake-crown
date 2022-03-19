@@ -9,9 +9,9 @@
   
   inputs.src-cbor-v0_8_0.flake = false;
   inputs.src-cbor-v0_8_0.owner = "~ehmry";
-  inputs.src-cbor-v0_8_0.ref   = "refs/tags/v0.8.0";
+  inputs.src-cbor-v0_8_0.ref   = "v0.8.0";
   inputs.src-cbor-v0_8_0.repo  = "nim_cbor";
-  inputs.src-cbor-v0_8_0.type  = "other";
+  inputs.src-cbor-v0_8_0.type  = "sourcehut";
   
   inputs."bignum".owner = "nim-nix-pkgs";
   inputs."bignum".ref   = "master";

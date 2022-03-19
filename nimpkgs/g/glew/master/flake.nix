@@ -13,20 +13,6 @@
   inputs.src-glew-master.repo  = "nim-glew";
   inputs.src-glew-master.type  = "github";
   
-  inputs."https://github.com/jyapayne/nimterop".owner = "nim-nix-pkgs";
-  inputs."https://github.com/jyapayne/nimterop".ref   = "master";
-  inputs."https://github.com/jyapayne/nimterop".repo  = "https://github.com/jyapayne/nimterop";
-  inputs."https://github.com/jyapayne/nimterop".type  = "github";
-  inputs."https://github.com/jyapayne/nimterop".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/jyapayne/nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."https://github.com/jyapayne/nim-glfw".owner = "nim-nix-pkgs";
-  inputs."https://github.com/jyapayne/nim-glfw".ref   = "master";
-  inputs."https://github.com/jyapayne/nim-glfw".repo  = "https://github.com/jyapayne/nim-glfw";
-  inputs."https://github.com/jyapayne/nim-glfw".type  = "github";
-  inputs."https://github.com/jyapayne/nim-glfw".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/jyapayne/nim-glfw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

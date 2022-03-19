@@ -41,13 +41,6 @@
   inputs."jsonschema".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsonschema".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/bung87/objc_runtime".owner = "nim-nix-pkgs";
-  inputs."https://github.com/bung87/objc_runtime".ref   = "master";
-  inputs."https://github.com/bung87/objc_runtime".repo  = "https://github.com/bung87/objc_runtime";
-  inputs."https://github.com/bung87/objc_runtime".type  = "github";
-  inputs."https://github.com/bung87/objc_runtime".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/bung87/objc_runtime".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."darwin".owner = "nim-nix-pkgs";
   inputs."darwin".ref   = "master";
   inputs."darwin".repo  = "darwin";

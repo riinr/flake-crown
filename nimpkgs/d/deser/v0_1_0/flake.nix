@@ -13,13 +13,6 @@
   inputs.src-deser-v0_1_0.repo  = "deser";
   inputs.src-deser-v0_1_0.type  = "github";
   
-  inputs."https://github.com/gabbhack/anycase-fork".owner = "nim-nix-pkgs";
-  inputs."https://github.com/gabbhack/anycase-fork".ref   = "master";
-  inputs."https://github.com/gabbhack/anycase-fork".repo  = "https://github.com/gabbhack/anycase-fork";
-  inputs."https://github.com/gabbhack/anycase-fork".type  = "github";
-  inputs."https://github.com/gabbhack/anycase-fork".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/gabbhack/anycase-fork".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

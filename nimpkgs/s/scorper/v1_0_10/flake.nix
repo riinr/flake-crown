@@ -27,13 +27,6 @@
   inputs."npeg".inputs.nixpkgs.follows = "nixpkgs";
   inputs."npeg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/nortero-code/rx-nim.git".owner = "nim-nix-pkgs";
-  inputs."https://github.com/nortero-code/rx-nim.git".ref   = "master";
-  inputs."https://github.com/nortero-code/rx-nim.git".repo  = "https://github.com/nortero-code/rx-nim.git";
-  inputs."https://github.com/nortero-code/rx-nim.git".type  = "github";
-  inputs."https://github.com/nortero-code/rx-nim.git".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/nortero-code/rx-nim.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."zippy".owner = "nim-nix-pkgs";
   inputs."zippy".ref   = "master";
   inputs."zippy".repo  = "zippy";

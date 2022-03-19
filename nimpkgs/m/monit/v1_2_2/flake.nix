@@ -13,20 +13,6 @@
   inputs.src-monit-v1_2_2.repo  = "monit";
   inputs.src-monit-v1_2_2.type  = "github";
   
-  inputs."yaml".owner = "nim-nix-pkgs";
-  inputs."yaml".ref   = "master";
-  inputs."yaml".repo  = "yaml";
-  inputs."yaml".type  = "github";
-  inputs."yaml".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."yaml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."cligen".owner = "nim-nix-pkgs";
-  inputs."cligen".ref   = "master";
-  inputs."cligen".repo  = "cligen";
-  inputs."cligen".type  = "github";
-  inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

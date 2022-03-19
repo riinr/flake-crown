@@ -13,13 +13,6 @@
   inputs.src-dimscmd-1_3_0.repo  = "dimscordCommandHandler";
   inputs.src-dimscmd-1_3_0.type  = "github";
   
-  inputs."https://github.com/krisppurg/dimscord".owner = "nim-nix-pkgs";
-  inputs."https://github.com/krisppurg/dimscord".ref   = "master";
-  inputs."https://github.com/krisppurg/dimscord".repo  = "https://github.com/krisppurg/dimscord";
-  inputs."https://github.com/krisppurg/dimscord".type  = "github";
-  inputs."https://github.com/krisppurg/dimscord".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/krisppurg/dimscord".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

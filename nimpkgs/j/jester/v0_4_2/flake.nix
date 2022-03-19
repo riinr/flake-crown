@@ -20,13 +20,6 @@
   inputs."httpbeast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."httpbeast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/timotheecour/asynctools".owner = "nim-nix-pkgs";
-  inputs."https://github.com/timotheecour/asynctools".ref   = "master";
-  inputs."https://github.com/timotheecour/asynctools".repo  = "https://github.com/timotheecour/asynctools";
-  inputs."https://github.com/timotheecour/asynctools".type  = "github";
-  inputs."https://github.com/timotheecour/asynctools".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/timotheecour/asynctools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

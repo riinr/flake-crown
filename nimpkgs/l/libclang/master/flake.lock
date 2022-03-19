@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-libclang-master": "src-libclang-master"
+      }
+    },
+    "src-libclang-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1451849198,
+        "narHash": "sha256-y9oJUEilltehGJMG6MStFbgs0AS73rtd3RMSu+KY1Hw=",
+        "owner": "cowboy-coders",
+        "repo": "nim-libclang",
+        "rev": "ff854c51551d46ff9c48f3e6d4b6cccb2f4eec10",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cowboy-coders",
+        "ref": "refs/heads/master",
+        "repo": "nim-libclang",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

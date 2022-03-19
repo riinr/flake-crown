@@ -13,13 +13,6 @@
   inputs.src-libnx-0_1_8.repo  = "nim-libnx";
   inputs.src-libnx-0_1_8.type  = "github";
   
-  inputs."https://github.com/genotrance/nimgen".owner = "nim-nix-pkgs";
-  inputs."https://github.com/genotrance/nimgen".ref   = "master";
-  inputs."https://github.com/genotrance/nimgen".repo  = "https://github.com/genotrance/nimgen";
-  inputs."https://github.com/genotrance/nimgen".type  = "github";
-  inputs."https://github.com/genotrance/nimgen".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/genotrance/nimgen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."switch-build".owner = "nim-nix-pkgs";
   inputs."switch-build".ref   = "master";
   inputs."switch-build".repo  = "switch-build";

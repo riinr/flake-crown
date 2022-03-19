@@ -20,13 +20,6 @@
   inputs."scraper".inputs.nixpkgs.follows = "nixpkgs";
   inputs."scraper".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://gitlab.com/lurlo/useragent".owner = "nim-nix-pkgs";
-  inputs."https://gitlab.com/lurlo/useragent".ref   = "master";
-  inputs."https://gitlab.com/lurlo/useragent".repo  = "https://gitlab.com/lurlo/useragent";
-  inputs."https://gitlab.com/lurlo/useragent".type  = "github";
-  inputs."https://gitlab.com/lurlo/useragent".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://gitlab.com/lurlo/useragent".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

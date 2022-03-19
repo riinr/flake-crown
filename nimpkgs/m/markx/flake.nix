@@ -15,6 +15,14 @@
   inputs."markx-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."markx-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."markx-untagged-cfc55e9213ad670a5f31".dir   = "untagged-cfc55e9213ad670a5f31";
+  inputs."markx-untagged-cfc55e9213ad670a5f31".owner = "nim-nix-pkgs";
+  inputs."markx-untagged-cfc55e9213ad670a5f31".ref   = "master";
+  inputs."markx-untagged-cfc55e9213ad670a5f31".repo  = "markx";
+  inputs."markx-untagged-cfc55e9213ad670a5f31".type  = "github";
+  inputs."markx-untagged-cfc55e9213ad670a5f31".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."markx-untagged-cfc55e9213ad670a5f31".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."markx-v1_0_0".dir   = "v1_0_0";
   inputs."markx-v1_0_0".owner = "nim-nix-pkgs";
   inputs."markx-v1_0_0".ref   = "master";
@@ -30,6 +38,14 @@
   inputs."markx-v1_0_1".type  = "github";
   inputs."markx-v1_0_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."markx-v1_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."markx-v1_0_2".dir   = "v1_0_2";
+  inputs."markx-v1_0_2".owner = "nim-nix-pkgs";
+  inputs."markx-v1_0_2".ref   = "master";
+  inputs."markx-v1_0_2".repo  = "markx";
+  inputs."markx-v1_0_2".type  = "github";
+  inputs."markx-v1_0_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."markx-v1_0_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

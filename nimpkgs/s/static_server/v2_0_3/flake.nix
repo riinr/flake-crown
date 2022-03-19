@@ -13,13 +13,6 @@
   inputs.src-static_server-v2_0_3.repo  = "nimhttpd";
   inputs.src-static_server-v2_0_3.type  = "github";
   
-  inputs."https://github.com/bung87/finder".owner = "nim-nix-pkgs";
-  inputs."https://github.com/bung87/finder".ref   = "master";
-  inputs."https://github.com/bung87/finder".repo  = "https://github.com/bung87/finder";
-  inputs."https://github.com/bung87/finder".type  = "github";
-  inputs."https://github.com/bung87/finder".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/bung87/finder".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

@@ -27,13 +27,6 @@
   inputs."argument_parser".inputs.nixpkgs.follows = "nixpkgs";
   inputs."argument_parser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/gradha/badger_bits.git".owner = "nim-nix-pkgs";
-  inputs."https://github.com/gradha/badger_bits.git".ref   = "master";
-  inputs."https://github.com/gradha/badger_bits.git".repo  = "https://github.com/gradha/badger_bits.git";
-  inputs."https://github.com/gradha/badger_bits.git".type  = "github";
-  inputs."https://github.com/gradha/badger_bits.git".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/gradha/badger_bits.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

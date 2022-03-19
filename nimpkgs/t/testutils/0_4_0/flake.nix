@@ -13,13 +13,6 @@
   inputs.src-testutils-0_4_0.repo  = "nim-testutils";
   inputs.src-testutils-0_4_0.type  = "github";
   
-  inputs."https://github.com/status-im/nim-unittest2.git".owner = "nim-nix-pkgs";
-  inputs."https://github.com/status-im/nim-unittest2.git".ref   = "master";
-  inputs."https://github.com/status-im/nim-unittest2.git".repo  = "https://github.com/status-im/nim-unittest2.git";
-  inputs."https://github.com/status-im/nim-unittest2.git".type  = "github";
-  inputs."https://github.com/status-im/nim-unittest2.git".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/status-im/nim-unittest2.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

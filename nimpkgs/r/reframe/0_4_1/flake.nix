@@ -13,6 +13,13 @@
   inputs.src-reframe-0_4_1.repo  = "reframe.nim";
   inputs.src-reframe-0_4_1.type  = "github";
   
+  inputs."edn".owner = "nim-nix-pkgs";
+  inputs."edn".ref   = "master";
+  inputs."edn".repo  = "edn";
+  inputs."edn".type  = "github";
+  inputs."edn".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."edn".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

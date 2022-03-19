@@ -20,13 +20,6 @@
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/disruptek/cutelog".owner = "nim-nix-pkgs";
-  inputs."https://github.com/disruptek/cutelog".ref   = "master";
-  inputs."https://github.com/disruptek/cutelog".repo  = "https://github.com/disruptek/cutelog";
-  inputs."https://github.com/disruptek/cutelog".type  = "github";
-  inputs."https://github.com/disruptek/cutelog".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/disruptek/cutelog".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

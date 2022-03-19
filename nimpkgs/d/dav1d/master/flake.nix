@@ -13,13 +13,6 @@
   inputs.src-dav1d-master.repo  = "nim-dav1d";
   inputs.src-dav1d-master.type  = "github";
   
-  inputs."https://github.com/capocasa/nimterop".owner = "nim-nix-pkgs";
-  inputs."https://github.com/capocasa/nimterop".ref   = "master";
-  inputs."https://github.com/capocasa/nimterop".repo  = "https://github.com/capocasa/nimterop";
-  inputs."https://github.com/capocasa/nimterop".type  = "github";
-  inputs."https://github.com/capocasa/nimterop".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/capocasa/nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

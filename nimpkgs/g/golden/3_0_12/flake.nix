@@ -34,13 +34,6 @@
   inputs."nimetry".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimetry".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/disruptek/msgpack4nim".owner = "nim-nix-pkgs";
-  inputs."https://github.com/disruptek/msgpack4nim".ref   = "master";
-  inputs."https://github.com/disruptek/msgpack4nim".repo  = "https://github.com/disruptek/msgpack4nim";
-  inputs."https://github.com/disruptek/msgpack4nim".type  = "github";
-  inputs."https://github.com/disruptek/msgpack4nim".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/disruptek/msgpack4nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."terminaltables".owner = "nim-nix-pkgs";
   inputs."terminaltables".ref   = "master";
   inputs."terminaltables".repo  = "terminaltables";

@@ -13,13 +13,6 @@
   inputs.src-datamancer-v0_2_1.repo  = "datamancer";
   inputs.src-datamancer-v0_2_1.type  = "github";
   
-  inputs."https://github.com/vindaar/seqmath".owner = "nim-nix-pkgs";
-  inputs."https://github.com/vindaar/seqmath".ref   = "master";
-  inputs."https://github.com/vindaar/seqmath".repo  = "https://github.com/vindaar/seqmath";
-  inputs."https://github.com/vindaar/seqmath".type  = "github";
-  inputs."https://github.com/vindaar/seqmath".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/vindaar/seqmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."arraymancer".owner = "nim-nix-pkgs";
   inputs."arraymancer".ref   = "master";
   inputs."arraymancer".repo  = "arraymancer";

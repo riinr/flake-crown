@@ -69,13 +69,6 @@
   inputs."html5_canvas".inputs.nixpkgs.follows = "nixpkgs";
   inputs."html5_canvas".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/treeform/staticglfw".owner = "nim-nix-pkgs";
-  inputs."https://github.com/treeform/staticglfw".ref   = "master";
-  inputs."https://github.com/treeform/staticglfw".repo  = "https://github.com/treeform/staticglfw";
-  inputs."https://github.com/treeform/staticglfw".type  = "github";
-  inputs."https://github.com/treeform/staticglfw".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/treeform/staticglfw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

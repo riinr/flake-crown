@@ -20,12 +20,12 @@
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/ba0f3/dnsclient.nim".owner = "nim-nix-pkgs";
-  inputs."https://github.com/ba0f3/dnsclient.nim".ref   = "master";
-  inputs."https://github.com/ba0f3/dnsclient.nim".repo  = "https://github.com/ba0f3/dnsclient.nim";
-  inputs."https://github.com/ba0f3/dnsclient.nim".type  = "github";
-  inputs."https://github.com/ba0f3/dnsclient.nim".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/ba0f3/dnsclient.nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."dnsclient".owner = "nim-nix-pkgs";
+  inputs."dnsclient".ref   = "master";
+  inputs."dnsclient".repo  = "dnsclient";
+  inputs."dnsclient".type  = "github";
+  inputs."dnsclient".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."dnsclient".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."bearssl".owner = "nim-nix-pkgs";
   inputs."bearssl".ref   = "master";

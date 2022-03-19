@@ -1,4 +1,4 @@
-#!../nimpkgs/n/nimcr/result/bin/nimcr
+#!/usr/bin/env nimcr
 
 import std/[math, posix, streams, strformat, monotimes, times]
 

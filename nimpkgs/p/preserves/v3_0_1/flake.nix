@@ -9,9 +9,9 @@
   
   inputs.src-preserves-v3_0_1.flake = false;
   inputs.src-preserves-v3_0_1.owner = "~ehmry";
-  inputs.src-preserves-v3_0_1.ref   = "refs/tags/v3.0.1";
+  inputs.src-preserves-v3_0_1.ref   = "v3.0.1";
   inputs.src-preserves-v3_0_1.repo  = "preserves-nim";
-  inputs.src-preserves-v3_0_1.type  = "other";
+  inputs.src-preserves-v3_0_1.type  = "sourcehut";
   
   inputs."compiler".owner = "nim-nix-pkgs";
   inputs."compiler".ref   = "master";

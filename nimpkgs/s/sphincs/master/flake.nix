@@ -9,9 +9,9 @@
   
   inputs.src-sphincs-master.flake = false;
   inputs.src-sphincs-master.owner = "~ehmry";
-  inputs.src-sphincs-master.ref   = "refs/heads/master";
+  inputs.src-sphincs-master.ref   = "master";
   inputs.src-sphincs-master.repo  = "nim_sphincs";
-  inputs.src-sphincs-master.type  = "other";
+  inputs.src-sphincs-master.type  = "sourcehut";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

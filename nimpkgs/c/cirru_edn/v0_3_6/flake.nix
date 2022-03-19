@@ -20,13 +20,6 @@
   inputs."cirru_parser".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cirru_parser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/cirru/writer.nim".owner = "nim-nix-pkgs";
-  inputs."https://github.com/cirru/writer.nim".ref   = "master";
-  inputs."https://github.com/cirru/writer.nim".repo  = "https://github.com/cirru/writer.nim";
-  inputs."https://github.com/cirru/writer.nim".type  = "github";
-  inputs."https://github.com/cirru/writer.nim".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/cirru/writer.nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

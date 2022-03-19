@@ -9,9 +9,9 @@
   
   inputs.src-toxcore-v0_4_0.flake = false;
   inputs.src-toxcore-v0_4_0.owner = "~ehmry";
-  inputs.src-toxcore-v0_4_0.ref   = "refs/tags/v0.4.0";
+  inputs.src-toxcore-v0_4_0.ref   = "refs/v0.4.0";
   inputs.src-toxcore-v0_4_0.repo  = "nim_tox";
-  inputs.src-toxcore-v0_4_0.type  = "other";
+  inputs.src-toxcore-v0_4_0.type  = "sourcehut";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

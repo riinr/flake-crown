@@ -41,13 +41,6 @@
   inputs."gmp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gmp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/dadadani/nim-random".owner = "nim-nix-pkgs";
-  inputs."https://github.com/dadadani/nim-random".ref   = "master";
-  inputs."https://github.com/dadadani/nim-random".repo  = "https://github.com/dadadani/nim-random";
-  inputs."https://github.com/dadadani/nim-random".type  = "github";
-  inputs."https://github.com/dadadani/nim-random".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/dadadani/nim-random".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

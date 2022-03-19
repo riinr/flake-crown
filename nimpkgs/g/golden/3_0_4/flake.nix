@@ -41,13 +41,6 @@
   inputs."msgpack4nim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."msgpack4nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/disruptek/nim-terminaltables".owner = "nim-nix-pkgs";
-  inputs."https://github.com/disruptek/nim-terminaltables".ref   = "master";
-  inputs."https://github.com/disruptek/nim-terminaltables".repo  = "https://github.com/disruptek/nim-terminaltables";
-  inputs."https://github.com/disruptek/nim-terminaltables".type  = "github";
-  inputs."https://github.com/disruptek/nim-terminaltables".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/disruptek/nim-terminaltables".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."nimgit2".owner = "nim-nix-pkgs";
   inputs."nimgit2".ref   = "master";
   inputs."nimgit2".repo  = "nimgit2";

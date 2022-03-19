@@ -9,9 +9,9 @@
   
   inputs.src-imap-v0_2_2.flake = false;
   inputs.src-imap-v0_2_2.owner = "~ehmry";
-  inputs.src-imap-v0_2_2.ref   = "refs/tags/v0.2.2";
+  inputs.src-imap-v0_2_2.ref   = "v0.2.2";
   inputs.src-imap-v0_2_2.repo  = "nim_imap";
-  inputs.src-imap-v0_2_2.type  = "other";
+  inputs.src-imap-v0_2_2.type  = "sourcehut";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

@@ -41,6 +41,13 @@
   inputs."nimpy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."msgpack4nim".owner = "nim-nix-pkgs";
+  inputs."msgpack4nim".ref   = "master";
+  inputs."msgpack4nim".repo  = "msgpack4nim";
+  inputs."msgpack4nim".type  = "github";
+  inputs."msgpack4nim".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."msgpack4nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

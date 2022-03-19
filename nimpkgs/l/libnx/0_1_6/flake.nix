@@ -13,20 +13,6 @@
   inputs.src-libnx-0_1_6.repo  = "nim-libnx";
   inputs.src-libnx-0_1_6.type  = "github";
   
-  inputs."https://github.com/genotrance/nimgen".owner = "nim-nix-pkgs";
-  inputs."https://github.com/genotrance/nimgen".ref   = "master";
-  inputs."https://github.com/genotrance/nimgen".repo  = "https://github.com/genotrance/nimgen";
-  inputs."https://github.com/genotrance/nimgen".type  = "github";
-  inputs."https://github.com/genotrance/nimgen".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/genotrance/nimgen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."https://github.com/jyapayne/switch-build".owner = "nim-nix-pkgs";
-  inputs."https://github.com/jyapayne/switch-build".ref   = "master";
-  inputs."https://github.com/jyapayne/switch-build".repo  = "https://github.com/jyapayne/switch-build";
-  inputs."https://github.com/jyapayne/switch-build".type  = "github";
-  inputs."https://github.com/jyapayne/switch-build".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/jyapayne/switch-build".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

@@ -55,20 +55,6 @@
   inputs."rcedit".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rcedit".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/bung87/static_server".owner = "nim-nix-pkgs";
-  inputs."https://github.com/bung87/static_server".ref   = "master";
-  inputs."https://github.com/bung87/static_server".repo  = "https://github.com/bung87/static_server";
-  inputs."https://github.com/bung87/static_server".type  = "github";
-  inputs."https://github.com/bung87/static_server".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/bung87/static_server".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."https://github.com/bung87/icon".owner = "nim-nix-pkgs";
-  inputs."https://github.com/bung87/icon".ref   = "master";
-  inputs."https://github.com/bung87/icon".repo  = "https://github.com/bung87/icon";
-  inputs."https://github.com/bung87/icon".type  = "github";
-  inputs."https://github.com/bung87/icon".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/bung87/icon".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."jsonschema".owner = "nim-nix-pkgs";
   inputs."jsonschema".ref   = "master";
   inputs."jsonschema".repo  = "jsonschema";

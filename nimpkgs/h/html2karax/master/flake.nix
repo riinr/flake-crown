@@ -13,6 +13,13 @@
   inputs.src-html2karax-master.repo  = "html2karax";
   inputs.src-html2karax-master.type  = "github";
   
+  inputs."karax".owner = "nim-nix-pkgs";
+  inputs."karax".ref   = "master";
+  inputs."karax".repo  = "karax";
+  inputs."karax".type  = "github";
+  inputs."karax".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."karax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

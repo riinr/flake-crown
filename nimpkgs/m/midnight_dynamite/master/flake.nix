@@ -13,13 +13,6 @@
   inputs.src-midnight_dynamite-master.repo  = "midnight_dynamite";
   inputs.src-midnight_dynamite-master.type  = "github";
   
-  inputs."https://github.com/gradha/badger_bits.git".owner = "nim-nix-pkgs";
-  inputs."https://github.com/gradha/badger_bits.git".ref   = "master";
-  inputs."https://github.com/gradha/badger_bits.git".repo  = "https://github.com/gradha/badger_bits.git";
-  inputs."https://github.com/gradha/badger_bits.git".type  = "github";
-  inputs."https://github.com/gradha/badger_bits.git".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/gradha/badger_bits.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."nake".owner = "nim-nix-pkgs";
   inputs."nake".ref   = "master";
   inputs."nake".repo  = "nake";

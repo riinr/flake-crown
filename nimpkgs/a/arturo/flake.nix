@@ -191,6 +191,14 @@
   inputs."arturo-v0_9_78".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arturo-v0_9_78".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."arturo-v0_9_80".dir   = "v0_9_80";
+  inputs."arturo-v0_9_80".owner = "nim-nix-pkgs";
+  inputs."arturo-v0_9_80".ref   = "master";
+  inputs."arturo-v0_9_80".repo  = "arturo";
+  inputs."arturo-v0_9_80".type  = "github";
+  inputs."arturo-v0_9_80".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."arturo-v0_9_80".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

@@ -1,21 +1,22 @@
+let 
+  GLOB        = "$PRJ_ROOT/../nimpkgs";
+  GLOB_CACHES = "*.{json,lock}";
+  GLOB_HEAD   = "${GLOB}/*/*/[a-zA-Z_][a-zA-Z_]*";
+  GLOB_PROJS  = "${GLOB}/**";
+  GLOB_TAG    = "${GLOB}/*/*/[0-9vV][0-9_]*";
+in
 {
+  files.cmds.gcc              = true;
+  files.cmds.git              = true;
+  files.cmds.jq               = true;
+  files.cmds.mercurial        = true;
+  files.cmds.nim-unwrapped    = true;
   files.cmds.nimble-unwrapped = true;
-  files.cmds.nim-unwrapped = true;
-  files.cmds.yj = true;
-  files.cmds.jq = true;
-  files.cmds.git = true;
-  files.cmds.gcc = true;
-  files.cmds.mercurial = true;
-  files.alias.update-pkg-of-name = ''
-    curl -s "https://raw.githubusercontent.com/nim-lang/packages/master/packages.json"|jq '.[]|select(.name == "'$1'")'|./updatePkg.nims
-  '';
-  files.alias.clean-head-cache = ''
-    rm -f ../nimpkgs/**/master/meta.json
-    rm -f ../nimpkgs/**/main/meta.json
-    rm -f ../nimpkgs/**/unstable/meta.json
-    rm -f ../nimpkgs/**/develop/meta.json
-    rm -f ../nimpkgs/**/staging/meta.json
-  '';
-  files.alias.clean-cache = ''rm -f ../nimpkgs/**/meta.json'';
-  files.alias.clean-locks = ''rm -f ../nimpkgs/**/flake.lock'';
+  files.cmds.yj               = true;
+  files.alias.rm-cache        = "rm ${GLOB_PROJS}/${GLOB_CACHES}";
+  files.alias.rm-cache-head   = "rm ${GLOB_HEAD}/${GLOB_CACHES}";
+  files.alias.rm-cache-tags   = "rm ${GLOB_TAG}/${GLOB_CACHES}";
+  files.alias.rm-result       = "rm ${GLOB_PROJS}/result";
+  files.alias.rm-result-head  = "rm ${GLOB_HEAD}/result";
+  files.alias.rm-result-tags  = "rm ${GLOB_TAG}/esult";
 }

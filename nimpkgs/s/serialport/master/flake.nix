@@ -13,13 +13,6 @@
   inputs.src-serialport-master.repo  = "serialport";
   inputs.src-serialport-master.type  = "github";
   
-  inputs."nimrod".owner = "nim-nix-pkgs";
-  inputs."nimrod".ref   = "master";
-  inputs."nimrod".repo  = "nimrod";
-  inputs."nimrod".type  = "github";
-  inputs."nimrod".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."nimrod".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

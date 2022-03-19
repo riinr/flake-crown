@@ -13,13 +13,6 @@
   inputs.src-ggplotnim-v0_4_11.repo  = "ggplotnim";
   inputs.src-ggplotnim-v0_4_11.type  = "github";
   
-  inputs."https://github.com/vindaar/seqmath".owner = "nim-nix-pkgs";
-  inputs."https://github.com/vindaar/seqmath".ref   = "master";
-  inputs."https://github.com/vindaar/seqmath".repo  = "https://github.com/vindaar/seqmath";
-  inputs."https://github.com/vindaar/seqmath".type  = "github";
-  inputs."https://github.com/vindaar/seqmath".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/vindaar/seqmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."ginger".owner = "nim-nix-pkgs";
   inputs."ginger".ref   = "master";
   inputs."ginger".repo  = "ginger";
@@ -54,13 +47,6 @@
   inputs."webview".type  = "github";
   inputs."webview".inputs.nixpkgs.follows = "nixpkgs";
   inputs."webview".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."https://github.com/scinim/scinim".owner = "nim-nix-pkgs";
-  inputs."https://github.com/scinim/scinim".ref   = "master";
-  inputs."https://github.com/scinim/scinim".repo  = "https://github.com/scinim/scinim";
-  inputs."https://github.com/scinim/scinim".type  = "github";
-  inputs."https://github.com/scinim/scinim".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/scinim/scinim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

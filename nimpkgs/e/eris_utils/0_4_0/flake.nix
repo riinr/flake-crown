@@ -9,9 +9,9 @@
   
   inputs.src-eris_utils-0_4_0.flake = false;
   inputs.src-eris_utils-0_4_0.owner = "~ehmry";
-  inputs.src-eris_utils-0_4_0.ref   = "refs/tags/0.4.0";
+  inputs.src-eris_utils-0_4_0.ref   = "0.4.0";
   inputs.src-eris_utils-0_4_0.repo  = "eris_utils";
-  inputs.src-eris_utils-0_4_0.type  = "other";
+  inputs.src-eris_utils-0_4_0.type  = "sourcehut";
   
   inputs."eris".owner = "nim-nix-pkgs";
   inputs."eris".ref   = "master";

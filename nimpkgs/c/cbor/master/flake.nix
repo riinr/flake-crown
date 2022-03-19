@@ -9,9 +9,9 @@
   
   inputs.src-cbor-master.flake = false;
   inputs.src-cbor-master.owner = "~ehmry";
-  inputs.src-cbor-master.ref   = "refs/heads/master";
+  inputs.src-cbor-master.ref   = "master";
   inputs.src-cbor-master.repo  = "nim_cbor";
-  inputs.src-cbor-master.type  = "other";
+  inputs.src-cbor-master.type  = "sourcehut";
   
   inputs."bigints".owner = "nim-nix-pkgs";
   inputs."bigints".ref   = "master";

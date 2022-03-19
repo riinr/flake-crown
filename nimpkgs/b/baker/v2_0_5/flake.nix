@@ -20,13 +20,6 @@
   inputs."proton".inputs.nixpkgs.follows = "nixpkgs";
   inputs."proton".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/docopt/docopt.nim".owner = "nim-nix-pkgs";
-  inputs."https://github.com/docopt/docopt.nim".ref   = "master";
-  inputs."https://github.com/docopt/docopt.nim".repo  = "https://github.com/docopt/docopt.nim";
-  inputs."https://github.com/docopt/docopt.nim".type  = "github";
-  inputs."https://github.com/docopt/docopt.nim".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/docopt/docopt.nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."markdown".owner = "nim-nix-pkgs";
   inputs."markdown".ref   = "master";
   inputs."markdown".repo  = "markdown";

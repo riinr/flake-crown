@@ -20,6 +20,13 @@
   inputs."oauth".inputs.nixpkgs.follows = "nixpkgs";
   inputs."oauth".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."subexes".owner = "nim-nix-pkgs";
+  inputs."subexes".ref   = "master";
+  inputs."subexes".repo  = "subexes";
+  inputs."subexes".type  = "github";
+  inputs."subexes".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."subexes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

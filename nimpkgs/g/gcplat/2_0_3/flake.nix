@@ -20,20 +20,6 @@
   inputs."openapi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."openapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/yglukhov/nim-jwt.git".owner = "nim-nix-pkgs";
-  inputs."https://github.com/yglukhov/nim-jwt.git".ref   = "master";
-  inputs."https://github.com/yglukhov/nim-jwt.git".repo  = "https://github.com/yglukhov/nim-jwt.git";
-  inputs."https://github.com/yglukhov/nim-jwt.git".type  = "github";
-  inputs."https://github.com/yglukhov/nim-jwt.git".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/yglukhov/nim-jwt.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."https://github.com/disruptek/rest.git".owner = "nim-nix-pkgs";
-  inputs."https://github.com/disruptek/rest.git".ref   = "master";
-  inputs."https://github.com/disruptek/rest.git".repo  = "https://github.com/disruptek/rest.git";
-  inputs."https://github.com/disruptek/rest.git".type  = "github";
-  inputs."https://github.com/disruptek/rest.git".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/disruptek/rest.git".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

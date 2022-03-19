@@ -13,13 +13,6 @@
   inputs.src-nimfastText-v0_1_0.repo  = "nimfastText";
   inputs.src-nimfastText-v0_1_0.type  = "github";
   
-  inputs."nimgen".owner = "nim-nix-pkgs";
-  inputs."nimgen".ref   = "master";
-  inputs."nimgen".repo  = "nimgen";
-  inputs."nimgen".type  = "github";
-  inputs."nimgen".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."nimgen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

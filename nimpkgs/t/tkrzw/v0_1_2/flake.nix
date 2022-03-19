@@ -9,9 +9,9 @@
   
   inputs.src-tkrzw-v0_1_2.flake = false;
   inputs.src-tkrzw-v0_1_2.owner = "~ehmry";
-  inputs.src-tkrzw-v0_1_2.ref   = "refs/tags/v0.1.2";
+  inputs.src-tkrzw-v0_1_2.ref   = "v0.1.2";
   inputs.src-tkrzw-v0_1_2.repo  = "nim-tkrzw";
-  inputs.src-tkrzw-v0_1_2.type  = "other";
+  inputs.src-tkrzw-v0_1_2.type  = "sourcehut";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

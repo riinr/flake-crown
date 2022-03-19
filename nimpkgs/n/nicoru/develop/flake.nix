@@ -13,13 +13,6 @@
   inputs.src-nicoru-develop.repo  = "nicoru";
   inputs.src-nicoru-develop.type  = "github";
   
-  inputs."https://github.com/def-/nim-syscall".owner = "nim-nix-pkgs";
-  inputs."https://github.com/def-/nim-syscall".ref   = "master";
-  inputs."https://github.com/def-/nim-syscall".repo  = "https://github.com/def-/nim-syscall";
-  inputs."https://github.com/def-/nim-syscall".type  = "github";
-  inputs."https://github.com/def-/nim-syscall".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/def-/nim-syscall".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."seccomp".owner = "nim-nix-pkgs";
   inputs."seccomp".ref   = "master";
   inputs."seccomp".repo  = "seccomp";

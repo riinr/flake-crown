@@ -9,9 +9,9 @@
   
   inputs.src-hottext-v1_3.flake = false;
   inputs.src-hottext-v1_3.owner = "~ehmry";
-  inputs.src-hottext-v1_3.ref   = "refs/tags/v1.3";
+  inputs.src-hottext-v1_3.ref   = "v1.3";
   inputs.src-hottext-v1_3.repo  = "hottext";
-  inputs.src-hottext-v1_3.type  = "other";
+  inputs.src-hottext-v1_3.type  = "sourcehut";
   
   inputs."sdl2".owner = "nim-nix-pkgs";
   inputs."sdl2".ref   = "master";

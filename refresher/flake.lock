@@ -54,7 +54,7 @@
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
-          "nimrc",
+          "nimcr",
           "nixpkgs"
         ]
       },
@@ -73,36 +73,7 @@
         "type": "github"
       }
     },
-    "nimcr-master": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "nimrc",
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "nimrc",
-          "nixpkgs"
-        ],
-        "src-nimcr-master": "src-nimcr-master"
-      },
-      "locked": {
-        "dir": "master",
-        "lastModified": 1647400129,
-        "narHash": "sha256-j8crSfkFhEh3BTcO8chFvJQQlbAzsST3tlCewRZIhrc=",
-        "owner": "nim-nix-pkgs",
-        "repo": "nimcr",
-        "rev": "50b1bf4ea62454695a007fb4818413cde86fd55d",
-        "type": "github"
-      },
-      "original": {
-        "dir": "master",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "nimcr",
-        "type": "github"
-      }
-    },
-    "nimrc": {
+    "nimcr": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nimcr-master": "nimcr-master",
@@ -118,6 +89,35 @@
       },
       "original": {
         "owner": "nim-nix-pkgs",
+        "repo": "nimcr",
+        "type": "github"
+      }
+    },
+    "nimcr-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimcr",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimcr",
+          "nixpkgs"
+        ],
+        "src-nimcr-master": "src-nimcr-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647311197,
+        "narHash": "sha256-3r2nyyyj5KF5TdMegLGWA0k/s/vHWKoni+7qXE1nx8g=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimcr",
+        "rev": "7c24bae10a845186e3bef5a212b703b13a33b492",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
         "repo": "nimcr",
         "type": "github"
       }
@@ -166,7 +166,7 @@
     "root": {
       "inputs": {
         "dsf": "dsf",
-        "nimrc": "nimrc"
+        "nimcr": "nimcr"
       }
     },
     "src-nimcr-master": {

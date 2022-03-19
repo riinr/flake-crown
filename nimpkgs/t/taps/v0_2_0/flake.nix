@@ -9,9 +9,9 @@
   
   inputs.src-taps-v0_2_0.flake = false;
   inputs.src-taps-v0_2_0.owner = "~ehmry";
-  inputs.src-taps-v0_2_0.ref   = "refs/tags/v0.2.0";
+  inputs.src-taps-v0_2_0.ref   = "v0.2.0";
   inputs.src-taps-v0_2_0.repo  = "nim_taps";
-  inputs.src-taps-v0_2_0.type  = "other";
+  inputs.src-taps-v0_2_0.type  = "sourcehut";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

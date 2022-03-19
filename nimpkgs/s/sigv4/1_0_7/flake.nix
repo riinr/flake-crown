@@ -13,13 +13,6 @@
   inputs.src-sigv4-1_0_7.repo  = "sigv4";
   inputs.src-sigv4-1_0_7.type  = "github";
   
-  inputs."https://github.com/disruptek/nimcrypto".owner = "nim-nix-pkgs";
-  inputs."https://github.com/disruptek/nimcrypto".ref   = "master";
-  inputs."https://github.com/disruptek/nimcrypto".repo  = "https://github.com/disruptek/nimcrypto";
-  inputs."https://github.com/disruptek/nimcrypto".type  = "github";
-  inputs."https://github.com/disruptek/nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/disruptek/nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

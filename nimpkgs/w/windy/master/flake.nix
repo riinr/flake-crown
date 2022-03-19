@@ -27,6 +27,27 @@
   inputs."pixie".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pixie".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."urlly".owner = "nim-nix-pkgs";
+  inputs."urlly".ref   = "master";
+  inputs."urlly".repo  = "urlly";
+  inputs."urlly".type  = "github";
+  inputs."urlly".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."urlly".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."zippy".owner = "nim-nix-pkgs";
+  inputs."zippy".ref   = "master";
+  inputs."zippy".repo  = "zippy";
+  inputs."zippy".type  = "github";
+  inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ws".owner = "nim-nix-pkgs";
+  inputs."ws".ref   = "master";
+  inputs."ws".repo  = "ws";
+  inputs."ws".type  = "github";
+  inputs."ws".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ws".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

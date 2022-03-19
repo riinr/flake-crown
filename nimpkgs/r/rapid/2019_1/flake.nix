@@ -13,6 +13,27 @@
   inputs.src-rapid-2019_1.repo  = "rapid";
   inputs.src-rapid-2019_1.type  = "github";
   
+  inputs."glm".owner = "nim-nix-pkgs";
+  inputs."glm".ref   = "master";
+  inputs."glm".repo  = "glm";
+  inputs."glm".type  = "github";
+  inputs."glm".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."glm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."nimterop".owner = "nim-nix-pkgs";
+  inputs."nimterop".ref   = "master";
+  inputs."nimterop".repo  = "nimterop";
+  inputs."nimterop".type  = "github";
+  inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."nimpng".owner = "nim-nix-pkgs";
+  inputs."nimpng".ref   = "master";
+  inputs."nimpng".repo  = "nimpng";
+  inputs."nimpng".type  = "github";
+  inputs."nimpng".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimpng".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

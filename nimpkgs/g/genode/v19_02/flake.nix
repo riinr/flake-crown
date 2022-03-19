@@ -9,9 +9,9 @@
   
   inputs.src-genode-v19_02.flake = false;
   inputs.src-genode-v19_02.owner = "~ehmry";
-  inputs.src-genode-v19_02.ref   = "refs/tags/v19.02";
+  inputs.src-genode-v19_02.ref   = "v19.02";
   inputs.src-genode-v19_02.repo  = "nim_genode";
-  inputs.src-genode-v19_02.type  = "other";
+  inputs.src-genode-v19_02.type  = "sourcehut";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

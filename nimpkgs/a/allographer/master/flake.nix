@@ -13,13 +13,6 @@
   inputs.src-allographer-master.repo  = "nim-allographer";
   inputs.src-allographer-master.type  = "github";
   
-  inputs."dotenv".owner = "nim-nix-pkgs";
-  inputs."dotenv".ref   = "master";
-  inputs."dotenv".repo  = "dotenv";
-  inputs."dotenv".type  = "github";
-  inputs."dotenv".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."dotenv".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

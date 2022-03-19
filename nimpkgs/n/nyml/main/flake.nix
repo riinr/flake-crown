@@ -13,6 +13,13 @@
   inputs.src-nyml-main.repo  = "nyml";
   inputs.src-nyml-main.type  = "github";
   
+  inputs."toktok".owner = "nim-nix-pkgs";
+  inputs."toktok".ref   = "master";
+  inputs."toktok".repo  = "toktok";
+  inputs."toktok".type  = "github";
+  inputs."toktok".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."toktok".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

@@ -13,13 +13,6 @@
   inputs.src-funchook-master.repo  = "funchook.nim";
   inputs.src-funchook-master.type  = "github";
   
-  inputs."https://github.com/ba0f3/distorm3.nim".owner = "nim-nix-pkgs";
-  inputs."https://github.com/ba0f3/distorm3.nim".ref   = "master";
-  inputs."https://github.com/ba0f3/distorm3.nim".repo  = "https://github.com/ba0f3/distorm3.nim";
-  inputs."https://github.com/ba0f3/distorm3.nim".type  = "github";
-  inputs."https://github.com/ba0f3/distorm3.nim".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/ba0f3/distorm3.nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

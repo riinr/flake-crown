@@ -13,20 +13,6 @@
   inputs.src-bump-1_8_25.repo  = "bump";
   inputs.src-bump-1_8_25.type  = "github";
   
-  inputs."https://github.com/disruptek/testes".owner = "nim-nix-pkgs";
-  inputs."https://github.com/disruptek/testes".ref   = "master";
-  inputs."https://github.com/disruptek/testes".repo  = "https://github.com/disruptek/testes";
-  inputs."https://github.com/disruptek/testes".type  = "github";
-  inputs."https://github.com/disruptek/testes".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/disruptek/testes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."https://github.com/disruptek/cutelog".owner = "nim-nix-pkgs";
-  inputs."https://github.com/disruptek/cutelog".ref   = "master";
-  inputs."https://github.com/disruptek/cutelog".repo  = "https://github.com/disruptek/cutelog";
-  inputs."https://github.com/disruptek/cutelog".type  = "github";
-  inputs."https://github.com/disruptek/cutelog".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/disruptek/cutelog".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";

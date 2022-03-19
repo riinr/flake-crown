@@ -55,13 +55,6 @@
   inputs."chronicles".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronicles".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/status-im/news".owner = "nim-nix-pkgs";
-  inputs."https://github.com/status-im/news".ref   = "master";
-  inputs."https://github.com/status-im/news".repo  = "https://github.com/status-im/news";
-  inputs."https://github.com/status-im/news".type  = "github";
-  inputs."https://github.com/status-im/news".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/status-im/news".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."websock".owner = "nim-nix-pkgs";
   inputs."websock".ref   = "master";
   inputs."websock".repo  = "websock";

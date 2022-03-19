@@ -13,12 +13,12 @@
   inputs.src-asyncredis-master.repo  = "redis.nim";
   inputs.src-asyncredis-master.type  = "github";
   
-  inputs."ptr_math".owner = "nim-nix-pkgs";
-  inputs."ptr_math".ref   = "master";
-  inputs."ptr_math".repo  = "ptr_math";
-  inputs."ptr_math".type  = "github";
-  inputs."ptr_math".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."ptr_math".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."networkutils".owner = "nim-nix-pkgs";
+  inputs."networkutils".ref   = "master";
+  inputs."networkutils".repo  = "networkutils";
+  inputs."networkutils".type  = "github";
+  inputs."networkutils".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."networkutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

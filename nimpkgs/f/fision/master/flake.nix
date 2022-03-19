@@ -412,13 +412,6 @@
   inputs."nimgen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimgen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimlsp".owner = "nim-nix-pkgs";
-  inputs."nimlsp".ref   = "master";
-  inputs."nimlsp".repo  = "nimlsp";
-  inputs."nimlsp".type  = "github";
-  inputs."nimlsp".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."nimlsp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."nimly".owner = "nim-nix-pkgs";
   inputs."nimly".ref   = "master";
   inputs."nimly".repo  = "nimly";

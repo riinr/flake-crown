@@ -41,13 +41,6 @@
   inputs."terminaltables".inputs.nixpkgs.follows = "nixpkgs";
   inputs."terminaltables".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/disruptek/gittyup".owner = "nim-nix-pkgs";
-  inputs."https://github.com/disruptek/gittyup".ref   = "master";
-  inputs."https://github.com/disruptek/gittyup".repo  = "https://github.com/disruptek/gittyup";
-  inputs."https://github.com/disruptek/gittyup".type  = "github";
-  inputs."https://github.com/disruptek/gittyup".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/disruptek/gittyup".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."nimterop".owner = "nim-nix-pkgs";
   inputs."nimterop".ref   = "master";
   inputs."nimterop".repo  = "nimterop";

@@ -20,13 +20,6 @@
   inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/disruptek/bump".owner = "nim-nix-pkgs";
-  inputs."https://github.com/disruptek/bump".ref   = "master";
-  inputs."https://github.com/disruptek/bump".repo  = "https://github.com/disruptek/bump";
-  inputs."https://github.com/disruptek/bump".type  = "github";
-  inputs."https://github.com/disruptek/bump".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/disruptek/bump".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

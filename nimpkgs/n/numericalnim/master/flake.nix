@@ -20,13 +20,6 @@
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/hugogranstrom/cdt".owner = "nim-nix-pkgs";
-  inputs."https://github.com/hugogranstrom/cdt".ref   = "master";
-  inputs."https://github.com/hugogranstrom/cdt".repo  = "https://github.com/hugogranstrom/cdt";
-  inputs."https://github.com/hugogranstrom/cdt".type  = "github";
-  inputs."https://github.com/hugogranstrom/cdt".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/hugogranstrom/cdt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

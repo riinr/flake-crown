@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1646967037,
+        "narHash": "sha256-BoEqkGzLVnFICrF15wczZJrfF1vMVngRzF5cEgFzdzU=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "028e7596fdb918b72a295d220d48417ab2f5dfd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-sprymicro-master": "src-sprymicro-master"
+      }
+    },
+    "src-sprymicro-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1512165981,
+        "narHash": "sha256-TvUuF06w3dOnhe57SyGk4A3bhdk90VufBGE/5v8Oj3U=",
+        "owner": "gokr",
+        "repo": "sprymicro",
+        "rev": "f4ae830760d0a7fddb79bf80cc595e8239d8b3c4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gokr",
+        "ref": "refs/heads/master",
+        "repo": "sprymicro",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

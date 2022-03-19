@@ -13,13 +13,6 @@
   inputs.src-objc_runtime-master.repo  = "objc_runtime";
   inputs.src-objc_runtime-master.type  = "github";
   
-  inputs."https://github.com/yglukhov/darwin".owner = "nim-nix-pkgs";
-  inputs."https://github.com/yglukhov/darwin".ref   = "master";
-  inputs."https://github.com/yglukhov/darwin".repo  = "https://github.com/yglukhov/darwin";
-  inputs."https://github.com/yglukhov/darwin".type  = "github";
-  inputs."https://github.com/yglukhov/darwin".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/yglukhov/darwin".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."regex".owner = "nim-nix-pkgs";
   inputs."regex".ref   = "master";
   inputs."regex".repo  = "regex";

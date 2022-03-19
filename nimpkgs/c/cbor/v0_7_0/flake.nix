@@ -9,9 +9,9 @@
   
   inputs.src-cbor-v0_7_0.flake = false;
   inputs.src-cbor-v0_7_0.owner = "~ehmry";
-  inputs.src-cbor-v0_7_0.ref   = "refs/tags/v0.7.0";
+  inputs.src-cbor-v0_7_0.ref   = "v0.7.0";
   inputs.src-cbor-v0_7_0.repo  = "nim_cbor";
-  inputs.src-cbor-v0_7_0.type  = "other";
+  inputs.src-cbor-v0_7_0.type  = "sourcehut";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

@@ -20,13 +20,6 @@
   inputs."chroma".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chroma".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/vindaar/seqmath".owner = "nim-nix-pkgs";
-  inputs."https://github.com/vindaar/seqmath".ref   = "master";
-  inputs."https://github.com/vindaar/seqmath".repo  = "https://github.com/vindaar/seqmath";
-  inputs."https://github.com/vindaar/seqmath".type  = "github";
-  inputs."https://github.com/vindaar/seqmath".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/vindaar/seqmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."cairo".owner = "nim-nix-pkgs";
   inputs."cairo".ref   = "master";
   inputs."cairo".repo  = "cairo";

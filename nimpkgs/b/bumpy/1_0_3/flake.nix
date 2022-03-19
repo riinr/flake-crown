@@ -13,13 +13,6 @@
   inputs.src-bumpy-1_0_3.repo  = "bumpy";
   inputs.src-bumpy-1_0_3.type  = "github";
   
-  inputs."vmath".owner = "nim-nix-pkgs";
-  inputs."vmath".ref   = "master";
-  inputs."vmath".repo  = "vmath";
-  inputs."vmath".type  = "github";
-  inputs."vmath".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."vmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

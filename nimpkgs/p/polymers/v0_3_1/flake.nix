@@ -13,13 +13,6 @@
   inputs.src-polymers-v0_3_1.repo  = "polymers";
   inputs.src-polymers-v0_3_1.type  = "github";
   
-  inputs."https://github.com/rlipsc/polymorph".owner = "nim-nix-pkgs";
-  inputs."https://github.com/rlipsc/polymorph".ref   = "master";
-  inputs."https://github.com/rlipsc/polymorph".repo  = "https://github.com/rlipsc/polymorph";
-  inputs."https://github.com/rlipsc/polymorph".type  = "github";
-  inputs."https://github.com/rlipsc/polymorph".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/rlipsc/polymorph".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

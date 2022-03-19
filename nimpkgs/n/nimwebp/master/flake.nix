@@ -20,13 +20,6 @@
   inputs."nimpng".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpng".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."https://github.com/yglukhov/clurp".owner = "nim-nix-pkgs";
-  inputs."https://github.com/yglukhov/clurp".ref   = "master";
-  inputs."https://github.com/yglukhov/clurp".repo  = "https://github.com/yglukhov/clurp";
-  inputs."https://github.com/yglukhov/clurp".type  = "github";
-  inputs."https://github.com/yglukhov/clurp".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."https://github.com/yglukhov/clurp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

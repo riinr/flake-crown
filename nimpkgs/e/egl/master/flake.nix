@@ -13,13 +13,6 @@
   inputs.src-egl-master.repo  = "egl";
   inputs.src-egl-master.type  = "github";
   
-  inputs."nimrod".owner = "nim-nix-pkgs";
-  inputs."nimrod".ref   = "master";
-  inputs."nimrod".repo  = "nimrod";
-  inputs."nimrod".type  = "github";
-  inputs."nimrod".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."nimrod".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."x11".owner = "nim-nix-pkgs";
   inputs."x11".ref   = "master";
   inputs."x11".repo  = "x11";
