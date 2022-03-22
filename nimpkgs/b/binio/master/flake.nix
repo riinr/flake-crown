@@ -9,13 +9,14 @@
   
   inputs.src-binio-master.flake = false;
   inputs.src-binio-master.owner = "Riderfighter";
-  inputs.src-binio-master.ref   = "refs/heads/master";
+  inputs.src-binio-master.ref   = "master";
   inputs.src-binio-master.repo  = "binio";
   inputs.src-binio-master.type  = "github";
   
   inputs."struct".owner = "nim-nix-pkgs";
   inputs."struct".ref   = "master";
   inputs."struct".repo  = "struct";
+  inputs."struct".dir   = "v0_2_3";
   inputs."struct".type  = "github";
   inputs."struct".inputs.nixpkgs.follows = "nixpkgs";
   inputs."struct".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

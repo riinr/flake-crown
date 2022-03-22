@@ -9,7 +9,7 @@
   
   inputs.src-bingo-master.flake = false;
   inputs.src-bingo-master.owner = "planetis-m";
-  inputs.src-bingo-master.ref   = "refs/heads/master";
+  inputs.src-bingo-master.ref   = "master";
   inputs.src-bingo-master.repo  = "bingo";
   inputs.src-bingo-master.type  = "github";
   

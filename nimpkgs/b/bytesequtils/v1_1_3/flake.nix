@@ -9,7 +9,7 @@
   
   inputs.src-bytesequtils-v1_1_3.flake = false;
   inputs.src-bytesequtils-v1_1_3.owner = "Clonkk";
-  inputs.src-bytesequtils-v1_1_3.ref   = "refs/tags/v1.1.3";
+  inputs.src-bytesequtils-v1_1_3.ref   = "v1_1_3";
   inputs.src-bytesequtils-v1_1_3.repo  = "bytesequtils";
   inputs.src-bytesequtils-v1_1_3.type  = "github";
   

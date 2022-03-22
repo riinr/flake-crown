@@ -9,7 +9,7 @@
   
   inputs.src-bitset-main.flake = false;
   inputs.src-bitset-main.owner = "joryschossau";
-  inputs.src-bitset-main.ref   = "refs/heads/main";
+  inputs.src-bitset-main.ref   = "main";
   inputs.src-bitset-main.repo  = "bitset";
   inputs.src-bitset-main.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''BGFX wrapper for the nim programming language.'';
+  description = ''Wrapper for the graphics library; BGFX.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-bgfx-master.flake = false;
   inputs.src-bgfx-master.owner = "Halsys";
-  inputs.src-bgfx-master.ref   = "refs/heads/master";
+  inputs.src-bgfx-master.ref   = "master";
   inputs.src-bgfx-master.repo  = "nim-bgfx";
   inputs.src-bgfx-master.type  = "github";
   

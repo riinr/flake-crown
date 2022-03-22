@@ -9,7 +9,7 @@
   
   inputs.src-bitstreams-main.flake = false;
   inputs.src-bitstreams-main.owner = "sealmove";
-  inputs.src-bitstreams-main.ref   = "refs/heads/main";
+  inputs.src-bitstreams-main.ref   = "main";
   inputs.src-bitstreams-main.repo  = "bitstreams";
   inputs.src-bitstreams-main.type  = "github";
   

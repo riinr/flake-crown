@@ -1,5 +1,5 @@
 {
-  description = ''Nim Barreto-Naehrig pairing-friendly elliptic curve implementation'';
+  description = ''Barreto-Naehrig pairing-friendly elliptic curve implementation'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-bncurve-master.flake = false;
   inputs.src-bncurve-master.owner = "status-im";
-  inputs.src-bncurve-master.ref   = "refs/heads/master";
+  inputs.src-bncurve-master.ref   = "master";
   inputs.src-bncurve-master.repo  = "nim-bncurve";
   inputs.src-bncurve-master.type  = "github";
   
   inputs."nimcrypto".owner = "nim-nix-pkgs";
   inputs."nimcrypto".ref   = "master";
   inputs."nimcrypto".repo  = "nimcrypto";
+  inputs."nimcrypto".dir   = "";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

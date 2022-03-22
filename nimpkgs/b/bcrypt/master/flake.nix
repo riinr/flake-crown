@@ -9,7 +9,7 @@
   
   inputs.src-bcrypt-master.flake = false;
   inputs.src-bcrypt-master.owner = "ithkuil";
-  inputs.src-bcrypt-master.ref   = "refs/heads/master";
+  inputs.src-bcrypt-master.ref   = "master";
   inputs.src-bcrypt-master.repo  = "bcryptnim";
   inputs.src-bcrypt-master.type  = "github";
   

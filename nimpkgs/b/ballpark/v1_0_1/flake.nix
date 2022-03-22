@@ -9,13 +9,14 @@
   
   inputs.src-ballpark-v1_0_1.flake = false;
   inputs.src-ballpark-v1_0_1.owner = "Mihara";
-  inputs.src-ballpark-v1_0_1.ref   = "refs/tags/v1.0.1";
+  inputs.src-ballpark-v1_0_1.ref   = "v1_0_1";
   inputs.src-ballpark-v1_0_1.repo  = "ballpark";
   inputs.src-ballpark-v1_0_1.type  = "github";
   
   inputs."fsnotify".owner = "nim-nix-pkgs";
   inputs."fsnotify".ref   = "master";
   inputs."fsnotify".repo  = "fsnotify";
+  inputs."fsnotify".dir   = "";
   inputs."fsnotify".type  = "github";
   inputs."fsnotify".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fsnotify".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

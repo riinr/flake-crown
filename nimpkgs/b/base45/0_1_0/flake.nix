@@ -1,5 +1,5 @@
 {
-  description = ''Base45 encoder and decoder'';
+  description = ''Base45 encoder and decoder.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-base45-0_1_0.flake = false;
   inputs.src-base45-0_1_0.owner = "~ehmry";
-  inputs.src-base45-0_1_0.ref   = "0.1.0";
+  inputs.src-base45-0_1_0.ref   = "0_1_0";
   inputs.src-base45-0_1_0.repo  = "base45";
   inputs.src-base45-0_1_0.type  = "sourcehut";
   

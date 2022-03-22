@@ -9,13 +9,14 @@
   
   inputs.src-bluu-0_0_4.flake = false;
   inputs.src-bluu-0_0_4.owner = "disruptek";
-  inputs.src-bluu-0_0_4.ref   = "refs/tags/0.0.4";
+  inputs.src-bluu-0_0_4.ref   = "0_0_4";
   inputs.src-bluu-0_0_4.repo  = "bluu";
   inputs.src-bluu-0_0_4.type  = "github";
   
   inputs."openapi".owner = "nim-nix-pkgs";
   inputs."openapi".ref   = "master";
   inputs."openapi".repo  = "openapi";
+  inputs."openapi".dir   = "3_3_1";
   inputs."openapi".type  = "github";
   inputs."openapi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."openapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

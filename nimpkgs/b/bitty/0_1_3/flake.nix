@@ -9,7 +9,7 @@
   
   inputs.src-bitty-0_1_3.flake = false;
   inputs.src-bitty-0_1_3.owner = "treeform";
-  inputs.src-bitty-0_1_3.ref   = "refs/tags/0.1.3";
+  inputs.src-bitty-0_1_3.ref   = "0_1_3";
   inputs.src-bitty-0_1_3.repo  = "bitty";
   inputs.src-bitty-0_1_3.type  = "github";
   

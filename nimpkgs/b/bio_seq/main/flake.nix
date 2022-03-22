@@ -9,7 +9,7 @@
   
   inputs.src-bio_seq-main.flake = false;
   inputs.src-bio_seq-main.owner = "kerrycobb";
-  inputs.src-bio_seq-main.ref   = "refs/heads/main";
+  inputs.src-bio_seq-main.ref   = "main";
   inputs.src-bio_seq-main.repo  = "BioSeq";
   inputs.src-bio_seq-main.type  = "github";
   

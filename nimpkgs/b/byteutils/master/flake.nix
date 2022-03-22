@@ -1,5 +1,5 @@
 {
-  description = ''Useful utilities for manipulating and visualizing byte blobs'';
+  description = ''A library to handle raw bytes and hex representations'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-byteutils-master.flake = false;
   inputs.src-byteutils-master.owner = "status-im";
-  inputs.src-byteutils-master.ref   = "refs/heads/master";
+  inputs.src-byteutils-master.ref   = "master";
   inputs.src-byteutils-master.repo  = "nim-byteutils";
   inputs.src-byteutils-master.type  = "github";
   

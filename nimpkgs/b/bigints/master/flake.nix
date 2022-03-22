@@ -1,5 +1,5 @@
 {
-  description = ''Arbitrary-precision integers'';
+  description = ''Arbitrary-precision integers implemented in pure Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-bigints-master.flake = false;
   inputs.src-bigints-master.owner = "nim-lang";
-  inputs.src-bigints-master.ref   = "refs/heads/master";
+  inputs.src-bigints-master.ref   = "master";
   inputs.src-bigints-master.repo  = "bigints";
   inputs.src-bigints-master.type  = "github";
   

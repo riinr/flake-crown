@@ -9,13 +9,14 @@
   
   inputs.src-biblioteca_guarrilla-master.flake = false;
   inputs.src-biblioteca_guarrilla-master.owner = "juancarlospaco";
-  inputs.src-biblioteca_guarrilla-master.ref   = "refs/heads/master";
+  inputs.src-biblioteca_guarrilla-master.ref   = "master";
   inputs.src-biblioteca_guarrilla-master.repo  = "biblioteca-guarrilla";
   inputs.src-biblioteca_guarrilla-master.type  = "github";
   
   inputs."jester".owner = "nim-nix-pkgs";
   inputs."jester".ref   = "master";
   inputs."jester".repo  = "jester";
+  inputs."jester".dir   = "v0_5_0";
   inputs."jester".type  = "github";
   inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."webp".owner = "nim-nix-pkgs";
   inputs."webp".ref   = "master";
   inputs."webp".repo  = "webp";
+  inputs."webp".dir   = "";
   inputs."webp".type  = "github";
   inputs."webp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."webp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."zip".owner = "nim-nix-pkgs";
   inputs."zip".ref   = "master";
   inputs."zip".repo  = "zip";
+  inputs."zip".dir   = "0_3_1";
   inputs."zip".type  = "github";
   inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

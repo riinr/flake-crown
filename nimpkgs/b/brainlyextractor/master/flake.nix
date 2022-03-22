@@ -9,13 +9,14 @@
   
   inputs.src-brainlyextractor-master.flake = false;
   inputs.src-brainlyextractor-master.owner = "lurlo";
-  inputs.src-brainlyextractor-master.ref   = "refs/heads/master";
+  inputs.src-brainlyextractor-master.ref   = "master";
   inputs.src-brainlyextractor-master.repo  = "brainlyextractor";
   inputs.src-brainlyextractor-master.type  = "gitlab";
   
   inputs."scraper".owner = "nim-nix-pkgs";
   inputs."scraper".ref   = "master";
   inputs."scraper".repo  = "scraper";
+  inputs."scraper".dir   = "";
   inputs."scraper".type  = "github";
   inputs."scraper".inputs.nixpkgs.follows = "nixpkgs";
   inputs."scraper".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

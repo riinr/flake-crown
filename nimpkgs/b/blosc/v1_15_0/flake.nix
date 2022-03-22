@@ -1,5 +1,5 @@
 {
-  description = ''Bit Shuffling Block Compressor (C-Blosc)'';
+  description = ''BLOSC meta-compression for Nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-blosc-v1_15_0.flake = false;
   inputs.src-blosc-v1_15_0.owner = "Vindaar";
-  inputs.src-blosc-v1_15_0.ref   = "refs/tags/v1.15.0";
+  inputs.src-blosc-v1_15_0.ref   = "v1_15_0";
   inputs.src-blosc-v1_15_0.repo  = "nblosc";
   inputs.src-blosc-v1_15_0.type  = "github";
   

@@ -9,13 +9,14 @@
   
   inputs.src-binarylang-v0_5_1.flake = false;
   inputs.src-binarylang-v0_5_1.owner = "sealmove";
-  inputs.src-binarylang-v0_5_1.ref   = "refs/tags/v0.5.1";
+  inputs.src-binarylang-v0_5_1.ref   = "v0_5_1";
   inputs.src-binarylang-v0_5_1.repo  = "binarylang";
   inputs.src-binarylang-v0_5_1.type  = "github";
   
   inputs."bitstreams".owner = "nim-nix-pkgs";
   inputs."bitstreams".ref   = "master";
   inputs."bitstreams".repo  = "bitstreams";
+  inputs."bitstreams".dir   = "";
   inputs."bitstreams".type  = "github";
   inputs."bitstreams".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bitstreams".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

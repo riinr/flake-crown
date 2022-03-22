@@ -9,13 +9,14 @@
   
   inputs.src-baker-v2_0_9.flake = false;
   inputs.src-baker-v2_0_9.owner = "jasonrbriggs";
-  inputs.src-baker-v2_0_9.ref   = "refs/tags/v2.0.9";
+  inputs.src-baker-v2_0_9.ref   = "v2_0_9";
   inputs.src-baker-v2_0_9.repo  = "baker";
   inputs.src-baker-v2_0_9.type  = "github";
   
   inputs."proton".owner = "nim-nix-pkgs";
   inputs."proton".ref   = "master";
   inputs."proton".repo  = "proton";
+  inputs."proton".dir   = "v0_2_6";
   inputs."proton".type  = "github";
   inputs."proton".inputs.nixpkgs.follows = "nixpkgs";
   inputs."proton".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."docopt".owner = "nim-nix-pkgs";
   inputs."docopt".ref   = "master";
   inputs."docopt".repo  = "docopt";
+  inputs."docopt".dir   = "v0_6_8";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."markdown".owner = "nim-nix-pkgs";
   inputs."markdown".ref   = "master";
   inputs."markdown".repo  = "markdown";
+  inputs."markdown".dir   = "";
   inputs."markdown".type  = "github";
   inputs."markdown".inputs.nixpkgs.follows = "nixpkgs";
   inputs."markdown".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -37,6 +40,7 @@
   inputs."zip".owner = "nim-nix-pkgs";
   inputs."zip".ref   = "master";
   inputs."zip".repo  = "zip";
+  inputs."zip".dir   = "0_3_1";
   inputs."zip".type  = "github";
   inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -44,6 +48,7 @@
   inputs."timezones".owner = "nim-nix-pkgs";
   inputs."timezones".ref   = "master";
   inputs."timezones".repo  = "timezones";
+  inputs."timezones".dir   = "v0_5_4";
   inputs."timezones".type  = "github";
   inputs."timezones".inputs.nixpkgs.follows = "nixpkgs";
   inputs."timezones".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -51,6 +56,7 @@
   inputs."ndb".owner = "nim-nix-pkgs";
   inputs."ndb".ref   = "master";
   inputs."ndb".repo  = "ndb";
+  inputs."ndb".dir   = "v0_19_9";
   inputs."ndb".type  = "github";
   inputs."ndb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ndb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

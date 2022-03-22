@@ -1,5 +1,5 @@
 {
-  description = ''A low level GPIO library for the BeagleBone board family'';
+  description = ''Beagle bone black GPIO implementation'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-boneIO-master.flake = false;
   inputs.src-boneIO-master.owner = "xyz32";
-  inputs.src-boneIO-master.ref   = "refs/heads/master";
+  inputs.src-boneIO-master.ref   = "master";
   inputs.src-boneIO-master.repo  = "boneIO";
   inputs.src-boneIO-master.type  = "github";
   

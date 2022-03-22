@@ -1,5 +1,5 @@
 {
-  description = ''Implementation of exponential backoff for nim'';
+  description = ''Implementation of exponential backoff for nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-backoff-v0_1.flake = false;
   inputs.src-backoff-v0_1.owner = "CORDEA";
-  inputs.src-backoff-v0_1.ref   = "refs/tags/v0.1";
+  inputs.src-backoff-v0_1.ref   = "v0_1";
   inputs.src-backoff-v0_1.repo  = "backoff";
   inputs.src-backoff-v0_1.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''mmap-backed bitarray implementation in Nim.'';
+  description = ''Efficient in-memory or mmap-backed bitarray implementation in Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-bitarray-v0_2_6.flake = false;
   inputs.src-bitarray-v0_2_6.owner = "onecodex";
-  inputs.src-bitarray-v0_2_6.ref   = "refs/tags/v0.2.6";
+  inputs.src-bitarray-v0_2_6.ref   = "v0_2_6";
   inputs.src-bitarray-v0_2_6.repo  = "nim-bitarray";
   inputs.src-bitarray-v0_2_6.type  = "github";
   

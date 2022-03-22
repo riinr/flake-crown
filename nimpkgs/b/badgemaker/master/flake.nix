@@ -9,7 +9,7 @@
   
   inputs.src-badgemaker-master.flake = false;
   inputs.src-badgemaker-master.owner = "ethosa";
-  inputs.src-badgemaker-master.ref   = "refs/heads/master";
+  inputs.src-badgemaker-master.ref   = "master";
   inputs.src-badgemaker-master.repo  = "badgemaker";
   inputs.src-badgemaker-master.type  = "github";
   

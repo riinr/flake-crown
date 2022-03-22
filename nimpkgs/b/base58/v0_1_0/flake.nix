@@ -9,7 +9,7 @@
   
   inputs.src-base58-v0_1_0.flake = false;
   inputs.src-base58-v0_1_0.owner = "~ehmry";
-  inputs.src-base58-v0_1_0.ref   = "v0.1.0";
+  inputs.src-base58-v0_1_0.ref   = "v0_1_0";
   inputs.src-base58-v0_1_0.repo  = "nim_base58";
   inputs.src-base58-v0_1_0.type  = "sourcehut";
   

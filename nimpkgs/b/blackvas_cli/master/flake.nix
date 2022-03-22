@@ -9,13 +9,14 @@
   
   inputs.src-blackvas_cli-master.flake = false;
   inputs.src-blackvas_cli-master.owner = "momeemt";
-  inputs.src-blackvas_cli-master.ref   = "refs/heads/master";
+  inputs.src-blackvas_cli-master.ref   = "master";
   inputs.src-blackvas_cli-master.repo  = "BlackvasCli";
   inputs.src-blackvas_cli-master.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."jester".owner = "nim-nix-pkgs";
   inputs."jester".ref   = "master";
   inputs."jester".repo  = "jester";
+  inputs."jester".dir   = "v0_5_0";
   inputs."jester".type  = "github";
   inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

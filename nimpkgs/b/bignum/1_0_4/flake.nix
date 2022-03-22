@@ -9,13 +9,14 @@
   
   inputs.src-bignum-1_0_4.flake = false;
   inputs.src-bignum-1_0_4.owner = "SciNim";
-  inputs.src-bignum-1_0_4.ref   = "refs/tags/1.0.4";
+  inputs.src-bignum-1_0_4.ref   = "1_0_4";
   inputs.src-bignum-1_0_4.repo  = "bignum";
   inputs.src-bignum-1_0_4.type  = "github";
   
   inputs."gmp".owner = "nim-nix-pkgs";
   inputs."gmp".ref   = "master";
   inputs."gmp".repo  = "gmp";
+  inputs."gmp".dir   = "v0_2_5";
   inputs."gmp".type  = "github";
   inputs."gmp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gmp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

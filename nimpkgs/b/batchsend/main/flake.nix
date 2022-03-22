@@ -9,13 +9,14 @@
   
   inputs.src-batchsend-main.flake = false;
   inputs.src-batchsend-main.owner = "marcomq";
-  inputs.src-batchsend-main.ref   = "refs/heads/main";
+  inputs.src-batchsend-main.ref   = "main";
   inputs.src-batchsend-main.repo  = "batchsend";
   inputs.src-batchsend-main.type  = "github";
   
   inputs."nimpy".owner = "nim-nix-pkgs";
   inputs."nimpy".ref   = "master";
   inputs."nimpy".repo  = "nimpy";
+  inputs."nimpy".dir   = "";
   inputs."nimpy".type  = "github";
   inputs."nimpy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

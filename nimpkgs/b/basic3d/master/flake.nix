@@ -1,5 +1,5 @@
 {
-  description = ''Deprecated module for vector/matrices operations.'';
+  description = ''Deprecated package from the stdlib.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-basic3d-master.flake = false;
   inputs.src-basic3d-master.owner = "nim-lang";
-  inputs.src-basic3d-master.ref   = "refs/heads/master";
+  inputs.src-basic3d-master.ref   = "master";
   inputs.src-basic3d-master.repo  = "basic3d";
   inputs.src-basic3d-master.type  = "github";
   

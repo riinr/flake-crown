@@ -9,13 +9,14 @@
   
   inputs.src-brainfuck-master.flake = false;
   inputs.src-brainfuck-master.owner = "def-";
-  inputs.src-brainfuck-master.ref   = "refs/heads/master";
-  inputs.src-brainfuck-master.repo  = "nim-brainfuck";
+  inputs.src-brainfuck-master.ref   = "master";
+  inputs.src-brainfuck-master.repo  = "nim-brainfuck.git";
   inputs.src-brainfuck-master.type  = "github";
   
   inputs."docopt".owner = "nim-nix-pkgs";
   inputs."docopt".ref   = "master";
   inputs."docopt".repo  = "docopt";
+  inputs."docopt".dir   = "v0_6_8";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

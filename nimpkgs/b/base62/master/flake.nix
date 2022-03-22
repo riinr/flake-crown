@@ -1,5 +1,5 @@
 {
-  description = ''Arbitrary base encoding-decoding functions, defaulting to Base-62.'';
+  description = ''Encoder/Decoder.  Defaults to Base-62, but allows for an arbitrary alphabet.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-base62-master.flake = false;
   inputs.src-base62-master.owner = "singularperturbation";
-  inputs.src-base62-master.ref   = "refs/heads/master";
+  inputs.src-base62-master.ref   = "master";
   inputs.src-base62-master.repo  = "base62-encode";
   inputs.src-base62-master.type  = "github";
   

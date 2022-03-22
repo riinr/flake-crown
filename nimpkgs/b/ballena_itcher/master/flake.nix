@@ -9,7 +9,7 @@
   
   inputs.src-ballena_itcher-master.flake = false;
   inputs.src-ballena_itcher-master.owner = "juancarlospaco";
-  inputs.src-ballena_itcher-master.ref   = "refs/heads/master";
+  inputs.src-ballena_itcher-master.ref   = "master";
   inputs.src-ballena_itcher-master.repo  = "ballena-itcher";
   inputs.src-ballena_itcher-master.type  = "github";
   

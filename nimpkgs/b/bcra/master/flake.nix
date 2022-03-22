@@ -9,13 +9,14 @@
   
   inputs.src-bcra-master.flake = false;
   inputs.src-bcra-master.owner = "juancarlospaco";
-  inputs.src-bcra-master.ref   = "refs/heads/master";
+  inputs.src-bcra-master.ref   = "master";
   inputs.src-bcra-master.repo  = "nim-bcra";
   inputs.src-bcra-master.type  = "github";
   
   inputs."zip".owner = "nim-nix-pkgs";
   inputs."zip".ref   = "master";
   inputs."zip".repo  = "zip";
+  inputs."zip".dir   = "0_3_1";
   inputs."zip".type  = "github";
   inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

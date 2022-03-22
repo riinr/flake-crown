@@ -1,5 +1,5 @@
 {
-  description = ''A high performance Nim implementation of BitVector with base SomeUnsignedInt(i.e: uint8-64) with support for slices, and seq supported operations'';
+  description = ''Bit Vector with base SomeOrdinal and little endian format. Supports `seq` based operations.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-BitVector-master.flake = false;
   inputs.src-BitVector-master.owner = "MarcAzar";
-  inputs.src-BitVector-master.ref   = "refs/heads/master";
+  inputs.src-BitVector-master.ref   = "master";
   inputs.src-BitVector-master.repo  = "BitVector";
   inputs.src-BitVector-master.type  = "github";
   

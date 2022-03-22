@@ -9,13 +9,14 @@
   
   inputs.src-bump-master.flake = false;
   inputs.src-bump-master.owner = "disruptek";
-  inputs.src-bump-master.ref   = "refs/heads/master";
+  inputs.src-bump-master.ref   = "master";
   inputs.src-bump-master.repo  = "bump";
   inputs.src-bump-master.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -1,5 +1,5 @@
 {
-  description = ''Extensible bit vector integer encoding library'';
+  description = ''Extensible Bit Vector library for nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-bitvec-master.flake = false;
   inputs.src-bitvec-master.owner = "keyme";
-  inputs.src-bitvec-master.ref   = "refs/heads/master";
+  inputs.src-bitvec-master.ref   = "master";
   inputs.src-bitvec-master.repo  = "nim_bitvec";
   inputs.src-bitvec-master.type  = "github";
   

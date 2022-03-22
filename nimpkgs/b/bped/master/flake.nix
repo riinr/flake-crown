@@ -9,8 +9,8 @@
   
   inputs.src-bped-master.flake = false;
   inputs.src-bped-master.owner = "twist-vector";
-  inputs.src-bped-master.ref   = "refs/heads/master";
-  inputs.src-bped-master.repo  = "nim-bped";
+  inputs.src-bped-master.ref   = "master";
+  inputs.src-bped-master.repo  = "nim-bped.git";
   inputs.src-bped-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

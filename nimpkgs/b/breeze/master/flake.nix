@@ -1,5 +1,5 @@
 {
-  description = ''A dsl for writing macros in Nim'';
+  description = ''macro dsl'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-breeze-master.flake = false;
   inputs.src-breeze-master.owner = "alehander42";
-  inputs.src-breeze-master.ref   = "refs/heads/master";
+  inputs.src-breeze-master.ref   = "master";
   inputs.src-breeze-master.repo  = "breeze";
   inputs.src-breeze-master.type  = "github";
   

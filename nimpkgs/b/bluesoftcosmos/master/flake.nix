@@ -9,13 +9,14 @@
   
   inputs.src-bluesoftcosmos-master.flake = false;
   inputs.src-bluesoftcosmos-master.owner = "lurlo";
-  inputs.src-bluesoftcosmos-master.ref   = "refs/heads/master";
+  inputs.src-bluesoftcosmos-master.ref   = "master";
   inputs.src-bluesoftcosmos-master.repo  = "bluesoftcosmos";
   inputs.src-bluesoftcosmos-master.type  = "gitlab";
   
   inputs."scraper".owner = "nim-nix-pkgs";
   inputs."scraper".ref   = "master";
   inputs."scraper".repo  = "scraper";
+  inputs."scraper".dir   = "";
   inputs."scraper".type  = "github";
   inputs."scraper".inputs.nixpkgs.follows = "nixpkgs";
   inputs."scraper".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

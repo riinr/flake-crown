@@ -9,13 +9,14 @@
   
   inputs.src-blurhash-v0_2_1.flake = false;
   inputs.src-blurhash-v0_2_1.owner = "SolitudeSF";
-  inputs.src-blurhash-v0_2_1.ref   = "refs/tags/v0.2.1";
+  inputs.src-blurhash-v0_2_1.ref   = "v0_2_1";
   inputs.src-blurhash-v0_2_1.repo  = "blurhash";
   inputs.src-blurhash-v0_2_1.type  = "github";
   
   inputs."imageman".owner = "nim-nix-pkgs";
   inputs."imageman".ref   = "master";
   inputs."imageman".repo  = "imageman";
+  inputs."imageman".dir   = "v0_8_2";
   inputs."imageman".type  = "github";
   inputs."imageman".inputs.nixpkgs.follows = "nixpkgs";
   inputs."imageman".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

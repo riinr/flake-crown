@@ -9,13 +9,14 @@
   
   inputs.src-bump-1_2_0.flake = false;
   inputs.src-bump-1_2_0.owner = "disruptek";
-  inputs.src-bump-1_2_0.ref   = "refs/tags/1.2.0";
+  inputs.src-bump-1_2_0.ref   = "1_2_0";
   inputs.src-bump-1_2_0.repo  = "bump";
   inputs.src-bump-1_2_0.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -9,13 +9,14 @@
   
   inputs.src-buffer-master.flake = false;
   inputs.src-buffer-master.owner = "bung87";
-  inputs.src-buffer-master.ref   = "refs/heads/master";
+  inputs.src-buffer-master.ref   = "master";
   inputs.src-buffer-master.repo  = "buffer";
   inputs.src-buffer-master.type  = "github";
   
   inputs."struct".owner = "nim-nix-pkgs";
   inputs."struct".ref   = "master";
   inputs."struct".repo  = "struct";
+  inputs."struct".dir   = "v0_2_3";
   inputs."struct".type  = "github";
   inputs."struct".inputs.nixpkgs.follows = "nixpkgs";
   inputs."struct".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

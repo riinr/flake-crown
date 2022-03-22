@@ -9,13 +9,14 @@
   
   inputs.src-blurhash-master.flake = false;
   inputs.src-blurhash-master.owner = "SolitudeSF";
-  inputs.src-blurhash-master.ref   = "refs/heads/master";
+  inputs.src-blurhash-master.ref   = "master";
   inputs.src-blurhash-master.repo  = "blurhash";
   inputs.src-blurhash-master.type  = "github";
   
   inputs."imageman".owner = "nim-nix-pkgs";
   inputs."imageman".ref   = "master";
   inputs."imageman".repo  = "imageman";
+  inputs."imageman".dir   = "v0_8_2";
   inputs."imageman".type  = "github";
   inputs."imageman".inputs.nixpkgs.follows = "nixpkgs";
   inputs."imageman".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

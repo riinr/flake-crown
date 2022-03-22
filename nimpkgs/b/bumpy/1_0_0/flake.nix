@@ -1,5 +1,5 @@
 {
-  description = ''2d collision library for Nim.'';
+  description = ''2d collision library.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-bumpy-1_0_0.flake = false;
   inputs.src-bumpy-1_0_0.owner = "treeform";
-  inputs.src-bumpy-1_0_0.ref   = "refs/tags/1.0.0";
+  inputs.src-bumpy-1_0_0.ref   = "1_0_0";
   inputs.src-bumpy-1_0_0.repo  = "bumpy";
   inputs.src-bumpy-1_0_0.type  = "github";
   
   inputs."vmath".owner = "nim-nix-pkgs";
   inputs."vmath".ref   = "master";
   inputs."vmath".repo  = "vmath";
+  inputs."vmath".dir   = "1_1_2";
   inputs."vmath".type  = "github";
   inputs."vmath".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
