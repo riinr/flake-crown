@@ -9,13 +9,14 @@
   
   inputs.src-qwertycd-v0_1_0.flake = false;
   inputs.src-qwertycd-v0_1_0.owner = "minefuto";
-  inputs.src-qwertycd-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-qwertycd-v0_1_0.ref   = "v0_1_0";
   inputs.src-qwertycd-v0_1_0.repo  = "qwertycd";
   inputs.src-qwertycd-v0_1_0.type  = "github";
   
   inputs."illwill".owner = "nim-nix-pkgs";
   inputs."illwill".ref   = "master";
   inputs."illwill".repo  = "illwill";
+  inputs."illwill".dir   = "v0_2_0";
   inputs."illwill".type  = "github";
   inputs."illwill".inputs.nixpkgs.follows = "nixpkgs";
   inputs."illwill".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -1,5 +1,5 @@
 {
-  description = ''A Quadtree implementation'';
+  description = ''A Quadtree Implementation'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-quadtree-0_2_0.flake = false;
   inputs.src-quadtree-0_2_0.owner = "Nycto";
-  inputs.src-quadtree-0_2_0.ref   = "refs/tags/0.2.0";
+  inputs.src-quadtree-0_2_0.ref   = "0_2_0";
   inputs.src-quadtree-0_2_0.repo  = "QuadtreeNim";
   inputs.src-quadtree-0_2_0.type  = "github";
   

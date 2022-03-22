@@ -1,5 +1,5 @@
 {
-  description = ''Create SVG-files with QR-codes from strings.'';
+  description = ''QR-code tools. Generate SVG-files with QR-codes, get QR-code sizes, etc.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-qr-v1_3_1.flake = false;
   inputs.src-qr-v1_3_1.owner = "ThomasTJdev";
-  inputs.src-qr-v1_3_1.ref   = "refs/tags/v1.3.1";
+  inputs.src-qr-v1_3_1.ref   = "v1_3_1";
   inputs.src-qr-v1_3_1.repo  = "nim_qr";
   inputs.src-qr-v1_3_1.type  = "github";
   

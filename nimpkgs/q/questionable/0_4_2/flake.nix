@@ -9,7 +9,7 @@
   
   inputs.src-questionable-0_4_2.flake = false;
   inputs.src-questionable-0_4_2.owner = "markspanbroek";
-  inputs.src-questionable-0_4_2.ref   = "refs/tags/0.4.2";
+  inputs.src-questionable-0_4_2.ref   = "0_4_2";
   inputs.src-questionable-0_4_2.repo  = "questionable";
   inputs.src-questionable-0_4_2.type  = "github";
   

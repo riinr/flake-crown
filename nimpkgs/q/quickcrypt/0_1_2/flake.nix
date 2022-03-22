@@ -1,5 +1,5 @@
 {
-  description = ''A library for quickly and easily encrypting strings & files. User-friendly and highly compatible.'';
+  description = ''A library for quickly and easily encrypting strings and text file content.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-quickcrypt-0_1_2.flake = false;
   inputs.src-quickcrypt-0_1_2.owner = "theAkito";
-  inputs.src-quickcrypt-0_1_2.ref   = "refs/tags/0.1.2";
+  inputs.src-quickcrypt-0_1_2.ref   = "0_1_2";
   inputs.src-quickcrypt-0_1_2.repo  = "nim-quickcrypt";
   inputs.src-quickcrypt-0_1_2.type  = "github";
   
   inputs."nimaes".owner = "nim-nix-pkgs";
   inputs."nimaes".ref   = "master";
   inputs."nimaes".repo  = "nimaes";
+  inputs."nimaes".dir   = "";
   inputs."nimaes".type  = "github";
   inputs."nimaes".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimaes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."neoid".owner = "nim-nix-pkgs";
   inputs."neoid".ref   = "master";
   inputs."neoid".repo  = "neoid";
+  inputs."neoid".dir   = "0_3_2";
   inputs."neoid".type  = "github";
   inputs."neoid".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neoid".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

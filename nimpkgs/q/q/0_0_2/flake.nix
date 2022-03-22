@@ -1,5 +1,5 @@
 {
-  description = ''Simple package for query HTML/XML elements using a CSS3 or jQuery-like selector syntax'';
+  description = ''Simple CSS3 selectors for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-q-0_0_2.flake = false;
   inputs.src-q-0_0_2.owner = "OpenSystemsLab";
-  inputs.src-q-0_0_2.ref   = "refs/tags/0.0.2";
+  inputs.src-q-0_0_2.ref   = "0_0_2";
   inputs.src-q-0_0_2.repo  = "q.nim";
   inputs.src-q-0_0_2.type  = "github";
   

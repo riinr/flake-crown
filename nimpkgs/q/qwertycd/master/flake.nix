@@ -9,13 +9,14 @@
   
   inputs.src-qwertycd-master.flake = false;
   inputs.src-qwertycd-master.owner = "minefuto";
-  inputs.src-qwertycd-master.ref   = "refs/heads/master";
+  inputs.src-qwertycd-master.ref   = "master";
   inputs.src-qwertycd-master.repo  = "qwertycd";
   inputs.src-qwertycd-master.type  = "github";
   
   inputs."illwill".owner = "nim-nix-pkgs";
   inputs."illwill".ref   = "master";
   inputs."illwill".repo  = "illwill";
+  inputs."illwill".dir   = "v0_2_0";
   inputs."illwill".type  = "github";
   inputs."illwill".inputs.nixpkgs.follows = "nixpkgs";
   inputs."illwill".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."parsetoml".owner = "nim-nix-pkgs";
   inputs."parsetoml".ref   = "master";
   inputs."parsetoml".repo  = "parsetoml";
+  inputs."parsetoml".dir   = "v0_6_0";
   inputs."parsetoml".type  = "github";
   inputs."parsetoml".inputs.nixpkgs.follows = "nixpkgs";
   inputs."parsetoml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

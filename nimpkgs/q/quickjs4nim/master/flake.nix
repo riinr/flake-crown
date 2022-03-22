@@ -1,5 +1,5 @@
 {
-  description = ''A QuickJS wrapper for Nim'';
+  description = ''QuickJS wrapper for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,17 +9,17 @@
   
   inputs.src-quickjs4nim-master.flake = false;
   inputs.src-quickjs4nim-master.owner = "ImVexed";
-  inputs.src-quickjs4nim-master.ref   = "refs/heads/master";
+  inputs.src-quickjs4nim-master.ref   = "master";
   inputs.src-quickjs4nim-master.repo  = "quickjs4nim";
   inputs.src-quickjs4nim-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-QuickJS4nim-master"];
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-quickjs4nim-master"];
   in lib.mkRefOutput {
     inherit self nixpkgs ;
-    src  = deps."src-QuickJS4nim-master";
+    src  = deps."src-quickjs4nim-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
   };

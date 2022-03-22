@@ -9,7 +9,7 @@
   
   inputs.src-quickjwt-0_2_1.flake = false;
   inputs.src-quickjwt-0_2_1.owner = "treeform";
-  inputs.src-quickjwt-0_2_1.ref   = "refs/tags/0.2.1";
+  inputs.src-quickjwt-0_2_1.ref   = "0_2_1";
   inputs.src-quickjwt-0_2_1.repo  = "quickjwt";
   inputs.src-quickjwt-0_2_1.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Binding for Qt 5's Qt SQL library that integrates with the features of the Nim language. Uses one API for multiple database engines.'';
+  description = ''Binding for Qt 5's Qt SQL library. Provides a single API for multiple database engines.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,8 +9,8 @@
   
   inputs.src-qt5_qtsql-1_1_1.flake = false;
   inputs.src-qt5_qtsql-1_1_1.owner = "philip-wernersbach";
-  inputs.src-qt5_qtsql-1_1_1.ref   = "refs/tags/1.1.1";
-  inputs.src-qt5_qtsql-1_1_1.repo  = "nim-qt5_qtsql";
+  inputs.src-qt5_qtsql-1_1_1.ref   = "1_1_1";
+  inputs.src-qt5_qtsql-1_1_1.repo  = "nim-qt5_qtsql.git";
   inputs.src-qt5_qtsql-1_1_1.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

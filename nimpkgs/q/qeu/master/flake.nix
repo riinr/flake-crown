@@ -1,5 +1,5 @@
 {
-  description = ''Functionality for compare two values'';
+  description = ''compare two number'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-qeu-master.flake = false;
   inputs.src-qeu-master.owner = "hyu1996";
-  inputs.src-qeu-master.ref   = "refs/heads/master";
+  inputs.src-qeu-master.ref   = "master";
   inputs.src-qeu-master.repo  = "qeu";
   inputs.src-qeu-master.type  = "github";
   

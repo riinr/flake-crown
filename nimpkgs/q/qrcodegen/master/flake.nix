@@ -1,5 +1,5 @@
 {
-  description = ''QR Code Generator'';
+  description = ''QR Code Generator for Nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-qrcodegen-master.flake = false;
   inputs.src-qrcodegen-master.owner = "bunkford";
-  inputs.src-qrcodegen-master.ref   = "refs/heads/master";
+  inputs.src-qrcodegen-master.ref   = "master";
   inputs.src-qrcodegen-master.repo  = "qrcodegen";
   inputs.src-qrcodegen-master.type  = "github";
   

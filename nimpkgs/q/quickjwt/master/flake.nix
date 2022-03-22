@@ -9,7 +9,7 @@
   
   inputs.src-quickjwt-master.flake = false;
   inputs.src-quickjwt-master.owner = "treeform";
-  inputs.src-quickjwt-master.ref   = "refs/heads/master";
+  inputs.src-quickjwt-master.ref   = "master";
   inputs.src-quickjwt-master.repo  = "quickjwt";
   inputs.src-quickjwt-master.type  = "github";
   
