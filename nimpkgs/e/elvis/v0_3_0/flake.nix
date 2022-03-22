@@ -1,5 +1,5 @@
 {
-  description = ''The elvis package implements a 'truthy', 'ternary' and a 'coalesce' operator to Nim as syntactic sugar for working with conditional expressions'';
+  description = ''truthy, elvis, ternary and conditional assignment operators for nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-elvis-v0_3_0.flake = false;
   inputs.src-elvis-v0_3_0.owner = "mattaylor";
-  inputs.src-elvis-v0_3_0.ref   = "refs/tags/v0.3.0";
+  inputs.src-elvis-v0_3_0.ref   = "v0_3_0";
   inputs.src-elvis-v0_3_0.repo  = "elvis";
   inputs.src-elvis-v0_3_0.type  = "github";
   

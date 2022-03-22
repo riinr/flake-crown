@@ -1,5 +1,5 @@
 {
-  description = ''Pretty looking, full featured, Python-inspired unit test library.'';
+  description = ''Tool for providing unit tests. Einheit is German for Unit.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-einheit-master.flake = false;
   inputs.src-einheit-master.owner = "jyapayne";
-  inputs.src-einheit-master.ref   = "refs/heads/master";
+  inputs.src-einheit-master.ref   = "master";
   inputs.src-einheit-master.repo  = "einheit";
   inputs.src-einheit-master.type  = "github";
   

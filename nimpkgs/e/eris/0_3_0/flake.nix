@@ -1,5 +1,5 @@
 {
-  description = ''Encoding for Robust Immutable Storage (ERIS)'';
+  description = ''Encoding for Robust Immutable Storage'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-eris-0_3_0.flake = false;
   inputs.src-eris-0_3_0.owner = "~ehmry";
-  inputs.src-eris-0_3_0.ref   = "0.3.0";
+  inputs.src-eris-0_3_0.ref   = "0_3_0";
   inputs.src-eris-0_3_0.repo  = "eris";
   inputs.src-eris-0_3_0.type  = "sourcehut";
   
   inputs."base32".owner = "nim-nix-pkgs";
   inputs."base32".ref   = "master";
   inputs."base32".repo  = "base32";
+  inputs."base32".dir   = "0_1_3";
   inputs."base32".type  = "github";
   inputs."base32".inputs.nixpkgs.follows = "nixpkgs";
   inputs."base32".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."taps".owner = "nim-nix-pkgs";
   inputs."taps".ref   = "master";
   inputs."taps".repo  = "taps";
+  inputs."taps".dir   = "0_2_2";
   inputs."taps".type  = "github";
   inputs."taps".inputs.nixpkgs.follows = "nixpkgs";
   inputs."taps".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."lmdb".owner = "nim-nix-pkgs";
   inputs."lmdb".ref   = "master";
   inputs."lmdb".repo  = "lmdb";
+  inputs."lmdb".dir   = "0_1_2";
   inputs."lmdb".type  = "github";
   inputs."lmdb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."lmdb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

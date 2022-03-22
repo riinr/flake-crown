@@ -1,5 +1,5 @@
 {
-  description = ''A Nim implementation of Ethash, the ethereum proof-of-work hashing function'';
+  description = ''A Nim implementation of Ethash, the Ethereum proof-of-work hashing function'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-ethash-master.flake = false;
   inputs.src-ethash-master.owner = "status-im";
-  inputs.src-ethash-master.ref   = "refs/heads/master";
+  inputs.src-ethash-master.ref   = "master";
   inputs.src-ethash-master.repo  = "nim-ethash";
   inputs.src-ethash-master.type  = "github";
   
   inputs."nimcrypto".owner = "nim-nix-pkgs";
   inputs."nimcrypto".ref   = "master";
   inputs."nimcrypto".repo  = "nimcrypto";
+  inputs."nimcrypto".dir   = "";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

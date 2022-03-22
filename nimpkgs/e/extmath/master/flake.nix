@@ -1,5 +1,5 @@
 {
-  description = ''Nim math library'';
+  description = ''Nimrod math library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-extmath-master.flake = false;
   inputs.src-extmath-master.owner = "achesak";
-  inputs.src-extmath-master.ref   = "refs/heads/master";
+  inputs.src-extmath-master.ref   = "master";
   inputs.src-extmath-master.repo  = "extmath.nim";
   inputs.src-extmath-master.type  = "github";
   

@@ -9,13 +9,14 @@
   
   inputs.src-euwren-0_5_1.flake = false;
   inputs.src-euwren-0_5_1.owner = "liquid600pgm";
-  inputs.src-euwren-0_5_1.ref   = "refs/tags/0.5.1";
+  inputs.src-euwren-0_5_1.ref   = "0_5_1";
   inputs.src-euwren-0_5_1.repo  = "euwren";
   inputs.src-euwren-0_5_1.type  = "github";
   
   inputs."nimterop".owner = "nim-nix-pkgs";
   inputs."nimterop".ref   = "master";
   inputs."nimterop".repo  = "nimterop";
+  inputs."nimterop".dir   = "v0_6_13";
   inputs."nimterop".type  = "github";
   inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

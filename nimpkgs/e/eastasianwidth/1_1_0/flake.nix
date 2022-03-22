@@ -9,7 +9,7 @@
   
   inputs.src-eastasianwidth-1_1_0.flake = false;
   inputs.src-eastasianwidth-1_1_0.owner = "jiro4989";
-  inputs.src-eastasianwidth-1_1_0.ref   = "refs/tags/1.1.0";
+  inputs.src-eastasianwidth-1_1_0.ref   = "1_1_0";
   inputs.src-eastasianwidth-1_1_0.repo  = "eastasianwidth";
   inputs.src-eastasianwidth-1_1_0.type  = "github";
   

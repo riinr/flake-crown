@@ -1,5 +1,5 @@
 {
-  description = ''Encoding for Robust Immutable Storage (ERIS)'';
+  description = ''Encoding for Robust Immutable Storage'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-eris-0_7_1.flake = false;
   inputs.src-eris-0_7_1.owner = "~ehmry";
-  inputs.src-eris-0_7_1.ref   = "0.7.1";
+  inputs.src-eris-0_7_1.ref   = "0_7_1";
   inputs.src-eris-0_7_1.repo  = "eris";
   inputs.src-eris-0_7_1.type  = "sourcehut";
   
   inputs."base32".owner = "nim-nix-pkgs";
   inputs."base32".ref   = "master";
   inputs."base32".repo  = "base32";
+  inputs."base32".dir   = "0_1_3";
   inputs."base32".type  = "github";
   inputs."base32".inputs.nixpkgs.follows = "nixpkgs";
   inputs."base32".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

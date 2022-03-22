@@ -9,7 +9,7 @@
   
   inputs.src-eventemitter-master.flake = false;
   inputs.src-eventemitter-master.owner = "al-bimani";
-  inputs.src-eventemitter-master.ref   = "refs/heads/master";
+  inputs.src-eventemitter-master.ref   = "master";
   inputs.src-eventemitter-master.repo  = "eventemitter";
   inputs.src-eventemitter-master.type  = "github";
   

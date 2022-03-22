@@ -9,13 +9,14 @@
   
   inputs.src-epub-master.flake = false;
   inputs.src-epub-master.owner = "achesak";
-  inputs.src-epub-master.ref   = "refs/heads/master";
+  inputs.src-epub-master.ref   = "master";
   inputs.src-epub-master.repo  = "nim-epub";
   inputs.src-epub-master.type  = "github";
   
   inputs."nim>=".owner = "nim-nix-pkgs";
   inputs."nim>=".ref   = "master";
   inputs."nim>=".repo  = "nim>=";
+  inputs."nim>=".dir   = "";
   inputs."nim>=".type  = "github";
   inputs."nim>=".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nim>=".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

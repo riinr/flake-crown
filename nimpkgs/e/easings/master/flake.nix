@@ -9,7 +9,7 @@
   
   inputs.src-easings-master.flake = false;
   inputs.src-easings-master.owner = "juancarlospaco";
-  inputs.src-easings-master.ref   = "refs/heads/master";
+  inputs.src-easings-master.ref   = "master";
   inputs.src-easings-master.repo  = "nim-easings";
   inputs.src-easings-master.type  = "github";
   

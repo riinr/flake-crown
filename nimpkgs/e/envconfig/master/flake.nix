@@ -9,13 +9,14 @@
   
   inputs.src-envconfig-master.flake = false;
   inputs.src-envconfig-master.owner = "jiro4989";
-  inputs.src-envconfig-master.ref   = "refs/heads/master";
+  inputs.src-envconfig-master.ref   = "master";
   inputs.src-envconfig-master.repo  = "envconfig";
   inputs.src-envconfig-master.type  = "github";
   
   inputs."regex".owner = "nim-nix-pkgs";
   inputs."regex".ref   = "master";
   inputs."regex".repo  = "regex";
+  inputs."regex".dir   = "v0_19_0";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

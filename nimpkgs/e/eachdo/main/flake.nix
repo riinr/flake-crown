@@ -9,13 +9,14 @@
   
   inputs.src-eachdo-main.flake = false;
   inputs.src-eachdo-main.owner = "jiro4989";
-  inputs.src-eachdo-main.ref   = "refs/heads/main";
+  inputs.src-eachdo-main.ref   = "main";
   inputs.src-eachdo-main.repo  = "eachdo";
   inputs.src-eachdo-main.type  = "github";
   
   inputs."argparse".owner = "nim-nix-pkgs";
   inputs."argparse".ref   = "master";
   inputs."argparse".repo  = "argparse";
+  inputs."argparse".dir   = "v3_0_0";
   inputs."argparse".type  = "github";
   inputs."argparse".inputs.nixpkgs.follows = "nixpkgs";
   inputs."argparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

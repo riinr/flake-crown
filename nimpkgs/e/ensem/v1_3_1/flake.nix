@@ -9,7 +9,7 @@
   
   inputs.src-ensem-v1_3_1.flake = false;
   inputs.src-ensem-v1_3_1.owner = "JeffersonLab";
-  inputs.src-ensem-v1_3_1.ref   = "refs/tags/v1.3.1";
+  inputs.src-ensem-v1_3_1.ref   = "v1_3_1";
   inputs.src-ensem-v1_3_1.repo  = "ensem";
   inputs.src-ensem-v1_3_1.type  = "github";
   

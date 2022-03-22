@@ -1,5 +1,5 @@
 {
-  description = ''Bindings for EGL, the native platform interface for rendering APIs.'';
+  description = ''Bindings for EGL, the native platform interface for rendering APIs'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-egl-master.flake = false;
   inputs.src-egl-master.owner = "nimious";
-  inputs.src-egl-master.ref   = "refs/heads/master";
-  inputs.src-egl-master.repo  = "egl";
+  inputs.src-egl-master.ref   = "master";
+  inputs.src-egl-master.repo  = "egl.git";
   inputs.src-egl-master.type  = "github";
   
   inputs."x11".owner = "nim-nix-pkgs";
   inputs."x11".ref   = "master";
   inputs."x11".repo  = "x11";
+  inputs."x11".dir   = "";
   inputs."x11".type  = "github";
   inputs."x11".inputs.nixpkgs.follows = "nixpkgs";
   inputs."x11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

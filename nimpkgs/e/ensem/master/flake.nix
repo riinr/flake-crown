@@ -9,7 +9,7 @@
   
   inputs.src-ensem-master.flake = false;
   inputs.src-ensem-master.owner = "JeffersonLab";
-  inputs.src-ensem-master.ref   = "refs/heads/master";
+  inputs.src-ensem-master.ref   = "master";
   inputs.src-ensem-master.repo  = "ensem";
   inputs.src-ensem-master.type  = "github";
   

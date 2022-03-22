@@ -1,5 +1,5 @@
 {
-  description = ''Yet another SQLite wrapper for Nim.'';
+  description = ''Yet another SQLite wrapper for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-easy_sqlite3-develop.flake = false;
   inputs.src-easy_sqlite3-develop.owner = "codehz";
-  inputs.src-easy_sqlite3-develop.ref   = "refs/heads/develop";
+  inputs.src-easy_sqlite3-develop.ref   = "develop";
   inputs.src-easy_sqlite3-develop.repo  = "easy_sqlite3";
   inputs.src-easy_sqlite3-develop.type  = "github";
   

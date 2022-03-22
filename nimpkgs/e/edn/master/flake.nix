@@ -9,7 +9,7 @@
   
   inputs.src-edn-master.flake = false;
   inputs.src-edn-master.owner = "rosado";
-  inputs.src-edn-master.ref   = "refs/heads/master";
+  inputs.src-edn-master.ref   = "master";
   inputs.src-edn-master.repo  = "edn.nim";
   inputs.src-edn-master.type  = "github";
   

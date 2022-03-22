@@ -9,13 +9,14 @@
   
   inputs.src-edens-master.flake = false;
   inputs.src-edens-master.owner = "jiro4989";
-  inputs.src-edens-master.ref   = "refs/heads/master";
+  inputs.src-edens-master.ref   = "master";
   inputs.src-edens-master.repo  = "edens";
   inputs.src-edens-master.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

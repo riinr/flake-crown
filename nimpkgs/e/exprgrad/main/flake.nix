@@ -9,7 +9,7 @@
   
   inputs.src-exprgrad-main.flake = false;
   inputs.src-exprgrad-main.owner = "can-lehmann";
-  inputs.src-exprgrad-main.ref   = "refs/heads/main";
+  inputs.src-exprgrad-main.ref   = "main";
   inputs.src-exprgrad-main.repo  = "exprgrad";
   inputs.src-exprgrad-main.type  = "github";
   

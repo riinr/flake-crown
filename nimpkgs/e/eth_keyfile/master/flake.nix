@@ -1,5 +1,5 @@
 {
-  description = ''A deprecated library for handling Ethereum private keys and wallets (now part of the 'eth' package)'';
+  description = ''Tools for handling the encrypted keyfile format used to store Ethereum private keys'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-eth_keyfile-master.flake = false;
   inputs.src-eth_keyfile-master.owner = "status-im";
-  inputs.src-eth_keyfile-master.ref   = "refs/heads/master";
+  inputs.src-eth_keyfile-master.ref   = "master";
   inputs.src-eth_keyfile-master.repo  = "nim-eth-keyfile";
   inputs.src-eth_keyfile-master.type  = "github";
   
   inputs."nimcrypto".owner = "nim-nix-pkgs";
   inputs."nimcrypto".ref   = "master";
   inputs."nimcrypto".repo  = "nimcrypto";
+  inputs."nimcrypto".dir   = "";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."eth_keys".owner = "nim-nix-pkgs";
   inputs."eth_keys".ref   = "master";
   inputs."eth_keys".repo  = "eth_keys";
+  inputs."eth_keys".dir   = "";
   inputs."eth_keys".type  = "github";
   inputs."eth_keys".inputs.nixpkgs.follows = "nixpkgs";
   inputs."eth_keys".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

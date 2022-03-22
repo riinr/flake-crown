@@ -1,5 +1,5 @@
 {
-  description = ''Code expander for competitive programing in Nim.'';
+  description = ''expand codes for competitive programing'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-expander-main.flake = false;
   inputs.src-expander-main.owner = "soraiemame";
-  inputs.src-expander-main.ref   = "refs/heads/main";
+  inputs.src-expander-main.ref   = "main";
   inputs.src-expander-main.repo  = "expander";
   inputs.src-expander-main.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

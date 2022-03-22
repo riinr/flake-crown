@@ -9,7 +9,7 @@
   
   inputs.src-euclidean-master.flake = false;
   inputs.src-euclidean-master.owner = "juancarlospaco";
-  inputs.src-euclidean-master.ref   = "refs/heads/master";
+  inputs.src-euclidean-master.ref   = "master";
   inputs.src-euclidean-master.repo  = "nim-euclidean";
   inputs.src-euclidean-master.type  = "github";
   

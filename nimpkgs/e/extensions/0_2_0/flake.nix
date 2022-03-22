@@ -1,5 +1,5 @@
 {
-  description = ''A library that will add useful tools to Nim's arsenal.'';
+  description = ''Nim extensions'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-extensions-0_2_0.flake = false;
   inputs.src-extensions-0_2_0.owner = "jyapayne";
-  inputs.src-extensions-0_2_0.ref   = "refs/tags/0.2.0";
+  inputs.src-extensions-0_2_0.ref   = "0_2_0";
   inputs.src-extensions-0_2_0.repo  = "nim-extensions";
   inputs.src-extensions-0_2_0.type  = "github";
   

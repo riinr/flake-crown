@@ -1,5 +1,5 @@
 {
-  description = ''Humanize elapsed time'';
+  description = ''A library to humanize elapsed times'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-eternity-v0_3_0.flake = false;
   inputs.src-eternity-v0_3_0.owner = "hiteshjasani";
-  inputs.src-eternity-v0_3_0.ref   = "refs/tags/v0.3.0";
+  inputs.src-eternity-v0_3_0.ref   = "v0_3_0";
   inputs.src-eternity-v0_3_0.repo  = "nim-eternity";
   inputs.src-eternity-v0_3_0.type  = "github";
   

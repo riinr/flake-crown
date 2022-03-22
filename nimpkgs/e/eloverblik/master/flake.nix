@@ -9,13 +9,14 @@
   
   inputs.src-eloverblik-master.flake = false;
   inputs.src-eloverblik-master.owner = "ThomasTJdev";
-  inputs.src-eloverblik-master.ref   = "refs/heads/master";
+  inputs.src-eloverblik-master.ref   = "master";
   inputs.src-eloverblik-master.repo  = "nim_eloverblik_api";
   inputs.src-eloverblik-master.type  = "github";
   
   inputs."nmqtt".owner = "nim-nix-pkgs";
   inputs."nmqtt".ref   = "master";
   inputs."nmqtt".repo  = "nmqtt";
+  inputs."nmqtt".dir   = "v1_0_4";
   inputs."nmqtt".type  = "github";
   inputs."nmqtt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nmqtt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -1,5 +1,5 @@
 {
-  description = ''JSON serialization framework'';
+  description = ''JSON serialization framework for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-eminim-master.flake = false;
   inputs.src-eminim-master.owner = "planetis-m";
-  inputs.src-eminim-master.ref   = "refs/heads/master";
+  inputs.src-eminim-master.ref   = "master";
   inputs.src-eminim-master.repo  = "eminim";
   inputs.src-eminim-master.type  = "github";
   

@@ -9,7 +9,7 @@
   
   inputs.src-espeak-master.flake = false;
   inputs.src-espeak-master.owner = "juancarlospaco";
-  inputs.src-espeak-master.ref   = "refs/heads/master";
+  inputs.src-espeak-master.ref   = "master";
   inputs.src-espeak-master.repo  = "nim-espeak";
   inputs.src-espeak-master.type  = "github";
   

@@ -9,7 +9,7 @@
   
   inputs.src-edn-0_2_1.flake = false;
   inputs.src-edn-0_2_1.owner = "rosado";
-  inputs.src-edn-0_2_1.ref   = "refs/tags/0.2.1";
+  inputs.src-edn-0_2_1.ref   = "0_2_1";
   inputs.src-edn-0_2_1.repo  = "edn.nim";
   inputs.src-edn-0_2_1.type  = "github";
   

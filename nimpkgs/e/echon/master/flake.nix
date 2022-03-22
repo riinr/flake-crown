@@ -9,7 +9,7 @@
   
   inputs.src-Echon-master.flake = false;
   inputs.src-Echon-master.owner = "eXodiquas";
-  inputs.src-Echon-master.ref   = "refs/heads/master";
+  inputs.src-Echon-master.ref   = "master";
   inputs.src-Echon-master.repo  = "Echon";
   inputs.src-Echon-master.type  = "github";
   

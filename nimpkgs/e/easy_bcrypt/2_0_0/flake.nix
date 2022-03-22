@@ -9,8 +9,8 @@
   
   inputs.src-easy_bcrypt-2_0_0.flake = false;
   inputs.src-easy_bcrypt-2_0_0.owner = "Akito13";
-  inputs.src-easy_bcrypt-2_0_0.ref   = "refs/tags/2.0.0";
-  inputs.src-easy_bcrypt-2_0_0.repo  = "easy-bcrypt";
+  inputs.src-easy_bcrypt-2_0_0.ref   = "2_0_0";
+  inputs.src-easy_bcrypt-2_0_0.repo  = "easy-bcrypt.git";
   inputs.src-easy_bcrypt-2_0_0.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

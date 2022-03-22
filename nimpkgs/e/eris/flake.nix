@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."eris-trunk".dir   = "trunk";
+  inputs."eris-trunk".owner = "nim-nix-pkgs";
+  inputs."eris-trunk".ref   = "master";
+  inputs."eris-trunk".repo  = "eris";
+  inputs."eris-trunk".type  = "github";
+  inputs."eris-trunk".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."eris-trunk".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."eris-0_2_0".dir   = "0_2_0";
   inputs."eris-0_2_0".owner = "nim-nix-pkgs";
   inputs."eris-0_2_0".ref   = "master";
