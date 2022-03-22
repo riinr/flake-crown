@@ -9,8 +9,8 @@
   
   inputs.src-osinfo-v0_2_0.flake = false;
   inputs.src-osinfo-v0_2_0.owner = "nim-lang";
-  inputs.src-osinfo-v0_2_0.ref   = "refs/tags/v0.2.0";
-  inputs.src-osinfo-v0_2_0.repo  = "osinfo";
+  inputs.src-osinfo-v0_2_0.ref   = "v0_2_0";
+  inputs.src-osinfo-v0_2_0.repo  = "osinfo.git";
   inputs.src-osinfo-v0_2_0.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

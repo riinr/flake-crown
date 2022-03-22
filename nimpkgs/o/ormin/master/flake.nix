@@ -9,13 +9,14 @@
   
   inputs.src-ormin-master.flake = false;
   inputs.src-ormin-master.owner = "Araq";
-  inputs.src-ormin-master.ref   = "refs/heads/master";
+  inputs.src-ormin-master.ref   = "master";
   inputs.src-ormin-master.repo  = "ormin";
   inputs.src-ormin-master.type  = "github";
   
   inputs."websocket".owner = "nim-nix-pkgs";
   inputs."websocket".ref   = "master";
   inputs."websocket".repo  = "websocket";
+  inputs."websocket".dir   = "0_5_0";
   inputs."websocket".type  = "github";
   inputs."websocket".inputs.nixpkgs.follows = "nixpkgs";
   inputs."websocket".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

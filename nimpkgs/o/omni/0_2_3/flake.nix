@@ -9,13 +9,14 @@
   
   inputs.src-omni-0_2_3.flake = false;
   inputs.src-omni-0_2_3.owner = "vitreo12";
-  inputs.src-omni-0_2_3.ref   = "refs/tags/0.2.3";
+  inputs.src-omni-0_2_3.ref   = "0_2_3";
   inputs.src-omni-0_2_3.repo  = "omni";
   inputs.src-omni-0_2_3.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

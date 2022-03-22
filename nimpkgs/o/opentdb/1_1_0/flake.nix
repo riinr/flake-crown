@@ -9,7 +9,7 @@
   
   inputs.src-opentdb-1_1_0.flake = false;
   inputs.src-opentdb-1_1_0.owner = "ire4ever1190";
-  inputs.src-opentdb-1_1_0.ref   = "refs/tags/1.1.0";
+  inputs.src-opentdb-1_1_0.ref   = "1_1_0";
   inputs.src-opentdb-1_1_0.repo  = "nim-opentmdb";
   inputs.src-opentdb-1_1_0.type  = "github";
   

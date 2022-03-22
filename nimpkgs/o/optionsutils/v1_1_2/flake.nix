@@ -9,7 +9,7 @@
   
   inputs.src-optionsutils-v1_1_2.flake = false;
   inputs.src-optionsutils-v1_1_2.owner = "PMunch";
-  inputs.src-optionsutils-v1_1_2.ref   = "refs/tags/v1.1.2";
+  inputs.src-optionsutils-v1_1_2.ref   = "v1_1_2";
   inputs.src-optionsutils-v1_1_2.repo  = "nim-optionsutils";
   inputs.src-optionsutils-v1_1_2.type  = "github";
   

@@ -9,7 +9,7 @@
   
   inputs.src-odsreader-v0_2_0.flake = false;
   inputs.src-odsreader-v0_2_0.owner = "dariolah";
-  inputs.src-odsreader-v0_2_0.ref   = "refs/tags/v0.2.0";
+  inputs.src-odsreader-v0_2_0.ref   = "v0_2_0";
   inputs.src-odsreader-v0_2_0.repo  = "odsreader";
   inputs.src-odsreader-v0_2_0.type  = "github";
   

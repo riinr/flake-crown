@@ -9,7 +9,7 @@
   
   inputs.src-opensimplexnoise-main.flake = false;
   inputs.src-opensimplexnoise-main.owner = "betofloresbaca";
-  inputs.src-opensimplexnoise-main.ref   = "refs/heads/main";
+  inputs.src-opensimplexnoise-main.ref   = "main";
   inputs.src-opensimplexnoise-main.repo  = "nim-opensimplexnoise";
   inputs.src-opensimplexnoise-main.type  = "github";
   

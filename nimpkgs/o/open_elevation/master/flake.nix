@@ -9,7 +9,7 @@
   
   inputs.src-open_elevation-master.flake = false;
   inputs.src-open_elevation-master.owner = "juancarlospaco";
-  inputs.src-open_elevation-master.ref   = "refs/heads/master";
+  inputs.src-open_elevation-master.ref   = "master";
   inputs.src-open_elevation-master.repo  = "nim-open-elevation";
   inputs.src-open_elevation-master.type  = "github";
   

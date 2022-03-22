@@ -9,13 +9,14 @@
   
   inputs.src-oauth-v0_3.flake = false;
   inputs.src-oauth-v0_3.owner = "CORDEA";
-  inputs.src-oauth-v0_3.ref   = "refs/tags/v0.3";
+  inputs.src-oauth-v0_3.ref   = "v0_3";
   inputs.src-oauth-v0_3.repo  = "oauth";
   inputs.src-oauth-v0_3.type  = "github";
   
   inputs."sha1".owner = "nim-nix-pkgs";
   inputs."sha1".ref   = "master";
   inputs."sha1".repo  = "sha1";
+  inputs."sha1".dir   = "";
   inputs."sha1".type  = "github";
   inputs."sha1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sha1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

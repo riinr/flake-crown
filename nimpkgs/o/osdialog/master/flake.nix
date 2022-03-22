@@ -9,7 +9,7 @@
   
   inputs.src-osdialog-master.flake = false;
   inputs.src-osdialog-master.owner = "johnnovak";
-  inputs.src-osdialog-master.ref   = "refs/heads/master";
+  inputs.src-osdialog-master.ref   = "master";
   inputs.src-osdialog-master.repo  = "nim-osdialog";
   inputs.src-osdialog-master.type  = "github";
   

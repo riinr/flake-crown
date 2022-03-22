@@ -1,5 +1,5 @@
 {
-  description = ''An OpenAL wrapper.'';
+  description = ''An OpenAL wrapper for nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-openal-0_1_1.flake = false;
   inputs.src-openal-0_1_1.owner = "treeform";
-  inputs.src-openal-0_1_1.ref   = "refs/tags/0.1.1";
+  inputs.src-openal-0_1_1.ref   = "0_1_1";
   inputs.src-openal-0_1_1.repo  = "openal";
   inputs.src-openal-0_1_1.type  = "github";
   

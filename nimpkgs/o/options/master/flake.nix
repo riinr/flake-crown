@@ -1,5 +1,5 @@
 {
-  description = ''Temporary package to fix broken code in 0.11.2 stable.'';
+  description = ''Temporary package for people running 0.11.2 stable.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-options-master.flake = false;
   inputs.src-options-master.owner = "fallingduck";
-  inputs.src-options-master.ref   = "refs/heads/master";
+  inputs.src-options-master.ref   = "master";
   inputs.src-options-master.repo  = "options-nim";
   inputs.src-options-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''onnxruntime C Api wrapped for nim'';
+  description = ''onnxruntime c Api wrapped for nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,8 +9,8 @@
   
   inputs.src-onnxruntime-main.flake = false;
   inputs.src-onnxruntime-main.owner = "YesDrX";
-  inputs.src-onnxruntime-main.ref   = "refs/heads/main";
-  inputs.src-onnxruntime-main.repo  = "onnxruntime-nim";
+  inputs.src-onnxruntime-main.ref   = "main";
+  inputs.src-onnxruntime-main.repo  = "onnxruntime-nim.git";
   inputs.src-onnxruntime-main.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

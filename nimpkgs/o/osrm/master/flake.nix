@@ -9,7 +9,7 @@
   
   inputs.src-osrm-master.flake = false;
   inputs.src-osrm-master.owner = "juancarlospaco";
-  inputs.src-osrm-master.ref   = "refs/heads/master";
+  inputs.src-osrm-master.ref   = "master";
   inputs.src-osrm-master.repo  = "nim-osrm";
   inputs.src-osrm-master.type  = "github";
   

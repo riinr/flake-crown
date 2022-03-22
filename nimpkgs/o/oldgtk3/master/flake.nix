@@ -9,7 +9,7 @@
   
   inputs.src-oldgtk3-master.flake = false;
   inputs.src-oldgtk3-master.owner = "stefansalewski";
-  inputs.src-oldgtk3-master.ref   = "refs/heads/master";
+  inputs.src-oldgtk3-master.ref   = "master";
   inputs.src-oldgtk3-master.repo  = "oldgtk3";
   inputs.src-oldgtk3-master.type  = "github";
   

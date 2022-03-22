@@ -9,7 +9,7 @@
   
   inputs.src-overpass-0_2_5.flake = false;
   inputs.src-overpass-0_2_5.owner = "juancarlospaco";
-  inputs.src-overpass-0_2_5.ref   = "refs/tags/0.2.5";
+  inputs.src-overpass-0_2_5.ref   = "0_2_5";
   inputs.src-overpass-0_2_5.repo  = "nim-overpass";
   inputs.src-overpass-0_2_5.type  = "github";
   

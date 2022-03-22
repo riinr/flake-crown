@@ -9,7 +9,7 @@
   
   inputs.src-oolib-develop.flake = false;
   inputs.src-oolib-develop.owner = "Glasses-Neo";
-  inputs.src-oolib-develop.ref   = "refs/heads/develop";
+  inputs.src-oolib-develop.ref   = "develop";
   inputs.src-oolib-develop.repo  = "OOlib";
   inputs.src-oolib-develop.type  = "github";
   

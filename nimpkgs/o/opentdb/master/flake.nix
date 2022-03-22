@@ -9,7 +9,7 @@
   
   inputs.src-opentdb-master.flake = false;
   inputs.src-opentdb-master.owner = "ire4ever1190";
-  inputs.src-opentdb-master.ref   = "refs/heads/master";
+  inputs.src-opentdb-master.ref   = "master";
   inputs.src-opentdb-master.repo  = "nim-opentmdb";
   inputs.src-opentdb-master.type  = "github";
   

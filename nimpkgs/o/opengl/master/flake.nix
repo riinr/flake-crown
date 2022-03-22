@@ -1,5 +1,5 @@
 {
-  description = ''High-level and low-level wrapper for OpenGL'';
+  description = ''an OpenGL wrapper'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-opengl-master.flake = false;
   inputs.src-opengl-master.owner = "nim-lang";
-  inputs.src-opengl-master.ref   = "refs/heads/master";
+  inputs.src-opengl-master.ref   = "master";
   inputs.src-opengl-master.repo  = "opengl";
   inputs.src-opengl-master.type  = "github";
   
   inputs."x11".owner = "nim-nix-pkgs";
   inputs."x11".ref   = "master";
   inputs."x11".repo  = "x11";
+  inputs."x11".dir   = "";
   inputs."x11".type  = "github";
   inputs."x11".inputs.nixpkgs.follows = "nixpkgs";
   inputs."x11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

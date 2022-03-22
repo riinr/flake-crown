@@ -1,5 +1,5 @@
 {
-  description = ''osu! replay parser'';
+  description = ''Osu replay parser library and command-line utility.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-osureplay-master.flake = false;
   inputs.src-osureplay-master.owner = "Yardanico";
-  inputs.src-osureplay-master.ref   = "refs/heads/master";
+  inputs.src-osureplay-master.ref   = "master";
   inputs.src-osureplay-master.repo  = "nim-osureplay";
   inputs.src-osureplay-master.type  = "github";
   

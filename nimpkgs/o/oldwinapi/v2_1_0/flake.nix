@@ -9,7 +9,7 @@
   
   inputs.src-oldwinapi-v2_1_0.flake = false;
   inputs.src-oldwinapi-v2_1_0.owner = "nim-lang";
-  inputs.src-oldwinapi-v2_1_0.ref   = "refs/tags/v2.1.0";
+  inputs.src-oldwinapi-v2_1_0.ref   = "v2_1_0";
   inputs.src-oldwinapi-v2_1_0.repo  = "oldwinapi";
   inputs.src-oldwinapi-v2_1_0.type  = "github";
   

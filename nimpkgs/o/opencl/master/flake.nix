@@ -9,7 +9,7 @@
   
   inputs.src-opencl-master.flake = false;
   inputs.src-opencl-master.owner = "nim-lang";
-  inputs.src-opencl-master.ref   = "refs/heads/master";
+  inputs.src-opencl-master.ref   = "master";
   inputs.src-opencl-master.repo  = "opencl";
   inputs.src-opencl-master.type  = "github";
   

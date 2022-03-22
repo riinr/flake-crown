@@ -1,5 +1,5 @@
 {
-  description = ''A graphics math library'';
+  description = ''A graphics math library.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-origin-master.flake = false;
   inputs.src-origin-master.owner = "mfiano";
-  inputs.src-origin-master.ref   = "refs/heads/master";
+  inputs.src-origin-master.ref   = "master";
   inputs.src-origin-master.repo  = "origin.nim";
   inputs.src-origin-master.type  = "github";
   

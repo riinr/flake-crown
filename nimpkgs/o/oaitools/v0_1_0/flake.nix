@@ -1,5 +1,5 @@
 {
-  description = ''A high-level OAI-PMH library.'';
+  description = ''High Level OAI-PMH library for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-oaitools-v0_1_0.flake = false;
   inputs.src-oaitools-v0_1_0.owner = "markpbaggett";
-  inputs.src-oaitools-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-oaitools-v0_1_0.ref   = "v0_1_0";
   inputs.src-oaitools-v0_1_0.repo  = "oaitools.nim";
   inputs.src-oaitools-v0_1_0.type  = "github";
   
   inputs."xmltools".owner = "nim-nix-pkgs";
   inputs."xmltools".ref   = "master";
   inputs."xmltools".repo  = "xmltools";
+  inputs."xmltools".dir   = "v0_1_5";
   inputs."xmltools".type  = "github";
   inputs."xmltools".inputs.nixpkgs.follows = "nixpkgs";
   inputs."xmltools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

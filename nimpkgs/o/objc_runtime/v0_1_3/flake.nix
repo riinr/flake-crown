@@ -9,13 +9,14 @@
   
   inputs.src-objc_runtime-v0_1_3.flake = false;
   inputs.src-objc_runtime-v0_1_3.owner = "bung87";
-  inputs.src-objc_runtime-v0_1_3.ref   = "refs/tags/v0.1.3";
+  inputs.src-objc_runtime-v0_1_3.ref   = "v0_1_3";
   inputs.src-objc_runtime-v0_1_3.repo  = "objc_runtime";
   inputs.src-objc_runtime-v0_1_3.type  = "github";
   
   inputs."regex".owner = "nim-nix-pkgs";
   inputs."regex".ref   = "master";
   inputs."regex".repo  = "regex";
+  inputs."regex".dir   = "v0_19_0";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

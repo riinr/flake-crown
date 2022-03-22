@@ -1,5 +1,5 @@
 {
-  description = ''Basic Option[T] library'';
+  description = ''A simple Option[T] library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-optional_t-master.flake = false;
   inputs.src-optional_t-master.owner = "flaviut";
-  inputs.src-optional_t-master.ref   = "refs/heads/master";
+  inputs.src-optional_t-master.ref   = "master";
   inputs.src-optional_t-master.repo  = "optional_t";
   inputs.src-optional_t-master.type  = "github";
   

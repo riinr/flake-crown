@@ -9,13 +9,14 @@
   
   inputs.src-omnimax-develop.flake = false;
   inputs.src-omnimax-develop.owner = "vitreo12";
-  inputs.src-omnimax-develop.ref   = "refs/heads/develop";
+  inputs.src-omnimax-develop.ref   = "develop";
   inputs.src-omnimax-develop.repo  = "omnimax";
   inputs.src-omnimax-develop.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."omni".owner = "nim-nix-pkgs";
   inputs."omni".ref   = "master";
   inputs."omni".repo  = "omni";
+  inputs."omni".dir   = "";
   inputs."omni".type  = "github";
   inputs."omni".inputs.nixpkgs.follows = "nixpkgs";
   inputs."omni".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -9,7 +9,7 @@
   
   inputs.src-opencv-master.flake = false;
   inputs.src-opencv-master.owner = "dom96";
-  inputs.src-opencv-master.ref   = "refs/heads/master";
+  inputs.src-opencv-master.ref   = "master";
   inputs.src-opencv-master.repo  = "nim-opencv";
   inputs.src-opencv-master.type  = "github";
   

@@ -1,5 +1,7 @@
 {
-  description = ''Crossplatform (x11, windows, osx) native file dialogs; sytem file/folder icons in any resolution; open file with default application'';
+  description = ''Native file dialogs (x11, windows, osx) with extension filters and predefined path.
+    System file icons in any resolution (x11 with theme support, windows, osx).
+    Open file in default application (x11, windows, osx)'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +11,14 @@
   
   inputs.src-os_files-master.flake = false;
   inputs.src-os_files-master.owner = "tormund";
-  inputs.src-os_files-master.ref   = "refs/heads/master";
+  inputs.src-os_files-master.ref   = "master";
   inputs.src-os_files-master.repo  = "os_files";
   inputs.src-os_files-master.type  = "github";
   
   inputs."oldgtk3".owner = "nim-nix-pkgs";
   inputs."oldgtk3".ref   = "master";
   inputs."oldgtk3".repo  = "oldgtk3";
+  inputs."oldgtk3".dir   = "";
   inputs."oldgtk3".type  = "github";
   inputs."oldgtk3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."oldgtk3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +26,7 @@
   inputs."jsbind".owner = "nim-nix-pkgs";
   inputs."jsbind".ref   = "master";
   inputs."jsbind".repo  = "jsbind";
+  inputs."jsbind".dir   = "";
   inputs."jsbind".type  = "github";
   inputs."jsbind".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsbind".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

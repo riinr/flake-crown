@@ -9,13 +9,14 @@
   
   inputs.src-openapi-master.flake = false;
   inputs.src-openapi-master.owner = "disruptek";
-  inputs.src-openapi-master.ref   = "refs/heads/master";
+  inputs.src-openapi-master.ref   = "master";
   inputs.src-openapi-master.repo  = "openapi";
   inputs.src-openapi-master.type  = "github";
   
   inputs."npeg".owner = "nim-nix-pkgs";
   inputs."npeg".ref   = "master";
   inputs."npeg".repo  = "npeg";
+  inputs."npeg".dir   = "0_26_0";
   inputs."npeg".type  = "github";
   inputs."npeg".inputs.nixpkgs.follows = "nixpkgs";
   inputs."npeg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."foreach".owner = "nim-nix-pkgs";
   inputs."foreach".ref   = "master";
   inputs."foreach".repo  = "foreach";
+  inputs."foreach".dir   = "1_0_2";
   inputs."foreach".type  = "github";
   inputs."foreach".inputs.nixpkgs.follows = "nixpkgs";
   inputs."foreach".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

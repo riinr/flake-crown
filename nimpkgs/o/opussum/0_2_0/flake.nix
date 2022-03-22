@@ -9,7 +9,7 @@
   
   inputs.src-opussum-0_2_0.flake = false;
   inputs.src-opussum-0_2_0.owner = "ire4ever1190";
-  inputs.src-opussum-0_2_0.ref   = "refs/tags/0.2.0";
+  inputs.src-opussum-0_2_0.ref   = "0_2_0";
   inputs.src-opussum-0_2_0.repo  = "opussum";
   inputs.src-opussum-0_2_0.type  = "github";
   
