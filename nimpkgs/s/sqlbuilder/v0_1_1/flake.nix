@@ -1,5 +1,5 @@
 {
-  description = ''A SQLbuilder with support for NULL values'';
+  description = ''SQL builder'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sqlbuilder-v0_1_1.flake = false;
-  inputs.src-sqlbuilder-v0_1_1.owner = "ThomasTJdev";
   inputs.src-sqlbuilder-v0_1_1.ref   = "refs/tags/v0.1.1";
+  inputs.src-sqlbuilder-v0_1_1.owner = "ThomasTJdev";
   inputs.src-sqlbuilder-v0_1_1.repo  = "nim_sqlbuilder";
   inputs.src-sqlbuilder-v0_1_1.type  = "github";
   

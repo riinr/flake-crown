@@ -1,5 +1,5 @@
 {
-  description = ''encode/decode variants to/from uint64'';
+  description = ''encode variants to uint64'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-variantkey-master.flake = false;
-  inputs.src-variantkey-master.owner = "brentp";
   inputs.src-variantkey-master.ref   = "refs/heads/master";
+  inputs.src-variantkey-master.owner = "brentp";
   inputs.src-variantkey-master.repo  = "variantkey-nim";
   inputs.src-variantkey-master.type  = "github";
   

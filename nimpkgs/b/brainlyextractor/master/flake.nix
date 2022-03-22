@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-brainlyextractor-master.flake = false;
+  inputs.src-brainlyextractor-master.ref   = "refs/heads/master";
   inputs.src-brainlyextractor-master.owner = "lurlo";
-  inputs.src-brainlyextractor-master.ref   = "master";
   inputs.src-brainlyextractor-master.repo  = "brainlyextractor";
   inputs.src-brainlyextractor-master.type  = "gitlab";
   

@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-suggest-v1_0.flake = false;
-  inputs.src-suggest-v1_0.owner = "c-blake";
   inputs.src-suggest-v1_0.ref   = "refs/tags/v1.0";
+  inputs.src-suggest-v1_0.owner = "c-blake";
   inputs.src-suggest-v1_0.repo  = "suggest";
   inputs.src-suggest-v1_0.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

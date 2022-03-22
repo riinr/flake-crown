@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-analytics-master.flake = false;
+  inputs.src-analytics-master.ref   = "refs/heads/master";
   inputs.src-analytics-master.owner = "dom96";
-  inputs.src-analytics-master.ref   = "master";
   inputs.src-analytics-master.repo  = "analytics";
   inputs.src-analytics-master.type  = "github";
   

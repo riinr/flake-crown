@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-asyncredis-master.flake = false;
+  inputs.src-asyncredis-master.ref   = "refs/heads/master";
   inputs.src-asyncredis-master.owner = "Q-Master";
-  inputs.src-asyncredis-master.ref   = "master";
   inputs.src-asyncredis-master.repo  = "redis.nim";
   inputs.src-asyncredis-master.type  = "github";
   

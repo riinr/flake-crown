@@ -1,5 +1,5 @@
 {
-  description = ''Interface for Nim.'';
+  description = ''Zero-cost interface for Nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-shene-master.flake = false;
-  inputs.src-shene-master.owner = "xflywind";
   inputs.src-shene-master.ref   = "refs/heads/master";
+  inputs.src-shene-master.owner = "xflywind";
   inputs.src-shene-master.repo  = "shene";
   inputs.src-shene-master.type  = "github";
   

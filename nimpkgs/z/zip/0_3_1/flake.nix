@@ -1,5 +1,5 @@
 {
-  description = ''A wrapper for the zip library'';
+  description = ''Wrapper for the zip library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-zip-0_3_1.flake = false;
-  inputs.src-zip-0_3_1.owner = "nim-lang";
   inputs.src-zip-0_3_1.ref   = "refs/tags/0.3.1";
+  inputs.src-zip-0_3_1.owner = "nim-lang";
   inputs.src-zip-0_3_1.repo  = "zip";
   inputs.src-zip-0_3_1.type  = "github";
   

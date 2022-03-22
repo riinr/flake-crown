@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-rodcli-v0_1_8.flake = false;
+  inputs.src-rodcli-v0_1_8.ref   = "refs/tags/v0.1.8";
   inputs.src-rodcli-v0_1_8.owner = "jabbalaci";
-  inputs.src-rodcli-v0_1_8.ref   = "v0_1_8";
   inputs.src-rodcli-v0_1_8.repo  = "NimCliHelper";
   inputs.src-rodcli-v0_1_8.type  = "github";
   

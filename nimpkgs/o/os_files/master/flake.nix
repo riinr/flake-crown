@@ -10,8 +10,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-os_files-master.flake = false;
+  inputs.src-os_files-master.ref   = "refs/heads/master";
   inputs.src-os_files-master.owner = "tormund";
-  inputs.src-os_files-master.ref   = "master";
   inputs.src-os_files-master.repo  = "os_files";
   inputs.src-os_files-master.type  = "github";
   

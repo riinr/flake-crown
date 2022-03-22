@@ -1,5 +1,5 @@
 {
-  description = ''Disk-based sequences'';
+  description = ''Disk-baked sequences'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-spills-0_1_0.flake = false;
-  inputs.src-spills-0_1_0.owner = "andreaferretti";
   inputs.src-spills-0_1_0.ref   = "refs/tags/0.1.0";
+  inputs.src-spills-0_1_0.owner = "andreaferretti";
   inputs.src-spills-0_1_0.repo  = "spills";
   inputs.src-spills-0_1_0.type  = "github";
   

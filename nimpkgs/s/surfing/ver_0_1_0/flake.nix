@@ -1,5 +1,5 @@
 {
-  description = ''Surfing is a highly functional CLI for Base64.'';
+  description = ''A new awesome nimble package'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-surfing-ver_0_1_0.flake = false;
-  inputs.src-surfing-ver_0_1_0.owner = "momeemt";
   inputs.src-surfing-ver_0_1_0.ref   = "refs/tags/ver.0.1.0";
+  inputs.src-surfing-ver_0_1_0.owner = "momeemt";
   inputs.src-surfing-ver_0_1_0.repo  = "surfing";
   inputs.src-surfing-ver_0_1_0.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nwsync-0_2_6.flake = false;
+  inputs.src-nwsync-0_2_6.ref   = "refs/tags/0.2.6";
   inputs.src-nwsync-0_2_6.owner = "Beamdog";
-  inputs.src-nwsync-0_2_6.ref   = "0_2_6";
   inputs.src-nwsync-0_2_6.repo  = "nwsync";
   inputs.src-nwsync-0_2_6.type  = "github";
   

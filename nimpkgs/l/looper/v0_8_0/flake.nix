@@ -1,5 +1,5 @@
 {
-  description = ''for loop macros'';
+  description = ''For loop macros for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-looper-v0_8_0.flake = false;
-  inputs.src-looper-v0_8_0.owner = "planetis-m";
   inputs.src-looper-v0_8_0.ref   = "refs/tags/v0.8.0";
+  inputs.src-looper-v0_8_0.owner = "planetis-m";
   inputs.src-looper-v0_8_0.repo  = "looper";
   inputs.src-looper-v0_8_0.type  = "github";
   

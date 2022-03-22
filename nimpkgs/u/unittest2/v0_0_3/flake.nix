@@ -1,5 +1,5 @@
 {
-  description = ''unittest fork focused on parallel test execution'';
+  description = ''unittest fork with support for parallel test execution'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-unittest2-v0_0_3.flake = false;
-  inputs.src-unittest2-v0_0_3.owner = "status-im";
   inputs.src-unittest2-v0_0_3.ref   = "refs/tags/v0.0.3";
+  inputs.src-unittest2-v0_0_3.owner = "status-im";
   inputs.src-unittest2-v0_0_3.repo  = "nim-unittest2";
   inputs.src-unittest2-v0_0_3.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-hottie-master.flake = false;
+  inputs.src-hottie-master.ref   = "refs/heads/master";
   inputs.src-hottie-master.owner = "treeform";
-  inputs.src-hottie-master.ref   = "master";
   inputs.src-hottie-master.repo  = "hottie";
   inputs.src-hottie-master.type  = "github";
   

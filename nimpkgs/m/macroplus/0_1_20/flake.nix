@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-macroplus-0_1_20.flake = false;
+  inputs.src-macroplus-0_1_20.ref   = "refs/tags/0.1.20";
   inputs.src-macroplus-0_1_20.owner = "hamidb80";
-  inputs.src-macroplus-0_1_20.ref   = "0_1_20";
   inputs.src-macroplus-0_1_20.repo  = "macroplus";
   inputs.src-macroplus-0_1_20.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-memviews-master.flake = false;
+  inputs.src-memviews-master.ref   = "refs/heads/master";
   inputs.src-memviews-master.owner = "ReneSac";
-  inputs.src-memviews-master.ref   = "master";
   inputs.src-memviews-master.repo  = "memviews";
   inputs.src-memviews-master.type  = "github";
   

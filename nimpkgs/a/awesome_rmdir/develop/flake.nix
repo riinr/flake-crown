@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-awesome_rmdir-develop.flake = false;
+  inputs.src-awesome_rmdir-develop.ref   = "refs/heads/develop";
   inputs.src-awesome_rmdir-develop.owner = "Araq";
-  inputs.src-awesome_rmdir-develop.ref   = "develop";
   inputs.src-awesome_rmdir-develop.repo  = "awesome_rmdir";
   inputs.src-awesome_rmdir-develop.type  = "github";
   

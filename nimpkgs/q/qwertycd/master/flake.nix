@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-qwertycd-master.flake = false;
+  inputs.src-qwertycd-master.ref   = "refs/heads/master";
   inputs.src-qwertycd-master.owner = "minefuto";
-  inputs.src-qwertycd-master.ref   = "master";
   inputs.src-qwertycd-master.repo  = "qwertycd";
   inputs.src-qwertycd-master.type  = "github";
   

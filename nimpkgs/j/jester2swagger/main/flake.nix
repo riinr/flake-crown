@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-jester2swagger-main.flake = false;
+  inputs.src-jester2swagger-main.ref   = "refs/heads/main";
   inputs.src-jester2swagger-main.owner = "ThomasTJdev";
-  inputs.src-jester2swagger-main.ref   = "main";
   inputs.src-jester2swagger-main.repo  = "jester2swagger";
   inputs.src-jester2swagger-main.type  = "github";
   

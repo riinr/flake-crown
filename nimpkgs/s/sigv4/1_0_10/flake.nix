@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sigv4-1_0_10.flake = false;
-  inputs.src-sigv4-1_0_10.owner = "disruptek";
   inputs.src-sigv4-1_0_10.ref   = "refs/tags/1.0.10";
+  inputs.src-sigv4-1_0_10.owner = "disruptek";
   inputs.src-sigv4-1_0_10.repo  = "sigv4";
   inputs.src-sigv4-1_0_10.type  = "github";
   

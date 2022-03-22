@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-winserial-master.flake = false;
-  inputs.src-winserial-master.owner = "bunkford";
   inputs.src-winserial-master.ref   = "refs/heads/master";
+  inputs.src-winserial-master.owner = "bunkford";
   inputs.src-winserial-master.repo  = "winserial";
   inputs.src-winserial-master.type  = "github";
   

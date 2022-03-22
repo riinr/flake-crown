@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-dropbox_filename_sanitizer-master.flake = false;
+  inputs.src-dropbox_filename_sanitizer-master.ref   = "refs/heads/master";
   inputs.src-dropbox_filename_sanitizer-master.owner = "Araq";
-  inputs.src-dropbox_filename_sanitizer-master.ref   = "master";
   inputs.src-dropbox_filename_sanitizer-master.repo  = "dropbox_filename_sanitizer";
   inputs.src-dropbox_filename_sanitizer-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nyml-main.flake = false;
+  inputs.src-nyml-main.ref   = "refs/heads/main";
   inputs.src-nyml-main.owner = "openpeep";
-  inputs.src-nyml-main.ref   = "main";
   inputs.src-nyml-main.repo  = "nyml";
   inputs.src-nyml-main.type  = "github";
   

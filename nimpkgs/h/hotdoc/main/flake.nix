@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-hotdoc-main.flake = false;
+  inputs.src-hotdoc-main.ref   = "refs/heads/main";
   inputs.src-hotdoc-main.owner = "willyboar";
-  inputs.src-hotdoc-main.ref   = "main";
   inputs.src-hotdoc-main.repo  = "hotdoc";
   inputs.src-hotdoc-main.type  = "github";
   

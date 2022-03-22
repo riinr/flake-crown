@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-vector-master.flake = false;
-  inputs.src-vector-master.owner = "tontinton";
   inputs.src-vector-master.ref   = "refs/heads/master";
+  inputs.src-vector-master.owner = "tontinton";
   inputs.src-vector-master.repo  = "vector";
   inputs.src-vector-master.type  = "github";
   

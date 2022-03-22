@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-wings-v0_0_1-alpha.flake = false;
-  inputs.src-wings-v0_0_1-alpha.owner = "binhonglee";
   inputs.src-wings-v0_0_1-alpha.ref   = "refs/tags/v0.0.1-alpha";
+  inputs.src-wings-v0_0_1-alpha.owner = "binhonglee";
   inputs.src-wings-v0_0_1-alpha.repo  = "wings";
   inputs.src-wings-v0_0_1-alpha.type  = "github";
   

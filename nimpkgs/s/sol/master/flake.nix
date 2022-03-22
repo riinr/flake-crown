@@ -1,5 +1,5 @@
 {
-  description = ''A SIMD-accelerated vector library written in C99 with Nim bindings.'';
+  description = ''A portable SIMD-accelerated vector library written in C99 with Nim bindings.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sol-master.flake = false;
-  inputs.src-sol-master.owner = "davidgarland";
   inputs.src-sol-master.ref   = "refs/heads/master";
+  inputs.src-sol-master.owner = "davidgarland";
   inputs.src-sol-master.repo  = "sol";
   inputs.src-sol-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-dnd-master.flake = false;
+  inputs.src-dnd-master.ref   = "refs/heads/master";
   inputs.src-dnd-master.owner = "adokitkat";
-  inputs.src-dnd-master.ref   = "master";
   inputs.src-dnd-master.repo  = "dnd";
   inputs.src-dnd-master.type  = "github";
   

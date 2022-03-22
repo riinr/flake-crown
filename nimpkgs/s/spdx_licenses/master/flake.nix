@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-spdx_licenses-master.flake = false;
-  inputs.src-spdx_licenses-master.owner = "euantorano";
   inputs.src-spdx_licenses-master.ref   = "refs/heads/master";
+  inputs.src-spdx_licenses-master.owner = "euantorano";
   inputs.src-spdx_licenses-master.repo  = "spdx_licenses.nim";
   inputs.src-spdx_licenses-master.type  = "github";
   

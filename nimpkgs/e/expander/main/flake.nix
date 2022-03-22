@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-expander-main.flake = false;
+  inputs.src-expander-main.ref   = "refs/heads/main";
   inputs.src-expander-main.owner = "soraiemame";
-  inputs.src-expander-main.ref   = "main";
   inputs.src-expander-main.repo  = "expander";
   inputs.src-expander-main.type  = "github";
   

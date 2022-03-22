@@ -1,5 +1,5 @@
 {
-  description = ''HTML & CSS Minify Lib & App based on Regexes & parallel MultiReplaces'';
+  description = ''HTML & CSS & JS Minify Lib & App based on Regexes & parallel MultiReplaces'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-css_html_minify-master.flake = false;
-  inputs.src-css_html_minify-master.owner = "juancarlospaco";
   inputs.src-css_html_minify-master.ref   = "refs/heads/master";
+  inputs.src-css_html_minify-master.owner = "juancarlospaco";
   inputs.src-css_html_minify-master.repo  = "nim-css-html-minify";
   inputs.src-css_html_minify-master.type  = "github";
   

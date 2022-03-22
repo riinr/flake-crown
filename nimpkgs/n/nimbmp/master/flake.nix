@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimBMP-master.flake = false;
+  inputs.src-nimBMP-master.ref   = "refs/heads/master";
   inputs.src-nimBMP-master.owner = "jangko";
-  inputs.src-nimBMP-master.ref   = "master";
   inputs.src-nimBMP-master.repo  = "nimBMP";
   inputs.src-nimBMP-master.type  = "github";
   

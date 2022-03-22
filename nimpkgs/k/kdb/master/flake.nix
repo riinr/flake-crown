@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-kdb-master.flake = false;
+  inputs.src-kdb-master.ref   = "refs/heads/master";
   inputs.src-kdb-master.owner = "inv2004";
-  inputs.src-kdb-master.ref   = "master";
   inputs.src-kdb-master.repo  = "kdb_nim";
   inputs.src-kdb-master.type  = "github";
   

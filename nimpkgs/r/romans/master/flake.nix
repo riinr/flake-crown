@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-romans-master.flake = false;
+  inputs.src-romans-master.ref   = "refs/heads/master";
   inputs.src-romans-master.owner = "lcrees";
-  inputs.src-romans-master.ref   = "master";
   inputs.src-romans-master.repo  = "romans";
   inputs.src-romans-master.type  = "github";
   

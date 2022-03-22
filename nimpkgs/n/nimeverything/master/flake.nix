@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimeverything-master.flake = false;
+  inputs.src-nimeverything-master.ref   = "refs/heads/master";
   inputs.src-nimeverything-master.owner = "xland";
-  inputs.src-nimeverything-master.ref   = "master";
   inputs.src-nimeverything-master.repo  = "nimeverything";
   inputs.src-nimeverything-master.type  = "github";
   

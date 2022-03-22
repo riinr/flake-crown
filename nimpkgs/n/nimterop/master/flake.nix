@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimterop-master.flake = false;
+  inputs.src-nimterop-master.ref   = "refs/heads/master";
   inputs.src-nimterop-master.owner = "genotrance";
-  inputs.src-nimterop-master.ref   = "master";
   inputs.src-nimterop-master.repo  = "nimterop";
   inputs.src-nimterop-master.type  = "github";
   

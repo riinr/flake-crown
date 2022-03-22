@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-asynctools-master.flake = false;
+  inputs.src-asynctools-master.ref   = "refs/heads/master";
   inputs.src-asynctools-master.owner = "cheatfate";
-  inputs.src-asynctools-master.ref   = "master";
   inputs.src-asynctools-master.repo  = "asynctools";
   inputs.src-asynctools-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-horde3d-master.flake = false;
+  inputs.src-horde3d-master.ref   = "refs/heads/master";
   inputs.src-horde3d-master.owner = "fowlmouth";
-  inputs.src-horde3d-master.ref   = "master";
   inputs.src-horde3d-master.repo  = "horde3d";
   inputs.src-horde3d-master.type  = "github";
   

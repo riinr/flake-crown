@@ -1,5 +1,5 @@
 {
-  description = ''tnim is a Nim REPL - an interactive sandbox for testing Nim code'';
+  description = ''Nim REPL - a sandbox for testing Nim code'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-tnim-2_0_4.flake = false;
-  inputs.src-tnim-2_0_4.owner = "jlp765";
   inputs.src-tnim-2_0_4.ref   = "refs/tags/2.0.4";
+  inputs.src-tnim-2_0_4.owner = "jlp765";
   inputs.src-tnim-2_0_4.repo  = "tnim";
   inputs.src-tnim-2_0_4.type  = "github";
   

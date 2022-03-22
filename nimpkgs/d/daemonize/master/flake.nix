@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-daemonize-master.flake = false;
+  inputs.src-daemonize-master.ref   = "refs/heads/master";
   inputs.src-daemonize-master.owner = "OpenSystemsLab";
-  inputs.src-daemonize-master.ref   = "master";
   inputs.src-daemonize-master.repo  = "daemonize.nim";
   inputs.src-daemonize-master.type  = "github";
   

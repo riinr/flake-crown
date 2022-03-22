@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-xcm-master.flake = false;
-  inputs.src-xcm-master.owner = "SolitudeSF";
   inputs.src-xcm-master.ref   = "refs/heads/master";
+  inputs.src-xcm-master.owner = "SolitudeSF";
   inputs.src-xcm-master.repo  = "xcm";
   inputs.src-xcm-master.type  = "github";
   
   inputs."x11".owner = "nim-nix-pkgs";
   inputs."x11".ref   = "master";
   inputs."x11".repo  = "x11";
+  inputs."x11".dir   = "";
   inputs."x11".type  = "github";
   inputs."x11".inputs.nixpkgs.follows = "nixpkgs";
   inputs."x11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

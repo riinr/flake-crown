@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1647920574,
+        "narHash": "sha256-D3ob5QykELhyNcTnISOkjEzLlgXltwON8Ucrz5cpiQI=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "bfb46a1f762002f07f9d81d93dacd544c6890623",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-glew-master": "src-glew-master"
+      }
+    },
+    "src-glew-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1600050497,
+        "narHash": "sha256-zoAf7aqv5G1Vi1ypplFroXP1qZzmlRacZMwsXQX9Ick=",
+        "owner": "jyapayne",
+        "repo": "nim-glew",
+        "rev": "cb5066b3aed121c5744b62f1804806f809d3d291",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jyapayne",
+        "ref": "refs/heads/master",
+        "repo": "nim-glew",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

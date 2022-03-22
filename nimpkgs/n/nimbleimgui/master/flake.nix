@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-NimbleImGui-master.flake = false;
+  inputs.src-NimbleImGui-master.ref   = "refs/heads/master";
   inputs.src-NimbleImGui-master.owner = "qb-0";
-  inputs.src-NimbleImGui-master.ref   = "master";
   inputs.src-NimbleImGui-master.repo  = "NimbleImGui";
   inputs.src-NimbleImGui-master.type  = "github";
   

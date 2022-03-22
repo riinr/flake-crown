@@ -1,5 +1,5 @@
 {
-  description = ''Bindings for the IUP widget toolkit'';
+  description = ''Nim wrapper for IUP'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-iup-master.flake = false;
-  inputs.src-iup-master.owner = "nim-lang";
   inputs.src-iup-master.ref   = "refs/heads/master";
+  inputs.src-iup-master.owner = "nim-lang";
   inputs.src-iup-master.repo  = "iup";
   inputs.src-iup-master.type  = "github";
   

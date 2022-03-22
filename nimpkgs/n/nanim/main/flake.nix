@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nanim-main.flake = false;
+  inputs.src-nanim-main.ref   = "refs/heads/main";
   inputs.src-nanim-main.owner = "ErikWDev";
-  inputs.src-nanim-main.ref   = "main";
   inputs.src-nanim-main.repo  = "nanim";
   inputs.src-nanim-main.type  = "github";
   

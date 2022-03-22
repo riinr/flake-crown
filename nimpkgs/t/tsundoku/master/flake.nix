@@ -1,5 +1,5 @@
 {
-  description = ''Simple and lightweight OPDS ebook server'';
+  description = ''OPDS ebook server'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-tsundoku-master.flake = false;
-  inputs.src-tsundoku-master.owner = "FedericoCeratto";
   inputs.src-tsundoku-master.ref   = "refs/heads/master";
+  inputs.src-tsundoku-master.owner = "FedericoCeratto";
   inputs.src-tsundoku-master.repo  = "tsundoku";
   inputs.src-tsundoku-master.type  = "github";
   
   inputs."jester".owner = "nim-nix-pkgs";
   inputs."jester".ref   = "master";
   inputs."jester".repo  = "jester";
+  inputs."jester".dir   = "v0_5_0";
   inputs."jester".type  = "github";
   inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

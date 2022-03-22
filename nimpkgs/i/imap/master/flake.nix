@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-imap-master.flake = false;
-  inputs.src-imap-master.owner = "~ehmry";
   inputs.src-imap-master.ref   = "master";
+  inputs.src-imap-master.owner = "~ehmry";
   inputs.src-imap-master.repo  = "nim_imap";
   inputs.src-imap-master.type  = "sourcehut";
   

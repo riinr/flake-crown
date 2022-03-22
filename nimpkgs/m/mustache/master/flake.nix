@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mustache-master.flake = false;
+  inputs.src-mustache-master.ref   = "refs/heads/master";
   inputs.src-mustache-master.owner = "soasme";
-  inputs.src-mustache-master.ref   = "master";
   inputs.src-mustache-master.repo  = "nim-mustache";
   inputs.src-mustache-master.type  = "github";
   

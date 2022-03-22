@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-opussum-master.flake = false;
+  inputs.src-opussum-master.ref   = "refs/heads/master";
   inputs.src-opussum-master.owner = "ire4ever1190";
-  inputs.src-opussum-master.ref   = "master";
   inputs.src-opussum-master.repo  = "opussum";
   inputs.src-opussum-master.type  = "github";
   

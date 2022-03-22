@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-linenoise-v0_1_0.flake = false;
-  inputs.src-linenoise-v0_1_0.owner = "fallingduck";
   inputs.src-linenoise-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-linenoise-v0_1_0.owner = "fallingduck";
   inputs.src-linenoise-v0_1_0.repo  = "linenoise-nim";
   inputs.src-linenoise-v0_1_0.type  = "github";
   

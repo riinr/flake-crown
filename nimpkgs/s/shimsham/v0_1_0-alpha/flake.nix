@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-shimsham-v0_1_0-alpha.flake = false;
-  inputs.src-shimsham-v0_1_0-alpha.owner = "apense";
   inputs.src-shimsham-v0_1_0-alpha.ref   = "refs/tags/v0.1.0-alpha";
+  inputs.src-shimsham-v0_1_0-alpha.owner = "apense";
   inputs.src-shimsham-v0_1_0-alpha.repo  = "shimsham";
   inputs.src-shimsham-v0_1_0-alpha.type  = "github";
   

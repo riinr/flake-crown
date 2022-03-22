@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimfmt-master.flake = false;
+  inputs.src-nimfmt-master.ref   = "refs/heads/master";
   inputs.src-nimfmt-master.owner = "FedericoCeratto";
-  inputs.src-nimfmt-master.ref   = "master";
   inputs.src-nimfmt-master.repo  = "nimfmt";
   inputs.src-nimfmt-master.type  = "github";
   

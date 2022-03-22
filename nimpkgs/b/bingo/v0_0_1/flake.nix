@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-bingo-v0_0_1.flake = false;
+  inputs.src-bingo-v0_0_1.ref   = "refs/tags/v0.0.1";
   inputs.src-bingo-v0_0_1.owner = "planetis-m";
-  inputs.src-bingo-v0_0_1.ref   = "v0_0_1";
   inputs.src-bingo-v0_0_1.repo  = "bingo";
   inputs.src-bingo-v0_0_1.type  = "github";
   

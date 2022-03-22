@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-github_release-releases.flake = false;
+  inputs.src-github_release-releases.ref   = "refs/tags/releases";
   inputs.src-github_release-releases.owner = "kdheepak";
-  inputs.src-github_release-releases.ref   = "releases";
   inputs.src-github_release-releases.repo  = "github-release";
   inputs.src-github_release-releases.type  = "github";
   

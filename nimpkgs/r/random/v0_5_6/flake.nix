@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-random-v0_5_6.flake = false;
+  inputs.src-random-v0_5_6.ref   = "refs/tags/v0.5.6";
   inputs.src-random-v0_5_6.owner = "oprypin";
-  inputs.src-random-v0_5_6.ref   = "v0_5_6";
   inputs.src-random-v0_5_6.repo  = "nim-random";
   inputs.src-random-v0_5_6.type  = "github";
   

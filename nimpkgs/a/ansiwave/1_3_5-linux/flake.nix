@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ansiwave-1_3_5-linux.flake = false;
+  inputs.src-ansiwave-1_3_5-linux.ref   = "refs/tags/1.3.5-linux";
   inputs.src-ansiwave-1_3_5-linux.owner = "ansiwave";
-  inputs.src-ansiwave-1_3_5-linux.ref   = "1_3_5-linux";
   inputs.src-ansiwave-1_3_5-linux.repo  = "ansiwave";
   inputs.src-ansiwave-1_3_5-linux.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-hayaa-main.flake = false;
+  inputs.src-hayaa-main.ref   = "refs/heads/main";
   inputs.src-hayaa-main.owner = "angus-lherrou";
-  inputs.src-hayaa-main.ref   = "main";
   inputs.src-hayaa-main.repo  = "hayaa";
   inputs.src-hayaa-main.type  = "github";
   

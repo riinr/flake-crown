@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-crowngui-v0_2_8.flake = false;
-  inputs.src-crowngui-v0_2_8.owner = "bung87";
   inputs.src-crowngui-v0_2_8.ref   = "refs/tags/v0.2.8";
+  inputs.src-crowngui-v0_2_8.owner = "bung87";
   inputs.src-crowngui-v0_2_8.repo  = "crowngui";
   inputs.src-crowngui-v0_2_8.type  = "github";
   
   inputs."regex".owner = "nim-nix-pkgs";
   inputs."regex".ref   = "master";
   inputs."regex".repo  = "regex";
+  inputs."regex".dir   = "v0_19_0";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."xlsx".owner = "nim-nix-pkgs";
   inputs."xlsx".ref   = "master";
   inputs."xlsx".repo  = "xlsx";
+  inputs."xlsx".dir   = "0_4_5";
   inputs."xlsx".type  = "github";
   inputs."xlsx".inputs.nixpkgs.follows = "nixpkgs";
   inputs."xlsx".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."static_server".owner = "nim-nix-pkgs";
   inputs."static_server".ref   = "master";
   inputs."static_server".repo  = "static_server";
+  inputs."static_server".dir   = "v2_2_0";
   inputs."static_server".type  = "github";
   inputs."static_server".inputs.nixpkgs.follows = "nixpkgs";
   inputs."static_server".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -37,6 +40,7 @@
   inputs."jsonschema".owner = "nim-nix-pkgs";
   inputs."jsonschema".ref   = "master";
   inputs."jsonschema".repo  = "jsonschema";
+  inputs."jsonschema".dir   = "";
   inputs."jsonschema".type  = "github";
   inputs."jsonschema".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsonschema".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -44,6 +48,7 @@
   inputs."darwin".owner = "nim-nix-pkgs";
   inputs."darwin".ref   = "master";
   inputs."darwin".repo  = "darwin";
+  inputs."darwin".dir   = "";
   inputs."darwin".type  = "github";
   inputs."darwin".inputs.nixpkgs.follows = "nixpkgs";
   inputs."darwin".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

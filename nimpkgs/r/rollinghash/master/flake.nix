@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-RollingHash-master.flake = false;
+  inputs.src-RollingHash-master.ref   = "refs/heads/master";
   inputs.src-RollingHash-master.owner = "MarcAzar";
-  inputs.src-RollingHash-master.ref   = "master";
   inputs.src-RollingHash-master.repo  = "RollingHash";
   inputs.src-RollingHash-master.type  = "github";
   

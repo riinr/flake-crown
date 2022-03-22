@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-biblioteca_guarrilla-0_1_8.flake = false;
+  inputs.src-biblioteca_guarrilla-0_1_8.ref   = "refs/tags/0.1.8";
   inputs.src-biblioteca_guarrilla-0_1_8.owner = "juancarlospaco";
-  inputs.src-biblioteca_guarrilla-0_1_8.ref   = "0_1_8";
   inputs.src-biblioteca_guarrilla-0_1_8.repo  = "biblioteca-guarrilla";
   inputs.src-biblioteca_guarrilla-0_1_8.type  = "github";
   

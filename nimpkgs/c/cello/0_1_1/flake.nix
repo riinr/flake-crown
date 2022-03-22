@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-cello-0_1_1.flake = false;
-  inputs.src-cello-0_1_1.owner = "andreaferretti";
   inputs.src-cello-0_1_1.ref   = "refs/tags/0.1.1";
+  inputs.src-cello-0_1_1.owner = "andreaferretti";
   inputs.src-cello-0_1_1.repo  = "cello";
   inputs.src-cello-0_1_1.type  = "github";
   
   inputs."spills".owner = "nim-nix-pkgs";
   inputs."spills".ref   = "master";
   inputs."spills".repo  = "spills";
+  inputs."spills".dir   = "0_1_3";
   inputs."spills".type  = "github";
   inputs."spills".inputs.nixpkgs.follows = "nixpkgs";
   inputs."spills".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

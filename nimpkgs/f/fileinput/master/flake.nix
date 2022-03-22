@@ -1,5 +1,5 @@
 {
-  description = ''iterate through files and lines'';
+  description = ''iterates through files and lines of files, based on Python's fileinput module'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-fileinput-master.flake = false;
-  inputs.src-fileinput-master.owner = "achesak";
   inputs.src-fileinput-master.ref   = "refs/heads/master";
+  inputs.src-fileinput-master.owner = "achesak";
   inputs.src-fileinput-master.repo  = "nim-fileinput";
   inputs.src-fileinput-master.type  = "github";
   

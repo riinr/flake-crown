@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimish-master.flake = false;
+  inputs.src-nimish-master.ref   = "refs/heads/master";
   inputs.src-nimish-master.owner = "xflywind";
-  inputs.src-nimish-master.ref   = "master";
   inputs.src-nimish-master.repo  = "nimish";
   inputs.src-nimish-master.type  = "github";
   

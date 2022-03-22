@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-subnet-v1_0_0.flake = false;
-  inputs.src-subnet-v1_0_0.owner = "jiro4989";
   inputs.src-subnet-v1_0_0.ref   = "refs/tags/v1.0.0";
+  inputs.src-subnet-v1_0_0.owner = "jiro4989";
   inputs.src-subnet-v1_0_0.repo  = "subnet";
   inputs.src-subnet-v1_0_0.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

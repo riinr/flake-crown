@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-evmc-master.flake = false;
+  inputs.src-evmc-master.ref   = "refs/heads/master";
   inputs.src-evmc-master.owner = "status-im";
-  inputs.src-evmc-master.ref   = "master";
   inputs.src-evmc-master.repo  = "nim-evmc";
   inputs.src-evmc-master.type  = "github";
   

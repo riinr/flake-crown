@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-finalseg-master.flake = false;
-  inputs.src-finalseg-master.owner = "bung87";
   inputs.src-finalseg-master.ref   = "refs/heads/master";
+  inputs.src-finalseg-master.owner = "bung87";
   inputs.src-finalseg-master.repo  = "finalseg";
   inputs.src-finalseg-master.type  = "github";
   
   inputs."regex".owner = "nim-nix-pkgs";
   inputs."regex".ref   = "master";
   inputs."regex".repo  = "regex";
+  inputs."regex".dir   = "v0_19_0";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

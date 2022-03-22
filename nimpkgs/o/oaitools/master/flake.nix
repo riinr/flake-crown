@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-oaitools-master.flake = false;
+  inputs.src-oaitools-master.ref   = "refs/heads/master";
   inputs.src-oaitools-master.owner = "markpbaggett";
-  inputs.src-oaitools-master.ref   = "master";
   inputs.src-oaitools-master.repo  = "oaitools.nim";
   inputs.src-oaitools-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-drawim-0_1_2.flake = false;
+  inputs.src-drawim-0_1_2.ref   = "refs/tags/0.1.2";
   inputs.src-drawim-0_1_2.owner = "GabrielLasso";
-  inputs.src-drawim-0_1_2.ref   = "0_1_2";
   inputs.src-drawim-0_1_2.repo  = "drawim";
   inputs.src-drawim-0_1_2.type  = "github";
   

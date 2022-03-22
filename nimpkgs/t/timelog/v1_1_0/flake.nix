@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-timelog-v1_1_0.flake = false;
-  inputs.src-timelog-v1_1_0.owner = "Clonkk";
   inputs.src-timelog-v1_1_0.ref   = "refs/tags/v1.1.0";
+  inputs.src-timelog-v1_1_0.owner = "Clonkk";
   inputs.src-timelog-v1_1_0.repo  = "timelog";
   inputs.src-timelog-v1_1_0.type  = "github";
   

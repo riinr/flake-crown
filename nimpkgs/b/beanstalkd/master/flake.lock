@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1647920574,
+        "narHash": "sha256-D3ob5QykELhyNcTnISOkjEzLlgXltwON8Ucrz5cpiQI=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "bfb46a1f762002f07f9d81d93dacd544c6890623",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-beanstalkd-master": "src-beanstalkd-master"
+      }
+    },
+    "src-beanstalkd-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1430318682,
+        "narHash": "sha256-v/x6b+gqIJ0bWO3xjlGGmcKox1xUru5oACzkXfoG8js=",
+        "owner": "tormaroe",
+        "repo": "beanstalkd.nim",
+        "rev": "0cdf821a3f4f8ac0c6e1ddb99f7d01c4f795b20d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tormaroe",
+        "ref": "refs/heads/master",
+        "repo": "beanstalkd.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

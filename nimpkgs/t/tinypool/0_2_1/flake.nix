@@ -1,5 +1,5 @@
 {
-  description = ''A minimalistic connection pooling package'';
+  description = ''A minimalistic connection pooling package for sqlite'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-tinypool-0_2_1.flake = false;
-  inputs.src-tinypool-0_2_1.owner = "PhilippMDoerner";
   inputs.src-tinypool-0_2_1.ref   = "refs/tags/0.2.1";
+  inputs.src-tinypool-0_2_1.owner = "PhilippMDoerner";
   inputs.src-tinypool-0_2_1.repo  = "TinyPool";
   inputs.src-tinypool-0_2_1.type  = "github";
   

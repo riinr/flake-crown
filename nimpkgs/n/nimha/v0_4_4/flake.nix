@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimha-v0_4_4.flake = false;
+  inputs.src-nimha-v0_4_4.ref   = "refs/tags/v0.4.4";
   inputs.src-nimha-v0_4_4.owner = "ThomasTJdev";
-  inputs.src-nimha-v0_4_4.ref   = "v0_4_4";
   inputs.src-nimha-v0_4_4.repo  = "nim_homeassistant";
   inputs.src-nimha-v0_4_4.type  = "github";
   

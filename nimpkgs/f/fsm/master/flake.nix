@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-fsm-master.flake = false;
-  inputs.src-fsm-master.owner = "ba0f3";
   inputs.src-fsm-master.ref   = "refs/heads/master";
+  inputs.src-fsm-master.owner = "ba0f3";
   inputs.src-fsm-master.repo  = "fsm.nim";
   inputs.src-fsm-master.type  = "github";
   

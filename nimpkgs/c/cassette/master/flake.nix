@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-cassette-master.flake = false;
-  inputs.src-cassette-master.owner = "LemonBoy";
   inputs.src-cassette-master.ref   = "refs/heads/master";
+  inputs.src-cassette-master.owner = "LemonBoy";
   inputs.src-cassette-master.repo  = "cassette";
   inputs.src-cassette-master.type  = "github";
   

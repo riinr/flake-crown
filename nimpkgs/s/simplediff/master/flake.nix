@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-simplediff-master.flake = false;
-  inputs.src-simplediff-master.owner = "~reesmichael1";
   inputs.src-simplediff-master.ref   = "master";
+  inputs.src-simplediff-master.owner = "~reesmichael1";
   inputs.src-simplediff-master.repo  = "nim-simplediff";
   inputs.src-simplediff-master.type  = "sourcehut";
   

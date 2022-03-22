@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-autonim-main.flake = false;
+  inputs.src-autonim-main.ref   = "refs/heads/main";
   inputs.src-autonim-main.owner = "Guevara-chan";
-  inputs.src-autonim-main.ref   = "main";
   inputs.src-autonim-main.repo  = "AutoNim";
   inputs.src-autonim-main.type  = "github";
   

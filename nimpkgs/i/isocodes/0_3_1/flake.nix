@@ -1,5 +1,5 @@
 {
-  description = ''ISO codes for Nim.'';
+  description = ''ISO codes for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-isocodes-0_3_1.flake = false;
-  inputs.src-isocodes-0_3_1.owner = "kraptor";
   inputs.src-isocodes-0_3_1.ref   = "refs/tags/0.3.1";
+  inputs.src-isocodes-0_3_1.owner = "kraptor";
   inputs.src-isocodes-0_3_1.repo  = "isocodes";
   inputs.src-isocodes-0_3_1.type  = "github";
   
   inputs."jsony".owner = "nim-nix-pkgs";
   inputs."jsony".ref   = "master";
   inputs."jsony".repo  = "jsony";
+  inputs."jsony".dir   = "1_1_3";
   inputs."jsony".type  = "github";
   inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

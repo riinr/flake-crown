@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."syndicate-trunk".dir   = "trunk";
+  inputs."syndicate-trunk".owner = "nim-nix-pkgs";
+  inputs."syndicate-trunk".ref   = "master";
+  inputs."syndicate-trunk".repo  = "syndicate";
+  inputs."syndicate-trunk".type  = "github";
+  inputs."syndicate-trunk".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."syndicate-trunk".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."syndicate-1_0_0".dir   = "1_0_0";
   inputs."syndicate-1_0_0".owner = "nim-nix-pkgs";
   inputs."syndicate-1_0_0".ref   = "master";

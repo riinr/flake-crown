@@ -1,5 +1,5 @@
 {
-  description = ''TagLib Audio Meta-Data Library wrapper'';
+  description = ''Thin wrapper over https://taglib.github.io/'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-taglib-master.flake = false;
-  inputs.src-taglib-master.owner = "alex-laskin";
   inputs.src-taglib-master.ref   = "refs/heads/master";
+  inputs.src-taglib-master.owner = "alex-laskin";
   inputs.src-taglib-master.repo  = "nim-taglib";
   inputs.src-taglib-master.type  = "github";
   

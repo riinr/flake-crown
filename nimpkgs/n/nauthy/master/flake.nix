@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nauthy-master.flake = false;
+  inputs.src-nauthy-master.ref   = "refs/heads/master";
   inputs.src-nauthy-master.owner = "lzoz";
-  inputs.src-nauthy-master.ref   = "master";
   inputs.src-nauthy-master.repo  = "nauthy";
   inputs.src-nauthy-master.type  = "github";
   

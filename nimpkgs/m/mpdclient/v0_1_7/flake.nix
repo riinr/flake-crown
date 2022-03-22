@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mpdclient-v0_1_7.flake = false;
+  inputs.src-mpdclient-v0_1_7.ref   = "refs/tags/v0.1.7";
   inputs.src-mpdclient-v0_1_7.owner = "SolitudeSF";
-  inputs.src-mpdclient-v0_1_7.ref   = "v0_1_7";
   inputs.src-mpdclient-v0_1_7.repo  = "mpdclient";
   inputs.src-mpdclient-v0_1_7.type  = "github";
   

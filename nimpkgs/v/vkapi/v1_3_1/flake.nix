@@ -1,5 +1,5 @@
 {
-  description = ''A wrapper for the vk.com API (russian social network)'';
+  description = ''Wrapper for vk.com API'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-vkapi-v1_3_1.flake = false;
-  inputs.src-vkapi-v1_3_1.owner = "Yardanico";
   inputs.src-vkapi-v1_3_1.ref   = "refs/tags/v1.3.1";
+  inputs.src-vkapi-v1_3_1.owner = "Yardanico";
   inputs.src-vkapi-v1_3_1.repo  = "nimvkapi";
   inputs.src-vkapi-v1_3_1.type  = "github";
   

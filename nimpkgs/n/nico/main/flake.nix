@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nico-main.flake = false;
+  inputs.src-nico-main.ref   = "refs/heads/main";
   inputs.src-nico-main.owner = "ftsf";
-  inputs.src-nico-main.ref   = "main";
   inputs.src-nico-main.repo  = "nico";
   inputs.src-nico-main.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Simple window maker.'';
+  description = ''Nim Simple Window Maker'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-siwin-v0_3.flake = false;
-  inputs.src-siwin-v0_3.owner = "levovix0";
   inputs.src-siwin-v0_3.ref   = "refs/tags/v0.3";
+  inputs.src-siwin-v0_3.owner = "levovix0";
   inputs.src-siwin-v0_3.repo  = "siwin";
   inputs.src-siwin-v0_3.type  = "github";
   
   inputs."with".owner = "nim-nix-pkgs";
   inputs."with".ref   = "master";
   inputs."with".repo  = "with";
+  inputs."with".dir   = "0_4_0";
   inputs."with".type  = "github";
   inputs."with".inputs.nixpkgs.follows = "nixpkgs";
   inputs."with".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."x11".owner = "nim-nix-pkgs";
   inputs."x11".ref   = "master";
   inputs."x11".repo  = "x11";
+  inputs."x11".dir   = "";
   inputs."x11".type  = "github";
   inputs."x11".inputs.nixpkgs.follows = "nixpkgs";
   inputs."x11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

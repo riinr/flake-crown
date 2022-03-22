@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-gemini-master.flake = false;
+  inputs.src-gemini-master.ref   = "refs/heads/master";
   inputs.src-gemini-master.owner = "benob";
-  inputs.src-gemini-master.ref   = "master";
   inputs.src-gemini-master.repo  = "gemini";
   inputs.src-gemini-master.type  = "github";
   

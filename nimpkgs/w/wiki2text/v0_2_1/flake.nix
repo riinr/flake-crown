@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-wiki2text-v0_2_1.flake = false;
-  inputs.src-wiki2text-v0_2_1.owner = "rspeer";
   inputs.src-wiki2text-v0_2_1.ref   = "refs/tags/v0.2.1";
+  inputs.src-wiki2text-v0_2_1.owner = "rspeer";
   inputs.src-wiki2text-v0_2_1.repo  = "wiki2text";
   inputs.src-wiki2text-v0_2_1.type  = "github";
   

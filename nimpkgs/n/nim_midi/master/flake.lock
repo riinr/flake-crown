@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1647920574,
+        "narHash": "sha256-D3ob5QykELhyNcTnISOkjEzLlgXltwON8Ucrz5cpiQI=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "bfb46a1f762002f07f9d81d93dacd544c6890623",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-nim_midi-master": "src-nim_midi-master"
+      }
+    },
+    "src-nim_midi-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1631606593,
+        "narHash": "sha256-LbtVDNJajEshrMlTSWjAfgXltUz4cYA8eNMUNMRG7YA=",
+        "owner": "jerous86",
+        "repo": "nim_midi",
+        "rev": "4ed94f045f115207116169094de0acf5902f80c8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jerous86",
+        "ref": "refs/heads/master",
+        "repo": "nim_midi",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

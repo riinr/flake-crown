@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimbigwig-master.flake = false;
+  inputs.src-nimbigwig-master.ref   = "refs/heads/master";
   inputs.src-nimbigwig-master.owner = "genotrance";
-  inputs.src-nimbigwig-master.ref   = "master";
   inputs.src-nimbigwig-master.repo  = "nimbigwig";
   inputs.src-nimbigwig-master.type  = "github";
   

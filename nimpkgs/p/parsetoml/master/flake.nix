@@ -1,5 +1,5 @@
 {
-  description = ''Library for parsing TOML files.'';
+  description = ''Toml parser library for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-parsetoml-master.flake = false;
-  inputs.src-parsetoml-master.owner = "NimParsers";
   inputs.src-parsetoml-master.ref   = "refs/heads/master";
+  inputs.src-parsetoml-master.owner = "NimParsers";
   inputs.src-parsetoml-master.repo  = "parsetoml";
   inputs.src-parsetoml-master.type  = "github";
   

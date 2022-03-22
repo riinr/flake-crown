@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-values-master.flake = false;
-  inputs.src-values-master.owner = "nim-appkit";
   inputs.src-values-master.ref   = "refs/heads/master";
+  inputs.src-values-master.owner = "nim-appkit";
   inputs.src-values-master.repo  = "values";
   inputs.src-values-master.type  = "github";
   

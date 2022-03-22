@@ -1,5 +1,5 @@
 {
-  description = ''Library for detecting the format of an video file'';
+  description = ''Library for determining the format of a video file'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-vidhdr-master.flake = false;
-  inputs.src-vidhdr-master.owner = "achesak";
   inputs.src-vidhdr-master.ref   = "refs/heads/master";
+  inputs.src-vidhdr-master.owner = "achesak";
   inputs.src-vidhdr-master.repo  = "nim-vidhdr";
   inputs.src-vidhdr-master.type  = "github";
   

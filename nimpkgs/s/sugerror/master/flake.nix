@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sugerror-master.flake = false;
-  inputs.src-sugerror-master.owner = "quelklef";
   inputs.src-sugerror-master.ref   = "refs/heads/master";
+  inputs.src-sugerror-master.owner = "quelklef";
   inputs.src-sugerror-master.repo  = "nim-sugerror";
   inputs.src-sugerror-master.type  = "github";
   

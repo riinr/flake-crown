@@ -1,5 +1,5 @@
 {
-  description = ''A game library'';
+  description = ''A game library for nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-paranim-0_4_0.flake = false;
-  inputs.src-paranim-0_4_0.owner = "paranim";
   inputs.src-paranim-0_4_0.ref   = "refs/tags/0.4.0";
+  inputs.src-paranim-0_4_0.owner = "paranim";
   inputs.src-paranim-0_4_0.repo  = "paranim";
   inputs.src-paranim-0_4_0.type  = "github";
   
   inputs."nimgl".owner = "nim-nix-pkgs";
   inputs."nimgl".ref   = "master";
   inputs."nimgl".repo  = "nimgl";
+  inputs."nimgl".dir   = "1_3_2";
   inputs."nimgl".type  = "github";
   inputs."nimgl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimgl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."glm".owner = "nim-nix-pkgs";
   inputs."glm".ref   = "master";
   inputs."glm".repo  = "glm";
+  inputs."glm".dir   = "v1_1_1";
   inputs."glm".type  = "github";
   inputs."glm".inputs.nixpkgs.follows = "nixpkgs";
   inputs."glm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -8,9 +8,9 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nesm-v0_4_6.flake = false;
+  inputs.src-nesm-v0_4_6.ref   = "refs/tags/v0.4.6";
   inputs.src-nesm-v0_4_6.owner = "xomachine";
-  inputs.src-nesm-v0_4_6.ref   = "v0_4_6";
-  inputs.src-nesm-v0_4_6.repo  = "NESM.git";
+  inputs.src-nesm-v0_4_6.repo  = "NESM";
   inputs.src-nesm-v0_4_6.type  = "gitlab";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

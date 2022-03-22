@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-flower-main.flake = false;
-  inputs.src-flower-main.owner = "dizzyliam";
   inputs.src-flower-main.ref   = "refs/heads/main";
+  inputs.src-flower-main.owner = "dizzyliam";
   inputs.src-flower-main.repo  = "flower";
   inputs.src-flower-main.type  = "github";
   

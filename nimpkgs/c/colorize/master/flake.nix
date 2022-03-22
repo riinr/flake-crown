@@ -1,5 +1,5 @@
 {
-  description = ''A simple and lightweight terminal coloring library.'';
+  description = ''Simple lightweight package to colorize your terminal output'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-colorize-master.flake = false;
-  inputs.src-colorize-master.owner = "molnarmark";
   inputs.src-colorize-master.ref   = "refs/heads/master";
+  inputs.src-colorize-master.owner = "molnarmark";
   inputs.src-colorize-master.repo  = "colorize";
   inputs.src-colorize-master.type  = "github";
   

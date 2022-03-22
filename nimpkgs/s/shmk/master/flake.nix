@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-shmk-master.flake = false;
-  inputs.src-shmk-master.owner = "thisNimAgo";
   inputs.src-shmk-master.ref   = "refs/heads/master";
+  inputs.src-shmk-master.owner = "thisNimAgo";
   inputs.src-shmk-master.repo  = "mk";
   inputs.src-shmk-master.type  = "gitlab";
   

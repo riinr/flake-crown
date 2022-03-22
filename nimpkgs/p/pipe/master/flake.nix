@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pipe-master.flake = false;
-  inputs.src-pipe-master.owner = "CosmicToast";
   inputs.src-pipe-master.ref   = "refs/heads/master";
+  inputs.src-pipe-master.owner = "CosmicToast";
   inputs.src-pipe-master.repo  = "pipe";
   inputs.src-pipe-master.type  = "github";
   

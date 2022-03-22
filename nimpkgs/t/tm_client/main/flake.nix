@@ -1,5 +1,5 @@
 {
-  description = ''TwineMedia API client library for Nim'';
+  description = ''Asychronous TwineMedia API client library for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-tm_client-main.flake = false;
-  inputs.src-tm_client-main.owner = "termermc";
   inputs.src-tm_client-main.ref   = "refs/heads/main";
+  inputs.src-tm_client-main.owner = "termermc";
   inputs.src-tm_client-main.repo  = "nim-tm-client";
   inputs.src-tm_client-main.type  = "github";
   

@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-tam-v0_1_4.flake = false;
-  inputs.src-tam-v0_1_4.owner = "SolitudeSF";
   inputs.src-tam-v0_1_4.ref   = "refs/tags/v0.1.4";
+  inputs.src-tam-v0_1_4.owner = "SolitudeSF";
   inputs.src-tam-v0_1_4.repo  = "tam";
   inputs.src-tam-v0_1_4.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."nimquery".owner = "nim-nix-pkgs";
   inputs."nimquery".ref   = "master";
   inputs."nimquery".repo  = "nimquery";
+  inputs."nimquery".dir   = "v1_2_3";
   inputs."nimquery".type  = "github";
   inputs."nimquery".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimquery".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."tiny_sqlite".owner = "nim-nix-pkgs";
   inputs."tiny_sqlite".ref   = "master";
   inputs."tiny_sqlite".repo  = "tiny_sqlite";
+  inputs."tiny_sqlite".dir   = "";
   inputs."tiny_sqlite".type  = "github";
   inputs."tiny_sqlite".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tiny_sqlite".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

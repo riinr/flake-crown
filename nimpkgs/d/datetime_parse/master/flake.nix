@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-datetime_parse-master.flake = false;
+  inputs.src-datetime_parse-master.ref   = "refs/heads/master";
   inputs.src-datetime_parse-master.owner = "bung87";
-  inputs.src-datetime_parse-master.ref   = "master";
   inputs.src-datetime_parse-master.repo  = "datetime_parse";
   inputs.src-datetime_parse-master.type  = "github";
   

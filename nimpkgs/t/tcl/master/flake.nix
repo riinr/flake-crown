@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-tcl-master.flake = false;
-  inputs.src-tcl-master.owner = "nim-lang";
   inputs.src-tcl-master.ref   = "refs/heads/master";
+  inputs.src-tcl-master.owner = "nim-lang";
   inputs.src-tcl-master.repo  = "tcl";
   inputs.src-tcl-master.type  = "github";
   

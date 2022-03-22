@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-holst-0_1_3.flake = false;
+  inputs.src-holst-0_1_3.ref   = "refs/tags/0.1.3";
   inputs.src-holst-0_1_3.owner = "ruivieira";
-  inputs.src-holst-0_1_3.ref   = "0_1_3";
   inputs.src-holst-0_1_3.repo  = "nim-holst";
   inputs.src-holst-0_1_3.type  = "github";
   

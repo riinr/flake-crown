@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-tf2plug-master.flake = false;
-  inputs.src-tf2plug-master.owner = "waylon531";
   inputs.src-tf2plug-master.ref   = "refs/heads/master";
+  inputs.src-tf2plug-master.owner = "waylon531";
   inputs.src-tf2plug-master.repo  = "tf2plug";
   inputs.src-tf2plug-master.type  = "gitlab";
   
   inputs."docopt".owner = "nim-nix-pkgs";
   inputs."docopt".ref   = "master";
   inputs."docopt".repo  = "docopt";
+  inputs."docopt".dir   = "v0_6_8";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

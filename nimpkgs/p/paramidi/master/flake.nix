@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-paramidi-master.flake = false;
-  inputs.src-paramidi-master.owner = "paranim";
   inputs.src-paramidi-master.ref   = "refs/heads/master";
+  inputs.src-paramidi-master.owner = "paranim";
   inputs.src-paramidi-master.repo  = "paramidi";
   inputs.src-paramidi-master.type  = "github";
   

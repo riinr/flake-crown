@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pych-master.flake = false;
-  inputs.src-pych-master.owner = "rburmorrison";
   inputs.src-pych-master.ref   = "refs/heads/master";
+  inputs.src-pych-master.owner = "rburmorrison";
   inputs.src-pych-master.repo  = "pych";
   inputs.src-pych-master.type  = "github";
   

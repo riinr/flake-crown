@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-arturo-v0_9_7.flake = false;
+  inputs.src-arturo-v0_9_7.ref   = "refs/tags/v0.9.7";
   inputs.src-arturo-v0_9_7.owner = "arturo-lang";
-  inputs.src-arturo-v0_9_7.ref   = "v0_9_7";
   inputs.src-arturo-v0_9_7.repo  = "arturo";
   inputs.src-arturo-v0_9_7.type  = "github";
   

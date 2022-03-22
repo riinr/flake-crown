@@ -1,5 +1,5 @@
 {
-  description = ''URL and URI parsing for C and JS backend.'';
+  description = ''URI and URL parsing for Nim for C/JS backends. Similar api to browsers's `window.location`.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-urlly-master.flake = false;
-  inputs.src-urlly-master.owner = "treeform";
   inputs.src-urlly-master.ref   = "refs/heads/master";
+  inputs.src-urlly-master.owner = "treeform";
   inputs.src-urlly-master.repo  = "urlly";
   inputs.src-urlly-master.type  = "github";
   

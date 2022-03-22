@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-gnutls-master.flake = false;
+  inputs.src-gnutls-master.ref   = "refs/heads/master";
   inputs.src-gnutls-master.owner = "FedericoCeratto";
-  inputs.src-gnutls-master.ref   = "master";
   inputs.src-gnutls-master.repo  = "nim-gnutls";
   inputs.src-gnutls-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''High performance http server (https://tools.ietf.org/html/rfc2616) with persistent connection for nim language.'';
+  description = ''High performance http server (https://tools.ietf.org/html/rfc2616) with persistent connection for nim language'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-zfblast-v0_2_2.flake = false;
-  inputs.src-zfblast-v0_2_2.owner = "zendbit";
   inputs.src-zfblast-v0_2_2.ref   = "refs/tags/v0.2.2";
+  inputs.src-zfblast-v0_2_2.owner = "zendbit";
   inputs.src-zfblast-v0_2_2.repo  = "nim.zfblast";
   inputs.src-zfblast-v0_2_2.type  = "github";
   
   inputs."uri3".owner = "nim-nix-pkgs";
   inputs."uri3".ref   = "master";
   inputs."uri3".repo  = "uri3";
+  inputs."uri3".dir   = "v0_1_4";
   inputs."uri3".type  = "github";
   inputs."uri3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uri3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."sha1".owner = "nim-nix-pkgs";
   inputs."sha1".ref   = "master";
   inputs."sha1".repo  = "sha1";
+  inputs."sha1".dir   = "";
   inputs."sha1".type  = "github";
   inputs."sha1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sha1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-rodster-main.flake = false;
+  inputs.src-rodster-main.ref   = "refs/heads/main";
   inputs.src-rodster-main.owner = "j-a-s-d";
-  inputs.src-rodster-main.ref   = "main";
   inputs.src-rodster-main.repo  = "rodster";
   inputs.src-rodster-main.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''A thin SQLite wrapper with proper type safety'';
+  description = ''A thin SQLite wrapper'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-tiny_sqlite-v0_1_2.flake = false;
-  inputs.src-tiny_sqlite-v0_1_2.owner = "GULPF";
   inputs.src-tiny_sqlite-v0_1_2.ref   = "refs/tags/v0.1.2";
+  inputs.src-tiny_sqlite-v0_1_2.owner = "GULPF";
   inputs.src-tiny_sqlite-v0_1_2.repo  = "tiny_sqlite";
   inputs.src-tiny_sqlite-v0_1_2.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Library for parsing, stringifying, reading, and writing CSV (comma separated value) files'';
+  description = ''procedures for reading, writing, parsing, and stringifying CSV (comma separated value) files'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-csv-master.flake = false;
-  inputs.src-csv-master.owner = "achesak";
   inputs.src-csv-master.ref   = "refs/heads/master";
+  inputs.src-csv-master.owner = "achesak";
   inputs.src-csv-master.repo  = "nim-csv";
   inputs.src-csv-master.type  = "github";
   

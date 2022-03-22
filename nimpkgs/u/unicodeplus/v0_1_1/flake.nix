@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-unicodeplus-v0_1_1.flake = false;
-  inputs.src-unicodeplus-v0_1_1.owner = "nitely";
   inputs.src-unicodeplus-v0_1_1.ref   = "refs/tags/v0.1.1";
+  inputs.src-unicodeplus-v0_1_1.owner = "nitely";
   inputs.src-unicodeplus-v0_1_1.repo  = "nim-unicodeplus";
   inputs.src-unicodeplus-v0_1_1.type  = "github";
   
   inputs."unicodedb".owner = "nim-nix-pkgs";
   inputs."unicodedb".ref   = "master";
   inputs."unicodedb".repo  = "unicodedb";
+  inputs."unicodedb".dir   = "v0_2_5";
   inputs."unicodedb".type  = "github";
   inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

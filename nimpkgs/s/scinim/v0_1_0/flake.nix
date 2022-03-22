@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-scinim-v0_1_0.flake = false;
-  inputs.src-scinim-v0_1_0.owner = "SciNim";
   inputs.src-scinim-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-scinim-v0_1_0.owner = "SciNim";
   inputs.src-scinim-v0_1_0.repo  = "scinim";
   inputs.src-scinim-v0_1_0.type  = "github";
   
   inputs."arraymancer".owner = "nim-nix-pkgs";
   inputs."arraymancer".ref   = "master";
   inputs."arraymancer".repo  = "arraymancer";
+  inputs."arraymancer".dir   = "v0_7_11";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."polynumeric".owner = "nim-nix-pkgs";
   inputs."polynumeric".ref   = "master";
   inputs."polynumeric".repo  = "polynumeric";
+  inputs."polynumeric".dir   = "v0_2_1";
   inputs."polynumeric".type  = "github";
   inputs."polynumeric".inputs.nixpkgs.follows = "nixpkgs";
   inputs."polynumeric".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

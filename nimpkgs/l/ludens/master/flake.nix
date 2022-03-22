@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ludens-master.flake = false;
-  inputs.src-ludens-master.owner = "rnentjes";
   inputs.src-ludens-master.ref   = "refs/heads/master";
+  inputs.src-ludens-master.owner = "rnentjes";
   inputs.src-ludens-master.repo  = "nim-ludens";
   inputs.src-ludens-master.type  = "github";
   

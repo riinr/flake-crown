@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimodpi-master.flake = false;
+  inputs.src-nimodpi-master.ref   = "refs/heads/master";
   inputs.src-nimodpi-master.owner = "mikra01";
-  inputs.src-nimodpi-master.ref   = "master";
   inputs.src-nimodpi-master.repo  = "nimodpi";
   inputs.src-nimodpi-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Windows resource file generator'';
+  description = ''Windows resource generator'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-winres-v0_1_0.flake = false;
-  inputs.src-winres-v0_1_0.owner = "codehz";
   inputs.src-winres-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-winres-v0_1_0.owner = "codehz";
   inputs.src-winres-v0_1_0.repo  = "nim-winres";
   inputs.src-winres-v0_1_0.type  = "github";
   

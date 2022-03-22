@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nim_telegram_bot-0_2_5.flake = false;
+  inputs.src-nim_telegram_bot-0_2_5.ref   = "refs/tags/0.2.5";
   inputs.src-nim_telegram_bot-0_2_5.owner = "juancarlospaco";
-  inputs.src-nim_telegram_bot-0_2_5.ref   = "0_2_5";
   inputs.src-nim_telegram_bot-0_2_5.repo  = "nim-telegram-bot";
   inputs.src-nim_telegram_bot-0_2_5.type  = "github";
   

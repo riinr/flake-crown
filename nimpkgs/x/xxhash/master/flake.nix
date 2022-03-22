@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-xxhash-master.flake = false;
-  inputs.src-xxhash-master.owner = "OpenSystemsLab";
   inputs.src-xxhash-master.ref   = "refs/heads/master";
+  inputs.src-xxhash-master.owner = "OpenSystemsLab";
   inputs.src-xxhash-master.repo  = "xxhash.nim";
   inputs.src-xxhash-master.type  = "github";
   

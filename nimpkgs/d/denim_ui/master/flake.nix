@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-denim_ui-master.flake = false;
+  inputs.src-denim_ui-master.ref   = "refs/heads/master";
   inputs.src-denim_ui-master.owner = "nortero-code";
-  inputs.src-denim_ui-master.ref   = "master";
   inputs.src-denim_ui-master.repo  = "denim-ui";
   inputs.src-denim_ui-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-asyncanything-main.flake = false;
+  inputs.src-asyncanything-main.ref   = "refs/heads/main";
   inputs.src-asyncanything-main.owner = "hamidb80";
-  inputs.src-asyncanything-main.ref   = "main";
   inputs.src-asyncanything-main.repo  = "asyncanything";
   inputs.src-asyncanything-main.type  = "github";
   

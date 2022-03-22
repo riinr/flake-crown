@@ -1,5 +1,5 @@
 {
-  description = ''A symbolic library written purely in Nim with the ability to compile expressions into efficient functions.'';
+  description = ''A symbolic algebra library written in Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-symbolicnim-master.flake = false;
-  inputs.src-symbolicnim-master.owner = "HugoGranstrom";
   inputs.src-symbolicnim-master.ref   = "refs/heads/master";
+  inputs.src-symbolicnim-master.owner = "HugoGranstrom";
   inputs.src-symbolicnim-master.repo  = "symbolicnim";
   inputs.src-symbolicnim-master.type  = "github";
   
   inputs."arraymancer".owner = "nim-nix-pkgs";
   inputs."arraymancer".ref   = "master";
   inputs."arraymancer".repo  = "arraymancer";
+  inputs."arraymancer".dir   = "v0_7_11";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."terminaltables".owner = "nim-nix-pkgs";
   inputs."terminaltables".ref   = "master";
   inputs."terminaltables".repo  = "terminaltables";
+  inputs."terminaltables".dir   = "";
   inputs."terminaltables".type  = "github";
   inputs."terminaltables".inputs.nixpkgs.follows = "nixpkgs";
   inputs."terminaltables".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

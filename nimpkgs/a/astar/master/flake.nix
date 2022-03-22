@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-astar-master.flake = false;
+  inputs.src-astar-master.ref   = "refs/heads/master";
   inputs.src-astar-master.owner = "Nycto";
-  inputs.src-astar-master.ref   = "master";
   inputs.src-astar-master.repo  = "AStarNim";
   inputs.src-astar-master.type  = "github";
   

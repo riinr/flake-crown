@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-calibre-master.flake = false;
-  inputs.src-calibre-master.owner = "juancarlospaco";
   inputs.src-calibre-master.ref   = "refs/heads/master";
+  inputs.src-calibre-master.owner = "juancarlospaco";
   inputs.src-calibre-master.repo  = "nim-calibre";
   inputs.src-calibre-master.type  = "github";
   

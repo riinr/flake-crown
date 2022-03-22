@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-catnip-main.flake = false;
-  inputs.src-catnip-main.owner = "RSDuck";
   inputs.src-catnip-main.ref   = "refs/heads/main";
+  inputs.src-catnip-main.owner = "RSDuck";
   inputs.src-catnip-main.repo  = "catnip";
   inputs.src-catnip-main.type  = "github";
   

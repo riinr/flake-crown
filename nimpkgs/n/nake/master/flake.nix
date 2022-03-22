@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nake-master.flake = false;
+  inputs.src-nake-master.ref   = "refs/heads/master";
   inputs.src-nake-master.owner = "fowlmouth";
-  inputs.src-nake-master.ref   = "master";
   inputs.src-nake-master.repo  = "nake";
   inputs.src-nake-master.type  = "github";
   

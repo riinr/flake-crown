@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-neverwinter-1_2_8.flake = false;
+  inputs.src-neverwinter-1_2_8.ref   = "refs/tags/1.2.8";
   inputs.src-neverwinter-1_2_8.owner = "niv";
-  inputs.src-neverwinter-1_2_8.ref   = "1_2_8";
   inputs.src-neverwinter-1_2_8.repo  = "neverwinter.nim";
   inputs.src-neverwinter-1_2_8.type  = "github";
   

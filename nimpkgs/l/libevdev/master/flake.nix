@@ -1,5 +1,5 @@
 {
-  description = ''Wrapper for libevdev, Linux input device processing library'';
+  description = ''Wrapper for <linux/fb.h> framebuffer ioctls'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-libevdev-master.flake = false;
-  inputs.src-libevdev-master.owner = "luked99";
   inputs.src-libevdev-master.ref   = "refs/heads/master";
+  inputs.src-libevdev-master.owner = "luked99";
   inputs.src-libevdev-master.repo  = "libevdev.nim";
   inputs.src-libevdev-master.type  = "github";
   

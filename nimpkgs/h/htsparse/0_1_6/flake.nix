@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-htsparse-0_1_6.flake = false;
+  inputs.src-htsparse-0_1_6.ref   = "refs/tags/0.1.6";
   inputs.src-htsparse-0_1_6.owner = "haxscramper";
-  inputs.src-htsparse-0_1_6.ref   = "0_1_6";
   inputs.src-htsparse-0_1_6.repo  = "htsparse";
   inputs.src-htsparse-0_1_6.type  = "github";
   

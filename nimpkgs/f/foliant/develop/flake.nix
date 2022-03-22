@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-foliant-develop.flake = false;
-  inputs.src-foliant-develop.owner = "foliant-docs";
   inputs.src-foliant-develop.ref   = "refs/heads/develop";
+  inputs.src-foliant-develop.owner = "foliant-docs";
   inputs.src-foliant-develop.repo  = "foliant-nim";
   inputs.src-foliant-develop.type  = "github";
   
   inputs."docopt".owner = "nim-nix-pkgs";
   inputs."docopt".ref   = "master";
   inputs."docopt".repo  = "docopt";
+  inputs."docopt".dir   = "";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."yaml".owner = "nim-nix-pkgs";
   inputs."yaml".ref   = "master";
   inputs."yaml".repo  = "yaml";
+  inputs."yaml".dir   = "v0_16_0";
   inputs."yaml".type  = "github";
   inputs."yaml".inputs.nixpkgs.follows = "nixpkgs";
   inputs."yaml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

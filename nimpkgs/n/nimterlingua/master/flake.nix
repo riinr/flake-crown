@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimterlingua-master.flake = false;
+  inputs.src-nimterlingua-master.ref   = "refs/heads/master";
   inputs.src-nimterlingua-master.owner = "juancarlospaco";
-  inputs.src-nimterlingua-master.ref   = "master";
   inputs.src-nimterlingua-master.repo  = "nim-internimgua";
   inputs.src-nimterlingua-master.type  = "github";
   

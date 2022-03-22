@@ -1,5 +1,5 @@
 {
-  description = ''Everything you want to do with colors.'';
+  description = ''Everything you want to do with colors'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-chroma-master.flake = false;
-  inputs.src-chroma-master.owner = "treeform";
   inputs.src-chroma-master.ref   = "refs/heads/master";
+  inputs.src-chroma-master.owner = "treeform";
   inputs.src-chroma-master.repo  = "chroma";
   inputs.src-chroma-master.type  = "github";
   

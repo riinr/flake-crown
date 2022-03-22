@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mui-master.flake = false;
+  inputs.src-mui-master.ref   = "refs/heads/master";
   inputs.src-mui-master.owner = "angluca";
-  inputs.src-mui-master.ref   = "master";
   inputs.src-mui-master.repo  = "mui";
   inputs.src-mui-master.type  = "github";
   

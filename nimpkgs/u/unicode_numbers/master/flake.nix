@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-unicode_numbers-master.flake = false;
-  inputs.src-unicode_numbers-master.owner = "Aearnus";
   inputs.src-unicode_numbers-master.ref   = "refs/heads/master";
+  inputs.src-unicode_numbers-master.owner = "Aearnus";
   inputs.src-unicode_numbers-master.repo  = "unicode_numbers";
   inputs.src-unicode_numbers-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Sorted Tables for Nim, based on B-Trees'';
+  description = ''Sorted Tables based on B-Trees'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sorta-master.flake = false;
-  inputs.src-sorta-master.owner = "narimiran";
   inputs.src-sorta-master.ref   = "refs/heads/master";
+  inputs.src-sorta-master.owner = "narimiran";
   inputs.src-sorta-master.repo  = "sorta";
   inputs.src-sorta-master.type  = "github";
   

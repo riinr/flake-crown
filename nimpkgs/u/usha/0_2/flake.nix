@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-usha-0_2.flake = false;
-  inputs.src-usha-0_2.owner = "subsetpark";
   inputs.src-usha-0_2.ref   = "refs/tags/0.2";
+  inputs.src-usha-0_2.owner = "subsetpark";
   inputs.src-usha-0_2.repo  = "untitled-shell-history-application";
   inputs.src-usha-0_2.type  = "github";
   
   inputs."docopt".owner = "nim-nix-pkgs";
   inputs."docopt".ref   = "master";
   inputs."docopt".repo  = "docopt";
+  inputs."docopt".dir   = "v0_6_8";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

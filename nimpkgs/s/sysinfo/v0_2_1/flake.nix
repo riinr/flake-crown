@@ -1,5 +1,5 @@
 {
-  description = ''Cross platform system information.'';
+  description = ''System info, CPU, OS, Memory'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sysinfo-v0_2_1.flake = false;
-  inputs.src-sysinfo-v0_2_1.owner = "treeform";
   inputs.src-sysinfo-v0_2_1.ref   = "refs/tags/v0.2.1";
+  inputs.src-sysinfo-v0_2_1.owner = "treeform";
   inputs.src-sysinfo-v0_2_1.repo  = "sysinfo";
   inputs.src-sysinfo-v0_2_1.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-variantsugar-master.flake = false;
-  inputs.src-variantsugar-master.owner = "metagn";
   inputs.src-variantsugar-master.ref   = "refs/heads/master";
+  inputs.src-variantsugar-master.owner = "metagn";
   inputs.src-variantsugar-master.repo  = "variantsugar";
   inputs.src-variantsugar-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-suru-v0_3_0.flake = false;
-  inputs.src-suru-v0_3_0.owner = "de-odex";
   inputs.src-suru-v0_3_0.ref   = "refs/tags/v0.3.0";
+  inputs.src-suru-v0_3_0.owner = "de-odex";
   inputs.src-suru-v0_3_0.repo  = "suru";
   inputs.src-suru-v0_3_0.type  = "github";
   

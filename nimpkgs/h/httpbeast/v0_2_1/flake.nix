@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-httpbeast-v0_2_1.flake = false;
+  inputs.src-httpbeast-v0_2_1.ref   = "refs/tags/v0.2.1";
   inputs.src-httpbeast-v0_2_1.owner = "dom96";
-  inputs.src-httpbeast-v0_2_1.ref   = "v0_2_1";
   inputs.src-httpbeast-v0_2_1.repo  = "httpbeast";
   inputs.src-httpbeast-v0_2_1.type  = "github";
   

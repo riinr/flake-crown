@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-aws_sdk-master.flake = false;
+  inputs.src-aws_sdk-master.ref   = "refs/heads/master";
   inputs.src-aws_sdk-master.owner = "aidansteele";
-  inputs.src-aws_sdk-master.ref   = "master";
   inputs.src-aws_sdk-master.repo  = "aws_sdk.nim";
   inputs.src-aws_sdk-master.type  = "github";
   

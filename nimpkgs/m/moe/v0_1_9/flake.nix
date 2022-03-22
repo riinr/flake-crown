@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-moe-v0_1_9.flake = false;
+  inputs.src-moe-v0_1_9.ref   = "refs/tags/v0.1.9";
   inputs.src-moe-v0_1_9.owner = "fox0430";
-  inputs.src-moe-v0_1_9.ref   = "v0_1_9";
   inputs.src-moe-v0_1_9.repo  = "moe";
   inputs.src-moe-v0_1_9.type  = "github";
   

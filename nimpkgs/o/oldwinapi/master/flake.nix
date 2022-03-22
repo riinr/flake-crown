@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-oldwinapi-master.flake = false;
+  inputs.src-oldwinapi-master.ref   = "refs/heads/master";
   inputs.src-oldwinapi-master.owner = "nim-lang";
-  inputs.src-oldwinapi-master.ref   = "master";
   inputs.src-oldwinapi-master.repo  = "oldwinapi";
   inputs.src-oldwinapi-master.type  = "github";
   

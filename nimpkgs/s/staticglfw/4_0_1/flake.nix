@@ -1,5 +1,5 @@
 {
-  description = ''Static GLFW for nim'';
+  description = ''Static GLFW 3 wrapper for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-staticglfw-4_0_1.flake = false;
-  inputs.src-staticglfw-4_0_1.owner = "treeform";
   inputs.src-staticglfw-4_0_1.ref   = "refs/tags/4.0.1";
+  inputs.src-staticglfw-4_0_1.owner = "treeform";
   inputs.src-staticglfw-4_0_1.repo  = "staticglfw";
   inputs.src-staticglfw-4_0_1.type  = "github";
   

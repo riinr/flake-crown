@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-zfplugs-v0_0_5.flake = false;
-  inputs.src-zfplugs-v0_0_5.owner = "zendbit";
   inputs.src-zfplugs-v0_0_5.ref   = "refs/tags/v0.0.5";
+  inputs.src-zfplugs-v0_0_5.owner = "zendbit";
   inputs.src-zfplugs-v0_0_5.repo  = "nim.zfplugs";
   inputs.src-zfplugs-v0_0_5.type  = "github";
   
   inputs."zfcore".owner = "nim-nix-pkgs";
   inputs."zfcore".ref   = "master";
   inputs."zfcore".repo  = "zfcore";
+  inputs."zfcore".dir   = "v1_1_7";
   inputs."zfcore".type  = "github";
   inputs."zfcore".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfcore".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

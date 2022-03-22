@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pls-master.flake = false;
-  inputs.src-pls-master.owner = "h3rald";
   inputs.src-pls-master.ref   = "refs/heads/master";
+  inputs.src-pls-master.owner = "h3rald";
   inputs.src-pls-master.repo  = "pls";
   inputs.src-pls-master.type  = "github";
   

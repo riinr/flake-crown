@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-libgraph-master.flake = false;
-  inputs.src-libgraph-master.owner = "Mnenmenth";
   inputs.src-libgraph-master.ref   = "refs/heads/master";
+  inputs.src-libgraph-master.owner = "Mnenmenth";
   inputs.src-libgraph-master.repo  = "libgraphnim";
   inputs.src-libgraph-master.type  = "github";
   

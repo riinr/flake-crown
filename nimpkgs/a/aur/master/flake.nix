@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-aur-master.flake = false;
+  inputs.src-aur-master.ref   = "refs/heads/master";
   inputs.src-aur-master.owner = "hnicke";
-  inputs.src-aur-master.ref   = "master";
   inputs.src-aur-master.repo  = "aur.nim";
   inputs.src-aur-master.type  = "github";
   

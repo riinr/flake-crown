@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimongo-master.flake = false;
+  inputs.src-nimongo-master.ref   = "refs/heads/master";
   inputs.src-nimongo-master.owner = "SSPkrolik";
-  inputs.src-nimongo-master.ref   = "master";
   inputs.src-nimongo-master.repo  = "nimongo";
   inputs.src-nimongo-master.type  = "github";
   

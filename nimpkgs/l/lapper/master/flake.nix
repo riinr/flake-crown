@@ -1,5 +1,5 @@
 {
-  description = ''fast interval overlaps'';
+  description = ''fast, simple interval overlaps with binary search'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-lapper-master.flake = false;
-  inputs.src-lapper-master.owner = "brentp";
   inputs.src-lapper-master.ref   = "refs/heads/master";
+  inputs.src-lapper-master.owner = "brentp";
   inputs.src-lapper-master.repo  = "nim-lapper";
   inputs.src-lapper-master.type  = "github";
   

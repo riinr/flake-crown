@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-dali-master.flake = false;
+  inputs.src-dali-master.ref   = "refs/heads/master";
   inputs.src-dali-master.owner = "akavel";
-  inputs.src-dali-master.ref   = "master";
   inputs.src-dali-master.repo  = "dali";
   inputs.src-dali-master.type  = "github";
   

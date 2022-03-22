@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-Kinto-0_2_2.flake = false;
+  inputs.src-Kinto-0_2_2.ref   = "refs/tags/0.2.2";
   inputs.src-Kinto-0_2_2.owner = "OpenSystemsLab";
-  inputs.src-Kinto-0_2_2.ref   = "0_2_2";
   inputs.src-Kinto-0_2_2.repo  = "kinto.nim";
   inputs.src-Kinto-0_2_2.type  = "github";
   

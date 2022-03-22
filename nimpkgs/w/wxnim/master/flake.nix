@@ -1,5 +1,5 @@
 {
-  description = ''Nim wrapper for wxWidgets. Also contains high-level genui macro'';
+  description = ''Nim wrapper for wxWidgets'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-wxnim-master.flake = false;
-  inputs.src-wxnim-master.owner = "PMunch";
   inputs.src-wxnim-master.ref   = "refs/heads/master";
+  inputs.src-wxnim-master.owner = "PMunch";
   inputs.src-wxnim-master.repo  = "wxnim";
   inputs.src-wxnim-master.type  = "github";
   

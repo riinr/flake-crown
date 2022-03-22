@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-feta-0_0_4.flake = false;
-  inputs.src-feta-0_0_4.owner = "FlorianRauls";
   inputs.src-feta-0_0_4.ref   = "refs/tags/0.0.4";
+  inputs.src-feta-0_0_4.owner = "FlorianRauls";
   inputs.src-feta-0_0_4.repo  = "office-DSL-thesis";
   inputs.src-feta-0_0_4.type  = "github";
   
   inputs."mime".owner = "nim-nix-pkgs";
   inputs."mime".ref   = "master";
   inputs."mime".repo  = "mime";
+  inputs."mime".dir   = "v0_0_3";
   inputs."mime".type  = "github";
   inputs."mime".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mime".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."jester".owner = "nim-nix-pkgs";
   inputs."jester".ref   = "master";
   inputs."jester".repo  = "jester";
+  inputs."jester".dir   = "v0_5_0";
   inputs."jester".type  = "github";
   inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

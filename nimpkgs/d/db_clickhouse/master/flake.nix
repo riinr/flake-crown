@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-db_clickhouse-master.flake = false;
+  inputs.src-db_clickhouse-master.ref   = "refs/heads/master";
   inputs.src-db_clickhouse-master.owner = "leonardoce";
-  inputs.src-db_clickhouse-master.ref   = "master";
   inputs.src-db_clickhouse-master.repo  = "nim-clickhouse";
   inputs.src-db_clickhouse-master.type  = "github";
   

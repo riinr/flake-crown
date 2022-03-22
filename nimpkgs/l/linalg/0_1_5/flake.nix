@@ -1,5 +1,5 @@
 {
-  description = ''Linear algebra for Nim'';
+  description = ''Linear Algebra for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-linalg-0_1_5.flake = false;
-  inputs.src-linalg-0_1_5.owner = "andreaferretti";
   inputs.src-linalg-0_1_5.ref   = "refs/tags/0.1.5";
+  inputs.src-linalg-0_1_5.owner = "andreaferretti";
   inputs.src-linalg-0_1_5.repo  = "linear-algebra";
   inputs.src-linalg-0_1_5.type  = "github";
   

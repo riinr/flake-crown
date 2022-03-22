@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimPDF-master.flake = false;
+  inputs.src-nimPDF-master.ref   = "refs/heads/master";
   inputs.src-nimPDF-master.owner = "jangko";
-  inputs.src-nimPDF-master.ref   = "master";
   inputs.src-nimPDF-master.repo  = "nimpdf";
   inputs.src-nimPDF-master.type  = "github";
   

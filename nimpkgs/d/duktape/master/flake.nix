@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-duktape-master.flake = false;
+  inputs.src-duktape-master.ref   = "refs/heads/master";
   inputs.src-duktape-master.owner = "manguluka";
-  inputs.src-duktape-master.ref   = "master";
   inputs.src-duktape-master.repo  = "duktape-nim";
   inputs.src-duktape-master.type  = "github";
   

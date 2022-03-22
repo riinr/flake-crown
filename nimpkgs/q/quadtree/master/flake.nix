@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-quadtree-master.flake = false;
+  inputs.src-quadtree-master.ref   = "refs/heads/master";
   inputs.src-quadtree-master.owner = "Nycto";
-  inputs.src-quadtree-master.ref   = "master";
   inputs.src-quadtree-master.repo  = "QuadtreeNim";
   inputs.src-quadtree-master.type  = "github";
   

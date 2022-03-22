@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-yahooweather-master.flake = false;
-  inputs.src-yahooweather-master.owner = "achesak";
   inputs.src-yahooweather-master.ref   = "refs/heads/master";
+  inputs.src-yahooweather-master.owner = "achesak";
   inputs.src-yahooweather-master.repo  = "nim-yahooweather";
   inputs.src-yahooweather-master.type  = "github";
   

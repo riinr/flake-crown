@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-amysql-v0_7_4.flake = false;
+  inputs.src-amysql-v0_7_4.ref   = "refs/tags/v0.7.4";
   inputs.src-amysql-v0_7_4.owner = "bung87";
-  inputs.src-amysql-v0_7_4.ref   = "v0_7_4";
   inputs.src-amysql-v0_7_4.repo  = "amysql";
   inputs.src-amysql-v0_7_4.type  = "github";
   

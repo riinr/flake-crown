@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimothello-master.flake = false;
+  inputs.src-nimothello-master.ref   = "refs/heads/master";
   inputs.src-nimothello-master.owner = "jiro4989";
-  inputs.src-nimothello-master.ref   = "master";
   inputs.src-nimothello-master.repo  = "nimothello";
   inputs.src-nimothello-master.type  = "github";
   

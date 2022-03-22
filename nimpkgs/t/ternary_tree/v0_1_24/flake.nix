@@ -1,5 +1,5 @@
 {
-  description = ''Structural sharing data structure of lists and maps.'';
+  description = ''Ternary tree of list data structure'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ternary_tree-v0_1_24.flake = false;
-  inputs.src-ternary_tree-v0_1_24.owner = "calcit-lang";
   inputs.src-ternary_tree-v0_1_24.ref   = "refs/tags/v0.1.24";
+  inputs.src-ternary_tree-v0_1_24.owner = "calcit-lang";
   inputs.src-ternary_tree-v0_1_24.repo  = "ternary-tree";
   inputs.src-ternary_tree-v0_1_24.type  = "github";
   

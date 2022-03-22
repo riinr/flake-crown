@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1647920574,
+        "narHash": "sha256-D3ob5QykELhyNcTnISOkjEzLlgXltwON8Ucrz5cpiQI=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "bfb46a1f762002f07f9d81d93dacd544c6890623",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-xgboost_nim-master": "src-xgboost_nim-master"
+      }
+    },
+    "src-xgboost_nim-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1619412055,
+        "narHash": "sha256-CHVY7MIvsKMK3q1PlKW7e+4CMN0PEmV5DKwQfTKlAM4=",
+        "owner": "jackhftang",
+        "repo": "xgboost.nim",
+        "rev": "d653d798c36bb04f8b612f0fd139c1a8739066e8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jackhftang",
+        "ref": "refs/heads/master",
+        "repo": "xgboost.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

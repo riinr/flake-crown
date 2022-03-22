@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-colorcol-v0_5_0.flake = false;
-  inputs.src-colorcol-v0_5_0.owner = "SolitudeSF";
   inputs.src-colorcol-v0_5_0.ref   = "refs/tags/v0.5.0";
+  inputs.src-colorcol-v0_5_0.owner = "SolitudeSF";
   inputs.src-colorcol-v0_5_0.repo  = "colorcol";
   inputs.src-colorcol-v0_5_0.type  = "github";
   

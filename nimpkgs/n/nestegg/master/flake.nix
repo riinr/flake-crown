@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nestegg-master.flake = false;
+  inputs.src-nestegg-master.ref   = "refs/heads/master";
   inputs.src-nestegg-master.owner = "capocasa";
-  inputs.src-nestegg-master.ref   = "master";
   inputs.src-nestegg-master.repo  = "nim-nestegg";
   inputs.src-nestegg-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-redis-master.flake = false;
+  inputs.src-redis-master.ref   = "refs/heads/master";
   inputs.src-redis-master.owner = "nim-lang";
-  inputs.src-redis-master.ref   = "master";
   inputs.src-redis-master.repo  = "redis";
   inputs.src-redis-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-prettystr-main.flake = false;
-  inputs.src-prettystr-main.owner = "prettybauble";
   inputs.src-prettystr-main.ref   = "refs/heads/main";
+  inputs.src-prettystr-main.owner = "prettybauble";
   inputs.src-prettystr-main.repo  = "prettystr";
   inputs.src-prettystr-main.type  = "github";
   

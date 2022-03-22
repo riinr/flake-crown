@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimcrypt-v0_0_7.flake = false;
+  inputs.src-nimcrypt-v0_0_7.ref   = "refs/tags/v0.0.7";
   inputs.src-nimcrypt-v0_0_7.owner = "napalu";
-  inputs.src-nimcrypt-v0_0_7.ref   = "v0_0_7";
   inputs.src-nimcrypt-v0_0_7.repo  = "nimcrypt";
   inputs.src-nimcrypt-v0_0_7.type  = "github";
   

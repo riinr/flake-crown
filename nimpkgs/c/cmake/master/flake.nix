@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-cmake-master.flake = false;
-  inputs.src-cmake-master.owner = "genotrance";
   inputs.src-cmake-master.ref   = "refs/heads/master";
+  inputs.src-cmake-master.owner = "genotrance";
   inputs.src-cmake-master.repo  = "cmake";
   inputs.src-cmake-master.type  = "github";
   
   inputs."nimterop".owner = "nim-nix-pkgs";
   inputs."nimterop".ref   = "master";
   inputs."nimterop".repo  = "nimterop";
+  inputs."nimterop".dir   = "v0_6_13";
   inputs."nimterop".type  = "github";
   inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

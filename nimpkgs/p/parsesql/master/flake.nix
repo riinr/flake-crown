@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-parsesql-master.flake = false;
-  inputs.src-parsesql-master.owner = "bung87";
   inputs.src-parsesql-master.ref   = "refs/heads/master";
+  inputs.src-parsesql-master.owner = "bung87";
   inputs.src-parsesql-master.repo  = "parsesql";
   inputs.src-parsesql-master.type  = "github";
   

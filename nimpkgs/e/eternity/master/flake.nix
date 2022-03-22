@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-eternity-master.flake = false;
+  inputs.src-eternity-master.ref   = "refs/heads/master";
   inputs.src-eternity-master.owner = "hiteshjasani";
-  inputs.src-eternity-master.ref   = "master";
   inputs.src-eternity-master.repo  = "nim-eternity";
   inputs.src-eternity-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-barbarus-master.flake = false;
+  inputs.src-barbarus-master.ref   = "refs/heads/master";
   inputs.src-barbarus-master.owner = "cjxgm";
-  inputs.src-barbarus-master.ref   = "master";
   inputs.src-barbarus-master.repo  = "barbarus";
   inputs.src-barbarus-master.type  = "github";
   

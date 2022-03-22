@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ngtcp2-main.flake = false;
+  inputs.src-ngtcp2-main.ref   = "refs/heads/main";
   inputs.src-ngtcp2-main.owner = "status-im";
-  inputs.src-ngtcp2-main.ref   = "main";
   inputs.src-ngtcp2-main.repo  = "nim-ngtcp2";
   inputs.src-ngtcp2-main.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Parse fixed-width fields within lines of text (complementary to parsecsv)'';
+  description = ''parser for text files with Fixed-Width fields'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,18 +8,18 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-parsefixed-master.flake = false;
-  inputs.src-parsefixed-master.owner = "jlp765";
   inputs.src-parsefixed-master.ref   = "refs/heads/master";
+  inputs.src-parsefixed-master.owner = "jlp765";
   inputs.src-parsefixed-master.repo  = "parsefixed";
   inputs.src-parsefixed-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-parseFixed-master"];
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-parsefixed-master"];
   in lib.mkRefOutput {
     inherit self nixpkgs ;
-    src  = deps."src-parseFixed-master";
+    src  = deps."src-parsefixed-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
   };

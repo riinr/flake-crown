@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ulid-v0_2_0.flake = false;
-  inputs.src-ulid-v0_2_0.owner = "adelq";
   inputs.src-ulid-v0_2_0.ref   = "refs/tags/v0.2.0";
+  inputs.src-ulid-v0_2_0.owner = "adelq";
   inputs.src-ulid-v0_2_0.repo  = "ulid";
   inputs.src-ulid-v0_2_0.type  = "github";
   
   inputs."random".owner = "nim-nix-pkgs";
   inputs."random".ref   = "master";
   inputs."random".repo  = "random";
+  inputs."random".dir   = "v0_5_3";
   inputs."random".type  = "github";
   inputs."random".inputs.nixpkgs.follows = "nixpkgs";
   inputs."random".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

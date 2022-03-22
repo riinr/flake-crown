@@ -1,5 +1,5 @@
 {
-  description = ''Implement dynamic dispatch through vtable, should works for dynlib.'';
+  description = ''Vtable for nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-vtable-v0_1_2.flake = false;
-  inputs.src-vtable-v0_1_2.owner = "codehz";
   inputs.src-vtable-v0_1_2.ref   = "refs/tags/v0.1.2";
+  inputs.src-vtable-v0_1_2.owner = "codehz";
   inputs.src-vtable-v0_1_2.repo  = "nim-vtable";
   inputs.src-vtable-v0_1_2.type  = "github";
   

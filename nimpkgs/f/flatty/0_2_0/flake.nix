@@ -1,5 +1,5 @@
 {
-  description = ''Serializer and tools for flat binary files.'';
+  description = ''Flatty - tools and serializer for plain flat binary files.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-flatty-0_2_0.flake = false;
-  inputs.src-flatty-0_2_0.owner = "treeform";
   inputs.src-flatty-0_2_0.ref   = "refs/tags/0.2.0";
+  inputs.src-flatty-0_2_0.owner = "treeform";
   inputs.src-flatty-0_2_0.repo  = "flatty";
   inputs.src-flatty-0_2_0.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-rlp-master.flake = false;
+  inputs.src-rlp-master.ref   = "refs/heads/master";
   inputs.src-rlp-master.owner = "status-im";
-  inputs.src-rlp-master.ref   = "master";
   inputs.src-rlp-master.repo  = "nim-rlp";
   inputs.src-rlp-master.type  = "github";
   

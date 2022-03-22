@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-bencode-master.flake = false;
+  inputs.src-bencode-master.ref   = "refs/heads/master";
   inputs.src-bencode-master.owner = "FedericoCeratto";
-  inputs.src-bencode-master.ref   = "master";
   inputs.src-bencode-master.repo  = "nim-bencode";
   inputs.src-bencode-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-markx-v1_0_0.flake = false;
+  inputs.src-markx-v1_0_0.ref   = "refs/tags/v1.0.0";
   inputs.src-markx-v1_0_0.owner = "jiro4989";
-  inputs.src-markx-v1_0_0.ref   = "v1_0_0";
   inputs.src-markx-v1_0_0.repo  = "markx";
   inputs.src-markx-v1_0_0.type  = "github";
   

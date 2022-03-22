@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-grim-master.flake = false;
+  inputs.src-grim-master.ref   = "refs/heads/master";
   inputs.src-grim-master.owner = "ebran";
-  inputs.src-grim-master.ref   = "master";
   inputs.src-grim-master.repo  = "grim";
   inputs.src-grim-master.type  = "github";
   

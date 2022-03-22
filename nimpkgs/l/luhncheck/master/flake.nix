@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-luhncheck-master.flake = false;
-  inputs.src-luhncheck-master.owner = "sillibird";
   inputs.src-luhncheck-master.ref   = "refs/heads/master";
+  inputs.src-luhncheck-master.owner = "sillibird";
   inputs.src-luhncheck-master.repo  = "luhncheck";
   inputs.src-luhncheck-master.type  = "github";
   

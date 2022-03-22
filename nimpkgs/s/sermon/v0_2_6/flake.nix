@@ -1,5 +1,5 @@
 {
-  description = ''Monitor the state and memory of processes and URL response.'';
+  description = ''Tool to monitor various items on your Linux server'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sermon-v0_2_6.flake = false;
-  inputs.src-sermon-v0_2_6.owner = "ThomasTJdev";
   inputs.src-sermon-v0_2_6.ref   = "refs/tags/v0.2.6";
+  inputs.src-sermon-v0_2_6.owner = "ThomasTJdev";
   inputs.src-sermon-v0_2_6.repo  = "nim_sermon";
   inputs.src-sermon-v0_2_6.type  = "github";
   
   inputs."jester".owner = "nim-nix-pkgs";
   inputs."jester".ref   = "master";
   inputs."jester".repo  = "jester";
+  inputs."jester".dir   = "v0_5_0";
   inputs."jester".type  = "github";
   inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -1,5 +1,5 @@
 {
-  description = ''tools for handling CSV files (comma or tab-separated) with an API similar to Python's CSVDictReader and -Writer.'';
+  description = ''Nim tools for handling CSV files with an API similar to Python's CSVDictReader and -Writer'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-csvtable-0_2_0.flake = false;
-  inputs.src-csvtable-0_2_0.owner = "apahl";
   inputs.src-csvtable-0_2_0.ref   = "refs/tags/0.2.0";
+  inputs.src-csvtable-0_2_0.owner = "apahl";
   inputs.src-csvtable-0_2_0.repo  = "csvtable";
   inputs.src-csvtable-0_2_0.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Collection of math routines for 2d and 3d graphics.'';
+  description = ''Math vector library for graphical things.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-vmath-0_3_0.flake = false;
-  inputs.src-vmath-0_3_0.owner = "treeform";
   inputs.src-vmath-0_3_0.ref   = "refs/tags/0.3.0";
+  inputs.src-vmath-0_3_0.owner = "treeform";
   inputs.src-vmath-0_3_0.repo  = "vmath";
   inputs.src-vmath-0_3_0.type  = "github";
   
   inputs."mddoc".owner = "nim-nix-pkgs";
   inputs."mddoc".ref   = "master";
   inputs."mddoc".repo  = "mddoc";
+  inputs."mddoc".dir   = "0_0_4";
   inputs."mddoc".type  = "github";
   inputs."mddoc".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mddoc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimatic-master.flake = false;
+  inputs.src-nimatic-master.ref   = "refs/heads/master";
   inputs.src-nimatic-master.owner = "DangerOnTheRanger";
-  inputs.src-nimatic-master.ref   = "master";
   inputs.src-nimatic-master.repo  = "nimatic";
   inputs.src-nimatic-master.type  = "github";
   

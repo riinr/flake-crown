@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-gifwriter-master.flake = false;
+  inputs.src-gifwriter-master.ref   = "refs/heads/master";
   inputs.src-gifwriter-master.owner = "rxi";
-  inputs.src-gifwriter-master.ref   = "master";
   inputs.src-gifwriter-master.repo  = "gifwriter";
   inputs.src-gifwriter-master.type  = "github";
   

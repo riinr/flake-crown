@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-watchout-main.flake = false;
-  inputs.src-watchout-main.owner = "openpeep";
   inputs.src-watchout-main.ref   = "refs/heads/main";
+  inputs.src-watchout-main.owner = "openpeep";
   inputs.src-watchout-main.repo  = "watchout";
   inputs.src-watchout-main.type  = "github";
   

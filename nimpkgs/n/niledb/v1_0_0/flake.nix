@@ -8,9 +8,9 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-niledb-v1_0_0.flake = false;
+  inputs.src-niledb-v1_0_0.ref   = "refs/tags/v1.0.0";
   inputs.src-niledb-v1_0_0.owner = "JeffersonLab";
-  inputs.src-niledb-v1_0_0.ref   = "v1_0_0";
-  inputs.src-niledb-v1_0_0.repo  = "niledb.git";
+  inputs.src-niledb-v1_0_0.repo  = "niledb";
   inputs.src-niledb-v1_0_0.type  = "github";
   
   inputs."serializetools".owner = "nim-nix-pkgs";

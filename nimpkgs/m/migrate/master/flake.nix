@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-migrate-master.flake = false;
+  inputs.src-migrate-master.ref   = "refs/heads/master";
   inputs.src-migrate-master.owner = "euantorano";
-  inputs.src-migrate-master.ref   = "master";
   inputs.src-migrate-master.repo  = "migrate.nim";
   inputs.src-migrate-master.type  = "github";
   

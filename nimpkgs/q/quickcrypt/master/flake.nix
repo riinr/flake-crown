@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-quickcrypt-master.flake = false;
+  inputs.src-quickcrypt-master.ref   = "refs/heads/master";
   inputs.src-quickcrypt-master.owner = "theAkito";
-  inputs.src-quickcrypt-master.ref   = "master";
   inputs.src-quickcrypt-master.repo  = "nim-quickcrypt";
   inputs.src-quickcrypt-master.type  = "github";
   

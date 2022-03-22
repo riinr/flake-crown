@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimibook-main.flake = false;
+  inputs.src-nimibook-main.ref   = "refs/heads/main";
   inputs.src-nimibook-main.owner = "pietroppeter";
-  inputs.src-nimibook-main.ref   = "main";
   inputs.src-nimibook-main.repo  = "nimibook";
   inputs.src-nimibook-main.type  = "github";
   

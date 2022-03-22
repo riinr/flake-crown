@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-googlesearch-master.flake = false;
+  inputs.src-googlesearch-master.ref   = "refs/heads/master";
   inputs.src-googlesearch-master.owner = "xyb";
-  inputs.src-googlesearch-master.ref   = "master";
   inputs.src-googlesearch-master.repo  = "googlesearch.nim";
   inputs.src-googlesearch-master.type  = "github";
   

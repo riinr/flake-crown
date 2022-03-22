@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-magic-master.flake = false;
+  inputs.src-magic-master.ref   = "refs/heads/master";
   inputs.src-magic-master.owner = "xmonader";
-  inputs.src-magic-master.ref   = "master";
   inputs.src-magic-master.repo  = "nim-magic";
   inputs.src-magic-master.type  = "github";
   

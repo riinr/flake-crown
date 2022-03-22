@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-NimTacToe-master.flake = false;
+  inputs.src-NimTacToe-master.ref   = "refs/heads/master";
   inputs.src-NimTacToe-master.owner = "JesterOrNot";
-  inputs.src-NimTacToe-master.ref   = "master";
   inputs.src-NimTacToe-master.repo  = "Nim-Tac-Toe";
   inputs.src-NimTacToe-master.type  = "github";
   

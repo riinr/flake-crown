@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-packedjson-master.flake = false;
-  inputs.src-packedjson-master.owner = "Araq";
   inputs.src-packedjson-master.ref   = "refs/heads/master";
+  inputs.src-packedjson-master.owner = "Araq";
   inputs.src-packedjson-master.repo  = "packedjson";
   inputs.src-packedjson-master.type  = "github";
   

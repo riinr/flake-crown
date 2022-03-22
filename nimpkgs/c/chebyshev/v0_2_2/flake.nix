@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-chebyshev-v0_2_2.flake = false;
-  inputs.src-chebyshev-v0_2_2.owner = "jxy";
   inputs.src-chebyshev-v0_2_2.ref   = "refs/tags/v0.2.2";
+  inputs.src-chebyshev-v0_2_2.owner = "jxy";
   inputs.src-chebyshev-v0_2_2.repo  = "chebyshev";
   inputs.src-chebyshev-v0_2_2.type  = "github";
   

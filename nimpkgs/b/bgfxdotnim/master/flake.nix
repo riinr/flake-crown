@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-bgfxdotnim-master.flake = false;
+  inputs.src-bgfxdotnim-master.ref   = "refs/heads/master";
   inputs.src-bgfxdotnim-master.owner = "zacharycarter";
-  inputs.src-bgfxdotnim-master.ref   = "master";
   inputs.src-bgfxdotnim-master.repo  = "bgfx.nim";
   inputs.src-bgfxdotnim-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-parselicense-master.flake = false;
-  inputs.src-parselicense-master.owner = "juancarlospaco";
   inputs.src-parselicense-master.ref   = "refs/heads/master";
+  inputs.src-parselicense-master.owner = "juancarlospaco";
   inputs.src-parselicense-master.repo  = "parselicense";
   inputs.src-parselicense-master.type  = "github";
   

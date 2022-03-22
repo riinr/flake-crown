@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-binaryheap-master.flake = false;
+  inputs.src-binaryheap-master.ref   = "refs/heads/master";
   inputs.src-binaryheap-master.owner = "bluenote10";
-  inputs.src-binaryheap-master.ref   = "master";
   inputs.src-binaryheap-master.repo  = "nim-heap";
   inputs.src-binaryheap-master.type  = "github";
   

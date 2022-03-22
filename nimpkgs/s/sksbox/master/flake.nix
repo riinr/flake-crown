@@ -1,5 +1,5 @@
 {
-  description = ''A native-nim implementaton of the sBOX generic container format.'';
+  description = ''A Nim-native implementation of the sBOX file format.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sksbox-master.flake = false;
-  inputs.src-sksbox-master.owner = "Skrylar";
   inputs.src-sksbox-master.ref   = "refs/heads/master";
+  inputs.src-sksbox-master.owner = "Skrylar";
   inputs.src-sksbox-master.repo  = "sksbox";
   inputs.src-sksbox-master.type  = "github";
   

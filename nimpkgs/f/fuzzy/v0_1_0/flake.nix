@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-fuzzy-v0_1_0.flake = false;
-  inputs.src-fuzzy-v0_1_0.owner = "pigmej";
   inputs.src-fuzzy-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-fuzzy-v0_1_0.owner = "pigmej";
   inputs.src-fuzzy-v0_1_0.repo  = "fuzzy";
   inputs.src-fuzzy-v0_1_0.type  = "github";
   

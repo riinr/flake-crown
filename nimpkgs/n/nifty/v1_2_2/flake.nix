@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nifty-v1_2_2.flake = false;
+  inputs.src-nifty-v1_2_2.ref   = "refs/tags/v1.2.2";
   inputs.src-nifty-v1_2_2.owner = "h3rald";
-  inputs.src-nifty-v1_2_2.ref   = "v1_2_2";
   inputs.src-nifty-v1_2_2.repo  = "nifty";
   inputs.src-nifty-v1_2_2.type  = "github";
   

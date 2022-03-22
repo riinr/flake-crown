@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sonic-master.flake = false;
-  inputs.src-sonic-master.owner = "xmonader";
   inputs.src-sonic-master.ref   = "refs/heads/master";
+  inputs.src-sonic-master.owner = "xmonader";
   inputs.src-sonic-master.repo  = "nim-sonic-client";
   inputs.src-sonic-master.type  = "github";
   

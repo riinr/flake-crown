@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-otplib-master.flake = false;
+  inputs.src-otplib-master.ref   = "refs/heads/master";
   inputs.src-otplib-master.owner = "dimspith";
-  inputs.src-otplib-master.ref   = "master";
   inputs.src-otplib-master.repo  = "otplib";
   inputs.src-otplib-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Game rules engine for simulating or playing turn-based games'';
+  description = ''Game rules framework for turn-based games'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-turn_based_game-v1_1_2.flake = false;
-  inputs.src-turn_based_game-v1_1_2.owner = "JohnAD";
   inputs.src-turn_based_game-v1_1_2.ref   = "refs/tags/v1.1.2";
+  inputs.src-turn_based_game-v1_1_2.owner = "JohnAD";
   inputs.src-turn_based_game-v1_1_2.repo  = "turn_based_game";
   inputs.src-turn_based_game-v1_1_2.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-jscanvas-master.flake = false;
+  inputs.src-jscanvas-master.ref   = "refs/heads/master";
   inputs.src-jscanvas-master.owner = "planetis-m";
-  inputs.src-jscanvas-master.ref   = "master";
   inputs.src-jscanvas-master.repo  = "jscanvas";
   inputs.src-jscanvas-master.type  = "github";
   

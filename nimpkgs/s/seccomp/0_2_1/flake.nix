@@ -1,5 +1,5 @@
 {
-  description = ''Linux Seccomp sandbox library'';
+  description = ''Seccomp (Linux sandboxing) adapter'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-seccomp-0_2_1.flake = false;
-  inputs.src-seccomp-0_2_1.owner = "FedericoCeratto";
   inputs.src-seccomp-0_2_1.ref   = "refs/tags/0.2.1";
+  inputs.src-seccomp-0_2_1.owner = "FedericoCeratto";
   inputs.src-seccomp-0_2_1.repo  = "nim-seccomp";
   inputs.src-seccomp-0_2_1.type  = "github";
   

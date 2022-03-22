@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-networkutils-master.flake = false;
+  inputs.src-networkutils-master.ref   = "refs/heads/master";
   inputs.src-networkutils-master.owner = "Q-Master";
-  inputs.src-networkutils-master.ref   = "master";
   inputs.src-networkutils-master.repo  = "networkutils.nim";
   inputs.src-networkutils-master.type  = "github";
   

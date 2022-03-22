@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-dimscmd-master.flake = false;
+  inputs.src-dimscmd-master.ref   = "refs/heads/master";
   inputs.src-dimscmd-master.owner = "ire4ever1190";
-  inputs.src-dimscmd-master.ref   = "master";
   inputs.src-dimscmd-master.repo  = "dimscordCommandHandler";
   inputs.src-dimscmd-master.type  = "github";
   

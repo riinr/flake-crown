@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-foreach-master.flake = false;
-  inputs.src-foreach-master.owner = "disruptek";
   inputs.src-foreach-master.ref   = "refs/heads/master";
+  inputs.src-foreach-master.owner = "disruptek";
   inputs.src-foreach-master.repo  = "foreach";
   inputs.src-foreach-master.type  = "github";
   

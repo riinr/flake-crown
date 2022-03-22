@@ -1,5 +1,5 @@
 {
-  description = ''The Nim framework for VK API.'';
+  description = ''The Nim framework for VK.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-shizuka-nightly-0_3_0.flake = false;
-  inputs.src-shizuka-nightly-0_3_0.owner = "ethosa";
   inputs.src-shizuka-nightly-0_3_0.ref   = "refs/tags/nightly-0.3.0";
+  inputs.src-shizuka-nightly-0_3_0.owner = "ethosa";
   inputs.src-shizuka-nightly-0_3_0.repo  = "shizuka";
   inputs.src-shizuka-nightly-0_3_0.type  = "github";
   

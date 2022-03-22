@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-schedules-v0_1_1.flake = false;
-  inputs.src-schedules-v0_1_1.owner = "soasme";
   inputs.src-schedules-v0_1_1.ref   = "refs/tags/v0.1.1";
+  inputs.src-schedules-v0_1_1.owner = "soasme";
   inputs.src-schedules-v0_1_1.repo  = "nim-schedules";
   inputs.src-schedules-v0_1_1.type  = "github";
   

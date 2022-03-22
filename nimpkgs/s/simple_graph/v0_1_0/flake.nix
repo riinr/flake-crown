@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-simple_graph-v0_1_0.flake = false;
-  inputs.src-simple_graph-v0_1_0.owner = "erhlee-bird";
   inputs.src-simple_graph-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-simple_graph-v0_1_0.owner = "erhlee-bird";
   inputs.src-simple_graph-v0_1_0.repo  = "simple_graph";
   inputs.src-simple_graph-v0_1_0.type  = "github";
   

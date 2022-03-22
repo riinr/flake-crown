@@ -1,5 +1,5 @@
 {
-  description = ''Figma based UI library for nim, with HTML and OpenGL backends.'';
+  description = ''Fidget - UI Library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-fidget-v0_2_1.flake = false;
-  inputs.src-fidget-v0_2_1.owner = "treeform";
   inputs.src-fidget-v0_2_1.ref   = "refs/tags/v0.2.1";
+  inputs.src-fidget-v0_2_1.owner = "treeform";
   inputs.src-fidget-v0_2_1.repo  = "fidget";
   inputs.src-fidget-v0_2_1.type  = "github";
   
   inputs."chroma".owner = "nim-nix-pkgs";
   inputs."chroma".ref   = "master";
   inputs."chroma".repo  = "chroma";
+  inputs."chroma".dir   = "0_2_5";
   inputs."chroma".type  = "github";
   inputs."chroma".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chroma".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."typography".owner = "nim-nix-pkgs";
   inputs."typography".ref   = "master";
   inputs."typography".repo  = "typography";
+  inputs."typography".dir   = "0_7_13";
   inputs."typography".type  = "github";
   inputs."typography".inputs.nixpkgs.follows = "nixpkgs";
   inputs."typography".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."flippy".owner = "nim-nix-pkgs";
   inputs."flippy".ref   = "master";
   inputs."flippy".repo  = "flippy";
+  inputs."flippy".dir   = "0_4_7";
   inputs."flippy".type  = "github";
   inputs."flippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."flippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -37,6 +40,7 @@
   inputs."vmath".owner = "nim-nix-pkgs";
   inputs."vmath".ref   = "master";
   inputs."vmath".repo  = "vmath";
+  inputs."vmath".dir   = "1_1_2";
   inputs."vmath".type  = "github";
   inputs."vmath".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -44,6 +48,7 @@
   inputs."print".owner = "nim-nix-pkgs";
   inputs."print".ref   = "master";
   inputs."print".repo  = "print";
+  inputs."print".dir   = "1_0_2";
   inputs."print".type  = "github";
   inputs."print".inputs.nixpkgs.follows = "nixpkgs";
   inputs."print".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -51,6 +56,7 @@
   inputs."opengl".owner = "nim-nix-pkgs";
   inputs."opengl".ref   = "master";
   inputs."opengl".repo  = "opengl";
+  inputs."opengl".dir   = "1_2_6";
   inputs."opengl".type  = "github";
   inputs."opengl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."opengl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -58,6 +64,7 @@
   inputs."snappy".owner = "nim-nix-pkgs";
   inputs."snappy".ref   = "master";
   inputs."snappy".repo  = "snappy";
+  inputs."snappy".dir   = "";
   inputs."snappy".type  = "github";
   inputs."snappy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."snappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -65,6 +72,7 @@
   inputs."html5_canvas".owner = "nim-nix-pkgs";
   inputs."html5_canvas".ref   = "master";
   inputs."html5_canvas".repo  = "html5_canvas";
+  inputs."html5_canvas".dir   = "";
   inputs."html5_canvas".type  = "github";
   inputs."html5_canvas".inputs.nixpkgs.follows = "nixpkgs";
   inputs."html5_canvas".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

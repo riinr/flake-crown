@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-zfdbms-v0_0_5.flake = false;
-  inputs.src-zfdbms-v0_0_5.owner = "zendbit";
   inputs.src-zfdbms-v0_0_5.ref   = "refs/tags/v0.0.5";
+  inputs.src-zfdbms-v0_0_5.owner = "zendbit";
   inputs.src-zfdbms-v0_0_5.repo  = "nim.zfdbms";
   inputs.src-zfdbms-v0_0_5.type  = "github";
   
   inputs."stdext".owner = "nim-nix-pkgs";
   inputs."stdext".ref   = "master";
   inputs."stdext".repo  = "stdext";
+  inputs."stdext".dir   = "v0_0_12";
   inputs."stdext".type  = "github";
   inputs."stdext".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stdext".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

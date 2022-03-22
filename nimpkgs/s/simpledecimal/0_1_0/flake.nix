@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-simpledecimal-0_1_0.flake = false;
-  inputs.src-simpledecimal-0_1_0.owner = "pigmej";
   inputs.src-simpledecimal-0_1_0.ref   = "refs/tags/0.1.0";
+  inputs.src-simpledecimal-0_1_0.owner = "pigmej";
   inputs.src-simpledecimal-0_1_0.repo  = "nim-simple-decimal";
   inputs.src-simpledecimal-0_1_0.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-manu-v1_5.flake = false;
+  inputs.src-manu-v1_5.ref   = "refs/tags/v1.5";
   inputs.src-manu-v1_5.owner = "planetis-m";
-  inputs.src-manu-v1_5.ref   = "v1_5";
   inputs.src-manu-v1_5.repo  = "manu";
   inputs.src-manu-v1_5.type  = "github";
   

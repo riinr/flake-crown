@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-kmod-master.flake = false;
+  inputs.src-kmod-master.ref   = "refs/heads/master";
   inputs.src-kmod-master.owner = "alaviss";
-  inputs.src-kmod-master.ref   = "master";
   inputs.src-kmod-master.repo  = "kmod";
   inputs.src-kmod-master.type  = "github";
   

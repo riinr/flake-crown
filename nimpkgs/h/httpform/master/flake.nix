@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-httpform-master.flake = false;
+  inputs.src-httpform-master.ref   = "refs/heads/master";
   inputs.src-httpform-master.owner = "tulayang";
-  inputs.src-httpform-master.ref   = "master";
   inputs.src-httpform-master.repo  = "httpform";
   inputs.src-httpform-master.type  = "github";
   

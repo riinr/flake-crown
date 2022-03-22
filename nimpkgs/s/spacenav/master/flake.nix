@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-spacenav-master.flake = false;
-  inputs.src-spacenav-master.owner = "nimious";
   inputs.src-spacenav-master.ref   = "refs/heads/master";
+  inputs.src-spacenav-master.owner = "nimious";
   inputs.src-spacenav-master.repo  = "spacenav";
   inputs.src-spacenav-master.type  = "github";
   

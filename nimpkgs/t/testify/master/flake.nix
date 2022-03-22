@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-testify-master.flake = false;
-  inputs.src-testify-master.owner = "sealmove";
   inputs.src-testify-master.ref   = "refs/heads/master";
+  inputs.src-testify-master.owner = "sealmove";
   inputs.src-testify-master.repo  = "testify";
   inputs.src-testify-master.type  = "github";
   

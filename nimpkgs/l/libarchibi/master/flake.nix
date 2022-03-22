@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-libarchibi-master.flake = false;
-  inputs.src-libarchibi-master.owner = "juancarlospaco";
   inputs.src-libarchibi-master.ref   = "refs/heads/master";
+  inputs.src-libarchibi-master.owner = "juancarlospaco";
   inputs.src-libarchibi-master.repo  = "libarchibi";
   inputs.src-libarchibi-master.type  = "github";
   

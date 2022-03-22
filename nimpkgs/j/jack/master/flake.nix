@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-jack-master.flake = false;
+  inputs.src-jack-master.ref   = "refs/heads/master";
   inputs.src-jack-master.owner = "Skrylar";
-  inputs.src-jack-master.ref   = "master";
   inputs.src-jack-master.repo  = "nim-jack";
   inputs.src-jack-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-webp-master.flake = false;
-  inputs.src-webp-master.owner = "juancarlospaco";
   inputs.src-webp-master.ref   = "refs/heads/master";
+  inputs.src-webp-master.owner = "juancarlospaco";
   inputs.src-webp-master.repo  = "nim-webp";
   inputs.src-webp-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Wrapper to interface with the Python 3 interpreter'';
+  description = ''Wrapper to interface with Python 3 interpreter (static / dynamic)'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-python3-master.flake = false;
-  inputs.src-python3-master.owner = "matkuki";
   inputs.src-python3-master.ref   = "refs/heads/master";
+  inputs.src-python3-master.owner = "matkuki";
   inputs.src-python3-master.repo  = "python3";
   inputs.src-python3-master.type  = "github";
   

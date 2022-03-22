@@ -1,5 +1,5 @@
 {
-  description = ''A library of components and systems for use with the Polymorph ECS'';
+  description = ''A library of components and systems for the Polymorph ECS'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-polymers-v0_3_1.flake = false;
-  inputs.src-polymers-v0_3_1.owner = "rlipsc";
   inputs.src-polymers-v0_3_1.ref   = "refs/tags/v0.3.1";
+  inputs.src-polymers-v0_3_1.owner = "rlipsc";
   inputs.src-polymers-v0_3_1.repo  = "polymers";
   inputs.src-polymers-v0_3_1.type  = "github";
   

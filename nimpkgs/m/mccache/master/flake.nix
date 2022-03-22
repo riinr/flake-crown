@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mccache-master.flake = false;
+  inputs.src-mccache-master.ref   = "refs/heads/master";
   inputs.src-mccache-master.owner = "abbeymart";
-  inputs.src-mccache-master.ref   = "master";
   inputs.src-mccache-master.repo  = "mccache-nim";
   inputs.src-mccache-master.type  = "github";
   

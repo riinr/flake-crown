@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mcresponse-master.flake = false;
+  inputs.src-mcresponse-master.ref   = "refs/heads/master";
   inputs.src-mcresponse-master.owner = "abbeymart";
-  inputs.src-mcresponse-master.ref   = "master";
   inputs.src-mcresponse-master.repo  = "mcresponse-nim";
   inputs.src-mcresponse-master.type  = "github";
   

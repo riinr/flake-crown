@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-configparser-master.flake = false;
-  inputs.src-configparser-master.owner = "xmonader";
   inputs.src-configparser-master.ref   = "refs/heads/master";
+  inputs.src-configparser-master.owner = "xmonader";
   inputs.src-configparser-master.repo  = "nim-configparser";
   inputs.src-configparser-master.type  = "github";
   

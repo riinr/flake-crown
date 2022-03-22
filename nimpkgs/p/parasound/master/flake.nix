@@ -1,5 +1,5 @@
 {
-  description = ''A library for playing audio files'';
+  description = ''Bindings for miniaudio'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-parasound-master.flake = false;
-  inputs.src-parasound-master.owner = "paranim";
   inputs.src-parasound-master.ref   = "refs/heads/master";
+  inputs.src-parasound-master.owner = "paranim";
   inputs.src-parasound-master.repo  = "parasound";
   inputs.src-parasound-master.type  = "github";
   

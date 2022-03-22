@@ -1,5 +1,5 @@
 {
-  description = ''Zero-wrapping C imports in Nim'';
+  description = ''A package which uses libclang to parse C headers into Nim files for easy interop'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-futhark-v0_5_0.flake = false;
-  inputs.src-futhark-v0_5_0.owner = "PMunch";
   inputs.src-futhark-v0_5_0.ref   = "refs/tags/v0.5.0";
+  inputs.src-futhark-v0_5_0.owner = "PMunch";
   inputs.src-futhark-v0_5_0.repo  = "futhark";
   inputs.src-futhark-v0_5_0.type  = "github";
   
   inputs."termstyle".owner = "nim-nix-pkgs";
   inputs."termstyle".ref   = "master";
   inputs."termstyle".repo  = "termstyle";
+  inputs."termstyle".dir   = "";
   inputs."termstyle".type  = "github";
   inputs."termstyle".inputs.nixpkgs.follows = "nixpkgs";
   inputs."termstyle".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."macroutils".owner = "nim-nix-pkgs";
   inputs."macroutils".ref   = "master";
   inputs."macroutils".repo  = "macroutils";
+  inputs."macroutils".dir   = "v1_2_0";
   inputs."macroutils".type  = "github";
   inputs."macroutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."macroutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

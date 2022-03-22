@@ -1,5 +1,5 @@
 {
-  description = ''Wrapper for the FreeImage library'';
+  description = ''wrapper for the FreeImage library for reading and writing image files'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-freeimage-master.flake = false;
-  inputs.src-freeimage-master.owner = "barcharcraz";
   inputs.src-freeimage-master.ref   = "refs/heads/master";
+  inputs.src-freeimage-master.owner = "barcharcraz";
   inputs.src-freeimage-master.repo  = "nim-freeimage";
   inputs.src-freeimage-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Simple extensible implementation of Porter stemmer algorithm'';
+  description = ''nim implementation of Porter's stemmer, with a possibility to add new languagess'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-porter-master.flake = false;
-  inputs.src-porter-master.owner = "iourinski";
   inputs.src-porter-master.ref   = "refs/heads/master";
+  inputs.src-porter-master.owner = "iourinski";
   inputs.src-porter-master.repo  = "porter";
   inputs.src-porter-master.type  = "github";
   
   inputs."mutableseqs".owner = "nim-nix-pkgs";
   inputs."mutableseqs".ref   = "master";
   inputs."mutableseqs".repo  = "mutableseqs";
+  inputs."mutableseqs".dir   = "";
   inputs."mutableseqs".type  = "github";
   inputs."mutableseqs".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mutableseqs".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

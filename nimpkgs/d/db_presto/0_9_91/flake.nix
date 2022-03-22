@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-db_presto-0_9_91.flake = false;
+  inputs.src-db_presto-0_9_91.ref   = "refs/tags/0.9.91";
   inputs.src-db_presto-0_9_91.owner = "Bennyelg";
-  inputs.src-db_presto-0_9_91.ref   = "0_9_91";
   inputs.src-db_presto-0_9_91.repo  = "nimPresto";
   inputs.src-db_presto-0_9_91.type  = "github";
   

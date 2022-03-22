@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-react16-0_3_4.flake = false;
+  inputs.src-react16-0_3_4.ref   = "refs/tags/0.3.4";
   inputs.src-react16-0_3_4.owner = "kristianmandrup";
-  inputs.src-react16-0_3_4.ref   = "0_3_4";
   inputs.src-react16-0_3_4.repo  = "react-16.nim";
   inputs.src-react16-0_3_4.type  = "github";
   

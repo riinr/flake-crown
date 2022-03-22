@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-react-master.flake = false;
+  inputs.src-react-master.ref   = "refs/heads/master";
   inputs.src-react-master.owner = "andreaferretti";
-  inputs.src-react-master.ref   = "master";
   inputs.src-react-master.repo  = "react.nim";
   inputs.src-react-master.type  = "github";
   

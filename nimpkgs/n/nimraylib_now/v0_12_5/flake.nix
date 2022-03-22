@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimraylib_now-v0_12_5.flake = false;
+  inputs.src-nimraylib_now-v0_12_5.ref   = "refs/tags/v0.12.5";
   inputs.src-nimraylib_now-v0_12_5.owner = "greenfork";
-  inputs.src-nimraylib_now-v0_12_5.ref   = "v0_12_5";
   inputs.src-nimraylib_now-v0_12_5.repo  = "nimraylib_now";
   inputs.src-nimraylib_now-v0_12_5.type  = "github";
   

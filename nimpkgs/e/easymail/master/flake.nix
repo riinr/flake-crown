@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-easymail-master.flake = false;
+  inputs.src-easymail-master.ref   = "refs/heads/master";
   inputs.src-easymail-master.owner = "coocheenin";
-  inputs.src-easymail-master.ref   = "master";
   inputs.src-easymail-master.repo  = "easymail";
   inputs.src-easymail-master.type  = "github";
   

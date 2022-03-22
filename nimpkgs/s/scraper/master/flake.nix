@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-scraper-master.flake = false;
-  inputs.src-scraper-master.owner = "lurlo";
   inputs.src-scraper-master.ref   = "refs/heads/master";
+  inputs.src-scraper-master.owner = "lurlo";
   inputs.src-scraper-master.repo  = "scraper";
   inputs.src-scraper-master.type  = "gitlab";
   

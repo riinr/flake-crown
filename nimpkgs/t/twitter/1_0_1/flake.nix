@@ -1,5 +1,5 @@
 {
-  description = ''Low-level twitter API wrapper library for Nim.'';
+  description = ''A twitter API wrapper for Nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-twitter-1_0_1.flake = false;
-  inputs.src-twitter-1_0_1.owner = "snus-kin";
   inputs.src-twitter-1_0_1.ref   = "refs/tags/1.0.1";
+  inputs.src-twitter-1_0_1.owner = "snus-kin";
   inputs.src-twitter-1_0_1.repo  = "twitter.nim";
   inputs.src-twitter-1_0_1.type  = "github";
   
   inputs."uuids".owner = "nim-nix-pkgs";
   inputs."uuids".ref   = "master";
   inputs."uuids".repo  = "uuids";
+  inputs."uuids".dir   = "v0_1_11";
   inputs."uuids".type  = "github";
   inputs."uuids".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uuids".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."hmac".owner = "nim-nix-pkgs";
   inputs."hmac".ref   = "master";
   inputs."hmac".repo  = "hmac";
+  inputs."hmac".dir   = "0_2_0";
   inputs."hmac".type  = "github";
   inputs."hmac".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hmac".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

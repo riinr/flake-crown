@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-norman-master.flake = false;
+  inputs.src-norman-master.ref   = "refs/heads/master";
   inputs.src-norman-master.owner = "moigagoo";
-  inputs.src-norman-master.ref   = "master";
   inputs.src-norman-master.repo  = "norman";
   inputs.src-norman-master.type  = "github";
   

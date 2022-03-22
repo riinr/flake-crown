@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mctranslog-master.flake = false;
+  inputs.src-mctranslog-master.ref   = "refs/heads/master";
   inputs.src-mctranslog-master.owner = "abbeymart";
-  inputs.src-mctranslog-master.ref   = "master";
   inputs.src-mctranslog-master.repo  = "mctranslog";
   inputs.src-mctranslog-master.type  = "github";
   

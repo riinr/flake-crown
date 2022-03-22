@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimgame2-master.flake = false;
+  inputs.src-nimgame2-master.ref   = "refs/heads/master";
   inputs.src-nimgame2-master.owner = "Vladar4";
-  inputs.src-nimgame2-master.ref   = "master";
   inputs.src-nimgame2-master.repo  = "nimgame2";
   inputs.src-nimgame2-master.type  = "github";
   

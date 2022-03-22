@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-glfw-v3_3_4_0.flake = false;
+  inputs.src-glfw-v3_3_4_0.ref   = "refs/tags/v3.3.4.0";
   inputs.src-glfw-v3_3_4_0.owner = "johnnovak";
-  inputs.src-glfw-v3_3_4_0.ref   = "v3_3_4_0";
   inputs.src-glfw-v3_3_4_0.repo  = "nim-glfw";
   inputs.src-glfw-v3_3_4_0.type  = "github";
   

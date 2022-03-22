@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-huenim-master.flake = false;
+  inputs.src-huenim-master.ref   = "refs/heads/master";
   inputs.src-huenim-master.owner = "IoTone";
-  inputs.src-huenim-master.ref   = "master";
   inputs.src-huenim-master.repo  = "huenim";
   inputs.src-huenim-master.type  = "github";
   

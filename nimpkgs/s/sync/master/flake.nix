@@ -1,5 +1,5 @@
 {
-  description = ''Useful synchronization primitives'';
+  description = ''Useful synchronization primitives.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sync-master.flake = false;
-  inputs.src-sync-master.owner = "planetis-m";
   inputs.src-sync-master.ref   = "refs/heads/master";
+  inputs.src-sync-master.owner = "planetis-m";
   inputs.src-sync-master.repo  = "sync";
   inputs.src-sync-master.type  = "github";
   

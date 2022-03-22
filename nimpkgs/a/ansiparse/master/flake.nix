@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ansiparse-master.flake = false;
+  inputs.src-ansiparse-master.ref   = "refs/heads/master";
   inputs.src-ansiparse-master.owner = "PMunch";
-  inputs.src-ansiparse-master.ref   = "master";
   inputs.src-ansiparse-master.repo  = "ansiparse";
   inputs.src-ansiparse-master.type  = "github";
   

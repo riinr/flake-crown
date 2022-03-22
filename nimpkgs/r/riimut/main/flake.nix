@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-riimut-main.flake = false;
+  inputs.src-riimut-main.ref   = "refs/heads/main";
   inputs.src-riimut-main.owner = "stscoundrel";
-  inputs.src-riimut-main.ref   = "main";
   inputs.src-riimut-main.repo  = "riimut-nim";
   inputs.src-riimut-main.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-arraymancer-v0_7_3.flake = false;
+  inputs.src-arraymancer-v0_7_3.ref   = "refs/tags/v0.7.3";
   inputs.src-arraymancer-v0_7_3.owner = "mratsim";
-  inputs.src-arraymancer-v0_7_3.ref   = "v0_7_3";
   inputs.src-arraymancer-v0_7_3.repo  = "Arraymancer";
   inputs.src-arraymancer-v0_7_3.type  = "github";
   

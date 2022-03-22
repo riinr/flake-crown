@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ad-0_7.flake = false;
+  inputs.src-ad-0_7.ref   = "refs/tags/0.7";
   inputs.src-ad-0_7.owner = "subsetpark";
-  inputs.src-ad-0_7.ref   = "0_7";
   inputs.src-ad-0_7.repo  = "ad";
   inputs.src-ad-0_7.type  = "github";
   

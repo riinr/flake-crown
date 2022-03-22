@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimflux-v1_0_3.flake = false;
+  inputs.src-nimflux-v1_0_3.ref   = "refs/tags/v1.0.3";
   inputs.src-nimflux-v1_0_3.owner = "tdely";
-  inputs.src-nimflux-v1_0_3.ref   = "v1_0_3";
   inputs.src-nimflux-v1_0_3.repo  = "nimflux";
   inputs.src-nimflux-v1_0_3.type  = "github";
   

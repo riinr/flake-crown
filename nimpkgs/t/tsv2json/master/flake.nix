@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-tsv2json-master.flake = false;
-  inputs.src-tsv2json-master.owner = "hectormonacci";
   inputs.src-tsv2json-master.ref   = "refs/heads/master";
+  inputs.src-tsv2json-master.owner = "hectormonacci";
   inputs.src-tsv2json-master.repo  = "tsv2json";
   inputs.src-tsv2json-master.type  = "github";
   

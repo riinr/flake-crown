@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-iputils-v0_2_0.flake = false;
-  inputs.src-iputils-v0_2_0.owner = "rockcavera";
   inputs.src-iputils-v0_2_0.ref   = "refs/tags/v0.2.0";
+  inputs.src-iputils-v0_2_0.owner = "rockcavera";
   inputs.src-iputils-v0_2_0.repo  = "nim-iputils";
   inputs.src-iputils-v0_2_0.type  = "github";
   
   inputs."stew".owner = "nim-nix-pkgs";
   inputs."stew".ref   = "master";
   inputs."stew".repo  = "stew";
+  inputs."stew".dir   = "";
   inputs."stew".type  = "github";
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

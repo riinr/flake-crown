@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-cittadino-0_1_2.flake = false;
-  inputs.src-cittadino-0_1_2.owner = "makingspace";
   inputs.src-cittadino-0_1_2.ref   = "refs/tags/0.1.2";
+  inputs.src-cittadino-0_1_2.owner = "makingspace";
   inputs.src-cittadino-0_1_2.repo  = "cittadino";
   inputs.src-cittadino-0_1_2.type  = "github";
   

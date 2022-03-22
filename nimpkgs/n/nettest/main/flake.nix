@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-netTest-main.flake = false;
+  inputs.src-netTest-main.ref   = "refs/heads/main";
   inputs.src-netTest-main.owner = "blmvxer";
-  inputs.src-netTest-main.ref   = "main";
   inputs.src-netTest-main.repo  = "netTest";
   inputs.src-netTest-main.type  = "github";
   

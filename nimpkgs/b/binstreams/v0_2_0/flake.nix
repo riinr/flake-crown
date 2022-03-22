@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-binstreams-v0_2_0.flake = false;
+  inputs.src-binstreams-v0_2_0.ref   = "refs/tags/v0.2.0";
   inputs.src-binstreams-v0_2_0.owner = "johnnovak";
-  inputs.src-binstreams-v0_2_0.ref   = "v0_2_0";
   inputs.src-binstreams-v0_2_0.repo  = "nim-binstreams";
   inputs.src-binstreams-v0_2_0.type  = "github";
   

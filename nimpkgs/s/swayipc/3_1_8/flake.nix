@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-swayipc-3_1_8.flake = false;
-  inputs.src-swayipc-3_1_8.owner = "disruptek";
   inputs.src-swayipc-3_1_8.ref   = "refs/tags/3.1.8";
+  inputs.src-swayipc-3_1_8.owner = "disruptek";
   inputs.src-swayipc-3_1_8.repo  = "swayipc";
   inputs.src-swayipc-3_1_8.type  = "github";
   
   inputs."nesm".owner = "nim-nix-pkgs";
   inputs."nesm".ref   = "master";
   inputs."nesm".repo  = "nesm";
+  inputs."nesm".dir   = "v0_4_10";
   inputs."nesm".type  = "github";
   inputs."nesm".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nesm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

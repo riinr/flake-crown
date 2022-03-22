@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-alignment-master.flake = false;
+  inputs.src-alignment-master.ref   = "refs/heads/master";
   inputs.src-alignment-master.owner = "jiro4989";
-  inputs.src-alignment-master.ref   = "master";
   inputs.src-alignment-master.repo  = "alignment";
   inputs.src-alignment-master.type  = "github";
   

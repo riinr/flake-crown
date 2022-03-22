@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-suffer-master.flake = false;
-  inputs.src-suffer-master.owner = "emekoi";
   inputs.src-suffer-master.ref   = "refs/heads/master";
+  inputs.src-suffer-master.owner = "emekoi";
   inputs.src-suffer-master.repo  = "suffer";
   inputs.src-suffer-master.type  = "github";
   

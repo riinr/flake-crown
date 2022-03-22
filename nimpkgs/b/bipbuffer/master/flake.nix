@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-bipbuffer-master.flake = false;
+  inputs.src-bipbuffer-master.ref   = "refs/heads/master";
   inputs.src-bipbuffer-master.owner = "MarcAzar";
-  inputs.src-bipbuffer-master.ref   = "master";
   inputs.src-bipbuffer-master.repo  = "BipBuffer";
   inputs.src-bipbuffer-master.type  = "github";
   

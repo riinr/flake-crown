@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-gmp-v0_2_3.flake = false;
+  inputs.src-gmp-v0_2_3.ref   = "refs/tags/v0.2.3";
   inputs.src-gmp-v0_2_3.owner = "subsetpark";
-  inputs.src-gmp-v0_2_3.ref   = "v0_2_3";
   inputs.src-gmp-v0_2_3.repo  = "nim-gmp";
   inputs.src-gmp-v0_2_3.type  = "github";
   

@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-cittadino-0_1_0.flake = false;
-  inputs.src-cittadino-0_1_0.owner = "makingspace";
   inputs.src-cittadino-0_1_0.ref   = "refs/tags/0.1.0";
+  inputs.src-cittadino-0_1_0.owner = "makingspace";
   inputs.src-cittadino-0_1_0.repo  = "cittadino";
   inputs.src-cittadino-0_1_0.type  = "github";
   
   inputs."stomp".owner = "nim-nix-pkgs";
   inputs."stomp".ref   = "master";
   inputs."stomp".repo  = "stomp";
+  inputs."stomp".dir   = "";
   inputs."stomp".type  = "github";
   inputs."stomp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stomp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

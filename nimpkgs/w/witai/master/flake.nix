@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-witai-master.flake = false;
-  inputs.src-witai-master.owner = "xmonader";
   inputs.src-witai-master.ref   = "refs/heads/master";
+  inputs.src-witai-master.owner = "xmonader";
   inputs.src-witai-master.repo  = "witai-nim";
   inputs.src-witai-master.type  = "github";
   

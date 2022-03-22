@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-faststack-master.flake = false;
-  inputs.src-faststack-master.owner = "Vladar4";
   inputs.src-faststack-master.ref   = "refs/heads/master";
+  inputs.src-faststack-master.owner = "Vladar4";
   inputs.src-faststack-master.repo  = "FastStack";
   inputs.src-faststack-master.type  = "github";
   

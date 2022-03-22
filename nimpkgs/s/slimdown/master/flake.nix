@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-slimdown-master.flake = false;
-  inputs.src-slimdown-master.owner = "ruivieira";
   inputs.src-slimdown-master.ref   = "refs/heads/master";
+  inputs.src-slimdown-master.owner = "ruivieira";
   inputs.src-slimdown-master.repo  = "nim-slimdown";
   inputs.src-slimdown-master.type  = "github";
   

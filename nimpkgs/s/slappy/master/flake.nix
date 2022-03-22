@@ -1,5 +1,5 @@
 {
-  description = ''A 3d sound API for nim.'';
+  description = ''3d sound API'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-slappy-master.flake = false;
-  inputs.src-slappy-master.owner = "treeform";
   inputs.src-slappy-master.ref   = "refs/heads/master";
+  inputs.src-slappy-master.owner = "treeform";
   inputs.src-slappy-master.repo  = "slappy";
   inputs.src-slappy-master.type  = "github";
   
   inputs."openal".owner = "nim-nix-pkgs";
   inputs."openal".ref   = "master";
   inputs."openal".repo  = "openal";
+  inputs."openal".dir   = "0_1_1";
   inputs."openal".type  = "github";
   inputs."openal".inputs.nixpkgs.follows = "nixpkgs";
   inputs."openal".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."vmath".owner = "nim-nix-pkgs";
   inputs."vmath".ref   = "master";
   inputs."vmath".repo  = "vmath";
+  inputs."vmath".dir   = "1_1_2";
   inputs."vmath".type  = "github";
   inputs."vmath".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."supersnappy".owner = "nim-nix-pkgs";
   inputs."supersnappy".ref   = "master";
   inputs."supersnappy".repo  = "supersnappy";
+  inputs."supersnappy".dir   = "2_1_1";
   inputs."supersnappy".type  = "github";
   inputs."supersnappy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."supersnappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

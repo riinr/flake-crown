@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-htmlToVdom-main.flake = false;
+  inputs.src-htmlToVdom-main.ref   = "refs/heads/main";
   inputs.src-htmlToVdom-main.owner = "C-NERD";
-  inputs.src-htmlToVdom-main.ref   = "main";
   inputs.src-htmlToVdom-main.repo  = "htmlToVdom";
   inputs.src-htmlToVdom-main.type  = "github";
   

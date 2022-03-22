@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-rethinkdb-0_1_6.flake = false;
+  inputs.src-rethinkdb-0_1_6.ref   = "refs/tags/0.1.6";
   inputs.src-rethinkdb-0_1_6.owner = "OpenSystemsLab";
-  inputs.src-rethinkdb-0_1_6.ref   = "0_1_6";
   inputs.src-rethinkdb-0_1_6.repo  = "rethinkdb.nim";
   inputs.src-rethinkdb-0_1_6.type  = "github";
   

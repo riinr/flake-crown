@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-enet-master.flake = false;
+  inputs.src-enet-master.ref   = "refs/heads/master";
   inputs.src-enet-master.owner = "fowlmouth";
-  inputs.src-enet-master.ref   = "master";
   inputs.src-enet-master.repo  = "nimrod-enet";
   inputs.src-enet-master.type  = "github";
   

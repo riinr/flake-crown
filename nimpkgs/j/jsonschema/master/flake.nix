@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-jsonschema-master.flake = false;
+  inputs.src-jsonschema-master.ref   = "refs/heads/master";
   inputs.src-jsonschema-master.owner = "PMunch";
-  inputs.src-jsonschema-master.ref   = "master";
   inputs.src-jsonschema-master.repo  = "jsonschema";
   inputs.src-jsonschema-master.type  = "github";
   

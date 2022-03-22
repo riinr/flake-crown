@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-svvpi-v0_0_4.flake = false;
-  inputs.src-svvpi-v0_0_4.owner = "kaushalmodi";
   inputs.src-svvpi-v0_0_4.ref   = "refs/tags/v0.0.4";
+  inputs.src-svvpi-v0_0_4.owner = "kaushalmodi";
   inputs.src-svvpi-v0_0_4.repo  = "nim-svvpi";
   inputs.src-svvpi-v0_0_4.type  = "github";
   
   inputs."nimterop".owner = "nim-nix-pkgs";
   inputs."nimterop".ref   = "master";
   inputs."nimterop".repo  = "nimterop";
+  inputs."nimterop".dir   = "v0_6_13";
   inputs."nimterop".type  = "github";
   inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

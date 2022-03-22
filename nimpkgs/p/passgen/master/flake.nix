@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-passgen-master.flake = false;
-  inputs.src-passgen-master.owner = "rustomax";
   inputs.src-passgen-master.ref   = "refs/heads/master";
+  inputs.src-passgen-master.owner = "rustomax";
   inputs.src-passgen-master.repo  = "nim-passgen";
   inputs.src-passgen-master.type  = "github";
   
   inputs."nimcrypto".owner = "nim-nix-pkgs";
   inputs."nimcrypto".ref   = "master";
   inputs."nimcrypto".repo  = "nimcrypto";
+  inputs."nimcrypto".dir   = "";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

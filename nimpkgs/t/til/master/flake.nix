@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-til-master.flake = false;
-  inputs.src-til-master.owner = "danielecook";
   inputs.src-til-master.ref   = "refs/heads/master";
+  inputs.src-til-master.owner = "danielecook";
   inputs.src-til-master.repo  = "til-tool";
   inputs.src-til-master.type  = "github";
   
   inputs."colorize".owner = "nim-nix-pkgs";
   inputs."colorize".ref   = "master";
   inputs."colorize".repo  = "colorize";
+  inputs."colorize".dir   = "";
   inputs."colorize".type  = "github";
   inputs."colorize".inputs.nixpkgs.follows = "nixpkgs";
   inputs."colorize".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."argparse".owner = "nim-nix-pkgs";
   inputs."argparse".ref   = "master";
   inputs."argparse".repo  = "argparse";
+  inputs."argparse".dir   = "v3_0_0";
   inputs."argparse".type  = "github";
   inputs."argparse".inputs.nixpkgs.follows = "nixpkgs";
   inputs."argparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

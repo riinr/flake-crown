@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-syllables-main.flake = false;
-  inputs.src-syllables-main.owner = "tonogram";
   inputs.src-syllables-main.ref   = "refs/heads/main";
+  inputs.src-syllables-main.owner = "tonogram";
   inputs.src-syllables-main.repo  = "nim-syllables";
   inputs.src-syllables-main.type  = "github";
   
   inputs."regex".owner = "nim-nix-pkgs";
   inputs."regex".ref   = "master";
   inputs."regex".repo  = "regex";
+  inputs."regex".dir   = "v0_19_0";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

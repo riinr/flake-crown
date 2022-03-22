@@ -1,5 +1,5 @@
 {
-  description = ''Extends stdlib make it easy on some case'';
+  description = ''Extended library for nim stdlib'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-stdext-0_0_4.flake = false;
-  inputs.src-stdext-0_0_4.owner = "zendbit";
   inputs.src-stdext-0_0_4.ref   = "refs/tags/0.0.4";
+  inputs.src-stdext-0_0_4.owner = "zendbit";
   inputs.src-stdext-0_0_4.repo  = "nim.stdext";
   inputs.src-stdext-0_0_4.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-deser-v0_1_1-alpha_1.flake = false;
+  inputs.src-deser-v0_1_1-alpha_1.ref   = "refs/tags/v0.1.1-alpha.1";
   inputs.src-deser-v0_1_1-alpha_1.owner = "gabbhack";
-  inputs.src-deser-v0_1_1-alpha_1.ref   = "v0_1_1-alpha_1";
   inputs.src-deser-v0_1_1-alpha_1.repo  = "deser";
   inputs.src-deser-v0_1_1-alpha_1.type  = "github";
   

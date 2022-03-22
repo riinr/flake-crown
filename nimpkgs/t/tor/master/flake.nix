@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-tor-master.flake = false;
-  inputs.src-tor-master.owner = "FedericoCeratto";
   inputs.src-tor-master.ref   = "refs/heads/master";
+  inputs.src-tor-master.owner = "FedericoCeratto";
   inputs.src-tor-master.repo  = "nim-tor";
   inputs.src-tor-master.type  = "github";
   

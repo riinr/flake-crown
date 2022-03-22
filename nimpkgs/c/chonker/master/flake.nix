@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-chonker-master.flake = false;
-  inputs.src-chonker-master.owner = "juancarlospaco";
   inputs.src-chonker-master.ref   = "refs/heads/master";
+  inputs.src-chonker-master.owner = "juancarlospaco";
   inputs.src-chonker-master.repo  = "nim-chonker";
   inputs.src-chonker-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimlibxlsxwriter-v0_1_1.flake = false;
+  inputs.src-nimlibxlsxwriter-v0_1_1.ref   = "refs/tags/v0.1.1";
   inputs.src-nimlibxlsxwriter-v0_1_1.owner = "ThomasTJdev";
-  inputs.src-nimlibxlsxwriter-v0_1_1.ref   = "v0_1_1";
   inputs.src-nimlibxlsxwriter-v0_1_1.repo  = "nimlibxlsxwriter";
   inputs.src-nimlibxlsxwriter-v0_1_1.type  = "github";
   

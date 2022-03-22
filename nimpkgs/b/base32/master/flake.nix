@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-base32-master.flake = false;
+  inputs.src-base32-master.ref   = "refs/heads/master";
   inputs.src-base32-master.owner = "OpenSystemsLab";
-  inputs.src-base32-master.ref   = "master";
   inputs.src-base32-master.repo  = "base32.nim";
   inputs.src-base32-master.type  = "github";
   

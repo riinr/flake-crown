@@ -1,5 +1,5 @@
 {
-  description = ''Canonical JSON according to RFC8785'';
+  description = ''canonicaljson'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-canonicaljson-1_1_2.flake = false;
-  inputs.src-canonicaljson-1_1_2.owner = "jackhftang";
   inputs.src-canonicaljson-1_1_2.ref   = "refs/tags/1.1.2";
+  inputs.src-canonicaljson-1_1_2.owner = "jackhftang";
   inputs.src-canonicaljson-1_1_2.repo  = "canonicaljson.nim";
   inputs.src-canonicaljson-1_1_2.type  = "github";
   

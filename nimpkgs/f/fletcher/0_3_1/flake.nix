@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-fletcher-0_3_1.flake = false;
-  inputs.src-fletcher-0_3_1.owner = "Akito13";
   inputs.src-fletcher-0_3_1.ref   = "refs/tags/0.3.1";
+  inputs.src-fletcher-0_3_1.owner = "Akito13";
   inputs.src-fletcher-0_3_1.repo  = "nim-fletcher";
   inputs.src-fletcher-0_3_1.type  = "github";
   

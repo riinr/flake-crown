@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-deepspeech-v0_7_0.flake = false;
+  inputs.src-deepspeech-v0_7_0.ref   = "refs/tags/v0.7.0";
   inputs.src-deepspeech-v0_7_0.owner = "eagledot";
-  inputs.src-deepspeech-v0_7_0.ref   = "v0_7_0";
   inputs.src-deepspeech-v0_7_0.repo  = "nim-deepspeech";
   inputs.src-deepspeech-v0_7_0.type  = "gitlab";
   

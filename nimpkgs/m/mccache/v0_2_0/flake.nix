@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mccache-v0_2_0.flake = false;
+  inputs.src-mccache-v0_2_0.ref   = "refs/tags/v0.2.0";
   inputs.src-mccache-v0_2_0.owner = "abbeymart";
-  inputs.src-mccache-v0_2_0.ref   = "v0_2_0";
   inputs.src-mccache-v0_2_0.repo  = "mccache-nim";
   inputs.src-mccache-v0_2_0.type  = "github";
   

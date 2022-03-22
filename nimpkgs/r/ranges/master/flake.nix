@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ranges-master.flake = false;
+  inputs.src-ranges-master.ref   = "refs/heads/master";
   inputs.src-ranges-master.owner = "status-im";
-  inputs.src-ranges-master.ref   = "master";
   inputs.src-ranges-master.repo  = "nim-ranges";
   inputs.src-ranges-master.type  = "github";
   

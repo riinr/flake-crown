@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimbus-201903-testnet0.flake = false;
+  inputs.src-nimbus-201903-testnet0.ref   = "refs/tags/201903-testnet0";
   inputs.src-nimbus-201903-testnet0.owner = "status-im";
-  inputs.src-nimbus-201903-testnet0.ref   = "201903-testnet0";
   inputs.src-nimbus-201903-testnet0.repo  = "nimbus";
   inputs.src-nimbus-201903-testnet0.type  = "github";
   

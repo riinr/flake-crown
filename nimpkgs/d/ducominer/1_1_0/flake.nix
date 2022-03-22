@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ducominer-1_1_0.flake = false;
+  inputs.src-ducominer-1_1_0.ref   = "refs/tags/1.1.0";
   inputs.src-ducominer-1_1_0.owner = "its5Q";
-  inputs.src-ducominer-1_1_0.ref   = "1_1_0";
   inputs.src-ducominer-1_1_0.repo  = "ducominer";
   inputs.src-ducominer-1_1_0.type  = "github";
   

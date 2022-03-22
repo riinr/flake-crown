@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mofuw-master.flake = false;
+  inputs.src-mofuw-master.ref   = "refs/heads/master";
   inputs.src-mofuw-master.owner = "2vg";
-  inputs.src-mofuw-master.ref   = "master";
   inputs.src-mofuw-master.repo  = "mofuw";
   inputs.src-mofuw-master.type  = "github";
   

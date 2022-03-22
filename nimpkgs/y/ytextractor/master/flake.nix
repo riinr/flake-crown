@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ytextractor-master.flake = false;
-  inputs.src-ytextractor-master.owner = "thisago";
   inputs.src-ytextractor-master.ref   = "refs/heads/master";
+  inputs.src-ytextractor-master.owner = "thisago";
   inputs.src-ytextractor-master.repo  = "ytextractor";
   inputs.src-ytextractor-master.type  = "github";
   
   inputs."ajax".owner = "nim-nix-pkgs";
   inputs."ajax".ref   = "master";
   inputs."ajax".repo  = "ajax";
+  inputs."ajax".dir   = "";
   inputs."ajax".type  = "github";
   inputs."ajax".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ajax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

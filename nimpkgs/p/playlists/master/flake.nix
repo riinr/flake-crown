@@ -1,5 +1,5 @@
 {
-  description = ''Nim library for parsing PLS, M3U, and XSPF playlist files'';
+  description = ''module for working with M3U, PLS, and XSPF playlist files'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-playlists-master.flake = false;
-  inputs.src-playlists-master.owner = "achesak";
   inputs.src-playlists-master.ref   = "refs/heads/master";
+  inputs.src-playlists-master.owner = "achesak";
   inputs.src-playlists-master.repo  = "nim-playlists";
   inputs.src-playlists-master.type  = "github";
   

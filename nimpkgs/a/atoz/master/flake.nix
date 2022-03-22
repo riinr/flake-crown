@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-atoz-master.flake = false;
+  inputs.src-atoz-master.ref   = "refs/heads/master";
   inputs.src-atoz-master.owner = "disruptek";
-  inputs.src-atoz-master.ref   = "master";
   inputs.src-atoz-master.repo  = "atoz";
   inputs.src-atoz-master.type  = "github";
   

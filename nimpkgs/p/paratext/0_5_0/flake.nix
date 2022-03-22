@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-paratext-0_5_0.flake = false;
-  inputs.src-paratext-0_5_0.owner = "paranim";
   inputs.src-paratext-0_5_0.ref   = "refs/tags/0.5.0";
+  inputs.src-paratext-0_5_0.owner = "paranim";
   inputs.src-paratext-0_5_0.repo  = "paratext";
   inputs.src-paratext-0_5_0.type  = "github";
   
   inputs."paranim".owner = "nim-nix-pkgs";
   inputs."paranim".ref   = "master";
   inputs."paranim".repo  = "paranim";
+  inputs."paranim".dir   = "0_11_0";
   inputs."paranim".type  = "github";
   inputs."paranim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."paranim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

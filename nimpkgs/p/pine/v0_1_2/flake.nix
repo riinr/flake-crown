@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pine-v0_1_2.flake = false;
-  inputs.src-pine-v0_1_2.owner = "Willyboar";
   inputs.src-pine-v0_1_2.ref   = "refs/tags/v0.1.2";
+  inputs.src-pine-v0_1_2.owner = "Willyboar";
   inputs.src-pine-v0_1_2.repo  = "pine";
   inputs.src-pine-v0_1_2.type  = "github";
   
   inputs."markdown".owner = "nim-nix-pkgs";
   inputs."markdown".ref   = "master";
   inputs."markdown".repo  = "markdown";
+  inputs."markdown".dir   = "v0_8_5";
   inputs."markdown".type  = "github";
   inputs."markdown".inputs.nixpkgs.follows = "nixpkgs";
   inputs."markdown".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."rainbow".owner = "nim-nix-pkgs";
   inputs."rainbow".ref   = "master";
   inputs."rainbow".repo  = "rainbow";
+  inputs."rainbow".dir   = "v0_2_3";
   inputs."rainbow".type  = "github";
   inputs."rainbow".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rainbow".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

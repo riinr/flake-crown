@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-bytesequtils-v1_1_2.flake = false;
+  inputs.src-bytesequtils-v1_1_2.ref   = "refs/tags/v1.1.2";
   inputs.src-bytesequtils-v1_1_2.owner = "Clonkk";
-  inputs.src-bytesequtils-v1_1_2.ref   = "v1_1_2";
   inputs.src-bytesequtils-v1_1_2.repo  = "bytesequtils";
   inputs.src-bytesequtils-v1_1_2.type  = "github";
   

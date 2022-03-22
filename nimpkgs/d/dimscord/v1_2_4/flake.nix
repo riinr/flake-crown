@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-dimscord-v1_2_4.flake = false;
+  inputs.src-dimscord-v1_2_4.ref   = "refs/tags/v1.2.4";
   inputs.src-dimscord-v1_2_4.owner = "krisppurg";
-  inputs.src-dimscord-v1_2_4.ref   = "v1_2_4";
   inputs.src-dimscord-v1_2_4.repo  = "dimscord";
   inputs.src-dimscord-v1_2_4.type  = "github";
   

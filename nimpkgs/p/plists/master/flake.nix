@@ -1,5 +1,5 @@
 {
-  description = ''Generate and parse Mac OS X .plist files in Nim.'';
+  description = ''Generate and parse Mac OS X .plist files'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-plists-master.flake = false;
-  inputs.src-plists-master.owner = "yglukhov";
   inputs.src-plists-master.ref   = "refs/heads/master";
+  inputs.src-plists-master.owner = "yglukhov";
   inputs.src-plists-master.repo  = "plists";
   inputs.src-plists-master.type  = "github";
   
   inputs."darwin".owner = "nim-nix-pkgs";
   inputs."darwin".ref   = "master";
   inputs."darwin".repo  = "darwin";
+  inputs."darwin".dir   = "";
   inputs."darwin".type  = "github";
   inputs."darwin".inputs.nixpkgs.follows = "nixpkgs";
   inputs."darwin".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-htmlAntiCopy-master.flake = false;
+  inputs.src-htmlAntiCopy-master.ref   = "refs/heads/master";
   inputs.src-htmlAntiCopy-master.owner = "thisago";
-  inputs.src-htmlAntiCopy-master.ref   = "master";
   inputs.src-htmlAntiCopy-master.repo  = "htmlAntiCopy";
   inputs.src-htmlAntiCopy-master.type  = "github";
   

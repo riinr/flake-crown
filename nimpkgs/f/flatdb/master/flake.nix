@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-flatdb-master.flake = false;
-  inputs.src-flatdb-master.owner = "enthus1ast";
   inputs.src-flatdb-master.ref   = "refs/heads/master";
+  inputs.src-flatdb-master.owner = "enthus1ast";
   inputs.src-flatdb-master.repo  = "flatdb";
   inputs.src-flatdb-master.type  = "github";
   

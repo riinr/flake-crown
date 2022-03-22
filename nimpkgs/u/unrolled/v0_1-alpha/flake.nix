@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-unrolled-v0_1-alpha.flake = false;
-  inputs.src-unrolled-v0_1-alpha.owner = "schneiderfelipe";
   inputs.src-unrolled-v0_1-alpha.ref   = "refs/tags/v0.1-alpha";
+  inputs.src-unrolled-v0_1-alpha.owner = "schneiderfelipe";
   inputs.src-unrolled-v0_1-alpha.repo  = "unrolled";
   inputs.src-unrolled-v0_1-alpha.type  = "github";
   

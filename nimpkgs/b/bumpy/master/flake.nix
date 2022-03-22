@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-bumpy-master.flake = false;
+  inputs.src-bumpy-master.ref   = "refs/heads/master";
   inputs.src-bumpy-master.owner = "treeform";
-  inputs.src-bumpy-master.ref   = "master";
   inputs.src-bumpy-master.repo  = "bumpy";
   inputs.src-bumpy-master.type  = "github";
   

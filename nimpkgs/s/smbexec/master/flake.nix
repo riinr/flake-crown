@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-SMBExec-master.flake = false;
-  inputs.src-SMBExec-master.owner = "elddy";
   inputs.src-SMBExec-master.ref   = "refs/heads/master";
+  inputs.src-SMBExec-master.owner = "elddy";
   inputs.src-SMBExec-master.repo  = "SMB-Nim";
   inputs.src-SMBExec-master.type  = "github";
   
   inputs."hashlib".owner = "nim-nix-pkgs";
   inputs."hashlib".ref   = "master";
   inputs."hashlib".repo  = "hashlib";
+  inputs."hashlib".dir   = "";
   inputs."hashlib".type  = "github";
   inputs."hashlib".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hashlib".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."hmac".owner = "nim-nix-pkgs";
   inputs."hmac".ref   = "master";
   inputs."hmac".repo  = "hmac";
+  inputs."hmac".dir   = "0_2_0";
   inputs."hmac".type  = "github";
   inputs."hmac".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hmac".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."regex".owner = "nim-nix-pkgs";
   inputs."regex".ref   = "master";
   inputs."regex".repo  = "regex";
+  inputs."regex".dir   = "v0_19_0";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -1,5 +1,5 @@
 {
-  description = ''A Smalltalk and Rebol inspired language implemented as an AST interpreter'';
+  description = ''Homoiconic dynamic language in Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-spry-master.flake = false;
-  inputs.src-spry-master.owner = "gokr";
   inputs.src-spry-master.ref   = "refs/heads/master";
+  inputs.src-spry-master.owner = "gokr";
   inputs.src-spry-master.repo  = "spry";
   inputs.src-spry-master.type  = "github";
   
   inputs."spryvm".owner = "nim-nix-pkgs";
   inputs."spryvm".ref   = "master";
   inputs."spryvm".repo  = "spryvm";
+  inputs."spryvm".dir   = "";
   inputs."spryvm".type  = "github";
   inputs."spryvm".inputs.nixpkgs.follows = "nixpkgs";
   inputs."spryvm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

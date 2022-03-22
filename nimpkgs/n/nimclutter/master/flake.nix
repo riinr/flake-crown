@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimclutter-master.flake = false;
+  inputs.src-nimclutter-master.ref   = "refs/heads/master";
   inputs.src-nimclutter-master.owner = "KeepCoolWithCoolidge";
-  inputs.src-nimclutter-master.ref   = "master";
   inputs.src-nimclutter-master.repo  = "nimclutter";
   inputs.src-nimclutter-master.type  = "github";
   

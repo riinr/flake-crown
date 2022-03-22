@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-neoid-0_3_1.flake = false;
+  inputs.src-neoid-0_3_1.ref   = "refs/tags/0.3.1";
   inputs.src-neoid-0_3_1.owner = "theAkito";
-  inputs.src-neoid-0_3_1.ref   = "0_3_1";
   inputs.src-neoid-0_3_1.repo  = "nim-neoid";
   inputs.src-neoid-0_3_1.type  = "github";
   

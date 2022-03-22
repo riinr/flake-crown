@@ -8,9 +8,9 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-gsl-main.flake = false;
+  inputs.src-gsl-main.ref   = "refs/heads/main";
   inputs.src-gsl-main.owner = "YesDrX";
-  inputs.src-gsl-main.ref   = "main";
-  inputs.src-gsl-main.repo  = "gsl-nim.git";
+  inputs.src-gsl-main.repo  = "gsl-nim";
   inputs.src-gsl-main.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

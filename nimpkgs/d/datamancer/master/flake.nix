@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-datamancer-master.flake = false;
+  inputs.src-datamancer-master.ref   = "refs/heads/master";
   inputs.src-datamancer-master.owner = "SciNim";
-  inputs.src-datamancer-master.ref   = "master";
   inputs.src-datamancer-master.repo  = "datamancer";
   inputs.src-datamancer-master.type  = "github";
   

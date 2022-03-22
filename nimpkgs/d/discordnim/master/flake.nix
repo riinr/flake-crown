@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-discordnim-master.flake = false;
+  inputs.src-discordnim-master.ref   = "refs/heads/master";
   inputs.src-discordnim-master.owner = "Krognol";
-  inputs.src-discordnim-master.ref   = "master";
   inputs.src-discordnim-master.repo  = "discordnim";
   inputs.src-discordnim-master.type  = "github";
   

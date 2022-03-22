@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nim_midi-master.flake = false;
+  inputs.src-nim_midi-master.ref   = "refs/heads/master";
   inputs.src-nim_midi-master.owner = "jerous86";
-  inputs.src-nim_midi-master.ref   = "master";
   inputs.src-nim_midi-master.repo  = "nim_midi";
   inputs.src-nim_midi-master.type  = "github";
   

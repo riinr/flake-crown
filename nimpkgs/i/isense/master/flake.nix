@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-isense-master.flake = false;
-  inputs.src-isense-master.owner = "nimious";
   inputs.src-isense-master.ref   = "refs/heads/master";
+  inputs.src-isense-master.owner = "nimious";
   inputs.src-isense-master.repo  = "isense";
   inputs.src-isense-master.type  = "github";
   

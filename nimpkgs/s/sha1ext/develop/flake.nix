@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sha1ext-develop.flake = false;
-  inputs.src-sha1ext-develop.owner = "CORDEA";
   inputs.src-sha1ext-develop.ref   = "refs/heads/develop";
+  inputs.src-sha1ext-develop.owner = "CORDEA";
   inputs.src-sha1ext-develop.repo  = "sha1ext";
   inputs.src-sha1ext-develop.type  = "github";
   

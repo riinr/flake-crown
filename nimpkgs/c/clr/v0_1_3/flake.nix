@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-clr-v0_1_3.flake = false;
-  inputs.src-clr-v0_1_3.owner = "Calinou";
   inputs.src-clr-v0_1_3.ref   = "refs/tags/v0.1.3";
+  inputs.src-clr-v0_1_3.owner = "Calinou";
   inputs.src-clr-v0_1_3.repo  = "clr";
   inputs.src-clr-v0_1_3.type  = "github";
   
   inputs."chroma".owner = "nim-nix-pkgs";
   inputs."chroma".ref   = "master";
   inputs."chroma".repo  = "chroma";
+  inputs."chroma".dir   = "";
   inputs."chroma".type  = "github";
   inputs."chroma".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chroma".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."docopt".owner = "nim-nix-pkgs";
   inputs."docopt".ref   = "master";
   inputs."docopt".repo  = "docopt";
+  inputs."docopt".dir   = "";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

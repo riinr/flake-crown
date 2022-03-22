@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-hackpad-master.flake = false;
+  inputs.src-hackpad-master.ref   = "refs/heads/master";
   inputs.src-hackpad-master.owner = "juancarlospaco";
-  inputs.src-hackpad-master.ref   = "master";
   inputs.src-hackpad-master.repo  = "nim-hackpad";
   inputs.src-hackpad-master.type  = "github";
   

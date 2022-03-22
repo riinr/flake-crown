@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-fastcgi-master.flake = false;
-  inputs.src-fastcgi-master.owner = "ba0f3";
   inputs.src-fastcgi-master.ref   = "refs/heads/master";
+  inputs.src-fastcgi-master.owner = "ba0f3";
   inputs.src-fastcgi-master.repo  = "fastcgi.nim";
   inputs.src-fastcgi-master.type  = "github";
   

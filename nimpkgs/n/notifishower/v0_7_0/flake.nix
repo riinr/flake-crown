@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-notifishower-v0_7_0.flake = false;
+  inputs.src-notifishower-v0_7_0.ref   = "refs/tags/v0.7.0";
   inputs.src-notifishower-v0_7_0.owner = "PMunch";
-  inputs.src-notifishower-v0_7_0.ref   = "v0_7_0";
   inputs.src-notifishower-v0_7_0.repo  = "notifishower";
   inputs.src-notifishower-v0_7_0.type  = "github";
   

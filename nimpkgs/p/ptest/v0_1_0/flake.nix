@@ -1,5 +1,5 @@
 {
-  description = ''Print-testing for nim.'';
+  description = ''You debug with print statements? Why don't you also test with them?'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ptest-v0_1_0.flake = false;
-  inputs.src-ptest-v0_1_0.owner = "treeform";
   inputs.src-ptest-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-ptest-v0_1_0.owner = "treeform";
   inputs.src-ptest-v0_1_0.repo  = "ptest";
   inputs.src-ptest-v0_1_0.type  = "github";
   

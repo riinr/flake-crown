@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-stopwatch-v3_5.flake = false;
-  inputs.src-stopwatch-v3_5.owner = "define-private-public";
   inputs.src-stopwatch-v3_5.ref   = "refs/tags/v3.5";
+  inputs.src-stopwatch-v3_5.owner = "define-private-public";
   inputs.src-stopwatch-v3_5.repo  = "stopwatch";
   inputs.src-stopwatch-v3_5.type  = "gitlab";
   

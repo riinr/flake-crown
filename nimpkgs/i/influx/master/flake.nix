@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-influx-master.flake = false;
-  inputs.src-influx-master.owner = "samdmarshall";
   inputs.src-influx-master.ref   = "refs/heads/master";
+  inputs.src-influx-master.owner = "samdmarshall";
   inputs.src-influx-master.repo  = "influx.nim";
   inputs.src-influx-master.type  = "github";
   

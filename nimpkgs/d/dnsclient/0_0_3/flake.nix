@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-dnsclient-0_0_3.flake = false;
+  inputs.src-dnsclient-0_0_3.ref   = "refs/tags/0.0.3";
   inputs.src-dnsclient-0_0_3.owner = "ba0f3";
-  inputs.src-dnsclient-0_0_3.ref   = "0_0_3";
   inputs.src-dnsclient-0_0_3.repo  = "dnsclient.nim";
   inputs.src-dnsclient-0_0_3.type  = "github";
   

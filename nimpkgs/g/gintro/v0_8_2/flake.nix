@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-gintro-v0_8_2.flake = false;
+  inputs.src-gintro-v0_8_2.ref   = "refs/tags/v0.8.2";
   inputs.src-gintro-v0_8_2.owner = "stefansalewski";
-  inputs.src-gintro-v0_8_2.ref   = "v0_8_2";
   inputs.src-gintro-v0_8_2.repo  = "gintro";
   inputs.src-gintro-v0_8_2.type  = "github";
   

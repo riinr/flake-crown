@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nicoru-develop.flake = false;
+  inputs.src-nicoru-develop.ref   = "refs/heads/develop";
   inputs.src-nicoru-develop.owner = "fox0430";
-  inputs.src-nicoru-develop.ref   = "develop";
   inputs.src-nicoru-develop.repo  = "nicoru";
   inputs.src-nicoru-develop.type  = "github";
   

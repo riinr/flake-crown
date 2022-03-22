@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-manu-master.flake = false;
+  inputs.src-manu-master.ref   = "refs/heads/master";
   inputs.src-manu-master.owner = "planetis-m";
-  inputs.src-manu-master.ref   = "master";
   inputs.src-manu-master.repo  = "manu";
   inputs.src-manu-master.type  = "github";
   

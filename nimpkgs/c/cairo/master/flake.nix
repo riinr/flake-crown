@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-cairo-master.flake = false;
-  inputs.src-cairo-master.owner = "nim-lang";
   inputs.src-cairo-master.ref   = "refs/heads/master";
+  inputs.src-cairo-master.owner = "nim-lang";
   inputs.src-cairo-master.repo  = "cairo";
   inputs.src-cairo-master.type  = "github";
   

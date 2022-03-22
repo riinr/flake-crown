@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-gamelight-master.flake = false;
+  inputs.src-gamelight-master.ref   = "refs/heads/master";
   inputs.src-gamelight-master.owner = "dom96";
-  inputs.src-gamelight-master.ref   = "master";
   inputs.src-gamelight-master.repo  = "gamelight";
   inputs.src-gamelight-master.type  = "github";
   

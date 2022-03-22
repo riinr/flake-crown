@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sqlite3_abi-master.flake = false;
-  inputs.src-sqlite3_abi-master.owner = "arnetheduck";
   inputs.src-sqlite3_abi-master.ref   = "refs/heads/master";
+  inputs.src-sqlite3_abi-master.owner = "arnetheduck";
   inputs.src-sqlite3_abi-master.repo  = "nim-sqlite3-abi";
   inputs.src-sqlite3_abi-master.type  = "github";
   

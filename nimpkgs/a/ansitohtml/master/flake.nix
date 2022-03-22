@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ansitohtml-master.flake = false;
+  inputs.src-ansitohtml-master.ref   = "refs/heads/master";
   inputs.src-ansitohtml-master.owner = "PMunch";
-  inputs.src-ansitohtml-master.ref   = "master";
   inputs.src-ansitohtml-master.repo  = "ansitohtml";
   inputs.src-ansitohtml-master.type  = "github";
   

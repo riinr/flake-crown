@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-webdavclient-0_1_0.flake = false;
-  inputs.src-webdavclient-0_1_0.owner = "beshrkayali";
   inputs.src-webdavclient-0_1_0.ref   = "refs/tags/0.1.0";
+  inputs.src-webdavclient-0_1_0.owner = "beshrkayali";
   inputs.src-webdavclient-0_1_0.repo  = "webdavclient";
   inputs.src-webdavclient-0_1_0.type  = "github";
   

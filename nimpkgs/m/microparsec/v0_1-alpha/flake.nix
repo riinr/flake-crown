@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-microparsec-v0_1-alpha.flake = false;
+  inputs.src-microparsec-v0_1-alpha.ref   = "refs/tags/v0.1-alpha";
   inputs.src-microparsec-v0_1-alpha.owner = "schneiderfelipe";
-  inputs.src-microparsec-v0_1-alpha.ref   = "v0_1-alpha";
   inputs.src-microparsec-v0_1-alpha.repo  = "microparsec";
   inputs.src-microparsec-v0_1-alpha.type  = "github";
   

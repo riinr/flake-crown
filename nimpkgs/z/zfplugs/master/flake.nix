@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-zfplugs-master.flake = false;
-  inputs.src-zfplugs-master.owner = "zendbit";
   inputs.src-zfplugs-master.ref   = "refs/heads/master";
+  inputs.src-zfplugs-master.owner = "zendbit";
   inputs.src-zfplugs-master.repo  = "nim.zfplugs";
   inputs.src-zfplugs-master.type  = "github";
   
   inputs."zfdbms".owner = "nim-nix-pkgs";
   inputs."zfdbms".ref   = "master";
   inputs."zfdbms".repo  = "zfdbms";
+  inputs."zfdbms".dir   = "";
   inputs."zfdbms".type  = "github";
   inputs."zfdbms".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfdbms".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."zfcore".owner = "nim-nix-pkgs";
   inputs."zfcore".ref   = "master";
   inputs."zfcore".repo  = "zfcore";
+  inputs."zfcore".dir   = "";
   inputs."zfcore".type  = "github";
   inputs."zfcore".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfcore".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."moustachu".owner = "nim-nix-pkgs";
   inputs."moustachu".ref   = "master";
   inputs."moustachu".repo  = "moustachu";
+  inputs."moustachu".dir   = "0_14_0";
   inputs."moustachu".type  = "github";
   inputs."moustachu".inputs.nixpkgs.follows = "nixpkgs";
   inputs."moustachu".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

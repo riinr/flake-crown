@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-zero_functional-v0_0_1.flake = false;
-  inputs.src-zero_functional-v0_0_1.owner = "zero-functional";
   inputs.src-zero_functional-v0_0_1.ref   = "refs/tags/v0.0.1";
+  inputs.src-zero_functional-v0_0_1.owner = "zero-functional";
   inputs.src-zero_functional-v0_0_1.repo  = "zero-functional";
   inputs.src-zero_functional-v0_0_1.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-fmod-master.flake = false;
-  inputs.src-fmod-master.owner = "johnnovak";
   inputs.src-fmod-master.ref   = "refs/heads/master";
+  inputs.src-fmod-master.owner = "johnnovak";
   inputs.src-fmod-master.repo  = "nim-fmod";
   inputs.src-fmod-master.type  = "github";
   

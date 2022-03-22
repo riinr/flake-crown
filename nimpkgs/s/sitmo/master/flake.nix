@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sitmo-master.flake = false;
-  inputs.src-sitmo-master.owner = "jxy";
   inputs.src-sitmo-master.ref   = "refs/heads/master";
+  inputs.src-sitmo-master.owner = "jxy";
   inputs.src-sitmo-master.repo  = "sitmo";
   inputs.src-sitmo-master.type  = "github";
   

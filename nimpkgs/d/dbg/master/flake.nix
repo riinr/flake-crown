@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-dbg-master.flake = false;
+  inputs.src-dbg-master.ref   = "refs/heads/master";
   inputs.src-dbg-master.owner = "enthus1ast";
-  inputs.src-dbg-master.ref   = "master";
   inputs.src-dbg-master.repo  = "nimDbg";
   inputs.src-dbg-master.type  = "github";
   

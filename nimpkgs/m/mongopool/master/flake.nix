@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mongopool-master.flake = false;
+  inputs.src-mongopool-master.ref   = "refs/heads/master";
   inputs.src-mongopool-master.owner = "JohnAD";
-  inputs.src-mongopool-master.ref   = "master";
   inputs.src-mongopool-master.repo  = "mongopool";
   inputs.src-mongopool-master.type  = "github";
   

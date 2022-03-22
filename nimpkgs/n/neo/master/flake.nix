@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-neo-master.flake = false;
+  inputs.src-neo-master.ref   = "refs/heads/master";
   inputs.src-neo-master.owner = "andreaferretti";
-  inputs.src-neo-master.ref   = "master";
   inputs.src-neo-master.repo  = "neo";
   inputs.src-neo-master.type  = "github";
   

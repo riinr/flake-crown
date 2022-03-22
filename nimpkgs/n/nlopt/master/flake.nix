@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nlopt-master.flake = false;
+  inputs.src-nlopt-master.ref   = "refs/heads/master";
   inputs.src-nlopt-master.owner = "Vindaar";
-  inputs.src-nlopt-master.ref   = "master";
   inputs.src-nlopt-master.repo  = "nimnlopt";
   inputs.src-nlopt-master.type  = "github";
   

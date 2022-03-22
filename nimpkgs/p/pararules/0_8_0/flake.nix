@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pararules-0_8_0.flake = false;
-  inputs.src-pararules-0_8_0.owner = "paranim";
   inputs.src-pararules-0_8_0.ref   = "refs/tags/0.8.0";
+  inputs.src-pararules-0_8_0.owner = "paranim";
   inputs.src-pararules-0_8_0.repo  = "pararules";
   inputs.src-pararules-0_8_0.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sndfile-master.flake = false;
-  inputs.src-sndfile-master.owner = "julienaubert";
   inputs.src-sndfile-master.ref   = "refs/heads/master";
+  inputs.src-sndfile-master.owner = "julienaubert";
   inputs.src-sndfile-master.repo  = "nim-sndfile";
   inputs.src-sndfile-master.type  = "github";
   

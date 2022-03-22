@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimwc-v6_0_6.flake = false;
+  inputs.src-nimwc-v6_0_6.ref   = "refs/tags/v6.0.6";
   inputs.src-nimwc-v6_0_6.owner = "ThomasTJdev";
-  inputs.src-nimwc-v6_0_6.ref   = "v6_0_6";
   inputs.src-nimwc-v6_0_6.repo  = "nim_websitecreator";
   inputs.src-nimwc-v6_0_6.type  = "github";
   

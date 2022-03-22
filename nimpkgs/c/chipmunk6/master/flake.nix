@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-chipmunk6-master.flake = false;
-  inputs.src-chipmunk6-master.owner = "fowlmouth";
   inputs.src-chipmunk6-master.ref   = "refs/heads/master";
+  inputs.src-chipmunk6-master.owner = "fowlmouth";
   inputs.src-chipmunk6-master.repo  = "nimrod-chipmunk";
   inputs.src-chipmunk6-master.type  = "github";
   

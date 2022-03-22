@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-static_server-master.flake = false;
-  inputs.src-static_server-master.owner = "bung87";
   inputs.src-static_server-master.ref   = "refs/heads/master";
+  inputs.src-static_server-master.owner = "bung87";
   inputs.src-static_server-master.repo  = "nimhttpd";
   inputs.src-static_server-master.type  = "github";
   
   inputs."finder".owner = "nim-nix-pkgs";
   inputs."finder".ref   = "master";
   inputs."finder".repo  = "finder";
+  inputs."finder".dir   = "v0_2_0";
   inputs."finder".type  = "github";
   inputs."finder".inputs.nixpkgs.follows = "nixpkgs";
   inputs."finder".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

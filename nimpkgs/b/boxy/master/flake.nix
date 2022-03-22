@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-boxy-master.flake = false;
+  inputs.src-boxy-master.ref   = "refs/heads/master";
   inputs.src-boxy-master.owner = "treeform";
-  inputs.src-boxy-master.ref   = "master";
   inputs.src-boxy-master.repo  = "boxy";
   inputs.src-boxy-master.type  = "github";
   

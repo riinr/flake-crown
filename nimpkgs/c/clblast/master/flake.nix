@@ -1,5 +1,5 @@
 {
-  description = ''Wrapper for CLBlast, an OpenCL BLAS library'';
+  description = ''A wrapper for CLBlast, an OpenCL BLAS library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-clblast-master.flake = false;
-  inputs.src-clblast-master.owner = "numforge";
   inputs.src-clblast-master.ref   = "refs/heads/master";
+  inputs.src-clblast-master.owner = "numforge";
   inputs.src-clblast-master.repo  = "nim-clblast";
   inputs.src-clblast-master.type  = "github";
   
   inputs."opencl".owner = "nim-nix-pkgs";
   inputs."opencl".ref   = "master";
   inputs."opencl".repo  = "opencl";
+  inputs."opencl".dir   = "";
   inputs."opencl".type  = "github";
   inputs."opencl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."opencl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

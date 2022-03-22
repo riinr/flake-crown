@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-antlr4nim-main.flake = false;
+  inputs.src-antlr4nim-main.ref   = "refs/heads/main";
   inputs.src-antlr4nim-main.owner = "jan0sc";
-  inputs.src-antlr4nim-main.ref   = "main";
   inputs.src-antlr4nim-main.repo  = "antlr4nim";
   inputs.src-antlr4nim-main.type  = "github";
   

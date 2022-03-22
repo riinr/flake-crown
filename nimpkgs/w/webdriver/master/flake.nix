@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-webdriver-master.flake = false;
-  inputs.src-webdriver-master.owner = "dom96";
   inputs.src-webdriver-master.ref   = "refs/heads/master";
+  inputs.src-webdriver-master.owner = "dom96";
   inputs.src-webdriver-master.repo  = "webdriver";
   inputs.src-webdriver-master.type  = "github";
   

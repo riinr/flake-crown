@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-genieos-v9_0_1-jessica.flake = false;
+  inputs.src-genieos-v9_0_1-jessica.ref   = "refs/tags/v9.0.1-jessica";
   inputs.src-genieos-v9_0_1-jessica.owner = "Araq";
-  inputs.src-genieos-v9_0_1-jessica.ref   = "v9_0_1-jessica";
   inputs.src-genieos-v9_0_1-jessica.repo  = "genieos";
   inputs.src-genieos-v9_0_1-jessica.type  = "github";
   

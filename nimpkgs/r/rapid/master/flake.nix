@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-rapid-master.flake = false;
+  inputs.src-rapid-master.ref   = "refs/heads/master";
   inputs.src-rapid-master.owner = "liquid600pgm";
-  inputs.src-rapid-master.ref   = "master";
   inputs.src-rapid-master.repo  = "rapid";
   inputs.src-rapid-master.type  = "github";
   

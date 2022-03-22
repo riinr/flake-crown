@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-eachdo-v0_1_0.flake = false;
+  inputs.src-eachdo-v0_1_0.ref   = "refs/tags/v0.1.0";
   inputs.src-eachdo-v0_1_0.owner = "jiro4989";
-  inputs.src-eachdo-v0_1_0.ref   = "v0_1_0";
   inputs.src-eachdo-v0_1_0.repo  = "eachdo";
   inputs.src-eachdo-v0_1_0.type  = "github";
   

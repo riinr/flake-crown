@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-stalinsort-v0_2_1.flake = false;
-  inputs.src-stalinsort-v0_2_1.owner = "tonogram";
   inputs.src-stalinsort-v0_2_1.ref   = "refs/tags/v0.2.1";
+  inputs.src-stalinsort-v0_2_1.owner = "tonogram";
   inputs.src-stalinsort-v0_2_1.repo  = "stalinsort";
   inputs.src-stalinsort-v0_2_1.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-murmurhash-master.flake = false;
+  inputs.src-murmurhash-master.ref   = "refs/heads/master";
   inputs.src-murmurhash-master.owner = "cwpearson";
-  inputs.src-murmurhash-master.ref   = "master";
   inputs.src-murmurhash-master.repo  = "nim-murmurhash";
   inputs.src-murmurhash-master.type  = "github";
   

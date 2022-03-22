@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-hastyscribe-v1_12_2.flake = false;
+  inputs.src-hastyscribe-v1_12_2.ref   = "refs/tags/v1.12.2";
   inputs.src-hastyscribe-v1_12_2.owner = "h3rald";
-  inputs.src-hastyscribe-v1_12_2.ref   = "v1_12_2";
   inputs.src-hastyscribe-v1_12_2.repo  = "hastyscribe";
   inputs.src-hastyscribe-v1_12_2.type  = "github";
   

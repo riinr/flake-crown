@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-bitty-master.flake = false;
+  inputs.src-bitty-master.ref   = "refs/heads/master";
   inputs.src-bitty-master.owner = "treeform";
-  inputs.src-bitty-master.ref   = "master";
   inputs.src-bitty-master.repo  = "bitty";
   inputs.src-bitty-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-bs-main.flake = false;
+  inputs.src-bs-main.ref   = "refs/heads/main";
   inputs.src-bs-main.owner = "maubg-debug";
-  inputs.src-bs-main.ref   = "main";
   inputs.src-bs-main.repo  = "build-sys";
   inputs.src-bs-main.type  = "github";
   

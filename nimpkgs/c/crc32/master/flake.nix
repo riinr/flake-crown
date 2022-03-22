@@ -1,5 +1,5 @@
 {
-  description = ''CRC32, 2 proc, copied from RosettaCode.'';
+  description = ''CRC-32 In-Place'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-crc32-master.flake = false;
-  inputs.src-crc32-master.owner = "juancarlospaco";
   inputs.src-crc32-master.ref   = "refs/heads/master";
+  inputs.src-crc32-master.owner = "juancarlospaco";
   inputs.src-crc32-master.repo  = "nim-crc32";
   inputs.src-crc32-master.type  = "github";
   

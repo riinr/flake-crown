@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-redpool-master.flake = false;
+  inputs.src-redpool-master.ref   = "refs/heads/master";
   inputs.src-redpool-master.owner = "zedeus";
-  inputs.src-redpool-master.ref   = "master";
   inputs.src-redpool-master.repo  = "redpool";
   inputs.src-redpool-master.type  = "github";
   

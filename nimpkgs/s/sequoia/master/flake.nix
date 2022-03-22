@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sequoia-master.flake = false;
-  inputs.src-sequoia-master.owner = "ba0f3";
   inputs.src-sequoia-master.ref   = "refs/heads/master";
+  inputs.src-sequoia-master.owner = "ba0f3";
   inputs.src-sequoia-master.repo  = "sequoia.nim";
   inputs.src-sequoia-master.type  = "github";
   

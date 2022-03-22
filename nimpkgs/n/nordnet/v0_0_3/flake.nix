@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nordnet-v0_0_3.flake = false;
+  inputs.src-nordnet-v0_0_3.ref   = "refs/tags/v0.0.3";
   inputs.src-nordnet-v0_0_3.owner = "ThomasTJdev";
-  inputs.src-nordnet-v0_0_3.ref   = "v0_0_3";
   inputs.src-nordnet-v0_0_3.repo  = "nim_nordnet_api";
   inputs.src-nordnet-v0_0_3.type  = "github";
   

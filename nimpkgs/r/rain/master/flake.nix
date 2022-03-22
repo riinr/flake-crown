@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-rain-master.flake = false;
+  inputs.src-rain-master.ref   = "refs/heads/master";
   inputs.src-rain-master.owner = "OHermesJunior";
-  inputs.src-rain-master.ref   = "master";
   inputs.src-rain-master.repo  = "rain.nim";
   inputs.src-rain-master.type  = "github";
   

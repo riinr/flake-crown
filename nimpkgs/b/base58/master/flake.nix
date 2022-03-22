@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-base58-master.flake = false;
-  inputs.src-base58-master.owner = "~ehmry";
   inputs.src-base58-master.ref   = "master";
+  inputs.src-base58-master.owner = "~ehmry";
   inputs.src-base58-master.repo  = "nim_base58";
   inputs.src-base58-master.type  = "sourcehut";
   

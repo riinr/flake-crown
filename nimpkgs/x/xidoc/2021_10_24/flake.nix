@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-xidoc-2021_10_24.flake = false;
-  inputs.src-xidoc-2021_10_24.owner = "xigoi";
   inputs.src-xidoc-2021_10_24.ref   = "refs/tags/2021.10.24";
+  inputs.src-xidoc-2021_10_24.owner = "xigoi";
   inputs.src-xidoc-2021_10_24.repo  = "xidoc";
   inputs.src-xidoc-2021_10_24.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."npeg".owner = "nim-nix-pkgs";
   inputs."npeg".ref   = "master";
   inputs."npeg".repo  = "npeg";
+  inputs."npeg".dir   = "0_26_0";
   inputs."npeg".type  = "github";
   inputs."npeg".inputs.nixpkgs.follows = "nixpkgs";
   inputs."npeg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

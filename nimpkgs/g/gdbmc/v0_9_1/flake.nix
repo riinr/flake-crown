@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-gdbmc-v0_9_1.flake = false;
+  inputs.src-gdbmc-v0_9_1.ref   = "refs/tags/v0.9.1";
   inputs.src-gdbmc-v0_9_1.owner = "vycb";
-  inputs.src-gdbmc-v0_9_1.ref   = "v0_9_1";
   inputs.src-gdbmc-v0_9_1.repo  = "gdbmc.nim";
   inputs.src-gdbmc-v0_9_1.type  = "github";
   

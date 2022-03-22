@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-marggers-v0_2_3.flake = false;
+  inputs.src-marggers-v0_2_3.ref   = "refs/tags/v0.2.3";
   inputs.src-marggers-v0_2_3.owner = "metagn";
-  inputs.src-marggers-v0_2_3.ref   = "v0_2_3";
   inputs.src-marggers-v0_2_3.repo  = "marggers";
   inputs.src-marggers-v0_2_3.type  = "github";
   

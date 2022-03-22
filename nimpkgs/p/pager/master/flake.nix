@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pager-master.flake = false;
-  inputs.src-pager-master.owner = "~reesmichael1";
   inputs.src-pager-master.ref   = "master";
+  inputs.src-pager-master.owner = "~reesmichael1";
   inputs.src-pager-master.repo  = "nim-pager";
   inputs.src-pager-master.type  = "sourcehut";
   

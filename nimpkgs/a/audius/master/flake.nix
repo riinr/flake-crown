@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-audius-master.flake = false;
+  inputs.src-audius-master.ref   = "refs/heads/master";
   inputs.src-audius-master.owner = "ceebeel";
-  inputs.src-audius-master.ref   = "master";
   inputs.src-audius-master.repo  = "audius";
   inputs.src-audius-master.type  = "github";
   

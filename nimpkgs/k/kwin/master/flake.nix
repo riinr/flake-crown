@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-kwin-master.flake = false;
+  inputs.src-kwin-master.ref   = "refs/heads/master";
   inputs.src-kwin-master.owner = "reactormonk";
-  inputs.src-kwin-master.ref   = "master";
   inputs.src-kwin-master.repo  = "nim-kwin";
   inputs.src-kwin-master.type  = "github";
   

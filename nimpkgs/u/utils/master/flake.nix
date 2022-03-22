@@ -1,5 +1,5 @@
 {
-  description = ''Collection of string, parsing, pointer, ... utilities.'';
+  description = ''Collection of useful Nim code.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-utils-master.flake = false;
-  inputs.src-utils-master.owner = "nim-appkit";
   inputs.src-utils-master.ref   = "refs/heads/master";
+  inputs.src-utils-master.owner = "nim-appkit";
   inputs.src-utils-master.repo  = "utils";
   inputs.src-utils-master.type  = "github";
   
   inputs."values".owner = "nim-nix-pkgs";
   inputs."values".ref   = "master";
   inputs."values".repo  = "values";
+  inputs."values".dir   = "0_1_1";
   inputs."values".type  = "github";
   inputs."values".inputs.nixpkgs.follows = "nixpkgs";
   inputs."values".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

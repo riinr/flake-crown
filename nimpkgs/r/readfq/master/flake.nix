@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-readfq-master.flake = false;
+  inputs.src-readfq-master.ref   = "refs/heads/master";
   inputs.src-readfq-master.owner = "andreas-wilm";
-  inputs.src-readfq-master.ref   = "master";
   inputs.src-readfq-master.repo  = "nimreadfq";
   inputs.src-readfq-master.type  = "github";
   

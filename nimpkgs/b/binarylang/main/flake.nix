@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-binarylang-main.flake = false;
+  inputs.src-binarylang-main.ref   = "refs/heads/main";
   inputs.src-binarylang-main.owner = "sealmove";
-  inputs.src-binarylang-main.ref   = "main";
   inputs.src-binarylang-main.repo  = "binarylang";
   inputs.src-binarylang-main.type  = "github";
   

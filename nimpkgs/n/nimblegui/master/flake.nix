@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimblegui-master.flake = false;
+  inputs.src-nimblegui-master.ref   = "refs/heads/master";
   inputs.src-nimblegui-master.owner = "ThomasTJdev";
-  inputs.src-nimblegui-master.ref   = "master";
   inputs.src-nimblegui-master.repo  = "nim_nimble_gui";
   inputs.src-nimblegui-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-prettyvec-main.flake = false;
-  inputs.src-prettyvec-main.owner = "prettybauble";
   inputs.src-prettyvec-main.ref   = "refs/heads/main";
+  inputs.src-prettyvec-main.owner = "prettybauble";
   inputs.src-prettyvec-main.repo  = "prettyvec";
   inputs.src-prettyvec-main.type  = "github";
   

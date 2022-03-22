@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-omnilog-master.flake = false;
+  inputs.src-omnilog-master.ref   = "refs/heads/master";
   inputs.src-omnilog-master.owner = "nim-appkit";
-  inputs.src-omnilog-master.ref   = "master";
   inputs.src-omnilog-master.repo  = "omnilog";
   inputs.src-omnilog-master.type  = "github";
   

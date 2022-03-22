@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-jsony-0_0_5.flake = false;
+  inputs.src-jsony-0_0_5.ref   = "refs/tags/0.0.5";
   inputs.src-jsony-0_0_5.owner = "treeform";
-  inputs.src-jsony-0_0_5.ref   = "0_0_5";
   inputs.src-jsony-0_0_5.repo  = "jsony";
   inputs.src-jsony-0_0_5.type  = "github";
   

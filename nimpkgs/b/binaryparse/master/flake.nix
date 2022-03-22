@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-binaryparse-master.flake = false;
+  inputs.src-binaryparse-master.ref   = "refs/heads/master";
   inputs.src-binaryparse-master.owner = "PMunch";
-  inputs.src-binaryparse-master.ref   = "master";
   inputs.src-binaryparse-master.repo  = "binaryparse";
   inputs.src-binaryparse-master.type  = "github";
   

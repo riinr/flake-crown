@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1647920574,
+        "narHash": "sha256-D3ob5QykELhyNcTnISOkjEzLlgXltwON8Ucrz5cpiQI=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "bfb46a1f762002f07f9d81d93dacd544c6890623",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-numToWord-master": "src-numToWord-master"
+      }
+    },
+    "src-numToWord-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1628822967,
+        "narHash": "sha256-Y9WNXhA4LdKWr8pC/mLX1m5KtqS1fRAPQCffIAWrfBM=",
+        "owner": "thisago",
+        "repo": "numToWord",
+        "rev": "525a668eb8dacd4f36d4ba1b223d73da61b2d90b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thisago",
+        "ref": "refs/heads/master",
+        "repo": "numToWord",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

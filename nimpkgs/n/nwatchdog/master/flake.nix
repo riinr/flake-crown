@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nwatchdog-master.flake = false;
+  inputs.src-nwatchdog-master.ref   = "refs/heads/master";
   inputs.src-nwatchdog-master.owner = "zendbit";
-  inputs.src-nwatchdog-master.ref   = "master";
   inputs.src-nwatchdog-master.repo  = "nim.nwatchdog";
   inputs.src-nwatchdog-master.type  = "github";
   

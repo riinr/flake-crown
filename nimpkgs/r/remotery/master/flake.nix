@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-Remotery-master.flake = false;
+  inputs.src-Remotery-master.ref   = "refs/heads/master";
   inputs.src-Remotery-master.owner = "Halsys";
-  inputs.src-Remotery-master.ref   = "master";
   inputs.src-Remotery-master.repo  = "Nim-Remotery";
   inputs.src-Remotery-master.type  = "github";
   

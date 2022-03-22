@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-opengl-master.flake = false;
+  inputs.src-opengl-master.ref   = "refs/heads/master";
   inputs.src-opengl-master.owner = "nim-lang";
-  inputs.src-opengl-master.ref   = "master";
   inputs.src-opengl-master.repo  = "opengl";
   inputs.src-opengl-master.type  = "github";
   

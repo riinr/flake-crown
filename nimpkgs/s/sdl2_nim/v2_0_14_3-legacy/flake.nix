@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sdl2_nim-v2_0_14_3-legacy.flake = false;
-  inputs.src-sdl2_nim-v2_0_14_3-legacy.owner = "Vladar4";
   inputs.src-sdl2_nim-v2_0_14_3-legacy.ref   = "refs/tags/v2.0.14.3-legacy";
+  inputs.src-sdl2_nim-v2_0_14_3-legacy.owner = "Vladar4";
   inputs.src-sdl2_nim-v2_0_14_3-legacy.repo  = "sdl2_nim";
   inputs.src-sdl2_nim-v2_0_14_3-legacy.type  = "github";
   
   inputs."winim".owner = "nim-nix-pkgs";
   inputs."winim".ref   = "master";
   inputs."winim".repo  = "winim";
+  inputs."winim".dir   = "3_8_0";
   inputs."winim".type  = "github";
   inputs."winim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."winim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."x11".owner = "nim-nix-pkgs";
   inputs."x11".ref   = "master";
   inputs."x11".repo  = "x11";
+  inputs."x11".dir   = "";
   inputs."x11".type  = "github";
   inputs."x11".inputs.nixpkgs.follows = "nixpkgs";
   inputs."x11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

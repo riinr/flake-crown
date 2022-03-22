@@ -1,5 +1,5 @@
 {
-  description = ''A vim-based editor'';
+  description = ''A parasitic editor'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pvim-0_1_0.flake = false;
-  inputs.src-pvim-0_1_0.owner = "paranim";
   inputs.src-pvim-0_1_0.ref   = "refs/tags/0.1.0";
+  inputs.src-pvim-0_1_0.owner = "paranim";
   inputs.src-pvim-0_1_0.repo  = "pvim";
   inputs.src-pvim-0_1_0.type  = "github";
   
   inputs."paranim".owner = "nim-nix-pkgs";
   inputs."paranim".ref   = "master";
   inputs."paranim".repo  = "paranim";
+  inputs."paranim".dir   = "0_11_0";
   inputs."paranim".type  = "github";
   inputs."paranim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."paranim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."pararules".owner = "nim-nix-pkgs";
   inputs."pararules".ref   = "master";
   inputs."pararules".repo  = "pararules";
+  inputs."pararules".dir   = "1_0_1";
   inputs."pararules".type  = "github";
   inputs."pararules".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pararules".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."paratext".owner = "nim-nix-pkgs";
   inputs."paratext".ref   = "master";
   inputs."paratext".repo  = "paratext";
+  inputs."paratext".dir   = "0_12_0";
   inputs."paratext".type  = "github";
   inputs."paratext".inputs.nixpkgs.follows = "nixpkgs";
   inputs."paratext".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

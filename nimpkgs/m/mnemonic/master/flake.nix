@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mnemonic-master.flake = false;
+  inputs.src-mnemonic-master.ref   = "refs/heads/master";
   inputs.src-mnemonic-master.owner = "markspanbroek";
-  inputs.src-mnemonic-master.ref   = "master";
   inputs.src-mnemonic-master.repo  = "mnemonic";
   inputs.src-mnemonic-master.type  = "github";
   

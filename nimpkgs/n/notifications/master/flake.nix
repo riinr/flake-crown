@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-notifications-master.flake = false;
+  inputs.src-notifications-master.ref   = "refs/heads/master";
   inputs.src-notifications-master.owner = "dom96";
-  inputs.src-notifications-master.ref   = "master";
   inputs.src-notifications-master.repo  = "notifications";
   inputs.src-notifications-master.type  = "github";
   

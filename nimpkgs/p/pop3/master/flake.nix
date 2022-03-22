@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pop3-master.flake = false;
-  inputs.src-pop3-master.owner = "FedericoCeratto";
   inputs.src-pop3-master.ref   = "refs/heads/master";
+  inputs.src-pop3-master.owner = "FedericoCeratto";
   inputs.src-pop3-master.repo  = "nim-pop3";
   inputs.src-pop3-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-biscuits-master.flake = false;
+  inputs.src-biscuits-master.ref   = "refs/heads/master";
   inputs.src-biscuits-master.owner = "achesak";
-  inputs.src-biscuits-master.ref   = "master";
   inputs.src-biscuits-master.repo  = "nim-biscuits";
   inputs.src-biscuits-master.type  = "github";
   

@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1647920574,
+        "narHash": "sha256-D3ob5QykELhyNcTnISOkjEzLlgXltwON8Ucrz5cpiQI=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "bfb46a1f762002f07f9d81d93dacd544c6890623",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-ncurses-master": "src-ncurses-master"
+      }
+    },
+    "src-ncurses-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1588327817,
+        "narHash": "sha256-HJi2tfD+sW4l4dPLy+TRih85N1bLty5jPQYi39rbqbM=",
+        "owner": "walkre-niboshi",
+        "repo": "nim-ncurses",
+        "rev": "1027fe13d091583608e7e7da3c3e0d13aceb4b11",
+        "type": "github"
+      },
+      "original": {
+        "owner": "walkre-niboshi",
+        "ref": "refs/heads/master",
+        "repo": "nim-ncurses",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

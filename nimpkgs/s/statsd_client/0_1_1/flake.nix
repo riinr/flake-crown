@@ -1,5 +1,5 @@
 {
-  description = ''A simple, stateless StatsD client library'';
+  description = ''statsd client'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-statsd_client-0_1_1.flake = false;
-  inputs.src-statsd_client-0_1_1.owner = "FedericoCeratto";
   inputs.src-statsd_client-0_1_1.ref   = "refs/tags/0.1.1";
+  inputs.src-statsd_client-0_1_1.owner = "FedericoCeratto";
   inputs.src-statsd_client-0_1_1.repo  = "nim-statsd-client";
   inputs.src-statsd_client-0_1_1.type  = "github";
   

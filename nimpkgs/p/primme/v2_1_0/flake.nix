@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-primme-v2_1_0.flake = false;
-  inputs.src-primme-v2_1_0.owner = "jxy";
   inputs.src-primme-v2_1_0.ref   = "refs/tags/v2.1.0";
+  inputs.src-primme-v2_1_0.owner = "jxy";
   inputs.src-primme-v2_1_0.repo  = "primme";
   inputs.src-primme-v2_1_0.type  = "github";
   

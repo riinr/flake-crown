@@ -1,5 +1,5 @@
 {
-  description = ''Nim bindings for the WEBRTC VAD(voice actitvity Detection)'';
+  description = ''webrtcvad (google's opensourced voice activity detection engine) bindings for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-webrtcvad-master.flake = false;
-  inputs.src-webrtcvad-master.owner = "eagledot";
   inputs.src-webrtcvad-master.ref   = "refs/heads/master";
+  inputs.src-webrtcvad-master.owner = "eagledot";
   inputs.src-webrtcvad-master.repo  = "nim-webrtcvad";
   inputs.src-webrtcvad-master.type  = "gitlab";
   

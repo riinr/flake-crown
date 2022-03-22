@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-etcd_client-master.flake = false;
+  inputs.src-etcd_client-master.ref   = "refs/heads/master";
   inputs.src-etcd_client-master.owner = "FedericoCeratto";
-  inputs.src-etcd_client-master.ref   = "master";
   inputs.src-etcd_client-master.repo  = "nim-etcd-client";
   inputs.src-etcd_client-master.type  = "github";
   

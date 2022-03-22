@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-rabbit-main.flake = false;
+  inputs.src-rabbit-main.ref   = "refs/heads/main";
   inputs.src-rabbit-main.owner = "tonogram";
-  inputs.src-rabbit-main.ref   = "main";
   inputs.src-rabbit-main.repo  = "rabbit";
   inputs.src-rabbit-main.type  = "github";
   

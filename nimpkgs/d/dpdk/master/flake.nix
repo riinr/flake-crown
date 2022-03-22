@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-dpdk-master.flake = false;
+  inputs.src-dpdk-master.ref   = "refs/heads/master";
   inputs.src-dpdk-master.owner = "nimscale";
-  inputs.src-dpdk-master.ref   = "master";
   inputs.src-dpdk-master.repo  = "dpdk";
   inputs.src-dpdk-master.type  = "github";
   

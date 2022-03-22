@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-amysql-master.flake = false;
+  inputs.src-amysql-master.ref   = "refs/heads/master";
   inputs.src-amysql-master.owner = "bung87";
-  inputs.src-amysql-master.ref   = "master";
   inputs.src-amysql-master.repo  = "amysql";
   inputs.src-amysql-master.type  = "github";
   

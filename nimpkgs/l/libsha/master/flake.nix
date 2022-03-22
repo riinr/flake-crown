@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-libsha-master.flake = false;
-  inputs.src-libsha-master.owner = "forlan-ua";
   inputs.src-libsha-master.ref   = "refs/heads/master";
+  inputs.src-libsha-master.owner = "forlan-ua";
   inputs.src-libsha-master.repo  = "nim-libsha";
   inputs.src-libsha-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-neel-master.flake = false;
+  inputs.src-neel-master.ref   = "refs/heads/master";
   inputs.src-neel-master.owner = "Niminem";
-  inputs.src-neel-master.ref   = "master";
   inputs.src-neel-master.repo  = "Neel";
   inputs.src-neel-master.type  = "github";
   

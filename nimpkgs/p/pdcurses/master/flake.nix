@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pdcurses-master.flake = false;
-  inputs.src-pdcurses-master.owner = "lcrees";
   inputs.src-pdcurses-master.ref   = "refs/heads/master";
+  inputs.src-pdcurses-master.owner = "lcrees";
   inputs.src-pdcurses-master.repo  = "pdcurses";
   inputs.src-pdcurses-master.type  = "github";
   
   inputs."oldwinapi".owner = "nim-nix-pkgs";
   inputs."oldwinapi".ref   = "master";
   inputs."oldwinapi".repo  = "oldwinapi";
+  inputs."oldwinapi".dir   = "v2_1_0";
   inputs."oldwinapi".type  = "github";
   inputs."oldwinapi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."oldwinapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

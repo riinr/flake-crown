@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-rexpaint-master.flake = false;
+  inputs.src-rexpaint-master.ref   = "refs/heads/master";
   inputs.src-rexpaint-master.owner = "irskep";
-  inputs.src-rexpaint-master.ref   = "master";
   inputs.src-rexpaint-master.repo  = "rexpaint_nim";
   inputs.src-rexpaint-master.type  = "github";
   

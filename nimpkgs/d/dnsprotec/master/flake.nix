@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-dnsprotec-master.flake = false;
+  inputs.src-dnsprotec-master.ref   = "refs/heads/master";
   inputs.src-dnsprotec-master.owner = "juancarlospaco";
-  inputs.src-dnsprotec-master.ref   = "master";
   inputs.src-dnsprotec-master.repo  = "nim-dnsprotec";
   inputs.src-dnsprotec-master.type  = "github";
   

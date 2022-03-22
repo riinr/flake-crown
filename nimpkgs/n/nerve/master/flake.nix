@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nerve-master.flake = false;
+  inputs.src-nerve-master.ref   = "refs/heads/master";
   inputs.src-nerve-master.owner = "nepeckman";
-  inputs.src-nerve-master.ref   = "master";
   inputs.src-nerve-master.repo  = "nerve-rpc";
   inputs.src-nerve-master.type  = "github";
   

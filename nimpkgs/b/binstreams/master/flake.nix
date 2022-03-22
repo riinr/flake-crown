@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-binstreams-master.flake = false;
+  inputs.src-binstreams-master.ref   = "refs/heads/master";
   inputs.src-binstreams-master.owner = "johnnovak";
-  inputs.src-binstreams-master.ref   = "master";
   inputs.src-binstreams-master.repo  = "nim-binstreams";
   inputs.src-binstreams-master.type  = "github";
   

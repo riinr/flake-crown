@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-binio-master.flake = false;
+  inputs.src-binio-master.ref   = "refs/heads/master";
   inputs.src-binio-master.owner = "Riderfighter";
-  inputs.src-binio-master.ref   = "master";
   inputs.src-binio-master.repo  = "binio";
   inputs.src-binio-master.type  = "github";
   

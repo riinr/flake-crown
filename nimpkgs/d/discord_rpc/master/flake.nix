@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-discord_rpc-master.flake = false;
+  inputs.src-discord_rpc-master.ref   = "refs/heads/master";
   inputs.src-discord_rpc-master.owner = "SolitudeSF";
-  inputs.src-discord_rpc-master.ref   = "master";
   inputs.src-discord_rpc-master.repo  = "discord_rpc";
   inputs.src-discord_rpc-master.type  = "github";
   

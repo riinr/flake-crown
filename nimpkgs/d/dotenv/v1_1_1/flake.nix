@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-dotenv-v1_1_1.flake = false;
+  inputs.src-dotenv-v1_1_1.ref   = "refs/tags/v1.1.1";
   inputs.src-dotenv-v1_1_1.owner = "euantorano";
-  inputs.src-dotenv-v1_1_1.ref   = "v1_1_1";
   inputs.src-dotenv-v1_1_1.repo  = "dotenv.nim";
   inputs.src-dotenv-v1_1_1.type  = "github";
   

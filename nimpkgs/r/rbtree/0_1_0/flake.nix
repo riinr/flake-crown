@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-rbtree-0_1_0.flake = false;
+  inputs.src-rbtree-0_1_0.ref   = "refs/tags/0.1.0";
   inputs.src-rbtree-0_1_0.owner = "Nycto";
-  inputs.src-rbtree-0_1_0.ref   = "0_1_0";
   inputs.src-rbtree-0_1_0.repo  = "RBTreeNim";
   inputs.src-rbtree-0_1_0.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-microasynchttpserver-master.flake = false;
+  inputs.src-microasynchttpserver-master.ref   = "refs/heads/master";
   inputs.src-microasynchttpserver-master.owner = "philip-wernersbach";
-  inputs.src-microasynchttpserver-master.ref   = "master";
   inputs.src-microasynchttpserver-master.repo  = "microasynchttpserver";
   inputs.src-microasynchttpserver-master.type  = "github";
   

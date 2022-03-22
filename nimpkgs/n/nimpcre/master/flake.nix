@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimpcre-master.flake = false;
+  inputs.src-nimpcre-master.ref   = "refs/heads/master";
   inputs.src-nimpcre-master.owner = "genotrance";
-  inputs.src-nimpcre-master.ref   = "master";
   inputs.src-nimpcre-master.repo  = "nimpcre";
   inputs.src-nimpcre-master.type  = "github";
   

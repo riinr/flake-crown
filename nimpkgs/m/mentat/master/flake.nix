@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mentat-master.flake = false;
+  inputs.src-mentat-master.ref   = "refs/heads/master";
   inputs.src-mentat-master.owner = "ruivieira";
-  inputs.src-mentat-master.ref   = "master";
   inputs.src-mentat-master.repo  = "nim-mentat";
   inputs.src-mentat-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''This is an implementation of Clojures persistent vectors in Nim.'';
+  description = ''Implementation of Clojures persistent vector in Nim for easy immutable lists.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-persvector-v1_0_0.flake = false;
-  inputs.src-persvector-v1_0_0.owner = "PMunch";
   inputs.src-persvector-v1_0_0.ref   = "refs/tags/v1.0.0";
+  inputs.src-persvector-v1_0_0.owner = "PMunch";
   inputs.src-persvector-v1_0_0.repo  = "nim-persistent-vector";
   inputs.src-persvector-v1_0_0.type  = "github";
   

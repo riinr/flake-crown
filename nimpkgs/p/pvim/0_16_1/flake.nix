@@ -1,5 +1,5 @@
 {
-  description = ''A vim-based editor'';
+  description = ''A parasitic editor'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pvim-0_16_1.flake = false;
-  inputs.src-pvim-0_16_1.owner = "paranim";
   inputs.src-pvim-0_16_1.ref   = "refs/tags/0.16.1";
+  inputs.src-pvim-0_16_1.owner = "paranim";
   inputs.src-pvim-0_16_1.repo  = "pvim";
   inputs.src-pvim-0_16_1.type  = "github";
   
   inputs."paravim".owner = "nim-nix-pkgs";
   inputs."paravim".ref   = "master";
   inputs."paravim".repo  = "paravim";
+  inputs."paravim".dir   = "0_18_2";
   inputs."paravim".type  = "github";
   inputs."paravim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."paravim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

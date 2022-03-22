@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-geometryutils-v1_1_0.flake = false;
+  inputs.src-geometryutils-v1_1_0.ref   = "refs/tags/v1.1.0";
   inputs.src-geometryutils-v1_1_0.owner = "pseudo-random";
-  inputs.src-geometryutils-v1_1_0.ref   = "v1_1_0";
   inputs.src-geometryutils-v1_1_0.repo  = "geometryutils";
   inputs.src-geometryutils-v1_1_0.type  = "github";
   

@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-p4ztag_to_json-v0_10_2.flake = false;
-  inputs.src-p4ztag_to_json-v0_10_2.owner = "kaushalmodi";
   inputs.src-p4ztag_to_json-v0_10_2.ref   = "refs/tags/v0.10.2";
+  inputs.src-p4ztag_to_json-v0_10_2.owner = "kaushalmodi";
   inputs.src-p4ztag_to_json-v0_10_2.repo  = "p4ztag_to_json";
   inputs.src-p4ztag_to_json-v0_10_2.type  = "github";
   
   inputs."regex".owner = "nim-nix-pkgs";
   inputs."regex".ref   = "master";
   inputs."regex".repo  = "regex";
+  inputs."regex".dir   = "v0_19_0";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

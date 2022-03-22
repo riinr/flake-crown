@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-httpstat-develop.flake = false;
+  inputs.src-httpstat-develop.ref   = "refs/heads/develop";
   inputs.src-httpstat-develop.owner = "ucpr";
-  inputs.src-httpstat-develop.ref   = "develop";
   inputs.src-httpstat-develop.repo  = "httpstat";
   inputs.src-httpstat-develop.type  = "github";
   

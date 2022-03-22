@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-openweathermap-master.flake = false;
+  inputs.src-openweathermap-master.ref   = "refs/heads/master";
   inputs.src-openweathermap-master.owner = "juancarlospaco";
-  inputs.src-openweathermap-master.ref   = "master";
   inputs.src-openweathermap-master.repo  = "nim-openweathermap";
   inputs.src-openweathermap-master.type  = "github";
   

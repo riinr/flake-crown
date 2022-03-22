@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-stringinterpolation-master.flake = false;
-  inputs.src-stringinterpolation-master.owner = "bluenote10";
   inputs.src-stringinterpolation-master.ref   = "refs/heads/master";
+  inputs.src-stringinterpolation-master.owner = "bluenote10";
   inputs.src-stringinterpolation-master.repo  = "nim-stringinterpolation";
   inputs.src-stringinterpolation-master.type  = "github";
   

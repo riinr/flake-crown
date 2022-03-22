@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pgxcrown-v0_3_6.flake = false;
-  inputs.src-pgxcrown-v0_3_6.owner = "luisacosta828";
   inputs.src-pgxcrown-v0_3_6.ref   = "refs/tags/v0.3.6";
+  inputs.src-pgxcrown-v0_3_6.owner = "luisacosta828";
   inputs.src-pgxcrown-v0_3_6.repo  = "pgxcrown";
   inputs.src-pgxcrown-v0_3_6.type  = "github";
   

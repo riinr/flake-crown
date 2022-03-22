@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-benchy-master.flake = false;
+  inputs.src-benchy-master.ref   = "refs/heads/master";
   inputs.src-benchy-master.owner = "treeform";
-  inputs.src-benchy-master.ref   = "master";
   inputs.src-benchy-master.repo  = "benchy";
   inputs.src-benchy-master.type  = "github";
   

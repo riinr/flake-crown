@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-asyncmysql-master.flake = false;
+  inputs.src-asyncmysql-master.ref   = "refs/heads/master";
   inputs.src-asyncmysql-master.owner = "tulayang";
-  inputs.src-asyncmysql-master.ref   = "master";
   inputs.src-asyncmysql-master.repo  = "asyncmysql";
   inputs.src-asyncmysql-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-asyncthreadpool-main.flake = false;
+  inputs.src-asyncthreadpool-main.ref   = "refs/heads/main";
   inputs.src-asyncthreadpool-main.owner = "yglukhov";
-  inputs.src-asyncthreadpool-main.ref   = "main";
   inputs.src-asyncthreadpool-main.repo  = "asyncthreadpool";
   inputs.src-asyncthreadpool-main.type  = "github";
   

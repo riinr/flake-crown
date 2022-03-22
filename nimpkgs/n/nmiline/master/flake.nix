@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nmiline-master.flake = false;
+  inputs.src-nmiline-master.ref   = "refs/heads/master";
   inputs.src-nmiline-master.owner = "mzteruru52";
-  inputs.src-nmiline-master.ref   = "master";
   inputs.src-nmiline-master.repo  = "NmiLine";
   inputs.src-nmiline-master.type  = "github";
   

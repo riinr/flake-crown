@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-libsodium-0_7_1.flake = false;
-  inputs.src-libsodium-0_7_1.owner = "FedericoCeratto";
   inputs.src-libsodium-0_7_1.ref   = "refs/tags/0.7.1";
+  inputs.src-libsodium-0_7_1.owner = "FedericoCeratto";
   inputs.src-libsodium-0_7_1.repo  = "nim-libsodium";
   inputs.src-libsodium-0_7_1.type  = "github";
   

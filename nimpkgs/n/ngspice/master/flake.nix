@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ngspice-master.flake = false;
+  inputs.src-ngspice-master.ref   = "refs/heads/master";
   inputs.src-ngspice-master.owner = "haxscramper";
-  inputs.src-ngspice-master.ref   = "master";
   inputs.src-ngspice-master.repo  = "ngspice";
   inputs.src-ngspice-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-untar-master.flake = false;
-  inputs.src-untar-master.owner = "dom96";
   inputs.src-untar-master.ref   = "refs/heads/master";
+  inputs.src-untar-master.owner = "dom96";
   inputs.src-untar-master.repo  = "untar";
   inputs.src-untar-master.type  = "github";
   

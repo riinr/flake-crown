@@ -1,5 +1,5 @@
 {
-  description = ''Utilities for and extensions to Slice/HSlice'';
+  description = ''utils for Slice/HSlice'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sliceutils-v0_2_0.flake = false;
-  inputs.src-sliceutils-v0_2_0.owner = "metagn";
   inputs.src-sliceutils-v0_2_0.ref   = "refs/tags/v0.2.0";
+  inputs.src-sliceutils-v0_2_0.owner = "metagn";
   inputs.src-sliceutils-v0_2_0.repo  = "sliceutils";
   inputs.src-sliceutils-v0_2_0.type  = "github";
   

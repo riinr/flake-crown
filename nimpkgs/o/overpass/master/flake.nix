@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-overpass-master.flake = false;
+  inputs.src-overpass-master.ref   = "refs/heads/master";
   inputs.src-overpass-master.owner = "juancarlospaco";
-  inputs.src-overpass-master.ref   = "master";
   inputs.src-overpass-master.repo  = "nim-overpass";
   inputs.src-overpass-master.type  = "github";
   

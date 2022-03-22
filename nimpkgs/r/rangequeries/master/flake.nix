@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-rangequeries-master.flake = false;
+  inputs.src-rangequeries-master.ref   = "refs/heads/master";
   inputs.src-rangequeries-master.owner = "vanyle";
-  inputs.src-rangequeries-master.ref   = "master";
   inputs.src-rangequeries-master.repo  = "RangeQueriesNim";
   inputs.src-rangequeries-master.type  = "github";
   

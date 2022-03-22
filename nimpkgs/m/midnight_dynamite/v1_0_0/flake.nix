@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-midnight_dynamite-v1_0_0.flake = false;
+  inputs.src-midnight_dynamite-v1_0_0.ref   = "refs/tags/v1.0.0";
   inputs.src-midnight_dynamite-v1_0_0.owner = "Araq";
-  inputs.src-midnight_dynamite-v1_0_0.ref   = "v1_0_0";
   inputs.src-midnight_dynamite-v1_0_0.repo  = "midnight_dynamite";
   inputs.src-midnight_dynamite-v1_0_0.type  = "github";
   

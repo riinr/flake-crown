@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-textformats-v1_0_0.flake = false;
-  inputs.src-textformats-v1_0_0.owner = "ggonnella";
   inputs.src-textformats-v1_0_0.ref   = "refs/tags/v1.0.0";
+  inputs.src-textformats-v1_0_0.owner = "ggonnella";
   inputs.src-textformats-v1_0_0.repo  = "textformats";
   inputs.src-textformats-v1_0_0.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."yaml".owner = "nim-nix-pkgs";
   inputs."yaml".ref   = "master";
   inputs."yaml".repo  = "yaml";
+  inputs."yaml".dir   = "v0_16_0";
   inputs."yaml".type  = "github";
   inputs."yaml".inputs.nixpkgs.follows = "nixpkgs";
   inputs."yaml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."regex".owner = "nim-nix-pkgs";
   inputs."regex".ref   = "master";
   inputs."regex".repo  = "regex";
+  inputs."regex".dir   = "v0_19_0";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -37,6 +40,7 @@
   inputs."nimpy".owner = "nim-nix-pkgs";
   inputs."nimpy".ref   = "master";
   inputs."nimpy".repo  = "nimpy";
+  inputs."nimpy".dir   = "";
   inputs."nimpy".type  = "github";
   inputs."nimpy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

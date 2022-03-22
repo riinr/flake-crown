@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-timecop-0_1_0.flake = false;
-  inputs.src-timecop-0_1_0.owner = "ba0f3";
   inputs.src-timecop-0_1_0.ref   = "refs/tags/0.1.0";
+  inputs.src-timecop-0_1_0.owner = "ba0f3";
   inputs.src-timecop-0_1_0.repo  = "timecop.nim";
   inputs.src-timecop-0_1_0.type  = "github";
   
   inputs."subhook".owner = "nim-nix-pkgs";
   inputs."subhook".ref   = "master";
   inputs."subhook".repo  = "subhook";
+  inputs."subhook".dir   = "0_5_5";
   inputs."subhook".type  = "github";
   inputs."subhook".inputs.nixpkgs.follows = "nixpkgs";
   inputs."subhook".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

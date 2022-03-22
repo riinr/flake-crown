@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-csfml-master.flake = false;
-  inputs.src-csfml-master.owner = "oprypin";
   inputs.src-csfml-master.ref   = "refs/heads/master";
+  inputs.src-csfml-master.owner = "oprypin";
   inputs.src-csfml-master.repo  = "nim-csfml";
   inputs.src-csfml-master.type  = "github";
   

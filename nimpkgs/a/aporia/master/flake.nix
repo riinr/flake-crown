@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-aporia-master.flake = false;
+  inputs.src-aporia-master.ref   = "refs/heads/master";
   inputs.src-aporia-master.owner = "nim-lang";
-  inputs.src-aporia-master.ref   = "master";
   inputs.src-aporia-master.repo  = "Aporia";
   inputs.src-aporia-master.type  = "github";
   

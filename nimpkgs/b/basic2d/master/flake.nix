@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-basic2d-master.flake = false;
+  inputs.src-basic2d-master.ref   = "refs/heads/master";
   inputs.src-basic2d-master.owner = "nim-lang";
-  inputs.src-basic2d-master.ref   = "master";
   inputs.src-basic2d-master.repo  = "basic2d";
   inputs.src-basic2d-master.type  = "github";
   

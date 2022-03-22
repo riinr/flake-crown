@@ -8,9 +8,9 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimbench-master.flake = false;
+  inputs.src-nimbench-master.ref   = "refs/heads/master";
   inputs.src-nimbench-master.owner = "ivankoster";
-  inputs.src-nimbench-master.ref   = "master";
-  inputs.src-nimbench-master.repo  = "nimbench.git";
+  inputs.src-nimbench-master.repo  = "nimbench";
   inputs.src-nimbench-master.type  = "github";
   
   inputs."strfmt".owner = "nim-nix-pkgs";

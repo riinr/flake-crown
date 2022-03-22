@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-shioridll-v1_0_0.flake = false;
-  inputs.src-shioridll-v1_0_0.owner = "Narazaka";
   inputs.src-shioridll-v1_0_0.ref   = "refs/tags/v1.0.0";
+  inputs.src-shioridll-v1_0_0.owner = "Narazaka";
   inputs.src-shioridll-v1_0_0.repo  = "shioridll-nim";
   inputs.src-shioridll-v1_0_0.type  = "github";
   

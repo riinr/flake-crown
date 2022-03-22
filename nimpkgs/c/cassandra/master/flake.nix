@@ -1,5 +1,5 @@
 {
-  description = ''Bindings to Cassandra DB driver'';
+  description = ''Cassandra driver bindings'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-cassandra-master.flake = false;
-  inputs.src-cassandra-master.owner = "yglukhov";
   inputs.src-cassandra-master.ref   = "refs/heads/master";
+  inputs.src-cassandra-master.owner = "yglukhov";
   inputs.src-cassandra-master.repo  = "cassandra";
   inputs.src-cassandra-master.type  = "github";
   

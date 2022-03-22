@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-shady-0_0_1.flake = false;
-  inputs.src-shady-0_0_1.owner = "treeform";
   inputs.src-shady-0_0_1.ref   = "refs/tags/0.0.1";
+  inputs.src-shady-0_0_1.owner = "treeform";
   inputs.src-shady-0_0_1.repo  = "shady";
   inputs.src-shady-0_0_1.type  = "github";
   
   inputs."vmath".owner = "nim-nix-pkgs";
   inputs."vmath".ref   = "master";
   inputs."vmath".repo  = "vmath";
+  inputs."vmath".dir   = "";
   inputs."vmath".type  = "github";
   inputs."vmath".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."pixie".owner = "nim-nix-pkgs";
   inputs."pixie".ref   = "master";
   inputs."pixie".repo  = "pixie";
+  inputs."pixie".dir   = "";
   inputs."pixie".type  = "github";
   inputs."pixie".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pixie".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

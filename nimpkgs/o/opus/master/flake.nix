@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-opus-master.flake = false;
+  inputs.src-opus-master.ref   = "refs/heads/master";
   inputs.src-opus-master.owner = "capocasa";
-  inputs.src-opus-master.ref   = "master";
   inputs.src-opus-master.repo  = "nim-opus";
   inputs.src-opus-master.type  = "github";
   

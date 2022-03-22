@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-guildenstern-1_0_1.flake = false;
+  inputs.src-guildenstern-1_0_1.ref   = "refs/tags/1.0.1";
   inputs.src-guildenstern-1_0_1.owner = "olliNiinivaara";
-  inputs.src-guildenstern-1_0_1.ref   = "1_0_1";
   inputs.src-guildenstern-1_0_1.repo  = "GuildenStern";
   inputs.src-guildenstern-1_0_1.type  = "github";
   

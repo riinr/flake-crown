@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimi3status-master.flake = false;
+  inputs.src-nimi3status-master.ref   = "refs/heads/master";
   inputs.src-nimi3status-master.owner = "FedericoCeratto";
-  inputs.src-nimi3status-master.ref   = "master";
   inputs.src-nimi3status-master.repo  = "nimi3status";
   inputs.src-nimi3status-master.type  = "github";
   

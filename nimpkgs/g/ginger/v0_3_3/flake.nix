@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ginger-v0_3_3.flake = false;
+  inputs.src-ginger-v0_3_3.ref   = "refs/tags/v0.3.3";
   inputs.src-ginger-v0_3_3.owner = "Vindaar";
-  inputs.src-ginger-v0_3_3.ref   = "v0_3_3";
   inputs.src-ginger-v0_3_3.repo  = "ginger";
   inputs.src-ginger-v0_3_3.type  = "github";
   

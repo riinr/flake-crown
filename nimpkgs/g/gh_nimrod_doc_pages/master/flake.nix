@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-gh_nimrod_doc_pages-master.flake = false;
+  inputs.src-gh_nimrod_doc_pages-master.ref   = "refs/heads/master";
   inputs.src-gh_nimrod_doc_pages-master.owner = "Araq";
-  inputs.src-gh_nimrod_doc_pages-master.ref   = "master";
   inputs.src-gh_nimrod_doc_pages-master.repo  = "gh_nimrod_doc_pages";
   inputs.src-gh_nimrod_doc_pages-master.type  = "github";
   

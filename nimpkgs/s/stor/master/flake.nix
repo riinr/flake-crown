@@ -1,5 +1,5 @@
 {
-  description = ''Efficient object storage system'';
+  description = ''Super efficient object storage system'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-stor-master.flake = false;
-  inputs.src-stor-master.owner = "nimscale";
   inputs.src-stor-master.ref   = "refs/heads/master";
+  inputs.src-stor-master.owner = "nimscale";
   inputs.src-stor-master.repo  = "stor";
   inputs.src-stor-master.type  = "github";
   

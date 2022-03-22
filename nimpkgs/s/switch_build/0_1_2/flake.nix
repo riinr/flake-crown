@@ -1,5 +1,5 @@
 {
-  description = ''An easy way to build homebrew files for the Nintendo Switch'';
+  description = ''Nintendo Switch library libnx for Nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-switch_build-0_1_2.flake = false;
-  inputs.src-switch_build-0_1_2.owner = "jyapayne";
   inputs.src-switch_build-0_1_2.ref   = "refs/tags/0.1.2";
+  inputs.src-switch_build-0_1_2.owner = "jyapayne";
   inputs.src-switch_build-0_1_2.repo  = "switch-build";
   inputs.src-switch_build-0_1_2.type  = "github";
   

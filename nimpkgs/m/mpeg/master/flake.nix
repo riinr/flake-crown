@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mpeg-master.flake = false;
+  inputs.src-mpeg-master.ref   = "refs/heads/master";
   inputs.src-mpeg-master.owner = "treeform";
-  inputs.src-mpeg-master.ref   = "master";
   inputs.src-mpeg-master.repo  = "mpeg";
   inputs.src-mpeg-master.type  = "github";
   

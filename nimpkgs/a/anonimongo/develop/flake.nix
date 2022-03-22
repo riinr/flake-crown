@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-anonimongo-develop.flake = false;
+  inputs.src-anonimongo-develop.ref   = "refs/heads/develop";
   inputs.src-anonimongo-develop.owner = "mashingan";
-  inputs.src-anonimongo-develop.ref   = "develop";
   inputs.src-anonimongo-develop.repo  = "anonimongo";
   inputs.src-anonimongo-develop.type  = "github";
   

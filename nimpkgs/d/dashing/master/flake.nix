@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-dashing-master.flake = false;
+  inputs.src-dashing-master.ref   = "refs/heads/master";
   inputs.src-dashing-master.owner = "FedericoCeratto";
-  inputs.src-dashing-master.ref   = "master";
   inputs.src-dashing-master.repo  = "nim-dashing";
   inputs.src-dashing-master.type  = "github";
   

@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-libvlc-master.flake = false;
-  inputs.src-libvlc-master.owner = "Yardanico";
   inputs.src-libvlc-master.ref   = "refs/heads/master";
+  inputs.src-libvlc-master.owner = "Yardanico";
   inputs.src-libvlc-master.repo  = "nim-libvlc";
   inputs.src-libvlc-master.type  = "github";
   
   inputs."nimterop".owner = "nim-nix-pkgs";
   inputs."nimterop".ref   = "master";
   inputs."nimterop".repo  = "nimterop";
+  inputs."nimterop".dir   = "v0_6_13";
   inputs."nimterop".type  = "github";
   inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

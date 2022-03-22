@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-amka-master.flake = false;
+  inputs.src-amka-master.ref   = "refs/heads/master";
   inputs.src-amka-master.owner = "zoispag";
-  inputs.src-amka-master.ref   = "master";
   inputs.src-amka-master.repo  = "amka-nim";
   inputs.src-amka-master.type  = "github";
   

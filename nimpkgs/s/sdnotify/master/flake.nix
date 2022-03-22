@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sdnotify-master.flake = false;
-  inputs.src-sdnotify-master.owner = "FedericoCeratto";
   inputs.src-sdnotify-master.ref   = "refs/heads/master";
+  inputs.src-sdnotify-master.owner = "FedericoCeratto";
   inputs.src-sdnotify-master.repo  = "nim-sdnotify";
   inputs.src-sdnotify-master.type  = "github";
   

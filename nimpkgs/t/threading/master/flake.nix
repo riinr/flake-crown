@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-threading-master.flake = false;
-  inputs.src-threading-master.owner = "nim-lang";
   inputs.src-threading-master.ref   = "refs/heads/master";
+  inputs.src-threading-master.owner = "nim-lang";
   inputs.src-threading-master.repo  = "threading";
   inputs.src-threading-master.type  = "github";
   

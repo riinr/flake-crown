@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-spurdify-master.flake = false;
-  inputs.src-spurdify-master.owner = "paradox460";
   inputs.src-spurdify-master.ref   = "refs/heads/master";
+  inputs.src-spurdify-master.owner = "paradox460";
   inputs.src-spurdify-master.repo  = "spurdify";
   inputs.src-spurdify-master.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_0_0";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

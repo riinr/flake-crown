@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimassets-master.flake = false;
+  inputs.src-nimassets-master.ref   = "refs/heads/master";
   inputs.src-nimassets-master.owner = "xmonader";
-  inputs.src-nimassets-master.ref   = "master";
   inputs.src-nimassets-master.repo  = "nimassets";
   inputs.src-nimassets-master.type  = "github";
   

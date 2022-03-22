@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sfml-master.flake = false;
-  inputs.src-sfml-master.owner = "fowlmouth";
   inputs.src-sfml-master.ref   = "refs/heads/master";
+  inputs.src-sfml-master.owner = "fowlmouth";
   inputs.src-sfml-master.repo  = "nimrod-sfml";
   inputs.src-sfml-master.type  = "github";
   

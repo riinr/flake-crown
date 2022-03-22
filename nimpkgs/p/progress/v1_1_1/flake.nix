@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-progress-v1_1_1.flake = false;
-  inputs.src-progress-v1_1_1.owner = "euantorano";
   inputs.src-progress-v1_1_1.ref   = "refs/tags/v1.1.1";
+  inputs.src-progress-v1_1_1.owner = "euantorano";
   inputs.src-progress-v1_1_1.repo  = "progress.nim";
   inputs.src-progress-v1_1_1.type  = "github";
   

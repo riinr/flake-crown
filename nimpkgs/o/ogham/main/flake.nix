@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ogham-main.flake = false;
+  inputs.src-ogham-main.ref   = "refs/heads/main";
   inputs.src-ogham-main.owner = "stscoundrel";
-  inputs.src-ogham-main.ref   = "main";
   inputs.src-ogham-main.repo  = "ogham-nim";
   inputs.src-ogham-main.type  = "github";
   

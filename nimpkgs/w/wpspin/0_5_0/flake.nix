@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-wpspin-0_5_0.flake = false;
-  inputs.src-wpspin-0_5_0.owner = "drygdryg";
   inputs.src-wpspin-0_5_0.ref   = "refs/tags/0.5.0";
+  inputs.src-wpspin-0_5_0.owner = "drygdryg";
   inputs.src-wpspin-0_5_0.repo  = "wpspin-nim";
   inputs.src-wpspin-0_5_0.type  = "github";
   
   inputs."argparse".owner = "nim-nix-pkgs";
   inputs."argparse".ref   = "master";
   inputs."argparse".repo  = "argparse";
+  inputs."argparse".dir   = "v3_0_0";
   inputs."argparse".type  = "github";
   inputs."argparse".inputs.nixpkgs.follows = "nixpkgs";
   inputs."argparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

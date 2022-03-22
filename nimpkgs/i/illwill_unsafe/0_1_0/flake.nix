@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-illwill_unsafe-0_1_0.flake = false;
-  inputs.src-illwill_unsafe-0_1_0.owner = "matthewjcavalier";
   inputs.src-illwill_unsafe-0_1_0.ref   = "refs/tags/0.1.0";
+  inputs.src-illwill_unsafe-0_1_0.owner = "matthewjcavalier";
   inputs.src-illwill_unsafe-0_1_0.repo  = "illwill_unsafe";
   inputs.src-illwill_unsafe-0_1_0.type  = "github";
   

@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-lq-master.flake = false;
-  inputs.src-lq-master.owner = "madprops";
   inputs.src-lq-master.ref   = "refs/heads/master";
+  inputs.src-lq-master.owner = "madprops";
   inputs.src-lq-master.repo  = "lq";
   inputs.src-lq-master.type  = "github";
   
   inputs."nap".owner = "nim-nix-pkgs";
   inputs."nap".ref   = "master";
   inputs."nap".repo  = "nap";
+  inputs."nap".dir   = "v3_0_0";
   inputs."nap".type  = "github";
   inputs."nap".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nap".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."parsetoml".owner = "nim-nix-pkgs";
   inputs."parsetoml".ref   = "master";
   inputs."parsetoml".repo  = "parsetoml";
+  inputs."parsetoml".dir   = "v0_6_0";
   inputs."parsetoml".type  = "github";
   inputs."parsetoml".inputs.nixpkgs.follows = "nixpkgs";
   inputs."parsetoml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

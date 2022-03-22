@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pymod-master.flake = false;
-  inputs.src-pymod-master.owner = "jboy";
   inputs.src-pymod-master.ref   = "refs/heads/master";
+  inputs.src-pymod-master.owner = "jboy";
   inputs.src-pymod-master.repo  = "nim-pymod";
   inputs.src-pymod-master.type  = "github";
   

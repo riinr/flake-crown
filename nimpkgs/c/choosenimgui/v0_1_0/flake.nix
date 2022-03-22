@@ -1,5 +1,5 @@
 {
-  description = ''A simple GUI for choosenim.'';
+  description = ''Choosenim with GUI'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-choosenimgui-v0_1_0.flake = false;
-  inputs.src-choosenimgui-v0_1_0.owner = "ThomasTJdev";
   inputs.src-choosenimgui-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-choosenimgui-v0_1_0.owner = "ThomasTJdev";
   inputs.src-choosenimgui-v0_1_0.repo  = "choosenim_gui";
   inputs.src-choosenimgui-v0_1_0.type  = "github";
   
   inputs."webgui".owner = "nim-nix-pkgs";
   inputs."webgui".ref   = "master";
   inputs."webgui".repo  = "webgui";
+  inputs."webgui".dir   = "0_9_0";
   inputs."webgui".type  = "github";
   inputs."webgui".inputs.nixpkgs.follows = "nixpkgs";
   inputs."webgui".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

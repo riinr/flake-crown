@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nat_traversal-master.flake = false;
+  inputs.src-nat_traversal-master.ref   = "refs/heads/master";
   inputs.src-nat_traversal-master.owner = "status-im";
-  inputs.src-nat_traversal-master.ref   = "master";
   inputs.src-nat_traversal-master.repo  = "nim-nat-traversal";
   inputs.src-nat_traversal-master.type  = "github";
   

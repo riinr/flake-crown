@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-httpbeast-master.flake = false;
+  inputs.src-httpbeast-master.ref   = "refs/heads/master";
   inputs.src-httpbeast-master.owner = "dom96";
-  inputs.src-httpbeast-master.ref   = "master";
   inputs.src-httpbeast-master.repo  = "httpbeast";
   inputs.src-httpbeast-master.type  = "github";
   

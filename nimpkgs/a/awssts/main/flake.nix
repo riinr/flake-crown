@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-awsSTS-main.flake = false;
+  inputs.src-awsSTS-main.ref   = "refs/heads/main";
   inputs.src-awsSTS-main.owner = "ThomasTJdev";
-  inputs.src-awsSTS-main.ref   = "main";
   inputs.src-awsSTS-main.repo  = "nim_awsSTS";
   inputs.src-awsSTS-main.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''zfcore is high performance asynchttpserver and web framework for nim lang'';
+  description = ''High performance asynchttpserver and web framework for nim lang.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-zfcore-v1_0_3.flake = false;
-  inputs.src-zfcore-v1_0_3.owner = "zendbit";
   inputs.src-zfcore-v1_0_3.ref   = "refs/tags/v1.0.3";
+  inputs.src-zfcore-v1_0_3.owner = "zendbit";
   inputs.src-zfcore-v1_0_3.repo  = "nim.zfcore";
   inputs.src-zfcore-v1_0_3.type  = "github";
   
   inputs."zfblast".owner = "nim-nix-pkgs";
   inputs."zfblast".ref   = "master";
   inputs."zfblast".repo  = "zfblast";
+  inputs."zfblast".dir   = "v0_2_4";
   inputs."zfblast".type  = "github";
   inputs."zfblast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfblast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."uri3".owner = "nim-nix-pkgs";
   inputs."uri3".ref   = "master";
   inputs."uri3".repo  = "uri3";
+  inputs."uri3".dir   = "v0_1_4";
   inputs."uri3".type  = "github";
   inputs."uri3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uri3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

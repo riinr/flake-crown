@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-hpprint-master.flake = false;
+  inputs.src-hpprint-master.ref   = "refs/heads/master";
   inputs.src-hpprint-master.owner = "haxscramper";
-  inputs.src-hpprint-master.ref   = "master";
   inputs.src-hpprint-master.repo  = "hpprint";
   inputs.src-hpprint-master.type  = "github";
   

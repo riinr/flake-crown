@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-delaunay-master.flake = false;
+  inputs.src-delaunay-master.ref   = "refs/heads/master";
   inputs.src-delaunay-master.owner = "Nycto";
-  inputs.src-delaunay-master.ref   = "master";
   inputs.src-delaunay-master.repo  = "DelaunayNim";
   inputs.src-delaunay-master.type  = "github";
   

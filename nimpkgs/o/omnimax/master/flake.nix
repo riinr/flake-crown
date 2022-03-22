@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-omnimax-master.flake = false;
+  inputs.src-omnimax-master.ref   = "refs/heads/master";
   inputs.src-omnimax-master.owner = "vitreo12";
-  inputs.src-omnimax-master.ref   = "master";
   inputs.src-omnimax-master.repo  = "omnimax";
   inputs.src-omnimax-master.type  = "github";
   

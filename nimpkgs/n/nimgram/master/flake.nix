@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimgram-master.flake = false;
+  inputs.src-nimgram-master.ref   = "refs/heads/master";
   inputs.src-nimgram-master.owner = "nimgram";
-  inputs.src-nimgram-master.ref   = "master";
   inputs.src-nimgram-master.repo  = "nimgram";
   inputs.src-nimgram-master.type  = "github";
   

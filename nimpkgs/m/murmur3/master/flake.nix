@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-murmur3-master.flake = false;
+  inputs.src-murmur3-master.ref   = "refs/heads/master";
   inputs.src-murmur3-master.owner = "boydgreenfield";
-  inputs.src-murmur3-master.ref   = "master";
   inputs.src-murmur3-master.repo  = "nimrod-murmur";
   inputs.src-murmur3-master.type  = "github";
   

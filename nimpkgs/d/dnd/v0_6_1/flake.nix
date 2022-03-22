@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-dnd-v0_6_1.flake = false;
+  inputs.src-dnd-v0_6_1.ref   = "refs/tags/v0.6.1";
   inputs.src-dnd-v0_6_1.owner = "adokitkat";
-  inputs.src-dnd-v0_6_1.ref   = "v0_6_1";
   inputs.src-dnd-v0_6_1.repo  = "dnd";
   inputs.src-dnd-v0_6_1.type  = "github";
   

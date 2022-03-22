@@ -1,5 +1,5 @@
 {
-  description = ''Userspace SCTP bindings'';
+  description = ''High-level Nim bindings for userspace SCTP implementation'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sctp-master.flake = false;
-  inputs.src-sctp-master.owner = "metacontainer";
   inputs.src-sctp-master.ref   = "refs/heads/master";
+  inputs.src-sctp-master.owner = "metacontainer";
   inputs.src-sctp-master.repo  = "sctp.nim";
   inputs.src-sctp-master.type  = "github";
   
   inputs."reactor".owner = "nim-nix-pkgs";
   inputs."reactor".ref   = "master";
   inputs."reactor".repo  = "reactor";
+  inputs."reactor".dir   = "v0_5_0";
   inputs."reactor".type  = "github";
   inputs."reactor".inputs.nixpkgs.follows = "nixpkgs";
   inputs."reactor".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

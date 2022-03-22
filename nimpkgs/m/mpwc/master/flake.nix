@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mpwc-master.flake = false;
+  inputs.src-mpwc-master.ref   = "refs/heads/master";
   inputs.src-mpwc-master.owner = "SolitudeSF";
-  inputs.src-mpwc-master.ref   = "master";
   inputs.src-mpwc-master.repo  = "mpwc";
   inputs.src-mpwc-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-shoco-master.flake = false;
-  inputs.src-shoco-master.owner = "onionhammer";
   inputs.src-shoco-master.ref   = "refs/heads/master";
+  inputs.src-shoco-master.owner = "onionhammer";
   inputs.src-shoco-master.repo  = "shoconim";
   inputs.src-shoco-master.type  = "github";
   

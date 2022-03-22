@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-jesterwithplugins-v0_1_1.flake = false;
+  inputs.src-jesterwithplugins-v0_1_1.ref   = "refs/tags/v0.1.1";
   inputs.src-jesterwithplugins-v0_1_1.owner = "JohnAD";
-  inputs.src-jesterwithplugins-v0_1_1.ref   = "v0_1_1";
   inputs.src-jesterwithplugins-v0_1_1.repo  = "jesterwithplugins";
   inputs.src-jesterwithplugins-v0_1_1.type  = "github";
   

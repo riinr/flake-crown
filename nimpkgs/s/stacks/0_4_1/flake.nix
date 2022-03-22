@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-stacks-0_4_1.flake = false;
-  inputs.src-stacks-0_4_1.owner = "rustomax";
   inputs.src-stacks-0_4_1.ref   = "refs/tags/0.4.1";
+  inputs.src-stacks-0_4_1.owner = "rustomax";
   inputs.src-stacks-0_4_1.repo  = "nim-stacks";
   inputs.src-stacks-0_4_1.type  = "github";
   

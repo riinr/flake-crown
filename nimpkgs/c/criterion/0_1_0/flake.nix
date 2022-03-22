@@ -1,5 +1,5 @@
 {
-  description = ''Statistic-driven microbenchmark framework'';
+  description = ''A new awesome nimble package'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-criterion-0_1_0.flake = false;
-  inputs.src-criterion-0_1_0.owner = "disruptek";
   inputs.src-criterion-0_1_0.ref   = "refs/tags/0.1.0";
+  inputs.src-criterion-0_1_0.owner = "disruptek";
   inputs.src-criterion-0_1_0.repo  = "criterion";
   inputs.src-criterion-0_1_0.type  = "github";
   

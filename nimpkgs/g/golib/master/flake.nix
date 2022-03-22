@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-golib-master.flake = false;
+  inputs.src-golib-master.ref   = "refs/heads/master";
   inputs.src-golib-master.owner = "stefantalpalaru";
-  inputs.src-golib-master.ref   = "master";
   inputs.src-golib-master.repo  = "golib-nim";
   inputs.src-golib-master.type  = "github";
   

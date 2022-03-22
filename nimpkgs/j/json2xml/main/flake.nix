@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-json2xml-main.flake = false;
+  inputs.src-json2xml-main.ref   = "refs/heads/main";
   inputs.src-json2xml-main.owner = "MhedhebiIssam";
-  inputs.src-json2xml-main.ref   = "main";
   inputs.src-json2xml-main.repo  = "json2xml";
   inputs.src-json2xml-main.type  = "github";
   

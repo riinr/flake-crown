@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ballpark-main.flake = false;
+  inputs.src-ballpark-main.ref   = "refs/heads/main";
   inputs.src-ballpark-main.owner = "Mihara";
-  inputs.src-ballpark-main.ref   = "main";
   inputs.src-ballpark-main.repo  = "ballpark";
   inputs.src-ballpark-main.type  = "github";
   

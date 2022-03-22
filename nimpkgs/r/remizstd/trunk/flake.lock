@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1647920574,
+        "narHash": "sha256-D3ob5QykELhyNcTnISOkjEzLlgXltwON8Ucrz5cpiQI=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "bfb46a1f762002f07f9d81d93dacd544c6890623",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-remizstd-trunk": "src-remizstd-trunk"
+      }
+    },
+    "src-remizstd-trunk": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1646883288,
+        "narHash": "sha256-uwdAVdNDqL21wP9y3lhFNRkS9RnNXw1JocZ5d1Fn964=",
+        "owner": "RemiliaScarlet",
+        "repo": "remizstd",
+        "rev": "7f35f755dab02ca9830b067913bba74512f50925",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "RemiliaScarlet",
+        "ref": "refs/heads/trunk",
+        "repo": "remizstd",
+        "type": "gitlab"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-reframe-master.flake = false;
+  inputs.src-reframe-master.ref   = "refs/heads/master";
   inputs.src-reframe-master.owner = "rosado";
-  inputs.src-reframe-master.ref   = "master";
   inputs.src-reframe-master.repo  = "reframe.nim";
   inputs.src-reframe-master.type  = "github";
   

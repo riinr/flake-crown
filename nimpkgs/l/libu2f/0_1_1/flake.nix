@@ -1,5 +1,5 @@
 {
-  description = ''A wrapper for libu2f, a library for FIDO/U2F'';
+  description = ''Wrapper for the libu2f server and client'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-libu2f-0_1_1.flake = false;
-  inputs.src-libu2f-0_1_1.owner = "FedericoCeratto";
   inputs.src-libu2f-0_1_1.ref   = "refs/tags/0.1.1";
+  inputs.src-libu2f-0_1_1.owner = "FedericoCeratto";
   inputs.src-libu2f-0_1_1.repo  = "nim-libu2f";
   inputs.src-libu2f-0_1_1.type  = "github";
   

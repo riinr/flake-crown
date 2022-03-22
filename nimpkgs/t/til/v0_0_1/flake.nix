@@ -1,5 +1,5 @@
 {
-  description = ''til-tool: Today I Learned tool'';
+  description = ''til: Today I Learned tool'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-til-v0_0_1.flake = false;
-  inputs.src-til-v0_0_1.owner = "danielecook";
   inputs.src-til-v0_0_1.ref   = "refs/tags/v0.0.1";
+  inputs.src-til-v0_0_1.owner = "danielecook";
   inputs.src-til-v0_0_1.repo  = "til-tool";
   inputs.src-til-v0_0_1.type  = "github";
   
   inputs."colorize".owner = "nim-nix-pkgs";
   inputs."colorize".ref   = "master";
   inputs."colorize".repo  = "colorize";
+  inputs."colorize".dir   = "";
   inputs."colorize".type  = "github";
   inputs."colorize".inputs.nixpkgs.follows = "nixpkgs";
   inputs."colorize".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."argparse".owner = "nim-nix-pkgs";
   inputs."argparse".ref   = "master";
   inputs."argparse".repo  = "argparse";
+  inputs."argparse".dir   = "v3_0_0";
   inputs."argparse".type  = "github";
   inputs."argparse".inputs.nixpkgs.follows = "nixpkgs";
   inputs."argparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-usagov-master.flake = false;
-  inputs.src-usagov-master.owner = "juancarlospaco";
   inputs.src-usagov-master.ref   = "refs/heads/master";
+  inputs.src-usagov-master.owner = "juancarlospaco";
   inputs.src-usagov-master.repo  = "nim-usagov";
   inputs.src-usagov-master.type  = "github";
   

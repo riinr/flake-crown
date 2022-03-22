@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-jsbind-master.flake = false;
+  inputs.src-jsbind-master.ref   = "refs/heads/master";
   inputs.src-jsbind-master.owner = "yglukhov";
-  inputs.src-jsbind-master.ref   = "master";
   inputs.src-jsbind-master.repo  = "jsbind";
   inputs.src-jsbind-master.type  = "github";
   

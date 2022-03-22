@@ -1,5 +1,5 @@
 {
-  description = ''A wrapper for libui'';
+  description = ''Nim's official UI library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ui-master.flake = false;
-  inputs.src-ui-master.owner = "nim-lang";
   inputs.src-ui-master.ref   = "refs/heads/master";
+  inputs.src-ui-master.owner = "nim-lang";
   inputs.src-ui-master.repo  = "ui";
   inputs.src-ui-master.type  = "github";
   

@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-xmltools-v0_0_1.flake = false;
-  inputs.src-xmltools-v0_0_1.owner = "vegansk";
   inputs.src-xmltools-v0_0_1.ref   = "refs/tags/v0.0.1";
+  inputs.src-xmltools-v0_0_1.owner = "vegansk";
   inputs.src-xmltools-v0_0_1.repo  = "xmltools";
   inputs.src-xmltools-v0_0_1.type  = "github";
   
   inputs."nimfp".owner = "nim-nix-pkgs";
   inputs."nimfp".ref   = "master";
   inputs."nimfp".repo  = "nimfp";
+  inputs."nimfp".dir   = "v0_4_4";
   inputs."nimfp".type  = "github";
   inputs."nimfp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimfp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-word2vec-master.flake = false;
-  inputs.src-word2vec-master.owner = "treeform";
   inputs.src-word2vec-master.ref   = "refs/heads/master";
+  inputs.src-word2vec-master.owner = "treeform";
   inputs.src-word2vec-master.repo  = "word2vec";
   inputs.src-word2vec-master.type  = "github";
   

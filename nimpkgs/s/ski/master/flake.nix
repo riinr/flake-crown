@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ski-master.flake = false;
-  inputs.src-ski-master.owner = "jiro4989";
   inputs.src-ski-master.ref   = "refs/heads/master";
+  inputs.src-ski-master.owner = "jiro4989";
   inputs.src-ski-master.repo  = "ski";
   inputs.src-ski-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''A wrapper for LMDB the Lightning Memory-Mapped Database'';
+  description = ''LMDB wrapper'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-lmdb-0_1_0.flake = false;
-  inputs.src-lmdb-0_1_0.owner = "FedericoCeratto";
   inputs.src-lmdb-0_1_0.ref   = "refs/tags/0.1.0";
+  inputs.src-lmdb-0_1_0.owner = "FedericoCeratto";
   inputs.src-lmdb-0_1_0.repo  = "nim-lmdb";
   inputs.src-lmdb-0_1_0.type  = "github";
   

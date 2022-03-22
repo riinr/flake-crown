@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-envconfig-master.flake = false;
+  inputs.src-envconfig-master.ref   = "refs/heads/master";
   inputs.src-envconfig-master.owner = "jiro4989";
-  inputs.src-envconfig-master.ref   = "master";
   inputs.src-envconfig-master.repo  = "envconfig";
   inputs.src-envconfig-master.type  = "github";
   

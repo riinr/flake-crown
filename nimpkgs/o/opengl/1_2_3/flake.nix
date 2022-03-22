@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-opengl-1_2_3.flake = false;
+  inputs.src-opengl-1_2_3.ref   = "refs/tags/1.2.3";
   inputs.src-opengl-1_2_3.owner = "nim-lang";
-  inputs.src-opengl-1_2_3.ref   = "1_2_3";
   inputs.src-opengl-1_2_3.repo  = "opengl";
   inputs.src-opengl-1_2_3.type  = "github";
   

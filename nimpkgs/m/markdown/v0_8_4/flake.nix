@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-markdown-v0_8_4.flake = false;
+  inputs.src-markdown-v0_8_4.ref   = "refs/tags/v0.8.4";
   inputs.src-markdown-v0_8_4.owner = "soasme";
-  inputs.src-markdown-v0_8_4.ref   = "v0_8_4";
   inputs.src-markdown-v0_8_4.repo  = "nim-markdown";
   inputs.src-markdown-v0_8_4.type  = "github";
   

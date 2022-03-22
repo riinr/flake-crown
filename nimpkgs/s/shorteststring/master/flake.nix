@@ -1,5 +1,5 @@
 {
-  description = ''word size strings stored in an integer'';
+  description = ''word size strings'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-shorteststring-master.flake = false;
-  inputs.src-shorteststring-master.owner = "metagn";
   inputs.src-shorteststring-master.ref   = "refs/heads/master";
+  inputs.src-shorteststring-master.owner = "metagn";
   inputs.src-shorteststring-master.repo  = "shorteststring";
   inputs.src-shorteststring-master.type  = "github";
   

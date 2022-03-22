@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimarrow-master.flake = false;
+  inputs.src-nimarrow-master.ref   = "refs/heads/master";
   inputs.src-nimarrow-master.owner = "emef";
-  inputs.src-nimarrow-master.ref   = "master";
   inputs.src-nimarrow-master.repo  = "nimarrow";
   inputs.src-nimarrow-master.type  = "github";
   

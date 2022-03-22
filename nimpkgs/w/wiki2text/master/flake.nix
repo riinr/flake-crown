@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-wiki2text-master.flake = false;
-  inputs.src-wiki2text-master.owner = "rspeer";
   inputs.src-wiki2text-master.ref   = "refs/heads/master";
+  inputs.src-wiki2text-master.owner = "rspeer";
   inputs.src-wiki2text-master.repo  = "wiki2text";
   inputs.src-wiki2text-master.type  = "github";
   

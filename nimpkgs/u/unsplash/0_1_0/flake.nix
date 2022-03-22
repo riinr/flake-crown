@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-unsplash-0_1_0.flake = false;
-  inputs.src-unsplash-0_1_0.owner = "juancarlospaco";
   inputs.src-unsplash-0_1_0.ref   = "refs/tags/0.1.0";
+  inputs.src-unsplash-0_1_0.owner = "juancarlospaco";
   inputs.src-unsplash-0_1_0.repo  = "nim-unsplash";
   inputs.src-unsplash-0_1_0.type  = "github";
   

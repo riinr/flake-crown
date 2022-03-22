@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-json_rpc-master.flake = false;
+  inputs.src-json_rpc-master.ref   = "refs/heads/master";
   inputs.src-json_rpc-master.owner = "status-im";
-  inputs.src-json_rpc-master.ref   = "master";
   inputs.src-json_rpc-master.repo  = "nim-json-rpc";
   inputs.src-json_rpc-master.type  = "github";
   

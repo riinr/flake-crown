@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-httpx-v0_2_8.flake = false;
+  inputs.src-httpx-v0_2_8.ref   = "refs/tags/v0.2.8";
   inputs.src-httpx-v0_2_8.owner = "xflywind";
-  inputs.src-httpx-v0_2_8.ref   = "v0_2_8";
   inputs.src-httpx-v0_2_8.repo  = "httpx";
   inputs.src-httpx-v0_2_8.type  = "github";
   

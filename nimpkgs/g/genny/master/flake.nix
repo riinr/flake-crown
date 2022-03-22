@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-genny-master.flake = false;
+  inputs.src-genny-master.ref   = "refs/heads/master";
   inputs.src-genny-master.owner = "treeform";
-  inputs.src-genny-master.ref   = "master";
   inputs.src-genny-master.repo  = "genny";
   inputs.src-genny-master.type  = "github";
   

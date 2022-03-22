@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nim_tiled-master.flake = false;
+  inputs.src-nim_tiled-master.ref   = "refs/heads/master";
   inputs.src-nim_tiled-master.owner = "SkyVault";
-  inputs.src-nim_tiled-master.ref   = "master";
   inputs.src-nim_tiled-master.repo  = "nim-tiled";
   inputs.src-nim_tiled-master.type  = "github";
   

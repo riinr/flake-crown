@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-asyncpythonfile-master.flake = false;
+  inputs.src-asyncpythonfile-master.ref   = "refs/heads/master";
   inputs.src-asyncpythonfile-master.owner = "fallingduck";
-  inputs.src-asyncpythonfile-master.ref   = "master";
   inputs.src-asyncpythonfile-master.repo  = "asyncpythonfile-nim";
   inputs.src-asyncpythonfile-master.type  = "github";
   

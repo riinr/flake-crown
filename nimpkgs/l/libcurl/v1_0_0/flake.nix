@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-libcurl-v1_0_0.flake = false;
-  inputs.src-libcurl-v1_0_0.owner = "Araq";
   inputs.src-libcurl-v1_0_0.ref   = "refs/tags/v1.0.0";
+  inputs.src-libcurl-v1_0_0.owner = "Araq";
   inputs.src-libcurl-v1_0_0.repo  = "libcurl";
   inputs.src-libcurl-v1_0_0.type  = "github";
   

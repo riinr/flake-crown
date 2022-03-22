@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimroutine-master.flake = false;
+  inputs.src-nimroutine-master.ref   = "refs/heads/master";
   inputs.src-nimroutine-master.owner = "rogercloud";
-  inputs.src-nimroutine-master.ref   = "master";
   inputs.src-nimroutine-master.repo  = "nim-routine";
   inputs.src-nimroutine-master.type  = "github";
   

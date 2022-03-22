@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ttmath-master.flake = false;
-  inputs.src-ttmath-master.owner = "status-im";
   inputs.src-ttmath-master.ref   = "refs/heads/master";
+  inputs.src-ttmath-master.owner = "status-im";
   inputs.src-ttmath-master.repo  = "nim-ttmath";
   inputs.src-ttmath-master.type  = "github";
   

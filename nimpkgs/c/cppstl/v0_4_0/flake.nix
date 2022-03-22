@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-cppstl-v0_4_0.flake = false;
-  inputs.src-cppstl-v0_4_0.owner = "BigEpsilon";
   inputs.src-cppstl-v0_4_0.ref   = "refs/tags/v0.4.0";
+  inputs.src-cppstl-v0_4_0.owner = "BigEpsilon";
   inputs.src-cppstl-v0_4_0.repo  = "nim-cppstl";
   inputs.src-cppstl-v0_4_0.type  = "github";
   

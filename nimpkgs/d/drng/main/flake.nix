@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-drng-main.flake = false;
+  inputs.src-drng-main.ref   = "refs/heads/main";
   inputs.src-drng-main.owner = "rockcavera";
-  inputs.src-drng-main.ref   = "main";
   inputs.src-drng-main.repo  = "nim-drng";
   inputs.src-drng-main.type  = "github";
   

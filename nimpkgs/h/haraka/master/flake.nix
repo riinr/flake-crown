@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-haraka-master.flake = false;
-  inputs.src-haraka-master.owner = "~ehmry";
   inputs.src-haraka-master.ref   = "master";
+  inputs.src-haraka-master.owner = "~ehmry";
   inputs.src-haraka-master.repo  = "nim_haraka";
   inputs.src-haraka-master.type  = "sourcehut";
   

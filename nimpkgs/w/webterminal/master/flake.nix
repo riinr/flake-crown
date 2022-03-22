@@ -1,5 +1,5 @@
 {
-  description = ''Very simple browser Javascript TTY web terminal'';
+  description = ''Simple HTML5/Javascript text terminal for embedding an nim app on a web page.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-webterminal-master.flake = false;
-  inputs.src-webterminal-master.owner = "JohnAD";
   inputs.src-webterminal-master.ref   = "refs/heads/master";
+  inputs.src-webterminal-master.owner = "JohnAD";
   inputs.src-webterminal-master.repo  = "webterminal";
   inputs.src-webterminal-master.type  = "github";
   

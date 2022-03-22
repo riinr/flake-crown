@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimpmda-master.flake = false;
+  inputs.src-nimpmda-master.ref   = "refs/heads/master";
   inputs.src-nimpmda-master.owner = "jasonk000";
-  inputs.src-nimpmda-master.ref   = "master";
   inputs.src-nimpmda-master.repo  = "nimpmda";
   inputs.src-nimpmda-master.type  = "github";
   

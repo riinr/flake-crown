@@ -1,5 +1,5 @@
 {
-  description = ''Soundfonts for paramidi'';
+  description = ''Sound fonts for paramidi'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-paramidi_soundfonts-0_2_0.flake = false;
-  inputs.src-paramidi_soundfonts-0_2_0.owner = "paranim";
   inputs.src-paramidi_soundfonts-0_2_0.ref   = "refs/tags/0.2.0";
+  inputs.src-paramidi_soundfonts-0_2_0.owner = "paranim";
   inputs.src-paramidi_soundfonts-0_2_0.repo  = "paramidi_soundfonts";
   inputs.src-paramidi_soundfonts-0_2_0.type  = "github";
   

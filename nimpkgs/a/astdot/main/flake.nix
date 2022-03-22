@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-astdot-main.flake = false;
+  inputs.src-astdot-main.ref   = "refs/heads/main";
   inputs.src-astdot-main.owner = "Rekihyt";
-  inputs.src-astdot-main.ref   = "main";
   inputs.src-astdot-main.repo  = "astdot";
   inputs.src-astdot-main.type  = "github";
   

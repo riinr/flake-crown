@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-torch-v0_1_21.flake = false;
-  inputs.src-torch-v0_1_21.owner = "fragcolor-xyz";
   inputs.src-torch-v0_1_21.ref   = "refs/tags/v0.1.21";
+  inputs.src-torch-v0_1_21.owner = "fragcolor-xyz";
   inputs.src-torch-v0_1_21.repo  = "nimtorch";
   inputs.src-torch-v0_1_21.type  = "github";
   

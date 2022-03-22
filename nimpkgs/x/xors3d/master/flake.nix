@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-Xors3D-master.flake = false;
-  inputs.src-Xors3D-master.owner = "Guevara-chan";
   inputs.src-Xors3D-master.ref   = "refs/heads/master";
+  inputs.src-Xors3D-master.owner = "Guevara-chan";
   inputs.src-Xors3D-master.repo  = "Xors3D-for-Nim";
   inputs.src-Xors3D-master.type  = "github";
   

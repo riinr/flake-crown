@@ -1,5 +1,5 @@
 {
-  description = ''Static blog generator ala Jekyll.'';
+  description = ''A static blog generator.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ipsumgenera-master.flake = false;
-  inputs.src-ipsumgenera-master.owner = "dom96";
   inputs.src-ipsumgenera-master.ref   = "refs/heads/master";
+  inputs.src-ipsumgenera-master.owner = "dom96";
   inputs.src-ipsumgenera-master.repo  = "ipsumgenera";
   inputs.src-ipsumgenera-master.type  = "github";
   

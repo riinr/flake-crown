@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-cascade-v1_0_0.flake = false;
-  inputs.src-cascade-v1_0_0.owner = "haltcase";
   inputs.src-cascade-v1_0_0.ref   = "refs/tags/v1.0.0";
+  inputs.src-cascade-v1_0_0.owner = "haltcase";
   inputs.src-cascade-v1_0_0.repo  = "cascade";
   inputs.src-cascade-v1_0_0.type  = "github";
   

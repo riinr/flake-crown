@@ -1,5 +1,5 @@
 {
-  description = ''implements macro creates toInterface proc.'';
+  description = ''Creating toInterface macro.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-interface_implements-v0_2_2.flake = false;
-  inputs.src-interface_implements-v0_2_2.owner = "itsumura-h";
   inputs.src-interface_implements-v0_2_2.ref   = "refs/tags/v0.2.2";
+  inputs.src-interface_implements-v0_2_2.owner = "itsumura-h";
   inputs.src-interface_implements-v0_2_2.repo  = "nim-interface-implements";
   inputs.src-interface_implements-v0_2_2.type  = "github";
   

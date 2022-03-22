@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-awsS3-main.flake = false;
+  inputs.src-awsS3-main.ref   = "refs/heads/main";
   inputs.src-awsS3-main.owner = "ThomasTJdev";
-  inputs.src-awsS3-main.ref   = "main";
   inputs.src-awsS3-main.repo  = "nim_awsS3";
   inputs.src-awsS3-main.type  = "github";
   

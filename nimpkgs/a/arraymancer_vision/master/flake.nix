@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-arraymancer_vision-master.flake = false;
+  inputs.src-arraymancer_vision-master.ref   = "refs/heads/master";
   inputs.src-arraymancer_vision-master.owner = "edubart";
-  inputs.src-arraymancer_vision-master.ref   = "master";
   inputs.src-arraymancer_vision-master.repo  = "arraymancer-vision";
   inputs.src-arraymancer_vision-master.type  = "github";
   

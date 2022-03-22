@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-contractabi-0_2_0.flake = false;
-  inputs.src-contractabi-0_2_0.owner = "status-im";
   inputs.src-contractabi-0_2_0.ref   = "refs/tags/0.2.0";
+  inputs.src-contractabi-0_2_0.owner = "status-im";
   inputs.src-contractabi-0_2_0.repo  = "nim-contract-abi";
   inputs.src-contractabi-0_2_0.type  = "github";
   
   inputs."stint".owner = "nim-nix-pkgs";
   inputs."stint".ref   = "master";
   inputs."stint".repo  = "stint";
+  inputs."stint".dir   = "";
   inputs."stint".type  = "github";
   inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."stew".owner = "nim-nix-pkgs";
   inputs."stew".ref   = "master";
   inputs."stew".repo  = "stew";
+  inputs."stew".dir   = "";
   inputs."stew".type  = "github";
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."upraises".owner = "nim-nix-pkgs";
   inputs."upraises".ref   = "master";
   inputs."upraises".repo  = "upraises";
+  inputs."upraises".dir   = "0_1_0";
   inputs."upraises".type  = "github";
   inputs."upraises".inputs.nixpkgs.follows = "nixpkgs";
   inputs."upraises".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

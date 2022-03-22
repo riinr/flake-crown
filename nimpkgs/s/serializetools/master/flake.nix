@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-serializetools-master.flake = false;
-  inputs.src-serializetools-master.owner = "JeffersonLab";
   inputs.src-serializetools-master.ref   = "refs/heads/master";
+  inputs.src-serializetools-master.owner = "JeffersonLab";
   inputs.src-serializetools-master.repo  = "serializetools";
   inputs.src-serializetools-master.type  = "github";
   

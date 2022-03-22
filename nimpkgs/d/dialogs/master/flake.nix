@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-dialogs-master.flake = false;
+  inputs.src-dialogs-master.ref   = "refs/heads/master";
   inputs.src-dialogs-master.owner = "nim-lang";
-  inputs.src-dialogs-master.ref   = "master";
   inputs.src-dialogs-master.repo  = "dialogs";
   inputs.src-dialogs-master.type  = "github";
   

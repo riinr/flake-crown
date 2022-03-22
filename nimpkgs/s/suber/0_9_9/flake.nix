@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-suber-0_9_9.flake = false;
-  inputs.src-suber-0_9_9.owner = "olliNiinivaara";
   inputs.src-suber-0_9_9.ref   = "refs/tags/0.9.9";
+  inputs.src-suber-0_9_9.owner = "olliNiinivaara";
   inputs.src-suber-0_9_9.repo  = "Suber";
   inputs.src-suber-0_9_9.type  = "github";
   
   inputs."stashtable".owner = "nim-nix-pkgs";
   inputs."stashtable".ref   = "master";
   inputs."stashtable".repo  = "stashtable";
+  inputs."stashtable".dir   = "1_2_1";
   inputs."stashtable".type  = "github";
   inputs."stashtable".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stashtable".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

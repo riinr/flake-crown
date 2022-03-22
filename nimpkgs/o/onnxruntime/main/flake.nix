@@ -8,9 +8,9 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-onnxruntime-main.flake = false;
+  inputs.src-onnxruntime-main.ref   = "refs/heads/main";
   inputs.src-onnxruntime-main.owner = "YesDrX";
-  inputs.src-onnxruntime-main.ref   = "main";
-  inputs.src-onnxruntime-main.repo  = "onnxruntime-nim.git";
+  inputs.src-onnxruntime-main.repo  = "onnxruntime-nim";
   inputs.src-onnxruntime-main.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-alea-master.flake = false;
+  inputs.src-alea-master.ref   = "refs/heads/master";
   inputs.src-alea-master.owner = "andreaferretti";
-  inputs.src-alea-master.ref   = "master";
   inputs.src-alea-master.repo  = "alea";
   inputs.src-alea-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-simpleAST-1_1_1.flake = false;
-  inputs.src-simpleAST-1_1_1.owner = "lguzzon-NIM";
   inputs.src-simpleAST-1_1_1.ref   = "refs/tags/1.1.1";
+  inputs.src-simpleAST-1_1_1.owner = "lguzzon-NIM";
   inputs.src-simpleAST-1_1_1.repo  = "simpleAST";
   inputs.src-simpleAST-1_1_1.type  = "github";
   

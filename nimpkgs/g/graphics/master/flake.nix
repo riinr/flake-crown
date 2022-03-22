@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-graphics-master.flake = false;
+  inputs.src-graphics-master.ref   = "refs/heads/master";
   inputs.src-graphics-master.owner = "nim-lang";
-  inputs.src-graphics-master.ref   = "master";
   inputs.src-graphics-master.repo  = "graphics";
   inputs.src-graphics-master.type  = "github";
   

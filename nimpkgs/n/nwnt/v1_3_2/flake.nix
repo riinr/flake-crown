@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nwnt-v1_3_2.flake = false;
+  inputs.src-nwnt-v1_3_2.ref   = "refs/tags/v1.3.2";
   inputs.src-nwnt-v1_3_2.owner = "WilliamDraco";
-  inputs.src-nwnt-v1_3_2.ref   = "v1_3_2";
   inputs.src-nwnt-v1_3_2.repo  = "NWNT";
   inputs.src-nwnt-v1_3_2.type  = "github";
   

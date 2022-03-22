@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-checkpack-0_1_1.flake = false;
-  inputs.src-checkpack-0_1_1.owner = "EchoPouet";
   inputs.src-checkpack-0_1_1.ref   = "refs/tags/0.1.1";
+  inputs.src-checkpack-0_1_1.owner = "EchoPouet";
   inputs.src-checkpack-0_1_1.repo  = "checkpack";
   inputs.src-checkpack-0_1_1.type  = "gitlab";
   

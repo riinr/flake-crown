@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-bearssl-master.flake = false;
+  inputs.src-bearssl-master.ref   = "refs/heads/master";
   inputs.src-bearssl-master.owner = "status-im";
-  inputs.src-bearssl-master.ref   = "master";
   inputs.src-bearssl-master.repo  = "nim-bearssl";
   inputs.src-bearssl-master.type  = "github";
   

@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-spinner-v0_1_2.flake = false;
-  inputs.src-spinner-v0_1_2.owner = "tonogram";
   inputs.src-spinner-v0_1_2.ref   = "refs/tags/v0.1.2";
+  inputs.src-spinner-v0_1_2.owner = "tonogram";
   inputs.src-spinner-v0_1_2.repo  = "spinner";
   inputs.src-spinner-v0_1_2.type  = "github";
   
   inputs."fidget".owner = "nim-nix-pkgs";
   inputs."fidget".ref   = "master";
   inputs."fidget".repo  = "fidget";
+  inputs."fidget".dir   = "";
   inputs."fidget".type  = "github";
   inputs."fidget".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fidget".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."gradient".owner = "nim-nix-pkgs";
   inputs."gradient".ref   = "master";
   inputs."gradient".repo  = "gradient";
+  inputs."gradient".dir   = "";
   inputs."gradient".type  = "github";
   inputs."gradient".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gradient".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

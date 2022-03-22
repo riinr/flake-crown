@@ -1,5 +1,5 @@
 {
-  description = ''Wrapper of the file procedures to provide an interface as similar as possible to that of Python'';
+  description = ''Wrapper of the file functions to provide an interface as similar as possible to that of Python'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pythonfile-master.flake = false;
-  inputs.src-pythonfile-master.owner = "achesak";
   inputs.src-pythonfile-master.ref   = "refs/heads/master";
+  inputs.src-pythonfile-master.owner = "achesak";
   inputs.src-pythonfile-master.repo  = "nim-pythonfile";
   inputs.src-pythonfile-master.type  = "github";
   

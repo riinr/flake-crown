@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-finder-master.flake = false;
-  inputs.src-finder-master.owner = "bung87";
   inputs.src-finder-master.ref   = "refs/heads/master";
+  inputs.src-finder-master.owner = "bung87";
   inputs.src-finder-master.repo  = "finder";
   inputs.src-finder-master.type  = "github";
   
   inputs."zippy".owner = "nim-nix-pkgs";
   inputs."zippy".ref   = "master";
   inputs."zippy".repo  = "zippy";
+  inputs."zippy".dir   = "0_9_7";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

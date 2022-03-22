@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-XPLM-Nim-master.flake = false;
-  inputs.src-XPLM-Nim-master.owner = "jpoirier";
   inputs.src-XPLM-Nim-master.ref   = "refs/heads/master";
+  inputs.src-XPLM-Nim-master.owner = "jpoirier";
   inputs.src-XPLM-Nim-master.repo  = "XPLM-Nim";
   inputs.src-XPLM-Nim-master.type  = "github";
   

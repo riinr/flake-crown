@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ngxcmod-master.flake = false;
+  inputs.src-ngxcmod-master.ref   = "refs/heads/master";
   inputs.src-ngxcmod-master.owner = "ba0f3";
-  inputs.src-ngxcmod-master.ref   = "master";
   inputs.src-ngxcmod-master.repo  = "ngxcmod.nim";
   inputs.src-ngxcmod-master.type  = "github";
   

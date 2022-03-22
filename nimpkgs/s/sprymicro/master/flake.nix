@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sprymicro-master.flake = false;
-  inputs.src-sprymicro-master.owner = "gokr";
   inputs.src-sprymicro-master.ref   = "refs/heads/master";
+  inputs.src-sprymicro-master.owner = "gokr";
   inputs.src-sprymicro-master.repo  = "sprymicro";
   inputs.src-sprymicro-master.type  = "github";
   
   inputs."spryvm".owner = "nim-nix-pkgs";
   inputs."spryvm".ref   = "master";
   inputs."spryvm".repo  = "spryvm";
+  inputs."spryvm".dir   = "";
   inputs."spryvm".type  = "github";
   inputs."spryvm".inputs.nixpkgs.follows = "nixpkgs";
   inputs."spryvm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -1,5 +1,5 @@
 {
-  description = ''Module to provide an interface as similar as possible to Python's math libary'';
+  description = '' Nim module to provide an interface as similar as possible to Python's math libary'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pythonmath-master.flake = false;
-  inputs.src-pythonmath-master.owner = "achesak";
   inputs.src-pythonmath-master.ref   = "refs/heads/master";
+  inputs.src-pythonmath-master.owner = "achesak";
   inputs.src-pythonmath-master.repo  = "nim-pythonmath";
   inputs.src-pythonmath-master.type  = "github";
   

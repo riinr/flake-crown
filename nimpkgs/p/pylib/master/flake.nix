@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pylib-master.flake = false;
-  inputs.src-pylib-master.owner = "Yardanico";
   inputs.src-pylib-master.ref   = "refs/heads/master";
+  inputs.src-pylib-master.owner = "Yardanico";
   inputs.src-pylib-master.repo  = "nimpylib";
   inputs.src-pylib-master.type  = "github";
   

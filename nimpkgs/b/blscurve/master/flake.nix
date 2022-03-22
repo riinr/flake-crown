@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-blscurve-master.flake = false;
+  inputs.src-blscurve-master.ref   = "refs/heads/master";
   inputs.src-blscurve-master.owner = "status-im";
-  inputs.src-blscurve-master.ref   = "master";
   inputs.src-blscurve-master.repo  = "nim-blscurve";
   inputs.src-blscurve-master.type  = "github";
   

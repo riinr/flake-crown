@@ -1,5 +1,5 @@
 {
-  description = ''A wechat payment sdk for nim.'';
+  description = ''WeChat payment SDK for Nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-wxpay-main.flake = false;
-  inputs.src-wxpay-main.owner = "lihf8515";
   inputs.src-wxpay-main.ref   = "refs/heads/main";
+  inputs.src-wxpay-main.owner = "lihf8515";
   inputs.src-wxpay-main.repo  = "wxpay";
   inputs.src-wxpay-main.type  = "github";
   
   inputs."hmac".owner = "nim-nix-pkgs";
   inputs."hmac".ref   = "master";
   inputs."hmac".repo  = "hmac";
+  inputs."hmac".dir   = "0_2_0";
   inputs."hmac".type  = "github";
   inputs."hmac".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hmac".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

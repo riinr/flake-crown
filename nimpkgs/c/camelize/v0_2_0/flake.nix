@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-camelize-v0_2_0.flake = false;
-  inputs.src-camelize-v0_2_0.owner = "kixixixixi";
   inputs.src-camelize-v0_2_0.ref   = "refs/tags/v0.2.0";
+  inputs.src-camelize-v0_2_0.owner = "kixixixixi";
   inputs.src-camelize-v0_2_0.repo  = "camelize";
   inputs.src-camelize-v0_2_0.type  = "github";
   

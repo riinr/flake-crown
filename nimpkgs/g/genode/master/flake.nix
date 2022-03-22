@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-genode-master.flake = false;
-  inputs.src-genode-master.owner = "~ehmry";
   inputs.src-genode-master.ref   = "master";
+  inputs.src-genode-master.owner = "~ehmry";
   inputs.src-genode-master.repo  = "nim_genode";
   inputs.src-genode-master.type  = "sourcehut";
   

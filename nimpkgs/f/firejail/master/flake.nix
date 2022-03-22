@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-firejail-master.flake = false;
-  inputs.src-firejail-master.owner = "juancarlospaco";
   inputs.src-firejail-master.ref   = "refs/heads/master";
+  inputs.src-firejail-master.owner = "juancarlospaco";
   inputs.src-firejail-master.repo  = "nim-firejail";
   inputs.src-firejail-master.type  = "github";
   

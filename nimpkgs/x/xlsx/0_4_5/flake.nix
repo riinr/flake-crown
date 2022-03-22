@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-xlsx-0_4_5.flake = false;
-  inputs.src-xlsx-0_4_5.owner = "xflywind";
   inputs.src-xlsx-0_4_5.ref   = "refs/tags/0.4.5";
+  inputs.src-xlsx-0_4_5.owner = "xflywind";
   inputs.src-xlsx-0_4_5.repo  = "xlsx";
   inputs.src-xlsx-0_4_5.type  = "github";
   
   inputs."zip".owner = "nim-nix-pkgs";
   inputs."zip".ref   = "master";
   inputs."zip".repo  = "zip";
+  inputs."zip".dir   = "0_3_1";
   inputs."zip".type  = "github";
   inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

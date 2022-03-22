@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ethash-master.flake = false;
+  inputs.src-ethash-master.ref   = "refs/heads/master";
   inputs.src-ethash-master.owner = "status-im";
-  inputs.src-ethash-master.ref   = "master";
   inputs.src-ethash-master.repo  = "nim-ethash";
   inputs.src-ethash-master.type  = "github";
   

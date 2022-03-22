@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pfring-master.flake = false;
-  inputs.src-pfring-master.owner = "ba0f3";
   inputs.src-pfring-master.ref   = "refs/heads/master";
+  inputs.src-pfring-master.owner = "ba0f3";
   inputs.src-pfring-master.repo  = "pfring.nim";
   inputs.src-pfring-master.type  = "github";
   

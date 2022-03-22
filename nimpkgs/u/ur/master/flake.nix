@@ -1,5 +1,5 @@
 {
-  description = ''A Universal Result macro/object that normalizes the information returned from a procedure'';
+  description = ''Universal Result objects'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ur-master.flake = false;
-  inputs.src-ur-master.owner = "JohnAD";
   inputs.src-ur-master.ref   = "refs/heads/master";
+  inputs.src-ur-master.owner = "JohnAD";
   inputs.src-ur-master.repo  = "ur";
   inputs.src-ur-master.type  = "github";
   

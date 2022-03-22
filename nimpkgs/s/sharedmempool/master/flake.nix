@@ -1,5 +1,5 @@
 {
-  description = ''threadsafe memory pool '';
+  description = ''sharedmemorypool implementation in Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sharedmempool-master.flake = false;
-  inputs.src-sharedmempool-master.owner = "mikra01";
   inputs.src-sharedmempool-master.ref   = "refs/heads/master";
+  inputs.src-sharedmempool-master.owner = "mikra01";
   inputs.src-sharedmempool-master.repo  = "sharedmempool";
   inputs.src-sharedmempool-master.type  = "github";
   

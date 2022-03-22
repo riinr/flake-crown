@@ -15,6 +15,30 @@
   inputs."iterrr-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."iterrr-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."iterrr-0_1_0".dir   = "0_1_0";
+  inputs."iterrr-0_1_0".owner = "nim-nix-pkgs";
+  inputs."iterrr-0_1_0".ref   = "master";
+  inputs."iterrr-0_1_0".repo  = "iterrr";
+  inputs."iterrr-0_1_0".type  = "github";
+  inputs."iterrr-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."iterrr-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."iterrr-0_2_1".dir   = "0_2_1";
+  inputs."iterrr-0_2_1".owner = "nim-nix-pkgs";
+  inputs."iterrr-0_2_1".ref   = "master";
+  inputs."iterrr-0_2_1".repo  = "iterrr";
+  inputs."iterrr-0_2_1".type  = "github";
+  inputs."iterrr-0_2_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."iterrr-0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."iterrr-0_3_0".dir   = "0_3_0";
+  inputs."iterrr-0_3_0".owner = "nim-nix-pkgs";
+  inputs."iterrr-0_3_0".ref   = "master";
+  inputs."iterrr-0_3_0".repo  = "iterrr";
+  inputs."iterrr-0_3_0".type  = "github";
+  inputs."iterrr-0_3_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."iterrr-0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

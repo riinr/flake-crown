@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-gnu-main.flake = false;
+  inputs.src-gnu-main.ref   = "refs/heads/main";
   inputs.src-gnu-main.owner = "tonogram";
-  inputs.src-gnu-main.ref   = "main";
   inputs.src-gnu-main.repo  = "gnu";
   inputs.src-gnu-main.type  = "github";
   

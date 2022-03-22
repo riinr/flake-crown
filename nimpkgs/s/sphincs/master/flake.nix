@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sphincs-master.flake = false;
-  inputs.src-sphincs-master.owner = "~ehmry";
   inputs.src-sphincs-master.ref   = "master";
+  inputs.src-sphincs-master.owner = "~ehmry";
   inputs.src-sphincs-master.repo  = "nim_sphincs";
   inputs.src-sphincs-master.type  = "sourcehut";
   

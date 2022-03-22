@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-RC4-master.flake = false;
+  inputs.src-RC4-master.ref   = "refs/heads/master";
   inputs.src-RC4-master.owner = "OHermesJunior";
-  inputs.src-RC4-master.ref   = "master";
   inputs.src-RC4-master.repo  = "nimRC4";
   inputs.src-RC4-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimagehide-master.flake = false;
+  inputs.src-nimagehide-master.ref   = "refs/heads/master";
   inputs.src-nimagehide-master.owner = "MnlPhlp";
-  inputs.src-nimagehide-master.ref   = "master";
   inputs.src-nimagehide-master.repo  = "nimagehide";
   inputs.src-nimagehide-master.type  = "github";
   

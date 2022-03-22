@@ -1,5 +1,5 @@
 {
-  description = ''wrapper for FreeType2 library'';
+  description = ''FreeType2 library wrapper'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-freetype-master.flake = false;
-  inputs.src-freetype-master.owner = "jangko";
   inputs.src-freetype-master.ref   = "refs/heads/master";
+  inputs.src-freetype-master.owner = "jangko";
   inputs.src-freetype-master.repo  = "freetype";
   inputs.src-freetype-master.type  = "github";
   

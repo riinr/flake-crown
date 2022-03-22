@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-gcplat-master.flake = false;
+  inputs.src-gcplat-master.ref   = "refs/heads/master";
   inputs.src-gcplat-master.owner = "disruptek";
-  inputs.src-gcplat-master.ref   = "master";
   inputs.src-gcplat-master.repo  = "gcplat";
   inputs.src-gcplat-master.type  = "github";
   

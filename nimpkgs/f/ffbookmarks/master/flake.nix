@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ffbookmarks-master.flake = false;
-  inputs.src-ffbookmarks-master.owner = "achesak";
   inputs.src-ffbookmarks-master.ref   = "refs/heads/master";
+  inputs.src-ffbookmarks-master.owner = "achesak";
   inputs.src-ffbookmarks-master.repo  = "nim-ffbookmarks";
   inputs.src-ffbookmarks-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nish-master.flake = false;
+  inputs.src-nish-master.ref   = "refs/heads/master";
   inputs.src-nish-master.owner = "owlinux1000";
-  inputs.src-nish-master.ref   = "master";
   inputs.src-nish-master.repo  = "nish";
   inputs.src-nish-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-drawim-master.flake = false;
+  inputs.src-drawim-master.ref   = "refs/heads/master";
   inputs.src-drawim-master.owner = "GabrielLasso";
-  inputs.src-drawim-master.ref   = "master";
   inputs.src-drawim-master.repo  = "drawim";
   inputs.src-drawim-master.type  = "github";
   

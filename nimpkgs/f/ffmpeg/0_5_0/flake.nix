@@ -1,5 +1,5 @@
 {
-  description = ''ffmpeg.nim is the Nim binding for FFMpeg(4.3.2).'';
+  description = ''ffmpeg.nim is the Nim binding for FFMpeg(5.0).'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ffmpeg-0_5_0.flake = false;
-  inputs.src-ffmpeg-0_5_0.owner = "momeemt";
   inputs.src-ffmpeg-0_5_0.ref   = "refs/tags/0.5.0";
+  inputs.src-ffmpeg-0_5_0.owner = "momeemt";
   inputs.src-ffmpeg-0_5_0.repo  = "ffmpeg.nim";
   inputs.src-ffmpeg-0_5_0.type  = "github";
   

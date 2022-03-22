@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-simple_graph-master.flake = false;
-  inputs.src-simple_graph-master.owner = "erhlee-bird";
   inputs.src-simple_graph-master.ref   = "refs/heads/master";
+  inputs.src-simple_graph-master.owner = "erhlee-bird";
   inputs.src-simple_graph-master.repo  = "simple_graph";
   inputs.src-simple_graph-master.type  = "github";
   

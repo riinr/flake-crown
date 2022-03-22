@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-glbits-master.flake = false;
+  inputs.src-glbits-master.ref   = "refs/heads/master";
   inputs.src-glbits-master.owner = "rlipsc";
-  inputs.src-glbits-master.ref   = "master";
   inputs.src-glbits-master.repo  = "glbits";
   inputs.src-glbits-master.type  = "github";
   

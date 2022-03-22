@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-bncurve-master.flake = false;
+  inputs.src-bncurve-master.ref   = "refs/heads/master";
   inputs.src-bncurve-master.owner = "status-im";
-  inputs.src-bncurve-master.ref   = "master";
   inputs.src-bncurve-master.repo  = "nim-bncurve";
   inputs.src-bncurve-master.type  = "github";
   

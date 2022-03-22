@@ -1,5 +1,5 @@
 {
-  description = ''Nim object validation using type field pragmas'';
+  description = ''Field validation for Nim objects'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-validation-master.flake = false;
-  inputs.src-validation-master.owner = "captainbland";
   inputs.src-validation-master.ref   = "refs/heads/master";
+  inputs.src-validation-master.owner = "captainbland";
   inputs.src-validation-master.repo  = "nim-validation";
   inputs.src-validation-master.type  = "github";
   

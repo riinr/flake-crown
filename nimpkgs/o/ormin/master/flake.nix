@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ormin-master.flake = false;
+  inputs.src-ormin-master.ref   = "refs/heads/master";
   inputs.src-ormin-master.owner = "Araq";
-  inputs.src-ormin-master.ref   = "master";
   inputs.src-ormin-master.repo  = "ormin";
   inputs.src-ormin-master.type  = "github";
   

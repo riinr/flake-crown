@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-daemonim-master.flake = false;
+  inputs.src-daemonim-master.ref   = "refs/heads/master";
   inputs.src-daemonim-master.owner = "bung87";
-  inputs.src-daemonim-master.ref   = "master";
   inputs.src-daemonim-master.repo  = "daemon";
   inputs.src-daemonim-master.type  = "github";
   

@@ -8,9 +8,9 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nre-0_2_0.flake = false;
+  inputs.src-nre-0_2_0.ref   = "refs/tags/0.2.0";
   inputs.src-nre-0_2_0.owner = "flaviut";
-  inputs.src-nre-0_2_0.ref   = "0_2_0";
-  inputs.src-nre-0_2_0.repo  = "nre.git";
+  inputs.src-nre-0_2_0.repo  = "nre";
   inputs.src-nre-0_2_0.type  = "github";
   
   inputs."optional_t".owner = "nim-nix-pkgs";

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sim-0_1_4.flake = false;
-  inputs.src-sim-0_1_4.owner = "ba0f3";
   inputs.src-sim-0_1_4.ref   = "refs/tags/0.1.4";
+  inputs.src-sim-0_1_4.owner = "ba0f3";
   inputs.src-sim-0_1_4.repo  = "sim.nim";
   inputs.src-sim-0_1_4.type  = "github";
   

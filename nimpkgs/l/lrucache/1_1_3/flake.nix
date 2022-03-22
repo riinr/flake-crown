@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-lrucache-1_1_3.flake = false;
-  inputs.src-lrucache-1_1_3.owner = "jackhftang";
   inputs.src-lrucache-1_1_3.ref   = "refs/tags/1.1.3";
+  inputs.src-lrucache-1_1_3.owner = "jackhftang";
   inputs.src-lrucache-1_1_3.repo  = "lrucache";
   inputs.src-lrucache-1_1_3.type  = "github";
   

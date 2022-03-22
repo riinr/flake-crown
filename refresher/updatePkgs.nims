@@ -23,22 +23,28 @@ let
     .filterIt(it{"name"}.getStr.toLower[0] >= startAt)
     .filterIt(it{"name"}.getStr.toLower[0] <= endAt)
 
-echo "Compiling updatePkg.nim"
-exec "./updatePkg.nim &>/dev/null || true"
-
-
-proc waitUpdatePkgs(maxProcs: int) =
-  let query = "ps h -C .updatePkg -o pid"
-  while gorge(query).split("\n").len > maxProcs:
+proc maxRunning(cmd: string, maxProcs: int) =
+  let query = fmt"ps h -C .{cmd} -o pid"
+  while gorge(query).split("\n").len > maxProcs + 1:
     exec "sleep 0.05"
 
-for pkg in pkgItems:
-  waitUpdatePkgs(10)
-  if pkg.hasKey("url") and "git" == pkg["method"].getStr:
-    let pkgJSON = $pkg
-    echo fmt"""Running {pkg["name"]}"""
-    exec(fmt"echo {pkgJSON.quoteShell}|./updatePkg.nim &")
+proc preCompile(cmd: string) =
+  echo "Compiling {cmd}.nim"
+  exec fmt"./{cmd}.nim || true"
 
-waitUpdatePkgs(1)
+proc run(cmd: string) =
+  defer: maxRunning cmd, 0
+  preCompile cmd
+  for pkg in pkgItems:
+    maxRunning cmd, 8
+    if pkg.hasKey("url") and "git" == pkg["method"].getStr:
+      let pkgJSON = $pkg
+      exec "sleep 0.23"
+      echo fmt"""Running {cmd} for {pkg["name"]}"""
+      exec(fmt"echo {pkgJSON.quoteShell}|./{cmd}.nim &")
 
+
+run "updateMeta"
+
+run "updateFlake"
 

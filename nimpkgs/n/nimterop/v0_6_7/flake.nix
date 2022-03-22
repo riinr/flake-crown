@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimterop-v0_6_7.flake = false;
+  inputs.src-nimterop-v0_6_7.ref   = "refs/tags/v0.6.7";
   inputs.src-nimterop-v0_6_7.owner = "genotrance";
-  inputs.src-nimterop-v0_6_7.ref   = "v0_6_7";
   inputs.src-nimterop-v0_6_7.repo  = "nimterop";
   inputs.src-nimterop-v0_6_7.type  = "github";
   

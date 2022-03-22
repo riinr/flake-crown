@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-toktok-main.flake = false;
-  inputs.src-toktok-main.owner = "openpeep";
   inputs.src-toktok-main.ref   = "refs/heads/main";
+  inputs.src-toktok-main.owner = "openpeep";
   inputs.src-toktok-main.repo  = "toktok";
   inputs.src-toktok-main.type  = "github";
   

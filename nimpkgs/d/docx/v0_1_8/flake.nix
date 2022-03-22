@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-docx-v0_1_8.flake = false;
+  inputs.src-docx-v0_1_8.ref   = "refs/tags/v0.1.8";
   inputs.src-docx-v0_1_8.owner = "xflywind";
-  inputs.src-docx-v0_1_8.ref   = "v0_1_8";
   inputs.src-docx-v0_1_8.repo  = "docx";
   inputs.src-docx-v0_1_8.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-blurhash-master.flake = false;
+  inputs.src-blurhash-master.ref   = "refs/heads/master";
   inputs.src-blurhash-master.owner = "SolitudeSF";
-  inputs.src-blurhash-master.ref   = "master";
   inputs.src-blurhash-master.repo  = "blurhash";
   inputs.src-blurhash-master.type  = "github";
   

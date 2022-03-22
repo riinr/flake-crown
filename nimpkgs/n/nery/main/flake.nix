@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nery-main.flake = false;
+  inputs.src-nery-main.ref   = "refs/heads/main";
   inputs.src-nery-main.owner = "David-Kunz";
-  inputs.src-nery-main.ref   = "main";
   inputs.src-nery-main.repo  = "Nery";
   inputs.src-nery-main.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-vectors-master.flake = false;
-  inputs.src-vectors-master.owner = "blamestross";
   inputs.src-vectors-master.ref   = "refs/heads/master";
+  inputs.src-vectors-master.owner = "blamestross";
   inputs.src-vectors-master.repo  = "nimrod-vectors";
   inputs.src-vectors-master.type  = "github";
   

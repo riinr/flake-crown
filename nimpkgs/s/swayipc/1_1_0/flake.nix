@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-swayipc-1_1_0.flake = false;
-  inputs.src-swayipc-1_1_0.owner = "disruptek";
   inputs.src-swayipc-1_1_0.ref   = "refs/tags/1.1.0";
+  inputs.src-swayipc-1_1_0.owner = "disruptek";
   inputs.src-swayipc-1_1_0.repo  = "swayipc";
   inputs.src-swayipc-1_1_0.type  = "github";
   

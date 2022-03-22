@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-websocket-0_3_2.flake = false;
-  inputs.src-websocket-0_3_2.owner = "niv";
   inputs.src-websocket-0_3_2.ref   = "refs/tags/0.3.2";
+  inputs.src-websocket-0_3_2.owner = "niv";
   inputs.src-websocket-0_3_2.repo  = "websocket.nim";
   inputs.src-websocket-0_3_2.type  = "github";
   

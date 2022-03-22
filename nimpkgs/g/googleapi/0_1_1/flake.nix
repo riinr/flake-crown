@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-googleapi-0_1_1.flake = false;
+  inputs.src-googleapi-0_1_1.ref   = "refs/tags/0.1.1";
   inputs.src-googleapi-0_1_1.owner = "treeform";
-  inputs.src-googleapi-0_1_1.ref   = "0_1_1";
   inputs.src-googleapi-0_1_1.repo  = "googleapi";
   inputs.src-googleapi-0_1_1.type  = "github";
   

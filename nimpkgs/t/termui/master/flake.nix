@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-termui-master.flake = false;
-  inputs.src-termui-master.owner = "jjv360";
   inputs.src-termui-master.ref   = "refs/heads/master";
+  inputs.src-termui-master.owner = "jjv360";
   inputs.src-termui-master.repo  = "nim-termui";
   inputs.src-termui-master.type  = "github";
   
   inputs."classes".owner = "nim-nix-pkgs";
   inputs."classes".ref   = "master";
   inputs."classes".repo  = "classes";
+  inputs."classes".dir   = "v0_2_11";
   inputs."classes".type  = "github";
   inputs."classes".inputs.nixpkgs.follows = "nixpkgs";
   inputs."classes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."elvis".owner = "nim-nix-pkgs";
   inputs."elvis".ref   = "master";
   inputs."elvis".repo  = "elvis";
+  inputs."elvis".dir   = "v0_5_0";
   inputs."elvis".type  = "github";
   inputs."elvis".inputs.nixpkgs.follows = "nixpkgs";
   inputs."elvis".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

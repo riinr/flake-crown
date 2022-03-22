@@ -1,5 +1,5 @@
 {
-  description = ''A library for managing your CouchDB. Easy & comfortably to use.'';
+  description = ''Easily and comfortably access your CouchDB.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-couchdb-master.flake = false;
-  inputs.src-couchdb-master.owner = "theAkito";
   inputs.src-couchdb-master.ref   = "refs/heads/master";
+  inputs.src-couchdb-master.owner = "theAkito";
   inputs.src-couchdb-master.repo  = "nim-couchdb";
   inputs.src-couchdb-master.type  = "github";
   

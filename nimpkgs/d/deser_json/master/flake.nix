@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-deser_json-master.flake = false;
+  inputs.src-deser_json-master.ref   = "refs/heads/master";
   inputs.src-deser_json-master.owner = "gabbhack";
-  inputs.src-deser_json-master.ref   = "master";
   inputs.src-deser_json-master.repo  = "deser_json";
   inputs.src-deser_json-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-reframe-0_4_1.flake = false;
+  inputs.src-reframe-0_4_1.ref   = "refs/tags/0.4.1";
   inputs.src-reframe-0_4_1.owner = "rosado";
-  inputs.src-reframe-0_4_1.ref   = "0_4_1";
   inputs.src-reframe-0_4_1.repo  = "reframe.nim";
   inputs.src-reframe-0_4_1.type  = "github";
   

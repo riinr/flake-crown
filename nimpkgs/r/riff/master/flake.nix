@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-riff-master.flake = false;
+  inputs.src-riff-master.ref   = "refs/heads/master";
   inputs.src-riff-master.owner = "johnnovak";
-  inputs.src-riff-master.ref   = "master";
   inputs.src-riff-master.repo  = "nim-riff";
   inputs.src-riff-master.type  = "github";
   

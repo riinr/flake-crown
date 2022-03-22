@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nap-1_5_1.flake = false;
+  inputs.src-nap-1_5_1.ref   = "refs/tags/1.5.1";
   inputs.src-nap-1_5_1.owner = "madprops";
-  inputs.src-nap-1_5_1.ref   = "1_5_1";
   inputs.src-nap-1_5_1.repo  = "nap";
   inputs.src-nap-1_5_1.type  = "github";
   

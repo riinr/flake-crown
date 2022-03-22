@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mutableseqs-master.flake = false;
+  inputs.src-mutableseqs-master.ref   = "refs/heads/master";
   inputs.src-mutableseqs-master.owner = "iourinski";
-  inputs.src-mutableseqs-master.ref   = "master";
   inputs.src-mutableseqs-master.repo  = "mutableseqs";
   inputs.src-mutableseqs-master.type  = "github";
   

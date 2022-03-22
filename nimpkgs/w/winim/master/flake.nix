@@ -1,5 +1,5 @@
 {
-  description = ''Nim's Windows API and COM Library'';
+  description = ''Winim - Nim's Windows API and COM Library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-winim-master.flake = false;
-  inputs.src-winim-master.owner = "khchen";
   inputs.src-winim-master.ref   = "refs/heads/master";
+  inputs.src-winim-master.owner = "khchen";
   inputs.src-winim-master.repo  = "winim";
   inputs.src-winim-master.type  = "github";
   

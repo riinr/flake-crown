@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-polypbren-v0_4_2.flake = false;
-  inputs.src-polypbren-v0_4_2.owner = "guibar64";
   inputs.src-polypbren-v0_4_2.ref   = "refs/tags/v0.4.2";
+  inputs.src-polypbren-v0_4_2.owner = "guibar64";
   inputs.src-polypbren-v0_4_2.repo  = "polypbren";
   inputs.src-polypbren-v0_4_2.type  = "github";
   

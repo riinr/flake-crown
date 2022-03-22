@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-hsluv-master.flake = false;
+  inputs.src-hsluv-master.ref   = "refs/heads/master";
   inputs.src-hsluv-master.owner = "isthisnagee";
-  inputs.src-hsluv-master.ref   = "master";
   inputs.src-hsluv-master.repo  = "hsluv-nim";
   inputs.src-hsluv-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Commandant is a simple to use library for parsing command line arguments. Commandant is ideal for writing terminal applications, with  support for flags, options, subcommands, and custom exit options.'';
+  description = ''A small command line parsing DSL'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-commandant-0_15_0.flake = false;
-  inputs.src-commandant-0_15_0.owner = "casey-SK";
   inputs.src-commandant-0_15_0.ref   = "refs/tags/0.15.0";
+  inputs.src-commandant-0_15_0.owner = "casey-SK";
   inputs.src-commandant-0_15_0.repo  = "commandant";
   inputs.src-commandant-0_15_0.type  = "github";
   

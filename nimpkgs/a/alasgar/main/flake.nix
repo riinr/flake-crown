@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-alasgar-main.flake = false;
+  inputs.src-alasgar-main.ref   = "refs/heads/main";
   inputs.src-alasgar-main.owner = "abisxir";
-  inputs.src-alasgar-main.ref   = "main";
   inputs.src-alasgar-main.repo  = "alasgar";
   inputs.src-alasgar-main.type  = "github";
   

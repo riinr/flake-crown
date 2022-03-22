@@ -1,5 +1,5 @@
 {
-  description = ''Interactive Nim Shell'';
+  description = ''Interactive Nim Shell / REPL / Playground'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-inim-0_2_3.flake = false;
-  inputs.src-inim-0_2_3.owner = "inim-repl";
   inputs.src-inim-0_2_3.ref   = "refs/tags/0.2.3";
+  inputs.src-inim-0_2_3.owner = "inim-repl";
   inputs.src-inim-0_2_3.repo  = "INim";
   inputs.src-inim-0_2_3.type  = "github";
   

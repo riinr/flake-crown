@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-minecraft_server_status-0_1_1.flake = false;
+  inputs.src-minecraft_server_status-0_1_1.ref   = "refs/tags/0.1.1";
   inputs.src-minecraft_server_status-0_1_1.owner = "GabrielLasso";
-  inputs.src-minecraft_server_status-0_1_1.ref   = "0_1_1";
   inputs.src-minecraft_server_status-0_1_1.repo  = "minecraft_server_status";
   inputs.src-minecraft_server_status-0_1_1.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Nim wrapper for wyhash'';
+  description = ''A new awesome nimble package'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-wyhash-main.flake = false;
-  inputs.src-wyhash-main.owner = "jackhftang";
   inputs.src-wyhash-main.ref   = "refs/heads/main";
+  inputs.src-wyhash-main.owner = "jackhftang";
   inputs.src-wyhash-main.repo  = "wyhash.nim";
   inputs.src-wyhash-main.type  = "github";
   

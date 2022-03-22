@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ArrayFireNim-master.flake = false;
+  inputs.src-ArrayFireNim-master.ref   = "refs/heads/master";
   inputs.src-ArrayFireNim-master.owner = "bitstormGER";
-  inputs.src-ArrayFireNim-master.ref   = "master";
   inputs.src-ArrayFireNim-master.repo  = "ArrayFire-Nim";
   inputs.src-ArrayFireNim-master.type  = "github";
   

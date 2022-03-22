@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-docopt-master.flake = false;
+  inputs.src-docopt-master.ref   = "refs/heads/master";
   inputs.src-docopt-master.owner = "docopt";
-  inputs.src-docopt-master.ref   = "master";
   inputs.src-docopt-master.repo  = "docopt.nim";
   inputs.src-docopt-master.type  = "github";
   

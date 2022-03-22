@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-osrm-0_1_5.flake = false;
+  inputs.src-osrm-0_1_5.ref   = "refs/tags/0.1.5";
   inputs.src-osrm-0_1_5.owner = "juancarlospaco";
-  inputs.src-osrm-0_1_5.ref   = "0_1_5";
   inputs.src-osrm-0_1_5.repo  = "nim-osrm";
   inputs.src-osrm-0_1_5.type  = "github";
   

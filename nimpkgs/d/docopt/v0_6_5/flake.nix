@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-docopt-v0_6_5.flake = false;
+  inputs.src-docopt-v0_6_5.ref   = "refs/tags/v0.6.5";
   inputs.src-docopt-v0_6_5.owner = "docopt";
-  inputs.src-docopt-v0_6_5.ref   = "v0_6_5";
   inputs.src-docopt-v0_6_5.repo  = "docopt.nim";
   inputs.src-docopt-v0_6_5.type  = "github";
   

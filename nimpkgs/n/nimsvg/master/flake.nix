@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimsvg-master.flake = false;
+  inputs.src-nimsvg-master.ref   = "refs/heads/master";
   inputs.src-nimsvg-master.owner = "bluenote10";
-  inputs.src-nimsvg-master.ref   = "master";
   inputs.src-nimsvg-master.repo  = "NimSvg";
   inputs.src-nimsvg-master.type  = "github";
   

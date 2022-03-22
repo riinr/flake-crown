@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-eloverblik-v0_0_1.flake = false;
+  inputs.src-eloverblik-v0_0_1.ref   = "refs/tags/v0.0.1";
   inputs.src-eloverblik-v0_0_1.owner = "ThomasTJdev";
-  inputs.src-eloverblik-v0_0_1.ref   = "v0_0_1";
   inputs.src-eloverblik-v0_0_1.repo  = "nim_eloverblik_api";
   inputs.src-eloverblik-v0_0_1.type  = "github";
   

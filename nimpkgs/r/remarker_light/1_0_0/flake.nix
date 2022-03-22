@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-remarker_light-1_0_0.flake = false;
+  inputs.src-remarker_light-1_0_0.ref   = "refs/tags/1.0.0";
   inputs.src-remarker_light-1_0_0.owner = "muxueqz";
-  inputs.src-remarker_light-1_0_0.ref   = "1_0_0";
   inputs.src-remarker_light-1_0_0.repo  = "remarker_light";
   inputs.src-remarker_light-1_0_0.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-easy_sqlite3-v0_1_1.flake = false;
+  inputs.src-easy_sqlite3-v0_1_1.ref   = "refs/tags/v0.1.1";
   inputs.src-easy_sqlite3-v0_1_1.owner = "codehz";
-  inputs.src-easy_sqlite3-v0_1_1.ref   = "v0_1_1";
   inputs.src-easy_sqlite3-v0_1_1.repo  = "easy_sqlite3";
   inputs.src-easy_sqlite3-v0_1_1.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimr-master.flake = false;
+  inputs.src-nimr-master.ref   = "refs/heads/master";
   inputs.src-nimr-master.owner = "Jeff-Ciesielski";
-  inputs.src-nimr-master.ref   = "master";
   inputs.src-nimr-master.repo  = "nimr";
   inputs.src-nimr-master.type  = "github";
   

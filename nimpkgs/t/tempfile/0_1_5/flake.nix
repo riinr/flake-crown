@@ -1,5 +1,5 @@
 {
-  description = ''Temporary files and directories'';
+  description = ''Temporary files and folders'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-tempfile-0_1_5.flake = false;
-  inputs.src-tempfile-0_1_5.owner = "OpenSystemsLab";
   inputs.src-tempfile-0_1_5.ref   = "refs/tags/0.1.5";
+  inputs.src-tempfile-0_1_5.owner = "OpenSystemsLab";
   inputs.src-tempfile-0_1_5.repo  = "tempfile.nim";
   inputs.src-tempfile-0_1_5.type  = "github";
   

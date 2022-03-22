@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-allographer-v0_13_4.flake = false;
+  inputs.src-allographer-v0_13_4.ref   = "refs/tags/v0.13.4";
   inputs.src-allographer-v0_13_4.owner = "itsumura-h";
-  inputs.src-allographer-v0_13_4.ref   = "v0_13_4";
   inputs.src-allographer-v0_13_4.repo  = "nim-allographer";
   inputs.src-allographer-v0_13_4.type  = "github";
   

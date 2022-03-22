@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-owoifynim-main.flake = false;
+  inputs.src-owoifynim-main.ref   = "refs/heads/main";
   inputs.src-owoifynim-main.owner = "deadshot465";
-  inputs.src-owoifynim-main.ref   = "main";
   inputs.src-owoifynim-main.repo  = "owoifynim";
   inputs.src-owoifynim-main.type  = "github";
   

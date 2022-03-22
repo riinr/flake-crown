@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-glob-master.flake = false;
+  inputs.src-glob-master.ref   = "refs/heads/master";
   inputs.src-glob-master.owner = "haltcase";
-  inputs.src-glob-master.ref   = "master";
   inputs.src-glob-master.repo  = "glob";
   inputs.src-glob-master.type  = "github";
   

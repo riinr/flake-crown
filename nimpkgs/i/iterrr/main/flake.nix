@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-iterrr-main.flake = false;
-  inputs.src-iterrr-main.owner = "hamidb80";
   inputs.src-iterrr-main.ref   = "refs/heads/main";
+  inputs.src-iterrr-main.owner = "hamidb80";
   inputs.src-iterrr-main.repo  = "iterrr";
   inputs.src-iterrr-main.type  = "github";
   
   inputs."macroplus".owner = "nim-nix-pkgs";
   inputs."macroplus".ref   = "master";
   inputs."macroplus".repo  = "macroplus";
+  inputs."macroplus".dir   = "0_1_22";
   inputs."macroplus".type  = "github";
   inputs."macroplus".inputs.nixpkgs.follows = "nixpkgs";
   inputs."macroplus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

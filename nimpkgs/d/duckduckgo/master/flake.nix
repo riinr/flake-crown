@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-duckduckgo-master.flake = false;
+  inputs.src-duckduckgo-master.ref   = "refs/heads/master";
   inputs.src-duckduckgo-master.owner = "lurlo";
-  inputs.src-duckduckgo-master.ref   = "master";
   inputs.src-duckduckgo-master.repo  = "duckduckgo";
   inputs.src-duckduckgo-master.type  = "gitlab";
   

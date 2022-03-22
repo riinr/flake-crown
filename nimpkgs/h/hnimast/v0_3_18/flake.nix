@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-hnimast-v0_3_18.flake = false;
+  inputs.src-hnimast-v0_3_18.ref   = "refs/tags/v0.3.18";
   inputs.src-hnimast-v0_3_18.owner = "haxscramper";
-  inputs.src-hnimast-v0_3_18.ref   = "v0_3_18";
   inputs.src-hnimast-v0_3_18.repo  = "hnimast";
   inputs.src-hnimast-v0_3_18.type  = "github";
   

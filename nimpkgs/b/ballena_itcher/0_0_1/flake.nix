@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ballena_itcher-0_0_1.flake = false;
+  inputs.src-ballena_itcher-0_0_1.ref   = "refs/tags/0.0.1";
   inputs.src-ballena_itcher-0_0_1.owner = "juancarlospaco";
-  inputs.src-ballena_itcher-0_0_1.ref   = "0_0_1";
   inputs.src-ballena_itcher-0_0_1.repo  = "ballena-itcher";
   inputs.src-ballena_itcher-0_0_1.type  = "github";
   

@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1647920574,
+        "narHash": "sha256-D3ob5QykELhyNcTnISOkjEzLlgXltwON8Ucrz5cpiQI=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "bfb46a1f762002f07f9d81d93dacd544c6890623",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
+        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-RollingHash-master": "src-RollingHash-master"
+      }
+    },
+    "src-RollingHash-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1554208095,
+        "narHash": "sha256-+em7F/TZK8+7ZCnRDPbPYNwC29dF94RybUc4vYqjj08=",
+        "owner": "MarcAzar",
+        "repo": "RollingHash",
+        "rev": "93be628dc5b387ae235ceec0fef0d1914c5d3500",
+        "type": "github"
+      },
+      "original": {
+        "owner": "MarcAzar",
+        "ref": "refs/heads/master",
+        "repo": "RollingHash",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

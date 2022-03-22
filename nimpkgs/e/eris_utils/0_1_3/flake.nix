@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-eris_utils-0_1_3.flake = false;
+  inputs.src-eris_utils-0_1_3.ref   = "0.1.3";
   inputs.src-eris_utils-0_1_3.owner = "~ehmry";
-  inputs.src-eris_utils-0_1_3.ref   = "0_1_3";
   inputs.src-eris_utils-0_1_3.repo  = "eris_utils";
   inputs.src-eris_utils-0_1_3.type  = "sourcehut";
   

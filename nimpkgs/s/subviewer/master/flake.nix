@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-subviewer-master.flake = false;
-  inputs.src-subviewer-master.owner = "achesak";
   inputs.src-subviewer-master.ref   = "refs/heads/master";
+  inputs.src-subviewer-master.owner = "achesak";
   inputs.src-subviewer-master.repo  = "nim-subviewer";
   inputs.src-subviewer-master.type  = "github";
   

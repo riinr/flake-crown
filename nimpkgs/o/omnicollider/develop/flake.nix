@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-omnicollider-develop.flake = false;
+  inputs.src-omnicollider-develop.ref   = "refs/heads/develop";
   inputs.src-omnicollider-develop.owner = "vitreo12";
-  inputs.src-omnicollider-develop.ref   = "develop";
   inputs.src-omnicollider-develop.repo  = "omnicollider";
   inputs.src-omnicollider-develop.type  = "github";
   

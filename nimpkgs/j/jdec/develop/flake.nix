@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-jdec-develop.flake = false;
+  inputs.src-jdec-develop.ref   = "refs/heads/develop";
   inputs.src-jdec-develop.owner = "diegogub";
-  inputs.src-jdec-develop.ref   = "develop";
   inputs.src-jdec-develop.repo  = "jdec";
   inputs.src-jdec-develop.type  = "github";
   

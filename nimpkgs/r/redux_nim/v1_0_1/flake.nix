@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-redux_nim-v1_0_1.flake = false;
+  inputs.src-redux_nim-v1_0_1.ref   = "refs/tags/v1.0.1";
   inputs.src-redux_nim-v1_0_1.owner = "M4RC3L05";
-  inputs.src-redux_nim-v1_0_1.ref   = "v1_0_1";
   inputs.src-redux_nim-v1_0_1.repo  = "redux-nim";
   inputs.src-redux_nim-v1_0_1.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-lscolors-master.flake = false;
-  inputs.src-lscolors-master.owner = "joachimschmidt557";
   inputs.src-lscolors-master.ref   = "refs/heads/master";
+  inputs.src-lscolors-master.owner = "joachimschmidt557";
   inputs.src-lscolors-master.repo  = "nim-lscolors";
   inputs.src-lscolors-master.type  = "github";
   

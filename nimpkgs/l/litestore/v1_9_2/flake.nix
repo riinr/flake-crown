@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-litestore-v1_9_2.flake = false;
-  inputs.src-litestore-v1_9_2.owner = "h3rald";
   inputs.src-litestore-v1_9_2.ref   = "refs/tags/v1.9.2";
+  inputs.src-litestore-v1_9_2.owner = "h3rald";
   inputs.src-litestore-v1_9_2.repo  = "litestore";
   inputs.src-litestore-v1_9_2.type  = "github";
   

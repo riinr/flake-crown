@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nordaudio-main.flake = false;
+  inputs.src-nordaudio-main.ref   = "refs/heads/main";
   inputs.src-nordaudio-main.owner = "Psirus";
-  inputs.src-nordaudio-main.ref   = "main";
   inputs.src-nordaudio-main.repo  = "nordaudio";
   inputs.src-nordaudio-main.type  = "github";
   

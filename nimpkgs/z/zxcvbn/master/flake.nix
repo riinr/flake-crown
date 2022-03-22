@@ -1,5 +1,5 @@
 {
-  description = ''Nim bindings for the zxcvbn-c password strength estimation library'';
+  description = ''Nim bindings for the zxcvbn-c password strenght estimator'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-zxcvbn-master.flake = false;
-  inputs.src-zxcvbn-master.owner = "status-im";
   inputs.src-zxcvbn-master.ref   = "refs/heads/master";
+  inputs.src-zxcvbn-master.owner = "status-im";
   inputs.src-zxcvbn-master.repo  = "nim-zxcvbn";
   inputs.src-zxcvbn-master.type  = "github";
   
   inputs."testutils".owner = "nim-nix-pkgs";
   inputs."testutils".ref   = "master";
   inputs."testutils".repo  = "testutils";
+  inputs."testutils".dir   = "v0_4_2";
   inputs."testutils".type  = "github";
   inputs."testutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."testutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

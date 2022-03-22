@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-emerald-v0_2_3.flake = false;
+  inputs.src-emerald-v0_2_3.ref   = "refs/tags/v0.2.3";
   inputs.src-emerald-v0_2_3.owner = "flyx";
-  inputs.src-emerald-v0_2_3.ref   = "v0_2_3";
   inputs.src-emerald-v0_2_3.repo  = "emerald";
   inputs.src-emerald-v0_2_3.type  = "github";
   

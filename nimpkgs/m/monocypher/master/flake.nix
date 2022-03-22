@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-monocypher-master.flake = false;
+  inputs.src-monocypher-master.ref   = "refs/heads/master";
   inputs.src-monocypher-master.owner = "markspanbroek";
-  inputs.src-monocypher-master.ref   = "master";
   inputs.src-monocypher-master.repo  = "monocypher.nim";
   inputs.src-monocypher-master.type  = "github";
   

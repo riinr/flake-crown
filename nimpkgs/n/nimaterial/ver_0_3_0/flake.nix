@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimaterial-ver_0_3_0.flake = false;
+  inputs.src-nimaterial-ver_0_3_0.ref   = "refs/tags/ver.0.3.0";
   inputs.src-nimaterial-ver_0_3_0.owner = "momeemt";
-  inputs.src-nimaterial-ver_0_3_0.ref   = "ver_0_3_0";
   inputs.src-nimaterial-ver_0_3_0.repo  = "nimaterial";
   inputs.src-nimaterial-ver_0_3_0.type  = "github";
   

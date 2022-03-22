@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-wings-v0_0_7-alpha.flake = false;
-  inputs.src-wings-v0_0_7-alpha.owner = "binhonglee";
   inputs.src-wings-v0_0_7-alpha.ref   = "refs/tags/v0.0.7-alpha";
+  inputs.src-wings-v0_0_7-alpha.owner = "binhonglee";
   inputs.src-wings-v0_0_7-alpha.repo  = "wings";
   inputs.src-wings-v0_0_7-alpha.type  = "github";
   
   inputs."stones".owner = "nim-nix-pkgs";
   inputs."stones".ref   = "master";
   inputs."stones".repo  = "stones";
+  inputs."stones".dir   = "";
   inputs."stones".type  = "github";
   inputs."stones".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stones".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

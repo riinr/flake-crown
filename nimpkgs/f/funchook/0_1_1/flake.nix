@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-funchook-0_1_1.flake = false;
-  inputs.src-funchook-0_1_1.owner = "ba0f3";
   inputs.src-funchook-0_1_1.ref   = "refs/tags/0.1.1";
+  inputs.src-funchook-0_1_1.owner = "ba0f3";
   inputs.src-funchook-0_1_1.repo  = "funchook.nim";
   inputs.src-funchook-0_1_1.type  = "github";
   

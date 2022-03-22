@@ -1,5 +1,5 @@
 {
-  description = ''Nim wrapper for Sandia OpenSHMEM, a high performance computing (HPC), distributed shared symmetric memory library'';
+  description = ''nim-sos a Sandia OpenSHMEM wrapper'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sos-main.flake = false;
-  inputs.src-sos-main.owner = "ct-clmsn";
   inputs.src-sos-main.ref   = "refs/heads/main";
+  inputs.src-sos-main.owner = "ct-clmsn";
   inputs.src-sos-main.repo  = "nim-sos";
   inputs.src-sos-main.type  = "github";
   

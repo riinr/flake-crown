@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-delight-master.flake = false;
+  inputs.src-delight-master.ref   = "refs/heads/master";
   inputs.src-delight-master.owner = "liquid600pgm";
-  inputs.src-delight-master.ref   = "master";
   inputs.src-delight-master.repo  = "delight";
   inputs.src-delight-master.type  = "github";
   

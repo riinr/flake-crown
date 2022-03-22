@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-io-sixense-master.flake = false;
-  inputs.src-io-sixense-master.owner = "nimious";
   inputs.src-io-sixense-master.ref   = "refs/heads/master";
+  inputs.src-io-sixense-master.owner = "nimious";
   inputs.src-io-sixense-master.repo  = "io-sixense";
   inputs.src-io-sixense-master.type  = "github";
   

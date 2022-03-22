@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-bson-v1_0_1.flake = false;
+  inputs.src-bson-v1_0_1.ref   = "refs/tags/v1.0.1";
   inputs.src-bson-v1_0_1.owner = "JohnAD";
-  inputs.src-bson-v1_0_1.ref   = "v1_0_1";
   inputs.src-bson-v1_0_1.repo  = "bson";
   inputs.src-bson-v1_0_1.type  = "github";
   

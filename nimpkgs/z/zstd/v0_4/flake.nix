@@ -1,5 +1,5 @@
 {
-  description = ''Bindings for zstd'';
+  description = ''Nim bindings for zstd'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-zstd-v0_4.flake = false;
-  inputs.src-zstd-v0_4.owner = "wltsmrz";
   inputs.src-zstd-v0_4.ref   = "refs/tags/v0.4";
+  inputs.src-zstd-v0_4.owner = "wltsmrz";
   inputs.src-zstd-v0_4.repo  = "nim_zstd";
   inputs.src-zstd-v0_4.type  = "github";
   

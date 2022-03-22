@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ndns-main.flake = false;
+  inputs.src-ndns-main.ref   = "refs/heads/main";
   inputs.src-ndns-main.owner = "rockcavera";
-  inputs.src-ndns-main.ref   = "main";
   inputs.src-ndns-main.repo  = "nim-ndns";
   inputs.src-ndns-main.type  = "github";
   

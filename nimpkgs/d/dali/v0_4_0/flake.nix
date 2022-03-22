@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-dali-v0_4_0.flake = false;
+  inputs.src-dali-v0_4_0.ref   = "refs/tags/v0.4.0";
   inputs.src-dali-v0_4_0.owner = "akavel";
-  inputs.src-dali-v0_4_0.ref   = "v0_4_0";
   inputs.src-dali-v0_4_0.repo  = "dali";
   inputs.src-dali-v0_4_0.type  = "github";
   

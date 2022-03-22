@@ -1,5 +1,5 @@
 {
-  description = ''ptrace wrapper for Nim'';
+  description = ''ptrace wrapper and helpers for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ptrace-master.flake = false;
-  inputs.src-ptrace-master.owner = "ba0f3";
   inputs.src-ptrace-master.ref   = "refs/heads/master";
+  inputs.src-ptrace-master.owner = "ba0f3";
   inputs.src-ptrace-master.repo  = "ptrace.nim";
   inputs.src-ptrace-master.type  = "github";
   

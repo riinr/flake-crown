@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-reactorfuse-master.flake = false;
+  inputs.src-reactorfuse-master.ref   = "refs/heads/master";
   inputs.src-reactorfuse-master.owner = "zielmicha";
-  inputs.src-reactorfuse-master.ref   = "master";
   inputs.src-reactorfuse-master.repo  = "reactorfuse";
   inputs.src-reactorfuse-master.type  = "github";
   

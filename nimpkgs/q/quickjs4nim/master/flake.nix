@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-quickjs4nim-master.flake = false;
+  inputs.src-quickjs4nim-master.ref   = "refs/heads/master";
   inputs.src-quickjs4nim-master.owner = "ImVexed";
-  inputs.src-quickjs4nim-master.ref   = "master";
   inputs.src-quickjs4nim-master.repo  = "quickjs4nim";
   inputs.src-quickjs4nim-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-maybe-1_0.flake = false;
+  inputs.src-maybe-1_0.ref   = "refs/tags/1.0";
   inputs.src-maybe-1_0.owner = "superfunc";
-  inputs.src-maybe-1_0.ref   = "1_0";
   inputs.src-maybe-1_0.repo  = "maybe";
   inputs.src-maybe-1_0.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-osutil-master.flake = false;
+  inputs.src-osutil-master.ref   = "refs/heads/master";
   inputs.src-osutil-master.owner = "juancarlospaco";
-  inputs.src-osutil-master.ref   = "master";
   inputs.src-osutil-master.repo  = "nim-osutil";
   inputs.src-osutil-master.type  = "github";
   

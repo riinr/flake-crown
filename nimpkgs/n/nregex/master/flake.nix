@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nregex-master.flake = false;
+  inputs.src-nregex-master.ref   = "refs/heads/master";
   inputs.src-nregex-master.owner = "nitely";
-  inputs.src-nregex-master.ref   = "master";
   inputs.src-nregex-master.repo  = "nregex";
   inputs.src-nregex-master.type  = "github";
   

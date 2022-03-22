@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-aossoa-master.flake = false;
+  inputs.src-aossoa-master.ref   = "refs/heads/master";
   inputs.src-aossoa-master.owner = "guibar64";
-  inputs.src-aossoa-master.ref   = "master";
   inputs.src-aossoa-master.repo  = "aossoa";
   inputs.src-aossoa-master.type  = "github";
   

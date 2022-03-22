@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-bio_seq-v_0_0_7.flake = false;
+  inputs.src-bio_seq-v_0_0_7.ref   = "refs/tags/v.0.0.7";
   inputs.src-bio_seq-v_0_0_7.owner = "kerrycobb";
-  inputs.src-bio_seq-v_0_0_7.ref   = "v_0_0_7";
   inputs.src-bio_seq-v_0_0_7.repo  = "BioSeq";
   inputs.src-bio_seq-v_0_0_7.type  = "github";
   

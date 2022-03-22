@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-jupyternim-0_4_1.flake = false;
+  inputs.src-jupyternim-0_4_1.ref   = "refs/tags/0.4.1";
   inputs.src-jupyternim-0_4_1.owner = "stisa";
-  inputs.src-jupyternim-0_4_1.ref   = "0_4_1";
   inputs.src-jupyternim-0_4_1.repo  = "jupyternim";
   inputs.src-jupyternim-0_4_1.type  = "github";
   

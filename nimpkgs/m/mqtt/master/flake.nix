@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mqtt-master.flake = false;
+  inputs.src-mqtt-master.ref   = "refs/heads/master";
   inputs.src-mqtt-master.owner = "barnybug";
-  inputs.src-mqtt-master.ref   = "master";
   inputs.src-mqtt-master.repo  = "nim-mqtt";
   inputs.src-mqtt-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-onedrive-master.flake = false;
+  inputs.src-onedrive-master.ref   = "refs/heads/master";
   inputs.src-onedrive-master.owner = "ThomasTJdev";
-  inputs.src-onedrive-master.ref   = "master";
   inputs.src-onedrive-master.repo  = "nim_onedrive";
   inputs.src-onedrive-master.type  = "github";
   

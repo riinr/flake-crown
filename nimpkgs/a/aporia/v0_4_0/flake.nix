@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-aporia-v0_4_0.flake = false;
+  inputs.src-aporia-v0_4_0.ref   = "refs/tags/v0.4.0";
   inputs.src-aporia-v0_4_0.owner = "nim-lang";
-  inputs.src-aporia-v0_4_0.ref   = "v0_4_0";
   inputs.src-aporia-v0_4_0.repo  = "Aporia";
   inputs.src-aporia-v0_4_0.type  = "github";
   

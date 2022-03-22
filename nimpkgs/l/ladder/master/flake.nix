@@ -1,5 +1,5 @@
 {
-  description = ''Ladder logic macros for Nim'';
+  description = ''Ladder logic macros for Nim. documentation hosted at http://ryuk.ooo/nimdocs/ladder/ladder.html'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ladder-master.flake = false;
-  inputs.src-ladder-master.owner = "ryukoposting";
   inputs.src-ladder-master.ref   = "refs/heads/master";
+  inputs.src-ladder-master.owner = "ryukoposting";
   inputs.src-ladder-master.repo  = "nim-ladder";
   inputs.src-ladder-master.type  = "gitlab";
   

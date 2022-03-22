@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ratel-master.flake = false;
+  inputs.src-ratel-master.ref   = "refs/heads/master";
   inputs.src-ratel-master.owner = "PMunch";
-  inputs.src-ratel-master.ref   = "master";
   inputs.src-ratel-master.repo  = "ratel";
   inputs.src-ratel-master.type  = "github";
   

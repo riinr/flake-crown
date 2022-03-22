@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-localize-0_2.flake = false;
-  inputs.src-localize-0_2.owner = "levovix0";
   inputs.src-localize-0_2.ref   = "refs/tags/0.2";
+  inputs.src-localize-0_2.owner = "levovix0";
   inputs.src-localize-0_2.repo  = "localize";
   inputs.src-localize-0_2.type  = "github";
   
   inputs."fusion".owner = "nim-nix-pkgs";
   inputs."fusion".ref   = "master";
   inputs."fusion".repo  = "fusion";
+  inputs."fusion".dir   = "v1_1";
   inputs."fusion".type  = "github";
   inputs."fusion".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fusion".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

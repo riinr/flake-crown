@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-dbus-master.flake = false;
+  inputs.src-dbus-master.ref   = "refs/heads/master";
   inputs.src-dbus-master.owner = "zielmicha";
-  inputs.src-dbus-master.ref   = "master";
   inputs.src-dbus-master.repo  = "nim-dbus";
   inputs.src-dbus-master.type  = "github";
   

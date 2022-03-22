@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimrpc_milis-master.flake = false;
+  inputs.src-nimrpc_milis-master.ref   = "refs/heads/master";
   inputs.src-nimrpc_milis-master.owner = "milisarge";
-  inputs.src-nimrpc_milis-master.ref   = "master";
   inputs.src-nimrpc_milis-master.repo  = "nimrpc_milis";
   inputs.src-nimrpc_milis-master.type  = "github";
   

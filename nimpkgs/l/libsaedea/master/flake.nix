@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-libsaedea-master.flake = false;
-  inputs.src-libsaedea-master.owner = "m33m33";
   inputs.src-libsaedea-master.ref   = "refs/heads/master";
+  inputs.src-libsaedea-master.owner = "m33m33";
   inputs.src-libsaedea-master.repo  = "libsaedea";
   inputs.src-libsaedea-master.type  = "github";
   

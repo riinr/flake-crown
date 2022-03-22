@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimpress-develop.flake = false;
+  inputs.src-nimpress-develop.ref   = "refs/heads/develop";
   inputs.src-nimpress-develop.owner = "mpinese";
-  inputs.src-nimpress-develop.ref   = "develop";
   inputs.src-nimpress-develop.repo  = "nimpress";
   inputs.src-nimpress-develop.type  = "github";
   

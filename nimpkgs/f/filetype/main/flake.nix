@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-filetype-main.flake = false;
-  inputs.src-filetype-main.owner = "jiro4989";
   inputs.src-filetype-main.ref   = "refs/heads/main";
+  inputs.src-filetype-main.owner = "jiro4989";
   inputs.src-filetype-main.repo  = "filetype";
   inputs.src-filetype-main.type  = "github";
   

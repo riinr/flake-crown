@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nodesnim-nightly-0_3_3a.flake = false;
+  inputs.src-nodesnim-nightly-0_3_3a.ref   = "refs/tags/nightly-0.3.3a";
   inputs.src-nodesnim-nightly-0_3_3a.owner = "Ethosa";
-  inputs.src-nodesnim-nightly-0_3_3a.ref   = "nightly-0_3_3a";
   inputs.src-nodesnim-nightly-0_3_3a.repo  = "nodesnim";
   inputs.src-nodesnim-nightly-0_3_3a.type  = "github";
   

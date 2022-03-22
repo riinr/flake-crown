@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-awk-master.flake = false;
+  inputs.src-awk-master.ref   = "refs/heads/master";
   inputs.src-awk-master.owner = "greencardamom";
-  inputs.src-awk-master.ref   = "master";
   inputs.src-awk-master.repo  = "awk";
   inputs.src-awk-master.type  = "github";
   

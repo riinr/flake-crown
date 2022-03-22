@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-imageman-master.flake = false;
-  inputs.src-imageman-master.owner = "SolitudeSF";
   inputs.src-imageman-master.ref   = "refs/heads/master";
+  inputs.src-imageman-master.owner = "SolitudeSF";
   inputs.src-imageman-master.repo  = "imageman";
   inputs.src-imageman-master.type  = "github";
   
   inputs."stb_image".owner = "nim-nix-pkgs";
   inputs."stb_image".ref   = "master";
   inputs."stb_image".repo  = "stb_image";
+  inputs."stb_image".dir   = "2_5";
   inputs."stb_image".type  = "github";
   inputs."stb_image".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stb_image".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

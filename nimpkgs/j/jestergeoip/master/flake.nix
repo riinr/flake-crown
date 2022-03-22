@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-jestergeoip-master.flake = false;
+  inputs.src-jestergeoip-master.ref   = "refs/heads/master";
   inputs.src-jestergeoip-master.owner = "JohnAD";
-  inputs.src-jestergeoip-master.ref   = "master";
   inputs.src-jestergeoip-master.repo  = "jestergeoip";
   inputs.src-jestergeoip-master.type  = "github";
   

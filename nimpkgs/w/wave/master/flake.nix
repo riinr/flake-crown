@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-wave-master.flake = false;
-  inputs.src-wave-master.owner = "jiro4989";
   inputs.src-wave-master.ref   = "refs/heads/master";
+  inputs.src-wave-master.owner = "jiro4989";
   inputs.src-wave-master.repo  = "wave";
   inputs.src-wave-master.type  = "github";
   

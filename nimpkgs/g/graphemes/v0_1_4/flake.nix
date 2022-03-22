@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-graphemes-v0_1_4.flake = false;
+  inputs.src-graphemes-v0_1_4.ref   = "refs/tags/v0.1.4";
   inputs.src-graphemes-v0_1_4.owner = "nitely";
-  inputs.src-graphemes-v0_1_4.ref   = "v0_1_4";
   inputs.src-graphemes-v0_1_4.repo  = "nim-graphemes";
   inputs.src-graphemes-v0_1_4.type  = "github";
   

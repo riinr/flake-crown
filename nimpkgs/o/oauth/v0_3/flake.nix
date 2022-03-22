@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-oauth-v0_3.flake = false;
+  inputs.src-oauth-v0_3.ref   = "refs/tags/v0.3";
   inputs.src-oauth-v0_3.owner = "CORDEA";
-  inputs.src-oauth-v0_3.ref   = "v0_3";
   inputs.src-oauth-v0_3.repo  = "oauth";
   inputs.src-oauth-v0_3.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-subhook-0_5_5.flake = false;
-  inputs.src-subhook-0_5_5.owner = "ba0f3";
   inputs.src-subhook-0_5_5.ref   = "refs/tags/0.5.5";
+  inputs.src-subhook-0_5_5.owner = "ba0f3";
   inputs.src-subhook-0_5_5.repo  = "subhook.nim";
   inputs.src-subhook-0_5_5.type  = "github";
   

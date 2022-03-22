@@ -8,9 +8,9 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nim0-master.flake = false;
+  inputs.src-nim0-master.ref   = "refs/heads/master";
   inputs.src-nim0-master.owner = "pmetras";
-  inputs.src-nim0-master.ref   = "master";
-  inputs.src-nim0-master.repo  = "nim0.git";
+  inputs.src-nim0-master.repo  = "nim0";
   inputs.src-nim0-master.type  = "gitlab";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

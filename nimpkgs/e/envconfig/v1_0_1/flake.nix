@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-envconfig-v1_0_1.flake = false;
+  inputs.src-envconfig-v1_0_1.ref   = "refs/tags/v1.0.1";
   inputs.src-envconfig-v1_0_1.owner = "jiro4989";
-  inputs.src-envconfig-v1_0_1.ref   = "v1_0_1";
   inputs.src-envconfig-v1_0_1.repo  = "envconfig";
   inputs.src-envconfig-v1_0_1.type  = "github";
   

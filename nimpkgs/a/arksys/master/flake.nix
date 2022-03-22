@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-arksys-master.flake = false;
+  inputs.src-arksys-master.ref   = "refs/heads/master";
   inputs.src-arksys-master.owner = "wolfadex";
-  inputs.src-arksys-master.ref   = "master";
   inputs.src-arksys-master.repo  = "arksys";
   inputs.src-arksys-master.type  = "github";
   

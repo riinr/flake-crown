@@ -1,5 +1,5 @@
 {
-  description = ''Simplify Nim Inter-Thread Communication'';
+  description = ''Simplify Nim inter-thread Communication'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-threadproxy-0_0_2.flake = false;
-  inputs.src-threadproxy-0_0_2.owner = "jackhftang";
   inputs.src-threadproxy-0_0_2.ref   = "refs/tags/0.0.2";
+  inputs.src-threadproxy-0_0_2.owner = "jackhftang";
   inputs.src-threadproxy-0_0_2.repo  = "threadproxy.nim";
   inputs.src-threadproxy-0_0_2.type  = "github";
   

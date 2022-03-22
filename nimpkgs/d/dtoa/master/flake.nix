@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-dtoa-master.flake = false;
+  inputs.src-dtoa-master.ref   = "refs/heads/master";
   inputs.src-dtoa-master.owner = "LemonBoy";
-  inputs.src-dtoa-master.ref   = "master";
   inputs.src-dtoa-master.repo  = "dtoa.nim";
   inputs.src-dtoa-master.type  = "github";
   

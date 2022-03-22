@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-timezones-v0_5_4.flake = false;
-  inputs.src-timezones-v0_5_4.owner = "GULPF";
   inputs.src-timezones-v0_5_4.ref   = "refs/tags/v0.5.4";
+  inputs.src-timezones-v0_5_4.owner = "GULPF";
   inputs.src-timezones-v0_5_4.repo  = "timezones";
   inputs.src-timezones-v0_5_4.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-gnuplot-master.flake = false;
+  inputs.src-gnuplot-master.ref   = "refs/heads/master";
   inputs.src-gnuplot-master.owner = "dvolk";
-  inputs.src-gnuplot-master.ref   = "master";
   inputs.src-gnuplot-master.repo  = "gnuplot.nim";
   inputs.src-gnuplot-master.type  = "github";
   

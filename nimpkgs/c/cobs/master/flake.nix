@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-cobs-master.flake = false;
-  inputs.src-cobs-master.owner = "keyme";
   inputs.src-cobs-master.ref   = "refs/heads/master";
+  inputs.src-cobs-master.owner = "keyme";
   inputs.src-cobs-master.repo  = "nim_cobs";
   inputs.src-cobs-master.type  = "github";
   

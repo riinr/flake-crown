@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-runeterra_decks-master.flake = false;
+  inputs.src-runeterra_decks-master.ref   = "refs/heads/master";
   inputs.src-runeterra_decks-master.owner = "SolitudeSF";
-  inputs.src-runeterra_decks-master.ref   = "master";
   inputs.src-runeterra_decks-master.repo  = "runeterra_decks";
   inputs.src-runeterra_decks-master.type  = "github";
   

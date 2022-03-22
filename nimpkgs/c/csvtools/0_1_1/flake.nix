@@ -1,5 +1,5 @@
 {
-  description = ''Manage CSV files'';
+  description = ''Manage CSV files in Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-csvtools-0_1_1.flake = false;
-  inputs.src-csvtools-0_1_1.owner = "andreaferretti";
   inputs.src-csvtools-0_1_1.ref   = "refs/tags/0.1.1";
+  inputs.src-csvtools-0_1_1.owner = "andreaferretti";
   inputs.src-csvtools-0_1_1.repo  = "csvtools";
   inputs.src-csvtools-0_1_1.type  = "github";
   

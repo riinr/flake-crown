@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-tnetstring-master.flake = false;
-  inputs.src-tnetstring-master.owner = "mahlonsmith";
   inputs.src-tnetstring-master.ref   = "refs/heads/master";
+  inputs.src-tnetstring-master.owner = "mahlonsmith";
   inputs.src-tnetstring-master.repo  = "nim-tnetstring";
   inputs.src-tnetstring-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Bindings for Closure Compiler web API.'';
+  description = ''Bindings to closure compiler web API'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-closure_compiler-v0_2.flake = false;
-  inputs.src-closure_compiler-v0_2.owner = "yglukhov";
   inputs.src-closure_compiler-v0_2.ref   = "refs/tags/v0.2";
+  inputs.src-closure_compiler-v0_2.owner = "yglukhov";
   inputs.src-closure_compiler-v0_2.repo  = "closure_compiler";
   inputs.src-closure_compiler-v0_2.type  = "github";
   

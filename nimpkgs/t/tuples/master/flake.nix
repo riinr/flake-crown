@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-tuples-master.flake = false;
-  inputs.src-tuples-master.owner = "MasonMcGill";
   inputs.src-tuples-master.ref   = "refs/heads/master";
+  inputs.src-tuples-master.owner = "MasonMcGill";
   inputs.src-tuples-master.repo  = "tuples";
   inputs.src-tuples-master.type  = "github";
   

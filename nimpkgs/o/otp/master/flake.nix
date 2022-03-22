@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-OTP-master.flake = false;
+  inputs.src-OTP-master.ref   = "refs/heads/master";
   inputs.src-OTP-master.owner = "OpenSystemsLab";
-  inputs.src-OTP-master.ref   = "master";
   inputs.src-OTP-master.repo  = "otp.nim";
   inputs.src-OTP-master.type  = "github";
   

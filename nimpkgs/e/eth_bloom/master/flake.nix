@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-eth_bloom-master.flake = false;
+  inputs.src-eth_bloom-master.ref   = "refs/heads/master";
   inputs.src-eth_bloom-master.owner = "status-im";
-  inputs.src-eth_bloom-master.ref   = "master";
   inputs.src-eth_bloom-master.repo  = "nim-eth-bloom";
   inputs.src-eth_bloom-master.type  = "github";
   

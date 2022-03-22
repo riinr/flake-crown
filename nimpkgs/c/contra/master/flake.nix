@@ -1,5 +1,5 @@
 {
-  description = ''Lightweight Contract Programming, Design by Contract, on 9 LoC, NimScript, JavaScript, compile-time.'';
+  description = ''Lightweight Self-Documenting Design by Contract Programming and Security Hardened mode and Immutable Programming, NimScript, JavaScript, compile-time.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-contra-master.flake = false;
-  inputs.src-contra-master.owner = "juancarlospaco";
   inputs.src-contra-master.ref   = "refs/heads/master";
+  inputs.src-contra-master.owner = "juancarlospaco";
   inputs.src-contra-master.repo  = "nim-contra";
   inputs.src-contra-master.type  = "github";
   

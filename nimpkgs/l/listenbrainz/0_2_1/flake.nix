@@ -1,5 +1,5 @@
 {
-  description = ''Low-level multisync bindings to the ListenBrainz web API.'';
+  description = ''Low-level multisync (C backend) and async (JS backend) bindings to the ListenBrainz web API.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-listenbrainz-0_2_1.flake = false;
-  inputs.src-listenbrainz-0_2_1.owner = "tandy1000";
   inputs.src-listenbrainz-0_2_1.ref   = "refs/tags/0.2.1";
+  inputs.src-listenbrainz-0_2_1.owner = "tandy1000";
   inputs.src-listenbrainz-0_2_1.repo  = "listenbrainz-nim";
   inputs.src-listenbrainz-0_2_1.type  = "gitlab";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Protobuf implementation in pure Nim that leverages the power of the macro system to not depend on any external tools'';
+  description = ''Pure Nim library for using protobuf in Nim. It is implemented through a string parsing macro that generate code based on the official protobuf specification.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-protobuf-v0_5_1.flake = false;
-  inputs.src-protobuf-v0_5_1.owner = "PMunch";
   inputs.src-protobuf-v0_5_1.ref   = "refs/tags/v0.5.1";
+  inputs.src-protobuf-v0_5_1.owner = "PMunch";
   inputs.src-protobuf-v0_5_1.repo  = "protobuf-nim";
   inputs.src-protobuf-v0_5_1.type  = "github";
   
   inputs."combparser".owner = "nim-nix-pkgs";
   inputs."combparser".ref   = "master";
   inputs."combparser".repo  = "combparser";
+  inputs."combparser".dir   = "";
   inputs."combparser".type  = "github";
   inputs."combparser".inputs.nixpkgs.follows = "nixpkgs";
   inputs."combparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

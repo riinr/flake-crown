@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimdbx-main.flake = false;
+  inputs.src-nimdbx-main.ref   = "refs/heads/main";
   inputs.src-nimdbx-main.owner = "snej";
-  inputs.src-nimdbx-main.ref   = "main";
   inputs.src-nimdbx-main.repo  = "nimdbx";
   inputs.src-nimdbx-main.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-dumpincludes-master.flake = false;
+  inputs.src-dumpincludes-master.ref   = "refs/heads/master";
   inputs.src-dumpincludes-master.owner = "treeform";
-  inputs.src-dumpincludes-master.ref   = "master";
   inputs.src-dumpincludes-master.repo  = "dumpincludes";
   inputs.src-dumpincludes-master.type  = "github";
   

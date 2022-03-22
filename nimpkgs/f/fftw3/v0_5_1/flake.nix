@@ -1,5 +1,5 @@
 {
-  description = ''Bindings to the FFTW library'';
+  description = ''Nim FFTW bindings'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-fftw3-v0_5_1.flake = false;
-  inputs.src-fftw3-v0_5_1.owner = "SciNim";
   inputs.src-fftw3-v0_5_1.ref   = "refs/tags/v0.5.1";
+  inputs.src-fftw3-v0_5_1.owner = "SciNim";
   inputs.src-fftw3-v0_5_1.repo  = "nimfftw3";
   inputs.src-fftw3-v0_5_1.type  = "github";
   
   inputs."arraymancer".owner = "nim-nix-pkgs";
   inputs."arraymancer".ref   = "master";
   inputs."arraymancer".repo  = "arraymancer";
+  inputs."arraymancer".dir   = "v0_7_11";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."weave".owner = "nim-nix-pkgs";
   inputs."weave".ref   = "master";
   inputs."weave".repo  = "weave";
+  inputs."weave".dir   = "";
   inputs."weave".type  = "github";
   inputs."weave".inputs.nixpkgs.follows = "nixpkgs";
   inputs."weave".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."zippy".owner = "nim-nix-pkgs";
   inputs."zippy".ref   = "master";
   inputs."zippy".repo  = "zippy";
+  inputs."zippy".dir   = "0_9_7";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-stomp-master.flake = false;
-  inputs.src-stomp-master.owner = "mahlonsmith";
   inputs.src-stomp-master.ref   = "refs/heads/master";
+  inputs.src-stomp-master.owner = "mahlonsmith";
   inputs.src-stomp-master.repo  = "nim-stomp";
   inputs.src-stomp-master.type  = "github";
   

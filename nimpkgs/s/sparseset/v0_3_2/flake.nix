@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sparseset-v0_3_2.flake = false;
-  inputs.src-sparseset-v0_3_2.owner = "planetis-m";
   inputs.src-sparseset-v0_3_2.ref   = "refs/tags/v0.3.2";
+  inputs.src-sparseset-v0_3_2.owner = "planetis-m";
   inputs.src-sparseset-v0_3_2.repo  = "sparseset";
   inputs.src-sparseset-v0_3_2.type  = "github";
   

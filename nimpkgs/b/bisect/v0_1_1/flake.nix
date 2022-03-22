@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-bisect-v0_1_1.flake = false;
+  inputs.src-bisect-v0_1_1.ref   = "refs/tags/v0.1.1";
   inputs.src-bisect-v0_1_1.owner = "berquist";
-  inputs.src-bisect-v0_1_1.ref   = "v0_1_1";
   inputs.src-bisect-v0_1_1.repo  = "bisect";
   inputs.src-bisect-v0_1_1.type  = "github";
   

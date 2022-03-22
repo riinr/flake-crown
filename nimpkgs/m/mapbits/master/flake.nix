@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mapbits-master.flake = false;
+  inputs.src-mapbits-master.ref   = "refs/heads/master";
   inputs.src-mapbits-master.owner = "jlp765";
-  inputs.src-mapbits-master.ref   = "master";
   inputs.src-mapbits-master.repo  = "mapbits";
   inputs.src-mapbits-master.type  = "github";
   

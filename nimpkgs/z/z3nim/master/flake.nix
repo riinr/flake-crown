@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-z3nim-master.flake = false;
-  inputs.src-z3nim-master.owner = "Double-oxygeN";
   inputs.src-z3nim-master.ref   = "refs/heads/master";
+  inputs.src-z3nim-master.owner = "Double-oxygeN";
   inputs.src-z3nim-master.repo  = "z3nim";
   inputs.src-z3nim-master.type  = "github";
   

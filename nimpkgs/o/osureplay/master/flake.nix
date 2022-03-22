@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-osureplay-master.flake = false;
+  inputs.src-osureplay-master.ref   = "refs/heads/master";
   inputs.src-osureplay-master.owner = "Yardanico";
-  inputs.src-osureplay-master.ref   = "master";
   inputs.src-osureplay-master.repo  = "nim-osureplay";
   inputs.src-osureplay-master.type  = "github";
   

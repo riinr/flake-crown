@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-unchained-master.flake = false;
-  inputs.src-unchained-master.owner = "SciNim";
   inputs.src-unchained-master.ref   = "refs/heads/master";
+  inputs.src-unchained-master.owner = "SciNim";
   inputs.src-unchained-master.repo  = "unchained";
   inputs.src-unchained-master.type  = "github";
   

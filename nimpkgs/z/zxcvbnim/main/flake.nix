@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-zxcvbnim-main.flake = false;
-  inputs.src-zxcvbnim-main.owner = "jiiihpeeh";
   inputs.src-zxcvbnim-main.ref   = "refs/heads/main";
+  inputs.src-zxcvbnim-main.owner = "jiiihpeeh";
   inputs.src-zxcvbnim-main.repo  = "zxcvbnim";
   inputs.src-zxcvbnim-main.type  = "github";
   
   inputs."jsony".owner = "nim-nix-pkgs";
   inputs."jsony".ref   = "master";
   inputs."jsony".repo  = "jsony";
+  inputs."jsony".dir   = "1_1_3";
   inputs."jsony".type  = "github";
   inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."supersnappy".owner = "nim-nix-pkgs";
   inputs."supersnappy".ref   = "master";
   inputs."supersnappy".repo  = "supersnappy";
+  inputs."supersnappy".dir   = "2_1_1";
   inputs."supersnappy".type  = "github";
   inputs."supersnappy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."supersnappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

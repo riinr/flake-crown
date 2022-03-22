@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-netty-0_2_1.flake = false;
+  inputs.src-netty-0_2_1.ref   = "refs/tags/0.2.1";
   inputs.src-netty-0_2_1.owner = "treeform";
-  inputs.src-netty-0_2_1.ref   = "0_2_1";
   inputs.src-netty-0_2_1.repo  = "netty";
   inputs.src-netty-0_2_1.type  = "github";
   

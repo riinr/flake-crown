@@ -1,5 +1,5 @@
 {
-  description = ''Concise Binary Object Representation decoder (RFC7049).'';
+  description = ''Concise Binary Object Representation decoder and encoder (RFC7049).'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-cbor-v0_5_2.flake = false;
-  inputs.src-cbor-v0_5_2.owner = "~ehmry";
   inputs.src-cbor-v0_5_2.ref   = "v0.5.2";
+  inputs.src-cbor-v0_5_2.owner = "~ehmry";
   inputs.src-cbor-v0_5_2.repo  = "nim_cbor";
   inputs.src-cbor-v0_5_2.type  = "sourcehut";
   

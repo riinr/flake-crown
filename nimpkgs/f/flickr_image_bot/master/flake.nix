@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-flickr_image_bot-master.flake = false;
-  inputs.src-flickr_image_bot-master.owner = "snus-kin";
   inputs.src-flickr_image_bot-master.ref   = "refs/heads/master";
+  inputs.src-flickr_image_bot-master.owner = "snus-kin";
   inputs.src-flickr_image_bot-master.repo  = "flickr-image-bot";
   inputs.src-flickr_image_bot-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-resolv-master.flake = false;
+  inputs.src-resolv-master.ref   = "refs/heads/master";
   inputs.src-resolv-master.owner = "mildred";
-  inputs.src-resolv-master.ref   = "master";
   inputs.src-resolv-master.repo  = "resolv.nim";
   inputs.src-resolv-master.type  = "github";
   

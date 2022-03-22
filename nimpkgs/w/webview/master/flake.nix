@@ -1,5 +1,5 @@
 {
-  description = ''Nim bindings for https://github.com/zserge/webview, a cross platform single header webview library'';
+  description = ''Nim bindings for zserge's webview'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-webview-master.flake = false;
-  inputs.src-webview-master.owner = "oskca";
   inputs.src-webview-master.ref   = "refs/heads/master";
+  inputs.src-webview-master.owner = "oskca";
   inputs.src-webview-master.repo  = "webview";
   inputs.src-webview-master.type  = "github";
   

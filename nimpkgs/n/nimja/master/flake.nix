@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimja-master.flake = false;
+  inputs.src-nimja-master.ref   = "refs/heads/master";
   inputs.src-nimja-master.owner = "enthus1ast";
-  inputs.src-nimja-master.ref   = "master";
   inputs.src-nimja-master.repo  = "nimja";
   inputs.src-nimja-master.type  = "github";
   

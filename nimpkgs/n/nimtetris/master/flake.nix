@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimtetris-master.flake = false;
+  inputs.src-nimtetris-master.ref   = "refs/heads/master";
   inputs.src-nimtetris-master.owner = "jiro4989";
-  inputs.src-nimtetris-master.ref   = "master";
   inputs.src-nimtetris-master.repo  = "nimtetris";
   inputs.src-nimtetris-master.type  = "github";
   

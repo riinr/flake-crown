@@ -1,5 +1,5 @@
 {
-  description = ''Postgres utility functions'';
+  description = ''Collection of utility functions for working with Postgres'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pg_util-master.flake = false;
-  inputs.src-pg_util-master.owner = "hiteshjasani";
   inputs.src-pg_util-master.ref   = "refs/heads/master";
+  inputs.src-pg_util-master.owner = "hiteshjasani";
   inputs.src-pg_util-master.repo  = "nim-pg-util";
   inputs.src-pg_util-master.type  = "github";
   

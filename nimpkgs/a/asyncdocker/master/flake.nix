@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-asyncdocker-master.flake = false;
+  inputs.src-asyncdocker-master.ref   = "refs/heads/master";
   inputs.src-asyncdocker-master.owner = "tulayang";
-  inputs.src-asyncdocker-master.ref   = "master";
   inputs.src-asyncdocker-master.repo  = "asyncdocker";
   inputs.src-asyncdocker-master.type  = "github";
   

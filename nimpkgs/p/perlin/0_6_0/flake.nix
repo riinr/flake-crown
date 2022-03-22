@@ -1,5 +1,5 @@
 {
-  description = ''Perlin noise and Simplex noise generation'';
+  description = ''A Perlin Noise Implementation'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-perlin-0_6_0.flake = false;
-  inputs.src-perlin-0_6_0.owner = "Nycto";
   inputs.src-perlin-0_6_0.ref   = "refs/tags/0.6.0";
+  inputs.src-perlin-0_6_0.owner = "Nycto";
   inputs.src-perlin-0_6_0.repo  = "PerlinNim";
   inputs.src-perlin-0_6_0.type  = "github";
   

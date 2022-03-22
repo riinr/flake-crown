@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sigv4-1_0_3.flake = false;
-  inputs.src-sigv4-1_0_3.owner = "disruptek";
   inputs.src-sigv4-1_0_3.ref   = "refs/tags/1.0.3";
+  inputs.src-sigv4-1_0_3.owner = "disruptek";
   inputs.src-sigv4-1_0_3.repo  = "sigv4";
   inputs.src-sigv4-1_0_3.type  = "github";
   
   inputs."nimcrypto".owner = "nim-nix-pkgs";
   inputs."nimcrypto".ref   = "master";
   inputs."nimcrypto".repo  = "nimcrypto";
+  inputs."nimcrypto".dir   = "";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

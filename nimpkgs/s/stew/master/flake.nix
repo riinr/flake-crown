@@ -1,5 +1,5 @@
 {
-  description = ''stew is collection of utilities, std library extensions and budding libraries that are frequently used at Status, but are too small to deserve their own git repository.'';
+  description = ''Backports, standard library candidates and small utilities that don't yet deserve their own repository'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-stew-master.flake = false;
-  inputs.src-stew-master.owner = "status-im";
   inputs.src-stew-master.ref   = "refs/heads/master";
+  inputs.src-stew-master.owner = "status-im";
   inputs.src-stew-master.repo  = "nim-stew";
   inputs.src-stew-master.type  = "github";
   

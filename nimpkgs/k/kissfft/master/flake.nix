@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-kissfft-master.flake = false;
+  inputs.src-kissfft-master.ref   = "refs/heads/master";
   inputs.src-kissfft-master.owner = "m13253";
-  inputs.src-kissfft-master.ref   = "master";
   inputs.src-kissfft-master.repo  = "nim-kissfft";
   inputs.src-kissfft-master.type  = "github";
   

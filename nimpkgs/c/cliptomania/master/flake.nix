@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-cliptomania-master.flake = false;
-  inputs.src-cliptomania-master.owner = "Guevara-chan";
   inputs.src-cliptomania-master.ref   = "refs/heads/master";
+  inputs.src-cliptomania-master.owner = "Guevara-chan";
   inputs.src-cliptomania-master.repo  = "Cliptomania";
   inputs.src-cliptomania-master.type  = "github";
   

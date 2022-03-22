@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."tkrzw-trunk".dir   = "trunk";
+  inputs."tkrzw-trunk".owner = "nim-nix-pkgs";
+  inputs."tkrzw-trunk".ref   = "master";
+  inputs."tkrzw-trunk".repo  = "tkrzw";
+  inputs."tkrzw-trunk".type  = "github";
+  inputs."tkrzw-trunk".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."tkrzw-trunk".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."tkrzw-v0_1_0".dir   = "v0_1_0";
   inputs."tkrzw-v0_1_0".owner = "nim-nix-pkgs";
   inputs."tkrzw-v0_1_0".ref   = "master";

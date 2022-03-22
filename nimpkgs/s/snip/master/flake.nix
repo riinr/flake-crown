@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-snip-master.flake = false;
-  inputs.src-snip-master.owner = "genotrance";
   inputs.src-snip-master.ref   = "refs/heads/master";
+  inputs.src-snip-master.owner = "genotrance";
   inputs.src-snip-master.repo  = "snip";
   inputs.src-snip-master.type  = "github";
   

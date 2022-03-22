@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-packedjson-0_1_0.flake = false;
-  inputs.src-packedjson-0_1_0.owner = "Araq";
   inputs.src-packedjson-0_1_0.ref   = "refs/tags/0.1.0";
+  inputs.src-packedjson-0_1_0.owner = "Araq";
   inputs.src-packedjson-0_1_0.repo  = "packedjson";
   inputs.src-packedjson-0_1_0.type  = "github";
   

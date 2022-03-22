@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-metatools-master.flake = false;
+  inputs.src-metatools-master.ref   = "refs/heads/master";
   inputs.src-metatools-master.owner = "jxy";
-  inputs.src-metatools-master.ref   = "master";
   inputs.src-metatools-master.repo  = "metatools";
   inputs.src-metatools-master.type  = "github";
   

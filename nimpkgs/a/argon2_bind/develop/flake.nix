@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-argon2_bind-develop.flake = false;
+  inputs.src-argon2_bind-develop.ref   = "refs/heads/develop";
   inputs.src-argon2_bind-develop.owner = "D-Nice";
-  inputs.src-argon2_bind-develop.ref   = "develop";
   inputs.src-argon2_bind-develop.repo  = "argon2_bind";
   inputs.src-argon2_bind-develop.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-normalize-v0_6_0.flake = false;
+  inputs.src-normalize-v0_6_0.ref   = "refs/tags/v0.6.0";
   inputs.src-normalize-v0_6_0.owner = "nitely";
-  inputs.src-normalize-v0_6_0.ref   = "v0_6_0";
   inputs.src-normalize-v0_6_0.repo  = "nim-normalize";
   inputs.src-normalize-v0_6_0.type  = "github";
   

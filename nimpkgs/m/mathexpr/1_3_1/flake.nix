@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mathexpr-1_3_1.flake = false;
+  inputs.src-mathexpr-1_3_1.ref   = "refs/tags/1.3.1";
   inputs.src-mathexpr-1_3_1.owner = "Yardanico";
-  inputs.src-mathexpr-1_3_1.ref   = "1_3_1";
   inputs.src-mathexpr-1_3_1.repo  = "nim-mathexpr";
   inputs.src-mathexpr-1_3_1.type  = "github";
   

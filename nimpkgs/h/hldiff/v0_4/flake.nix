@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-hldiff-v0_4.flake = false;
+  inputs.src-hldiff-v0_4.ref   = "refs/tags/v0.4";
   inputs.src-hldiff-v0_4.owner = "c-blake";
-  inputs.src-hldiff-v0_4.ref   = "v0_4";
   inputs.src-hldiff-v0_4.repo  = "hldiff";
   inputs.src-hldiff-v0_4.type  = "github";
   

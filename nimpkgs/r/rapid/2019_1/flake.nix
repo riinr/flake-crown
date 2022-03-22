@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-rapid-2019_1.flake = false;
+  inputs.src-rapid-2019_1.ref   = "refs/tags/2019.1";
   inputs.src-rapid-2019_1.owner = "liquid600pgm";
-  inputs.src-rapid-2019_1.ref   = "2019_1";
   inputs.src-rapid-2019_1.repo  = "rapid";
   inputs.src-rapid-2019_1.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Nanosecond-percision time using timespec_get'';
+  description = ''Nanosecond-percision time using timespec_get of C11'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-timespec_get-master.flake = false;
-  inputs.src-timespec_get-master.owner = "Matceporial";
   inputs.src-timespec_get-master.ref   = "refs/heads/master";
+  inputs.src-timespec_get-master.owner = "Matceporial";
   inputs.src-timespec_get-master.repo  = "nim-timespec_get";
   inputs.src-timespec_get-master.type  = "github";
   

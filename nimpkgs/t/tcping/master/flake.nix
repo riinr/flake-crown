@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-tcping-master.flake = false;
-  inputs.src-tcping-master.owner = "pdrb";
   inputs.src-tcping-master.ref   = "refs/heads/master";
+  inputs.src-tcping-master.owner = "pdrb";
   inputs.src-tcping-master.repo  = "tcping";
   inputs.src-tcping-master.type  = "github";
   

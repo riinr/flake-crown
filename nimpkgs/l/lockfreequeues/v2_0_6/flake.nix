@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-lockfreequeues-v2_0_6.flake = false;
-  inputs.src-lockfreequeues-v2_0_6.owner = "elijahr";
   inputs.src-lockfreequeues-v2_0_6.ref   = "refs/tags/v2.0.6";
+  inputs.src-lockfreequeues-v2_0_6.owner = "elijahr";
   inputs.src-lockfreequeues-v2_0_6.repo  = "lockfreequeues";
   inputs.src-lockfreequeues-v2_0_6.type  = "github";
   

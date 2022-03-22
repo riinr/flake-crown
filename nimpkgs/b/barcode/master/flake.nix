@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-barcode-master.flake = false;
+  inputs.src-barcode-master.ref   = "refs/heads/master";
   inputs.src-barcode-master.owner = "bunkford";
-  inputs.src-barcode-master.ref   = "master";
   inputs.src-barcode-master.repo  = "barcode";
   inputs.src-barcode-master.type  = "github";
   

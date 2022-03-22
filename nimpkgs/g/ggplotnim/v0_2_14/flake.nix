@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ggplotnim-v0_2_14.flake = false;
+  inputs.src-ggplotnim-v0_2_14.ref   = "refs/tags/v0.2.14";
   inputs.src-ggplotnim-v0_2_14.owner = "Vindaar";
-  inputs.src-ggplotnim-v0_2_14.ref   = "v0_2_14";
   inputs.src-ggplotnim-v0_2_14.repo  = "ggplotnim";
   inputs.src-ggplotnim-v0_2_14.type  = "github";
   

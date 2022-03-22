@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimcrypt-main.flake = false;
+  inputs.src-nimcrypt-main.ref   = "refs/heads/main";
   inputs.src-nimcrypt-main.owner = "napalu";
-  inputs.src-nimcrypt-main.ref   = "main";
   inputs.src-nimcrypt-main.repo  = "nimcrypt";
   inputs.src-nimcrypt-main.type  = "github";
   

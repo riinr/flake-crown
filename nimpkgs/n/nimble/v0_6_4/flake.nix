@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimble-v0_6_4.flake = false;
+  inputs.src-nimble-v0_6_4.ref   = "refs/tags/v0.6.4";
   inputs.src-nimble-v0_6_4.owner = "nim-lang";
-  inputs.src-nimble-v0_6_4.ref   = "v0_6_4";
   inputs.src-nimble-v0_6_4.repo  = "nimble";
   inputs.src-nimble-v0_6_4.type  = "github";
   

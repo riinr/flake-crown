@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-special_functions-v0_1_0.flake = false;
-  inputs.src-special_functions-v0_1_0.owner = "ayman-albaz";
   inputs.src-special_functions-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-special_functions-v0_1_0.owner = "ayman-albaz";
   inputs.src-special_functions-v0_1_0.repo  = "special-functions";
   inputs.src-special_functions-v0_1_0.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-shiori-v1_1_0.flake = false;
-  inputs.src-shiori-v1_1_0.owner = "Narazaka";
   inputs.src-shiori-v1_1_0.ref   = "refs/tags/v1.1.0";
+  inputs.src-shiori-v1_1_0.owner = "Narazaka";
   inputs.src-shiori-v1_1_0.repo  = "shiori-nim";
   inputs.src-shiori-v1_1_0.type  = "github";
   

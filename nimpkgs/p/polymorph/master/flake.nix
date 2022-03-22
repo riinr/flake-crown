@@ -1,5 +1,5 @@
 {
-  description = ''An entity-component-system with a focus on compile time optimisation'';
+  description = ''A compile time focused entity-component-system generator'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-polymorph-master.flake = false;
-  inputs.src-polymorph-master.owner = "rlipsc";
   inputs.src-polymorph-master.ref   = "refs/heads/master";
+  inputs.src-polymorph-master.owner = "rlipsc";
   inputs.src-polymorph-master.repo  = "polymorph";
   inputs.src-polymorph-master.type  = "github";
   

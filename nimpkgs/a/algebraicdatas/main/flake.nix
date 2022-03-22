@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-algebraicdatas-main.flake = false;
+  inputs.src-algebraicdatas-main.ref   = "refs/heads/main";
   inputs.src-algebraicdatas-main.owner = "chocobo333";
-  inputs.src-algebraicdatas-main.ref   = "main";
   inputs.src-algebraicdatas-main.repo  = "AlgebraicDataTypes";
   inputs.src-algebraicdatas-main.type  = "github";
   

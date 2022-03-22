@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-glew-master.flake = false;
+  inputs.src-glew-master.ref   = "refs/heads/master";
   inputs.src-glew-master.owner = "jyapayne";
-  inputs.src-glew-master.ref   = "master";
   inputs.src-glew-master.repo  = "nim-glew";
   inputs.src-glew-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-anime-master.flake = false;
+  inputs.src-anime-master.ref   = "refs/heads/master";
   inputs.src-anime-master.owner = "ethosa";
-  inputs.src-anime-master.ref   = "master";
   inputs.src-anime-master.repo  = "anime";
   inputs.src-anime-master.type  = "github";
   

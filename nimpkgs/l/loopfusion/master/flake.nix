@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-loopfusion-master.flake = false;
-  inputs.src-loopfusion-master.owner = "numforge";
   inputs.src-loopfusion-master.ref   = "refs/heads/master";
+  inputs.src-loopfusion-master.owner = "numforge";
   inputs.src-loopfusion-master.repo  = "loopfusion";
   inputs.src-loopfusion-master.type  = "github";
   

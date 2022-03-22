@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-chronicles-v0_4_0.flake = false;
-  inputs.src-chronicles-v0_4_0.owner = "status-im";
   inputs.src-chronicles-v0_4_0.ref   = "refs/tags/v0.4.0";
+  inputs.src-chronicles-v0_4_0.owner = "status-im";
   inputs.src-chronicles-v0_4_0.repo  = "nim-chronicles";
   inputs.src-chronicles-v0_4_0.type  = "github";
   

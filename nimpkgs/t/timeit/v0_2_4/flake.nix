@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-timeit-v0_2_4.flake = false;
-  inputs.src-timeit-v0_2_4.owner = "xflywind";
   inputs.src-timeit-v0_2_4.ref   = "refs/tags/v0.2.4";
+  inputs.src-timeit-v0_2_4.owner = "xflywind";
   inputs.src-timeit-v0_2_4.repo  = "timeit";
   inputs.src-timeit-v0_2_4.type  = "github";
   

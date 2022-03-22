@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-unchained-v0_1_4.flake = false;
-  inputs.src-unchained-v0_1_4.owner = "SciNim";
   inputs.src-unchained-v0_1_4.ref   = "refs/tags/v0.1.4";
+  inputs.src-unchained-v0_1_4.owner = "SciNim";
   inputs.src-unchained-v0_1_4.repo  = "unchained";
   inputs.src-unchained-v0_1_4.type  = "github";
   

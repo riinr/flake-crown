@@ -1,5 +1,5 @@
 {
-  description = ''Nim module for filename matching with UNIX shell patterns'';
+  description = '' Nim module for filename matching with UNIX shell patterns'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-fnmatch-master.flake = false;
-  inputs.src-fnmatch-master.owner = "achesak";
   inputs.src-fnmatch-master.ref   = "refs/heads/master";
+  inputs.src-fnmatch-master.owner = "achesak";
   inputs.src-fnmatch-master.repo  = "nim-fnmatch";
   inputs.src-fnmatch-master.type  = "github";
   

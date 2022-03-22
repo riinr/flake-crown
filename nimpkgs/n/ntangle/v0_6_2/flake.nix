@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ntangle-v0_6_2.flake = false;
+  inputs.src-ntangle-v0_6_2.ref   = "refs/tags/v0.6.2";
   inputs.src-ntangle-v0_6_2.owner = "OrgTangle";
-  inputs.src-ntangle-v0_6_2.ref   = "v0_6_2";
   inputs.src-ntangle-v0_6_2.repo  = "ntangle";
   inputs.src-ntangle-v0_6_2.type  = "github";
   

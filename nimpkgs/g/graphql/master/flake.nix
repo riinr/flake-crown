@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-graphql-master.flake = false;
+  inputs.src-graphql-master.ref   = "refs/heads/master";
   inputs.src-graphql-master.owner = "status-im";
-  inputs.src-graphql-master.ref   = "master";
   inputs.src-graphql-master.repo  = "nim-graphql";
   inputs.src-graphql-master.type  = "github";
   

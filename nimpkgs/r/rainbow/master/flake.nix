@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-rainbow-master.flake = false;
+  inputs.src-rainbow-master.ref   = "refs/heads/master";
   inputs.src-rainbow-master.owner = "Willyboar";
-  inputs.src-rainbow-master.ref   = "master";
   inputs.src-rainbow-master.repo  = "rainbow";
   inputs.src-rainbow-master.type  = "github";
   

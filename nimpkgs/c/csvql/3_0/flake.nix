@@ -1,5 +1,5 @@
 {
-  description = ''csvql.'';
+  description = ''csvql - query csv using ansisql.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-csvql-3_0.flake = false;
-  inputs.src-csvql-3_0.owner = "Bennyelg";
   inputs.src-csvql-3_0.ref   = "refs/tags/3.0";
+  inputs.src-csvql-3_0.owner = "Bennyelg";
   inputs.src-csvql-3_0.repo  = "csvql";
   inputs.src-csvql-3_0.type  = "github";
   

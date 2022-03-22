@@ -1,5 +1,5 @@
 {
-  description = ''Provides a small command line parsing DSL (domain specific language)'';
+  description = ''A small command line parsing DSL'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-commandeer-0_10_4.flake = false;
-  inputs.src-commandeer-0_10_4.owner = "fenekku";
   inputs.src-commandeer-0_10_4.ref   = "refs/tags/0.10.4";
+  inputs.src-commandeer-0_10_4.owner = "fenekku";
   inputs.src-commandeer-0_10_4.repo  = "commandeer";
   inputs.src-commandeer-0_10_4.type  = "github";
   

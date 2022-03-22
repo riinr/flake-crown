@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mmgeoip-master.flake = false;
+  inputs.src-mmgeoip-master.ref   = "refs/heads/master";
   inputs.src-mmgeoip-master.owner = "FedericoCeratto";
-  inputs.src-mmgeoip-master.ref   = "master";
   inputs.src-mmgeoip-master.repo  = "nim-mmgeoip";
   inputs.src-mmgeoip-master.type  = "github";
   

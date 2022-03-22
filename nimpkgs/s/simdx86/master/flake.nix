@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-simdX86-master.flake = false;
-  inputs.src-simdX86-master.owner = "nimlibs";
   inputs.src-simdX86-master.ref   = "refs/heads/master";
+  inputs.src-simdX86-master.owner = "nimlibs";
   inputs.src-simdX86-master.repo  = "simdX86";
   inputs.src-simdX86-master.type  = "github";
   

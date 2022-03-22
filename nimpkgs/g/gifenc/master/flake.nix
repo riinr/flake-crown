@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-gifenc-master.flake = false;
+  inputs.src-gifenc-master.ref   = "refs/heads/master";
   inputs.src-gifenc-master.owner = "ftsf";
-  inputs.src-gifenc-master.ref   = "master";
   inputs.src-gifenc-master.repo  = "gifenc";
   inputs.src-gifenc-master.type  = "github";
   

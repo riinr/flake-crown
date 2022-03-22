@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-tinyfiledialogs-master.flake = false;
-  inputs.src-tinyfiledialogs-master.owner = "juancarlospaco";
   inputs.src-tinyfiledialogs-master.ref   = "refs/heads/master";
+  inputs.src-tinyfiledialogs-master.owner = "juancarlospaco";
   inputs.src-tinyfiledialogs-master.repo  = "nim-tinyfiledialogs";
   inputs.src-tinyfiledialogs-master.type  = "github";
   

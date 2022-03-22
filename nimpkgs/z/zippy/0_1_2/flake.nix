@@ -1,5 +1,5 @@
 {
-  description = ''Pure Nim implementation of deflate, zlib, gzip and zip.'';
+  description = ''In-progress pure Nim implementation of deflate and zlib.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-zippy-0_1_2.flake = false;
-  inputs.src-zippy-0_1_2.owner = "guzba";
   inputs.src-zippy-0_1_2.ref   = "refs/tags/0.1.2";
+  inputs.src-zippy-0_1_2.owner = "guzba";
   inputs.src-zippy-0_1_2.repo  = "zippy";
   inputs.src-zippy-0_1_2.type  = "github";
   

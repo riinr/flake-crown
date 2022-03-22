@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-morelogging-0_2_0.flake = false;
+  inputs.src-morelogging-0_2_0.ref   = "refs/tags/0.2.0";
   inputs.src-morelogging-0_2_0.owner = "FedericoCeratto";
-  inputs.src-morelogging-0_2_0.ref   = "0_2_0";
   inputs.src-morelogging-0_2_0.repo  = "nim-morelogging";
   inputs.src-morelogging-0_2_0.type  = "github";
   

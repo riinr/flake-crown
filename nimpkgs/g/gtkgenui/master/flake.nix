@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-gtkgenui-master.flake = false;
+  inputs.src-gtkgenui-master.ref   = "refs/heads/master";
   inputs.src-gtkgenui-master.owner = "PMunch";
-  inputs.src-gtkgenui-master.ref   = "master";
   inputs.src-gtkgenui-master.repo  = "gtkgenui";
   inputs.src-gtkgenui-master.type  = "github";
   

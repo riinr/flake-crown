@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-colorsys-master.flake = false;
-  inputs.src-colorsys-master.owner = "achesak";
   inputs.src-colorsys-master.ref   = "refs/heads/master";
+  inputs.src-colorsys-master.owner = "achesak";
   inputs.src-colorsys-master.repo  = "nim-colorsys";
   inputs.src-colorsys-master.type  = "github";
   

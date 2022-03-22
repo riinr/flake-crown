@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimdata-master.flake = false;
+  inputs.src-nimdata-master.ref   = "refs/heads/master";
   inputs.src-nimdata-master.owner = "bluenote10";
-  inputs.src-nimdata-master.ref   = "master";
   inputs.src-nimdata-master.repo  = "NimData";
   inputs.src-nimdata-master.type  = "github";
   

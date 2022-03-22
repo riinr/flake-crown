@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nbaser-develop.flake = false;
+  inputs.src-nbaser-develop.ref   = "refs/heads/develop";
   inputs.src-nbaser-develop.owner = "D-Nice";
-  inputs.src-nbaser-develop.ref   = "develop";
   inputs.src-nbaser-develop.repo  = "nbaser";
   inputs.src-nbaser-develop.type  = "github";
   

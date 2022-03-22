@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-texttospeech-master.flake = false;
-  inputs.src-texttospeech-master.owner = "dom96";
   inputs.src-texttospeech-master.ref   = "refs/heads/master";
+  inputs.src-texttospeech-master.owner = "dom96";
   inputs.src-texttospeech-master.repo  = "texttospeech";
   inputs.src-texttospeech-master.type  = "github";
   

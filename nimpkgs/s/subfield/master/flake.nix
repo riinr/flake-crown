@@ -1,5 +1,5 @@
 {
-  description = ''Override the dot operator to access nested subfields of a Nim object.'';
+  description = ''A sub-field accessor macro for the Nim programming language.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-subfield-master.flake = false;
-  inputs.src-subfield-master.owner = "jyapayne";
   inputs.src-subfield-master.ref   = "refs/heads/master";
+  inputs.src-subfield-master.owner = "jyapayne";
   inputs.src-subfield-master.repo  = "subfield";
   inputs.src-subfield-master.type  = "github";
   
   inputs."einheit".owner = "nim-nix-pkgs";
   inputs."einheit".ref   = "master";
   inputs."einheit".repo  = "einheit";
+  inputs."einheit".dir   = "";
   inputs."einheit".type  = "github";
   inputs."einheit".inputs.nixpkgs.follows = "nixpkgs";
   inputs."einheit".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

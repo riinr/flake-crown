@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-bump-1_8_13.flake = false;
+  inputs.src-bump-1_8_13.ref   = "refs/tags/1.8.13";
   inputs.src-bump-1_8_13.owner = "disruptek";
-  inputs.src-bump-1_8_13.ref   = "1_8_13";
   inputs.src-bump-1_8_13.repo  = "bump";
   inputs.src-bump-1_8_13.type  = "github";
   

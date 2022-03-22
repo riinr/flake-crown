@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-shared-master.flake = false;
-  inputs.src-shared-master.owner = "genotrance";
   inputs.src-shared-master.ref   = "refs/heads/master";
+  inputs.src-shared-master.owner = "genotrance";
   inputs.src-shared-master.repo  = "shared";
   inputs.src-shared-master.type  = "github";
   

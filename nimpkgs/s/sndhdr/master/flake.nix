@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sndhdr-master.flake = false;
-  inputs.src-sndhdr-master.owner = "achesak";
   inputs.src-sndhdr-master.ref   = "refs/heads/master";
+  inputs.src-sndhdr-master.owner = "achesak";
   inputs.src-sndhdr-master.repo  = "nim-sndhdr";
   inputs.src-sndhdr-master.type  = "github";
   

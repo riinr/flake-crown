@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-simple_parseopt-v1_0_10.flake = false;
-  inputs.src-simple_parseopt-v1_0_10.owner = "onelivesleft";
   inputs.src-simple_parseopt-v1_0_10.ref   = "refs/tags/v1.0.10";
+  inputs.src-simple_parseopt-v1_0_10.owner = "onelivesleft";
   inputs.src-simple_parseopt-v1_0_10.repo  = "simple_parseopt";
   inputs.src-simple_parseopt-v1_0_10.type  = "github";
   

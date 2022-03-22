@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mdlldk-main.flake = false;
+  inputs.src-mdlldk-main.ref   = "refs/heads/main";
   inputs.src-mdlldk-main.owner = "rockcavera";
-  inputs.src-mdlldk-main.ref   = "main";
   inputs.src-mdlldk-main.repo  = "nim-mdlldk";
   inputs.src-mdlldk-main.type  = "github";
   

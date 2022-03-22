@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-awsSTS-v1_0_2.flake = false;
+  inputs.src-awsSTS-v1_0_2.ref   = "refs/tags/v1.0.2";
   inputs.src-awsSTS-v1_0_2.owner = "ThomasTJdev";
-  inputs.src-awsSTS-v1_0_2.ref   = "v1_0_2";
   inputs.src-awsSTS-v1_0_2.repo  = "nim_awsSTS";
   inputs.src-awsSTS-v1_0_2.type  = "github";
   

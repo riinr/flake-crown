@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimLUA-master.flake = false;
+  inputs.src-nimLUA-master.ref   = "refs/heads/master";
   inputs.src-nimLUA-master.owner = "jangko";
-  inputs.src-nimLUA-master.ref   = "master";
   inputs.src-nimLUA-master.repo  = "nimLUA";
   inputs.src-nimLUA-master.type  = "github";
   

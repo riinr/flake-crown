@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-siphash-master.flake = false;
-  inputs.src-siphash-master.owner = "~ehmry";
   inputs.src-siphash-master.ref   = "master";
+  inputs.src-siphash-master.owner = "~ehmry";
   inputs.src-siphash-master.repo  = "nim_siphash";
   inputs.src-siphash-master.type  = "sourcehut";
   

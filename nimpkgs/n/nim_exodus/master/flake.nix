@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nim_exodus-master.flake = false;
+  inputs.src-nim_exodus-master.ref   = "refs/heads/master";
   inputs.src-nim_exodus-master.owner = "shinriyo";
-  inputs.src-nim_exodus-master.ref   = "master";
   inputs.src-nim_exodus-master.repo  = "nim_exodus";
   inputs.src-nim_exodus-master.type  = "github";
   

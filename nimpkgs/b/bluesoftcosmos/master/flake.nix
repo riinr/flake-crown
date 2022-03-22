@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-bluesoftcosmos-master.flake = false;
+  inputs.src-bluesoftcosmos-master.ref   = "refs/heads/master";
   inputs.src-bluesoftcosmos-master.owner = "lurlo";
-  inputs.src-bluesoftcosmos-master.ref   = "master";
   inputs.src-bluesoftcosmos-master.repo  = "bluesoftcosmos";
   inputs.src-bluesoftcosmos-master.type  = "gitlab";
   

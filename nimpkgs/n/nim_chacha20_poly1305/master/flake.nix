@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nim_chacha20_poly1305-master.flake = false;
+  inputs.src-nim_chacha20_poly1305-master.ref   = "refs/heads/master";
   inputs.src-nim_chacha20_poly1305-master.owner = "lantos-lgtm";
-  inputs.src-nim_chacha20_poly1305-master.ref   = "master";
   inputs.src-nim_chacha20_poly1305-master.repo  = "nim_chacha20_poly1305";
   inputs.src-nim_chacha20_poly1305-master.type  = "github";
   

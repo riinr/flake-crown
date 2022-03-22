@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ssh2-0_1_1.flake = false;
-  inputs.src-ssh2-0_1_1.owner = "ba0f3";
   inputs.src-ssh2-0_1_1.ref   = "refs/tags/0.1.1";
+  inputs.src-ssh2-0_1_1.owner = "ba0f3";
   inputs.src-ssh2-0_1_1.repo  = "ssh2.nim";
   inputs.src-ssh2-0_1_1.type  = "github";
   
   inputs."libssh2".owner = "nim-nix-pkgs";
   inputs."libssh2".ref   = "master";
   inputs."libssh2".repo  = "libssh2";
+  inputs."libssh2".dir   = "";
   inputs."libssh2".type  = "github";
   inputs."libssh2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libssh2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

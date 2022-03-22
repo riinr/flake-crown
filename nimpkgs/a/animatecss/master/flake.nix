@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-animatecss-master.flake = false;
+  inputs.src-animatecss-master.ref   = "refs/heads/master";
   inputs.src-animatecss-master.owner = "thisago";
-  inputs.src-animatecss-master.ref   = "master";
   inputs.src-animatecss-master.repo  = "animatecss";
   inputs.src-animatecss-master.type  = "github";
   

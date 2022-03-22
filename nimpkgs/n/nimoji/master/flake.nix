@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimoji-master.flake = false;
+  inputs.src-nimoji-master.ref   = "refs/heads/master";
   inputs.src-nimoji-master.owner = "pietroppeter";
-  inputs.src-nimoji-master.ref   = "master";
   inputs.src-nimoji-master.repo  = "nimoji";
   inputs.src-nimoji-master.type  = "github";
   

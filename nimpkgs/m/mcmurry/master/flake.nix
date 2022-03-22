@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mcmurry-master.flake = false;
+  inputs.src-mcmurry-master.ref   = "refs/heads/master";
   inputs.src-mcmurry-master.owner = "chocobo333";
-  inputs.src-mcmurry-master.ref   = "master";
   inputs.src-mcmurry-master.repo  = "mcmurry";
   inputs.src-mcmurry-master.type  = "github";
   

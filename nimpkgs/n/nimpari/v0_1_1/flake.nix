@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimpari-v0_1_1.flake = false;
+  inputs.src-nimpari-v0_1_1.ref   = "refs/tags/v0.1.1";
   inputs.src-nimpari-v0_1_1.owner = "BarrOff";
-  inputs.src-nimpari-v0_1_1.ref   = "v0_1_1";
   inputs.src-nimpari-v0_1_1.repo  = "nim-pari";
   inputs.src-nimpari-v0_1_1.type  = "github";
   

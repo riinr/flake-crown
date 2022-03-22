@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-blackvas_cli-master.flake = false;
+  inputs.src-blackvas_cli-master.ref   = "refs/heads/master";
   inputs.src-blackvas_cli-master.owner = "momeemt";
-  inputs.src-blackvas_cli-master.ref   = "master";
   inputs.src-blackvas_cli-master.repo  = "BlackvasCli";
   inputs.src-blackvas_cli-master.type  = "github";
   

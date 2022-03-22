@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimbioseq-master.flake = false;
+  inputs.src-nimbioseq-master.ref   = "refs/heads/master";
   inputs.src-nimbioseq-master.owner = "jhbadger";
-  inputs.src-nimbioseq-master.ref   = "master";
   inputs.src-nimbioseq-master.repo  = "nimbioseq";
   inputs.src-nimbioseq-master.type  = "github";
   

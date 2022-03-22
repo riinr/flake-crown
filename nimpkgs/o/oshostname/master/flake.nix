@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-oshostname-master.flake = false;
+  inputs.src-oshostname-master.ref   = "refs/heads/master";
   inputs.src-oshostname-master.owner = "jrfondren";
-  inputs.src-oshostname-master.ref   = "master";
   inputs.src-oshostname-master.repo  = "nim-oshostname";
   inputs.src-oshostname-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimQBittorrent-master.flake = false;
+  inputs.src-nimQBittorrent-master.ref   = "refs/heads/master";
   inputs.src-nimQBittorrent-master.owner = "faulander";
-  inputs.src-nimQBittorrent-master.ref   = "master";
   inputs.src-nimQBittorrent-master.repo  = "nimQBittorrent";
   inputs.src-nimQBittorrent-master.type  = "github";
   

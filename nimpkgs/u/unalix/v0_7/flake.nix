@@ -1,5 +1,5 @@
 {
-  description = ''Small, dependency-free, fast Nim package (and CLI tool) for removing tracking fields from URLs.'';
+  description = ''Small, dependency-free, fast Nim package for removing tracking fields from URLs.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-unalix-v0_7.flake = false;
-  inputs.src-unalix-v0_7.owner = "AmanoTeam";
   inputs.src-unalix-v0_7.ref   = "refs/tags/v0.7";
+  inputs.src-unalix-v0_7.owner = "AmanoTeam";
   inputs.src-unalix-v0_7.repo  = "Unalix-nim";
   inputs.src-unalix-v0_7.type  = "github";
   
   inputs."htmlunescape".owner = "nim-nix-pkgs";
   inputs."htmlunescape".ref   = "master";
   inputs."htmlunescape".repo  = "htmlunescape";
+  inputs."htmlunescape".dir   = "v0_2";
   inputs."htmlunescape".type  = "github";
   inputs."htmlunescape".inputs.nixpkgs.follows = "nixpkgs";
   inputs."htmlunescape".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

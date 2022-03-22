@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-genieos-master.flake = false;
+  inputs.src-genieos-master.ref   = "refs/heads/master";
   inputs.src-genieos-master.owner = "Araq";
-  inputs.src-genieos-master.ref   = "master";
   inputs.src-genieos-master.repo  = "genieos";
   inputs.src-genieos-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-hpack-v0_2_0.flake = false;
+  inputs.src-hpack-v0_2_0.ref   = "refs/tags/v0.2.0";
   inputs.src-hpack-v0_2_0.owner = "nitely";
-  inputs.src-hpack-v0_2_0.ref   = "v0_2_0";
   inputs.src-hpack-v0_2_0.repo  = "nim-hpack";
   inputs.src-hpack-v0_2_0.type  = "github";
   

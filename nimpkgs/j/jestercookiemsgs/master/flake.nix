@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-jestercookiemsgs-master.flake = false;
+  inputs.src-jestercookiemsgs-master.ref   = "refs/heads/master";
   inputs.src-jestercookiemsgs-master.owner = "JohnAD";
-  inputs.src-jestercookiemsgs-master.ref   = "master";
   inputs.src-jestercookiemsgs-master.repo  = "jestercookiemsgs";
   inputs.src-jestercookiemsgs-master.type  = "github";
   

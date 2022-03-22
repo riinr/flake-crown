@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-extensions-master.flake = false;
+  inputs.src-extensions-master.ref   = "refs/heads/master";
   inputs.src-extensions-master.owner = "jyapayne";
-  inputs.src-extensions-master.ref   = "master";
   inputs.src-extensions-master.repo  = "nim-extensions";
   inputs.src-extensions-master.type  = "github";
   

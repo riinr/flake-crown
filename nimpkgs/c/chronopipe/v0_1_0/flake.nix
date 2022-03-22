@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-chronopipe-v0_1_0.flake = false;
-  inputs.src-chronopipe-v0_1_0.owner = "williamd1k0";
   inputs.src-chronopipe-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-chronopipe-v0_1_0.owner = "williamd1k0";
   inputs.src-chronopipe-v0_1_0.repo  = "chrono";
   inputs.src-chronopipe-v0_1_0.type  = "github";
   

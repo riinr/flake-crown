@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-decimal128-master.flake = false;
+  inputs.src-decimal128-master.ref   = "refs/heads/master";
   inputs.src-decimal128-master.owner = "JohnAD";
-  inputs.src-decimal128-master.ref   = "master";
   inputs.src-decimal128-master.repo  = "decimal128";
   inputs.src-decimal128-master.type  = "github";
   

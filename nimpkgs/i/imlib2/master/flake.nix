@@ -1,5 +1,5 @@
 {
-  description = ''Simple wrapper of the Imlib2 library'';
+  description = ''Wrapper of the Imlib2 library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-imlib2-master.flake = false;
-  inputs.src-imlib2-master.owner = "PMunch";
   inputs.src-imlib2-master.ref   = "refs/heads/master";
+  inputs.src-imlib2-master.owner = "PMunch";
   inputs.src-imlib2-master.repo  = "Imlib2";
   inputs.src-imlib2-master.type  = "github";
   

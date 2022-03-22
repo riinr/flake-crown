@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nmark-develop.flake = false;
+  inputs.src-nmark-develop.ref   = "refs/heads/develop";
   inputs.src-nmark-develop.owner = "kyoheiu";
-  inputs.src-nmark-develop.ref   = "develop";
   inputs.src-nmark-develop.repo  = "nmark";
   inputs.src-nmark-develop.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-asciigraph-master.flake = false;
+  inputs.src-asciigraph-master.ref   = "refs/heads/master";
   inputs.src-asciigraph-master.owner = "Yardanico";
-  inputs.src-asciigraph-master.ref   = "master";
   inputs.src-asciigraph-master.repo  = "asciigraph";
   inputs.src-asciigraph-master.type  = "github";
   

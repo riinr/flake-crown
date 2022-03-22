@@ -1,5 +1,5 @@
 {
-  description = ''Easy to use styles for terminal output'';
+  description = ''Easy to use colours for terminal applications'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-termstyle-master.flake = false;
-  inputs.src-termstyle-master.owner = "PMunch";
   inputs.src-termstyle-master.ref   = "refs/heads/master";
+  inputs.src-termstyle-master.owner = "PMunch";
   inputs.src-termstyle-master.repo  = "termstyle";
   inputs.src-termstyle-master.type  = "github";
   

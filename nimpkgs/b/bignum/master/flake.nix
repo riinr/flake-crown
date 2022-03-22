@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-bignum-master.flake = false;
+  inputs.src-bignum-master.ref   = "refs/heads/master";
   inputs.src-bignum-master.owner = "SciNim";
-  inputs.src-bignum-master.ref   = "master";
   inputs.src-bignum-master.repo  = "bignum";
   inputs.src-bignum-master.type  = "github";
   

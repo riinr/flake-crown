@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-drand48-master.flake = false;
+  inputs.src-drand48-master.ref   = "refs/heads/master";
   inputs.src-drand48-master.owner = "JeffersonLab";
-  inputs.src-drand48-master.ref   = "master";
   inputs.src-drand48-master.repo  = "drand48";
   inputs.src-drand48-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pnm-master.flake = false;
-  inputs.src-pnm-master.owner = "jiro4989";
   inputs.src-pnm-master.ref   = "refs/heads/master";
+  inputs.src-pnm-master.owner = "jiro4989";
   inputs.src-pnm-master.repo  = "pnm";
   inputs.src-pnm-master.type  = "github";
   

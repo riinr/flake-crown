@@ -1,5 +1,5 @@
 {
-  description = ''ctrulib wrapper'';
+  description = ''Nintendo 3ds ctrulib wrapper'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ctrulib-master.flake = false;
-  inputs.src-ctrulib-master.owner = "skyforce77";
   inputs.src-ctrulib-master.ref   = "refs/heads/master";
+  inputs.src-ctrulib-master.owner = "skyforce77";
   inputs.src-ctrulib-master.repo  = "ctrulib-nim";
   inputs.src-ctrulib-master.type  = "github";
   

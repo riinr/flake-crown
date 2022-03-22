@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-fnv-master.flake = false;
-  inputs.src-fnv-master.owner = "ryukoposting";
   inputs.src-fnv-master.ref   = "refs/heads/master";
+  inputs.src-fnv-master.owner = "ryukoposting";
   inputs.src-fnv-master.repo  = "nim-fnv";
   inputs.src-fnv-master.type  = "gitlab";
   
   inputs."stint".owner = "nim-nix-pkgs";
   inputs."stint".ref   = "master";
   inputs."stint".repo  = "stint";
+  inputs."stint".dir   = "";
   inputs."stint".type  = "github";
   inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

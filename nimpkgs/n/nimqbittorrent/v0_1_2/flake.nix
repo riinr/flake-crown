@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimQBittorrent-v0_1_2.flake = false;
+  inputs.src-nimQBittorrent-v0_1_2.ref   = "refs/tags/v0.1.2";
   inputs.src-nimQBittorrent-v0_1_2.owner = "faulander";
-  inputs.src-nimQBittorrent-v0_1_2.ref   = "v0_1_2";
   inputs.src-nimQBittorrent-v0_1_2.repo  = "nimQBittorrent";
   inputs.src-nimQBittorrent-v0_1_2.type  = "github";
   

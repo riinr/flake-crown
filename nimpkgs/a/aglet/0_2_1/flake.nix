@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-aglet-0_2_1.flake = false;
+  inputs.src-aglet-0_2_1.ref   = "refs/tags/0.2.1";
   inputs.src-aglet-0_2_1.owner = "liquid600pgm";
-  inputs.src-aglet-0_2_1.ref   = "0_2_1";
   inputs.src-aglet-0_2_1.repo  = "aglet";
   inputs.src-aglet-0_2_1.type  = "github";
   

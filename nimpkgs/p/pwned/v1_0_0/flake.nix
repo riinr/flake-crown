@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pwned-v1_0_0.flake = false;
-  inputs.src-pwned-v1_0_0.owner = "dom96";
   inputs.src-pwned-v1_0_0.ref   = "refs/tags/v1.0.0";
+  inputs.src-pwned-v1_0_0.owner = "dom96";
   inputs.src-pwned-v1_0_0.repo  = "pwned";
   inputs.src-pwned-v1_0_0.type  = "github";
   

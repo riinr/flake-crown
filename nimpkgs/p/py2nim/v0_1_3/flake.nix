@@ -1,5 +1,5 @@
 {
-  description = ''Py2Nim is a tool to translate Python code to Nim. The output is human-readable Nim code, meant to be tweaked by hand after the translation process.'';
+  description = ''Py2Nim is a tool to translate Python code to Nim. The output is idiomatic Nim code, meant to be tweaked by hand after the translation process.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-py2nim-v0_1_3.flake = false;
-  inputs.src-py2nim-v0_1_3.owner = "Niminem";
   inputs.src-py2nim-v0_1_3.ref   = "refs/tags/v0.1.3";
+  inputs.src-py2nim-v0_1_3.owner = "Niminem";
   inputs.src-py2nim-v0_1_3.repo  = "Py2Nim";
   inputs.src-py2nim-v0_1_3.type  = "github";
   
   inputs."compiler".owner = "nim-nix-pkgs";
   inputs."compiler".ref   = "master";
   inputs."compiler".repo  = "compiler";
+  inputs."compiler".dir   = "";
   inputs."compiler".type  = "github";
   inputs."compiler".inputs.nixpkgs.follows = "nixpkgs";
   inputs."compiler".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."nimscripter".owner = "nim-nix-pkgs";
   inputs."nimscripter".ref   = "master";
   inputs."nimscripter".repo  = "nimscripter";
+  inputs."nimscripter".dir   = "";
   inputs."nimscripter".type  = "github";
   inputs."nimscripter".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimscripter".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -8,9 +8,9 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-egl-master.flake = false;
+  inputs.src-egl-master.ref   = "refs/heads/master";
   inputs.src-egl-master.owner = "nimious";
-  inputs.src-egl-master.ref   = "master";
-  inputs.src-egl-master.repo  = "egl.git";
+  inputs.src-egl-master.repo  = "egl";
   inputs.src-egl-master.type  = "github";
   
   inputs."x11".owner = "nim-nix-pkgs";

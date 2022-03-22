@@ -1,5 +1,5 @@
 {
-  description = ''Bindings for SunVox modular synthesizer'';
+  description = ''Nim bindings for SunVox modular synthesizer'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sunvox-0_0_1.flake = false;
-  inputs.src-sunvox-0_0_1.owner = "exelotl";
   inputs.src-sunvox-0_0_1.ref   = "refs/tags/0.0.1";
+  inputs.src-sunvox-0_0_1.owner = "exelotl";
   inputs.src-sunvox-0_0_1.repo  = "nim-sunvox";
   inputs.src-sunvox-0_0_1.type  = "github";
   

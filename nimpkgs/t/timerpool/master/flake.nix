@@ -1,5 +1,5 @@
 {
-  description = ''threadsafe timerpool implementation for event purpose'';
+  description = ''single thread Timerpool implementation in Nim for event purpose'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-timerpool-master.flake = false;
-  inputs.src-timerpool-master.owner = "mikra01";
   inputs.src-timerpool-master.ref   = "refs/heads/master";
+  inputs.src-timerpool-master.owner = "mikra01";
   inputs.src-timerpool-master.repo  = "timerpool";
   inputs.src-timerpool-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Code coverage CLI + library for Nim using LCOV'';
+  description = ''Code coverage with line and branch support for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-coco-master.flake = false;
-  inputs.src-coco-master.owner = "samuelroy";
   inputs.src-coco-master.ref   = "refs/heads/master";
+  inputs.src-coco-master.owner = "samuelroy";
   inputs.src-coco-master.repo  = "coco";
   inputs.src-coco-master.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."glob".owner = "nim-nix-pkgs";
   inputs."glob".ref   = "master";
   inputs."glob".repo  = "glob";
+  inputs."glob".dir   = "v0_11_1";
   inputs."glob".type  = "github";
   inputs."glob".inputs.nixpkgs.follows = "nixpkgs";
   inputs."glob".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

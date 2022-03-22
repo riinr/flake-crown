@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-azure_translate-master.flake = false;
+  inputs.src-azure_translate-master.ref   = "refs/heads/master";
   inputs.src-azure_translate-master.owner = "williamhatcher";
-  inputs.src-azure_translate-master.ref   = "master";
   inputs.src-azure_translate-master.repo  = "azure_translate";
   inputs.src-azure_translate-master.type  = "github";
   

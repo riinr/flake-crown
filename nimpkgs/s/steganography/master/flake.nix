@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-steganography-master.flake = false;
-  inputs.src-steganography-master.owner = "treeform";
   inputs.src-steganography-master.ref   = "refs/heads/master";
+  inputs.src-steganography-master.owner = "treeform";
   inputs.src-steganography-master.repo  = "steganography";
   inputs.src-steganography-master.type  = "github";
   
   inputs."pixie".owner = "nim-nix-pkgs";
   inputs."pixie".ref   = "master";
   inputs."pixie".repo  = "pixie";
+  inputs."pixie".dir   = "";
   inputs."pixie".type  = "github";
   inputs."pixie".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pixie".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

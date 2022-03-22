@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-html2karax-v1_1_1.flake = false;
+  inputs.src-html2karax-v1_1_1.ref   = "refs/tags/v1.1.1";
   inputs.src-html2karax-v1_1_1.owner = "nim-lang-cn";
-  inputs.src-html2karax-v1_1_1.ref   = "v1_1_1";
   inputs.src-html2karax-v1_1_1.repo  = "html2karax";
   inputs.src-html2karax-v1_1_1.type  = "github";
   

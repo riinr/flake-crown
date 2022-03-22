@@ -1,5 +1,5 @@
 {
-  description = ''Pari/GP C library wrapper'';
+  description = ''Pari/Gp C library wrapper for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pari-master.flake = false;
-  inputs.src-pari-master.owner = "lompik";
   inputs.src-pari-master.ref   = "refs/heads/master";
+  inputs.src-pari-master.owner = "lompik";
   inputs.src-pari-master.repo  = "pari.nim";
   inputs.src-pari-master.type  = "github";
   

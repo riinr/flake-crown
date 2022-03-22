@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-zippy-0_3_6.flake = false;
-  inputs.src-zippy-0_3_6.owner = "guzba";
   inputs.src-zippy-0_3_6.ref   = "refs/tags/0.3.6";
+  inputs.src-zippy-0_3_6.owner = "guzba";
   inputs.src-zippy-0_3_6.repo  = "zippy";
   inputs.src-zippy-0_3_6.type  = "github";
   

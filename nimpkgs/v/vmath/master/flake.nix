@@ -1,5 +1,5 @@
 {
-  description = ''Collection of math routines for 2d and 3d graphics.'';
+  description = ''Your single stop for vector math routines for 2d and 3d graphics.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-vmath-master.flake = false;
-  inputs.src-vmath-master.owner = "treeform";
   inputs.src-vmath-master.ref   = "refs/heads/master";
+  inputs.src-vmath-master.owner = "treeform";
   inputs.src-vmath-master.repo  = "vmath";
   inputs.src-vmath-master.type  = "github";
   

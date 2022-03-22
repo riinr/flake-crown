@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-robotparser-master.flake = false;
+  inputs.src-robotparser-master.ref   = "refs/heads/master";
   inputs.src-robotparser-master.owner = "achesak";
-  inputs.src-robotparser-master.ref   = "master";
   inputs.src-robotparser-master.repo  = "nim-robotparser";
   inputs.src-robotparser-master.type  = "github";
   

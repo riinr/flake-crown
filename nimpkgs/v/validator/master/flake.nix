@@ -1,5 +1,5 @@
 {
-  description = ''Functions for string validation'';
+  description = ''This library provides several functions to validate real world data types'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-validator-master.flake = false;
-  inputs.src-validator-master.owner = "Adeohluwa";
   inputs.src-validator-master.ref   = "refs/heads/master";
+  inputs.src-validator-master.owner = "Adeohluwa";
   inputs.src-validator-master.repo  = "validator";
   inputs.src-validator-master.type  = "github";
   

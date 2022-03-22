@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-argument_parser-master.flake = false;
+  inputs.src-argument_parser-master.ref   = "refs/heads/master";
   inputs.src-argument_parser-master.owner = "Xe";
-  inputs.src-argument_parser-master.ref   = "master";
   inputs.src-argument_parser-master.repo  = "argument_parser";
   inputs.src-argument_parser-master.type  = "github";
   

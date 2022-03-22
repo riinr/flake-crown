@@ -1,5 +1,5 @@
 {
-  description = ''psutil is a cross-platform library for retrieving information on running processes and system utilization (CPU, memory, disks, network). Since 2018 maintained by Juan Carlos because was abandoned.'';
+  description = ''Psutil is a cross-platform library for retrieving information on running processes and system utilization (CPU, memory, disks, network)'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-psutil-master.flake = false;
-  inputs.src-psutil-master.owner = "juancarlospaco";
   inputs.src-psutil-master.ref   = "refs/heads/master";
+  inputs.src-psutil-master.owner = "juancarlospaco";
   inputs.src-psutil-master.repo  = "psutil-nim";
   inputs.src-psutil-master.type  = "github";
   

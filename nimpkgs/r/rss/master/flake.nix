@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-rss-master.flake = false;
+  inputs.src-rss-master.ref   = "refs/heads/master";
   inputs.src-rss-master.owner = "achesak";
-  inputs.src-rss-master.ref   = "master";
   inputs.src-rss-master.repo  = "nim-rss";
   inputs.src-rss-master.type  = "github";
   

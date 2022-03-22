@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-html5_canvas-master.flake = false;
+  inputs.src-html5_canvas-master.ref   = "refs/heads/master";
   inputs.src-html5_canvas-master.owner = "define-private-public";
-  inputs.src-html5_canvas-master.ref   = "master";
   inputs.src-html5_canvas-master.repo  = "HTML5-Canvas-Nim";
   inputs.src-html5_canvas-master.type  = "gitlab";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-retranslator-0_2_0.flake = false;
+  inputs.src-retranslator-0_2_0.ref   = "refs/tags/0.2.0";
   inputs.src-retranslator-0_2_0.owner = "linksplatform";
-  inputs.src-retranslator-0_2_0.ref   = "0_2_0";
   inputs.src-retranslator-0_2_0.repo  = "RegularExpressions.Transformer";
   inputs.src-retranslator-0_2_0.type  = "github";
   

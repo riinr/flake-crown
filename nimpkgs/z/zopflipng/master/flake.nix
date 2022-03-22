@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-zopflipng-master.flake = false;
-  inputs.src-zopflipng-master.owner = "bung87";
   inputs.src-zopflipng-master.ref   = "refs/heads/master";
+  inputs.src-zopflipng-master.owner = "bung87";
   inputs.src-zopflipng-master.repo  = "zopflipng";
   inputs.src-zopflipng-master.type  = "github";
   
   inputs."nimpng".owner = "nim-nix-pkgs";
   inputs."nimpng".ref   = "master";
   inputs."nimpng".repo  = "nimpng";
+  inputs."nimpng".dir   = "v0_3_1";
   inputs."nimpng".type  = "github";
   inputs."nimpng".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpng".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

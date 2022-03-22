@@ -1,5 +1,5 @@
 {
-  description = ''Api Calls for Ford vehicles equipped with the fordpass app.'';
+  description = ''ffpass - Api Calls for Ford vehicles equipped with the fordpass app.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ffpass-master.flake = false;
-  inputs.src-ffpass-master.owner = "bunkford";
   inputs.src-ffpass-master.ref   = "refs/heads/master";
+  inputs.src-ffpass-master.owner = "bunkford";
   inputs.src-ffpass-master.repo  = "ffpass";
   inputs.src-ffpass-master.type  = "github";
   

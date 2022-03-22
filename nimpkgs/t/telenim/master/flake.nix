@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-telenim-master.flake = false;
-  inputs.src-telenim-master.owner = "Yardanico";
   inputs.src-telenim-master.ref   = "refs/heads/master";
+  inputs.src-telenim-master.owner = "Yardanico";
   inputs.src-telenim-master.repo  = "telenim";
   inputs.src-telenim-master.type  = "github";
   

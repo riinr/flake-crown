@@ -1,5 +1,5 @@
 {
-  description = ''An alternative DateTime implementation'';
+  description = ''An alternative DateTime implementation for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-systimes-v0_2_0.flake = false;
-  inputs.src-systimes-v0_2_0.owner = "GULPF";
   inputs.src-systimes-v0_2_0.ref   = "refs/tags/v0.2.0";
+  inputs.src-systimes-v0_2_0.owner = "GULPF";
   inputs.src-systimes-v0_2_0.repo  = "systimes";
   inputs.src-systimes-v0_2_0.type  = "github";
   

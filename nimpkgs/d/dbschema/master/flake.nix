@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-dbschema-master.flake = false;
+  inputs.src-dbschema-master.ref   = "refs/heads/master";
   inputs.src-dbschema-master.owner = "vegansk";
-  inputs.src-dbschema-master.ref   = "master";
   inputs.src-dbschema-master.repo  = "dbschema";
   inputs.src-dbschema-master.type  = "github";
   

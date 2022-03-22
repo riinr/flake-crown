@@ -1,5 +1,5 @@
 {
-  description = ''Lock-free threadsafe MPMC with high throughput'';
+  description = ''Fast mpmc queue with sympathetic memory behavior'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-loony-0_1_12.flake = false;
-  inputs.src-loony-0_1_12.owner = "shayanhabibi";
   inputs.src-loony-0_1_12.ref   = "refs/tags/0.1.12";
+  inputs.src-loony-0_1_12.owner = "shayanhabibi";
   inputs.src-loony-0_1_12.repo  = "loony";
   inputs.src-loony-0_1_12.type  = "github";
   

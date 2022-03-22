@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-BitVector-master.flake = false;
+  inputs.src-BitVector-master.ref   = "refs/heads/master";
   inputs.src-BitVector-master.owner = "MarcAzar";
-  inputs.src-BitVector-master.ref   = "master";
   inputs.src-BitVector-master.repo  = "BitVector";
   inputs.src-BitVector-master.type  = "github";
   

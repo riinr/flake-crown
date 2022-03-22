@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-notcurses-v2_4_5.flake = false;
+  inputs.src-notcurses-v2_4_5.ref   = "refs/tags/v2.4.5";
   inputs.src-notcurses-v2_4_5.owner = "michaelsbradleyjr";
-  inputs.src-notcurses-v2_4_5.ref   = "v2_4_5";
   inputs.src-notcurses-v2_4_5.repo  = "nim-notcurses";
   inputs.src-notcurses-v2_4_5.type  = "github";
   

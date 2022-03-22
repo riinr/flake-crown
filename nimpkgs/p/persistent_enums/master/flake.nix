@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-persistent_enums-master.flake = false;
-  inputs.src-persistent_enums-master.owner = "yglukhov";
   inputs.src-persistent_enums-master.ref   = "refs/heads/master";
+  inputs.src-persistent_enums-master.owner = "yglukhov";
   inputs.src-persistent_enums-master.repo  = "persistent_enums";
   inputs.src-persistent_enums-master.type  = "github";
   

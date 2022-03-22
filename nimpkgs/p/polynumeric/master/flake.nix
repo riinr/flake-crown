@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-polynumeric-master.flake = false;
-  inputs.src-polynumeric-master.owner = "SciNim";
   inputs.src-polynumeric-master.ref   = "refs/heads/master";
+  inputs.src-polynumeric-master.owner = "SciNim";
   inputs.src-polynumeric-master.repo  = "polynumeric";
   inputs.src-polynumeric-master.type  = "github";
   
   inputs."arraymancer".owner = "nim-nix-pkgs";
   inputs."arraymancer".ref   = "master";
   inputs."arraymancer".repo  = "arraymancer";
+  inputs."arraymancer".dir   = "v0_7_11";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

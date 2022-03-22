@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimbitarray-master.flake = false;
+  inputs.src-nimbitarray-master.ref   = "refs/heads/master";
   inputs.src-nimbitarray-master.owner = "YesDrX";
-  inputs.src-nimbitarray-master.ref   = "master";
   inputs.src-nimbitarray-master.repo  = "bitarray";
   inputs.src-nimbitarray-master.type  = "github";
   

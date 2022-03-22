@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pipelines-v0_1_0.flake = false;
-  inputs.src-pipelines-v0_1_0.owner = "calebwin";
   inputs.src-pipelines-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-pipelines-v0_1_0.owner = "calebwin";
   inputs.src-pipelines-v0_1_0.repo  = "pipelines";
   inputs.src-pipelines-v0_1_0.type  = "github";
   
   inputs."python".owner = "nim-nix-pkgs";
   inputs."python".ref   = "master";
   inputs."python".repo  = "python";
+  inputs."python".dir   = "";
   inputs."python".type  = "github";
   inputs."python".inputs.nixpkgs.follows = "nixpkgs";
   inputs."python".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

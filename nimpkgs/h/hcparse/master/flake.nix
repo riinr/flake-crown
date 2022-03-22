@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-hcparse-master.flake = false;
+  inputs.src-hcparse-master.ref   = "refs/heads/master";
   inputs.src-hcparse-master.owner = "haxscramper";
-  inputs.src-hcparse-master.ref   = "master";
   inputs.src-hcparse-master.repo  = "hcparse";
   inputs.src-hcparse-master.type  = "github";
   

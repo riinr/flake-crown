@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-huffman-master.flake = false;
+  inputs.src-huffman-master.ref   = "refs/heads/master";
   inputs.src-huffman-master.owner = "xzeshen";
-  inputs.src-huffman-master.ref   = "master";
   inputs.src-huffman-master.repo  = "huffman";
   inputs.src-huffman-master.type  = "github";
   

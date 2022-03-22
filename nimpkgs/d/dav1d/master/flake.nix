@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-dav1d-master.flake = false;
+  inputs.src-dav1d-master.ref   = "refs/heads/master";
   inputs.src-dav1d-master.owner = "capocasa";
-  inputs.src-dav1d-master.ref   = "master";
   inputs.src-dav1d-master.repo  = "nim-dav1d";
   inputs.src-dav1d-master.type  = "github";
   

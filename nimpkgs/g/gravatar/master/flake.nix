@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-gravatar-master.flake = false;
+  inputs.src-gravatar-master.ref   = "refs/heads/master";
   inputs.src-gravatar-master.owner = "achesak";
-  inputs.src-gravatar-master.ref   = "master";
   inputs.src-gravatar-master.repo  = "nim-gravatar";
   inputs.src-gravatar-master.type  = "github";
   

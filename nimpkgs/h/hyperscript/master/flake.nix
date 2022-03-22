@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-hyperscript-master.flake = false;
+  inputs.src-hyperscript-master.ref   = "refs/heads/master";
   inputs.src-hyperscript-master.owner = "schneiderfelipe";
-  inputs.src-hyperscript-master.ref   = "master";
   inputs.src-hyperscript-master.repo  = "hyperscript";
   inputs.src-hyperscript-master.type  = "github";
   

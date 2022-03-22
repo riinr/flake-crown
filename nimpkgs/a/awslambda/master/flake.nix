@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-awslambda-master.flake = false;
+  inputs.src-awslambda-master.ref   = "refs/heads/master";
   inputs.src-awslambda-master.owner = "lambci";
-  inputs.src-awslambda-master.ref   = "master";
   inputs.src-awslambda-master.repo  = "awslambda.nim";
   inputs.src-awslambda-master.type  = "github";
   

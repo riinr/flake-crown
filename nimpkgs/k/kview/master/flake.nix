@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-kview-master.flake = false;
+  inputs.src-kview-master.ref   = "refs/heads/master";
   inputs.src-kview-master.owner = "planety";
-  inputs.src-kview-master.ref   = "master";
   inputs.src-kview-master.repo  = "kview";
   inputs.src-kview-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-meow-v0_1_0.flake = false;
+  inputs.src-meow-v0_1_0.ref   = "refs/tags/v0.1.0";
   inputs.src-meow-v0_1_0.owner = "disruptek";
-  inputs.src-meow-v0_1_0.ref   = "v0_1_0";
   inputs.src-meow-v0_1_0.repo  = "meow";
   inputs.src-meow-v0_1_0.type  = "github";
   

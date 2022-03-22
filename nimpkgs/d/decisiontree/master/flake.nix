@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-decisiontree-master.flake = false;
+  inputs.src-decisiontree-master.ref   = "refs/heads/master";
   inputs.src-decisiontree-master.owner = "Michedev";
-  inputs.src-decisiontree-master.ref   = "master";
   inputs.src-decisiontree-master.repo  = "DecisionTreeNim";
   inputs.src-decisiontree-master.type  = "github";
   

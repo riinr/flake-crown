@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-yaml-master.flake = false;
-  inputs.src-yaml-master.owner = "flyx";
   inputs.src-yaml-master.ref   = "refs/heads/master";
+  inputs.src-yaml-master.owner = "flyx";
   inputs.src-yaml-master.repo  = "NimYAML";
   inputs.src-yaml-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-kashae-master.flake = false;
+  inputs.src-kashae-master.ref   = "refs/heads/master";
   inputs.src-kashae-master.owner = "beef331";
-  inputs.src-kashae-master.ref   = "master";
   inputs.src-kashae-master.repo  = "kashae";
   inputs.src-kashae-master.type  = "github";
   

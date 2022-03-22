@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimjson-v1_2_0.flake = false;
+  inputs.src-nimjson-v1_2_0.ref   = "refs/tags/v1.2.0";
   inputs.src-nimjson-v1_2_0.owner = "jiro4989";
-  inputs.src-nimjson-v1_2_0.ref   = "v1_2_0";
   inputs.src-nimjson-v1_2_0.repo  = "nimjson";
   inputs.src-nimjson-v1_2_0.type  = "github";
   

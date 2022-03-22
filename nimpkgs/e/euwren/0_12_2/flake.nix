@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-euwren-0_12_2.flake = false;
+  inputs.src-euwren-0_12_2.ref   = "refs/tags/0.12.2";
   inputs.src-euwren-0_12_2.owner = "liquid600pgm";
-  inputs.src-euwren-0_12_2.ref   = "0_12_2";
   inputs.src-euwren-0_12_2.repo  = "euwren";
   inputs.src-euwren-0_12_2.type  = "github";
   

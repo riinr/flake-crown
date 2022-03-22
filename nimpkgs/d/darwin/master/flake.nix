@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-darwin-master.flake = false;
+  inputs.src-darwin-master.ref   = "refs/heads/master";
   inputs.src-darwin-master.owner = "yglukhov";
-  inputs.src-darwin-master.ref   = "master";
   inputs.src-darwin-master.repo  = "darwin";
   inputs.src-darwin-master.type  = "github";
   

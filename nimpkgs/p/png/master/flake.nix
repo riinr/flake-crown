@@ -1,5 +1,5 @@
 {
-  description = ''Nim wrapper for the libpng library'';
+  description = ''Wrapper around the libpng library for png graphics'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-png-master.flake = false;
-  inputs.src-png-master.owner = "barcharcraz";
   inputs.src-png-master.ref   = "refs/heads/master";
+  inputs.src-png-master.owner = "barcharcraz";
   inputs.src-png-master.repo  = "nimlibpng";
   inputs.src-png-master.type  = "github";
   

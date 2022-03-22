@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-emerald-master.flake = false;
+  inputs.src-emerald-master.ref   = "refs/heads/master";
   inputs.src-emerald-master.owner = "flyx";
-  inputs.src-emerald-master.ref   = "master";
   inputs.src-emerald-master.repo  = "emerald";
   inputs.src-emerald-master.type  = "github";
   

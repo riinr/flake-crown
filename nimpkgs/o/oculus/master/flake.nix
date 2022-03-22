@@ -8,9 +8,9 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-oculus-master.flake = false;
+  inputs.src-oculus-master.ref   = "refs/heads/master";
   inputs.src-oculus-master.owner = "nimious";
-  inputs.src-oculus-master.ref   = "master";
-  inputs.src-oculus-master.repo  = "oculus.git";
+  inputs.src-oculus-master.repo  = "oculus";
   inputs.src-oculus-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

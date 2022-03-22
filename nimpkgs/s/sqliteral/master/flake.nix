@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-sqliteral-master.flake = false;
-  inputs.src-sqliteral-master.owner = "olliNiinivaara";
   inputs.src-sqliteral-master.ref   = "refs/heads/master";
+  inputs.src-sqliteral-master.owner = "olliNiinivaara";
   inputs.src-sqliteral-master.repo  = "SQLiteral";
   inputs.src-sqliteral-master.type  = "github";
   

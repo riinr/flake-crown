@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-libbacktrace-v0_0_8.flake = false;
-  inputs.src-libbacktrace-v0_0_8.owner = "status-im";
   inputs.src-libbacktrace-v0_0_8.ref   = "refs/tags/v0.0.8";
+  inputs.src-libbacktrace-v0_0_8.owner = "status-im";
   inputs.src-libbacktrace-v0_0_8.repo  = "nim-libbacktrace";
   inputs.src-libbacktrace-v0_0_8.type  = "github";
   

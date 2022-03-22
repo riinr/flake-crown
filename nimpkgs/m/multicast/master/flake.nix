@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-multicast-master.flake = false;
+  inputs.src-multicast-master.ref   = "refs/heads/master";
   inputs.src-multicast-master.owner = "enthus1ast";
-  inputs.src-multicast-master.ref   = "master";
   inputs.src-multicast-master.repo  = "nimMulticast";
   inputs.src-multicast-master.type  = "github";
   

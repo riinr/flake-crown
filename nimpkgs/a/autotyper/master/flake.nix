@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-autotyper-master.flake = false;
+  inputs.src-autotyper-master.ref   = "refs/heads/master";
   inputs.src-autotyper-master.owner = "kijowski";
-  inputs.src-autotyper-master.ref   = "master";
   inputs.src-autotyper-master.repo  = "autotyper";
   inputs.src-autotyper-master.type  = "github";
   

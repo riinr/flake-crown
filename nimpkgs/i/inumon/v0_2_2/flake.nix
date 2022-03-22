@@ -1,5 +1,5 @@
 {
-  description = ''A high-level image I/O and manipulation library for Nim.'';
+  description = ''A high-level image I/O library for Nim '';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-inumon-v0_2_2.flake = false;
-  inputs.src-inumon-v0_2_2.owner = "dizzyliam";
   inputs.src-inumon-v0_2_2.ref   = "refs/tags/v0.2.2";
+  inputs.src-inumon-v0_2_2.owner = "dizzyliam";
   inputs.src-inumon-v0_2_2.repo  = "inumon";
   inputs.src-inumon-v0_2_2.type  = "github";
   
   inputs."nimterop".owner = "nim-nix-pkgs";
   inputs."nimterop".ref   = "master";
   inputs."nimterop".repo  = "nimterop";
+  inputs."nimterop".dir   = "v0_6_13";
   inputs."nimterop".type  = "github";
   inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."arraymancer".owner = "nim-nix-pkgs";
   inputs."arraymancer".ref   = "master";
   inputs."arraymancer".repo  = "arraymancer";
+  inputs."arraymancer".dir   = "v0_7_11";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."nigui".owner = "nim-nix-pkgs";
   inputs."nigui".ref   = "master";
   inputs."nigui".repo  = "nigui";
+  inputs."nigui".dir   = "v0_2_5";
   inputs."nigui".type  = "github";
   inputs."nigui".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nigui".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

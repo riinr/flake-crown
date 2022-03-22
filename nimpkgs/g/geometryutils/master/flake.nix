@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-geometryutils-master.flake = false;
+  inputs.src-geometryutils-master.ref   = "refs/heads/master";
   inputs.src-geometryutils-master.owner = "pseudo-random";
-  inputs.src-geometryutils-master.ref   = "master";
   inputs.src-geometryutils-master.repo  = "geometryutils";
   inputs.src-geometryutils-master.type  = "github";
   

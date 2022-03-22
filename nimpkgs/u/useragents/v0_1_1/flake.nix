@@ -1,5 +1,5 @@
 {
-  description = ''User Agent parser for nim.'';
+  description = ''Parses users agents in nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-useragents-v0_1_1.flake = false;
-  inputs.src-useragents-v0_1_1.owner = "treeform";
   inputs.src-useragents-v0_1_1.ref   = "refs/tags/v0.1.1";
+  inputs.src-useragents-v0_1_1.owner = "treeform";
   inputs.src-useragents-v0_1_1.repo  = "useragents";
   inputs.src-useragents-v0_1_1.type  = "github";
   

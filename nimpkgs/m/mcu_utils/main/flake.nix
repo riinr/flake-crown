@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mcu_utils-main.flake = false;
+  inputs.src-mcu_utils-main.ref   = "refs/heads/main";
   inputs.src-mcu_utils-main.owner = "EmbeddedNim";
-  inputs.src-mcu_utils-main.ref   = "main";
   inputs.src-mcu_utils-main.repo  = "mcu_utils";
   inputs.src-mcu_utils-main.type  = "github";
   

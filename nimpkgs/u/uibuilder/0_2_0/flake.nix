@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-uibuilder-0_2_0.flake = false;
-  inputs.src-uibuilder-0_2_0.owner = "ba0f3";
   inputs.src-uibuilder-0_2_0.ref   = "refs/tags/0.2.0";
+  inputs.src-uibuilder-0_2_0.owner = "ba0f3";
   inputs.src-uibuilder-0_2_0.repo  = "uibuilder.nim";
   inputs.src-uibuilder-0_2_0.type  = "github";
   
   inputs."ui".owner = "nim-nix-pkgs";
   inputs."ui".ref   = "master";
   inputs."ui".repo  = "ui";
+  inputs."ui".dir   = "";
   inputs."ui".type  = "github";
   inputs."ui".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ui".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mcd-0_2_0.flake = false;
+  inputs.src-mcd-0_2_0.ref   = "refs/tags/0.2.0";
   inputs.src-mcd-0_2_0.owner = "malicious-commit-detector";
-  inputs.src-mcd-0_2_0.ref   = "0_2_0";
   inputs.src-mcd-0_2_0.repo  = "mcd";
   inputs.src-mcd-0_2_0.type  = "gitlab";
   

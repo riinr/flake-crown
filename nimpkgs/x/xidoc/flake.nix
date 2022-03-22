@@ -183,6 +183,22 @@
   inputs."xidoc-2022_2_6".inputs.nixpkgs.follows = "nixpkgs";
   inputs."xidoc-2022_2_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."xidoc-2022_3_19".dir   = "2022_3_19";
+  inputs."xidoc-2022_3_19".owner = "nim-nix-pkgs";
+  inputs."xidoc-2022_3_19".ref   = "master";
+  inputs."xidoc-2022_3_19".repo  = "xidoc";
+  inputs."xidoc-2022_3_19".type  = "github";
+  inputs."xidoc-2022_3_19".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."xidoc-2022_3_19".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."xidoc-2022_3_21".dir   = "2022_3_21";
+  inputs."xidoc-2022_3_21".owner = "nim-nix-pkgs";
+  inputs."xidoc-2022_3_21".ref   = "master";
+  inputs."xidoc-2022_3_21".repo  = "xidoc";
+  inputs."xidoc-2022_3_21".type  = "github";
+  inputs."xidoc-2022_3_21".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."xidoc-2022_3_21".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

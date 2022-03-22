@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-redisclient-master.flake = false;
+  inputs.src-redisclient-master.ref   = "refs/heads/master";
   inputs.src-redisclient-master.owner = "xmonader";
-  inputs.src-redisclient-master.ref   = "master";
   inputs.src-redisclient-master.repo  = "nim-redisclient";
   inputs.src-redisclient-master.type  = "github";
   

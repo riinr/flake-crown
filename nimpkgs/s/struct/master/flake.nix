@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-struct-master.flake = false;
-  inputs.src-struct-master.owner = "OpenSystemsLab";
   inputs.src-struct-master.ref   = "refs/heads/master";
+  inputs.src-struct-master.owner = "OpenSystemsLab";
   inputs.src-struct-master.repo  = "struct.nim";
   inputs.src-struct-master.type  = "github";
   

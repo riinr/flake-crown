@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-itchio-master.flake = false;
-  inputs.src-itchio-master.owner = "juancarlospaco";
   inputs.src-itchio-master.ref   = "refs/heads/master";
+  inputs.src-itchio-master.owner = "juancarlospaco";
   inputs.src-itchio-master.repo  = "nim-itchio";
   inputs.src-itchio-master.type  = "github";
   

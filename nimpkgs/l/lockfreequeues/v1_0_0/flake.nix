@@ -1,5 +1,5 @@
 {
-  description = ''Lock-free queue implementations for Nim.'';
+  description = ''Single-producer, single-consumer, lock-free queue implementations for Nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-lockfreequeues-v1_0_0.flake = false;
-  inputs.src-lockfreequeues-v1_0_0.owner = "elijahr";
   inputs.src-lockfreequeues-v1_0_0.ref   = "refs/tags/v1.0.0";
+  inputs.src-lockfreequeues-v1_0_0.owner = "elijahr";
   inputs.src-lockfreequeues-v1_0_0.repo  = "lockfreequeues";
   inputs.src-lockfreequeues-v1_0_0.type  = "github";
   

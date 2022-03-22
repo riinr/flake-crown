@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-negamax-master.flake = false;
+  inputs.src-negamax-master.ref   = "refs/heads/master";
   inputs.src-negamax-master.owner = "JohnAD";
-  inputs.src-negamax-master.ref   = "master";
   inputs.src-negamax-master.repo  = "negamax";
   inputs.src-negamax-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-triplets-0_0_1.flake = false;
-  inputs.src-triplets-0_0_1.owner = "linksplatform";
   inputs.src-triplets-0_0_1.ref   = "refs/tags/0.0.1";
+  inputs.src-triplets-0_0_1.owner = "linksplatform";
   inputs.src-triplets-0_0_1.repo  = "Data.Triplets";
   inputs.src-triplets-0_0_1.type  = "github";
   

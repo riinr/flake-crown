@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nofi-main.flake = false;
+  inputs.src-nofi-main.ref   = "refs/heads/main";
   inputs.src-nofi-main.owner = "ct-clmsn";
-  inputs.src-nofi-main.ref   = "main";
   inputs.src-nofi-main.repo  = "nofi";
   inputs.src-nofi-main.type  = "github";
   

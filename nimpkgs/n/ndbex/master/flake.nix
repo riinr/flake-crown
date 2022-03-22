@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ndbex-master.flake = false;
+  inputs.src-ndbex-master.ref   = "refs/heads/master";
   inputs.src-ndbex-master.owner = "Senketsu";
-  inputs.src-ndbex-master.ref   = "master";
   inputs.src-ndbex-master.repo  = "nim-db-ex";
   inputs.src-ndbex-master.type  = "github";
   

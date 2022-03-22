@@ -1,5 +1,5 @@
 {
-  description = ''A nil coalescing operator ?? for Nim'';
+  description = ''coalesce to the first value that exists'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-coalesce-master.flake = false;
-  inputs.src-coalesce-master.owner = "piedar";
   inputs.src-coalesce-master.ref   = "refs/heads/master";
+  inputs.src-coalesce-master.owner = "piedar";
   inputs.src-coalesce-master.repo  = "coalesce";
   inputs.src-coalesce-master.type  = "github";
   

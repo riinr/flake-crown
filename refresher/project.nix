@@ -2,7 +2,7 @@ let
   GLOB        = "$PRJ_ROOT/../nimpkgs";
   GLOB_CACHES = "*.{json,lock}";
   GLOB_HEAD   = "${GLOB}/*/*/[a-zA-Z_][a-zA-Z_]*";
-  GLOB_PROJS  = "${GLOB}/**";
+  GLOB_PROJS  = "${GLOB}/*/*";
   GLOB_TAG    = "${GLOB}/*/*/[0-9vV][0-9_]*";
 in
 {

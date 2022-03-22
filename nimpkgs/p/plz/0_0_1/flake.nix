@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-plz-0_0_1.flake = false;
-  inputs.src-plz-0_0_1.owner = "juancarlospaco";
   inputs.src-plz-0_0_1.ref   = "refs/tags/0.0.1";
+  inputs.src-plz-0_0_1.owner = "juancarlospaco";
   inputs.src-plz-0_0_1.repo  = "nim-pypi";
   inputs.src-plz-0_0_1.type  = "github";
   
   inputs."requirementstxt".owner = "nim-nix-pkgs";
   inputs."requirementstxt".ref   = "master";
   inputs."requirementstxt".repo  = "requirementstxt";
+  inputs."requirementstxt".dir   = "";
   inputs."requirementstxt".type  = "github";
   inputs."requirementstxt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."requirementstxt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."libarchibi".owner = "nim-nix-pkgs";
   inputs."libarchibi".ref   = "master";
   inputs."libarchibi".repo  = "libarchibi";
+  inputs."libarchibi".dir   = "";
   inputs."libarchibi".type  = "github";
   inputs."libarchibi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libarchibi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-getmac-master.flake = false;
+  inputs.src-getmac-master.ref   = "refs/heads/master";
   inputs.src-getmac-master.owner = "PMunch";
-  inputs.src-getmac-master.ref   = "master";
   inputs.src-getmac-master.repo  = "getmac";
   inputs.src-getmac-master.type  = "github";
   

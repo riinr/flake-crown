@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-DevIL-master.flake = false;
+  inputs.src-DevIL-master.ref   = "refs/heads/master";
   inputs.src-DevIL-master.owner = "Varriount";
-  inputs.src-DevIL-master.ref   = "master";
   inputs.src-DevIL-master.repo  = "DevIL";
   inputs.src-DevIL-master.type  = "github";
   

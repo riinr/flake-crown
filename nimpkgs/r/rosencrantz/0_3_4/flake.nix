@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-rosencrantz-0_3_4.flake = false;
+  inputs.src-rosencrantz-0_3_4.ref   = "refs/tags/0.3.4";
   inputs.src-rosencrantz-0_3_4.owner = "andreaferretti";
-  inputs.src-rosencrantz-0_3_4.ref   = "0_3_4";
   inputs.src-rosencrantz-0_3_4.repo  = "rosencrantz";
   inputs.src-rosencrantz-0_3_4.type  = "github";
   

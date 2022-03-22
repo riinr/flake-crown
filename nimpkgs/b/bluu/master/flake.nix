@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-bluu-master.flake = false;
+  inputs.src-bluu-master.ref   = "refs/heads/master";
   inputs.src-bluu-master.owner = "disruptek";
-  inputs.src-bluu-master.ref   = "master";
   inputs.src-bluu-master.repo  = "bluu";
   inputs.src-bluu-master.type  = "github";
   

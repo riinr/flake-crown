@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-genoiser-v0_2_4.flake = false;
+  inputs.src-genoiser-v0_2_4.ref   = "refs/tags/v0.2.4";
   inputs.src-genoiser-v0_2_4.owner = "brentp";
-  inputs.src-genoiser-v0_2_4.ref   = "v0_2_4";
   inputs.src-genoiser-v0_2_4.repo  = "genoiser";
   inputs.src-genoiser-v0_2_4.type  = "github";
   

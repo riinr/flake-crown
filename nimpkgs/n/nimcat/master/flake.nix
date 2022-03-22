@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nimcat-master.flake = false;
+  inputs.src-nimcat-master.ref   = "refs/heads/master";
   inputs.src-nimcat-master.owner = "shakna-israel";
-  inputs.src-nimcat-master.ref   = "master";
   inputs.src-nimcat-master.repo  = "nimcat";
   inputs.src-nimcat-master.type  = "github";
   

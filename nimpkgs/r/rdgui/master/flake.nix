@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-rdgui-master.flake = false;
+  inputs.src-rdgui-master.ref   = "refs/heads/master";
   inputs.src-rdgui-master.owner = "liquid600pgm";
-  inputs.src-rdgui-master.ref   = "master";
   inputs.src-rdgui-master.repo  = "rdgui";
   inputs.src-rdgui-master.type  = "github";
   

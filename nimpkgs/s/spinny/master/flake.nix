@@ -1,5 +1,5 @@
 {
-  description = ''Spinny is a tiny terminal spinner package for the Nim Programming Language.'';
+  description = ''Terminal Spinners for Nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-spinny-master.flake = false;
-  inputs.src-spinny-master.owner = "Yardanico";
   inputs.src-spinny-master.ref   = "refs/heads/master";
+  inputs.src-spinny-master.owner = "Yardanico";
   inputs.src-spinny-master.repo  = "spinny";
   inputs.src-spinny-master.type  = "github";
   

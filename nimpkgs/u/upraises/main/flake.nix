@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-upraises-main.flake = false;
-  inputs.src-upraises-main.owner = "markspanbroek";
   inputs.src-upraises-main.ref   = "refs/heads/main";
+  inputs.src-upraises-main.owner = "markspanbroek";
   inputs.src-upraises-main.repo  = "upraises";
   inputs.src-upraises-main.type  = "github";
   

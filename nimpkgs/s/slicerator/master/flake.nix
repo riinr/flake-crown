@@ -1,5 +1,5 @@
 {
-  description = ''Iterator package aimed at more ergonomic and efficient iterators.'';
+  description = ''Iterator package aimed at more ergonomic and efficient iterators'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-slicerator-master.flake = false;
-  inputs.src-slicerator-master.owner = "beef331";
   inputs.src-slicerator-master.ref   = "refs/heads/master";
+  inputs.src-slicerator-master.owner = "beef331";
   inputs.src-slicerator-master.repo  = "slicerator";
   inputs.src-slicerator-master.type  = "github";
   

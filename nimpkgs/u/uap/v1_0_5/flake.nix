@@ -1,5 +1,5 @@
 {
-  description = ''Nim implementation of user-agent parser'';
+  description = ''Nim implementation of ua-parser'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-uap-v1_0_5.flake = false;
-  inputs.src-uap-v1_0_5.owner = "artemklevtsov";
   inputs.src-uap-v1_0_5.ref   = "refs/tags/v1.0.5";
+  inputs.src-uap-v1_0_5.owner = "artemklevtsov";
   inputs.src-uap-v1_0_5.repo  = "nim-uap";
   inputs.src-uap-v1_0_5.type  = "gitlab";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."yaml".owner = "nim-nix-pkgs";
   inputs."yaml".ref   = "master";
   inputs."yaml".repo  = "yaml";
+  inputs."yaml".dir   = "v0_16_0";
   inputs."yaml".type  = "github";
   inputs."yaml".inputs.nixpkgs.follows = "nixpkgs";
   inputs."yaml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

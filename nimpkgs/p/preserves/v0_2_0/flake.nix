@@ -1,5 +1,5 @@
 {
-  description = ''Preserves data model and serialization format'';
+  description = ''data model and serialization format'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-preserves-v0_2_0.flake = false;
-  inputs.src-preserves-v0_2_0.owner = "~ehmry";
   inputs.src-preserves-v0_2_0.ref   = "v0.2.0";
+  inputs.src-preserves-v0_2_0.owner = "~ehmry";
   inputs.src-preserves-v0_2_0.repo  = "preserves-nim";
   inputs.src-preserves-v0_2_0.type  = "sourcehut";
   
   inputs."bigints".owner = "nim-nix-pkgs";
   inputs."bigints".ref   = "master";
   inputs."bigints".repo  = "bigints";
+  inputs."bigints".dir   = "0_5_0";
   inputs."bigints".type  = "github";
   inputs."bigints".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bigints".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

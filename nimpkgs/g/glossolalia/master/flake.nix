@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-glossolalia-master.flake = false;
+  inputs.src-glossolalia-master.ref   = "refs/heads/master";
   inputs.src-glossolalia-master.owner = "fowlmouth";
-  inputs.src-glossolalia-master.ref   = "master";
   inputs.src-glossolalia-master.repo  = "glossolalia";
   inputs.src-glossolalia-master.type  = "github";
   

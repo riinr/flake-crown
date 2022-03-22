@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-fixmath-master.flake = false;
-  inputs.src-fixmath-master.owner = "Jeff-Ciesielski";
   inputs.src-fixmath-master.ref   = "refs/heads/master";
+  inputs.src-fixmath-master.owner = "Jeff-Ciesielski";
   inputs.src-fixmath-master.repo  = "fixmath";
   inputs.src-fixmath-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nanovg-master.flake = false;
+  inputs.src-nanovg-master.ref   = "refs/heads/master";
   inputs.src-nanovg-master.owner = "johnnovak";
-  inputs.src-nanovg-master.ref   = "master";
   inputs.src-nanovg-master.repo  = "nim-nanovg";
   inputs.src-nanovg-master.type  = "github";
   

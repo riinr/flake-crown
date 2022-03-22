@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-hmac-0_1_8.flake = false;
+  inputs.src-hmac-0_1_8.ref   = "refs/tags/0.1.8";
   inputs.src-hmac-0_1_8.owner = "OpenSystemsLab";
-  inputs.src-hmac-0_1_8.ref   = "0_1_8";
   inputs.src-hmac-0_1_8.repo  = "hmac.nim";
   inputs.src-hmac-0_1_8.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-nim_curry-master.flake = false;
+  inputs.src-nim_curry-master.ref   = "refs/heads/master";
   inputs.src-nim_curry-master.owner = "zer0-star";
-  inputs.src-nim_curry-master.ref   = "master";
   inputs.src-nim_curry-master.repo  = "nim-curry";
   inputs.src-nim_curry-master.type  = "github";
   

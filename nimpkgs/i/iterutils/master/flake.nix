@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-iterutils-master.flake = false;
-  inputs.src-iterutils-master.owner = "def-";
   inputs.src-iterutils-master.ref   = "refs/heads/master";
+  inputs.src-iterutils-master.owner = "def-";
   inputs.src-iterutils-master.repo  = "iterutils";
   inputs.src-iterutils-master.type  = "github";
   

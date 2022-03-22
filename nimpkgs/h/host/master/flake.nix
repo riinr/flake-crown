@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-host-master.flake = false;
+  inputs.src-host-master.ref   = "refs/heads/master";
   inputs.src-host-master.owner = "RainbowAsteroids";
-  inputs.src-host-master.ref   = "master";
   inputs.src-host-master.repo  = "host";
   inputs.src-host-master.type  = "github";
   

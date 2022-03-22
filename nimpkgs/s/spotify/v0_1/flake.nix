@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-spotify-v0_1.flake = false;
-  inputs.src-spotify-v0_1.owner = "CORDEA";
   inputs.src-spotify-v0_1.ref   = "refs/tags/v0.1";
+  inputs.src-spotify-v0_1.owner = "CORDEA";
   inputs.src-spotify-v0_1.repo  = "spotify";
   inputs.src-spotify-v0_1.type  = "github";
   
   inputs."oauth".owner = "nim-nix-pkgs";
   inputs."oauth".ref   = "master";
   inputs."oauth".repo  = "oauth";
+  inputs."oauth".dir   = "v0_10";
   inputs."oauth".type  = "github";
   inputs."oauth".inputs.nixpkgs.follows = "nixpkgs";
   inputs."oauth".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

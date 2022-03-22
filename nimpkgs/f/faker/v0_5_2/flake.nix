@@ -1,5 +1,5 @@
 {
-  description = ''faker is a Nim package that generates fake data for you.'';
+  description = ''A new awesome nimble package'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-faker-v0_5_2.flake = false;
-  inputs.src-faker-v0_5_2.owner = "jiro4989";
   inputs.src-faker-v0_5_2.ref   = "refs/tags/v0.5.2";
+  inputs.src-faker-v0_5_2.owner = "jiro4989";
   inputs.src-faker-v0_5_2.repo  = "faker";
   inputs.src-faker-v0_5_2.type  = "github";
   

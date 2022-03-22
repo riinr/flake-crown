@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-libsvm-v0_2_0.flake = false;
-  inputs.src-libsvm-v0_2_0.owner = "genotrance";
   inputs.src-libsvm-v0_2_0.ref   = "refs/tags/v0.2.0";
+  inputs.src-libsvm-v0_2_0.owner = "genotrance";
   inputs.src-libsvm-v0_2_0.repo  = "libsvm";
   inputs.src-libsvm-v0_2_0.type  = "github";
   
   inputs."nimterop".owner = "nim-nix-pkgs";
   inputs."nimterop".ref   = "master";
   inputs."nimterop".repo  = "nimterop";
+  inputs."nimterop".dir   = "v0_6_13";
   inputs."nimterop".type  = "github";
   inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

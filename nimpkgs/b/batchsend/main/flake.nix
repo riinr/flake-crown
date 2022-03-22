@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-batchsend-main.flake = false;
+  inputs.src-batchsend-main.ref   = "refs/heads/main";
   inputs.src-batchsend-main.owner = "marcomq";
-  inputs.src-batchsend-main.ref   = "main";
   inputs.src-batchsend-main.repo  = "batchsend";
   inputs.src-batchsend-main.type  = "github";
   

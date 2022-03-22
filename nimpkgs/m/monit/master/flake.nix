@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-monit-master.flake = false;
+  inputs.src-monit-master.ref   = "refs/heads/master";
   inputs.src-monit-master.owner = "jiro4989";
-  inputs.src-monit-master.ref   = "master";
   inputs.src-monit-master.repo  = "monit";
   inputs.src-monit-master.type  = "github";
   

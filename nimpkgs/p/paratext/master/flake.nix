@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-paratext-master.flake = false;
-  inputs.src-paratext-master.owner = "paranim";
   inputs.src-paratext-master.ref   = "refs/heads/master";
+  inputs.src-paratext-master.owner = "paranim";
   inputs.src-paratext-master.repo  = "paratext";
   inputs.src-paratext-master.type  = "github";
   

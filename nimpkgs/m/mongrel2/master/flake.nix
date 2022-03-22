@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-mongrel2-master.flake = false;
+  inputs.src-mongrel2-master.ref   = "refs/heads/master";
   inputs.src-mongrel2-master.owner = "mahlonsmith";
-  inputs.src-mongrel2-master.ref   = "master";
   inputs.src-mongrel2-master.repo  = "nim-mongrel2";
   inputs.src-mongrel2-master.type  = "github";
   

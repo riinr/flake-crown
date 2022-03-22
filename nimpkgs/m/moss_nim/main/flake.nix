@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-moss_nim-main.flake = false;
+  inputs.src-moss_nim-main.ref   = "refs/heads/main";
   inputs.src-moss_nim-main.owner = "D4D3VD4V3";
-  inputs.src-moss_nim-main.ref   = "main";
   inputs.src-moss_nim-main.repo  = "moss_nim";
   inputs.src-moss_nim-main.type  = "github";
   

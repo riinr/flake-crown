@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-masterpassword-master.flake = false;
+  inputs.src-masterpassword-master.ref   = "refs/heads/master";
   inputs.src-masterpassword-master.owner = "SolitudeSF";
-  inputs.src-masterpassword-master.ref   = "master";
   inputs.src-masterpassword-master.repo  = "masterpassword";
   inputs.src-masterpassword-master.type  = "github";
   

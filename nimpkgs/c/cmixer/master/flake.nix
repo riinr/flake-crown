@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-cmixer-master.flake = false;
-  inputs.src-cmixer-master.owner = "rxi";
   inputs.src-cmixer-master.ref   = "refs/heads/master";
+  inputs.src-cmixer-master.owner = "rxi";
   inputs.src-cmixer-master.repo  = "cmixer-nim";
   inputs.src-cmixer-master.type  = "github";
   

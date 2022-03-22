@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-NimpleHTTPServer-master.flake = false;
+  inputs.src-NimpleHTTPServer-master.ref   = "refs/heads/master";
   inputs.src-NimpleHTTPServer-master.owner = "Hydra820";
-  inputs.src-NimpleHTTPServer-master.ref   = "master";
   inputs.src-NimpleHTTPServer-master.repo  = "NimpleHTTPServer";
   inputs.src-NimpleHTTPServer-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-opusenc-v0_1_0.flake = false;
+  inputs.src-opusenc-v0_1_0.ref   = "v0.1.0";
   inputs.src-opusenc-v0_1_0.owner = "~ehmry";
-  inputs.src-opusenc-v0_1_0.ref   = "v0_1_0";
   inputs.src-opusenc-v0_1_0.repo  = "nim_opusenc";
   inputs.src-opusenc-v0_1_0.type  = "sourcehut";
   

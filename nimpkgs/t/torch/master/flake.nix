@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-torch-master.flake = false;
-  inputs.src-torch-master.owner = "fragcolor-xyz";
   inputs.src-torch-master.ref   = "refs/heads/master";
+  inputs.src-torch-master.owner = "fragcolor-xyz";
   inputs.src-torch-master.repo  = "nimtorch";
   inputs.src-torch-master.type  = "github";
   
   inputs."fragments".owner = "nim-nix-pkgs";
   inputs."fragments".ref   = "master";
   inputs."fragments".repo  = "fragments";
+  inputs."fragments".dir   = "";
   inputs."fragments".type  = "github";
   inputs."fragments".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fragments".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-argparse-master.flake = false;
+  inputs.src-argparse-master.ref   = "refs/heads/master";
   inputs.src-argparse-master.owner = "iffy";
-  inputs.src-argparse-master.ref   = "master";
   inputs.src-argparse-master.repo  = "nim-argparse";
   inputs.src-argparse-master.type  = "github";
   

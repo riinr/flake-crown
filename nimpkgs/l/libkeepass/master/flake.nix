@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-libkeepass-master.flake = false;
-  inputs.src-libkeepass-master.owner = "PMunch";
   inputs.src-libkeepass-master.ref   = "refs/heads/master";
+  inputs.src-libkeepass-master.owner = "PMunch";
   inputs.src-libkeepass-master.repo  = "libkeepass";
   inputs.src-libkeepass-master.type  = "github";
   
   inputs."nimsha2".owner = "nim-nix-pkgs";
   inputs."nimsha2".ref   = "master";
   inputs."nimsha2".repo  = "nimsha2";
+  inputs."nimsha2".dir   = "";
   inputs."nimsha2".type  = "github";
   inputs."nimsha2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimsha2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."nimaes".owner = "nim-nix-pkgs";
   inputs."nimaes".ref   = "master";
   inputs."nimaes".repo  = "nimaes";
+  inputs."nimaes".dir   = "";
   inputs."nimaes".type  = "github";
   inputs."nimaes".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimaes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."zip".owner = "nim-nix-pkgs";
   inputs."zip".ref   = "master";
   inputs."zip".repo  = "zip";
+  inputs."zip".dir   = "0_3_1";
   inputs."zip".type  = "github";
   inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

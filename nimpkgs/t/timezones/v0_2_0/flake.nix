@@ -1,5 +1,5 @@
 {
-  description = ''Timezone library compatible with the standard library. '';
+  description = ''Timezone library compatible with the standard library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-timezones-v0_2_0.flake = false;
-  inputs.src-timezones-v0_2_0.owner = "GULPF";
   inputs.src-timezones-v0_2_0.ref   = "refs/tags/v0.2.0";
+  inputs.src-timezones-v0_2_0.owner = "GULPF";
   inputs.src-timezones-v0_2_0.repo  = "timezones";
   inputs.src-timezones-v0_2_0.type  = "github";
   

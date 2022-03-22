@@ -1,5 +1,5 @@
 {
-  description = ''Dependency-free and performant Nim Snappy implementation.'';
+  description = ''Nim implementation of Google's Snappy compression.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-supersnappy-1_1_2.flake = false;
-  inputs.src-supersnappy-1_1_2.owner = "guzba";
   inputs.src-supersnappy-1_1_2.ref   = "refs/tags/1.1.2";
+  inputs.src-supersnappy-1_1_2.owner = "guzba";
   inputs.src-supersnappy-1_1_2.repo  = "supersnappy";
   inputs.src-supersnappy-1_1_2.type  = "github";
   

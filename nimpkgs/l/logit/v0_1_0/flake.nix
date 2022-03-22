@@ -1,5 +1,5 @@
 {
-  description = ''Dependency-free, cross-platform and small logging library for Nim, with a simple and comfortable API'';
+  description = ''Dependency-free, cross-platform and small logging library for Lua and Nim, with a simple and comfortable API'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-logit-v0_1_0.flake = false;
-  inputs.src-logit-v0_1_0.owner = "Miqueas";
   inputs.src-logit-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-logit-v0_1_0.owner = "Miqueas";
   inputs.src-logit-v0_1_0.repo  = "Logit";
   inputs.src-logit-v0_1_0.type  = "github";
   

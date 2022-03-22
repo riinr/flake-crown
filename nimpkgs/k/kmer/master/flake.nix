@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-kmer-master.flake = false;
+  inputs.src-kmer-master.ref   = "refs/heads/master";
   inputs.src-kmer-master.owner = "brentp";
-  inputs.src-kmer-master.ref   = "master";
   inputs.src-kmer-master.repo  = "nim-kmer";
   inputs.src-kmer-master.type  = "github";
   

@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-keyring-v0_3_0.flake = false;
+  inputs.src-keyring-v0_3_0.ref   = "refs/tags/v0.3.0";
   inputs.src-keyring-v0_3_0.owner = "iffy";
-  inputs.src-keyring-v0_3_0.ref   = "v0_3_0";
   inputs.src-keyring-v0_3_0.repo  = "nim-keyring";
   inputs.src-keyring-v0_3_0.type  = "github";
   

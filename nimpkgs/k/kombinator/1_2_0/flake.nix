@@ -8,9 +8,9 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-kombinator-1_2_0.flake = false;
+  inputs.src-kombinator-1_2_0.ref   = "refs/tags/1.2.0";
   inputs.src-kombinator-1_2_0.owner = "EchoPouet";
-  inputs.src-kombinator-1_2_0.ref   = "1_2_0";
-  inputs.src-kombinator-1_2_0.repo  = "kombinator.git";
+  inputs.src-kombinator-1_2_0.repo  = "kombinator";
   inputs.src-kombinator-1_2_0.type  = "gitlab";
   
   inputs."parsetoml".owner = "nim-nix-pkgs";

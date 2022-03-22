@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-numnim-master.flake = false;
+  inputs.src-numnim-master.ref   = "refs/heads/master";
   inputs.src-numnim-master.owner = "YesDrX";
-  inputs.src-numnim-master.ref   = "master";
   inputs.src-numnim-master.repo  = "numnim";
   inputs.src-numnim-master.type  = "github";
   

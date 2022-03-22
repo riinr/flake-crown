@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-ioselectors-v0_1_0.flake = false;
-  inputs.src-ioselectors-v0_1_0.owner = "xflywind";
   inputs.src-ioselectors-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-ioselectors-v0_1_0.owner = "xflywind";
   inputs.src-ioselectors-v0_1_0.repo  = "ioselectors";
   inputs.src-ioselectors-v0_1_0.type  = "github";
   
   inputs."wepoll".owner = "nim-nix-pkgs";
   inputs."wepoll".ref   = "master";
   inputs."wepoll".repo  = "wepoll";
+  inputs."wepoll".dir   = "v0_1_0";
   inputs."wepoll".type  = "github";
   inputs."wepoll".inputs.nixpkgs.follows = "nixpkgs";
   inputs."wepoll".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

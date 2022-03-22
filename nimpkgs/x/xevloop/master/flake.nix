@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-xevloop-master.flake = false;
-  inputs.src-xevloop-master.owner = "PMunch";
   inputs.src-xevloop-master.ref   = "refs/heads/master";
+  inputs.src-xevloop-master.owner = "PMunch";
   inputs.src-xevloop-master.repo  = "xevloop";
   inputs.src-xevloop-master.type  = "github";
   
   inputs."x11".owner = "nim-nix-pkgs";
   inputs."x11".ref   = "master";
   inputs."x11".repo  = "x11";
+  inputs."x11".dir   = "";
   inputs."x11".type  = "github";
   inputs."x11".inputs.nixpkgs.follows = "nixpkgs";
   inputs."x11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

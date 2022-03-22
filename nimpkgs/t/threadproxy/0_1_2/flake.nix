@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-threadproxy-0_1_2.flake = false;
-  inputs.src-threadproxy-0_1_2.owner = "jackhftang";
   inputs.src-threadproxy-0_1_2.ref   = "refs/tags/0.1.2";
+  inputs.src-threadproxy-0_1_2.owner = "jackhftang";
   inputs.src-threadproxy-0_1_2.repo  = "threadproxy.nim";
   inputs.src-threadproxy-0_1_2.type  = "github";
   
