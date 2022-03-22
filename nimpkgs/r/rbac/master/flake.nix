@@ -9,7 +9,7 @@
   
   inputs.src-rbac-master.flake = false;
   inputs.src-rbac-master.owner = "ba0f3";
-  inputs.src-rbac-master.ref   = "refs/heads/master";
+  inputs.src-rbac-master.ref   = "master";
   inputs.src-rbac-master.repo  = "rbac.nim";
   inputs.src-rbac-master.type  = "github";
   

@@ -9,7 +9,7 @@
   
   inputs.src-ris-master.flake = false;
   inputs.src-ris-master.owner = "achesak";
-  inputs.src-ris-master.ref   = "refs/heads/master";
+  inputs.src-ris-master.ref   = "master";
   inputs.src-ris-master.repo  = "nim-ris";
   inputs.src-ris-master.type  = "github";
   

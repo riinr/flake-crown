@@ -9,13 +9,14 @@
   
   inputs.src-rodster-main.flake = false;
   inputs.src-rodster-main.owner = "j-a-s-d";
-  inputs.src-rodster-main.ref   = "refs/heads/main";
+  inputs.src-rodster-main.ref   = "main";
   inputs.src-rodster-main.repo  = "rodster";
   inputs.src-rodster-main.type  = "github";
   
   inputs."xam".owner = "nim-nix-pkgs";
   inputs."xam".ref   = "master";
   inputs."xam".repo  = "xam";
+  inputs."xam".dir   = "1_7_0";
   inputs."xam".type  = "github";
   inputs."xam".inputs.nixpkgs.follows = "nixpkgs";
   inputs."xam".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

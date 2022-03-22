@@ -9,13 +9,14 @@
   
   inputs.src-rethinkdb-0_2_4.flake = false;
   inputs.src-rethinkdb-0_2_4.owner = "OpenSystemsLab";
-  inputs.src-rethinkdb-0_2_4.ref   = "refs/tags/0.2.4";
+  inputs.src-rethinkdb-0_2_4.ref   = "0_2_4";
   inputs.src-rethinkdb-0_2_4.repo  = "rethinkdb.nim";
   inputs.src-rethinkdb-0_2_4.type  = "github";
   
   inputs."struct".owner = "nim-nix-pkgs";
   inputs."struct".ref   = "master";
   inputs."struct".repo  = "struct";
+  inputs."struct".dir   = "v0_2_3";
   inputs."struct".type  = "github";
   inputs."struct".inputs.nixpkgs.follows = "nixpkgs";
   inputs."struct".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."scram".owner = "nim-nix-pkgs";
   inputs."scram".ref   = "master";
   inputs."scram".repo  = "scram";
+  inputs."scram".dir   = "0_1_13";
   inputs."scram".type  = "github";
   inputs."scram".inputs.nixpkgs.follows = "nixpkgs";
   inputs."scram".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

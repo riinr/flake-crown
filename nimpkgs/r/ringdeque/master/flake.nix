@@ -9,7 +9,7 @@
   
   inputs.src-ringDeque-master.flake = false;
   inputs.src-ringDeque-master.owner = "technicallyagd";
-  inputs.src-ringDeque-master.ref   = "refs/heads/master";
+  inputs.src-ringDeque-master.ref   = "master";
   inputs.src-ringDeque-master.repo  = "ringDeque";
   inputs.src-ringDeque-master.type  = "github";
   

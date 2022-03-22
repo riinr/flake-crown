@@ -9,13 +9,14 @@
   
   inputs.src-reframe-0_1_0.flake = false;
   inputs.src-reframe-0_1_0.owner = "rosado";
-  inputs.src-reframe-0_1_0.ref   = "refs/tags/0.1.0";
+  inputs.src-reframe-0_1_0.ref   = "0_1_0";
   inputs.src-reframe-0_1_0.repo  = "reframe.nim";
   inputs.src-reframe-0_1_0.type  = "github";
   
   inputs."edn".owner = "nim-nix-pkgs";
   inputs."edn".ref   = "master";
   inputs."edn".repo  = "edn";
+  inputs."edn".dir   = "0_1_0";
   inputs."edn".type  = "github";
   inputs."edn".inputs.nixpkgs.follows = "nixpkgs";
   inputs."edn".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

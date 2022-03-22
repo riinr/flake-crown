@@ -1,5 +1,5 @@
 {
-  description = ''Filesystem in userspace (FUSE) for Nim (for reactor.nim library)'';
+  description = ''Filesystem in userspace (FUSE) support for reactor.nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-reactorfuse-master.flake = false;
   inputs.src-reactorfuse-master.owner = "zielmicha";
-  inputs.src-reactorfuse-master.ref   = "refs/heads/master";
+  inputs.src-reactorfuse-master.ref   = "master";
   inputs.src-reactorfuse-master.repo  = "reactorfuse";
   inputs.src-reactorfuse-master.type  = "github";
   
   inputs."reactor".owner = "nim-nix-pkgs";
   inputs."reactor".ref   = "master";
   inputs."reactor".repo  = "reactor";
+  inputs."reactor".dir   = "v0_5_0";
   inputs."reactor".type  = "github";
   inputs."reactor".inputs.nixpkgs.follows = "nixpkgs";
   inputs."reactor".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

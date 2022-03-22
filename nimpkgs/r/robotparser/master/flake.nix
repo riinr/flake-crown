@@ -1,5 +1,5 @@
 {
-  description = ''Determine if a useragent can access a URL using robots.txt'';
+  description = ''Determine if a useragent can access a particular URL using robots.txt'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-robotparser-master.flake = false;
   inputs.src-robotparser-master.owner = "achesak";
-  inputs.src-robotparser-master.ref   = "refs/heads/master";
+  inputs.src-robotparser-master.ref   = "master";
   inputs.src-robotparser-master.repo  = "nim-robotparser";
   inputs.src-robotparser-master.type  = "github";
   

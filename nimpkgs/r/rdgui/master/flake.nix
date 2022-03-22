@@ -9,13 +9,14 @@
   
   inputs.src-rdgui-master.flake = false;
   inputs.src-rdgui-master.owner = "liquid600pgm";
-  inputs.src-rdgui-master.ref   = "refs/heads/master";
+  inputs.src-rdgui-master.ref   = "master";
   inputs.src-rdgui-master.repo  = "rdgui";
   inputs.src-rdgui-master.type  = "github";
   
   inputs."rapid".owner = "nim-nix-pkgs";
   inputs."rapid".ref   = "master";
   inputs."rapid".repo  = "rapid";
+  inputs."rapid".dir   = "2019_1";
   inputs."rapid".type  = "github";
   inputs."rapid".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rapid".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -9,13 +9,14 @@
   
   inputs.src-readfq-master.flake = false;
   inputs.src-readfq-master.owner = "andreas-wilm";
-  inputs.src-readfq-master.ref   = "refs/heads/master";
+  inputs.src-readfq-master.ref   = "master";
   inputs.src-readfq-master.repo  = "nimreadfq";
   inputs.src-readfq-master.type  = "github";
   
   inputs."zip".owner = "nim-nix-pkgs";
   inputs."zip".ref   = "master";
   inputs."zip".repo  = "zip";
+  inputs."zip".dir   = "0_3_1";
   inputs."zip".type  = "github";
   inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

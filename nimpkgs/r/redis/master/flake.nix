@@ -1,5 +1,5 @@
 {
-  description = ''official redis client for Nim'';
+  description = ''Official redis client for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-redis-master.flake = false;
   inputs.src-redis-master.owner = "nim-lang";
-  inputs.src-redis-master.ref   = "refs/heads/master";
+  inputs.src-redis-master.ref   = "master";
   inputs.src-redis-master.repo  = "redis";
   inputs.src-redis-master.type  = "github";
   

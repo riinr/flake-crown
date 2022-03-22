@@ -9,7 +9,7 @@
   
   inputs.src-random_font_color-master.flake = false;
   inputs.src-random_font_color-master.owner = "juancarlospaco";
-  inputs.src-random_font_color-master.ref   = "refs/heads/master";
+  inputs.src-random_font_color-master.ref   = "master";
   inputs.src-random_font_color-master.repo  = "nim-random-font-color";
   inputs.src-random_font_color-master.type  = "github";
   

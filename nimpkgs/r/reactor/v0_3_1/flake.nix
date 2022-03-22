@@ -9,13 +9,14 @@
   
   inputs.src-reactor-v0_3_1.flake = false;
   inputs.src-reactor-v0_3_1.owner = "zielmicha";
-  inputs.src-reactor-v0_3_1.ref   = "refs/tags/v0.3.1";
+  inputs.src-reactor-v0_3_1.ref   = "v0_3_1";
   inputs.src-reactor-v0_3_1.repo  = "reactor.nim";
   inputs.src-reactor-v0_3_1.type  = "github";
   
   inputs."collections".owner = "nim-nix-pkgs";
   inputs."collections".ref   = "master";
   inputs."collections".repo  = "collections";
+  inputs."collections".dir   = "v0_5_2";
   inputs."collections".type  = "github";
   inputs."collections".inputs.nixpkgs.follows = "nixpkgs";
   inputs."collections".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

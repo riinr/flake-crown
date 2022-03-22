@@ -9,7 +9,7 @@
   
   inputs.src-rodcli-v0_1_9.flake = false;
   inputs.src-rodcli-v0_1_9.owner = "jabbalaci";
-  inputs.src-rodcli-v0_1_9.ref   = "refs/tags/v0.1.9";
+  inputs.src-rodcli-v0_1_9.ref   = "v0_1_9";
   inputs.src-rodcli-v0_1_9.repo  = "NimCliHelper";
   inputs.src-rodcli-v0_1_9.type  = "github";
   

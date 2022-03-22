@@ -9,7 +9,7 @@
   
   inputs.src-rcedit-master.flake = false;
   inputs.src-rcedit-master.owner = "bung87";
-  inputs.src-rcedit-master.ref   = "refs/heads/master";
+  inputs.src-rcedit-master.ref   = "master";
   inputs.src-rcedit-master.repo  = "rcedit";
   inputs.src-rcedit-master.type  = "github";
   

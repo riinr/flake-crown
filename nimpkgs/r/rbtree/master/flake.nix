@@ -1,5 +1,5 @@
 {
-  description = ''Red/Black Trees'';
+  description = ''Red/Black Tree'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-rbtree-master.flake = false;
   inputs.src-rbtree-master.owner = "Nycto";
-  inputs.src-rbtree-master.ref   = "refs/heads/master";
+  inputs.src-rbtree-master.ref   = "master";
   inputs.src-rbtree-master.repo  = "RBTreeNim";
   inputs.src-rbtree-master.type  = "github";
   

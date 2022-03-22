@@ -1,5 +1,5 @@
 {
-  description = ''minimal, performant mass file renamer'';
+  description = ''minimal, performant mass renaming tool'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-rn-v0_0_7.flake = false;
   inputs.src-rn-v0_0_7.owner = "xioren";
-  inputs.src-rn-v0_0_7.ref   = "refs/tags/v0.0.7";
+  inputs.src-rn-v0_0_7.ref   = "v0_0_7";
   inputs.src-rn-v0_0_7.repo  = "rn";
   inputs.src-rn-v0_0_7.type  = "github";
   

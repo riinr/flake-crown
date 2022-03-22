@@ -9,13 +9,14 @@
   
   inputs.src-readfq-v0_1_1.flake = false;
   inputs.src-readfq-v0_1_1.owner = "andreas-wilm";
-  inputs.src-readfq-v0_1_1.ref   = "refs/tags/v0.1.1";
+  inputs.src-readfq-v0_1_1.ref   = "v0_1_1";
   inputs.src-readfq-v0_1_1.repo  = "nimreadfq";
   inputs.src-readfq-v0_1_1.type  = "github";
   
   inputs."zip".owner = "nim-nix-pkgs";
   inputs."zip".ref   = "master";
   inputs."zip".repo  = "zip";
+  inputs."zip".dir   = "0_3_1";
   inputs."zip".type  = "github";
   inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

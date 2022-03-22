@@ -9,13 +9,14 @@
   
   inputs.src-retranslator-0_3_3.flake = false;
   inputs.src-retranslator-0_3_3.owner = "linksplatform";
-  inputs.src-retranslator-0_3_3.ref   = "refs/tags/0.3.3";
+  inputs.src-retranslator-0_3_3.ref   = "0_3_3";
   inputs.src-retranslator-0_3_3.repo  = "RegularExpressions.Transformer";
   inputs.src-retranslator-0_3_3.type  = "github";
   
   inputs."nre".owner = "nim-nix-pkgs";
   inputs."nre".ref   = "master";
   inputs."nre".repo  = "nre";
+  inputs."nre".dir   = "2_0_2";
   inputs."nre".type  = "github";
   inputs."nre".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nre".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

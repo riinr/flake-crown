@@ -1,5 +1,5 @@
 {
-  description = ''React.js 16.x bindings for Nim'';
+  description = ''Sample React 16.6 SPA with hooks using Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-react16-0_3_6.flake = false;
   inputs.src-react16-0_3_6.owner = "kristianmandrup";
-  inputs.src-react16-0_3_6.ref   = "refs/tags/0.3.6";
+  inputs.src-react16-0_3_6.ref   = "0_3_6";
   inputs.src-react16-0_3_6.repo  = "react-16.nim";
   inputs.src-react16-0_3_6.type  = "github";
   

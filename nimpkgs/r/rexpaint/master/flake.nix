@@ -9,13 +9,14 @@
   
   inputs.src-rexpaint-master.flake = false;
   inputs.src-rexpaint-master.owner = "irskep";
-  inputs.src-rexpaint-master.ref   = "refs/heads/master";
+  inputs.src-rexpaint-master.ref   = "master";
   inputs.src-rexpaint-master.repo  = "rexpaint_nim";
   inputs.src-rexpaint-master.type  = "github";
   
   inputs."zip".owner = "nim-nix-pkgs";
   inputs."zip".ref   = "master";
   inputs."zip".repo  = "zip";
+  inputs."zip".dir   = "0_3_1";
   inputs."zip".type  = "github";
   inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -9,13 +9,14 @@
   
   inputs.src-rapid-master.flake = false;
   inputs.src-rapid-master.owner = "liquid600pgm";
-  inputs.src-rapid-master.ref   = "refs/heads/master";
+  inputs.src-rapid-master.ref   = "master";
   inputs.src-rapid-master.repo  = "rapid";
   inputs.src-rapid-master.type  = "github";
   
   inputs."aglet".owner = "nim-nix-pkgs";
   inputs."aglet".ref   = "master";
   inputs."aglet".repo  = "aglet";
+  inputs."aglet".dir   = "0_4_4";
   inputs."aglet".type  = "github";
   inputs."aglet".inputs.nixpkgs.follows = "nixpkgs";
   inputs."aglet".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."stbimage".owner = "nim-nix-pkgs";
   inputs."stbimage".ref   = "master";
   inputs."stbimage".repo  = "stbimage";
+  inputs."stbimage".dir   = "";
   inputs."stbimage".type  = "github";
   inputs."stbimage".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stbimage".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

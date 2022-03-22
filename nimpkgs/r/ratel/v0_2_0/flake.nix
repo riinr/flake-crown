@@ -1,5 +1,5 @@
 {
-  description = ''Zero-cost abstractions for microcontrollers'';
+  description = ''Nim for microcontrollers'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-ratel-v0_2_0.flake = false;
   inputs.src-ratel-v0_2_0.owner = "PMunch";
-  inputs.src-ratel-v0_2_0.ref   = "refs/tags/v0.2.0";
+  inputs.src-ratel-v0_2_0.ref   = "v0_2_0";
   inputs.src-ratel-v0_2_0.repo  = "ratel";
   inputs.src-ratel-v0_2_0.type  = "github";
   
   inputs."nimscripter".owner = "nim-nix-pkgs";
   inputs."nimscripter".ref   = "master";
   inputs."nimscripter".repo  = "nimscripter";
+  inputs."nimscripter".dir   = "";
   inputs."nimscripter".type  = "github";
   inputs."nimscripter".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimscripter".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."compiler".owner = "nim-nix-pkgs";
   inputs."compiler".ref   = "master";
   inputs."compiler".repo  = "compiler";
+  inputs."compiler".dir   = "v1_6_4";
   inputs."compiler".type  = "github";
   inputs."compiler".inputs.nixpkgs.follows = "nixpkgs";
   inputs."compiler".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

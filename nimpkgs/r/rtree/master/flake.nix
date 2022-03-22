@@ -9,7 +9,7 @@
   
   inputs.src-rtree-master.flake = false;
   inputs.src-rtree-master.owner = "stefansalewski";
-  inputs.src-rtree-master.ref   = "refs/heads/master";
+  inputs.src-rtree-master.ref   = "master";
   inputs.src-rtree-master.repo  = "RTree";
   inputs.src-rtree-master.type  = "github";
   

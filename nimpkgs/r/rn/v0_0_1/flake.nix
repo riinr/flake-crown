@@ -9,7 +9,7 @@
   
   inputs.src-rn-v0_0_1.flake = false;
   inputs.src-rn-v0_0_1.owner = "xioren";
-  inputs.src-rn-v0_0_1.ref   = "refs/tags/v0.0.1";
+  inputs.src-rn-v0_0_1.ref   = "v0_0_1";
   inputs.src-rn-v0_0_1.repo  = "rn";
   inputs.src-rn-v0_0_1.type  = "github";
   

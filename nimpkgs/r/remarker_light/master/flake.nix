@@ -9,13 +9,14 @@
   
   inputs.src-remarker_light-master.flake = false;
   inputs.src-remarker_light-master.owner = "muxueqz";
-  inputs.src-remarker_light-master.ref   = "refs/heads/master";
+  inputs.src-remarker_light-master.ref   = "master";
   inputs.src-remarker_light-master.repo  = "remarker_light";
   inputs.src-remarker_light-master.type  = "github";
   
   inputs."jester".owner = "nim-nix-pkgs";
   inputs."jester".ref   = "master";
   inputs."jester".repo  = "jester";
+  inputs."jester".dir   = "v0_5_0";
   inputs."jester".type  = "github";
   inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."docopt".owner = "nim-nix-pkgs";
   inputs."docopt".ref   = "master";
   inputs."docopt".repo  = "docopt";
+  inputs."docopt".dir   = "v0_6_8";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -9,7 +9,7 @@
   
   inputs.src-redismodules-v0_1_6.flake = false;
   inputs.src-redismodules-v0_1_6.owner = "luisacosta828";
-  inputs.src-redismodules-v0_1_6.ref   = "refs/tags/v0.1.6";
+  inputs.src-redismodules-v0_1_6.ref   = "v0_1_6";
   inputs.src-redismodules-v0_1_6.repo  = "redismodules";
   inputs.src-redismodules-v0_1_6.type  = "github";
   

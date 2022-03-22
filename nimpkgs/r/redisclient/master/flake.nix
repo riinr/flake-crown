@@ -9,13 +9,14 @@
   
   inputs.src-redisclient-master.flake = false;
   inputs.src-redisclient-master.owner = "xmonader";
-  inputs.src-redisclient-master.ref   = "refs/heads/master";
+  inputs.src-redisclient-master.ref   = "master";
   inputs.src-redisclient-master.repo  = "nim-redisclient";
   inputs.src-redisclient-master.type  = "github";
   
   inputs."redisparser".owner = "nim-nix-pkgs";
   inputs."redisparser".ref   = "master";
   inputs."redisparser".repo  = "redisparser";
+  inputs."redisparser".dir   = "";
   inputs."redisparser".type  = "github";
   inputs."redisparser".inputs.nixpkgs.follows = "nixpkgs";
   inputs."redisparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

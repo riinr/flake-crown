@@ -9,13 +9,14 @@
   
   inputs.src-rabbit-main.flake = false;
   inputs.src-rabbit-main.owner = "tonogram";
-  inputs.src-rabbit-main.ref   = "refs/heads/main";
+  inputs.src-rabbit-main.ref   = "main";
   inputs.src-rabbit-main.repo  = "rabbit";
   inputs.src-rabbit-main.type  = "github";
   
   inputs."chroma".owner = "nim-nix-pkgs";
   inputs."chroma".ref   = "master";
   inputs."chroma".repo  = "chroma";
+  inputs."chroma".dir   = "0_2_5";
   inputs."chroma".type  = "github";
   inputs."chroma".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chroma".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

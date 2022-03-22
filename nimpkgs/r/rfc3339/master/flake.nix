@@ -9,7 +9,7 @@
   
   inputs.src-rfc3339-master.flake = false;
   inputs.src-rfc3339-master.owner = "Skrylar";
-  inputs.src-rfc3339-master.ref   = "refs/heads/master";
+  inputs.src-rfc3339-master.ref   = "master";
   inputs.src-rfc3339-master.repo  = "rfc3339";
   inputs.src-rfc3339-master.type  = "github";
   

@@ -9,7 +9,7 @@
   
   inputs.src-redux-master.flake = false;
   inputs.src-redux-master.owner = "pragmagic";
-  inputs.src-redux-master.ref   = "refs/heads/master";
+  inputs.src-redux-master.ref   = "master";
   inputs.src-redux-master.repo  = "redux.nim";
   inputs.src-redux-master.type  = "github";
   

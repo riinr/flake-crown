@@ -1,5 +1,5 @@
 {
-  description = ''React.js bindings for Nim'';
+  description = ''Example React single page application'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-react-0_2_0.flake = false;
   inputs.src-react-0_2_0.owner = "andreaferretti";
-  inputs.src-react-0_2_0.ref   = "refs/tags/0.2.0";
+  inputs.src-react-0_2_0.ref   = "0_2_0";
   inputs.src-react-0_2_0.repo  = "react.nim";
   inputs.src-react-0_2_0.type  = "github";
   

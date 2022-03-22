@@ -9,7 +9,7 @@
   
   inputs.src-replim-master.flake = false;
   inputs.src-replim-master.owner = "gmshiba";
-  inputs.src-replim-master.ref   = "refs/heads/master";
+  inputs.src-replim-master.ref   = "master";
   inputs.src-replim-master.repo  = "replim";
   inputs.src-replim-master.type  = "github";
   

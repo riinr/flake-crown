@@ -9,7 +9,7 @@
   
   inputs.src-rx_nim-master.flake = false;
   inputs.src-rx_nim-master.owner = "nortero-code";
-  inputs.src-rx_nim-master.ref   = "refs/heads/master";
+  inputs.src-rx_nim-master.ref   = "master";
   inputs.src-rx_nim-master.repo  = "rx-nim";
   inputs.src-rx_nim-master.type  = "github";
   

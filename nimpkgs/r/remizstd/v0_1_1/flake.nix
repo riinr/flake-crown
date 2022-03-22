@@ -9,7 +9,7 @@
   
   inputs.src-remizstd-v0_1_1.flake = false;
   inputs.src-remizstd-v0_1_1.owner = "RemiliaScarlet";
-  inputs.src-remizstd-v0_1_1.ref   = "refs/tags/v0.1.1";
+  inputs.src-remizstd-v0_1_1.ref   = "v0_1_1";
   inputs.src-remizstd-v0_1_1.repo  = "remizstd";
   inputs.src-remizstd-v0_1_1.type  = "gitlab";
   

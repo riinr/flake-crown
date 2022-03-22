@@ -9,7 +9,7 @@
   
   inputs.src-rodcli-master.flake = false;
   inputs.src-rodcli-master.owner = "jabbalaci";
-  inputs.src-rodcli-master.ref   = "refs/heads/master";
+  inputs.src-rodcli-master.ref   = "master";
   inputs.src-rodcli-master.repo  = "NimCliHelper";
   inputs.src-rodcli-master.type  = "github";
   

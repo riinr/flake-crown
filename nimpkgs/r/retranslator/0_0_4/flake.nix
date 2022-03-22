@@ -9,7 +9,7 @@
   
   inputs.src-retranslator-0_0_4.flake = false;
   inputs.src-retranslator-0_0_4.owner = "linksplatform";
-  inputs.src-retranslator-0_0_4.ref   = "refs/tags/0.0.4";
+  inputs.src-retranslator-0_0_4.ref   = "0_0_4";
   inputs.src-retranslator-0_0_4.repo  = "RegularExpressions.Transformer";
   inputs.src-retranslator-0_0_4.type  = "github";
   

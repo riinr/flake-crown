@@ -9,13 +9,14 @@
   
   inputs.src-regex-master.flake = false;
   inputs.src-regex-master.owner = "nitely";
-  inputs.src-regex-master.ref   = "refs/heads/master";
+  inputs.src-regex-master.ref   = "master";
   inputs.src-regex-master.repo  = "nim-regex";
   inputs.src-regex-master.type  = "github";
   
   inputs."unicodedb".owner = "nim-nix-pkgs";
   inputs."unicodedb".ref   = "master";
   inputs."unicodedb".repo  = "unicodedb";
+  inputs."unicodedb".dir   = "v0_10_0";
   inputs."unicodedb".type  = "github";
   inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

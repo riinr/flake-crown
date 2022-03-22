@@ -9,7 +9,7 @@
   
   inputs.src-redux_nim-v0_2_0.flake = false;
   inputs.src-redux_nim-v0_2_0.owner = "M4RC3L05";
-  inputs.src-redux_nim-v0_2_0.ref   = "refs/tags/v0.2.0";
+  inputs.src-redux_nim-v0_2_0.ref   = "v0_2_0";
   inputs.src-redux_nim-v0_2_0.repo  = "redux-nim";
   inputs.src-redux_nim-v0_2_0.type  = "github";
   

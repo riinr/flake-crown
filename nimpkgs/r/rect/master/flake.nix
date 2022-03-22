@@ -9,13 +9,14 @@
   
   inputs.src-rect-master.flake = false;
   inputs.src-rect-master.owner = "jiro4989";
-  inputs.src-rect-master.ref   = "refs/heads/master";
+  inputs.src-rect-master.ref   = "master";
   inputs.src-rect-master.repo  = "rect";
   inputs.src-rect-master.type  = "github";
   
   inputs."eastasianwidth".owner = "nim-nix-pkgs";
   inputs."eastasianwidth".ref   = "master";
   inputs."eastasianwidth".repo  = "eastasianwidth";
+  inputs."eastasianwidth".dir   = "1_1_0";
   inputs."eastasianwidth".type  = "github";
   inputs."eastasianwidth".inputs.nixpkgs.follows = "nixpkgs";
   inputs."eastasianwidth".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."docopt".owner = "nim-nix-pkgs";
   inputs."docopt".ref   = "master";
   inputs."docopt".repo  = "docopt";
+  inputs."docopt".dir   = "v0_6_8";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

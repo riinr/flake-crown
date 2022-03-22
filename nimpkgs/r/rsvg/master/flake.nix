@@ -9,7 +9,7 @@
   
   inputs.src-rsvg-master.flake = false;
   inputs.src-rsvg-master.owner = "def-";
-  inputs.src-rsvg-master.ref   = "refs/heads/master";
+  inputs.src-rsvg-master.ref   = "master";
   inputs.src-rsvg-master.repo  = "rsvg";
   inputs.src-rsvg-master.type  = "github";
   

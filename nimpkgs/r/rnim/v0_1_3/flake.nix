@@ -1,5 +1,5 @@
 {
-  description = ''A bridge between R and Nim'';
+  description = ''A library to interface between Nim and R'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-rnim-v0_1_3.flake = false;
   inputs.src-rnim-v0_1_3.owner = "SciNim";
-  inputs.src-rnim-v0_1_3.ref   = "refs/tags/v0.1.3";
+  inputs.src-rnim-v0_1_3.ref   = "v0_1_3";
   inputs.src-rnim-v0_1_3.repo  = "rnim";
   inputs.src-rnim-v0_1_3.type  = "github";
   

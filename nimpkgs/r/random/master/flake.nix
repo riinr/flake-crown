@@ -9,7 +9,7 @@
   
   inputs.src-random-master.flake = false;
   inputs.src-random-master.owner = "oprypin";
-  inputs.src-random-master.ref   = "refs/heads/master";
+  inputs.src-random-master.ref   = "master";
   inputs.src-random-master.repo  = "nim-random";
   inputs.src-random-master.type  = "github";
   

@@ -9,7 +9,7 @@
   
   inputs.src-random-v0_5_3.flake = false;
   inputs.src-random-v0_5_3.owner = "oprypin";
-  inputs.src-random-v0_5_3.ref   = "refs/tags/v0.5.3";
+  inputs.src-random-v0_5_3.ref   = "v0_5_3";
   inputs.src-random-v0_5_3.repo  = "nim-random";
   inputs.src-random-v0_5_3.type  = "github";
   

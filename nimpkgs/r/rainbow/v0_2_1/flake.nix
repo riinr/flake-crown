@@ -9,7 +9,7 @@
   
   inputs.src-rainbow-v0_2_1.flake = false;
   inputs.src-rainbow-v0_2_1.owner = "Willyboar";
-  inputs.src-rainbow-v0_2_1.ref   = "refs/tags/v0.2.1";
+  inputs.src-rainbow-v0_2_1.ref   = "v0_2_1";
   inputs.src-rainbow-v0_2_1.repo  = "rainbow";
   inputs.src-rainbow-v0_2_1.type  = "github";
   

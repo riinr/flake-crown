@@ -1,5 +1,5 @@
 {
-  description = ''A random variable generating library for nim.'';
+  description = ''A random variable generator library for nim-lang.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-randgen-master.flake = false;
   inputs.src-randgen-master.owner = "YesDrX";
-  inputs.src-randgen-master.ref   = "refs/heads/master";
+  inputs.src-randgen-master.ref   = "master";
   inputs.src-randgen-master.repo  = "randgen";
   inputs.src-randgen-master.type  = "github";
   

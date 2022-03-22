@@ -1,5 +1,5 @@
 {
-  description = ''RSS library'';
+  description = ''Nim RSS parser'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-rss-master.flake = false;
   inputs.src-rss-master.owner = "achesak";
-  inputs.src-rss-master.ref   = "refs/heads/master";
+  inputs.src-rss-master.ref   = "master";
   inputs.src-rss-master.repo  = "nim-rss";
   inputs.src-rss-master.type  = "github";
   

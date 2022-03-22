@@ -9,7 +9,7 @@
   
   inputs.src-rect_packer-master.flake = false;
   inputs.src-rect_packer-master.owner = "yglukhov";
-  inputs.src-rect_packer-master.ref   = "refs/heads/master";
+  inputs.src-rect_packer-master.ref   = "master";
   inputs.src-rect_packer-master.repo  = "rect_packer";
   inputs.src-rect_packer-master.type  = "github";
   

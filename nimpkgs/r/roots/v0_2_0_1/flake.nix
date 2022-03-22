@@ -9,7 +9,7 @@
   
   inputs.src-roots-v0_2_0_1.flake = false;
   inputs.src-roots-v0_2_0_1.owner = "BarrOff";
-  inputs.src-roots-v0_2_0_1.ref   = "refs/tags/v0.2.0.1";
+  inputs.src-roots-v0_2_0_1.ref   = "v0_2_0_1";
   inputs.src-roots-v0_2_0_1.repo  = "roots";
   inputs.src-roots-v0_2_0_1.type  = "github";
   

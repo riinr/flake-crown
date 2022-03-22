@@ -1,5 +1,5 @@
 {
-  description = ''A web DSL for Nim'';
+  description = ''Web server DSL'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-rosencrantz-0_2_2.flake = false;
   inputs.src-rosencrantz-0_2_2.owner = "andreaferretti";
-  inputs.src-rosencrantz-0_2_2.ref   = "refs/tags/0.2.2";
+  inputs.src-rosencrantz-0_2_2.ref   = "0_2_2";
   inputs.src-rosencrantz-0_2_2.repo  = "rosencrantz";
   inputs.src-rosencrantz-0_2_2.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''DNS resolution nimble making use of the native glibc resolv library'';
+  description = ''Access glibc DNS resolution routines'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-resolv-master.flake = false;
   inputs.src-resolv-master.owner = "mildred";
-  inputs.src-resolv-master.ref   = "refs/heads/master";
+  inputs.src-resolv-master.ref   = "master";
   inputs.src-resolv-master.repo  = "resolv.nim";
   inputs.src-resolv-master.type  = "github";
   
   inputs."dnsprotocol".owner = "nim-nix-pkgs";
   inputs."dnsprotocol".ref   = "master";
   inputs."dnsprotocol".repo  = "dnsprotocol";
+  inputs."dnsprotocol".dir   = "";
   inputs."dnsprotocol".type  = "github";
   inputs."dnsprotocol".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dnsprotocol".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

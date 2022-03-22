@@ -9,7 +9,7 @@
   
   inputs.src-randpw-master.flake = false;
   inputs.src-randpw-master.owner = "pdrb";
-  inputs.src-randpw-master.ref   = "refs/heads/master";
+  inputs.src-randpw-master.ref   = "master";
   inputs.src-randpw-master.repo  = "nim-randpw";
   inputs.src-randpw-master.type  = "github";
   

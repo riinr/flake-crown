@@ -9,7 +9,7 @@
   
   inputs.src-redisparser-master.flake = false;
   inputs.src-redisparser-master.owner = "xmonader";
-  inputs.src-redisparser-master.ref   = "refs/heads/master";
+  inputs.src-redisparser-master.ref   = "master";
   inputs.src-redisparser-master.repo  = "nim-redisparser";
   inputs.src-redisparser-master.type  = "github";
   

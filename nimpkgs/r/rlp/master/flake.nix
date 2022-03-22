@@ -1,5 +1,5 @@
 {
-  description = ''Deprecated RLP serialization library for Nim (now part of the 'eth' module)'';
+  description = ''RLP serialization library for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-rlp-master.flake = false;
   inputs.src-rlp-master.owner = "status-im";
-  inputs.src-rlp-master.ref   = "refs/heads/master";
+  inputs.src-rlp-master.ref   = "master";
   inputs.src-rlp-master.repo  = "nim-rlp";
   inputs.src-rlp-master.type  = "github";
   
   inputs."ranges".owner = "nim-nix-pkgs";
   inputs."ranges".ref   = "master";
   inputs."ranges".repo  = "ranges";
+  inputs."ranges".dir   = "";
   inputs."ranges".type  = "github";
   inputs."ranges".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ranges".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

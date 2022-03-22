@@ -1,5 +1,5 @@
 {
-  description = ''A high performance Nim implementation of a Cyclic Polynomial Hash, aka BuzHash, and the Rabin-Karp algorithm'';
+  description = ''A high performance Nim implementation of a Cyclic Polynomial Hash, aka BuzHash, and Rabin-Karp algorithm.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-RollingHash-master.flake = false;
   inputs.src-RollingHash-master.owner = "MarcAzar";
-  inputs.src-RollingHash-master.ref   = "refs/heads/master";
+  inputs.src-RollingHash-master.ref   = "master";
   inputs.src-RollingHash-master.repo  = "RollingHash";
   inputs.src-RollingHash-master.type  = "github";
   

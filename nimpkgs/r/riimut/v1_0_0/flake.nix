@@ -1,5 +1,5 @@
 {
-  description = ''Transform latin letters to runes & vice versa. Four runic dialects available.'';
+  description = ''Transform latin letters to runes &amp; vice versa'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-riimut-v1_0_0.flake = false;
   inputs.src-riimut-v1_0_0.owner = "stscoundrel";
-  inputs.src-riimut-v1_0_0.ref   = "refs/tags/v1.0.0";
+  inputs.src-riimut-v1_0_0.ref   = "v1_0_0";
   inputs.src-riimut-v1_0_0.repo  = "riimut-nim";
   inputs.src-riimut-v1_0_0.type  = "github";
   

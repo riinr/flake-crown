@@ -9,7 +9,7 @@
   
   inputs.src-redux_nim-master.flake = false;
   inputs.src-redux_nim-master.owner = "M4RC3L05";
-  inputs.src-redux_nim-master.ref   = "refs/heads/master";
+  inputs.src-redux_nim-master.ref   = "master";
   inputs.src-redux_nim-master.repo  = "redux-nim";
   inputs.src-redux_nim-master.type  = "github";
   
