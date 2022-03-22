@@ -9,7 +9,7 @@
   
   inputs.src-dnsclient-master.flake = false;
   inputs.src-dnsclient-master.owner = "ba0f3";
-  inputs.src-dnsclient-master.ref   = "refs/heads/master";
+  inputs.src-dnsclient-master.ref   = "master";
   inputs.src-dnsclient-master.repo  = "dnsclient.nim";
   inputs.src-dnsclient-master.type  = "github";
   

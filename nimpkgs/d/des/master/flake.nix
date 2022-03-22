@@ -9,7 +9,7 @@
   
   inputs.src-des-master.flake = false;
   inputs.src-des-master.owner = "LucaWolf";
-  inputs.src-des-master.ref   = "refs/heads/master";
+  inputs.src-des-master.ref   = "master";
   inputs.src-des-master.repo  = "des.nim";
   inputs.src-des-master.type  = "github";
   

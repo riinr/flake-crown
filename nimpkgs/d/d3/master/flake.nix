@@ -1,5 +1,5 @@
 {
-  description = ''A D3.js wrapper for Nim'';
+  description = ''Nim bindings to D3js'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-d3-master.flake = false;
   inputs.src-d3-master.owner = "hiteshjasani";
-  inputs.src-d3-master.ref   = "refs/heads/master";
+  inputs.src-d3-master.ref   = "master";
   inputs.src-d3-master.repo  = "nim-d3";
   inputs.src-d3-master.type  = "github";
   

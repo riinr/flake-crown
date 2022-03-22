@@ -1,5 +1,5 @@
 {
-  description = ''dbg template; in debug echo'';
+  description = ''"dbg" template; in debug echo'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-dbg-master.flake = false;
   inputs.src-dbg-master.owner = "enthus1ast";
-  inputs.src-dbg-master.ref   = "refs/heads/master";
+  inputs.src-dbg-master.ref   = "master";
   inputs.src-dbg-master.repo  = "nimDbg";
   inputs.src-dbg-master.type  = "github";
   

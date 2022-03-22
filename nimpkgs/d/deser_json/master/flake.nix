@@ -9,13 +9,14 @@
   
   inputs.src-deser_json-master.flake = false;
   inputs.src-deser_json-master.owner = "gabbhack";
-  inputs.src-deser_json-master.ref   = "refs/heads/master";
+  inputs.src-deser_json-master.ref   = "master";
   inputs.src-deser_json-master.repo  = "deser_json";
   inputs.src-deser_json-master.type  = "github";
   
   inputs."faststreams".owner = "nim-nix-pkgs";
   inputs."faststreams".ref   = "master";
   inputs."faststreams".repo  = "faststreams";
+  inputs."faststreams".dir   = "";
   inputs."faststreams".type  = "github";
   inputs."faststreams".inputs.nixpkgs.follows = "nixpkgs";
   inputs."faststreams".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."deser".owner = "nim-nix-pkgs";
   inputs."deser".ref   = "master";
   inputs."deser".repo  = "deser";
+  inputs."deser".dir   = "v0_1_7";
   inputs."deser".type  = "github";
   inputs."deser".inputs.nixpkgs.follows = "nixpkgs";
   inputs."deser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

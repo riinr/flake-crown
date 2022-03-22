@@ -9,13 +9,14 @@
   
   inputs.src-datetime_parse-master.flake = false;
   inputs.src-datetime_parse-master.owner = "bung87";
-  inputs.src-datetime_parse-master.ref   = "refs/heads/master";
+  inputs.src-datetime_parse-master.ref   = "master";
   inputs.src-datetime_parse-master.repo  = "datetime_parse";
   inputs.src-datetime_parse-master.type  = "github";
   
   inputs."timezones".owner = "nim-nix-pkgs";
   inputs."timezones".ref   = "master";
   inputs."timezones".repo  = "timezones";
+  inputs."timezones".dir   = "v0_5_4";
   inputs."timezones".type  = "github";
   inputs."timezones".inputs.nixpkgs.follows = "nixpkgs";
   inputs."timezones".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

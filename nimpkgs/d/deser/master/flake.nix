@@ -1,5 +1,5 @@
 {
-  description = ''De/serialization library for Nim '';
+  description = ''De/serialization library for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-deser-master.flake = false;
   inputs.src-deser-master.owner = "gabbhack";
-  inputs.src-deser-master.ref   = "refs/heads/master";
+  inputs.src-deser-master.ref   = "master";
   inputs.src-deser-master.repo  = "deser";
   inputs.src-deser-master.type  = "github";
   

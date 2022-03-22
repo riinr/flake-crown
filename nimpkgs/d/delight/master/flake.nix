@@ -9,13 +9,14 @@
   
   inputs.src-delight-master.flake = false;
   inputs.src-delight-master.owner = "liquid600pgm";
-  inputs.src-delight-master.ref   = "refs/heads/master";
+  inputs.src-delight-master.ref   = "master";
   inputs.src-delight-master.repo  = "delight";
   inputs.src-delight-master.type  = "github";
   
   inputs."glm".owner = "nim-nix-pkgs";
   inputs."glm".ref   = "master";
   inputs."glm".repo  = "glm";
+  inputs."glm".dir   = "v1_1_1";
   inputs."glm".type  = "github";
   inputs."glm".inputs.nixpkgs.follows = "nixpkgs";
   inputs."glm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

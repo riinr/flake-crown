@@ -1,5 +1,5 @@
 {
-  description = ''Nim implementation of the standard unix drand48 pseudo random number generator'';
+  description = ''Nim implementation of standard unix drand48 random number generator'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-drand48-master.flake = false;
   inputs.src-drand48-master.owner = "JeffersonLab";
-  inputs.src-drand48-master.ref   = "refs/heads/master";
+  inputs.src-drand48-master.ref   = "master";
   inputs.src-drand48-master.repo  = "drand48";
   inputs.src-drand48-master.type  = "github";
   

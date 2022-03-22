@@ -9,13 +9,14 @@
   
   inputs.src-diffoutput-v0_1_2.flake = false;
   inputs.src-diffoutput-v0_1_2.owner = "JohnAD";
-  inputs.src-diffoutput-v0_1_2.ref   = "refs/tags/v0.1.2";
+  inputs.src-diffoutput-v0_1_2.ref   = "v0_1_2";
   inputs.src-diffoutput-v0_1_2.repo  = "diffoutput";
   inputs.src-diffoutput-v0_1_2.type  = "github";
   
   inputs."diff".owner = "nim-nix-pkgs";
   inputs."diff".ref   = "master";
   inputs."diff".repo  = "diff";
+  inputs."diff".dir   = "0_5_0";
   inputs."diff".type  = "github";
   inputs."diff".inputs.nixpkgs.follows = "nixpkgs";
   inputs."diff".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

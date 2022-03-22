@@ -9,7 +9,7 @@
   
   inputs.src-dual-master.flake = false;
   inputs.src-dual-master.owner = "drjdn";
-  inputs.src-dual-master.ref   = "refs/heads/master";
+  inputs.src-dual-master.ref   = "master";
   inputs.src-dual-master.repo  = "nim_dual";
   inputs.src-dual-master.type  = "github";
   

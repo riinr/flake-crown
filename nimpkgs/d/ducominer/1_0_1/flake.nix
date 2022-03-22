@@ -1,5 +1,5 @@
 {
-  description = ''A fast, multithreaded miner for DuinoCoin'';
+  description = ''A multithreaded miner for DuinoCoin written in Nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-ducominer-1_0_1.flake = false;
   inputs.src-ducominer-1_0_1.owner = "its5Q";
-  inputs.src-ducominer-1_0_1.ref   = "refs/tags/1.0.1";
+  inputs.src-ducominer-1_0_1.ref   = "1_0_1";
   inputs.src-ducominer-1_0_1.repo  = "ducominer";
   inputs.src-ducominer-1_0_1.type  = "github";
   
   inputs."hashlib".owner = "nim-nix-pkgs";
   inputs."hashlib".ref   = "master";
   inputs."hashlib".repo  = "hashlib";
+  inputs."hashlib".dir   = "";
   inputs."hashlib".type  = "github";
   inputs."hashlib".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hashlib".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

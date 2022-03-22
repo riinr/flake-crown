@@ -9,13 +9,14 @@
   
   inputs.src-duckduckgo-master.flake = false;
   inputs.src-duckduckgo-master.owner = "lurlo";
-  inputs.src-duckduckgo-master.ref   = "refs/heads/master";
+  inputs.src-duckduckgo-master.ref   = "master";
   inputs.src-duckduckgo-master.repo  = "duckduckgo";
   inputs.src-duckduckgo-master.type  = "gitlab";
   
   inputs."scraper".owner = "nim-nix-pkgs";
   inputs."scraper".ref   = "master";
   inputs."scraper".repo  = "scraper";
+  inputs."scraper".dir   = "";
   inputs."scraper".type  = "github";
   inputs."scraper".inputs.nixpkgs.follows = "nixpkgs";
   inputs."scraper".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

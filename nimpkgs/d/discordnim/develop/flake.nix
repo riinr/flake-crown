@@ -9,7 +9,7 @@
   
   inputs.src-discordnim-develop.flake = false;
   inputs.src-discordnim-develop.owner = "Krognol";
-  inputs.src-discordnim-develop.ref   = "refs/heads/develop";
+  inputs.src-discordnim-develop.ref   = "develop";
   inputs.src-discordnim-develop.repo  = "discordnim";
   inputs.src-discordnim-develop.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''A Discord Bot & REST Library.'';
+  description = ''A Discord Bot & REST Library for Nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-dimscord-v1_2_4.flake = false;
   inputs.src-dimscord-v1_2_4.owner = "krisppurg";
-  inputs.src-dimscord-v1_2_4.ref   = "refs/tags/v1.2.4";
+  inputs.src-dimscord-v1_2_4.ref   = "v1_2_4";
   inputs.src-dimscord-v1_2_4.repo  = "dimscord";
   inputs.src-dimscord-v1_2_4.type  = "github";
   
   inputs."zippy".owner = "nim-nix-pkgs";
   inputs."zippy".ref   = "master";
   inputs."zippy".repo  = "zippy";
+  inputs."zippy".dir   = "0_9_7";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."ws".owner = "nim-nix-pkgs";
   inputs."ws".ref   = "master";
   inputs."ws".repo  = "ws";
+  inputs."ws".dir   = "v0_4_0";
   inputs."ws".type  = "github";
   inputs."ws".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ws".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."regex".owner = "nim-nix-pkgs";
   inputs."regex".ref   = "master";
   inputs."regex".repo  = "regex";
+  inputs."regex".dir   = "v0_19_0";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -37,6 +40,7 @@
   inputs."libsodium".owner = "nim-nix-pkgs";
   inputs."libsodium".ref   = "master";
   inputs."libsodium".repo  = "libsodium";
+  inputs."libsodium".dir   = "0_6_0";
   inputs."libsodium".type  = "github";
   inputs."libsodium".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libsodium".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -44,6 +48,7 @@
   inputs."flatty".owner = "nim-nix-pkgs";
   inputs."flatty".ref   = "master";
   inputs."flatty".repo  = "flatty";
+  inputs."flatty".dir   = "0_2_4";
   inputs."flatty".type  = "github";
   inputs."flatty".inputs.nixpkgs.follows = "nixpkgs";
   inputs."flatty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -1,5 +1,5 @@
 {
-  description = ''Loads environment variables from `.env`.'';
+  description = ''dotenv implementation for Nim. Loads environment variables from `.env`'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-dotenv-main.flake = false;
   inputs.src-dotenv-main.owner = "euantorano";
-  inputs.src-dotenv-main.ref   = "refs/heads/main";
+  inputs.src-dotenv-main.ref   = "main";
   inputs.src-dotenv-main.repo  = "dotenv.nim";
   inputs.src-dotenv-main.type  = "github";
   

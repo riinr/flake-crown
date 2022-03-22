@@ -9,13 +9,14 @@
   
   inputs.src-dimscmd-1_2_1.flake = false;
   inputs.src-dimscmd-1_2_1.owner = "ire4ever1190";
-  inputs.src-dimscmd-1_2_1.ref   = "refs/tags/1.2.1";
+  inputs.src-dimscmd-1_2_1.ref   = "1_2_1";
   inputs.src-dimscmd-1_2_1.repo  = "dimscordCommandHandler";
   inputs.src-dimscmd-1_2_1.type  = "github";
   
   inputs."dimscord".owner = "nim-nix-pkgs";
   inputs."dimscord".ref   = "master";
   inputs."dimscord".repo  = "dimscord";
+  inputs."dimscord".dir   = "";
   inputs."dimscord".type  = "github";
   inputs."dimscord".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dimscord".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

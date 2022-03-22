@@ -9,7 +9,7 @@
   
   inputs.src-dslutils-0_1_1.flake = false;
   inputs.src-dslutils-0_1_1.owner = "codehz";
-  inputs.src-dslutils-0_1_1.ref   = "refs/tags/0.1.1";
+  inputs.src-dslutils-0_1_1.ref   = "0_1_1";
   inputs.src-dslutils-0_1_1.repo  = "dslutils";
   inputs.src-dslutils-0_1_1.type  = "github";
   

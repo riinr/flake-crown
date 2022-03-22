@@ -9,7 +9,7 @@
   
   inputs.src-distorm3-3_5_2.flake = false;
   inputs.src-distorm3-3_5_2.owner = "ba0f3";
-  inputs.src-distorm3-3_5_2.ref   = "refs/tags/3.5.2";
+  inputs.src-distorm3-3_5_2.ref   = "3_5_2";
   inputs.src-distorm3-3_5_2.repo  = "distorm3.nim";
   inputs.src-distorm3-3_5_2.type  = "github";
   

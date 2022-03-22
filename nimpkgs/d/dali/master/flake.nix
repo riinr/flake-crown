@@ -1,5 +1,5 @@
 {
-  description = ''Indie assembler/linker for Android's Dalvik VM .dex & .apk files'';
+  description = ''Dalvik Assembler/Linker'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-dali-master.flake = false;
   inputs.src-dali-master.owner = "akavel";
-  inputs.src-dali-master.ref   = "refs/heads/master";
+  inputs.src-dali-master.ref   = "master";
   inputs.src-dali-master.repo  = "dali";
   inputs.src-dali-master.type  = "github";
   
   inputs."patty".owner = "nim-nix-pkgs";
   inputs."patty".ref   = "master";
   inputs."patty".repo  = "patty";
+  inputs."patty".dir   = "0_3_3";
   inputs."patty".type  = "github";
   inputs."patty".inputs.nixpkgs.follows = "nixpkgs";
   inputs."patty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

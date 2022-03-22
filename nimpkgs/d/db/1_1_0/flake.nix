@@ -1,5 +1,5 @@
 {
-  description = ''Unified db access module, providing a single library module to access the db_sqlite, db_mysql and db_postgres modules.'';
+  description = ''Unified database access to Sqlite, MySql, and Postgres'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-db-1_1_0.flake = false;
   inputs.src-db-1_1_0.owner = "jlp765";
-  inputs.src-db-1_1_0.ref   = "refs/tags/1.1.0";
+  inputs.src-db-1_1_0.ref   = "1_1_0";
   inputs.src-db-1_1_0.repo  = "db";
   inputs.src-db-1_1_0.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Drawing in terminal with Unicode Braille characters.'';
+  description = ''Allows drawing in the terminal by using UTF Braille characters. Idea from https://github.com/asciimoo/drawille'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-drawille-master.flake = false;
   inputs.src-drawille-master.owner = "PMunch";
-  inputs.src-drawille-master.ref   = "refs/heads/master";
+  inputs.src-drawille-master.ref   = "master";
   inputs.src-drawille-master.repo  = "drawille-nim";
   inputs.src-drawille-master.type  = "github";
   

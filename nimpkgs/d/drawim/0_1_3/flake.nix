@@ -9,13 +9,14 @@
   
   inputs.src-drawim-0_1_3.flake = false;
   inputs.src-drawim-0_1_3.owner = "GabrielLasso";
-  inputs.src-drawim-0_1_3.ref   = "refs/tags/0.1.3";
+  inputs.src-drawim-0_1_3.ref   = "0_1_3";
   inputs.src-drawim-0_1_3.repo  = "drawim";
   inputs.src-drawim-0_1_3.type  = "github";
   
   inputs."staticglfw".owner = "nim-nix-pkgs";
   inputs."staticglfw".ref   = "master";
   inputs."staticglfw".repo  = "staticglfw";
+  inputs."staticglfw".dir   = "4_1_3";
   inputs."staticglfw".type  = "github";
   inputs."staticglfw".inputs.nixpkgs.follows = "nixpkgs";
   inputs."staticglfw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."opengl".owner = "nim-nix-pkgs";
   inputs."opengl".ref   = "master";
   inputs."opengl".repo  = "opengl";
+  inputs."opengl".dir   = "1_2_6";
   inputs."opengl".type  = "github";
   inputs."opengl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."opengl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."jscanvas".owner = "nim-nix-pkgs";
   inputs."jscanvas".ref   = "master";
   inputs."jscanvas".repo  = "jscanvas";
+  inputs."jscanvas".dir   = "v0_1_0";
   inputs."jscanvas".type  = "github";
   inputs."jscanvas".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jscanvas".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

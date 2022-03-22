@@ -9,13 +9,14 @@
   
   inputs.src-datamancer-v0_2_0.flake = false;
   inputs.src-datamancer-v0_2_0.owner = "SciNim";
-  inputs.src-datamancer-v0_2_0.ref   = "refs/tags/v0.2.0";
+  inputs.src-datamancer-v0_2_0.ref   = "v0_2_0";
   inputs.src-datamancer-v0_2_0.repo  = "datamancer";
   inputs.src-datamancer-v0_2_0.type  = "github";
   
   inputs."arraymancer".owner = "nim-nix-pkgs";
   inputs."arraymancer".ref   = "master";
   inputs."arraymancer".repo  = "arraymancer";
+  inputs."arraymancer".dir   = "v0_7_11";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

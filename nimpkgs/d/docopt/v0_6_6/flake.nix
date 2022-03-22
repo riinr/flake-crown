@@ -1,5 +1,5 @@
 {
-  description = ''Command-line args parser based on Usage message'';
+  description = ''Command line option parser that will make you smile'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-docopt-v0_6_6.flake = false;
   inputs.src-docopt-v0_6_6.owner = "docopt";
-  inputs.src-docopt-v0_6_6.ref   = "refs/tags/v0.6.6";
+  inputs.src-docopt-v0_6_6.ref   = "v0_6_6";
   inputs.src-docopt-v0_6_6.repo  = "docopt.nim";
   inputs.src-docopt-v0_6_6.type  = "github";
   

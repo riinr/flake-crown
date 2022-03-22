@@ -9,7 +9,7 @@
   
   inputs.src-daemonize-0_0_1.flake = false;
   inputs.src-daemonize-0_0_1.owner = "OpenSystemsLab";
-  inputs.src-daemonize-0_0_1.ref   = "refs/tags/0.0.1";
+  inputs.src-daemonize-0_0_1.ref   = "0_0_1";
   inputs.src-daemonize-0_0_1.repo  = "daemonize.nim";
   inputs.src-daemonize-0_0_1.type  = "github";
   

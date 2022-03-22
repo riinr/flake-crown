@@ -1,5 +1,5 @@
 {
-  description = ''2D Delaunay triangulations'';
+  description = ''Delaunay triangulator'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-delaunay-0_3_1.flake = false;
   inputs.src-delaunay-0_3_1.owner = "Nycto";
-  inputs.src-delaunay-0_3_1.ref   = "refs/tags/0.3.1";
+  inputs.src-delaunay-0_3_1.ref   = "0_3_1";
   inputs.src-delaunay-0_3_1.repo  = "DelaunayNim";
   inputs.src-delaunay-0_3_1.type  = "github";
   

@@ -9,13 +9,14 @@
   
   inputs.src-drawim-0_1_0.flake = false;
   inputs.src-drawim-0_1_0.owner = "GabrielLasso";
-  inputs.src-drawim-0_1_0.ref   = "refs/tags/0.1.0";
+  inputs.src-drawim-0_1_0.ref   = "0_1_0";
   inputs.src-drawim-0_1_0.repo  = "drawim";
   inputs.src-drawim-0_1_0.type  = "github";
   
   inputs."staticglfw".owner = "nim-nix-pkgs";
   inputs."staticglfw".ref   = "master";
   inputs."staticglfw".repo  = "staticglfw";
+  inputs."staticglfw".dir   = "4_1_3";
   inputs."staticglfw".type  = "github";
   inputs."staticglfw".inputs.nixpkgs.follows = "nixpkgs";
   inputs."staticglfw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."jscanvas".owner = "nim-nix-pkgs";
   inputs."jscanvas".ref   = "master";
   inputs."jscanvas".repo  = "jscanvas";
+  inputs."jscanvas".dir   = "v0_1_0";
   inputs."jscanvas".type  = "github";
   inputs."jscanvas".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jscanvas".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

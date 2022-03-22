@@ -9,7 +9,7 @@
   
   inputs.src-diff-master.flake = false;
   inputs.src-diff-master.owner = "mark-summerfield";
-  inputs.src-diff-master.ref   = "refs/heads/master";
+  inputs.src-diff-master.ref   = "master";
   inputs.src-diff-master.repo  = "diff";
   inputs.src-diff-master.type  = "github";
   

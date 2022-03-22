@@ -1,5 +1,5 @@
 {
-  description = ''Database schema migration library for Nim language.'';
+  description = ''Database scheme migration library for Nim language'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-dbschema-master.flake = false;
   inputs.src-dbschema-master.owner = "vegansk";
-  inputs.src-dbschema-master.ref   = "refs/heads/master";
+  inputs.src-dbschema-master.ref   = "master";
   inputs.src-dbschema-master.repo  = "dbschema";
   inputs.src-dbschema-master.type  = "github";
   
   inputs."nimboost".owner = "nim-nix-pkgs";
   inputs."nimboost".ref   = "master";
   inputs."nimboost".repo  = "nimboost";
+  inputs."nimboost".dir   = "v0_5_5";
   inputs."nimboost".type  = "github";
   inputs."nimboost".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimboost".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."nimfp".owner = "nim-nix-pkgs";
   inputs."nimfp".ref   = "master";
   inputs."nimfp".repo  = "nimfp";
+  inputs."nimfp".dir   = "v0_4_4";
   inputs."nimfp".type  = "github";
   inputs."nimfp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimfp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

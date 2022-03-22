@@ -9,7 +9,7 @@
   
   inputs.src-db_presto-0_9_8.flake = false;
   inputs.src-db_presto-0_9_8.owner = "Bennyelg";
-  inputs.src-db_presto-0_9_8.ref   = "refs/tags/0.9.8";
+  inputs.src-db_presto-0_9_8.ref   = "0_9_8";
   inputs.src-db_presto-0_9_8.repo  = "nimPresto";
   inputs.src-db_presto-0_9_8.type  = "github";
   

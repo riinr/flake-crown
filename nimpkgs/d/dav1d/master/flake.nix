@@ -1,5 +1,5 @@
 {
-  description = ''A nimterop wrapper for the dav1d portable-and-fast AV1 video decoder'';
+  description = ''Nim wrapper for dav1d, a fast, portable av1 video decoder created by videolan and used by VLC and Netflix'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-dav1d-master.flake = false;
   inputs.src-dav1d-master.owner = "capocasa";
-  inputs.src-dav1d-master.ref   = "refs/heads/master";
+  inputs.src-dav1d-master.ref   = "master";
   inputs.src-dav1d-master.repo  = "nim-dav1d";
   inputs.src-dav1d-master.type  = "github";
   

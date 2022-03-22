@@ -9,7 +9,7 @@
   
   inputs.src-db_nimternalsql-main.flake = false;
   inputs.src-db_nimternalsql-main.owner = "rehartmann";
-  inputs.src-db_nimternalsql-main.ref   = "refs/heads/main";
+  inputs.src-db_nimternalsql-main.ref   = "main";
   inputs.src-db_nimternalsql-main.repo  = "nimternalsql";
   inputs.src-db_nimternalsql-main.type  = "github";
   

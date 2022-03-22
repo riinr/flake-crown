@@ -1,5 +1,5 @@
 {
-  description = ''prestodb simple connector'';
+  description = ''prestodb connector'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-db_presto-1_0_1.flake = false;
   inputs.src-db_presto-1_0_1.owner = "Bennyelg";
-  inputs.src-db_presto-1_0_1.ref   = "refs/tags/1.0.1";
+  inputs.src-db_presto-1_0_1.ref   = "1_0_1";
   inputs.src-db_presto-1_0_1.repo  = "nimPresto";
   inputs.src-db_presto-1_0_1.type  = "github";
   

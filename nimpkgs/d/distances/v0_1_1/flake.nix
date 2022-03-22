@@ -9,13 +9,14 @@
   
   inputs.src-distances-v0_1_1.flake = false;
   inputs.src-distances-v0_1_1.owner = "ayman-albaz";
-  inputs.src-distances-v0_1_1.ref   = "refs/tags/v0.1.1";
+  inputs.src-distances-v0_1_1.ref   = "v0_1_1";
   inputs.src-distances-v0_1_1.repo  = "distances";
   inputs.src-distances-v0_1_1.type  = "github";
   
   inputs."arraymancer".owner = "nim-nix-pkgs";
   inputs."arraymancer".ref   = "master";
   inputs."arraymancer".repo  = "arraymancer";
+  inputs."arraymancer".dir   = "v0_7_11";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."neo".owner = "nim-nix-pkgs";
   inputs."neo".ref   = "master";
   inputs."neo".repo  = "neo";
+  inputs."neo".dir   = "0_3_2";
   inputs."neo".type  = "github";
   inputs."neo".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neo".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

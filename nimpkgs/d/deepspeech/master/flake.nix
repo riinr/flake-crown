@@ -1,5 +1,5 @@
 {
-  description = ''Nim bindings for mozilla's DeepSpeech model.'';
+  description = ''DeepSpeech (Mozilla) bindings for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-deepspeech-master.flake = false;
   inputs.src-deepspeech-master.owner = "eagledot";
-  inputs.src-deepspeech-master.ref   = "refs/heads/master";
+  inputs.src-deepspeech-master.ref   = "master";
   inputs.src-deepspeech-master.repo  = "nim-deepspeech";
   inputs.src-deepspeech-master.type  = "gitlab";
   

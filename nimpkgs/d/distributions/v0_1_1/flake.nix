@@ -1,5 +1,5 @@
 {
-  description = ''Distributions is a Nim library for distributions and their functions.'';
+  description = ''Probability distributions and functions in Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-distributions-v0_1_1.flake = false;
   inputs.src-distributions-v0_1_1.owner = "ayman-albaz";
-  inputs.src-distributions-v0_1_1.ref   = "refs/tags/v0.1.1";
+  inputs.src-distributions-v0_1_1.ref   = "v0_1_1";
   inputs.src-distributions-v0_1_1.repo  = "distributions";
   inputs.src-distributions-v0_1_1.type  = "github";
   
   inputs."special_functions".owner = "nim-nix-pkgs";
   inputs."special_functions".ref   = "master";
   inputs."special_functions".repo  = "special_functions";
+  inputs."special_functions".dir   = "v0_1_1";
   inputs."special_functions".type  = "github";
   inputs."special_functions".inputs.nixpkgs.follows = "nixpkgs";
   inputs."special_functions".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

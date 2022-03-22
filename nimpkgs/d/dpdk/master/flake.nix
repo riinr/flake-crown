@@ -1,5 +1,5 @@
 {
-  description = ''Library for fast packet processing'';
+  description = ''Nim bindings to DPDK'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-dpdk-master.flake = false;
   inputs.src-dpdk-master.owner = "nimscale";
-  inputs.src-dpdk-master.ref   = "refs/heads/master";
+  inputs.src-dpdk-master.ref   = "master";
   inputs.src-dpdk-master.repo  = "dpdk";
   inputs.src-dpdk-master.type  = "github";
   

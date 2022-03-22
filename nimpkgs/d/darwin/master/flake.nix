@@ -1,5 +1,5 @@
 {
-  description = ''Bindings to MacOS and iOS frameworks'';
+  description = ''Collection of bindings to MacOS and iOS APIs'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-darwin-master.flake = false;
   inputs.src-darwin-master.owner = "yglukhov";
-  inputs.src-darwin-master.ref   = "refs/heads/master";
+  inputs.src-darwin-master.ref   = "master";
   inputs.src-darwin-master.repo  = "darwin";
   inputs.src-darwin-master.type  = "github";
   

@@ -9,13 +9,14 @@
   
   inputs.src-dnd-master.flake = false;
   inputs.src-dnd-master.owner = "adokitkat";
-  inputs.src-dnd-master.ref   = "refs/heads/master";
+  inputs.src-dnd-master.ref   = "master";
   inputs.src-dnd-master.repo  = "dnd";
   inputs.src-dnd-master.type  = "github";
   
   inputs."gintro".owner = "nim-nix-pkgs";
   inputs."gintro".ref   = "master";
   inputs."gintro".repo  = "gintro";
+  inputs."gintro".dir   = "";
   inputs."gintro".type  = "github";
   inputs."gintro".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gintro".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

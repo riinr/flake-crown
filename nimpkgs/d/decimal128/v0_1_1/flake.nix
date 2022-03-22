@@ -1,5 +1,5 @@
 {
-  description = ''Decimal type support based on the IEEE 754 2008 specification.'';
+  description = ''Decimal number type based on IEEE 754-2008'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-decimal128-v0_1_1.flake = false;
   inputs.src-decimal128-v0_1_1.owner = "JohnAD";
-  inputs.src-decimal128-v0_1_1.ref   = "refs/tags/v0.1.1";
+  inputs.src-decimal128-v0_1_1.ref   = "v0_1_1";
   inputs.src-decimal128-v0_1_1.repo  = "decimal128";
   inputs.src-decimal128-v0_1_1.type  = "github";
   

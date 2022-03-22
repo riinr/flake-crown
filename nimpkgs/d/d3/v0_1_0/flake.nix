@@ -1,5 +1,5 @@
 {
-  description = ''A D3.js wrapper for Nim'';
+  description = ''Nim bindings to D3js'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-d3-v0_1_0.flake = false;
   inputs.src-d3-v0_1_0.owner = "hiteshjasani";
-  inputs.src-d3-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-d3-v0_1_0.ref   = "v0_1_0";
   inputs.src-d3-v0_1_0.repo  = "nim-d3";
   inputs.src-d3-v0_1_0.type  = "github";
   
   inputs."jsbind".owner = "nim-nix-pkgs";
   inputs."jsbind".ref   = "master";
   inputs."jsbind".repo  = "jsbind";
+  inputs."jsbind".dir   = "";
   inputs."jsbind".type  = "github";
   inputs."jsbind".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsbind".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
