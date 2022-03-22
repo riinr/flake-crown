@@ -1,5 +1,5 @@
 {
-  description = ''Matrix library'';
+  description = ''Nim Matrix library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-manu-v2_2_1.flake = false;
   inputs.src-manu-v2_2_1.owner = "planetis-m";
-  inputs.src-manu-v2_2_1.ref   = "refs/tags/v2.2.1";
+  inputs.src-manu-v2_2_1.ref   = "v2_2_1";
   inputs.src-manu-v2_2_1.repo  = "manu";
   inputs.src-manu-v2_2_1.type  = "github";
   

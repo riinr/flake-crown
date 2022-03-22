@@ -1,5 +1,5 @@
 {
-  description = ''mofuw is *MO*re *F*aster, *U*ltra *W*ebserver'';
+  description = ''more faster, ultra performance webserver'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-mofuw-master.flake = false;
   inputs.src-mofuw-master.owner = "2vg";
-  inputs.src-mofuw-master.ref   = "refs/heads/master";
+  inputs.src-mofuw-master.ref   = "master";
   inputs.src-mofuw-master.repo  = "mofuw";
   inputs.src-mofuw-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''A command lined based text editor inspired by vi/vim'';
+  description = ''a command lined based text editor'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-moe-v0_0_3.flake = false;
   inputs.src-moe-v0_0_3.owner = "fox0430";
-  inputs.src-moe-v0_0_3.ref   = "refs/tags/v0.0.3";
+  inputs.src-moe-v0_0_3.ref   = "v0_0_3";
   inputs.src-moe-v0_0_3.repo  = "moe";
   inputs.src-moe-v0_0_3.type  = "github";
   
   inputs."ncurses".owner = "nim-nix-pkgs";
   inputs."ncurses".ref   = "master";
   inputs."ncurses".repo  = "ncurses";
+  inputs."ncurses".dir   = "";
   inputs."ncurses".type  = "github";
   inputs."ncurses".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ncurses".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."unicodedb".owner = "nim-nix-pkgs";
   inputs."unicodedb".ref   = "master";
   inputs."unicodedb".repo  = "unicodedb";
+  inputs."unicodedb".dir   = "v0_10_0";
   inputs."unicodedb".type  = "github";
   inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

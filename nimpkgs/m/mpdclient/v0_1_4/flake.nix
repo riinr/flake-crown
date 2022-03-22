@@ -9,7 +9,7 @@
   
   inputs.src-mpdclient-v0_1_4.flake = false;
   inputs.src-mpdclient-v0_1_4.owner = "SolitudeSF";
-  inputs.src-mpdclient-v0_1_4.ref   = "refs/tags/v0.1.4";
+  inputs.src-mpdclient-v0_1_4.ref   = "v0_1_4";
   inputs.src-mpdclient-v0_1_4.repo  = "mpdclient";
   inputs.src-mpdclient-v0_1_4.type  = "github";
   

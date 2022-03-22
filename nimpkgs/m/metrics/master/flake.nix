@@ -1,5 +1,5 @@
 {
-  description = ''Nim metrics client library supporting the Prometheus monitoring toolkit'';
+  description = ''Metrics client library supporting Prometheus'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-metrics-master.flake = false;
   inputs.src-metrics-master.owner = "status-im";
-  inputs.src-metrics-master.ref   = "refs/heads/master";
+  inputs.src-metrics-master.ref   = "master";
   inputs.src-metrics-master.repo  = "nim-metrics";
   inputs.src-metrics-master.type  = "github";
   
   inputs."chronos".owner = "nim-nix-pkgs";
   inputs."chronos".ref   = "master";
   inputs."chronos".repo  = "chronos";
+  inputs."chronos".dir   = "";
   inputs."chronos".type  = "github";
   inputs."chronos".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

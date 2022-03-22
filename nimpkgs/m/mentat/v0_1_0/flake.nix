@@ -1,5 +1,5 @@
 {
-  description = ''A Nim library for data science and machine learning'';
+  description = ''Machine learning library for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-mentat-v0_1_0.flake = false;
   inputs.src-mentat-v0_1_0.owner = "ruivieira";
-  inputs.src-mentat-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-mentat-v0_1_0.ref   = "v0_1_0";
   inputs.src-mentat-v0_1_0.repo  = "nim-mentat";
   inputs.src-mentat-v0_1_0.type  = "github";
   
   inputs."science".owner = "nim-nix-pkgs";
   inputs."science".ref   = "master";
   inputs."science".repo  = "science";
+  inputs."science".dir   = "v0_2_2";
   inputs."science".type  = "github";
   inputs."science".inputs.nixpkgs.follows = "nixpkgs";
   inputs."science".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -1,5 +1,5 @@
 {
-  description = ''A Beautiful Markdown Parser in the Nim World.'';
+  description = ''A Markdown Parser in Nimble World.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-markdown-v0_3_4.flake = false;
   inputs.src-markdown-v0_3_4.owner = "soasme";
-  inputs.src-markdown-v0_3_4.ref   = "refs/tags/v0.3.4";
+  inputs.src-markdown-v0_3_4.ref   = "v0_3_4";
   inputs.src-markdown-v0_3_4.repo  = "nim-markdown";
   inputs.src-markdown-v0_3_4.type  = "github";
   

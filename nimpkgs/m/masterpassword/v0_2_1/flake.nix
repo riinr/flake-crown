@@ -1,5 +1,5 @@
 {
-  description = ''Master Password algorith implementation'';
+  description = ''Master Password algorithm implementation'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-masterpassword-v0_2_1.flake = false;
   inputs.src-masterpassword-v0_2_1.owner = "SolitudeSF";
-  inputs.src-masterpassword-v0_2_1.ref   = "refs/tags/v0.2.1";
+  inputs.src-masterpassword-v0_2_1.ref   = "v0_2_1";
   inputs.src-masterpassword-v0_2_1.repo  = "masterpassword";
   inputs.src-masterpassword-v0_2_1.type  = "github";
   
   inputs."nimcrypto".owner = "nim-nix-pkgs";
   inputs."nimcrypto".ref   = "master";
   inputs."nimcrypto".repo  = "nimcrypto";
+  inputs."nimcrypto".dir   = "";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -9,13 +9,14 @@
   
   inputs.src-mycouch-0_2.flake = false;
   inputs.src-mycouch-0_2.owner = "hamidb80";
-  inputs.src-mycouch-0_2.ref   = "refs/tags/0.2";
+  inputs.src-mycouch-0_2.ref   = "0_2";
   inputs.src-mycouch-0_2.repo  = "mycouch";
   inputs.src-mycouch-0_2.type  = "github";
   
   inputs."macroutils".owner = "nim-nix-pkgs";
   inputs."macroutils".ref   = "master";
   inputs."macroutils".repo  = "macroutils";
+  inputs."macroutils".dir   = "v1_2_0";
   inputs."macroutils".type  = "github";
   inputs."macroutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."macroutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."macroplus".owner = "nim-nix-pkgs";
   inputs."macroplus".ref   = "master";
   inputs."macroplus".repo  = "macroplus";
+  inputs."macroplus".dir   = "0_1_22";
   inputs."macroplus".type  = "github";
   inputs."macroplus".inputs.nixpkgs.follows = "nixpkgs";
   inputs."macroplus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

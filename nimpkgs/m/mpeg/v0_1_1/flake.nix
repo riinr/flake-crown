@@ -1,5 +1,5 @@
 {
-  description = ''Nim wrapper for pl_mpeg single header mpeg library.'';
+  description = ''Wrapper for pl_mpeg single header mpeg library.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-mpeg-v0_1_1.flake = false;
   inputs.src-mpeg-v0_1_1.owner = "treeform";
-  inputs.src-mpeg-v0_1_1.ref   = "refs/tags/v0.1.1";
+  inputs.src-mpeg-v0_1_1.ref   = "v0_1_1";
   inputs.src-mpeg-v0_1_1.repo  = "mpeg";
   inputs.src-mpeg-v0_1_1.type  = "github";
   

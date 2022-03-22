@@ -9,13 +9,14 @@
   
   inputs.src-memviews-master.flake = false;
   inputs.src-memviews-master.owner = "ReneSac";
-  inputs.src-memviews-master.ref   = "refs/heads/master";
+  inputs.src-memviews-master.ref   = "master";
   inputs.src-memviews-master.repo  = "memviews";
   inputs.src-memviews-master.type  = "github";
   
   inputs."c_alikes".owner = "nim-nix-pkgs";
   inputs."c_alikes".ref   = "master";
   inputs."c_alikes".repo  = "c_alikes";
+  inputs."c_alikes".dir   = "v0_2_0";
   inputs."c_alikes".type  = "github";
   inputs."c_alikes".inputs.nixpkgs.follows = "nixpkgs";
   inputs."c_alikes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -1,5 +1,5 @@
 {
-  description = ''mccache package: in-memory caching'';
+  description = ''mccache package: in-memory caching - patched'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-mccache-master.flake = false;
   inputs.src-mccache-master.owner = "abbeymart";
-  inputs.src-mccache-master.ref   = "refs/heads/master";
+  inputs.src-mccache-master.ref   = "master";
   inputs.src-mccache-master.repo  = "mccache-nim";
   inputs.src-mccache-master.type  = "github";
   

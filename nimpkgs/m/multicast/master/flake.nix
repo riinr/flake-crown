@@ -1,5 +1,5 @@
 {
-  description = ''proc to join (and leave) a multicast group'';
+  description = ''join and leave multicast groups / broadcast'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-multicast-master.flake = false;
   inputs.src-multicast-master.owner = "enthus1ast";
-  inputs.src-multicast-master.ref   = "refs/heads/master";
+  inputs.src-multicast-master.ref   = "master";
   inputs.src-multicast-master.repo  = "nimMulticast";
   inputs.src-multicast-master.type  = "github";
   

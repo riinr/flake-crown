@@ -9,7 +9,7 @@
   
   inputs.src-mangle-master.flake = false;
   inputs.src-mangle-master.owner = "baabelfish";
-  inputs.src-mangle-master.ref   = "refs/heads/master";
+  inputs.src-mangle-master.ref   = "master";
   inputs.src-mangle-master.repo  = "mangle";
   inputs.src-mangle-master.type  = "github";
   

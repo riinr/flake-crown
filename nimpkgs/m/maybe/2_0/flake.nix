@@ -9,7 +9,7 @@
   
   inputs.src-maybe-2_0.flake = false;
   inputs.src-maybe-2_0.owner = "superfunc";
-  inputs.src-maybe-2_0.ref   = "refs/tags/2.0";
+  inputs.src-maybe-2_0.ref   = "2_0";
   inputs.src-maybe-2_0.repo  = "maybe";
   inputs.src-maybe-2_0.type  = "github";
   

@@ -9,13 +9,14 @@
   
   inputs.src-mcd-develop.flake = false;
   inputs.src-mcd-develop.owner = "malicious-commit-detector";
-  inputs.src-mcd-develop.ref   = "refs/heads/develop";
+  inputs.src-mcd-develop.ref   = "develop";
   inputs.src-mcd-develop.repo  = "mcd";
   inputs.src-mcd-develop.type  = "gitlab";
   
   inputs."parsetoml".owner = "nim-nix-pkgs";
   inputs."parsetoml".ref   = "master";
   inputs."parsetoml".repo  = "parsetoml";
+  inputs."parsetoml".dir   = "v0_6_0";
   inputs."parsetoml".type  = "github";
   inputs."parsetoml".inputs.nixpkgs.follows = "nixpkgs";
   inputs."parsetoml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."colorizeecho".owner = "nim-nix-pkgs";
   inputs."colorizeecho".ref   = "master";
   inputs."colorizeecho".repo  = "colorizeecho";
+  inputs."colorizeecho".dir   = "";
   inputs."colorizeecho".type  = "github";
   inputs."colorizeecho".inputs.nixpkgs.follows = "nixpkgs";
   inputs."colorizeecho".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

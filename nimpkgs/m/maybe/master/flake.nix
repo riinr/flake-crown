@@ -1,5 +1,5 @@
 {
-  description = ''basic monadic maybe type for Nim'';
+  description = ''A maybe type for nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-maybe-master.flake = false;
   inputs.src-maybe-master.owner = "superfunc";
-  inputs.src-maybe-master.ref   = "refs/heads/master";
+  inputs.src-maybe-master.ref   = "master";
   inputs.src-maybe-master.repo  = "maybe";
   inputs.src-maybe-master.type  = "github";
   

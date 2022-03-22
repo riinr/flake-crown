@@ -9,13 +9,14 @@
   
   inputs.src-mctranslog-v0_1_4.flake = false;
   inputs.src-mctranslog-v0_1_4.owner = "abbeymart";
-  inputs.src-mctranslog-v0_1_4.ref   = "refs/tags/v0.1.4";
+  inputs.src-mctranslog-v0_1_4.ref   = "v0_1_4";
   inputs.src-mctranslog-v0_1_4.repo  = "mctranslog";
   inputs.src-mctranslog-v0_1_4.type  = "github";
   
   inputs."mcresponse".owner = "nim-nix-pkgs";
   inputs."mcresponse".ref   = "master";
   inputs."mcresponse".repo  = "mcresponse";
+  inputs."mcresponse".dir   = "v0_3_0";
   inputs."mcresponse".type  = "github";
   inputs."mcresponse".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mcresponse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."mcdb".owner = "nim-nix-pkgs";
   inputs."mcdb".ref   = "master";
   inputs."mcdb".repo  = "mcdb";
+  inputs."mcdb".dir   = "";
   inputs."mcdb".type  = "github";
   inputs."mcdb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mcdb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

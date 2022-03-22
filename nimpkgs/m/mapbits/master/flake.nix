@@ -1,5 +1,5 @@
 {
-  description = ''Access bit mapped portions of bytes in binary data as int variables'';
+  description = ''Access binary mapped portions of bytes using int variables'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-mapbits-master.flake = false;
   inputs.src-mapbits-master.owner = "jlp765";
-  inputs.src-mapbits-master.ref   = "refs/heads/master";
+  inputs.src-mapbits-master.ref   = "master";
   inputs.src-mapbits-master.repo  = "mapbits";
   inputs.src-mapbits-master.type  = "github";
   

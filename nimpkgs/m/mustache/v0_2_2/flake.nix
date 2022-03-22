@@ -9,7 +9,7 @@
   
   inputs.src-mustache-v0_2_2.flake = false;
   inputs.src-mustache-v0_2_2.owner = "soasme";
-  inputs.src-mustache-v0_2_2.ref   = "refs/tags/v0.2.2";
+  inputs.src-mustache-v0_2_2.ref   = "v0_2_2";
   inputs.src-mustache-v0_2_2.repo  = "nim-mustache";
   inputs.src-mustache-v0_2_2.type  = "github";
   

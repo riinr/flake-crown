@@ -1,5 +1,5 @@
 {
-  description = ''dialect of Markdown in pure Nim with focus on HTML output'';
+  description = ''markdown dialect'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-marggers-v0_2_5.flake = false;
   inputs.src-marggers-v0_2_5.owner = "metagn";
-  inputs.src-marggers-v0_2_5.ref   = "refs/tags/v0.2.5";
+  inputs.src-marggers-v0_2_5.ref   = "v0_2_5";
   inputs.src-marggers-v0_2_5.repo  = "marggers";
   inputs.src-marggers-v0_2_5.type  = "github";
   

@@ -9,7 +9,7 @@
   
   inputs.src-minmaxheap-master.flake = false;
   inputs.src-minmaxheap-master.owner = "stefansalewski";
-  inputs.src-minmaxheap-master.ref   = "refs/heads/master";
+  inputs.src-minmaxheap-master.ref   = "master";
   inputs.src-minmaxheap-master.repo  = "minmaxheap";
   inputs.src-minmaxheap-master.type  = "github";
   

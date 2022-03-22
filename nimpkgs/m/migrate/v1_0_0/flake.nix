@@ -1,5 +1,5 @@
 {
-  description = ''A simple database migration utility for Nim.'';
+  description = ''A database migration tool written in Nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-migrate-v1_0_0.flake = false;
   inputs.src-migrate-v1_0_0.owner = "euantorano";
-  inputs.src-migrate-v1_0_0.ref   = "refs/tags/v1.0.0";
+  inputs.src-migrate-v1_0_0.ref   = "v1_0_0";
   inputs.src-migrate-v1_0_0.repo  = "migrate.nim";
   inputs.src-migrate-v1_0_0.type  = "github";
   
   inputs."docopt".owner = "nim-nix-pkgs";
   inputs."docopt".ref   = "master";
   inputs."docopt".repo  = "docopt";
+  inputs."docopt".dir   = "v0_6_8";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

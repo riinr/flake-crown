@@ -9,7 +9,7 @@
   
   inputs.src-min-v0_20_1.flake = false;
   inputs.src-min-v0_20_1.owner = "h3rald";
-  inputs.src-min-v0_20_1.ref   = "refs/tags/v0.20.1";
+  inputs.src-min-v0_20_1.ref   = "v0_20_1";
   inputs.src-min-v0_20_1.repo  = "min";
   inputs.src-min-v0_20_1.type  = "github";
   

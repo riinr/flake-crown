@@ -9,7 +9,7 @@
   
   inputs.src-mort-master.flake = false;
   inputs.src-mort-master.owner = "jyapayne";
-  inputs.src-mort-master.ref   = "refs/heads/master";
+  inputs.src-mort-master.ref   = "master";
   inputs.src-mort-master.repo  = "mort";
   inputs.src-mort-master.type  = "github";
   

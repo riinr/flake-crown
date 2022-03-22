@@ -9,13 +9,14 @@
   
   inputs.src-monocypher-v0_2_1.flake = false;
   inputs.src-monocypher-v0_2_1.owner = "markspanbroek";
-  inputs.src-monocypher-v0_2_1.ref   = "refs/tags/v0.2.1";
+  inputs.src-monocypher-v0_2_1.ref   = "v0_2_1";
   inputs.src-monocypher-v0_2_1.repo  = "monocypher.nim";
   inputs.src-monocypher-v0_2_1.type  = "github";
   
   inputs."nimterop".owner = "nim-nix-pkgs";
   inputs."nimterop".ref   = "master";
   inputs."nimterop".repo  = "nimterop";
+  inputs."nimterop".dir   = "v0_6_13";
   inputs."nimterop".type  = "github";
   inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."sysrandom".owner = "nim-nix-pkgs";
   inputs."sysrandom".ref   = "master";
   inputs."sysrandom".repo  = "sysrandom";
+  inputs."sysrandom".dir   = "v1_1_0";
   inputs."sysrandom".type  = "github";
   inputs."sysrandom".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sysrandom".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

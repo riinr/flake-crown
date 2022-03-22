@@ -9,7 +9,7 @@
   
   inputs.src-macroutils-master.flake = false;
   inputs.src-macroutils-master.owner = "PMunch";
-  inputs.src-macroutils-master.ref   = "refs/heads/master";
+  inputs.src-macroutils-master.ref   = "master";
   inputs.src-macroutils-master.repo  = "macroutils";
   inputs.src-macroutils-master.type  = "github";
   

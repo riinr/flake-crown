@@ -1,5 +1,5 @@
 {
-  description = ''Generated Nim's API docs in markdown for github's README.md files. Great for small libraries with simple APIs.'';
+  description = ''Generate Nim API docs in markdown for GitHub's README.md files.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-mddoc-0_0_4.flake = false;
   inputs.src-mddoc-0_0_4.owner = "treeform";
-  inputs.src-mddoc-0_0_4.ref   = "refs/tags/0.0.4";
+  inputs.src-mddoc-0_0_4.ref   = "0_0_4";
   inputs.src-mddoc-0_0_4.repo  = "mddoc";
   inputs.src-mddoc-0_0_4.type  = "github";
   

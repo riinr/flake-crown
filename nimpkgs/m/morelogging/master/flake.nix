@@ -9,7 +9,7 @@
   
   inputs.src-morelogging-master.flake = false;
   inputs.src-morelogging-master.owner = "FedericoCeratto";
-  inputs.src-morelogging-master.ref   = "refs/heads/master";
+  inputs.src-morelogging-master.ref   = "master";
   inputs.src-morelogging-master.repo  = "nim-morelogging";
   inputs.src-morelogging-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''a collection of useful macro functionalities'';
+  description = ''a collection of useful macro functionalities & enums'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-macroplus-0_1_17.flake = false;
   inputs.src-macroplus-0_1_17.owner = "hamidb80";
-  inputs.src-macroplus-0_1_17.ref   = "refs/tags/0.1.17";
+  inputs.src-macroplus-0_1_17.ref   = "0_1_17";
   inputs.src-macroplus-0_1_17.repo  = "macroplus";
   inputs.src-macroplus-0_1_17.type  = "github";
   

@@ -9,7 +9,7 @@
   
   inputs.src-memo-master.flake = false;
   inputs.src-memo-master.owner = "andreaferretti";
-  inputs.src-memo-master.ref   = "refs/heads/master";
+  inputs.src-memo-master.ref   = "master";
   inputs.src-memo-master.repo  = "memo";
   inputs.src-memo-master.type  = "github";
   

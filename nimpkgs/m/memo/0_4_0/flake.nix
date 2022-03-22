@@ -9,7 +9,7 @@
   
   inputs.src-memo-0_4_0.flake = false;
   inputs.src-memo-0_4_0.owner = "andreaferretti";
-  inputs.src-memo-0_4_0.ref   = "refs/tags/0.4.0";
+  inputs.src-memo-0_4_0.ref   = "0_4_0";
   inputs.src-memo-0_4_0.repo  = "memo";
   inputs.src-memo-0_4_0.type  = "github";
   

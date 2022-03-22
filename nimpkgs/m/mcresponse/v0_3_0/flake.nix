@@ -1,5 +1,5 @@
 {
-  description = ''mConnect Standardised Response Package'';
+  description = ''mConnect Standard HTTP network-status codes/texts & Transaction-Response Package'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-mcresponse-v0_3_0.flake = false;
   inputs.src-mcresponse-v0_3_0.owner = "abbeymart";
-  inputs.src-mcresponse-v0_3_0.ref   = "refs/tags/v0.3.0";
+  inputs.src-mcresponse-v0_3_0.ref   = "v0_3_0";
   inputs.src-mcresponse-v0_3_0.repo  = "mcresponse-nim";
   inputs.src-mcresponse-v0_3_0.type  = "github";
   

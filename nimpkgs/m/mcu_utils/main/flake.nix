@@ -9,13 +9,14 @@
   
   inputs.src-mcu_utils-main.flake = false;
   inputs.src-mcu_utils-main.owner = "EmbeddedNim";
-  inputs.src-mcu_utils-main.ref   = "refs/heads/main";
+  inputs.src-mcu_utils-main.ref   = "main";
   inputs.src-mcu_utils-main.repo  = "mcu_utils";
   inputs.src-mcu_utils-main.type  = "github";
   
   inputs."threading".owner = "nim-nix-pkgs";
   inputs."threading".ref   = "master";
   inputs."threading".repo  = "threading";
+  inputs."threading".dir   = "";
   inputs."threading".type  = "github";
   inputs."threading".inputs.nixpkgs.follows = "nixpkgs";
   inputs."threading".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

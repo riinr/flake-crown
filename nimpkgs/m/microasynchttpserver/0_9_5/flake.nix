@@ -9,13 +9,14 @@
   
   inputs.src-microasynchttpserver-0_9_5.flake = false;
   inputs.src-microasynchttpserver-0_9_5.owner = "philip-wernersbach";
-  inputs.src-microasynchttpserver-0_9_5.ref   = "refs/tags/0.9.5";
+  inputs.src-microasynchttpserver-0_9_5.ref   = "0_9_5";
   inputs.src-microasynchttpserver-0_9_5.repo  = "microasynchttpserver";
   inputs.src-microasynchttpserver-0_9_5.type  = "github";
   
   inputs."picohttpparser".owner = "nim-nix-pkgs";
   inputs."picohttpparser".ref   = "master";
   inputs."picohttpparser".repo  = "picohttpparser";
+  inputs."picohttpparser".dir   = "0_10_0";
   inputs."picohttpparser".type  = "github";
   inputs."picohttpparser".inputs.nixpkgs.follows = "nixpkgs";
   inputs."picohttpparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

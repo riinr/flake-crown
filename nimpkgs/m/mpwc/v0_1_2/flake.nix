@@ -9,7 +9,7 @@
   
   inputs.src-mpwc-v0_1_2.flake = false;
   inputs.src-mpwc-v0_1_2.owner = "SolitudeSF";
-  inputs.src-mpwc-v0_1_2.ref   = "refs/tags/v0.1.2";
+  inputs.src-mpwc-v0_1_2.ref   = "v0_1_2";
   inputs.src-mpwc-v0_1_2.repo  = "mpwc";
   inputs.src-mpwc-v0_1_2.type  = "github";
   

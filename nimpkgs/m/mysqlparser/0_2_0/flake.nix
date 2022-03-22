@@ -9,8 +9,8 @@
   
   inputs.src-mysqlparser-0_2_0.flake = false;
   inputs.src-mysqlparser-0_2_0.owner = "tulayang";
-  inputs.src-mysqlparser-0_2_0.ref   = "refs/tags/0.2.0";
-  inputs.src-mysqlparser-0_2_0.repo  = "mysqlparser";
+  inputs.src-mysqlparser-0_2_0.ref   = "0_2_0";
+  inputs.src-mysqlparser-0_2_0.repo  = "mysqlparser.git";
   inputs.src-mysqlparser-0_2_0.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

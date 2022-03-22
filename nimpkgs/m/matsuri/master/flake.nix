@@ -9,7 +9,7 @@
   
   inputs.src-matsuri-master.flake = false;
   inputs.src-matsuri-master.owner = "zer0-star";
-  inputs.src-matsuri-master.ref   = "refs/heads/master";
+  inputs.src-matsuri-master.ref   = "master";
   inputs.src-matsuri-master.repo  = "matsuri";
   inputs.src-matsuri-master.type  = "github";
   

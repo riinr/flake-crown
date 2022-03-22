@@ -1,5 +1,5 @@
 {
-  description = ''Bindings and a high-level interface for MongoDB'';
+  description = ''A MongoDB wrapper'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-mongo-master.flake = false;
   inputs.src-mongo-master.owner = "nim-lang";
-  inputs.src-mongo-master.ref   = "refs/heads/master";
+  inputs.src-mongo-master.ref   = "master";
   inputs.src-mongo-master.repo  = "mongo";
   inputs.src-mongo-master.type  = "github";
   

@@ -9,7 +9,7 @@
   
   inputs.src-murmur-master.flake = false;
   inputs.src-murmur-master.owner = "olahol";
-  inputs.src-murmur-master.ref   = "refs/heads/master";
+  inputs.src-murmur-master.ref   = "master";
   inputs.src-murmur-master.repo  = "nimrod-murmur";
   inputs.src-murmur-master.type  = "github";
   

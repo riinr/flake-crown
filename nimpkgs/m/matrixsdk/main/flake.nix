@@ -9,7 +9,7 @@
   
   inputs.src-matrixsdk-main.flake = false;
   inputs.src-matrixsdk-main.owner = "dylhack";
-  inputs.src-matrixsdk-main.ref   = "refs/heads/main";
+  inputs.src-matrixsdk-main.ref   = "main";
   inputs.src-matrixsdk-main.repo  = "matrix-nim-sdk";
   inputs.src-matrixsdk-main.type  = "github";
   

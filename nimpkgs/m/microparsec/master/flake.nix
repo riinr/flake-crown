@@ -9,13 +9,14 @@
   
   inputs.src-microparsec-master.flake = false;
   inputs.src-microparsec-master.owner = "schneiderfelipe";
-  inputs.src-microparsec-master.ref   = "refs/heads/master";
+  inputs.src-microparsec-master.ref   = "master";
   inputs.src-microparsec-master.repo  = "microparsec";
   inputs.src-microparsec-master.type  = "github";
   
   inputs."result".owner = "nim-nix-pkgs";
   inputs."result".ref   = "master";
   inputs."result".repo  = "result";
+  inputs."result".dir   = "";
   inputs."result".type  = "github";
   inputs."result".inputs.nixpkgs.follows = "nixpkgs";
   inputs."result".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

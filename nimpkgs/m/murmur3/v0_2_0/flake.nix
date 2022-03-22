@@ -1,5 +1,5 @@
 {
-  description = ''A simple MurmurHash3 wrapper for Nim'';
+  description = ''Simple Murmurhash3 wrapper (for strings only at the moment). MurmurHash code is by Austin Appleby and in the public domain.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-murmur3-v0_2_0.flake = false;
   inputs.src-murmur3-v0_2_0.owner = "boydgreenfield";
-  inputs.src-murmur3-v0_2_0.ref   = "refs/tags/v0.2.0";
+  inputs.src-murmur3-v0_2_0.ref   = "v0_2_0";
   inputs.src-murmur3-v0_2_0.repo  = "nimrod-murmur";
   inputs.src-murmur3-v0_2_0.type  = "github";
   

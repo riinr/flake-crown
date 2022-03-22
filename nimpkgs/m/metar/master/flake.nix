@@ -9,7 +9,7 @@
   
   inputs.src-metar-master.flake = false;
   inputs.src-metar-master.owner = "flenniken";
-  inputs.src-metar-master.ref   = "refs/heads/master";
+  inputs.src-metar-master.ref   = "master";
   inputs.src-metar-master.repo  = "metar";
   inputs.src-metar-master.type  = "github";
   

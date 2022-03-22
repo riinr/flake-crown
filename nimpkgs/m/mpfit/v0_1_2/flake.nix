@@ -1,5 +1,5 @@
 {
-  description = ''A wrapper for the cMPFIT non-linear least squares fitting library'';
+  description = ''Wrapper for the cMPFIT non-linear least squares fitting library (Levenberg-Marquardt)'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-mpfit-v0_1_2.flake = false;
   inputs.src-mpfit-v0_1_2.owner = "Vindaar";
-  inputs.src-mpfit-v0_1_2.ref   = "refs/tags/v0.1.2";
+  inputs.src-mpfit-v0_1_2.ref   = "v0_1_2";
   inputs.src-mpfit-v0_1_2.repo  = "nim-mpfit";
   inputs.src-mpfit-v0_1_2.type  = "github";
   

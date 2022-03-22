@@ -9,13 +9,14 @@
   
   inputs.src-mnemonic-v0_1_2.flake = false;
   inputs.src-mnemonic-v0_1_2.owner = "markspanbroek";
-  inputs.src-mnemonic-v0_1_2.ref   = "refs/tags/v0.1.2";
+  inputs.src-mnemonic-v0_1_2.ref   = "v0_1_2";
   inputs.src-mnemonic-v0_1_2.repo  = "mnemonic";
   inputs.src-mnemonic-v0_1_2.type  = "github";
   
   inputs."nimsha2".owner = "nim-nix-pkgs";
   inputs."nimsha2".ref   = "master";
   inputs."nimsha2".repo  = "nimsha2";
+  inputs."nimsha2".dir   = "";
   inputs."nimsha2".type  = "github";
   inputs."nimsha2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimsha2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

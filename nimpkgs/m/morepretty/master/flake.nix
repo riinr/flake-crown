@@ -1,5 +1,5 @@
 {
-  description = ''Morepretty - Does more than nimpretty.'';
+  description = ''morepretty - More pretty than nimpretty.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-morepretty-master.flake = false;
   inputs.src-morepretty-master.owner = "treeform";
-  inputs.src-morepretty-master.ref   = "refs/heads/master";
+  inputs.src-morepretty-master.ref   = "master";
   inputs.src-morepretty-master.repo  = "morepretty";
   inputs.src-morepretty-master.type  = "github";
   

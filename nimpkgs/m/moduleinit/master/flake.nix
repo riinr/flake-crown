@@ -9,7 +9,7 @@
   
   inputs.src-moduleinit-master.flake = false;
   inputs.src-moduleinit-master.owner = "skunkiferous";
-  inputs.src-moduleinit-master.ref   = "refs/heads/master";
+  inputs.src-moduleinit-master.ref   = "master";
   inputs.src-moduleinit-master.repo  = "moduleinit";
   inputs.src-moduleinit-master.type  = "github";
   

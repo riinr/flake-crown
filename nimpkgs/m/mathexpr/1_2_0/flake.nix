@@ -1,5 +1,5 @@
 {
-  description = ''MathExpr - pure-Nim mathematical expression evaluator library'';
+  description = ''MathExpr - tiny mathematical expression evaluator library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-mathexpr-1_2_0.flake = false;
   inputs.src-mathexpr-1_2_0.owner = "Yardanico";
-  inputs.src-mathexpr-1_2_0.ref   = "refs/tags/1.2.0";
+  inputs.src-mathexpr-1_2_0.ref   = "1_2_0";
   inputs.src-mathexpr-1_2_0.repo  = "nim-mathexpr";
   inputs.src-mathexpr-1_2_0.type  = "github";
   

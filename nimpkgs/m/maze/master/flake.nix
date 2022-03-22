@@ -9,7 +9,7 @@
   
   inputs.src-maze-master.flake = false;
   inputs.src-maze-master.owner = "jiro4989";
-  inputs.src-maze-master.ref   = "refs/heads/master";
+  inputs.src-maze-master.ref   = "master";
   inputs.src-maze-master.repo  = "maze";
   inputs.src-maze-master.type  = "github";
   

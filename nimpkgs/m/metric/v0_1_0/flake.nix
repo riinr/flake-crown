@@ -1,5 +1,5 @@
 {
-  description = ''Dimensionful types and dimensional analysis.'';
+  description = ''Unit types for Nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-metric-v0_1_0.flake = false;
   inputs.src-metric-v0_1_0.owner = "mjendrusch";
-  inputs.src-metric-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-metric-v0_1_0.ref   = "v0_1_0";
   inputs.src-metric-v0_1_0.repo  = "metric";
   inputs.src-metric-v0_1_0.type  = "github";
   

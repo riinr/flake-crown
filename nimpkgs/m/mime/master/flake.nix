@@ -1,5 +1,5 @@
 {
-  description = ''Library for attaching files to emails.'';
+  description = ''mime generator (email with attachments)'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-mime-master.flake = false;
   inputs.src-mime-master.owner = "enthus1ast";
-  inputs.src-mime-master.ref   = "refs/heads/master";
+  inputs.src-mime-master.ref   = "master";
   inputs.src-mime-master.repo  = "nimMime";
   inputs.src-mime-master.type  = "github";
   

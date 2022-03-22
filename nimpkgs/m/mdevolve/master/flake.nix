@@ -9,7 +9,7 @@
   
   inputs.src-mdevolve-master.flake = false;
   inputs.src-mdevolve-master.owner = "jxy";
-  inputs.src-mdevolve-master.ref   = "refs/heads/master";
+  inputs.src-mdevolve-master.ref   = "master";
   inputs.src-mdevolve-master.repo  = "MDevolve";
   inputs.src-mdevolve-master.type  = "github";
   

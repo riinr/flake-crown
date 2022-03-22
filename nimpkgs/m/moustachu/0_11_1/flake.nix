@@ -1,5 +1,5 @@
 {
-  description = ''Mustache templating for Nim.'';
+  description = ''Mustache templating for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-moustachu-0_11_1.flake = false;
   inputs.src-moustachu-0_11_1.owner = "fenekku";
-  inputs.src-moustachu-0_11_1.ref   = "refs/tags/0.11.1";
-  inputs.src-moustachu-0_11_1.repo  = "moustachu";
+  inputs.src-moustachu-0_11_1.ref   = "0_11_1";
+  inputs.src-moustachu-0_11_1.repo  = "moustachu.git";
   inputs.src-moustachu-0_11_1.type  = "github";
   
   inputs."commandeer".owner = "nim-nix-pkgs";
   inputs."commandeer".ref   = "master";
   inputs."commandeer".repo  = "commandeer";
+  inputs."commandeer".dir   = "0_12_3";
   inputs."commandeer".type  = "github";
   inputs."commandeer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."commandeer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

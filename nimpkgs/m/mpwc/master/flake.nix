@@ -9,13 +9,14 @@
   
   inputs.src-mpwc-master.flake = false;
   inputs.src-mpwc-master.owner = "SolitudeSF";
-  inputs.src-mpwc-master.ref   = "refs/heads/master";
+  inputs.src-mpwc-master.ref   = "master";
   inputs.src-mpwc-master.repo  = "mpwc";
   inputs.src-mpwc-master.type  = "github";
   
   inputs."masterpassword".owner = "nim-nix-pkgs";
   inputs."masterpassword".ref   = "master";
   inputs."masterpassword".repo  = "masterpassword";
+  inputs."masterpassword".dir   = "v0_2_1";
   inputs."masterpassword".type  = "github";
   inputs."masterpassword".inputs.nixpkgs.follows = "nixpkgs";
   inputs."masterpassword".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

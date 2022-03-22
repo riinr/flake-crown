@@ -9,7 +9,7 @@
   
   inputs.src-minhash-master.flake = false;
   inputs.src-minhash-master.owner = "bung87";
-  inputs.src-minhash-master.ref   = "refs/heads/master";
+  inputs.src-minhash-master.ref   = "master";
   inputs.src-minhash-master.repo  = "minhash";
   inputs.src-minhash-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Bindings for Miniz lib.'';
+  description = ''Wrapper for Miniz lib.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-miniz-v0_1_0.flake = false;
   inputs.src-miniz-v0_1_0.owner = "treeform";
-  inputs.src-miniz-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-miniz-v0_1_0.ref   = "v0_1_0";
   inputs.src-miniz-v0_1_0.repo  = "miniz";
   inputs.src-miniz-v0_1_0.type  = "github";
   

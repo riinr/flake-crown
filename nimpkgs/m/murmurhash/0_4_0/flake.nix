@@ -1,5 +1,5 @@
 {
-  description = ''Pure nim implementation of MurmurHash'';
+  description = ''Pure nim implementation of murmur hash'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-murmurhash-0_4_0.flake = false;
   inputs.src-murmurhash-0_4_0.owner = "cwpearson";
-  inputs.src-murmurhash-0_4_0.ref   = "refs/tags/0.4.0";
+  inputs.src-murmurhash-0_4_0.ref   = "0_4_0";
   inputs.src-murmurhash-0_4_0.repo  = "nim-murmurhash";
   inputs.src-murmurhash-0_4_0.type  = "github";
   

@@ -9,13 +9,14 @@
   
   inputs.src-monit-v1_2_3.flake = false;
   inputs.src-monit-v1_2_3.owner = "jiro4989";
-  inputs.src-monit-v1_2_3.ref   = "refs/tags/v1.2.3";
+  inputs.src-monit-v1_2_3.ref   = "v1_2_3";
   inputs.src-monit-v1_2_3.repo  = "monit";
   inputs.src-monit-v1_2_3.type  = "github";
   
   inputs."yaml".owner = "nim-nix-pkgs";
   inputs."yaml".ref   = "master";
   inputs."yaml".repo  = "yaml";
+  inputs."yaml".dir   = "v0_16_0";
   inputs."yaml".type  = "github";
   inputs."yaml".inputs.nixpkgs.follows = "nixpkgs";
   inputs."yaml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_21";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

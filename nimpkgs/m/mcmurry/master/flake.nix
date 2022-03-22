@@ -9,13 +9,14 @@
   
   inputs.src-mcmurry-master.flake = false;
   inputs.src-mcmurry-master.owner = "chocobo333";
-  inputs.src-mcmurry-master.ref   = "refs/heads/master";
+  inputs.src-mcmurry-master.ref   = "master";
   inputs.src-mcmurry-master.repo  = "mcmurry";
   inputs.src-mcmurry-master.type  = "github";
   
   inputs."asciitype".owner = "nim-nix-pkgs";
   inputs."asciitype".ref   = "master";
   inputs."asciitype".repo  = "asciitype";
+  inputs."asciitype".dir   = "";
   inputs."asciitype".type  = "github";
   inputs."asciitype".inputs.nixpkgs.follows = "nixpkgs";
   inputs."asciitype".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."ast_pattern_matching".owner = "nim-nix-pkgs";
   inputs."ast_pattern_matching".ref   = "master";
   inputs."ast_pattern_matching".repo  = "ast_pattern_matching";
+  inputs."ast_pattern_matching".dir   = "";
   inputs."ast_pattern_matching".type  = "github";
   inputs."ast_pattern_matching".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ast_pattern_matching".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."regex".owner = "nim-nix-pkgs";
   inputs."regex".ref   = "master";
   inputs."regex".repo  = "regex";
+  inputs."regex".dir   = "v0_19_0";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

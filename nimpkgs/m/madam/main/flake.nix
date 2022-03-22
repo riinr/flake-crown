@@ -9,7 +9,7 @@
   
   inputs.src-madam-main.flake = false;
   inputs.src-madam-main.owner = "openpeep";
-  inputs.src-madam-main.ref   = "refs/heads/main";
+  inputs.src-madam-main.ref   = "main";
   inputs.src-madam-main.repo  = "madam";
   inputs.src-madam-main.type  = "github";
   

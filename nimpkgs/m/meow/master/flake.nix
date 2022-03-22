@@ -9,13 +9,14 @@
   
   inputs.src-meow-master.flake = false;
   inputs.src-meow-master.owner = "disruptek";
-  inputs.src-meow-master.ref   = "refs/heads/master";
+  inputs.src-meow-master.ref   = "master";
   inputs.src-meow-master.repo  = "meow";
   inputs.src-meow-master.type  = "github";
   
   inputs."nimterop".owner = "nim-nix-pkgs";
   inputs."nimterop".ref   = "master";
   inputs."nimterop".repo  = "nimterop";
+  inputs."nimterop".dir   = "v0_6_13";
   inputs."nimterop".type  = "github";
   inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -9,7 +9,7 @@
   
   inputs.src-mpdclient-master.flake = false;
   inputs.src-mpdclient-master.owner = "SolitudeSF";
-  inputs.src-mpdclient-master.ref   = "refs/heads/master";
+  inputs.src-mpdclient-master.ref   = "master";
   inputs.src-mpdclient-master.repo  = "mpdclient";
   inputs.src-mpdclient-master.type  = "github";
   

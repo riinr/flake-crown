@@ -1,5 +1,5 @@
 {
-  description = ''MQTT wrapper for nim'';
+  description = ''Wrapper for libpaho-mqtt, a C library that communicates with an MQTT pub/sub server.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-mqtt-master.flake = false;
   inputs.src-mqtt-master.owner = "barnybug";
-  inputs.src-mqtt-master.ref   = "refs/heads/master";
+  inputs.src-mqtt-master.ref   = "master";
   inputs.src-mqtt-master.repo  = "nim-mqtt";
   inputs.src-mqtt-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Another MessagePack implementation written in pure nim'';
+  description = ''MessagePack serializer/deserializer implementation in nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-msgpack4nim-v0_3_0.flake = false;
   inputs.src-msgpack4nim-v0_3_0.owner = "jangko";
-  inputs.src-msgpack4nim-v0_3_0.ref   = "refs/tags/v0.3.0";
+  inputs.src-msgpack4nim-v0_3_0.ref   = "v0_3_0";
   inputs.src-msgpack4nim-v0_3_0.repo  = "msgpack4nim";
   inputs.src-msgpack4nim-v0_3_0.type  = "github";
   

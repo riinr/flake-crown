@@ -9,7 +9,7 @@
   
   inputs.src-murmur3-v0_1_2.flake = false;
   inputs.src-murmur3-v0_1_2.owner = "boydgreenfield";
-  inputs.src-murmur3-v0_1_2.ref   = "refs/tags/v0.1.2";
+  inputs.src-murmur3-v0_1_2.ref   = "v0_1_2";
   inputs.src-murmur3-v0_1_2.repo  = "nimrod-murmur";
   inputs.src-murmur3-v0_1_2.type  = "github";
   

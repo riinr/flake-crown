@@ -9,13 +9,14 @@
   
   inputs.src-microparsec-v0_1-alpha.flake = false;
   inputs.src-microparsec-v0_1-alpha.owner = "schneiderfelipe";
-  inputs.src-microparsec-v0_1-alpha.ref   = "refs/tags/v0.1-alpha";
+  inputs.src-microparsec-v0_1-alpha.ref   = "v0_1-alpha";
   inputs.src-microparsec-v0_1-alpha.repo  = "microparsec";
   inputs.src-microparsec-v0_1-alpha.type  = "github";
   
   inputs."result".owner = "nim-nix-pkgs";
   inputs."result".ref   = "master";
   inputs."result".repo  = "result";
+  inputs."result".dir   = "";
   inputs."result".type  = "github";
   inputs."result".inputs.nixpkgs.follows = "nixpkgs";
   inputs."result".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
