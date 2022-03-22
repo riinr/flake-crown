@@ -9,7 +9,7 @@
   
   inputs.src-jsonob-master.flake = false;
   inputs.src-jsonob-master.owner = "cjxgm";
-  inputs.src-jsonob-master.ref   = "refs/heads/master";
+  inputs.src-jsonob-master.ref   = "master";
   inputs.src-jsonob-master.repo  = "jsonob";
   inputs.src-jsonob-master.type  = "github";
   

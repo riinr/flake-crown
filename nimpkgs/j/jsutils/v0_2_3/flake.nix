@@ -9,7 +9,7 @@
   
   inputs.src-jsutils-v0_2_3.flake = false;
   inputs.src-jsutils-v0_2_3.owner = "kidandcat";
-  inputs.src-jsutils-v0_2_3.ref   = "refs/tags/v0.2.3";
+  inputs.src-jsutils-v0_2_3.ref   = "v0_2_3";
   inputs.src-jsutils-v0_2_3.repo  = "jsutils";
   inputs.src-jsutils-v0_2_3.type  = "github";
   

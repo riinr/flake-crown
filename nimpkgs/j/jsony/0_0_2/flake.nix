@@ -1,5 +1,5 @@
 {
-  description = ''A loose, direct to object json parser with hooks.'';
+  description = ''A loose direct to object json parser with hooks.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-jsony-0_0_2.flake = false;
   inputs.src-jsony-0_0_2.owner = "treeform";
-  inputs.src-jsony-0_0_2.ref   = "refs/tags/0.0.2";
+  inputs.src-jsony-0_0_2.ref   = "0_0_2";
   inputs.src-jsony-0_0_2.repo  = "jsony";
   inputs.src-jsony-0_0_2.type  = "github";
   

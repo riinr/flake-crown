@@ -1,5 +1,5 @@
 {
-  description = ''a wrapper for the Canvas API'';
+  description = ''A Nim wrapper for the Canvas API'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-jscanvas-master.flake = false;
   inputs.src-jscanvas-master.owner = "planetis-m";
-  inputs.src-jscanvas-master.ref   = "refs/heads/master";
+  inputs.src-jscanvas-master.ref   = "master";
   inputs.src-jscanvas-master.repo  = "jscanvas";
   inputs.src-jscanvas-master.type  = "github";
   

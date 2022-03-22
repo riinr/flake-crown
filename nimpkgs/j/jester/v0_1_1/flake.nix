@@ -9,7 +9,7 @@
   
   inputs.src-jester-v0_1_1.flake = false;
   inputs.src-jester-v0_1_1.owner = "dom96";
-  inputs.src-jester-v0_1_1.ref   = "refs/tags/v0.1.1";
+  inputs.src-jester-v0_1_1.ref   = "v0_1_1";
   inputs.src-jester-v0_1_1.repo  = "jester";
   inputs.src-jester-v0_1_1.type  = "github";
   

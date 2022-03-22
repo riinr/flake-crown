@@ -9,7 +9,7 @@
   
   inputs.src-jsmn-0_1_5.flake = false;
   inputs.src-jsmn-0_1_5.owner = "OpenSystemsLab";
-  inputs.src-jsmn-0_1_5.ref   = "refs/tags/0.1.5";
+  inputs.src-jsmn-0_1_5.ref   = "0_1_5";
   inputs.src-jsmn-0_1_5.repo  = "jsmn.nim";
   inputs.src-jsmn-0_1_5.type  = "github";
   

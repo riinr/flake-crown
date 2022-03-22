@@ -1,5 +1,5 @@
 {
-  description = ''Jalili <=> Gregorian date converter, originally a copy of http://jdf.scr.ir/'';
+  description = ''Jalali <=> Gregorian date converter, originally a copy of http://jdf.scr.ir/'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-jalali_nim-main.flake = false;
   inputs.src-jalali_nim-main.owner = "hamidb80";
-  inputs.src-jalali_nim-main.ref   = "refs/heads/main";
+  inputs.src-jalali_nim-main.ref   = "main";
   inputs.src-jalali_nim-main.repo  = "jalili-nim";
   inputs.src-jalali_nim-main.type  = "github";
   

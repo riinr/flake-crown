@@ -1,5 +1,5 @@
 {
-  description = ''Convert json to xml  : JsonNode( comapatible with  module json ) To  XmlNode (comapatible with  module  xmltree)'';
+  description = ''convert json to xml  : JsonNode( comapatible with  module json ) To  XmlNode (comapatible with  module  xmltree)'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-json2xml-main.flake = false;
   inputs.src-json2xml-main.owner = "MhedhebiIssam";
-  inputs.src-json2xml-main.ref   = "refs/heads/main";
+  inputs.src-json2xml-main.ref   = "main";
   inputs.src-json2xml-main.repo  = "json2xml";
   inputs.src-json2xml-main.type  = "github";
   

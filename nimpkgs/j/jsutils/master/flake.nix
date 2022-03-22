@@ -9,7 +9,7 @@
   
   inputs.src-jsutils-master.flake = false;
   inputs.src-jsutils-master.owner = "kidandcat";
-  inputs.src-jsutils-master.ref   = "refs/heads/master";
+  inputs.src-jsutils-master.ref   = "master";
   inputs.src-jsutils-master.repo  = "jsutils";
   inputs.src-jsutils-master.type  = "github";
   

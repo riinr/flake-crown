@@ -1,5 +1,5 @@
 {
-  description = ''Websockets wrapper for nim js backend.'';
+  description = ''Wrapper for js websockets'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-jswebsockets-master.flake = false;
   inputs.src-jswebsockets-master.owner = "stisa";
-  inputs.src-jswebsockets-master.ref   = "refs/heads/master";
+  inputs.src-jswebsockets-master.ref   = "master";
   inputs.src-jswebsockets-master.repo  = "jswebsockets";
   inputs.src-jswebsockets-master.type  = "github";
   

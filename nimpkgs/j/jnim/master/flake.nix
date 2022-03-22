@@ -1,5 +1,5 @@
 {
-  description = ''Nim - Java bridge'';
+  description = ''Java bridge for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-jnim-master.flake = false;
   inputs.src-jnim-master.owner = "yglukhov";
-  inputs.src-jnim-master.ref   = "refs/heads/master";
+  inputs.src-jnim-master.ref   = "master";
   inputs.src-jnim-master.repo  = "jnim";
   inputs.src-jnim-master.type  = "github";
   

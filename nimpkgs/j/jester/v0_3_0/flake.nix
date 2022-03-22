@@ -9,13 +9,14 @@
   
   inputs.src-jester-v0_3_0.flake = false;
   inputs.src-jester-v0_3_0.owner = "dom96";
-  inputs.src-jester-v0_3_0.ref   = "refs/tags/v0.3.0";
+  inputs.src-jester-v0_3_0.ref   = "v0_3_0";
   inputs.src-jester-v0_3_0.repo  = "jester";
   inputs.src-jester-v0_3_0.type  = "github";
   
   inputs."httpbeast".owner = "nim-nix-pkgs";
   inputs."httpbeast".ref   = "master";
   inputs."httpbeast".repo  = "httpbeast";
+  inputs."httpbeast".dir   = "v0_4_0";
   inputs."httpbeast".type  = "github";
   inputs."httpbeast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."httpbeast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."asynctools".owner = "nim-nix-pkgs";
   inputs."asynctools".ref   = "master";
   inputs."asynctools".repo  = "asynctools";
+  inputs."asynctools".dir   = "";
   inputs."asynctools".type  = "github";
   inputs."asynctools".inputs.nixpkgs.follows = "nixpkgs";
   inputs."asynctools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

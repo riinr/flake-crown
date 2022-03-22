@@ -9,7 +9,7 @@
   
   inputs.src-jesterwithplugins-v0_4_0.flake = false;
   inputs.src-jesterwithplugins-v0_4_0.owner = "JohnAD";
-  inputs.src-jesterwithplugins-v0_4_0.ref   = "refs/tags/v0.4.0";
+  inputs.src-jesterwithplugins-v0_4_0.ref   = "v0_4_0";
   inputs.src-jesterwithplugins-v0_4_0.repo  = "jesterwithplugins";
   inputs.src-jesterwithplugins-v0_4_0.type  = "github";
   

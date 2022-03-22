@@ -9,13 +9,14 @@
   
   inputs.src-jeknil-master.flake = false;
   inputs.src-jeknil-master.owner = "tonogram";
-  inputs.src-jeknil-master.ref   = "refs/heads/master";
+  inputs.src-jeknil-master.ref   = "master";
   inputs.src-jeknil-master.repo  = "jeknil";
   inputs.src-jeknil-master.type  = "github";
   
   inputs."markdown".owner = "nim-nix-pkgs";
   inputs."markdown".ref   = "master";
   inputs."markdown".repo  = "markdown";
+  inputs."markdown".dir   = "v0_8_5";
   inputs."markdown".type  = "github";
   inputs."markdown".inputs.nixpkgs.follows = "nixpkgs";
   inputs."markdown".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

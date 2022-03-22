@@ -9,13 +9,14 @@
   
   inputs.src-jester-v0_4_3.flake = false;
   inputs.src-jester-v0_4_3.owner = "dom96";
-  inputs.src-jester-v0_4_3.ref   = "refs/tags/v0.4.3";
+  inputs.src-jester-v0_4_3.ref   = "v0_4_3";
   inputs.src-jester-v0_4_3.repo  = "jester";
   inputs.src-jester-v0_4_3.type  = "github";
   
   inputs."httpbeast".owner = "nim-nix-pkgs";
   inputs."httpbeast".ref   = "master";
   inputs."httpbeast".repo  = "httpbeast";
+  inputs."httpbeast".dir   = "v0_4_0";
   inputs."httpbeast".type  = "github";
   inputs."httpbeast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."httpbeast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

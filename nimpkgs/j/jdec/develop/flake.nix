@@ -1,5 +1,5 @@
 {
-  description = ''Flexible JSON manshal/unmarshal library for nim'';
+  description = ''easy json helpers to marshal and unmarshal json'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-jdec-develop.flake = false;
   inputs.src-jdec-develop.owner = "diegogub";
-  inputs.src-jdec-develop.ref   = "refs/heads/develop";
+  inputs.src-jdec-develop.ref   = "develop";
   inputs.src-jdec-develop.repo  = "jdec";
   inputs.src-jdec-develop.type  = "github";
   

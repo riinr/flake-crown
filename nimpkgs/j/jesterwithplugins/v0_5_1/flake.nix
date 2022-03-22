@@ -1,5 +1,5 @@
 {
-  description = ''A sinatra-like web framework for Nim with plugins.'';
+  description = ''A sinatra-like web framework (with plugins).'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-jesterwithplugins-v0_5_1.flake = false;
   inputs.src-jesterwithplugins-v0_5_1.owner = "JohnAD";
-  inputs.src-jesterwithplugins-v0_5_1.ref   = "refs/tags/v0.5.1";
+  inputs.src-jesterwithplugins-v0_5_1.ref   = "v0_5_1";
   inputs.src-jesterwithplugins-v0_5_1.repo  = "jesterwithplugins";
   inputs.src-jesterwithplugins-v0_5_1.type  = "github";
   
   inputs."httpbeast".owner = "nim-nix-pkgs";
   inputs."httpbeast".ref   = "master";
   inputs."httpbeast".repo  = "httpbeast";
+  inputs."httpbeast".dir   = "v0_4_0";
   inputs."httpbeast".type  = "github";
   inputs."httpbeast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."httpbeast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

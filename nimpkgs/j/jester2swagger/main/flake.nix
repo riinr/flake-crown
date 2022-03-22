@@ -1,5 +1,5 @@
 {
-  description = ''Converts a file with Jester routes to Swagger JSON which can be imported in Postman.'';
+  description = ''Generate Swagger JSON from Jester-routes'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-jester2swagger-main.flake = false;
   inputs.src-jester2swagger-main.owner = "ThomasTJdev";
-  inputs.src-jester2swagger-main.ref   = "refs/heads/main";
+  inputs.src-jester2swagger-main.ref   = "main";
   inputs.src-jester2swagger-main.repo  = "jester2swagger";
   inputs.src-jester2swagger-main.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

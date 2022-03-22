@@ -1,5 +1,5 @@
 {
-  description = ''json de/serializer for tuples and more'';
+  description = ''json de/serializer for native data types'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-jser-0_2_1.flake = false;
   inputs.src-jser-0_2_1.owner = "niv";
-  inputs.src-jser-0_2_1.ref   = "refs/tags/0.2.1";
+  inputs.src-jser-0_2_1.ref   = "0_2_1";
   inputs.src-jser-0_2_1.repo  = "jser.nim";
   inputs.src-jser-0_2_1.type  = "github";
   

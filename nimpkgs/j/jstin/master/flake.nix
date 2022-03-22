@@ -9,7 +9,7 @@
   
   inputs.src-jstin-master.flake = false;
   inputs.src-jstin-master.owner = "nim-lang";
-  inputs.src-jstin-master.ref   = "refs/heads/master";
+  inputs.src-jstin-master.ref   = "master";
   inputs.src-jstin-master.repo  = "jstin";
   inputs.src-jstin-master.type  = "github";
   

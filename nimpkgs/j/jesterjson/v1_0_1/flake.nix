@@ -1,5 +1,5 @@
 {
-  description = ''A Jester web plugin that embeds key information into a JSON object.'';
+  description = ''A plugin for Jester that creates a json object and embeds the request object information.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-jesterjson-v1_0_1.flake = false;
   inputs.src-jesterjson-v1_0_1.owner = "JohnAD";
-  inputs.src-jesterjson-v1_0_1.ref   = "refs/tags/v1.0.1";
+  inputs.src-jesterjson-v1_0_1.ref   = "v1_0_1";
   inputs.src-jesterjson-v1_0_1.repo  = "jesterjson";
   inputs.src-jesterjson-v1_0_1.type  = "github";
   
   inputs."jesterwithplugins".owner = "nim-nix-pkgs";
   inputs."jesterwithplugins".ref   = "master";
   inputs."jesterwithplugins".repo  = "jesterwithplugins";
+  inputs."jesterwithplugins".dir   = "v0_5_2";
   inputs."jesterwithplugins".type  = "github";
   inputs."jesterwithplugins".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jesterwithplugins".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

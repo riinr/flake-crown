@@ -9,13 +9,14 @@
   
   inputs.src-jester-master.flake = false;
   inputs.src-jester-master.owner = "dom96";
-  inputs.src-jester-master.ref   = "refs/heads/master";
+  inputs.src-jester-master.ref   = "master";
   inputs.src-jester-master.repo  = "jester";
   inputs.src-jester-master.type  = "github";
   
   inputs."httpbeast".owner = "nim-nix-pkgs";
   inputs."httpbeast".ref   = "master";
   inputs."httpbeast".repo  = "httpbeast";
+  inputs."httpbeast".dir   = "v0_4_0";
   inputs."httpbeast".type  = "github";
   inputs."httpbeast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."httpbeast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

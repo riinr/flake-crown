@@ -9,8 +9,8 @@
   
   inputs.src-jhash-v0_1_2.flake = false;
   inputs.src-jhash-v0_1_2.owner = "mjfh";
-  inputs.src-jhash-v0_1_2.ref   = "refs/tags/v0.1.2";
-  inputs.src-jhash-v0_1_2.repo  = "nim-jhash";
+  inputs.src-jhash-v0_1_2.ref   = "v0_1_2";
+  inputs.src-jhash-v0_1_2.repo  = "nim-jhash.git";
   inputs.src-jhash-v0_1_2.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

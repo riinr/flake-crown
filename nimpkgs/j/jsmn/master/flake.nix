@@ -9,7 +9,7 @@
   
   inputs.src-jsmn-master.flake = false;
   inputs.src-jsmn-master.owner = "OpenSystemsLab";
-  inputs.src-jsmn-master.ref   = "refs/heads/master";
+  inputs.src-jsmn-master.ref   = "master";
   inputs.src-jsmn-master.repo  = "jsmn.nim";
   inputs.src-jsmn-master.type  = "github";
   

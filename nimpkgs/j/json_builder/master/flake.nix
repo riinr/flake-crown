@@ -9,7 +9,7 @@
   
   inputs.src-json_builder-master.flake = false;
   inputs.src-json_builder-master.owner = "undecided";
-  inputs.src-json_builder-master.ref   = "refs/heads/master";
+  inputs.src-json_builder-master.ref   = "master";
   inputs.src-json_builder-master.repo  = "json_builder";
   inputs.src-json_builder-master.type  = "github";
   
