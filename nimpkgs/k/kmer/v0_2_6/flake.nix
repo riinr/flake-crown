@@ -1,5 +1,5 @@
 {
-  description = ''encoded kmer library for fast operations on kmers up to 31'';
+  description = ''dna kmer ops for nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-kmer-v0_2_6.flake = false;
   inputs.src-kmer-v0_2_6.owner = "brentp";
-  inputs.src-kmer-v0_2_6.ref   = "refs/tags/v0.2.6";
+  inputs.src-kmer-v0_2_6.ref   = "v0_2_6";
   inputs.src-kmer-v0_2_6.repo  = "nim-kmer";
   inputs.src-kmer-v0_2_6.type  = "github";
   

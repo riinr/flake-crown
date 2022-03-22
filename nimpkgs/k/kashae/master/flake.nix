@@ -1,5 +1,5 @@
 {
-  description = ''Calculation caching library'';
+  description = ''Procedure caching library, aimed to replicate other language procedure caching'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-kashae-master.flake = false;
   inputs.src-kashae-master.owner = "beef331";
-  inputs.src-kashae-master.ref   = "refs/heads/master";
+  inputs.src-kashae-master.ref   = "master";
   inputs.src-kashae-master.repo  = "kashae";
   inputs.src-kashae-master.type  = "github";
   

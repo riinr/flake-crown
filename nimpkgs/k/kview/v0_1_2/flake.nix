@@ -9,13 +9,14 @@
   
   inputs.src-kview-v0_1_2.flake = false;
   inputs.src-kview-v0_1_2.owner = "planety";
-  inputs.src-kview-v0_1_2.ref   = "refs/tags/v0.1.2";
+  inputs.src-kview-v0_1_2.ref   = "v0_1_2";
   inputs.src-kview-v0_1_2.repo  = "kview";
   inputs.src-kview-v0_1_2.type  = "github";
   
   inputs."karax".owner = "nim-nix-pkgs";
   inputs."karax".ref   = "master";
   inputs."karax".repo  = "karax";
+  inputs."karax".dir   = "1_2_1";
   inputs."karax".type  = "github";
   inputs."karax".inputs.nixpkgs.follows = "nixpkgs";
   inputs."karax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

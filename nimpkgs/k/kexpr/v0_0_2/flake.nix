@@ -1,5 +1,5 @@
 {
-  description = ''wrapper for kexpr math expression evaluation library'';
+  description = ''math expression evaluator library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-kexpr-v0_0_2.flake = false;
   inputs.src-kexpr-v0_0_2.owner = "brentp";
-  inputs.src-kexpr-v0_0_2.ref   = "refs/tags/v0.0.2";
+  inputs.src-kexpr-v0_0_2.ref   = "v0_0_2";
   inputs.src-kexpr-v0_0_2.repo  = "kexpr-nim";
   inputs.src-kexpr-v0_0_2.type  = "github";
   

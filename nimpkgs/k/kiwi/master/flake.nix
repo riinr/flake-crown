@@ -9,7 +9,7 @@
   
   inputs.src-kiwi-master.flake = false;
   inputs.src-kiwi-master.owner = "yglukhov";
-  inputs.src-kiwi-master.ref   = "refs/heads/master";
+  inputs.src-kiwi-master.ref   = "master";
   inputs.src-kiwi-master.repo  = "kiwi";
   inputs.src-kiwi-master.type  = "github";
   

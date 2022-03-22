@@ -9,7 +9,7 @@
   
   inputs.src-karax-1_1_0.flake = false;
   inputs.src-karax-1_1_0.owner = "karaxnim";
-  inputs.src-karax-1_1_0.ref   = "refs/tags/1.1.0";
+  inputs.src-karax-1_1_0.ref   = "1_1_0";
   inputs.src-karax-1_1_0.repo  = "karax";
   inputs.src-karax-1_1_0.type  = "github";
   

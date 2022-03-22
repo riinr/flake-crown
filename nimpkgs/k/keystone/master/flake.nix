@@ -9,7 +9,7 @@
   
   inputs.src-keystone-master.flake = false;
   inputs.src-keystone-master.owner = "6A";
-  inputs.src-keystone-master.ref   = "refs/heads/master";
+  inputs.src-keystone-master.ref   = "master";
   inputs.src-keystone-master.repo  = "Keystone.nim";
   inputs.src-keystone-master.type  = "github";
   

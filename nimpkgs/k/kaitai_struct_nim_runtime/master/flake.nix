@@ -9,7 +9,7 @@
   
   inputs.src-kaitai_struct_nim_runtime-master.flake = false;
   inputs.src-kaitai_struct_nim_runtime-master.owner = "kaitai-io";
-  inputs.src-kaitai_struct_nim_runtime-master.ref   = "refs/heads/master";
+  inputs.src-kaitai_struct_nim_runtime-master.ref   = "master";
   inputs.src-kaitai_struct_nim_runtime-master.repo  = "kaitai_struct_nim_runtime";
   inputs.src-kaitai_struct_nim_runtime-master.type  = "github";
   

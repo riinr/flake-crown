@@ -9,13 +9,14 @@
   
   inputs.src-keccak_tiny-master.flake = false;
   inputs.src-keccak_tiny-master.owner = "status-im";
-  inputs.src-keccak_tiny-master.ref   = "refs/heads/master";
+  inputs.src-keccak_tiny-master.ref   = "master";
   inputs.src-keccak_tiny-master.repo  = "nim-keccak-tiny";
   inputs.src-keccak_tiny-master.type  = "github";
   
   inputs."ranges".owner = "nim-nix-pkgs";
   inputs."ranges".ref   = "master";
   inputs."ranges".repo  = "ranges";
+  inputs."ranges".dir   = "";
   inputs."ranges".type  = "github";
   inputs."ranges".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ranges".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

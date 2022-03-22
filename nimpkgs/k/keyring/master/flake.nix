@@ -1,5 +1,5 @@
 {
-  description = ''Cross-platform access to OS keychain'';
+  description = ''Cross-platform OS keyring interface'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-keyring-master.flake = false;
   inputs.src-keyring-master.owner = "iffy";
-  inputs.src-keyring-master.ref   = "refs/heads/master";
+  inputs.src-keyring-master.ref   = "master";
   inputs.src-keyring-master.repo  = "nim-keyring";
   inputs.src-keyring-master.type  = "github";
   
   inputs."dbus".owner = "nim-nix-pkgs";
   inputs."dbus".ref   = "master";
   inputs."dbus".repo  = "dbus";
+  inputs."dbus".dir   = "";
   inputs."dbus".type  = "github";
   inputs."dbus".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dbus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

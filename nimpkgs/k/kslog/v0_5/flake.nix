@@ -9,13 +9,14 @@
   
   inputs.src-kslog-v0_5.flake = false;
   inputs.src-kslog-v0_5.owner = "c-blake";
-  inputs.src-kslog-v0_5.ref   = "refs/tags/v0.5";
-  inputs.src-kslog-v0_5.repo  = "kslog";
+  inputs.src-kslog-v0_5.ref   = "v0_5";
+  inputs.src-kslog-v0_5.repo  = "kslog.git";
   inputs.src-kslog-v0_5.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
