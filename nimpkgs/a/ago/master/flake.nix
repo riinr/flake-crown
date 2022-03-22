@@ -9,7 +9,7 @@
   
   inputs.src-ago-master.flake = false;
   inputs.src-ago-master.owner = "daehee";
-  inputs.src-ago-master.ref   = "refs/heads/master";
+  inputs.src-ago-master.ref   = "master";
   inputs.src-ago-master.repo  = "ago";
   inputs.src-ago-master.type  = "github";
   

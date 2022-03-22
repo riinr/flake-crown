@@ -1,5 +1,5 @@
 {
-  description = ''AJAX wrapper for nim js backend.'';
+  description = ''Wrapper for js ajax'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-ajax-master.flake = false;
   inputs.src-ajax-master.owner = "stisa";
-  inputs.src-ajax-master.ref   = "refs/heads/master";
+  inputs.src-ajax-master.ref   = "master";
   inputs.src-ajax-master.repo  = "ajax";
   inputs.src-ajax-master.type  = "github";
   

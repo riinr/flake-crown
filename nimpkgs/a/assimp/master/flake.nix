@@ -9,7 +9,7 @@
   
   inputs.src-assimp-master.flake = false;
   inputs.src-assimp-master.owner = "barcharcraz";
-  inputs.src-assimp-master.ref   = "refs/heads/master";
+  inputs.src-assimp-master.ref   = "master";
   inputs.src-assimp-master.repo  = "nim-assimp";
   inputs.src-assimp-master.type  = "github";
   

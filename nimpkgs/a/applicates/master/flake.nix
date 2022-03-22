@@ -1,5 +1,5 @@
 {
-  description = ''"pointers" to cached AST that instantiate routines when called'';
+  description = ''instantiated "pointers" to cached AST'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-applicates-master.flake = false;
   inputs.src-applicates-master.owner = "metagn";
-  inputs.src-applicates-master.ref   = "refs/heads/master";
+  inputs.src-applicates-master.ref   = "master";
   inputs.src-applicates-master.repo  = "applicates";
   inputs.src-applicates-master.type  = "github";
   

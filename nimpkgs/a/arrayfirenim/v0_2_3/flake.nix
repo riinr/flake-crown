@@ -1,5 +1,5 @@
 {
-  description = ''A nim wrapper for ArrayFire'';
+  description = ''Arrayfire wrapper for nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-ArrayFireNim-v0_2_3.flake = false;
   inputs.src-ArrayFireNim-v0_2_3.owner = "bitstormGER";
-  inputs.src-ArrayFireNim-v0_2_3.ref   = "refs/tags/v0.2.3";
+  inputs.src-ArrayFireNim-v0_2_3.ref   = "v0_2_3";
   inputs.src-ArrayFireNim-v0_2_3.repo  = "ArrayFire-Nim";
   inputs.src-ArrayFireNim-v0_2_3.type  = "github";
   

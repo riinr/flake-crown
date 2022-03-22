@@ -9,13 +9,14 @@
   
   inputs.src-analytics-v0_2_0.flake = false;
   inputs.src-analytics-v0_2_0.owner = "dom96";
-  inputs.src-analytics-v0_2_0.ref   = "refs/tags/v0.2.0";
+  inputs.src-analytics-v0_2_0.ref   = "v0_2_0";
   inputs.src-analytics-v0_2_0.repo  = "analytics";
   inputs.src-analytics-v0_2_0.type  = "github";
   
   inputs."uuids".owner = "nim-nix-pkgs";
   inputs."uuids".ref   = "master";
   inputs."uuids".repo  = "uuids";
+  inputs."uuids".dir   = "v0_1_11";
   inputs."uuids".type  = "github";
   inputs."uuids".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uuids".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."osinfo".owner = "nim-nix-pkgs";
   inputs."osinfo".ref   = "master";
   inputs."osinfo".repo  = "osinfo";
+  inputs."osinfo".dir   = "v0_3_2";
   inputs."osinfo".type  = "github";
   inputs."osinfo".inputs.nixpkgs.follows = "nixpkgs";
   inputs."osinfo".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

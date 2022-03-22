@@ -9,13 +9,14 @@
   
   inputs.src-allographer-v0_19_2.flake = false;
   inputs.src-allographer-v0_19_2.owner = "itsumura-h";
-  inputs.src-allographer-v0_19_2.ref   = "refs/tags/v0.19.2";
+  inputs.src-allographer-v0_19_2.ref   = "v0_19_2";
   inputs.src-allographer-v0_19_2.repo  = "nim-allographer";
   inputs.src-allographer-v0_19_2.type  = "github";
   
   inputs."dotenv".owner = "nim-nix-pkgs";
   inputs."dotenv".ref   = "master";
   inputs."dotenv".repo  = "dotenv";
+  inputs."dotenv".dir   = "2_0_1";
   inputs."dotenv".type  = "github";
   inputs."dotenv".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dotenv".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -1,5 +1,5 @@
 {
-  description = ''Converts ANSI colour codes to HTML span tags with style tags'';
+  description = ''A library that converts a string with ANSI CSI SGR codes (colours and such) into a string with HTML tags'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-ansitohtml-master.flake = false;
   inputs.src-ansitohtml-master.owner = "PMunch";
-  inputs.src-ansitohtml-master.ref   = "refs/heads/master";
+  inputs.src-ansitohtml-master.ref   = "master";
   inputs.src-ansitohtml-master.repo  = "ansitohtml";
   inputs.src-ansitohtml-master.type  = "github";
   
   inputs."ansiparse".owner = "nim-nix-pkgs";
   inputs."ansiparse".ref   = "master";
   inputs."ansiparse".repo  = "ansiparse";
+  inputs."ansiparse".dir   = "v0_2_0";
   inputs."ansiparse".type  = "github";
   inputs."ansiparse".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ansiparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -9,7 +9,7 @@
   
   inputs.src-asynctest-0_2_0.flake = false;
   inputs.src-asynctest-0_2_0.owner = "markspanbroek";
-  inputs.src-asynctest-0_2_0.ref   = "refs/tags/0.2.0";
+  inputs.src-asynctest-0_2_0.ref   = "0_2_0";
   inputs.src-asynctest-0_2_0.repo  = "asynctest";
   inputs.src-asynctest-0_2_0.type  = "github";
   

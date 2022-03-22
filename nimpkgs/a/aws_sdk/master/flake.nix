@@ -1,5 +1,5 @@
 {
-  description = ''Library for interacting with Amazon Web Services (AWS)'';
+  description = ''AWS SDK for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-aws_sdk-master.flake = false;
   inputs.src-aws_sdk-master.owner = "aidansteele";
-  inputs.src-aws_sdk-master.ref   = "refs/heads/master";
+  inputs.src-aws_sdk-master.ref   = "master";
   inputs.src-aws_sdk-master.repo  = "aws_sdk.nim";
   inputs.src-aws_sdk-master.type  = "github";
   
   inputs."stringinterpolation".owner = "nim-nix-pkgs";
   inputs."stringinterpolation".ref   = "master";
   inputs."stringinterpolation".repo  = "stringinterpolation";
+  inputs."stringinterpolation".dir   = "";
   inputs."stringinterpolation".type  = "github";
   inputs."stringinterpolation".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stringinterpolation".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."sph".owner = "nim-nix-pkgs";
   inputs."sph".ref   = "master";
   inputs."sph".repo  = "sph";
+  inputs."sph".dir   = "";
   inputs."sph".type  = "github";
   inputs."sph".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sph".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

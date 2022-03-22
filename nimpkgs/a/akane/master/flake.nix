@@ -9,7 +9,7 @@
   
   inputs.src-akane-master.flake = false;
   inputs.src-akane-master.owner = "ethosa";
-  inputs.src-akane-master.ref   = "refs/heads/master";
+  inputs.src-akane-master.ref   = "master";
   inputs.src-akane-master.repo  = "akane";
   inputs.src-akane-master.type  = "github";
   

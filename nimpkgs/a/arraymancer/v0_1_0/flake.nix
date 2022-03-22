@@ -1,5 +1,5 @@
 {
-  description = ''A tensor (multidimensional array) library for Nim'';
+  description = ''A n-dimensional tensor (ndarray) library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-arraymancer-v0_1_0.flake = false;
   inputs.src-arraymancer-v0_1_0.owner = "mratsim";
-  inputs.src-arraymancer-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-arraymancer-v0_1_0.ref   = "v0_1_0";
   inputs.src-arraymancer-v0_1_0.repo  = "Arraymancer";
   inputs.src-arraymancer-v0_1_0.type  = "github";
   
   inputs."nimblas".owner = "nim-nix-pkgs";
   inputs."nimblas".ref   = "master";
   inputs."nimblas".repo  = "nimblas";
+  inputs."nimblas".dir   = "0_2_2";
   inputs."nimblas".type  = "github";
   inputs."nimblas".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimblas".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

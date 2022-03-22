@@ -1,5 +1,5 @@
 {
-  description = ''A nim wrapper for the Argon2 hashing library'';
+  description = ''A nim wrapper for Argon2'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-argon2-v1_0_0.flake = false;
   inputs.src-argon2-v1_0_0.owner = "Ahrotahn";
-  inputs.src-argon2-v1_0_0.ref   = "refs/tags/v1.0.0";
+  inputs.src-argon2-v1_0_0.ref   = "v1_0_0";
   inputs.src-argon2-v1_0_0.repo  = "argon2";
   inputs.src-argon2-v1_0_0.type  = "github";
   

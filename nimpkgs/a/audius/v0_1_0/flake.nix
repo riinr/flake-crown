@@ -1,5 +1,5 @@
 {
-  description = ''Audius is a simple client library for interacting with the Audius free API.'';
+  description = ''Audius API'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-audius-v0_1_0.flake = false;
   inputs.src-audius-v0_1_0.owner = "ceebeel";
-  inputs.src-audius-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-audius-v0_1_0.ref   = "v0_1_0";
   inputs.src-audius-v0_1_0.repo  = "audius";
   inputs.src-audius-v0_1_0.type  = "github";
   
   inputs."jsony".owner = "nim-nix-pkgs";
   inputs."jsony".ref   = "master";
   inputs."jsony".repo  = "jsony";
+  inputs."jsony".dir   = "1_1_3";
   inputs."jsony".type  = "github";
   inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

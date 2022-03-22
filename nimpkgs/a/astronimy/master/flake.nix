@@ -1,5 +1,5 @@
 {
-  description = ''Astronomical library for Nim'';
+  description = ''astronomical library for Nim programming language'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-AstroNimy-master.flake = false;
   inputs.src-AstroNimy-master.owner = "super-massive-black-holes";
-  inputs.src-AstroNimy-master.ref   = "refs/heads/master";
+  inputs.src-AstroNimy-master.ref   = "master";
   inputs.src-AstroNimy-master.repo  = "AstroNimy";
   inputs.src-AstroNimy-master.type  = "github";
   

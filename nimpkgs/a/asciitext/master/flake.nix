@@ -9,7 +9,7 @@
   
   inputs.src-asciitext-master.flake = false;
   inputs.src-asciitext-master.owner = "Himujjal";
-  inputs.src-asciitext-master.ref   = "refs/heads/master";
+  inputs.src-asciitext-master.ref   = "master";
   inputs.src-asciitext-master.repo  = "asciitextNim";
   inputs.src-asciitext-master.type  = "github";
   

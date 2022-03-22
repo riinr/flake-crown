@@ -9,7 +9,7 @@
   
   inputs.src-arduino-0_2_0.flake = false;
   inputs.src-arduino-0_2_0.owner = "markspanbroek";
-  inputs.src-arduino-0_2_0.ref   = "refs/tags/0.2.0";
+  inputs.src-arduino-0_2_0.ref   = "0_2_0";
   inputs.src-arduino-0_2_0.repo  = "nim-arduino";
   inputs.src-arduino-0_2_0.type  = "github";
   

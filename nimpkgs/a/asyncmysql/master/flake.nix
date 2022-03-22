@@ -1,5 +1,5 @@
 {
-  description = ''Asynchronous MySQL connector written in pure Nim'';
+  description = ''Asynchronous MySQL connector written in pure Nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-asyncmysql-master.flake = false;
   inputs.src-asyncmysql-master.owner = "tulayang";
-  inputs.src-asyncmysql-master.ref   = "refs/heads/master";
+  inputs.src-asyncmysql-master.ref   = "master";
   inputs.src-asyncmysql-master.repo  = "asyncmysql";
   inputs.src-asyncmysql-master.type  = "github";
   
   inputs."mysqlparser".owner = "nim-nix-pkgs";
   inputs."mysqlparser".ref   = "master";
   inputs."mysqlparser".repo  = "mysqlparser";
+  inputs."mysqlparser".dir   = "0_2_0";
   inputs."mysqlparser".type  = "github";
   inputs."mysqlparser".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mysqlparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

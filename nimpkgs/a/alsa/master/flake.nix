@@ -1,5 +1,5 @@
 {
-  description = ''NIM bindings for ALSA-LIB c library'';
+  description = ''C alsa-lib bindings for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-alsa-master.flake = false;
   inputs.src-alsa-master.owner = "eagledot";
-  inputs.src-alsa-master.ref   = "refs/heads/master";
+  inputs.src-alsa-master.ref   = "master";
   inputs.src-alsa-master.repo  = "nim-alsa";
   inputs.src-alsa-master.type  = "gitlab";
   

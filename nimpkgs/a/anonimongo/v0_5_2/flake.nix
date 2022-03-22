@@ -1,5 +1,5 @@
 {
-  description = ''ANOther pure NIm MONGO driver.'';
+  description = ''Anonimongo - Another pure Nim Mongo driver'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-anonimongo-v0_5_2.flake = false;
   inputs.src-anonimongo-v0_5_2.owner = "mashingan";
-  inputs.src-anonimongo-v0_5_2.ref   = "refs/tags/v0.5.2";
+  inputs.src-anonimongo-v0_5_2.ref   = "v0_5_2";
   inputs.src-anonimongo-v0_5_2.repo  = "anonimongo";
   inputs.src-anonimongo-v0_5_2.type  = "github";
   
   inputs."nimsha2".owner = "nim-nix-pkgs";
   inputs."nimsha2".ref   = "master";
   inputs."nimsha2".repo  = "nimsha2";
+  inputs."nimsha2".dir   = "";
   inputs."nimsha2".type  = "github";
   inputs."nimsha2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimsha2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."scram".owner = "nim-nix-pkgs";
   inputs."scram".ref   = "master";
   inputs."scram".repo  = "scram";
+  inputs."scram".dir   = "0_1_13";
   inputs."scram".type  = "github";
   inputs."scram".inputs.nixpkgs.follows = "nixpkgs";
   inputs."scram".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."sha1".owner = "nim-nix-pkgs";
   inputs."sha1".ref   = "master";
   inputs."sha1".repo  = "sha1";
+  inputs."sha1".dir   = "";
   inputs."sha1".type  = "github";
   inputs."sha1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sha1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -37,6 +40,7 @@
   inputs."dnsclient".owner = "nim-nix-pkgs";
   inputs."dnsclient".ref   = "master";
   inputs."dnsclient".repo  = "dnsclient";
+  inputs."dnsclient".dir   = "0_1_2";
   inputs."dnsclient".type  = "github";
   inputs."dnsclient".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dnsclient".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -44,6 +48,7 @@
   inputs."supersnappy".owner = "nim-nix-pkgs";
   inputs."supersnappy".ref   = "master";
   inputs."supersnappy".repo  = "supersnappy";
+  inputs."supersnappy".dir   = "2_1_1";
   inputs."supersnappy".type  = "github";
   inputs."supersnappy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."supersnappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -51,6 +56,7 @@
   inputs."zippy".owner = "nim-nix-pkgs";
   inputs."zippy".ref   = "master";
   inputs."zippy".repo  = "zippy";
+  inputs."zippy".dir   = "0_9_7";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

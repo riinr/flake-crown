@@ -9,13 +9,14 @@
   
   inputs.src-algebraicdatas-main.flake = false;
   inputs.src-algebraicdatas-main.owner = "chocobo333";
-  inputs.src-algebraicdatas-main.ref   = "refs/heads/main";
+  inputs.src-algebraicdatas-main.ref   = "main";
   inputs.src-algebraicdatas-main.repo  = "AlgebraicDataTypes";
   inputs.src-algebraicdatas-main.type  = "github";
   
   inputs."ast_pattern_matching".owner = "nim-nix-pkgs";
   inputs."ast_pattern_matching".ref   = "master";
   inputs."ast_pattern_matching".repo  = "ast_pattern_matching";
+  inputs."ast_pattern_matching".dir   = "";
   inputs."ast_pattern_matching".type  = "github";
   inputs."ast_pattern_matching".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ast_pattern_matching".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."macroutils".owner = "nim-nix-pkgs";
   inputs."macroutils".ref   = "master";
   inputs."macroutils".repo  = "macroutils";
+  inputs."macroutils".dir   = "v1_2_0";
   inputs."macroutils".type  = "github";
   inputs."macroutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."macroutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."optionsutils".owner = "nim-nix-pkgs";
   inputs."optionsutils".ref   = "master";
   inputs."optionsutils".repo  = "optionsutils";
+  inputs."optionsutils".dir   = "v1_2_0";
   inputs."optionsutils".type  = "github";
   inputs."optionsutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."optionsutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

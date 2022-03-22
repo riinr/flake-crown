@@ -1,5 +1,5 @@
 {
-  description = ''Nim bindings for libass.'';
+  description = ''libass bindings for nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-ass-master.flake = false;
   inputs.src-ass-master.owner = "0kalekale";
-  inputs.src-ass-master.ref   = "refs/heads/master";
+  inputs.src-ass-master.ref   = "master";
   inputs.src-ass-master.repo  = "libass-nim";
   inputs.src-ass-master.type  = "github";
   

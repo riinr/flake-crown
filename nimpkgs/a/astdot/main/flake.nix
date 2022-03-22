@@ -9,13 +9,14 @@
   
   inputs.src-astdot-main.flake = false;
   inputs.src-astdot-main.owner = "Rekihyt";
-  inputs.src-astdot-main.ref   = "refs/heads/main";
+  inputs.src-astdot-main.ref   = "main";
   inputs.src-astdot-main.repo  = "astdot";
   inputs.src-astdot-main.type  = "github";
   
   inputs."strings".owner = "nim-nix-pkgs";
   inputs."strings".ref   = "master";
   inputs."strings".repo  = "strings";
+  inputs."strings".dir   = "";
   inputs."strings".type  = "github";
   inputs."strings".inputs.nixpkgs.follows = "nixpkgs";
   inputs."strings".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."clapfn".owner = "nim-nix-pkgs";
   inputs."clapfn".ref   = "master";
   inputs."clapfn".repo  = "clapfn";
+  inputs."clapfn".dir   = "";
   inputs."clapfn".type  = "github";
   inputs."clapfn".inputs.nixpkgs.follows = "nixpkgs";
   inputs."clapfn".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."nimgraphviz".owner = "nim-nix-pkgs";
   inputs."nimgraphviz".ref   = "master";
   inputs."nimgraphviz".repo  = "nimgraphviz";
+  inputs."nimgraphviz".dir   = "v3_0";
   inputs."nimgraphviz".type  = "github";
   inputs."nimgraphviz".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimgraphviz".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

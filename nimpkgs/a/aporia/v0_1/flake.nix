@@ -9,7 +9,7 @@
   
   inputs.src-aporia-v0_1.flake = false;
   inputs.src-aporia-v0_1.owner = "nim-lang";
-  inputs.src-aporia-v0_1.ref   = "refs/tags/v0.1";
+  inputs.src-aporia-v0_1.ref   = "v0_1";
   inputs.src-aporia-v0_1.repo  = "Aporia";
   inputs.src-aporia-v0_1.type  = "github";
   

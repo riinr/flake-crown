@@ -9,13 +9,14 @@
   
   inputs.src-ad-master.flake = false;
   inputs.src-ad-master.owner = "subsetpark";
-  inputs.src-ad-master.ref   = "refs/heads/master";
+  inputs.src-ad-master.ref   = "master";
   inputs.src-ad-master.repo  = "ad";
   inputs.src-ad-master.type  = "github";
   
   inputs."bignum".owner = "nim-nix-pkgs";
   inputs."bignum".ref   = "master";
   inputs."bignum".repo  = "bignum";
+  inputs."bignum".dir   = "1_0_4";
   inputs."bignum".type  = "github";
   inputs."bignum".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bignum".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

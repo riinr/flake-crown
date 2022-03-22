@@ -1,5 +1,5 @@
 {
-  description = ''An Adaptive Index Library For Nim'';
+  description = ''An Adaptive Index Library for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-adix-master.flake = false;
   inputs.src-adix-master.owner = "c-blake";
-  inputs.src-adix-master.ref   = "refs/heads/master";
+  inputs.src-adix-master.ref   = "master";
   inputs.src-adix-master.repo  = "adix";
   inputs.src-adix-master.type  = "github";
   

@@ -9,13 +9,14 @@
   
   inputs.src-aporia-v0_4_1.flake = false;
   inputs.src-aporia-v0_4_1.owner = "nim-lang";
-  inputs.src-aporia-v0_4_1.ref   = "refs/tags/v0.4.1";
+  inputs.src-aporia-v0_4_1.ref   = "v0_4_1";
   inputs.src-aporia-v0_4_1.repo  = "Aporia";
   inputs.src-aporia-v0_4_1.type  = "github";
   
   inputs."gtk2".owner = "nim-nix-pkgs";
   inputs."gtk2".ref   = "master";
   inputs."gtk2".repo  = "gtk2";
+  inputs."gtk2".dir   = "";
   inputs."gtk2".type  = "github";
   inputs."gtk2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gtk2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."dialogs".owner = "nim-nix-pkgs";
   inputs."dialogs".ref   = "master";
   inputs."dialogs".repo  = "dialogs";
+  inputs."dialogs".dir   = "";
   inputs."dialogs".type  = "github";
   inputs."dialogs".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dialogs".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

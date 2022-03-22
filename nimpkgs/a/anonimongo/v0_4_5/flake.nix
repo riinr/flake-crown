@@ -1,5 +1,5 @@
 {
-  description = ''ANOther pure NIm MONGO driver.'';
+  description = ''Anonimongo - Another pure Nim Mongo driver'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-anonimongo-v0_4_5.flake = false;
   inputs.src-anonimongo-v0_4_5.owner = "mashingan";
-  inputs.src-anonimongo-v0_4_5.ref   = "refs/tags/v0.4.5";
+  inputs.src-anonimongo-v0_4_5.ref   = "v0_4_5";
   inputs.src-anonimongo-v0_4_5.repo  = "anonimongo";
   inputs.src-anonimongo-v0_4_5.type  = "github";
   
   inputs."nimsha2".owner = "nim-nix-pkgs";
   inputs."nimsha2".ref   = "master";
   inputs."nimsha2".repo  = "nimsha2";
+  inputs."nimsha2".dir   = "";
   inputs."nimsha2".type  = "github";
   inputs."nimsha2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimsha2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."scram".owner = "nim-nix-pkgs";
   inputs."scram".ref   = "master";
   inputs."scram".repo  = "scram";
+  inputs."scram".dir   = "0_1_13";
   inputs."scram".type  = "github";
   inputs."scram".inputs.nixpkgs.follows = "nixpkgs";
   inputs."scram".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."sha1".owner = "nim-nix-pkgs";
   inputs."sha1".ref   = "master";
   inputs."sha1".repo  = "sha1";
+  inputs."sha1".dir   = "";
   inputs."sha1".type  = "github";
   inputs."sha1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sha1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -37,6 +40,7 @@
   inputs."dnsclient".owner = "nim-nix-pkgs";
   inputs."dnsclient".ref   = "master";
   inputs."dnsclient".repo  = "dnsclient";
+  inputs."dnsclient".dir   = "";
   inputs."dnsclient".type  = "github";
   inputs."dnsclient".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dnsclient".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

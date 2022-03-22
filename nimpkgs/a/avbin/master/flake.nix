@@ -9,7 +9,7 @@
   
   inputs.src-avbin-master.flake = false;
   inputs.src-avbin-master.owner = "Vladar4";
-  inputs.src-avbin-master.ref   = "refs/heads/master";
+  inputs.src-avbin-master.ref   = "master";
   inputs.src-avbin-master.repo  = "avbin";
   inputs.src-avbin-master.type  = "github";
   

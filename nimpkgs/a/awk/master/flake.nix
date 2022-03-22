@@ -1,5 +1,5 @@
 {
-  description = ''Nim for awk programmers'';
+  description = ''A library of awk functions in nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-awk-master.flake = false;
   inputs.src-awk-master.owner = "greencardamom";
-  inputs.src-awk-master.ref   = "refs/heads/master";
+  inputs.src-awk-master.ref   = "master";
   inputs.src-awk-master.repo  = "awk";
   inputs.src-awk-master.type  = "github";
   
   inputs."nre".owner = "nim-nix-pkgs";
   inputs."nre".ref   = "master";
   inputs."nre".repo  = "nre";
+  inputs."nre".dir   = "2_0_2";
   inputs."nre".type  = "github";
   inputs."nre".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nre".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

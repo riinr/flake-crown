@@ -9,7 +9,7 @@
   
   inputs.src-adb-master.flake = false;
   inputs.src-adb-master.owner = "Yardanico";
-  inputs.src-adb-master.ref   = "refs/heads/master";
+  inputs.src-adb-master.ref   = "master";
   inputs.src-adb-master.repo  = "nim-adb";
   inputs.src-adb-master.type  = "github";
   

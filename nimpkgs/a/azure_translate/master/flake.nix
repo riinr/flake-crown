@@ -9,13 +9,14 @@
   
   inputs.src-azure_translate-master.flake = false;
   inputs.src-azure_translate-master.owner = "williamhatcher";
-  inputs.src-azure_translate-master.ref   = "refs/heads/master";
+  inputs.src-azure_translate-master.ref   = "master";
   inputs.src-azure_translate-master.repo  = "azure_translate";
   inputs.src-azure_translate-master.type  = "github";
   
   inputs."nuuid".owner = "nim-nix-pkgs";
   inputs."nuuid".ref   = "master";
   inputs."nuuid".repo  = "nuuid";
+  inputs."nuuid".dir   = "";
   inputs."nuuid".type  = "github";
   inputs."nuuid".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nuuid".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

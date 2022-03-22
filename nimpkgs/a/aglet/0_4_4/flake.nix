@@ -9,7 +9,7 @@
   
   inputs.src-aglet-0_4_4.flake = false;
   inputs.src-aglet-0_4_4.owner = "liquid600pgm";
-  inputs.src-aglet-0_4_4.ref   = "refs/tags/0.4.4";
+  inputs.src-aglet-0_4_4.ref   = "0_4_4";
   inputs.src-aglet-0_4_4.repo  = "aglet";
   inputs.src-aglet-0_4_4.type  = "github";
   

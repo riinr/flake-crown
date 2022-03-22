@@ -9,7 +9,7 @@
   
   inputs.src-autome-master.flake = false;
   inputs.src-autome-master.owner = "miere43";
-  inputs.src-autome-master.ref   = "refs/heads/master";
+  inputs.src-autome-master.ref   = "master";
   inputs.src-autome-master.repo  = "autome";
   inputs.src-autome-master.type  = "github";
   

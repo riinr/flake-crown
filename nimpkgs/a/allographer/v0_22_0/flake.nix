@@ -9,7 +9,7 @@
   
   inputs.src-allographer-v0_22_0.flake = false;
   inputs.src-allographer-v0_22_0.owner = "itsumura-h";
-  inputs.src-allographer-v0_22_0.ref   = "refs/tags/v0.22.0";
+  inputs.src-allographer-v0_22_0.ref   = "v0_22_0";
   inputs.src-allographer-v0_22_0.repo  = "nim-allographer";
   inputs.src-allographer-v0_22_0.type  = "github";
   

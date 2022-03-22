@@ -1,5 +1,5 @@
 {
-  description = ''make anything async [to be honest, fake async]'';
+  description = ''make anything async | always go async'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-asyncanything-main.flake = false;
   inputs.src-asyncanything-main.owner = "hamidb80";
-  inputs.src-asyncanything-main.ref   = "refs/heads/main";
+  inputs.src-asyncanything-main.ref   = "main";
   inputs.src-asyncanything-main.repo  = "asyncanything";
   inputs.src-asyncanything-main.type  = "github";
   

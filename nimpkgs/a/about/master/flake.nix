@@ -9,13 +9,14 @@
   
   inputs.src-about-master.flake = false;
   inputs.src-about-master.owner = "aleandros";
-  inputs.src-about-master.ref   = "refs/heads/master";
+  inputs.src-about-master.ref   = "master";
   inputs.src-about-master.repo  = "about";
   inputs.src-about-master.type  = "github";
   
   inputs."docopt".owner = "nim-nix-pkgs";
   inputs."docopt".ref   = "master";
   inputs."docopt".repo  = "docopt";
+  inputs."docopt".dir   = "v0_6_8";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

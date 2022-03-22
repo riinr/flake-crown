@@ -9,13 +9,14 @@
   
   inputs.src-alignment-1_0_0.flake = false;
   inputs.src-alignment-1_0_0.owner = "jiro4989";
-  inputs.src-alignment-1_0_0.ref   = "refs/tags/1.0.0";
+  inputs.src-alignment-1_0_0.ref   = "1_0_0";
   inputs.src-alignment-1_0_0.repo  = "alignment";
   inputs.src-alignment-1_0_0.type  = "github";
   
   inputs."eastasianwidth".owner = "nim-nix-pkgs";
   inputs."eastasianwidth".ref   = "master";
   inputs."eastasianwidth".repo  = "eastasianwidth";
+  inputs."eastasianwidth".dir   = "1_1_0";
   inputs."eastasianwidth".type  = "github";
   inputs."eastasianwidth".inputs.nixpkgs.follows = "nixpkgs";
   inputs."eastasianwidth".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -9,7 +9,7 @@
   
   inputs.src-awesome_rmdir-master.flake = false;
   inputs.src-awesome_rmdir-master.owner = "Araq";
-  inputs.src-awesome_rmdir-master.ref   = "refs/heads/master";
+  inputs.src-awesome_rmdir-master.ref   = "master";
   inputs.src-awesome_rmdir-master.repo  = "awesome_rmdir";
   inputs.src-awesome_rmdir-master.type  = "github";
   

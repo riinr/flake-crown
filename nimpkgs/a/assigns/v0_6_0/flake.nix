@@ -9,7 +9,7 @@
   
   inputs.src-assigns-v0_6_0.flake = false;
   inputs.src-assigns-v0_6_0.owner = "metagn";
-  inputs.src-assigns-v0_6_0.ref   = "refs/tags/v0.6.0";
+  inputs.src-assigns-v0_6_0.ref   = "v0_6_0";
   inputs.src-assigns-v0_6_0.repo  = "assigns";
   inputs.src-assigns-v0_6_0.type  = "github";
   

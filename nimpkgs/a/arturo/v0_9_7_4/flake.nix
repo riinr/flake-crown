@@ -9,7 +9,7 @@
   
   inputs.src-arturo-v0_9_7_4.flake = false;
   inputs.src-arturo-v0_9_7_4.owner = "arturo-lang";
-  inputs.src-arturo-v0_9_7_4.ref   = "refs/tags/v0.9.7.4";
+  inputs.src-arturo-v0_9_7_4.ref   = "v0_9_7_4";
   inputs.src-arturo-v0_9_7_4.repo  = "arturo";
   inputs.src-arturo-v0_9_7_4.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Control AnyBar instances with Nim'';
+  description = ''Anybar client written in Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,17 +9,17 @@
   
   inputs.src-Anybar-master.flake = false;
   inputs.src-Anybar-master.owner = "ba0f3";
-  inputs.src-Anybar-master.ref   = "refs/heads/master";
+  inputs.src-Anybar-master.ref   = "master";
   inputs.src-Anybar-master.repo  = "anybar.nim";
   inputs.src-Anybar-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-anybar-master"];
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-Anybar-master"];
   in lib.mkRefOutput {
     inherit self nixpkgs ;
-    src  = deps."src-anybar-master";
+    src  = deps."src-Anybar-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
   };

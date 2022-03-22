@@ -1,5 +1,5 @@
 {
-  description = ''ANSI art + MIDI music editor'';
+  description = ''ANSI art + MIDI music'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-ansiwave-0_2_0-windows.flake = false;
   inputs.src-ansiwave-0_2_0-windows.owner = "ansiwave";
-  inputs.src-ansiwave-0_2_0-windows.ref   = "refs/tags/0.2.0-windows";
+  inputs.src-ansiwave-0_2_0-windows.ref   = "0_2_0-windows";
   inputs.src-ansiwave-0_2_0-windows.repo  = "ansiwave";
   inputs.src-ansiwave-0_2_0-windows.type  = "github";
   
   inputs."pararules".owner = "nim-nix-pkgs";
   inputs."pararules".ref   = "master";
   inputs."pararules".repo  = "pararules";
+  inputs."pararules".dir   = "1_0_1";
   inputs."pararules".type  = "github";
   inputs."pararules".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pararules".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."paramidi".owner = "nim-nix-pkgs";
   inputs."paramidi".ref   = "master";
   inputs."paramidi".repo  = "paramidi";
+  inputs."paramidi".dir   = "0_6_0";
   inputs."paramidi".type  = "github";
   inputs."paramidi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."paramidi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."paramidi_soundfonts".owner = "nim-nix-pkgs";
   inputs."paramidi_soundfonts".ref   = "master";
   inputs."paramidi_soundfonts".repo  = "paramidi_soundfonts";
+  inputs."paramidi_soundfonts".dir   = "0_2_0";
   inputs."paramidi_soundfonts".type  = "github";
   inputs."paramidi_soundfonts".inputs.nixpkgs.follows = "nixpkgs";
   inputs."paramidi_soundfonts".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -37,6 +40,7 @@
   inputs."parasound".owner = "nim-nix-pkgs";
   inputs."parasound".ref   = "master";
   inputs."parasound".repo  = "parasound";
+  inputs."parasound".dir   = "1_0_0";
   inputs."parasound".type  = "github";
   inputs."parasound".inputs.nixpkgs.follows = "nixpkgs";
   inputs."parasound".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -44,6 +48,7 @@
   inputs."illwill".owner = "nim-nix-pkgs";
   inputs."illwill".ref   = "master";
   inputs."illwill".repo  = "illwill";
+  inputs."illwill".dir   = "v0_2_0";
   inputs."illwill".type  = "github";
   inputs."illwill".inputs.nixpkgs.follows = "nixpkgs";
   inputs."illwill".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -51,6 +56,7 @@
   inputs."zippy".owner = "nim-nix-pkgs";
   inputs."zippy".ref   = "master";
   inputs."zippy".repo  = "zippy";
+  inputs."zippy".dir   = "0_9_7";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

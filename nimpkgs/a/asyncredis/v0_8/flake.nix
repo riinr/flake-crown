@@ -9,13 +9,14 @@
   
   inputs.src-asyncredis-v0_8.flake = false;
   inputs.src-asyncredis-v0_8.owner = "Q-Master";
-  inputs.src-asyncredis-v0_8.ref   = "refs/tags/v0.8";
+  inputs.src-asyncredis-v0_8.ref   = "v0_8";
   inputs.src-asyncredis-v0_8.repo  = "redis.nim";
   inputs.src-asyncredis-v0_8.type  = "github";
   
   inputs."ptr_math".owner = "nim-nix-pkgs";
   inputs."ptr_math".ref   = "master";
   inputs."ptr_math".repo  = "ptr_math";
+  inputs."ptr_math".dir   = "v0_3_0";
   inputs."ptr_math".type  = "github";
   inputs."ptr_math".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ptr_math".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

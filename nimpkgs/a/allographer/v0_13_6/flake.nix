@@ -9,13 +9,14 @@
   
   inputs.src-allographer-v0_13_6.flake = false;
   inputs.src-allographer-v0_13_6.owner = "itsumura-h";
-  inputs.src-allographer-v0_13_6.ref   = "refs/tags/v0.13.6";
+  inputs.src-allographer-v0_13_6.ref   = "v0_13_6";
   inputs.src-allographer-v0_13_6.repo  = "nim-allographer";
   inputs.src-allographer-v0_13_6.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."progress".owner = "nim-nix-pkgs";
   inputs."progress".ref   = "master";
   inputs."progress".repo  = "progress";
+  inputs."progress".dir   = "v1_1_3";
   inputs."progress".type  = "github";
   inputs."progress".inputs.nixpkgs.follows = "nixpkgs";
   inputs."progress".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

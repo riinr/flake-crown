@@ -1,5 +1,5 @@
 {
-  description = ''Library to parse ANSI escape codes'';
+  description = ''A package to read data and parse it into ANSI escape characters'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-ansiparse-master.flake = false;
   inputs.src-ansiparse-master.owner = "PMunch";
-  inputs.src-ansiparse-master.ref   = "refs/heads/master";
+  inputs.src-ansiparse-master.ref   = "master";
   inputs.src-ansiparse-master.repo  = "ansiparse";
   inputs.src-ansiparse-master.type  = "github";
   

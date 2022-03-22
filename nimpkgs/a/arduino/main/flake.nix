@@ -9,7 +9,7 @@
   
   inputs.src-arduino-main.flake = false;
   inputs.src-arduino-main.owner = "markspanbroek";
-  inputs.src-arduino-main.ref   = "refs/heads/main";
+  inputs.src-arduino-main.ref   = "main";
   inputs.src-arduino-main.repo  = "nim-arduino";
   inputs.src-arduino-main.type  = "github";
   

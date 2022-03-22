@@ -9,7 +9,7 @@
   
   inputs.src-akane-v0_1_7.flake = false;
   inputs.src-akane-v0_1_7.owner = "ethosa";
-  inputs.src-akane-v0_1_7.ref   = "refs/tags/v0.1.7";
+  inputs.src-akane-v0_1_7.ref   = "v0_1_7";
   inputs.src-akane-v0_1_7.repo  = "akane";
   inputs.src-akane-v0_1_7.type  = "github";
   

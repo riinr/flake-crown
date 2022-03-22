@@ -9,13 +9,14 @@
   
   inputs.src-asyncredis-master.flake = false;
   inputs.src-asyncredis-master.owner = "Q-Master";
-  inputs.src-asyncredis-master.ref   = "refs/heads/master";
+  inputs.src-asyncredis-master.ref   = "master";
   inputs.src-asyncredis-master.repo  = "redis.nim";
   inputs.src-asyncredis-master.type  = "github";
   
   inputs."networkutils".owner = "nim-nix-pkgs";
   inputs."networkutils".ref   = "master";
   inputs."networkutils".repo  = "networkutils";
+  inputs."networkutils".dir   = "v0_3";
   inputs."networkutils".type  = "github";
   inputs."networkutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."networkutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

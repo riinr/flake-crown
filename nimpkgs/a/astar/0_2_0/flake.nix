@@ -1,5 +1,5 @@
 {
-  description = ''A* Pathfinding'';
+  description = ''Basic A-Star path finding'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-astar-0_2_0.flake = false;
   inputs.src-astar-0_2_0.owner = "Nycto";
-  inputs.src-astar-0_2_0.ref   = "refs/tags/0.2.0";
+  inputs.src-astar-0_2_0.ref   = "0_2_0";
   inputs.src-astar-0_2_0.repo  = "AStarNim";
   inputs.src-astar-0_2_0.type  = "github";
   
   inputs."binaryheap".owner = "nim-nix-pkgs";
   inputs."binaryheap".ref   = "master";
   inputs."binaryheap".repo  = "binaryheap";
+  inputs."binaryheap".dir   = "";
   inputs."binaryheap".type  = "github";
   inputs."binaryheap".inputs.nixpkgs.follows = "nixpkgs";
   inputs."binaryheap".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."optional_t".owner = "nim-nix-pkgs";
   inputs."optional_t".ref   = "master";
   inputs."optional_t".repo  = "optional_t";
+  inputs."optional_t".dir   = "1_2_0";
   inputs."optional_t".type  = "github";
   inputs."optional_t".inputs.nixpkgs.follows = "nixpkgs";
   inputs."optional_t".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

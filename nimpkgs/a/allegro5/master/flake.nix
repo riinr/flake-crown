@@ -9,7 +9,7 @@
   
   inputs.src-allegro5-master.flake = false;
   inputs.src-allegro5-master.owner = "fowlmouth";
-  inputs.src-allegro5-master.ref   = "refs/heads/master";
+  inputs.src-allegro5-master.ref   = "master";
   inputs.src-allegro5-master.repo  = "allegro5";
   inputs.src-allegro5-master.type  = "github";
   

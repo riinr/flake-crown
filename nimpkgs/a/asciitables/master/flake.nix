@@ -9,7 +9,7 @@
   
   inputs.src-asciitables-master.flake = false;
   inputs.src-asciitables-master.owner = "xmonader";
-  inputs.src-asciitables-master.ref   = "refs/heads/master";
+  inputs.src-asciitables-master.ref   = "master";
   inputs.src-asciitables-master.repo  = "nim-asciitables";
   inputs.src-asciitables-master.type  = "github";
   

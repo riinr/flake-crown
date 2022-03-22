@@ -1,5 +1,5 @@
 {
-  description = ''WIP strongly-typed argument parser with sub command support'';
+  description = ''A command line argument parser'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-argparse-v3_0_0.flake = false;
   inputs.src-argparse-v3_0_0.owner = "iffy";
-  inputs.src-argparse-v3_0_0.ref   = "refs/tags/v3.0.0";
+  inputs.src-argparse-v3_0_0.ref   = "v3_0_0";
   inputs.src-argparse-v3_0_0.repo  = "nim-argparse";
   inputs.src-argparse-v3_0_0.type  = "github";
   

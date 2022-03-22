@@ -9,13 +9,14 @@
   
   inputs.src-aglet-0_2_1.flake = false;
   inputs.src-aglet-0_2_1.owner = "liquid600pgm";
-  inputs.src-aglet-0_2_1.ref   = "refs/tags/0.2.1";
+  inputs.src-aglet-0_2_1.ref   = "0_2_1";
   inputs.src-aglet-0_2_1.repo  = "aglet";
   inputs.src-aglet-0_2_1.type  = "github";
   
   inputs."glm".owner = "nim-nix-pkgs";
   inputs."glm".ref   = "master";
   inputs."glm".repo  = "glm";
+  inputs."glm".dir   = "v1_1_1";
   inputs."glm".type  = "github";
   inputs."glm".inputs.nixpkgs.follows = "nixpkgs";
   inputs."glm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

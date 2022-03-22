@@ -9,7 +9,7 @@
   
   inputs.src-assigns-master.flake = false;
   inputs.src-assigns-master.owner = "metagn";
-  inputs.src-assigns-master.ref   = "refs/heads/master";
+  inputs.src-assigns-master.ref   = "master";
   inputs.src-assigns-master.repo  = "assigns";
   inputs.src-assigns-master.type  = "github";
   

@@ -9,13 +9,14 @@
   
   inputs.src-awsSTS-v1_0_1.flake = false;
   inputs.src-awsSTS-v1_0_1.owner = "ThomasTJdev";
-  inputs.src-awsSTS-v1_0_1.ref   = "refs/tags/v1.0.1";
+  inputs.src-awsSTS-v1_0_1.ref   = "v1_0_1";
   inputs.src-awsSTS-v1_0_1.repo  = "nim_awsSTS";
   inputs.src-awsSTS-v1_0_1.type  = "github";
   
   inputs."sigv4".owner = "nim-nix-pkgs";
   inputs."sigv4".ref   = "master";
   inputs."sigv4".repo  = "sigv4";
+  inputs."sigv4".dir   = "1_2_1";
   inputs."sigv4".type  = "github";
   inputs."sigv4".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sigv4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

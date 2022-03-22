@@ -9,13 +9,14 @@
   
   inputs.src-atoz-1_0_0.flake = false;
   inputs.src-atoz-1_0_0.owner = "disruptek";
-  inputs.src-atoz-1_0_0.ref   = "refs/tags/1.0.0";
+  inputs.src-atoz-1_0_0.ref   = "1_0_0";
   inputs.src-atoz-1_0_0.repo  = "atoz";
   inputs.src-atoz-1_0_0.type  = "github";
   
   inputs."openapi".owner = "nim-nix-pkgs";
   inputs."openapi".ref   = "master";
   inputs."openapi".repo  = "openapi";
+  inputs."openapi".dir   = "3_3_1";
   inputs."openapi".type  = "github";
   inputs."openapi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."openapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."sigv4".owner = "nim-nix-pkgs";
   inputs."sigv4".ref   = "master";
   inputs."sigv4".repo  = "sigv4";
+  inputs."sigv4".dir   = "1_4_0";
   inputs."sigv4".type  = "github";
   inputs."sigv4".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sigv4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
