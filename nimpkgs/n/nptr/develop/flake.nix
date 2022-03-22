@@ -9,7 +9,7 @@
   
   inputs.src-nptr-develop.flake = false;
   inputs.src-nptr-develop.owner = "henryas";
-  inputs.src-nptr-develop.ref   = "refs/heads/develop";
+  inputs.src-nptr-develop.ref   = "develop";
   inputs.src-nptr-develop.repo  = "nptr";
   inputs.src-nptr-develop.type  = "github";
   

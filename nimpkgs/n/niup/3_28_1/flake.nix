@@ -9,7 +9,7 @@
   
   inputs.src-niup-3_28_1.flake = false;
   inputs.src-niup-3_28_1.owner = "dariolah";
-  inputs.src-niup-3_28_1.ref   = "refs/tags/3.28.1";
+  inputs.src-niup-3_28_1.ref   = "3_28_1";
   inputs.src-niup-3_28_1.repo  = "niup";
   inputs.src-niup-3_28_1.type  = "github";
   

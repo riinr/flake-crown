@@ -9,13 +9,14 @@
   
   inputs.src-nimgame2-v0_5.flake = false;
   inputs.src-nimgame2-v0_5.owner = "Vladar4";
-  inputs.src-nimgame2-v0_5.ref   = "refs/tags/v0.5";
+  inputs.src-nimgame2-v0_5.ref   = "v0_5";
   inputs.src-nimgame2-v0_5.repo  = "nimgame2";
   inputs.src-nimgame2-v0_5.type  = "github";
   
   inputs."sdl2_nim".owner = "nim-nix-pkgs";
   inputs."sdl2_nim".ref   = "master";
   inputs."sdl2_nim".repo  = "sdl2_nim";
+  inputs."sdl2_nim".dir   = "";
   inputs."sdl2_nim".type  = "github";
   inputs."sdl2_nim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sdl2_nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

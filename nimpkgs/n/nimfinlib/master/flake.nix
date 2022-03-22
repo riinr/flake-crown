@@ -9,7 +9,7 @@
   
   inputs.src-nimFinLib-master.flake = false;
   inputs.src-nimFinLib-master.owner = "qqtop";
-  inputs.src-nimFinLib-master.ref   = "refs/heads/master";
+  inputs.src-nimFinLib-master.ref   = "master";
   inputs.src-nimFinLib-master.repo  = "NimFinLib";
   inputs.src-nimFinLib-master.type  = "github";
   

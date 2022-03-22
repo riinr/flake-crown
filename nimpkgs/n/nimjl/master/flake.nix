@@ -9,13 +9,14 @@
   
   inputs.src-nimjl-master.flake = false;
   inputs.src-nimjl-master.owner = "Clonkk";
-  inputs.src-nimjl-master.ref   = "refs/heads/master";
+  inputs.src-nimjl-master.ref   = "master";
   inputs.src-nimjl-master.repo  = "nimjl";
   inputs.src-nimjl-master.type  = "github";
   
   inputs."arraymancer".owner = "nim-nix-pkgs";
   inputs."arraymancer".ref   = "master";
   inputs."arraymancer".repo  = "arraymancer";
+  inputs."arraymancer".dir   = "v0_7_11";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

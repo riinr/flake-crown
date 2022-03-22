@@ -9,13 +9,14 @@
   
   inputs.src-nimgram-v0_1_0.flake = false;
   inputs.src-nimgram-v0_1_0.owner = "nimgram";
-  inputs.src-nimgram-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-nimgram-v0_1_0.ref   = "v0_1_0";
   inputs.src-nimgram-v0_1_0.repo  = "nimgram";
   inputs.src-nimgram-v0_1_0.type  = "github";
   
   inputs."zippy".owner = "nim-nix-pkgs";
   inputs."zippy".ref   = "master";
   inputs."zippy".repo  = "zippy";
+  inputs."zippy".dir   = "0_9_7";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."nimcrypto".owner = "nim-nix-pkgs";
   inputs."nimcrypto".ref   = "master";
   inputs."nimcrypto".repo  = "nimcrypto";
+  inputs."nimcrypto".dir   = "";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."stint".owner = "nim-nix-pkgs";
   inputs."stint".ref   = "master";
   inputs."stint".repo  = "stint";
+  inputs."stint".dir   = "";
   inputs."stint".type  = "github";
   inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -37,6 +40,7 @@
   inputs."gmp".owner = "nim-nix-pkgs";
   inputs."gmp".ref   = "master";
   inputs."gmp".repo  = "gmp";
+  inputs."gmp".dir   = "v0_2_5";
   inputs."gmp".type  = "github";
   inputs."gmp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gmp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

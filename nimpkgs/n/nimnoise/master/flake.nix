@@ -9,7 +9,7 @@
   
   inputs.src-nimnoise-master.flake = false;
   inputs.src-nimnoise-master.owner = "blakeanedved";
-  inputs.src-nimnoise-master.ref   = "refs/heads/master";
+  inputs.src-nimnoise-master.ref   = "master";
   inputs.src-nimnoise-master.repo  = "nimnoise";
   inputs.src-nimnoise-master.type  = "github";
   

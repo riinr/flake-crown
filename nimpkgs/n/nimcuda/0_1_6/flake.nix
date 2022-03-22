@@ -1,5 +1,5 @@
 {
-  description = ''CUDA bindings'';
+  description = ''Nim binding for CUDA'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimcuda-0_1_6.flake = false;
   inputs.src-nimcuda-0_1_6.owner = "andreaferretti";
-  inputs.src-nimcuda-0_1_6.ref   = "refs/tags/0.1.6";
+  inputs.src-nimcuda-0_1_6.ref   = "0_1_6";
   inputs.src-nimcuda-0_1_6.repo  = "nimcuda";
   inputs.src-nimcuda-0_1_6.type  = "github";
   

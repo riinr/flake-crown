@@ -1,5 +1,5 @@
 {
-  description = ''Module for working with rational numbers (fractions)'';
+  description = ''Rational arithmetic module for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimrat-v0_1.flake = false;
   inputs.src-nimrat-v0_1.owner = "apense";
-  inputs.src-nimrat-v0_1.ref   = "refs/tags/v0.1";
+  inputs.src-nimrat-v0_1.ref   = "v0_1";
   inputs.src-nimrat-v0_1.repo  = "nimrat";
   inputs.src-nimrat-v0_1.type  = "github";
   

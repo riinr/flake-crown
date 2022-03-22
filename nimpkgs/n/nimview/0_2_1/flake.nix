@@ -9,13 +9,14 @@
   
   inputs.src-nimview-0_2_1.flake = false;
   inputs.src-nimview-0_2_1.owner = "marcomq";
-  inputs.src-nimview-0_2_1.ref   = "refs/tags/0.2.1";
+  inputs.src-nimview-0_2_1.ref   = "0_2_1";
   inputs.src-nimview-0_2_1.repo  = "nimview";
   inputs.src-nimview-0_2_1.type  = "github";
   
   inputs."nimpy".owner = "nim-nix-pkgs";
   inputs."nimpy".ref   = "master";
   inputs."nimpy".repo  = "nimpy";
+  inputs."nimpy".dir   = "";
   inputs."nimpy".type  = "github";
   inputs."nimpy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."webview".owner = "nim-nix-pkgs";
   inputs."webview".ref   = "master";
   inputs."webview".repo  = "webview";
+  inputs."webview".dir   = "";
   inputs."webview".type  = "github";
   inputs."webview".inputs.nixpkgs.follows = "nixpkgs";
   inputs."webview".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."nake".owner = "nim-nix-pkgs";
   inputs."nake".ref   = "master";
   inputs."nake".repo  = "nake";
+  inputs."nake".dir   = "1_9_4";
   inputs."nake".type  = "github";
   inputs."nake".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nake".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

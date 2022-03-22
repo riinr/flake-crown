@@ -9,7 +9,7 @@
   
   inputs.src-nimbug-0_1_1.flake = false;
   inputs.src-nimbug-0_1_1.owner = "juancarlospaco";
-  inputs.src-nimbug-0_1_1.ref   = "refs/tags/0.1.1";
+  inputs.src-nimbug-0_1_1.ref   = "0_1_1";
   inputs.src-nimbug-0_1_1.repo  = "nimbug";
   inputs.src-nimbug-0_1_1.type  = "github";
   

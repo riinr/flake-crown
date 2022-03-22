@@ -1,5 +1,5 @@
 {
-  description = ''PEG (Parsing Expression Grammars) string matching library for Nim'';
+  description = ''a PEG library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-npeg-0_15_0.flake = false;
   inputs.src-npeg-0_15_0.owner = "zevv";
-  inputs.src-npeg-0_15_0.ref   = "refs/tags/0.15.0";
+  inputs.src-npeg-0_15_0.ref   = "0_15_0";
   inputs.src-npeg-0_15_0.repo  = "npeg";
   inputs.src-npeg-0_15_0.type  = "github";
   

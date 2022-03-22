@@ -9,13 +9,14 @@
   
   inputs.src-nimboost-v0_5_0.flake = false;
   inputs.src-nimboost-v0_5_0.owner = "vegansk";
-  inputs.src-nimboost-v0_5_0.ref   = "refs/tags/v0.5.0";
+  inputs.src-nimboost-v0_5_0.ref   = "v0_5_0";
   inputs.src-nimboost-v0_5_0.repo  = "nimboost";
   inputs.src-nimboost-v0_5_0.type  = "github";
   
   inputs."patty".owner = "nim-nix-pkgs";
   inputs."patty".ref   = "master";
   inputs."patty".repo  = "patty";
+  inputs."patty".dir   = "0_3_4";
   inputs."patty".type  = "github";
   inputs."patty".inputs.nixpkgs.follows = "nixpkgs";
   inputs."patty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

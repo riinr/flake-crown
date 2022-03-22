@@ -9,7 +9,7 @@
   
   inputs.src-nimhttpd-v1_0_3.flake = false;
   inputs.src-nimhttpd-v1_0_3.owner = "h3rald";
-  inputs.src-nimhttpd-v1_0_3.ref   = "refs/tags/v1.0.3";
+  inputs.src-nimhttpd-v1_0_3.ref   = "v1_0_3";
   inputs.src-nimhttpd-v1_0_3.repo  = "nimhttpd";
   inputs.src-nimhttpd-v1_0_3.type  = "github";
   

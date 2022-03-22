@@ -9,7 +9,7 @@
   
   inputs.src-nmi-master.flake = false;
   inputs.src-nmi-master.owner = "jiro4989";
-  inputs.src-nmi-master.ref   = "refs/heads/master";
+  inputs.src-nmi-master.ref   = "master";
   inputs.src-nmi-master.repo  = "nmi";
   inputs.src-nmi-master.type  = "github";
   

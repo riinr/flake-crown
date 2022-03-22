@@ -1,5 +1,5 @@
 {
-  description = ''A macro for generating [de]serializers for given objects'';
+  description = ''NESM stands for Nim's Easy Serialization Macro. The macro allowing generation of serialization functions by one line of code!'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,8 +9,8 @@
   
   inputs.src-nesm-v0_4_8.flake = false;
   inputs.src-nesm-v0_4_8.owner = "xomachine";
-  inputs.src-nesm-v0_4_8.ref   = "refs/tags/v0.4.8";
-  inputs.src-nesm-v0_4_8.repo  = "NESM";
+  inputs.src-nesm-v0_4_8.ref   = "v0_4_8";
+  inputs.src-nesm-v0_4_8.repo  = "NESM.git";
   inputs.src-nesm-v0_4_8.type  = "gitlab";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

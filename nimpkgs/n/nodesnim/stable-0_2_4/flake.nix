@@ -9,7 +9,7 @@
   
   inputs.src-nodesnim-stable-0_2_4.flake = false;
   inputs.src-nodesnim-stable-0_2_4.owner = "Ethosa";
-  inputs.src-nodesnim-stable-0_2_4.ref   = "refs/tags/stable-0.2.4";
+  inputs.src-nodesnim-stable-0_2_4.ref   = "stable-0_2_4";
   inputs.src-nodesnim-stable-0_2_4.repo  = "nodesnim";
   inputs.src-nodesnim-stable-0_2_4.type  = "github";
   

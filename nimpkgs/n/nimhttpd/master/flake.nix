@@ -9,7 +9,7 @@
   
   inputs.src-nimhttpd-master.flake = false;
   inputs.src-nimhttpd-master.owner = "h3rald";
-  inputs.src-nimhttpd-master.ref   = "refs/heads/master";
+  inputs.src-nimhttpd-master.ref   = "master";
   inputs.src-nimhttpd-master.repo  = "nimhttpd";
   inputs.src-nimhttpd-master.type  = "github";
   

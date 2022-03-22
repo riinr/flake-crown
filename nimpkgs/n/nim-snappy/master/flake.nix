@@ -9,7 +9,7 @@
   
   inputs.src-nim-snappy-master.flake = false;
   inputs.src-nim-snappy-master.owner = "status-im";
-  inputs.src-nim-snappy-master.ref   = "refs/heads/master";
+  inputs.src-nim-snappy-master.ref   = "master";
   inputs.src-nim-snappy-master.repo  = "nim-snappy";
   inputs.src-nim-snappy-master.type  = "github";
   

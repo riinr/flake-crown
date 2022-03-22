@@ -1,5 +1,5 @@
 {
-  description = ''Nim implementation of linenoise command line editor'';
+  description = ''noise is a Nim implementation of linenoise'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-noise-v0_1_14.flake = false;
   inputs.src-noise-v0_1_14.owner = "jangko";
-  inputs.src-noise-v0_1_14.ref   = "refs/tags/v0.1.14";
+  inputs.src-noise-v0_1_14.ref   = "v0_1_14";
   inputs.src-noise-v0_1_14.repo  = "nim-noise";
   inputs.src-noise-v0_1_14.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Nico game engine'';
+  description = ''Nico Game Engine'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nico-main.flake = false;
   inputs.src-nico-main.owner = "ftsf";
-  inputs.src-nico-main.ref   = "refs/heads/main";
+  inputs.src-nico-main.ref   = "main";
   inputs.src-nico-main.repo  = "nico";
   inputs.src-nico-main.type  = "github";
   
   inputs."sdl2_nim".owner = "nim-nix-pkgs";
   inputs."sdl2_nim".ref   = "master";
   inputs."sdl2_nim".repo  = "sdl2_nim";
+  inputs."sdl2_nim".dir   = "v2_0_14_3";
   inputs."sdl2_nim".type  = "github";
   inputs."sdl2_nim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sdl2_nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."gifenc".owner = "nim-nix-pkgs";
   inputs."gifenc".ref   = "master";
   inputs."gifenc".repo  = "gifenc";
+  inputs."gifenc".dir   = "";
   inputs."gifenc".type  = "github";
   inputs."gifenc".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gifenc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."nimpng".owner = "nim-nix-pkgs";
   inputs."nimpng".ref   = "master";
   inputs."nimpng".repo  = "nimpng";
+  inputs."nimpng".dir   = "v0_3_1";
   inputs."nimpng".type  = "github";
   inputs."nimpng".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpng".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -37,6 +40,7 @@
   inputs."zippy".owner = "nim-nix-pkgs";
   inputs."zippy".ref   = "master";
   inputs."zippy".repo  = "zippy";
+  inputs."zippy".dir   = "0_9_7";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

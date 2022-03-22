@@ -1,5 +1,5 @@
 {
-  description = ''Nim wrapper for rofi, open fabrics interface; provides distributed computing interface for high performance computing (HPC) environments'';
+  description = ''nim rofi (rust openfabrics interface) wrapper'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nofi-main.flake = false;
   inputs.src-nofi-main.owner = "ct-clmsn";
-  inputs.src-nofi-main.ref   = "refs/heads/main";
+  inputs.src-nofi-main.ref   = "main";
   inputs.src-nofi-main.repo  = "nofi";
   inputs.src-nofi-main.type  = "github";
   

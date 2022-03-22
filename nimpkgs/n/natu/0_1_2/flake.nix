@@ -9,7 +9,7 @@
   
   inputs.src-natu-0_1_2.flake = false;
   inputs.src-natu-0_1_2.owner = "exelotl";
-  inputs.src-natu-0_1_2.ref   = "refs/tags/0.1.2";
+  inputs.src-natu-0_1_2.ref   = "0_1_2";
   inputs.src-natu-0_1_2.repo  = "natu";
   inputs.src-natu-0_1_2.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Easy websocket with chronos support'';
+  description = ''Simple WebSocket library for nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-news-master.flake = false;
   inputs.src-news-master.owner = "tormund";
-  inputs.src-news-master.ref   = "refs/heads/master";
+  inputs.src-news-master.ref   = "master";
   inputs.src-news-master.repo  = "news";
   inputs.src-news-master.type  = "github";
   

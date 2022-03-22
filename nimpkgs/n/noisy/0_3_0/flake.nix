@@ -1,5 +1,5 @@
 {
-  description = ''SIMD-accelerated noise generation (Simplex, Perlin).'';
+  description = ''Nim implementation of various noise types.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-noisy-0_3_0.flake = false;
   inputs.src-noisy-0_3_0.owner = "guzba";
-  inputs.src-noisy-0_3_0.ref   = "refs/tags/0.3.0";
+  inputs.src-noisy-0_3_0.ref   = "0_3_0";
   inputs.src-noisy-0_3_0.repo  = "noisy";
   inputs.src-noisy-0_3_0.type  = "github";
   

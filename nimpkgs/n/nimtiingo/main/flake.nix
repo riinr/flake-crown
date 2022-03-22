@@ -9,7 +9,7 @@
   
   inputs.src-nimTiingo-main.flake = false;
   inputs.src-nimTiingo-main.owner = "rolandgg";
-  inputs.src-nimTiingo-main.ref   = "refs/heads/main";
+  inputs.src-nimTiingo-main.ref   = "main";
   inputs.src-nimTiingo-main.repo  = "nimTiingo";
   inputs.src-nimTiingo-main.type  = "github";
   

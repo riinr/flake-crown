@@ -1,5 +1,5 @@
 {
-  description = ''Nim ORM.'';
+  description = ''ORM that doesn't try to outsmart you.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-norm-1_0_8.flake = false;
   inputs.src-norm-1_0_8.owner = "moigagoo";
-  inputs.src-norm-1_0_8.ref   = "refs/tags/1.0.8";
+  inputs.src-norm-1_0_8.ref   = "1_0_8";
   inputs.src-norm-1_0_8.repo  = "norm";
   inputs.src-norm-1_0_8.type  = "github";
   

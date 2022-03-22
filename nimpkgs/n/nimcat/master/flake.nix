@@ -1,5 +1,5 @@
 {
-  description = ''An implementation of cat in Nim'';
+  description = ''An implementation of cat'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimcat-master.flake = false;
   inputs.src-nimcat-master.owner = "shakna-israel";
-  inputs.src-nimcat-master.ref   = "refs/heads/master";
+  inputs.src-nimcat-master.ref   = "master";
   inputs.src-nimcat-master.repo  = "nimcat";
   inputs.src-nimcat-master.type  = "github";
   

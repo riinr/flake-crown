@@ -9,7 +9,7 @@
   
   inputs.src-nimhdf5-v0_4_5.flake = false;
   inputs.src-nimhdf5-v0_4_5.owner = "Vindaar";
-  inputs.src-nimhdf5-v0_4_5.ref   = "refs/tags/v0.4.5";
+  inputs.src-nimhdf5-v0_4_5.ref   = "v0_4_5";
   inputs.src-nimhdf5-v0_4_5.repo  = "nimhdf5";
   inputs.src-nimhdf5-v0_4_5.type  = "github";
   

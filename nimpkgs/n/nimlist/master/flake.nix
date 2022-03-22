@@ -1,5 +1,5 @@
 {
-  description = ''View nim packages in your browser.'';
+  description = ''View the nim package list in your browser.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimlist-master.flake = false;
   inputs.src-nimlist-master.owner = "flenniken";
-  inputs.src-nimlist-master.ref   = "refs/heads/master";
+  inputs.src-nimlist-master.ref   = "master";
   inputs.src-nimlist-master.repo  = "nimlist";
   inputs.src-nimlist-master.type  = "github";
   

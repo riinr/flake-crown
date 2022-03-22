@@ -1,5 +1,5 @@
 {
-  description = ''Netty is a reliable UDP connection for games.'';
+  description = ''Netty is a reliable UDP connection for games in Nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-netty-0_2_0.flake = false;
   inputs.src-netty-0_2_0.owner = "treeform";
-  inputs.src-netty-0_2_0.ref   = "refs/tags/0.2.0";
+  inputs.src-netty-0_2_0.ref   = "0_2_0";
   inputs.src-netty-0_2_0.repo  = "netty";
   inputs.src-netty-0_2_0.type  = "github";
   
   inputs."snappy".owner = "nim-nix-pkgs";
   inputs."snappy".ref   = "master";
   inputs."snappy".repo  = "snappy";
+  inputs."snappy".dir   = "";
   inputs."snappy".type  = "github";
   inputs."snappy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."snappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

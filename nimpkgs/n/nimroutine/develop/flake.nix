@@ -9,7 +9,7 @@
   
   inputs.src-nimroutine-develop.flake = false;
   inputs.src-nimroutine-develop.owner = "rogercloud";
-  inputs.src-nimroutine-develop.ref   = "refs/heads/develop";
+  inputs.src-nimroutine-develop.ref   = "develop";
   inputs.src-nimroutine-develop.repo  = "nim-routine";
   inputs.src-nimroutine-develop.type  = "github";
   

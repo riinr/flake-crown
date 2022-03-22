@@ -9,7 +9,7 @@
   
   inputs.src-ngtcp2-0_32_0.flake = false;
   inputs.src-ngtcp2-0_32_0.owner = "status-im";
-  inputs.src-ngtcp2-0_32_0.ref   = "refs/tags/0.32.0";
+  inputs.src-ngtcp2-0_32_0.ref   = "0_32_0";
   inputs.src-ngtcp2-0_32_0.repo  = "nim-ngtcp2";
   inputs.src-ngtcp2-0_32_0.type  = "github";
   

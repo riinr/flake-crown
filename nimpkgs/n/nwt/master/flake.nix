@@ -1,5 +1,5 @@
 {
-  description = ''experiment to build a jinja like template parser'';
+  description = ''minimal jinja like experiment'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nwt-master.flake = false;
   inputs.src-nwt-master.owner = "enthus1ast";
-  inputs.src-nwt-master.ref   = "refs/heads/master";
+  inputs.src-nwt-master.ref   = "master";
   inputs.src-nwt-master.repo  = "nimWebTemplates";
   inputs.src-nwt-master.type  = "github";
   

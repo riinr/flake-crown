@@ -1,5 +1,5 @@
 {
-  description = ''A RPC framework for building web APIs'';
+  description = ''An RPC framework'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nerve-0_3_0.flake = false;
   inputs.src-nerve-0_3_0.owner = "nepeckman";
-  inputs.src-nerve-0_3_0.ref   = "refs/tags/0.3.0";
+  inputs.src-nerve-0_3_0.ref   = "0_3_0";
   inputs.src-nerve-0_3_0.repo  = "nerve-rpc";
   inputs.src-nerve-0_3_0.type  = "github";
   
   inputs."ws".owner = "nim-nix-pkgs";
   inputs."ws".ref   = "master";
   inputs."ws".repo  = "ws";
+  inputs."ws".dir   = "0_5_0";
   inputs."ws".type  = "github";
   inputs."ws".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ws".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

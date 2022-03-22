@@ -1,5 +1,5 @@
 {
-  description = ''A website management tool. Run the file and access your webpage.'';
+  description = ''Generate and host a website. Run the package and access your new webpage.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nimwc-v3_0_3.flake = false;
   inputs.src-nimwc-v3_0_3.owner = "ThomasTJdev";
-  inputs.src-nimwc-v3_0_3.ref   = "refs/tags/v3.0.3";
+  inputs.src-nimwc-v3_0_3.ref   = "v3_0_3";
   inputs.src-nimwc-v3_0_3.repo  = "nim_websitecreator";
   inputs.src-nimwc-v3_0_3.type  = "github";
   
   inputs."jester".owner = "nim-nix-pkgs";
   inputs."jester".ref   = "master";
   inputs."jester".repo  = "jester";
+  inputs."jester".dir   = "v0_5_0";
   inputs."jester".type  = "github";
   inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."recaptcha".owner = "nim-nix-pkgs";
   inputs."recaptcha".ref   = "master";
   inputs."recaptcha".repo  = "recaptcha";
+  inputs."recaptcha".dir   = "v1_0_3";
   inputs."recaptcha".type  = "github";
   inputs."recaptcha".inputs.nixpkgs.follows = "nixpkgs";
   inputs."recaptcha".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."bcrypt".owner = "nim-nix-pkgs";
   inputs."bcrypt".ref   = "master";
   inputs."bcrypt".repo  = "bcrypt";
+  inputs."bcrypt".dir   = "";
   inputs."bcrypt".type  = "github";
   inputs."bcrypt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bcrypt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

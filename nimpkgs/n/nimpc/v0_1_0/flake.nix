@@ -9,13 +9,14 @@
   
   inputs.src-NiMPC-v0_1_0.flake = false;
   inputs.src-NiMPC-v0_1_0.owner = "markspanbroek";
-  inputs.src-NiMPC-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-NiMPC-v0_1_0.ref   = "v0_1_0";
   inputs.src-NiMPC-v0_1_0.repo  = "nimpc";
   inputs.src-NiMPC-v0_1_0.type  = "github";
   
   inputs."sysrandom".owner = "nim-nix-pkgs";
   inputs."sysrandom".ref   = "master";
   inputs."sysrandom".repo  = "sysrandom";
+  inputs."sysrandom".dir   = "v1_1_0";
   inputs."sysrandom".type  = "github";
   inputs."sysrandom".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sysrandom".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."simpleot".owner = "nim-nix-pkgs";
   inputs."simpleot".ref   = "master";
   inputs."simpleot".repo  = "simpleot";
+  inputs."simpleot".dir   = "v0_5_1";
   inputs."simpleot".type  = "github";
   inputs."simpleot".inputs.nixpkgs.follows = "nixpkgs";
   inputs."simpleot".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

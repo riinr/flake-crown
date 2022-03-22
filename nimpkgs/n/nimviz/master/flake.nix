@@ -9,7 +9,7 @@
   
   inputs.src-nimviz-master.flake = false;
   inputs.src-nimviz-master.owner = "Rekihyt";
-  inputs.src-nimviz-master.ref   = "refs/heads/master";
+  inputs.src-nimviz-master.ref   = "master";
   inputs.src-nimviz-master.repo  = "nimviz";
   inputs.src-nimviz-master.type  = "github";
   

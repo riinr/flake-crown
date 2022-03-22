@@ -9,13 +9,14 @@
   
   inputs.src-neel-v0_2_5.flake = false;
   inputs.src-neel-v0_2_5.owner = "Niminem";
-  inputs.src-neel-v0_2_5.ref   = "refs/tags/v0.2.5";
+  inputs.src-neel-v0_2_5.ref   = "v0_2_5";
   inputs.src-neel-v0_2_5.repo  = "Neel";
   inputs.src-neel-v0_2_5.type  = "github";
   
   inputs."jester".owner = "nim-nix-pkgs";
   inputs."jester".ref   = "master";
   inputs."jester".repo  = "jester";
+  inputs."jester".dir   = "v0_5_0";
   inputs."jester".type  = "github";
   inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."ws".owner = "nim-nix-pkgs";
   inputs."ws".ref   = "master";
   inputs."ws".repo  = "ws";
+  inputs."ws".dir   = "0_5_0";
   inputs."ws".type  = "github";
   inputs."ws".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ws".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,10 +32,10 @@
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-Neel-v0_2_5"];
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-neel-v0_2_5"];
   in lib.mkRefOutput {
     inherit self nixpkgs ;
-    src  = deps."src-Neel-v0_2_5";
+    src  = deps."src-neel-v0_2_5";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
   };

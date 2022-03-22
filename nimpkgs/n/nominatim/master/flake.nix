@@ -1,5 +1,5 @@
 {
-  description = ''OpenStreetMap Nominatim API Lib for Nim'';
+  description = ''OpenStreetMap Nominatim API Lib and CLI Client for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nominatim-master.flake = false;
   inputs.src-nominatim-master.owner = "juancarlospaco";
-  inputs.src-nominatim-master.ref   = "refs/heads/master";
+  inputs.src-nominatim-master.ref   = "master";
   inputs.src-nominatim-master.repo  = "nim-nominatim";
   inputs.src-nominatim-master.type  = "github";
   

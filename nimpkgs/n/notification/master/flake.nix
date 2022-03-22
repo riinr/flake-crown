@@ -9,13 +9,14 @@
   
   inputs.src-notification-master.flake = false;
   inputs.src-notification-master.owner = "SolitudeSF";
-  inputs.src-notification-master.ref   = "refs/heads/master";
+  inputs.src-notification-master.ref   = "master";
   inputs.src-notification-master.repo  = "notification";
   inputs.src-notification-master.type  = "github";
   
   inputs."dbus".owner = "nim-nix-pkgs";
   inputs."dbus".ref   = "master";
   inputs."dbus".repo  = "dbus";
+  inputs."dbus".dir   = "";
   inputs."dbus".type  = "github";
   inputs."dbus".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dbus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."imageman".owner = "nim-nix-pkgs";
   inputs."imageman".ref   = "master";
   inputs."imageman".repo  = "imageman";
+  inputs."imageman".dir   = "v0_8_2";
   inputs."imageman".type  = "github";
   inputs."imageman".inputs.nixpkgs.follows = "nixpkgs";
   inputs."imageman".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

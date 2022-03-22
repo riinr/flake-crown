@@ -1,5 +1,5 @@
 {
-  description = ''everything  search engine wrapper'';
+  description = ''everything wrapper (everything:http://www.voidtools.com/)'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimeverything-master.flake = false;
   inputs.src-nimeverything-master.owner = "xland";
-  inputs.src-nimeverything-master.ref   = "refs/heads/master";
+  inputs.src-nimeverything-master.ref   = "master";
   inputs.src-nimeverything-master.repo  = "nimeverything";
   inputs.src-nimeverything-master.type  = "github";
   

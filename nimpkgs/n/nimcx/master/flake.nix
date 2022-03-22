@@ -1,5 +1,5 @@
 {
-  description = ''Color and utilities library for linux terminal.'';
+  description = ''Color and utilities library for a happy Linux terminal.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimcx-master.flake = false;
   inputs.src-nimcx-master.owner = "qqtop";
-  inputs.src-nimcx-master.ref   = "refs/heads/master";
+  inputs.src-nimcx-master.ref   = "master";
   inputs.src-nimcx-master.repo  = "nimcx";
   inputs.src-nimcx-master.type  = "github";
   

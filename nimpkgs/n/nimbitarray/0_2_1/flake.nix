@@ -9,7 +9,7 @@
   
   inputs.src-nimbitarray-0_2_1.flake = false;
   inputs.src-nimbitarray-0_2_1.owner = "YesDrX";
-  inputs.src-nimbitarray-0_2_1.ref   = "refs/tags/0.2.1";
+  inputs.src-nimbitarray-0_2_1.ref   = "0_2_1";
   inputs.src-nimbitarray-0_2_1.repo  = "bitarray";
   inputs.src-nimbitarray-0_2_1.type  = "github";
   

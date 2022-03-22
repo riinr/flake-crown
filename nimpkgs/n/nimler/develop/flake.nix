@@ -1,5 +1,5 @@
 {
-  description = ''Erlang/Elixir NIFs for nim'';
+  description = ''Erlang/Elixir NIFs'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimler-develop.flake = false;
   inputs.src-nimler-develop.owner = "wltsmrz";
-  inputs.src-nimler-develop.ref   = "refs/heads/develop";
+  inputs.src-nimler-develop.ref   = "develop";
   inputs.src-nimler-develop.repo  = "nimler";
   inputs.src-nimler-develop.type  = "github";
   

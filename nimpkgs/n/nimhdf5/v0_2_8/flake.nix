@@ -9,13 +9,14 @@
   
   inputs.src-nimhdf5-v0_2_8.flake = false;
   inputs.src-nimhdf5-v0_2_8.owner = "Vindaar";
-  inputs.src-nimhdf5-v0_2_8.ref   = "refs/tags/v0.2.8";
+  inputs.src-nimhdf5-v0_2_8.ref   = "v0_2_8";
   inputs.src-nimhdf5-v0_2_8.repo  = "nimhdf5";
   inputs.src-nimhdf5-v0_2_8.type  = "github";
   
   inputs."arraymancer".owner = "nim-nix-pkgs";
   inputs."arraymancer".ref   = "master";
   inputs."arraymancer".repo  = "arraymancer";
+  inputs."arraymancer".dir   = "v0_7_11";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

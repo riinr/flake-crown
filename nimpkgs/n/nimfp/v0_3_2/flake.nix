@@ -9,13 +9,14 @@
   
   inputs.src-nimfp-v0_3_2.flake = false;
   inputs.src-nimfp-v0_3_2.owner = "vegansk";
-  inputs.src-nimfp-v0_3_2.ref   = "refs/tags/v0.3.2";
+  inputs.src-nimfp-v0_3_2.ref   = "v0_3_2";
   inputs.src-nimfp-v0_3_2.repo  = "nimfp";
   inputs.src-nimfp-v0_3_2.type  = "github";
   
   inputs."nimboost".owner = "nim-nix-pkgs";
   inputs."nimboost".ref   = "master";
   inputs."nimboost".repo  = "nimboost";
+  inputs."nimboost".dir   = "v0_5_5";
   inputs."nimboost".type  = "github";
   inputs."nimboost".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimboost".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."classy".owner = "nim-nix-pkgs";
   inputs."classy".ref   = "master";
   inputs."classy".repo  = "classy";
+  inputs."classy".dir   = "v0_0_4";
   inputs."classy".type  = "github";
   inputs."classy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."classy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

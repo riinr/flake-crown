@@ -9,13 +9,14 @@
   
   inputs.src-NimbleImGui-master.flake = false;
   inputs.src-NimbleImGui-master.owner = "qb-0";
-  inputs.src-NimbleImGui-master.ref   = "refs/heads/master";
+  inputs.src-NimbleImGui-master.ref   = "master";
   inputs.src-NimbleImGui-master.repo  = "NimbleImGui";
   inputs.src-NimbleImGui-master.type  = "github";
   
   inputs."nimgl".owner = "nim-nix-pkgs";
   inputs."nimgl".ref   = "master";
   inputs."nimgl".repo  = "nimgl";
+  inputs."nimgl".dir   = "1_3_2";
   inputs."nimgl".type  = "github";
   inputs."nimgl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimgl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

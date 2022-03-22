@@ -9,7 +9,7 @@
   
   inputs.src-nim_cexc-master.flake = false;
   inputs.src-nim_cexc-master.owner = "metasyn";
-  inputs.src-nim_cexc-master.ref   = "refs/heads/master";
+  inputs.src-nim_cexc-master.ref   = "master";
   inputs.src-nim_cexc-master.repo  = "nim-cexc-splunk";
   inputs.src-nim_cexc-master.type  = "github";
   

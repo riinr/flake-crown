@@ -9,13 +9,14 @@
   
   inputs.src-nimem-master.flake = false;
   inputs.src-nimem-master.owner = "Sann0";
-  inputs.src-nimem-master.ref   = "refs/heads/master";
+  inputs.src-nimem-master.ref   = "master";
   inputs.src-nimem-master.repo  = "Nimem";
   inputs.src-nimem-master.type  = "github";
   
   inputs."winim".owner = "nim-nix-pkgs";
   inputs."winim".ref   = "master";
   inputs."winim".repo  = "winim";
+  inputs."winim".dir   = "3_8_0";
   inputs."winim".type  = "github";
   inputs."winim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."winim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."regex".owner = "nim-nix-pkgs";
   inputs."regex".ref   = "master";
   inputs."regex".repo  = "regex";
+  inputs."regex".dir   = "v0_19_0";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

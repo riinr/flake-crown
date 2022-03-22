@@ -1,5 +1,5 @@
 {
-  description = ''Language Server Protocol implementation for Nim'';
+  description = ''Nim Language Server Protocol - nimlsp implements the Language Server Protocol'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nimlsp-v0_3_2.flake = false;
   inputs.src-nimlsp-v0_3_2.owner = "PMunch";
-  inputs.src-nimlsp-v0_3_2.ref   = "refs/tags/v0.3.2";
+  inputs.src-nimlsp-v0_3_2.ref   = "v0_3_2";
   inputs.src-nimlsp-v0_3_2.repo  = "nimlsp";
   inputs.src-nimlsp-v0_3_2.type  = "github";
   
   inputs."astpatternmatching".owner = "nim-nix-pkgs";
   inputs."astpatternmatching".ref   = "master";
   inputs."astpatternmatching".repo  = "astpatternmatching";
+  inputs."astpatternmatching".dir   = "";
   inputs."astpatternmatching".type  = "github";
   inputs."astpatternmatching".inputs.nixpkgs.follows = "nixpkgs";
   inputs."astpatternmatching".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."jsonschema".owner = "nim-nix-pkgs";
   inputs."jsonschema".ref   = "master";
   inputs."jsonschema".repo  = "jsonschema";
+  inputs."jsonschema".dir   = "";
   inputs."jsonschema".type  = "github";
   inputs."jsonschema".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsonschema".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -1,5 +1,5 @@
 {
-  description = ''Scraping API for www.nordnet.dk ready to integrate with Home Assistant (Hassio)'';
+  description = ''Scraping API for www.nordnet.dk'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nordnet-v0_0_7.flake = false;
   inputs.src-nordnet-v0_0_7.owner = "ThomasTJdev";
-  inputs.src-nordnet-v0_0_7.ref   = "refs/tags/v0.0.7";
+  inputs.src-nordnet-v0_0_7.ref   = "v0_0_7";
   inputs.src-nordnet-v0_0_7.repo  = "nim_nordnet_api";
   inputs.src-nordnet-v0_0_7.type  = "github";
   
   inputs."nmqtt".owner = "nim-nix-pkgs";
   inputs."nmqtt".ref   = "master";
   inputs."nmqtt".repo  = "nmqtt";
+  inputs."nmqtt".dir   = "v1_0_4";
   inputs."nmqtt".type  = "github";
   inputs."nmqtt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nmqtt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."q".owner = "nim-nix-pkgs";
   inputs."q".ref   = "master";
   inputs."q".repo  = "q";
+  inputs."q".dir   = "0_0_8";
   inputs."q".type  = "github";
   inputs."q".inputs.nixpkgs.follows = "nixpkgs";
   inputs."q".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

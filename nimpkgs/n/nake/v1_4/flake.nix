@@ -9,7 +9,7 @@
   
   inputs.src-nake-v1_4.flake = false;
   inputs.src-nake-v1_4.owner = "fowlmouth";
-  inputs.src-nake-v1_4.ref   = "refs/tags/v1.4";
+  inputs.src-nake-v1_4.ref   = "v1_4";
   inputs.src-nake-v1_4.repo  = "nake";
   inputs.src-nake-v1_4.type  = "github";
   

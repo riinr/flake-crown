@@ -9,7 +9,7 @@
   
   inputs.src-nimgl-0_1_0.flake = false;
   inputs.src-nimgl-0_1_0.owner = "nimgl";
-  inputs.src-nimgl-0_1_0.ref   = "refs/tags/0.1.0";
+  inputs.src-nimgl-0_1_0.ref   = "0_1_0";
   inputs.src-nimgl-0_1_0.repo  = "nimgl";
   inputs.src-nimgl-0_1_0.type  = "github";
   

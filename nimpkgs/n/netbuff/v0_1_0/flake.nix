@@ -9,7 +9,7 @@
   
   inputs.src-netbuff-v0_1_0.flake = false;
   inputs.src-netbuff-v0_1_0.owner = "jakubDoka";
-  inputs.src-netbuff-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-netbuff-v0_1_0.ref   = "v0_1_0";
   inputs.src-netbuff-v0_1_0.repo  = "netbuff";
   inputs.src-netbuff-v0_1_0.type  = "github";
   

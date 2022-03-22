@@ -1,5 +1,5 @@
 {
-  description = ''Qt Qml bindings'';
+  description = ''QML bindings for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimqml-0_5_0.flake = false;
   inputs.src-nimqml-0_5_0.owner = "filcuc";
-  inputs.src-nimqml-0_5_0.ref   = "refs/tags/0.5.0";
+  inputs.src-nimqml-0_5_0.ref   = "0_5_0";
   inputs.src-nimqml-0_5_0.repo  = "nimqml";
   inputs.src-nimqml-0_5_0.type  = "github";
   

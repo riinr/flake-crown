@@ -9,13 +9,14 @@
   
   inputs.src-nimassets-master.flake = false;
   inputs.src-nimassets-master.owner = "xmonader";
-  inputs.src-nimassets-master.ref   = "refs/heads/master";
+  inputs.src-nimassets-master.ref   = "master";
   inputs.src-nimassets-master.repo  = "nimassets";
   inputs.src-nimassets-master.type  = "github";
   
   inputs."zstd".owner = "nim-nix-pkgs";
   inputs."zstd".ref   = "master";
   inputs."zstd".repo  = "zstd";
+  inputs."zstd".dir   = "v0_5";
   inputs."zstd".type  = "github";
   inputs."zstd".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zstd".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -1,5 +1,5 @@
 {
-  description = ''Encode/decode arbitrary unicode bases from size 2 to 256'';
+  description = ''Encoder/decoder for any base alphabet up to 256 with leading zero compression'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nbaser-develop.flake = false;
   inputs.src-nbaser-develop.owner = "D-Nice";
-  inputs.src-nbaser-develop.ref   = "refs/heads/develop";
+  inputs.src-nbaser-develop.ref   = "develop";
   inputs.src-nbaser-develop.repo  = "nbaser";
   inputs.src-nbaser-develop.type  = "github";
   

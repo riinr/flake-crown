@@ -9,13 +9,14 @@
   
   inputs.src-nimmm-master.flake = false;
   inputs.src-nimmm-master.owner = "joachimschmidt557";
-  inputs.src-nimmm-master.ref   = "refs/heads/master";
+  inputs.src-nimmm-master.ref   = "master";
   inputs.src-nimmm-master.repo  = "nimmm";
   inputs.src-nimmm-master.type  = "github";
   
   inputs."noise".owner = "nim-nix-pkgs";
   inputs."noise".ref   = "master";
   inputs."noise".repo  = "noise";
+  inputs."noise".dir   = "v0_1_14";
   inputs."noise".type  = "github";
   inputs."noise".inputs.nixpkgs.follows = "nixpkgs";
   inputs."noise".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."nimbox".owner = "nim-nix-pkgs";
   inputs."nimbox".ref   = "master";
   inputs."nimbox".repo  = "nimbox";
+  inputs."nimbox".dir   = "";
   inputs."nimbox".type  = "github";
   inputs."nimbox".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimbox".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."lscolors".owner = "nim-nix-pkgs";
   inputs."lscolors".ref   = "master";
   inputs."lscolors".repo  = "lscolors";
+  inputs."lscolors".dir   = "v0_3_3";
   inputs."lscolors".type  = "github";
   inputs."lscolors".inputs.nixpkgs.follows = "nixpkgs";
   inputs."lscolors".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

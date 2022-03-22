@@ -1,5 +1,5 @@
 {
-  description = ''Nim wrapper for the LZ4 library. There is also a high-level API for easy use'';
+  description = ''Nim wrapper for the LZ4 library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,8 +9,8 @@
   
   inputs.src-nimlz4-master.flake = false;
   inputs.src-nimlz4-master.owner = "dfdeshom";
-  inputs.src-nimlz4-master.ref   = "refs/heads/master";
-  inputs.src-nimlz4-master.repo  = "nimlz4";
+  inputs.src-nimlz4-master.ref   = "master";
+  inputs.src-nimlz4-master.repo  = "nimlz4.git";
   inputs.src-nimlz4-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

@@ -9,13 +9,14 @@
   
   inputs.src-networkutils-master.flake = false;
   inputs.src-networkutils-master.owner = "Q-Master";
-  inputs.src-networkutils-master.ref   = "refs/heads/master";
+  inputs.src-networkutils-master.ref   = "master";
   inputs.src-networkutils-master.repo  = "networkutils.nim";
   inputs.src-networkutils-master.type  = "github";
   
   inputs."ptr_math".owner = "nim-nix-pkgs";
   inputs."ptr_math".ref   = "master";
   inputs."ptr_math".repo  = "ptr_math";
+  inputs."ptr_math".dir   = "v0_3_0";
   inputs."ptr_math".type  = "github";
   inputs."ptr_math".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ptr_math".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

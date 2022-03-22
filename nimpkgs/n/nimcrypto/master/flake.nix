@@ -9,7 +9,7 @@
   
   inputs.src-nimcrypto-master.flake = false;
   inputs.src-nimcrypto-master.owner = "cheatfate";
-  inputs.src-nimcrypto-master.ref   = "refs/heads/master";
+  inputs.src-nimcrypto-master.ref   = "master";
   inputs.src-nimcrypto-master.repo  = "nimcrypto";
   inputs.src-nimcrypto-master.type  = "github";
   

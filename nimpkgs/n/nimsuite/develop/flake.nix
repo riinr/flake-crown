@@ -9,7 +9,7 @@
   
   inputs.src-nimsuite-develop.flake = false;
   inputs.src-nimsuite-develop.owner = "c6h4clch3";
-  inputs.src-nimsuite-develop.ref   = "refs/heads/develop";
+  inputs.src-nimsuite-develop.ref   = "develop";
   inputs.src-nimsuite-develop.repo  = "NimSuite";
   inputs.src-nimsuite-develop.type  = "github";
   

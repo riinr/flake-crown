@@ -1,5 +1,5 @@
 {
-  description = ''Wrapper for the nanomsg socket library that provides several common communication patterns'';
+  description = ''Wrapper for nanomsg, a socket library that provides several common communication patterns. It aims to make the networking layer fast, scalable, and easy to use.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nanomsg-master.flake = false;
   inputs.src-nanomsg-master.owner = "def-";
-  inputs.src-nanomsg-master.ref   = "refs/heads/master";
+  inputs.src-nanomsg-master.ref   = "master";
   inputs.src-nanomsg-master.repo  = "nim-nanomsg";
   inputs.src-nanomsg-master.type  = "github";
   

@@ -9,7 +9,7 @@
   
   inputs.src-nimrtlsdr-v0_1_4.flake = false;
   inputs.src-nimrtlsdr-v0_1_4.owner = "jpoirier";
-  inputs.src-nimrtlsdr-v0_1_4.ref   = "refs/tags/v0.1.4";
+  inputs.src-nimrtlsdr-v0_1_4.ref   = "v0_1_4";
   inputs.src-nimrtlsdr-v0_1_4.repo  = "nimrtlsdr";
   inputs.src-nimrtlsdr-v0_1_4.type  = "github";
   

@@ -9,7 +9,7 @@
   
   inputs.src-nap-1_3_1.flake = false;
   inputs.src-nap-1_3_1.owner = "madprops";
-  inputs.src-nap-1_3_1.ref   = "refs/tags/1.3.1";
+  inputs.src-nap-1_3_1.ref   = "1_3_1";
   inputs.src-nap-1_3_1.repo  = "nap";
   inputs.src-nap-1_3_1.type  = "github";
   

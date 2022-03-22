@@ -1,5 +1,5 @@
 {
-  description = ''A simple library to create queries in Nim.'';
+  description = ''Easily create queries in Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nery-0_1_1.flake = false;
   inputs.src-nery-0_1_1.owner = "David-Kunz";
-  inputs.src-nery-0_1_1.ref   = "refs/tags/0.1.1";
+  inputs.src-nery-0_1_1.ref   = "0_1_1";
   inputs.src-nery-0_1_1.repo  = "Nery";
   inputs.src-nery-0_1_1.type  = "github";
   
   inputs."fusion".owner = "nim-nix-pkgs";
   inputs."fusion".ref   = "master";
   inputs."fusion".repo  = "fusion";
+  inputs."fusion".dir   = "v1_1";
   inputs."fusion".type  = "github";
   inputs."fusion".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fusion".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -9,7 +9,7 @@
   
   inputs.src-nimgui-master.flake = false;
   inputs.src-nimgui-master.owner = "zacharycarter";
-  inputs.src-nimgui-master.ref   = "refs/heads/master";
+  inputs.src-nimgui-master.ref   = "master";
   inputs.src-nimgui-master.repo  = "nimgui";
   inputs.src-nimgui-master.type  = "github";
   

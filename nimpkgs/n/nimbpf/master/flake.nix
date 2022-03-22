@@ -9,13 +9,14 @@
   
   inputs.src-nimbpf-master.flake = false;
   inputs.src-nimbpf-master.owner = "jasonk000";
-  inputs.src-nimbpf-master.ref   = "refs/heads/master";
+  inputs.src-nimbpf-master.ref   = "master";
   inputs.src-nimbpf-master.repo  = "nimbpf";
   inputs.src-nimbpf-master.type  = "github";
   
   inputs."nimterop".owner = "nim-nix-pkgs";
   inputs."nimterop".ref   = "master";
   inputs."nimterop".repo  = "nimterop";
+  inputs."nimterop".dir   = "v0_6_13";
   inputs."nimterop".type  = "github";
   inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -1,5 +1,5 @@
 {
-  description = ''PNG(Portable Network Graphics) encoder and decoder'';
+  description = ''PNG encoder and decoder'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimPNG-0_2_7.flake = false;
   inputs.src-nimPNG-0_2_7.owner = "jangko";
-  inputs.src-nimPNG-0_2_7.ref   = "refs/tags/0.2.7";
+  inputs.src-nimPNG-0_2_7.ref   = "0_2_7";
   inputs.src-nimPNG-0_2_7.repo  = "nimPNG";
   inputs.src-nimPNG-0_2_7.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Shaders in Nim.'';
+  description = ''Shaders in Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nimsl-v0_3_2.flake = false;
   inputs.src-nimsl-v0_3_2.owner = "yglukhov";
-  inputs.src-nimsl-v0_3_2.ref   = "refs/tags/v0.3.2";
+  inputs.src-nimsl-v0_3_2.ref   = "v0_3_2";
   inputs.src-nimsl-v0_3_2.repo  = "nimsl";
   inputs.src-nimsl-v0_3_2.type  = "github";
   
   inputs."variant".owner = "nim-nix-pkgs";
   inputs."variant".ref   = "master";
   inputs."variant".repo  = "variant";
+  inputs."variant".dir   = "v0_2_12";
   inputs."variant".type  = "github";
   inputs."variant".inputs.nixpkgs.follows = "nixpkgs";
   inputs."variant".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

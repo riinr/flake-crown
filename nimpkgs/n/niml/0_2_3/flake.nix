@@ -9,7 +9,7 @@
   
   inputs.src-niml-0_2_3.flake = false;
   inputs.src-niml-0_2_3.owner = "jakubDoka";
-  inputs.src-niml-0_2_3.ref   = "refs/tags/0.2.3";
+  inputs.src-niml-0_2_3.ref   = "0_2_3";
   inputs.src-niml-0_2_3.repo  = "niml";
   inputs.src-niml-0_2_3.type  = "github";
   

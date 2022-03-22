@@ -9,7 +9,7 @@
   
   inputs.src-nimics-v0_1_0.flake = false;
   inputs.src-nimics-v0_1_0.owner = "ThomasTJdev";
-  inputs.src-nimics-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-nimics-v0_1_0.ref   = "v0_1_0";
   inputs.src-nimics-v0_1_0.repo  = "nimics";
   inputs.src-nimics-v0_1_0.type  = "github";
   

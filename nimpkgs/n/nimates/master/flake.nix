@@ -1,5 +1,5 @@
 {
-  description = ''Client library for the Postmates API'';
+  description = ''a client library for the Postmates API written in Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimates-master.flake = false;
   inputs.src-nimates-master.owner = "jamesalbert";
-  inputs.src-nimates-master.ref   = "refs/heads/master";
+  inputs.src-nimates-master.ref   = "master";
   inputs.src-nimates-master.repo  = "nimates";
   inputs.src-nimates-master.type  = "github";
   

@@ -9,13 +9,14 @@
   
   inputs.src-nimrpc_milis-master.flake = false;
   inputs.src-nimrpc_milis-master.owner = "milisarge";
-  inputs.src-nimrpc_milis-master.ref   = "refs/heads/master";
+  inputs.src-nimrpc_milis-master.ref   = "master";
   inputs.src-nimrpc_milis-master.repo  = "nimrpc_milis";
   inputs.src-nimrpc_milis-master.type  = "github";
   
   inputs."msgpack4nim".owner = "nim-nix-pkgs";
   inputs."msgpack4nim".ref   = "master";
   inputs."msgpack4nim".repo  = "msgpack4nim";
+  inputs."msgpack4nim".dir   = "v0_3_1";
   inputs."msgpack4nim".type  = "github";
   inputs."msgpack4nim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."msgpack4nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

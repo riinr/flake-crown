@@ -9,7 +9,7 @@
   
   inputs.src-nimgl-master.flake = false;
   inputs.src-nimgl-master.owner = "nimgl";
-  inputs.src-nimgl-master.ref   = "refs/heads/master";
+  inputs.src-nimgl-master.ref   = "master";
   inputs.src-nimgl-master.repo  = "nimgl";
   inputs.src-nimgl-master.type  = "github";
   

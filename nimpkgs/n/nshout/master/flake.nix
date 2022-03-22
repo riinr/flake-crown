@@ -1,5 +1,5 @@
 {
-  description = ''Nim bindings for libshout'';
+  description = ''libshout wrapper for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nshout-master.flake = false;
   inputs.src-nshout-master.owner = "Senketsu";
-  inputs.src-nshout-master.ref   = "refs/heads/master";
+  inputs.src-nshout-master.ref   = "master";
   inputs.src-nshout-master.repo  = "nshout";
   inputs.src-nshout-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Pleasant Nim bindings for SIMD instruction sets'';
+  description = ''Pleasant Nim bindings for SIMD instruction sets.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimsimd-master.flake = false;
   inputs.src-nimsimd-master.owner = "guzba";
-  inputs.src-nimsimd-master.ref   = "refs/heads/master";
+  inputs.src-nimsimd-master.ref   = "master";
   inputs.src-nimsimd-master.repo  = "nimsimd";
   inputs.src-nimsimd-master.type  = "github";
   

@@ -9,7 +9,7 @@
   
   inputs.src-nimspice-master.flake = false;
   inputs.src-nimspice-master.owner = "CodeDoes";
-  inputs.src-nimspice-master.ref   = "refs/heads/master";
+  inputs.src-nimspice-master.ref   = "master";
   inputs.src-nimspice-master.repo  = "nimspice";
   inputs.src-nimspice-master.type  = "github";
   

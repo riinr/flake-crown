@@ -1,5 +1,5 @@
 {
-  description = ''Simple screenshot library & cli tool made in Nim'';
+  description = ''A small screenshot library / utility for Windows & X11 based systems.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nsu-v0_1_4.flake = false;
   inputs.src-nsu-v0_1_4.owner = "Senketsu";
-  inputs.src-nsu-v0_1_4.ref   = "refs/tags/v0.1.4";
+  inputs.src-nsu-v0_1_4.ref   = "v0_1_4";
   inputs.src-nsu-v0_1_4.repo  = "nsu";
   inputs.src-nsu-v0_1_4.type  = "github";
   
   inputs."x11".owner = "nim-nix-pkgs";
   inputs."x11".ref   = "master";
   inputs."x11".repo  = "x11";
+  inputs."x11".dir   = "";
   inputs."x11".type  = "github";
   inputs."x11".inputs.nixpkgs.follows = "nixpkgs";
   inputs."x11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."oldwinapi".owner = "nim-nix-pkgs";
   inputs."oldwinapi".ref   = "master";
   inputs."oldwinapi".repo  = "oldwinapi";
+  inputs."oldwinapi".dir   = "v2_1_0";
   inputs."oldwinapi".type  = "github";
   inputs."oldwinapi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."oldwinapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."png".owner = "nim-nix-pkgs";
   inputs."png".ref   = "master";
   inputs."png".repo  = "png";
+  inputs."png".dir   = "";
   inputs."png".type  = "github";
   inputs."png".inputs.nixpkgs.follows = "nixpkgs";
   inputs."png".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

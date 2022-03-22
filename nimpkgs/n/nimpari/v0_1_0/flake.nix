@@ -9,13 +9,14 @@
   
   inputs.src-nimpari-v0_1_0.flake = false;
   inputs.src-nimpari-v0_1_0.owner = "BarrOff";
-  inputs.src-nimpari-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-nimpari-v0_1_0.ref   = "v0_1_0";
   inputs.src-nimpari-v0_1_0.repo  = "nim-pari";
   inputs.src-nimpari-v0_1_0.type  = "github";
   
   inputs."nimterop".owner = "nim-nix-pkgs";
   inputs."nimterop".ref   = "master";
   inputs."nimterop".repo  = "nimterop";
+  inputs."nimterop".dir   = "v0_6_13";
   inputs."nimterop".type  = "github";
   inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

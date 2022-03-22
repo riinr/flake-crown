@@ -1,5 +1,5 @@
 {
-  description = ''High level wrapper over OpenCL'';
+  description = ''OpenCL utilities'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nimcl-0_1_3.flake = false;
   inputs.src-nimcl-0_1_3.owner = "andreaferretti";
-  inputs.src-nimcl-0_1_3.ref   = "refs/tags/0.1.3";
+  inputs.src-nimcl-0_1_3.ref   = "0_1_3";
   inputs.src-nimcl-0_1_3.repo  = "nimcl";
   inputs.src-nimcl-0_1_3.type  = "github";
   
   inputs."opencl".owner = "nim-nix-pkgs";
   inputs."opencl".ref   = "master";
   inputs."opencl".repo  = "opencl";
+  inputs."opencl".dir   = "";
   inputs."opencl".type  = "github";
   inputs."opencl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."opencl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

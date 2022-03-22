@@ -9,13 +9,14 @@
   
   inputs.src-nat_traversal-master.flake = false;
   inputs.src-nat_traversal-master.owner = "status-im";
-  inputs.src-nat_traversal-master.ref   = "refs/heads/master";
+  inputs.src-nat_traversal-master.ref   = "master";
   inputs.src-nat_traversal-master.repo  = "nim-nat-traversal";
   inputs.src-nat_traversal-master.type  = "github";
   
   inputs."stew".owner = "nim-nix-pkgs";
   inputs."stew".ref   = "master";
   inputs."stew".repo  = "stew";
+  inputs."stew".dir   = "";
   inputs."stew".type  = "github";
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

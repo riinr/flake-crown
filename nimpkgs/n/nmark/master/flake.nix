@@ -9,13 +9,14 @@
   
   inputs.src-nmark-master.flake = false;
   inputs.src-nmark-master.owner = "kyoheiu";
-  inputs.src-nmark-master.ref   = "refs/heads/master";
+  inputs.src-nmark-master.ref   = "master";
   inputs.src-nmark-master.repo  = "nmark";
   inputs.src-nmark-master.type  = "github";
   
   inputs."regex".owner = "nim-nix-pkgs";
   inputs."regex".ref   = "master";
   inputs."regex".repo  = "regex";
+  inputs."regex".dir   = "v0_19_0";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

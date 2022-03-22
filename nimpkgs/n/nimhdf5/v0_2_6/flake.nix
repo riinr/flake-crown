@@ -1,5 +1,5 @@
 {
-  description = ''Bindings for the HDF5 data format C library'';
+  description = ''A wrapper for the HDF5 data format C library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nimhdf5-v0_2_6.flake = false;
   inputs.src-nimhdf5-v0_2_6.owner = "Vindaar";
-  inputs.src-nimhdf5-v0_2_6.ref   = "refs/tags/v0.2.6";
+  inputs.src-nimhdf5-v0_2_6.ref   = "v0_2_6";
   inputs.src-nimhdf5-v0_2_6.repo  = "nimhdf5";
   inputs.src-nimhdf5-v0_2_6.type  = "github";
   
   inputs."arraymancer".owner = "nim-nix-pkgs";
   inputs."arraymancer".ref   = "master";
   inputs."arraymancer".repo  = "arraymancer";
+  inputs."arraymancer".dir   = "v0_7_11";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

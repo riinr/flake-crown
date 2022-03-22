@@ -9,7 +9,7 @@
   
   inputs.src-notetxt-master.flake = false;
   inputs.src-notetxt-master.owner = "mrshu";
-  inputs.src-notetxt-master.ref   = "refs/heads/master";
+  inputs.src-notetxt-master.ref   = "master";
   inputs.src-notetxt-master.repo  = "nim-notetxt";
   inputs.src-notetxt-master.type  = "github";
   

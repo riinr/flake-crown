@@ -1,5 +1,5 @@
 {
-  description = ''Nim wrapper for the C NanoVG antialiased vector graphics rendering library for OpenGL'';
+  description = ''Nim wrapper for the NanoVG antialiased vector graphics rendering library for OpenGL'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nanovg-v0_2_1.flake = false;
   inputs.src-nanovg-v0_2_1.owner = "johnnovak";
-  inputs.src-nanovg-v0_2_1.ref   = "refs/tags/v0.2.1";
+  inputs.src-nanovg-v0_2_1.ref   = "v0_2_1";
   inputs.src-nanovg-v0_2_1.repo  = "nim-nanovg";
   inputs.src-nanovg-v0_2_1.type  = "github";
   

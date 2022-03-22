@@ -9,7 +9,7 @@
   
   inputs.src-nifty-master.flake = false;
   inputs.src-nifty-master.owner = "h3rald";
-  inputs.src-nifty-master.ref   = "refs/heads/master";
+  inputs.src-nifty-master.ref   = "master";
   inputs.src-nifty-master.repo  = "nifty";
   inputs.src-nifty-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''MongoDB driver in pure Nim language with synchronous and asynchronous I/O support'';
+  description = ''Pure Nim driver for MongoDB with support of synchronous and asynchronous I/O modes'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nimongo-v0_1_0.flake = false;
   inputs.src-nimongo-v0_1_0.owner = "SSPkrolik";
-  inputs.src-nimongo-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-nimongo-v0_1_0.ref   = "v0_1_0";
   inputs.src-nimongo-v0_1_0.repo  = "nimongo";
   inputs.src-nimongo-v0_1_0.type  = "github";
   
   inputs."scram".owner = "nim-nix-pkgs";
   inputs."scram".ref   = "master";
   inputs."scram".repo  = "scram";
+  inputs."scram".dir   = "0_1_13";
   inputs."scram".type  = "github";
   inputs."scram".inputs.nixpkgs.follows = "nixpkgs";
   inputs."scram".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

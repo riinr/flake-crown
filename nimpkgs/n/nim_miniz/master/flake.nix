@@ -9,7 +9,7 @@
   
   inputs.src-nim_miniz-master.flake = false;
   inputs.src-nim_miniz-master.owner = "h3rald";
-  inputs.src-nim_miniz-master.ref   = "refs/heads/master";
+  inputs.src-nim_miniz-master.ref   = "master";
   inputs.src-nim_miniz-master.repo  = "nim-miniz";
   inputs.src-nim_miniz-master.type  = "github";
   

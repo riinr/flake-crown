@@ -9,7 +9,7 @@
   
   inputs.src-nimlibxlsxwriter-master.flake = false;
   inputs.src-nimlibxlsxwriter-master.owner = "ThomasTJdev";
-  inputs.src-nimlibxlsxwriter-master.ref   = "refs/heads/master";
+  inputs.src-nimlibxlsxwriter-master.ref   = "master";
   inputs.src-nimlibxlsxwriter-master.repo  = "nimlibxlsxwriter";
   inputs.src-nimlibxlsxwriter-master.type  = "github";
   

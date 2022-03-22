@@ -1,5 +1,5 @@
 {
-  description = ''Nim implementation of NanoID, a tiny, secure, URL-friendly, unique string ID generator. Works with Linux and Windows!'';
+  description = ''Nim implementation of NanoID.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-neoid-0_3_0.flake = false;
   inputs.src-neoid-0_3_0.owner = "theAkito";
-  inputs.src-neoid-0_3_0.ref   = "refs/tags/0.3.0";
+  inputs.src-neoid-0_3_0.ref   = "0_3_0";
   inputs.src-neoid-0_3_0.repo  = "nim-neoid";
   inputs.src-neoid-0_3_0.type  = "github";
   
   inputs."random".owner = "nim-nix-pkgs";
   inputs."random".ref   = "master";
   inputs."random".repo  = "random";
+  inputs."random".dir   = "v0_5_7";
   inputs."random".type  = "github";
   inputs."random".inputs.nixpkgs.follows = "nixpkgs";
   inputs."random".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."winim".owner = "nim-nix-pkgs";
   inputs."winim".ref   = "master";
   inputs."winim".repo  = "winim";
+  inputs."winim".dir   = "3_8_0";
   inputs."winim".type  = "github";
   inputs."winim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."winim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

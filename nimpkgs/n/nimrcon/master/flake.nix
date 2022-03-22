@@ -1,5 +1,5 @@
 {
-  description = ''Simple RCON client in Nim lang.'';
+  description = ''Simple RCON client'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nimrcon-master.flake = false;
   inputs.src-nimrcon-master.owner = "mcilya";
-  inputs.src-nimrcon-master.ref   = "refs/heads/master";
+  inputs.src-nimrcon-master.ref   = "master";
   inputs.src-nimrcon-master.repo  = "nimrcon";
   inputs.src-nimrcon-master.type  = "github";
   
   inputs."struct".owner = "nim-nix-pkgs";
   inputs."struct".ref   = "master";
   inputs."struct".repo  = "struct";
+  inputs."struct".dir   = "v0_2_3";
   inputs."struct".type  = "github";
   inputs."struct".inputs.nixpkgs.follows = "nixpkgs";
   inputs."struct".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -9,13 +9,14 @@
   
   inputs.src-nicoru-develop.flake = false;
   inputs.src-nicoru-develop.owner = "fox0430";
-  inputs.src-nicoru-develop.ref   = "refs/heads/develop";
+  inputs.src-nicoru-develop.ref   = "develop";
   inputs.src-nicoru-develop.repo  = "nicoru";
   inputs.src-nicoru-develop.type  = "github";
   
   inputs."seccomp".owner = "nim-nix-pkgs";
   inputs."seccomp".ref   = "master";
   inputs."seccomp".repo  = "seccomp";
+  inputs."seccomp".dir   = "0_2_1";
   inputs."seccomp".type  = "github";
   inputs."seccomp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."seccomp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

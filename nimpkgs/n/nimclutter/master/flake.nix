@@ -9,13 +9,14 @@
   
   inputs.src-nimclutter-master.flake = false;
   inputs.src-nimclutter-master.owner = "KeepCoolWithCoolidge";
-  inputs.src-nimclutter-master.ref   = "refs/heads/master";
+  inputs.src-nimclutter-master.ref   = "master";
   inputs.src-nimclutter-master.repo  = "nimclutter";
   inputs.src-nimclutter-master.type  = "github";
   
   inputs."oldgtk3".owner = "nim-nix-pkgs";
   inputs."oldgtk3".ref   = "master";
   inputs."oldgtk3".repo  = "oldgtk3";
+  inputs."oldgtk3".dir   = "";
   inputs."oldgtk3".type  = "github";
   inputs."oldgtk3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."oldgtk3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

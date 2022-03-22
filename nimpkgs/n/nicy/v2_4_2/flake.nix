@@ -9,7 +9,7 @@
   
   inputs.src-nicy-v2_4_2.flake = false;
   inputs.src-nicy-v2_4_2.owner = "icyphox";
-  inputs.src-nicy-v2_4_2.ref   = "refs/tags/v2.4.2";
+  inputs.src-nicy-v2_4_2.ref   = "v2_4_2";
   inputs.src-nicy-v2_4_2.repo  = "nicy";
   inputs.src-nicy-v2_4_2.type  = "github";
   

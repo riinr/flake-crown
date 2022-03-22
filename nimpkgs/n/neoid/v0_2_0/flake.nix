@@ -9,7 +9,7 @@
   
   inputs.src-neoid-v0_2_0.flake = false;
   inputs.src-neoid-v0_2_0.owner = "theAkito";
-  inputs.src-neoid-v0_2_0.ref   = "refs/tags/v0.2.0";
+  inputs.src-neoid-v0_2_0.ref   = "v0_2_0";
   inputs.src-neoid-v0_2_0.repo  = "nim-neoid";
   inputs.src-neoid-v0_2_0.type  = "github";
   

@@ -9,7 +9,7 @@
   
   inputs.src-niup-master.flake = false;
   inputs.src-niup-master.owner = "dariolah";
-  inputs.src-niup-master.ref   = "refs/heads/master";
+  inputs.src-niup-master.ref   = "master";
   inputs.src-niup-master.repo  = "niup";
   inputs.src-niup-master.type  = "github";
   

@@ -9,13 +9,14 @@
   
   inputs.src-nwsync-0_3_0.flake = false;
   inputs.src-nwsync-0_3_0.owner = "Beamdog";
-  inputs.src-nwsync-0_3_0.ref   = "refs/tags/0.3.0";
+  inputs.src-nwsync-0_3_0.ref   = "0_3_0";
   inputs.src-nwsync-0_3_0.repo  = "nwsync";
   inputs.src-nwsync-0_3_0.type  = "github";
   
   inputs."neverwinter".owner = "nim-nix-pkgs";
   inputs."neverwinter".ref   = "master";
   inputs."neverwinter".repo  = "neverwinter";
+  inputs."neverwinter".dir   = "1_5_5";
   inputs."neverwinter".type  = "github";
   inputs."neverwinter".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neverwinter".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

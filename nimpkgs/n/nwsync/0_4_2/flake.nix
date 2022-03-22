@@ -9,13 +9,14 @@
   
   inputs.src-nwsync-0_4_2.flake = false;
   inputs.src-nwsync-0_4_2.owner = "Beamdog";
-  inputs.src-nwsync-0_4_2.ref   = "refs/tags/0.4.2";
+  inputs.src-nwsync-0_4_2.ref   = "0_4_2";
   inputs.src-nwsync-0_4_2.repo  = "nwsync";
   inputs.src-nwsync-0_4_2.type  = "github";
   
   inputs."neverwinter".owner = "nim-nix-pkgs";
   inputs."neverwinter".ref   = "master";
   inputs."neverwinter".repo  = "neverwinter";
+  inputs."neverwinter".dir   = "1_5_5";
   inputs."neverwinter".type  = "github";
   inputs."neverwinter".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neverwinter".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."docopt".owner = "nim-nix-pkgs";
   inputs."docopt".ref   = "master";
   inputs."docopt".repo  = "docopt";
+  inputs."docopt".dir   = "v0_6_8";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

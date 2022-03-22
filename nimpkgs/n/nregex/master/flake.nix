@@ -9,13 +9,14 @@
   
   inputs.src-nregex-master.flake = false;
   inputs.src-nregex-master.owner = "nitely";
-  inputs.src-nregex-master.ref   = "refs/heads/master";
+  inputs.src-nregex-master.ref   = "master";
   inputs.src-nregex-master.repo  = "nregex";
   inputs.src-nregex-master.type  = "github";
   
   inputs."unicodedb".owner = "nim-nix-pkgs";
   inputs."unicodedb".ref   = "master";
   inputs."unicodedb".repo  = "unicodedb";
+  inputs."unicodedb".dir   = "v0_10_0";
   inputs."unicodedb".type  = "github";
   inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."unicodeplus".owner = "nim-nix-pkgs";
   inputs."unicodeplus".ref   = "master";
   inputs."unicodeplus".repo  = "unicodeplus";
+  inputs."unicodeplus".dir   = "v0_8_0";
   inputs."unicodeplus".type  = "github";
   inputs."unicodeplus".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unicodeplus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -1,5 +1,5 @@
 {
-  description = ''Convert a Nim file or string to Markdown'';
+  description = ''Convert Nim code and files to Markdown'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimtomd-v0_2_0.flake = false;
   inputs.src-nimtomd-v0_2_0.owner = "ThomasTJdev";
-  inputs.src-nimtomd-v0_2_0.ref   = "refs/tags/v0.2.0";
+  inputs.src-nimtomd-v0_2_0.ref   = "v0_2_0";
   inputs.src-nimtomd-v0_2_0.repo  = "nimtomd";
   inputs.src-nimtomd-v0_2_0.type  = "github";
   

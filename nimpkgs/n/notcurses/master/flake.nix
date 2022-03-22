@@ -1,5 +1,5 @@
 {
-  description = ''A low-level Nim wrapper for Notcurses: blingful TUIs and character graphics'';
+  description = ''A wrapper for Notcurses'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-notcurses-master.flake = false;
   inputs.src-notcurses-master.owner = "michaelsbradleyjr";
-  inputs.src-notcurses-master.ref   = "refs/heads/master";
+  inputs.src-notcurses-master.ref   = "master";
   inputs.src-notcurses-master.repo  = "nim-notcurses";
   inputs.src-notcurses-master.type  = "github";
   
   inputs."nimterop".owner = "nim-nix-pkgs";
   inputs."nimterop".ref   = "master";
   inputs."nimterop".repo  = "nimterop";
+  inputs."nimterop".dir   = "v0_6_13";
   inputs."nimterop".type  = "github";
   inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

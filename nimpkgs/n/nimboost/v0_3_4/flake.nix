@@ -9,7 +9,7 @@
   
   inputs.src-nimboost-v0_3_4.flake = false;
   inputs.src-nimboost-v0_3_4.owner = "vegansk";
-  inputs.src-nimboost-v0_3_4.ref   = "refs/tags/v0.3.4";
+  inputs.src-nimboost-v0_3_4.ref   = "v0_3_4";
   inputs.src-nimboost-v0_3_4.repo  = "nimboost";
   inputs.src-nimboost-v0_3_4.type  = "github";
   

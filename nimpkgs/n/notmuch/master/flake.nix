@@ -1,5 +1,5 @@
 {
-  description = ''wrapper for the notmuch mail library'';
+  description = ''wrapper for the notmuch 0.28.0 mail library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-notmuch-master.flake = false;
   inputs.src-notmuch-master.owner = "samdmarshall";
-  inputs.src-notmuch-master.ref   = "refs/heads/master";
+  inputs.src-notmuch-master.ref   = "master";
   inputs.src-notmuch-master.repo  = "notmuch.nim";
   inputs.src-notmuch-master.type  = "github";
   

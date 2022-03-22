@@ -1,5 +1,5 @@
 {
-  description = ''Actors library for Nim inspired by akka-actors'';
+  description = ''Actors library for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nimactors-v0_1_0.flake = false;
   inputs.src-nimactors-v0_1_0.owner = "vegansk";
-  inputs.src-nimactors-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-nimactors-v0_1_0.ref   = "v0_1_0";
   inputs.src-nimactors-v0_1_0.repo  = "nimactors";
   inputs.src-nimactors-v0_1_0.type  = "github";
   
   inputs."nimfp".owner = "nim-nix-pkgs";
   inputs."nimfp".ref   = "master";
   inputs."nimfp".repo  = "nimfp";
+  inputs."nimfp".dir   = "v0_4_4";
   inputs."nimfp".type  = "github";
   inputs."nimfp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimfp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."nimboost".owner = "nim-nix-pkgs";
   inputs."nimboost".ref   = "master";
   inputs."nimboost".repo  = "nimboost";
+  inputs."nimboost".dir   = "v0_5_5";
   inputs."nimboost".type  = "github";
   inputs."nimboost".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimboost".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

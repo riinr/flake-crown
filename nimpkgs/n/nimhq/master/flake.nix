@@ -9,7 +9,7 @@
   
   inputs.src-nimhq-master.flake = false;
   inputs.src-nimhq-master.owner = "sillibird";
-  inputs.src-nimhq-master.ref   = "refs/heads/master";
+  inputs.src-nimhq-master.ref   = "master";
   inputs.src-nimhq-master.repo  = "nimhq";
   inputs.src-nimhq-master.type  = "github";
   

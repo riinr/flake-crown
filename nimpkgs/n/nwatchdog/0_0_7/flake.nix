@@ -9,7 +9,7 @@
   
   inputs.src-nwatchdog-0_0_7.flake = false;
   inputs.src-nwatchdog-0_0_7.owner = "zendbit";
-  inputs.src-nwatchdog-0_0_7.ref   = "refs/tags/0.0.7";
+  inputs.src-nwatchdog-0_0_7.ref   = "0_0_7";
   inputs.src-nwatchdog-0_0_7.repo  = "nim.nwatchdog";
   inputs.src-nwatchdog-0_0_7.type  = "github";
   

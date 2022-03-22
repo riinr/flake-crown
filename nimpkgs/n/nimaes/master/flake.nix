@@ -1,5 +1,5 @@
 {
-  description = ''Advanced Encryption Standard, Rijndael Algorithm'';
+  description = ''AES encryption algorithm'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimAES-master.flake = false;
   inputs.src-nimAES-master.owner = "jangko";
-  inputs.src-nimAES-master.ref   = "refs/heads/master";
+  inputs.src-nimAES-master.ref   = "master";
   inputs.src-nimAES-master.repo  = "nimAES";
   inputs.src-nimAES-master.type  = "github";
   

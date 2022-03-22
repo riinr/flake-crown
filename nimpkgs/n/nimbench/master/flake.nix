@@ -1,5 +1,5 @@
 {
-  description = ''Micro benchmarking tool to measure speed of code, with the goal of optimizing it.'';
+  description = ''Micro benchmarking tool for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nimbench-master.flake = false;
   inputs.src-nimbench-master.owner = "ivankoster";
-  inputs.src-nimbench-master.ref   = "refs/heads/master";
-  inputs.src-nimbench-master.repo  = "nimbench";
+  inputs.src-nimbench-master.ref   = "master";
+  inputs.src-nimbench-master.repo  = "nimbench.git";
   inputs.src-nimbench-master.type  = "github";
   
   inputs."strfmt".owner = "nim-nix-pkgs";
   inputs."strfmt".ref   = "master";
   inputs."strfmt".repo  = "strfmt";
+  inputs."strfmt".dir   = "";
   inputs."strfmt".type  = "github";
   inputs."strfmt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."strfmt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

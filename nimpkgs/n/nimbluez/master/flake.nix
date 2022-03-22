@@ -9,8 +9,8 @@
   
   inputs.src-nimbluez-master.flake = false;
   inputs.src-nimbluez-master.owner = "Electric-Blue";
-  inputs.src-nimbluez-master.ref   = "refs/heads/master";
-  inputs.src-nimbluez-master.repo  = "NimBluez";
+  inputs.src-nimbluez-master.ref   = "master";
+  inputs.src-nimbluez-master.repo  = "NimBluez.git";
   inputs.src-nimbluez-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

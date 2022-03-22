@@ -9,13 +9,14 @@
   
   inputs.src-nimlibxlsxwriter-v0_1_3.flake = false;
   inputs.src-nimlibxlsxwriter-v0_1_3.owner = "ThomasTJdev";
-  inputs.src-nimlibxlsxwriter-v0_1_3.ref   = "refs/tags/v0.1.3";
+  inputs.src-nimlibxlsxwriter-v0_1_3.ref   = "v0_1_3";
   inputs.src-nimlibxlsxwriter-v0_1_3.repo  = "nimlibxlsxwriter";
   inputs.src-nimlibxlsxwriter-v0_1_3.type  = "github";
   
   inputs."nimgen".owner = "nim-nix-pkgs";
   inputs."nimgen".ref   = "master";
   inputs."nimgen".repo  = "nimgen";
+  inputs."nimgen".dir   = "";
   inputs."nimgen".type  = "github";
   inputs."nimgen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimgen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."c2nim".owner = "nim-nix-pkgs";
   inputs."c2nim".ref   = "master";
   inputs."c2nim".repo  = "c2nim";
+  inputs."c2nim".dir   = "0_9_18";
   inputs."c2nim".type  = "github";
   inputs."c2nim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."c2nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

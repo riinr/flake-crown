@@ -9,7 +9,7 @@
   
   inputs.src-nimcdl-master.flake = false;
   inputs.src-nimcdl-master.owner = "endes123321";
-  inputs.src-nimcdl-master.ref   = "refs/heads/master";
+  inputs.src-nimcdl-master.ref   = "master";
   inputs.src-nimcdl-master.repo  = "nimcdl";
   inputs.src-nimcdl-master.type  = "gitlab";
   

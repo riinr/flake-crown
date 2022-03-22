@@ -9,13 +9,14 @@
   
   inputs.src-nimarrow-master.flake = false;
   inputs.src-nimarrow-master.owner = "emef";
-  inputs.src-nimarrow-master.ref   = "refs/heads/master";
+  inputs.src-nimarrow-master.ref   = "master";
   inputs.src-nimarrow-master.repo  = "nimarrow";
   inputs.src-nimarrow-master.type  = "github";
   
   inputs."nimarrow_glib".owner = "nim-nix-pkgs";
   inputs."nimarrow_glib".ref   = "master";
   inputs."nimarrow_glib".repo  = "nimarrow_glib";
+  inputs."nimarrow_glib".dir   = "v0_1_3";
   inputs."nimarrow_glib".type  = "github";
   inputs."nimarrow_glib".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimarrow_glib".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

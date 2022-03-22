@@ -9,13 +9,14 @@
   
   inputs.src-nimfcuk-0_1_1.flake = false;
   inputs.src-nimfcuk-0_1_1.owner = "2KAbhishek";
-  inputs.src-nimfcuk-0_1_1.ref   = "refs/tags/0.1.1";
+  inputs.src-nimfcuk-0_1_1.ref   = "0_1_1";
   inputs.src-nimfcuk-0_1_1.repo  = "nimfcuk";
   inputs.src-nimfcuk-0_1_1.type  = "github";
   
   inputs."docopt".owner = "nim-nix-pkgs";
   inputs."docopt".ref   = "master";
   inputs."docopt".repo  = "docopt";
+  inputs."docopt".dir   = "v0_6_8";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

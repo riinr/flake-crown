@@ -1,5 +1,5 @@
 {
-  description = ''The Levenshtein Nim module contains functions for fast computation of Levenshtein distance and string similarity.'';
+  description = ''A wrapper for algorithms from python-Levenshtein package.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimlevenshtein-0_1_0.flake = false;
   inputs.src-nimlevenshtein-0_1_0.owner = "oswjk";
-  inputs.src-nimlevenshtein-0_1_0.ref   = "refs/tags/0.1.0";
+  inputs.src-nimlevenshtein-0_1_0.ref   = "0_1_0";
   inputs.src-nimlevenshtein-0_1_0.repo  = "nimlevenshtein";
   inputs.src-nimlevenshtein-0_1_0.type  = "github";
   

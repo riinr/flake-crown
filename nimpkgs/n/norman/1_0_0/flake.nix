@@ -9,13 +9,14 @@
   
   inputs.src-norman-1_0_0.flake = false;
   inputs.src-norman-1_0_0.owner = "moigagoo";
-  inputs.src-norman-1_0_0.ref   = "refs/tags/1.0.0";
+  inputs.src-norman-1_0_0.ref   = "1_0_0";
   inputs.src-norman-1_0_0.repo  = "norman";
   inputs.src-norman-1_0_0.type  = "github";
   
   inputs."norm".owner = "nim-nix-pkgs";
   inputs."norm".ref   = "master";
   inputs."norm".repo  = "norm";
+  inputs."norm".dir   = "";
   inputs."norm".type  = "github";
   inputs."norm".inputs.nixpkgs.follows = "nixpkgs";
   inputs."norm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

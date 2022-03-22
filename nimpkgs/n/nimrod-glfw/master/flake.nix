@@ -9,7 +9,7 @@
   
   inputs.src-nimrod-glfw-master.flake = false;
   inputs.src-nimrod-glfw-master.owner = "rafaelvasco";
-  inputs.src-nimrod-glfw-master.ref   = "refs/heads/master";
+  inputs.src-nimrod-glfw-master.ref   = "master";
   inputs.src-nimrod-glfw-master.repo  = "nimrod-glfw";
   inputs.src-nimrod-glfw-master.type  = "github";
   

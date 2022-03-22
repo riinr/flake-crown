@@ -9,8 +9,8 @@
   
   inputs.src-nest-develop.flake = false;
   inputs.src-nest-develop.owner = "kedean";
-  inputs.src-nest-develop.ref   = "refs/heads/develop";
-  inputs.src-nest-develop.repo  = "nest";
+  inputs.src-nest-develop.ref   = "develop";
+  inputs.src-nest-develop.repo  = "nest.git";
   inputs.src-nest-develop.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

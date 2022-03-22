@@ -1,5 +1,5 @@
 {
-  description = ''Nancy - Nim fancy ANSI tables'';
+  description = ''Easiest way to print tables in your terminal with full ANSI support and custom style'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nancy-master.flake = false;
   inputs.src-nancy-master.owner = "PMunch";
-  inputs.src-nancy-master.ref   = "refs/heads/master";
+  inputs.src-nancy-master.ref   = "master";
   inputs.src-nancy-master.repo  = "nancy";
   inputs.src-nancy-master.type  = "github";
   
   inputs."ansiparse".owner = "nim-nix-pkgs";
   inputs."ansiparse".ref   = "master";
   inputs."ansiparse".repo  = "ansiparse";
+  inputs."ansiparse".dir   = "v0_2_0";
   inputs."ansiparse".type  = "github";
   inputs."ansiparse".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ansiparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

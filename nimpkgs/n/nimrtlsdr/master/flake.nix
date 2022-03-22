@@ -9,7 +9,7 @@
   
   inputs.src-nimrtlsdr-master.flake = false;
   inputs.src-nimrtlsdr-master.owner = "jpoirier";
-  inputs.src-nimrtlsdr-master.ref   = "refs/heads/master";
+  inputs.src-nimrtlsdr-master.ref   = "master";
   inputs.src-nimrtlsdr-master.repo  = "nimrtlsdr";
   inputs.src-nimrtlsdr-master.type  = "github";
   

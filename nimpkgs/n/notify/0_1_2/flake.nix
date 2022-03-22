@@ -9,7 +9,7 @@
   
   inputs.src-notify-0_1_2.flake = false;
   inputs.src-notify-0_1_2.owner = "xbello";
-  inputs.src-notify-0_1_2.ref   = "refs/tags/0.1.2";
+  inputs.src-notify-0_1_2.ref   = "0_1_2";
   inputs.src-notify-0_1_2.repo  = "notify-nim";
   inputs.src-notify-0_1_2.type  = "github";
   

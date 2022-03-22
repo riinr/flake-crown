@@ -9,7 +9,7 @@
   
   inputs.src-nimkalc-main.flake = false;
   inputs.src-nimkalc-main.owner = "nocturn9x";
-  inputs.src-nimkalc-main.ref   = "refs/heads/main";
+  inputs.src-nimkalc-main.ref   = "main";
   inputs.src-nimkalc-main.repo  = "nimkalc";
   inputs.src-nimkalc-main.type  = "github";
   

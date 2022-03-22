@@ -1,5 +1,5 @@
 {
-  description = ''Library for displaying notifications on the desktop'';
+  description = ''GUI notifications for Mac OS X's Notification Center'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-notifications-master.flake = false;
   inputs.src-notifications-master.owner = "dom96";
-  inputs.src-notifications-master.ref   = "refs/heads/master";
+  inputs.src-notifications-master.ref   = "master";
   inputs.src-notifications-master.repo  = "notifications";
   inputs.src-notifications-master.type  = "github";
   

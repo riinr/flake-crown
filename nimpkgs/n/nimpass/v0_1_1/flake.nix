@@ -1,5 +1,5 @@
 {
-  description = ''quickly generate cryptographically secure passwords and phrases'';
+  description = ''quickly generate secure passwords and passphrases'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimpass-v0_1_1.flake = false;
   inputs.src-nimpass-v0_1_1.owner = "xioren";
-  inputs.src-nimpass-v0_1_1.ref   = "refs/tags/v0.1.1";
+  inputs.src-nimpass-v0_1_1.ref   = "v0_1_1";
   inputs.src-nimpass-v0_1_1.repo  = "NimPass";
   inputs.src-nimpass-v0_1_1.type  = "github";
   

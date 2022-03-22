@@ -9,7 +9,7 @@
   
   inputs.src-nimdeps-master.flake = false;
   inputs.src-nimdeps-master.owner = "genotrance";
-  inputs.src-nimdeps-master.ref   = "refs/heads/master";
+  inputs.src-nimdeps-master.ref   = "master";
   inputs.src-nimdeps-master.repo  = "nimdeps";
   inputs.src-nimdeps-master.type  = "github";
   

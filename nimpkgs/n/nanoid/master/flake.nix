@@ -9,13 +9,14 @@
   
   inputs.src-nanoid-master.flake = false;
   inputs.src-nanoid-master.owner = "icyphox";
-  inputs.src-nanoid-master.ref   = "refs/heads/master";
+  inputs.src-nanoid-master.ref   = "master";
   inputs.src-nanoid-master.repo  = "nanoid.nim";
   inputs.src-nanoid-master.type  = "github";
   
   inputs."random".owner = "nim-nix-pkgs";
   inputs."random".ref   = "master";
   inputs."random".repo  = "random";
+  inputs."random".dir   = "v0_5_7";
   inputs."random".type  = "github";
   inputs."random".inputs.nixpkgs.follows = "nixpkgs";
   inputs."random".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

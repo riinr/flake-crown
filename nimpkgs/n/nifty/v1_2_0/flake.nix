@@ -9,7 +9,7 @@
   
   inputs.src-nifty-v1_2_0.flake = false;
   inputs.src-nifty-v1_2_0.owner = "h3rald";
-  inputs.src-nifty-v1_2_0.ref   = "refs/tags/v1.2.0";
+  inputs.src-nifty-v1_2_0.ref   = "v1_2_0";
   inputs.src-nifty-v1_2_0.repo  = "nifty";
   inputs.src-nifty-v1_2_0.type  = "github";
   

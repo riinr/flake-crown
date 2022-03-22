@@ -1,5 +1,5 @@
 {
-  description = ''Small program to grab notifications from freedesktop and output them according to a format'';
+  description = ''Small program to read freedesktop notifications and format them as strings'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-notificatcher-master.flake = false;
   inputs.src-notificatcher-master.owner = "PMunch";
-  inputs.src-notificatcher-master.ref   = "refs/heads/master";
+  inputs.src-notificatcher-master.ref   = "master";
   inputs.src-notificatcher-master.repo  = "notificatcher";
   inputs.src-notificatcher-master.type  = "github";
   
   inputs."dbus".owner = "nim-nix-pkgs";
   inputs."dbus".ref   = "master";
   inputs."dbus".repo  = "dbus";
+  inputs."dbus".dir   = "";
   inputs."dbus".type  = "github";
   inputs."dbus".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dbus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

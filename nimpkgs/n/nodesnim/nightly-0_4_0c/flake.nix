@@ -9,13 +9,14 @@
   
   inputs.src-nodesnim-nightly-0_4_0c.flake = false;
   inputs.src-nodesnim-nightly-0_4_0c.owner = "Ethosa";
-  inputs.src-nodesnim-nightly-0_4_0c.ref   = "refs/tags/nightly-0.4.0c";
+  inputs.src-nodesnim-nightly-0_4_0c.ref   = "nightly-0_4_0c";
   inputs.src-nodesnim-nightly-0_4_0c.repo  = "nodesnim";
   inputs.src-nodesnim-nightly-0_4_0c.type  = "github";
   
   inputs."compiler".owner = "nim-nix-pkgs";
   inputs."compiler".ref   = "master";
   inputs."compiler".repo  = "compiler";
+  inputs."compiler".dir   = "v1_6_4";
   inputs."compiler".type  = "github";
   inputs."compiler".inputs.nixpkgs.follows = "nixpkgs";
   inputs."compiler".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

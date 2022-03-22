@@ -9,7 +9,7 @@
   
   inputs.src-nim-libgd-master.flake = false;
   inputs.src-nim-libgd-master.owner = "mrhdias";
-  inputs.src-nim-libgd-master.ref   = "refs/heads/master";
+  inputs.src-nim-libgd-master.ref   = "master";
   inputs.src-nim-libgd-master.repo  = "nim-libgd";
   inputs.src-nim-libgd-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''A Nim-based, non-graphical application designed to measure the amount of time elapsed from its activation to deactivation, includes total elapsed time, lap, and split times.'';
+  description = ''Command line stopwatch written in Nim with split / lap support'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,8 +9,8 @@
   
   inputs.src-nimstopwatch-master.flake = false;
   inputs.src-nimstopwatch-master.owner = "twist-vector";
-  inputs.src-nimstopwatch-master.ref   = "refs/heads/master";
-  inputs.src-nimstopwatch-master.repo  = "nim-stopwatch";
+  inputs.src-nimstopwatch-master.ref   = "master";
+  inputs.src-nimstopwatch-master.repo  = "nim-stopwatch.git";
   inputs.src-nimstopwatch-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

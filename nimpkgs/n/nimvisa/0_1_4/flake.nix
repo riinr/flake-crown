@@ -9,7 +9,7 @@
   
   inputs.src-nimvisa-0_1_4.flake = false;
   inputs.src-nimvisa-0_1_4.owner = "leeooox";
-  inputs.src-nimvisa-0_1_4.ref   = "refs/tags/0.1.4";
+  inputs.src-nimvisa-0_1_4.ref   = "0_1_4";
   inputs.src-nimvisa-0_1_4.repo  = "nimvisa";
   inputs.src-nimvisa-0_1_4.type  = "github";
   

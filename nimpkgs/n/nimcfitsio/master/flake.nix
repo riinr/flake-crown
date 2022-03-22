@@ -1,5 +1,5 @@
 {
-  description = ''Bindings for CFITSIO, a library to read/write FITSIO images and tables.'';
+  description = ''Bindings for the CFITSIO library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,8 +9,8 @@
   
   inputs.src-nimcfitsio-master.flake = false;
   inputs.src-nimcfitsio-master.owner = "ziotom78";
-  inputs.src-nimcfitsio-master.ref   = "refs/heads/master";
-  inputs.src-nimcfitsio-master.repo  = "nimcfitsio";
+  inputs.src-nimcfitsio-master.ref   = "master";
+  inputs.src-nimcfitsio-master.repo  = "nimcfitsio.git";
   inputs.src-nimcfitsio-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

@@ -1,5 +1,5 @@
 {
-  description = ''Configurable Nim code linter / formatter / style checker with heuristics'';
+  description = ''Nim restyling tool'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nimfmt-0_2_0.flake = false;
   inputs.src-nimfmt-0_2_0.owner = "FedericoCeratto";
-  inputs.src-nimfmt-0_2_0.ref   = "refs/tags/0.2.0";
+  inputs.src-nimfmt-0_2_0.ref   = "0_2_0";
   inputs.src-nimfmt-0_2_0.repo  = "nimfmt";
   inputs.src-nimfmt-0_2_0.type  = "github";
   
   inputs."compiler".owner = "nim-nix-pkgs";
   inputs."compiler".ref   = "master";
   inputs."compiler".repo  = "compiler";
+  inputs."compiler".dir   = "";
   inputs."compiler".type  = "github";
   inputs."compiler".inputs.nixpkgs.follows = "nixpkgs";
   inputs."compiler".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

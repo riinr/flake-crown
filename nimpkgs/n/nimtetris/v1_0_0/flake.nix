@@ -9,13 +9,14 @@
   
   inputs.src-nimtetris-v1_0_0.flake = false;
   inputs.src-nimtetris-v1_0_0.owner = "jiro4989";
-  inputs.src-nimtetris-v1_0_0.ref   = "refs/tags/v1.0.0";
+  inputs.src-nimtetris-v1_0_0.ref   = "v1_0_0";
   inputs.src-nimtetris-v1_0_0.repo  = "nimtetris";
   inputs.src-nimtetris-v1_0_0.type  = "github";
   
   inputs."illwill".owner = "nim-nix-pkgs";
   inputs."illwill".ref   = "master";
   inputs."illwill".repo  = "illwill";
+  inputs."illwill".dir   = "v0_2_0";
   inputs."illwill".type  = "github";
   inputs."illwill".inputs.nixpkgs.follows = "nixpkgs";
   inputs."illwill".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

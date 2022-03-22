@@ -9,13 +9,14 @@
   
   inputs.src-ndns-main.flake = false;
   inputs.src-ndns-main.owner = "rockcavera";
-  inputs.src-ndns-main.ref   = "refs/heads/main";
+  inputs.src-ndns-main.ref   = "main";
   inputs.src-ndns-main.repo  = "nim-ndns";
   inputs.src-ndns-main.type  = "github";
   
   inputs."dnsprotocol".owner = "nim-nix-pkgs";
   inputs."dnsprotocol".ref   = "master";
   inputs."dnsprotocol".repo  = "dnsprotocol";
+  inputs."dnsprotocol".dir   = "";
   inputs."dnsprotocol".type  = "github";
   inputs."dnsprotocol".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dnsprotocol".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."stew".owner = "nim-nix-pkgs";
   inputs."stew".ref   = "master";
   inputs."stew".repo  = "stew";
+  inputs."stew".dir   = "";
   inputs."stew".type  = "github";
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

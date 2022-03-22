@@ -9,7 +9,7 @@
   
   inputs.src-noaa-master.flake = false;
   inputs.src-noaa-master.owner = "achesak";
-  inputs.src-noaa-master.ref   = "refs/heads/master";
+  inputs.src-noaa-master.ref   = "master";
   inputs.src-noaa-master.repo  = "nim-noaa";
   inputs.src-noaa-master.type  = "github";
   

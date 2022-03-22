@@ -1,5 +1,5 @@
 {
-  description = ''A GiantBomb-wiki wrapper for nim'';
+  description = ''A GiantBomb-wiki wrapper for nim '';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimbomb-master.flake = false;
   inputs.src-nimbomb-master.owner = "Tyler-Yocolano";
-  inputs.src-nimbomb-master.ref   = "refs/heads/master";
+  inputs.src-nimbomb-master.ref   = "master";
   inputs.src-nimbomb-master.repo  = "nimbomb";
   inputs.src-nimbomb-master.type  = "github";
   

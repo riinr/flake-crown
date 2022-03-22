@@ -1,5 +1,5 @@
 {
-  description = ''Nimble package manager'';
+  description = ''Nim package manager.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimble-v0_11_2.flake = false;
   inputs.src-nimble-v0_11_2.owner = "nim-lang";
-  inputs.src-nimble-v0_11_2.ref   = "refs/tags/v0.11.2";
+  inputs.src-nimble-v0_11_2.ref   = "v0_11_2";
   inputs.src-nimble-v0_11_2.repo  = "nimble";
   inputs.src-nimble-v0_11_2.type  = "github";
   

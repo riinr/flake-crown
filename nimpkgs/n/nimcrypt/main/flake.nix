@@ -1,5 +1,5 @@
 {
-  description = ''Implementation of Unix crypt with support for Crypt-MD5, Crypt-SHA256 and Crypt-SHA512'';
+  description = ''Nim implementation of MD5, SHA-256 and SHA-512 Unix crypt'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nimcrypt-main.flake = false;
   inputs.src-nimcrypt-main.owner = "napalu";
-  inputs.src-nimcrypt-main.ref   = "refs/heads/main";
+  inputs.src-nimcrypt-main.ref   = "main";
   inputs.src-nimcrypt-main.repo  = "nimcrypt";
   inputs.src-nimcrypt-main.type  = "github";
   
   inputs."nimcrypto".owner = "nim-nix-pkgs";
   inputs."nimcrypto".ref   = "master";
   inputs."nimcrypto".repo  = "nimcrypto";
+  inputs."nimcrypto".dir   = "";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

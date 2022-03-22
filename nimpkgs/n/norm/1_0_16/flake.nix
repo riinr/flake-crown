@@ -1,5 +1,5 @@
 {
-  description = ''Nim ORM.'';
+  description = ''Nim ORM for SQLite and PostgreSQL.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-norm-1_0_16.flake = false;
   inputs.src-norm-1_0_16.owner = "moigagoo";
-  inputs.src-norm-1_0_16.ref   = "refs/tags/1.0.16";
+  inputs.src-norm-1_0_16.ref   = "1_0_16";
   inputs.src-norm-1_0_16.repo  = "norm";
   inputs.src-norm-1_0_16.type  = "github";
   
   inputs."ndb".owner = "nim-nix-pkgs";
   inputs."ndb".ref   = "master";
   inputs."ndb".repo  = "ndb";
+  inputs."ndb".dir   = "v0_19_9";
   inputs."ndb".type  = "github";
   inputs."ndb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ndb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -1,5 +1,5 @@
 {
-  description = ''Linear algebra for Nim'';
+  description = ''Linear Algebra for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-neo-0_3_1.flake = false;
   inputs.src-neo-0_3_1.owner = "andreaferretti";
-  inputs.src-neo-0_3_1.ref   = "refs/tags/0.3.1";
+  inputs.src-neo-0_3_1.ref   = "0_3_1";
   inputs.src-neo-0_3_1.repo  = "neo";
   inputs.src-neo-0_3_1.type  = "github";
   
   inputs."nimblas".owner = "nim-nix-pkgs";
   inputs."nimblas".ref   = "master";
   inputs."nimblas".repo  = "nimblas";
+  inputs."nimblas".dir   = "0_2_2";
   inputs."nimblas".type  = "github";
   inputs."nimblas".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimblas".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."nimcuda".owner = "nim-nix-pkgs";
   inputs."nimcuda".ref   = "master";
   inputs."nimcuda".repo  = "nimcuda";
+  inputs."nimcuda".dir   = "0_1_7";
   inputs."nimcuda".type  = "github";
   inputs."nimcuda".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcuda".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."nimlapack".owner = "nim-nix-pkgs";
   inputs."nimlapack".ref   = "master";
   inputs."nimlapack".repo  = "nimlapack";
+  inputs."nimlapack".dir   = "0_2_0";
   inputs."nimlapack".type  = "github";
   inputs."nimlapack".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimlapack".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

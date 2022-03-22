@@ -1,5 +1,5 @@
 {
-  description = ''A collection of numerical methods written in Nim'';
+  description = ''A collection of numerical methods written in Nim. Current features: integration, ode.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-numericalnim-v0_2.flake = false;
   inputs.src-numericalnim-v0_2.owner = "SciNim";
-  inputs.src-numericalnim-v0_2.ref   = "refs/tags/v0.2";
+  inputs.src-numericalnim-v0_2.ref   = "v0_2";
   inputs.src-numericalnim-v0_2.repo  = "numericalnim";
   inputs.src-numericalnim-v0_2.type  = "github";
   
   inputs."arraymancer".owner = "nim-nix-pkgs";
   inputs."arraymancer".ref   = "master";
   inputs."arraymancer".repo  = "arraymancer";
+  inputs."arraymancer".dir   = "v0_7_11";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

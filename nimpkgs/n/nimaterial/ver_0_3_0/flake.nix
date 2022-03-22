@@ -9,13 +9,14 @@
   
   inputs.src-nimaterial-ver_0_3_0.flake = false;
   inputs.src-nimaterial-ver_0_3_0.owner = "momeemt";
-  inputs.src-nimaterial-ver_0_3_0.ref   = "refs/tags/ver.0.3.0";
+  inputs.src-nimaterial-ver_0_3_0.ref   = "ver_0_3_0";
   inputs.src-nimaterial-ver_0_3_0.repo  = "nimaterial";
   inputs.src-nimaterial-ver_0_3_0.type  = "github";
   
   inputs."palette".owner = "nim-nix-pkgs";
   inputs."palette".ref   = "master";
   inputs."palette".repo  = "palette";
+  inputs."palette".dir   = "0_2_0";
   inputs."palette".type  = "github";
   inputs."palette".inputs.nixpkgs.follows = "nixpkgs";
   inputs."palette".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

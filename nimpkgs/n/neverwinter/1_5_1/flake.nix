@@ -1,5 +1,5 @@
 {
-  description = ''Neverwinter Nights 1 data accessor library'';
+  description = ''Neverwinter Nights 1: Enhanced Edition data accessor library and utilities'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-neverwinter-1_5_1.flake = false;
   inputs.src-neverwinter-1_5_1.owner = "niv";
-  inputs.src-neverwinter-1_5_1.ref   = "refs/tags/1.5.1";
+  inputs.src-neverwinter-1_5_1.ref   = "1_5_1";
   inputs.src-neverwinter-1_5_1.repo  = "neverwinter.nim";
   inputs.src-neverwinter-1_5_1.type  = "github";
   
   inputs."docopt".owner = "nim-nix-pkgs";
   inputs."docopt".ref   = "master";
   inputs."docopt".repo  = "docopt";
+  inputs."docopt".dir   = "v0_6_8";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

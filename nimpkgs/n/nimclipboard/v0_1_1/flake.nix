@@ -9,13 +9,14 @@
   
   inputs.src-nimclipboard-v0_1_1.flake = false;
   inputs.src-nimclipboard-v0_1_1.owner = "genotrance";
-  inputs.src-nimclipboard-v0_1_1.ref   = "refs/tags/v0.1.1";
+  inputs.src-nimclipboard-v0_1_1.ref   = "v0_1_1";
   inputs.src-nimclipboard-v0_1_1.repo  = "nimclipboard";
   inputs.src-nimclipboard-v0_1_1.type  = "github";
   
   inputs."nimgen".owner = "nim-nix-pkgs";
   inputs."nimgen".ref   = "master";
   inputs."nimgen".repo  = "nimgen";
+  inputs."nimgen".dir   = "v0_5_1";
   inputs."nimgen".type  = "github";
   inputs."nimgen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimgen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

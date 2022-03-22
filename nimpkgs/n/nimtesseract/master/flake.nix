@@ -9,13 +9,14 @@
   
   inputs.src-nimtesseract-master.flake = false;
   inputs.src-nimtesseract-master.owner = "DavideGalilei";
-  inputs.src-nimtesseract-master.ref   = "refs/heads/master";
+  inputs.src-nimtesseract-master.ref   = "master";
   inputs.src-nimtesseract-master.repo  = "nimtesseract";
   inputs.src-nimtesseract-master.type  = "github";
   
   inputs."pixie".owner = "nim-nix-pkgs";
   inputs."pixie".ref   = "master";
   inputs."pixie".repo  = "pixie";
+  inputs."pixie".dir   = "4_1_0";
   inputs."pixie".type  = "github";
   inputs."pixie".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pixie".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

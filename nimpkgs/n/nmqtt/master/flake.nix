@@ -1,5 +1,5 @@
 {
-  description = ''Native MQTT client library'';
+  description = ''Native MQTT library and binaries for publishing, subscribing and broker'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nmqtt-master.flake = false;
   inputs.src-nmqtt-master.owner = "zevv";
-  inputs.src-nmqtt-master.ref   = "refs/heads/master";
+  inputs.src-nmqtt-master.ref   = "master";
   inputs.src-nmqtt-master.repo  = "nmqtt";
   inputs.src-nmqtt-master.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."bcrypt".owner = "nim-nix-pkgs";
   inputs."bcrypt".ref   = "master";
   inputs."bcrypt".repo  = "bcrypt";
+  inputs."bcrypt".dir   = "";
   inputs."bcrypt".type  = "github";
   inputs."bcrypt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bcrypt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

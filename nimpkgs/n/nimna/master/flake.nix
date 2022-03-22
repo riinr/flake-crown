@@ -1,5 +1,5 @@
 {
-  description = ''Nucleic acid folding and design.'';
+  description = ''Nucleic acid folding in Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimna-master.flake = false;
   inputs.src-nimna-master.owner = "mjendrusch";
-  inputs.src-nimna-master.ref   = "refs/heads/master";
+  inputs.src-nimna-master.ref   = "master";
   inputs.src-nimna-master.repo  = "nimna";
   inputs.src-nimna-master.type  = "github";
   

@@ -9,13 +9,14 @@
   
   inputs.src-nauthy-master.flake = false;
   inputs.src-nauthy-master.owner = "lzoz";
-  inputs.src-nauthy-master.ref   = "refs/heads/master";
+  inputs.src-nauthy-master.ref   = "master";
   inputs.src-nauthy-master.repo  = "nauthy";
   inputs.src-nauthy-master.type  = "github";
   
   inputs."nimsha2".owner = "nim-nix-pkgs";
   inputs."nimsha2".ref   = "master";
   inputs."nimsha2".repo  = "nimsha2";
+  inputs."nimsha2".dir   = "";
   inputs."nimsha2".type  = "github";
   inputs."nimsha2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimsha2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

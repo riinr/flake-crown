@@ -9,7 +9,7 @@
   
   inputs.src-nimage-master.flake = false;
   inputs.src-nimage-master.owner = "ethosa";
-  inputs.src-nimage-master.ref   = "refs/heads/master";
+  inputs.src-nimage-master.ref   = "master";
   inputs.src-nimage-master.repo  = "nimage";
   inputs.src-nimage-master.type  = "github";
   

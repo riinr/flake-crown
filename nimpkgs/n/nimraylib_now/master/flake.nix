@@ -9,13 +9,14 @@
   
   inputs.src-nimraylib_now-master.flake = false;
   inputs.src-nimraylib_now-master.owner = "greenfork";
-  inputs.src-nimraylib_now-master.ref   = "refs/heads/master";
+  inputs.src-nimraylib_now-master.ref   = "master";
   inputs.src-nimraylib_now-master.repo  = "nimraylib_now";
   inputs.src-nimraylib_now-master.type  = "github";
   
   inputs."regex".owner = "nim-nix-pkgs";
   inputs."regex".ref   = "master";
   inputs."regex".repo  = "regex";
+  inputs."regex".dir   = "v0_19_0";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -1,5 +1,5 @@
 {
-  description = ''InfluxDB API client library'';
+  description = ''InfluxDB client library.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimflux-v1_0_0.flake = false;
   inputs.src-nimflux-v1_0_0.owner = "tdely";
-  inputs.src-nimflux-v1_0_0.ref   = "refs/tags/v1.0.0";
+  inputs.src-nimflux-v1_0_0.ref   = "v1_0_0";
   inputs.src-nimflux-v1_0_0.repo  = "nimflux";
   inputs.src-nimflux-v1_0_0.type  = "github";
   

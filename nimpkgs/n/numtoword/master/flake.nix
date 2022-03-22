@@ -9,7 +9,7 @@
   
   inputs.src-numToWord-master.flake = false;
   inputs.src-numToWord-master.owner = "thisago";
-  inputs.src-numToWord-master.ref   = "refs/heads/master";
+  inputs.src-numToWord-master.ref   = "master";
   inputs.src-numToWord-master.repo  = "numToWord";
   inputs.src-numToWord-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Library for querying HTML using CSS-selectors, like JavaScripts document.querySelector'';
+  description = ''Library for querying HTML using CSS-selectors (like JavaScripts document.querySelector)'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimquery-master.flake = false;
   inputs.src-nimquery-master.owner = "GULPF";
-  inputs.src-nimquery-master.ref   = "refs/heads/master";
+  inputs.src-nimquery-master.ref   = "master";
   inputs.src-nimquery-master.repo  = "nimquery";
   inputs.src-nimquery-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''BLAS for Nim'';
+  description = ''BLAS interface for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimblas-0_2_1.flake = false;
   inputs.src-nimblas-0_2_1.owner = "andreaferretti";
-  inputs.src-nimblas-0_2_1.ref   = "refs/tags/0.2.1";
+  inputs.src-nimblas-0_2_1.ref   = "0_2_1";
   inputs.src-nimblas-0_2_1.repo  = "nimblas";
   inputs.src-nimblas-0_2_1.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''A simple GUI front for Nimble.'';
+  description = ''Nimble with GUI'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nimblegui-v0_2_0.flake = false;
   inputs.src-nimblegui-v0_2_0.owner = "ThomasTJdev";
-  inputs.src-nimblegui-v0_2_0.ref   = "refs/tags/v0.2.0";
+  inputs.src-nimblegui-v0_2_0.ref   = "v0_2_0";
   inputs.src-nimblegui-v0_2_0.repo  = "nim_nimble_gui";
   inputs.src-nimblegui-v0_2_0.type  = "github";
   
   inputs."webgui".owner = "nim-nix-pkgs";
   inputs."webgui".ref   = "master";
   inputs."webgui".repo  = "webgui";
+  inputs."webgui".dir   = "0_9_0";
   inputs."webgui".type  = "github";
   inputs."webgui".inputs.nixpkgs.follows = "nixpkgs";
   inputs."webgui".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

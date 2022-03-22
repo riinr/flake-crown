@@ -9,13 +9,14 @@
   
   inputs.src-nimdenter-2022_1_7.flake = false;
   inputs.src-nimdenter-2022_1_7.owner = "xigoi";
-  inputs.src-nimdenter-2022_1_7.ref   = "refs/tags/2022.1.7";
+  inputs.src-nimdenter-2022_1_7.ref   = "2022_1_7";
   inputs.src-nimdenter-2022_1_7.repo  = "nimdenter";
   inputs.src-nimdenter-2022_1_7.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -1,5 +1,5 @@
 {
-  description = ''Lexer Generator and Parser Generator as a Macro Library in Nim.'';
+  description = ''A lexer generator and parser generator package work in Nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nimly-v0_4_1.flake = false;
   inputs.src-nimly-v0_4_1.owner = "loloicci";
-  inputs.src-nimly-v0_4_1.ref   = "refs/tags/v0.4.1";
+  inputs.src-nimly-v0_4_1.ref   = "v0_4_1";
   inputs.src-nimly-v0_4_1.repo  = "nimly";
   inputs.src-nimly-v0_4_1.type  = "github";
   
   inputs."patty".owner = "nim-nix-pkgs";
   inputs."patty".ref   = "master";
   inputs."patty".repo  = "patty";
+  inputs."patty".dir   = "0_3_4";
   inputs."patty".type  = "github";
   inputs."patty".inputs.nixpkgs.follows = "nixpkgs";
   inputs."patty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

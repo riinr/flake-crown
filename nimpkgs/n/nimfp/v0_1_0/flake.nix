@@ -9,7 +9,7 @@
   
   inputs.src-nimfp-v0_1_0.flake = false;
   inputs.src-nimfp-v0_1_0.owner = "vegansk";
-  inputs.src-nimfp-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-nimfp-v0_1_0.ref   = "v0_1_0";
   inputs.src-nimfp-v0_1_0.repo  = "nimfp";
   inputs.src-nimfp-v0_1_0.type  = "github";
   

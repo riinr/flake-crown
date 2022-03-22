@@ -1,5 +1,5 @@
 {
-  description = ''A better regular expression library'';
+  description = ''Yet another PCRE library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,8 +9,8 @@
   
   inputs.src-nre-2_0_0.flake = false;
   inputs.src-nre-2_0_0.owner = "flaviut";
-  inputs.src-nre-2_0_0.ref   = "refs/tags/2.0.0";
-  inputs.src-nre-2_0_0.repo  = "nre";
+  inputs.src-nre-2_0_0.ref   = "2_0_0";
+  inputs.src-nre-2_0_0.repo  = "nre.git";
   inputs.src-nre-2_0_0.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

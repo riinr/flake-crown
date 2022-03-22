@@ -9,7 +9,7 @@
   
   inputs.src-notify-master.flake = false;
   inputs.src-notify-master.owner = "xbello";
-  inputs.src-notify-master.ref   = "refs/heads/master";
+  inputs.src-notify-master.ref   = "master";
   inputs.src-notify-master.repo  = "notify-nim";
   inputs.src-notify-master.type  = "github";
   

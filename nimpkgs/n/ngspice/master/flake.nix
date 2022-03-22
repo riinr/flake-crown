@@ -9,13 +9,14 @@
   
   inputs.src-ngspice-master.flake = false;
   inputs.src-ngspice-master.owner = "haxscramper";
-  inputs.src-ngspice-master.ref   = "refs/heads/master";
+  inputs.src-ngspice-master.ref   = "master";
   inputs.src-ngspice-master.repo  = "ngspice";
   inputs.src-ngspice-master.type  = "github";
   
   inputs."sorta".owner = "nim-nix-pkgs";
   inputs."sorta".ref   = "master";
   inputs."sorta".repo  = "sorta";
+  inputs."sorta".dir   = "";
   inputs."sorta".type  = "github";
   inputs."sorta".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sorta".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."hmisc".owner = "nim-nix-pkgs";
   inputs."hmisc".ref   = "master";
   inputs."hmisc".repo  = "hmisc";
+  inputs."hmisc".dir   = "v0_14_6";
   inputs."hmisc".type  = "github";
   inputs."hmisc".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hmisc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

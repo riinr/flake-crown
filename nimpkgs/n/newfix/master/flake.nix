@@ -9,7 +9,7 @@
   
   inputs.src-newfix-master.flake = false;
   inputs.src-newfix-master.owner = "inv2004";
-  inputs.src-newfix-master.ref   = "refs/heads/master";
+  inputs.src-newfix-master.ref   = "master";
   inputs.src-newfix-master.repo  = "newfix";
   inputs.src-newfix-master.type  = "github";
   

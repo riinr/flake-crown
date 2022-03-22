@@ -9,13 +9,14 @@
   
   inputs.src-nimshell-v0_0_1.flake = false;
   inputs.src-nimshell-v0_0_1.owner = "vegansk";
-  inputs.src-nimshell-v0_0_1.ref   = "refs/tags/v0.0.1";
+  inputs.src-nimshell-v0_0_1.ref   = "v0_0_1";
   inputs.src-nimshell-v0_0_1.repo  = "nimshell";
   inputs.src-nimshell-v0_0_1.type  = "github";
   
   inputs."monad".owner = "nim-nix-pkgs";
   inputs."monad".ref   = "master";
   inputs."monad".repo  = "monad";
+  inputs."monad".dir   = "";
   inputs."monad".type  = "github";
   inputs."monad".inputs.nixpkgs.follows = "nixpkgs";
   inputs."monad".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

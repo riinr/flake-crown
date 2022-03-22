@@ -9,13 +9,14 @@
   
   inputs.src-nimothello-master.flake = false;
   inputs.src-nimothello-master.owner = "jiro4989";
-  inputs.src-nimothello-master.ref   = "refs/heads/master";
+  inputs.src-nimothello-master.ref   = "master";
   inputs.src-nimothello-master.repo  = "nimothello";
   inputs.src-nimothello-master.type  = "github";
   
   inputs."illwill".owner = "nim-nix-pkgs";
   inputs."illwill".ref   = "master";
   inputs."illwill".repo  = "illwill";
+  inputs."illwill".dir   = "v0_2_0";
   inputs."illwill".type  = "github";
   inputs."illwill".inputs.nixpkgs.follows = "nixpkgs";
   inputs."illwill".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

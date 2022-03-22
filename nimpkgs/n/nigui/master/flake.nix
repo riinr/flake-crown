@@ -1,5 +1,5 @@
 {
-  description = ''NiGui is a cross-platform, desktop GUI toolkit using native widgets.'';
+  description = ''Cross-platform, desktop GUI toolkit using native widgets.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nigui-master.flake = false;
   inputs.src-nigui-master.owner = "trustable-code";
-  inputs.src-nigui-master.ref   = "refs/heads/master";
+  inputs.src-nigui-master.ref   = "master";
   inputs.src-nigui-master.repo  = "NiGui";
   inputs.src-nigui-master.type  = "github";
   

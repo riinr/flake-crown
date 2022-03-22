@@ -9,7 +9,7 @@
   
   inputs.src-nimterop-v0_6_4.flake = false;
   inputs.src-nimterop-v0_6_4.owner = "genotrance";
-  inputs.src-nimterop-v0_6_4.ref   = "refs/tags/v0.6.4";
+  inputs.src-nimterop-v0_6_4.ref   = "v0_6_4";
   inputs.src-nimterop-v0_6_4.repo  = "nimterop";
   inputs.src-nimterop-v0_6_4.type  = "github";
   

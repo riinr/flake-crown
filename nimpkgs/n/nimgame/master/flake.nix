@@ -1,5 +1,5 @@
 {
-  description = ''A simple 2D game engine for Nim language. Deprecated, use nimgame2 instead.'';
+  description = ''Simple 2D game engine for Nim language.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimgame-master.flake = false;
   inputs.src-nimgame-master.owner = "Vladar4";
-  inputs.src-nimgame-master.ref   = "refs/heads/master";
+  inputs.src-nimgame-master.ref   = "master";
   inputs.src-nimgame-master.repo  = "nimgame";
   inputs.src-nimgame-master.type  = "github";
   

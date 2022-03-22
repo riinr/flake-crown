@@ -1,5 +1,5 @@
 {
-  description = ''a wrapper for the QBittorrent WebAPI for NIM.'';
+  description = ''A wrapper for the QBittorrent WebAPI'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimQBittorrent-master.flake = false;
   inputs.src-nimQBittorrent-master.owner = "faulander";
-  inputs.src-nimQBittorrent-master.ref   = "refs/heads/master";
+  inputs.src-nimQBittorrent-master.ref   = "master";
   inputs.src-nimQBittorrent-master.repo  = "nimQBittorrent";
   inputs.src-nimQBittorrent-master.type  = "github";
   

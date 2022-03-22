@@ -1,5 +1,5 @@
 {
-  description = ''Nim wrapper for the Chromium Embedded Framework'';
+  description = ''CEF3 Chromium Emmbedded Framework wrapper'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimCEF-master.flake = false;
   inputs.src-nimCEF-master.owner = "jangko";
-  inputs.src-nimCEF-master.ref   = "refs/heads/master";
+  inputs.src-nimCEF-master.ref   = "master";
   inputs.src-nimCEF-master.repo  = "nimCEF";
   inputs.src-nimCEF-master.type  = "github";
   

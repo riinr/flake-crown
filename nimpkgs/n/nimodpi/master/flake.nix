@@ -1,5 +1,5 @@
 {
-  description = ''oracle odpi-c wrapper for Nim'';
+  description = '' oracle odpi-c wrapper '';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nimodpi-master.flake = false;
   inputs.src-nimodpi-master.owner = "mikra01";
-  inputs.src-nimodpi-master.ref   = "refs/heads/master";
+  inputs.src-nimodpi-master.ref   = "master";
   inputs.src-nimodpi-master.repo  = "nimodpi";
   inputs.src-nimodpi-master.type  = "github";
   
   inputs."nimterop".owner = "nim-nix-pkgs";
   inputs."nimterop".ref   = "master";
   inputs."nimterop".repo  = "nimterop";
+  inputs."nimterop".dir   = "v0_6_13";
   inputs."nimterop".type  = "github";
   inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

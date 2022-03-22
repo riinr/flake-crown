@@ -9,13 +9,14 @@
   
   inputs.src-neel-master.flake = false;
   inputs.src-neel-master.owner = "Niminem";
-  inputs.src-neel-master.ref   = "refs/heads/master";
+  inputs.src-neel-master.ref   = "master";
   inputs.src-neel-master.repo  = "Neel";
   inputs.src-neel-master.type  = "github";
   
   inputs."jester".owner = "nim-nix-pkgs";
   inputs."jester".ref   = "master";
   inputs."jester".repo  = "jester";
+  inputs."jester".dir   = "v0_5_0";
   inputs."jester".type  = "github";
   inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."ws".owner = "nim-nix-pkgs";
   inputs."ws".ref   = "master";
   inputs."ws".repo  = "ws";
+  inputs."ws".dir   = "0_5_0";
   inputs."ws".type  = "github";
   inputs."ws".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ws".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,10 +32,10 @@
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-Neel-master"];
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-neel-master"];
   in lib.mkRefOutput {
     inherit self nixpkgs ;
-    src  = deps."src-Neel-master";
+    src  = deps."src-neel-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
   };

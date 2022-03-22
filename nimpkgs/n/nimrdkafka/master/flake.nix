@@ -1,5 +1,5 @@
 {
-  description = ''Nim wrapper for librdkafka'';
+  description = ''Low-level Nim wrapper for librdkafka'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,8 +9,8 @@
   
   inputs.src-nimrdkafka-master.flake = false;
   inputs.src-nimrdkafka-master.owner = "dfdeshom";
-  inputs.src-nimrdkafka-master.ref   = "refs/heads/master";
-  inputs.src-nimrdkafka-master.repo  = "nimrdkafka";
+  inputs.src-nimrdkafka-master.ref   = "master";
+  inputs.src-nimrdkafka-master.repo  = "nimrdkafka.git";
   inputs.src-nimrdkafka-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

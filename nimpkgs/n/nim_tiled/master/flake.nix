@@ -9,13 +9,14 @@
   
   inputs.src-nim_tiled-master.flake = false;
   inputs.src-nim_tiled-master.owner = "SkyVault";
-  inputs.src-nim_tiled-master.ref   = "refs/heads/master";
+  inputs.src-nim_tiled-master.ref   = "master";
   inputs.src-nim_tiled-master.repo  = "nim-tiled";
   inputs.src-nim_tiled-master.type  = "github";
   
   inputs."zippy".owner = "nim-nix-pkgs";
   inputs."zippy".ref   = "master";
   inputs."zippy".repo  = "zippy";
+  inputs."zippy".dir   = "0_9_7";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

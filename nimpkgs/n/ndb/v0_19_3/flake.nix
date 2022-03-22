@@ -9,7 +9,7 @@
   
   inputs.src-ndb-v0_19_3.flake = false;
   inputs.src-ndb-v0_19_3.owner = "xzfc";
-  inputs.src-ndb-v0_19_3.ref   = "refs/tags/v0.19.3";
+  inputs.src-ndb-v0_19_3.ref   = "v0_19_3";
   inputs.src-ndb-v0_19_3.repo  = "ndb.nim";
   inputs.src-ndb-v0_19_3.type  = "github";
   

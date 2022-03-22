@@ -9,7 +9,7 @@
   
   inputs.src-names-v0_1_0.flake = false;
   inputs.src-names-v0_1_0.owner = "pragmagic";
-  inputs.src-names-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-names-v0_1_0.ref   = "v0_1_0";
   inputs.src-names-v0_1_0.repo  = "names";
   inputs.src-names-v0_1_0.type  = "github";
   

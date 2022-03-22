@@ -1,5 +1,5 @@
 {
-  description = ''A rudimentary Nim REPL'';
+  description = ''A Nim REPL'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nrpl-master.flake = false;
   inputs.src-nrpl-master.owner = "vegansk";
-  inputs.src-nrpl-master.ref   = "refs/heads/master";
+  inputs.src-nrpl-master.ref   = "master";
   inputs.src-nrpl-master.repo  = "nrpl";
   inputs.src-nrpl-master.type  = "github";
   

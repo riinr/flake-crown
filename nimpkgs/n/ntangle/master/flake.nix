@@ -9,13 +9,14 @@
   
   inputs.src-ntangle-master.flake = false;
   inputs.src-ntangle-master.owner = "OrgTangle";
-  inputs.src-ntangle-master.ref   = "refs/heads/master";
+  inputs.src-ntangle-master.ref   = "master";
   inputs.src-ntangle-master.repo  = "ntangle";
   inputs.src-ntangle-master.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

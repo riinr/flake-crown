@@ -1,5 +1,5 @@
 {
-  description = ''Stupid simple YAML-like implementation from YAML to JsonNode'';
+  description = ''A stupid simple YAML Parser. From YAML to stringified JSON (fastest) or JsonNode'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nyml-main.flake = false;
   inputs.src-nyml-main.owner = "openpeep";
-  inputs.src-nyml-main.ref   = "refs/heads/main";
+  inputs.src-nyml-main.ref   = "main";
   inputs.src-nyml-main.repo  = "nyml";
   inputs.src-nyml-main.type  = "github";
   
   inputs."toktok".owner = "nim-nix-pkgs";
   inputs."toktok".ref   = "master";
   inputs."toktok".repo  = "toktok";
+  inputs."toktok".dir   = "";
   inputs."toktok".type  = "github";
   inputs."toktok".inputs.nixpkgs.follows = "nixpkgs";
   inputs."toktok".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

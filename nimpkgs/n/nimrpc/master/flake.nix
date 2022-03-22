@@ -1,5 +1,5 @@
 {
-  description = ''RPC implementation for Nim based on msgpack4nim'';
+  description = ''RPC implementation for Nim based on msgpack4nim created by @jangko.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nimrpc-master.flake = false;
   inputs.src-nimrpc-master.owner = "rogercloud";
-  inputs.src-nimrpc-master.ref   = "refs/heads/master";
+  inputs.src-nimrpc-master.ref   = "master";
   inputs.src-nimrpc-master.repo  = "nim-rpc";
   inputs.src-nimrpc-master.type  = "github";
   
   inputs."msgpack4nim".owner = "nim-nix-pkgs";
   inputs."msgpack4nim".ref   = "master";
   inputs."msgpack4nim".repo  = "msgpack4nim";
+  inputs."msgpack4nim".dir   = "v0_3_1";
   inputs."msgpack4nim".type  = "github";
   inputs."msgpack4nim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."msgpack4nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

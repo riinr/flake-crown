@@ -1,5 +1,5 @@
 {
-  description = ''Nimble package manager'';
+  description = ''Nim package manager.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nimble-v0_7_8.flake = false;
   inputs.src-nimble-v0_7_8.owner = "nim-lang";
-  inputs.src-nimble-v0_7_8.ref   = "refs/tags/v0.7.8";
+  inputs.src-nimble-v0_7_8.ref   = "v0_7_8";
   inputs.src-nimble-v0_7_8.repo  = "nimble";
   inputs.src-nimble-v0_7_8.type  = "github";
   
   inputs."compiler".owner = "nim-nix-pkgs";
   inputs."compiler".ref   = "master";
   inputs."compiler".repo  = "compiler";
+  inputs."compiler".dir   = "";
   inputs."compiler".type  = "github";
   inputs."compiler".inputs.nixpkgs.follows = "nixpkgs";
   inputs."compiler".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

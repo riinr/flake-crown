@@ -1,5 +1,5 @@
 {
-  description = ''Simple and compact fuzzing'';
+  description = ''Simple and compact Nim fuzzing library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimfuzz-master.flake = false;
   inputs.src-nimfuzz-master.owner = "apense";
-  inputs.src-nimfuzz-master.ref   = "refs/heads/master";
+  inputs.src-nimfuzz-master.ref   = "master";
   inputs.src-nimfuzz-master.repo  = "nimfuzz";
   inputs.src-nimfuzz-master.type  = "github";
   

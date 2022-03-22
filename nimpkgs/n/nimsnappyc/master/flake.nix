@@ -1,5 +1,5 @@
 {
-  description = ''Wrapper for the Snappy-C compression library'';
+  description = ''Snappy-C lib wrapper for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimsnappyc-master.flake = false;
   inputs.src-nimsnappyc-master.owner = "NimCompression";
-  inputs.src-nimsnappyc-master.ref   = "refs/heads/master";
+  inputs.src-nimsnappyc-master.ref   = "master";
   inputs.src-nimsnappyc-master.repo  = "nimsnappyc";
   inputs.src-nimsnappyc-master.type  = "github";
   

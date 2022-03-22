@@ -9,13 +9,14 @@
   
   inputs.src-nimkerberos-master.flake = false;
   inputs.src-nimkerberos-master.owner = "genotrance";
-  inputs.src-nimkerberos-master.ref   = "refs/heads/master";
+  inputs.src-nimkerberos-master.ref   = "master";
   inputs.src-nimkerberos-master.repo  = "nimkerberos";
   inputs.src-nimkerberos-master.type  = "github";
   
   inputs."nimgen".owner = "nim-nix-pkgs";
   inputs."nimgen".ref   = "master";
   inputs."nimgen".repo  = "nimgen";
+  inputs."nimgen".dir   = "v0_5_1";
   inputs."nimgen".type  = "github";
   inputs."nimgen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimgen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

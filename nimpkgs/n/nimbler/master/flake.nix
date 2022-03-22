@@ -1,5 +1,5 @@
 {
-  description = ''A library to help you write rest APIs'';
+  description = ''A new awesome nimble package'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimbler-master.flake = false;
   inputs.src-nimbler-master.owner = "paul-nameless";
-  inputs.src-nimbler-master.ref   = "refs/heads/master";
+  inputs.src-nimbler-master.ref   = "master";
   inputs.src-nimbler-master.repo  = "nimbler";
   inputs.src-nimbler-master.type  = "github";
   

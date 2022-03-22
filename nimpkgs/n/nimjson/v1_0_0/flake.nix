@@ -1,5 +1,5 @@
 {
-  description = ''nimjson generates nim object definitions from json documents.'';
+  description = ''Command to convert JSON string to Nim types.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimjson-v1_0_0.flake = false;
   inputs.src-nimjson-v1_0_0.owner = "jiro4989";
-  inputs.src-nimjson-v1_0_0.ref   = "refs/tags/v1.0.0";
+  inputs.src-nimjson-v1_0_0.ref   = "v1_0_0";
   inputs.src-nimjson-v1_0_0.repo  = "nimjson";
   inputs.src-nimjson-v1_0_0.type  = "github";
   

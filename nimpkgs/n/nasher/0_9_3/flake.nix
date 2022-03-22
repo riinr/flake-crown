@@ -9,13 +9,14 @@
   
   inputs.src-nasher-0_9_3.flake = false;
   inputs.src-nasher-0_9_3.owner = "squattingmonk";
-  inputs.src-nasher-0_9_3.ref   = "refs/tags/0.9.3";
+  inputs.src-nasher-0_9_3.ref   = "0_9_3";
   inputs.src-nasher-0_9_3.repo  = "nasher.nim";
   inputs.src-nasher-0_9_3.type  = "github";
   
   inputs."neverwinter".owner = "nim-nix-pkgs";
   inputs."neverwinter".ref   = "master";
   inputs."neverwinter".repo  = "neverwinter";
+  inputs."neverwinter".dir   = "1_5_5";
   inputs."neverwinter".type  = "github";
   inputs."neverwinter".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neverwinter".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."glob".owner = "nim-nix-pkgs";
   inputs."glob".ref   = "master";
   inputs."glob".repo  = "glob";
+  inputs."glob".dir   = "v0_11_1";
   inputs."glob".type  = "github";
   inputs."glob".inputs.nixpkgs.follows = "nixpkgs";
   inputs."glob".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."regex".owner = "nim-nix-pkgs";
   inputs."regex".ref   = "master";
   inputs."regex".repo  = "regex";
+  inputs."regex".dir   = "v0_19_0";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

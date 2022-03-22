@@ -9,13 +9,14 @@
   
   inputs.src-niledb-v1_3_1.flake = false;
   inputs.src-niledb-v1_3_1.owner = "JeffersonLab";
-  inputs.src-niledb-v1_3_1.ref   = "refs/tags/v1.3.1";
-  inputs.src-niledb-v1_3_1.repo  = "niledb";
+  inputs.src-niledb-v1_3_1.ref   = "v1_3_1";
+  inputs.src-niledb-v1_3_1.repo  = "niledb.git";
   inputs.src-niledb-v1_3_1.type  = "github";
   
   inputs."serializetools".owner = "nim-nix-pkgs";
   inputs."serializetools".ref   = "master";
   inputs."serializetools".repo  = "serializetools";
+  inputs."serializetools".dir   = "v1_16_2";
   inputs."serializetools".type  = "github";
   inputs."serializetools".inputs.nixpkgs.follows = "nixpkgs";
   inputs."serializetools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

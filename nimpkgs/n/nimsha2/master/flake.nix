@@ -1,5 +1,5 @@
 {
-  description = ''Secure Hash Algorithm - 2, [224, 256, 384, and 512 bits]'';
+  description = ''SHA2 secure hash algorithm - 2 - [224, 256, 384, 512 bits]'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nimSHA2-master.flake = false;
   inputs.src-nimSHA2-master.owner = "jangko";
-  inputs.src-nimSHA2-master.ref   = "refs/heads/master";
+  inputs.src-nimSHA2-master.ref   = "master";
   inputs.src-nimSHA2-master.repo  = "nimSHA2";
   inputs.src-nimSHA2-master.type  = "github";
   

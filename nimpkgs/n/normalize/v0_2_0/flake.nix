@@ -9,13 +9,14 @@
   
   inputs.src-normalize-v0_2_0.flake = false;
   inputs.src-normalize-v0_2_0.owner = "nitely";
-  inputs.src-normalize-v0_2_0.ref   = "refs/tags/v0.2.0";
+  inputs.src-normalize-v0_2_0.ref   = "v0_2_0";
   inputs.src-normalize-v0_2_0.repo  = "nim-normalize";
   inputs.src-normalize-v0_2_0.type  = "github";
   
   inputs."unicodedb".owner = "nim-nix-pkgs";
   inputs."unicodedb".ref   = "master";
   inputs."unicodedb".repo  = "unicodedb";
+  inputs."unicodedb".dir   = "v0_2_5";
   inputs."unicodedb".type  = "github";
   inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

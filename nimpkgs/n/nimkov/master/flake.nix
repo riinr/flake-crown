@@ -9,7 +9,7 @@
   
   inputs.src-nimkov-master.flake = false;
   inputs.src-nimkov-master.owner = "bit0r1n";
-  inputs.src-nimkov-master.ref   = "refs/heads/master";
+  inputs.src-nimkov-master.ref   = "master";
   inputs.src-nimkov-master.repo  = "nimkov";
   inputs.src-nimkov-master.type  = "github";
   

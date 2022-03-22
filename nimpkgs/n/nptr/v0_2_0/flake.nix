@@ -9,7 +9,7 @@
   
   inputs.src-nptr-v0_2_0.flake = false;
   inputs.src-nptr-v0_2_0.owner = "henryas";
-  inputs.src-nptr-v0_2_0.ref   = "refs/tags/v0.2.0";
+  inputs.src-nptr-v0_2_0.ref   = "v0_2_0";
   inputs.src-nptr-v0_2_0.repo  = "nptr";
   inputs.src-nptr-v0_2_0.type  = "github";
   

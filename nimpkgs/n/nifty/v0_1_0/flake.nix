@@ -1,5 +1,5 @@
 {
-  description = ''A decentralized (pseudo) package manager and script runner.'';
+  description = ''A pseudo package manager and script runner.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nifty-v0_1_0.flake = false;
   inputs.src-nifty-v0_1_0.owner = "h3rald";
-  inputs.src-nifty-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-nifty-v0_1_0.ref   = "v0_1_0";
   inputs.src-nifty-v0_1_0.repo  = "nifty";
   inputs.src-nifty-v0_1_0.type  = "github";
   

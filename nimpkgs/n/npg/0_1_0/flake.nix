@@ -9,13 +9,14 @@
   
   inputs.src-npg-0_1_0.flake = false;
   inputs.src-npg-0_1_0.owner = "rustomax";
-  inputs.src-npg-0_1_0.ref   = "refs/tags/0.1.0";
+  inputs.src-npg-0_1_0.ref   = "0_1_0";
   inputs.src-npg-0_1_0.repo  = "npg";
   inputs.src-npg-0_1_0.type  = "github";
   
   inputs."passgen".owner = "nim-nix-pkgs";
   inputs."passgen".ref   = "master";
   inputs."passgen".repo  = "passgen";
+  inputs."passgen".dir   = "0_2_0";
   inputs."passgen".type  = "github";
   inputs."passgen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."passgen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

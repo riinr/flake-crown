@@ -1,5 +1,5 @@
 {
-  description = ''A wrapper for the non-linear optimization C library Nlopt'';
+  description = ''A wrapper of the C library NLOPT for non-linear optimization'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nlopt-master.flake = false;
   inputs.src-nlopt-master.owner = "Vindaar";
-  inputs.src-nlopt-master.ref   = "refs/heads/master";
+  inputs.src-nlopt-master.ref   = "master";
   inputs.src-nlopt-master.repo  = "nimnlopt";
   inputs.src-nlopt-master.type  = "github";
   

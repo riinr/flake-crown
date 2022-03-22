@@ -1,5 +1,5 @@
 {
-  description = ''Small program to draw notifications on the screen in a highly customisable way'';
+  description = ''Simple program to show notifications with images and actions around the screen'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-notifishower-v0_6_0.flake = false;
   inputs.src-notifishower-v0_6_0.owner = "PMunch";
-  inputs.src-notifishower-v0_6_0.ref   = "refs/tags/v0.6.0";
+  inputs.src-notifishower-v0_6_0.ref   = "v0_6_0";
   inputs.src-notifishower-v0_6_0.repo  = "notifishower";
   inputs.src-notifishower-v0_6_0.type  = "github";
   
   inputs."imlib2".owner = "nim-nix-pkgs";
   inputs."imlib2".ref   = "master";
   inputs."imlib2".repo  = "imlib2";
+  inputs."imlib2".dir   = "";
   inputs."imlib2".type  = "github";
   inputs."imlib2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."imlib2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."npeg".owner = "nim-nix-pkgs";
   inputs."npeg".ref   = "master";
   inputs."npeg".repo  = "npeg";
+  inputs."npeg".dir   = "0_26_0";
   inputs."npeg".type  = "github";
   inputs."npeg".inputs.nixpkgs.follows = "nixpkgs";
   inputs."npeg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."kiwi".owner = "nim-nix-pkgs";
   inputs."kiwi".ref   = "master";
   inputs."kiwi".repo  = "kiwi";
+  inputs."kiwi".dir   = "";
   inputs."kiwi".type  = "github";
   inputs."kiwi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."kiwi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -37,6 +40,7 @@
   inputs."termstyle".owner = "nim-nix-pkgs";
   inputs."termstyle".ref   = "master";
   inputs."termstyle".repo  = "termstyle";
+  inputs."termstyle".dir   = "";
   inputs."termstyle".type  = "github";
   inputs."termstyle".inputs.nixpkgs.follows = "nixpkgs";
   inputs."termstyle".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

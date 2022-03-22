@@ -9,7 +9,7 @@
   
   inputs.src-nimjson-v1_0_1.flake = false;
   inputs.src-nimjson-v1_0_1.owner = "jiro4989";
-  inputs.src-nimjson-v1_0_1.ref   = "refs/tags/v1.0.1";
+  inputs.src-nimjson-v1_0_1.ref   = "v1_0_1";
   inputs.src-nimjson-v1_0_1.repo  = "nimjson";
   inputs.src-nimjson-v1_0_1.type  = "github";
   

@@ -9,7 +9,7 @@
   
   inputs.src-nimshell-master.flake = false;
   inputs.src-nimshell-master.owner = "vegansk";
-  inputs.src-nimshell-master.ref   = "refs/heads/master";
+  inputs.src-nimshell-master.ref   = "master";
   inputs.src-nimshell-master.repo  = "nimshell";
   inputs.src-nimshell-master.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Webp encoder and decoder bindings for Nim'';
+  description = ''webp bindings'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-nimwebp-master.flake = false;
   inputs.src-nimwebp-master.owner = "tormund";
-  inputs.src-nimwebp-master.ref   = "refs/heads/master";
+  inputs.src-nimwebp-master.ref   = "master";
   inputs.src-nimwebp-master.repo  = "nimwebp";
   inputs.src-nimwebp-master.type  = "github";
   
   inputs."nimpng".owner = "nim-nix-pkgs";
   inputs."nimpng".ref   = "master";
   inputs."nimpng".repo  = "nimpng";
+  inputs."nimpng".dir   = "v0_3_1";
   inputs."nimpng".type  = "github";
   inputs."nimpng".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpng".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

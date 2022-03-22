@@ -1,5 +1,5 @@
 {
-  description = ''A partially compile and runtime evaluated object, inspired from .net object'';
+  description = ''A partially compile and runtime evaluated object, inspired to .net object'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-nobject-main.flake = false;
   inputs.src-nobject-main.owner = "Carpall";
-  inputs.src-nobject-main.ref   = "refs/heads/main";
+  inputs.src-nobject-main.ref   = "main";
   inputs.src-nobject-main.repo  = "nobject";
   inputs.src-nobject-main.type  = "github";
   

@@ -9,7 +9,7 @@
   
   inputs.src-nimspice-v0_1_0.flake = false;
   inputs.src-nimspice-v0_1_0.owner = "CodeDoes";
-  inputs.src-nimspice-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-nimspice-v0_1_0.ref   = "v0_1_0";
   inputs.src-nimspice-v0_1_0.repo  = "nimspice";
   inputs.src-nimspice-v0_1_0.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Nim wrapper for the snappy compression library. there is also a high-level API for easy use'';
+  description = ''Snappy lib wrapper for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,8 +9,8 @@
   
   inputs.src-nimsnappy-master.flake = false;
   inputs.src-nimsnappy-master.owner = "dfdeshom";
-  inputs.src-nimsnappy-master.ref   = "refs/heads/master";
-  inputs.src-nimsnappy-master.repo  = "nimsnappy";
+  inputs.src-nimsnappy-master.ref   = "master";
+  inputs.src-nimsnappy-master.repo  = "nimsnappy.git";
   inputs.src-nimsnappy-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

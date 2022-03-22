@@ -9,13 +9,14 @@
   
   inputs.src-ndf-master.flake = false;
   inputs.src-ndf-master.owner = "rustomax";
-  inputs.src-ndf-master.ref   = "refs/heads/master";
+  inputs.src-ndf-master.ref   = "master";
   inputs.src-ndf-master.repo  = "ndf";
   inputs.src-ndf-master.type  = "github";
   
   inputs."docopt".owner = "nim-nix-pkgs";
   inputs."docopt".ref   = "master";
   inputs."docopt".repo  = "docopt";
+  inputs."docopt".dir   = "v0_6_8";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."murmurhash".owner = "nim-nix-pkgs";
   inputs."murmurhash".ref   = "master";
   inputs."murmurhash".repo  = "murmurhash";
+  inputs."murmurhash".dir   = "0_4_0";
   inputs."murmurhash".type  = "github";
   inputs."murmurhash".inputs.nixpkgs.follows = "nixpkgs";
   inputs."murmurhash".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

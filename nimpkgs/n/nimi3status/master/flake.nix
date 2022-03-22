@@ -9,13 +9,14 @@
   
   inputs.src-nimi3status-master.flake = false;
   inputs.src-nimi3status-master.owner = "FedericoCeratto";
-  inputs.src-nimi3status-master.ref   = "refs/heads/master";
+  inputs.src-nimi3status-master.ref   = "master";
   inputs.src-nimi3status-master.repo  = "nimi3status";
   inputs.src-nimi3status-master.type  = "github";
   
   inputs."colorsys".owner = "nim-nix-pkgs";
   inputs."colorsys".ref   = "master";
   inputs."colorsys".repo  = "colorsys";
+  inputs."colorsys".dir   = "";
   inputs."colorsys".type  = "github";
   inputs."colorsys".inputs.nixpkgs.follows = "nixpkgs";
   inputs."colorsys".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

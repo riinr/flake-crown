@@ -1,5 +1,5 @@
 {
-  description = ''Negamax AI search-tree algorithm for two player games'';
+  description = ''Negamax AI algorithm for turn based games'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-negamax-master.flake = false;
   inputs.src-negamax-master.owner = "JohnAD";
-  inputs.src-negamax-master.ref   = "refs/heads/master";
+  inputs.src-negamax-master.ref   = "master";
   inputs.src-negamax-master.repo  = "negamax";
   inputs.src-negamax-master.type  = "github";
   
   inputs."turn_based_game".owner = "nim-nix-pkgs";
   inputs."turn_based_game".ref   = "master";
   inputs."turn_based_game".repo  = "turn_based_game";
+  inputs."turn_based_game".dir   = "v1_1_6";
   inputs."turn_based_game".type  = "github";
   inputs."turn_based_game".inputs.nixpkgs.follows = "nixpkgs";
   inputs."turn_based_game".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
