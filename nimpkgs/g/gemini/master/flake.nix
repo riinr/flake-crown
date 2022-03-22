@@ -1,5 +1,5 @@
 {
-  description = ''Building blocks for making async Gemini servers'';
+  description = ''Building blocks for making async Gemini servers and clients'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-gemini-master.flake = false;
   inputs.src-gemini-master.owner = "benob";
-  inputs.src-gemini-master.ref   = "refs/heads/master";
+  inputs.src-gemini-master.ref   = "master";
   inputs.src-gemini-master.repo  = "gemini";
   inputs.src-gemini-master.type  = "github";
   
   inputs."nimcrypto".owner = "nim-nix-pkgs";
   inputs."nimcrypto".ref   = "master";
   inputs."nimcrypto".repo  = "nimcrypto";
+  inputs."nimcrypto".dir   = "";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

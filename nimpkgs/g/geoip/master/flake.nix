@@ -9,7 +9,7 @@
   
   inputs.src-geoip-master.flake = false;
   inputs.src-geoip-master.owner = "achesak";
-  inputs.src-geoip-master.ref   = "refs/heads/master";
+  inputs.src-geoip-master.ref   = "master";
   inputs.src-geoip-master.repo  = "nim-geoip";
   inputs.src-geoip-master.type  = "github";
   

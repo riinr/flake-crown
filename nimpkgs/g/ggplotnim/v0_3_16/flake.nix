@@ -9,13 +9,14 @@
   
   inputs.src-ggplotnim-v0_3_16.flake = false;
   inputs.src-ggplotnim-v0_3_16.owner = "Vindaar";
-  inputs.src-ggplotnim-v0_3_16.ref   = "refs/tags/v0.3.16";
+  inputs.src-ggplotnim-v0_3_16.ref   = "v0_3_16";
   inputs.src-ggplotnim-v0_3_16.repo  = "ggplotnim";
   inputs.src-ggplotnim-v0_3_16.type  = "github";
   
   inputs."ginger".owner = "nim-nix-pkgs";
   inputs."ginger".ref   = "master";
   inputs."ginger".repo  = "ginger";
+  inputs."ginger".dir   = "v0_3_11";
   inputs."ginger".type  = "github";
   inputs."ginger".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ginger".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."persvector".owner = "nim-nix-pkgs";
   inputs."persvector".ref   = "master";
   inputs."persvector".repo  = "persvector";
+  inputs."persvector".dir   = "v1_0_0";
   inputs."persvector".type  = "github";
   inputs."persvector".inputs.nixpkgs.follows = "nixpkgs";
   inputs."persvector".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."shell".owner = "nim-nix-pkgs";
   inputs."shell".ref   = "master";
   inputs."shell".repo  = "shell";
+  inputs."shell".dir   = "v0_4_4";
   inputs."shell".type  = "github";
   inputs."shell".inputs.nixpkgs.follows = "nixpkgs";
   inputs."shell".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -37,6 +40,7 @@
   inputs."arraymancer".owner = "nim-nix-pkgs";
   inputs."arraymancer".ref   = "master";
   inputs."arraymancer".repo  = "arraymancer";
+  inputs."arraymancer".dir   = "v0_7_11";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

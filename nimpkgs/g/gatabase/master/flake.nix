@@ -1,5 +1,5 @@
 {
-  description = ''Postgres Database ORM for Nim'';
+  description = ''Compile-Time ORM for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-gatabase-master.flake = false;
   inputs.src-gatabase-master.owner = "juancarlospaco";
-  inputs.src-gatabase-master.ref   = "refs/heads/master";
+  inputs.src-gatabase-master.ref   = "master";
   inputs.src-gatabase-master.repo  = "nim-gatabase";
   inputs.src-gatabase-master.type  = "github";
   

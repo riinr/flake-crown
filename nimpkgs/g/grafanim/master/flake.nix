@@ -1,5 +1,5 @@
 {
-  description = ''Grafana module for Nim'';
+  description = ''Grafana module for nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-grafanim-master.flake = false;
   inputs.src-grafanim-master.owner = "jamesalbert";
-  inputs.src-grafanim-master.ref   = "refs/heads/master";
+  inputs.src-grafanim-master.ref   = "master";
   inputs.src-grafanim-master.repo  = "grafanim";
   inputs.src-grafanim-master.type  = "github";
   

@@ -9,7 +9,7 @@
   
   inputs.src-gungnir-master.flake = false;
   inputs.src-gungnir-master.owner = "planety";
-  inputs.src-gungnir-master.ref   = "refs/heads/master";
+  inputs.src-gungnir-master.ref   = "master";
   inputs.src-gungnir-master.repo  = "gungnir";
   inputs.src-gungnir-master.type  = "github";
   

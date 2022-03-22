@@ -9,7 +9,7 @@
   
   inputs.src-grab-v0_1_0.flake = false;
   inputs.src-grab-v0_1_0.owner = "metagn";
-  inputs.src-grab-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-grab-v0_1_0.ref   = "v0_1_0";
   inputs.src-grab-v0_1_0.repo  = "grab";
   inputs.src-grab-v0_1_0.type  = "github";
   

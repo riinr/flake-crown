@@ -1,5 +1,5 @@
 {
-  description = ''A high-level GLFW 3 wrapper'';
+  description = ''GLFW 3 wrapper for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-glfw-master.flake = false;
   inputs.src-glfw-master.owner = "johnnovak";
-  inputs.src-glfw-master.ref   = "refs/heads/master";
+  inputs.src-glfw-master.ref   = "master";
   inputs.src-glfw-master.repo  = "nim-glfw";
   inputs.src-glfw-master.type  = "github";
   

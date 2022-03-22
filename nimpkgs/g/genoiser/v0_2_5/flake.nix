@@ -1,5 +1,5 @@
 {
-  description = ''functions to tracks for genomics data files'';
+  description = ''write functions, get summaries of genomic data'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-genoiser-v0_2_5.flake = false;
   inputs.src-genoiser-v0_2_5.owner = "brentp";
-  inputs.src-genoiser-v0_2_5.ref   = "refs/tags/v0.2.5";
+  inputs.src-genoiser-v0_2_5.ref   = "v0_2_5";
   inputs.src-genoiser-v0_2_5.repo  = "genoiser";
   inputs.src-genoiser-v0_2_5.type  = "github";
   
   inputs."hts".owner = "nim-nix-pkgs";
   inputs."hts".ref   = "master";
   inputs."hts".repo  = "hts";
+  inputs."hts".dir   = "v0_3_21";
   inputs."hts".type  = "github";
   inputs."hts".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hts".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."docopt".owner = "nim-nix-pkgs";
   inputs."docopt".ref   = "master";
   inputs."docopt".repo  = "docopt";
+  inputs."docopt".dir   = "v0_6_8";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."kexpr".owner = "nim-nix-pkgs";
   inputs."kexpr".ref   = "master";
   inputs."kexpr".repo  = "kexpr";
+  inputs."kexpr".dir   = "v0_0_2";
   inputs."kexpr".type  = "github";
   inputs."kexpr".inputs.nixpkgs.follows = "nixpkgs";
   inputs."kexpr".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

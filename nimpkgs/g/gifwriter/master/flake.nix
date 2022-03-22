@@ -1,5 +1,5 @@
 {
-  description = ''Animated GIF writing library based on jo_gif'';
+  description = ''GIF writing library based on jo_gif'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-gifwriter-master.flake = false;
   inputs.src-gifwriter-master.owner = "rxi";
-  inputs.src-gifwriter-master.ref   = "refs/heads/master";
+  inputs.src-gifwriter-master.ref   = "master";
   inputs.src-gifwriter-master.repo  = "gifwriter";
   inputs.src-gifwriter-master.type  = "github";
   

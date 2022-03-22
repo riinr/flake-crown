@@ -1,5 +1,5 @@
 {
-  description = ''Port of c++ glm library with shader-like syntax'';
+  description = ''Nim port of the OpenGL Mathematics (GLM) library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-glm-v1_0_1.flake = false;
   inputs.src-glm-v1_0_1.owner = "stavenko";
-  inputs.src-glm-v1_0_1.ref   = "refs/tags/v1.0.1";
+  inputs.src-glm-v1_0_1.ref   = "v1_0_1";
   inputs.src-glm-v1_0_1.repo  = "nim-glm";
   inputs.src-glm-v1_0_1.type  = "github";
   

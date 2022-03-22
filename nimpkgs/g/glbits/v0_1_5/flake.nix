@@ -1,5 +1,5 @@
 {
-  description = ''A light interface and selection of utilities for working with OpenGL and SDL2'';
+  description = ''A light library for OpenGL and SDL2 graphics applications'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-glbits-v0_1_5.flake = false;
   inputs.src-glbits-v0_1_5.owner = "rlipsc";
-  inputs.src-glbits-v0_1_5.ref   = "refs/tags/v0.1.5";
+  inputs.src-glbits-v0_1_5.ref   = "v0_1_5";
   inputs.src-glbits-v0_1_5.repo  = "glbits";
   inputs.src-glbits-v0_1_5.type  = "github";
   

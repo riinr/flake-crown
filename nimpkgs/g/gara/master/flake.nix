@@ -1,5 +1,5 @@
 {
-  description = ''A pattern matching library'';
+  description = ''Macro-based pattern matching library.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-gara-master.flake = false;
   inputs.src-gara-master.owner = "alehander42";
-  inputs.src-gara-master.ref   = "refs/heads/master";
+  inputs.src-gara-master.ref   = "master";
   inputs.src-gara-master.repo  = "gara";
   inputs.src-gara-master.type  = "github";
   

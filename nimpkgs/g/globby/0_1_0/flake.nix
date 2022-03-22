@@ -1,5 +1,5 @@
 {
-  description = ''Glob pattern matching for Nim.'';
+  description = ''Globby - Glob pattern matching for Nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-globby-0_1_0.flake = false;
   inputs.src-globby-0_1_0.owner = "treeform";
-  inputs.src-globby-0_1_0.ref   = "refs/tags/0.1.0";
+  inputs.src-globby-0_1_0.ref   = "0_1_0";
   inputs.src-globby-0_1_0.repo  = "globby";
   inputs.src-globby-0_1_0.type  = "github";
   

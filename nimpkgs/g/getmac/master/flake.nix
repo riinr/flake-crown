@@ -9,13 +9,14 @@
   
   inputs.src-getmac-master.flake = false;
   inputs.src-getmac-master.owner = "PMunch";
-  inputs.src-getmac-master.ref   = "refs/heads/master";
+  inputs.src-getmac-master.ref   = "master";
   inputs.src-getmac-master.repo  = "getmac";
   inputs.src-getmac-master.type  = "github";
   
   inputs."optionsutils".owner = "nim-nix-pkgs";
   inputs."optionsutils".ref   = "master";
   inputs."optionsutils".repo  = "optionsutils";
+  inputs."optionsutils".dir   = "v1_2_0";
   inputs."optionsutils".type  = "github";
   inputs."optionsutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."optionsutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

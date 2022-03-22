@@ -9,13 +9,14 @@
   
   inputs.src-ggplotnim-v0_1_5.flake = false;
   inputs.src-ggplotnim-v0_1_5.owner = "Vindaar";
-  inputs.src-ggplotnim-v0_1_5.ref   = "refs/tags/v0.1.5";
+  inputs.src-ggplotnim-v0_1_5.ref   = "v0_1_5";
   inputs.src-ggplotnim-v0_1_5.repo  = "ggplotnim";
   inputs.src-ggplotnim-v0_1_5.type  = "github";
   
   inputs."ginger".owner = "nim-nix-pkgs";
   inputs."ginger".ref   = "master";
   inputs."ginger".repo  = "ginger";
+  inputs."ginger".dir   = "v0_3_11";
   inputs."ginger".type  = "github";
   inputs."ginger".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ginger".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."persvector".owner = "nim-nix-pkgs";
   inputs."persvector".ref   = "master";
   inputs."persvector".repo  = "persvector";
+  inputs."persvector".dir   = "v1_0_0";
   inputs."persvector".type  = "github";
   inputs."persvector".inputs.nixpkgs.follows = "nixpkgs";
   inputs."persvector".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

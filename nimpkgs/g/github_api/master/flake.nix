@@ -1,5 +1,5 @@
 {
-  description = ''Nim wrapper for the GitHub API'';
+  description = ''Connector for the GitHub API v3'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-github_api-master.flake = false;
   inputs.src-github_api-master.owner = "watzon";
-  inputs.src-github_api-master.ref   = "refs/heads/master";
+  inputs.src-github_api-master.ref   = "master";
   inputs.src-github_api-master.repo  = "github-api-nim";
   inputs.src-github_api-master.type  = "github";
   

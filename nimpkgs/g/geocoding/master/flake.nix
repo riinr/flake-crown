@@ -9,7 +9,7 @@
   
   inputs.src-geocoding-master.flake = false;
   inputs.src-geocoding-master.owner = "saratchandra92";
-  inputs.src-geocoding-master.ref   = "refs/heads/master";
+  inputs.src-geocoding-master.ref   = "master";
   inputs.src-geocoding-master.repo  = "nim-geocoding";
   inputs.src-geocoding-master.type  = "github";
   

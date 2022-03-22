@@ -1,5 +1,5 @@
 {
-  description = ''Nim wrapper around the git version control software'';
+  description = ''module for working with git version control software'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-gitapi-master.flake = false;
   inputs.src-gitapi-master.owner = "achesak";
-  inputs.src-gitapi-master.ref   = "refs/heads/master";
+  inputs.src-gitapi-master.ref   = "master";
   inputs.src-gitapi-master.repo  = "nim-gitapi";
   inputs.src-gitapi-master.type  = "github";
   

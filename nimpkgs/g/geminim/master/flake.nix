@@ -1,5 +1,5 @@
 {
-  description = ''Simple async Gemini server'';
+  description = ''A simple gemini server written in nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-geminim-master.flake = false;
   inputs.src-geminim-master.owner = "IDF31";
-  inputs.src-geminim-master.ref   = "refs/heads/master";
+  inputs.src-geminim-master.ref   = "master";
   inputs.src-geminim-master.repo  = "geminim";
   inputs.src-geminim-master.type  = "github";
   

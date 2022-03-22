@@ -1,5 +1,5 @@
 {
-  description = ''wrapper for the GNU multiple precision arithmetic library (GMP)'';
+  description = ''Wrapper for the GNU Multiple Precision Arithmetic Library (GMP)'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-gmp-v0_2_5.flake = false;
   inputs.src-gmp-v0_2_5.owner = "subsetpark";
-  inputs.src-gmp-v0_2_5.ref   = "refs/tags/v0.2.5";
+  inputs.src-gmp-v0_2_5.ref   = "v0_2_5";
   inputs.src-gmp-v0_2_5.repo  = "nim-gmp";
   inputs.src-gmp-v0_2_5.type  = "github";
   

@@ -9,7 +9,7 @@
   
   inputs.src-gintro-v0_4_9.flake = false;
   inputs.src-gintro-v0_4_9.owner = "stefansalewski";
-  inputs.src-gintro-v0_4_9.ref   = "refs/tags/v0.4.9";
+  inputs.src-gintro-v0_4_9.ref   = "v0_4_9";
   inputs.src-gintro-v0_4_9.repo  = "gintro";
   inputs.src-gintro-v0_4_9.type  = "github";
   

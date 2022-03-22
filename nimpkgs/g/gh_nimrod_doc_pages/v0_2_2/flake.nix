@@ -9,7 +9,7 @@
   
   inputs.src-gh_nimrod_doc_pages-v0_2_2.flake = false;
   inputs.src-gh_nimrod_doc_pages-v0_2_2.owner = "Araq";
-  inputs.src-gh_nimrod_doc_pages-v0_2_2.ref   = "refs/tags/v0.2.2";
+  inputs.src-gh_nimrod_doc_pages-v0_2_2.ref   = "v0_2_2";
   inputs.src-gh_nimrod_doc_pages-v0_2_2.repo  = "gh_nimrod_doc_pages";
   inputs.src-gh_nimrod_doc_pages-v0_2_2.type  = "github";
   

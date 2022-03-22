@@ -9,13 +9,14 @@
   
   inputs.src-glob-master.flake = false;
   inputs.src-glob-master.owner = "haltcase";
-  inputs.src-glob-master.ref   = "refs/heads/master";
+  inputs.src-glob-master.ref   = "master";
   inputs.src-glob-master.repo  = "glob";
   inputs.src-glob-master.type  = "github";
   
   inputs."regex".owner = "nim-nix-pkgs";
   inputs."regex".ref   = "master";
   inputs."regex".repo  = "regex";
+  inputs."regex".dir   = "v0_19_0";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

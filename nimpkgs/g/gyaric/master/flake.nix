@@ -9,7 +9,7 @@
   
   inputs.src-gyaric-master.flake = false;
   inputs.src-gyaric-master.owner = "jiro4989";
-  inputs.src-gyaric-master.ref   = "refs/heads/master";
+  inputs.src-gyaric-master.ref   = "master";
   inputs.src-gyaric-master.repo  = "gyaric";
   inputs.src-gyaric-master.type  = "github";
   

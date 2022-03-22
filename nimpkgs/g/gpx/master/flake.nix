@@ -9,7 +9,7 @@
   
   inputs.src-gpx-master.flake = false;
   inputs.src-gpx-master.owner = "achesak";
-  inputs.src-gpx-master.ref   = "refs/heads/master";
+  inputs.src-gpx-master.ref   = "master";
   inputs.src-gpx-master.repo  = "nim-gpx";
   inputs.src-gpx-master.type  = "github";
   

@@ -9,7 +9,7 @@
   
   inputs.src-ggplotnim-v0_2_13.flake = false;
   inputs.src-ggplotnim-v0_2_13.owner = "Vindaar";
-  inputs.src-ggplotnim-v0_2_13.ref   = "refs/tags/v0.2.13";
+  inputs.src-ggplotnim-v0_2_13.ref   = "v0_2_13";
   inputs.src-ggplotnim-v0_2_13.repo  = "ggplotnim";
   inputs.src-ggplotnim-v0_2_13.type  = "github";
   

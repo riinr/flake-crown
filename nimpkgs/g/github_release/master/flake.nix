@@ -9,13 +9,14 @@
   
   inputs.src-github_release-master.flake = false;
   inputs.src-github_release-master.owner = "kdheepak";
-  inputs.src-github_release-master.ref   = "refs/heads/master";
+  inputs.src-github_release-master.ref   = "master";
   inputs.src-github_release-master.repo  = "github-release";
   inputs.src-github_release-master.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

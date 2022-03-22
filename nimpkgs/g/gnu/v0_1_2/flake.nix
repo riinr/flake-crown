@@ -9,13 +9,14 @@
   
   inputs.src-gnu-v0_1_2.flake = false;
   inputs.src-gnu-v0_1_2.owner = "tonogram";
-  inputs.src-gnu-v0_1_2.ref   = "refs/tags/v0.1.2";
+  inputs.src-gnu-v0_1_2.ref   = "v0_1_2";
   inputs.src-gnu-v0_1_2.repo  = "gnu";
   inputs.src-gnu-v0_1_2.type  = "github";
   
   inputs."godot".owner = "nim-nix-pkgs";
   inputs."godot".ref   = "master";
   inputs."godot".repo  = "godot";
+  inputs."godot".dir   = "v0_7_28";
   inputs."godot".type  = "github";
   inputs."godot".inputs.nixpkgs.follows = "nixpkgs";
   inputs."godot".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

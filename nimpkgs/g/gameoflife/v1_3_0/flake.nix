@@ -9,7 +9,7 @@
   
   inputs.src-gameoflife-v1_3_0.flake = false;
   inputs.src-gameoflife-v1_3_0.owner = "jiro4989";
-  inputs.src-gameoflife-v1_3_0.ref   = "refs/tags/v1.3.0";
+  inputs.src-gameoflife-v1_3_0.ref   = "v1_3_0";
   inputs.src-gameoflife-v1_3_0.repo  = "gameoflife";
   inputs.src-gameoflife-v1_3_0.type  = "github";
   

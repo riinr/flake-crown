@@ -9,13 +9,14 @@
   
   inputs.src-gigi-v0_1_1.flake = false;
   inputs.src-gigi-v0_1_1.owner = "attakei";
-  inputs.src-gigi-v0_1_1.ref   = "refs/tags/v0.1.1";
+  inputs.src-gigi-v0_1_1.ref   = "v0_1_1";
   inputs.src-gigi-v0_1_1.repo  = "gigi";
   inputs.src-gigi-v0_1_1.type  = "github";
   
   inputs."puppy".owner = "nim-nix-pkgs";
   inputs."puppy".ref   = "master";
   inputs."puppy".repo  = "puppy";
+  inputs."puppy".dir   = "1_5_3";
   inputs."puppy".type  = "github";
   inputs."puppy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."puppy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -9,7 +9,7 @@
   
   inputs.src-gnuplotlib-v2_1_0.flake = false;
   inputs.src-gnuplotlib-v2_1_0.owner = "planetis-m";
-  inputs.src-gnuplotlib-v2_1_0.ref   = "refs/tags/v2.1.0";
+  inputs.src-gnuplotlib-v2_1_0.ref   = "v2_1_0";
   inputs.src-gnuplotlib-v2_1_0.repo  = "gnuplotlib";
   inputs.src-gnuplotlib-v2_1_0.type  = "github";
   

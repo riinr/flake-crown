@@ -1,5 +1,5 @@
 {
-  description = ''High level GObject-Introspection based GTK3 bindings'';
+  description = ''High level GObject-Introspection based GTK3/GTK4 bindings'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-gintro-v0_7_3.flake = false;
   inputs.src-gintro-v0_7_3.owner = "stefansalewski";
-  inputs.src-gintro-v0_7_3.ref   = "refs/tags/v0.7.3";
+  inputs.src-gintro-v0_7_3.ref   = "v0_7_3";
   inputs.src-gintro-v0_7_3.repo  = "gintro";
   inputs.src-gintro-v0_7_3.type  = "github";
   

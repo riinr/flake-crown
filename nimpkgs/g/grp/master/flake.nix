@@ -1,5 +1,5 @@
 {
-  description = ''Nim port of Python's grp module for working with the UNIX group database file'';
+  description = ''module for working with the UNIX group file'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-grp-master.flake = false;
   inputs.src-grp-master.owner = "achesak";
-  inputs.src-grp-master.ref   = "refs/heads/master";
+  inputs.src-grp-master.ref   = "master";
   inputs.src-grp-master.repo  = "nim-grp";
   inputs.src-grp-master.type  = "github";
   

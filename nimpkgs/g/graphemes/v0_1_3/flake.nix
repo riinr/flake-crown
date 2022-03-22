@@ -9,7 +9,7 @@
   
   inputs.src-graphemes-v0_1_3.flake = false;
   inputs.src-graphemes-v0_1_3.owner = "nitely";
-  inputs.src-graphemes-v0_1_3.ref   = "refs/tags/v0.1.3";
+  inputs.src-graphemes-v0_1_3.ref   = "v0_1_3";
   inputs.src-graphemes-v0_1_3.repo  = "nim-graphemes";
   inputs.src-graphemes-v0_1_3.type  = "github";
   

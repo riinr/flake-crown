@@ -9,13 +9,14 @@
   
   inputs.src-graphics-master.flake = false;
   inputs.src-graphics-master.owner = "nim-lang";
-  inputs.src-graphics-master.ref   = "refs/heads/master";
+  inputs.src-graphics-master.ref   = "master";
   inputs.src-graphics-master.repo  = "graphics";
   inputs.src-graphics-master.type  = "github";
   
   inputs."sdl1".owner = "nim-nix-pkgs";
   inputs."sdl1".ref   = "master";
   inputs."sdl1".repo  = "sdl1";
+  inputs."sdl1".dir   = "";
   inputs."sdl1".type  = "github";
   inputs."sdl1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sdl1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

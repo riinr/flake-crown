@@ -1,5 +1,5 @@
 {
-  description = ''This library is a wrapper to C GDBM library'';
+  description = ''This library is a wrapper to C GDBM one'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-gdbmc-master.flake = false;
   inputs.src-gdbmc-master.owner = "vycb";
-  inputs.src-gdbmc-master.ref   = "refs/heads/master";
+  inputs.src-gdbmc-master.ref   = "master";
   inputs.src-gdbmc-master.repo  = "gdbmc.nim";
   inputs.src-gdbmc-master.type  = "github";
   

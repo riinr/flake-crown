@@ -9,13 +9,14 @@
   
   inputs.src-gcplat-2_0_2.flake = false;
   inputs.src-gcplat-2_0_2.owner = "disruptek";
-  inputs.src-gcplat-2_0_2.ref   = "refs/tags/2.0.2";
+  inputs.src-gcplat-2_0_2.ref   = "2_0_2";
   inputs.src-gcplat-2_0_2.repo  = "gcplat";
   inputs.src-gcplat-2_0_2.type  = "github";
   
   inputs."openapi".owner = "nim-nix-pkgs";
   inputs."openapi".ref   = "master";
   inputs."openapi".repo  = "openapi";
+  inputs."openapi".dir   = "3_1_0";
   inputs."openapi".type  = "github";
   inputs."openapi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."openapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

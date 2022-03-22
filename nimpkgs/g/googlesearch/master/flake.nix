@@ -1,5 +1,5 @@
 {
-  description = ''library for scraping google search results'';
+  description = ''Nim library for scraping google search results'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-googlesearch-master.flake = false;
   inputs.src-googlesearch-master.owner = "xyb";
-  inputs.src-googlesearch-master.ref   = "refs/heads/master";
+  inputs.src-googlesearch-master.ref   = "master";
   inputs.src-googlesearch-master.repo  = "googlesearch.nim";
   inputs.src-googlesearch-master.type  = "github";
   
   inputs."nimquery".owner = "nim-nix-pkgs";
   inputs."nimquery".ref   = "master";
   inputs."nimquery".repo  = "nimquery";
+  inputs."nimquery".dir   = "v1_2_3";
   inputs."nimquery".type  = "github";
   inputs."nimquery".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimquery".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

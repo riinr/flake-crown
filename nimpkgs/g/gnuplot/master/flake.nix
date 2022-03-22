@@ -1,5 +1,5 @@
 {
-  description = ''Nim interface to gnuplot'';
+  description = ''Interface to Gnuplot'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-gnuplot-master.flake = false;
   inputs.src-gnuplot-master.owner = "dvolk";
-  inputs.src-gnuplot-master.ref   = "refs/heads/master";
+  inputs.src-gnuplot-master.ref   = "master";
   inputs.src-gnuplot-master.repo  = "gnuplot.nim";
   inputs.src-gnuplot-master.type  = "github";
   

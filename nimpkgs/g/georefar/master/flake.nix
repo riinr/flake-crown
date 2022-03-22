@@ -1,5 +1,5 @@
 {
-  description = ''GeoRef Argentina Government MultiSync API Client for Nim'';
+  description = ''GeoRef Argentina Government API Client for Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-georefar-master.flake = false;
   inputs.src-georefar-master.owner = "juancarlospaco";
-  inputs.src-georefar-master.ref   = "refs/heads/master";
+  inputs.src-georefar-master.ref   = "master";
   inputs.src-georefar-master.repo  = "nim-georefar";
   inputs.src-georefar-master.type  = "github";
   

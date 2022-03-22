@@ -1,5 +1,5 @@
 {
-  description = ''Too awesome procs to be included in nimrod.os module'';
+  description = ''Too awesome procs to be included in Nim's os module.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-genieos-v9_4_2-hyoyeon.flake = false;
   inputs.src-genieos-v9_4_2-hyoyeon.owner = "Araq";
-  inputs.src-genieos-v9_4_2-hyoyeon.ref   = "refs/tags/v9.4.2-hyoyeon";
+  inputs.src-genieos-v9_4_2-hyoyeon.ref   = "v9_4_2-hyoyeon";
   inputs.src-genieos-v9_4_2-hyoyeon.repo  = "genieos";
   inputs.src-genieos-v9_4_2-hyoyeon.type  = "github";
   
   inputs."x11".owner = "nim-nix-pkgs";
   inputs."x11".ref   = "master";
   inputs."x11".repo  = "x11";
+  inputs."x11".dir   = "";
   inputs."x11".type  = "github";
   inputs."x11".inputs.nixpkgs.follows = "nixpkgs";
   inputs."x11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

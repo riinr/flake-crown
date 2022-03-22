@@ -9,7 +9,7 @@
   
   inputs.src-ginger-v0_1_17.flake = false;
   inputs.src-ginger-v0_1_17.owner = "Vindaar";
-  inputs.src-ginger-v0_1_17.ref   = "refs/tags/v0.1.17";
+  inputs.src-ginger-v0_1_17.ref   = "v0_1_17";
   inputs.src-ginger-v0_1_17.repo  = "ginger";
   inputs.src-ginger-v0_1_17.type  = "github";
   

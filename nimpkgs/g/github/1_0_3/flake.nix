@@ -9,13 +9,14 @@
   
   inputs.src-github-1_0_3.flake = false;
   inputs.src-github-1_0_3.owner = "disruptek";
-  inputs.src-github-1_0_3.ref   = "refs/tags/1.0.3";
+  inputs.src-github-1_0_3.ref   = "1_0_3";
   inputs.src-github-1_0_3.repo  = "github";
   inputs.src-github-1_0_3.type  = "github";
   
   inputs."npeg".owner = "nim-nix-pkgs";
   inputs."npeg".ref   = "master";
   inputs."npeg".repo  = "npeg";
+  inputs."npeg".dir   = "0_26_0";
   inputs."npeg".type  = "github";
   inputs."npeg".inputs.nixpkgs.follows = "nixpkgs";
   inputs."npeg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -1,5 +1,5 @@
 {
-  description = ''Modular multithreading Linux HTTP server'';
+  description = ''An integrated multithreading Http/1.1 + WebSocket v13 server for Linux'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-guildenstern-0_8.flake = false;
   inputs.src-guildenstern-0_8.owner = "olliNiinivaara";
-  inputs.src-guildenstern-0_8.ref   = "refs/tags/0.8";
+  inputs.src-guildenstern-0_8.ref   = "0_8";
   inputs.src-guildenstern-0_8.repo  = "GuildenStern";
   inputs.src-guildenstern-0_8.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''Google API for nim'';
+  description = ''GoogleAPI - Growing collection of google APIs for nim.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-googleapi-0_1_0.flake = false;
   inputs.src-googleapi-0_1_0.owner = "treeform";
-  inputs.src-googleapi-0_1_0.ref   = "refs/tags/0.1.0";
+  inputs.src-googleapi-0_1_0.ref   = "0_1_0";
   inputs.src-googleapi-0_1_0.repo  = "googleapi";
   inputs.src-googleapi-0_1_0.type  = "github";
   
   inputs."quickjwt".owner = "nim-nix-pkgs";
   inputs."quickjwt".ref   = "master";
   inputs."quickjwt".repo  = "quickjwt";
+  inputs."quickjwt".dir   = "0_2_1";
   inputs."quickjwt".type  = "github";
   inputs."quickjwt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."quickjwt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

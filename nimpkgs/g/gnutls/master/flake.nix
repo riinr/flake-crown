@@ -1,5 +1,5 @@
 {
-  description = ''GnuTLS wrapper'';
+  description = ''Wrapper for the GnuTLS library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-gnutls-master.flake = false;
   inputs.src-gnutls-master.owner = "FedericoCeratto";
-  inputs.src-gnutls-master.ref   = "refs/heads/master";
+  inputs.src-gnutls-master.ref   = "master";
   inputs.src-gnutls-master.repo  = "nim-gnutls";
   inputs.src-gnutls-master.type  = "github";
   

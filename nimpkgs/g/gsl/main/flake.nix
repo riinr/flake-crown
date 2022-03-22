@@ -1,5 +1,5 @@
 {
-  description = ''gsl C Api wrapped for nim'';
+  description = ''GNU Scientific Library for nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,8 +9,8 @@
   
   inputs.src-gsl-main.flake = false;
   inputs.src-gsl-main.owner = "YesDrX";
-  inputs.src-gsl-main.ref   = "refs/heads/main";
-  inputs.src-gsl-main.repo  = "gsl-nim";
+  inputs.src-gsl-main.ref   = "main";
+  inputs.src-gsl-main.repo  = "gsl-nim.git";
   inputs.src-gsl-main.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

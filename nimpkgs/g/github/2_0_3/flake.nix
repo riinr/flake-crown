@@ -9,7 +9,7 @@
   
   inputs.src-github-2_0_3.flake = false;
   inputs.src-github-2_0_3.owner = "disruptek";
-  inputs.src-github-2_0_3.ref   = "refs/tags/2.0.3";
+  inputs.src-github-2_0_3.ref   = "2_0_3";
   inputs.src-github-2_0_3.repo  = "github";
   inputs.src-github-2_0_3.type  = "github";
   

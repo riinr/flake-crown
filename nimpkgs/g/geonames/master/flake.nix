@@ -9,7 +9,7 @@
   
   inputs.src-geonames-master.flake = false;
   inputs.src-geonames-master.owner = "achesak";
-  inputs.src-geonames-master.ref   = "refs/heads/master";
+  inputs.src-geonames-master.ref   = "master";
   inputs.src-geonames-master.repo  = "nim-geonames";
   inputs.src-geonames-master.type  = "github";
   

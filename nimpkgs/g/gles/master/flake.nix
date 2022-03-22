@@ -1,5 +1,5 @@
 {
-  description = ''Bindings for OpenGL ES, the embedded 3D graphics library.'';
+  description = ''Bindings for OpenGL ES, the embedded 3D graphics library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,8 +9,8 @@
   
   inputs.src-gles-master.flake = false;
   inputs.src-gles-master.owner = "nimious";
-  inputs.src-gles-master.ref   = "refs/heads/master";
-  inputs.src-gles-master.repo  = "gles";
+  inputs.src-gles-master.ref   = "master";
+  inputs.src-gles-master.repo  = "gles.git";
   inputs.src-gles-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

@@ -9,13 +9,14 @@
   
   inputs.src-grim-v_0_1_0.flake = false;
   inputs.src-grim-v_0_1_0.owner = "ebran";
-  inputs.src-grim-v_0_1_0.ref   = "refs/tags/v.0.1.0";
+  inputs.src-grim-v_0_1_0.ref   = "v_0_1_0";
   inputs.src-grim-v_0_1_0.repo  = "grim";
   inputs.src-grim-v_0_1_0.type  = "github";
   
   inputs."yaml".owner = "nim-nix-pkgs";
   inputs."yaml".ref   = "master";
   inputs."yaml".repo  = "yaml";
+  inputs."yaml".dir   = "v0_16_0";
   inputs."yaml".type  = "github";
   inputs."yaml".inputs.nixpkgs.follows = "nixpkgs";
   inputs."yaml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
