@@ -9,13 +9,14 @@
   
   inputs.src-hldiff-v0_1.flake = false;
   inputs.src-hldiff-v0_1.owner = "c-blake";
-  inputs.src-hldiff-v0_1.ref   = "refs/tags/v0.1";
+  inputs.src-hldiff-v0_1.ref   = "v0_1";
   inputs.src-hldiff-v0_1.repo  = "hldiff";
   inputs.src-hldiff-v0_1.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

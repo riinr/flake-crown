@@ -9,7 +9,7 @@
   
   inputs.src-highlight-master.flake = false;
   inputs.src-highlight-master.owner = "RaimundHuebel";
-  inputs.src-highlight-master.ref   = "refs/heads/master";
+  inputs.src-highlight-master.ref   = "master";
   inputs.src-highlight-master.repo  = "nimhighlight";
   inputs.src-highlight-master.type  = "github";
   

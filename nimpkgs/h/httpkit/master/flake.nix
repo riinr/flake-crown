@@ -1,5 +1,5 @@
 {
-  description = ''An efficient HTTP tool suite written in pure nim. Help you to write HTTP services or clients via TCP, UDP, or even Unix Domain socket, etc.'';
+  description = ''An efficient HTTP parser written in pure nim. Help you to write HTTP services or clients via TCP, UDP, or even Unix Domain socket, etc.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-httpkit-master.flake = false;
   inputs.src-httpkit-master.owner = "tulayang";
-  inputs.src-httpkit-master.ref   = "refs/heads/master";
+  inputs.src-httpkit-master.ref   = "master";
   inputs.src-httpkit-master.repo  = "httpkit";
   inputs.src-httpkit-master.type  = "github";
   

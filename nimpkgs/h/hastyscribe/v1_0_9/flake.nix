@@ -9,7 +9,7 @@
   
   inputs.src-hastyscribe-v1_0_9.flake = false;
   inputs.src-hastyscribe-v1_0_9.owner = "h3rald";
-  inputs.src-hastyscribe-v1_0_9.ref   = "refs/tags/v1.0.9";
+  inputs.src-hastyscribe-v1_0_9.ref   = "v1_0_9";
   inputs.src-hastyscribe-v1_0_9.repo  = "hastyscribe";
   inputs.src-hastyscribe-v1_0_9.type  = "github";
   

@@ -1,5 +1,5 @@
 {
-  description = ''A performant and scalable HTTP server.'';
+  description = ''A super-fast epoll-backed and parallel HTTP server.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-httpbeast-v0_1_0.flake = false;
   inputs.src-httpbeast-v0_1_0.owner = "dom96";
-  inputs.src-httpbeast-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-httpbeast-v0_1_0.ref   = "v0_1_0";
   inputs.src-httpbeast-v0_1_0.repo  = "httpbeast";
   inputs.src-httpbeast-v0_1_0.type  = "github";
   
   inputs."asynctools".owner = "nim-nix-pkgs";
   inputs."asynctools".ref   = "master";
   inputs."asynctools".repo  = "asynctools";
+  inputs."asynctools".dir   = "";
   inputs."asynctools".type  = "github";
   inputs."asynctools".inputs.nixpkgs.follows = "nixpkgs";
   inputs."asynctools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

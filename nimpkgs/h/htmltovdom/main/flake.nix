@@ -9,13 +9,14 @@
   
   inputs.src-htmlToVdom-main.flake = false;
   inputs.src-htmlToVdom-main.owner = "C-NERD";
-  inputs.src-htmlToVdom-main.ref   = "refs/heads/main";
+  inputs.src-htmlToVdom-main.ref   = "main";
   inputs.src-htmlToVdom-main.repo  = "htmlToVdom";
   inputs.src-htmlToVdom-main.type  = "github";
   
   inputs."karax".owner = "nim-nix-pkgs";
   inputs."karax".ref   = "master";
   inputs."karax".repo  = "karax";
+  inputs."karax".dir   = "1_2_1";
   inputs."karax".type  = "github";
   inputs."karax".inputs.nixpkgs.follows = "nixpkgs";
   inputs."karax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

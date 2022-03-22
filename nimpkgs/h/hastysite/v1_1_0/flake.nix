@@ -1,5 +1,5 @@
 {
-  description = ''A small but powerful static site generator powered by HastyScribe and min'';
+  description = ''A small but powerful static site generator'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-hastysite-v1_1_0.flake = false;
   inputs.src-hastysite-v1_1_0.owner = "h3rald";
-  inputs.src-hastysite-v1_1_0.ref   = "refs/tags/v1.1.0";
+  inputs.src-hastysite-v1_1_0.ref   = "v1_1_0";
   inputs.src-hastysite-v1_1_0.repo  = "hastysite";
   inputs.src-hastysite-v1_1_0.type  = "github";
   

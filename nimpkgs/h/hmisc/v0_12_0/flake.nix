@@ -9,13 +9,14 @@
   
   inputs.src-hmisc-v0_12_0.flake = false;
   inputs.src-hmisc-v0_12_0.owner = "haxscramper";
-  inputs.src-hmisc-v0_12_0.ref   = "refs/tags/v0.12.0";
+  inputs.src-hmisc-v0_12_0.ref   = "v0_12_0";
   inputs.src-hmisc-v0_12_0.repo  = "hmisc";
   inputs.src-hmisc-v0_12_0.type  = "github";
   
   inputs."fusion".owner = "nim-nix-pkgs";
   inputs."fusion".ref   = "master";
   inputs."fusion".repo  = "fusion";
+  inputs."fusion".dir   = "v1_1";
   inputs."fusion".type  = "github";
   inputs."fusion".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fusion".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."benchy".owner = "nim-nix-pkgs";
   inputs."benchy".ref   = "master";
   inputs."benchy".repo  = "benchy";
+  inputs."benchy".dir   = "";
   inputs."benchy".type  = "github";
   inputs."benchy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."benchy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."jsony".owner = "nim-nix-pkgs";
   inputs."jsony".ref   = "master";
   inputs."jsony".repo  = "jsony";
+  inputs."jsony".dir   = "1_1_3";
   inputs."jsony".type  = "github";
   inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -37,6 +40,7 @@
   inputs."unicodedb".owner = "nim-nix-pkgs";
   inputs."unicodedb".ref   = "master";
   inputs."unicodedb".repo  = "unicodedb";
+  inputs."unicodedb".dir   = "v0_10_0";
   inputs."unicodedb".type  = "github";
   inputs."unicodedb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unicodedb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

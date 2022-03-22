@@ -9,13 +9,14 @@
   
   inputs.src-htsparse-master.flake = false;
   inputs.src-htsparse-master.owner = "haxscramper";
-  inputs.src-htsparse-master.ref   = "refs/heads/master";
+  inputs.src-htsparse-master.ref   = "master";
   inputs.src-htsparse-master.repo  = "htsparse";
   inputs.src-htsparse-master.type  = "github";
   
   inputs."hmisc".owner = "nim-nix-pkgs";
   inputs."hmisc".ref   = "master";
   inputs."hmisc".repo  = "hmisc";
+  inputs."hmisc".dir   = "v0_14_6";
   inputs."hmisc".type  = "github";
   inputs."hmisc".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hmisc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

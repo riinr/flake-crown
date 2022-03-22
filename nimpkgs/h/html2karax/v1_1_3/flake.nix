@@ -9,7 +9,7 @@
   
   inputs.src-html2karax-v1_1_3.flake = false;
   inputs.src-html2karax-v1_1_3.owner = "nim-lang-cn";
-  inputs.src-html2karax-v1_1_3.ref   = "refs/tags/v1.1.3";
+  inputs.src-html2karax-v1_1_3.ref   = "v1_1_3";
   inputs.src-html2karax-v1_1_3.repo  = "html2karax";
   inputs.src-html2karax-v1_1_3.type  = "github";
   

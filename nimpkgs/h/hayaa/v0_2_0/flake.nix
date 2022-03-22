@@ -9,13 +9,14 @@
   
   inputs.src-hayaa-v0_2_0.flake = false;
   inputs.src-hayaa-v0_2_0.owner = "angus-lherrou";
-  inputs.src-hayaa-v0_2_0.ref   = "refs/tags/v0.2.0";
+  inputs.src-hayaa-v0_2_0.ref   = "v0_2_0";
   inputs.src-hayaa-v0_2_0.repo  = "hayaa";
   inputs.src-hayaa-v0_2_0.type  = "github";
   
   inputs."illwill".owner = "nim-nix-pkgs";
   inputs."illwill".ref   = "master";
   inputs."illwill".repo  = "illwill";
+  inputs."illwill".dir   = "v0_2_0";
   inputs."illwill".type  = "github";
   inputs."illwill".inputs.nixpkgs.follows = "nixpkgs";
   inputs."illwill".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

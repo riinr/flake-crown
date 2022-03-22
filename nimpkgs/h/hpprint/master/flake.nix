@@ -1,5 +1,5 @@
 {
-  description = ''Pretty-printer'';
+  description = ''Generic configurable pretty-printer'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-hpprint-master.flake = false;
   inputs.src-hpprint-master.owner = "haxscramper";
-  inputs.src-hpprint-master.ref   = "refs/heads/master";
+  inputs.src-hpprint-master.ref   = "master";
   inputs.src-hpprint-master.repo  = "hpprint";
   inputs.src-hpprint-master.type  = "github";
   
   inputs."hdrawing".owner = "nim-nix-pkgs";
   inputs."hdrawing".ref   = "master";
   inputs."hdrawing".repo  = "hdrawing";
+  inputs."hdrawing".dir   = "0_1_3";
   inputs."hdrawing".type  = "github";
   inputs."hdrawing".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hdrawing".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."hnimast".owner = "nim-nix-pkgs";
   inputs."hnimast".ref   = "master";
   inputs."hnimast".repo  = "hnimast";
+  inputs."hnimast".dir   = "v0_4_2";
   inputs."hnimast".type  = "github";
   inputs."hnimast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hnimast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."hmisc".owner = "nim-nix-pkgs";
   inputs."hmisc".ref   = "master";
   inputs."hmisc".repo  = "hmisc";
+  inputs."hmisc".dir   = "v0_14_6";
   inputs."hmisc".type  = "github";
   inputs."hmisc".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hmisc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

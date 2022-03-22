@@ -1,5 +1,5 @@
 {
-  description = ''AST for various languages'';
+  description = ''AST for various markup languages'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-hasts-v0_1_4.flake = false;
   inputs.src-hasts-v0_1_4.owner = "haxscramper";
-  inputs.src-hasts-v0_1_4.ref   = "refs/tags/v0.1.4";
+  inputs.src-hasts-v0_1_4.ref   = "v0_1_4";
   inputs.src-hasts-v0_1_4.repo  = "hasts";
   inputs.src-hasts-v0_1_4.type  = "github";
   
   inputs."hmisc".owner = "nim-nix-pkgs";
   inputs."hmisc".ref   = "master";
   inputs."hmisc".repo  = "hmisc";
+  inputs."hmisc".dir   = "v0_14_6";
   inputs."hmisc".type  = "github";
   inputs."hmisc".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hmisc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

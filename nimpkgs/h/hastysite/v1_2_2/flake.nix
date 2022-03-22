@@ -9,7 +9,7 @@
   
   inputs.src-hastysite-v1_2_2.flake = false;
   inputs.src-hastysite-v1_2_2.owner = "h3rald";
-  inputs.src-hastysite-v1_2_2.ref   = "refs/tags/v1.2.2";
+  inputs.src-hastysite-v1_2_2.ref   = "v1_2_2";
   inputs.src-hastysite-v1_2_2.repo  = "hastysite";
   inputs.src-hastysite-v1_2_2.type  = "github";
   

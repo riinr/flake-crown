@@ -9,13 +9,14 @@
   
   inputs.src-hparse-v0_2_4.flake = false;
   inputs.src-hparse-v0_2_4.owner = "haxscramper";
-  inputs.src-hparse-v0_2_4.ref   = "refs/tags/v0.2.4";
+  inputs.src-hparse-v0_2_4.ref   = "v0_2_4";
   inputs.src-hparse-v0_2_4.repo  = "hparse";
   inputs.src-hparse-v0_2_4.type  = "github";
   
   inputs."regex".owner = "nim-nix-pkgs";
   inputs."regex".ref   = "master";
   inputs."regex".repo  = "regex";
+  inputs."regex".dir   = "v0_19_0";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."hmisc".owner = "nim-nix-pkgs";
   inputs."hmisc".ref   = "master";
   inputs."hmisc".repo  = "hmisc";
+  inputs."hmisc".dir   = "v0_14_6";
   inputs."hmisc".type  = "github";
   inputs."hmisc".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hmisc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -30,6 +32,7 @@
   inputs."hasts".owner = "nim-nix-pkgs";
   inputs."hasts".ref   = "master";
   inputs."hasts".repo  = "hasts";
+  inputs."hasts".dir   = "v0_1_6";
   inputs."hasts".type  = "github";
   inputs."hasts".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hasts".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -37,6 +40,7 @@
   inputs."hpprint".owner = "nim-nix-pkgs";
   inputs."hpprint".ref   = "master";
   inputs."hpprint".repo  = "hpprint";
+  inputs."hpprint".dir   = "v0_2_18";
   inputs."hpprint".type  = "github";
   inputs."hpprint".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hpprint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

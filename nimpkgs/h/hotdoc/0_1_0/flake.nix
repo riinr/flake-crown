@@ -1,5 +1,5 @@
 {
-  description = ''Single Page Documentation Generator'';
+  description = ''Single page documentation generator'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-hotdoc-0_1_0.flake = false;
   inputs.src-hotdoc-0_1_0.owner = "willyboar";
-  inputs.src-hotdoc-0_1_0.ref   = "refs/tags/0.1.0";
+  inputs.src-hotdoc-0_1_0.ref   = "0_1_0";
   inputs.src-hotdoc-0_1_0.repo  = "hotdoc";
   inputs.src-hotdoc-0_1_0.type  = "github";
   
   inputs."docopt".owner = "nim-nix-pkgs";
   inputs."docopt".ref   = "master";
   inputs."docopt".repo  = "docopt";
+  inputs."docopt".dir   = "v0_6_8";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

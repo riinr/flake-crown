@@ -9,7 +9,7 @@
   
   inputs.src-hashids-master.flake = false;
   inputs.src-hashids-master.owner = "achesak";
-  inputs.src-hashids-master.ref   = "refs/heads/master";
+  inputs.src-hashids-master.ref   = "master";
   inputs.src-hashids-master.repo  = "nim-hashids";
   inputs.src-hashids-master.type  = "github";
   

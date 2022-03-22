@@ -9,7 +9,7 @@
   
   inputs.src-hpack-master.flake = false;
   inputs.src-hpack-master.owner = "nitely";
-  inputs.src-hpack-master.ref   = "refs/heads/master";
+  inputs.src-hpack-master.ref   = "master";
   inputs.src-hpack-master.repo  = "nim-hpack";
   inputs.src-hpack-master.type  = "github";
   

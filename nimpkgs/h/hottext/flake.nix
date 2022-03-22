@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."hottext-trunk".dir   = "trunk";
+  inputs."hottext-trunk".owner = "nim-nix-pkgs";
+  inputs."hottext-trunk".ref   = "master";
+  inputs."hottext-trunk".repo  = "hottext";
+  inputs."hottext-trunk".type  = "github";
+  inputs."hottext-trunk".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."hottext-trunk".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."hottext-v1_2".dir   = "v1_2";
   inputs."hottext-v1_2".owner = "nim-nix-pkgs";
   inputs."hottext-v1_2".ref   = "master";

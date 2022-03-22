@@ -9,13 +9,14 @@
   
   inputs.src-hottie-master.flake = false;
   inputs.src-hottie-master.owner = "treeform";
-  inputs.src-hottie-master.ref   = "refs/heads/master";
+  inputs.src-hottie-master.ref   = "master";
   inputs.src-hottie-master.repo  = "hottie";
   inputs.src-hottie-master.type  = "github";
   
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_5_22";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."ptrace".owner = "nim-nix-pkgs";
   inputs."ptrace".ref   = "master";
   inputs."ptrace".repo  = "ptrace";
+  inputs."ptrace".dir   = "0_0_4";
   inputs."ptrace".type  = "github";
   inputs."ptrace".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ptrace".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

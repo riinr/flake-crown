@@ -9,7 +9,7 @@
   
   inputs.src-hostname-main.flake = false;
   inputs.src-hostname-main.owner = "rominf";
-  inputs.src-hostname-main.ref   = "refs/heads/main";
+  inputs.src-hostname-main.ref   = "main";
   inputs.src-hostname-main.repo  = "nim-hostname";
   inputs.src-hostname-main.type  = "github";
   

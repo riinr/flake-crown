@@ -9,7 +9,7 @@
   
   inputs.src-hex-master.flake = false;
   inputs.src-hex-master.owner = "esbullington";
-  inputs.src-hex-master.ref   = "refs/heads/master";
+  inputs.src-hex-master.ref   = "master";
   inputs.src-hex-master.repo  = "nimrod-hex";
   inputs.src-hex-master.type  = "github";
   

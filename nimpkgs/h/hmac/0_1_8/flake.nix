@@ -1,5 +1,5 @@
 {
-  description = ''HMAC-SHA1 and HMAC-MD5 hashing in Nim'';
+  description = ''HMAC hashing in Nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-hmac-0_1_8.flake = false;
   inputs.src-hmac-0_1_8.owner = "OpenSystemsLab";
-  inputs.src-hmac-0_1_8.ref   = "refs/tags/0.1.8";
+  inputs.src-hmac-0_1_8.ref   = "0_1_8";
   inputs.src-hmac-0_1_8.repo  = "hmac.nim";
   inputs.src-hmac-0_1_8.type  = "github";
   
   inputs."nimsha2".owner = "nim-nix-pkgs";
   inputs."nimsha2".ref   = "master";
   inputs."nimsha2".repo  = "nimsha2";
+  inputs."nimsha2".dir   = "";
   inputs."nimsha2".type  = "github";
   inputs."nimsha2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimsha2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

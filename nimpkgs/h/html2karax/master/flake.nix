@@ -9,13 +9,14 @@
   
   inputs.src-html2karax-master.flake = false;
   inputs.src-html2karax-master.owner = "nim-lang-cn";
-  inputs.src-html2karax-master.ref   = "refs/heads/master";
+  inputs.src-html2karax-master.ref   = "master";
   inputs.src-html2karax-master.repo  = "html2karax";
   inputs.src-html2karax-master.type  = "github";
   
   inputs."karax".owner = "nim-nix-pkgs";
   inputs."karax".ref   = "master";
   inputs."karax".repo  = "karax";
+  inputs."karax".dir   = "1_2_1";
   inputs."karax".type  = "github";
   inputs."karax".inputs.nixpkgs.follows = "nixpkgs";
   inputs."karax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

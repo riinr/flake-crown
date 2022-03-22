@@ -9,13 +9,14 @@
   
   inputs.src-hnimast-master.flake = false;
   inputs.src-hnimast-master.owner = "haxscramper";
-  inputs.src-hnimast-master.ref   = "refs/heads/master";
+  inputs.src-hnimast-master.ref   = "master";
   inputs.src-hnimast-master.repo  = "hnimast";
   inputs.src-hnimast-master.type  = "github";
   
   inputs."hmisc".owner = "nim-nix-pkgs";
   inputs."hmisc".ref   = "master";
   inputs."hmisc".repo  = "hmisc";
+  inputs."hmisc".dir   = "v0_14_6";
   inputs."hmisc".type  = "github";
   inputs."hmisc".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hmisc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

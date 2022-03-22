@@ -9,13 +9,14 @@
   
   inputs.src-httpauth-0_1_3.flake = false;
   inputs.src-httpauth-0_1_3.owner = "FedericoCeratto";
-  inputs.src-httpauth-0_1_3.ref   = "refs/tags/0.1.3";
+  inputs.src-httpauth-0_1_3.ref   = "0_1_3";
   inputs.src-httpauth-0_1_3.repo  = "nim-httpauth";
   inputs.src-httpauth-0_1_3.type  = "github";
   
   inputs."libsodium".owner = "nim-nix-pkgs";
   inputs."libsodium".ref   = "master";
   inputs."libsodium".repo  = "libsodium";
+  inputs."libsodium".dir   = "0_7_1";
   inputs."libsodium".type  = "github";
   inputs."libsodium".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libsodium".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -1,5 +1,5 @@
 {
-  description = ''htslib wrapper for nim'';
+  description = ''hts (bam/sam) for nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-hts-master.flake = false;
   inputs.src-hts-master.owner = "brentp";
-  inputs.src-hts-master.ref   = "refs/heads/master";
+  inputs.src-hts-master.ref   = "master";
   inputs.src-hts-master.repo  = "hts-nim";
   inputs.src-hts-master.type  = "github";
   

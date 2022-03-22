@@ -9,7 +9,7 @@
   
   inputs.src-hmisc-v0_4_8.flake = false;
   inputs.src-hmisc-v0_4_8.owner = "haxscramper";
-  inputs.src-hmisc-v0_4_8.ref   = "refs/tags/v0.4.8";
+  inputs.src-hmisc-v0_4_8.ref   = "v0_4_8";
   inputs.src-hmisc-v0_4_8.repo  = "hmisc";
   inputs.src-hmisc-v0_4_8.type  = "github";
   

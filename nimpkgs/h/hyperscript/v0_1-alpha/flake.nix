@@ -9,7 +9,7 @@
   
   inputs.src-hyperscript-v0_1-alpha.flake = false;
   inputs.src-hyperscript-v0_1-alpha.owner = "schneiderfelipe";
-  inputs.src-hyperscript-v0_1-alpha.ref   = "refs/tags/v0.1-alpha";
+  inputs.src-hyperscript-v0_1-alpha.ref   = "v0_1-alpha";
   inputs.src-hyperscript-v0_1-alpha.repo  = "hyperscript";
   inputs.src-hyperscript-v0_1-alpha.type  = "github";
   

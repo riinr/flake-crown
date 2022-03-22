@@ -9,7 +9,7 @@
   
   inputs.src-hypixel-v0_2_0.flake = false;
   inputs.src-hypixel-v0_2_0.owner = "tonogram";
-  inputs.src-hypixel-v0_2_0.ref   = "refs/tags/v0.2.0";
+  inputs.src-hypixel-v0_2_0.ref   = "v0_2_0";
   inputs.src-hypixel-v0_2_0.repo  = "hypixel-nim";
   inputs.src-hypixel-v0_2_0.type  = "github";
   

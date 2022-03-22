@@ -9,7 +9,7 @@
   
   inputs.src-httpstat-v0_1_1.flake = false;
   inputs.src-httpstat-v0_1_1.owner = "ucpr";
-  inputs.src-httpstat-v0_1_1.ref   = "refs/tags/v0.1.1";
+  inputs.src-httpstat-v0_1_1.ref   = "v0_1_1";
   inputs.src-httpstat-v0_1_1.repo  = "httpstat";
   inputs.src-httpstat-v0_1_1.type  = "github";
   

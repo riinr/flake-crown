@@ -1,5 +1,5 @@
 {
-  description = ''A parser for Jupyter notebooks.'';
+  description = ''A Jupyter notebook parser'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,7 +9,7 @@
   
   inputs.src-holst-0_1_0.flake = false;
   inputs.src-holst-0_1_0.owner = "ruivieira";
-  inputs.src-holst-0_1_0.ref   = "refs/tags/0.1.0";
+  inputs.src-holst-0_1_0.ref   = "0_1_0";
   inputs.src-holst-0_1_0.repo  = "nim-holst";
   inputs.src-holst-0_1_0.type  = "github";
   

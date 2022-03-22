@@ -9,13 +9,14 @@
   
   inputs.src-hdrawing-master.flake = false;
   inputs.src-hdrawing-master.owner = "haxscramper";
-  inputs.src-hdrawing-master.ref   = "refs/heads/master";
+  inputs.src-hdrawing-master.ref   = "master";
   inputs.src-hdrawing-master.repo  = "hdrawing";
   inputs.src-hdrawing-master.type  = "github";
   
   inputs."hmisc".owner = "nim-nix-pkgs";
   inputs."hmisc".ref   = "master";
   inputs."hmisc".repo  = "hmisc";
+  inputs."hmisc".dir   = "v0_14_6";
   inputs."hmisc".type  = "github";
   inputs."hmisc".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hmisc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

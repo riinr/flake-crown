@@ -9,13 +9,14 @@
   
   inputs.src-huenim-master.flake = false;
   inputs.src-huenim-master.owner = "IoTone";
-  inputs.src-huenim-master.ref   = "refs/heads/master";
+  inputs.src-huenim-master.ref   = "master";
   inputs.src-huenim-master.repo  = "huenim";
   inputs.src-huenim-master.type  = "github";
   
   inputs."docopt".owner = "nim-nix-pkgs";
   inputs."docopt".ref   = "master";
   inputs."docopt".repo  = "docopt";
+  inputs."docopt".dir   = "v0_6_8";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
