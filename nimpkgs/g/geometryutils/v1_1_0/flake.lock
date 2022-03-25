@@ -1,0 +1,199 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "opengl": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-opengl-1_2_6": "src-opengl-1_2_6",
+        "x11": "x11"
+      },
+      "locked": {
+        "dir": "1_2_6",
+        "lastModified": 1648164376,
+        "narHash": "sha256-oNXe+D9A7/kEfNV7AKciq6L4qbarFXY4fHao0wcjSdo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "opengl",
+        "rev": "54bf86758aff9e931448d7b7638425fb941abff9",
+        "type": "github"
+      },
+      "original": {
+        "dir": "1_2_6",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "opengl",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "opengl": "opengl",
+        "sdl2": "sdl2",
+        "src-geometryutils-v1_1_0": "src-geometryutils-v1_1_0"
+      }
+    },
+    "sdl2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sdl2-v2_0_3": "src-sdl2-v2_0_3"
+      },
+      "locked": {
+        "dir": "v2_0_3",
+        "lastModified": 1648081397,
+        "narHash": "sha256-z+PY8H8ZqBNjdIOfkL2w6r9xtgW+YLx7H7IkvUurCLw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sdl2",
+        "rev": "e4cd6f7520448ca6a5ce20266cf7434148e5a5e3",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v2_0_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sdl2",
+        "type": "github"
+      }
+    },
+    "src-geometryutils-v1_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596971269,
+        "narHash": "sha256-pjMWjSLQy+UvGJ4qhBUfDjY+tT2Hgehpst+SVa06yuI=",
+        "owner": "pseudo-random",
+        "repo": "geometryutils",
+        "rev": "14211d0db5b41d5ae62dfdc88184b96322752f8e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pseudo-random",
+        "ref": "refs/tags/v1.1.0",
+        "repo": "geometryutils",
+        "type": "github"
+      }
+    },
+    "src-opengl-1_2_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1588085036,
+        "narHash": "sha256-GjTzLaFeINywtbEFX1Mvs21c+fVWkjaJWFvo2rKjwnA=",
+        "owner": "nim-lang",
+        "repo": "opengl",
+        "rev": "a6fb649e5bd94d8420d4a11287092a4dc3e922b4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/1.2.6",
+        "repo": "opengl",
+        "type": "github"
+      }
+    },
+    "src-sdl2-v2_0_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1617058617,
+        "narHash": "sha256-v8zqsafLMSAsJ1KOh4+1h22GGBe9D0Kkt/cN0s/Nvng=",
+        "owner": "nim-lang",
+        "repo": "sdl2",
+        "rev": "e084923c35e6f513240456d87b3cc9cfd2081e91",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/v2.0.3",
+        "repo": "sdl2",
+        "type": "github"
+      }
+    },
+    "src-x11-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1610009197,
+        "narHash": "sha256-2XRyXiBxAc9Zx/w0zRBHRZ240qww0FJvIvOKZ8YH50A=",
+        "owner": "nim-lang",
+        "repo": "x11",
+        "rev": "2093a4c01360cbb5dd33ab79fd4056e148b53ca1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/heads/master",
+        "repo": "x11",
+        "type": "github"
+      }
+    },
+    "x11": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "opengl",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "opengl",
+          "nixpkgs"
+        ],
+        "src-x11-master": "src-x11-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648163768,
+        "narHash": "sha256-C4W8mPnsxNru+oH8cmI253GFZK9GLQgbXHjPTn29cn8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "x11",
+        "rev": "74844a95dc507e21c06208931f43613be17565d3",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "x11",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

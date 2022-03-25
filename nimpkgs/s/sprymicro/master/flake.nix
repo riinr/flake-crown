@@ -16,7 +16,7 @@
   inputs."spryvm".owner = "nim-nix-pkgs";
   inputs."spryvm".ref   = "master";
   inputs."spryvm".repo  = "spryvm";
-  inputs."spryvm".dir   = "";
+  inputs."spryvm".dir   = "master";
   inputs."spryvm".type  = "github";
   inputs."spryvm".inputs.nixpkgs.follows = "nixpkgs";
   inputs."spryvm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-sprymicro-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-sprymicro-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

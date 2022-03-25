@@ -7,11 +7,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1647920574,
-        "narHash": "sha256-D3ob5QykELhyNcTnISOkjEzLlgXltwON8Ucrz5cpiQI=",
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
         "owner": "riinr",
         "repo": "nim-flakes-lib",
-        "rev": "bfb46a1f762002f07f9d81d93dacd544c6890623",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
         "type": "github"
       },
       "original": {
@@ -23,8 +23,8 @@
     },
     "nixpkgs": {
       "locked": {
-        "narHash": "sha256-+8mazL4KLh6VltXYJc5+QFA5Q1i+Uh/TadRl9/+qcx8=",
-        "path": "/nix/store/gddrvlqs5qf1bp3kc80gp3qg5vm8kj76-source",
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
         "type": "path"
       },
       "original": {
@@ -36,10 +36,38 @@
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
-        "src-decisiontree-master": "src-decisiontree-master"
+        "sequtils2": "sequtils2",
+        "src-DecisionTree-master": "src-DecisionTree-master"
       }
     },
-    "src-decisiontree-master": {
+    "sequtils2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sequtils2-1_1_0": "src-sequtils2-1_1_0"
+      },
+      "locked": {
+        "dir": "1_1_0",
+        "lastModified": 1648163568,
+        "narHash": "sha256-KXi1nwGqJWf9xQ1/9ld5v3eTVMq5oqszSGtNI7OV82U=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sequtils2",
+        "rev": "0dc0a94ed85cfa11d4ae26b1f949ba0d2ef282af",
+        "type": "github"
+      },
+      "original": {
+        "dir": "1_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sequtils2",
+        "type": "github"
+      }
+    },
+    "src-DecisionTree-master": {
       "flake": false,
       "locked": {
         "lastModified": 1616238972,
@@ -53,6 +81,23 @@
         "owner": "Michedev",
         "ref": "refs/heads/master",
         "repo": "DecisionTreeNim",
+        "type": "github"
+      }
+    },
+    "src-sequtils2-1_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569516358,
+        "narHash": "sha256-bLXQL2EM+05YjXYhSL2nPeRIDDoGuV98T3DLzrQpE4Y=",
+        "owner": "Michedev",
+        "repo": "sequtils2",
+        "rev": "7efcb0e34c583e73f34f6f407cb173f58ae79846",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Michedev",
+        "ref": "refs/tags/1.1.0",
+        "repo": "sequtils2",
         "type": "github"
       }
     }

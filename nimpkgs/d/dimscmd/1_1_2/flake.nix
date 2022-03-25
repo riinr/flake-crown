@@ -16,7 +16,7 @@
   inputs."dimscord".owner = "nim-nix-pkgs";
   inputs."dimscord".ref   = "master";
   inputs."dimscord".repo  = "dimscord";
-  inputs."dimscord".dir   = "";
+  inputs."dimscord".dir   = "v1_3_0";
   inputs."dimscord".type  = "github";
   inputs."dimscord".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dimscord".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-dimscmd-1_1_2"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-dimscmd-1_1_2";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

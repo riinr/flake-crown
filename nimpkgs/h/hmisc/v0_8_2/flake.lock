@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "sorta": "sorta",
+        "src-hmisc-v0_8_2": "src-hmisc-v0_8_2"
+      }
+    },
+    "sorta": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sorta-master": "src-sorta-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648163613,
+        "narHash": "sha256-CiNNCUUHKvbfZUYj80w1lYUUdl7amyf0XDpNyiQTRus=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sorta",
+        "rev": "f4d8a2fcbb682ee1942072dde54075ccb63f4525",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sorta",
+        "type": "github"
+      }
+    },
+    "src-hmisc-v0_8_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603658592,
+        "narHash": "sha256-sMYTbkWKLFx7BX1AiyuPo2PBz4w9Daq7EdSAxw/9HZU=",
+        "owner": "haxscramper",
+        "repo": "hmisc",
+        "rev": "c6925ad70097ca178a78b1e9f8fc7fe0496ba3c0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "haxscramper",
+        "ref": "refs/tags/v0.8.2",
+        "repo": "hmisc",
+        "type": "github"
+      }
+    },
+    "src-sorta-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591549435,
+        "narHash": "sha256-THd4EyHfhQQ9GVRaqisj5GBtoGFPGBNvGZMPC1zGluU=",
+        "owner": "narimiran",
+        "repo": "sorta",
+        "rev": "be57458b5b075151cbc192a99c2a43e513a6340a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "narimiran",
+        "ref": "refs/heads/master",
+        "repo": "sorta",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -47,21 +47,21 @@
   inputs."sdl2_nim-v2_0_12_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sdl2_nim-v2_0_12_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."sdl2_nim-v2_0_12_1".dir   = "v2_0_12_1";
-  inputs."sdl2_nim-v2_0_12_1".owner = "nim-nix-pkgs";
-  inputs."sdl2_nim-v2_0_12_1".ref   = "master";
-  inputs."sdl2_nim-v2_0_12_1".repo  = "sdl2_nim";
-  inputs."sdl2_nim-v2_0_12_1".type  = "github";
-  inputs."sdl2_nim-v2_0_12_1".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."sdl2_nim-v2_0_12_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."sdl2-v2_0_12_1".dir   = "v2_0_12_1";
+  inputs."sdl2-v2_0_12_1".owner = "nim-nix-pkgs";
+  inputs."sdl2-v2_0_12_1".ref   = "master";
+  inputs."sdl2-v2_0_12_1".repo  = "sdl2";
+  inputs."sdl2-v2_0_12_1".type  = "github";
+  inputs."sdl2-v2_0_12_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sdl2-v2_0_12_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."sdl2_nim-v2_0_14_0".dir   = "v2_0_14_0";
-  inputs."sdl2_nim-v2_0_14_0".owner = "nim-nix-pkgs";
-  inputs."sdl2_nim-v2_0_14_0".ref   = "master";
-  inputs."sdl2_nim-v2_0_14_0".repo  = "sdl2_nim";
-  inputs."sdl2_nim-v2_0_14_0".type  = "github";
-  inputs."sdl2_nim-v2_0_14_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."sdl2_nim-v2_0_14_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."sdl2-v2_0_14_0".dir   = "v2_0_14_0";
+  inputs."sdl2-v2_0_14_0".owner = "nim-nix-pkgs";
+  inputs."sdl2-v2_0_14_0".ref   = "master";
+  inputs."sdl2-v2_0_14_0".repo  = "sdl2";
+  inputs."sdl2-v2_0_14_0".type  = "github";
+  inputs."sdl2-v2_0_14_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sdl2-v2_0_14_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."sdl2_nim-v2_0_14_2".dir   = "v2_0_14_2";
   inputs."sdl2_nim-v2_0_14_2".owner = "nim-nix-pkgs";

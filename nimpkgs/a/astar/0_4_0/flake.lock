@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "binaryheap": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-binaryheap-master": "src-binaryheap-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648162941,
+        "narHash": "sha256-sb6puwxmCqXxrdIm2aKBoi+/Ioqef54d/jrZz/gwWCA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "binaryheap",
+        "rev": "cdcd25ce6ecfe969eaa773925b4b47bc6e6845e5",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "binaryheap",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "binaryheap": "binaryheap",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-astar-0_4_0": "src-astar-0_4_0"
+      }
+    },
+    "src-astar-0_4_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1442178391,
+        "narHash": "sha256-wDZbm7PrbU0fe/93TDcnSk8qsuGTNNHItN/R6VDFdw4=",
+        "owner": "Nycto",
+        "repo": "AStarNim",
+        "rev": "ea392266354901144d0076c8aabc647d70b30509",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Nycto",
+        "ref": "refs/tags/0.4.0",
+        "repo": "AStarNim",
+        "type": "github"
+      }
+    },
+    "src-binaryheap-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1623230603,
+        "narHash": "sha256-G8F9cDQkQIfZ7ZMIFmHNTSwVsJs0qN2RSKIbJmD9on0=",
+        "owner": "bluenote10",
+        "repo": "nim-heap",
+        "rev": "b53c8312917acc2881d001b731dc4e2fa0c4b348",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bluenote10",
+        "ref": "refs/heads/master",
+        "repo": "nim-heap",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

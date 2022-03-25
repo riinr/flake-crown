@@ -16,7 +16,7 @@
   inputs."contra".owner = "nim-nix-pkgs";
   inputs."contra".ref   = "master";
   inputs."contra".repo  = "contra";
-  inputs."contra".dir   = "";
+  inputs."contra".dir   = "master";
   inputs."contra".type  = "github";
   inputs."contra".inputs.nixpkgs.follows = "nixpkgs";
   inputs."contra".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-html_tools-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-html_tools-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

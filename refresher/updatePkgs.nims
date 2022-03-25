@@ -1,42 +1,22 @@
-#!/usr/bin/env -S nim --hints:off
+#!/usr/bin/env -S nim --hints:off -d:process
 
 import std/[algorithm, strformat, json, strutils, sequtils, os]
 
-var 
-  startAt = '0'
-  endAt = 'z'
-
-if paramCount() > 2:
-  startAt = paramStr(3)[0]
-  if paramCount() > 3:
-    endAt = paramStr(4)[0]
-  else:
-    endAt = startAt
-
-echo "Fetching packages.json"
-
-let
-  pkgsURL = "https://raw.githubusercontent.com/nim-lang/packages/master/packages.json"
-  pkgsJSON = gorge fmt"curl -s {pkgsURL}|jq '.|=sort_by(.name|ascii_downcase)'"
-  pkgs = parseJson pkgsJSON
-  pkgItems = pkgs.items.toSeq
-    .filterIt(it{"name"}.getStr.toLower[0] >= startAt)
-    .filterIt(it{"name"}.getStr.toLower[0] <= endAt)
 
 proc maxRunning(cmd: string, maxProcs: int) =
-  let query = fmt"ps h -C .{cmd} -o pid"
-  while gorge(query).split("\n").len > maxProcs + 1:
+  let query = fmt"ps h -C .{cmd} -o pid|wc -l"
+  while gorge(query).parseInt > maxProcs:
     exec "sleep 0.05"
 
 proc preCompile(cmd: string) =
-  echo "Compiling {cmd}.nim"
-  exec fmt"./{cmd}.nim || true"
+  echo fmt"Compiling {cmd}.nim"
+  exec fmt"./{cmd}.nim >/dev/null || true"
 
-proc run(cmd: string) =
+proc run(pkgItems: seq[JsonNode]; cmd: string) =
   defer: maxRunning cmd, 0
   preCompile cmd
   for pkg in pkgItems:
-    maxRunning cmd, 8
+    maxRunning cmd, 6
     if pkg.hasKey("url") and "git" == pkg["method"].getStr:
       let pkgJSON = $pkg
       exec "sleep 0.23"
@@ -44,7 +24,34 @@ proc run(cmd: string) =
       exec(fmt"echo {pkgJSON.quoteShell}|./{cmd}.nim &")
 
 
-run "updateMeta"
+if defined process:
+  var 
+    startAt = '0'
+    endAt = 'z'
+    pkgEq = ""
 
-run "updateFlake"
+  if paramCount() > 3:
+    let argA = paramStr(4)
+    startAt = argA[0]
+    if argA.len > 1:
+      pkgEq = argA
+    if paramCount() > 4:
+      endAt = paramStr(5)[0]
+    else:
+      endAt = startAt
+
+  echo fmt"Fetching packages.json for {startAt}..{endAt} {pkgEq}"
+
+  let
+    pkgsURL = "https://raw.githubusercontent.com/nim-lang/packages/master/packages.json"
+    pkgsJSON = gorge fmt"curl -s {pkgsURL}|jq '.|=sort_by(.name|ascii_downcase)'"
+ 
+    pkgs = parseJson pkgsJSON
+    pkgItems = pkgs.items.toSeq
+      .filterIt(it{"name"}.getStr.toLower == pkgEq or pkgEq == "")
+      .filterIt(it{"name"}.getStr.toLower[0] >= startAt)
+      .filterIt(it{"name"}.getStr.toLower[0] <= endAt)
+
+  pkgItems.run "updateMeta"
+  pkgItems.run "updateFlake"
 

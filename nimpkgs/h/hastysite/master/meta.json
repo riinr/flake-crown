@@ -1,8 +1,41 @@
 {
-  "desc": "A small but powerful static site generator powered by HastyScribe and min",
-  "license": "MIT",
   "name": "hastysite",
-  "ref": "refs/heads/master",
-  "url": "https://github.com/h3rald/hastysite",
-  "version": "master"
+  "version": "1.3.7",
+  "author": "Fabio Cevasco",
+  "desc": "A small but powerful static site generator",
+  "license": "MIT",
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [
+    "minpkg",
+    "hastysitepkg"
+  ],
+  "installFiles": [],
+  "installExt": [],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 1.4.4",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.4.4"
+      }
+    },
+    {
+      "name": "zippy",
+      "str": ">= 0.5.6",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.5.6"
+      }
+    }
+  ],
+  "bin": [
+    "hastysite"
+  ],
+  "binDir": "",
+  "srcDir": "",
+  "backend": "c",
+  "ref": "refs/heads/master"
 }

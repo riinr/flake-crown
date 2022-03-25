@@ -7,13 +7,13 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."io-sixense-master".dir   = "master";
-  inputs."io-sixense-master".owner = "nim-nix-pkgs";
-  inputs."io-sixense-master".ref   = "master";
-  inputs."io-sixense-master".repo  = "io-sixense";
-  inputs."io-sixense-master".type  = "github";
-  inputs."io-sixense-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."io-sixense-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."sixense-master".dir   = "master";
+  inputs."sixense-master".owner = "nim-nix-pkgs";
+  inputs."sixense-master".ref   = "master";
+  inputs."sixense-master".repo  = "sixense";
+  inputs."sixense-master".type  = "github";
+  inputs."sixense-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sixense-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

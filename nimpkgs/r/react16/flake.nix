@@ -15,29 +15,29 @@
   inputs."react16-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."react16-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."react16-0_3_1".dir   = "0_3_1";
-  inputs."react16-0_3_1".owner = "nim-nix-pkgs";
-  inputs."react16-0_3_1".ref   = "master";
-  inputs."react16-0_3_1".repo  = "react16";
-  inputs."react16-0_3_1".type  = "github";
-  inputs."react16-0_3_1".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."react16-0_3_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."react-0_3_1".dir   = "0_3_1";
+  inputs."react-0_3_1".owner = "nim-nix-pkgs";
+  inputs."react-0_3_1".ref   = "master";
+  inputs."react-0_3_1".repo  = "react";
+  inputs."react-0_3_1".type  = "github";
+  inputs."react-0_3_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."react-0_3_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."react16-0_3_2".dir   = "0_3_2";
-  inputs."react16-0_3_2".owner = "nim-nix-pkgs";
-  inputs."react16-0_3_2".ref   = "master";
-  inputs."react16-0_3_2".repo  = "react16";
-  inputs."react16-0_3_2".type  = "github";
-  inputs."react16-0_3_2".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."react16-0_3_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."react-0_3_2".dir   = "0_3_2";
+  inputs."react-0_3_2".owner = "nim-nix-pkgs";
+  inputs."react-0_3_2".ref   = "master";
+  inputs."react-0_3_2".repo  = "react";
+  inputs."react-0_3_2".type  = "github";
+  inputs."react-0_3_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."react-0_3_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."react16-0_3_3".dir   = "0_3_3";
-  inputs."react16-0_3_3".owner = "nim-nix-pkgs";
-  inputs."react16-0_3_3".ref   = "master";
-  inputs."react16-0_3_3".repo  = "react16";
-  inputs."react16-0_3_3".type  = "github";
-  inputs."react16-0_3_3".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."react16-0_3_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."react-0_3_3".dir   = "0_3_3";
+  inputs."react-0_3_3".owner = "nim-nix-pkgs";
+  inputs."react-0_3_3".ref   = "master";
+  inputs."react-0_3_3".repo  = "react";
+  inputs."react-0_3_3".type  = "github";
+  inputs."react-0_3_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."react-0_3_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."react16-0_3_4".dir   = "0_3_4";
   inputs."react16-0_3_4".owner = "nim-nix-pkgs";

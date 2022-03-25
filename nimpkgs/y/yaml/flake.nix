@@ -15,13 +15,13 @@
   inputs."yaml-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."yaml-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."yaml-v0_1_0".dir   = "v0_1_0";
-  inputs."yaml-v0_1_0".owner = "nim-nix-pkgs";
-  inputs."yaml-v0_1_0".ref   = "master";
-  inputs."yaml-v0_1_0".repo  = "yaml";
-  inputs."yaml-v0_1_0".type  = "github";
-  inputs."yaml-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."yaml-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimyaml-v0_1_0".dir   = "v0_1_0";
+  inputs."nimyaml-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."nimyaml-v0_1_0".ref   = "master";
+  inputs."nimyaml-v0_1_0".repo  = "nimyaml";
+  inputs."nimyaml-v0_1_0".type  = "github";
+  inputs."nimyaml-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimyaml-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."yaml-v0_10_0".dir   = "v0_10_0";
   inputs."yaml-v0_10_0".owner = "nim-nix-pkgs";
@@ -119,29 +119,29 @@
   inputs."yaml-v0_16_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."yaml-v0_16_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."yaml-v0_2_0".dir   = "v0_2_0";
-  inputs."yaml-v0_2_0".owner = "nim-nix-pkgs";
-  inputs."yaml-v0_2_0".ref   = "master";
-  inputs."yaml-v0_2_0".repo  = "yaml";
-  inputs."yaml-v0_2_0".type  = "github";
-  inputs."yaml-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."yaml-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimyaml-v0_2_0".dir   = "v0_2_0";
+  inputs."nimyaml-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."nimyaml-v0_2_0".ref   = "master";
+  inputs."nimyaml-v0_2_0".repo  = "nimyaml";
+  inputs."nimyaml-v0_2_0".type  = "github";
+  inputs."nimyaml-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimyaml-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."yaml-v0_3_0".dir   = "v0_3_0";
-  inputs."yaml-v0_3_0".owner = "nim-nix-pkgs";
-  inputs."yaml-v0_3_0".ref   = "master";
-  inputs."yaml-v0_3_0".repo  = "yaml";
-  inputs."yaml-v0_3_0".type  = "github";
-  inputs."yaml-v0_3_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."yaml-v0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimyaml-v0_3_0".dir   = "v0_3_0";
+  inputs."nimyaml-v0_3_0".owner = "nim-nix-pkgs";
+  inputs."nimyaml-v0_3_0".ref   = "master";
+  inputs."nimyaml-v0_3_0".repo  = "nimyaml";
+  inputs."nimyaml-v0_3_0".type  = "github";
+  inputs."nimyaml-v0_3_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimyaml-v0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."yaml-v0_4_0".dir   = "v0_4_0";
-  inputs."yaml-v0_4_0".owner = "nim-nix-pkgs";
-  inputs."yaml-v0_4_0".ref   = "master";
-  inputs."yaml-v0_4_0".repo  = "yaml";
-  inputs."yaml-v0_4_0".type  = "github";
-  inputs."yaml-v0_4_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."yaml-v0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimyaml-v0_4_0".dir   = "v0_4_0";
+  inputs."nimyaml-v0_4_0".owner = "nim-nix-pkgs";
+  inputs."nimyaml-v0_4_0".ref   = "master";
+  inputs."nimyaml-v0_4_0".repo  = "nimyaml";
+  inputs."nimyaml-v0_4_0".type  = "github";
+  inputs."nimyaml-v0_4_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimyaml-v0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."yaml-v0_5_0".dir   = "v0_5_0";
   inputs."yaml-v0_5_0".owner = "nim-nix-pkgs";

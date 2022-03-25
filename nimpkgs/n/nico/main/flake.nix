@@ -24,7 +24,7 @@
   inputs."gifenc".owner = "nim-nix-pkgs";
   inputs."gifenc".ref   = "master";
   inputs."gifenc".repo  = "gifenc";
-  inputs."gifenc".dir   = "";
+  inputs."gifenc".dir   = "master";
   inputs."gifenc".type  = "github";
   inputs."gifenc".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gifenc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -49,10 +49,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-nico-main"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-nico-main";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

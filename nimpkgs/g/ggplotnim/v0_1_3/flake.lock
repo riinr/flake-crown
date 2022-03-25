@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "persvector": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-persvector-v1_0_0": "src-persvector-v1_0_0"
+      },
+      "locked": {
+        "dir": "v1_0_0",
+        "lastModified": 1648163470,
+        "narHash": "sha256-0YpH8+Ka9zmtTByXKnSA3wie0aiBgYVnQ+TyUsGoPAk=",
+        "owner": "nim-nix-pkgs",
+        "repo": "persvector",
+        "rev": "3f35bc244cf49a1fb23fb0c486936ad83e92ef03",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_0_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "persvector",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "persvector": "persvector",
+        "src-ggplotnim-v0_1_3": "src-ggplotnim-v0_1_3"
+      }
+    },
+    "src-ggplotnim-v0_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1572959111,
+        "narHash": "sha256-8BbciYYMD6nvmk1+oRAAVYKS+/YwucIvrN7ra/JnEQM=",
+        "owner": "Vindaar",
+        "repo": "ggplotnim",
+        "rev": "99bfee721c3f77a5dd139337f14c9a6f8030768a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.1.3",
+        "repo": "ggplotnim",
+        "type": "github"
+      }
+    },
+    "src-persvector-v1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1572962395,
+        "narHash": "sha256-VQH+XqiYxqD2k9DF/WT6GyOTlNEyqbIM/ldt2DdAn74=",
+        "owner": "PMunch",
+        "repo": "nim-persistent-vector",
+        "rev": "3f92a26aced63c4d443f62a31402329a1c18d22e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PMunch",
+        "ref": "refs/tags/v1.0.0",
+        "repo": "nim-persistent-vector",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

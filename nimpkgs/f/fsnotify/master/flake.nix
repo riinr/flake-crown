@@ -24,7 +24,7 @@
   inputs."xio".owner = "nim-nix-pkgs";
   inputs."xio".ref   = "master";
   inputs."xio".repo  = "xio";
-  inputs."xio".dir   = "";
+  inputs."xio".dir   = "master";
   inputs."xio".type  = "github";
   inputs."xio".inputs.nixpkgs.follows = "nixpkgs";
   inputs."xio".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -33,10 +33,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-fsnotify-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-fsnotify-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

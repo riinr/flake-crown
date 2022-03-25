@@ -1,8 +1,50 @@
 {
-  "desc": "A sinatra-like web framework for Nim with plugins.",
+  "name": "jester",
+  "version": "0.3.0",
+  "author": "Dominik Picheta",
+  "desc": "A sinatra-like web framework for Nim.",
   "license": "MIT",
-  "name": "jesterwithplugins",
-  "ref": "refs/tags/v0.3.0",
-  "url": "https://github.com/JohnAD/jesterwithplugins/",
-  "version": "v0_3_0"
+  "skipDirs": [
+    "tests"
+  ],
+  "skipFiles": [
+    "todo.markdown"
+  ],
+  "skipExt": [],
+  "installDirs": [
+    "jester"
+  ],
+  "installFiles": [
+    "jester.nim"
+  ],
+  "installExt": [],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 0.18.0",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.18.0"
+      }
+    },
+    {
+      "name": "httpbeast",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
+    },
+    {
+      "name": "asynctools",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
+    }
+  ],
+  "bin": [],
+  "binDir": "",
+  "srcDir": "",
+  "backend": "c",
+  "ref": "refs/tags/v0.3.0"
 }

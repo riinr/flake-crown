@@ -4,7 +4,7 @@
   "method": "git",
   "tags": [
     {
-      "desc": "A command lined based text editor inspired by vi/vim",
+      "description": "A command lined based text editor inspired by vi/vim",
       "license": "GPLv3",
       "name": "moe",
       "ref": "refs/tags/v0.0.1",
@@ -12,7 +12,7 @@
       "version": "v0_0_1"
     },
     {
-      "desc": "A command lined based text editor inspired by vi/vim",
+      "description": "A command lined based text editor inspired by vi/vim",
       "license": "GPLv3",
       "name": "moe",
       "ref": "refs/tags/v0.0.2",
@@ -1404,12 +1404,60 @@
       "ref": "refs/tags/v0.2.0.1"
     },
     {
-      "desc": "A command lined based text editor inspired by vi/vim",
-      "license": "GPLv3",
       "name": "moe",
-      "ref": "refs/tags/v0.2.0.2",
-      "url": "https://github.com/fox0430/moe",
-      "version": "v0_2_0_2"
+      "version": "0.2.0.2",
+      "author": "fox0430",
+      "desc": "A command lined based text editor",
+      "license": "GPLv3",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2"
+          }
+        },
+        {
+          "name": "https://github.com/walkre-niboshi/nim-ncurses",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "unicodedb",
+          "str": ">= 0.9.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.0"
+          }
+        },
+        {
+          "name": "parsetoml",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        }
+      ],
+      "bin": [
+        "moe"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.2.0.2"
     },
     {
       "name": "moe",
@@ -1524,12 +1572,60 @@
       "ref": "refs/tags/v0.2.2"
     },
     {
-      "desc": "A command lined based text editor inspired by vi/vim",
-      "license": "GPLv3",
       "name": "moe",
-      "ref": "refs/tags/v0.2.2.1",
-      "url": "https://github.com/fox0430/moe",
-      "version": "v0_2_2_1"
+      "version": "0.2.2.1",
+      "author": "fox0430",
+      "desc": "A command lined based text editor",
+      "license": "GPLv3",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.2"
+          }
+        },
+        {
+          "name": "https://github.com/walkre-niboshi/nim-ncurses",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "unicodedb",
+          "str": ">= 0.9.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.0"
+          }
+        },
+        {
+          "name": "parsetoml",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        }
+      ],
+      "bin": [
+        "moe"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.2.2.1"
     },
     {
       "name": "moe",
@@ -2152,6 +2248,7 @@
   "license": "GPLv3",
   "web": "https://github.com/fox0430/moe",
   "refs": [
+    "refs/heads/autocomplete-path",
     "refs/heads/develop",
     "refs/heads/fix-autoindent",
     "refs/heads/init-support-lsp",

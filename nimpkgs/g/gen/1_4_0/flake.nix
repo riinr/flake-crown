@@ -40,7 +40,7 @@
   inputs."gara".owner = "nim-nix-pkgs";
   inputs."gara".ref   = "master";
   inputs."gara".repo  = "gara";
-  inputs."gara".dir   = "";
+  inputs."gara".dir   = "master";
   inputs."gara".type  = "github";
   inputs."gara".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gara".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -49,10 +49,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-gen-1_4_0"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-gen-1_4_0";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

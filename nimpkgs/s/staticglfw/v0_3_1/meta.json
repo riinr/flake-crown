@@ -1,8 +1,34 @@
 {
-  "desc": "Static GLFW for nim",
-  "license": "MIT",
-  "name": "staticglfw",
-  "ref": "refs/tags/v0.3.1",
-  "url": "https://github.com/treeform/staticglfw",
-  "version": "v0_3_1"
+  "name": "glfw",
+  "version": "0.3.1",
+  "author": "Erik Johansson Andersson",
+  "desc": "A GLFW 3 wrapper",
+  "license": "BSD",
+  "skipDirs": [
+    "examples"
+  ],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [
+    "glfw"
+  ],
+  "installFiles": [
+    "glfw.nim"
+  ],
+  "installExt": [],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 0.18.0",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.18.0"
+      }
+    }
+  ],
+  "bin": [],
+  "binDir": "",
+  "srcDir": "",
+  "backend": "c",
+  "ref": "refs/tags/v0.3.1"
 }

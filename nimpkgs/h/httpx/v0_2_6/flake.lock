@@ -1,0 +1,154 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "ioselectors": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ioselectors-v0_1_8": "src-ioselectors-v0_1_8",
+        "wepoll": "wepoll"
+      },
+      "locked": {
+        "dir": "v0_1_8",
+        "lastModified": 1648164688,
+        "narHash": "sha256-XTzIBJQSAk0MteYuKKsNO3lQN72dMr1z3RfgKYTBi28=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ioselectors",
+        "rev": "3b9fbba398e2c07c4cf4513aad025e4ed4e7ed7b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_8",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ioselectors",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "ioselectors": "ioselectors",
+        "nixpkgs": "nixpkgs",
+        "src-httpx-v0_2_6": "src-httpx-v0_2_6"
+      }
+    },
+    "src-httpx-v0_2_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1628863589,
+        "narHash": "sha256-u4E5wkNzoYXLlZqX1q+/txuULYAHaLEads82vMzsE/I=",
+        "owner": "xflywind",
+        "repo": "httpx",
+        "rev": "7e8ca92efe921fbe2aa363ffafe3c443cc9b73fa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.2.6",
+        "repo": "httpx",
+        "type": "github"
+      }
+    },
+    "src-ioselectors-v0_1_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1604484256,
+        "narHash": "sha256-qCnSOE/3yeZ1tFnC+CI1dOu1iUb5kVqtL4YGEqMRZbk=",
+        "owner": "xflywind",
+        "repo": "ioselectors",
+        "rev": "6fcdbf3fddeb239885cd8bce15a0ab63c00647c0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.1.8",
+        "repo": "ioselectors",
+        "type": "github"
+      }
+    },
+    "src-wepoll-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596505072,
+        "narHash": "sha256-2y5blfgaAAe1PWH72sdbuzqkfnJP5ztm4malRG7zCvE=",
+        "owner": "xflywind",
+        "repo": "wepoll",
+        "rev": "c49c3280130bb724f1601b1d42f5b7deabad3198",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "wepoll",
+        "type": "github"
+      }
+    },
+    "wepoll": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "ioselectors",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "ioselectors",
+          "nixpkgs"
+        ],
+        "src-wepoll-v0_1_0": "src-wepoll-v0_1_0"
+      },
+      "locked": {
+        "dir": "v0_1_0",
+        "lastModified": 1648163756,
+        "narHash": "sha256-MApgyWe08yHnVXaBZ0IpjVFNvYxd3TxIwYnhUSSaiEQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "wepoll",
+        "rev": "19586e0d6bb7eb572e5c4e18436fdd8feaa6fa6e",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "wepoll",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

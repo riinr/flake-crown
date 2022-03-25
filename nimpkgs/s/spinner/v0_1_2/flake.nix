@@ -16,7 +16,7 @@
   inputs."fidget".owner = "nim-nix-pkgs";
   inputs."fidget".ref   = "master";
   inputs."fidget".repo  = "fidget";
-  inputs."fidget".dir   = "";
+  inputs."fidget".dir   = "0_7_9";
   inputs."fidget".type  = "github";
   inputs."fidget".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fidget".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -33,10 +33,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-spinner-v0_1_2"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-spinner-v0_1_2";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

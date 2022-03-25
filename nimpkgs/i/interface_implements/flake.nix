@@ -39,6 +39,14 @@
   inputs."interface_implements-0_2_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."interface_implements-0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."interface_implements-0_2_3".dir   = "0_2_3";
+  inputs."interface_implements-0_2_3".owner = "nim-nix-pkgs";
+  inputs."interface_implements-0_2_3".ref   = "master";
+  inputs."interface_implements-0_2_3".repo  = "interface_implements";
+  inputs."interface_implements-0_2_3".type  = "github";
+  inputs."interface_implements-0_2_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."interface_implements-0_2_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."interface_implements-v0_2_2".dir   = "v0_2_2";
   inputs."interface_implements-v0_2_2".owner = "nim-nix-pkgs";
   inputs."interface_implements-v0_2_2".ref   = "master";

@@ -16,7 +16,7 @@
   inputs."ajax".owner = "nim-nix-pkgs";
   inputs."ajax".ref   = "master";
   inputs."ajax".repo  = "ajax";
-  inputs."ajax".dir   = "";
+  inputs."ajax".dir   = "master";
   inputs."ajax".type  = "github";
   inputs."ajax".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ajax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-ytextractor-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-ytextractor-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

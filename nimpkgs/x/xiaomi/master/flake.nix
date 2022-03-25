@@ -16,7 +16,7 @@
   inputs."multicast".owner = "nim-nix-pkgs";
   inputs."multicast".ref   = "master";
   inputs."multicast".repo  = "multicast";
-  inputs."multicast".dir   = "";
+  inputs."multicast".dir   = "master";
   inputs."multicast".type  = "github";
   inputs."multicast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."multicast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -24,7 +24,7 @@
   inputs."nimcrypto".owner = "nim-nix-pkgs";
   inputs."nimcrypto".ref   = "master";
   inputs."nimcrypto".repo  = "nimcrypto";
-  inputs."nimcrypto".dir   = "";
+  inputs."nimcrypto".dir   = "master";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -33,10 +33,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-xiaomi-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-xiaomi-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

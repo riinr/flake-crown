@@ -16,7 +16,7 @@
   inputs."bitstreams".owner = "nim-nix-pkgs";
   inputs."bitstreams".ref   = "master";
   inputs."bitstreams".repo  = "bitstreams";
-  inputs."bitstreams".dir   = "";
+  inputs."bitstreams".dir   = "main";
   inputs."bitstreams".type  = "github";
   inputs."bitstreams".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bitstreams".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-binarylang-v0_2_0"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-binarylang-v0_2_0";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

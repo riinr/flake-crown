@@ -1,8 +1,40 @@
 {
-  "desc": "A small but practical concatenative programming language and shell.",
-  "license": "MIT",
   "name": "min",
-  "ref": "refs/tags/0.19.6",
-  "url": "https://github.com/h3rald/min",
-  "version": "0_19_6"
+  "version": "0.19.6",
+  "author": "Fabio Cevasco",
+  "desc": "A tiny concatenative programming language and shell.",
+  "license": "MIT",
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [],
+  "installFiles": [
+    "core/consts.nim",
+    "min.nim"
+  ],
+  "installExt": [],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 1.0.0",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.0.0"
+      }
+    },
+    {
+      "name": "nifty",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
+    }
+  ],
+  "bin": [
+    "min"
+  ],
+  "binDir": "",
+  "srcDir": "",
+  "backend": "c",
+  "ref": "refs/tags/0.19.6"
 }

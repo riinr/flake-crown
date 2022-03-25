@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "fusion": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-fusion-v1_1": "src-fusion-v1_1"
+      },
+      "locked": {
+        "dir": "v1_1",
+        "lastModified": 1648163116,
+        "narHash": "sha256-O0L7CBWBtPmjD412UKSI0+OkMVVnmifz6LEl1zk4kk8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "fusion",
+        "rev": "2a0ac6e47a83416257588947051c7e948e9b99b2",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "fusion",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "fusion": "fusion",
+        "nixpkgs": "nixpkgs",
+        "src-niml-0_1_5": "src-niml-0_1_5"
+      }
+    },
+    "src-fusion-v1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1638436623,
+        "narHash": "sha256-9tn0NTXHhlpoefmlsSkoNZlCjGE8JB3eXtYcm/9Mr0I=",
+        "owner": "nim-lang",
+        "repo": "fusion",
+        "rev": "b10839c2c0c0be06a556145b973f27522fa69306",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/v1.1",
+        "repo": "fusion",
+        "type": "github"
+      }
+    },
+    "src-niml-0_1_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1619616801,
+        "narHash": "sha256-ThBPrZdrBdLL5enZZtsDxdN9aV6nBJr/beZClSLw1Pk=",
+        "owner": "jakubDoka",
+        "repo": "niml",
+        "rev": "1509389a4f9266f1d1b2ee1cc7521276d2d46097",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jakubDoka",
+        "ref": "refs/tags/0.1.5",
+        "repo": "niml",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

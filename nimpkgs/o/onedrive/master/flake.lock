@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "packedjson": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-packedjson-0_2_2": "src-packedjson-0_2_2"
+      },
+      "locked": {
+        "dir": "0_2_2",
+        "lastModified": 1648163453,
+        "narHash": "sha256-lK8N2mHtKuriBvqMLzPxS0ahu3oGUxpFyVuf1HKU944=",
+        "owner": "nim-nix-pkgs",
+        "repo": "packedjson",
+        "rev": "7ce3b6e1b61450a5e7a2144b3d840d67185ef736",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_2_2",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "packedjson",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "packedjson": "packedjson",
+        "src-onedrive-master": "src-onedrive-master"
+      }
+    },
+    "src-onedrive-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1578089595,
+        "narHash": "sha256-ohmLXoBjI+VJpL3UmTXjbXpC4oy0OLKLx+O94tgPnvM=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_onedrive",
+        "rev": "4e7b261dbb03c1e3e98d34f68972f20bdcc4cf44",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/heads/master",
+        "repo": "nim_onedrive",
+        "type": "github"
+      }
+    },
+    "src-packedjson-0_2_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1607177406,
+        "narHash": "sha256-veQIFTkdECd7gS7SCJcxDdhZCUsIO11YHOwcgYrNAow=",
+        "owner": "Araq",
+        "repo": "packedjson",
+        "rev": "d11d167905f65935e31772c1edec88ca8fe055e2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/tags/0.2.2",
+        "repo": "packedjson",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -16,7 +16,7 @@
   inputs."openexchangerates".owner = "nim-nix-pkgs";
   inputs."openexchangerates".ref   = "master";
   inputs."openexchangerates".repo  = "openexchangerates";
-  inputs."openexchangerates".dir   = "";
+  inputs."openexchangerates".dir   = "master";
   inputs."openexchangerates".type  = "github";
   inputs."openexchangerates".inputs.nixpkgs.follows = "nixpkgs";
   inputs."openexchangerates".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -33,10 +33,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-nim_telegram_bot-0_2_0"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-nim_telegram_bot-0_2_0";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

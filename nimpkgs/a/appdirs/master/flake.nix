@@ -7,20 +7,23 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-appdirs-master.flake = false;
-  inputs.src-appdirs-master.ref   = "refs/heads/master";
-  inputs.src-appdirs-master.owner = "MrJohz";
-  inputs.src-appdirs-master.repo  = "appdirs";
-  inputs.src-appdirs-master.type  = "github";
+  inputs.src-Appdirs-master.flake = false;
+  inputs.src-Appdirs-master.ref   = "refs/heads/master";
+  inputs.src-Appdirs-master.owner = "MrJohz";
+  inputs.src-Appdirs-master.repo  = "appdirs";
+  inputs.src-Appdirs-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-appdirs-master"];
-  in lib.mkRefOutput {
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-Appdirs-master"];
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
-    src  = deps."src-appdirs-master";
+    src  = deps."src-Appdirs-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

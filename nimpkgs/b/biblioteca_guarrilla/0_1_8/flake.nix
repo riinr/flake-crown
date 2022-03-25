@@ -16,7 +16,7 @@
   inputs."webp".owner = "nim-nix-pkgs";
   inputs."webp".ref   = "master";
   inputs."webp".repo  = "webp";
-  inputs."webp".dir   = "";
+  inputs."webp".dir   = "master";
   inputs."webp".type  = "github";
   inputs."webp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."webp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -33,10 +33,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-biblioteca_guarrilla-0_1_8"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-biblioteca_guarrilla-0_1_8";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

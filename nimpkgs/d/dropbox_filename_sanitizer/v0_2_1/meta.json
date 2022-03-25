@@ -1,8 +1,46 @@
 {
-  "desc": "Tool to clean up filenames shared on Dropbox",
-  "license": "MIT",
   "name": "dropbox_filename_sanitizer",
-  "ref": "refs/tags/v0.2.1",
-  "url": "https://github.com/Araq/dropbox_filename_sanitizer/",
-  "version": "v0_2_1"
+  "version": "0.2.1",
+  "author": "Grzegorz Adam Hankiewicz",
+  "desc": "Mangles filename for dropbox compatibility.",
+  "license": "MIT",
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [],
+  "installFiles": [
+    "dropbox_filename_sanitizer.nim",
+    "LICENSE.rst",
+    "nakefile.nim",
+    "README.rst",
+    "docs/CHANGES.rst",
+    "docindex.rst",
+    "dropbox_filename_sanitizer.nim"
+  ],
+  "installExt": [],
+  "requires": [
+    {
+      "name": "nake",
+      "str": ">= 1.0",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.0"
+      }
+    },
+    {
+      "name": "argument_parser",
+      "str": ">= 0.1.2",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.1.2"
+      }
+    }
+  ],
+  "bin": [
+    "dropbox_filename_sanitizer"
+  ],
+  "binDir": "",
+  "srcDir": "",
+  "backend": "c",
+  "ref": "refs/tags/v0.2.1"
 }

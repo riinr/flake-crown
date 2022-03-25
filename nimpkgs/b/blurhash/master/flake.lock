@@ -1,0 +1,154 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "imageman": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-imageman-v0_8_2": "src-imageman-v0_8_2",
+        "stb_image": "stb_image"
+      },
+      "locked": {
+        "dir": "v0_8_2",
+        "lastModified": 1648164687,
+        "narHash": "sha256-LxmTF56DnDE7iMmqTXsA34HaQ6LKB8lCTdkSeLu/dGA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "imageman",
+        "rev": "f3aa9b0d14ed13e24f943515f9fc99f636c6fa55",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_8_2",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "imageman",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "imageman": "imageman",
+        "nixpkgs": "nixpkgs",
+        "src-blurhash-master": "src-blurhash-master"
+      }
+    },
+    "src-blurhash-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1589443122,
+        "narHash": "sha256-HokNrqDMG3opVw2xtL3O8TgvGBRLdPGrUjb81cJX+0M=",
+        "owner": "SolitudeSF",
+        "repo": "blurhash",
+        "rev": "81102eb57976972b8ac517472cf9fad6fb85cba4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "SolitudeSF",
+        "ref": "refs/heads/master",
+        "repo": "blurhash",
+        "type": "github"
+      }
+    },
+    "src-imageman-v0_8_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1615758360,
+        "narHash": "sha256-fTl08CSY0jTqDXKBv6/L/Np1L0hYcmX7WIx8hV80Tl8=",
+        "owner": "SolitudeSF",
+        "repo": "imageman",
+        "rev": "fe9cf9f955587278203f5803bfb6872215af4741",
+        "type": "github"
+      },
+      "original": {
+        "owner": "SolitudeSF",
+        "ref": "refs/tags/v0.8.2",
+        "repo": "imageman",
+        "type": "github"
+      }
+    },
+    "src-stb_image-2_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1577121470,
+        "narHash": "sha256-3xeqUumBOxuXsikgcETp5oe1GAw8jyhP3ZSpm0+Imo0=",
+        "owner": "define-private-public",
+        "repo": "stb_image-Nim",
+        "rev": "ba5f45286bfa9bed93d8d6b941949cd6218ec888",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "define-private-public",
+        "ref": "refs/tags/2.5",
+        "repo": "stb_image-Nim",
+        "type": "gitlab"
+      }
+    },
+    "stb_image": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "imageman",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "imageman",
+          "nixpkgs"
+        ],
+        "src-stb_image-2_5": "src-stb_image-2_5"
+      },
+      "locked": {
+        "dir": "2_5",
+        "lastModified": 1648163637,
+        "narHash": "sha256-b6b9PQvUJftS3/qkziOnxp2JFYzTRI1jQj3w9smeBDc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "stb_image",
+        "rev": "ccdfcf620408738b3ebd08a2b03ad4b68bd8ee54",
+        "type": "github"
+      },
+      "original": {
+        "dir": "2_5",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "stb_image",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -32,7 +32,7 @@
   inputs."x11".owner = "nim-nix-pkgs";
   inputs."x11".ref   = "master";
   inputs."x11".repo  = "x11";
-  inputs."x11".dir   = "";
+  inputs."x11".dir   = "master";
   inputs."x11".type  = "github";
   inputs."x11".inputs.nixpkgs.follows = "nixpkgs";
   inputs."x11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -40,7 +40,7 @@
   inputs."sound".owner = "nim-nix-pkgs";
   inputs."sound".ref   = "master";
   inputs."sound".repo  = "sound";
-  inputs."sound".dir   = "";
+  inputs."sound".dir   = "master";
   inputs."sound".type  = "github";
   inputs."sound".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sound".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -48,7 +48,7 @@
   inputs."strfmt".owner = "nim-nix-pkgs";
   inputs."strfmt".ref   = "master";
   inputs."strfmt".repo  = "strfmt";
-  inputs."strfmt".dir   = "";
+  inputs."strfmt".dir   = "master";
   inputs."strfmt".type  = "github";
   inputs."strfmt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."strfmt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -57,10 +57,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-frag-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-frag-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

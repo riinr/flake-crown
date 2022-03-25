@@ -4,7 +4,7 @@
   "method": "git",
   "tags": [
     {
-      "desc": "Wrapper of the libtcod library for the Nim language.",
+      "description": "Wrapper of the libtcod library for the Nim language.",
       "license": "zlib",
       "name": "libtcod_nim",
       "ref": "refs/tags/v0.9",
@@ -12,7 +12,7 @@
       "version": "v0_9"
     },
     {
-      "desc": "Wrapper of the libtcod library for the Nim language.",
+      "description": "Wrapper of the libtcod library for the Nim language.",
       "license": "zlib",
       "name": "libtcod_nim",
       "ref": "refs/tags/v0.95",
@@ -20,7 +20,7 @@
       "version": "v0_95"
     },
     {
-      "desc": "Wrapper of the libtcod library for the Nim language.",
+      "description": "Wrapper of the libtcod library for the Nim language.",
       "license": "zlib",
       "name": "libtcod_nim",
       "ref": "refs/tags/v0.96",
@@ -28,7 +28,7 @@
       "version": "v0_96"
     },
     {
-      "desc": "Wrapper of the libtcod library for the Nim language.",
+      "description": "Wrapper of the libtcod library for the Nim language.",
       "license": "zlib",
       "name": "libtcod_nim",
       "ref": "refs/tags/v0.97",
@@ -177,12 +177,44 @@
       "ref": "refs/tags/v1.112.0"
     },
     {
+      "name": "libtcod",
+      "version": "1.112.0",
+      "author": "Vladar",
       "desc": "Wrapper of the libtcod library for the Nim language.",
       "license": "zlib",
-      "name": "libtcod_nim",
-      "ref": "refs/tags/v1.112.1",
-      "url": "https://github.com/Vladar4/libtcod_nim/",
-      "version": "v1_112_1"
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "libtcod"
+      ],
+      "installFiles": [
+        "libtcod.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.1"
+          }
+        },
+        {
+          "name": "sdl2_nim",
+          "str": ">= 0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.112.1"
     }
   ],
   "description": "Wrapper of the libtcod library for the Nim language.",
@@ -203,12 +235,44 @@
   ],
   "heads": [
     {
+      "name": "libtcod",
+      "version": "1.112.0",
+      "author": "Vladar",
       "desc": "Wrapper of the libtcod library for the Nim language.",
       "license": "zlib",
-      "name": "libtcod_nim",
-      "ref": "refs/heads/master",
-      "url": "https://github.com/Vladar4/libtcod_nim/",
-      "version": "master"
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "libtcod"
+      ],
+      "installFiles": [
+        "libtcod.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.1"
+          }
+        },
+        {
+          "name": "sdl2_nim",
+          "str": ">= 0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/master"
     }
   ]
 }

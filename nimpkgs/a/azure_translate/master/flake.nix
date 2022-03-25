@@ -16,7 +16,7 @@
   inputs."nuuid".owner = "nim-nix-pkgs";
   inputs."nuuid".ref   = "master";
   inputs."nuuid".repo  = "nuuid";
-  inputs."nuuid".dir   = "";
+  inputs."nuuid".dir   = "master";
   inputs."nuuid".type  = "github";
   inputs."nuuid".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nuuid".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-azure_translate-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-azure_translate-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

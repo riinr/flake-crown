@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "jsbind": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jsbind-master": "src-jsbind-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648163201,
+        "narHash": "sha256-BVhD4R9UzOvrwlnnNsa4pC1TkBFRfYYgkCaRqjJfBiA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "jsbind",
+        "rev": "608c4fffb06b7a8f81c2a91e44f2aa5e9daf7b68",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "jsbind",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "jsbind": "jsbind",
+        "nixpkgs": "nixpkgs",
+        "src-d3-v0_1_0": "src-d3-v0_1_0"
+      }
+    },
+    "src-d3-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1563991065,
+        "narHash": "sha256-uZY5+GVTJVAMpsDUvsMM44E8LY9INzxI8AmWdE/h3fI=",
+        "owner": "hiteshjasani",
+        "repo": "nim-d3",
+        "rev": "70b6800308594f28ab51d675b1bce0b23f1e03c0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hiteshjasani",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "nim-d3",
+        "type": "github"
+      }
+    },
+    "src-jsbind-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1613498358,
+        "narHash": "sha256-aYSxzEjP9ulOHZ+umqw8OLDwz2zJk7N8Q7LO7k2bU5w=",
+        "owner": "yglukhov",
+        "repo": "jsbind",
+        "rev": "f623de0db495ad7bcc948948e1fb38a090687834",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "jsbind",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

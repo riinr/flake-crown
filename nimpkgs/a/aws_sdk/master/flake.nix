@@ -16,7 +16,7 @@
   inputs."stringinterpolation".owner = "nim-nix-pkgs";
   inputs."stringinterpolation".ref   = "master";
   inputs."stringinterpolation".repo  = "stringinterpolation";
-  inputs."stringinterpolation".dir   = "";
+  inputs."stringinterpolation".dir   = "master";
   inputs."stringinterpolation".type  = "github";
   inputs."stringinterpolation".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stringinterpolation".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -24,7 +24,7 @@
   inputs."sph".owner = "nim-nix-pkgs";
   inputs."sph".ref   = "master";
   inputs."sph".repo  = "sph";
-  inputs."sph".dir   = "";
+  inputs."sph".dir   = "master";
   inputs."sph".type  = "github";
   inputs."sph".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sph".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -33,10 +33,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-aws_sdk-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-aws_sdk-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

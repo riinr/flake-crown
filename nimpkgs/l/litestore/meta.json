@@ -4,7 +4,7 @@
   "method": "git",
   "tags": [
     {
-      "desc": "A lightweight, self-contained, RESTful, searchable, multi-format NoSQL document store",
+      "description": "A lightweight, self-contained, RESTful, searchable, multi-format NoSQL document store",
       "license": "MIT",
       "name": "litestore",
       "ref": "refs/tags/v1.0.0",
@@ -236,20 +236,124 @@
       "ref": "refs/tags/v1.1.1"
     },
     {
-      "desc": "A lightweight, self-contained, RESTful, searchable, multi-format NoSQL document store",
-      "license": "MIT",
       "name": "litestore",
-      "ref": "refs/tags/v1.10.0",
-      "url": "https://github.com/h3rald/litestore",
-      "version": "v1_10_0"
+      "version": "1.10.0",
+      "author": "Fabio Cevasco",
+      "desc": "Self-contained, lightweight, RESTful document store.",
+      "license": "MIT",
+      "skipDirs": [
+        "test"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim",
+        "c",
+        "h",
+        "json",
+        "ico"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.4"
+          }
+        },
+        {
+          "name": "jwt",
+          "str": ">= 0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2"
+          }
+        },
+        {
+          "name": "nimgen",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "duktape",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "litestore"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v1.10.0"
     },
     {
-      "desc": "A lightweight, self-contained, RESTful, searchable, multi-format NoSQL document store",
-      "license": "MIT",
       "name": "litestore",
-      "ref": "refs/tags/v1.11.0",
-      "url": "https://github.com/h3rald/litestore",
-      "version": "v1_11_0"
+      "version": "1.11.0",
+      "author": "Fabio Cevasco",
+      "desc": "Self-contained, lightweight, RESTful document store.",
+      "license": "MIT",
+      "skipDirs": [
+        "test"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim",
+        "c",
+        "h",
+        "json",
+        "ico"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.4"
+          }
+        },
+        {
+          "name": "jwt",
+          "str": ">= 0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2"
+          }
+        },
+        {
+          "name": "nimgen",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "duktape",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "litestore"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v1.11.0"
     },
     {
       "name": "litestore",
@@ -422,76 +526,462 @@
       "ref": "refs/tags/v1.4.1"
     },
     {
-      "desc": "A lightweight, self-contained, RESTful, searchable, multi-format NoSQL document store",
-      "license": "MIT",
       "name": "litestore",
-      "ref": "refs/tags/v1.5.0",
-      "url": "https://github.com/h3rald/litestore",
-      "version": "v1_5_0"
+      "version": "1.5.0",
+      "author": "Fabio Cevasco",
+      "desc": "Self-contained, lightweight, RESTful document store.",
+      "license": "MIT",
+      "skipDirs": [
+        "test"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        }
+      ],
+      "bin": [
+        "litestore"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v1.5.0"
     },
     {
-      "desc": "A lightweight, self-contained, RESTful, searchable, multi-format NoSQL document store",
-      "license": "MIT",
       "name": "litestore",
-      "ref": "refs/tags/v1.5.1",
-      "url": "https://github.com/h3rald/litestore",
-      "version": "v1_5_1"
+      "version": "1.5.1",
+      "author": "Fabio Cevasco",
+      "desc": "Self-contained, lightweight, RESTful document store.",
+      "license": "MIT",
+      "skipDirs": [
+        "test"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim",
+        "c",
+        "h",
+        "json",
+        "ico"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [
+        "litestore"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v1.5.1"
     },
     {
-      "desc": "A lightweight, self-contained, RESTful, searchable, multi-format NoSQL document store",
-      "license": "MIT",
       "name": "litestore",
-      "ref": "refs/tags/v1.6.0",
-      "url": "https://github.com/h3rald/litestore",
-      "version": "v1_6_0"
+      "version": "1.5.1",
+      "author": "Fabio Cevasco",
+      "desc": "Self-contained, lightweight, RESTful document store.",
+      "license": "MIT",
+      "skipDirs": [
+        "test"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim",
+        "c",
+        "h",
+        "json",
+        "ico"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "jwt",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "litestore"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v1.6.0"
     },
     {
-      "desc": "A lightweight, self-contained, RESTful, searchable, multi-format NoSQL document store",
-      "license": "MIT",
       "name": "litestore",
-      "ref": "refs/tags/v1.7.0",
-      "url": "https://github.com/h3rald/litestore",
-      "version": "v1_7_0"
+      "version": "1.5.1",
+      "author": "Fabio Cevasco",
+      "desc": "Self-contained, lightweight, RESTful document store.",
+      "license": "MIT",
+      "skipDirs": [
+        "test"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim",
+        "c",
+        "h",
+        "json",
+        "ico"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "jwt",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "litestore"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v1.7.0"
     },
     {
-      "desc": "A lightweight, self-contained, RESTful, searchable, multi-format NoSQL document store",
-      "license": "MIT",
       "name": "litestore",
-      "ref": "refs/tags/v1.8.0",
-      "url": "https://github.com/h3rald/litestore",
-      "version": "v1_8_0"
+      "version": "1.5.1",
+      "author": "Fabio Cevasco",
+      "desc": "Self-contained, lightweight, RESTful document store.",
+      "license": "MIT",
+      "skipDirs": [
+        "test"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim",
+        "c",
+        "h",
+        "json",
+        "ico"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "jwt",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimgen",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "duktape",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "litestore"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v1.8.0"
     },
     {
-      "desc": "A lightweight, self-contained, RESTful, searchable, multi-format NoSQL document store",
-      "license": "MIT",
       "name": "litestore",
-      "ref": "refs/tags/v1.9.0",
-      "url": "https://github.com/h3rald/litestore",
-      "version": "v1_9_0"
+      "version": "1.5.1",
+      "author": "Fabio Cevasco",
+      "desc": "Self-contained, lightweight, RESTful document store.",
+      "license": "MIT",
+      "skipDirs": [
+        "test"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim",
+        "c",
+        "h",
+        "json",
+        "ico"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "jwt",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimgen",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "duktape",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "litestore"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v1.9.0"
     },
     {
-      "desc": "A lightweight, self-contained, RESTful, searchable, multi-format NoSQL document store",
-      "license": "MIT",
       "name": "litestore",
-      "ref": "refs/tags/v1.9.1",
-      "url": "https://github.com/h3rald/litestore",
-      "version": "v1_9_1"
+      "version": "1.5.1",
+      "author": "Fabio Cevasco",
+      "desc": "Self-contained, lightweight, RESTful document store.",
+      "license": "MIT",
+      "skipDirs": [
+        "test"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim",
+        "c",
+        "h",
+        "json",
+        "ico"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "jwt",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimgen",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "duktape",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "litestore"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v1.9.1"
     },
     {
-      "desc": "A lightweight, self-contained, RESTful, searchable, multi-format NoSQL document store",
-      "license": "MIT",
       "name": "litestore",
-      "ref": "refs/tags/v1.9.2",
-      "url": "https://github.com/h3rald/litestore",
-      "version": "v1_9_2"
+      "version": "1.5.1",
+      "author": "Fabio Cevasco",
+      "desc": "Self-contained, lightweight, RESTful document store.",
+      "license": "MIT",
+      "skipDirs": [
+        "test"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim",
+        "c",
+        "h",
+        "json",
+        "ico"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "jwt",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimgen",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "duktape",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "litestore"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v1.9.2"
     },
     {
-      "desc": "A lightweight, self-contained, RESTful, searchable, multi-format NoSQL document store",
-      "license": "MIT",
       "name": "litestore",
-      "ref": "refs/tags/v1.9.3",
-      "url": "https://github.com/h3rald/litestore",
-      "version": "v1_9_3"
+      "version": "1.5.1",
+      "author": "Fabio Cevasco",
+      "desc": "Self-contained, lightweight, RESTful document store.",
+      "license": "MIT",
+      "skipDirs": [
+        "test"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim",
+        "c",
+        "h",
+        "json",
+        "ico"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "jwt",
+          "str": ">= 0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2"
+          }
+        },
+        {
+          "name": "nimgen",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "duktape",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "litestore"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v1.9.3"
     }
   ],
   "description": "A lightweight, self-contained, RESTful, searchable, multi-format NoSQL document store",
@@ -536,12 +1026,64 @@
   ],
   "heads": [
     {
-      "desc": "A lightweight, self-contained, RESTful, searchable, multi-format NoSQL document store",
-      "license": "MIT",
       "name": "litestore",
-      "ref": "refs/heads/master",
-      "url": "https://github.com/h3rald/litestore",
-      "version": "master"
+      "version": "1.5.1",
+      "author": "Fabio Cevasco",
+      "desc": "Self-contained, lightweight, RESTful document store.",
+      "license": "MIT",
+      "skipDirs": [
+        "test"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim",
+        "c",
+        "h",
+        "json",
+        "ico"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.4"
+          }
+        },
+        {
+          "name": "jwt",
+          "str": ">= 0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2"
+          }
+        },
+        {
+          "name": "nimgen",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "duktape",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "litestore"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/master"
     }
   ]
 }

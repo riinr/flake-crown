@@ -7,20 +7,23 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-bingo-v0_1_0.flake = false;
-  inputs.src-bingo-v0_1_0.ref   = "refs/tags/v0.1.0";
-  inputs.src-bingo-v0_1_0.owner = "planetis-m";
-  inputs.src-bingo-v0_1_0.repo  = "bingo";
-  inputs.src-bingo-v0_1_0.type  = "github";
+  inputs.src-bingod-v0_1_0.flake = false;
+  inputs.src-bingod-v0_1_0.ref   = "refs/tags/v0.1.0";
+  inputs.src-bingod-v0_1_0.owner = "planetis-m";
+  inputs.src-bingod-v0_1_0.repo  = "bingo";
+  inputs.src-bingod-v0_1_0.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-bingo-v0_1_0"];
-  in lib.mkRefOutput {
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-bingod-v0_1_0"];
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
-    src  = deps."src-bingo-v0_1_0";
+    src  = deps."src-bingod-v0_1_0";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

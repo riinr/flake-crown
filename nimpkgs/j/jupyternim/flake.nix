@@ -15,13 +15,13 @@
   inputs."jupyternim-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jupyternim-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."jupyternim-0_1_1".dir   = "0_1_1";
-  inputs."jupyternim-0_1_1".owner = "nim-nix-pkgs";
-  inputs."jupyternim-0_1_1".ref   = "master";
-  inputs."jupyternim-0_1_1".repo  = "jupyternim";
-  inputs."jupyternim-0_1_1".type  = "github";
-  inputs."jupyternim-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."jupyternim-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."inim-0_1_1".dir   = "0_1_1";
+  inputs."inim-0_1_1".owner = "nim-nix-pkgs";
+  inputs."inim-0_1_1".ref   = "master";
+  inputs."inim-0_1_1".repo  = "inim";
+  inputs."inim-0_1_1".type  = "github";
+  inputs."inim-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."inim-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."jupyternim-0_2_0".dir   = "0_2_0";
   inputs."jupyternim-0_2_0".owner = "nim-nix-pkgs";

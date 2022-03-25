@@ -15,13 +15,13 @@
   inputs."cookiejar-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cookiejar-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cookiejar-v0_1_0".dir   = "v0_1_0";
-  inputs."cookiejar-v0_1_0".owner = "nim-nix-pkgs";
-  inputs."cookiejar-v0_1_0".ref   = "master";
-  inputs."cookiejar-v0_1_0".repo  = "cookiejar";
-  inputs."cookiejar-v0_1_0".type  = "github";
-  inputs."cookiejar-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."cookiejar-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."cookies-v0_1_0".dir   = "v0_1_0";
+  inputs."cookies-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."cookies-v0_1_0".ref   = "master";
+  inputs."cookies-v0_1_0".repo  = "cookies";
+  inputs."cookies-v0_1_0".type  = "github";
+  inputs."cookies-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."cookies-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."cookiejar-v0_2_0".dir   = "v0_2_0";
   inputs."cookiejar-v0_2_0".owner = "nim-nix-pkgs";

@@ -1,5 +1,5 @@
 {
-  description = ''Commandant is a simple to use library for parsing command line arguments. Commandant is ideal for writing terminal applications, with  support for flags, options, subcommands, and custom exit options.'';
+  description = ''A small command line parsing DSL'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -7,20 +7,23 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-commandant-0_12_1.flake = false;
-  inputs.src-commandant-0_12_1.ref   = "refs/tags/0.12.1";
-  inputs.src-commandant-0_12_1.owner = "casey-SK";
-  inputs.src-commandant-0_12_1.repo  = "commandant";
-  inputs.src-commandant-0_12_1.type  = "github";
+  inputs.src-commandeer-0_12_1.flake = false;
+  inputs.src-commandeer-0_12_1.ref   = "refs/tags/0.12.1";
+  inputs.src-commandeer-0_12_1.owner = "casey-SK";
+  inputs.src-commandeer-0_12_1.repo  = "commandant";
+  inputs.src-commandeer-0_12_1.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-commandant-0_12_1"];
-  in lib.mkRefOutput {
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-commandeer-0_12_1"];
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
-    src  = deps."src-commandant-0_12_1";
+    src  = deps."src-commandeer-0_12_1";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

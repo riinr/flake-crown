@@ -1,0 +1,234 @@
+{
+  "nodes": {
+    "asynctools": {
+      "inputs": {
+        "asynctools-master": "asynctools-master",
+        "flakeNimbleLib": [
+          "jester",
+          "httpbeast",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "jester",
+          "httpbeast",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1647934064,
+        "narHash": "sha256-CcXz5SfU42qr86p4QT2w7FN/4xESLpD92f4w7KdB0qE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "asynctools",
+        "rev": "0149c0bc59bb8286a175727098848ddd19895601",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "asynctools",
+        "type": "github"
+      }
+    },
+    "asynctools-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "jester",
+          "httpbeast",
+          "asynctools",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "jester",
+          "httpbeast",
+          "asynctools",
+          "nixpkgs"
+        ],
+        "src-asynctools-master": "src-asynctools-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647934064,
+        "narHash": "sha256-CcXz5SfU42qr86p4QT2w7FN/4xESLpD92f4w7KdB0qE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "asynctools",
+        "rev": "0149c0bc59bb8286a175727098848ddd19895601",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "asynctools",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "httpbeast": {
+      "inputs": {
+        "asynctools": "asynctools",
+        "flakeNimbleLib": [
+          "jester",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "jester",
+          "nixpkgs"
+        ],
+        "src-httpbeast-v0_4_0": "src-httpbeast-v0_4_0"
+      },
+      "locked": {
+        "dir": "v0_4_0",
+        "lastModified": 1647997875,
+        "narHash": "sha256-2k1F/V5Z6w3CZ7/cizdZjxmnHUWr/fZgduFAueSuTi4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "httpbeast",
+        "rev": "cdbbd1eb20bbdda0a2d9ea1395a923c4c30634ec",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_4_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "httpbeast",
+        "type": "github"
+      }
+    },
+    "jester": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "httpbeast": "httpbeast",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jester-v0_5_0": "src-jester-v0_5_0"
+      },
+      "locked": {
+        "dir": "v0_5_0",
+        "lastModified": 1648081145,
+        "narHash": "sha256-On1PmIad+lC1xjw0OgoBdy3lHhS9n8ZupdEIlJF1MdA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "jester",
+        "rev": "64755186211050e8130f2282a3fb1267341f2083",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_5_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "jester",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "jester": "jester",
+        "nixpkgs": "nixpkgs",
+        "src-sermon-v0_3_1": "src-sermon-v0_3_1"
+      }
+    },
+    "src-asynctools-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1625559196,
+        "narHash": "sha256-mrO+WeSzCBclqC2UNCY+IIv7Gs8EdTDaTeSgXy3TgNM=",
+        "owner": "cheatfate",
+        "repo": "asynctools",
+        "rev": "84ced6d002789567f2396c75800ffd6dff2866f7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cheatfate",
+        "ref": "refs/heads/master",
+        "repo": "asynctools",
+        "type": "github"
+      }
+    },
+    "src-httpbeast-v0_4_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1639528448,
+        "narHash": "sha256-gN1WLO425R2Z7SEjAI6ZMhbkXv0uYSsjgp5wDXGaoUU=",
+        "owner": "dom96",
+        "repo": "httpbeast",
+        "rev": "8b50e378a5b3374ddeeb3ce83bfb733619206edb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dom96",
+        "ref": "refs/tags/v0.4.0",
+        "repo": "httpbeast",
+        "type": "github"
+      }
+    },
+    "src-jester-v0_5_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1602932199,
+        "narHash": "sha256-E25WN6cuI1hLyr7h83oZnkGJTGuL4cWoaBIYQrQmClU=",
+        "owner": "dom96",
+        "repo": "jester",
+        "rev": "a21b36a02b7745d6cdcda32d4ab3fba328cda17a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dom96",
+        "ref": "refs/tags/v0.5.0",
+        "repo": "jester",
+        "type": "github"
+      }
+    },
+    "src-sermon-v0_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1567331635,
+        "narHash": "sha256-J12t9pXNgXAgv9HCeUE1RW64BdcjSnp0E6SF9jBzH/4=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_sermon",
+        "rev": "1ea2211f54379c66013979eadac26b08ea25bb4f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/tags/v0.3.1",
+        "repo": "nim_sermon",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

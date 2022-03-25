@@ -1,5 +1,5 @@
 {
-  description = ''APIs available in the latests version of Nim, backported to older stable releases'';
+  description = ''Backports, standard library candidates and small utilities that don't yet deserve their own repository'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -7,20 +7,23 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-std_shims-master.flake = false;
-  inputs.src-std_shims-master.ref   = "refs/heads/master";
-  inputs.src-std_shims-master.owner = "status-im";
-  inputs.src-std_shims-master.repo  = "nim-std-shims";
-  inputs.src-std_shims-master.type  = "github";
+  inputs.src-stew-master.flake = false;
+  inputs.src-stew-master.ref   = "refs/heads/master";
+  inputs.src-stew-master.owner = "status-im";
+  inputs.src-stew-master.repo  = "nim-std-shims";
+  inputs.src-stew-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-std_shims-master"];
-  in lib.mkRefOutput {
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-stew-master"];
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
-    src  = deps."src-std_shims-master";
+    src  = deps."src-stew-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

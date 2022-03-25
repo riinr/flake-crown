@@ -16,7 +16,7 @@
   inputs."opencl".owner = "nim-nix-pkgs";
   inputs."opencl".ref   = "master";
   inputs."opencl".repo  = "opencl";
-  inputs."opencl".dir   = "";
+  inputs."opencl".dir   = "master";
   inputs."opencl".type  = "github";
   inputs."opencl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."opencl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-nimcl-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-nimcl-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

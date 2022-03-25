@@ -13,14 +13,33 @@
   inputs.src-monit-v1_2_2.repo  = "monit";
   inputs.src-monit-v1_2_2.type  = "github";
   
+  inputs."yaml".owner = "nim-nix-pkgs";
+  inputs."yaml".ref   = "master";
+  inputs."yaml".repo  = "yaml";
+  inputs."yaml".dir   = "v0_16_0";
+  inputs."yaml".type  = "github";
+  inputs."yaml".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."yaml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."cligen".owner = "nim-nix-pkgs";
+  inputs."cligen".ref   = "master";
+  inputs."cligen".repo  = "cligen";
+  inputs."cligen".dir   = "v1_2_2";
+  inputs."cligen".type  = "github";
+  inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-monit-v1_2_2"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-monit-v1_2_2";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

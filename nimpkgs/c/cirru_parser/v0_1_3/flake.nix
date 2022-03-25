@@ -7,20 +7,23 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-cirru_parser-v0_1_3.flake = false;
-  inputs.src-cirru_parser-v0_1_3.ref   = "refs/tags/v0.1.3";
-  inputs.src-cirru_parser-v0_1_3.owner = "Cirru";
-  inputs.src-cirru_parser-v0_1_3.repo  = "parser.nim";
-  inputs.src-cirru_parser-v0_1_3.type  = "github";
+  inputs.src-cirruParser-v0_1_3.flake = false;
+  inputs.src-cirruParser-v0_1_3.ref   = "refs/tags/v0.1.3";
+  inputs.src-cirruParser-v0_1_3.owner = "Cirru";
+  inputs.src-cirruParser-v0_1_3.repo  = "parser.nim";
+  inputs.src-cirruParser-v0_1_3.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-cirru_parser-v0_1_3"];
-  in lib.mkRefOutput {
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-cirruParser-v0_1_3"];
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
-    src  = deps."src-cirru_parser-v0_1_3";
+    src  = deps."src-cirruParser-v0_1_3";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

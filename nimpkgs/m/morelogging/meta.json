@@ -195,12 +195,39 @@
   ],
   "heads": [
     {
-      "desc": "Logging library with support for async IO, multithreading, Journald.",
-      "license": "LGPLv3",
       "name": "morelogging",
-      "ref": "refs/heads/master",
-      "url": "https://github.com/FedericoCeratto/nim-morelogging",
-      "version": "master"
+      "version": "0.2.0",
+      "author": "Federico Ceratto",
+      "desc": "Logging helpers",
+      "license": "LGPLv3",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.15.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.15.0"
+          }
+        },
+        {
+          "name": "zip",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/master"
     }
   ]
 }

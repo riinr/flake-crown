@@ -15,13 +15,13 @@
   inputs."murmur3-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."murmur3-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."murmur3-v0_1_0".dir   = "v0_1_0";
-  inputs."murmur3-v0_1_0".owner = "nim-nix-pkgs";
-  inputs."murmur3-v0_1_0".ref   = "master";
-  inputs."murmur3-v0_1_0".repo  = "murmur3";
-  inputs."murmur3-v0_1_0".type  = "github";
-  inputs."murmur3-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."murmur3-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."murmur-v0_1_0".dir   = "v0_1_0";
+  inputs."murmur-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."murmur-v0_1_0".ref   = "master";
+  inputs."murmur-v0_1_0".repo  = "murmur";
+  inputs."murmur-v0_1_0".type  = "github";
+  inputs."murmur-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."murmur-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."murmur3-v0_1_1".dir   = "v0_1_1";
   inputs."murmur3-v0_1_1".owner = "nim-nix-pkgs";

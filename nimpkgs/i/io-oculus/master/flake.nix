@@ -1,5 +1,5 @@
 {
-  description = ''Obsolete - please use oculus instead!'';
+  description = ''Bindings for the Oculus VR SDK'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -7,20 +7,23 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-io-oculus-master.flake = false;
-  inputs.src-io-oculus-master.ref   = "refs/heads/master";
-  inputs.src-io-oculus-master.owner = "nimious";
-  inputs.src-io-oculus-master.repo  = "io-oculus";
-  inputs.src-io-oculus-master.type  = "github";
+  inputs.src-oculus-master.flake = false;
+  inputs.src-oculus-master.ref   = "refs/heads/master";
+  inputs.src-oculus-master.owner = "nimious";
+  inputs.src-oculus-master.repo  = "io-oculus";
+  inputs.src-oculus-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-io-oculus-master"];
-  in lib.mkRefOutput {
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-oculus-master"];
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
-    src  = deps."src-io-oculus-master";
+    src  = deps."src-oculus-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

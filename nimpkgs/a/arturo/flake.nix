@@ -87,13 +87,13 @@
   inputs."arturo-v0_3_9".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arturo-v0_3_9".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."arturo-v0_4_0".dir   = "v0_4_0";
-  inputs."arturo-v0_4_0".owner = "nim-nix-pkgs";
-  inputs."arturo-v0_4_0".ref   = "master";
-  inputs."arturo-v0_4_0".repo  = "arturo";
-  inputs."arturo-v0_4_0".type  = "github";
-  inputs."arturo-v0_4_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."arturo-v0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nim-v0_4_0".dir   = "v0_4_0";
+  inputs."nim-v0_4_0".owner = "nim-nix-pkgs";
+  inputs."nim-v0_4_0".ref   = "master";
+  inputs."nim-v0_4_0".repo  = "nim";
+  inputs."nim-v0_4_0".type  = "github";
+  inputs."nim-v0_4_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nim-v0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."arturo-v0_9_4_6".dir   = "v0_9_4_6";
   inputs."arturo-v0_9_4_6".owner = "nim-nix-pkgs";

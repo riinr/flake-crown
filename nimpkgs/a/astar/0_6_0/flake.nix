@@ -16,7 +16,7 @@
   inputs."binaryheap".owner = "nim-nix-pkgs";
   inputs."binaryheap".ref   = "master";
   inputs."binaryheap".repo  = "binaryheap";
-  inputs."binaryheap".dir   = "";
+  inputs."binaryheap".dir   = "master";
   inputs."binaryheap".type  = "github";
   inputs."binaryheap".inputs.nixpkgs.follows = "nixpkgs";
   inputs."binaryheap".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-astar-0_6_0"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-astar-0_6_0";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

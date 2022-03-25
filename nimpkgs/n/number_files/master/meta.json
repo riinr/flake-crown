@@ -1,8 +1,51 @@
 {
+  "name": "number_files",
+  "version": "0.2.3",
+  "author": "Grzegorz Adam Hankiewicz",
   "desc": "Command to add counter suffix/prefix to a list of files.",
   "license": "MIT",
-  "name": "number_files",
-  "ref": "refs/heads/master",
-  "url": "https://github.com/Araq/number_files/",
-  "version": "master"
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [
+    "workflow_template_dir",
+    "external/quicklook-rest-with-nimrod"
+  ],
+  "installFiles": [
+    "readme.rst",
+    "docindex.rst",
+    "docs/changes.rst",
+    "docs/release_steps.rst",
+    "license.rst",
+    "nakefile.nim",
+    "nakefile.nimrod.cfg",
+    "number_files.nim",
+    "number_files.nim"
+  ],
+  "installExt": [],
+  "requires": [
+    {
+      "name": "nake",
+      "str": ">= 1.2",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.2"
+      }
+    },
+    {
+      "name": "argument_parser",
+      "str": ">= 0.2.0",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.2.0"
+      }
+    }
+  ],
+  "bin": [
+    "number_files"
+  ],
+  "binDir": "",
+  "srcDir": "",
+  "backend": "c",
+  "ref": "refs/heads/master"
 }

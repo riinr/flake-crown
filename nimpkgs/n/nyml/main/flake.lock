@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-nyml-main": "src-nyml-main",
+        "toktok": "toktok"
+      }
+    },
+    "src-nyml-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1647032662,
+        "narHash": "sha256-yzL1iBPp/y/hVxBY/7d5paL0rAqfjmoWskxQMhFfYHc=",
+        "owner": "openpeep",
+        "repo": "nyml",
+        "rev": "58c6500d4f59255cfc2f1ac2b33630f8ea0fd529",
+        "type": "github"
+      },
+      "original": {
+        "owner": "openpeep",
+        "ref": "refs/heads/main",
+        "repo": "nyml",
+        "type": "github"
+      }
+    },
+    "src-toktok-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1646247792,
+        "narHash": "sha256-lvbKKY7SfG0+kDAh0O+yFXMJwg/SErJ7/4O/LXpTEjw=",
+        "owner": "openpeep",
+        "repo": "toktok",
+        "rev": "d56145e0fcb328ea20a97bce1b99fcaad447d876",
+        "type": "github"
+      },
+      "original": {
+        "owner": "openpeep",
+        "ref": "refs/heads/main",
+        "repo": "toktok",
+        "type": "github"
+      }
+    },
+    "toktok": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-toktok-main": "src-toktok-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1648163697,
+        "narHash": "sha256-W2D369uc37YcpIjBpb1Oks7k9vNPeVWmARPtADerASM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "toktok",
+        "rev": "52728c879c38fbab23bad42d5ba92331ed882015",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "toktok",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

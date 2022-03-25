@@ -1,5 +1,5 @@
 {
-  description = ''Retrieve info about a location from an IP address'';
+  description = ''Retrieve info about a location from an IP address '';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -7,20 +7,23 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-geoip-master.flake = false;
-  inputs.src-geoip-master.ref   = "refs/heads/master";
-  inputs.src-geoip-master.owner = "achesak";
-  inputs.src-geoip-master.repo  = "nim-geoip";
-  inputs.src-geoip-master.type  = "github";
+  inputs.src-freegeoip-master.flake = false;
+  inputs.src-freegeoip-master.ref   = "refs/heads/master";
+  inputs.src-freegeoip-master.owner = "achesak";
+  inputs.src-freegeoip-master.repo  = "nim-geoip";
+  inputs.src-freegeoip-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-geoip-master"];
-  in lib.mkRefOutput {
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-freegeoip-master"];
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
-    src  = deps."src-geoip-master";
+    src  = deps."src-freegeoip-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

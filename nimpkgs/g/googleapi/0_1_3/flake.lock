@@ -1,0 +1,234 @@
+{
+  "nodes": {
+    "bearssl": {
+      "inputs": {
+        "bearssl-master": "bearssl-master",
+        "flakeNimbleLib": [
+          "jwt",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "jwt",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1647997775,
+        "narHash": "sha256-75YhxJ/f4icyYuACZ3ykkH0dQ5X1itwi9xOTfRdV8YA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "bearssl",
+        "rev": "2a216f53a35bbc3dde8c984afce54dd306f7e124",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "bearssl",
+        "type": "github"
+      }
+    },
+    "bearssl-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "jwt",
+          "bearssl",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "jwt",
+          "bearssl",
+          "nixpkgs"
+        ],
+        "src-bearssl-master": "src-bearssl-master",
+        "unittest2": "unittest2"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647997775,
+        "narHash": "sha256-75YhxJ/f4icyYuACZ3ykkH0dQ5X1itwi9xOTfRdV8YA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "bearssl",
+        "rev": "2a216f53a35bbc3dde8c984afce54dd306f7e124",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "bearssl",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "jwt": {
+      "inputs": {
+        "bearssl": "bearssl",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jwt-master": "src-jwt-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648081155,
+        "narHash": "sha256-Cx/KXA8YMIsRPMYVX8MGWBVEBWUfy0d4pDiEwhR8wAY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "jwt",
+        "rev": "caec0e3b43b0ed6d2b3509f5f814244b20c8b0e3",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "jwt",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "jwt": "jwt",
+        "nixpkgs": "nixpkgs",
+        "src-googleapi-0_1_3": "src-googleapi-0_1_3"
+      }
+    },
+    "src-bearssl-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1646393384,
+        "narHash": "sha256-deWHK4YkyqmIcIDMo+PNdCbSIlBtWtm659bfUC4LRQk=",
+        "owner": "status-im",
+        "repo": "nim-bearssl",
+        "rev": "65b74302e03912ab5bde64b6da10d05896139007",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-bearssl",
+        "type": "github"
+      }
+    },
+    "src-googleapi-0_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1637352142,
+        "narHash": "sha256-P8vdH8qtMfAYVBdkzq43IQ0zTXbQXLfZlYlUN3O6eSI=",
+        "owner": "treeform",
+        "repo": "googleapi",
+        "rev": "b0411e1e1164a75c80a96fcd99d7bc6db89671df",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/0.1.3",
+        "repo": "googleapi",
+        "type": "github"
+      }
+    },
+    "src-jwt-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645366596,
+        "narHash": "sha256-CB48Pw4RP3qI/vLhoG1UY66ZlY6F+Nie97ax4M+eEi8=",
+        "owner": "yglukhov",
+        "repo": "nim-jwt",
+        "rev": "2ef77272d8754be01cfc04b8af53f42d30aaca34",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "nim-jwt",
+        "type": "github"
+      }
+    },
+    "src-unittest2-v0_0_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1639728552,
+        "narHash": "sha256-gHfxt4eNLaC9KNh3kC1zFNV42UcDipfyoiCnDHyyb+k=",
+        "owner": "status-im",
+        "repo": "nim-unittest2",
+        "rev": "4e2893eacb916c7678fdc4935ff7420f13bf3a9c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/tags/v0.0.3",
+        "repo": "nim-unittest2",
+        "type": "github"
+      }
+    },
+    "unittest2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "jwt",
+          "bearssl",
+          "bearssl-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "jwt",
+          "bearssl",
+          "bearssl-master",
+          "nixpkgs"
+        ],
+        "src-unittest2-v0_0_3": "src-unittest2-v0_0_3"
+      },
+      "locked": {
+        "dir": "v0_0_3",
+        "lastModified": 1647935047,
+        "narHash": "sha256-+YkpDPXGCefuXBVsa75MnGbJ8jkKhJmx676rmxG17nU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "unittest2",
+        "rev": "632ac00c19b3d8bdec95bdc44e5c34310a55fd89",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_0_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "unittest2",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

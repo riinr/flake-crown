@@ -32,7 +32,7 @@
   inputs."memlib".owner = "nim-nix-pkgs";
   inputs."memlib".ref   = "master";
   inputs."memlib".repo  = "memlib";
-  inputs."memlib".dir   = "";
+  inputs."memlib".dir   = "master";
   inputs."memlib".type  = "github";
   inputs."memlib".inputs.nixpkgs.follows = "nixpkgs";
   inputs."memlib".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -41,10 +41,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-wnim-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-wnim-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

@@ -63,53 +63,53 @@
   inputs."staticglfw-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."staticglfw-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."staticglfw-v0_2_1".dir   = "v0_2_1";
-  inputs."staticglfw-v0_2_1".owner = "nim-nix-pkgs";
-  inputs."staticglfw-v0_2_1".ref   = "master";
-  inputs."staticglfw-v0_2_1".repo  = "staticglfw";
-  inputs."staticglfw-v0_2_1".type  = "github";
-  inputs."staticglfw-v0_2_1".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."staticglfw-v0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."glfw-v0_2_1".dir   = "v0_2_1";
+  inputs."glfw-v0_2_1".owner = "nim-nix-pkgs";
+  inputs."glfw-v0_2_1".ref   = "master";
+  inputs."glfw-v0_2_1".repo  = "glfw";
+  inputs."glfw-v0_2_1".type  = "github";
+  inputs."glfw-v0_2_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."glfw-v0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."staticglfw-v0_3_0".dir   = "v0_3_0";
-  inputs."staticglfw-v0_3_0".owner = "nim-nix-pkgs";
-  inputs."staticglfw-v0_3_0".ref   = "master";
-  inputs."staticglfw-v0_3_0".repo  = "staticglfw";
-  inputs."staticglfw-v0_3_0".type  = "github";
-  inputs."staticglfw-v0_3_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."staticglfw-v0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nim_glfw-v0_3_0".dir   = "v0_3_0";
+  inputs."nim_glfw-v0_3_0".owner = "nim-nix-pkgs";
+  inputs."nim_glfw-v0_3_0".ref   = "master";
+  inputs."nim_glfw-v0_3_0".repo  = "nim_glfw";
+  inputs."nim_glfw-v0_3_0".type  = "github";
+  inputs."nim_glfw-v0_3_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nim_glfw-v0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."staticglfw-v0_3_1".dir   = "v0_3_1";
-  inputs."staticglfw-v0_3_1".owner = "nim-nix-pkgs";
-  inputs."staticglfw-v0_3_1".ref   = "master";
-  inputs."staticglfw-v0_3_1".repo  = "staticglfw";
-  inputs."staticglfw-v0_3_1".type  = "github";
-  inputs."staticglfw-v0_3_1".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."staticglfw-v0_3_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."glfw-v0_3_1".dir   = "v0_3_1";
+  inputs."glfw-v0_3_1".owner = "nim-nix-pkgs";
+  inputs."glfw-v0_3_1".ref   = "master";
+  inputs."glfw-v0_3_1".repo  = "glfw";
+  inputs."glfw-v0_3_1".type  = "github";
+  inputs."glfw-v0_3_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."glfw-v0_3_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."staticglfw-v3_3_0_0".dir   = "v3_3_0_0";
-  inputs."staticglfw-v3_3_0_0".owner = "nim-nix-pkgs";
-  inputs."staticglfw-v3_3_0_0".ref   = "master";
-  inputs."staticglfw-v3_3_0_0".repo  = "staticglfw";
-  inputs."staticglfw-v3_3_0_0".type  = "github";
-  inputs."staticglfw-v3_3_0_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."staticglfw-v3_3_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."glfw-v3_3_0_0".dir   = "v3_3_0_0";
+  inputs."glfw-v3_3_0_0".owner = "nim-nix-pkgs";
+  inputs."glfw-v3_3_0_0".ref   = "master";
+  inputs."glfw-v3_3_0_0".repo  = "glfw";
+  inputs."glfw-v3_3_0_0".type  = "github";
+  inputs."glfw-v3_3_0_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."glfw-v3_3_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."staticglfw-v3_3_0_1".dir   = "v3_3_0_1";
-  inputs."staticglfw-v3_3_0_1".owner = "nim-nix-pkgs";
-  inputs."staticglfw-v3_3_0_1".ref   = "master";
-  inputs."staticglfw-v3_3_0_1".repo  = "staticglfw";
-  inputs."staticglfw-v3_3_0_1".type  = "github";
-  inputs."staticglfw-v3_3_0_1".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."staticglfw-v3_3_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."glfw-v3_3_0_1".dir   = "v3_3_0_1";
+  inputs."glfw-v3_3_0_1".owner = "nim-nix-pkgs";
+  inputs."glfw-v3_3_0_1".ref   = "master";
+  inputs."glfw-v3_3_0_1".repo  = "glfw";
+  inputs."glfw-v3_3_0_1".type  = "github";
+  inputs."glfw-v3_3_0_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."glfw-v3_3_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."staticglfw-v3_3_0_2".dir   = "v3_3_0_2";
-  inputs."staticglfw-v3_3_0_2".owner = "nim-nix-pkgs";
-  inputs."staticglfw-v3_3_0_2".ref   = "master";
-  inputs."staticglfw-v3_3_0_2".repo  = "staticglfw";
-  inputs."staticglfw-v3_3_0_2".type  = "github";
-  inputs."staticglfw-v3_3_0_2".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."staticglfw-v3_3_0_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."glfw-v3_3_0_2".dir   = "v3_3_0_2";
+  inputs."glfw-v3_3_0_2".owner = "nim-nix-pkgs";
+  inputs."glfw-v3_3_0_2".ref   = "master";
+  inputs."glfw-v3_3_0_2".repo  = "glfw";
+  inputs."glfw-v3_3_0_2".type  = "github";
+  inputs."glfw-v3_3_0_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."glfw-v3_3_0_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

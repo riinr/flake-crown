@@ -24,7 +24,7 @@
   inputs."nodejs".owner = "nim-nix-pkgs";
   inputs."nodejs".ref   = "master";
   inputs."nodejs".repo  = "nodejs";
-  inputs."nodejs".dir   = "";
+  inputs."nodejs".dir   = "main";
   inputs."nodejs".type  = "github";
   inputs."nodejs".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nodejs".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -33,10 +33,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-listenbrainz-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-listenbrainz-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

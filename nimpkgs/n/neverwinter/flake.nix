@@ -223,29 +223,29 @@
   inputs."neverwinter-1_5_5".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neverwinter-1_5_5".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."neverwinter-v1_0_0".dir   = "v1_0_0";
-  inputs."neverwinter-v1_0_0".owner = "nim-nix-pkgs";
-  inputs."neverwinter-v1_0_0".ref   = "master";
-  inputs."neverwinter-v1_0_0".repo  = "neverwinter";
-  inputs."neverwinter-v1_0_0".type  = "github";
-  inputs."neverwinter-v1_0_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."neverwinter-v1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."neverwinter_utils-v1_0_0".dir   = "v1_0_0";
+  inputs."neverwinter_utils-v1_0_0".owner = "nim-nix-pkgs";
+  inputs."neverwinter_utils-v1_0_0".ref   = "master";
+  inputs."neverwinter_utils-v1_0_0".repo  = "neverwinter_utils";
+  inputs."neverwinter_utils-v1_0_0".type  = "github";
+  inputs."neverwinter_utils-v1_0_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."neverwinter_utils-v1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."neverwinter-v1_0_1".dir   = "v1_0_1";
-  inputs."neverwinter-v1_0_1".owner = "nim-nix-pkgs";
-  inputs."neverwinter-v1_0_1".ref   = "master";
-  inputs."neverwinter-v1_0_1".repo  = "neverwinter";
-  inputs."neverwinter-v1_0_1".type  = "github";
-  inputs."neverwinter-v1_0_1".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."neverwinter-v1_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."neverwinter_utils-v1_0_1".dir   = "v1_0_1";
+  inputs."neverwinter_utils-v1_0_1".owner = "nim-nix-pkgs";
+  inputs."neverwinter_utils-v1_0_1".ref   = "master";
+  inputs."neverwinter_utils-v1_0_1".repo  = "neverwinter_utils";
+  inputs."neverwinter_utils-v1_0_1".type  = "github";
+  inputs."neverwinter_utils-v1_0_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."neverwinter_utils-v1_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."neverwinter-v1_1_0".dir   = "v1_1_0";
-  inputs."neverwinter-v1_1_0".owner = "nim-nix-pkgs";
-  inputs."neverwinter-v1_1_0".ref   = "master";
-  inputs."neverwinter-v1_1_0".repo  = "neverwinter";
-  inputs."neverwinter-v1_1_0".type  = "github";
-  inputs."neverwinter-v1_1_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."neverwinter-v1_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."neverwinter_utils-v1_1_0".dir   = "v1_1_0";
+  inputs."neverwinter_utils-v1_1_0".owner = "nim-nix-pkgs";
+  inputs."neverwinter_utils-v1_1_0".ref   = "master";
+  inputs."neverwinter_utils-v1_1_0".repo  = "neverwinter_utils";
+  inputs."neverwinter_utils-v1_1_0".type  = "github";
+  inputs."neverwinter_utils-v1_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."neverwinter_utils-v1_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

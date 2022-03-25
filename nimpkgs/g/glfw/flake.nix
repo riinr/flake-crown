@@ -31,13 +31,13 @@
   inputs."glfw-v0_2_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."glfw-v0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."glfw-v0_3_0".dir   = "v0_3_0";
-  inputs."glfw-v0_3_0".owner = "nim-nix-pkgs";
-  inputs."glfw-v0_3_0".ref   = "master";
-  inputs."glfw-v0_3_0".repo  = "glfw";
-  inputs."glfw-v0_3_0".type  = "github";
-  inputs."glfw-v0_3_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."glfw-v0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nim_glfw-v0_3_0".dir   = "v0_3_0";
+  inputs."nim_glfw-v0_3_0".owner = "nim-nix-pkgs";
+  inputs."nim_glfw-v0_3_0".ref   = "master";
+  inputs."nim_glfw-v0_3_0".repo  = "nim_glfw";
+  inputs."nim_glfw-v0_3_0".type  = "github";
+  inputs."nim_glfw-v0_3_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nim_glfw-v0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."glfw-v0_3_1".dir   = "v0_3_1";
   inputs."glfw-v0_3_1".owner = "nim-nix-pkgs";

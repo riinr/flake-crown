@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-bumpy-master": "src-bumpy-master",
+        "vmath": "vmath"
+      }
+    },
+    "src-bumpy-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1642719231,
+        "narHash": "sha256-4DcNBJyn6Lo22PFttSua1NMnpw551ATlsRGIC3s7f9c=",
+        "owner": "treeform",
+        "repo": "bumpy",
+        "rev": "1efaa113c5a343febee10553f33657aabb066739",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/heads/master",
+        "repo": "bumpy",
+        "type": "github"
+      }
+    },
+    "src-vmath-1_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1647639539,
+        "narHash": "sha256-4K54230DDWB9S9snm/5EQkLoOTxDY3SmFfkEFGCQ8/g=",
+        "owner": "treeform",
+        "repo": "vmath",
+        "rev": "dd5d263ab001b94ea7b76c0d8ee1fb60f4da07d9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/1.1.2",
+        "repo": "vmath",
+        "type": "github"
+      }
+    },
+    "vmath": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-vmath-1_1_2": "src-vmath-1_1_2"
+      },
+      "locked": {
+        "dir": "1_1_2",
+        "lastModified": 1648164421,
+        "narHash": "sha256-E7B7WksX2whClm1KHdxST0tejOTUnOpJH61TsOj3Cw0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "vmath",
+        "rev": "36a2f1e42dcfda40adb78c54727d1bd8abdd01b2",
+        "type": "github"
+      },
+      "original": {
+        "dir": "1_1_2",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "vmath",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

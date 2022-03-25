@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "edn": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-edn-0_2_1": "src-edn-0_2_1"
+      },
+      "locked": {
+        "dir": "0_2_1",
+        "lastModified": 1648163058,
+        "narHash": "sha256-KxSqKfC8oxg/JtfVfJIEEMSgIH7M1U/pENifWaoYCd0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "edn",
+        "rev": "54baa58f1556635296be9eabc012c10cd3223f4c",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_2_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "edn",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "edn": "edn",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-reframe-0_3_1": "src-reframe-0_3_1"
+      }
+    },
+    "src-edn-0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1582369624,
+        "narHash": "sha256-9uO6AzfA4V5sU9n6qz/CqtAyFPhCq8A9GMhsNIgugyo=",
+        "owner": "rosado",
+        "repo": "edn.nim",
+        "rev": "4cda60880e108f0cb7efe1c209308f2db03267d9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rosado",
+        "ref": "refs/tags/0.2.1",
+        "repo": "edn.nim",
+        "type": "github"
+      }
+    },
+    "src-reframe-0_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591986601,
+        "narHash": "sha256-UI1XPMnOD9SHZMtwxueCGxU9X6ytRhOWRfROQ+XyYGk=",
+        "owner": "rosado",
+        "repo": "reframe.nim",
+        "rev": "35d710cf204af44824bd1ac9825c68c9f8735bca",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rosado",
+        "ref": "refs/tags/0.3.1",
+        "repo": "reframe.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

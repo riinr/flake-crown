@@ -16,7 +16,7 @@
   inputs."sdl1".owner = "nim-nix-pkgs";
   inputs."sdl1".ref   = "master";
   inputs."sdl1".repo  = "sdl1";
-  inputs."sdl1".dir   = "";
+  inputs."sdl1".dir   = "master";
   inputs."sdl1".type  = "github";
   inputs."sdl1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sdl1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-libtcod_nim-v0_98"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-libtcod_nim-v0_98";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

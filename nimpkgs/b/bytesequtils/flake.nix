@@ -15,13 +15,13 @@
   inputs."bytesequtils-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bytesequtils-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."bytesequtils-v1_0_0".dir   = "v1_0_0";
-  inputs."bytesequtils-v1_0_0".owner = "nim-nix-pkgs";
-  inputs."bytesequtils-v1_0_0".ref   = "master";
-  inputs."bytesequtils-v1_0_0".repo  = "bytesequtils";
-  inputs."bytesequtils-v1_0_0".type  = "github";
-  inputs."bytesequtils-v1_0_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."bytesequtils-v1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."byteutils-v1_0_0".dir   = "v1_0_0";
+  inputs."byteutils-v1_0_0".owner = "nim-nix-pkgs";
+  inputs."byteutils-v1_0_0".ref   = "master";
+  inputs."byteutils-v1_0_0".repo  = "byteutils";
+  inputs."byteutils-v1_0_0".type  = "github";
+  inputs."byteutils-v1_0_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."byteutils-v1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."bytesequtils-v1_1_0".dir   = "v1_1_0";
   inputs."bytesequtils-v1_1_0".owner = "nim-nix-pkgs";

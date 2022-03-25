@@ -16,7 +16,7 @@
   inputs."urand".owner = "nim-nix-pkgs";
   inputs."urand".ref   = "master";
   inputs."urand".repo  = "urand";
-  inputs."urand".dir   = "";
+  inputs."urand".dir   = "master";
   inputs."urand".type  = "github";
   inputs."urand".inputs.nixpkgs.follows = "nixpkgs";
   inputs."urand".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-passgen-0_1_0"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-passgen-0_1_0";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

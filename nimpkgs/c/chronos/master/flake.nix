@@ -16,7 +16,7 @@
   inputs."stew".owner = "nim-nix-pkgs";
   inputs."stew".ref   = "master";
   inputs."stew".repo  = "stew";
-  inputs."stew".dir   = "";
+  inputs."stew".dir   = "master";
   inputs."stew".type  = "github";
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -24,7 +24,7 @@
   inputs."bearssl".owner = "nim-nix-pkgs";
   inputs."bearssl".ref   = "master";
   inputs."bearssl".repo  = "bearssl";
-  inputs."bearssl".dir   = "";
+  inputs."bearssl".dir   = "master";
   inputs."bearssl".type  = "github";
   inputs."bearssl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bearssl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -32,7 +32,7 @@
   inputs."httputils".owner = "nim-nix-pkgs";
   inputs."httputils".ref   = "master";
   inputs."httputils".repo  = "httputils";
-  inputs."httputils".dir   = "";
+  inputs."httputils".dir   = "master";
   inputs."httputils".type  = "github";
   inputs."httputils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."httputils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -41,10 +41,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-chronos-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-chronos-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

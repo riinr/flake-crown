@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-polymers-master": "src-polymers-master"
+      }
+    },
+    "src-polymers-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1646844515,
+        "narHash": "sha256-QDZznMkOpxQGd9pQaLJW+jxCGJ4EzbR6ls7iTlUkZCs=",
+        "owner": "rlipsc",
+        "repo": "polymers",
+        "rev": "e35f274351e2e3f9e6b12c9efe30e1d2b91ffce5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rlipsc",
+        "ref": "refs/heads/master",
+        "repo": "polymers",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

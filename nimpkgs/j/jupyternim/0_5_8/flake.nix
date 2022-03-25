@@ -16,7 +16,7 @@
   inputs."zmq".owner = "nim-nix-pkgs";
   inputs."zmq".ref   = "master";
   inputs."zmq".repo  = "zmq";
-  inputs."zmq".dir   = "v1_3_0";
+  inputs."zmq".dir   = "v1_3_1";
   inputs."zmq".type  = "github";
   inputs."zmq".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zmq".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -32,7 +32,7 @@
   inputs."nimsha2".owner = "nim-nix-pkgs";
   inputs."nimsha2".ref   = "master";
   inputs."nimsha2".repo  = "nimsha2";
-  inputs."nimsha2".dir   = "";
+  inputs."nimsha2".dir   = "master";
   inputs."nimsha2".type  = "github";
   inputs."nimsha2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimsha2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -49,10 +49,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-jupyternim-0_5_8"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-jupyternim-0_5_8";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

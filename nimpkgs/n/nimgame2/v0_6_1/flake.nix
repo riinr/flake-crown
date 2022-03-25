@@ -16,7 +16,7 @@
   inputs."sdl2_nim".owner = "nim-nix-pkgs";
   inputs."sdl2_nim".ref   = "master";
   inputs."sdl2_nim".repo  = "sdl2_nim";
-  inputs."sdl2_nim".dir   = "";
+  inputs."sdl2_nim".dir   = "v2_0_14_3";
   inputs."sdl2_nim".type  = "github";
   inputs."sdl2_nim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sdl2_nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-nimgame2-v0_6_1"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-nimgame2-v0_6_1";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

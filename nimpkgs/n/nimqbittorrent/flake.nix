@@ -15,21 +15,21 @@
   inputs."nimqbittorrent-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimqbittorrent-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimqbittorrent-v0_1_0".dir   = "v0_1_0";
-  inputs."nimqbittorrent-v0_1_0".owner = "nim-nix-pkgs";
-  inputs."nimqbittorrent-v0_1_0".ref   = "master";
-  inputs."nimqbittorrent-v0_1_0".repo  = "nimqbittorrent";
-  inputs."nimqbittorrent-v0_1_0".type  = "github";
-  inputs."nimqbittorrent-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."nimqbittorrent-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimqt-v0_1_0".dir   = "v0_1_0";
+  inputs."nimqt-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."nimqt-v0_1_0".ref   = "master";
+  inputs."nimqt-v0_1_0".repo  = "nimqt";
+  inputs."nimqt-v0_1_0".type  = "github";
+  inputs."nimqt-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimqt-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimqbittorrent-v0_1_2".dir   = "v0_1_2";
-  inputs."nimqbittorrent-v0_1_2".owner = "nim-nix-pkgs";
-  inputs."nimqbittorrent-v0_1_2".ref   = "master";
-  inputs."nimqbittorrent-v0_1_2".repo  = "nimqbittorrent";
-  inputs."nimqbittorrent-v0_1_2".type  = "github";
-  inputs."nimqbittorrent-v0_1_2".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."nimqbittorrent-v0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimqt-v0_1_2".dir   = "v0_1_2";
+  inputs."nimqt-v0_1_2".owner = "nim-nix-pkgs";
+  inputs."nimqt-v0_1_2".ref   = "master";
+  inputs."nimqt-v0_1_2".repo  = "nimqt";
+  inputs."nimqt-v0_1_2".type  = "github";
+  inputs."nimqt-v0_1_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimqt-v0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

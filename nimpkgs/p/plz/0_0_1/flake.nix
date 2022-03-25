@@ -16,7 +16,7 @@
   inputs."requirementstxt".owner = "nim-nix-pkgs";
   inputs."requirementstxt".ref   = "master";
   inputs."requirementstxt".repo  = "requirementstxt";
-  inputs."requirementstxt".dir   = "";
+  inputs."requirementstxt".dir   = "master";
   inputs."requirementstxt".type  = "github";
   inputs."requirementstxt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."requirementstxt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -24,7 +24,7 @@
   inputs."libarchibi".owner = "nim-nix-pkgs";
   inputs."libarchibi".ref   = "master";
   inputs."libarchibi".repo  = "libarchibi";
-  inputs."libarchibi".dir   = "";
+  inputs."libarchibi".dir   = "master";
   inputs."libarchibi".type  = "github";
   inputs."libarchibi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libarchibi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -33,10 +33,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-plz-0_0_1"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-plz-0_0_1";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

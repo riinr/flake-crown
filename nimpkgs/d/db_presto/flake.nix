@@ -15,13 +15,13 @@
   inputs."db_presto-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."db_presto-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."db_presto-0_5_0".dir   = "0_5_0";
-  inputs."db_presto-0_5_0".owner = "nim-nix-pkgs";
-  inputs."db_presto-0_5_0".ref   = "master";
-  inputs."db_presto-0_5_0".repo  = "db_presto";
-  inputs."db_presto-0_5_0".type  = "github";
-  inputs."db_presto-0_5_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."db_presto-0_5_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."presto-0_5_0".dir   = "0_5_0";
+  inputs."presto-0_5_0".owner = "nim-nix-pkgs";
+  inputs."presto-0_5_0".ref   = "master";
+  inputs."presto-0_5_0".repo  = "presto";
+  inputs."presto-0_5_0".type  = "github";
+  inputs."presto-0_5_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."presto-0_5_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."db_presto-0_7_0".dir   = "0_7_0";
   inputs."db_presto-0_7_0".owner = "nim-nix-pkgs";

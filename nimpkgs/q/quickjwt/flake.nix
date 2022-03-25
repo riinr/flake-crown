@@ -15,13 +15,13 @@
   inputs."quickjwt-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."quickjwt-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."quickjwt-0_0_1".dir   = "0_0_1";
-  inputs."quickjwt-0_0_1".owner = "nim-nix-pkgs";
-  inputs."quickjwt-0_0_1".ref   = "master";
-  inputs."quickjwt-0_0_1".repo  = "quickjwt";
-  inputs."quickjwt-0_0_1".type  = "github";
-  inputs."quickjwt-0_0_1".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."quickjwt-0_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."jwt-0_0_1".dir   = "0_0_1";
+  inputs."jwt-0_0_1".owner = "nim-nix-pkgs";
+  inputs."jwt-0_0_1".ref   = "master";
+  inputs."jwt-0_0_1".repo  = "jwt";
+  inputs."jwt-0_0_1".type  = "github";
+  inputs."jwt-0_0_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jwt-0_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."quickjwt-0_2_1".dir   = "0_2_1";
   inputs."quickjwt-0_2_1".owner = "nim-nix-pkgs";

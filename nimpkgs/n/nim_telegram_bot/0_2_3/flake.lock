@@ -1,0 +1,152 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "openexchangerates": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-openexchangerates-master": "src-openexchangerates-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648163434,
+        "narHash": "sha256-ui6Q/6BHEBVI34WIX0hPpYd9GadtAXskYcwbyzxHJ/I=",
+        "owner": "nim-nix-pkgs",
+        "repo": "openexchangerates",
+        "rev": "f2fb51d396e9f0df955c19de0bd6efc97e115217",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "openexchangerates",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "openexchangerates": "openexchangerates",
+        "src-nim_telegram_bot-0_2_3": "src-nim_telegram_bot-0_2_3",
+        "telebot": "telebot"
+      }
+    },
+    "src-nim_telegram_bot-0_2_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1533585105,
+        "narHash": "sha256-ZE3AyAL4+wrMOyqQYkB9cKxVj05y0+T9TU5jLJp2hOo=",
+        "owner": "juancarlospaco",
+        "repo": "nim-telegram-bot",
+        "rev": "26538efd4ac897040340890aae14dc5837d12c2e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/tags/0.2.3",
+        "repo": "nim-telegram-bot",
+        "type": "github"
+      }
+    },
+    "src-openexchangerates-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1559841287,
+        "narHash": "sha256-ZkG6idPEdbRq37b2wdHGteasrNU3XK+k/rhr8YAzN+E=",
+        "owner": "juancarlospaco",
+        "repo": "nim-openexchangerates",
+        "rev": "2582c88f5391f8b845f7befd38ac1e58591bae42",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "nim-openexchangerates",
+        "type": "github"
+      }
+    },
+    "src-telebot-2022_02_02": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1643784677,
+        "narHash": "sha256-bBcq5rcX/JyJT15JIV5jdrwr+8SBkpKZ+8lRb3D7D88=",
+        "owner": "ba0f3",
+        "repo": "telebot.nim",
+        "rev": "977cecc0e3eb52f79f4581f4aa618ef3bd9209a1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/tags/2022.02.02",
+        "repo": "telebot.nim",
+        "type": "github"
+      }
+    },
+    "telebot": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-telebot-2022_02_02": "src-telebot-2022_02_02"
+      },
+      "locked": {
+        "dir": "2022_02_02",
+        "lastModified": 1648165201,
+        "narHash": "sha256-Y+q/zGMGUc1/iAYkKkcGU68uaa6TJXR2npVW2UwH1cw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "telebot",
+        "rev": "dda308ef4ab7c43774865e567e1c133e90f371b7",
+        "type": "github"
+      },
+      "original": {
+        "dir": "2022_02_02",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "telebot",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

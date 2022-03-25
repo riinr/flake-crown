@@ -16,7 +16,7 @@
   inputs."redisparser".owner = "nim-nix-pkgs";
   inputs."redisparser".ref   = "master";
   inputs."redisparser".repo  = "redisparser";
-  inputs."redisparser".dir   = "";
+  inputs."redisparser".dir   = "0_1_1";
   inputs."redisparser".type  = "github";
   inputs."redisparser".inputs.nixpkgs.follows = "nixpkgs";
   inputs."redisparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-redisclient-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-redisclient-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

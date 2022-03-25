@@ -16,7 +16,7 @@
   inputs."coverage".owner = "nim-nix-pkgs";
   inputs."coverage".ref   = "master";
   inputs."coverage".repo  = "coverage";
-  inputs."coverage".dir   = "";
+  inputs."coverage".dir   = "master";
   inputs."coverage".type  = "github";
   inputs."coverage".inputs.nixpkgs.follows = "nixpkgs";
   inputs."coverage".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-nimflux-v0_1_0"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-nimflux-v0_1_0";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

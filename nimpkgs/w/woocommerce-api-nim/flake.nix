@@ -7,13 +7,13 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."woocommerce-api-nim-master".dir   = "master";
-  inputs."woocommerce-api-nim-master".owner = "nim-nix-pkgs";
-  inputs."woocommerce-api-nim-master".ref   = "master";
-  inputs."woocommerce-api-nim-master".repo  = "woocommerce-api-nim";
-  inputs."woocommerce-api-nim-master".type  = "github";
-  inputs."woocommerce-api-nim-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."woocommerce-api-nim-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."woocommerce-master".dir   = "master";
+  inputs."woocommerce-master".owner = "nim-nix-pkgs";
+  inputs."woocommerce-master".ref   = "master";
+  inputs."woocommerce-master".repo  = "woocommerce";
+  inputs."woocommerce-master".type  = "github";
+  inputs."woocommerce-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."woocommerce-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

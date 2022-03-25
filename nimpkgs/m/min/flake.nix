@@ -23,13 +23,13 @@
   inputs."min-0_19_6".inputs.nixpkgs.follows = "nixpkgs";
   inputs."min-0_19_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."min-v0_1_0".dir   = "v0_1_0";
-  inputs."min-v0_1_0".owner = "nim-nix-pkgs";
-  inputs."min-v0_1_0".ref   = "master";
-  inputs."min-v0_1_0".repo  = "min";
-  inputs."min-v0_1_0".type  = "github";
-  inputs."min-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."min-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."minim-v0_1_0".dir   = "v0_1_0";
+  inputs."minim-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."minim-v0_1_0".ref   = "master";
+  inputs."minim-v0_1_0".repo  = "minim";
+  inputs."minim-v0_1_0".type  = "github";
+  inputs."minim-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."minim-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."min-v0_10_0".dir   = "v0_10_0";
   inputs."min-v0_10_0".owner = "nim-nix-pkgs";
@@ -175,21 +175,21 @@
   inputs."min-v0_19_6".inputs.nixpkgs.follows = "nixpkgs";
   inputs."min-v0_19_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."min-v0_2_0".dir   = "v0_2_0";
-  inputs."min-v0_2_0".owner = "nim-nix-pkgs";
-  inputs."min-v0_2_0".ref   = "master";
-  inputs."min-v0_2_0".repo  = "min";
-  inputs."min-v0_2_0".type  = "github";
-  inputs."min-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."min-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."minim-v0_2_0".dir   = "v0_2_0";
+  inputs."minim-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."minim-v0_2_0".ref   = "master";
+  inputs."minim-v0_2_0".repo  = "minim";
+  inputs."minim-v0_2_0".type  = "github";
+  inputs."minim-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."minim-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."min-v0_2_1".dir   = "v0_2_1";
-  inputs."min-v0_2_1".owner = "nim-nix-pkgs";
-  inputs."min-v0_2_1".ref   = "master";
-  inputs."min-v0_2_1".repo  = "min";
-  inputs."min-v0_2_1".type  = "github";
-  inputs."min-v0_2_1".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."min-v0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."minim-v0_2_1".dir   = "v0_2_1";
+  inputs."minim-v0_2_1".owner = "nim-nix-pkgs";
+  inputs."minim-v0_2_1".ref   = "master";
+  inputs."minim-v0_2_1".repo  = "minim";
+  inputs."minim-v0_2_1".type  = "github";
+  inputs."minim-v0_2_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."minim-v0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."min-v0_20_0".dir   = "v0_20_0";
   inputs."min-v0_20_0".owner = "nim-nix-pkgs";
@@ -311,13 +311,13 @@
   inputs."min-v0_29_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."min-v0_29_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."min-v0_3_0".dir   = "v0_3_0";
-  inputs."min-v0_3_0".owner = "nim-nix-pkgs";
-  inputs."min-v0_3_0".ref   = "master";
-  inputs."min-v0_3_0".repo  = "min";
-  inputs."min-v0_3_0".type  = "github";
-  inputs."min-v0_3_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."min-v0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."minim-v0_3_0".dir   = "v0_3_0";
+  inputs."minim-v0_3_0".owner = "nim-nix-pkgs";
+  inputs."minim-v0_3_0".ref   = "master";
+  inputs."minim-v0_3_0".repo  = "minim";
+  inputs."minim-v0_3_0".type  = "github";
+  inputs."minim-v0_3_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."minim-v0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."min-v0_30_0".dir   = "v0_30_0";
   inputs."min-v0_30_0".owner = "nim-nix-pkgs";

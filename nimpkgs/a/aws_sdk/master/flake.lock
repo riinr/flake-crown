@@ -1,0 +1,152 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "sph": "sph",
+        "src-aws_sdk-master": "src-aws_sdk-master",
+        "stringinterpolation": "stringinterpolation"
+      }
+    },
+    "sph": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sph-master": "src-sph-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648163623,
+        "narHash": "sha256-QUjaf7bGjkg4l8W0b+HqLABidEQABWbyyMR0rtmkuz8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sph",
+        "rev": "68a861271a7c017eac995eb4114f1fc719ead1e0",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sph",
+        "type": "github"
+      }
+    },
+    "src-aws_sdk-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1539899537,
+        "narHash": "sha256-/eQCqIyraRyhbPUtT2YOSTkl/uEwt0F9j9pjSUw/tos=",
+        "owner": "aidansteele",
+        "repo": "aws_sdk.nim",
+        "rev": "1570861e5769daaa89aadd6f45e88bd8acddb6c5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "aidansteele",
+        "ref": "refs/heads/master",
+        "repo": "aws_sdk.nim",
+        "type": "github"
+      }
+    },
+    "src-sph-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1539987858,
+        "narHash": "sha256-z8TYQOP8crwduhCTvy33GMkduzVfCsftil96DVKldzo=",
+        "owner": "aidansteele",
+        "repo": "sph",
+        "rev": "04c78a0005a83af3f8956f1994b7c01df56639aa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "aidansteele",
+        "ref": "refs/heads/master",
+        "repo": "sph",
+        "type": "github"
+      }
+    },
+    "src-stringinterpolation-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1434886518,
+        "narHash": "sha256-/YGsehtfbvUReeQM+gmzzMKhh1nHMY8fuazg2FU0c3k=",
+        "owner": "bluenote10",
+        "repo": "nim-stringinterpolation",
+        "rev": "4e07f8052f83cce9056a3a3e8b9fcb4640c0dd29",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bluenote10",
+        "ref": "refs/heads/master",
+        "repo": "nim-stringinterpolation",
+        "type": "github"
+      }
+    },
+    "stringinterpolation": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-stringinterpolation-master": "src-stringinterpolation-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648163647,
+        "narHash": "sha256-y7WbNumlHBTjwj19lOfFPQxwM3tLo1nDHsrXIS3zlcI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "stringinterpolation",
+        "rev": "b04853cfd8715b7fb20407035f595195e2cd35ce",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "stringinterpolation",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -16,7 +16,7 @@
   inputs."nimcrypto".owner = "nim-nix-pkgs";
   inputs."nimcrypto".ref   = "master";
   inputs."nimcrypto".repo  = "nimcrypto";
-  inputs."nimcrypto".dir   = "";
+  inputs."nimcrypto".dir   = "master";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -24,7 +24,7 @@
   inputs."eth_keys".owner = "nim-nix-pkgs";
   inputs."eth_keys".ref   = "master";
   inputs."eth_keys".repo  = "eth_keys";
-  inputs."eth_keys".dir   = "";
+  inputs."eth_keys".dir   = "master";
   inputs."eth_keys".type  = "github";
   inputs."eth_keys".inputs.nixpkgs.follows = "nixpkgs";
   inputs."eth_keys".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -33,10 +33,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-eth_keyfile-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-eth_keyfile-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

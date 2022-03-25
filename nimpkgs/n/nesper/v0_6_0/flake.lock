@@ -1,0 +1,152 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "msgpack4nim": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-msgpack4nim-v0_3_1": "src-msgpack4nim-v0_3_1"
+      },
+      "locked": {
+        "dir": "v0_3_1",
+        "lastModified": 1648163298,
+        "narHash": "sha256-iaTJT9I9PDN5r3d2DU/KTHknyP73OZD2u7V29Bu4SyM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "msgpack4nim",
+        "rev": "b999cdcc380b8e4eb5f83db7877b67d3b4ad1133",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_3_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "msgpack4nim",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "msgpack4nim": "msgpack4nim",
+        "nixpkgs": "nixpkgs",
+        "src-nesper-v0_6_0": "src-nesper-v0_6_0",
+        "stew": "stew"
+      }
+    },
+    "src-msgpack4nim-v0_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1578112201,
+        "narHash": "sha256-3f7DhmVEgOu4JmwDO20gmzM+ynVOPP0oCnsSGGNPAtE=",
+        "owner": "jangko",
+        "repo": "msgpack4nim",
+        "rev": "472152dd56a8b282535647caeba4643f3c4992f8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jangko",
+        "ref": "refs/tags/v0.3.1",
+        "repo": "msgpack4nim",
+        "type": "github"
+      }
+    },
+    "src-nesper-v0_6_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1615848946,
+        "narHash": "sha256-b9ZxDcVkkdoKImZwUnMVPaeXM+KoNRxJVCyBV2/CU9w=",
+        "owner": "elcritch",
+        "repo": "nesper",
+        "rev": "be4f2ed3e5a3594a8d6eb402ad71dd6be9d2be85",
+        "type": "github"
+      },
+      "original": {
+        "owner": "elcritch",
+        "ref": "refs/tags/v0.6.0",
+        "repo": "nesper",
+        "type": "github"
+      }
+    },
+    "src-stew-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1647462294,
+        "narHash": "sha256-c2oiWeZnbgllgiyneRUXquJsOoG2Iwzn8FK9nabHMjc=",
+        "owner": "status-im",
+        "repo": "nim-stew",
+        "rev": "419903c9a31ab253cf5cf19f24d9a912dc4b5154",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-stew",
+        "type": "github"
+      }
+    },
+    "stew": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-stew-master": "src-stew-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648163641,
+        "narHash": "sha256-o1mp1U2lK44+JZDk4wYL0ntUijy1+3WGRrAHyr8j/GU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "stew",
+        "rev": "2f74d82b8dbbd2144103f646070c06cdb1af35c6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "stew",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

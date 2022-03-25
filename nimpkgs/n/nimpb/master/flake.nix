@@ -16,7 +16,7 @@
   inputs."nimpb_protoc".owner = "nim-nix-pkgs";
   inputs."nimpb_protoc".ref   = "master";
   inputs."nimpb_protoc".repo  = "nimpb_protoc";
-  inputs."nimpb_protoc".dir   = "";
+  inputs."nimpb_protoc".dir   = "master";
   inputs."nimpb_protoc".type  = "github";
   inputs."nimpb_protoc".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimpb_protoc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-nimpb-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-nimpb-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

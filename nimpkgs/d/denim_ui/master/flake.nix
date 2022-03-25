@@ -32,7 +32,7 @@
   inputs."rx_nim".owner = "nim-nix-pkgs";
   inputs."rx_nim".ref   = "master";
   inputs."rx_nim".repo  = "rx_nim";
-  inputs."rx_nim".dir   = "";
+  inputs."rx_nim".dir   = "master";
   inputs."rx_nim".type  = "github";
   inputs."rx_nim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rx_nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -41,10 +41,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-denim_ui-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-denim_ui-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

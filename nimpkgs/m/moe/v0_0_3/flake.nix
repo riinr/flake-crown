@@ -16,7 +16,7 @@
   inputs."ncurses".owner = "nim-nix-pkgs";
   inputs."ncurses".ref   = "master";
   inputs."ncurses".repo  = "ncurses";
-  inputs."ncurses".dir   = "";
+  inputs."ncurses".dir   = "master";
   inputs."ncurses".type  = "github";
   inputs."ncurses".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ncurses".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -33,10 +33,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-moe-v0_0_3"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-moe-v0_0_3";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

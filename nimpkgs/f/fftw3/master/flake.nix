@@ -24,7 +24,7 @@
   inputs."weave".owner = "nim-nix-pkgs";
   inputs."weave".ref   = "master";
   inputs."weave".repo  = "weave";
-  inputs."weave".dir   = "";
+  inputs."weave".dir   = "v0_4_0";
   inputs."weave".type  = "github";
   inputs."weave".inputs.nixpkgs.follows = "nixpkgs";
   inputs."weave".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -41,10 +41,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-fftw3-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-fftw3-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

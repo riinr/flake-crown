@@ -16,7 +16,7 @@
   inputs."dnsprotocol".owner = "nim-nix-pkgs";
   inputs."dnsprotocol".ref   = "master";
   inputs."dnsprotocol".repo  = "dnsprotocol";
-  inputs."dnsprotocol".dir   = "";
+  inputs."dnsprotocol".dir   = "main";
   inputs."dnsprotocol".type  = "github";
   inputs."dnsprotocol".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dnsprotocol".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-resolv-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-resolv-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

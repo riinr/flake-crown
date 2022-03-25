@@ -7,13 +7,13 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."io-serialport-master".dir   = "master";
-  inputs."io-serialport-master".owner = "nim-nix-pkgs";
-  inputs."io-serialport-master".ref   = "master";
-  inputs."io-serialport-master".repo  = "io-serialport";
-  inputs."io-serialport-master".type  = "github";
-  inputs."io-serialport-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."io-serialport-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."serialport-master".dir   = "master";
+  inputs."serialport-master".owner = "nim-nix-pkgs";
+  inputs."serialport-master".ref   = "master";
+  inputs."serialport-master".repo  = "serialport";
+  inputs."serialport-master".type  = "github";
+  inputs."serialport-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."serialport-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

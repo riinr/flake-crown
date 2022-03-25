@@ -7,21 +7,21 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."discordnim-develop".dir   = "develop";
-  inputs."discordnim-develop".owner = "nim-nix-pkgs";
-  inputs."discordnim-develop".ref   = "master";
-  inputs."discordnim-develop".repo  = "discordnim";
-  inputs."discordnim-develop".type  = "github";
-  inputs."discordnim-develop".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."discordnim-develop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."discord-develop".dir   = "develop";
+  inputs."discord-develop".owner = "nim-nix-pkgs";
+  inputs."discord-develop".ref   = "master";
+  inputs."discord-develop".repo  = "discord";
+  inputs."discord-develop".type  = "github";
+  inputs."discord-develop".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."discord-develop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."discordnim-master".dir   = "master";
-  inputs."discordnim-master".owner = "nim-nix-pkgs";
-  inputs."discordnim-master".ref   = "master";
-  inputs."discordnim-master".repo  = "discordnim";
-  inputs."discordnim-master".type  = "github";
-  inputs."discordnim-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."discordnim-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."discord-master".dir   = "master";
+  inputs."discord-master".owner = "nim-nix-pkgs";
+  inputs."discord-master".ref   = "master";
+  inputs."discord-master".repo  = "discord";
+  inputs."discord-master".type  = "github";
+  inputs."discord-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."discord-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

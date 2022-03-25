@@ -32,7 +32,7 @@
   inputs."bluesoftcosmos".owner = "nim-nix-pkgs";
   inputs."bluesoftcosmos".ref   = "master";
   inputs."bluesoftcosmos".repo  = "bluesoftcosmos";
-  inputs."bluesoftcosmos".dir   = "";
+  inputs."bluesoftcosmos".dir   = "master";
   inputs."bluesoftcosmos".type  = "github";
   inputs."bluesoftcosmos".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bluesoftcosmos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -41,10 +41,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-servclip-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-servclip-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

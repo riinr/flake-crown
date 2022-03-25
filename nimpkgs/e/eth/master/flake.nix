@@ -16,7 +16,7 @@
   inputs."nimcrypto".owner = "nim-nix-pkgs";
   inputs."nimcrypto".ref   = "master";
   inputs."nimcrypto".repo  = "nimcrypto";
-  inputs."nimcrypto".dir   = "";
+  inputs."nimcrypto".dir   = "master";
   inputs."nimcrypto".type  = "github";
   inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -24,7 +24,7 @@
   inputs."stint".owner = "nim-nix-pkgs";
   inputs."stint".ref   = "master";
   inputs."stint".repo  = "stint";
-  inputs."stint".dir   = "";
+  inputs."stint".dir   = "master";
   inputs."stint".type  = "github";
   inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -32,7 +32,7 @@
   inputs."secp256k1".owner = "nim-nix-pkgs";
   inputs."secp256k1".ref   = "master";
   inputs."secp256k1".repo  = "secp256k1";
-  inputs."secp256k1".dir   = "";
+  inputs."secp256k1".dir   = "master";
   inputs."secp256k1".type  = "github";
   inputs."secp256k1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."secp256k1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -40,7 +40,7 @@
   inputs."rocksdb".owner = "nim-nix-pkgs";
   inputs."rocksdb".ref   = "master";
   inputs."rocksdb".repo  = "rocksdb";
-  inputs."rocksdb".dir   = "";
+  inputs."rocksdb".dir   = "master";
   inputs."rocksdb".type  = "github";
   inputs."rocksdb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rocksdb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -48,7 +48,7 @@
   inputs."chronos".owner = "nim-nix-pkgs";
   inputs."chronos".ref   = "master";
   inputs."chronos".repo  = "chronos";
-  inputs."chronos".dir   = "";
+  inputs."chronos".dir   = "master";
   inputs."chronos".type  = "github";
   inputs."chronos".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -64,7 +64,7 @@
   inputs."stew".owner = "nim-nix-pkgs";
   inputs."stew".ref   = "master";
   inputs."stew".repo  = "stew";
-  inputs."stew".dir   = "";
+  inputs."stew".dir   = "master";
   inputs."stew".type  = "github";
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -72,7 +72,7 @@
   inputs."nat_traversal".owner = "nim-nix-pkgs";
   inputs."nat_traversal".ref   = "master";
   inputs."nat_traversal".repo  = "nat_traversal";
-  inputs."nat_traversal".dir   = "";
+  inputs."nat_traversal".dir   = "master";
   inputs."nat_traversal".type  = "github";
   inputs."nat_traversal".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nat_traversal".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -80,7 +80,7 @@
   inputs."metrics".owner = "nim-nix-pkgs";
   inputs."metrics".ref   = "master";
   inputs."metrics".repo  = "metrics";
-  inputs."metrics".dir   = "";
+  inputs."metrics".dir   = "master";
   inputs."metrics".type  = "github";
   inputs."metrics".inputs.nixpkgs.follows = "nixpkgs";
   inputs."metrics".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -88,7 +88,7 @@
   inputs."sqlite3_abi".owner = "nim-nix-pkgs";
   inputs."sqlite3_abi".ref   = "master";
   inputs."sqlite3_abi".repo  = "sqlite3_abi";
-  inputs."sqlite3_abi".dir   = "";
+  inputs."sqlite3_abi".dir   = "master";
   inputs."sqlite3_abi".type  = "github";
   inputs."sqlite3_abi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sqlite3_abi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -96,7 +96,7 @@
   inputs."confutils".owner = "nim-nix-pkgs";
   inputs."confutils".ref   = "master";
   inputs."confutils".repo  = "confutils";
-  inputs."confutils".dir   = "";
+  inputs."confutils".dir   = "master";
   inputs."confutils".type  = "github";
   inputs."confutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."confutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -121,10 +121,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-eth-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-eth-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

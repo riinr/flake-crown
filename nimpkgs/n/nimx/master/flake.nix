@@ -24,7 +24,7 @@
   inputs."opengl".owner = "nim-nix-pkgs";
   inputs."opengl".ref   = "master";
   inputs."opengl".repo  = "opengl";
-  inputs."opengl".dir   = "";
+  inputs."opengl".dir   = "1_2_6";
   inputs."opengl".type  = "github";
   inputs."opengl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."opengl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -64,7 +64,7 @@
   inputs."plists".owner = "nim-nix-pkgs";
   inputs."plists".ref   = "master";
   inputs."plists".repo  = "plists";
-  inputs."plists".dir   = "";
+  inputs."plists".dir   = "master";
   inputs."plists".type  = "github";
   inputs."plists".inputs.nixpkgs.follows = "nixpkgs";
   inputs."plists".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -80,7 +80,7 @@
   inputs."kiwi".owner = "nim-nix-pkgs";
   inputs."kiwi".ref   = "master";
   inputs."kiwi".repo  = "kiwi";
-  inputs."kiwi".dir   = "";
+  inputs."kiwi".dir   = "master";
   inputs."kiwi".type  = "github";
   inputs."kiwi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."kiwi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -88,7 +88,7 @@
   inputs."jsbind".owner = "nim-nix-pkgs";
   inputs."jsbind".ref   = "master";
   inputs."jsbind".repo  = "jsbind";
-  inputs."jsbind".dir   = "";
+  inputs."jsbind".dir   = "master";
   inputs."jsbind".type  = "github";
   inputs."jsbind".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsbind".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -96,7 +96,7 @@
   inputs."rect_packer".owner = "nim-nix-pkgs";
   inputs."rect_packer".ref   = "master";
   inputs."rect_packer".repo  = "rect_packer";
-  inputs."rect_packer".dir   = "";
+  inputs."rect_packer".dir   = "master";
   inputs."rect_packer".type  = "github";
   inputs."rect_packer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rect_packer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -104,7 +104,7 @@
   inputs."os_files".owner = "nim-nix-pkgs";
   inputs."os_files".ref   = "master";
   inputs."os_files".repo  = "os_files";
-  inputs."os_files".dir   = "";
+  inputs."os_files".dir   = "master";
   inputs."os_files".type  = "github";
   inputs."os_files".inputs.nixpkgs.follows = "nixpkgs";
   inputs."os_files".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -112,7 +112,7 @@
   inputs."nimwebp".owner = "nim-nix-pkgs";
   inputs."nimwebp".ref   = "master";
   inputs."nimwebp".repo  = "nimwebp";
-  inputs."nimwebp".dir   = "";
+  inputs."nimwebp".dir   = "master";
   inputs."nimwebp".type  = "github";
   inputs."nimwebp".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimwebp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -121,10 +121,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-nimx-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-nimx-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

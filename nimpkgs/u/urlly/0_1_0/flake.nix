@@ -1,5 +1,5 @@
 {
-  description = ''URL and URI parsing for C and JS backend.'';
+  description = ''URI and URL parsing for Nim for C/JS backends. Similar api to browsers's `window.location`.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -7,20 +7,23 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-urlly-0_1_0.flake = false;
-  inputs.src-urlly-0_1_0.ref   = "refs/tags/0.1.0";
-  inputs.src-urlly-0_1_0.owner = "treeform";
-  inputs.src-urlly-0_1_0.repo  = "urlly";
-  inputs.src-urlly-0_1_0.type  = "github";
+  inputs.src-uriiy-0_1_0.flake = false;
+  inputs.src-uriiy-0_1_0.ref   = "refs/tags/0.1.0";
+  inputs.src-uriiy-0_1_0.owner = "treeform";
+  inputs.src-uriiy-0_1_0.repo  = "urlly";
+  inputs.src-uriiy-0_1_0.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-urlly-0_1_0"];
-  in lib.mkRefOutput {
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-uriiy-0_1_0"];
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
-    src  = deps."src-urlly-0_1_0";
+    src  = deps."src-uriiy-0_1_0";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

@@ -24,7 +24,7 @@
   inputs."argument_parser".owner = "nim-nix-pkgs";
   inputs."argument_parser".ref   = "master";
   inputs."argument_parser".repo  = "argument_parser";
-  inputs."argument_parser".dir   = "";
+  inputs."argument_parser".dir   = "master";
   inputs."argument_parser".type  = "github";
   inputs."argument_parser".inputs.nixpkgs.follows = "nixpkgs";
   inputs."argument_parser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -41,10 +41,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-gh_nimrod_doc_pages-v0_2_4"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-gh_nimrod_doc_pages-v0_2_4";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

@@ -1,8 +1,42 @@
 {
+  "name": "nimtorch",
+  "version": "0.1.20",
+  "author": "Giovanni Petrantoni",
   "desc": "A nim flavor of pytorch",
   "license": "MIT",
-  "name": "torch",
-  "ref": "refs/tags/v0.1.20",
-  "url": "https://github.com/fragcolor-xyz/nimtorch",
-  "version": "v0_1_20"
+  "skipDirs": [
+    "docker"
+  ],
+  "skipFiles": [
+    ".gitlab-ci.yml"
+  ],
+  "skipExt": [],
+  "installDirs": [],
+  "installFiles": [
+    "nimtorch.nim"
+  ],
+  "installExt": [],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 0.18.1",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.18.1"
+      }
+    },
+    {
+      "name": "fragments",
+      "str": ">= 0.1.12",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.1.12"
+      }
+    }
+  ],
+  "bin": [],
+  "binDir": "",
+  "srcDir": "",
+  "backend": "c",
+  "ref": "refs/tags/v0.1.20"
 }

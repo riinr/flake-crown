@@ -24,7 +24,7 @@
   inputs."plists".owner = "nim-nix-pkgs";
   inputs."plists".ref   = "master";
   inputs."plists".repo  = "plists";
-  inputs."plists".dir   = "";
+  inputs."plists".dir   = "master";
   inputs."plists".type  = "github";
   inputs."plists".inputs.nixpkgs.follows = "nixpkgs";
   inputs."plists".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -32,7 +32,7 @@
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
-  inputs."cligen".dir   = "v1_5_22";
+  inputs."cligen".dir   = "v1_5_23";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -56,7 +56,7 @@
   inputs."rcedit".owner = "nim-nix-pkgs";
   inputs."rcedit".ref   = "master";
   inputs."rcedit".repo  = "rcedit";
-  inputs."rcedit".dir   = "";
+  inputs."rcedit".dir   = "master";
   inputs."rcedit".type  = "github";
   inputs."rcedit".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rcedit".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -64,7 +64,7 @@
   inputs."jsonschema".owner = "nim-nix-pkgs";
   inputs."jsonschema".ref   = "master";
   inputs."jsonschema".repo  = "jsonschema";
-  inputs."jsonschema".dir   = "";
+  inputs."jsonschema".dir   = "master";
   inputs."jsonschema".type  = "github";
   inputs."jsonschema".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsonschema".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -73,10 +73,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-crowngui-v0_2_3"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-crowngui-v0_2_3";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

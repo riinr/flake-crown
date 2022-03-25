@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimpb_protoc": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimpb_protoc-master": "src-nimpb_protoc-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648163376,
+        "narHash": "sha256-C/AFk/AryiYFGbvOqln8qETAXlUuIgCNJDZT0Ri56lw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimpb_protoc",
+        "rev": "4e844dcbc101bd04be9246542eb2607b5b47756d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimpb_protoc",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimpb_protoc": "nimpb_protoc",
+        "nixpkgs": "nixpkgs",
+        "src-nimpb-master": "src-nimpb-master"
+      }
+    },
+    "src-nimpb-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1630228971,
+        "narHash": "sha256-r9u6xQVsrmXgl8faLFu82gkoYSAQ/0zQGV9XP/PYvLg=",
+        "owner": "oswjk",
+        "repo": "nimpb",
+        "rev": "67e38c9fb76e45423078f8cfc89df743b0518367",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oswjk",
+        "ref": "refs/heads/master",
+        "repo": "nimpb",
+        "type": "github"
+      }
+    },
+    "src-nimpb_protoc-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1523475403,
+        "narHash": "sha256-MipbxVH4PlRDwJN/OrcjDLCO7pyWSlA72nlbkYE68kY=",
+        "owner": "oswjk",
+        "repo": "nimpb_protoc",
+        "rev": "4a54eff46b816e7d2f1d69df24cc85780406e2f3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oswjk",
+        "ref": "refs/heads/master",
+        "repo": "nimpb_protoc",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

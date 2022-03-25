@@ -16,7 +16,7 @@
   inputs."tnetstring".owner = "nim-nix-pkgs";
   inputs."tnetstring".ref   = "master";
   inputs."tnetstring".repo  = "tnetstring";
-  inputs."tnetstring".dir   = "";
+  inputs."tnetstring".dir   = "master";
   inputs."tnetstring".type  = "github";
   inputs."tnetstring".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tnetstring".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -24,7 +24,7 @@
   inputs."zmq".owner = "nim-nix-pkgs";
   inputs."zmq".ref   = "master";
   inputs."zmq".repo  = "zmq";
-  inputs."zmq".dir   = "v1_3_0";
+  inputs."zmq".dir   = "v1_3_1";
   inputs."zmq".type  = "github";
   inputs."zmq".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zmq".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -33,10 +33,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-mongrel2-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-mongrel2-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

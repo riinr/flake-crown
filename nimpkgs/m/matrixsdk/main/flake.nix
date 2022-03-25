@@ -7,20 +7,31 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-matrixsdk-main.flake = false;
-  inputs.src-matrixsdk-main.ref   = "refs/heads/main";
-  inputs.src-matrixsdk-main.owner = "dylhack";
-  inputs.src-matrixsdk-main.repo  = "matrix-nim-sdk";
-  inputs.src-matrixsdk-main.type  = "github";
+  inputs.src-matrix-main.flake = false;
+  inputs.src-matrix-main.ref   = "refs/heads/main";
+  inputs.src-matrix-main.owner = "dylhack";
+  inputs.src-matrix-main.repo  = "matrix-nim-sdk";
+  inputs.src-matrix-main.type  = "github";
+  
+  inputs."jsony".owner = "nim-nix-pkgs";
+  inputs."jsony".ref   = "master";
+  inputs."jsony".repo  = "jsony";
+  inputs."jsony".dir   = "1_0_5";
+  inputs."jsony".type  = "github";
+  inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-matrixsdk-main"];
-  in lib.mkRefOutput {
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-matrix-main"];
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
-    src  = deps."src-matrixsdk-main";
+    src  = deps."src-matrix-main";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

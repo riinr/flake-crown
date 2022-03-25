@@ -7,13 +7,13 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nim-snappy-master".dir   = "master";
-  inputs."nim-snappy-master".owner = "nim-nix-pkgs";
-  inputs."nim-snappy-master".ref   = "master";
-  inputs."nim-snappy-master".repo  = "nim-snappy";
-  inputs."nim-snappy-master".type  = "github";
-  inputs."nim-snappy-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."nim-snappy-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."snappy-master".dir   = "master";
+  inputs."snappy-master".owner = "nim-nix-pkgs";
+  inputs."snappy-master".ref   = "master";
+  inputs."snappy-master".repo  = "snappy";
+  inputs."snappy-master".type  = "github";
+  inputs."snappy-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."snappy-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

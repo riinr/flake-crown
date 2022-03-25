@@ -24,7 +24,7 @@
   inputs."crc32".owner = "nim-nix-pkgs";
   inputs."crc32".ref   = "master";
   inputs."crc32".repo  = "crc32";
-  inputs."crc32".dir   = "";
+  inputs."crc32".dir   = "master";
   inputs."crc32".type  = "github";
   inputs."crc32".inputs.nixpkgs.follows = "nixpkgs";
   inputs."crc32".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -33,10 +33,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-packets-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-packets-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

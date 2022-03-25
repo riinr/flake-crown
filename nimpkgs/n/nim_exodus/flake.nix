@@ -7,13 +7,13 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nim_exodus-master".dir   = "master";
-  inputs."nim_exodus-master".owner = "nim-nix-pkgs";
-  inputs."nim_exodus-master".ref   = "master";
-  inputs."nim_exodus-master".repo  = "nim_exodus";
-  inputs."nim_exodus-master".type  = "github";
-  inputs."nim_exodus-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."nim_exodus-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."exodus-master".dir   = "master";
+  inputs."exodus-master".owner = "nim-nix-pkgs";
+  inputs."exodus-master".ref   = "master";
+  inputs."exodus-master".repo  = "exodus";
+  inputs."exodus-master".type  = "github";
+  inputs."exodus-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."exodus-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

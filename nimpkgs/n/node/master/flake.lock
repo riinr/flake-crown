@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "httpkit": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-httpkit-master": "src-httpkit-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648163170,
+        "narHash": "sha256-AP9pqAWUPFgjvzUcLL6TQj1Lw3JfC++5Yf+0Kn+MB+o=",
+        "owner": "nim-nix-pkgs",
+        "repo": "httpkit",
+        "rev": "4b5d9aa9af47758d24940e024b658eba81dfbd45",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "httpkit",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "httpkit": "httpkit",
+        "nixpkgs": "nixpkgs",
+        "src-node-master": "src-node-master"
+      }
+    },
+    "src-httpkit-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1506408014,
+        "narHash": "sha256-clm5q0dnc9eqJPlVGYlD4t7a72Rkgwdrg6BgXypcCRA=",
+        "owner": "tulayang",
+        "repo": "httpkit",
+        "rev": "8e91b610fa93293df26db842c4099836ebb8c007",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tulayang",
+        "ref": "refs/heads/master",
+        "repo": "httpkit",
+        "type": "github"
+      }
+    },
+    "src-node-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1506408351,
+        "narHash": "sha256-H056s6KsQjIHJVhjFBeKyaD9chYbFLfKt01Ktzle788=",
+        "owner": "tulayang",
+        "repo": "nimnode",
+        "rev": "60eb5b694ef82c250a5e8cddfd7a94b2583eed28",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tulayang",
+        "ref": "refs/heads/master",
+        "repo": "nimnode",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

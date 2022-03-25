@@ -39,21 +39,21 @@
   inputs."neoid-0_3_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neoid-0_3_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."neoid-v0_1_0".dir   = "v0_1_0";
-  inputs."neoid-v0_1_0".owner = "nim-nix-pkgs";
-  inputs."neoid-v0_1_0".ref   = "master";
-  inputs."neoid-v0_1_0".repo  = "neoid";
-  inputs."neoid-v0_1_0".type  = "github";
-  inputs."neoid-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."neoid-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nanoid-v0_1_0".dir   = "v0_1_0";
+  inputs."nanoid-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."nanoid-v0_1_0".ref   = "master";
+  inputs."nanoid-v0_1_0".repo  = "nanoid";
+  inputs."nanoid-v0_1_0".type  = "github";
+  inputs."nanoid-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nanoid-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."neoid-v0_2_0".dir   = "v0_2_0";
-  inputs."neoid-v0_2_0".owner = "nim-nix-pkgs";
-  inputs."neoid-v0_2_0".ref   = "master";
-  inputs."neoid-v0_2_0".repo  = "neoid";
-  inputs."neoid-v0_2_0".type  = "github";
-  inputs."neoid-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."neoid-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nanoid-v0_2_0".dir   = "v0_2_0";
+  inputs."nanoid-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."nanoid-v0_2_0".ref   = "master";
+  inputs."nanoid-v0_2_0".repo  = "nanoid";
+  inputs."nanoid-v0_2_0".type  = "github";
+  inputs."nanoid-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nanoid-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

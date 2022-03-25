@@ -16,7 +16,7 @@
   inputs."mutableseqs".owner = "nim-nix-pkgs";
   inputs."mutableseqs".ref   = "master";
   inputs."mutableseqs".repo  = "mutableseqs";
-  inputs."mutableseqs".dir   = "";
+  inputs."mutableseqs".dir   = "master";
   inputs."mutableseqs".type  = "github";
   inputs."mutableseqs".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mutableseqs".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-porter-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-porter-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

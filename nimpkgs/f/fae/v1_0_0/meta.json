@@ -1,8 +1,41 @@
 {
+  "name": "fae",
+  "version": "1.0.0",
+  "author": "Fabio Cevasco",
   "desc": "Find and Edit Utility",
   "license": "MIT",
-  "name": "fae",
-  "ref": "refs/tags/v1.0.0",
-  "url": "https://github.com/h3rald/fae",
-  "version": "v1_0_0"
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [],
+  "installFiles": [],
+  "installExt": [
+    "nim",
+    "c",
+    "h"
+  ],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 1.4.0",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.4.0"
+      }
+    },
+    {
+      "name": "nifty",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
+    }
+  ],
+  "bin": [
+    "fae"
+  ],
+  "binDir": "",
+  "srcDir": "src",
+  "backend": "c",
+  "ref": "refs/tags/v1.0.0"
 }

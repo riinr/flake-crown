@@ -1,8 +1,46 @@
 {
+  "name": "hmisc",
+  "version": "0.8.4",
+  "author": "haxscramper",
   "desc": "Collection of helper utilities",
   "license": "Apache-2.0",
-  "name": "hmisc",
-  "ref": "refs/tags/v0.8.4",
-  "url": "https://github.com/haxscramper/hmisc",
-  "version": "v0_8_4"
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [],
+  "installFiles": [],
+  "installExt": [
+    "nim"
+  ],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 1.4.0",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.4.0"
+      }
+    },
+    {
+      "name": "sorta",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
+    },
+    {
+      "name": "cligen",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
+    }
+  ],
+  "bin": [
+    "hmisc-docgen"
+  ],
+  "binDir": "bin",
+  "srcDir": "src",
+  "backend": "c",
+  "ref": "refs/tags/v0.8.4"
 }

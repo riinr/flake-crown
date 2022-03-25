@@ -1,5 +1,5 @@
 {
-  description = ''Nim bindings for GLFW library.'';
+  description = ''Nimrod bindings for GLFW3 library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -7,20 +7,23 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-nimrod-glfw-master.flake = false;
-  inputs.src-nimrod-glfw-master.ref   = "refs/heads/master";
-  inputs.src-nimrod-glfw-master.owner = "rafaelvasco";
-  inputs.src-nimrod-glfw-master.repo  = "nimrod-glfw";
-  inputs.src-nimrod-glfw-master.type  = "github";
+  inputs.src-glfw-master.flake = false;
+  inputs.src-glfw-master.ref   = "refs/heads/master";
+  inputs.src-glfw-master.owner = "rafaelvasco";
+  inputs.src-glfw-master.repo  = "nimrod-glfw";
+  inputs.src-glfw-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-nimrod-glfw-master"];
-  in lib.mkRefOutput {
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-glfw-master"];
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
-    src  = deps."src-nimrod-glfw-master";
+    src  = deps."src-glfw-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

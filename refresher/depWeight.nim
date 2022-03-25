@@ -1,7 +1,18 @@
 #!/usr/bin/env nimcr
 #nimcr-args c
 
-import std/[json, strformat, strutils, tables, hashes, os, osproc, sequtils, sets]
+import std/[
+  hashes,
+  json,
+  os,
+  osproc,
+  posix,
+  sequtils,
+  sets,
+  strformat,
+  strutils,
+  tables,
+]
 
 type
   Package = string
@@ -33,7 +44,7 @@ proc newLinks(paths: Paths): Links =
         .mapIt(it["name"].getStr.toLower)
         .filterIt(it notin ["nim", "nimrod"] and not it.startsWith "https:")
         .toHashSet
-    paths[package] = path
+    paths[package] = $path.dirname.dirname
     result.link package, dependencies
 
 proc mass(weight: Weights, dependencies: Dependencies, links: Links): Natural

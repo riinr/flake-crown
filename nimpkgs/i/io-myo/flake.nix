@@ -7,13 +7,13 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."io-myo-master".dir   = "master";
-  inputs."io-myo-master".owner = "nim-nix-pkgs";
-  inputs."io-myo-master".ref   = "master";
-  inputs."io-myo-master".repo  = "io-myo";
-  inputs."io-myo-master".type  = "github";
-  inputs."io-myo-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."io-myo-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."myo-master".dir   = "master";
+  inputs."myo-master".owner = "nim-nix-pkgs";
+  inputs."myo-master".ref   = "master";
+  inputs."myo-master".repo  = "myo";
+  inputs."myo-master".type  = "github";
+  inputs."myo-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."myo-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

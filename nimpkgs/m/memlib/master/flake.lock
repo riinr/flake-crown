@@ -1,0 +1,152 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "minhook": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-minhook-main": "src-minhook-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1648163284,
+        "narHash": "sha256-l7gN9K9tB9GgNSg0mwnhqQbWMZ9nA8WNj64zfQUU6q0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "minhook",
+        "rev": "a9609bf0bb7f99e2e1982388e06ac42cca2ce86b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "minhook",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "minhook": "minhook",
+        "nixpkgs": "nixpkgs",
+        "src-memlib-master": "src-memlib-master",
+        "winim": "winim"
+      }
+    },
+    "src-memlib-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1638821902,
+        "narHash": "sha256-CFmML1DsJJovjKmHW548vpW4dc4Uvmysz2/PsZa0pQg=",
+        "owner": "khchen",
+        "repo": "memlib",
+        "rev": "42986fbf2db066710145af31347f9ff88576f57b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "khchen",
+        "ref": "refs/heads/master",
+        "repo": "memlib",
+        "type": "github"
+      }
+    },
+    "src-minhook-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1605323633,
+        "narHash": "sha256-73VJjZvzI9qfFnuxUwVJln/NZHQjHxy4+CKDmV8pEkE=",
+        "owner": "khchen",
+        "repo": "minhook",
+        "rev": "7c0cfdac09e6b02114741318fe3e3284fc1ac334",
+        "type": "github"
+      },
+      "original": {
+        "owner": "khchen",
+        "ref": "refs/heads/main",
+        "repo": "minhook",
+        "type": "github"
+      }
+    },
+    "src-winim-3_8_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1640222486,
+        "narHash": "sha256-lXlcMwGdN2BoDgHuc+PwWtDYZHkU5rtFkCIVtfIA1W0=",
+        "owner": "khchen",
+        "repo": "winim",
+        "rev": "f658fc523a7c8960b2f808d774b0f77cecec86db",
+        "type": "github"
+      },
+      "original": {
+        "owner": "khchen",
+        "ref": "refs/tags/3.8.0",
+        "repo": "winim",
+        "type": "github"
+      }
+    },
+    "winim": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-winim-3_8_0": "src-winim-3_8_0"
+      },
+      "locked": {
+        "dir": "3_8_0",
+        "lastModified": 1648163757,
+        "narHash": "sha256-sdvvSK80etiZ6PaRaiMMKaqBu1EVs2/FIc3UVvEQMFc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "winim",
+        "rev": "ce3ee1db8ec642f7e294dc18d53e76cb74a6386d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "3_8_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "winim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

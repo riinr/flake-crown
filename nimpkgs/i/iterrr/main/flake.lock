@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "macroplus": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-macroplus-0_2_0": "src-macroplus-0_2_0"
+      },
+      "locked": {
+        "dir": "0_2_0",
+        "lastModified": 1648163263,
+        "narHash": "sha256-pdYqabKQ3yiOYxEP+jXgdAAXcQBR7Cab5nJegh5iSWw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "macroplus",
+        "rev": "1fba6680b3714281fb22fff643b56bef180b8b1a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_2_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "macroplus",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "macroplus": "macroplus",
+        "nixpkgs": "nixpkgs",
+        "src-iterrr-main": "src-iterrr-main"
+      }
+    },
+    "src-iterrr-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1648139872,
+        "narHash": "sha256-mwzUbCIjVoLLPQ/M/40Y7hoJHMrDRKNHfmWoJoG+aME=",
+        "owner": "hamidb80",
+        "repo": "iterrr",
+        "rev": "a5d2b7ccdaf022239bba8f33f16d8fafa6a2519f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hamidb80",
+        "ref": "refs/heads/main",
+        "repo": "iterrr",
+        "type": "github"
+      }
+    },
+    "src-macroplus-0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1648020917,
+        "narHash": "sha256-QGLc1iyYCEtq78vQjin5+96dnEsn6QZjhRC1tDALUpU=",
+        "owner": "hamidb80",
+        "repo": "macroplus",
+        "rev": "b28d5c2c1a2e874e26c0cccda539914afa59007a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hamidb80",
+        "ref": "refs/tags/0.2.0",
+        "repo": "macroplus",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -16,7 +16,7 @@
   inputs."quickjwt".owner = "nim-nix-pkgs";
   inputs."quickjwt".ref   = "master";
   inputs."quickjwt".repo  = "quickjwt";
-  inputs."quickjwt".dir   = "0_2_1";
+  inputs."quickjwt".dir   = "v0_2_1";
   inputs."quickjwt".type  = "github";
   inputs."quickjwt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."quickjwt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-googleapi-0_1_0"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-googleapi-0_1_0";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

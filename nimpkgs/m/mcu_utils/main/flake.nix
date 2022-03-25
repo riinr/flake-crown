@@ -16,7 +16,7 @@
   inputs."threading".owner = "nim-nix-pkgs";
   inputs."threading".ref   = "master";
   inputs."threading".repo  = "threading";
-  inputs."threading".dir   = "";
+  inputs."threading".dir   = "master";
   inputs."threading".type  = "github";
   inputs."threading".inputs.nixpkgs.follows = "nixpkgs";
   inputs."threading".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-mcu_utils-main"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-mcu_utils-main";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

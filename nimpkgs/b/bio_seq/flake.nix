@@ -7,21 +7,21 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."bio_seq-main".dir   = "main";
-  inputs."bio_seq-main".owner = "nim-nix-pkgs";
-  inputs."bio_seq-main".ref   = "master";
-  inputs."bio_seq-main".repo  = "bio_seq";
-  inputs."bio_seq-main".type  = "github";
-  inputs."bio_seq-main".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."bio_seq-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."bioseq-main".dir   = "main";
+  inputs."bioseq-main".owner = "nim-nix-pkgs";
+  inputs."bioseq-main".ref   = "master";
+  inputs."bioseq-main".repo  = "bioseq";
+  inputs."bioseq-main".type  = "github";
+  inputs."bioseq-main".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."bioseq-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."bio_seq-v_0_0_2".dir   = "v_0_0_2";
-  inputs."bio_seq-v_0_0_2".owner = "nim-nix-pkgs";
-  inputs."bio_seq-v_0_0_2".ref   = "master";
-  inputs."bio_seq-v_0_0_2".repo  = "bio_seq";
-  inputs."bio_seq-v_0_0_2".type  = "github";
-  inputs."bio_seq-v_0_0_2".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."bio_seq-v_0_0_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."bioseq-v_0_0_2".dir   = "v_0_0_2";
+  inputs."bioseq-v_0_0_2".owner = "nim-nix-pkgs";
+  inputs."bioseq-v_0_0_2".ref   = "master";
+  inputs."bioseq-v_0_0_2".repo  = "bioseq";
+  inputs."bioseq-v_0_0_2".type  = "github";
+  inputs."bioseq-v_0_0_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."bioseq-v_0_0_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."bio_seq-v_0_0_5".dir   = "v_0_0_5";
   inputs."bio_seq-v_0_0_5".owner = "nim-nix-pkgs";
@@ -39,13 +39,13 @@
   inputs."bio_seq-v_0_0_7".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bio_seq-v_0_0_7".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."bio_seq-v0_0_1".dir   = "v0_0_1";
-  inputs."bio_seq-v0_0_1".owner = "nim-nix-pkgs";
-  inputs."bio_seq-v0_0_1".ref   = "master";
-  inputs."bio_seq-v0_0_1".repo  = "bio_seq";
-  inputs."bio_seq-v0_0_1".type  = "github";
-  inputs."bio_seq-v0_0_1".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."bio_seq-v0_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nim_seq-v0_0_1".dir   = "v0_0_1";
+  inputs."nim_seq-v0_0_1".owner = "nim-nix-pkgs";
+  inputs."nim_seq-v0_0_1".ref   = "master";
+  inputs."nim_seq-v0_0_1".repo  = "nim_seq";
+  inputs."nim_seq-v0_0_1".type  = "github";
+  inputs."nim_seq-v0_0_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nim_seq-v0_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."bio_seq-v0_0_3".dir   = "v0_0_3";
   inputs."bio_seq-v0_0_3".owner = "nim-nix-pkgs";

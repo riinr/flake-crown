@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "ptr_math": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ptr_math-v0_3_0": "src-ptr_math-v0_3_0"
+      },
+      "locked": {
+        "dir": "v0_3_0",
+        "lastModified": 1648163501,
+        "narHash": "sha256-xDrM6KLjQDel2+L3YfcNaVPmmr8dG7KjEAqBSlQX+pM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ptr_math",
+        "rev": "8e9da23d7e57512aa83b028fcf457b83726dd451",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_3_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ptr_math",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "ptr_math": "ptr_math",
+        "src-asyncredis-v0_8": "src-asyncredis-v0_8"
+      }
+    },
+    "src-asyncredis-v0_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1639350906,
+        "narHash": "sha256-8TMNw74NOghM5Ad3E8VwJePQf79TOpEDQPZuJ54Y4GU=",
+        "owner": "Q-Master",
+        "repo": "redis.nim",
+        "rev": "27e0413486bd9b2eaefa7071143ea883208fc315",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Q-Master",
+        "ref": "refs/tags/v0.8",
+        "repo": "redis.nim",
+        "type": "github"
+      }
+    },
+    "src-ptr_math-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1623264503,
+        "narHash": "sha256-M+QEBwPtBMFkg1igbPeoE6B1Zi3A0DscCdLxy5eHwME=",
+        "owner": "kaushalmodi",
+        "repo": "ptr_math",
+        "rev": "fb1b0d5f484b80ec956d40d543ec836da4cfbc3b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kaushalmodi",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "ptr_math",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

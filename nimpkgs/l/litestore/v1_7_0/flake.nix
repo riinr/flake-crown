@@ -1,5 +1,5 @@
 {
-  description = ''A lightweight, self-contained, RESTful, searchable, multi-format NoSQL document store'';
+  description = ''Self-contained, lightweight, RESTful document store.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -13,14 +13,25 @@
   inputs.src-litestore-v1_7_0.repo  = "litestore";
   inputs.src-litestore-v1_7_0.type  = "github";
   
+  inputs."jwt".owner = "nim-nix-pkgs";
+  inputs."jwt".ref   = "master";
+  inputs."jwt".repo  = "jwt";
+  inputs."jwt".dir   = "master";
+  inputs."jwt".type  = "github";
+  inputs."jwt".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jwt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-litestore-v1_7_0"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-litestore-v1_7_0";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

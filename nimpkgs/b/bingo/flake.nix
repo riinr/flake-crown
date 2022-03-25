@@ -15,21 +15,21 @@
   inputs."bingo-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bingo-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."bingo-v0_0_1".dir   = "v0_0_1";
-  inputs."bingo-v0_0_1".owner = "nim-nix-pkgs";
-  inputs."bingo-v0_0_1".ref   = "master";
-  inputs."bingo-v0_0_1".repo  = "bingo";
-  inputs."bingo-v0_0_1".type  = "github";
-  inputs."bingo-v0_0_1".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."bingo-v0_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."bingod-v0_0_1".dir   = "v0_0_1";
+  inputs."bingod-v0_0_1".owner = "nim-nix-pkgs";
+  inputs."bingod-v0_0_1".ref   = "master";
+  inputs."bingod-v0_0_1".repo  = "bingod";
+  inputs."bingod-v0_0_1".type  = "github";
+  inputs."bingod-v0_0_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."bingod-v0_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."bingo-v0_1_0".dir   = "v0_1_0";
-  inputs."bingo-v0_1_0".owner = "nim-nix-pkgs";
-  inputs."bingo-v0_1_0".ref   = "master";
-  inputs."bingo-v0_1_0".repo  = "bingo";
-  inputs."bingo-v0_1_0".type  = "github";
-  inputs."bingo-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."bingo-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."bingod-v0_1_0".dir   = "v0_1_0";
+  inputs."bingod-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."bingod-v0_1_0".ref   = "master";
+  inputs."bingod-v0_1_0".repo  = "bingod";
+  inputs."bingod-v0_1_0".type  = "github";
+  inputs."bingod-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."bingod-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."bingo-v0_2_0".dir   = "v0_2_0";
   inputs."bingo-v0_2_0".owner = "nim-nix-pkgs";

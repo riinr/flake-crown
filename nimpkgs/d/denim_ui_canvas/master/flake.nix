@@ -16,7 +16,7 @@
   inputs."denim_ui".owner = "nim-nix-pkgs";
   inputs."denim_ui".ref   = "master";
   inputs."denim_ui".repo  = "denim_ui";
-  inputs."denim_ui".dir   = "";
+  inputs."denim_ui".dir   = "master";
   inputs."denim_ui".type  = "github";
   inputs."denim_ui".inputs.nixpkgs.follows = "nixpkgs";
   inputs."denim_ui".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-denim_ui_canvas-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-denim_ui_canvas-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

@@ -79,21 +79,21 @@
   inputs."nimble-v0_13_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimble-v0_13_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimble-v0_2".dir   = "v0_2";
-  inputs."nimble-v0_2".owner = "nim-nix-pkgs";
-  inputs."nimble-v0_2".ref   = "master";
-  inputs."nimble-v0_2".repo  = "nimble";
-  inputs."nimble-v0_2".type  = "github";
-  inputs."nimble-v0_2".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."nimble-v0_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."babel-v0_2".dir   = "v0_2";
+  inputs."babel-v0_2".owner = "nim-nix-pkgs";
+  inputs."babel-v0_2".ref   = "master";
+  inputs."babel-v0_2".repo  = "babel";
+  inputs."babel-v0_2".type  = "github";
+  inputs."babel-v0_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."babel-v0_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimble-v0_4".dir   = "v0_4";
-  inputs."nimble-v0_4".owner = "nim-nix-pkgs";
-  inputs."nimble-v0_4".ref   = "master";
-  inputs."nimble-v0_4".repo  = "nimble";
-  inputs."nimble-v0_4".type  = "github";
-  inputs."nimble-v0_4".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."nimble-v0_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."babel-v0_4".dir   = "v0_4";
+  inputs."babel-v0_4".owner = "nim-nix-pkgs";
+  inputs."babel-v0_4".ref   = "master";
+  inputs."babel-v0_4".repo  = "babel";
+  inputs."babel-v0_4".type  = "github";
+  inputs."babel-v0_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."babel-v0_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."nimble-v0_6".dir   = "v0_6";
   inputs."nimble-v0_6".owner = "nim-nix-pkgs";

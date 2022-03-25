@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "ajax": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ajax-master": "src-ajax-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648162890,
+        "narHash": "sha256-68fB2YhjDaRyZF2+JtxjoEy3VrkfTd5yXO3ycO1uNfg=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ajax",
+        "rev": "58f8767d63105c9ddae5cb2dbacd596e84e23aab",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ajax",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "ajax": "ajax",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-ytextractor-master": "src-ytextractor-master"
+      }
+    },
+    "src-ajax-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1635460067,
+        "narHash": "sha256-gR0u8sMdbx2nz/Ez6uAFo+u72vT8CrBagB8l90+sO0I=",
+        "owner": "stisa",
+        "repo": "ajax",
+        "rev": "f06cded6d91318ea007e8972665a2d837b4bf136",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/heads/master",
+        "repo": "ajax",
+        "type": "github"
+      }
+    },
+    "src-ytextractor-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1631319368,
+        "narHash": "sha256-csTUQSDNLg4US2aYAoLPDmd71td42qHfrpTh+afgahc=",
+        "owner": "thisago",
+        "repo": "ytextractor",
+        "rev": "677fba013d298476e3da2c9bdd185fdb398970e2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thisago",
+        "ref": "refs/heads/master",
+        "repo": "ytextractor",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

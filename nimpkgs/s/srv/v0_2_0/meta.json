@@ -1,8 +1,34 @@
 {
-  "desc": "A tiny static file web server.",
-  "license": "MIT",
   "name": "srv",
-  "ref": "refs/tags/v0.2.0",
-  "url": "https://github.com/me7/srv",
-  "version": "v0_2_0"
+  "version": "0.2.0",
+  "author": "Gampol T. (fork from Fabio Cevasco)",
+  "desc": "Static file web server.",
+  "license": "MIT",
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [],
+  "installFiles": [
+    "srv.nim"
+  ],
+  "installExt": [
+    "nim"
+  ],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 0.20.0",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.20.0"
+      }
+    }
+  ],
+  "bin": [
+    "srv"
+  ],
+  "binDir": "",
+  "srcDir": "",
+  "backend": "c",
+  "ref": "refs/tags/v0.2.0"
 }

@@ -352,12 +352,45 @@
       "ref": "refs/tags/0.14.0"
     },
     {
-      "desc": "Mustache templating for Nim.",
-      "license": "MIT",
       "name": "moustachu",
-      "ref": "refs/tags/0.2.0",
-      "url": "https://github.com/fenekku/moustachu.git",
-      "version": "0_2_0"
+      "version": "0.2.0",
+      "author": "Guillaume Viger",
+      "desc": "Mustache templating for Nimrod",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "moustachu.nim",
+        "moustachu.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nimrod",
+          "str": ">= 0.9.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.4"
+          }
+        },
+        {
+          "name": "commandeer",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        }
+      ],
+      "bin": [
+        "moustachu"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.2.0"
     },
     {
       "name": "moustachu",

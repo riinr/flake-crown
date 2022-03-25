@@ -24,7 +24,7 @@
   inputs."clapfn".owner = "nim-nix-pkgs";
   inputs."clapfn".ref   = "master";
   inputs."clapfn".repo  = "clapfn";
-  inputs."clapfn".dir   = "";
+  inputs."clapfn".dir   = "master";
   inputs."clapfn".type  = "github";
   inputs."clapfn".inputs.nixpkgs.follows = "nixpkgs";
   inputs."clapfn".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -41,10 +41,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-astdot-main"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-astdot-main";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

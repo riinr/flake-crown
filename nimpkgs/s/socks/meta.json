@@ -12,12 +12,34 @@
   ],
   "heads": [
     {
-      "desc": "Socks5 client and server library",
+      "name": "socks5",
+      "version": "0.1.0",
+      "author": "Federico Ceratto",
+      "desc": "SOCKS 5 library",
       "license": "MPLv2",
-      "name": "socks",
-      "ref": "refs/heads/master",
-      "url": "https://github.com/FedericoCeratto/nim-socks5",
-      "version": "master"
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "socks5.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.16.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.16.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/master"
     }
   ]
 }

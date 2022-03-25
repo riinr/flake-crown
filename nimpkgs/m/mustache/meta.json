@@ -36,12 +36,36 @@
       "ref": "refs/tags/v0.1.0"
     },
     {
+      "name": "mustache",
+      "version": "0.2.0",
+      "author": "soasme",
       "desc": "Mustache in Nim",
       "license": "MIT",
-      "name": "mustache",
-      "ref": "refs/tags/v0.2.0",
-      "url": "https://github.com/soasme/nim-mustache",
-      "version": "v0_2_0"
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        }
+      ],
+      "bin": [
+        "mustache"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.2.0"
     },
     {
       "name": "mustache",

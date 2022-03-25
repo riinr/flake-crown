@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-ormin-master": "src-ormin-master",
+        "websocket": "websocket"
+      }
+    },
+    "src-ormin-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1639472210,
+        "narHash": "sha256-dQY6tBRa7jKXoC85iIIf9q4IWVc+kpz41S8gn6uFcno=",
+        "owner": "Araq",
+        "repo": "ormin",
+        "rev": "1ab73b682aed4a73228832d1c17ec064c5c829b0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/heads/master",
+        "repo": "ormin",
+        "type": "github"
+      }
+    },
+    "src-websocket-0_5_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1588439356,
+        "narHash": "sha256-8m/ximOQT04Qs2MvOjlh5GTbmbmo4yj6XpsH/j2O5HU=",
+        "owner": "niv",
+        "repo": "websocket.nim",
+        "rev": "28cc44c8defc0b248b3abbc8205759b69a98f7f6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "niv",
+        "ref": "refs/tags/0.5.0",
+        "repo": "websocket.nim",
+        "type": "github"
+      }
+    },
+    "websocket": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-websocket-0_5_0": "src-websocket-0_5_0"
+      },
+      "locked": {
+        "dir": "0_5_0",
+        "lastModified": 1648163752,
+        "narHash": "sha256-6gnhzjeDDy5cMb6Mss1PSuhol5Xr7zj1jH5TH/tpiKM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "websocket",
+        "rev": "226a389138079748e4503adc5386383caf6f75b8",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_5_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "websocket",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

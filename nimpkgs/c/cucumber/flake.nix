@@ -31,13 +31,13 @@
   inputs."cucumber-v0_0_11".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cucumber-v0_0_11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."cucumber-v0_0_2".dir   = "v0_0_2";
-  inputs."cucumber-v0_0_2".owner = "nim-nix-pkgs";
-  inputs."cucumber-v0_0_2".ref   = "master";
-  inputs."cucumber-v0_0_2".repo  = "cucumber";
-  inputs."cucumber-v0_0_2".type  = "github";
-  inputs."cucumber-v0_0_2".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."cucumber-v0_0_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."cucumber_nim-v0_0_2".dir   = "v0_0_2";
+  inputs."cucumber_nim-v0_0_2".owner = "nim-nix-pkgs";
+  inputs."cucumber_nim-v0_0_2".ref   = "master";
+  inputs."cucumber_nim-v0_0_2".repo  = "cucumber_nim";
+  inputs."cucumber_nim-v0_0_2".type  = "github";
+  inputs."cucumber_nim-v0_0_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."cucumber_nim-v0_0_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."cucumber-v0_0_3".dir   = "v0_0_3";
   inputs."cucumber-v0_0_3".owner = "nim-nix-pkgs";

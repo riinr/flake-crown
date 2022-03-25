@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "quickjwt": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-quickjwt-v0_2_1": "src-quickjwt-v0_2_1"
+      },
+      "locked": {
+        "dir": "v0_2_1",
+        "lastModified": 1648163517,
+        "narHash": "sha256-xoUaLmYygEbST+y360aAiElcx6qGSBHnQFjolOSS5Ms=",
+        "owner": "nim-nix-pkgs",
+        "repo": "quickjwt",
+        "rev": "ad91375e7713f6c0b9b7ae29f49f9e54d7625a34",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_2_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "quickjwt",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "quickjwt": "quickjwt",
+        "src-googleapi-v0_1_0": "src-googleapi-v0_1_0"
+      }
+    },
+    "src-googleapi-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1579208122,
+        "narHash": "sha256-+A60XI9XLS6hSvESVsFjjTrVog5mftR25U6ad5VaxOw=",
+        "owner": "treeform",
+        "repo": "googleapi",
+        "rev": "e2153b7ffe9c916656bf78ba05fa9e683265710e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "googleapi",
+        "type": "github"
+      }
+    },
+    "src-quickjwt-v0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1579208162,
+        "narHash": "sha256-jEcVmKYKH5XBehTjSsr0+gL099CFSLwUvBmXHMRLAxQ=",
+        "owner": "treeform",
+        "repo": "quickjwt",
+        "rev": "d3989dce8b025bd7c813190b7079f6531b9f0f27",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/v0.2.1",
+        "repo": "quickjwt",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

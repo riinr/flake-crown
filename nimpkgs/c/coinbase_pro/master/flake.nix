@@ -24,7 +24,7 @@
   inputs."decimal".owner = "nim-nix-pkgs";
   inputs."decimal".ref   = "master";
   inputs."decimal".repo  = "decimal";
-  inputs."decimal".dir   = "";
+  inputs."decimal".dir   = "master";
   inputs."decimal".type  = "github";
   inputs."decimal".inputs.nixpkgs.follows = "nixpkgs";
   inputs."decimal".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -41,10 +41,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-coinbase_pro-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-coinbase_pro-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

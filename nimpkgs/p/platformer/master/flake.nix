@@ -24,7 +24,7 @@
   inputs."strfmt".owner = "nim-nix-pkgs";
   inputs."strfmt".ref   = "master";
   inputs."strfmt".repo  = "strfmt";
-  inputs."strfmt".dir   = "";
+  inputs."strfmt".dir   = "master";
   inputs."strfmt".type  = "github";
   inputs."strfmt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."strfmt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -32,7 +32,7 @@
   inputs."basic2d".owner = "nim-nix-pkgs";
   inputs."basic2d".ref   = "master";
   inputs."basic2d".repo  = "basic2d";
-  inputs."basic2d".dir   = "";
+  inputs."basic2d".dir   = "master";
   inputs."basic2d".type  = "github";
   inputs."basic2d".inputs.nixpkgs.follows = "nixpkgs";
   inputs."basic2d".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -41,10 +41,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-platformer-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-platformer-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

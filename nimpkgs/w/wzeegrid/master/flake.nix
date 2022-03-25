@@ -16,7 +16,7 @@
   inputs."wnim".owner = "nim-nix-pkgs";
   inputs."wnim".ref   = "master";
   inputs."wnim".repo  = "wnim";
-  inputs."wnim".dir   = "";
+  inputs."wnim".dir   = "master";
   inputs."wnim".type  = "github";
   inputs."wnim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."wnim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-wZeeGrid-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-wZeeGrid-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

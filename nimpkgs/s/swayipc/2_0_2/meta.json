@@ -1,8 +1,46 @@
 {
+  "name": "i3ipc",
+  "version": "2.0.2",
+  "author": "disruptek",
   "desc": "IPC interface to sway (or i3) compositors",
   "license": "MIT",
-  "name": "swayipc",
-  "ref": "refs/tags/2.0.2",
-  "url": "https://github.com/disruptek/swayipc",
-  "version": "2_0_2"
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [],
+  "installFiles": [
+    "i3ipc.nim"
+  ],
+  "installExt": [],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 0.20.0",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.20.0"
+      }
+    },
+    {
+      "name": "nesm",
+      "str": ">= 0.4.4",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.4.4"
+      }
+    },
+    {
+      "name": "cligen",
+      "str": ">= 0.9.38",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.9.38"
+      }
+    }
+  ],
+  "bin": [],
+  "binDir": "",
+  "srcDir": "",
+  "backend": "c",
+  "ref": "refs/tags/2.0.2"
 }

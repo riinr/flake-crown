@@ -24,7 +24,7 @@
   inputs."imlib2".owner = "nim-nix-pkgs";
   inputs."imlib2".ref   = "master";
   inputs."imlib2".repo  = "imlib2";
-  inputs."imlib2".dir   = "";
+  inputs."imlib2".dir   = "master";
   inputs."imlib2".type  = "github";
   inputs."imlib2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."imlib2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -40,7 +40,7 @@
   inputs."kiwi".owner = "nim-nix-pkgs";
   inputs."kiwi".ref   = "master";
   inputs."kiwi".repo  = "kiwi";
-  inputs."kiwi".dir   = "";
+  inputs."kiwi".dir   = "master";
   inputs."kiwi".type  = "github";
   inputs."kiwi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."kiwi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -49,10 +49,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-notifishower-v0_3_0"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-notifishower-v0_3_0";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

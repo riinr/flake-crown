@@ -1,5 +1,5 @@
 {
-  description = ''Discord library for Nim'';
+  description = ''Discord library for nim'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -7,20 +7,39 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-discordnim-master.flake = false;
-  inputs.src-discordnim-master.ref   = "refs/heads/master";
-  inputs.src-discordnim-master.owner = "Krognol";
-  inputs.src-discordnim-master.repo  = "discordnim";
-  inputs.src-discordnim-master.type  = "github";
+  inputs.src-discord-master.flake = false;
+  inputs.src-discord-master.ref   = "refs/heads/master";
+  inputs.src-discord-master.owner = "Krognol";
+  inputs.src-discord-master.repo  = "discordnim";
+  inputs.src-discord-master.type  = "github";
+  
+  inputs."zip".owner = "nim-nix-pkgs";
+  inputs."zip".ref   = "master";
+  inputs."zip".repo  = "zip";
+  inputs."zip".dir   = "0_3_1";
+  inputs."zip".type  = "github";
+  inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."websocket".owner = "nim-nix-pkgs";
+  inputs."websocket".ref   = "master";
+  inputs."websocket".repo  = "websocket";
+  inputs."websocket".dir   = "0_5_0";
+  inputs."websocket".type  = "github";
+  inputs."websocket".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."websocket".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-discordnim-master"];
-  in lib.mkRefOutput {
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-discord-master"];
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
-    src  = deps."src-discordnim-master";
+    src  = deps."src-discord-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

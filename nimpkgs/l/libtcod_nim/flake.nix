@@ -7,13 +7,13 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."libtcod_nim-master".dir   = "master";
-  inputs."libtcod_nim-master".owner = "nim-nix-pkgs";
-  inputs."libtcod_nim-master".ref   = "master";
-  inputs."libtcod_nim-master".repo  = "libtcod_nim";
-  inputs."libtcod_nim-master".type  = "github";
-  inputs."libtcod_nim-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."libtcod_nim-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."libtcod-master".dir   = "master";
+  inputs."libtcod-master".owner = "nim-nix-pkgs";
+  inputs."libtcod-master".ref   = "master";
+  inputs."libtcod-master".repo  = "libtcod";
+  inputs."libtcod-master".type  = "github";
+  inputs."libtcod-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."libtcod-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."libtcod_nim-v0_9".dir   = "v0_9";
   inputs."libtcod_nim-v0_9".owner = "nim-nix-pkgs";
@@ -79,13 +79,13 @@
   inputs."libtcod_nim-v1_112_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libtcod_nim-v1_112_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."libtcod_nim-v1_112_1".dir   = "v1_112_1";
-  inputs."libtcod_nim-v1_112_1".owner = "nim-nix-pkgs";
-  inputs."libtcod_nim-v1_112_1".ref   = "master";
-  inputs."libtcod_nim-v1_112_1".repo  = "libtcod_nim";
-  inputs."libtcod_nim-v1_112_1".type  = "github";
-  inputs."libtcod_nim-v1_112_1".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."libtcod_nim-v1_112_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."libtcod-v1_112_1".dir   = "v1_112_1";
+  inputs."libtcod-v1_112_1".owner = "nim-nix-pkgs";
+  inputs."libtcod-v1_112_1".ref   = "master";
+  inputs."libtcod-v1_112_1".repo  = "libtcod";
+  inputs."libtcod-v1_112_1".type  = "github";
+  inputs."libtcod-v1_112_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."libtcod-v1_112_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

@@ -4,7 +4,7 @@
   "method": "git",
   "tags": [
     {
-      "desc": "Command to remove acceptably empty directories.",
+      "description": "Command to remove acceptably empty directories.",
       "license": "MIT",
       "name": "awesome_rmdir",
       "ref": "refs/tags/v0.2.0",
@@ -12,12 +12,50 @@
       "version": "v0_2_0"
     },
     {
+      "name": "awesome_rmdir",
+      "version": "0.2.1",
+      "author": "Grzegorz Adam Hankiewicz",
       "desc": "Command to remove acceptably empty directories.",
       "license": "MIT",
-      "name": "awesome_rmdir",
-      "ref": "refs/tags/v0.2.1",
-      "url": "https://github.com/Araq/awesome_rmdir/",
-      "version": "v0_2_1"
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nakefile.nimrod.cfg",
+        "LICENSE.rst",
+        "README.rst",
+        "awesome_rmdir.nim",
+        "docindex.rst",
+        "docs/CHANGES.rst",
+        "nakefile.nim",
+        "awesome_rmdir.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nake",
+          "str": ">= 1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0"
+          }
+        },
+        {
+          "name": "argument_parser",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "awesome_rmdir"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.2.1"
     }
   ],
   "description": "Command to remove acceptably empty directories.",
@@ -32,20 +70,96 @@
   ],
   "heads": [
     {
+      "name": "awesome_rmdir",
+      "version": "0.3.2",
+      "author": "Grzegorz Adam Hankiewicz",
       "desc": "Command to remove acceptably empty directories.",
       "license": "MIT",
-      "name": "awesome_rmdir",
-      "ref": "refs/heads/develop",
-      "url": "https://github.com/Araq/awesome_rmdir/",
-      "version": "develop"
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nakefile.nimrod.cfg",
+        "LICENSE.rst",
+        "README.rst",
+        "awesome_rmdir.nim",
+        "docindex.rst",
+        "docs/CHANGES.rst",
+        "nakefile.nim",
+        "awesome_rmdir.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nake",
+          "str": ">= 1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0"
+          }
+        },
+        {
+          "name": "argument_parser",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "awesome_rmdir"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/develop"
     },
     {
+      "name": "awesome_rmdir",
+      "version": "0.2.1",
+      "author": "Grzegorz Adam Hankiewicz",
       "desc": "Command to remove acceptably empty directories.",
       "license": "MIT",
-      "name": "awesome_rmdir",
-      "ref": "refs/heads/master",
-      "url": "https://github.com/Araq/awesome_rmdir/",
-      "version": "master"
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nakefile.nimrod.cfg",
+        "LICENSE.rst",
+        "README.rst",
+        "awesome_rmdir.nim",
+        "docindex.rst",
+        "docs/CHANGES.rst",
+        "nakefile.nim",
+        "awesome_rmdir.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nake",
+          "str": ">= 1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0"
+          }
+        },
+        {
+          "name": "argument_parser",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "awesome_rmdir"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/master"
     }
   ]
 }

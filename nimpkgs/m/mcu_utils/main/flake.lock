@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-mcu_utils-main": "src-mcu_utils-main",
+        "threading": "threading"
+      }
+    },
+    "src-mcu_utils-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1647651836,
+        "narHash": "sha256-cxYF8bdbHdfjnDpUw4ThgVmb2pAK6OWApMJ7/EEX0ug=",
+        "owner": "EmbeddedNim",
+        "repo": "mcu_utils",
+        "rev": "640ddeb3ec85fb7d4582b19ba486fd88dee80ff1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "EmbeddedNim",
+        "ref": "refs/heads/main",
+        "repo": "mcu_utils",
+        "type": "github"
+      }
+    },
+    "src-threading-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1643293587,
+        "narHash": "sha256-QyKs6I5vNIV5Y9PI1Tvqkc6rPNHGe2SkNtTn4bTpMFw=",
+        "owner": "nim-lang",
+        "repo": "threading",
+        "rev": "fee7f9dff57cd9c43796b1313cb8791c5a561135",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/heads/master",
+        "repo": "threading",
+        "type": "github"
+      }
+    },
+    "threading": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-threading-master": "src-threading-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648163679,
+        "narHash": "sha256-sx3/35XM6Cxx1S/b5PDOxW4lv4ezzuCPEOg9PE6Ot5o=",
+        "owner": "nim-nix-pkgs",
+        "repo": "threading",
+        "rev": "d1cb7f50095f83412e3f68b702f37fa719334b59",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "threading",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

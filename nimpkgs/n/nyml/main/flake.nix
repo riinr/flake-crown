@@ -16,7 +16,7 @@
   inputs."toktok".owner = "nim-nix-pkgs";
   inputs."toktok".ref   = "master";
   inputs."toktok".repo  = "toktok";
-  inputs."toktok".dir   = "";
+  inputs."toktok".dir   = "main";
   inputs."toktok".type  = "github";
   inputs."toktok".inputs.nixpkgs.follows = "nixpkgs";
   inputs."toktok".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-nyml-main"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-nyml-main";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

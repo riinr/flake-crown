@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "requirementstxt": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-requirementstxt-master": "src-requirementstxt-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648163535,
+        "narHash": "sha256-tHS+0biuJyy6ts3GlohhOD+F6ovO6jYy2Gmn5hN+eOE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "requirementstxt",
+        "rev": "7a8411a570155ea726cb06d9206e1fb28ed5c931",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "requirementstxt",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "requirementstxt": "requirementstxt",
+        "src-plz-master": "src-plz-master"
+      }
+    },
+    "src-plz-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1643233609,
+        "narHash": "sha256-ffJkoZRkADASGbI9ygu6w8kP2HIoahbYg74u0U9kCyk=",
+        "owner": "juancarlospaco",
+        "repo": "nim-pypi",
+        "rev": "795401bdaba1f1d0dc78530ebbfd1988adddf995",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "nim-pypi",
+        "type": "github"
+      }
+    },
+    "src-requirementstxt-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1601846692,
+        "narHash": "sha256-nrOq1RzRksi2IaS+o6mflW10kslfcXkozsQuSeLsr9I=",
+        "owner": "juancarlospaco",
+        "repo": "nim-requirementstxt",
+        "rev": "769a099b3e4e512985413c9e2740c81d480381d7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "nim-requirementstxt",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

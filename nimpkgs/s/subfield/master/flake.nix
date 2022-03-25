@@ -16,7 +16,7 @@
   inputs."einheit".owner = "nim-nix-pkgs";
   inputs."einheit".ref   = "master";
   inputs."einheit".repo  = "einheit";
-  inputs."einheit".dir   = "";
+  inputs."einheit".dir   = "master";
   inputs."einheit".type  = "github";
   inputs."einheit".inputs.nixpkgs.follows = "nixpkgs";
   inputs."einheit".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-subfield-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-subfield-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

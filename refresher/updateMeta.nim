@@ -90,6 +90,10 @@ proc fetchInfo(pkg: JsonNode): auto =
       tmpDir    = fmt"/tmp/nimpkgs/{nameLo}/{gitRef}"
       flakeName = refName(%*{ "ref": gitRef })
       flakeDir  = fmt"../nimpkgs/{nameLo[0]}/{nameLo}/{flakeName}"
+      refV      = gitRef.replace("refs/",  "")
+                        .replace("heads/", "#")
+                        .replace("tags/v", "")
+                        .replace("tags/",  "")
 
     if fileExists fmt"{flakeDir}/meta.json":
       echo fmt"Cache {flakeDir}/meta.json"
@@ -97,17 +101,34 @@ proc fetchInfo(pkg: JsonNode): auto =
 
     for url in urls.deduplicate:
       createDir tmpDir
-      echo fmt"Downloading {flakeDir} from {url}"
+      echo fmt"Downloading {name}@{gitRef} from {url}"
       discard execCmd fmt"cd {tmpDir}; curl -f -s -O {url} || true"
 
-    let (versionInfo, code) = execCmdEx fmt"cd {tmpDir}; nimble dump --json"
+    var (versionInfo, code) = fmt"cd {tmpDir}; nimble dump --json".execCmdEx
+    var firstError = versionInfo
+    if code > 0:
+      echo fmt"Downloading {name}@{refV} with nimble"
+      (versionInfo, code) = fmt"""
+        cd {tmpDir}
+        nimble -y develop {name}@{refV} &> nimble.log \
+          || true
+        nimble dump {name} --json
+      """.execCmdEx
     if code == 0:
       let info = parseJson versionInfo
       info["ref"] = %* gitRef
       return info
-    elif tmpDir.contains "heads":
-      let msg = fmt"NoNimble file {name} {urls} {versionInfo}"
-      discard execCmd fmt"echo {msg.quoteShell} 1>&2"
+    else:
+      echo fmt"""
+Can't parse nimble file {name} from urls:
+- {urls.join("\n- ")}
+
+Direct file download error:
+{firstError}
+
+Nimble package download error:
+{versionInfo}"""
+
     return %* {
       "description"   : pkg["description"],
       "license": pkg["license"],
@@ -130,12 +151,7 @@ proc refsMeta(pkg: JsonNode): auto =
 
     createDir flakeDir
     fmt"{flakeDir}/meta.json".writeFile refInfo.pretty
-    discard execCmd fmt"""
-      cd {flakeDir};
-      git add .
-      git commit -m "chore: re-index {flakeDir}" . &> /dev/null \
-        || true
-    """
+
 
 proc projectMeta(pkg: JsonNode): auto =
   let 
@@ -147,9 +163,11 @@ proc projectMeta(pkg: JsonNode): auto =
   discard execCmd fmt"""
     cd ../nimpkgs/{flakeDir};
     git init &>/dev/null
+    printf "result\n*/result\n" > .gitignore
     git add .
-    git commit -m "chore: re index {nameLo}" . &>/dev/null \
-      || true
+    git status -s --porcelain|wc -l|grep -qE '[1-9]' && \
+      git commit -m "chore: re index {nameLo}" . &>/dev/null \
+        || true
     git remote -v | wc -l | grep -q '0' \
       &&
     gh repo create nim-nix-pkgs/{nameLo}                \

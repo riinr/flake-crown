@@ -7,20 +7,23 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-quickjwt-0_0_1.flake = false;
-  inputs.src-quickjwt-0_0_1.ref   = "refs/tags/0.0.1";
-  inputs.src-quickjwt-0_0_1.owner = "treeform";
-  inputs.src-quickjwt-0_0_1.repo  = "quickjwt";
-  inputs.src-quickjwt-0_0_1.type  = "github";
+  inputs.src-jwt-0_0_1.flake = false;
+  inputs.src-jwt-0_0_1.ref   = "refs/tags/0.0.1";
+  inputs.src-jwt-0_0_1.owner = "treeform";
+  inputs.src-jwt-0_0_1.repo  = "quickjwt";
+  inputs.src-jwt-0_0_1.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-quickjwt-0_0_1"];
-  in lib.mkRefOutput {
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-jwt-0_0_1"];
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
-    src  = deps."src-quickjwt-0_0_1";
+    src  = deps."src-jwt-0_0_1";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

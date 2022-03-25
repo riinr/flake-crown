@@ -1,8 +1,38 @@
 {
-  "desc": "Commandant is a simple to use library for parsing command line arguments. Commandant is ideal for writing terminal applications, with  support for flags, options, subcommands, and custom exit options.",
+  "name": "commandeer",
+  "version": "0.10.2",
+  "author": "Guillaume Viger",
+  "desc": "A small command line parsing DSL",
   "license": "MIT",
-  "name": "commandant",
-  "ref": "refs/tags/0.10.2",
-  "url": "https://github.com/casey-SK/commandant.git",
-  "version": "0_10_2"
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [],
+  "installFiles": [
+    "commandeer.nim",
+    "commandeer.nim"
+  ],
+  "installExt": [],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 0.12.0 & < 0.14",
+      "ver": {
+        "kind": "verIntersect",
+        "verILeft": {
+          "kind": "verEqLater",
+          "ver": "0.12.0"
+        },
+        "verIRight": {
+          "kind": "verEarlier",
+          "ver": "0.14"
+        }
+      }
+    }
+  ],
+  "bin": [],
+  "binDir": "",
+  "srcDir": "",
+  "backend": "c",
+  "ref": "refs/tags/0.10.2"
 }

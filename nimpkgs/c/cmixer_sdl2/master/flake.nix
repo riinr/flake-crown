@@ -16,7 +16,7 @@
   inputs."cmixer".owner = "nim-nix-pkgs";
   inputs."cmixer".ref   = "master";
   inputs."cmixer".repo  = "cmixer";
-  inputs."cmixer".dir   = "";
+  inputs."cmixer".dir   = "master";
   inputs."cmixer".type  = "github";
   inputs."cmixer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cmixer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -33,10 +33,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-cmixer_sdl2-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-cmixer_sdl2-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

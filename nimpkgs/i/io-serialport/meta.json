@@ -12,12 +12,32 @@
   ],
   "heads": [
     {
-      "desc": "Obsolete - please use serialport instead!",
+      "name": "serialport",
+      "version": "1.0",
+      "author": "Gerke Max Preussner <info@nimio.us>",
+      "desc": "Bindings for libserialport, the cross-platform serial communication library.",
       "license": "MIT",
-      "name": "io-serialport",
-      "ref": "refs/heads/master",
-      "url": "https://github.com/nimious/io-serialport.git",
-      "version": "master"
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nimrod",
+          "str": "> 0.12.0",
+          "ver": {
+            "kind": "verLater",
+            "ver": "0.12.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/master"
     }
   ]
 }

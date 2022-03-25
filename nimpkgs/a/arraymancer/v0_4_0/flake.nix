@@ -48,7 +48,7 @@
   inputs."clblast".owner = "nim-nix-pkgs";
   inputs."clblast".ref   = "master";
   inputs."clblast".repo  = "clblast";
-  inputs."clblast".dir   = "";
+  inputs."clblast".dir   = "master";
   inputs."clblast".type  = "github";
   inputs."clblast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."clblast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -57,10 +57,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-arraymancer-v0_4_0"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-arraymancer-v0_4_0";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

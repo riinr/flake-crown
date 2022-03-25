@@ -1,5 +1,5 @@
 {
-  description = ''A simple bitarray library for nim.'';
+  description = ''bitarray'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -7,20 +7,23 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-nimbitarray-master.flake = false;
-  inputs.src-nimbitarray-master.ref   = "refs/heads/master";
-  inputs.src-nimbitarray-master.owner = "YesDrX";
-  inputs.src-nimbitarray-master.repo  = "bitarray";
-  inputs.src-nimbitarray-master.type  = "github";
+  inputs.src-bitarray-master.flake = false;
+  inputs.src-bitarray-master.ref   = "refs/heads/master";
+  inputs.src-bitarray-master.owner = "YesDrX";
+  inputs.src-bitarray-master.repo  = "bitarray";
+  inputs.src-bitarray-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-nimbitarray-master"];
-  in lib.mkRefOutput {
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-bitarray-master"];
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
-    src  = deps."src-nimbitarray-master";
+    src  = deps."src-bitarray-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

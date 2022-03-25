@@ -16,7 +16,7 @@
   inputs."libssh2".owner = "nim-nix-pkgs";
   inputs."libssh2".ref   = "master";
   inputs."libssh2".repo  = "libssh2";
-  inputs."libssh2".dir   = "";
+  inputs."libssh2".dir   = "master";
   inputs."libssh2".type  = "github";
   inputs."libssh2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libssh2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-ssh2-0_1_1"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-ssh2-0_1_1";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

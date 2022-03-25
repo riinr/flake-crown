@@ -16,7 +16,7 @@
   inputs."cpuwhat".owner = "nim-nix-pkgs";
   inputs."cpuwhat".ref   = "master";
   inputs."cpuwhat".repo  = "cpuwhat";
-  inputs."cpuwhat".dir   = "";
+  inputs."cpuwhat".dir   = "master";
   inputs."cpuwhat".type  = "github";
   inputs."cpuwhat".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cpuwhat".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-drng-main"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-drng-main";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

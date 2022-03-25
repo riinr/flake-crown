@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nuuid": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nuuid-master": "src-nuuid-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648163419,
+        "narHash": "sha256-sOddXKDfd61swhl/g99icx2hDWBEsnKgixdqqZbjaCY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nuuid",
+        "rev": "2a33a7d9fcb3b4032ab600b22174a7c9ed6e990d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nuuid",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "nuuid": "nuuid",
+        "src-azure_translate-master": "src-azure_translate-master"
+      }
+    },
+    "src-azure_translate-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1615150699,
+        "narHash": "sha256-OvbaiyavvaoXrLtN5/sZQKSf24+ksHeMqnmCS6H3KvY=",
+        "owner": "williamhatcher",
+        "repo": "azure_translate",
+        "rev": "0bffe47bdc59fc0ea4af8b1116e08c135aef1f1a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "williamhatcher",
+        "ref": "refs/heads/master",
+        "repo": "azure_translate",
+        "type": "github"
+      }
+    },
+    "src-nuuid-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603895899,
+        "narHash": "sha256-P32Wnp9IA5UE9Iev+cEPJyX6salT8xq9Oe3fvPxs9oU=",
+        "owner": "yglukhov",
+        "repo": "nim-only-uuid",
+        "rev": "078f473fc811793119df55b766a3670a62f988c2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "nim-only-uuid",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

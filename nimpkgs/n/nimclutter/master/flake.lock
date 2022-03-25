@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "oldgtk3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-oldgtk3-master": "src-oldgtk3-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648163425,
+        "narHash": "sha256-xI4ZdIH2Ba+rCchGcy+gblyY3VvVAQ8Ueslu0a4wyx8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "oldgtk3",
+        "rev": "af641c47d0f4aa9739f80aeae9261cd57b77e548",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "oldgtk3",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "oldgtk3": "oldgtk3",
+        "src-nimclutter-master": "src-nimclutter-master"
+      }
+    },
+    "src-nimclutter-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1537114980,
+        "narHash": "sha256-LAhikUw0AR/b5r0Nc0sXMAib8stdx/AqsGu/j4Bh9EQ=",
+        "owner": "KeepCoolWithCoolidge",
+        "repo": "nimclutter",
+        "rev": "87af6423eec1d66f253e62e6bb8d29b45fb5752b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "KeepCoolWithCoolidge",
+        "ref": "refs/heads/master",
+        "repo": "nimclutter",
+        "type": "github"
+      }
+    },
+    "src-oldgtk3-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1613382861,
+        "narHash": "sha256-cpIVVXuxNjLVifJm+LvC0Uk8vjNhcAKzAD6+JjF5xPw=",
+        "owner": "stefansalewski",
+        "repo": "oldgtk3",
+        "rev": "4e60fd1c4c08241cc22336362fc4f487c633299c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stefansalewski",
+        "ref": "refs/heads/master",
+        "repo": "oldgtk3",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

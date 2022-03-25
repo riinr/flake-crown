@@ -1,8 +1,32 @@
 {
-  "desc": "Nimble package manager",
+  "name": "babel",
+  "version": "0.4.0",
+  "author": "Dominik Picheta",
+  "desc": "Nimrod package manager.",
   "license": "BSD",
-  "name": "nimble",
-  "ref": "refs/tags/v0.4",
-  "url": "https://github.com/nim-lang/nimble",
-  "version": "v0_4"
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [
+    "nim"
+  ],
+  "installDirs": [],
+  "installFiles": [],
+  "installExt": [],
+  "requires": [
+    {
+      "name": "nimrod",
+      "str": ">= 0.9.3",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.9.3"
+      }
+    }
+  ],
+  "bin": [
+    "babel"
+  ],
+  "binDir": "",
+  "srcDir": "src",
+  "backend": "c",
+  "ref": "refs/tags/v0.4"
 }

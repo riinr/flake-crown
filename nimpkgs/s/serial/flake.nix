@@ -15,13 +15,13 @@
   inputs."serial-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."serial-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."serial-v0_1_0".dir   = "v0_1_0";
-  inputs."serial-v0_1_0".owner = "nim-nix-pkgs";
-  inputs."serial-v0_1_0".ref   = "master";
-  inputs."serial-v0_1_0".repo  = "serial";
-  inputs."serial-v0_1_0".type  = "github";
-  inputs."serial-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."serial-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."libserialport-v0_1_0".dir   = "v0_1_0";
+  inputs."libserialport-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."libserialport-v0_1_0".ref   = "master";
+  inputs."libserialport-v0_1_0".repo  = "libserialport";
+  inputs."libserialport-v0_1_0".type  = "github";
+  inputs."libserialport-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."libserialport-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."serial-v1_0_0".dir   = "v1_0_0";
   inputs."serial-v1_0_0".owner = "nim-nix-pkgs";

@@ -1,0 +1,183 @@
+{
+  "nodes": {
+    "cligen": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "hottie-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "hottie-master",
+          "nixpkgs"
+        ],
+        "src-cligen-v1_5_22": "src-cligen-v1_5_22"
+      },
+      "locked": {
+        "dir": "v1_5_22",
+        "lastModified": 1647934109,
+        "narHash": "sha256-/c54hHw3e3iWBe5kcr00bBUpOdkW1IW3Q1XV7Opvweo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "cligen",
+        "rev": "5d9116bcc8942fe8d4d2ca0ed7118dffd3e659b1",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_5_22",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1647920574,
+        "narHash": "sha256-D3ob5QykELhyNcTnISOkjEzLlgXltwON8Ucrz5cpiQI=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "bfb46a1f762002f07f9d81d93dacd544c6890623",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "hottie-master": {
+      "inputs": {
+        "cligen": "cligen",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "ptrace": "ptrace",
+        "src-hottie-master": "src-hottie-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1647922197,
+        "narHash": "sha256-uEknUEsZEEp3q9N2IeWWwKhzYxj//6e2c9vZ/oKNtzU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "hottie",
+        "rev": "020bc63ede4011829ebab59a44893a035d527a8e",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "hottie",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "ptrace": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "hottie-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "hottie-master",
+          "nixpkgs"
+        ],
+        "src-ptrace-0_0_4": "src-ptrace-0_0_4"
+      },
+      "locked": {
+        "dir": "0_0_4",
+        "lastModified": 1647934452,
+        "narHash": "sha256-cMf3HBBRN3TcekN7rJTu9hTNsPccBqtSwSz7BV9wH+Y=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ptrace",
+        "rev": "d3b1dbae8edd2730e623d8764dcb58da5bcf1d02",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_0_4",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ptrace",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "hottie-master": "hottie-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-cligen-v1_5_22": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1647095682,
+        "narHash": "sha256-9ORII636qqTp0TmfHgveEONfRv5gsJxalvC1CoG85Ks=",
+        "owner": "c-blake",
+        "repo": "cligen",
+        "rev": "67cd93ef7568011b17ccda4d9a5f9011142da25e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "c-blake",
+        "ref": "refs/tags/v1.5.22",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "src-hottie-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644124021,
+        "narHash": "sha256-94o6ZHqEK7CUQ3r7pMWgY8tFYk9IBm3NtSD166ZgDL8=",
+        "owner": "treeform",
+        "repo": "hottie",
+        "rev": "e6dbbff4033ea963a04bb955383c2a79a75dc888",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/heads/master",
+        "repo": "hottie",
+        "type": "github"
+      }
+    },
+    "src-ptrace-0_0_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1581439934,
+        "narHash": "sha256-/cDPXjp8SOMKNo1b8GAn6AWESUAe4FeIv/kz+zxF4rU=",
+        "owner": "ba0f3",
+        "repo": "ptrace.nim",
+        "rev": "1e5950063abff869fd042d73734c55c3a51f172f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/tags/0.0.4",
+        "repo": "ptrace.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -7,13 +7,13 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."std_shims-master".dir   = "master";
-  inputs."std_shims-master".owner = "nim-nix-pkgs";
-  inputs."std_shims-master".ref   = "master";
-  inputs."std_shims-master".repo  = "std_shims";
-  inputs."std_shims-master".type  = "github";
-  inputs."std_shims-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."std_shims-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."stew-master".dir   = "master";
+  inputs."stew-master".owner = "nim-nix-pkgs";
+  inputs."stew-master".ref   = "master";
+  inputs."stew-master".repo  = "stew";
+  inputs."stew-master".type  = "github";
+  inputs."stew-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."stew-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

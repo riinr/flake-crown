@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "glm": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-glm-v1_1_1": "src-glm-v1_1_1"
+      },
+      "locked": {
+        "dir": "v1_1_1",
+        "lastModified": 1648163142,
+        "narHash": "sha256-lM5Jv440wuYPqOnNZ3f8kkysgjYSBSZnWwPGCVQPCQk=",
+        "owner": "nim-nix-pkgs",
+        "repo": "glm",
+        "rev": "256e6fd7f2ab6a259bf635caf4caa1eabc3baf9d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_1_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "glm",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "glm": "glm",
+        "nixpkgs": "nixpkgs",
+        "src-aglet-0_3_3": "src-aglet-0_3_3"
+      }
+    },
+    "src-aglet-0_3_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1595613894,
+        "narHash": "sha256-MMmOZ2G3NJJUOCVlnpjnjuXg/B4eJyY04N9456qVaI0=",
+        "owner": "liquid600pgm",
+        "repo": "aglet",
+        "rev": "ab243da0eba641619b77b147d381a2ea759cf413",
+        "type": "github"
+      },
+      "original": {
+        "owner": "liquid600pgm",
+        "ref": "refs/tags/0.3.3",
+        "repo": "aglet",
+        "type": "github"
+      }
+    },
+    "src-glm-v1_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1531609322,
+        "narHash": "sha256-a4WQWTkbBK7KRsxUJFBplAy4V81j3GZ1ekhLDz/qpUo=",
+        "owner": "stavenko",
+        "repo": "nim-glm",
+        "rev": "c30414e241ad7fde9abc4f1dc7185268c4bbdbcd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stavenko",
+        "ref": "refs/tags/v1.1.1",
+        "repo": "nim-glm",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

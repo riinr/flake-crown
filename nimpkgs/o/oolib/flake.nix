@@ -23,13 +23,13 @@
   inputs."oolib-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."oolib-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."oolib-0_1_0".dir   = "0_1_0";
-  inputs."oolib-0_1_0".owner = "nim-nix-pkgs";
-  inputs."oolib-0_1_0".ref   = "master";
-  inputs."oolib-0_1_0".repo  = "oolib";
-  inputs."oolib-0_1_0".type  = "github";
-  inputs."oolib-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."oolib-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."classes-0_1_0".dir   = "0_1_0";
+  inputs."classes-0_1_0".owner = "nim-nix-pkgs";
+  inputs."classes-0_1_0".ref   = "master";
+  inputs."classes-0_1_0".repo  = "classes";
+  inputs."classes-0_1_0".type  = "github";
+  inputs."classes-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."classes-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."oolib-0_2_0".dir   = "0_2_0";
   inputs."oolib-0_2_0".owner = "nim-nix-pkgs";

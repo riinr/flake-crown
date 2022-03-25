@@ -16,7 +16,7 @@
   inputs."gintro".owner = "nim-nix-pkgs";
   inputs."gintro".ref   = "master";
   inputs."gintro".repo  = "gintro";
-  inputs."gintro".dir   = "";
+  inputs."gintro".dir   = "v0_9_7";
   inputs."gintro".type  = "github";
   inputs."gintro".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gintro".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-dnd-v0_5_0"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-dnd-v0_5_0";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

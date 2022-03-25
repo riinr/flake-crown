@@ -31,13 +31,13 @@
   inputs."netty-0_2_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."netty-0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."netty-v0_1_0".dir   = "v0_1_0";
-  inputs."netty-v0_1_0".owner = "nim-nix-pkgs";
-  inputs."netty-v0_1_0".ref   = "master";
-  inputs."netty-v0_1_0".repo  = "netty";
-  inputs."netty-v0_1_0".type  = "github";
-  inputs."netty-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."netty-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."netpipe-v0_1_0".dir   = "v0_1_0";
+  inputs."netpipe-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."netpipe-v0_1_0".ref   = "master";
+  inputs."netpipe-v0_1_0".repo  = "netpipe";
+  inputs."netpipe-v0_1_0".type  = "github";
+  inputs."netpipe-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."netpipe-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

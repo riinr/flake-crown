@@ -31,13 +31,13 @@
   inputs."polymers-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."polymers-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."polymers-v0_1_1".dir   = "v0_1_1";
-  inputs."polymers-v0_1_1".owner = "nim-nix-pkgs";
-  inputs."polymers-v0_1_1".ref   = "master";
-  inputs."polymers-v0_1_1".repo  = "polymers";
-  inputs."polymers-v0_1_1".type  = "github";
-  inputs."polymers-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."polymers-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."polyshards-v0_1_1".dir   = "v0_1_1";
+  inputs."polyshards-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."polyshards-v0_1_1".ref   = "master";
+  inputs."polyshards-v0_1_1".repo  = "polyshards";
+  inputs."polyshards-v0_1_1".type  = "github";
+  inputs."polyshards-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."polyshards-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."polymers-v0_3_0".dir   = "v0_3_0";
   inputs."polymers-v0_3_0".owner = "nim-nix-pkgs";

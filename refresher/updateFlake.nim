@@ -2,6 +2,7 @@
 #nimcr-args c -p:$NIMBLESRC_PATH/src
 
 import std/[
+  algorithm,
   json,
   os,
   osproc,
@@ -15,7 +16,6 @@ import std/[
 ]
 
 import nimblepkg/version
-
 
 
 proc refName(refInfo: JsonNode): string =
@@ -92,8 +92,7 @@ proc toVersionPair(dirName: string): (Version, string)=
 
 
 proc listRefs(nameLo: string): auto =
-  let
-    files = fmt"../nimpkgs/{nameLo[0]}/{nameLo}".walkDir.toSeq
+  let files = fmt"../nimpkgs/{nameLo[0]}/{nameLo}".walkDir.toSeq
   files.filterIt(it.kind == pcDir)
       .filterIt(not it.path.endsWith ".git")
       .mapIt($it.path)
@@ -104,7 +103,7 @@ proc lastestVersion(depInfo: JsonNode): string =
     nameLo = depInfo["name"].getStr.toLower
     dirs = nameLo.listRefs.mapIt($it.basename)
     versions = toOrderedTable[Version, string](
-      dirs.mapIt(it.toVersionPair)
+      dirs.mapIt(it.toVersionPair).sortedByIt(it[0]).reversed
     )
     reqDesc = depInfo["str"].getStr
     reqRange =
@@ -112,8 +111,21 @@ proc lastestVersion(depInfo: JsonNode): string =
         newVRAny()
       else:
         parseVersionRange reqDesc
-  findLatest(reqRange, versions).tag;
+  result = findLatest(reqRange, versions).tag
+  if result == "":
+    if reqRange.kind == verSpecial:
+      let specialVer = reqRange.spe
+      if versions.hasKey specialVer:
+        echo fmt"""
+          Unknow tag {reqRange} of {nameLo}, using last {specialVer}
+        """
+        return versions[specialVer]
 
+    for key in versions.keys:
+      echo fmt"""
+        Unknow tag {reqRange} of {nameLo}, using last {key}
+      """
+      return versions[key]
 
 iterator refInputs(refInfo: JsonNode, url: string): string =
   let 
@@ -132,15 +144,14 @@ iterator refInputs(refInfo: JsonNode, url: string): string =
 
   if refInfo.hasKey "requires":
     for dep in refInfo["requires"].items:
-      let 
-        depName = dep["name"].getStr.toLower
-        version = dep.lastestVersion
-
+      let depName = dep["name"].getStr.toLower
+      let version = dep.lastestVersion
       if depName == "nim" or  depName == "nimrod":
         continue
       if depName.startsWith "https":
         # not supported yet
         continue
+
       yield fmt"""
 
   inputs."{depName}".owner = "nim-nix-pkgs";
@@ -173,12 +184,15 @@ proc refsFlake(nameLo, url: string): auto =
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "{itName}"];
-  in lib.mkRefOutput {{
+    over = if builtins.pathExists ./override.nix 
+           then {{ override = import ./override.nix; }}
+           else {{ }};
+  in lib.mkRefOutput (over // {{
     inherit self nixpkgs ;
     src  = deps."{itName}";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  }};
+  }} );
 }}"""
     createDir flakeDir
     fmt"{flakeDir}/flake.nix".writeFile flakeContent

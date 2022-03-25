@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimlevenshtein": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimlevenshtein-0_1_0": "src-nimlevenshtein-0_1_0"
+      },
+      "locked": {
+        "dir": "0_1_0",
+        "lastModified": 1648163363,
+        "narHash": "sha256-exkVhBOOCigI0cTmQEVprugRWAAOLsz7u5+P+MFNsDM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimlevenshtein",
+        "rev": "aaf112f61958b33d7225c98ed65e581c48c6f5cc",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimlevenshtein",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimlevenshtein": "nimlevenshtein",
+        "nixpkgs": "nixpkgs",
+        "src-vscds-master": "src-vscds-master"
+      }
+    },
+    "src-nimlevenshtein-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1570476224,
+        "narHash": "sha256-Vrnn/mb5IezyCQpx9X7nMFPR1gld/gFEOIP2f7BgCMk=",
+        "owner": "oswjk",
+        "repo": "nimlevenshtein",
+        "rev": "6f062eeca4609039a0bdf0e8d2ebb44280872af3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oswjk",
+        "ref": "refs/tags/0.1.0",
+        "repo": "nimlevenshtein",
+        "type": "github"
+      }
+    },
+    "src-vscds-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1598652860,
+        "narHash": "sha256-LAU8X9SCyQpCLzHci0RclC+fa/bKzKoe89aCP6KiXIs=",
+        "owner": "doongjohn",
+        "repo": "vscds",
+        "rev": "58c99dbeee1f4a98ac0de7f9708c77d643e8bbbd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "doongjohn",
+        "ref": "refs/heads/master",
+        "repo": "vscds",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -16,7 +16,7 @@
   inputs."hashlib".owner = "nim-nix-pkgs";
   inputs."hashlib".ref   = "master";
   inputs."hashlib".repo  = "hashlib";
-  inputs."hashlib".dir   = "";
+  inputs."hashlib".dir   = "master";
   inputs."hashlib".type  = "github";
   inputs."hashlib".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hashlib".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -25,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-ducominer-1_0_1"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-ducominer-1_0_1";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

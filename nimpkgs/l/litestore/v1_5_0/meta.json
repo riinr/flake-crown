@@ -1,8 +1,34 @@
 {
-  "desc": "A lightweight, self-contained, RESTful, searchable, multi-format NoSQL document store",
-  "license": "MIT",
   "name": "litestore",
-  "ref": "refs/tags/v1.5.0",
-  "url": "https://github.com/h3rald/litestore",
-  "version": "v1_5_0"
+  "version": "1.5.0",
+  "author": "Fabio Cevasco",
+  "desc": "Self-contained, lightweight, RESTful document store.",
+  "license": "MIT",
+  "skipDirs": [
+    "test"
+  ],
+  "skipFiles": [],
+  "skipExt": [
+    "nim"
+  ],
+  "installDirs": [],
+  "installFiles": [],
+  "installExt": [],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 0.18.0",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.18.0"
+      }
+    }
+  ],
+  "bin": [
+    "litestore"
+  ],
+  "binDir": "",
+  "srcDir": "src",
+  "backend": "c",
+  "ref": "refs/tags/v1.5.0"
 }

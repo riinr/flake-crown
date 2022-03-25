@@ -7,13 +7,13 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."nim-libgd-master".dir   = "master";
-  inputs."nim-libgd-master".owner = "nim-nix-pkgs";
-  inputs."nim-libgd-master".ref   = "master";
-  inputs."nim-libgd-master".repo  = "nim-libgd";
-  inputs."nim-libgd-master".type  = "github";
-  inputs."nim-libgd-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."nim-libgd-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."libgd-master".dir   = "master";
+  inputs."libgd-master".owner = "nim-nix-pkgs";
+  inputs."libgd-master".ref   = "master";
+  inputs."libgd-master".repo  = "libgd";
+  inputs."libgd-master".type  = "github";
+  inputs."libgd-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."libgd-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

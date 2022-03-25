@@ -31,21 +31,21 @@
   inputs."slappy-0_3_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."slappy-0_3_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."slappy-v0_1_0".dir   = "v0_1_0";
-  inputs."slappy-v0_1_0".owner = "nim-nix-pkgs";
-  inputs."slappy-v0_1_0".ref   = "master";
-  inputs."slappy-v0_1_0".repo  = "slappy";
-  inputs."slappy-v0_1_0".type  = "github";
-  inputs."slappy-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."slappy-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."euphony-v0_1_0".dir   = "v0_1_0";
+  inputs."euphony-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."euphony-v0_1_0".ref   = "master";
+  inputs."euphony-v0_1_0".repo  = "euphony";
+  inputs."euphony-v0_1_0".type  = "github";
+  inputs."euphony-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."euphony-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."slappy-v0_2_0".dir   = "v0_2_0";
-  inputs."slappy-v0_2_0".owner = "nim-nix-pkgs";
-  inputs."slappy-v0_2_0".ref   = "master";
-  inputs."slappy-v0_2_0".repo  = "slappy";
-  inputs."slappy-v0_2_0".type  = "github";
-  inputs."slappy-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."slappy-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."euphony-v0_2_0".dir   = "v0_2_0";
+  inputs."euphony-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."euphony-v0_2_0".ref   = "master";
+  inputs."euphony-v0_2_0".repo  = "euphony";
+  inputs."euphony-v0_2_0".type  = "github";
+  inputs."euphony-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."euphony-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

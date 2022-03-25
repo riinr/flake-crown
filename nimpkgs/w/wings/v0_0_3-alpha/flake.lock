@@ -1,0 +1,87 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-wings-v0_0_3-alpha": "src-wings-v0_0_3-alpha",
+        "stones": "stones"
+      }
+    },
+    "src-wings-v0_0_3-alpha": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1590048582,
+        "narHash": "sha256-zqLta7rQN+j0wn/qletWZV9DKD6nhM2Oc9kZ/f1T94E=",
+        "owner": "binhonglee",
+        "repo": "wings",
+        "rev": "944e96d01e21cb803b1173ee19c083df0d559743",
+        "type": "github"
+      },
+      "original": {
+        "owner": "binhonglee",
+        "ref": "refs/tags/v0.0.3-alpha",
+        "repo": "wings",
+        "type": "github"
+      }
+    },
+    "stones": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1647720439,
+        "narHash": "sha256-6Q6P4HQ+SsTz72KKvGL0jYElNc2o59570kYvP4w1d+E=",
+        "owner": "nim-nix-pkgs",
+        "repo": "stones",
+        "rev": "6bf278af4cafa393b0196b1b7d23c9e9221b1b1b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "stones",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

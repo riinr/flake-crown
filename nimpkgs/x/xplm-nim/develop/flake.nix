@@ -1,5 +1,5 @@
 {
-  description = ''X-Plane XPLM SDK wrapper'';
+  description = ''X-Plane XPLM SDK bindings.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -7,20 +7,23 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-XPLM-Nim-develop.flake = false;
-  inputs.src-XPLM-Nim-develop.ref   = "refs/heads/develop";
-  inputs.src-XPLM-Nim-develop.owner = "jpoirier";
-  inputs.src-XPLM-Nim-develop.repo  = "XPLM-Nim";
-  inputs.src-XPLM-Nim-develop.type  = "github";
+  inputs.src-xplm-develop.flake = false;
+  inputs.src-xplm-develop.ref   = "refs/heads/develop";
+  inputs.src-xplm-develop.owner = "jpoirier";
+  inputs.src-xplm-develop.repo  = "XPLM-Nim";
+  inputs.src-xplm-develop.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-XPLM-Nim-develop"];
-  in lib.mkRefOutput {
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-xplm-develop"];
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
-    src  = deps."src-XPLM-Nim-develop";
+    src  = deps."src-xplm-develop";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }
