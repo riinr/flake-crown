@@ -2,6 +2,7 @@
 
 import std/[algorithm, strformat, json, strutils, sequtils, os]
 
+let DEBUG = getEnv("DEBUG", "")
 
 proc maxRunning(cmd: string, maxProcs: int) =
   let query = fmt"ps h -C .{cmd} -o pid|wc -l"
@@ -21,7 +22,9 @@ proc run(pkgItems: seq[JsonNode]; cmd: string) =
       let pkgJSON = $pkg
       exec "sleep 0.23"
       echo fmt"""Running {cmd} for {pkg["name"]}"""
-      exec(fmt"echo {pkgJSON.quoteShell}|./{cmd}.nim &")
+      if DEBUG != "":
+        echo fmt"echo {pkgJSON.quoteShell}|./{cmd}.nim &"
+      exec fmt"echo {pkgJSON.quoteShell}|./{cmd}.nim &"
 
 
 if defined process:

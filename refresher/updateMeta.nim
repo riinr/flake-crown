@@ -31,10 +31,12 @@ proc isKey(x: string): auto =
 
 proc getRefs(url: JsonNode): seq[string] =
   let
+    parts  = url.getStr.split "?"
+    projUrl = parts[0]
     removeUnwanted  = "|grep -v gh-pages|grep -v '{}'"
     removeHash      = "|cut -f 2"
     lsRemote        = fmt"{GIT_CMD} ls-remote --head --tags "
-    listTags        = fmt"{lsRemote} {url} {removeUnwanted} {removeHash}"
+    listTags        = fmt"{lsRemote} {projUrl} {removeUnwanted} {removeHash}"
   execCmdEx(listTags).output.split "\n"
 
 
@@ -42,7 +44,13 @@ proc staticUrl(pkg: JsonNode, gitRef: string): seq[string] =
   let 
     name   = pkg["name"].getStr
     nameLo = pkg["name"].getStr.toLower
-    url    = pkg["url"].getStr
+    parts  = pkg["url"].getStr.split "?"
+    url    = parts[0]
+    subDir =
+      if parts.len == 2 and parts[1].contains "subdir=":
+        parts[1].split("=")[1] & "/"
+      else:
+        ""
   if url.contains "github.com":
     let prefix = url.replace(".git", "")
       .replace("ssh+git@github.com:", "https://raw.githubusercontent.com/")
@@ -50,28 +58,28 @@ proc staticUrl(pkg: JsonNode, gitRef: string): seq[string] =
       .replace("//github.com/", "//raw.githubusercontent.com/")
       .strip(chars = {'/'})
     return @[
-      fmt"{prefix}/{gitRef}/{name}.nimble",
-      fmt"{prefix}/{gitRef}/{nameLo}.nimble"
+      fmt"{prefix}/{gitRef}/{subDir}{name}.nimble",
+      fmt"{prefix}/{gitRef}/{subDir}{nameLo}.nimble"
     ]
   if url.contains "git.sr.ht":
     return @[
-      fmt"{url}/blob/{gitRef}/{name}.nimble",
-      fmt"{url}/blob/{gitRef}/{nameLo}.nimble"
+      fmt"{url}/blob/{gitRef}/{subDir}{name}.nimble",
+      fmt"{url}/blob/{gitRef}/{subDir}{nameLo}.nimble"
     ]
   if url.contains "gitlab.com":
     let 
       tag    = gitRef.replace("refs/heads/", "").replace("refs/tags/", "")
       prefix = url.replace(".git", "")
     return @[
-      fmt"{prefix}/-/raw/{tag}/{name}.nimble",
-      fmt"{prefix}/-/raw/{tag}/{nameLo}.nimble"
+      fmt"{prefix}/-/raw/{tag}/{subDir}{name}.nimble",
+      fmt"{prefix}/-/raw/{tag}/{subDir}{nameLo}.nimble"
     ]
   let 
     tag    = gitRef.replace("refs/heads/", "").replace("refs/tags/", "")
     prefix = url.replace(".git", "")
   return @[
-    fmt"{prefix}/raw/{tag}/{name}.nimble",
-    fmt"{prefix}/raw/{tag}/{nameLo}.nimble"
+    fmt"{prefix}/raw/{tag}/{subDir}{name}.nimble",
+    fmt"{prefix}/raw/{tag}/{subDir}{nameLo}.nimble"
   ]
 
 

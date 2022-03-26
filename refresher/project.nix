@@ -68,4 +68,17 @@ in
         uniq -c|\
         sort -h
     '';
+  files.alias.count-contributions =
+    ''
+      grep '"url"' nimpkgs/*/*/meta.json|\
+        awk '{print $3}'|\
+        tr -d '"'|\
+        sed "s#git@##"|\
+        sed 's#.com:#.com/#'|\
+        sed -E 's#[^:]+://##'|\
+        sort -u|\
+        awk -F'/' '{print $2}'|\
+        sort|\
+        uniq -c
+    '';
 }

@@ -54,10 +54,16 @@ proc nimPkgsLibInput(): string =
 
 proc inputInfo(refName, url: string): JsonNode =
   let 
-    repoInfo = url.replace("https://", "").split("/")
+    repoInfo = url.replace("https://", "").split "/"
     domain   = repoInfo[0]
     owner    = repoInfo[1]
-    repo     = repoInfo[2].replace(".git", "")
+    parts    = repoInfo[2].replace(".git", "").split "?"
+    repo     = parts[0]
+    subDir =
+      if parts.len == 2 and parts[1].contains "subdir=":
+        parts[1].split("=")[1]
+      else:
+        ""
     repoType = if domain.contains "github":
                  "github"
                elif domain.contains "gitlab":
@@ -78,6 +84,7 @@ proc inputInfo(refName, url: string): JsonNode =
     result["owner"] = %* owner
     result["ref"]   = %* refs
     result["repo"]  = %* repo
+    result["dir"]   = %* subDir
 
 
 proc toVersionPair(dirName: string): (Version, string)=
@@ -133,13 +140,16 @@ iterator refInputs(refInfo: JsonNode, url: string): string =
     name      = refInfo["name"].getStr
     inputInfo = refInfo["ref"].getStr.inputInfo url
     itName    = fmt"src-{name}-{gitRef}".replace(".","_")
+    subDir    = if not inputInfo.hasKey "dir": "" else:
+      fmt"""inputs.{itName}.dir   = "{inputInfo["dir"].getStr}";
+  """
   yield fmt"""
 
   inputs.{itName}.flake = false;
   inputs.{itName}.ref   = "{inputInfo["ref"].getStr}";
   inputs.{itName}.owner = "{inputInfo["owner"].getStr}";
   inputs.{itName}.repo  = "{inputInfo["repo"].getStr}";
-  inputs.{itName}.type  = "{inputInfo["type"].getStr}";
+  {subDir}inputs.{itName}.type  = "{inputInfo["type"].getStr}";
   """
 
   if refInfo.hasKey "requires":
