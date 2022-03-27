@@ -47,13 +47,60 @@ if defined process:
 
   let
     pkgsURL = "https://raw.githubusercontent.com/nim-lang/packages/master/packages.json"
-    pkgsJSON = gorge fmt"curl -s {pkgsURL}|jq '.|=sort_by(.name|ascii_downcase)'"
- 
+    prepare = gorge fmt"""
+      # downloads packages.json
+      cat packages_main.json 2>/dev/null \
+        || curl -s {pkgsURL} \
+          > packages_main.json
+
+      # create packages_other.json
+      cat packages_other.json 2>/dev/null \
+        || echo "[]" \
+          > packages_other.json
+
+      # join all packages json
+      cat packages_*.json | \
+        jq -s '.|add' |\
+        jq '.|=sort_by(.name|ascii_downcase)' \
+          > packages.json
+
+      # create name_alias
+      cat packages.json | \
+        jq '
+          map(select(.alias != null))|
+          map({{(.name|ascii_downcase): .alias}})|
+          add' \
+          > alias_names.json
+
+      # create url_alias
+      cat packages.json | \
+        jq '
+          map(select(.url != null))|
+          map({{
+            (.url|sub("https*://"; "")|sub("git@"; "")|sub(":"; "/")):
+            .name
+          }})|
+          add' \
+          > alias_urls.json
+
+      # join all alias json
+      cat alias_*.json | \
+        jq -s '.|add' \
+          > alias.json
+      """
+
+    pkgsJSON = gorge fmt"""
+      cat packages.json|jq '
+        map(
+          select(
+            (.name|ascii_downcase) == "{pkgEq}" or "{pkgEq}" == ""
+            and (.name|ascii_downcase|explode)[0] >= ("{startAt}"|explode)[0]
+            and (.name|ascii_downcase|explode)[0] <= ("{endAt}"|explode)[0]
+          )
+        )'
+    """
     pkgs = parseJson pkgsJSON
     pkgItems = pkgs.items.toSeq
-      .filterIt(it{"name"}.getStr.toLower == pkgEq or pkgEq == "")
-      .filterIt(it{"name"}.getStr.toLower[0] >= startAt)
-      .filterIt(it{"name"}.getStr.toLower[0] <= endAt)
 
   pkgItems.run "updateMeta"
   pkgItems.run "updateFlake"

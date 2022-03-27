@@ -17,6 +17,8 @@ import std/[
 
 import nimblepkg/version
 
+let ALIAS = parseFile "./alias.json"
+
 
 proc refName(refInfo: JsonNode): string =
   refInfo["ref"].getStr
@@ -140,9 +142,13 @@ iterator refInputs(refInfo: JsonNode, url: string): string =
     name      = refInfo["name"].getStr
     inputInfo = refInfo["ref"].getStr.inputInfo url
     itName    = fmt"src-{name}-{gitRef}".replace(".","_")
-    subDir    = if not inputInfo.hasKey "dir": "" else:
-      fmt"""inputs.{itName}.dir   = "{inputInfo["dir"].getStr}";
-  """
+    subDir    =
+      if inputInfo.hasKey("dir") and inputInfo["dir"].getStr != "":
+        fmt"""
+  inputs.{itName}.dir   = "{inputInfo["dir"].getStr}";
+"""
+      else:
+        ""
   yield fmt"""
 
   inputs.{itName}.flake = false;
@@ -154,8 +160,14 @@ iterator refInputs(refInfo: JsonNode, url: string): string =
 
   if refInfo.hasKey "requires":
     for dep in refInfo["requires"].items:
-      let depName = dep["name"].getStr.toLower
-      let version = dep.lastestVersion
+      let 
+        namedDep = dep["name"].getStr.toLower
+        depName  =
+          if ALIAS.hasKey namedDep:
+            ALIAS[namedDep].getStr.toLower
+          else:
+            namedDep
+        version  = dep.lastestVersion
       if depName == "nim" or  depName == "nimrod":
         continue
       if depName.startsWith "https":
@@ -209,7 +221,6 @@ proc refsFlake(nameLo, url: string): auto =
     echo fmt"updated {flakeDir}/flake.nix"
 
 
-
 proc projectFlake(nameLo: string): auto =
   let 
     pkgsDir      = "../nimpkgs"
@@ -238,6 +249,9 @@ proc projectFlake(nameLo: string): auto =
   discard execCmd fmt"""
     cd {flakeDir};
     git init &>/dev/null
+  """
+  refsFlake nameLo, url
+  discard execCmd fmt"""
     git add .
     git commit -m "chore: re index {nameLo}" . &>/dev/null \
       || true
@@ -254,18 +268,6 @@ proc projectFlake(nameLo: string): auto =
       --source=.                                        \
       || true
   """
-  refsFlake nameLo, url
-  # discard execCmd fmt"""
-  #   cd {flakeDir};
-  #   git add .
-  #   git commit -m "chore: re-index {flakeDir}" . &> /dev/null \
-  #     || true
-  # """
-  #discard execCmd fmt"""
-  #  echo push {flakeDir}
-  #  cd {flakeDir};
-  #  git push || true
-  #"""
 
 
 if stdin.isATTY:
