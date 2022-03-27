@@ -77,7 +77,7 @@ if defined process:
         jq '
           map(select(.url != null))|
           map({{
-            (.url|sub("https*://"; "")|sub("git@"; "")|sub(":"; "/")|sub(".git$"; "")):
+            (.url|ascii_downcase|sub("https*://"; "")|sub("git@"; "")|sub(":"; "/")|sub(".git$"; "")):
             .name
           }})|
           add' \
@@ -102,6 +102,6 @@ if defined process:
     pkgs = parseJson pkgsJSON
     pkgItems = pkgs.items.toSeq
 
-  pkgItems.run "updateMeta"
-  pkgItems.run "updateFlake"
+  #pkgItems.run "updateMeta"
+  #pkgItems.run "updateFlake"
 

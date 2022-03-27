@@ -107,9 +107,8 @@ proc listRefs(nameLo: string): auto =
       .mapIt($it.path)
 
 
-proc lastestVersion(depInfo: JsonNode): string =
+proc lastestVersion(depInfo: JsonNode, nameLo: string): string =
   let
-    nameLo = depInfo["name"].getStr.toLower
     dirs = nameLo.listRefs.mapIt($it.basename)
     versions = toOrderedTable[Version, string](
       dirs.mapIt(it.toVersionPair).sortedByIt(it[0]).reversed
@@ -172,7 +171,7 @@ iterator refInputs(refInfo: JsonNode, url: string): string =
             ALIAS[namedDep].getStr.toLower
           else:
             namedDep
-        version  = dep.lastestVersion
+        version  = dep.lastestVersion depName
       if depName == "nim" or  depName == "nimrod":
         continue
       if depName.startsWith "https":
