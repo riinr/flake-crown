@@ -162,6 +162,9 @@ iterator refInputs(refInfo: JsonNode, url: string): string =
     for dep in refInfo["requires"].items:
       let 
         namedDep = dep["name"].getStr.toLower
+            .replace("https*://", "")
+            .replace("git@", "")
+            .replace(":", "/")
         depName  =
           if ALIAS.hasKey namedDep:
             ALIAS[namedDep].getStr.toLower
