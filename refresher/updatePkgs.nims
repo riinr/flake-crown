@@ -77,7 +77,7 @@ if defined process:
         jq '
           map(select(.url != null))|
           map({{
-            (.url|sub("https*://"; "")|sub("git@"; "")|sub(":"; "/")):
+            (.url|sub("https*://"; "")|sub("git@"; "")|sub(":"; "/")|sub(".git$"; "")):
             .name
           }})|
           add' \
