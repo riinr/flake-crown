@@ -166,7 +166,7 @@ iterator refInputs(refInfo: JsonNode, url: string): string =
             .replace("http://", "")
             .replace("git@", "")
             .replace(":", "/")
-            .strip(trailing = true, chars = {'.','g','i', 't'})
+            .strip(leading = false, chars = {'.','g','i', 't'})
         depName  =
           if ALIAS.hasKey namedDep:
             ALIAS[namedDep].getStr.toLower
