@@ -162,7 +162,8 @@ iterator refInputs(refInfo: JsonNode, url: string): string =
     for dep in refInfo["requires"].items:
       let 
         namedDep = dep["name"].getStr.toLower
-            .replace("https*://", "")
+            .replace("https://", "")
+            .replace("http://", "")
             .replace("git@", "")
             .replace(":", "/")
         depName  =
