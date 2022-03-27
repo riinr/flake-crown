@@ -160,18 +160,23 @@ iterator refInputs(refInfo: JsonNode, url: string): string =
   if refInfo.hasKey "requires":
     for dep in refInfo["requires"].items:
       let 
-        namedDep = dep["name"].getStr.toLower
+        depName  = block:
+          var tmpName = dep["name"].getStr.toLower
+          if tmpName.endsWith(".git"):
+            tmpName.delete(len(tmpName) - 4, len(tmpName) - 1)
+          tmpName = tmpName
             .replace("https://", "")
             .replace("http://", "")
             .replace("git@", "")
             .replace(":", "/")
-            .strip(leading = false, chars = {'.','g','i', 't'})
-        depName  =
-          if ALIAS.hasKey namedDep:
-            ALIAS[namedDep].getStr.toLower
+          if ALIAS.hasKey tmpName:
+            ALIAS[tmpName].getStr.toLower
           else:
-            namedDep
+            tmpName
         version  = dep.lastestVersion depName
+      echo fmt"""
+        {depName}
+      """
       if depName == "nim" or  depName == "nimrod":
         continue
       if depName.startsWith "https":
