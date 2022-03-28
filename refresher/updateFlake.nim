@@ -174,9 +174,6 @@ iterator refInputs(refInfo: JsonNode, url: string): string =
           else:
             tmpName
         version  = dep.lastestVersion depName
-      echo fmt"""
-        {depName}
-      """
       if depName == "nim" or  depName == "nimrod":
         continue
       if depName.startsWith "https":

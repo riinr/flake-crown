@@ -6,6 +6,7 @@ let
   GLOB_TAG    = "${GLOB}/*/*/[0-9vV][0-9_]*";
 in
 {
+  imports = [ ./packages_other.nix ];
   files.cmds.gcc              = true;
   files.cmds.git              = true;
   files.cmds.jq               = true;
