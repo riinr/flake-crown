@@ -29,6 +29,14 @@
   inputs."macroplus".inputs.nixpkgs.follows = "nixpkgs";
   inputs."macroplus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."github-hamidb80-nimcoverage".owner = "nim-nix-pkgs";
+  inputs."github-hamidb80-nimcoverage".ref   = "master";
+  inputs."github-hamidb80-nimcoverage".repo  = "github-hamidb80-nimcoverage";
+  inputs."github-hamidb80-nimcoverage".dir   = "master";
+  inputs."github-hamidb80-nimcoverage".type  = "github";
+  inputs."github-hamidb80-nimcoverage".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-hamidb80-nimcoverage".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

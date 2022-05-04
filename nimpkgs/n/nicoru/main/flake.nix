@@ -13,6 +13,14 @@
   inputs.src-nicoru-main.repo  = "nicoru";
   inputs.src-nicoru-main.type  = "github";
   
+  inputs."syscall".owner = "nim-nix-pkgs";
+  inputs."syscall".ref   = "master";
+  inputs."syscall".repo  = "syscall";
+  inputs."syscall".dir   = "master";
+  inputs."syscall".type  = "github";
+  inputs."syscall".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."syscall".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

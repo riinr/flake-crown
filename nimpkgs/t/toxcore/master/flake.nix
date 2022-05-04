@@ -8,19 +8,22 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-toxcore-master.flake = false;
+  inputs.src-toxcore-master.ref   = "master";
   inputs.src-toxcore-master.owner = "~ehmry";
-  inputs.src-toxcore-master.ref   = "refs/heads/master";
-  inputs.src-toxcore-master.repo  = "nim_tox";
-  inputs.src-toxcore-master.type  = "other";
+  inputs.src-toxcore-master.repo  = "nim-toxcore";
+  inputs.src-toxcore-master.type  = "sourcehut";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-toxcore-master"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-toxcore-master";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

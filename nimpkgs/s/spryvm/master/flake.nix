@@ -32,10 +32,18 @@
   inputs."snappy".owner = "nim-nix-pkgs";
   inputs."snappy".ref   = "master";
   inputs."snappy".repo  = "snappy";
-  inputs."snappy".dir   = "";
+  inputs."snappy".dir   = "master";
   inputs."snappy".type  = "github";
   inputs."snappy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."snappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."rocksdb".owner = "nim-nix-pkgs";
+  inputs."rocksdb".ref   = "master";
+  inputs."rocksdb".repo  = "rocksdb";
+  inputs."rocksdb".dir   = "master";
+  inputs."rocksdb".type  = "github";
+  inputs."rocksdb".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."rocksdb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

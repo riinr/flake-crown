@@ -13,6 +13,14 @@
   inputs.src-notification-v0_1_0.repo  = "notification";
   inputs.src-notification-v0_1_0.type  = "github";
   
+  inputs."github-solitudesf-nim-dbus".owner = "nim-nix-pkgs";
+  inputs."github-solitudesf-nim-dbus".ref   = "master";
+  inputs."github-solitudesf-nim-dbus".repo  = "github-solitudesf-nim-dbus";
+  inputs."github-solitudesf-nim-dbus".dir   = "master";
+  inputs."github-solitudesf-nim-dbus".type  = "github";
+  inputs."github-solitudesf-nim-dbus".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-solitudesf-nim-dbus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."imageman".owner = "nim-nix-pkgs";
   inputs."imageman".ref   = "master";
   inputs."imageman".repo  = "imageman";

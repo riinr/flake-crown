@@ -29,13 +29,13 @@
   inputs."x11".inputs.nixpkgs.follows = "nixpkgs";
   inputs."x11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nim-glfw".owner = "nim-nix-pkgs";
-  inputs."nim-glfw".ref   = "master";
-  inputs."nim-glfw".repo  = "nim-glfw";
-  inputs."nim-glfw".dir   = "";
-  inputs."nim-glfw".type  = "github";
-  inputs."nim-glfw".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."nim-glfw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."glfw".owner = "nim-nix-pkgs";
+  inputs."glfw".ref   = "master";
+  inputs."glfw".repo  = "glfw";
+  inputs."glfw".dir   = "v3_3_4_0";
+  inputs."glfw".type  = "github";
+  inputs."glfw".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."glfw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

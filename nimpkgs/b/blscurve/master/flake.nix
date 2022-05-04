@@ -29,6 +29,14 @@
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."taskpools".owner = "nim-nix-pkgs";
+  inputs."taskpools".ref   = "master";
+  inputs."taskpools".repo  = "taskpools";
+  inputs."taskpools".dir   = "v0_0_3";
+  inputs."taskpools".type  = "github";
+  inputs."taskpools".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."taskpools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

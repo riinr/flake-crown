@@ -31,6 +31,14 @@
   inputs."jsbind".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsbind".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."darwin".owner = "nim-nix-pkgs";
+  inputs."darwin".ref   = "master";
+  inputs."darwin".repo  = "darwin";
+  inputs."darwin".dir   = "master";
+  inputs."darwin".type  = "github";
+  inputs."darwin".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."darwin".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

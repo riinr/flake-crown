@@ -71,6 +71,22 @@
   inputs."contractabi-0_4_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."contractabi-0_4_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."contractabi-0_4_3".dir   = "0_4_3";
+  inputs."contractabi-0_4_3".owner = "nim-nix-pkgs";
+  inputs."contractabi-0_4_3".ref   = "master";
+  inputs."contractabi-0_4_3".repo  = "contractabi";
+  inputs."contractabi-0_4_3".type  = "github";
+  inputs."contractabi-0_4_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."contractabi-0_4_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."contractabi-0_4_4".dir   = "0_4_4";
+  inputs."contractabi-0_4_4".owner = "nim-nix-pkgs";
+  inputs."contractabi-0_4_4".ref   = "master";
+  inputs."contractabi-0_4_4".repo  = "contractabi";
+  inputs."contractabi-0_4_4".type  = "github";
+  inputs."contractabi-0_4_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."contractabi-0_4_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

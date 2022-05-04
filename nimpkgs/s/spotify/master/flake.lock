@@ -23,8 +23,8 @@
     },
     "nixpkgs": {
       "locked": {
-        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
-        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
         "type": "path"
       },
       "original": {
@@ -45,11 +45,11 @@
       },
       "locked": {
         "dir": "v0_10",
-        "lastModified": 1648164373,
-        "narHash": "sha256-0+2GAQzpVPAzDpRShHylGtXRPpqi6FM4vlYw4KnLCQc=",
+        "lastModified": 1651556806,
+        "narHash": "sha256-0pE3QpD38d2ChLGA1KzHMP4olCU4pTl4B7sSghmy9RI=",
         "owner": "nim-nix-pkgs",
         "repo": "oauth",
-        "rev": "5e62ec27e872a427d26e56ed852d4c1febe5dec7",
+        "rev": "a1071285206beae4c3c1356fda3fcc85b9e7ccf1",
         "type": "github"
       },
       "original": {
@@ -149,6 +149,25 @@
         "type": "github"
       }
     },
+    "src-subexes-master": {
+      "flake": false,
+      "locked": {
+        "dir": "subexes",
+        "lastModified": 1575184370,
+        "narHash": "sha256-7Z6gJF+xQybtH77senj1R9a4APhtWH3QzDqSZPNrz0w=",
+        "owner": "nim-lang",
+        "repo": "graveyard",
+        "rev": "c6a627c07abcc2eb040be2a6cc809f2ef1aecb78",
+        "type": "github"
+      },
+      "original": {
+        "dir": "subexes",
+        "owner": "nim-lang",
+        "ref": "refs/heads/master",
+        "repo": "graveyard",
+        "type": "github"
+      }
+    },
     "subexes": {
       "inputs": {
         "flakeNimbleLib": [
@@ -156,17 +175,20 @@
         ],
         "nixpkgs": [
           "nixpkgs"
-        ]
+        ],
+        "src-subexes-master": "src-subexes-master"
       },
       "locked": {
-        "lastModified": 1647720449,
-        "narHash": "sha256-28HCWsfyWHW2XtxwEEKXQ6UeQTSHWWwt3tMcMXdIFgw=",
+        "dir": "master",
+        "lastModified": 1651556075,
+        "narHash": "sha256-6r9isT7/Wun2nwoFf2n3+zb3qzEZhHshNkXLMxIZizc=",
         "owner": "nim-nix-pkgs",
         "repo": "subexes",
-        "rev": "0cb5f5f5c9c6075e60b6c4bdc49f306537fcdfc2",
+        "rev": "71a98f1f228e32f68fa168f44d6e51cbb45dce6b",
         "type": "github"
       },
       "original": {
+        "dir": "master",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "subexes",

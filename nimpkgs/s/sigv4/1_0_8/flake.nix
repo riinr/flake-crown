@@ -13,6 +13,14 @@
   inputs.src-sigv4-1_0_8.repo  = "sigv4";
   inputs.src-sigv4-1_0_8.type  = "github";
   
+  inputs."nimsha2".owner = "nim-nix-pkgs";
+  inputs."nimsha2".ref   = "master";
+  inputs."nimsha2".repo  = "nimsha2";
+  inputs."nimsha2".dir   = "master";
+  inputs."nimsha2".type  = "github";
+  inputs."nimsha2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimsha2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

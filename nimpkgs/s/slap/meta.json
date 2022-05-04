@@ -98,6 +98,38 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/tags/0.0.3"
+    },
+    {
+      "name": "SLAP",
+      "version": "0.0.3",
+      "author": "Nobuharu Shimazu",
+      "desc": "SLAP language",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.2"
+          }
+        }
+      ],
+      "bin": [
+        "main"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.0"
     }
   ],
   "description": "A SLow And Powerless programming language written in Nim",
@@ -105,11 +137,12 @@
   "web": "https://github.com/bichanna/slap/blob/master/docs/index.md#slap",
   "doc": "https://github.com/bichanna/slap/blob/master/docs/index.md#syntax",
   "refs": [
+    "refs/heads/compiler",
     "refs/heads/master",
-    "refs/heads/playground",
     "refs/tags/0.0.1",
     "refs/tags/0.0.2",
     "refs/tags/0.0.3",
+    "refs/tags/0.1.0",
     ""
   ],
   "heads": [

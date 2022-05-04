@@ -21,6 +21,33 @@
         "type": "github"
       }
     },
+    "github-nimgl-glfw": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-glfw-3_3_4": "src-glfw-3_3_4"
+      },
+      "locked": {
+        "dir": "3_3_4",
+        "lastModified": 1648447342,
+        "narHash": "sha256-XhLVrUL137cPV7/sOopCAvUJs1mNofWeR6qzriYiMrk=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-nimgl-glfw",
+        "rev": "bf6cfef94901d268b20dfa3b6c3f1c261a2ea030",
+        "type": "github"
+      },
+      "original": {
+        "dir": "3_3_4",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-nimgl-glfw",
+        "type": "github"
+      }
+    },
     "glm": {
       "inputs": {
         "flakeNimbleLib": [
@@ -62,6 +89,7 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "github-nimgl-glfw": "github-nimgl-glfw",
         "glm": "glm",
         "nixpkgs": "nixpkgs",
         "src-aglet-0_4_0": "src-aglet-0_4_0"
@@ -81,6 +109,23 @@
         "owner": "liquid600pgm",
         "ref": "refs/tags/0.4.0",
         "repo": "aglet",
+        "type": "github"
+      }
+    },
+    "src-glfw-3_3_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587692428,
+        "narHash": "sha256-ZiGI8xJMIYhyUmbK7eHk8h5YaW7ii7X/TqTCeOkMEfE=",
+        "owner": "nimgl",
+        "repo": "glfw",
+        "rev": "4a46709a52c340091c5b96b5fc565cbb72c0b6c9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nimgl",
+        "ref": "refs/tags/3.3.4",
+        "repo": "glfw",
         "type": "github"
       }
     },

@@ -21,6 +21,14 @@
   inputs."openapi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."openapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."github-disruptek-rest".owner = "nim-nix-pkgs";
+  inputs."github-disruptek-rest".ref   = "master";
+  inputs."github-disruptek-rest".repo  = "github-disruptek-rest";
+  inputs."github-disruptek-rest".dir   = "1_0_5";
+  inputs."github-disruptek-rest".type  = "github";
+  inputs."github-disruptek-rest".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-disruptek-rest".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

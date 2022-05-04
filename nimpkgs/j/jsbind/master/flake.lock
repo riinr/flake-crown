@@ -21,10 +21,37 @@
         "type": "github"
       }
     },
+    "github-yglukhov-wasmrt": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-wasmrt-master": "src-wasmrt-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555492,
+        "narHash": "sha256-VaGL33EVLX9M9UyshNyb0X8WaOG3DhozaZ5K6fpgn90=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-yglukhov-wasmrt",
+        "rev": "44f9b1095a4c2bde2b90813e9606df52aa2d9ba7",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-yglukhov-wasmrt",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
-        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
-        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
         "type": "path"
       },
       "original": {
@@ -35,6 +62,7 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "github-yglukhov-wasmrt": "github-yglukhov-wasmrt",
         "nixpkgs": "nixpkgs",
         "src-jsbind-master": "src-jsbind-master"
       }
@@ -53,6 +81,23 @@
         "owner": "yglukhov",
         "ref": "refs/heads/master",
         "repo": "jsbind",
+        "type": "github"
+      }
+    },
+    "src-wasmrt-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645613881,
+        "narHash": "sha256-6jyTpNEN+5v1OHL1egJ8n8J5LX2ShjNe3RwaFcuzlpw=",
+        "owner": "yglukhov",
+        "repo": "wasmrt",
+        "rev": "898872bfab3f51999bc00246160401bce43bc099",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "wasmrt",
         "type": "github"
       }
     }

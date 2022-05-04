@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-libssh2-0_1_6": "src-libssh2-0_1_6"
+      }
+    },
+    "src-libssh2-0_1_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1650809287,
+        "narHash": "sha256-pps2zaTj3n89WWudjUozfsOgftYA7yW1L2LhXWTFc/A=",
+        "owner": "ba0f3",
+        "repo": "libssh2.nim",
+        "rev": "7c8e5690711bd4dd2caa2753e710bb1ccb585ee0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/tags/0.1.6",
+        "repo": "libssh2.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

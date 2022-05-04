@@ -89,18 +89,231 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/tags/201903-testnet0"
+    },
+    {
+      "name": "nimbus",
+      "version": "0.1.0",
+      "author": "Status Research & Development GmbH",
+      "desc": "An Ethereum 2.0 Sharding Client for Resource-Restricted Devices",
+      "license": "Apache License 2.0",
+      "skipDirs": [
+        "tests",
+        "examples"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "bncurve",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "chronos",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "eth",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "json_rpc",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "libbacktrace",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "rocksdb",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "nimbus",
+        "fluffy",
+        "portalcli"
+      ],
+      "binDir": "build",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/nightly"
+    },
+    {
+      "name": "nimbus",
+      "version": "0.1.0",
+      "author": "Status Research & Development GmbH",
+      "desc": "An Ethereum 2.0 Sharding Client for Resource-Restricted Devices",
+      "license": "Apache License 2.0",
+      "skipDirs": [
+        "tests",
+        "examples"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "bncurve",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "chronos",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "eth",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "json_rpc",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "libbacktrace",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "rocksdb",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "nimbus",
+        "fluffy",
+        "portalcli"
+      ],
+      "binDir": "build",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/sim-stat"
     }
   ],
   "description": "An Ethereum 2.0 Sharding Client for Resource-Restricted Devices",
   "license": "Apache License 2.0",
   "web": "https://github.com/status-im/nimbus",
   "refs": [
-    "refs/heads/bug_fix",
-    "refs/heads/bump-chronos",
+    "refs/heads/Content-payload-sszlist",
     "refs/heads/caching-db-demo",
-    "refs/heads/cliBuilder-all",
     "refs/heads/debug",
     "refs/heads/debug-discovery",
+    "refs/heads/deleting-content",
     "refs/heads/discovery-debug",
     "refs/heads/feature/android-api",
     "refs/heads/feature/nim-import-analysis",
@@ -112,17 +325,19 @@
     "refs/heads/jl/tinystore",
     "refs/heads/jl/tinystore2",
     "refs/heads/jl/tip",
+    "refs/heads/jordan/mainnet-shadow-fix-json-parser",
     "refs/heads/libp2p-testnet",
     "refs/heads/master",
     "refs/heads/merge-interop-test",
+    "refs/heads/nim-eth-discv5-size",
     "refs/heads/poc-overlay-protocol",
-    "refs/heads/reuse-wire",
-    "refs/heads/rocksdb-eth1",
     "refs/heads/rpc",
     "refs/heads/rpc-tests",
     "refs/heads/testnets2",
     "refs/heads/unittest2",
     "refs/tags/201903-testnet0",
+    "refs/tags/nightly",
+    "refs/tags/sim-stat",
     ""
   ],
   "heads": [

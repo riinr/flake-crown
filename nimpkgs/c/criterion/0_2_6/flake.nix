@@ -13,6 +13,14 @@
   inputs.src-criterion-0_2_6.repo  = "criterion";
   inputs.src-criterion-0_2_6.type  = "github";
   
+  inputs."balls".owner = "nim-nix-pkgs";
+  inputs."balls".ref   = "master";
+  inputs."balls".repo  = "balls";
+  inputs."balls".dir   = "";
+  inputs."balls".type  = "github";
+  inputs."balls".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."balls".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

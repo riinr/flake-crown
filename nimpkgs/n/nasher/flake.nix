@@ -255,6 +255,30 @@
   inputs."nasher-0_16_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nasher-0_16_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."nasher-0_17_0".dir   = "0_17_0";
+  inputs."nasher-0_17_0".owner = "nim-nix-pkgs";
+  inputs."nasher-0_17_0".ref   = "master";
+  inputs."nasher-0_17_0".repo  = "nasher";
+  inputs."nasher-0_17_0".type  = "github";
+  inputs."nasher-0_17_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nasher-0_17_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."nasher-0_17_1".dir   = "0_17_1";
+  inputs."nasher-0_17_1".owner = "nim-nix-pkgs";
+  inputs."nasher-0_17_1".ref   = "master";
+  inputs."nasher-0_17_1".repo  = "nasher";
+  inputs."nasher-0_17_1".type  = "github";
+  inputs."nasher-0_17_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nasher-0_17_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."nasher-0_17_2".dir   = "0_17_2";
+  inputs."nasher-0_17_2".owner = "nim-nix-pkgs";
+  inputs."nasher-0_17_2".ref   = "master";
+  inputs."nasher-0_17_2".repo  = "nasher";
+  inputs."nasher-0_17_2".type  = "github";
+  inputs."nasher-0_17_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nasher-0_17_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."nasher-0_2_0".dir   = "0_2_0";
   inputs."nasher-0_2_0".owner = "nim-nix-pkgs";
   inputs."nasher-0_2_0".ref   = "master";

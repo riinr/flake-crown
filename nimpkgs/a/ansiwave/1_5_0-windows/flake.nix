@@ -64,7 +64,7 @@
   inputs."wavecore".owner = "nim-nix-pkgs";
   inputs."wavecore".ref   = "master";
   inputs."wavecore".repo  = "wavecore";
-  inputs."wavecore".dir   = "0_5_0";
+  inputs."wavecore".dir   = "0_6_0";
   inputs."wavecore".type  = "github";
   inputs."wavecore".inputs.nixpkgs.follows = "nixpkgs";
   inputs."wavecore".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

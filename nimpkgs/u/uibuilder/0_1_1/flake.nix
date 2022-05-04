@@ -29,6 +29,14 @@
   inputs."q".inputs.nixpkgs.follows = "nixpkgs";
   inputs."q".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."xml".owner = "nim-nix-pkgs";
+  inputs."xml".ref   = "master";
+  inputs."xml".repo  = "xml";
+  inputs."xml".dir   = "0_1_4";
+  inputs."xml".type  = "github";
+  inputs."xml".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."xml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

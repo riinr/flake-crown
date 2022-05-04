@@ -33,6 +33,88 @@
     },
     {
       "name": "cbor",
+      "version": "0.9.0",
+      "author": "Emery Hemingway",
+      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
+      "license": "ISC",
+      "skipDirs": [
+        "bin"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "bigints",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "bin/cbordiag"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.9.0"
+    },
+    {
+      "name": "cbor",
+      "version": "0.9.0",
+      "author": "Emery Hemingway",
+      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
+      "license": "ISC",
+      "skipDirs": [
+        "bin"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "bigints",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "bin/cbordiag"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/nim-cbor-0.9.0"
+    },
+    {
+      "name": "cbor",
       "version": "0.1.0",
       "author": "Emery Hemingway",
       "desc": "CBOR decoder (RFC7049).",
@@ -380,9 +462,11 @@
   "license": "MIT",
   "web": "https://git.sr.ht/~ehmry/nim_cbor",
   "refs": [
-    "refs/heads/master",
     "refs/heads/staging",
+    "refs/heads/trunk",
     "refs/tags/0.5.0",
+    "refs/tags/0.9.0",
+    "refs/tags/nim-cbor-0.9.0",
     "refs/tags/v0.1.0",
     "refs/tags/v0.2.0",
     "refs/tags/v0.3.0",
@@ -399,7 +483,41 @@
   "heads": [
     {
       "name": "cbor",
-      "version": "0.8.1",
+      "version": "0.6.0",
+      "author": "Emery Hemingway",
+      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
+      "license": "ISC",
+      "skipDirs": [
+        "bin"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        }
+      ],
+      "bin": [
+        "bin/cbordiag"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/staging"
+    },
+    {
+      "name": "cbor",
+      "version": "0.9.0",
       "author": "Emery Hemingway",
       "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
       "license": "ISC",
@@ -436,41 +554,7 @@
       "binDir": "",
       "srcDir": "src",
       "backend": "c",
-      "ref": "refs/heads/master"
-    },
-    {
-      "name": "cbor",
-      "version": "0.6.0",
-      "author": "Emery Hemingway",
-      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
-      "license": "ISC",
-      "skipDirs": [
-        "bin"
-      ],
-      "skipFiles": [],
-      "skipExt": [],
-      "installDirs": [],
-      "installFiles": [],
-      "installExt": [
-        "nim"
-      ],
-      "requires": [
-        {
-          "name": "nim",
-          "str": ">= 0.20.0",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "0.20.0"
-          }
-        }
-      ],
-      "bin": [
-        "bin/cbordiag"
-      ],
-      "binDir": "",
-      "srcDir": "src",
-      "backend": "c",
-      "ref": "refs/heads/staging"
+      "ref": "refs/heads/trunk"
     }
   ]
 }

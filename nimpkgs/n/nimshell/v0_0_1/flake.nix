@@ -13,13 +13,13 @@
   inputs.src-nimshell-v0_0_1.repo  = "nimshell";
   inputs.src-nimshell-v0_0_1.type  = "github";
   
-  inputs."monad".owner = "nim-nix-pkgs";
-  inputs."monad".ref   = "master";
-  inputs."monad".repo  = "monad";
-  inputs."monad".dir   = "";
-  inputs."monad".type  = "github";
-  inputs."monad".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."monad".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."maybe".owner = "nim-nix-pkgs";
+  inputs."maybe".ref   = "master";
+  inputs."maybe".repo  = "maybe";
+  inputs."maybe".dir   = "2_2";
+  inputs."maybe".type  = "github";
+  inputs."maybe".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."maybe".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

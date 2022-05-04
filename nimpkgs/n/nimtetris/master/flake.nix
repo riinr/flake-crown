@@ -16,7 +16,7 @@
   inputs."illwill".owner = "nim-nix-pkgs";
   inputs."illwill".ref   = "master";
   inputs."illwill".repo  = "illwill";
-  inputs."illwill".dir   = "v0_2_0";
+  inputs."illwill".dir   = "v0_3_0";
   inputs."illwill".type  = "github";
   inputs."illwill".inputs.nixpkgs.follows = "nixpkgs";
   inputs."illwill".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

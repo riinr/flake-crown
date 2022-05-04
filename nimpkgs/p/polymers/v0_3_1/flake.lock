@@ -32,10 +32,38 @@
         "type": "indirect"
       }
     },
+    "polymorph": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-polymorph-v0_3_0": "src-polymorph-v0_3_0"
+      },
+      "locked": {
+        "dir": "v0_3_0",
+        "lastModified": 1650750525,
+        "narHash": "sha256-4rGttDRd3ZdDhez/twk6NewkbfuCJS5rx/ElX3/W4+Q=",
+        "owner": "nim-nix-pkgs",
+        "repo": "polymorph",
+        "rev": "bb240fa64b3eb6d8edb749cae103be595f2f1178",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_3_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "polymorph",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
+        "polymorph": "polymorph",
         "src-polymers-v0_3_1": "src-polymers-v0_3_1"
       }
     },
@@ -53,6 +81,23 @@
         "owner": "rlipsc",
         "ref": "refs/tags/v0.3.1",
         "repo": "polymers",
+        "type": "github"
+      }
+    },
+    "src-polymorph-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644031861,
+        "narHash": "sha256-4JQPkO7qW3UAiw64Imp5nSCEiDblZBz20tp7x8WkgN8=",
+        "owner": "rlipsc",
+        "repo": "polymorph",
+        "rev": "57e64daacb23890cf9851c57d6d90608fbb4ca98",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rlipsc",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "polymorph",
         "type": "github"
       }
     }

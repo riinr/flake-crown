@@ -21,6 +21,14 @@
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."balls".owner = "nim-nix-pkgs";
+  inputs."balls".ref   = "master";
+  inputs."balls".repo  = "balls";
+  inputs."balls".dir   = "";
+  inputs."balls".type  = "github";
+  inputs."balls".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."balls".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

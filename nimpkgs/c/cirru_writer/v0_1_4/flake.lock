@@ -1,5 +1,32 @@
 {
   "nodes": {
+    "edn": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-edn-0_2_3": "src-edn-0_2_3"
+      },
+      "locked": {
+        "dir": "0_2_3",
+        "lastModified": 1650750212,
+        "narHash": "sha256-cQubLWQPwgFunhm1QnLoFwTUnog2gToK+PL3Jh0O4B8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "edn",
+        "rev": "8517958f575ae3f82b60656afa54a7e5c1fa7a75",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_2_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "edn",
+        "type": "github"
+      }
+    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -34,6 +61,7 @@
     },
     "root": {
       "inputs": {
+        "edn": "edn",
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
         "src-cirru_writer-v0_1_4": "src-cirru_writer-v0_1_4"
@@ -53,6 +81,23 @@
         "owner": "Cirru",
         "ref": "refs/tags/v0.1.4",
         "repo": "writer.nim",
+        "type": "github"
+      }
+    },
+    "src-edn-0_2_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1620555931,
+        "narHash": "sha256-+1AwHJYzTtWlr4L6qq32G95v0adUk+FyxEN7l7CA2Rw=",
+        "owner": "rosado",
+        "repo": "edn.nim",
+        "rev": "505bf78c4672f324218f5e89e561f3debee72868",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rosado",
+        "ref": "refs/tags/0.2.3",
+        "repo": "edn.nim",
         "type": "github"
       }
     }

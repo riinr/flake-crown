@@ -37,6 +37,14 @@
   inputs."karax".inputs.nixpkgs.follows = "nixpkgs";
   inputs."karax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."cookiejar".owner = "nim-nix-pkgs";
+  inputs."cookiejar".ref   = "master";
+  inputs."cookiejar".repo  = "cookiejar";
+  inputs."cookiejar".dir   = "v0_3_0";
+  inputs."cookiejar".type  = "github";
+  inputs."cookiejar".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."cookiejar".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."httpbeast".owner = "nim-nix-pkgs";
   inputs."httpbeast".ref   = "master";
   inputs."httpbeast".repo  = "httpbeast";

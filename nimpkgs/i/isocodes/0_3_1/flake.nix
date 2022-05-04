@@ -21,6 +21,14 @@
   inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."bump".owner = "nim-nix-pkgs";
+  inputs."bump".ref   = "master";
+  inputs."bump".repo  = "bump";
+  inputs."bump".dir   = "1_8_29";
+  inputs."bump".type  = "github";
+  inputs."bump".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."bump".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

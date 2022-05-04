@@ -40,7 +40,7 @@
   inputs."vmath".owner = "nim-nix-pkgs";
   inputs."vmath".ref   = "master";
   inputs."vmath".repo  = "vmath";
-  inputs."vmath".dir   = "1_1_2";
+  inputs."vmath".dir   = "1_1_4";
   inputs."vmath".type  = "github";
   inputs."vmath".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -64,7 +64,7 @@
   inputs."snappy".owner = "nim-nix-pkgs";
   inputs."snappy".ref   = "master";
   inputs."snappy".repo  = "snappy";
-  inputs."snappy".dir   = "";
+  inputs."snappy".dir   = "master";
   inputs."snappy".type  = "github";
   inputs."snappy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."snappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -76,6 +76,14 @@
   inputs."html5_canvas".type  = "github";
   inputs."html5_canvas".inputs.nixpkgs.follows = "nixpkgs";
   inputs."html5_canvas".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."staticglfw".owner = "nim-nix-pkgs";
+  inputs."staticglfw".ref   = "master";
+  inputs."staticglfw".repo  = "staticglfw";
+  inputs."staticglfw".dir   = "4_1_3";
+  inputs."staticglfw".type  = "github";
+  inputs."staticglfw".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."staticglfw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

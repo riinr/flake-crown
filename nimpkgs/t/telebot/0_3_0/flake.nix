@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-telebot-0_3_0.flake = false;
-  inputs.src-telebot-0_3_0.owner = "ba0f3";
   inputs.src-telebot-0_3_0.ref   = "refs/tags/0.3.0";
+  inputs.src-telebot-0_3_0.owner = "ba0f3";
   inputs.src-telebot-0_3_0.repo  = "telebot.nim";
   inputs.src-telebot-0_3_0.type  = "github";
   
@@ -17,10 +17,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-telebot-0_3_0"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-telebot-0_3_0";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

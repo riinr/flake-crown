@@ -16,7 +16,7 @@
   inputs."gintro".owner = "nim-nix-pkgs";
   inputs."gintro".ref   = "master";
   inputs."gintro".repo  = "gintro";
-  inputs."gintro".dir   = "v0_9_7";
+  inputs."gintro".dir   = "v0_9_8";
   inputs."gintro".type  = "github";
   inputs."gintro".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gintro".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

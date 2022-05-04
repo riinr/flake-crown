@@ -13,6 +13,14 @@
   inputs.src-nicoru-develop.repo  = "nicoru";
   inputs.src-nicoru-develop.type  = "github";
   
+  inputs."syscall".owner = "nim-nix-pkgs";
+  inputs."syscall".ref   = "master";
+  inputs."syscall".repo  = "syscall";
+  inputs."syscall".dir   = "master";
+  inputs."syscall".type  = "github";
+  inputs."syscall".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."syscall".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."seccomp".owner = "nim-nix-pkgs";
   inputs."seccomp".ref   = "master";
   inputs."seccomp".repo  = "seccomp";

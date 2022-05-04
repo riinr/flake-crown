@@ -16,7 +16,7 @@
   inputs."pixie".owner = "nim-nix-pkgs";
   inputs."pixie".ref   = "master";
   inputs."pixie".repo  = "pixie";
-  inputs."pixie".dir   = "4_1_0";
+  inputs."pixie".dir   = "4_2_0";
   inputs."pixie".type  = "github";
   inputs."pixie".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pixie".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -24,7 +24,7 @@
   inputs."vmath".owner = "nim-nix-pkgs";
   inputs."vmath".ref   = "master";
   inputs."vmath".repo  = "vmath";
-  inputs."vmath".dir   = "1_1_2";
+  inputs."vmath".dir   = "1_1_4";
   inputs."vmath".type  = "github";
   inputs."vmath".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

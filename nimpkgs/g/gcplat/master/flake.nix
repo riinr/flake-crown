@@ -13,6 +13,30 @@
   inputs.src-gcplat-master.repo  = "gcplat";
   inputs.src-gcplat-master.type  = "github";
   
+  inputs."jwt".owner = "nim-nix-pkgs";
+  inputs."jwt".ref   = "master";
+  inputs."jwt".repo  = "jwt";
+  inputs."jwt".dir   = "master";
+  inputs."jwt".type  = "github";
+  inputs."jwt".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jwt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."github-disruptek-rest".owner = "nim-nix-pkgs";
+  inputs."github-disruptek-rest".ref   = "master";
+  inputs."github-disruptek-rest".repo  = "github-disruptek-rest";
+  inputs."github-disruptek-rest".dir   = "1_0_5";
+  inputs."github-disruptek-rest".type  = "github";
+  inputs."github-disruptek-rest".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-disruptek-rest".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."openapi".owner = "nim-nix-pkgs";
+  inputs."openapi".ref   = "master";
+  inputs."openapi".repo  = "openapi";
+  inputs."openapi".dir   = "3_3_1";
+  inputs."openapi".type  = "github";
+  inputs."openapi".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."openapi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."npeg".owner = "nim-nix-pkgs";
   inputs."npeg".ref   = "master";
   inputs."npeg".repo  = "npeg";

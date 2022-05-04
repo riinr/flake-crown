@@ -527,6 +527,22 @@
   inputs."telebot-2022_02_02".inputs.nixpkgs.follows = "nixpkgs";
   inputs."telebot-2022_02_02".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."telebot-2022_04_16".dir   = "2022_04_16";
+  inputs."telebot-2022_04_16".owner = "nim-nix-pkgs";
+  inputs."telebot-2022_04_16".ref   = "master";
+  inputs."telebot-2022_04_16".repo  = "telebot";
+  inputs."telebot-2022_04_16".type  = "github";
+  inputs."telebot-2022_04_16".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."telebot-2022_04_16".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."telebot-2022_04_17".dir   = "2022_04_17";
+  inputs."telebot-2022_04_17".owner = "nim-nix-pkgs";
+  inputs."telebot-2022_04_17".ref   = "master";
+  inputs."telebot-2022_04_17".repo  = "telebot";
+  inputs."telebot-2022_04_17".type  = "github";
+  inputs."telebot-2022_04_17".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."telebot-2022_04_17".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."telebot-signed".dir   = "signed";
   inputs."telebot-signed".owner = "nim-nix-pkgs";
   inputs."telebot-signed".ref   = "master";

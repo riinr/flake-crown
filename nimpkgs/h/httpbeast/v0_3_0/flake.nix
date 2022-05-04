@@ -13,6 +13,14 @@
   inputs.src-httpbeast-v0_3_0.repo  = "httpbeast";
   inputs.src-httpbeast-v0_3_0.type  = "github";
   
+  inputs."github-iffy-asynctools".owner = "nim-nix-pkgs";
+  inputs."github-iffy-asynctools".ref   = "master";
+  inputs."github-iffy-asynctools".repo  = "github-iffy-asynctools";
+  inputs."github-iffy-asynctools".dir   = "master";
+  inputs."github-iffy-asynctools".type  = "github";
+  inputs."github-iffy-asynctools".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-iffy-asynctools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

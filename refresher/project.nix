@@ -6,16 +6,17 @@ let
   GLOB_TAG    = "${GLOB}/*/*/[0-9vV][0-9_]*";
 in
 {
-  imports = [ ./packages_other.nix ];
+  imports = [ ./packages_other.nix ./alias_other.nix ./nix_deps.nix ];
   files.cmds.gcc              = true;
   files.cmds.git              = true;
   files.cmds.jq               = true;
-  files.cmds.nim-unwrapped    = true;
-  files.cmds.nimble-unwrapped = true;
+  #files.cmds.nim-unwrapped    = true;
+  #files.cmds.nimble-unwrapped = true;
   files.cmds.yj               = true;
   files.alias.bin-results     = "find -L ${GLOB_PROJS} -type f -wholename '*/bin/*'";
   files.alias.pkg-descr       = "cat `pkg-dir $1`/meta.json|jq '.description'";
   files.alias.pkg-dir         = "echo ${GLOB}/`echo $1|cut -c1`/$1";
+  files.alias.pkg-url         = "cat `pkg-dir $1`/meta.json|jq -r '.url'";
   files.alias.pkg-versions    = "find `pkg-dir $1`/*/ -type d|grep -v .git";
   files.alias.pkg-deps        = 
     ''
@@ -28,8 +29,8 @@ in
         awk -F'/' '{print $(NF-2)}'|sort -u
     '';
   files.alias.pkgs            = "find ${GLOB}/*/* -maxdepth 0|awk -F/ '{print $NF}'";
-  files.alias.pkgs-update     = "$PRJ_ROOT/updatePkgs.nims $@";
-  files.alias.pkgs-weights    = "$PRJ_ROOT/depWeight.nim ${GLOB_PROJS}/*/meta.json";
+  files.alias.pkgs-update     = ''exec "$PRJ_ROOT/updatePkgs.nims" "$@"'';
+  files.alias.pkgs-weights    = "depWeight ${GLOB_PROJS}/*/meta.json";
   files.alias.rm-cache        = "rm ${GLOB_PROJS}/${GLOB_CACHES}";
   files.alias.rm-cache-head   = "rm ${GLOB_HEAD}/${GLOB_CACHES}";
   files.alias.rm-cache-tags   = "rm ${GLOB_TAG}/${GLOB_CACHES}";
@@ -82,4 +83,9 @@ in
         sort|\
         uniq -c
     '';
+  files.nim.depWeight   = builtins.readFile ./depWeight.nim;
+  files.nim.outprofiler = builtins.readFile ./outprofiler.nim;
+  files.nim.updateFlake = builtins.readFile ./updateFlake.nim;
+  files.nim.updateLock  = builtins.readFile ./updateLock.nim;
+  files.nim.updateMeta  = builtins.readFile ./updateMeta.nim;
 }

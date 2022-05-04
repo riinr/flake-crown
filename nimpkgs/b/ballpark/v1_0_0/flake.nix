@@ -16,7 +16,7 @@
   inputs."fsnotify".owner = "nim-nix-pkgs";
   inputs."fsnotify".ref   = "master";
   inputs."fsnotify".repo  = "fsnotify";
-  inputs."fsnotify".dir   = "master";
+  inputs."fsnotify".dir   = "v0_1_4";
   inputs."fsnotify".type  = "github";
   inputs."fsnotify".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fsnotify".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

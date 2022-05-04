@@ -29,6 +29,14 @@
   inputs."htsparse".inputs.nixpkgs.follows = "nixpkgs";
   inputs."htsparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."github.com/haxscramper/frosty".owner = "nim-nix-pkgs";
+  inputs."github.com/haxscramper/frosty".ref   = "master";
+  inputs."github.com/haxscramper/frosty".repo  = "github.com/haxscramper/frosty";
+  inputs."github.com/haxscramper/frosty".dir   = "";
+  inputs."github.com/haxscramper/frosty".type  = "github";
+  inputs."github.com/haxscramper/frosty".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/haxscramper/frosty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."hmisc".owner = "nim-nix-pkgs";
   inputs."hmisc".ref   = "master";
   inputs."hmisc".repo  = "hmisc";

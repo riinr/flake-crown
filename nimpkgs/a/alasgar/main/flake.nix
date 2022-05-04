@@ -53,6 +53,22 @@
   inputs."jnim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jnim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."github-yglukhov-android".owner = "nim-nix-pkgs";
+  inputs."github-yglukhov-android".ref   = "master";
+  inputs."github-yglukhov-android".repo  = "github-yglukhov-android";
+  inputs."github-yglukhov-android".dir   = "master";
+  inputs."github-yglukhov-android".type  = "github";
+  inputs."github-yglukhov-android".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-yglukhov-android".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."darwin".owner = "nim-nix-pkgs";
+  inputs."darwin".ref   = "master";
+  inputs."darwin".repo  = "darwin";
+  inputs."darwin".dir   = "master";
+  inputs."darwin".type  = "github";
+  inputs."darwin".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."darwin".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

@@ -33,11 +33,11 @@
       },
       "locked": {
         "dir": "1_0_2",
-        "lastModified": 1648163103,
-        "narHash": "sha256-QVQnKQumMm1t6VE0Pz4iUwN80nCeGbugCwYbF8XX1vs=",
+        "lastModified": 1651555434,
+        "narHash": "sha256-tOwMIzCi6x5oOLqsuk3AmJHCLzAhbUIr+9B1aJFCJV8=",
         "owner": "nim-nix-pkgs",
         "repo": "foreach",
-        "rev": "6a09d5b2da93a9eb00450e376a17b2a382e67ce5",
+        "rev": "912a188a1c0102a09d96e6591be3492072412134",
         "type": "github"
       },
       "original": {
@@ -48,10 +48,67 @@
         "type": "github"
       }
     },
+    "foreach_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "github-disruptek-rest",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "github-disruptek-rest",
+          "nixpkgs"
+        ],
+        "src-foreach-1_0_2": "src-foreach-1_0_2_2"
+      },
+      "locked": {
+        "dir": "1_0_2",
+        "lastModified": 1650750238,
+        "narHash": "sha256-w6O2ALwrIqzd/8NXhTKEkl49KBYMys2Xyajmd1zzITI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "foreach",
+        "rev": "bd253f54d286344815fc3514bb4301e67647441d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "1_0_2",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "foreach",
+        "type": "github"
+      }
+    },
+    "github-disruptek-rest": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "foreach": "foreach_2",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rest-1_0_5": "src-rest-1_0_5"
+      },
+      "locked": {
+        "dir": "1_0_5",
+        "lastModified": 1651556721,
+        "narHash": "sha256-gIo9D1all8qvr/fFfKfP+qGua/KgI0jLlPXBiB/ZLp4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-disruptek-rest",
+        "rev": "c8e69def04ce7104771d14d92f88d75f74e81b43",
+        "type": "github"
+      },
+      "original": {
+        "dir": "1_0_5",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-disruptek-rest",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
-        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
-        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
         "type": "path"
       },
       "original": {
@@ -71,11 +128,11 @@
       },
       "locked": {
         "dir": "0_26_0",
-        "lastModified": 1648163416,
-        "narHash": "sha256-+INykC+lIYAWtZyT3OFXYDcVh1jIfi36LbwNcOiXcwk=",
+        "lastModified": 1651555809,
+        "narHash": "sha256-sbWoPn7M+k1UcL+jb7ha+HmsgzCvBN84XpNrkybAfe4=",
         "owner": "nim-nix-pkgs",
         "repo": "npeg",
-        "rev": "59d3bc233ce45eec739e1245105f3bd73c9f9f9f",
+        "rev": "cf89fc0fc9388b47992ac5b055b114c75da985ca",
         "type": "github"
       },
       "original": {
@@ -90,12 +147,30 @@
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "foreach": "foreach",
+        "github-disruptek-rest": "github-disruptek-rest",
         "nixpkgs": "nixpkgs",
         "npeg": "npeg",
         "src-openapi-master": "src-openapi-master"
       }
     },
     "src-foreach-1_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569360881,
+        "narHash": "sha256-8dHG9O+ZccN0Nqz0jCTFN/aLXXCIVJM1Be/P6WJ0l50=",
+        "owner": "disruptek",
+        "repo": "foreach",
+        "rev": "dedfdd415e8423378d74fa3986f9f25a1127ebf9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/1.0.2",
+        "repo": "foreach",
+        "type": "github"
+      }
+    },
+    "src-foreach-1_0_2_2": {
       "flake": false,
       "locked": {
         "lastModified": 1569360881,
@@ -143,6 +218,23 @@
         "owner": "disruptek",
         "ref": "refs/heads/master",
         "repo": "openapi",
+        "type": "github"
+      }
+    },
+    "src-rest-1_0_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1590425893,
+        "narHash": "sha256-kLmnq5bLmz3GA8rHkxirlq4feDnhuJHREmFgZpQZ8PA=",
+        "owner": "disruptek",
+        "repo": "rest",
+        "rev": "6e7107d8bed70fd94e892453d337a3b042583684",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/1.0.5",
+        "repo": "rest",
         "type": "github"
       }
     }

@@ -21,10 +21,37 @@
         "type": "github"
       }
     },
+    "github-zedeus-redis": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-redis-v0_3_0": "src-redis-v0_3_0"
+      },
+      "locked": {
+        "dir": "v0_3_0",
+        "lastModified": 1648447350,
+        "narHash": "sha256-AmIiJj2QD/TurGaeNqaBc1F5mPUizC4lmIOzSt5P1DU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-zedeus-redis",
+        "rev": "9a5d4d124d9f21dc69f74fe219d10244e5dd6d67",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_3_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-zedeus-redis",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
-        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
-        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
         "type": "path"
       },
       "original": {
@@ -35,8 +62,26 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "github-zedeus-redis": "github-zedeus-redis",
         "nixpkgs": "nixpkgs",
         "src-redpool-master": "src-redpool-master"
+      }
+    },
+    "src-redis-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1545501893,
+        "narHash": "sha256-4gBsKJXIsYr7lUrsmJOu4aF0rLi/BnxCk0UqmsDNQlg=",
+        "owner": "zedeus",
+        "repo": "redis",
+        "rev": "f1d67f91638340e5a7bc24fc6243ad769cf63455",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zedeus",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "redis",
+        "type": "github"
       }
     },
     "src-redpool-master": {

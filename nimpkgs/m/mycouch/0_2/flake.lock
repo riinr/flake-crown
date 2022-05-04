@@ -21,6 +21,33 @@
         "type": "github"
       }
     },
+    "github-hamidb80-nimcoverage": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-github-hamidb80-nimcoverage-master": "src-github-hamidb80-nimcoverage-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650754284,
+        "narHash": "sha256-wBI4Zk/eEyb9b0+28SPYVMau6uTOldXBN7OjgUrZK+A=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-hamidb80-nimcoverage",
+        "rev": "7c24b531e3b9c439cdfd8509a138a17de2c36cfd",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-hamidb80-nimcoverage",
+        "type": "github"
+      }
+    },
     "macroplus": {
       "inputs": {
         "flakeNimbleLib": [
@@ -89,10 +116,28 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "github-hamidb80-nimcoverage": "github-hamidb80-nimcoverage",
         "macroplus": "macroplus",
         "macroutils": "macroutils",
         "nixpkgs": "nixpkgs",
         "src-mycouch-0_2": "src-mycouch-0_2"
+      }
+    },
+    "src-github-hamidb80-nimcoverage-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1626882361,
+        "narHash": "sha256-d9LDCalTElLFPgY9vBJ2ZTeRhb++bFFRolrUA88NzeQ=",
+        "owner": "hamidb80",
+        "repo": "coverage",
+        "rev": "e403ad893b23f8bbe7c9cf71508e3cd81cd0a21b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hamidb80",
+        "ref": "refs/heads/master",
+        "repo": "coverage",
+        "type": "github"
       }
     },
     "src-macroplus-0_2_0": {

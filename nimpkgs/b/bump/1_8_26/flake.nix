@@ -13,6 +13,22 @@
   inputs.src-bump-1_8_26.repo  = "bump";
   inputs.src-bump-1_8_26.type  = "github";
   
+  inputs."github-disruptek-cutelog".owner = "nim-nix-pkgs";
+  inputs."github-disruptek-cutelog".ref   = "master";
+  inputs."github-disruptek-cutelog".repo  = "github-disruptek-cutelog";
+  inputs."github-disruptek-cutelog".dir   = "1_1_2";
+  inputs."github-disruptek-cutelog".type  = "github";
+  inputs."github-disruptek-cutelog".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-disruptek-cutelog".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."balls".owner = "nim-nix-pkgs";
+  inputs."balls".ref   = "master";
+  inputs."balls".repo  = "balls";
+  inputs."balls".dir   = "";
+  inputs."balls".type  = "github";
+  inputs."balls".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."balls".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";

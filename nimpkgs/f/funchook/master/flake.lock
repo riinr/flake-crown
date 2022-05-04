@@ -1,5 +1,32 @@
 {
   "nodes": {
+    "distorm3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-distorm3-3_5_2": "src-distorm3-3_5_2"
+      },
+      "locked": {
+        "dir": "3_5_2",
+        "lastModified": 1651555376,
+        "narHash": "sha256-jbiflhbpcRwuPaG9RCVmC+JIpHXsBbaLg+po99d7qKU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "distorm3",
+        "rev": "844bf4bdde586ff8db864e51a0c4f2732ac32172",
+        "type": "github"
+      },
+      "original": {
+        "dir": "3_5_2",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "distorm3",
+        "type": "github"
+      }
+    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -23,8 +50,8 @@
     },
     "nixpkgs": {
       "locked": {
-        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
-        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
         "type": "path"
       },
       "original": {
@@ -34,9 +61,27 @@
     },
     "root": {
       "inputs": {
+        "distorm3": "distorm3",
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
         "src-funchook-master": "src-funchook-master"
+      }
+    },
+    "src-distorm3-3_5_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1630815464,
+        "narHash": "sha256-AgCphUzG2OIbrIiNk2HzebkqucpYkGbuq2S5oD/3Apc=",
+        "owner": "ba0f3",
+        "repo": "distorm3.nim",
+        "rev": "692d433f83f4e7b475e1a795c2e2d079e277cec4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/tags/3.5.2",
+        "repo": "distorm3.nim",
+        "type": "github"
       }
     },
     "src-funchook-master": {

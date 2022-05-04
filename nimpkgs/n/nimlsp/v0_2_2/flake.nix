@@ -13,13 +13,13 @@
   inputs.src-nimlsp-v0_2_2.repo  = "nimlsp";
   inputs.src-nimlsp-v0_2_2.type  = "github";
   
-  inputs."astpatternmatching".owner = "nim-nix-pkgs";
-  inputs."astpatternmatching".ref   = "master";
-  inputs."astpatternmatching".repo  = "astpatternmatching";
-  inputs."astpatternmatching".dir   = "";
-  inputs."astpatternmatching".type  = "github";
-  inputs."astpatternmatching".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."astpatternmatching".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."ast_pattern_matching".owner = "nim-nix-pkgs";
+  inputs."ast_pattern_matching".ref   = "master";
+  inputs."ast_pattern_matching".repo  = "ast_pattern_matching";
+  inputs."ast_pattern_matching".dir   = "master";
+  inputs."ast_pattern_matching".type  = "github";
+  inputs."ast_pattern_matching".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ast_pattern_matching".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."jsonschema".owner = "nim-nix-pkgs";
   inputs."jsonschema".ref   = "master";

@@ -7,8 +7,39 @@
   "license": "MIT",
   "web": "https://github.com/al6x/nim/tree/main/nodem",
   "refs": [
-    "fatal: https://github.com/al6x/nim?subdir=nodem/info/refs not valid: is this a git repository?",
+    "refs/heads/main",
+    "refs/heads/v1",
+    "refs/heads/v2",
     ""
   ],
-  "heads": []
+  "heads": [
+    {
+      "name": "nodem",
+      "version": "1.4.0",
+      "author": "Alex Craft http://al6x.com",
+      "desc": "Call remote functions as local",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": ".",
+      "backend": "c",
+      "ref": "refs/heads/main"
+    }
+  ]
 }

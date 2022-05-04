@@ -13,6 +13,14 @@
   inputs.src-scraper-master.repo  = "scraper";
   inputs.src-scraper-master.type  = "gitlab";
   
+  inputs."github-thisago-findxml".owner = "nim-nix-pkgs";
+  inputs."github-thisago-findxml".ref   = "master";
+  inputs."github-thisago-findxml".repo  = "github-thisago-findxml";
+  inputs."github-thisago-findxml".dir   = "master";
+  inputs."github-thisago-findxml".type  = "github";
+  inputs."github-thisago-findxml".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-thisago-findxml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

@@ -21,6 +21,14 @@
   inputs."bearssl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bearssl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."github-yglukhov-bearssl_pkey_decoder".owner = "nim-nix-pkgs";
+  inputs."github-yglukhov-bearssl_pkey_decoder".ref   = "master";
+  inputs."github-yglukhov-bearssl_pkey_decoder".repo  = "github-yglukhov-bearssl_pkey_decoder";
+  inputs."github-yglukhov-bearssl_pkey_decoder".dir   = "master";
+  inputs."github-yglukhov-bearssl_pkey_decoder".type  = "github";
+  inputs."github-yglukhov-bearssl_pkey_decoder".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-yglukhov-bearssl_pkey_decoder".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

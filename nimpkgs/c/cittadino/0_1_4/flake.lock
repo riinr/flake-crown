@@ -21,6 +21,33 @@
         "type": "github"
       }
     },
+    "github-subsetpark-nim-stomp": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-stomp-0_1_3": "src-stomp-0_1_3"
+      },
+      "locked": {
+        "dir": "0_1_3",
+        "lastModified": 1648447344,
+        "narHash": "sha256-zA9tyuYyBw0+T+24+R8C2qSqUP880/2ZI5v9qscs3po=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-subsetpark-nim-stomp",
+        "rev": "f82503468969186fccb303329b4fdb40a86bb92b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_1_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-subsetpark-nim-stomp",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
@@ -35,6 +62,7 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "github-subsetpark-nim-stomp": "github-subsetpark-nim-stomp",
         "nixpkgs": "nixpkgs",
         "src-cittadino-0_1_4": "src-cittadino-0_1_4"
       }
@@ -53,6 +81,23 @@
         "owner": "makingspace",
         "ref": "refs/tags/0.1.4",
         "repo": "cittadino",
+        "type": "github"
+      }
+    },
+    "src-stomp-0_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1523047595,
+        "narHash": "sha256-LXIjy18wC8mmv9IGPsJBDXvzzyQ2QruSkl9I7sN3qKE=",
+        "owner": "subsetpark",
+        "repo": "nim-stomp",
+        "rev": "00538d9f797709f570b2092f2bb7df8c3d73e8d8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "subsetpark",
+        "ref": "refs/tags/0.1.3",
+        "repo": "nim-stomp",
         "type": "github"
       }
     }

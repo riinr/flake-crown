@@ -2,41 +2,12 @@
   "nodes": {
     "bearssl": {
       "inputs": {
-        "bearssl-master": "bearssl-master",
         "flakeNimbleLib": [
           "jwt",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
           "jwt",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1647997775,
-        "narHash": "sha256-75YhxJ/f4icyYuACZ3ykkH0dQ5X1itwi9xOTfRdV8YA=",
-        "owner": "nim-nix-pkgs",
-        "repo": "bearssl",
-        "rev": "2a216f53a35bbc3dde8c984afce54dd306f7e124",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "bearssl",
-        "type": "github"
-      }
-    },
-    "bearssl-master": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "jwt",
-          "bearssl",
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "jwt",
-          "bearssl",
           "nixpkgs"
         ],
         "src-bearssl-master": "src-bearssl-master",
@@ -44,11 +15,43 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1647997775,
-        "narHash": "sha256-75YhxJ/f4icyYuACZ3ykkH0dQ5X1itwi9xOTfRdV8YA=",
+        "lastModified": 1650754745,
+        "narHash": "sha256-J36Y+MJoSpcd+/JawuOofnggoHVHD8FrCtcZcANl90I=",
         "owner": "nim-nix-pkgs",
         "repo": "bearssl",
-        "rev": "2a216f53a35bbc3dde8c984afce54dd306f7e124",
+        "rev": "777be649d3a38b6b4ec1592b6bed983382003129",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "bearssl",
+        "type": "github"
+      }
+    },
+    "bearssl_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "jwt",
+          "github-yglukhov-bearssl_pkey_decoder",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "jwt",
+          "github-yglukhov-bearssl_pkey_decoder",
+          "nixpkgs"
+        ],
+        "src-bearssl-master": "src-bearssl-master_2",
+        "unittest2": "unittest2_2"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650754745,
+        "narHash": "sha256-J36Y+MJoSpcd+/JawuOofnggoHVHD8FrCtcZcANl90I=",
+        "owner": "nim-nix-pkgs",
+        "repo": "bearssl",
+        "rev": "777be649d3a38b6b4ec1592b6bed983382003129",
         "type": "github"
       },
       "original": {
@@ -71,11 +74,11 @@
       },
       "locked": {
         "dir": "v1_5_23",
-        "lastModified": 1648162991,
-        "narHash": "sha256-tV9CXtg3ZHM7zTScu0UCNZnlwQJURcnUkm9LYfSlv70=",
+        "lastModified": 1650754243,
+        "narHash": "sha256-gaVhS4LAuUCeHGEFRHNUxYg6FddTAeJojL+yXyZaI74=",
         "owner": "nim-nix-pkgs",
         "repo": "cligen",
-        "rev": "23f12e283a0b2865b94487e828465a5e43eff0bb",
+        "rev": "6f3a5515ceec9a6638f4f39d3f9a40d76ecb25d6",
         "type": "github"
       },
       "original": {
@@ -107,12 +110,43 @@
         "type": "github"
       }
     },
+    "github-yglukhov-bearssl_pkey_decoder": {
+      "inputs": {
+        "bearssl": "bearssl_2",
+        "flakeNimbleLib": [
+          "jwt",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "jwt",
+          "nixpkgs"
+        ],
+        "src-bearssl_pkey_decoder-master": "src-bearssl_pkey_decoder-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650756093,
+        "narHash": "sha256-05an53g4HbxiiSMnPweMTseLbWK8dLYXN6Gdw6kArbk=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-yglukhov-bearssl_pkey_decoder",
+        "rev": "dfb76ff9cd69f1bf7c9b45e4d1c2cf6cbcb43d5c",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-yglukhov-bearssl_pkey_decoder",
+        "type": "github"
+      }
+    },
     "jwt": {
       "inputs": {
         "bearssl": "bearssl",
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
+        "github-yglukhov-bearssl_pkey_decoder": "github-yglukhov-bearssl_pkey_decoder",
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -120,11 +154,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1648081155,
-        "narHash": "sha256-Cx/KXA8YMIsRPMYVX8MGWBVEBWUfy0d4pDiEwhR8wAY=",
+        "lastModified": 1650750328,
+        "narHash": "sha256-xayFuh/LKbwUviuyeNydcv2BWzDSTWiFBcz0jFGV14U=",
         "owner": "nim-nix-pkgs",
         "repo": "jwt",
-        "rev": "caec0e3b43b0ed6d2b3509f5f814244b20c8b0e3",
+        "rev": "89c1effe4da30d5c660c8965110adf7fe3f6232d",
         "type": "github"
       },
       "original": {
@@ -158,17 +192,51 @@
     "src-bearssl-master": {
       "flake": false,
       "locked": {
-        "lastModified": 1646393384,
-        "narHash": "sha256-deWHK4YkyqmIcIDMo+PNdCbSIlBtWtm659bfUC4LRQk=",
+        "lastModified": 1649948934,
+        "narHash": "sha256-vZ0Zg0kM8OjBuULfSMUQgpDj0mwd4JwESvNuJkKXUSQ=",
         "owner": "status-im",
         "repo": "nim-bearssl",
-        "rev": "65b74302e03912ab5bde64b6da10d05896139007",
+        "rev": "0ebb1d7a4af5f4b4d4756a9b6dbfe5d411fa55d9",
         "type": "github"
       },
       "original": {
         "owner": "status-im",
         "ref": "refs/heads/master",
         "repo": "nim-bearssl",
+        "type": "github"
+      }
+    },
+    "src-bearssl-master_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1649948934,
+        "narHash": "sha256-vZ0Zg0kM8OjBuULfSMUQgpDj0mwd4JwESvNuJkKXUSQ=",
+        "owner": "status-im",
+        "repo": "nim-bearssl",
+        "rev": "0ebb1d7a4af5f4b4d4756a9b6dbfe5d411fa55d9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-bearssl",
+        "type": "github"
+      }
+    },
+    "src-bearssl_pkey_decoder-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1586340668,
+        "narHash": "sha256-dAzVbwhxDwpSwQP+0jzH2XfaByDXeq0J7HPNHC+h9TA=",
+        "owner": "yglukhov",
+        "repo": "bearssl_pkey_decoder",
+        "rev": "fd2bc29d1283eb5d988a5c8a5660c1be9b9265f8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "bearssl_pkey_decoder",
         "type": "github"
       }
     },
@@ -240,29 +308,77 @@
         "type": "github"
       }
     },
+    "src-unittest2-v0_0_3_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1639728552,
+        "narHash": "sha256-gHfxt4eNLaC9KNh3kC1zFNV42UcDipfyoiCnDHyyb+k=",
+        "owner": "status-im",
+        "repo": "nim-unittest2",
+        "rev": "4e2893eacb916c7678fdc4935ff7420f13bf3a9c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/tags/v0.0.3",
+        "repo": "nim-unittest2",
+        "type": "github"
+      }
+    },
     "unittest2": {
       "inputs": {
         "flakeNimbleLib": [
           "jwt",
           "bearssl",
-          "bearssl-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
           "jwt",
           "bearssl",
-          "bearssl-master",
           "nixpkgs"
         ],
         "src-unittest2-v0_0_3": "src-unittest2-v0_0_3"
       },
       "locked": {
         "dir": "v0_0_3",
-        "lastModified": 1647935047,
-        "narHash": "sha256-+YkpDPXGCefuXBVsa75MnGbJ8jkKhJmx676rmxG17nU=",
+        "lastModified": 1650750657,
+        "narHash": "sha256-h0tHKJr7csHNpXn/Ai9STzz4Fp/St4E/Kex6Jn4u8ys=",
         "owner": "nim-nix-pkgs",
         "repo": "unittest2",
-        "rev": "632ac00c19b3d8bdec95bdc44e5c34310a55fd89",
+        "rev": "6255fb952e1bba7526b4a88be51e63595cd050e6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_0_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "unittest2",
+        "type": "github"
+      }
+    },
+    "unittest2_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "jwt",
+          "github-yglukhov-bearssl_pkey_decoder",
+          "bearssl",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "jwt",
+          "github-yglukhov-bearssl_pkey_decoder",
+          "bearssl",
+          "nixpkgs"
+        ],
+        "src-unittest2-v0_0_3": "src-unittest2-v0_0_3_2"
+      },
+      "locked": {
+        "dir": "v0_0_3",
+        "lastModified": 1650750657,
+        "narHash": "sha256-h0tHKJr7csHNpXn/Ai9STzz4Fp/St4E/Kex6Jn4u8ys=",
+        "owner": "nim-nix-pkgs",
+        "repo": "unittest2",
+        "rev": "6255fb952e1bba7526b4a88be51e63595cd050e6",
         "type": "github"
       },
       "original": {

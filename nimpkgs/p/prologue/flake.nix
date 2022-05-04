@@ -23,6 +23,14 @@
   inputs."prologue-0_4_6".inputs.nixpkgs.follows = "nixpkgs";
   inputs."prologue-0_4_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."prologue-V0_5_8".dir   = "V0_5_8";
+  inputs."prologue-V0_5_8".owner = "nim-nix-pkgs";
+  inputs."prologue-V0_5_8".ref   = "master";
+  inputs."prologue-V0_5_8".repo  = "prologue";
+  inputs."prologue-V0_5_8".type  = "github";
+  inputs."prologue-V0_5_8".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."prologue-V0_5_8".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."prologue-v_0_4_8".dir   = "v_0_4_8";
   inputs."prologue-v_0_4_8".owner = "nim-nix-pkgs";
   inputs."prologue-v_0_4_8".ref   = "master";
@@ -174,6 +182,14 @@
   inputs."prologue-v0_5_6".type  = "github";
   inputs."prologue-v0_5_6".inputs.nixpkgs.follows = "nixpkgs";
   inputs."prologue-v0_5_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."prologue-v0_5_8".dir   = "v0_5_8";
+  inputs."prologue-v0_5_8".owner = "nim-nix-pkgs";
+  inputs."prologue-v0_5_8".ref   = "master";
+  inputs."prologue-v0_5_8".repo  = "prologue";
+  inputs."prologue-v0_5_8".type  = "github";
+  inputs."prologue-v0_5_8".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."prologue-v0_5_8".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

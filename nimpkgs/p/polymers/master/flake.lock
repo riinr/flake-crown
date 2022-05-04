@@ -23,8 +23,8 @@
     },
     "nixpkgs": {
       "locked": {
-        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
-        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
         "type": "path"
       },
       "original": {
@@ -32,10 +32,38 @@
         "type": "indirect"
       }
     },
+    "polymorph": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-polymorph-v0_3_0": "src-polymorph-v0_3_0"
+      },
+      "locked": {
+        "dir": "v0_3_0",
+        "lastModified": 1651555900,
+        "narHash": "sha256-0UaPmvkaCPbiVe4mmovgSwpZz+RKzDD8CiC84nK2U5I=",
+        "owner": "nim-nix-pkgs",
+        "repo": "polymorph",
+        "rev": "57940c975869dc6ce0051d4763be33a8809e4d58",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_3_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "polymorph",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
+        "polymorph": "polymorph",
         "src-polymers-master": "src-polymers-master"
       }
     },
@@ -53,6 +81,23 @@
         "owner": "rlipsc",
         "ref": "refs/heads/master",
         "repo": "polymers",
+        "type": "github"
+      }
+    },
+    "src-polymorph-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644031861,
+        "narHash": "sha256-4JQPkO7qW3UAiw64Imp5nSCEiDblZBz20tp7x8WkgN8=",
+        "owner": "rlipsc",
+        "repo": "polymorph",
+        "rev": "57e64daacb23890cf9851c57d6d90608fbb4ca98",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rlipsc",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "polymorph",
         "type": "github"
       }
     }

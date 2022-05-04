@@ -21,10 +21,37 @@
         "type": "github"
       }
     },
+    "nimcx": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimcx-master": "src-nimcx-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555726,
+        "narHash": "sha256-SDJt1oLaVGv8umnattiOaXoCXKyTAoxfDDYZCvd/6ss=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimcx",
+        "rev": "39b6d35c3071d5698f6d02bd72e53299e194bab3",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimcx",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
-        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
-        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
         "type": "path"
       },
       "original": {
@@ -35,6 +62,7 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "nimcx": "nimcx",
         "nixpkgs": "nixpkgs",
         "src-nimFinLib-master": "src-nimFinLib-master"
       }
@@ -53,6 +81,23 @@
         "owner": "qqtop",
         "ref": "refs/heads/master",
         "repo": "NimFinLib",
+        "type": "github"
+      }
+    },
+    "src-nimcx-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1643487114,
+        "narHash": "sha256-rmk5Swqok+K4O6GF7Xafy+uPbUrmHpmZbY04mlxjdWI=",
+        "owner": "qqtop",
+        "repo": "nimcx",
+        "rev": "b0ffb0c65cf62b81591fc23a5c40232b1b698c8d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "qqtop",
+        "ref": "refs/heads/master",
+        "repo": "nimcx",
         "type": "github"
       }
     }

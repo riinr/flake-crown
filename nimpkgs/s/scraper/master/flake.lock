@@ -21,10 +21,37 @@
         "type": "github"
       }
     },
+    "github-thisago-findxml": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-findxml-master": "src-findxml-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555491,
+        "narHash": "sha256-jgZ2ViFOaCkAZV+E95uiCrvSdME3ogk+4B3kRuYIB9E=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-thisago-findxml",
+        "rev": "741837c2fdde3e0e554e34a545f02ecb837981ea",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-thisago-findxml",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
-        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
-        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
         "type": "path"
       },
       "original": {
@@ -35,8 +62,26 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "github-thisago-findxml": "github-thisago-findxml",
         "nixpkgs": "nixpkgs",
         "src-scraper-master": "src-scraper-master"
+      }
+    },
+    "src-findxml-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1634672744,
+        "narHash": "sha256-6c1XThkCWHK8dILHBr8N3/vYbhoRIsF4miPEmPgfA+A=",
+        "owner": "thisago",
+        "repo": "findxml",
+        "rev": "a25992b2d7848c897fdc2c09bc636e922f03a030",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thisago",
+        "ref": "refs/heads/master",
+        "repo": "findxml",
+        "type": "github"
       }
     },
     "src-scraper-master": {

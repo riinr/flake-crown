@@ -11,7 +11,7 @@ proc maxRunning(cmd: string, maxProcs: int) =
 
 proc preCompile(cmd: string) =
   echo fmt"Compiling {cmd}.nim"
-  exec fmt"./{cmd}.nim >/dev/null || true"
+  exec fmt"{cmd} >/dev/null || true"
 
 proc run(pkgItems: seq[JsonNode]; cmd: string) =
   defer: maxRunning cmd, 0
@@ -23,8 +23,8 @@ proc run(pkgItems: seq[JsonNode]; cmd: string) =
       exec "sleep 0.23"
       echo fmt"""Running {cmd} for {pkg["name"]}"""
       if DEBUG != "":
-        echo fmt"echo {pkgJSON.quoteShell}|./{cmd}.nim &"
-      exec fmt"echo {pkgJSON.quoteShell}|./{cmd}.nim &"
+        echo fmt"echo {pkgJSON.quoteShell}|{cmd} &"
+      exec fmt"echo {pkgJSON.quoteShell}|{cmd} &"
 
 
 if defined process:

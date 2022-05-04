@@ -29,6 +29,33 @@
         "type": "github"
       }
     },
+    "cookiejar": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-cookiejar-v0_3_0": "src-cookiejar-v0_3_0"
+      },
+      "locked": {
+        "dir": "v0_3_0",
+        "lastModified": 1650749688,
+        "narHash": "sha256-QCkYx5aeyD4OXG7KFrdE/NvsOjnI9myC6l+bAeML4r4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "cookiejar",
+        "rev": "cebddb1942d957754cfde334e1b356bf22a7f739",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_3_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "cookiejar",
+        "type": "github"
+      }
+    },
     "dotenv": {
       "inputs": {
         "flakeNimbleLib": [
@@ -205,6 +232,7 @@
     },
     "root": {
       "inputs": {
+        "cookiejar": "cookiejar",
         "flakeNimbleLib": "flakeNimbleLib",
         "httpbeast": "httpbeast",
         "karax": "karax",
@@ -260,6 +288,23 @@
         "owner": "cheatfate",
         "ref": "refs/heads/master",
         "repo": "asynctools",
+        "type": "github"
+      }
+    },
+    "src-cookiejar-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1601612291,
+        "narHash": "sha256-zkQ68GUaImj5+/05ej90Ix8c6URnjVPCVj/jvVXGqcQ=",
+        "owner": "planety",
+        "repo": "cookiejar",
+        "rev": "aa96ca83a7c154f08803c7715f054d77f2d623cf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "planety",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "cookiejar",
         "type": "github"
       }
     },

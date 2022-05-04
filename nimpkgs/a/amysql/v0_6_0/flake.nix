@@ -29,6 +29,22 @@
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."github.com/bung87/zstd".owner = "nim-nix-pkgs";
+  inputs."github.com/bung87/zstd".ref   = "master";
+  inputs."github.com/bung87/zstd".repo  = "github.com/bung87/zstd";
+  inputs."github.com/bung87/zstd".dir   = "";
+  inputs."github.com/bung87/zstd".type  = "github";
+  inputs."github.com/bung87/zstd".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/bung87/zstd".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."urlly".owner = "nim-nix-pkgs";
+  inputs."urlly".ref   = "master";
+  inputs."urlly".repo  = "urlly";
+  inputs."urlly".dir   = "1_0_0";
+  inputs."urlly".type  = "github";
+  inputs."urlly".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."urlly".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."chronos".owner = "nim-nix-pkgs";
   inputs."chronos".ref   = "master";
   inputs."chronos".repo  = "chronos";

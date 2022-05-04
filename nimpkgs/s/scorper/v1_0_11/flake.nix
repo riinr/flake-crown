@@ -29,6 +29,14 @@
   inputs."npeg".inputs.nixpkgs.follows = "nixpkgs";
   inputs."npeg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."rx_nim".owner = "nim-nix-pkgs";
+  inputs."rx_nim".ref   = "master";
+  inputs."rx_nim".repo  = "rx_nim";
+  inputs."rx_nim".dir   = "master";
+  inputs."rx_nim".type  = "github";
+  inputs."rx_nim".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."rx_nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."zippy".owner = "nim-nix-pkgs";
   inputs."zippy".ref   = "master";
   inputs."zippy".repo  = "zippy";

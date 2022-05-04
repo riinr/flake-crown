@@ -77,13 +77,13 @@
   inputs."chronicles".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronicles".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."asyncdispatch2".owner = "nim-nix-pkgs";
-  inputs."asyncdispatch2".ref   = "master";
-  inputs."asyncdispatch2".repo  = "asyncdispatch2";
-  inputs."asyncdispatch2".dir   = "";
-  inputs."asyncdispatch2".type  = "github";
-  inputs."asyncdispatch2".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."asyncdispatch2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."chronos".owner = "nim-nix-pkgs";
+  inputs."chronos".ref   = "master";
+  inputs."chronos".repo  = "chronos";
+  inputs."chronos".dir   = "master";
+  inputs."chronos".type  = "github";
+  inputs."chronos".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."chronos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."eth_common".owner = "nim-nix-pkgs";
   inputs."eth_common".ref   = "master";
@@ -96,7 +96,7 @@
   inputs."snappy".owner = "nim-nix-pkgs";
   inputs."snappy".ref   = "master";
   inputs."snappy".repo  = "snappy";
-  inputs."snappy".dir   = "";
+  inputs."snappy".dir   = "master";
   inputs."snappy".type  = "github";
   inputs."snappy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."snappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -21,6 +21,14 @@
   inputs."imlib2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."imlib2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."github-pmunch-x11".owner = "nim-nix-pkgs";
+  inputs."github-pmunch-x11".ref   = "master";
+  inputs."github-pmunch-x11".repo  = "github-pmunch-x11";
+  inputs."github-pmunch-x11".dir   = "master";
+  inputs."github-pmunch-x11".type  = "github";
+  inputs."github-pmunch-x11".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-pmunch-x11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."npeg".owner = "nim-nix-pkgs";
   inputs."npeg".ref   = "master";
   inputs."npeg".repo  = "npeg";

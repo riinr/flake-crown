@@ -1,6 +1,3 @@
-#!/usr/bin/env nimcr
-#nimcr-args c
-
 import std/[
   hashes,
   json,

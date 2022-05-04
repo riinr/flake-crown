@@ -16,7 +16,7 @@
   inputs."libssh2".owner = "nim-nix-pkgs";
   inputs."libssh2".ref   = "master";
   inputs."libssh2".repo  = "libssh2";
-  inputs."libssh2".dir   = "master";
+  inputs."libssh2".dir   = "0_1_6";
   inputs."libssh2".type  = "github";
   inputs."libssh2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libssh2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -13,6 +13,14 @@
   inputs.src-cirru_writer-v0_1_1.repo  = "writer.nim";
   inputs.src-cirru_writer-v0_1_1.type  = "github";
   
+  inputs."edn".owner = "nim-nix-pkgs";
+  inputs."edn".ref   = "master";
+  inputs."edn".repo  = "edn";
+  inputs."edn".dir   = "0_2_3";
+  inputs."edn".type  = "github";
+  inputs."edn".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."edn".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

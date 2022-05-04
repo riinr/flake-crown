@@ -1,6 +1,3 @@
-#!/usr/bin/env nimcr
-#nimcr-args c -p:$NIMBLESRC_PATH/src
-
 import std/[
   algorithm,
   json,
@@ -18,6 +15,14 @@ import std/[
 import nimblepkg/version
 
 let ALIAS = parseFile "./alias.json"
+
+proc resolveAlias(name: string): string =
+  let nameLo = name.toLower
+  if ALIAS.hasKey name:
+    return resolveAlias ALIAS[name].getStr
+  if ALIAS.hasKey nameLo:
+    return resolveAlias ALIAS[nameLo].getStr
+  name
 
 
 proc refName(refInfo: JsonNode): string =
@@ -89,9 +94,9 @@ proc inputInfo(refName, url: string): JsonNode =
     result["dir"]   = %* subDir
 
 
-proc toVersionPair(dirName: string): (Version, string)=
+proc toVersionPair(dirName: string): (Version, string) =
   let
-    unVName = dirName.strip(trailing = false, chars={'v'})
+    unVName = dirName.strip(trailing = false, chars={'v'}).strip(chars={'_'})
     hashedName = '#' & dirName
   try:
     discard unVName.replace("_", "").parseUInt
@@ -167,10 +172,15 @@ iterator refInputs(refInfo: JsonNode, url: string): string =
           tmpName = tmpName
             .replace("https://", "")
             .replace("http://", "")
+            .replace("git://", "")
             .replace("git@", "")
+            .replace("@", "")
             .replace(":", "/")
           if ALIAS.hasKey tmpName:
-            ALIAS[tmpName].getStr.toLower
+            if ALIAS.hasKey ALIAS[tmpName].getStr.toLower:
+              ALIAS[ALIAS[tmpName].getStr.toLower].getStr.toLower
+            else:
+              ALIAS[tmpName].getStr.toLower
           else:
             tmpName
         version  = dep.lastestVersion depName
@@ -253,11 +263,12 @@ proc projectFlake(nameLo: string): auto =
   fmt"{flakeDir}/flake.nix".writeFile flakeContent
   echo fmt"updated {flakeDir}/flake.nix"
   discard execCmd fmt"""
-    cd {flakeDir};
+    cd {flakeDir}
     git init &>/dev/null
   """
   refsFlake nameLo, url
   discard execCmd fmt"""
+    cd {flakeDir}
     git add .
     git commit -m "chore: re index {nameLo}" . &>/dev/null \
       || true

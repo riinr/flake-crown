@@ -1,5 +1,32 @@
 {
   "nodes": {
+    "darwin": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-darwin-master": "src-darwin-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650754251,
+        "narHash": "sha256-15o0aoXBez60GpZekCuO7ccnTNb3drwg5ofVi10dwQI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "darwin",
+        "rev": "0904a495afc10efe56d09c14e4d21c7dff17a690",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "darwin",
+        "type": "github"
+      }
+    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -62,10 +89,28 @@
     },
     "root": {
       "inputs": {
+        "darwin": "darwin",
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
         "regex": "regex",
         "src-objc_runtime-v0_1_2": "src-objc_runtime-v0_1_2"
+      }
+    },
+    "src-darwin-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1648417222,
+        "narHash": "sha256-kjn68z4anxv3OIxzwlrsKmXUsBXfa4nVxqeoNXJQ1hc=",
+        "owner": "yglukhov",
+        "repo": "darwin",
+        "rev": "19015f5d4c183f49e77b08317035a358163e8bb7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "darwin",
+        "type": "github"
       }
     },
     "src-objc_runtime-v0_1_2": {

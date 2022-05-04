@@ -223,6 +223,14 @@
   inputs."neverwinter-1_5_5".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neverwinter-1_5_5".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."neverwinter-1_5_6".dir   = "1_5_6";
+  inputs."neverwinter-1_5_6".owner = "nim-nix-pkgs";
+  inputs."neverwinter-1_5_6".ref   = "master";
+  inputs."neverwinter-1_5_6".repo  = "neverwinter";
+  inputs."neverwinter-1_5_6".type  = "github";
+  inputs."neverwinter-1_5_6".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."neverwinter-1_5_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."neverwinter_utils-v1_0_0".dir   = "v1_0_0";
   inputs."neverwinter_utils-v1_0_0".owner = "nim-nix-pkgs";
   inputs."neverwinter_utils-v1_0_0".ref   = "master";

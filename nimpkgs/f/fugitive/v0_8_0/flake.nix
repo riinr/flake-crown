@@ -8,14 +8,15 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-fugitive-v0_8_0.flake = false;
-  inputs.src-fugitive-v0_8_0.owner = "haltcase";
   inputs.src-fugitive-v0_8_0.ref   = "refs/tags/v0.8.0";
+  inputs.src-fugitive-v0_8_0.owner = "haltcase";
   inputs.src-fugitive-v0_8_0.repo  = "fugitive";
   inputs.src-fugitive-v0_8_0.type  = "github";
   
   inputs."tempfile".owner = "nim-nix-pkgs";
   inputs."tempfile".ref   = "master";
   inputs."tempfile".repo  = "tempfile";
+  inputs."tempfile".dir   = "0_1_7";
   inputs."tempfile".type  = "github";
   inputs."tempfile".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tempfile".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -24,10 +25,13 @@
   let 
     lib  = flakeNimbleLib.lib;
     args = ["self" "nixpkgs" "flakeNimbleLib" "src-fugitive-v0_8_0"];
-  in lib.mkRefOutput {
+    over = if builtins.pathExists ./override.nix 
+           then { override = import ./override.nix; }
+           else { };
+  in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
     src  = deps."src-fugitive-v0_8_0";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
-  };
+  } );
 }

@@ -21,6 +21,33 @@
         "type": "github"
       }
     },
+    "github-dadadani-nim-random": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-random-master": "src-random-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650754274,
+        "narHash": "sha256-Lh3YBAgW5AHXPw7QwModZCOmqtkz0LI9S8WG3NZW950=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-dadadani-nim-random",
+        "rev": "945b8ba6cb4d84569eae579f1473ab040f619853",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-dadadani-nim-random",
+        "type": "github"
+      }
+    },
     "gmp": {
       "inputs": {
         "flakeNimbleLib": [
@@ -89,6 +116,7 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "github-dadadani-nim-random": "github-dadadani-nim-random",
         "gmp": "gmp",
         "nimcrypto": "nimcrypto",
         "nixpkgs": "nixpkgs",
@@ -145,6 +173,23 @@
         "owner": "nimgram",
         "ref": "refs/tags/v0.1.0",
         "repo": "nimgram",
+        "type": "github"
+      }
+    },
+    "src-random-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1617104406,
+        "narHash": "sha256-sTLF7RW8tJ8lH3Y35JI01lKpv1CmslT3VCTwPpry84o=",
+        "owner": "dadadani",
+        "repo": "nim-random",
+        "rev": "7869bc5d0974475a7ba59c9e0a543422d17a93e0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dadadani",
+        "ref": "refs/heads/master",
+        "repo": "nim-random",
         "type": "github"
       }
     },

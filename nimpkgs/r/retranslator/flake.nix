@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."retranslator-main".dir   = "main";
+  inputs."retranslator-main".owner = "nim-nix-pkgs";
+  inputs."retranslator-main".ref   = "master";
+  inputs."retranslator-main".repo  = "retranslator";
+  inputs."retranslator-main".type  = "github";
+  inputs."retranslator-main".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."retranslator-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."retranslator-master".dir   = "master";
   inputs."retranslator-master".owner = "nim-nix-pkgs";
   inputs."retranslator-master".ref   = "master";

@@ -122,6 +122,7 @@
   "refs": [
     "refs/heads/0.1.1",
     "refs/heads/dependabot/add-v2-config-file",
+    "refs/heads/main",
     "refs/heads/master",
     "refs/tags/0.0.1",
     "refs/tags/0.0.2",
@@ -135,6 +136,34 @@
     ""
   ],
   "heads": [
+    {
+      "name": "triplets",
+      "version": "0.0.8",
+      "author": "Ethosa",
+      "desc": "The Nim bindings for linksplatform/Data.Triplets.Kernel.",
+      "license": "AGPLv3",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "nim/src",
+      "backend": "c",
+      "ref": "refs/heads/main"
+    },
     {
       "name": "triplets",
       "version": "0.0.8",

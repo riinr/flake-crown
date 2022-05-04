@@ -37,13 +37,13 @@
   inputs."nimsha2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimsha2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."python3@".owner = "nim-nix-pkgs";
-  inputs."python3@".ref   = "master";
-  inputs."python3@".repo  = "python3@";
-  inputs."python3@".dir   = "";
-  inputs."python3@".type  = "github";
-  inputs."python3@".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."python3@".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."python3".owner = "nim-nix-pkgs";
+  inputs."python3".ref   = "master";
+  inputs."python3".repo  = "python3";
+  inputs."python3".dir   = "master";
+  inputs."python3".type  = "github";
+  inputs."python3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."python3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

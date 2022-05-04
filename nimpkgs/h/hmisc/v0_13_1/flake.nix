@@ -13,6 +13,14 @@
   inputs.src-hmisc-v0_13_1.repo  = "hmisc";
   inputs.src-hmisc-v0_13_1.type  = "github";
   
+  inputs."fusion".owner = "nim-nix-pkgs";
+  inputs."fusion".ref   = "master";
+  inputs."fusion".repo  = "fusion";
+  inputs."fusion".dir   = "v1_1";
+  inputs."fusion".type  = "github";
+  inputs."fusion".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."fusion".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."benchy".owner = "nim-nix-pkgs";
   inputs."benchy".ref   = "master";
   inputs."benchy".repo  = "benchy";

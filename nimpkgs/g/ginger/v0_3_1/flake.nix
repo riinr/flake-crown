@@ -21,6 +21,14 @@
   inputs."chroma".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chroma".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."github-vindaar-seqmath".owner = "nim-nix-pkgs";
+  inputs."github-vindaar-seqmath".ref   = "master";
+  inputs."github-vindaar-seqmath".repo  = "github-vindaar-seqmath";
+  inputs."github-vindaar-seqmath".dir   = "v0_1_13";
+  inputs."github-vindaar-seqmath".type  = "github";
+  inputs."github-vindaar-seqmath".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-vindaar-seqmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."cairo".owner = "nim-nix-pkgs";
   inputs."cairo".ref   = "master";
   inputs."cairo".repo  = "cairo";
@@ -28,6 +36,14 @@
   inputs."cairo".type  = "github";
   inputs."cairo".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cairo".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."latexdsl".owner = "nim-nix-pkgs";
+  inputs."latexdsl".ref   = "master";
+  inputs."latexdsl".repo  = "latexdsl";
+  inputs."latexdsl".dir   = "v0_1_7";
+  inputs."latexdsl".type  = "github";
+  inputs."latexdsl".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."latexdsl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."shell".owner = "nim-nix-pkgs";
   inputs."shell".ref   = "master";

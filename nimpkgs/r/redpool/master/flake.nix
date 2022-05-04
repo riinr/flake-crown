@@ -13,6 +13,14 @@
   inputs.src-redpool-master.repo  = "redpool";
   inputs.src-redpool-master.type  = "github";
   
+  inputs."github-zedeus-redis".owner = "nim-nix-pkgs";
+  inputs."github-zedeus-redis".ref   = "master";
+  inputs."github-zedeus-redis".repo  = "github-zedeus-redis";
+  inputs."github-zedeus-redis".dir   = "v0_3_0";
+  inputs."github-zedeus-redis".type  = "github";
+  inputs."github-zedeus-redis".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-zedeus-redis".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

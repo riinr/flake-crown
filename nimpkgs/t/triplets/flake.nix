@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."triplets-main".dir   = "main";
+  inputs."triplets-main".owner = "nim-nix-pkgs";
+  inputs."triplets-main".ref   = "master";
+  inputs."triplets-main".repo  = "triplets";
+  inputs."triplets-main".type  = "github";
+  inputs."triplets-main".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."triplets-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."triplets-master".dir   = "master";
   inputs."triplets-master".owner = "nim-nix-pkgs";
   inputs."triplets-master".ref   = "master";

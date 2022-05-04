@@ -23,6 +23,14 @@
   inputs."stopwatch-v3_5".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stopwatch-v3_5".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."stopwatch-v3_6".dir   = "v3_6";
+  inputs."stopwatch-v3_6".owner = "nim-nix-pkgs";
+  inputs."stopwatch-v3_6".ref   = "master";
+  inputs."stopwatch-v3_6".repo  = "stopwatch";
+  inputs."stopwatch-v3_6".type  = "github";
+  inputs."stopwatch-v3_6".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."stopwatch-v3_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

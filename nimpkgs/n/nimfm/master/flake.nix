@@ -24,7 +24,7 @@
   inputs."nimlapack".owner = "nim-nix-pkgs";
   inputs."nimlapack".ref   = "master";
   inputs."nimlapack".repo  = "nimlapack";
-  inputs."nimlapack".dir   = "0_2_0";
+  inputs."nimlapack".dir   = "0_2_1";
   inputs."nimlapack".type  = "github";
   inputs."nimlapack".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimlapack".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

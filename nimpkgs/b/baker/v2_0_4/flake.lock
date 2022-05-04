@@ -1,5 +1,33 @@
 {
   "nodes": {
+    "docopt": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "regex": "regex",
+        "src-docopt-v0_6_8": "src-docopt-v0_6_8"
+      },
+      "locked": {
+        "dir": "v0_6_8",
+        "lastModified": 1648428548,
+        "narHash": "sha256-MYw3J6Hg3j9ntP3qkVAu/vYRgzCBgKL62D2dRL75Ot4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "docopt",
+        "rev": "b3b8b4a5c53c5bed4a848e6b3ebaa0b2ab9070f3",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_6_8",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "docopt",
+        "type": "github"
+      }
+    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -113,8 +141,39 @@
         "type": "github"
       }
     },
+    "regex": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "docopt",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "docopt",
+          "nixpkgs"
+        ],
+        "src-regex-v0_19_0": "src-regex-v0_19_0",
+        "unicodedb": "unicodedb"
+      },
+      "locked": {
+        "dir": "v0_19_0",
+        "lastModified": 1648165307,
+        "narHash": "sha256-hh7rznvK+yu3p8ZPt4EPDuaHNgZjQWjI9JjrBMPOd50=",
+        "owner": "nim-nix-pkgs",
+        "repo": "regex",
+        "rev": "c29c2bc1b9229aecc89881f58c365362f0a817ea",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_19_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "regex",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
+        "docopt": "docopt",
         "flakeNimbleLib": "flakeNimbleLib",
         "markdown": "markdown",
         "ndb": "ndb",
@@ -139,6 +198,23 @@
         "owner": "jasonrbriggs",
         "ref": "refs/tags/v2.0.4",
         "repo": "baker",
+        "type": "github"
+      }
+    },
+    "src-docopt-v0_6_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1544226690,
+        "narHash": "sha256-PTaAgR2hB/5tCPffKgBS7GzzemrKPjmxd43SWIAohtM=",
+        "owner": "docopt",
+        "repo": "docopt.nim",
+        "rev": "65da8739a7534b8d78249a90778e1b38d4bdcf5c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "docopt",
+        "ref": "refs/tags/v0.6.8",
+        "repo": "docopt.nim",
         "type": "github"
       }
     },
@@ -193,6 +269,23 @@
         "type": "github"
       }
     },
+    "src-regex-v0_19_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1610386681,
+        "narHash": "sha256-wam5El/S2N24zrbhw+Jo1Flkw8udrcTNu/v6QEl7KYE=",
+        "owner": "nitely",
+        "repo": "nim-regex",
+        "rev": "b10d4b87dae0c50ebae00bdceacf55502573979f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nitely",
+        "ref": "refs/tags/v0.19.0",
+        "repo": "nim-regex",
+        "type": "github"
+      }
+    },
     "src-timezones-v0_5_4": {
       "flake": false,
       "locked": {
@@ -207,6 +300,23 @@
         "owner": "GULPF",
         "ref": "refs/tags/v0.5.4",
         "repo": "timezones",
+        "type": "github"
+      }
+    },
+    "src-unicodedb-v0_10_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1635061637,
+        "narHash": "sha256-qt2pyiGrvJXSes+E0eubx98mrF+jTudPD6hkUXjw0/4=",
+        "owner": "nitely",
+        "repo": "nim-unicodedb",
+        "rev": "675407fa4b6e701ebf9f94e5370ce18c3af40cc3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nitely",
+        "ref": "refs/tags/v0.10.0",
+        "repo": "nim-unicodedb",
         "type": "github"
       }
     },
@@ -251,6 +361,37 @@
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "timezones",
+        "type": "github"
+      }
+    },
+    "unicodedb": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "docopt",
+          "regex",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "docopt",
+          "regex",
+          "nixpkgs"
+        ],
+        "src-unicodedb-v0_10_0": "src-unicodedb-v0_10_0"
+      },
+      "locked": {
+        "dir": "v0_10_0",
+        "lastModified": 1648163711,
+        "narHash": "sha256-n7JO0NyBn839Ra28ErdDwXSafT3CYHBpJbaP6O/uSdw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "unicodedb",
+        "rev": "2ce0f2f6fa69fc3881b504713a92e1b3377fc6ec",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_10_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "unicodedb",
         "type": "github"
       }
     },

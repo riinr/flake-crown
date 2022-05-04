@@ -12,11 +12,11 @@
       },
       "locked": {
         "dir": "v1_5_23",
-        "lastModified": 1648162991,
-        "narHash": "sha256-tV9CXtg3ZHM7zTScu0UCNZnlwQJURcnUkm9LYfSlv70=",
+        "lastModified": 1648272018,
+        "narHash": "sha256-aDSZ1WOji1m9wDMh2HavhultHZVnKE4TJLePKB/hDJI=",
         "owner": "nim-nix-pkgs",
         "repo": "cligen",
-        "rev": "23f12e283a0b2865b94487e828465a5e43eff0bb",
+        "rev": "95e9ff432b5d024e7c3fae13ef21d66d27e85f6e",
         "type": "github"
       },
       "original": {
@@ -48,6 +48,33 @@
         "type": "github"
       }
     },
+    "github-solitudesf-x11": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-x11-master": "src-x11-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648447343,
+        "narHash": "sha256-VSbEn2pJfbF7zIMQ31Erd8eb3FkCYRTd/OU74Hqb8Ss=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-solitudesf-x11",
+        "rev": "d4b5a5a1af3fbc3d3d1368527e3b1ba5d7452325",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-solitudesf-x11",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
@@ -63,6 +90,7 @@
       "inputs": {
         "cligen": "cligen",
         "flakeNimbleLib": "flakeNimbleLib",
+        "github-solitudesf-x11": "github-solitudesf-x11",
         "nixpkgs": "nixpkgs",
         "src-xcm-v0_1_0": "src-xcm-v0_1_0"
       }
@@ -81,6 +109,23 @@
         "owner": "c-blake",
         "ref": "refs/tags/v1.5.23",
         "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "src-x11-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1570526607,
+        "narHash": "sha256-J31R7CSSCodmEphC5R061+VBDnngrV6Bwma+ZAeY3pY=",
+        "owner": "solitudesf",
+        "repo": "x11",
+        "rev": "a732726d832b6aa6422a39fd9ceab2488cc6d66f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "solitudesf",
+        "ref": "refs/heads/master",
+        "repo": "x11",
         "type": "github"
       }
     },

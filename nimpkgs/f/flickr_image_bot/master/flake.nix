@@ -13,6 +13,14 @@
   inputs.src-flickr_image_bot-master.repo  = "flickr-image-bot";
   inputs.src-flickr_image_bot-master.type  = "github";
   
+  inputs."twitter".owner = "nim-nix-pkgs";
+  inputs."twitter".ref   = "master";
+  inputs."twitter".repo  = "twitter";
+  inputs."twitter".dir   = "1_0_1";
+  inputs."twitter".type  = "github";
+  inputs."twitter".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."twitter".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

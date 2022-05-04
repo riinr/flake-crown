@@ -13,6 +13,14 @@
   inputs.src-nimhdf5-v0_4_6.repo  = "nimhdf5";
   inputs.src-nimhdf5-v0_4_6.type  = "github";
   
+  inputs."github-vindaar-seqmath".owner = "nim-nix-pkgs";
+  inputs."github-vindaar-seqmath".ref   = "master";
+  inputs."github-vindaar-seqmath".repo  = "github-vindaar-seqmath";
+  inputs."github-vindaar-seqmath".dir   = "v0_1_13";
+  inputs."github-vindaar-seqmath".type  = "github";
+  inputs."github-vindaar-seqmath".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-vindaar-seqmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

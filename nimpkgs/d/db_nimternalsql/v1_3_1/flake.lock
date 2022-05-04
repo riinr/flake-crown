@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-db_nimternalsql-v1_3_1": "src-db_nimternalsql-v1_3_1"
+      }
+    },
+    "src-db_nimternalsql-v1_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1649266277,
+        "narHash": "sha256-/9KZ7F60+hnUTC3LQAx1sqnjRSrs5d/5ISJgq7TonVw=",
+        "owner": "rehartmann",
+        "repo": "nimternalsql",
+        "rev": "b00cd4d45a0a44ab6fb974e19f2d387c11d78037",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rehartmann",
+        "ref": "refs/tags/v1.3.1",
+        "repo": "nimternalsql",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

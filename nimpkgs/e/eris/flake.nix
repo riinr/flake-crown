@@ -87,6 +87,22 @@
   inputs."eris-0_7_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."eris-0_7_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."eris-0_7_2".dir   = "0_7_2";
+  inputs."eris-0_7_2".owner = "nim-nix-pkgs";
+  inputs."eris-0_7_2".ref   = "master";
+  inputs."eris-0_7_2".repo  = "eris";
+  inputs."eris-0_7_2".type  = "github";
+  inputs."eris-0_7_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."eris-0_7_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."eris-0_8_0".dir   = "0_8_0";
+  inputs."eris-0_8_0".owner = "nim-nix-pkgs";
+  inputs."eris-0_8_0".ref   = "master";
+  inputs."eris-0_8_0".repo  = "eris";
+  inputs."eris-0_8_0".type  = "github";
+  inputs."eris-0_8_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."eris-0_8_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."eris-nim-eris-0_7_2".dir   = "nim-eris-0_7_2";
   inputs."eris-nim-eris-0_7_2".owner = "nim-nix-pkgs";
   inputs."eris-nim-eris-0_7_2".ref   = "master";
@@ -94,6 +110,14 @@
   inputs."eris-nim-eris-0_7_2".type  = "github";
   inputs."eris-nim-eris-0_7_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."eris-nim-eris-0_7_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."eris-nim-eris-0_8_0".dir   = "nim-eris-0_8_0";
+  inputs."eris-nim-eris-0_8_0".owner = "nim-nix-pkgs";
+  inputs."eris-nim-eris-0_8_0".ref   = "master";
+  inputs."eris-nim-eris-0_8_0".repo  = "eris";
+  inputs."eris-nim-eris-0_8_0".type  = "github";
+  inputs."eris-nim-eris-0_8_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."eris-nim-eris-0_8_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."eris-v0_1".dir   = "v0_1";
   inputs."eris-v0_1".owner = "nim-nix-pkgs";

@@ -15,14 +15,6 @@
   inputs."illwill-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."illwill-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."illwill-0_1_0".dir   = "0_1_0";
-  inputs."illwill-0_1_0".owner = "nim-nix-pkgs";
-  inputs."illwill-0_1_0".ref   = "master";
-  inputs."illwill-0_1_0".repo  = "illwill";
-  inputs."illwill-0_1_0".type  = "github";
-  inputs."illwill-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."illwill-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."illwill-v0_1_0".dir   = "v0_1_0";
   inputs."illwill-v0_1_0".owner = "nim-nix-pkgs";
   inputs."illwill-v0_1_0".ref   = "master";
@@ -38,6 +30,14 @@
   inputs."illwill-v0_2_0".type  = "github";
   inputs."illwill-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."illwill-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."illwill-v0_3_0".dir   = "v0_3_0";
+  inputs."illwill-v0_3_0".owner = "nim-nix-pkgs";
+  inputs."illwill-v0_3_0".ref   = "master";
+  inputs."illwill-v0_3_0".repo  = "illwill";
+  inputs."illwill-v0_3_0".type  = "github";
+  inputs."illwill-v0_3_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."illwill-v0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

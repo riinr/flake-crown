@@ -13,6 +13,14 @@
   inputs.src-ggplotnim-v0_4_11.repo  = "ggplotnim";
   inputs.src-ggplotnim-v0_4_11.type  = "github";
   
+  inputs."github-vindaar-seqmath".owner = "nim-nix-pkgs";
+  inputs."github-vindaar-seqmath".ref   = "master";
+  inputs."github-vindaar-seqmath".repo  = "github-vindaar-seqmath";
+  inputs."github-vindaar-seqmath".dir   = "v0_1_13";
+  inputs."github-vindaar-seqmath".type  = "github";
+  inputs."github-vindaar-seqmath".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-vindaar-seqmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."ginger".owner = "nim-nix-pkgs";
   inputs."ginger".ref   = "master";
   inputs."ginger".repo  = "ginger";
@@ -24,7 +32,7 @@
   inputs."datamancer".owner = "nim-nix-pkgs";
   inputs."datamancer".ref   = "master";
   inputs."datamancer".repo  = "datamancer";
-  inputs."datamancer".dir   = "v0_2_2";
+  inputs."datamancer".dir   = "v0_2_3";
   inputs."datamancer".type  = "github";
   inputs."datamancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."datamancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -32,7 +40,7 @@
   inputs."arraymancer".owner = "nim-nix-pkgs";
   inputs."arraymancer".ref   = "master";
   inputs."arraymancer".repo  = "arraymancer";
-  inputs."arraymancer".dir   = "v0_7_11";
+  inputs."arraymancer".dir   = "v0_7_12";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -52,6 +60,14 @@
   inputs."webview".type  = "github";
   inputs."webview".inputs.nixpkgs.follows = "nixpkgs";
   inputs."webview".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."scinim".owner = "nim-nix-pkgs";
+  inputs."scinim".ref   = "master";
+  inputs."scinim".repo  = "scinim";
+  inputs."scinim".dir   = "v0_2_3";
+  inputs."scinim".type  = "github";
+  inputs."scinim".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."scinim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

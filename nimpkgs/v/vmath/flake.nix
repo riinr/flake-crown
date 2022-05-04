@@ -199,6 +199,14 @@
   inputs."vmath-1_1_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vmath-1_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."vmath-1_1_4".dir   = "1_1_4";
+  inputs."vmath-1_1_4".owner = "nim-nix-pkgs";
+  inputs."vmath-1_1_4".ref   = "master";
+  inputs."vmath-1_1_4".repo  = "vmath";
+  inputs."vmath-1_1_4".type  = "github";
+  inputs."vmath-1_1_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."vmath-1_1_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."vmath-v0_2_2".dir   = "v0_2_2";
   inputs."vmath-v0_2_2".owner = "nim-nix-pkgs";
   inputs."vmath-v0_2_2".ref   = "master";

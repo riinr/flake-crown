@@ -13,6 +13,14 @@
   inputs.src-static_server-v2_2_0.repo  = "nimhttpd";
   inputs.src-static_server-v2_2_0.type  = "github";
   
+  inputs."finder".owner = "nim-nix-pkgs";
+  inputs."finder".ref   = "master";
+  inputs."finder".repo  = "finder";
+  inputs."finder".dir   = "v0_2_0";
+  inputs."finder".type  = "github";
+  inputs."finder".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."finder".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

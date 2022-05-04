@@ -1,5 +1,3 @@
-#!/usr/bin/env nimcr
-
 import std/[
   json,
   os,
@@ -29,6 +27,7 @@ proc isKey(x: string): auto =
   return proc (refInfo: JsonNode): bool =
     refInfo.hasKey x
 
+
 proc getRefs(url: JsonNode): seq[string] =
   let
     parts  = url.getStr.split "?"
@@ -41,12 +40,21 @@ proc getRefs(url: JsonNode): seq[string] =
 
 
 proc staticUrl(pkg: JsonNode, gitRef: string): seq[string] =
-  let 
-    name   = pkg["name"].getStr
-    nameLo = pkg["name"].getStr.toLower
-    parts  = pkg["url"].getStr.split "?"
-    url    = parts[0]
-    subDir =
+  let
+    sources = @["github", "gitlab", "sourcehut", "bitbucket"]
+    name    = block:
+      let 
+        tmpName   = pkg["name"].getStr
+        nameParts = tmpName.split("-")
+      if nameParts.len >= 3 and nameParts[0] in sources:
+        nameParts[2 .. ^1].join("-")
+      else:
+        tmpName
+    nameLo  = name.toLower
+    nameNN  = nameLo.replace("nim-", "")
+    parts   = pkg["url"].getStr.split "?"
+    url     = parts[0]
+    subDir  =
       if parts.len == 2 and parts[1].contains "subdir=":
         parts[1].split("=")[1] & "/"
       else:
@@ -59,12 +67,14 @@ proc staticUrl(pkg: JsonNode, gitRef: string): seq[string] =
       .strip(chars = {'/'})
     return @[
       fmt"{prefix}/{gitRef}/{subDir}{name}.nimble",
-      fmt"{prefix}/{gitRef}/{subDir}{nameLo}.nimble"
+      fmt"{prefix}/{gitRef}/{subDir}{nameLo}.nimble",
+      fmt"{prefix}/{gitRef}/{subDir}{nameNN}.nimble"
     ]
   if url.contains "git.sr.ht":
     return @[
       fmt"{url}/blob/{gitRef}/{subDir}{name}.nimble",
-      fmt"{url}/blob/{gitRef}/{subDir}{nameLo}.nimble"
+      fmt"{url}/blob/{gitRef}/{subDir}{nameLo}.nimble",
+      fmt"{url}/blob/{gitRef}/{subDir}{nameNN}.nimble"
     ]
   if url.contains "gitlab.com":
     let 
@@ -72,14 +82,16 @@ proc staticUrl(pkg: JsonNode, gitRef: string): seq[string] =
       prefix = url.replace(".git", "")
     return @[
       fmt"{prefix}/-/raw/{tag}/{subDir}{name}.nimble",
-      fmt"{prefix}/-/raw/{tag}/{subDir}{nameLo}.nimble"
+      fmt"{prefix}/-/raw/{tag}/{subDir}{nameLo}.nimble",
+      fmt"{prefix}/-/raw/{tag}/{subDir}{nameNN}.nimble"
     ]
   let 
     tag    = gitRef.replace("refs/heads/", "").replace("refs/tags/", "")
     prefix = url.replace(".git", "")
   return @[
     fmt"{prefix}/raw/{tag}/{subDir}{name}.nimble",
-    fmt"{prefix}/raw/{tag}/{subDir}{nameLo}.nimble"
+    fmt"{prefix}/raw/{tag}/{subDir}{nameLo}.nimble",
+    fmt"{prefix}/raw/{tag}/{subDir}{nameNN}.nimble"
   ]
 
 
@@ -88,6 +100,7 @@ proc refName(refInfo: JsonNode): string =
     .replace("refs/heads/", "")
     .replace("refs/tags/",  "")
     .replace(".", "_")
+
 
 proc fetchInfo(pkg: JsonNode): auto =
   return proc(gitRef: string): JsonNode =
@@ -104,13 +117,18 @@ proc fetchInfo(pkg: JsonNode): auto =
                         .replace("tags/",  "")
 
     if fileExists fmt"{flakeDir}/meta.json":
-      echo fmt"Cache {flakeDir}/meta.json"
+      # echo fmt"Cache {flakeDir}/meta.json"
       return fmt"{flakeDir}/meta.json".readFile.parseJson
 
-    for url in urls.deduplicate:
-      createDir tmpDir
-      echo fmt"Downloading {name}@{gitRef} from {url}"
-      discard execCmd fmt"cd {tmpDir}; curl -f -s -O {url} || true"
+    
+    createDir tmpDir
+    # echo fmt"Downloading {name}@{gitRef}"
+    let curls = urls.deduplicate.mapIt(fmt"curl -f -s -O {it} &").join("\n")
+    discard execCmd fmt"""
+      cd {tmpDir}
+      {curls}
+      wait
+    """
 
     var (versionInfo, code) = fmt"cd {tmpDir}; nimble dump --json".execCmdEx
     var firstError = versionInfo
@@ -193,7 +211,7 @@ proc projectMeta(pkg: JsonNode): auto =
 
 
 if stdin.isATTY:
-  echo """Excpect a json from stdin"""
+  echo """Expect a json from stdin"""
   quit 1
 
 let

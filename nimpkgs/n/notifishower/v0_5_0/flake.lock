@@ -21,6 +21,33 @@
         "type": "github"
       }
     },
+    "github-pmunch-x11": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-x11-master": "src-x11-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648447343,
+        "narHash": "sha256-9dNQUqg5F4RObpCRengxdinXf4ydPoFOSaesYQoo7ZE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-pmunch-x11",
+        "rev": "1245f03f9d5df221432db1dbc761af70e6466d8f",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-pmunch-x11",
+        "type": "github"
+      }
+    },
     "imlib2": {
       "inputs": {
         "flakeNimbleLib": [
@@ -116,6 +143,7 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "github-pmunch-x11": "github-pmunch-x11",
         "imlib2": "imlib2",
         "kiwi": "kiwi",
         "nixpkgs": "nixpkgs",
@@ -206,6 +234,23 @@
         "owner": "PMunch",
         "ref": "refs/heads/master",
         "repo": "termstyle",
+        "type": "github"
+      }
+    },
+    "src-x11-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1536829139,
+        "narHash": "sha256-qxvnTnxHZPElyrqN32jvhuyf592B8VF+qetv54Wbm+Q=",
+        "owner": "pmunch",
+        "repo": "x11",
+        "rev": "697f9ba2aa12dae9ed82487fd68566df24a78c2c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pmunch",
+        "ref": "refs/heads/master",
+        "repo": "x11",
         "type": "github"
       }
     },

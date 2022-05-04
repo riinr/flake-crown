@@ -13,6 +13,22 @@
   inputs.src-aglet-master.repo  = "aglet";
   inputs.src-aglet-master.type  = "github";
   
+  inputs."github-liquid600pgm-nim-glm".owner = "nim-nix-pkgs";
+  inputs."github-liquid600pgm-nim-glm".ref   = "master";
+  inputs."github-liquid600pgm-nim-glm".repo  = "github-liquid600pgm-nim-glm";
+  inputs."github-liquid600pgm-nim-glm".dir   = "v1_1_1";
+  inputs."github-liquid600pgm-nim-glm".type  = "github";
+  inputs."github-liquid600pgm-nim-glm".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-liquid600pgm-nim-glm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."github-nimgl-glfw".owner = "nim-nix-pkgs";
+  inputs."github-nimgl-glfw".ref   = "master";
+  inputs."github-nimgl-glfw".repo  = "github-nimgl-glfw";
+  inputs."github-nimgl-glfw".dir   = "3_3_4";
+  inputs."github-nimgl-glfw".type  = "github";
+  inputs."github-nimgl-glfw".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-nimgl-glfw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

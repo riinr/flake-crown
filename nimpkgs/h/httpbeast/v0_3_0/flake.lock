@@ -21,6 +21,33 @@
         "type": "github"
       }
     },
+    "github-iffy-asynctools": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-asynctools-master": "src-asynctools-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648447340,
+        "narHash": "sha256-7UuOh8VBhbSN15WfQKw5dSv88F3BR7lorvzobhBBYYw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-iffy-asynctools",
+        "rev": "d7af39435d34d81996fee4acc6b4a956000ebad0",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-iffy-asynctools",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
@@ -35,8 +62,26 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "github-iffy-asynctools": "github-iffy-asynctools",
         "nixpkgs": "nixpkgs",
         "src-httpbeast-v0_3_0": "src-httpbeast-v0_3_0"
+      }
+    },
+    "src-asynctools-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1559564986,
+        "narHash": "sha256-rcrEv5jQ5T7O8NTCnVBRQACv6z22mO5XUs4lwj4mN1I=",
+        "owner": "iffy",
+        "repo": "asynctools",
+        "rev": "c478bb74268c65e7400e81f49d26f82d20f1f57a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "iffy",
+        "ref": "refs/heads/master",
+        "repo": "asynctools",
+        "type": "github"
       }
     },
     "src-httpbeast-v0_3_0": {

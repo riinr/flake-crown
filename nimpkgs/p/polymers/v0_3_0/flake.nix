@@ -13,6 +13,14 @@
   inputs.src-Polymers-v0_3_0.repo  = "polymers";
   inputs.src-Polymers-v0_3_0.type  = "github";
   
+  inputs."polymorph".owner = "nim-nix-pkgs";
+  inputs."polymorph".ref   = "master";
+  inputs."polymorph".repo  = "polymorph";
+  inputs."polymorph".dir   = "v0_3_0";
+  inputs."polymorph".type  = "github";
+  inputs."polymorph".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."polymorph".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

@@ -13,6 +13,14 @@
   inputs.src-nimFinLib-master.repo  = "NimFinLib";
   inputs.src-nimFinLib-master.type  = "github";
   
+  inputs."nimcx".owner = "nim-nix-pkgs";
+  inputs."nimcx".ref   = "master";
+  inputs."nimcx".repo  = "nimcx";
+  inputs."nimcx".dir   = "master";
+  inputs."nimcx".type  = "github";
+  inputs."nimcx".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimcx".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

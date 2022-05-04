@@ -7,8 +7,38 @@
   "license": "MIT",
   "web": "https://github.com/nim-lang/graveyard/tree/master/scgi",
   "refs": [
-    "fatal: https://github.com/nim-lang/graveyard?subdir=scgi/info/refs not valid: is this a git repository?",
+    "refs/heads/add-lc",
+    "refs/heads/master",
     ""
   ],
-  "heads": []
+  "heads": [
+    {
+      "name": "scgi",
+      "version": "0.1.0",
+      "author": "Andreas Rumpf",
+      "desc": "Helper procs for SCGI applications",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/master"
+    }
+  ]
 }

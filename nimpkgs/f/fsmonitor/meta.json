@@ -7,8 +7,38 @@
   "license": "MIT",
   "web": "https://github.com/nim-lang/graveyard/tree/master/fsmonitor",
   "refs": [
-    "fatal: https://github.com/nim-lang/graveyard?subdir=fsmonitor/info/refs not valid: is this a git repository?",
+    "refs/heads/add-lc",
+    "refs/heads/master",
     ""
   ],
-  "heads": []
+  "heads": [
+    {
+      "name": "fsmonitor",
+      "version": "0.1.0",
+      "author": "Dominik Picheta",
+      "desc": "The ex-stdlib module fsmonitor.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/master"
+    }
+  ]
 }

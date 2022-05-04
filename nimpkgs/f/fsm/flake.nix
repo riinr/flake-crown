@@ -15,6 +15,14 @@
   inputs."fsm-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fsm-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."fsm-0_1_1".dir   = "0_1_1";
+  inputs."fsm-0_1_1".owner = "nim-nix-pkgs";
+  inputs."fsm-0_1_1".ref   = "master";
+  inputs."fsm-0_1_1".repo  = "fsm";
+  inputs."fsm-0_1_1".type  = "github";
+  inputs."fsm-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."fsm-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

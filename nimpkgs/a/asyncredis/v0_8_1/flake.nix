@@ -13,6 +13,14 @@
   inputs.src-asyncredis-v0_8_1.repo  = "redis.nim";
   inputs.src-asyncredis-v0_8_1.type  = "github";
   
+  inputs."networkutils".owner = "nim-nix-pkgs";
+  inputs."networkutils".ref   = "master";
+  inputs."networkutils".repo  = "networkutils";
+  inputs."networkutils".dir   = "v0_5_1";
+  inputs."networkutils".type  = "github";
+  inputs."networkutils".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."networkutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

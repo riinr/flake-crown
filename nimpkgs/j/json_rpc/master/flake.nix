@@ -61,6 +61,14 @@
   inputs."chronicles".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronicles".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."github-status-im-news".owner = "nim-nix-pkgs";
+  inputs."github-status-im-news".ref   = "master";
+  inputs."github-status-im-news".repo  = "github-status-im-news";
+  inputs."github-status-im-news".dir   = "0_5";
+  inputs."github-status-im-news".type  = "github";
+  inputs."github-status-im-news".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-status-im-news".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."websock".owner = "nim-nix-pkgs";
   inputs."websock".ref   = "master";
   inputs."websock".repo  = "websock";

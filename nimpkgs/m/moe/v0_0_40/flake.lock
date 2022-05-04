@@ -21,6 +21,33 @@
         "type": "github"
       }
     },
+    "ncurses": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ncurses-master": "src-ncurses-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650750967,
+        "narHash": "sha256-VzO6TJTyoMRMazNWks+kFQTbmocEPku8aG4sArb/vMc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ncurses",
+        "rev": "3b3ffa576f019051e3c93fab25be3ef029ecb259",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ncurses",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
@@ -62,6 +89,7 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "ncurses": "ncurses",
         "nixpkgs": "nixpkgs",
         "parsetoml": "parsetoml",
         "src-moe-v0_0_40": "src-moe-v0_0_40",
@@ -82,6 +110,23 @@
         "owner": "fox0430",
         "ref": "refs/tags/v0.0.40",
         "repo": "moe",
+        "type": "github"
+      }
+    },
+    "src-ncurses-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1588327817,
+        "narHash": "sha256-HJi2tfD+sW4l4dPLy+TRih85N1bLty5jPQYi39rbqbM=",
+        "owner": "walkre-niboshi",
+        "repo": "nim-ncurses",
+        "rev": "1027fe13d091583608e7e7da3c3e0d13aceb4b11",
+        "type": "github"
+      },
+      "original": {
+        "owner": "walkre-niboshi",
+        "ref": "refs/heads/master",
+        "repo": "nim-ncurses",
         "type": "github"
       }
     },

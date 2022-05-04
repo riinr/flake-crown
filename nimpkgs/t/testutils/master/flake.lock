@@ -23,8 +23,8 @@
     },
     "nixpkgs": {
       "locked": {
-        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
-        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
         "type": "path"
       },
       "original": {
@@ -36,7 +36,8 @@
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
-        "src-testutils-master": "src-testutils-master"
+        "src-testutils-master": "src-testutils-master",
+        "unittest2": "unittest2"
       }
     },
     "src-testutils-master": {
@@ -53,6 +54,50 @@
         "owner": "status-im",
         "ref": "refs/heads/master",
         "repo": "nim-testutils",
+        "type": "github"
+      }
+    },
+    "src-unittest2-v0_0_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1639728552,
+        "narHash": "sha256-gHfxt4eNLaC9KNh3kC1zFNV42UcDipfyoiCnDHyyb+k=",
+        "owner": "status-im",
+        "repo": "nim-unittest2",
+        "rev": "4e2893eacb916c7678fdc4935ff7420f13bf3a9c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/tags/v0.0.3",
+        "repo": "nim-unittest2",
+        "type": "github"
+      }
+    },
+    "unittest2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-unittest2-v0_0_3": "src-unittest2-v0_0_3"
+      },
+      "locked": {
+        "dir": "v0_0_3",
+        "lastModified": 1651556179,
+        "narHash": "sha256-8b+7ScHIPCJ/nIiwm+M90QZ/Y1WNTPGthYSv3pIQ6L4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "unittest2",
+        "rev": "6f6c2b461d87334e71536853bfe3bbc6aca6bb4d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_0_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "unittest2",
         "type": "github"
       }
     }

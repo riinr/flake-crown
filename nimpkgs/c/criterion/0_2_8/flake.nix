@@ -13,6 +13,14 @@
   inputs.src-criterion-0_2_8.repo  = "criterion";
   inputs.src-criterion-0_2_8.type  = "github";
   
+  inputs."github-disruptek-balls".owner = "nim-nix-pkgs";
+  inputs."github-disruptek-balls".ref   = "master";
+  inputs."github-disruptek-balls".repo  = "github-disruptek-balls";
+  inputs."github-disruptek-balls".dir   = "3_7_0";
+  inputs."github-disruptek-balls".type  = "github";
+  inputs."github-disruptek-balls".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-disruptek-balls".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
