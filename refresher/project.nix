@@ -7,11 +7,10 @@ let
 in
 {
   imports = [ ./packages_other.nix ./alias_other.nix ./nix_deps.nix ];
+  files.gitignore.pattern."refresher/*.json" = true;
   files.cmds.gcc              = true;
   files.cmds.git              = true;
   files.cmds.jq               = true;
-  #files.cmds.nim-unwrapped    = true;
-  #files.cmds.nimble-unwrapped = true;
   files.cmds.yj               = true;
   files.alias.bin-results     = "find -L ${GLOB_PROJS} -type f -wholename '*/bin/*'";
   files.alias.pkg-descr       = "cat `pkg-dir $1`/meta.json|jq '.description'";
