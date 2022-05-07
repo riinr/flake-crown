@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "gara-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-gara-master": "src-gara-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555450,
+        "narHash": "sha256-CwOOXpOOdBQCe9QSF7URftIIt2CpO1Z3u5pSBaqEF4g=",
+        "owner": "nim-nix-pkgs",
+        "repo": "gara",
+        "rev": "e98e82ad7461bd8f73f897eca0f59331647a366a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "gara",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "gara-master": "gara-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-gara-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587982565,
+        "narHash": "sha256-KWE+YIx2B4EL+Xc0i6qfIjT8hZmNSzyrPPLyqFBFhBE=",
+        "owner": "alehander42",
+        "repo": "gara",
+        "rev": "2e3e8e95d104eb4cde2b65e6e8483dd02ea99fc0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "alehander42",
+        "ref": "refs/heads/master",
+        "repo": "gara",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

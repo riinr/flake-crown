@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nsh-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nsh-master": "src-nsh-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555835,
+        "narHash": "sha256-Gj0ZwP+kUjF2ZAB3G6IibSRrlBdXTuJZO0/TekqW9fc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nsh",
+        "rev": "4dfdae42065396a0d2f3b8c4ddd5f326fe428045",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nsh",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "nsh-master": "nsh-master"
+      }
+    },
+    "src-nsh-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1544777963,
+        "narHash": "sha256-KAWgJ+tbX63/mcrzKwUnWxLVSRvX1/NN7TKvzaY4tdo=",
+        "owner": "gmshiba",
+        "repo": "nish",
+        "rev": "3687312f5cbdb8fe982dc3ed2e82ceada1650ec8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gmshiba",
+        "ref": "refs/heads/master",
+        "repo": "nish",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

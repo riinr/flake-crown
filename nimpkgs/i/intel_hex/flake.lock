@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "intel_hex-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-intel_hex-master": "src-intel_hex-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650750308,
+        "narHash": "sha256-DHH/iKM+TzrRESJCjgV99ILKOvAzF37bbOY7d5Q2ZCM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "intel_hex",
+        "rev": "21bbd92bc1a76172ef36f04931f8b025cfe87f91",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "intel_hex",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "intel_hex-master": "intel_hex-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-intel_hex-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1529958991,
+        "narHash": "sha256-cLrvxPvmMKYf+PeZ9jTTqkbeliUOxGgYieH/HgYG0jU=",
+        "owner": "keyme",
+        "repo": "nim_intel_hex",
+        "rev": "d34923a4a60298fd1304178816a92720949ad7b4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "keyme",
+        "ref": "refs/heads/master",
+        "repo": "nim_intel_hex",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

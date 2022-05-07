@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "robotparser-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-robotparser-master": "src-robotparser-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555960,
+        "narHash": "sha256-IIXSTqxYhSh0gZOUksdqQ+HJ6vukxxO3z++Oor8xaGU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "robotparser",
+        "rev": "4b5f741c5e8b0a7fe6f52ea7ac933517bf21a24b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "robotparser",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "robotparser-master": "robotparser-master"
+      }
+    },
+    "src-robotparser-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1545597303,
+        "narHash": "sha256-Lht/Eg770/AZAThQsFwzqWydy1TnhWFZA0Hw9MO5uvY=",
+        "owner": "achesak",
+        "repo": "nim-robotparser",
+        "rev": "d8059c414b9f3e57ad309b0597590f2bff3a90a3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "achesak",
+        "ref": "refs/heads/master",
+        "repo": "nim-robotparser",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

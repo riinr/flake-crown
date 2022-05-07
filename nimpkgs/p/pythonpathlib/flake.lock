@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "pythonpathlib-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-pythonpathlib-master": "src-pythonpathlib-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555925,
+        "narHash": "sha256-R0IgCXZHjwGhdCbl4+66I26MuyfJOiBGTMtCBpTDsy8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "pythonpathlib",
+        "rev": "b5977ed244e0db7f80a0389bd7d936453a2f8235",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "pythonpathlib",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "pythonpathlib-master": "pythonpathlib-master"
+      }
+    },
+    "src-pythonpathlib-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1500824081,
+        "narHash": "sha256-c4ungKZAae7eLTy9do8iaJu6MhL8fcQsgOrwPxlUlBI=",
+        "owner": "achesak",
+        "repo": "nim-pythonpathlib",
+        "rev": "5614493682166a8407edd86c6be701ecf6f27318",
+        "type": "github"
+      },
+      "original": {
+        "owner": "achesak",
+        "ref": "refs/heads/master",
+        "repo": "nim-pythonpathlib",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

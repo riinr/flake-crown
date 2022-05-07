@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "vecio-master": "vecio-master"
+      }
+    },
+    "src-vecio-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1535600861,
+        "narHash": "sha256-Whl3FrhiLbCSiySER3bOK9tIOHJnXdgk2WRT6k6aGdo=",
+        "owner": "emekoi",
+        "repo": "vecio.nim",
+        "rev": "d514450b3329f94aabfb7af48066292685deb825",
+        "type": "github"
+      },
+      "original": {
+        "owner": "emekoi",
+        "ref": "refs/heads/master",
+        "repo": "vecio.nim",
+        "type": "github"
+      }
+    },
+    "vecio-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-vecio-master": "src-vecio-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556205,
+        "narHash": "sha256-vYIC7yciDl4c+56xsFackfGQAUBzL9+ZS1uiTSbqtKA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "vecio",
+        "rev": "f8c72cdfdcd453b4e893a3c811c0b7d2197e7cab",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "vecio",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "colorsys-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-colorsys-master": "src-colorsys-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555323,
+        "narHash": "sha256-mhf6cPWSBQ5EIYYg9Aye/A7mz1F23n4L8N2JI7HnsEk=",
+        "owner": "nim-nix-pkgs",
+        "repo": "colorsys",
+        "rev": "2784b78891fdabe4e2b687218effbe6ade25dfa5",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "colorsys",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "colorsys-master": "colorsys-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-colorsys-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1497488979,
+        "narHash": "sha256-27VM5bGveaDVCf5fIhdGCM/seCuuiLDf3VNCSWQGks0=",
+        "owner": "achesak",
+        "repo": "nim-colorsys",
+        "rev": "b466a504242b4a91eec6fd61e8d6ff14417e5779",
+        "type": "github"
+      },
+      "original": {
+        "owner": "achesak",
+        "ref": "refs/heads/master",
+        "repo": "nim-colorsys",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

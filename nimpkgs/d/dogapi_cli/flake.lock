@@ -1,0 +1,228 @@
+{
+  "nodes": {
+    "dogapi": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "dogapi_cli-main",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "dogapi_cli-main",
+          "nixpkgs"
+        ],
+        "src-dogapi-v1_0_0": "src-dogapi-v1_0_0"
+      },
+      "locked": {
+        "dir": "v1_0_0",
+        "lastModified": 1651555380,
+        "narHash": "sha256-hDeTqdeP1MpjlJf+JGol1f5vb3iABe86FEN/xIMAx5E=",
+        "owner": "nim-nix-pkgs",
+        "repo": "dogapi",
+        "rev": "a4f11420d9047419a5882de2d537cd8247e291e6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_0_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "dogapi",
+        "type": "github"
+      }
+    },
+    "dogapi_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "dogapi_cli-v1_0_0",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "dogapi_cli-v1_0_0",
+          "nixpkgs"
+        ],
+        "src-dogapi-v1_0_0": "src-dogapi-v1_0_0_2"
+      },
+      "locked": {
+        "dir": "v1_0_0",
+        "lastModified": 1651555380,
+        "narHash": "sha256-hDeTqdeP1MpjlJf+JGol1f5vb3iABe86FEN/xIMAx5E=",
+        "owner": "nim-nix-pkgs",
+        "repo": "dogapi",
+        "rev": "a4f11420d9047419a5882de2d537cd8247e291e6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_0_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "dogapi",
+        "type": "github"
+      }
+    },
+    "dogapi_cli-main": {
+      "inputs": {
+        "dogapi": "dogapi",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-dogapi_cli-main": "src-dogapi_cli-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651556708,
+        "narHash": "sha256-ECm9K1iNBpdcfP+q+tHDS5vejhuG83iEXBTXY3s2clY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "dogapi_cli",
+        "rev": "c52402c88d1197bef859203e4f7af67ec040b8fb",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "dogapi_cli",
+        "type": "github"
+      }
+    },
+    "dogapi_cli-v1_0_0": {
+      "inputs": {
+        "dogapi": "dogapi_2",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-dogapi_cli-v1_0_0": "src-dogapi_cli-v1_0_0"
+      },
+      "locked": {
+        "dir": "v1_0_0",
+        "lastModified": 1651556708,
+        "narHash": "sha256-ECm9K1iNBpdcfP+q+tHDS5vejhuG83iEXBTXY3s2clY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "dogapi_cli",
+        "rev": "c52402c88d1197bef859203e4f7af67ec040b8fb",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_0_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "dogapi_cli",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "dogapi_cli-main": "dogapi_cli-main",
+        "dogapi_cli-v1_0_0": "dogapi_cli-v1_0_0",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-dogapi-v1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1649497644,
+        "narHash": "sha256-k0XTIwB8IynguHIKbCPMrSnbJ29bd+qrNwuPuh9dR28=",
+        "owner": "thechampagne",
+        "repo": "dogapi-nim",
+        "rev": "b803a6d57e63568b83460bdc04587ac874983e9c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thechampagne",
+        "ref": "refs/tags/v1.0.0",
+        "repo": "dogapi-nim",
+        "type": "github"
+      }
+    },
+    "src-dogapi-v1_0_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1649497644,
+        "narHash": "sha256-k0XTIwB8IynguHIKbCPMrSnbJ29bd+qrNwuPuh9dR28=",
+        "owner": "thechampagne",
+        "repo": "dogapi-nim",
+        "rev": "b803a6d57e63568b83460bdc04587ac874983e9c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thechampagne",
+        "ref": "refs/tags/v1.0.0",
+        "repo": "dogapi-nim",
+        "type": "github"
+      }
+    },
+    "src-dogapi_cli-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1649498171,
+        "narHash": "sha256-NQXWK+/9gywF8EbIeoS+tioEMyfzl8ZQi0j8fM8Hn6Y=",
+        "owner": "thechampagne",
+        "repo": "dogapi-cli",
+        "rev": "cc8ef60ec48ee206f1f9e063ed099e487058a165",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thechampagne",
+        "ref": "refs/heads/main",
+        "repo": "dogapi-cli",
+        "type": "github"
+      }
+    },
+    "src-dogapi_cli-v1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1649498171,
+        "narHash": "sha256-NQXWK+/9gywF8EbIeoS+tioEMyfzl8ZQi0j8fM8Hn6Y=",
+        "owner": "thechampagne",
+        "repo": "dogapi-cli",
+        "rev": "cc8ef60ec48ee206f1f9e063ed099e487058a165",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thechampagne",
+        "ref": "refs/tags/v1.0.0",
+        "repo": "dogapi-cli",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

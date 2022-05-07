@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "pwd-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-pwd-master": "src-pwd-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555916,
+        "narHash": "sha256-GUZ7adbRtcFTsEYqh1fT1p3+xvWT7QGvVe/podJUOZg=",
+        "owner": "nim-nix-pkgs",
+        "repo": "pwd",
+        "rev": "f0f00121ec75956e759c3b50810b37a1b6241d2e",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "pwd",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "pwd-master": "pwd-master"
+      }
+    },
+    "src-pwd-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1500855917,
+        "narHash": "sha256-HEbjmpy+bFNDltR8woFVrfya+CbyoTC6UzEyCH4RJPQ=",
+        "owner": "achesak",
+        "repo": "nim-pwd",
+        "rev": "a5ad1afcafc87052255ae92f3c3eadc2ac2f9a75",
+        "type": "github"
+      },
+      "original": {
+        "owner": "achesak",
+        "ref": "refs/heads/master",
+        "repo": "nim-pwd",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

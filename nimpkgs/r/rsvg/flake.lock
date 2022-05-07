@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "rsvg-master": "rsvg-master"
+      }
+    },
+    "rsvg-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rsvg-master": "src-rsvg-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555968,
+        "narHash": "sha256-kR5qJKvjR+MpKVwiIclLQttuBVTxw4BlcbioBm5WOq8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "rsvg",
+        "rev": "13045adbe3eb2a328beda8e372610b50a8ca3b0a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "rsvg",
+        "type": "github"
+      }
+    },
+    "src-rsvg-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1402700458,
+        "narHash": "sha256-AbQRLGiAQqHFrbo8jB00jee6Lr1piRfE/z/uD4Uv4Kc=",
+        "owner": "def-",
+        "repo": "rsvg",
+        "rev": "f05f09bb236914feb2081627633e1dd24fe908f2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "def-",
+        "ref": "refs/heads/master",
+        "repo": "rsvg",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "winversion-master": "winversion-master"
+      }
+    },
+    "src-winversion-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1571255444,
+        "narHash": "sha256-iKYWz09S+UXfsmEN+R579ULOYbIQ0NstvsfmcWHlDE4=",
+        "owner": "rockcavera",
+        "repo": "winversion",
+        "rev": "25f89f8627d1f62b17d7d0bea90943b6ec4abd10",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rockcavera",
+        "ref": "refs/heads/master",
+        "repo": "winversion",
+        "type": "github"
+      }
+    },
+    "winversion-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-winversion-master": "src-winversion-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556241,
+        "narHash": "sha256-GsziiRjo9/3CygHIbH3QhxyK1Q0kR4oonycqUlsBK9A=",
+        "owner": "nim-nix-pkgs",
+        "repo": "winversion",
+        "rev": "a263912dc2790ff417bf0c182e26e884f020de22",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "winversion",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

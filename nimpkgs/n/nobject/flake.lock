@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nobject-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nobject-main": "src-nobject-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555799,
+        "narHash": "sha256-WizY0HgcwstmrMi/Ty8UT9NOud5ilR6U8x/OtFPEeMg=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nobject",
+        "rev": "0152fcbed49b95ece9a3b3e5db22b91da720f9e5",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nobject",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "nobject-main": "nobject-main"
+      }
+    },
+    "src-nobject-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1611676512,
+        "narHash": "sha256-FqAz3ZEwe1suHKnvTjToQnvhjOh3KtekC5Y1BBD8GWE=",
+        "owner": "Carpall",
+        "repo": "nobject",
+        "rev": "75883b7074f7ccad27d041b7c9def73660607a08",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Carpall",
+        "ref": "refs/heads/main",
+        "repo": "nobject",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

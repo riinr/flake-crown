@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "options-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-options-master": "src-options-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555857,
+        "narHash": "sha256-cvd6KeyjY+whr3nNEHP1xZFFNbQUL+4TYm6YmtVfSwg=",
+        "owner": "nim-nix-pkgs",
+        "repo": "options",
+        "rev": "308b55d524e551e79424c41a6efddfc917869324",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "options",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "options-master": "options-master"
+      }
+    },
+    "src-options-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1434587924,
+        "narHash": "sha256-X2UL7Ai42NZjw7K/KF64ryQoj73hhcb5uUK43t0lzPM=",
+        "owner": "fallingduck",
+        "repo": "options-nim",
+        "rev": "035806c369469c8b47efefdbc5ca2d03e7f4a95b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "fallingduck",
+        "ref": "refs/heads/master",
+        "repo": "options-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "gentabs-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-gentabs-master": "src-gentabs-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555455,
+        "narHash": "sha256-9i8Ew2azVzg3hk0FSKdL9aC68wuxFjbVPw5s3KJrxeQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "gentabs",
+        "rev": "930d0ac78137993b64efdfad871b27399b89d41f",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "gentabs",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "gentabs-master": "gentabs-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-gentabs-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1510769816,
+        "narHash": "sha256-iAwqMw18N2qYBy0Ad9Z2fvaXMtekxdY7PFRGrPzc7mE=",
+        "owner": "lcrees",
+        "repo": "gentabs",
+        "rev": "e6feffbcb2f51c04bf27c9d3a8cb51487582014f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lcrees",
+        "ref": "refs/heads/master",
+        "repo": "gentabs",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

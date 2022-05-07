@@ -1,0 +1,136 @@
+{
+  "nodes": {
+    "confutils-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-confutils-master": "src-confutils-master",
+        "stew": "stew"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556694,
+        "narHash": "sha256-dqTKWjrllGhnt8WUVbwDkKRzww1EW71dq8PlbUQIS2o=",
+        "owner": "nim-nix-pkgs",
+        "repo": "confutils",
+        "rev": "2f6941dc165206fa868fb01b5d4c3f93f34d8d7c",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "confutils",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "confutils-master": "confutils-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-confutils-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1648973386,
+        "narHash": "sha256-kSfwEe7LQP0al6g8uNh+tl5yAxoBCEZfz3BGbaVoMCE=",
+        "owner": "status-im",
+        "repo": "nim-confutils",
+        "rev": "60d71e802955b57381eda95c47a737d0ae801c67",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-confutils",
+        "type": "github"
+      }
+    },
+    "src-stew-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1648728270,
+        "narHash": "sha256-Nv9hz5vWr5ziMRuQ+H79j23fhA9kLQiaSpwP/WO0eOc=",
+        "owner": "status-im",
+        "repo": "nim-stew",
+        "rev": "cdb1f213d073fd2ecbdaf35a866417657da9294c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-stew",
+        "type": "github"
+      }
+    },
+    "stew": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "confutils-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "confutils-master",
+          "nixpkgs"
+        ],
+        "src-stew-master": "src-stew-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556064,
+        "narHash": "sha256-Rqk+ZX1Clc1m3ga3qxlWzceab1Zr/OvgTnJDlFFj9HI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "stew",
+        "rev": "3d2c28ba37141ba481091b2884e3b3988778efa1",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "stew",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

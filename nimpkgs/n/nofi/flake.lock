@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nofi-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nofi-main": "src-nofi-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555801,
+        "narHash": "sha256-z+qrzmLT37QPWYHGttu9BA50dwupthE5Zo2KBvzyNSk=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nofi",
+        "rev": "d75085a320287ae8d9c4802ea1efaa492371ea48",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nofi",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "nofi-main": "nofi-main"
+      }
+    },
+    "src-nofi-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1646878275,
+        "narHash": "sha256-O26aRDUpQ6fhwAggAr228JXHW2zK826+y1fQ5GSdiEc=",
+        "owner": "ct-clmsn",
+        "repo": "nofi",
+        "rev": "28fc1d6cf95e807f5745ea5340ad5ae40c27e7a6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ct-clmsn",
+        "ref": "refs/heads/main",
+        "repo": "nofi",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

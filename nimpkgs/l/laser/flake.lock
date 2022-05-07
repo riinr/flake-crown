@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "laser-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-Laser-master": "src-Laser-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555579,
+        "narHash": "sha256-xafoKGzRdv8VSveh/leqN1l/xpAcO1HCTxuM229/3A4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "laser",
+        "rev": "6dd78072d2519dcb1833bf2e8950e5062e2a1543",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "laser",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "laser-master": "laser-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-Laser-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1614372863,
+        "narHash": "sha256-A2XP60Nlvg7IPCikpM3L/8gpLLKGlx8sLRguMEEH1B8=",
+        "owner": "numforge",
+        "repo": "laser",
+        "rev": "e23b5d63f58441968188fb95e16862d1498bb845",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numforge",
+        "ref": "refs/heads/master",
+        "repo": "laser",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

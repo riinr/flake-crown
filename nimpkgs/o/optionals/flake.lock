@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "optionals-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-optionals-master": "src-optionals-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555856,
+        "narHash": "sha256-IW7HDnIA1u29nAK95OzGFhaXtJq3D6QgWpY+JDbLsZs=",
+        "owner": "nim-nix-pkgs",
+        "repo": "optionals",
+        "rev": "ebb49c0e1b55e3c798214a3f037657f8a7a92e81",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "optionals",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "optionals-master": "optionals-master"
+      }
+    },
+    "src-optionals-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1426992681,
+        "narHash": "sha256-r0tdGT6NVaDlKtLuDTjgkzR4+AvzdReP386R8WYO6lU=",
+        "owner": "MasonMcGill",
+        "repo": "optionals",
+        "rev": "41259ef68f080d25912b0609bb8398d1138820c4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "MasonMcGill",
+        "ref": "refs/heads/master",
+        "repo": "optionals",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

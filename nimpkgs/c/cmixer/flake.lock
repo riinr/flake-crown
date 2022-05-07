@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "cmixer-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-cmixer-master": "src-cmixer-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555316,
+        "narHash": "sha256-4C8hanTsgBY6JqwTDSH0Bt/JZ37WHhjdd9jpqrF9XTU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "cmixer",
+        "rev": "fe500ee68f392706e36842e8e0d1b8132b3d2414",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "cmixer",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "cmixer-master": "cmixer-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-cmixer-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1498318438,
+        "narHash": "sha256-btxFA7eQiPB31BYaDVgHWAqsyz7fMtn72HbIHF3Xdww=",
+        "owner": "rxi",
+        "repo": "cmixer-nim",
+        "rev": "eee48407f3727f89900e0a3e672575f54ad2eef1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rxi",
+        "ref": "refs/heads/master",
+        "repo": "cmixer-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

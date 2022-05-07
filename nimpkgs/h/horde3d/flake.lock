@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "horde3d-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-horde3d-master": "src-horde3d-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555523,
+        "narHash": "sha256-4s9BkoO/JAxDEF5fisxTZKbr3JXSIRIT2XhQP4K46MA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "horde3d",
+        "rev": "536c93522acdf2c55b3e74e636a379a7d3aa92ba",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "horde3d",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "horde3d-master": "horde3d-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-horde3d-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1394852369,
+        "narHash": "sha256-lX2548MyIerGaNJBBHXlz+BcsOoUW1+CFOSWGSqVk8Y=",
+        "owner": "fowlmouth",
+        "repo": "horde3d",
+        "rev": "b5a291c65b9baaa57a4501b36acdf21b94296972",
+        "type": "github"
+      },
+      "original": {
+        "owner": "fowlmouth",
+        "ref": "refs/heads/master",
+        "repo": "horde3d",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

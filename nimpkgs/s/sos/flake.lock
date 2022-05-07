@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "sos-main": "sos-main"
+      }
+    },
+    "sos-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sos-main": "src-sos-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651556040,
+        "narHash": "sha256-5hRf4Nt/lPqNTycXSFbhreGTQ1MllTzOf44wVGjTpVc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sos",
+        "rev": "90940d6b1aa40f256d0eeb70e54872829a5caee4",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sos",
+        "type": "github"
+      }
+    },
+    "src-sos-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1650541522,
+        "narHash": "sha256-KqxjWj2pNZRG9YRthzaYtEtld5JMIuHYvY+CbFtUxAI=",
+        "owner": "ct-clmsn",
+        "repo": "nim-sos",
+        "rev": "122a6ed153a8c4871e2ae0abe637686b2679dcfa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ct-clmsn",
+        "ref": "refs/heads/main",
+        "repo": "nim-sos",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "bitstreams-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-bitstreams-main": "src-bitstreams-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555276,
+        "narHash": "sha256-ifoF6QHkg3/C0j5hlEAHd/XFlhlu237e+696zs+10B8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "bitstreams",
+        "rev": "0c62e8823669f0ef30e2c31c4dcd600537a2c536",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "bitstreams",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "bitstreams-main": "bitstreams-main",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-bitstreams-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1623116465,
+        "narHash": "sha256-qjfcShJcrx4Nljx6vjkcKNw9nn5XFOaEuDwwqBVaF8o=",
+        "owner": "sealmove",
+        "repo": "bitstreams",
+        "rev": "e346580b72616d96ac62e6d9c11d53216ea2bc0f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sealmove",
+        "ref": "refs/heads/main",
+        "repo": "bitstreams",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "freegeoip-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-freegeoip-master": "src-freegeoip-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650750238,
+        "narHash": "sha256-aRyYKLEcir3mt5OkkQ/ZqdDfuEx3jK0RWI1F4hg1EhE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "freegeoip",
+        "rev": "e36ba2b49edf13de4bf2a5f0b0d187984cd7d038",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "freegeoip",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "freegeoip-master": "freegeoip-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-freegeoip-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1500856227,
+        "narHash": "sha256-MdskkazY4SaUXIU/unQUrFOLsMlAAG6NtmFKIbxUGNk=",
+        "owner": "achesak",
+        "repo": "nim-freegeoip",
+        "rev": "974a8781bcb871ea1ef94730cd2cd0c2929b0767",
+        "type": "github"
+      },
+      "original": {
+        "owner": "achesak",
+        "ref": "refs/heads/master",
+        "repo": "nim-freegeoip",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

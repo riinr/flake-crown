@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "exporttosqlite3-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-exporttosqlite3-main": "src-exporttosqlite3-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555405,
+        "narHash": "sha256-7X+zxyTieG2XPv7ZgQq69qR7FDOzbV8IfdrCdmk2l18=",
+        "owner": "nim-nix-pkgs",
+        "repo": "exporttosqlite3",
+        "rev": "de34c57e49eb75e27b047f3e07eb66e533955184",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "exporttosqlite3",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "exporttosqlite3-main": "exporttosqlite3-main",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-exporttosqlite3-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1624523649,
+        "narHash": "sha256-ZidyFexrBE5xeEdBiwiqCKMy0cENpRRnQlZUyNRKTpQ=",
+        "owner": "niklaskorz",
+        "repo": "nim-exporttosqlite3",
+        "rev": "03c9081d6e3192a30adacb4ffec14caaa226a2d8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "niklaskorz",
+        "ref": "refs/heads/main",
+        "repo": "nim-exporttosqlite3",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

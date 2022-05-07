@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "syphus-0_4": "syphus-0_4",
+        "syphus-master": "syphus-master"
+      }
+    },
+    "src-syphus-0_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1517257245,
+        "narHash": "sha256-wrpKhFu9BaqOrn2oRrNhd10bumu2XMkDi2LCnMdPRPI=",
+        "owner": "makingspace",
+        "repo": "syphus",
+        "rev": "4955582a642da02b2f163aa0c137b6b8428b50f2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "makingspace",
+        "ref": "refs/tags/0.4",
+        "repo": "syphus",
+        "type": "github"
+      }
+    },
+    "src-syphus-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1532030358,
+        "narHash": "sha256-F0jLes5e0xjVgfBPb6HviSO04a8MdFZ/a+ogJBZ1+SU=",
+        "owner": "makingspace",
+        "repo": "syphus",
+        "rev": "2b2f221688cea52b99b8f9e43103071e8d65ff2e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "makingspace",
+        "ref": "refs/heads/master",
+        "repo": "syphus",
+        "type": "github"
+      }
+    },
+    "syphus-0_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-syphus-0_4": "src-syphus-0_4"
+      },
+      "locked": {
+        "dir": "0_4",
+        "lastModified": 1651556116,
+        "narHash": "sha256-SksAvW36p0BY9z5Hc34DyhEe5jIAaNZwdX2Faq3CbEQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "syphus",
+        "rev": "2c29ee7c876a9fba6f91e113ace22f14ab37d269",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_4",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "syphus",
+        "type": "github"
+      }
+    },
+    "syphus-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-syphus-master": "src-syphus-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556116,
+        "narHash": "sha256-SksAvW36p0BY9z5Hc34DyhEe5jIAaNZwdX2Faq3CbEQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "syphus",
+        "rev": "2c29ee7c876a9fba6f91e113ace22f14ab37d269",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "syphus",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

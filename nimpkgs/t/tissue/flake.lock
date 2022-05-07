@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "tissue-master": "tissue-master"
+      }
+    },
+    "src-tissue-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1536948127,
+        "narHash": "sha256-Ux8jXBhH+JDzVmbksviqYuMKFjEXMBN4AiwAW3xMT8U=",
+        "owner": "genotrance",
+        "repo": "tissue",
+        "rev": "64e1ddd45c5df8d8d4d9355751f37878a5be6df7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "genotrance",
+        "ref": "refs/heads/master",
+        "repo": "tissue",
+        "type": "github"
+      }
+    },
+    "tissue-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-tissue-master": "src-tissue-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556160,
+        "narHash": "sha256-JLe19SWHL8RaX3Q1PTv3Kw6wvRMz9oPSjGWLBeKIqew=",
+        "owner": "nim-nix-pkgs",
+        "repo": "tissue",
+        "rev": "e499884de43d08eed8dfb332df959779bdf21ac0",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "tissue",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

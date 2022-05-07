@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "bitvector-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-BitVector-master": "src-BitVector-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555279,
+        "narHash": "sha256-4enySEOsDaglD+CPt2i7l4d6UHc21qFAgxWTcs/RS44=",
+        "owner": "nim-nix-pkgs",
+        "repo": "bitvector",
+        "rev": "de2b31bd1728656bfd9354bfa9163688e5009bdf",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "bitvector",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "bitvector-master": "bitvector-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-BitVector-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1562009653,
+        "narHash": "sha256-20CTaxTN7yGIwXSKcYN0tWLA0RS0bhDrn6AE2Qe9dMc=",
+        "owner": "MarcAzar",
+        "repo": "BitVector",
+        "rev": "076513e77f6d199b5e27d21e1b3817b959a9f52d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "MarcAzar",
+        "ref": "refs/heads/master",
+        "repo": "BitVector",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

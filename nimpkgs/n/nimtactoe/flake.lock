@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimtactoe-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-NimTacToe-master": "src-NimTacToe-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555782,
+        "narHash": "sha256-wINUvJMnQIQG6CHKCskmh3JsqcOH3tNU2T0HAx04xIk=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimtactoe",
+        "rev": "30023b9454bd06c8d38dcc47479903b84e358db7",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimtactoe",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimtactoe-master": "nimtactoe-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-NimTacToe-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1580151515,
+        "narHash": "sha256-ALAZafaT4c1CTpCdciEuceYkSYwMh630J0a1UL/R2VI=",
+        "owner": "JesterOrNot",
+        "repo": "Nim-Tac-Toe",
+        "rev": "7c2fce2541e2d3aa0782c1cfc9219f0d5b5168c7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JesterOrNot",
+        "ref": "refs/heads/master",
+        "repo": "Nim-Tac-Toe",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "streamfix-main": "streamfix-main"
+      }
+    },
+    "src-streamfix-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1618013764,
+        "narHash": "sha256-CA/WaUeA7jict0W0h97zXvW+5h6fmIpmFtHuEKdv8aY=",
+        "owner": "inv2004",
+        "repo": "streamfix",
+        "rev": "632c37441247f8e2a61eca2103107bea686b4b62",
+        "type": "github"
+      },
+      "original": {
+        "owner": "inv2004",
+        "ref": "refs/heads/main",
+        "repo": "streamfix",
+        "type": "github"
+      }
+    },
+    "streamfix-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-streamfix-main": "src-streamfix-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651556069,
+        "narHash": "sha256-vGQX9KdGLi7Saa7YBjS1KdIgee7/pJT+KISmcUVWQ1Q=",
+        "owner": "nim-nix-pkgs",
+        "repo": "streamfix",
+        "rev": "74a0d759afd9b686c96827f7c839db1bc6bc1b94",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "streamfix",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

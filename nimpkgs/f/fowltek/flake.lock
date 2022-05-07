@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "fowltek-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-fowltek-master": "src-fowltek-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555436,
+        "narHash": "sha256-FmrCFeB0noQr5NsBOh+WAjTRDNTtXsO868PUj33oruY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "fowltek",
+        "rev": "8b5927cf2cb28ce8bd648ae1289722b2e11455d5",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "fowltek",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "fowltek-master": "fowltek-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-fowltek-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1433253589,
+        "narHash": "sha256-8t5bG6R3gZZZOUzodW2Cl1pd7PRFGURzPMAESstqpmo=",
+        "owner": "fowlmouth",
+        "repo": "nimlibs",
+        "rev": "c8db2ab0acc505d63f26c15d525e01fa970a8cf6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "fowlmouth",
+        "ref": "refs/heads/master",
+        "repo": "nimlibs",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

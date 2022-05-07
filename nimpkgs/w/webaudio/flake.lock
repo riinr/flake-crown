@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "webaudio-master": "webaudio-master"
+      }
+    },
+    "src-webaudio-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1593861009,
+        "narHash": "sha256-6RdPiAXmkNXKbXP7CH0gpg/br+mSBCHl+Ffi+NZtSAM=",
+        "owner": "ftsf",
+        "repo": "nim-webaudio",
+        "rev": "36b0cdcd6fb83df0178f93c78ce517b737609cd9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ftsf",
+        "ref": "refs/heads/master",
+        "repo": "nim-webaudio",
+        "type": "github"
+      }
+    },
+    "webaudio-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-webaudio-master": "src-webaudio-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556215,
+        "narHash": "sha256-978BAiRLyQcaWXNII+m2M8VzhcXx3vUliS+d/Rte//Q=",
+        "owner": "nim-nix-pkgs",
+        "repo": "webaudio",
+        "rev": "e180e6b11ae575a49528b9e1eaf6283e5dc45768",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "webaudio",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

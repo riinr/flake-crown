@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nodejs-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nodejs-main": "src-nodejs-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555800,
+        "narHash": "sha256-WSjqIvpXnfvm1C5t6eU+ADiqcjITdweOit/tda0vhps=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nodejs",
+        "rev": "3b2a22e82997f2c2dcad7a31a194cfec3eba160f",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nodejs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "nodejs-main": "nodejs-main"
+      }
+    },
+    "src-nodejs-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1650936666,
+        "narHash": "sha256-SXDQDdjSdq0hIKsjZMDAVbaFboouM8R3O4YhWV5blvE=",
+        "owner": "juancarlospaco",
+        "repo": "nodestdlib",
+        "rev": "f53bcce7aae4e2cf55c0468f50292f2e452fd701",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/main",
+        "repo": "nodestdlib",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

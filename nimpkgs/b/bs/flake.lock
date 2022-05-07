@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "bs-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-bs-main": "src-bs-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555288,
+        "narHash": "sha256-+rgIfQ1zVQe6KftCVl1sDSNImx0mFNsITI7nmCxDjxE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "bs",
+        "rev": "3b627f4daea42933f8c93193baed0f8e729de1f4",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "bs",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "bs-main": "bs-main",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-bs-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1628633896,
+        "narHash": "sha256-60n3XtOIRHb9P3sw2pfXzU6gHjKrqZ3NalNTTQfWTaQ=",
+        "owner": "maubg-debug",
+        "repo": "build-sys",
+        "rev": "5d6c51ce7e69b79e7ac214db34312375c9920d60",
+        "type": "github"
+      },
+      "original": {
+        "owner": "maubg-debug",
+        "ref": "refs/heads/main",
+        "repo": "build-sys",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

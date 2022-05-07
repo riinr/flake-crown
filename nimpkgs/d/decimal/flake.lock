@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "decimal-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-decimal-master": "src-decimal-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555366,
+        "narHash": "sha256-VOaxRScUunxN9LRuu18WRjiLEJf/fFOPmaM4A6pNszI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "decimal",
+        "rev": "fc625ccd40e6b12bc15bc071ed6456c1063482ab",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "decimal",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "decimal-master": "decimal-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-decimal-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1609926352,
+        "narHash": "sha256-/JpD5la66OTp9MSp60AJzqWMe5YCHFPJMjMC+ahvnlo=",
+        "owner": "inv2004",
+        "repo": "nim-decimal",
+        "rev": "9a3c915bbc70a95e3783980a70ff3a8b69b811b7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "inv2004",
+        "ref": "refs/heads/master",
+        "repo": "nim-decimal",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "biscuits-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-biscuits-master": "src-biscuits-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555273,
+        "narHash": "sha256-o+7nQWX1A/XEd2l/rPLUZDcI0foJ9kfb7bjPK7m4POw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "biscuits",
+        "rev": "8e64b044c676d0dbfc07af3fec497abaef0e2baa",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "biscuits",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "biscuits-master": "biscuits-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-biscuits-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1535669090,
+        "narHash": "sha256-wU8iKbrxLm/P5p+FiSDbn1PbAPzxPA+yoApQQMkL6/U=",
+        "owner": "achesak",
+        "repo": "nim-biscuits",
+        "rev": "8f337e1d0233e0e0c88fe8e88edea74275fca994",
+        "type": "github"
+      },
+      "original": {
+        "owner": "achesak",
+        "ref": "refs/heads/master",
+        "repo": "nim-biscuits",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

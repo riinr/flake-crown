@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "alsa-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-alsa-master": "src-alsa-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555216,
+        "narHash": "sha256-zVNLdOoYRvvM7M7y1M1QYzhcA0BW21U1s6BwmAmhdjs=",
+        "owner": "nim-nix-pkgs",
+        "repo": "alsa",
+        "rev": "d68eb69fa2eb2c2a04b8e8184da9beb5dbb3d24e",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "alsa",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "alsa-master": "alsa-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-alsa-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591692735,
+        "narHash": "sha256-MBRUfiIsa+tMQWT35Q/4JnyVWAQQjqyUfcNhOZHIqYw=",
+        "owner": "eagledot",
+        "repo": "nim-alsa",
+        "rev": "b5ef3f6a1ac5424fcc669e52fd015b9cc0804dac",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "eagledot",
+        "ref": "refs/heads/master",
+        "repo": "nim-alsa",
+        "type": "gitlab"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

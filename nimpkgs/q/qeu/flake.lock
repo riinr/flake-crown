@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "qeu-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-qeu-master": "src-qeu-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555927,
+        "narHash": "sha256-Re1gHVMtBIW+ZOq7L+k+LUeTXjs8VBap4Fqt7PyyydY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "qeu",
+        "rev": "e3d43b288581c3556fc97873de8ed11244595c4f",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "qeu",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "qeu-master": "qeu-master"
+      }
+    },
+    "src-qeu-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591345576,
+        "narHash": "sha256-KUBcgI9ePV/mK2LDQCDg0PnOh347L6qc+2zUUibv+hY=",
+        "owner": "hyu1996",
+        "repo": "qeu",
+        "rev": "efba753872207b144f3249c349f8f32356fad2ec",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hyu1996",
+        "ref": "refs/heads/master",
+        "repo": "qeu",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

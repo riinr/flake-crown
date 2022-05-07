@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "sling-master": "sling-master"
+      }
+    },
+    "sling-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sling-master": "src-sling-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556029,
+        "narHash": "sha256-e91Uh1Gt5D9H8WiApJgzf9mHOU0rPEWYKLKKPSIOF18=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sling",
+        "rev": "f77d03413528de9083b4e2a434776c8c13839953",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sling",
+        "type": "github"
+      }
+    },
+    "src-sling-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1457325558,
+        "narHash": "sha256-x/eMxOMRb9BvzcwHKEIpL2RsEGSrxYBklErUmSlSB08=",
+        "owner": "Druage",
+        "repo": "sling",
+        "rev": "d73bed23a55755b562576d4a8e86f3700409e3cf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Druage",
+        "ref": "refs/heads/master",
+        "repo": "sling",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "gungnir-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-gungnir-master": "src-gungnir-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555515,
+        "narHash": "sha256-ipWio/GHNoz4Fy2iqB7Scn7dXsa5BR+uMhtmEvgtNwI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "gungnir",
+        "rev": "201d8ea4680ad62f0e6124a9a906b32af9794370",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "gungnir",
+        "type": "github"
+      }
+    },
+    "gungnir-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-gungnir-v0_1_0": "src-gungnir-v0_1_0"
+      },
+      "locked": {
+        "dir": "v0_1_0",
+        "lastModified": 1651555515,
+        "narHash": "sha256-ipWio/GHNoz4Fy2iqB7Scn7dXsa5BR+uMhtmEvgtNwI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "gungnir",
+        "rev": "201d8ea4680ad62f0e6124a9a906b32af9794370",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "gungnir",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "gungnir-master": "gungnir-master",
+        "gungnir-v0_1_0": "gungnir-v0_1_0",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-gungnir-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1581692966,
+        "narHash": "sha256-UvdsntTmFLY/SNOF12iUJEKGCa6/3fQInEPPJHR0qHA=",
+        "owner": "planety",
+        "repo": "gungnir",
+        "rev": "989cb8980054f6e082f0b1bf7ae61e277d245b7b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "planety",
+        "ref": "refs/heads/master",
+        "repo": "gungnir",
+        "type": "github"
+      }
+    },
+    "src-gungnir-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1581692966,
+        "narHash": "sha256-UvdsntTmFLY/SNOF12iUJEKGCa6/3fQInEPPJHR0qHA=",
+        "owner": "planety",
+        "repo": "gungnir",
+        "rev": "989cb8980054f6e082f0b1bf7ae61e277d245b7b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "planety",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "gungnir",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "libipset-0_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libipset-0_0_1": "src-libipset-0_0_1"
+      },
+      "locked": {
+        "dir": "0_0_1",
+        "lastModified": 1651555595,
+        "narHash": "sha256-S/x/zUTq/FR99EF5sIphGAUxDeCqDzHGGGwkQaampJQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libipset",
+        "rev": "6fa5c8dd6c36f7ddd22335ea2415b5f4e0b39a03",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_0_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libipset",
+        "type": "github"
+      }
+    },
+    "libipset-0_0_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libipset-0_0_2": "src-libipset-0_0_2"
+      },
+      "locked": {
+        "dir": "0_0_2",
+        "lastModified": 1651555595,
+        "narHash": "sha256-S/x/zUTq/FR99EF5sIphGAUxDeCqDzHGGGwkQaampJQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libipset",
+        "rev": "6fa5c8dd6c36f7ddd22335ea2415b5f4e0b39a03",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_0_2",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libipset",
+        "type": "github"
+      }
+    },
+    "libipset-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libipset-master": "src-libipset-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555595,
+        "narHash": "sha256-S/x/zUTq/FR99EF5sIphGAUxDeCqDzHGGGwkQaampJQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libipset",
+        "rev": "6fa5c8dd6c36f7ddd22335ea2415b5f4e0b39a03",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libipset",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "libipset-0_0_1": "libipset-0_0_1",
+        "libipset-0_0_2": "libipset-0_0_2",
+        "libipset-master": "libipset-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-libipset-0_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1440038916,
+        "narHash": "sha256-fE47pB8myAhD0MJ6XFwvj+xPju6OgkSaxypUgfEij4Q=",
+        "owner": "ba0f3",
+        "repo": "libipset.nim",
+        "rev": "a4a773eab057af8a0c6db75e1dfacaee3e18b31a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/tags/0.0.1",
+        "repo": "libipset.nim",
+        "type": "github"
+      }
+    },
+    "src-libipset-0_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1440042895,
+        "narHash": "sha256-+sWgw4P1BOc+M2tW505gsrC9JkDltkLq5nqJTJdL8/g=",
+        "owner": "ba0f3",
+        "repo": "libipset.nim",
+        "rev": "962e613f867686682eb3bc13254284d9f38280a8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/tags/0.0.2",
+        "repo": "libipset.nim",
+        "type": "github"
+      }
+    },
+    "src-libipset-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1633049822,
+        "narHash": "sha256-IcAYFoCDK2Z+/wULVRR8OsVSN0EBraHt7J6cqXoKQ+g=",
+        "owner": "ba0f3",
+        "repo": "libipset.nim",
+        "rev": "2d689ee288be6a5b95d072d2e3857fc6ba73cd03",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/heads/master",
+        "repo": "libipset.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

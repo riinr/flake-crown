@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "libravatar-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libravatar-master": "src-libravatar-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555599,
+        "narHash": "sha256-o2qU0gciQZZezJtpLt8tNBwivxHSEIiFT300rj+Y9Ig=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libravatar",
+        "rev": "a0a73c56bb0bc84a99f2e204f0b8a389b1eb225a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libravatar",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "libravatar-master": "libravatar-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-libravatar-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1615753480,
+        "narHash": "sha256-EqOsqpME7q3cI8DIS1IDMSRaXU9Rm4jSLh/DEy2fBOI=",
+        "owner": "juancarlospaco",
+        "repo": "nim-libravatar",
+        "rev": "32261ce245c296d5d2b69d4d31a0dcb3eac275b8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "nim-libravatar",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

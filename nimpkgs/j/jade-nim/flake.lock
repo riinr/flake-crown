@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "jade-nim-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jade-nim-master": "src-jade-nim-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555556,
+        "narHash": "sha256-v/HE9PNjdFinxYk3S+6pYCKKhlEZS2XObsatTLJuztI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "jade-nim",
+        "rev": "bfbf20c4fb0f91fa6c2bce4e64d56a07a8975544",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "jade-nim",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "jade-nim-master": "jade-nim-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-jade-nim-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1400617544,
+        "narHash": "sha256-+IUKJ4KHpVs7wnNHh6cAD8heZinRGhLEfAdUPpFul2k=",
+        "owner": "idlewan",
+        "repo": "jade-nim",
+        "rev": "af64d47068cf62042ff0186937c5956dced58a02",
+        "type": "github"
+      },
+      "original": {
+        "owner": "idlewan",
+        "ref": "refs/heads/master",
+        "repo": "jade-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

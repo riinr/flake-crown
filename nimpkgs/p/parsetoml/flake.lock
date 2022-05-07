@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "parsetoml-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-parsetoml-master": "src-parsetoml-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555878,
+        "narHash": "sha256-ttySeN7kEhOj5y/SqeRdXgY6HYEPRCdPAQpfPI9VFIc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "parsetoml",
+        "rev": "2cbffe397814d4219f09c26c03643940d61333f2",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "parsetoml",
+        "type": "github"
+      }
+    },
+    "parsetoml-v0_4_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-parsetoml-v0_4_0": "src-parsetoml-v0_4_0"
+      },
+      "locked": {
+        "dir": "v0_4_0",
+        "lastModified": 1651555878,
+        "narHash": "sha256-ttySeN7kEhOj5y/SqeRdXgY6HYEPRCdPAQpfPI9VFIc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "parsetoml",
+        "rev": "2cbffe397814d4219f09c26c03643940d61333f2",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_4_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "parsetoml",
+        "type": "github"
+      }
+    },
+    "parsetoml-v0_5_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-parsetoml-v0_5_0": "src-parsetoml-v0_5_0"
+      },
+      "locked": {
+        "dir": "v0_5_0",
+        "lastModified": 1651555878,
+        "narHash": "sha256-ttySeN7kEhOj5y/SqeRdXgY6HYEPRCdPAQpfPI9VFIc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "parsetoml",
+        "rev": "2cbffe397814d4219f09c26c03643940d61333f2",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_5_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "parsetoml",
+        "type": "github"
+      }
+    },
+    "parsetoml-v0_6_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-parsetoml-v0_6_0": "src-parsetoml-v0_6_0"
+      },
+      "locked": {
+        "dir": "v0_6_0",
+        "lastModified": 1651555878,
+        "narHash": "sha256-ttySeN7kEhOj5y/SqeRdXgY6HYEPRCdPAQpfPI9VFIc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "parsetoml",
+        "rev": "2cbffe397814d4219f09c26c03643940d61333f2",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_6_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "parsetoml",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "parsetoml-master": "parsetoml-master",
+        "parsetoml-v0_4_0": "parsetoml-v0_4_0",
+        "parsetoml-v0_5_0": "parsetoml-v0_5_0",
+        "parsetoml-v0_6_0": "parsetoml-v0_6_0"
+      }
+    },
+    "src-parsetoml-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1649158662,
+        "narHash": "sha256-zh5PKsG6C9vyIXI26Paq6/CAXk+0O8zUudCPhBB5WyM=",
+        "owner": "NimParsers",
+        "repo": "parsetoml",
+        "rev": "609e03e0a7d69d25330786f2cac034c8dd265ed5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NimParsers",
+        "ref": "refs/heads/master",
+        "repo": "parsetoml",
+        "type": "github"
+      }
+    },
+    "src-parsetoml-v0_4_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1540560804,
+        "narHash": "sha256-cJpMLgnXvrebMj0OITE9DnyI60dG7a1mNzIWfcd6Hks=",
+        "owner": "NimParsers",
+        "repo": "parsetoml",
+        "rev": "078b406b3ff58b9a41c082acfd00ad0c9bb77ad8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NimParsers",
+        "ref": "refs/tags/v0.4.0",
+        "repo": "parsetoml",
+        "type": "github"
+      }
+    },
+    "src-parsetoml-v0_5_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1560182747,
+        "narHash": "sha256-gHpMzmK7TtbIr5u2ZMEwn0e8y9kpI0P82BUFkqqxrb0=",
+        "owner": "NimParsers",
+        "repo": "parsetoml",
+        "rev": "329cc618fe27a6c89708d1fa17ddc72f8da97e08",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NimParsers",
+        "ref": "refs/tags/v0.5.0",
+        "repo": "parsetoml",
+        "type": "github"
+      }
+    },
+    "src-parsetoml-v0_6_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1623068333,
+        "narHash": "sha256-7s54U1Nx5FlCPjQXqNoe9d1ZF57MzzVhbYo4NFl7iOc=",
+        "owner": "NimParsers",
+        "repo": "parsetoml",
+        "rev": "9cdeb3f65fd10302da157db8a8bac5c42f055249",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NimParsers",
+        "ref": "refs/tags/v0.6.0",
+        "repo": "parsetoml",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "oop_utils-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-oop_utils-master": "src-oop_utils-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650750494,
+        "narHash": "sha256-gKKaZpA/4Dn47U9ud49Uy6Z613tgGXuQgPZ7rPrcjOc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "oop_utils",
+        "rev": "b720c9cad27d4e227830c348ffe768f6019aa53d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "oop_utils",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "oop_utils-master": "oop_utils-master"
+      }
+    },
+    "src-oop_utils-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1623225939,
+        "narHash": "sha256-/hXErGqWOjkdR85s+CstZvXV9EHPHL9kv4S3vRsx4ew=",
+        "owner": "bluenote10",
+        "repo": "oop_utils",
+        "rev": "7bac0e00944f8085361d9f3ceae5db3be171117d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bluenote10",
+        "ref": "refs/heads/master",
+        "repo": "oop_utils",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "serialport-master": "serialport-master"
+      }
+    },
+    "serialport-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-serialport-master": "src-serialport-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555996,
+        "narHash": "sha256-Z+THskYRR7M9qqkO89LkX9ZWeyvakAp//LVdgvXIEXw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "serialport",
+        "rev": "4278bf740e958914e013c08b67aebae617d08fe7",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "serialport",
+        "type": "github"
+      }
+    },
+    "src-serialport-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1454173195,
+        "narHash": "sha256-nwF0tOGNSa9rsn++fEX/sF8npdQd3YiFsDgO9XGN2Dg=",
+        "owner": "nimious",
+        "repo": "serialport",
+        "rev": "3445ecd3e553183f53905cb7e6795f326711960c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nimious",
+        "ref": "refs/heads/master",
+        "repo": "serialport",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "asciitext-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-asciitext-master": "src-asciitext-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555235,
+        "narHash": "sha256-iU5iH/9CZtcJWrJQQfccUbRCripTGW13O7PU0BsMr0U=",
+        "owner": "nim-nix-pkgs",
+        "repo": "asciitext",
+        "rev": "a021d145f74b367ba8cfaa7c5ec40c9a2127f238",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "asciitext",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "asciitext-master": "asciitext-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-asciitext-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1600422188,
+        "narHash": "sha256-luBMK24umTXCk4mN/txwgU1SuO4kmrPLHtsvjGuTyOc=",
+        "owner": "Himujjal",
+        "repo": "asciitextNim",
+        "rev": "2e806ac690e4a746db01de779804521e718642d7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Himujjal",
+        "ref": "refs/heads/master",
+        "repo": "asciitextNim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

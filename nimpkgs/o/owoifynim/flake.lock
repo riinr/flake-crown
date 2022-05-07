@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "owoifynim-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-owoifynim-main": "src-owoifynim-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555868,
+        "narHash": "sha256-7+hkNlmqxVl42NXebI140ldVv4q7PsMgZwLQYnonSi8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "owoifynim",
+        "rev": "10535da81782fa0de1c97c1eb826ab3e7a2640d4",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "owoifynim",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "owoifynim-main": "owoifynim-main"
+      }
+    },
+    "src-owoifynim-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1628042386,
+        "narHash": "sha256-9Hdk0SAltDOTjk24CewIwfR2X0HQMAr1KINL+1V9FOc=",
+        "owner": "deadshot465",
+        "repo": "owoifynim",
+        "rev": "8c35b8f25f8cbfb021561979d418c670175fdb88",
+        "type": "github"
+      },
+      "original": {
+        "owner": "deadshot465",
+        "ref": "refs/heads/main",
+        "repo": "owoifynim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

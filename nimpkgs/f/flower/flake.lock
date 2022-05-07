@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "flower-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-flower-main": "src-flower-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555429,
+        "narHash": "sha256-ys2uTzoGs+ZOBBxnUEtjxRVBbj0KvxKot92EurysgU4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "flower",
+        "rev": "f03e2893412471887d383fd2da8faa7927485d33",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "flower",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "flower-main": "flower-main",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-flower-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1641256804,
+        "narHash": "sha256-ykv5TUi1HC2CSO67zMGqP3IpMVW8p1JjZWXFF3f2oCA=",
+        "owner": "dizzyliam",
+        "repo": "flower",
+        "rev": "63423c60f04cc623ed917be1a8aa75c217679bab",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dizzyliam",
+        "ref": "refs/heads/main",
+        "repo": "flower",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

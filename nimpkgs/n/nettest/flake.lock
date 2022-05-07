@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nettest-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-netTest-main": "src-netTest-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555694,
+        "narHash": "sha256-vyaH+pJ1oipNdi6FhDG88aDJTEgW0JIVPT2y0xlAQnA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nettest",
+        "rev": "b95a18a743553fe5a11080a375f3c6e743aaaf9c",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nettest",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nettest-main": "nettest-main",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-netTest-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1602906355,
+        "narHash": "sha256-su7T/9nh102sFQtgU+mehRpkzHFKqS70nof6Lh6VDNM=",
+        "owner": "blmvxer",
+        "repo": "netTest",
+        "rev": "d1af7c8d78549e0c125f69bd6a4d597993f49ba0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "blmvxer",
+        "ref": "refs/heads/main",
+        "repo": "netTest",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

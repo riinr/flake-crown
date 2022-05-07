@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "gitapi-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-gitapi-master": "src-gitapi-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555466,
+        "narHash": "sha256-0XqJzSet30i5qcgQW0DIZptaPaco9RC7yZtP3cUycuo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "gitapi",
+        "rev": "bfe9d2be2924be2e638044567dea43d0e0409b98",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "gitapi",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "gitapi-master": "gitapi-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-gitapi-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1500778568,
+        "narHash": "sha256-05kSxEjxkTz1ULd8knEwXvvCgsYuH1H8m08Tg0SQROM=",
+        "owner": "achesak",
+        "repo": "nim-gitapi",
+        "rev": "bad12da29e4793534f7d5c4cf4532a22d8111ec7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "achesak",
+        "ref": "refs/heads/master",
+        "repo": "nim-gitapi",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

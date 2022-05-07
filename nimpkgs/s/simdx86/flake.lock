@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "simdx86-master": "simdx86-master"
+      }
+    },
+    "simdx86-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simdX86-master": "src-simdX86-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556017,
+        "narHash": "sha256-C7xgo6IasyNheB9/WMwKB3RaTwUSjLx3vgGHzGrbquQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "simdx86",
+        "rev": "aa2ce5ec1cc60a9521728378ff04130bd72cbde2",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "simdx86",
+        "type": "github"
+      }
+    },
+    "src-simdX86-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1549948626,
+        "narHash": "sha256-NY0oiBUel5PxX+tT3Js+l7ViXQJVx/oN3cS7+3KdXM0=",
+        "owner": "nimlibs",
+        "repo": "simdX86",
+        "rev": "d8e00afc7c09b09b19643179705448eba6060b3d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nimlibs",
+        "ref": "refs/heads/master",
+        "repo": "simdX86",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "tm_client-main": "tm_client-main"
+      }
+    },
+    "src-tm_client-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1631848072,
+        "narHash": "sha256-ekVdXnJTEz8W8qy0/22HIP64XkHDc/AjSFZ/VlWw7A0=",
+        "owner": "termermc",
+        "repo": "nim-tm-client",
+        "rev": "83f0bd0e59c7d4beca0be94d4654592c9b8159e0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "termermc",
+        "ref": "refs/heads/main",
+        "repo": "nim-tm-client",
+        "type": "github"
+      }
+    },
+    "tm_client-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-tm_client-main": "src-tm_client-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1650750640,
+        "narHash": "sha256-C3vnRCuECH4o61S2aExJ0TYb9kqqUiDB6L0+/fQIZKk=",
+        "owner": "nim-nix-pkgs",
+        "repo": "tm_client",
+        "rev": "a6845d110c7dd2dda75b06082f87c42119ee11a3",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "tm_client",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

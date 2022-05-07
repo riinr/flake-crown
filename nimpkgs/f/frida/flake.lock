@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "frida-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-frida-master": "src-frida-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555440,
+        "narHash": "sha256-/F43NURskkQgzmUIz2abt7PqyWRns6EV35h08bq5HiI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "frida",
+        "rev": "735042630a8fa8e5e1fc7a2dc5fd701dc29595a9",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "frida",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "frida-master": "frida-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-frida-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1635347308,
+        "narHash": "sha256-q+pD5n631HH3/vBm25OEo7XpqV1YUi21EV//YUqRQGI=",
+        "owner": "ba0f3",
+        "repo": "frida.nim",
+        "rev": "0afc661a711c5d062469e991e6049e32f90c28e1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/heads/master",
+        "repo": "frida.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

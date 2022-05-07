@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "ffbookmarks-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ffbookmarks-master": "src-ffbookmarks-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555415,
+        "narHash": "sha256-snnZPPwILQ2pB412Ca7DY/5hylxDVRa7w11Z/d6iytw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ffbookmarks",
+        "rev": "de9b14e65e800011614506af031ea012e9aaf1ac",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ffbookmarks",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "ffbookmarks-master": "ffbookmarks-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-ffbookmarks-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1500823493,
+        "narHash": "sha256-L9amzNGXLPIy4FpmAzTFUFIhrPOrAUHUzeryfatZTvU=",
+        "owner": "achesak",
+        "repo": "nim-ffbookmarks",
+        "rev": "0abfff56017c910e2afcd870ee9cee996191d422",
+        "type": "github"
+      },
+      "original": {
+        "owner": "achesak",
+        "ref": "refs/heads/master",
+        "repo": "nim-ffbookmarks",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

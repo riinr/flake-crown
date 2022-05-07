@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "tinyfiledialogs-master": "tinyfiledialogs-master"
+      }
+    },
+    "src-tinyfiledialogs-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1538327404,
+        "narHash": "sha256-CL6NMGuh621UDAuBaRhpGc2mbMhQMnh9ttgInf1Y02E=",
+        "owner": "juancarlospaco",
+        "repo": "nim-tinyfiledialogs",
+        "rev": "bdb7b5688f6f5aa87e5521a8f53acef1b5b5b985",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "nim-tinyfiledialogs",
+        "type": "github"
+      }
+    },
+    "tinyfiledialogs-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-tinyfiledialogs-master": "src-tinyfiledialogs-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556158,
+        "narHash": "sha256-aB2dFTDhdbAX2gSeEsT5KUrCQ+J+POGdAFwZCtMpFaU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "tinyfiledialogs",
+        "rev": "eeee739aedcf6c13bff1c05092cb4da75dcc6c6e",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "tinyfiledialogs",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

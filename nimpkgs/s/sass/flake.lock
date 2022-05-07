@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "sass-master": "sass-master"
+      }
+    },
+    "sass-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sass-master": "src-sass-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555972,
+        "narHash": "sha256-Dqr/NBCAC0AxcgqfzzC0p14zDE2Fg2OWeOKMklK9D6M=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sass",
+        "rev": "0e8729bf1f8adf84cda5e02b71422aba479c80f6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sass",
+        "type": "github"
+      }
+    },
+    "src-sass-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1602281287,
+        "narHash": "sha256-jKbjcOwv2sU1lyBt0yxhzZZS6YP4HpO31xhrGnPxdGM=",
+        "owner": "dom96",
+        "repo": "sass",
+        "rev": "e683aa1943bf8b4bc60ba895aa79967df84bcfdb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dom96",
+        "ref": "refs/heads/master",
+        "repo": "sass",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "blake2-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-blake2-master": "src-blake2-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555281,
+        "narHash": "sha256-JlBinr1Yo+NNXoaftnUFCstzhPmvcBSmvNC5E6ZO1P4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "blake2",
+        "rev": "8843278deef7c4b4327aace46e9f6d44e75d9482",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "blake2",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "blake2-master": "blake2-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-blake2-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1572013825,
+        "narHash": "sha256-//PBlQsyspRSX/UXuRK9RQFKgQlGMaL4HgIaYwuMGVo=",
+        "owner": "narimiran",
+        "repo": "blake2",
+        "rev": "625267e5cb14c87e1d36d79ee24c2f4fe66edfdb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "narimiran",
+        "ref": "refs/heads/master",
+        "repo": "blake2",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

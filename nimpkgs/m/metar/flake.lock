@@ -1,0 +1,320 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "metar-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nimpy": "nimpy",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-metar-master": "src-metar-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556755,
+        "narHash": "sha256-xb+IngT5e+9fBQpl6V85IRHOuqFPoohVyqI0tZwq3MA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "metar",
+        "rev": "ccdc6015243b004a0f82b82b92786479f3d59481",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "metar",
+        "type": "github"
+      }
+    },
+    "metar-v0_1_23": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nimpy": "nimpy_2",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-metar-v0_1_23": "src-metar-v0_1_23"
+      },
+      "locked": {
+        "dir": "v0_1_23",
+        "lastModified": 1651556755,
+        "narHash": "sha256-xb+IngT5e+9fBQpl6V85IRHOuqFPoohVyqI0tZwq3MA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "metar",
+        "rev": "ccdc6015243b004a0f82b82b92786479f3d59481",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_23",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "metar",
+        "type": "github"
+      }
+    },
+    "metar-v0_1_25": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nimpy": "nimpy_3",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-metar-v0_1_25": "src-metar-v0_1_25"
+      },
+      "locked": {
+        "dir": "v0_1_25",
+        "lastModified": 1651556755,
+        "narHash": "sha256-xb+IngT5e+9fBQpl6V85IRHOuqFPoohVyqI0tZwq3MA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "metar",
+        "rev": "ccdc6015243b004a0f82b82b92786479f3d59481",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_25",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "metar",
+        "type": "github"
+      }
+    },
+    "nimpy": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "metar-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "metar-master",
+          "nixpkgs"
+        ],
+        "src-nimpy-master": "src-nimpy-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555767,
+        "narHash": "sha256-48+VDSpx+U1DjE25lm8xGcTGbqxVfCAQki7dVLO5PVs=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimpy",
+        "rev": "e7f2b159bcfb8257f08b8de9bdc369ca2b56dc24",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimpy",
+        "type": "github"
+      }
+    },
+    "nimpy_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "metar-v0_1_23",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "metar-v0_1_23",
+          "nixpkgs"
+        ],
+        "src-nimpy-master": "src-nimpy-master_2"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648163379,
+        "narHash": "sha256-O9wuU0UDWdkPMKLUoGV5fkq9iDUFDDe2ogY3F1Zv+VE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimpy",
+        "rev": "92e7e9292f56014c9d7cb3f55fceaab0f53dac0d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimpy",
+        "type": "github"
+      }
+    },
+    "nimpy_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "metar-v0_1_25",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "metar-v0_1_25",
+          "nixpkgs"
+        ],
+        "src-nimpy-master": "src-nimpy-master_3"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648163379,
+        "narHash": "sha256-O9wuU0UDWdkPMKLUoGV5fkq9iDUFDDe2ogY3F1Zv+VE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimpy",
+        "rev": "92e7e9292f56014c9d7cb3f55fceaab0f53dac0d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimpy",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "metar-master": "metar-master",
+        "metar-v0_1_23": "metar-v0_1_23",
+        "metar-v0_1_25": "metar-v0_1_25",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-metar-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1614385043,
+        "narHash": "sha256-kYlQ+OQDa3xkPIGawQdXnalGOcFAVBSFeTkBRrTTUUo=",
+        "owner": "flenniken",
+        "repo": "metar",
+        "rev": "62b27f29d2e83a2f3927d0f9dbbf685553f323c7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "flenniken",
+        "ref": "refs/heads/master",
+        "repo": "metar",
+        "type": "github"
+      }
+    },
+    "src-metar-v0_1_23": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1580072641,
+        "narHash": "sha256-m/yKXHCO3ts361iMRLUXp5LpOQdt4ZNiFXSAVJp+8Qg=",
+        "owner": "flenniken",
+        "repo": "metar",
+        "rev": "e23839891103e4aa8f569a516a048ac3a4ad39d4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "flenniken",
+        "ref": "refs/tags/v0.1.23",
+        "repo": "metar",
+        "type": "github"
+      }
+    },
+    "src-metar-v0_1_25": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1614385043,
+        "narHash": "sha256-kYlQ+OQDa3xkPIGawQdXnalGOcFAVBSFeTkBRrTTUUo=",
+        "owner": "flenniken",
+        "repo": "metar",
+        "rev": "62b27f29d2e83a2f3927d0f9dbbf685553f323c7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "flenniken",
+        "ref": "refs/tags/v0.1.25",
+        "repo": "metar",
+        "type": "github"
+      }
+    },
+    "src-nimpy-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644942366,
+        "narHash": "sha256-9aOqk1hkt5ggb6cbGhwY19ncdN7u7J6NizqPLLjUcgQ=",
+        "owner": "yglukhov",
+        "repo": "nimpy",
+        "rev": "1963283148d01f46ac789a83412afbb5d375cfad",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "nimpy",
+        "type": "github"
+      }
+    },
+    "src-nimpy-master_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644942366,
+        "narHash": "sha256-9aOqk1hkt5ggb6cbGhwY19ncdN7u7J6NizqPLLjUcgQ=",
+        "owner": "yglukhov",
+        "repo": "nimpy",
+        "rev": "1963283148d01f46ac789a83412afbb5d375cfad",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "nimpy",
+        "type": "github"
+      }
+    },
+    "src-nimpy-master_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644942366,
+        "narHash": "sha256-9aOqk1hkt5ggb6cbGhwY19ncdN7u7J6NizqPLLjUcgQ=",
+        "owner": "yglukhov",
+        "repo": "nimpy",
+        "rev": "1963283148d01f46ac789a83412afbb5d375cfad",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "nimpy",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

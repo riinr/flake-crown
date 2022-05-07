@@ -5,6 +5,7 @@ set MAX_PARALLEL 4
 set PKGS $argv
 
 set CHANGES (echo "$PKGS"|xargs dirname|sort -u)
+set PRJLCKS (echo "$PKGS"|xargs dirname|sort -u)
 
 while test (count $PKGS) -gt 0
   sleep 0.0(random 1 9)
@@ -20,11 +21,26 @@ while test (count $PKGS) -gt 0
     # tags aren't supposed to change
     nix flake lock $NEXT_PKG &
   case '*'
-    # branches change on every time
+    # branches changes every time
     nix flake lock --recreate-lock-file $NEXT_PKG &
   end
 
   set PKGS $PKGS[2..-1]
+end
+wait
+
+while test (count $PRJLCKS) -gt 0
+  sleep 0.0(random 1 9)
+  if test (count (jobs)) -ge $MAX_PARALLEL
+    continue
+  end
+  set NEXT_PKG $PRJLCKS[1]
+  cd $NEXT_PKG
+
+  echo (count $PRJLCKS), $NEXT_PKG
+  nix flake lock --recreate-lock-file $NEXT_PKG &
+  sleep 0.0(random 1 9)
+  set PRJLCKS $PRJLCKS[2..-1]
 end
 wait
 
@@ -36,7 +52,6 @@ while test (count $CHANGES) -gt 0
   set NEXT_PKG $CHANGES[1]
   cd $NEXT_PKG
 
-  # nix flake lock --recreate-lock-file $NEXT_PKG &
   echo Commit (basename $NEXT_PKG)
   sleep 0.0(random 1 9)
   if test (git status --porcelain|grep -v 'result'|wc -l) -gt 0

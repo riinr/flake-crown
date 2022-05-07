@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimeverything-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimeverything-master": "src-nimeverything-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555729,
+        "narHash": "sha256-+TWPqlDGycH9E+1G4L1tH8cKhVs3I9nShUB9DHmaTE4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimeverything",
+        "rev": "195c682ffdd63c588a8d49fcb5015f7b33601178",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimeverything",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimeverything-master": "nimeverything-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimeverything-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1441205527,
+        "narHash": "sha256-2I/YCyqCqsIOjXxIUzsvAzOUP4zyp7zSHu82x3opFSg=",
+        "owner": "xland",
+        "repo": "nimeverything",
+        "rev": "f61fb11de69906c46869564b1bd301eb1cc237de",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xland",
+        "ref": "refs/heads/master",
+        "repo": "nimeverything",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

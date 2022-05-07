@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "jscanvas-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jscanvas-master": "src-jscanvas-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555560,
+        "narHash": "sha256-TLsQrDLo77IlfprRTCmzPbjieJfNB9XbMu4QYIE2AnY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "jscanvas",
+        "rev": "089e9f775a366e67fefbbb01898ceccab448f879",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "jscanvas",
+        "type": "github"
+      }
+    },
+    "jscanvas-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jscanvas-v0_1_0": "src-jscanvas-v0_1_0"
+      },
+      "locked": {
+        "dir": "v0_1_0",
+        "lastModified": 1651555560,
+        "narHash": "sha256-TLsQrDLo77IlfprRTCmzPbjieJfNB9XbMu4QYIE2AnY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "jscanvas",
+        "rev": "089e9f775a366e67fefbbb01898ceccab448f879",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "jscanvas",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "jscanvas-master": "jscanvas-master",
+        "jscanvas-v0_1_0": "jscanvas-v0_1_0",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-jscanvas-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1570546731,
+        "narHash": "sha256-KTr7JHs9ZPSlaokotdX/DkNGZspOQfq8wPoxciY2ifQ=",
+        "owner": "planetis-m",
+        "repo": "jscanvas",
+        "rev": "8fb011b5da355236484ffd6263bb037dafb18553",
+        "type": "github"
+      },
+      "original": {
+        "owner": "planetis-m",
+        "ref": "refs/heads/master",
+        "repo": "jscanvas",
+        "type": "github"
+      }
+    },
+    "src-jscanvas-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1570546731,
+        "narHash": "sha256-KTr7JHs9ZPSlaokotdX/DkNGZspOQfq8wPoxciY2ifQ=",
+        "owner": "planetis-m",
+        "repo": "jscanvas",
+        "rev": "8fb011b5da355236484ffd6263bb037dafb18553",
+        "type": "github"
+      },
+      "original": {
+        "owner": "planetis-m",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "jscanvas",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

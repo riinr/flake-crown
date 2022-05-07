@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "i18n-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-i18n-master": "src-i18n-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555536,
+        "narHash": "sha256-5u0BT0L1LuTo9TwspwXxMChAkFiAjtbKYuGMf8/XLKU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "i18n",
+        "rev": "4e8029582f0067c4f92d9c17c748555a0b733ef8",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "i18n",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "i18n-master": "i18n-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-i18n-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1593500131,
+        "narHash": "sha256-HBRtYS6kZb7/JfJAWMyvch7dbMRAMnI8cQb0z+E4bgY=",
+        "owner": "Parashurama",
+        "repo": "nim-i18n",
+        "rev": "4fa3648fa318c295fa67082df63c804974814772",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Parashurama",
+        "ref": "refs/heads/master",
+        "repo": "nim-i18n",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

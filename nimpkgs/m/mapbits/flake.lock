@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "mapbits-1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-mapbits-1_0": "src-mapbits-1_0"
+      },
+      "locked": {
+        "dir": "1_0",
+        "lastModified": 1651555634,
+        "narHash": "sha256-FjMuLbqye06ij5lW2lsrDpHVXphF0E1TtaLRR/e3C0o=",
+        "owner": "nim-nix-pkgs",
+        "repo": "mapbits",
+        "rev": "954534e19288551335a42cc318606d50589c6d51",
+        "type": "github"
+      },
+      "original": {
+        "dir": "1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "mapbits",
+        "type": "github"
+      }
+    },
+    "mapbits-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-mapbits-master": "src-mapbits-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555634,
+        "narHash": "sha256-FjMuLbqye06ij5lW2lsrDpHVXphF0E1TtaLRR/e3C0o=",
+        "owner": "nim-nix-pkgs",
+        "repo": "mapbits",
+        "rev": "954534e19288551335a42cc318606d50589c6d51",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "mapbits",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "mapbits-1_0": "mapbits-1_0",
+        "mapbits-master": "mapbits-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-mapbits-1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1471041293,
+        "narHash": "sha256-G4xrK3hmEyN4ji0sC4044HOim+KYLHgYLrlw64/soYM=",
+        "owner": "jlp765",
+        "repo": "mapbits",
+        "rev": "e27d7d3cdea6030d80c46e653ec63848833714c1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jlp765",
+        "ref": "refs/tags/1.0",
+        "repo": "mapbits",
+        "type": "github"
+      }
+    },
+    "src-mapbits-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1471041293,
+        "narHash": "sha256-G4xrK3hmEyN4ji0sC4044HOim+KYLHgYLrlw64/soYM=",
+        "owner": "jlp765",
+        "repo": "mapbits",
+        "rev": "e27d7d3cdea6030d80c46e653ec63848833714c1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jlp765",
+        "ref": "refs/heads/master",
+        "repo": "mapbits",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

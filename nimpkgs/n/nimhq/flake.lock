@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimhq-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimhq-master": "src-nimhq-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555737,
+        "narHash": "sha256-CK6BbsMIACvqPjL9QMoFG092DPsnTWic169zysbLIxc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimhq",
+        "rev": "1abf74be4eeb2413eae33341d13dbca82e058ba7",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimhq",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimhq-master": "nimhq-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimhq-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1547588033,
+        "narHash": "sha256-hGDmMpuLO6Gr2IyBaAwGIfBJguIge6ALKT8Gy3nh9K4=",
+        "owner": "sillibird",
+        "repo": "nimhq",
+        "rev": "57856e68ce2d203e6451051c9e0cb5ee27e8c14c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sillibird",
+        "ref": "refs/heads/master",
+        "repo": "nimhq",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

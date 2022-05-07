@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "gles-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-gles-master": "src-gles-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650750277,
+        "narHash": "sha256-lregNQEQZ2R7OMgmx+kR/dDqtmVcrLoi9FBxRZEdS4w=",
+        "owner": "nim-nix-pkgs",
+        "repo": "gles",
+        "rev": "2f54d351f4bd86139925ab6494aa45f98bd04f25",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "gles",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "gles-master": "gles-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-gles-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1454176391,
+        "narHash": "sha256-3MpkAE2nWwTdqeEUh7eT9KdtzLFw3NKGcdJa2AFVYVo=",
+        "owner": "nimious",
+        "repo": "gles",
+        "rev": "1169850e7b1bcbfff1263229509d381b8dc4e0d3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nimious",
+        "ref": "refs/heads/master",
+        "repo": "gles",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

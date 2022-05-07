@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "metric-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-metric-master": "src-metric-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555649,
+        "narHash": "sha256-7juaRdp+j2ZdARRkv3ixLCWxFJzHwY5KJEHjwFhqikQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "metric",
+        "rev": "0fb476797fb7f517f5633f73857752eb5dba7a66",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "metric",
+        "type": "github"
+      }
+    },
+    "metric-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-metric-v0_1_0": "src-metric-v0_1_0"
+      },
+      "locked": {
+        "dir": "v0_1_0",
+        "lastModified": 1651555649,
+        "narHash": "sha256-7juaRdp+j2ZdARRkv3ixLCWxFJzHwY5KJEHjwFhqikQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "metric",
+        "rev": "0fb476797fb7f517f5633f73857752eb5dba7a66",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "metric",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "metric-master": "metric-master",
+        "metric-v0_1_0": "metric-v0_1_0",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-metric-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1533648102,
+        "narHash": "sha256-mToxVqHmzOj/6DThDUe+MkxS+0ugZbdfV5pZVxtD/74=",
+        "owner": "mjendrusch",
+        "repo": "metric",
+        "rev": "f89e596a9274b81d441e2a75d09d6a3f0b11105e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mjendrusch",
+        "ref": "refs/heads/master",
+        "repo": "metric",
+        "type": "github"
+      }
+    },
+    "src-metric-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1519598235,
+        "narHash": "sha256-6xDb4XuScP/Nba4txNQsu0zCB+EWTqz9unNnLNFr8b4=",
+        "owner": "mjendrusch",
+        "repo": "metric",
+        "rev": "e8e592ff1b2362ac91aced63802af76775c4ce2c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mjendrusch",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "metric",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

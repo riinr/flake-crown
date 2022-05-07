@@ -1,0 +1,136 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimassets-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimassets-master": "src-nimassets-master",
+        "zstd": "zstd"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556776,
+        "narHash": "sha256-FtADoiZGpaE1ZuZ3aiGToKLs1RLKvMaZg5ieR+g40JM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimassets",
+        "rev": "86397ba2da637f3a3bde46c10d518003a794df2c",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimassets",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimassets-master": "nimassets-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimassets-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1651439921,
+        "narHash": "sha256-i3jmHAmHOVHApyRX7Pp2nu5l4AA8mFYVVmPU+wMd/58=",
+        "owner": "xmonader",
+        "repo": "nimassets",
+        "rev": "d06724dd7b80fb470542ab932f3a94af78fe2eb1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xmonader",
+        "ref": "refs/heads/master",
+        "repo": "nimassets",
+        "type": "github"
+      }
+    },
+    "src-zstd-v0_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1604729757,
+        "narHash": "sha256-XJKpAXWlVJjApJaZgCnivtIHZCHOqBTtoaTHq1I0ZmE=",
+        "owner": "wltsmrz",
+        "repo": "nim_zstd",
+        "rev": "7fcf69f3359085735872f3bcc1a20419afb58e74",
+        "type": "github"
+      },
+      "original": {
+        "owner": "wltsmrz",
+        "ref": "refs/tags/v0.5",
+        "repo": "nim_zstd",
+        "type": "github"
+      }
+    },
+    "zstd": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimassets-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimassets-master",
+          "nixpkgs"
+        ],
+        "src-zstd-v0_5": "src-zstd-v0_5"
+      },
+      "locked": {
+        "dir": "v0_5",
+        "lastModified": 1651556296,
+        "narHash": "sha256-E7OEE64AQmbPGRYWkyFNzmOhq3ISpjyUVs9eDBVj5jg=",
+        "owner": "nim-nix-pkgs",
+        "repo": "zstd",
+        "rev": "b05a982fa90486ea4101347193ecf51accb45318",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_5",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "zstd",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

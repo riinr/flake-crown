@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "tencil-main": "tencil-main"
+      }
+    },
+    "src-tencil-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1610439594,
+        "narHash": "sha256-8vijyetTRd72Cg3hyjP0baPN92A08e/IUV8P88u92pg=",
+        "owner": "enimatek-nl",
+        "repo": "tencil",
+        "rev": "de809dff9d7744b246ea3fd85add0ba59bedc40f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "enimatek-nl",
+        "ref": "refs/heads/main",
+        "repo": "tencil",
+        "type": "github"
+      }
+    },
+    "tencil-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-tencil-main": "src-tencil-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651556143,
+        "narHash": "sha256-+hN26vDCmr+QlfkE744uma3SgtnFNqkIvvjkh3RFnDE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "tencil",
+        "rev": "8c576b6dee20ed85f839aea8a0519812cb23e538",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "tencil",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "rtree-master": "rtree-master"
+      }
+    },
+    "rtree-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rtree-master": "src-rtree-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555969,
+        "narHash": "sha256-JQEn7T+ehsSeD3xVdJuOH08+Lh/crjEv3qSX3nXt6eI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "rtree",
+        "rev": "96488a59ec651d6bbf0e8f7698209fbfbb7ee98f",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "rtree",
+        "type": "github"
+      }
+    },
+    "src-rtree-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1617445526,
+        "narHash": "sha256-7n5LTOKTETHd+NdFKyPpWrCY37xQ7nsUtmh4YXBHvQU=",
+        "owner": "stefansalewski",
+        "repo": "RTree",
+        "rev": "2a6a80f5cbcbc0673bbf67628c1766baa838fc1d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stefansalewski",
+        "ref": "refs/heads/master",
+        "repo": "RTree",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "pas2nim-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-pas2nim-master": "src-pas2nim-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555879,
+        "narHash": "sha256-sWkyrWhP8E23CGcklrgO3OaZbYu4e2t5KnlY4VotcwU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "pas2nim",
+        "rev": "bded10be8cf70b854891a254168d021203ecd9b9",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "pas2nim",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "pas2nim-master": "pas2nim-master"
+      }
+    },
+    "src-pas2nim-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1424968606,
+        "narHash": "sha256-YbqR8+Jr7M6+oKXtihrggWKvq+C40ZrScNfqfCDkXWs=",
+        "owner": "nim-lang",
+        "repo": "pas2nim",
+        "rev": "cec4c960267e19fb7248f025b776644686da850b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/heads/master",
+        "repo": "pas2nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

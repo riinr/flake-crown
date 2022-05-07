@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "telenim-master": "telenim-master"
+      }
+    },
+    "src-telenim-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1634021726,
+        "narHash": "sha256-mXYCWuzhtnUUHLMCqk2ZUSrRRCbNaRTMJoNjgYj0jPk=",
+        "owner": "Yardanico",
+        "repo": "telenim",
+        "rev": "ba111b6e78919582a7183e5a2ac911a8813e762c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Yardanico",
+        "ref": "refs/heads/master",
+        "repo": "telenim",
+        "type": "github"
+      }
+    },
+    "telenim-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-telenim-master": "src-telenim-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556131,
+        "narHash": "sha256-R1daBYBauXI56W7dwdgR6GjFDReOw09hBKrKbpOb5qo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "telenim",
+        "rev": "27b501e337c50df987e16e08b2eaa7c1d01b86df",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "telenim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

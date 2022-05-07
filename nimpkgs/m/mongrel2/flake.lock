@@ -1,0 +1,183 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "mongrel2-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-mongrel2-master": "src-mongrel2-master",
+        "tnetstring": "tnetstring",
+        "zmq": "zmq"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651589743,
+        "narHash": "sha256-pfDteliTN6btGwbvKywwUxdHvlYalk2g0XRF8zdd9Sk=",
+        "owner": "nim-nix-pkgs",
+        "repo": "mongrel2",
+        "rev": "543c62a63772e1139732031c0ef9c135dc179533",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "mongrel2",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "mongrel2-master": "mongrel2-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-mongrel2-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1635368236,
+        "narHash": "sha256-zMzHms2LH39SgucQJmOj/oxoWad80lzgb/umJtsV1vU=",
+        "owner": "mahlonsmith",
+        "repo": "nim-mongrel2",
+        "rev": "8ffc30acceb67888d5724a633239a192dba1c034",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mahlonsmith",
+        "ref": "refs/heads/master",
+        "repo": "nim-mongrel2",
+        "type": "github"
+      }
+    },
+    "src-tnetstring-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1635354591,
+        "narHash": "sha256-4W2XNQ4EtT54NKUDpFxvYGRlLuuHshplilEjcS+bUy8=",
+        "owner": "mahlonsmith",
+        "repo": "nim-tnetstring",
+        "rev": "1ef54e538df3103e8bb4ed61264a8aac2c66e42a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mahlonsmith",
+        "ref": "refs/heads/master",
+        "repo": "nim-tnetstring",
+        "type": "github"
+      }
+    },
+    "src-zmq-v1_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1647962281,
+        "narHash": "sha256-BUM7rhvArynvfnKi3fqYRAEJopHTqvsG8cUTANvYoT8=",
+        "owner": "nim-lang",
+        "repo": "nim-zmq",
+        "rev": "c9d9814c1060daffcfbff3dbd9dd9c503af99c86",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/v1.3.1",
+        "repo": "nim-zmq",
+        "type": "github"
+      }
+    },
+    "tnetstring": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "mongrel2-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "mongrel2-master",
+          "nixpkgs"
+        ],
+        "src-tnetstring-master": "src-tnetstring-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556162,
+        "narHash": "sha256-ZcQ/H5pq0/I4s6tFwoxvtvHe0tHpkDWjvZghdwVMV8Q=",
+        "owner": "nim-nix-pkgs",
+        "repo": "tnetstring",
+        "rev": "0093b7dfdf799014103043ed87b84f5eb55d6cc9",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "tnetstring",
+        "type": "github"
+      }
+    },
+    "zmq": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "mongrel2-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "mongrel2-master",
+          "nixpkgs"
+        ],
+        "src-zmq-v1_3_1": "src-zmq-v1_3_1"
+      },
+      "locked": {
+        "dir": "v1_3_1",
+        "lastModified": 1651556293,
+        "narHash": "sha256-mQIOSY7hE1RbM1n7AdFECsCzoViK/uZu/fTJbpQxxe8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "zmq",
+        "rev": "b999a2ac279786dedc4bd1a98221a0b82552b672",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_3_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "zmq",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

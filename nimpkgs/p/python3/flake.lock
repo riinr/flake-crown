@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "python3-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-python3-master": "src-python3-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555922,
+        "narHash": "sha256-QL3T1Ho4UcIY4GHTP6ocSHAtR3kq0hujZk9n01KNk0I=",
+        "owner": "nim-nix-pkgs",
+        "repo": "python3",
+        "rev": "243d09a0ace759b2a6df90cde8cc5779e911ab80",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "python3",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "python3-master": "python3-master"
+      }
+    },
+    "src-python3-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587916208,
+        "narHash": "sha256-naew/VYOrboK0d9qcpALlgoSO56ISr3QmDMz4zOXfy0=",
+        "owner": "matkuki",
+        "repo": "python3",
+        "rev": "989a8fe96552a3709ecce6e13c8da4ab9b218154",
+        "type": "github"
+      },
+      "original": {
+        "owner": "matkuki",
+        "ref": "refs/heads/master",
+        "repo": "python3",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

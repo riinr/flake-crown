@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "sharedmempool-master": "sharedmempool-master"
+      }
+    },
+    "sharedmempool-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sharedmempool-master": "src-sharedmempool-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556004,
+        "narHash": "sha256-oCiLfv5tk+1kRVsX9SpIG2xI00jVeCEyyC526s9wmDU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sharedmempool",
+        "rev": "068683af4442ee8018a1efd19e85acc9f605f86a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sharedmempool",
+        "type": "github"
+      }
+    },
+    "src-sharedmempool-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1560074114,
+        "narHash": "sha256-ZaukT9BW+kUbzUApoeyhQbwD7Jg4ZqR51OxL9uyn0wU=",
+        "owner": "mikra01",
+        "repo": "sharedmempool",
+        "rev": "3529122d5b4787c00bde37e93031284ba93845d2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mikra01",
+        "ref": "refs/heads/master",
+        "repo": "sharedmempool",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

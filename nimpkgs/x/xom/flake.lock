@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "xom-master": "xom-master",
+        "xom-v0_1-alpha": "xom-v0_1-alpha"
+      }
+    },
+    "src-xom-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1626537605,
+        "narHash": "sha256-F+htuM8h9tNp5PoxDem2yHD3UItxQ603arVAneIRc00=",
+        "owner": "schneiderfelipe",
+        "repo": "xom",
+        "rev": "a132f627946ba51d75b80f16ca620bb2ab9023e1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "schneiderfelipe",
+        "ref": "refs/heads/master",
+        "repo": "xom",
+        "type": "github"
+      }
+    },
+    "src-xom-v0_1-alpha": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1626536435,
+        "narHash": "sha256-BxNgeb+89pE4iFsWM8fJFIJ/xGfFaSUE7SO/qYn4OSw=",
+        "owner": "schneiderfelipe",
+        "repo": "xom",
+        "rev": "fda4902a2f48cc7283c0deb61ffc4a201c4da1fe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "schneiderfelipe",
+        "ref": "refs/tags/v0.1-alpha",
+        "repo": "xom",
+        "type": "github"
+      }
+    },
+    "xom-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-xom-master": "src-xom-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556259,
+        "narHash": "sha256-38/fZBhKohKm1j2Rq/GUT5HedmjeUKiS/ao6JlaICIw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "xom",
+        "rev": "2ffa3e2d722713a0ef54ed46e682b1f9863b2797",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "xom",
+        "type": "github"
+      }
+    },
+    "xom-v0_1-alpha": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-xom-v0_1-alpha": "src-xom-v0_1-alpha"
+      },
+      "locked": {
+        "dir": "v0_1-alpha",
+        "lastModified": 1651556259,
+        "narHash": "sha256-38/fZBhKohKm1j2Rq/GUT5HedmjeUKiS/ao6JlaICIw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "xom",
+        "rev": "2ffa3e2d722713a0ef54ed46e682b1f9863b2797",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1-alpha",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "xom",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

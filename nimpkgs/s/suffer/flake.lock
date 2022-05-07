@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "suffer-master": "suffer-master"
+      }
+    },
+    "src-suffer-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1593156409,
+        "narHash": "sha256-Xq+alPP6hfhc6GYEBgne2+iur9M8kr3F1OjmUPB3u5E=",
+        "owner": "emekoi",
+        "repo": "suffer",
+        "rev": "773dcff99a4ab2575f9c296949009a0485c32c53",
+        "type": "github"
+      },
+      "original": {
+        "owner": "emekoi",
+        "ref": "refs/heads/master",
+        "repo": "suffer",
+        "type": "github"
+      }
+    },
+    "suffer-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-suffer-master": "src-suffer-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556079,
+        "narHash": "sha256-+GPP1Q3KIlHDr3VpmeFuE8jkDPg82UUYVClR5sEk/qA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "suffer",
+        "rev": "cb3bf07ea1f46b207c7740aceda7e89511336c5a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "suffer",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

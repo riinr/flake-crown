@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "romans-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-romans-master": "src-romans-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555965,
+        "narHash": "sha256-+lN3u9g6Lg3wiNvcTIRkbxpTTTjRE6eNWxeNRy5Sgxc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "romans",
+        "rev": "143842ec74bab3e816e44c56dd239089f3205bc7",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "romans",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "romans-master": "romans-master"
+      }
+    },
+    "src-romans-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1509477886,
+        "narHash": "sha256-38XKnblWE9d++hpIcirxy0nJs8E0FJLFqRbwA73k9nk=",
+        "owner": "lcrees",
+        "repo": "romans",
+        "rev": "b2f93e8d167d1d9b313462a4b5e484147e7bb665",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lcrees",
+        "ref": "refs/heads/master",
+        "repo": "romans",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "webrtcvad-master": "webrtcvad-master"
+      }
+    },
+    "src-webrtcvad-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1590880145,
+        "narHash": "sha256-nDlQl0nzcslOTKvB4P4tPzb8cd/H8E36uz6hX8uRXZU=",
+        "owner": "eagledot",
+        "repo": "nim-webrtcvad",
+        "rev": "fc4d79f0887e4244ef6f90bd816641fcb9f7a024",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "eagledot",
+        "ref": "refs/heads/master",
+        "repo": "nim-webrtcvad",
+        "type": "gitlab"
+      }
+    },
+    "webrtcvad-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-webrtcvad-master": "src-webrtcvad-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556231,
+        "narHash": "sha256-HxNssMSVc08wyL8rwT+30W/1WeUF4e7c2rH0d8bn1sw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "webrtcvad",
+        "rev": "e975b7e2261552342f4d6dfb70ce8369313d90a6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "webrtcvad",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

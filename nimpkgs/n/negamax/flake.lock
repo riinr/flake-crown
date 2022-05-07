@@ -1,0 +1,412 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "negamax-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-negamax-master": "src-negamax-master",
+        "turn_based_game": "turn_based_game"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556765,
+        "narHash": "sha256-UK6++4VcMcJmBGFon33enCPJP2S4pg82FtodrigHmeA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "negamax",
+        "rev": "51d5cf03c014dfcc06e266b01bc28a361a83b49b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "negamax",
+        "type": "github"
+      }
+    },
+    "negamax-v0_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-negamax-v0_0_1": "src-negamax-v0_0_1",
+        "turn_based_game": "turn_based_game_2"
+      },
+      "locked": {
+        "dir": "v0_0_1",
+        "lastModified": 1651556765,
+        "narHash": "sha256-UK6++4VcMcJmBGFon33enCPJP2S4pg82FtodrigHmeA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "negamax",
+        "rev": "51d5cf03c014dfcc06e266b01bc28a361a83b49b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_0_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "negamax",
+        "type": "github"
+      }
+    },
+    "negamax-v0_0_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-negamax-v0_0_2": "src-negamax-v0_0_2",
+        "turn_based_game": "turn_based_game_3"
+      },
+      "locked": {
+        "dir": "v0_0_2",
+        "lastModified": 1651556765,
+        "narHash": "sha256-UK6++4VcMcJmBGFon33enCPJP2S4pg82FtodrigHmeA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "negamax",
+        "rev": "51d5cf03c014dfcc06e266b01bc28a361a83b49b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_0_2",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "negamax",
+        "type": "github"
+      }
+    },
+    "negamax-v0_0_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-negamax-v0_0_3": "src-negamax-v0_0_3",
+        "turn_based_game": "turn_based_game_4"
+      },
+      "locked": {
+        "dir": "v0_0_3",
+        "lastModified": 1651556765,
+        "narHash": "sha256-UK6++4VcMcJmBGFon33enCPJP2S4pg82FtodrigHmeA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "negamax",
+        "rev": "51d5cf03c014dfcc06e266b01bc28a361a83b49b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_0_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "negamax",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "negamax-master": "negamax-master",
+        "negamax-v0_0_1": "negamax-v0_0_1",
+        "negamax-v0_0_2": "negamax-v0_0_2",
+        "negamax-v0_0_3": "negamax-v0_0_3",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-negamax-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1570390248,
+        "narHash": "sha256-dRyLU6fQfB4dq9VDqZnwynrKH8nasghOH0AXm+L3hz8=",
+        "owner": "JohnAD",
+        "repo": "negamax",
+        "rev": "eea0b77ab5670eff118a50cb344f20f3deef09ea",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JohnAD",
+        "ref": "refs/heads/master",
+        "repo": "negamax",
+        "type": "github"
+      }
+    },
+    "src-negamax-v0_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1526849453,
+        "narHash": "sha256-KwGCLkhxZP8hPAJMzBEEsue6YFx90eyeoBOjBnMWk9c=",
+        "owner": "JohnAD",
+        "repo": "negamax",
+        "rev": "99faf50ce4bfc51ef106949628a22d75d2305da2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JohnAD",
+        "ref": "refs/tags/v0.0.1",
+        "repo": "negamax",
+        "type": "github"
+      }
+    },
+    "src-negamax-v0_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1527717814,
+        "narHash": "sha256-R9hkJUJoQdUkx8C5Kzd/QIn1LtfNd6yHpt7MiKfMtNo=",
+        "owner": "JohnAD",
+        "repo": "negamax",
+        "rev": "3356de95a4fe4ea2f7fcb3eb2073472b5f100d69",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JohnAD",
+        "ref": "refs/tags/v0.0.2",
+        "repo": "negamax",
+        "type": "github"
+      }
+    },
+    "src-negamax-v0_0_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1570390248,
+        "narHash": "sha256-dRyLU6fQfB4dq9VDqZnwynrKH8nasghOH0AXm+L3hz8=",
+        "owner": "JohnAD",
+        "repo": "negamax",
+        "rev": "eea0b77ab5670eff118a50cb344f20f3deef09ea",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JohnAD",
+        "ref": "refs/tags/v0.0.3",
+        "repo": "negamax",
+        "type": "github"
+      }
+    },
+    "src-turn_based_game-v1_1_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1573161905,
+        "narHash": "sha256-zvfkSUcFruBvckMuXcjncRT5r5AEgPdee2/mk2NU4DI=",
+        "owner": "JohnAD",
+        "repo": "turn_based_game",
+        "rev": "25861cc8146b14c73d1e2abc95bf0c9f0b8cc2db",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JohnAD",
+        "ref": "refs/tags/v1.1.6",
+        "repo": "turn_based_game",
+        "type": "github"
+      }
+    },
+    "src-turn_based_game-v1_1_6_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1573161905,
+        "narHash": "sha256-zvfkSUcFruBvckMuXcjncRT5r5AEgPdee2/mk2NU4DI=",
+        "owner": "JohnAD",
+        "repo": "turn_based_game",
+        "rev": "25861cc8146b14c73d1e2abc95bf0c9f0b8cc2db",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JohnAD",
+        "ref": "refs/tags/v1.1.6",
+        "repo": "turn_based_game",
+        "type": "github"
+      }
+    },
+    "src-turn_based_game-v1_1_6_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1573161905,
+        "narHash": "sha256-zvfkSUcFruBvckMuXcjncRT5r5AEgPdee2/mk2NU4DI=",
+        "owner": "JohnAD",
+        "repo": "turn_based_game",
+        "rev": "25861cc8146b14c73d1e2abc95bf0c9f0b8cc2db",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JohnAD",
+        "ref": "refs/tags/v1.1.6",
+        "repo": "turn_based_game",
+        "type": "github"
+      }
+    },
+    "src-turn_based_game-v1_1_6_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1573161905,
+        "narHash": "sha256-zvfkSUcFruBvckMuXcjncRT5r5AEgPdee2/mk2NU4DI=",
+        "owner": "JohnAD",
+        "repo": "turn_based_game",
+        "rev": "25861cc8146b14c73d1e2abc95bf0c9f0b8cc2db",
+        "type": "github"
+      },
+      "original": {
+        "owner": "JohnAD",
+        "ref": "refs/tags/v1.1.6",
+        "repo": "turn_based_game",
+        "type": "github"
+      }
+    },
+    "turn_based_game": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "negamax-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "negamax-master",
+          "nixpkgs"
+        ],
+        "src-turn_based_game-v1_1_6": "src-turn_based_game-v1_1_6"
+      },
+      "locked": {
+        "dir": "v1_1_6",
+        "lastModified": 1650750652,
+        "narHash": "sha256-v7U4Z7tiE7NLqbgSEiGcsant3UbZnPkDGG9LkLx7uUc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "turn_based_game",
+        "rev": "f2398371daf132d566fcebe3eebb2d5b6b58aeae",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_1_6",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "turn_based_game",
+        "type": "github"
+      }
+    },
+    "turn_based_game_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "negamax-v0_0_1",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "negamax-v0_0_1",
+          "nixpkgs"
+        ],
+        "src-turn_based_game-v1_1_6": "src-turn_based_game-v1_1_6_2"
+      },
+      "locked": {
+        "dir": "v1_1_6",
+        "lastModified": 1648270045,
+        "narHash": "sha256-iZKz7ekW8Vwg0kkDDiUTxiJTALc+1rFuyi4Wc/prnnY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "turn_based_game",
+        "rev": "5bbea9933e28c21afad9916cf79f49df8fc9601e",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_1_6",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "turn_based_game",
+        "type": "github"
+      }
+    },
+    "turn_based_game_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "negamax-v0_0_2",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "negamax-v0_0_2",
+          "nixpkgs"
+        ],
+        "src-turn_based_game-v1_1_6": "src-turn_based_game-v1_1_6_3"
+      },
+      "locked": {
+        "dir": "v1_1_6",
+        "lastModified": 1648270045,
+        "narHash": "sha256-iZKz7ekW8Vwg0kkDDiUTxiJTALc+1rFuyi4Wc/prnnY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "turn_based_game",
+        "rev": "5bbea9933e28c21afad9916cf79f49df8fc9601e",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_1_6",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "turn_based_game",
+        "type": "github"
+      }
+    },
+    "turn_based_game_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "negamax-v0_0_3",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "negamax-v0_0_3",
+          "nixpkgs"
+        ],
+        "src-turn_based_game-v1_1_6": "src-turn_based_game-v1_1_6_4"
+      },
+      "locked": {
+        "dir": "v1_1_6",
+        "lastModified": 1648270045,
+        "narHash": "sha256-iZKz7ekW8Vwg0kkDDiUTxiJTALc+1rFuyi4Wc/prnnY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "turn_based_game",
+        "rev": "5bbea9933e28c21afad9916cf79f49df8fc9601e",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_1_6",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "turn_based_game",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

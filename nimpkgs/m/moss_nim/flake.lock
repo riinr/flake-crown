@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "moss_nim-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-moss_nim-main": "src-moss_nim-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1650750379,
+        "narHash": "sha256-RHmgzdbFvnqcSczLBVjxtCeLGOG5c8HPUflxuvDvja4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "moss_nim",
+        "rev": "9a518118df6f74998936dd1fa0e20d05ea051c3c",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "moss_nim",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "moss_nim-main": "moss_nim-main",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-moss_nim-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1614872080,
+        "narHash": "sha256-3Qezojw/XF6l37Wg3DxE2XfHJPjIlbur/G9g+sABLQg=",
+        "owner": "D4D3VD4V3",
+        "repo": "moss_nim",
+        "rev": "debfb6f16f5652b6bb9168a55d6169e250b5039b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "D4D3VD4V3",
+        "ref": "refs/heads/main",
+        "repo": "moss_nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

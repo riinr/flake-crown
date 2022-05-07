@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "shene-master": "shene-master"
+      }
+    },
+    "shene-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-shene-master": "src-shene-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556007,
+        "narHash": "sha256-nUe90eW4ZvOfDXUpMi1Pzje3hOXOl9ENNGdK0j5pIhw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "shene",
+        "rev": "55228128cae1b54990685c2b2b7ddef62861efcd",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "shene",
+        "type": "github"
+      }
+    },
+    "src-shene-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1594179540,
+        "narHash": "sha256-291ozSihPQNKRg4cXy3xstz17a8mipDuFdkOzqHc4rg=",
+        "owner": "xflywind",
+        "repo": "shene",
+        "rev": "451dcac2a01000b09759a79dfdc07ad225579a5a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xflywind",
+        "ref": "refs/heads/master",
+        "repo": "shene",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "sums-main": "sums-main"
+      }
+    },
+    "src-sums-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1625582716,
+        "narHash": "sha256-zwD4IgNiCIVRMj2AvXhSTEhEEYKJH0FYNj3hNLOrzT4=",
+        "owner": "planetis-m",
+        "repo": "sums",
+        "rev": "4d5f687a672f08b3d294fb13124d4e8fe4df20d8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "planetis-m",
+        "ref": "refs/heads/main",
+        "repo": "sums",
+        "type": "github"
+      }
+    },
+    "sums-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sums-main": "src-sums-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651556079,
+        "narHash": "sha256-XLrMlNdc674wrmc8oc11x56KZ44O1dc3R6W36K+IIaI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sums",
+        "rev": "7f90f265561773c8d3975652c28a4849e95171d5",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sums",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

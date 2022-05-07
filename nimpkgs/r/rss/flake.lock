@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "rss-master": "rss-master"
+      }
+    },
+    "rss-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rss-master": "src-rss-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555968,
+        "narHash": "sha256-KbjC3pcDRcwkOLw329RJQ5Vu1h/6uLRhBAHg9BFEwNw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "rss",
+        "rev": "74c429f42316b227b3c45e0b8ac3d6b3a58f6dff",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "rss",
+        "type": "github"
+      }
+    },
+    "src-rss-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1570335723,
+        "narHash": "sha256-RYG33ecJ7ugmov+UVWuMxx6/x22g86iNzoa0OSoMYE4=",
+        "owner": "achesak",
+        "repo": "nim-rss",
+        "rev": "c51da8c22dbc67889e4884c77d459cea92b17926",
+        "type": "github"
+      },
+      "original": {
+        "owner": "achesak",
+        "ref": "refs/heads/master",
+        "repo": "nim-rss",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

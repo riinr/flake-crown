@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "tsv2json-master": "tsv2json-master"
+      }
+    },
+    "src-tsv2json-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1607258489,
+        "narHash": "sha256-jlG/rvokQo0GwB1WPeF+OprxJbOCioy9Ae5ZT64YIwc=",
+        "owner": "hectormonacci",
+        "repo": "tsv2json",
+        "rev": "7509ad85cf0613242c9297ff396ef8872ce9bd1c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hectormonacci",
+        "ref": "refs/heads/master",
+        "repo": "tsv2json",
+        "type": "github"
+      }
+    },
+    "tsv2json-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-tsv2json-master": "src-tsv2json-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556170,
+        "narHash": "sha256-332ny7fwL6wfLPFn7+6mq0Lw/rF9dFQDWKliTF7JHTA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "tsv2json",
+        "rev": "0a136da93a93b5958c02aa3227e05281018d6e8c",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "tsv2json",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

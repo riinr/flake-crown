@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "libcurl-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libcurl-master": "src-libcurl-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555588,
+        "narHash": "sha256-nQKaCo0ZiQWs5YPu6ETikoR94gnGfAKT0CAyA6sNsC8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libcurl",
+        "rev": "2b233733bdbf66bc76470dd047a9ae527f826909",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libcurl",
+        "type": "github"
+      }
+    },
+    "libcurl-v1_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libcurl-v1_0_0": "src-libcurl-v1_0_0"
+      },
+      "locked": {
+        "dir": "v1_0_0",
+        "lastModified": 1651555588,
+        "narHash": "sha256-nQKaCo0ZiQWs5YPu6ETikoR94gnGfAKT0CAyA6sNsC8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libcurl",
+        "rev": "2b233733bdbf66bc76470dd047a9ae527f826909",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_0_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libcurl",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "libcurl-master": "libcurl-master",
+        "libcurl-v1_0_0": "libcurl-v1_0_0",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-libcurl-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1651452214,
+        "narHash": "sha256-0a+J/8K+UEiwZcbvdNF7vegr+MKv7Wxswm0mJCntXmc=",
+        "owner": "Araq",
+        "repo": "libcurl",
+        "rev": "e0245416e09f8f20607265733ddd3790c6b8c796",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/heads/master",
+        "repo": "libcurl",
+        "type": "github"
+      }
+    },
+    "src-libcurl-v1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1493222154,
+        "narHash": "sha256-fRhpSvidCWGHFaGSDr7rY5VR3qevesbIiHLDShmj4fs=",
+        "owner": "Araq",
+        "repo": "libcurl",
+        "rev": "23f3d90e60d7a233b5eb27fb13e57fd198c73697",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/tags/v1.0.0",
+        "repo": "libcurl",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

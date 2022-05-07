@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "soundex-master": "soundex-master"
+      }
+    },
+    "soundex-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-soundex-master": "src-soundex-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556041,
+        "narHash": "sha256-UmMA3DjIaPSiI/99bjyQVQ1IYg4rxZvtcw2Eo17iOm0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "soundex",
+        "rev": "021fe275b2be12d737ffc548d6974aaf262fde1b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "soundex",
+        "type": "github"
+      }
+    },
+    "src-soundex-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1593382536,
+        "narHash": "sha256-tsMcQ+v5ac5ieGKovknt9FbrGUZU/FoOOJkrL3CcCuY=",
+        "owner": "Kashiwara0205",
+        "repo": "soundex",
+        "rev": "2e0337fd92bd320c53ce11194171de063fea6a37",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Kashiwara0205",
+        "ref": "refs/heads/master",
+        "repo": "soundex",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

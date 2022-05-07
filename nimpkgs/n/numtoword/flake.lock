@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "numtoword-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-numToWord-master": "src-numToWord-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555838,
+        "narHash": "sha256-4RaIGMqZ38SiyfLS7ietohsKrIo+hTEOyNO4ARbkix0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "numtoword",
+        "rev": "6d94f5acbf9569f8587752c07656b3ef29a56bdc",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "numtoword",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "numtoword-master": "numtoword-master"
+      }
+    },
+    "src-numToWord-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1628822967,
+        "narHash": "sha256-Y9WNXhA4LdKWr8pC/mLX1m5KtqS1fRAPQCffIAWrfBM=",
+        "owner": "thisago",
+        "repo": "numToWord",
+        "rev": "525a668eb8dacd4f36d4ba1b223d73da61b2d90b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thisago",
+        "ref": "refs/heads/master",
+        "repo": "numToWord",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

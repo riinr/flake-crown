@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "cmd-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-cmd-master": "src-cmd-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555315,
+        "narHash": "sha256-RymLK0sr9esYpJtTyQIMe+H3oI4yuGUzW1+6GMIeKgs=",
+        "owner": "nim-nix-pkgs",
+        "repo": "cmd",
+        "rev": "4d010def380472859a4ef5cc719dcbf5f9cd5827",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "cmd",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "cmd-master": "cmd-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-cmd-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1523282033,
+        "narHash": "sha256-d3Jac9sJIqtYHJkjFztH6bhWG71kfagSF8s2HOgSNoM=",
+        "owner": "samdmarshall",
+        "repo": "cmd.nim",
+        "rev": "92f014d484d6dde9e4adc7edfb6ef0c7d8605328",
+        "type": "github"
+      },
+      "original": {
+        "owner": "samdmarshall",
+        "ref": "refs/heads/master",
+        "repo": "cmd.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

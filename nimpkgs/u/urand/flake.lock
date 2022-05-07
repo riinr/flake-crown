@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "urand-master": "urand-master"
+      }
+    },
+    "src-urand-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1543671366,
+        "narHash": "sha256-RP5RAJI81YDVDlJtvzhCA2BAGmPuBGVPKt/t6ut5Qq0=",
+        "owner": "Matceporial",
+        "repo": "nim-urand",
+        "rev": "f3385acce562d4b656f17d65ce586152e0882fc9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Matceporial",
+        "ref": "refs/heads/master",
+        "repo": "nim-urand",
+        "type": "github"
+      }
+    },
+    "urand-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-urand-master": "src-urand-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556184,
+        "narHash": "sha256-+e+/S+HBQGjW5ujwL0VSe6dOyEuP9AYJekE2I4aHYSs=",
+        "owner": "nim-nix-pkgs",
+        "repo": "urand",
+        "rev": "dabe8ee446ba40bbabefa04934ccb911e40e97c1",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "urand",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "bcrypt-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-bcrypt-master": "src-bcrypt-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555261,
+        "narHash": "sha256-K3VVz8sqQ58+6DO6teriOND7GT8Nq107S8cH6awSg5E=",
+        "owner": "nim-nix-pkgs",
+        "repo": "bcrypt",
+        "rev": "865c2a3e277f9116e1273c9c0d254adb3e4b3ec7",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "bcrypt",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "bcrypt-master": "bcrypt-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-bcrypt-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1539482757,
+        "narHash": "sha256-W6dyGbWGTzadZqs3JNPs+V36xt5updsrDHBRjMOYZQo=",
+        "owner": "ithkuil",
+        "repo": "bcryptnim",
+        "rev": "440c5676ff63ae1ba1bd7dae4c0682ba4b9c54b2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ithkuil",
+        "ref": "refs/heads/master",
+        "repo": "bcryptnim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

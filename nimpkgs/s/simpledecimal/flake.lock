@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "simpledecimal-0_1_0": "simpledecimal-0_1_0",
+        "simpledecimal-master": "simpledecimal-master"
+      }
+    },
+    "simpledecimal-0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simpledecimal-0_1_0": "src-simpledecimal-0_1_0"
+      },
+      "locked": {
+        "dir": "0_1_0",
+        "lastModified": 1651556019,
+        "narHash": "sha256-xgIdWJjLlzY+osVvnT3VtQzPZNmT1CBO8GG7ZzcIl4A=",
+        "owner": "nim-nix-pkgs",
+        "repo": "simpledecimal",
+        "rev": "9126cde0bc7d94b96cd7b1ac3433a58baf587112",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "simpledecimal",
+        "type": "github"
+      }
+    },
+    "simpledecimal-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simpledecimal-master": "src-simpledecimal-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556019,
+        "narHash": "sha256-xgIdWJjLlzY+osVvnT3VtQzPZNmT1CBO8GG7ZzcIl4A=",
+        "owner": "nim-nix-pkgs",
+        "repo": "simpledecimal",
+        "rev": "9126cde0bc7d94b96cd7b1ac3433a58baf587112",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "simpledecimal",
+        "type": "github"
+      }
+    },
+    "src-simpledecimal-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1537287498,
+        "narHash": "sha256-mDtSDx0R0IaA0QuwSFeKEqpCmIU08/8o5yh+9/ZgQ0E=",
+        "owner": "pigmej",
+        "repo": "nim-simple-decimal",
+        "rev": "174c13cb7c37f8f89a81b7ea995757421be35052",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pigmej",
+        "ref": "refs/tags/0.1.0",
+        "repo": "nim-simple-decimal",
+        "type": "github"
+      }
+    },
+    "src-simpledecimal-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1537287498,
+        "narHash": "sha256-mDtSDx0R0IaA0QuwSFeKEqpCmIU08/8o5yh+9/ZgQ0E=",
+        "owner": "pigmej",
+        "repo": "nim-simple-decimal",
+        "rev": "174c13cb7c37f8f89a81b7ea995757421be35052",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pigmej",
+        "ref": "refs/heads/master",
+        "repo": "nim-simple-decimal",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

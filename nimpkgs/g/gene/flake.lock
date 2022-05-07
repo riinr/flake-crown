@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "gene-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-gene-master": "src-gene-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555454,
+        "narHash": "sha256-NI4fYTpO6b8X7nokreG35XxSAEf2rI/HU/PjHnjYQNE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "gene",
+        "rev": "7837685e72dcfc72af2013ddab843fcfcf208b97",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "gene",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "gene-master": "gene-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-gene-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1651279266,
+        "narHash": "sha256-TGmrh7xnaRaImmjJQsX0QEmD7r/pV88gErXgjSt4b8c=",
+        "owner": "gcao",
+        "repo": "gene-new",
+        "rev": "60b924fd220508d8166ca8a95059db01659d644f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gcao",
+        "ref": "refs/heads/master",
+        "repo": "gene-new",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

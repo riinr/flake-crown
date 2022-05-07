@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nordaudio-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nordaudio-main": "src-nordaudio-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555804,
+        "narHash": "sha256-MhjEahitITpn/o0SDv/xZZn2ep/2A1wj6G/RsG7Iu00=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nordaudio",
+        "rev": "909564b2ec14909e3c9f7921e80757a5d07d9316",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nordaudio",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "nordaudio-main": "nordaudio-main"
+      }
+    },
+    "src-nordaudio-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1640252944,
+        "narHash": "sha256-t1r3ECP4EO08puF6dDjLgpUt0Ka84aSO3h5iZOhAyvg=",
+        "owner": "Psirus",
+        "repo": "nordaudio",
+        "rev": "dcc5ca5ce5d477fb6c145d37386b517347867151",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Psirus",
+        "ref": "refs/heads/main",
+        "repo": "nordaudio",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

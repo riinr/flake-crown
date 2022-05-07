@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "asyncthreadpool-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-asyncthreadpool-main": "src-asyncthreadpool-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555245,
+        "narHash": "sha256-Oruo/ulei9syUGFbJ+xA+nAxsebMF02iAVpc2l56/XE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "asyncthreadpool",
+        "rev": "c1f22e94ad67755c1be979dfa194c025b60e304b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "asyncthreadpool",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "asyncthreadpool-main": "asyncthreadpool-main",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-asyncthreadpool-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1626874704,
+        "narHash": "sha256-N+0WmTSdMZhMomMCo8x7T1DUyT3OY/g4aYDzXGy8stI=",
+        "owner": "yglukhov",
+        "repo": "asyncthreadpool",
+        "rev": "7e533b31ab5768211ba63274109b8f15a1f833a0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/main",
+        "repo": "asyncthreadpool",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

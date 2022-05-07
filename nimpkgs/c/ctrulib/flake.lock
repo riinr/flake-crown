@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "ctrulib-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ctrulib-master": "src-ctrulib-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555354,
+        "narHash": "sha256-41psPs4UxwZKP9dvbOnSO8eZtpm7NGPpbkpCkIK48Xk=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ctrulib",
+        "rev": "11400e36032e581aa77a26584c1090a57907e2d0",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ctrulib",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "ctrulib-master": "ctrulib-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-ctrulib-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1448721916,
+        "narHash": "sha256-jijO4keweKCrKfBTo8eOQyN/k2S1FMEhbohiGcRFyug=",
+        "owner": "skyforce77",
+        "repo": "ctrulib-nim",
+        "rev": "e7c019ef02cbedadf61186ee3f1e93c9d18776cd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "skyforce77",
+        "ref": "refs/heads/master",
+        "repo": "ctrulib-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

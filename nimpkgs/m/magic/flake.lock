@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "magic-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-magic-master": "src-magic-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555630,
+        "narHash": "sha256-EWqqel+e+1/n2m+PCxnFYekA9HQ3g/hh2B3r1AxCkNc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "magic",
+        "rev": "f0c1689d70048f3b9cb31db015e986bd547a7cfd",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "magic",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "magic-master": "magic-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-magic-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1525187802,
+        "narHash": "sha256-HnCQf8OJFpz0a8O1b8emXhPUrlM3MPs0cUwclZ7rsuI=",
+        "owner": "xmonader",
+        "repo": "nim-magic",
+        "rev": "3eb3cc7e0139a696a7b42fd447d0359f07338bd7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xmonader",
+        "ref": "refs/heads/master",
+        "repo": "nim-magic",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

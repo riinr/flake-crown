@@ -1,0 +1,183 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "github-2vg-mofuhttputils": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "mofuw-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "mofuw-master",
+          "nixpkgs"
+        ],
+        "src-mofuhttputils-master": "src-mofuhttputils-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555467,
+        "narHash": "sha256-IAytOKJKQQhW6UhzH2Fur/YxBzELY6h/I5Frzyyr0eI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-2vg-mofuhttputils",
+        "rev": "548c981f3c8b58d016973387152d8684c2c8bc50",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-2vg-mofuhttputils",
+        "type": "github"
+      }
+    },
+    "github-2vg-mofuparser": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "mofuw-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "mofuw-master",
+          "nixpkgs"
+        ],
+        "src-mofuparser-master": "src-mofuparser-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555467,
+        "narHash": "sha256-kqrty33mzsxtDk5n2/mobfSdmebtNo5RZcOc9p76kxI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-2vg-mofuparser",
+        "rev": "da4f46843cd48a03b7899a51ae1c60d28edee934",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-2vg-mofuparser",
+        "type": "github"
+      }
+    },
+    "mofuw-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "github-2vg-mofuhttputils": "github-2vg-mofuhttputils",
+        "github-2vg-mofuparser": "github-2vg-mofuparser",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-mofuw-master": "src-mofuw-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651590669,
+        "narHash": "sha256-CY0/W3Rlwh99//BrAJmcKyl8r8ilQVvzQjWhAsRHfa0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "mofuw",
+        "rev": "195c8c71a7fd04ec8e2db9a3a8f0a61929a3fff8",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "mofuw",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "mofuw-master": "mofuw-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-mofuhttputils-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1545360468,
+        "narHash": "sha256-annYsQOdNWuGg/x3Twgi3T06dkwpP0Bw+AmHCXMlN5M=",
+        "owner": "2vg",
+        "repo": "mofuhttputils",
+        "rev": "6f9e1fa2ecf0d1e2fc040b28ee7b2e0b198fb67f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "2vg",
+        "ref": "refs/heads/master",
+        "repo": "mofuhttputils",
+        "type": "github"
+      }
+    },
+    "src-mofuparser-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1545184507,
+        "narHash": "sha256-/++EiTA92RPT6pKgne6OvvTkAfAzLocUiklt4HxCkBI=",
+        "owner": "2vg",
+        "repo": "mofuparser",
+        "rev": "554a820040ebec1ec18c4a6986c7e92837dd1dd0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "2vg",
+        "ref": "refs/heads/master",
+        "repo": "mofuparser",
+        "type": "github"
+      }
+    },
+    "src-mofuw-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1568784448,
+        "narHash": "sha256-DFKW1YMBeB++AY7UdyivsyeSLQPZAaVnOIbdd81Iols=",
+        "owner": "2vg",
+        "repo": "mofuw",
+        "rev": "33e6c1c066129cd87bbf8e7b9b5818540001f71c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "2vg",
+        "ref": "refs/heads/master",
+        "repo": "mofuw",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

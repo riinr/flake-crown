@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "package_visible_types-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-package_visible_types-master": "src-package_visible_types-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650750506,
+        "narHash": "sha256-sLf30MTosR0giUOhlph3Q2dqsL7gLy8knNw0qIYof8g=",
+        "owner": "nim-nix-pkgs",
+        "repo": "package_visible_types",
+        "rev": "6318a7e85c08aeb3964eac0c07e569d4de9361e7",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "package_visible_types",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "package_visible_types-master": "package_visible_types-master"
+      }
+    },
+    "src-package_visible_types-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1539688698,
+        "narHash": "sha256-Qnhlo8DSeryiv3xE4zhmBofb/G/8wl7TyGiyt7k9NN4=",
+        "owner": "zah",
+        "repo": "nim-package-visible-types",
+        "rev": "cbdee48feb05045c673e7d2cab16ae0f5c957157",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zah",
+        "ref": "refs/heads/master",
+        "repo": "nim-package-visible-types",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

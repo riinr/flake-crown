@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "daemon-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-daemon-master": "src-daemon-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555356,
+        "narHash": "sha256-K5NnjeW+MAQKnM+ZWKVh78P7BXRWhpqKhkj1RV78yTM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "daemon",
+        "rev": "3f16f2d8945a34dd0bb35f13c279688c667bd1fc",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "daemon",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "daemon-master": "daemon-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-daemon-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1546940834,
+        "narHash": "sha256-8/T0FhspYTnUbkTrM//YiWoVeZbjXfKJEJ574qcjrn8=",
+        "owner": "status-im",
+        "repo": "nim-daemon",
+        "rev": "6d097c04ac81dfa43dfd9e4c20d6bd359f030153",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-daemon",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

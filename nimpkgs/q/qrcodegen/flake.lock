@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "qrcodegen-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-qrcodegen-master": "src-qrcodegen-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555930,
+        "narHash": "sha256-lbPAGWA8vaqGW5M6jU+mZMhBgXpzmNxt6JiVAQXFP/Y=",
+        "owner": "nim-nix-pkgs",
+        "repo": "qrcodegen",
+        "rev": "3a27bbaeaa4eefad6998122fb184e489f32117c6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "qrcodegen",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "qrcodegen-master": "qrcodegen-master"
+      }
+    },
+    "src-qrcodegen-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1566480880,
+        "narHash": "sha256-TC7wPEN8xH8Fx3jM18LRbGG58AQcQ23Jx2mN+Ofxpdc=",
+        "owner": "bunkford",
+        "repo": "qrcodegen",
+        "rev": "f13233d757747ae1777b2df3d657a07cc400b129",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bunkford",
+        "ref": "refs/heads/master",
+        "repo": "qrcodegen",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

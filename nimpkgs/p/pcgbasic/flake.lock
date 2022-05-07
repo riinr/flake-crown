@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "pcgbasic-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-pcgbasic-master": "src-pcgbasic-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555884,
+        "narHash": "sha256-BJbzcQcT+8fcCYgJ486J5ddx0kQ2Q4r1mP7nUgmWBYs=",
+        "owner": "nim-nix-pkgs",
+        "repo": "pcgbasic",
+        "rev": "9e4889d48f760e51450f47c5ede2ee97b647090f",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "pcgbasic",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "pcgbasic-master": "pcgbasic-master"
+      }
+    },
+    "src-pcgbasic-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1580782848,
+        "narHash": "sha256-+9f8Z4x5HAMI2m1PDQSJUX/yuuM5Ufo/Ko/1zTrZtVs=",
+        "owner": "rockcavera",
+        "repo": "pcgbasic",
+        "rev": "0414392204ae6c2c9d43b829eca8639383433c7e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rockcavera",
+        "ref": "refs/heads/master",
+        "repo": "pcgbasic",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

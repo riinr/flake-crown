@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "ringdeque-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ringDeque-master": "src-ringDeque-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555954,
+        "narHash": "sha256-tB4VKPG/l4U4Yj0EA+LErcYnci3q+y2gkuNZ8BjcEj8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ringdeque",
+        "rev": "654d447432ee0304158fcce3efb80b81b942b513",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ringdeque",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "ringdeque-master": "ringdeque-master"
+      }
+    },
+    "src-ringDeque-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1544767901,
+        "narHash": "sha256-7NYz6q+TPogF0RZxHOfIrWzYsjDSwEat9QCluCitICY=",
+        "owner": "technicallyagd",
+        "repo": "ringDeque",
+        "rev": "e045bc520f18ad66b31ec78ea309e15ec9742ac0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "technicallyagd",
+        "ref": "refs/heads/master",
+        "repo": "ringDeque",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,183 @@
+{
+  "nodes": {
+    "classes": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "termui-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "termui-master",
+          "nixpkgs"
+        ],
+        "src-classes-v0_2_11": "src-classes-v0_2_11"
+      },
+      "locked": {
+        "dir": "v0_2_11",
+        "lastModified": 1650750165,
+        "narHash": "sha256-l4vgVuC+wryxfs/JpgAxo9oa62Bu1Osyl+vl8eOYFi4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "classes",
+        "rev": "a7ba030dee7d1f4761fe20db5ff4b900959966cd",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_2_11",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "classes",
+        "type": "github"
+      }
+    },
+    "elvis": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "termui-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "termui-master",
+          "nixpkgs"
+        ],
+        "src-elvis-v0_5_0": "src-elvis-v0_5_0"
+      },
+      "locked": {
+        "dir": "v0_5_0",
+        "lastModified": 1651555395,
+        "narHash": "sha256-EQwRTcSJ+wiiK4++Nso6v6WWPh7XE/EycCoYWgBdpYI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "elvis",
+        "rev": "3bc407e4efec4ef2526ac2f82b66eee2abcb8132",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_5_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "elvis",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "termui-master": "termui-master"
+      }
+    },
+    "src-classes-v0_2_11": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1640607049,
+        "narHash": "sha256-o6+36mH/c+hYXU2LplbpS21SHxzKct6tutDU5Tp0PmY=",
+        "owner": "jjv360",
+        "repo": "nim-classes",
+        "rev": "4c1b20b71f2034223b0a14b235bf477302e655b1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jjv360",
+        "ref": "refs/tags/v0.2.11",
+        "repo": "nim-classes",
+        "type": "github"
+      }
+    },
+    "src-elvis-v0_5_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1642432724,
+        "narHash": "sha256-KVIvmw0I81KxZweOe5faO1pQFL/yaUojvGnTwmVlZJI=",
+        "owner": "mattaylor",
+        "repo": "elvis",
+        "rev": "f0632e830c264ccd2e8489596db9b29fd5d1cd67",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mattaylor",
+        "ref": "refs/tags/v0.5.0",
+        "repo": "elvis",
+        "type": "github"
+      }
+    },
+    "src-termui-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1617374455,
+        "narHash": "sha256-ZwRrurKOHMCh48+h8rn+hmOSPHUt0ZmZ7/pNziW5sb0=",
+        "owner": "jjv360",
+        "repo": "nim-termui",
+        "rev": "8c2a82c5919077a9e2a8546972387484ae37b8a5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jjv360",
+        "ref": "refs/heads/master",
+        "repo": "nim-termui",
+        "type": "github"
+      }
+    },
+    "termui-master": {
+      "inputs": {
+        "classes": "classes",
+        "elvis": "elvis",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-termui-master": "src-termui-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651589770,
+        "narHash": "sha256-Y5FIFvCg21mwFTX/vWe3C1wGkjul0140y6+xsLG+Y6I=",
+        "owner": "nim-nix-pkgs",
+        "repo": "termui",
+        "rev": "65896a5ee9539db131604b78ac995a0f22612a50",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "termui",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

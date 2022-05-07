@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nio-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nio-master": "src-nio-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555792,
+        "narHash": "sha256-fL1T/MxYfztbR8oULhRJXCJCAIKqa9W1gaQzzTOle8Y=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nio",
+        "rev": "2ec7f9f46e202affe8fa8c4bb3697893485782e1",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nio",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nio-master": "nio-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nio-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1579432163,
+        "narHash": "sha256-/oG4eCDn+8La+okEM828kElMj7si8PadyLY5JQ/V7HQ=",
+        "owner": "KayraG",
+        "repo": "nio",
+        "rev": "e2c144c8e6927dc8d2675a075f619de72156f86f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "KayraG",
+        "ref": "refs/heads/master",
+        "repo": "nio",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

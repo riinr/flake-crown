@@ -1,0 +1,414 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "matplotnim-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nimpy": "nimpy",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-matplotnim-master": "src-matplotnim-master",
+        "tempfile": "tempfile"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651589740,
+        "narHash": "sha256-Jj8VE5FdIbhjMf0ez8hjhJ0uJH2+Ojg7Ii2D7EtSe40=",
+        "owner": "nim-nix-pkgs",
+        "repo": "matplotnim",
+        "rev": "28ab6bff5d8818e23654f6c3f69d45f11114aa99",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "matplotnim",
+        "type": "github"
+      }
+    },
+    "matplotnim-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-matplotnim-v0_1_0": "src-matplotnim-v0_1_0",
+        "tempfile": "tempfile_2"
+      },
+      "locked": {
+        "dir": "v0_1_0",
+        "lastModified": 1651589740,
+        "narHash": "sha256-Jj8VE5FdIbhjMf0ez8hjhJ0uJH2+Ojg7Ii2D7EtSe40=",
+        "owner": "nim-nix-pkgs",
+        "repo": "matplotnim",
+        "rev": "28ab6bff5d8818e23654f6c3f69d45f11114aa99",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "matplotnim",
+        "type": "github"
+      }
+    },
+    "matplotnim-v0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nimpy": "nimpy_2",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-matplotnim-v0_2_0": "src-matplotnim-v0_2_0",
+        "tempfile": "tempfile_3"
+      },
+      "locked": {
+        "dir": "v0_2_0",
+        "lastModified": 1651589740,
+        "narHash": "sha256-Jj8VE5FdIbhjMf0ez8hjhJ0uJH2+Ojg7Ii2D7EtSe40=",
+        "owner": "nim-nix-pkgs",
+        "repo": "matplotnim",
+        "rev": "28ab6bff5d8818e23654f6c3f69d45f11114aa99",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_2_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "matplotnim",
+        "type": "github"
+      }
+    },
+    "nimpy": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "matplotnim-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "matplotnim-master",
+          "nixpkgs"
+        ],
+        "src-nimpy-master": "src-nimpy-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555767,
+        "narHash": "sha256-48+VDSpx+U1DjE25lm8xGcTGbqxVfCAQki7dVLO5PVs=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimpy",
+        "rev": "e7f2b159bcfb8257f08b8de9bdc369ca2b56dc24",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimpy",
+        "type": "github"
+      }
+    },
+    "nimpy_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "matplotnim-v0_2_0",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "matplotnim-v0_2_0",
+          "nixpkgs"
+        ],
+        "src-nimpy-master": "src-nimpy-master_2"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555767,
+        "narHash": "sha256-48+VDSpx+U1DjE25lm8xGcTGbqxVfCAQki7dVLO5PVs=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimpy",
+        "rev": "e7f2b159bcfb8257f08b8de9bdc369ca2b56dc24",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimpy",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "matplotnim-master": "matplotnim-master",
+        "matplotnim-v0_1_0": "matplotnim-v0_1_0",
+        "matplotnim-v0_2_0": "matplotnim-v0_2_0",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-matplotnim-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1617632020,
+        "narHash": "sha256-pic1KCoAFxPq54gTLOTrlh8LA2OHywgmvDYQlgdcSxY=",
+        "owner": "ruivieira",
+        "repo": "matplotnim",
+        "rev": "33ae2a0c0154b5b018072c4b186857a5a09798bb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ruivieira",
+        "ref": "refs/heads/master",
+        "repo": "matplotnim",
+        "type": "github"
+      }
+    },
+    "src-matplotnim-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1556614767,
+        "narHash": "sha256-P/tONk+KtBHVr4bXEKfj/Ue42is52RIYAgBvWYyh6uc=",
+        "owner": "ruivieira",
+        "repo": "matplotnim",
+        "rev": "f0fa5242b5da175bd2a500f5fd4689c6b59cade1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ruivieira",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "matplotnim",
+        "type": "github"
+      }
+    },
+    "src-matplotnim-v0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1617632020,
+        "narHash": "sha256-pic1KCoAFxPq54gTLOTrlh8LA2OHywgmvDYQlgdcSxY=",
+        "owner": "ruivieira",
+        "repo": "matplotnim",
+        "rev": "33ae2a0c0154b5b018072c4b186857a5a09798bb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ruivieira",
+        "ref": "refs/tags/v0.2.0",
+        "repo": "matplotnim",
+        "type": "github"
+      }
+    },
+    "src-nimpy-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644942366,
+        "narHash": "sha256-9aOqk1hkt5ggb6cbGhwY19ncdN7u7J6NizqPLLjUcgQ=",
+        "owner": "yglukhov",
+        "repo": "nimpy",
+        "rev": "1963283148d01f46ac789a83412afbb5d375cfad",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "nimpy",
+        "type": "github"
+      }
+    },
+    "src-nimpy-master_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644942366,
+        "narHash": "sha256-9aOqk1hkt5ggb6cbGhwY19ncdN7u7J6NizqPLLjUcgQ=",
+        "owner": "yglukhov",
+        "repo": "nimpy",
+        "rev": "1963283148d01f46ac789a83412afbb5d375cfad",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "nimpy",
+        "type": "github"
+      }
+    },
+    "src-tempfile-0_1_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1551197760,
+        "narHash": "sha256-08vvHXVxL1mAcpMzosaHd2FupTJrKJP5JaVcgxN4oYE=",
+        "owner": "OpenSystemsLab",
+        "repo": "tempfile.nim",
+        "rev": "26e0239441755e5edcfd170e9aa566bb9c9eb6f3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.1.7",
+        "repo": "tempfile.nim",
+        "type": "github"
+      }
+    },
+    "src-tempfile-0_1_7_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1551197760,
+        "narHash": "sha256-08vvHXVxL1mAcpMzosaHd2FupTJrKJP5JaVcgxN4oYE=",
+        "owner": "OpenSystemsLab",
+        "repo": "tempfile.nim",
+        "rev": "26e0239441755e5edcfd170e9aa566bb9c9eb6f3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.1.7",
+        "repo": "tempfile.nim",
+        "type": "github"
+      }
+    },
+    "src-tempfile-0_1_7_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1551197760,
+        "narHash": "sha256-08vvHXVxL1mAcpMzosaHd2FupTJrKJP5JaVcgxN4oYE=",
+        "owner": "OpenSystemsLab",
+        "repo": "tempfile.nim",
+        "rev": "26e0239441755e5edcfd170e9aa566bb9c9eb6f3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OpenSystemsLab",
+        "ref": "refs/tags/0.1.7",
+        "repo": "tempfile.nim",
+        "type": "github"
+      }
+    },
+    "tempfile": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "matplotnim-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "matplotnim-master",
+          "nixpkgs"
+        ],
+        "src-tempfile-0_1_7": "src-tempfile-0_1_7"
+      },
+      "locked": {
+        "dir": "0_1_7",
+        "lastModified": 1651556142,
+        "narHash": "sha256-uRrO2pJ0oNOSOVSLHl6LZ5szllEetKnDennqW6JFYTo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "tempfile",
+        "rev": "c020c41b0a70207e3ff4aca225809c053e94aa21",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_1_7",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "tempfile",
+        "type": "github"
+      }
+    },
+    "tempfile_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "matplotnim-v0_1_0",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "matplotnim-v0_1_0",
+          "nixpkgs"
+        ],
+        "src-tempfile-0_1_7": "src-tempfile-0_1_7_2"
+      },
+      "locked": {
+        "dir": "0_1_7",
+        "lastModified": 1651556142,
+        "narHash": "sha256-uRrO2pJ0oNOSOVSLHl6LZ5szllEetKnDennqW6JFYTo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "tempfile",
+        "rev": "c020c41b0a70207e3ff4aca225809c053e94aa21",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_1_7",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "tempfile",
+        "type": "github"
+      }
+    },
+    "tempfile_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "matplotnim-v0_2_0",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "matplotnim-v0_2_0",
+          "nixpkgs"
+        ],
+        "src-tempfile-0_1_7": "src-tempfile-0_1_7_3"
+      },
+      "locked": {
+        "dir": "0_1_7",
+        "lastModified": 1651556142,
+        "narHash": "sha256-uRrO2pJ0oNOSOVSLHl6LZ5szllEetKnDennqW6JFYTo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "tempfile",
+        "rev": "c020c41b0a70207e3ff4aca225809c053e94aa21",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_1_7",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "tempfile",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "edlib-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-edlib-main": "src-edlib-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555392,
+        "narHash": "sha256-nlilKxkCJ+oqEfcH8p6v2VVAjV21d2nx72y50u3vegA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "edlib",
+        "rev": "c65c98dce95c8a533b2b1e0b94a406a7a5996f95",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "edlib",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "edlib-main": "edlib-main",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-edlib-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1602197479,
+        "narHash": "sha256-1n5FjN7A6JacE9lTUdqbyEzbzwzd3CR6YZztTugb4yM=",
+        "owner": "bio-nim",
+        "repo": "nim-edlib",
+        "rev": "6766462c5d6c32739de4f2b8fb6513d7d0dd59a1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bio-nim",
+        "ref": "refs/heads/main",
+        "repo": "nim-edlib",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

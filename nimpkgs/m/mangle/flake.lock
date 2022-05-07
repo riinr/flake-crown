@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "mangle-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-mangle-master": "src-mangle-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555632,
+        "narHash": "sha256-dAVk1VfQt/N7OAHlemJoaOnsxxLYhp+REM1fZ0gHvvM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "mangle",
+        "rev": "e7e359e6ef1135e0ce02671ab09b83eb86bba0f5",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "mangle",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "mangle-master": "mangle-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-mangle-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1456381248,
+        "narHash": "sha256-HxyvKoAma+QbOSI9zJY1dUh3tRaN5DrzNw+2fRXC2f4=",
+        "owner": "baabelfish",
+        "repo": "mangle",
+        "rev": "1a142db167c951e650c8b597f58ae38e3cdbc3a6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "baabelfish",
+        "ref": "refs/heads/master",
+        "repo": "mangle",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

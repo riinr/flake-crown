@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "persistent_enums-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-persistent_enums-master": "src-persistent_enums-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650750516,
+        "narHash": "sha256-Db0hz3RFntsSZttQ16F0XHIpijYBWDuuZzGHsGSRulQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "persistent_enums",
+        "rev": "848fe57f5cf145657651b1eb1322e4fd28446e57",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "persistent_enums",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "persistent_enums-master": "persistent_enums-master"
+      }
+    },
+    "src-persistent_enums-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1634728781,
+        "narHash": "sha256-tejtQsXU2CdLsDbp7GUVJ5z9y/7SHYFni+VYCGpVvdE=",
+        "owner": "yglukhov",
+        "repo": "persistent_enums",
+        "rev": "04eb935d339c90b4be264c1de67b9c27b06f5dad",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "persistent_enums",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

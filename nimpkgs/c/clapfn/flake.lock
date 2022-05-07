@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "clapfn-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-clapfn-master": "src-clapfn-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555310,
+        "narHash": "sha256-K4dQdfHeTzu23yRBYqmyGIYfUG7HoIBkYvaqOc667BE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "clapfn",
+        "rev": "5d2e706c4bfd157810bc9b33cadeca4c75875ec9",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "clapfn",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "clapfn-master": "clapfn-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-clapfn-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644111604,
+        "narHash": "sha256-NxL2o5lSeY5qxxPjFSRFa98zMQv59ejojRTAqijiNvk=",
+        "owner": "oliversandli",
+        "repo": "clapfn",
+        "rev": "a43828b24004ca0b968b4834e686a79f2b90535e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oliversandli",
+        "ref": "refs/heads/master",
+        "repo": "clapfn",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

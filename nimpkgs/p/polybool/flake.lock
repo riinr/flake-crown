@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "polybool-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-polyBool-master": "src-polyBool-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555899,
+        "narHash": "sha256-pQeK9phAGbMF2Nk7oWGgw6bA16ES2Y60CI6vaFUiYjA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "polybool",
+        "rev": "66a3ea645acf6beb0aa498ed979633951db7d3e3",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "polybool",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "polybool-master": "polybool-master"
+      }
+    },
+    "src-polyBool-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1493983378,
+        "narHash": "sha256-XRCAiyerci9yzKhrwG++d+gpwmcXG2fBk+DPJuomDhQ=",
+        "owner": "jangko",
+        "repo": "polyBool",
+        "rev": "e7281860b002ed1e62b5802ede40c530dfd5bfde",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jangko",
+        "ref": "refs/heads/master",
+        "repo": "polyBool",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

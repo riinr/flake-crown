@@ -1,0 +1,136 @@
+{
+  "nodes": {
+    "cligen": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "tokarax-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "tokarax-master",
+          "nixpkgs"
+        ],
+        "src-cligen-v1_5_23": "src-cligen-v1_5_23"
+      },
+      "locked": {
+        "dir": "v1_5_23",
+        "lastModified": 1651609682,
+        "narHash": "sha256-XK66Xbvp2yNwjxuJ6pCEhE7CvTchqYMEAKHwd9gR7L4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "cligen",
+        "rev": "d1db6bc462c146fb7a72cd1965da6f8fa05c3965",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_5_23",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "tokarax-master": "tokarax-master"
+      }
+    },
+    "src-cligen-v1_5_23": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1647952908,
+        "narHash": "sha256-rcledZbmcAXs0l5uQRmOennyMiw4G+zye6frGqksjyA=",
+        "owner": "c-blake",
+        "repo": "cligen",
+        "rev": "cac47b08172978dad61d08debd0e68c3f249a3f7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "c-blake",
+        "ref": "refs/tags/v1.5.23",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "src-tokarax-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1635328684,
+        "narHash": "sha256-lOtbmLOkR5SFb9RAB06mv5QxeoCKdpKrNsZZl3RI9Rw=",
+        "owner": "thisago",
+        "repo": "tokarax",
+        "rev": "b63616c53335f48cdc153ecb4abe5e7f098d6edc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thisago",
+        "ref": "refs/heads/master",
+        "repo": "tokarax",
+        "type": "github"
+      }
+    },
+    "tokarax-master": {
+      "inputs": {
+        "cligen": "cligen",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-tokarax-master": "src-tokarax-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651610021,
+        "narHash": "sha256-HqDhdsP6tE9UYRL01vd91kBBOTCNy5YuN5q9uwEIeYk=",
+        "owner": "nim-nix-pkgs",
+        "repo": "tokarax",
+        "rev": "80a4abf0c27ce305a119fb86f9c7c2fcb24d44c3",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "tokarax",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

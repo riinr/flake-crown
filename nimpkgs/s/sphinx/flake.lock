@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "sphinx-master": "sphinx-master"
+      }
+    },
+    "sphinx-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sphinx-master": "src-sphinx-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556049,
+        "narHash": "sha256-OIWnocZ367fPZ0uiSZ9IJ3SSBFAX2/97WALA6c5AbUc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sphinx",
+        "rev": "3a1b3c71af77aaee510f41759e564955d45efb67",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sphinx",
+        "type": "github"
+      }
+    },
+    "src-sphinx-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1439892012,
+        "narHash": "sha256-LUfdy8ueYBTSRVWs5mhiNNQsMxOVGvszoh0tA7j2q/I=",
+        "owner": "Araq",
+        "repo": "sphinx",
+        "rev": "629c5e1a4a468c5752e02d94734c05422b8a9c44",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/heads/master",
+        "repo": "sphinx",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

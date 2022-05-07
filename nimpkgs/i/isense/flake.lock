@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "isense-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-isense-master": "src-isense-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555549,
+        "narHash": "sha256-jx/FkV21FMk5gW7fcA8UxvB0cia1mWGsnsJK18esCII=",
+        "owner": "nim-nix-pkgs",
+        "repo": "isense",
+        "rev": "bf782fabbacc15bdcf46f0f4655f614416122073",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "isense",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "isense-master": "isense-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-isense-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1454174737,
+        "narHash": "sha256-aAFd7OnqAhfWqhP+ucEawfUBgsGi3Hz+0A3PyjqtxX8=",
+        "owner": "nimious",
+        "repo": "isense",
+        "rev": "cb59c2f7aad209cda8a188d7089d929c8fa55eab",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nimious",
+        "ref": "refs/heads/master",
+        "repo": "isense",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

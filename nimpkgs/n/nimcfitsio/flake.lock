@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimcfitsio-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimcfitsio-master": "src-nimcfitsio-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555720,
+        "narHash": "sha256-BhKc1kKw4DaBWgJGhSfq2oVXdjCCl5iK0Roj6iCTdXI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimcfitsio",
+        "rev": "34b938810c57c3a34a925aa80a65897cdc300a60",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimcfitsio",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimcfitsio-master": "nimcfitsio-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimcfitsio-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569310367,
+        "narHash": "sha256-6fp/MlJKUCP9x5SycSudebRicmE2S2P48tbdpqKGqWY=",
+        "owner": "ziotom78",
+        "repo": "nimcfitsio",
+        "rev": "4f339f84b29363e31ce55f357b0e67520c8332b6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ziotom78",
+        "ref": "refs/heads/master",
+        "repo": "nimcfitsio",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

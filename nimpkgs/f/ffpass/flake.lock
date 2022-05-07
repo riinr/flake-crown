@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "ffpass-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ffpass-master": "src-ffpass-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555418,
+        "narHash": "sha256-/t+OPTjlU4VzHzN/VroF40mX7EGUCbRKV1gxX7ymoWc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ffpass",
+        "rev": "994299a8d1f49b573affdf731b008db117cf925c",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ffpass",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "ffpass-master": "ffpass-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-ffpass-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1637850421,
+        "narHash": "sha256-uQtV47TJV3sL5IGiVb2Nkxvkwk9rBHDp0PQZ2/8VB8Y=",
+        "owner": "bunkford",
+        "repo": "ffpass",
+        "rev": "e765b10d265735846868041c4c285dce10550889",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bunkford",
+        "ref": "refs/heads/master",
+        "repo": "ffpass",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

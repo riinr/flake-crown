@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "libovr-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libovr-master": "src-libovr-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555598,
+        "narHash": "sha256-UJtTPwlInt3CY09HYFi6OwRF386BmCAMC+Xf/tAlCMM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libovr",
+        "rev": "dcb4b3609d7e1fd6b582c936ed0ce9461bd436a2",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libovr",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "libovr-master": "libovr-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-libovr-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1433177887,
+        "narHash": "sha256-dhCfTynL/FJf/q/+dSlY2BPI6UBzd5uebF6VCPqFblg=",
+        "owner": "bluenote10",
+        "repo": "nim-ovr",
+        "rev": "187c574648ffcf1969d1bbe7a67e9ceb276fc201",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bluenote10",
+        "ref": "refs/heads/master",
+        "repo": "nim-ovr",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

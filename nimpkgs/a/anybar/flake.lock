@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "anybar-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-Anybar-master": "src-Anybar-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555223,
+        "narHash": "sha256-02ApxnRlxDMczqJgvGoQI3/mYEnWLruKOa5zipMqcgk=",
+        "owner": "nim-nix-pkgs",
+        "repo": "anybar",
+        "rev": "61cf9162f91c83970556ff0df8e5a85125764376",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "anybar",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "anybar-master": "anybar-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-Anybar-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1633049376,
+        "narHash": "sha256-6H91UprU2rPCKJgTFtXY7s2j9e+ZQLJn5uJQMrtLnnk=",
+        "owner": "ba0f3",
+        "repo": "anybar.nim",
+        "rev": "c93f45e01bef2323be134a3a87989963bb9bc683",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/heads/master",
+        "repo": "anybar.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "kwin-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-kwin-master": "src-kwin-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555576,
+        "narHash": "sha256-cZKcTyKQv71Cs7Or+syA3zHBLPIjFUtE5TAIhYg3cLY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "kwin",
+        "rev": "d4ae005721154f3d07cdcccc836d2e62eca8dc72",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "kwin",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "kwin-master": "kwin-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-kwin-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1382038466,
+        "narHash": "sha256-aFwtrIX2tIMGkdl2JlMXASpuxeTEq4sNrwf49Fw0Sw4=",
+        "owner": "reactormonk",
+        "repo": "nim-kwin",
+        "rev": "a4d532a4b383d1516c3c144fd31e99bc195a7ab5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "reactormonk",
+        "ref": "refs/heads/master",
+        "repo": "nim-kwin",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

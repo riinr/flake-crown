@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "overpass-0_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-overpass-0_0_1": "src-overpass-0_0_1"
+      },
+      "locked": {
+        "dir": "0_0_1",
+        "lastModified": 1651555866,
+        "narHash": "sha256-JqjOCp4F/cYOTxf1ee8WuhdtrJ5g0fNigi+1zsXsScw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "overpass",
+        "rev": "03b3123121062afc61c51db2bd76cb97dc03ce99",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_0_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "overpass",
+        "type": "github"
+      }
+    },
+    "overpass-0_2_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-overpass-0_2_5": "src-overpass-0_2_5"
+      },
+      "locked": {
+        "dir": "0_2_5",
+        "lastModified": 1651555866,
+        "narHash": "sha256-JqjOCp4F/cYOTxf1ee8WuhdtrJ5g0fNigi+1zsXsScw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "overpass",
+        "rev": "03b3123121062afc61c51db2bd76cb97dc03ce99",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_2_5",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "overpass",
+        "type": "github"
+      }
+    },
+    "overpass-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-overpass-master": "src-overpass-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555866,
+        "narHash": "sha256-JqjOCp4F/cYOTxf1ee8WuhdtrJ5g0fNigi+1zsXsScw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "overpass",
+        "rev": "03b3123121062afc61c51db2bd76cb97dc03ce99",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "overpass",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "overpass-0_0_1": "overpass-0_0_1",
+        "overpass-0_2_5": "overpass-0_2_5",
+        "overpass-master": "overpass-master"
+      }
+    },
+    "src-overpass-0_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1535007489,
+        "narHash": "sha256-I6CijapgeDKucI9eO9juhDqiDgletfo6Vqoe4s6AIVE=",
+        "owner": "juancarlospaco",
+        "repo": "nim-overpass",
+        "rev": "73374e0ff905c424b084852cdb9bf3d7b363a023",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/tags/0.0.1",
+        "repo": "nim-overpass",
+        "type": "github"
+      }
+    },
+    "src-overpass-0_2_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1541097326,
+        "narHash": "sha256-Akrww19Wg3+yz9JJxDXIqtO6mUAIaoU+qqO0F7OAAeA=",
+        "owner": "juancarlospaco",
+        "repo": "nim-overpass",
+        "rev": "585f8d24d5706cc53add54626e75d8d2bccc2d9c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/tags/0.2.5",
+        "repo": "nim-overpass",
+        "type": "github"
+      }
+    },
+    "src-overpass-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1559843748,
+        "narHash": "sha256-1/4GbsCw0MX4M9K+vHUnbjptWgPceyMv5Oe0t6bWBJ8=",
+        "owner": "juancarlospaco",
+        "repo": "nim-overpass",
+        "rev": "595273e226e4814e7eb9a9b647b202ae0c0007dc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "nim-overpass",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

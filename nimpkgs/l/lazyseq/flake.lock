@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "lazyseq-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-lazyseq-main": "src-lazyseq-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555583,
+        "narHash": "sha256-bXwkmNP+rPHMacps+Sutzj2yYvMhDY1y08wwzsJ0ky8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "lazyseq",
+        "rev": "f16c7fb9599007d173e83c4cdb2c9778cc19c20d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "lazyseq",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "lazyseq-main": "lazyseq-main",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-lazyseq-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1610627356,
+        "narHash": "sha256-ORH9BpaaFGLXnWj16ksHHnT4Vs80BPlR/bNrWcMKhZI=",
+        "owner": "markspanbroek",
+        "repo": "nim-lazyseq",
+        "rev": "4322d1325d1d284df3219076ccf87415f92a92bd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "markspanbroek",
+        "ref": "refs/heads/main",
+        "repo": "nim-lazyseq",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

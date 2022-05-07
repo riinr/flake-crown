@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "sdf-master": "sdf-master"
+      }
+    },
+    "sdf-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-SDF-master": "src-SDF-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555984,
+        "narHash": "sha256-gjBANP4tIzXcYtpUN/xvAwTpcv1Zm+l4q8Gbd/B+dOw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sdf",
+        "rev": "76d3e1b89611a72115cd0bdc4625aa3016be7c84",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sdf",
+        "type": "github"
+      }
+    },
+    "src-SDF-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1507085179,
+        "narHash": "sha256-/z5rE+SdIh/s6nVx0PX3TDamwd7IOArp8QkaBasnGfI=",
+        "owner": "Halsys",
+        "repo": "SDF.nim",
+        "rev": "ddaaf3b8ee5e336d03ebba1b4206f5a75d91c088",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Halsys",
+        "ref": "refs/heads/master",
+        "repo": "SDF.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

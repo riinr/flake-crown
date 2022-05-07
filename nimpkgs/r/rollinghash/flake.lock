@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "rollinghash-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-RollingHash-master": "src-RollingHash-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555963,
+        "narHash": "sha256-YGicLULtM0t5hySzH/ObR+HucUzjmt46CW5LXkd8tRI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "rollinghash",
+        "rev": "d62497af48064108122518ef62fb2c905ee34360",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "rollinghash",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "rollinghash-master": "rollinghash-master"
+      }
+    },
+    "src-RollingHash-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1554208095,
+        "narHash": "sha256-+em7F/TZK8+7ZCnRDPbPYNwC29dF94RybUc4vYqjj08=",
+        "owner": "MarcAzar",
+        "repo": "RollingHash",
+        "rev": "93be628dc5b387ae235ceec0fef0d1914c5d3500",
+        "type": "github"
+      },
+      "original": {
+        "owner": "MarcAzar",
+        "ref": "refs/heads/master",
+        "repo": "RollingHash",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

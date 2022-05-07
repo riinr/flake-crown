@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "rain-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-rain-master": "src-rain-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555934,
+        "narHash": "sha256-U7vtgffSJYrB0qDA1is7ITTeTx5FqwK656nXY6gcvLo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "rain",
+        "rev": "f1b06df73b1eb31602c5ce195de0d9bebe601bc5",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "rain",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "rain-master": "rain-master"
+      }
+    },
+    "src-rain-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1561818523,
+        "narHash": "sha256-URfa0MIKYDU5HgsZz/s8NUMxMYekZksJJSH5bd0Vf9k=",
+        "owner": "OHermesJunior",
+        "repo": "rain.nim",
+        "rev": "6cc61747bc0393bf0dc72be4a30210d40e4d7fab",
+        "type": "github"
+      },
+      "original": {
+        "owner": "OHermesJunior",
+        "ref": "refs/heads/master",
+        "repo": "rain.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

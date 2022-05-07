@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "contracts-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-contracts-main": "src-contracts-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555339,
+        "narHash": "sha256-6Gt4XL5KhBTEoiLUfVtHjLJZqsuVJUM44j6QjBkS2p8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "contracts",
+        "rev": "1cd018d4c7f7cbcf792eba81be443438c470a906",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "contracts",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "contracts-main": "contracts-main",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-contracts-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1630711146,
+        "narHash": "sha256-xPqfrbnFM8e31c/kSuYDDi2Zd56U2b+NkaFjUK/HhFQ=",
+        "owner": "Udiknedormin",
+        "repo": "NimContracts",
+        "rev": "8abc0c372176f7e6361bd7f23ced3adc80fd8cc5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Udiknedormin",
+        "ref": "refs/heads/main",
+        "repo": "NimContracts",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

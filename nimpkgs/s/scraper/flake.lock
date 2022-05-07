@@ -1,0 +1,136 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "github-thisago-findxml": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "scraper-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "scraper-master",
+          "nixpkgs"
+        ],
+        "src-findxml-master": "src-findxml-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555491,
+        "narHash": "sha256-jgZ2ViFOaCkAZV+E95uiCrvSdME3ogk+4B3kRuYIB9E=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-thisago-findxml",
+        "rev": "741837c2fdde3e0e554e34a545f02ecb837981ea",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-thisago-findxml",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "scraper-master": "scraper-master"
+      }
+    },
+    "scraper-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "github-thisago-findxml": "github-thisago-findxml",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-scraper-master": "src-scraper-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651590722,
+        "narHash": "sha256-6nF7uOwKv4kWXedBq6HOrLS6hYk7jw3T/RNdh+2dyxo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "scraper",
+        "rev": "6803a7190e1ded608ea1d73b64b5181ec08d0876",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "scraper",
+        "type": "github"
+      }
+    },
+    "src-findxml-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1634672744,
+        "narHash": "sha256-6c1XThkCWHK8dILHBr8N3/vYbhoRIsF4miPEmPgfA+A=",
+        "owner": "thisago",
+        "repo": "findxml",
+        "rev": "a25992b2d7848c897fdc2c09bc636e922f03a030",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thisago",
+        "ref": "refs/heads/master",
+        "repo": "findxml",
+        "type": "github"
+      }
+    },
+    "src-scraper-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1638303454,
+        "narHash": "sha256-7T5zPeWW8TL3vISmLDepAxHYs5jRM4Giu0AUApCfuuc=",
+        "owner": "lurlo",
+        "repo": "scraper",
+        "rev": "cc36be481c9ee20aac1d54a964f7c74b8b00fde8",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "lurlo",
+        "ref": "refs/heads/master",
+        "repo": "scraper",
+        "type": "gitlab"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

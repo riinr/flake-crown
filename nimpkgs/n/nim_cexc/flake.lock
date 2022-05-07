@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nim_cexc-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nim_cexc-master": "src-nim_cexc-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650750408,
+        "narHash": "sha256-AYcEbef8JYCHFdMpKNF8Fd75xcx30gQtG9ySy/EpRW4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nim_cexc",
+        "rev": "cdaeae8de886f79ddf68ecfea0ec529fd3086ebd",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nim_cexc",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nim_cexc-master": "nim_cexc-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nim_cexc-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1531335390,
+        "narHash": "sha256-wnbw4aOb3BugwLZUZorW1P8wVIMBoGgA5amJWzpVYUY=",
+        "owner": "metasyn",
+        "repo": "nim-cexc-splunk",
+        "rev": "550cc9416f653575fdf563b074e95964381cd15d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "metasyn",
+        "ref": "refs/heads/master",
+        "repo": "nim-cexc-splunk",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

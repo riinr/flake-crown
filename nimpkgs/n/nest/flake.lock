@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nest-develop": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nest-develop": "src-nest-develop"
+      },
+      "locked": {
+        "dir": "develop",
+        "lastModified": 1651555690,
+        "narHash": "sha256-ylZGMuZOkn7d9qL5thjzquUUe9g+fLTr1gx/6wo7YtU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nest",
+        "rev": "d2f95de544d0730a8eeee24c0692ee0a41f24d4d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "develop",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nest",
+        "type": "github"
+      }
+    },
+    "nest-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nest-master": "src-nest-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555690,
+        "narHash": "sha256-ylZGMuZOkn7d9qL5thjzquUUe9g+fLTr1gx/6wo7YtU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nest",
+        "rev": "d2f95de544d0730a8eeee24c0692ee0a41f24d4d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nest",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nest-develop": "nest-develop",
+        "nest-master": "nest-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nest-develop": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1502313462,
+        "narHash": "sha256-rbRtbNMcBy8M7qEANsFsLMxbyap8OrFa2PmD0xiHjPw=",
+        "owner": "kedean",
+        "repo": "nest",
+        "rev": "a0c9c3c2c54c254f8189957ab9957446dc2906e2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kedean",
+        "ref": "refs/heads/develop",
+        "repo": "nest",
+        "type": "github"
+      }
+    },
+    "src-nest-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1533093502,
+        "narHash": "sha256-riwUYdSnFL9afFyoa++q7HGfA1N/UsPQU96G/oMiOvE=",
+        "owner": "kedean",
+        "repo": "nest",
+        "rev": "03b9c54925965c991e83527b256423130657e87a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kedean",
+        "ref": "refs/heads/master",
+        "repo": "nest",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

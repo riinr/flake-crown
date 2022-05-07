@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "libgraph-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libgraph-master": "src-libgraph-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555594,
+        "narHash": "sha256-ftmN1PQLn+1paXSE6Vd5hr49PdrzBRghZqH7MhrhHDQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libgraph",
+        "rev": "ee855b0d03be012b502c73cc8d6735d14eb9206a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libgraph",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "libgraph-master": "libgraph-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-libgraph-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1580537721,
+        "narHash": "sha256-LY8mU2aMiYumZHb+1Tx/irfOr5yd8xl2lRKDe1V8VIk=",
+        "owner": "Mnenmenth",
+        "repo": "libgraphnim",
+        "rev": "b17c4c31734455bf9a094c2b0376adb060cec51b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Mnenmenth",
+        "ref": "refs/heads/master",
+        "repo": "libgraphnim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

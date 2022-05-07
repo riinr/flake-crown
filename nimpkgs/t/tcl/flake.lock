@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "tcl-master": "tcl-master"
+      }
+    },
+    "src-tcl-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1620743078,
+        "narHash": "sha256-X4PfR+ICctSyrzY/ws0bBJ0rUrHI/EHLblkAk2WfwBo=",
+        "owner": "nim-lang",
+        "repo": "tcl",
+        "rev": "aeaccae0db216dc0cfe61f58a9b084482a647586",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/heads/master",
+        "repo": "tcl",
+        "type": "github"
+      }
+    },
+    "tcl-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-tcl-master": "src-tcl-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556127,
+        "narHash": "sha256-L02AM53FBBEAc0PHSVsEhMbHft/1nqRTXzTH9CVhWiE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "tcl",
+        "rev": "7b3387ae9e29cd3d77ca3aa61e6aafc3963fae6a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "tcl",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

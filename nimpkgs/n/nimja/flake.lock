@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimja-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimja-master": "src-nimja-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555740,
+        "narHash": "sha256-veNVWtE/5OAkbicDrv/AB5bidykQDXMkU5Z8cdRktuw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimja",
+        "rev": "ddf0140ab928130d46ec6bd996f30c472b2cfb05",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimja",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimja-master": "nimja-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimja-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1649442569,
+        "narHash": "sha256-Kk6thYWwYJIF903MVPnSF3XredULcPBlZpBgHZLvaSU=",
+        "owner": "enthus1ast",
+        "repo": "nimja",
+        "rev": "9b19b2684ca593c3ba553422665e0168ee4e1a8c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "enthus1ast",
+        "ref": "refs/heads/master",
+        "repo": "nimja",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

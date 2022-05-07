@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "bearlibterminal-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-bearlibterminal-master": "src-bearlibterminal-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555263,
+        "narHash": "sha256-M3lOvrvNf5/FbCyawOclpxfxy0SBq0Ae92HXyzUlrhk=",
+        "owner": "nim-nix-pkgs",
+        "repo": "bearlibterminal",
+        "rev": "6912388672652b681ee2d9b81e56ca3e87a01e00",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "bearlibterminal",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "bearlibterminal-master": "bearlibterminal-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-bearlibterminal-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1539530343,
+        "narHash": "sha256-3zeThlR/FocEGfLQACX6W08R4CUsOEaYH4zv2obC3yw=",
+        "owner": "irskep",
+        "repo": "BearLibTerminal-Nim",
+        "rev": "8f5a33c34c7372dd07e7753c9fdfd6fc95c6e07a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "irskep",
+        "ref": "refs/heads/master",
+        "repo": "BearLibTerminal-Nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

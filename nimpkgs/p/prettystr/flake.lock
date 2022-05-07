@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "prettystr-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-prettystr-main": "src-prettystr-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555904,
+        "narHash": "sha256-loHSBtY6hRtnKqsc4zAai3uZXRnrIZGg/pSZgE+txMM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "prettystr",
+        "rev": "e6fa67a20941d8c4085024a86b9f8d9da5ec951c",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "prettystr",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "prettystr-main": "prettystr-main"
+      }
+    },
+    "src-prettystr-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1640361179,
+        "narHash": "sha256-Ma5v2JKBmbUT+p88hKIeDV0Px/6goAwDITFhOSzjLMo=",
+        "owner": "prettybauble",
+        "repo": "prettystr",
+        "rev": "c906df9ab0140dfbbf7ef02fcd3efd4b48d57c25",
+        "type": "github"
+      },
+      "original": {
+        "owner": "prettybauble",
+        "ref": "refs/heads/main",
+        "repo": "prettystr",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "naw-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-naw-master": "src-naw-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555684,
+        "narHash": "sha256-aquvnO6hoX6ZbYOvDmYt/i16ShjnZ2kLZ4kt8528MUE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "naw",
+        "rev": "63e85859fd82df99796745578e5ffb4677a24792",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "naw",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "naw-master": "naw-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-naw-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592212479,
+        "narHash": "sha256-tHTlek7wW6SpJVkMWqu9QglPUWpo7TjnYFRrPRp02iM=",
+        "owner": "capocasa",
+        "repo": "naw",
+        "rev": "dfa0a9c6b99b87fe6c737525c58757655bdcf8c2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "capocasa",
+        "ref": "refs/heads/master",
+        "repo": "naw",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

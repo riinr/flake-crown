@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "ajax-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ajax-master": "src-ajax-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555212,
+        "narHash": "sha256-LvWKPR+FEzT4OH++0cvL1FxFElPxvnaVuLlckaqBeHc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ajax",
+        "rev": "ae60cc70e8382cc19f00f2d6b01f536c74553f95",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ajax",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "ajax-master": "ajax-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-ajax-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1635460067,
+        "narHash": "sha256-gR0u8sMdbx2nz/Ez6uAFo+u72vT8CrBagB8l90+sO0I=",
+        "owner": "stisa",
+        "repo": "ajax",
+        "rev": "f06cded6d91318ea007e8972665a2d837b4bf136",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stisa",
+        "ref": "refs/heads/master",
+        "repo": "ajax",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

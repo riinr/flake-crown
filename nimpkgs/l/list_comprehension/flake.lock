@@ -1,0 +1,91 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "list_comprehension-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-list_comprehension-master": "src-list_comprehension-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650754322,
+        "narHash": "sha256-YNejbugdaBdFWxWb5cz/Qhde1UppGpOZvyOhG+zs95U=",
+        "owner": "nim-nix-pkgs",
+        "repo": "list_comprehension",
+        "rev": "a38f0474ec04a75b5cc005ce1008cb71123d1aeb",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "list_comprehension",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "list_comprehension-master": "list_comprehension-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-list_comprehension-master": {
+      "flake": false,
+      "locked": {
+        "dir": "lc",
+        "lastModified": 1575184370,
+        "narHash": "sha256-7Z6gJF+xQybtH77senj1R9a4APhtWH3QzDqSZPNrz0w=",
+        "owner": "nim-lang",
+        "repo": "graveyard",
+        "rev": "c6a627c07abcc2eb040be2a6cc809f2ef1aecb78",
+        "type": "github"
+      },
+      "original": {
+        "dir": "lc",
+        "owner": "nim-lang",
+        "ref": "refs/heads/master",
+        "repo": "graveyard",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

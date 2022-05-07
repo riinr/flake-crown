@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "random_font_color-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-random_font_color-master": "src-random_font_color-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650750545,
+        "narHash": "sha256-3jYKaffrbyNwRKE2zB3/GITyFTNN1X6NALeITN6zUBg=",
+        "owner": "nim-nix-pkgs",
+        "repo": "random_font_color",
+        "rev": "fe6a6198d9c335c31dad201151ffd6bd9ede1f4b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "random_font_color",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "random_font_color-master": "random_font_color-master"
+      }
+    },
+    "src-random_font_color-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1638488494,
+        "narHash": "sha256-kReGYgfP/43o3uF8OzvwL3Ym8sO8IN0fG9UzBH8xOy4=",
+        "owner": "juancarlospaco",
+        "repo": "nim-random-font-color",
+        "rev": "3d1d9428d5643730a6237d752c6196420004bb16",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "nim-random-font-color",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

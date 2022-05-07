@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "gatabase-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-gatabase-master": "src-gatabase-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555451,
+        "narHash": "sha256-YIkZXy17oXcBCmsl8XYHxKEP37WHgnPdm0F/hZkK3aY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "gatabase",
+        "rev": "de4e062e17a1d501e0abae0dfbf53f59943c8c59",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "gatabase",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "gatabase-master": "gatabase-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-gatabase-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1643231884,
+        "narHash": "sha256-DWXhAGUVAqZ9Odxvro0+EvGmqtzVndobUOTVsn0UBs4=",
+        "owner": "juancarlospaco",
+        "repo": "nim-gatabase",
+        "rev": "cd7c34ab7a4b52a8959fd21369a57899a56b35ee",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "nim-gatabase",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

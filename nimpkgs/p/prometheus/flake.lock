@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "prometheus-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-prometheus-master": "src-prometheus-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555908,
+        "narHash": "sha256-Xkrb81KCoTKgt0zBDp+5Xtp1ZuJYIA27qF9rp6x0WNI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "prometheus",
+        "rev": "04d8ce498885d4025ca79c96f5e7a9096ddcea39",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "prometheus",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "prometheus-master": "prometheus-master"
+      }
+    },
+    "src-prometheus-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1595534390,
+        "narHash": "sha256-lVijE+zuZQwdLh/4nutEL/UmR2L3PPiA7dsQgR67q8U=",
+        "owner": "dom96",
+        "repo": "prometheus",
+        "rev": "eb4d67c1a84d4bd74cbd7f2a2065b60bcb8bad34",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dom96",
+        "ref": "refs/heads/master",
+        "repo": "prometheus",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

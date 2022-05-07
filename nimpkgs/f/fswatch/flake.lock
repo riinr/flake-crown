@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "fswatch-0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-fswatch-0_1_0": "src-fswatch-0_1_0"
+      },
+      "locked": {
+        "dir": "0_1_0",
+        "lastModified": 1651555443,
+        "narHash": "sha256-pqfwGKDwfUI0W3t9fbkna2JANIL+KSUp+I+nWO0N4O0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "fswatch",
+        "rev": "a7508eda7728c34d9deb33477f913ba283f8e743",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "fswatch",
+        "type": "github"
+      }
+    },
+    "fswatch-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-fswatch-master": "src-fswatch-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555443,
+        "narHash": "sha256-pqfwGKDwfUI0W3t9fbkna2JANIL+KSUp+I+nWO0N4O0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "fswatch",
+        "rev": "a7508eda7728c34d9deb33477f913ba283f8e743",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "fswatch",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "fswatch-0_1_0": "fswatch-0_1_0",
+        "fswatch-master": "fswatch-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-fswatch-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1554655607,
+        "narHash": "sha256-E2ajcp9iQ6/K0rgOwhWTMfg3n8C0atRwovxqSRI4aaA=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-fswatch",
+        "rev": "60d5190328d019cd53bc7ea58c3252db5036b4c7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/tags/0.1.0",
+        "repo": "nim-fswatch",
+        "type": "github"
+      }
+    },
+    "src-fswatch-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1554655607,
+        "narHash": "sha256-E2ajcp9iQ6/K0rgOwhWTMfg3n8C0atRwovxqSRI4aaA=",
+        "owner": "FedericoCeratto",
+        "repo": "nim-fswatch",
+        "rev": "60d5190328d019cd53bc7ea58c3252db5036b4c7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FedericoCeratto",
+        "ref": "refs/heads/master",
+        "repo": "nim-fswatch",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

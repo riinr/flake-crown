@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "espeak-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-espeak-master": "src-espeak-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555401,
+        "narHash": "sha256-dotpr99vWWgQrzvPK9UAFL8F0NZCSHfyHYAapSKlFVQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "espeak",
+        "rev": "4387fa2c88ede398f3964b5277c72d5005aacec7",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "espeak",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "espeak-master": "espeak-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-espeak-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1559848371,
+        "narHash": "sha256-LF6Gy/C1yuuArz+srb5z9HoPGyG45ooRHOZgmQDarVw=",
+        "owner": "juancarlospaco",
+        "repo": "nim-espeak",
+        "rev": "119e6e1f385b02dff310ebcf976a98512237c00a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "nim-espeak",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

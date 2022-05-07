@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "falas-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-falas-master": "src-falas-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555411,
+        "narHash": "sha256-Sa5W4PzjDgpewoc1KWrFtKs/jNwUmwdtEw7s6AjRNuA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "falas",
+        "rev": "327b78fcb9a3862e6bd503272f785d5aa633fa11",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "falas",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "falas-master": "falas-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-falas-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1541712249,
+        "narHash": "sha256-iWzulJFrqVtjDSyivFY2YlDik1IJWIwjBlzHg+QFVWA=",
+        "owner": "brentp",
+        "repo": "falas",
+        "rev": "5a2ef0894b6e25f2006084f8ce632728c161b284",
+        "type": "github"
+      },
+      "original": {
+        "owner": "brentp",
+        "ref": "refs/heads/master",
+        "repo": "falas",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

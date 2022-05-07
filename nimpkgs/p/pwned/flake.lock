@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "pwned-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-pwned-master": "src-pwned-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555917,
+        "narHash": "sha256-7n5AA/e9rF3aO6oJIibHJgZ/jXv+gHIm7w7aYVb/2l0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "pwned",
+        "rev": "1f3285130552c2e152626ffa665f9971f19b756f",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "pwned",
+        "type": "github"
+      }
+    },
+    "pwned-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-pwned-v0_1_0": "src-pwned-v0_1_0"
+      },
+      "locked": {
+        "dir": "v0_1_0",
+        "lastModified": 1651555917,
+        "narHash": "sha256-7n5AA/e9rF3aO6oJIibHJgZ/jXv+gHIm7w7aYVb/2l0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "pwned",
+        "rev": "1f3285130552c2e152626ffa665f9971f19b756f",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "pwned",
+        "type": "github"
+      }
+    },
+    "pwned-v1_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-pwned-v1_0_0": "src-pwned-v1_0_0"
+      },
+      "locked": {
+        "dir": "v1_0_0",
+        "lastModified": 1651555917,
+        "narHash": "sha256-7n5AA/e9rF3aO6oJIibHJgZ/jXv+gHIm7w7aYVb/2l0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "pwned",
+        "rev": "1f3285130552c2e152626ffa665f9971f19b756f",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_0_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "pwned",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "pwned-master": "pwned-master",
+        "pwned-v0_1_0": "pwned-v0_1_0",
+        "pwned-v1_0_0": "pwned-v1_0_0"
+      }
+    },
+    "src-pwned-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1519315744,
+        "narHash": "sha256-llIvNWIodROI/rP1kxZB+KyMRxXpjzKec6DZSk1YQSU=",
+        "owner": "dom96",
+        "repo": "pwned",
+        "rev": "492c7d6e0bf9761fb2a81fd3b75b2e805757ab4b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dom96",
+        "ref": "refs/heads/master",
+        "repo": "pwned",
+        "type": "github"
+      }
+    },
+    "src-pwned-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1519313798,
+        "narHash": "sha256-VlHzFeFWyTXjlFfjySUvonBdOf4X1iiUtYQx7R6An6c=",
+        "owner": "dom96",
+        "repo": "pwned",
+        "rev": "40d0664aa728b3e71f1813bdbd06f3e03dbea72b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dom96",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "pwned",
+        "type": "github"
+      }
+    },
+    "src-pwned-v1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1519315744,
+        "narHash": "sha256-llIvNWIodROI/rP1kxZB+KyMRxXpjzKec6DZSk1YQSU=",
+        "owner": "dom96",
+        "repo": "pwned",
+        "rev": "492c7d6e0bf9761fb2a81fd3b75b2e805757ab4b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dom96",
+        "ref": "refs/tags/v1.0.0",
+        "repo": "pwned",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

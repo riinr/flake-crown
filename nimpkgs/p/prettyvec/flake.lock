@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "prettyvec-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-prettyvec-main": "src-prettyvec-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555904,
+        "narHash": "sha256-FXbogbylwCrwX0GP4rOjmqs9zzz1b4vncD+vxUHu83Y=",
+        "owner": "nim-nix-pkgs",
+        "repo": "prettyvec",
+        "rev": "3aa7be316f53f8802b334fc956b4fc078efca53a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "prettyvec",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "prettyvec-main": "prettyvec-main"
+      }
+    },
+    "src-prettyvec-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1640100828,
+        "narHash": "sha256-G7NLICOag3n2bMhgX3JXiDy+2MKYzmXe5YWpK6gAn40=",
+        "owner": "prettybauble",
+        "repo": "prettyvec",
+        "rev": "b7c50cfb4f0da5a452122d8da857980674720c93",
+        "type": "github"
+      },
+      "original": {
+        "owner": "prettybauble",
+        "ref": "refs/heads/main",
+        "repo": "prettyvec",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

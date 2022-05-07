@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "vidhdr-master": "vidhdr-master"
+      }
+    },
+    "src-vidhdr-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1472438640,
+        "narHash": "sha256-aE+kPVsLtdvypIE2U0GHVjVt7IpW7EL5EnW4nepEsM0=",
+        "owner": "achesak",
+        "repo": "nim-vidhdr",
+        "rev": "70df286ee0a4132777be339c315512235a5f3c06",
+        "type": "github"
+      },
+      "original": {
+        "owner": "achesak",
+        "ref": "refs/heads/master",
+        "repo": "nim-vidhdr",
+        "type": "github"
+      }
+    },
+    "vidhdr-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-vidhdr-master": "src-vidhdr-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556208,
+        "narHash": "sha256-rMB2ucSREK6h6FtWunGOX1EdQ4t2EHyV4Eexoa76oLA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "vidhdr",
+        "rev": "356962e7d8e8b4408b619d21e582abafa5a29a3a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "vidhdr",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "libfuzzer-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libfuzzer-master": "src-libfuzzer-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555591,
+        "narHash": "sha256-xuvSK650Yqq6W1arkABUJ/IkBD4dI5q8K8BZvzn1Z/0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libfuzzer",
+        "rev": "ac554d192c1e526304f5d1233227ef8c672705e1",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libfuzzer",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "libfuzzer-master": "libfuzzer-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-libfuzzer-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645377701,
+        "narHash": "sha256-vFe+40YpOwvJdLUXqdkUwEYE3qo/tM3bWmdT4kuR/Uk=",
+        "owner": "planetis-m",
+        "repo": "libfuzzer",
+        "rev": "ca2698df9d2ffc71dde132d34ecd25870aa3d7b7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "planetis-m",
+        "ref": "refs/heads/master",
+        "repo": "libfuzzer",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

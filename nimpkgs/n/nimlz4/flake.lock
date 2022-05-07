@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimlz4-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimlz4-master": "src-nimlz4-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555752,
+        "narHash": "sha256-1HNGytMBV0f9k4XL2nj5NGOXf9/xmvoLk1jZimI+IEs=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimlz4",
+        "rev": "1b23d92f62740f620de87f9691ccb344dab21a5b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimlz4",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimlz4-master": "nimlz4-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimlz4-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1451357935,
+        "narHash": "sha256-TL7EsJ9QXkMlqmXreIEBe83YGgO2AZaurwN187nPURg=",
+        "owner": "dfdeshom",
+        "repo": "nimlz4",
+        "rev": "211aac02a0643087fb82a7f1df8294fb0c6fe5e0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dfdeshom",
+        "ref": "refs/heads/master",
+        "repo": "nimlz4",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

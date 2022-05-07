@@ -1,0 +1,228 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimaterial-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "palette": "palette",
+        "src-nimaterial-master": "src-nimaterial-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651610187,
+        "narHash": "sha256-NJzTS46YYQ8GYp8xGAjHbGP4H89X+ij/92hC9HD4emY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimaterial",
+        "rev": "f9c8d5eae0b79c200a7a78136c1d7046779a70fc",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimaterial",
+        "type": "github"
+      }
+    },
+    "nimaterial-ver_0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "palette": "palette_2",
+        "src-nimaterial-ver_0_3_0": "src-nimaterial-ver_0_3_0"
+      },
+      "locked": {
+        "dir": "ver_0_3_0",
+        "lastModified": 1651610187,
+        "narHash": "sha256-NJzTS46YYQ8GYp8xGAjHbGP4H89X+ij/92hC9HD4emY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimaterial",
+        "rev": "f9c8d5eae0b79c200a7a78136c1d7046779a70fc",
+        "type": "github"
+      },
+      "original": {
+        "dir": "ver_0_3_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimaterial",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "palette": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimaterial-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimaterial-master",
+          "nixpkgs"
+        ],
+        "src-Palette-0_2_0": "src-Palette-0_2_0"
+      },
+      "locked": {
+        "dir": "0_2_0",
+        "lastModified": 1651610100,
+        "narHash": "sha256-Ycuzrvx07VL/lSsg35tHvg1JmL0Ye4kiLOHIAy+cTX0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "palette",
+        "rev": "1fcc2f9a759cb9eed92dc35d93bb79d530af6eea",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_2_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "palette",
+        "type": "github"
+      }
+    },
+    "palette_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimaterial-ver_0_3_0",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimaterial-ver_0_3_0",
+          "nixpkgs"
+        ],
+        "src-Palette-0_2_0": "src-Palette-0_2_0_2"
+      },
+      "locked": {
+        "dir": "0_2_0",
+        "lastModified": 1648272992,
+        "narHash": "sha256-yMy3Xk3mTAr7ETOuSrU2Zz4HzSDoEO3ggPFfbQkFHH4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "palette",
+        "rev": "1cd99281c1783e259f061de9b2a12330c6000260",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_2_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "palette",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimaterial-master": "nimaterial-master",
+        "nimaterial-ver_0_3_0": "nimaterial-ver_0_3_0",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-Palette-0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1628596003,
+        "narHash": "sha256-bEv1IIYp6S2f4DRqzYEmKJtGuz1WL0S8cfvQyOdxY2I=",
+        "owner": "momeemt",
+        "repo": "Palette",
+        "rev": "e3a39940cf7758e48e403e9c080c78f8d309aee5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "momeemt",
+        "ref": "refs/tags/0.2.0",
+        "repo": "Palette",
+        "type": "github"
+      }
+    },
+    "src-Palette-0_2_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1628596003,
+        "narHash": "sha256-bEv1IIYp6S2f4DRqzYEmKJtGuz1WL0S8cfvQyOdxY2I=",
+        "owner": "momeemt",
+        "repo": "Palette",
+        "rev": "e3a39940cf7758e48e403e9c080c78f8d309aee5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "momeemt",
+        "ref": "refs/tags/0.2.0",
+        "repo": "Palette",
+        "type": "github"
+      }
+    },
+    "src-nimaterial-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1609371021,
+        "narHash": "sha256-TbRvnWg2IC8zKkH5EYD9FSHzNieGROroU67nwEHW8po=",
+        "owner": "momeemt",
+        "repo": "nimaterial",
+        "rev": "b00288ec19905cfb3e740903ea898fe5180874c3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "momeemt",
+        "ref": "refs/heads/master",
+        "repo": "nimaterial",
+        "type": "github"
+      }
+    },
+    "src-nimaterial-ver_0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1609371021,
+        "narHash": "sha256-TbRvnWg2IC8zKkH5EYD9FSHzNieGROroU67nwEHW8po=",
+        "owner": "momeemt",
+        "repo": "nimaterial",
+        "rev": "b00288ec19905cfb3e740903ea898fe5180874c3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "momeemt",
+        "ref": "refs/tags/ver.0.3.0",
+        "repo": "nimaterial",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "fastx_reader-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-fastx_reader-master": "src-fastx_reader-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650750230,
+        "narHash": "sha256-peUDxZzpoCPbzY84sWuRgtZpoOI9px/lpNfhX1M4NSY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "fastx_reader",
+        "rev": "47ca4d57d0f65bad20f4a33021b28d0184b9119e",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "fastx_reader",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "fastx_reader-master": "fastx_reader-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-fastx_reader-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1563795819,
+        "narHash": "sha256-D6Ml7kE4ghiwBWKiKREjEoLZ/4PT1miCAcrhi8FiEiU=",
+        "owner": "ahcm",
+        "repo": "fastx_reader",
+        "rev": "9befdfc3ba29460b4b0d344c4544dadda8f27cc3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ahcm",
+        "ref": "refs/heads/master",
+        "repo": "fastx_reader",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

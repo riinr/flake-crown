@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "imghdr-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-imghdr-master": "src-imghdr-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555537,
+        "narHash": "sha256-96kp3J/33EqsRJirjnB0Au4wwn/5tdSH2digBKRn1Jg=",
+        "owner": "nim-nix-pkgs",
+        "repo": "imghdr",
+        "rev": "69e019bc638ffd0e2c0284f6bae8402bfb6a3dba",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "imghdr",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "imghdr-master": "imghdr-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-imghdr-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1556137700,
+        "narHash": "sha256-GBSaHNmp2m7160PmBXijMjVAjZD6cm+rEGJfy/AkdQg=",
+        "owner": "achesak",
+        "repo": "nim-imghdr",
+        "rev": "de6463188468b83ddc9b1ec28976bb3fc598e1ee",
+        "type": "github"
+      },
+      "original": {
+        "owner": "achesak",
+        "ref": "refs/heads/master",
+        "repo": "nim-imghdr",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

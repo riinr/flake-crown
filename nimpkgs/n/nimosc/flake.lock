@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimosc-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimosc-main": "src-nimosc-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555760,
+        "narHash": "sha256-emmQwodLHTLrY4TFTnq/jaP2LjsT6EYyrXXkUJVJ8XI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimosc",
+        "rev": "cd3bc55eed493695d1ce06ef88fb4e10dc412f51",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimosc",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimosc-main": "nimosc-main",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimosc-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1612467449,
+        "narHash": "sha256-rlRSWwgCQGXk/0eTA9RTCAEnd/EaHjRowPuQZDNZ69U=",
+        "owner": "Psirus",
+        "repo": "NimOSC",
+        "rev": "ccb70fd05b5632df81bf323f252d6c719f8d60cf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Psirus",
+        "ref": "refs/heads/main",
+        "repo": "NimOSC",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

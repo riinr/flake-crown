@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "ed25519-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ed25519-master": "src-ed25519-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555391,
+        "narHash": "sha256-BUzH+itBKI48KtrWCjLn7T6mAPwNqrhsJQ2ludC4Gbs=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ed25519",
+        "rev": "c8baae670b8823abba7fbbb1339e17742a67403d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ed25519",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "ed25519-master": "ed25519-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-ed25519-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1484929858,
+        "narHash": "sha256-dLn4E0DwZXF2/ZEi4sIMmHMZpvp/Oz8ynrVhte3IDCw=",
+        "owner": "niv",
+        "repo": "ed25519.nim",
+        "rev": "176aff141a27ec94f954e961be21671b64531b39",
+        "type": "github"
+      },
+      "original": {
+        "owner": "niv",
+        "ref": "refs/heads/master",
+        "repo": "ed25519.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

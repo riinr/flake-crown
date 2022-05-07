@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "json2xml-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-json2xml-main": "src-json2xml-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555563,
+        "narHash": "sha256-qOs3QA1XO4nGO33EEtkIXPVj/tAIqbwPA4SJE2bDLWg=",
+        "owner": "nim-nix-pkgs",
+        "repo": "json2xml",
+        "rev": "75348cd72c5d512a26c638bfee9118fd4ec2b6c8",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "json2xml",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "json2xml-main": "json2xml-main",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-json2xml-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1637865947,
+        "narHash": "sha256-A1bbaVs8QOo8PVRQlCDGMIR17nq1bOjL5Utc3jzK4lg=",
+        "owner": "MhedhebiIssam",
+        "repo": "json2xml",
+        "rev": "a3baf39063a80d997cbb68c393ae443ffa35d96f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "MhedhebiIssam",
+        "ref": "refs/heads/main",
+        "repo": "json2xml",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

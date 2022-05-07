@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "onnxruntime-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-onnxruntime-main": "src-onnxruntime-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555848,
+        "narHash": "sha256-XJigqAdncBsBPjlxWNNXMYcGOYDf1dji7O3XPjD4ZNI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "onnxruntime",
+        "rev": "729fb47ce27329c7c46f164b4dacaadf4138d1a8",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "onnxruntime",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "onnxruntime-main": "onnxruntime-main"
+      }
+    },
+    "src-onnxruntime-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1614909767,
+        "narHash": "sha256-hoAFkjagQlNgTLI/A6Pdz6EiOWbw5G+7waDvc4kbm7I=",
+        "owner": "YesDrX",
+        "repo": "onnxruntime-nim",
+        "rev": "90ead4efb09c5d897dd0696f6d04a9cbb64892cb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "YesDrX",
+        "ref": "refs/heads/main",
+        "repo": "onnxruntime-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "libsaedea-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libsaedea-master": "src-libsaedea-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555600,
+        "narHash": "sha256-stDALNIawqpAdiqh6dm14Z4/UNBspR/5/Gc4MgyARhA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libsaedea",
+        "rev": "2edca6de2c0933b37bec93259c49868a368a7abd",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libsaedea",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "libsaedea-master": "libsaedea-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-libsaedea-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1618682442,
+        "narHash": "sha256-w+EMnLbM2Mx3Ikv9/KJlQWL/1e07bRnO9l9b+4S2g1g=",
+        "owner": "m33m33",
+        "repo": "libsaedea",
+        "rev": "52d118a6648c558fb893fb3ec2922915c6e696fc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "m33m33",
+        "ref": "refs/heads/master",
+        "repo": "libsaedea",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

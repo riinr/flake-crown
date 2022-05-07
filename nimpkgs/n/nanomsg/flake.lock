@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nanomsg-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nanomsg-master": "src-nanomsg-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555680,
+        "narHash": "sha256-eAVxC9vmMcpP/g21nYIKdumKXpdEd5WCeAOxJrx4Kgs=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nanomsg",
+        "rev": "016c79ee9f2ea470696f9dd5527d141273807dd1",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nanomsg",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nanomsg-master": "nanomsg-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nanomsg-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592298343,
+        "narHash": "sha256-4e8uDmfGxqVU5mi/7wEY1j1AqXQfBO2+6QpdGb6L1fs=",
+        "owner": "def-",
+        "repo": "nim-nanomsg",
+        "rev": "d16331fcc74e9ce178b3373928b44f2cceaef30e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "def-",
+        "ref": "refs/heads/master",
+        "repo": "nim-nanomsg",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,230 @@
+{
+  "nodes": {
+    "denim_ui-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "itertools": "itertools",
+        "macroutils": "macroutils",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rx_nim": "rx_nim",
+        "src-denim_ui-master": "src-denim_ui-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648428541,
+        "narHash": "sha256-Xkjiqs18MCTtDTMh9rsp/3rPidVgrSySl5SfNcJmXoI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "denim_ui",
+        "rev": "9dfd208e54134047d600d8757e61972529a713c2",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "denim_ui",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "itertools": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "denim_ui-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "denim_ui-master",
+          "nixpkgs"
+        ],
+        "src-itertools-v0_4_0": "src-itertools-v0_4_0"
+      },
+      "locked": {
+        "dir": "v0_4_0",
+        "lastModified": 1648163192,
+        "narHash": "sha256-PiGp20IdZn+e2NtNWrhA+DMtVoAcwTgMdyhH/p+stGw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "itertools",
+        "rev": "7a9910425f0adb6535239c81e55a3274fcb6203b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_4_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "itertools",
+        "type": "github"
+      }
+    },
+    "macroutils": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "denim_ui-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "denim_ui-master",
+          "nixpkgs"
+        ],
+        "src-macroutils-v1_2_0": "src-macroutils-v1_2_0"
+      },
+      "locked": {
+        "dir": "v1_2_0",
+        "lastModified": 1648163265,
+        "narHash": "sha256-+vLbL5+QI/QnC5ub2HsmvFgi2LJbzgys19HFHKFo0uQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "macroutils",
+        "rev": "109eeafbbe8e83f00e1f8a0b0682eb22b72c25cc",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_2_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "macroutils",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "denim_ui-master": "denim_ui-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "rx_nim": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "denim_ui-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "denim_ui-master",
+          "nixpkgs"
+        ],
+        "src-rx_nim-master": "src-rx_nim-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648163550,
+        "narHash": "sha256-VYjHadJVcO5KfJ/8ahzg3H6x8LsLXiZ18ITG0tDqqoA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "rx_nim",
+        "rev": "82b27f61bed96f0ecbdfd9387ee5253a7f9a02e2",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "rx_nim",
+        "type": "github"
+      }
+    },
+    "src-denim_ui-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1641467777,
+        "narHash": "sha256-zroY7WAk1eYjn0zFi0LP1mOwEJgwa9IzYnaS7SsAe/c=",
+        "owner": "nortero-code",
+        "repo": "denim-ui",
+        "rev": "f7c11ce80d96197bd3a3ee457c742678b3c4f80f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nortero-code",
+        "ref": "refs/heads/master",
+        "repo": "denim-ui",
+        "type": "github"
+      }
+    },
+    "src-itertools-v0_4_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1609163092,
+        "narHash": "sha256-kLZ8yITrmlv+3JG4axcuntOFBBnmhJJmUOkZeInZb7I=",
+        "owner": "narimiran",
+        "repo": "itertools",
+        "rev": "41ed3d60ae494a89502c6e9230621039099c70f3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "narimiran",
+        "ref": "refs/tags/v0.4.0",
+        "repo": "itertools",
+        "type": "github"
+      }
+    },
+    "src-macroutils-v1_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591265350,
+        "narHash": "sha256-HGsNbldfhjAEaKsj+DZuMDwhhaLWHlibOWZ3xklKEds=",
+        "owner": "PMunch",
+        "repo": "macroutils",
+        "rev": "b460c6804c97df8cfdc80c308b574ae90b30ac61",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PMunch",
+        "ref": "refs/tags/v1.2.0",
+        "repo": "macroutils",
+        "type": "github"
+      }
+    },
+    "src-rx_nim-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1631688872,
+        "narHash": "sha256-ICCjkEpeDfugzs1ea5iRNH1FFzs6MRuR1NAPVxAaL8U=",
+        "owner": "nortero-code",
+        "repo": "rx-nim",
+        "rev": "d3107b810952ab192753b030eb66af8f5542d341",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nortero-code",
+        "ref": "refs/heads/master",
+        "repo": "rx-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

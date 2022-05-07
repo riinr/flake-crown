@@ -1,0 +1,136 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "keccak_tiny-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "ranges": "ranges",
+        "src-keccak_tiny-master": "src-keccak_tiny-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650750329,
+        "narHash": "sha256-T5yrST5yIIbkTYVo9zefSni+jMCS3YhWdIkGpTCqY4Y=",
+        "owner": "nim-nix-pkgs",
+        "repo": "keccak_tiny",
+        "rev": "777772e55e9164ea4a4d33a59ea36c92b74c3b6e",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "keccak_tiny",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "ranges": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "keccak_tiny-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "keccak_tiny-master",
+          "nixpkgs"
+        ],
+        "src-ranges-master": "src-ranges-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648163523,
+        "narHash": "sha256-x6H35lM0TpEpPEpdyVwpV017GousC58hM6oZlg0FuG0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ranges",
+        "rev": "78bdf2c334df5f62d9edbdde6f5550bb729322d0",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ranges",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "keccak_tiny-master": "keccak_tiny-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-keccak_tiny-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1554046248,
+        "narHash": "sha256-E08C4COD0uAbZHyl2EORnNQtry7UEpr6bhGBRKRxHbs=",
+        "owner": "status-im",
+        "repo": "nim-keccak-tiny",
+        "rev": "8e563f3171d30d5b3a8897a71f5e2f8f91fe9c65",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-keccak-tiny",
+        "type": "github"
+      }
+    },
+    "src-ranges-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1562439873,
+        "narHash": "sha256-wEk9EY3OxX9345ZhTXTsv+UWqCWNpqDy95rYqaW5M38=",
+        "owner": "status-im",
+        "repo": "nim-ranges",
+        "rev": "54792c5a26858b20a331f0ae38c18f21811b4b5c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-ranges",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

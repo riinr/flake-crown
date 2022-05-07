@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "battery_widget-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-battery_widget-master": "src-battery_widget-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650749637,
+        "narHash": "sha256-gpNs8zz4fjmYL8nNpA+oJvQgaWISCni0AFiztpp4I2Y=",
+        "owner": "nim-nix-pkgs",
+        "repo": "battery_widget",
+        "rev": "66527cd9186eeabe848c837903ef74efc3d7e88b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "battery_widget",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "battery_widget-master": "battery_widget-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-battery_widget-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1597682600,
+        "narHash": "sha256-1XYSE0t0xqXoEmb7HMPmfy0HVEoeyqmwf1J7ahRB4v4=",
+        "owner": "Cu7ious",
+        "repo": "nim-battery-widget",
+        "rev": "28fc15f6df089d809129427a709e4d1962528318",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Cu7ious",
+        "ref": "refs/heads/master",
+        "repo": "nim-battery-widget",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

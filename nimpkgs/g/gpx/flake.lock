@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "gpx-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-gpx-master": "src-gpx-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555508,
+        "narHash": "sha256-zv9/lyonHW7J9VziuvafweeW+EVCj1/npzWs5r/Z3ZY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "gpx",
+        "rev": "77b7f535879e6599bbcdf17d6d34925d329f56c0",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "gpx",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "gpx-master": "gpx-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-gpx-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1471470216,
+        "narHash": "sha256-GF97pQHRLtV+i1vZwEOXRLJvRFaawzM/4NS+QV6oMhc=",
+        "owner": "achesak",
+        "repo": "nim-gpx",
+        "rev": "52d9f17b37889deb13ff9658b6a2322898dcae82",
+        "type": "github"
+      },
+      "original": {
+        "owner": "achesak",
+        "ref": "refs/heads/master",
+        "repo": "nim-gpx",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

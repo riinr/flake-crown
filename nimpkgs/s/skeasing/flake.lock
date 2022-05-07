@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "skeasing-master": "skeasing-master"
+      }
+    },
+    "skeasing-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-skEasing-master": "src-skEasing-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556022,
+        "narHash": "sha256-n9YcSW5/yHVaansQ4iTm74DgBg1PESuAkaXcETutiAQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "skeasing",
+        "rev": "9e29a3b839ba966630352659bf2bab2405a85c3e",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "skeasing",
+        "type": "github"
+      }
+    },
+    "src-skEasing-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1531414710,
+        "narHash": "sha256-hIbvOtAl+GWP5W3iPKC8Dn4jzOw/6RTzuEnGyCRVLiw=",
+        "owner": "Skrylar",
+        "repo": "skEasing",
+        "rev": "9c369849c65d9425eab698bd578922d7f360f330",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Skrylar",
+        "ref": "refs/heads/master",
+        "repo": "skEasing",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

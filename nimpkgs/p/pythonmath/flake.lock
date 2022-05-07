@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "pythonmath-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-pythonmath-master": "src-pythonmath-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555923,
+        "narHash": "sha256-lIMIlbsc4soKuU2U1cFNUv5PWTtQvnPPpsqb2re9l1k=",
+        "owner": "nim-nix-pkgs",
+        "repo": "pythonmath",
+        "rev": "1c3af19291e2a11a61f829cf95f8e97362fd1282",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "pythonmath",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "pythonmath-master": "pythonmath-master"
+      }
+    },
+    "src-pythonmath-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1466124352,
+        "narHash": "sha256-1r2Ncow7zvNHL5PfHf9LguuX6+Jf9coefMiGS9qyR8I=",
+        "owner": "achesak",
+        "repo": "nim-pythonmath",
+        "rev": "54921db90885d018b543313b06c0b0029e973c6d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "achesak",
+        "ref": "refs/heads/master",
+        "repo": "nim-pythonmath",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

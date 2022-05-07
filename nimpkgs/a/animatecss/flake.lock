@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "animatecss-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-animatecss-master": "src-animatecss-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555218,
+        "narHash": "sha256-ASmoxfdXqvG8Vmnom4UTer3efxa1UZp8lUj79+vsUpA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "animatecss",
+        "rev": "d5d343e81a7746fd237eccbb62611237161f2c37",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "animatecss",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "animatecss-master": "animatecss-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-animatecss-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1636379493,
+        "narHash": "sha256-vHDMRLyFzpqLVzsgkm92PXOCA9QHG3FmuB5wXzQJd/c=",
+        "owner": "thisago",
+        "repo": "animatecss",
+        "rev": "7d03f0d2465d48f99a8270a53dc027197e68e85e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thisago",
+        "ref": "refs/heads/master",
+        "repo": "animatecss",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

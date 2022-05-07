@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimkalc-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimkalc-main": "src-nimkalc-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555742,
+        "narHash": "sha256-keyS79b7TWrWyFhGWmnbEPj4JXQJBmrgw+PT4ZVFX84=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimkalc",
+        "rev": "223ebde10940a54d7700a6b9f0a265a06c83e1cd",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimkalc",
+        "type": "github"
+      }
+    },
+    "nimkalc-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimkalc-master": "src-nimkalc-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555742,
+        "narHash": "sha256-keyS79b7TWrWyFhGWmnbEPj4JXQJBmrgw+PT4ZVFX84=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimkalc",
+        "rev": "223ebde10940a54d7700a6b9f0a265a06c83e1cd",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimkalc",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimkalc-main": "nimkalc-main",
+        "nimkalc-master": "nimkalc-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimkalc-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1646142927,
+        "narHash": "sha256-JZmsEvlnR+ZjyvuA+Bu33271wgzBpY9DFarUbSWbjyE=",
+        "owner": "nocturn9x",
+        "repo": "nimkalc",
+        "rev": "81e95feea4519fbaf382d749d60c2946fb9685bb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nocturn9x",
+        "ref": "refs/heads/main",
+        "repo": "nimkalc",
+        "type": "github"
+      }
+    },
+    "src-nimkalc-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1649592158,
+        "narHash": "sha256-wqab9Aj2XGxegOdA6AMN+owOJitax7f3t4U4TCQiSo4=",
+        "owner": "nocturn9x",
+        "repo": "nimkalc",
+        "rev": "1bcfccb2172d9ab2477c3541835c573390ed5424",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nocturn9x",
+        "ref": "refs/heads/master",
+        "repo": "nimkalc",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "fileinput-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-fileinput-master": "src-fileinput-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555419,
+        "narHash": "sha256-diwGKOm59bqRToFO9QTeoWJDiTZAbqh62hNGyX/YI0k=",
+        "owner": "nim-nix-pkgs",
+        "repo": "fileinput",
+        "rev": "9e14b3b9729733ed98773752231c716e0261f1da",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "fileinput",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "fileinput-master": "fileinput-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-fileinput-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1476296854,
+        "narHash": "sha256-kb8cAZLuXLbH4q3+Ssy8x95CQ4w0JNvCdWmEc3PAwPk=",
+        "owner": "achesak",
+        "repo": "nim-fileinput",
+        "rev": "40595f28e638b24826b7b4e080f4593a7d0a9787",
+        "type": "github"
+      },
+      "original": {
+        "owner": "achesak",
+        "ref": "refs/heads/master",
+        "repo": "nim-fileinput",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

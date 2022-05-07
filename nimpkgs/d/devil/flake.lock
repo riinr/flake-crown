@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "devil-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-DevIL-master": "src-DevIL-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555373,
+        "narHash": "sha256-/6ZbhjelaJ4Od/bAqJ5xOL6kwq7l126pSsv5fT03Xf0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "devil",
+        "rev": "9713fa12ca9f6116e1d1f0dbf00bdf1c88157bcd",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "devil",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "devil-master": "devil-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-DevIL-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1395364918,
+        "narHash": "sha256-A/3F3QXrNTfAoL21Sfz0wtyFriuf/0Fbju179sYvJsQ=",
+        "owner": "Varriount",
+        "repo": "DevIL",
+        "rev": "23b5c1fd9012244411435587d43bb33089b02f12",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Varriount",
+        "ref": "refs/heads/master",
+        "repo": "DevIL",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

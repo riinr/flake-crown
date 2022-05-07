@@ -1,0 +1,136 @@
+{
+  "nodes": {
+    "decisiontree-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "sequtils2": "sequtils2",
+        "src-DecisionTree-master": "src-DecisionTree-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556701,
+        "narHash": "sha256-G/GrsAsq1Wba0Y9sUB9cEBdmaN+sg5BePUgUzxYPvDI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "decisiontree",
+        "rev": "b371ce178537ab488963d42e2bc2a9187b1c9cc9",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "decisiontree",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "decisiontree-master": "decisiontree-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "sequtils2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "decisiontree-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "decisiontree-master",
+          "nixpkgs"
+        ],
+        "src-sequtils2-1_1_0": "src-sequtils2-1_1_0"
+      },
+      "locked": {
+        "dir": "1_1_0",
+        "lastModified": 1651555993,
+        "narHash": "sha256-5K7Yo2+Js8cZlSNXzBW7L1r6kD7eZKVjWcbKyxWvZgo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sequtils2",
+        "rev": "e0b26c95b9cdb9c8c89deb251174d4c221558911",
+        "type": "github"
+      },
+      "original": {
+        "dir": "1_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sequtils2",
+        "type": "github"
+      }
+    },
+    "src-DecisionTree-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1616238972,
+        "narHash": "sha256-ewRjcLQUogKqrWSaZLqIx5yPlwRb5F2jfztx37iC11o=",
+        "owner": "Michedev",
+        "repo": "DecisionTreeNim",
+        "rev": "3283ba2065820495c177656261d0f909fd7d1228",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Michedev",
+        "ref": "refs/heads/master",
+        "repo": "DecisionTreeNim",
+        "type": "github"
+      }
+    },
+    "src-sequtils2-1_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569516358,
+        "narHash": "sha256-bLXQL2EM+05YjXYhSL2nPeRIDDoGuV98T3DLzrQpE4Y=",
+        "owner": "Michedev",
+        "repo": "sequtils2",
+        "rev": "7efcb0e34c583e73f34f6f407cb173f58ae79846",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Michedev",
+        "ref": "refs/tags/1.1.0",
+        "repo": "sequtils2",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

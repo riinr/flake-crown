@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimates-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimates-master": "src-nimates-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555707,
+        "narHash": "sha256-f0Fmj+49pyQesj2sL1tMO0ata9u4PF8Z2BOfiHBnO3Q=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimates",
+        "rev": "f597d4f802733e4402f8694819a966457355dc32",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimates",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimates-master": "nimates-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimates-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1509780164,
+        "narHash": "sha256-O6s39WIijWNtsGv0JJTkh1iZn3oh3JJIpdCOOP9BXDM=",
+        "owner": "jamesalbert",
+        "repo": "nimates",
+        "rev": "97e426f64835ebc868d75b5f74470496426152e7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jamesalbert",
+        "ref": "refs/heads/master",
+        "repo": "nimates",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

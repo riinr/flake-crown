@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "toktok-main": "toktok-main"
+      }
+    },
+    "src-toktok-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1651413834,
+        "narHash": "sha256-l3+6Fv6pTGKd2J3D72Xl4cWnvOkK7wGjviawSc5LWs0=",
+        "owner": "openpeep",
+        "repo": "toktok",
+        "rev": "8c12b1343fb5edf8a5f4af078cb1a11629a87c6c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "openpeep",
+        "ref": "refs/heads/main",
+        "repo": "toktok",
+        "type": "github"
+      }
+    },
+    "toktok-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-toktok-main": "src-toktok-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651556164,
+        "narHash": "sha256-fXu6kXaQM60IPlpwtbwIw58bJ688BNqlHl87GHTQasw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "toktok",
+        "rev": "e067e0fb5f19479ab62d23efb65081805730cf08",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "toktok",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

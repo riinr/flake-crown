@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "ppm-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-PPM-master": "src-PPM-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555902,
+        "narHash": "sha256-011P0pKu7aqD63vJQ50Qu1NjhvBIlR9DyPBT9Z4zMUg=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ppm",
+        "rev": "d0a8aa3af7173c85fe691416d3b0a4cfa0145071",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ppm",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "ppm-master": "ppm-master"
+      }
+    },
+    "src-PPM-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569866862,
+        "narHash": "sha256-pMU0Lnb3H4emZvEBMlu+rYlg27mB4RXTi1vNJZx3ELA=",
+        "owner": "LemonHX",
+        "repo": "PPM-Nim",
+        "rev": "5ee0ab014be4456816c56f478acda81e034ae620",
+        "type": "github"
+      },
+      "original": {
+        "owner": "LemonHX",
+        "ref": "refs/heads/master",
+        "repo": "PPM-Nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

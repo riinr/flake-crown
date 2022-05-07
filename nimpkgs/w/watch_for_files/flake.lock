@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "watch_for_files-main": "watch_for_files-main"
+      }
+    },
+    "src-watch_for_files-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1630241266,
+        "narHash": "sha256-J+Lafq73IG3y3NKw1zQFTSp6o32/JdveTW+HDYXY2CA=",
+        "owner": "hamidb80",
+        "repo": "watch_for_files",
+        "rev": "0d1eef2fbead0aebc7ca9bc1ef148a4bb6a2fecb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hamidb80",
+        "ref": "refs/heads/main",
+        "repo": "watch_for_files",
+        "type": "github"
+      }
+    },
+    "watch_for_files-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-watch_for_files-main": "src-watch_for_files-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1650750670,
+        "narHash": "sha256-VX17XU0r1QzJ/Ui/ON1KO8iSVL72i0kCCxvmswRrxts=",
+        "owner": "nim-nix-pkgs",
+        "repo": "watch_for_files",
+        "rev": "3f250f3f6a8adcd2243aab0dc3558e4a24bb581c",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "watch_for_files",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

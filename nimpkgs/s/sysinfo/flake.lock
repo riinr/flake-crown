@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "sysinfo-master": "sysinfo-master",
+        "sysinfo-v0_1_0": "sysinfo-v0_1_0",
+        "sysinfo-v0_2_1": "sysinfo-v0_2_1"
+      }
+    },
+    "src-sysinfo-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1633048347,
+        "narHash": "sha256-cqhAfUgQ+X6MQYhNQgRJv6y2bIkXqNrZWMrG2ca0Phg=",
+        "owner": "treeform",
+        "repo": "sysinfo",
+        "rev": "6974c3d9ca461db25f3b4d0028a05931dd561fc9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/heads/master",
+        "repo": "sysinfo",
+        "type": "github"
+      }
+    },
+    "src-sysinfo-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1557869053,
+        "narHash": "sha256-xCEoHfhJdWce25RZTruJzhAZBiGpRHuyhZlyY5pEXV8=",
+        "owner": "treeform",
+        "repo": "sysinfo",
+        "rev": "4ef135010b0a837ddb321cc39dbd3864d931bb9c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "sysinfo",
+        "type": "github"
+      }
+    },
+    "src-sysinfo-v0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1579412351,
+        "narHash": "sha256-5n9f9ncz0OKkRrBTjRH098bjpqgOGoYfyQVU/WOwzKc=",
+        "owner": "treeform",
+        "repo": "sysinfo",
+        "rev": "1b72980e1f576934fd731fc9fc017e231cfac796",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/v0.2.1",
+        "repo": "sysinfo",
+        "type": "github"
+      }
+    },
+    "sysinfo-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sysinfo-master": "src-sysinfo-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556119,
+        "narHash": "sha256-hV7ZagVzhL7/c/Oj7+8ym9eWZ4lh8sus8m8PB/pkzJQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sysinfo",
+        "rev": "0fe0cd2bd540292550f590f93785de1bec63e506",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sysinfo",
+        "type": "github"
+      }
+    },
+    "sysinfo-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sysinfo-v0_1_0": "src-sysinfo-v0_1_0"
+      },
+      "locked": {
+        "dir": "v0_1_0",
+        "lastModified": 1651556119,
+        "narHash": "sha256-hV7ZagVzhL7/c/Oj7+8ym9eWZ4lh8sus8m8PB/pkzJQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sysinfo",
+        "rev": "0fe0cd2bd540292550f590f93785de1bec63e506",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sysinfo",
+        "type": "github"
+      }
+    },
+    "sysinfo-v0_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sysinfo-v0_2_1": "src-sysinfo-v0_2_1"
+      },
+      "locked": {
+        "dir": "v0_2_1",
+        "lastModified": 1651556119,
+        "narHash": "sha256-hV7ZagVzhL7/c/Oj7+8ym9eWZ4lh8sus8m8PB/pkzJQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sysinfo",
+        "rev": "0fe0cd2bd540292550f590f93785de1bec63e506",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_2_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sysinfo",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

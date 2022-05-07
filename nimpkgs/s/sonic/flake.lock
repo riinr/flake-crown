@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "sonic-master": "sonic-master"
+      }
+    },
+    "sonic-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sonic-master": "src-sonic-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556037,
+        "narHash": "sha256-V/7TRSYHi9hjVnb2BYIHIu2eoert3nshM4LcURKUlEs=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sonic",
+        "rev": "816c7e8bf330e70aff001c0c554b2d495d143dae",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sonic",
+        "type": "github"
+      }
+    },
+    "src-sonic-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1559727799,
+        "narHash": "sha256-auZDJCfD6YtguMaBt8sHLWSQ10N9PvUiHSiz9xNgwU8=",
+        "owner": "xmonader",
+        "repo": "nim-sonic-client",
+        "rev": "452920ba19e497c1779aab8955de3851e2ba895c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xmonader",
+        "ref": "refs/heads/master",
+        "repo": "nim-sonic-client",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

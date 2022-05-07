@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nhsl-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nhsl-master": "src-nhsl-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555699,
+        "narHash": "sha256-8EzfgXjp++rYV5MfcFf29YRK1KLlq3czg6WX9ll5few=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nhsl",
+        "rev": "15d4d2a41a0854e30222ce52590b0c65c1a758c7",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nhsl",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nhsl-master": "nhsl-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nhsl-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1448051562,
+        "narHash": "sha256-Uvxhy82WSamDI6Xfa/T8OJ/xbGj7R8GNmiZyGd5+xOE=",
+        "owner": "twist-vector",
+        "repo": "nhsl",
+        "rev": "1d45cbd2fb6e0587e543e277a9cd3f32811ef2cc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "twist-vector",
+        "ref": "refs/heads/master",
+        "repo": "nhsl",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

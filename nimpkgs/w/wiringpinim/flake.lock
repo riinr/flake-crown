@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "wiringpinim-master": "wiringpinim-master"
+      }
+    },
+    "src-wiringPiNim-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1518963640,
+        "narHash": "sha256-x8HDC05Xs0cAmjckLZcxaQsi+GiXIfr4lXpSWugc5Wk=",
+        "owner": "ThomasTJdev",
+        "repo": "nim_wiringPiNim",
+        "rev": "99c693fee0a8b4136c5133c419cb38dfe794c5d2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThomasTJdev",
+        "ref": "refs/heads/master",
+        "repo": "nim_wiringPiNim",
+        "type": "github"
+      }
+    },
+    "wiringpinim-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-wiringPiNim-master": "src-wiringPiNim-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556242,
+        "narHash": "sha256-UrkXc4wvlqvHKaNUbuu0e2NXscIl01jQstHU4o/bOak=",
+        "owner": "nim-nix-pkgs",
+        "repo": "wiringpinim",
+        "rev": "dc6ac0cd2f531809031a60a2db5b7cc6a4ce15a8",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "wiringpinim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "notetxt-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-notetxt-master": "src-notetxt-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555806,
+        "narHash": "sha256-yyP62yC/tzly5bZrt5M5FMOIOocDvZ/Ekz8eBI1oS/M=",
+        "owner": "nim-nix-pkgs",
+        "repo": "notetxt",
+        "rev": "19c27c32ecaf61294657ee8bfddb1610a6855759",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "notetxt",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "notetxt-master": "notetxt-master"
+      }
+    },
+    "src-notetxt-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1518636736,
+        "narHash": "sha256-/c96QC0EIh8tY3OZgiATe8+PKJxV7IshVGfE+wGssbc=",
+        "owner": "mrshu",
+        "repo": "nim-notetxt",
+        "rev": "fa5ac89b1b0733cbcf9a59941c1e567f72b944e9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mrshu",
+        "ref": "refs/heads/master",
+        "repo": "nim-notetxt",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

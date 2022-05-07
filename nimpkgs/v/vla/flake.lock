@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "vla-master": "vla-master"
+      }
+    },
+    "src-vla-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1621201010,
+        "narHash": "sha256-WKgomDDC/SJSTOgnsBnkfRBITsGYbUNy6nGcT2J+aAU=",
+        "owner": "bpr",
+        "repo": "vla",
+        "rev": "27580a5023e9411d9608b79d9e191a632c8e17e4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bpr",
+        "ref": "refs/heads/master",
+        "repo": "vla",
+        "type": "github"
+      }
+    },
+    "vla-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-vla-master": "src-vla-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556209,
+        "narHash": "sha256-NLfcVCG80btWGkl/pJaoex/ClOaLLrGhMawE5RX3lkY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "vla",
+        "rev": "b7a57d8b166ae29290f6809a131c09ef59875a66",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "vla",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "conio-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-conio-master": "src-conio-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555333,
+        "narHash": "sha256-uXoZK0Gaguk0ouu3ZxGfbOtS4wsdKWyStI6G++NCYo0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "conio",
+        "rev": "a930ad3f98be597403c9fbd46a5e41fdbb381852",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "conio",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "conio-master": "conio-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-conio-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569408908,
+        "narHash": "sha256-wqlPmOmVSufFlWkkdbvOvqYWb9i+Qn2sc3J1JGF65Xk=",
+        "owner": "guevara-chan",
+        "repo": "conio",
+        "rev": "b311f94f462057cf8df1d92a2c139227a9586618",
+        "type": "github"
+      },
+      "original": {
+        "owner": "guevara-chan",
+        "ref": "refs/heads/master",
+        "repo": "conio",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

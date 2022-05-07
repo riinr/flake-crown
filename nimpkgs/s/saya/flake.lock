@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "saya-master": "saya-master"
+      }
+    },
+    "saya-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-saya-master": "src-saya-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555975,
+        "narHash": "sha256-rPEL4x3WSir1BYvDi8TQ2tS6Mu7JrSNr5kNZptQvbjs=",
+        "owner": "nim-nix-pkgs",
+        "repo": "saya",
+        "rev": "5733134c756b53c912e963fb07bf8ce87d834b63",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "saya",
+        "type": "github"
+      }
+    },
+    "src-saya-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1578888452,
+        "narHash": "sha256-r5MJtK5Ry3aa2rjCS0QRF1FnaxgyMtUCuQ3lUItsAYU=",
+        "owner": "Ethosa",
+        "repo": "saya_nim",
+        "rev": "a1b0ceac5d12c075d9069f0dbe244b1aea7e5939",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Ethosa",
+        "ref": "refs/heads/master",
+        "repo": "saya_nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

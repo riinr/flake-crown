@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "firejail-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-firejail-master": "src-firejail-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555424,
+        "narHash": "sha256-l8bpjmIXBPpcWVl/Z4wyWDi0FWf+uNu39WOpEywYP9s=",
+        "owner": "nim-nix-pkgs",
+        "repo": "firejail",
+        "rev": "c61acf2f731c3af68c637c87899cc645581b7246",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "firejail",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "firejail-master": "firejail-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-firejail-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1559837049,
+        "narHash": "sha256-U3XkKufvP7br6seNkDoU+zrhtgQpvE/bs6/yoV4q6wo=",
+        "owner": "juancarlospaco",
+        "repo": "nim-firejail",
+        "rev": "4180c86d7a7684171c7bd3f52660943f183c5d5e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "nim-firejail",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

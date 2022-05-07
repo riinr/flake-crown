@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "httpkit-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-httpkit-master": "src-httpkit-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555532,
+        "narHash": "sha256-yvP5Ec+NtwSGP5PniYPb+FW1OTw+PhLoV5bcQBcsM04=",
+        "owner": "nim-nix-pkgs",
+        "repo": "httpkit",
+        "rev": "27a1a708e3272dba10a9e6d761928e46fc86b2fb",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "httpkit",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "httpkit-master": "httpkit-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-httpkit-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1506408014,
+        "narHash": "sha256-clm5q0dnc9eqJPlVGYlD4t7a72Rkgwdrg6BgXypcCRA=",
+        "owner": "tulayang",
+        "repo": "httpkit",
+        "rev": "8e91b610fa93293df26db842c4099836ebb8c007",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tulayang",
+        "ref": "refs/heads/master",
+        "repo": "httpkit",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

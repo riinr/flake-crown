@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "kdialog-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-kdialog-master": "src-kdialog-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555570,
+        "narHash": "sha256-PowrIKGWYiQJn1YIzH65G7WFUQuGaX2CbXTmPLSdSmY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "kdialog",
+        "rev": "ccc0a9caa4b1aba8d9d22d42af402de641c10919",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "kdialog",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "kdialog-master": "kdialog-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-kdialog-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1559844413,
+        "narHash": "sha256-sNdPLMjd99apgdYWyzRlnvzweM/zYrGAR8+sjJYK8H8=",
+        "owner": "juancarlospaco",
+        "repo": "nim-kdialog",
+        "rev": "6bd827130c48e3ddf4aaa29adfd395bed0d1afe4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "nim-kdialog",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

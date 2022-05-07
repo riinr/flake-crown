@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "notmuch-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-notmuch-master": "src-notmuch-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555808,
+        "narHash": "sha256-URwIMThyAkCjThzyQzV7c65w3TchrHoZtUkdXY3v9gM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "notmuch",
+        "rev": "66ac699f767263eff6e5ce2f4f75cc1e06df8f39",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "notmuch",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "notmuch-master": "notmuch-master"
+      }
+    },
+    "src-notmuch-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1583936008,
+        "narHash": "sha256-+oAoCg/647FuKVTEl0uRh4W56z9kaJTGBCIdjfVL9i4=",
+        "owner": "samdmarshall",
+        "repo": "notmuch.nim",
+        "rev": "bb5c1c48e13514efa1e9cda59045b242cb0751f5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "samdmarshall",
+        "ref": "refs/heads/master",
+        "repo": "notmuch.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

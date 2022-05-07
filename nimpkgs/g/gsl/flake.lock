@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "gsl-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-gsl-main": "src-gsl-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555514,
+        "narHash": "sha256-vsVqkrZPy2dRbQL/p1mi2MrzfGeJ7bSeESS7OXjWR2I=",
+        "owner": "nim-nix-pkgs",
+        "repo": "gsl",
+        "rev": "751f10b16629c99792be7ed1bc5ea4f197de1d2f",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "gsl",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "gsl-main": "gsl-main",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-gsl-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1614909735,
+        "narHash": "sha256-OLZbpxCNNt5PVHCzxOfPGfhK5+jiHNh5pWiED7GdQBA=",
+        "owner": "YesDrX",
+        "repo": "gsl-nim",
+        "rev": "c475209120c906e4bba1127802e00a0455dfc331",
+        "type": "github"
+      },
+      "original": {
+        "owner": "YesDrX",
+        "ref": "refs/heads/main",
+        "repo": "gsl-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

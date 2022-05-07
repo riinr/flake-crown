@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "taglib-master": "taglib-master"
+      }
+    },
+    "src-taglib-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1469803236,
+        "narHash": "sha256-jwt2Cn34Ji2DMTEmNF4taPcCmm8CtUQal2EQ7dSN3x4=",
+        "owner": "alex-laskin",
+        "repo": "nim-taglib",
+        "rev": "84b86d2740a8a4572bf5e3c933f0f0c1add30541",
+        "type": "github"
+      },
+      "original": {
+        "owner": "alex-laskin",
+        "ref": "refs/heads/master",
+        "repo": "nim-taglib",
+        "type": "github"
+      }
+    },
+    "taglib-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-taglib-master": "src-taglib-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556125,
+        "narHash": "sha256-pauhPxuV4fHGTOpHLg6fLoe5XcFkYSL1vXrbmNlL+7s=",
+        "owner": "nim-nix-pkgs",
+        "repo": "taglib",
+        "rev": "48301f1bf0fab80b5d73044eb3fc9ce459c31731",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "taglib",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

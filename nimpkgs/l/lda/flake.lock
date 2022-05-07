@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "lda-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-lda-master": "src-lda-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555583,
+        "narHash": "sha256-7lFnBIZi9+ud/lpKWEtBquVTZjAaeLoGzDRpZe9f0Fw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "lda",
+        "rev": "7fddf834a019a55651878eb90bfcefd83497cddc",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "lda",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "lda-master": "lda-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-lda-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1526663836,
+        "narHash": "sha256-y39elQpAXpVZf3NK9Gaxz4GxLZMZo5Z7qheAV39cib0=",
+        "owner": "andreaferretti",
+        "repo": "lda",
+        "rev": "eee2501656532caad0a12290dc70022fadd98bca",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/heads/master",
+        "repo": "lda",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "db_wrapper-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-db_wrapper-master": "src-db_wrapper-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650750191,
+        "narHash": "sha256-ySKytFDJI+8um0zi4mUdhcn/3wuKM24qPxMQIWS4cak=",
+        "owner": "nim-nix-pkgs",
+        "repo": "db_wrapper",
+        "rev": "bb4ed8af2aafb142fa1f5d0539dce33c646dd310",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "db_wrapper",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "db_wrapper-master": "db_wrapper-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-db_wrapper-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1621926562,
+        "narHash": "sha256-lc3iwAFN13f7lsKLE3JBNzYcjyN1KG9WabYwLe/+oaM=",
+        "owner": "sivchari",
+        "repo": "db_wrapper",
+        "rev": "6700bf4c9980689e37021cff0b223af4155529fa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sivchari",
+        "ref": "refs/heads/master",
+        "repo": "db_wrapper",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "noise-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-noise-master": "src-noise-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555803,
+        "narHash": "sha256-3nvVcaPtMu2vUPGB4ACCNzeyjVrGYEqbR7LB+/92dCE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "noise",
+        "rev": "06a7aedf0e3e2f6c1c7664a62e4081baa335e0b6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "noise",
+        "type": "github"
+      }
+    },
+    "noise-v0_1_14": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-noise-v0_1_14": "src-noise-v0_1_14"
+      },
+      "locked": {
+        "dir": "v0_1_14",
+        "lastModified": 1651555803,
+        "narHash": "sha256-3nvVcaPtMu2vUPGB4ACCNzeyjVrGYEqbR7LB+/92dCE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "noise",
+        "rev": "06a7aedf0e3e2f6c1c7664a62e4081baa335e0b6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_14",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "noise",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "noise-master": "noise-master",
+        "noise-v0_1_14": "noise-v0_1_14"
+      }
+    },
+    "src-noise-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644724138,
+        "narHash": "sha256-/yJwZE0M4EaN1jV4Wk4WziCifzrOEkTUL6YiqrA62uE=",
+        "owner": "jangko",
+        "repo": "nim-noise",
+        "rev": "71e5dd89ce1fa2fd27a8e7f7f5673e4257981095",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jangko",
+        "ref": "refs/heads/master",
+        "repo": "nim-noise",
+        "type": "github"
+      }
+    },
+    "src-noise-v0_1_14": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1600141522,
+        "narHash": "sha256-iZBov+AaAHctZ1nFbyR3lEuK14jaf8PUDcs7++GNzXI=",
+        "owner": "jangko",
+        "repo": "nim-noise",
+        "rev": "947f195c5796d3aca331de39d49dc073140748c1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jangko",
+        "ref": "refs/tags/v0.1.14",
+        "repo": "nim-noise",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

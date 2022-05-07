@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "jsonob-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jsonob-master": "src-jsonob-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555564,
+        "narHash": "sha256-Z5m4RAycRcXc42dmrgW5QBpyTRNM417FD9XFTXDrELU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "jsonob",
+        "rev": "852840cbea6ed9b737ab8879b03840e0c63f8cd9",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "jsonob",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "jsonob-master": "jsonob-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-jsonob-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1468559424,
+        "narHash": "sha256-ip8cWkytiUs332CBGGK6JJpboUd211SqXd16/+P0bic=",
+        "owner": "cjxgm",
+        "repo": "jsonob",
+        "rev": "f12cf9628542b8075ca0e4d9df1b3f86304fe16b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cjxgm",
+        "ref": "refs/heads/master",
+        "repo": "jsonob",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

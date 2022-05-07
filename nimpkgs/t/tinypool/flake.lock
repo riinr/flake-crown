@@ -1,0 +1,269 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "tinypool-0_2_0": "tinypool-0_2_0",
+        "tinypool-0_2_1": "tinypool-0_2_1",
+        "tinypool-0_3_0": "tinypool-0_3_0",
+        "tinypool-0_3_1": "tinypool-0_3_1",
+        "tinypool-master": "tinypool-master"
+      }
+    },
+    "src-tinypool-0_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1643630999,
+        "narHash": "sha256-IBvmH0M7pk8LN2DhEMf4v1eTXomGOOTocBqfgdPBom4=",
+        "owner": "PhilippMDoerner",
+        "repo": "TinyPool",
+        "rev": "dcc30222131cdeb589cf1688367ff94a0d37542b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PhilippMDoerner",
+        "ref": "refs/tags/0.2.0",
+        "repo": "TinyPool",
+        "type": "github"
+      }
+    },
+    "src-tinypool-0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1643631173,
+        "narHash": "sha256-53KoHlUSIupb5a+gEMR+Yrxoe3u7okSoxXrldXDmZnc=",
+        "owner": "PhilippMDoerner",
+        "repo": "TinyPool",
+        "rev": "608c619addad6e94076f58f4cfe28e6a7aa0992a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PhilippMDoerner",
+        "ref": "refs/tags/0.2.1",
+        "repo": "TinyPool",
+        "type": "github"
+      }
+    },
+    "src-tinypool-0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1648228722,
+        "narHash": "sha256-HE2rIS6Zg1iFkTOsTQr1/o+Frj1uQzRuqk+gjWFQ6U4=",
+        "owner": "PhilippMDoerner",
+        "repo": "TinyPool",
+        "rev": "1f7bc1e02c9f3cefb434b4626dda89d909cc462c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PhilippMDoerner",
+        "ref": "refs/tags/0.3.0",
+        "repo": "TinyPool",
+        "type": "github"
+      }
+    },
+    "src-tinypool-0_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1648230122,
+        "narHash": "sha256-gR23h16dGUKZglj6KQGBSge/l51Xh9+PzE85VJBqKQ4=",
+        "owner": "PhilippMDoerner",
+        "repo": "TinyPool",
+        "rev": "eeae2474818d9d4b8f42bb734d852a524900e3f6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PhilippMDoerner",
+        "ref": "refs/tags/0.3.1",
+        "repo": "TinyPool",
+        "type": "github"
+      }
+    },
+    "src-tinypool-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1648230122,
+        "narHash": "sha256-gR23h16dGUKZglj6KQGBSge/l51Xh9+PzE85VJBqKQ4=",
+        "owner": "PhilippMDoerner",
+        "repo": "TinyPool",
+        "rev": "eeae2474818d9d4b8f42bb734d852a524900e3f6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PhilippMDoerner",
+        "ref": "refs/heads/master",
+        "repo": "TinyPool",
+        "type": "github"
+      }
+    },
+    "tinypool-0_2_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-tinypool-0_2_0": "src-tinypool-0_2_0"
+      },
+      "locked": {
+        "dir": "0_2_0",
+        "lastModified": 1651556159,
+        "narHash": "sha256-6diFNaorbEBrrO1F3YiFU6rKSLSffKCNgSrNVIUFOMM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "tinypool",
+        "rev": "72c24f52138204478fb248b6e021b6516044c1a8",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_2_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "tinypool",
+        "type": "github"
+      }
+    },
+    "tinypool-0_2_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-tinypool-0_2_1": "src-tinypool-0_2_1"
+      },
+      "locked": {
+        "dir": "0_2_1",
+        "lastModified": 1651556159,
+        "narHash": "sha256-6diFNaorbEBrrO1F3YiFU6rKSLSffKCNgSrNVIUFOMM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "tinypool",
+        "rev": "72c24f52138204478fb248b6e021b6516044c1a8",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_2_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "tinypool",
+        "type": "github"
+      }
+    },
+    "tinypool-0_3_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-tinypool-0_3_0": "src-tinypool-0_3_0"
+      },
+      "locked": {
+        "dir": "0_3_0",
+        "lastModified": 1651556159,
+        "narHash": "sha256-6diFNaorbEBrrO1F3YiFU6rKSLSffKCNgSrNVIUFOMM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "tinypool",
+        "rev": "72c24f52138204478fb248b6e021b6516044c1a8",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_3_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "tinypool",
+        "type": "github"
+      }
+    },
+    "tinypool-0_3_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-tinypool-0_3_1": "src-tinypool-0_3_1"
+      },
+      "locked": {
+        "dir": "0_3_1",
+        "lastModified": 1651556159,
+        "narHash": "sha256-6diFNaorbEBrrO1F3YiFU6rKSLSffKCNgSrNVIUFOMM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "tinypool",
+        "rev": "72c24f52138204478fb248b6e021b6516044c1a8",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_3_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "tinypool",
+        "type": "github"
+      }
+    },
+    "tinypool-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-tinypool-master": "src-tinypool-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556159,
+        "narHash": "sha256-6diFNaorbEBrrO1F3YiFU6rKSLSffKCNgSrNVIUFOMM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "tinypool",
+        "rev": "72c24f52138204478fb248b6e021b6516044c1a8",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "tinypool",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

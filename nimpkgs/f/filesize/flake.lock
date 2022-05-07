@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "filesize-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-filesize-master": "src-filesize-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555420,
+        "narHash": "sha256-KOAlyGoRG2gbn1+Z6FhUGZz7c6J8iG9Saa9/ryR6aSw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "filesize",
+        "rev": "61f384bb30268243badc1bf5d41f3ff9a7621004",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "filesize",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "filesize-master": "filesize-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-filesize-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1584415131,
+        "narHash": "sha256-3LF0YtBpV1QZujl4W3Bye248A6ZOnfQxpW1Wd6z98Dg=",
+        "owner": "sergiotapia",
+        "repo": "filesize",
+        "rev": "1eca50e006cc4f4e50933534552c2094e3f56c9b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sergiotapia",
+        "ref": "refs/heads/master",
+        "repo": "filesize",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

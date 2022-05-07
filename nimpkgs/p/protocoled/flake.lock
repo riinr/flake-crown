@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "protocoled-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-protocoled-master": "src-protocoled-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555910,
+        "narHash": "sha256-qlNbG6DjedeHvDBm6k60h68ZWsUqQ/0U1oped/Bls+k=",
+        "owner": "nim-nix-pkgs",
+        "repo": "protocoled",
+        "rev": "6b5781ffe80721604a786c89186ec3506ec4a466",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "protocoled",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "protocoled-master": "protocoled-master"
+      }
+    },
+    "src-protocoled-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1570558305,
+        "narHash": "sha256-b+yen5AF+H8NCjQ2MMqMifoUOf52e0Meu6z7aWU2GIo=",
+        "owner": "planetis-m",
+        "repo": "protocoled",
+        "rev": "d41a89b5b196980597df62a335111c5629c76505",
+        "type": "github"
+      },
+      "original": {
+        "owner": "planetis-m",
+        "ref": "refs/heads/master",
+        "repo": "protocoled",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

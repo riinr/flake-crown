@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nshout-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nshout-master": "src-nshout-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555836,
+        "narHash": "sha256-4jBLm8pWDT0WuJLI3lgtf2aQmvlBSLImyq39jckZtw0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nshout",
+        "rev": "edf9ec51aa405d4cd13675b7a7b3ebe86197a6c3",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nshout",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "nshout-master": "nshout-master"
+      }
+    },
+    "src-nshout-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1431437263,
+        "narHash": "sha256-dvNhtVvVgf+3z/Yxr1CXMsV/a5P3egHDUreNDtXIvSM=",
+        "owner": "Senketsu",
+        "repo": "nshout",
+        "rev": "c254314c179d66eab51938527d7b2858c2457a34",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Senketsu",
+        "ref": "refs/heads/master",
+        "repo": "nshout",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

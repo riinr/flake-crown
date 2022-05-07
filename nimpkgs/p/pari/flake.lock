@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "pari-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-pari-master": "src-pari-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555874,
+        "narHash": "sha256-8SJvzcWUxxLoJZhBnORRDQTscSHcR/8e0YhY0KjJxOU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "pari",
+        "rev": "b30d8f76e3ec60ba154937c44b6daef1f6f928ea",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "pari",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "pari-master": "pari-master"
+      }
+    },
+    "src-pari-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1454811378,
+        "narHash": "sha256-jHZ+M0vNfRQjDp3qXgziangw8fTyfZjR91h6De6qmKQ=",
+        "owner": "lompik",
+        "repo": "pari.nim",
+        "rev": "4173625287cc3b7365c0312ee8483841139d1f25",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lompik",
+        "ref": "refs/heads/master",
+        "repo": "pari.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

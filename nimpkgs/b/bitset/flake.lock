@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "bitset-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-bitset-main": "src-bitset-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555276,
+        "narHash": "sha256-JkdfVeuovIztyXHdFtJjl7MrT1sJnlbZdMR1RL58QjU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "bitset",
+        "rev": "ff4f24463566fb7480c7c7beb1250a44c854f384",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "bitset",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "bitset-main": "bitset-main",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-bitset-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1604947330,
+        "narHash": "sha256-s8st9JN+r8sJG3LN4rlDxRVs+8B4N2Twlic1FyguUSc=",
+        "owner": "joryschossau",
+        "repo": "bitset",
+        "rev": "637612d288d4320495cfa0c3b1b47a6b0fcca674",
+        "type": "github"
+      },
+      "original": {
+        "owner": "joryschossau",
+        "ref": "refs/heads/main",
+        "repo": "bitset",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

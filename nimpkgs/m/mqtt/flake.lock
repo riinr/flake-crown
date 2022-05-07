@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "mqtt-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-mqtt-master": "src-mqtt-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555668,
+        "narHash": "sha256-47+wIqe2zcQ6T4OzRvsXgJxi796KtmX7z9/tX4W9gE8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "mqtt",
+        "rev": "de971a8e44db69c98e823941a26acc185ec9c676",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "mqtt",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "mqtt-master": "mqtt-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-mqtt-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1436281818,
+        "narHash": "sha256-qS3yqwI1Ajilhdg7Mrp00TVYiX8qBrIUl4xbRaVSJU8=",
+        "owner": "barnybug",
+        "repo": "nim-mqtt",
+        "rev": "8eac94d5b624542a29e7d6cdf236aea561bf2a8a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "barnybug",
+        "ref": "refs/heads/master",
+        "repo": "nim-mqtt",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

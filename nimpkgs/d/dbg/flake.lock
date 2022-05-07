@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "dbg-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-dbg-master": "src-dbg-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555364,
+        "narHash": "sha256-7IWoOsdM0ebiTjL2gD8YY3+HZyC9DrcnqmguWBk+Fxk=",
+        "owner": "nim-nix-pkgs",
+        "repo": "dbg",
+        "rev": "3d7c85c78e23390841a758b04ac0271a4ad91ac7",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "dbg",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "dbg-master": "dbg-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-dbg-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1582402819,
+        "narHash": "sha256-J6nJaW4vsHI7kJhiOI09YXSIEG47Sx98mhgHHsJy2uw=",
+        "owner": "enthus1ast",
+        "repo": "nimDbg",
+        "rev": "5a3bfc3786451950270e270e75eb7b6b09a21350",
+        "type": "github"
+      },
+      "original": {
+        "owner": "enthus1ast",
+        "ref": "refs/heads/master",
+        "repo": "nimDbg",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

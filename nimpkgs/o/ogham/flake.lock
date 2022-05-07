@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "ogham-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ogham-main": "src-ogham-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651555845,
+        "narHash": "sha256-WdxWTtMQ+PYdxESBxZ6XxH8SwxAbbkDTJFyY7qI0kOo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ogham",
+        "rev": "9450dc378c04a3e86c5080a772a104935ecde309",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ogham",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "ogham-main": "ogham-main"
+      }
+    },
+    "src-ogham-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1648892975,
+        "narHash": "sha256-qYAHJV3jP+yBGPIZOFb0tP7sjNFNKTx3OHGK2Ztd7zk=",
+        "owner": "stscoundrel",
+        "repo": "ogham-nim",
+        "rev": "95ec8cad8122e3b0136f4fc804dc4882eb4e9664",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stscoundrel",
+        "ref": "refs/heads/main",
+        "repo": "ogham-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

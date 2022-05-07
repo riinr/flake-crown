@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "libgit2-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libgit2-master": "src-libgit2-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555593,
+        "narHash": "sha256-Xaye0bZ0xPMaSC+AuPLLNF7/jrYRK4wEwwBKFOz2/pM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libgit2",
+        "rev": "344de7523f1b15b7d3bcd8e0fea8d2be41db1c22",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libgit2",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "libgit2-master": "libgit2-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-libgit2-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1501102511,
+        "narHash": "sha256-/eZ0DRIuiQ2g03xp0oHXe3mHBCXQ8FNQMn5RayeS0rs=",
+        "owner": "barcharcraz",
+        "repo": "libgit2-nim",
+        "rev": "2f5f9a57b06bfede594c7db5ac30a9d8f97dec77",
+        "type": "github"
+      },
+      "original": {
+        "owner": "barcharcraz",
+        "ref": "refs/heads/master",
+        "repo": "libgit2-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

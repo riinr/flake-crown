@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "oshostname-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-oshostname-master": "src-oshostname-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555861,
+        "narHash": "sha256-r59FYs+MNmC4OdznUSPfnvd8KbuJ/THSEjQ0NmHDIL8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "oshostname",
+        "rev": "97327c5f0a83e0be608c411b79b07c119a13e5f8",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "oshostname",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "oshostname-master": "oshostname-master"
+      }
+    },
+    "src-oshostname-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1604462924,
+        "narHash": "sha256-3OhDphqVSBmxjjKhWgXmJwVKbqdCR2R3P9l5ZzJMIK4=",
+        "owner": "jrfondren",
+        "repo": "nim-oshostname",
+        "rev": "872c9287726852ff83940f15cfee777842cfe1be",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jrfondren",
+        "ref": "refs/heads/master",
+        "repo": "nim-oshostname",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

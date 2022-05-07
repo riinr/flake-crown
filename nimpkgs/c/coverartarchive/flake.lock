@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "coverartarchive-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-coverartarchive-master": "src-coverartarchive-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555343,
+        "narHash": "sha256-sze5EYlCwbLzzubrbJCaZp0BUjweX/fFYHFNV/Pi0YY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "coverartarchive",
+        "rev": "9850b0b4a3432c9e930c096b9fb4ef2354053aba",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "coverartarchive",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "coverartarchive-master": "coverartarchive-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-coverartarchive-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1500823124,
+        "narHash": "sha256-4TBGvFg6X2J1K9OymT1JjIhpA/9xQ/J0kwWFF2GLO7s=",
+        "owner": "achesak",
+        "repo": "nim-coverartarchive",
+        "rev": "a68a9087e2b63630be3f52816a00077852e8948e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "achesak",
+        "ref": "refs/heads/master",
+        "repo": "nim-coverartarchive",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

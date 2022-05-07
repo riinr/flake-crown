@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "randgen-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-randgen-master": "src-randgen-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555935,
+        "narHash": "sha256-/jC1aX4aK3mGxoSHc44ZX4gsenOrDuid8Er8wqBsCuA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "randgen",
+        "rev": "bc636d4cb905f351ef72bb54eab763fa1c2677a7",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "randgen",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "randgen-master": "randgen-master"
+      }
+    },
+    "src-randgen-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1596997147,
+        "narHash": "sha256-Koqg2ddCtjPG8EmrOpHNljSZ3pIN/wkbFQ5uiz1J4wI=",
+        "owner": "YesDrX",
+        "repo": "randgen",
+        "rev": "06ab570e89ee93d74840b718d98060f0597dbaba",
+        "type": "github"
+      },
+      "original": {
+        "owner": "YesDrX",
+        "ref": "refs/heads/master",
+        "repo": "randgen",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

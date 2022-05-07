@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "finals-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-finals-master": "src-finals-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555423,
+        "narHash": "sha256-vXeh/mZfLtQyQcE6/XMMgWUE/KRe+CurU5RdLUtMABc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "finals",
+        "rev": "1a32b2ae6fbd916f3d41df1bed55fbd3ca018a79",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "finals",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "finals-master": "finals-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-finals-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1557539799,
+        "narHash": "sha256-wQpeQAWq54LUeBY9AK7Z0lL7QitD/m5HyvAMyaW+b9M=",
+        "owner": "quelklef",
+        "repo": "nim-finals",
+        "rev": "769fdd4035b781039d19ea930e23e16cc80c7ced",
+        "type": "github"
+      },
+      "original": {
+        "owner": "quelklef",
+        "ref": "refs/heads/master",
+        "repo": "nim-finals",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

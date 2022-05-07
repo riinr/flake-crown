@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "ski-master": "ski-master"
+      }
+    },
+    "ski-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ski-master": "src-ski-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556023,
+        "narHash": "sha256-SCy2K82adGopyPEtkAFzwPtc/ntH5rs8YpYrYTu1yzI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ski",
+        "rev": "4eb0e4ec228770d9d91ac64d8cdf9c64bda0b6d4",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ski",
+        "type": "github"
+      }
+    },
+    "src-ski-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1557531387,
+        "narHash": "sha256-a9K9tY6Q80JwguYo+W5TavEh5N12Ek/s9UJ2/bksbuU=",
+        "owner": "jiro4989",
+        "repo": "ski",
+        "rev": "7937592ed8f1439cc3bf0c677112381e9b5b9ba1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jiro4989",
+        "ref": "refs/heads/master",
+        "repo": "ski",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

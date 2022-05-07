@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "jalali_nim-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jalali_nim-main": "src-jalali_nim-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1650750322,
+        "narHash": "sha256-z7EJfUCvT9VWy6TC0QyXimQFP2/Wgi0VVnK9eY1Yr/w=",
+        "owner": "nim-nix-pkgs",
+        "repo": "jalali_nim",
+        "rev": "75aca694ec27e4af0a2e66e27927f510432e03d8",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "jalali_nim",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "jalali_nim-main": "jalali_nim-main",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-jalali_nim-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1641450329,
+        "narHash": "sha256-IfZmqH4NvNgLXBY/jkkIJxLYGb18XzyRrOaBiR8aLOs=",
+        "owner": "hamidb80",
+        "repo": "jalili-nim",
+        "rev": "1ec082bd8e47ecacfc300c031b024cb8b126dbd8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hamidb80",
+        "ref": "refs/heads/main",
+        "repo": "jalili-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

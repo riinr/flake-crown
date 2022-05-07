@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "ndbex-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ndbex-master": "src-ndbex-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555689,
+        "narHash": "sha256-bM203UzMURKlHO5JXI8v4M5jjk/a5ltl0FR3jZyN2/4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ndbex",
+        "rev": "0a5cb891a500082a985caab2b51fa82ef09532d0",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ndbex",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "ndbex-master": "ndbex-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-ndbex-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1522926572,
+        "narHash": "sha256-0Jhs7h/FfN5p35fkSM6gPNWWE2+f58WHpPBseFcmtxQ=",
+        "owner": "Senketsu",
+        "repo": "nim-db-ex",
+        "rev": "0533fc0587d5bca2b9748fab3ef59806951bcddd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Senketsu",
+        "ref": "refs/heads/master",
+        "repo": "nim-db-ex",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

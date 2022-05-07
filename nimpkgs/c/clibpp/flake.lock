@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "clibpp-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-clibpp-master": "src-clibpp-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555311,
+        "narHash": "sha256-heDAXrErW1H/gnfrkYIJAjAb0/Sls0bqGvflElakxbc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "clibpp",
+        "rev": "8e564af4fc3f96783f0dd085f38120424f5b1c45",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "clibpp",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "clibpp-master": "clibpp-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-clibpp-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1427415721,
+        "narHash": "sha256-8j/vcXp4N0kP4bmt86dnQGq/ehi301suMgHPy1UFRno=",
+        "owner": "onionhammer",
+        "repo": "clibpp",
+        "rev": "2ca765f0fdbb2a04d94df1ea539826cecc8a4c39",
+        "type": "github"
+      },
+      "original": {
+        "owner": "onionhammer",
+        "ref": "refs/heads/master",
+        "repo": "clibpp",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "parselicense-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-parselicense-master": "src-parselicense-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555877,
+        "narHash": "sha256-WCeZ0zRBCk96Qq1S5vESOColUj4klnIhQ2TxGE2xUhc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "parselicense",
+        "rev": "b0e3313b797098dae005816b4170a660f72d8e72",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "parselicense",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "parselicense-master": "parselicense-master"
+      }
+    },
+    "src-parselicense-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1586379814,
+        "narHash": "sha256-Ta2XsyV03yuej0r4b1UiwrzyGKNbneOvGClecdaymt4=",
+        "owner": "juancarlospaco",
+        "repo": "parselicense",
+        "rev": "ffad2e320300215f199e60c785cc24fe63e15091",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "parselicense",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "printdebug-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-printdebug-master": "src-printdebug-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555907,
+        "narHash": "sha256-Xardpv4xrK29qf2lCF2yBSfTBm6/SUkkBFWZWIJW41k=",
+        "owner": "nim-nix-pkgs",
+        "repo": "printdebug",
+        "rev": "85489cd3828bb2913f3c7280e8263559526d4120",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "printdebug",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "printdebug-master": "printdebug-master"
+      }
+    },
+    "src-printdebug-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1537836493,
+        "narHash": "sha256-pOVpXLfPuIsHEpH4JvVKD2lA02gYEcPJCy5xIi7xGH0=",
+        "owner": "juancarlospaco",
+        "repo": "nim-printdebug",
+        "rev": "88dcf2dd5f6f0584e80dbe7e40cdbb124c9998fd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "nim-printdebug",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

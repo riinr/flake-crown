@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "simple_vector-master": "simple_vector-master"
+      }
+    },
+    "simple_vector-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simple_vector-master": "src-simple_vector-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650750583,
+        "narHash": "sha256-enKleGQ9KzDS3U/bYERlqZQ6QGBS28amJeR+S8Z7suQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "simple_vector",
+        "rev": "1aed222a3f765817acfe3be29e6a42479793dd80",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "simple_vector",
+        "type": "github"
+      }
+    },
+    "src-simple_vector-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1551358196,
+        "narHash": "sha256-irF9tWaO/SOYJIBlqCoDQw8m4Ivu0t39jhaKcFb/eWY=",
+        "owner": "Ephiiz",
+        "repo": "simple_vector",
+        "rev": "cc5f15f00eb6036729bf22aa87bbbf88920499a6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Ephiiz",
+        "ref": "refs/heads/master",
+        "repo": "simple_vector",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

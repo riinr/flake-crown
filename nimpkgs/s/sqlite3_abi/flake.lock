@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "sqlite3_abi-master": "sqlite3_abi-master"
+      }
+    },
+    "sqlite3_abi-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sqlite3_abi-master": "src-sqlite3_abi-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650750605,
+        "narHash": "sha256-hjHXLOhDYbHisCwkmlmA38NyzKL8TY9h/q7eJQDMTzo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sqlite3_abi",
+        "rev": "5d5008cff08979f3b260b2e84763709820d51084",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sqlite3_abi",
+        "type": "github"
+      }
+    },
+    "src-sqlite3_abi-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1610366643,
+        "narHash": "sha256-QX1Skt9ixmnxS6PR+ulv4DdOsz/+Bx+Jc6NTuib+kMY=",
+        "owner": "arnetheduck",
+        "repo": "nim-sqlite3-abi",
+        "rev": "07039dd887c4e5b57367a16f4be3c18763be1d7b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "arnetheduck",
+        "ref": "refs/heads/master",
+        "repo": "nim-sqlite3-abi",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "tic80-master": "tic80-master"
+      }
+    },
+    "src-tic80-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1631837949,
+        "narHash": "sha256-796YsAFs7cg/d1Is3WQcfjx50wiTOahIpyCc9vZq6yQ=",
+        "owner": "thisago",
+        "repo": "tic80",
+        "rev": "115f1800f65b45b4b9f289fec236549c16bb02f5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thisago",
+        "ref": "refs/heads/master",
+        "repo": "tic80",
+        "type": "github"
+      }
+    },
+    "tic80-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-tic80-master": "src-tic80-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556152,
+        "narHash": "sha256-l9RhJEW3HRFNjug6XxDH61xstHXXiN5UaeLdgQSzUus=",
+        "owner": "nim-nix-pkgs",
+        "repo": "tic80",
+        "rev": "a3b0b6af4062c6e40259e33116b8e76b6b3a730b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "tic80",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

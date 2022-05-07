@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "sparkline-master": "sparkline-master"
+      }
+    },
+    "sparkline-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sparkline-master": "src-sparkline-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556045,
+        "narHash": "sha256-YGFz10izOAfjelnQ+bQfTiBF6fCDAYXiZwmEDJq2kQ0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sparkline",
+        "rev": "3655c546d88f208df569b31ba8600431dcb5b562",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sparkline",
+        "type": "github"
+      }
+    },
+    "src-sparkline-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1574001023,
+        "narHash": "sha256-/buXbxY34mw9uZ5/tyWMQeuwj8MKi5ddMRhfLOV1RdY=",
+        "owner": "aquilax",
+        "repo": "sparkline-nim",
+        "rev": "4cbbd2a734c68666ee3e7820e09326be8e15b44c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "aquilax",
+        "ref": "refs/heads/master",
+        "repo": "sparkline-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

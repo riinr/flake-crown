@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "bgfxdotnim-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-bgfxdotnim-master": "src-bgfxdotnim-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555267,
+        "narHash": "sha256-sODriN6JlJiezOqGCctlV7Sjqz/RvPsLxSijX4V+NrY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "bgfxdotnim",
+        "rev": "aa366b8c1a840cf019e1f27b6dc57389ca4c88d2",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "bgfxdotnim",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "bgfxdotnim-master": "bgfxdotnim-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-bgfxdotnim-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1568659753,
+        "narHash": "sha256-t4D8q3iEQ8rFEFLUgJ026YmSHL3QXjt/1ZwY9jeMoK4=",
+        "owner": "zacharycarter",
+        "repo": "bgfx.nim",
+        "rev": "eeb8b174b9a1a5bacbb182cda9f514d60ce54ba5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zacharycarter",
+        "ref": "refs/heads/master",
+        "repo": "bgfx.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

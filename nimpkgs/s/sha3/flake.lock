@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "sha3-master": "sha3-master"
+      }
+    },
+    "sha3-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sha3-master": "src-sha3-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556000,
+        "narHash": "sha256-336lGSUSIULZc4fza9FZdqRpWfr3ybqmU+Sgm+83II4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sha3",
+        "rev": "3665e9067f94d76c1b20b0da552f21793013434a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sha3",
+        "type": "github"
+      }
+    },
+    "src-sha3-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1622444096,
+        "narHash": "sha256-K5bGY0tLF+YG5XkJw+Y4TvlKrvR3PCwUcpUVgRoRmAc=",
+        "owner": "narimiran",
+        "repo": "sha3",
+        "rev": "7e1a5194668371c8fd4024054ac4d8c7431eddba",
+        "type": "github"
+      },
+      "original": {
+        "owner": "narimiran",
+        "ref": "refs/heads/master",
+        "repo": "sha3",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimbler-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimbler-master": "src-nimbler-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555710,
+        "narHash": "sha256-uFQGdw0Y+FBHN5cFvtt3duAW+IpNwmuI3pX9KHSfl4Y=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimbler",
+        "rev": "e147d37529ff836c55fc0df217fd70f4ff03cc02",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimbler",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimbler-master": "nimbler-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimbler-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1583192635,
+        "narHash": "sha256-fuMBbLSdAkbvU6JKIAO3GOnPmyu/gSpUu4d1qqs/EI0=",
+        "owner": "paul-nameless",
+        "repo": "nimbler",
+        "rev": "aa647004603c669a9fd929e89d5447d57defdcf8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "paul-nameless",
+        "ref": "refs/heads/master",
+        "repo": "nimbler",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

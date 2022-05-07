@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimstopwatch-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimstopwatch-master": "src-nimstopwatch-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555779,
+        "narHash": "sha256-WW3mpv8/7QUYBLt2r7UgGlMDr9QK2kg3q5Hh4L/0Fq0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimstopwatch",
+        "rev": "ce224d601ab0d9ede090631448c5aa9205fcbedd",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimstopwatch",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimstopwatch-master": "nimstopwatch-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimstopwatch-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1448391345,
+        "narHash": "sha256-zh/jC4joHBGTvaC2vpOYrdyNM3As0BSlAYBuXQRR0HU=",
+        "owner": "twist-vector",
+        "repo": "nim-stopwatch",
+        "rev": "6a06320cecd19ea413415b9c0fb3340a53673d52",
+        "type": "github"
+      },
+      "original": {
+        "owner": "twist-vector",
+        "ref": "refs/heads/master",
+        "repo": "nim-stopwatch",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

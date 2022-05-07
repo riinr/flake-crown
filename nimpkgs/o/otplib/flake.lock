@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "otplib-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-otplib-master": "src-otplib-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555865,
+        "narHash": "sha256-gdJiv3IVFVfk1cG0c3XSsIv5qz+b8SzpXyA9vmoe2XI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "otplib",
+        "rev": "86f16b8c5961a3f9771f26dfee96fdeabd21b368",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "otplib",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "otplib-master": "otplib-master"
+      }
+    },
+    "src-otplib-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645025496,
+        "narHash": "sha256-zGM2TI7zwXHwtLz0oZL+/yws0fUxYaaY+TbkXq9Xihk=",
+        "owner": "dimspith",
+        "repo": "otplib",
+        "rev": "90b38dd97c2d6937d487a300f136e03e71ffa985",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dimspith",
+        "ref": "refs/heads/master",
+        "repo": "otplib",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

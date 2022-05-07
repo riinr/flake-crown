@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "dtoa-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-dtoa-master": "src-dtoa-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555385,
+        "narHash": "sha256-sVuzj/Y4jls3KevDZJk6Xhdb7Uh0qv+MpYoBuvHegJ4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "dtoa",
+        "rev": "e3bd37747981cf0f15d3e70cb88e8ec1fd873ff2",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "dtoa",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "dtoa-master": "dtoa-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-dtoa-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1538484154,
+        "narHash": "sha256-TsCFyDiY4692RTqSTvSDHhSDvyYWk+5+ukUj12uZLuA=",
+        "owner": "LemonBoy",
+        "repo": "dtoa.nim",
+        "rev": "0b9589447cdf1434e90dcfde731a2dc709ed9670",
+        "type": "github"
+      },
+      "original": {
+        "owner": "LemonBoy",
+        "ref": "refs/heads/master",
+        "repo": "dtoa.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

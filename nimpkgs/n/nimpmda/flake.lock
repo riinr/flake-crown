@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimpmda-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimpmda-master": "src-nimpmda-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651555765,
+        "narHash": "sha256-YNP9TOIcf2NpCKybdlohJp1YXaD8ruTdo3rV4H6Ek6M=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimpmda",
+        "rev": "9504a534792212c1b0c572a7426b498a3e9d1125",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimpmda",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimpmda-master": "nimpmda-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimpmda-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1581041055,
+        "narHash": "sha256-K0XSMaHZEMgqPfD3ygCgqdjpCXdGO7Nn3pe01Y781/4=",
+        "owner": "jasonk000",
+        "repo": "nimpmda",
+        "rev": "4cee6d75c11cdd747c1ca78c2003a10f75931573",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jasonk000",
+        "ref": "refs/heads/master",
+        "repo": "nimpmda",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
