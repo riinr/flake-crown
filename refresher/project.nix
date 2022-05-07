@@ -8,6 +8,10 @@ in
 {
   imports = [ ./packages_other.nix ./alias_other.nix ./nix_deps.nix ];
   files.gitignore.pattern."refresher/*.json" = true;
+  files.gitignore.pattern."result"           = true;
+  files.gitignore.pattern."result-*"         = true;
+  files.gitignore.pattern.".*"               = true;
+  files.gitignore.enable      = true;
   files.cmds.gcc              = true;
   files.cmds.git              = true;
   files.cmds.jq               = true;
