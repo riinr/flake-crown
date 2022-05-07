@@ -3,6 +3,7 @@ import std/[
   json,
   os,
   osproc,
+  pegs,
   posix,
   sequtils,
   sets,
@@ -18,8 +19,6 @@ type
   Dependencies = HashSet[Dependency]
   Links        = TableRef[Package, Dependencies]
   Paths        = TableRef[Package, string]
-  Weights      = TableRef[Package, Natural]
-  Weight       = Natural
 
 
 using
@@ -27,8 +26,6 @@ using
   links       : Links
   package     : Package
   paths       : Paths
-  weight      : Weight
-  weights     : Weights
 
 
 proc link*(links; package; dependencies): void =
@@ -57,35 +54,29 @@ proc newLinks*(paths): Links =
     result.link package, dependencies
 
 
-proc mass*(weights; dependencies; links): Natural
+let urlPeg = peg"""
+  url       <- ^ protocols pathPart+ '/' {noDot+} '.'* .*
+  protocols <- \ident':/'&'/'
+  pathPart  <- '/' noSlash+ & '/'
+  noSlash   <- !'/' .
+  noDot     <- !'.' .
+"""
 
 
-proc mass*(weights; package; links): Natural =
-  result = weights.mgetOrPut(package, 0)
-  if result > 0:
-    return result
-  
-  let dependencies = links[package]
-  result = result + weights.mass(dependencies, links)
-  weights[package] = result
+let
+  paths = newTable[Package, string]()
+  links = newLinks(paths)
 
 
-proc mass*(weights; dependencies; links): Natural =
-  result = dependencies.len
-  for dependency in dependencies:
-    result = result + weights.mass(dependency, links)
+for package, deps in links.pairs:
+  let pkgName  = package.replacef(urlPeg, "$1")
+  var pkgsDeps =
+    if deps.len > 0:
+      deps.mapIt($it)
+    else:
+      @["nim"]
 
+  for dep in pkgsDeps:
+    let pkgDep = dep.replacef(urlPeg, "$1")
+    echo fmt"    {pkgName} -> {pkgDep}"
 
-proc main*() =
-  let
-    paths  = newTable[Package, string]()
-    weight = newTable[Package, Natural]()
-    links  = newLinks(paths)
-
-  for package, path in paths.pairs:
-    let size = weight.mass(package, links)
-    echo fmt"{size:04},{package},{path}"
-
-
-if isMainModule:
-  main()
