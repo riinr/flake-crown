@@ -6,7 +6,7 @@ let
   GLOB_TAG    = "${GLOB}/*/*/[0-9vV][0-9_]*";
 in
 {
-  imports = [ ./packages_other.nix ./alias_other.nix ./nix_deps.nix ];
+  imports = [ ./packages_other.nix ./alias_other.nix ./nix_deps.nix ./stats.nix ];
   files.gitignore.pattern."refresher/*.json" = true;
   files.gitignore.pattern."result"           = true;
   files.gitignore.pattern."result-*"         = true;
@@ -97,18 +97,6 @@ in
         uniq -c               |\
         sort -h               |\
         awk -F' ' '{print $1","$2}'
-    '';
-  files.alias.save-stats = 
-    ''
-      count-versions              > $PRJ_ROOT/../stats/versions-count.csv
-      count-versions-initials     > $PRJ_ROOT/../stats/versions-initials-count.csv
-      count-weights               > $PRJ_ROOT/../stats/dep-weights-count.csv
-      count-initials              > $PRJ_ROOT/../stats/initials-count.csv
-      count-contributions         > $PRJ_ROOT/../stats/contributions-count.csv
-      pkgs-weights|cut -d, -f1,2  > $PRJ_ROOT/../stats/dep-weights.csv
-      pkgs-dots                   > $PRJ_ROOT/../stats/pkgs.dot
-      pkgs-graph                  > $PRJ_ROOT/../stats/pkgs.mermaid
-                    
     '';
   files.nim.depWeight   = builtins.readFile ./depWeight.nim;
   files.nim.outprofiler = builtins.readFile ./outprofiler.nim;
