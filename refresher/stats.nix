@@ -6,7 +6,7 @@
       count-versions              >> $PRJ_ROOT/../stats/versions-count.csv
       echo "versions,letter"      > $PRJ_ROOT/../stats/versions-initials-count.csv
       count-versions-initials     >> $PRJ_ROOT/../stats/versions-initials-count.csv
-      echo "weights,count"        > $PRJ_ROOT/../stats/dep-weights-count.csv
+      echo "weight,count"         > $PRJ_ROOT/../stats/dep-weights-count.csv
       count-weights               >> $PRJ_ROOT/../stats/dep-weights-count.csv
       echo "count,letter"         > $PRJ_ROOT/../stats/initials-count.csv
       count-initials              >> $PRJ_ROOT/../stats/initials-count.csv
@@ -28,7 +28,7 @@
       - [dep-weights-count.csv](./dep-weights-count.csv): count pkgs by weight
       - [initials-count.csv](./initials-count.csv): count pkgs by initial letter
       - [contributions-count.csv](./contributions-count.csv): count pkgs by owner
-      - [dep-weights.csv](./dep-weights.csv): sum all requirements by pkgs
+      - [dep-weights.csv](./dep-weights.csv): sum all pkgs requirements
       - [pkgs.dot](./pkgs.dot): graphviz dot file for future vizualizaitons
 
       Last update at ${builtins.readFile ../stats/last-update-at.txt}

@@ -7,7 +7,7 @@ Here are some stats of those pkgs.
 - [dep-weights-count.csv](./dep-weights-count.csv): count pkgs by weight
 - [initials-count.csv](./initials-count.csv): count pkgs by initial letter
 - [contributions-count.csv](./contributions-count.csv): count pkgs by owner
-- [dep-weights.csv](./dep-weights.csv): sum all requirements by pkgs
+- [dep-weights.csv](./dep-weights.csv): sum all pkgs requirements
 - [pkgs.dot](./pkgs.dot): graphviz dot file for future vizualizaitons
 
 Last update at 2022-05-07
