@@ -23,6 +23,14 @@
   inputs."ratel-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ratel-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."ratel-v0_2_1".dir   = "v0_2_1";
+  inputs."ratel-v0_2_1".owner = "nim-nix-pkgs";
+  inputs."ratel-v0_2_1".ref   = "master";
+  inputs."ratel-v0_2_1".repo  = "ratel";
+  inputs."ratel-v0_2_1".type  = "github";
+  inputs."ratel-v0_2_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ratel-v0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

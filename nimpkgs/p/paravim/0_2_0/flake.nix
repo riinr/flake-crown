@@ -16,7 +16,7 @@
   inputs."paranim".owner = "nim-nix-pkgs";
   inputs."paranim".ref   = "master";
   inputs."paranim".repo  = "paranim";
-  inputs."paranim".dir   = "0_11_0";
+  inputs."paranim".dir   = "0_12_0";
   inputs."paranim".type  = "github";
   inputs."paranim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."paranim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -32,7 +32,7 @@
   inputs."paratext".owner = "nim-nix-pkgs";
   inputs."paratext".ref   = "master";
   inputs."paratext".repo  = "paratext";
-  inputs."paratext".dir   = "0_12_0";
+  inputs."paratext".dir   = "0_13_0";
   inputs."paratext".type  = "github";
   inputs."paratext".inputs.nixpkgs.follows = "nixpkgs";
   inputs."paratext".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

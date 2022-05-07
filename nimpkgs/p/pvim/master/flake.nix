@@ -16,7 +16,7 @@
   inputs."paravim".owner = "nim-nix-pkgs";
   inputs."paravim".ref   = "master";
   inputs."paravim".repo  = "paravim";
-  inputs."paravim".dir   = "0_18_2";
+  inputs."paravim".dir   = "0_18_3";
   inputs."paravim".type  = "github";
   inputs."paravim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."paravim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

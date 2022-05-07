@@ -119,6 +119,14 @@
   inputs."paravim-0_18_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."paravim-0_18_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."paravim-0_18_3".dir   = "0_18_3";
+  inputs."paravim-0_18_3".owner = "nim-nix-pkgs";
+  inputs."paravim-0_18_3".ref   = "master";
+  inputs."paravim-0_18_3".repo  = "paravim";
+  inputs."paravim-0_18_3".type  = "github";
+  inputs."paravim-0_18_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."paravim-0_18_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."paravim-0_2_0".dir   = "0_2_0";
   inputs."paravim-0_2_0".owner = "nim-nix-pkgs";
   inputs."paravim-0_2_0".ref   = "master";

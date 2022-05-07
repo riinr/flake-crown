@@ -23,6 +23,14 @@
   inputs."xidoc-2020_3_11".inputs.nixpkgs.follows = "nixpkgs";
   inputs."xidoc-2020_3_11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."xidoc-2020_5_3".dir   = "2020_5_3";
+  inputs."xidoc-2020_5_3".owner = "nim-nix-pkgs";
+  inputs."xidoc-2020_5_3".ref   = "master";
+  inputs."xidoc-2020_5_3".repo  = "xidoc";
+  inputs."xidoc-2020_5_3".type  = "github";
+  inputs."xidoc-2020_5_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."xidoc-2020_5_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."xidoc-2021_10_20".dir   = "2021_10_20";
   inputs."xidoc-2021_10_20".owner = "nim-nix-pkgs";
   inputs."xidoc-2021_10_20".ref   = "master";
@@ -206,6 +214,14 @@
   inputs."xidoc-2022_3_22".type  = "github";
   inputs."xidoc-2022_3_22".inputs.nixpkgs.follows = "nixpkgs";
   inputs."xidoc-2022_3_22".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."xidoc-2022_5_3".dir   = "2022_5_3";
+  inputs."xidoc-2022_5_3".owner = "nim-nix-pkgs";
+  inputs."xidoc-2022_5_3".ref   = "master";
+  inputs."xidoc-2022_5_3".repo  = "xidoc";
+  inputs."xidoc-2022_5_3".type  = "github";
+  inputs."xidoc-2022_5_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."xidoc-2022_5_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

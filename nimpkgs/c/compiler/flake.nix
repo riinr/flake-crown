@@ -391,6 +391,14 @@
   inputs."compiler-v1_6_4".inputs.nixpkgs.follows = "nixpkgs";
   inputs."compiler-v1_6_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."compiler-v1_6_6".dir   = "v1_6_6";
+  inputs."compiler-v1_6_6".owner = "nim-nix-pkgs";
+  inputs."compiler-v1_6_6".ref   = "master";
+  inputs."compiler-v1_6_6".repo  = "compiler";
+  inputs."compiler-v1_6_6".type  = "github";
+  inputs."compiler-v1_6_6".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."compiler-v1_6_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;
