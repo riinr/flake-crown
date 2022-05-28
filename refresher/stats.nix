@@ -1,7 +1,7 @@
 {
   files.alias.binary-list=
     ''
-      jq -r 'select(.binDir != "" and .binDir != null or (.bin != null and .bin != []))|.name' nimpkgs/*/*/*/meta.json|uniq
+      jq -r 'select(.binDir != "" and .binDir != null or (.bin != null and .bin != []))|.name' $PRJ_ROOT/../nimpkgs/*/*/*/meta.json|uniq
     '';
   files.alias.save-stats =
     ''
@@ -24,7 +24,7 @@
     '';
   files.text."/stats/README.md"  = 
     ''
-      # NIM PKGS STATS
+      # Nim packages stats
 
       Here are some stats of those pkgs.
 

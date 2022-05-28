@@ -35,7 +35,7 @@ proc link*(links; package; dependencies): void =
   for dependency in dependencies:
     if dependency notin links:
       links[dependency] = Dependencies()
-  links[package] = links.mgetOrPut(package, Dependencies()) + dependencies
+  links[package] = links.getOrDefault(package, Dependencies()) + dependencies
 
 
 proc newLinks*(paths): Links =
