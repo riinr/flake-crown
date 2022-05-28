@@ -292,6 +292,38 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/tags/v1.2.0"
+    },
+    {
+      "name": "nimhttpd",
+      "version": "1.3.0",
+      "author": "Fabio Cevasco & Michael Adams",
+      "desc": "A tiny static file web server. IPv4 & IPv6 supported!",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.4"
+          }
+        }
+      ],
+      "bin": [
+        "nimhttpd"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v1.3.0"
     }
   ],
   "description": "A tiny static file web server.",
@@ -311,6 +343,7 @@
     "refs/tags/v1.1.0",
     "refs/tags/v1.1.1",
     "refs/tags/v1.2.0",
+    "refs/tags/v1.3.0",
     ""
   ],
   "heads": [

@@ -24,7 +24,7 @@
   inputs."awssts".owner = "nim-nix-pkgs";
   inputs."awssts".ref   = "master";
   inputs."awssts".repo  = "awssts";
-  inputs."awssts".dir   = "v1_0_2";
+  inputs."awssts".dir   = "v1_0_3";
   inputs."awssts".type  = "github";
   inputs."awssts".inputs.nixpkgs.follows = "nixpkgs";
   inputs."awssts".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -31,6 +31,14 @@
   inputs."taps-0_2_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."taps-0_2_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."taps-0_2_3".dir   = "0_2_3";
+  inputs."taps-0_2_3".owner = "nim-nix-pkgs";
+  inputs."taps-0_2_3".ref   = "master";
+  inputs."taps-0_2_3".repo  = "taps";
+  inputs."taps-0_2_3".type  = "github";
+  inputs."taps-0_2_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."taps-0_2_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."taps-v0_1_0".dir   = "v0_1_0";
   inputs."taps-v0_1_0".owner = "nim-nix-pkgs";
   inputs."taps-v0_1_0".ref   = "master";

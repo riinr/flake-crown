@@ -16,7 +16,7 @@
   inputs."xam".owner = "nim-nix-pkgs";
   inputs."xam".ref   = "master";
   inputs."xam".repo  = "xam";
-  inputs."xam".dir   = "1_8_0";
+  inputs."xam".dir   = "1_9_0";
   inputs."xam".type  = "github";
   inputs."xam".inputs.nixpkgs.follows = "nixpkgs";
   inputs."xam".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

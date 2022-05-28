@@ -255,6 +255,14 @@
   inputs."allographer-v0_22_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."allographer-v0_22_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."allographer-v0_23_0".dir   = "v0_23_0";
+  inputs."allographer-v0_23_0".owner = "nim-nix-pkgs";
+  inputs."allographer-v0_23_0".ref   = "master";
+  inputs."allographer-v0_23_0".repo  = "allographer";
+  inputs."allographer-v0_23_0".type  = "github";
+  inputs."allographer-v0_23_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."allographer-v0_23_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."allographer-v0_7_0".dir   = "v0_7_0";
   inputs."allographer-v0_7_0".owner = "nim-nix-pkgs";
   inputs."allographer-v0_7_0".ref   = "master";

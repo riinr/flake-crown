@@ -24,7 +24,7 @@
   inputs."pararules".owner = "nim-nix-pkgs";
   inputs."pararules".ref   = "master";
   inputs."pararules".repo  = "pararules";
-  inputs."pararules".dir   = "1_0_1";
+  inputs."pararules".dir   = "1_1_0";
   inputs."pararules".type  = "github";
   inputs."pararules".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pararules".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

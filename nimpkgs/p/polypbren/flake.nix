@@ -47,6 +47,14 @@
   inputs."polypbren-v0_4_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."polypbren-v0_4_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."polypbren-v0_5_0".dir   = "v0_5_0";
+  inputs."polypbren-v0_5_0".owner = "nim-nix-pkgs";
+  inputs."polypbren-v0_5_0".ref   = "master";
+  inputs."polypbren-v0_5_0".repo  = "polypbren";
+  inputs."polypbren-v0_5_0".type  = "github";
+  inputs."polypbren-v0_5_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."polypbren-v0_5_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

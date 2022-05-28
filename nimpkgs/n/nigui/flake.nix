@@ -63,6 +63,14 @@
   inputs."nigui-v0_2_5".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nigui-v0_2_5".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."nigui-v0_2_6".dir   = "v0_2_6";
+  inputs."nigui-v0_2_6".owner = "nim-nix-pkgs";
+  inputs."nigui-v0_2_6".ref   = "master";
+  inputs."nigui-v0_2_6".repo  = "nigui";
+  inputs."nigui-v0_2_6".type  = "github";
+  inputs."nigui-v0_2_6".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nigui-v0_2_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

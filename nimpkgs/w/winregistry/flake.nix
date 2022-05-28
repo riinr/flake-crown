@@ -47,6 +47,14 @@
   inputs."winregistry-v0_2_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."winregistry-v0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."winregistry-v1_0_0".dir   = "v1_0_0";
+  inputs."winregistry-v1_0_0".owner = "nim-nix-pkgs";
+  inputs."winregistry-v1_0_0".ref   = "master";
+  inputs."winregistry-v1_0_0".repo  = "winregistry";
+  inputs."winregistry-v1_0_0".type  = "github";
+  inputs."winregistry-v1_0_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."winregistry-v1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

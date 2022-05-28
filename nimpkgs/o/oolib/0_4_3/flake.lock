@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-oolib-0_4_3": "src-oolib-0_4_3"
+      }
+    },
+    "src-oolib-0_4_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1653178556,
+        "narHash": "sha256-awpUG3/3boj3uJKSs1U1R8fATHCgAtiUM5s8xC+kgBM=",
+        "owner": "Glasses-Neo",
+        "repo": "OOlib",
+        "rev": "50e8c97b91cd0bcccc0958d9f584c43eed1776a5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Glasses-Neo",
+        "ref": "refs/tags/0.4.3",
+        "repo": "OOlib",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

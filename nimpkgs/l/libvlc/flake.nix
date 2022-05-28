@@ -23,6 +23,14 @@
   inputs."libvlc-0_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libvlc-0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."libvlc-0_2".dir   = "0_2";
+  inputs."libvlc-0_2".owner = "nim-nix-pkgs";
+  inputs."libvlc-0_2".ref   = "master";
+  inputs."libvlc-0_2".repo  = "libvlc";
+  inputs."libvlc-0_2".type  = "github";
+  inputs."libvlc-0_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."libvlc-0_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

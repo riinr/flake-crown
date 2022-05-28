@@ -416,7 +416,7 @@
   inputs."nigui".owner = "nim-nix-pkgs";
   inputs."nigui".ref   = "master";
   inputs."nigui".repo  = "nigui";
-  inputs."nigui".dir   = "v0_2_5";
+  inputs."nigui".dir   = "v0_2_6";
   inputs."nigui".type  = "github";
   inputs."nigui".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nigui".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -552,7 +552,7 @@
   inputs."numericalnim".owner = "nim-nix-pkgs";
   inputs."numericalnim".ref   = "master";
   inputs."numericalnim".repo  = "numericalnim";
-  inputs."numericalnim".dir   = "v0_7_1";
+  inputs."numericalnim".dir   = "v0_8_0";
   inputs."numericalnim".type  = "github";
   inputs."numericalnim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."numericalnim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -592,7 +592,7 @@
   inputs."pixie".owner = "nim-nix-pkgs";
   inputs."pixie".ref   = "master";
   inputs."pixie".repo  = "pixie";
-  inputs."pixie".dir   = "4_2_0";
+  inputs."pixie".dir   = "4_3_0";
   inputs."pixie".type  = "github";
   inputs."pixie".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pixie".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -616,7 +616,7 @@
   inputs."polypbren".owner = "nim-nix-pkgs";
   inputs."polypbren".ref   = "master";
   inputs."polypbren".repo  = "polypbren";
-  inputs."polypbren".dir   = "v0_4_3";
+  inputs."polypbren".dir   = "v0_5_0";
   inputs."polypbren".type  = "github";
   inputs."polypbren".inputs.nixpkgs.follows = "nixpkgs";
   inputs."polypbren".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -824,7 +824,7 @@
   inputs."tiny_sqlite".owner = "nim-nix-pkgs";
   inputs."tiny_sqlite".ref   = "master";
   inputs."tiny_sqlite".repo  = "tiny_sqlite";
-  inputs."tiny_sqlite".dir   = "v0_1_2";
+  inputs."tiny_sqlite".dir   = "v0_1_3";
   inputs."tiny_sqlite".type  = "github";
   inputs."tiny_sqlite".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tiny_sqlite".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -896,7 +896,7 @@
   inputs."zippy".owner = "nim-nix-pkgs";
   inputs."zippy".ref   = "master";
   inputs."zippy".repo  = "zippy";
-  inputs."zippy".dir   = "0_9_7";
+  inputs."zippy".dir   = "0_9_8";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

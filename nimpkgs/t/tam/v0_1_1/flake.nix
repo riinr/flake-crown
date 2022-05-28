@@ -32,7 +32,7 @@
   inputs."tiny_sqlite".owner = "nim-nix-pkgs";
   inputs."tiny_sqlite".ref   = "master";
   inputs."tiny_sqlite".repo  = "tiny_sqlite";
-  inputs."tiny_sqlite".dir   = "v0_1_2";
+  inputs."tiny_sqlite".dir   = "v0_1_3";
   inputs."tiny_sqlite".type  = "github";
   inputs."tiny_sqlite".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tiny_sqlite".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -55,6 +55,14 @@
   inputs."csv2dbsrc-v0_2_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."csv2dbsrc-v0_2_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."csv2dbsrc-v0_2_3".dir   = "v0_2_3";
+  inputs."csv2dbsrc-v0_2_3".owner = "nim-nix-pkgs";
+  inputs."csv2dbsrc-v0_2_3".ref   = "master";
+  inputs."csv2dbsrc-v0_2_3".repo  = "csv2dbsrc";
+  inputs."csv2dbsrc-v0_2_3".type  = "github";
+  inputs."csv2dbsrc-v0_2_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."csv2dbsrc-v0_2_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

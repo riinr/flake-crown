@@ -95,6 +95,22 @@
   inputs."runeterra_decks-v0_6_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."runeterra_decks-v0_6_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."runeterra_decks-v0_7_0".dir   = "v0_7_0";
+  inputs."runeterra_decks-v0_7_0".owner = "nim-nix-pkgs";
+  inputs."runeterra_decks-v0_7_0".ref   = "master";
+  inputs."runeterra_decks-v0_7_0".repo  = "runeterra_decks";
+  inputs."runeterra_decks-v0_7_0".type  = "github";
+  inputs."runeterra_decks-v0_7_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."runeterra_decks-v0_7_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."runeterra_decks-v0_7_1".dir   = "v0_7_1";
+  inputs."runeterra_decks-v0_7_1".owner = "nim-nix-pkgs";
+  inputs."runeterra_decks-v0_7_1".ref   = "master";
+  inputs."runeterra_decks-v0_7_1".repo  = "runeterra_decks";
+  inputs."runeterra_decks-v0_7_1".type  = "github";
+  inputs."runeterra_decks-v0_7_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."runeterra_decks-v0_7_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

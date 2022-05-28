@@ -47,6 +47,30 @@
   inputs."siwin-0_5_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."siwin-0_5_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."siwin-0_5_3".dir   = "0_5_3";
+  inputs."siwin-0_5_3".owner = "nim-nix-pkgs";
+  inputs."siwin-0_5_3".ref   = "master";
+  inputs."siwin-0_5_3".repo  = "siwin";
+  inputs."siwin-0_5_3".type  = "github";
+  inputs."siwin-0_5_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."siwin-0_5_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."siwin-0_6".dir   = "0_6";
+  inputs."siwin-0_6".owner = "nim-nix-pkgs";
+  inputs."siwin-0_6".ref   = "master";
+  inputs."siwin-0_6".repo  = "siwin";
+  inputs."siwin-0_6".type  = "github";
+  inputs."siwin-0_6".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."siwin-0_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."siwin-0_6_1".dir   = "0_6_1";
+  inputs."siwin-0_6_1".owner = "nim-nix-pkgs";
+  inputs."siwin-0_6_1".ref   = "master";
+  inputs."siwin-0_6_1".repo  = "siwin";
+  inputs."siwin-0_6_1".type  = "github";
+  inputs."siwin-0_6_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."siwin-0_6_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."siwin-v0_3".dir   = "v0_3";
   inputs."siwin-v0_3".owner = "nim-nix-pkgs";
   inputs."siwin-v0_3".ref   = "master";

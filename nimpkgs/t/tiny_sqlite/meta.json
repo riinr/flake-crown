@@ -58,6 +58,34 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/tags/v0.1.2"
+    },
+    {
+      "name": "tiny_sqlite",
+      "version": "0.1.3",
+      "author": "Oscar Nihlgård",
+      "desc": "A thin SQLite wrapper",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.1.3"
     }
   ],
   "description": "A thin SQLite wrapper with proper type safety",
@@ -65,11 +93,15 @@
   "web": "https://github.com/GULPF/tiny_sqlite",
   "refs": [
     "refs/heads/address-feedback",
+    "refs/heads/ci-windows",
+    "refs/heads/feat/sqlite3-abi",
+    "refs/heads/fix-workflow",
     "refs/heads/master",
     "refs/heads/nim-v1-support",
     "refs/heads/v1-progress",
     "refs/tags/v0.1.1",
     "refs/tags/v0.1.2",
+    "refs/tags/v0.1.3",
     ""
   ],
   "heads": [

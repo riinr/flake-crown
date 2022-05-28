@@ -207,6 +207,14 @@
   inputs."pararules-1_0_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pararules-1_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."pararules-1_1_0".dir   = "1_1_0";
+  inputs."pararules-1_1_0".owner = "nim-nix-pkgs";
+  inputs."pararules-1_1_0".ref   = "master";
+  inputs."pararules-1_1_0".repo  = "pararules";
+  inputs."pararules-1_1_0".type  = "github";
+  inputs."pararules-1_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."pararules-1_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

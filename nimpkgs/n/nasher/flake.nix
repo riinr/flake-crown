@@ -287,6 +287,14 @@
   inputs."nasher-0_17_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nasher-0_17_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."nasher-0_17_4".dir   = "0_17_4";
+  inputs."nasher-0_17_4".owner = "nim-nix-pkgs";
+  inputs."nasher-0_17_4".ref   = "master";
+  inputs."nasher-0_17_4".repo  = "nasher";
+  inputs."nasher-0_17_4".type  = "github";
+  inputs."nasher-0_17_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nasher-0_17_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."nasher-0_2_0".dir   = "0_2_0";
   inputs."nasher-0_2_0".owner = "nim-nix-pkgs";
   inputs."nasher-0_2_0".ref   = "master";

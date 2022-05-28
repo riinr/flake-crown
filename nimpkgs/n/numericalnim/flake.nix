@@ -143,6 +143,14 @@
   inputs."numericalnim-v0_7_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."numericalnim-v0_7_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."numericalnim-v0_8_0".dir   = "v0_8_0";
+  inputs."numericalnim-v0_8_0".owner = "nim-nix-pkgs";
+  inputs."numericalnim-v0_8_0".ref   = "master";
+  inputs."numericalnim-v0_8_0".repo  = "numericalnim";
+  inputs."numericalnim-v0_8_0".type  = "github";
+  inputs."numericalnim-v0_8_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."numericalnim-v0_8_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

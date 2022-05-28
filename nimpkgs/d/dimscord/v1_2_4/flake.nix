@@ -16,7 +16,7 @@
   inputs."zippy".owner = "nim-nix-pkgs";
   inputs."zippy".ref   = "master";
   inputs."zippy".repo  = "zippy";
-  inputs."zippy".dir   = "0_9_7";
+  inputs."zippy".dir   = "0_9_8";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -48,7 +48,7 @@
   inputs."flatty".owner = "nim-nix-pkgs";
   inputs."flatty".ref   = "master";
   inputs."flatty".repo  = "flatty";
-  inputs."flatty".dir   = "0_2_4";
+  inputs."flatty".dir   = "0_3_3";
   inputs."flatty".type  = "github";
   inputs."flatty".inputs.nixpkgs.follows = "nixpkgs";
   inputs."flatty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

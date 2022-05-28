@@ -32,7 +32,7 @@
   inputs."nigui".owner = "nim-nix-pkgs";
   inputs."nigui".ref   = "master";
   inputs."nigui".repo  = "nigui";
-  inputs."nigui".dir   = "v0_2_5";
+  inputs."nigui".dir   = "v0_2_6";
   inputs."nigui".type  = "github";
   inputs."nigui".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nigui".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

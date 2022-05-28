@@ -175,6 +175,14 @@
   inputs."anonimongo-v0_5_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."anonimongo-v0_5_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."anonimongo-v0_5_4".dir   = "v0_5_4";
+  inputs."anonimongo-v0_5_4".owner = "nim-nix-pkgs";
+  inputs."anonimongo-v0_5_4".ref   = "master";
+  inputs."anonimongo-v0_5_4".repo  = "anonimongo";
+  inputs."anonimongo-v0_5_4".type  = "github";
+  inputs."anonimongo-v0_5_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."anonimongo-v0_5_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

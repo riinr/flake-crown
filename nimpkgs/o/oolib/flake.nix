@@ -71,6 +71,30 @@
   inputs."oolib-0_4_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."oolib-0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."oolib-0_4_1".dir   = "0_4_1";
+  inputs."oolib-0_4_1".owner = "nim-nix-pkgs";
+  inputs."oolib-0_4_1".ref   = "master";
+  inputs."oolib-0_4_1".repo  = "oolib";
+  inputs."oolib-0_4_1".type  = "github";
+  inputs."oolib-0_4_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."oolib-0_4_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."oolib-0_4_2".dir   = "0_4_2";
+  inputs."oolib-0_4_2".owner = "nim-nix-pkgs";
+  inputs."oolib-0_4_2".ref   = "master";
+  inputs."oolib-0_4_2".repo  = "oolib";
+  inputs."oolib-0_4_2".type  = "github";
+  inputs."oolib-0_4_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."oolib-0_4_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."oolib-0_4_3".dir   = "0_4_3";
+  inputs."oolib-0_4_3".owner = "nim-nix-pkgs";
+  inputs."oolib-0_4_3".ref   = "master";
+  inputs."oolib-0_4_3".repo  = "oolib";
+  inputs."oolib-0_4_3".type  = "github";
+  inputs."oolib-0_4_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."oolib-0_4_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

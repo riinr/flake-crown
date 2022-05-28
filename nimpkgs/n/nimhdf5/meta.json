@@ -1265,6 +1265,47 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/tags/v0.4.6"
+    },
+    {
+      "name": "nimhdf5",
+      "version": "0.4.7",
+      "author": "Sebastian Schmidt",
+      "desc": "Bindings for the HDF5 data format C library",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "c_headers"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim~"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "https://github.com/vindaar/seqmath",
+          "str": ">= 0.1.12",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.12"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.7"
     }
   ],
   "description": "Bindings for the HDF5 data format C library",
@@ -1276,6 +1317,7 @@
     "refs/heads/csizeFixes",
     "refs/heads/csizeIsUnsigned",
     "refs/heads/fixCopyAttributes",
+    "refs/heads/fixDelete",
     "refs/heads/fixDestroyFixFailOpen",
     "refs/heads/fixDestroyHooks",
     "refs/heads/fixHighLevelExample",
@@ -1290,6 +1332,7 @@
     "refs/heads/makeObjsRef",
     "refs/heads/master",
     "refs/heads/miscFixes",
+    "refs/heads/overwriteWrite",
     "refs/heads/push2.15",
     "refs/heads/readAsWholeDset",
     "refs/heads/refactorMisc",
@@ -1328,6 +1371,7 @@
     "refs/tags/v0.4.4",
     "refs/tags/v0.4.5",
     "refs/tags/v0.4.6",
+    "refs/tags/v0.4.7",
     ""
   ],
   "heads": [
