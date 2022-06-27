@@ -1,0 +1,179 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "ftd2xx-0_0_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ftd2xx-0_0_1": "src-ftd2xx-0_0_1"
+      },
+      "locked": {
+        "dir": "0_0_1",
+        "lastModified": 1653696344,
+        "narHash": "sha256-U1t84YMc37eZcP72832r6RhKlqgWUijyEGmHhWM2yzg=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ftd2xx",
+        "rev": "54e1d07b58e40887dd4b037adbc8c36662a5b7a6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_0_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ftd2xx",
+        "type": "github"
+      }
+    },
+    "ftd2xx-0_0_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ftd2xx-0_0_2": "src-ftd2xx-0_0_2"
+      },
+      "locked": {
+        "dir": "0_0_2",
+        "lastModified": 1653696344,
+        "narHash": "sha256-U1t84YMc37eZcP72832r6RhKlqgWUijyEGmHhWM2yzg=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ftd2xx",
+        "rev": "54e1d07b58e40887dd4b037adbc8c36662a5b7a6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_0_2",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ftd2xx",
+        "type": "github"
+      }
+    },
+    "ftd2xx-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ftd2xx-main": "src-ftd2xx-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1653696344,
+        "narHash": "sha256-U1t84YMc37eZcP72832r6RhKlqgWUijyEGmHhWM2yzg=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ftd2xx",
+        "rev": "54e1d07b58e40887dd4b037adbc8c36662a5b7a6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ftd2xx",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "ftd2xx-0_0_1": "ftd2xx-0_0_1",
+        "ftd2xx-0_0_2": "ftd2xx-0_0_2",
+        "ftd2xx-main": "ftd2xx-main",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-ftd2xx-0_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1647615003,
+        "narHash": "sha256-DvUh5uIsqBFSKPdtO8Cp36tQ5LBxLltlm8Z80SqO1vI=",
+        "owner": "leeooox",
+        "repo": "ftd2xx",
+        "rev": "532d5f142b56bd213c9847130bf84ab3b21c2512",
+        "type": "github"
+      },
+      "original": {
+        "owner": "leeooox",
+        "ref": "refs/tags/0.0.1",
+        "repo": "ftd2xx",
+        "type": "github"
+      }
+    },
+    "src-ftd2xx-0_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1647615003,
+        "narHash": "sha256-DvUh5uIsqBFSKPdtO8Cp36tQ5LBxLltlm8Z80SqO1vI=",
+        "owner": "leeooox",
+        "repo": "ftd2xx",
+        "rev": "532d5f142b56bd213c9847130bf84ab3b21c2512",
+        "type": "github"
+      },
+      "original": {
+        "owner": "leeooox",
+        "ref": "refs/tags/0.0.2",
+        "repo": "ftd2xx",
+        "type": "github"
+      }
+    },
+    "src-ftd2xx-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1647615666,
+        "narHash": "sha256-XS3fjvUOH/rx2ivYfKDZ+fN4idai79u0lQX1FB7xnr0=",
+        "owner": "leeooox",
+        "repo": "ftd2xx",
+        "rev": "6756bfe5868a64aab83e266e64990619c0231104",
+        "type": "github"
+      },
+      "original": {
+        "owner": "leeooox",
+        "ref": "refs/heads/main",
+        "repo": "ftd2xx",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

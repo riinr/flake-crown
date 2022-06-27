@@ -1,0 +1,56 @@
+{
+  "name": "fidgetty",
+  "url": "https://github.com/elcritch/fidgets",
+  "method": "git",
+  "tags": [],
+  "description": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+  "license": "MIT",
+  "web": "https://github.com/elcritch/fidgets",
+  "refs": [
+    "refs/heads/exper-text-boxes",
+    "refs/heads/exper-textbox-alt-v3",
+    "refs/heads/exper-textinput",
+    "refs/heads/exper-theme",
+    "refs/heads/exper-themed-widgets",
+    "refs/heads/main",
+    ""
+  ],
+  "heads": [
+    {
+      "name": "fidgetty",
+      "version": "0.1.0",
+      "author": "Jaremy Creechley",
+      "desc": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "https://github.com/elcritch/fidget.git",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/main"
+    }
+  ]
+}
