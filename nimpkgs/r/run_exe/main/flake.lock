@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimpy": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimpy-master": "src-nimpy-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648163379,
+        "narHash": "sha256-O9wuU0UDWdkPMKLUoGV5fkq9iDUFDDe2ogY3F1Zv+VE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimpy",
+        "rev": "92e7e9292f56014c9d7cb3f55fceaab0f53dac0d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimpy",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimpy": "nimpy",
+        "nixpkgs": "nixpkgs",
+        "src-run_exe-main": "src-run_exe-main"
+      }
+    },
+    "src-nimpy-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644942366,
+        "narHash": "sha256-9aOqk1hkt5ggb6cbGhwY19ncdN7u7J6NizqPLLjUcgQ=",
+        "owner": "yglukhov",
+        "repo": "nimpy",
+        "rev": "1963283148d01f46ac789a83412afbb5d375cfad",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "nimpy",
+        "type": "github"
+      }
+    },
+    "src-run_exe-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1648262451,
+        "narHash": "sha256-KfWr2eUE1uUuw9JsZ4JP66mga57xWdjdzHBpk0U/+G4=",
+        "owner": "V0idMatr1x",
+        "repo": "run_exe",
+        "rev": "6daf872cbcaf8afc57a05b2da79ff52ec0252dce",
+        "type": "github"
+      },
+      "original": {
+        "owner": "V0idMatr1x",
+        "ref": "refs/heads/main",
+        "repo": "run_exe",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
