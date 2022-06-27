@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "limiter-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-limiter-main": "src-limiter-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1653696463,
+        "narHash": "sha256-TKZ/44TxPnALTGIwW7SFuCC8gwi3wkPP5tMb2eOEOhA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "limiter",
+        "rev": "ec756de07789b83ad0ed7f2faf220dfe1e399d69",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "limiter",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "limiter-main": "limiter-main",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-limiter-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1652544896,
+        "narHash": "sha256-yHZvLV32MEGg+Q24O7WiYPQiAua9IbQi254SYguvNFM=",
+        "owner": "supranim",
+        "repo": "limiter",
+        "rev": "2ecccd80a0d4c7df20e1aff2fb53603914e409df",
+        "type": "github"
+      },
+      "original": {
+        "owner": "supranim",
+        "ref": "refs/heads/main",
+        "repo": "limiter",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
