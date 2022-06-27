@@ -1,9 +1,16 @@
+{ nimble-src, ... }:
+{ pkgs, ...}:
+
 let 
   GLOB        = "$PRJ_ROOT/../nimpkgs";
   GLOB_CACHES = "*.{json,lock}";
   GLOB_HEAD   = "${GLOB}/*/*/[a-zA-Z_][a-zA-Z_]*";
   GLOB_PROJS  = "${GLOB}/*/*";
   GLOB_TAG    = "${GLOB}/*/*/[0-9vV][0-9_]*";
+  nimble      = pkgs.runCommand "nimblePKG" {} ''
+    mkdir -p $out/
+    cp -r ${nimble-src}/src/nimblepkg $out/nimblepkg
+  '';
 in
 {
   imports = [ ./packages_other.nix ./alias_other.nix ./nix_deps.nix ./stats.nix ];
@@ -100,7 +107,7 @@ in
     '';
   files.nim.depWeight   = builtins.readFile ./depWeight.nim;
   files.nim.outprofiler = builtins.readFile ./outprofiler.nim;
-  files.nim.updateFlake = builtins.readFile ./updateFlake.nim;
+  files.nim.updateFlake = { src = builtins.readFile ./updateFlake.nim; deps = [ nimble ]; };
   files.nim.updateLock  = builtins.readFile ./updateLock.nim;
   files.nim.updateMeta  = builtins.readFile ./updateMeta.nim;
   files.nim.depDots     = builtins.readFile ./depDots.nim;

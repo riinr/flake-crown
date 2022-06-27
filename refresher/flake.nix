@@ -1,18 +1,10 @@
 {
-  description            = "Nimble packages updater";
-  inputs.dsf.url         = "github:cruel-intentions/devshell-files";
-  inputs.nimblesrc.url   = "github:nim-lang/nimble";
-  inputs.nimblesrc.flake = false;
+  description             = "Nimble packages updater";
+  inputs.dsf.url          = "github:cruel-intentions/devshell-files";
+  inputs.nimble-src.url   = "github:nim-lang/nimble";
+  inputs.nimble-src.flake = false;
 
-  outputs = { self, dsf, nimblesrc }: dsf.lib.mkShell [
-    ./project.nix
-    { 
-      env = [ 
-        { 
-          name  = "NIMBLESRC_PATH";
-          value = "${nimblesrc.defaultPackage.x86_64-linux}";
-        }
-      ];
-    }
+  outputs = { self, dsf, nimble-src }: dsf.lib.mkShell [
+    ( import ./project.nix { inherit nimble-src; } )
   ];
 }
