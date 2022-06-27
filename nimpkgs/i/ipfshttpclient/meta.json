@@ -1,0 +1,59 @@
+{
+  "name": "ipfshttpclient",
+  "url": "https://github.com/xflywind/ipfshttpclient",
+  "method": "git",
+  "tags": [],
+  "description": "ipfs http client",
+  "license": "Apache-2.0",
+  "web": "https://github.com/xflywind/ipfshttpclient",
+  "refs": [
+    "refs/heads/main",
+    ""
+  ],
+  "heads": [
+    {
+      "name": "ipfshttpclient",
+      "version": "0.1.0",
+      "author": "flywind",
+      "desc": "ipfs http client",
+      "license": "Apache-2.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "libcurl",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.7.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/main"
+    }
+  ]
+}
