@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "pronimgress-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-pronimgress-master": "src-pronimgress-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1653696694,
+        "narHash": "sha256-4DvUtc+de+wHqDCyB5a1zvdc6kLqxqLIRmiDPzTRlyM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "pronimgress",
+        "rev": "ed88aad3b49ec3301e793ecd6a9c5c9ef65257cd",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "pronimgress",
+        "type": "github"
+      }
+    },
+    "pronimgress-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-pronimgress-v0_1_0": "src-pronimgress-v0_1_0"
+      },
+      "locked": {
+        "dir": "v0_1_0",
+        "lastModified": 1653696694,
+        "narHash": "sha256-4DvUtc+de+wHqDCyB5a1zvdc6kLqxqLIRmiDPzTRlyM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "pronimgress",
+        "rev": "ed88aad3b49ec3301e793ecd6a9c5c9ef65257cd",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "pronimgress",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "pronimgress-master": "pronimgress-master",
+        "pronimgress-v0_1_0": "pronimgress-v0_1_0"
+      }
+    },
+    "src-pronimgress-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1648485826,
+        "narHash": "sha256-QwWBRACdHo3/v0yMu3z1AadLP0BNp6D3jLGFEHbcsyA=",
+        "owner": "bichanna",
+        "repo": "pronimgress",
+        "rev": "17ca09446ef059f0b51db0e235bee8b4e429d30a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bichanna",
+        "ref": "refs/heads/master",
+        "repo": "pronimgress",
+        "type": "github"
+      }
+    },
+    "src-pronimgress-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1648229740,
+        "narHash": "sha256-2Gj2tU81i1lByZepwPJL4unw/BHtyFi40UMThhY0QC4=",
+        "owner": "bichanna",
+        "repo": "pronimgress",
+        "rev": "ee615739f40c78dc3bc9f5f48d05430f34590f34",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bichanna",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "pronimgress",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
