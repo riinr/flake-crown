@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "useradd-0_1_0": "useradd-0_1_0",
+        "useradd-master": "useradd-master"
+      }
+    },
+    "src-useradd-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1649940163,
+        "narHash": "sha256-JyIj30FXbbknu7HtMpnTuElOYVZ5FkeRviqQE2ZHBw4=",
+        "owner": "theAkito",
+        "repo": "nim-useradd",
+        "rev": "37dfc5db79376ff3381ee2fe99eacf993195503a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "theAkito",
+        "ref": "refs/tags/0.1.0",
+        "repo": "nim-useradd",
+        "type": "github"
+      }
+    },
+    "src-useradd-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1650305626,
+        "narHash": "sha256-VyK6uSNRokwBfJaoGEc0jXpqk+0m4hrDeo7IoUzUYxk=",
+        "owner": "theAkito",
+        "repo": "nim-useradd",
+        "rev": "3e7718c1da1a4e4ee49ab3d3861774e8ca03870f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "theAkito",
+        "ref": "refs/heads/master",
+        "repo": "nim-useradd",
+        "type": "github"
+      }
+    },
+    "useradd-0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-useradd-0_1_0": "src-useradd-0_1_0"
+      },
+      "locked": {
+        "dir": "0_1_0",
+        "lastModified": 1653696896,
+        "narHash": "sha256-jwKWGP3CjrAkEumdxeMrwWh/JOJ37Geu4XnexJHafVk=",
+        "owner": "nim-nix-pkgs",
+        "repo": "useradd",
+        "rev": "b31e62d7f1bcc4af1089b9942c7a05c586d1ad5a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "useradd",
+        "type": "github"
+      }
+    },
+    "useradd-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-useradd-master": "src-useradd-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1653696896,
+        "narHash": "sha256-jwKWGP3CjrAkEumdxeMrwWh/JOJ37Geu4XnexJHafVk=",
+        "owner": "nim-nix-pkgs",
+        "repo": "useradd",
+        "rev": "b31e62d7f1bcc4af1089b9942c7a05c586d1ad5a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "useradd",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

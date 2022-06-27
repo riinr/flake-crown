@@ -1,0 +1,136 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nigui": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "uspokoysa-main",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "uspokoysa-main",
+          "nixpkgs"
+        ],
+        "src-nigui-v0_2_5": "src-nigui-v0_2_5"
+      },
+      "locked": {
+        "dir": "v0_2_5",
+        "lastModified": 1653696540,
+        "narHash": "sha256-X+7eVyNY+zk/iZvz5m8/eOlCTYdA+CUWjBBmaJHumsI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nigui",
+        "rev": "4dee59f1915533162c8e667f3b299515813e1082",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_2_5",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nigui",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "uspokoysa-main": "uspokoysa-main"
+      }
+    },
+    "src-nigui-v0_2_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1611959604,
+        "narHash": "sha256-GqFHHEVIfF8t7I3v4lN2YOqSwvgFYCjyfq2/E2hHKRM=",
+        "owner": "trustable-code",
+        "repo": "NiGui",
+        "rev": "3150d8ea213cdae3865980c3dc30f3c3ffb820ca",
+        "type": "github"
+      },
+      "original": {
+        "owner": "trustable-code",
+        "ref": "refs/tags/v0.2.5",
+        "repo": "NiGui",
+        "type": "github"
+      }
+    },
+    "src-uspokoysa-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1651855066,
+        "narHash": "sha256-rjtVnawV6RGi+iTSRzXsp5dFuWFQ0kRLw/qY9uHowno=",
+        "owner": "ioplker",
+        "repo": "uspokoysa",
+        "rev": "57be76666f4e40b98e0d29d6dc3eef9989063d3c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ioplker",
+        "ref": "refs/heads/main",
+        "repo": "uspokoysa",
+        "type": "github"
+      }
+    },
+    "uspokoysa-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nigui": "nigui",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-uspokoysa-main": "src-uspokoysa-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1653699646,
+        "narHash": "sha256-pdiVCMRpQFmkhBq3zpR06vfyyKiCgplWmuWXlxAMO5U=",
+        "owner": "nim-nix-pkgs",
+        "repo": "uspokoysa",
+        "rev": "482a03a99da34b755f4e5e95762ae342f31ea291",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "uspokoysa",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
