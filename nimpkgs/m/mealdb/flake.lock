@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "mealdb-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-mealdb-main": "src-mealdb-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1653696495,
+        "narHash": "sha256-QLQsoaEk89tFDQC2u/juBsi2HyNd7LBEOo0+V2OqG5o=",
+        "owner": "nim-nix-pkgs",
+        "repo": "mealdb",
+        "rev": "2a6ed7ed5ac9359e566f765262fb495b1b1a7c43",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "mealdb",
+        "type": "github"
+      }
+    },
+    "mealdb-v1_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-mealdb-v1_0_0": "src-mealdb-v1_0_0"
+      },
+      "locked": {
+        "dir": "v1_0_0",
+        "lastModified": 1653696495,
+        "narHash": "sha256-QLQsoaEk89tFDQC2u/juBsi2HyNd7LBEOo0+V2OqG5o=",
+        "owner": "nim-nix-pkgs",
+        "repo": "mealdb",
+        "rev": "2a6ed7ed5ac9359e566f765262fb495b1b1a7c43",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_0_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "mealdb",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "mealdb-main": "mealdb-main",
+        "mealdb-v1_0_0": "mealdb-v1_0_0",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-mealdb-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1651333183,
+        "narHash": "sha256-7hDrVI6PB7XTabykSHx/Y4rGYTYIiObBWLYdUOZdfyY=",
+        "owner": "thechampagne",
+        "repo": "mealdb-nim",
+        "rev": "de764a835683bf71bef7d5a19e11111b6126bbb6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thechampagne",
+        "ref": "refs/heads/main",
+        "repo": "mealdb-nim",
+        "type": "github"
+      }
+    },
+    "src-mealdb-v1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1651333183,
+        "narHash": "sha256-7hDrVI6PB7XTabykSHx/Y4rGYTYIiObBWLYdUOZdfyY=",
+        "owner": "thechampagne",
+        "repo": "mealdb-nim",
+        "rev": "de764a835683bf71bef7d5a19e11111b6126bbb6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thechampagne",
+        "ref": "refs/tags/v1.0.0",
+        "repo": "mealdb-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
