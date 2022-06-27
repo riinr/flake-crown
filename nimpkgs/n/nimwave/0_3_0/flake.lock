@@ -1,0 +1,152 @@
+{
+  "nodes": {
+    "ansiutils": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ansiutils-0_1_0": "src-ansiutils-0_1_0"
+      },
+      "locked": {
+        "dir": "0_1_0",
+        "lastModified": 1653696169,
+        "narHash": "sha256-OgeupHubg65Kf+0VNZIaCVXPM7YYOJV0Yzj/SCb64nw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ansiutils",
+        "rev": "359c157ca8d1c235f69608788beff3fe1c4d5a04",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ansiutils",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "illwave": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-illwave-0_3_0": "src-illwave-0_3_0"
+      },
+      "locked": {
+        "dir": "0_3_0",
+        "lastModified": 1653696402,
+        "narHash": "sha256-Vx8K7fArx4RV8+cKOfhIHeefh9kKspJqt9I8xGd6ACM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "illwave",
+        "rev": "2ad39f79ed9c0f4e1f644e2dcc027386d5f46548",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_3_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "illwave",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "ansiutils": "ansiutils",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "illwave": "illwave",
+        "nixpkgs": "nixpkgs",
+        "src-nimwave-0_3_0": "src-nimwave-0_3_0"
+      }
+    },
+    "src-ansiutils-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1651844094,
+        "narHash": "sha256-kRmAOV0bgWCUE0Bam8ZOJWyx4ALk6oh18jgokGwtOjk=",
+        "owner": "ansiwave",
+        "repo": "ansiutils",
+        "rev": "fc681228ecb51d82cfb65bb2c7fe47d90823321b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ansiwave",
+        "ref": "refs/tags/0.1.0",
+        "repo": "ansiutils",
+        "type": "github"
+      }
+    },
+    "src-illwave-0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1653570378,
+        "narHash": "sha256-K8VwN9tUHIMUeTl4UUvKD6pwbHP4xdqYu0RDuekU1zY=",
+        "owner": "ansiwave",
+        "repo": "illwave",
+        "rev": "f878f55bb0c1f36e98adfc416fc3e6568033638b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ansiwave",
+        "ref": "refs/tags/0.3.0",
+        "repo": "illwave",
+        "type": "github"
+      }
+    },
+    "src-nimwave-0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1653663231,
+        "narHash": "sha256-ijT3MAA1KdqY0t5Gg0KbtZu7ZT3CeSIHqW0AEe+Fd60=",
+        "owner": "ansiwave",
+        "repo": "nimwave",
+        "rev": "b50ff793d559b1c6598817dd0d69933ae5043897",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ansiwave",
+        "ref": "refs/tags/0.3.0",
+        "repo": "nimwave",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

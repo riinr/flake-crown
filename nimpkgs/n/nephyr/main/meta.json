@@ -1,0 +1,60 @@
+{
+  "name": "nephyr",
+  "version": "0.3.0",
+  "author": "Jaremy J. Creechley",
+  "desc": "Nim wrapper for Zephyr RTOS",
+  "license": "Apache-2.0",
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [],
+  "installFiles": [],
+  "installExt": [],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 1.6.5",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.6.5"
+      }
+    },
+    {
+      "name": "msgpack4nim",
+      "str": ">= 0.3.1",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.3.1"
+      }
+    },
+    {
+      "name": "stew",
+      "str": ">= 0.1.0",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.1.0"
+      }
+    },
+    {
+      "name": "https://github.com/EmbeddedNim/mcu_utils",
+      "str": "#head",
+      "ver": {
+        "kind": "verSpecial",
+        "spe": "#head"
+      }
+    },
+    {
+      "name": "https://github.com/EmbeddedNim/fastrpc",
+      "str": "#head",
+      "ver": {
+        "kind": "verSpecial",
+        "spe": "#head"
+      }
+    }
+  ],
+  "bin": [],
+  "binDir": "",
+  "srcDir": "src",
+  "backend": "c",
+  "ref": "refs/heads/main"
+}

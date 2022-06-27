@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "eminim": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-eminim-v2_8_2": "src-eminim-v2_8_2"
+      },
+      "locked": {
+        "dir": "v2_8_2",
+        "lastModified": 1653701836,
+        "narHash": "sha256-zOEk1N9xXkMoup+RMeI2XU29Og/NtTiSW+vqTcTLz7s=",
+        "owner": "nim-nix-pkgs",
+        "repo": "eminim",
+        "rev": "114ed49e6f07a99155f0605904d9762b2e74a3a1",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v2_8_2",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "eminim",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "eminim": "eminim",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-naylib-main": "src-naylib-main"
+      }
+    },
+    "src-eminim-v2_8_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1607864716,
+        "narHash": "sha256-3ph3U+OquUzmaGoPP4rHBGDHLvf7kAzHQjdv1m6cI68=",
+        "owner": "planetis-m",
+        "repo": "eminim",
+        "rev": "86d93daa6e4ee773838d968542e5d9614f011c36",
+        "type": "github"
+      },
+      "original": {
+        "owner": "planetis-m",
+        "ref": "refs/tags/v2.8.2",
+        "repo": "eminim",
+        "type": "github"
+      }
+    },
+    "src-naylib-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1653053153,
+        "narHash": "sha256-6fy4vJz3lB+3djXR26G8M0ajGoapTs/5hAJIwzH/Ibk=",
+        "owner": "planetis-m",
+        "repo": "naylib",
+        "rev": "0e86825bff50259c1627b70edb3869f7d6819435",
+        "type": "github"
+      },
+      "original": {
+        "owner": "planetis-m",
+        "ref": "refs/heads/main",
+        "repo": "naylib",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

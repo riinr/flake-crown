@@ -1,0 +1,230 @@
+{
+  "nodes": {
+    "dbg": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimsocks-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimsocks-master",
+          "nixpkgs"
+        ],
+        "src-dbg-master": "src-dbg-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1653696280,
+        "narHash": "sha256-iBFceUdDELAs2srDu4g3FfG3zGmev16PN0Ten15QTwc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "dbg",
+        "rev": "b19775c1795c465c8dd1c4fc48f1317cd8cf557a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "dbg",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "github-enthus1ast-isprivateip": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimsocks-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimsocks-master",
+          "nixpkgs"
+        ],
+        "src-isPrivateIp-master": "src-isPrivateIp-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1652367125,
+        "narHash": "sha256-ImW15EjPNGflCfC3yPYpB5D/jJ81q9B/OhauH6ZtiYo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-enthus1ast-isprivateip",
+        "rev": "64cf4407d382735f98ffd95bbbceec070ed69c3b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-enthus1ast-isprivateip",
+        "type": "github"
+      }
+    },
+    "nimsha2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimsocks-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimsocks-master",
+          "nixpkgs"
+        ],
+        "src-nimSHA2-master": "src-nimSHA2-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1653696595,
+        "narHash": "sha256-TZUf3kvli5gRmRwrQLuUb3QRjUoTnqoASLAjOi8740c=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimsha2",
+        "rev": "72fbccdc7fd9433636ecacbc131e26907c11d031",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimsha2",
+        "type": "github"
+      }
+    },
+    "nimsocks-master": {
+      "inputs": {
+        "dbg": "dbg",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "github-enthus1ast-isprivateip": "github-enthus1ast-isprivateip",
+        "nimsha2": "nimsha2",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimSocks-master": "src-nimSocks-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1653700377,
+        "narHash": "sha256-6rhXEGj/oA9idnX5WAt4feUNG8RBCacXbsfaYuNKGhw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimsocks",
+        "rev": "bc7be8c6f2d945f3c56a6aa447257e97af941672",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimsocks",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimsocks-master": "nimsocks-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-dbg-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1582402819,
+        "narHash": "sha256-J6nJaW4vsHI7kJhiOI09YXSIEG47Sx98mhgHHsJy2uw=",
+        "owner": "enthus1ast",
+        "repo": "nimDbg",
+        "rev": "5a3bfc3786451950270e270e75eb7b6b09a21350",
+        "type": "github"
+      },
+      "original": {
+        "owner": "enthus1ast",
+        "ref": "refs/heads/master",
+        "repo": "nimDbg",
+        "type": "github"
+      }
+    },
+    "src-isPrivateIp-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603982523,
+        "narHash": "sha256-bK1+CbH6JfbWSPSvKi5clGOXeXYjNQh2CFYwPBvHC1E=",
+        "owner": "enthus1ast",
+        "repo": "nimIsPrivateIp",
+        "rev": "3b4228ce3492410dbac9998e755eb51f8171dc9b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "enthus1ast",
+        "ref": "refs/heads/master",
+        "repo": "nimIsPrivateIp",
+        "type": "github"
+      }
+    },
+    "src-nimSHA2-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1631171307,
+        "narHash": "sha256-Wqb3mQ7638UOTze71mf6WMyGiw9qTwhbJiGGb+9OR2k=",
+        "owner": "jangko",
+        "repo": "nimSHA2",
+        "rev": "b8f666069dff1ed0c5142dd1ca692f0e71434716",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jangko",
+        "ref": "refs/heads/master",
+        "repo": "nimSHA2",
+        "type": "github"
+      }
+    },
+    "src-nimSocks-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1636809908,
+        "narHash": "sha256-i15HFloS7MLjVU3wcjixObwCW58UL8LV43E2+wJ04xw=",
+        "owner": "enthus1ast",
+        "repo": "nimSocks",
+        "rev": "77f95b52083a448119c3c96d4fe7818363fdcaff",
+        "type": "github"
+      },
+      "original": {
+        "owner": "enthus1ast",
+        "ref": "refs/heads/master",
+        "repo": "nimSocks",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
