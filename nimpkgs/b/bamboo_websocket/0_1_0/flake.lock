@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-bamboo_websocket-0_1_0": "src-bamboo_websocket-0_1_0"
+      }
+    },
+    "src-bamboo_websocket-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1650945229,
+        "narHash": "sha256-E4m/vMzWW9Q/mLM8y9tBgX6Jtui1jcBq2Bn5C9tJt5c=",
+        "owner": "obemaru4012",
+        "repo": "bamboo_websocket",
+        "rev": "4ca10a8c0f5c220c4f6fcb405e3923b7ee54e271",
+        "type": "github"
+      },
+      "original": {
+        "owner": "obemaru4012",
+        "ref": "refs/tags/0.1.0",
+        "repo": "bamboo_websocket",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
