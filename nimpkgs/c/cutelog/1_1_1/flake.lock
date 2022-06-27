@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-cutelog-1_1_1": "src-cutelog-1_1_1"
+      }
+    },
+    "src-cutelog-1_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1575501980,
+        "narHash": "sha256-ykNk79DeixkS23H7SSNgHVcOscceVvJPZ48A9FOSrWk=",
+        "owner": "disruptek",
+        "repo": "cutelog",
+        "rev": "e3243f6ff2d05290f9c6f1e3d3f1c725091d60ab",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/1.1.1",
+        "repo": "cutelog",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

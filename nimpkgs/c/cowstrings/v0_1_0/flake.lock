@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-cowstrings-v0_1_0": "src-cowstrings-v0_1_0"
+      }
+    },
+    "src-cowstrings-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1626946124,
+        "narHash": "sha256-5OpUPeY8dtNbP/NZiXkkyFvz1LlqJ8Wr25WwNO/03oM=",
+        "owner": "planetis-m",
+        "repo": "cowstrings",
+        "rev": "558551444b20102ca7a0c8bbc3f661b479af8525",
+        "type": "github"
+      },
+      "original": {
+        "owner": "planetis-m",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "cowstrings",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
