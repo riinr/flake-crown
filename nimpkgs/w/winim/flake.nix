@@ -63,6 +63,14 @@
   inputs."winim-3_8_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."winim-3_8_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."winim-3_8_1".dir   = "3_8_1";
+  inputs."winim-3_8_1".owner = "nim-nix-pkgs";
+  inputs."winim-3_8_1".ref   = "master";
+  inputs."winim-3_8_1".repo  = "winim";
+  inputs."winim-3_8_1".type  = "github";
+  inputs."winim-3_8_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."winim-3_8_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

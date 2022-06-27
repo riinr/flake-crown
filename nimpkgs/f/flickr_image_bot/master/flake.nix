@@ -16,7 +16,7 @@
   inputs."twitter".owner = "nim-nix-pkgs";
   inputs."twitter".ref   = "master";
   inputs."twitter".repo  = "twitter";
-  inputs."twitter".dir   = "1_0_1";
+  inputs."twitter".dir   = "2_0_0";
   inputs."twitter".type  = "github";
   inputs."twitter".inputs.nixpkgs.follows = "nixpkgs";
   inputs."twitter".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

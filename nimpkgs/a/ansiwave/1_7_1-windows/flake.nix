@@ -88,7 +88,7 @@
   inputs."illwave".owner = "nim-nix-pkgs";
   inputs."illwave".ref   = "master";
   inputs."illwave".repo  = "illwave";
-  inputs."illwave".dir   = "0_3_0";
+  inputs."illwave".dir   = "0_5_0";
   inputs."illwave".type  = "github";
   inputs."illwave".inputs.nixpkgs.follows = "nixpkgs";
   inputs."illwave".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -96,7 +96,7 @@
   inputs."nimwave".owner = "nim-nix-pkgs";
   inputs."nimwave".ref   = "master";
   inputs."nimwave".repo  = "nimwave";
-  inputs."nimwave".dir   = "0_3_0";
+  inputs."nimwave".dir   = "0_8_0";
   inputs."nimwave".type  = "github";
   inputs."nimwave".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimwave".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

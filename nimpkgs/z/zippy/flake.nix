@@ -47,6 +47,30 @@
   inputs."zippy-0_1_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy-0_1_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."zippy-0_10_0".dir   = "0_10_0";
+  inputs."zippy-0_10_0".owner = "nim-nix-pkgs";
+  inputs."zippy-0_10_0".ref   = "master";
+  inputs."zippy-0_10_0".repo  = "zippy";
+  inputs."zippy-0_10_0".type  = "github";
+  inputs."zippy-0_10_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zippy-0_10_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."zippy-0_10_1".dir   = "0_10_1";
+  inputs."zippy-0_10_1".owner = "nim-nix-pkgs";
+  inputs."zippy-0_10_1".ref   = "master";
+  inputs."zippy-0_10_1".repo  = "zippy";
+  inputs."zippy-0_10_1".type  = "github";
+  inputs."zippy-0_10_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zippy-0_10_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."zippy-0_10_2".dir   = "0_10_2";
+  inputs."zippy-0_10_2".owner = "nim-nix-pkgs";
+  inputs."zippy-0_10_2".ref   = "master";
+  inputs."zippy-0_10_2".repo  = "zippy";
+  inputs."zippy-0_10_2".type  = "github";
+  inputs."zippy-0_10_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zippy-0_10_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."zippy-0_2_0".dir   = "0_2_0";
   inputs."zippy-0_2_0".owner = "nim-nix-pkgs";
   inputs."zippy-0_2_0".ref   = "master";
@@ -455,6 +479,30 @@
   inputs."zippy-0_9_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy-0_9_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."zippy-0_9_10".dir   = "0_9_10";
+  inputs."zippy-0_9_10".owner = "nim-nix-pkgs";
+  inputs."zippy-0_9_10".ref   = "master";
+  inputs."zippy-0_9_10".repo  = "zippy";
+  inputs."zippy-0_9_10".type  = "github";
+  inputs."zippy-0_9_10".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zippy-0_9_10".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."zippy-0_9_11".dir   = "0_9_11";
+  inputs."zippy-0_9_11".owner = "nim-nix-pkgs";
+  inputs."zippy-0_9_11".ref   = "master";
+  inputs."zippy-0_9_11".repo  = "zippy";
+  inputs."zippy-0_9_11".type  = "github";
+  inputs."zippy-0_9_11".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zippy-0_9_11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."zippy-0_9_12".dir   = "0_9_12";
+  inputs."zippy-0_9_12".owner = "nim-nix-pkgs";
+  inputs."zippy-0_9_12".ref   = "master";
+  inputs."zippy-0_9_12".repo  = "zippy";
+  inputs."zippy-0_9_12".type  = "github";
+  inputs."zippy-0_9_12".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zippy-0_9_12".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."zippy-0_9_3".dir   = "0_9_3";
   inputs."zippy-0_9_3".owner = "nim-nix-pkgs";
   inputs."zippy-0_9_3".ref   = "master";
@@ -502,6 +550,14 @@
   inputs."zippy-0_9_8".type  = "github";
   inputs."zippy-0_9_8".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy-0_9_8".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."zippy-0_9_9".dir   = "0_9_9";
+  inputs."zippy-0_9_9".owner = "nim-nix-pkgs";
+  inputs."zippy-0_9_9".ref   = "master";
+  inputs."zippy-0_9_9".repo  = "zippy";
+  inputs."zippy-0_9_9".type  = "github";
+  inputs."zippy-0_9_9".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zippy-0_9_9".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

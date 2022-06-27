@@ -143,6 +143,14 @@
   inputs."retranslator-0_3_4".inputs.nixpkgs.follows = "nixpkgs";
   inputs."retranslator-0_3_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."retranslator-csharp_0_3_4".dir   = "csharp_0_3_4";
+  inputs."retranslator-csharp_0_3_4".owner = "nim-nix-pkgs";
+  inputs."retranslator-csharp_0_3_4".ref   = "master";
+  inputs."retranslator-csharp_0_3_4".repo  = "retranslator";
+  inputs."retranslator-csharp_0_3_4".type  = "github";
+  inputs."retranslator-csharp_0_3_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."retranslator-csharp_0_3_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

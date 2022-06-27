@@ -16,7 +16,7 @@
   inputs."datamancer".owner = "nim-nix-pkgs";
   inputs."datamancer".ref   = "master";
   inputs."datamancer".repo  = "datamancer";
-  inputs."datamancer".dir   = "v0_2_3";
+  inputs."datamancer".dir   = "v0_2_4";
   inputs."datamancer".type  = "github";
   inputs."datamancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."datamancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -47,6 +47,22 @@
   inputs."tinypool-0_3_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tinypool-0_3_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."tinypool-v1_0_0".dir   = "v1_0_0";
+  inputs."tinypool-v1_0_0".owner = "nim-nix-pkgs";
+  inputs."tinypool-v1_0_0".ref   = "master";
+  inputs."tinypool-v1_0_0".repo  = "tinypool";
+  inputs."tinypool-v1_0_0".type  = "github";
+  inputs."tinypool-v1_0_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."tinypool-v1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."tinypool-v1_0_1".dir   = "v1_0_1";
+  inputs."tinypool-v1_0_1".owner = "nim-nix-pkgs";
+  inputs."tinypool-v1_0_1".ref   = "master";
+  inputs."tinypool-v1_0_1".repo  = "tinypool";
+  inputs."tinypool-v1_0_1".type  = "github";
+  inputs."tinypool-v1_0_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."tinypool-v1_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

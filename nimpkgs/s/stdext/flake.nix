@@ -79,6 +79,14 @@
   inputs."stdext-v0_0_12".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stdext-v0_0_12".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."stdext-v0_0_13".dir   = "v0_0_13";
+  inputs."stdext-v0_0_13".owner = "nim-nix-pkgs";
+  inputs."stdext-v0_0_13".ref   = "master";
+  inputs."stdext-v0_0_13".repo  = "stdext";
+  inputs."stdext-v0_0_13".type  = "github";
+  inputs."stdext-v0_0_13".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."stdext-v0_0_13".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."stdext-v0_0_4".dir   = "v0_0_4";
   inputs."stdext-v0_0_4".owner = "nim-nix-pkgs";
   inputs."stdext-v0_0_4".ref   = "master";

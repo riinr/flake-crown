@@ -16,7 +16,7 @@
   inputs."stdext".owner = "nim-nix-pkgs";
   inputs."stdext".ref   = "master";
   inputs."stdext".repo  = "stdext";
-  inputs."stdext".dir   = "v0_0_12";
+  inputs."stdext".dir   = "v0_0_13";
   inputs."stdext".type  = "github";
   inputs."stdext".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stdext".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

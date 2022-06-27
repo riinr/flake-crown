@@ -55,6 +55,14 @@
   inputs."zstd-v0_5".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zstd-v0_5".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."zstd-v0_6".dir   = "v0_6";
+  inputs."zstd-v0_6".owner = "nim-nix-pkgs";
+  inputs."zstd-v0_6".ref   = "master";
+  inputs."zstd-v0_6".repo  = "zstd";
+  inputs."zstd-v0_6".type  = "github";
+  inputs."zstd-v0_6".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zstd-v0_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

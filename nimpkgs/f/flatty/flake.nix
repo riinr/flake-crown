@@ -135,6 +135,14 @@
   inputs."flatty-0_3_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."flatty-0_3_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."flatty-0_3_4".dir   = "0_3_4";
+  inputs."flatty-0_3_4".owner = "nim-nix-pkgs";
+  inputs."flatty-0_3_4".ref   = "master";
+  inputs."flatty-0_3_4".repo  = "flatty";
+  inputs."flatty-0_3_4".type  = "github";
+  inputs."flatty-0_3_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."flatty-0_3_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

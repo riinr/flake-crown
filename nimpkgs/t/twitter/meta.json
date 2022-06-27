@@ -90,6 +90,50 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/tags/1.0.1"
+    },
+    {
+      "name": "twitter",
+      "version": "2.0.0",
+      "author": "snus-kin",
+      "desc": "A twitter API wrapper for Nim.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "uuids",
+          "str": ">= 0.1.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.10"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": ">= 0.1.9",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.9"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.0.0"
     }
   ],
   "description": "Low-level twitter API wrapper library for Nim.",
@@ -98,9 +142,9 @@
   "refs": [
     "refs/heads/master",
     "refs/heads/oauth2",
-    "refs/heads/v2",
     "refs/tags/1.0.0",
     "refs/tags/1.0.1",
+    "refs/tags/2.0.0",
     ""
   ],
   "heads": [

@@ -32,7 +32,7 @@
   inputs."nanovg".owner = "nim-nix-pkgs";
   inputs."nanovg".ref   = "master";
   inputs."nanovg".repo  = "nanovg";
-  inputs."nanovg".dir   = "v0_3_3";
+  inputs."nanovg".dir   = "v0_3_4";
   inputs."nanovg".type  = "github";
   inputs."nanovg".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nanovg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

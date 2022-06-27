@@ -64,7 +64,7 @@
   inputs."prologue".owner = "nim-nix-pkgs";
   inputs."prologue".ref   = "master";
   inputs."prologue".repo  = "prologue";
-  inputs."prologue".dir   = "v0_5_8";
+  inputs."prologue".dir   = "v0_6_0";
   inputs."prologue".type  = "github";
   inputs."prologue".inputs.nixpkgs.follows = "nixpkgs";
   inputs."prologue".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

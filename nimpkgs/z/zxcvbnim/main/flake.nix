@@ -24,7 +24,7 @@
   inputs."supersnappy".owner = "nim-nix-pkgs";
   inputs."supersnappy".ref   = "master";
   inputs."supersnappy".repo  = "supersnappy";
-  inputs."supersnappy".dir   = "2_1_1";
+  inputs."supersnappy".dir   = "2_1_3";
   inputs."supersnappy".type  = "github";
   inputs."supersnappy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."supersnappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

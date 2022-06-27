@@ -24,7 +24,7 @@
   inputs."macroplus".owner = "nim-nix-pkgs";
   inputs."macroplus".ref   = "master";
   inputs."macroplus".repo  = "macroplus";
-  inputs."macroplus".dir   = "0_2_0";
+  inputs."macroplus".dir   = "0_2_3";
   inputs."macroplus".type  = "github";
   inputs."macroplus".inputs.nixpkgs.follows = "nixpkgs";
   inputs."macroplus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

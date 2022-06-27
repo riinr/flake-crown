@@ -31,6 +31,14 @@
   inputs."twitter-1_0_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."twitter-1_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."twitter-2_0_0".dir   = "2_0_0";
+  inputs."twitter-2_0_0".owner = "nim-nix-pkgs";
+  inputs."twitter-2_0_0".ref   = "master";
+  inputs."twitter-2_0_0".repo  = "twitter";
+  inputs."twitter-2_0_0".type  = "github";
+  inputs."twitter-2_0_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."twitter-2_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

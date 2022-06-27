@@ -887,6 +887,174 @@
   inputs."ansiwave-1_7_1-windows".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ansiwave-1_7_1-windows".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."ansiwave-1_7_2".dir   = "1_7_2";
+  inputs."ansiwave-1_7_2".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_2".ref   = "master";
+  inputs."ansiwave-1_7_2".repo  = "ansiwave";
+  inputs."ansiwave-1_7_2".type  = "github";
+  inputs."ansiwave-1_7_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ansiwave-1_7_2-linux".dir   = "1_7_2-linux";
+  inputs."ansiwave-1_7_2-linux".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_2-linux".ref   = "master";
+  inputs."ansiwave-1_7_2-linux".repo  = "ansiwave";
+  inputs."ansiwave-1_7_2-linux".type  = "github";
+  inputs."ansiwave-1_7_2-linux".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_2-linux".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ansiwave-1_7_2-macos".dir   = "1_7_2-macos";
+  inputs."ansiwave-1_7_2-macos".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_2-macos".ref   = "master";
+  inputs."ansiwave-1_7_2-macos".repo  = "ansiwave";
+  inputs."ansiwave-1_7_2-macos".type  = "github";
+  inputs."ansiwave-1_7_2-macos".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_2-macos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ansiwave-1_7_2-windows".dir   = "1_7_2-windows";
+  inputs."ansiwave-1_7_2-windows".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_2-windows".ref   = "master";
+  inputs."ansiwave-1_7_2-windows".repo  = "ansiwave";
+  inputs."ansiwave-1_7_2-windows".type  = "github";
+  inputs."ansiwave-1_7_2-windows".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_2-windows".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ansiwave-1_7_3".dir   = "1_7_3";
+  inputs."ansiwave-1_7_3".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_3".ref   = "master";
+  inputs."ansiwave-1_7_3".repo  = "ansiwave";
+  inputs."ansiwave-1_7_3".type  = "github";
+  inputs."ansiwave-1_7_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ansiwave-1_7_3-linux".dir   = "1_7_3-linux";
+  inputs."ansiwave-1_7_3-linux".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_3-linux".ref   = "master";
+  inputs."ansiwave-1_7_3-linux".repo  = "ansiwave";
+  inputs."ansiwave-1_7_3-linux".type  = "github";
+  inputs."ansiwave-1_7_3-linux".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_3-linux".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ansiwave-1_7_3-macos".dir   = "1_7_3-macos";
+  inputs."ansiwave-1_7_3-macos".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_3-macos".ref   = "master";
+  inputs."ansiwave-1_7_3-macos".repo  = "ansiwave";
+  inputs."ansiwave-1_7_3-macos".type  = "github";
+  inputs."ansiwave-1_7_3-macos".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_3-macos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ansiwave-1_7_3-windows".dir   = "1_7_3-windows";
+  inputs."ansiwave-1_7_3-windows".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_3-windows".ref   = "master";
+  inputs."ansiwave-1_7_3-windows".repo  = "ansiwave";
+  inputs."ansiwave-1_7_3-windows".type  = "github";
+  inputs."ansiwave-1_7_3-windows".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_3-windows".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ansiwave-1_7_4".dir   = "1_7_4";
+  inputs."ansiwave-1_7_4".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_4".ref   = "master";
+  inputs."ansiwave-1_7_4".repo  = "ansiwave";
+  inputs."ansiwave-1_7_4".type  = "github";
+  inputs."ansiwave-1_7_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ansiwave-1_7_4-linux".dir   = "1_7_4-linux";
+  inputs."ansiwave-1_7_4-linux".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_4-linux".ref   = "master";
+  inputs."ansiwave-1_7_4-linux".repo  = "ansiwave";
+  inputs."ansiwave-1_7_4-linux".type  = "github";
+  inputs."ansiwave-1_7_4-linux".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_4-linux".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ansiwave-1_7_4-macos".dir   = "1_7_4-macos";
+  inputs."ansiwave-1_7_4-macos".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_4-macos".ref   = "master";
+  inputs."ansiwave-1_7_4-macos".repo  = "ansiwave";
+  inputs."ansiwave-1_7_4-macos".type  = "github";
+  inputs."ansiwave-1_7_4-macos".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_4-macos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ansiwave-1_7_4-windows".dir   = "1_7_4-windows";
+  inputs."ansiwave-1_7_4-windows".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_4-windows".ref   = "master";
+  inputs."ansiwave-1_7_4-windows".repo  = "ansiwave";
+  inputs."ansiwave-1_7_4-windows".type  = "github";
+  inputs."ansiwave-1_7_4-windows".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_4-windows".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ansiwave-1_7_5".dir   = "1_7_5";
+  inputs."ansiwave-1_7_5".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_5".ref   = "master";
+  inputs."ansiwave-1_7_5".repo  = "ansiwave";
+  inputs."ansiwave-1_7_5".type  = "github";
+  inputs."ansiwave-1_7_5".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_5".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ansiwave-1_7_5-linux".dir   = "1_7_5-linux";
+  inputs."ansiwave-1_7_5-linux".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_5-linux".ref   = "master";
+  inputs."ansiwave-1_7_5-linux".repo  = "ansiwave";
+  inputs."ansiwave-1_7_5-linux".type  = "github";
+  inputs."ansiwave-1_7_5-linux".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_5-linux".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ansiwave-1_7_5-macos".dir   = "1_7_5-macos";
+  inputs."ansiwave-1_7_5-macos".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_5-macos".ref   = "master";
+  inputs."ansiwave-1_7_5-macos".repo  = "ansiwave";
+  inputs."ansiwave-1_7_5-macos".type  = "github";
+  inputs."ansiwave-1_7_5-macos".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_5-macos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ansiwave-1_7_5-windows".dir   = "1_7_5-windows";
+  inputs."ansiwave-1_7_5-windows".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_5-windows".ref   = "master";
+  inputs."ansiwave-1_7_5-windows".repo  = "ansiwave";
+  inputs."ansiwave-1_7_5-windows".type  = "github";
+  inputs."ansiwave-1_7_5-windows".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_5-windows".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ansiwave-1_7_6".dir   = "1_7_6";
+  inputs."ansiwave-1_7_6".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_6".ref   = "master";
+  inputs."ansiwave-1_7_6".repo  = "ansiwave";
+  inputs."ansiwave-1_7_6".type  = "github";
+  inputs."ansiwave-1_7_6".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ansiwave-1_7_7".dir   = "1_7_7";
+  inputs."ansiwave-1_7_7".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_7".ref   = "master";
+  inputs."ansiwave-1_7_7".repo  = "ansiwave";
+  inputs."ansiwave-1_7_7".type  = "github";
+  inputs."ansiwave-1_7_7".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_7".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ansiwave-1_7_7-linux".dir   = "1_7_7-linux";
+  inputs."ansiwave-1_7_7-linux".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_7-linux".ref   = "master";
+  inputs."ansiwave-1_7_7-linux".repo  = "ansiwave";
+  inputs."ansiwave-1_7_7-linux".type  = "github";
+  inputs."ansiwave-1_7_7-linux".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_7-linux".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ansiwave-1_7_7-macos".dir   = "1_7_7-macos";
+  inputs."ansiwave-1_7_7-macos".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_7-macos".ref   = "master";
+  inputs."ansiwave-1_7_7-macos".repo  = "ansiwave";
+  inputs."ansiwave-1_7_7-macos".type  = "github";
+  inputs."ansiwave-1_7_7-macos".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_7-macos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ansiwave-1_7_7-windows".dir   = "1_7_7-windows";
+  inputs."ansiwave-1_7_7-windows".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_7-windows".ref   = "master";
+  inputs."ansiwave-1_7_7-windows".repo  = "ansiwave";
+  inputs."ansiwave-1_7_7-windows".type  = "github";
+  inputs."ansiwave-1_7_7-windows".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_7-windows".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

@@ -31,6 +31,14 @@
   inputs."adix-0_2_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."adix-0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."adix-0_4_0".dir   = "0_4_0";
+  inputs."adix-0_4_0".owner = "nim-nix-pkgs";
+  inputs."adix-0_4_0".ref   = "master";
+  inputs."adix-0_4_0".repo  = "adix";
+  inputs."adix-0_4_0".type  = "github";
+  inputs."adix-0_4_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."adix-0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."adix-v0_3_0".dir   = "v0_3_0";
   inputs."adix-v0_3_0".owner = "nim-nix-pkgs";
   inputs."adix-v0_3_0".ref   = "master";

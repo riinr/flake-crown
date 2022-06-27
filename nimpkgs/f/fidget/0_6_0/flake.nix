@@ -32,7 +32,7 @@
   inputs."pixie".owner = "nim-nix-pkgs";
   inputs."pixie".ref   = "master";
   inputs."pixie".repo  = "pixie";
-  inputs."pixie".dir   = "4_3_0";
+  inputs."pixie".dir   = "4_4_0";
   inputs."pixie".type  = "github";
   inputs."pixie".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pixie".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -80,7 +80,7 @@
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
-  inputs."cligen".dir   = "v1_5_23";
+  inputs."cligen".dir   = "v1_5_24";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -88,7 +88,7 @@
   inputs."supersnappy".owner = "nim-nix-pkgs";
   inputs."supersnappy".ref   = "master";
   inputs."supersnappy".repo  = "supersnappy";
-  inputs."supersnappy".dir   = "2_1_1";
+  inputs."supersnappy".dir   = "2_1_3";
   inputs."supersnappy".type  = "github";
   inputs."supersnappy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."supersnappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

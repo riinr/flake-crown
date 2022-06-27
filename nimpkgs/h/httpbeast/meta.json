@@ -215,6 +215,42 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/tags/v0.4.0"
+    },
+    {
+      "name": "httpbeast",
+      "version": "0.4.1",
+      "author": "Dominik Picheta",
+      "desc": "A super-fast epoll-backed and parallel HTTP server.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        },
+        {
+          "name": "asynctools",
+          "str": "#0e6bdc3ed5bae8c7cc9",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#0e6bdc3ed5bae8c7cc9"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.1"
     }
   ],
   "description": "A performant and scalable HTTP server.",
@@ -225,6 +261,7 @@
     "refs/heads/fix-ci",
     "refs/heads/fix-ci-3",
     "refs/heads/fix-ci-4",
+    "refs/heads/fixes-capture-bug",
     "refs/heads/master",
     "refs/heads/opt-send",
     "refs/tags/v0.1.0",
@@ -233,6 +270,7 @@
     "refs/tags/v0.2.2",
     "refs/tags/v0.3.0",
     "refs/tags/v0.4.0",
+    "refs/tags/v0.4.1",
     ""
   ],
   "heads": [

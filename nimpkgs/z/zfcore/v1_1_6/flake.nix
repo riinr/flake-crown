@@ -24,7 +24,7 @@
   inputs."uri3".owner = "nim-nix-pkgs";
   inputs."uri3".ref   = "master";
   inputs."uri3".repo  = "uri3";
-  inputs."uri3".dir   = "0_1_4";
+  inputs."uri3".dir   = "v0_1_5";
   inputs."uri3".type  = "github";
   inputs."uri3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uri3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -32,7 +32,7 @@
   inputs."stdext".owner = "nim-nix-pkgs";
   inputs."stdext".ref   = "master";
   inputs."stdext".repo  = "stdext";
-  inputs."stdext".dir   = "v0_0_12";
+  inputs."stdext".dir   = "v0_0_13";
   inputs."stdext".type  = "github";
   inputs."stdext".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stdext".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

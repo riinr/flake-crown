@@ -23,6 +23,14 @@
   inputs."redis-v0_3_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."redis-v0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."redis-v0_4_0".dir   = "v0_4_0";
+  inputs."redis-v0_4_0".owner = "nim-nix-pkgs";
+  inputs."redis-v0_4_0".ref   = "master";
+  inputs."redis-v0_4_0".repo  = "redis";
+  inputs."redis-v0_4_0".type  = "github";
+  inputs."redis-v0_4_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."redis-v0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

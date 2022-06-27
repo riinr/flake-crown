@@ -31,6 +31,14 @@
   inputs."honeycomb-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."honeycomb-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."honeycomb-v0_1_2".dir   = "v0_1_2";
+  inputs."honeycomb-v0_1_2".owner = "nim-nix-pkgs";
+  inputs."honeycomb-v0_1_2".ref   = "master";
+  inputs."honeycomb-v0_1_2".repo  = "honeycomb";
+  inputs."honeycomb-v0_1_2".type  = "github";
+  inputs."honeycomb-v0_1_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."honeycomb-v0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

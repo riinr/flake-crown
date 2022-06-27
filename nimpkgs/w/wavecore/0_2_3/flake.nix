@@ -24,7 +24,7 @@
   inputs."puppy".owner = "nim-nix-pkgs";
   inputs."puppy".ref   = "master";
   inputs."puppy".repo  = "puppy";
-  inputs."puppy".dir   = "1_5_3";
+  inputs."puppy".dir   = "1_5_4";
   inputs."puppy".type  = "github";
   inputs."puppy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."puppy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -32,7 +32,7 @@
   inputs."flatty".owner = "nim-nix-pkgs";
   inputs."flatty".ref   = "master";
   inputs."flatty".repo  = "flatty";
-  inputs."flatty".dir   = "0_3_3";
+  inputs."flatty".dir   = "0_3_4";
   inputs."flatty".type  = "github";
   inputs."flatty".inputs.nixpkgs.follows = "nixpkgs";
   inputs."flatty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -40,7 +40,7 @@
   inputs."zippy".owner = "nim-nix-pkgs";
   inputs."zippy".ref   = "master";
   inputs."zippy".repo  = "zippy";
-  inputs."zippy".dir   = "0_9_8";
+  inputs."zippy".dir   = "0_10_2";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

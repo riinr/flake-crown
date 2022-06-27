@@ -31,6 +31,14 @@
   inputs."procs-v0_3_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."procs-v0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."procs-v0_4_0".dir   = "v0_4_0";
+  inputs."procs-v0_4_0".owner = "nim-nix-pkgs";
+  inputs."procs-v0_4_0".ref   = "master";
+  inputs."procs-v0_4_0".repo  = "procs";
+  inputs."procs-v0_4_0".type  = "github";
+  inputs."procs-v0_4_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."procs-v0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

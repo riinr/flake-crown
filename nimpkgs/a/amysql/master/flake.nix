@@ -32,7 +32,7 @@
   inputs."zstd".owner = "nim-nix-pkgs";
   inputs."zstd".ref   = "master";
   inputs."zstd".repo  = "zstd";
-  inputs."zstd".dir   = "v0_5";
+  inputs."zstd".dir   = "v0_6";
   inputs."zstd".type  = "github";
   inputs."zstd".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zstd".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

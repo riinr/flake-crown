@@ -32,7 +32,7 @@
   inputs."httpbeast".owner = "nim-nix-pkgs";
   inputs."httpbeast".ref   = "master";
   inputs."httpbeast".repo  = "httpbeast";
-  inputs."httpbeast".dir   = "v0_4_0";
+  inputs."httpbeast".dir   = "v0_4_1";
   inputs."httpbeast".type  = "github";
   inputs."httpbeast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."httpbeast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

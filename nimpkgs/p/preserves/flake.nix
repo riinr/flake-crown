@@ -15,6 +15,14 @@
   inputs."preserves-trunk".inputs.nixpkgs.follows = "nixpkgs";
   inputs."preserves-trunk".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."preserves-20220625".dir   = "20220625";
+  inputs."preserves-20220625".owner = "nim-nix-pkgs";
+  inputs."preserves-20220625".ref   = "master";
+  inputs."preserves-20220625".repo  = "preserves";
+  inputs."preserves-20220625".type  = "github";
+  inputs."preserves-20220625".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."preserves-20220625".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."preserves-v0_1_0".dir   = "v0_1_0";
   inputs."preserves-v0_1_0".owner = "nim-nix-pkgs";
   inputs."preserves-v0_1_0".ref   = "master";

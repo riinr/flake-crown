@@ -95,6 +95,14 @@
   inputs."triplets-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."triplets-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."triplets-csharp_0_1_1".dir   = "csharp_0_1_1";
+  inputs."triplets-csharp_0_1_1".owner = "nim-nix-pkgs";
+  inputs."triplets-csharp_0_1_1".ref   = "master";
+  inputs."triplets-csharp_0_1_1".repo  = "triplets";
+  inputs."triplets-csharp_0_1_1".type  = "github";
+  inputs."triplets-csharp_0_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."triplets-csharp_0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

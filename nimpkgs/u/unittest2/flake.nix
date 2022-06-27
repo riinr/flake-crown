@@ -39,6 +39,14 @@
   inputs."unittest2-v0_0_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unittest2-v0_0_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."unittest2-v0_0_4".dir   = "v0_0_4";
+  inputs."unittest2-v0_0_4".owner = "nim-nix-pkgs";
+  inputs."unittest2-v0_0_4".ref   = "master";
+  inputs."unittest2-v0_0_4".repo  = "unittest2";
+  inputs."unittest2-v0_0_4".type  = "github";
+  inputs."unittest2-v0_0_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."unittest2-v0_0_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

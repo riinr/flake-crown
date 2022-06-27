@@ -95,6 +95,14 @@
   inputs."supersnappy-2_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."supersnappy-2_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."supersnappy-2_1_3".dir   = "2_1_3";
+  inputs."supersnappy-2_1_3".owner = "nim-nix-pkgs";
+  inputs."supersnappy-2_1_3".ref   = "master";
+  inputs."supersnappy-2_1_3".repo  = "supersnappy";
+  inputs."supersnappy-2_1_3".type  = "github";
+  inputs."supersnappy-2_1_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."supersnappy-2_1_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;
