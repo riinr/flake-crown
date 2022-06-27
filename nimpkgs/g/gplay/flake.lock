@@ -1,0 +1,437 @@
+{
+  "nodes": {
+    "bearssl": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "gplay-master",
+          "jwt",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "gplay-master",
+          "jwt",
+          "nixpkgs"
+        ],
+        "src-bearssl-master": "src-bearssl-master",
+        "unittest2": "unittest2"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650754745,
+        "narHash": "sha256-J36Y+MJoSpcd+/JawuOofnggoHVHD8FrCtcZcANl90I=",
+        "owner": "nim-nix-pkgs",
+        "repo": "bearssl",
+        "rev": "777be649d3a38b6b4ec1592b6bed983382003129",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "bearssl",
+        "type": "github"
+      }
+    },
+    "bearssl_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "gplay-master",
+          "jwt",
+          "github-yglukhov-bearssl_pkey_decoder",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "gplay-master",
+          "jwt",
+          "github-yglukhov-bearssl_pkey_decoder",
+          "nixpkgs"
+        ],
+        "src-bearssl-master": "src-bearssl-master_2",
+        "unittest2": "unittest2_2"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650754745,
+        "narHash": "sha256-J36Y+MJoSpcd+/JawuOofnggoHVHD8FrCtcZcANl90I=",
+        "owner": "nim-nix-pkgs",
+        "repo": "bearssl",
+        "rev": "777be649d3a38b6b4ec1592b6bed983382003129",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "bearssl",
+        "type": "github"
+      }
+    },
+    "cligen": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "gplay-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "gplay-master",
+          "nixpkgs"
+        ],
+        "src-cligen-v1_5_24": "src-cligen-v1_5_24"
+      },
+      "locked": {
+        "dir": "v1_5_24",
+        "lastModified": 1656300823,
+        "narHash": "sha256-KyS8xh5KJxE8uPzSlOO2kLpCV18l9llCXAy5YFgbwII=",
+        "owner": "nim-nix-pkgs",
+        "repo": "cligen",
+        "rev": "fbc6e9c5fc76dcc89e25e9566b1641c3b77fbd85",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_5_24",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "github-yglukhov-bearssl_pkey_decoder": {
+      "inputs": {
+        "bearssl": "bearssl_2",
+        "flakeNimbleLib": [
+          "gplay-master",
+          "jwt",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "gplay-master",
+          "jwt",
+          "nixpkgs"
+        ],
+        "src-bearssl_pkey_decoder-master": "src-bearssl_pkey_decoder-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650756093,
+        "narHash": "sha256-05an53g4HbxiiSMnPweMTseLbWK8dLYXN6Gdw6kArbk=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-yglukhov-bearssl_pkey_decoder",
+        "rev": "dfb76ff9cd69f1bf7c9b45e4d1c2cf6cbcb43d5c",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-yglukhov-bearssl_pkey_decoder",
+        "type": "github"
+      }
+    },
+    "gplay-master": {
+      "inputs": {
+        "cligen": "cligen",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "jwt": "jwt",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-gplay-master": "src-gplay-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1656283725,
+        "narHash": "sha256-xeEdmZ5WT9It32EO0ZnzGRC5wsOLIymQ7ipDx+8olDM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "gplay",
+        "rev": "080d186c194927d34600d4c47c81a86bd19c0f71",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "gplay",
+        "type": "github"
+      }
+    },
+    "jwt": {
+      "inputs": {
+        "bearssl": "bearssl",
+        "flakeNimbleLib": [
+          "gplay-master",
+          "flakeNimbleLib"
+        ],
+        "github-yglukhov-bearssl_pkey_decoder": "github-yglukhov-bearssl_pkey_decoder",
+        "nixpkgs": [
+          "gplay-master",
+          "nixpkgs"
+        ],
+        "src-jwt-master": "src-jwt-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650750328,
+        "narHash": "sha256-xayFuh/LKbwUviuyeNydcv2BWzDSTWiFBcz0jFGV14U=",
+        "owner": "nim-nix-pkgs",
+        "repo": "jwt",
+        "rev": "89c1effe4da30d5c660c8965110adf7fe3f6232d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "jwt",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "gplay-master": "gplay-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-bearssl-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1649948934,
+        "narHash": "sha256-vZ0Zg0kM8OjBuULfSMUQgpDj0mwd4JwESvNuJkKXUSQ=",
+        "owner": "status-im",
+        "repo": "nim-bearssl",
+        "rev": "0ebb1d7a4af5f4b4d4756a9b6dbfe5d411fa55d9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-bearssl",
+        "type": "github"
+      }
+    },
+    "src-bearssl-master_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1649948934,
+        "narHash": "sha256-vZ0Zg0kM8OjBuULfSMUQgpDj0mwd4JwESvNuJkKXUSQ=",
+        "owner": "status-im",
+        "repo": "nim-bearssl",
+        "rev": "0ebb1d7a4af5f4b4d4756a9b6dbfe5d411fa55d9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-bearssl",
+        "type": "github"
+      }
+    },
+    "src-bearssl_pkey_decoder-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1586340668,
+        "narHash": "sha256-dAzVbwhxDwpSwQP+0jzH2XfaByDXeq0J7HPNHC+h9TA=",
+        "owner": "yglukhov",
+        "repo": "bearssl_pkey_decoder",
+        "rev": "fd2bc29d1283eb5d988a5c8a5660c1be9b9265f8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "bearssl_pkey_decoder",
+        "type": "github"
+      }
+    },
+    "src-cligen-v1_5_24": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1654702226,
+        "narHash": "sha256-QmGWVoS6pe6QKp/nxVE0WI1clLs9gJ+l9wjnmtpuZV4=",
+        "owner": "c-blake",
+        "repo": "cligen",
+        "rev": "a276fa26fd352816f2ff807591540b27c5247c4a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "c-blake",
+        "ref": "refs/tags/v1.5.24",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "src-gplay-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1629475873,
+        "narHash": "sha256-6NLxKgfluEHIT2witzH4Pn1bKulkz9/fwSRCX6zQ7WA=",
+        "owner": "yglukhov",
+        "repo": "gplay",
+        "rev": "01a25c46a3586557c9f0be23c38248c1eed0f8c5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "gplay",
+        "type": "github"
+      }
+    },
+    "src-jwt-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645366596,
+        "narHash": "sha256-CB48Pw4RP3qI/vLhoG1UY66ZlY6F+Nie97ax4M+eEi8=",
+        "owner": "yglukhov",
+        "repo": "nim-jwt",
+        "rev": "2ef77272d8754be01cfc04b8af53f42d30aaca34",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "nim-jwt",
+        "type": "github"
+      }
+    },
+    "src-unittest2-v0_0_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1639728552,
+        "narHash": "sha256-gHfxt4eNLaC9KNh3kC1zFNV42UcDipfyoiCnDHyyb+k=",
+        "owner": "status-im",
+        "repo": "nim-unittest2",
+        "rev": "4e2893eacb916c7678fdc4935ff7420f13bf3a9c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/tags/v0.0.3",
+        "repo": "nim-unittest2",
+        "type": "github"
+      }
+    },
+    "src-unittest2-v0_0_3_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1639728552,
+        "narHash": "sha256-gHfxt4eNLaC9KNh3kC1zFNV42UcDipfyoiCnDHyyb+k=",
+        "owner": "status-im",
+        "repo": "nim-unittest2",
+        "rev": "4e2893eacb916c7678fdc4935ff7420f13bf3a9c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/tags/v0.0.3",
+        "repo": "nim-unittest2",
+        "type": "github"
+      }
+    },
+    "unittest2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "gplay-master",
+          "jwt",
+          "bearssl",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "gplay-master",
+          "jwt",
+          "bearssl",
+          "nixpkgs"
+        ],
+        "src-unittest2-v0_0_3": "src-unittest2-v0_0_3"
+      },
+      "locked": {
+        "dir": "v0_0_3",
+        "lastModified": 1650750657,
+        "narHash": "sha256-h0tHKJr7csHNpXn/Ai9STzz4Fp/St4E/Kex6Jn4u8ys=",
+        "owner": "nim-nix-pkgs",
+        "repo": "unittest2",
+        "rev": "6255fb952e1bba7526b4a88be51e63595cd050e6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_0_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "unittest2",
+        "type": "github"
+      }
+    },
+    "unittest2_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "gplay-master",
+          "jwt",
+          "github-yglukhov-bearssl_pkey_decoder",
+          "bearssl",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "gplay-master",
+          "jwt",
+          "github-yglukhov-bearssl_pkey_decoder",
+          "bearssl",
+          "nixpkgs"
+        ],
+        "src-unittest2-v0_0_3": "src-unittest2-v0_0_3_2"
+      },
+      "locked": {
+        "dir": "v0_0_3",
+        "lastModified": 1650750657,
+        "narHash": "sha256-h0tHKJr7csHNpXn/Ai9STzz4Fp/St4E/Kex6Jn4u8ys=",
+        "owner": "nim-nix-pkgs",
+        "repo": "unittest2",
+        "rev": "6255fb952e1bba7526b4a88be51e63595cd050e6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_0_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "unittest2",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

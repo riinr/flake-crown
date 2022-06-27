@@ -1,0 +1,233 @@
+{
+  "nodes": {
+    "dnsprotocol": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "ndns-main",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "ndns-main",
+          "nixpkgs"
+        ],
+        "src-dnsprotocol-main": "src-dnsprotocol-main",
+        "stew": "stew"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1653702901,
+        "narHash": "sha256-AFt96m0IEFYZFVuKsKeEbwm8Js9jaYUI006TvnYXXSA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "dnsprotocol",
+        "rev": "128fc67577228c09a9565074e185059fd79eaf7b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "dnsprotocol",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "ndns-main": {
+      "inputs": {
+        "dnsprotocol": "dnsprotocol",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ndns-main": "src-ndns-main",
+        "stew": "stew_2"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1653703370,
+        "narHash": "sha256-vp3TXIoWsZN1HCZ+lao6g3VtoLCKLbFBkbjeg6zOVm0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ndns",
+        "rev": "c081b85c04068ae186e8b4c860f85c912bdefad1",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ndns",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "ndns-main": "ndns-main",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-dnsprotocol-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1625196233,
+        "narHash": "sha256-di8Ky9rYRVAmH3E8oJZbv70xNkf3gSLerpXhcV10MPE=",
+        "owner": "rockcavera",
+        "repo": "nim-dnsprotocol",
+        "rev": "2cc2292005ca62e82333ceca26752bb4ae6e545e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rockcavera",
+        "ref": "refs/heads/main",
+        "repo": "nim-dnsprotocol",
+        "type": "github"
+      }
+    },
+    "src-ndns-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1609464448,
+        "narHash": "sha256-xDA5cl4yqS1pmDWxAT6n5kj6tJGmWfak3yLCoPSxWoY=",
+        "owner": "rockcavera",
+        "repo": "nim-ndns",
+        "rev": "1ee3c85d15f4496ffa8fb300ef35f681fc9ed574",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rockcavera",
+        "ref": "refs/heads/main",
+        "repo": "nim-ndns",
+        "type": "github"
+      }
+    },
+    "src-stew-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1653308824,
+        "narHash": "sha256-7vCG3cTWBRE104nPUUCXbghJrNk8rki5pp6zlDAJLlI=",
+        "owner": "status-im",
+        "repo": "nim-stew",
+        "rev": "412a691f5d29c93bee8f083d213ee8f2c6578bed",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-stew",
+        "type": "github"
+      }
+    },
+    "src-stew-master_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1653308824,
+        "narHash": "sha256-7vCG3cTWBRE104nPUUCXbghJrNk8rki5pp6zlDAJLlI=",
+        "owner": "status-im",
+        "repo": "nim-stew",
+        "rev": "412a691f5d29c93bee8f083d213ee8f2c6578bed",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-stew",
+        "type": "github"
+      }
+    },
+    "stew": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "ndns-main",
+          "dnsprotocol",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "ndns-main",
+          "dnsprotocol",
+          "nixpkgs"
+        ],
+        "src-stew-master": "src-stew-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1653702420,
+        "narHash": "sha256-volBAm3WrSGJESm03SYW5Du3AQpj/1SU1W6BJupNbUc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "stew",
+        "rev": "5cc7479698196e5a769f8c86cf69f5ebad3ad00a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "stew",
+        "type": "github"
+      }
+    },
+    "stew_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "ndns-main",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "ndns-main",
+          "nixpkgs"
+        ],
+        "src-stew-master": "src-stew-master_2"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1653702420,
+        "narHash": "sha256-volBAm3WrSGJESm03SYW5Du3AQpj/1SU1W6BJupNbUc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "stew",
+        "rev": "5cc7479698196e5a769f8c86cf69f5ebad3ad00a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "stew",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

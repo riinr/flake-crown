@@ -1,0 +1,108 @@
+{
+  "nodes": {
+    "bigints": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-bigints-0_5_0": "src-bigints-0_5_0"
+      },
+      "locked": {
+        "dir": "0_5_0",
+        "lastModified": 1656300794,
+        "narHash": "sha256-ZkFmJOZGN0nadDopy9MvZVdq++v/QwgIDQ1Qf7jUSPo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "bigints",
+        "rev": "4f35e9640ceb59909db38ab84524285a0c36adb7",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_5_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "bigints",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "bigints": "bigints",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-cbor-0_9_0": "src-cbor-0_9_0"
+      }
+    },
+    "src-bigints-0_5_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1621499680,
+        "narHash": "sha256-zMTXXC0lYVzXaKl8eC/SA/CymRgovgzxBdvEn1VE9p0=",
+        "owner": "nim-lang",
+        "repo": "bigints",
+        "rev": "c5ea3d5c95b7b3c95d980ca8ea608c06ae537762",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/0.5.0",
+        "repo": "bigints",
+        "type": "github"
+      }
+    },
+    "src-cbor-0_9_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1650822420,
+        "narHash": "sha256-SszhT1RWmyB3vYD59sGbbf++myEFpsRD8K0VsItdpAM=",
+        "owner": "~ehmry",
+        "repo": "nim_cbor",
+        "rev": "0eaf828238ab1c595a3851c319062e47886504e7",
+        "type": "sourcehut"
+      },
+      "original": {
+        "owner": "~ehmry",
+        "ref": "0.9.0",
+        "repo": "nim_cbor",
+        "type": "sourcehut"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

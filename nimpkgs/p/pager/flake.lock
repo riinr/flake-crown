@@ -1,0 +1,90 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "pager-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-pager-master": "src-pager-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1656297987,
+        "narHash": "sha256-lEGRSgx+OybVzd8cQVayeEtpZXfkj5LH8RUVDpoz4Zw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "pager",
+        "rev": "f93358c35a3a1a7faffec4b183f411c6732b6e9e",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "pager",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "pager-master": "pager-master"
+      }
+    },
+    "src-pager-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1568435615,
+        "narHash": "sha256-/ynW96y+luZts6vlZDn53uKCFv4aYOIzJRD5IEvr9Fk=",
+        "owner": "~reesmichael1",
+        "repo": "nim-pager",
+        "rev": "eab3163332d96b29755741b82383f7a36e92ba12",
+        "type": "sourcehut"
+      },
+      "original": {
+        "owner": "~reesmichael1",
+        "ref": "master",
+        "repo": "nim-pager",
+        "type": "sourcehut"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

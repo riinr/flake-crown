@@ -1,0 +1,378 @@
+{
+  "nodes": {
+    "cairo": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "denim_ui_cairo-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "denim_ui_cairo-master",
+          "nixpkgs"
+        ],
+        "src-cairo-1_1_1": "src-cairo-1_1_1"
+      },
+      "locked": {
+        "dir": "1_1_1",
+        "lastModified": 1648162965,
+        "narHash": "sha256-deJu5GW9cLJZ1dfa266tZQQ8H8xqoV2x1idzq43f81k=",
+        "owner": "nim-nix-pkgs",
+        "repo": "cairo",
+        "rev": "33c541e43839e5905d47c918098e40649e14e14f",
+        "type": "github"
+      },
+      "original": {
+        "dir": "1_1_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "cairo",
+        "type": "github"
+      }
+    },
+    "denim_ui": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "denim_ui_cairo-master",
+          "flakeNimbleLib"
+        ],
+        "itertools": "itertools",
+        "macroutils": "macroutils",
+        "nixpkgs": [
+          "denim_ui_cairo-master",
+          "nixpkgs"
+        ],
+        "rx_nim": "rx_nim",
+        "src-denim_ui-master": "src-denim_ui-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648164997,
+        "narHash": "sha256-Xkjiqs18MCTtDTMh9rsp/3rPidVgrSySl5SfNcJmXoI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "denim_ui",
+        "rev": "fcd3ae1e5a7e3060479da7019f1112eaeaf9e053",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "denim_ui",
+        "type": "github"
+      }
+    },
+    "denim_ui_cairo-master": {
+      "inputs": {
+        "cairo": "cairo",
+        "denim_ui": "denim_ui",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "sdl2": "sdl2",
+        "src-denim_ui_cairo-master": "src-denim_ui_cairo-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1652367059,
+        "narHash": "sha256-79zviCNIfLC7A0212asDyQgKt1cOEZsEgBe28/0uEWA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "denim_ui_cairo",
+        "rev": "8c1d0685b99b71f183d7fb6094341793d318ea48",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "denim_ui_cairo",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "itertools": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "denim_ui_cairo-master",
+          "denim_ui",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "denim_ui_cairo-master",
+          "denim_ui",
+          "nixpkgs"
+        ],
+        "src-itertools-v0_4_0": "src-itertools-v0_4_0"
+      },
+      "locked": {
+        "dir": "v0_4_0",
+        "lastModified": 1648163192,
+        "narHash": "sha256-PiGp20IdZn+e2NtNWrhA+DMtVoAcwTgMdyhH/p+stGw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "itertools",
+        "rev": "7a9910425f0adb6535239c81e55a3274fcb6203b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_4_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "itertools",
+        "type": "github"
+      }
+    },
+    "macroutils": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "denim_ui_cairo-master",
+          "denim_ui",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "denim_ui_cairo-master",
+          "denim_ui",
+          "nixpkgs"
+        ],
+        "src-macroutils-v1_2_0": "src-macroutils-v1_2_0"
+      },
+      "locked": {
+        "dir": "v1_2_0",
+        "lastModified": 1648163265,
+        "narHash": "sha256-+vLbL5+QI/QnC5ub2HsmvFgi2LJbzgys19HFHKFo0uQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "macroutils",
+        "rev": "109eeafbbe8e83f00e1f8a0b0682eb22b72c25cc",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_2_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "macroutils",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "denim_ui_cairo-master": "denim_ui_cairo-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "rx_nim": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "denim_ui_cairo-master",
+          "denim_ui",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "denim_ui_cairo-master",
+          "denim_ui",
+          "nixpkgs"
+        ],
+        "src-rx_nim-master": "src-rx_nim-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648163550,
+        "narHash": "sha256-VYjHadJVcO5KfJ/8ahzg3H6x8LsLXiZ18ITG0tDqqoA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "rx_nim",
+        "rev": "82b27f61bed96f0ecbdfd9387ee5253a7f9a02e2",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "rx_nim",
+        "type": "github"
+      }
+    },
+    "sdl2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "denim_ui_cairo-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "denim_ui_cairo-master",
+          "nixpkgs"
+        ],
+        "src-sdl2-v2_0_3": "src-sdl2-v2_0_3"
+      },
+      "locked": {
+        "dir": "v2_0_3",
+        "lastModified": 1648269973,
+        "narHash": "sha256-QkLO1aaGT9g2HP48meg81taJOlDY+fEoZuUqPFD4iro=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sdl2",
+        "rev": "ed14972971937f552354ee22c9d2dd319d270eb5",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v2_0_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sdl2",
+        "type": "github"
+      }
+    },
+    "src-cairo-1_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587491257,
+        "narHash": "sha256-O0+7gRNh7vtRsx6KRH1XfCDcL++VtlXjOeVdaGv4Fzw=",
+        "owner": "nim-lang",
+        "repo": "cairo",
+        "rev": "50ca8ed54554eae686024c0dc88490502af31cb8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/1.1.1",
+        "repo": "cairo",
+        "type": "github"
+      }
+    },
+    "src-denim_ui-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1641467777,
+        "narHash": "sha256-zroY7WAk1eYjn0zFi0LP1mOwEJgwa9IzYnaS7SsAe/c=",
+        "owner": "nortero-code",
+        "repo": "denim-ui",
+        "rev": "f7c11ce80d96197bd3a3ee457c742678b3c4f80f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nortero-code",
+        "ref": "refs/heads/master",
+        "repo": "denim-ui",
+        "type": "github"
+      }
+    },
+    "src-denim_ui_cairo-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1624393600,
+        "narHash": "sha256-beg7UE0GDBrcv7Bh+nxHreqhPKv4RqueVkmOtmDy9bM=",
+        "owner": "nortero-code",
+        "repo": "midio-ui-cairo",
+        "rev": "892d103d513bb2c32c4a4e572c78f136f9a9784c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nortero-code",
+        "ref": "refs/heads/master",
+        "repo": "midio-ui-cairo",
+        "type": "github"
+      }
+    },
+    "src-itertools-v0_4_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1609163092,
+        "narHash": "sha256-kLZ8yITrmlv+3JG4axcuntOFBBnmhJJmUOkZeInZb7I=",
+        "owner": "narimiran",
+        "repo": "itertools",
+        "rev": "41ed3d60ae494a89502c6e9230621039099c70f3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "narimiran",
+        "ref": "refs/tags/v0.4.0",
+        "repo": "itertools",
+        "type": "github"
+      }
+    },
+    "src-macroutils-v1_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591265350,
+        "narHash": "sha256-HGsNbldfhjAEaKsj+DZuMDwhhaLWHlibOWZ3xklKEds=",
+        "owner": "PMunch",
+        "repo": "macroutils",
+        "rev": "b460c6804c97df8cfdc80c308b574ae90b30ac61",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PMunch",
+        "ref": "refs/tags/v1.2.0",
+        "repo": "macroutils",
+        "type": "github"
+      }
+    },
+    "src-rx_nim-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1631688872,
+        "narHash": "sha256-ICCjkEpeDfugzs1ea5iRNH1FFzs6MRuR1NAPVxAaL8U=",
+        "owner": "nortero-code",
+        "repo": "rx-nim",
+        "rev": "d3107b810952ab192753b030eb66af8f5542d341",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nortero-code",
+        "ref": "refs/heads/master",
+        "repo": "rx-nim",
+        "type": "github"
+      }
+    },
+    "src-sdl2-v2_0_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1617058617,
+        "narHash": "sha256-v8zqsafLMSAsJ1KOh4+1h22GGBe9D0Kkt/cN0s/Nvng=",
+        "owner": "nim-lang",
+        "repo": "sdl2",
+        "rev": "e084923c35e6f513240456d87b3cc9cfd2081e91",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/v2.0.3",
+        "repo": "sdl2",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

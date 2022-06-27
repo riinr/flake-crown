@@ -1,0 +1,233 @@
+{
+  "nodes": {
+    "cairo": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "native_dialogs-master",
+          "gtk2",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "native_dialogs-master",
+          "gtk2",
+          "nixpkgs"
+        ],
+        "src-cairo-1_1_1": "src-cairo-1_1_1"
+      },
+      "locked": {
+        "dir": "1_1_1",
+        "lastModified": 1648162965,
+        "narHash": "sha256-deJu5GW9cLJZ1dfa266tZQQ8H8xqoV2x1idzq43f81k=",
+        "owner": "nim-nix-pkgs",
+        "repo": "cairo",
+        "rev": "33c541e43839e5905d47c918098e40649e14e14f",
+        "type": "github"
+      },
+      "original": {
+        "dir": "1_1_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "cairo",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "gtk2": {
+      "inputs": {
+        "cairo": "cairo",
+        "flakeNimbleLib": [
+          "native_dialogs-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "native_dialogs-master",
+          "nixpkgs"
+        ],
+        "src-gtk2-v1_3": "src-gtk2-v1_3"
+      },
+      "locked": {
+        "dir": "v1_3",
+        "lastModified": 1648164304,
+        "narHash": "sha256-kuZBP2N0vFELmbtbzarxGSB+wyVPmPgXwHG2m5LLKx0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "gtk2",
+        "rev": "b5ed368bdcccd183bcf2adc5f5e49471d6fe4451",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "gtk2",
+        "type": "github"
+      }
+    },
+    "native_dialogs-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "gtk2": "gtk2",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "oldwinapi": "oldwinapi",
+        "src-native_dialogs-master": "src-native_dialogs-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648428751,
+        "narHash": "sha256-h2BwA8gUT96XFkLFUaGrxGWommxQGj/J6YvzQluSWcw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "native_dialogs",
+        "rev": "8be9307a58564bb93e56a2011fb6143986e305de",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "native_dialogs",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "oldwinapi": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "native_dialogs-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "native_dialogs-master",
+          "nixpkgs"
+        ],
+        "src-oldwinapi-v2_1_0": "src-oldwinapi-v2_1_0"
+      },
+      "locked": {
+        "dir": "v2_1_0",
+        "lastModified": 1648163426,
+        "narHash": "sha256-p7J2Byxye2pnyPY9y9py0N41mIpcqFUiYaOqHyaRBCs=",
+        "owner": "nim-nix-pkgs",
+        "repo": "oldwinapi",
+        "rev": "2caffb56db1568bb44e8b83e8dbe55234090b443",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v2_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "oldwinapi",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "native_dialogs-master": "native_dialogs-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-cairo-1_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587491257,
+        "narHash": "sha256-O0+7gRNh7vtRsx6KRH1XfCDcL++VtlXjOeVdaGv4Fzw=",
+        "owner": "nim-lang",
+        "repo": "cairo",
+        "rev": "50ca8ed54554eae686024c0dc88490502af31cb8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/1.1.1",
+        "repo": "cairo",
+        "type": "github"
+      }
+    },
+    "src-gtk2-v1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1509742308,
+        "narHash": "sha256-KPHMF2gHIwjRuslJOhbf7KU0VUwp4Oe0+63YKKOBCPk=",
+        "owner": "nim-lang",
+        "repo": "gtk2",
+        "rev": "6bf54b27e7be0b976bf820682c4c30014c479148",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/v1.3",
+        "repo": "gtk2",
+        "type": "github"
+      }
+    },
+    "src-native_dialogs-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1507886133,
+        "narHash": "sha256-4Bmph8tG5RiZmDNB7Uw5MrVOQtXDJWy9unxSlUpFrQo=",
+        "owner": "SSPkrolik",
+        "repo": "nim-native-dialogs",
+        "rev": "1270bb9a8d1f1f1f1732f36734164bba2f9c5f22",
+        "type": "github"
+      },
+      "original": {
+        "owner": "SSPkrolik",
+        "ref": "refs/heads/master",
+        "repo": "nim-native-dialogs",
+        "type": "github"
+      }
+    },
+    "src-oldwinapi-v2_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1519951720,
+        "narHash": "sha256-rgBol8eUQ+ezIBsmdomoHzT1fxsatEoilq/WFVo8GUM=",
+        "owner": "nim-lang",
+        "repo": "oldwinapi",
+        "rev": "8b34de48ac98702708a2ee20305d327416725d1e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/v2.1.0",
+        "repo": "oldwinapi",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

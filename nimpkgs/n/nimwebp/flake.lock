@@ -1,0 +1,233 @@
+{
+  "nodes": {
+    "cligen": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimwebp-master",
+          "github-yglukhov-clurp",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimwebp-master",
+          "github-yglukhov-clurp",
+          "nixpkgs"
+        ],
+        "src-cligen-v1_5_23": "src-cligen-v1_5_23"
+      },
+      "locked": {
+        "dir": "v1_5_23",
+        "lastModified": 1653696244,
+        "narHash": "sha256-3Fj26Qd6UiLWNGl90yp5UKIRv5t1oB+vmNk8yUuaCsY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "cligen",
+        "rev": "9af4a7fd2cdac1934665a3e51f9b9790d4cc21db",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_5_23",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "github-yglukhov-clurp": {
+      "inputs": {
+        "cligen": "cligen",
+        "flakeNimbleLib": [
+          "nimwebp-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimwebp-master",
+          "nixpkgs"
+        ],
+        "src-clurp-master": "src-clurp-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1653699538,
+        "narHash": "sha256-7KBKNzpeZqgBqIA6KYx24OdFAeMpPhgXidEpH91ruC8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-yglukhov-clurp",
+        "rev": "1b661e31f5f1b2749c13a1a72e2777d6e432b483",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-yglukhov-clurp",
+        "type": "github"
+      }
+    },
+    "nimpng": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimwebp-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimwebp-master",
+          "nixpkgs"
+        ],
+        "src-nimPNG-v0_3_1": "src-nimPNG-v0_3_1"
+      },
+      "locked": {
+        "dir": "v0_3_1",
+        "lastModified": 1653702155,
+        "narHash": "sha256-JI8U+cDA5O87KWGkb9w8N4dQiTlUPg8yGm9wnPMn17w=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimpng",
+        "rev": "c17bb60f8f9d629ebc5a90a46578f4376169ce1d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_3_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimpng",
+        "type": "github"
+      }
+    },
+    "nimwebp-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "github-yglukhov-clurp": "github-yglukhov-clurp",
+        "nimpng": "nimpng",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimwebp-master": "src-nimwebp-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1653702970,
+        "narHash": "sha256-1fq+s5mx4eXRmTNDJ1g+Sj6riFLkn8BhxvRnRXH3LU0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimwebp",
+        "rev": "8ed0f83546ebb80434de70743a479a9c2364fa3f",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimwebp",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimwebp-master": "nimwebp-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-cligen-v1_5_23": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1647952908,
+        "narHash": "sha256-rcledZbmcAXs0l5uQRmOennyMiw4G+zye6frGqksjyA=",
+        "owner": "c-blake",
+        "repo": "cligen",
+        "rev": "cac47b08172978dad61d08debd0e68c3f249a3f7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "c-blake",
+        "ref": "refs/tags/v1.5.23",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "src-clurp-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1583425697,
+        "narHash": "sha256-oamhfC2TupcVMV+KvUKUxP3SckuvGI4hM4aZnfnSq8Q=",
+        "owner": "yglukhov",
+        "repo": "clurp",
+        "rev": "1f2f9e5f7b4da19c2dfe9d2052d19e5e344dad18",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "clurp",
+        "type": "github"
+      }
+    },
+    "src-nimPNG-v0_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592630157,
+        "narHash": "sha256-PorEjQr0rJPeq8p5550qr5MvWAhbOZlDjPhchGVu+O0=",
+        "owner": "jangko",
+        "repo": "nimPNG",
+        "rev": "9de8e28dd77bb93fc003e877f1656967c2ca4852",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jangko",
+        "ref": "refs/tags/v0.3.1",
+        "repo": "nimPNG",
+        "type": "github"
+      }
+    },
+    "src-nimwebp-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1615580543,
+        "narHash": "sha256-qewnLJfqRmRc8Yy0CTGoKlbFmlU61GHs8mqi2JovWuA=",
+        "owner": "tormund",
+        "repo": "nimwebp",
+        "rev": "fbecc23827b9e7efbfec398d6ed37b9769b72155",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tormund",
+        "ref": "refs/heads/master",
+        "repo": "nimwebp",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

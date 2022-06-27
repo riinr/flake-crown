@@ -1,0 +1,153 @@
+{
+  "nodes": {
+    "ansiutils": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ansiutils-0_1_0": "src-ansiutils-0_1_0"
+      },
+      "locked": {
+        "dir": "0_1_0",
+        "lastModified": 1656300761,
+        "narHash": "sha256-VLAzRwJMMYvP8y+CrnyzY+viMAyVykoUzoss27G49cE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ansiutils",
+        "rev": "b4f4a51fc32e6ad7d08dfd599c110e9cf2501327",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ansiutils",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "illwave": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-illwave-0_5_0": "src-illwave-0_5_0"
+      },
+      "locked": {
+        "dir": "0_5_0",
+        "lastModified": 1656300947,
+        "narHash": "sha256-K+5duR5SjOcTL/05TAEanEWmvtaCVoVq5eoWcbOudr8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "illwave",
+        "rev": "d179744becf75f060b72fe134abc71a053a74664",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_5_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "illwave",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "ansiutils": "ansiutils",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "illwave": "illwave",
+        "nixpkgs": "nixpkgs",
+        "src-nimwave-0_4_0": "src-nimwave-0_4_0"
+      }
+    },
+    "src-ansiutils-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1651844094,
+        "narHash": "sha256-kRmAOV0bgWCUE0Bam8ZOJWyx4ALk6oh18jgokGwtOjk=",
+        "owner": "ansiwave",
+        "repo": "ansiutils",
+        "rev": "fc681228ecb51d82cfb65bb2c7fe47d90823321b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ansiwave",
+        "ref": "refs/tags/0.1.0",
+        "repo": "ansiutils",
+        "type": "github"
+      }
+    },
+    "src-illwave-0_5_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1655402730,
+        "narHash": "sha256-Gvn+D9Exi0emTKbttrUgjGs2SU2oiiRFH4l+iPZLzXQ=",
+        "owner": "ansiwave",
+        "repo": "illwave",
+        "rev": "9518433992ce89071942e77fbc00cafd3c913638",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ansiwave",
+        "ref": "refs/tags/0.5.0",
+        "repo": "illwave",
+        "type": "github"
+      }
+    },
+    "src-nimwave-0_4_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1653822764,
+        "narHash": "sha256-UymVTKuCq0suwwntfQkDM/Hx3RJmPCLN1BpeHvh7nkQ=",
+        "owner": "ansiwave",
+        "repo": "nimwave",
+        "rev": "cdcca346915ca6ee683217cd76752838f277e0d9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ansiwave",
+        "ref": "refs/tags/0.4.0",
+        "repo": "nimwave",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

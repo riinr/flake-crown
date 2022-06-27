@@ -1,0 +1,90 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "receq-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-receq-main": "src-receq-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1656298040,
+        "narHash": "sha256-lzjD9Lt/2ZAY+O+a2VcEPFW3A6v6MVWXsxPXhRZaHF8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "receq",
+        "rev": "b440509f48ee213e58f6a5af250e66d2bab4461b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "receq",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "receq-main": "receq-main"
+      }
+    },
+    "src-receq-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1655936815,
+        "narHash": "sha256-AnEByg7ejNOgPAWORzWWN8ymHGZBKkxD8dTA8BKh7Pc=",
+        "owner": "choltreppe",
+        "repo": "nim_receq",
+        "rev": "b1a148d5df7fb444f07c68700e8710866cf26cb8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "choltreppe",
+        "ref": "refs/heads/main",
+        "repo": "nim_receq",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

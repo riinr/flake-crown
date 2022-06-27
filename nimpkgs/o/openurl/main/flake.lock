@@ -1,0 +1,108 @@
+{
+  "nodes": {
+    "figures": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-figures-v1_2_0": "src-figures-v1_2_0"
+      },
+      "locked": {
+        "dir": "v1_2_0",
+        "lastModified": 1656300885,
+        "narHash": "sha256-cZS1tUbfe1sZWpjxEg8ayDAI6BmqKgfpQYn7iemfJ4M=",
+        "owner": "nim-nix-pkgs",
+        "repo": "figures",
+        "rev": "27fb249f093285e67ef530073db89e465977f679",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_2_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "figures",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "figures": "figures",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-openurl-main": "src-openurl-main"
+      }
+    },
+    "src-figures-v1_2_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1572141848,
+        "narHash": "sha256-BPMWS92AU/JIdKrrQ08YcN7X20keVQYnh4olv6lVBjE=",
+        "owner": "lmariscal",
+        "repo": "figures",
+        "rev": "f2f748745287d7380522403e072209c27b27bfe1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lmariscal",
+        "ref": "refs/tags/v1.2.0",
+        "repo": "figures",
+        "type": "github"
+      }
+    },
+    "src-openurl-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1656106145,
+        "narHash": "sha256-w/pTkpd5ff67rhEeuPoGRWFm4XmM76iHMYb9UT7HpYg=",
+        "owner": "foxoman",
+        "repo": "openurl",
+        "rev": "682c6cce32d80f6a945f5e1ecd0b9076e2492ef6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "foxoman",
+        "ref": "refs/heads/main",
+        "repo": "openurl",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

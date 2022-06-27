@@ -1,0 +1,90 @@
+{
+  "nodes": {
+    "coap-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-coap-master": "src-coap-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1656297638,
+        "narHash": "sha256-wDFXU6dl6Z3kLnrwgPpEiZsjXz7Ik75T2nQQLtDMaTQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "coap",
+        "rev": "6ec832f53440c37af4fab385c0f0e15d3645c8ae",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "coap",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "coap-master": "coap-master",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-coap-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1654695463,
+        "narHash": "sha256-hLfyeRDzS7tbJnGaf8SVyqzM/7a6fQBr/E9HyFf/BEM=",
+        "owner": "PMunch",
+        "repo": "libcoap",
+        "rev": "d2c6763cc8f9044938a92ab6ad01f359dc0bc860",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PMunch",
+        "ref": "refs/heads/master",
+        "repo": "libcoap",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

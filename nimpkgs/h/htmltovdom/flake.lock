@@ -1,0 +1,235 @@
+{
+  "nodes": {
+    "dotenv": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "htmltovdom-main",
+          "karax",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "htmltovdom-main",
+          "karax",
+          "nixpkgs"
+        ],
+        "src-dotenv-2_0_1": "src-dotenv-2_0_1"
+      },
+      "locked": {
+        "dir": "2_0_1",
+        "lastModified": 1648163046,
+        "narHash": "sha256-hSZDHaet1+q7yhQBZvq9894Yd6UzTkaCdN19YLEIc3k=",
+        "owner": "nim-nix-pkgs",
+        "repo": "dotenv",
+        "rev": "315d6b762c18bf2c5cf51ed82e0d3e7d1cf1b270",
+        "type": "github"
+      },
+      "original": {
+        "dir": "2_0_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "dotenv",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "htmltovdom-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "karax": "karax",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-htmlToVdom-main": "src-htmlToVdom-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1653703363,
+        "narHash": "sha256-1qOokxrop6SipsXaYmf5gt02u42D5lWBJgwKJNPBHPk=",
+        "owner": "nim-nix-pkgs",
+        "repo": "htmltovdom",
+        "rev": "a38f22b071c579f7256c0a968f219bb754832592",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "htmltovdom",
+        "type": "github"
+      }
+    },
+    "karax": {
+      "inputs": {
+        "dotenv": "dotenv",
+        "flakeNimbleLib": [
+          "htmltovdom-main",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "htmltovdom-main",
+          "nixpkgs"
+        ],
+        "src-karax-1_2_1": "src-karax-1_2_1",
+        "ws": "ws"
+      },
+      "locked": {
+        "dir": "1_2_1",
+        "lastModified": 1653703197,
+        "narHash": "sha256-tYJdo97qEpRRbGT0bog5Q1rPBk3g6SdShIOlD7CoTqw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "karax",
+        "rev": "db686b91627958814585d177bcbd833f55b72e4d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "1_2_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "karax",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "htmltovdom-main": "htmltovdom-main",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-dotenv-2_0_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644435683,
+        "narHash": "sha256-JH+RbloZtTj7RJsGuNUuiZ7fl+twPdgh2OVMHO/uyCM=",
+        "owner": "euantorano",
+        "repo": "dotenv.nim",
+        "rev": "4b8613cb4c46331729e88f594c5ae2b727381a57",
+        "type": "github"
+      },
+      "original": {
+        "owner": "euantorano",
+        "ref": "refs/tags/2.0.1",
+        "repo": "dotenv.nim",
+        "type": "github"
+      }
+    },
+    "src-htmlToVdom-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1637859316,
+        "narHash": "sha256-J/g4ol1itBlpFNT/9Yp7joenRjR5sugujA73acAkZ1I=",
+        "owner": "C-NERD",
+        "repo": "htmlToVdom",
+        "rev": "e488e0c7a5f02bb69cc1c7f9d4de42453a751ebe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "C-NERD",
+        "ref": "refs/heads/main",
+        "repo": "htmlToVdom",
+        "type": "github"
+      }
+    },
+    "src-karax-1_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1607446994,
+        "narHash": "sha256-YhgHKEXwLluIMv2zXfD4yIYGlu5J/ybtWcsD2R8/c8s=",
+        "owner": "karaxnim",
+        "repo": "karax",
+        "rev": "4c06cb3204bfc89dbbdd1b4d20ca888bd61aeaa1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "karaxnim",
+        "ref": "refs/tags/1.2.1",
+        "repo": "karax",
+        "type": "github"
+      }
+    },
+    "src-ws-0_5_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1637352233,
+        "narHash": "sha256-3wVi6CjMTjcc5MJEozJN6W3TuYDb53w2MDCsv6lMH0k=",
+        "owner": "treeform",
+        "repo": "ws",
+        "rev": "9536bf99ddf5948db221ccb7bb3663aa238a8e21",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/0.5.0",
+        "repo": "ws",
+        "type": "github"
+      }
+    },
+    "ws": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "htmltovdom-main",
+          "karax",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "htmltovdom-main",
+          "karax",
+          "nixpkgs"
+        ],
+        "src-ws-0_5_0": "src-ws-0_5_0"
+      },
+      "locked": {
+        "dir": "0_5_0",
+        "lastModified": 1648163766,
+        "narHash": "sha256-vLrM2y8B7uDADSBDFi6vh4UlV0mgiBJUSZ3t0F179Fo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ws",
+        "rev": "1aa3b21b0bcc7bd6a6c3b85cfbf4d62e87ed90c6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_5_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ws",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

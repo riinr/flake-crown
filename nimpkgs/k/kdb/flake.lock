@@ -1,0 +1,233 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "isaac": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "kdb-master",
+          "uuids",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "kdb-master",
+          "uuids",
+          "nixpkgs"
+        ],
+        "src-isaac-v0_1_3": "src-isaac-v0_1_3"
+      },
+      "locked": {
+        "dir": "v0_1_3",
+        "lastModified": 1648163189,
+        "narHash": "sha256-rzNe596B38qOgYOhYp7yAOwWcLXyIafstsTK+Pnb34o=",
+        "owner": "nim-nix-pkgs",
+        "repo": "isaac",
+        "rev": "0a4b367dbdae8f9874690e1c061835edb01a81b3",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "isaac",
+        "type": "github"
+      }
+    },
+    "kdb-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-kdb-master": "src-kdb-master",
+        "terminaltables": "terminaltables",
+        "uuids": "uuids"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1653703365,
+        "narHash": "sha256-kZrgWJfxM/LUm9sDQeoCYzZHuQlW+1bP5wKKRQMLLOI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "kdb",
+        "rev": "68c8d8daacc74d10c56255a43b8544e2a6820a50",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "kdb",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "kdb-master": "kdb-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-isaac-v0_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1510809879,
+        "narHash": "sha256-3GtG/oC4b41I6E7SHYzvAfYvJ/qLmEOVZDn77350w0M=",
+        "owner": "pragmagic",
+        "repo": "isaac",
+        "rev": "45a5cbbd54ff59ba3ed94242620c818b9aad1b5b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.1.3",
+        "repo": "isaac",
+        "type": "github"
+      }
+    },
+    "src-kdb-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1612044856,
+        "narHash": "sha256-V6U3XomHTPxZsWTm+d5ha+3+m4RBM7jW6cua08f1q0g=",
+        "owner": "inv2004",
+        "repo": "kdb_nim",
+        "rev": "ea8ac010683f6de61ce18deb135a97f6d227bd33",
+        "type": "github"
+      },
+      "original": {
+        "owner": "inv2004",
+        "ref": "refs/heads/master",
+        "repo": "kdb_nim",
+        "type": "github"
+      }
+    },
+    "src-terminaltables-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1590105459,
+        "narHash": "sha256-v0UH/8Aax0eA7mO1qA36AwJUBCVZTaKfZkeIzd4Ppzw=",
+        "owner": "xmonader",
+        "repo": "nim-terminaltables",
+        "rev": "37981f5d403fb55688e00d24ab9b1d56e252f52b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xmonader",
+        "ref": "refs/heads/master",
+        "repo": "nim-terminaltables",
+        "type": "github"
+      }
+    },
+    "src-uuids-v0_1_11": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1610705233,
+        "narHash": "sha256-TFA9jp1lkQR/sR8GkpHRHu8KZyHD9d4RStm5rLtrzkg=",
+        "owner": "pragmagic",
+        "repo": "uuids",
+        "rev": "8cb8720b567c6bcb261bd1c0f7491bdb5209ad06",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pragmagic",
+        "ref": "refs/tags/v0.1.11",
+        "repo": "uuids",
+        "type": "github"
+      }
+    },
+    "terminaltables": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "kdb-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "kdb-master",
+          "nixpkgs"
+        ],
+        "src-terminaltables-master": "src-terminaltables-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1653702449,
+        "narHash": "sha256-eFEpoGxwb/pLVLJfA45OGtyuqTeTqtNn5zZunswhgJI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "terminaltables",
+        "rev": "6d9db874d6a8030ac70ec9b019f2da648cf27966",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "terminaltables",
+        "type": "github"
+      }
+    },
+    "uuids": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "kdb-master",
+          "flakeNimbleLib"
+        ],
+        "isaac": "isaac",
+        "nixpkgs": [
+          "kdb-master",
+          "nixpkgs"
+        ],
+        "src-uuids-v0_1_11": "src-uuids-v0_1_11"
+      },
+      "locked": {
+        "dir": "v0_1_11",
+        "lastModified": 1653703020,
+        "narHash": "sha256-P236ye6MvT+QtnxUZXHx+KWohkKpKPuiN+5x5grCchg=",
+        "owner": "nim-nix-pkgs",
+        "repo": "uuids",
+        "rev": "a5eb8fcb949e59ca1de00883c548ac7fcfcf2cbe",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_11",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "uuids",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

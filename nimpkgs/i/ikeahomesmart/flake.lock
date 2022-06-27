@@ -1,0 +1,137 @@
+{
+  "nodes": {
+    "coap": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "ikeahomesmart-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "ikeahomesmart-master",
+          "nixpkgs"
+        ],
+        "src-coap-master": "src-coap-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1656300827,
+        "narHash": "sha256-zdcunBKpf5fv9Uigbg82fS13uVWH2tMvGO989nV9YZU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "coap",
+        "rev": "0f1632e919a0a09f3cc9a7a411267d71295ca932",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "coap",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "ikeahomesmart-master": {
+      "inputs": {
+        "coap": "coap",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ikeahomesmart-master": "src-ikeahomesmart-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1656283747,
+        "narHash": "sha256-+zO/ve8N3+MPi0hdL6LWhUykuEK9Bs0ao4LXm6s9ykc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ikeahomesmart",
+        "rev": "0ace210695a04769dbbc847cc8681c2edc7d19b1",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ikeahomesmart",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "ikeahomesmart-master": "ikeahomesmart-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-coap-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1654695463,
+        "narHash": "sha256-hLfyeRDzS7tbJnGaf8SVyqzM/7a6fQBr/E9HyFf/BEM=",
+        "owner": "PMunch",
+        "repo": "libcoap",
+        "rev": "d2c6763cc8f9044938a92ab6ad01f359dc0bc860",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PMunch",
+        "ref": "refs/heads/master",
+        "repo": "libcoap",
+        "type": "github"
+      }
+    },
+    "src-ikeahomesmart-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1654696251,
+        "narHash": "sha256-pv4ta7e/6/Iu2Xr3UiJSaktj0wpn1CiUjxeWeSM93DI=",
+        "owner": "PMunch",
+        "repo": "ikeahomesmart",
+        "rev": "22109a5abb70937dd640e046d4d5f2bd4dbf4b3e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PMunch",
+        "ref": "refs/heads/master",
+        "repo": "ikeahomesmart",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

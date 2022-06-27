@@ -1,0 +1,135 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "once-1_0_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-once-1_0_0": "src-once-1_0_0"
+      },
+      "locked": {
+        "dir": "1_0_0",
+        "lastModified": 1656297966,
+        "narHash": "sha256-b5H+VzLg6X+1qnzwbDX4B0PDFetPURW2HifE/B1Taeg=",
+        "owner": "nim-nix-pkgs",
+        "repo": "once",
+        "rev": "3c6c0097b2340e95167183e22354a70509e8c811",
+        "type": "github"
+      },
+      "original": {
+        "dir": "1_0_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "once",
+        "type": "github"
+      }
+    },
+    "once-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-once-master": "src-once-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1656297966,
+        "narHash": "sha256-b5H+VzLg6X+1qnzwbDX4B0PDFetPURW2HifE/B1Taeg=",
+        "owner": "nim-nix-pkgs",
+        "repo": "once",
+        "rev": "3c6c0097b2340e95167183e22354a70509e8c811",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "once",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "once-1_0_0": "once-1_0_0",
+        "once-master": "once-master"
+      }
+    },
+    "src-once-1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1599813581,
+        "narHash": "sha256-c0yootoTL+sf8P53cos3ag0ZeF3hpI9sLu6PN7P5MeU=",
+        "owner": "~euantorano",
+        "repo": "once.nim",
+        "rev": "6e3c9db8e15e91053b296ab6981cf079a8acfd8b",
+        "type": "sourcehut"
+      },
+      "original": {
+        "owner": "~euantorano",
+        "ref": "1.0.0",
+        "repo": "once.nim",
+        "type": "sourcehut"
+      }
+    },
+    "src-once-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1600811486,
+        "narHash": "sha256-K8PpqYhB98GlzDAybo2w0h27qP9KwiimLVh2JcIZxm8=",
+        "owner": "~euantorano",
+        "repo": "once.nim",
+        "rev": "4d52f9034e94c81740e1ef98c8d1d9d4c851a2fc",
+        "type": "sourcehut"
+      },
+      "original": {
+        "owner": "~euantorano",
+        "ref": "master",
+        "repo": "once.nim",
+        "type": "sourcehut"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
