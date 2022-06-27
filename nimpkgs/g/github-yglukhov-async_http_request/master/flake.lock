@@ -1,0 +1,154 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "github-yglukhov-wasmrt": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "jsbind",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "jsbind",
+          "nixpkgs"
+        ],
+        "src-wasmrt-master": "src-wasmrt-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648447347,
+        "narHash": "sha256-7M+0UmBBABkeyDjK95AszIAXoRdYmi2BOFzYBbKTv1M=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-yglukhov-wasmrt",
+        "rev": "fec01769f42d736b8623937acdd87484e3746115",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-yglukhov-wasmrt",
+        "type": "github"
+      }
+    },
+    "jsbind": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "github-yglukhov-wasmrt": "github-yglukhov-wasmrt",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jsbind-master": "src-jsbind-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650754314,
+        "narHash": "sha256-bA1LLJYw5u9eUiqZGi5pwL+LrK9hMXT0ojRwtMAetTI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "jsbind",
+        "rev": "520ab94519d77de2c99426411c1e00713227f8a4",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "jsbind",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "jsbind": "jsbind",
+        "nixpkgs": "nixpkgs",
+        "src-async_http_request-master": "src-async_http_request-master"
+      }
+    },
+    "src-async_http_request-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1615300219,
+        "narHash": "sha256-mCuVrw0Z7/v7PI5ntfAzllZctMkjsGX5qe3p2a/c7ro=",
+        "owner": "yglukhov",
+        "repo": "async_http_request",
+        "rev": "0b908039164e54488171574d6def1182c1cfdf2a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "async_http_request",
+        "type": "github"
+      }
+    },
+    "src-jsbind-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1613498358,
+        "narHash": "sha256-aYSxzEjP9ulOHZ+umqw8OLDwz2zJk7N8Q7LO7k2bU5w=",
+        "owner": "yglukhov",
+        "repo": "jsbind",
+        "rev": "f623de0db495ad7bcc948948e1fb38a090687834",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "jsbind",
+        "type": "github"
+      }
+    },
+    "src-wasmrt-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645613881,
+        "narHash": "sha256-6jyTpNEN+5v1OHL1egJ8n8J5LX2ShjNe3RwaFcuzlpw=",
+        "owner": "yglukhov",
+        "repo": "wasmrt",
+        "rev": "898872bfab3f51999bc00246160401bce43bc099",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "wasmrt",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

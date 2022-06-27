@@ -1,0 +1,67 @@
+{
+  "name": "gittyup",
+  "version": "2.5.2",
+  "author": "disruptek",
+  "desc": "higher-level git bindings that build upon nimgit2",
+  "license": "MIT",
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [],
+  "installFiles": [],
+  "installExt": [],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 1.0.4",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.0.4"
+      }
+    },
+    {
+      "name": "nimgit2",
+      "str": ">= 0.3.0 & < 1.0.0",
+      "ver": {
+        "kind": "verIntersect",
+        "verILeft": {
+          "kind": "verEqLater",
+          "ver": "0.3.0"
+        },
+        "verIRight": {
+          "kind": "verEarlier",
+          "ver": "1.0.0"
+        }
+      }
+    },
+    {
+      "name": "nimterop",
+      "str": "< 1.0.0",
+      "ver": {
+        "kind": "verEarlier",
+        "ver": "1.0.0"
+      }
+    },
+    {
+      "name": "https://github.com/disruptek/badresults",
+      "str": "< 2.0.0",
+      "ver": {
+        "kind": "verEarlier",
+        "ver": "2.0.0"
+      }
+    },
+    {
+      "name": "regex",
+      "str": ">= 0.15.0",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.15.0"
+      }
+    }
+  ],
+  "bin": [],
+  "binDir": "",
+  "srcDir": "",
+  "backend": "c",
+  "ref": "refs/tags/2.5.2"
+}

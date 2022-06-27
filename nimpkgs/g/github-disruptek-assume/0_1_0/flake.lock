@@ -1,0 +1,297 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "github-disruptek-balls": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "github-disruptek-grok": "github-disruptek-grok",
+        "github-disruptek-ups": "github-disruptek-ups",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-balls-3_7_0": "src-balls-3_7_0",
+        "sync": "sync"
+      },
+      "locked": {
+        "dir": "3_7_0",
+        "lastModified": 1648447335,
+        "narHash": "sha256-JlAStgwK83U8Z36lqv77lGdQ5ufEdkheaeI7efSpYV0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-disruptek-balls",
+        "rev": "06850d0c8dd23dfd394e469f584893cccdfad26b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "3_7_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-disruptek-balls",
+        "type": "github"
+      }
+    },
+    "github-disruptek-grok": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "github-disruptek-balls",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "github-disruptek-balls",
+          "nixpkgs"
+        ],
+        "src-grok-0_5_3": "src-grok-0_5_3"
+      },
+      "locked": {
+        "dir": "0_5_3",
+        "lastModified": 1648432089,
+        "narHash": "sha256-NkhTPHYRnthVqDIJr7/12JbaQeXdUpgcYKtNaclCSIc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-disruptek-grok",
+        "rev": "7398319e687eb87ef8931fe14c6b1a8ba91e5a68",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_5_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-disruptek-grok",
+        "type": "github"
+      }
+    },
+    "github-disruptek-ups": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "github-disruptek-balls",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "github-disruptek-balls",
+          "nixpkgs"
+        ],
+        "npeg": "npeg",
+        "src-ups-0_0_7": "src-ups-0_0_7"
+      },
+      "locked": {
+        "dir": "0_0_7",
+        "lastModified": 1648447337,
+        "narHash": "sha256-ZaKhNBwZWpwqjYgLwiTBY0Hy0CSMcSQ3rAf3FKC4M+8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-disruptek-ups",
+        "rev": "2323d8e8e6f0af01f7f1f5e25c9f62933599bd18",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_0_7",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-disruptek-ups",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "npeg": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "github-disruptek-balls",
+          "github-disruptek-ups",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "github-disruptek-balls",
+          "github-disruptek-ups",
+          "nixpkgs"
+        ],
+        "src-npeg-0_26_0": "src-npeg-0_26_0"
+      },
+      "locked": {
+        "dir": "0_26_0",
+        "lastModified": 1650750480,
+        "narHash": "sha256-bmI45sV2+CXcqoFvGgylAFhGzD81lr0hvn7+UKvQi7E=",
+        "owner": "nim-nix-pkgs",
+        "repo": "npeg",
+        "rev": "683ec21f719fd7cd7f772fb0c46b8caf55de0ea7",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_26_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "npeg",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "github-disruptek-balls": "github-disruptek-balls",
+        "nixpkgs": "nixpkgs",
+        "src-assume-0_1_0": "src-assume-0_1_0"
+      }
+    },
+    "src-assume-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1628184424,
+        "narHash": "sha256-Sclknx+fD4Bkcf2ER97KLLul1NtpUvuRBpkl9UwB3x0=",
+        "owner": "disruptek",
+        "repo": "assume",
+        "rev": "1beec307444b100c2c2672dd5e6c4a8d851ca7aa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/0.1.0",
+        "repo": "assume",
+        "type": "github"
+      }
+    },
+    "src-balls-3_7_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1634517818,
+        "narHash": "sha256-fhojLTq58CV/SiqBbs3EEPfQxm2SbWdxeqVsL6oyHD4=",
+        "owner": "disruptek",
+        "repo": "balls",
+        "rev": "28f87ec5507398cda61ffde841b75f6c797d8156",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/3.7.0",
+        "repo": "balls",
+        "type": "github"
+      }
+    },
+    "src-grok-0_5_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1627351790,
+        "narHash": "sha256-7i31EjgQzAg8L0YNWFyXe6KhnCQUaIZNlpXtEkHvx/E=",
+        "owner": "disruptek",
+        "repo": "grok",
+        "rev": "4b8963fd9a71751b529ea206080061b7a64b028b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/0.5.3",
+        "repo": "grok",
+        "type": "github"
+      }
+    },
+    "src-npeg-0_26_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1638043012,
+        "narHash": "sha256-TONFgg0upLJuhsP9y+z+kYZp+m8/h36NK/VOK2h0Aw0=",
+        "owner": "zevv",
+        "repo": "npeg",
+        "rev": "afbd4e09055a9c01ea4b860a7a622748bc382e8f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zevv",
+        "ref": "refs/tags/0.26.0",
+        "repo": "npeg",
+        "type": "github"
+      }
+    },
+    "src-sync-v1_5_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1639158019,
+        "narHash": "sha256-zX0z3bkuJmuf+BXJWejHLLX/SHV6pkrKe0d48GY5vjs=",
+        "owner": "planetis-m",
+        "repo": "sync",
+        "rev": "9b8c2926286377aeca0cc41cd313eaf140ecea64",
+        "type": "github"
+      },
+      "original": {
+        "owner": "planetis-m",
+        "ref": "refs/tags/v1.5.0",
+        "repo": "sync",
+        "type": "github"
+      }
+    },
+    "src-ups-0_0_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1618243090,
+        "narHash": "sha256-qRzpWPORJYLqVK//5BQkw4SvgJzOzQBEgBp7S58S0Ps=",
+        "owner": "disruptek",
+        "repo": "ups",
+        "rev": "afd93b80bd8c7c1a786b0f649240797cc0f6b538",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/0.0.7",
+        "repo": "ups",
+        "type": "github"
+      }
+    },
+    "sync": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "github-disruptek-balls",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "github-disruptek-balls",
+          "nixpkgs"
+        ],
+        "src-sync-v1_5_0": "src-sync-v1_5_0"
+      },
+      "locked": {
+        "dir": "v1_5_0",
+        "lastModified": 1650750622,
+        "narHash": "sha256-sbwtKVG6LBCdgBjmpQf06/NnXf97ctXK6aa/UGZsjMQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sync",
+        "rev": "c126d2d7784d8b0bf979c30e25119a4a00271f10",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_5_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sync",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

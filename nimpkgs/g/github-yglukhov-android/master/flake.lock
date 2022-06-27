@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "jnim": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-jnim-v0_5_1": "src-jnim-v0_5_1"
+      },
+      "locked": {
+        "dir": "v0_5_1",
+        "lastModified": 1651592361,
+        "narHash": "sha256-Hlr8T2wvDP1s/Ts/CUHIJRf2GZpW6/JPxJ5dqW/L30g=",
+        "owner": "nim-nix-pkgs",
+        "repo": "jnim",
+        "rev": "fe3781907e416f89135c44a2cd5f810cc81709fb",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_5_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "jnim",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "jnim": "jnim",
+        "nixpkgs": "nixpkgs",
+        "src-android-master": "src-android-master"
+      }
+    },
+    "src-android-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1594126352,
+        "narHash": "sha256-1eiHg62L0Eewo0rCSApHGR5h0ambxV8g2Cs+4H1eriY=",
+        "owner": "yglukhov",
+        "repo": "android",
+        "rev": "f3b5b8aba7d1146ff1b5f866e073ea1086e760fa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "android",
+        "type": "github"
+      }
+    },
+    "src-jnim-v0_5_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569224815,
+        "narHash": "sha256-CVt9EMDfKA16rWK99/67V+sFAql87OqQiFtOjHGhE/0=",
+        "owner": "yglukhov",
+        "repo": "jnim",
+        "rev": "68a9b21aa0b93ad77b390671325de3a77875c44a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/tags/v0.5.1",
+        "repo": "jnim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

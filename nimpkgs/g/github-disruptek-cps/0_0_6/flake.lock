@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "sorta": "sorta",
+        "src-cps-0_0_6": "src-cps-0_0_6"
+      }
+    },
+    "sorta": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sorta-master": "src-sorta-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650750595,
+        "narHash": "sha256-iGkqtILFROE4WUV8NGIIJS6FQrWAX1pYApwJRtYbHp4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sorta",
+        "rev": "92d64e050b1a8b1c61ca6eff42395fe1e9fe14cf",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sorta",
+        "type": "github"
+      }
+    },
+    "src-cps-0_0_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1595558563,
+        "narHash": "sha256-aQsXHT26AcLZjqR3p8pIT4loizV5wVjv68jvXmf3hd0=",
+        "owner": "disruptek",
+        "repo": "cps",
+        "rev": "157c18491356842ee4c992e57b0ab6e8b0fd0096",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/0.0.6",
+        "repo": "cps",
+        "type": "github"
+      }
+    },
+    "src-sorta-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591549435,
+        "narHash": "sha256-THd4EyHfhQQ9GVRaqisj5GBtoGFPGBNvGZMPC1zGluU=",
+        "owner": "narimiran",
+        "repo": "sorta",
+        "rev": "be57458b5b075151cbc192a99c2a43e513a6340a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "narimiran",
+        "ref": "refs/heads/master",
+        "repo": "sorta",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

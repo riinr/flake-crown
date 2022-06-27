@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-mofuhttputils-master": "src-mofuhttputils-master"
+      }
+    },
+    "src-mofuhttputils-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1545360468,
+        "narHash": "sha256-annYsQOdNWuGg/x3Twgi3T06dkwpP0Bw+AmHCXMlN5M=",
+        "owner": "2vg",
+        "repo": "mofuhttputils",
+        "rev": "6f9e1fa2ecf0d1e2fc040b28ee7b2e0b198fb67f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "2vg",
+        "ref": "refs/heads/master",
+        "repo": "mofuhttputils",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

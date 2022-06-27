@@ -1,0 +1,43 @@
+{
+  "name": "semaphores",
+  "version": "0.0.1",
+  "author": "disruptek",
+  "desc": "semaphores",
+  "license": "MIT",
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [],
+  "installFiles": [],
+  "installExt": [],
+  "requires": [
+    {
+      "name": "https://github.com/disruptek/balls",
+      "str": ">= 3.0.0 & < 4.0.0",
+      "ver": {
+        "kind": "verIntersect",
+        "verILeft": {
+          "kind": "verEqLater",
+          "ver": "3.0.0"
+        },
+        "verIRight": {
+          "kind": "verEarlier",
+          "ver": "4.0.0"
+        }
+      }
+    },
+    {
+      "name": "https://github.com/disruptek/criterion",
+      "str": "< 1.0.0",
+      "ver": {
+        "kind": "verEarlier",
+        "ver": "1.0.0"
+      }
+    }
+  ],
+  "bin": [],
+  "binDir": "",
+  "srcDir": "",
+  "backend": "c",
+  "ref": "refs/tags/0.0.1"
+}

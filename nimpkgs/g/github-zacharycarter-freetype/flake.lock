@@ -1,0 +1,89 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "freetype-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-freetype-master": "src-freetype-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1652367103,
+        "narHash": "sha256-pN1g4btWHIMdO+WEdZ3VKFO30Oz43quWuUEpYFZS8Z4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "freetype",
+        "rev": "d1c26cc91dedf952735aba973803c7e00e18970c",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "freetype",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "freetype-master": "freetype-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-freetype-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1608126642,
+        "narHash": "sha256-neLMKA+K+lA+wh0V9dBt4RyzRhNZrGL1/sg5BUaOuek=",
+        "owner": "jangko",
+        "repo": "freetype",
+        "rev": "b41584042aa5fccd82142341e6241af8d4de714e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jangko",
+        "ref": "refs/heads/master",
+        "repo": "freetype",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

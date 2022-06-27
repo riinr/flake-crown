@@ -1,0 +1,152 @@
+{
+  "nodes": {
+    "bytes2human": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-bytes2human-master": "src-bytes2human-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1650749654,
+        "narHash": "sha256-OXUU0mCAGjmYbFo1SmQsEjGITUAJkZkQE13RSY/R4iw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "bytes2human",
+        "rev": "77febb227403951445c66a9262eb4def91362148",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "bytes2human",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "github-disruptek-grok": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-grok-0_5_3": "src-grok-0_5_3"
+      },
+      "locked": {
+        "dir": "0_5_3",
+        "lastModified": 1648432089,
+        "narHash": "sha256-NkhTPHYRnthVqDIJr7/12JbaQeXdUpgcYKtNaclCSIc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-disruptek-grok",
+        "rev": "7398319e687eb87ef8931fe14c6b1a8ba91e5a68",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_5_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-disruptek-grok",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
+        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "bytes2human": "bytes2human",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "github-disruptek-grok": "github-disruptek-grok",
+        "nixpkgs": "nixpkgs",
+        "src-testes-0_7_3": "src-testes-0_7_3"
+      }
+    },
+    "src-bytes2human-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1613005372,
+        "narHash": "sha256-KWkvMjmlQfMiTaEB+EyACXVOesNCg4mCDRef/GmQZLw=",
+        "owner": "juancarlospaco",
+        "repo": "nim-bytes2human",
+        "rev": "ec2c1a758cabdd4751a06c8ebf2b923f19e32731",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juancarlospaco",
+        "ref": "refs/heads/master",
+        "repo": "nim-bytes2human",
+        "type": "github"
+      }
+    },
+    "src-grok-0_5_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1627351790,
+        "narHash": "sha256-7i31EjgQzAg8L0YNWFyXe6KhnCQUaIZNlpXtEkHvx/E=",
+        "owner": "disruptek",
+        "repo": "grok",
+        "rev": "4b8963fd9a71751b529ea206080061b7a64b028b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/0.5.3",
+        "repo": "grok",
+        "type": "github"
+      }
+    },
+    "src-testes-0_7_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1608524200,
+        "narHash": "sha256-zXsi2Z/IzCg7CWs+nMnSBzvmAKd9Ir23FFWKoNrhVe0=",
+        "owner": "disruptek",
+        "repo": "testes",
+        "rev": "f03011e4fd0fb621a8dff9c956d602ff9252530a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "disruptek",
+        "ref": "refs/tags/0.7.3",
+        "repo": "testes",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

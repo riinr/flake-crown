@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-github-enthus1ast-nimIsPrivateIp-master": "src-github-enthus1ast-nimIsPrivateIp-master"
+      }
+    },
+    "src-github-enthus1ast-nimIsPrivateIp-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603982523,
+        "narHash": "sha256-bK1+CbH6JfbWSPSvKi5clGOXeXYjNQh2CFYwPBvHC1E=",
+        "owner": "enthus1ast",
+        "repo": "nimIsPrivateIp",
+        "rev": "3b4228ce3492410dbac9998e755eb51f8171dc9b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "enthus1ast",
+        "ref": "refs/heads/master",
+        "repo": "nimIsPrivateIp",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,107 @@
+{
+  "nodes": {
+    "c2nim": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-c2nim-0_9_18": "src-c2nim-0_9_18"
+      },
+      "locked": {
+        "dir": "0_9_18",
+        "lastModified": 1653701753,
+        "narHash": "sha256-6/a1PKt/yCCGmxEYwmzEC8OsVCKtaiqWawh4AIavfF4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "c2nim",
+        "rev": "227fc1a50b3686c88d90d839551c3fba602236fe",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_9_18",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "c2nim",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "c2nim": "c2nim",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-dbus-master": "src-dbus-master"
+      }
+    },
+    "src-c2nim-0_9_18": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1622276437,
+        "narHash": "sha256-127ux36mfC+PnS2HIQffw+z0TSvzdQXnKRxqYV3XahU=",
+        "owner": "nim-lang",
+        "repo": "c2nim",
+        "rev": "e0ae7240e624bfbd7a2b213318b36f113a13cdeb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/0.9.18",
+        "repo": "c2nim",
+        "type": "github"
+      }
+    },
+    "src-dbus-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1552671925,
+        "narHash": "sha256-UluVb3SdapfcoyzGOIi1nGdlsrADUhSmZiS3FhyOZXw=",
+        "owner": "solitudesf",
+        "repo": "nim-dbus",
+        "rev": "04b94a448e4344b83e63c93d78242dd0a127a095",
+        "type": "github"
+      },
+      "original": {
+        "owner": "solitudesf",
+        "ref": "refs/heads/master",
+        "repo": "nim-dbus",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
