@@ -1,0 +1,101 @@
+{
+  "name": "ssz_serialization",
+  "url": "https://github.com/status-im/nim-ssz-serialization",
+  "method": "git",
+  "tags": [],
+  "description": "Nim implementation of the Ethereum SSZ serialization format",
+  "license": "MIT",
+  "web": "https://github.com/status-im/nim-ssz-serialization",
+  "refs": [
+    "refs/heads/add-fixes",
+    "refs/heads/bitlist-pairs",
+    "refs/heads/fix_ci_badge_url",
+    "refs/heads/master",
+    "refs/heads/merkleization-test",
+    "refs/heads/move-ssz-code",
+    "refs/heads/move-ssz-code-ii",
+    "refs/heads/ssz-union",
+    ""
+  ],
+  "heads": [
+    {
+      "name": "ssz_serialization",
+      "version": "0.1.0",
+      "author": "Status Research & Development GmbH",
+      "desc": "Simple Serialize (SSZ) serialization and merkleization",
+      "license": "Apache License 2.0",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "serialization",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "json_serialization",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "blscurve",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/master"
+    }
+  ]
+}

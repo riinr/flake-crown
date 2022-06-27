@@ -1,0 +1,232 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "jsony": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "supranim-main",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "supranim-main",
+          "nixpkgs"
+        ],
+        "src-jsony-1_1_3": "src-jsony-1_1_3"
+      },
+      "locked": {
+        "dir": "1_1_3",
+        "lastModified": 1652391146,
+        "narHash": "sha256-I4gm5atTzzToan++ITUW2itASRyZWKae5NidFyAyuMo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "jsony",
+        "rev": "9ee5a57492a5933ee71624c893c64160a8fa7dd4",
+        "type": "github"
+      },
+      "original": {
+        "dir": "1_1_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "jsony",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
+        "path": "/nix/store/q2jrkx5a3z6yxzbfai0kxpnqki80jm3l-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nyml": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "supranim-main",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "supranim-main",
+          "nixpkgs"
+        ],
+        "src-nyml-main": "src-nyml-main",
+        "toktok": "toktok"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1652392267,
+        "narHash": "sha256-JPQFxcpTdaIh8K+/vl69Mdgds5m1V83deiikRKA+EwY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nyml",
+        "rev": "0cd2e5cabe353006542e3469d0d34c8d3fb636a1",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nyml",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "supranim-main": "supranim-main"
+      }
+    },
+    "src-jsony-1_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1641248657,
+        "narHash": "sha256-jtUCoqwCmE536Kpv/vZxGgqiHyReZf1WOiBdUzmMhM4=",
+        "owner": "treeform",
+        "repo": "jsony",
+        "rev": "2a2cc4331720b7695c8b66529dbfea6952727e7b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "treeform",
+        "ref": "refs/tags/1.1.3",
+        "repo": "jsony",
+        "type": "github"
+      }
+    },
+    "src-nyml-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1647032662,
+        "narHash": "sha256-yzL1iBPp/y/hVxBY/7d5paL0rAqfjmoWskxQMhFfYHc=",
+        "owner": "openpeep",
+        "repo": "nyml",
+        "rev": "58c6500d4f59255cfc2f1ac2b33630f8ea0fd529",
+        "type": "github"
+      },
+      "original": {
+        "owner": "openpeep",
+        "ref": "refs/heads/main",
+        "repo": "nyml",
+        "type": "github"
+      }
+    },
+    "src-supranim-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1652359503,
+        "narHash": "sha256-MCVRoDuHCd9Sbs+h3SQIfLYeinqDjJtQkd61Xm5S0nA=",
+        "owner": "supranim",
+        "repo": "supranim",
+        "rev": "aadc1b03130f4eb9d00a2ce2ee1032c84c820197",
+        "type": "github"
+      },
+      "original": {
+        "owner": "supranim",
+        "ref": "refs/heads/main",
+        "repo": "supranim",
+        "type": "github"
+      }
+    },
+    "src-toktok-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1652211318,
+        "narHash": "sha256-b3UdFeMdaFG7/tQOo8HUlOlA5gTDuLgxF1kB4uF+Ihg=",
+        "owner": "openpeep",
+        "repo": "toktok",
+        "rev": "b390e63dd5ee84c70b90fcd339a50cc4a7e65334",
+        "type": "github"
+      },
+      "original": {
+        "owner": "openpeep",
+        "ref": "refs/heads/main",
+        "repo": "toktok",
+        "type": "github"
+      }
+    },
+    "supranim-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "jsony": "jsony",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "nyml": "nyml",
+        "src-supranim-main": "src-supranim-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1652367476,
+        "narHash": "sha256-Bm2f0TQPvy745muFT33l6hYlNaT3hNKEVNz104T5xcA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "supranim",
+        "rev": "ce84e63c2eb317c2c5849108b122448fc53ed682",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "supranim",
+        "type": "github"
+      }
+    },
+    "toktok": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "supranim-main",
+          "nyml",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "supranim-main",
+          "nyml",
+          "nixpkgs"
+        ],
+        "src-toktok-main": "src-toktok-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1652391660,
+        "narHash": "sha256-79eBr4CMFZN2gkLFPZsWLIynP76bhJ2qLbJUl0ymFPI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "toktok",
+        "rev": "e18726a625d4d745dcbac5baa76eda6e1a8162fc",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "toktok",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
