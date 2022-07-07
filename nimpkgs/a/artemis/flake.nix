@@ -7,14 +7,6 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."artemis-master".dir   = "master";
-  inputs."artemis-master".owner = "nim-nix-pkgs";
-  inputs."artemis-master".ref   = "master";
-  inputs."artemis-master".repo  = "artemis";
-  inputs."artemis-master".type  = "github";
-  inputs."artemis-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."artemis-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

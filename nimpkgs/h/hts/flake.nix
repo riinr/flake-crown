@@ -295,6 +295,14 @@
   inputs."hts-v0_3_22".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hts-v0_3_22".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."hts-v0_3_23".dir   = "v0_3_23";
+  inputs."hts-v0_3_23".owner = "nim-nix-pkgs";
+  inputs."hts-v0_3_23".ref   = "master";
+  inputs."hts-v0_3_23".repo  = "hts";
+  inputs."hts-v0_3_23".type  = "github";
+  inputs."hts-v0_3_23".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."hts-v0_3_23".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."hts-v0_3_3".dir   = "v0_3_3";
   inputs."hts-v0_3_3".owner = "nim-nix-pkgs";
   inputs."hts-v0_3_3".ref   = "master";

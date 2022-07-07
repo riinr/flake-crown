@@ -31,6 +31,14 @@
   inputs."openurl-v2_0_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."openurl-v2_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."openurl-v2_0_2".dir   = "v2_0_2";
+  inputs."openurl-v2_0_2".owner = "nim-nix-pkgs";
+  inputs."openurl-v2_0_2".ref   = "master";
+  inputs."openurl-v2_0_2".repo  = "openurl";
+  inputs."openurl-v2_0_2".type  = "github";
+  inputs."openurl-v2_0_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."openurl-v2_0_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

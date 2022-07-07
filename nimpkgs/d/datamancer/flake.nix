@@ -143,6 +143,14 @@
   inputs."datamancer-v0_2_4".inputs.nixpkgs.follows = "nixpkgs";
   inputs."datamancer-v0_2_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."datamancer-v0_2_5".dir   = "v0_2_5";
+  inputs."datamancer-v0_2_5".owner = "nim-nix-pkgs";
+  inputs."datamancer-v0_2_5".ref   = "master";
+  inputs."datamancer-v0_2_5".repo  = "datamancer";
+  inputs."datamancer-v0_2_5".type  = "github";
+  inputs."datamancer-v0_2_5".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."datamancer-v0_2_5".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

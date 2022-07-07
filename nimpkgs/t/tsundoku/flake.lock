@@ -2,7 +2,6 @@
   "nodes": {
     "asynctools": {
       "inputs": {
-        "asynctools-master": "asynctools-master",
         "flakeNimbleLib": [
           "tsundoku-master",
           "jester",
@@ -14,17 +13,20 @@
           "jester",
           "httpbeast",
           "nixpkgs"
-        ]
+        ],
+        "src-asynctools-master": "src-asynctools-master_2"
       },
       "locked": {
-        "lastModified": 1647934064,
-        "narHash": "sha256-CcXz5SfU42qr86p4QT2w7FN/4xESLpD92f4w7KdB0qE=",
+        "dir": "master",
+        "lastModified": 1652366989,
+        "narHash": "sha256-tAW/WHB1wBbP+uXuMoW27vwqLAmbdSgyEH/EjJX5TtQ=",
         "owner": "nim-nix-pkgs",
         "repo": "asynctools",
-        "rev": "0149c0bc59bb8286a175727098848ddd19895601",
+        "rev": "5039d0631c5efd6b9b21de5067f15ef2b6fcb039",
         "type": "github"
       },
       "original": {
+        "dir": "master",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "asynctools",
@@ -32,41 +34,6 @@
       }
     },
     "asynctools-master": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "tsundoku-master",
-          "jester",
-          "httpbeast",
-          "asynctools",
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "tsundoku-master",
-          "jester",
-          "httpbeast",
-          "asynctools",
-          "nixpkgs"
-        ],
-        "src-asynctools-master": "src-asynctools-master_2"
-      },
-      "locked": {
-        "dir": "master",
-        "lastModified": 1647934064,
-        "narHash": "sha256-CcXz5SfU42qr86p4QT2w7FN/4xESLpD92f4w7KdB0qE=",
-        "owner": "nim-nix-pkgs",
-        "repo": "asynctools",
-        "rev": "0149c0bc59bb8286a175727098848ddd19895601",
-        "type": "github"
-      },
-      "original": {
-        "dir": "master",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "asynctools",
-        "type": "github"
-      }
-    },
-    "asynctools-master_2": {
       "inputs": {
         "flakeNimbleLib": [
           "tsundoku-v0_1_0",
@@ -103,7 +70,7 @@
     },
     "asynctools_2": {
       "inputs": {
-        "asynctools-master": "asynctools-master_2",
+        "asynctools-master": "asynctools-master",
         "flakeNimbleLib": [
           "tsundoku-v0_1_0",
           "jester",
@@ -197,19 +164,19 @@
           "jester",
           "nixpkgs"
         ],
-        "src-httpbeast-v0_4_0": "src-httpbeast-v0_4_0"
+        "src-httpbeast-v0_4_1": "src-httpbeast-v0_4_1"
       },
       "locked": {
-        "dir": "v0_4_0",
-        "lastModified": 1647997875,
-        "narHash": "sha256-2k1F/V5Z6w3CZ7/cizdZjxmnHUWr/fZgduFAueSuTi4=",
+        "dir": "v0_4_1",
+        "lastModified": 1656747562,
+        "narHash": "sha256-/8dizorsBW/9TWL4PoH+9+XAvh9lczAryfJCOlRVE78=",
         "owner": "nim-nix-pkgs",
         "repo": "httpbeast",
-        "rev": "cdbbd1eb20bbdda0a2d9ea1395a923c4c30634ec",
+        "rev": "d7e304fc56524bd6dfd4d7734068b3f9e8faf0dc",
         "type": "github"
       },
       "original": {
-        "dir": "v0_4_0",
+        "dir": "v0_4_1",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "httpbeast",
@@ -229,7 +196,7 @@
           "jester",
           "nixpkgs"
         ],
-        "src-httpbeast-v0_4_0": "src-httpbeast-v0_4_0_2"
+        "src-httpbeast-v0_4_0": "src-httpbeast-v0_4_0"
       },
       "locked": {
         "dir": "v0_4_0",
@@ -264,11 +231,11 @@
       },
       "locked": {
         "dir": "v0_5_0",
-        "lastModified": 1648447388,
-        "narHash": "sha256-ssuDN40Ho6769ESaBfiXMJnjzIU2m4RvpPp3rG1GJqo=",
+        "lastModified": 1656283761,
+        "narHash": "sha256-eiJwWPfT+qQ1zrAQULagYtoclP0a49GSKkGhbYAT2ms=",
         "owner": "nim-nix-pkgs",
         "repo": "jester",
-        "rev": "be6b4ab6421deb418adda1e328085cc0678dacf1",
+        "rev": "59b060d6fc9b4912c5b52bb0178eedc1d051cf60",
         "type": "github"
       },
       "original": {
@@ -397,19 +364,19 @@
         "type": "github"
       }
     },
-    "src-httpbeast-v0_4_0_2": {
+    "src-httpbeast-v0_4_1": {
       "flake": false,
       "locked": {
-        "lastModified": 1639528448,
-        "narHash": "sha256-gN1WLO425R2Z7SEjAI6ZMhbkXv0uYSsjgp5wDXGaoUU=",
+        "lastModified": 1654988101,
+        "narHash": "sha256-8ncCj94UeirSevgZP717NiNtecDyH5jHky+QId31IvQ=",
         "owner": "dom96",
         "repo": "httpbeast",
-        "rev": "8b50e378a5b3374ddeeb3ce83bfb733619206edb",
+        "rev": "abc13d11c210b614960fe8760e581d44cfb2e3e9",
         "type": "github"
       },
       "original": {
         "owner": "dom96",
-        "ref": "refs/tags/v0.4.0",
+        "ref": "refs/tags/v0.4.1",
         "repo": "httpbeast",
         "type": "github"
       }
@@ -495,11 +462,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1652366914,
-        "narHash": "sha256-X3v4Kf5v6/3Hv9HKKmyGDFXCQUOCZr7kmi1fV+lVmpc=",
+        "lastModified": 1656748062,
+        "narHash": "sha256-L2FD1pJqP8/6Sz3fd49nQmPfRLu8b3RJ55dKmDjBwa4=",
         "owner": "nim-nix-pkgs",
         "repo": "tsundoku",
-        "rev": "2e82bfb898975503744f7a65182696ef60a3d1d0",
+        "rev": "051caf3eb183406c51cb71fa25f5e3b5deedc750",
         "type": "github"
       },
       "original": {
@@ -523,11 +490,11 @@
       },
       "locked": {
         "dir": "v0_1_0",
-        "lastModified": 1652366914,
-        "narHash": "sha256-X3v4Kf5v6/3Hv9HKKmyGDFXCQUOCZr7kmi1fV+lVmpc=",
+        "lastModified": 1656748062,
+        "narHash": "sha256-L2FD1pJqP8/6Sz3fd49nQmPfRLu8b3RJ55dKmDjBwa4=",
         "owner": "nim-nix-pkgs",
         "repo": "tsundoku",
-        "rev": "2e82bfb898975503744f7a65182696ef60a3d1d0",
+        "rev": "051caf3eb183406c51cb71fa25f5e3b5deedc750",
         "type": "github"
       },
       "original": {

@@ -63,6 +63,14 @@
   inputs."dnsclient-0_1_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dnsclient-0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."dnsclient-0_2_0".dir   = "0_2_0";
+  inputs."dnsclient-0_2_0".owner = "nim-nix-pkgs";
+  inputs."dnsclient-0_2_0".ref   = "master";
+  inputs."dnsclient-0_2_0".repo  = "dnsclient";
+  inputs."dnsclient-0_2_0".type  = "github";
+  inputs."dnsclient-0_2_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."dnsclient-0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

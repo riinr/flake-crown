@@ -48,7 +48,7 @@
   inputs."zippy".owner = "nim-nix-pkgs";
   inputs."zippy".ref   = "master";
   inputs."zippy".repo  = "zippy";
-  inputs."zippy".dir   = "0_9_8";
+  inputs."zippy".dir   = "0_10_3";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -64,7 +64,7 @@
   inputs."wavecore".owner = "nim-nix-pkgs";
   inputs."wavecore".ref   = "master";
   inputs."wavecore".repo  = "wavecore";
-  inputs."wavecore".dir   = "0_7_0";
+  inputs."wavecore".dir   = "0_7_1";
   inputs."wavecore".type  = "github";
   inputs."wavecore".inputs.nixpkgs.follows = "nixpkgs";
   inputs."wavecore".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

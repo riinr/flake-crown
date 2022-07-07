@@ -16,7 +16,7 @@
   inputs."networkutils".owner = "nim-nix-pkgs";
   inputs."networkutils".ref   = "master";
   inputs."networkutils".repo  = "networkutils";
-  inputs."networkutils".dir   = "v0_5_1";
+  inputs."networkutils".dir   = "v0_5_2";
   inputs."networkutils".type  = "github";
   inputs."networkutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."networkutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

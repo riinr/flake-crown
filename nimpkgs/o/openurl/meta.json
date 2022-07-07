@@ -80,6 +80,45 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/tags/v2.0.1"
+    },
+    {
+      "name": "openurl",
+      "version": "2.0.1",
+      "author": "Sultan Al Isaiee",
+      "desc": "Open Any Url/File in the default desktop App / WebBrowser!",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.6"
+          }
+        },
+        {
+          "name": "figures",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "openurl"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v2.0.2"
     }
   ],
   "description": "Open Any Url/File in the default App / WebBrowser.",
@@ -90,6 +129,7 @@
     "refs/heads/main",
     "refs/tags/v2.0.0",
     "refs/tags/v2.0.1",
+    "refs/tags/v2.0.2",
     ""
   ],
   "heads": [

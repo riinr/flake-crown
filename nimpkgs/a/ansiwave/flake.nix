@@ -1055,6 +1055,14 @@
   inputs."ansiwave-1_7_7-windows".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ansiwave-1_7_7-windows".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."ansiwave-1_7_8".dir   = "1_7_8";
+  inputs."ansiwave-1_7_8".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_8".ref   = "master";
+  inputs."ansiwave-1_7_8".repo  = "ansiwave";
+  inputs."ansiwave-1_7_8".type  = "github";
+  inputs."ansiwave-1_7_8".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_8".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

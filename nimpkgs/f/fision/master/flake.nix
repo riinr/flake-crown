@@ -168,7 +168,7 @@
   inputs."datamancer".owner = "nim-nix-pkgs";
   inputs."datamancer".ref   = "master";
   inputs."datamancer".repo  = "datamancer";
-  inputs."datamancer".dir   = "v0_2_4";
+  inputs."datamancer".dir   = "v0_2_5";
   inputs."datamancer".type  = "github";
   inputs."datamancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."datamancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -256,7 +256,7 @@
   inputs."hts".owner = "nim-nix-pkgs";
   inputs."hts".ref   = "master";
   inputs."hts".repo  = "hts";
-  inputs."hts".dir   = "v0_3_22";
+  inputs."hts".dir   = "v0_3_23";
   inputs."hts".type  = "github";
   inputs."hts".inputs.nixpkgs.follows = "nixpkgs";
   inputs."hts".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -312,7 +312,7 @@
   inputs."karax".owner = "nim-nix-pkgs";
   inputs."karax".ref   = "master";
   inputs."karax".repo  = "karax";
-  inputs."karax".dir   = "1_2_1";
+  inputs."karax".dir   = "1_2_2";
   inputs."karax".type  = "github";
   inputs."karax".inputs.nixpkgs.follows = "nixpkgs";
   inputs."karax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -600,7 +600,7 @@
   inputs."plotly".owner = "nim-nix-pkgs";
   inputs."plotly".ref   = "master";
   inputs."plotly".repo  = "plotly";
-  inputs."plotly".dir   = "v0_3_0";
+  inputs."plotly".dir   = "v0_3_2";
   inputs."plotly".type  = "github";
   inputs."plotly".inputs.nixpkgs.follows = "nixpkgs";
   inputs."plotly".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -896,7 +896,7 @@
   inputs."zippy".owner = "nim-nix-pkgs";
   inputs."zippy".ref   = "master";
   inputs."zippy".repo  = "zippy";
-  inputs."zippy".dir   = "0_10_2";
+  inputs."zippy".dir   = "0_10_3";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

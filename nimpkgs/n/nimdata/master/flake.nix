@@ -24,7 +24,7 @@
   inputs."plotly".owner = "nim-nix-pkgs";
   inputs."plotly".ref   = "master";
   inputs."plotly".repo  = "plotly";
-  inputs."plotly".dir   = "v0_3_0";
+  inputs."plotly".dir   = "v0_3_2";
   inputs."plotly".type  = "github";
   inputs."plotly".inputs.nixpkgs.follows = "nixpkgs";
   inputs."plotly".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

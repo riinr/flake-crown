@@ -7,14 +7,6 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."base64_decoder-master".dir   = "master";
-  inputs."base64_decoder-master".owner = "nim-nix-pkgs";
-  inputs."base64_decoder-master".ref   = "master";
-  inputs."base64_decoder-master".repo  = "base64_decoder";
-  inputs."base64_decoder-master".type  = "github";
-  inputs."base64_decoder-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."base64_decoder-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

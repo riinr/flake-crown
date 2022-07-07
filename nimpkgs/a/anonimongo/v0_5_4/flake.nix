@@ -40,7 +40,7 @@
   inputs."dnsclient".owner = "nim-nix-pkgs";
   inputs."dnsclient".ref   = "master";
   inputs."dnsclient".repo  = "dnsclient";
-  inputs."dnsclient".dir   = "0_1_2";
+  inputs."dnsclient".dir   = "0_2_0";
   inputs."dnsclient".type  = "github";
   inputs."dnsclient".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dnsclient".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -56,7 +56,7 @@
   inputs."zippy".owner = "nim-nix-pkgs";
   inputs."zippy".ref   = "master";
   inputs."zippy".repo  = "zippy";
-  inputs."zippy".dir   = "0_9_8";
+  inputs."zippy".dir   = "0_10_3";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

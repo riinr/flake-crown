@@ -183,6 +183,14 @@
   inputs."wavecore-0_7_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."wavecore-0_7_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."wavecore-0_7_1".dir   = "0_7_1";
+  inputs."wavecore-0_7_1".owner = "nim-nix-pkgs";
+  inputs."wavecore-0_7_1".ref   = "master";
+  inputs."wavecore-0_7_1".repo  = "wavecore";
+  inputs."wavecore-0_7_1".type  = "github";
+  inputs."wavecore-0_7_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."wavecore-0_7_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

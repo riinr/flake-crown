@@ -14,11 +14,11 @@
       },
       "locked": {
         "dir": "0_2_5",
-        "lastModified": 1648162981,
-        "narHash": "sha256-fC5iBZSNr9EM8KocdWZoOdjqBZToRMDwiC4Fq8IrbZg=",
+        "lastModified": 1657152861,
+        "narHash": "sha256-rBNqba3/Www9syYMOJB/1lyWng/VZDvm7IDWgg1IIUI=",
         "owner": "nim-nix-pkgs",
         "repo": "chroma",
-        "rev": "1852336607f2ac1ed5c842f56765a6b43cae45f2",
+        "rev": "97d3de3baf1c7178d28b99f12193326911edcbde",
         "type": "github"
       },
       "original": {
@@ -50,12 +50,44 @@
         "type": "github"
       }
     },
+    "github-yglukhov-wasmrt": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "plotly",
+          "jsbind",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "plotly",
+          "jsbind",
+          "nixpkgs"
+        ],
+        "src-wasmrt-master": "src-wasmrt-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1656297751,
+        "narHash": "sha256-fKQDDwvWYr4/H02Obpdijhz+O+89wc4UjjGpFkxoX9Y=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-yglukhov-wasmrt",
+        "rev": "ccac9dd38ab2c7a639b071461f9b32c2153c0a06",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-yglukhov-wasmrt",
+        "type": "github"
+      }
+    },
     "jsbind": {
       "inputs": {
         "flakeNimbleLib": [
           "plotly",
           "flakeNimbleLib"
         ],
+        "github-yglukhov-wasmrt": "github-yglukhov-wasmrt",
         "nixpkgs": [
           "plotly",
           "nixpkgs"
@@ -64,11 +96,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1648163201,
-        "narHash": "sha256-BVhD4R9UzOvrwlnnNsa4pC1TkBFRfYYgkCaRqjJfBiA=",
+        "lastModified": 1657153011,
+        "narHash": "sha256-ZeUEVHa63Hh2YVBQbrqnmDmCRFfFJt9beMnq4wZXWfk=",
         "owner": "nim-nix-pkgs",
         "repo": "jsbind",
-        "rev": "608c4fffb06b7a8f81c2a91e44f2aa5e9daf7b68",
+        "rev": "10e375ca6fe80896fe816684af629f07c371f2fa",
         "type": "github"
       },
       "original": {
@@ -101,21 +133,21 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "src-plotly-v0_3_0": "src-plotly-v0_3_0",
+        "src-plotly-v0_3_2": "src-plotly-v0_3_2",
         "webview": "webview",
         "ws": "ws"
       },
       "locked": {
-        "dir": "v0_3_0",
-        "lastModified": 1656302513,
-        "narHash": "sha256-PIir9ADgUUW3zhuSgR7ChcHY7jt6hTD9Xh387S8CKnY=",
+        "dir": "v0_3_2",
+        "lastModified": 1657154319,
+        "narHash": "sha256-/bFm46az7BQ/78O+IIVLUFL+vStOmYjzq4n6qJGb/6U=",
         "owner": "nim-nix-pkgs",
         "repo": "plotly",
-        "rev": "dcc5cc1bd73761be5a867e95504eb616e1e6ccc9",
+        "rev": "77f123934830c6f0e31017de69b4a3ec7acc1295",
         "type": "github"
       },
       "original": {
-        "dir": "v0_3_0",
+        "dir": "v0_3_2",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "plotly",
@@ -182,20 +214,37 @@
         "type": "github"
       }
     },
-    "src-plotly-v0_3_0": {
+    "src-plotly-v0_3_2": {
       "flake": false,
       "locked": {
-        "lastModified": 1635786549,
-        "narHash": "sha256-Dv/yMPeZ4kfziyY4cPGJfVrKvqS/OPoNw3Zsun+N03c=",
+        "lastModified": 1657014570,
+        "narHash": "sha256-Ly7t1c524oOK7+UGn4c+hdhDMz/j0J1FfEIpuw2uPo4=",
         "owner": "SciNim",
         "repo": "nim-plotly",
-        "rev": "a34dcdcc62e28603847518f4bcd0bf1816399b7d",
+        "rev": "35f634279f1f52bbadccf5d9bb9ad55a3c89ea53",
         "type": "github"
       },
       "original": {
         "owner": "SciNim",
-        "ref": "refs/tags/v0.3.0",
+        "ref": "refs/tags/v0.3.2",
         "repo": "nim-plotly",
+        "type": "github"
+      }
+    },
+    "src-wasmrt-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645613881,
+        "narHash": "sha256-6jyTpNEN+5v1OHL1egJ8n8J5LX2ShjNe3RwaFcuzlpw=",
+        "owner": "yglukhov",
+        "repo": "wasmrt",
+        "rev": "898872bfab3f51999bc00246160401bce43bc099",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "wasmrt",
         "type": "github"
       }
     },
@@ -264,11 +313,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1648163754,
-        "narHash": "sha256-Tm5mixqd41WKRk44te8PUIwV9DIyq5RLoBr1soc3M3U=",
+        "lastModified": 1657153396,
+        "narHash": "sha256-FMm85Rc4cFp3iOhCx19eNDmVxy7r2gHYEEdC2dN9I8E=",
         "owner": "nim-nix-pkgs",
         "repo": "webview",
-        "rev": "1a2cb06e36df4bea5d0f2f5ddbacebb6a59cec4f",
+        "rev": "3120da71d4503cd3e52ced657c66fd69116afc53",
         "type": "github"
       },
       "original": {
@@ -293,11 +342,11 @@
       },
       "locked": {
         "dir": "0_5_0",
-        "lastModified": 1648163766,
-        "narHash": "sha256-vLrM2y8B7uDADSBDFi6vh4UlV0mgiBJUSZ3t0F179Fo=",
+        "lastModified": 1657153402,
+        "narHash": "sha256-Y/zmSHAbVe3htYdIBbY67oiv8OvmleFP+aMwoRc4NRc=",
         "owner": "nim-nix-pkgs",
         "repo": "ws",
-        "rev": "1aa3b21b0bcc7bd6a6c3b85cfbf4d62e87ed90c6",
+        "rev": "c9edbacc42dc38661d8082debf5dae3e38d2298c",
         "type": "github"
       },
       "original": {
@@ -320,11 +369,11 @@
       },
       "locked": {
         "dir": "0_3_1",
-        "lastModified": 1656301373,
-        "narHash": "sha256-aXSn2jhy596xh7IjsjeYmi4+CQTjKRHGuWGhhlQGfzc=",
+        "lastModified": 1657153414,
+        "narHash": "sha256-SOc48+GrHw6MXfzbN9DWVNS0eMIBVckqICdgcdr4WHQ=",
         "owner": "nim-nix-pkgs",
         "repo": "zip",
-        "rev": "cc771513a8af68f26be5752625fc192701163e26",
+        "rev": "9427c91d795cec91b7aac8b6b33de721b77c1159",
         "type": "github"
       },
       "original": {

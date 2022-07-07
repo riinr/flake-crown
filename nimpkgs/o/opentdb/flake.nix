@@ -31,6 +31,14 @@
   inputs."opentdb-1_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."opentdb-1_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."opentdb-1_2_0".dir   = "1_2_0";
+  inputs."opentdb-1_2_0".owner = "nim-nix-pkgs";
+  inputs."opentdb-1_2_0".ref   = "master";
+  inputs."opentdb-1_2_0".repo  = "opentdb";
+  inputs."opentdb-1_2_0".type  = "github";
+  inputs."opentdb-1_2_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."opentdb-1_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."opentdb-v1_0_2".dir   = "v1_0_2";
   inputs."opentdb-v1_0_2".owner = "nim-nix-pkgs";
   inputs."opentdb-v1_0_2".ref   = "master";

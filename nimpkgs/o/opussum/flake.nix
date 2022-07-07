@@ -103,6 +103,14 @@
   inputs."opussum-0_6_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."opussum-0_6_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."opussum-0_6_2".dir   = "0_6_2";
+  inputs."opussum-0_6_2".owner = "nim-nix-pkgs";
+  inputs."opussum-0_6_2".ref   = "master";
+  inputs."opussum-0_6_2".repo  = "opussum";
+  inputs."opussum-0_6_2".type  = "github";
+  inputs."opussum-0_6_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."opussum-0_6_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

@@ -24,7 +24,7 @@
   inputs."nimcuda".owner = "nim-nix-pkgs";
   inputs."nimcuda".ref   = "master";
   inputs."nimcuda".repo  = "nimcuda";
-  inputs."nimcuda".dir   = "0_1_7";
+  inputs."nimcuda".dir   = "0_1_8";
   inputs."nimcuda".type  = "github";
   inputs."nimcuda".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimcuda".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

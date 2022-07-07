@@ -39,6 +39,14 @@
   inputs."plotly-v0_3_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."plotly-v0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."plotly-v0_3_2".dir   = "v0_3_2";
+  inputs."plotly-v0_3_2".owner = "nim-nix-pkgs";
+  inputs."plotly-v0_3_2".ref   = "master";
+  inputs."plotly-v0_3_2".repo  = "plotly";
+  inputs."plotly-v0_3_2".type  = "github";
+  inputs."plotly-v0_3_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."plotly-v0_3_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

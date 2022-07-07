@@ -1,0 +1,153 @@
+{
+  "nodes": {
+    "cligen": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-cligen-v1_5_24": "src-cligen-v1_5_24"
+      },
+      "locked": {
+        "dir": "v1_5_24",
+        "lastModified": 1657152865,
+        "narHash": "sha256-2I0KKmtS2WxsVPiS1GQ9YZGw6CPAInXZOh+ol0zVQ7Q=",
+        "owner": "nim-nix-pkgs",
+        "repo": "cligen",
+        "rev": "56e324737e5038553985d1a2b2b24f3954183224",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_5_24",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimquery": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimquery-v2_0_0": "src-nimquery-v2_0_0"
+      },
+      "locked": {
+        "dir": "v2_0_0",
+        "lastModified": 1657153139,
+        "narHash": "sha256-lr0v40XxnObViWTCqt4soP2kx+oeAN0nHzOQRMxQ4QE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimquery",
+        "rev": "bf88471d75eb52bf4077cea593073a16bcc267ea",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v2_0_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimquery",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "cligen": "cligen",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimquery": "nimquery",
+        "nixpkgs": "nixpkgs",
+        "src-fushin-v0_0_0": "src-fushin-v0_0_0"
+      }
+    },
+    "src-cligen-v1_5_24": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1654702226,
+        "narHash": "sha256-QmGWVoS6pe6QKp/nxVE0WI1clLs9gJ+l9wjnmtpuZV4=",
+        "owner": "c-blake",
+        "repo": "cligen",
+        "rev": "a276fa26fd352816f2ff807591540b27c5247c4a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "c-blake",
+        "ref": "refs/tags/v1.5.24",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "src-fushin-v0_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1656982017,
+        "narHash": "sha256-d/aUlWyl5P6THfWZe6WhZtj8By5eBNCQrPfOQ3vaFb8=",
+        "owner": "eggplants",
+        "repo": "fushin",
+        "rev": "56bc1b579859a213a639b247337dabfd7ff97ef3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "eggplants",
+        "ref": "refs/tags/v0.0.0",
+        "repo": "fushin",
+        "type": "github"
+      }
+    },
+    "src-nimquery-v2_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1654629123,
+        "narHash": "sha256-QZFI6T2WMBP1Ipppq3YYEjlx+m7oZAAOeIN+Nt8RY2Q=",
+        "owner": "GULPF",
+        "repo": "nimquery",
+        "rev": "e0608d938be92b4ddb187cb46d94afafceaa439e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "GULPF",
+        "ref": "refs/tags/v2.0.0",
+        "repo": "nimquery",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

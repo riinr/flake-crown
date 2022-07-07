@@ -191,6 +191,14 @@
   inputs."fftw3-v0_5_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fftw3-v0_5_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."fftw3-v0_5_2".dir   = "v0_5_2";
+  inputs."fftw3-v0_5_2".owner = "nim-nix-pkgs";
+  inputs."fftw3-v0_5_2".ref   = "master";
+  inputs."fftw3-v0_5_2".repo  = "fftw3";
+  inputs."fftw3-v0_5_2".type  = "github";
+  inputs."fftw3-v0_5_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."fftw3-v0_5_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

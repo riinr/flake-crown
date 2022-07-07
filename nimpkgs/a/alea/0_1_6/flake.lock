@@ -1,0 +1,108 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "random": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-random-v0_5_7": "src-random-v0_5_7"
+      },
+      "locked": {
+        "dir": "v0_5_7",
+        "lastModified": 1656747049,
+        "narHash": "sha256-S9+5TI/994qM6l1Gx9bNnY/1i0R8zMhqKh9eX+q2CNQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "random",
+        "rev": "eb8c6e49595087b0f628b0e8ae6bc1a7ad5fcc02",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_5_7",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "random",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "random": "random",
+        "src-alea-0_1_6": "src-alea-0_1_6"
+      }
+    },
+    "src-alea-0_1_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1656486121,
+        "narHash": "sha256-lLdTPFHRYSI3jwMjrYeTEtjkqxSESOLapqlLE5MK210=",
+        "owner": "andreaferretti",
+        "repo": "alea",
+        "rev": "e439a8d652125b78e23219e24eeb624e45071951",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andreaferretti",
+        "ref": "refs/tags/0.1.6",
+        "repo": "alea",
+        "type": "github"
+      }
+    },
+    "src-random-v0_5_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1587879769,
+        "narHash": "sha256-DsjAy8a8CTU2ck/aUIAi4Jz795lnplPF9NHbq9CBJ1E=",
+        "owner": "oprypin",
+        "repo": "nim-random",
+        "rev": "881019662b584c43f2ef5158ff346bf6b6b29f88",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oprypin",
+        "ref": "refs/tags/v0.5.7",
+        "repo": "nim-random",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
