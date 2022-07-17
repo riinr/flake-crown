@@ -1,5 +1,4 @@
-{ nimble-src, ... }:
-{ pkgs, ...}:
+{ pkgs, inputs ? {}, ...}:
 
 let 
   GLOB        = "$PRJ_ROOT/../nimpkgs";
@@ -9,7 +8,7 @@ let
   GLOB_TAG    = "${GLOB}/*/*/[0-9vV][0-9_]*";
   nimble      = pkgs.runCommand "nimblePKG" {} ''
     mkdir -p $out/
-    cp -r ${nimble-src}/src/nimblepkg $out/nimblepkg
+    cp -r ${inputs.nimble-src or ./.}/src/nimblepkg $out/nimblepkg
   '';
 in
 {

@@ -4,7 +4,5 @@
   inputs.nimble-src.url   = "github:nim-lang/nimble";
   inputs.nimble-src.flake = false;
 
-  outputs = { self, dsf, nimble-src }: dsf.lib.mkShell [
-    ( import ./project.nix { inherit nimble-src; } )
-  ];
+  outputs = inputs: inputs.dsf.lib.shell inputs [ ./project.nix ];
 }
