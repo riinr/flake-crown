@@ -22,7 +22,7 @@
       pkgs-graph                  > $PRJ_ROOT/../stats/pkgs.mermaid
       binary-list                 > $PRJ_ROOT/../stats/executables.csv
     '';
-  files.text."/stats/README.md"  = 
+  files.text."/../stats/README.md"  = 
     ''
       # Nim packages stats
 

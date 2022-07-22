@@ -1,6 +1,6 @@
 {
   # list of nixpkg for every package
-  files.json."/refresher/nix_deps.json" = {
+  files.json."/nix_deps.json" = {
  allegro5
 = ["allegro5"];
  allographer

@@ -157,7 +157,7 @@ let
   };
 in 
 {
-  files.json."/refresher/packages_other.json" = 
+  files.json."/packages_other.json" = 
   let 
     pkgIt = src: author: pkg: info: 
     {
