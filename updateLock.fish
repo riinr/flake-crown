@@ -57,8 +57,10 @@ while test (count $CHANGES) -gt 0
   if test (git status --porcelain|grep -v 'result'|wc -l) -gt 0
     echo "###############################"
     echo $NEXT_PKG
-    git add */{flake,meta}.{lock,nix,json}
-    git add {flake,meta}.{lock,nix,json}
+    git add */flake.{lock,nix}
+    git add */meta.json
+    git add flake.{lock,nix}
+    git add meta.json
     git commit -m 'feat(nimpkgs): remove lock' .
   end
   if test (git diff --stat --cached origin/master|wc -l) -gt 0
