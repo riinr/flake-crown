@@ -7,14 +7,6 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."forestdb-master".dir   = "master";
-  inputs."forestdb-master".owner = "nim-nix-pkgs";
-  inputs."forestdb-master".ref   = "master";
-  inputs."forestdb-master".repo  = "forestdb";
-  inputs."forestdb-master".type  = "github";
-  inputs."forestdb-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."forestdb-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

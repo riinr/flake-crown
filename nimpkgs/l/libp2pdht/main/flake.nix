@@ -32,7 +32,7 @@
   inputs."chronicles".owner = "nim-nix-pkgs";
   inputs."chronicles".ref   = "master";
   inputs."chronicles".repo  = "chronicles";
-  inputs."chronicles".dir   = "v0_10_2";
+  inputs."chronicles".dir   = "v0_10_3";
   inputs."chronicles".type  = "github";
   inputs."chronicles".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronicles".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -96,7 +96,7 @@
   inputs."asynctest".owner = "nim-nix-pkgs";
   inputs."asynctest".ref   = "master";
   inputs."asynctest".repo  = "asynctest";
-  inputs."asynctest".dir   = "0_3_1";
+  inputs."asynctest".dir   = "0_3_2";
   inputs."asynctest".type  = "github";
   inputs."asynctest".inputs.nixpkgs.follows = "nixpkgs";
   inputs."asynctest".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

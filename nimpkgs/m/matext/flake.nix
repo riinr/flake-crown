@@ -39,6 +39,14 @@
   inputs."matext-2022_6_27".inputs.nixpkgs.follows = "nixpkgs";
   inputs."matext-2022_6_27".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."matext-2022_7_20".dir   = "2022_7_20";
+  inputs."matext-2022_7_20".owner = "nim-nix-pkgs";
+  inputs."matext-2022_7_20".ref   = "master";
+  inputs."matext-2022_7_20".repo  = "matext";
+  inputs."matext-2022_7_20".type  = "github";
+  inputs."matext-2022_7_20".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."matext-2022_7_20".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."matext-2022_7_6".dir   = "2022_7_6";
   inputs."matext-2022_7_6".owner = "nim-nix-pkgs";
   inputs."matext-2022_7_6".ref   = "master";

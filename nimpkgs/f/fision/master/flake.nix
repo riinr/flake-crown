@@ -112,7 +112,7 @@
   inputs."chroma".owner = "nim-nix-pkgs";
   inputs."chroma".ref   = "master";
   inputs."chroma".repo  = "chroma";
-  inputs."chroma".dir   = "0_2_5";
+  inputs."chroma".dir   = "0_2_6";
   inputs."chroma".type  = "github";
   inputs."chroma".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chroma".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -120,7 +120,7 @@
   inputs."chronicles".owner = "nim-nix-pkgs";
   inputs."chronicles".ref   = "master";
   inputs."chronicles".repo  = "chronicles";
-  inputs."chronicles".dir   = "v0_10_2";
+  inputs."chronicles".dir   = "v0_10_3";
   inputs."chronicles".type  = "github";
   inputs."chronicles".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronicles".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -168,7 +168,7 @@
   inputs."datamancer".owner = "nim-nix-pkgs";
   inputs."datamancer".ref   = "master";
   inputs."datamancer".repo  = "datamancer";
-  inputs."datamancer".dir   = "v0_2_5";
+  inputs."datamancer".dir   = "v0_2_7";
   inputs."datamancer".type  = "github";
   inputs."datamancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."datamancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -536,7 +536,7 @@
   inputs."norm".owner = "nim-nix-pkgs";
   inputs."norm".ref   = "master";
   inputs."norm".repo  = "norm";
-  inputs."norm".dir   = "2_5_0";
+  inputs."norm".dir   = "2_5_1";
   inputs."norm".type  = "github";
   inputs."norm".inputs.nixpkgs.follows = "nixpkgs";
   inputs."norm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

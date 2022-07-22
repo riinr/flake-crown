@@ -40,7 +40,7 @@
   inputs."chronicles".owner = "nim-nix-pkgs";
   inputs."chronicles".ref   = "master";
   inputs."chronicles".repo  = "chronicles";
-  inputs."chronicles".dir   = "v0_10_2";
+  inputs."chronicles".dir   = "v0_10_3";
   inputs."chronicles".type  = "github";
   inputs."chronicles".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronicles".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

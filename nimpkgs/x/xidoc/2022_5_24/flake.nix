@@ -24,7 +24,7 @@
   inputs."matext".owner = "nim-nix-pkgs";
   inputs."matext".ref   = "master";
   inputs."matext".repo  = "matext";
-  inputs."matext".dir   = "2022_7_6";
+  inputs."matext".dir   = "2022_7_20";
   inputs."matext".type  = "github";
   inputs."matext".inputs.nixpkgs.follows = "nixpkgs";
   inputs."matext".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

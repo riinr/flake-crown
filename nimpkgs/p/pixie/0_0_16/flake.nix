@@ -24,7 +24,7 @@
   inputs."chroma".owner = "nim-nix-pkgs";
   inputs."chroma".ref   = "master";
   inputs."chroma".repo  = "chroma";
-  inputs."chroma".dir   = "0_2_5";
+  inputs."chroma".dir   = "0_2_6";
   inputs."chroma".type  = "github";
   inputs."chroma".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chroma".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -48,7 +48,7 @@
   inputs."nimsimd".owner = "nim-nix-pkgs";
   inputs."nimsimd".ref   = "master";
   inputs."nimsimd".repo  = "nimsimd";
-  inputs."nimsimd".dir   = "1_1_6";
+  inputs."nimsimd".dir   = "1_1_7";
   inputs."nimsimd".type  = "github";
   inputs."nimsimd".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimsimd".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -39,6 +39,14 @@
   inputs."chronicles-v0_10_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronicles-v0_10_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."chronicles-v0_10_3".dir   = "v0_10_3";
+  inputs."chronicles-v0_10_3".owner = "nim-nix-pkgs";
+  inputs."chronicles-v0_10_3".ref   = "master";
+  inputs."chronicles-v0_10_3".repo  = "chronicles";
+  inputs."chronicles-v0_10_3".type  = "github";
+  inputs."chronicles-v0_10_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."chronicles-v0_10_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."chronicles-v0_2_0".dir   = "v0_2_0";
   inputs."chronicles-v0_2_0".owner = "nim-nix-pkgs";
   inputs."chronicles-v0_2_0".ref   = "master";
