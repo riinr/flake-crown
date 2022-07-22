@@ -16,7 +16,7 @@
   inputs."special_functions".owner = "nim-nix-pkgs";
   inputs."special_functions".ref   = "master";
   inputs."special_functions".repo  = "special_functions";
-  inputs."special_functions".dir   = "v0_1_1";
+  inputs."special_functions".dir   = "v0_2_0";
   inputs."special_functions".type  = "github";
   inputs."special_functions".inputs.nixpkgs.follows = "nixpkgs";
   inputs."special_functions".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

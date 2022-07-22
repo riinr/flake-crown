@@ -487,6 +487,14 @@
   inputs."gintro-v0_9_8".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gintro-v0_9_8".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."gintro-v0_9_9".dir   = "v0_9_9";
+  inputs."gintro-v0_9_9".owner = "nim-nix-pkgs";
+  inputs."gintro-v0_9_9".ref   = "master";
+  inputs."gintro-v0_9_9".repo  = "gintro";
+  inputs."gintro-v0_9_9".type  = "github";
+  inputs."gintro-v0_9_9".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."gintro-v0_9_9".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

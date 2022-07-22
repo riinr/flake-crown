@@ -34,6 +34,38 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/tags/v0.1.0"
+    },
+    {
+      "name": "therapist",
+      "version": "0.2.0",
+      "author": "Max Grender-Jones",
+      "desc": "Type-safe commandline parsing with minimal magic",
+      "license": "LGPL",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [
+        "therapist"
+      ],
+      "binDir": "build/bin",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.2.0"
     }
   ],
   "description": "Type-safe commandline parsing with minimal magic",
@@ -42,6 +74,7 @@
   "refs": [
     "refs/heads/master",
     "refs/tags/v0.1.0",
+    "refs/tags/v0.2.0",
     ""
   ],
   "heads": [

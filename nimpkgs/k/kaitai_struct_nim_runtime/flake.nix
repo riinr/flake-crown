@@ -15,6 +15,14 @@
   inputs."kaitai_struct_nim_runtime-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."kaitai_struct_nim_runtime-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."kaitai_struct_nim_runtime-0_10".dir   = "0_10";
+  inputs."kaitai_struct_nim_runtime-0_10".owner = "nim-nix-pkgs";
+  inputs."kaitai_struct_nim_runtime-0_10".ref   = "master";
+  inputs."kaitai_struct_nim_runtime-0_10".repo  = "kaitai_struct_nim_runtime";
+  inputs."kaitai_struct_nim_runtime-0_10".type  = "github";
+  inputs."kaitai_struct_nim_runtime-0_10".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."kaitai_struct_nim_runtime-0_10".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."kaitai_struct_nim_runtime-0_9".dir   = "0_9";
   inputs."kaitai_struct_nim_runtime-0_9".owner = "nim-nix-pkgs";
   inputs."kaitai_struct_nim_runtime-0_9".ref   = "master";

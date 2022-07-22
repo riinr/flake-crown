@@ -159,6 +159,14 @@
   inputs."arraymancer-v0_7_12".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer-v0_7_12".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."arraymancer-v0_7_13".dir   = "v0_7_13";
+  inputs."arraymancer-v0_7_13".owner = "nim-nix-pkgs";
+  inputs."arraymancer-v0_7_13".ref   = "master";
+  inputs."arraymancer-v0_7_13".repo  = "arraymancer";
+  inputs."arraymancer-v0_7_13".type  = "github";
+  inputs."arraymancer-v0_7_13".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."arraymancer-v0_7_13".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."arraymancer-v0_7_2".dir   = "v0_7_2";
   inputs."arraymancer-v0_7_2".owner = "nim-nix-pkgs";
   inputs."arraymancer-v0_7_2".ref   = "master";

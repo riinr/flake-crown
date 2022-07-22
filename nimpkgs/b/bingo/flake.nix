@@ -71,6 +71,14 @@
   inputs."bingo-v0_4_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bingo-v0_4_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."bingo-v0_5_0".dir   = "v0_5_0";
+  inputs."bingo-v0_5_0".owner = "nim-nix-pkgs";
+  inputs."bingo-v0_5_0".ref   = "master";
+  inputs."bingo-v0_5_0".repo  = "bingo";
+  inputs."bingo-v0_5_0".type  = "github";
+  inputs."bingo-v0_5_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."bingo-v0_5_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

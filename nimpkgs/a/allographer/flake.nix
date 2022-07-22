@@ -7,13 +7,13 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."allographer-master".dir   = "master";
-  inputs."allographer-master".owner = "nim-nix-pkgs";
-  inputs."allographer-master".ref   = "master";
-  inputs."allographer-master".repo  = "allographer";
-  inputs."allographer-master".type  = "github";
-  inputs."allographer-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."allographer-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."allographer-main".dir   = "main";
+  inputs."allographer-main".owner = "nim-nix-pkgs";
+  inputs."allographer-main".ref   = "master";
+  inputs."allographer-main".repo  = "allographer";
+  inputs."allographer-main".type  = "github";
+  inputs."allographer-main".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."allographer-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."allographer-v0_11_0".dir   = "v0_11_0";
   inputs."allographer-v0_11_0".owner = "nim-nix-pkgs";
@@ -262,6 +262,30 @@
   inputs."allographer-v0_23_0".type  = "github";
   inputs."allographer-v0_23_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."allographer-v0_23_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."allographer-v0_23_1".dir   = "v0_23_1";
+  inputs."allographer-v0_23_1".owner = "nim-nix-pkgs";
+  inputs."allographer-v0_23_1".ref   = "master";
+  inputs."allographer-v0_23_1".repo  = "allographer";
+  inputs."allographer-v0_23_1".type  = "github";
+  inputs."allographer-v0_23_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."allographer-v0_23_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."allographer-v0_23_2".dir   = "v0_23_2";
+  inputs."allographer-v0_23_2".owner = "nim-nix-pkgs";
+  inputs."allographer-v0_23_2".ref   = "master";
+  inputs."allographer-v0_23_2".repo  = "allographer";
+  inputs."allographer-v0_23_2".type  = "github";
+  inputs."allographer-v0_23_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."allographer-v0_23_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."allographer-v0_23_3".dir   = "v0_23_3";
+  inputs."allographer-v0_23_3".owner = "nim-nix-pkgs";
+  inputs."allographer-v0_23_3".ref   = "master";
+  inputs."allographer-v0_23_3".repo  = "allographer";
+  inputs."allographer-v0_23_3".type  = "github";
+  inputs."allographer-v0_23_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."allographer-v0_23_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."allographer-v0_7_0".dir   = "v0_7_0";
   inputs."allographer-v0_7_0".owner = "nim-nix-pkgs";

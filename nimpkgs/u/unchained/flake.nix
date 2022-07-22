@@ -31,6 +31,14 @@
   inputs."unchained-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unchained-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."unchained-v0_1_10".dir   = "v0_1_10";
+  inputs."unchained-v0_1_10".owner = "nim-nix-pkgs";
+  inputs."unchained-v0_1_10".ref   = "master";
+  inputs."unchained-v0_1_10".repo  = "unchained";
+  inputs."unchained-v0_1_10".type  = "github";
+  inputs."unchained-v0_1_10".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."unchained-v0_1_10".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."unchained-v0_1_3".dir   = "v0_1_3";
   inputs."unchained-v0_1_3".owner = "nim-nix-pkgs";
   inputs."unchained-v0_1_3".ref   = "master";
