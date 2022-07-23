@@ -9,7 +9,7 @@
   
   inputs.src-cal-master.flake = false;
   inputs.src-cal-master.ref   = "refs/heads/master";
-  inputs.src-cal-master.owner = "xflywind";
+  inputs.src-cal-master.owner = "ringabout";
   inputs.src-cal-master.repo  = "cal";
   inputs.src-cal-master.type  = "github";
   

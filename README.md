@@ -17,9 +17,8 @@ This repository contains experimental-grade, auto-generated
 nix run github:nim-nix-pkgs/maze
 
 # using maze with gameoflife
-nix run github:nim-nix-pkgs/gameoflife \
-  <(nix run github:nim-nix-pkgs/maze -- -w:0 -r:1 -W:10 -H:10)
-
+nix run github:nim-nix-pkgs/maze -- -w:0 -r:1 -W:10 -H:10 \
+  | nix run github:nim-nix-pkgs/gameoflife
 ```
 
 Or in Flake like

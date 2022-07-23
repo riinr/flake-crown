@@ -9,7 +9,7 @@
   
   inputs.src-ioselectors-v0_1_8.flake = false;
   inputs.src-ioselectors-v0_1_8.ref   = "refs/tags/v0.1.8";
-  inputs.src-ioselectors-v0_1_8.owner = "xflywind";
+  inputs.src-ioselectors-v0_1_8.owner = "ringabout";
   inputs.src-ioselectors-v0_1_8.repo  = "ioselectors";
   inputs.src-ioselectors-v0_1_8.type  = "github";
   

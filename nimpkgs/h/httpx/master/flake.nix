@@ -9,7 +9,7 @@
   
   inputs.src-httpx-master.flake = false;
   inputs.src-httpx-master.ref   = "refs/heads/master";
-  inputs.src-httpx-master.owner = "xflywind";
+  inputs.src-httpx-master.owner = "ringabout";
   inputs.src-httpx-master.repo  = "httpx";
   inputs.src-httpx-master.type  = "github";
   

@@ -9,7 +9,7 @@
   
   inputs.src-timeit-master.flake = false;
   inputs.src-timeit-master.ref   = "refs/heads/master";
-  inputs.src-timeit-master.owner = "xflywind";
+  inputs.src-timeit-master.owner = "ringabout";
   inputs.src-timeit-master.repo  = "timeit";
   inputs.src-timeit-master.type  = "github";
   

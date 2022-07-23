@@ -9,7 +9,7 @@
   
   inputs.src-xlsx-v0_1_6.flake = false;
   inputs.src-xlsx-v0_1_6.ref   = "refs/tags/v0.1.6";
-  inputs.src-xlsx-v0_1_6.owner = "xflywind";
+  inputs.src-xlsx-v0_1_6.owner = "ringabout";
   inputs.src-xlsx-v0_1_6.repo  = "xlsx";
   inputs.src-xlsx-v0_1_6.type  = "github";
   

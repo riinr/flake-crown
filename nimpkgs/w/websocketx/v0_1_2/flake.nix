@@ -9,7 +9,7 @@
   
   inputs.src-websocketx-v0_1_2.flake = false;
   inputs.src-websocketx-v0_1_2.ref   = "refs/tags/v0.1.2";
-  inputs.src-websocketx-v0_1_2.owner = "xflywind";
+  inputs.src-websocketx-v0_1_2.owner = "ringabout";
   inputs.src-websocketx-v0_1_2.repo  = "websocketx";
   inputs.src-websocketx-v0_1_2.type  = "github";
   

@@ -279,6 +279,14 @@
   inputs."ginger-v0_3_11".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ginger-v0_3_11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."ginger-v0_3_12".dir   = "v0_3_12";
+  inputs."ginger-v0_3_12".owner = "nim-nix-pkgs";
+  inputs."ginger-v0_3_12".ref   = "master";
+  inputs."ginger-v0_3_12".repo  = "ginger";
+  inputs."ginger-v0_3_12".type  = "github";
+  inputs."ginger-v0_3_12".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ginger-v0_3_12".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."ginger-v0_3_2".dir   = "v0_3_2";
   inputs."ginger-v0_3_2".owner = "nim-nix-pkgs";
   inputs."ginger-v0_3_2".ref   = "master";

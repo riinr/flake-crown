@@ -9,7 +9,7 @@
   
   inputs.src-docx-v0_1_6.flake = false;
   inputs.src-docx-v0_1_6.ref   = "refs/tags/v0.1.6";
-  inputs.src-docx-v0_1_6.owner = "xflywind";
+  inputs.src-docx-v0_1_6.owner = "ringabout";
   inputs.src-docx-v0_1_6.repo  = "docx";
   inputs.src-docx-v0_1_6.type  = "github";
   

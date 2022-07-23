@@ -9,7 +9,7 @@
   
   inputs.src-websocketx-master.flake = false;
   inputs.src-websocketx-master.ref   = "refs/heads/master";
-  inputs.src-websocketx-master.owner = "xflywind";
+  inputs.src-websocketx-master.owner = "ringabout";
   inputs.src-websocketx-master.repo  = "websocketx";
   inputs.src-websocketx-master.type  = "github";
   

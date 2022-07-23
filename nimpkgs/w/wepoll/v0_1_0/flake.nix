@@ -9,7 +9,7 @@
   
   inputs.src-wepoll-v0_1_0.flake = false;
   inputs.src-wepoll-v0_1_0.ref   = "refs/tags/v0.1.0";
-  inputs.src-wepoll-v0_1_0.owner = "xflywind";
+  inputs.src-wepoll-v0_1_0.owner = "ringabout";
   inputs.src-wepoll-v0_1_0.repo  = "wepoll";
   inputs.src-wepoll-v0_1_0.type  = "github";
   

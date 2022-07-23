@@ -9,7 +9,7 @@
   
   inputs.src-httpx-v0_1_4.flake = false;
   inputs.src-httpx-v0_1_4.ref   = "refs/tags/v0.1.4";
-  inputs.src-httpx-v0_1_4.owner = "xflywind";
+  inputs.src-httpx-v0_1_4.owner = "ringabout";
   inputs.src-httpx-v0_1_4.repo  = "httpx";
   inputs.src-httpx-v0_1_4.type  = "github";
   

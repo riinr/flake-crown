@@ -887,6 +887,14 @@
   inputs."ansiwave-1_7_1-windows".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ansiwave-1_7_1-windows".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."ansiwave-1_7_10".dir   = "1_7_10";
+  inputs."ansiwave-1_7_10".owner = "nim-nix-pkgs";
+  inputs."ansiwave-1_7_10".ref   = "master";
+  inputs."ansiwave-1_7_10".repo  = "ansiwave";
+  inputs."ansiwave-1_7_10".type  = "github";
+  inputs."ansiwave-1_7_10".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiwave-1_7_10".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."ansiwave-1_7_2".dir   = "1_7_2";
   inputs."ansiwave-1_7_2".owner = "nim-nix-pkgs";
   inputs."ansiwave-1_7_2".ref   = "master";

@@ -45,13 +45,13 @@
   inputs."cookies".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cookies".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."httpx".owner = "nim-nix-pkgs";
-  inputs."httpx".ref   = "master";
-  inputs."httpx".repo  = "httpx";
-  inputs."httpx".dir   = "v0_3_0";
-  inputs."httpx".type  = "github";
-  inputs."httpx".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."httpx".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."github.com/xflywind/httpx".owner = "nim-nix-pkgs";
+  inputs."github.com/xflywind/httpx".ref   = "master";
+  inputs."github.com/xflywind/httpx".repo  = "github.com/xflywind/httpx";
+  inputs."github.com/xflywind/httpx".dir   = "";
+  inputs."github.com/xflywind/httpx".type  = "github";
+  inputs."github.com/xflywind/httpx".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/xflywind/httpx".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

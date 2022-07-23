@@ -9,7 +9,7 @@
   
   inputs.src-docx-master.flake = false;
   inputs.src-docx-master.ref   = "refs/heads/master";
-  inputs.src-docx-master.owner = "xflywind";
+  inputs.src-docx-master.owner = "ringabout";
   inputs.src-docx-master.repo  = "docx";
   inputs.src-docx-master.type  = "github";
   

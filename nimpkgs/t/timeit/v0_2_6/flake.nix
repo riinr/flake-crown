@@ -9,7 +9,7 @@
   
   inputs.src-timeit-v0_2_6.flake = false;
   inputs.src-timeit-v0_2_6.ref   = "refs/tags/v0.2.6";
-  inputs.src-timeit-v0_2_6.owner = "xflywind";
+  inputs.src-timeit-v0_2_6.owner = "ringabout";
   inputs.src-timeit-v0_2_6.repo  = "timeit";
   inputs.src-timeit-v0_2_6.type  = "github";
   

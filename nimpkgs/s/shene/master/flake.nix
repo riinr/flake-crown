@@ -9,7 +9,7 @@
   
   inputs.src-shene-master.flake = false;
   inputs.src-shene-master.ref   = "refs/heads/master";
-  inputs.src-shene-master.owner = "xflywind";
+  inputs.src-shene-master.owner = "ringabout";
   inputs.src-shene-master.repo  = "shene";
   inputs.src-shene-master.type  = "github";
   

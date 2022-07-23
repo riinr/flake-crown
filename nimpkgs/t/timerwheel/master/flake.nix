@@ -9,7 +9,7 @@
   
   inputs.src-timerwheel-master.flake = false;
   inputs.src-timerwheel-master.ref   = "refs/heads/master";
-  inputs.src-timerwheel-master.owner = "xflywind";
+  inputs.src-timerwheel-master.owner = "ringabout";
   inputs.src-timerwheel-master.repo  = "timerwheel";
   inputs.src-timerwheel-master.type  = "github";
   

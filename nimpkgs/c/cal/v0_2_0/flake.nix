@@ -9,7 +9,7 @@
   
   inputs.src-cal-v0_2_0.flake = false;
   inputs.src-cal-v0_2_0.ref   = "refs/tags/v0.2.0";
-  inputs.src-cal-v0_2_0.owner = "xflywind";
+  inputs.src-cal-v0_2_0.owner = "ringabout";
   inputs.src-cal-v0_2_0.repo  = "cal";
   inputs.src-cal-v0_2_0.type  = "github";
   

@@ -9,7 +9,7 @@
   
   inputs.src-ipfshttpclient-main.flake = false;
   inputs.src-ipfshttpclient-main.ref   = "refs/heads/main";
-  inputs.src-ipfshttpclient-main.owner = "xflywind";
+  inputs.src-ipfshttpclient-main.owner = "ringabout";
   inputs.src-ipfshttpclient-main.repo  = "ipfshttpclient";
   inputs.src-ipfshttpclient-main.type  = "github";
   
