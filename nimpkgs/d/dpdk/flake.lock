@@ -1,32 +1,5 @@
 {
   "nodes": {
-    "dpdk-master": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "src-dpdk-master": "src-dpdk-master"
-      },
-      "locked": {
-        "dir": "master",
-        "lastModified": 1658201365,
-        "narHash": "sha256-HbEuQA6caoqdiFV/dS6cWsi2kgDkenBZe9nlNy8IcWM=",
-        "owner": "nim-nix-pkgs",
-        "repo": "dpdk",
-        "rev": "906d0514e582107eef809faae28ed18019932a7c",
-        "type": "github"
-      },
-      "original": {
-        "dir": "master",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "dpdk",
-        "type": "github"
-      }
-    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -62,26 +35,8 @@
     },
     "root": {
       "inputs": {
-        "dpdk-master": "dpdk-master",
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs"
-      }
-    },
-    "src-dpdk-master": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1488683618,
-        "narHash": "sha256-pOZryVrVVD6plKH+/VoGWrATMiTvIKqKunpzHNYn1vI=",
-        "owner": "nimscale",
-        "repo": "dpdk",
-        "rev": "95cb59863364de548a6519a2638154e6a7910f32",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nimscale",
-        "ref": "refs/heads/master",
-        "repo": "dpdk",
-        "type": "github"
       }
     }
   },

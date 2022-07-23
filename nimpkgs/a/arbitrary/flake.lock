@@ -1,0 +1,90 @@
+{
+  "nodes": {
+    "arbitrary-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-arbitrary-main": "src-arbitrary-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1658205816,
+        "narHash": "sha256-yLZ6NvsO+hnHlg40qY7ANMLFpaTeZDHKCIoxrzO0LhM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "arbitrary",
+        "rev": "0bc0eb5041514e973c7e94b44b95afd7f6406b27",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "arbitrary",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "arbitrary-main": "arbitrary-main",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-arbitrary-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657898655,
+        "narHash": "sha256-9zIQbWYJhSbB1xShcme+T8aL/CqutfqxoOwlc+dZZN4=",
+        "owner": "planetis-m",
+        "repo": "arbitrary",
+        "rev": "6986e9befaf5fcd44e2adf7cfca048dbd3f7f0c5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "planetis-m",
+        "ref": "refs/heads/main",
+        "repo": "arbitrary",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

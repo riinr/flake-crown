@@ -1,0 +1,90 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "njo-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-njo-main": "src-njo-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1658206276,
+        "narHash": "sha256-bT5pcLcaUFWGv7hVrvVo5SFvl9P2cySc5OzKRgW/oL4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "njo",
+        "rev": "27e6118cb40de2de97ead549df7b8327bbbea7aa",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "njo",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "njo-main": "njo-main"
+      }
+    },
+    "src-njo-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1658134870,
+        "narHash": "sha256-hLwJkk4pBi1uO6AerENZgyYlIVLdEzh/UBuJCp4T6Kw=",
+        "owner": "uga-rosa",
+        "repo": "njo",
+        "rev": "601352554504f1e36f4b5c092b4a5e530ac6ec22",
+        "type": "github"
+      },
+      "original": {
+        "owner": "uga-rosa",
+        "ref": "refs/heads/main",
+        "repo": "njo",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

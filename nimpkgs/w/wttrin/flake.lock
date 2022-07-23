@@ -1,0 +1,90 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "wttrin-master": "wttrin-master"
+      }
+    },
+    "src-wttrin-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657247690,
+        "narHash": "sha256-FriCXRh9JoAh2C1W8gzQ+FlEZHdPwZ0ADcZiFQhXU2U=",
+        "owner": "Infinitybeond1",
+        "repo": "wttrin",
+        "rev": "9d686850b8fb633b7d287b25b4e03de149f4e9b1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Infinitybeond1",
+        "ref": "refs/heads/master",
+        "repo": "wttrin",
+        "type": "github"
+      }
+    },
+    "wttrin-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-wttrin-master": "src-wttrin-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1658206612,
+        "narHash": "sha256-6BJlUxYd24HNJJTijGejpFlINTA2zFkE54+iHc/zb64=",
+        "owner": "nim-nix-pkgs",
+        "repo": "wttrin",
+        "rev": "54e8b11d1a7c5200a491548ef24e57d3d298db23",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "wttrin",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

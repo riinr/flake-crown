@@ -1,0 +1,245 @@
+{
+  "nodes": {
+    "cligen": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-cligen-v1_5_25": "src-cligen-v1_5_25"
+      },
+      "locked": {
+        "dir": "v1_5_25",
+        "lastModified": 1658609340,
+        "narHash": "sha256-PLdQzbdRCOvtHlDZ5MfP0uXj6N4Af8td7QXYoNjkIoM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "cligen",
+        "rev": "6990ca1b5c39e08b51f4e1c76021711f8c6e2897",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_5_25",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimpng": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "simplepng",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "simplepng",
+          "nixpkgs"
+        ],
+        "src-nimPNG-v0_3_1": "src-nimPNG-v0_3_1"
+      },
+      "locked": {
+        "dir": "v0_3_1",
+        "lastModified": 1658609660,
+        "narHash": "sha256-HGMbVxPHyGi7nW4hrUHZEMzFwDwJVb/XemFllM/Q+y4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimpng",
+        "rev": "25789f3d5dc97bf7be62e151ec45022f7f81387b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_3_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimpng",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "cligen": "cligen",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "simplepng": "simplepng",
+        "src-RaytracingAlgorithm-v2_0_0": "src-RaytracingAlgorithm-v2_0_0",
+        "stacks": "stacks"
+      }
+    },
+    "simplepng": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nimpng": "nimpng",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simplepng-master": "src-simplepng-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1658610528,
+        "narHash": "sha256-+8l7SsBdsQxtVOe07ptE9yqLtZOTq5A+4+CNKEQ1cO8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "simplepng",
+        "rev": "01d503f39f9c1e7c5b77b98c6b02f61a9c24f915",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "simplepng",
+        "type": "github"
+      }
+    },
+    "src-RaytracingAlgorithm-v2_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657362175,
+        "narHash": "sha256-DyOuWACVWq8WOXTHBPtB50eQp9cPdbgjexroW+tUrLQ=",
+        "owner": "lorycontixd",
+        "repo": "RaytracingAlgorithm",
+        "rev": "35d2949345caca52fb63fba8cb71162a7871848c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lorycontixd",
+        "ref": "refs/tags/v2.0.0",
+        "repo": "RaytracingAlgorithm",
+        "type": "github"
+      }
+    },
+    "src-cligen-v1_5_25": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657803755,
+        "narHash": "sha256-8eZY1U0m63iGGcM6U51RUe9KmNCWuup9F5rclaoVA7A=",
+        "owner": "c-blake",
+        "repo": "cligen",
+        "rev": "b955b2d911cc12fb1f6095b3b901e4da889b93d1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "c-blake",
+        "ref": "refs/tags/v1.5.25",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "src-nimPNG-v0_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592630157,
+        "narHash": "sha256-PorEjQr0rJPeq8p5550qr5MvWAhbOZlDjPhchGVu+O0=",
+        "owner": "jangko",
+        "repo": "nimPNG",
+        "rev": "9de8e28dd77bb93fc003e877f1656967c2ca4852",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jangko",
+        "ref": "refs/tags/v0.3.1",
+        "repo": "nimPNG",
+        "type": "github"
+      }
+    },
+    "src-simplepng-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1560036591,
+        "narHash": "sha256-syZLg01AL97fgrxt+h4ghjfIz1VSGzR9SlueJDccLuY=",
+        "owner": "jrenner",
+        "repo": "nim-simplepng",
+        "rev": "3e4436dbab994abc90f1d950aea5205ed899922b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jrenner",
+        "ref": "refs/heads/master",
+        "repo": "nim-simplepng",
+        "type": "github"
+      }
+    },
+    "src-stacks-0_4_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1609807487,
+        "narHash": "sha256-DpuTZG0++GLBfhxgqbPyULHGIGxgXyqHMu0nngRNXzA=",
+        "owner": "rustomax",
+        "repo": "nim-stacks",
+        "rev": "8ac556010630754097ad2c4d44b4981fb6380875",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rustomax",
+        "ref": "refs/tags/0.4.2",
+        "repo": "nim-stacks",
+        "type": "github"
+      }
+    },
+    "stacks": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-stacks-0_4_2": "src-stacks-0_4_2"
+      },
+      "locked": {
+        "dir": "0_4_2",
+        "lastModified": 1658609861,
+        "narHash": "sha256-J2X/6lF4LOEuHB1RgKo2gzhV9DwdBKDhmIBmU73mGC0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "stacks",
+        "rev": "8acfda837c2c7a4dc63880accbd4323401f39904",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_4_2",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "stacks",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

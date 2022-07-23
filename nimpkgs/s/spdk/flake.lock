@@ -36,52 +36,7 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
-        "nixpkgs": "nixpkgs",
-        "spdk-master": "spdk-master"
-      }
-    },
-    "spdk-master": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "src-spdk-master": "src-spdk-master"
-      },
-      "locked": {
-        "dir": "master",
-        "lastModified": 1658201900,
-        "narHash": "sha256-I+7QvgARtCUkg/BsQCe24rSTkPw8NIzjAtl+C3whRMI=",
-        "owner": "nim-nix-pkgs",
-        "repo": "spdk",
-        "rev": "e83c55d59b4f1329b8088ede6d097019218c0903",
-        "type": "github"
-      },
-      "original": {
-        "dir": "master",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "spdk",
-        "type": "github"
-      }
-    },
-    "src-spdk-master": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1502196689,
-        "narHash": "sha256-MRGVp8gPW7mw7gls/fZy6Fhgp4PS97qk3ZNRFoHmTC0=",
-        "owner": "nimscale",
-        "repo": "spdk",
-        "rev": "608ae8c2c74d166bbc07c6f96d87c1bcb3c5b59f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nimscale",
-        "ref": "refs/heads/master",
-        "repo": "spdk",
-        "type": "github"
+        "nixpkgs": "nixpkgs"
       }
     }
   },

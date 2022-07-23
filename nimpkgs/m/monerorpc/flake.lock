@@ -1,0 +1,90 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "monerorpc-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-monerorpc-main": "src-monerorpc-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1658206172,
+        "narHash": "sha256-j+ioSvJr9WcfvDaGGgQ3KdKuDvRlLTMphHvqbOoCNeE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "monerorpc",
+        "rev": "28503e397f1c679b376423600b2d8503299357dd",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "monerorpc",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "monerorpc-main": "monerorpc-main",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-monerorpc-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1658159032,
+        "narHash": "sha256-vCeGFgDb2/E+QY4chU1LyZDSouKuQxHL9k7uydjIImg=",
+        "owner": "eversinc33",
+        "repo": "nim-monero-rpc",
+        "rev": "c08b59603e2735827f3bed7966609b87e3233051",
+        "type": "github"
+      },
+      "original": {
+        "owner": "eversinc33",
+        "ref": "refs/heads/main",
+        "repo": "nim-monero-rpc",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
