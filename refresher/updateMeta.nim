@@ -191,21 +191,23 @@ proc projectMeta(pkg: JsonNode): auto =
     git init &>/dev/null
     printf "result\n*/result\n" > .gitignore
     git add .
-    git status -s --porcelain|wc -l|grep -qE '[1-9]' && \
+    git status -s --porcelain|wc -l|grep -qE '[1-9]' &&      \
       git commit -m "chore: re index {nameLo}" . &>/dev/null \
         || true
-    git remote -v | wc -l | grep -q '0' \
-      &&
-    gh repo create nim-nix-pkgs/{nameLo}                \
-      --description "Automatic nix flake of {nameLo}"   \
-      --disable-issues                                  \
-      --disable-wiki                                    \
-      --homepage=https://github.com/riinr/flake-nimble  \
-      --public                                          \
-      --push                                            \
-      --remote=origin                                   \
-      --source=.                                        \
-      || true
+    git remote -v | wc -l | grep -q '0'               \
+      &&                                              \
+    gh repo create nim-nix-pkgs/{nameLo}              \
+      --description "Automatic nix flake of {nameLo}" \
+      --disable-issues                                \
+      --disable-wiki                                  \
+      --homepage=https://github.com/riinr/flake-crown \
+      --public                                        \
+      --push                                          \
+      --remote=origin                                 \
+      --source=.                                      \
+      ||                                              \
+    git remote add origin                             \
+        git@github.com:nim-nix-pkgs/{nameLo}.git
   """
   refsMeta pkg
 
