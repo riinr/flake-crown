@@ -20,6 +20,7 @@
       pkgs-weights|cut -d, -f1,2  >> $PRJ_ROOT/../stats/dep-weights.csv
       pkgs-dots                   > $PRJ_ROOT/../stats/pkgs.dot
       pkgs-graph                  > $PRJ_ROOT/../stats/pkgs.mermaid
+      pkgs-mindmap                > $PRJ_ROOT/../stats/pkgs.mindmap
       binary-list                 > $PRJ_ROOT/../stats/executables.csv
     '';
   files.text."/../stats/README.md"  = 

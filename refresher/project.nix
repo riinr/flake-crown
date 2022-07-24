@@ -40,7 +40,8 @@ in
     '';
   files.alias.pkgs            = "find ${GLOB}/*/* -maxdepth 0|awk -F/ '{print $NF}'";
   files.alias.pkgs-update     = ''exec "$PRJ_ROOT/updatePkgs.nims" "$@"'';
-  files.alias.pkgs-weights    = "depWeight ${GLOB_PROJS}/*/meta.json|sort";
+  files.alias.pkgs-weights    = "depWeight  ${GLOB_PROJS}/*/meta.json|sort";
+  files.alias.pkgs-mindmap    = "depMindmap ${GLOB_PROJS}/*/meta.json";
   files.alias.pkgs-dots       = ''
     echo 'digraph NimPkgs {'
     depDots   ${GLOB_PROJS}/*/meta.json
@@ -110,4 +111,5 @@ in
   files.nim.updateLock  = builtins.readFile ./updateLock.nim;
   files.nim.updateMeta  = builtins.readFile ./updateMeta.nim;
   files.nim.depDots     = builtins.readFile ./depDots.nim;
+  files.nim.depMindmap  = builtins.readFile ./depMindmap.nim;
 }
