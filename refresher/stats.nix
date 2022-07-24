@@ -34,7 +34,8 @@
       - [dep-weights.csv](./dep-weights.csv): sum all pkgs requirements
       - [executables.csv](./executables.csv): list of executables pkgs
       - [initials-count.csv](./initials-count.csv): count pkgs by initial letter
-      - [pkgs.dot](./pkgs.dot): graphviz dot file for future vizualizaitons
+      - [pkgs.dot](./pkgs.dot): graphviz dot file for vizualizaitons
+      - [pkgs.mindmap](./pkgs.mindmap): plantuml file for vizualizaitons
       - [versions-count.csv](./versions-count.csv): count versions by pkg
       - [versions-initials-count.csv](./versions-initials-count.csv): count versions by letter
       
