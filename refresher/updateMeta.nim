@@ -18,6 +18,7 @@ proc isHead(x: string): bool =
     x.endsWith("/trunk")     or
     x.endsWith("/staging")   or 
     x.endsWith("/unstable")  or
+    x.endsWith("/devel")     or
     x.endsWith("/develop")
   )
 
