@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 
 set WEIGHTS (
-    depWeight $PWD/nimpkgs/*/*/*/meta.json
+    depWeight f $PWD/nimpkgs/*/*/*/meta.json
 )
 
 for MAX_DEPENDENCIES in $argv

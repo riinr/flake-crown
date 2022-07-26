@@ -40,16 +40,16 @@ in
     '';
   files.alias.pkgs            = "find ${GLOB}/*/* -maxdepth 0|awk -F/ '{print $NF}'";
   files.alias.pkgs-update     = ''exec "$PRJ_ROOT/updatePkgs.nims" "$@"'';
-  files.alias.pkgs-weights    = "depWeight  ${GLOB_PROJS}/*/meta.json|sort";
-  files.alias.pkgs-mindmap    = "depMindmap ${GLOB_PROJS}/*/meta.json";
+  files.alias.pkgs-weights    = "depWeight  $1 ${GLOB_PROJS}/*/meta.json|sort";
+  files.alias.pkgs-mindmap    = "depMindmap $1 ${GLOB_PROJS}/*/meta.json";
   files.alias.pkgs-dots       = ''
     echo 'digraph NimPkgs {'
-    depDots   ${GLOB_PROJS}/*/meta.json
+    depDots $1 ${GLOB_PROJS}/*/meta.json
     echo '}'
   '';
   files.alias.pkgs-graph      = ''
     echo 'graph NimPkgs;'
-    depDots   ${GLOB_PROJS}/*/meta.json|sed 's/ -> /-->/'|awk '{print "    "$1";"}'
+    depDots $1 ${GLOB_PROJS}/*/meta.json|sed 's/ -> /-->/'|awk '{print "    "$1";"}'
   '';
   files.alias.rm-cache        = "rm ${GLOB_PROJS}/${GLOB_CACHES}";
   files.alias.rm-cache-head   = "rm ${GLOB_HEAD}/${GLOB_CACHES}";
@@ -75,7 +75,7 @@ in
     '';
   files.alias.count-weights           = 
     ''
-      pkgs-weights                  |\
+      pkgs-weights $1               |\
         awk -F, '{print $1}'        |\
         sort                        |\
         uniq -c                     |\

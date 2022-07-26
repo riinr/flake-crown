@@ -32,10 +32,20 @@ proc link*(links; package; dependencies): void =
   links[package] = links.getOrDefault(package, Dependencies()) + dependencies
 
 
+proc link*(links; dependencies; package): void =
+  if package notin links:
+    links[package] = Dependencies()
+  for dependency in dependencies:
+    if dependency notin links:
+      links[dependency] = Dependencies()
+    links[dependency].incl package
+
+
 proc newLinks*(): Links =
   result = newTable[Dependency, Dependencies]()
 
-  for i in 1..paramCount():
+  let direction = paramStr 1
+  for i in 2..paramCount():
     let 
       path      = paramStr i
       meta      = path.parseFile
@@ -47,13 +57,16 @@ proc newLinks*(): Links =
         .mapIt(it["name"].getStr.toLower)
         .filterIt(it notin ["nim", "nimrod"] and not it.startsWith "https:")
         .toHashSet
-    result.link package, dependencies
+    if direction == "backward":
+      result.link dependencies, package
+    else:
+      result.link package, dependencies
 
 
 proc rec*(links; package; prefix = "*"): void =
   stdout.write(prefix & ' ' & package & '\n')
   for pkg in links[package].items:
-    links.rec(pkg, prefix & "*")
+    links.rec(pkg, prefix & '*')
 
 
 proc main*() =
