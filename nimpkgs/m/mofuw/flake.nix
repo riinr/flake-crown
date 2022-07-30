@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."mofuw-devel".dir   = "devel";
+  inputs."mofuw-devel".owner = "nim-nix-pkgs";
+  inputs."mofuw-devel".ref   = "master";
+  inputs."mofuw-devel".repo  = "mofuw";
+  inputs."mofuw-devel".type  = "github";
+  inputs."mofuw-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."mofuw-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."mofuw-master".dir   = "master";
   inputs."mofuw-master".owner = "nim-nix-pkgs";
   inputs."mofuw-master".ref   = "master";

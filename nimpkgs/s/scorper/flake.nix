@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."scorper-devel".dir   = "devel";
+  inputs."scorper-devel".owner = "nim-nix-pkgs";
+  inputs."scorper-devel".ref   = "master";
+  inputs."scorper-devel".repo  = "scorper";
+  inputs."scorper-devel".type  = "github";
+  inputs."scorper-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."scorper-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."scorper-1_0_17".dir   = "1_0_17";
   inputs."scorper-1_0_17".owner = "nim-nix-pkgs";
   inputs."scorper-1_0_17".ref   = "master";

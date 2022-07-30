@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."nimagg-devel".dir   = "devel";
+  inputs."nimagg-devel".owner = "nim-nix-pkgs";
+  inputs."nimagg-devel".ref   = "master";
+  inputs."nimagg-devel".repo  = "nimagg";
+  inputs."nimagg-devel".type  = "github";
+  inputs."nimagg-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimagg-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."nimagg-master".dir   = "master";
   inputs."nimagg-master".owner = "nim-nix-pkgs";
   inputs."nimagg-master".ref   = "master";

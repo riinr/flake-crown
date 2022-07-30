@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."urlon-devel".dir   = "devel";
+  inputs."urlon-devel".owner = "nim-nix-pkgs";
+  inputs."urlon-devel".ref   = "master";
+  inputs."urlon-devel".repo  = "urlon";
+  inputs."urlon-devel".type  = "github";
+  inputs."urlon-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."urlon-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."urlon-v0_1".dir   = "v0_1";
   inputs."urlon-v0_1".owner = "nim-nix-pkgs";
   inputs."urlon-v0_1".ref   = "master";

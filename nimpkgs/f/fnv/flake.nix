@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."fnv-devel".dir   = "devel";
+  inputs."fnv-devel".owner = "nim-nix-pkgs";
+  inputs."fnv-devel".ref   = "master";
+  inputs."fnv-devel".repo  = "fnv";
+  inputs."fnv-devel".type  = "github";
+  inputs."fnv-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."fnv-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."fnv-master".dir   = "master";
   inputs."fnv-master".owner = "nim-nix-pkgs";
   inputs."fnv-master".ref   = "master";

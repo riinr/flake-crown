@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."httpform-devel".dir   = "devel";
+  inputs."httpform-devel".owner = "nim-nix-pkgs";
+  inputs."httpform-devel".ref   = "master";
+  inputs."httpform-devel".repo  = "httpform";
+  inputs."httpform-devel".type  = "github";
+  inputs."httpform-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."httpform-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."httpform-master".dir   = "master";
   inputs."httpform-master".owner = "nim-nix-pkgs";
   inputs."httpform-master".ref   = "master";

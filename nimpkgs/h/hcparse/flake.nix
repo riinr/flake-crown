@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."hcparse-devel".dir   = "devel";
+  inputs."hcparse-devel".owner = "nim-nix-pkgs";
+  inputs."hcparse-devel".ref   = "master";
+  inputs."hcparse-devel".repo  = "hcparse";
+  inputs."hcparse-devel".type  = "github";
+  inputs."hcparse-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."hcparse-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."hcparse-master".dir   = "master";
   inputs."hcparse-master".owner = "nim-nix-pkgs";
   inputs."hcparse-master".ref   = "master";

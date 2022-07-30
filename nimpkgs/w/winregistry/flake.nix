@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."winregistry-devel".dir   = "devel";
+  inputs."winregistry-devel".owner = "nim-nix-pkgs";
+  inputs."winregistry-devel".ref   = "master";
+  inputs."winregistry-devel".repo  = "winregistry";
+  inputs."winregistry-devel".type  = "github";
+  inputs."winregistry-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."winregistry-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."winregistry-master".dir   = "master";
   inputs."winregistry-master".owner = "nim-nix-pkgs";
   inputs."winregistry-master".ref   = "master";

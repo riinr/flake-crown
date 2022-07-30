@@ -16,7 +16,7 @@
   inputs."stones".owner = "nim-nix-pkgs";
   inputs."stones".ref   = "master";
   inputs."stones".repo  = "stones";
-  inputs."stones".dir   = "";
+  inputs."stones".dir   = "devel";
   inputs."stones".type  = "github";
   inputs."stones".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stones".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

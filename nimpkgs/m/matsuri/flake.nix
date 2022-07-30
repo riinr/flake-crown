@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."matsuri-devel".dir   = "devel";
+  inputs."matsuri-devel".owner = "nim-nix-pkgs";
+  inputs."matsuri-devel".ref   = "master";
+  inputs."matsuri-devel".repo  = "matsuri";
+  inputs."matsuri-devel".type  = "github";
+  inputs."matsuri-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."matsuri-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."matsuri-master".dir   = "master";
   inputs."matsuri-master".owner = "nim-nix-pkgs";
   inputs."matsuri-master".ref   = "master";

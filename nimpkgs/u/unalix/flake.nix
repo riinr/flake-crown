@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."unalix-devel".dir   = "devel";
+  inputs."unalix-devel".owner = "nim-nix-pkgs";
+  inputs."unalix-devel".ref   = "master";
+  inputs."unalix-devel".repo  = "unalix";
+  inputs."unalix-devel".type  = "github";
+  inputs."unalix-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."unalix-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."unalix-master".dir   = "master";
   inputs."unalix-master".owner = "nim-nix-pkgs";
   inputs."unalix-master".ref   = "master";

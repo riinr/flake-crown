@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."emerald-devel".dir   = "devel";
+  inputs."emerald-devel".owner = "nim-nix-pkgs";
+  inputs."emerald-devel".ref   = "master";
+  inputs."emerald-devel".repo  = "emerald";
+  inputs."emerald-devel".type  = "github";
+  inputs."emerald-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."emerald-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."emerald-master".dir   = "master";
   inputs."emerald-master".owner = "nim-nix-pkgs";
   inputs."emerald-master".ref   = "master";

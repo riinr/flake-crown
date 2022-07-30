@@ -9,9 +9,9 @@
   
   inputs.src-gimg-master.flake = false;
   inputs.src-gimg-master.ref   = "refs/heads/master";
-  inputs.src-gimg-master.owner = "lurlo";
+  inputs.src-gimg-master.owner = "thisago";
   inputs.src-gimg-master.repo  = "gimg";
-  inputs.src-gimg-master.type  = "gitlab";
+  inputs.src-gimg-master.type  = "github";
   
   inputs."useragent".owner = "nim-nix-pkgs";
   inputs."useragent".ref   = "master";

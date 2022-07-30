@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."jsmn-devel".dir   = "devel";
+  inputs."jsmn-devel".owner = "nim-nix-pkgs";
+  inputs."jsmn-devel".ref   = "master";
+  inputs."jsmn-devel".repo  = "jsmn";
+  inputs."jsmn-devel".type  = "github";
+  inputs."jsmn-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jsmn-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."jsmn-master".dir   = "master";
   inputs."jsmn-master".owner = "nim-nix-pkgs";
   inputs."jsmn-master".ref   = "master";

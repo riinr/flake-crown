@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."nimcef-devel".dir   = "devel";
+  inputs."nimcef-devel".owner = "nim-nix-pkgs";
+  inputs."nimcef-devel".ref   = "master";
+  inputs."nimcef-devel".repo  = "nimcef";
+  inputs."nimcef-devel".type  = "github";
+  inputs."nimcef-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimcef-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."nimcef-master".dir   = "master";
   inputs."nimcef-master".owner = "nim-nix-pkgs";
   inputs."nimcef-master".ref   = "master";

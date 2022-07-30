@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."timelog-devel".dir   = "devel";
+  inputs."timelog-devel".owner = "nim-nix-pkgs";
+  inputs."timelog-devel".ref   = "master";
+  inputs."timelog-devel".repo  = "timelog";
+  inputs."timelog-devel".type  = "github";
+  inputs."timelog-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."timelog-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."timelog-main".dir   = "main";
   inputs."timelog-main".owner = "nim-nix-pkgs";
   inputs."timelog-main".ref   = "master";

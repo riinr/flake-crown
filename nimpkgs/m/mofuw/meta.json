@@ -38,6 +38,52 @@
         },
         {
           "name": "https://github.com/2vg/mofuparser",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "https://github.com/2vg/mofuhttputils",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/devel"
+    },
+    {
+      "name": "mofuw",
+      "version": "2.0.0",
+      "author": "2vg",
+      "desc": "more faster, ultra performance webserver",
+      "license": "MIT",
+      "skipDirs": [
+        "images"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        },
+        {
+          "name": "https://github.com/2vg/mofuparser",
           "str": "any version",
           "ver": {
             "kind": "verAny"

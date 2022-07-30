@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."dbus-devel".dir   = "devel";
+  inputs."dbus-devel".owner = "nim-nix-pkgs";
+  inputs."dbus-devel".ref   = "master";
+  inputs."dbus-devel".repo  = "dbus";
+  inputs."dbus-devel".type  = "github";
+  inputs."dbus-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."dbus-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."dbus-master".dir   = "master";
   inputs."dbus-master".owner = "nim-nix-pkgs";
   inputs."dbus-master".ref   = "master";

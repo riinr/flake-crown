@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."csv2dbsrc-devel".dir   = "devel";
+  inputs."csv2dbsrc-devel".owner = "nim-nix-pkgs";
+  inputs."csv2dbsrc-devel".ref   = "master";
+  inputs."csv2dbsrc-devel".repo  = "csv2dbsrc";
+  inputs."csv2dbsrc-devel".type  = "github";
+  inputs."csv2dbsrc-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."csv2dbsrc-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."csv2dbsrc-master".dir   = "master";
   inputs."csv2dbsrc-master".owner = "nim-nix-pkgs";
   inputs."csv2dbsrc-master".ref   = "master";

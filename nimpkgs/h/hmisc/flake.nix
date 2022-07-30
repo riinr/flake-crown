@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."hmisc-devel".dir   = "devel";
+  inputs."hmisc-devel".owner = "nim-nix-pkgs";
+  inputs."hmisc-devel".ref   = "master";
+  inputs."hmisc-devel".repo  = "hmisc";
+  inputs."hmisc-devel".type  = "github";
+  inputs."hmisc-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."hmisc-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."hmisc-master".dir   = "master";
   inputs."hmisc-master".owner = "nim-nix-pkgs";
   inputs."hmisc-master".ref   = "master";

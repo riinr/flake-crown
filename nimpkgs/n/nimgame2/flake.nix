@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."nimgame2-devel".dir   = "devel";
+  inputs."nimgame2-devel".owner = "nim-nix-pkgs";
+  inputs."nimgame2-devel".ref   = "master";
+  inputs."nimgame2-devel".repo  = "nimgame2";
+  inputs."nimgame2-devel".type  = "github";
+  inputs."nimgame2-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimgame2-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."nimgame2-master".dir   = "master";
   inputs."nimgame2-master".owner = "nim-nix-pkgs";
   inputs."nimgame2-master".ref   = "master";

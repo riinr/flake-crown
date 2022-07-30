@@ -13,13 +13,13 @@
   inputs.src-array2d-master.repo  = "array2d";
   inputs.src-array2d-master.type  = "github";
   
-  inputs."github.com/avahe-kellenberger/nimtest".owner = "nim-nix-pkgs";
-  inputs."github.com/avahe-kellenberger/nimtest".ref   = "master";
-  inputs."github.com/avahe-kellenberger/nimtest".repo  = "github.com/avahe-kellenberger/nimtest";
-  inputs."github.com/avahe-kellenberger/nimtest".dir   = "";
-  inputs."github.com/avahe-kellenberger/nimtest".type  = "github";
-  inputs."github.com/avahe-kellenberger/nimtest".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."github.com/avahe-kellenberger/nimtest".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimtest".owner = "nim-nix-pkgs";
+  inputs."nimtest".ref   = "master";
+  inputs."nimtest".repo  = "nimtest";
+  inputs."nimtest".dir   = "master";
+  inputs."nimtest".type  = "github";
+  inputs."nimtest".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimtest".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

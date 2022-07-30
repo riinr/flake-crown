@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."prologue-devel".dir   = "devel";
+  inputs."prologue-devel".owner = "nim-nix-pkgs";
+  inputs."prologue-devel".ref   = "master";
+  inputs."prologue-devel".repo  = "prologue";
+  inputs."prologue-devel".type  = "github";
+  inputs."prologue-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."prologue-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."prologue-0_4_4".dir   = "0_4_4";
   inputs."prologue-0_4_4".owner = "nim-nix-pkgs";
   inputs."prologue-0_4_4".ref   = "master";

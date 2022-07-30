@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."nesper-devel".dir   = "devel";
+  inputs."nesper-devel".owner = "nim-nix-pkgs";
+  inputs."nesper-devel".ref   = "master";
+  inputs."nesper-devel".repo  = "nesper";
+  inputs."nesper-devel".type  = "github";
+  inputs."nesper-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nesper-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."nesper-master".dir   = "master";
   inputs."nesper-master".owner = "nim-nix-pkgs";
   inputs."nesper-master".ref   = "master";

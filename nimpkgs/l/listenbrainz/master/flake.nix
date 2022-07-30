@@ -40,7 +40,7 @@
   inputs."github-tandy-1000-uniony".owner = "nim-nix-pkgs";
   inputs."github-tandy-1000-uniony".ref   = "master";
   inputs."github-tandy-1000-uniony".repo  = "github-tandy-1000-uniony";
-  inputs."github-tandy-1000-uniony".dir   = "master";
+  inputs."github-tandy-1000-uniony".dir   = "devel";
   inputs."github-tandy-1000-uniony".type  = "github";
   inputs."github-tandy-1000-uniony".inputs.nixpkgs.follows = "nixpkgs";
   inputs."github-tandy-1000-uniony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."nesm-devel".dir   = "devel";
+  inputs."nesm-devel".owner = "nim-nix-pkgs";
+  inputs."nesm-devel".ref   = "master";
+  inputs."nesm-devel".repo  = "nesm";
+  inputs."nesm-devel".type  = "github";
+  inputs."nesm-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nesm-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."nesm-master".dir   = "master";
   inputs."nesm-master".owner = "nim-nix-pkgs";
   inputs."nesm-master".ref   = "master";

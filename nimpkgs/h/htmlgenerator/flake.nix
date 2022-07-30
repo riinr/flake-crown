@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."htmlgenerator-devel".dir   = "devel";
+  inputs."htmlgenerator-devel".owner = "nim-nix-pkgs";
+  inputs."htmlgenerator-devel".ref   = "master";
+  inputs."htmlgenerator-devel".repo  = "htmlgenerator";
+  inputs."htmlgenerator-devel".type  = "github";
+  inputs."htmlgenerator-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."htmlgenerator-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."htmlgenerator-master".dir   = "master";
   inputs."htmlgenerator-master".owner = "nim-nix-pkgs";
   inputs."htmlgenerator-master".ref   = "master";

@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."karax-devel".dir   = "devel";
+  inputs."karax-devel".owner = "nim-nix-pkgs";
+  inputs."karax-devel".ref   = "master";
+  inputs."karax-devel".repo  = "karax";
+  inputs."karax-devel".type  = "github";
+  inputs."karax-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."karax-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."karax-master".dir   = "master";
   inputs."karax-master".owner = "nim-nix-pkgs";
   inputs."karax-master".ref   = "master";

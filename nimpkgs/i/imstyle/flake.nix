@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."imstyle-devel".dir   = "devel";
+  inputs."imstyle-devel".owner = "nim-nix-pkgs";
+  inputs."imstyle-devel".ref   = "master";
+  inputs."imstyle-devel".repo  = "imstyle";
+  inputs."imstyle-devel".type  = "github";
+  inputs."imstyle-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."imstyle-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."imstyle-main".dir   = "main";
   inputs."imstyle-main".owner = "nim-nix-pkgs";
   inputs."imstyle-main".ref   = "master";

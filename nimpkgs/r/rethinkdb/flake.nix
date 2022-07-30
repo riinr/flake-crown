@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."rethinkdb-devel".dir   = "devel";
+  inputs."rethinkdb-devel".owner = "nim-nix-pkgs";
+  inputs."rethinkdb-devel".ref   = "master";
+  inputs."rethinkdb-devel".repo  = "rethinkdb";
+  inputs."rethinkdb-devel".type  = "github";
+  inputs."rethinkdb-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."rethinkdb-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."rethinkdb-master".dir   = "master";
   inputs."rethinkdb-master".owner = "nim-nix-pkgs";
   inputs."rethinkdb-master".ref   = "master";

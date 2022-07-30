@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."libharu-devel".dir   = "devel";
+  inputs."libharu-devel".owner = "nim-nix-pkgs";
+  inputs."libharu-devel".ref   = "master";
+  inputs."libharu-devel".repo  = "libharu";
+  inputs."libharu-devel".type  = "github";
+  inputs."libharu-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."libharu-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."libharu-master".dir   = "master";
   inputs."libharu-master".owner = "nim-nix-pkgs";
   inputs."libharu-master".ref   = "master";

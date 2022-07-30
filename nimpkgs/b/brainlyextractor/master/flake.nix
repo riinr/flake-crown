@@ -9,9 +9,9 @@
   
   inputs.src-brainlyextractor-master.flake = false;
   inputs.src-brainlyextractor-master.ref   = "refs/heads/master";
-  inputs.src-brainlyextractor-master.owner = "lurlo";
+  inputs.src-brainlyextractor-master.owner = "thisago";
   inputs.src-brainlyextractor-master.repo  = "brainlyextractor";
-  inputs.src-brainlyextractor-master.type  = "gitlab";
+  inputs.src-brainlyextractor-master.type  = "github";
   
   inputs."scraper".owner = "nim-nix-pkgs";
   inputs."scraper".ref   = "master";

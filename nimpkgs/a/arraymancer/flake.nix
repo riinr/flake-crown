@@ -167,6 +167,22 @@
   inputs."arraymancer-v0_7_13".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer-v0_7_13".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."arraymancer-v0_7_14".dir   = "v0_7_14";
+  inputs."arraymancer-v0_7_14".owner = "nim-nix-pkgs";
+  inputs."arraymancer-v0_7_14".ref   = "master";
+  inputs."arraymancer-v0_7_14".repo  = "arraymancer";
+  inputs."arraymancer-v0_7_14".type  = "github";
+  inputs."arraymancer-v0_7_14".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."arraymancer-v0_7_14".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."arraymancer-v0_7_15".dir   = "v0_7_15";
+  inputs."arraymancer-v0_7_15".owner = "nim-nix-pkgs";
+  inputs."arraymancer-v0_7_15".ref   = "master";
+  inputs."arraymancer-v0_7_15".repo  = "arraymancer";
+  inputs."arraymancer-v0_7_15".type  = "github";
+  inputs."arraymancer-v0_7_15".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."arraymancer-v0_7_15".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."arraymancer-v0_7_2".dir   = "v0_7_2";
   inputs."arraymancer-v0_7_2".owner = "nim-nix-pkgs";
   inputs."arraymancer-v0_7_2".ref   = "master";

@@ -95,6 +95,22 @@
   inputs."unchained-v0_1_9".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unchained-v0_1_9".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."unchained-v0_2_0".dir   = "v0_2_0";
+  inputs."unchained-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."unchained-v0_2_0".ref   = "master";
+  inputs."unchained-v0_2_0".repo  = "unchained";
+  inputs."unchained-v0_2_0".type  = "github";
+  inputs."unchained-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."unchained-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."unchained-v0_2_1".dir   = "v0_2_1";
+  inputs."unchained-v0_2_1".owner = "nim-nix-pkgs";
+  inputs."unchained-v0_2_1".ref   = "master";
+  inputs."unchained-v0_2_1".repo  = "unchained";
+  inputs."unchained-v0_2_1".type  = "github";
+  inputs."unchained-v0_2_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."unchained-v0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

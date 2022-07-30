@@ -16,7 +16,7 @@
   inputs."github-solitudesf-nim-dbus".owner = "nim-nix-pkgs";
   inputs."github-solitudesf-nim-dbus".ref   = "master";
   inputs."github-solitudesf-nim-dbus".repo  = "github-solitudesf-nim-dbus";
-  inputs."github-solitudesf-nim-dbus".dir   = "master";
+  inputs."github-solitudesf-nim-dbus".dir   = "devel";
   inputs."github-solitudesf-nim-dbus".type  = "github";
   inputs."github-solitudesf-nim-dbus".inputs.nixpkgs.follows = "nixpkgs";
   inputs."github-solitudesf-nim-dbus".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."openapi-devel".dir   = "devel";
+  inputs."openapi-devel".owner = "nim-nix-pkgs";
+  inputs."openapi-devel".ref   = "master";
+  inputs."openapi-devel".repo  = "openapi";
+  inputs."openapi-devel".type  = "github";
+  inputs."openapi-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."openapi-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."openapi-master".dir   = "master";
   inputs."openapi-master".owner = "nim-nix-pkgs";
   inputs."openapi-master".ref   = "master";

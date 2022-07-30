@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."capnp-devel".dir   = "devel";
+  inputs."capnp-devel".owner = "nim-nix-pkgs";
+  inputs."capnp-devel".ref   = "master";
+  inputs."capnp-devel".repo  = "capnp";
+  inputs."capnp-devel".type  = "github";
+  inputs."capnp-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."capnp-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."capnp-master".dir   = "master";
   inputs."capnp-master".owner = "nim-nix-pkgs";
   inputs."capnp-master".ref   = "master";

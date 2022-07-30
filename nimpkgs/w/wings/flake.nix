@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."wings-devel".dir   = "devel";
+  inputs."wings-devel".owner = "nim-nix-pkgs";
+  inputs."wings-devel".ref   = "master";
+  inputs."wings-devel".repo  = "wings";
+  inputs."wings-devel".type  = "github";
+  inputs."wings-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."wings-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."wings-v0_0_1-alpha".dir   = "v0_0_1-alpha";
   inputs."wings-v0_0_1-alpha".owner = "nim-nix-pkgs";
   inputs."wings-v0_0_1-alpha".ref   = "master";

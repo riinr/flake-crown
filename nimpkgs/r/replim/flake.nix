@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."replim-devel".dir   = "devel";
+  inputs."replim-devel".owner = "nim-nix-pkgs";
+  inputs."replim-devel".ref   = "master";
+  inputs."replim-devel".repo  = "replim";
+  inputs."replim-devel".type  = "github";
+  inputs."replim-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."replim-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."replim-master".dir   = "master";
   inputs."replim-master".owner = "nim-nix-pkgs";
   inputs."replim-master".ref   = "master";

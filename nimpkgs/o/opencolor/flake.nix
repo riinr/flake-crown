@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."opencolor-devel".dir   = "devel";
+  inputs."opencolor-devel".owner = "nim-nix-pkgs";
+  inputs."opencolor-devel".ref   = "master";
+  inputs."opencolor-devel".repo  = "opencolor";
+  inputs."opencolor-devel".type  = "github";
+  inputs."opencolor-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."opencolor-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."opencolor-v1_9_1".dir   = "v1_9_1";
   inputs."opencolor-v1_9_1".owner = "nim-nix-pkgs";
   inputs."opencolor-v1_9_1".ref   = "master";

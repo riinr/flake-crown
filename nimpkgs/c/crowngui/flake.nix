@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."crowngui-devel".dir   = "devel";
+  inputs."crowngui-devel".owner = "nim-nix-pkgs";
+  inputs."crowngui-devel".ref   = "master";
+  inputs."crowngui-devel".repo  = "crowngui";
+  inputs."crowngui-devel".type  = "github";
+  inputs."crowngui-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."crowngui-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."crowngui-master".dir   = "master";
   inputs."crowngui-master".owner = "nim-nix-pkgs";
   inputs."crowngui-master".ref   = "master";

@@ -9,9 +9,9 @@
   
   inputs.src-scraper-master.flake = false;
   inputs.src-scraper-master.ref   = "refs/heads/master";
-  inputs.src-scraper-master.owner = "lurlo";
+  inputs.src-scraper-master.owner = "thisago";
   inputs.src-scraper-master.repo  = "scraper";
-  inputs.src-scraper-master.type  = "gitlab";
+  inputs.src-scraper-master.type  = "github";
   
   inputs."github-thisago-findxml".owner = "nim-nix-pkgs";
   inputs."github-thisago-findxml".ref   = "master";

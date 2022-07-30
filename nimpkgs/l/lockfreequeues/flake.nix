@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."lockfreequeues-devel".dir   = "devel";
+  inputs."lockfreequeues-devel".owner = "nim-nix-pkgs";
+  inputs."lockfreequeues-devel".ref   = "master";
+  inputs."lockfreequeues-devel".repo  = "lockfreequeues";
+  inputs."lockfreequeues-devel".type  = "github";
+  inputs."lockfreequeues-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."lockfreequeues-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."lockfreequeues-v0_1_0".dir   = "v0_1_0";
   inputs."lockfreequeues-v0_1_0".owner = "nim-nix-pkgs";
   inputs."lockfreequeues-v0_1_0".ref   = "master";

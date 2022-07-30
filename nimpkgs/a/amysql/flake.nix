@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."amysql-devel".dir   = "devel";
+  inputs."amysql-devel".owner = "nim-nix-pkgs";
+  inputs."amysql-devel".ref   = "master";
+  inputs."amysql-devel".repo  = "amysql";
+  inputs."amysql-devel".type  = "github";
+  inputs."amysql-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."amysql-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."amysql-master".dir   = "master";
   inputs."amysql-master".owner = "nim-nix-pkgs";
   inputs."amysql-master".ref   = "master";

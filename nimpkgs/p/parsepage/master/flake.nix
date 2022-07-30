@@ -9,9 +9,9 @@
   
   inputs.src-parsepage-master.flake = false;
   inputs.src-parsepage-master.ref   = "refs/heads/master";
-  inputs.src-parsepage-master.owner = "lurlo";
+  inputs.src-parsepage-master.owner = "thisago";
   inputs.src-parsepage-master.repo  = "parsepage";
-  inputs.src-parsepage-master.type  = "gitlab";
+  inputs.src-parsepage-master.type  = "github";
   
   inputs."github.com/thisago/fsafename".owner = "nim-nix-pkgs";
   inputs."github.com/thisago/fsafename".ref   = "master";
@@ -40,7 +40,7 @@
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
-  inputs."cligen".dir   = "v1_5_25";
+  inputs."cligen".dir   = "v1_5_26";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

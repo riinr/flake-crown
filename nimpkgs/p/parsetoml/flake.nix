@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."parsetoml-devel".dir   = "devel";
+  inputs."parsetoml-devel".owner = "nim-nix-pkgs";
+  inputs."parsetoml-devel".ref   = "master";
+  inputs."parsetoml-devel".repo  = "parsetoml";
+  inputs."parsetoml-devel".type  = "github";
+  inputs."parsetoml-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."parsetoml-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."parsetoml-master".dir   = "master";
   inputs."parsetoml-master".owner = "nim-nix-pkgs";
   inputs."parsetoml-master".ref   = "master";
