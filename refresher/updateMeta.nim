@@ -208,7 +208,7 @@ proc projectMeta(pkg: JsonNode): auto =
       --source=.                                      \
       ||                                              \
     git remote add origin                             \
-        git@github.com:nim-nix-pkgs/{nameLo}.git
+        git@github.com:nim-nix-pkgs/{nameLo}.git 2> /dev/null
   """
   refsMeta pkg
 

@@ -119,6 +119,14 @@
   inputs."chroma-0_2_6".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chroma-0_2_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."chroma-0_2_7".dir   = "0_2_7";
+  inputs."chroma-0_2_7".owner = "nim-nix-pkgs";
+  inputs."chroma-0_2_7".ref   = "master";
+  inputs."chroma-0_2_7".repo  = "chroma";
+  inputs."chroma-0_2_7".type  = "github";
+  inputs."chroma-0_2_7".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."chroma-0_2_7".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."chroma-v0_1_0".dir   = "v0_1_0";
   inputs."chroma-v0_1_0".owner = "nim-nix-pkgs";
   inputs."chroma-v0_1_0".ref   = "master";

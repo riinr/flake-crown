@@ -74,6 +74,54 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/tags/v0.3.0"
+    },
+    {
+      "name": "jitter",
+      "version": "0.3.0",
+      "author": "sharpcdf",
+      "desc": "A git-based binary manager for linux.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.3"
+          }
+        },
+        {
+          "name": "argparse",
+          "str": ">= 3.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "3.0.0"
+          }
+        }
+      ],
+      "bin": [
+        "jtr"
+      ],
+      "binDir": "bin",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.9"
     }
   ],
   "description": "A git-based binary manager for linux.",
@@ -85,6 +133,7 @@
     "refs/tags/v0.1.0",
     "refs/tags/v0.2.4",
     "refs/tags/v0.3.0",
+    "refs/tags/v0.3.9",
     ""
   ],
   "heads": [

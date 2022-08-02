@@ -7,14 +7,6 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."subviewer-master".dir   = "master";
-  inputs."subviewer-master".owner = "nim-nix-pkgs";
-  inputs."subviewer-master".ref   = "master";
-  inputs."subviewer-master".repo  = "subviewer";
-  inputs."subviewer-master".type  = "github";
-  inputs."subviewer-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."subviewer-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

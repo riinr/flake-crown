@@ -199,6 +199,22 @@
   inputs."nimsimd-1_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimsimd-1_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."nimsimd-1_1_10".dir   = "1_1_10";
+  inputs."nimsimd-1_1_10".owner = "nim-nix-pkgs";
+  inputs."nimsimd-1_1_10".ref   = "master";
+  inputs."nimsimd-1_1_10".repo  = "nimsimd";
+  inputs."nimsimd-1_1_10".type  = "github";
+  inputs."nimsimd-1_1_10".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimsimd-1_1_10".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."nimsimd-1_1_11".dir   = "1_1_11";
+  inputs."nimsimd-1_1_11".owner = "nim-nix-pkgs";
+  inputs."nimsimd-1_1_11".ref   = "master";
+  inputs."nimsimd-1_1_11".repo  = "nimsimd";
+  inputs."nimsimd-1_1_11".type  = "github";
+  inputs."nimsimd-1_1_11".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimsimd-1_1_11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."nimsimd-1_1_2".dir   = "1_1_2";
   inputs."nimsimd-1_1_2".owner = "nim-nix-pkgs";
   inputs."nimsimd-1_1_2".ref   = "master";
