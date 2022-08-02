@@ -1,0 +1,63 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-emerald-devel": "src-emerald-devel"
+      }
+    },
+    "src-emerald-devel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569653449,
+        "narHash": "sha256-r6GaX1zQtVOmhUF9rAT/qPhPApXyG2nqTjlSnktDXk0=",
+        "owner": "flyx",
+        "repo": "emerald",
+        "rev": "a625ef8f7ae571535f6a1e3ba9cd1b1647e41339",
+        "type": "github"
+      },
+      "original": {
+        "owner": "flyx",
+        "ref": "refs/heads/devel",
+        "repo": "emerald",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

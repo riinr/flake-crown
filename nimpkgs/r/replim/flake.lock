@@ -33,6 +33,33 @@
         "type": "indirect"
       }
     },
+    "replim-devel": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-replim-devel": "src-replim-devel"
+      },
+      "locked": {
+        "dir": "devel",
+        "lastModified": 1659020210,
+        "narHash": "sha256-truRmdOk/Xnt21uL+KenMty9UFgB8IuKIYaZ9aDSNBU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "replim",
+        "rev": "4910d312e6bccda6e7adecdd057819935f67b736",
+        "type": "github"
+      },
+      "original": {
+        "dir": "devel",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "replim",
+        "type": "github"
+      }
+    },
     "replim-master": {
       "inputs": {
         "flakeNimbleLib": [
@@ -45,11 +72,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1658206399,
-        "narHash": "sha256-L9rJyUd40I6SZMQn4U2q2yiiGOFGiE7gR7BQZhR5aP0=",
+        "lastModified": 1659020210,
+        "narHash": "sha256-truRmdOk/Xnt21uL+KenMty9UFgB8IuKIYaZ9aDSNBU=",
         "owner": "nim-nix-pkgs",
         "repo": "replim",
-        "rev": "d9f2c894f6f5a23e495f5ae99a038c185b66be4b",
+        "rev": "4910d312e6bccda6e7adecdd057819935f67b736",
         "type": "github"
       },
       "original": {
@@ -64,7 +91,25 @@
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
+        "replim-devel": "replim-devel",
         "replim-master": "replim-master"
+      }
+    },
+    "src-replim-devel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1542619556,
+        "narHash": "sha256-652DJwOJS+vdP55vTviBGVTQLZX59fgoAbEtqfHtR5w=",
+        "owner": "gmshiba",
+        "repo": "replim",
+        "rev": "fed0c305f8d7667f7a073eb249f085018520c1a7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gmshiba",
+        "ref": "refs/heads/devel",
+        "repo": "replim",
+        "type": "github"
       }
     },
     "src-replim-master": {

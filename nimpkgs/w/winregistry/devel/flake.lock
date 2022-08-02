@@ -1,0 +1,63 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-winregistry-devel": "src-winregistry-devel"
+      }
+    },
+    "src-winregistry-devel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1653076973,
+        "narHash": "sha256-mpZ2XE2veql0FcsxvnZmYmx1bChDfWyXxQhI+dO1EVg=",
+        "owner": "miere43",
+        "repo": "nim-registry",
+        "rev": "8408be3693accb2e1619464885f4de8abb2511b3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "miere43",
+        "ref": "refs/heads/devel",
+        "repo": "nim-registry",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

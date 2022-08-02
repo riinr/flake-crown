@@ -21,6 +21,33 @@
         "type": "github"
       }
     },
+    "nimrat-devel": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimrat-devel": "src-nimrat-devel"
+      },
+      "locked": {
+        "dir": "devel",
+        "lastModified": 1659020095,
+        "narHash": "sha256-uCz5AGUGaHtYddhU9zp7awcKPmLk3PbSGPC1GoDgplw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimrat",
+        "rev": "3f379fc5c4e40ee37f6ec9c41c9f2314dc2e36f7",
+        "type": "github"
+      },
+      "original": {
+        "dir": "devel",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimrat",
+        "type": "github"
+      }
+    },
     "nimrat-master": {
       "inputs": {
         "flakeNimbleLib": [
@@ -33,11 +60,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1658206258,
-        "narHash": "sha256-hG4UCAnL+xex/SRxTTW5teHvrt4M6I5QCnLb2+TNyVY=",
+        "lastModified": 1659020095,
+        "narHash": "sha256-uCz5AGUGaHtYddhU9zp7awcKPmLk3PbSGPC1GoDgplw=",
         "owner": "nim-nix-pkgs",
         "repo": "nimrat",
-        "rev": "8385d10a09dfce64fc1312b4cca3b3bc480c532a",
+        "rev": "3f379fc5c4e40ee37f6ec9c41c9f2314dc2e36f7",
         "type": "github"
       },
       "original": {
@@ -60,11 +87,11 @@
       },
       "locked": {
         "dir": "v0_1",
-        "lastModified": 1658206258,
-        "narHash": "sha256-hG4UCAnL+xex/SRxTTW5teHvrt4M6I5QCnLb2+TNyVY=",
+        "lastModified": 1659020095,
+        "narHash": "sha256-uCz5AGUGaHtYddhU9zp7awcKPmLk3PbSGPC1GoDgplw=",
         "owner": "nim-nix-pkgs",
         "repo": "nimrat",
-        "rev": "8385d10a09dfce64fc1312b4cca3b3bc480c532a",
+        "rev": "3f379fc5c4e40ee37f6ec9c41c9f2314dc2e36f7",
         "type": "github"
       },
       "original": {
@@ -90,9 +117,27 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "nimrat-devel": "nimrat-devel",
         "nimrat-master": "nimrat-master",
         "nimrat-v0_1": "nimrat-v0_1",
         "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimrat-devel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1424321576,
+        "narHash": "sha256-LFOXXm9kuh+gYaGIOUklI5vTCfm1t11i6O/tHVHRIko=",
+        "owner": "apense",
+        "repo": "nimrat",
+        "rev": "d515d0dec6f9c246b0fa236ad1c21738d80c0ddc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "apense",
+        "ref": "refs/heads/devel",
+        "repo": "nimrat",
+        "type": "github"
       }
     },
     "src-nimrat-master": {

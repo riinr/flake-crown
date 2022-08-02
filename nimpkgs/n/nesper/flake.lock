@@ -53,22 +53,22 @@
     "msgpack4nim_2": {
       "inputs": {
         "flakeNimbleLib": [
-          "nesper-master",
+          "nesper-devel",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "nesper-master",
+          "nesper-devel",
           "nixpkgs"
         ],
         "src-msgpack4nim-v0_3_1": "src-msgpack4nim-v0_3_1_2"
       },
       "locked": {
         "dir": "v0_3_1",
-        "lastModified": 1658206179,
-        "narHash": "sha256-6ySQZEi060X2cbMyzUGJr6yL+0OFpnJ11Cu31YlnNwQ=",
+        "lastModified": 1659475449,
+        "narHash": "sha256-grDRrxnpuXcGPsjght+x1LZ4UB4PI1wzWmFcf22wJGw=",
         "owner": "nim-nix-pkgs",
         "repo": "msgpack4nim",
-        "rev": "c20e268dda26a0cb28b752e81bfd7748c9bb717c",
+        "rev": "541f2ed059e227682c171c9314e2ce9e408e783f",
         "type": "github"
       },
       "original": {
@@ -82,6 +82,35 @@
     "msgpack4nim_3": {
       "inputs": {
         "flakeNimbleLib": [
+          "nesper-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nesper-master",
+          "nixpkgs"
+        ],
+        "src-msgpack4nim-v0_3_1": "src-msgpack4nim-v0_3_1_3"
+      },
+      "locked": {
+        "dir": "v0_3_1",
+        "lastModified": 1658609597,
+        "narHash": "sha256-ZbkaBqyHY5yQGHuUJmHjO4403HcOhjMvLwYUGP1/c24=",
+        "owner": "nim-nix-pkgs",
+        "repo": "msgpack4nim",
+        "rev": "fc31b5720ba23233b6ff058bfb0afee3b01d565d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_3_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "msgpack4nim",
+        "type": "github"
+      }
+    },
+    "msgpack4nim_4": {
+      "inputs": {
+        "flakeNimbleLib": [
           "nesper-v0_6_0",
           "flakeNimbleLib"
         ],
@@ -89,7 +118,7 @@
           "nesper-v0_6_0",
           "nixpkgs"
         ],
-        "src-msgpack4nim-v0_3_1": "src-msgpack4nim-v0_3_1_3"
+        "src-msgpack4nim-v0_3_1": "src-msgpack4nim-v0_3_1_4"
       },
       "locked": {
         "dir": "v0_3_1",
@@ -122,15 +151,44 @@
       },
       "locked": {
         "dir": "0_5_0",
-        "lastModified": 1658208267,
-        "narHash": "sha256-Eips9OatnSSBMMUpuvA99nT3Vvz9FKaynbMREtKD/Lg=",
+        "lastModified": 1659020036,
+        "narHash": "sha256-PGyBMgqAmSqcSf75pgnmc3MkbmgvDKikspl8DbcmCLM=",
         "owner": "nim-nix-pkgs",
         "repo": "nesper",
-        "rev": "ae7ce83cbcc4d32d052def219825c8057b0698aa",
+        "rev": "0030d70f1bc56efca9d8252f5d1a645c15f3a48a",
         "type": "github"
       },
       "original": {
         "dir": "0_5_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nesper",
+        "type": "github"
+      }
+    },
+    "nesper-devel": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "msgpack4nim": "msgpack4nim_2",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nesper-devel": "src-nesper-devel",
+        "stew": "stew_2"
+      },
+      "locked": {
+        "dir": "devel",
+        "lastModified": 1659020036,
+        "narHash": "sha256-PGyBMgqAmSqcSf75pgnmc3MkbmgvDKikspl8DbcmCLM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nesper",
+        "rev": "0030d70f1bc56efca9d8252f5d1a645c15f3a48a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "devel",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "nesper",
@@ -142,20 +200,20 @@
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
-        "msgpack4nim": "msgpack4nim_2",
+        "msgpack4nim": "msgpack4nim_3",
         "nixpkgs": [
           "nixpkgs"
         ],
         "src-nesper-master": "src-nesper-master",
-        "stew": "stew_2"
+        "stew": "stew_3"
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1658208267,
-        "narHash": "sha256-Eips9OatnSSBMMUpuvA99nT3Vvz9FKaynbMREtKD/Lg=",
+        "lastModified": 1659020036,
+        "narHash": "sha256-PGyBMgqAmSqcSf75pgnmc3MkbmgvDKikspl8DbcmCLM=",
         "owner": "nim-nix-pkgs",
         "repo": "nesper",
-        "rev": "ae7ce83cbcc4d32d052def219825c8057b0698aa",
+        "rev": "0030d70f1bc56efca9d8252f5d1a645c15f3a48a",
         "type": "github"
       },
       "original": {
@@ -178,11 +236,11 @@
       },
       "locked": {
         "dir": "v0_2_0",
-        "lastModified": 1658208267,
-        "narHash": "sha256-Eips9OatnSSBMMUpuvA99nT3Vvz9FKaynbMREtKD/Lg=",
+        "lastModified": 1659020036,
+        "narHash": "sha256-PGyBMgqAmSqcSf75pgnmc3MkbmgvDKikspl8DbcmCLM=",
         "owner": "nim-nix-pkgs",
         "repo": "nesper",
-        "rev": "ae7ce83cbcc4d32d052def219825c8057b0698aa",
+        "rev": "0030d70f1bc56efca9d8252f5d1a645c15f3a48a",
         "type": "github"
       },
       "original": {
@@ -205,11 +263,11 @@
       },
       "locked": {
         "dir": "v0_3_0",
-        "lastModified": 1658208267,
-        "narHash": "sha256-Eips9OatnSSBMMUpuvA99nT3Vvz9FKaynbMREtKD/Lg=",
+        "lastModified": 1659020036,
+        "narHash": "sha256-PGyBMgqAmSqcSf75pgnmc3MkbmgvDKikspl8DbcmCLM=",
         "owner": "nim-nix-pkgs",
         "repo": "nesper",
-        "rev": "ae7ce83cbcc4d32d052def219825c8057b0698aa",
+        "rev": "0030d70f1bc56efca9d8252f5d1a645c15f3a48a",
         "type": "github"
       },
       "original": {
@@ -232,11 +290,11 @@
       },
       "locked": {
         "dir": "v0_4_0",
-        "lastModified": 1658208267,
-        "narHash": "sha256-Eips9OatnSSBMMUpuvA99nT3Vvz9FKaynbMREtKD/Lg=",
+        "lastModified": 1659020036,
+        "narHash": "sha256-PGyBMgqAmSqcSf75pgnmc3MkbmgvDKikspl8DbcmCLM=",
         "owner": "nim-nix-pkgs",
         "repo": "nesper",
-        "rev": "ae7ce83cbcc4d32d052def219825c8057b0698aa",
+        "rev": "0030d70f1bc56efca9d8252f5d1a645c15f3a48a",
         "type": "github"
       },
       "original": {
@@ -259,11 +317,11 @@
       },
       "locked": {
         "dir": "v0_4_1",
-        "lastModified": 1658208267,
-        "narHash": "sha256-Eips9OatnSSBMMUpuvA99nT3Vvz9FKaynbMREtKD/Lg=",
+        "lastModified": 1659020036,
+        "narHash": "sha256-PGyBMgqAmSqcSf75pgnmc3MkbmgvDKikspl8DbcmCLM=",
         "owner": "nim-nix-pkgs",
         "repo": "nesper",
-        "rev": "ae7ce83cbcc4d32d052def219825c8057b0698aa",
+        "rev": "0030d70f1bc56efca9d8252f5d1a645c15f3a48a",
         "type": "github"
       },
       "original": {
@@ -279,20 +337,20 @@
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
-        "msgpack4nim": "msgpack4nim_3",
+        "msgpack4nim": "msgpack4nim_4",
         "nixpkgs": [
           "nixpkgs"
         ],
         "src-nesper-v0_6_0": "src-nesper-v0_6_0",
-        "stew": "stew_3"
+        "stew": "stew_4"
       },
       "locked": {
         "dir": "v0_6_0",
-        "lastModified": 1658208267,
-        "narHash": "sha256-Eips9OatnSSBMMUpuvA99nT3Vvz9FKaynbMREtKD/Lg=",
+        "lastModified": 1659020036,
+        "narHash": "sha256-PGyBMgqAmSqcSf75pgnmc3MkbmgvDKikspl8DbcmCLM=",
         "owner": "nim-nix-pkgs",
         "repo": "nesper",
-        "rev": "ae7ce83cbcc4d32d052def219825c8057b0698aa",
+        "rev": "0030d70f1bc56efca9d8252f5d1a645c15f3a48a",
         "type": "github"
       },
       "original": {
@@ -319,6 +377,7 @@
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nesper-0_5_0": "nesper-0_5_0",
+        "nesper-devel": "nesper-devel",
         "nesper-master": "nesper-master",
         "nesper-v0_2_0": "nesper-v0_2_0",
         "nesper-v0_3_0": "nesper-v0_3_0",
@@ -379,6 +438,23 @@
         "type": "github"
       }
     },
+    "src-msgpack4nim-v0_3_1_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1578112201,
+        "narHash": "sha256-3f7DhmVEgOu4JmwDO20gmzM+ynVOPP0oCnsSGGNPAtE=",
+        "owner": "jangko",
+        "repo": "msgpack4nim",
+        "rev": "472152dd56a8b282535647caeba4643f3c4992f8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jangko",
+        "ref": "refs/tags/v0.3.1",
+        "repo": "msgpack4nim",
+        "type": "github"
+      }
+    },
     "src-nesper-0_5_0": {
       "flake": false,
       "locked": {
@@ -392,6 +468,23 @@
       "original": {
         "owner": "elcritch",
         "ref": "refs/tags/0.5.0",
+        "repo": "nesper",
+        "type": "github"
+      }
+    },
+    "src-nesper-devel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1658526831,
+        "narHash": "sha256-4LQK8nRtNU6E1eAXeagtRKBPeKoAbNRr/YF1KbKrBoA=",
+        "owner": "elcritch",
+        "repo": "nesper",
+        "rev": "77258215f574327eed55ff46e3a02c5c829cb8fa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "elcritch",
+        "ref": "refs/heads/devel",
         "repo": "nesper",
         "type": "github"
       }
@@ -518,11 +611,11 @@
     "src-stew-master_2": {
       "flake": false,
       "locked": {
-        "lastModified": 1658166991,
-        "narHash": "sha256-CyjKGeFF7Mc1M0DITmj5pJvKJLrCV55n0RkmTkSfxHw=",
+        "lastModified": 1659427697,
+        "narHash": "sha256-WYDgHIiOMRurY1KGx2lgRJzYGGT8uclrGMMvIzY6Qd0=",
         "owner": "status-im",
         "repo": "nim-stew",
-        "rev": "8a9816ac02e6026e0fbeffaea474565cba46fc6a",
+        "rev": "a812fd3faedc794678009dcf3c14571c1e284a25",
         "type": "github"
       },
       "original": {
@@ -533,6 +626,23 @@
       }
     },
     "src-stew-master_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1658218781,
+        "narHash": "sha256-Xto9qiTbZJ1lkIwVU9h7nxJYiTj2X3gDsPdA0P6VLmQ=",
+        "owner": "status-im",
+        "repo": "nim-stew",
+        "rev": "598246620da5c41d0e92a8dd6aab0755381b21cd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-stew",
+        "type": "github"
+      }
+    },
+    "src-stew-master_4": {
       "flake": false,
       "locked": {
         "lastModified": 1647462294,
@@ -581,22 +691,22 @@
     "stew_2": {
       "inputs": {
         "flakeNimbleLib": [
-          "nesper-master",
+          "nesper-devel",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "nesper-master",
+          "nesper-devel",
           "nixpkgs"
         ],
         "src-stew-master": "src-stew-master_2"
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1658206494,
-        "narHash": "sha256-REIfn6HfEatQaLZ2ZK2c9Pw4lIVEiJMp4TR/jA4LUzo=",
+        "lastModified": 1659475731,
+        "narHash": "sha256-sHXY3efY9+hCfKrjiptW3LVCAeytoDduO80JI6HLPUQ=",
         "owner": "nim-nix-pkgs",
         "repo": "stew",
-        "rev": "2514c76fc75566d1cd5ad699233309d6d3b6b0c3",
+        "rev": "fc83a42980a62ec029aeb31ddaa16801d753b43e",
         "type": "github"
       },
       "original": {
@@ -610,6 +720,35 @@
     "stew_3": {
       "inputs": {
         "flakeNimbleLib": [
+          "nesper-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nesper-master",
+          "nixpkgs"
+        ],
+        "src-stew-master": "src-stew-master_3"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1658609870,
+        "narHash": "sha256-YcnUgaxUxuzDSUmf7FlvHzhhBcwzBF9+OCe/LBzgAXc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "stew",
+        "rev": "01dea224c5ad9e2ef7f676f4c00b45d14bc1edf9",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "stew",
+        "type": "github"
+      }
+    },
+    "stew_4": {
+      "inputs": {
+        "flakeNimbleLib": [
           "nesper-v0_6_0",
           "flakeNimbleLib"
         ],
@@ -617,7 +756,7 @@
           "nesper-v0_6_0",
           "nixpkgs"
         ],
-        "src-stew-master": "src-stew-master_3"
+        "src-stew-master": "src-stew-master_4"
       },
       "locked": {
         "dir": "master",

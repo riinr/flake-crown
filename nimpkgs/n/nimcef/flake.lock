@@ -21,6 +21,33 @@
         "type": "github"
       }
     },
+    "nimcef-devel": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimCEF-devel": "src-nimCEF-devel"
+      },
+      "locked": {
+        "dir": "devel",
+        "lastModified": 1659020060,
+        "narHash": "sha256-M1BSDMsRCIsZHYkZ1zDBiCoIvt7OwDx+skRF0J4Tu6w=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimcef",
+        "rev": "850abbce0a2f2d315da0ba8aab0e977bc96b0a93",
+        "type": "github"
+      },
+      "original": {
+        "dir": "devel",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimcef",
+        "type": "github"
+      }
+    },
     "nimcef-master": {
       "inputs": {
         "flakeNimbleLib": [
@@ -33,11 +60,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1658206220,
-        "narHash": "sha256-1HRN1+mgutWwxpaAbOVZpKB1txjEbbx+IEbwtmWKZus=",
+        "lastModified": 1659020060,
+        "narHash": "sha256-M1BSDMsRCIsZHYkZ1zDBiCoIvt7OwDx+skRF0J4Tu6w=",
         "owner": "nim-nix-pkgs",
         "repo": "nimcef",
-        "rev": "103fefed1c99f95b2c10bdf5d0aa1ee9e7d4d93f",
+        "rev": "850abbce0a2f2d315da0ba8aab0e977bc96b0a93",
         "type": "github"
       },
       "original": {
@@ -63,8 +90,26 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "nimcef-devel": "nimcef-devel",
         "nimcef-master": "nimcef-master",
         "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimCEF-devel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1604126565,
+        "narHash": "sha256-mmQTdR9t7UIYKnlrqllRzDUiRAKokwDztIa+EWzXus4=",
+        "owner": "jangko",
+        "repo": "nimCEF",
+        "rev": "1dd96ad929da209aa26947c8411b51eb0f824263",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jangko",
+        "ref": "refs/heads/devel",
+        "repo": "nimCEF",
+        "type": "github"
       }
     },
     "src-nimCEF-master": {

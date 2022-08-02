@@ -1,0 +1,63 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-shellopt-main": "src-shellopt-main"
+      }
+    },
+    "src-shellopt-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1658912167,
+        "narHash": "sha256-AEXGqZx81PKlm4mcmw9ed3+5lxwcQS9BDVHx+pVacD0=",
+        "owner": "uga-rosa",
+        "repo": "shellopt.nim",
+        "rev": "51562fa3d3941b37433828bce5e109d4b12a0680",
+        "type": "github"
+      },
+      "original": {
+        "owner": "uga-rosa",
+        "ref": "refs/heads/main",
+        "repo": "shellopt.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

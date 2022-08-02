@@ -37,7 +37,35 @@
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
+        "sol-devel": "sol-devel",
         "sol-master": "sol-master"
+      }
+    },
+    "sol-devel": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sol-devel": "src-sol-devel"
+      },
+      "locked": {
+        "dir": "devel",
+        "lastModified": 1659020257,
+        "narHash": "sha256-3wHPFh3dKI8d8RLoQyjj3KBjGlzgjyu5z8jEEaCioq8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sol",
+        "rev": "1710948b54a133e1dcc6bd4619882fb0884f5d2c",
+        "type": "github"
+      },
+      "original": {
+        "dir": "devel",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sol",
+        "type": "github"
       }
     },
     "sol-master": {
@@ -52,17 +80,34 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1658206466,
-        "narHash": "sha256-Pu8A34kV6iqF0e4WTPm1EXb4DwJgVsMJ3yA3mht7eeY=",
+        "lastModified": 1659020257,
+        "narHash": "sha256-3wHPFh3dKI8d8RLoQyjj3KBjGlzgjyu5z8jEEaCioq8=",
         "owner": "nim-nix-pkgs",
         "repo": "sol",
-        "rev": "7a6cfc0def1da576949c8296106763f9d1d77ecf",
+        "rev": "1710948b54a133e1dcc6bd4619882fb0884f5d2c",
         "type": "github"
       },
       "original": {
         "dir": "master",
         "owner": "nim-nix-pkgs",
         "ref": "master",
+        "repo": "sol",
+        "type": "github"
+      }
+    },
+    "src-sol-devel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1551717107,
+        "narHash": "sha256-pZiuPDWCnUS9UlBrZuOzZ0WTDA1xgorglm+YaVGWPR4=",
+        "owner": "davidgarland",
+        "repo": "sol",
+        "rev": "b3f6f9b14bc0c4d16d8c0dcbd06d345853c9a3de",
+        "type": "github"
+      },
+      "original": {
+        "owner": "davidgarland",
+        "ref": "refs/heads/devel",
         "repo": "sol",
         "type": "github"
       }

@@ -21,6 +21,33 @@
         "type": "github"
       }
     },
+    "nimbomb-devel": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimbomb-devel": "src-nimbomb-devel"
+      },
+      "locked": {
+        "dir": "devel",
+        "lastModified": 1659020057,
+        "narHash": "sha256-+/Px7M7MREpARXw5dC8qchVX1nu7wZFs4l+P5Ow+07I=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimbomb",
+        "rev": "bfadbcdbaf259d5cfc212bc3689527392158ee28",
+        "type": "github"
+      },
+      "original": {
+        "dir": "devel",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimbomb",
+        "type": "github"
+      }
+    },
     "nimbomb-master": {
       "inputs": {
         "flakeNimbleLib": [
@@ -33,11 +60,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1658206216,
-        "narHash": "sha256-TEDzWtR+mwfmBKrsG1BFhIDfjXtl/4fbgEOQKuCD4Zo=",
+        "lastModified": 1659020057,
+        "narHash": "sha256-+/Px7M7MREpARXw5dC8qchVX1nu7wZFs4l+P5Ow+07I=",
         "owner": "nim-nix-pkgs",
         "repo": "nimbomb",
-        "rev": "064d137e1f2af0b0162b8c3f681a70a78ee2e15a",
+        "rev": "bfadbcdbaf259d5cfc212bc3689527392158ee28",
         "type": "github"
       },
       "original": {
@@ -60,11 +87,11 @@
       },
       "locked": {
         "dir": "v0_1_0",
-        "lastModified": 1658206216,
-        "narHash": "sha256-TEDzWtR+mwfmBKrsG1BFhIDfjXtl/4fbgEOQKuCD4Zo=",
+        "lastModified": 1659020057,
+        "narHash": "sha256-+/Px7M7MREpARXw5dC8qchVX1nu7wZFs4l+P5Ow+07I=",
         "owner": "nim-nix-pkgs",
         "repo": "nimbomb",
-        "rev": "064d137e1f2af0b0162b8c3f681a70a78ee2e15a",
+        "rev": "bfadbcdbaf259d5cfc212bc3689527392158ee28",
         "type": "github"
       },
       "original": {
@@ -90,9 +117,27 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "nimbomb-devel": "nimbomb-devel",
         "nimbomb-master": "nimbomb-master",
         "nimbomb-v0_1_0": "nimbomb-v0_1_0",
         "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimbomb-devel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1505861943,
+        "narHash": "sha256-Yl3Ub94Oo+YZZXeFiOdzFVfD4ly3JDyLDDdgmCaPOT0=",
+        "owner": "Tyler-Yocolano",
+        "repo": "nimbomb",
+        "rev": "1d1a9c3ffaa05528a0f65bbec45074623f033f30",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Tyler-Yocolano",
+        "ref": "refs/heads/devel",
+        "repo": "nimbomb",
+        "type": "github"
       }
     },
     "src-nimbomb-master": {

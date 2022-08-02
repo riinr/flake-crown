@@ -40,6 +40,23 @@
         "stones": "stones"
       }
     },
+    "src-stones-devel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603438024,
+        "narHash": "sha256-J5MJS3oCkI0514HkVejrm6Ls4QCQhElRcBuMfeYHvA0=",
+        "owner": "binhonglee",
+        "repo": "stones",
+        "rev": "031438bceacbfe203481594cf40f424f2fe301da",
+        "type": "github"
+      },
+      "original": {
+        "owner": "binhonglee",
+        "ref": "refs/heads/devel",
+        "repo": "stones",
+        "type": "github"
+      }
+    },
     "src-wings-v0_0_4-alpha": {
       "flake": false,
       "locked": {
@@ -64,17 +81,20 @@
         ],
         "nixpkgs": [
           "nixpkgs"
-        ]
+        ],
+        "src-stones-devel": "src-stones-devel"
       },
       "locked": {
-        "lastModified": 1648161104,
-        "narHash": "sha256-UnssID3FHTyyOY+bxUYuzU0gZcGLQtzdPQjvzI2Dqzk=",
+        "dir": "devel",
+        "lastModified": 1659475732,
+        "narHash": "sha256-63qxz5eNv0Eg6AeBRXRY/cOGZukzoeZovfq2kc3TyRI=",
         "owner": "nim-nix-pkgs",
         "repo": "stones",
-        "rev": "39d23e8672566514f2bcf6aee8e04ccf2ebe81ba",
+        "rev": "6acacd7a287be1d753cc0ff11f1440b24990203f",
         "type": "github"
       },
       "original": {
+        "dir": "devel",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "stones",

@@ -21,6 +21,33 @@
         "type": "github"
       }
     },
+    "libharu-devel": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libharu-devel": "src-libharu-devel"
+      },
+      "locked": {
+        "dir": "devel",
+        "lastModified": 1659019973,
+        "narHash": "sha256-4EJRxLWI+p3oTk1EtyMIVBdzjVsJHJweTlK8tBHg/1E=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libharu",
+        "rev": "8d6a4231a3f29e0f2295e48d168d7ccdde1209a5",
+        "type": "github"
+      },
+      "original": {
+        "dir": "devel",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libharu",
+        "type": "github"
+      }
+    },
     "libharu-master": {
       "inputs": {
         "flakeNimbleLib": [
@@ -33,11 +60,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1658206111,
-        "narHash": "sha256-Y8S9IdcPeO326jfa+JadCi3TEDP4T8bITpR4JFWhRmI=",
+        "lastModified": 1659019973,
+        "narHash": "sha256-4EJRxLWI+p3oTk1EtyMIVBdzjVsJHJweTlK8tBHg/1E=",
         "owner": "nim-nix-pkgs",
         "repo": "libharu",
-        "rev": "9d9b5de3c9388f17a41e114c37332fb36a574832",
+        "rev": "8d6a4231a3f29e0f2295e48d168d7ccdde1209a5",
         "type": "github"
       },
       "original": {
@@ -60,11 +87,11 @@
       },
       "locked": {
         "dir": "v0_1_0",
-        "lastModified": 1658206111,
-        "narHash": "sha256-Y8S9IdcPeO326jfa+JadCi3TEDP4T8bITpR4JFWhRmI=",
+        "lastModified": 1659019973,
+        "narHash": "sha256-4EJRxLWI+p3oTk1EtyMIVBdzjVsJHJweTlK8tBHg/1E=",
         "owner": "nim-nix-pkgs",
         "repo": "libharu",
-        "rev": "9d9b5de3c9388f17a41e114c37332fb36a574832",
+        "rev": "8d6a4231a3f29e0f2295e48d168d7ccdde1209a5",
         "type": "github"
       },
       "original": {
@@ -90,9 +117,27 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "libharu-devel": "libharu-devel",
         "libharu-master": "libharu-master",
         "libharu-v0_1_0": "libharu-v0_1_0",
         "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-libharu-devel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1653394798,
+        "narHash": "sha256-K1t+mDME5EnD8ArdPM7ENhDiI953bsrGtgeg6j2pPys=",
+        "owner": "z-kk",
+        "repo": "libharu",
+        "rev": "4b708041f742ced68611d00d4bbb883a57a9a313",
+        "type": "github"
+      },
+      "original": {
+        "owner": "z-kk",
+        "ref": "refs/heads/devel",
+        "repo": "libharu",
+        "type": "github"
       }
     },
     "src-libharu-master": {

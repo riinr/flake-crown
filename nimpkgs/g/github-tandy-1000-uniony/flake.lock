@@ -21,6 +21,33 @@
         "type": "github"
       }
     },
+    "github-tandy-1000-uniony-devel": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-github-tandy-1000-uniony-devel": "src-github-tandy-1000-uniony-devel"
+      },
+      "locked": {
+        "dir": "devel",
+        "lastModified": 1659019887,
+        "narHash": "sha256-p10d9plRLh56bIKlhD2RLI9yb7tSh0JySOxHBV1Zf9s=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-tandy-1000-uniony",
+        "rev": "518b00094cad8b27815e5de58fd8327b6678715d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "devel",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-tandy-1000-uniony",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 0,
@@ -36,7 +63,25 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "github-tandy-1000-uniony-devel": "github-tandy-1000-uniony-devel",
         "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-github-tandy-1000-uniony-devel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1649346390,
+        "narHash": "sha256-JA3Glkhbm9fatr2bcWA5zl+z41mKoeIPNJhRZQfzyQQ=",
+        "owner": "tandy-1000",
+        "repo": "uniony",
+        "rev": "a45868876dd793b9c43dd7e5df548a734cc5497c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tandy-1000",
+        "ref": "refs/heads/devel",
+        "repo": "uniony",
+        "type": "github"
       }
     }
   },

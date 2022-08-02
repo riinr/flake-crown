@@ -33,7 +33,7 @@
         "type": "indirect"
       }
     },
-    "pixels-master": {
+    "pixels-devel": {
       "inputs": {
         "flakeNimbleLib": [
           "flakeNimbleLib"
@@ -42,15 +42,43 @@
           "nixpkgs"
         ],
         "sdl2": "sdl2",
+        "src-pixels-devel": "src-pixels-devel"
+      },
+      "locked": {
+        "dir": "devel",
+        "lastModified": 1659020167,
+        "narHash": "sha256-/2ZnpbfcoY/bpstEzFGv8s8j/9SylUwzuynXgj79ZWo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "pixels",
+        "rev": "4f769ee15155dc5846d698b286b785e2178a527b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "devel",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "pixels",
+        "type": "github"
+      }
+    },
+    "pixels-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "sdl2": "sdl2_2",
         "src-pixels-master": "src-pixels-master"
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1658207546,
-        "narHash": "sha256-tMMnvRMKOWgTdn7xg1H36nJPxwtwvioBJkuXVGntwFU=",
+        "lastModified": 1659020167,
+        "narHash": "sha256-/2ZnpbfcoY/bpstEzFGv8s8j/9SylUwzuynXgj79ZWo=",
         "owner": "nim-nix-pkgs",
         "repo": "pixels",
-        "rev": "f5570fc70753d351f55abdfa0861fe24d41affc7",
+        "rev": "4f769ee15155dc5846d698b286b785e2178a527b",
         "type": "github"
       },
       "original": {
@@ -65,17 +93,18 @@
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
+        "pixels-devel": "pixels-devel",
         "pixels-master": "pixels-master"
       }
     },
     "sdl2": {
       "inputs": {
         "flakeNimbleLib": [
-          "pixels-master",
+          "pixels-devel",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "pixels-master",
+          "pixels-devel",
           "nixpkgs"
         ],
         "src-sdl2-v2_0_3": "src-sdl2-v2_0_3"
@@ -97,6 +126,52 @@
         "type": "github"
       }
     },
+    "sdl2_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "pixels-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "pixels-master",
+          "nixpkgs"
+        ],
+        "src-sdl2-v2_0_3": "src-sdl2-v2_0_3_2"
+      },
+      "locked": {
+        "dir": "v2_0_3",
+        "lastModified": 1650750569,
+        "narHash": "sha256-P7OCQ2Uveh1m9qFUmOT9h030grY/1YBAA8wSFAazwXg=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sdl2",
+        "rev": "0b303ee208e8580623cb50e7148580ce4c8b222f",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v2_0_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sdl2",
+        "type": "github"
+      }
+    },
+    "src-pixels-devel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1652793908,
+        "narHash": "sha256-0IISaYs3hSjt8PPHLAM8N0pU3omYpwKpgsOo76s0I6Q=",
+        "owner": "Araq",
+        "repo": "pixels",
+        "rev": "44c9486b179fcb345f6ff389306ded4976f7c15b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Araq",
+        "ref": "refs/heads/devel",
+        "repo": "pixels",
+        "type": "github"
+      }
+    },
     "src-pixels-master": {
       "flake": false,
       "locked": {
@@ -115,6 +190,23 @@
       }
     },
     "src-sdl2-v2_0_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1617058617,
+        "narHash": "sha256-v8zqsafLMSAsJ1KOh4+1h22GGBe9D0Kkt/cN0s/Nvng=",
+        "owner": "nim-lang",
+        "repo": "sdl2",
+        "rev": "e084923c35e6f513240456d87b3cc9cfd2081e91",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/v2.0.3",
+        "repo": "sdl2",
+        "type": "github"
+      }
+    },
+    "src-sdl2-v2_0_3_2": {
       "flake": false,
       "locked": {
         "lastModified": 1617058617,

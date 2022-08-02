@@ -33,6 +33,33 @@
         "type": "indirect"
       }
     },
+    "opencolor-devel": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-opencolor-devel": "src-opencolor-devel"
+      },
+      "locked": {
+        "dir": "devel",
+        "lastModified": 1659020138,
+        "narHash": "sha256-Ai6ixpjCNVNOtP6DBuDH7kHvqI4/6oNalHz//vz2S9U=",
+        "owner": "nim-nix-pkgs",
+        "repo": "opencolor",
+        "rev": "41fcbb798aea9322cbe682e76beebc53ace623bf",
+        "type": "github"
+      },
+      "original": {
+        "dir": "devel",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "opencolor",
+        "type": "github"
+      }
+    },
     "opencolor-v1_9_1": {
       "inputs": {
         "flakeNimbleLib": [
@@ -45,11 +72,11 @@
       },
       "locked": {
         "dir": "v1_9_1",
-        "lastModified": 1658206305,
-        "narHash": "sha256-eiy9l7bXjL3UufBtMlNT2cV6crSSL75cKsSGV31Pnk8=",
+        "lastModified": 1659020138,
+        "narHash": "sha256-Ai6ixpjCNVNOtP6DBuDH7kHvqI4/6oNalHz//vz2S9U=",
         "owner": "nim-nix-pkgs",
         "repo": "opencolor",
-        "rev": "cf63f4e874f4a7979c8842ead954dec7e7748d60",
+        "rev": "41fcbb798aea9322cbe682e76beebc53ace623bf",
         "type": "github"
       },
       "original": {
@@ -72,11 +99,11 @@
       },
       "locked": {
         "dir": "v1_9_1_1",
-        "lastModified": 1658206305,
-        "narHash": "sha256-eiy9l7bXjL3UufBtMlNT2cV6crSSL75cKsSGV31Pnk8=",
+        "lastModified": 1659020138,
+        "narHash": "sha256-Ai6ixpjCNVNOtP6DBuDH7kHvqI4/6oNalHz//vz2S9U=",
         "owner": "nim-nix-pkgs",
         "repo": "opencolor",
-        "rev": "cf63f4e874f4a7979c8842ead954dec7e7748d60",
+        "rev": "41fcbb798aea9322cbe682e76beebc53ace623bf",
         "type": "github"
       },
       "original": {
@@ -91,8 +118,26 @@
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
+        "opencolor-devel": "opencolor-devel",
         "opencolor-v1_9_1": "opencolor-v1_9_1",
         "opencolor-v1_9_1_1": "opencolor-v1_9_1_1"
+      }
+    },
+    "src-opencolor-devel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1634796471,
+        "narHash": "sha256-ETIDp3mgIFxMN9lPMOSg2J/3P323vnn4jf2HPhfYXmU=",
+        "owner": "Double-oxygeN",
+        "repo": "opencolor.nim",
+        "rev": "dacf2cfc1662735567f9427e5165814aee9ca912",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Double-oxygeN",
+        "ref": "refs/heads/devel",
+        "repo": "opencolor.nim",
+        "type": "github"
       }
     },
     "src-opencolor-v1_9_1": {

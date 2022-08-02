@@ -1,0 +1,63 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-matsuri-devel": "src-matsuri-devel"
+      }
+    },
+    "src-matsuri-devel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1591362667,
+        "narHash": "sha256-G0crKjE1bwyr2j+lyFRq1NH/YCbEKbnE67OimiHNlu4=",
+        "owner": "zer0-star",
+        "repo": "matsuri",
+        "rev": "7b8dd429047c8c131635a9973f9289565b0cb7b6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zer0-star",
+        "ref": "refs/heads/devel",
+        "repo": "matsuri",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

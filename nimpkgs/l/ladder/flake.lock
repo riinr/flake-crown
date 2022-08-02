@@ -33,15 +33,42 @@
       },
       "locked": {
         "dir": "0_4_0",
-        "lastModified": 1658206096,
-        "narHash": "sha256-O1ZqhyX2Zh4LCCRDgpJbwH6b8Hy3IRxfcGBfHz09Gu0=",
+        "lastModified": 1659019964,
+        "narHash": "sha256-vpluahQnNVtoOf4Sg3aKUhwrSwStrI5zanV/qJshgIo=",
         "owner": "nim-nix-pkgs",
         "repo": "ladder",
-        "rev": "91d459b93b4667486bd811435d3cdf740a1ff3ba",
+        "rev": "6f4fcdaf8b37a981df7b047308c18bb11b53d933",
         "type": "github"
       },
       "original": {
         "dir": "0_4_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ladder",
+        "type": "github"
+      }
+    },
+    "ladder-devel": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ladder-devel": "src-ladder-devel"
+      },
+      "locked": {
+        "dir": "devel",
+        "lastModified": 1659019964,
+        "narHash": "sha256-vpluahQnNVtoOf4Sg3aKUhwrSwStrI5zanV/qJshgIo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ladder",
+        "rev": "6f4fcdaf8b37a981df7b047308c18bb11b53d933",
+        "type": "github"
+      },
+      "original": {
+        "dir": "devel",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "ladder",
@@ -60,11 +87,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1658206096,
-        "narHash": "sha256-O1ZqhyX2Zh4LCCRDgpJbwH6b8Hy3IRxfcGBfHz09Gu0=",
+        "lastModified": 1659019964,
+        "narHash": "sha256-vpluahQnNVtoOf4Sg3aKUhwrSwStrI5zanV/qJshgIo=",
         "owner": "nim-nix-pkgs",
         "repo": "ladder",
-        "rev": "91d459b93b4667486bd811435d3cdf740a1ff3ba",
+        "rev": "6f4fcdaf8b37a981df7b047308c18bb11b53d933",
         "type": "github"
       },
       "original": {
@@ -91,6 +118,7 @@
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "ladder-0_4_0": "ladder-0_4_0",
+        "ladder-devel": "ladder-devel",
         "ladder-master": "ladder-master",
         "nixpkgs": "nixpkgs"
       }
@@ -108,6 +136,23 @@
       "original": {
         "owner": "ryukoposting",
         "ref": "refs/tags/0.4.0",
+        "repo": "nim-ladder",
+        "type": "gitlab"
+      }
+    },
+    "src-ladder-devel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1551831096,
+        "narHash": "sha256-4yfrgB5Bah8e5Ds5Pzsh1KPDspBwgvYd4b3TNpZGxuY=",
+        "owner": "ryukoposting",
+        "repo": "nim-ladder",
+        "rev": "afa04eab4811aa99800b75900dc9adfba2ab3143",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "ryukoposting",
+        "ref": "refs/heads/devel",
         "repo": "nim-ladder",
         "type": "gitlab"
       }

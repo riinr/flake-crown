@@ -37,6 +37,7 @@
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
+        "wings-devel": "wings-devel",
         "wings-v0_0_1-alpha": "wings-v0_0_1-alpha",
         "wings-v0_0_2-alpha": "wings-v0_0_2-alpha",
         "wings-v0_0_3-alpha": "wings-v0_0_3-alpha",
@@ -44,6 +45,125 @@
         "wings-v0_0_5-alpha": "wings-v0_0_5-alpha",
         "wings-v0_0_6-alpha": "wings-v0_0_6-alpha",
         "wings-v0_0_7-alpha": "wings-v0_0_7-alpha"
+      }
+    },
+    "src-stones-devel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603438024,
+        "narHash": "sha256-J5MJS3oCkI0514HkVejrm6Ls4QCQhElRcBuMfeYHvA0=",
+        "owner": "binhonglee",
+        "repo": "stones",
+        "rev": "031438bceacbfe203481594cf40f424f2fe301da",
+        "type": "github"
+      },
+      "original": {
+        "owner": "binhonglee",
+        "ref": "refs/heads/devel",
+        "repo": "stones",
+        "type": "github"
+      }
+    },
+    "src-stones-devel_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603438024,
+        "narHash": "sha256-J5MJS3oCkI0514HkVejrm6Ls4QCQhElRcBuMfeYHvA0=",
+        "owner": "binhonglee",
+        "repo": "stones",
+        "rev": "031438bceacbfe203481594cf40f424f2fe301da",
+        "type": "github"
+      },
+      "original": {
+        "owner": "binhonglee",
+        "ref": "refs/heads/devel",
+        "repo": "stones",
+        "type": "github"
+      }
+    },
+    "src-stones-devel_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603438024,
+        "narHash": "sha256-J5MJS3oCkI0514HkVejrm6Ls4QCQhElRcBuMfeYHvA0=",
+        "owner": "binhonglee",
+        "repo": "stones",
+        "rev": "031438bceacbfe203481594cf40f424f2fe301da",
+        "type": "github"
+      },
+      "original": {
+        "owner": "binhonglee",
+        "ref": "refs/heads/devel",
+        "repo": "stones",
+        "type": "github"
+      }
+    },
+    "src-stones-devel_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603438024,
+        "narHash": "sha256-J5MJS3oCkI0514HkVejrm6Ls4QCQhElRcBuMfeYHvA0=",
+        "owner": "binhonglee",
+        "repo": "stones",
+        "rev": "031438bceacbfe203481594cf40f424f2fe301da",
+        "type": "github"
+      },
+      "original": {
+        "owner": "binhonglee",
+        "ref": "refs/heads/devel",
+        "repo": "stones",
+        "type": "github"
+      }
+    },
+    "src-stones-devel_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603438024,
+        "narHash": "sha256-J5MJS3oCkI0514HkVejrm6Ls4QCQhElRcBuMfeYHvA0=",
+        "owner": "binhonglee",
+        "repo": "stones",
+        "rev": "031438bceacbfe203481594cf40f424f2fe301da",
+        "type": "github"
+      },
+      "original": {
+        "owner": "binhonglee",
+        "ref": "refs/heads/devel",
+        "repo": "stones",
+        "type": "github"
+      }
+    },
+    "src-stones-devel_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603438024,
+        "narHash": "sha256-J5MJS3oCkI0514HkVejrm6Ls4QCQhElRcBuMfeYHvA0=",
+        "owner": "binhonglee",
+        "repo": "stones",
+        "rev": "031438bceacbfe203481594cf40f424f2fe301da",
+        "type": "github"
+      },
+      "original": {
+        "owner": "binhonglee",
+        "ref": "refs/heads/devel",
+        "repo": "stones",
+        "type": "github"
+      }
+    },
+    "src-wings-devel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1659359271,
+        "narHash": "sha256-WbkArGbCuodEsadhRv9fvXw4KwSCMt12HlJLEJdFM0o=",
+        "owner": "binhonglee",
+        "repo": "wings",
+        "rev": "499e33d6a9e1f20ec6c8b782d23bf4fc90607900",
+        "type": "github"
+      },
+      "original": {
+        "owner": "binhonglee",
+        "ref": "refs/heads/devel",
+        "repo": "wings",
+        "type": "github"
       }
     },
     "src-wings-v0_0_1-alpha": {
@@ -168,23 +288,26 @@
     "stones": {
       "inputs": {
         "flakeNimbleLib": [
-          "wings-v0_0_3-alpha",
+          "wings-devel",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "wings-v0_0_3-alpha",
+          "wings-devel",
           "nixpkgs"
-        ]
+        ],
+        "src-stones-devel": "src-stones-devel"
       },
       "locked": {
-        "lastModified": 1648161104,
-        "narHash": "sha256-UnssID3FHTyyOY+bxUYuzU0gZcGLQtzdPQjvzI2Dqzk=",
+        "dir": "devel",
+        "lastModified": 1659475732,
+        "narHash": "sha256-63qxz5eNv0Eg6AeBRXRY/cOGZukzoeZovfq2kc3TyRI=",
         "owner": "nim-nix-pkgs",
         "repo": "stones",
-        "rev": "39d23e8672566514f2bcf6aee8e04ccf2ebe81ba",
+        "rev": "6acacd7a287be1d753cc0ff11f1440b24990203f",
         "type": "github"
       },
       "original": {
+        "dir": "devel",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "stones",
@@ -194,23 +317,26 @@
     "stones_2": {
       "inputs": {
         "flakeNimbleLib": [
-          "wings-v0_0_4-alpha",
+          "wings-v0_0_3-alpha",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "wings-v0_0_4-alpha",
+          "wings-v0_0_3-alpha",
           "nixpkgs"
-        ]
+        ],
+        "src-stones-devel": "src-stones-devel_2"
       },
       "locked": {
-        "lastModified": 1648161104,
-        "narHash": "sha256-UnssID3FHTyyOY+bxUYuzU0gZcGLQtzdPQjvzI2Dqzk=",
+        "dir": "devel",
+        "lastModified": 1659475732,
+        "narHash": "sha256-63qxz5eNv0Eg6AeBRXRY/cOGZukzoeZovfq2kc3TyRI=",
         "owner": "nim-nix-pkgs",
         "repo": "stones",
-        "rev": "39d23e8672566514f2bcf6aee8e04ccf2ebe81ba",
+        "rev": "6acacd7a287be1d753cc0ff11f1440b24990203f",
         "type": "github"
       },
       "original": {
+        "dir": "devel",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "stones",
@@ -220,23 +346,26 @@
     "stones_3": {
       "inputs": {
         "flakeNimbleLib": [
-          "wings-v0_0_5-alpha",
+          "wings-v0_0_4-alpha",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "wings-v0_0_5-alpha",
+          "wings-v0_0_4-alpha",
           "nixpkgs"
-        ]
+        ],
+        "src-stones-devel": "src-stones-devel_3"
       },
       "locked": {
-        "lastModified": 1648161104,
-        "narHash": "sha256-UnssID3FHTyyOY+bxUYuzU0gZcGLQtzdPQjvzI2Dqzk=",
+        "dir": "devel",
+        "lastModified": 1659475732,
+        "narHash": "sha256-63qxz5eNv0Eg6AeBRXRY/cOGZukzoeZovfq2kc3TyRI=",
         "owner": "nim-nix-pkgs",
         "repo": "stones",
-        "rev": "39d23e8672566514f2bcf6aee8e04ccf2ebe81ba",
+        "rev": "6acacd7a287be1d753cc0ff11f1440b24990203f",
         "type": "github"
       },
       "original": {
+        "dir": "devel",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "stones",
@@ -246,23 +375,26 @@
     "stones_4": {
       "inputs": {
         "flakeNimbleLib": [
-          "wings-v0_0_6-alpha",
+          "wings-v0_0_5-alpha",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "wings-v0_0_6-alpha",
+          "wings-v0_0_5-alpha",
           "nixpkgs"
-        ]
+        ],
+        "src-stones-devel": "src-stones-devel_4"
       },
       "locked": {
-        "lastModified": 1648161104,
-        "narHash": "sha256-UnssID3FHTyyOY+bxUYuzU0gZcGLQtzdPQjvzI2Dqzk=",
+        "dir": "devel",
+        "lastModified": 1659475732,
+        "narHash": "sha256-63qxz5eNv0Eg6AeBRXRY/cOGZukzoeZovfq2kc3TyRI=",
         "owner": "nim-nix-pkgs",
         "repo": "stones",
-        "rev": "39d23e8672566514f2bcf6aee8e04ccf2ebe81ba",
+        "rev": "6acacd7a287be1d753cc0ff11f1440b24990203f",
         "type": "github"
       },
       "original": {
+        "dir": "devel",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "stones",
@@ -272,26 +404,86 @@
     "stones_5": {
       "inputs": {
         "flakeNimbleLib": [
+          "wings-v0_0_6-alpha",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "wings-v0_0_6-alpha",
+          "nixpkgs"
+        ],
+        "src-stones-devel": "src-stones-devel_5"
+      },
+      "locked": {
+        "dir": "devel",
+        "lastModified": 1659475732,
+        "narHash": "sha256-63qxz5eNv0Eg6AeBRXRY/cOGZukzoeZovfq2kc3TyRI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "stones",
+        "rev": "6acacd7a287be1d753cc0ff11f1440b24990203f",
+        "type": "github"
+      },
+      "original": {
+        "dir": "devel",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "stones",
+        "type": "github"
+      }
+    },
+    "stones_6": {
+      "inputs": {
+        "flakeNimbleLib": [
           "wings-v0_0_7-alpha",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
           "wings-v0_0_7-alpha",
           "nixpkgs"
-        ]
+        ],
+        "src-stones-devel": "src-stones-devel_6"
       },
       "locked": {
-        "lastModified": 1648161104,
-        "narHash": "sha256-UnssID3FHTyyOY+bxUYuzU0gZcGLQtzdPQjvzI2Dqzk=",
+        "dir": "devel",
+        "lastModified": 1659475732,
+        "narHash": "sha256-63qxz5eNv0Eg6AeBRXRY/cOGZukzoeZovfq2kc3TyRI=",
         "owner": "nim-nix-pkgs",
         "repo": "stones",
-        "rev": "39d23e8672566514f2bcf6aee8e04ccf2ebe81ba",
+        "rev": "6acacd7a287be1d753cc0ff11f1440b24990203f",
         "type": "github"
       },
       "original": {
+        "dir": "devel",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "stones",
+        "type": "github"
+      }
+    },
+    "wings-devel": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-wings-devel": "src-wings-devel",
+        "stones": "stones"
+      },
+      "locked": {
+        "dir": "devel",
+        "lastModified": 1659020368,
+        "narHash": "sha256-P+MOiJqZrpPHeh0s0liwC7XN17OluG3JcKoKBQrBkN8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "wings",
+        "rev": "910342e674713d589f9ad65d84f0f8dcbfbd9058",
+        "type": "github"
+      },
+      "original": {
+        "dir": "devel",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "wings",
         "type": "github"
       }
     },
@@ -307,11 +499,11 @@
       },
       "locked": {
         "dir": "v0_0_1-alpha",
-        "lastModified": 1658207687,
-        "narHash": "sha256-2rfXMhkuVZ4qU+RqJYJSMQxrjLEPFNlgy+iDutdmyOM=",
+        "lastModified": 1659020368,
+        "narHash": "sha256-P+MOiJqZrpPHeh0s0liwC7XN17OluG3JcKoKBQrBkN8=",
         "owner": "nim-nix-pkgs",
         "repo": "wings",
-        "rev": "b8b5011e8c960fa15483bc78f5ec03d8fbf93a5f",
+        "rev": "910342e674713d589f9ad65d84f0f8dcbfbd9058",
         "type": "github"
       },
       "original": {
@@ -334,11 +526,11 @@
       },
       "locked": {
         "dir": "v0_0_2-alpha",
-        "lastModified": 1658207687,
-        "narHash": "sha256-2rfXMhkuVZ4qU+RqJYJSMQxrjLEPFNlgy+iDutdmyOM=",
+        "lastModified": 1659020368,
+        "narHash": "sha256-P+MOiJqZrpPHeh0s0liwC7XN17OluG3JcKoKBQrBkN8=",
         "owner": "nim-nix-pkgs",
         "repo": "wings",
-        "rev": "b8b5011e8c960fa15483bc78f5ec03d8fbf93a5f",
+        "rev": "910342e674713d589f9ad65d84f0f8dcbfbd9058",
         "type": "github"
       },
       "original": {
@@ -358,15 +550,15 @@
           "nixpkgs"
         ],
         "src-wings-v0_0_3-alpha": "src-wings-v0_0_3-alpha",
-        "stones": "stones"
+        "stones": "stones_2"
       },
       "locked": {
         "dir": "v0_0_3-alpha",
-        "lastModified": 1658207687,
-        "narHash": "sha256-2rfXMhkuVZ4qU+RqJYJSMQxrjLEPFNlgy+iDutdmyOM=",
+        "lastModified": 1659020368,
+        "narHash": "sha256-P+MOiJqZrpPHeh0s0liwC7XN17OluG3JcKoKBQrBkN8=",
         "owner": "nim-nix-pkgs",
         "repo": "wings",
-        "rev": "b8b5011e8c960fa15483bc78f5ec03d8fbf93a5f",
+        "rev": "910342e674713d589f9ad65d84f0f8dcbfbd9058",
         "type": "github"
       },
       "original": {
@@ -386,15 +578,15 @@
           "nixpkgs"
         ],
         "src-wings-v0_0_4-alpha": "src-wings-v0_0_4-alpha",
-        "stones": "stones_2"
+        "stones": "stones_3"
       },
       "locked": {
         "dir": "v0_0_4-alpha",
-        "lastModified": 1658207687,
-        "narHash": "sha256-2rfXMhkuVZ4qU+RqJYJSMQxrjLEPFNlgy+iDutdmyOM=",
+        "lastModified": 1659020368,
+        "narHash": "sha256-P+MOiJqZrpPHeh0s0liwC7XN17OluG3JcKoKBQrBkN8=",
         "owner": "nim-nix-pkgs",
         "repo": "wings",
-        "rev": "b8b5011e8c960fa15483bc78f5ec03d8fbf93a5f",
+        "rev": "910342e674713d589f9ad65d84f0f8dcbfbd9058",
         "type": "github"
       },
       "original": {
@@ -414,15 +606,15 @@
           "nixpkgs"
         ],
         "src-wings-v0_0_5-alpha": "src-wings-v0_0_5-alpha",
-        "stones": "stones_3"
+        "stones": "stones_4"
       },
       "locked": {
         "dir": "v0_0_5-alpha",
-        "lastModified": 1658207687,
-        "narHash": "sha256-2rfXMhkuVZ4qU+RqJYJSMQxrjLEPFNlgy+iDutdmyOM=",
+        "lastModified": 1659020368,
+        "narHash": "sha256-P+MOiJqZrpPHeh0s0liwC7XN17OluG3JcKoKBQrBkN8=",
         "owner": "nim-nix-pkgs",
         "repo": "wings",
-        "rev": "b8b5011e8c960fa15483bc78f5ec03d8fbf93a5f",
+        "rev": "910342e674713d589f9ad65d84f0f8dcbfbd9058",
         "type": "github"
       },
       "original": {
@@ -442,15 +634,15 @@
           "nixpkgs"
         ],
         "src-wings-v0_0_6-alpha": "src-wings-v0_0_6-alpha",
-        "stones": "stones_4"
+        "stones": "stones_5"
       },
       "locked": {
         "dir": "v0_0_6-alpha",
-        "lastModified": 1658207687,
-        "narHash": "sha256-2rfXMhkuVZ4qU+RqJYJSMQxrjLEPFNlgy+iDutdmyOM=",
+        "lastModified": 1659020368,
+        "narHash": "sha256-P+MOiJqZrpPHeh0s0liwC7XN17OluG3JcKoKBQrBkN8=",
         "owner": "nim-nix-pkgs",
         "repo": "wings",
-        "rev": "b8b5011e8c960fa15483bc78f5ec03d8fbf93a5f",
+        "rev": "910342e674713d589f9ad65d84f0f8dcbfbd9058",
         "type": "github"
       },
       "original": {
@@ -470,15 +662,15 @@
           "nixpkgs"
         ],
         "src-wings-v0_0_7-alpha": "src-wings-v0_0_7-alpha",
-        "stones": "stones_5"
+        "stones": "stones_6"
       },
       "locked": {
         "dir": "v0_0_7-alpha",
-        "lastModified": 1658207687,
-        "narHash": "sha256-2rfXMhkuVZ4qU+RqJYJSMQxrjLEPFNlgy+iDutdmyOM=",
+        "lastModified": 1659020368,
+        "narHash": "sha256-P+MOiJqZrpPHeh0s0liwC7XN17OluG3JcKoKBQrBkN8=",
         "owner": "nim-nix-pkgs",
         "repo": "wings",
-        "rev": "b8b5011e8c960fa15483bc78f5ec03d8fbf93a5f",
+        "rev": "910342e674713d589f9ad65d84f0f8dcbfbd9058",
         "type": "github"
       },
       "original": {

@@ -1,0 +1,63 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-karax-devel": "src-karax-devel"
+      }
+    },
+    "src-karax-devel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1505749036,
+        "narHash": "sha256-3c5PU/4zN6Y5h6yYpg5UrjmeN+o6mNWvF0lGdtoCD8c=",
+        "owner": "karaxnim",
+        "repo": "karax",
+        "rev": "a6a1d7e1506465e125c0c914e7bcf9c4d5ccca42",
+        "type": "github"
+      },
+      "original": {
+        "owner": "karaxnim",
+        "ref": "refs/heads/devel",
+        "repo": "karax",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

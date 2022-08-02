@@ -1,8 +1,36 @@
 {
   "nodes": {
-    "capnp-master": {
+    "capnp-devel": {
       "inputs": {
         "collections": "collections",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-capnp-devel": "src-capnp-devel"
+      },
+      "locked": {
+        "dir": "devel",
+        "lastModified": 1659019743,
+        "narHash": "sha256-6Y3MPVEaOxSBHx2NhJGECFSNHezBBK6c4VweVordmwo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "capnp",
+        "rev": "cee1b156f084071c9aa632c62d38f0f3a518757d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "devel",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "capnp",
+        "type": "github"
+      }
+    },
+    "capnp-master": {
+      "inputs": {
+        "collections": "collections_2",
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
@@ -13,11 +41,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1658207117,
-        "narHash": "sha256-USTlTMSA4UFN70Gm7fVqZAgD0MB2K9R5eXWd4vg7wAQ=",
+        "lastModified": 1659019743,
+        "narHash": "sha256-6Y3MPVEaOxSBHx2NhJGECFSNHezBBK6c4VweVordmwo=",
         "owner": "nim-nix-pkgs",
         "repo": "capnp",
-        "rev": "be865fb2eefeea642f30d352d5a0ca584595a74c",
+        "rev": "cee1b156f084071c9aa632c62d38f0f3a518757d",
         "type": "github"
       },
       "original": {
@@ -31,6 +59,35 @@
     "collections": {
       "inputs": {
         "flakeNimbleLib": [
+          "capnp-devel",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "capnp-devel",
+          "nixpkgs"
+        ],
+        "src-collections-v0_5_2": "src-collections-v0_5_2"
+      },
+      "locked": {
+        "dir": "v0_5_2",
+        "lastModified": 1659475217,
+        "narHash": "sha256-Zq6RCZuGVFDqSAF3b8kDDdRO5rHBSoaJSnLwHD1IlHE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "collections",
+        "rev": "863f191f66473f4ce9beedb827505b21d80e5e1a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_5_2",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "collections",
+        "type": "github"
+      }
+    },
+    "collections_2": {
+      "inputs": {
+        "flakeNimbleLib": [
           "capnp-master",
           "flakeNimbleLib"
         ],
@@ -38,15 +95,15 @@
           "capnp-master",
           "nixpkgs"
         ],
-        "src-collections-v0_5_2": "src-collections-v0_5_2"
+        "src-collections-v0_5_2": "src-collections-v0_5_2_2"
       },
       "locked": {
         "dir": "v0_5_2",
-        "lastModified": 1658205900,
-        "narHash": "sha256-9uiobLQw9VuQBpqdawxZGnJ5qeO/JGJ+DnfsYKsqaRs=",
+        "lastModified": 1658609347,
+        "narHash": "sha256-ed8F9wiist4K/1xvjrr8FLQKnXrocQosFYWemvv5xBw=",
         "owner": "nim-nix-pkgs",
         "repo": "collections",
-        "rev": "15673e4179caf7a476a01f0314b29a12ad27374e",
+        "rev": "27b818a49cac0c1ea55fc79832c8a79eda28d7b5",
         "type": "github"
       },
       "original": {
@@ -92,9 +149,27 @@
     },
     "root": {
       "inputs": {
+        "capnp-devel": "capnp-devel",
         "capnp-master": "capnp-master",
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-capnp-devel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1515847780,
+        "narHash": "sha256-CH47Vd0KGJzkhsRzGJ6ah5CTsyW2pGJLZERZcMgLdHk=",
+        "owner": "zielmicha",
+        "repo": "capnp.nim",
+        "rev": "50a50dc0ea35bf1d6c58f29ef1d016bdb0953459",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zielmicha",
+        "ref": "refs/heads/devel",
+        "repo": "capnp.nim",
+        "type": "github"
       }
     },
     "src-capnp-master": {
@@ -115,6 +190,23 @@
       }
     },
     "src-collections-v0_5_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1547960330,
+        "narHash": "sha256-3lBav+fOPLti1lEMgNOgJ6K7apgo9PiMuTEtGyMdOUU=",
+        "owner": "zielmicha",
+        "repo": "collections.nim",
+        "rev": "11d16f6418ce6b3adbd02e3e5fcebbba377fd0ba",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zielmicha",
+        "ref": "refs/tags/v0.5.2",
+        "repo": "collections.nim",
+        "type": "github"
+      }
+    },
+    "src-collections-v0_5_2_2": {
       "flake": false,
       "locked": {
         "lastModified": 1547960330,

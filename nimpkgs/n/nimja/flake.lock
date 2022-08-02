@@ -21,6 +21,33 @@
         "type": "github"
       }
     },
+    "nimja-devel": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimja-devel": "src-nimja-devel"
+      },
+      "locked": {
+        "dir": "devel",
+        "lastModified": 1659020079,
+        "narHash": "sha256-9nBAgEsvKp/UJlXKNC9Mp6q1UGiQc+i5Jqv55LoyrCA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimja",
+        "rev": "d599971740745d9eea8636cdef0d27565656605f",
+        "type": "github"
+      },
+      "original": {
+        "dir": "devel",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimja",
+        "type": "github"
+      }
+    },
     "nimja-master": {
       "inputs": {
         "flakeNimbleLib": [
@@ -33,11 +60,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1658206236,
-        "narHash": "sha256-x8G312+byVn6MUSzuG2oFHWq1/VjuGbylfLHA5xSSEQ=",
+        "lastModified": 1659020079,
+        "narHash": "sha256-9nBAgEsvKp/UJlXKNC9Mp6q1UGiQc+i5Jqv55LoyrCA=",
         "owner": "nim-nix-pkgs",
         "repo": "nimja",
-        "rev": "7dec1ab1ab9cde50099e0051febbf7a1e2f1484f",
+        "rev": "d599971740745d9eea8636cdef0d27565656605f",
         "type": "github"
       },
       "original": {
@@ -63,8 +90,26 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "nimja-devel": "nimja-devel",
         "nimja-master": "nimja-master",
         "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-nimja-devel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1629321754,
+        "narHash": "sha256-5/rSRGWycTrtAAUMw4q6MwmgmEJ9qe0kagyo+Ojwwo4=",
+        "owner": "enthus1ast",
+        "repo": "nimja",
+        "rev": "948e4b0127bf52b39b7317e262284319896a54e2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "enthus1ast",
+        "ref": "refs/heads/devel",
+        "repo": "nimja",
+        "type": "github"
       }
     },
     "src-nimja-master": {

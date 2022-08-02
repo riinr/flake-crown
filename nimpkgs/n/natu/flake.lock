@@ -33,11 +33,11 @@
       },
       "locked": {
         "dir": "0_1_1",
-        "lastModified": 1658206189,
-        "narHash": "sha256-EyiBZpcpYZxkj1mnkaih25tBNsNVNxblOMoIAm3wRN4=",
+        "lastModified": 1659020029,
+        "narHash": "sha256-BVok5bY1pfjKm4zTGXWJK5LpcXLKbUBcIxWtD+Ia1A0=",
         "owner": "nim-nix-pkgs",
         "repo": "natu",
-        "rev": "ca2cf468fd5af0e0138cf0fdd67f4391ad3d3fd1",
+        "rev": "3a1fc2bea74b6d9a94d167a023be44cc552d3819",
         "type": "github"
       },
       "original": {
@@ -60,15 +60,43 @@
       },
       "locked": {
         "dir": "0_1_2",
-        "lastModified": 1658206189,
-        "narHash": "sha256-EyiBZpcpYZxkj1mnkaih25tBNsNVNxblOMoIAm3wRN4=",
+        "lastModified": 1659020029,
+        "narHash": "sha256-BVok5bY1pfjKm4zTGXWJK5LpcXLKbUBcIxWtD+Ia1A0=",
         "owner": "nim-nix-pkgs",
         "repo": "natu",
-        "rev": "ca2cf468fd5af0e0138cf0fdd67f4391ad3d3fd1",
+        "rev": "3a1fc2bea74b6d9a94d167a023be44cc552d3819",
         "type": "github"
       },
       "original": {
         "dir": "0_1_2",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "natu",
+        "type": "github"
+      }
+    },
+    "natu-devel": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-natu-devel": "src-natu-devel",
+        "trick": "trick"
+      },
+      "locked": {
+        "dir": "devel",
+        "lastModified": 1659020029,
+        "narHash": "sha256-BVok5bY1pfjKm4zTGXWJK5LpcXLKbUBcIxWtD+Ia1A0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "natu",
+        "rev": "3a1fc2bea74b6d9a94d167a023be44cc552d3819",
+        "type": "github"
+      },
+      "original": {
+        "dir": "devel",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "natu",
@@ -87,11 +115,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1658206189,
-        "narHash": "sha256-EyiBZpcpYZxkj1mnkaih25tBNsNVNxblOMoIAm3wRN4=",
+        "lastModified": 1659020029,
+        "narHash": "sha256-BVok5bY1pfjKm4zTGXWJK5LpcXLKbUBcIxWtD+Ia1A0=",
         "owner": "nim-nix-pkgs",
         "repo": "natu",
-        "rev": "ca2cf468fd5af0e0138cf0fdd67f4391ad3d3fd1",
+        "rev": "3a1fc2bea74b6d9a94d167a023be44cc552d3819",
         "type": "github"
       },
       "original": {
@@ -99,6 +127,37 @@
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "natu",
+        "type": "github"
+      }
+    },
+    "nimpng": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "natu-devel",
+          "trick",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "natu-devel",
+          "trick",
+          "nixpkgs"
+        ],
+        "src-nimPNG-v0_3_1": "src-nimPNG-v0_3_1"
+      },
+      "locked": {
+        "dir": "v0_3_1",
+        "lastModified": 1648163378,
+        "narHash": "sha256-x0r6t2rp2XIy/LY1IyqlM0N0mdPgmVRHvflZmG0SARo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimpng",
+        "rev": "0e2af30b229d956dbff69e284f65baf21eb0c2f7",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_3_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimpng",
         "type": "github"
       }
     },
@@ -119,6 +178,7 @@
         "flakeNimbleLib": "flakeNimbleLib",
         "natu-0_1_1": "natu-0_1_1",
         "natu-0_1_2": "natu-0_1_2",
+        "natu-devel": "natu-devel",
         "natu-master": "natu-master",
         "nixpkgs": "nixpkgs"
       }
@@ -157,6 +217,23 @@
         "type": "github"
       }
     },
+    "src-natu-devel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1658763122,
+        "narHash": "sha256-HHPfFImOTXfnibf8J+OujQX4SlWTZezs8kNElEFACx0=",
+        "owner": "exelotl",
+        "repo": "natu",
+        "rev": "a6fbcd5b3c2807bf2626bff06d5676573ed7c6e4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "exelotl",
+        "ref": "refs/heads/devel",
+        "repo": "natu",
+        "type": "github"
+      }
+    },
     "src-natu-master": {
       "flake": false,
       "locked": {
@@ -171,6 +248,70 @@
         "owner": "exelotl",
         "ref": "refs/heads/master",
         "repo": "natu",
+        "type": "github"
+      }
+    },
+    "src-nimPNG-v0_3_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1592630157,
+        "narHash": "sha256-PorEjQr0rJPeq8p5550qr5MvWAhbOZlDjPhchGVu+O0=",
+        "owner": "jangko",
+        "repo": "nimPNG",
+        "rev": "9de8e28dd77bb93fc003e877f1656967c2ca4852",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jangko",
+        "ref": "refs/tags/v0.3.1",
+        "repo": "nimPNG",
+        "type": "github"
+      }
+    },
+    "src-trick-0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1634433696,
+        "narHash": "sha256-iUzmHxKZv2rPlx/zpfZ29kiaisJYboFo2j7awS0WNwg=",
+        "owner": "exelotl",
+        "repo": "trick",
+        "rev": "c143b96c6e3e2fc7775beeeb191d2c97d5b36d66",
+        "type": "github"
+      },
+      "original": {
+        "owner": "exelotl",
+        "ref": "refs/tags/0.1.2",
+        "repo": "trick",
+        "type": "github"
+      }
+    },
+    "trick": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "natu-devel",
+          "flakeNimbleLib"
+        ],
+        "nimpng": "nimpng",
+        "nixpkgs": [
+          "natu-devel",
+          "nixpkgs"
+        ],
+        "src-trick-0_1_2": "src-trick-0_1_2"
+      },
+      "locked": {
+        "dir": "0_1_2",
+        "lastModified": 1659476735,
+        "narHash": "sha256-kxzI3YgysAMWqBGvScGVH5WPMW/zg1nNYIlyGDvb9qM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "trick",
+        "rev": "0ddd48f14172a0281a5c0341fb4bb15966890102",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_1_2",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "trick",
         "type": "github"
       }
     }

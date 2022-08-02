@@ -1,34 +1,5 @@
 {
   "nodes": {
-    "einheit": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "subfield-master",
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "subfield-master",
-          "nixpkgs"
-        ],
-        "src-einheit-master": "src-einheit-master"
-      },
-      "locked": {
-        "dir": "master",
-        "lastModified": 1658205957,
-        "narHash": "sha256-Nlgt78R1Qtjx8Eg3XwV1JssuRaYuojfxzXTYgwp/h78=",
-        "owner": "nim-nix-pkgs",
-        "repo": "einheit",
-        "rev": "87b45e2af633e88f006f65732bfca05180189e1a",
-        "type": "github"
-      },
-      "original": {
-        "dir": "master",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "einheit",
-        "type": "github"
-      }
-    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -65,70 +36,7 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
-        "nixpkgs": "nixpkgs",
-        "subfield-master": "subfield-master"
-      }
-    },
-    "src-einheit-master": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1572967045,
-        "narHash": "sha256-hMKuhUMKOxVdSiVuKxPvp8X13mnTVjf/Ba2fZC4p7u4=",
-        "owner": "jyapayne",
-        "repo": "einheit",
-        "rev": "4480724889f86c7be31b76e2de9f7f50c0b89332",
-        "type": "github"
-      },
-      "original": {
-        "owner": "jyapayne",
-        "ref": "refs/heads/master",
-        "repo": "einheit",
-        "type": "github"
-      }
-    },
-    "src-subfield-master": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1466525235,
-        "narHash": "sha256-npCVYzfiuHrQnqPtclAgSeGufTu6DqqTsb0ZIHmrsAM=",
-        "owner": "jyapayne",
-        "repo": "subfield",
-        "rev": "09c635039dfdcd87977e9691379ac4e70f4bbf80",
-        "type": "github"
-      },
-      "original": {
-        "owner": "jyapayne",
-        "ref": "refs/heads/master",
-        "repo": "subfield",
-        "type": "github"
-      }
-    },
-    "subfield-master": {
-      "inputs": {
-        "einheit": "einheit",
-        "flakeNimbleLib": [
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "src-subfield-master": "src-subfield-master"
-      },
-      "locked": {
-        "dir": "master",
-        "lastModified": 1658207636,
-        "narHash": "sha256-NJRB28dPPtwhrW3MQc9RtvaA3Xpi+O+r9K1QzjQdWA0=",
-        "owner": "nim-nix-pkgs",
-        "repo": "subfield",
-        "rev": "0adc37c5c00126d5db886f3d68fdd488a04077f4",
-        "type": "github"
-      },
-      "original": {
-        "dir": "master",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "subfield",
-        "type": "github"
+        "nixpkgs": "nixpkgs"
       }
     }
   },

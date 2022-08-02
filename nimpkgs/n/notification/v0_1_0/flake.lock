@@ -1,34 +1,5 @@
 {
   "nodes": {
-    "c2nim": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "github-solitudesf-nim-dbus",
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "github-solitudesf-nim-dbus",
-          "nixpkgs"
-        ],
-        "src-c2nim-0_9_18": "src-c2nim-0_9_18"
-      },
-      "locked": {
-        "dir": "0_9_18",
-        "lastModified": 1650754238,
-        "narHash": "sha256-YzF594m4s9C0Uau8UbngjhVFn0w6ubOIgJze2VOUXiA=",
-        "owner": "nim-nix-pkgs",
-        "repo": "c2nim",
-        "rev": "27aa81fe3e854c13db000cd639f1190d27d186a4",
-        "type": "github"
-      },
-      "original": {
-        "dir": "0_9_18",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "c2nim",
-        "type": "github"
-      }
-    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -52,26 +23,25 @@
     },
     "github-solitudesf-nim-dbus": {
       "inputs": {
-        "c2nim": "c2nim",
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
         "nixpkgs": [
           "nixpkgs"
         ],
-        "src-dbus-master": "src-dbus-master"
+        "src-dbus-devel": "src-dbus-devel"
       },
       "locked": {
-        "dir": "master",
-        "lastModified": 1650755421,
-        "narHash": "sha256-566+I5ePCRMegZtqe0oqg/XJ5bI2jmPh4xxg5/sTzc8=",
+        "dir": "devel",
+        "lastModified": 1659476642,
+        "narHash": "sha256-OvFYofJhqDMX9UWi6R46FY0qX8be2elXKOVDS+6wxpA=",
         "owner": "nim-nix-pkgs",
         "repo": "github-solitudesf-nim-dbus",
-        "rev": "e4bfbebc8670b4c4893a5e493ee40110f0fbf432",
+        "rev": "a30f4073374fabe150f3c52e7d37da6ac543a424",
         "type": "github"
       },
       "original": {
-        "dir": "master",
+        "dir": "devel",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "github-solitudesf-nim-dbus",
@@ -126,36 +96,19 @@
         "src-notification-v0_1_0": "src-notification-v0_1_0"
       }
     },
-    "src-c2nim-0_9_18": {
+    "src-dbus-devel": {
       "flake": false,
       "locked": {
-        "lastModified": 1622276437,
-        "narHash": "sha256-127ux36mfC+PnS2HIQffw+z0TSvzdQXnKRxqYV3XahU=",
-        "owner": "nim-lang",
-        "repo": "c2nim",
-        "rev": "e0ae7240e624bfbd7a2b213318b36f113a13cdeb",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nim-lang",
-        "ref": "refs/tags/0.9.18",
-        "repo": "c2nim",
-        "type": "github"
-      }
-    },
-    "src-dbus-master": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1552671925,
-        "narHash": "sha256-UluVb3SdapfcoyzGOIi1nGdlsrADUhSmZiS3FhyOZXw=",
+        "lastModified": 1589733962,
+        "narHash": "sha256-SY5lvvhZkyTpUQDxkQiW8wat0TUItbasfQhk69zv4wA=",
         "owner": "solitudesf",
         "repo": "nim-dbus",
-        "rev": "04b94a448e4344b83e63c93d78242dd0a127a095",
+        "rev": "537dee6dd70bbe5a85014b9293e3c0389e35f150",
         "type": "github"
       },
       "original": {
         "owner": "solitudesf",
-        "ref": "refs/heads/master",
+        "ref": "refs/heads/devel",
         "repo": "nim-dbus",
         "type": "github"
       }
