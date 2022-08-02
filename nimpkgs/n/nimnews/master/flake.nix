@@ -32,7 +32,7 @@
   inputs."scram".owner = "nim-nix-pkgs";
   inputs."scram".ref   = "master";
   inputs."scram".repo  = "scram";
-  inputs."scram".dir   = "0_1_13";
+  inputs."scram".dir   = "0_1_14";
   inputs."scram".type  = "github";
   inputs."scram".inputs.nixpkgs.follows = "nixpkgs";
   inputs."scram".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

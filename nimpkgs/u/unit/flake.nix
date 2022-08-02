@@ -7,13 +7,29 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."unit-master".dir   = "master";
-  inputs."unit-master".owner = "nim-nix-pkgs";
-  inputs."unit-master".ref   = "master";
-  inputs."unit-master".repo  = "unit";
-  inputs."unit-master".type  = "github";
-  inputs."unit-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."unit-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."unit-develop".dir   = "develop";
+  inputs."unit-develop".owner = "nim-nix-pkgs";
+  inputs."unit-develop".ref   = "master";
+  inputs."unit-develop".repo  = "unit";
+  inputs."unit-develop".type  = "github";
+  inputs."unit-develop".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."unit-develop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."unit-main".dir   = "main";
+  inputs."unit-main".owner = "nim-nix-pkgs";
+  inputs."unit-main".ref   = "master";
+  inputs."unit-main".repo  = "unit";
+  inputs."unit-main".type  = "github";
+  inputs."unit-main".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."unit-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."unit-ver_0_3_0".dir   = "ver_0_3_0";
+  inputs."unit-ver_0_3_0".owner = "nim-nix-pkgs";
+  inputs."unit-ver_0_3_0".ref   = "master";
+  inputs."unit-ver_0_3_0".repo  = "unit";
+  inputs."unit-ver_0_3_0".type  = "github";
+  inputs."unit-ver_0_3_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."unit-ver_0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

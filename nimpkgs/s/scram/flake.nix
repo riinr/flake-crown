@@ -63,6 +63,14 @@
   inputs."scram-0_1_13".inputs.nixpkgs.follows = "nixpkgs";
   inputs."scram-0_1_13".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."scram-0_1_14".dir   = "0_1_14";
+  inputs."scram-0_1_14".owner = "nim-nix-pkgs";
+  inputs."scram-0_1_14".ref   = "master";
+  inputs."scram-0_1_14".repo  = "scram";
+  inputs."scram-0_1_14".type  = "github";
+  inputs."scram-0_1_14".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."scram-0_1_14".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."scram-0_1_2".dir   = "0_1_2";
   inputs."scram-0_1_2".owner = "nim-nix-pkgs";
   inputs."scram-0_1_2".ref   = "master";
