@@ -1,20 +1,60 @@
 * binance
+** nimsha2
 
 * ur
 
 * jwt
-
-* nimssh2
+** bearssl
+*** unittest2
 
 * switch_build
 
-* nimrax
+* nimssh2
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
 
 * nimsha2
 
-* googleapi
+* nimrax
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+
+* nimyaml
 
 * uuids
+** isaac
+
+* googleapi
+** jwt
+*** bearssl
+**** unittest2
+** quickjwt
 
 * clibpp
 
@@ -23,6 +63,16 @@
 * ansiparse
 
 * gh_nimrod_doc_pages
+** argument_parser
+*** nake
+** lazy_rest
+*** nake
+*** argument_parser
+**** nake
+** midnight_dynamite
+*** nake
+*** argument_parser
+**** nake
 
 * jhash
 
@@ -31,6 +81,44 @@
 * isaac
 
 * nimislides
+** nimib
+*** markdown
+*** mustache
+*** toml_serialization
+**** stew
+**** serialization
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
+*** tempfile
+** toml_serialization
+*** stew
+*** serialization
+**** unittest2
+**** stew
+**** faststreams
+***** unittest2
+***** stew
+***** chronos
+****** httputils
+******* unittest2
+******* stew
+****** stew
+****** bearssl
+******* unittest2
+***** testutils
+****** unittest2
 
 * anttweakbar
 
@@ -40,29 +128,41 @@
 
 * highlight
 
+* openal
+
 * matsuri
 
 * nimpari
-
-* openal
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * markx
+** cligen
 
 * hackpad
+** jester
+*** asynctools
+*** httpbeast
+**** asynctools
+** zip
 
 * nephyr
+** stew
+** msgpack4nim
 
 * toktok
 
 * nimeverything
 
-* resultutils
-
 * stdarg
 
 * otplib
-
-* cloudbet
 
 * des
 
@@ -77,6 +177,7 @@
 * kexpr
 
 * nanoid
+** random
 
 * sdf
 
@@ -84,9 +185,39 @@
 
 * nettest
 
+* exodus
+** jester
+*** asynctools
+*** httpbeast
+**** asynctools
+
 * rdgui
+** rapid
+*** nimpng
+*** aglet
+**** glm
+**** nimterop
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
+***** cligen
+*** stbimage
+*** glm
+*** nimterop
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** cligen
 
 * names
+
+* socks5
 
 * stripe
 
@@ -95,24 +226,52 @@
 * lz77
 
 * mctranslog
+** mcdb
+** mcresponse
 
 * serialization
+** unittest2
+** stew
+** faststreams
+*** unittest2
+*** stew
+*** chronos
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** bearssl
+***** unittest2
+*** testutils
+**** unittest2
 
 * skybook
+** jester
+*** asynctools
+*** httpbeast
+**** asynctools
 
 * spurdify
+** cligen
 
 * strunicode
+** normalize
+*** unicodedb
+** graphemes
 
 * circleci_client
 
 * redpool
 
 * mycouch
+** macroplus
+** macroutils
 
 * torch
+** fragments
 
 * moustachu
+** commandeer
 
 * fasttext
 
@@ -122,9 +281,8 @@
 
 * winserial
 
-* matrixsdk
-
 * mcu_utils
+** threading
 
 * rx_nim
 
@@ -137,28 +295,58 @@
 * opencl
 
 * readfq
+** zip
 
 * nordaudio
 
 * ringdeque
 
 * nimfuzzy
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
 
 * globby
 
 * gplay
+** jwt
+*** bearssl
+**** unittest2
+** cligen
 
 * bytesequtils
 
 * mangle
 
 * mike
-
-* avbin
+** websocketx
+*** httpx
+**** ioselectors
+***** wepoll
+***** timerwheel
+*** ws
+** httpx
+*** ioselectors
+**** wepoll
+**** timerwheel
 
 * njo
 
 * listenbrainz
+** jsony
+** nodejs
 
 * bitstreams
 
@@ -169,12 +357,15 @@
 * freeimage
 
 * mongopool
-
-* github-iffy-nim-dbus
+** bson
+** scram
+*** hmac
+**** nimsha2
+**** nimcrypto
+**** sha1
 
 * pinggraph
-
-* io-myo
+** cligen
 
 * bearlibterminal
 
@@ -185,60 +376,372 @@
 * stalinsort
 
 * ballpark
+** fsnotify
+*** timerwheel
+*** xio
 
 * libsaedea
 
 * html_tools
+** contra
+
+* libgd
 
 * sss
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * inumon
+** nigui
+** arraymancer
+*** nimlapack
+*** nimblas
+*** untar
+*** stb_image
+*** nimcuda
+*** nimcl
+**** opencl
+*** clblast
+**** opencl
+*** zip
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * aglet
+** glm
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * nimtess2
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
 
 * libplist
 
-* github-zacharycarter-bgfxextrasdotnim
+* spryvm
+** ui
+** python
+** snappy
+*** unittest2
+*** stew
+*** faststreams
+**** unittest2
+**** stew
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+***** stew
+***** bearssl
+****** unittest2
+**** testutils
+***** unittest2
 
 * bncurve
+** nimcrypto
 
 * gtk2
+** cairo
 
 * nimchromepath
-
-* spryvm
 
 * subexes
 
 * vkapi
 
 * nimbench
+** strfmt
 
 * polynumeric
+** arraymancer
+*** nimlapack
+*** nimblas
+*** untar
+*** stb_image
+*** nimcuda
+*** nimcl
+**** opencl
+*** clblast
+**** opencl
+*** zip
 
 * klymene
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+** illwill
+** unicodedb
 
 * entoody
 
 * anano
 
 * numericalnim
-
-* vscds
+** arraymancer
+*** nimlapack
+*** nimblas
+*** untar
+*** stb_image
+*** nimcuda
+*** nimcl
+**** opencl
+*** clblast
+**** opencl
+*** zip
 
 * zmq
+
+* vscds
+** nimlevenshtein
 
 * chebyshev
 
 * contracts
 
 * iterrr
+** macroplus
 
 * oldwinapi
 
 * web3
+** stew
+** faststreams
+*** unittest2
+*** stew
+*** chronos
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** bearssl
+***** unittest2
+*** testutils
+**** unittest2
+** nimcrypto
+** chronos
+*** httputils
+**** unittest2
+**** stew
+*** stew
+*** bearssl
+**** unittest2
+** stint
+*** stew
+** eth
+*** metrics
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+***** stew
+***** bearssl
+****** unittest2
+*** unittest2
+*** stew
+*** nimcrypto
+*** nat_traversal
+**** stew
+*** chronos
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** bearssl
+***** unittest2
+*** stint
+**** stew
+*** rocksdb
+**** stew
+**** tempfile
+*** confutils
+**** stew
+*** testutils
+**** unittest2
+*** secp256k1
+**** stew
+**** nimcrypto
+*** sqlite3_abi
+*** chronicles
+**** testutils
+***** unittest2
+**** json_serialization
+***** stew
+***** serialization
+****** unittest2
+****** stew
+****** faststreams
+******* unittest2
+******* stew
+******* chronos
+******** httputils
+********* unittest2
+********* stew
+******** stew
+******** bearssl
+********* unittest2
+******* testutils
+******** unittest2
+** json_rpc
+*** httputils
+**** unittest2
+**** stew
+*** stew
+*** nimcrypto
+*** chronos
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** bearssl
+***** unittest2
+*** stint
+**** stew
+*** websock
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** nimcrypto
+**** bearssl
+***** unittest2
+**** asynctest
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+***** stew
+***** bearssl
+****** unittest2
+**** chronicles
+***** testutils
+****** unittest2
+***** json_serialization
+****** stew
+****** serialization
+******* unittest2
+******* stew
+******* faststreams
+******** unittest2
+******** stew
+******** chronos
+********* httputils
+********** unittest2
+********** stew
+********* stew
+********* bearssl
+********** unittest2
+******** testutils
+********* unittest2
+**** zlib
+***** stew
+*** json_serialization
+**** stew
+**** serialization
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
+*** chronicles
+**** testutils
+***** unittest2
+**** json_serialization
+***** stew
+***** serialization
+****** unittest2
+****** stew
+****** faststreams
+******* unittest2
+******* stew
+******* chronos
+******** httputils
+********* unittest2
+********* stew
+******** stew
+******** bearssl
+********* unittest2
+******* testutils
+******** unittest2
+** json_serialization
+*** stew
+*** serialization
+**** unittest2
+**** stew
+**** faststreams
+***** unittest2
+***** stew
+***** chronos
+****** httputils
+******* unittest2
+******* stew
+****** stew
+****** bearssl
+******* unittest2
+***** testutils
+****** unittest2
+** chronicles
+*** testutils
+**** unittest2
+*** json_serialization
+**** stew
+**** serialization
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
 
 * shioridll
 
@@ -248,23 +751,23 @@
 
 * fidgetty
 
-* gurl
-
 * patgraph
-
-* tradingview
 
 * taps
 
 * biblioteca_guarrilla
+** jester
+*** asynctools
+*** httpbeast
+**** asynctools
+** webp
+** zip
 
 * nimbug
 
 * msgpack4nim
 
 * nanovg
-
-* csv2json
 
 * genny
 
@@ -277,6 +780,9 @@
 * sha1ext
 
 * libkeepass
+** nimsha2
+** zip
+** nimaes
 
 * qeu
 
@@ -285,6 +791,7 @@
 * nimfunge98
 
 * surfing
+** cligen
 
 * cli_menu
 
@@ -297,6 +804,115 @@
 * questionable
 
 * ethers
+** questionable
+** stew
+** upraises
+** chronos
+*** httputils
+**** unittest2
+**** stew
+*** stew
+*** bearssl
+**** unittest2
+** stint
+*** stew
+** contractabi
+*** questionable
+*** stew
+*** nimcrypto
+*** upraises
+*** stint
+**** stew
+** json_rpc
+*** httputils
+**** unittest2
+**** stew
+*** stew
+*** nimcrypto
+*** chronos
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** bearssl
+***** unittest2
+*** stint
+**** stew
+*** websock
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** nimcrypto
+**** bearssl
+***** unittest2
+**** asynctest
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+***** stew
+***** bearssl
+****** unittest2
+**** chronicles
+***** testutils
+****** unittest2
+***** json_serialization
+****** stew
+****** serialization
+******* unittest2
+******* stew
+******* faststreams
+******** unittest2
+******** stew
+******** chronos
+********* httputils
+********** unittest2
+********** stew
+********* stew
+********* bearssl
+********** unittest2
+******** testutils
+********* unittest2
+**** zlib
+***** stew
+*** json_serialization
+**** stew
+**** serialization
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
+*** chronicles
+**** testutils
+***** unittest2
+**** json_serialization
+***** stew
+***** serialization
+****** unittest2
+****** stew
+****** faststreams
+******* unittest2
+******* stew
+******* chronos
+******** httputils
+********* unittest2
+********* stew
+******** stew
+******** bearssl
+********* unittest2
+******* testutils
+******** unittest2
 
 * lazyseq
 
@@ -307,24 +923,38 @@
 * ppm
 
 * googlesearch
+** nimquery
+
+* defines
+
+* timerwheel
 
 * host
 
-* nimwin
-
 * animatecss
 
-* timerwheel
+* nimwin
 
 * consul
 
 * glfw
 
 * nimpress
+** hts
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+** lapper
 
 * onnxruntime
 
 * termui
+** classes
+** elvis
 
 * sbttl
 
@@ -334,35 +964,118 @@
 
 * binstreams
 
+* package_visible_types
+
 * gimei
 
 * nimcfitsio
 
-* package_visible_types
-
 * treesitter_css
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** treesitter
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
 
 * libfswatch
 
 * importc_helpers
 
 * statistical_tests
+** distributions
+*** special_functions
 
 * optionals
 
 * rfc3339
+
+* nimtorch
+** fragments
 
 * tsv2json
 
 * easings
 
 * weave
+** synthesis
 
 * urlon
 
 * loadenv
 
 * nimnews
+** jester
+*** asynctools
+*** httpbeast
+**** asynctools
+** nimassets
+*** zstd
+** passgen
+*** nimcrypto
+*** urand
+** asynctools
+** prologue
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cookies
+*** nimcrypto
+*** karax
+**** dotenv
+**** ws
+*** httpx
+**** ioselectors
+***** wepoll
+***** timerwheel
+*** httpbeast
+**** asynctools
+*** logue
+**** cligen
+*** cookiejar
+** scram
+*** hmac
+**** nimsha2
+**** nimcrypto
+**** sha1
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+** npeg
+** nuuid
+** templates
 
 * nimfasttext
 
@@ -371,30 +1084,84 @@
 * combparser
 
 * azure_translate
-
-* nim-nmap
+** nuuid
 
 * fswatch
 
 * linear_models
+** distributions
+*** special_functions
+** arraymancer
+*** nimlapack
+*** nimblas
+*** untar
+*** stb_image
+*** nimcuda
+*** nimcl
+**** opencl
+*** clblast
+**** opencl
+*** zip
 
 * libclang
 
 * nwatchdog
 
-* treesitter_go
+* libserialport
 
-* zws
+* treesitter_go
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** treesitter
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
 
 * xevloop
+** x11
 
 * sim
 
 * memlib
+** winim
+** minhook
 
 * nimrun
+** tempfile
 
 * distorm3
+
+* android
+** jnim
+*** nimfp
+**** classy
+**** nimboost
+***** patty
 
 * uncomment
 
@@ -405,32 +1172,99 @@
 * nimlevenshtein
 
 * memviews
-
-* aria
-
-* nim_exodus
+** c_alikes
 
 * fugitive
+** colorize
+** gara
+** unpack
+** tempfile
 
 * huenim
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
 
 * anonimongo
+** nimsha2
+** zippy
+** scram
+*** hmac
+**** nimsha2
+**** nimcrypto
+**** sha1
+** dnsclient
+** sha1
+** supersnappy
 
 * ggplotnim
+** shell
+** ginger
+*** shell
+*** cairo
+*** chroma
+** persvector
+** webview
+** arraymancer
+*** nimlapack
+*** nimblas
+*** untar
+*** stb_image
+*** nimcuda
+*** nimcl
+**** opencl
+*** clblast
+**** opencl
+*** zip
+** datamancer
+*** arraymancer
+**** nimlapack
+**** nimblas
+**** untar
+**** stb_image
+**** nimcuda
+**** nimcl
+***** opencl
+**** clblast
+***** opencl
+**** zip
 
 * openssl_evp
 
 * imgcat
+** imageman
+*** nimpng
+*** stb_image
+** argparse
 
 * nimjl
+** arraymancer
+*** nimlapack
+*** nimblas
+*** untar
+*** stb_image
+*** nimcuda
+*** nimcl
+**** opencl
+*** clblast
+**** opencl
+*** zip
 
 * openexchangerates
 
 * pwd
 
 * ytextractor
+** ajax
 
 * prometheus
+
+* gralg
+** cligen
 
 * asyncpythonfile
 
@@ -441,8 +1275,29 @@
 * graphemes
 
 * nimactors
+** nimboost
+*** patty
+** nimfp
+*** classy
+*** nimboost
+**** patty
 
 * nimkerberos
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
 
 * csfml
 
@@ -451,24 +1306,47 @@
 * sdl2
 
 * nimothello
+** illwill
 
 * applicates
 
-* looper
+* nimcommandparser
 
 * chacha20
 
 * firejail
 
+* looper
+
 * osutil
 
-* todoist
+* bgfxextrasdotnim
 
 * libjwt
 
 * prologue
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+** cookies
+** nimcrypto
+** karax
+*** dotenv
+*** ws
+** httpx
+*** ioselectors
+**** wepoll
+**** timerwheel
+** httpbeast
+*** asynctools
+** logue
+*** cligen
+** cookiejar
 
-* github-yglukhov-clurp
+* todoist
 
 * patty
 
@@ -479,10 +1357,17 @@
 * csv2dbsrc
 
 * tam
+** nimquery
+** tiny_sqlite
+** cligen
+
+* semaphores
 
 * gles
 
 * zfblast
+** uri3
+** sha1
 
 * barcode
 
@@ -493,24 +1378,42 @@
 * fastcgi
 
 * nwnt
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+** neverwinter
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
 
 * asyncdocker
 
 * nimrpc
+** msgpack4nim
 
 * cittadino
+** stomp
 
 * rnim
 
 * number_files
-
-* nim_sdl2
+** nake
+** argument_parser
+*** nake
 
 * webdavclient
 
 * resolv
-
-* github-2vg-mofuhttputils
+** dnsprotocol
+*** stew
 
 * pluginmanager
 
@@ -519,6 +1422,10 @@
 * sync
 
 * jnim
+** nimfp
+*** classy
+*** nimboost
+**** patty
 
 * spacenimtraders
 
@@ -531,30 +1438,88 @@
 * ladder
 
 * nimi3status
+** colorsys
 
 * hpprint
+** shell
+** hmisc
+*** shell
+*** fusion
+*** jsony
+*** sorta
+*** benchy
+*** unicodedb
+*** macroutils
+*** with
+*** cligen
+** hnimast
+*** hmisc
+**** shell
+**** fusion
+**** jsony
+**** sorta
+**** benchy
+**** unicodedb
+**** macroutils
+**** with
+**** cligen
+*** compiler
+*** macroutils
+*** nimble
+**** compiler
+** hdrawing
+*** hmisc
+**** shell
+**** fusion
+**** jsony
+**** sorta
+**** benchy
+**** unicodedb
+**** macroutils
+**** with
+**** cligen
+** hasts
+*** hmisc
+**** shell
+**** fusion
+**** jsony
+**** sorta
+**** benchy
+**** unicodedb
+**** macroutils
+**** with
+**** cligen
+** with
 
 * tinydialogs
 
+* assume
+
 * hastyscribe
 
-* ptrace
-
 * terminaltables
+
+* ptrace
 
 * simpleast
 
 * nimscripter
 
 * sayhissatsuwaza
+** cligen
 
 * rect_packer
+
+* test
 
 * nimtactoe
 
 * porter
+** mutableseqs
 
 * zxcvbn
+** testutils
+*** unittest2
 
 * eternity
 
@@ -563,114 +1528,311 @@
 * mime
 
 * ngspice
-
-* github-disruptek-gittyup
-
-* nhsl
+** hmisc
+*** shell
+*** fusion
+*** jsony
+*** sorta
+*** benchy
+*** unicodedb
+*** macroutils
+*** with
+*** cligen
+** sorta
 
 * romans
+
+* nhsl
 
 * breeze
 
 * retranslator
+** nre
+*** optional_t
 
 * fsm
 
 * webaudio
 
 * linalg
+** nimblas
 
 * oaitools
+** xmltools
+*** nimboost
+**** patty
+*** nimfp
+**** classy
+**** nimboost
+***** patty
 
 * timecop
+** subhook
 
 * composition
+** macrosex
 
 * streamfix
 
 * tf2plug
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
 
 * cirru_edn
+** cirru_writer
+** cirru_parser
+** cirru-parser
 
 * subfield
+** einheit
 
 * opus
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * wnim
+** winim
+** npeg
+** memlib
+*** winim
+*** minhook
 
 * neoid
+** random
+** winim
 
 * monocypher
+** sysrandom
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * osdialog
 
 * tim_sort
 
 * websocketx
+** httpx
+*** ioselectors
+**** wepoll
+**** timerwheel
+** ws
 
 * fsmonitor
 
+* macroutils
+
 * drawille
+
+* ad
+** bignum
+*** gmp
 
 * emerald
 
-* ad
-
 * jsmn
 
-* macroutils
+* wavecore
+** urlly
+** flatty
+** zippy
+** ansiutils
+** paramidi
+** threading
+** puppy
+*** urlly
+*** zippy
+*** winim
+*** libcurl
 
 * nitro
-
-* wavecore
+** questionable
+** stew
+** nimcrypto
+** upraises
+** stint
+*** stew
+** contractabi
+*** questionable
+*** stew
+*** nimcrypto
+*** upraises
+*** stint
+**** stew
+** secp256k1
+*** stew
+*** nimcrypto
 
 * aqcalc
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
 
 * meow
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * twitter
+** uuids
+*** isaac
+** hmac
+*** nimsha2
+*** nimcrypto
+*** sha1
 
 * supranim
+** jsony
+** nyml
+*** toktok
 
 * phylogeni
 
 * asyncthreadpool
 
 * conventional_semver
-
-* github-disruptek-badresults
+** semver
+** simpleparseopt
 
 * nimdenter
+** cligen
 
 * etf
 
 * suru
 
 * chronicles
+** testutils
+*** unittest2
+** json_serialization
+*** stew
+*** serialization
+**** unittest2
+**** stew
+**** faststreams
+***** unittest2
+***** stew
+***** chronos
+****** httputils
+******* unittest2
+******* stew
+****** stew
+****** bearssl
+******* unittest2
+***** testutils
+****** unittest2
 
 * bgfx
 
-* python3
-
-* nimrod-glfw
+* threadpools
 
 * spacenav
+
+* python3
 
 * luna
 
 * ajax
 
-* impulse_engine
-
 * metrics
+** chronos
+*** httputils
+**** unittest2
+**** stew
+*** stew
+*** bearssl
+**** unittest2
+
+* impulse_engine
+** opengl
+*** x11
+** x11
+** nim-glfw
 
 * pas2nim
 
 * phosphor
+** opengl
+*** x11
 
 * gapbuffer
 
 * graphql
+** stew
+** faststreams
+*** unittest2
+*** stew
+*** chronos
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** bearssl
+***** unittest2
+*** testutils
+**** unittest2
+** json_serialization
+*** stew
+*** serialization
+**** unittest2
+**** stew
+**** faststreams
+***** unittest2
+***** stew
+***** chronos
+****** httputils
+******* unittest2
+******* stew
+****** stew
+****** bearssl
+******* unittest2
+***** testutils
+****** unittest2
+** chronicles
+*** testutils
+**** unittest2
+*** json_serialization
+**** stew
+**** serialization
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
 
 * gitapi
 
@@ -678,11 +1840,11 @@
 
 * fusion
 
-* github-2vg-mofuparser
+* nimroutine
 
 * isense
 
-* nimroutine
+* findxml
 
 * random
 
@@ -691,12 +1853,21 @@
 * gentabs
 
 * rlp
+** ranges
 
 * jstin
 
 * rpgsheet
+** illwill
+** yaml
 
 * termnovel
+** alignment
+*** eastasianwidth
+** markdown
+** nimquery
+** eastasianwidth
+** cligen
 
 * bytes2human
 
@@ -705,12 +1876,29 @@
 * echon
 
 * finalseg
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+
+* eris_protocols
 
 * nimbpf
-
-* pwned
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * choosenimgui
+** webgui
+
+* pwned
 
 * lua
 
@@ -719,6 +1907,7 @@
 * desim
 
 * gimg
+** useragent
 
 * ptr_math
 
@@ -727,28 +1916,54 @@
 * x11
 
 * stint
+** stew
+
+* polyshards
+** polymorph
 
 * filetype
-
-* io-oculus
 
 * unpack
 
 * xmltools
+** nimboost
+*** patty
+** nimfp
+*** classy
+*** nimboost
+**** patty
 
 * glm
 
 * symbolicnim
+** terminaltables
+** arraymancer
+*** nimlapack
+*** nimblas
+*** untar
+*** stb_image
+*** nimcuda
+*** nimcl
+**** opencl
+*** clblast
+**** opencl
+*** zip
 
 * pcgbasic
 
 * oauth
+** sha1
 
 * chipmunk7_demos
+** sdl2
+** opengl
+*** x11
 
 * ttmath
 
 * zxcvbnim
+** jsony
+** supersnappy
 
 * nicy
 
@@ -757,12 +1972,61 @@
 * i18n
 
 * mnemonic
+** nimsha2
 
 * nasher
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+** blarg
+** nwnt
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+*** neverwinter
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
+** glob
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+** neverwinter
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+
+* nuklear
 
 * diffoutput
+** diff
 
 * neverwinter
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
 
 * tmplpro
 
@@ -771,28 +2035,257 @@
 * ngxcmod
 
 * nimbus
+** stew
+** nimcrypto
+** bncurve
+*** nimcrypto
+** std_shims
+** chronos
+*** httputils
+**** unittest2
+**** stew
+*** stew
+*** bearssl
+**** unittest2
+** stint
+*** stew
+** libbacktrace
+** rocksdb
+*** stew
+*** tempfile
+** eth
+*** metrics
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+***** stew
+***** bearssl
+****** unittest2
+*** unittest2
+*** stew
+*** nimcrypto
+*** nat_traversal
+**** stew
+*** chronos
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** bearssl
+***** unittest2
+*** stint
+**** stew
+*** rocksdb
+**** stew
+**** tempfile
+*** confutils
+**** stew
+*** testutils
+**** unittest2
+*** secp256k1
+**** stew
+**** nimcrypto
+*** sqlite3_abi
+*** chronicles
+**** testutils
+***** unittest2
+**** json_serialization
+***** stew
+***** serialization
+****** unittest2
+****** stew
+****** faststreams
+******* unittest2
+******* stew
+******* chronos
+******** httputils
+********* unittest2
+********* stew
+******** stew
+******** bearssl
+********* unittest2
+******* testutils
+******** unittest2
+** json_rpc
+*** httputils
+**** unittest2
+**** stew
+*** stew
+*** nimcrypto
+*** chronos
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** bearssl
+***** unittest2
+*** stint
+**** stew
+*** websock
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** nimcrypto
+**** bearssl
+***** unittest2
+**** asynctest
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+***** stew
+***** bearssl
+****** unittest2
+**** chronicles
+***** testutils
+****** unittest2
+***** json_serialization
+****** stew
+****** serialization
+******* unittest2
+******* stew
+******* faststreams
+******** unittest2
+******** stew
+******** chronos
+********* httputils
+********** unittest2
+********** stew
+********* stew
+********* bearssl
+********** unittest2
+******** testutils
+********* unittest2
+**** zlib
+***** stew
+*** json_serialization
+**** stew
+**** serialization
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
+*** chronicles
+**** testutils
+***** unittest2
+**** json_serialization
+***** stew
+***** serialization
+****** unittest2
+****** stew
+****** faststreams
+******* unittest2
+******* stew
+******* chronos
+******** httputils
+********* unittest2
+********* stew
+******** stew
+******** bearssl
+********* unittest2
+******* testutils
+******** unittest2
+** chronicles
+*** testutils
+**** unittest2
+*** json_serialization
+**** stew
+**** serialization
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
 
 * geohash
 
 * i3ipc
+** cligen
+** nesm
+
+* shellopt
 
 * limdb
+** lmdb
 
 * preserves
+** compiler
+** bigints
+** npeg
 
 * simplepng
+** nimpng
 
 * nimarrow
+** nimarrow_glib
+
+* babel
 
 * prompt
+** unicodedb
 
 * raytracingalgorithm
+** therapist
+** stacks
+** simplepng
+*** nimpng
+** neo
+*** nimlapack
+*** nimblas
+*** nimcuda
+** cligen
 
 * plotly
+** webview
+** ws
+** websocket
+** jsbind
+** chroma
 
 * libmpdclient
 
 * nimpc
+** simpleot
+*** nimterop
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** cligen
+** monocypher
+*** sysrandom
+*** nimterop
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** cligen
+** sysrandom
 
 * polybool
 
@@ -810,8 +2303,6 @@
 
 * mmgeoip
 
-* github-zedeus-redis
-
 * ago
 
 * coalesce
@@ -820,19 +2311,32 @@
 
 * aossoa
 
+* async_http_request
+** jsbind
+
 * nimja
 
 * nimsl
+** variant
 
 * mcmurry
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+** asciitype
+** ast_pattern_matching
 
 * murmurhash
 
 * nimviz
 
 * d3
+** jsbind
 
-* github-pmunch-docopt
+* strslice
 
 * sha3
 
@@ -847,14 +2351,43 @@
 * gifenc
 
 * sam
-
-* strslice
+** jsmn
 
 * taskqueue
-
-* github-nimgl-glfw
+** timestamp
 
 * treesitter_python
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** treesitter
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
 
 * xam
 
@@ -863,30 +2396,111 @@
 * rc4
 
 * nimlangserver
+** with
+** chronicles
+*** testutils
+**** unittest2
+*** json_serialization
+**** stew
+**** serialization
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
+** itertools
 
 * redissessions
+** jester
+*** asynctools
+*** httpbeast
+**** asynctools
 
-* mc_events
+* avbin_nim
 
 * asyncpg
 
 * nimdata
+** plotly
+*** webview
+*** ws
+*** websocket
+*** jsbind
+*** chroma
+** zip
 
 * amysql
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+** urlly
+** nimcrypto
+** chronos
+*** httputils
+**** unittest2
+**** stew
+*** stew
+*** bearssl
+**** unittest2
+** zstd
 
 * lscolors
 
 * marggers
 
 * treesitter_c
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** treesitter
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
 
 * usagov
 
-* github-pmunch-x11
+* nim
 
 * wiringpinim
 
 * negamax
+** turn_based_game
 
 * maze
 
@@ -899,26 +2513,56 @@
 * argon2_bind
 
 * servy
+** terminaltables
+** ws
 
 * nimsimd
-
-* psutilim
 
 * owoifynim
 
 * edens
+** cligen
 
 * servclip
+** jester
+*** asynctools
+*** httpbeast
+**** asynctools
+** bluesoftcosmos
+*** scraper
+** nimclipboard
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
 
 * parsepage
+** yaml
+** scraper
+** nimquery
+** karax
+*** dotenv
+*** ws
+** css_html_minify
+** cligen
 
 * geocoding
 
 * useradd
 
-* github-yglukhov-bearssl_pkey_decoder
-
 * opengl
+** x11
 
 * sling
 
@@ -937,18 +2581,50 @@
 * xmldomparser
 
 * iputils
+** stew
 
 * nimics
 
 * entgrep
+** cligen
 
 * isocodes
+** jsony
 
 * treesitter_typescript
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** treesitter
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
 
 * miniblink
-
-* cliche
 
 * mqtt
 
@@ -957,32 +2633,131 @@
 * nint128
 
 * npg
+** passgen
+*** nimcrypto
+*** urand
 
 * xml
 
 * nimfp
+** classy
+** nimboost
+*** patty
 
 * zfdbms
+** stdext
 
 * db_nimternalsql
 
 * serializetools
 
 * json_rpc
+** httputils
+*** unittest2
+*** stew
+** stew
+** nimcrypto
+** chronos
+*** httputils
+**** unittest2
+**** stew
+*** stew
+*** bearssl
+**** unittest2
+** stint
+*** stew
+** websock
+*** httputils
+**** unittest2
+**** stew
+*** stew
+*** nimcrypto
+*** bearssl
+**** unittest2
+*** asynctest
+*** chronos
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** bearssl
+***** unittest2
+*** chronicles
+**** testutils
+***** unittest2
+**** json_serialization
+***** stew
+***** serialization
+****** unittest2
+****** stew
+****** faststreams
+******* unittest2
+******* stew
+******* chronos
+******** httputils
+********* unittest2
+********* stew
+******** stew
+******** bearssl
+********* unittest2
+******* testutils
+******** unittest2
+*** zlib
+**** stew
+** json_serialization
+*** stew
+*** serialization
+**** unittest2
+**** stew
+**** faststreams
+***** unittest2
+***** stew
+***** chronos
+****** httputils
+******* unittest2
+******* stew
+****** stew
+****** bearssl
+******* unittest2
+***** testutils
+****** unittest2
+** chronicles
+*** testutils
+**** unittest2
+*** json_serialization
+**** stew
+**** serialization
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
 
 * bamboo_websocket
 
 * ftd2xx
 
-* github-yglukhov-ttf
-
 * owlkettle
-
-* blscurve
 
 * webterminal
 
+* blscurve
+** stew
+** nimcrypto
+
 * allographer
+** dotenv
+** progress
+** cligen
 
 * compactdict
 
@@ -993,36 +2768,56 @@
 * bio
 
 * uap
-
-* github-subsetpark-nim-stomp
+** yaml
+** cligen
 
 * minhash
 
 * skinterpolate
 
+* util
+
+* rtlsdr
+
 * sliceutils
 
 * redisparser
+
+* nim>=
 
 * base62
 
 * soundio
 
 * argument_parser
+** nake
 
 * webp
 
 * xmlio
+** vtable
 
 * pylib
 
 * sdl1
 
 * excelin
+** zippy
 
 * hmisc
+** shell
+** fusion
+** jsony
+** sorta
+** benchy
+** unicodedb
+** macroutils
+** with
+** cligen
 
 * nimdotenv
+
+* neverwinter_utils
 
 * elvis
 
@@ -1030,25 +2825,33 @@
 
 * proton
 
+* mk
+
 * nimcrypt
+** nimcrypto
 
 * c4
+** msgpack4nim
 
 * sorta
 
 * css_html_minify
 
 * sctp
+** reactor
+*** collections
 
 * loco
 
 * nmiline
 
 * whois
+** kashae
 
 * nimgame
 
 * dbus
+** c2nim
 
 * timestamp
 
@@ -1058,15 +2861,25 @@
 
 * nim_cexc
 
-* shmk
-
 * lazy_rest
+** nake
+** argument_parser
+*** nake
 
 * xcm
+** x11
+** cligen
 
 * neel
+** jester
+*** asynctools
+*** httpbeast
+**** asynctools
+** ws
 
 * cmixer_sdl2
+** sdl2
+** cmixer
 
 * easy_bcrypt
 
@@ -1075,6 +2888,120 @@
 * slimdown
 
 * fidget
+** typography
+*** print
+*** flippy
+**** print
+**** mddoc
+**** nimpng
+**** stb_image
+**** vmath
+***** mddoc
+**** bumpy
+***** vmath
+****** mddoc
+**** supersnappy
+**** chroma
+**** snappy
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
+*** pixie
+**** zippy
+**** flatty
+**** nimsimd
+**** vmath
+***** mddoc
+**** bumpy
+***** vmath
+****** mddoc
+**** chroma
+*** flatty
+*** stb_image
+*** vmath
+**** mddoc
+*** bumpy
+**** vmath
+***** mddoc
+*** chroma
+** flippy
+*** print
+*** mddoc
+*** nimpng
+*** stb_image
+*** vmath
+**** mddoc
+*** bumpy
+**** vmath
+***** mddoc
+*** supersnappy
+*** chroma
+*** snappy
+**** unittest2
+**** stew
+**** faststreams
+***** unittest2
+***** stew
+***** chronos
+****** httputils
+******* unittest2
+******* stew
+****** stew
+****** bearssl
+******* unittest2
+***** testutils
+****** unittest2
+** print
+** pixie
+*** zippy
+*** flatty
+*** nimsimd
+*** vmath
+**** mddoc
+*** bumpy
+**** vmath
+***** mddoc
+*** chroma
+** vmath
+*** mddoc
+** staticglfw
+*** opengl
+**** x11
+** opengl
+*** x11
+** bumpy
+*** vmath
+**** mddoc
+** supersnappy
+** cligen
+** chroma
+** snappy
+*** unittest2
+*** stew
+*** faststreams
+**** unittest2
+**** stew
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+***** stew
+***** bearssl
+****** unittest2
+**** testutils
+***** unittest2
+** html5_canvas
 
 * latinize
 
@@ -1086,27 +3013,50 @@
 
 * nimp5
 
+* websocket
+
 * github-nim-works-cps
 
 * nimcmaes
 
-* websocket
-
 * samson
+
+* cdt
 
 * jsbind
 
 * dashing
 
-* bluu
+* bingod
 
-* discordnim
+* bluu
+** openapi
+*** npeg
+*** foreach
+** npeg
 
 * oculus
 
 * nimdbx
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
+
+* anycase_fork
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
 
 * ethash
+** nimcrypto
 
 * rsvg
 
@@ -1114,19 +3064,48 @@
 
 * opentdb
 
+* badresults
+
 * omnicollider
+** omni
+*** cligen
+** cligen
 
 * bencode
 
+* git://github.com/disruptek/cutelog.git
+
 * isa
+** collections
 
 * libovr
 
 * wzeegrid
+** wnim
+*** winim
+*** npeg
+*** memlib
+**** winim
+**** minhook
 
 * remotery
 
 * nimmonocypher
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
 
 * classy
 
@@ -1137,16 +3116,38 @@
 * winim
 
 * paravim
+** illwill
+** paratext
+*** paranim
+**** glm
+**** nimgl
+** paranim
+*** glm
+*** nimgl
+** pararules
 
 * sunvox
 
 * bcrypt
 
 * simpleot
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * cassette
 
 * otp
+** hmac
+*** nimsha2
+*** nimcrypto
+*** sha1
+** base32
 
 * cirru_parser
 
@@ -1161,10 +3162,14 @@
 * stb_truetype
 
 * chronos
+** httputils
+*** unittest2
+*** stew
+** stew
+** bearssl
+*** unittest2
 
 * sndhdr
-
-* github-liquid600pgm-nim-glm
 
 * texttospeech
 
@@ -1172,27 +3177,142 @@
 
 * oop_utils
 
-* harpoon
+* euphony
+** openal
+** vmath
+*** mddoc
 
 * htsparse
+** hmisc
+*** shell
+*** fusion
+*** jsony
+*** sorta
+*** benchy
+*** unicodedb
+*** macroutils
+*** with
+*** cligen
+** hparse
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** hmisc
+**** shell
+**** fusion
+**** jsony
+**** sorta
+**** benchy
+**** unicodedb
+**** macroutils
+**** with
+**** cligen
+*** hnimast
+**** hmisc
+***** shell
+***** fusion
+***** jsony
+***** sorta
+***** benchy
+***** unicodedb
+***** macroutils
+***** with
+***** cligen
+**** compiler
+**** macroutils
+**** nimble
+***** compiler
+*** hasts
+**** hmisc
+***** shell
+***** fusion
+***** jsony
+***** sorta
+***** benchy
+***** unicodedb
+***** macroutils
+***** with
+***** cligen
+*** hpprint
+**** shell
+**** hmisc
+***** shell
+***** fusion
+***** jsony
+***** sorta
+***** benchy
+***** unicodedb
+***** macroutils
+***** with
+***** cligen
+**** hnimast
+***** hmisc
+****** shell
+****** fusion
+****** jsony
+****** sorta
+****** benchy
+****** unicodedb
+****** macroutils
+****** with
+****** cligen
+***** compiler
+***** macroutils
+***** nimble
+****** compiler
+**** hdrawing
+***** hmisc
+****** shell
+****** fusion
+****** jsony
+****** sorta
+****** benchy
+****** unicodedb
+****** macroutils
+****** with
+****** cligen
+**** hasts
+***** hmisc
+****** shell
+****** fusion
+****** jsony
+****** sorta
+****** benchy
+****** unicodedb
+****** macroutils
+****** with
+****** cligen
+**** with
 
 * confutils
+** stew
 
 * hyperscript
 
 * norx
 
 * riff
+** binstreams
 
 * hostname
 
 * awss3
+** sigv4
+*** nimcrypto
+** awssts
+*** sigv4
+**** nimcrypto
 
 * cutelog
 
-* jack
-
 * secp256k1
+** stew
+** nimcrypto
+
+* jack
 
 * tm_client
 
@@ -1208,49 +3328,87 @@
 
 * kashae
 
-* github-yglukhov-wasmrt
-
-* bionim
-
 * nake
 
+* bionim
+** bio_seq
+*** zip
+** phylogeni
+
 * mt
+** argparse
+** pager
+** zip
 
 * markdown
 
 * notmuch
 
 * ansitohtml
+** ansiparse
 
 * reframe
+** edn
 
 * deser
 
 * syllables
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
 
 * fpn
 
 * dropbox_filename_sanitizer
+** nake
+** argument_parser
+*** nake
 
 * nimclutter
+** oldgtk3
 
 * buffer
+** struct
 
 * eachdo
+** argparse
 
 * normalize
+** unicodedb
 
 * noise
 
 * db_presto
 
 * numnim
+** nimpy
+** nimlapack
+** nimblas
 
 * anybar
 
 * genieos
+** x11
 
 * nim_cjson
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
 
 * python
 
@@ -1259,38 +3417,189 @@
 * slugify
 
 * futhark
+** termstyle
+** macroutils
 
 * sparkline
 
 * ogham
 
-* libp2p
-
 * plists
+** darwin
+
+* libp2p
+** metrics
+*** chronos
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** bearssl
+***** unittest2
+** stew
+** nimcrypto
+** bearssl
+*** unittest2
+** chronos
+*** httputils
+**** unittest2
+**** stew
+*** stew
+*** bearssl
+**** unittest2
+** websock
+*** httputils
+**** unittest2
+**** stew
+*** stew
+*** nimcrypto
+*** bearssl
+**** unittest2
+*** asynctest
+*** chronos
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** bearssl
+***** unittest2
+*** chronicles
+**** testutils
+***** unittest2
+**** json_serialization
+***** stew
+***** serialization
+****** unittest2
+****** stew
+****** faststreams
+******* unittest2
+******* stew
+******* chronos
+******** httputils
+********* unittest2
+********* stew
+******** stew
+******** bearssl
+********* unittest2
+******* testutils
+******** unittest2
+*** zlib
+**** stew
+** dnsclient
+** secp256k1
+*** stew
+*** nimcrypto
+** chronicles
+*** testutils
+**** unittest2
+*** json_serialization
+**** stew
+**** serialization
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
 
 * treesitter_bash
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** treesitter
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
 
 * nimqml
 
 * sphincs
 
 * resultsutils
+** result
 
 * dslutils
 
 * siwin
+** vmath
+*** mddoc
+** x11
+** with
+** chroma
 
 * systimes
 
 * webview
 
 * chrono
+** zip
 
 * freetype
 
 * treesitter_javascript
-
-* github-tormund-nester
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** treesitter
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
 
 * wttrin
 
@@ -1301,24 +3610,90 @@
 * tencil
 
 * treesitter_cpp
-
-* geoip
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** treesitter
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
 
 * httpbeast
-
-* lapp
+** asynctools
 
 * nim7z
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
 
 * sprymicro
+** spryvm
+*** ui
+*** python
+*** snappy
+**** unittest2
+**** stew
+**** faststreams
+***** unittest2
+***** stew
+***** chronos
+****** httputils
+******* unittest2
+******* stew
+****** stew
+****** bearssl
+******* unittest2
+***** testutils
+****** unittest2
 
 * geometryutils
+** sdl2
+** opengl
+*** x11
 
 * nwt
 
 * sitmo
 
 * palette
+** nigui
+** cligen
 
 * toxcore
 
@@ -1330,37 +3705,71 @@
 
 * einheit
 
+* turn_based_game
+
 * nsh
 
 * svdpi
-
-* syphus
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * nlopt
 
 * bitvector
 
-* tokarax
+* syphus
 
 * dogapi
 
 * nordnet
+** nmqtt
+*** bcrypt
+*** cligen
+** q
 
-* tome
+* tokarax
+** cligen
 
 * fab
 
+* snappy
+** unittest2
+** stew
+** faststreams
+*** unittest2
+*** stew
+*** chronos
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** bearssl
+***** unittest2
+*** testutils
+**** unittest2
+
 * nesm
 
-* snappy
+* tome
+** untar
+** zip
 
-* turn_based_game
+* progetto
+** simplepng
+*** nimpng
 
 * vidhdr
 
 * jsutils
 
 * localize
+** fusion
 
 * nimkov
 
@@ -1368,17 +3777,26 @@
 
 * ed25519
 
-* fushin
+* balls
 
-* github-disruptek-assume
+* fushin
+** nimquery
+** cligen
 
 * stashtable
 
 * colorize
 
 * p4ztag_to_json
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
 
 * suber
+** stashtable
 
 * ludens
 
@@ -1391,96 +3809,217 @@
 * ndb
 
 * dnd
+** gintro
 
 * nmark
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
 
-* github-status-im-news
+* nimcrypto
 
 * github-disruptek-testes
 
-* htmltovdom
+* github-status-im-news
 
-* nimcrypto
+* htmltovdom
+** karax
+*** dotenv
+*** ws
 
 * gsl
 
 * sonic
 
 * jsonschema
+** ast_pattern_matching
 
 * denim_ui_cairo
+** denim_ui
+*** macroutils
+*** itertools
+*** rx_nim
+** sdl2
+** cairo
 
 * adb
 
 * keystone
 
 * protobuf
+** combparser
 
 * opensimplexnoise
 
 * nimhdf5
+** arraymancer
+*** nimlapack
+*** nimblas
+*** untar
+*** stb_image
+*** nimcuda
+*** nimcl
+**** opencl
+*** clblast
+**** opencl
+*** zip
 
 * playground
+** jester
+*** asynctools
+*** httpbeast
+**** asynctools
 
 * svgo
+** cligen
 
 * locale
 
 * biscuits
 
 * arraymancer
+** nimlapack
+** nimblas
+** untar
+** stb_image
+** nimcuda
+** nimcl
+*** opencl
+** clblast
+*** opencl
+** zip
 
 * kview
+** karax
+*** dotenv
+*** ws
 
 * list_comprehension
 
-* rodcli
-
 * zip
+
+* rodcli
 
 * z3nim
 
 * torim
 
 * layonara_nwn
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+** glob
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+** neverwinter
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
 
 * nimbass
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * testutils
+** unittest2
 
 * zfcore
+** stdext
+** zfblast
+*** uri3
+*** sha1
+** uri3
+** zip
 
 * ternary_tree
 
 * witai
 
 * pine
+** markdown
+** rainbow
 
 * autotyper
+** cligen
 
 * canonicaljson
 
 * nregex
+** unicodeplus
+*** unicodedb
+*** segmentation
+**** unicodedb
+** unicodedb
 
 * nimsnappyc
 
+* libtcod
+** sdl2_nim
+*** winim
+*** x11
+
 * wchart
+** wnim
+*** winim
+*** npeg
+*** memlib
+**** winim
+**** minhook
 
 * criterion
 
 * httputils
+** unittest2
+** stew
 
 * lastfm
+
+* simpleparseopt
 
 * jalali_nim
 
 * mentat
+** science
 
 * nimp
 
 * sphinx
-
-* io-gles
 
 * sharedmempool
 
@@ -1495,6 +4034,8 @@
 * riimut
 
 * tim
+** watchout
+** bson
 
 * libsodium
 
@@ -1503,6 +4044,16 @@
 * monerorpc
 
 * textformats
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+** nimpy
+** yaml
+** msgpack4nim
+** cligen
 
 * anycase
 
@@ -1511,10 +4062,58 @@
 * tcl
 
 * kmod
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * nimga
 
 * ssz_serialization
+** unittest2
+** stew
+** nimcrypto
+** stint
+*** stew
+** serialization
+*** unittest2
+*** stew
+*** faststreams
+**** unittest2
+**** stew
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+***** stew
+***** bearssl
+****** unittest2
+**** testutils
+***** unittest2
+** json_serialization
+*** stew
+*** serialization
+**** unittest2
+**** stew
+**** faststreams
+***** unittest2
+***** stew
+***** chronos
+****** httputils
+******* unittest2
+******* stew
+****** stew
+****** bearssl
+******* unittest2
+***** testutils
+****** unittest2
+** blscurve
+*** stew
+*** nimcrypto
 
 * loopfusion
 
@@ -1523,6 +4122,8 @@
 * blake2
 
 * packets
+** packedjson
+** crc32
 
 * eastasianwidth
 
@@ -1533,8 +4134,11 @@
 * react
 
 * wings
+** stones
 
 * binaryheap
+
+* comandeer
 
 * ws
 
@@ -1543,36 +4147,92 @@
 * nuuid
 
 * networkutils
+** ptr_math
 
 * meta
 
 * mpwc
+** masterpassword
+*** hmac
+**** nimsha2
+**** nimcrypto
+**** sha1
+*** nimcrypto
+** cligen
 
 * libevdev
 
 * xxhash
 
 * nimterop
-
-* gnu
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+** cligen
 
 * tiny_sqlite
+
+* gnu
+** godot
+*** compiler
+** cligen
 
 * taglib
 
 * pkginfo
+** semver
 
 * colorsys
 
-* pwnedpass
+* gittyup
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+** result
+** nimgit2
+*** nimterop
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** cligen
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * mpeg
 
 * notetxt
 
-* jesterjson
+* pwnedpass
+** termui
+*** classes
+*** elvis
+** puppy
+*** urlly
+*** zippy
+*** winim
+*** libcurl
 
-* nimbitarray
+* jesterjson
+** jesterwithplugins
+*** httpbeast
+**** asynctools
+
+* switch-build
 
 * simpleflake
 
@@ -1581,48 +4241,85 @@
 * seriesdetiempoar
 
 * openapi
+** npeg
+** foreach
 
 * aporia
+** gtk2
+*** cairo
+** dialogs
+*** gtk2
+**** cairo
 
 * denim_ui
-
-* github-zacharycarter-nuklear
-
-* objc_runtime
-
-* github-disruptek-balls
+** macroutils
+** itertools
+** rx_nim
 
 * origin
 
-* smnar
+* objc_runtime
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
 
-* euclidean
+* github-disruptek-balls
+
+* smnar
+** zip
 
 * steam
 
+* euclidean
+
 * awesome_rmdir
+** nake
+** argument_parser
+*** nake
 
 * nimassets
+** zstd
 
 * pythonize
+** python
 
 * pg_util
-
-* algebra
 
 * geminim
 
 * netty
+** flatty
+** snappy
+*** unittest2
+*** stew
+*** faststreams
+**** unittest2
+**** stew
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+***** stew
+***** bearssl
+****** unittest2
+**** testutils
+***** unittest2
 
 * overpass
 
-* github-iffy-asynctools
-
 * telebot
+** asyncevents
+** sam
+*** jsmn
+** tempfile
 
 * arrayfirenim
 
 * nimboost
+** patty
 
 * beanstalkd
 
@@ -1635,40 +4332,156 @@
 * millie
 
 * nimbigwig
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
 
 * upraises
 
 * staticglfw
+** opengl
+*** x11
 
 * once
 
-* gamelight
-
 * nigui
 
-* xplm-nim
+* gamelight
+** typography
+*** print
+*** flippy
+**** print
+**** mddoc
+**** nimpng
+**** stb_image
+**** vmath
+***** mddoc
+**** bumpy
+***** vmath
+****** mddoc
+**** supersnappy
+**** chroma
+**** snappy
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
+*** pixie
+**** zippy
+**** flatty
+**** nimsimd
+**** vmath
+***** mddoc
+**** bumpy
+***** vmath
+****** mddoc
+**** chroma
+*** flatty
+*** stb_image
+*** vmath
+**** mddoc
+*** bumpy
+**** vmath
+***** mddoc
+*** chroma
+** flippy
+*** print
+*** mddoc
+*** nimpng
+*** stb_image
+*** vmath
+**** mddoc
+*** bumpy
+**** vmath
+***** mddoc
+*** supersnappy
+*** chroma
+*** snappy
+**** unittest2
+**** stew
+**** faststreams
+***** unittest2
+***** stew
+***** chronos
+****** httputils
+******* unittest2
+******* stew
+****** stew
+****** bearssl
+******* unittest2
+***** testutils
+****** unittest2
+** sdl2
+** chroma
 
 * finder
+** zippy
+** zip
+
+* nitter
 
 * jupyternim
-
-* github-jyapayne-nim-glfw
+** nimsha2
+** hmac
+*** nimsha2
+*** nimcrypto
+*** sha1
+** nimpng
+** python3@
+** zmq
+** python3
 
 * zstd
 
 * xlsx
+** zip
+
+* useragent
 
 * frag
+** sdl2
+** stb_image
+** strfmt
+** x11
+** sound
+*** jsbind
+*** jnim
+**** nimfp
+***** classy
+***** nimboost
+****** patty
 
 * protocoled
 
 * onedrive
+** packedjson
 
 * nre
+** optional_t
 
 * sqlbuilder
-
-* nimrtlsdr
 
 * array2d
 
@@ -1681,34 +4494,72 @@
 * tecs
 
 * scorper
+** urlly
+** jsony
+** zippy
+** stew
+** result
+** asynctest
+** chronos
+*** httputils
+**** unittest2
+**** stew
+*** stew
+*** bearssl
+**** unittest2
+** npeg
 
 * coverage
-
-* latexdsl
+** nake
 
 * sound
+** jsbind
+** jnim
+*** nimfp
+**** classy
+**** nimboost
+***** patty
+
+* latexdsl
+** datamancer
+*** arraymancer
+**** nimlapack
+**** nimblas
+**** untar
+**** stb_image
+**** nimcuda
+**** nimcl
+***** opencl
+**** clblast
+***** opencl
+**** zip
 
 * parsetoml
-
-* dik
 
 * imlib2
 
 * ormin
+** websocket
 
 * randgen
 
 * midnight_dynamite
+** nake
+** argument_parser
+*** nake
 
 * nodesnim
+** compiler
 
-* skbintext
+* discord
+** zip
+** websocket
 
 * subhook
 
-* uri2
-
 * semver
+
+* uri2
 
 * lolcat
 
@@ -1716,51 +4567,85 @@
 
 * pager
 
-* nim-libgd
+* sdl2_nim
+** winim
+** x11
 
 * pythonpathlib
 
-* sdl2_nim
+* nim_seq
 
 * config
-
-* io-usb
+** timezones
+** nre
+*** optional_t
 
 * vla
 
 * datetime_parse
+** timezones
 
 * nimzend
 
 * constructor
 
-* fftw3
-
 * ranges
 
+* fftw3
+** zippy
+** arraymancer
+*** nimlapack
+*** nimblas
+*** untar
+*** stb_image
+*** nimcuda
+*** nimcl
+**** opencl
+*** clblast
+**** opencl
+*** zip
+** weave
+*** synthesis
+
 * getmac
+** optionsutils
 
 * github
+** npeg
 
 * robotparser
 
 * nimquery
 
 * aws_sdk
+** stringinterpolation
+** sph
 
 * tsundoku
+** jester
+*** asynctools
+*** httpbeast
+**** asynctools
 
 * wyhash
 
 * pari
 
 * dbschema
+** nimboost
+*** patty
+** nimfp
+*** classy
+*** nimboost
+**** patty
 
 * icon
+** nimpng
+** struct
 
 * qwertycd
-
-* redneck_translator
+** illwill
+** parsetoml
 
 * serial
 
@@ -1769,12 +4654,24 @@
 * shorturl
 
 * cpuwhat
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * qrcode
 
 * clblast
+** opencl
 
 * leopard
+** unittest2
+** stew
+** upraises
 
 * currying
 
@@ -1783,38 +4680,130 @@
 * opencv
 
 * norm
+** nimibook
+*** jsony
+*** nimib
+**** markdown
+**** mustache
+**** toml_serialization
+***** stew
+***** serialization
+****** unittest2
+****** stew
+****** faststreams
+******* unittest2
+******* stew
+******* chronos
+******** httputils
+********* unittest2
+********* stew
+******** stew
+******** bearssl
+********* unittest2
+******* testutils
+******** unittest2
+**** tempfile
+** ndb
+** chronicles
+*** testutils
+**** unittest2
+*** json_serialization
+**** stew
+**** serialization
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
 
 * libharu
 
 * osureplay
 
 * plz
+** requirementstxt
+** libarchibi
+** nimarchive
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
+*** nimterop
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** cligen
 
 * illwill_unsafe
 
 * drng
+** cpuwhat
+*** nimterop
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** cligen
 
 * nimcdl
+** cascade
 
 * ulid
+** random
 
-* mouse
+* neo
+** nimlapack
+** nimblas
+** nimcuda
 
 * cal
 
-* neo
+* http://github.com/bung87/static_server
 
 * fmod
 
 * with
 
-* github-planety-cookies
+* protobufserialization
+
+* mouse
+
+* nimassimp
 
 * nimpdf
-
-* github-enthus1ast-nimcommandparser
+** nimsha2
+** nimpng
+** stb_image
+** nimaes
+** nimbmp
 
 * httpauth
+** libsodium
 
 * shell
 
@@ -1823,18 +4812,52 @@
 * print
 
 * flippy
+** print
+** mddoc
+** nimpng
+** stb_image
+** vmath
+*** mddoc
+** bumpy
+*** vmath
+**** mddoc
+** supersnappy
+** chroma
+** snappy
+*** unittest2
+*** stew
+*** faststreams
+**** unittest2
+**** stew
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+***** stew
+***** bearssl
+****** unittest2
+**** testutils
+***** unittest2
+
+* clurp
+** cligen
 
 * jsony
 
+* isprivateip
+
 * ptest
+
+* nimcat
 
 * spwd
 
-* nimcat
+* easygl
 
 * nimsnappy
 
 * kslog
+** cligen
 
 * boneio
 
@@ -1845,24 +4868,123 @@
 * htmlunescape
 
 * masterpassword
+** hmac
+*** nimsha2
+*** nimcrypto
+*** sha1
+** nimcrypto
 
 * wepoll
 
 * recaptcha
 
 * faststreams
+** unittest2
+** stew
+** chronos
+*** httputils
+**** unittest2
+**** stew
+*** stew
+*** bearssl
+**** unittest2
+** testutils
+*** unittest2
 
 * sumtypes
+
+* mcdb
 
 * blarg
 
 * nimtraits
+** hmisc
+*** shell
+*** fusion
+*** jsony
+*** sorta
+*** benchy
+*** unicodedb
+*** macroutils
+*** with
+*** cligen
+** hnimast
+*** hmisc
+**** shell
+**** fusion
+**** jsony
+**** sorta
+**** benchy
+**** unicodedb
+**** macroutils
+**** with
+**** cligen
+*** compiler
+*** macroutils
+*** nimble
+**** compiler
+** hpprint
+*** shell
+*** hmisc
+**** shell
+**** fusion
+**** jsony
+**** sorta
+**** benchy
+**** unicodedb
+**** macroutils
+**** with
+**** cligen
+*** hnimast
+**** hmisc
+***** shell
+***** fusion
+***** jsony
+***** sorta
+***** benchy
+***** unicodedb
+***** macroutils
+***** with
+***** cligen
+**** compiler
+**** macroutils
+**** nimble
+***** compiler
+*** hdrawing
+**** hmisc
+***** shell
+***** fusion
+***** jsony
+***** sorta
+***** benchy
+***** unicodedb
+***** macroutils
+***** with
+***** cligen
+*** hasts
+**** hmisc
+***** shell
+***** fusion
+***** jsony
+***** sorta
+***** benchy
+***** unicodedb
+***** macroutils
+***** with
+***** cligen
+*** with
 
 * hottie
+** ptrace
+** cligen
 
 * taskman
+** test
 
 * nage
+** yaml
+** noise
+** result
 
 * nimplehttpserver
 
@@ -1872,9 +4994,37 @@
 
 * strfmt
 
-* sweetanitify
-
 * nexus
+** jester
+*** asynctools
+*** httpbeast
+**** asynctools
+** yaml
+** quickjwt
+** karax
+*** dotenv
+*** ws
+** argon2
+** chronicles
+*** testutils
+**** unittest2
+*** json_serialization
+**** stew
+**** serialization
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
 
 * ncurses
 
@@ -1883,20 +5033,95 @@
 * badgemaker
 
 * clr
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+** cligen
+** chroma
 
 * frida
 
 * dpdk
 
 * ducominer
+** nimcrypto
+** hashlib
+*** nimcrypto
 
-* nimx
+* websock
+** httputils
+*** unittest2
+*** stew
+** stew
+** nimcrypto
+** bearssl
+*** unittest2
+** asynctest
+** chronos
+*** httputils
+**** unittest2
+**** stew
+*** stew
+*** bearssl
+**** unittest2
+** chronicles
+*** testutils
+**** unittest2
+*** json_serialization
+**** stew
+**** serialization
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
+** zlib
+*** stew
 
 * std_shims
 
-* unimcli
+* nimx
+** nake
+** os_files
+*** oldgtk3
+*** jsbind
+** rect_packer
+** sdl2
+** plists
+*** darwin
+** opengl
+*** x11
+** kiwi
+** nimsl
+*** variant
+** nimwebp
+*** nimpng
+** closure_compiler
+** variant
+** jsbind
+** jnim
+*** nimfp
+**** classy
+**** nimboost
+***** patty
 
-* websock
+* unimcli
+** nimble
+*** compiler
+** cligen
 
 * mcresponse
 
@@ -1907,40 +5132,171 @@
 * nimbler
 
 * github_release
+** cligen
 
 * nico
+** sdl2_nim
+*** winim
+*** x11
+** zippy
+** nimpng
+** gifenc
 
 * golden
+** terminaltables
+** nimgit2
+*** nimterop
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** cligen
+** nimetry
+** lmdb
+** http://github.com/genotrance/nimgit2.git
+** bump
+*** git://github.com/disruptek/cutelog.git
+*** cligen
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
+** msgpack4nim
+** cligen
+** foreach
 
 * falas
 
 * gamelib
+** sdl2
 
 * dnsprotec
 
 * strenc
 
 * hparse
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+** hmisc
+*** shell
+*** fusion
+*** jsony
+*** sorta
+*** benchy
+*** unicodedb
+*** macroutils
+*** with
+*** cligen
+** hnimast
+*** hmisc
+**** shell
+**** fusion
+**** jsony
+**** sorta
+**** benchy
+**** unicodedb
+**** macroutils
+**** with
+**** cligen
+*** compiler
+*** macroutils
+*** nimble
+**** compiler
+** hasts
+*** hmisc
+**** shell
+**** fusion
+**** jsony
+**** sorta
+**** benchy
+**** unicodedb
+**** macroutils
+**** with
+**** cligen
+** hpprint
+*** shell
+*** hmisc
+**** shell
+**** fusion
+**** jsony
+**** sorta
+**** benchy
+**** unicodedb
+**** macroutils
+**** with
+**** cligen
+*** hnimast
+**** hmisc
+***** shell
+***** fusion
+***** jsony
+***** sorta
+***** benchy
+***** unicodedb
+***** macroutils
+***** with
+***** cligen
+**** compiler
+**** macroutils
+**** nimble
+***** compiler
+*** hdrawing
+**** hmisc
+***** shell
+***** fusion
+***** jsony
+***** sorta
+***** benchy
+***** unicodedb
+***** macroutils
+***** with
+***** cligen
+*** hasts
+**** hmisc
+***** shell
+***** fusion
+***** jsony
+***** sorta
+***** benchy
+***** unicodedb
+***** macroutils
+***** with
+***** cligen
+*** with
 
 * variant
 
 * nimble
+** compiler
 
 * templates
 
 * iup
 
 * run_exe
+** nimpy
 
 * libsvm_legacy
 
 * glossolalia
+** fowltek
 
 * argparse
 
-* niledb
-
 * termstyle
+
+* niledb
+** serializetools
 
 * urlly
 
@@ -1951,22 +5307,49 @@
 * chipmunk7
 
 * nauthy
+** nimsha2
 
 * signals
 
 * native_dialogs
+** gtk2
+*** cairo
+** oldwinapi
 
 * colorcol
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
 
 * zfplugs
+** zfdbms
+*** stdext
+** moustachu
+*** commandeer
+** zfcore
+*** stdext
+*** zfblast
+**** uri3
+**** sha1
+*** uri3
+*** zip
 
 * pnm
 
 * stew
 
-* mpfit
+* grok
 
 * matext
+** cligen
+** honeycomb
+
+* mpfit
+
+* xkb
 
 * json_builder
 
@@ -1975,12 +5358,73 @@
 * newfix
 
 * treesitter_haskell
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** treesitter
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
 
 * treesitter_ruby
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** treesitter
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
 
 * nat_traversal
-
-* yukiko
+** stew
 
 * nobject
 
@@ -1995,10 +5439,28 @@
 * ffmpeg
 
 * discord_rpc
+** uuids
+*** isaac
+** packedjson
 
 * pg
 
 * windy
+** urlly
+** pixie
+*** zippy
+*** flatty
+*** nimsimd
+*** vmath
+**** mddoc
+*** bumpy
+**** vmath
+***** mddoc
+*** chroma
+** zippy
+** opengl
+*** x11
+** ws
 
 * lmdb
 
@@ -2013,46 +5475,166 @@
 * bisect
 
 * mongrel2
+** tnetstring
+** zmq
 
 * toml_serialization
+** stew
+** serialization
+*** unittest2
+*** stew
+*** faststreams
+**** unittest2
+**** stew
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+***** stew
+***** bearssl
+****** unittest2
+**** testutils
+***** unittest2
 
 * metar
-
-* socks
+** nimpy
 
 * github-status-im-nim-taskpools
 
 * nimrdkafka
 
 * gcplat
+** openapi
+*** npeg
+*** foreach
+** npeg
 
 * nim_midi
 
 * pcap
 
+* woocommerce
+
 * winres
 
 * nimodpi
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * nimage
 
 * backoff
 
+* sigv4
+** nimcrypto
+
 * iridium
 
-* sigv4
-
 * wox
+** unicodeplus
+*** unicodedb
+*** segmentation
+**** unicodedb
 
 * tnetstring
 
 * odbcn
 
 * nimtrs
+** hmisc
+*** shell
+*** fusion
+*** jsony
+*** sorta
+*** benchy
+*** unicodedb
+*** macroutils
+*** with
+*** cligen
+** hnimast
+*** hmisc
+**** shell
+**** fusion
+**** jsony
+**** sorta
+**** benchy
+**** unicodedb
+**** macroutils
+**** with
+**** cligen
+*** compiler
+*** macroutils
+*** nimble
+**** compiler
+** hdrawing
+*** hmisc
+**** shell
+**** fusion
+**** jsony
+**** sorta
+**** benchy
+**** unicodedb
+**** macroutils
+**** with
+**** cligen
+** hpprint
+*** shell
+*** hmisc
+**** shell
+**** fusion
+**** jsony
+**** sorta
+**** benchy
+**** unicodedb
+**** macroutils
+**** with
+**** cligen
+*** hnimast
+**** hmisc
+***** shell
+***** fusion
+***** jsony
+***** sorta
+***** benchy
+***** unicodedb
+***** macroutils
+***** with
+***** cligen
+**** compiler
+**** macroutils
+**** nimble
+***** compiler
+*** hdrawing
+**** hmisc
+***** shell
+***** fusion
+***** jsony
+***** sorta
+***** benchy
+***** unicodedb
+***** macroutils
+***** with
+***** cligen
+*** hasts
+**** hmisc
+***** shell
+***** fusion
+***** jsony
+***** sorta
+***** benchy
+***** unicodedb
+***** macroutils
+***** with
+***** cligen
+*** with
 
 * polymorph
-
-* github-vindaar-seqmath
 
 * arbitrary
 
@@ -2061,6 +5643,37 @@
 * open_elevation
 
 * treesitter_ocaml
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** treesitter
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
 
 * rainbow
 
@@ -2068,9 +5681,9 @@
 
 * ris
 
-* murmur3
-
 * nimpng
+
+* murmur3
 
 * extmath
 
@@ -2085,6 +5698,10 @@
 * fnmatch
 
 * slappy
+** openal
+** vmath
+*** mddoc
+** supersnappy
 
 * cmixer
 
@@ -2093,6 +5710,8 @@
 * fwrite
 
 * gtkgenui
+** gtk2
+*** cairo
 
 * formulas
 
@@ -2100,49 +5719,134 @@
 
 * wave
 
-* bn
-
 * uibuilder
+** ui
+** xml
+** q
 
 * forestdb
 
 * nimmm
+** lscolors
+** noise
+** nimbox
 
 * artemis
 
+* hlibgit2
+
 * notifishower
+** termstyle
+** kiwi
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+** npeg
+** imlib2
 
 * parasound
 
 * statsd_client
 
 * nimzbar
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
 
 * timerpool
 
+* cucumber_nim
+** comandeer
+** nre
+*** optional_t
+
 * timezones
 
-* github-disruptek-cps
+* astpatternmatching
 
 * hotdoc
+** karax
+*** dotenv
+*** ws
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+
+* nim_glfw
 
 * boxy
+** pixie
+*** zippy
+*** flatty
+*** nimsimd
+*** vmath
+**** mddoc
+*** bumpy
+**** vmath
+***** mddoc
+*** chroma
+** vmath
+*** mddoc
+** shady
+*** pixie
+**** zippy
+**** flatty
+**** nimsimd
+**** vmath
+***** mddoc
+**** bumpy
+***** vmath
+****** mddoc
+**** chroma
+*** vmath
+**** mddoc
+** opengl
+*** x11
+** bitty
 
 * cdecl
+** macroutils
 
 * expander
+** cligen
 
 * keyring
+** dbus
+*** c2nim
 
 * noaa
 
+* puppy
+** urlly
+** zippy
+** winim
+** libcurl
+
+* asyncdispatch2
+
 * lapper
 
-* puppy
-
 * edlib
-
-* github-enthus1ast-isprivateip
 
 * db
 
@@ -2157,6 +5861,7 @@
 * limiter
 
 * bio_seq
+** zip
 
 * shiori
 
@@ -2166,23 +5871,59 @@
 
 * nimline
 
+* wasmrt
+
 * nimbleimgui
+** nimgl
 
 * decisiontree
+** sequtils2
 
 * bignum
+** gmp
 
 * rconv
+** argparse
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+** coco
+*** glob
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+*** cligen
+** glob
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+
+* bioseq
+** zip
 
 * bson
 
 * denim_ui_canvas
+** denim_ui
+*** macroutils
+*** itertools
+*** rx_nim
 
 * validator
 
 * conio
 
 * vmath
+** mddoc
 
 * openstreetmap
 
@@ -2193,36 +5934,124 @@
 * lazy
 
 * hexclock
+** sdl2
 
 * niml
+** fusion
 
 * xcb
 
 * hasts
+** hmisc
+*** shell
+*** fusion
+*** jsony
+*** sorta
+*** benchy
+*** unicodedb
+*** macroutils
+*** with
+*** cligen
 
 * inim
+** nimsha2
+** hmac
+*** nimsha2
+*** nimcrypto
+*** sha1
+** noise
+** zmq
+** python3
+** cligen
 
 * news
 
 * blurhash
+** imageman
+*** nimpng
+*** stb_image
 
 * minmaxheap
 
 * govee
 
 * dialogs
+** gtk2
+*** cairo
 
 * ikeahomesmart
+** coap
 
 * asyncevents
 
 * colorizeecho
 
 * eth
+** metrics
+*** chronos
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** bearssl
+***** unittest2
+** unittest2
+** stew
+** nimcrypto
+** nat_traversal
+*** stew
+** chronos
+*** httputils
+**** unittest2
+**** stew
+*** stew
+*** bearssl
+**** unittest2
+** stint
+*** stew
+** rocksdb
+*** stew
+*** tempfile
+** confutils
+*** stew
+** testutils
+*** unittest2
+** secp256k1
+*** stew
+*** nimcrypto
+** sqlite3_abi
+** chronicles
+*** testutils
+**** unittest2
+*** json_serialization
+**** stew
+**** serialization
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
 
 * spacy
+** vmath
+*** mddoc
+** bumpy
+*** vmath
+**** mddoc
 
 * astdot
+** nimgraphviz
+** clapfn
+** strings
 
 * torm
 
@@ -2235,20 +6064,33 @@
 * redismodules
 
 * jeknil
+** markdown
 
 * nimfinlib
 
 * epub
+** nim>=
 
 * webgl
 
 * lc
+** cligen
 
 * mddoc
 
 * github-pmunch-libclang
 
 * steganography
+** pixie
+*** zippy
+*** flatty
+*** nimsimd
+*** vmath
+**** mddoc
+*** bumpy
+**** vmath
+***** mddoc
+*** chroma
 
 * clang
 
@@ -2258,31 +6100,360 @@
 
 * classes
 
-* github-zacharycarter-bgfxdotnim
+* rodster
+** xam
 
 * chonker
 
 * libu2f
 
-* github-solitudesf-x11
-
 * gmp
+
+* spinner
+** gradient
+** fidget
+*** typography
+**** print
+**** flippy
+***** print
+***** mddoc
+***** nimpng
+***** stb_image
+***** vmath
+****** mddoc
+***** bumpy
+****** vmath
+******* mddoc
+***** supersnappy
+***** chroma
+***** snappy
+****** unittest2
+****** stew
+****** faststreams
+******* unittest2
+******* stew
+******* chronos
+******** httputils
+********* unittest2
+********* stew
+******** stew
+******** bearssl
+********* unittest2
+******* testutils
+******** unittest2
+**** pixie
+***** zippy
+***** flatty
+***** nimsimd
+***** vmath
+****** mddoc
+***** bumpy
+****** vmath
+******* mddoc
+***** chroma
+**** flatty
+**** stb_image
+**** vmath
+***** mddoc
+**** bumpy
+***** vmath
+****** mddoc
+**** chroma
+*** flippy
+**** print
+**** mddoc
+**** nimpng
+**** stb_image
+**** vmath
+***** mddoc
+**** bumpy
+***** vmath
+****** mddoc
+**** supersnappy
+**** chroma
+**** snappy
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
+*** print
+*** pixie
+**** zippy
+**** flatty
+**** nimsimd
+**** vmath
+***** mddoc
+**** bumpy
+***** vmath
+****** mddoc
+**** chroma
+*** vmath
+**** mddoc
+*** staticglfw
+**** opengl
+***** x11
+*** opengl
+**** x11
+*** bumpy
+**** vmath
+***** mddoc
+*** supersnappy
+*** cligen
+*** chroma
+*** snappy
+**** unittest2
+**** stew
+**** faststreams
+***** unittest2
+***** stew
+***** chronos
+****** httputils
+******* unittest2
+******* stew
+****** stew
+****** bearssl
+******* unittest2
+***** testutils
+****** unittest2
+*** html5_canvas
 
 * nimcoon
 
 * db_wrapper
 
-* rodster
-
-* skyhash
+* ssh2
+** libssh2
 
 * cmark
 
 * libp2pdht
+** metrics
+*** chronos
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** bearssl
+***** unittest2
+** stew
+** nimcrypto
+** bearssl
+*** unittest2
+** asynctest
+** libp2p
+*** metrics
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+***** stew
+***** bearssl
+****** unittest2
+*** stew
+*** nimcrypto
+*** bearssl
+**** unittest2
+*** chronos
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** bearssl
+***** unittest2
+*** websock
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** nimcrypto
+**** bearssl
+***** unittest2
+**** asynctest
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+***** stew
+***** bearssl
+****** unittest2
+**** chronicles
+***** testutils
+****** unittest2
+***** json_serialization
+****** stew
+****** serialization
+******* unittest2
+******* stew
+******* faststreams
+******** unittest2
+******** stew
+******** chronos
+********* httputils
+********** unittest2
+********** stew
+********* stew
+********* bearssl
+********** unittest2
+******** testutils
+********* unittest2
+**** zlib
+***** stew
+*** dnsclient
+*** secp256k1
+**** stew
+**** nimcrypto
+*** chronicles
+**** testutils
+***** unittest2
+**** json_serialization
+***** stew
+***** serialization
+****** unittest2
+****** stew
+****** faststreams
+******* unittest2
+******* stew
+******* chronos
+******** httputils
+********* unittest2
+********* stew
+******** stew
+******** bearssl
+********* unittest2
+******* testutils
+******** unittest2
+** chronos
+*** httputils
+**** unittest2
+**** stew
+*** stew
+*** bearssl
+**** unittest2
+** stint
+*** stew
+** protobufserialization
+** eth
+*** metrics
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+***** stew
+***** bearssl
+****** unittest2
+*** unittest2
+*** stew
+*** nimcrypto
+*** nat_traversal
+**** stew
+*** chronos
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** bearssl
+***** unittest2
+*** stint
+**** stew
+*** rocksdb
+**** stew
+**** tempfile
+*** confutils
+**** stew
+*** testutils
+**** unittest2
+*** secp256k1
+**** stew
+**** nimcrypto
+*** sqlite3_abi
+*** chronicles
+**** testutils
+***** unittest2
+**** json_serialization
+***** stew
+***** serialization
+****** unittest2
+****** stew
+****** faststreams
+******* unittest2
+******* stew
+******* chronos
+******** httputils
+********* unittest2
+********* stew
+******** stew
+******** bearssl
+********* unittest2
+******* testutils
+******** unittest2
+** secp256k1
+*** stew
+*** nimcrypto
+** chronicles
+*** testutils
+**** unittest2
+*** json_serialization
+**** stew
+**** serialization
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
 
 * sfml
 
-* spinner
+* treesitter_rust
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** treesitter
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
 
 * ansiutils
 
@@ -2294,17 +6465,17 @@
 
 * owo
 
-* ssh2
-
 * bigints
 
 * polymers
+** polymorph
 
 * bearssl
+** unittest2
 
 * scnim
 
-* treesitter_rust
+* uriiy
 
 * myo
 
@@ -2313,6 +6484,10 @@
 * xpm
 
 * coinbase_pro
+** uuids
+*** isaac
+** decimal
+** ws
 
 * timespec_get
 
@@ -2325,42 +6500,66 @@
 * notifications
 
 * nesper
+** stew
+** msgpack4nim
 
 * kdialog
 
 * kdb
+** terminaltables
+** uuids
+*** isaac
 
 * kombinator
+** suru
+** parsetoml
+** cligen
 
 * redisclient
+** redisparser
 
 * swayipc
+** cligen
+** nesm
+
+* stbimage
+
+* nvg
 
 * nicoru
-
-* chipmunk6
+** seccomp
 
 * nimnoise
 
 * nancy
+** ansiparse
 
 * cucumber
+** commandeer
+** comandeer
+** nre
+*** optional_t
+** tempfile
 
 * jswebsockets
 
-* github-solitudesf-nim-dbus
-
 * py2nim
+** nimscripter
+** compiler
 
 * delaunay
+
+* rbtree
+** optional_t
 
 * png
 
 * rabbit
-
-* rbtree
+** chroma
 
 * simple_graph
+
+* eris_tkrzw
 
 * libffi
 
@@ -2371,16 +6570,63 @@
 * q
 
 * protobuf_serialization
+** stew
+** faststreams
+*** unittest2
+*** stew
+*** chronos
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** bearssl
+***** unittest2
+*** testutils
+**** unittest2
+** serialization
+*** unittest2
+*** stew
+*** faststreams
+**** unittest2
+**** stew
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+***** stew
+***** bearssl
+****** unittest2
+**** testutils
+***** unittest2
+** combparser
 
 * periapsisengine
+** sdl2_nim
+*** winim
+*** x11
 
 * deser_json
+** deser
+** faststreams
+*** unittest2
+*** stew
+*** chronos
+**** httputils
+***** unittest2
+***** stew
+**** stew
+**** bearssl
+***** unittest2
+*** testutils
+**** unittest2
 
 * libssh
 
 * hastysite
+** zippy
 
 * dali
+** patty
 
 * variantsugar
 
@@ -2391,20 +6637,34 @@
 * chain
 
 * omnilog
+** values
+
+* netpipe
 
 * polypbren
 
 * til
+** argparse
+** colorize
 
 * guildenstern
+** weave
+*** synthesis
 
 * godot
+** compiler
 
 * ratel
+** nimscripter
+** compiler
+** cligen
 
 * special_functions
 
 * nimaterial
+** palette
+*** nigui
+*** cligen
 
 * soundex
 
@@ -2415,6 +6675,9 @@
 * nimlapack
 
 * hmac
+** nimsha2
+** nimcrypto
+** sha1
 
 * srv
 
@@ -2423,6 +6686,7 @@
 * nim_miniz
 
 * bluesoftcosmos
+** scraper
 
 * listsv
 
@@ -2431,54 +6695,118 @@
 * opusenc
 
 * rena
+** cligen
 
 * ginger
+** shell
+** cairo
+** chroma
 
 * astronimy
 
-* huffman
-
 * nimgen
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+** c2nim
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
 
 * yaml
 
+* huffman
+
 * syslog
+** nake
 
 * nimblas
 
 * sysinfo
 
 * pdcurses
-
-* nimbioseq
-
-* nimhttpd
-
-* github-disruptek-rest
+** oldwinapi
 
 * paramidi
 
+* nimbioseq
+** zip
+
+* nimhttpd
+
 * treesitter_java
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** treesitter
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
 
 * nimqbittorrent
 
 * eventemitter
 
 * nim_tiled
+** zippy
 
 * calendar
 
 * pomtimer
+** progress
+** notify
 
 * lockfreequeues
 
 * memo
 
-* darwin
+* docopt
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
 
 * blackvas_cli
+** jester
+*** asynctools
+*** httpbeast
+**** asynctools
+** cligen
 
-* docopt
+* darwin
 
 * libbacktrace
 
@@ -2489,26 +6817,75 @@
 * xdo
 
 * presto
+** stew
+** chronos
+*** httputils
+**** unittest2
+**** stew
+*** stew
+*** bearssl
+**** unittest2
+** chronicles
+*** testutils
+**** unittest2
+*** json_serialization
+**** stew
+**** serialization
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
 
 * daemonim
 
 * paranim
+** glm
+** nimgl
 
 * nimpb_protoc
 
 * pantry
 
 * wpspin
+** argparse
 
 * gerbil
+** argparse
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+** jester
+*** asynctools
+*** httpbeast
+**** asynctools
+** uuids
+*** isaac
+** markdown
+** mustache
+** nimcrypto
+** cligen
 
 * timeit
 
 * argon2
 
-* nimrcon
-
 * sqlite3_abi
+
+* nimrcon
+** struct
 
 * crap
 
@@ -2516,49 +6893,115 @@
 
 * gifwriter
 
-* github-timotheecour-asynctools
+* libgraph
 
 * dimscmd
+** dimscord
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** zippy
+*** flatty
+*** libsodium
+*** ws
+*** zip
 
 * alut
+** openal
 
 * cassandra
 
 * itertools
 
-* libgraph
+* treesitter
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
 
 * alasgar
+** nake
+** sdl2
+** stbimage
+** jnim
+*** nimfp
+**** classy
+**** nimboost
+***** patty
+** chroma
 
 * nimbmp
 
 * ballena_itcher
 
-* github-haxscramper-hlibssh2
-
-* treesitter
-
 * vmvc
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+** uuids
+*** isaac
 
 * intervalsets
 
 * monit
+** yaml
+** cligen
 
 * primme
 
 * capnp
+** collections
 
 * eth_common
+** byteutils
+** rlp
+*** ranges
+** eth_trie
+*** rlp
+**** ranges
+*** ranges
+*** nimcrypto
+*** rocksdb
+**** stew
+**** tempfile
+** ranges
+** nimcrypto
+** stint
+*** stew
 
 * prettyvec
 
 * static_server
+** finder
+*** zippy
+*** zip
 
 * usigar
 
 * nimpy
 
 * eris
+** base32
+** tkrzw
+** lmdb
+** taps
 
 * asciitype
 
@@ -2573,28 +7016,69 @@
 * nimsuite
 
 * argon2_highlevel
+** random
 
 * eth_keyfile
+** eth_keys
+*** nimcrypto
+*** secp256k1
+**** stew
+**** nimcrypto
+** nimcrypto
 
 * gintro
 
 * nimfmt
+** compiler
 
 * printdebug
 
 * hangover
+** glfw
+** opengl
+*** x11
+** glm
 
 * accuratesums
 
 * illwave
 
+* macrosex
+
 * lq
+** nap
+** parsetoml
 
 * z3
 
 * notification
+** imageman
+*** nimpng
+*** stb_image
+** dbus
+*** c2nim
 
 * nimib
+** markdown
+** mustache
+** toml_serialization
+*** stew
+*** serialization
+**** unittest2
+**** stew
+**** faststreams
+***** unittest2
+***** stew
+***** chronos
+****** httputils
+******* unittest2
+******* stew
+****** stew
+****** bearssl
+******* unittest2
+***** testutils
+****** unittest2
+** tempfile
 
 * sophia
 
@@ -2605,8 +7089,37 @@
 * ffbookmarks
 
 * treesitter_scala
-
-* github-disruptek-ups
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** treesitter
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
 
 * nanomsg
 
@@ -2615,28 +7128,98 @@
 * plugins
 
 * algebraicdatas
+** macroutils
+** optionsutils
+** ast_pattern_matching
 
 * nimgraphql
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * subnet
+** cligen
 
 * treesitter_agda
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** treesitter
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
 
 * nimetry
 
 * cascade
 
 * astar
+** optional_t
+** binaryheap
 
 * maybe
 
 * crowncalc
+** noise
+** sdl2
 
 * flower
 
 * httpx
+** ioselectors
+*** wepoll
+*** timerwheel
 
 * ffpass
+
+* testes
+** bump
+*** git://github.com/disruptek/cutelog.git
+*** cligen
 
 * tagger
 
@@ -2648,6 +7231,8 @@
 
 * exporttosqlite3
 
+* chipmunk
+
 * morepretty
 
 * commandant
@@ -2657,30 +7242,66 @@
 * csvtools
 
 * nimfuzz
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
 
 * dtoa
 
-* github-dom96-zippy
+* word2vec
 
 * cliptomania
 
 * bipbuffer
 
-* word2vec
+* monad
 
 * github-gabbhack-anycase_fork
 
 * lda
 
 * unicodeplus
-
-* finals
+** unicodedb
+** segmentation
+*** unicodedb
 
 * pixie
+** zippy
+** flatty
+** nimsimd
+** vmath
+*** mddoc
+** bumpy
+*** vmath
+**** mddoc
+** chroma
+
+* finals
 
 * mongo
 
 * genoiser
+** hts
+** kexpr
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
 
 * fletcher
 
@@ -2691,30 +7312,68 @@
 * nimlist
 
 * reactor
+** collections
 
 * flatty
 
 * holst
 
 * packedargs
+** macroplus
 
 * osinfo
 
 * options
 
 * binio
+** struct
 
-* pvim
-
-* delight
-
-* perlin
-
-* nimtesseract
+* cookies
 
 * requirementstxt
 
+* delight
+** glm
+
+* perlin
+** random
+
+* nimtesseract
+** pixie
+*** zippy
+*** flatty
+*** nimsimd
+*** vmath
+**** mddoc
+*** bumpy
+**** vmath
+***** mddoc
+*** chroma
+
+* pvim
+** paravim
+*** illwill
+*** paratext
+**** paranim
+***** glm
+***** nimgl
+*** paranim
+**** glm
+**** nimgl
+*** pararules
+** paratext
+*** paranim
+**** glm
+**** nimgl
+** paranim
+*** glm
+*** nimgl
+** pararules
+
 * winimx
+** jsony
+** zippy
+** winim
 
 * cache
 
@@ -2723,10 +7382,19 @@
 * deepspeech
 
 * xiaomi
+** nimcrypto
+** multicast
 
 * pokereval
 
 * nimem
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+** winim
 
 * qr
 
@@ -2751,30 +7419,338 @@
 * stdext
 
 * cmake
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * fsnotify
+** timerwheel
+** xio
 
 * tor
 
-* sermon
+* ups
+** npeg
 
 * synthesis
 
+* sermon
+** jester
+*** asynctools
+*** httpbeast
+**** asynctools
+
 * wxpay
+** hmac
+*** nimsha2
+*** nimcrypto
+*** sha1
 
 * csvql
+** cligen
 
 * alea
+** random
 
 * matplotnim
+** nimpy
+** tempfile
 
 * hcparse
+** hmisc
+*** shell
+*** fusion
+*** jsony
+*** sorta
+*** benchy
+*** unicodedb
+*** macroutils
+*** with
+*** cligen
+** nimtraits
+*** hmisc
+**** shell
+**** fusion
+**** jsony
+**** sorta
+**** benchy
+**** unicodedb
+**** macroutils
+**** with
+**** cligen
+*** hnimast
+**** hmisc
+***** shell
+***** fusion
+***** jsony
+***** sorta
+***** benchy
+***** unicodedb
+***** macroutils
+***** with
+***** cligen
+**** compiler
+**** macroutils
+**** nimble
+***** compiler
+*** hpprint
+**** shell
+**** hmisc
+***** shell
+***** fusion
+***** jsony
+***** sorta
+***** benchy
+***** unicodedb
+***** macroutils
+***** with
+***** cligen
+**** hnimast
+***** hmisc
+****** shell
+****** fusion
+****** jsony
+****** sorta
+****** benchy
+****** unicodedb
+****** macroutils
+****** with
+****** cligen
+***** compiler
+***** macroutils
+***** nimble
+****** compiler
+**** hdrawing
+***** hmisc
+****** shell
+****** fusion
+****** jsony
+****** sorta
+****** benchy
+****** unicodedb
+****** macroutils
+****** with
+****** cligen
+**** hasts
+***** hmisc
+****** shell
+****** fusion
+****** jsony
+****** sorta
+****** benchy
+****** unicodedb
+****** macroutils
+****** with
+****** cligen
+**** with
+** hnimast
+*** hmisc
+**** shell
+**** fusion
+**** jsony
+**** sorta
+**** benchy
+**** unicodedb
+**** macroutils
+**** with
+**** cligen
+*** compiler
+*** macroutils
+*** nimble
+**** compiler
+** htsparse
+*** hmisc
+**** shell
+**** fusion
+**** jsony
+**** sorta
+**** benchy
+**** unicodedb
+**** macroutils
+**** with
+**** cligen
+*** hparse
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** hmisc
+***** shell
+***** fusion
+***** jsony
+***** sorta
+***** benchy
+***** unicodedb
+***** macroutils
+***** with
+***** cligen
+**** hnimast
+***** hmisc
+****** shell
+****** fusion
+****** jsony
+****** sorta
+****** benchy
+****** unicodedb
+****** macroutils
+****** with
+****** cligen
+***** compiler
+***** macroutils
+***** nimble
+****** compiler
+**** hasts
+***** hmisc
+****** shell
+****** fusion
+****** jsony
+****** sorta
+****** benchy
+****** unicodedb
+****** macroutils
+****** with
+****** cligen
+**** hpprint
+***** shell
+***** hmisc
+****** shell
+****** fusion
+****** jsony
+****** sorta
+****** benchy
+****** unicodedb
+****** macroutils
+****** with
+****** cligen
+***** hnimast
+****** hmisc
+******* shell
+******* fusion
+******* jsony
+******* sorta
+******* benchy
+******* unicodedb
+******* macroutils
+******* with
+******* cligen
+****** compiler
+****** macroutils
+****** nimble
+******* compiler
+***** hdrawing
+****** hmisc
+******* shell
+******* fusion
+******* jsony
+******* sorta
+******* benchy
+******* unicodedb
+******* macroutils
+******* with
+******* cligen
+***** hasts
+****** hmisc
+******* shell
+******* fusion
+******* jsony
+******* sorta
+******* benchy
+******* unicodedb
+******* macroutils
+******* with
+******* cligen
+***** with
+** hpprint
+*** shell
+*** hmisc
+**** shell
+**** fusion
+**** jsony
+**** sorta
+**** benchy
+**** unicodedb
+**** macroutils
+**** with
+**** cligen
+*** hnimast
+**** hmisc
+***** shell
+***** fusion
+***** jsony
+***** sorta
+***** benchy
+***** unicodedb
+***** macroutils
+***** with
+***** cligen
+**** compiler
+**** macroutils
+**** nimble
+***** compiler
+*** hdrawing
+**** hmisc
+***** shell
+***** fusion
+***** jsony
+***** sorta
+***** benchy
+***** unicodedb
+***** macroutils
+***** with
+***** cligen
+*** hasts
+**** hmisc
+***** shell
+***** fusion
+***** jsony
+***** sorta
+***** benchy
+***** unicodedb
+***** macroutils
+***** with
+***** cligen
+*** with
 
 * fowltek
 
 * dye
+** pixie
+*** zippy
+*** flatty
+*** nimsimd
+*** vmath
+**** mddoc
+*** bumpy
+**** vmath
+***** mddoc
+*** chroma
+** commandeer
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+** progress
+** chroma
 
 * hldiff
+** cligen
+
+* kiwifydownload
+** util
+** vimeo
+*** util
+*** cligen
+** cligen
 
 * grp
 
@@ -2785,8 +7761,16 @@
 * psy
 
 * about
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
 
 * zlib
+** stew
 
 * fuse
 
@@ -2795,30 +7779,77 @@
 * metric
 
 * nwsync
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+** zip
+** neverwinter
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
 
 * imageman
+** nimpng
+** stb_image
 
 * cirru_writer
 
+* mofuparser
+
 * asciitables
 
-* microparsec
+* matrix
+** jsony
 
-* vaultclient
+* microparsec
+** result
 
 * nap
+
+* vaultclient
 
 * unit
 
 * nimibook
+** jsony
+** nimib
+*** markdown
+*** mustache
+*** toml_serialization
+**** stew
+**** serialization
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
+*** tempfile
 
 * packedjson
 
 * rangequeries
 
-* binarylang
+* union
 
-* ms
+* binarylang
+** bitstreams
 
 * oshostname
 
@@ -2832,9 +7863,10 @@
 
 * winregistry
 
-* keccak_tiny
-
 * manu
+
+* keccak_tiny
+** ranges
 
 * uuid4
 
@@ -2842,17 +7874,35 @@
 
 * nimgui
 
+* rest
+** foreach
+
 * quickcrypt
+** neoid
+*** random
+*** winim
+** nimaes
 
 * htmlanticopy
 
 * paramidib
+** paramidi
+** parasound
+** paramidi_soundfonts
 
 * basedon
 
 * envconfig
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
 
 * bumpy
+** vmath
+*** mddoc
 
 * nimarrow_glib
 
@@ -2860,39 +7910,192 @@
 
 * bitvec
 
-* reactorfuse
-
 * scram
+** hmac
+*** nimsha2
+*** nimcrypto
+*** sha1
+
+* reactorfuse
+** reactor
+*** collections
 
 * sampletodolist
+** cligen
 
 * simdx86
 
 * treesitter_html
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** treesitter
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
 
 * nest
 
 * paratext
+** paranim
+*** glm
+*** nimgl
 
 * cowstrings
 
 * glbits
 
 * eth_p2p
+** eth_common
+*** byteutils
+*** rlp
+**** ranges
+*** eth_trie
+**** rlp
+***** ranges
+**** ranges
+**** nimcrypto
+**** rocksdb
+***** stew
+***** tempfile
+*** ranges
+*** nimcrypto
+*** stint
+**** stew
+** byteutils
+** rlp
+*** ranges
+** eth_keys
+*** nimcrypto
+*** secp256k1
+**** stew
+**** nimcrypto
+** ranges
+** nimcrypto
+** package_visible_types
+** stint
+*** stew
+** serialization
+*** unittest2
+*** stew
+*** faststreams
+**** unittest2
+**** stew
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+***** stew
+***** bearssl
+****** unittest2
+**** testutils
+***** unittest2
+** secp256k1
+*** stew
+*** nimcrypto
+** json_serialization
+*** stew
+*** serialization
+**** unittest2
+**** stew
+**** faststreams
+***** unittest2
+***** stew
+***** chronos
+****** httputils
+******* unittest2
+******* stew
+****** stew
+****** bearssl
+******* unittest2
+***** testutils
+****** unittest2
+** asyncdispatch2
+** chronicles
+*** testutils
+**** unittest2
+*** json_serialization
+**** stew
+**** serialization
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
+** snappy
+*** unittest2
+*** stew
+*** faststreams
+**** unittest2
+**** stew
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+***** stew
+***** bearssl
+****** unittest2
+**** testutils
+***** unittest2
+
+* weighted_graph
 
 * parselicense
 
 * syndicate
+** nimsha2
+** preserves
+*** compiler
+*** bigints
+*** npeg
 
 * digitalocean
 
 * base64_decoder
 
 * nimlsp
+** asynctools
+** jsonschema
+*** ast_pattern_matching
+** astpatternmatching
 
 * nimaes
 
 * graphics
+** sdl1
 
 * nimmikudance
 
@@ -2902,51 +8105,107 @@
 
 * pl0t
 
-* github-yglukhov-async_http_request
-
-* github-hugogranstrom-cdt
-
 * cppstl
 
 * nimatic
+** markdown
 
 * node
+** httpkit
 
 * nimkalc
 
 * directnimrod
 
 * testrunner
+** libnotify
+*** gtk2
+**** cairo
+** fswatch
 
-* nimbox
+* tempfile
 
 * chroma
 
 * naylib
+** eminim
+
+* nimbox
 
 * pgxcrown
-
-* tempfile
 
 * httpstat
 
 * ntangle
+** cligen
 
 * typography
+** print
+** flippy
+*** print
+*** mddoc
+*** nimpng
+*** stb_image
+*** vmath
+**** mddoc
+*** bumpy
+**** vmath
+***** mddoc
+*** supersnappy
+*** chroma
+*** snappy
+**** unittest2
+**** stew
+**** faststreams
+***** unittest2
+***** stew
+***** chronos
+****** httputils
+******* unittest2
+******* stew
+****** stew
+****** bearssl
+******* unittest2
+***** testutils
+****** unittest2
+** pixie
+*** zippy
+*** flatty
+*** nimsimd
+*** vmath
+**** mddoc
+*** bumpy
+**** vmath
+***** mddoc
+*** chroma
+** flatty
+** stb_image
+** vmath
+*** mddoc
+** bumpy
+*** vmath
+**** mddoc
+** chroma
 
 * wauto
-
-* github-disruptek-semaphores
+** winim
+** wnim
+*** winim
+*** npeg
+*** memlib
+**** winim
+**** minhook
+** npeg
 
 * sass
-
-* io-spacenav
 
 * unittest2
 
 * bpg
 
 * nimsocks
+** nimsha2
+** dbg
 
 * moduleinit
 
@@ -2963,10 +8222,50 @@
 * skeasing
 
 * imstyle
+** niprefs
+*** npeg
+*** toml_serialization
+**** stew
+**** serialization
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
+** nimgl
+** chroma
 
 * libnx
+** switch_build
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** switch-build
 
 * nimmarc
+
+* nimqt
 
 * luhncheck
 
@@ -2975,18 +8274,47 @@
 * scraper
 
 * remarker_light
+** jester
+*** asynctools
+*** httpbeast
+**** asynctools
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
 
 * sue
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
 
 * vecio
 
 * appdirs
 
 * nimblegui
+** ui
+** uibuilder
+*** ui
+*** xml
+*** q
+** webgui
 
 * mcd
+** colorizeecho
+** parsetoml
+** cligen
 
 * asyncredis
+** ptr_math
+** networkutils
+*** ptr_math
 
 * bloom
 
@@ -2995,18 +8323,35 @@
 * lrucache
 
 * nery
+** fusion
 
 * configparser
 
 * svvpi
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * sysrandom
 
 * hdrawing
+** hmisc
+*** shell
+*** fusion
+*** jsony
+*** sorta
+*** benchy
+*** unicodedb
+*** macroutils
+*** with
+*** cligen
 
 * scgi
-
-* weightedgraph
 
 * nimtomd
 
@@ -3015,22 +8360,49 @@
 * saya
 
 * nimwave
+** ansiutils
+** illwave
 
 * nimobserver
 
 * feta
+** jester
+*** asynctools
+*** httpbeast
+**** asynctools
+** googleapi
+*** jwt
+**** bearssl
+***** unittest2
+*** quickjwt
+** mime
+** ws
 
 * suggest
+** cligen
 
 * io-isense
 
 * quadtree
+** optional_t
 
 * couchdb
 
 * kinto
 
 * nimtetris
+** illwill
+
+* trayx
+** simplepng
+*** nimpng
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
 
 * sparseset
 
@@ -3041,34 +8413,635 @@
 * github-dadadani-nim-random
 
 * fision
+** argparse
+** termstyle
+** polypbren
+** terminaltables
+** unicodeplus
+*** unicodedb
+*** segmentation
+**** unicodedb
+** pixie
+*** zippy
+*** flatty
+*** nimsimd
+*** vmath
+**** mddoc
+*** bumpy
+**** vmath
+***** mddoc
+*** chroma
+** nake
+** sdl2_nim
+*** winim
+*** x11
+** markdown
+** gnuplot
+** rosencrantz
+** pylib
+** sdl1
+** pnm
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** yaml
+** elvis
+** plotly
+*** webview
+*** ws
+*** websocket
+*** jsbind
+*** chroma
+** awk
+*** nre
+**** optional_t
+** nimquery
+** result
+** loopfusion
+** unicodedb
+** lockfreequeues
+** memo
+** inim
+*** nimsha2
+*** hmac
+**** nimsha2
+**** nimcrypto
+**** sha1
+*** noise
+*** zmq
+*** python3
+*** cligen
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+** react
+** synthesis
+** macroutils
+** norm
+*** nimibook
+**** jsony
+**** nimib
+***** markdown
+***** mustache
+***** toml_serialization
+****** stew
+****** serialization
+******* unittest2
+******* stew
+******* faststreams
+******** unittest2
+******** stew
+******** chronos
+********* httputils
+********** unittest2
+********** stew
+********* stew
+********* bearssl
+********** unittest2
+******** testutils
+********* unittest2
+***** tempfile
+*** ndb
+*** chronicles
+**** testutils
+***** unittest2
+**** json_serialization
+***** stew
+***** serialization
+****** unittest2
+****** stew
+****** faststreams
+******* unittest2
+******* stew
+******* chronos
+******** httputils
+********* unittest2
+********* stew
+******** stew
+******** bearssl
+********* unittest2
+******* testutils
+******** unittest2
+** binaryheap
+** weave
+*** synthesis
+** strunicode
+*** normalize
+**** unicodedb
+*** graphemes
+** nimsl
+*** variant
+** nimes
+*** sdl2
+** fidget
+*** typography
+**** print
+**** flippy
+***** print
+***** mddoc
+***** nimpng
+***** stb_image
+***** vmath
+****** mddoc
+***** bumpy
+****** vmath
+******* mddoc
+***** supersnappy
+***** chroma
+***** snappy
+****** unittest2
+****** stew
+****** faststreams
+******* unittest2
+******* stew
+******* chronos
+******** httputils
+********* unittest2
+********* stew
+******** stew
+******** bearssl
+********* unittest2
+******* testutils
+******** unittest2
+**** pixie
+***** zippy
+***** flatty
+***** nimsimd
+***** vmath
+****** mddoc
+***** bumpy
+****** vmath
+******* mddoc
+***** chroma
+**** flatty
+**** stb_image
+**** vmath
+***** mddoc
+**** bumpy
+***** vmath
+****** mddoc
+**** chroma
+*** flippy
+**** print
+**** mddoc
+**** nimpng
+**** stb_image
+**** vmath
+***** mddoc
+**** bumpy
+***** vmath
+****** mddoc
+**** supersnappy
+**** chroma
+**** snappy
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
+*** print
+*** pixie
+**** zippy
+**** flatty
+**** nimsimd
+**** vmath
+***** mddoc
+**** bumpy
+***** vmath
+****** mddoc
+**** chroma
+*** vmath
+**** mddoc
+*** staticglfw
+**** opengl
+***** x11
+*** opengl
+**** x11
+*** bumpy
+**** vmath
+***** mddoc
+*** supersnappy
+*** cligen
+*** chroma
+*** snappy
+**** unittest2
+**** stew
+**** faststreams
+***** unittest2
+***** stew
+***** chronos
+****** httputils
+******* unittest2
+******* stew
+****** stew
+****** bearssl
+******* unittest2
+***** testutils
+****** unittest2
+*** html5_canvas
+** datamancer
+*** arraymancer
+**** nimlapack
+**** nimblas
+**** untar
+**** stb_image
+**** nimcuda
+**** nimcl
+***** opencl
+**** clblast
+***** opencl
+**** zip
+** neo
+*** nimlapack
+*** nimblas
+*** nimcuda
+** bump
+*** git://github.com/disruptek/cutelog.git
+*** cligen
+** asyncthreadpool
+** strslice
+** timeit
+** combparser
+** websocket
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
+** tiny_sqlite
+** chronicles
+*** testutils
+**** unittest2
+*** json_serialization
+**** stew
+**** serialization
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
+** dashing
+** itertools
+** cligen
+** nimwc
+*** jester
+**** asynctools
+**** httpbeast
+***** asynctools
+*** webp
+*** contra
+*** packedjson
+*** recaptcha
+*** bcrypt
+*** html_tools
+**** contra
+*** datetime2human
+*** otp
+**** hmac
+***** nimsha2
+***** nimcrypto
+***** sha1
+**** base32
+*** libravatar
+*** firejail
+** sim
+** nimgame2
+*** sdl2_nim
+**** winim
+**** x11
+** nesm
+** httpauth
+*** libsodium
+** cello
+*** spills
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+** nimdata
+*** plotly
+**** webview
+**** ws
+**** websocket
+**** jsbind
+**** chroma
+*** zip
+** zero_functional
+** sigv4
+*** nimcrypto
+** nimsvg
+** fusion
+** nimpy
+** easygl
+** ggplotnim
+*** shell
+*** ginger
+**** shell
+**** cairo
+**** chroma
+*** persvector
+*** webview
+*** arraymancer
+**** nimlapack
+**** nimblas
+**** untar
+**** stb_image
+**** nimcuda
+**** nimcl
+***** opencl
+**** clblast
+***** opencl
+**** zip
+*** datamancer
+**** arraymancer
+***** nimlapack
+***** nimblas
+***** untar
+***** stb_image
+***** nimcuda
+***** nimcl
+****** opencl
+***** clblast
+****** opencl
+***** zip
+** zippy
+** gara
+** illwill
+** jstin
+** netty
+*** flatty
+*** snappy
+**** unittest2
+**** stew
+**** faststreams
+***** unittest2
+***** stew
+***** chronos
+****** httputils
+******* unittest2
+******* stew
+****** stew
+****** bearssl
+******* unittest2
+***** testutils
+****** unittest2
+** winim
+** telebot
+*** asyncevents
+*** sam
+**** jsmn
+*** tempfile
+** manu
+** nimcrypto
+** brainfuck
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** hts
+** iterutils
+** karax
+*** dotenv
+*** ws
+** bncurve
+*** nimcrypto
+** prologue
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cookies
+*** nimcrypto
+*** karax
+**** dotenv
+**** ws
+*** httpx
+**** ioselectors
+***** wepoll
+***** timerwheel
+*** httpbeast
+**** asynctools
+*** logue
+**** cligen
+*** cookiejar
+** nigui
+** numericalnim
+*** arraymancer
+**** nimlapack
+**** nimblas
+**** untar
+**** stb_image
+**** nimcuda
+**** nimcl
+***** opencl
+**** clblast
+***** opencl
+**** zip
+** chronos
+*** httputils
+**** unittest2
+**** stew
+*** stew
+*** bearssl
+**** unittest2
+** patty
+** protobuf
+*** combparser
+** stint
+*** stew
+** c2nim
+** nimly
+*** patty
+** nitter
+** cascade
+** unpack
+** tempdir
+** npeg
+** arraymancer
+*** nimlapack
+*** nimblas
+*** untar
+*** stb_image
+*** nimcuda
+*** nimcl
+**** opencl
+*** clblast
+**** opencl
+*** zip
+** glob
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+** timezones
+** rollinghash
+** delaunay
+** rbtree
+*** optional_t
+** nimfp
+*** classy
+*** nimboost
+**** patty
+** optionsutils
+** nicy
+** supersnappy
+** msgpack4nim
+** templates
+** parsetoml
+** compactdict
+** ormin
+*** websocket
+** bipbuffer
+** chroma
 
 * json2xml
 
 * cello
+** spills
 
 * slim
+** fusion
+** hmisc
+*** shell
+*** fusion
+*** jsony
+*** sorta
+*** benchy
+*** unicodedb
+*** macroutils
+*** with
+*** cligen
+** compiler
 
 * funchook
 
 * dumpincludes
+** cligen
 
 * github-planety-cookiejar
 
 * hottext
+** typography
+*** print
+*** flippy
+**** print
+**** mddoc
+**** nimpng
+**** stb_image
+**** vmath
+***** mddoc
+**** bumpy
+***** vmath
+****** mddoc
+**** supersnappy
+**** chroma
+**** snappy
+***** unittest2
+***** stew
+***** faststreams
+****** unittest2
+****** stew
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+******* stew
+******* bearssl
+******** unittest2
+****** testutils
+******* unittest2
+*** pixie
+**** zippy
+**** flatty
+**** nimsimd
+**** vmath
+***** mddoc
+**** bumpy
+***** vmath
+****** mddoc
+**** chroma
+*** flatty
+*** stb_image
+*** vmath
+**** mddoc
+*** bumpy
+**** vmath
+***** mddoc
+*** chroma
+** sdl2
 
 * spdk
 
 * uspokoysa
+** nigui
 
 * w8crc
 
 * nimsvg
 
 * tinamou
+** sdl2
 
 * osrm
 
 * libvlc
+** futhark
+*** termstyle
+*** macroutils
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * nodejs
 
@@ -3077,6 +9050,20 @@
 * pymod
 
 * madam
+** nyml
+*** toktok
+** tim
+*** watchout
+*** bson
+** klymene
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** illwill
+*** unicodedb
 
 * assigns
 
@@ -3085,22 +9072,61 @@
 * stopwatch
 
 * dimscord
-
-* nim-snappy
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+** zippy
+** flatty
+** libsodium
+** ws
+** zip
 
 * rapid
-
-* ao
-
-* github-yyoncho-json_rpc
-
-* nimbluez
+** nimpng
+** aglet
+*** glm
+*** nimterop
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** cligen
+** stbimage
+** glm
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * nimgram
+** zippy
+** gmp
+** nimcrypto
+** stint
+*** stew
+
+* nimbluez
 
 * replim
 
 * euwren
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * sections
 
@@ -3111,98 +9137,293 @@
 * kwin
 
 * dataurl
+** cligen
 
 * nimagg
+** sdl2_nim
+*** winim
+*** x11
+** polybool
+** opengl
+*** x11
+** freetype
+** nimbmp
 
 * seccomp
 
 * enet
 
 * nimlibxlsxwriter
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** c2nim
 
 * segmentation
+** unicodedb
 
 * nimshell
+** monad
 
 * tempdir
 
 * asciitext
 
-* github-zacharycarter-nvg
-
 * omni
+** cligen
 
 * sha1
 
 * wren
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
 
 * nimclipboard
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
 
 * brainlyextractor
+** scraper
 
 * glob
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
 
 * html2karax
+** karax
+*** dotenv
+*** ws
 
 * llvm
 
 * nimff
+** binarylang
+*** bitstreams
+** nimpng
+** cligen
 
 * nimwebp
+** nimpng
 
 * rn
 
 * contractabi
+** questionable
+** stew
+** nimcrypto
+** upraises
+** stint
+*** stew
 
 * getr
 
 * choosenim
+** zippy
+** osinfo
+** untar
+** analytics
+*** uuids
+**** isaac
+*** osinfo
+*** puppy
+**** urlly
+**** zippy
+**** winim
+**** libcurl
+** nimble
+*** compiler
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
+** nimarchive
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
+*** nimterop
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** cligen
+** libcurl
 
 * chronopipe
 
 * mn
 
 * nimrpc_milis
-
-* github-yglukhov-threadpools
+** msgpack4nim
 
 * hpx
+** jsony
+** cppstl
 
 * nim_searches
 
 * emmy
+** bigints
+** stint
+*** stew
+** neo
+*** nimlapack
+*** nimblas
+*** nimcuda
 
 * imghdr
 
 * findtests
 
 * nimarchive
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * autonim
 
 * cookiejar
 
 * notcurses
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * min
+** zippy
+** nifty
 
 * barbarus
 
-* snip
+* sph
 
 * foreach
 
-* sph
+* snip
 
 * fastkiss
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
 
 * faststack
 
 * html5_canvas
 
 * gen
+** gara
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+** progress
+** fab
 
 * nimha
+** jester
+*** asynctools
+*** httpbeast
+**** asynctools
+** wiringpinim
+** recaptcha
+** bcrypt
+** xiaomi
+*** nimcrypto
+*** multicast
+** httpbeast
+*** asynctools
+** websocket
+** multicast
 
 * nimgraphviz
 
@@ -3211,32 +9432,77 @@
 * numtoword
 
 * microasynchttpserver
+** picohttpparser
 
 * nanim
+** rainbow
+** stb_image
+** staticglfw
+*** opengl
+**** x11
+** glm
+** nanovg
 
 * jester
+** asynctools
+** httpbeast
+*** asynctools
 
 * gemini
+** nimcrypto
 
 * contra
 
 * libsvm
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * passgen
+** nimcrypto
+** urand
 
 * nimdeps
 
 * audius
+** jsony
 
 * joyent_http_parser
 
 * pronimgress
 
 * atoz
+** openapi
+*** npeg
+*** foreach
+** sigv4
+*** nimcrypto
+** npeg
 
 * testify
 
 * zopflipng
+** nimpng
 
 * gene
 
@@ -3245,22 +9511,36 @@
 * easymail
 
 * eth_keys
+** nimcrypto
+** secp256k1
+*** stew
+*** nimcrypto
 
 * nio
 
-* github-alaviss-union
-
 * nimongo
+** scram
+*** hmac
+**** nimsha2
+**** nimcrypto
+**** sha1
 
 * grim
+** zero_functional
+** yaml
 
 * natu
+** trick
+*** nimpng
 
 * validation
 
 * feednim
 
 * moe
+** ncurses
+** unicodedb
+** parsetoml
 
 * stringinterpolation
 
@@ -3268,21 +9548,41 @@
 
 * jq
 
+* nimtest
+
 * hashlib
+** nimcrypto
+
+* cirru-parser
+
+* nim-glfw
 
 * simple_vector
 
 * nimgit2
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * itn
 
 * cairo
 
 * libnotify
+** gtk2
+*** cairo
 
 * mysqlparser
 
 * ndns
+** stew
+** dnsprotocol
+*** stew
 
 * variantkey
 
@@ -3293,6 +9593,16 @@
 * gnutls
 
 * jestermongopool
+** mongopool
+*** bson
+*** scram
+**** hmac
+***** nimsha2
+***** nimcrypto
+***** sha1
+** jesterwithplugins
+*** httpbeast
+**** asynctools
 
 * playlists
 
@@ -3301,10 +9611,24 @@
 * basic2d
 
 * nimes
+** sdl2
 
 * smbexec
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+** hmac
+*** nimsha2
+*** nimcrypto
+*** sha1
+** hashlib
+*** nimcrypto
 
 * snail
+** nimblas
 
 * pastebin
 
@@ -3314,25 +9638,73 @@
 
 * gdbmc
 
+* xplm
+
 * seq2d
 
 * litestore
+** jwt
+*** bearssl
+**** unittest2
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** duktape
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
 
 * nimagehide
+** cli_menu
+** stb_image
+** cligen
 
 * nimcx
 
 * platformer
+** sdl2
+** strfmt
+** basic2d
 
 * cligen
 
 * espeak
 
 * omnimax
-
-* getch
+** omni
+*** cligen
+** cligen
 
 * nimgame2
+** sdl2_nim
+*** winim
+*** x11
+
+* getch
 
 * yahooweather
 
@@ -3343,10 +9715,12 @@
 * calibre
 
 * rexpaint
+** zip
 
 * xlsxio
 
 * alignment
+** eastasianwidth
 
 * byteutils
 
@@ -3359,14 +9733,24 @@
 * gm_api
 
 * nimfm
+** nimlapack
+** cligen
+
+* cps
+** diffoutput
+*** diff
+
+* jitter
+** argparse
+** zippy
 
 * mccache
 
 * stage
+** shell
+** cligen
 
 * base58
-
-* github-disruptek-grok
 
 * mui
 
@@ -3380,73 +9764,208 @@
 
 * hts
 
+* bearssl_pkey_decoder
+** bearssl
+*** unittest2
+
 * asynctest
 
-* blimp
+* hlibssh2
 
 * watch_for_files
 
 * analytics
+** uuids
+*** isaac
+** osinfo
+** puppy
+*** urlly
+*** zippy
+*** winim
+*** libcurl
 
 * eris_utils
+** eris
+*** base32
+*** tkrzw
+*** lmdb
+*** taps
+** tkrzw
+** eris_protocols
+** eris_tkrzw
 
 * hnimast
+** hmisc
+*** shell
+*** fusion
+*** jsony
+*** sorta
+*** benchy
+*** unicodedb
+*** macroutils
+*** with
+*** cligen
+** compiler
+** macroutils
+** nimble
+*** compiler
 
 * runeterra_decks
+** base32
 
 * the_nim_alliance
 
 * libtcod_nim
+** sdl1
 
 * xors3d
 
 * siphash
 
 * preprod
+** xam
 
 * xom
 
 * ndf
-
-* io-egl
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+** murmurhash
 
 * vmprotect
 
 * crosscompile
+** zip
 
 * mpdclient
 
+* cli
+
 * foliant
+** yaml
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
 
 * asyncmysql
+** mysqlparser
 
 * nominatim
 
 * openurl
+** figures
 
 * simhash
+** lc
+*** cligen
 
 * tmpnim
 
 * norman
+** dotenv
+** norm
+*** nimibook
+**** jsony
+**** nimib
+***** markdown
+***** mustache
+***** toml_serialization
+****** stew
+****** serialization
+******* unittest2
+******* stew
+******* faststreams
+******** unittest2
+******** stew
+******** chronos
+********* httputils
+********** unittest2
+********** stew
+********* stew
+********* bearssl
+********** unittest2
+******** testutils
+********* unittest2
+***** tempfile
+*** ndb
+*** chronicles
+**** testutils
+***** unittest2
+**** json_serialization
+***** stew
+***** serialization
+****** unittest2
+****** stew
+****** faststreams
+******* unittest2
+******* stew
+******* chronos
+******** httputils
+********* unittest2
+********* stew
+******** stew
+******** bearssl
+********* unittest2
+******* testutils
+******** unittest2
+** cligen
 
 * persistent_enums
 
 * qt5_qtsql
 
+* vimeo
+** util
+** cligen
+
 * edn
 
 * morelogging
+** zip
+
+* gapi
 
 * libssh2
 
 * arduino
 
 * nestegg
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * daemonize
 
 * duktape
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
 
 * extensions
 
@@ -3455,14 +9974,32 @@
 * stones
 
 * nimfcuk
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
 
-* github-thisago-findxml
+* wlroots
 
 * nerve
+** httpbeast
+*** asynctools
+** ws
 
 * kmer
 
 * coco
+** glob
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+** cligen
 
 * sequtils2
 
@@ -3471,34 +10008,109 @@
 * nimborg
 
 * eth_trie
+** rlp
+*** ranges
+** ranges
+** nimcrypto
+** rocksdb
+*** stew
+*** tempfile
 
 * crowngui
+** imageman
+*** nimpng
+*** stb_image
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+** static_server
+*** finder
+**** zippy
+**** zip
+** objc_runtime
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+** zopflipng
+*** nimpng
+** rcedit
+** jsonschema
+*** ast_pattern_matching
+** plists
+*** darwin
+** darwin
+** xlsx
+*** zip
+** http://github.com/bung87/static_server
+** nimble
+*** compiler
+** cligen
 
 * decimal
 
-* cpython
+* pdba
+** yaml
+** ndb
 
 * dotenv
 
-* pdba
-
 * niprefs
+** npeg
+** toml_serialization
+*** stew
+*** serialization
+**** unittest2
+**** stew
+**** faststreams
+***** unittest2
+***** stew
+***** chronos
+****** httputils
+******* unittest2
+******* stew
+****** stew
+****** bearssl
+******* unittest2
+***** testutils
+****** unittest2
+
+* python3@
 
 * egl
+** x11
 
 * quickjwt
 
 * awk
+** nre
+*** optional_t
 
 * vtable
 
-* github-fragworks-chipmunk7
+* shady
+** pixie
+*** zippy
+*** flatty
+*** nimsimd
+*** vmath
+**** mddoc
+*** bumpy
+**** vmath
+***** mddoc
+*** chroma
+** vmath
+*** mddoc
 
 * bs
 
-* shady
-
 * bcra
+** zip
 
 * nifty
 
@@ -3517,14 +10129,22 @@
 * proxyproto
 
 * drawim
+** jscanvas
+** staticglfw
+*** opengl
+**** x11
+** opengl
+*** x11
 
 * miter
 
-* io-sixense
+* http://github.com/genotrance/nimgit2.git
 
 * logue
+** cligen
 
 * jester2swagger
+** cligen
 
 * miniz
 
@@ -3533,14 +10153,26 @@
 * exprgrad
 
 * rethinkdb
-
-* github-jyapayne-nimterop
+** scram
+*** hmac
+**** nimsha2
+**** nimcrypto
+**** sha1
+** struct
 
 * bump
+** git://github.com/disruptek/cutelog.git
+** cligen
 
 * haraka
 
+* ttf
+** nimbmp
+
 * eloverblik
+** nmqtt
+*** bcrypt
+*** cligen
 
 * libgit2
 
@@ -3549,42 +10181,127 @@
 * selenimum
 
 * duckduckgo
+** scraper
 
 * rect
+** eastasianwidth
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
 
-* stor
+* mofuhttputils
 
 * gigi
+** puppy
+*** urlly
+*** zippy
+*** winim
+*** libcurl
 
 * dnsstamps
 
 * jade-nim
 
 * arraymancer_vision
+** stb_image
+** arraymancer
+*** nimlapack
+*** nimblas
+*** untar
+*** stb_image
+*** nimcuda
+*** nimcl
+**** opencl
+*** clblast
+**** opencl
+*** zip
+
+* nimwc
+** jester
+*** asynctools
+*** httpbeast
+**** asynctools
+** webp
+** contra
+** packedjson
+** recaptcha
+** bcrypt
+** html_tools
+*** contra
+** datetime2human
+** otp
+*** hmac
+**** nimsha2
+**** nimcrypto
+**** sha1
+*** base32
+** libravatar
+** firejail
 
 * linenoise
 
-* nimwc
+* stor
 
 * changer
+** argparse
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+** parsetoml
 
 * tweens
 
-* fileinput
-
 * regex
+** unicodeplus
+*** unicodedb
+*** segmentation
+**** unicodedb
+** unicodedb
+
+* fileinput
 
 * rain
 
 * docx
+** zip
 
 * ruby
 
 * nimjson
 
-* nimpcre
-
 * ui
+
+* nimpcre
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * mofuw
 
@@ -3597,16 +10314,20 @@
 * prettystr
 
 * xidoc
+** matext
+*** cligen
+*** honeycomb
+** npeg
+** cligen
 
 * ssostrings
-
-* github-disruptek-cutelog
 
 * gnuplotlib
 
 * untar
 
 * pipelines
+** python
 
 * redis
 
@@ -3615,8 +10336,15 @@
 * shimsham
 
 * jesterwithplugins
+** httpbeast
+*** asynctools
 
 * utils
+** values
+
+* xgboost
+
+* minim
 
 * prettyclr
 
@@ -3628,15 +10356,26 @@
 
 * c2nim
 
-* github-yyoncho-asynctools
-
 * nimly
+** patty
+
+* nimcl
+** opencl
 
 * drand48
 
-* nimcl
-
 * smoothing
+** arraymancer
+*** nimlapack
+*** nimblas
+*** untar
+*** stb_image
+*** nimcuda
+*** nimcl
+**** opencl
+*** clblast
+**** opencl
+*** zip
 
 * netbuff
 
@@ -3644,63 +10383,102 @@
 
 * progress
 
-* io-serialport
-
 * dnsprotocol
+** stew
 
 * georefar
-
-* github-zacharycarter-nimassimp
 
 * jsonob
 
 * pls
 
-* gungnir
-
-* nimflux
-
 * redux_nim
 
 * rollinghash
 
+* gungnir
+
+* nimflux
+** coverage
+*** nake
+
 * shizuka
+
+* winversion
 
 * closure_compiler
 
-* nimstopwatch
-
 * optionsutils
 
-* winversion
+* nimstopwatch
 
 * mdevolve
 
 * noisy
+** nimsimd
 
 * kissfft
 
 * sdnotify
 
-* github-disruptek-nim-terminaltables
-
 * webrod
+** xam
 
 * distances
+** arraymancer
+*** nimlapack
+*** nimblas
+*** untar
+*** stb_image
+*** nimcuda
+*** nimcl
+**** opencl
+*** clblast
+**** opencl
+*** zip
+** neo
+*** nimlapack
+*** nimblas
+*** nimcuda
 
 * migrate
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
 
 * ipfshttpclient
+** zippy
+** libcurl
 
 * baker
+** markdown
+** ndb
+** proton
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+** timezones
+** zip
 
 * webrtcvad
 
 * paramidi_soundfonts
 
 * cbor
+** bignum
+*** gmp
+** bigints
 
 * trick
+** nimpng
 
 * spinny
 
@@ -3709,6 +10487,13 @@
 * grab
 
 * usha
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
 
 * tinyfiledialogs
 
@@ -3717,6 +10502,7 @@
 * macroplus
 
 * metatag
+** zip
 
 * amka
 
@@ -3725,50 +10511,124 @@
 * asyncanything
 
 * fae
-
-* hats
+** nifty
 
 * awssts
+** sigv4
+*** nimcrypto
 
-* xgboost.nim
-
-* dotprov
+* cirruedn
+** cirru-parser
 
 * nimish
 
 * ndbex
 
 * scinim
+** fusion
+** nimpy
+** polynumeric
+*** arraymancer
+**** nimlapack
+**** nimblas
+**** untar
+**** stb_image
+**** nimcuda
+**** nimcl
+***** opencl
+**** clblast
+***** opencl
+**** zip
+** arraymancer
+*** nimlapack
+*** nimblas
+*** untar
+*** stb_image
+*** nimcuda
+*** nimcl
+**** opencl
+*** clblast
+**** opencl
+*** zip
 
 * dogapi_cli
+** dogapi
 
 * bped
 
-* github-haxscramper-hlibgit2
+* slacklib
 
 * nimcr
-
-* slacklib
 
 * result
 
 * halonium
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+** fusion
+** uuids
+*** isaac
+** zip
+** tempfile
 
 * loony
 
 * coap
 
 * treesitter_php
-
-* htmlview
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** treesitter
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
 
 * commandeer
 
 * hex
 
 * nimview
+** jester
+*** asynctools
+*** httpbeast
+**** asynctools
+** nake
+** nimpy
+** webview
+** ws
 
 * camelize
+
+* strings
 
 * genode
 
@@ -3779,24 +10639,94 @@
 * bgfxdotnim
 
 * nimpb
+** nimpb_protoc
 
 * pixels
+** sdl2
 
 * nsu
+** flippy
+*** print
+*** mddoc
+*** nimpng
+*** stb_image
+*** vmath
+**** mddoc
+*** bumpy
+**** vmath
+***** mddoc
+*** supersnappy
+*** chroma
+*** snappy
+**** unittest2
+**** stew
+**** faststreams
+***** unittest2
+***** stew
+***** chronos
+****** httputils
+******* unittest2
+******* stew
+****** stew
+****** bearssl
+******* unittest2
+***** testutils
+****** unittest2
+** winim
+** x11
+** oldwinapi
+** png
+
+* cirruparser
 
 * dbg
 
 * romanim
 
 * hayaa
+** illwill
 
 * whip
+** packedjson
+** nest
+** httpbeast
+*** asynctools
 
 * datamancer
+** arraymancer
+*** nimlapack
+*** nimblas
+*** untar
+*** stb_image
+*** nimcuda
+*** nimcl
+**** opencl
+*** clblast
+**** opencl
+*** zip
 
 * wstp
+** c2nim
 
 * spry
+** spryvm
+*** ui
+*** python
+*** snappy
+**** unittest2
+**** stew
+**** faststreams
+***** unittest2
+***** stew
+***** chronos
+****** httputils
+******* unittest2
+******* stew
+****** stew
+****** bearssl
+******* unittest2
+***** testutils
+****** unittest2
 
 * metatools
 
@@ -3807,10 +10737,51 @@
 * pathname
 
 * ioselectors
+** wepoll
+** timerwheel
 
 * json_serialization
+** stew
+** serialization
+*** unittest2
+*** stew
+*** faststreams
+**** unittest2
+**** stew
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+***** stew
+***** bearssl
+****** unittest2
+**** testutils
+***** unittest2
 
 * nimssl
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** nimterop
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** cligen
 
 * gyaric
 
@@ -3824,8 +10795,6 @@
 
 * struct
 
-* github-yglukhov-android
-
 * nimosc
 
 * receq
@@ -3833,38 +10802,93 @@
 * shene
 
 * treesitter_c_sharp
+** nimgen
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
+*** c2nim
+*** docopt
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+** treesitter
+*** nimgen
+**** regex
+***** unicodeplus
+****** unicodedb
+****** segmentation
+******* unicodedb
+***** unicodedb
+**** c2nim
+**** docopt
+***** regex
+****** unicodeplus
+******* unicodedb
+******* segmentation
+******** unicodedb
+****** unicodedb
 
 * zero_functional
 
 * distributions
+** special_functions
 
 * opencolor
 
 * nim_telegram_bot
+** nimpy
+** openexchangerates
+** telebot
+*** asyncevents
+*** sam
+**** jsmn
+*** tempfile
+** zip
 
 * os_files
+** oldgtk3
+** jsbind
 
 * base45
 
 * spotify
+** subexes
+** oauth
+*** sha1
 
 * unsplash
 
 * evmc
+** stew
+
+* nmqtt
+** bcrypt
+** cligen
 
 * gara
 
-* nmqtt
-
 * eth_bloom
+** nimcrypto
+** stint
+*** stew
 
 * sqliteral
 
 * nyml
+** toktok
 
 * teafiles
 
 * batchsend
+** nimpy
+
+* wayland
 
 * gameoflife
 
@@ -3874,9 +10898,14 @@
 
 * shoco
 
-* github-zacharycarter-freetype
-
 * brainfuck
+** docopt
+*** regex
+**** unicodeplus
+***** unicodedb
+***** segmentation
+****** unicodedb
+**** unicodedb
 
 * nimlz4
 
@@ -3888,19 +10917,22 @@
 
 * unchained
 
+* stb_image
+
 * asynctools
 
 * karax
-
-* stb_image
+** dotenv
+** ws
 
 * vector
 
 * zhsh
 
-* woocommerce-api-nim
-
 * xio
+
+* nester
+** cligen
 
 * httpform
 
@@ -3915,10 +10947,16 @@
 * niminst
 
 * notificatcher
+** nimpng
+** dbus
+*** c2nim
 
 * spfun
 
 * jestercookiemsgs
+** jesterwithplugins
+*** httpbeast
+**** asynctools
 
 * gravatar
 
@@ -3929,34 +10967,79 @@
 * controlstructures
 
 * rocksdb
+** stew
+** tempfile
 
 * subviewer
 
 * lrparser
 
 * nimraylib_now
+** regex
+*** unicodeplus
+**** unicodedb
+**** segmentation
+***** unicodedb
+*** unicodedb
+** c2nim
 
 * nim_chacha20_poly1305
+** stint
+*** stew
 
 * fnv
+** stint
+*** stew
 
 * capstone
 
 * ansiwave
+** zippy
+** illwill
+** ansiutils
+** illwave
+** paramidi
+** stb_image
+** chrono
+*** zip
+** parasound
+** wavecore
+*** urlly
+*** flatty
+*** zippy
+*** ansiutils
+*** paramidi
+*** threading
+*** puppy
+**** urlly
+**** zippy
+**** winim
+**** libcurl
+** nimwave
+*** ansiutils
+*** illwave
+** pararules
+** paramidi_soundfonts
 
 * unalix
+** htmlunescape
+
+* supersnappy
 
 * nimgl
 
 * jestergeoip
+** jesterwithplugins
+*** httpbeast
+**** asynctools
 
 * plnim
-
-* supersnappy
+** pgxcrown
 
 * shaname
 
 * procs
+** cligen
 
 * fontconfig
 
