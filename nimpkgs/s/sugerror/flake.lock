@@ -36,7 +36,52 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "sugerror-master": "sugerror-master"
+      }
+    },
+    "src-sugerror-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1542304863,
+        "narHash": "sha256-+wL5mU53nKlKHxrObXXveN9sP3sN0PSH2QJhs3vspeE=",
+        "owner": "quelklef",
+        "repo": "nim-sugerror",
+        "rev": "14c5a2ad13bebc3ea0a57958d7cb59a0055b21d6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "quelklef",
+        "ref": "refs/heads/master",
+        "repo": "nim-sugerror",
+        "type": "github"
+      }
+    },
+    "sugerror-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sugerror-master": "src-sugerror-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1659714708,
+        "narHash": "sha256-g0PHTpgZacGUBFUtc8uJytpV0fJzSCQHDrz5j4qA0sg=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sugerror",
+        "rev": "a8ee126b3d02bb9f1a8d85725c61347737b70d54",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sugerror",
+        "type": "github"
       }
     }
   },

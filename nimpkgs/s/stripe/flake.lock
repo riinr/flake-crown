@@ -36,7 +36,52 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "stripe-master": "stripe-master"
+      }
+    },
+    "src-stripe-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1630606494,
+        "narHash": "sha256-VKPoC2G5biXIAFDrJcM+HB8Yp9z6ERnVVQt9RCp9rk4=",
+        "owner": "iffy",
+        "repo": "nim-stripe",
+        "rev": "535a450721d0e77099fa82e31bc73304251cadc6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "iffy",
+        "ref": "refs/heads/master",
+        "repo": "nim-stripe",
+        "type": "github"
+      }
+    },
+    "stripe-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-stripe-master": "src-stripe-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1659714704,
+        "narHash": "sha256-XLlwFnc2l4NLVjPE8YfxxZIfkkoUPKdQUkSCaSP558k=",
+        "owner": "nim-nix-pkgs",
+        "repo": "stripe",
+        "rev": "74663812ab7fabe7e0bfc6eaf642b59672d41cbd",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "stripe",
+        "type": "github"
       }
     }
   },

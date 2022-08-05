@@ -1,0 +1,137 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "wlroots-main": "wlroots-main"
+      }
+    },
+    "src-wayland-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1659233344,
+        "narHash": "sha256-DbbeB6rVCMkkKmPT4dqgNpgs5ygaNVqfv24zkxbojB0=",
+        "owner": "j-james",
+        "repo": "nim-wayland",
+        "rev": "d6e153f308bdd51c108d7f6f44d773f28a6cccd0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "j-james",
+        "ref": "refs/heads/main",
+        "repo": "nim-wayland",
+        "type": "github"
+      }
+    },
+    "src-wlroots-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1659513717,
+        "narHash": "sha256-XCNNadeAVMiOxmYsg4yT4/tQsEvuqtAnQWvAlsoGvaA=",
+        "owner": "j-james",
+        "repo": "nim-wlroots",
+        "rev": "b37019ef35381e8aba8728175486d348122f7f7d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "j-james",
+        "ref": "refs/heads/main",
+        "repo": "nim-wlroots",
+        "type": "github"
+      }
+    },
+    "wayland": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "wlroots-main",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "wlroots-main",
+          "nixpkgs"
+        ],
+        "src-wayland-main": "src-wayland-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1659475822,
+        "narHash": "sha256-2HzW/8d0piJYPqzIjnLsPKESX6AaG+1SrvdFMbQ7gl4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "wayland",
+        "rev": "cc858d95a94a357022691fa3d0983cde66f9bbec",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "wayland",
+        "type": "github"
+      }
+    },
+    "wlroots-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-wlroots-main": "src-wlroots-main",
+        "wayland": "wayland"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1659470832,
+        "narHash": "sha256-VSglliLdDfBlM/YoYBlASLj0CgkH09S9DFSCKouU/7U=",
+        "owner": "nim-nix-pkgs",
+        "repo": "wlroots",
+        "rev": "f6e682b5133983c86a63897a29c59e6b128c6df4",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "wlroots",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

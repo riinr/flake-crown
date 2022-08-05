@@ -36,7 +36,52 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "suffer-master": "suffer-master"
+      }
+    },
+    "src-suffer-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1593156409,
+        "narHash": "sha256-Xq+alPP6hfhc6GYEBgne2+iur9M8kr3F1OjmUPB3u5E=",
+        "owner": "emekoi",
+        "repo": "suffer",
+        "rev": "773dcff99a4ab2575f9c296949009a0485c32c53",
+        "type": "github"
+      },
+      "original": {
+        "owner": "emekoi",
+        "ref": "refs/heads/master",
+        "repo": "suffer",
+        "type": "github"
+      }
+    },
+    "suffer-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-suffer-master": "src-suffer-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1659714707,
+        "narHash": "sha256-PHPvyvJzkMz0SkWKCkTG5HMhXjg2Rwczoq+FWItLxDQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "suffer",
+        "rev": "c9792b149dc9b6ba7b7c9a714941def19db7b00d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "suffer",
+        "type": "github"
       }
     }
   },

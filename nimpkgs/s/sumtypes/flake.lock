@@ -36,7 +36,52 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "sumtypes-master": "sumtypes-master"
+      }
+    },
+    "src-sumtypes-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1645869460,
+        "narHash": "sha256-++Mm4UcTmwQL05DVJFWbSFyPlSIdEZ0FQMa5YWI4LII=",
+        "owner": "beef331",
+        "repo": "sumtypes",
+        "rev": "e0951418317195bce2b867a0d9c9ec9d19de2ca5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "beef331",
+        "ref": "refs/heads/master",
+        "repo": "sumtypes",
+        "type": "github"
+      }
+    },
+    "sumtypes-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-sumtypes-master": "src-sumtypes-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1659714708,
+        "narHash": "sha256-h+TJRQrv/RFgoV5kuRdd9r0Py9qB6fNNwSdPGpNge1U=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sumtypes",
+        "rev": "ba5eb504073d3dcf975ad65b33922936b780ec59",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sumtypes",
+        "type": "github"
       }
     }
   },

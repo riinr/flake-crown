@@ -1,0 +1,329 @@
+{
+  "nodes": {
+    "cligen": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "kiwifydownload-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "kiwifydownload-master",
+          "nixpkgs"
+        ],
+        "src-cligen-v1_5_27": "src-cligen-v1_5_27"
+      },
+      "locked": {
+        "dir": "v1_5_27",
+        "lastModified": 1659475212,
+        "narHash": "sha256-cDZuFz+x4VxTik2rLNE2PhsDsrIkGYMeqH6hVVoVolU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "cligen",
+        "rev": "811ab77f1f703fb5b1e786dcd9e73442e0dee052",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_5_27",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "cligen_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "kiwifydownload-master",
+          "vimeo",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "kiwifydownload-master",
+          "vimeo",
+          "nixpkgs"
+        ],
+        "src-cligen-v1_5_27": "src-cligen-v1_5_27_2"
+      },
+      "locked": {
+        "dir": "v1_5_27",
+        "lastModified": 1659475212,
+        "narHash": "sha256-cDZuFz+x4VxTik2rLNE2PhsDsrIkGYMeqH6hVVoVolU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "cligen",
+        "rev": "811ab77f1f703fb5b1e786dcd9e73442e0dee052",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_5_27",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "kiwifydownload-master": {
+      "inputs": {
+        "cligen": "cligen",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-kiwifyDownload-master": "src-kiwifyDownload-master",
+        "util": "util",
+        "vimeo": "vimeo"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1659477495,
+        "narHash": "sha256-XQx4QTpO/KHMAi2n2HeO9/QynXSe8UtlOOqcAmttP7E=",
+        "owner": "nim-nix-pkgs",
+        "repo": "kiwifydownload",
+        "rev": "5e8289c4f78385b17acf314291115eb6a6cf6712",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "kiwifydownload",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "kiwifydownload-master": "kiwifydownload-master",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-cligen-v1_5_27": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1659388587,
+        "narHash": "sha256-lHgSopdByTcrectTdTO1BVwI3fPRRdL3pcnJSuhTDDg=",
+        "owner": "c-blake",
+        "repo": "cligen",
+        "rev": "1cad3607553f24556176b2c883a1796abfd7375c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "c-blake",
+        "ref": "refs/tags/v1.5.27",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "src-cligen-v1_5_27_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1659388587,
+        "narHash": "sha256-lHgSopdByTcrectTdTO1BVwI3fPRRdL3pcnJSuhTDDg=",
+        "owner": "c-blake",
+        "repo": "cligen",
+        "rev": "1cad3607553f24556176b2c883a1796abfd7375c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "c-blake",
+        "ref": "refs/tags/v1.5.27",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "src-kiwifyDownload-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1659123158,
+        "narHash": "sha256-kaQbZTnL9GbPscmacaSiyUIx/9rZDRnWHXbTNHGppO4=",
+        "owner": "thisago",
+        "repo": "kiwifyDownload",
+        "rev": "e567267a02a136b88e19130aee42a51418b618cf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thisago",
+        "ref": "refs/heads/master",
+        "repo": "kiwifyDownload",
+        "type": "github"
+      }
+    },
+    "src-util-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1659121216,
+        "narHash": "sha256-wJWFO0gCjfI5g1WUqPSJ67G+s0VHHp5QT81FraOJA00=",
+        "owner": "thisago",
+        "repo": "util",
+        "rev": "0aaed63043588baa697e0346d2a3086069a63a20",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thisago",
+        "ref": "refs/heads/master",
+        "repo": "util",
+        "type": "github"
+      }
+    },
+    "src-util-master_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1659121216,
+        "narHash": "sha256-wJWFO0gCjfI5g1WUqPSJ67G+s0VHHp5QT81FraOJA00=",
+        "owner": "thisago",
+        "repo": "util",
+        "rev": "0aaed63043588baa697e0346d2a3086069a63a20",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thisago",
+        "ref": "refs/heads/master",
+        "repo": "util",
+        "type": "github"
+      }
+    },
+    "src-vimeo-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1659118453,
+        "narHash": "sha256-zgvBcYTWsJb6470XT485ciO1xi2hkK7azrfVcjbuQXQ=",
+        "owner": "thisago",
+        "repo": "vimeo",
+        "rev": "66b8c61a9069fb8d6068ff1a151774b1602cb8a2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thisago",
+        "ref": "refs/heads/master",
+        "repo": "vimeo",
+        "type": "github"
+      }
+    },
+    "util": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "kiwifydownload-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "kiwifydownload-master",
+          "nixpkgs"
+        ],
+        "src-util-master": "src-util-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1659475806,
+        "narHash": "sha256-2FZT+pEGC8mat1Fd4gjKlKxnwzz72Ci1meoGs/DpX30=",
+        "owner": "nim-nix-pkgs",
+        "repo": "util",
+        "rev": "d34c336fbbd27e7315a2179b7a5bc0cc97b35e09",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "util",
+        "type": "github"
+      }
+    },
+    "util_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "kiwifydownload-master",
+          "vimeo",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "kiwifydownload-master",
+          "vimeo",
+          "nixpkgs"
+        ],
+        "src-util-master": "src-util-master_2"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1659475806,
+        "narHash": "sha256-2FZT+pEGC8mat1Fd4gjKlKxnwzz72Ci1meoGs/DpX30=",
+        "owner": "nim-nix-pkgs",
+        "repo": "util",
+        "rev": "d34c336fbbd27e7315a2179b7a5bc0cc97b35e09",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "util",
+        "type": "github"
+      }
+    },
+    "vimeo": {
+      "inputs": {
+        "cligen": "cligen_2",
+        "flakeNimbleLib": [
+          "kiwifydownload-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "kiwifydownload-master",
+          "nixpkgs"
+        ],
+        "src-vimeo-master": "src-vimeo-master",
+        "util": "util_2"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1659477032,
+        "narHash": "sha256-F8j/1e4knRxudYMv/+5F9YFZlgtLIDvN4rMWq9pSagk=",
+        "owner": "nim-nix-pkgs",
+        "repo": "vimeo",
+        "rev": "2471919ff36dd4dd2f06efe1e206f54636f88fd8",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "vimeo",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

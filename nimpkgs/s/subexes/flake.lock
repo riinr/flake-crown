@@ -36,7 +36,54 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "subexes-master": "subexes-master"
+      }
+    },
+    "src-subexes-master": {
+      "flake": false,
+      "locked": {
+        "dir": "subexes",
+        "lastModified": 1575184370,
+        "narHash": "sha256-7Z6gJF+xQybtH77senj1R9a4APhtWH3QzDqSZPNrz0w=",
+        "owner": "nim-lang",
+        "repo": "graveyard",
+        "rev": "c6a627c07abcc2eb040be2a6cc809f2ef1aecb78",
+        "type": "github"
+      },
+      "original": {
+        "dir": "subexes",
+        "owner": "nim-lang",
+        "ref": "refs/heads/master",
+        "repo": "graveyard",
+        "type": "github"
+      }
+    },
+    "subexes-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-subexes-master": "src-subexes-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1659714706,
+        "narHash": "sha256-mKJxVpSkwQD0QL3xpv8tw4Oata0s0sQUzyxu4d5IsUQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "subexes",
+        "rev": "ac2ea9ec18515b75e1e2eaea9eebfe19996f8098",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "subexes",
+        "type": "github"
       }
     }
   },
