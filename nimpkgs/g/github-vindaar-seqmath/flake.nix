@@ -47,6 +47,14 @@
   inputs."seqmath-v0_1_13".inputs.nixpkgs.follows = "nixpkgs";
   inputs."seqmath-v0_1_13".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."seqmath-v0_1_15".dir   = "v0_1_15";
+  inputs."seqmath-v0_1_15".owner = "nim-nix-pkgs";
+  inputs."seqmath-v0_1_15".ref   = "master";
+  inputs."seqmath-v0_1_15".repo  = "seqmath";
+  inputs."seqmath-v0_1_15".type  = "github";
+  inputs."seqmath-v0_1_15".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."seqmath-v0_1_15".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."seqmath-v0_1_3".dir   = "v0_1_3";
   inputs."seqmath-v0_1_3".owner = "nim-nix-pkgs";
   inputs."seqmath-v0_1_3".ref   = "master";

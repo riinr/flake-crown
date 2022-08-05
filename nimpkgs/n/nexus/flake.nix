@@ -47,6 +47,30 @@
   inputs."nexus-v0_1_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nexus-v0_1_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."nexus-v0_1_4".dir   = "v0_1_4";
+  inputs."nexus-v0_1_4".owner = "nim-nix-pkgs";
+  inputs."nexus-v0_1_4".ref   = "master";
+  inputs."nexus-v0_1_4".repo  = "nexus";
+  inputs."nexus-v0_1_4".type  = "github";
+  inputs."nexus-v0_1_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nexus-v0_1_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."nexus-v0_1_4_1".dir   = "v0_1_4_1";
+  inputs."nexus-v0_1_4_1".owner = "nim-nix-pkgs";
+  inputs."nexus-v0_1_4_1".ref   = "master";
+  inputs."nexus-v0_1_4_1".repo  = "nexus";
+  inputs."nexus-v0_1_4_1".type  = "github";
+  inputs."nexus-v0_1_4_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nexus-v0_1_4_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."nexus-v0_1_4_2".dir   = "v0_1_4_2";
+  inputs."nexus-v0_1_4_2".owner = "nim-nix-pkgs";
+  inputs."nexus-v0_1_4_2".ref   = "master";
+  inputs."nexus-v0_1_4_2".repo  = "nexus";
+  inputs."nexus-v0_1_4_2".type  = "github";
+  inputs."nexus-v0_1_4_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nexus-v0_1_4_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

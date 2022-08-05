@@ -1,0 +1,68 @@
+{
+  "name": "nbcnews",
+  "url": "https://github.com/thisago/nbcnews",
+  "method": "git",
+  "tags": [],
+  "description": "NBC News scraper",
+  "license": "gpl-3.0-only",
+  "web": "https://github.com/thisago/nbcnews",
+  "refs": [
+    "refs/heads/master",
+    ""
+  ],
+  "heads": [
+    {
+      "name": "nbcnews",
+      "version": "1.0.4",
+      "author": "Thiago Navarro",
+      "desc": "NBC News scraper",
+      "license": "gpl-3.0-only",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "scraper",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://gitlab.com/lurlo/useragent",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "nbcnews"
+      ],
+      "binDir": "build",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/master"
+    }
+  ]
+}

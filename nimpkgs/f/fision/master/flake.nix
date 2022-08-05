@@ -168,7 +168,7 @@
   inputs."datamancer".owner = "nim-nix-pkgs";
   inputs."datamancer".ref   = "master";
   inputs."datamancer".repo  = "datamancer";
-  inputs."datamancer".dir   = "v0_2_9";
+  inputs."datamancer".dir   = "v0_3_4";
   inputs."datamancer".type  = "github";
   inputs."datamancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."datamancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -232,7 +232,7 @@
   inputs."ggplotnim".owner = "nim-nix-pkgs";
   inputs."ggplotnim".ref   = "master";
   inputs."ggplotnim".repo  = "ggplotnim";
-  inputs."ggplotnim".dir   = "v0_5_1";
+  inputs."ggplotnim".dir   = "v0_5_3";
   inputs."ggplotnim".type  = "github";
   inputs."ggplotnim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ggplotnim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
