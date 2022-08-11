@@ -103,6 +103,14 @@
   inputs."siwin-0_6_5".inputs.nixpkgs.follows = "nixpkgs";
   inputs."siwin-0_6_5".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."siwin-0_7".dir   = "0_7";
+  inputs."siwin-0_7".owner = "nim-nix-pkgs";
+  inputs."siwin-0_7".ref   = "master";
+  inputs."siwin-0_7".repo  = "siwin";
+  inputs."siwin-0_7".type  = "github";
+  inputs."siwin-0_7".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."siwin-0_7".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."siwin-v0_3".dir   = "v0_3";
   inputs."siwin-v0_3".owner = "nim-nix-pkgs";
   inputs."siwin-v0_3".ref   = "master";

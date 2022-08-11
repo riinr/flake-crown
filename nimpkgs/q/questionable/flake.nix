@@ -55,6 +55,14 @@
   inputs."questionable-0_10_4".inputs.nixpkgs.follows = "nixpkgs";
   inputs."questionable-0_10_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."questionable-0_10_5".dir   = "0_10_5";
+  inputs."questionable-0_10_5".owner = "nim-nix-pkgs";
+  inputs."questionable-0_10_5".ref   = "master";
+  inputs."questionable-0_10_5".repo  = "questionable";
+  inputs."questionable-0_10_5".type  = "github";
+  inputs."questionable-0_10_5".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."questionable-0_10_5".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."questionable-0_2_0".dir   = "0_2_0";
   inputs."questionable-0_2_0".owner = "nim-nix-pkgs";
   inputs."questionable-0_2_0".ref   = "master";
