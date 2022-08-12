@@ -1,0 +1,108 @@
+{
+  "nodes": {
+    "cligen": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-cligen-v1_5_27": "src-cligen-v1_5_27"
+      },
+      "locked": {
+        "dir": "v1_5_27",
+        "lastModified": 1660262956,
+        "narHash": "sha256-5WDURPkVbugmX3TUpX/6b9M37LnBafVOEvLhMPSI5HQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "cligen",
+        "rev": "2f2194085baa8e3966223a987962ccd04e15e35f",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_5_27",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-JEYCjAFJQK0JGe2ApyGu/+doxzTraT+g1LP3npXnuBI=",
+        "path": "/nix/store/9rrny83wyfn6vg2znk0mdndhp9dkw32w-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "cligen": "cligen",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-grAlg-0_3_0": "src-grAlg-0_3_0"
+      }
+    },
+    "src-cligen-v1_5_27": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1659388587,
+        "narHash": "sha256-lHgSopdByTcrectTdTO1BVwI3fPRRdL3pcnJSuhTDDg=",
+        "owner": "c-blake",
+        "repo": "cligen",
+        "rev": "1cad3607553f24556176b2c883a1796abfd7375c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "c-blake",
+        "ref": "refs/tags/v1.5.27",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "src-grAlg-0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1659722948,
+        "narHash": "sha256-C8B5AaOTbrW2KZB0Qzu+VFvJbTphfc5CU/o8eL6hazo=",
+        "owner": "c-blake",
+        "repo": "gralg",
+        "rev": "92dfd67d5ea4fc78d89719a052f337905d8b52b4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "c-blake",
+        "ref": "refs/tags/0.3.0",
+        "repo": "gralg",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

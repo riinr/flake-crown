@@ -1,0 +1,90 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-JEYCjAFJQK0JGe2ApyGu/+doxzTraT+g1LP3npXnuBI=",
+        "path": "/nix/store/9rrny83wyfn6vg2znk0mdndhp9dkw32w-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "simpleargs-main": "simpleargs-main"
+      }
+    },
+    "simpleargs-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-simpleargs-main": "src-simpleargs-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1660200575,
+        "narHash": "sha256-8GahK3FyAoWsEQVdaDlaHh/pMd5w9YcEMLxeGnPRayI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "simpleargs",
+        "rev": "4421cc0c543eb5dbc3eb7a443b7408da0161d470",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "simpleargs",
+        "type": "github"
+      }
+    },
+    "src-simpleargs-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1660127553,
+        "narHash": "sha256-2Ge+iIS0wVqNpg1egRGxn3QvSI+xlBuDsn0BvoTdluU=",
+        "owner": "HTGenomeAnalysisUnit",
+        "repo": "nim-simpleargs",
+        "rev": "d5df9fae2216d60cb2655b0522116b09e7b06975",
+        "type": "github"
+      },
+      "original": {
+        "owner": "HTGenomeAnalysisUnit",
+        "ref": "refs/heads/main",
+        "repo": "nim-simpleargs",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
