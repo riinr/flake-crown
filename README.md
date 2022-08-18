@@ -21,7 +21,9 @@ nix run github:nim-nix-pkgs/maze -- -w:0 -r:1 -W:10 -H:10 \
   | nix run github:nim-nix-pkgs/gameoflife
 
 # Using hldiff
-git log -p|nix run github:nim-nix-pkgs/hldiff|less -R
+git log -p \
+  | nix run github:nim-nix-pkgs/hldiff \
+  | less -R
 ```
 
 Or in Flake like
