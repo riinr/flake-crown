@@ -12,11 +12,11 @@
       },
       "locked": {
         "dir": "0_3_11",
-        "lastModified": 1659724139,
-        "narHash": "sha256-O7b+sjm5ymRiepn4bY8gyox2ql4KJ4aaxsfztld7+og=",
+        "lastModified": 1660779236,
+        "narHash": "sha256-EgeORwTGrlGO/tMK2eUjKY7MCPXG2TSCdLtBWp9H7ko=",
         "owner": "nim-nix-pkgs",
         "repo": "ffmpeg",
-        "rev": "e8d22514f459c90b82c04dee2bfba0d73283c2c9",
+        "rev": "c4f1b08a9859fb27d8a053b4be9d75844bed8572",
         "type": "github"
       },
       "original": {
@@ -39,11 +39,11 @@
       },
       "locked": {
         "dir": "0_4_2",
-        "lastModified": 1659724139,
-        "narHash": "sha256-O7b+sjm5ymRiepn4bY8gyox2ql4KJ4aaxsfztld7+og=",
+        "lastModified": 1660779236,
+        "narHash": "sha256-EgeORwTGrlGO/tMK2eUjKY7MCPXG2TSCdLtBWp9H7ko=",
         "owner": "nim-nix-pkgs",
         "repo": "ffmpeg",
-        "rev": "e8d22514f459c90b82c04dee2bfba0d73283c2c9",
+        "rev": "c4f1b08a9859fb27d8a053b4be9d75844bed8572",
         "type": "github"
       },
       "original": {
@@ -66,11 +66,11 @@
       },
       "locked": {
         "dir": "0_5_0",
-        "lastModified": 1659724139,
-        "narHash": "sha256-O7b+sjm5ymRiepn4bY8gyox2ql4KJ4aaxsfztld7+og=",
+        "lastModified": 1660779236,
+        "narHash": "sha256-EgeORwTGrlGO/tMK2eUjKY7MCPXG2TSCdLtBWp9H7ko=",
         "owner": "nim-nix-pkgs",
         "repo": "ffmpeg",
-        "rev": "e8d22514f459c90b82c04dee2bfba0d73283c2c9",
+        "rev": "c4f1b08a9859fb27d8a053b4be9d75844bed8572",
         "type": "github"
       },
       "original": {
@@ -81,7 +81,7 @@
         "type": "github"
       }
     },
-    "ffmpeg-master": {
+    "ffmpeg-0_5_4": {
       "inputs": {
         "flakeNimbleLib": [
           "flakeNimbleLib"
@@ -89,19 +89,46 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "src-ffmpeg-master": "src-ffmpeg-master"
+        "src-ffmpeg-0_5_4": "src-ffmpeg-0_5_4"
       },
       "locked": {
-        "dir": "master",
-        "lastModified": 1659724139,
-        "narHash": "sha256-O7b+sjm5ymRiepn4bY8gyox2ql4KJ4aaxsfztld7+og=",
+        "dir": "0_5_4",
+        "lastModified": 1660779236,
+        "narHash": "sha256-EgeORwTGrlGO/tMK2eUjKY7MCPXG2TSCdLtBWp9H7ko=",
         "owner": "nim-nix-pkgs",
         "repo": "ffmpeg",
-        "rev": "e8d22514f459c90b82c04dee2bfba0d73283c2c9",
+        "rev": "c4f1b08a9859fb27d8a053b4be9d75844bed8572",
         "type": "github"
       },
       "original": {
-        "dir": "master",
+        "dir": "0_5_4",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ffmpeg",
+        "type": "github"
+      }
+    },
+    "ffmpeg-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-ffmpeg-main": "src-ffmpeg-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1660779236,
+        "narHash": "sha256-EgeORwTGrlGO/tMK2eUjKY7MCPXG2TSCdLtBWp9H7ko=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ffmpeg",
+        "rev": "c4f1b08a9859fb27d8a053b4be9d75844bed8572",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "ffmpeg",
@@ -132,8 +159,8 @@
     "nixpkgs": {
       "locked": {
         "lastModified": 0,
-        "narHash": "sha256-JEYCjAFJQK0JGe2ApyGu/+doxzTraT+g1LP3npXnuBI=",
-        "path": "/nix/store/9rrny83wyfn6vg2znk0mdndhp9dkw32w-source",
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
         "type": "path"
       },
       "original": {
@@ -146,7 +173,8 @@
         "ffmpeg-0_3_11": "ffmpeg-0_3_11",
         "ffmpeg-0_4_2": "ffmpeg-0_4_2",
         "ffmpeg-0_5_0": "ffmpeg-0_5_0",
-        "ffmpeg-master": "ffmpeg-master",
+        "ffmpeg-0_5_4": "ffmpeg-0_5_4",
+        "ffmpeg-main": "ffmpeg-main",
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs"
       }
@@ -202,19 +230,36 @@
         "type": "github"
       }
     },
-    "src-ffmpeg-master": {
+    "src-ffmpeg-0_5_4": {
       "flake": false,
       "locked": {
-        "lastModified": 1658561377,
-        "narHash": "sha256-phD7/1H5e9IA4slJvCm4h7m4GPZmbzwJnfK6T9osXdk=",
+        "lastModified": 1660537942,
+        "narHash": "sha256-KxvZLm719Aawm68XQ/9GrOqSdZGCyMhpK6Ccvbf6iHY=",
         "owner": "momeemt",
         "repo": "ffmpeg.nim",
-        "rev": "95fd47f0a25a7afcee5c1138fae33c167d9d0143",
+        "rev": "06812b4d50a02fd35cafa744b9443e6d125ecf85",
         "type": "github"
       },
       "original": {
         "owner": "momeemt",
-        "ref": "refs/heads/master",
+        "ref": "refs/tags/0.5.4",
+        "repo": "ffmpeg.nim",
+        "type": "github"
+      }
+    },
+    "src-ffmpeg-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1660550008,
+        "narHash": "sha256-HcILdNdGbcz6T/sFS7JKtaMcTu68sUISHwQ8/pWtGTM=",
+        "owner": "momeemt",
+        "repo": "ffmpeg.nim",
+        "rev": "d142e0a1cf4d8fa0cd43f28e6e9b7b04c6fef217",
+        "type": "github"
+      },
+      "original": {
+        "owner": "momeemt",
+        "ref": "refs/heads/main",
         "repo": "ffmpeg.nim",
         "type": "github"
       }

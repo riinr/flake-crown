@@ -768,7 +768,7 @@
   inputs."telebot".owner = "nim-nix-pkgs";
   inputs."telebot".ref   = "master";
   inputs."telebot".repo  = "telebot";
-  inputs."telebot".dir   = "2022_04_17";
+  inputs."telebot".dir   = "2022_08_14";
   inputs."telebot".type  = "github";
   inputs."telebot".inputs.nixpkgs.follows = "nixpkgs";
   inputs."telebot".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -864,7 +864,7 @@
   inputs."websocket".owner = "nim-nix-pkgs";
   inputs."websocket".ref   = "master";
   inputs."websocket".repo  = "websocket";
-  inputs."websocket".dir   = "0_5_0";
+  inputs."websocket".dir   = "v0_5_1";
   inputs."websocket".type  = "github";
   inputs."websocket".inputs.nixpkgs.follows = "nixpkgs";
   inputs."websocket".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -872,7 +872,7 @@
   inputs."winim".owner = "nim-nix-pkgs";
   inputs."winim".ref   = "master";
   inputs."winim".repo  = "winim";
-  inputs."winim".dir   = "3_8_1";
+  inputs."winim".dir   = "3_9_0";
   inputs."winim".type  = "github";
   inputs."winim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."winim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

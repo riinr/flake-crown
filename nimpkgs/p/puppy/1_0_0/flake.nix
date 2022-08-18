@@ -24,7 +24,7 @@
   inputs."winim".owner = "nim-nix-pkgs";
   inputs."winim".ref   = "master";
   inputs."winim".repo  = "winim";
-  inputs."winim".dir   = "3_8_1";
+  inputs."winim".dir   = "3_9_0";
   inputs."winim".type  = "github";
   inputs."winim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."winim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

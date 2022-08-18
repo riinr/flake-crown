@@ -16,7 +16,7 @@
   inputs."zfblast".owner = "nim-nix-pkgs";
   inputs."zfblast".ref   = "master";
   inputs."zfblast".repo  = "zfblast";
-  inputs."zfblast".dir   = "v0_2_4";
+  inputs."zfblast".dir   = "v0_2_7";
   inputs."zfblast".type  = "github";
   inputs."zfblast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfblast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

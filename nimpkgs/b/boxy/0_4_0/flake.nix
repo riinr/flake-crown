@@ -16,7 +16,7 @@
   inputs."shady".owner = "nim-nix-pkgs";
   inputs."shady".ref   = "master";
   inputs."shady".repo  = "shady";
-  inputs."shady".dir   = "0_1_1";
+  inputs."shady".dir   = "0_1_3";
   inputs."shady".type  = "github";
   inputs."shady".inputs.nixpkgs.follows = "nixpkgs";
   inputs."shady".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

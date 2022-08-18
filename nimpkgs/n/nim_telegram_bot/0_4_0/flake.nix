@@ -24,7 +24,7 @@
   inputs."telebot".owner = "nim-nix-pkgs";
   inputs."telebot".ref   = "master";
   inputs."telebot".repo  = "telebot";
-  inputs."telebot".dir   = "2022_04_17";
+  inputs."telebot".dir   = "2022_08_14";
   inputs."telebot".type  = "github";
   inputs."telebot".inputs.nixpkgs.follows = "nixpkgs";
   inputs."telebot".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -16,7 +16,7 @@
   inputs."websocket".owner = "nim-nix-pkgs";
   inputs."websocket".ref   = "master";
   inputs."websocket".repo  = "websocket";
-  inputs."websocket".dir   = "0_5_0";
+  inputs."websocket".dir   = "v0_5_1";
   inputs."websocket".type  = "github";
   inputs."websocket".inputs.nixpkgs.follows = "nixpkgs";
   inputs."websocket".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

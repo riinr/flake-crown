@@ -32,7 +32,7 @@
   inputs."static_server".owner = "nim-nix-pkgs";
   inputs."static_server".ref   = "master";
   inputs."static_server".repo  = "static_server";
-  inputs."static_server".dir   = "v2_2_0";
+  inputs."static_server".dir   = "v2_2_1";
   inputs."static_server".type  = "github";
   inputs."static_server".inputs.nixpkgs.follows = "nixpkgs";
   inputs."static_server".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
