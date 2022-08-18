@@ -87,6 +87,14 @@
   inputs."odbcn-v0_4_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."odbcn-v0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."odbcn-v0_4_1".dir   = "v0_4_1";
+  inputs."odbcn-v0_4_1".owner = "nim-nix-pkgs";
+  inputs."odbcn-v0_4_1".ref   = "master";
+  inputs."odbcn-v0_4_1".repo  = "odbcn";
+  inputs."odbcn-v0_4_1".type  = "github";
+  inputs."odbcn-v0_4_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."odbcn-v0_4_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

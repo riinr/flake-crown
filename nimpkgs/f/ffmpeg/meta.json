@@ -101,38 +101,20 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/tags/0.5.0"
-    }
-  ],
-  "description": "ffmpeg.nim is the Nim binding for FFMpeg(4.3.2).",
-  "license": "MIT",
-  "web": "https://github.com/momeemt/ffmpeg.nim",
-  "refs": [
-    "refs/heads/add-license-1",
-    "refs/heads/master",
-    "refs/heads/ver.0.5.0",
-    "refs/heads/version0.3",
-    "refs/tags/0.3.11",
-    "refs/tags/0.4.2",
-    "refs/tags/0.5.0",
-    ""
-  ],
-  "heads": [
+    },
     {
       "name": "ffmpeg",
-      "version": "0.5.0",
+      "version": "0.5.4",
       "author": "momeemt",
-      "desc": "ffmpeg.nim is the Nim binding for FFMpeg(5.0).",
-      "license": "GPL-3.0-or-later",
+      "desc": "ffmpeg.nim is the Nim binding for FFmpeg 5.0.",
+      "license": "LGPL-2.1-or-later",
       "skipDirs": [],
       "skipFiles": [],
       "skipExt": [],
       "installDirs": [
-        "cinclude",
-        "ffmpeg"
+        "cinclude"
       ],
-      "installFiles": [
-        "ffmpeg.nim"
-      ],
+      "installFiles": [],
       "installExt": [],
       "requires": [
         {
@@ -148,7 +130,52 @@
       "binDir": "",
       "srcDir": "src",
       "backend": "c",
-      "ref": "refs/heads/master"
+      "ref": "refs/tags/0.5.4"
+    }
+  ],
+  "description": "ffmpeg.nim is the Nim binding for FFMpeg(4.3.2).",
+  "license": "MIT",
+  "web": "https://github.com/momeemt/ffmpeg.nim",
+  "refs": [
+    "refs/heads/add-license-1",
+    "refs/heads/main",
+    "refs/heads/ver.0.5.0",
+    "refs/heads/ver.0.5.4",
+    "refs/heads/version0.3",
+    "refs/tags/0.3.11",
+    "refs/tags/0.4.2",
+    "refs/tags/0.5.0",
+    "refs/tags/0.5.4",
+    ""
+  ],
+  "heads": [
+    {
+      "name": "ffmpeg",
+      "version": "0.5.5",
+      "author": "momeemt",
+      "desc": "ffmpeg.nim is the Nim binding for FFmpeg 5.0.",
+      "license": "LGPL-2.1-or-later",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.4"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/main"
     }
   ]
 }

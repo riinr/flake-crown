@@ -175,6 +175,30 @@
   inputs."zfblast-v0_2_4".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfblast-v0_2_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."zfblast-v0_2_5".dir   = "v0_2_5";
+  inputs."zfblast-v0_2_5".owner = "nim-nix-pkgs";
+  inputs."zfblast-v0_2_5".ref   = "master";
+  inputs."zfblast-v0_2_5".repo  = "zfblast";
+  inputs."zfblast-v0_2_5".type  = "github";
+  inputs."zfblast-v0_2_5".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zfblast-v0_2_5".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."zfblast-v0_2_6".dir   = "v0_2_6";
+  inputs."zfblast-v0_2_6".owner = "nim-nix-pkgs";
+  inputs."zfblast-v0_2_6".ref   = "master";
+  inputs."zfblast-v0_2_6".repo  = "zfblast";
+  inputs."zfblast-v0_2_6".type  = "github";
+  inputs."zfblast-v0_2_6".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zfblast-v0_2_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."zfblast-v0_2_7".dir   = "v0_2_7";
+  inputs."zfblast-v0_2_7".owner = "nim-nix-pkgs";
+  inputs."zfblast-v0_2_7".ref   = "master";
+  inputs."zfblast-v0_2_7".repo  = "zfblast";
+  inputs."zfblast-v0_2_7".type  = "github";
+  inputs."zfblast-v0_2_7".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zfblast-v0_2_7".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

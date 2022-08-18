@@ -7,13 +7,13 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."dye-master".dir   = "master";
-  inputs."dye-master".owner = "nim-nix-pkgs";
-  inputs."dye-master".ref   = "master";
-  inputs."dye-master".repo  = "dye";
-  inputs."dye-master".type  = "github";
-  inputs."dye-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."dye-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."dye-main".dir   = "main";
+  inputs."dye-main".owner = "nim-nix-pkgs";
+  inputs."dye-main".ref   = "master";
+  inputs."dye-main".repo  = "dye";
+  inputs."dye-main".type  = "github";
+  inputs."dye-main".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."dye-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."dye-v1_0_0".dir   = "v1_0_0";
   inputs."dye-v1_0_0".owner = "nim-nix-pkgs";
@@ -70,6 +70,38 @@
   inputs."dye-v1_1_4".type  = "github";
   inputs."dye-v1_1_4".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dye-v1_1_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."dye-v1_1_5".dir   = "v1_1_5";
+  inputs."dye-v1_1_5".owner = "nim-nix-pkgs";
+  inputs."dye-v1_1_5".ref   = "master";
+  inputs."dye-v1_1_5".repo  = "dye";
+  inputs."dye-v1_1_5".type  = "github";
+  inputs."dye-v1_1_5".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."dye-v1_1_5".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."dye-v1_1_6".dir   = "v1_1_6";
+  inputs."dye-v1_1_6".owner = "nim-nix-pkgs";
+  inputs."dye-v1_1_6".ref   = "master";
+  inputs."dye-v1_1_6".repo  = "dye";
+  inputs."dye-v1_1_6".type  = "github";
+  inputs."dye-v1_1_6".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."dye-v1_1_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."dye-v1_1_7".dir   = "v1_1_7";
+  inputs."dye-v1_1_7".owner = "nim-nix-pkgs";
+  inputs."dye-v1_1_7".ref   = "master";
+  inputs."dye-v1_1_7".repo  = "dye";
+  inputs."dye-v1_1_7".type  = "github";
+  inputs."dye-v1_1_7".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."dye-v1_1_7".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."dye-v1_1_8".dir   = "v1_1_8";
+  inputs."dye-v1_1_8".owner = "nim-nix-pkgs";
+  inputs."dye-v1_1_8".ref   = "master";
+  inputs."dye-v1_1_8".repo  = "dye";
+  inputs."dye-v1_1_8".type  = "github";
+  inputs."dye-v1_1_8".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."dye-v1_1_8".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

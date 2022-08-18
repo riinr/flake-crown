@@ -15,6 +15,14 @@
   inputs."zfdbms-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfdbms-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."zfdbms-v0,0,8".dir   = "v0,0,8";
+  inputs."zfdbms-v0,0,8".owner = "nim-nix-pkgs";
+  inputs."zfdbms-v0,0,8".ref   = "master";
+  inputs."zfdbms-v0,0,8".repo  = "zfdbms";
+  inputs."zfdbms-v0,0,8".type  = "github";
+  inputs."zfdbms-v0,0,8".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zfdbms-v0,0,8".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."zfdbms-v0_0_1".dir   = "v0_0_1";
   inputs."zfdbms-v0_0_1".owner = "nim-nix-pkgs";
   inputs."zfdbms-v0_0_1".ref   = "master";

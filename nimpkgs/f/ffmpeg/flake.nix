@@ -7,13 +7,13 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."ffmpeg-master".dir   = "master";
-  inputs."ffmpeg-master".owner = "nim-nix-pkgs";
-  inputs."ffmpeg-master".ref   = "master";
-  inputs."ffmpeg-master".repo  = "ffmpeg";
-  inputs."ffmpeg-master".type  = "github";
-  inputs."ffmpeg-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."ffmpeg-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."ffmpeg-main".dir   = "main";
+  inputs."ffmpeg-main".owner = "nim-nix-pkgs";
+  inputs."ffmpeg-main".ref   = "master";
+  inputs."ffmpeg-main".repo  = "ffmpeg";
+  inputs."ffmpeg-main".type  = "github";
+  inputs."ffmpeg-main".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ffmpeg-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."ffmpeg-0_3_11".dir   = "0_3_11";
   inputs."ffmpeg-0_3_11".owner = "nim-nix-pkgs";
@@ -38,6 +38,14 @@
   inputs."ffmpeg-0_5_0".type  = "github";
   inputs."ffmpeg-0_5_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ffmpeg-0_5_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ffmpeg-0_5_4".dir   = "0_5_4";
+  inputs."ffmpeg-0_5_4".owner = "nim-nix-pkgs";
+  inputs."ffmpeg-0_5_4".ref   = "master";
+  inputs."ffmpeg-0_5_4".repo  = "ffmpeg";
+  inputs."ffmpeg-0_5_4".type  = "github";
+  inputs."ffmpeg-0_5_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ffmpeg-0_5_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

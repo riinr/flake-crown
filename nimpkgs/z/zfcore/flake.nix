@@ -151,6 +151,30 @@
   inputs."zfcore-v1_0_8-1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfcore-v1_0_8-1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."zfcore-v1_1_10".dir   = "v1_1_10";
+  inputs."zfcore-v1_1_10".owner = "nim-nix-pkgs";
+  inputs."zfcore-v1_1_10".ref   = "master";
+  inputs."zfcore-v1_1_10".repo  = "zfcore";
+  inputs."zfcore-v1_1_10".type  = "github";
+  inputs."zfcore-v1_1_10".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zfcore-v1_1_10".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."zfcore-v1_1_11".dir   = "v1_1_11";
+  inputs."zfcore-v1_1_11".owner = "nim-nix-pkgs";
+  inputs."zfcore-v1_1_11".ref   = "master";
+  inputs."zfcore-v1_1_11".repo  = "zfcore";
+  inputs."zfcore-v1_1_11".type  = "github";
+  inputs."zfcore-v1_1_11".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zfcore-v1_1_11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."zfcore-v1_1_12".dir   = "v1_1_12";
+  inputs."zfcore-v1_1_12".owner = "nim-nix-pkgs";
+  inputs."zfcore-v1_1_12".ref   = "master";
+  inputs."zfcore-v1_1_12".repo  = "zfcore";
+  inputs."zfcore-v1_1_12".type  = "github";
+  inputs."zfcore-v1_1_12".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zfcore-v1_1_12".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."zfcore-v1_1_5".dir   = "v1_1_5";
   inputs."zfcore-v1_1_5".owner = "nim-nix-pkgs";
   inputs."zfcore-v1_1_5".ref   = "master";
@@ -174,6 +198,14 @@
   inputs."zfcore-v1_1_7".type  = "github";
   inputs."zfcore-v1_1_7".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfcore-v1_1_7".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."zfcore-v1_1_9".dir   = "v1_1_9";
+  inputs."zfcore-v1_1_9".owner = "nim-nix-pkgs";
+  inputs."zfcore-v1_1_9".ref   = "master";
+  inputs."zfcore-v1_1_9".repo  = "zfcore";
+  inputs."zfcore-v1_1_9".type  = "github";
+  inputs."zfcore-v1_1_9".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zfcore-v1_1_9".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
