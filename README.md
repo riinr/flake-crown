@@ -16,9 +16,12 @@ This repository contains experimental-grade, auto-generated
 # Build and execute a Nimble binary
 nix run github:nim-nix-pkgs/maze
 
-# using maze with gameoflife
+# Using maze with gameoflife
 nix run github:nim-nix-pkgs/maze -- -w:0 -r:1 -W:10 -H:10 \
   | nix run github:nim-nix-pkgs/gameoflife
+
+# Using hldiff
+git log -p|nix run github:nim-nix-pkgs/hldiff|less -R
 ```
 
 Or in Flake like
