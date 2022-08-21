@@ -56,7 +56,7 @@
   inputs."libp2p".owner = "nim-nix-pkgs";
   inputs."libp2p".ref   = "master";
   inputs."libp2p".repo  = "libp2p";
-  inputs."libp2p".dir   = "master";
+  inputs."libp2p".dir   = "unstable";
   inputs."libp2p".type  = "github";
   inputs."libp2p".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libp2p".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

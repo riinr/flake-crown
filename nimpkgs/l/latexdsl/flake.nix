@@ -23,6 +23,14 @@
   inputs."latexdsl-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."latexdsl-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."latexdsl-v0_1_10".dir   = "v0_1_10";
+  inputs."latexdsl-v0_1_10".owner = "nim-nix-pkgs";
+  inputs."latexdsl-v0_1_10".ref   = "master";
+  inputs."latexdsl-v0_1_10".repo  = "latexdsl";
+  inputs."latexdsl-v0_1_10".type  = "github";
+  inputs."latexdsl-v0_1_10".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."latexdsl-v0_1_10".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."latexdsl-v0_1_2".dir   = "v0_1_2";
   inputs."latexdsl-v0_1_2".owner = "nim-nix-pkgs";
   inputs."latexdsl-v0_1_2".ref   = "master";
@@ -70,6 +78,14 @@
   inputs."latexdsl-v0_1_7".type  = "github";
   inputs."latexdsl-v0_1_7".inputs.nixpkgs.follows = "nixpkgs";
   inputs."latexdsl-v0_1_7".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."latexdsl-v0_1_9".dir   = "v0_1_9";
+  inputs."latexdsl-v0_1_9".owner = "nim-nix-pkgs";
+  inputs."latexdsl-v0_1_9".ref   = "master";
+  inputs."latexdsl-v0_1_9".repo  = "latexdsl";
+  inputs."latexdsl-v0_1_9".type  = "github";
+  inputs."latexdsl-v0_1_9".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."latexdsl-v0_1_9".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

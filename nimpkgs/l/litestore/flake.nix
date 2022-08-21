@@ -95,6 +95,14 @@
   inputs."litestore-v1_11_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."litestore-v1_11_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."litestore-v1_12_0".dir   = "v1_12_0";
+  inputs."litestore-v1_12_0".owner = "nim-nix-pkgs";
+  inputs."litestore-v1_12_0".ref   = "master";
+  inputs."litestore-v1_12_0".repo  = "litestore";
+  inputs."litestore-v1_12_0".type  = "github";
+  inputs."litestore-v1_12_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."litestore-v1_12_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."litestore-v1_2_0".dir   = "v1_2_0";
   inputs."litestore-v1_2_0".owner = "nim-nix-pkgs";
   inputs."litestore-v1_2_0".ref   = "master";

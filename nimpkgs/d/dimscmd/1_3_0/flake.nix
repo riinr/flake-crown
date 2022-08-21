@@ -16,7 +16,7 @@
   inputs."dimscord".owner = "nim-nix-pkgs";
   inputs."dimscord".ref   = "master";
   inputs."dimscord".repo  = "dimscord";
-  inputs."dimscord".dir   = "v1_3_0";
+  inputs."dimscord".dir   = "v1_4_0";
   inputs."dimscord".type  = "github";
   inputs."dimscord".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dimscord".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
