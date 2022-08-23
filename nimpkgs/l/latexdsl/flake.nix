@@ -31,6 +31,14 @@
   inputs."latexdsl-v0_1_10".inputs.nixpkgs.follows = "nixpkgs";
   inputs."latexdsl-v0_1_10".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."latexdsl-v0_1_11".dir   = "v0_1_11";
+  inputs."latexdsl-v0_1_11".owner = "nim-nix-pkgs";
+  inputs."latexdsl-v0_1_11".ref   = "master";
+  inputs."latexdsl-v0_1_11".repo  = "latexdsl";
+  inputs."latexdsl-v0_1_11".type  = "github";
+  inputs."latexdsl-v0_1_11".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."latexdsl-v0_1_11".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."latexdsl-v0_1_2".dir   = "v0_1_2";
   inputs."latexdsl-v0_1_2".owner = "nim-nix-pkgs";
   inputs."latexdsl-v0_1_2".ref   = "master";

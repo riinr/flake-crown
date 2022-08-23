@@ -40,7 +40,7 @@
   inputs."latexdsl".owner = "nim-nix-pkgs";
   inputs."latexdsl".ref   = "master";
   inputs."latexdsl".repo  = "latexdsl";
-  inputs."latexdsl".dir   = "v0_1_10";
+  inputs."latexdsl".dir   = "v0_1_11";
   inputs."latexdsl".type  = "github";
   inputs."latexdsl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."latexdsl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

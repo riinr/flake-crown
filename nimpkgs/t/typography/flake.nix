@@ -135,6 +135,14 @@
   inputs."typography-0_7_13".inputs.nixpkgs.follows = "nixpkgs";
   inputs."typography-0_7_13".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."typography-0_7_14".dir   = "0_7_14";
+  inputs."typography-0_7_14".owner = "nim-nix-pkgs";
+  inputs."typography-0_7_14".ref   = "master";
+  inputs."typography-0_7_14".repo  = "typography";
+  inputs."typography-0_7_14".type  = "github";
+  inputs."typography-0_7_14".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."typography-0_7_14".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."typography-0_7_2".dir   = "0_7_2";
   inputs."typography-0_7_2".owner = "nim-nix-pkgs";
   inputs."typography-0_7_2".ref   = "master";

@@ -32,7 +32,7 @@
   inputs."typography".owner = "nim-nix-pkgs";
   inputs."typography".ref   = "master";
   inputs."typography".repo  = "typography";
-  inputs."typography".dir   = "0_7_13";
+  inputs."typography".dir   = "0_7_14";
   inputs."typography".type  = "github";
   inputs."typography".inputs.nixpkgs.follows = "nixpkgs";
   inputs."typography".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

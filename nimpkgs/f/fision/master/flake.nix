@@ -208,7 +208,7 @@
   inputs."fidget".owner = "nim-nix-pkgs";
   inputs."fidget".ref   = "master";
   inputs."fidget".repo  = "fidget";
-  inputs."fidget".dir   = "0_7_9";
+  inputs."fidget".dir   = "0_7_10";
   inputs."fidget".type  = "github";
   inputs."fidget".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fidget".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -896,7 +896,7 @@
   inputs."zippy".owner = "nim-nix-pkgs";
   inputs."zippy".ref   = "master";
   inputs."zippy".repo  = "zippy";
-  inputs."zippy".dir   = "0_10_3";
+  inputs."zippy".dir   = "0_10_4";
   inputs."zippy".type  = "github";
   inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

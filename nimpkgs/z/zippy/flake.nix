@@ -79,6 +79,14 @@
   inputs."zippy-0_10_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zippy-0_10_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."zippy-0_10_4".dir   = "0_10_4";
+  inputs."zippy-0_10_4".owner = "nim-nix-pkgs";
+  inputs."zippy-0_10_4".ref   = "master";
+  inputs."zippy-0_10_4".repo  = "zippy";
+  inputs."zippy-0_10_4".type  = "github";
+  inputs."zippy-0_10_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zippy-0_10_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."zippy-0_2_0".dir   = "0_2_0";
   inputs."zippy-0_2_0".owner = "nim-nix-pkgs";
   inputs."zippy-0_2_0".ref   = "master";
