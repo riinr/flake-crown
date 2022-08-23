@@ -5281,8 +5281,7 @@ digraph NimPkgs {
 
   sqlite3_abi -> sqlite3_abi
 
-  nimrcon -> nimrcon
-  nimrcon -> struct
+  libdeflate_gzip -> libdeflate_gzip
 
   crap -> crap
 
@@ -5308,11 +5307,8 @@ digraph NimPkgs {
 
   itertools -> itertools
 
-  treesitter -> treesitter
-  treesitter -> nimgen
-  nimgen -> regex
-  regex -> unicodedb
-  nimgen -> c2nim
+  nimrcon -> nimrcon
+  nimrcon -> struct
 
   alasgar -> alasgar
   alasgar -> nake
@@ -5324,6 +5320,12 @@ digraph NimPkgs {
   nimbmp -> nimbmp
 
   ballena_itcher -> ballena_itcher
+
+  treesitter -> treesitter
+  treesitter -> nimgen
+  nimgen -> regex
+  regex -> unicodedb
+  nimgen -> c2nim
 
   vmvc -> vmvc
   vmvc -> regex

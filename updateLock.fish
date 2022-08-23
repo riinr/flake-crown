@@ -61,7 +61,7 @@ while test (count $CHANGES) -gt 0
     git add */meta.json
     git add flake.{lock,nix}
     git add meta.json
-    git commit -m 'feat(nimpkgs): remove lock' .
+    git commit -m 'feat(nimpkgs): remove lock' . | cat
   end
   if test (git diff --stat --cached origin/master|wc -l) -gt 0
     git push &

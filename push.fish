@@ -13,7 +13,7 @@ for l in $PWD/nimpkgs/*/
         git add */meta.json
         git add flake.{lock,nix}
         git add meta.json
-        git commit -m 'feat(nimpkgs): update lock' .
+        git commit -m 'feat(nimpkgs): update lock' .|cat
       end
       git diff --stat --cached origin/master||echo $i failed
       if test (git diff --stat --cached origin/master|wc -l) -gt 0
