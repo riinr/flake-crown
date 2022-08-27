@@ -1,0 +1,108 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-19Ib1b7Ny+yGhnxwnH1KhhB2hvALuNuqevA6XzqkQmo=",
+        "path": "/nix/store/5mdm97ryfgnsh02h7jiragdmcgh6vbvp-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "shell": "shell",
+        "src-latexdsl-v0_1_11": "src-latexdsl-v0_1_11"
+      }
+    },
+    "shell": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-shell-v0_4_4": "src-shell-v0_4_4"
+      },
+      "locked": {
+        "dir": "v0_4_4",
+        "lastModified": 1661568723,
+        "narHash": "sha256-RKE6powCD3q2msWHBNF6BPkMNmvbIXDh/PkDeHarOF4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "shell",
+        "rev": "8b254a339c0c276668d0504f9a329f820af3686d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_4_4",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "shell",
+        "type": "github"
+      }
+    },
+    "src-latexdsl-v0_1_11": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661161505,
+        "narHash": "sha256-JMCCSiHS9mJp8BtBp5Z7hj56uywl7Zp7IHPVB7nXvl4=",
+        "owner": "Vindaar",
+        "repo": "LatexDSL",
+        "rev": "54ebd8585037e8d62b5ad511c7aac1ffcbe69471",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.1.11",
+        "repo": "LatexDSL",
+        "type": "github"
+      }
+    },
+    "src-shell-v0_4_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1644334331,
+        "narHash": "sha256-o3pYhpMTnqHi4NcuPS42e/nm5uP8rWmIQ7rBnDAOW+U=",
+        "owner": "Vindaar",
+        "repo": "shell",
+        "rev": "2e557819a9f648d1db94fafe987f889a83ae05cb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vindaar",
+        "ref": "refs/tags/v0.4.4",
+        "repo": "shell",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

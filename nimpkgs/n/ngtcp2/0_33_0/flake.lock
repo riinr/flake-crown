@@ -1,0 +1,63 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-19Ib1b7Ny+yGhnxwnH1KhhB2hvALuNuqevA6XzqkQmo=",
+        "path": "/nix/store/5mdm97ryfgnsh02h7jiragdmcgh6vbvp-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-ngtcp2-0_33_0": "src-ngtcp2-0_33_0"
+      }
+    },
+    "src-ngtcp2-0_33_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661508235,
+        "narHash": "sha256-8qjBRfvJMGkX0WmHwaov2bI0CBt84gB6ANi51DFVps0=",
+        "owner": "status-im",
+        "repo": "nim-ngtcp2",
+        "rev": "76bf92475f55728ff55a2a19b45a5fcbb4faa2ab",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/tags/0.33.0",
+        "repo": "nim-ngtcp2",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

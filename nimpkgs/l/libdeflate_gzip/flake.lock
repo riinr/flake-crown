@@ -1,0 +1,135 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "libdeflate_gzip-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libdeflate_gzip-master": "src-libdeflate_gzip-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1661565487,
+        "narHash": "sha256-NdzcWd0Yml6Na3hlAZQbbOAEhDRBFfof0t6mRoauGOc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libdeflate_gzip",
+        "rev": "a0e8a238ed209aa2b2dc6909079b9632b756314a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libdeflate_gzip",
+        "type": "github"
+      }
+    },
+    "libdeflate_gzip-v0_1_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-libdeflate_gzip-v0_1_0": "src-libdeflate_gzip-v0_1_0"
+      },
+      "locked": {
+        "dir": "v0_1_0",
+        "lastModified": 1661565487,
+        "narHash": "sha256-NdzcWd0Yml6Na3hlAZQbbOAEhDRBFfof0t6mRoauGOc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libdeflate_gzip",
+        "rev": "a0e8a238ed209aa2b2dc6909079b9632b756314a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libdeflate_gzip",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-19Ib1b7Ny+yGhnxwnH1KhhB2hvALuNuqevA6XzqkQmo=",
+        "path": "/nix/store/5mdm97ryfgnsh02h7jiragdmcgh6vbvp-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "libdeflate_gzip-master": "libdeflate_gzip-master",
+        "libdeflate_gzip-v0_1_0": "libdeflate_gzip-v0_1_0",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "src-libdeflate_gzip-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661018456,
+        "narHash": "sha256-qE0HEGIT3kRP/u976Azc5nxGISi3ia6BM0qyZkQQM1Y=",
+        "owner": "radekm",
+        "repo": "nim_libdeflate_gzip",
+        "rev": "fe5d0c534ac292c519a39b14fa0d4ccec70ddbba",
+        "type": "github"
+      },
+      "original": {
+        "owner": "radekm",
+        "ref": "refs/heads/master",
+        "repo": "nim_libdeflate_gzip",
+        "type": "github"
+      }
+    },
+    "src-libdeflate_gzip-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661018456,
+        "narHash": "sha256-qE0HEGIT3kRP/u976Azc5nxGISi3ia6BM0qyZkQQM1Y=",
+        "owner": "radekm",
+        "repo": "nim_libdeflate_gzip",
+        "rev": "fe5d0c534ac292c519a39b14fa0d4ccec70ddbba",
+        "type": "github"
+      },
+      "original": {
+        "owner": "radekm",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "nim_libdeflate_gzip",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

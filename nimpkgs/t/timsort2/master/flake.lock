@@ -1,0 +1,63 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-19Ib1b7Ny+yGhnxwnH1KhhB2hvALuNuqevA6XzqkQmo=",
+        "path": "/nix/store/5mdm97ryfgnsh02h7jiragdmcgh6vbvp-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-timsort2-master": "src-timsort2-master"
+      }
+    },
+    "src-timsort2-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1660684815,
+        "narHash": "sha256-x2scPSo/YaSgDVG0v0ryeBpueX/0hn7dT68g2YJPJnY=",
+        "owner": "xrfez",
+        "repo": "timsort",
+        "rev": "6b1d0830d2c11798fe364d3a9e67ecd5f60c498e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xrfez",
+        "ref": "refs/heads/master",
+        "repo": "timsort",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
