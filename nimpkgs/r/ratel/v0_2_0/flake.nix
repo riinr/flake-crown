@@ -21,14 +21,6 @@
   inputs."nimscripter".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimscripter".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."compiler".owner = "nim-nix-pkgs";
-  inputs."compiler".ref   = "master";
-  inputs."compiler".repo  = "compiler";
-  inputs."compiler".dir   = "v1_6_6";
-  inputs."compiler".type  = "github";
-  inputs."compiler".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."compiler".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";

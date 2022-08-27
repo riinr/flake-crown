@@ -87,6 +87,22 @@
   inputs."deser-v0_1_7".inputs.nixpkgs.follows = "nixpkgs";
   inputs."deser-v0_1_7".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."deser-v0_2_0".dir   = "v0_2_0";
+  inputs."deser-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."deser-v0_2_0".ref   = "master";
+  inputs."deser-v0_2_0".repo  = "deser";
+  inputs."deser-v0_2_0".type  = "github";
+  inputs."deser-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."deser-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."deser-v0_2_1".dir   = "v0_2_1";
+  inputs."deser-v0_2_1".owner = "nim-nix-pkgs";
+  inputs."deser-v0_2_1".ref   = "master";
+  inputs."deser-v0_2_1".repo  = "deser";
+  inputs."deser-v0_2_1".type  = "github";
+  inputs."deser-v0_2_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."deser-v0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

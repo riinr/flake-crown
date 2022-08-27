@@ -29,14 +29,6 @@
   inputs."macroutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."macroutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."compiler".owner = "nim-nix-pkgs";
-  inputs."compiler".ref   = "master";
-  inputs."compiler".repo  = "compiler";
-  inputs."compiler".dir   = "v1_6_6";
-  inputs."compiler".type  = "github";
-  inputs."compiler".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."compiler".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."nimble".owner = "nim-nix-pkgs";
   inputs."nimble".ref   = "master";
   inputs."nimble".repo  = "nimble";

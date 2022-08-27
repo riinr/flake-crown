@@ -13,14 +13,6 @@
   inputs.src-preserves-v2_0_0.repo  = "preserves-nim";
   inputs.src-preserves-v2_0_0.type  = "sourcehut";
   
-  inputs."compiler".owner = "nim-nix-pkgs";
-  inputs."compiler".ref   = "master";
-  inputs."compiler".repo  = "compiler";
-  inputs."compiler".dir   = "v1_6_6";
-  inputs."compiler".type  = "github";
-  inputs."compiler".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."compiler".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."bigints".owner = "nim-nix-pkgs";
   inputs."bigints".ref   = "master";
   inputs."bigints".repo  = "bigints";

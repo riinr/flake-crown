@@ -16,7 +16,7 @@
   inputs."urlly".owner = "nim-nix-pkgs";
   inputs."urlly".ref   = "master";
   inputs."urlly".repo  = "urlly";
-  inputs."urlly".dir   = "1_0_0";
+  inputs."urlly".dir   = "1_0_1";
   inputs."urlly".type  = "github";
   inputs."urlly".inputs.nixpkgs.follows = "nixpkgs";
   inputs."urlly".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

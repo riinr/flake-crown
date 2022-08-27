@@ -55,6 +55,22 @@
   inputs."eris-20220615".inputs.nixpkgs.follows = "nixpkgs";
   inputs."eris-20220615".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."eris-20220824".dir   = "20220824";
+  inputs."eris-20220824".owner = "nim-nix-pkgs";
+  inputs."eris-20220824".ref   = "master";
+  inputs."eris-20220824".repo  = "eris";
+  inputs."eris-20220824".type  = "github";
+  inputs."eris-20220824".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."eris-20220824".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."eris-20220825".dir   = "20220825";
+  inputs."eris-20220825".owner = "nim-nix-pkgs";
+  inputs."eris-20220825".ref   = "master";
+  inputs."eris-20220825".repo  = "eris";
+  inputs."eris-20220825".type  = "github";
+  inputs."eris-20220825".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."eris-20220825".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."eris-nim-eris-0_4_0".dir   = "nim-eris-0_4_0";
   inputs."eris-nim-eris-0_4_0".owner = "nim-nix-pkgs";
   inputs."eris-nim-eris-0_4_0".ref   = "master";

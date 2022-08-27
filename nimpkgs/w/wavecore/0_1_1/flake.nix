@@ -16,7 +16,7 @@
   inputs."urlly".owner = "nim-nix-pkgs";
   inputs."urlly".ref   = "master";
   inputs."urlly".repo  = "urlly";
-  inputs."urlly".dir   = "1_0_0";
+  inputs."urlly".dir   = "1_0_1";
   inputs."urlly".type  = "github";
   inputs."urlly".inputs.nixpkgs.follows = "nixpkgs";
   inputs."urlly".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -24,7 +24,7 @@
   inputs."puppy".owner = "nim-nix-pkgs";
   inputs."puppy".ref   = "master";
   inputs."puppy".repo  = "puppy";
-  inputs."puppy".dir   = "1_5_4";
+  inputs."puppy".dir   = "1_6_0";
   inputs."puppy".type  = "github";
   inputs."puppy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."puppy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

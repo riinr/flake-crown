@@ -16,7 +16,7 @@
   inputs."puppy".owner = "nim-nix-pkgs";
   inputs."puppy".ref   = "master";
   inputs."puppy".repo  = "puppy";
-  inputs."puppy".dir   = "1_5_4";
+  inputs."puppy".dir   = "1_6_0";
   inputs."puppy".type  = "github";
   inputs."puppy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."puppy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

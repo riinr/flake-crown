@@ -13,14 +13,6 @@
   inputs.src-py2nim-main.repo  = "Py2Nim";
   inputs.src-py2nim-main.type  = "github";
   
-  inputs."compiler".owner = "nim-nix-pkgs";
-  inputs."compiler".ref   = "master";
-  inputs."compiler".repo  = "compiler";
-  inputs."compiler".dir   = "v1_6_6";
-  inputs."compiler".type  = "github";
-  inputs."compiler".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."compiler".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."nimscripter".owner = "nim-nix-pkgs";
   inputs."nimscripter".ref   = "master";
   inputs."nimscripter".repo  = "nimscripter";
