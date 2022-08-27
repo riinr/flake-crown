@@ -1,9 +1,9 @@
 #!/usr/bin/env fish
+set INIT_DIR $PWD
 for l in $PWD/nimpkgs/*/
   echo commiting (basename $l)
   for i in $l/*/
     if test (count (jobs)) -lt 5
-      cd $i
       sleep 0.0(random 1 9)
       git status --porcelain || echo $i failed
       if test (git status --porcelain|grep -v 'result'|wc -l) -gt 0
@@ -26,4 +26,4 @@ for l in $PWD/nimpkgs/*/
   end
 end
 wait
-cd ~/Code/flake-nimble/nimpkgs/
+cd $INIT_DIR
