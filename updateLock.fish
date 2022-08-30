@@ -54,18 +54,16 @@ while test (count $CHANGES) -gt 0
 
   echo Commit (basename $NEXT_PKG)
   sleep 0.0(random 1 9)
-  if test (git status --porcelain|grep -v 'result'|wc -l) -gt 0
-    echo "###############################"
-    echo $NEXT_PKG
-    git add */flake.{lock,nix}
-    git add */meta.json
-    git add flake.{lock,nix}
-    git add meta.json
-    git commit -m 'feat(nimpkgs): remove lock' . | cat
-  end
-  if test (git diff --stat --cached origin/master|wc -l) -gt 0
-    git push &
-  end
+  echo "###############################"
+  echo $NEXT_PKG
+  git add */flake.lock || true
+  git add */flake.nix  || true
+  git add */meta.json  || true
+  git add flake.lock   || true
+  git add flake.nix    || true
+  git add meta.json    || true
+  git commit -m 'feat(nimpkgs): renew the lock' . | cat || true
+  git push &
   set CHANGES $CHANGES[2..-1]
 end
 wait
