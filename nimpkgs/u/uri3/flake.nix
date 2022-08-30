@@ -55,6 +55,22 @@
   inputs."uri3-v0_1_5".inputs.nixpkgs.follows = "nixpkgs";
   inputs."uri3-v0_1_5".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."uri3-v0_1_6".dir   = "v0_1_6";
+  inputs."uri3-v0_1_6".owner = "nim-nix-pkgs";
+  inputs."uri3-v0_1_6".ref   = "master";
+  inputs."uri3-v0_1_6".repo  = "uri3";
+  inputs."uri3-v0_1_6".type  = "github";
+  inputs."uri3-v0_1_6".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."uri3-v0_1_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."uri3-v0_1_7".dir   = "v0_1_7";
+  inputs."uri3-v0_1_7".owner = "nim-nix-pkgs";
+  inputs."uri3-v0_1_7".ref   = "master";
+  inputs."uri3-v0_1_7".repo  = "uri3";
+  inputs."uri3-v0_1_7".type  = "github";
+  inputs."uri3-v0_1_7".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."uri3-v0_1_7".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

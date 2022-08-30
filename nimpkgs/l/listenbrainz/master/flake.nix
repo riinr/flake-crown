@@ -32,7 +32,7 @@
   inputs."github-alaviss-union".owner = "nim-nix-pkgs";
   inputs."github-alaviss-union".ref   = "master";
   inputs."github-alaviss-union".repo  = "github-alaviss-union";
-  inputs."github-alaviss-union".dir   = "0_1_1";
+  inputs."github-alaviss-union".dir   = "0_1_2";
   inputs."github-alaviss-union".type  = "github";
   inputs."github-alaviss-union".inputs.nixpkgs.follows = "nixpkgs";
   inputs."github-alaviss-union".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

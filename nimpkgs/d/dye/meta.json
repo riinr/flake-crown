@@ -736,6 +736,83 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/tags/v1.1.8"
+    },
+    {
+      "name": "dye",
+      "version": "1.1.9",
+      "author": "Luke",
+      "desc": "An image colorizer",
+      "license": "GPL-3.0-or-later",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "progress",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "chroma",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "therapist",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "harpoon",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "dye"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v1.1.9"
     }
   ],
   "description": "An image colorizer",
@@ -756,6 +833,7 @@
     "refs/tags/v1.1.6",
     "refs/tags/v1.1.7",
     "refs/tags/v1.1.8",
+    "refs/tags/v1.1.9",
     ""
   ],
   "heads": [

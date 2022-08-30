@@ -31,6 +31,14 @@
   inputs."union-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."union-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."union-0_1_2".dir   = "0_1_2";
+  inputs."union-0_1_2".owner = "nim-nix-pkgs";
+  inputs."union-0_1_2".ref   = "master";
+  inputs."union-0_1_2".repo  = "union";
+  inputs."union-0_1_2".type  = "github";
+  inputs."union-0_1_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."union-0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

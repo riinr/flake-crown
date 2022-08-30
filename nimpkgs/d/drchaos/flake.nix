@@ -15,6 +15,38 @@
   inputs."drchaos-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."drchaos-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."drchaos-v0_1_0".dir   = "v0_1_0";
+  inputs."drchaos-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."drchaos-v0_1_0".ref   = "master";
+  inputs."drchaos-v0_1_0".repo  = "drchaos";
+  inputs."drchaos-v0_1_0".type  = "github";
+  inputs."drchaos-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."drchaos-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."drchaos-v0_1_1".dir   = "v0_1_1";
+  inputs."drchaos-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."drchaos-v0_1_1".ref   = "master";
+  inputs."drchaos-v0_1_1".repo  = "drchaos";
+  inputs."drchaos-v0_1_1".type  = "github";
+  inputs."drchaos-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."drchaos-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."drchaos-v0_1_2".dir   = "v0_1_2";
+  inputs."drchaos-v0_1_2".owner = "nim-nix-pkgs";
+  inputs."drchaos-v0_1_2".ref   = "master";
+  inputs."drchaos-v0_1_2".repo  = "drchaos";
+  inputs."drchaos-v0_1_2".type  = "github";
+  inputs."drchaos-v0_1_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."drchaos-v0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."drchaos-v0_1_3".dir   = "v0_1_3";
+  inputs."drchaos-v0_1_3".owner = "nim-nix-pkgs";
+  inputs."drchaos-v0_1_3".ref   = "master";
+  inputs."drchaos-v0_1_3".repo  = "drchaos";
+  inputs."drchaos-v0_1_3".type  = "github";
+  inputs."drchaos-v0_1_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."drchaos-v0_1_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

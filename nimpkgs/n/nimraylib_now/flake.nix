@@ -119,6 +119,14 @@
   inputs."nimraylib_now-v0_14_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimraylib_now-v0_14_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."nimraylib_now-v0_15_0".dir   = "v0_15_0";
+  inputs."nimraylib_now-v0_15_0".owner = "nim-nix-pkgs";
+  inputs."nimraylib_now-v0_15_0".ref   = "master";
+  inputs."nimraylib_now-v0_15_0".repo  = "nimraylib_now";
+  inputs."nimraylib_now-v0_15_0".type  = "github";
+  inputs."nimraylib_now-v0_15_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimraylib_now-v0_15_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."nimraylib_now-v0_3_0".dir   = "v0_3_0";
   inputs."nimraylib_now-v0_3_0".owner = "nim-nix-pkgs";
   inputs."nimraylib_now-v0_3_0".ref   = "master";
