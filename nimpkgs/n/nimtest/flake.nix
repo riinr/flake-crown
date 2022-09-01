@@ -15,6 +15,14 @@
   inputs."nimtest-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimtest-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."nimtest-v0_1_1".dir   = "v0_1_1";
+  inputs."nimtest-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."nimtest-v0_1_1".ref   = "master";
+  inputs."nimtest-v0_1_1".repo  = "nimtest";
+  inputs."nimtest-v0_1_1".type  = "github";
+  inputs."nimtest-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimtest-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;
