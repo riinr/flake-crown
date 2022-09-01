@@ -1,0 +1,63 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-ajXYYTE1uoY3ei/P1v+Knklf2QNCBxMtw1gByaPTGU4=",
+        "path": "/nix/store/l9gfyh4wh4yrv0m9is00x82ba0synxgb-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-codegenlib-master": "src-codegenlib-master"
+      }
+    },
+    "src-codegenlib-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661967739,
+        "narHash": "sha256-ZFqCAMFA+fMe/iWZwV6vvtBsdghQAudcHxJzQxZRhVE=",
+        "owner": "Mythical-Forest-Collective",
+        "repo": "CodeGenLib",
+        "rev": "97879d37fd17a5a8b1dad2c499ceb9be53d48429",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Mythical-Forest-Collective",
+        "ref": "refs/heads/master",
+        "repo": "CodeGenLib",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

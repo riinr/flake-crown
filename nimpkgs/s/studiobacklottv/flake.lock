@@ -1,0 +1,280 @@
+{
+  "nodes": {
+    "brightcove": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "studiobacklottv-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "studiobacklottv-master",
+          "nixpkgs"
+        ],
+        "src-brightcove-master": "src-brightcove-master",
+        "util": "util"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1662003477,
+        "narHash": "sha256-XCvGC6SFy1/fOoKGO2mQfQIajC8bs3hWatJA7YkbMdo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "brightcove",
+        "rev": "290a0230c68ebee182a0347fbc3cf7d9a7554763",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "brightcove",
+        "type": "github"
+      }
+    },
+    "cligen": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "studiobacklottv-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "studiobacklottv-master",
+          "nixpkgs"
+        ],
+        "src-cligen-v1_5_27": "src-cligen-v1_5_27"
+      },
+      "locked": {
+        "dir": "v1_5_27",
+        "lastModified": 1662002598,
+        "narHash": "sha256-JrhHHsGJQUPShh9qhqYDRDh25sCUSB16zeQ18bs/g9c=",
+        "owner": "nim-nix-pkgs",
+        "repo": "cligen",
+        "rev": "76dc170e142cc084c6fc68fc19fb29cb82755014",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_5_27",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-ajXYYTE1uoY3ei/P1v+Knklf2QNCBxMtw1gByaPTGU4=",
+        "path": "/nix/store/l9gfyh4wh4yrv0m9is00x82ba0synxgb-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "studiobacklottv-master": "studiobacklottv-master"
+      }
+    },
+    "src-brightcove-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661552845,
+        "narHash": "sha256-wHkzydKtlehthWCqbcslbIR4fB8UakaVBQP8hrSvvAA=",
+        "owner": "thisago",
+        "repo": "brightcove",
+        "rev": "6148be4442e8566020dae564cc69c783398888ec",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thisago",
+        "ref": "refs/heads/master",
+        "repo": "brightcove",
+        "type": "github"
+      }
+    },
+    "src-cligen-v1_5_27": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1659388587,
+        "narHash": "sha256-lHgSopdByTcrectTdTO1BVwI3fPRRdL3pcnJSuhTDDg=",
+        "owner": "c-blake",
+        "repo": "cligen",
+        "rev": "1cad3607553f24556176b2c883a1796abfd7375c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "c-blake",
+        "ref": "refs/tags/v1.5.27",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "src-studiobacklottv-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661703986,
+        "narHash": "sha256-EXrf09hKxjtObzE0ObMXhqnvBkH/wZJnv49PxLAw2P4=",
+        "owner": "thisago",
+        "repo": "studiobacklottv",
+        "rev": "d985d244d4013b5cf640361d7bb8f10cff1b3443",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thisago",
+        "ref": "refs/heads/master",
+        "repo": "studiobacklottv",
+        "type": "github"
+      }
+    },
+    "src-util-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661954532,
+        "narHash": "sha256-LavUdhXugYtLETTcwPqBiW77lwP8lSMf2b+riXrC4yA=",
+        "owner": "thisago",
+        "repo": "util",
+        "rev": "da3e1e96aeebee5a0cac4f6c9c1c6b0c56792a4c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thisago",
+        "ref": "refs/heads/master",
+        "repo": "util",
+        "type": "github"
+      }
+    },
+    "src-util-master_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661954532,
+        "narHash": "sha256-LavUdhXugYtLETTcwPqBiW77lwP8lSMf2b+riXrC4yA=",
+        "owner": "thisago",
+        "repo": "util",
+        "rev": "da3e1e96aeebee5a0cac4f6c9c1c6b0c56792a4c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thisago",
+        "ref": "refs/heads/master",
+        "repo": "util",
+        "type": "github"
+      }
+    },
+    "studiobacklottv-master": {
+      "inputs": {
+        "brightcove": "brightcove",
+        "cligen": "cligen",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-studiobacklottv-master": "src-studiobacklottv-master",
+        "util": "util_2"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1661960908,
+        "narHash": "sha256-YctqdDtcGj9p4YRla3IAQ5YdUZZxkL3SpZKG+5cjLeQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "studiobacklottv",
+        "rev": "0bef743491e72de61528d3ac827ca3d0bb81397c",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "studiobacklottv",
+        "type": "github"
+      }
+    },
+    "util": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "studiobacklottv-master",
+          "brightcove",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "studiobacklottv-master",
+          "brightcove",
+          "nixpkgs"
+        ],
+        "src-util-master": "src-util-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1662003132,
+        "narHash": "sha256-8w01vOUgi8/7CxwZqkkdqdRbjWzyc8hudd+dJS3WUuE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "util",
+        "rev": "0c1cebada6c1d0f650908e94a9736daf44cb2756",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "util",
+        "type": "github"
+      }
+    },
+    "util_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "studiobacklottv-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "studiobacklottv-master",
+          "nixpkgs"
+        ],
+        "src-util-master": "src-util-master_2"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1662003132,
+        "narHash": "sha256-8w01vOUgi8/7CxwZqkkdqdRbjWzyc8hudd+dJS3WUuE=",
+        "owner": "nim-nix-pkgs",
+        "repo": "util",
+        "rev": "0c1cebada6c1d0f650908e94a9736daf44cb2756",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "util",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

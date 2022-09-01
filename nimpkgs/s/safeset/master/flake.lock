@@ -1,0 +1,108 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1648105061,
+        "narHash": "sha256-Je25qNlH4xrH3+m6vIq6yPvdfQ80FRTwX4JOhrRLduc=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "f1ec5e2f15b9f717c33b6942ce7cb344ff868522",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nimtest": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimtest-v0_1_1": "src-nimtest-v0_1_1"
+      },
+      "locked": {
+        "dir": "v0_1_1",
+        "lastModified": 1662002895,
+        "narHash": "sha256-dfewlqQe9RWH1aL4VUUfztVRSS81tcwDA95Wj3OnuYU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimtest",
+        "rev": "13606cbb257b74d2ec6c6771019881075c8d0ea3",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimtest",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-ajXYYTE1uoY3ei/P1v+Knklf2QNCBxMtw1gByaPTGU4=",
+        "path": "/nix/store/l9gfyh4wh4yrv0m9is00x82ba0synxgb-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nimtest": "nimtest",
+        "nixpkgs": "nixpkgs",
+        "src-safeset-master": "src-safeset-master"
+      }
+    },
+    "src-nimtest-v0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661883976,
+        "narHash": "sha256-OuPw5NKix8OV47XdCmziXkLBwQ01OzxWQdankBJfJk4=",
+        "owner": "avahe-kellenberger",
+        "repo": "nimtest",
+        "rev": "df1cf56ea85cf747a885034bb0f8e9eb97bf3185",
+        "type": "github"
+      },
+      "original": {
+        "owner": "avahe-kellenberger",
+        "ref": "refs/tags/v0.1.1",
+        "repo": "nimtest",
+        "type": "github"
+      }
+    },
+    "src-safeset-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661910621,
+        "narHash": "sha256-6fKwd21e29earNqyNMSPMALpLe2c3uUBv9qUHZqUqWc=",
+        "owner": "avahe-kellenberger",
+        "repo": "safeset",
+        "rev": "bf2a4e27a2376afa4815e84b93e6a888ca2952ef",
+        "type": "github"
+      },
+      "original": {
+        "owner": "avahe-kellenberger",
+        "ref": "refs/heads/master",
+        "repo": "safeset",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
