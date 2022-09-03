@@ -48,7 +48,7 @@
   inputs."chronos".owner = "nim-nix-pkgs";
   inputs."chronos".ref   = "master";
   inputs."chronos".repo  = "chronos";
-  inputs."chronos".dir   = "master";
+  inputs."chronos".dir   = "source";
   inputs."chronos".type  = "github";
   inputs."chronos".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

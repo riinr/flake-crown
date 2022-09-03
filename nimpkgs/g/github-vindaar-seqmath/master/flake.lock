@@ -1,0 +1,63 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1662018438,
+        "narHash": "sha256-QtNtU6+LX3Wokxf0zlFwKTFOcn6TeDjKQZ+DA9OYtvM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b1fe8340736e3a85d25c709ac3dfd82a55c03cbf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-ajXYYTE1uoY3ei/P1v+Knklf2QNCBxMtw1gByaPTGU4=",
+        "path": "/nix/store/l9gfyh4wh4yrv0m9is00x82ba0synxgb-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-seqmath-master": "src-seqmath-master"
+      }
+    },
+    "src-seqmath-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1656516829,
+        "narHash": "sha256-h100JGMiGrgSkRFbBvUJ/irZk0eUJXNeraIgTGSwok8=",
+        "owner": "vindaar",
+        "repo": "seqmath",
+        "rev": "5b29dc88e8ffcb4d0613318fc810ab7f3a7c3463",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vindaar",
+        "ref": "refs/heads/master",
+        "repo": "seqmath",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

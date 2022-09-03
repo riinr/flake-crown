@@ -16,7 +16,7 @@
   inputs."python".owner = "nim-nix-pkgs";
   inputs."python".ref   = "master";
   inputs."python".repo  = "python";
-  inputs."python".dir   = "master";
+  inputs."python".dir   = "source";
   inputs."python".type  = "github";
   inputs."python".inputs.nixpkgs.follows = "nixpkgs";
   inputs."python".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -32,7 +32,7 @@
   inputs."snappy".owner = "nim-nix-pkgs";
   inputs."snappy".ref   = "master";
   inputs."snappy".repo  = "snappy";
-  inputs."snappy".dir   = "master";
+  inputs."snappy".dir   = "source";
   inputs."snappy".type  = "github";
   inputs."snappy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."snappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

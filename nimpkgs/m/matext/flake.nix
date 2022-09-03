@@ -55,6 +55,14 @@
   inputs."matext-2022_7_6".inputs.nixpkgs.follows = "nixpkgs";
   inputs."matext-2022_7_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."matext-2022_9_3".dir   = "2022_9_3";
+  inputs."matext-2022_9_3".owner = "nim-nix-pkgs";
+  inputs."matext-2022_9_3".ref   = "master";
+  inputs."matext-2022_9_3".repo  = "matext";
+  inputs."matext-2022_9_3".type  = "github";
+  inputs."matext-2022_9_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."matext-2022_9_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

@@ -16,7 +16,7 @@
   inputs."spryvm".owner = "nim-nix-pkgs";
   inputs."spryvm".ref   = "master";
   inputs."spryvm".repo  = "spryvm";
-  inputs."spryvm".dir   = "master";
+  inputs."spryvm".dir   = "source";
   inputs."spryvm".type  = "github";
   inputs."spryvm".inputs.nixpkgs.follows = "nixpkgs";
   inputs."spryvm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

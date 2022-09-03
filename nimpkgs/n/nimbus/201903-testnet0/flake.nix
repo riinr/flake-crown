@@ -32,7 +32,7 @@
   inputs."stint".owner = "nim-nix-pkgs";
   inputs."stint".ref   = "master";
   inputs."stint".repo  = "stint";
-  inputs."stint".dir   = "master";
+  inputs."stint".dir   = "source";
   inputs."stint".type  = "github";
   inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -48,7 +48,7 @@
   inputs."chronos".owner = "nim-nix-pkgs";
   inputs."chronos".ref   = "master";
   inputs."chronos".repo  = "chronos";
-  inputs."chronos".dir   = "master";
+  inputs."chronos".dir   = "source";
   inputs."chronos".type  = "github";
   inputs."chronos".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -56,7 +56,7 @@
   inputs."bncurve".owner = "nim-nix-pkgs";
   inputs."bncurve".ref   = "master";
   inputs."bncurve".repo  = "bncurve";
-  inputs."bncurve".dir   = "master";
+  inputs."bncurve".dir   = "source";
   inputs."bncurve".type  = "github";
   inputs."bncurve".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bncurve".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -64,7 +64,7 @@
   inputs."eth".owner = "nim-nix-pkgs";
   inputs."eth".ref   = "master";
   inputs."eth".repo  = "eth";
-  inputs."eth".dir   = "master";
+  inputs."eth".dir   = "source";
   inputs."eth".type  = "github";
   inputs."eth".inputs.nixpkgs.follows = "nixpkgs";
   inputs."eth".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

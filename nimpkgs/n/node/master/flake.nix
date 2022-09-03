@@ -16,7 +16,7 @@
   inputs."httpkit".owner = "nim-nix-pkgs";
   inputs."httpkit".ref   = "master";
   inputs."httpkit".repo  = "httpkit";
-  inputs."httpkit".dir   = "master";
+  inputs."httpkit".dir   = "source";
   inputs."httpkit".type  = "github";
   inputs."httpkit".inputs.nixpkgs.follows = "nixpkgs";
   inputs."httpkit".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

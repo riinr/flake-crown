@@ -39,6 +39,14 @@
   inputs."notificatcher-v0_4_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."notificatcher-v0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."notificatcher-v0_5_0".dir   = "v0_5_0";
+  inputs."notificatcher-v0_5_0".owner = "nim-nix-pkgs";
+  inputs."notificatcher-v0_5_0".ref   = "master";
+  inputs."notificatcher-v0_5_0".repo  = "notificatcher";
+  inputs."notificatcher-v0_5_0".type  = "github";
+  inputs."notificatcher-v0_5_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."notificatcher-v0_5_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

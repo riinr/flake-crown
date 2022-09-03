@@ -16,7 +16,7 @@
   inputs."colorize".owner = "nim-nix-pkgs";
   inputs."colorize".ref   = "master";
   inputs."colorize".repo  = "colorize";
-  inputs."colorize".dir   = "master";
+  inputs."colorize".dir   = "source";
   inputs."colorize".type  = "github";
   inputs."colorize".inputs.nixpkgs.follows = "nixpkgs";
   inputs."colorize".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

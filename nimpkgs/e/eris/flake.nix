@@ -47,6 +47,14 @@
   inputs."eris-0_4_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."eris-0_4_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."eris_tkrzw-20220518".dir   = "20220518";
+  inputs."eris_tkrzw-20220518".owner = "nim-nix-pkgs";
+  inputs."eris_tkrzw-20220518".ref   = "master";
+  inputs."eris_tkrzw-20220518".repo  = "eris_tkrzw";
+  inputs."eris_tkrzw-20220518".type  = "github";
+  inputs."eris_tkrzw-20220518".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."eris_tkrzw-20220518".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."eris-20220615".dir   = "20220615";
   inputs."eris-20220615".owner = "nim-nix-pkgs";
   inputs."eris-20220615".ref   = "master";
@@ -71,13 +79,21 @@
   inputs."eris-20220825".inputs.nixpkgs.follows = "nixpkgs";
   inputs."eris-20220825".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."eris-20220829".dir   = "20220829";
-  inputs."eris-20220829".owner = "nim-nix-pkgs";
-  inputs."eris-20220829".ref   = "master";
-  inputs."eris-20220829".repo  = "eris";
-  inputs."eris-20220829".type  = "github";
-  inputs."eris-20220829".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."eris-20220829".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."eris-20220831".dir   = "20220831";
+  inputs."eris-20220831".owner = "nim-nix-pkgs";
+  inputs."eris-20220831".ref   = "master";
+  inputs."eris-20220831".repo  = "eris";
+  inputs."eris-20220831".type  = "github";
+  inputs."eris-20220831".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."eris-20220831".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."eris-20220902".dir   = "20220902";
+  inputs."eris-20220902".owner = "nim-nix-pkgs";
+  inputs."eris-20220902".ref   = "master";
+  inputs."eris-20220902".repo  = "eris";
+  inputs."eris-20220902".type  = "github";
+  inputs."eris-20220902".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."eris-20220902".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."eris-nim-eris-0_4_0".dir   = "nim-eris-0_4_0";
   inputs."eris-nim-eris-0_4_0".owner = "nim-nix-pkgs";

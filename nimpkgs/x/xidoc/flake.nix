@@ -247,6 +247,46 @@
   inputs."xidoc-2022_6_27".inputs.nixpkgs.follows = "nixpkgs";
   inputs."xidoc-2022_6_27".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."xidoc-2022_8_24".dir   = "2022_8_24";
+  inputs."xidoc-2022_8_24".owner = "nim-nix-pkgs";
+  inputs."xidoc-2022_8_24".ref   = "master";
+  inputs."xidoc-2022_8_24".repo  = "xidoc";
+  inputs."xidoc-2022_8_24".type  = "github";
+  inputs."xidoc-2022_8_24".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."xidoc-2022_8_24".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."xidoc-2022_8_31".dir   = "2022_8_31";
+  inputs."xidoc-2022_8_31".owner = "nim-nix-pkgs";
+  inputs."xidoc-2022_8_31".ref   = "master";
+  inputs."xidoc-2022_8_31".repo  = "xidoc";
+  inputs."xidoc-2022_8_31".type  = "github";
+  inputs."xidoc-2022_8_31".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."xidoc-2022_8_31".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."xidoc-2022_9_1".dir   = "2022_9_1";
+  inputs."xidoc-2022_9_1".owner = "nim-nix-pkgs";
+  inputs."xidoc-2022_9_1".ref   = "master";
+  inputs."xidoc-2022_9_1".repo  = "xidoc";
+  inputs."xidoc-2022_9_1".type  = "github";
+  inputs."xidoc-2022_9_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."xidoc-2022_9_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."xidoc-2022_9_2".dir   = "2022_9_2";
+  inputs."xidoc-2022_9_2".owner = "nim-nix-pkgs";
+  inputs."xidoc-2022_9_2".ref   = "master";
+  inputs."xidoc-2022_9_2".repo  = "xidoc";
+  inputs."xidoc-2022_9_2".type  = "github";
+  inputs."xidoc-2022_9_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."xidoc-2022_9_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."xidoc-2022_9_3".dir   = "2022_9_3";
+  inputs."xidoc-2022_9_3".owner = "nim-nix-pkgs";
+  inputs."xidoc-2022_9_3".ref   = "master";
+  inputs."xidoc-2022_9_3".repo  = "xidoc";
+  inputs."xidoc-2022_9_3".type  = "github";
+  inputs."xidoc-2022_9_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."xidoc-2022_9_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

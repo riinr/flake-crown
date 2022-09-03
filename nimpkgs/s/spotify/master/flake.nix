@@ -24,7 +24,7 @@
   inputs."subexes".owner = "nim-nix-pkgs";
   inputs."subexes".ref   = "master";
   inputs."subexes".repo  = "subexes";
-  inputs."subexes".dir   = "master";
+  inputs."subexes".dir   = "source";
   inputs."subexes".type  = "github";
   inputs."subexes".inputs.nixpkgs.follows = "nixpkgs";
   inputs."subexes".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

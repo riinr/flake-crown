@@ -16,7 +16,7 @@
   inputs."cmixer".owner = "nim-nix-pkgs";
   inputs."cmixer".ref   = "master";
   inputs."cmixer".repo  = "cmixer";
-  inputs."cmixer".dir   = "master";
+  inputs."cmixer".dir   = "source";
   inputs."cmixer".type  = "github";
   inputs."cmixer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cmixer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

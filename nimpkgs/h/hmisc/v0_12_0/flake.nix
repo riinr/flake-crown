@@ -24,7 +24,7 @@
   inputs."benchy".owner = "nim-nix-pkgs";
   inputs."benchy".ref   = "master";
   inputs."benchy".repo  = "benchy";
-  inputs."benchy".dir   = "master";
+  inputs."benchy".dir   = "source";
   inputs."benchy".type  = "github";
   inputs."benchy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."benchy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

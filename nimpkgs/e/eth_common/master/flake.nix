@@ -48,7 +48,7 @@
   inputs."stint".owner = "nim-nix-pkgs";
   inputs."stint".ref   = "master";
   inputs."stint".repo  = "stint";
-  inputs."stint".dir   = "master";
+  inputs."stint".dir   = "source";
   inputs."stint".type  = "github";
   inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -56,7 +56,7 @@
   inputs."byteutils".owner = "nim-nix-pkgs";
   inputs."byteutils".ref   = "master";
   inputs."byteutils".repo  = "byteutils";
-  inputs."byteutils".dir   = "master";
+  inputs."byteutils".dir   = "source";
   inputs."byteutils".type  = "github";
   inputs."byteutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."byteutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

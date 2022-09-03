@@ -24,7 +24,7 @@
   inputs."bcrypt".owner = "nim-nix-pkgs";
   inputs."bcrypt".ref   = "master";
   inputs."bcrypt".repo  = "bcrypt";
-  inputs."bcrypt".dir   = "master";
+  inputs."bcrypt".dir   = "source";
   inputs."bcrypt".type  = "github";
   inputs."bcrypt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bcrypt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

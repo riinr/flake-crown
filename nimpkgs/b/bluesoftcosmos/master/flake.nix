@@ -16,7 +16,7 @@
   inputs."scraper".owner = "nim-nix-pkgs";
   inputs."scraper".ref   = "master";
   inputs."scraper".repo  = "scraper";
-  inputs."scraper".dir   = "master";
+  inputs."scraper".dir   = "source";
   inputs."scraper".type  = "github";
   inputs."scraper".inputs.nixpkgs.follows = "nixpkgs";
   inputs."scraper".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

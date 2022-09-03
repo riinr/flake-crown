@@ -64,7 +64,7 @@
   inputs."plists".owner = "nim-nix-pkgs";
   inputs."plists".ref   = "master";
   inputs."plists".repo  = "plists";
-  inputs."plists".dir   = "master";
+  inputs."plists".dir   = "source";
   inputs."plists".type  = "github";
   inputs."plists".inputs.nixpkgs.follows = "nixpkgs";
   inputs."plists".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -80,7 +80,7 @@
   inputs."kiwi".owner = "nim-nix-pkgs";
   inputs."kiwi".ref   = "master";
   inputs."kiwi".repo  = "kiwi";
-  inputs."kiwi".dir   = "master";
+  inputs."kiwi".dir   = "source";
   inputs."kiwi".type  = "github";
   inputs."kiwi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."kiwi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -128,7 +128,7 @@
   inputs."darwin".owner = "nim-nix-pkgs";
   inputs."darwin".ref   = "master";
   inputs."darwin".repo  = "darwin";
-  inputs."darwin".dir   = "master";
+  inputs."darwin".dir   = "source";
   inputs."darwin".type  = "github";
   inputs."darwin".inputs.nixpkgs.follows = "nixpkgs";
   inputs."darwin".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

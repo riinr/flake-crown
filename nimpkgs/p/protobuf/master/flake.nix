@@ -16,7 +16,7 @@
   inputs."combparser".owner = "nim-nix-pkgs";
   inputs."combparser".ref   = "master";
   inputs."combparser".repo  = "combparser";
-  inputs."combparser".dir   = "master";
+  inputs."combparser".dir   = "source";
   inputs."combparser".type  = "github";
   inputs."combparser".inputs.nixpkgs.follows = "nixpkgs";
   inputs."combparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -16,7 +16,7 @@
   inputs."serialization".owner = "nim-nix-pkgs";
   inputs."serialization".ref   = "master";
   inputs."serialization".repo  = "serialization";
-  inputs."serialization".dir   = "master";
+  inputs."serialization".dir   = "source";
   inputs."serialization".type  = "github";
   inputs."serialization".inputs.nixpkgs.follows = "nixpkgs";
   inputs."serialization".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -32,7 +32,7 @@
   inputs."stew".owner = "nim-nix-pkgs";
   inputs."stew".ref   = "master";
   inputs."stew".repo  = "stew";
-  inputs."stew".dir   = "master";
+  inputs."stew".dir   = "source";
   inputs."stew".type  = "github";
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -40,7 +40,7 @@
   inputs."stint".owner = "nim-nix-pkgs";
   inputs."stint".ref   = "master";
   inputs."stint".repo  = "stint";
-  inputs."stint".dir   = "master";
+  inputs."stint".dir   = "source";
   inputs."stint".type  = "github";
   inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -56,7 +56,7 @@
   inputs."blscurve".owner = "nim-nix-pkgs";
   inputs."blscurve".ref   = "master";
   inputs."blscurve".repo  = "blscurve";
-  inputs."blscurve".dir   = "master";
+  inputs."blscurve".dir   = "source";
   inputs."blscurve".type  = "github";
   inputs."blscurve".inputs.nixpkgs.follows = "nixpkgs";
   inputs."blscurve".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

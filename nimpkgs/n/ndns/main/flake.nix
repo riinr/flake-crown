@@ -16,7 +16,7 @@
   inputs."dnsprotocol".owner = "nim-nix-pkgs";
   inputs."dnsprotocol".ref   = "master";
   inputs."dnsprotocol".repo  = "dnsprotocol";
-  inputs."dnsprotocol".dir   = "main";
+  inputs."dnsprotocol".dir   = "source";
   inputs."dnsprotocol".type  = "github";
   inputs."dnsprotocol".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dnsprotocol".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -24,7 +24,7 @@
   inputs."stew".owner = "nim-nix-pkgs";
   inputs."stew".ref   = "master";
   inputs."stew".repo  = "stew";
-  inputs."stew".dir   = "master";
+  inputs."stew".dir   = "source";
   inputs."stew".type  = "github";
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

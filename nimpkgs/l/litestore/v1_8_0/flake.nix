@@ -32,7 +32,7 @@
   inputs."duktape".owner = "nim-nix-pkgs";
   inputs."duktape".ref   = "master";
   inputs."duktape".repo  = "duktape";
-  inputs."duktape".dir   = "master";
+  inputs."duktape".dir   = "source";
   inputs."duktape".type  = "github";
   inputs."duktape".inputs.nixpkgs.follows = "nixpkgs";
   inputs."duktape".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

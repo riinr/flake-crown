@@ -16,7 +16,7 @@
   inputs."multicast".owner = "nim-nix-pkgs";
   inputs."multicast".ref   = "master";
   inputs."multicast".repo  = "multicast";
-  inputs."multicast".dir   = "master";
+  inputs."multicast".dir   = "source";
   inputs."multicast".type  = "github";
   inputs."multicast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."multicast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

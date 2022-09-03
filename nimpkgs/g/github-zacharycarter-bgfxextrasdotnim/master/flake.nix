@@ -24,7 +24,7 @@
   inputs."bgfxdotnim".owner = "nim-nix-pkgs";
   inputs."bgfxdotnim".ref   = "master";
   inputs."bgfxdotnim".repo  = "bgfxdotnim";
-  inputs."bgfxdotnim".dir   = "master";
+  inputs."bgfxdotnim".dir   = "source";
   inputs."bgfxdotnim".type  = "github";
   inputs."bgfxdotnim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bgfxdotnim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

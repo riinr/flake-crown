@@ -48,7 +48,7 @@
   inputs."kiwi".owner = "nim-nix-pkgs";
   inputs."kiwi".ref   = "master";
   inputs."kiwi".repo  = "kiwi";
-  inputs."kiwi".dir   = "master";
+  inputs."kiwi".dir   = "source";
   inputs."kiwi".type  = "github";
   inputs."kiwi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."kiwi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

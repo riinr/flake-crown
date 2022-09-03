@@ -40,7 +40,7 @@
   inputs."polybool".owner = "nim-nix-pkgs";
   inputs."polybool".ref   = "master";
   inputs."polybool".repo  = "polybool";
-  inputs."polybool".dir   = "master";
+  inputs."polybool".dir   = "source";
   inputs."polybool".type  = "github";
   inputs."polybool".inputs.nixpkgs.follows = "nixpkgs";
   inputs."polybool".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

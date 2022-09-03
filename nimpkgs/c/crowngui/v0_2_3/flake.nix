@@ -24,7 +24,7 @@
   inputs."plists".owner = "nim-nix-pkgs";
   inputs."plists".ref   = "master";
   inputs."plists".repo  = "plists";
-  inputs."plists".dir   = "master";
+  inputs."plists".dir   = "source";
   inputs."plists".type  = "github";
   inputs."plists".inputs.nixpkgs.follows = "nixpkgs";
   inputs."plists".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -32,7 +32,7 @@
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
-  inputs."cligen".dir   = "v1_5_27";
+  inputs."cligen".dir   = "v1_5_28";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

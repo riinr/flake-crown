@@ -16,7 +16,7 @@
   inputs."python".owner = "nim-nix-pkgs";
   inputs."python".ref   = "master";
   inputs."python".repo  = "python";
-  inputs."python".dir   = "master";
+  inputs."python".dir   = "source";
   inputs."python".type  = "github";
   inputs."python".inputs.nixpkgs.follows = "nixpkgs";
   inputs."python".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

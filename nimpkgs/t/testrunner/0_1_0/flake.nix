@@ -16,7 +16,7 @@
   inputs."libnotify".owner = "nim-nix-pkgs";
   inputs."libnotify".ref   = "master";
   inputs."libnotify".repo  = "libnotify";
-  inputs."libnotify".dir   = "master";
+  inputs."libnotify".dir   = "source";
   inputs."libnotify".type  = "github";
   inputs."libnotify".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libnotify".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

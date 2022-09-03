@@ -40,7 +40,7 @@
   inputs."coco".owner = "nim-nix-pkgs";
   inputs."coco".ref   = "master";
   inputs."coco".repo  = "coco";
-  inputs."coco".dir   = "master";
+  inputs."coco".dir   = "source";
   inputs."coco".type  = "github";
   inputs."coco".inputs.nixpkgs.follows = "nixpkgs";
   inputs."coco".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

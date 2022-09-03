@@ -24,7 +24,7 @@
   inputs."simplepng".owner = "nim-nix-pkgs";
   inputs."simplepng".ref   = "master";
   inputs."simplepng".repo  = "simplepng";
-  inputs."simplepng".dir   = "master";
+  inputs."simplepng".dir   = "source";
   inputs."simplepng".type  = "github";
   inputs."simplepng".inputs.nixpkgs.follows = "nixpkgs";
   inputs."simplepng".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

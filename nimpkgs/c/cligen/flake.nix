@@ -567,6 +567,14 @@
   inputs."cligen-v1_5_27".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen-v1_5_27".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."cligen-v1_5_28".dir   = "v1_5_28";
+  inputs."cligen-v1_5_28".owner = "nim-nix-pkgs";
+  inputs."cligen-v1_5_28".ref   = "master";
+  inputs."cligen-v1_5_28".repo  = "cligen";
+  inputs."cligen-v1_5_28".type  = "github";
+  inputs."cligen-v1_5_28".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."cligen-v1_5_28".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."cligen-v1_5_3".dir   = "v1_5_3";
   inputs."cligen-v1_5_3".owner = "nim-nix-pkgs";
   inputs."cligen-v1_5_3".ref   = "master";

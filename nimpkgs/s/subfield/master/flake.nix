@@ -16,7 +16,7 @@
   inputs."einheit".owner = "nim-nix-pkgs";
   inputs."einheit".ref   = "master";
   inputs."einheit".repo  = "einheit";
-  inputs."einheit".dir   = "master";
+  inputs."einheit".dir   = "source";
   inputs."einheit".type  = "github";
   inputs."einheit".inputs.nixpkgs.follows = "nixpkgs";
   inputs."einheit".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

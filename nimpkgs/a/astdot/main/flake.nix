@@ -24,7 +24,7 @@
   inputs."clapfn".owner = "nim-nix-pkgs";
   inputs."clapfn".ref   = "master";
   inputs."clapfn".repo  = "clapfn";
-  inputs."clapfn".dir   = "master";
+  inputs."clapfn".dir   = "source";
   inputs."clapfn".type  = "github";
   inputs."clapfn".inputs.nixpkgs.follows = "nixpkgs";
   inputs."clapfn".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

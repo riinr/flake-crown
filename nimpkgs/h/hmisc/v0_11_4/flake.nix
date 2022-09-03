@@ -16,7 +16,7 @@
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
-  inputs."cligen".dir   = "v1_5_27";
+  inputs."cligen".dir   = "v1_5_28";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -32,7 +32,7 @@
   inputs."benchy".owner = "nim-nix-pkgs";
   inputs."benchy".ref   = "master";
   inputs."benchy".repo  = "benchy";
-  inputs."benchy".dir   = "master";
+  inputs."benchy".dir   = "source";
   inputs."benchy".type  = "github";
   inputs."benchy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."benchy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

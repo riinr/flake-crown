@@ -1,0 +1,108 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1662018438,
+        "narHash": "sha256-QtNtU6+LX3Wokxf0zlFwKTFOcn6TeDjKQZ+DA9OYtvM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b1fe8340736e3a85d25c709ac3dfd82a55c03cbf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-ajXYYTE1uoY3ei/P1v+Knklf2QNCBxMtw1gByaPTGU4=",
+        "path": "/nix/store/l9gfyh4wh4yrv0m9is00x82ba0synxgb-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "result": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-result-master": "src-result-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1662002996,
+        "narHash": "sha256-knNAVXvb4y9GmPZNERWlqJzdGXgGuhICp0YeGXAMMR4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "result",
+        "rev": "d43de12c7d2f4ea85aa65249c21ad7d079da96a4",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "result",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "result": "result",
+        "src-resultsutils-main": "src-resultsutils-main"
+      }
+    },
+    "src-result-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1641244549,
+        "narHash": "sha256-Q1++NjHEtY261IiKpRRh5Oa7kfE8qRYO/8aEJ3FUddg=",
+        "owner": "arnetheduck",
+        "repo": "nim-result",
+        "rev": "4ff5f5b59c239c23314240106c6903bb0084e074",
+        "type": "github"
+      },
+      "original": {
+        "owner": "arnetheduck",
+        "ref": "refs/heads/master",
+        "repo": "nim-result",
+        "type": "github"
+      }
+    },
+    "src-resultsutils-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1652456097,
+        "narHash": "sha256-2XHiyNtts1yihrKc7fIcEzHQWSyQOjShnTaGoZjIfSE=",
+        "owner": "nonnil",
+        "repo": "resultsutils",
+        "rev": "35822a2355a6c9821050ade0517312a6f3356fa1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nonnil",
+        "ref": "refs/heads/main",
+        "repo": "resultsutils",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

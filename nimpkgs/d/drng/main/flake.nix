@@ -16,7 +16,7 @@
   inputs."cpuwhat".owner = "nim-nix-pkgs";
   inputs."cpuwhat".ref   = "master";
   inputs."cpuwhat".repo  = "cpuwhat";
-  inputs."cpuwhat".dir   = "master";
+  inputs."cpuwhat".dir   = "source";
   inputs."cpuwhat".type  = "github";
   inputs."cpuwhat".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cpuwhat".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
