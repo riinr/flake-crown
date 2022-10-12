@@ -40,7 +40,7 @@
   inputs."bcrypt".owner = "nim-nix-pkgs";
   inputs."bcrypt".ref   = "master";
   inputs."bcrypt".repo  = "bcrypt";
-  inputs."bcrypt".dir   = "source";
+  inputs."bcrypt".dir   = "master";
   inputs."bcrypt".type  = "github";
   inputs."bcrypt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bcrypt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -48,7 +48,7 @@
   inputs."multicast".owner = "nim-nix-pkgs";
   inputs."multicast".ref   = "master";
   inputs."multicast".repo  = "multicast";
-  inputs."multicast".dir   = "source";
+  inputs."multicast".dir   = "master";
   inputs."multicast".type  = "github";
   inputs."multicast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."multicast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

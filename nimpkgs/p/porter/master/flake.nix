@@ -16,7 +16,7 @@
   inputs."mutableseqs".owner = "nim-nix-pkgs";
   inputs."mutableseqs".ref   = "master";
   inputs."mutableseqs".repo  = "mutableseqs";
-  inputs."mutableseqs".dir   = "source";
+  inputs."mutableseqs".dir   = "master";
   inputs."mutableseqs".type  = "github";
   inputs."mutableseqs".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mutableseqs".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

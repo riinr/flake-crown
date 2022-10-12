@@ -16,7 +16,7 @@
   inputs."sorta".owner = "nim-nix-pkgs";
   inputs."sorta".ref   = "master";
   inputs."sorta".repo  = "sorta";
-  inputs."sorta".dir   = "source";
+  inputs."sorta".dir   = "master";
   inputs."sorta".type  = "github";
   inputs."sorta".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sorta".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

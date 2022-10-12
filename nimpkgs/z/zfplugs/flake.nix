@@ -175,6 +175,14 @@
   inputs."zfplugs-v0_1_9".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfplugs-v0_1_9".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."zfplugs-v1_1_16".dir   = "v1_1_16";
+  inputs."zfplugs-v1_1_16".owner = "nim-nix-pkgs";
+  inputs."zfplugs-v1_1_16".ref   = "master";
+  inputs."zfplugs-v1_1_16".repo  = "zfplugs";
+  inputs."zfplugs-v1_1_16".type  = "github";
+  inputs."zfplugs-v1_1_16".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zfplugs-v1_1_16".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."zfplugs-v1_1_8".dir   = "v1_1_8";
   inputs."zfplugs-v1_1_8".owner = "nim-nix-pkgs";
   inputs."zfplugs-v1_1_8".ref   = "master";

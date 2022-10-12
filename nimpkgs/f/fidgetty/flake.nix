@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."fidgetty-devel".dir   = "devel";
+  inputs."fidgetty-devel".owner = "nim-nix-pkgs";
+  inputs."fidgetty-devel".ref   = "master";
+  inputs."fidgetty-devel".repo  = "fidgetty";
+  inputs."fidgetty-devel".type  = "github";
+  inputs."fidgetty-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."fidgetty-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."fidgetty-main".dir   = "main";
   inputs."fidgetty-main".owner = "nim-nix-pkgs";
   inputs."fidgetty-main".ref   = "master";

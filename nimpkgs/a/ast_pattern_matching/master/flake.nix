@@ -9,7 +9,7 @@
   
   inputs.src-ast_pattern_matching-master.flake = false;
   inputs.src-ast_pattern_matching-master.ref   = "refs/heads/master";
-  inputs.src-ast_pattern_matching-master.owner = "krux02";
+  inputs.src-ast_pattern_matching-master.owner = "nim-lang";
   inputs.src-ast_pattern_matching-master.repo  = "ast-pattern-matching";
   inputs.src-ast_pattern_matching-master.type  = "github";
   

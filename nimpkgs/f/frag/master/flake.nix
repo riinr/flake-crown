@@ -16,7 +16,7 @@
   inputs."sdl2".owner = "nim-nix-pkgs";
   inputs."sdl2".ref   = "master";
   inputs."sdl2".repo  = "sdl2";
-  inputs."sdl2".dir   = "v2_0_3";
+  inputs."sdl2".dir   = "v2_0_4";
   inputs."sdl2".type  = "github";
   inputs."sdl2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sdl2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -56,7 +56,7 @@
   inputs."bgfxdotnim".owner = "nim-nix-pkgs";
   inputs."bgfxdotnim".ref   = "master";
   inputs."bgfxdotnim".repo  = "bgfxdotnim";
-  inputs."bgfxdotnim".dir   = "source";
+  inputs."bgfxdotnim".dir   = "master";
   inputs."bgfxdotnim".type  = "github";
   inputs."bgfxdotnim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bgfxdotnim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -72,7 +72,7 @@
   inputs."sound".owner = "nim-nix-pkgs";
   inputs."sound".ref   = "master";
   inputs."sound".repo  = "sound";
-  inputs."sound".dir   = "source";
+  inputs."sound".dir   = "master";
   inputs."sound".type  = "github";
   inputs."sound".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sound".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -96,7 +96,7 @@
   inputs."strfmt".owner = "nim-nix-pkgs";
   inputs."strfmt".ref   = "master";
   inputs."strfmt".repo  = "strfmt";
-  inputs."strfmt".dir   = "source";
+  inputs."strfmt".dir   = "master";
   inputs."strfmt".type  = "github";
   inputs."strfmt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."strfmt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

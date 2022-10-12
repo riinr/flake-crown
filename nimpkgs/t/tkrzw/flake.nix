@@ -31,6 +31,22 @@
   inputs."tkrzw-20220830".inputs.nixpkgs.follows = "nixpkgs";
   inputs."tkrzw-20220830".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."tkrzw-20220910".dir   = "20220910";
+  inputs."tkrzw-20220910".owner = "nim-nix-pkgs";
+  inputs."tkrzw-20220910".ref   = "master";
+  inputs."tkrzw-20220910".repo  = "tkrzw";
+  inputs."tkrzw-20220910".type  = "github";
+  inputs."tkrzw-20220910".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."tkrzw-20220910".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."tkrzw-20220922".dir   = "20220922";
+  inputs."tkrzw-20220922".owner = "nim-nix-pkgs";
+  inputs."tkrzw-20220922".ref   = "master";
+  inputs."tkrzw-20220922".repo  = "tkrzw";
+  inputs."tkrzw-20220922".type  = "github";
+  inputs."tkrzw-20220922".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."tkrzw-20220922".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."tkrzw-v0_1_0".dir   = "v0_1_0";
   inputs."tkrzw-v0_1_0".owner = "nim-nix-pkgs";
   inputs."tkrzw-v0_1_0".ref   = "master";

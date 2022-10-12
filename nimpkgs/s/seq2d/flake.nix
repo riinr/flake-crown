@@ -23,6 +23,14 @@
   inputs."seq2d-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."seq2d-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."seq2d-v0_1_1".dir   = "v0_1_1";
+  inputs."seq2d-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."seq2d-v0_1_1".ref   = "master";
+  inputs."seq2d-v0_1_1".repo  = "seq2d";
+  inputs."seq2d-v0_1_1".type  = "github";
+  inputs."seq2d-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."seq2d-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

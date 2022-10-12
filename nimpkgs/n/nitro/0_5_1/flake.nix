@@ -24,7 +24,7 @@
   inputs."questionable".owner = "nim-nix-pkgs";
   inputs."questionable".ref   = "master";
   inputs."questionable".repo  = "questionable";
-  inputs."questionable".dir   = "0_10_5";
+  inputs."questionable".dir   = "0_10_6";
   inputs."questionable".type  = "github";
   inputs."questionable".inputs.nixpkgs.follows = "nixpkgs";
   inputs."questionable".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -40,7 +40,7 @@
   inputs."contractabi".owner = "nim-nix-pkgs";
   inputs."contractabi".ref   = "master";
   inputs."contractabi".repo  = "contractabi";
-  inputs."contractabi".dir   = "0_4_5";
+  inputs."contractabi".dir   = "0_4_6";
   inputs."contractabi".type  = "github";
   inputs."contractabi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."contractabi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -56,7 +56,7 @@
   inputs."stint".owner = "nim-nix-pkgs";
   inputs."stint".ref   = "master";
   inputs."stint".repo  = "stint";
-  inputs."stint".dir   = "source";
+  inputs."stint".dir   = "master";
   inputs."stint".type  = "github";
   inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -64,7 +64,7 @@
   inputs."stew".owner = "nim-nix-pkgs";
   inputs."stew".ref   = "master";
   inputs."stew".repo  = "stew";
-  inputs."stew".dir   = "source";
+  inputs."stew".dir   = "master";
   inputs."stew".type  = "github";
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

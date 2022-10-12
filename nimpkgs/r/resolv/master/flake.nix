@@ -16,7 +16,7 @@
   inputs."dnsprotocol".owner = "nim-nix-pkgs";
   inputs."dnsprotocol".ref   = "master";
   inputs."dnsprotocol".repo  = "dnsprotocol";
-  inputs."dnsprotocol".dir   = "source";
+  inputs."dnsprotocol".dir   = "main";
   inputs."dnsprotocol".type  = "github";
   inputs."dnsprotocol".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dnsprotocol".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

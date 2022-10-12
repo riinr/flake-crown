@@ -1,0 +1,155 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1662018438,
+        "narHash": "sha256-QtNtU6+LX3Wokxf0zlFwKTFOcn6TeDjKQZ+DA9OYtvM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b1fe8340736e3a85d25c709ac3dfd82a55c03cbf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1662096612,
+        "narHash": "sha256-R+Q8l5JuyJryRPdiIaYpO5O3A55rT+/pItBrKcy7LM4=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "21de2b973f9fee595a7a1ac4693efff791245c34",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-autotemplate-master": "src-autotemplate-master",
+        "templates": "templates",
+        "with": "with"
+      }
+    },
+    "src-autotemplate-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1648818365,
+        "narHash": "sha256-D5wkpntZjNCJOxBXrcpfGGfMCTTJ27pTARMbOYtxTUw=",
+        "owner": "PMunch",
+        "repo": "autotemplate",
+        "rev": "d14b687be0f2fa8a96d5372c5a548c91c7a750f4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PMunch",
+        "ref": "refs/heads/master",
+        "repo": "autotemplate",
+        "type": "github"
+      }
+    },
+    "src-templates-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1571582571,
+        "narHash": "sha256-ATvvaFwXkk7WwD+LNFp0Hv1y8CeOpSdfOcJ71W/5bCQ=",
+        "owner": "onionhammer",
+        "repo": "nim-templates",
+        "rev": "9c18d46fc1ba70e86eed2515502da34377bee088",
+        "type": "github"
+      },
+      "original": {
+        "owner": "onionhammer",
+        "ref": "refs/heads/master",
+        "repo": "nim-templates",
+        "type": "github"
+      }
+    },
+    "src-with-0_4_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1569401720,
+        "narHash": "sha256-+4P36kbtS96WX/Vv6gXphee9/VHDtl0/w1B1Uy9PuOE=",
+        "owner": "zevv",
+        "repo": "with",
+        "rev": "2f95909c767605e06670dc70f5cffd6b9284f192",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zevv",
+        "ref": "refs/tags/0.4.0",
+        "repo": "with",
+        "type": "github"
+      }
+    },
+    "templates": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-templates-master": "src-templates-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1662254878,
+        "narHash": "sha256-qULvavOw6PWNn+EVdcrKsGgiRjXrha7H+1Pwy7hFF3M=",
+        "owner": "nim-nix-pkgs",
+        "repo": "templates",
+        "rev": "6f7e5c23f867edc05d0201b68281b0ecc2f95a57",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "templates",
+        "type": "github"
+      }
+    },
+    "with": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-with-0_4_0": "src-with-0_4_0"
+      },
+      "locked": {
+        "dir": "0_4_0",
+        "lastModified": 1662254942,
+        "narHash": "sha256-EPEdJJG3fJVp0gY+bzVuF+uofFkWe6bxAHeLFD14CtQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "with",
+        "rev": "2bb651b26e200c214b0823c8fdd305ae5c608758",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_4_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "with",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

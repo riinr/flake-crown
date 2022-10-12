@@ -24,7 +24,7 @@
   inputs."vimeo".owner = "nim-nix-pkgs";
   inputs."vimeo".ref   = "master";
   inputs."vimeo".repo  = "vimeo";
-  inputs."vimeo".dir   = "source";
+  inputs."vimeo".dir   = "master";
   inputs."vimeo".type  = "github";
   inputs."vimeo".inputs.nixpkgs.follows = "nixpkgs";
   inputs."vimeo".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

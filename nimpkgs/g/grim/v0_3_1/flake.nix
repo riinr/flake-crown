@@ -24,7 +24,7 @@
   inputs."zero_functional".owner = "nim-nix-pkgs";
   inputs."zero_functional".ref   = "master";
   inputs."zero_functional".repo  = "zero_functional";
-  inputs."zero_functional".dir   = "v1_2_1";
+  inputs."zero_functional".dir   = "v1_3_0";
   inputs."zero_functional".type  = "github";
   inputs."zero_functional".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zero_functional".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

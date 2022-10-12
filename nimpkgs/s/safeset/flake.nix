@@ -15,6 +15,14 @@
   inputs."safeset-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."safeset-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."safeset-v0_1_1".dir   = "v0_1_1";
+  inputs."safeset-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."safeset-v0_1_1".ref   = "master";
+  inputs."safeset-v0_1_1".repo  = "safeset";
+  inputs."safeset-v0_1_1".type  = "github";
+  inputs."safeset-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."safeset-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

@@ -130,6 +130,50 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/tags/v0.6.1"
+    },
+    {
+      "name": "dnd",
+      "version": "0.7.0",
+      "author": "Adam Múdry",
+      "desc": "Drag and drop source / target",
+      "license": "GPL-3.0-only",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "resources",
+        "examples"
+      ],
+      "installFiles": [
+        "dnd.cfg",
+        "README.md"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.2"
+          }
+        },
+        {
+          "name": "gintro",
+          "str": "0.9.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.9.9"
+          }
+        }
+      ],
+      "bin": [
+        "dnd"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.7.0"
     }
   ],
   "description": "Drag and drop source / target",
@@ -140,6 +184,7 @@
     "refs/tags/v0.5.0",
     "refs/tags/v0.6.0",
     "refs/tags/v0.6.1",
+    "refs/tags/v0.7.0",
     ""
   ],
   "heads": [

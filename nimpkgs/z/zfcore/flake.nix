@@ -183,6 +183,22 @@
   inputs."zfcore-v1_1_13".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfcore-v1_1_13".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."zfcore-v1_1_14".dir   = "v1_1_14";
+  inputs."zfcore-v1_1_14".owner = "nim-nix-pkgs";
+  inputs."zfcore-v1_1_14".ref   = "master";
+  inputs."zfcore-v1_1_14".repo  = "zfcore";
+  inputs."zfcore-v1_1_14".type  = "github";
+  inputs."zfcore-v1_1_14".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zfcore-v1_1_14".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."zfcore-v1_1_15".dir   = "v1_1_15";
+  inputs."zfcore-v1_1_15".owner = "nim-nix-pkgs";
+  inputs."zfcore-v1_1_15".ref   = "master";
+  inputs."zfcore-v1_1_15".repo  = "zfcore";
+  inputs."zfcore-v1_1_15".type  = "github";
+  inputs."zfcore-v1_1_15".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zfcore-v1_1_15".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."zfcore-v1_1_5".dir   = "v1_1_5";
   inputs."zfcore-v1_1_5".owner = "nim-nix-pkgs";
   inputs."zfcore-v1_1_5".ref   = "master";

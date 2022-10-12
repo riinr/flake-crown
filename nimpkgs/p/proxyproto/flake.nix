@@ -47,6 +47,14 @@
   inputs."proxyproto-0_1_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."proxyproto-0_1_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."proxyproto-0_1_4".dir   = "0_1_4";
+  inputs."proxyproto-0_1_4".owner = "nim-nix-pkgs";
+  inputs."proxyproto-0_1_4".ref   = "master";
+  inputs."proxyproto-0_1_4".repo  = "proxyproto";
+  inputs."proxyproto-0_1_4".type  = "github";
+  inputs."proxyproto-0_1_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."proxyproto-0_1_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

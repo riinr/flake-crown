@@ -10,7 +10,7 @@
   inputs.src-xio-master.flake = false;
   inputs.src-xio-master.ref   = "refs/heads/master";
   inputs.src-xio-master.owner = "ringabout";
-  inputs.src-xio-master.repo  = "async";
+  inputs.src-xio-master.repo  = "xio";
   inputs.src-xio-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:

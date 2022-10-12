@@ -16,7 +16,7 @@
   inputs."syscall".owner = "nim-nix-pkgs";
   inputs."syscall".ref   = "master";
   inputs."syscall".repo  = "syscall";
-  inputs."syscall".dir   = "source";
+  inputs."syscall".dir   = "master";
   inputs."syscall".type  = "github";
   inputs."syscall".inputs.nixpkgs.follows = "nixpkgs";
   inputs."syscall".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -79,6 +79,14 @@
   inputs."svdpi-v0_5_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."svdpi-v0_5_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."svdpi-v0_6_0".dir   = "v0_6_0";
+  inputs."svdpi-v0_6_0".owner = "nim-nix-pkgs";
+  inputs."svdpi-v0_6_0".ref   = "master";
+  inputs."svdpi-v0_6_0".repo  = "svdpi";
+  inputs."svdpi-v0_6_0".type  = "github";
+  inputs."svdpi-v0_6_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."svdpi-v0_6_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

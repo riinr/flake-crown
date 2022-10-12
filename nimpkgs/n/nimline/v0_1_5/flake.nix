@@ -9,7 +9,7 @@
   
   inputs.src-nimline-v0_1_5.flake = false;
   inputs.src-nimline-v0_1_5.ref   = "refs/tags/v0.1.5";
-  inputs.src-nimline-v0_1_5.owner = "fragcolor-xyz";
+  inputs.src-nimline-v0_1_5.owner = "sinkingsugar";
   inputs.src-nimline-v0_1_5.repo  = "nimline";
   inputs.src-nimline-v0_1_5.type  = "github";
   

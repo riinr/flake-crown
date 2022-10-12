@@ -24,7 +24,7 @@
   inputs."decimal".owner = "nim-nix-pkgs";
   inputs."decimal".ref   = "master";
   inputs."decimal".repo  = "decimal";
-  inputs."decimal".dir   = "source";
+  inputs."decimal".dir   = "master";
   inputs."decimal".type  = "github";
   inputs."decimal".inputs.nixpkgs.follows = "nixpkgs";
   inputs."decimal".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -24,7 +24,7 @@
   inputs."stew".owner = "nim-nix-pkgs";
   inputs."stew".ref   = "master";
   inputs."stew".repo  = "stew";
-  inputs."stew".dir   = "source";
+  inputs."stew".dir   = "master";
   inputs."stew".type  = "github";
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -48,7 +48,7 @@
   inputs."zlib".owner = "nim-nix-pkgs";
   inputs."zlib".ref   = "master";
   inputs."zlib".repo  = "zlib";
-  inputs."zlib".dir   = "source";
+  inputs."zlib".dir   = "master";
   inputs."zlib".type  = "github";
   inputs."zlib".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zlib".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

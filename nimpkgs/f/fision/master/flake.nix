@@ -48,7 +48,7 @@
   inputs."binaryheap".owner = "nim-nix-pkgs";
   inputs."binaryheap".ref   = "master";
   inputs."binaryheap".repo  = "binaryheap";
-  inputs."binaryheap".dir   = "source";
+  inputs."binaryheap".dir   = "master";
   inputs."binaryheap".type  = "github";
   inputs."binaryheap".inputs.nixpkgs.follows = "nixpkgs";
   inputs."binaryheap".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -56,7 +56,7 @@
   inputs."bipbuffer".owner = "nim-nix-pkgs";
   inputs."bipbuffer".ref   = "master";
   inputs."bipbuffer".repo  = "bipbuffer";
-  inputs."bipbuffer".dir   = "source";
+  inputs."bipbuffer".dir   = "master";
   inputs."bipbuffer".type  = "github";
   inputs."bipbuffer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bipbuffer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -64,7 +64,7 @@
   inputs."bncurve".owner = "nim-nix-pkgs";
   inputs."bncurve".ref   = "master";
   inputs."bncurve".repo  = "bncurve";
-  inputs."bncurve".dir   = "source";
+  inputs."bncurve".dir   = "master";
   inputs."bncurve".type  = "github";
   inputs."bncurve".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bncurve".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -72,7 +72,7 @@
   inputs."brainfuck".owner = "nim-nix-pkgs";
   inputs."brainfuck".ref   = "master";
   inputs."brainfuck".repo  = "brainfuck";
-  inputs."brainfuck".dir   = "source";
+  inputs."brainfuck".dir   = "master";
   inputs."brainfuck".type  = "github";
   inputs."brainfuck".inputs.nixpkgs.follows = "nixpkgs";
   inputs."brainfuck".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -80,7 +80,7 @@
   inputs."bump".owner = "nim-nix-pkgs";
   inputs."bump".ref   = "master";
   inputs."bump".repo  = "bump";
-  inputs."bump".dir   = "1_8_29";
+  inputs."bump".dir   = "1_8_30";
   inputs."bump".type  = "github";
   inputs."bump".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bump".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -128,7 +128,7 @@
   inputs."chronos".owner = "nim-nix-pkgs";
   inputs."chronos".ref   = "master";
   inputs."chronos".repo  = "chronos";
-  inputs."chronos".dir   = "source";
+  inputs."chronos".dir   = "master";
   inputs."chronos".type  = "github";
   inputs."chronos".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -144,7 +144,7 @@
   inputs."combparser".owner = "nim-nix-pkgs";
   inputs."combparser".ref   = "master";
   inputs."combparser".repo  = "combparser";
-  inputs."combparser".dir   = "source";
+  inputs."combparser".dir   = "master";
   inputs."combparser".type  = "github";
   inputs."combparser".inputs.nixpkgs.follows = "nixpkgs";
   inputs."combparser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -152,7 +152,7 @@
   inputs."compactdict".owner = "nim-nix-pkgs";
   inputs."compactdict".ref   = "master";
   inputs."compactdict".repo  = "compactdict";
-  inputs."compactdict".dir   = "source";
+  inputs."compactdict".dir   = "master";
   inputs."compactdict".type  = "github";
   inputs."compactdict".inputs.nixpkgs.follows = "nixpkgs";
   inputs."compactdict".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -168,7 +168,7 @@
   inputs."datamancer".owner = "nim-nix-pkgs";
   inputs."datamancer".ref   = "master";
   inputs."datamancer".repo  = "datamancer";
-  inputs."datamancer".dir   = "v0_3_4";
+  inputs."datamancer".dir   = "v0_3_6";
   inputs."datamancer".type  = "github";
   inputs."datamancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."datamancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -184,7 +184,7 @@
   inputs."docopt".owner = "nim-nix-pkgs";
   inputs."docopt".ref   = "master";
   inputs."docopt".repo  = "docopt";
-  inputs."docopt".dir   = "v0_6_8";
+  inputs."docopt".dir   = "v0_7_0";
   inputs."docopt".type  = "github";
   inputs."docopt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -328,7 +328,7 @@
   inputs."loopfusion".owner = "nim-nix-pkgs";
   inputs."loopfusion".ref   = "master";
   inputs."loopfusion".repo  = "loopfusion";
-  inputs."loopfusion".dir   = "source";
+  inputs."loopfusion".dir   = "master";
   inputs."loopfusion".type  = "github";
   inputs."loopfusion".inputs.nixpkgs.follows = "nixpkgs";
   inputs."loopfusion".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -496,7 +496,7 @@
   inputs."nimsl".owner = "nim-nix-pkgs";
   inputs."nimsl".ref   = "master";
   inputs."nimsl".repo  = "nimsl";
-  inputs."nimsl".dir   = "v0_3_2";
+  inputs."nimsl".dir   = "v0_3_3";
   inputs."nimsl".type  = "github";
   inputs."nimsl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimsl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -536,7 +536,7 @@
   inputs."norm".owner = "nim-nix-pkgs";
   inputs."norm".ref   = "master";
   inputs."norm".repo  = "norm";
-  inputs."norm".dir   = "2_5_1";
+  inputs."norm".dir   = "2_5_2";
   inputs."norm".type  = "github";
   inputs."norm".inputs.nixpkgs.follows = "nixpkgs";
   inputs."norm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -552,7 +552,7 @@
   inputs."numericalnim".owner = "nim-nix-pkgs";
   inputs."numericalnim".ref   = "master";
   inputs."numericalnim".repo  = "numericalnim";
-  inputs."numericalnim".dir   = "v0_8_0";
+  inputs."numericalnim".dir   = "v0_8_2";
   inputs."numericalnim".type  = "github";
   inputs."numericalnim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."numericalnim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -640,7 +640,7 @@
   inputs."pylib".owner = "nim-nix-pkgs";
   inputs."pylib".ref   = "master";
   inputs."pylib".repo  = "pylib";
-  inputs."pylib".dir   = "source";
+  inputs."pylib".dir   = "master";
   inputs."pylib".type  = "github";
   inputs."pylib".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pylib".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -664,7 +664,7 @@
   inputs."regex".owner = "nim-nix-pkgs";
   inputs."regex".ref   = "master";
   inputs."regex".repo  = "regex";
-  inputs."regex".dir   = "v0_19_0";
+  inputs."regex".dir   = "v0_20_0";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -728,7 +728,7 @@
   inputs."stint".owner = "nim-nix-pkgs";
   inputs."stint".ref   = "master";
   inputs."stint".repo  = "stint";
-  inputs."stint".dir   = "source";
+  inputs."stint".dir   = "master";
   inputs."stint".type  = "github";
   inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -888,7 +888,7 @@
   inputs."zero_functional".owner = "nim-nix-pkgs";
   inputs."zero_functional".ref   = "master";
   inputs."zero_functional".repo  = "zero_functional";
-  inputs."zero_functional".dir   = "v1_2_1";
+  inputs."zero_functional".dir   = "v1_3_0";
   inputs."zero_functional".type  = "github";
   inputs."zero_functional".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zero_functional".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

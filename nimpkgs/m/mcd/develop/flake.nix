@@ -32,7 +32,7 @@
   inputs."colorizeecho".owner = "nim-nix-pkgs";
   inputs."colorizeecho".ref   = "master";
   inputs."colorizeecho".repo  = "colorizeecho";
-  inputs."colorizeecho".dir   = "source";
+  inputs."colorizeecho".dir   = "main";
   inputs."colorizeecho".type  = "github";
   inputs."colorizeecho".inputs.nixpkgs.follows = "nixpkgs";
   inputs."colorizeecho".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -175,6 +175,14 @@
   inputs."scorper-v1_0_26".inputs.nixpkgs.follows = "nixpkgs";
   inputs."scorper-v1_0_26".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."scorper-v1_0_27".dir   = "v1_0_27";
+  inputs."scorper-v1_0_27".owner = "nim-nix-pkgs";
+  inputs."scorper-v1_0_27".ref   = "master";
+  inputs."scorper-v1_0_27".repo  = "scorper";
+  inputs."scorper-v1_0_27".type  = "github";
+  inputs."scorper-v1_0_27".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."scorper-v1_0_27".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."scorper-v1_0_3".dir   = "v1_0_3";
   inputs."scorper-v1_0_3".owner = "nim-nix-pkgs";
   inputs."scorper-v1_0_3".ref   = "master";

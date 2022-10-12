@@ -79,6 +79,14 @@
   inputs."codegenlib-v1_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."codegenlib-v1_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."codegenlib-v1_1_10".dir   = "v1_1_10";
+  inputs."codegenlib-v1_1_10".owner = "nim-nix-pkgs";
+  inputs."codegenlib-v1_1_10".ref   = "master";
+  inputs."codegenlib-v1_1_10".repo  = "codegenlib";
+  inputs."codegenlib-v1_1_10".type  = "github";
+  inputs."codegenlib-v1_1_10".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."codegenlib-v1_1_10".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."codegenlib-v1_1_2".dir   = "v1_1_2";
   inputs."codegenlib-v1_1_2".owner = "nim-nix-pkgs";
   inputs."codegenlib-v1_1_2".ref   = "master";

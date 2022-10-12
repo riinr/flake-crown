@@ -32,7 +32,7 @@
   inputs."memlib".owner = "nim-nix-pkgs";
   inputs."memlib".ref   = "master";
   inputs."memlib".repo  = "memlib";
-  inputs."memlib".dir   = "source";
+  inputs."memlib".dir   = "master";
   inputs."memlib".type  = "github";
   inputs."memlib".inputs.nixpkgs.follows = "nixpkgs";
   inputs."memlib".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

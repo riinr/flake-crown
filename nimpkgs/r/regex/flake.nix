@@ -175,6 +175,14 @@
   inputs."regex-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."regex-v0_20_0".dir   = "v0_20_0";
+  inputs."regex-v0_20_0".owner = "nim-nix-pkgs";
+  inputs."regex-v0_20_0".ref   = "master";
+  inputs."regex-v0_20_0".repo  = "regex";
+  inputs."regex-v0_20_0".type  = "github";
+  inputs."regex-v0_20_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."regex-v0_20_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."regex-v0_3_0".dir   = "v0_3_0";
   inputs."regex-v0_3_0".owner = "nim-nix-pkgs";
   inputs."regex-v0_3_0".ref   = "master";

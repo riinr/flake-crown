@@ -16,7 +16,7 @@
   inputs."coap".owner = "nim-nix-pkgs";
   inputs."coap".ref   = "master";
   inputs."coap".repo  = "coap";
-  inputs."coap".dir   = "source";
+  inputs."coap".dir   = "master";
   inputs."coap".type  = "github";
   inputs."coap".inputs.nixpkgs.follows = "nixpkgs";
   inputs."coap".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -46,6 +46,50 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/tags/v0.1"
+    },
+    {
+      "name": "nimiSlides",
+      "version": "0.2",
+      "author": "Hugo Granström",
+      "desc": "Reveal.js theme for nimib",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "nimib",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "toml_serialization",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.2"
     }
   ],
   "description": "Create Reveal.js slideshows in Nim",
@@ -54,7 +98,9 @@
   "refs": [
     "refs/heads/main",
     "refs/heads/migrateNimib-0.3",
+    "refs/heads/update-0.2",
     "refs/tags/v0.1",
+    "refs/tags/v0.2",
     ""
   ],
   "heads": [

@@ -32,7 +32,7 @@
   inputs."brightcove".owner = "nim-nix-pkgs";
   inputs."brightcove".ref   = "master";
   inputs."brightcove".repo  = "brightcove";
-  inputs."brightcove".dir   = "source";
+  inputs."brightcove".dir   = "master";
   inputs."brightcove".type  = "github";
   inputs."brightcove".inputs.nixpkgs.follows = "nixpkgs";
   inputs."brightcove".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -16,7 +16,7 @@
   inputs."bcrypt".owner = "nim-nix-pkgs";
   inputs."bcrypt".ref   = "master";
   inputs."bcrypt".repo  = "bcrypt";
-  inputs."bcrypt".dir   = "source";
+  inputs."bcrypt".dir   = "master";
   inputs."bcrypt".type  = "github";
   inputs."bcrypt".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bcrypt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -24,7 +24,7 @@
   inputs."contra".owner = "nim-nix-pkgs";
   inputs."contra".ref   = "master";
   inputs."contra".repo  = "contra";
-  inputs."contra".dir   = "source";
+  inputs."contra".dir   = "master";
   inputs."contra".type  = "github";
   inputs."contra".inputs.nixpkgs.follows = "nixpkgs";
   inputs."contra".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -56,7 +56,7 @@
   inputs."libravatar".owner = "nim-nix-pkgs";
   inputs."libravatar".ref   = "master";
   inputs."libravatar".repo  = "libravatar";
-  inputs."libravatar".dir   = "source";
+  inputs."libravatar".dir   = "master";
   inputs."libravatar".type  = "github";
   inputs."libravatar".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libravatar".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

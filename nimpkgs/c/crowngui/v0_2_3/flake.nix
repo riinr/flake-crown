@@ -24,7 +24,7 @@
   inputs."plists".owner = "nim-nix-pkgs";
   inputs."plists".ref   = "master";
   inputs."plists".repo  = "plists";
-  inputs."plists".dir   = "source";
+  inputs."plists".dir   = "master";
   inputs."plists".type  = "github";
   inputs."plists".inputs.nixpkgs.follows = "nixpkgs";
   inputs."plists".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

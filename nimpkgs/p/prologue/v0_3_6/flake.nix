@@ -16,7 +16,7 @@
   inputs."regex".owner = "nim-nix-pkgs";
   inputs."regex".ref   = "master";
   inputs."regex".repo  = "regex";
-  inputs."regex".dir   = "v0_19_0";
+  inputs."regex".dir   = "v0_20_0";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -48,7 +48,7 @@
   inputs."httpx".owner = "nim-nix-pkgs";
   inputs."httpx".ref   = "master";
   inputs."httpx".repo  = "httpx";
-  inputs."httpx".dir   = "v0_3_0";
+  inputs."httpx".dir   = "v0_3_2";
   inputs."httpx".type  = "github";
   inputs."httpx".inputs.nixpkgs.follows = "nixpkgs";
   inputs."httpx".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

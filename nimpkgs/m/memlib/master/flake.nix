@@ -24,7 +24,7 @@
   inputs."minhook".owner = "nim-nix-pkgs";
   inputs."minhook".ref   = "master";
   inputs."minhook".repo  = "minhook";
-  inputs."minhook".dir   = "source";
+  inputs."minhook".dir   = "main";
   inputs."minhook".type  = "github";
   inputs."minhook".inputs.nixpkgs.follows = "nixpkgs";
   inputs."minhook".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

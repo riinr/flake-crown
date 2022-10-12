@@ -87,6 +87,14 @@
   inputs."docopt-v0_6_8".inputs.nixpkgs.follows = "nixpkgs";
   inputs."docopt-v0_6_8".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."docopt-v0_7_0".dir   = "v0_7_0";
+  inputs."docopt-v0_7_0".owner = "nim-nix-pkgs";
+  inputs."docopt-v0_7_0".ref   = "master";
+  inputs."docopt-v0_7_0".repo  = "docopt";
+  inputs."docopt-v0_7_0".type  = "github";
+  inputs."docopt-v0_7_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."docopt-v0_7_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

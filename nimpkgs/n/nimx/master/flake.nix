@@ -16,7 +16,7 @@
   inputs."sdl2".owner = "nim-nix-pkgs";
   inputs."sdl2".ref   = "master";
   inputs."sdl2".repo  = "sdl2";
-  inputs."sdl2".dir   = "v2_0_3";
+  inputs."sdl2".dir   = "v2_0_4";
   inputs."sdl2".type  = "github";
   inputs."sdl2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sdl2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -32,7 +32,7 @@
   inputs."nimsl".owner = "nim-nix-pkgs";
   inputs."nimsl".ref   = "master";
   inputs."nimsl".repo  = "nimsl";
-  inputs."nimsl".dir   = "v0_3_2";
+  inputs."nimsl".dir   = "v0_3_3";
   inputs."nimsl".type  = "github";
   inputs."nimsl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimsl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -64,7 +64,7 @@
   inputs."plists".owner = "nim-nix-pkgs";
   inputs."plists".ref   = "master";
   inputs."plists".repo  = "plists";
-  inputs."plists".dir   = "source";
+  inputs."plists".dir   = "master";
   inputs."plists".type  = "github";
   inputs."plists".inputs.nixpkgs.follows = "nixpkgs";
   inputs."plists".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -80,7 +80,7 @@
   inputs."kiwi".owner = "nim-nix-pkgs";
   inputs."kiwi".ref   = "master";
   inputs."kiwi".repo  = "kiwi";
-  inputs."kiwi".dir   = "source";
+  inputs."kiwi".dir   = "master";
   inputs."kiwi".type  = "github";
   inputs."kiwi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."kiwi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -128,7 +128,7 @@
   inputs."darwin".owner = "nim-nix-pkgs";
   inputs."darwin".ref   = "master";
   inputs."darwin".repo  = "darwin";
-  inputs."darwin".dir   = "source";
+  inputs."darwin".dir   = "master";
   inputs."darwin".type  = "github";
   inputs."darwin".inputs.nixpkgs.follows = "nixpkgs";
   inputs."darwin".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

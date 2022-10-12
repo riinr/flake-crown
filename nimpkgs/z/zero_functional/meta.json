@@ -422,22 +422,45 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/tags/v1.2.1"
+    },
+    {
+      "name": "zero_functional",
+      "version": "1.3.0",
+      "author": "Alexander Ivanov / Michael Schulte",
+      "desc": "a library providing zero-cost for chaining functional abstractions in Nim.",
+      "license": "MIT",
+      "skipDirs": [
+        "benchmarks"
+      ],
+      "skipFiles": [
+        "test.nim"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.3.0"
     }
   ],
   "description": "A library providing zero-cost chaining for functional abstractions in Nim",
   "license": "MIT",
   "web": "https://github.com/zero-functional/zero-functional",
   "refs": [
-    "refs/heads/autoconvert",
-    "refs/heads/bugfix/reduce-warnings",
-    "refs/heads/feature/#53_rework_combinations",
-    "refs/heads/fix-convert-arrows",
-    "refs/heads/fix-examples-and-warnings",
     "refs/heads/master",
-    "refs/heads/rework-iterator2",
-    "refs/heads/z",
-    "refs/heads/zero-dsl",
-    "refs/heads/zero-seq",
     "refs/tags/v0.0.1",
     "refs/tags/v0.0.2",
     "refs/tags/v0.0.3",
@@ -453,6 +476,7 @@
     "refs/tags/v1.1.1",
     "refs/tags/v1.2.0",
     "refs/tags/v1.2.1",
+    "refs/tags/v1.3.0",
     ""
   ],
   "heads": [

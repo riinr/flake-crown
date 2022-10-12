@@ -24,7 +24,7 @@
   inputs."contractabi".owner = "nim-nix-pkgs";
   inputs."contractabi".ref   = "master";
   inputs."contractabi".repo  = "contractabi";
-  inputs."contractabi".dir   = "0_4_5";
+  inputs."contractabi".dir   = "0_4_6";
   inputs."contractabi".type  = "github";
   inputs."contractabi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."contractabi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -32,7 +32,7 @@
   inputs."questionable".owner = "nim-nix-pkgs";
   inputs."questionable".ref   = "master";
   inputs."questionable".repo  = "questionable";
-  inputs."questionable".dir   = "0_10_5";
+  inputs."questionable".dir   = "0_10_6";
   inputs."questionable".type  = "github";
   inputs."questionable".inputs.nixpkgs.follows = "nixpkgs";
   inputs."questionable".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

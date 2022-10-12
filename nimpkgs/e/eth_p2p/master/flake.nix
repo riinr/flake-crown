@@ -56,7 +56,7 @@
   inputs."stint".owner = "nim-nix-pkgs";
   inputs."stint".ref   = "master";
   inputs."stint".repo  = "stint";
-  inputs."stint".dir   = "source";
+  inputs."stint".dir   = "master";
   inputs."stint".type  = "github";
   inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -64,7 +64,7 @@
   inputs."byteutils".owner = "nim-nix-pkgs";
   inputs."byteutils".ref   = "master";
   inputs."byteutils".repo  = "byteutils";
-  inputs."byteutils".dir   = "source";
+  inputs."byteutils".dir   = "master";
   inputs."byteutils".type  = "github";
   inputs."byteutils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."byteutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -80,7 +80,7 @@
   inputs."chronos".owner = "nim-nix-pkgs";
   inputs."chronos".ref   = "master";
   inputs."chronos".repo  = "chronos";
-  inputs."chronos".dir   = "source";
+  inputs."chronos".dir   = "master";
   inputs."chronos".type  = "github";
   inputs."chronos".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -96,7 +96,7 @@
   inputs."snappy".owner = "nim-nix-pkgs";
   inputs."snappy".ref   = "master";
   inputs."snappy".repo  = "snappy";
-  inputs."snappy".dir   = "source";
+  inputs."snappy".dir   = "master";
   inputs."snappy".type  = "github";
   inputs."snappy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."snappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -112,7 +112,7 @@
   inputs."serialization".owner = "nim-nix-pkgs";
   inputs."serialization".ref   = "master";
   inputs."serialization".repo  = "serialization";
-  inputs."serialization".dir   = "source";
+  inputs."serialization".dir   = "master";
   inputs."serialization".type  = "github";
   inputs."serialization".inputs.nixpkgs.follows = "nixpkgs";
   inputs."serialization".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

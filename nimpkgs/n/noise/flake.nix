@@ -15,13 +15,21 @@
   inputs."noise-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."noise-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."noise-v0_1_14".dir   = "v0_1_14";
-  inputs."noise-v0_1_14".owner = "nim-nix-pkgs";
-  inputs."noise-v0_1_14".ref   = "master";
-  inputs."noise-v0_1_14".repo  = "noise";
-  inputs."noise-v0_1_14".type  = "github";
-  inputs."noise-v0_1_14".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."noise-v0_1_14".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."noise-v0_1_4".dir   = "v0_1_4";
+  inputs."noise-v0_1_4".owner = "nim-nix-pkgs";
+  inputs."noise-v0_1_4".ref   = "master";
+  inputs."noise-v0_1_4".repo  = "noise";
+  inputs."noise-v0_1_4".type  = "github";
+  inputs."noise-v0_1_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."noise-v0_1_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."noise-v0_1_6".dir   = "v0_1_6";
+  inputs."noise-v0_1_6".owner = "nim-nix-pkgs";
+  inputs."noise-v0_1_6".ref   = "master";
+  inputs."noise-v0_1_6".repo  = "noise";
+  inputs."noise-v0_1_6".type  = "github";
+  inputs."noise-v0_1_6".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."noise-v0_1_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

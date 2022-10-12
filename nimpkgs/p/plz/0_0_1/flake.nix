@@ -24,7 +24,7 @@
   inputs."libarchibi".owner = "nim-nix-pkgs";
   inputs."libarchibi".ref   = "master";
   inputs."libarchibi".repo  = "libarchibi";
-  inputs."libarchibi".dir   = "source";
+  inputs."libarchibi".dir   = "master";
   inputs."libarchibi".type  = "github";
   inputs."libarchibi".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libarchibi".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

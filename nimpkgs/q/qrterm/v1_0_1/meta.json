@@ -1,0 +1,40 @@
+{
+  "name": "QRterm",
+  "version": "1.0.1",
+  "author": "aruZeta",
+  "desc": "A simple QR generator in your terminal.",
+  "license": "MIT",
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [
+    "nim"
+  ],
+  "installDirs": [],
+  "installFiles": [],
+  "installExt": [],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 1.6.0",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.6.0"
+      }
+    },
+    {
+      "name": "qrgen",
+      "str": "2.2.1",
+      "ver": {
+        "kind": "verEq",
+        "ver": "2.2.1"
+      }
+    }
+  ],
+  "bin": [
+    "qrterm"
+  ],
+  "binDir": "bin",
+  "srcDir": "src",
+  "backend": "c",
+  "ref": "refs/tags/v1.0.1"
+}

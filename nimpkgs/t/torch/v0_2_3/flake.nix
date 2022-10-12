@@ -16,7 +16,7 @@
   inputs."fragments".owner = "nim-nix-pkgs";
   inputs."fragments".ref   = "master";
   inputs."fragments".repo  = "fragments";
-  inputs."fragments".dir   = "master";
+  inputs."fragments".dir   = "v0_1_39";
   inputs."fragments".type  = "github";
   inputs."fragments".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fragments".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

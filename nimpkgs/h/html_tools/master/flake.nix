@@ -16,7 +16,7 @@
   inputs."contra".owner = "nim-nix-pkgs";
   inputs."contra".ref   = "master";
   inputs."contra".repo  = "contra";
-  inputs."contra".dir   = "source";
+  inputs."contra".dir   = "master";
   inputs."contra".type  = "github";
   inputs."contra".inputs.nixpkgs.follows = "nixpkgs";
   inputs."contra".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -15,6 +15,14 @@
   inputs."frida-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."frida-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."frida-0_1_0".dir   = "0_1_0";
+  inputs."frida-0_1_0".owner = "nim-nix-pkgs";
+  inputs."frida-0_1_0".ref   = "master";
+  inputs."frida-0_1_0".repo  = "frida";
+  inputs."frida-0_1_0".type  = "github";
+  inputs."frida-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."frida-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

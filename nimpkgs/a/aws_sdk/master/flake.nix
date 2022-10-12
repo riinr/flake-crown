@@ -16,7 +16,7 @@
   inputs."stringinterpolation".owner = "nim-nix-pkgs";
   inputs."stringinterpolation".ref   = "master";
   inputs."stringinterpolation".repo  = "stringinterpolation";
-  inputs."stringinterpolation".dir   = "source";
+  inputs."stringinterpolation".dir   = "master";
   inputs."stringinterpolation".type  = "github";
   inputs."stringinterpolation".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stringinterpolation".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -24,7 +24,7 @@
   inputs."sph".owner = "nim-nix-pkgs";
   inputs."sph".ref   = "master";
   inputs."sph".repo  = "sph";
-  inputs."sph".dir   = "source";
+  inputs."sph".dir   = "master";
   inputs."sph".type  = "github";
   inputs."sph".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sph".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -16,7 +16,7 @@
   inputs."colorsys".owner = "nim-nix-pkgs";
   inputs."colorsys".ref   = "master";
   inputs."colorsys".repo  = "colorsys";
-  inputs."colorsys".dir   = "source";
+  inputs."colorsys".dir   = "master";
   inputs."colorsys".type  = "github";
   inputs."colorsys".inputs.nixpkgs.follows = "nixpkgs";
   inputs."colorsys".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

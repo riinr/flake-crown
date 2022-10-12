@@ -7,14 +7,6 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."httpstat-develop".dir   = "develop";
-  inputs."httpstat-develop".owner = "nim-nix-pkgs";
-  inputs."httpstat-develop".ref   = "master";
-  inputs."httpstat-develop".repo  = "httpstat";
-  inputs."httpstat-develop".type  = "github";
-  inputs."httpstat-develop".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."httpstat-develop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."httpstat-master".dir   = "master";
   inputs."httpstat-master".owner = "nim-nix-pkgs";
   inputs."httpstat-master".ref   = "master";
@@ -46,6 +38,14 @@
   inputs."httpstat-v0_1_2".type  = "github";
   inputs."httpstat-v0_1_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."httpstat-v0_1_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."httpstat-v1_0_0".dir   = "v1_0_0";
+  inputs."httpstat-v1_0_0".owner = "nim-nix-pkgs";
+  inputs."httpstat-v1_0_0".ref   = "master";
+  inputs."httpstat-v1_0_0".repo  = "httpstat";
+  inputs."httpstat-v1_0_0".type  = "github";
+  inputs."httpstat-v1_0_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."httpstat-v1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

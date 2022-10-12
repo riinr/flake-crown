@@ -15,6 +15,14 @@
   inputs."servclip-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."servclip-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."servclip-0_4_0".dir   = "0_4_0";
+  inputs."servclip-0_4_0".owner = "nim-nix-pkgs";
+  inputs."servclip-0_4_0".ref   = "master";
+  inputs."servclip-0_4_0".repo  = "servclip";
+  inputs."servclip-0_4_0".type  = "github";
+  inputs."servclip-0_4_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."servclip-0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

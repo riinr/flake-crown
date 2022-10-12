@@ -32,7 +32,7 @@
   inputs."regex".owner = "nim-nix-pkgs";
   inputs."regex".ref   = "master";
   inputs."regex".repo  = "regex";
-  inputs."regex".dir   = "v0_19_0";
+  inputs."regex".dir   = "v0_20_0";
   inputs."regex".type  = "github";
   inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
   inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -40,7 +40,7 @@
   inputs."coco".owner = "nim-nix-pkgs";
   inputs."coco".ref   = "master";
   inputs."coco".repo  = "coco";
-  inputs."coco".dir   = "source";
+  inputs."coco".dir   = "master";
   inputs."coco".type  = "github";
   inputs."coco".inputs.nixpkgs.follows = "nixpkgs";
   inputs."coco".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -47,6 +47,14 @@
   inputs."sdl2-v2_0_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."sdl2-v2_0_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."sdl2-v2_0_4".dir   = "v2_0_4";
+  inputs."sdl2-v2_0_4".owner = "nim-nix-pkgs";
+  inputs."sdl2-v2_0_4".ref   = "master";
+  inputs."sdl2-v2_0_4".repo  = "sdl2";
+  inputs."sdl2-v2_0_4".type  = "github";
+  inputs."sdl2-v2_0_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."sdl2-v2_0_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

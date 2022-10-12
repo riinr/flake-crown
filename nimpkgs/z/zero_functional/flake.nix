@@ -135,6 +135,14 @@
   inputs."zero_functional-v1_2_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zero_functional-v1_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."zero_functional-v1_3_0".dir   = "v1_3_0";
+  inputs."zero_functional-v1_3_0".owner = "nim-nix-pkgs";
+  inputs."zero_functional-v1_3_0".ref   = "master";
+  inputs."zero_functional-v1_3_0".repo  = "zero_functional";
+  inputs."zero_functional-v1_3_0".type  = "github";
+  inputs."zero_functional-v1_3_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zero_functional-v1_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

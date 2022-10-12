@@ -32,7 +32,7 @@
   inputs."png".owner = "nim-nix-pkgs";
   inputs."png".ref   = "master";
   inputs."png".repo  = "png";
-  inputs."png".dir   = "source";
+  inputs."png".dir   = "master";
   inputs."png".type  = "github";
   inputs."png".inputs.nixpkgs.follows = "nixpkgs";
   inputs."png".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

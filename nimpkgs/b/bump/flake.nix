@@ -447,6 +447,14 @@
   inputs."bump-1_8_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bump-1_8_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."bump-1_8_30".dir   = "1_8_30";
+  inputs."bump-1_8_30".owner = "nim-nix-pkgs";
+  inputs."bump-1_8_30".ref   = "master";
+  inputs."bump-1_8_30".repo  = "bump";
+  inputs."bump-1_8_30".type  = "github";
+  inputs."bump-1_8_30".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."bump-1_8_30".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."bump-1_8_4".dir   = "1_8_4";
   inputs."bump-1_8_4".owner = "nim-nix-pkgs";
   inputs."bump-1_8_4".ref   = "master";

@@ -48,7 +48,7 @@
   inputs."clblast".owner = "nim-nix-pkgs";
   inputs."clblast".ref   = "master";
   inputs."clblast".repo  = "clblast";
-  inputs."clblast".dir   = "source";
+  inputs."clblast".dir   = "master";
   inputs."clblast".type  = "github";
   inputs."clblast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."clblast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -31,6 +31,14 @@
   inputs."bigints-0_5_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bigints-0_5_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."bigints-v1_0_0".dir   = "v1_0_0";
+  inputs."bigints-v1_0_0".owner = "nim-nix-pkgs";
+  inputs."bigints-v1_0_0".ref   = "master";
+  inputs."bigints-v1_0_0".repo  = "bigints";
+  inputs."bigints-v1_0_0".type  = "github";
+  inputs."bigints-v1_0_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."bigints-v1_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

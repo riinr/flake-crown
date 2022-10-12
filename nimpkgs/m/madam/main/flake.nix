@@ -16,7 +16,7 @@
   inputs."klymene".owner = "nim-nix-pkgs";
   inputs."klymene".ref   = "master";
   inputs."klymene".repo  = "klymene";
-  inputs."klymene".dir   = "source";
+  inputs."klymene".dir   = "main";
   inputs."klymene".type  = "github";
   inputs."klymene".inputs.nixpkgs.follows = "nixpkgs";
   inputs."klymene".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -39,6 +39,54 @@
   inputs."syndicate-1_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."syndicate-1_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."syndicate-1_3_0".dir   = "1_3_0";
+  inputs."syndicate-1_3_0".owner = "nim-nix-pkgs";
+  inputs."syndicate-1_3_0".ref   = "master";
+  inputs."syndicate-1_3_0".repo  = "syndicate";
+  inputs."syndicate-1_3_0".type  = "github";
+  inputs."syndicate-1_3_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."syndicate-1_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."syndicate-1_3_1".dir   = "1_3_1";
+  inputs."syndicate-1_3_1".owner = "nim-nix-pkgs";
+  inputs."syndicate-1_3_1".ref   = "master";
+  inputs."syndicate-1_3_1".repo  = "syndicate";
+  inputs."syndicate-1_3_1".type  = "github";
+  inputs."syndicate-1_3_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."syndicate-1_3_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."syndicate-20220627".dir   = "20220627";
+  inputs."syndicate-20220627".owner = "nim-nix-pkgs";
+  inputs."syndicate-20220627".ref   = "master";
+  inputs."syndicate-20220627".repo  = "syndicate";
+  inputs."syndicate-20220627".type  = "github";
+  inputs."syndicate-20220627".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."syndicate-20220627".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."syndicate-20220829".dir   = "20220829";
+  inputs."syndicate-20220829".owner = "nim-nix-pkgs";
+  inputs."syndicate-20220829".ref   = "master";
+  inputs."syndicate-20220829".repo  = "syndicate";
+  inputs."syndicate-20220829".type  = "github";
+  inputs."syndicate-20220829".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."syndicate-20220829".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."syndicate-20220830".dir   = "20220830";
+  inputs."syndicate-20220830".owner = "nim-nix-pkgs";
+  inputs."syndicate-20220830".ref   = "master";
+  inputs."syndicate-20220830".repo  = "syndicate";
+  inputs."syndicate-20220830".type  = "github";
+  inputs."syndicate-20220830".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."syndicate-20220830".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."syndicate-20220904".dir   = "20220904";
+  inputs."syndicate-20220904".owner = "nim-nix-pkgs";
+  inputs."syndicate-20220904".ref   = "master";
+  inputs."syndicate-20220904".repo  = "syndicate";
+  inputs."syndicate-20220904".type  = "github";
+  inputs."syndicate-20220904".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."syndicate-20220904".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."syndicate-nim-syndicate-1_2_0".dir   = "nim-syndicate-1_2_0";
   inputs."syndicate-nim-syndicate-1_2_0".owner = "nim-nix-pkgs";
   inputs."syndicate-nim-syndicate-1_2_0".ref   = "master";
@@ -46,6 +94,22 @@
   inputs."syndicate-nim-syndicate-1_2_0".type  = "github";
   inputs."syndicate-nim-syndicate-1_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."syndicate-nim-syndicate-1_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."syndicate-nim-syndicate-1_3_0".dir   = "nim-syndicate-1_3_0";
+  inputs."syndicate-nim-syndicate-1_3_0".owner = "nim-nix-pkgs";
+  inputs."syndicate-nim-syndicate-1_3_0".ref   = "master";
+  inputs."syndicate-nim-syndicate-1_3_0".repo  = "syndicate";
+  inputs."syndicate-nim-syndicate-1_3_0".type  = "github";
+  inputs."syndicate-nim-syndicate-1_3_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."syndicate-nim-syndicate-1_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."syndicate-nim-syndicate-1_3_1".dir   = "nim-syndicate-1_3_1";
+  inputs."syndicate-nim-syndicate-1_3_1".owner = "nim-nix-pkgs";
+  inputs."syndicate-nim-syndicate-1_3_1".ref   = "master";
+  inputs."syndicate-nim-syndicate-1_3_1".repo  = "syndicate";
+  inputs."syndicate-nim-syndicate-1_3_1".type  = "github";
+  inputs."syndicate-nim-syndicate-1_3_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."syndicate-nim-syndicate-1_3_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

@@ -16,7 +16,7 @@
   inputs."bitstreams".owner = "nim-nix-pkgs";
   inputs."bitstreams".ref   = "master";
   inputs."bitstreams".repo  = "bitstreams";
-  inputs."bitstreams".dir   = "source";
+  inputs."bitstreams".dir   = "main";
   inputs."bitstreams".type  = "github";
   inputs."bitstreams".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bitstreams".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

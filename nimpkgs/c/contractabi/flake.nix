@@ -95,6 +95,14 @@
   inputs."contractabi-0_4_5".inputs.nixpkgs.follows = "nixpkgs";
   inputs."contractabi-0_4_5".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."contractabi-0_4_6".dir   = "0_4_6";
+  inputs."contractabi-0_4_6".owner = "nim-nix-pkgs";
+  inputs."contractabi-0_4_6".ref   = "master";
+  inputs."contractabi-0_4_6".repo  = "contractabi";
+  inputs."contractabi-0_4_6".type  = "github";
+  inputs."contractabi-0_4_6".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."contractabi-0_4_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

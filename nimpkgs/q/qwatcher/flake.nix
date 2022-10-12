@@ -23,6 +23,14 @@
   inputs."qwatcher-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."qwatcher-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."qwatcher-v0_2_0".dir   = "v0_2_0";
+  inputs."qwatcher-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."qwatcher-v0_2_0".ref   = "master";
+  inputs."qwatcher-v0_2_0".repo  = "qwatcher";
+  inputs."qwatcher-v0_2_0".type  = "github";
+  inputs."qwatcher-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."qwatcher-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

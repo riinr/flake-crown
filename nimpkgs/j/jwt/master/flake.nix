@@ -16,7 +16,7 @@
   inputs."bearssl".owner = "nim-nix-pkgs";
   inputs."bearssl".ref   = "master";
   inputs."bearssl".repo  = "bearssl";
-  inputs."bearssl".dir   = "source";
+  inputs."bearssl".dir   = "master";
   inputs."bearssl".type  = "github";
   inputs."bearssl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bearssl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
