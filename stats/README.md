@@ -17,5 +17,5 @@ Here are some stats of those pkgs.
 - [versions-initials-count.csv](./versions-initials-count.csv): count versions by letter
 
 
-Last update at 2022-08-31
+Last update at 2022-09-03
 

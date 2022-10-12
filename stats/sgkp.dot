@@ -63,6 +63,7 @@ digraph NimPkgs {
   ansiparse -> ansiparse
   ansiparse -> ansitohtml
   ansiparse -> nancy
+  nancy -> peni
 
   gh_nimrod_doc_pages -> gh_nimrod_doc_pages
 
@@ -133,6 +134,8 @@ digraph NimPkgs {
   kexpr -> genoiser
 
   nanoid -> nanoid
+
+  kdl -> kdl
 
   sdf -> sdf
 
@@ -535,6 +538,7 @@ digraph NimPkgs {
   onnxruntime -> onnxruntime
 
   termui -> termui
+  termui -> passy
   termui -> pwnedpass
 
   sbttl -> sbttl
@@ -652,6 +656,7 @@ digraph NimPkgs {
   pwd -> pwd
 
   ytextractor -> ytextractor
+  ytextractor -> ytcc
 
   prometheus -> prometheus
 
@@ -733,8 +738,11 @@ digraph NimPkgs {
   nimfp -> xmltools
   xmltools -> oaitools
   nimfp -> fision
+  patty -> cssgrid
+  cssgrid -> fidgetty
   patty -> nimly
   nimly -> fision
+  patty -> fidgetty
   patty -> dali
   patty -> fision
 
@@ -836,6 +844,7 @@ digraph NimPkgs {
 
   nimscripter -> nimscripter
   nimscripter -> ratel
+  nimscripter -> ezscr
   nimscripter -> py2nim
 
   sayhissatsuwaza -> sayhissatsuwaza
@@ -952,9 +961,13 @@ digraph NimPkgs {
   nimtraits -> hcparse
   hpprint -> hcparse
   hpprint -> hparse
+  macroutils -> cssgrid
+  cssgrid -> fidgetty
   macroutils -> futhark
   macroutils -> algebraicdatas
+  macroutils -> fidgetty
   macroutils -> cdecl
+  cdecl -> fidgetty
   macroutils -> mycouch
   macroutils -> fision
 
@@ -1038,6 +1051,7 @@ digraph NimPkgs {
 
   ajax -> ajax
   ajax -> ytextractor
+  ytextractor -> ytcc
 
   metrics -> metrics
   metrics -> libp2pdht
@@ -1089,14 +1103,18 @@ digraph NimPkgs {
   pixie -> typography
   typography -> hottext
   typography -> gamelight
+  typography -> fidgetty
   typography -> fidget
   fidget -> spinner
   fidget -> fision
   pixie -> steganography
   pixie -> nimtesseract
+  pixie -> cssgrid
+  cssgrid -> fidgetty
   pixie -> shady
   pixie -> windy
   pixie -> dye
+  pixie -> fidgetty
   pixie -> fidget
   fidget -> spinner
   fidget -> fision
@@ -1117,6 +1135,7 @@ digraph NimPkgs {
   zippy -> wavecore
   wavecore -> ansiwave
   zippy -> dye
+  zippy -> fidgetty
   zippy -> nico
   zippy -> ansiwave
   zippy -> choosenim
@@ -1191,6 +1210,7 @@ digraph NimPkgs {
   opengl -> staticglfw
   staticglfw -> nanim
   staticglfw -> drawim
+  staticglfw -> fidgetty
   staticglfw -> fidget
   fidget -> spinner
   fidget -> fision
@@ -1198,6 +1218,7 @@ digraph NimPkgs {
   opengl -> windy
   opengl -> drawim
   opengl -> chipmunk7_demos
+  opengl -> fidgetty
   opengl -> geometryutils
   opengl -> fidget
   fidget -> spinner
@@ -1289,10 +1310,12 @@ digraph NimPkgs {
 
   pcgbasic -> pcgbasic
 
-  oauth -> oauth
-  oauth -> spotify
+  dimage -> dimage
 
   chipmunk7_demos -> chipmunk7_demos
+
+  oauth -> oauth
+  oauth -> spotify
 
   ttmath -> ttmath
 
@@ -1372,6 +1395,8 @@ digraph NimPkgs {
   grafanim -> grafanim
 
   optional_t -> optional_t
+
+  shiftfields -> shiftfields
 
   mmgeoip -> mmgeoip
 
@@ -1498,14 +1523,18 @@ digraph NimPkgs {
   pixie -> typography
   typography -> hottext
   typography -> gamelight
+  typography -> fidgetty
   typography -> fidget
   fidget -> spinner
   fidget -> fision
   pixie -> steganography
   pixie -> nimtesseract
+  pixie -> cssgrid
+  cssgrid -> fidgetty
   pixie -> shady
   pixie -> windy
   pixie -> dye
+  pixie -> fidgetty
   pixie -> fidget
   fidget -> spinner
   fidget -> fision
@@ -1533,6 +1562,7 @@ digraph NimPkgs {
   opengl -> staticglfw
   staticglfw -> nanim
   staticglfw -> drawim
+  staticglfw -> fidgetty
   staticglfw -> fidget
   fidget -> spinner
   fidget -> fision
@@ -1540,6 +1570,7 @@ digraph NimPkgs {
   opengl -> windy
   opengl -> drawim
   opengl -> chipmunk7_demos
+  opengl -> fidgetty
   opengl -> geometryutils
   opengl -> fidget
   fidget -> spinner
@@ -1626,6 +1657,8 @@ digraph NimPkgs {
 
   allographer -> allographer
 
+  clown_limiter -> clown_limiter
+
   compactdict -> compactdict
   compactdict -> fision
 
@@ -1643,7 +1676,10 @@ digraph NimPkgs {
 
   util -> util
   util -> studiobacklottv
+  util -> ytcc
+  util -> ezscr
   util -> brightcove
+  util -> checkif
   util -> kiwifydownload
   util -> vimeo
   vimeo -> kiwifydownload
@@ -1727,6 +1763,7 @@ digraph NimPkgs {
 
   elvis -> elvis
   elvis -> termui
+  termui -> passy
   termui -> pwnedpass
   elvis -> fision
 
@@ -1903,6 +1940,7 @@ digraph NimPkgs {
   simpleot -> nimpc
   nimterop -> euwren
   nimterop -> nimbpf
+  nimterop -> mpv
   nimterop -> opus
   nimterop -> kmod
   nimterop -> svvpi
@@ -2292,6 +2330,8 @@ digraph NimPkgs {
 
   hostname -> hostname
 
+  wcwidth -> wcwidth
+
   clipper2 -> clipper2
 
   awss3 -> awss3
@@ -2498,6 +2538,7 @@ digraph NimPkgs {
   jester -> gerbil
   jester -> nimnews
   jester -> biblioteca_guarrilla
+  jester -> clown_limiter
   jester -> nimwc
   nimwc -> fision
   jester -> redissessions
@@ -2733,6 +2774,8 @@ digraph NimPkgs {
   nimhdf5 -> nimhdf5
 
   playground -> playground
+
+  peni -> peni
 
   safeset -> safeset
 
@@ -3061,6 +3104,8 @@ digraph NimPkgs {
 
   sphinx -> sphinx
 
+  bitseqs -> bitseqs
+
   sharedmempool -> sharedmempool
 
   pych -> pych
@@ -3075,6 +3120,8 @@ digraph NimPkgs {
 
   tim -> tim
   tim -> madam
+
+  geometrymath -> geometrymath
 
   libsodium -> libsodium
   libsodium -> dimscord
@@ -3166,6 +3213,8 @@ digraph NimPkgs {
 
   mpwc -> mpwc
 
+  zigcc -> zigcc
+
   libevdev -> libevdev
 
   xxhash -> xxhash
@@ -3182,6 +3231,7 @@ digraph NimPkgs {
   simpleot -> nimpc
   nimterop -> euwren
   nimterop -> nimbpf
+  nimterop -> mpv
   nimterop -> opus
   nimterop -> kmod
   nimterop -> svvpi
@@ -3316,6 +3366,7 @@ digraph NimPkgs {
   staticglfw -> staticglfw
   staticglfw -> nanim
   staticglfw -> drawim
+  staticglfw -> fidgetty
   staticglfw -> fidget
   fidget -> spinner
   fidget -> fision
@@ -3500,6 +3551,8 @@ digraph NimPkgs {
 
   sos -> sos
 
+  ezscr -> ezscr
+
   shorturl -> shorturl
 
   codegenlib -> codegenlib
@@ -3669,9 +3722,12 @@ digraph NimPkgs {
   print -> typography
   typography -> hottext
   typography -> gamelight
+  typography -> fidgetty
   typography -> fidget
   fidget -> spinner
   fidget -> fision
+  print -> cssgrid
+  cssgrid -> fidgetty
   print -> fidget
   fidget -> spinner
   fidget -> fision
@@ -3915,6 +3971,7 @@ digraph NimPkgs {
   variant -> nimsl
   nimsl -> nimx
   nimsl -> fision
+  variant -> fidgetty
 
   nimble -> nimble
   nimble -> unimcli
@@ -3948,6 +4005,7 @@ digraph NimPkgs {
   termstyle -> termstyle
   termstyle -> futhark
   termstyle -> notifishower
+  termstyle -> peni
   termstyle -> fision
 
   niledb -> niledb
@@ -4656,6 +4714,7 @@ digraph NimPkgs {
   boxy -> boxy
 
   cdecl -> cdecl
+  cdecl -> fidgetty
 
   expander -> expander
 
@@ -4728,10 +4787,14 @@ digraph NimPkgs {
 
   conio -> conio
 
+  cssgrid -> cssgrid
+  cssgrid -> fidgetty
+
   vmath -> vmath
   vmath -> typography
   typography -> hottext
   typography -> gamelight
+  typography -> fidgetty
   typography -> fidget
   fidget -> spinner
   fidget -> fision
@@ -4742,25 +4805,32 @@ digraph NimPkgs {
   pixie -> typography
   typography -> hottext
   typography -> gamelight
+  typography -> fidgetty
   typography -> fidget
   fidget -> spinner
   fidget -> fision
   pixie -> steganography
   pixie -> nimtesseract
+  pixie -> cssgrid
+  cssgrid -> fidgetty
   pixie -> shady
   pixie -> windy
   pixie -> dye
+  pixie -> fidgetty
   pixie -> fidget
   fidget -> spinner
   fidget -> fision
   pixie -> boxy
   pixie -> fision
+  vmath -> cssgrid
+  cssgrid -> fidgetty
   vmath -> slappy
   vmath -> shady
   vmath -> bumpy
   bumpy -> typography
   typography -> hottext
   typography -> gamelight
+  typography -> fidgetty
   typography -> fidget
   fidget -> spinner
   fidget -> fision
@@ -4771,24 +4841,32 @@ digraph NimPkgs {
   pixie -> typography
   typography -> hottext
   typography -> gamelight
+  typography -> fidgetty
   typography -> fidget
   fidget -> spinner
   fidget -> fision
   pixie -> steganography
   pixie -> nimtesseract
+  pixie -> cssgrid
+  cssgrid -> fidgetty
   pixie -> shady
   pixie -> windy
   pixie -> dye
+  pixie -> fidgetty
   pixie -> fidget
   fidget -> spinner
   fidget -> fision
   pixie -> boxy
   pixie -> fision
+  bumpy -> cssgrid
+  cssgrid -> fidgetty
   bumpy -> spacy
   vmath -> boxy
   vmath -> spacy
 
   openstreetmap -> openstreetmap
+
+  packy -> packy
 
   redux -> redux
 
@@ -4871,6 +4949,7 @@ digraph NimPkgs {
 
   classes -> classes
   classes -> termui
+  termui -> passy
   termui -> pwnedpass
 
   rodster -> rodster
@@ -5073,6 +5152,7 @@ digraph NimPkgs {
   nimnoise -> nimnoise
 
   nancy -> nancy
+  nancy -> peni
 
   cucumber -> cucumber
 
@@ -5282,6 +5362,7 @@ digraph NimPkgs {
   yaml -> parsepage
   yaml -> textformats
   yaml -> nexus
+  yaml -> ezscr
   yaml -> foliant
   yaml -> fision
   yaml -> uap
@@ -5659,14 +5740,18 @@ digraph NimPkgs {
   pixie -> typography
   typography -> hottext
   typography -> gamelight
+  typography -> fidgetty
   typography -> fidget
   fidget -> spinner
   fidget -> fision
   pixie -> steganography
   pixie -> nimtesseract
+  pixie -> cssgrid
+  cssgrid -> fidgetty
   pixie -> shady
   pixie -> windy
   pixie -> dye
+  pixie -> fidgetty
   pixie -> fidget
   fidget -> spinner
   fidget -> fision
@@ -5695,6 +5780,7 @@ digraph NimPkgs {
   flatty -> typography
   typography -> hottext
   typography -> gamelight
+  typography -> fidgetty
   typography -> fidget
   fidget -> spinner
   fidget -> fision
@@ -5702,14 +5788,18 @@ digraph NimPkgs {
   pixie -> typography
   typography -> hottext
   typography -> gamelight
+  typography -> fidgetty
   typography -> fidget
   fidget -> spinner
   fidget -> fision
   pixie -> steganography
   pixie -> nimtesseract
+  pixie -> cssgrid
+  cssgrid -> fidgetty
   pixie -> shady
   pixie -> windy
   pixie -> dye
+  pixie -> fidgetty
   pixie -> fidget
   fidget -> spinner
   fidget -> fision
@@ -5768,6 +5858,8 @@ digraph NimPkgs {
   netpbm -> netpbm
 
   physfs -> physfs
+
+  ytcc -> ytcc
 
   basic3d -> basic3d
 
@@ -5869,6 +5961,9 @@ digraph NimPkgs {
 
   psy -> psy
 
+  qrgen -> qrgen
+  qrgen -> qrterm
+
   about -> about
 
   zlib -> zlib
@@ -5947,11 +6042,13 @@ digraph NimPkgs {
 
   studiobacklottv -> studiobacklottv
 
-  uuid4 -> uuid4
+  authenticode -> authenticode
 
   influx -> influx
 
   nimgui -> nimgui
+
+  uuid4 -> uuid4
 
   rest -> rest
 
@@ -5969,6 +6066,7 @@ digraph NimPkgs {
   bumpy -> typography
   typography -> hottext
   typography -> gamelight
+  typography -> fidgetty
   typography -> fidget
   fidget -> spinner
   fidget -> fision
@@ -5979,19 +6077,25 @@ digraph NimPkgs {
   pixie -> typography
   typography -> hottext
   typography -> gamelight
+  typography -> fidgetty
   typography -> fidget
   fidget -> spinner
   fidget -> fision
   pixie -> steganography
   pixie -> nimtesseract
+  pixie -> cssgrid
+  cssgrid -> fidgetty
   pixie -> shady
   pixie -> windy
   pixie -> dye
+  pixie -> fidgetty
   pixie -> fidget
   fidget -> spinner
   fidget -> fision
   pixie -> boxy
   pixie -> fision
+  bumpy -> cssgrid
+  cssgrid -> fidgetty
   bumpy -> spacy
 
   nimarrow_glib -> nimarrow_glib
@@ -6093,6 +6197,7 @@ digraph NimPkgs {
   chroma -> typography
   typography -> hottext
   typography -> gamelight
+  typography -> fidgetty
   typography -> fidget
   fidget -> spinner
   fidget -> fision
@@ -6103,14 +6208,18 @@ digraph NimPkgs {
   pixie -> typography
   typography -> hottext
   typography -> gamelight
+  typography -> fidgetty
   typography -> fidget
   fidget -> spinner
   fidget -> fision
   pixie -> steganography
   pixie -> nimtesseract
+  pixie -> cssgrid
+  cssgrid -> fidgetty
   pixie -> shady
   pixie -> windy
   pixie -> dye
+  pixie -> fidgetty
   pixie -> fidget
   fidget -> spinner
   fidget -> fision
@@ -6149,6 +6258,7 @@ digraph NimPkgs {
   typography -> typography
   typography -> hottext
   typography -> gamelight
+  typography -> fidgetty
   typography -> fidget
   fidget -> spinner
   fidget -> fision
@@ -6668,6 +6778,8 @@ digraph NimPkgs {
 
   dataurl -> dataurl
 
+  mpv -> mpv
+
   nimagg -> nimagg
 
   seccomp -> seccomp
@@ -6794,6 +6906,7 @@ digraph NimPkgs {
   foreach -> golden
 
   libpe -> libpe
+  libpe -> peni
 
   fastkiss -> fastkiss
 
@@ -6838,6 +6951,7 @@ digraph NimPkgs {
   jester -> gerbil
   jester -> nimnews
   jester -> biblioteca_guarrilla
+  jester -> clown_limiter
   jester -> nimwc
   nimwc -> fision
   jester -> redissessions
@@ -6879,20 +6993,24 @@ digraph NimPkgs {
 
   nio -> nio
 
-  nimongo -> nimongo
+  getdns -> getdns
 
   grim -> grim
 
   natu -> natu
 
-  validation -> validation
+  nimongo -> nimongo
 
   feednim -> feednim
+
+  validation -> validation
 
   moe -> moe
 
   stringinterpolation -> stringinterpolation
   stringinterpolation -> aws_sdk
+
+  qrterm -> qrterm
 
   blosc -> blosc
 
@@ -7016,9 +7134,11 @@ digraph NimPkgs {
   cligen -> parsepage
   cligen -> studiobacklottv
   cligen -> textformats
+  cligen -> ytcc
   cligen -> dataurl
   cligen -> mcd
   cligen -> nester
+  cligen -> ezscr
   cligen -> kombinator
   cligen -> clr
   cligen -> swayipc
@@ -7034,22 +7154,22 @@ digraph NimPkgs {
   cligen -> omni
   omni -> omnicollider
   omni -> omnimax
-  cligen -> pricecsv
-  cligen -> spurdify
+  cligen -> peni
+  cligen -> dimage
   cligen -> bu
   bu -> ndup
-  cligen -> svgo
+  cligen -> pricecsv
   cligen -> logue
   logue -> prologue
   prologue -> nimnews
   prologue -> fision
   cligen -> jester2swagger
   cligen -> nimff
+  cligen -> checkif
   cligen -> github_release
   cligen -> hldiff
-  cligen -> kiwifydownload
   cligen -> golden
-  cligen -> suggest
+  cligen -> kiwifydownload
   cligen -> fidget
   fidget -> spinner
   fidget -> fision
@@ -7062,8 +7182,9 @@ digraph NimPkgs {
   cligen -> palette
   palette -> nimaterial
   cligen -> norman
-  cligen -> thes
-  cligen -> xcm
+  cligen -> spurdify
+  cligen -> suggest
+  cligen -> svgo
   cligen -> nimterop
   nimterop -> nimdbx
   nimterop -> nimodpi
@@ -7076,6 +7197,7 @@ digraph NimPkgs {
   simpleot -> nimpc
   nimterop -> euwren
   nimterop -> nimbpf
+  nimterop -> mpv
   nimterop -> opus
   nimterop -> kmod
   nimterop -> svvpi
@@ -7099,11 +7221,13 @@ digraph NimPkgs {
   cligen -> nimdenter
   cligen -> gnu
   cligen -> nimagehide
-  cligen -> vimeo
-  vimeo -> kiwifydownload
+  cligen -> thes
   cligen -> autotyper
   cligen -> procs
   cligen -> tokarax
+  cligen -> vimeo
+  vimeo -> kiwifydownload
+  cligen -> xcm
   cligen -> fision
   cligen -> omnimax
   cligen -> uap
@@ -7548,6 +7672,7 @@ digraph NimPkgs {
   simpleot -> nimpc
   nimterop -> euwren
   nimterop -> nimbpf
+  nimterop -> mpv
   nimterop -> opus
   nimterop -> kmod
   nimterop -> svvpi
@@ -7802,6 +7927,8 @@ digraph NimPkgs {
 
   noisy -> noisy
 
+  aspartame -> aspartame
+
   kissfft -> kissfft
 
   sdnotify -> sdnotify
@@ -7866,6 +7993,8 @@ digraph NimPkgs {
 
   dogapi_cli -> dogapi_cli
 
+  passy -> passy
+
   bped -> bped
 
   slacklib -> slacklib
@@ -7914,6 +8043,8 @@ digraph NimPkgs {
   pixels -> pixels
 
   nsu -> nsu
+
+  checkif -> checkif
 
   dbg -> dbg
   dbg -> nimsocks
@@ -8140,6 +8271,7 @@ digraph NimPkgs {
   jester -> gerbil
   jester -> nimnews
   jester -> biblioteca_guarrilla
+  jester -> clown_limiter
   jester -> nimwc
   nimwc -> fision
   jester -> redissessions
@@ -8149,6 +8281,7 @@ digraph NimPkgs {
   jesterwithplugins -> jestergeoip
   jesterwithplugins -> jesterjson
   httpbeast -> whip
+  asynctools -> fidgetty
   asynctools -> nimnews
 
   karax -> karax
@@ -8230,6 +8363,7 @@ digraph NimPkgs {
   flippy -> nsu
   supersnappy -> anonimongo
   supersnappy -> slappy
+  supersnappy -> fidgetty
   supersnappy -> fidget
   fidget -> spinner
   fidget -> fision
