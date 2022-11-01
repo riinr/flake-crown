@@ -2,29 +2,59 @@
   "nodes": {
     "bio_seq": {
       "inputs": {
+        "bitty": "bitty",
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
+        "fusion": "fusion",
         "nixpkgs": [
           "nixpkgs"
         ],
-        "src-bio_seq-v0_0_8": "src-bio_seq-v0_0_8",
-        "zip": "zip"
+        "src-bioseq-v0_1_0": "src-bioseq-v0_1_0"
       },
       "locked": {
-        "dir": "v0_0_8",
-        "lastModified": 1650749644,
-        "narHash": "sha256-L0DaNi/osVR0TEcOg+RtH5SWssAYIalQsox50aZW0LY=",
+        "dir": "v0_1_0",
+        "lastModified": 1667322169,
+        "narHash": "sha256-Kh0u+NTWGLwNqnC1+x2J29w0+7k5jEIuSxktxDyla38=",
         "owner": "nim-nix-pkgs",
         "repo": "bio_seq",
-        "rev": "54f12c69dd68f675cf8115390b635cdf9b1fa3c9",
+        "rev": "19a09454550bc1db81285c042593d8352c03aba1",
         "type": "github"
       },
       "original": {
-        "dir": "v0_0_8",
+        "dir": "v0_1_0",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "bio_seq",
+        "type": "github"
+      }
+    },
+    "bitty": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "bio_seq",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "bio_seq",
+          "nixpkgs"
+        ],
+        "src-bitty-0_1_4": "src-bitty-0_1_4"
+      },
+      "locked": {
+        "dir": "0_1_4",
+        "lastModified": 1667322174,
+        "narHash": "sha256-8AK6s1MMv1C5dIlVYxwnUs7KVwqdaR4/UNDh/JsskPA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "bitty",
+        "rev": "293164d13643d5d161549f538e89c547f831abd6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_1_4",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "bitty",
         "type": "github"
       }
     },
@@ -49,6 +79,35 @@
         "type": "github"
       }
     },
+    "fusion": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "bio_seq",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "bio_seq",
+          "nixpkgs"
+        ],
+        "src-fusion-v1_1": "src-fusion-v1_1"
+      },
+      "locked": {
+        "dir": "v1_1",
+        "lastModified": 1667322288,
+        "narHash": "sha256-pMSb0VGEAyDc+E4K9ful3KWogYheWomm7XSyoCBstoQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "fusion",
+        "rev": "5b77139b0eab77295ae811b654d5e7399de05347",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "fusion",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
@@ -68,19 +127,19 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "src-phylogeni-v0_0_2": "src-phylogeni-v0_0_2"
+        "src-phylogeni-v0_1_0": "src-phylogeni-v0_1_0"
       },
       "locked": {
-        "dir": "v0_0_2",
-        "lastModified": 1651555889,
-        "narHash": "sha256-4e00a/BWX52nctcuU1hdPiJVKjRNKrqorYd9F0NqWas=",
+        "dir": "v0_1_0",
+        "lastModified": 1667322581,
+        "narHash": "sha256-ngoKCi96JQrcghCjekXalt6hut+0X0AVJkayQxSnzvI=",
         "owner": "nim-nix-pkgs",
         "repo": "phylogeni",
-        "rev": "4f2ef2e53d52dddde14e03afe5b4889dfcfaf624",
+        "rev": "4cf17634d67a30c5232ca6987e716849c9776470",
         "type": "github"
       },
       "original": {
-        "dir": "v0_0_2",
+        "dir": "v0_1_0",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "phylogeni",
@@ -94,23 +153,6 @@
         "nixpkgs": "nixpkgs",
         "phylogeni": "phylogeni",
         "src-bionim-0_0_4": "src-bionim-0_0_4"
-      }
-    },
-    "src-bio_seq-v0_0_8": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1634652437,
-        "narHash": "sha256-0AstmghRzeUWLlKh9HRklCrUHtlU+fR1T/NZUc73K9g=",
-        "owner": "kerrycobb",
-        "repo": "BioSeq",
-        "rev": "6b963796429c65379ca0e372476b56612c2ffb0c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "kerrycobb",
-        "ref": "refs/tags/v0.0.8",
-        "repo": "BioSeq",
-        "type": "github"
       }
     },
     "src-bionim-0_0_4": {
@@ -130,66 +172,71 @@
         "type": "github"
       }
     },
-    "src-phylogeni-v0_0_2": {
+    "src-bioseq-v0_1_0": {
       "flake": false,
       "locked": {
-        "lastModified": 1614888309,
-        "narHash": "sha256-fZK2ub0lG0bOfvoYq8C8zrr9JwcL29LDcx2jJQv0I0E=",
+        "lastModified": 1665714683,
+        "narHash": "sha256-FFTyXgmq7AKsMgDkYpH2lvBaDG0bs99X/PWMz6Rdvb8=",
         "owner": "kerrycobb",
-        "repo": "PhylogeNi",
-        "rev": "b33dc6e4013e68ee182474413c1571ba136a7bad",
+        "repo": "BioSeq",
+        "rev": "355b8b224167f146ed8b5d0e83960859de9b839f",
         "type": "github"
       },
       "original": {
         "owner": "kerrycobb",
-        "ref": "refs/tags/v0.0.2",
-        "repo": "PhylogeNi",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "BioSeq",
         "type": "github"
       }
     },
-    "src-zip-0_3_1": {
+    "src-bitty-0_1_4": {
       "flake": false,
       "locked": {
-        "lastModified": 1594106081,
-        "narHash": "sha256-NRnBaul2wZjOZVCSx8ic6c6/LNK83s1SMFZoBX85CeE=",
-        "owner": "nim-lang",
-        "repo": "zip",
-        "rev": "bdc5783fefc1afb8eb622ff13d464a832ce1d507",
+        "lastModified": 1641621964,
+        "narHash": "sha256-gg0/s9qQshiJRiXMp292FA3QKWotYCIDXRedXqWmJO4=",
+        "owner": "treeform",
+        "repo": "bitty",
+        "rev": "cde1af08ab96536239cc737cbd9217ee284e4e03",
         "type": "github"
       },
       "original": {
-        "owner": "nim-lang",
-        "ref": "refs/tags/0.3.1",
-        "repo": "zip",
+        "owner": "treeform",
+        "ref": "refs/tags/0.1.4",
+        "repo": "bitty",
         "type": "github"
       }
     },
-    "zip": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "bio_seq",
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "bio_seq",
-          "nixpkgs"
-        ],
-        "src-zip-0_3_1": "src-zip-0_3_1"
-      },
+    "src-fusion-v1_1": {
+      "flake": false,
       "locked": {
-        "dir": "0_3_1",
-        "lastModified": 1651556292,
-        "narHash": "sha256-w3cAqmBo8wkS0E4zBcxzViGeLZxHdwocjHF252sVW1w=",
-        "owner": "nim-nix-pkgs",
-        "repo": "zip",
-        "rev": "04c0b3e1a02ba029457bffcf75300e05f45bf7de",
+        "lastModified": 1638436623,
+        "narHash": "sha256-9tn0NTXHhlpoefmlsSkoNZlCjGE8JB3eXtYcm/9Mr0I=",
+        "owner": "nim-lang",
+        "repo": "fusion",
+        "rev": "b10839c2c0c0be06a556145b973f27522fa69306",
         "type": "github"
       },
       "original": {
-        "dir": "0_3_1",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "zip",
+        "owner": "nim-lang",
+        "ref": "refs/tags/v1.1",
+        "repo": "fusion",
+        "type": "github"
+      }
+    },
+    "src-phylogeni-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1665607893,
+        "narHash": "sha256-+X6V0vtD9gcmo3gembfFFR4kjMfcyq7TVz8yVnY40W0=",
+        "owner": "kerrycobb",
+        "repo": "PhylogeNi",
+        "rev": "36327eafcd1946c029a9aaa0ceae467efeeff747",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kerrycobb",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "PhylogeNi",
         "type": "github"
       }
     }

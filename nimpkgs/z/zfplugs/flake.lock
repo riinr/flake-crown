@@ -346,11 +346,11 @@
       },
       "locked": {
         "dir": "0_14_0",
-        "lastModified": 1662003528,
-        "narHash": "sha256-B0IwE+/TjNU1qJwMXDjdk0BJhkPRb7/27Kp9ZojDTMI=",
+        "lastModified": 1667330409,
+        "narHash": "sha256-uBrRWwsH1pQQCSbt2Q2ZvEG98uALk+p+QeK9SJ5WIjM=",
         "owner": "nim-nix-pkgs",
         "repo": "moustachu",
-        "rev": "ec5e1514af43a1c38355df446e82649d55248ba6",
+        "rev": "082bde4720b3690793655f0337853f3075775e6d",
         "type": "github"
       },
       "original": {
@@ -660,13 +660,42 @@
         "type": "github"
       }
     },
+    "mustache_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "zfplugs-v1_1_16",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "zfplugs-v1_1_16",
+          "nixpkgs"
+        ],
+        "src-mustache-v0_4_3": "src-mustache-v0_4_3_2"
+      },
+      "locked": {
+        "dir": "v0_4_3",
+        "lastModified": 1667329769,
+        "narHash": "sha256-s1XQzH0XgytX6wqEX8+VWIohn7GObg727ReKF/b11tA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "mustache",
+        "rev": "a12e5bf5c905ef73bddd0d75950d7e883efa6613",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_4_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "mustache",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1662096612,
-        "narHash": "sha256-R+Q8l5JuyJryRPdiIaYpO5O3A55rT+/pItBrKcy7LM4=",
+        "lastModified": 1667292599,
+        "narHash": "sha256-7ISOUI1aj6UKMPIL+wwthENL22L3+A9V+jS8Is3QsRo=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "21de2b973f9fee595a7a1ac4693efff791245c34",
+        "rev": "ef2f213d9659a274985778bff4ca322f3ef3ac68",
         "type": "github"
       },
       "original": {
@@ -699,6 +728,7 @@
         "zfplugs-v0_1_7": "zfplugs-v0_1_7",
         "zfplugs-v0_1_8": "zfplugs-v0_1_8",
         "zfplugs-v0_1_9": "zfplugs-v0_1_9",
+        "zfplugs-v1_1_16": "zfplugs-v1_1_16",
         "zfplugs-v1_1_8": "zfplugs-v1_1_8"
       }
     },
@@ -1167,6 +1197,39 @@
     "sha1_22": {
       "inputs": {
         "flakeNimbleLib": [
+          "zfplugs-v1_1_16",
+          "zfcore",
+          "zfblast",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "zfplugs-v1_1_16",
+          "zfcore",
+          "zfblast",
+          "nixpkgs"
+        ],
+        "src-sha1-master": "src-sha1-master_22"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1660782471,
+        "narHash": "sha256-HgRl5VVy0HpU8d7tpSV+kizdB2CoMfZBxfS4YBFovTw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "sha1",
+        "rev": "0ccbe31a520eaca5752c167b516e3527b3760448",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "sha1",
+        "type": "github"
+      }
+    },
+    "sha1_23": {
+      "inputs": {
+        "flakeNimbleLib": [
           "zfplugs-v1_1_8",
           "zfcore",
           "zfblast",
@@ -1178,7 +1241,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-sha1-master": "src-sha1-master_22"
+        "src-sha1-master": "src-sha1-master_23"
       },
       "locked": {
         "dir": "master",
@@ -1785,6 +1848,23 @@
         "type": "github"
       }
     },
+    "src-mustache-v0_4_3_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1628462357,
+        "narHash": "sha256-rrmKSb422YALxg0nV8rjTNgLecJAM8jvg8tnbvSa9SY=",
+        "owner": "soasme",
+        "repo": "nim-mustache",
+        "rev": "1677949a848fc126a0716a67bba2c6217205255c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "soasme",
+        "ref": "refs/tags/v0.4.3",
+        "repo": "nim-mustache",
+        "type": "github"
+      }
+    },
     "src-sha1-master": {
       "flake": false,
       "locked": {
@@ -2024,6 +2104,23 @@
       }
     },
     "src-sha1-master_22": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1513530465,
+        "narHash": "sha256-tWHouIa6AFRmbvJaMsoWKNZX7bzqd3Je1kJ4rVHb+wM=",
+        "owner": "onionhammer",
+        "repo": "sha1",
+        "rev": "92ccc5800bb0ac4865b275a2ce3c1544e98b48bc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "onionhammer",
+        "ref": "refs/heads/master",
+        "repo": "sha1",
+        "type": "github"
+      }
+    },
+    "src-sha1-master_23": {
       "flake": false,
       "locked": {
         "lastModified": 1513530465,
@@ -2567,6 +2664,40 @@
         "type": "github"
       }
     },
+    "src-stdext-v0_0_13_25": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1656003993,
+        "narHash": "sha256-Y58OJJzdbRlq5duc1M7Lqso1xu1Wl+AuR6d3LsKqvkQ=",
+        "owner": "zendbit",
+        "repo": "nim.stdext",
+        "rev": "6afb785974a450d255af2accfdbe08e201547a82",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.0.13",
+        "repo": "nim.stdext",
+        "type": "github"
+      }
+    },
+    "src-stdext-v0_0_13_26": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1656003993,
+        "narHash": "sha256-Y58OJJzdbRlq5duc1M7Lqso1xu1Wl+AuR6d3LsKqvkQ=",
+        "owner": "zendbit",
+        "repo": "nim.stdext",
+        "rev": "6afb785974a450d255af2accfdbe08e201547a82",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.0.13",
+        "repo": "nim.stdext",
+        "type": "github"
+      }
+    },
     "src-stdext-v0_0_13_3": {
       "flake": false,
       "locked": {
@@ -2924,142 +3055,6 @@
         "type": "github"
       }
     },
-    "src-uri3-v0_1_5_22": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
-    "src-uri3-v0_1_5_23": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
-    "src-uri3-v0_1_5_24": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
-    "src-uri3-v0_1_5_25": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
-    "src-uri3-v0_1_5_26": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
-    "src-uri3-v0_1_5_27": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
-    "src-uri3-v0_1_5_28": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
-    "src-uri3-v0_1_5_29": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
     "src-uri3-v0_1_5_3": {
       "flake": false,
       "locked": {
@@ -3077,245 +3072,7 @@
         "type": "github"
       }
     },
-    "src-uri3-v0_1_5_30": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
-    "src-uri3-v0_1_5_31": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
-    "src-uri3-v0_1_5_32": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
-    "src-uri3-v0_1_5_33": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
-    "src-uri3-v0_1_5_34": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
-    "src-uri3-v0_1_5_35": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
-    "src-uri3-v0_1_5_36": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
-    "src-uri3-v0_1_5_37": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
-    "src-uri3-v0_1_5_38": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
-    "src-uri3-v0_1_5_39": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
     "src-uri3-v0_1_5_4": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
-    "src-uri3-v0_1_5_40": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
-    "src-uri3-v0_1_5_41": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
-    "src-uri3-v0_1_5_42": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1656004045,
-        "narHash": "sha256-TUmbZLU3MkNvuJ1tLSYCjKtLPPxFO/LyPiIxQXHkDLI=",
-        "owner": "zendbit",
-        "repo": "nim.uri3",
-        "rev": "27233b23426bf1c91be25af8021e735986756d4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zendbit",
-        "ref": "refs/tags/v0.1.5",
-        "repo": "nim.uri3",
-        "type": "github"
-      }
-    },
-    "src-uri3-v0_1_5_43": {
       "flake": false,
       "locked": {
         "lastModified": 1656004045,
@@ -3418,6 +3175,414 @@
       }
     },
     "src-uri3-v0_1_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_10": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_11": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_12": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_13": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_14": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_15": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_16": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_17": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_18": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_19": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_20": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_21": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_22": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_23": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_24": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_25": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_8": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661680022,
+        "narHash": "sha256-zN3d8gQk4RAapmJf8u2OH7FNtMlrg5W2h4RUHAG12DI=",
+        "owner": "zendbit",
+        "repo": "nim.uri3",
+        "rev": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.1.7",
+        "repo": "nim.uri3",
+        "type": "github"
+      }
+    },
+    "src-uri3-v0_1_7_9": {
       "flake": false,
       "locked": {
         "lastModified": 1661680022,
@@ -3689,6 +3854,23 @@
         "type": "github"
       }
     },
+    "src-zfblast-v0_2_7_23": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1660712906,
+        "narHash": "sha256-TmT1v10HRnBpS3Uph9c81/kvRtzBbN0k3kI3D6+sQb0=",
+        "owner": "zendbit",
+        "repo": "nim.zfblast",
+        "rev": "5698f9e50d21d5c223f3ae1cdf33ef9cc4380bd2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.2.7",
+        "repo": "nim.zfblast",
+        "type": "github"
+      }
+    },
     "src-zfblast-v0_2_7_3": {
       "flake": false,
       "locked": {
@@ -3808,381 +3990,415 @@
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13": {
+    "src-zfcore-v1_1_15": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13_10": {
+    "src-zfcore-v1_1_15_10": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13_11": {
+    "src-zfcore-v1_1_15_11": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13_12": {
+    "src-zfcore-v1_1_15_12": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13_13": {
+    "src-zfcore-v1_1_15_13": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13_14": {
+    "src-zfcore-v1_1_15_14": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13_15": {
+    "src-zfcore-v1_1_15_15": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13_16": {
+    "src-zfcore-v1_1_15_16": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13_17": {
+    "src-zfcore-v1_1_15_17": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13_18": {
+    "src-zfcore-v1_1_15_18": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13_19": {
+    "src-zfcore-v1_1_15_19": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13_2": {
+    "src-zfcore-v1_1_15_2": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13_20": {
+    "src-zfcore-v1_1_15_20": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13_21": {
+    "src-zfcore-v1_1_15_21": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13_22": {
+    "src-zfcore-v1_1_15_22": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13_3": {
+    "src-zfcore-v1_1_15_23": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13_4": {
+    "src-zfcore-v1_1_15_3": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13_5": {
+    "src-zfcore-v1_1_15_4": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13_6": {
+    "src-zfcore-v1_1_15_5": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13_7": {
+    "src-zfcore-v1_1_15_6": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13_8": {
+    "src-zfcore-v1_1_15_7": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
-    "src-zfcore-v1_1_13_9": {
+    "src-zfcore-v1_1_15_8": {
       "flake": false,
       "locked": {
-        "lastModified": 1660976590,
-        "narHash": "sha256-nphL/zebQVWH15UVd7x4cBKKje4TJA+wiWGZD9E+sPA=",
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
         "owner": "zendbit",
         "repo": "nim.zfcore",
-        "rev": "32939e9e6685fbe9f6ae43fa4b6bd9bd3f06da22",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
         "type": "github"
       },
       "original": {
         "owner": "zendbit",
-        "ref": "refs/tags/v1.1.13",
+        "ref": "refs/tags/v1.1.15",
+        "repo": "nim.zfcore",
+        "type": "github"
+      }
+    },
+    "src-zfcore-v1_1_15_9": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1664955296,
+        "narHash": "sha256-+B/j6YbmgQx+RiW5GRwF+kAvomk59O8grg30w86YX2U=",
+        "owner": "zendbit",
+        "repo": "nim.zfcore",
+        "rev": "e84429ed6b5e6a48077bd0ba46147eeca497ec8e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v1.1.15",
         "repo": "nim.zfcore",
         "type": "github"
       }
     },
     "src-zfdbms-v0_0_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1640234028,
+        "narHash": "sha256-9kcRsbKwR4cseScGGeUkJki/KWvpOhIHfvJa5O5ql90=",
+        "owner": "zendbit",
+        "repo": "nim.zfdbms",
+        "rev": "a7b14e859b7ae220a7a69f2379d9898343708b8e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v0.0.7",
+        "repo": "nim.zfdbms",
+        "type": "github"
+      }
+    },
+    "src-zfdbms-v0_0_7_10": {
       "flake": false,
       "locked": {
         "lastModified": 1640234028,
@@ -4474,11 +4690,11 @@
     "src-zfplugs-master": {
       "flake": false,
       "locked": {
-        "lastModified": 1661233108,
-        "narHash": "sha256-rT8AMKE3tsIHw0OcFy6QG0S7xJXHoCB1xTEbZ71vBZI=",
+        "lastModified": 1664955402,
+        "narHash": "sha256-x7yelSToTv0Qi4X78os8xdnSj02WarH1sHBWCbpGgU4=",
         "owner": "zendbit",
         "repo": "nim.zfplugs",
-        "rev": "af4f5ce3ce7122adb3d81f9708f2b8fbdeb2721e",
+        "rev": "fc20e269ab5553a622a30bf30bc5a897860608aa",
         "type": "github"
       },
       "original": {
@@ -4688,6 +4904,23 @@
       "original": {
         "owner": "zendbit",
         "ref": "refs/tags/v0.1.9",
+        "repo": "nim.zfplugs",
+        "type": "github"
+      }
+    },
+    "src-zfplugs-v1_1_16": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1664955402,
+        "narHash": "sha256-x7yelSToTv0Qi4X78os8xdnSj02WarH1sHBWCbpGgU4=",
+        "owner": "zendbit",
+        "repo": "nim.zfplugs",
+        "rev": "fc20e269ab5553a622a30bf30bc5a897860608aa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zendbit",
+        "ref": "refs/tags/v1.1.16",
         "repo": "nim.zfplugs",
         "type": "github"
       }
@@ -4948,6 +5181,23 @@
       }
     },
     "src-zip-0_3_1_22": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1594106081,
+        "narHash": "sha256-NRnBaul2wZjOZVCSx8ic6c6/LNK83s1SMFZoBX85CeE=",
+        "owner": "nim-lang",
+        "repo": "zip",
+        "rev": "bdc5783fefc1afb8eb622ff13d464a832ce1d507",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nim-lang",
+        "ref": "refs/tags/0.3.1",
+        "repo": "zip",
+        "type": "github"
+      }
+    },
+    "src-zip-0_3_1_23": {
       "flake": false,
       "locked": {
         "lastModified": 1594106081,
@@ -5799,6 +6049,68 @@
     "stdext_30": {
       "inputs": {
         "flakeNimbleLib": [
+          "zfplugs-v1_1_16",
+          "zfcore",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "zfplugs-v1_1_16",
+          "zfcore",
+          "nixpkgs"
+        ],
+        "src-stdext-v0_0_13": "src-stdext-v0_0_13_24"
+      },
+      "locked": {
+        "dir": "v0_0_13",
+        "lastModified": 1667329960,
+        "narHash": "sha256-V4LRVy39vT1x/6sCJ5DK6HkcNxa2SuHquwWY8nwgMq0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "stdext",
+        "rev": "6c8e0a3cf031623db00cc622c3a1b389b7635fac",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_0_13",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "stdext",
+        "type": "github"
+      }
+    },
+    "stdext_31": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "zfplugs-v1_1_16",
+          "zfdbms",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "zfplugs-v1_1_16",
+          "zfdbms",
+          "nixpkgs"
+        ],
+        "src-stdext-v0_0_13": "src-stdext-v0_0_13_25"
+      },
+      "locked": {
+        "dir": "v0_0_13",
+        "lastModified": 1656301275,
+        "narHash": "sha256-9p12JTyvhj9XxQdeKNV0gEmXBxYiA4igVdD6JI1/1aw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "stdext",
+        "rev": "e279ef3053c77ccb24f0da8135c8ef4b4294bbc5",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_0_13",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "stdext",
+        "type": "github"
+      }
+    },
+    "stdext_32": {
+      "inputs": {
+        "flakeNimbleLib": [
           "zfplugs-v1_1_8",
           "zfcore",
           "flakeNimbleLib"
@@ -5808,7 +6120,7 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-stdext-v0_0_13": "src-stdext-v0_0_13_24"
+        "src-stdext-v0_0_13": "src-stdext-v0_0_13_26"
       },
       "locked": {
         "dir": "v0_0_13",
@@ -5827,7 +6139,7 @@
         "type": "github"
       }
     },
-    "stdext_31": {
+    "stdext_33": {
       "inputs": {
         "flakeNimbleLib": [
           "zfplugs-v1_1_8",
@@ -6029,11 +6341,11 @@
       },
       "locked": {
         "dir": "v0_0_13",
-        "lastModified": 1661568765,
-        "narHash": "sha256-WzLM7ilXYnpBfJ8P3SjrbxPbW/7DPlzpaHNNedVDVaM=",
+        "lastModified": 1667329960,
+        "narHash": "sha256-V4LRVy39vT1x/6sCJ5DK6HkcNxa2SuHquwWY8nwgMq0=",
         "owner": "nim-nix-pkgs",
         "repo": "stdext",
-        "rev": "fae9ac4bd4090ec6e71be5b8a66eb187914b56e9",
+        "rev": "6c8e0a3cf031623db00cc622c3a1b389b7635fac",
         "type": "github"
       },
       "original": {
@@ -6056,19 +6368,19 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
@@ -6089,7 +6401,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_10"
+        "src-uri3-v0_1_5": "src-uri3-v0_1_5_5"
       },
       "locked": {
         "dir": "v0_1_5",
@@ -6120,19 +6432,19 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_11"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_6"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
@@ -6153,7 +6465,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_12"
+        "src-uri3-v0_1_5": "src-uri3-v0_1_5_6"
       },
       "locked": {
         "dir": "v0_1_5",
@@ -6184,19 +6496,19 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_13"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_7"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
@@ -6217,7 +6529,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_14"
+        "src-uri3-v0_1_5": "src-uri3-v0_1_5_7"
       },
       "locked": {
         "dir": "v0_1_5",
@@ -6248,19 +6560,19 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_15"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_8"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
@@ -6281,7 +6593,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_16"
+        "src-uri3-v0_1_5": "src-uri3-v0_1_5_8"
       },
       "locked": {
         "dir": "v0_1_5",
@@ -6312,15 +6624,15 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_7": "src-uri3-v0_1_7"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_9"
       },
       "locked": {
         "dir": "v0_1_7",
-        "lastModified": 1661841692,
-        "narHash": "sha256-xGcJJsHDWJmnPj1UU3wGmxFcifT6KqJ1+qov7IpO+ow=",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "4631d2b2a45e8e159e83e29fe57ebafbca78de21",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
@@ -6345,19 +6657,19 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_17"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_10"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1661841692,
+        "narHash": "sha256-xGcJJsHDWJmnPj1UU3wGmxFcifT6KqJ1+qov7IpO+ow=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "4631d2b2a45e8e159e83e29fe57ebafbca78de21",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
@@ -6376,19 +6688,19 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_18"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_11"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
@@ -6409,7 +6721,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_2"
+        "src-uri3-v0_1_5": "src-uri3-v0_1_5"
       },
       "locked": {
         "dir": "v0_1_5",
@@ -6442,7 +6754,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_19"
+        "src-uri3-v0_1_5": "src-uri3-v0_1_5_9"
       },
       "locked": {
         "dir": "v0_1_5",
@@ -6473,19 +6785,19 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_20"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_12"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
@@ -6506,7 +6818,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_21"
+        "src-uri3-v0_1_5": "src-uri3-v0_1_5_10"
       },
       "locked": {
         "dir": "v0_1_5",
@@ -6537,19 +6849,19 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_22"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_13"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
@@ -6570,7 +6882,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_23"
+        "src-uri3-v0_1_5": "src-uri3-v0_1_5_11"
       },
       "locked": {
         "dir": "v0_1_5",
@@ -6601,19 +6913,19 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_24"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_14"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
@@ -6634,7 +6946,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_25"
+        "src-uri3-v0_1_5": "src-uri3-v0_1_5_12"
       },
       "locked": {
         "dir": "v0_1_5",
@@ -6665,19 +6977,19 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_26"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_15"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
@@ -6698,7 +7010,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_27"
+        "src-uri3-v0_1_5": "src-uri3-v0_1_5_13"
       },
       "locked": {
         "dir": "v0_1_5",
@@ -6729,19 +7041,19 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_28"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_16"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
@@ -6760,19 +7072,19 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_3"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_2"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
@@ -6793,7 +7105,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_29"
+        "src-uri3-v0_1_5": "src-uri3-v0_1_5_14"
       },
       "locked": {
         "dir": "v0_1_5",
@@ -6824,19 +7136,19 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_30"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_17"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
@@ -6857,7 +7169,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_31"
+        "src-uri3-v0_1_5": "src-uri3-v0_1_5_15"
       },
       "locked": {
         "dir": "v0_1_5",
@@ -6888,19 +7200,19 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_32"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_18"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
@@ -6921,7 +7233,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_33"
+        "src-uri3-v0_1_5": "src-uri3-v0_1_5_16"
       },
       "locked": {
         "dir": "v0_1_5",
@@ -6952,19 +7264,19 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_34"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_19"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
@@ -6985,7 +7297,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_35"
+        "src-uri3-v0_1_5": "src-uri3-v0_1_5_17"
       },
       "locked": {
         "dir": "v0_1_5",
@@ -7016,19 +7328,19 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_36"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_20"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
@@ -7049,7 +7361,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_37"
+        "src-uri3-v0_1_5": "src-uri3-v0_1_5_18"
       },
       "locked": {
         "dir": "v0_1_5",
@@ -7080,19 +7392,19 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_38"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_21"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
@@ -7113,7 +7425,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_4"
+        "src-uri3-v0_1_5": "src-uri3-v0_1_5_2"
       },
       "locked": {
         "dir": "v0_1_5",
@@ -7146,7 +7458,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_39"
+        "src-uri3-v0_1_5": "src-uri3-v0_1_5_19"
       },
       "locked": {
         "dir": "v0_1_5",
@@ -7177,19 +7489,19 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_40"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_22"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
@@ -7210,7 +7522,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_41"
+        "src-uri3-v0_1_5": "src-uri3-v0_1_5_20"
       },
       "locked": {
         "dir": "v0_1_5",
@@ -7232,6 +7544,70 @@
     "uri3_43": {
       "inputs": {
         "flakeNimbleLib": [
+          "zfplugs-v1_1_16",
+          "zfcore",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "zfplugs-v1_1_16",
+          "zfcore",
+          "nixpkgs"
+        ],
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_23"
+      },
+      "locked": {
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
+        "owner": "nim-nix-pkgs",
+        "repo": "uri3",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_7",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "uri3",
+        "type": "github"
+      }
+    },
+    "uri3_44": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "zfplugs-v1_1_16",
+          "zfcore",
+          "zfblast",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "zfplugs-v1_1_16",
+          "zfcore",
+          "zfblast",
+          "nixpkgs"
+        ],
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_24"
+      },
+      "locked": {
+        "dir": "v0_1_7",
+        "lastModified": 1661841692,
+        "narHash": "sha256-xGcJJsHDWJmnPj1UU3wGmxFcifT6KqJ1+qov7IpO+ow=",
+        "owner": "nim-nix-pkgs",
+        "repo": "uri3",
+        "rev": "4631d2b2a45e8e159e83e29fe57ebafbca78de21",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_7",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "uri3",
+        "type": "github"
+      }
+    },
+    "uri3_45": {
+      "inputs": {
+        "flakeNimbleLib": [
           "zfplugs-v1_1_8",
           "zfcore",
           "flakeNimbleLib"
@@ -7241,26 +7617,26 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_42"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_25"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
         "type": "github"
       }
     },
-    "uri3_44": {
+    "uri3_46": {
       "inputs": {
         "flakeNimbleLib": [
           "zfplugs-v1_1_8",
@@ -7274,7 +7650,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_43"
+        "src-uri3-v0_1_5": "src-uri3-v0_1_5_21"
       },
       "locked": {
         "dir": "v0_1_5",
@@ -7305,19 +7681,19 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_5"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_3"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
@@ -7338,7 +7714,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_6"
+        "src-uri3-v0_1_5": "src-uri3-v0_1_5_3"
       },
       "locked": {
         "dir": "v0_1_5",
@@ -7369,19 +7745,19 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_7"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_4"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
@@ -7402,7 +7778,7 @@
           "zfblast",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_8"
+        "src-uri3-v0_1_5": "src-uri3-v0_1_5_4"
       },
       "locked": {
         "dir": "v0_1_5",
@@ -7433,19 +7809,19 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-uri3-v0_1_5": "src-uri3-v0_1_5_9"
+        "src-uri3-v0_1_7": "src-uri3-v0_1_7_5"
       },
       "locked": {
-        "dir": "v0_1_5",
-        "lastModified": 1660782632,
-        "narHash": "sha256-vzvVJg2JkLb9jH9y1sXsmsjK4XOVdjLtxrIj5ZooqQo=",
+        "dir": "v0_1_7",
+        "lastModified": 1667330007,
+        "narHash": "sha256-D6RS6IrnyLZucbVwDLvlvwlOxDIIbqA35886JI22xfs=",
         "owner": "nim-nix-pkgs",
         "repo": "uri3",
-        "rev": "322b901c60fb39c3e06cf39f7770cc2ede3efda9",
+        "rev": "3877c3bce2cc72f2bc41ca872a374c120a084378",
         "type": "github"
       },
       "original": {
-        "dir": "v0_1_5",
+        "dir": "v0_1_7",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "uri3",
@@ -7917,6 +8293,39 @@
     "zfblast_22": {
       "inputs": {
         "flakeNimbleLib": [
+          "zfplugs-v1_1_16",
+          "zfcore",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "zfplugs-v1_1_16",
+          "zfcore",
+          "nixpkgs"
+        ],
+        "sha1": "sha1_22",
+        "src-zfblast-v0_2_7": "src-zfblast-v0_2_7_22",
+        "uri3": "uri3_44"
+      },
+      "locked": {
+        "dir": "v0_2_7",
+        "lastModified": 1667330635,
+        "narHash": "sha256-CdFWzsyDGe5pQTMCPKUIOqdbbeufPntxOUWD1F342Hc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "zfblast",
+        "rev": "d2a6a164794c90feaa1d71329b0cfbbf8eb88f0d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_2_7",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "zfblast",
+        "type": "github"
+      }
+    },
+    "zfblast_23": {
+      "inputs": {
+        "flakeNimbleLib": [
           "zfplugs-v1_1_8",
           "zfcore",
           "flakeNimbleLib"
@@ -7926,9 +8335,9 @@
           "zfcore",
           "nixpkgs"
         ],
-        "sha1": "sha1_22",
-        "src-zfblast-v0_2_7": "src-zfblast-v0_2_7_22",
-        "uri3": "uri3_44"
+        "sha1": "sha1_23",
+        "src-zfblast-v0_2_7": "src-zfblast-v0_2_7_23",
+        "uri3": "uri3_46"
       },
       "locked": {
         "dir": "v0_2_7",
@@ -8163,11 +8572,11 @@
       },
       "locked": {
         "dir": "v0_2_7",
-        "lastModified": 1661569704,
-        "narHash": "sha256-l4P2mBm6y3dLMO5SeZXL+hiGEV6CKw4twxLsAcujctU=",
+        "lastModified": 1667330635,
+        "narHash": "sha256-CdFWzsyDGe5pQTMCPKUIOqdbbeufPntxOUWD1F342Hc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfblast",
-        "rev": "d19f5ee4d176237cbd08cf12ece846db6c2188f6",
+        "rev": "d2a6a164794c90feaa1d71329b0cfbbf8eb88f0d",
         "type": "github"
       },
       "original": {
@@ -8188,23 +8597,23 @@
           "zfplugs-0_0_19",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13",
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15",
         "stdext": "stdext",
         "uri3": "uri3",
         "zfblast": "zfblast",
         "zip": "zip"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1661570537,
-        "narHash": "sha256-KEOg+Li5EdTWd5BiFdzSFsZYg84X4SQgITNZNbaUDWY=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "430fa2cd55545b9b340a4f87fa69163e4978df5e",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8221,23 +8630,23 @@
           "zfplugs-v0_0_3",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13_10",
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_10",
         "stdext": "stdext_11",
         "uri3": "uri3_19",
         "zfblast": "zfblast_10",
         "zip": "zip_10"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1661570537,
-        "narHash": "sha256-KEOg+Li5EdTWd5BiFdzSFsZYg84X4SQgITNZNbaUDWY=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "430fa2cd55545b9b340a4f87fa69163e4978df5e",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8254,23 +8663,23 @@
           "zfplugs-v0_0_5",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13_11",
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_11",
         "stdext": "stdext_12",
         "uri3": "uri3_21",
         "zfblast": "zfblast_11",
         "zip": "zip_11"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1661570537,
-        "narHash": "sha256-KEOg+Li5EdTWd5BiFdzSFsZYg84X4SQgITNZNbaUDWY=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "430fa2cd55545b9b340a4f87fa69163e4978df5e",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8287,23 +8696,23 @@
           "zfplugs-v0_0_6",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13_12",
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_12",
         "stdext": "stdext_13",
         "uri3": "uri3_23",
         "zfblast": "zfblast_12",
         "zip": "zip_12"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1661570537,
-        "narHash": "sha256-KEOg+Li5EdTWd5BiFdzSFsZYg84X4SQgITNZNbaUDWY=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "430fa2cd55545b9b340a4f87fa69163e4978df5e",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8320,23 +8729,23 @@
           "zfplugs-v0_0_7",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13_13",
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_13",
         "stdext": "stdext_14",
         "uri3": "uri3_25",
         "zfblast": "zfblast_13",
         "zip": "zip_13"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1661570537,
-        "narHash": "sha256-KEOg+Li5EdTWd5BiFdzSFsZYg84X4SQgITNZNbaUDWY=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "430fa2cd55545b9b340a4f87fa69163e4978df5e",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8353,23 +8762,23 @@
           "zfplugs-v0_1_10",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13_14",
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_14",
         "stdext": "stdext_16",
         "uri3": "uri3_27",
         "zfblast": "zfblast_14",
         "zip": "zip_14"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1661570537,
-        "narHash": "sha256-KEOg+Li5EdTWd5BiFdzSFsZYg84X4SQgITNZNbaUDWY=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "430fa2cd55545b9b340a4f87fa69163e4978df5e",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8386,23 +8795,23 @@
           "zfplugs-v0_1_11",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13_15",
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_15",
         "stdext": "stdext_18",
         "uri3": "uri3_29",
         "zfblast": "zfblast_15",
         "zip": "zip_15"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1661570537,
-        "narHash": "sha256-KEOg+Li5EdTWd5BiFdzSFsZYg84X4SQgITNZNbaUDWY=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "430fa2cd55545b9b340a4f87fa69163e4978df5e",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8419,23 +8828,23 @@
           "zfplugs-v0_1_14",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13_16",
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_16",
         "stdext": "stdext_20",
         "uri3": "uri3_31",
         "zfblast": "zfblast_16",
         "zip": "zip_16"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1661570537,
-        "narHash": "sha256-KEOg+Li5EdTWd5BiFdzSFsZYg84X4SQgITNZNbaUDWY=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "430fa2cd55545b9b340a4f87fa69163e4978df5e",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8452,23 +8861,23 @@
           "zfplugs-v0_1_5",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13_17",
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_17",
         "stdext": "stdext_22",
         "uri3": "uri3_33",
         "zfblast": "zfblast_17",
         "zip": "zip_17"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1661570537,
-        "narHash": "sha256-KEOg+Li5EdTWd5BiFdzSFsZYg84X4SQgITNZNbaUDWY=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "430fa2cd55545b9b340a4f87fa69163e4978df5e",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8485,23 +8894,23 @@
           "zfplugs-v0_1_6",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13_18",
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_18",
         "stdext": "stdext_23",
         "uri3": "uri3_35",
         "zfblast": "zfblast_18",
         "zip": "zip_18"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1661570537,
-        "narHash": "sha256-KEOg+Li5EdTWd5BiFdzSFsZYg84X4SQgITNZNbaUDWY=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "430fa2cd55545b9b340a4f87fa69163e4978df5e",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8518,23 +8927,23 @@
           "zfplugs-v0_1_7",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13_19",
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_19",
         "stdext": "stdext_24",
         "uri3": "uri3_37",
         "zfblast": "zfblast_19",
         "zip": "zip_19"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1661570537,
-        "narHash": "sha256-KEOg+Li5EdTWd5BiFdzSFsZYg84X4SQgITNZNbaUDWY=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "430fa2cd55545b9b340a4f87fa69163e4978df5e",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8551,23 +8960,23 @@
           "zfplugs-0_0_20",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13_2",
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_2",
         "stdext": "stdext_2",
         "uri3": "uri3_3",
         "zfblast": "zfblast_2",
         "zip": "zip_2"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1661570537,
-        "narHash": "sha256-KEOg+Li5EdTWd5BiFdzSFsZYg84X4SQgITNZNbaUDWY=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "430fa2cd55545b9b340a4f87fa69163e4978df5e",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8584,23 +8993,23 @@
           "zfplugs-v0_1_8",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13_20",
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_20",
         "stdext": "stdext_26",
         "uri3": "uri3_39",
         "zfblast": "zfblast_20",
         "zip": "zip_20"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1661570537,
-        "narHash": "sha256-KEOg+Li5EdTWd5BiFdzSFsZYg84X4SQgITNZNbaUDWY=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "430fa2cd55545b9b340a4f87fa69163e4978df5e",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8617,23 +9026,23 @@
           "zfplugs-v0_1_9",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13_21",
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_21",
         "stdext": "stdext_28",
         "uri3": "uri3_41",
         "zfblast": "zfblast_21",
         "zip": "zip_21"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1661570537,
-        "narHash": "sha256-KEOg+Li5EdTWd5BiFdzSFsZYg84X4SQgITNZNbaUDWY=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "430fa2cd55545b9b340a4f87fa69163e4978df5e",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8643,6 +9052,39 @@
     "zfcore_22": {
       "inputs": {
         "flakeNimbleLib": [
+          "zfplugs-v1_1_16",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "zfplugs-v1_1_16",
+          "nixpkgs"
+        ],
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_22",
+        "stdext": "stdext_30",
+        "uri3": "uri3_43",
+        "zfblast": "zfblast_22",
+        "zip": "zip_22"
+      },
+      "locked": {
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "zfcore",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_1_15",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "zfcore",
+        "type": "github"
+      }
+    },
+    "zfcore_23": {
+      "inputs": {
+        "flakeNimbleLib": [
           "zfplugs-v1_1_8",
           "flakeNimbleLib"
         ],
@@ -8650,23 +9092,23 @@
           "zfplugs-v1_1_8",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13_22",
-        "stdext": "stdext_30",
-        "uri3": "uri3_43",
-        "zfblast": "zfblast_22",
-        "zip": "zip_22"
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_23",
+        "stdext": "stdext_32",
+        "uri3": "uri3_45",
+        "zfblast": "zfblast_23",
+        "zip": "zip_23"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1661570537,
-        "narHash": "sha256-KEOg+Li5EdTWd5BiFdzSFsZYg84X4SQgITNZNbaUDWY=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "430fa2cd55545b9b340a4f87fa69163e4978df5e",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8683,23 +9125,23 @@
           "zfplugs-0_0_21",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13_3",
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_3",
         "stdext": "stdext_3",
         "uri3": "uri3_5",
         "zfblast": "zfblast_3",
         "zip": "zip_3"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1661570537,
-        "narHash": "sha256-KEOg+Li5EdTWd5BiFdzSFsZYg84X4SQgITNZNbaUDWY=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "430fa2cd55545b9b340a4f87fa69163e4978df5e",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8716,23 +9158,23 @@
           "zfplugs-0_0_22",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13_4",
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_4",
         "stdext": "stdext_4",
         "uri3": "uri3_7",
         "zfblast": "zfblast_4",
         "zip": "zip_4"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1661570537,
-        "narHash": "sha256-KEOg+Li5EdTWd5BiFdzSFsZYg84X4SQgITNZNbaUDWY=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "430fa2cd55545b9b340a4f87fa69163e4978df5e",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8749,23 +9191,23 @@
           "zfplugs-0_0_23",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13_5",
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_5",
         "stdext": "stdext_5",
         "uri3": "uri3_9",
         "zfblast": "zfblast_5",
         "zip": "zip_5"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1661570537,
-        "narHash": "sha256-KEOg+Li5EdTWd5BiFdzSFsZYg84X4SQgITNZNbaUDWY=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "430fa2cd55545b9b340a4f87fa69163e4978df5e",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8782,23 +9224,23 @@
           "zfplugs-0_1_1",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13_6",
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_6",
         "stdext": "stdext_6",
         "uri3": "uri3_11",
         "zfblast": "zfblast_6",
         "zip": "zip_6"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1661570537,
-        "narHash": "sha256-KEOg+Li5EdTWd5BiFdzSFsZYg84X4SQgITNZNbaUDWY=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "430fa2cd55545b9b340a4f87fa69163e4978df5e",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8815,23 +9257,23 @@
           "zfplugs-0_1_2",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13_7",
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_7",
         "stdext": "stdext_7",
         "uri3": "uri3_13",
         "zfblast": "zfblast_7",
         "zip": "zip_7"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1661570537,
-        "narHash": "sha256-KEOg+Li5EdTWd5BiFdzSFsZYg84X4SQgITNZNbaUDWY=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "430fa2cd55545b9b340a4f87fa69163e4978df5e",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8848,23 +9290,23 @@
           "zfplugs-0_1_4",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13_8",
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_8",
         "stdext": "stdext_8",
         "uri3": "uri3_15",
         "zfblast": "zfblast_8",
         "zip": "zip_8"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1661570537,
-        "narHash": "sha256-KEOg+Li5EdTWd5BiFdzSFsZYg84X4SQgITNZNbaUDWY=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "430fa2cd55545b9b340a4f87fa69163e4978df5e",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8881,23 +9323,23 @@
           "zfplugs-master",
           "nixpkgs"
         ],
-        "src-zfcore-v1_1_13": "src-zfcore-v1_1_13_9",
+        "src-zfcore-v1_1_15": "src-zfcore-v1_1_15_9",
         "stdext": "stdext_9",
         "uri3": "uri3_17",
         "zfblast": "zfblast_9",
         "zip": "zip_9"
       },
       "locked": {
-        "dir": "v1_1_13",
-        "lastModified": 1662004146,
-        "narHash": "sha256-ldCuPxrjkuy4HGR33m/SNiQVJNkPOz0EUfex6B/uW44=",
+        "dir": "v1_1_15",
+        "lastModified": 1667331055,
+        "narHash": "sha256-THImx64rQFKdTTinPgZFwpWuiZLSfkZO2wX73fAilPc=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "29f9142baa567fddb150d63688d0088c01a18317",
+        "rev": "ff71ac3574f2f856b01beb972f8046b594a8089c",
         "type": "github"
       },
       "original": {
-        "dir": "v1_1_13",
+        "dir": "v1_1_15",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfcore",
@@ -8919,11 +9361,41 @@
       },
       "locked": {
         "dir": "v0_0_7",
-        "lastModified": 1662003600,
-        "narHash": "sha256-Nsvkmp94XLLddaj1Cu1foaIC16fs1ELGiaAMLM01FGw=",
+        "lastModified": 1667330468,
+        "narHash": "sha256-7FabxxHib/cKffIZ6ABTxHCuM9IY40L1Df5kms/PxS0=",
         "owner": "nim-nix-pkgs",
         "repo": "zfdbms",
-        "rev": "0f73d1f4aefcc4731fce2384dbd5a30faf634026",
+        "rev": "7ee96ffdaef0c3d33c570796908748570bfa9efa",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_0_7",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "zfdbms",
+        "type": "github"
+      }
+    },
+    "zfdbms_10": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "zfplugs-v1_1_8",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "zfplugs-v1_1_8",
+          "nixpkgs"
+        ],
+        "src-zfdbms-v0_0_7": "src-zfdbms-v0_0_7_10",
+        "stdext": "stdext_33"
+      },
+      "locked": {
+        "dir": "v0_0_7",
+        "lastModified": 1648164430,
+        "narHash": "sha256-14N2XVxvMdtpjkR4iLVpXJxNfQkPIFOeKJFCUcoszp8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "zfdbms",
+        "rev": "cbcc82154b4c0c369c3bc4b7119f6bb377986228",
         "type": "github"
       },
       "original": {
@@ -9147,11 +9619,11 @@
     "zfdbms_9": {
       "inputs": {
         "flakeNimbleLib": [
-          "zfplugs-v1_1_8",
+          "zfplugs-v1_1_16",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "zfplugs-v1_1_8",
+          "zfplugs-v1_1_16",
           "nixpkgs"
         ],
         "src-zfdbms-v0_0_7": "src-zfdbms-v0_0_7_9",
@@ -9159,11 +9631,11 @@
       },
       "locked": {
         "dir": "v0_0_7",
-        "lastModified": 1648164430,
-        "narHash": "sha256-14N2XVxvMdtpjkR4iLVpXJxNfQkPIFOeKJFCUcoszp8=",
+        "lastModified": 1667330468,
+        "narHash": "sha256-7FabxxHib/cKffIZ6ABTxHCuM9IY40L1Df5kms/PxS0=",
         "owner": "nim-nix-pkgs",
         "repo": "zfdbms",
-        "rev": "cbcc82154b4c0c369c3bc4b7119f6bb377986228",
+        "rev": "7ee96ffdaef0c3d33c570796908748570bfa9efa",
         "type": "github"
       },
       "original": {
@@ -9187,11 +9659,11 @@
       },
       "locked": {
         "dir": "0_0_19",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
@@ -9215,11 +9687,11 @@
       },
       "locked": {
         "dir": "0_0_20",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
@@ -9243,11 +9715,11 @@
       },
       "locked": {
         "dir": "0_0_21",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
@@ -9271,11 +9743,11 @@
       },
       "locked": {
         "dir": "0_0_22",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
@@ -9299,11 +9771,11 @@
       },
       "locked": {
         "dir": "0_0_23",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
@@ -9327,11 +9799,11 @@
       },
       "locked": {
         "dir": "0_1_1",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
@@ -9355,11 +9827,11 @@
       },
       "locked": {
         "dir": "0_1_2",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
@@ -9383,11 +9855,11 @@
       },
       "locked": {
         "dir": "0_1_4",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
@@ -9413,11 +9885,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
@@ -9441,11 +9913,11 @@
       },
       "locked": {
         "dir": "v0_0_3",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
@@ -9469,11 +9941,11 @@
       },
       "locked": {
         "dir": "v0_0_5",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
@@ -9497,11 +9969,11 @@
       },
       "locked": {
         "dir": "v0_0_6",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
@@ -9527,11 +9999,11 @@
       },
       "locked": {
         "dir": "v0_0_7",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
@@ -9557,11 +10029,11 @@
       },
       "locked": {
         "dir": "v0_1_10",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
@@ -9587,11 +10059,11 @@
       },
       "locked": {
         "dir": "v0_1_11",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
@@ -9617,11 +10089,11 @@
       },
       "locked": {
         "dir": "v0_1_14",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
@@ -9646,11 +10118,11 @@
       },
       "locked": {
         "dir": "v0_1_5",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
@@ -9675,11 +10147,11 @@
       },
       "locked": {
         "dir": "v0_1_6",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
@@ -9705,11 +10177,11 @@
       },
       "locked": {
         "dir": "v0_1_7",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
@@ -9735,11 +10207,11 @@
       },
       "locked": {
         "dir": "v0_1_8",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
@@ -9765,15 +10237,45 @@
       },
       "locked": {
         "dir": "v0_1_9",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
         "dir": "v0_1_9",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "zfplugs",
+        "type": "github"
+      }
+    },
+    "zfplugs-v1_1_16": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "mustache": "mustache_2",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-zfplugs-v1_1_16": "src-zfplugs-v1_1_16",
+        "zfcore": "zfcore_22",
+        "zfdbms": "zfdbms_9"
+      },
+      "locked": {
+        "dir": "v1_1_16",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "zfplugs",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_1_16",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zfplugs",
@@ -9790,16 +10292,16 @@
           "nixpkgs"
         ],
         "src-zfplugs-v1_1_8": "src-zfplugs-v1_1_8",
-        "zfcore": "zfcore_22",
-        "zfdbms": "zfdbms_9"
+        "zfcore": "zfcore_23",
+        "zfdbms": "zfdbms_10"
       },
       "locked": {
         "dir": "v1_1_8",
-        "lastModified": 1662245907,
-        "narHash": "sha256-taVTPm/xAVxZF+I+gr56X6hq7O7iedvYceQuNNnF7rA=",
+        "lastModified": 1667331417,
+        "narHash": "sha256-BqZ28j8HgG6t19ZsLNJt4Kre9XtvemWJa15J4BWIqSw=",
         "owner": "nim-nix-pkgs",
         "repo": "zfplugs",
-        "rev": "661aab0042bc2f8cba168766b63bca41f5beb579",
+        "rev": "2915ddad6290762260c1b57e59eea6bc811a7a0e",
         "type": "github"
       },
       "original": {
@@ -10247,6 +10749,37 @@
     "zip_22": {
       "inputs": {
         "flakeNimbleLib": [
+          "zfplugs-v1_1_16",
+          "zfcore",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "zfplugs-v1_1_16",
+          "zfcore",
+          "nixpkgs"
+        ],
+        "src-zip-0_3_1": "src-zip-0_3_1_22"
+      },
+      "locked": {
+        "dir": "0_3_1",
+        "lastModified": 1667330047,
+        "narHash": "sha256-CKLZ6Etu95W8sgfzCLwIQTCOR6gNMCqlZPIUdIQ3Y30=",
+        "owner": "nim-nix-pkgs",
+        "repo": "zip",
+        "rev": "5be28856a448537b8421fc95853e37d70e74f4d2",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_3_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "zip",
+        "type": "github"
+      }
+    },
+    "zip_23": {
+      "inputs": {
+        "flakeNimbleLib": [
           "zfplugs-v1_1_8",
           "zfcore",
           "flakeNimbleLib"
@@ -10256,7 +10789,7 @@
           "zfcore",
           "nixpkgs"
         ],
-        "src-zip-0_3_1": "src-zip-0_3_1_22"
+        "src-zip-0_3_1": "src-zip-0_3_1_23"
       },
       "locked": {
         "dir": "0_3_1",
@@ -10477,11 +11010,11 @@
       },
       "locked": {
         "dir": "0_3_1",
-        "lastModified": 1661568865,
-        "narHash": "sha256-jWqhYHWU1qi18A2XBf2oHFInzvEfWRTkD5efnYSv/6w=",
+        "lastModified": 1667330047,
+        "narHash": "sha256-CKLZ6Etu95W8sgfzCLwIQTCOR6gNMCqlZPIUdIQ3Y30=",
         "owner": "nim-nix-pkgs",
         "repo": "zip",
-        "rev": "644c487f822ac3a86bf30321c207cb1f6bba3312",
+        "rev": "5be28856a448537b8421fc95853e37d70e74f4d2",
         "type": "github"
       },
       "original": {

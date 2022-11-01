@@ -13,11 +13,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1662245778,
-        "narHash": "sha256-staGm+xo/Vl3vPimmpAqah+pOX+zssphfFk2GesCQL4=",
+        "lastModified": 1667330377,
+        "narHash": "sha256-uBANh4iV13A0MOAMBtW4a3kzhFyfBettHqug0lI23B4=",
         "owner": "nim-nix-pkgs",
         "repo": "dnd",
-        "rev": "c8367ba54c3b2304f5dd443df405b388cfa29076",
+        "rev": "089c2940c86a7352e57362a8e1d1657670b0c740",
         "type": "github"
       },
       "original": {
@@ -41,11 +41,11 @@
       },
       "locked": {
         "dir": "v0_5_0",
-        "lastModified": 1662245778,
-        "narHash": "sha256-staGm+xo/Vl3vPimmpAqah+pOX+zssphfFk2GesCQL4=",
+        "lastModified": 1667330377,
+        "narHash": "sha256-uBANh4iV13A0MOAMBtW4a3kzhFyfBettHqug0lI23B4=",
         "owner": "nim-nix-pkgs",
         "repo": "dnd",
-        "rev": "c8367ba54c3b2304f5dd443df405b388cfa29076",
+        "rev": "089c2940c86a7352e57362a8e1d1657670b0c740",
         "type": "github"
       },
       "original": {
@@ -69,11 +69,11 @@
       },
       "locked": {
         "dir": "v0_6_0",
-        "lastModified": 1662245778,
-        "narHash": "sha256-staGm+xo/Vl3vPimmpAqah+pOX+zssphfFk2GesCQL4=",
+        "lastModified": 1667330377,
+        "narHash": "sha256-uBANh4iV13A0MOAMBtW4a3kzhFyfBettHqug0lI23B4=",
         "owner": "nim-nix-pkgs",
         "repo": "dnd",
-        "rev": "c8367ba54c3b2304f5dd443df405b388cfa29076",
+        "rev": "089c2940c86a7352e57362a8e1d1657670b0c740",
         "type": "github"
       },
       "original": {
@@ -97,15 +97,43 @@
       },
       "locked": {
         "dir": "v0_6_1",
-        "lastModified": 1662245778,
-        "narHash": "sha256-staGm+xo/Vl3vPimmpAqah+pOX+zssphfFk2GesCQL4=",
+        "lastModified": 1667330377,
+        "narHash": "sha256-uBANh4iV13A0MOAMBtW4a3kzhFyfBettHqug0lI23B4=",
         "owner": "nim-nix-pkgs",
         "repo": "dnd",
-        "rev": "c8367ba54c3b2304f5dd443df405b388cfa29076",
+        "rev": "089c2940c86a7352e57362a8e1d1657670b0c740",
         "type": "github"
       },
       "original": {
         "dir": "v0_6_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "dnd",
+        "type": "github"
+      }
+    },
+    "dnd-v0_7_0": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "gintro": "gintro_5",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-dnd-v0_7_0": "src-dnd-v0_7_0"
+      },
+      "locked": {
+        "dir": "v0_7_0",
+        "lastModified": 1667330377,
+        "narHash": "sha256-uBANh4iV13A0MOAMBtW4a3kzhFyfBettHqug0lI23B4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "dnd",
+        "rev": "089c2940c86a7352e57362a8e1d1657670b0c740",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_7_0",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "dnd",
@@ -147,11 +175,11 @@
       },
       "locked": {
         "dir": "v0_9_9",
-        "lastModified": 1662002695,
-        "narHash": "sha256-nY8tWDurlN40Wsgq6sjN3prdg/Ko+RTOUFOsWNShVGI=",
+        "lastModified": 1667329662,
+        "narHash": "sha256-dQ/65ie1v0nNdlNc1fJHn9yZBep6HNa7Hmv+A90CR/E=",
         "owner": "nim-nix-pkgs",
         "repo": "gintro",
-        "rev": "87d622428a807397bef9d8d88d60614a261ae769",
+        "rev": "815b1a25f4999a75a495eff65b6a1c4573c217be",
         "type": "github"
       },
       "original": {
@@ -249,13 +277,42 @@
         "type": "github"
       }
     },
+    "gintro_5": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "dnd-v0_7_0",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "dnd-v0_7_0",
+          "nixpkgs"
+        ],
+        "src-gintro-v0_9_9": "src-gintro-v0_9_9_5"
+      },
+      "locked": {
+        "dir": "v0_9_9",
+        "lastModified": 1667322303,
+        "narHash": "sha256-NvYjzqyUL6xDLfKpJ45DSzCPWW8wUdNHySNGjmIIRdM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "gintro",
+        "rev": "c999a022cc32000ab4e5c6659acd6de8d661d16b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_9_9",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "gintro",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1662096612,
-        "narHash": "sha256-R+Q8l5JuyJryRPdiIaYpO5O3A55rT+/pItBrKcy7LM4=",
+        "lastModified": 1667292599,
+        "narHash": "sha256-7ISOUI1aj6UKMPIL+wwthENL22L3+A9V+jS8Is3QsRo=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "21de2b973f9fee595a7a1ac4693efff791245c34",
+        "rev": "ef2f213d9659a274985778bff4ca322f3ef3ac68",
         "type": "github"
       },
       "original": {
@@ -269,6 +326,7 @@
         "dnd-v0_5_0": "dnd-v0_5_0",
         "dnd-v0_6_0": "dnd-v0_6_0",
         "dnd-v0_6_1": "dnd-v0_6_1",
+        "dnd-v0_7_0": "dnd-v0_7_0",
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs"
       }
@@ -276,11 +334,11 @@
     "src-dnd-master": {
       "flake": false,
       "locked": {
-        "lastModified": 1661947256,
-        "narHash": "sha256-L5Tg4HIlv2UqPrWBdffozwsjprX0ybJrPkcBwsNiJIM=",
+        "lastModified": 1664049278,
+        "narHash": "sha256-DRLbsCfxGWE/29RJ/muyiNXWUiiNwOa6aM4oitb2ti0=",
         "owner": "adokitkat",
         "repo": "dnd",
-        "rev": "11ed30662abfe567f148e8820bf6b28ffddb3176",
+        "rev": "1e9a85959951b12d534ac35cb3a2dbe4290b38e5",
         "type": "github"
       },
       "original": {
@@ -341,6 +399,23 @@
         "type": "github"
       }
     },
+    "src-dnd-v0_7_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1664049278,
+        "narHash": "sha256-DRLbsCfxGWE/29RJ/muyiNXWUiiNwOa6aM4oitb2ti0=",
+        "owner": "adokitkat",
+        "repo": "dnd",
+        "rev": "1e9a85959951b12d534ac35cb3a2dbe4290b38e5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "adokitkat",
+        "ref": "refs/tags/v0.7.0",
+        "repo": "dnd",
+        "type": "github"
+      }
+    },
     "src-gintro-v0_9_9": {
       "flake": false,
       "locked": {
@@ -393,6 +468,23 @@
       }
     },
     "src-gintro-v0_9_9_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657521538,
+        "narHash": "sha256-bHKXOAviUyrhw/TzT5wd3qY6SBmlHtgBvZy2p5mvu+M=",
+        "owner": "stefansalewski",
+        "repo": "gintro",
+        "rev": "7d3dceb3df55b7bb1533e30d96ef2c2bde426788",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stefansalewski",
+        "ref": "refs/tags/v0.9.9",
+        "repo": "gintro",
+        "type": "github"
+      }
+    },
+    "src-gintro-v0_9_9_5": {
       "flake": false,
       "locked": {
         "lastModified": 1657521538,
