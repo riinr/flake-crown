@@ -103,6 +103,22 @@
   inputs."ezscr-3_4_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ezscr-3_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."ezscr-3_4_1".dir   = "3_4_1";
+  inputs."ezscr-3_4_1".owner = "nim-nix-pkgs";
+  inputs."ezscr-3_4_1".ref   = "master";
+  inputs."ezscr-3_4_1".repo  = "ezscr";
+  inputs."ezscr-3_4_1".type  = "github";
+  inputs."ezscr-3_4_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ezscr-3_4_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ezscr-4_0_1".dir   = "4_0_1";
+  inputs."ezscr-4_0_1".owner = "nim-nix-pkgs";
+  inputs."ezscr-4_0_1".ref   = "master";
+  inputs."ezscr-4_0_1".repo  = "ezscr";
+  inputs."ezscr-4_0_1".type  = "github";
+  inputs."ezscr-4_0_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ezscr-4_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

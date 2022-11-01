@@ -119,6 +119,14 @@
   inputs."xlsx-v0_4_4".inputs.nixpkgs.follows = "nixpkgs";
   inputs."xlsx-v0_4_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."xlsx-v0_4_6".dir   = "v0_4_6";
+  inputs."xlsx-v0_4_6".owner = "nim-nix-pkgs";
+  inputs."xlsx-v0_4_6".ref   = "master";
+  inputs."xlsx-v0_4_6".repo  = "xlsx";
+  inputs."xlsx-v0_4_6".type  = "github";
+  inputs."xlsx-v0_4_6".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."xlsx-v0_4_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

@@ -24,7 +24,7 @@
   inputs."neo".owner = "nim-nix-pkgs";
   inputs."neo".ref   = "master";
   inputs."neo".repo  = "neo";
-  inputs."neo".dir   = "0_3_2";
+  inputs."neo".dir   = "0_3_3";
   inputs."neo".type  = "github";
   inputs."neo".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neo".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

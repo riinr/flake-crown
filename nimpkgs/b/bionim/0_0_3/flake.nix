@@ -16,7 +16,7 @@
   inputs."phylogeni".owner = "nim-nix-pkgs";
   inputs."phylogeni".ref   = "master";
   inputs."phylogeni".repo  = "phylogeni";
-  inputs."phylogeni".dir   = "v0_0_2";
+  inputs."phylogeni".dir   = "v0_1_0";
   inputs."phylogeni".type  = "github";
   inputs."phylogeni".inputs.nixpkgs.follows = "nixpkgs";
   inputs."phylogeni".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

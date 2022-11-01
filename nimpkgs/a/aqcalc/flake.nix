@@ -31,6 +31,22 @@
   inputs."aqcalc-0_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."aqcalc-0_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."aqcalc-0_3".dir   = "0_3";
+  inputs."aqcalc-0_3".owner = "nim-nix-pkgs";
+  inputs."aqcalc-0_3".ref   = "master";
+  inputs."aqcalc-0_3".repo  = "aqcalc";
+  inputs."aqcalc-0_3".type  = "github";
+  inputs."aqcalc-0_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."aqcalc-0_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."aqcalc-0_3_1".dir   = "0_3_1";
+  inputs."aqcalc-0_3_1".owner = "nim-nix-pkgs";
+  inputs."aqcalc-0_3_1".ref   = "master";
+  inputs."aqcalc-0_3_1".repo  = "aqcalc";
+  inputs."aqcalc-0_3_1".type  = "github";
+  inputs."aqcalc-0_3_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."aqcalc-0_3_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

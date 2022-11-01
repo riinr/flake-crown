@@ -16,7 +16,7 @@
   inputs."mcresponse".owner = "nim-nix-pkgs";
   inputs."mcresponse".ref   = "master";
   inputs."mcresponse".repo  = "mcresponse";
-  inputs."mcresponse".dir   = "v0_3_0";
+  inputs."mcresponse".dir   = "v0_4_0";
   inputs."mcresponse".type  = "github";
   inputs."mcresponse".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mcresponse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

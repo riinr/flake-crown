@@ -24,7 +24,7 @@
   inputs."dnsclient".owner = "nim-nix-pkgs";
   inputs."dnsclient".ref   = "master";
   inputs."dnsclient".repo  = "dnsclient";
-  inputs."dnsclient".dir   = "0_3_1";
+  inputs."dnsclient".dir   = "0_3_2";
   inputs."dnsclient".type  = "github";
   inputs."dnsclient".inputs.nixpkgs.follows = "nixpkgs";
   inputs."dnsclient".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

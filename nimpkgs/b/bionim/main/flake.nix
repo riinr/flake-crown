@@ -16,7 +16,7 @@
   inputs."phylogeni".owner = "nim-nix-pkgs";
   inputs."phylogeni".ref   = "master";
   inputs."phylogeni".repo  = "phylogeni";
-  inputs."phylogeni".dir   = "v0_0_2";
+  inputs."phylogeni".dir   = "v0_1_0";
   inputs."phylogeni".type  = "github";
   inputs."phylogeni".inputs.nixpkgs.follows = "nixpkgs";
   inputs."phylogeni".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -24,7 +24,7 @@
   inputs."bio_seq".owner = "nim-nix-pkgs";
   inputs."bio_seq".ref   = "master";
   inputs."bio_seq".repo  = "bio_seq";
-  inputs."bio_seq".dir   = "v0_0_8";
+  inputs."bio_seq".dir   = "v0_1_0";
   inputs."bio_seq".type  = "github";
   inputs."bio_seq".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bio_seq".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

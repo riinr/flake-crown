@@ -15,6 +15,14 @@
   inputs."bioseq-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bioseq-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."bioseq-v0_1_0".dir   = "v0_1_0";
+  inputs."bioseq-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."bioseq-v0_1_0".ref   = "master";
+  inputs."bioseq-v0_1_0".repo  = "bioseq";
+  inputs."bioseq-v0_1_0".type  = "github";
+  inputs."bioseq-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."bioseq-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

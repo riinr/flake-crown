@@ -63,6 +63,14 @@
   inputs."cutelog-2_0_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cutelog-2_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."cutelog-2_0_1".dir   = "2_0_1";
+  inputs."cutelog-2_0_1".owner = "nim-nix-pkgs";
+  inputs."cutelog-2_0_1".ref   = "master";
+  inputs."cutelog-2_0_1".repo  = "cutelog";
+  inputs."cutelog-2_0_1".type  = "github";
+  inputs."cutelog-2_0_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."cutelog-2_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

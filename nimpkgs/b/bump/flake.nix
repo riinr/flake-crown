@@ -455,6 +455,22 @@
   inputs."bump-1_8_30".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bump-1_8_30".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."bump-1_8_31".dir   = "1_8_31";
+  inputs."bump-1_8_31".owner = "nim-nix-pkgs";
+  inputs."bump-1_8_31".ref   = "master";
+  inputs."bump-1_8_31".repo  = "bump";
+  inputs."bump-1_8_31".type  = "github";
+  inputs."bump-1_8_31".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."bump-1_8_31".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."bump-1_8_32".dir   = "1_8_32";
+  inputs."bump-1_8_32".owner = "nim-nix-pkgs";
+  inputs."bump-1_8_32".ref   = "master";
+  inputs."bump-1_8_32".repo  = "bump";
+  inputs."bump-1_8_32".type  = "github";
+  inputs."bump-1_8_32".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."bump-1_8_32".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."bump-1_8_4".dir   = "1_8_4";
   inputs."bump-1_8_4".owner = "nim-nix-pkgs";
   inputs."bump-1_8_4".ref   = "master";

@@ -287,6 +287,22 @@
   inputs."allographer-v0_23_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."allographer-v0_23_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."allographer-v0_23_4".dir   = "v0_23_4";
+  inputs."allographer-v0_23_4".owner = "nim-nix-pkgs";
+  inputs."allographer-v0_23_4".ref   = "master";
+  inputs."allographer-v0_23_4".repo  = "allographer";
+  inputs."allographer-v0_23_4".type  = "github";
+  inputs."allographer-v0_23_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."allographer-v0_23_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."allographer-v0_24_0".dir   = "v0_24_0";
+  inputs."allographer-v0_24_0".owner = "nim-nix-pkgs";
+  inputs."allographer-v0_24_0".ref   = "master";
+  inputs."allographer-v0_24_0".repo  = "allographer";
+  inputs."allographer-v0_24_0".type  = "github";
+  inputs."allographer-v0_24_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."allographer-v0_24_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."allographer-v0_7_0".dir   = "v0_7_0";
   inputs."allographer-v0_7_0".owner = "nim-nix-pkgs";
   inputs."allographer-v0_7_0".ref   = "master";

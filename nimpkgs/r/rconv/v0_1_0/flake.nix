@@ -24,7 +24,7 @@
   inputs."glob".owner = "nim-nix-pkgs";
   inputs."glob".ref   = "master";
   inputs."glob".repo  = "glob";
-  inputs."glob".dir   = "v0_11_1";
+  inputs."glob".dir   = "v0_11_2";
   inputs."glob".type  = "github";
   inputs."glob".inputs.nixpkgs.follows = "nixpkgs";
   inputs."glob".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

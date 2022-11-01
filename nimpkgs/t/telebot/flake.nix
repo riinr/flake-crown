@@ -551,6 +551,14 @@
   inputs."telebot-2022_08_14".inputs.nixpkgs.follows = "nixpkgs";
   inputs."telebot-2022_08_14".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."telebot-2022_10_18".dir   = "2022_10_18";
+  inputs."telebot-2022_10_18".owner = "nim-nix-pkgs";
+  inputs."telebot-2022_10_18".ref   = "master";
+  inputs."telebot-2022_10_18".repo  = "telebot";
+  inputs."telebot-2022_10_18".type  = "github";
+  inputs."telebot-2022_10_18".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."telebot-2022_10_18".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."telebot-signed".dir   = "signed";
   inputs."telebot-signed".owner = "nim-nix-pkgs";
   inputs."telebot-signed".ref   = "master";

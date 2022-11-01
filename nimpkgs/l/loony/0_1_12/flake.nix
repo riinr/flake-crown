@@ -16,7 +16,7 @@
   inputs."github-disruptek-balls".owner = "nim-nix-pkgs";
   inputs."github-disruptek-balls".ref   = "master";
   inputs."github-disruptek-balls".repo  = "github-disruptek-balls";
-  inputs."github-disruptek-balls".dir   = "3_7_1";
+  inputs."github-disruptek-balls".dir   = "3_7_2";
   inputs."github-disruptek-balls".type  = "github";
   inputs."github-disruptek-balls".inputs.nixpkgs.follows = "nixpkgs";
   inputs."github-disruptek-balls".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -24,7 +24,7 @@
   inputs."github-nim-works-cps".owner = "nim-nix-pkgs";
   inputs."github-nim-works-cps".ref   = "master";
   inputs."github-nim-works-cps".repo  = "github-nim-works-cps";
-  inputs."github-nim-works-cps".dir   = "0_6_2";
+  inputs."github-nim-works-cps".dir   = "0_6_3";
   inputs."github-nim-works-cps".type  = "github";
   inputs."github-nim-works-cps".inputs.nixpkgs.follows = "nixpkgs";
   inputs."github-nim-works-cps".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

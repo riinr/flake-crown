@@ -15,6 +15,14 @@
   inputs."phoon-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."phoon-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."phoon-0_1_1".dir   = "0_1_1";
+  inputs."phoon-0_1_1".owner = "nim-nix-pkgs";
+  inputs."phoon-0_1_1".ref   = "master";
+  inputs."phoon-0_1_1".repo  = "phoon";
+  inputs."phoon-0_1_1".type  = "github";
+  inputs."phoon-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."phoon-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."phoon-v0_1_0".dir   = "v0_1_0";
   inputs."phoon-v0_1_0".owner = "nim-nix-pkgs";
   inputs."phoon-v0_1_0".ref   = "master";

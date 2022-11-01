@@ -935,6 +935,14 @@
   inputs."balls-3_7_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."balls-3_7_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."balls-3_7_2".dir   = "3_7_2";
+  inputs."balls-3_7_2".owner = "nim-nix-pkgs";
+  inputs."balls-3_7_2".ref   = "master";
+  inputs."balls-3_7_2".repo  = "balls";
+  inputs."balls-3_7_2".type  = "github";
+  inputs."balls-3_7_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."balls-3_7_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."balls-rc".dir   = "rc";
   inputs."balls-rc".owner = "nim-nix-pkgs";
   inputs."balls-rc".ref   = "master";

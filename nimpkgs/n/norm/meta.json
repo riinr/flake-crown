@@ -1788,6 +1788,45 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/tags/2.5.2"
+    },
+    {
+      "name": "norm",
+      "version": "2.6.0",
+      "author": "Constantine Molchanov",
+      "desc": "Nim ORM for SQLite and PostgreSQL.",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "htmldocs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "ndb",
+          "str": ">= 0.19.9",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.9"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.6.0"
     }
   ],
   "description": "Nim ORM.",
@@ -1845,6 +1884,7 @@
     "refs/tags/2.5.0",
     "refs/tags/2.5.1",
     "refs/tags/2.5.2",
+    "refs/tags/2.6.0",
     ""
   ],
   "heads": [

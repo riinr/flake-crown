@@ -71,6 +71,14 @@
   inputs."owlkettle-v2_0_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."owlkettle-v2_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."owlkettle-v2_1_0".dir   = "v2_1_0";
+  inputs."owlkettle-v2_1_0".owner = "nim-nix-pkgs";
+  inputs."owlkettle-v2_1_0".ref   = "master";
+  inputs."owlkettle-v2_1_0".repo  = "owlkettle";
+  inputs."owlkettle-v2_1_0".type  = "github";
+  inputs."owlkettle-v2_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."owlkettle-v2_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

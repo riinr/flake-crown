@@ -15,6 +15,14 @@
   inputs."genode-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."genode-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."genode-20221020".dir   = "20221020";
+  inputs."genode-20221020".owner = "nim-nix-pkgs";
+  inputs."genode-20221020".ref   = "master";
+  inputs."genode-20221020".repo  = "genode";
+  inputs."genode-20221020".type  = "github";
+  inputs."genode-20221020".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."genode-20221020".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."genode-v18_07".dir   = "v18_07";
   inputs."genode-v18_07".owner = "nim-nix-pkgs";
   inputs."genode-v18_07".ref   = "master";

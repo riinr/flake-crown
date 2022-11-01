@@ -1,5 +1,5 @@
 {
-  description = ''Library for external memory manipulation on a windows process'';
+  description = ''Cross platform (windows, linux) library for external process memory manipulation'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";

@@ -159,6 +159,30 @@
   inputs."grok-0_5_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."grok-0_5_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."grok-0_6_0".dir   = "0_6_0";
+  inputs."grok-0_6_0".owner = "nim-nix-pkgs";
+  inputs."grok-0_6_0".ref   = "master";
+  inputs."grok-0_6_0".repo  = "grok";
+  inputs."grok-0_6_0".type  = "github";
+  inputs."grok-0_6_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."grok-0_6_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."grok-0_6_1".dir   = "0_6_1";
+  inputs."grok-0_6_1".owner = "nim-nix-pkgs";
+  inputs."grok-0_6_1".ref   = "master";
+  inputs."grok-0_6_1".repo  = "grok";
+  inputs."grok-0_6_1".type  = "github";
+  inputs."grok-0_6_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."grok-0_6_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."grok-0_6_2".dir   = "0_6_2";
+  inputs."grok-0_6_2".owner = "nim-nix-pkgs";
+  inputs."grok-0_6_2".ref   = "master";
+  inputs."grok-0_6_2".repo  = "grok";
+  inputs."grok-0_6_2".type  = "github";
+  inputs."grok-0_6_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."grok-0_6_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

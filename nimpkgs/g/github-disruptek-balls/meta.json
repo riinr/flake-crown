@@ -3146,6 +3146,70 @@
     },
     {
       "name": "balls",
+      "version": "3.7.2",
+      "author": "disruptek",
+      "desc": "a unittest framework with balls 🔴🟡🟢",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "https://github.com/disruptek/grok",
+          "str": ">= 0.5.0 & < 1.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.0.0"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/ups",
+          "str": "< 1.0.0",
+          "ver": {
+            "kind": "verEarlier",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "https://github.com/planetis-m/sync",
+          "str": ">= 1.0.0 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        }
+      ],
+      "bin": [
+        "balls"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/3.7.2"
+    },
+    {
+      "name": "balls",
       "version": "2.4.5",
       "author": "disruptek",
       "desc": "a unittest framework with balls 🔴🟡🟢",
@@ -3312,6 +3376,7 @@
     "refs/tags/3.6.0",
     "refs/tags/3.7.0",
     "refs/tags/3.7.1",
+    "refs/tags/3.7.2",
     "refs/tags/rc",
     ""
   ],

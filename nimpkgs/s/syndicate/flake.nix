@@ -87,6 +87,14 @@
   inputs."syndicate-20220904".inputs.nixpkgs.follows = "nixpkgs";
   inputs."syndicate-20220904".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."syndicate-202210231".dir   = "202210231";
+  inputs."syndicate-202210231".owner = "nim-nix-pkgs";
+  inputs."syndicate-202210231".ref   = "master";
+  inputs."syndicate-202210231".repo  = "syndicate";
+  inputs."syndicate-202210231".type  = "github";
+  inputs."syndicate-202210231".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."syndicate-202210231".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."syndicate-nim-syndicate-1_2_0".dir   = "nim-syndicate-1_2_0";
   inputs."syndicate-nim-syndicate-1_2_0".owner = "nim-nix-pkgs";
   inputs."syndicate-nim-syndicate-1_2_0".ref   = "master";

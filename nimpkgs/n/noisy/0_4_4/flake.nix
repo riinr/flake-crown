@@ -16,7 +16,7 @@
   inputs."nimsimd".owner = "nim-nix-pkgs";
   inputs."nimsimd".ref   = "master";
   inputs."nimsimd".repo  = "nimsimd";
-  inputs."nimsimd".dir   = "1_2_0";
+  inputs."nimsimd".dir   = "1_2_1";
   inputs."nimsimd".type  = "github";
   inputs."nimsimd".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimsimd".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

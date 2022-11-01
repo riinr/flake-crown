@@ -71,6 +71,22 @@
   inputs."fugitive-v0_11_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."fugitive-v0_11_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."fugitive-v0_11_2".dir   = "v0_11_2";
+  inputs."fugitive-v0_11_2".owner = "nim-nix-pkgs";
+  inputs."fugitive-v0_11_2".ref   = "master";
+  inputs."fugitive-v0_11_2".repo  = "fugitive";
+  inputs."fugitive-v0_11_2".type  = "github";
+  inputs."fugitive-v0_11_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."fugitive-v0_11_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."fugitive-v0_11_3".dir   = "v0_11_3";
+  inputs."fugitive-v0_11_3".owner = "nim-nix-pkgs";
+  inputs."fugitive-v0_11_3".ref   = "master";
+  inputs."fugitive-v0_11_3".repo  = "fugitive";
+  inputs."fugitive-v0_11_3".type  = "github";
+  inputs."fugitive-v0_11_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."fugitive-v0_11_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."fugitive-v0_2_0".dir   = "v0_2_0";
   inputs."fugitive-v0_2_0".owner = "nim-nix-pkgs";
   inputs."fugitive-v0_2_0".ref   = "master";

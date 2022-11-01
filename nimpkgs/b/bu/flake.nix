@@ -23,6 +23,22 @@
   inputs."bu-0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bu-0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."bu-0_3_0".dir   = "0_3_0";
+  inputs."bu-0_3_0".owner = "nim-nix-pkgs";
+  inputs."bu-0_3_0".ref   = "master";
+  inputs."bu-0_3_0".repo  = "bu";
+  inputs."bu-0_3_0".type  = "github";
+  inputs."bu-0_3_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."bu-0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."bu-0_3_1".dir   = "0_3_1";
+  inputs."bu-0_3_1".owner = "nim-nix-pkgs";
+  inputs."bu-0_3_1".ref   = "master";
+  inputs."bu-0_3_1".repo  = "bu";
+  inputs."bu-0_3_1".type  = "github";
+  inputs."bu-0_3_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."bu-0_3_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

@@ -15,6 +15,30 @@
   inputs."matext-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."matext-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."matext-2022_10_12".dir   = "2022_10_12";
+  inputs."matext-2022_10_12".owner = "nim-nix-pkgs";
+  inputs."matext-2022_10_12".ref   = "master";
+  inputs."matext-2022_10_12".repo  = "matext";
+  inputs."matext-2022_10_12".type  = "github";
+  inputs."matext-2022_10_12".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."matext-2022_10_12".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."matext-2022_10_13".dir   = "2022_10_13";
+  inputs."matext-2022_10_13".owner = "nim-nix-pkgs";
+  inputs."matext-2022_10_13".ref   = "master";
+  inputs."matext-2022_10_13".repo  = "matext";
+  inputs."matext-2022_10_13".type  = "github";
+  inputs."matext-2022_10_13".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."matext-2022_10_13".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."matext-2022_11_1".dir   = "2022_11_1";
+  inputs."matext-2022_11_1".owner = "nim-nix-pkgs";
+  inputs."matext-2022_11_1".ref   = "master";
+  inputs."matext-2022_11_1".repo  = "matext";
+  inputs."matext-2022_11_1".type  = "github";
+  inputs."matext-2022_11_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."matext-2022_11_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."matext-2022_5_13".dir   = "2022_5_13";
   inputs."matext-2022_5_13".owner = "nim-nix-pkgs";
   inputs."matext-2022_5_13".ref   = "master";

@@ -135,6 +135,14 @@
   inputs."neo-0_3_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neo-0_3_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."neo-0_3_3".dir   = "0_3_3";
+  inputs."neo-0_3_3".owner = "nim-nix-pkgs";
+  inputs."neo-0_3_3".ref   = "master";
+  inputs."neo-0_3_3".repo  = "neo";
+  inputs."neo-0_3_3".type  = "github";
+  inputs."neo-0_3_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."neo-0_3_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

@@ -47,6 +47,14 @@
   inputs."cowstrings-v0_4_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cowstrings-v0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."cowstrings-v0_5_0".dir   = "v0_5_0";
+  inputs."cowstrings-v0_5_0".owner = "nim-nix-pkgs";
+  inputs."cowstrings-v0_5_0".ref   = "master";
+  inputs."cowstrings-v0_5_0".repo  = "cowstrings";
+  inputs."cowstrings-v0_5_0".type  = "github";
+  inputs."cowstrings-v0_5_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."cowstrings-v0_5_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

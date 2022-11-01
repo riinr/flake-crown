@@ -9,7 +9,7 @@
   
   inputs.src-nimem-master.flake = false;
   inputs.src-nimem-master.ref   = "refs/heads/master";
-  inputs.src-nimem-master.owner = "Sann0";
+  inputs.src-nimem-master.owner = "qb-0";
   inputs.src-nimem-master.repo  = "Nimem";
   inputs.src-nimem-master.type  = "github";
   

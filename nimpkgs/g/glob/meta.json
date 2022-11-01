@@ -205,6 +205,53 @@
     },
     {
       "name": "glob",
+      "version": "0.11.2",
+      "author": "Bo Lingen",
+      "desc": "Pure library for matching file paths against Unix style glob patterns.",
+      "license": "MIT",
+      "skipDirs": [
+        "docsrc"
+      ],
+      "skipFiles": [
+        "tests.nim"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "regex",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.11.2"
+    },
+    {
+      "name": "glob",
       "version": "0.2.0",
       "author": "Bo Lingen",
       "desc": "Pure library for matching file paths against Unix style glob patterns.",
@@ -671,6 +718,7 @@
     "refs/tags/v0.10.0",
     "refs/tags/v0.11.0",
     "refs/tags/v0.11.1",
+    "refs/tags/v0.11.2",
     "refs/tags/v0.2.0",
     "refs/tags/v0.3.0",
     "refs/tags/v0.3.1",

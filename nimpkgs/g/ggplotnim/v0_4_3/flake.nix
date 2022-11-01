@@ -32,7 +32,7 @@
   inputs."datamancer".owner = "nim-nix-pkgs";
   inputs."datamancer".ref   = "master";
   inputs."datamancer".repo  = "datamancer";
-  inputs."datamancer".dir   = "v0_3_6";
+  inputs."datamancer".dir   = "v0_3_8";
   inputs."datamancer".type  = "github";
   inputs."datamancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."datamancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -40,7 +40,7 @@
   inputs."shell".owner = "nim-nix-pkgs";
   inputs."shell".ref   = "master";
   inputs."shell".repo  = "shell";
-  inputs."shell".dir   = "v0_4_4";
+  inputs."shell".dir   = "v0_5_0";
   inputs."shell".type  = "github";
   inputs."shell".inputs.nixpkgs.follows = "nixpkgs";
   inputs."shell".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

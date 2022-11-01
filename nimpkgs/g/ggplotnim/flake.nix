@@ -543,6 +543,14 @@
   inputs."ggplotnim-v0_5_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ggplotnim-v0_5_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."ggplotnim-v0_5_4".dir   = "v0_5_4";
+  inputs."ggplotnim-v0_5_4".owner = "nim-nix-pkgs";
+  inputs."ggplotnim-v0_5_4".ref   = "master";
+  inputs."ggplotnim-v0_5_4".repo  = "ggplotnim";
+  inputs."ggplotnim-v0_5_4".type  = "github";
+  inputs."ggplotnim-v0_5_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ggplotnim-v0_5_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

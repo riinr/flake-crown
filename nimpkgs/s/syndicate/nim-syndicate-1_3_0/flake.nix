@@ -24,7 +24,7 @@
   inputs."preserves".owner = "nim-nix-pkgs";
   inputs."preserves".ref   = "master";
   inputs."preserves".repo  = "preserves";
-  inputs."preserves".dir   = "20220709";
+  inputs."preserves".dir   = "202210222";
   inputs."preserves".type  = "github";
   inputs."preserves".inputs.nixpkgs.follows = "nixpkgs";
   inputs."preserves".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

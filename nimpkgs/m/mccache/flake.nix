@@ -39,6 +39,14 @@
   inputs."mccache-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mccache-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."mccache-v0_3_0".dir   = "v0_3_0";
+  inputs."mccache-v0_3_0".owner = "nim-nix-pkgs";
+  inputs."mccache-v0_3_0".ref   = "master";
+  inputs."mccache-v0_3_0".repo  = "mccache";
+  inputs."mccache-v0_3_0".type  = "github";
+  inputs."mccache-v0_3_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."mccache-v0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

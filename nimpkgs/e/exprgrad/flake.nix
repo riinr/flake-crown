@@ -31,6 +31,14 @@
   inputs."exprgrad-v0_0_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."exprgrad-v0_0_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."exprgrad-v0_1_0".dir   = "v0_1_0";
+  inputs."exprgrad-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."exprgrad-v0_1_0".ref   = "master";
+  inputs."exprgrad-v0_1_0".repo  = "exprgrad";
+  inputs."exprgrad-v0_1_0".type  = "github";
+  inputs."exprgrad-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."exprgrad-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

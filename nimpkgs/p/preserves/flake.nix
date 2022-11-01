@@ -39,6 +39,70 @@
   inputs."preserves-20220709".inputs.nixpkgs.follows = "nixpkgs";
   inputs."preserves-20220709".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."preserves-20221013".dir   = "20221013";
+  inputs."preserves-20221013".owner = "nim-nix-pkgs";
+  inputs."preserves-20221013".ref   = "master";
+  inputs."preserves-20221013".repo  = "preserves";
+  inputs."preserves-20221013".type  = "github";
+  inputs."preserves-20221013".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."preserves-20221013".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."preserves-20221020".dir   = "20221020";
+  inputs."preserves-20221020".owner = "nim-nix-pkgs";
+  inputs."preserves-20221020".ref   = "master";
+  inputs."preserves-20221020".repo  = "preserves";
+  inputs."preserves-20221020".type  = "github";
+  inputs."preserves-20221020".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."preserves-20221020".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."preserves-202210222".dir   = "202210222";
+  inputs."preserves-202210222".owner = "nim-nix-pkgs";
+  inputs."preserves-202210222".ref   = "master";
+  inputs."preserves-202210222".repo  = "preserves";
+  inputs."preserves-202210222".type  = "github";
+  inputs."preserves-202210222".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."preserves-202210222".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."preserves-20221030".dir   = "20221030";
+  inputs."preserves-20221030".owner = "nim-nix-pkgs";
+  inputs."preserves-20221030".ref   = "master";
+  inputs."preserves-20221030".repo  = "preserves";
+  inputs."preserves-20221030".type  = "github";
+  inputs."preserves-20221030".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."preserves-20221030".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."preserves-3_3_0".dir   = "3_3_0";
+  inputs."preserves-3_3_0".owner = "nim-nix-pkgs";
+  inputs."preserves-3_3_0".ref   = "master";
+  inputs."preserves-3_3_0".repo  = "preserves";
+  inputs."preserves-3_3_0".type  = "github";
+  inputs."preserves-3_3_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."preserves-3_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."preserves-3_3_1".dir   = "3_3_1";
+  inputs."preserves-3_3_1".owner = "nim-nix-pkgs";
+  inputs."preserves-3_3_1".ref   = "master";
+  inputs."preserves-3_3_1".repo  = "preserves";
+  inputs."preserves-3_3_1".type  = "github";
+  inputs."preserves-3_3_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."preserves-3_3_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."preserves-nim-preserves-3_3_0".dir   = "nim-preserves-3_3_0";
+  inputs."preserves-nim-preserves-3_3_0".owner = "nim-nix-pkgs";
+  inputs."preserves-nim-preserves-3_3_0".ref   = "master";
+  inputs."preserves-nim-preserves-3_3_0".repo  = "preserves";
+  inputs."preserves-nim-preserves-3_3_0".type  = "github";
+  inputs."preserves-nim-preserves-3_3_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."preserves-nim-preserves-3_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."preserves-nim-preserves-3_3_1".dir   = "nim-preserves-3_3_1";
+  inputs."preserves-nim-preserves-3_3_1".owner = "nim-nix-pkgs";
+  inputs."preserves-nim-preserves-3_3_1".ref   = "master";
+  inputs."preserves-nim-preserves-3_3_1".repo  = "preserves";
+  inputs."preserves-nim-preserves-3_3_1".type  = "github";
+  inputs."preserves-nim-preserves-3_3_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."preserves-nim-preserves-3_3_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."preserves-v0_1_0".dir   = "v0_1_0";
   inputs."preserves-v0_1_0".owner = "nim-nix-pkgs";
   inputs."preserves-v0_1_0".ref   = "master";

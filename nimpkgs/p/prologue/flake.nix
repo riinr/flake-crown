@@ -207,6 +207,14 @@
   inputs."prologue-v0_6_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."prologue-v0_6_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."prologue-v0_6_2".dir   = "v0_6_2";
+  inputs."prologue-v0_6_2".owner = "nim-nix-pkgs";
+  inputs."prologue-v0_6_2".ref   = "master";
+  inputs."prologue-v0_6_2".repo  = "prologue";
+  inputs."prologue-v0_6_2".type  = "github";
+  inputs."prologue-v0_6_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."prologue-v0_6_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

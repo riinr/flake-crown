@@ -151,6 +151,14 @@
   inputs."jupyternim-0_7_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jupyternim-0_7_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."jupyternim-0_8_0".dir   = "0_8_0";
+  inputs."jupyternim-0_8_0".owner = "nim-nix-pkgs";
+  inputs."jupyternim-0_8_0".ref   = "master";
+  inputs."jupyternim-0_8_0".repo  = "jupyternim";
+  inputs."jupyternim-0_8_0".type  = "github";
+  inputs."jupyternim-0_8_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jupyternim-0_8_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."jupyternim-v0_3_0".dir   = "v0_3_0";
   inputs."jupyternim-v0_3_0".owner = "nim-nix-pkgs";
   inputs."jupyternim-v0_3_0".ref   = "master";

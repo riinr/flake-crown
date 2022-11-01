@@ -63,6 +63,14 @@
   inputs."cppstl-v0_5_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cppstl-v0_5_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."cppstl-v0_6_0".dir   = "v0_6_0";
+  inputs."cppstl-v0_6_0".owner = "nim-nix-pkgs";
+  inputs."cppstl-v0_6_0".ref   = "master";
+  inputs."cppstl-v0_6_0".repo  = "cppstl";
+  inputs."cppstl-v0_6_0".type  = "github";
+  inputs."cppstl-v0_6_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."cppstl-v0_6_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

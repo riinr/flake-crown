@@ -575,6 +575,14 @@
   inputs."cligen-v1_5_28".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen-v1_5_28".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."cligen-v1_5_29".dir   = "v1_5_29";
+  inputs."cligen-v1_5_29".owner = "nim-nix-pkgs";
+  inputs."cligen-v1_5_29".ref   = "master";
+  inputs."cligen-v1_5_29".repo  = "cligen";
+  inputs."cligen-v1_5_29".type  = "github";
+  inputs."cligen-v1_5_29".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."cligen-v1_5_29".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."cligen-v1_5_3".dir   = "v1_5_3";
   inputs."cligen-v1_5_3".owner = "nim-nix-pkgs";
   inputs."cligen-v1_5_3".ref   = "master";
@@ -582,6 +590,22 @@
   inputs."cligen-v1_5_3".type  = "github";
   inputs."cligen-v1_5_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen-v1_5_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."cligen-v1_5_30".dir   = "v1_5_30";
+  inputs."cligen-v1_5_30".owner = "nim-nix-pkgs";
+  inputs."cligen-v1_5_30".ref   = "master";
+  inputs."cligen-v1_5_30".repo  = "cligen";
+  inputs."cligen-v1_5_30".type  = "github";
+  inputs."cligen-v1_5_30".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."cligen-v1_5_30".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."cligen-v1_5_31".dir   = "v1_5_31";
+  inputs."cligen-v1_5_31".owner = "nim-nix-pkgs";
+  inputs."cligen-v1_5_31".ref   = "master";
+  inputs."cligen-v1_5_31".repo  = "cligen";
+  inputs."cligen-v1_5_31".type  = "github";
+  inputs."cligen-v1_5_31".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."cligen-v1_5_31".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."cligen-v1_5_4".dir   = "v1_5_4";
   inputs."cligen-v1_5_4".owner = "nim-nix-pkgs";

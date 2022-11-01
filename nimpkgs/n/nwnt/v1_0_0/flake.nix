@@ -16,7 +16,7 @@
   inputs."neverwinter".owner = "nim-nix-pkgs";
   inputs."neverwinter".ref   = "master";
   inputs."neverwinter".repo  = "neverwinter";
-  inputs."neverwinter".dir   = "1_5_6";
+  inputs."neverwinter".dir   = "1_5_7";
   inputs."neverwinter".type  = "github";
   inputs."neverwinter".inputs.nixpkgs.follows = "nixpkgs";
   inputs."neverwinter".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
