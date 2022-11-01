@@ -1,0 +1,155 @@
+{
+  "nodes": {
+    "cligen": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-cligen-v1_5_31": "src-cligen-v1_5_31"
+      },
+      "locked": {
+        "dir": "v1_5_31",
+        "lastModified": 1667322200,
+        "narHash": "sha256-bL0F1z4tRVaKmR6UQWv3Z+t3K6clWtSz17H33ByJqMM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "cligen",
+        "rev": "06804664e4ec0b0484337c406c2d87d9360701d3",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_5_31",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1662018438,
+        "narHash": "sha256-QtNtU6+LX3Wokxf0zlFwKTFOcn6TeDjKQZ+DA9OYtvM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b1fe8340736e3a85d25c709ac3dfd82a55c03cbf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "honeycomb": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-honeycomb-v0_1_2": "src-honeycomb-v0_1_2"
+      },
+      "locked": {
+        "dir": "v0_1_2",
+        "lastModified": 1667322338,
+        "narHash": "sha256-1RMQQR0xOeAwr6gzcYTnk3skKoVH13/fRWiHqepNYl4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "honeycomb",
+        "rev": "9999c4bd5b668c14675850d2705eaac2a6962251",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_2",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "honeycomb",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1667110639,
+        "narHash": "sha256-4FbPESZ5LbqQxkJJJBAfk/zKgF9h/4kyUwjjpJwYlbc=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "f38a1f04d1bec1feb61fd101a0539ae2002a7087",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "cligen": "cligen",
+        "flakeNimbleLib": "flakeNimbleLib",
+        "honeycomb": "honeycomb",
+        "nixpkgs": "nixpkgs",
+        "src-matext-2022_9_3": "src-matext-2022_9_3"
+      }
+    },
+    "src-cligen-v1_5_31": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1667137650,
+        "narHash": "sha256-n5owOEUTnXbYRwtdzEdVTucFuuGNSy7lRxsppOhu0uo=",
+        "owner": "c-blake",
+        "repo": "cligen",
+        "rev": "57191ea4dcc5d48de735295b2d8a79fb3b501625",
+        "type": "github"
+      },
+      "original": {
+        "owner": "c-blake",
+        "ref": "refs/tags/v1.5.31",
+        "repo": "cligen",
+        "type": "github"
+      }
+    },
+    "src-honeycomb-v0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1655763653,
+        "narHash": "sha256-ZEEctyXcNWgkl5OFF03kjZFWqelHIf4MiMzXDWmUvRE=",
+        "owner": "KatrinaKitten",
+        "repo": "honeycomb",
+        "rev": "84ec624169aafcc47fb6e0b9d1b499d1c916c515",
+        "type": "github"
+      },
+      "original": {
+        "owner": "KatrinaKitten",
+        "ref": "refs/tags/v0.1.2",
+        "repo": "honeycomb",
+        "type": "github"
+      }
+    },
+    "src-matext-2022_9_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1662237746,
+        "narHash": "sha256-hacsINmocQDJlvY+o4gIu3WY/1nTkOSy7hScKcu9280=",
+        "owner": "~xigoi",
+        "repo": "matext",
+        "rev": "10fd6131e06c3d6169ecfad89b608d7a7646543f",
+        "type": "sourcehut"
+      },
+      "original": {
+        "owner": "~xigoi",
+        "ref": "2022.9.3",
+        "repo": "matext",
+        "type": "sourcehut"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

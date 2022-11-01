@@ -1,0 +1,65 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1662018438,
+        "narHash": "sha256-QtNtU6+LX3Wokxf0zlFwKTFOcn6TeDjKQZ+DA9OYtvM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b1fe8340736e3a85d25c709ac3dfd82a55c03cbf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1667085676,
+        "narHash": "sha256-jPHYYoSdrV3ypWG4oi9SUeI2MU6dLjxM88+9io5Rrx0=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "e6e6bad81b7e11f37d893ef39712ce8918ae2338",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-measuremancer-v0_2_1": "src-measuremancer-v0_2_1"
+      }
+    },
+    "src-measuremancer-v0_2_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1666197450,
+        "narHash": "sha256-c1Fi4y+XHTgkGbofjdWTsLGA0uI313mCB9XMgZdza9I=",
+        "owner": "SciNim",
+        "repo": "Measuremancer",
+        "rev": "5a6a0f8ad19c2285e1a37057c98ae83e8054cc80",
+        "type": "github"
+      },
+      "original": {
+        "owner": "SciNim",
+        "ref": "refs/tags/v0.2.1",
+        "repo": "Measuremancer",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

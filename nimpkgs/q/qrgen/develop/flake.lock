@@ -1,0 +1,65 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1662018438,
+        "narHash": "sha256-QtNtU6+LX3Wokxf0zlFwKTFOcn6TeDjKQZ+DA9OYtvM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b1fe8340736e3a85d25c709ac3dfd82a55c03cbf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1667292599,
+        "narHash": "sha256-7ISOUI1aj6UKMPIL+wwthENL22L3+A9V+jS8Is3QsRo=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "ef2f213d9659a274985778bff4ca322f3ef3ac68",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-QRgen-develop": "src-QRgen-develop"
+      }
+    },
+    "src-QRgen-develop": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1664625130,
+        "narHash": "sha256-uJFC9VSkg5jQTFIocE2wspDQgEDbnLv0kAFfn3aXcj8=",
+        "owner": "aruZeta",
+        "repo": "QRgen",
+        "rev": "5a285c1d021a4e948f63fdd49a9ca605ce00b7b6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "aruZeta",
+        "ref": "refs/heads/develop",
+        "repo": "QRgen",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

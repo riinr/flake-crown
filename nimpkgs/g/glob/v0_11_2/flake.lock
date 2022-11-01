@@ -1,0 +1,157 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1662018438,
+        "narHash": "sha256-QtNtU6+LX3Wokxf0zlFwKTFOcn6TeDjKQZ+DA9OYtvM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b1fe8340736e3a85d25c709ac3dfd82a55c03cbf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1667292599,
+        "narHash": "sha256-7ISOUI1aj6UKMPIL+wwthENL22L3+A9V+jS8Is3QsRo=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "ef2f213d9659a274985778bff4ca322f3ef3ac68",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "regex": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-regex-v0_20_0": "src-regex-v0_20_0",
+        "unicodedb": "unicodedb"
+      },
+      "locked": {
+        "dir": "v0_20_0",
+        "lastModified": 1667330960,
+        "narHash": "sha256-6FmNB8FaiOUwwfiEspthGbwLe5Q301sLA669lnzsfKI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "regex",
+        "rev": "84280d24caae63ba4a4c825983d608c50d8cf50b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_20_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "regex",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "regex": "regex",
+        "src-glob-v0_11_2": "src-glob-v0_11_2"
+      }
+    },
+    "src-glob-v0_11_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1665763111,
+        "narHash": "sha256-vTouhQsSTAIBUHBGeiu8FPG0DJGD/J4t4BAC7g0aYTM=",
+        "owner": "haltcase",
+        "repo": "glob",
+        "rev": "286726e26ed9c4203bf41e6f1c41d2f0bc947122",
+        "type": "github"
+      },
+      "original": {
+        "owner": "haltcase",
+        "ref": "refs/tags/v0.11.2",
+        "repo": "glob",
+        "type": "github"
+      }
+    },
+    "src-regex-v0_20_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1665390469,
+        "narHash": "sha256-f7iMz/wc5Y/6Ylhc6FLmBsAiI3AVzdHy0rJNiypIfrU=",
+        "owner": "nitely",
+        "repo": "nim-regex",
+        "rev": "ab98735539ddd8a1eaaa795fd2ca65293c1640b3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nitely",
+        "ref": "refs/tags/v0.20.0",
+        "repo": "nim-regex",
+        "type": "github"
+      }
+    },
+    "src-unicodedb-v0_10_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1635061637,
+        "narHash": "sha256-qt2pyiGrvJXSes+E0eubx98mrF+jTudPD6hkUXjw0/4=",
+        "owner": "nitely",
+        "repo": "nim-unicodedb",
+        "rev": "675407fa4b6e701ebf9f94e5370ce18c3af40cc3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nitely",
+        "ref": "refs/tags/v0.10.0",
+        "repo": "nim-unicodedb",
+        "type": "github"
+      }
+    },
+    "unicodedb": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "regex",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "regex",
+          "nixpkgs"
+        ],
+        "src-unicodedb-v0_10_0": "src-unicodedb-v0_10_0"
+      },
+      "locked": {
+        "dir": "v0_10_0",
+        "lastModified": 1667330002,
+        "narHash": "sha256-l7c5ipBROg38RqwRiFEURBJa+ggkpX/wT8lISrOvkpA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "unicodedb",
+        "rev": "cfa7e3d68b13ac8316fbdaafa8a9ddda76b528ab",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_10_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "unicodedb",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

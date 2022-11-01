@@ -1,0 +1,92 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1662018438,
+        "narHash": "sha256-QtNtU6+LX3Wokxf0zlFwKTFOcn6TeDjKQZ+DA9OYtvM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b1fe8340736e3a85d25c709ac3dfd82a55c03cbf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1667292599,
+        "narHash": "sha256-7ISOUI1aj6UKMPIL+wwthENL22L3+A9V+jS8Is3QsRo=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "ef2f213d9659a274985778bff4ca322f3ef3ac68",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "shiftfields-master": "shiftfields-master"
+      }
+    },
+    "shiftfields-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-shiftfields-master": "src-shiftfields-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1667329926,
+        "narHash": "sha256-tYe4hXCAs2CLqQC/bu9i8wlHXQ2TE/000AtONauYcYM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "shiftfields",
+        "rev": "27195961c2c745059fe9a4e7aca7b1a02bd5dbd6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "shiftfields",
+        "type": "github"
+      }
+    },
+    "src-shiftfields-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1663058040,
+        "narHash": "sha256-rNHLBrRd2nk4Cq8QxaZXAGhFIbmowwvXnR1SPwpFegk=",
+        "owner": "sumatoshi",
+        "repo": "shiftfields",
+        "rev": "1400224274aad5a88f9819ea9f5924257db1ee1c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sumatoshi",
+        "ref": "refs/heads/master",
+        "repo": "shiftfields",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

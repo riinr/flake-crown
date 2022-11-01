@@ -1,0 +1,65 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1662018438,
+        "narHash": "sha256-QtNtU6+LX3Wokxf0zlFwKTFOcn6TeDjKQZ+DA9OYtvM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b1fe8340736e3a85d25c709ac3dfd82a55c03cbf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1667085676,
+        "narHash": "sha256-jPHYYoSdrV3ypWG4oi9SUeI2MU6dLjxM88+9io5Rrx0=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "e6e6bad81b7e11f37d893ef39712ce8918ae2338",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-mccache-v0_3_0": "src-mccache-v0_3_0"
+      }
+    },
+    "src-mccache-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1665879633,
+        "narHash": "sha256-BE8sNwBI+Z2OpYTF9rf0iSOAT5OMzgoU5bWDW3AehCc=",
+        "owner": "abbeymart",
+        "repo": "mccache-nim",
+        "rev": "59c8f83440cbd2282310bd833d64cf3ef1246ae6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "abbeymart",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "mccache-nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

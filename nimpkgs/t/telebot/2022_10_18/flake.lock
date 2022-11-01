@@ -1,0 +1,65 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1662018438,
+        "narHash": "sha256-QtNtU6+LX3Wokxf0zlFwKTFOcn6TeDjKQZ+DA9OYtvM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b1fe8340736e3a85d25c709ac3dfd82a55c03cbf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1667144409,
+        "narHash": "sha256-SS/yuF/0fktcP9kd+scRPPpaanDLm82Fv2beGmK0bVs=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "575bb5a4a0fac1347d7e0f9aae6f8ef8b8085b8c",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-telebot-2022_10_18": "src-telebot-2022_10_18"
+      }
+    },
+    "src-telebot-2022_10_18": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1666076887,
+        "narHash": "sha256-BSG/zxtuBP8ANCSYjlgLmjvE9IlZoQSSzLtpMMDvtVc=",
+        "owner": "ba0f3",
+        "repo": "telebot.nim",
+        "rev": "7ce34e9635068b514ce34e1663e66e27663b27b3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ba0f3",
+        "ref": "refs/tags/2022.10.18",
+        "repo": "telebot.nim",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,110 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1662018438,
+        "narHash": "sha256-QtNtU6+LX3Wokxf0zlFwKTFOcn6TeDjKQZ+DA9OYtvM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b1fe8340736e3a85d25c709ac3dfd82a55c03cbf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1667110639,
+        "narHash": "sha256-4FbPESZ5LbqQxkJJJBAfk/zKgF9h/4kyUwjjpJwYlbc=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "f38a1f04d1bec1feb61fd101a0539ae2002a7087",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "qrgen": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-QRgen-v2_1_1": "src-QRgen-v2_1_1"
+      },
+      "locked": {
+        "dir": "v2_1_1",
+        "lastModified": 1667322612,
+        "narHash": "sha256-n/JMNd4Er9d8UTob9wDK8coyfIhBlbEUTTsTom2XsLA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "qrgen",
+        "rev": "287f2372d947a3ed6842ca36095f4b1998642408",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v2_1_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "qrgen",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "qrgen": "qrgen",
+        "src-QRterm-v1_0_0": "src-QRterm-v1_0_0"
+      }
+    },
+    "src-QRgen-v2_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1663657939,
+        "narHash": "sha256-ZhLmvXcZ6uWR2PbUYD6IHeDiodbK2XWnwYXxAfOkBd4=",
+        "owner": "aruZeta",
+        "repo": "QRgen",
+        "rev": "666797a325c79b11a25023a3aa4ce87b5fd56564",
+        "type": "github"
+      },
+      "original": {
+        "owner": "aruZeta",
+        "ref": "refs/tags/v2.1.1",
+        "repo": "QRgen",
+        "type": "github"
+      }
+    },
+    "src-QRterm-v1_0_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1664116952,
+        "narHash": "sha256-7Ys0JUKiXHA/z+N6uq/gir9WR9UjWfvZq0NIIVzhlzA=",
+        "owner": "aruZeta",
+        "repo": "QRterm",
+        "rev": "768b7cc6ca7140642da5ac6c76ce64f02994b33f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "aruZeta",
+        "ref": "refs/tags/v1.0.0",
+        "repo": "QRterm",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

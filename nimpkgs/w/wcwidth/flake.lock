@@ -1,0 +1,227 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1662018438,
+        "narHash": "sha256-QtNtU6+LX3Wokxf0zlFwKTFOcn6TeDjKQZ+DA9OYtvM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b1fe8340736e3a85d25c709ac3dfd82a55c03cbf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1667292599,
+        "narHash": "sha256-7ISOUI1aj6UKMPIL+wwthENL22L3+A9V+jS8Is3QsRo=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "ef2f213d9659a274985778bff4ca322f3ef3ac68",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "wcwidth-main": "wcwidth-main",
+        "wcwidth-v0_1_1": "wcwidth-v0_1_1",
+        "wcwidth-v0_1_2": "wcwidth-v0_1_2",
+        "wcwidth-v0_1_3": "wcwidth-v0_1_3"
+      }
+    },
+    "src-wcwidth-main": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1665667912,
+        "narHash": "sha256-VuLaocfWV4/96+xiNr1US6f8UFySfidrqq8zuTD1aRk=",
+        "owner": "shoyu777",
+        "repo": "wcwidth-nim",
+        "rev": "86f8db1a883f6a64e590a56aed81e788389b7196",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shoyu777",
+        "ref": "refs/heads/main",
+        "repo": "wcwidth-nim",
+        "type": "github"
+      }
+    },
+    "src-wcwidth-v0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1665644192,
+        "narHash": "sha256-aT2jZm+xgYPHsmG9V36Gtoy3hg8XdLshucuc05p/0fo=",
+        "owner": "shoyu777",
+        "repo": "wcwidth-nim",
+        "rev": "263ad9abf997b07945486d8b7e1fa872181f98c8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shoyu777",
+        "ref": "refs/tags/v0.1.1",
+        "repo": "wcwidth-nim",
+        "type": "github"
+      }
+    },
+    "src-wcwidth-v0_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1665665013,
+        "narHash": "sha256-gvOw+7zSrnMZRHG3MaUMP3X5qD9Vg12Ol5qyxjdLY+4=",
+        "owner": "shoyu777",
+        "repo": "wcwidth-nim",
+        "rev": "1b16537c7c9b71a43142f78bb4b4fd41215db2ae",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shoyu777",
+        "ref": "refs/tags/v0.1.2",
+        "repo": "wcwidth-nim",
+        "type": "github"
+      }
+    },
+    "src-wcwidth-v0_1_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1665667912,
+        "narHash": "sha256-VuLaocfWV4/96+xiNr1US6f8UFySfidrqq8zuTD1aRk=",
+        "owner": "shoyu777",
+        "repo": "wcwidth-nim",
+        "rev": "86f8db1a883f6a64e590a56aed81e788389b7196",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shoyu777",
+        "ref": "refs/tags/v0.1.3",
+        "repo": "wcwidth-nim",
+        "type": "github"
+      }
+    },
+    "wcwidth-main": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-wcwidth-main": "src-wcwidth-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1667330024,
+        "narHash": "sha256-avbtbOTjSVWeaHEOlso9rrueotynxh4dp3IEfPj5cMc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "wcwidth",
+        "rev": "e87f6bea9e65e587359b7e9a51a8ece119b75773",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "wcwidth",
+        "type": "github"
+      }
+    },
+    "wcwidth-v0_1_1": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-wcwidth-v0_1_1": "src-wcwidth-v0_1_1"
+      },
+      "locked": {
+        "dir": "v0_1_1",
+        "lastModified": 1667330024,
+        "narHash": "sha256-avbtbOTjSVWeaHEOlso9rrueotynxh4dp3IEfPj5cMc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "wcwidth",
+        "rev": "e87f6bea9e65e587359b7e9a51a8ece119b75773",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "wcwidth",
+        "type": "github"
+      }
+    },
+    "wcwidth-v0_1_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-wcwidth-v0_1_2": "src-wcwidth-v0_1_2"
+      },
+      "locked": {
+        "dir": "v0_1_2",
+        "lastModified": 1667330024,
+        "narHash": "sha256-avbtbOTjSVWeaHEOlso9rrueotynxh4dp3IEfPj5cMc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "wcwidth",
+        "rev": "e87f6bea9e65e587359b7e9a51a8ece119b75773",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_2",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "wcwidth",
+        "type": "github"
+      }
+    },
+    "wcwidth-v0_1_3": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-wcwidth-v0_1_3": "src-wcwidth-v0_1_3"
+      },
+      "locked": {
+        "dir": "v0_1_3",
+        "lastModified": 1667330024,
+        "narHash": "sha256-avbtbOTjSVWeaHEOlso9rrueotynxh4dp3IEfPj5cMc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "wcwidth",
+        "rev": "e87f6bea9e65e587359b7e9a51a8ece119b75773",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "wcwidth",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,65 @@
+{
+  "nodes": {
+    "flakeNimbleLib": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1662018438,
+        "narHash": "sha256-QtNtU6+LX3Wokxf0zlFwKTFOcn6TeDjKQZ+DA9OYtvM=",
+        "owner": "riinr",
+        "repo": "nim-flakes-lib",
+        "rev": "b1fe8340736e3a85d25c709ac3dfd82a55c03cbf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "riinr",
+        "ref": "master",
+        "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1667110639,
+        "narHash": "sha256-4FbPESZ5LbqQxkJJJBAfk/zKgF9h/4kyUwjjpJwYlbc=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "f38a1f04d1bec1feb61fd101a0539ae2002a7087",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeNimbleLib": "flakeNimbleLib",
+        "nixpkgs": "nixpkgs",
+        "src-libfuzzy-v0_1_1": "src-libfuzzy-v0_1_1"
+      }
+    },
+    "src-libfuzzy-v0_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1665000468,
+        "narHash": "sha256-8uzWqVYRvKkdeslbkMcIZ+BaKmyR5oFBVSoGZePDVO4=",
+        "owner": "srozb",
+        "repo": "nim-libfuzzy",
+        "rev": "362d39ac496754489e93dd441e3e7810a2ff91fa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "srozb",
+        "ref": "refs/tags/v0.1.1",
+        "repo": "nim-libfuzzy",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
