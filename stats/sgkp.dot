@@ -1267,6 +1267,7 @@ digraph NimPkgs {
   ptr_math -> ptr_math
   ptr_math -> networkutils
   networkutils -> asyncredis
+  networkutils -> asyncrabbitmq
 
   stint -> stint
   stint -> nimbus
@@ -1927,7 +1928,9 @@ digraph NimPkgs {
   neverwinter -> nasher
   neverwinter -> nwsync
   docopt -> nwsync
+  regex -> sas
   regex -> nimraylib_now
+  nimraylib_now -> snekim
   regex -> glob
   glob -> coco
   coco -> rconv
@@ -3221,6 +3224,7 @@ digraph NimPkgs {
 
   networkutils -> networkutils
   networkutils -> asyncredis
+  networkutils -> asyncrabbitmq
 
   meta -> meta
 
@@ -4012,6 +4016,7 @@ digraph NimPkgs {
   argparse -> rconv
   argparse -> eachdo
   argparse -> nimnn
+  argparse -> sas
   argparse -> wpspin
   argparse -> gerbil
   argparse -> fision
@@ -4061,6 +4066,7 @@ digraph NimPkgs {
 
   stew -> stew
   stew -> nimbus
+  stew -> nimldap
   stew -> httputils
   httputils -> chronos
   chronos -> nimbus
@@ -4521,9 +4527,11 @@ digraph NimPkgs {
 
   mpfit -> mpfit
 
-  xkb -> xkb
+  snekim -> snekim
 
   json_builder -> json_builder
+
+  xkb -> xkb
 
   nimler -> nimler
 
@@ -4597,6 +4605,8 @@ digraph NimPkgs {
   pcap -> pcap
 
   woocommerce -> woocommerce
+
+  nimldap -> nimldap
 
   nimodpi -> nimodpi
 
@@ -6153,6 +6163,8 @@ digraph NimPkgs {
 
   eth_p2p -> eth_p2p
 
+  sas -> sas
+
   weighted_graph -> weighted_graph
 
   parselicense -> parselicense
@@ -6914,18 +6926,17 @@ digraph NimPkgs {
 
   min -> min
 
-  barbarus -> barbarus
-
   sph -> sph
   sph -> aws_sdk
+
+  barbarus -> barbarus
+
+  asyncrabbitmq -> asyncrabbitmq
 
   foreach -> foreach
   foreach -> openapi
   foreach -> rest
   foreach -> golden
-
-  libpe -> libpe
-  libpe -> peni
 
   fastkiss -> fastkiss
 
@@ -6938,16 +6949,17 @@ digraph NimPkgs {
 
   gen -> gen
 
-  nimha -> nimha
+  libpe -> libpe
+  libpe -> peni
 
   nimgraphviz -> nimgraphviz
   nimgraphviz -> astdot
 
   jdec -> jdec
 
-  numtoword -> numtoword
+  nimha -> nimha
 
-  snip -> snip
+  numtoword -> numtoword
 
   microasynchttpserver -> microasynchttpserver
 
@@ -6975,6 +6987,8 @@ digraph NimPkgs {
   nimwc -> fision
   jester -> pigeon
   jester -> redissessions
+
+  snip -> snip
 
   gemini -> gemini
 
@@ -7668,7 +7682,9 @@ digraph NimPkgs {
   neverwinter -> nasher
   neverwinter -> nwsync
   docopt -> nwsync
+  regex -> sas
   regex -> nimraylib_now
+  nimraylib_now -> snekim
   regex -> glob
   glob -> coco
   coco -> rconv
@@ -8365,6 +8381,7 @@ digraph NimPkgs {
   lrparser -> lrparser
 
   nimraylib_now -> nimraylib_now
+  nimraylib_now -> snekim
 
   nim_chacha20_poly1305 -> nim_chacha20_poly1305
 
