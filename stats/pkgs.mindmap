@@ -51,8 +51,6 @@
 
 * jhash
 
-* tic80
-
 * isaac
 
 * nimislides
@@ -61,37 +59,47 @@
 *** mustache
 *** toml_serialization
 **** stew
+***** unittest2
 **** serialization
 ***** unittest2
 ***** stew
+****** unittest2
 ***** faststreams
 ****** unittest2
 ****** stew
+******* unittest2
 ****** chronos
 ******* httputils
 ******** unittest2
 ******** stew
+********* unittest2
+******* unittest2
 ******* stew
+******** unittest2
 ******* bearssl
 ******** unittest2
-****** testutils
 *** tempfile
 ** toml_serialization
 *** stew
+**** unittest2
 *** serialization
 **** unittest2
 **** stew
+***** unittest2
 **** faststreams
 ***** unittest2
 ***** stew
+****** unittest2
 ***** chronos
 ****** httputils
 ******* unittest2
 ******* stew
+******** unittest2
+****** unittest2
 ****** stew
+******* unittest2
 ****** bearssl
 ******* unittest2
-***** testutils
 
 * anttweakbar
 
@@ -122,11 +130,20 @@
 
 * nephyr
 ** stew
+*** unittest2
+** fastrpc
+** cdecl
+*** macroutils
 ** msgpack4nim
+** mcu_utils
+*** threading
+*** persistent_enums
 
 * toktok
 
 * nimeverything
+
+* fastrpc
 
 * records
 
@@ -184,17 +201,21 @@
 * serialization
 ** unittest2
 ** stew
+*** unittest2
 ** faststreams
 *** unittest2
 *** stew
+**** unittest2
 *** chronos
 **** httputils
 ***** unittest2
 ***** stew
+****** unittest2
+**** unittest2
 **** stew
+***** unittest2
 **** bearssl
 ***** unittest2
-*** testutils
 
 * skybook
 ** jester
@@ -233,6 +254,7 @@
 
 * mcu_utils
 ** threading
+** persistent_enums
 
 * rx_nim
 
@@ -270,11 +292,7 @@
 * mangle
 
 * mike
-** websocketx
-*** httpx
-**** ioselectors
-***** wepoll
-*** ws
+** zippy
 ** httpx
 *** ioselectors
 **** wepoll
@@ -284,6 +302,7 @@
 * listenbrainz
 ** jsony
 ** nodejs
+** dotenv
 
 * bitstreams
 
@@ -314,7 +333,6 @@
 
 * ballpark
 ** fsnotify
-*** timerwheel
 *** xio
 
 * libsaedea
@@ -360,17 +378,21 @@
 ** snappy
 *** unittest2
 *** stew
+**** unittest2
 *** faststreams
 **** unittest2
 **** stew
+***** unittest2
 **** chronos
 ***** httputils
 ****** unittest2
 ****** stew
+******* unittest2
+***** unittest2
 ***** stew
+****** unittest2
 ***** bearssl
 ****** unittest2
-**** testutils
 
 * bncurve
 ** nimcrypto
@@ -439,197 +461,259 @@
 
 * web3
 ** stew
+*** unittest2
 ** faststreams
 *** unittest2
 *** stew
+**** unittest2
 *** chronos
 **** httputils
 ***** unittest2
 ***** stew
+****** unittest2
+**** unittest2
 **** stew
+***** unittest2
 **** bearssl
 ***** unittest2
-*** testutils
 ** nimcrypto
 ** chronos
 *** httputils
 **** unittest2
 **** stew
+***** unittest2
+*** unittest2
 *** stew
+**** unittest2
 *** bearssl
 **** unittest2
 ** stint
 *** stew
+**** unittest2
 ** eth
 *** metrics
 **** chronos
 ***** httputils
 ****** unittest2
 ****** stew
+******* unittest2
+***** unittest2
 ***** stew
+****** unittest2
 ***** bearssl
 ****** unittest2
 *** unittest2
 *** stew
+**** unittest2
 *** nimcrypto
 *** nat_traversal
 **** stew
+***** unittest2
 *** chronos
 **** httputils
 ***** unittest2
 ***** stew
+****** unittest2
+**** unittest2
 **** stew
+***** unittest2
 **** bearssl
 ***** unittest2
 *** stint
 **** stew
-*** rocksdb
-**** stew
-**** tempfile
+***** unittest2
 *** confutils
 **** stew
+***** unittest2
 *** testutils
+**** unittest2
 *** secp256k1
 **** stew
+***** unittest2
 **** nimcrypto
 *** sqlite3_abi
 *** chronicles
 **** testutils
+***** unittest2
 **** json_serialization
 ***** stew
+****** unittest2
 ***** serialization
 ****** unittest2
 ****** stew
+******* unittest2
 ****** faststreams
 ******* unittest2
 ******* stew
+******** unittest2
 ******* chronos
 ******** httputils
 ********* unittest2
 ********* stew
+********** unittest2
+******** unittest2
 ******** stew
+********* unittest2
 ******** bearssl
 ********* unittest2
-******* testutils
 ** json_rpc
 *** httputils
 **** unittest2
 **** stew
+***** unittest2
 *** stew
+**** unittest2
 *** nimcrypto
 *** chronos
 **** httputils
 ***** unittest2
 ***** stew
+****** unittest2
+**** unittest2
 **** stew
+***** unittest2
 **** bearssl
 ***** unittest2
 *** stint
 **** stew
+***** unittest2
 *** websock
 **** httputils
 ***** unittest2
 ***** stew
+****** unittest2
 **** stew
+***** unittest2
 **** nimcrypto
 **** bearssl
 ***** unittest2
-**** asynctest
 **** chronos
 ***** httputils
 ****** unittest2
 ****** stew
+******* unittest2
+***** unittest2
 ***** stew
+****** unittest2
 ***** bearssl
 ****** unittest2
 **** chronicles
 ***** testutils
+****** unittest2
 ***** json_serialization
 ****** stew
+******* unittest2
 ****** serialization
 ******* unittest2
 ******* stew
+******** unittest2
 ******* faststreams
 ******** unittest2
 ******** stew
+********* unittest2
 ******** chronos
 ********* httputils
 ********** unittest2
 ********** stew
+*********** unittest2
+********* unittest2
 ********* stew
+********** unittest2
 ********* bearssl
 ********** unittest2
-******** testutils
 **** zlib
 ***** stew
+****** unittest2
 *** json_serialization
 **** stew
+***** unittest2
 **** serialization
 ***** unittest2
 ***** stew
+****** unittest2
 ***** faststreams
 ****** unittest2
 ****** stew
+******* unittest2
 ****** chronos
 ******* httputils
 ******** unittest2
 ******** stew
+********* unittest2
+******* unittest2
 ******* stew
+******** unittest2
 ******* bearssl
 ******** unittest2
-****** testutils
 *** chronicles
 **** testutils
+***** unittest2
 **** json_serialization
 ***** stew
+****** unittest2
 ***** serialization
 ****** unittest2
 ****** stew
+******* unittest2
 ****** faststreams
 ******* unittest2
 ******* stew
+******** unittest2
 ******* chronos
 ******** httputils
 ********* unittest2
 ********* stew
+********** unittest2
+******** unittest2
 ******** stew
+********* unittest2
 ******** bearssl
 ********* unittest2
-******* testutils
 ** json_serialization
 *** stew
+**** unittest2
 *** serialization
 **** unittest2
 **** stew
+***** unittest2
 **** faststreams
 ***** unittest2
 ***** stew
+****** unittest2
 ***** chronos
 ****** httputils
 ******* unittest2
 ******* stew
+******** unittest2
+****** unittest2
 ****** stew
+******* unittest2
 ****** bearssl
 ******* unittest2
-***** testutils
 ** chronicles
 *** testutils
+**** unittest2
 *** json_serialization
 **** stew
+***** unittest2
 **** serialization
 ***** unittest2
 ***** stew
+****** unittest2
 ***** faststreams
 ****** unittest2
 ****** stew
+******* unittest2
 ****** chronos
 ******* httputils
 ******** unittest2
 ******** stew
+********* unittest2
+******* unittest2
 ******* stew
+******** unittest2
 ******* bearssl
 ******** unittest2
-****** testutils
 
 * shioridll
 
@@ -648,11 +732,6 @@
 **** bumpy
 ***** vmath
 **** chroma
-*** flatty
-*** vmath
-*** bumpy
-**** vmath
-*** chroma
 ** pixie
 *** zippy
 *** flatty
@@ -677,6 +756,8 @@
 **** vmath
 *** patty
 *** macroutils
+*** cdecl
+**** macroutils
 ** asynctools
 ** staticglfw
 *** opengl
@@ -693,6 +774,7 @@
 * patgraph
 
 * taps
+** getdns
 
 * biblioteca_guarrilla
 ** jester
@@ -744,108 +826,209 @@
 * ethers
 ** questionable
 ** stew
+*** unittest2
 ** upraises
 ** chronos
 *** httputils
 **** unittest2
 **** stew
+***** unittest2
+*** unittest2
 *** stew
+**** unittest2
 *** bearssl
 **** unittest2
 ** stint
 *** stew
+**** unittest2
 ** contractabi
 *** questionable
 *** stew
+**** unittest2
 *** nimcrypto
 *** upraises
 *** stint
 **** stew
+***** unittest2
+** eth
+*** metrics
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+******* unittest2
+***** unittest2
+***** stew
+****** unittest2
+***** bearssl
+****** unittest2
+*** unittest2
+*** stew
+**** unittest2
+*** nimcrypto
+*** nat_traversal
+**** stew
+***** unittest2
+*** chronos
+**** httputils
+***** unittest2
+***** stew
+****** unittest2
+**** unittest2
+**** stew
+***** unittest2
+**** bearssl
+***** unittest2
+*** stint
+**** stew
+***** unittest2
+*** confutils
+**** stew
+***** unittest2
+*** testutils
+**** unittest2
+*** secp256k1
+**** stew
+***** unittest2
+**** nimcrypto
+*** sqlite3_abi
+*** chronicles
+**** testutils
+***** unittest2
+**** json_serialization
+***** stew
+****** unittest2
+***** serialization
+****** unittest2
+****** stew
+******* unittest2
+****** faststreams
+******* unittest2
+******* stew
+******** unittest2
+******* chronos
+******** httputils
+********* unittest2
+********* stew
+********** unittest2
+******** unittest2
+******** stew
+********* unittest2
+******** bearssl
+********* unittest2
 ** json_rpc
 *** httputils
 **** unittest2
 **** stew
+***** unittest2
 *** stew
+**** unittest2
 *** nimcrypto
 *** chronos
 **** httputils
 ***** unittest2
 ***** stew
+****** unittest2
+**** unittest2
 **** stew
+***** unittest2
 **** bearssl
 ***** unittest2
 *** stint
 **** stew
+***** unittest2
 *** websock
 **** httputils
 ***** unittest2
 ***** stew
+****** unittest2
 **** stew
+***** unittest2
 **** nimcrypto
 **** bearssl
 ***** unittest2
-**** asynctest
 **** chronos
 ***** httputils
 ****** unittest2
 ****** stew
+******* unittest2
+***** unittest2
 ***** stew
+****** unittest2
 ***** bearssl
 ****** unittest2
 **** chronicles
 ***** testutils
+****** unittest2
 ***** json_serialization
 ****** stew
+******* unittest2
 ****** serialization
 ******* unittest2
 ******* stew
+******** unittest2
 ******* faststreams
 ******** unittest2
 ******** stew
+********* unittest2
 ******** chronos
 ********* httputils
 ********** unittest2
 ********** stew
+*********** unittest2
+********* unittest2
 ********* stew
+********** unittest2
 ********* bearssl
 ********** unittest2
-******** testutils
 **** zlib
 ***** stew
+****** unittest2
 *** json_serialization
 **** stew
+***** unittest2
 **** serialization
 ***** unittest2
 ***** stew
+****** unittest2
 ***** faststreams
 ****** unittest2
 ****** stew
+******* unittest2
 ****** chronos
 ******* httputils
 ******** unittest2
 ******** stew
+********* unittest2
+******* unittest2
 ******* stew
+******** unittest2
 ******* bearssl
 ******** unittest2
-****** testutils
 *** chronicles
 **** testutils
+***** unittest2
 **** json_serialization
 ***** stew
+****** unittest2
 ***** serialization
 ****** unittest2
 ****** stew
+******* unittest2
 ****** faststreams
 ******* unittest2
 ******* stew
+******** unittest2
 ******* chronos
 ******** httputils
 ********* unittest2
 ********* stew
+********** unittest2
+******** unittest2
 ******** stew
+********* unittest2
 ******** bearssl
 ********* unittest2
-******* testutils
 
 * lazyseq
 
@@ -858,13 +1041,13 @@
 * googlesearch
 ** nimquery
 
-* timerwheel
-
 * host
+
+* nimwin
 
 * animatecss
 
-* nimwin
+* timerwheel
 
 * consul
 
@@ -1057,6 +1240,14 @@
 ** shell
 ** ginger
 *** shell
+*** pixie
+**** zippy
+**** flatty
+**** nimsimd
+**** vmath
+**** bumpy
+***** vmath
+**** chroma
 *** cairo
 *** chroma
 ** webview
@@ -1108,9 +1299,6 @@
 
 * pwd
 
-* ytextractor
-** ajax
-
 * prometheus
 
 * gralg
@@ -1161,7 +1349,7 @@
 
 * bgfxextrasdotnim
 
-* libjwt
+* todoist
 
 * prologue
 ** regex
@@ -1173,8 +1361,6 @@
 ** logue
 *** cligen
 ** cookiejar
-
-* todoist
 
 * patty
 
@@ -1233,6 +1419,7 @@
 * resolv
 ** dnsprotocol
 *** stew
+**** unittest2
 
 * pluginmanager
 
@@ -1311,6 +1498,7 @@
 
 * zxcvbn
 ** testutils
+*** unittest2
 
 * eternity
 
@@ -1358,9 +1546,6 @@
 
 * timecop
 ** subhook
-
-* composition
-** macrosex
 
 * streamfix
 
@@ -1432,7 +1617,7 @@
 * wavecore
 ** urlly
 ** flatty
-** zippy
+** ansiutils
 ** paramidi
 ** threading
 ** puppy
@@ -1443,19 +1628,24 @@
 * nitro
 ** questionable
 ** stew
+*** unittest2
 ** nimcrypto
 ** upraises
 ** stint
 *** stew
+**** unittest2
 ** contractabi
 *** questionable
 *** stew
+**** unittest2
 *** nimcrypto
 *** upraises
 *** stint
 **** stew
+***** unittest2
 ** secp256k1
 *** stew
+**** unittest2
 *** nimcrypto
 
 * aqcalc
@@ -1481,6 +1671,12 @@
 ** jsony
 ** nyml
 *** toktok
+*** pkginfo
+**** semver
+** nimcrypto
+** filetype
+** pkginfo
+*** semver
 
 * phylogeni
 
@@ -1499,22 +1695,28 @@
 
 * chronicles
 ** testutils
+*** unittest2
 ** json_serialization
 *** stew
+**** unittest2
 *** serialization
 **** unittest2
 **** stew
+***** unittest2
 **** faststreams
 ***** unittest2
 ***** stew
+****** unittest2
 ***** chronos
 ****** httputils
 ******* unittest2
 ******* stew
+******** unittest2
+****** unittest2
 ****** stew
+******* unittest2
 ****** bearssl
 ******* unittest2
-***** testutils
 
 * bgfx
 
@@ -1525,9 +1727,18 @@
 * python3
 
 * pigeon
-** jester
-*** httpbeast
-**** asynctools
+** regex
+*** unicodedb
+** prologue
+*** regex
+**** unicodedb
+*** nimcrypto
+*** httpx
+**** ioselectors
+***** wepoll
+*** logue
+**** cligen
+*** cookiejar
 ** ajax
 
 * luna
@@ -1539,7 +1750,10 @@
 *** httputils
 **** unittest2
 **** stew
+***** unittest2
+*** unittest2
 *** stew
+**** unittest2
 *** bearssl
 **** unittest2
 
@@ -1559,51 +1773,66 @@
 
 * graphql
 ** stew
+*** unittest2
 ** faststreams
 *** unittest2
 *** stew
+**** unittest2
 *** chronos
 **** httputils
 ***** unittest2
 ***** stew
+****** unittest2
+**** unittest2
 **** stew
+***** unittest2
 **** bearssl
 ***** unittest2
-*** testutils
 ** json_serialization
 *** stew
+**** unittest2
 *** serialization
 **** unittest2
 **** stew
+***** unittest2
 **** faststreams
 ***** unittest2
 ***** stew
+****** unittest2
 ***** chronos
 ****** httputils
 ******* unittest2
 ******* stew
+******** unittest2
+****** unittest2
 ****** stew
+******* unittest2
 ****** bearssl
 ******* unittest2
-***** testutils
 ** chronicles
 *** testutils
+**** unittest2
 *** json_serialization
 **** stew
+***** unittest2
 **** serialization
 ***** unittest2
 ***** stew
+****** unittest2
 ***** faststreams
 ****** unittest2
 ****** stew
+******* unittest2
 ****** chronos
 ******* httputils
 ******** unittest2
 ******** stew
+********* unittest2
+******* unittest2
 ******* stew
+******** unittest2
 ******* bearssl
 ******** unittest2
-****** testutils
 
 * gitapi
 
@@ -1667,9 +1896,6 @@
 
 * desim
 
-* gimg
-** useragent
-
 * x11
 
 * nimcuda
@@ -1678,6 +1904,7 @@
 
 * stint
 ** stew
+*** unittest2
 
 * filetype
 
@@ -1736,6 +1963,7 @@
 ** nimsha2
 
 * nasher
+** blarg
 ** nwnt
 *** docopt
 **** regex
@@ -1769,7 +1997,13 @@
 * ngxcmod
 
 * nimbus
+** ethash
+*** nimcrypto
+** evmc
+*** stew
+**** unittest2
 ** stew
+*** unittest2
 ** nimcrypto
 ** bncurve
 *** nimcrypto
@@ -1777,169 +2011,482 @@
 *** httputils
 **** unittest2
 **** stew
+***** unittest2
+*** unittest2
 *** stew
+**** unittest2
 *** bearssl
 **** unittest2
 ** stint
 *** stew
+**** unittest2
 ** libbacktrace
 ** rocksdb
 *** stew
+**** unittest2
 *** tempfile
+** web3
+*** stew
+**** unittest2
+*** faststreams
+**** unittest2
+**** stew
+***** unittest2
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+******* unittest2
+***** unittest2
+***** stew
+****** unittest2
+***** bearssl
+****** unittest2
+*** nimcrypto
+*** chronos
+**** httputils
+***** unittest2
+***** stew
+****** unittest2
+**** unittest2
+**** stew
+***** unittest2
+**** bearssl
+***** unittest2
+*** stint
+**** stew
+***** unittest2
+*** eth
+**** metrics
+***** chronos
+****** httputils
+******* unittest2
+******* stew
+******** unittest2
+****** unittest2
+****** stew
+******* unittest2
+****** bearssl
+******* unittest2
+**** unittest2
+**** stew
+***** unittest2
+**** nimcrypto
+**** nat_traversal
+***** stew
+****** unittest2
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+******* unittest2
+***** unittest2
+***** stew
+****** unittest2
+***** bearssl
+****** unittest2
+**** stint
+***** stew
+****** unittest2
+**** confutils
+***** stew
+****** unittest2
+**** testutils
+***** unittest2
+**** secp256k1
+***** stew
+****** unittest2
+***** nimcrypto
+**** sqlite3_abi
+**** chronicles
+***** testutils
+****** unittest2
+***** json_serialization
+****** stew
+******* unittest2
+****** serialization
+******* unittest2
+******* stew
+******** unittest2
+******* faststreams
+******** unittest2
+******** stew
+********* unittest2
+******** chronos
+********* httputils
+********** unittest2
+********** stew
+*********** unittest2
+********* unittest2
+********* stew
+********** unittest2
+********* bearssl
+********** unittest2
+*** json_rpc
+**** httputils
+***** unittest2
+***** stew
+****** unittest2
+**** stew
+***** unittest2
+**** nimcrypto
+**** chronos
+***** httputils
+****** unittest2
+****** stew
+******* unittest2
+***** unittest2
+***** stew
+****** unittest2
+***** bearssl
+****** unittest2
+**** stint
+***** stew
+****** unittest2
+**** websock
+***** httputils
+****** unittest2
+****** stew
+******* unittest2
+***** stew
+****** unittest2
+***** nimcrypto
+***** bearssl
+****** unittest2
+***** chronos
+****** httputils
+******* unittest2
+******* stew
+******** unittest2
+****** unittest2
+****** stew
+******* unittest2
+****** bearssl
+******* unittest2
+***** chronicles
+****** testutils
+******* unittest2
+****** json_serialization
+******* stew
+******** unittest2
+******* serialization
+******** unittest2
+******** stew
+********* unittest2
+******** faststreams
+********* unittest2
+********* stew
+********** unittest2
+********* chronos
+********** httputils
+*********** unittest2
+*********** stew
+************ unittest2
+********** unittest2
+********** stew
+*********** unittest2
+********** bearssl
+*********** unittest2
+***** zlib
+****** stew
+******* unittest2
+**** json_serialization
+***** stew
+****** unittest2
+***** serialization
+****** unittest2
+****** stew
+******* unittest2
+****** faststreams
+******* unittest2
+******* stew
+******** unittest2
+******* chronos
+******** httputils
+********* unittest2
+********* stew
+********** unittest2
+******** unittest2
+******** stew
+********* unittest2
+******** bearssl
+********* unittest2
+**** chronicles
+***** testutils
+****** unittest2
+***** json_serialization
+****** stew
+******* unittest2
+****** serialization
+******* unittest2
+******* stew
+******** unittest2
+******* faststreams
+******** unittest2
+******** stew
+********* unittest2
+******** chronos
+********* httputils
+********** unittest2
+********** stew
+*********** unittest2
+********* unittest2
+********* stew
+********** unittest2
+********* bearssl
+********** unittest2
+*** json_serialization
+**** stew
+***** unittest2
+**** serialization
+***** unittest2
+***** stew
+****** unittest2
+***** faststreams
+****** unittest2
+****** stew
+******* unittest2
+****** chronos
+******* httputils
+******** unittest2
+******** stew
+********* unittest2
+******* unittest2
+******* stew
+******** unittest2
+******* bearssl
+******** unittest2
+*** chronicles
+**** testutils
+***** unittest2
+**** json_serialization
+***** stew
+****** unittest2
+***** serialization
+****** unittest2
+****** stew
+******* unittest2
+****** faststreams
+******* unittest2
+******* stew
+******** unittest2
+******* chronos
+******** httputils
+********* unittest2
+********* stew
+********** unittest2
+******** unittest2
+******** stew
+********* unittest2
+******** bearssl
+********* unittest2
 ** eth
 *** metrics
 **** chronos
 ***** httputils
 ****** unittest2
 ****** stew
+******* unittest2
+***** unittest2
 ***** stew
+****** unittest2
 ***** bearssl
 ****** unittest2
 *** unittest2
 *** stew
+**** unittest2
 *** nimcrypto
 *** nat_traversal
 **** stew
+***** unittest2
 *** chronos
 **** httputils
 ***** unittest2
 ***** stew
+****** unittest2
+**** unittest2
 **** stew
+***** unittest2
 **** bearssl
 ***** unittest2
 *** stint
 **** stew
-*** rocksdb
-**** stew
-**** tempfile
+***** unittest2
 *** confutils
 **** stew
+***** unittest2
 *** testutils
+**** unittest2
 *** secp256k1
 **** stew
+***** unittest2
 **** nimcrypto
 *** sqlite3_abi
 *** chronicles
 **** testutils
+***** unittest2
 **** json_serialization
 ***** stew
+****** unittest2
 ***** serialization
 ****** unittest2
 ****** stew
+******* unittest2
 ****** faststreams
 ******* unittest2
 ******* stew
+******** unittest2
 ******* chronos
 ******** httputils
 ********* unittest2
 ********* stew
+********** unittest2
+******** unittest2
 ******** stew
+********* unittest2
 ******** bearssl
 ********* unittest2
-******* testutils
 ** json_rpc
 *** httputils
 **** unittest2
 **** stew
+***** unittest2
 *** stew
+**** unittest2
 *** nimcrypto
 *** chronos
 **** httputils
 ***** unittest2
 ***** stew
+****** unittest2
+**** unittest2
 **** stew
+***** unittest2
 **** bearssl
 ***** unittest2
 *** stint
 **** stew
+***** unittest2
 *** websock
 **** httputils
 ***** unittest2
 ***** stew
+****** unittest2
 **** stew
+***** unittest2
 **** nimcrypto
 **** bearssl
 ***** unittest2
-**** asynctest
 **** chronos
 ***** httputils
 ****** unittest2
 ****** stew
+******* unittest2
+***** unittest2
 ***** stew
+****** unittest2
 ***** bearssl
 ****** unittest2
 **** chronicles
 ***** testutils
+****** unittest2
 ***** json_serialization
 ****** stew
+******* unittest2
 ****** serialization
 ******* unittest2
 ******* stew
+******** unittest2
 ******* faststreams
 ******** unittest2
 ******** stew
+********* unittest2
 ******** chronos
 ********* httputils
 ********** unittest2
 ********** stew
+*********** unittest2
+********* unittest2
 ********* stew
+********** unittest2
 ********* bearssl
 ********** unittest2
-******** testutils
 **** zlib
 ***** stew
+****** unittest2
 *** json_serialization
 **** stew
+***** unittest2
 **** serialization
 ***** unittest2
 ***** stew
+****** unittest2
 ***** faststreams
 ****** unittest2
 ****** stew
+******* unittest2
 ****** chronos
 ******* httputils
 ******** unittest2
 ******** stew
+********* unittest2
+******* unittest2
 ******* stew
+******** unittest2
 ******* bearssl
 ******** unittest2
-****** testutils
 *** chronicles
 **** testutils
+***** unittest2
 **** json_serialization
 ***** stew
+****** unittest2
 ***** serialization
 ****** unittest2
 ****** stew
+******* unittest2
 ****** faststreams
 ******* unittest2
 ******* stew
+******** unittest2
 ******* chronos
 ******** httputils
 ********* unittest2
 ********* stew
+********** unittest2
+******** unittest2
 ******** stew
+********* unittest2
 ******** bearssl
 ********* unittest2
-******* testutils
+** blscurve
+*** stew
+**** unittest2
+*** nimcrypto
 ** chronicles
 *** testutils
+**** unittest2
 *** json_serialization
 **** stew
+***** unittest2
 **** serialization
 ***** unittest2
 ***** stew
+****** unittest2
 ***** faststreams
 ****** unittest2
 ****** stew
+******* unittest2
 ****** chronos
 ******* httputils
 ******** unittest2
 ******** stew
+********* unittest2
+******* unittest2
 ******* stew
+******** unittest2
 ******* bearssl
 ******** unittest2
-****** testutils
 
 * geohash
 
@@ -2027,7 +2574,6 @@
 * nimja
 
 * nimsl
-** variant
 
 * mcmurry
 ** regex
@@ -2084,22 +2630,28 @@
 ** with
 ** chronicles
 *** testutils
+**** unittest2
 *** json_serialization
 **** stew
+***** unittest2
 **** serialization
 ***** unittest2
 ***** stew
+****** unittest2
 ***** faststreams
 ****** unittest2
 ****** stew
+******* unittest2
 ****** chronos
 ******* httputils
 ******** unittest2
 ******** stew
+********* unittest2
+******* unittest2
 ******* stew
+******** unittest2
 ******* bearssl
 ******** unittest2
-****** testutils
 ** itertools
 
 * redissessions
@@ -2128,7 +2680,10 @@
 *** httputils
 **** unittest2
 **** stew
+***** unittest2
+*** unittest2
 *** stew
+**** unittest2
 *** bearssl
 **** unittest2
 ** zstd
@@ -2149,6 +2704,8 @@
 **** c2nim
 
 * usagov
+
+* nim
 
 * wiringpinim
 
@@ -2174,28 +2731,6 @@
 * owoifynim
 
 * edens
-** cligen
-
-* servclip
-** jester
-*** httpbeast
-**** asynctools
-** bluesoftcosmos
-*** scraper
-** nimclipboard
-*** nimgen
-**** regex
-***** unicodedb
-**** c2nim
-
-* parsepage
-** yaml
-** scraper
-** nimquery
-** karax
-*** dotenv
-*** ws
-** css_html_minify
 ** cligen
 
 * geocoding
@@ -2225,11 +2760,9 @@
 
 * iputils
 ** stew
+*** unittest2
 
 * nimics
-
-* pricecsv
-** cligen
 
 * entgrep
 ** cligen
@@ -2278,87 +2811,115 @@
 ** httputils
 *** unittest2
 *** stew
+**** unittest2
 ** stew
+*** unittest2
 ** nimcrypto
 ** chronos
 *** httputils
 **** unittest2
 **** stew
+***** unittest2
+*** unittest2
 *** stew
+**** unittest2
 *** bearssl
 **** unittest2
 ** stint
 *** stew
+**** unittest2
 ** websock
 *** httputils
 **** unittest2
 **** stew
+***** unittest2
 *** stew
+**** unittest2
 *** nimcrypto
 *** bearssl
 **** unittest2
-*** asynctest
 *** chronos
 **** httputils
 ***** unittest2
 ***** stew
+****** unittest2
+**** unittest2
 **** stew
+***** unittest2
 **** bearssl
 ***** unittest2
 *** chronicles
 **** testutils
+***** unittest2
 **** json_serialization
 ***** stew
+****** unittest2
 ***** serialization
 ****** unittest2
 ****** stew
+******* unittest2
 ****** faststreams
 ******* unittest2
 ******* stew
+******** unittest2
 ******* chronos
 ******** httputils
 ********* unittest2
 ********* stew
+********** unittest2
+******** unittest2
 ******** stew
+********* unittest2
 ******** bearssl
 ********* unittest2
-******* testutils
 *** zlib
 **** stew
+***** unittest2
 ** json_serialization
 *** stew
+**** unittest2
 *** serialization
 **** unittest2
 **** stew
+***** unittest2
 **** faststreams
 ***** unittest2
 ***** stew
+****** unittest2
 ***** chronos
 ****** httputils
 ******* unittest2
 ******* stew
+******** unittest2
+****** unittest2
 ****** stew
+******* unittest2
 ****** bearssl
 ******* unittest2
-***** testutils
 ** chronicles
 *** testutils
+**** unittest2
 *** json_serialization
 **** stew
+***** unittest2
 **** serialization
 ***** unittest2
 ***** stew
+****** unittest2
 ***** faststreams
 ****** unittest2
 ****** stew
+******* unittest2
 ****** chronos
 ******* httputils
 ******** unittest2
 ******** stew
+********* unittest2
+******* unittest2
 ******* stew
+******** unittest2
 ******* bearssl
 ******** unittest2
-****** testutils
 
 * bamboo_websocket
 
@@ -2370,6 +2931,7 @@
 
 * blscurve
 ** stew
+*** unittest2
 ** nimcrypto
 
 * allographer
@@ -2459,9 +3021,6 @@
 
 * nmiline
 
-* whois
-** kashae
-
 * nimgame
 
 * dbus
@@ -2511,20 +3070,7 @@
 **** bumpy
 ***** vmath
 **** chroma
-*** flatty
-*** vmath
-*** bumpy
-**** vmath
-*** chroma
 ** print
-** pixie
-*** zippy
-*** flatty
-*** nimsimd
-*** vmath
-*** bumpy
-**** vmath
-*** chroma
 ** staticglfw
 *** opengl
 **** x11
@@ -2590,9 +3136,6 @@
 ** cligen
 
 * bencode
-
-* isa
-** collections
 
 * libovr
 
@@ -2665,7 +3208,10 @@
 ** httputils
 *** unittest2
 *** stew
+**** unittest2
+** unittest2
 ** stew
+*** unittest2
 ** bearssl
 *** unittest2
 
@@ -2690,6 +3236,7 @@
 
 * confutils
 ** stew
+*** unittest2
 
 * hyperscript
 
@@ -2709,11 +3256,12 @@
 ** awssts
 *** sigv4
 
-* cutelog
-
 * secp256k1
 ** stew
+*** unittest2
 ** nimcrypto
+
+* cutelog
 
 * jack
 
@@ -2735,7 +3283,6 @@
 
 * bionim
 ** bio_seq
-*** zip
 ** phylogeni
 
 * mt
@@ -2817,10 +3364,15 @@
 **** httputils
 ***** unittest2
 ***** stew
+****** unittest2
+**** unittest2
 **** stew
+***** unittest2
 **** bearssl
 ***** unittest2
+** unittest2
 ** stew
+*** unittest2
 ** nimcrypto
 ** bearssl
 *** unittest2
@@ -2828,67 +3380,88 @@
 *** httputils
 **** unittest2
 **** stew
+***** unittest2
+*** unittest2
 *** stew
+**** unittest2
 *** bearssl
 **** unittest2
 ** websock
 *** httputils
 **** unittest2
 **** stew
+***** unittest2
 *** stew
+**** unittest2
 *** nimcrypto
 *** bearssl
 **** unittest2
-*** asynctest
 *** chronos
 **** httputils
 ***** unittest2
 ***** stew
+****** unittest2
+**** unittest2
 **** stew
+***** unittest2
 **** bearssl
 ***** unittest2
 *** chronicles
 **** testutils
+***** unittest2
 **** json_serialization
 ***** stew
+****** unittest2
 ***** serialization
 ****** unittest2
 ****** stew
+******* unittest2
 ****** faststreams
 ******* unittest2
 ******* stew
+******** unittest2
 ******* chronos
 ******** httputils
 ********* unittest2
 ********* stew
+********** unittest2
+******** unittest2
 ******** stew
+********* unittest2
 ******** bearssl
 ********* unittest2
-******* testutils
 *** zlib
 **** stew
+***** unittest2
 ** dnsclient
 ** secp256k1
 *** stew
+**** unittest2
 *** nimcrypto
 ** chronicles
 *** testutils
+**** unittest2
 *** json_serialization
 **** stew
+***** unittest2
 **** serialization
 ***** unittest2
 ***** stew
+****** unittest2
 ***** faststreams
 ****** unittest2
 ****** stew
+******* unittest2
 ****** chronos
 ******* httputils
 ******** unittest2
 ******** stew
+********* unittest2
+******* unittest2
 ******* stew
+******** unittest2
 ******* bearssl
 ******** unittest2
-****** testutils
 
 * plists
 ** darwin
@@ -2912,6 +3485,7 @@
 ** result
 
 * siwin
+** vmath
 ** x11
 ** chroma
 
@@ -2971,17 +3545,21 @@
 *** snappy
 **** unittest2
 **** stew
+***** unittest2
 **** faststreams
 ***** unittest2
 ***** stew
+****** unittest2
 ***** chronos
 ****** httputils
 ******* unittest2
 ******* stew
+******** unittest2
+****** unittest2
 ****** stew
+******* unittest2
 ****** bearssl
 ******* unittest2
-***** testutils
 
 * geometryutils
 ** sdl2
@@ -3030,31 +3608,32 @@
 *** cligen
 ** q
 
-* tokarax
-** cligen
+* tome
+** untar
+** zip
 
 * fab
 
 * snappy
 ** unittest2
 ** stew
+*** unittest2
 ** faststreams
 *** unittest2
 *** stew
+**** unittest2
 *** chronos
 **** httputils
 ***** unittest2
 ***** stew
+****** unittest2
+**** unittest2
 **** stew
+***** unittest2
 **** bearssl
 ***** unittest2
-*** testutils
 
 * nesm
-
-* tome
-** untar
-** zip
 
 * vidhdr
 
@@ -3145,10 +3724,16 @@
 
 * peni
 ** termstyle
+** regex
+*** unicodedb
+** authenticode
 ** nancy
 *** ansiparse
 ** cligen
 ** libpe
+*** hashlib
+**** nimcrypto
+*** libfuzzy
 
 * safeset
 ** nimtest
@@ -3206,6 +3791,7 @@
 *** cligen
 
 * testutils
+** unittest2
 
 * zfcore
 ** stdext
@@ -3255,6 +3841,7 @@
 * httputils
 ** unittest2
 ** stew
+*** unittest2
 
 * lastfm
 
@@ -3284,8 +3871,11 @@
 * riimut
 
 * tim
-** watchout
+** jsony
+** toktok
 ** bson
+** pkginfo
+*** semver
 
 * geometrymath
 
@@ -3320,41 +3910,53 @@
 * ssz_serialization
 ** unittest2
 ** stew
+*** unittest2
 ** nimcrypto
 ** stint
 *** stew
+**** unittest2
 ** serialization
 *** unittest2
 *** stew
+**** unittest2
 *** faststreams
 **** unittest2
 **** stew
+***** unittest2
 **** chronos
 ***** httputils
 ****** unittest2
 ****** stew
+******* unittest2
+***** unittest2
 ***** stew
+****** unittest2
 ***** bearssl
 ****** unittest2
-**** testutils
 ** json_serialization
 *** stew
+**** unittest2
 *** serialization
 **** unittest2
 **** stew
+***** unittest2
 **** faststreams
 ***** unittest2
 ***** stew
+****** unittest2
 ***** chronos
 ****** httputils
 ******* unittest2
 ******* stew
+******** unittest2
+****** unittest2
 ****** stew
+******* unittest2
 ****** bearssl
 ******* unittest2
-***** testutils
 ** blscurve
 *** stew
+**** unittest2
 *** nimcrypto
 
 * loopfusion
@@ -3364,8 +3966,6 @@
 * blake2
 
 * packets
-** packedjson
-** crc32
 
 * eastasianwidth
 
@@ -3465,14 +4065,12 @@
 ** itertools
 ** rx_nim
 
-* origin
+* smnar
+** zip
 
 * objc_runtime
 ** regex
 *** unicodedb
-
-* smnar
-** zip
 
 * steam
 
@@ -3544,11 +4142,6 @@
 **** bumpy
 ***** vmath
 **** chroma
-*** flatty
-*** vmath
-*** bumpy
-**** vmath
-*** chroma
 ** flippy
 *** nimpng
 *** vmath
@@ -3579,7 +4172,7 @@
 ** cligen
 
 * xlsx
-** zip
+** zippy
 
 * frag
 ** sdl2
@@ -3590,14 +4183,12 @@
 *** jsbind
 *** jnim
 
-* useragent
+* protocoled
 
 * onedrive
 ** packedjson
 
 * nre
-
-* protocoled
 
 * sqlbuilder
 
@@ -3616,11 +4207,15 @@
 ** jsony
 ** zippy
 ** stew
+*** unittest2
 ** chronos
 *** httputils
 **** unittest2
 **** stew
+***** unittest2
+*** unittest2
 *** stew
+**** unittest2
 *** bearssl
 **** unittest2
 ** npeg
@@ -3633,18 +4228,7 @@
 ** jnim
 
 * latexdsl
-** datamancer
-*** arraymancer
-**** nimlapack
-**** nimblas
-**** untar
-**** stb_image
-**** nimcuda
-**** nimcl
-***** opencl
-**** clblast
-***** opencl
-**** zip
+** shell
 
 * parsetoml
 
@@ -3713,8 +4297,6 @@
 *** clblast
 **** opencl
 *** zip
-** weave
-*** synthesis
 
 * getmac
 ** optionsutils
@@ -3751,7 +4333,6 @@
 ** argparse
 ** terminaltables
 ** therapist
-** sdl2
 ** progress
 
 * icon
@@ -3790,6 +4371,7 @@
 * leopard
 ** unittest2
 ** stew
+*** unittest2
 ** upraises
 
 * currying
@@ -3907,14 +4489,17 @@
 * faststreams
 ** unittest2
 ** stew
+*** unittest2
 ** chronos
 *** httputils
 **** unittest2
 **** stew
+***** unittest2
+*** unittest2
 *** stew
+**** unittest2
 *** bearssl
 **** unittest2
-** testutils
 
 * sumtypes
 
@@ -3994,22 +4579,28 @@
 ** argon2
 ** chronicles
 *** testutils
+**** unittest2
 *** json_serialization
 **** stew
+***** unittest2
 **** serialization
 ***** unittest2
 ***** stew
+****** unittest2
 ***** faststreams
 ****** unittest2
 ****** stew
+******* unittest2
 ****** chronos
 ******* httputils
 ******** unittest2
 ******** stew
+********* unittest2
+******* unittest2
 ******* stew
+******** unittest2
 ******* bearssl
 ******** unittest2
-****** testutils
 
 * ncurses
 
@@ -4023,47 +4614,56 @@
 
 * frida
 
-* dpdk
-
-* ducominer
-** nimcrypto
-
 * websock
 ** httputils
 *** unittest2
 *** stew
+**** unittest2
 ** stew
+*** unittest2
 ** nimcrypto
 ** bearssl
 *** unittest2
-** asynctest
 ** chronos
 *** httputils
 **** unittest2
 **** stew
+***** unittest2
+*** unittest2
 *** stew
+**** unittest2
 *** bearssl
 **** unittest2
 ** chronicles
 *** testutils
+**** unittest2
 *** json_serialization
 **** stew
+***** unittest2
 **** serialization
 ***** unittest2
 ***** stew
+****** unittest2
 ***** faststreams
 ****** unittest2
 ****** stew
+******* unittest2
 ****** chronos
 ******* httputils
 ******** unittest2
 ******** stew
+********* unittest2
+******* unittest2
 ******* stew
+******** unittest2
 ******* bearssl
 ******** unittest2
-****** testutils
 ** zlib
 *** stew
+**** unittest2
+
+* ducominer
+** nimcrypto
 
 * nimx
 ** nake
@@ -4078,7 +4678,6 @@
 *** x11
 ** kiwi
 ** nimsl
-*** variant
 ** nimwebp
 *** nimpng
 ** closure_compiler
@@ -4091,6 +4690,8 @@
 ** cligen
 
 * mcresponse
+
+* goto
 
 * battery_widget
 
@@ -4112,7 +4713,6 @@
 * golden
 ** terminaltables
 ** bump
-*** cligen
 ** nimterop
 *** regex
 **** unicodedb
@@ -4219,10 +4819,9 @@
 * colorcol
 
 * zfplugs
+** mustache
 ** zfdbms
 *** stdext
-** moustachu
-*** commandeer
 ** zfcore
 *** stdext
 *** zfblast
@@ -4234,6 +4833,7 @@
 * pnm
 
 * stew
+** unittest2
 
 * grok
 
@@ -4280,6 +4880,7 @@
 
 * nat_traversal
 ** stew
+*** unittest2
 
 * nobject
 
@@ -4312,7 +4913,6 @@
 *** bumpy
 **** vmath
 *** chroma
-** zippy
 ** opengl
 *** x11
 ** ws
@@ -4335,20 +4935,25 @@
 
 * toml_serialization
 ** stew
+*** unittest2
 ** serialization
 *** unittest2
 *** stew
+**** unittest2
 *** faststreams
 **** unittest2
 **** stew
+***** unittest2
 **** chronos
 ***** httputils
 ****** unittest2
 ****** stew
+******* unittest2
+***** unittest2
 ***** stew
+****** unittest2
 ***** bearssl
 ****** unittest2
-**** testutils
 
 * metar
 ** nimpy
@@ -4368,6 +4973,7 @@
 
 * nimldap
 ** stew
+*** unittest2
 
 * nimodpi
 ** nimterop
@@ -4444,8 +5050,6 @@
 
 * polymorph
 
-* arbitrary
-
 * base32
 
 * open_elevation
@@ -4498,8 +5102,6 @@
 ** gtk2
 *** cairo
 
-* formulas
-
 * kiwi
 
 * wave
@@ -4508,14 +5110,9 @@
 ** ui
 ** xml
 
-* forestdb
-
 * nimmm
 ** lscolors
-** noise
 ** nimbox
-
-* artemis
 
 * hlibgit2
 
@@ -4556,7 +5153,16 @@
 *** bumpy
 **** vmath
 *** chroma
-** vmath
+** shady
+*** pixie
+**** zippy
+**** flatty
+**** nimsimd
+**** vmath
+**** bumpy
+***** vmath
+**** chroma
+*** vmath
 ** opengl
 *** x11
 ** bitty
@@ -4599,7 +5205,6 @@
 * limiter
 
 * bio_seq
-** zip
 
 * shiori
 
@@ -4634,7 +5239,8 @@
 **** unicodedb
 
 * bioseq
-** zip
+** fusion
+** bitty
 
 * bson
 
@@ -4663,6 +5269,8 @@
 *** vmath
 ** patty
 ** macroutils
+** cdecl
+*** macroutils
 
 * vmath
 
@@ -4723,51 +5331,66 @@
 **** httputils
 ***** unittest2
 ***** stew
+****** unittest2
+**** unittest2
 **** stew
+***** unittest2
 **** bearssl
 ***** unittest2
 ** unittest2
 ** stew
+*** unittest2
 ** nimcrypto
 ** nat_traversal
 *** stew
+**** unittest2
 ** chronos
 *** httputils
 **** unittest2
 **** stew
+***** unittest2
+*** unittest2
 *** stew
+**** unittest2
 *** bearssl
 **** unittest2
 ** stint
 *** stew
-** rocksdb
-*** stew
-*** tempfile
+**** unittest2
 ** confutils
 *** stew
+**** unittest2
 ** testutils
+*** unittest2
 ** secp256k1
 *** stew
+**** unittest2
 *** nimcrypto
 ** sqlite3_abi
 ** chronicles
 *** testutils
+**** unittest2
 *** json_serialization
 **** stew
+***** unittest2
 **** serialization
 ***** unittest2
 ***** stew
+****** unittest2
 ***** faststreams
 ****** unittest2
 ****** stew
+******* unittest2
 ****** chronos
 ******* httputils
 ******** unittest2
 ******** stew
+********* unittest2
+******* unittest2
 ******* stew
+******** unittest2
 ******* bearssl
 ******** unittest2
-****** testutils
 
 * spacy
 ** vmath
@@ -4777,7 +5400,6 @@
 * astdot
 ** nimgraphviz
 ** clapfn
-** strings
 
 * torm
 
@@ -4805,10 +5427,6 @@
 * mddoc
 
 * github-pmunch-libclang
-
-* nbcnews
-** scraper
-** cligen
 
 * steganography
 ** pixie
@@ -4850,20 +5468,7 @@
 ***** bumpy
 ****** vmath
 ***** chroma
-**** flatty
-**** vmath
-**** bumpy
-***** vmath
-**** chroma
 *** print
-*** pixie
-**** zippy
-**** flatty
-**** nimsimd
-**** vmath
-**** bumpy
-***** vmath
-**** chroma
 *** staticglfw
 **** opengl
 ***** x11
@@ -4888,10 +5493,15 @@
 **** httputils
 ***** unittest2
 ***** stew
+****** unittest2
+**** unittest2
 **** stew
+***** unittest2
 **** bearssl
 ***** unittest2
+** questionable
 ** stew
+*** unittest2
 ** nimcrypto
 ** bearssl
 *** unittest2
@@ -4902,10 +5512,15 @@
 ***** httputils
 ****** unittest2
 ****** stew
+******* unittest2
+***** unittest2
 ***** stew
+****** unittest2
 ***** bearssl
 ****** unittest2
+*** unittest2
 *** stew
+**** unittest2
 *** nimcrypto
 *** bearssl
 **** unittest2
@@ -4913,76 +5528,101 @@
 **** httputils
 ***** unittest2
 ***** stew
+****** unittest2
+**** unittest2
 **** stew
+***** unittest2
 **** bearssl
 ***** unittest2
 *** websock
 **** httputils
 ***** unittest2
 ***** stew
+****** unittest2
 **** stew
+***** unittest2
 **** nimcrypto
 **** bearssl
 ***** unittest2
-**** asynctest
 **** chronos
 ***** httputils
 ****** unittest2
 ****** stew
+******* unittest2
+***** unittest2
 ***** stew
+****** unittest2
 ***** bearssl
 ****** unittest2
 **** chronicles
 ***** testutils
+****** unittest2
 ***** json_serialization
 ****** stew
+******* unittest2
 ****** serialization
 ******* unittest2
 ******* stew
+******** unittest2
 ******* faststreams
 ******** unittest2
 ******** stew
+********* unittest2
 ******** chronos
 ********* httputils
 ********** unittest2
 ********** stew
+*********** unittest2
+********* unittest2
 ********* stew
+********** unittest2
 ********* bearssl
 ********** unittest2
-******** testutils
 **** zlib
 ***** stew
+****** unittest2
 *** dnsclient
 *** secp256k1
 **** stew
+***** unittest2
 **** nimcrypto
 *** chronicles
 **** testutils
+***** unittest2
 **** json_serialization
 ***** stew
+****** unittest2
 ***** serialization
 ****** unittest2
 ****** stew
+******* unittest2
 ****** faststreams
 ******* unittest2
 ******* stew
+******** unittest2
 ******* chronos
 ******** httputils
 ********* unittest2
 ********* stew
+********** unittest2
+******** unittest2
 ******** stew
+********* unittest2
 ******** bearssl
 ********* unittest2
-******* testutils
 ** chronos
 *** httputils
 **** unittest2
 **** stew
+***** unittest2
+*** unittest2
 *** stew
+**** unittest2
 *** bearssl
 **** unittest2
 ** stint
 *** stew
+**** unittest2
 ** protobufserialization
 ** eth
 *** metrics
@@ -4990,72 +5630,94 @@
 ***** httputils
 ****** unittest2
 ****** stew
+******* unittest2
+***** unittest2
 ***** stew
+****** unittest2
 ***** bearssl
 ****** unittest2
 *** unittest2
 *** stew
+**** unittest2
 *** nimcrypto
 *** nat_traversal
 **** stew
+***** unittest2
 *** chronos
 **** httputils
 ***** unittest2
 ***** stew
+****** unittest2
+**** unittest2
 **** stew
+***** unittest2
 **** bearssl
 ***** unittest2
 *** stint
 **** stew
-*** rocksdb
-**** stew
-**** tempfile
+***** unittest2
 *** confutils
 **** stew
+***** unittest2
 *** testutils
+**** unittest2
 *** secp256k1
 **** stew
+***** unittest2
 **** nimcrypto
 *** sqlite3_abi
 *** chronicles
 **** testutils
+***** unittest2
 **** json_serialization
 ***** stew
+****** unittest2
 ***** serialization
 ****** unittest2
 ****** stew
+******* unittest2
 ****** faststreams
 ******* unittest2
 ******* stew
+******** unittest2
 ******* chronos
 ******** httputils
 ********* unittest2
 ********* stew
+********** unittest2
+******** unittest2
 ******** stew
+********* unittest2
 ******** bearssl
 ********* unittest2
-******* testutils
 ** secp256k1
 *** stew
+**** unittest2
 *** nimcrypto
 ** chronicles
 *** testutils
+**** unittest2
 *** json_serialization
 **** stew
+***** unittest2
 **** serialization
 ***** unittest2
 ***** stew
+****** unittest2
 ***** faststreams
 ****** unittest2
 ****** stew
+******* unittest2
 ****** chronos
 ******* httputils
 ******** unittest2
 ******** stew
+********* unittest2
+******* unittest2
 ******* stew
+******** unittest2
 ******* bearssl
 ******** unittest2
-****** testutils
 
 * sfml
 
@@ -5113,6 +5775,7 @@
 
 * nesper
 ** stew
+*** unittest2
 ** msgpack4nim
 
 * kdialog
@@ -5178,31 +5841,39 @@
 
 * protobuf_serialization
 ** stew
+*** unittest2
 ** faststreams
 *** unittest2
 *** stew
+**** unittest2
 *** chronos
 **** httputils
 ***** unittest2
 ***** stew
+****** unittest2
+**** unittest2
 **** stew
+***** unittest2
 **** bearssl
 ***** unittest2
-*** testutils
 ** serialization
 *** unittest2
 *** stew
+**** unittest2
 *** faststreams
 **** unittest2
 **** stew
+***** unittest2
 **** chronos
 ***** httputils
 ****** unittest2
 ****** stew
+******* unittest2
+***** unittest2
 ***** stew
+****** unittest2
 ***** bearssl
 ****** unittest2
-**** testutils
 ** combparser
 
 * periapsisengine
@@ -5211,18 +5882,8 @@
 *** x11
 
 * deser_json
+** jsony
 ** deser
-** faststreams
-*** unittest2
-*** stew
-*** chronos
-**** httputils
-***** unittest2
-***** stew
-**** stew
-**** bearssl
-***** unittest2
-*** testutils
 
 * libssh
 
@@ -5298,6 +5959,14 @@
 
 * ginger
 ** shell
+** pixie
+*** zippy
+*** flatty
+*** nimsimd
+*** vmath
+*** bumpy
+**** vmath
+*** chroma
 ** cairo
 ** chroma
 
@@ -5361,17 +6030,11 @@
 ** regex
 *** unicodedb
 
-* blackvas_cli
-** jester
-*** httpbeast
-**** asynctools
-** cligen
-
 * darwin
 
-* libbacktrace
-
 * spdx_licenses
+
+* libbacktrace
 
 * webgui
 
@@ -5379,31 +6042,41 @@
 
 * presto
 ** stew
+*** unittest2
 ** chronos
 *** httputils
 **** unittest2
 **** stew
+***** unittest2
+*** unittest2
 *** stew
+**** unittest2
 *** bearssl
 **** unittest2
 ** chronicles
 *** testutils
+**** unittest2
 *** json_serialization
 **** stew
+***** unittest2
 **** serialization
 ***** unittest2
 ***** stew
+****** unittest2
 ***** faststreams
 ****** unittest2
 ****** stew
+******* unittest2
 ****** chronos
 ******* httputils
 ******** unittest2
 ******** stew
+********* unittest2
+******* unittest2
 ******* stew
+******** unittest2
 ******* bearssl
 ******** unittest2
-****** testutils
 
 * daemonim
 
@@ -5452,6 +6125,8 @@
 ** dimscord
 *** regex
 **** unicodedb
+*** opussum
+*** jsony
 *** zippy
 *** flatty
 *** libsodium
@@ -5512,11 +6187,13 @@
 *** nimcrypto
 *** rocksdb
 **** stew
+***** unittest2
 **** tempfile
 ** ranges
 ** nimcrypto
 ** stint
 *** stew
+**** unittest2
 
 * prettyvec
 
@@ -5529,7 +6206,17 @@
 * nimpy
 
 * eris
+** cbor
+*** bigints
 ** base32
+** tkrzw
+** coap
+** syndicate
+*** nimsha2
+*** preserves
+**** compiler
+**** bigints
+**** npeg
 
 * asciitype
 
@@ -5555,6 +6242,7 @@
 *** nimcrypto
 *** secp256k1
 **** stew
+***** unittest2
 **** nimcrypto
 ** nimcrypto
 
@@ -5575,11 +6263,8 @@
 
 * illwave
 
-* macrosex
-
 * lq
 ** nap
-** parsetoml
 
 * z3
 
@@ -5594,20 +6279,25 @@
 ** mustache
 ** toml_serialization
 *** stew
+**** unittest2
 *** serialization
 **** unittest2
 **** stew
+***** unittest2
 **** faststreams
 ***** unittest2
 ***** stew
+****** unittest2
 ***** chronos
 ****** httputils
 ******* unittest2
 ******* stew
+******** unittest2
+****** unittest2
 ****** stew
+******* unittest2
 ****** bearssl
 ******* unittest2
-***** testutils
 ** tempfile
 
 * sophia
@@ -5807,8 +6497,6 @@
 * pokereval
 
 * nimem
-** regex
-*** unicodedb
 ** winim
 
 * qr
@@ -5818,12 +6506,6 @@
 * netpbm
 
 * physfs
-
-* ytcc
-** util
-** ytextractor
-*** ajax
-** cligen
 
 * basic3d
 
@@ -5846,7 +6528,6 @@
 *** cligen
 
 * fsnotify
-** timerwheel
 ** xio
 
 * tor
@@ -5979,21 +6660,11 @@
 *** chroma
 ** therapist
 ** zippy
-** docopt
-*** regex
-**** unicodedb
 ** progress
 ** harpoon
 ** chroma
 
 * hldiff
-** cligen
-
-* kiwifydownload
-** util
-** vimeo
-*** util
-*** cligen
 ** cligen
 
 * libfuzzy
@@ -6004,8 +6675,6 @@
 
 * unrolled
 
-* psy
-
 * qrgen
 
 * about
@@ -6015,6 +6684,7 @@
 
 * zlib
 ** stew
+*** unittest2
 
 * fuse
 
@@ -6059,21 +6729,47 @@
 *** mustache
 *** toml_serialization
 **** stew
+***** unittest2
 **** serialization
 ***** unittest2
 ***** stew
+****** unittest2
 ***** faststreams
 ****** unittest2
 ****** stew
+******* unittest2
 ****** chronos
 ******* httputils
 ******** unittest2
 ******** stew
+********* unittest2
+******* unittest2
 ******* stew
+******** unittest2
 ******* bearssl
 ******** unittest2
-****** testutils
 *** tempfile
+** toml_serialization
+*** stew
+**** unittest2
+*** serialization
+**** unittest2
+**** stew
+***** unittest2
+**** faststreams
+***** unittest2
+***** stew
+****** unittest2
+***** chronos
+****** httputils
+******* unittest2
+******* stew
+******** unittest2
+****** unittest2
+****** stew
+******* unittest2
+****** bearssl
+******* unittest2
 
 * packedjson
 
@@ -6101,17 +6797,13 @@
 * keccak_tiny
 ** ranges
 
-* studiobacklottv
-** util
-** cligen
+* uuid4
 
 * authenticode
 
 * influx
 
 * nimgui
-
-* uuid4
 
 * rest
 ** foreach
@@ -6121,8 +6813,6 @@
 *** random
 *** winim
 ** nimaes
-
-* htmlanticopy
 
 * paramidib
 ** paramidi
@@ -6190,11 +6880,13 @@
 **** nimcrypto
 **** rocksdb
 ***** stew
+****** unittest2
 ***** tempfile
 *** ranges
 *** nimcrypto
 *** stint
 **** stew
+***** unittest2
 ** byteutils
 ** rlp
 *** ranges
@@ -6202,78 +6894,100 @@
 *** nimcrypto
 *** secp256k1
 **** stew
+***** unittest2
 **** nimcrypto
 ** ranges
 ** nimcrypto
 ** package_visible_types
 ** stint
 *** stew
+**** unittest2
 ** serialization
 *** unittest2
 *** stew
+**** unittest2
 *** faststreams
 **** unittest2
 **** stew
+***** unittest2
 **** chronos
 ***** httputils
 ****** unittest2
 ****** stew
+******* unittest2
+***** unittest2
 ***** stew
+****** unittest2
 ***** bearssl
 ****** unittest2
-**** testutils
 ** secp256k1
 *** stew
+**** unittest2
 *** nimcrypto
 ** json_serialization
 *** stew
+**** unittest2
 *** serialization
 **** unittest2
 **** stew
+***** unittest2
 **** faststreams
 ***** unittest2
 ***** stew
+****** unittest2
 ***** chronos
 ****** httputils
 ******* unittest2
 ******* stew
+******** unittest2
+****** unittest2
 ****** stew
+******* unittest2
 ****** bearssl
 ******* unittest2
-***** testutils
 ** asyncdispatch2
 ** chronicles
 *** testutils
+**** unittest2
 *** json_serialization
 **** stew
+***** unittest2
 **** serialization
 ***** unittest2
 ***** stew
+****** unittest2
 ***** faststreams
 ****** unittest2
 ****** stew
+******* unittest2
 ****** chronos
 ******* httputils
 ******** unittest2
 ******** stew
+********* unittest2
+******* unittest2
 ******* stew
+******** unittest2
 ******* bearssl
 ******** unittest2
-****** testutils
 ** snappy
 *** unittest2
 *** stew
+**** unittest2
 *** faststreams
 **** unittest2
 **** stew
+***** unittest2
 **** chronos
 ***** httputils
 ****** unittest2
 ****** stew
+******* unittest2
+***** unittest2
 ***** stew
+****** unittest2
 ***** bearssl
 ****** unittest2
-**** testutils
 
 * sas
 ** regex
@@ -6293,9 +7007,8 @@
 
 * digitalocean
 
-* base64_decoder
-
 * nimlsp
+** asynctools
 ** jsonschema
 *** ast_pattern_matching
 
@@ -6335,7 +7048,6 @@
 * chroma
 
 * naylib
-** eminim
 
 * nimbox
 
@@ -6358,11 +7070,6 @@
 *** bumpy
 **** vmath
 *** chroma
-** flatty
-** vmath
-** bumpy
-*** vmath
-** chroma
 
 * wauto
 ** winim
@@ -6400,23 +7107,28 @@
 
 * imstyle
 ** niprefs
-*** npeg
 *** toml_serialization
 **** stew
+***** unittest2
 **** serialization
 ***** unittest2
 ***** stew
+****** unittest2
 ***** faststreams
 ****** unittest2
 ****** stew
+******* unittest2
 ****** chronos
 ******* httputils
 ******** unittest2
 ******** stew
+********* unittest2
+******* unittest2
 ******* stew
+******** unittest2
 ******* bearssl
 ******** unittest2
-****** testutils
+** nimgl
 ** chroma
 
 * libnx
@@ -6597,6 +7309,8 @@
 ** react
 ** synthesis
 ** macroutils
+** alea
+*** random
 ** norm
 *** ndb
 ** binaryheap
@@ -6607,7 +7321,6 @@
 **** unicodedb
 *** graphemes
 ** nimsl
-*** variant
 ** nimes
 *** sdl2
 ** fidget
@@ -6621,20 +7334,7 @@
 ***** bumpy
 ****** vmath
 ***** chroma
-**** flatty
-**** vmath
-**** bumpy
-***** vmath
-**** chroma
 *** print
-*** pixie
-**** zippy
-**** flatty
-**** nimsimd
-**** vmath
-**** bumpy
-***** vmath
-**** chroma
 *** staticglfw
 **** opengl
 ***** x11
@@ -6660,7 +7360,6 @@
 *** nimblas
 *** nimcuda
 ** bump
-*** cligen
 ** asyncthreadpool
 ** strslice
 ** timeit
@@ -6673,22 +7372,28 @@
 ** tiny_sqlite
 ** chronicles
 *** testutils
+**** unittest2
 *** json_serialization
 **** stew
+***** unittest2
 **** serialization
 ***** unittest2
 ***** stew
+****** unittest2
 ***** faststreams
 ****** unittest2
 ****** stew
+******* unittest2
 ****** chronos
 ******* httputils
 ******** unittest2
 ******** stew
+********* unittest2
+******* unittest2
 ******* stew
+******** unittest2
 ******* bearssl
 ******** unittest2
-****** testutils
 ** dashing
 ** itertools
 ** cligen
@@ -6709,13 +7414,14 @@
 **** base32
 *** firejail
 ** sim
+** measuremancer
+** nesm
+** httpauth
+*** libsodium
 ** nimgame2
 *** sdl2_nim
 **** winim
 **** x11
-** nesm
-** httpauth
-*** libsodium
 ** cello
 *** spills
 ** regex
@@ -6737,6 +7443,14 @@
 *** shell
 *** ginger
 **** shell
+**** pixie
+***** zippy
+***** flatty
+***** nimsimd
+***** vmath
+***** bumpy
+****** vmath
+***** chroma
 **** cairo
 **** chroma
 *** webview
@@ -6770,6 +7484,7 @@
 ** netty
 *** flatty
 ** winim
+** nimpng
 ** telebot
 *** sam
 **** jsmn
@@ -6813,7 +7528,10 @@
 *** httputils
 **** unittest2
 **** stew
+***** unittest2
+*** unittest2
 *** stew
+**** unittest2
 *** bearssl
 **** unittest2
 ** patty
@@ -6821,6 +7539,7 @@
 *** combparser
 ** stint
 *** stew
+**** unittest2
 ** c2nim
 ** nimly
 *** patty
@@ -6853,6 +7572,10 @@
 **** patty
 ** optionsutils
 ** nicy
+** nimlsp
+*** asynctools
+*** jsonschema
+**** ast_pattern_matching
 ** supersnappy
 ** msgpack4nim
 ** templates
@@ -6860,6 +7583,7 @@
 ** compactdict
 ** ormin
 *** websocket
+** ast_pattern_matching
 ** bipbuffer
 ** chroma
 
@@ -6888,14 +7612,7 @@
 **** bumpy
 ***** vmath
 **** chroma
-*** flatty
-*** vmath
-*** bumpy
-**** vmath
-*** chroma
 ** sdl2
-
-* spdk
 
 * uspokoysa
 ** nigui
@@ -6910,10 +7627,9 @@
 * osrm
 
 * libvlc
-** nimterop
-*** regex
-**** unicodedb
-*** cligen
+** futhark
+*** termstyle
+*** macroutils
 
 * nodejs
 
@@ -6922,26 +7638,16 @@
 * pymod
 
 * madam
-** nyml
-*** toktok
-** tim
-*** watchout
-*** bson
-** klymene
-*** regex
-**** unicodedb
-*** illwill
-*** unicodedb
 
 * assigns
-
-* github-enthus1ast-nimisprivateip
 
 * stopwatch
 
 * dimscord
 ** regex
 *** unicodedb
+** opussum
+** jsony
 ** zippy
 ** flatty
 ** libsodium
@@ -6952,11 +7658,13 @@
 ** stbimage
 
 * nimgram
-** zippy
-** gmp
 ** nimcrypto
 ** stint
 *** stew
+**** unittest2
+** crc32
+** norm
+*** ndb
 
 * nimbluez
 
@@ -7058,10 +7766,12 @@
 * contractabi
 ** questionable
 ** stew
+*** unittest2
 ** nimcrypto
 ** upraises
 ** stint
 *** stew
+**** unittest2
 
 * getr
 
@@ -7095,6 +7805,7 @@
 ** bigints
 ** stint
 *** stew
+**** unittest2
 
 * imghdr
 
@@ -7146,6 +7857,9 @@
 ** fab
 
 * libpe
+** hashlib
+*** nimcrypto
+** libfuzzy
 
 * nimgraphviz
 
@@ -7166,7 +7880,7 @@
 ** websocket
 ** multicast
 
-* numtoword
+* snip
 
 * microasynchttpserver
 ** picohttpparser
@@ -7183,8 +7897,6 @@
 * jester
 ** httpbeast
 *** asynctools
-
-* snip
 
 * gemini
 ** nimcrypto
@@ -7228,9 +7940,8 @@
 ** nimcrypto
 ** secp256k1
 *** stew
+**** unittest2
 *** nimcrypto
-
-* nio
 
 * getdns
 
@@ -7296,8 +8007,10 @@
 
 * ndns
 ** stew
+*** unittest2
 ** dnsprotocol
 *** stew
+**** unittest2
 
 * variantkey
 
@@ -7352,6 +8065,7 @@
 * xplm
 
 * seq2d
+** nimtest
 
 * litestore
 ** jwt
@@ -7419,8 +8133,6 @@
 
 * nish
 
-* gm_api
-
 * nimfm
 ** nimlapack
 ** cligen
@@ -7468,10 +8180,8 @@
 *** zippy
 *** libcurl
 
-* eris_utils
-** eris
-*** base32
-** tkrzw
+* runeterra_decks
+** base32
 
 * hnimast
 ** hmisc
@@ -7481,9 +8191,6 @@
 *** unicodedb
 *** macroutils
 *** with
-
-* runeterra_decks
-** base32
 
 * the_nim_alliance
 
@@ -7501,6 +8208,8 @@
 *** regex
 **** unicodedb
 ** murmurhash
+
+* io-egl
 
 * vmprotect
 
@@ -7540,10 +8249,6 @@
 * persistent_enums
 
 * qt5_qtsql
-
-* vimeo
-** util
-** cligen
 
 * edn
 
@@ -7605,6 +8310,7 @@
 ** nimcrypto
 ** rocksdb
 *** stew
+**** unittest2
 *** tempfile
 
 * crowngui
@@ -7616,11 +8322,13 @@
 ** objc_runtime
 *** regex
 **** unicodedb
+** winim
 ** jsonschema
 *** ast_pattern_matching
 ** darwin
+** goto
 ** xlsx
-*** zip
+*** zippy
 
 * decimal
 
@@ -7631,23 +8339,27 @@
 * dotenv
 
 * niprefs
-** npeg
 ** toml_serialization
 *** stew
+**** unittest2
 *** serialization
 **** unittest2
 **** stew
+***** unittest2
 **** faststreams
 ***** unittest2
 ***** stew
+****** unittest2
 ***** chronos
 ****** httputils
 ******* unittest2
 ******* stew
+******** unittest2
+****** unittest2
 ****** stew
+******* unittest2
 ****** bearssl
 ******* unittest2
-***** testutils
 
 * egl
 ** x11
@@ -7656,8 +8368,6 @@
 
 * awk
 ** nre
-
-* bs
 
 * shady
 ** pixie
@@ -7669,6 +8379,8 @@
 **** vmath
 *** chroma
 ** vmath
+
+* bs
 
 * bcra
 ** zip
@@ -7725,7 +8437,6 @@
 ** struct
 
 * bump
-** cligen
 
 * haraka
 
@@ -7753,8 +8464,6 @@
 **** unicodedb
 
 * mofuhttputils
-
-* stor
 
 * dnsstamps
 
@@ -7814,6 +8523,7 @@
 * ruby
 
 * nimjson
+** jsony
 
 * nimpcre
 ** nimterop
@@ -7834,12 +8544,13 @@
 * prettystr
 
 * xidoc
-** npeg
+** matext
+*** cligen
+*** honeycomb
+** aspartame
 ** cligen
 
 * ssostrings
-
-* gnuplotlib
 
 * untar
 
@@ -7900,6 +8611,7 @@
 
 * dnsprotocol
 ** stew
+*** unittest2
 
 * georefar
 
@@ -8093,8 +8805,6 @@
 
 * camelize
 
-* strings
-
 * genode
 
 * luhny
@@ -8160,17 +8870,21 @@
 *** snappy
 **** unittest2
 **** stew
+***** unittest2
 **** faststreams
 ***** unittest2
 ***** stew
+****** unittest2
 ***** chronos
 ****** httputils
 ******* unittest2
 ******* stew
+******** unittest2
+****** unittest2
 ****** stew
+******* unittest2
 ****** bearssl
 ******* unittest2
-***** testutils
 
 * metatools
 
@@ -8185,20 +8899,25 @@
 
 * json_serialization
 ** stew
+*** unittest2
 ** serialization
 *** unittest2
 *** stew
+**** unittest2
 *** faststreams
 **** unittest2
 **** stew
+***** unittest2
 **** chronos
 ***** httputils
 ****** unittest2
 ****** stew
+******* unittest2
+***** unittest2
 ***** stew
+****** unittest2
 ***** bearssl
 ****** unittest2
-**** testutils
 
 * nimssl
 ** nimterop
@@ -8257,7 +8976,6 @@
 * base45
 
 * spotify
-** subexes
 ** oauth
 *** sha1
 
@@ -8265,6 +8983,7 @@
 
 * evmc
 ** stew
+*** unittest2
 
 * nmqtt
 ** bcrypt
@@ -8276,11 +8995,14 @@
 ** nimcrypto
 ** stint
 *** stew
+**** unittest2
 
 * sqliteral
 
 * nyml
 ** toktok
+** pkginfo
+*** semver
 
 * teafiles
 
@@ -8342,6 +9064,7 @@
 * niminst
 
 * notificatcher
+** nimpng
 ** dbus
 *** c2nim
 
@@ -8362,6 +9085,7 @@
 
 * rocksdb
 ** stew
+*** unittest2
 ** tempfile
 
 * subviewer
@@ -8375,10 +9099,12 @@
 * nim_chacha20_poly1305
 ** stint
 *** stew
+**** unittest2
 
 * fnv
 ** stint
 *** stew
+**** unittest2
 
 * capstone
 
@@ -8391,13 +9117,16 @@
 ** wavecore
 *** urlly
 *** flatty
-*** zippy
+*** ansiutils
 *** paramidi
 *** threading
 *** puppy
 **** urlly
 **** zippy
 **** libcurl
+** nimwave
+*** ansiutils
+*** illwave
 ** pararules
 ** paramidi_soundfonts
 

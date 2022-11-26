@@ -36,6 +36,7 @@ digraph NimPkgs {
   hmac -> smbexec
   nimsha2 -> jupyternim
   nimsha2 -> syndicate
+  syndicate -> eris
   nimsha2 -> mnemonic
   nimsha2 -> nimpdf
   nimsha2 -> libkeepass
@@ -68,8 +69,6 @@ digraph NimPkgs {
   gh_nimrod_doc_pages -> gh_nimrod_doc_pages
 
   jhash -> jhash
-
-  tic80 -> tic80
 
   isaac -> isaac
   isaac -> uuids
@@ -109,10 +108,13 @@ digraph NimPkgs {
 
   toktok -> toktok
   toktok -> nyml
-  nyml -> madam
   nyml -> supranim
+  toktok -> tim
 
   nimeverything -> nimeverything
+
+  fastrpc -> fastrpc
+  fastrpc -> nephyr
 
   records -> records
 
@@ -168,6 +170,7 @@ digraph NimPkgs {
   serialization -> ssz_serialization
   serialization -> eth_p2p
   serialization -> toml_serialization
+  toml_serialization -> nimibook
   toml_serialization -> nimislides
   toml_serialization -> niprefs
   niprefs -> imstyle
@@ -179,11 +182,13 @@ digraph NimPkgs {
   json_serialization -> graphql
   json_serialization -> ssz_serialization
   json_serialization -> web3
+  web3 -> nimbus
   json_serialization -> eth_p2p
   json_serialization -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   json_serialization -> chronicles
   chronicles -> nimbus
   chronicles -> graphql
@@ -198,17 +203,22 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> web3
+  web3 -> nimbus
   chronicles -> eth_p2p
   chronicles -> presto
   chronicles -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronicles -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> fision
   chronicles -> nimlangserver
 
@@ -228,7 +238,6 @@ digraph NimPkgs {
   torch -> torch
 
   moustachu -> moustachu
-  moustachu -> zfplugs
 
   fasttext -> fasttext
 
@@ -243,6 +252,7 @@ digraph NimPkgs {
   winserial -> winserial
 
   mcu_utils -> mcu_utils
+  mcu_utils -> nephyr
 
   rx_nim -> rx_nim
   rx_nim -> denim_ui
@@ -280,7 +290,6 @@ digraph NimPkgs {
   arraymancer -> datamancer
   datamancer -> ggplotnim
   ggplotnim -> fision
-  datamancer -> latexdsl
   datamancer -> fision
   arraymancer -> linear_models
   arraymancer -> distances
@@ -303,7 +312,6 @@ digraph NimPkgs {
   arraymancer -> datamancer
   datamancer -> ggplotnim
   ggplotnim -> fision
-  datamancer -> latexdsl
   datamancer -> fision
   arraymancer -> linear_models
   arraymancer -> distances
@@ -398,7 +406,6 @@ digraph NimPkgs {
   nimchromepath -> nimchromepath
 
   subexes -> subexes
-  subexes -> spotify
 
   vkapi -> vkapi
 
@@ -408,7 +415,6 @@ digraph NimPkgs {
   polynumeric -> scinim
 
   klymene -> klymene
-  klymene -> madam
 
   entoody -> entoody
 
@@ -434,6 +440,7 @@ digraph NimPkgs {
   oldwinapi -> pdcurses
 
   web3 -> web3
+  web3 -> nimbus
 
   shioridll -> shioridll
 
@@ -497,9 +504,12 @@ digraph NimPkgs {
   libusb -> libusb
 
   opussum -> opussum
+  opussum -> dimscord
+  dimscord -> dimscmd
 
   questionable -> questionable
   questionable -> ethers
+  questionable -> libp2pdht
   questionable -> nitro
   questionable -> contractabi
   contractabi -> ethers
@@ -518,15 +528,13 @@ digraph NimPkgs {
 
   googlesearch -> googlesearch
 
-  timerwheel -> timerwheel
-  timerwheel -> fsnotify
-  fsnotify -> ballpark
-
   host -> host
+
+  nimwin -> nimwin
 
   animatecss -> animatecss
 
-  nimwin -> nimwin
+  timerwheel -> timerwheel
 
   consul -> consul
 
@@ -575,7 +583,6 @@ digraph NimPkgs {
   easings -> easings
 
   weave -> weave
-  weave -> fftw3
   weave -> fision
 
   urlon -> urlon
@@ -655,9 +662,6 @@ digraph NimPkgs {
 
   pwd -> pwd
 
-  ytextractor -> ytextractor
-  ytextractor -> ytcc
-
   prometheus -> prometheus
 
   gralg -> gralg
@@ -684,7 +688,6 @@ digraph NimPkgs {
   sdl2 -> hottext
   sdl2 -> tinamou
   sdl2 -> denim_ui_cairo
-  sdl2 -> nimnn
   sdl2 -> gamelight
   sdl2 -> hexclock
   sdl2 -> nimx
@@ -718,13 +721,12 @@ digraph NimPkgs {
 
   bgfxextrasdotnim -> bgfxextrasdotnim
 
-  libjwt -> libjwt
+  todoist -> todoist
 
   prologue -> prologue
   prologue -> nimnews
   prologue -> fision
-
-  todoist -> todoist
+  prologue -> pigeon
 
   patty -> patty
   patty -> nimboost
@@ -767,7 +769,7 @@ digraph NimPkgs {
   barcode -> barcode
 
   crc32 -> crc32
-  crc32 -> packets
+  crc32 -> nimgram
 
   remizstd -> remizstd
 
@@ -811,6 +813,7 @@ digraph NimPkgs {
 
   honeycomb -> honeycomb
   honeycomb -> matext
+  matext -> xidoc
 
   ladder -> ladder
 
@@ -889,8 +892,6 @@ digraph NimPkgs {
 
   timecop -> timecop
 
-  composition -> composition
-
   streamfix -> streamfix
 
   tf2plug -> tf2plug
@@ -921,7 +922,6 @@ digraph NimPkgs {
   emath -> emath
 
   websocketx -> websocketx
-  websocketx -> mike
 
   fsmonitor -> fsmonitor
 
@@ -968,9 +968,13 @@ digraph NimPkgs {
   macroutils -> cssgrid
   cssgrid -> fidgetty
   macroutils -> futhark
+  futhark -> libvlc
   macroutils -> algebraicdatas
   macroutils -> fidgetty
   macroutils -> cdecl
+  cdecl -> nephyr
+  cdecl -> cssgrid
+  cssgrid -> fidgetty
   cdecl -> fidgetty
   macroutils -> mycouch
   macroutils -> fision
@@ -1029,17 +1033,22 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> web3
+  web3 -> nimbus
   chronicles -> eth_p2p
   chronicles -> presto
   chronicles -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronicles -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> fision
   chronicles -> nimlangserver
 
@@ -1056,8 +1065,6 @@ digraph NimPkgs {
   luna -> luna
 
   ajax -> ajax
-  ajax -> ytextractor
-  ytextractor -> ytcc
   ajax -> pigeon
 
   metrics -> metrics
@@ -1066,8 +1073,10 @@ digraph NimPkgs {
   libp2p -> libp2pdht
   metrics -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
 
   impulse_engine -> impulse_engine
 
@@ -1087,6 +1096,7 @@ digraph NimPkgs {
   fusion -> slim
   fusion -> localize
   fusion -> scinim
+  fusion -> bioseq
   fusion -> halonium
   fusion -> nery
   fusion -> fision
@@ -1103,6 +1113,7 @@ digraph NimPkgs {
   random -> neoid
   neoid -> quickcrypt
   random -> alea
+  alea -> fision
   random -> ulid
 
   zippy -> zippy
@@ -1115,32 +1126,32 @@ digraph NimPkgs {
   fidget -> spinner
   fidget -> fision
   pixie -> steganography
+  pixie -> ginger
+  ginger -> ggplotnim
+  ggplotnim -> fision
   pixie -> nimtesseract
   pixie -> cssgrid
   cssgrid -> fidgetty
   pixie -> shady
+  shady -> boxy
   pixie -> windy
   pixie -> dye
   pixie -> fidgetty
-  pixie -> fidget
-  fidget -> spinner
-  fidget -> fision
   pixie -> boxy
   pixie -> fision
+  zippy -> mike
   zippy -> anonimongo
   zippy -> excelin
   zippy -> dimscord
   dimscord -> dimscmd
   zippy -> winimx
-  zippy -> nimgram
   zippy -> fftw3
   zippy -> nim_tiled
   zippy -> finder
   finder -> static_server
   static_server -> crowngui
-  zippy -> windy
-  zippy -> wavecore
-  wavecore -> ansiwave
+  zippy -> xlsx
+  xlsx -> crowngui
   zippy -> dye
   zippy -> fidgetty
   zippy -> nico
@@ -1194,8 +1205,6 @@ digraph NimPkgs {
   serialport -> serialport
 
   desim -> desim
-
-  gimg -> gimg
 
   x11 -> x11
   x11 -> impulse_engine
@@ -1254,7 +1263,6 @@ digraph NimPkgs {
   arraymancer -> datamancer
   datamancer -> ggplotnim
   ggplotnim -> fision
-  datamancer -> latexdsl
   datamancer -> fision
   arraymancer -> linear_models
   arraymancer -> distances
@@ -1279,6 +1287,7 @@ digraph NimPkgs {
   stint -> nimgram
   stint -> ssz_serialization
   stint -> web3
+  web3 -> nimbus
   stint -> nitro
   stint -> eth_p2p
   stint -> nim_chacha20_poly1305
@@ -1288,16 +1297,20 @@ digraph NimPkgs {
   contractabi -> nitro
   stint -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   stint -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   stint -> emmy
   stint -> fision
 
   filetype -> filetype
+  filetype -> supranim
 
   unpack -> unpack
   unpack -> fugitive
@@ -1369,6 +1382,7 @@ digraph NimPkgs {
 
   preserves -> preserves
   preserves -> syndicate
+  syndicate -> eris
 
   simplepng -> simplepng
   simplepng -> raytracingalgorithm
@@ -1449,7 +1463,6 @@ digraph NimPkgs {
 
   collections -> collections
   collections -> capnp
-  collections -> isa
   collections -> reactor
   reactor -> sctp
   reactor -> reactorfuse
@@ -1478,6 +1491,7 @@ digraph NimPkgs {
   rc4 -> rc4
 
   measuremancer -> measuremancer
+  measuremancer -> fision
 
   nimlangserver -> nimlangserver
 
@@ -1501,6 +1515,8 @@ digraph NimPkgs {
 
   usagov -> usagov
 
+  nim -> nim
+
   wiringpinim -> wiringpinim
   wiringpinim -> nimha
 
@@ -1519,7 +1535,6 @@ digraph NimPkgs {
   illwill -> nimothello
   illwill -> qwertycd
   illwill -> klymene
-  klymene -> madam
   illwill -> hayaa
   illwill -> nimtetris
   illwill -> fision
@@ -1538,16 +1553,17 @@ digraph NimPkgs {
   fidget -> spinner
   fidget -> fision
   pixie -> steganography
+  pixie -> ginger
+  ginger -> ggplotnim
+  ggplotnim -> fision
   pixie -> nimtesseract
   pixie -> cssgrid
   cssgrid -> fidgetty
   pixie -> shady
+  shady -> boxy
   pixie -> windy
   pixie -> dye
   pixie -> fidgetty
-  pixie -> fidget
-  fidget -> spinner
-  fidget -> fision
   pixie -> boxy
   pixie -> fision
   nimsimd -> noisy
@@ -1555,10 +1571,6 @@ digraph NimPkgs {
   owoifynim -> owoifynim
 
   edens -> edens
-
-  servclip -> servclip
-
-  parsepage -> parsepage
 
   geocoding -> geocoding
 
@@ -1612,8 +1624,6 @@ digraph NimPkgs {
 
   nimics -> nimics
 
-  pricecsv -> pricecsv
-
   entgrep -> entgrep
 
   isocodes -> isocodes
@@ -1628,6 +1638,7 @@ digraph NimPkgs {
   threading -> wavecore
   wavecore -> ansiwave
   threading -> mcu_utils
+  mcu_utils -> nephyr
 
   nint128 -> nint128
 
@@ -1655,6 +1666,7 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
 
   bamboo_websocket -> bamboo_websocket
 
@@ -1665,6 +1677,7 @@ digraph NimPkgs {
   webterminal -> webterminal
 
   blscurve -> blscurve
+  blscurve -> nimbus
   blscurve -> ssz_serialization
 
   allographer -> allographer
@@ -1687,14 +1700,9 @@ digraph NimPkgs {
   skinterpolate -> skinterpolate
 
   util -> util
-  util -> studiobacklottv
-  util -> ytcc
   util -> ezscr
   util -> brightcove
   util -> checkif
-  util -> kiwifydownload
-  util -> vimeo
-  vimeo -> kiwifydownload
 
   rtlsdr -> rtlsdr
 
@@ -1796,15 +1804,12 @@ digraph NimPkgs {
   sorta -> ngspice
 
   css_html_minify -> css_html_minify
-  css_html_minify -> parsepage
 
   sctp -> sctp
 
   loco -> loco
 
   nmiline -> nmiline
-
-  whois -> whois
 
   nimgame -> nimgame
 
@@ -1855,7 +1860,6 @@ digraph NimPkgs {
   nimgen -> treesitter_cpp
   nimgen -> treesitter_typescript
   nimgen -> nimclipboard
-  nimclipboard -> servclip
   nimgen -> nim7z
   nimgen -> wren
   nimgen -> treesitter_python
@@ -1888,13 +1892,12 @@ digraph NimPkgs {
   regex -> finalseg
   regex -> sue
   regex -> textformats
-  regex -> nimem
   regex -> envconfig
   regex -> prologue
   prologue -> nimnews
   prologue -> fision
+  prologue -> pigeon
   regex -> klymene
-  klymene -> madam
   regex -> docopt
   docopt -> gen
   docopt -> nimfcuk
@@ -1912,7 +1915,6 @@ digraph NimPkgs {
   docopt -> ndf
   docopt -> aqcalc
   docopt -> hotdoc
-  docopt -> dye
   docopt -> foliant
   docopt -> nimnews
   docopt -> layonara_nwn
@@ -1928,6 +1930,7 @@ digraph NimPkgs {
   neverwinter -> nasher
   neverwinter -> nwsync
   docopt -> nwsync
+  regex -> peni
   regex -> sas
   regex -> nimraylib_now
   nimraylib_now -> snekim
@@ -1946,7 +1949,6 @@ digraph NimPkgs {
   nimterop -> nimdbx
   nimterop -> nimodpi
   nimterop -> nimpcre
-  nimterop -> libvlc
   nimterop -> libsvm
   nimterop -> nimpari
   nimterop -> inumon
@@ -1976,6 +1978,7 @@ digraph NimPkgs {
   nimterop -> fision
   nimterop -> nestegg
   regex -> fision
+  regex -> pigeon
   regex -> vmvc
   regex -> changer
   regex -> fastkiss
@@ -2025,7 +2028,6 @@ digraph NimPkgs {
   strunicode -> fision
   unicodedb -> moe
   unicodedb -> klymene
-  klymene -> madam
   unicodedb -> segmentation
   segmentation -> unicodeplus
   unicodeplus -> wox
@@ -2106,6 +2108,7 @@ digraph NimPkgs {
   anycase_fork -> anycase_fork
 
   ethash -> ethash
+  ethash -> nimbus
 
   rsvg -> rsvg
 
@@ -2118,8 +2121,6 @@ digraph NimPkgs {
   omnicollider -> omnicollider
 
   bencode -> bencode
-
-  isa -> isa
 
   libovr -> libovr
 
@@ -2153,6 +2154,7 @@ digraph NimPkgs {
   sdl2_nim -> fision
   sdl2_nim -> nimgame2
   nimgame2 -> fision
+  winim -> crowngui
   winim -> winimx
   winim -> nimem
   winim -> wnim
@@ -2212,18 +2214,22 @@ digraph NimPkgs {
   libp2p -> libp2pdht
   metrics -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronos -> amysql
   chronos -> ethers
   chronos -> libp2pdht
   chronos -> faststreams
   faststreams -> graphql
   faststreams -> web3
+  web3 -> nimbus
   faststreams -> serialization
   serialization -> ssz_serialization
   serialization -> eth_p2p
   serialization -> toml_serialization
+  toml_serialization -> nimibook
   toml_serialization -> nimislides
   toml_serialization -> niprefs
   niprefs -> imstyle
@@ -2235,11 +2241,13 @@ digraph NimPkgs {
   json_serialization -> graphql
   json_serialization -> ssz_serialization
   json_serialization -> web3
+  web3 -> nimbus
   json_serialization -> eth_p2p
   json_serialization -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   json_serialization -> chronicles
   chronicles -> nimbus
   chronicles -> graphql
@@ -2254,21 +2262,25 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> web3
+  web3 -> nimbus
   chronicles -> eth_p2p
   chronicles -> presto
   chronicles -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronicles -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> fision
   chronicles -> nimlangserver
   faststreams -> protobuf_serialization
-  faststreams -> deser_json
   faststreams -> snappy
   snappy -> spryvm
   spryvm -> sprymicro
@@ -2283,16 +2295,21 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronos -> web3
+  web3 -> nimbus
   chronos -> presto
   chronos -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronos -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronos -> scorper
   chronos -> fision
 
@@ -2306,9 +2323,7 @@ digraph NimPkgs {
   npeg -> atoz
   npeg -> preserves
   preserves -> syndicate
-  npeg -> xidoc
-  npeg -> niprefs
-  niprefs -> imstyle
+  syndicate -> eris
   npeg -> github
   npeg -> wnim
   wnim -> wauto
@@ -2333,8 +2348,10 @@ digraph NimPkgs {
   confutils -> confutils
   confutils -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
 
   hyperscript -> hyperscript
 
@@ -2350,8 +2367,6 @@ digraph NimPkgs {
 
   awss3 -> awss3
 
-  cutelog -> cutelog
-
   secp256k1 -> secp256k1
   secp256k1 -> libp2pdht
   secp256k1 -> eth_keys
@@ -2363,8 +2378,12 @@ digraph NimPkgs {
   secp256k1 -> eth_p2p
   secp256k1 -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
+
+  cutelog -> cutelog
 
   jack -> jack
 
@@ -2380,13 +2399,14 @@ digraph NimPkgs {
   ast_pattern_matching -> jsonschema
   jsonschema -> crowngui
   jsonschema -> nimlsp
+  nimlsp -> fision
   ast_pattern_matching -> algebraicdatas
   ast_pattern_matching -> mcmurry
+  ast_pattern_matching -> fision
 
   libfuzzer -> libfuzzer
 
   kashae -> kashae
-  kashae -> whois
 
   nake -> nake
   nake -> argument_parser
@@ -2455,7 +2475,6 @@ digraph NimPkgs {
 
   noise -> noise
   noise -> nage
-  noise -> nimmm
   noise -> inim
   inim -> fision
   noise -> crowncalc
@@ -2482,6 +2501,7 @@ digraph NimPkgs {
   slugify -> slugify
 
   futhark -> futhark
+  futhark -> libvlc
 
   sparkline -> sparkline
 
@@ -2538,13 +2558,11 @@ digraph NimPkgs {
   httpbeast -> jester
   jester -> nimha
   jester -> hackpad
-  jester -> servclip
   jester -> remarker_light
   jester -> tsundoku
   jester -> nexus
   jester -> playground
   jester -> exodus
-  jester -> blackvas_cli
   jester -> sermon
   jester -> skybook
   jester -> neel
@@ -2555,7 +2573,6 @@ digraph NimPkgs {
   jester -> clown_limiter
   jester -> nimwc
   nimwc -> fision
-  jester -> pigeon
   jester -> redissessions
   httpbeast -> jesterwithplugins
   jesterwithplugins -> jestercookiemsgs
@@ -2606,7 +2623,7 @@ digraph NimPkgs {
 
   nordnet -> nordnet
 
-  tokarax -> tokarax
+  tome -> tome
 
   fab -> fab
   fab -> gen
@@ -2620,8 +2637,6 @@ digraph NimPkgs {
   nesm -> nesm
   nesm -> swayipc
   nesm -> fision
-
-  tome -> tome
 
   vidhdr -> vidhdr
 
@@ -2652,6 +2667,7 @@ digraph NimPkgs {
   ludens -> ludens
 
   mustache -> mustache
+  mustache -> zfplugs
   mustache -> nimib
   nimib -> nimibook
   nimib -> nimislides
@@ -2664,6 +2680,7 @@ digraph NimPkgs {
   ndb -> ndb
   ndb -> pdba
   ndb -> norm
+  norm -> nimgram
   norm -> norman
   norm -> fision
   ndb -> baker
@@ -2674,6 +2691,7 @@ digraph NimPkgs {
 
   nimcrypto -> nimcrypto
   nimcrypto -> ethash
+  ethash -> nimbus
   nimcrypto -> nimbus
   nimcrypto -> amysql
   nimcrypto -> eth_common
@@ -2720,9 +2738,12 @@ digraph NimPkgs {
   nimcrypto -> prologue
   prologue -> nimnews
   prologue -> fision
+  prologue -> pigeon
   nimcrypto -> ssz_serialization
   nimcrypto -> hashlib
   hashlib -> smbexec
+  hashlib -> libpe
+  libpe -> peni
   nimcrypto -> websock
   websock -> libp2p
   libp2p -> libp2pdht
@@ -2730,18 +2751,23 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   nimcrypto -> ducominer
   nimcrypto -> web3
+  web3 -> nimbus
   nimcrypto -> nitro
   nimcrypto -> eth_p2p
+  nimcrypto -> supranim
   nimcrypto -> contractabi
   contractabi -> ethers
   contractabi -> nitro
   nimcrypto -> gerbil
   nimcrypto -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   nimcrypto -> secp256k1
   secp256k1 -> libp2pdht
   secp256k1 -> eth_keys
@@ -2753,13 +2779,17 @@ digraph NimPkgs {
   secp256k1 -> eth_p2p
   secp256k1 -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   nimcrypto -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   nimcrypto -> blscurve
+  blscurve -> nimbus
   blscurve -> ssz_serialization
   nimcrypto -> fision
 
@@ -2774,6 +2804,7 @@ digraph NimPkgs {
   jsonschema -> jsonschema
   jsonschema -> crowngui
   jsonschema -> nimlsp
+  nimlsp -> fision
 
   denim_ui_cairo -> denim_ui_cairo
 
@@ -2816,7 +2847,6 @@ digraph NimPkgs {
   arraymancer -> datamancer
   datamancer -> ggplotnim
   ggplotnim -> fision
-  datamancer -> latexdsl
   datamancer -> fision
   arraymancer -> linear_models
   arraymancer -> distances
@@ -2836,11 +2866,8 @@ digraph NimPkgs {
   zip -> smnar
   zip -> mt
   zip -> nim_telegram_bot
-  zip -> bio_seq
-  bio_seq -> bionim
   zip -> metatag
   zip -> hackpad
-  zip -> bioseq
   zip -> halonium
   zip -> nimbioseq
   zip -> bcra
@@ -2860,15 +2887,12 @@ digraph NimPkgs {
   arraymancer -> datamancer
   datamancer -> ggplotnim
   ggplotnim -> fision
-  datamancer -> latexdsl
   datamancer -> fision
   arraymancer -> linear_models
   arraymancer -> distances
   arraymancer -> fision
   arraymancer -> arraymancer_vision
   zip -> crosscompile
-  zip -> xlsx
-  xlsx -> crowngui
   zip -> biblioteca_guarrilla
   zip -> zfcore
   zfcore -> zfplugs
@@ -2890,67 +2914,12 @@ digraph NimPkgs {
 
   testutils -> testutils
   testutils -> zxcvbn
-  testutils -> faststreams
-  faststreams -> graphql
-  faststreams -> web3
-  faststreams -> serialization
-  serialization -> ssz_serialization
-  serialization -> eth_p2p
-  serialization -> toml_serialization
-  toml_serialization -> nimislides
-  toml_serialization -> niprefs
-  niprefs -> imstyle
-  toml_serialization -> nimib
-  nimib -> nimibook
-  nimib -> nimislides
-  serialization -> protobuf_serialization
-  serialization -> json_serialization
-  json_serialization -> graphql
-  json_serialization -> ssz_serialization
-  json_serialization -> web3
-  json_serialization -> eth_p2p
-  json_serialization -> json_rpc
-  json_rpc -> nimbus
-  json_rpc -> ethers
-  json_rpc -> web3
-  json_serialization -> chronicles
-  chronicles -> nimbus
-  chronicles -> graphql
-  chronicles -> libp2pdht
-  chronicles -> libp2p
-  libp2p -> libp2pdht
-  chronicles -> nexus
-  chronicles -> websock
-  websock -> libp2p
-  libp2p -> libp2pdht
-  websock -> json_rpc
-  json_rpc -> nimbus
-  json_rpc -> ethers
-  json_rpc -> web3
-  chronicles -> web3
-  chronicles -> eth_p2p
-  chronicles -> presto
-  chronicles -> eth
-  eth -> nimbus
-  eth -> libp2pdht
-  eth -> web3
-  chronicles -> json_rpc
-  json_rpc -> nimbus
-  json_rpc -> ethers
-  json_rpc -> web3
-  chronicles -> fision
-  chronicles -> nimlangserver
-  faststreams -> protobuf_serialization
-  faststreams -> deser_json
-  faststreams -> snappy
-  snappy -> spryvm
-  spryvm -> sprymicro
-  spryvm -> spry
-  snappy -> eth_p2p
   testutils -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   testutils -> chronicles
   chronicles -> nimbus
   chronicles -> graphql
@@ -2965,17 +2934,22 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> web3
+  web3 -> nimbus
   chronicles -> eth_p2p
   chronicles -> presto
   chronicles -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronicles -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> fision
   chronicles -> nimlangserver
 
@@ -3011,18 +2985,22 @@ digraph NimPkgs {
   libp2p -> libp2pdht
   metrics -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronos -> amysql
   chronos -> ethers
   chronos -> libp2pdht
   chronos -> faststreams
   faststreams -> graphql
   faststreams -> web3
+  web3 -> nimbus
   faststreams -> serialization
   serialization -> ssz_serialization
   serialization -> eth_p2p
   serialization -> toml_serialization
+  toml_serialization -> nimibook
   toml_serialization -> nimislides
   toml_serialization -> niprefs
   niprefs -> imstyle
@@ -3034,11 +3012,13 @@ digraph NimPkgs {
   json_serialization -> graphql
   json_serialization -> ssz_serialization
   json_serialization -> web3
+  web3 -> nimbus
   json_serialization -> eth_p2p
   json_serialization -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   json_serialization -> chronicles
   chronicles -> nimbus
   chronicles -> graphql
@@ -3053,21 +3033,25 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> web3
+  web3 -> nimbus
   chronicles -> eth_p2p
   chronicles -> presto
   chronicles -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronicles -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> fision
   chronicles -> nimlangserver
   faststreams -> protobuf_serialization
-  faststreams -> deser_json
   faststreams -> snappy
   snappy -> spryvm
   spryvm -> sprymicro
@@ -3082,16 +3066,21 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronos -> web3
+  web3 -> nimbus
   chronos -> presto
   chronos -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronos -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronos -> scorper
   chronos -> fision
   httputils -> websock
@@ -3101,10 +3090,12 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   httputils -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
 
   lastfm -> lastfm
 
@@ -3134,7 +3125,6 @@ digraph NimPkgs {
   riimut -> riimut
 
   tim -> tim
-  tim -> madam
 
   geometrymath -> geometrymath
 
@@ -3202,7 +3192,6 @@ digraph NimPkgs {
   plotly -> fision
   ws -> karax
   karax -> htmltovdom
-  karax -> parsepage
   karax -> nexus
   karax -> kview
   karax -> hotdoc
@@ -3211,7 +3200,6 @@ digraph NimPkgs {
   ws -> coinbase_pro
   ws -> nimview
   ws -> websocketx
-  websocketx -> mike
   ws -> windy
   ws -> neel
   ws -> feta
@@ -3240,7 +3228,6 @@ digraph NimPkgs {
   nimterop -> nimdbx
   nimterop -> nimodpi
   nimterop -> nimpcre
-  nimterop -> libvlc
   nimterop -> libsvm
   nimterop -> nimpari
   nimterop -> inumon
@@ -3279,6 +3266,10 @@ digraph NimPkgs {
   taglib -> taglib
 
   pkginfo -> pkginfo
+  pkginfo -> nyml
+  nyml -> supranim
+  pkginfo -> tim
+  pkginfo -> supranim
 
   colorsys -> colorsys
   colorsys -> nimi3status
@@ -3309,12 +3300,10 @@ digraph NimPkgs {
   denim_ui -> denim_ui_canvas
   denim_ui -> denim_ui_cairo
 
-  origin -> origin
+  smnar -> smnar
 
   objc_runtime -> objc_runtime
   objc_runtime -> crowngui
-
-  smnar -> smnar
 
   steam -> steam
 
@@ -3362,6 +3351,7 @@ digraph NimPkgs {
   godot -> gnu
   compiler -> preserves
   preserves -> syndicate
+  syndicate -> eris
   compiler -> nimfmt
   compiler -> py2nim
   compiler -> nodesnim
@@ -3423,8 +3413,7 @@ digraph NimPkgs {
 
   frag -> frag
 
-  useragent -> useragent
-  useragent -> gimg
+  protocoled -> protocoled
 
   onedrive -> onedrive
 
@@ -3434,8 +3423,6 @@ digraph NimPkgs {
   nre -> awk
   awk -> fision
   nre -> cucumber
-
-  protocoled -> protocoled
 
   sqlbuilder -> sqlbuilder
 
@@ -3459,7 +3446,6 @@ digraph NimPkgs {
   latexdsl -> latexdsl
 
   parsetoml -> parsetoml
-  parsetoml -> lq
   parsetoml -> moe
   parsetoml -> mcd
   parsetoml -> qwertycd
@@ -3488,6 +3474,10 @@ digraph NimPkgs {
   semver -> semver
   semver -> conventional_semver
   semver -> pkginfo
+  pkginfo -> nyml
+  nyml -> supranim
+  pkginfo -> tim
+  pkginfo -> supranim
 
   uri2 -> uri2
 
@@ -3546,7 +3536,6 @@ digraph NimPkgs {
   nimquery -> fushin
   nimquery -> termnovel
   nimquery -> googlesearch
-  nimquery -> parsepage
   nimquery -> tam
   nimquery -> fision
 
@@ -3598,7 +3587,6 @@ digraph NimPkgs {
   arraymancer -> datamancer
   datamancer -> ggplotnim
   ggplotnim -> fision
-  datamancer -> latexdsl
   datamancer -> fision
   arraymancer -> linear_models
   arraymancer -> distances
@@ -3614,6 +3602,7 @@ digraph NimPkgs {
   opencv -> opencv
 
   norm -> norm
+  norm -> nimgram
   norm -> norman
   norm -> fision
 
@@ -3734,6 +3723,7 @@ digraph NimPkgs {
   ginger -> ggplotnim
   ggplotnim -> fision
   shell -> stage
+  shell -> latexdsl
 
   nshout -> nshout
 
@@ -3758,6 +3748,7 @@ digraph NimPkgs {
   clurp -> clurp
 
   jsony -> jsony
+  jsony -> nimjson
   jsony -> matrix
   jsony -> listenbrainz
   jsony -> nimibook
@@ -3798,10 +3789,14 @@ digraph NimPkgs {
   nimtraits -> hcparse
   hpprint -> hcparse
   hpprint -> hparse
+  jsony -> dimscord
+  dimscord -> dimscmd
+  jsony -> tim
   jsony -> winimx
   jsony -> isocodes
   jsony -> supranim
   jsony -> zxcvbnim
+  jsony -> deser_json
   jsony -> hpx
   jsony -> scorper
 
@@ -3838,8 +3833,8 @@ digraph NimPkgs {
   httpx -> prologue
   prologue -> nimnews
   prologue -> fision
+  prologue -> pigeon
   httpx -> websocketx
-  websocketx -> mike
 
   recaptcha -> recaptcha
   recaptcha -> nimha
@@ -3849,10 +3844,12 @@ digraph NimPkgs {
   faststreams -> faststreams
   faststreams -> graphql
   faststreams -> web3
+  web3 -> nimbus
   faststreams -> serialization
   serialization -> ssz_serialization
   serialization -> eth_p2p
   serialization -> toml_serialization
+  toml_serialization -> nimibook
   toml_serialization -> nimislides
   toml_serialization -> niprefs
   niprefs -> imstyle
@@ -3864,11 +3861,13 @@ digraph NimPkgs {
   json_serialization -> graphql
   json_serialization -> ssz_serialization
   json_serialization -> web3
+  web3 -> nimbus
   json_serialization -> eth_p2p
   json_serialization -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   json_serialization -> chronicles
   chronicles -> nimbus
   chronicles -> graphql
@@ -3883,21 +3882,25 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> web3
+  web3 -> nimbus
   chronicles -> eth_p2p
   chronicles -> presto
   chronicles -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronicles -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> fision
   chronicles -> nimlangserver
   faststreams -> protobuf_serialization
-  faststreams -> deser_json
   faststreams -> snappy
   snappy -> spryvm
   spryvm -> sprymicro
@@ -3910,6 +3913,7 @@ digraph NimPkgs {
   mcdb -> mctranslog
 
   blarg -> blarg
+  blarg -> nasher
 
   nimtraits -> nimtraits
   nimtraits -> hcparse
@@ -3944,10 +3948,6 @@ digraph NimPkgs {
 
   frida -> frida
 
-  dpdk -> dpdk
-
-  ducominer -> ducominer
-
   websock -> websock
   websock -> libp2p
   libp2p -> libp2pdht
@@ -3955,6 +3955,9 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
+
+  ducominer -> ducominer
 
   nimx -> nimx
 
@@ -3962,6 +3965,9 @@ digraph NimPkgs {
 
   mcresponse -> mcresponse
   mcresponse -> mctranslog
+
+  goto -> goto
+  goto -> crowngui
 
   battery_widget -> battery_widget
 
@@ -3987,9 +3993,6 @@ digraph NimPkgs {
 
   variant -> variant
   variant -> nimx
-  variant -> nimsl
-  nimsl -> nimx
-  nimsl -> fision
   variant -> fidgetty
 
   nimble -> nimble
@@ -4024,6 +4027,7 @@ digraph NimPkgs {
 
   termstyle -> termstyle
   termstyle -> futhark
+  futhark -> libvlc
   termstyle -> notifishower
   termstyle -> peni
   termstyle -> fision
@@ -4076,18 +4080,22 @@ digraph NimPkgs {
   libp2p -> libp2pdht
   metrics -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronos -> amysql
   chronos -> ethers
   chronos -> libp2pdht
   chronos -> faststreams
   faststreams -> graphql
   faststreams -> web3
+  web3 -> nimbus
   faststreams -> serialization
   serialization -> ssz_serialization
   serialization -> eth_p2p
   serialization -> toml_serialization
+  toml_serialization -> nimibook
   toml_serialization -> nimislides
   toml_serialization -> niprefs
   niprefs -> imstyle
@@ -4099,11 +4107,13 @@ digraph NimPkgs {
   json_serialization -> graphql
   json_serialization -> ssz_serialization
   json_serialization -> web3
+  web3 -> nimbus
   json_serialization -> eth_p2p
   json_serialization -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   json_serialization -> chronicles
   chronicles -> nimbus
   chronicles -> graphql
@@ -4118,21 +4128,25 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> web3
+  web3 -> nimbus
   chronicles -> eth_p2p
   chronicles -> presto
   chronicles -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronicles -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> fision
   chronicles -> nimlangserver
   faststreams -> protobuf_serialization
-  faststreams -> deser_json
   faststreams -> snappy
   snappy -> spryvm
   spryvm -> sprymicro
@@ -4147,16 +4161,21 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronos -> web3
+  web3 -> nimbus
   chronos -> presto
   chronos -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronos -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronos -> scorper
   chronos -> fision
   httputils -> websock
@@ -4166,21 +4185,26 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   httputils -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   stew -> graphql
   stew -> ethers
   stew -> evmc
+  evmc -> nimbus
   stew -> libp2pdht
   stew -> faststreams
   faststreams -> graphql
   faststreams -> web3
+  web3 -> nimbus
   faststreams -> serialization
   serialization -> ssz_serialization
   serialization -> eth_p2p
   serialization -> toml_serialization
+  toml_serialization -> nimibook
   toml_serialization -> nimislides
   toml_serialization -> niprefs
   niprefs -> imstyle
@@ -4192,11 +4216,13 @@ digraph NimPkgs {
   json_serialization -> graphql
   json_serialization -> ssz_serialization
   json_serialization -> web3
+  web3 -> nimbus
   json_serialization -> eth_p2p
   json_serialization -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   json_serialization -> chronicles
   chronicles -> nimbus
   chronicles -> graphql
@@ -4211,21 +4237,25 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> web3
+  web3 -> nimbus
   chronicles -> eth_p2p
   chronicles -> presto
   chronicles -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronicles -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> fision
   chronicles -> nimlangserver
   faststreams -> protobuf_serialization
-  faststreams -> deser_json
   faststreams -> snappy
   snappy -> spryvm
   spryvm -> sprymicro
@@ -4235,8 +4265,10 @@ digraph NimPkgs {
   stew -> nat_traversal
   nat_traversal -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   stew -> libp2p
   libp2p -> libp2pdht
   stew -> nesper
@@ -4249,18 +4281,22 @@ digraph NimPkgs {
   libp2p -> libp2pdht
   metrics -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronos -> amysql
   chronos -> ethers
   chronos -> libp2pdht
   chronos -> faststreams
   faststreams -> graphql
   faststreams -> web3
+  web3 -> nimbus
   faststreams -> serialization
   serialization -> ssz_serialization
   serialization -> eth_p2p
   serialization -> toml_serialization
+  toml_serialization -> nimibook
   toml_serialization -> nimislides
   toml_serialization -> niprefs
   niprefs -> imstyle
@@ -4272,11 +4308,13 @@ digraph NimPkgs {
   json_serialization -> graphql
   json_serialization -> ssz_serialization
   json_serialization -> web3
+  web3 -> nimbus
   json_serialization -> eth_p2p
   json_serialization -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   json_serialization -> chronicles
   chronicles -> nimbus
   chronicles -> graphql
@@ -4291,21 +4329,25 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> web3
+  web3 -> nimbus
   chronicles -> eth_p2p
   chronicles -> presto
   chronicles -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronicles -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> fision
   chronicles -> nimlangserver
   faststreams -> protobuf_serialization
-  faststreams -> deser_json
   faststreams -> snappy
   snappy -> spryvm
   spryvm -> sprymicro
@@ -4320,16 +4362,21 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronos -> web3
+  web3 -> nimbus
   chronos -> presto
   chronos -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronos -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronos -> scorper
   chronos -> fision
   stew -> stint
@@ -4342,6 +4389,7 @@ digraph NimPkgs {
   stint -> nimgram
   stint -> ssz_serialization
   stint -> web3
+  web3 -> nimbus
   stint -> nitro
   stint -> eth_p2p
   stint -> nim_chacha20_poly1305
@@ -4351,12 +4399,15 @@ digraph NimPkgs {
   contractabi -> nitro
   stint -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   stint -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   stint -> emmy
   stint -> fision
   stew -> websock
@@ -4366,18 +4417,16 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   stew -> leopard
   stew -> iputils
   stew -> web3
+  web3 -> nimbus
   stew -> rocksdb
   rocksdb -> nimbus
   rocksdb -> eth_trie
   eth_trie -> eth_common
   eth_common -> eth_p2p
-  rocksdb -> eth
-  eth -> nimbus
-  eth -> libp2pdht
-  eth -> web3
   stew -> ndns
   stew -> nitro
   stew -> dnsprotocol
@@ -4387,6 +4436,7 @@ digraph NimPkgs {
   serialization -> ssz_serialization
   serialization -> eth_p2p
   serialization -> toml_serialization
+  toml_serialization -> nimibook
   toml_serialization -> nimislides
   toml_serialization -> niprefs
   niprefs -> imstyle
@@ -4398,11 +4448,13 @@ digraph NimPkgs {
   json_serialization -> graphql
   json_serialization -> ssz_serialization
   json_serialization -> web3
+  web3 -> nimbus
   json_serialization -> eth_p2p
   json_serialization -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   json_serialization -> chronicles
   chronicles -> nimbus
   chronicles -> graphql
@@ -4417,26 +4469,34 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> web3
+  web3 -> nimbus
   chronicles -> eth_p2p
   chronicles -> presto
   chronicles -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronicles -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> fision
   chronicles -> nimlangserver
   stew -> presto
   stew -> confutils
   confutils -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   stew -> toml_serialization
+  toml_serialization -> nimibook
   toml_serialization -> nimislides
   toml_serialization -> niprefs
   niprefs -> imstyle
@@ -4448,8 +4508,10 @@ digraph NimPkgs {
   contractabi -> nitro
   stew -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   stew -> protobuf_serialization
   stew -> secp256k1
   secp256k1 -> libp2pdht
@@ -4462,22 +4524,27 @@ digraph NimPkgs {
   secp256k1 -> eth_p2p
   secp256k1 -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   stew -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   stew -> scorper
   stew -> json_serialization
   json_serialization -> graphql
   json_serialization -> ssz_serialization
   json_serialization -> web3
+  web3 -> nimbus
   json_serialization -> eth_p2p
   json_serialization -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   json_serialization -> chronicles
   chronicles -> nimbus
   chronicles -> graphql
@@ -4492,20 +4559,26 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> web3
+  web3 -> nimbus
   chronicles -> eth_p2p
   chronicles -> presto
   chronicles -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronicles -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> fision
   chronicles -> nimlangserver
   stew -> blscurve
+  blscurve -> nimbus
   blscurve -> ssz_serialization
   stew -> zlib
   zlib -> websock
@@ -4515,6 +4588,7 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   stew -> snappy
   snappy -> spryvm
   spryvm -> sprymicro
@@ -4524,6 +4598,7 @@ digraph NimPkgs {
   grok -> grok
 
   matext -> matext
+  matext -> xidoc
 
   mpfit -> mpfit
 
@@ -4544,8 +4619,10 @@ digraph NimPkgs {
   nat_traversal -> nat_traversal
   nat_traversal -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
 
   nobject -> nobject
 
@@ -4585,6 +4662,7 @@ digraph NimPkgs {
   mongrel2 -> mongrel2
 
   toml_serialization -> toml_serialization
+  toml_serialization -> nimibook
   toml_serialization -> nimislides
   toml_serialization -> niprefs
   niprefs -> imstyle
@@ -4634,11 +4712,8 @@ digraph NimPkgs {
 
   polymorph -> polymorph
 
-  arbitrary -> arbitrary
-
   base32 -> base32
   base32 -> eris
-  eris -> eris_utils
   base32 -> otp
   otp -> nimwc
   nimwc -> fision
@@ -4667,12 +4742,14 @@ digraph NimPkgs {
   simplepng -> trayx
   nimpng -> zopflipng
   nimpng -> icon
+  nimpng -> notificatcher
   nimpng -> jupyternim
   nimpng -> nimff
   nimpng -> nico
   nimpng -> nimwebp
   nimwebp -> nimx
   nimpng -> nimpdf
+  nimpng -> fision
 
   murmur3 -> murmur3
 
@@ -4700,8 +4777,6 @@ digraph NimPkgs {
 
   gtkgenui -> gtkgenui
 
-  formulas -> formulas
-
   kiwi -> kiwi
   kiwi -> nimx
   kiwi -> notifishower
@@ -4710,11 +4785,7 @@ digraph NimPkgs {
 
   uibuilder -> uibuilder
 
-  forestdb -> forestdb
-
   nimmm -> nimmm
-
-  artemis -> artemis
 
   hlibgit2 -> hlibgit2
 
@@ -4741,6 +4812,9 @@ digraph NimPkgs {
   boxy -> boxy
 
   cdecl -> cdecl
+  cdecl -> nephyr
+  cdecl -> cssgrid
+  cssgrid -> fidgetty
   cdecl -> fidgetty
 
   expander -> expander
@@ -4772,7 +4846,6 @@ digraph NimPkgs {
   jscanvas -> drawim
 
   eminim -> eminim
-  eminim -> naylib
 
   geonames -> geonames
 
@@ -4808,7 +4881,6 @@ digraph NimPkgs {
   bson -> mongopool
   mongopool -> jestermongopool
   bson -> tim
-  tim -> madam
 
   denim_ui_canvas -> denim_ui_canvas
 
@@ -4820,13 +4892,6 @@ digraph NimPkgs {
   cssgrid -> fidgetty
 
   vmath -> vmath
-  vmath -> typography
-  typography -> hottext
-  typography -> gamelight
-  typography -> fidgetty
-  typography -> fidget
-  fidget -> spinner
-  fidget -> fision
   vmath -> flippy
   flippy -> gamelight
   flippy -> nsu
@@ -4839,30 +4904,25 @@ digraph NimPkgs {
   fidget -> spinner
   fidget -> fision
   pixie -> steganography
+  pixie -> ginger
+  ginger -> ggplotnim
+  ggplotnim -> fision
   pixie -> nimtesseract
   pixie -> cssgrid
   cssgrid -> fidgetty
   pixie -> shady
+  shady -> boxy
   pixie -> windy
   pixie -> dye
   pixie -> fidgetty
-  pixie -> fidget
-  fidget -> spinner
-  fidget -> fision
   pixie -> boxy
   pixie -> fision
   vmath -> cssgrid
   cssgrid -> fidgetty
   vmath -> slappy
   vmath -> shady
+  shady -> boxy
   vmath -> bumpy
-  bumpy -> typography
-  typography -> hottext
-  typography -> gamelight
-  typography -> fidgetty
-  typography -> fidget
-  fidget -> spinner
-  fidget -> fision
   bumpy -> flippy
   flippy -> gamelight
   flippy -> nsu
@@ -4875,22 +4935,23 @@ digraph NimPkgs {
   fidget -> spinner
   fidget -> fision
   pixie -> steganography
+  pixie -> ginger
+  ginger -> ggplotnim
+  ggplotnim -> fision
   pixie -> nimtesseract
   pixie -> cssgrid
   cssgrid -> fidgetty
   pixie -> shady
+  shady -> boxy
   pixie -> windy
   pixie -> dye
   pixie -> fidgetty
-  pixie -> fidget
-  fidget -> spinner
-  fidget -> fision
   pixie -> boxy
   pixie -> fision
   bumpy -> cssgrid
   cssgrid -> fidgetty
   bumpy -> spacy
-  vmath -> boxy
+  vmath -> siwin
   vmath -> spacy
 
   openstreetmap -> openstreetmap
@@ -4934,8 +4995,10 @@ digraph NimPkgs {
 
   eth -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
 
   spacy -> spacy
 
@@ -4966,8 +5029,6 @@ digraph NimPkgs {
 
   github-pmunch-libclang -> github-pmunch-libclang
 
-  nbcnews -> nbcnews
-
   steganography -> steganography
 
   clang -> clang
@@ -4988,7 +5049,6 @@ digraph NimPkgs {
   libu2f -> libu2f
 
   gmp -> gmp
-  gmp -> nimgram
   gmp -> bignum
   bignum -> ad
 
@@ -5009,7 +5069,10 @@ digraph NimPkgs {
   treesitter_rust -> treesitter_rust
 
   ansiutils -> ansiutils
+  ansiutils -> wavecore
+  wavecore -> ansiwave
   ansiutils -> nimwave
+  nimwave -> ansiwave
 
   ctrulib -> ctrulib
 
@@ -5021,8 +5084,10 @@ digraph NimPkgs {
 
   bigints -> bigints
   bigints -> cbor
+  cbor -> eris
   bigints -> preserves
   preserves -> syndicate
+  syndicate -> eris
   bigints -> emmy
 
   polymers -> polymers
@@ -5045,18 +5110,22 @@ digraph NimPkgs {
   libp2p -> libp2pdht
   metrics -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronos -> amysql
   chronos -> ethers
   chronos -> libp2pdht
   chronos -> faststreams
   faststreams -> graphql
   faststreams -> web3
+  web3 -> nimbus
   faststreams -> serialization
   serialization -> ssz_serialization
   serialization -> eth_p2p
   serialization -> toml_serialization
+  toml_serialization -> nimibook
   toml_serialization -> nimislides
   toml_serialization -> niprefs
   niprefs -> imstyle
@@ -5068,11 +5137,13 @@ digraph NimPkgs {
   json_serialization -> graphql
   json_serialization -> ssz_serialization
   json_serialization -> web3
+  web3 -> nimbus
   json_serialization -> eth_p2p
   json_serialization -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   json_serialization -> chronicles
   chronicles -> nimbus
   chronicles -> graphql
@@ -5087,21 +5158,25 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> web3
+  web3 -> nimbus
   chronicles -> eth_p2p
   chronicles -> presto
   chronicles -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronicles -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> fision
   chronicles -> nimlangserver
   faststreams -> protobuf_serialization
-  faststreams -> deser_json
   faststreams -> snappy
   snappy -> spryvm
   spryvm -> sprymicro
@@ -5116,16 +5191,21 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronos -> web3
+  web3 -> nimbus
   chronos -> presto
   chronos -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronos -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronos -> scorper
   chronos -> fision
   bearssl -> websock
@@ -5135,6 +5215,7 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
 
   scnim -> scnim
 
@@ -5276,7 +5357,6 @@ digraph NimPkgs {
   arraymancer -> datamancer
   datamancer -> ggplotnim
   ggplotnim -> fision
-  datamancer -> latexdsl
   datamancer -> fision
   arraymancer -> linear_models
   arraymancer -> distances
@@ -5309,7 +5389,6 @@ digraph NimPkgs {
   nim_miniz -> nim_miniz
 
   bluesoftcosmos -> bluesoftcosmos
-  bluesoftcosmos -> servclip
 
   listsv -> listsv
 
@@ -5353,7 +5432,6 @@ digraph NimPkgs {
   nimgen -> treesitter_cpp
   nimgen -> treesitter_typescript
   nimgen -> nimclipboard
-  nimclipboard -> servclip
   nimgen -> nim7z
   nimgen -> wren
   nimgen -> treesitter_python
@@ -5388,7 +5466,6 @@ digraph NimPkgs {
   yaml -> pdba
   yaml -> grim
   yaml -> nage
-  yaml -> parsepage
   yaml -> textformats
   yaml -> nexus
   yaml -> ezscr
@@ -5419,7 +5496,6 @@ digraph NimPkgs {
   arraymancer -> datamancer
   datamancer -> ggplotnim
   ggplotnim -> fision
-  datamancer -> latexdsl
   datamancer -> fision
   arraymancer -> linear_models
   arraymancer -> distances
@@ -5479,7 +5555,6 @@ digraph NimPkgs {
   docopt -> ndf
   docopt -> aqcalc
   docopt -> hotdoc
-  docopt -> dye
   docopt -> foliant
   docopt -> nimnews
   docopt -> layonara_nwn
@@ -5496,17 +5571,15 @@ digraph NimPkgs {
   neverwinter -> nwsync
   docopt -> nwsync
 
-  blackvas_cli -> blackvas_cli
-
   darwin -> darwin
   darwin -> crowngui
   darwin -> plists
   plists -> nimx
 
+  spdx_licenses -> spdx_licenses
+
   libbacktrace -> libbacktrace
   libbacktrace -> nimbus
-
-  spdx_licenses -> spdx_licenses
 
   webgui -> webgui
   webgui -> choosenimgui
@@ -5540,8 +5613,10 @@ digraph NimPkgs {
   sqlite3_abi -> sqlite3_abi
   sqlite3_abi -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
 
   libdeflate_gzip -> libdeflate_gzip
 
@@ -5630,7 +5705,6 @@ digraph NimPkgs {
   nimpy -> fision
 
   eris -> eris
-  eris -> eris_utils
 
   asciitype -> asciitype
   asciitype -> mcmurry
@@ -5664,9 +5738,7 @@ digraph NimPkgs {
 
   illwave -> illwave
   illwave -> nimwave
-
-  macrosex -> macrosex
-  macrosex -> composition
+  nimwave -> ansiwave
 
   lq -> lq
 
@@ -5691,6 +5763,7 @@ digraph NimPkgs {
   nanomsg -> nanomsg
 
   bitty -> bitty
+  bitty -> bioseq
   bitty -> boxy
 
   plugins -> plugins
@@ -5720,8 +5793,8 @@ digraph NimPkgs {
   httpx -> prologue
   prologue -> nimnews
   prologue -> fision
+  prologue -> pigeon
   httpx -> websocketx
-  websocketx -> mike
 
   ffpass -> ffpass
 
@@ -5774,16 +5847,17 @@ digraph NimPkgs {
   fidget -> spinner
   fidget -> fision
   pixie -> steganography
+  pixie -> ginger
+  ginger -> ggplotnim
+  ggplotnim -> fision
   pixie -> nimtesseract
   pixie -> cssgrid
   cssgrid -> fidgetty
   pixie -> shady
+  shady -> boxy
   pixie -> windy
   pixie -> dye
   pixie -> fidgetty
-  pixie -> fidget
-  fidget -> spinner
-  fidget -> fision
   pixie -> boxy
   pixie -> fision
 
@@ -5806,13 +5880,6 @@ digraph NimPkgs {
   reactor -> reactorfuse
 
   flatty -> flatty
-  flatty -> typography
-  typography -> hottext
-  typography -> gamelight
-  typography -> fidgetty
-  typography -> fidget
-  fidget -> spinner
-  fidget -> fision
   flatty -> pixie
   pixie -> typography
   typography -> hottext
@@ -5822,16 +5889,17 @@ digraph NimPkgs {
   fidget -> spinner
   fidget -> fision
   pixie -> steganography
+  pixie -> ginger
+  ginger -> ggplotnim
+  ggplotnim -> fision
   pixie -> nimtesseract
   pixie -> cssgrid
   cssgrid -> fidgetty
   pixie -> shady
+  shady -> boxy
   pixie -> windy
   pixie -> dye
   pixie -> fidgetty
-  pixie -> fidget
-  fidget -> spinner
-  fidget -> fision
   pixie -> boxy
   pixie -> fision
   flatty -> dimscord
@@ -5887,8 +5955,6 @@ digraph NimPkgs {
   netpbm -> netpbm
 
   physfs -> physfs
-
-  ytcc -> ytcc
 
   basic3d -> basic3d
 
@@ -5955,7 +6021,6 @@ digraph NimPkgs {
 
   synthesis -> synthesis
   synthesis -> weave
-  weave -> fftw3
   weave -> fision
   synthesis -> fision
 
@@ -5966,6 +6031,7 @@ digraph NimPkgs {
   csvql -> csvql
 
   alea -> alea
+  alea -> fision
 
   matplotnim -> matplotnim
 
@@ -5978,17 +6044,15 @@ digraph NimPkgs {
 
   hldiff -> hldiff
 
-  kiwifydownload -> kiwifydownload
-
   libfuzzy -> libfuzzy
+  libfuzzy -> libpe
+  libpe -> peni
 
   grp -> grp
 
   sksbox -> sksbox
 
   unrolled -> unrolled
-
-  psy -> psy
 
   qrgen -> qrgen
   qrgen -> qrterm
@@ -6003,6 +6067,7 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
 
   fuse -> fuse
 
@@ -6038,7 +6103,6 @@ digraph NimPkgs {
   nimibook -> nimibook
 
   packedjson -> packedjson
-  packedjson -> packets
   packedjson -> discord_rpc
   packedjson -> onedrive
   packedjson -> whip
@@ -6069,21 +6133,18 @@ digraph NimPkgs {
 
   keccak_tiny -> keccak_tiny
 
-  studiobacklottv -> studiobacklottv
+  uuid4 -> uuid4
 
   authenticode -> authenticode
+  authenticode -> peni
 
   influx -> influx
 
   nimgui -> nimgui
 
-  uuid4 -> uuid4
-
   rest -> rest
 
   quickcrypt -> quickcrypt
-
-  htmlanticopy -> htmlanticopy
 
   paramidib -> paramidib
 
@@ -6092,13 +6153,6 @@ digraph NimPkgs {
   envconfig -> envconfig
 
   bumpy -> bumpy
-  bumpy -> typography
-  typography -> hottext
-  typography -> gamelight
-  typography -> fidgetty
-  typography -> fidget
-  fidget -> spinner
-  fidget -> fision
   bumpy -> flippy
   flippy -> gamelight
   flippy -> nsu
@@ -6111,16 +6165,17 @@ digraph NimPkgs {
   fidget -> spinner
   fidget -> fision
   pixie -> steganography
+  pixie -> ginger
+  ginger -> ggplotnim
+  ggplotnim -> fision
   pixie -> nimtesseract
   pixie -> cssgrid
   cssgrid -> fidgetty
   pixie -> shady
+  shady -> boxy
   pixie -> windy
   pixie -> dye
   pixie -> fidgetty
-  pixie -> fidget
-  fidget -> spinner
-  fidget -> fision
   pixie -> boxy
   pixie -> fision
   bumpy -> cssgrid
@@ -6170,12 +6225,12 @@ digraph NimPkgs {
   parselicense -> parselicense
 
   syndicate -> syndicate
+  syndicate -> eris
 
   digitalocean -> digitalocean
 
-  base64_decoder -> base64_decoder
-
   nimlsp -> nimlsp
+  nimlsp -> fision
 
   nimaes -> nimaes
   nimaes -> quickcrypt
@@ -6216,22 +6271,11 @@ digraph NimPkgs {
   rocksdb -> eth_trie
   eth_trie -> eth_common
   eth_common -> eth_p2p
-  rocksdb -> eth
-  eth -> nimbus
-  eth -> libp2pdht
-  eth -> web3
   tempfile -> cucumber
   tempfile -> matplotnim
   tempfile -> nimrun
 
   chroma -> chroma
-  chroma -> typography
-  typography -> hottext
-  typography -> gamelight
-  typography -> fidgetty
-  typography -> fidget
-  fidget -> spinner
-  fidget -> fision
   chroma -> flippy
   flippy -> gamelight
   flippy -> nsu
@@ -6244,16 +6288,17 @@ digraph NimPkgs {
   fidget -> spinner
   fidget -> fision
   pixie -> steganography
+  pixie -> ginger
+  ginger -> ggplotnim
+  ggplotnim -> fision
   pixie -> nimtesseract
   pixie -> cssgrid
   cssgrid -> fidgetty
   pixie -> shady
+  shady -> boxy
   pixie -> windy
   pixie -> dye
   pixie -> fidgetty
-  pixie -> fidget
-  fidget -> spinner
-  fidget -> fision
   pixie -> boxy
   pixie -> fision
   chroma -> imstyle
@@ -6308,18 +6353,22 @@ digraph NimPkgs {
   libp2p -> libp2pdht
   metrics -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronos -> amysql
   chronos -> ethers
   chronos -> libp2pdht
   chronos -> faststreams
   faststreams -> graphql
   faststreams -> web3
+  web3 -> nimbus
   faststreams -> serialization
   serialization -> ssz_serialization
   serialization -> eth_p2p
   serialization -> toml_serialization
+  toml_serialization -> nimibook
   toml_serialization -> nimislides
   toml_serialization -> niprefs
   niprefs -> imstyle
@@ -6331,11 +6380,13 @@ digraph NimPkgs {
   json_serialization -> graphql
   json_serialization -> ssz_serialization
   json_serialization -> web3
+  web3 -> nimbus
   json_serialization -> eth_p2p
   json_serialization -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   json_serialization -> chronicles
   chronicles -> nimbus
   chronicles -> graphql
@@ -6350,21 +6401,25 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> web3
+  web3 -> nimbus
   chronicles -> eth_p2p
   chronicles -> presto
   chronicles -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronicles -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> fision
   chronicles -> nimlangserver
   faststreams -> protobuf_serialization
-  faststreams -> deser_json
   faststreams -> snappy
   snappy -> spryvm
   spryvm -> sprymicro
@@ -6379,16 +6434,21 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronos -> web3
+  web3 -> nimbus
   chronos -> presto
   chronos -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronos -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronos -> scorper
   chronos -> fision
   httputils -> websock
@@ -6398,17 +6458,40 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   httputils -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
-  unittest2 -> faststreams
+  web3 -> nimbus
+  unittest2 -> stew
+  stew -> nimbus
+  stew -> nimldap
+  stew -> httputils
+  httputils -> chronos
+  chronos -> nimbus
+  chronos -> metrics
+  metrics -> libp2pdht
+  metrics -> libp2p
+  libp2p -> libp2pdht
+  metrics -> eth
+  eth -> nimbus
+  eth -> ethers
+  eth -> libp2pdht
+  eth -> web3
+  web3 -> nimbus
+  chronos -> amysql
+  chronos -> ethers
+  chronos -> libp2pdht
+  chronos -> faststreams
   faststreams -> graphql
   faststreams -> web3
+  web3 -> nimbus
   faststreams -> serialization
   serialization -> ssz_serialization
   serialization -> eth_p2p
   serialization -> toml_serialization
+  toml_serialization -> nimibook
   toml_serialization -> nimislides
   toml_serialization -> niprefs
   niprefs -> imstyle
@@ -6420,11 +6503,13 @@ digraph NimPkgs {
   json_serialization -> graphql
   json_serialization -> ssz_serialization
   json_serialization -> web3
+  web3 -> nimbus
   json_serialization -> eth_p2p
   json_serialization -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   json_serialization -> chronicles
   chronicles -> nimbus
   chronicles -> graphql
@@ -6439,21 +6524,532 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> web3
+  web3 -> nimbus
   chronicles -> eth_p2p
   chronicles -> presto
   chronicles -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronicles -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> fision
   chronicles -> nimlangserver
   faststreams -> protobuf_serialization
-  faststreams -> deser_json
+  faststreams -> snappy
+  snappy -> spryvm
+  spryvm -> sprymicro
+  spryvm -> spry
+  snappy -> eth_p2p
+  chronos -> libp2p
+  libp2p -> libp2pdht
+  chronos -> websock
+  websock -> libp2p
+  libp2p -> libp2pdht
+  websock -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  chronos -> web3
+  web3 -> nimbus
+  chronos -> presto
+  chronos -> eth
+  eth -> nimbus
+  eth -> ethers
+  eth -> libp2pdht
+  eth -> web3
+  web3 -> nimbus
+  chronos -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  chronos -> scorper
+  chronos -> fision
+  httputils -> websock
+  websock -> libp2p
+  libp2p -> libp2pdht
+  websock -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  httputils -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  stew -> graphql
+  stew -> ethers
+  stew -> evmc
+  evmc -> nimbus
+  stew -> libp2pdht
+  stew -> faststreams
+  faststreams -> graphql
+  faststreams -> web3
+  web3 -> nimbus
+  faststreams -> serialization
+  serialization -> ssz_serialization
+  serialization -> eth_p2p
+  serialization -> toml_serialization
+  toml_serialization -> nimibook
+  toml_serialization -> nimislides
+  toml_serialization -> niprefs
+  niprefs -> imstyle
+  toml_serialization -> nimib
+  nimib -> nimibook
+  nimib -> nimislides
+  serialization -> protobuf_serialization
+  serialization -> json_serialization
+  json_serialization -> graphql
+  json_serialization -> ssz_serialization
+  json_serialization -> web3
+  web3 -> nimbus
+  json_serialization -> eth_p2p
+  json_serialization -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  json_serialization -> chronicles
+  chronicles -> nimbus
+  chronicles -> graphql
+  chronicles -> libp2pdht
+  chronicles -> libp2p
+  libp2p -> libp2pdht
+  chronicles -> nexus
+  chronicles -> websock
+  websock -> libp2p
+  libp2p -> libp2pdht
+  websock -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  chronicles -> web3
+  web3 -> nimbus
+  chronicles -> eth_p2p
+  chronicles -> presto
+  chronicles -> eth
+  eth -> nimbus
+  eth -> ethers
+  eth -> libp2pdht
+  eth -> web3
+  web3 -> nimbus
+  chronicles -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  chronicles -> fision
+  chronicles -> nimlangserver
+  faststreams -> protobuf_serialization
+  faststreams -> snappy
+  snappy -> spryvm
+  spryvm -> sprymicro
+  spryvm -> spry
+  snappy -> eth_p2p
+  stew -> nephyr
+  stew -> nat_traversal
+  nat_traversal -> eth
+  eth -> nimbus
+  eth -> ethers
+  eth -> libp2pdht
+  eth -> web3
+  web3 -> nimbus
+  stew -> libp2p
+  libp2p -> libp2pdht
+  stew -> nesper
+  stew -> ssz_serialization
+  stew -> chronos
+  chronos -> nimbus
+  chronos -> metrics
+  metrics -> libp2pdht
+  metrics -> libp2p
+  libp2p -> libp2pdht
+  metrics -> eth
+  eth -> nimbus
+  eth -> ethers
+  eth -> libp2pdht
+  eth -> web3
+  web3 -> nimbus
+  chronos -> amysql
+  chronos -> ethers
+  chronos -> libp2pdht
+  chronos -> faststreams
+  faststreams -> graphql
+  faststreams -> web3
+  web3 -> nimbus
+  faststreams -> serialization
+  serialization -> ssz_serialization
+  serialization -> eth_p2p
+  serialization -> toml_serialization
+  toml_serialization -> nimibook
+  toml_serialization -> nimislides
+  toml_serialization -> niprefs
+  niprefs -> imstyle
+  toml_serialization -> nimib
+  nimib -> nimibook
+  nimib -> nimislides
+  serialization -> protobuf_serialization
+  serialization -> json_serialization
+  json_serialization -> graphql
+  json_serialization -> ssz_serialization
+  json_serialization -> web3
+  web3 -> nimbus
+  json_serialization -> eth_p2p
+  json_serialization -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  json_serialization -> chronicles
+  chronicles -> nimbus
+  chronicles -> graphql
+  chronicles -> libp2pdht
+  chronicles -> libp2p
+  libp2p -> libp2pdht
+  chronicles -> nexus
+  chronicles -> websock
+  websock -> libp2p
+  libp2p -> libp2pdht
+  websock -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  chronicles -> web3
+  web3 -> nimbus
+  chronicles -> eth_p2p
+  chronicles -> presto
+  chronicles -> eth
+  eth -> nimbus
+  eth -> ethers
+  eth -> libp2pdht
+  eth -> web3
+  web3 -> nimbus
+  chronicles -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  chronicles -> fision
+  chronicles -> nimlangserver
+  faststreams -> protobuf_serialization
+  faststreams -> snappy
+  snappy -> spryvm
+  spryvm -> sprymicro
+  spryvm -> spry
+  snappy -> eth_p2p
+  chronos -> libp2p
+  libp2p -> libp2pdht
+  chronos -> websock
+  websock -> libp2p
+  libp2p -> libp2pdht
+  websock -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  chronos -> web3
+  web3 -> nimbus
+  chronos -> presto
+  chronos -> eth
+  eth -> nimbus
+  eth -> ethers
+  eth -> libp2pdht
+  eth -> web3
+  web3 -> nimbus
+  chronos -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  chronos -> scorper
+  chronos -> fision
+  stew -> stint
+  stint -> nimbus
+  stint -> eth_common
+  eth_common -> eth_p2p
+  stint -> ethers
+  stint -> eth_bloom
+  stint -> libp2pdht
+  stint -> nimgram
+  stint -> ssz_serialization
+  stint -> web3
+  web3 -> nimbus
+  stint -> nitro
+  stint -> eth_p2p
+  stint -> nim_chacha20_poly1305
+  stint -> fnv
+  stint -> contractabi
+  contractabi -> ethers
+  contractabi -> nitro
+  stint -> eth
+  eth -> nimbus
+  eth -> ethers
+  eth -> libp2pdht
+  eth -> web3
+  web3 -> nimbus
+  stint -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  stint -> emmy
+  stint -> fision
+  stew -> websock
+  websock -> libp2p
+  libp2p -> libp2pdht
+  websock -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  stew -> leopard
+  stew -> iputils
+  stew -> web3
+  web3 -> nimbus
+  stew -> rocksdb
+  rocksdb -> nimbus
+  rocksdb -> eth_trie
+  eth_trie -> eth_common
+  eth_common -> eth_p2p
+  stew -> ndns
+  stew -> nitro
+  stew -> dnsprotocol
+  dnsprotocol -> ndns
+  dnsprotocol -> resolv
+  stew -> serialization
+  serialization -> ssz_serialization
+  serialization -> eth_p2p
+  serialization -> toml_serialization
+  toml_serialization -> nimibook
+  toml_serialization -> nimislides
+  toml_serialization -> niprefs
+  niprefs -> imstyle
+  toml_serialization -> nimib
+  nimib -> nimibook
+  nimib -> nimislides
+  serialization -> protobuf_serialization
+  serialization -> json_serialization
+  json_serialization -> graphql
+  json_serialization -> ssz_serialization
+  json_serialization -> web3
+  web3 -> nimbus
+  json_serialization -> eth_p2p
+  json_serialization -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  json_serialization -> chronicles
+  chronicles -> nimbus
+  chronicles -> graphql
+  chronicles -> libp2pdht
+  chronicles -> libp2p
+  libp2p -> libp2pdht
+  chronicles -> nexus
+  chronicles -> websock
+  websock -> libp2p
+  libp2p -> libp2pdht
+  websock -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  chronicles -> web3
+  web3 -> nimbus
+  chronicles -> eth_p2p
+  chronicles -> presto
+  chronicles -> eth
+  eth -> nimbus
+  eth -> ethers
+  eth -> libp2pdht
+  eth -> web3
+  web3 -> nimbus
+  chronicles -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  chronicles -> fision
+  chronicles -> nimlangserver
+  stew -> presto
+  stew -> confutils
+  confutils -> eth
+  eth -> nimbus
+  eth -> ethers
+  eth -> libp2pdht
+  eth -> web3
+  web3 -> nimbus
+  stew -> toml_serialization
+  toml_serialization -> nimibook
+  toml_serialization -> nimislides
+  toml_serialization -> niprefs
+  niprefs -> imstyle
+  toml_serialization -> nimib
+  nimib -> nimibook
+  nimib -> nimislides
+  stew -> contractabi
+  contractabi -> ethers
+  contractabi -> nitro
+  stew -> eth
+  eth -> nimbus
+  eth -> ethers
+  eth -> libp2pdht
+  eth -> web3
+  web3 -> nimbus
+  stew -> protobuf_serialization
+  stew -> secp256k1
+  secp256k1 -> libp2pdht
+  secp256k1 -> eth_keys
+  eth_keys -> eth_keyfile
+  eth_keys -> eth_p2p
+  secp256k1 -> libp2p
+  libp2p -> libp2pdht
+  secp256k1 -> nitro
+  secp256k1 -> eth_p2p
+  secp256k1 -> eth
+  eth -> nimbus
+  eth -> ethers
+  eth -> libp2pdht
+  eth -> web3
+  web3 -> nimbus
+  stew -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  stew -> scorper
+  stew -> json_serialization
+  json_serialization -> graphql
+  json_serialization -> ssz_serialization
+  json_serialization -> web3
+  web3 -> nimbus
+  json_serialization -> eth_p2p
+  json_serialization -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  json_serialization -> chronicles
+  chronicles -> nimbus
+  chronicles -> graphql
+  chronicles -> libp2pdht
+  chronicles -> libp2p
+  libp2p -> libp2pdht
+  chronicles -> nexus
+  chronicles -> websock
+  websock -> libp2p
+  libp2p -> libp2pdht
+  websock -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  chronicles -> web3
+  web3 -> nimbus
+  chronicles -> eth_p2p
+  chronicles -> presto
+  chronicles -> eth
+  eth -> nimbus
+  eth -> ethers
+  eth -> libp2pdht
+  eth -> web3
+  web3 -> nimbus
+  chronicles -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  chronicles -> fision
+  chronicles -> nimlangserver
+  stew -> blscurve
+  blscurve -> nimbus
+  blscurve -> ssz_serialization
+  stew -> zlib
+  zlib -> websock
+  websock -> libp2p
+  libp2p -> libp2pdht
+  websock -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  stew -> snappy
+  snappy -> spryvm
+  spryvm -> sprymicro
+  spryvm -> spry
+  snappy -> eth_p2p
+  unittest2 -> faststreams
+  faststreams -> graphql
+  faststreams -> web3
+  web3 -> nimbus
+  faststreams -> serialization
+  serialization -> ssz_serialization
+  serialization -> eth_p2p
+  serialization -> toml_serialization
+  toml_serialization -> nimibook
+  toml_serialization -> nimislides
+  toml_serialization -> niprefs
+  niprefs -> imstyle
+  toml_serialization -> nimib
+  nimib -> nimibook
+  nimib -> nimislides
+  serialization -> protobuf_serialization
+  serialization -> json_serialization
+  json_serialization -> graphql
+  json_serialization -> ssz_serialization
+  json_serialization -> web3
+  web3 -> nimbus
+  json_serialization -> eth_p2p
+  json_serialization -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  json_serialization -> chronicles
+  chronicles -> nimbus
+  chronicles -> graphql
+  chronicles -> libp2pdht
+  chronicles -> libp2p
+  libp2p -> libp2pdht
+  chronicles -> nexus
+  chronicles -> websock
+  websock -> libp2p
+  libp2p -> libp2pdht
+  websock -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  chronicles -> web3
+  web3 -> nimbus
+  chronicles -> eth_p2p
+  chronicles -> presto
+  chronicles -> eth
+  eth -> nimbus
+  eth -> ethers
+  eth -> libp2pdht
+  eth -> web3
+  web3 -> nimbus
+  chronicles -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  chronicles -> fision
+  chronicles -> nimlangserver
+  faststreams -> protobuf_serialization
   faststreams -> snappy
   snappy -> spryvm
   spryvm -> sprymicro
@@ -6477,18 +7073,22 @@ digraph NimPkgs {
   libp2p -> libp2pdht
   metrics -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronos -> amysql
   chronos -> ethers
   chronos -> libp2pdht
   chronos -> faststreams
   faststreams -> graphql
   faststreams -> web3
+  web3 -> nimbus
   faststreams -> serialization
   serialization -> ssz_serialization
   serialization -> eth_p2p
   serialization -> toml_serialization
+  toml_serialization -> nimibook
   toml_serialization -> nimislides
   toml_serialization -> niprefs
   niprefs -> imstyle
@@ -6500,11 +7100,13 @@ digraph NimPkgs {
   json_serialization -> graphql
   json_serialization -> ssz_serialization
   json_serialization -> web3
+  web3 -> nimbus
   json_serialization -> eth_p2p
   json_serialization -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   json_serialization -> chronicles
   chronicles -> nimbus
   chronicles -> graphql
@@ -6519,21 +7121,25 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> web3
+  web3 -> nimbus
   chronicles -> eth_p2p
   chronicles -> presto
   chronicles -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronicles -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> fision
   chronicles -> nimlangserver
   faststreams -> protobuf_serialization
-  faststreams -> deser_json
   faststreams -> snappy
   snappy -> spryvm
   spryvm -> sprymicro
@@ -6548,16 +7154,21 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronos -> web3
+  web3 -> nimbus
   chronos -> presto
   chronos -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronos -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronos -> scorper
   chronos -> fision
   bearssl -> websock
@@ -6567,12 +7178,34 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
+  unittest2 -> libp2p
+  libp2p -> libp2pdht
   unittest2 -> ssz_serialization
-  unittest2 -> leopard
-  unittest2 -> serialization
+  unittest2 -> chronos
+  chronos -> nimbus
+  chronos -> metrics
+  metrics -> libp2pdht
+  metrics -> libp2p
+  libp2p -> libp2pdht
+  metrics -> eth
+  eth -> nimbus
+  eth -> ethers
+  eth -> libp2pdht
+  eth -> web3
+  web3 -> nimbus
+  chronos -> amysql
+  chronos -> ethers
+  chronos -> libp2pdht
+  chronos -> faststreams
+  faststreams -> graphql
+  faststreams -> web3
+  web3 -> nimbus
+  faststreams -> serialization
   serialization -> ssz_serialization
   serialization -> eth_p2p
   serialization -> toml_serialization
+  toml_serialization -> nimibook
   toml_serialization -> nimislides
   toml_serialization -> niprefs
   niprefs -> imstyle
@@ -6584,11 +7217,13 @@ digraph NimPkgs {
   json_serialization -> graphql
   json_serialization -> ssz_serialization
   json_serialization -> web3
+  web3 -> nimbus
   json_serialization -> eth_p2p
   json_serialization -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   json_serialization -> chronicles
   chronicles -> nimbus
   chronicles -> graphql
@@ -6603,23 +7238,158 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> web3
+  web3 -> nimbus
   chronicles -> eth_p2p
   chronicles -> presto
   chronicles -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronicles -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
+  chronicles -> fision
+  chronicles -> nimlangserver
+  faststreams -> protobuf_serialization
+  faststreams -> snappy
+  snappy -> spryvm
+  spryvm -> sprymicro
+  spryvm -> spry
+  snappy -> eth_p2p
+  chronos -> libp2p
+  libp2p -> libp2pdht
+  chronos -> websock
+  websock -> libp2p
+  libp2p -> libp2pdht
+  websock -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  chronos -> web3
+  web3 -> nimbus
+  chronos -> presto
+  chronos -> eth
+  eth -> nimbus
+  eth -> ethers
+  eth -> libp2pdht
+  eth -> web3
+  web3 -> nimbus
+  chronos -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  chronos -> scorper
+  chronos -> fision
+  unittest2 -> leopard
+  unittest2 -> serialization
+  serialization -> ssz_serialization
+  serialization -> eth_p2p
+  serialization -> toml_serialization
+  toml_serialization -> nimibook
+  toml_serialization -> nimislides
+  toml_serialization -> niprefs
+  niprefs -> imstyle
+  toml_serialization -> nimib
+  nimib -> nimibook
+  nimib -> nimislides
+  serialization -> protobuf_serialization
+  serialization -> json_serialization
+  json_serialization -> graphql
+  json_serialization -> ssz_serialization
+  json_serialization -> web3
+  web3 -> nimbus
+  json_serialization -> eth_p2p
+  json_serialization -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  json_serialization -> chronicles
+  chronicles -> nimbus
+  chronicles -> graphql
+  chronicles -> libp2pdht
+  chronicles -> libp2p
+  libp2p -> libp2pdht
+  chronicles -> nexus
+  chronicles -> websock
+  websock -> libp2p
+  libp2p -> libp2pdht
+  websock -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  chronicles -> web3
+  web3 -> nimbus
+  chronicles -> eth_p2p
+  chronicles -> presto
+  chronicles -> eth
+  eth -> nimbus
+  eth -> ethers
+  eth -> libp2pdht
+  eth -> web3
+  web3 -> nimbus
+  chronicles -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
   chronicles -> fision
   chronicles -> nimlangserver
   unittest2 -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
+  unittest2 -> testutils
+  testutils -> zxcvbn
+  testutils -> eth
+  eth -> nimbus
+  eth -> ethers
+  eth -> libp2pdht
+  eth -> web3
+  web3 -> nimbus
+  testutils -> chronicles
+  chronicles -> nimbus
+  chronicles -> graphql
+  chronicles -> libp2pdht
+  chronicles -> libp2p
+  libp2p -> libp2pdht
+  chronicles -> nexus
+  chronicles -> websock
+  websock -> libp2p
+  libp2p -> libp2pdht
+  websock -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  chronicles -> web3
+  web3 -> nimbus
+  chronicles -> eth_p2p
+  chronicles -> presto
+  chronicles -> eth
+  eth -> nimbus
+  eth -> ethers
+  eth -> libp2pdht
+  eth -> web3
+  web3 -> nimbus
+  chronicles -> json_rpc
+  json_rpc -> nimbus
+  json_rpc -> ethers
+  json_rpc -> web3
+  web3 -> nimbus
+  chronicles -> fision
+  chronicles -> nimlangserver
   unittest2 -> snappy
   snappy -> spryvm
   spryvm -> sprymicro
@@ -6659,10 +7429,7 @@ digraph NimPkgs {
   sequester -> sequester
 
   scraper -> scraper
-  scraper -> nbcnews
   scraper -> bluesoftcosmos
-  bluesoftcosmos -> servclip
-  scraper -> parsepage
   scraper -> brainlyextractor
   scraper -> duckduckgo
 
@@ -6715,6 +7482,7 @@ digraph NimPkgs {
   saya -> saya
 
   nimwave -> nimwave
+  nimwave -> ansiwave
 
   nimobserver -> nimobserver
 
@@ -6755,8 +7523,6 @@ digraph NimPkgs {
 
   hottext -> hottext
 
-  spdk -> spdk
-
   uspokoysa -> uspokoysa
 
   w8crc -> w8crc
@@ -6780,8 +7546,6 @@ digraph NimPkgs {
   madam -> madam
 
   assigns -> assigns
-
-  github-enthus1ast-nimisprivateip -> github-enthus1ast-nimisprivateip
 
   stopwatch -> stopwatch
 
@@ -6863,7 +7627,6 @@ digraph NimPkgs {
   wren -> wren
 
   nimclipboard -> nimclipboard
-  nimclipboard -> servclip
 
   brainlyextractor -> brainlyextractor
 
@@ -6921,6 +7684,7 @@ digraph NimPkgs {
   cookiejar -> prologue
   prologue -> nimnews
   prologue -> fision
+  prologue -> pigeon
 
   notcurses -> notcurses
 
@@ -6959,7 +7723,7 @@ digraph NimPkgs {
 
   nimha -> nimha
 
-  numtoword -> numtoword
+  snip -> snip
 
   microasynchttpserver -> microasynchttpserver
 
@@ -6968,13 +7732,11 @@ digraph NimPkgs {
   jester -> jester
   jester -> nimha
   jester -> hackpad
-  jester -> servclip
   jester -> remarker_light
   jester -> tsundoku
   jester -> nexus
   jester -> playground
   jester -> exodus
-  jester -> blackvas_cli
   jester -> sermon
   jester -> skybook
   jester -> neel
@@ -6985,10 +7747,7 @@ digraph NimPkgs {
   jester -> clown_limiter
   jester -> nimwc
   nimwc -> fision
-  jester -> pigeon
   jester -> redissessions
-
-  snip -> snip
 
   gemini -> gemini
 
@@ -7025,9 +7784,8 @@ digraph NimPkgs {
   eth_keys -> eth_keyfile
   eth_keys -> eth_p2p
 
-  nio -> nio
-
   getdns -> getdns
+  getdns -> taps
 
   grim -> grim
 
@@ -7052,9 +7810,12 @@ digraph NimPkgs {
 
   nimtest -> nimtest
   nimtest -> safeset
+  nimtest -> seq2d
 
   hashlib -> hashlib
   hashlib -> smbexec
+  hashlib -> libpe
+  libpe -> peni
 
   nim-glfw -> nim-glfw
   nim-glfw -> impulse_engine
@@ -7144,7 +7905,6 @@ digraph NimPkgs {
   cligen -> clurp
   cligen -> omnicollider
   cligen -> fushin
-  cligen -> nbcnews
   cligen -> sayhissatsuwaza
   cligen -> coco
   coco -> rconv
@@ -7160,15 +7920,13 @@ digraph NimPkgs {
   cligen -> gralg
   cligen -> xidoc
   cligen -> matext
+  matext -> xidoc
   cligen -> stage
   cligen -> markx
   cligen -> raytracingalgorithm
   cligen -> edens
   cligen -> hottie
-  cligen -> parsepage
-  cligen -> studiobacklottv
   cligen -> textformats
-  cligen -> ytcc
   cligen -> dataurl
   cligen -> mcd
   cligen -> nester
@@ -7182,7 +7940,6 @@ digraph NimPkgs {
   cligen -> unimcli
   cligen -> inim
   inim -> fision
-  cligen -> blackvas_cli
   cligen -> csvql
   cligen -> entgrep
   cligen -> omni
@@ -7192,38 +7949,35 @@ digraph NimPkgs {
   cligen -> dimage
   cligen -> bu
   bu -> ndup
-  cligen -> pricecsv
+  cligen -> spurdify
   cligen -> logue
   logue -> prologue
   prologue -> nimnews
   prologue -> fision
+  prologue -> pigeon
   cligen -> jester2swagger
   cligen -> nimff
   cligen -> checkif
   cligen -> github_release
   cligen -> hldiff
   cligen -> golden
-  cligen -> kiwifydownload
+  cligen -> suggest
   cligen -> fidget
   fidget -> spinner
   fidget -> fision
   cligen -> expander
   cligen -> gerbil
   cligen -> mpwc
-  cligen -> bump
-  bump -> golden
-  bump -> fision
   cligen -> palette
   palette -> nimaterial
-  cligen -> norman
-  cligen -> spurdify
-  cligen -> suggest
   cligen -> svgo
+  cligen -> norman
+  cligen -> thes
+  cligen -> xcm
   cligen -> nimterop
   nimterop -> nimdbx
   nimterop -> nimodpi
   nimterop -> nimpcre
-  nimterop -> libvlc
   nimterop -> libsvm
   nimterop -> nimpari
   nimterop -> inumon
@@ -7255,13 +8009,8 @@ digraph NimPkgs {
   cligen -> nimdenter
   cligen -> gnu
   cligen -> nimagehide
-  cligen -> thes
   cligen -> autotyper
   cligen -> procs
-  cligen -> tokarax
-  cligen -> vimeo
-  vimeo -> kiwifydownload
-  cligen -> xcm
   cligen -> fision
   cligen -> omnimax
   cligen -> uap
@@ -7303,8 +8052,6 @@ digraph NimPkgs {
 
   nish -> nish
 
-  gm_api -> gm_api
-
   nimfm -> nimfm
 
   cps -> cps
@@ -7336,13 +8083,6 @@ digraph NimPkgs {
 
   asynctest -> asynctest
   asynctest -> libp2pdht
-  asynctest -> websock
-  websock -> libp2p
-  libp2p -> libp2pdht
-  websock -> json_rpc
-  json_rpc -> nimbus
-  json_rpc -> ethers
-  json_rpc -> web3
 
   hlibssh2 -> hlibssh2
 
@@ -7351,7 +8091,7 @@ digraph NimPkgs {
   analytics -> analytics
   analytics -> choosenim
 
-  eris_utils -> eris_utils
+  runeterra_decks -> runeterra_decks
 
   hnimast -> hnimast
   hnimast -> nimtrs
@@ -7366,8 +8106,6 @@ digraph NimPkgs {
   hpprint -> hcparse
   hpprint -> hparse
 
-  runeterra_decks -> runeterra_decks
-
   the_nim_alliance -> the_nim_alliance
 
   xors3d -> xors3d
@@ -7379,6 +8117,8 @@ digraph NimPkgs {
   xom -> xom
 
   ndf -> ndf
+
+  io-egl -> io-egl
 
   vmprotect -> vmprotect
 
@@ -7403,11 +8143,10 @@ digraph NimPkgs {
   norman -> norman
 
   persistent_enums -> persistent_enums
+  persistent_enums -> mcu_utils
+  mcu_utils -> nephyr
 
   qt5_qtsql -> qt5_qtsql
-
-  vimeo -> vimeo
-  vimeo -> kiwifydownload
 
   edn -> edn
   edn -> reframe
@@ -7464,9 +8203,9 @@ digraph NimPkgs {
   pdba -> pdba
 
   dotenv -> dotenv
+  dotenv -> listenbrainz
   dotenv -> karax
   karax -> htmltovdom
-  karax -> parsepage
   karax -> nexus
   karax -> kview
   karax -> hotdoc
@@ -7485,9 +8224,10 @@ digraph NimPkgs {
   awk -> awk
   awk -> fision
 
-  bs -> bs
-
   shady -> shady
+  shady -> boxy
+
+  bs -> bs
 
   bcra -> bcra
 
@@ -7518,6 +8258,7 @@ digraph NimPkgs {
   logue -> prologue
   prologue -> nimnews
   prologue -> fision
+  prologue -> pigeon
 
   jester2swagger -> jester2swagger
 
@@ -7553,8 +8294,6 @@ digraph NimPkgs {
   rect -> rect
 
   mofuhttputils -> mofuhttputils
-
-  stor -> stor
 
   dnsstamps -> dnsstamps
 
@@ -7609,7 +8348,6 @@ digraph NimPkgs {
   nimgen -> treesitter_cpp
   nimgen -> treesitter_typescript
   nimgen -> nimclipboard
-  nimclipboard -> servclip
   nimgen -> nim7z
   nimgen -> wren
   nimgen -> treesitter_python
@@ -7642,13 +8380,12 @@ digraph NimPkgs {
   regex -> finalseg
   regex -> sue
   regex -> textformats
-  regex -> nimem
   regex -> envconfig
   regex -> prologue
   prologue -> nimnews
   prologue -> fision
+  prologue -> pigeon
   regex -> klymene
-  klymene -> madam
   regex -> docopt
   docopt -> gen
   docopt -> nimfcuk
@@ -7666,7 +8403,6 @@ digraph NimPkgs {
   docopt -> ndf
   docopt -> aqcalc
   docopt -> hotdoc
-  docopt -> dye
   docopt -> foliant
   docopt -> nimnews
   docopt -> layonara_nwn
@@ -7682,6 +8418,7 @@ digraph NimPkgs {
   neverwinter -> nasher
   neverwinter -> nwsync
   docopt -> nwsync
+  regex -> peni
   regex -> sas
   regex -> nimraylib_now
   nimraylib_now -> snekim
@@ -7700,7 +8437,6 @@ digraph NimPkgs {
   nimterop -> nimdbx
   nimterop -> nimodpi
   nimterop -> nimpcre
-  nimterop -> libvlc
   nimterop -> libsvm
   nimterop -> nimpari
   nimterop -> inumon
@@ -7730,6 +8466,7 @@ digraph NimPkgs {
   nimterop -> fision
   nimterop -> nestegg
   regex -> fision
+  regex -> pigeon
   regex -> vmvc
   regex -> changer
   regex -> fastkiss
@@ -7759,16 +8496,12 @@ digraph NimPkgs {
   sixense -> sixense
 
   watchout -> watchout
-  watchout -> tim
-  tim -> madam
 
   prettystr -> prettystr
 
   xidoc -> xidoc
 
   ssostrings -> ssostrings
-
-  gnuplotlib -> gnuplotlib
 
   untar -> untar
   untar -> arraymancer
@@ -7787,7 +8520,6 @@ digraph NimPkgs {
   arraymancer -> datamancer
   datamancer -> ggplotnim
   ggplotnim -> fision
-  datamancer -> latexdsl
   datamancer -> fision
   arraymancer -> linear_models
   arraymancer -> distances
@@ -7850,7 +8582,6 @@ digraph NimPkgs {
   nimgen -> treesitter_cpp
   nimgen -> treesitter_typescript
   nimgen -> nimclipboard
-  nimclipboard -> servclip
   nimgen -> nim7z
   nimgen -> wren
   nimgen -> treesitter_python
@@ -7905,7 +8636,6 @@ digraph NimPkgs {
   arraymancer -> datamancer
   datamancer -> ggplotnim
   ggplotnim -> fision
-  datamancer -> latexdsl
   datamancer -> fision
   arraymancer -> linear_models
   arraymancer -> distances
@@ -7964,6 +8694,7 @@ digraph NimPkgs {
   noisy -> noisy
 
   aspartame -> aspartame
+  aspartame -> xidoc
 
   kissfft -> kissfft
 
@@ -7986,6 +8717,7 @@ digraph NimPkgs {
   paramidi_soundfonts -> ansiwave
 
   cbor -> cbor
+  cbor -> eris
 
   trick -> trick
   trick -> natu
@@ -8048,6 +8780,7 @@ digraph NimPkgs {
   loony -> loony
 
   coap -> coap
+  coap -> eris
   coap -> ikeahomesmart
 
   treesitter_php -> treesitter_php
@@ -8055,16 +8788,12 @@ digraph NimPkgs {
   commandeer -> commandeer
   commandeer -> cucumber
   commandeer -> moustachu
-  moustachu -> zfplugs
 
   hex -> hex
 
   nimview -> nimview
 
   camelize -> camelize
-
-  strings -> strings
-  strings -> astdot
 
   genode -> genode
 
@@ -8094,7 +8823,6 @@ digraph NimPkgs {
   datamancer -> datamancer
   datamancer -> ggplotnim
   ggplotnim -> fision
-  datamancer -> latexdsl
   datamancer -> fision
 
   wstp -> wstp
@@ -8115,18 +8843,20 @@ digraph NimPkgs {
   httpx -> prologue
   prologue -> nimnews
   prologue -> fision
+  prologue -> pigeon
   httpx -> websocketx
-  websocketx -> mike
 
   json_serialization -> json_serialization
   json_serialization -> graphql
   json_serialization -> ssz_serialization
   json_serialization -> web3
+  web3 -> nimbus
   json_serialization -> eth_p2p
   json_serialization -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   json_serialization -> chronicles
   chronicles -> nimbus
   chronicles -> graphql
@@ -8141,17 +8871,22 @@ digraph NimPkgs {
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> web3
+  web3 -> nimbus
   chronicles -> eth_p2p
   chronicles -> presto
   chronicles -> eth
   eth -> nimbus
+  eth -> ethers
   eth -> libp2pdht
   eth -> web3
+  web3 -> nimbus
   chronicles -> json_rpc
   json_rpc -> nimbus
   json_rpc -> ethers
   json_rpc -> web3
+  web3 -> nimbus
   chronicles -> fision
   chronicles -> nimlangserver
 
@@ -8205,6 +8940,7 @@ digraph NimPkgs {
   unsplash -> unsplash
 
   evmc -> evmc
+  evmc -> nimbus
 
   nmqtt -> nmqtt
   nmqtt -> eloverblik
@@ -8220,7 +8956,6 @@ digraph NimPkgs {
   sqliteral -> sqliteral
 
   nyml -> nyml
-  nyml -> madam
   nyml -> supranim
 
   teafiles -> teafiles
@@ -8232,7 +8967,7 @@ digraph NimPkgs {
   gameoflife -> gameoflife
 
   tkrzw -> tkrzw
-  tkrzw -> eris_utils
+  tkrzw -> eris
 
   rcedit -> rcedit
 
@@ -8275,7 +9010,6 @@ digraph NimPkgs {
   arraymancer -> datamancer
   datamancer -> ggplotnim
   ggplotnim -> fision
-  datamancer -> latexdsl
   datamancer -> fision
   arraymancer -> linear_models
   arraymancer -> distances
@@ -8293,13 +9027,11 @@ digraph NimPkgs {
   httpbeast -> jester
   jester -> nimha
   jester -> hackpad
-  jester -> servclip
   jester -> remarker_light
   jester -> tsundoku
   jester -> nexus
   jester -> playground
   jester -> exodus
-  jester -> blackvas_cli
   jester -> sermon
   jester -> skybook
   jester -> neel
@@ -8310,7 +9042,6 @@ digraph NimPkgs {
   jester -> clown_limiter
   jester -> nimwc
   nimwc -> fision
-  jester -> pigeon
   jester -> redissessions
   httpbeast -> jesterwithplugins
   jesterwithplugins -> jestercookiemsgs
@@ -8320,10 +9051,11 @@ digraph NimPkgs {
   httpbeast -> whip
   asynctools -> fidgetty
   asynctools -> nimnews
+  asynctools -> nimlsp
+  nimlsp -> fision
 
   karax -> karax
   karax -> htmltovdom
-  karax -> parsepage
   karax -> nexus
   karax -> kview
   karax -> hotdoc
@@ -8371,10 +9103,6 @@ digraph NimPkgs {
   rocksdb -> eth_trie
   eth_trie -> eth_common
   eth_common -> eth_p2p
-  rocksdb -> eth
-  eth -> nimbus
-  eth -> libp2pdht
-  eth -> web3
 
   subviewer -> subviewer
 
@@ -8409,6 +9137,7 @@ digraph NimPkgs {
   supersnappy -> fision
 
   nimgl -> nimgl
+  nimgl -> imstyle
   nimgl -> nimbleimgui
   nimgl -> imnotify
   nimgl -> paranim

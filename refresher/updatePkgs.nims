@@ -17,7 +17,7 @@ proc run(pkgItems: seq[JsonNode]; cmd: string) =
   defer: maxRunning cmd, 0
   preCompile cmd
   for pkg in pkgItems:
-    maxRunning cmd, 6
+    maxRunning cmd, 2
     if pkg.hasKey("url") and "git" == pkg["method"].getStr:
       let pkgJSON = $pkg
       exec "sleep 0.23"
