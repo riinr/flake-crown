@@ -77,6 +77,14 @@
   inputs."chrono".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chrono".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."nimwave".owner = "nim-nix-pkgs";
+  inputs."nimwave".ref   = "master";
+  inputs."nimwave".repo  = "nimwave";
+  inputs."nimwave".dir   = "0_8_0";
+  inputs."nimwave".type  = "github";
+  inputs."nimwave".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimwave".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

@@ -1,6 +1,6 @@
 {
   "name": "libp2p",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "author": "Status Research & Development GmbH",
   "desc": "LibP2P implementation",
   "license": "MIT",
@@ -36,10 +36,17 @@
     },
     {
       "name": "dnsclient",
-      "str": ">= 0.1.2",
+      "str": ">= 0.3.0 & < 0.4.0",
       "ver": {
-        "kind": "verEqLater",
-        "ver": "0.1.2"
+        "kind": "verIntersect",
+        "verILeft": {
+          "kind": "verEqLater",
+          "ver": "0.3.0"
+        },
+        "verIRight": {
+          "kind": "verEarlier",
+          "ver": "0.4.0"
+        }
       }
     },
     {
@@ -93,6 +100,21 @@
       "str": "any version",
       "ver": {
         "kind": "verAny"
+      }
+    },
+    {
+      "name": "unittest2",
+      "str": ">= 0.0.5 & < 0.1.0",
+      "ver": {
+        "kind": "verIntersect",
+        "verILeft": {
+          "kind": "verEqLater",
+          "ver": "0.0.5"
+        },
+        "verIRight": {
+          "kind": "verEarlier",
+          "ver": "0.1.0"
+        }
       }
     }
   ],

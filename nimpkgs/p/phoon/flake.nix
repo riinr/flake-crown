@@ -23,6 +23,30 @@
   inputs."phoon-0_1_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."phoon-0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."phoon-0_2_0".dir   = "0_2_0";
+  inputs."phoon-0_2_0".owner = "nim-nix-pkgs";
+  inputs."phoon-0_2_0".ref   = "master";
+  inputs."phoon-0_2_0".repo  = "phoon";
+  inputs."phoon-0_2_0".type  = "github";
+  inputs."phoon-0_2_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."phoon-0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."phoon-0_3_0".dir   = "0_3_0";
+  inputs."phoon-0_3_0".owner = "nim-nix-pkgs";
+  inputs."phoon-0_3_0".ref   = "master";
+  inputs."phoon-0_3_0".repo  = "phoon";
+  inputs."phoon-0_3_0".type  = "github";
+  inputs."phoon-0_3_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."phoon-0_3_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."phoon-0_4_0".dir   = "0_4_0";
+  inputs."phoon-0_4_0".owner = "nim-nix-pkgs";
+  inputs."phoon-0_4_0".ref   = "master";
+  inputs."phoon-0_4_0".repo  = "phoon";
+  inputs."phoon-0_4_0".type  = "github";
+  inputs."phoon-0_4_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."phoon-0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."phoon-v0_1_0".dir   = "v0_1_0";
   inputs."phoon-v0_1_0".owner = "nim-nix-pkgs";
   inputs."phoon-v0_1_0".ref   = "master";

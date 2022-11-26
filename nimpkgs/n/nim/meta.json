@@ -1353,6 +1353,38 @@
       "binDir": "",
       "srcDir": "",
       "backend": "c",
+      "ref": "refs/tags/v1.6.10"
+    },
+    {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest",
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
       "ref": "refs/tags/v1.6.2"
     },
     {
@@ -1471,6 +1503,8 @@
     "refs/heads/araq-fixes-18683",
     "refs/heads/araq-fixes-19364",
     "refs/heads/araq-fixes-20604",
+    "refs/heads/araq-fixes-20808",
+    "refs/heads/araq-fixes-20865",
     "refs/heads/araq-generic-inst-fix",
     "refs/heads/araq-goto-exceptions-threads",
     "refs/heads/araq-ic",
@@ -1518,21 +1552,23 @@
     "refs/heads/miran-raises",
     "refs/heads/more_of_useMalloc",
     "refs/heads/parser3",
-    "refs/heads/pr#20694",
-    "refs/heads/pr#20699",
     "refs/heads/pr_10542",
-    "refs/heads/pr_11415",
     "refs/heads/pr_16253",
     "refs/heads/pr_fix_12282_vm_distinct_copy_followup",
     "refs/heads/pr_fix_D20200425T141726_js_unsigned_dollar",
     "refs/heads/pr_foo",
     "refs/heads/pr_gendeps",
+    "refs/heads/pr_generics",
+    "refs/heads/pr_macros_default",
     "refs/heads/pr_metatype",
     "refs/heads/pr_orc_generic",
     "refs/heads/pr_type_expr",
     "refs/heads/pr_type_mismatch",
+    "refs/heads/pr_unittest",
+    "refs/heads/pr_vtable",
     "refs/heads/revert-18353-araq-orc-booting",
     "refs/heads/ringabout-patch-1",
+    "refs/heads/ringabout-patch-2",
     "refs/heads/set_range_int",
     "refs/heads/snake-fixes",
     "refs/heads/spawn_for_arc",
@@ -1589,6 +1625,7 @@
     "refs/tags/v1.4.6",
     "refs/tags/v1.4.8",
     "refs/tags/v1.6.0",
+    "refs/tags/v1.6.10",
     "refs/tags/v1.6.2",
     "refs/tags/v1.6.4",
     "refs/tags/v1.6.6",
@@ -1597,32 +1634,43 @@
   ],
   "heads": [
     {
-      "name": "compiler",
+      "name": "nim",
       "version": "1.6.6",
       "author": "Andreas Rumpf",
       "desc": "Compiler package providing the compiler sources as a library.",
       "license": "MIT",
-      "skipDirs": [],
-      "skipFiles": [],
-      "skipExt": [],
-      "installDirs": [
-        "compiler",
-        "nimsuggest",
-        "compiler"
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
       ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
       "installFiles": [],
       "installExt": [],
-      "requires": [
-        {
-          "name": "nim",
-          "str": ">= 0.14.0",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "0.14.0"
-          }
-        }
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
       ],
-      "bin": [],
       "binDir": "",
       "srcDir": "",
       "backend": "c",

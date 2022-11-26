@@ -31,6 +31,14 @@
   inputs."taskpools-v0_0_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."taskpools-v0_0_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."taskpools-v0_0_4".dir   = "v0_0_4";
+  inputs."taskpools-v0_0_4".owner = "nim-nix-pkgs";
+  inputs."taskpools-v0_0_4".ref   = "master";
+  inputs."taskpools-v0_0_4".repo  = "taskpools";
+  inputs."taskpools-v0_0_4".type  = "github";
+  inputs."taskpools-v0_0_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."taskpools-v0_0_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

@@ -13,21 +13,29 @@
   inputs.src-nimgram-master.repo  = "nimgram";
   inputs.src-nimgram-master.type  = "github";
   
-  inputs."zippy".owner = "nim-nix-pkgs";
-  inputs."zippy".ref   = "master";
-  inputs."zippy".repo  = "zippy";
-  inputs."zippy".dir   = "0_10_4";
-  inputs."zippy".type  = "github";
-  inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."github.com/nimgram/tl-parser".owner = "nim-nix-pkgs";
+  inputs."github.com/nimgram/tl-parser".ref   = "master";
+  inputs."github.com/nimgram/tl-parser".repo  = "github.com/nimgram/tl-parser";
+  inputs."github.com/nimgram/tl-parser".dir   = "";
+  inputs."github.com/nimgram/tl-parser".type  = "github";
+  inputs."github.com/nimgram/tl-parser".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/nimgram/tl-parser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nimcrypto".owner = "nim-nix-pkgs";
-  inputs."nimcrypto".ref   = "master";
-  inputs."nimcrypto".repo  = "nimcrypto";
-  inputs."nimcrypto".dir   = "master";
-  inputs."nimcrypto".type  = "github";
-  inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."github.com/nimgram/tl-types".owner = "nim-nix-pkgs";
+  inputs."github.com/nimgram/tl-types".ref   = "master";
+  inputs."github.com/nimgram/tl-types".repo  = "github.com/nimgram/tl-types";
+  inputs."github.com/nimgram/tl-types".dir   = "";
+  inputs."github.com/nimgram/tl-types".type  = "github";
+  inputs."github.com/nimgram/tl-types".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/nimgram/tl-types".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."crc32".owner = "nim-nix-pkgs";
+  inputs."crc32".ref   = "master";
+  inputs."crc32".repo  = "crc32";
+  inputs."crc32".dir   = "master";
+  inputs."crc32".type  = "github";
+  inputs."crc32".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."crc32".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."stint".owner = "nim-nix-pkgs";
   inputs."stint".ref   = "master";
@@ -37,21 +45,29 @@
   inputs."stint".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stint".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."gmp".owner = "nim-nix-pkgs";
-  inputs."gmp".ref   = "master";
-  inputs."gmp".repo  = "gmp";
-  inputs."gmp".dir   = "v0_2_5";
-  inputs."gmp".type  = "github";
-  inputs."gmp".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."gmp".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."github.com/dadadani/bigints".owner = "nim-nix-pkgs";
+  inputs."github.com/dadadani/bigints".ref   = "master";
+  inputs."github.com/dadadani/bigints".repo  = "github.com/dadadani/bigints";
+  inputs."github.com/dadadani/bigints".dir   = "";
+  inputs."github.com/dadadani/bigints".type  = "github";
+  inputs."github.com/dadadani/bigints".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/dadadani/bigints".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."github-dadadani-nim-random".owner = "nim-nix-pkgs";
-  inputs."github-dadadani-nim-random".ref   = "master";
-  inputs."github-dadadani-nim-random".repo  = "github-dadadani-nim-random";
-  inputs."github-dadadani-nim-random".dir   = "master";
-  inputs."github-dadadani-nim-random".type  = "github";
-  inputs."github-dadadani-nim-random".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."github-dadadani-nim-random".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nimcrypto".owner = "nim-nix-pkgs";
+  inputs."nimcrypto".ref   = "master";
+  inputs."nimcrypto".repo  = "nimcrypto";
+  inputs."nimcrypto".dir   = "master";
+  inputs."nimcrypto".type  = "github";
+  inputs."nimcrypto".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimcrypto".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."norm".owner = "nim-nix-pkgs";
+  inputs."norm".ref   = "master";
+  inputs."norm".repo  = "norm";
+  inputs."norm".dir   = "2_6_0";
+  inputs."norm".type  = "github";
+  inputs."norm".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."norm".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

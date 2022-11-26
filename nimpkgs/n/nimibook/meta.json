@@ -105,7 +105,7 @@
   "heads": [
     {
       "name": "nimibook",
-      "version": "0.2.1",
+      "version": "0.3.0",
       "author": "Pietro Peterlongo",
       "desc": "A port of mdbook to nim",
       "license": "MIT",
@@ -126,10 +126,10 @@
         },
         {
           "name": "nimib",
-          "str": ">= 0.2.1",
+          "str": "#head",
           "ver": {
-            "kind": "verEqLater",
-            "ver": "0.2.1"
+            "kind": "verSpecial",
+            "spe": "#head"
           }
         },
         {
@@ -138,6 +138,14 @@
           "ver": {
             "kind": "verEqLater",
             "ver": "1.0.3"
+          }
+        },
+        {
+          "name": "toml_serialization",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
           }
         }
       ],

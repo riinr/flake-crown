@@ -1,5 +1,5 @@
 {
-  description = ''instantiated "pointers" to cached AST'';
+  description = ''generalized routine and symbol pointers'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";

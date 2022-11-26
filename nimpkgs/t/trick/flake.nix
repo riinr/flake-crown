@@ -39,6 +39,14 @@
   inputs."trick-0_1_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."trick-0_1_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."trick-0_1_4".dir   = "0_1_4";
+  inputs."trick-0_1_4".owner = "nim-nix-pkgs";
+  inputs."trick-0_1_4".ref   = "master";
+  inputs."trick-0_1_4".repo  = "trick";
+  inputs."trick-0_1_4".type  = "github";
+  inputs."trick-0_1_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."trick-0_1_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

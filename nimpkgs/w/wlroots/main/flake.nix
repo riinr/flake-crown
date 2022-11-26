@@ -21,6 +21,14 @@
   inputs."wayland".inputs.nixpkgs.follows = "nixpkgs";
   inputs."wayland".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."xkb".owner = "nim-nix-pkgs";
+  inputs."xkb".ref   = "master";
+  inputs."xkb".repo  = "xkb";
+  inputs."xkb".dir   = "main";
+  inputs."xkb".type  = "github";
+  inputs."xkb".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."xkb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

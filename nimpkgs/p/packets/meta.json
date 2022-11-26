@@ -135,23 +135,10 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/tags/v0.6"
-    }
-  ],
-  "description": "Declarative packets system for serializing/deserializing and marshalling",
-  "license": "MIT",
-  "web": "https://github.com/Q-Master/packets.nim",
-  "refs": [
-    "refs/heads/master",
-    "refs/tags/v0.4.2",
-    "refs/tags/v0.5",
-    "refs/tags/v0.5.1",
-    "refs/tags/v0.6",
-    ""
-  ],
-  "heads": [
+    },
     {
       "name": "packets",
-      "version": "0.4.1",
+      "version": "0.6.1",
       "author": "Vladimir Berezenko <qmaster2000@gmail.com>",
       "desc": "Pure Nim declarative packets system for serializing/deserializing",
       "license": "MIT",
@@ -169,20 +156,47 @@
             "kind": "verEqLater",
             "ver": "1.4.00"
           }
-        },
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.6.1"
+    }
+  ],
+  "description": "Declarative packets system for serializing/deserializing and marshalling",
+  "license": "MIT",
+  "web": "https://github.com/Q-Master/packets.nim",
+  "refs": [
+    "refs/heads/master",
+    "refs/tags/v0.4.2",
+    "refs/tags/v0.5",
+    "refs/tags/v0.5.1",
+    "refs/tags/v0.6",
+    "refs/tags/v0.6.1",
+    ""
+  ],
+  "heads": [
+    {
+      "name": "packets",
+      "version": "0.6.1",
+      "author": "Vladimir Berezenko <qmaster2000@gmail.com>",
+      "desc": "Pure Nim declarative packets system for serializing/deserializing",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
         {
-          "name": "packedjson",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "crc32",
-          "str": ">= 0.1.1",
+          "name": "nim",
+          "str": ">= 1.4.00",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.1.1"
+            "ver": "1.4.00"
           }
         }
       ],

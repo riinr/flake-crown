@@ -1,5 +1,5 @@
 {
-  description = ''A tiny static file web server. IPv4 & IPv6 supported!'';
+  description = ''A tiny static file web server.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";

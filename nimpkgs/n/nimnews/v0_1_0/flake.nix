@@ -48,7 +48,7 @@
   inputs."npeg".owner = "nim-nix-pkgs";
   inputs."npeg".ref   = "master";
   inputs."npeg".repo  = "npeg";
-  inputs."npeg".dir   = "0_26_0";
+  inputs."npeg".dir   = "0_27_0";
   inputs."npeg".type  = "github";
   inputs."npeg".inputs.nixpkgs.follows = "nixpkgs";
   inputs."npeg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -64,7 +64,7 @@
   inputs."prologue".owner = "nim-nix-pkgs";
   inputs."prologue".ref   = "master";
   inputs."prologue".repo  = "prologue";
-  inputs."prologue".dir   = "v0_6_2";
+  inputs."prologue".dir   = "v0_6_4";
   inputs."prologue".type  = "github";
   inputs."prologue".inputs.nixpkgs.follows = "nixpkgs";
   inputs."prologue".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

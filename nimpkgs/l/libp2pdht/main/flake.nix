@@ -101,6 +101,22 @@
   inputs."asynctest".inputs.nixpkgs.follows = "nixpkgs";
   inputs."asynctest".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."github.com/status-im/nim-datastore".owner = "nim-nix-pkgs";
+  inputs."github.com/status-im/nim-datastore".ref   = "master";
+  inputs."github.com/status-im/nim-datastore".repo  = "github.com/status-im/nim-datastore";
+  inputs."github.com/status-im/nim-datastore".dir   = "";
+  inputs."github.com/status-im/nim-datastore".type  = "github";
+  inputs."github.com/status-im/nim-datastore".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/status-im/nim-datastore".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."questionable".owner = "nim-nix-pkgs";
+  inputs."questionable".ref   = "master";
+  inputs."questionable".repo  = "questionable";
+  inputs."questionable".dir   = "0_10_7";
+  inputs."questionable".type  = "github";
+  inputs."questionable".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."questionable".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

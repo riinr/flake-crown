@@ -422,6 +422,62 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/tags/v0.2.4"
+    },
+    {
+      "name": "unchained",
+      "version": "0.2.5",
+      "author": "Vindaar",
+      "desc": "Fully type safe, compile time only units library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.2.5"
+    },
+    {
+      "name": "unchained",
+      "version": "0.3.0",
+      "author": "Vindaar",
+      "desc": "Fully type safe, compile time only units library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.0"
     }
   ],
   "description": "Fully type safe, compile time only units library",
@@ -429,6 +485,7 @@
   "web": "https://github.com/SciNim/unchained",
   "refs": [
     "refs/heads/addBecquerel",
+    "refs/heads/addQuanityConcepts",
     "refs/heads/allowExport",
     "refs/heads/declarativeQuantities",
     "refs/heads/declarativeUnits",
@@ -441,11 +498,14 @@
     "refs/heads/fixPoundForce",
     "refs/heads/fixToType",
     "refs/heads/fixUnitOrderingAndRad",
+    "refs/heads/improvePower",
     "refs/heads/master",
     "refs/heads/moreCompoundFixes",
     "refs/heads/moreImperial",
+    "refs/heads/newSiPrefixes",
     "refs/heads/teslaAndNaturalUnits",
     "refs/heads/testNim1.4",
+    "refs/heads/typedescsAndAliases",
     "refs/heads/unitsFromMacro",
     "refs/tags/v0.1.0",
     "refs/tags/v0.1.1",
@@ -462,12 +522,14 @@
     "refs/tags/v0.2.2",
     "refs/tags/v0.2.3",
     "refs/tags/v0.2.4",
+    "refs/tags/v0.2.5",
+    "refs/tags/v0.3.0",
     ""
   ],
   "heads": [
     {
       "name": "unchained",
-      "version": "0.1.9",
+      "version": "0.3.1",
       "author": "Vindaar",
       "desc": "Fully type safe, compile time only units library",
       "license": "MIT",
@@ -480,10 +542,10 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.2.0",
+          "str": ">= 1.6.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.2.0"
+            "ver": "1.6.0"
           }
         }
       ],

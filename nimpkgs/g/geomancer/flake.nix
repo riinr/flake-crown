@@ -39,6 +39,14 @@
   inputs."geomancer-1_0_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."geomancer-1_0_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."geomancer-1_0_3".dir   = "1_0_3";
+  inputs."geomancer-1_0_3".owner = "nim-nix-pkgs";
+  inputs."geomancer-1_0_3".ref   = "master";
+  inputs."geomancer-1_0_3".repo  = "geomancer";
+  inputs."geomancer-1_0_3".type  = "github";
+  inputs."geomancer-1_0_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."geomancer-1_0_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

@@ -260,6 +260,38 @@
       "ref": "refs/tags/v0.13.1"
     },
     {
+      "name": "nimble",
+      "version": "0.14.0",
+      "author": "Dominik Picheta",
+      "desc": "Nim package manager.",
+      "license": "BSD",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.13.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.13.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimble"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.14.0"
+    },
+    {
       "name": "babel",
       "version": "0.2.0",
       "author": "Dominik Picheta",
@@ -953,6 +985,7 @@
     "refs/tags/v0.12.0",
     "refs/tags/v0.13.0",
     "refs/tags/v0.13.1",
+    "refs/tags/v0.14.0",
     "refs/tags/v0.2",
     "refs/tags/v0.4",
     "refs/tags/v0.6",

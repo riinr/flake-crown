@@ -13,14 +13,6 @@
   inputs.src-ballpark-v1_0_0.repo  = "ballpark";
   inputs.src-ballpark-v1_0_0.type  = "github";
   
-  inputs."fsnotify".owner = "nim-nix-pkgs";
-  inputs."fsnotify".ref   = "master";
-  inputs."fsnotify".repo  = "fsnotify";
-  inputs."fsnotify".dir   = "v0_1_4";
-  inputs."fsnotify".type  = "github";
-  inputs."fsnotify".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."fsnotify".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

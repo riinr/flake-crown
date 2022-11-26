@@ -199,6 +199,14 @@
   inputs."zfblast-v0_2_7".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfblast-v0_2_7".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."zfblast-v0_2_8".dir   = "v0_2_8";
+  inputs."zfblast-v0_2_8".owner = "nim-nix-pkgs";
+  inputs."zfblast-v0_2_8".ref   = "master";
+  inputs."zfblast-v0_2_8".repo  = "zfblast";
+  inputs."zfblast-v0_2_8".type  = "github";
+  inputs."zfblast-v0_2_8".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zfblast-v0_2_8".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

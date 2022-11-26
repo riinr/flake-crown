@@ -185,12 +185,41 @@
           "ver": {
             "kind": "verAny"
           }
+        },
+        {
+          "name": "ethash",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "blscurve",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "evmc",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "web3",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
         }
       ],
       "bin": [
         "nimbus",
         "fluffy",
-        "portalcli"
+        "portalcli",
+        "lc_proxy"
       ],
       "binDir": "build",
       "srcDir": "",
@@ -292,12 +321,41 @@
           "ver": {
             "kind": "verAny"
           }
+        },
+        {
+          "name": "ethash",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "blscurve",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "evmc",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "web3",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
         }
       ],
       "bin": [
         "nimbus",
         "fluffy",
-        "portalcli"
+        "portalcli",
+        "lc_proxy"
       ],
       "binDir": "build",
       "srcDir": "",
@@ -315,12 +373,12 @@
     "refs/heads/caching-db-demo",
     "refs/heads/debug",
     "refs/heads/debug-discovery",
+    "refs/heads/dev/etan/sf-shanghaiheader",
     "refs/heads/discovery-debug",
     "refs/heads/eth2-submodule",
     "refs/heads/feature/android-api",
     "refs/heads/feature/nim-import-analysis",
     "refs/heads/headerWithProof",
-    "refs/heads/headerWithProof2",
     "refs/heads/jl/evmc-dynamic-loader",
     "refs/heads/jl/head-sync",
     "refs/heads/jl/loadable-third-party-evm",
@@ -331,11 +389,12 @@
     "refs/heads/libp2p-testnet",
     "refs/heads/master",
     "refs/heads/merge-interop-test",
-    "refs/heads/new-async-vm2",
+    "refs/heads/parallel-gst",
     "refs/heads/poc-overlay-protocol",
-    "refs/heads/prep-for-full-sync-after-snap-make-5",
     "refs/heads/rpc",
     "refs/heads/rpc-tests",
+    "refs/heads/snap-sync-interval-complement-method-to-speed-up-trie-perusal",
+    "refs/heads/stateless",
     "refs/heads/status_go_dynamic",
     "refs/heads/status_go_integration",
     "refs/heads/testnets2",
@@ -357,7 +416,9 @@
         "examples"
       ],
       "skipFiles": [],
-      "skipExt": [],
+      "skipExt": [
+        "nim"
+      ],
       "installDirs": [],
       "installFiles": [],
       "installExt": [],
@@ -432,10 +493,50 @@
           "ver": {
             "kind": "verAny"
           }
+        },
+        {
+          "name": "rocksdb",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "ethash",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "blscurve",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "evmc",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "web3",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
         }
       ],
-      "bin": [],
-      "binDir": "",
+      "bin": [
+        "nimbus",
+        "fluffy",
+        "portalcli",
+        "lc_proxy"
+      ],
+      "binDir": "build",
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master"

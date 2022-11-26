@@ -1,5 +1,5 @@
 {
-  description = ''Fast JSON parser'';
+  description = ''Faster JQ replacment '';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";

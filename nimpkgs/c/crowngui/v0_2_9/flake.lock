@@ -479,37 +479,20 @@
         "type": "github"
       }
     },
-    "src-xlsx-v0_4_6": {
+    "src-xlsx-v0_4_8": {
       "flake": false,
       "locked": {
-        "lastModified": 1666284086,
-        "narHash": "sha256-WeELcb1nk5QHYYSNsiVq2NkCrnl2erFQWmw0KNHp6ok=",
+        "lastModified": 1668342939,
+        "narHash": "sha256-NImUnS1X9lhTMWIATmTHLRWHWo534iaSUOlUY2wg9Gg=",
         "owner": "ringabout",
         "repo": "xlsx",
-        "rev": "cbae36148ade2741605469022df3297b8573f886",
+        "rev": "42d53d3c4ccec53c59573f6d23907afd0dfc9949",
         "type": "github"
       },
       "original": {
         "owner": "ringabout",
-        "ref": "refs/tags/v0.4.6",
+        "ref": "refs/tags/v0.4.8",
         "repo": "xlsx",
-        "type": "github"
-      }
-    },
-    "src-zip-0_3_1": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1594106081,
-        "narHash": "sha256-NRnBaul2wZjOZVCSx8ic6c6/LNK83s1SMFZoBX85CeE=",
-        "owner": "nim-lang",
-        "repo": "zip",
-        "rev": "bdc5783fefc1afb8eb622ff13d464a832ce1d507",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nim-lang",
-        "ref": "refs/tags/0.3.1",
-        "repo": "zip",
         "type": "github"
       }
     },
@@ -526,6 +509,23 @@
       "original": {
         "owner": "guzba",
         "ref": "refs/tags/0.10.3",
+        "repo": "zippy",
+        "type": "github"
+      }
+    },
+    "src-zippy-0_10_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661202840,
+        "narHash": "sha256-OfFjpAxk2+hRHhxNfjRUBJuwnwWbmLHq2n4RyKBJ640=",
+        "owner": "guzba",
+        "repo": "zippy",
+        "rev": "17e23253693cf8e09683cd6088b18ebd2789245b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "guzba",
+        "ref": "refs/tags/0.10.4",
         "repo": "zippy",
         "type": "github"
       }
@@ -626,52 +626,23 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "src-xlsx-v0_4_6": "src-xlsx-v0_4_6",
-        "zip": "zip"
+        "src-xlsx-v0_4_8": "src-xlsx-v0_4_8",
+        "zippy": "zippy_2"
       },
       "locked": {
-        "dir": "v0_4_6",
-        "lastModified": 1667330466,
-        "narHash": "sha256-zF8VBJ3SO9SJx5/SDtPls4wVWtkbvhGBsuxur6yf1+c=",
+        "dir": "v0_4_8",
+        "lastModified": 1668750074,
+        "narHash": "sha256-7Bxc50kwwa2ATzfqcvmtMDW1co1UUiuVooLK/nxJ8Lc=",
         "owner": "nim-nix-pkgs",
         "repo": "xlsx",
-        "rev": "7892e4824e022b146bb52d2d55529311bd3a0c61",
+        "rev": "20cd197a5a409ee435a8aff0273e9bf07c7803f8",
         "type": "github"
       },
       "original": {
-        "dir": "v0_4_6",
+        "dir": "v0_4_8",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "xlsx",
-        "type": "github"
-      }
-    },
-    "zip": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "xlsx",
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "xlsx",
-          "nixpkgs"
-        ],
-        "src-zip-0_3_1": "src-zip-0_3_1"
-      },
-      "locked": {
-        "dir": "0_3_1",
-        "lastModified": 1648163784,
-        "narHash": "sha256-0Xuaa5dcQlhnehkcr3FIa3k7ukTq0Yq6z9oqDPm4l/E=",
-        "owner": "nim-nix-pkgs",
-        "repo": "zip",
-        "rev": "86c1be5c89f450c2c925e134526659b78066bbcf",
-        "type": "github"
-      },
-      "original": {
-        "dir": "0_3_1",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "zip",
         "type": "github"
       }
     },
@@ -700,6 +671,35 @@
       },
       "original": {
         "dir": "0_10_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "zippy",
+        "type": "github"
+      }
+    },
+    "zippy_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "xlsx",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "xlsx",
+          "nixpkgs"
+        ],
+        "src-zippy-0_10_4": "src-zippy-0_10_4"
+      },
+      "locked": {
+        "dir": "0_10_4",
+        "lastModified": 1668749164,
+        "narHash": "sha256-qg4TzkB3Cgf5+WcX63AF219fBc0HjYTNKUhbZeAeDuo=",
+        "owner": "nim-nix-pkgs",
+        "repo": "zippy",
+        "rev": "953d511ba7935462f4a8394b41a9615de5aa91a9",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_10_4",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "zippy",

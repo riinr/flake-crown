@@ -1,5 +1,5 @@
 {
-  description = ''Nim Simple Window Maker'';
+  description = ''Simple Window Maker'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -20,6 +20,14 @@
   inputs."chroma".type  = "github";
   inputs."chroma".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chroma".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."vmath".owner = "nim-nix-pkgs";
+  inputs."vmath".ref   = "master";
+  inputs."vmath".repo  = "vmath";
+  inputs."vmath".dir   = "1_2_0";
+  inputs."vmath".type  = "github";
+  inputs."vmath".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."vmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."x11".owner = "nim-nix-pkgs";
   inputs."x11".ref   = "master";

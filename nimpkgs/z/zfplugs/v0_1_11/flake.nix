@@ -16,7 +16,7 @@
   inputs."zfdbms".owner = "nim-nix-pkgs";
   inputs."zfdbms".ref   = "master";
   inputs."zfdbms".repo  = "zfdbms";
-  inputs."zfdbms".dir   = "v0_0_7";
+  inputs."zfdbms".dir   = "v0_0_9";
   inputs."zfdbms".type  = "github";
   inputs."zfdbms".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfdbms".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -24,7 +24,7 @@
   inputs."zfcore".owner = "nim-nix-pkgs";
   inputs."zfcore".ref   = "master";
   inputs."zfcore".repo  = "zfcore";
-  inputs."zfcore".dir   = "v1_1_15";
+  inputs."zfcore".dir   = "v1_1_18";
   inputs."zfcore".type  = "github";
   inputs."zfcore".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfcore".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

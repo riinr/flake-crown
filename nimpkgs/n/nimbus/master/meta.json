@@ -9,7 +9,9 @@
     "examples"
   ],
   "skipFiles": [],
-  "skipExt": [],
+  "skipExt": [
+    "nim"
+  ],
   "installDirs": [],
   "installFiles": [],
   "installExt": [],
@@ -84,10 +86,50 @@
       "ver": {
         "kind": "verAny"
       }
+    },
+    {
+      "name": "rocksdb",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
+    },
+    {
+      "name": "ethash",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
+    },
+    {
+      "name": "blscurve",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
+    },
+    {
+      "name": "evmc",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
+    },
+    {
+      "name": "web3",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
     }
   ],
-  "bin": [],
-  "binDir": "",
+  "bin": [
+    "nimbus",
+    "fluffy",
+    "portalcli",
+    "lc_proxy"
+  ],
+  "binDir": "build",
   "srcDir": "",
   "backend": "c",
   "ref": "refs/heads/master"

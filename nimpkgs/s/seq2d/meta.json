@@ -87,7 +87,7 @@
   "heads": [
     {
       "name": "seq2d",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": "Avahe Kellenberger",
       "desc": "A 2D Sequence Implementation",
       "license": "GPL-2.0-only",
@@ -107,10 +107,11 @@
           }
         },
         {
-          "name": "https://github.com/avahe-kellenberger/nimtest",
-          "str": "any version",
+          "name": "nimtest",
+          "str": ">= 0.1.2",
           "ver": {
-            "kind": "verAny"
+            "kind": "verEqLater",
+            "ver": "0.1.2"
           }
         }
       ],

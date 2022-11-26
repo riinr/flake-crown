@@ -1,23 +1,172 @@
 {
   "nodes": {
+    "devshell": {
+      "inputs": {
+        "flake-utils": [
+          "flakeNimbleLib",
+          "dsf",
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "flakeNimbleLib",
+          "dsf",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1663445644,
+        "narHash": "sha256-+xVlcK60x7VY1vRJbNUEAHi17ZuoQxAIH4S4iUFUGBA=",
+        "owner": "numtide",
+        "repo": "devshell",
+        "rev": "e3dc3e21594fe07bdb24bdf1c8657acaa4cb8f66",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "devshell",
+        "type": "github"
+      }
+    },
+    "devshell_2": {
+      "inputs": {
+        "flake-utils": [
+          "flakeNimbleLib",
+          "gha",
+          "dsf",
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "flakeNimbleLib",
+          "gha",
+          "dsf",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1654858401,
+        "narHash": "sha256-53bw34DtVJ2bnF6WEwy6Tym+qY0pNEiEwARUlvmTZjs=",
+        "owner": "numtide",
+        "repo": "devshell",
+        "rev": "f55e05c6d3bbe9acc7363bc8fc739518b2f02976",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "devshell",
+        "type": "github"
+      }
+    },
+    "dsf": {
+      "inputs": {
+        "devshell": "devshell",
+        "flake-utils": "flake-utils",
+        "nixpkgs": [
+          "flakeNimbleLib",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1667961864,
+        "narHash": "sha256-ojDJFHwN9mM8+d0Ti8I0PElYX8uxixz9Ge/0yp5s7UQ=",
+        "owner": "cruel-intentions",
+        "repo": "devshell-files",
+        "rev": "f4b2198a20025328eb9cf0ff4fa29c56a24fd9d3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cruel-intentions",
+        "repo": "devshell-files",
+        "type": "github"
+      }
+    },
+    "dsf_2": {
+      "inputs": {
+        "devshell": "devshell_2",
+        "flake-utils": "flake-utils_2",
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1655015961,
+        "narHash": "sha256-rLtp4QVUVf02JKNbEbcs7SuN5Q57YBUOAPJr5Exv/P8=",
+        "owner": "cruel-intentions",
+        "repo": "devshell-files",
+        "rev": "6ebf0682a181fc512d0b710ea08acb9e38839fdb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cruel-intentions",
+        "repo": "devshell-files",
+        "type": "github"
+      }
+    },
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1659877975,
+        "narHash": "sha256-zllb8aq3YO3h8B/U0/J1WBgAL8EX5yWf5pMj3G0NAmc=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "c0e246b9b83f637f4681389ecabcb2681b4f3af0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "flake-utils_2": {
+      "locked": {
+        "lastModified": 1653893745,
+        "narHash": "sha256-0jntwV3Z8//YwuOjzhV2sgJJPt+HY6KhU7VZUL0fKZQ=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "1ed9fb1935d260de5fe1c2f7ee0ebaae17ed2fa1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
     "flakeNimbleLib": {
       "inputs": {
+        "dsf": "dsf",
+        "gha": "gha",
         "nixpkgs": [
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1662018438,
-        "narHash": "sha256-QtNtU6+LX3Wokxf0zlFwKTFOcn6TeDjKQZ+DA9OYtvM=",
+        "lastModified": 1668435762,
+        "narHash": "sha256-4ArhSbDGEh1HtB4tG0zoUvp7558CfxUklJcsLemSn2w=",
         "owner": "riinr",
         "repo": "nim-flakes-lib",
-        "rev": "b1fe8340736e3a85d25c709ac3dfd82a55c03cbf",
+        "rev": "4bebe53096d189c04ac618fc3c108d8082391344",
         "type": "github"
       },
       "original": {
         "owner": "riinr",
         "ref": "master",
         "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "gha": {
+      "inputs": {
+        "dsf": "dsf_2"
+      },
+      "locked": {
+        "lastModified": 1655025633,
+        "narHash": "sha256-QoKHywgljgnTEkkWL0POwqXhxWHkHI4IL6luWSJwYM8=",
+        "owner": "cruel-intentions",
+        "repo": "gh-actions",
+        "rev": "122626d7591ba62d507b1eb22c9656613cfdb055",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cruel-intentions",
+        "repo": "gh-actions",
         "type": "github"
       }
     },
@@ -33,11 +182,11 @@
       },
       "locked": {
         "dir": "0_0_1",
-        "lastModified": 1667331186,
-        "narHash": "sha256-vknsG/epHIDzSCqvpd3NvmyLyTL7ay68hlyIyWqd5SQ=",
+        "lastModified": 1668756298,
+        "narHash": "sha256-dCwBb+rT5pRW/vmIU8OxWN7s1SOwnJv4oMJRa4UQ5Eo=",
         "owner": "nim-nix-pkgs",
         "repo": "nim_telegram_bot",
-        "rev": "9c805ab728e4fd1b6fc02f710f96a3ae294b7048",
+        "rev": "0e4bc72d7077415d45520f0fa2ff840cb36ed335",
         "type": "github"
       },
       "original": {
@@ -60,11 +209,11 @@
       },
       "locked": {
         "dir": "0_0_2",
-        "lastModified": 1667331186,
-        "narHash": "sha256-vknsG/epHIDzSCqvpd3NvmyLyTL7ay68hlyIyWqd5SQ=",
+        "lastModified": 1668756298,
+        "narHash": "sha256-dCwBb+rT5pRW/vmIU8OxWN7s1SOwnJv4oMJRa4UQ5Eo=",
         "owner": "nim-nix-pkgs",
         "repo": "nim_telegram_bot",
-        "rev": "9c805ab728e4fd1b6fc02f710f96a3ae294b7048",
+        "rev": "0e4bc72d7077415d45520f0fa2ff840cb36ed335",
         "type": "github"
       },
       "original": {
@@ -89,11 +238,11 @@
       },
       "locked": {
         "dir": "0_2_0",
-        "lastModified": 1667331186,
-        "narHash": "sha256-vknsG/epHIDzSCqvpd3NvmyLyTL7ay68hlyIyWqd5SQ=",
+        "lastModified": 1668756298,
+        "narHash": "sha256-dCwBb+rT5pRW/vmIU8OxWN7s1SOwnJv4oMJRa4UQ5Eo=",
         "owner": "nim-nix-pkgs",
         "repo": "nim_telegram_bot",
-        "rev": "9c805ab728e4fd1b6fc02f710f96a3ae294b7048",
+        "rev": "0e4bc72d7077415d45520f0fa2ff840cb36ed335",
         "type": "github"
       },
       "original": {
@@ -118,11 +267,11 @@
       },
       "locked": {
         "dir": "0_2_2",
-        "lastModified": 1667331186,
-        "narHash": "sha256-vknsG/epHIDzSCqvpd3NvmyLyTL7ay68hlyIyWqd5SQ=",
+        "lastModified": 1668756298,
+        "narHash": "sha256-dCwBb+rT5pRW/vmIU8OxWN7s1SOwnJv4oMJRa4UQ5Eo=",
         "owner": "nim-nix-pkgs",
         "repo": "nim_telegram_bot",
-        "rev": "9c805ab728e4fd1b6fc02f710f96a3ae294b7048",
+        "rev": "0e4bc72d7077415d45520f0fa2ff840cb36ed335",
         "type": "github"
       },
       "original": {
@@ -147,11 +296,11 @@
       },
       "locked": {
         "dir": "0_2_3",
-        "lastModified": 1667331186,
-        "narHash": "sha256-vknsG/epHIDzSCqvpd3NvmyLyTL7ay68hlyIyWqd5SQ=",
+        "lastModified": 1668756298,
+        "narHash": "sha256-dCwBb+rT5pRW/vmIU8OxWN7s1SOwnJv4oMJRa4UQ5Eo=",
         "owner": "nim-nix-pkgs",
         "repo": "nim_telegram_bot",
-        "rev": "9c805ab728e4fd1b6fc02f710f96a3ae294b7048",
+        "rev": "0e4bc72d7077415d45520f0fa2ff840cb36ed335",
         "type": "github"
       },
       "original": {
@@ -177,11 +326,11 @@
       },
       "locked": {
         "dir": "0_2_5",
-        "lastModified": 1667331186,
-        "narHash": "sha256-vknsG/epHIDzSCqvpd3NvmyLyTL7ay68hlyIyWqd5SQ=",
+        "lastModified": 1668756298,
+        "narHash": "sha256-dCwBb+rT5pRW/vmIU8OxWN7s1SOwnJv4oMJRa4UQ5Eo=",
         "owner": "nim-nix-pkgs",
         "repo": "nim_telegram_bot",
-        "rev": "9c805ab728e4fd1b6fc02f710f96a3ae294b7048",
+        "rev": "0e4bc72d7077415d45520f0fa2ff840cb36ed335",
         "type": "github"
       },
       "original": {
@@ -207,11 +356,11 @@
       },
       "locked": {
         "dir": "0_3_0",
-        "lastModified": 1667331186,
-        "narHash": "sha256-vknsG/epHIDzSCqvpd3NvmyLyTL7ay68hlyIyWqd5SQ=",
+        "lastModified": 1668756298,
+        "narHash": "sha256-dCwBb+rT5pRW/vmIU8OxWN7s1SOwnJv4oMJRa4UQ5Eo=",
         "owner": "nim-nix-pkgs",
         "repo": "nim_telegram_bot",
-        "rev": "9c805ab728e4fd1b6fc02f710f96a3ae294b7048",
+        "rev": "0e4bc72d7077415d45520f0fa2ff840cb36ed335",
         "type": "github"
       },
       "original": {
@@ -238,11 +387,11 @@
       },
       "locked": {
         "dir": "0_4_0",
-        "lastModified": 1667331186,
-        "narHash": "sha256-vknsG/epHIDzSCqvpd3NvmyLyTL7ay68hlyIyWqd5SQ=",
+        "lastModified": 1668756298,
+        "narHash": "sha256-dCwBb+rT5pRW/vmIU8OxWN7s1SOwnJv4oMJRa4UQ5Eo=",
         "owner": "nim-nix-pkgs",
         "repo": "nim_telegram_bot",
-        "rev": "9c805ab728e4fd1b6fc02f710f96a3ae294b7048",
+        "rev": "0e4bc72d7077415d45520f0fa2ff840cb36ed335",
         "type": "github"
       },
       "original": {
@@ -269,11 +418,11 @@
       },
       "locked": {
         "dir": "0_4_5",
-        "lastModified": 1667331186,
-        "narHash": "sha256-vknsG/epHIDzSCqvpd3NvmyLyTL7ay68hlyIyWqd5SQ=",
+        "lastModified": 1668756298,
+        "narHash": "sha256-dCwBb+rT5pRW/vmIU8OxWN7s1SOwnJv4oMJRa4UQ5Eo=",
         "owner": "nim-nix-pkgs",
         "repo": "nim_telegram_bot",
-        "rev": "9c805ab728e4fd1b6fc02f710f96a3ae294b7048",
+        "rev": "0e4bc72d7077415d45520f0fa2ff840cb36ed335",
         "type": "github"
       },
       "original": {
@@ -300,11 +449,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1667331186,
-        "narHash": "sha256-vknsG/epHIDzSCqvpd3NvmyLyTL7ay68hlyIyWqd5SQ=",
+        "lastModified": 1668756298,
+        "narHash": "sha256-dCwBb+rT5pRW/vmIU8OxWN7s1SOwnJv4oMJRa4UQ5Eo=",
         "owner": "nim-nix-pkgs",
         "repo": "nim_telegram_bot",
-        "rev": "9c805ab728e4fd1b6fc02f710f96a3ae294b7048",
+        "rev": "0e4bc72d7077415d45520f0fa2ff840cb36ed335",
         "type": "github"
       },
       "original": {
@@ -462,11 +611,27 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1667292599,
-        "narHash": "sha256-7ISOUI1aj6UKMPIL+wwthENL22L3+A9V+jS8Is3QsRo=",
+        "lastModified": 1653936696,
+        "narHash": "sha256-M6bJShji9AIDZ7Kh7CPwPBPb/T7RiVev2PAcOi4fxDQ=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "ce6aa13369b667ac2542593170993504932eb836",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "22.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1668681245,
+        "narHash": "sha256-IH8t+b9hCfNwEvdC55UEymn8jL457Fo/hx3N/kNTZso=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "ef2f213d9659a274985778bff4ca322f3ef3ac68",
+        "rev": "bd4bfd814e96488febb38b4b4d0549c56b840c7f",
         "type": "github"
       },
       "original": {
@@ -719,7 +884,7 @@
         "nim_telegram_bot-0_4_0": "nim_telegram_bot-0_4_0",
         "nim_telegram_bot-0_4_5": "nim_telegram_bot-0_4_5",
         "nim_telegram_bot-master": "nim_telegram_bot-master",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs_2"
       }
     },
     "src-nim_telegram_bot-0_0_1": {
@@ -1113,138 +1278,138 @@
         "type": "github"
       }
     },
-    "src-telebot-2022_10_18": {
+    "src-telebot-2022_11_07": {
       "flake": false,
       "locked": {
-        "lastModified": 1666076887,
-        "narHash": "sha256-BSG/zxtuBP8ANCSYjlgLmjvE9IlZoQSSzLtpMMDvtVc=",
+        "lastModified": 1667786684,
+        "narHash": "sha256-5OzEpQ/eONCuWm5/5Ga4Qtj6o0xHesAHe9KZyxZdZEs=",
         "owner": "ba0f3",
         "repo": "telebot.nim",
-        "rev": "7ce34e9635068b514ce34e1663e66e27663b27b3",
+        "rev": "9b4ee63415836cde7ed1a6ff8b878a0aff6f0085",
         "type": "github"
       },
       "original": {
         "owner": "ba0f3",
-        "ref": "refs/tags/2022.10.18",
+        "ref": "refs/tags/2022.11.07",
         "repo": "telebot.nim",
         "type": "github"
       }
     },
-    "src-telebot-2022_10_18_2": {
+    "src-telebot-2022_11_07_2": {
       "flake": false,
       "locked": {
-        "lastModified": 1666076887,
-        "narHash": "sha256-BSG/zxtuBP8ANCSYjlgLmjvE9IlZoQSSzLtpMMDvtVc=",
+        "lastModified": 1667786684,
+        "narHash": "sha256-5OzEpQ/eONCuWm5/5Ga4Qtj6o0xHesAHe9KZyxZdZEs=",
         "owner": "ba0f3",
         "repo": "telebot.nim",
-        "rev": "7ce34e9635068b514ce34e1663e66e27663b27b3",
+        "rev": "9b4ee63415836cde7ed1a6ff8b878a0aff6f0085",
         "type": "github"
       },
       "original": {
         "owner": "ba0f3",
-        "ref": "refs/tags/2022.10.18",
+        "ref": "refs/tags/2022.11.07",
         "repo": "telebot.nim",
         "type": "github"
       }
     },
-    "src-telebot-2022_10_18_3": {
+    "src-telebot-2022_11_07_3": {
       "flake": false,
       "locked": {
-        "lastModified": 1666076887,
-        "narHash": "sha256-BSG/zxtuBP8ANCSYjlgLmjvE9IlZoQSSzLtpMMDvtVc=",
+        "lastModified": 1667786684,
+        "narHash": "sha256-5OzEpQ/eONCuWm5/5Ga4Qtj6o0xHesAHe9KZyxZdZEs=",
         "owner": "ba0f3",
         "repo": "telebot.nim",
-        "rev": "7ce34e9635068b514ce34e1663e66e27663b27b3",
+        "rev": "9b4ee63415836cde7ed1a6ff8b878a0aff6f0085",
         "type": "github"
       },
       "original": {
         "owner": "ba0f3",
-        "ref": "refs/tags/2022.10.18",
+        "ref": "refs/tags/2022.11.07",
         "repo": "telebot.nim",
         "type": "github"
       }
     },
-    "src-telebot-2022_10_18_4": {
+    "src-telebot-2022_11_07_4": {
       "flake": false,
       "locked": {
-        "lastModified": 1666076887,
-        "narHash": "sha256-BSG/zxtuBP8ANCSYjlgLmjvE9IlZoQSSzLtpMMDvtVc=",
+        "lastModified": 1667786684,
+        "narHash": "sha256-5OzEpQ/eONCuWm5/5Ga4Qtj6o0xHesAHe9KZyxZdZEs=",
         "owner": "ba0f3",
         "repo": "telebot.nim",
-        "rev": "7ce34e9635068b514ce34e1663e66e27663b27b3",
+        "rev": "9b4ee63415836cde7ed1a6ff8b878a0aff6f0085",
         "type": "github"
       },
       "original": {
         "owner": "ba0f3",
-        "ref": "refs/tags/2022.10.18",
+        "ref": "refs/tags/2022.11.07",
         "repo": "telebot.nim",
         "type": "github"
       }
     },
-    "src-telebot-2022_10_18_5": {
+    "src-telebot-2022_11_07_5": {
       "flake": false,
       "locked": {
-        "lastModified": 1666076887,
-        "narHash": "sha256-BSG/zxtuBP8ANCSYjlgLmjvE9IlZoQSSzLtpMMDvtVc=",
+        "lastModified": 1667786684,
+        "narHash": "sha256-5OzEpQ/eONCuWm5/5Ga4Qtj6o0xHesAHe9KZyxZdZEs=",
         "owner": "ba0f3",
         "repo": "telebot.nim",
-        "rev": "7ce34e9635068b514ce34e1663e66e27663b27b3",
+        "rev": "9b4ee63415836cde7ed1a6ff8b878a0aff6f0085",
         "type": "github"
       },
       "original": {
         "owner": "ba0f3",
-        "ref": "refs/tags/2022.10.18",
+        "ref": "refs/tags/2022.11.07",
         "repo": "telebot.nim",
         "type": "github"
       }
     },
-    "src-telebot-2022_10_18_6": {
+    "src-telebot-2022_11_07_6": {
       "flake": false,
       "locked": {
-        "lastModified": 1666076887,
-        "narHash": "sha256-BSG/zxtuBP8ANCSYjlgLmjvE9IlZoQSSzLtpMMDvtVc=",
+        "lastModified": 1667786684,
+        "narHash": "sha256-5OzEpQ/eONCuWm5/5Ga4Qtj6o0xHesAHe9KZyxZdZEs=",
         "owner": "ba0f3",
         "repo": "telebot.nim",
-        "rev": "7ce34e9635068b514ce34e1663e66e27663b27b3",
+        "rev": "9b4ee63415836cde7ed1a6ff8b878a0aff6f0085",
         "type": "github"
       },
       "original": {
         "owner": "ba0f3",
-        "ref": "refs/tags/2022.10.18",
+        "ref": "refs/tags/2022.11.07",
         "repo": "telebot.nim",
         "type": "github"
       }
     },
-    "src-telebot-2022_10_18_7": {
+    "src-telebot-2022_11_07_7": {
       "flake": false,
       "locked": {
-        "lastModified": 1666076887,
-        "narHash": "sha256-BSG/zxtuBP8ANCSYjlgLmjvE9IlZoQSSzLtpMMDvtVc=",
+        "lastModified": 1667786684,
+        "narHash": "sha256-5OzEpQ/eONCuWm5/5Ga4Qtj6o0xHesAHe9KZyxZdZEs=",
         "owner": "ba0f3",
         "repo": "telebot.nim",
-        "rev": "7ce34e9635068b514ce34e1663e66e27663b27b3",
+        "rev": "9b4ee63415836cde7ed1a6ff8b878a0aff6f0085",
         "type": "github"
       },
       "original": {
         "owner": "ba0f3",
-        "ref": "refs/tags/2022.10.18",
+        "ref": "refs/tags/2022.11.07",
         "repo": "telebot.nim",
         "type": "github"
       }
     },
-    "src-telebot-2022_10_18_8": {
+    "src-telebot-2022_11_07_8": {
       "flake": false,
       "locked": {
-        "lastModified": 1666076887,
-        "narHash": "sha256-BSG/zxtuBP8ANCSYjlgLmjvE9IlZoQSSzLtpMMDvtVc=",
+        "lastModified": 1667786684,
+        "narHash": "sha256-5OzEpQ/eONCuWm5/5Ga4Qtj6o0xHesAHe9KZyxZdZEs=",
         "owner": "ba0f3",
         "repo": "telebot.nim",
-        "rev": "7ce34e9635068b514ce34e1663e66e27663b27b3",
+        "rev": "9b4ee63415836cde7ed1a6ff8b878a0aff6f0085",
         "type": "github"
       },
       "original": {
         "owner": "ba0f3",
-        "ref": "refs/tags/2022.10.18",
+        "ref": "refs/tags/2022.11.07",
         "repo": "telebot.nim",
         "type": "github"
       }
@@ -1310,19 +1475,19 @@
           "nim_telegram_bot-0_2_0",
           "nixpkgs"
         ],
-        "src-telebot-2022_10_18": "src-telebot-2022_10_18"
+        "src-telebot-2022_11_07": "src-telebot-2022_11_07"
       },
       "locked": {
-        "dir": "2022_10_18",
-        "lastModified": 1667330861,
-        "narHash": "sha256-RIiU+Z0XxyVcKS8TSqWyxGswi1hzW48eC5RuFfnocIw=",
+        "dir": "2022_11_07",
+        "lastModified": 1668750459,
+        "narHash": "sha256-rnrYEUGM/3VvfV+igtXAY6cs2vW5/MN14aDO7VSk9jE=",
         "owner": "nim-nix-pkgs",
         "repo": "telebot",
-        "rev": "9fd96f66c0a85fb108cb5113832a63ff2a53cd25",
+        "rev": "650a31cb6c3cd4a4ffe4e17d75d30e466a1e68be",
         "type": "github"
       },
       "original": {
-        "dir": "2022_10_18",
+        "dir": "2022_11_07",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "telebot",
@@ -1339,19 +1504,19 @@
           "nim_telegram_bot-0_2_2",
           "nixpkgs"
         ],
-        "src-telebot-2022_10_18": "src-telebot-2022_10_18_2"
+        "src-telebot-2022_11_07": "src-telebot-2022_11_07_2"
       },
       "locked": {
-        "dir": "2022_10_18",
-        "lastModified": 1667330861,
-        "narHash": "sha256-RIiU+Z0XxyVcKS8TSqWyxGswi1hzW48eC5RuFfnocIw=",
+        "dir": "2022_11_07",
+        "lastModified": 1668750459,
+        "narHash": "sha256-rnrYEUGM/3VvfV+igtXAY6cs2vW5/MN14aDO7VSk9jE=",
         "owner": "nim-nix-pkgs",
         "repo": "telebot",
-        "rev": "9fd96f66c0a85fb108cb5113832a63ff2a53cd25",
+        "rev": "650a31cb6c3cd4a4ffe4e17d75d30e466a1e68be",
         "type": "github"
       },
       "original": {
-        "dir": "2022_10_18",
+        "dir": "2022_11_07",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "telebot",
@@ -1368,19 +1533,19 @@
           "nim_telegram_bot-0_2_3",
           "nixpkgs"
         ],
-        "src-telebot-2022_10_18": "src-telebot-2022_10_18_3"
+        "src-telebot-2022_11_07": "src-telebot-2022_11_07_3"
       },
       "locked": {
-        "dir": "2022_10_18",
-        "lastModified": 1667330861,
-        "narHash": "sha256-RIiU+Z0XxyVcKS8TSqWyxGswi1hzW48eC5RuFfnocIw=",
+        "dir": "2022_11_07",
+        "lastModified": 1668750459,
+        "narHash": "sha256-rnrYEUGM/3VvfV+igtXAY6cs2vW5/MN14aDO7VSk9jE=",
         "owner": "nim-nix-pkgs",
         "repo": "telebot",
-        "rev": "9fd96f66c0a85fb108cb5113832a63ff2a53cd25",
+        "rev": "650a31cb6c3cd4a4ffe4e17d75d30e466a1e68be",
         "type": "github"
       },
       "original": {
-        "dir": "2022_10_18",
+        "dir": "2022_11_07",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "telebot",
@@ -1397,19 +1562,19 @@
           "nim_telegram_bot-0_2_5",
           "nixpkgs"
         ],
-        "src-telebot-2022_10_18": "src-telebot-2022_10_18_4"
+        "src-telebot-2022_11_07": "src-telebot-2022_11_07_4"
       },
       "locked": {
-        "dir": "2022_10_18",
-        "lastModified": 1667330861,
-        "narHash": "sha256-RIiU+Z0XxyVcKS8TSqWyxGswi1hzW48eC5RuFfnocIw=",
+        "dir": "2022_11_07",
+        "lastModified": 1668750459,
+        "narHash": "sha256-rnrYEUGM/3VvfV+igtXAY6cs2vW5/MN14aDO7VSk9jE=",
         "owner": "nim-nix-pkgs",
         "repo": "telebot",
-        "rev": "9fd96f66c0a85fb108cb5113832a63ff2a53cd25",
+        "rev": "650a31cb6c3cd4a4ffe4e17d75d30e466a1e68be",
         "type": "github"
       },
       "original": {
-        "dir": "2022_10_18",
+        "dir": "2022_11_07",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "telebot",
@@ -1426,19 +1591,19 @@
           "nim_telegram_bot-0_3_0",
           "nixpkgs"
         ],
-        "src-telebot-2022_10_18": "src-telebot-2022_10_18_5"
+        "src-telebot-2022_11_07": "src-telebot-2022_11_07_5"
       },
       "locked": {
-        "dir": "2022_10_18",
-        "lastModified": 1667330861,
-        "narHash": "sha256-RIiU+Z0XxyVcKS8TSqWyxGswi1hzW48eC5RuFfnocIw=",
+        "dir": "2022_11_07",
+        "lastModified": 1668750459,
+        "narHash": "sha256-rnrYEUGM/3VvfV+igtXAY6cs2vW5/MN14aDO7VSk9jE=",
         "owner": "nim-nix-pkgs",
         "repo": "telebot",
-        "rev": "9fd96f66c0a85fb108cb5113832a63ff2a53cd25",
+        "rev": "650a31cb6c3cd4a4ffe4e17d75d30e466a1e68be",
         "type": "github"
       },
       "original": {
-        "dir": "2022_10_18",
+        "dir": "2022_11_07",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "telebot",
@@ -1455,19 +1620,19 @@
           "nim_telegram_bot-0_4_0",
           "nixpkgs"
         ],
-        "src-telebot-2022_10_18": "src-telebot-2022_10_18_6"
+        "src-telebot-2022_11_07": "src-telebot-2022_11_07_6"
       },
       "locked": {
-        "dir": "2022_10_18",
-        "lastModified": 1667330861,
-        "narHash": "sha256-RIiU+Z0XxyVcKS8TSqWyxGswi1hzW48eC5RuFfnocIw=",
+        "dir": "2022_11_07",
+        "lastModified": 1668750459,
+        "narHash": "sha256-rnrYEUGM/3VvfV+igtXAY6cs2vW5/MN14aDO7VSk9jE=",
         "owner": "nim-nix-pkgs",
         "repo": "telebot",
-        "rev": "9fd96f66c0a85fb108cb5113832a63ff2a53cd25",
+        "rev": "650a31cb6c3cd4a4ffe4e17d75d30e466a1e68be",
         "type": "github"
       },
       "original": {
-        "dir": "2022_10_18",
+        "dir": "2022_11_07",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "telebot",
@@ -1484,19 +1649,19 @@
           "nim_telegram_bot-0_4_5",
           "nixpkgs"
         ],
-        "src-telebot-2022_10_18": "src-telebot-2022_10_18_7"
+        "src-telebot-2022_11_07": "src-telebot-2022_11_07_7"
       },
       "locked": {
-        "dir": "2022_10_18",
-        "lastModified": 1667330861,
-        "narHash": "sha256-RIiU+Z0XxyVcKS8TSqWyxGswi1hzW48eC5RuFfnocIw=",
+        "dir": "2022_11_07",
+        "lastModified": 1668750459,
+        "narHash": "sha256-rnrYEUGM/3VvfV+igtXAY6cs2vW5/MN14aDO7VSk9jE=",
         "owner": "nim-nix-pkgs",
         "repo": "telebot",
-        "rev": "9fd96f66c0a85fb108cb5113832a63ff2a53cd25",
+        "rev": "650a31cb6c3cd4a4ffe4e17d75d30e466a1e68be",
         "type": "github"
       },
       "original": {
-        "dir": "2022_10_18",
+        "dir": "2022_11_07",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "telebot",
@@ -1513,19 +1678,19 @@
           "nim_telegram_bot-master",
           "nixpkgs"
         ],
-        "src-telebot-2022_10_18": "src-telebot-2022_10_18_8"
+        "src-telebot-2022_11_07": "src-telebot-2022_11_07_8"
       },
       "locked": {
-        "dir": "2022_10_18",
-        "lastModified": 1667330861,
-        "narHash": "sha256-RIiU+Z0XxyVcKS8TSqWyxGswi1hzW48eC5RuFfnocIw=",
+        "dir": "2022_11_07",
+        "lastModified": 1668750459,
+        "narHash": "sha256-rnrYEUGM/3VvfV+igtXAY6cs2vW5/MN14aDO7VSk9jE=",
         "owner": "nim-nix-pkgs",
         "repo": "telebot",
-        "rev": "9fd96f66c0a85fb108cb5113832a63ff2a53cd25",
+        "rev": "650a31cb6c3cd4a4ffe4e17d75d30e466a1e68be",
         "type": "github"
       },
       "original": {
-        "dir": "2022_10_18",
+        "dir": "2022_11_07",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "telebot",

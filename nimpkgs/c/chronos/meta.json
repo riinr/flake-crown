@@ -9,6 +9,7 @@
   "refs": [
     "refs/heads/accept-temp",
     "refs/heads/achannels",
+    "refs/heads/address-329",
     "refs/heads/allowclosedispatcher",
     "refs/heads/apphttp",
     "refs/heads/asyncproc",
@@ -17,7 +18,6 @@
     "refs/heads/autoinjecttry",
     "refs/heads/benchmark",
     "refs/heads/benchmarks",
-    "refs/heads/clean-warnings",
     "refs/heads/cleanup-deleted-timers",
     "refs/heads/completed-futures",
     "refs/heads/datagramrace",
@@ -27,10 +27,12 @@
     "refs/heads/fix-http-assert2",
     "refs/heads/fix-rlpx",
     "refs/heads/fix-srcloc",
+    "refs/heads/fixasyncvoidingen",
     "refs/heads/fixfuturevar",
     "refs/heads/gc-orc",
     "refs/heads/http-client-idle-connections",
     "refs/heads/interval",
+    "refs/heads/lents",
     "refs/heads/master",
     "refs/heads/new-connection-leak",
     "refs/heads/nice-stacktraces",
@@ -50,8 +52,8 @@
     "refs/heads/streamServerBug",
     "refs/heads/streams2",
     "refs/heads/tanguyfixcancelrace",
+    "refs/heads/testfix",
     "refs/heads/timerwheel",
-    "refs/heads/tokenbucket",
     "refs/heads/tunnel",
     "refs/heads/warnmissingcatch",
     "refs/heads/winlibs-ci",
@@ -103,11 +105,10 @@
           }
         },
         {
-          "name": "https://github.com/status-im/nim-unittest2.git",
-          "str": "#head",
+          "name": "unittest2",
+          "str": "any version",
           "ver": {
-            "kind": "verSpecial",
-            "spe": "#head"
+            "kind": "verAny"
           }
         }
       ],

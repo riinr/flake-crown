@@ -13,13 +13,13 @@
   inputs.src-xlsx-master.repo  = "xlsx";
   inputs.src-xlsx-master.type  = "github";
   
-  inputs."zip".owner = "nim-nix-pkgs";
-  inputs."zip".ref   = "master";
-  inputs."zip".repo  = "zip";
-  inputs."zip".dir   = "0_3_1";
-  inputs."zip".type  = "github";
-  inputs."zip".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."zip".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."zippy".owner = "nim-nix-pkgs";
+  inputs."zippy".ref   = "master";
+  inputs."zippy".repo  = "zippy";
+  inputs."zippy".dir   = "0_10_4";
+  inputs."zippy".type  = "github";
+  inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

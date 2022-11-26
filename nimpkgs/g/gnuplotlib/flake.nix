@@ -7,13 +7,13 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."gnuplotlib-main".dir   = "main";
-  inputs."gnuplotlib-main".owner = "nim-nix-pkgs";
-  inputs."gnuplotlib-main".ref   = "master";
-  inputs."gnuplotlib-main".repo  = "gnuplotlib";
-  inputs."gnuplotlib-main".type  = "github";
-  inputs."gnuplotlib-main".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."gnuplotlib-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."gnuplot-main".dir   = "main";
+  inputs."gnuplot-main".owner = "nim-nix-pkgs";
+  inputs."gnuplot-main".ref   = "master";
+  inputs."gnuplot-main".repo  = "gnuplot";
+  inputs."gnuplot-main".type  = "github";
+  inputs."gnuplot-main".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."gnuplot-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."gnuplotlib-v1_0_0".dir   = "v1_0_0";
   inputs."gnuplotlib-v1_0_0".owner = "nim-nix-pkgs";

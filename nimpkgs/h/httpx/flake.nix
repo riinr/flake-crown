@@ -111,6 +111,14 @@
   inputs."httpx-v0_3_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."httpx-v0_3_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."httpx-v0_3_4".dir   = "v0_3_4";
+  inputs."httpx-v0_3_4".owner = "nim-nix-pkgs";
+  inputs."httpx-v0_3_4".ref   = "master";
+  inputs."httpx-v0_3_4".repo  = "httpx";
+  inputs."httpx-v0_3_4".type  = "github";
+  inputs."httpx-v0_3_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."httpx-v0_3_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

@@ -23,6 +23,14 @@
   inputs."libdeflate_gzip-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."libdeflate_gzip-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."libdeflate_gzip-v0_2_0".dir   = "v0_2_0";
+  inputs."libdeflate_gzip-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."libdeflate_gzip-v0_2_0".ref   = "master";
+  inputs."libdeflate_gzip-v0_2_0".repo  = "libdeflate_gzip";
+  inputs."libdeflate_gzip-v0_2_0".type  = "github";
+  inputs."libdeflate_gzip-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."libdeflate_gzip-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

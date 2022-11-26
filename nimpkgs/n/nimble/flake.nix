@@ -79,6 +79,14 @@
   inputs."nimble-v0_13_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimble-v0_13_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."nimble-v0_14_0".dir   = "v0_14_0";
+  inputs."nimble-v0_14_0".owner = "nim-nix-pkgs";
+  inputs."nimble-v0_14_0".ref   = "master";
+  inputs."nimble-v0_14_0".repo  = "nimble";
+  inputs."nimble-v0_14_0".type  = "github";
+  inputs."nimble-v0_14_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimble-v0_14_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."babel-v0_2".dir   = "v0_2";
   inputs."babel-v0_2".owner = "nim-nix-pkgs";
   inputs."babel-v0_2".ref   = "master";

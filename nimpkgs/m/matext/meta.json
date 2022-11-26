@@ -149,6 +149,54 @@
     },
     {
       "name": "matext",
+      "version": "2022.11.9",
+      "author": "Adam Blažek",
+      "desc": "Render LaTeX math as multiline Unicode text",
+      "license": "GPL-3.0-or-later",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.21",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.21"
+          }
+        },
+        {
+          "name": "honeycomb",
+          "str": ">= 0.1.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.2"
+          }
+        }
+      ],
+      "bin": [
+        "matext"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2022.11.9"
+    },
+    {
+      "name": "matext",
       "version": "2022.5.13",
       "author": "Adam Blažek",
       "desc": "Render LaTeX math as multiline Unicode text",
@@ -447,6 +495,7 @@
     "refs/tags/2022.10.12",
     "refs/tags/2022.10.13",
     "refs/tags/2022.11.1",
+    "refs/tags/2022.11.9",
     "refs/tags/2022.5.13",
     "refs/tags/2022.6.21",
     "refs/tags/2022.6.27",
@@ -458,7 +507,7 @@
   "heads": [
     {
       "name": "matext",
-      "version": "2022.2.2",
+      "version": "2022.11.9",
       "author": "Adam Blažek",
       "desc": "Render LaTeX math as multiline Unicode text",
       "license": "GPL-3.0-or-later",
@@ -489,10 +538,10 @@
         },
         {
           "name": "honeycomb",
-          "str": ">= 0.1.1",
+          "str": ">= 0.1.2",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.1.1"
+            "ver": "0.1.2"
           }
         }
       ],

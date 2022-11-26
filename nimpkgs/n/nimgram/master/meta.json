@@ -1,6 +1,6 @@
 {
   "name": "nimgram",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "dadadani",
   "desc": "MTProto client written in Nim",
   "license": "MIT",
@@ -13,50 +13,66 @@
   "requires": [
     {
       "name": "nim",
-      "str": ">= 1.2.0",
+      "str": ">= 1.6.6",
       "ver": {
         "kind": "verEqLater",
-        "ver": "1.2.0"
+        "ver": "1.6.6"
       }
     },
     {
-      "name": "zippy",
-      "str": ">= 0.3.13",
+      "name": "https://github.com/nimgram/tl-parser",
+      "str": "#v0.2.0",
       "ver": {
-        "kind": "verEqLater",
-        "ver": "0.3.13"
+        "kind": "verSpecial",
+        "spe": "#v0.2.0"
       }
     },
     {
-      "name": "nimcrypto",
-      "str": ">= 0.5.4",
+      "name": "https://github.com/nimgram/tl-types",
+      "str": "#v0.2.0",
       "ver": {
-        "kind": "verEqLater",
-        "ver": "0.5.4"
+        "kind": "verSpecial",
+        "spe": "#v0.2.0"
+      }
+    },
+    {
+      "name": "crc32",
+      "str": "#c8ccad9",
+      "ver": {
+        "kind": "verSpecial",
+        "spe": "#c8ccad9"
       }
     },
     {
       "name": "stint",
-      "str": ">= 0.0.1",
-      "ver": {
-        "kind": "verEqLater",
-        "ver": "0.0.1"
-      }
-    },
-    {
-      "name": "gmp",
-      "str": ">= 0.2.5",
-      "ver": {
-        "kind": "verEqLater",
-        "ver": "0.2.5"
-      }
-    },
-    {
-      "name": "https://github.com/dadadani/nim-random",
-      "str": "#master",
+      "str": "#d1acb42",
       "ver": {
         "kind": "verSpecial",
-        "spe": "#master"
+        "spe": "#d1acb42"
+      }
+    },
+    {
+      "name": "https://github.com/dadadani/bigints",
+      "str": "#646d857",
+      "ver": {
+        "kind": "verSpecial",
+        "spe": "#646d857"
+      }
+    },
+    {
+      "name": "nimcrypto",
+      "str": "#a5742a9",
+      "ver": {
+        "kind": "verSpecial",
+        "spe": "#a5742a9"
+      }
+    },
+    {
+      "name": "norm",
+      "str": "#2.5.2",
+      "ver": {
+        "kind": "verSpecial",
+        "spe": "#2.5.2"
       }
     }
   ],

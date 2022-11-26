@@ -13,6 +13,14 @@
   inputs.src-nimjson-master.repo  = "nimjson";
   inputs.src-nimjson-master.type  = "github";
   
+  inputs."jsony".owner = "nim-nix-pkgs";
+  inputs."jsony".ref   = "master";
+  inputs."jsony".repo  = "jsony";
+  inputs."jsony".dir   = "1_1_3";
+  inputs."jsony".type  = "github";
+  inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

@@ -546,13 +546,52 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/tags/v2.0.1"
+    },
+    {
+      "name": "nimjson",
+      "version": "3.0.0",
+      "author": "jiro4989",
+      "desc": "nimjson generates nim object definitions from json documents.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "jsony",
+          "str": "1.1.3",
+          "ver": {
+            "kind": "verEq",
+            "ver": "1.1.3"
+          }
+        }
+      ],
+      "bin": [
+        "nimjson"
+      ],
+      "binDir": "bin",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v3.0.0"
     }
   ],
   "description": "nimjson generates nim object definitions from json documents.",
   "license": "MIT",
   "web": "https://github.com/jiro4989/nimjson",
   "refs": [
-    "refs/heads/feature/#30/support-json-schema",
     "refs/heads/master",
     "refs/tags/v1.0.0",
     "refs/tags/v1.0.1",
@@ -571,12 +610,13 @@
     "refs/tags/v1.3.1",
     "refs/tags/v2.0.0",
     "refs/tags/v2.0.1",
+    "refs/tags/v3.0.0",
     ""
   ],
   "heads": [
     {
       "name": "nimjson",
-      "version": "2.0.0",
+      "version": "3.0.0",
       "author": "jiro4989",
       "desc": "nimjson generates nim object definitions from json documents.",
       "license": "MIT",
@@ -591,10 +631,18 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 0.20.0",
+          "str": ">= 1.4.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.20.0"
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "jsony",
+          "str": "1.1.3",
+          "ver": {
+            "kind": "verEq",
+            "ver": "1.1.3"
           }
         }
       ],

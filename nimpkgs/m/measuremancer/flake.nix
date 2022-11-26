@@ -39,6 +39,22 @@
   inputs."measuremancer-v0_2_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."measuremancer-v0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."measuremancer-v0_2_2".dir   = "v0_2_2";
+  inputs."measuremancer-v0_2_2".owner = "nim-nix-pkgs";
+  inputs."measuremancer-v0_2_2".ref   = "master";
+  inputs."measuremancer-v0_2_2".repo  = "measuremancer";
+  inputs."measuremancer-v0_2_2".type  = "github";
+  inputs."measuremancer-v0_2_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."measuremancer-v0_2_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."measuremancer-v0_2_3".dir   = "v0_2_3";
+  inputs."measuremancer-v0_2_3".owner = "nim-nix-pkgs";
+  inputs."measuremancer-v0_2_3".ref   = "master";
+  inputs."measuremancer-v0_2_3".repo  = "measuremancer";
+  inputs."measuremancer-v0_2_3".type  = "github";
+  inputs."measuremancer-v0_2_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."measuremancer-v0_2_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

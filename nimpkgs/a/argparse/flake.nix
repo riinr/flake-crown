@@ -191,6 +191,22 @@
   inputs."argparse-v3_0_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."argparse-v3_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."argparse-v3_0_1".dir   = "v3_0_1";
+  inputs."argparse-v3_0_1".owner = "nim-nix-pkgs";
+  inputs."argparse-v3_0_1".ref   = "master";
+  inputs."argparse-v3_0_1".repo  = "argparse";
+  inputs."argparse-v3_0_1".type  = "github";
+  inputs."argparse-v3_0_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."argparse-v3_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."argparse-v4_0_0".dir   = "v4_0_0";
+  inputs."argparse-v4_0_0".owner = "nim-nix-pkgs";
+  inputs."argparse-v4_0_0".ref   = "master";
+  inputs."argparse-v4_0_0".repo  = "argparse";
+  inputs."argparse-v4_0_0".type  = "github";
+  inputs."argparse-v4_0_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."argparse-v4_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

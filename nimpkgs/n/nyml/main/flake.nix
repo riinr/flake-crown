@@ -21,6 +21,14 @@
   inputs."toktok".inputs.nixpkgs.follows = "nixpkgs";
   inputs."toktok".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."pkginfo".owner = "nim-nix-pkgs";
+  inputs."pkginfo".ref   = "master";
+  inputs."pkginfo".repo  = "pkginfo";
+  inputs."pkginfo".dir   = "v0_1_0";
+  inputs."pkginfo".type  = "github";
+  inputs."pkginfo".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."pkginfo".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

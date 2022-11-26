@@ -21,6 +21,14 @@
   inputs."threading".inputs.nixpkgs.follows = "nixpkgs";
   inputs."threading".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."persistent_enums".owner = "nim-nix-pkgs";
+  inputs."persistent_enums".ref   = "master";
+  inputs."persistent_enums".repo  = "persistent_enums";
+  inputs."persistent_enums".dir   = "master";
+  inputs."persistent_enums".type  = "github";
+  inputs."persistent_enums".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."persistent_enums".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

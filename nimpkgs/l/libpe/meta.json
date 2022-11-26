@@ -567,10 +567,10 @@
   "heads": [
     {
       "name": "libpe",
-      "version": "0.1.3",
+      "version": "0.3.6",
       "author": "srozb",
-      "desc": "Nim wrapper for libpe library",
-      "license": "MIT",
+      "desc": "Nim rewrite for libpe library",
+      "license": "GPL-3.0",
       "skipDirs": [],
       "skipFiles": [],
       "skipExt": [],
@@ -580,10 +580,26 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.6.4",
+          "str": ">= 1.6.6",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.6.4"
+            "ver": "1.6.6"
+          }
+        },
+        {
+          "name": "hashlib",
+          "str": "1.0.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "1.0.1"
+          }
+        },
+        {
+          "name": "libfuzzy",
+          "str": "0.1.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.1"
           }
         }
       ],

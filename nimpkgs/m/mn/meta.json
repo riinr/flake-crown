@@ -73,6 +73,41 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/tags/v0.2.0"
+    },
+    {
+      "name": "mn",
+      "version": "0.1.0",
+      "author": "Fabio Cevasco",
+      "desc": "A truly minimal concatenative programming language.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "mnpkg"
+      ],
+      "installFiles": [
+        "mn.yml",
+        "mn.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.4"
+          }
+        }
+      ],
+      "bin": [
+        "mn"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.0"
     }
   ],
   "description": "A truly minimal concatenative programming language.",
@@ -83,6 +118,7 @@
     "refs/heads/master",
     "refs/tags/v0.1.0",
     "refs/tags/v0.2.0",
+    "refs/tags/v0.3.0",
     ""
   ],
   "heads": [

@@ -45,6 +45,14 @@
   inputs."latexdsl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."latexdsl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."pixie".owner = "nim-nix-pkgs";
+  inputs."pixie".ref   = "master";
+  inputs."pixie".repo  = "pixie";
+  inputs."pixie".dir   = "5_0_1";
+  inputs."pixie".type  = "github";
+  inputs."pixie".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."pixie".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."shell".owner = "nim-nix-pkgs";
   inputs."shell".ref   = "master";
   inputs."shell".repo  = "shell";
@@ -52,6 +60,14 @@
   inputs."shell".type  = "github";
   inputs."shell".inputs.nixpkgs.follows = "nixpkgs";
   inputs."shell".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."github.com/zetashift/fontim".owner = "nim-nix-pkgs";
+  inputs."github.com/zetashift/fontim".ref   = "master";
+  inputs."github.com/zetashift/fontim".repo  = "github.com/zetashift/fontim";
+  inputs."github.com/zetashift/fontim".dir   = "";
+  inputs."github.com/zetashift/fontim".type  = "github";
+  inputs."github.com/zetashift/fontim".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/zetashift/fontim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

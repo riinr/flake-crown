@@ -13,14 +13,6 @@
   inputs.src-nimmm-master.repo  = "nimmm";
   inputs.src-nimmm-master.type  = "github";
   
-  inputs."noise".owner = "nim-nix-pkgs";
-  inputs."noise".ref   = "master";
-  inputs."noise".repo  = "noise";
-  inputs."noise".dir   = "v0_1_14";
-  inputs."noise".type  = "github";
-  inputs."noise".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."noise".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."nimbox".owner = "nim-nix-pkgs";
   inputs."nimbox".ref   = "master";
   inputs."nimbox".repo  = "nimbox";

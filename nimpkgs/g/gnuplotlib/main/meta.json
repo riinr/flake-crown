@@ -1,6 +1,6 @@
 {
-  "name": "gnuplotlib",
-  "version": "2.6.1",
+  "name": "gnuplot",
+  "version": "2.7.0",
   "author": "Antonis Geralis",
   "desc": "Nim gnuplot interface",
   "license": "MIT",
@@ -10,16 +10,20 @@
   ],
   "skipFiles": [],
   "skipExt": [],
-  "installDirs": [],
-  "installFiles": [],
+  "installDirs": [
+    "gnuplot"
+  ],
+  "installFiles": [
+    "gnuplot.nim"
+  ],
   "installExt": [],
   "requires": [
     {
       "name": "nim",
-      "str": ">= 1.4.0",
+      "str": ">= 1.6.0",
       "ver": {
         "kind": "verEqLater",
-        "ver": "1.4.0"
+        "ver": "1.6.0"
       }
     }
   ],

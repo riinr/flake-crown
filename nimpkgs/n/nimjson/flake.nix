@@ -151,6 +151,14 @@
   inputs."nimjson-v2_0_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimjson-v2_0_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."nimjson-v3_0_0".dir   = "v3_0_0";
+  inputs."nimjson-v3_0_0".owner = "nim-nix-pkgs";
+  inputs."nimjson-v3_0_0".ref   = "master";
+  inputs."nimjson-v3_0_0".repo  = "nimjson";
+  inputs."nimjson-v3_0_0".type  = "github";
+  inputs."nimjson-v3_0_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimjson-v3_0_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

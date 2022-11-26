@@ -32,7 +32,7 @@
   inputs."github-disruptek-grok".owner = "nim-nix-pkgs";
   inputs."github-disruptek-grok".ref   = "master";
   inputs."github-disruptek-grok".repo  = "github-disruptek-grok";
-  inputs."github-disruptek-grok".dir   = "0_6_2";
+  inputs."github-disruptek-grok".dir   = "0_6_3";
   inputs."github-disruptek-grok".type  = "github";
   inputs."github-disruptek-grok".inputs.nixpkgs.follows = "nixpkgs";
   inputs."github-disruptek-grok".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

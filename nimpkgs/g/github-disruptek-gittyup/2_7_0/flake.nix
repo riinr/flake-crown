@@ -24,7 +24,7 @@
   inputs."github-disruptek-badresults".owner = "nim-nix-pkgs";
   inputs."github-disruptek-badresults".ref   = "master";
   inputs."github-disruptek-badresults".repo  = "github-disruptek-badresults";
-  inputs."github-disruptek-badresults".dir   = "2_1_3";
+  inputs."github-disruptek-badresults".dir   = "2_1_4";
   inputs."github-disruptek-badresults".type  = "github";
   inputs."github-disruptek-badresults".inputs.nixpkgs.follows = "nixpkgs";
   inputs."github-disruptek-badresults".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

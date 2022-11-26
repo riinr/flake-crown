@@ -24,7 +24,7 @@
   inputs."ginger".owner = "nim-nix-pkgs";
   inputs."ginger".ref   = "master";
   inputs."ginger".repo  = "ginger";
-  inputs."ginger".dir   = "v0_3_10";
+  inputs."ginger".dir   = "v0_3_13";
   inputs."ginger".type  = "github";
   inputs."ginger".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ginger".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

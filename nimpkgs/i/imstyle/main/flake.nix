@@ -13,6 +13,14 @@
   inputs.src-imstyle-main.repo  = "ImStyle";
   inputs.src-imstyle-main.type  = "github";
   
+  inputs."nimgl".owner = "nim-nix-pkgs";
+  inputs."nimgl".ref   = "master";
+  inputs."nimgl".repo  = "nimgl";
+  inputs."nimgl".dir   = "1_3_2";
+  inputs."nimgl".type  = "github";
+  inputs."nimgl".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nimgl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."chroma".owner = "nim-nix-pkgs";
   inputs."chroma".ref   = "master";
   inputs."chroma".repo  = "chroma";

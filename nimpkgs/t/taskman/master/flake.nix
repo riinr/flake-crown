@@ -1,5 +1,5 @@
 {
-  description = ''A package that manages background async tasks'';
+  description = ''A package that manages background tasks on a schedule'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";

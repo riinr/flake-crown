@@ -29,14 +29,6 @@
   inputs."nuuid".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nuuid".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."scram".owner = "nim-nix-pkgs";
-  inputs."scram".ref   = "master";
-  inputs."scram".repo  = "scram";
-  inputs."scram".dir   = "0_2_0";
-  inputs."scram".type  = "github";
-  inputs."scram".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."scram".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."passgen".owner = "nim-nix-pkgs";
   inputs."passgen".ref   = "master";
   inputs."passgen".repo  = "passgen";
@@ -48,10 +40,18 @@
   inputs."npeg".owner = "nim-nix-pkgs";
   inputs."npeg".ref   = "master";
   inputs."npeg".repo  = "npeg";
-  inputs."npeg".dir   = "0_26_0";
+  inputs."npeg".dir   = "0_27_0";
   inputs."npeg".type  = "github";
   inputs."npeg".inputs.nixpkgs.follows = "nixpkgs";
   inputs."npeg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."github.com/mildred/scram.nim".owner = "nim-nix-pkgs";
+  inputs."github.com/mildred/scram.nim".ref   = "master";
+  inputs."github.com/mildred/scram.nim".repo  = "github.com/mildred/scram.nim";
+  inputs."github.com/mildred/scram.nim".dir   = "";
+  inputs."github.com/mildred/scram.nim".type  = "github";
+  inputs."github.com/mildred/scram.nim".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/mildred/scram.nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."nimassets".owner = "nim-nix-pkgs";
   inputs."nimassets".ref   = "master";
@@ -64,7 +64,7 @@
   inputs."prologue".owner = "nim-nix-pkgs";
   inputs."prologue".ref   = "master";
   inputs."prologue".repo  = "prologue";
-  inputs."prologue".dir   = "v0_6_2";
+  inputs."prologue".dir   = "v0_6_4";
   inputs."prologue".type  = "github";
   inputs."prologue".inputs.nixpkgs.follows = "nixpkgs";
   inputs."prologue".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

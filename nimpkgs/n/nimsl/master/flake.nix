@@ -13,14 +13,6 @@
   inputs.src-nimsl-master.repo  = "nimsl";
   inputs.src-nimsl-master.type  = "github";
   
-  inputs."variant".owner = "nim-nix-pkgs";
-  inputs."variant".ref   = "master";
-  inputs."variant".repo  = "variant";
-  inputs."variant".dir   = "v0_2_12";
-  inputs."variant".type  = "github";
-  inputs."variant".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."variant".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

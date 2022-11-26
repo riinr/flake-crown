@@ -1,0 +1,48 @@
+{
+  "name": "sas",
+  "version": "0.1.0",
+  "author": "xcodz-dot",
+  "desc": "SAS compiler",
+  "license": "MIT",
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [],
+  "installFiles": [],
+  "installExt": [
+    "nim"
+  ],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 1.6.0",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.6.0"
+      }
+    },
+    {
+      "name": "regex",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
+    },
+    {
+      "name": "argparse",
+      "str": ">= 3.0.1",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "3.0.1"
+      }
+    }
+  ],
+  "bin": [
+    "sasemu",
+    "sas"
+  ],
+  "binDir": "",
+  "srcDir": "src",
+  "backend": "c",
+  "ref": "refs/heads/master"
+}

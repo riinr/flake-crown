@@ -21,6 +21,14 @@
   inputs."jsonschema".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsonschema".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."asynctools".owner = "nim-nix-pkgs";
+  inputs."asynctools".ref   = "master";
+  inputs."asynctools".repo  = "asynctools";
+  inputs."asynctools".dir   = "master";
+  inputs."asynctools".type  = "github";
+  inputs."asynctools".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."asynctools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

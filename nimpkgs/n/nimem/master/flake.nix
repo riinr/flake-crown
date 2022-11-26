@@ -1,5 +1,5 @@
 {
-  description = ''Library for external memory manipulation on a windows process'';
+  description = ''Cross platform (windows, linux) library for external process memory manipulation'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -20,14 +20,6 @@
   inputs."winim".type  = "github";
   inputs."winim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."winim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."regex".owner = "nim-nix-pkgs";
-  inputs."regex".ref   = "master";
-  inputs."regex".repo  = "regex";
-  inputs."regex".dir   = "v0_20_0";
-  inputs."regex".type  = "github";
-  inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

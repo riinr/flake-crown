@@ -6,9 +6,7 @@
   "license": "MIT",
   "skipDirs": [],
   "skipFiles": [],
-  "skipExt": [
-    "nim"
-  ],
+  "skipExt": [],
   "installDirs": [],
   "installFiles": [],
   "installExt": [],
@@ -22,7 +20,14 @@
       }
     },
     {
-      "name": "watchout",
+      "name": "pkginfo",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
+    },
+    {
+      "name": "toktok",
       "str": "any version",
       "ver": {
         "kind": "verAny"
@@ -34,12 +39,18 @@
       "ver": {
         "kind": "verAny"
       }
+    },
+    {
+      "name": "jsony",
+      "str": ">= 1.1.3",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.1.3"
+      }
     }
   ],
-  "bin": [
-    "tim"
-  ],
-  "binDir": "bin",
+  "bin": [],
+  "binDir": "",
   "srcDir": "src",
   "backend": "c",
   "ref": "refs/heads/main"

@@ -16,7 +16,7 @@
   inputs."trick".owner = "nim-nix-pkgs";
   inputs."trick".ref   = "master";
   inputs."trick".repo  = "trick";
-  inputs."trick".dir   = "0_1_3";
+  inputs."trick".dir   = "0_1_4";
   inputs."trick".type  = "github";
   inputs."trick".inputs.nixpkgs.follows = "nixpkgs";
   inputs."trick".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

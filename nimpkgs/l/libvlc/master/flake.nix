@@ -13,13 +13,13 @@
   inputs.src-libvlc-master.repo  = "nim-libvlc";
   inputs.src-libvlc-master.type  = "github";
   
-  inputs."nimterop".owner = "nim-nix-pkgs";
-  inputs."nimterop".ref   = "master";
-  inputs."nimterop".repo  = "nimterop";
-  inputs."nimterop".dir   = "v0_6_13";
-  inputs."nimterop".type  = "github";
-  inputs."nimterop".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."futhark".owner = "nim-nix-pkgs";
+  inputs."futhark".ref   = "master";
+  inputs."futhark".repo  = "futhark";
+  inputs."futhark".dir   = "v0_6_1";
+  inputs."futhark".type  = "github";
+  inputs."futhark".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."futhark".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

@@ -15,6 +15,14 @@
   inputs."pigeon-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pigeon-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."pigeon-v0_2_0".dir   = "v0_2_0";
+  inputs."pigeon-v0_2_0".owner = "nim-nix-pkgs";
+  inputs."pigeon-v0_2_0".ref   = "master";
+  inputs."pigeon-v0_2_0".repo  = "pigeon";
+  inputs."pigeon-v0_2_0".type  = "github";
+  inputs."pigeon-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."pigeon-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

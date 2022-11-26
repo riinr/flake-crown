@@ -13,14 +13,6 @@
   inputs.src-deser_json-master.repo  = "deser_json";
   inputs.src-deser_json-master.type  = "github";
   
-  inputs."faststreams".owner = "nim-nix-pkgs";
-  inputs."faststreams".ref   = "master";
-  inputs."faststreams".repo  = "faststreams";
-  inputs."faststreams".dir   = "master";
-  inputs."faststreams".type  = "github";
-  inputs."faststreams".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."faststreams".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."deser".owner = "nim-nix-pkgs";
   inputs."deser".ref   = "master";
   inputs."deser".repo  = "deser";
@@ -28,6 +20,14 @@
   inputs."deser".type  = "github";
   inputs."deser".inputs.nixpkgs.follows = "nixpkgs";
   inputs."deser".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."jsony".owner = "nim-nix-pkgs";
+  inputs."jsony".ref   = "master";
+  inputs."jsony".repo  = "jsony";
+  inputs."jsony".dir   = "1_1_3";
+  inputs."jsony".type  = "github";
+  inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

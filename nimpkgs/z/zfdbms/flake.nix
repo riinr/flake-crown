@@ -79,6 +79,14 @@
   inputs."zfdbms-v0_0_7".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfdbms-v0_0_7".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."zfdbms-v0_0_9".dir   = "v0_0_9";
+  inputs."zfdbms-v0_0_9".owner = "nim-nix-pkgs";
+  inputs."zfdbms-v0_0_9".ref   = "master";
+  inputs."zfdbms-v0_0_9".repo  = "zfdbms";
+  inputs."zfdbms-v0_0_9".type  = "github";
+  inputs."zfdbms-v0_0_9".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."zfdbms-v0_0_9".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

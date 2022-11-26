@@ -29,6 +29,14 @@
   inputs."nodejs".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nodejs".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."dotenv".owner = "nim-nix-pkgs";
+  inputs."dotenv".ref   = "master";
+  inputs."dotenv".repo  = "dotenv";
+  inputs."dotenv".dir   = "2_0_1";
+  inputs."dotenv".type  = "github";
+  inputs."dotenv".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."dotenv".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."github-alaviss-union".owner = "nim-nix-pkgs";
   inputs."github-alaviss-union".ref   = "master";
   inputs."github-alaviss-union".repo  = "github-alaviss-union";
@@ -44,6 +52,22 @@
   inputs."github-tandy-1000-uniony".type  = "github";
   inputs."github-tandy-1000-uniony".inputs.nixpkgs.follows = "nixpkgs";
   inputs."github-tandy-1000-uniony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."github.com/tandy-1000/jspf-nim".owner = "nim-nix-pkgs";
+  inputs."github.com/tandy-1000/jspf-nim".ref   = "master";
+  inputs."github.com/tandy-1000/jspf-nim".repo  = "github.com/tandy-1000/jspf-nim";
+  inputs."github.com/tandy-1000/jspf-nim".dir   = "";
+  inputs."github.com/tandy-1000/jspf-nim".type  = "github";
+  inputs."github.com/tandy-1000/jspf-nim".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/tandy-1000/jspf-nim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."github.com/tandy-1000/asyncutils".owner = "nim-nix-pkgs";
+  inputs."github.com/tandy-1000/asyncutils".ref   = "master";
+  inputs."github.com/tandy-1000/asyncutils".repo  = "github.com/tandy-1000/asyncutils";
+  inputs."github.com/tandy-1000/asyncutils".dir   = "";
+  inputs."github.com/tandy-1000/asyncutils".type  = "github";
+  inputs."github.com/tandy-1000/asyncutils".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/tandy-1000/asyncutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

@@ -29,6 +29,22 @@
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."cdecl".owner = "nim-nix-pkgs";
+  inputs."cdecl".ref   = "master";
+  inputs."cdecl".repo  = "cdecl";
+  inputs."cdecl".dir   = "main";
+  inputs."cdecl".type  = "github";
+  inputs."cdecl".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."cdecl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."github.com/embeddednim/nephyrcli".owner = "nim-nix-pkgs";
+  inputs."github.com/embeddednim/nephyrcli".ref   = "master";
+  inputs."github.com/embeddednim/nephyrcli".repo  = "github.com/embeddednim/nephyrcli";
+  inputs."github.com/embeddednim/nephyrcli".dir   = "";
+  inputs."github.com/embeddednim/nephyrcli".type  = "github";
+  inputs."github.com/embeddednim/nephyrcli".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/embeddednim/nephyrcli".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."mcu_utils".owner = "nim-nix-pkgs";
   inputs."mcu_utils".ref   = "master";
   inputs."mcu_utils".repo  = "mcu_utils";
@@ -37,13 +53,13 @@
   inputs."mcu_utils".inputs.nixpkgs.follows = "nixpkgs";
   inputs."mcu_utils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."github.com/embeddednim/fastrpc".owner = "nim-nix-pkgs";
-  inputs."github.com/embeddednim/fastrpc".ref   = "master";
-  inputs."github.com/embeddednim/fastrpc".repo  = "github.com/embeddednim/fastrpc";
-  inputs."github.com/embeddednim/fastrpc".dir   = "";
-  inputs."github.com/embeddednim/fastrpc".type  = "github";
-  inputs."github.com/embeddednim/fastrpc".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."github.com/embeddednim/fastrpc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."fastrpc".owner = "nim-nix-pkgs";
+  inputs."fastrpc".ref   = "master";
+  inputs."fastrpc".repo  = "fastrpc";
+  inputs."fastrpc".dir   = "";
+  inputs."fastrpc".type  = "github";
+  inputs."fastrpc".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."fastrpc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

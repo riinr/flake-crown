@@ -24,7 +24,7 @@
   inputs."bio_seq".owner = "nim-nix-pkgs";
   inputs."bio_seq".ref   = "master";
   inputs."bio_seq".repo  = "bio_seq";
-  inputs."bio_seq".dir   = "v0_1_0";
+  inputs."bio_seq".dir   = "v0_2_2";
   inputs."bio_seq".type  = "github";
   inputs."bio_seq".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bio_seq".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

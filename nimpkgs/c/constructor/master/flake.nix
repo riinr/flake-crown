@@ -13,6 +13,14 @@
   inputs.src-constructor-master.repo  = "constructor";
   inputs.src-constructor-master.type  = "github";
   
+  inputs."github.com/beef331/micros".owner = "nim-nix-pkgs";
+  inputs."github.com/beef331/micros".ref   = "master";
+  inputs."github.com/beef331/micros".repo  = "github.com/beef331/micros";
+  inputs."github.com/beef331/micros".dir   = "";
+  inputs."github.com/beef331/micros".type  = "github";
+  inputs."github.com/beef331/micros".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/beef331/micros".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

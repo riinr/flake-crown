@@ -13,22 +13,6 @@
   inputs.src-packets-master.repo  = "packets.nim";
   inputs.src-packets-master.type  = "github";
   
-  inputs."packedjson".owner = "nim-nix-pkgs";
-  inputs."packedjson".ref   = "master";
-  inputs."packedjson".repo  = "packedjson";
-  inputs."packedjson".dir   = "0_2_2";
-  inputs."packedjson".type  = "github";
-  inputs."packedjson".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."packedjson".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."crc32".owner = "nim-nix-pkgs";
-  inputs."crc32".ref   = "master";
-  inputs."crc32".repo  = "crc32";
-  inputs."crc32".dir   = "master";
-  inputs."crc32".type  = "github";
-  inputs."crc32".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."crc32".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

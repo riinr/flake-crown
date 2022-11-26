@@ -1,5 +1,5 @@
 {
-  description = ''mccache package: in-memory caching - patched'';
+  description = ''mccache package: in-memory caching - simple & hash-cache'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";

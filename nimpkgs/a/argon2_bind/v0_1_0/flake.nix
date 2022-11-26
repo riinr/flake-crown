@@ -1,5 +1,5 @@
 {
-  description = ''Bindings for the reference Argon2 C lib'';
+  description = ''Bindings to the high-level Argon2 C API'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";

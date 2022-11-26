@@ -16,7 +16,7 @@
   inputs."nimib".owner = "nim-nix-pkgs";
   inputs."nimib".ref   = "master";
   inputs."nimib".repo  = "nimib";
-  inputs."nimib".dir   = "v0_3_2";
+  inputs."nimib".dir   = "v0_3_3";
   inputs."nimib".type  = "github";
   inputs."nimib".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nimib".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -28,6 +28,14 @@
   inputs."jsony".type  = "github";
   inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."toml_serialization".owner = "nim-nix-pkgs";
+  inputs."toml_serialization".ref   = "master";
+  inputs."toml_serialization".repo  = "toml_serialization";
+  inputs."toml_serialization".dir   = "master";
+  inputs."toml_serialization".type  = "github";
+  inputs."toml_serialization".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."toml_serialization".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

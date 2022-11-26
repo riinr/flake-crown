@@ -290,28 +290,10 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/tags/v0.0.7"
-    }
-  ],
-  "description": "Simple database generator, connector and query tools.",
-  "license": "BSD",
-  "web": "https://github.com/zendbit/nim.zfdbms",
-  "doc": "https://github.com/zendbit/nim.zfdbms/blob/main/README.md",
-  "refs": [
-    "refs/heads/main",
-    "refs/tags/v0,0,8",
-    "refs/tags/v0.0.1",
-    "refs/tags/v0.0.2",
-    "refs/tags/v0.0.3",
-    "refs/tags/v0.0.4",
-    "refs/tags/v0.0.5",
-    "refs/tags/v0.0.6",
-    "refs/tags/v0.0.7",
-    ""
-  ],
-  "heads": [
+    },
     {
       "name": "zfdbms",
-      "version": "0.0.8",
+      "version": "0.0.9",
       "author": "Amru Rosyada",
       "desc": "Simple database generator, connector and query tools.",
       "license": "BSD",
@@ -332,10 +314,65 @@
         },
         {
           "name": "stdext",
-          "str": ">= 0.0.13",
+          "str": ">= 0.0.14",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.0.13"
+            "ver": "0.0.14"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.0.9"
+    }
+  ],
+  "description": "Simple database generator, connector and query tools.",
+  "license": "BSD",
+  "web": "https://github.com/zendbit/nim.zfdbms",
+  "doc": "https://github.com/zendbit/nim.zfdbms/blob/main/README.md",
+  "refs": [
+    "refs/heads/main",
+    "refs/tags/v0,0,8",
+    "refs/tags/v0.0.1",
+    "refs/tags/v0.0.2",
+    "refs/tags/v0.0.3",
+    "refs/tags/v0.0.4",
+    "refs/tags/v0.0.5",
+    "refs/tags/v0.0.6",
+    "refs/tags/v0.0.7",
+    "refs/tags/v0.0.9",
+    ""
+  ],
+  "heads": [
+    {
+      "name": "zfdbms",
+      "version": "0.0.9",
+      "author": "Amru Rosyada",
+      "desc": "Simple database generator, connector and query tools.",
+      "license": "BSD",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "stdext",
+          "str": ">= 0.0.14",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.0.14"
           }
         }
       ],

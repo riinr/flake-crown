@@ -13,6 +13,14 @@
   inputs.src-boxy-master.repo  = "boxy";
   inputs.src-boxy-master.type  = "github";
   
+  inputs."shady".owner = "nim-nix-pkgs";
+  inputs."shady".ref   = "master";
+  inputs."shady".repo  = "shady";
+  inputs."shady".dir   = "0_1_3";
+  inputs."shady".type  = "github";
+  inputs."shady".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."shady".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."pixie".owner = "nim-nix-pkgs";
   inputs."pixie".ref   = "master";
   inputs."pixie".repo  = "pixie";
@@ -20,14 +28,6 @@
   inputs."pixie".type  = "github";
   inputs."pixie".inputs.nixpkgs.follows = "nixpkgs";
   inputs."pixie".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."vmath".owner = "nim-nix-pkgs";
-  inputs."vmath".ref   = "master";
-  inputs."vmath".repo  = "vmath";
-  inputs."vmath".dir   = "1_2_0";
-  inputs."vmath".type  = "github";
-  inputs."vmath".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."vmath".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."opengl".owner = "nim-nix-pkgs";
   inputs."opengl".ref   = "master";

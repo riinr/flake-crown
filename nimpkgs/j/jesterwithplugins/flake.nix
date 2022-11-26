@@ -23,13 +23,13 @@
   inputs."jester-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jester-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."jester-v0_1_1".dir   = "v0_1_1";
-  inputs."jester-v0_1_1".owner = "nim-nix-pkgs";
-  inputs."jester-v0_1_1".ref   = "master";
-  inputs."jester-v0_1_1".repo  = "jester";
-  inputs."jester-v0_1_1".type  = "github";
-  inputs."jester-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."jester-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."jesterwithplugins-v0_1_1".dir   = "v0_1_1";
+  inputs."jesterwithplugins-v0_1_1".owner = "nim-nix-pkgs";
+  inputs."jesterwithplugins-v0_1_1".ref   = "master";
+  inputs."jesterwithplugins-v0_1_1".repo  = "jesterwithplugins";
+  inputs."jesterwithplugins-v0_1_1".type  = "github";
+  inputs."jesterwithplugins-v0_1_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jesterwithplugins-v0_1_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."jester-v0_2_0".dir   = "v0_2_0";
   inputs."jester-v0_2_0".owner = "nim-nix-pkgs";
@@ -39,13 +39,13 @@
   inputs."jester-v0_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."jester-v0_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."jester-v0_2_1".dir   = "v0_2_1";
-  inputs."jester-v0_2_1".owner = "nim-nix-pkgs";
-  inputs."jester-v0_2_1".ref   = "master";
-  inputs."jester-v0_2_1".repo  = "jester";
-  inputs."jester-v0_2_1".type  = "github";
-  inputs."jester-v0_2_1".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."jester-v0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."jesterwithplugins-v0_2_1".dir   = "v0_2_1";
+  inputs."jesterwithplugins-v0_2_1".owner = "nim-nix-pkgs";
+  inputs."jesterwithplugins-v0_2_1".ref   = "master";
+  inputs."jesterwithplugins-v0_2_1".repo  = "jesterwithplugins";
+  inputs."jesterwithplugins-v0_2_1".type  = "github";
+  inputs."jesterwithplugins-v0_2_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jesterwithplugins-v0_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."jester-v0_3_0".dir   = "v0_3_0";
   inputs."jester-v0_3_0".owner = "nim-nix-pkgs";

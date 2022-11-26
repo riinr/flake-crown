@@ -7,14 +7,6 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."duckduckgo-master".dir   = "master";
-  inputs."duckduckgo-master".owner = "nim-nix-pkgs";
-  inputs."duckduckgo-master".ref   = "master";
-  inputs."duckduckgo-master".repo  = "duckduckgo";
-  inputs."duckduckgo-master".type  = "github";
-  inputs."duckduckgo-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."duckduckgo-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

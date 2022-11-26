@@ -1,5 +1,5 @@
 {
-  description = ''Library for interacting with Monero wallets via RPC.'';
+  description = ''Library for interacting with Monero wallets and nodes via RPC.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";

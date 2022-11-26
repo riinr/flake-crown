@@ -7,14 +7,6 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."ytcc-master".dir   = "master";
-  inputs."ytcc-master".owner = "nim-nix-pkgs";
-  inputs."ytcc-master".ref   = "master";
-  inputs."ytcc-master".repo  = "ytcc";
-  inputs."ytcc-master".type  = "github";
-  inputs."ytcc-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."ytcc-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

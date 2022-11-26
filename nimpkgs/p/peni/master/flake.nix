@@ -24,7 +24,7 @@
   inputs."cligen".owner = "nim-nix-pkgs";
   inputs."cligen".ref   = "master";
   inputs."cligen".repo  = "cligen";
-  inputs."cligen".dir   = "v1_5_31";
+  inputs."cligen".dir   = "v1_5_32";
   inputs."cligen".type  = "github";
   inputs."cligen".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cligen".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -44,6 +44,22 @@
   inputs."termstyle".type  = "github";
   inputs."termstyle".inputs.nixpkgs.follows = "nixpkgs";
   inputs."termstyle".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."authenticode".owner = "nim-nix-pkgs";
+  inputs."authenticode".ref   = "master";
+  inputs."authenticode".repo  = "authenticode";
+  inputs."authenticode".dir   = "v0_1_1";
+  inputs."authenticode".type  = "github";
+  inputs."authenticode".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."authenticode".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."regex".owner = "nim-nix-pkgs";
+  inputs."regex".ref   = "master";
+  inputs."regex".repo  = "regex";
+  inputs."regex".dir   = "v0_20_0";
+  inputs."regex".type  = "github";
+  inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

@@ -1,5 +1,5 @@
 {
-  description = ''Sugar for c-style shifted bitfields'';
+  description = ''Sugar for bitfields'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";

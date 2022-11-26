@@ -24,7 +24,7 @@
   inputs."xlsx".owner = "nim-nix-pkgs";
   inputs."xlsx".ref   = "master";
   inputs."xlsx".repo  = "xlsx";
-  inputs."xlsx".dir   = "v0_4_6";
+  inputs."xlsx".dir   = "v0_4_8";
   inputs."xlsx".type  = "github";
   inputs."xlsx".inputs.nixpkgs.follows = "nixpkgs";
   inputs."xlsx".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -1468,7 +1468,7 @@
   "heads": [
     {
       "name": "peni",
-      "version": "0.3.3",
+      "version": "0.4.5",
       "author": "srozb",
       "desc": "PE tool based on libpe (with no S)",
       "license": "MIT",
@@ -1483,18 +1483,18 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.6.4",
+          "str": ">= 1.6.6",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.6.4"
+            "ver": "1.6.6"
           }
         },
         {
           "name": "libpe",
-          "str": ">= 0.3.2",
+          "str": ">= 0.3.6",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.3.2"
+            "ver": "0.3.6"
           }
         },
         {
@@ -1520,12 +1520,28 @@
             "kind": "verEqLater",
             "ver": "0.1.0"
           }
+        },
+        {
+          "name": "authenticode",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "regex",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
         }
       ],
       "bin": [
         "peni"
       ],
-      "binDir": "",
+      "binDir": "release",
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master"

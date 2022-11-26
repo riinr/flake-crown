@@ -37,6 +37,14 @@
   inputs."bumpy".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bumpy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."cdecl".owner = "nim-nix-pkgs";
+  inputs."cdecl".ref   = "master";
+  inputs."cdecl".repo  = "cdecl";
+  inputs."cdecl".dir   = "main";
+  inputs."cdecl".type  = "github";
+  inputs."cdecl".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."cdecl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."macroutils".owner = "nim-nix-pkgs";
   inputs."macroutils".ref   = "master";
   inputs."macroutils".repo  = "macroutils";

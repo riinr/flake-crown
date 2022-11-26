@@ -93,6 +93,38 @@
   inputs."rocksdb".inputs.nixpkgs.follows = "nixpkgs";
   inputs."rocksdb".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."ethash".owner = "nim-nix-pkgs";
+  inputs."ethash".ref   = "master";
+  inputs."ethash".repo  = "ethash";
+  inputs."ethash".dir   = "master";
+  inputs."ethash".type  = "github";
+  inputs."ethash".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ethash".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."blscurve".owner = "nim-nix-pkgs";
+  inputs."blscurve".ref   = "master";
+  inputs."blscurve".repo  = "blscurve";
+  inputs."blscurve".dir   = "master";
+  inputs."blscurve".type  = "github";
+  inputs."blscurve".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."blscurve".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."evmc".owner = "nim-nix-pkgs";
+  inputs."evmc".ref   = "master";
+  inputs."evmc".repo  = "evmc";
+  inputs."evmc".dir   = "master";
+  inputs."evmc".type  = "github";
+  inputs."evmc".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."evmc".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."web3".owner = "nim-nix-pkgs";
+  inputs."web3".ref   = "master";
+  inputs."web3".repo  = "web3";
+  inputs."web3".dir   = "master";
+  inputs."web3".type  = "github";
+  inputs."web3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."web3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

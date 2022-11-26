@@ -21,14 +21,6 @@
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."weave".owner = "nim-nix-pkgs";
-  inputs."weave".ref   = "master";
-  inputs."weave".repo  = "weave";
-  inputs."weave".dir   = "v0_4_0";
-  inputs."weave".type  = "github";
-  inputs."weave".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."weave".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."zippy".owner = "nim-nix-pkgs";
   inputs."zippy".ref   = "master";
   inputs."zippy".repo  = "zippy";

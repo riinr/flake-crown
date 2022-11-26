@@ -1,5 +1,5 @@
 {
-  description = ''Karax extension to convert html in string form to embeddable Karax vdom'';
+  description = ''Karax extension to convert html in string form to embeddable Karax vnode'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -16,7 +16,7 @@
   inputs."karax".owner = "nim-nix-pkgs";
   inputs."karax".ref   = "master";
   inputs."karax".repo  = "karax";
-  inputs."karax".dir   = "1_2_1";
+  inputs."karax".dir   = "1_2_2";
   inputs."karax".type  = "github";
   inputs."karax".inputs.nixpkgs.follows = "nixpkgs";
   inputs."karax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

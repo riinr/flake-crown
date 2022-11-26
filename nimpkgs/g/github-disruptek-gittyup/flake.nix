@@ -423,6 +423,14 @@
   inputs."gittyup-3_2_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."gittyup-3_2_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."gittyup-3_2_1".dir   = "3_2_1";
+  inputs."gittyup-3_2_1".owner = "nim-nix-pkgs";
+  inputs."gittyup-3_2_1".ref   = "master";
+  inputs."gittyup-3_2_1".repo  = "gittyup";
+  inputs."gittyup-3_2_1".type  = "github";
+  inputs."gittyup-3_2_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."gittyup-3_2_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

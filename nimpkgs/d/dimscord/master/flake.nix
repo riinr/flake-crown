@@ -24,7 +24,7 @@
   inputs."ws".owner = "nim-nix-pkgs";
   inputs."ws".ref   = "master";
   inputs."ws".repo  = "ws";
-  inputs."ws".dir   = "0_4_0";
+  inputs."ws".dir   = "0_5_0";
   inputs."ws".type  = "github";
   inputs."ws".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ws".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -52,6 +52,22 @@
   inputs."flatty".type  = "github";
   inputs."flatty".inputs.nixpkgs.follows = "nixpkgs";
   inputs."flatty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."jsony".owner = "nim-nix-pkgs";
+  inputs."jsony".ref   = "master";
+  inputs."jsony".repo  = "jsony";
+  inputs."jsony".dir   = "1_1_3";
+  inputs."jsony".type  = "github";
+  inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."opussum".owner = "nim-nix-pkgs";
+  inputs."opussum".ref   = "master";
+  inputs."opussum".repo  = "opussum";
+  inputs."opussum".dir   = "0_6_2";
+  inputs."opussum".type  = "github";
+  inputs."opussum".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."opussum".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

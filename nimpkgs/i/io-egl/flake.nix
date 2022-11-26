@@ -7,13 +7,13 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."egl-master".dir   = "master";
-  inputs."egl-master".owner = "nim-nix-pkgs";
-  inputs."egl-master".ref   = "master";
-  inputs."egl-master".repo  = "egl";
-  inputs."egl-master".type  = "github";
-  inputs."egl-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."egl-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."io-egl-master".dir   = "master";
+  inputs."io-egl-master".owner = "nim-nix-pkgs";
+  inputs."io-egl-master".ref   = "master";
+  inputs."io-egl-master".repo  = "io-egl";
+  inputs."io-egl-master".type  = "github";
+  inputs."io-egl-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."io-egl-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 

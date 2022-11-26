@@ -16,7 +16,7 @@
   inputs."argparse".owner = "nim-nix-pkgs";
   inputs."argparse".ref   = "master";
   inputs."argparse".repo  = "argparse";
-  inputs."argparse".dir   = "v3_0_0";
+  inputs."argparse".dir   = "v4_0_0";
   inputs."argparse".type  = "github";
   inputs."argparse".inputs.nixpkgs.follows = "nixpkgs";
   inputs."argparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

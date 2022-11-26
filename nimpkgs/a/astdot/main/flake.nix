@@ -13,14 +13,6 @@
   inputs.src-astdot-main.repo  = "astdot";
   inputs.src-astdot-main.type  = "github";
   
-  inputs."strings".owner = "nim-nix-pkgs";
-  inputs."strings".ref   = "master";
-  inputs."strings".repo  = "strings";
-  inputs."strings".dir   = "";
-  inputs."strings".type  = "github";
-  inputs."strings".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."strings".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."clapfn".owner = "nim-nix-pkgs";
   inputs."clapfn".ref   = "master";
   inputs."clapfn".repo  = "clapfn";

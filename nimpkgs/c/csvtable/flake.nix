@@ -39,6 +39,14 @@
   inputs."csvtable-v0_3_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."csvtable-v0_3_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."csvtable-v0_3_2".dir   = "v0_3_2";
+  inputs."csvtable-v0_3_2".owner = "nim-nix-pkgs";
+  inputs."csvtable-v0_3_2".ref   = "master";
+  inputs."csvtable-v0_3_2".repo  = "csvtable";
+  inputs."csvtable-v0_3_2".type  = "github";
+  inputs."csvtable-v0_3_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."csvtable-v0_3_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

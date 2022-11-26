@@ -37,14 +37,6 @@
   inputs."flatty".inputs.nixpkgs.follows = "nixpkgs";
   inputs."flatty".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."zippy".owner = "nim-nix-pkgs";
-  inputs."zippy".ref   = "master";
-  inputs."zippy".repo  = "zippy";
-  inputs."zippy".dir   = "0_10_4";
-  inputs."zippy".type  = "github";
-  inputs."zippy".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."zippy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."paramidi".owner = "nim-nix-pkgs";
   inputs."paramidi".ref   = "master";
   inputs."paramidi".repo  = "paramidi";
@@ -60,6 +52,14 @@
   inputs."threading".type  = "github";
   inputs."threading".inputs.nixpkgs.follows = "nixpkgs";
   inputs."threading".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ansiutils".owner = "nim-nix-pkgs";
+  inputs."ansiutils".ref   = "master";
+  inputs."ansiutils".repo  = "ansiutils";
+  inputs."ansiutils".dir   = "0_1_0";
+  inputs."ansiutils".type  = "github";
+  inputs."ansiutils".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ansiutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

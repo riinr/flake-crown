@@ -13,6 +13,14 @@
   inputs.src-taps-trunk.repo  = "nim_taps";
   inputs.src-taps-trunk.type  = "sourcehut";
   
+  inputs."getdns".owner = "nim-nix-pkgs";
+  inputs."getdns".ref   = "master";
+  inputs."getdns".repo  = "getdns";
+  inputs."getdns".dir   = "20220928";
+  inputs."getdns".type  = "github";
+  inputs."getdns".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."getdns".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

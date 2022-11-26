@@ -24,7 +24,7 @@
   inputs."github-nim-works-cps".owner = "nim-nix-pkgs";
   inputs."github-nim-works-cps".ref   = "master";
   inputs."github-nim-works-cps".repo  = "github-nim-works-cps";
-  inputs."github-nim-works-cps".dir   = "0_6_3";
+  inputs."github-nim-works-cps".dir   = "0_6_7";
   inputs."github-nim-works-cps".type  = "github";
   inputs."github-nim-works-cps".inputs.nixpkgs.follows = "nixpkgs";
   inputs."github-nim-works-cps".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

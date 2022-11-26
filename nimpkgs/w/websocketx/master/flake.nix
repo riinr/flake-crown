@@ -24,7 +24,7 @@
   inputs."httpx".owner = "nim-nix-pkgs";
   inputs."httpx".ref   = "master";
   inputs."httpx".repo  = "httpx";
-  inputs."httpx".dir   = "v0_3_2";
+  inputs."httpx".dir   = "v0_3_4";
   inputs."httpx".type  = "github";
   inputs."httpx".inputs.nixpkgs.follows = "nixpkgs";
   inputs."httpx".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

@@ -45,14 +45,6 @@
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."asynctest".owner = "nim-nix-pkgs";
-  inputs."asynctest".ref   = "master";
-  inputs."asynctest".repo  = "asynctest";
-  inputs."asynctest".dir   = "0_3_2";
-  inputs."asynctest".type  = "github";
-  inputs."asynctest".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."asynctest".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."nimcrypto".owner = "nim-nix-pkgs";
   inputs."nimcrypto".ref   = "master";
   inputs."nimcrypto".repo  = "nimcrypto";

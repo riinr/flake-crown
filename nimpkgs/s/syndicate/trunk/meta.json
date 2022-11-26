@@ -1,12 +1,14 @@
 {
   "name": "syndicate",
-  "version": "1.2.1",
+  "version": "20221102",
   "author": "Emery Hemingway",
   "desc": "Syndicated actors for conversational concurrency",
   "license": "Unlicense",
   "skipDirs": [],
   "skipFiles": [],
-  "skipExt": [],
+  "skipExt": [
+    "nim"
+  ],
   "installDirs": [],
   "installFiles": [],
   "installExt": [],
@@ -29,14 +31,16 @@
     },
     {
       "name": "preserves",
-      "str": "> 3.2.0",
+      "str": ">= 202210230",
       "ver": {
-        "kind": "verLater",
-        "ver": "3.2.0"
+        "kind": "verEqLater",
+        "ver": "202210230"
       }
     }
   ],
-  "bin": [],
+  "bin": [
+    "syndicate/unix/swaybar_status_actor"
+  ],
   "binDir": "",
   "srcDir": "src",
   "backend": "c",

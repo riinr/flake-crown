@@ -13,13 +13,21 @@
   inputs.src-tim-main.repo  = "tim";
   inputs.src-tim-main.type  = "github";
   
-  inputs."watchout".owner = "nim-nix-pkgs";
-  inputs."watchout".ref   = "master";
-  inputs."watchout".repo  = "watchout";
-  inputs."watchout".dir   = "main";
-  inputs."watchout".type  = "github";
-  inputs."watchout".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."watchout".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."pkginfo".owner = "nim-nix-pkgs";
+  inputs."pkginfo".ref   = "master";
+  inputs."pkginfo".repo  = "pkginfo";
+  inputs."pkginfo".dir   = "v0_1_0";
+  inputs."pkginfo".type  = "github";
+  inputs."pkginfo".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."pkginfo".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."toktok".owner = "nim-nix-pkgs";
+  inputs."toktok".ref   = "master";
+  inputs."toktok".repo  = "toktok";
+  inputs."toktok".dir   = "main";
+  inputs."toktok".type  = "github";
+  inputs."toktok".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."toktok".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."bson".owner = "nim-nix-pkgs";
   inputs."bson".ref   = "master";
@@ -28,6 +36,14 @@
   inputs."bson".type  = "github";
   inputs."bson".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bson".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."jsony".owner = "nim-nix-pkgs";
+  inputs."jsony".ref   = "master";
+  inputs."jsony".repo  = "jsony";
+  inputs."jsony".dir   = "1_1_3";
+  inputs."jsony".type  = "github";
+  inputs."jsony".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."jsony".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

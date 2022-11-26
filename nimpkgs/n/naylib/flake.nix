@@ -311,6 +311,30 @@
   inputs."naylib-v1_7_6".inputs.nixpkgs.follows = "nixpkgs";
   inputs."naylib-v1_7_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."naylib-v1_8_0".dir   = "v1_8_0";
+  inputs."naylib-v1_8_0".owner = "nim-nix-pkgs";
+  inputs."naylib-v1_8_0".ref   = "master";
+  inputs."naylib-v1_8_0".repo  = "naylib";
+  inputs."naylib-v1_8_0".type  = "github";
+  inputs."naylib-v1_8_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."naylib-v1_8_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."naylib-v1_8_1".dir   = "v1_8_1";
+  inputs."naylib-v1_8_1".owner = "nim-nix-pkgs";
+  inputs."naylib-v1_8_1".ref   = "master";
+  inputs."naylib-v1_8_1".repo  = "naylib";
+  inputs."naylib-v1_8_1".type  = "github";
+  inputs."naylib-v1_8_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."naylib-v1_8_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."naylib-v1_8_2".dir   = "v1_8_2";
+  inputs."naylib-v1_8_2".owner = "nim-nix-pkgs";
+  inputs."naylib-v1_8_2".ref   = "master";
+  inputs."naylib-v1_8_2".repo  = "naylib";
+  inputs."naylib-v1_8_2".type  = "github";
+  inputs."naylib-v1_8_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."naylib-v1_8_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

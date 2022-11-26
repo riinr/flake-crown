@@ -13,7 +13,7 @@
   "heads": [
     {
       "name": "fision",
-      "version": "2022.03.01",
+      "version": "2022.11.01",
       "author": "Juan_Carlos.nim",
       "desc": "important_packages with 0 dependencies and all unittests passing",
       "license": "MIT",
@@ -26,10 +26,17 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.6.4",
+          "str": ">= 1.6.8",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.6.4"
+            "ver": "1.6.8"
+          }
+        },
+        {
+          "name": "alea",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
           }
         },
         {
@@ -41,6 +48,13 @@
         },
         {
           "name": "arraymancer",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "ast_pattern_matching",
           "str": "any version",
           "ver": {
             "kind": "verAny"
@@ -334,6 +348,13 @@
           }
         },
         {
+          "name": "measuremancer",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
           "name": "memo",
           "str": "any version",
           "ver": {
@@ -432,7 +453,21 @@
           }
         },
         {
+          "name": "nimlsp",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
           "name": "nimly",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimpng",
           "str": "any version",
           "ver": {
             "kind": "verAny"

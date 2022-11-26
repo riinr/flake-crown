@@ -15,6 +15,14 @@
   inputs."unicodedb-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unicodedb-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."unicodedb-0_11_1".dir   = "0_11_1";
+  inputs."unicodedb-0_11_1".owner = "nim-nix-pkgs";
+  inputs."unicodedb-0_11_1".ref   = "master";
+  inputs."unicodedb-0_11_1".repo  = "unicodedb";
+  inputs."unicodedb-0_11_1".type  = "github";
+  inputs."unicodedb-0_11_1".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."unicodedb-0_11_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."unicodedb-v0_1".dir   = "v0_1";
   inputs."unicodedb-v0_1".owner = "nim-nix-pkgs";
   inputs."unicodedb-v0_1".ref   = "master";

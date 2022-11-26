@@ -31,6 +31,14 @@
   inputs."github-status-im-nim-taskpools-v0_0_3".inputs.nixpkgs.follows = "nixpkgs";
   inputs."github-status-im-nim-taskpools-v0_0_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."github-status-im-nim-taskpools-v0_0_4".dir   = "v0_0_4";
+  inputs."github-status-im-nim-taskpools-v0_0_4".owner = "nim-nix-pkgs";
+  inputs."github-status-im-nim-taskpools-v0_0_4".ref   = "master";
+  inputs."github-status-im-nim-taskpools-v0_0_4".repo  = "github-status-im-nim-taskpools";
+  inputs."github-status-im-nim-taskpools-v0_0_4".type  = "github";
+  inputs."github-status-im-nim-taskpools-v0_0_4".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-status-im-nim-taskpools-v0_0_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

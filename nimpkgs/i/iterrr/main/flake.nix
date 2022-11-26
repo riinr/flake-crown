@@ -1,5 +1,5 @@
 {
-  description = ''iterate faster. functional style, lazy like, extensible iterator library'';
+  description = ''iterate faster. functional style, extensible iterator library'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";

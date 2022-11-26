@@ -1,5 +1,5 @@
 {
-  description = ''A client for the Pwned passwords API.'';
+  description = ''A client and api for the Pwned passwords API.'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";

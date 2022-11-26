@@ -15,13 +15,13 @@
   inputs."bitseqs-master".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bitseqs-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."bitseqs-v0_1_0".dir   = "v0_1_0";
-  inputs."bitseqs-v0_1_0".owner = "nim-nix-pkgs";
-  inputs."bitseqs-v0_1_0".ref   = "master";
-  inputs."bitseqs-v0_1_0".repo  = "bitseqs";
-  inputs."bitseqs-v0_1_0".type  = "github";
-  inputs."bitseqs-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."bitseqs-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."bitfields-v0_1_0".dir   = "v0_1_0";
+  inputs."bitfields-v0_1_0".owner = "nim-nix-pkgs";
+  inputs."bitfields-v0_1_0".ref   = "master";
+  inputs."bitfields-v0_1_0".repo  = "bitfields";
+  inputs."bitfields-v0_1_0".type  = "github";
+  inputs."bitfields-v0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."bitfields-v0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."bitseqs-v0_1_1".dir   = "v0_1_1";
   inputs."bitseqs-v0_1_1".owner = "nim-nix-pkgs";

@@ -2,17 +2,10 @@
   "name": "pigeon",
   "url": "https://github.com/dizzyliam/pigeon",
   "method": "git",
-  "tags": [],
-  "description": "Define procedures on the server, call them from the browser.",
-  "license": "MIT",
-  "refs": [
-    "refs/heads/main",
-    ""
-  ],
-  "heads": [
+  "tags": [
     {
       "name": "pigeon",
-      "version": "0.1.2",
+      "version": "0.2.0",
       "author": "Liam Scaife",
       "desc": "🕊️ Define procedures on the server, call them from the browser.",
       "license": "MIT",
@@ -32,7 +25,72 @@
           }
         },
         {
-          "name": "jester",
+          "name": "prologue",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "rejex",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "ajax",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.2.0"
+    }
+  ],
+  "description": "Define procedures on the server, call them from the browser.",
+  "license": "MIT",
+  "refs": [
+    "refs/heads/main",
+    "refs/tags/v0.2.0",
+    ""
+  ],
+  "heads": [
+    {
+      "name": "pigeon",
+      "version": "0.2.0",
+      "author": "Liam Scaife",
+      "desc": "🕊️ Define procedures on the server, call them from the browser.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "prologue",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "regex",
           "str": "any version",
           "ver": {
             "kind": "verAny"

@@ -1,6 +1,6 @@
 {
   "name": "ethers",
-  "version": "0.1.5",
+  "version": "0.2.4",
   "author": "Nim Ethers Authors",
   "desc": "library for interacting with Ethereum",
   "license": "MIT",
@@ -28,12 +28,12 @@
     },
     {
       "name": "contractabi",
-      "str": ">= 0.4.4 & < 0.5.0",
+      "str": ">= 0.4.6 & < 0.5.0",
       "ver": {
         "kind": "verIntersect",
         "verILeft": {
           "kind": "verEqLater",
-          "ver": "0.4.4"
+          "ver": "0.4.6"
         },
         "verIRight": {
           "kind": "verEarlier",
@@ -87,6 +87,13 @@
     },
     {
       "name": "stew",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
+    },
+    {
+      "name": "eth",
       "str": "any version",
       "ver": {
         "kind": "verAny"

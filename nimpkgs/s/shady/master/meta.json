@@ -1,7 +1,7 @@
 {
   "name": "shady",
-  "version": "0.0.1",
-  "author": "treeform",
+  "version": "0.1.3",
+  "author": "Andre von Houck",
   "desc": "Nim to GPU shader language compiler and supporting utilities.",
   "license": "MIT",
   "skipDirs": [],
@@ -13,26 +13,26 @@
   "requires": [
     {
       "name": "nim",
-      "str": ">= 1.2.2",
+      "str": ">= 1.1.4",
       "ver": {
         "kind": "verEqLater",
-        "ver": "1.2.2"
+        "ver": "1.1.4"
       }
     },
     {
       "name": "vmath",
-      "str": "#head",
+      "str": ">= 1.2.0",
       "ver": {
-        "kind": "verSpecial",
-        "spe": "#head"
+        "kind": "verEqLater",
+        "ver": "1.2.0"
       }
     },
     {
       "name": "pixie",
-      "str": "#head",
+      "str": ">= 4.3.0",
       "ver": {
-        "kind": "verSpecial",
-        "spe": "#head"
+        "kind": "verEqLater",
+        "ver": "4.3.0"
       }
     }
   ],

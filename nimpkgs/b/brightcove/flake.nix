@@ -7,14 +7,6 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."brightcove-master".dir   = "master";
-  inputs."brightcove-master".owner = "nim-nix-pkgs";
-  inputs."brightcove-master".ref   = "master";
-  inputs."brightcove-master".repo  = "brightcove";
-  inputs."brightcove-master".type  = "github";
-  inputs."brightcove-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."brightcove-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

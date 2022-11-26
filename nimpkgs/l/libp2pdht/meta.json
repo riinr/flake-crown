@@ -16,7 +16,6 @@
     "refs/heads/libp2p-peerrecord",
     "refs/heads/libp2pcrypto",
     "refs/heads/main",
-    "refs/heads/nim-libp2p-unstable",
     "refs/heads/peerrecord-as-enr",
     "refs/heads/sqlite_datastore_persist_providers",
     "refs/heads/unstable",
@@ -63,17 +62,10 @@
         },
         {
           "name": "bearssl",
-          "str": ">= 0.1.5 & < 0.2.0",
+          "str": "#head",
           "ver": {
-            "kind": "verIntersect",
-            "verILeft": {
-              "kind": "verEqLater",
-              "ver": "0.1.5"
-            },
-            "verIRight": {
-              "kind": "verEarlier",
-              "ver": "0.2.0"
-            }
+            "kind": "verSpecial",
+            "spe": "#head"
           }
         },
         {
@@ -108,10 +100,10 @@
         },
         {
           "name": "libp2p",
-          "str": "#c7504d2446717a48a79c8b15e0f21bbfc84957ba",
+          "str": "#unstable",
           "ver": {
             "kind": "verSpecial",
-            "spe": "#c7504d2446717a48a79c8b15e0f21bbfc84957ba"
+            "spe": "#unstable"
           }
         },
         {
@@ -179,6 +171,21 @@
               "kind": "verEarlier",
               "ver": "0.4.0"
             }
+          }
+        },
+        {
+          "name": "https://github.com/status-im/nim-datastore",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "questionable",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
           }
         }
       ],

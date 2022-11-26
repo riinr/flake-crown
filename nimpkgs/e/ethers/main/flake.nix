@@ -69,6 +69,14 @@
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."eth".owner = "nim-nix-pkgs";
+  inputs."eth".ref   = "master";
+  inputs."eth".repo  = "eth";
+  inputs."eth".dir   = "master";
+  inputs."eth".type  = "github";
+  inputs."eth".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."eth".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

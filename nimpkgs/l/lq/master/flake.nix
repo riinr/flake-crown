@@ -21,14 +21,6 @@
   inputs."nap".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nap".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."parsetoml".owner = "nim-nix-pkgs";
-  inputs."parsetoml".ref   = "master";
-  inputs."parsetoml".repo  = "parsetoml";
-  inputs."parsetoml".dir   = "v0_6_0";
-  inputs."parsetoml".type  = "github";
-  inputs."parsetoml".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."parsetoml".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;

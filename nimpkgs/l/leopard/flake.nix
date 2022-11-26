@@ -15,6 +15,14 @@
   inputs."leopard-main".inputs.nixpkgs.follows = "nixpkgs";
   inputs."leopard-main".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."leopard-0_1_0".dir   = "0_1_0";
+  inputs."leopard-0_1_0".owner = "nim-nix-pkgs";
+  inputs."leopard-0_1_0".ref   = "master";
+  inputs."leopard-0_1_0".repo  = "leopard";
+  inputs."leopard-0_1_0".type  = "github";
+  inputs."leopard-0_1_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."leopard-0_1_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."leopard-v0_0_1".dir   = "v0_0_1";
   inputs."leopard-v0_0_1".owner = "nim-nix-pkgs";
   inputs."leopard-v0_0_1".ref   = "master";

@@ -16,7 +16,7 @@
   inputs."zfblast".owner = "nim-nix-pkgs";
   inputs."zfblast".ref   = "master";
   inputs."zfblast".repo  = "zfblast";
-  inputs."zfblast".dir   = "v0_2_7";
+  inputs."zfblast".dir   = "v0_2_8";
   inputs."zfblast".type  = "github";
   inputs."zfblast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."zfblast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -32,7 +32,7 @@
   inputs."stdext".owner = "nim-nix-pkgs";
   inputs."stdext".ref   = "master";
   inputs."stdext".repo  = "stdext";
-  inputs."stdext".dir   = "v0_0_13";
+  inputs."stdext".dir   = "v0_0_14";
   inputs."stdext".type  = "github";
   inputs."stdext".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stdext".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

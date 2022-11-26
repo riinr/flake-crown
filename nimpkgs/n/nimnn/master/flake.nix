@@ -9,7 +9,7 @@
   
   inputs.src-NimNN-master.flake = false;
   inputs.src-NimNN-master.ref   = "refs/heads/master";
-  inputs.src-NimNN-master.owner = "xcodz-dot";
+  inputs.src-NimNN-master.owner = "amaank404";
   inputs.src-NimNN-master.repo  = "NimNN";
   inputs.src-NimNN-master.type  = "github";
   
@@ -24,7 +24,7 @@
   inputs."argparse".owner = "nim-nix-pkgs";
   inputs."argparse".ref   = "master";
   inputs."argparse".repo  = "argparse";
-  inputs."argparse".dir   = "v3_0_0";
+  inputs."argparse".dir   = "v4_0_0";
   inputs."argparse".type  = "github";
   inputs."argparse".inputs.nixpkgs.follows = "nixpkgs";
   inputs."argparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -36,14 +36,6 @@
   inputs."progress".type  = "github";
   inputs."progress".inputs.nixpkgs.follows = "nixpkgs";
   inputs."progress".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
-  inputs."sdl2".owner = "nim-nix-pkgs";
-  inputs."sdl2".ref   = "master";
-  inputs."sdl2".repo  = "sdl2";
-  inputs."sdl2".dir   = "v2_0_4";
-  inputs."sdl2".type  = "github";
-  inputs."sdl2".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."sdl2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."therapist".owner = "nim-nix-pkgs";
   inputs."therapist".ref   = "master";

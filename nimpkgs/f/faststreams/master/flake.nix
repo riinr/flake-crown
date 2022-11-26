@@ -21,14 +21,6 @@
   inputs."stew".inputs.nixpkgs.follows = "nixpkgs";
   inputs."stew".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."testutils".owner = "nim-nix-pkgs";
-  inputs."testutils".ref   = "master";
-  inputs."testutils".repo  = "testutils";
-  inputs."testutils".dir   = "v0_5_0";
-  inputs."testutils".type  = "github";
-  inputs."testutils".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."testutils".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   inputs."chronos".owner = "nim-nix-pkgs";
   inputs."chronos".ref   = "master";
   inputs."chronos".repo  = "chronos";
@@ -40,7 +32,7 @@
   inputs."unittest2".owner = "nim-nix-pkgs";
   inputs."unittest2".ref   = "master";
   inputs."unittest2".repo  = "unittest2";
-  inputs."unittest2".dir   = "v0_0_4";
+  inputs."unittest2".dir   = "v0_0_5";
   inputs."unittest2".type  = "github";
   inputs."unittest2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."unittest2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

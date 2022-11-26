@@ -13,13 +13,21 @@
   inputs.src-pigeon-main.repo  = "pigeon";
   inputs.src-pigeon-main.type  = "github";
   
-  inputs."jester".owner = "nim-nix-pkgs";
-  inputs."jester".ref   = "master";
-  inputs."jester".repo  = "jester";
-  inputs."jester".dir   = "v0_5_0";
-  inputs."jester".type  = "github";
-  inputs."jester".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."jester".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."prologue".owner = "nim-nix-pkgs";
+  inputs."prologue".ref   = "master";
+  inputs."prologue".repo  = "prologue";
+  inputs."prologue".dir   = "v0_6_4";
+  inputs."prologue".type  = "github";
+  inputs."prologue".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."prologue".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."regex".owner = "nim-nix-pkgs";
+  inputs."regex".ref   = "master";
+  inputs."regex".repo  = "regex";
+  inputs."regex".dir   = "v0_20_0";
+  inputs."regex".type  = "github";
+  inputs."regex".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."regex".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."ajax".owner = "nim-nix-pkgs";
   inputs."ajax".ref   = "master";

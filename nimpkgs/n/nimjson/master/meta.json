@@ -1,6 +1,6 @@
 {
   "name": "nimjson",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "author": "jiro4989",
   "desc": "nimjson generates nim object definitions from json documents.",
   "license": "MIT",
@@ -15,10 +15,18 @@
   "requires": [
     {
       "name": "nim",
-      "str": ">= 0.20.0",
+      "str": ">= 1.4.0",
       "ver": {
         "kind": "verEqLater",
-        "ver": "0.20.0"
+        "ver": "1.4.0"
+      }
+    },
+    {
+      "name": "jsony",
+      "str": "1.1.3",
+      "ver": {
+        "kind": "verEq",
+        "ver": "1.1.3"
       }
     }
   ],
