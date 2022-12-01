@@ -16,7 +16,7 @@
   inputs."cppstl".owner = "nim-nix-pkgs";
   inputs."cppstl".ref   = "master";
   inputs."cppstl".repo  = "cppstl";
-  inputs."cppstl".dir   = "v0_6_0";
+  inputs."cppstl".dir   = "v0_6_1";
   inputs."cppstl".type  = "github";
   inputs."cppstl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cppstl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

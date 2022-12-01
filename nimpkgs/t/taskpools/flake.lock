@@ -138,11 +138,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1668435762,
-        "narHash": "sha256-4ArhSbDGEh1HtB4tG0zoUvp7558CfxUklJcsLemSn2w=",
+        "lastModified": 1669304833,
+        "narHash": "sha256-XUC/j0d3QjjTvkZRTjfGM/XfZHKQcLF70sg5Z2xXvLc=",
         "owner": "riinr",
         "repo": "nim-flakes-lib",
-        "rev": "4bebe53096d189c04ac618fc3c108d8082391344",
+        "rev": "53a35251b37bd6c886c3e3e20d4b9e2d966896b4",
         "type": "github"
       },
       "original": {
@@ -188,11 +188,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1668681245,
-        "narHash": "sha256-IH8t+b9hCfNwEvdC55UEymn8jL457Fo/hx3N/kNTZso=",
+        "lastModified": 1669387357,
+        "narHash": "sha256-z1azVj/5Em5kGhh9OgBOsjTEgMab7hXL/aRilH9tzyI=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "bd4bfd814e96488febb38b4b4d0549c56b840c7f",
+        "rev": "55b3f68bda6d4f4dc6092eed0508063f154fa4fd",
         "type": "github"
       },
       "original": {
@@ -206,7 +206,8 @@
         "nixpkgs": "nixpkgs_2",
         "taskpools-unstable": "taskpools-unstable",
         "taskpools-v0_0_2": "taskpools-v0_0_2",
-        "taskpools-v0_0_3": "taskpools-v0_0_3"
+        "taskpools-v0_0_3": "taskpools-v0_0_3",
+        "taskpools-v0_0_4": "taskpools-v0_0_4"
       }
     },
     "src-taskpools-unstable": {
@@ -260,6 +261,23 @@
         "type": "github"
       }
     },
+    "src-taskpools-v0_0_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1669056972,
+        "narHash": "sha256-HxG6eVufw2kWwh+2Xqx+GIbQUuP1oA9C2DxQd0OPQbU=",
+        "owner": "status-im",
+        "repo": "nim-taskpools",
+        "rev": "b3673c7a7a959ccacb393bd9b47e997bbd177f5a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/tags/v0.0.4",
+        "repo": "nim-taskpools",
+        "type": "github"
+      }
+    },
     "taskpools-unstable": {
       "inputs": {
         "flakeNimbleLib": [
@@ -272,11 +290,11 @@
       },
       "locked": {
         "dir": "unstable",
-        "lastModified": 1668754855,
-        "narHash": "sha256-QnYrMnJ7M5Z8+Q7hAg+iY2RyeP7pjze22F7mNg37SNY=",
+        "lastModified": 1669431415,
+        "narHash": "sha256-Y1eSMZVqkUx5twfN5mLWa+hakkmxQz13RZ5t8NkMtaA=",
         "owner": "nim-nix-pkgs",
         "repo": "taskpools",
-        "rev": "6fbaa4518a9f07148cd5265a0203919f000dda28",
+        "rev": "e33cee9d212adaac6aacfb0bba78b9fd7fad9356",
         "type": "github"
       },
       "original": {
@@ -299,11 +317,11 @@
       },
       "locked": {
         "dir": "v0_0_2",
-        "lastModified": 1668754855,
-        "narHash": "sha256-QnYrMnJ7M5Z8+Q7hAg+iY2RyeP7pjze22F7mNg37SNY=",
+        "lastModified": 1669431415,
+        "narHash": "sha256-Y1eSMZVqkUx5twfN5mLWa+hakkmxQz13RZ5t8NkMtaA=",
         "owner": "nim-nix-pkgs",
         "repo": "taskpools",
-        "rev": "6fbaa4518a9f07148cd5265a0203919f000dda28",
+        "rev": "e33cee9d212adaac6aacfb0bba78b9fd7fad9356",
         "type": "github"
       },
       "original": {
@@ -326,15 +344,42 @@
       },
       "locked": {
         "dir": "v0_0_3",
-        "lastModified": 1668754855,
-        "narHash": "sha256-QnYrMnJ7M5Z8+Q7hAg+iY2RyeP7pjze22F7mNg37SNY=",
+        "lastModified": 1669431415,
+        "narHash": "sha256-Y1eSMZVqkUx5twfN5mLWa+hakkmxQz13RZ5t8NkMtaA=",
         "owner": "nim-nix-pkgs",
         "repo": "taskpools",
-        "rev": "6fbaa4518a9f07148cd5265a0203919f000dda28",
+        "rev": "e33cee9d212adaac6aacfb0bba78b9fd7fad9356",
         "type": "github"
       },
       "original": {
         "dir": "v0_0_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "taskpools",
+        "type": "github"
+      }
+    },
+    "taskpools-v0_0_4": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-taskpools-v0_0_4": "src-taskpools-v0_0_4"
+      },
+      "locked": {
+        "dir": "v0_0_4",
+        "lastModified": 1669431415,
+        "narHash": "sha256-Y1eSMZVqkUx5twfN5mLWa+hakkmxQz13RZ5t8NkMtaA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "taskpools",
+        "rev": "e33cee9d212adaac6aacfb0bba78b9fd7fad9356",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_0_4",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "taskpools",

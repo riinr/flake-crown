@@ -127,6 +127,14 @@
   inputs."faker-v0_15_2".inputs.nixpkgs.follows = "nixpkgs";
   inputs."faker-v0_15_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."faker-v0_16_0".dir   = "v0_16_0";
+  inputs."faker-v0_16_0".owner = "nim-nix-pkgs";
+  inputs."faker-v0_16_0".ref   = "master";
+  inputs."faker-v0_16_0".repo  = "faker";
+  inputs."faker-v0_16_0".type  = "github";
+  inputs."faker-v0_16_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."faker-v0_16_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."faker-v0_2_1".dir   = "v0_2_1";
   inputs."faker-v0_2_1".owner = "nim-nix-pkgs";
   inputs."faker-v0_2_1".ref   = "master";

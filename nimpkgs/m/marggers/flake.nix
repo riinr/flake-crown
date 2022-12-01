@@ -111,6 +111,22 @@
   inputs."marggers-v0_3_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."marggers-v0_3_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."marggers-v0_3_2".dir   = "v0_3_2";
+  inputs."marggers-v0_3_2".owner = "nim-nix-pkgs";
+  inputs."marggers-v0_3_2".ref   = "master";
+  inputs."marggers-v0_3_2".repo  = "marggers";
+  inputs."marggers-v0_3_2".type  = "github";
+  inputs."marggers-v0_3_2".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."marggers-v0_3_2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."marggers-v0_3_3".dir   = "v0_3_3";
+  inputs."marggers-v0_3_3".owner = "nim-nix-pkgs";
+  inputs."marggers-v0_3_3".ref   = "master";
+  inputs."marggers-v0_3_3".repo  = "marggers";
+  inputs."marggers-v0_3_3".type  = "github";
+  inputs."marggers-v0_3_3".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."marggers-v0_3_3".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

@@ -1,34 +1,5 @@
 {
   "nodes": {
-    "commandeer": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "moustachu",
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "moustachu",
-          "nixpkgs"
-        ],
-        "src-commandeer-0_12_3": "src-commandeer-0_12_3"
-      },
-      "locked": {
-        "dir": "0_12_3",
-        "lastModified": 1648163003,
-        "narHash": "sha256-nnjz7k58DPNsdVRkimrvV1w3dsBEn+1dln9xEnU1hXE=",
-        "owner": "nim-nix-pkgs",
-        "repo": "commandeer",
-        "rev": "d50a5642698516dbe2b0829999930124306b2d03",
-        "type": "github"
-      },
-      "original": {
-        "dir": "0_12_3",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "commandeer",
-        "type": "github"
-      }
-    },
     "devshell": {
       "inputs": {
         "flake-utils": [
@@ -167,11 +138,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1668435762,
-        "narHash": "sha256-4ArhSbDGEh1HtB4tG0zoUvp7558CfxUklJcsLemSn2w=",
+        "lastModified": 1669304833,
+        "narHash": "sha256-XUC/j0d3QjjTvkZRTjfGM/XfZHKQcLF70sg5Z2xXvLc=",
         "owner": "riinr",
         "repo": "nim-flakes-lib",
-        "rev": "4bebe53096d189c04ac618fc3c108d8082391344",
+        "rev": "53a35251b37bd6c886c3e3e20d4b9e2d966896b4",
         "type": "github"
       },
       "original": {
@@ -199,31 +170,30 @@
         "type": "github"
       }
     },
-    "moustachu": {
+    "mustache": {
       "inputs": {
-        "commandeer": "commandeer",
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
         "nixpkgs": [
           "nixpkgs"
         ],
-        "src-moustachu-0_14_0": "src-moustachu-0_14_0"
+        "src-mustache-v0_4_3": "src-mustache-v0_4_3"
       },
       "locked": {
-        "dir": "0_14_0",
-        "lastModified": 1668755423,
-        "narHash": "sha256-AKdnYYP3WK4SJfX5cu/cQrDfbmEW6nkFC5P3v4x+kd4=",
+        "dir": "v0_4_3",
+        "lastModified": 1669438159,
+        "narHash": "sha256-JF/oefQwCqriGNZd1vp/lVHviclhCg07b81btzpdNV4=",
         "owner": "nim-nix-pkgs",
-        "repo": "moustachu",
-        "rev": "9a37a2763f7adbd5c193c8d933d0b7b11b7edb6b",
+        "repo": "mustache",
+        "rev": "9750be87784ae154a96560d64aeffec24e275550",
         "type": "github"
       },
       "original": {
-        "dir": "0_14_0",
+        "dir": "v0_4_3",
         "owner": "nim-nix-pkgs",
         "ref": "master",
-        "repo": "moustachu",
+        "repo": "mustache",
         "type": "github"
       }
     },
@@ -245,11 +215,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1668681245,
-        "narHash": "sha256-IH8t+b9hCfNwEvdC55UEymn8jL457Fo/hx3N/kNTZso=",
+        "lastModified": 1669387357,
+        "narHash": "sha256-z1azVj/5Em5kGhh9OgBOsjTEgMab7hXL/aRilH9tzyI=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "bd4bfd814e96488febb38b4b4d0549c56b840c7f",
+        "rev": "55b3f68bda6d4f4dc6092eed0508063f154fa4fd",
         "type": "github"
       },
       "original": {
@@ -260,7 +230,7 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
-        "moustachu": "moustachu",
+        "mustache": "mustache",
         "nixpkgs": "nixpkgs_2",
         "src-zfplugs-master": "src-zfplugs-master",
         "zfcore": "zfcore",
@@ -298,37 +268,20 @@
         "type": "github"
       }
     },
-    "src-commandeer-0_12_3": {
+    "src-mustache-v0_4_3": {
       "flake": false,
       "locked": {
-        "lastModified": 1514910849,
-        "narHash": "sha256-filsxyrwouxIPlVAwiv9nSz8HpVz7GYNPEmc0mo2HBU=",
-        "owner": "fenekku",
-        "repo": "commandeer",
-        "rev": "d8f246703de3c17763a492c8f8ab53ffd8542a28",
+        "lastModified": 1628462357,
+        "narHash": "sha256-rrmKSb422YALxg0nV8rjTNgLecJAM8jvg8tnbvSa9SY=",
+        "owner": "soasme",
+        "repo": "nim-mustache",
+        "rev": "1677949a848fc126a0716a67bba2c6217205255c",
         "type": "github"
       },
       "original": {
-        "owner": "fenekku",
-        "ref": "refs/tags/0.12.3",
-        "repo": "commandeer",
-        "type": "github"
-      }
-    },
-    "src-moustachu-0_14_0": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1581180342,
-        "narHash": "sha256-o7Z5vcozOzFciy6C4Bv039Y9zYZ1rhle8jTW1l4MMpo=",
-        "owner": "fenekku",
-        "repo": "moustachu",
-        "rev": "f5d3a1e6454f6c0436b54503bd5f560c178aea2a",
-        "type": "github"
-      },
-      "original": {
-        "owner": "fenekku",
-        "ref": "refs/tags/0.14.0",
-        "repo": "moustachu",
+        "owner": "soasme",
+        "ref": "refs/tags/v0.4.3",
+        "repo": "nim-mustache",
         "type": "github"
       }
     },
@@ -667,11 +620,11 @@
       },
       "locked": {
         "dir": "v1_1_18",
-        "lastModified": 1668756170,
-        "narHash": "sha256-WWUveXwZvAU1Caw6aLYwkgN+OMDjMU5zELCWmf9Yiuk=",
+        "lastModified": 1669439316,
+        "narHash": "sha256-/orlj5zH1moHuV3MZsRgdfrThTCj7F1/V92ZcWqTs0w=",
         "owner": "nim-nix-pkgs",
         "repo": "zfcore",
-        "rev": "7109adccc51e1878d0e7edff3ee80b7fe61b8335",
+        "rev": "d729a52c2e374f63e3ba26a18812dec043dc983e",
         "type": "github"
       },
       "original": {
@@ -695,11 +648,11 @@
       },
       "locked": {
         "dir": "v0_0_9",
-        "lastModified": 1668755480,
-        "narHash": "sha256-4NkmbtB9F7RcfoPccgR4rIcYWqkEaY75BeCrmGLAO0k=",
+        "lastModified": 1669438786,
+        "narHash": "sha256-Xwfy7I48SuZj0VQ5l36i9Qd2/MvnbnhpepZTO0UlLEQ=",
         "owner": "nim-nix-pkgs",
         "repo": "zfdbms",
-        "rev": "3e26a8cc2c96395639771fd29c314a0c85797046",
+        "rev": "b0fb1d05ae15f58ec184443d2ecd1b765128464d",
         "type": "github"
       },
       "original": {

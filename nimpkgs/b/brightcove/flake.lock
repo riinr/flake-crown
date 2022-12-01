@@ -1,33 +1,5 @@
 {
   "nodes": {
-    "brightcove-master": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "src-brightcove-master": "src-brightcove-master",
-        "util": "util"
-      },
-      "locked": {
-        "dir": "master",
-        "lastModified": 1668755382,
-        "narHash": "sha256-omjf1WJl34WYZoH9dWoZvun/A3d6Hd/dDaGwkZo3R2A=",
-        "owner": "nim-nix-pkgs",
-        "repo": "brightcove",
-        "rev": "04cf424e2ed61a7f4205637b6e69738bf32aa666",
-        "type": "github"
-      },
-      "original": {
-        "dir": "master",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "brightcove",
-        "type": "github"
-      }
-    },
     "devshell": {
       "inputs": {
         "flake-utils": [
@@ -166,11 +138,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1668435762,
-        "narHash": "sha256-4ArhSbDGEh1HtB4tG0zoUvp7558CfxUklJcsLemSn2w=",
+        "lastModified": 1669304833,
+        "narHash": "sha256-XUC/j0d3QjjTvkZRTjfGM/XfZHKQcLF70sg5Z2xXvLc=",
         "owner": "riinr",
         "repo": "nim-flakes-lib",
-        "rev": "4bebe53096d189c04ac618fc3c108d8082391344",
+        "rev": "53a35251b37bd6c886c3e3e20d4b9e2d966896b4",
         "type": "github"
       },
       "original": {
@@ -216,11 +188,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1668681245,
-        "narHash": "sha256-IH8t+b9hCfNwEvdC55UEymn8jL457Fo/hx3N/kNTZso=",
+        "lastModified": 1669387357,
+        "narHash": "sha256-z1azVj/5Em5kGhh9OgBOsjTEgMab7hXL/aRilH9tzyI=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "bd4bfd814e96488febb38b4b4d0549c56b840c7f",
+        "rev": "55b3f68bda6d4f4dc6092eed0508063f154fa4fd",
         "type": "github"
       },
       "original": {
@@ -230,72 +202,8 @@
     },
     "root": {
       "inputs": {
-        "brightcove-master": "brightcove-master",
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs_2"
-      }
-    },
-    "src-brightcove-master": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1661552845,
-        "narHash": "sha256-wHkzydKtlehthWCqbcslbIR4fB8UakaVBQP8hrSvvAA=",
-        "owner": "thisago",
-        "repo": "brightcove",
-        "rev": "6148be4442e8566020dae564cc69c783398888ec",
-        "type": "github"
-      },
-      "original": {
-        "owner": "thisago",
-        "ref": "refs/heads/master",
-        "repo": "brightcove",
-        "type": "github"
-      }
-    },
-    "src-util-master": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1661954532,
-        "narHash": "sha256-LavUdhXugYtLETTcwPqBiW77lwP8lSMf2b+riXrC4yA=",
-        "owner": "thisago",
-        "repo": "util",
-        "rev": "da3e1e96aeebee5a0cac4f6c9c1c6b0c56792a4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "thisago",
-        "ref": "refs/heads/master",
-        "repo": "util",
-        "type": "github"
-      }
-    },
-    "util": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "brightcove-master",
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "brightcove-master",
-          "nixpkgs"
-        ],
-        "src-util-master": "src-util-master"
-      },
-      "locked": {
-        "dir": "master",
-        "lastModified": 1668754893,
-        "narHash": "sha256-9Dkk2W4sdtxGUN6Oc7Z0ecz0x8efmwZqWVqBZrjT+N0=",
-        "owner": "nim-nix-pkgs",
-        "repo": "util",
-        "rev": "e12f1332098a9e8fd24b64983a7ab6ae961f9f8d",
-        "type": "github"
-      },
-      "original": {
-        "dir": "master",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "util",
-        "type": "github"
       }
     }
   },

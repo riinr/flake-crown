@@ -32,7 +32,7 @@
   inputs."taskpools".owner = "nim-nix-pkgs";
   inputs."taskpools".ref   = "master";
   inputs."taskpools".repo  = "taskpools";
-  inputs."taskpools".dir   = "v0_0_3";
+  inputs."taskpools".dir   = "v0_0_4";
   inputs."taskpools".type  = "github";
   inputs."taskpools".inputs.nixpkgs.follows = "nixpkgs";
   inputs."taskpools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";

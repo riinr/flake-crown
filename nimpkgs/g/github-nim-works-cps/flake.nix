@@ -455,6 +455,14 @@
   inputs."github-nim-works-cps-0_6_1".inputs.nixpkgs.follows = "nixpkgs";
   inputs."github-nim-works-cps-0_6_1".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."github-nim-works-cps-0_6_10".dir   = "0_6_10";
+  inputs."github-nim-works-cps-0_6_10".owner = "nim-nix-pkgs";
+  inputs."github-nim-works-cps-0_6_10".ref   = "master";
+  inputs."github-nim-works-cps-0_6_10".repo  = "github-nim-works-cps";
+  inputs."github-nim-works-cps-0_6_10".type  = "github";
+  inputs."github-nim-works-cps-0_6_10".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-nim-works-cps-0_6_10".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   inputs."github-nim-works-cps-0_6_2".dir   = "0_6_2";
   inputs."github-nim-works-cps-0_6_2".owner = "nim-nix-pkgs";
   inputs."github-nim-works-cps-0_6_2".ref   = "master";
@@ -502,6 +510,22 @@
   inputs."github-nim-works-cps-0_6_7".type  = "github";
   inputs."github-nim-works-cps-0_6_7".inputs.nixpkgs.follows = "nixpkgs";
   inputs."github-nim-works-cps-0_6_7".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."github-nim-works-cps-0_6_8".dir   = "0_6_8";
+  inputs."github-nim-works-cps-0_6_8".owner = "nim-nix-pkgs";
+  inputs."github-nim-works-cps-0_6_8".ref   = "master";
+  inputs."github-nim-works-cps-0_6_8".repo  = "github-nim-works-cps";
+  inputs."github-nim-works-cps-0_6_8".type  = "github";
+  inputs."github-nim-works-cps-0_6_8".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-nim-works-cps-0_6_8".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."github-nim-works-cps-0_6_9".dir   = "0_6_9";
+  inputs."github-nim-works-cps-0_6_9".owner = "nim-nix-pkgs";
+  inputs."github-nim-works-cps-0_6_9".ref   = "master";
+  inputs."github-nim-works-cps-0_6_9".repo  = "github-nim-works-cps";
+  inputs."github-nim-works-cps-0_6_9".type  = "github";
+  inputs."github-nim-works-cps-0_6_9".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-nim-works-cps-0_6_9".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."github-nim-works-cps-rfc".dir   = "rfc";
   inputs."github-nim-works-cps-rfc".owner = "nim-nix-pkgs";

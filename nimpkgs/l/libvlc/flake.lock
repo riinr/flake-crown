@@ -31,37 +31,6 @@
         "type": "github"
       }
     },
-    "cligen_2": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "libvlc-master",
-          "nimterop",
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "libvlc-master",
-          "nimterop",
-          "nixpkgs"
-        ],
-        "src-cligen-v1_5_31": "src-cligen-v1_5_31"
-      },
-      "locked": {
-        "dir": "v1_5_31",
-        "lastModified": 1667329584,
-        "narHash": "sha256-Zmr23KcZpXNQDooZZxW0kUcm9oe8zF1CIPmbuYVdNYY=",
-        "owner": "nim-nix-pkgs",
-        "repo": "cligen",
-        "rev": "423b7dfb2ae3aa4db2d4dc104e25f762fbb9356b",
-        "type": "github"
-      },
-      "original": {
-        "dir": "v1_5_31",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "cligen",
-        "type": "github"
-      }
-    },
     "devshell": {
       "inputs": {
         "flake-utils": [
@@ -200,11 +169,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1668435762,
-        "narHash": "sha256-4ArhSbDGEh1HtB4tG0zoUvp7558CfxUklJcsLemSn2w=",
+        "lastModified": 1669304833,
+        "narHash": "sha256-XUC/j0d3QjjTvkZRTjfGM/XfZHKQcLF70sg5Z2xXvLc=",
         "owner": "riinr",
         "repo": "nim-flakes-lib",
-        "rev": "4bebe53096d189c04ac618fc3c108d8082391344",
+        "rev": "53a35251b37bd6c886c3e3e20d4b9e2d966896b4",
         "type": "github"
       },
       "original": {
@@ -236,6 +205,38 @@
         "owner": "nim-nix-pkgs",
         "repo": "futhark",
         "rev": "d3a65e402bd30b66248d4a31dad1132dcf24a4ce",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_6_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "futhark",
+        "type": "github"
+      }
+    },
+    "futhark_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "libvlc-master",
+          "flakeNimbleLib"
+        ],
+        "github-pmunch-libclang": "github-pmunch-libclang_2",
+        "macroutils": "macroutils_2",
+        "nixpkgs": [
+          "libvlc-master",
+          "nixpkgs"
+        ],
+        "src-futhark-v0_6_1": "src-futhark-v0_6_1_2",
+        "termstyle": "termstyle_2"
+      },
+      "locked": {
+        "dir": "v0_6_1",
+        "lastModified": 1669432150,
+        "narHash": "sha256-Nw+mQ6lTQNHXVWJZu/TDdPkIhEKY0H2lipHDwBrPct0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "futhark",
+        "rev": "01a5e892cdb980f8db84c7c16b464119d0dfd48f",
         "type": "github"
       },
       "original": {
@@ -295,6 +296,37 @@
         "type": "github"
       }
     },
+    "github-pmunch-libclang_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "libvlc-master",
+          "futhark",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "libvlc-master",
+          "futhark",
+          "nixpkgs"
+        ],
+        "src-github-pmunch-libclang-v0_59": "src-github-pmunch-libclang-v0_59_2"
+      },
+      "locked": {
+        "dir": "v0_59",
+        "lastModified": 1651555488,
+        "narHash": "sha256-++SRiQRRtZXT9CwLloA1Hb8RbWo3MVmLZ5AP5chZIM0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "github-pmunch-libclang",
+        "rev": "88a32f8eeb27916da95602ca682d61da3ad0ab6e",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_59",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "github-pmunch-libclang",
+        "type": "github"
+      }
+    },
     "libvlc-0_1": {
       "inputs": {
         "flakeNimbleLib": [
@@ -308,11 +340,11 @@
       },
       "locked": {
         "dir": "0_1",
-        "lastModified": 1668750988,
-        "narHash": "sha256-cS0ULN8lkF65LnhI9v8PDUpcgiR3bGJQ6/yTISxbebo=",
+        "lastModified": 1669432915,
+        "narHash": "sha256-ZXW3TXLUG5TlJp7s9Og/ZNuSAdxyJ9Mp0lQDJJJtg4I=",
         "owner": "nim-nix-pkgs",
         "repo": "libvlc",
-        "rev": "842170b0a519265388f4a93c14ccb4d008295e7a",
+        "rev": "f35b88425a29d8b313146514b0b600039bea1816",
         "type": "github"
       },
       "original": {
@@ -336,11 +368,11 @@
       },
       "locked": {
         "dir": "0_2",
-        "lastModified": 1668750988,
-        "narHash": "sha256-cS0ULN8lkF65LnhI9v8PDUpcgiR3bGJQ6/yTISxbebo=",
+        "lastModified": 1669432915,
+        "narHash": "sha256-ZXW3TXLUG5TlJp7s9Og/ZNuSAdxyJ9Mp0lQDJJJtg4I=",
         "owner": "nim-nix-pkgs",
         "repo": "libvlc",
-        "rev": "842170b0a519265388f4a93c14ccb4d008295e7a",
+        "rev": "f35b88425a29d8b313146514b0b600039bea1816",
         "type": "github"
       },
       "original": {
@@ -356,7 +388,7 @@
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
-        "nimterop": "nimterop_2",
+        "futhark": "futhark_2",
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -364,11 +396,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1668750988,
-        "narHash": "sha256-cS0ULN8lkF65LnhI9v8PDUpcgiR3bGJQ6/yTISxbebo=",
+        "lastModified": 1669432915,
+        "narHash": "sha256-ZXW3TXLUG5TlJp7s9Og/ZNuSAdxyJ9Mp0lQDJJJtg4I=",
         "owner": "nim-nix-pkgs",
         "repo": "libvlc",
-        "rev": "842170b0a519265388f4a93c14ccb4d008295e7a",
+        "rev": "f35b88425a29d8b313146514b0b600039bea1816",
         "type": "github"
       },
       "original": {
@@ -392,6 +424,37 @@
           "nixpkgs"
         ],
         "src-macroutils-v1_2_0": "src-macroutils-v1_2_0"
+      },
+      "locked": {
+        "dir": "v1_2_0",
+        "lastModified": 1651555629,
+        "narHash": "sha256-yjMaDY2itRqXBAZV7BdAwUUXAaJoMsvdDXP56z9m87o=",
+        "owner": "nim-nix-pkgs",
+        "repo": "macroutils",
+        "rev": "c32c4c3c74987b1718812e1321f9130400f03292",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_2_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "macroutils",
+        "type": "github"
+      }
+    },
+    "macroutils_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "libvlc-master",
+          "futhark",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "libvlc-master",
+          "futhark",
+          "nixpkgs"
+        ],
+        "src-macroutils-v1_2_0": "src-macroutils-v1_2_0_2"
       },
       "locked": {
         "dir": "v1_2_0",
@@ -441,37 +504,6 @@
         "type": "github"
       }
     },
-    "nimterop_2": {
-      "inputs": {
-        "cligen": "cligen_2",
-        "flakeNimbleLib": [
-          "libvlc-master",
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "libvlc-master",
-          "nixpkgs"
-        ],
-        "regex": "regex_2",
-        "src-nimterop-v0_6_13": "src-nimterop-v0_6_13_2"
-      },
-      "locked": {
-        "dir": "v0_6_13",
-        "lastModified": 1668750735,
-        "narHash": "sha256-BsjSdyxGf/NX5i+kXgRCUrh1v8j0Pjl45WU2r2WhGBU=",
-        "owner": "nim-nix-pkgs",
-        "repo": "nimterop",
-        "rev": "1bf708c2617fe58e894cd5cbc123abbb6e83d187",
-        "type": "github"
-      },
-      "original": {
-        "dir": "v0_6_13",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "nimterop",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1653936696,
@@ -490,11 +522,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1668681245,
-        "narHash": "sha256-IH8t+b9hCfNwEvdC55UEymn8jL457Fo/hx3N/kNTZso=",
+        "lastModified": 1669387357,
+        "narHash": "sha256-z1azVj/5Em5kGhh9OgBOsjTEgMab7hXL/aRilH9tzyI=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "bd4bfd814e96488febb38b4b4d0549c56b840c7f",
+        "rev": "55b3f68bda6d4f4dc6092eed0508063f154fa4fd",
         "type": "github"
       },
       "original": {
@@ -534,38 +566,6 @@
         "type": "github"
       }
     },
-    "regex_2": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "libvlc-master",
-          "nimterop",
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "libvlc-master",
-          "nimterop",
-          "nixpkgs"
-        ],
-        "src-regex-v0_20_0": "src-regex-v0_20_0",
-        "unicodedb": "unicodedb_2"
-      },
-      "locked": {
-        "dir": "v0_20_0",
-        "lastModified": 1667330960,
-        "narHash": "sha256-6FmNB8FaiOUwwfiEspthGbwLe5Q301sLA669lnzsfKI=",
-        "owner": "nim-nix-pkgs",
-        "repo": "regex",
-        "rev": "84280d24caae63ba4a4c825983d608c50d8cf50b",
-        "type": "github"
-      },
-      "original": {
-        "dir": "v0_20_0",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "regex",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
@@ -592,23 +592,6 @@
         "type": "github"
       }
     },
-    "src-cligen-v1_5_31": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1667137650,
-        "narHash": "sha256-n5owOEUTnXbYRwtdzEdVTucFuuGNSy7lRxsppOhu0uo=",
-        "owner": "c-blake",
-        "repo": "cligen",
-        "rev": "57191ea4dcc5d48de735295b2d8a79fb3b501625",
-        "type": "github"
-      },
-      "original": {
-        "owner": "c-blake",
-        "ref": "refs/tags/v1.5.31",
-        "repo": "cligen",
-        "type": "github"
-      }
-    },
     "src-futhark-v0_6_1": {
       "flake": false,
       "locked": {
@@ -626,7 +609,41 @@
         "type": "github"
       }
     },
+    "src-futhark-v0_6_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1651478881,
+        "narHash": "sha256-2cFVp5h96geNY/WvqfHVoYl0bJI0cRffEQ4/uo9VLOE=",
+        "owner": "PMunch",
+        "repo": "futhark",
+        "rev": "59a79448327c9a7f186e4184474e8be9725d7b58",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PMunch",
+        "ref": "refs/tags/v0.6.1",
+        "repo": "futhark",
+        "type": "github"
+      }
+    },
     "src-github-pmunch-libclang-v0_59": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1588175623,
+        "narHash": "sha256-mhUv5yuB9cpq3lqBd7F70svEuohZmA3uTKnQ/+XeHig=",
+        "owner": "pmunch",
+        "repo": "libclang-nim",
+        "rev": "759bc380b211e5ca389fc4da203cd55321e662ea",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pmunch",
+        "ref": "refs/tags/v0.59",
+        "repo": "libclang-nim",
+        "type": "github"
+      }
+    },
+    "src-github-pmunch-libclang-v0_59_2": {
       "flake": false,
       "locked": {
         "lastModified": 1588175623,
@@ -711,24 +728,24 @@
         "type": "github"
       }
     },
-    "src-nimterop-v0_6_13": {
+    "src-macroutils-v1_2_0_2": {
       "flake": false,
       "locked": {
-        "lastModified": 1602769737,
-        "narHash": "sha256-mOSic3rUZGluKcPdlDGMBAxzO0RsywRWceU9ng+XeLs=",
-        "owner": "genotrance",
-        "repo": "nimterop",
-        "rev": "f7cee5c983650336f93fde5d4fea087863ac0e5e",
+        "lastModified": 1591265350,
+        "narHash": "sha256-HGsNbldfhjAEaKsj+DZuMDwhhaLWHlibOWZ3xklKEds=",
+        "owner": "PMunch",
+        "repo": "macroutils",
+        "rev": "b460c6804c97df8cfdc80c308b574ae90b30ac61",
         "type": "github"
       },
       "original": {
-        "owner": "genotrance",
-        "ref": "refs/tags/v0.6.13",
-        "repo": "nimterop",
+        "owner": "PMunch",
+        "ref": "refs/tags/v1.2.0",
+        "repo": "macroutils",
         "type": "github"
       }
     },
-    "src-nimterop-v0_6_13_2": {
+    "src-nimterop-v0_6_13": {
       "flake": false,
       "locked": {
         "lastModified": 1602769737,
@@ -762,23 +779,6 @@
         "type": "github"
       }
     },
-    "src-regex-v0_20_0": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1665390469,
-        "narHash": "sha256-f7iMz/wc5Y/6Ylhc6FLmBsAiI3AVzdHy0rJNiypIfrU=",
-        "owner": "nitely",
-        "repo": "nim-regex",
-        "rev": "ab98735539ddd8a1eaaa795fd2ca65293c1640b3",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nitely",
-        "ref": "refs/tags/v0.20.0",
-        "repo": "nim-regex",
-        "type": "github"
-      }
-    },
     "src-termstyle-master": {
       "flake": false,
       "locked": {
@@ -796,24 +796,24 @@
         "type": "github"
       }
     },
-    "src-unicodedb-v0_10_0": {
+    "src-termstyle-master_2": {
       "flake": false,
       "locked": {
-        "lastModified": 1635061637,
-        "narHash": "sha256-qt2pyiGrvJXSes+E0eubx98mrF+jTudPD6hkUXjw0/4=",
-        "owner": "nitely",
-        "repo": "nim-unicodedb",
-        "rev": "675407fa4b6e701ebf9f94e5370ce18c3af40cc3",
+        "lastModified": 1569147881,
+        "narHash": "sha256-PuvUfjskKI5IA4cAOQ6RugHrVyFit1ihGr4vIDymiLI=",
+        "owner": "PMunch",
+        "repo": "termstyle",
+        "rev": "eefd9f17071df2b8c13e18537cd799acd7f41501",
         "type": "github"
       },
       "original": {
-        "owner": "nitely",
-        "ref": "refs/tags/v0.10.0",
-        "repo": "nim-unicodedb",
+        "owner": "PMunch",
+        "ref": "refs/heads/master",
+        "repo": "termstyle",
         "type": "github"
       }
     },
-    "src-unicodedb-v0_10_0_2": {
+    "src-unicodedb-v0_10_0": {
       "flake": false,
       "locked": {
         "lastModified": 1635061637,
@@ -861,6 +861,37 @@
         "type": "github"
       }
     },
+    "termstyle_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "libvlc-master",
+          "futhark",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "libvlc-master",
+          "futhark",
+          "nixpkgs"
+        ],
+        "src-termstyle-master": "src-termstyle-master_2"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556147,
+        "narHash": "sha256-ORVFFsZq+5FFvGd2roq8KEgE8rkonz0itisvBMDq2Y8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "termstyle",
+        "rev": "fdc48594367193968649a11b7ea7cec62fb71187",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "termstyle",
+        "type": "github"
+      }
+    },
     "unicodedb": {
       "inputs": {
         "flakeNimbleLib": [
@@ -876,39 +907,6 @@
           "nixpkgs"
         ],
         "src-unicodedb-v0_10_0": "src-unicodedb-v0_10_0"
-      },
-      "locked": {
-        "dir": "v0_10_0",
-        "lastModified": 1648163711,
-        "narHash": "sha256-n7JO0NyBn839Ra28ErdDwXSafT3CYHBpJbaP6O/uSdw=",
-        "owner": "nim-nix-pkgs",
-        "repo": "unicodedb",
-        "rev": "2ce0f2f6fa69fc3881b504713a92e1b3377fc6ec",
-        "type": "github"
-      },
-      "original": {
-        "dir": "v0_10_0",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "unicodedb",
-        "type": "github"
-      }
-    },
-    "unicodedb_2": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "libvlc-master",
-          "nimterop",
-          "regex",
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "libvlc-master",
-          "nimterop",
-          "regex",
-          "nixpkgs"
-        ],
-        "src-unicodedb-v0_10_0": "src-unicodedb-v0_10_0_2"
       },
       "locked": {
         "dir": "v0_10_0",

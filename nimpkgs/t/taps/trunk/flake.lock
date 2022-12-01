@@ -138,17 +138,44 @@
         ]
       },
       "locked": {
-        "lastModified": 1668435762,
-        "narHash": "sha256-4ArhSbDGEh1HtB4tG0zoUvp7558CfxUklJcsLemSn2w=",
+        "lastModified": 1669304833,
+        "narHash": "sha256-XUC/j0d3QjjTvkZRTjfGM/XfZHKQcLF70sg5Z2xXvLc=",
         "owner": "riinr",
         "repo": "nim-flakes-lib",
-        "rev": "4bebe53096d189c04ac618fc3c108d8082391344",
+        "rev": "53a35251b37bd6c886c3e3e20d4b9e2d966896b4",
         "type": "github"
       },
       "original": {
         "owner": "riinr",
         "ref": "master",
         "repo": "nim-flakes-lib",
+        "type": "github"
+      }
+    },
+    "getdns": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-getdns-20220928": "src-getdns-20220928"
+      },
+      "locked": {
+        "dir": "20220928",
+        "lastModified": 1669438064,
+        "narHash": "sha256-P1ZNC6A5CNoyww/RJGSmRxlEYH0+dMfKVtJjnVaK3F4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "getdns",
+        "rev": "b7cb0d3bcf4d291779f84879920f1fa10c9d9a53",
+        "type": "github"
+      },
+      "original": {
+        "dir": "20220928",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "getdns",
         "type": "github"
       }
     },
@@ -188,11 +215,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1668681245,
-        "narHash": "sha256-IH8t+b9hCfNwEvdC55UEymn8jL457Fo/hx3N/kNTZso=",
+        "lastModified": 1669387357,
+        "narHash": "sha256-z1azVj/5Em5kGhh9OgBOsjTEgMab7hXL/aRilH9tzyI=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "bd4bfd814e96488febb38b4b4d0549c56b840c7f",
+        "rev": "55b3f68bda6d4f4dc6092eed0508063f154fa4fd",
         "type": "github"
       },
       "original": {
@@ -203,8 +230,26 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "getdns": "getdns",
         "nixpkgs": "nixpkgs_2",
         "src-taps-trunk": "src-taps-trunk"
+      }
+    },
+    "src-getdns-20220928": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1664416154,
+        "narHash": "sha256-OwYRx5r8k9aFQ1zf1Ae6bZNfuveBeFEQkjUkCeD5L4Q=",
+        "owner": "~ehmry",
+        "repo": "getdns-nim",
+        "rev": "113be2f1c1eea13230f7ebdb3b0861f43985b99a",
+        "type": "sourcehut"
+      },
+      "original": {
+        "owner": "~ehmry",
+        "ref": "20220928",
+        "repo": "getdns-nim",
+        "type": "sourcehut"
       }
     },
     "src-taps-trunk": {

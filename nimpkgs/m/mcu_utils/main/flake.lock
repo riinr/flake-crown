@@ -32,10 +32,38 @@
         "type": "indirect"
       }
     },
+    "persistent_enums": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-persistent_enums-master": "src-persistent_enums-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1669431308,
+        "narHash": "sha256-TXiCMvu6Ci2zhxSeLHIbMgAj2F0dr3ZCD2eGAoMnFYg=",
+        "owner": "nim-nix-pkgs",
+        "repo": "persistent_enums",
+        "rev": "62bb7dccb05b8a9b3370761700e7e5ae011af55e",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "persistent_enums",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
+        "persistent_enums": "persistent_enums",
         "src-mcu_utils-main": "src-mcu_utils-main",
         "threading": "threading"
       }
@@ -54,6 +82,23 @@
         "owner": "EmbeddedNim",
         "ref": "refs/heads/main",
         "repo": "mcu_utils",
+        "type": "github"
+      }
+    },
+    "src-persistent_enums-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1634728781,
+        "narHash": "sha256-tejtQsXU2CdLsDbp7GUVJ5z9y/7SHYFni+VYCGpVvdE=",
+        "owner": "yglukhov",
+        "repo": "persistent_enums",
+        "rev": "04eb935d339c90b4be264c1de67b9c27b06f5dad",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yglukhov",
+        "ref": "refs/heads/master",
+        "repo": "persistent_enums",
         "type": "github"
       }
     },

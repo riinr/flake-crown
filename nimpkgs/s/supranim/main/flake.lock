@@ -99,6 +99,33 @@
         "type": "github"
       }
     },
+    "filetype": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-filetype-v0_9_0": "src-filetype-v0_9_0"
+      },
+      "locked": {
+        "dir": "v0_9_0",
+        "lastModified": 1669438047,
+        "narHash": "sha256-/V7ixDoZV1PUdfAS0e02cC0Hqs2SHRxvy1/iQId4VA8=",
+        "owner": "nim-nix-pkgs",
+        "repo": "filetype",
+        "rev": "e2e24b04407ef391635234feb6f4a61123c4d7ff",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_9_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "filetype",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "locked": {
         "lastModified": 1659877975,
@@ -138,11 +165,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1668435762,
-        "narHash": "sha256-4ArhSbDGEh1HtB4tG0zoUvp7558CfxUklJcsLemSn2w=",
+        "lastModified": 1669304833,
+        "narHash": "sha256-XUC/j0d3QjjTvkZRTjfGM/XfZHKQcLF70sg5Z2xXvLc=",
         "owner": "riinr",
         "repo": "nim-flakes-lib",
-        "rev": "4bebe53096d189c04ac618fc3c108d8082391344",
+        "rev": "53a35251b37bd6c886c3e3e20d4b9e2d966896b4",
         "type": "github"
       },
       "original": {
@@ -182,11 +209,11 @@
       },
       "locked": {
         "dir": "1_1_3",
-        "lastModified": 1668775886,
-        "narHash": "sha256-K6G6mh2gMVrPuW3E5woQ1TCGiolxlz/SPh+Y4rMTRyw=",
+        "lastModified": 1669438106,
+        "narHash": "sha256-c7YJbAM+IEvOm220lrJ7QR4BffP+OnKFrVCubpDA7ms=",
         "owner": "nim-nix-pkgs",
         "repo": "jsony",
-        "rev": "24a32dba6683f16b9ec47700eb721cb5f209b294",
+        "rev": "347dbe67544b69e75625940712f6c6514b5cfb60",
         "type": "github"
       },
       "original": {
@@ -194,6 +221,33 @@
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "jsony",
+        "type": "github"
+      }
+    },
+    "nimcrypto": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nimcrypto-master": "src-nimcrypto-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1669438178,
+        "narHash": "sha256-vQ/VywbkpC5HI8eJuitzUKsm2psu4Ln80mJZ4rXAb7w=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimcrypto",
+        "rev": "21bc0ee9de5a9f8c0aed6e850927a003555cedb8",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimcrypto",
         "type": "github"
       }
     },
@@ -215,11 +269,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1668681245,
-        "narHash": "sha256-IH8t+b9hCfNwEvdC55UEymn8jL457Fo/hx3N/kNTZso=",
+        "lastModified": 1669387357,
+        "narHash": "sha256-z1azVj/5Em5kGhh9OgBOsjTEgMab7hXL/aRilH9tzyI=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "bd4bfd814e96488febb38b4b4d0549c56b840c7f",
+        "rev": "55b3f68bda6d4f4dc6092eed0508063f154fa4fd",
         "type": "github"
       },
       "original": {
@@ -235,33 +289,172 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "src-nyml-main": "src-nyml-main",
+        "pkginfo": "pkginfo",
+        "src-nyml-0_1_0": "src-nyml-0_1_0",
         "toktok": "toktok"
       },
       "locked": {
-        "dir": "main",
-        "lastModified": 1668776777,
-        "narHash": "sha256-dOlCAg25dMcz3YwFvjp7e02lmXP3gYHfgw0FhyLnCso=",
+        "dir": "0_1_0",
+        "lastModified": 1669439107,
+        "narHash": "sha256-DxWI1fiqeNSraIbWYiIfGCsmH3MKC+xx6HHNn1BGrao=",
         "owner": "nim-nix-pkgs",
         "repo": "nyml",
-        "rev": "d6f1ccd18fb81d4333a091937414d8a8146ac695",
+        "rev": "b96b7554130acf8be96cc96d3d41c0236edd42f0",
         "type": "github"
       },
       "original": {
-        "dir": "main",
+        "dir": "0_1_0",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "nyml",
         "type": "github"
       }
     },
+    "pkginfo": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nyml",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nyml",
+          "nixpkgs"
+        ],
+        "semver": "semver",
+        "src-pkginfo-v0_1_0": "src-pkginfo-v0_1_0"
+      },
+      "locked": {
+        "dir": "v0_1_0",
+        "lastModified": 1669431931,
+        "narHash": "sha256-uejLUyiPqW9gKwWZu3p3eHZpuK/sjCvLKCMRezZHtKc=",
+        "owner": "nim-nix-pkgs",
+        "repo": "pkginfo",
+        "rev": "0df8415eb8e4be8091cb1831826f201828ab16ce",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "pkginfo",
+        "type": "github"
+      }
+    },
+    "pkginfo_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "semver": "semver_2",
+        "src-pkginfo-v0_1_0": "src-pkginfo-v0_1_0_2"
+      },
+      "locked": {
+        "dir": "v0_1_0",
+        "lastModified": 1669438759,
+        "narHash": "sha256-P/1hJNVj3TNhfPRQi6TvIRb0/abE1e9EnPtkoVvTQbU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "pkginfo",
+        "rev": "275525a8dba9480125832760bbb9a763b072835f",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "pkginfo",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
+        "filetype": "filetype",
         "flakeNimbleLib": "flakeNimbleLib",
         "jsony": "jsony",
+        "nimcrypto": "nimcrypto",
         "nixpkgs": "nixpkgs_2",
         "nyml": "nyml",
+        "pkginfo": "pkginfo_2",
         "src-supranim-main": "src-supranim-main"
+      }
+    },
+    "semver": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nyml",
+          "pkginfo",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nyml",
+          "pkginfo",
+          "nixpkgs"
+        ],
+        "src-semver-v1_1_1": "src-semver-v1_1_1"
+      },
+      "locked": {
+        "dir": "v1_1_1",
+        "lastModified": 1656301225,
+        "narHash": "sha256-K1XSXGnQpaNWmpom1iX9+6ULAYHH8lmfKMRwsUJcPdw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "semver",
+        "rev": "8f10350909d7677153c87ef9f607221ab40dd5f8",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_1_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "semver",
+        "type": "github"
+      }
+    },
+    "semver_2": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "pkginfo",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "pkginfo",
+          "nixpkgs"
+        ],
+        "src-semver-v1_1_1": "src-semver-v1_1_1_2"
+      },
+      "locked": {
+        "dir": "v1_1_1",
+        "lastModified": 1656301225,
+        "narHash": "sha256-K1XSXGnQpaNWmpom1iX9+6ULAYHH8lmfKMRwsUJcPdw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "semver",
+        "rev": "8f10350909d7677153c87ef9f607221ab40dd5f8",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v1_1_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "semver",
+        "type": "github"
+      }
+    },
+    "src-filetype-v0_9_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1611378253,
+        "narHash": "sha256-gccKzc3+atlqnOkCwLEopka/AMHM3KsHGZ5leRR4ixY=",
+        "owner": "jiro4989",
+        "repo": "filetype",
+        "rev": "1fe1e7d988cd802abc26505efb5a91891bd6f53e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jiro4989",
+        "ref": "refs/tags/v0.9.0",
+        "repo": "filetype",
+        "type": "github"
       }
     },
     "src-jsony-1_1_3": {
@@ -281,20 +474,105 @@
         "type": "github"
       }
     },
-    "src-nyml-main": {
+    "src-nimcrypto-master": {
       "flake": false,
       "locked": {
-        "lastModified": 1660656374,
-        "narHash": "sha256-0vCepngn9mdVlJFvv7WWcmY9Dn1NgfxdRYo7jJONONc=",
+        "lastModified": 1657063458,
+        "narHash": "sha256-KHCMS3ElOS0V3cBmsAuRZGivz8bq5WLUKZOHpg7/Kgg=",
+        "owner": "cheatfate",
+        "repo": "nimcrypto",
+        "rev": "24e006df85927f64916e60511620583b11403178",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cheatfate",
+        "ref": "refs/heads/master",
+        "repo": "nimcrypto",
+        "type": "github"
+      }
+    },
+    "src-nyml-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1669058255,
+        "narHash": "sha256-/MyKHoj6w6SrMiNOvX5luIooDriZftYK2Kq82wsdFmw=",
         "owner": "openpeep",
         "repo": "nyml",
-        "rev": "2294d086dd288c8230a54a8ef5d4db34a8ce1828",
+        "rev": "788fb0cc4feb90d8da912ebc5476e1c8d6952ff7",
         "type": "github"
       },
       "original": {
         "owner": "openpeep",
-        "ref": "refs/heads/main",
+        "ref": "refs/tags/0.1.0",
         "repo": "nyml",
+        "type": "github"
+      }
+    },
+    "src-pkginfo-v0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1655335294,
+        "narHash": "sha256-81QrJye+UgoLmRj+mx7P8gq5KE/Gzulxux26Q66cP7k=",
+        "owner": "openpeep",
+        "repo": "pkginfo",
+        "rev": "43657791603ae46dfed5337e432ff2cf5dc84794",
+        "type": "github"
+      },
+      "original": {
+        "owner": "openpeep",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "pkginfo",
+        "type": "github"
+      }
+    },
+    "src-pkginfo-v0_1_0_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1655335294,
+        "narHash": "sha256-81QrJye+UgoLmRj+mx7P8gq5KE/Gzulxux26Q66cP7k=",
+        "owner": "openpeep",
+        "repo": "pkginfo",
+        "rev": "43657791603ae46dfed5337e432ff2cf5dc84794",
+        "type": "github"
+      },
+      "original": {
+        "owner": "openpeep",
+        "ref": "refs/tags/v0.1.0",
+        "repo": "pkginfo",
+        "type": "github"
+      }
+    },
+    "src-semver-v1_1_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1594047867,
+        "narHash": "sha256-F3nmexnQ5IOOCeViiqOYvt57NNruWZKkkYzoKhmhxyQ=",
+        "owner": "euantorano",
+        "repo": "semver.nim",
+        "rev": "3b7ace48704236329363290c62ce43f4d35f684d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "euantorano",
+        "ref": "refs/tags/v1.1.1",
+        "repo": "semver.nim",
+        "type": "github"
+      }
+    },
+    "src-semver-v1_1_1_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1594047867,
+        "narHash": "sha256-F3nmexnQ5IOOCeViiqOYvt57NNruWZKkkYzoKhmhxyQ=",
+        "owner": "euantorano",
+        "repo": "semver.nim",
+        "rev": "3b7ace48704236329363290c62ce43f4d35f684d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "euantorano",
+        "ref": "refs/tags/v1.1.1",
+        "repo": "semver.nim",
         "type": "github"
       }
     },
@@ -318,11 +596,11 @@
     "src-toktok-main": {
       "flake": false,
       "locked": {
-        "lastModified": 1661267239,
-        "narHash": "sha256-9zDtRTdyZIlO6LHm5nKiTQfFc7GbjszRv2J9p5S1mDw=",
+        "lastModified": 1669056108,
+        "narHash": "sha256-5MiPRM0Gxj5ZFZI0wO6sjgmCaCZT7j3nX9UR73QFsrk=",
         "owner": "openpeep",
         "repo": "toktok",
-        "rev": "ff6950f6f865cd5164bd17111af2916509183091",
+        "rev": "bca6d7b2b6d3aae2cf27b5ee7621e5fb2ea41479",
         "type": "github"
       },
       "original": {
@@ -346,11 +624,11 @@
       },
       "locked": {
         "dir": "main",
-        "lastModified": 1668776187,
-        "narHash": "sha256-Tr7fVsuhf72ZGhJh3fJ8JX7w0MzG2Zpk4JPNkOj5+EY=",
+        "lastModified": 1669431433,
+        "narHash": "sha256-bMlDnoobsBtcwYeAuZsGqimr8Ix0oFh99SU0kzrkbus=",
         "owner": "nim-nix-pkgs",
         "repo": "toktok",
-        "rev": "355dd407a99cc3b8567afe81cbb8392ab15ef505",
+        "rev": "eac524898a3280ee34332a5d795da1e2c015d0ed",
         "type": "github"
       },
       "original": {

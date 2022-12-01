@@ -170,6 +170,34 @@
         "type": "github"
       }
     },
+    "networkutils": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "ptr_math": "ptr_math",
+        "src-networkutils-v0_6_1": "src-networkutils-v0_6_1"
+      },
+      "locked": {
+        "dir": "v0_6_1",
+        "lastModified": 1669431908,
+        "narHash": "sha256-6MzvihYqF41Xxvm7fyqQfE433UwAJKmnfudlGRWug5g=",
+        "owner": "nim-nix-pkgs",
+        "repo": "networkutils",
+        "rev": "2793ee67b2d8922424fc5fbba79f8c01cf0d59da",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_6_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "networkutils",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1653936696,
@@ -200,9 +228,39 @@
         "type": "indirect"
       }
     },
+    "ptr_math": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "networkutils",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "networkutils",
+          "nixpkgs"
+        ],
+        "src-ptr_math-v0_3_0": "src-ptr_math-v0_3_0"
+      },
+      "locked": {
+        "dir": "v0_3_0",
+        "lastModified": 1658018197,
+        "narHash": "sha256-3QFLmkQ7QQPSjm4kqNiW9HTaaJyOrTtkxWZVEbgU5yU=",
+        "owner": "nim-nix-pkgs",
+        "repo": "ptr_math",
+        "rev": "7461f9ef48a2a8fbbe07df8430c506172d6f42e5",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_3_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "ptr_math",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
+        "networkutils": "networkutils",
         "nixpkgs": "nixpkgs_2",
         "src-asyncrabbitmq-v0_1": "src-asyncrabbitmq-v0_1"
       }
@@ -221,6 +279,40 @@
         "owner": "Q-Master",
         "ref": "refs/tags/v0.1",
         "repo": "rabbitmq.nim",
+        "type": "github"
+      }
+    },
+    "src-networkutils-v0_6_1": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657201249,
+        "narHash": "sha256-kgHVeQu8MlDFBT2YJSy8vO8MeynoCtZvZpdkbKE2Kio=",
+        "owner": "Q-Master",
+        "repo": "networkutils.nim",
+        "rev": "da0185f3a1f1416bb727f60cadc1f92f8e7d325b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Q-Master",
+        "ref": "refs/tags/v0.6.1",
+        "repo": "networkutils.nim",
+        "type": "github"
+      }
+    },
+    "src-ptr_math-v0_3_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1623264503,
+        "narHash": "sha256-M+QEBwPtBMFkg1igbPeoE6B1Zi3A0DscCdLxy5eHwME=",
+        "owner": "kaushalmodi",
+        "repo": "ptr_math",
+        "rev": "fb1b0d5f484b80ec956d40d543ec836da4cfbc3b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kaushalmodi",
+        "ref": "refs/tags/v0.3.0",
+        "repo": "ptr_math",
         "type": "github"
       }
     }

@@ -99,34 +99,6 @@
         "type": "github"
       }
     },
-    "egl-master": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "src-egl-master": "src-egl-master",
-        "x11": "x11"
-      },
-      "locked": {
-        "dir": "master",
-        "lastModified": 1662243172,
-        "narHash": "sha256-NW4OKoe6kjiokr4LnZ3XzV4Z5y14Q09nQ305G4YQUsQ=",
-        "owner": "nim-nix-pkgs",
-        "repo": "egl",
-        "rev": "529c729c7defe91b693bbb3682335a14d0e2d49e",
-        "type": "github"
-      },
-      "original": {
-        "dir": "master",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "egl",
-        "type": "github"
-      }
-    },
     "flake-utils": {
       "locked": {
         "lastModified": 1659877975,
@@ -166,11 +138,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1668435762,
-        "narHash": "sha256-4ArhSbDGEh1HtB4tG0zoUvp7558CfxUklJcsLemSn2w=",
+        "lastModified": 1669304833,
+        "narHash": "sha256-XUC/j0d3QjjTvkZRTjfGM/XfZHKQcLF70sg5Z2xXvLc=",
         "owner": "riinr",
         "repo": "nim-flakes-lib",
-        "rev": "4bebe53096d189c04ac618fc3c108d8082391344",
+        "rev": "53a35251b37bd6c886c3e3e20d4b9e2d966896b4",
         "type": "github"
       },
       "original": {
@@ -198,6 +170,33 @@
         "type": "github"
       }
     },
+    "io-egl-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-io-egl-master": "src-io-egl-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1669431150,
+        "narHash": "sha256-v9utWadiiAiDhVS9x/C1IlsQCJoy9Iew5qNUul7uoPA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "io-egl",
+        "rev": "572d5d31e32d2d256b328b12792be2b5c8559d49",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "io-egl",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1653936696,
@@ -216,11 +215,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1668681245,
-        "narHash": "sha256-IH8t+b9hCfNwEvdC55UEymn8jL457Fo/hx3N/kNTZso=",
+        "lastModified": 1669387357,
+        "narHash": "sha256-z1azVj/5Em5kGhh9OgBOsjTEgMab7hXL/aRilH9tzyI=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "bd4bfd814e96488febb38b4b4d0549c56b840c7f",
+        "rev": "55b3f68bda6d4f4dc6092eed0508063f154fa4fd",
         "type": "github"
       },
       "original": {
@@ -230,71 +229,25 @@
     },
     "root": {
       "inputs": {
-        "egl-master": "egl-master",
         "flakeNimbleLib": "flakeNimbleLib",
+        "io-egl-master": "io-egl-master",
         "nixpkgs": "nixpkgs_2"
       }
     },
-    "src-egl-master": {
+    "src-io-egl-master": {
       "flake": false,
       "locked": {
         "lastModified": 1561091370,
         "narHash": "sha256-KOvBlguFoUm+iZ0X7eATtj0SPyWZEtl7FRhFR9HgESs=",
         "owner": "nimious",
-        "repo": "egl",
+        "repo": "io-egl",
         "rev": "83439cd11aceb1b76b50f628d80fdd740b1077e3",
         "type": "github"
       },
       "original": {
         "owner": "nimious",
         "ref": "refs/heads/master",
-        "repo": "egl",
-        "type": "github"
-      }
-    },
-    "src-x11-master": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1610009197,
-        "narHash": "sha256-2XRyXiBxAc9Zx/w0zRBHRZ240qww0FJvIvOKZ8YH50A=",
-        "owner": "nim-lang",
-        "repo": "x11",
-        "rev": "2093a4c01360cbb5dd33ab79fd4056e148b53ca1",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nim-lang",
-        "ref": "refs/heads/master",
-        "repo": "x11",
-        "type": "github"
-      }
-    },
-    "x11": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "egl-master",
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "egl-master",
-          "nixpkgs"
-        ],
-        "src-x11-master": "src-x11-master"
-      },
-      "locked": {
-        "dir": "master",
-        "lastModified": 1662003161,
-        "narHash": "sha256-kDgSaUl6s7gwtCrLpAFO/xoSPh1u/hzcTt2Vkc+w7z8=",
-        "owner": "nim-nix-pkgs",
-        "repo": "x11",
-        "rev": "382cfa3ed399c9c1392ee8d8079d152a369794ad",
-        "type": "github"
-      },
-      "original": {
-        "dir": "master",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "x11",
+        "repo": "io-egl",
         "type": "github"
       }
     }

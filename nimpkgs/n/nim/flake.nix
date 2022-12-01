@@ -7,13 +7,13 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."compiler-devel".dir   = "devel";
-  inputs."compiler-devel".owner = "nim-nix-pkgs";
-  inputs."compiler-devel".ref   = "master";
-  inputs."compiler-devel".repo  = "compiler";
-  inputs."compiler-devel".type  = "github";
-  inputs."compiler-devel".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."compiler-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nim-devel".dir   = "devel";
+  inputs."nim-devel".owner = "nim-nix-pkgs";
+  inputs."nim-devel".ref   = "master";
+  inputs."nim-devel".repo  = "nim";
+  inputs."nim-devel".type  = "github";
+  inputs."nim-devel".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nim-devel".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."nim-v0_10_2".dir   = "v0_10_2";
   inputs."nim-v0_10_2".owner = "nim-nix-pkgs";
@@ -382,6 +382,14 @@
   inputs."compiler-v1_6_0".type  = "github";
   inputs."compiler-v1_6_0".inputs.nixpkgs.follows = "nixpkgs";
   inputs."compiler-v1_6_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."compiler-v1_6_10".dir   = "v1_6_10";
+  inputs."compiler-v1_6_10".owner = "nim-nix-pkgs";
+  inputs."compiler-v1_6_10".ref   = "master";
+  inputs."compiler-v1_6_10".repo  = "compiler";
+  inputs."compiler-v1_6_10".type  = "github";
+  inputs."compiler-v1_6_10".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."compiler-v1_6_10".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."compiler-v1_6_2".dir   = "v1_6_2";
   inputs."compiler-v1_6_2".owner = "nim-nix-pkgs";

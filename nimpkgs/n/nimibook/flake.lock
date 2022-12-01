@@ -43,6 +43,44 @@
     "bearssl_2": {
       "inputs": {
         "flakeNimbleLib": [
+          "nimibook-main",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "chronos",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimibook-main",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "chronos",
+          "nixpkgs"
+        ],
+        "src-bearssl-master": "src-bearssl-master_2",
+        "unittest2": "unittest2_6"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648164265,
+        "narHash": "sha256-u+1GwLyo49nWSRYqTqwdpFR5e8qCfwDU9plB5iMMwww=",
+        "owner": "nim-nix-pkgs",
+        "repo": "bearssl",
+        "rev": "f1b8ea3e35ee696f147f2582887986e46fbcf186",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "bearssl",
+        "type": "github"
+      }
+    },
+    "bearssl_3": {
+      "inputs": {
+        "flakeNimbleLib": [
           "nimibook-v0_2_0",
           "nimib",
           "toml_serialization",
@@ -60,8 +98,8 @@
           "chronos",
           "nixpkgs"
         ],
-        "src-bearssl-master": "src-bearssl-master_2",
-        "unittest2": "unittest2_6"
+        "src-bearssl-master": "src-bearssl-master_3",
+        "unittest2": "unittest2_10"
       },
       "locked": {
         "dir": "master",
@@ -80,7 +118,7 @@
         "type": "github"
       }
     },
-    "bearssl_3": {
+    "bearssl_4": {
       "inputs": {
         "flakeNimbleLib": [
           "nimibook-v0_2_1",
@@ -100,8 +138,8 @@
           "chronos",
           "nixpkgs"
         ],
-        "src-bearssl-master": "src-bearssl-master_3",
-        "unittest2": "unittest2_13"
+        "src-bearssl-master": "src-bearssl-master_4",
+        "unittest2": "unittest2_17"
       },
       "locked": {
         "dir": "master",
@@ -164,6 +202,44 @@
       "inputs": {
         "bearssl": "bearssl_2",
         "flakeNimbleLib": [
+          "nimibook-main",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "flakeNimbleLib"
+        ],
+        "httputils": "httputils_2",
+        "nixpkgs": [
+          "nimibook-main",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "nixpkgs"
+        ],
+        "src-chronos-master": "src-chronos-master_2",
+        "stew": "stew_7"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648165426,
+        "narHash": "sha256-ujhLcGrUzvM4Hyk2MtBwbER/8pu1XlNGdaMuClVsBc4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "chronos",
+        "rev": "acd9433bf6f78ad668f650d67190163a5097f416",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "chronos",
+        "type": "github"
+      }
+    },
+    "chronos_3": {
+      "inputs": {
+        "bearssl": "bearssl_3",
+        "flakeNimbleLib": [
           "nimibook-v0_2_0",
           "nimib",
           "toml_serialization",
@@ -171,7 +247,7 @@
           "faststreams",
           "flakeNimbleLib"
         ],
-        "httputils": "httputils_2",
+        "httputils": "httputils_3",
         "nixpkgs": [
           "nimibook-v0_2_0",
           "nimib",
@@ -180,9 +256,9 @@
           "faststreams",
           "nixpkgs"
         ],
-        "src-chronos-master": "src-chronos-master_2",
-        "stew": "stew_7",
-        "unittest2": "unittest2_8"
+        "src-chronos-master": "src-chronos-master_3",
+        "stew": "stew_12",
+        "unittest2": "unittest2_12"
       },
       "locked": {
         "dir": "master",
@@ -201,9 +277,9 @@
         "type": "github"
       }
     },
-    "chronos_3": {
+    "chronos_4": {
       "inputs": {
-        "bearssl": "bearssl_3",
+        "bearssl": "bearssl_4",
         "flakeNimbleLib": [
           "nimibook-v0_2_1",
           "nimib",
@@ -212,7 +288,7 @@
           "faststreams",
           "flakeNimbleLib"
         ],
-        "httputils": "httputils_3",
+        "httputils": "httputils_4",
         "nixpkgs": [
           "nimibook-v0_2_1",
           "nimib",
@@ -221,9 +297,9 @@
           "faststreams",
           "nixpkgs"
         ],
-        "src-chronos-master": "src-chronos-master_3",
-        "stew": "stew_12",
-        "unittest2": "unittest2_15"
+        "src-chronos-master": "src-chronos-master_4",
+        "stew": "stew_17",
+        "unittest2": "unittest2_19"
       },
       "locked": {
         "dir": "master",
@@ -384,6 +460,43 @@
       "inputs": {
         "chronos": "chronos_2",
         "flakeNimbleLib": [
+          "nimibook-main",
+          "toml_serialization",
+          "serialization",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimibook-main",
+          "toml_serialization",
+          "serialization",
+          "nixpkgs"
+        ],
+        "src-faststreams-master": "src-faststreams-master_2",
+        "stew": "stew_8",
+        "testutils": "testutils_2",
+        "unittest2": "unittest2_8"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648165856,
+        "narHash": "sha256-ISvaUH1hDDJPdcvpEiN/Tp0nsSnY/uXbQ71Yr4ZKwXQ=",
+        "owner": "nim-nix-pkgs",
+        "repo": "faststreams",
+        "rev": "702abfd677d6b3d0015344090060bc1263029c65",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "faststreams",
+        "type": "github"
+      }
+    },
+    "faststreams_3": {
+      "inputs": {
+        "chronos": "chronos_3",
+        "flakeNimbleLib": [
           "nimibook-v0_2_0",
           "nimib",
           "toml_serialization",
@@ -397,10 +510,10 @@
           "serialization",
           "nixpkgs"
         ],
-        "src-faststreams-master": "src-faststreams-master_2",
-        "stew": "stew_8",
-        "testutils": "testutils_2",
-        "unittest2": "unittest2_10"
+        "src-faststreams-master": "src-faststreams-master_3",
+        "stew": "stew_13",
+        "testutils": "testutils_3",
+        "unittest2": "unittest2_14"
       },
       "locked": {
         "dir": "master",
@@ -419,9 +532,9 @@
         "type": "github"
       }
     },
-    "faststreams_3": {
+    "faststreams_4": {
       "inputs": {
-        "chronos": "chronos_3",
+        "chronos": "chronos_4",
         "flakeNimbleLib": [
           "nimibook-v0_2_1",
           "nimib",
@@ -436,10 +549,10 @@
           "serialization",
           "nixpkgs"
         ],
-        "src-faststreams-master": "src-faststreams-master_3",
-        "stew": "stew_13",
-        "testutils": "testutils_3",
-        "unittest2": "unittest2_17"
+        "src-faststreams-master": "src-faststreams-master_4",
+        "stew": "stew_18",
+        "testutils": "testutils_4",
+        "unittest2": "unittest2_21"
       },
       "locked": {
         "dir": "master",
@@ -497,11 +610,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1668435762,
-        "narHash": "sha256-4ArhSbDGEh1HtB4tG0zoUvp7558CfxUklJcsLemSn2w=",
+        "lastModified": 1669304833,
+        "narHash": "sha256-XUC/j0d3QjjTvkZRTjfGM/XfZHKQcLF70sg5Z2xXvLc=",
         "owner": "riinr",
         "repo": "nim-flakes-lib",
-        "rev": "4bebe53096d189c04ac618fc3c108d8082391344",
+        "rev": "53a35251b37bd6c886c3e3e20d4b9e2d966896b4",
         "type": "github"
       },
       "original": {
@@ -573,6 +686,45 @@
     "httputils_2": {
       "inputs": {
         "flakeNimbleLib": [
+          "nimibook-main",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "chronos",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimibook-main",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "chronos",
+          "nixpkgs"
+        ],
+        "src-httputils-master": "src-httputils-master_2",
+        "stew": "stew_6",
+        "unittest2": "unittest2_7"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648164685,
+        "narHash": "sha256-U5kQAAkeOormK5YkcT/KkC8Sm9URz9BtbtnzzBJ2I0I=",
+        "owner": "nim-nix-pkgs",
+        "repo": "httputils",
+        "rev": "5aa9097ccacf07f47379c50df5c51c38f3354d39",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "httputils",
+        "type": "github"
+      }
+    },
+    "httputils_3": {
+      "inputs": {
+        "flakeNimbleLib": [
           "nimibook-v0_2_0",
           "nimib",
           "toml_serialization",
@@ -590,9 +742,9 @@
           "chronos",
           "nixpkgs"
         ],
-        "src-httputils-master": "src-httputils-master_2",
-        "stew": "stew_6",
-        "unittest2": "unittest2_7"
+        "src-httputils-master": "src-httputils-master_3",
+        "stew": "stew_11",
+        "unittest2": "unittest2_11"
       },
       "locked": {
         "dir": "master",
@@ -611,7 +763,7 @@
         "type": "github"
       }
     },
-    "httputils_3": {
+    "httputils_4": {
       "inputs": {
         "flakeNimbleLib": [
           "nimibook-v0_2_1",
@@ -631,9 +783,9 @@
           "chronos",
           "nixpkgs"
         ],
-        "src-httputils-master": "src-httputils-master_3",
-        "stew": "stew_11",
-        "unittest2": "unittest2_14"
+        "src-httputils-master": "src-httputils-master_4",
+        "stew": "stew_16",
+        "unittest2": "unittest2_18"
       },
       "locked": {
         "dir": "master",
@@ -666,11 +818,11 @@
       },
       "locked": {
         "dir": "1_1_3",
-        "lastModified": 1668748827,
-        "narHash": "sha256-hiK6Z+4jWJtHRPQceMKmx46xAe/RsfrCUyFmskctRPQ=",
+        "lastModified": 1669431161,
+        "narHash": "sha256-QervbI06ZtEOBBx4wWBkpEcd0+wSCH/jQ+ZGQiThwds=",
         "owner": "nim-nix-pkgs",
         "repo": "jsony",
-        "rev": "24d39386cc8ab2adacacc9ef929503403434db1d",
+        "rev": "669b68f3b24ab9750537c50015804dd960f404af",
         "type": "github"
       },
       "original": {
@@ -943,11 +1095,11 @@
       },
       "locked": {
         "dir": "v0_3_3",
-        "lastModified": 1668751301,
-        "narHash": "sha256-hoRsCzqDajEpCOunPd+sT7mUmrIXT0SFImW4if2ehh8=",
+        "lastModified": 1669433201,
+        "narHash": "sha256-IROn/K989gz5Pa2o4pg+RmL3UMFSThBlj05JhaD3g0k=",
         "owner": "nim-nix-pkgs",
         "repo": "nimib",
-        "rev": "b8814a79160ca580c06d25f896a71884c5b497d2",
+        "rev": "708c644851895c86617cc428077e0a1709408ab4",
         "type": "github"
       },
       "original": {
@@ -972,7 +1124,7 @@
         ],
         "src-nimib-v0_3_3": "src-nimib-v0_3_3_2",
         "tempfile": "tempfile_2",
-        "toml_serialization": "toml_serialization_2"
+        "toml_serialization": "toml_serialization_3"
       },
       "locked": {
         "dir": "v0_3_3",
@@ -1005,7 +1157,7 @@
         ],
         "src-nimib-v0_3_3": "src-nimib-v0_3_3_3",
         "tempfile": "tempfile_3",
-        "toml_serialization": "toml_serialization_3"
+        "toml_serialization": "toml_serialization_4"
       },
       "locked": {
         "dir": "v0_3_3",
@@ -1034,15 +1186,16 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "src-nimibook-main": "src-nimibook-main"
+        "src-nimibook-main": "src-nimibook-main",
+        "toml_serialization": "toml_serialization_2"
       },
       "locked": {
         "dir": "main",
-        "lastModified": 1668751332,
-        "narHash": "sha256-UsvJfB5ihPBwhfdah6jrTjnvKJkCHLb40jf7SqRhaUQ=",
+        "lastModified": 1669433743,
+        "narHash": "sha256-yUgwGVbBY5ojxhSmXhDk6RtXTDUnIiTQtSx//bZ6ucg=",
         "owner": "nim-nix-pkgs",
         "repo": "nimibook",
-        "rev": "3618c985bd8a74db54206e4816f3a27bbc1fd363",
+        "rev": "c9190bcbb4ac53789d3ffdc545129266e5bd289c",
         "type": "github"
       },
       "original": {
@@ -1067,11 +1220,11 @@
       },
       "locked": {
         "dir": "v0_2_0",
-        "lastModified": 1668751332,
-        "narHash": "sha256-UsvJfB5ihPBwhfdah6jrTjnvKJkCHLb40jf7SqRhaUQ=",
+        "lastModified": 1669433743,
+        "narHash": "sha256-yUgwGVbBY5ojxhSmXhDk6RtXTDUnIiTQtSx//bZ6ucg=",
         "owner": "nim-nix-pkgs",
         "repo": "nimibook",
-        "rev": "3618c985bd8a74db54206e4816f3a27bbc1fd363",
+        "rev": "c9190bcbb4ac53789d3ffdc545129266e5bd289c",
         "type": "github"
       },
       "original": {
@@ -1096,11 +1249,11 @@
       },
       "locked": {
         "dir": "v0_2_1",
-        "lastModified": 1668751332,
-        "narHash": "sha256-UsvJfB5ihPBwhfdah6jrTjnvKJkCHLb40jf7SqRhaUQ=",
+        "lastModified": 1669433743,
+        "narHash": "sha256-yUgwGVbBY5ojxhSmXhDk6RtXTDUnIiTQtSx//bZ6ucg=",
         "owner": "nim-nix-pkgs",
         "repo": "nimibook",
-        "rev": "3618c985bd8a74db54206e4816f3a27bbc1fd363",
+        "rev": "c9190bcbb4ac53789d3ffdc545129266e5bd289c",
         "type": "github"
       },
       "original": {
@@ -1129,11 +1282,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1668681245,
-        "narHash": "sha256-IH8t+b9hCfNwEvdC55UEymn8jL457Fo/hx3N/kNTZso=",
+        "lastModified": 1669387357,
+        "narHash": "sha256-z1azVj/5Em5kGhh9OgBOsjTEgMab7hXL/aRilH9tzyI=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "bd4bfd814e96488febb38b4b4d0549c56b840c7f",
+        "rev": "55b3f68bda6d4f4dc6092eed0508063f154fa4fd",
         "type": "github"
       },
       "original": {
@@ -1190,6 +1343,40 @@
       "inputs": {
         "faststreams": "faststreams_2",
         "flakeNimbleLib": [
+          "nimibook-main",
+          "toml_serialization",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimibook-main",
+          "toml_serialization",
+          "nixpkgs"
+        ],
+        "src-serialization-master": "src-serialization-master_2",
+        "stew": "stew_9",
+        "unittest2": "unittest2_9"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1648166057,
+        "narHash": "sha256-4Mx+yXjxLAHALEAcQoQUli+5Sc+cR/zHZIZep2e6N5w=",
+        "owner": "nim-nix-pkgs",
+        "repo": "serialization",
+        "rev": "608ebbde8cf35b062c0022910b400f58b9e236f3",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "serialization",
+        "type": "github"
+      }
+    },
+    "serialization_3": {
+      "inputs": {
+        "faststreams": "faststreams_3",
+        "flakeNimbleLib": [
           "nimibook-v0_2_0",
           "nimib",
           "toml_serialization",
@@ -1201,9 +1388,9 @@
           "toml_serialization",
           "nixpkgs"
         ],
-        "src-serialization-master": "src-serialization-master_2",
-        "stew": "stew_9",
-        "unittest2": "unittest2_11"
+        "src-serialization-master": "src-serialization-master_3",
+        "stew": "stew_14",
+        "unittest2": "unittest2_15"
       },
       "locked": {
         "dir": "master",
@@ -1222,9 +1409,9 @@
         "type": "github"
       }
     },
-    "serialization_3": {
+    "serialization_4": {
       "inputs": {
-        "faststreams": "faststreams_3",
+        "faststreams": "faststreams_4",
         "flakeNimbleLib": [
           "nimibook-v0_2_1",
           "nimib",
@@ -1237,9 +1424,9 @@
           "toml_serialization",
           "nixpkgs"
         ],
-        "src-serialization-master": "src-serialization-master_3",
-        "stew": "stew_14",
-        "unittest2": "unittest2_18"
+        "src-serialization-master": "src-serialization-master_4",
+        "stew": "stew_19",
+        "unittest2": "unittest2_22"
       },
       "locked": {
         "dir": "master",
@@ -1278,6 +1465,23 @@
     "src-bearssl-master_2": {
       "flake": false,
       "locked": {
+        "lastModified": 1646393384,
+        "narHash": "sha256-deWHK4YkyqmIcIDMo+PNdCbSIlBtWtm659bfUC4LRQk=",
+        "owner": "status-im",
+        "repo": "nim-bearssl",
+        "rev": "65b74302e03912ab5bde64b6da10d05896139007",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-bearssl",
+        "type": "github"
+      }
+    },
+    "src-bearssl-master_3": {
+      "flake": false,
+      "locked": {
         "lastModified": 1657212479,
         "narHash": "sha256-+iN2R2p+6rlt1vRZEJOZ5aleTKOu1MxpM+p3R7ohiz4=",
         "owner": "status-im",
@@ -1292,7 +1496,7 @@
         "type": "github"
       }
     },
-    "src-bearssl-master_3": {
+    "src-bearssl-master_4": {
       "flake": false,
       "locked": {
         "lastModified": 1657212479,
@@ -1329,6 +1533,23 @@
     "src-chronos-master_2": {
       "flake": false,
       "locked": {
+        "lastModified": 1643370375,
+        "narHash": "sha256-Y9dJTvCrtMLB8VIOSxbSNxADPg4ulRFu0zVluDB+ngs=",
+        "owner": "status-im",
+        "repo": "nim-chronos",
+        "rev": "87197230779002a2bfa8642f0e2ae07e2349e304",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-chronos",
+        "type": "github"
+      }
+    },
+    "src-chronos-master_3": {
+      "flake": false,
+      "locked": {
         "lastModified": 1657997179,
         "narHash": "sha256-5tVLIgjjNM3meagXQGOSK51rWeN2RKMlnnrpC0IKdn0=",
         "owner": "status-im",
@@ -1343,7 +1564,7 @@
         "type": "github"
       }
     },
-    "src-chronos-master_3": {
+    "src-chronos-master_4": {
       "flake": false,
       "locked": {
         "lastModified": 1657997179,
@@ -1380,6 +1601,23 @@
     "src-faststreams-master_2": {
       "flake": false,
       "locked": {
+        "lastModified": 1647507599,
+        "narHash": "sha256-mQ4we/zM8QxV2zOp1PqrAqdGeD4S3jLZXKa6dnzwQCQ=",
+        "owner": "status-im",
+        "repo": "nim-faststreams",
+        "rev": "1a85b3d50bf9a6dbbd58df045633dae0907c51c2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-faststreams",
+        "type": "github"
+      }
+    },
+    "src-faststreams-master_3": {
+      "flake": false,
+      "locked": {
         "lastModified": 1649781369,
         "narHash": "sha256-PHjJioAXNS/qHEosndxy8UfcfoPMduY9ZByJOlTckg4=",
         "owner": "status-im",
@@ -1394,7 +1632,7 @@
         "type": "github"
       }
     },
-    "src-faststreams-master_3": {
+    "src-faststreams-master_4": {
       "flake": false,
       "locked": {
         "lastModified": 1649781369,
@@ -1431,6 +1669,23 @@
     "src-httputils-master_2": {
       "flake": false,
       "locked": {
+        "lastModified": 1643111490,
+        "narHash": "sha256-t9bDt+r6IwpY9vu47RryP2TkzFbke7s60vnV8wwIRSo=",
+        "owner": "status-im",
+        "repo": "nim-http-utils",
+        "rev": "40048e8b3e69284bdb5d4daa0a16ad93402c55db",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-http-utils",
+        "type": "github"
+      }
+    },
+    "src-httputils-master_3": {
+      "flake": false,
+      "locked": {
         "lastModified": 1650188483,
         "narHash": "sha256-WGRByHQpDiKjuYA+XTJR9T9K5PE6Ewr0w/Nt57M3gEI=",
         "owner": "status-im",
@@ -1445,7 +1700,7 @@
         "type": "github"
       }
     },
-    "src-httputils-master_3": {
+    "src-httputils-master_4": {
       "flake": false,
       "locked": {
         "lastModified": 1650188483,
@@ -1737,6 +1992,23 @@
     "src-serialization-master_2": {
       "flake": false,
       "locked": {
+        "lastModified": 1646838950,
+        "narHash": "sha256-RsjzLIR7U/cgc09Ptbl77Fs1XjkzmbNDrOhsliDnOyM=",
+        "owner": "status-im",
+        "repo": "nim-serialization",
+        "rev": "9631fbd1c81c8b25ff8740df440ca7ba87fa6131",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-serialization",
+        "type": "github"
+      }
+    },
+    "src-serialization-master_3": {
+      "flake": false,
+      "locked": {
         "lastModified": 1657800502,
         "narHash": "sha256-2nwMg2x1uDl3f4VL66w69EbBOhLdbOStOnML6rgmyoc=",
         "owner": "status-im",
@@ -1751,7 +2023,7 @@
         "type": "github"
       }
     },
-    "src-serialization-master_3": {
+    "src-serialization-master_4": {
       "flake": false,
       "locked": {
         "lastModified": 1657800502,
@@ -1788,11 +2060,11 @@
     "src-stew-master_10": {
       "flake": false,
       "locked": {
-        "lastModified": 1657991771,
-        "narHash": "sha256-RZnenro1b29z6djs20LMsOu6dZVpNJs69sFAAvWJoeE=",
+        "lastModified": 1647462294,
+        "narHash": "sha256-c2oiWeZnbgllgiyneRUXquJsOoG2Iwzn8FK9nabHMjc=",
         "owner": "status-im",
         "repo": "nim-stew",
-        "rev": "9a3130eb5b76c6504d6e6f8f86556c34f70300ef",
+        "rev": "419903c9a31ab253cf5cf19f24d9a912dc4b5154",
         "type": "github"
       },
       "original": {
@@ -1887,6 +2159,74 @@
         "type": "github"
       }
     },
+    "src-stew-master_16": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657991771,
+        "narHash": "sha256-RZnenro1b29z6djs20LMsOu6dZVpNJs69sFAAvWJoeE=",
+        "owner": "status-im",
+        "repo": "nim-stew",
+        "rev": "9a3130eb5b76c6504d6e6f8f86556c34f70300ef",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-stew",
+        "type": "github"
+      }
+    },
+    "src-stew-master_17": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657991771,
+        "narHash": "sha256-RZnenro1b29z6djs20LMsOu6dZVpNJs69sFAAvWJoeE=",
+        "owner": "status-im",
+        "repo": "nim-stew",
+        "rev": "9a3130eb5b76c6504d6e6f8f86556c34f70300ef",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-stew",
+        "type": "github"
+      }
+    },
+    "src-stew-master_18": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657991771,
+        "narHash": "sha256-RZnenro1b29z6djs20LMsOu6dZVpNJs69sFAAvWJoeE=",
+        "owner": "status-im",
+        "repo": "nim-stew",
+        "rev": "9a3130eb5b76c6504d6e6f8f86556c34f70300ef",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-stew",
+        "type": "github"
+      }
+    },
+    "src-stew-master_19": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657991771,
+        "narHash": "sha256-RZnenro1b29z6djs20LMsOu6dZVpNJs69sFAAvWJoeE=",
+        "owner": "status-im",
+        "repo": "nim-stew",
+        "rev": "9a3130eb5b76c6504d6e6f8f86556c34f70300ef",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-stew",
+        "type": "github"
+      }
+    },
     "src-stew-master_2": {
       "flake": false,
       "locked": {
@@ -1895,6 +2235,23 @@
         "owner": "status-im",
         "repo": "nim-stew",
         "rev": "419903c9a31ab253cf5cf19f24d9a912dc4b5154",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-stew",
+        "type": "github"
+      }
+    },
+    "src-stew-master_20": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657991771,
+        "narHash": "sha256-RZnenro1b29z6djs20LMsOu6dZVpNJs69sFAAvWJoeE=",
+        "owner": "status-im",
+        "repo": "nim-stew",
+        "rev": "9a3130eb5b76c6504d6e6f8f86556c34f70300ef",
         "type": "github"
       },
       "original": {
@@ -1958,11 +2315,11 @@
     "src-stew-master_6": {
       "flake": false,
       "locked": {
-        "lastModified": 1657991771,
-        "narHash": "sha256-RZnenro1b29z6djs20LMsOu6dZVpNJs69sFAAvWJoeE=",
+        "lastModified": 1647462294,
+        "narHash": "sha256-c2oiWeZnbgllgiyneRUXquJsOoG2Iwzn8FK9nabHMjc=",
         "owner": "status-im",
         "repo": "nim-stew",
-        "rev": "9a3130eb5b76c6504d6e6f8f86556c34f70300ef",
+        "rev": "419903c9a31ab253cf5cf19f24d9a912dc4b5154",
         "type": "github"
       },
       "original": {
@@ -1975,11 +2332,11 @@
     "src-stew-master_7": {
       "flake": false,
       "locked": {
-        "lastModified": 1657991771,
-        "narHash": "sha256-RZnenro1b29z6djs20LMsOu6dZVpNJs69sFAAvWJoeE=",
+        "lastModified": 1647462294,
+        "narHash": "sha256-c2oiWeZnbgllgiyneRUXquJsOoG2Iwzn8FK9nabHMjc=",
         "owner": "status-im",
         "repo": "nim-stew",
-        "rev": "9a3130eb5b76c6504d6e6f8f86556c34f70300ef",
+        "rev": "419903c9a31ab253cf5cf19f24d9a912dc4b5154",
         "type": "github"
       },
       "original": {
@@ -1992,11 +2349,11 @@
     "src-stew-master_8": {
       "flake": false,
       "locked": {
-        "lastModified": 1657991771,
-        "narHash": "sha256-RZnenro1b29z6djs20LMsOu6dZVpNJs69sFAAvWJoeE=",
+        "lastModified": 1647462294,
+        "narHash": "sha256-c2oiWeZnbgllgiyneRUXquJsOoG2Iwzn8FK9nabHMjc=",
         "owner": "status-im",
         "repo": "nim-stew",
-        "rev": "9a3130eb5b76c6504d6e6f8f86556c34f70300ef",
+        "rev": "419903c9a31ab253cf5cf19f24d9a912dc4b5154",
         "type": "github"
       },
       "original": {
@@ -2009,11 +2366,11 @@
     "src-stew-master_9": {
       "flake": false,
       "locked": {
-        "lastModified": 1657991771,
-        "narHash": "sha256-RZnenro1b29z6djs20LMsOu6dZVpNJs69sFAAvWJoeE=",
+        "lastModified": 1647462294,
+        "narHash": "sha256-c2oiWeZnbgllgiyneRUXquJsOoG2Iwzn8FK9nabHMjc=",
         "owner": "status-im",
         "repo": "nim-stew",
-        "rev": "9a3130eb5b76c6504d6e6f8f86556c34f70300ef",
+        "rev": "419903c9a31ab253cf5cf19f24d9a912dc4b5154",
         "type": "github"
       },
       "original": {
@@ -2091,6 +2448,23 @@
         "type": "github"
       }
     },
+    "src-testutils-v0_4_2_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1637276839,
+        "narHash": "sha256-PX6s1mlgY87TZl7TWhn5CAT5D0+9dPDsyoNoQd0+Bjs=",
+        "owner": "status-im",
+        "repo": "nim-testutils",
+        "rev": "aa6e5216f4b4ab5aa971cdcdd70e1ec1203cedf2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/tags/v0.4.2",
+        "repo": "nim-testutils",
+        "type": "github"
+      }
+    },
     "src-testutils-v0_5_0": {
       "flake": false,
       "locked": {
@@ -2145,6 +2519,23 @@
     "src-toml_serialization-master_2": {
       "flake": false,
       "locked": {
+        "lastModified": 1646845821,
+        "narHash": "sha256-BOmSmDyFo/Kl49/0/LKCBAFUcdsDJdubygNHIQDMC8E=",
+        "owner": "status-im",
+        "repo": "nim-toml-serialization",
+        "rev": "90369dd67b4a41109e26716829f6f3f077eddf38",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/heads/master",
+        "repo": "nim-toml-serialization",
+        "type": "github"
+      }
+    },
+    "src-toml_serialization-master_3": {
+      "flake": false,
+      "locked": {
         "lastModified": 1657676106,
         "narHash": "sha256-1Zkcnn1TAy+v3SjLap0H5GW/lHzVbmmp0lcoAbnMYI0=",
         "owner": "status-im",
@@ -2159,7 +2550,7 @@
         "type": "github"
       }
     },
-    "src-toml_serialization-master_3": {
+    "src-toml_serialization-master_4": {
       "flake": false,
       "locked": {
         "lastModified": 1657676106,
@@ -2228,6 +2619,74 @@
       }
     },
     "src-unittest2-v0_0_3_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1639728552,
+        "narHash": "sha256-gHfxt4eNLaC9KNh3kC1zFNV42UcDipfyoiCnDHyyb+k=",
+        "owner": "status-im",
+        "repo": "nim-unittest2",
+        "rev": "4e2893eacb916c7678fdc4935ff7420f13bf3a9c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/tags/v0.0.3",
+        "repo": "nim-unittest2",
+        "type": "github"
+      }
+    },
+    "src-unittest2-v0_0_3_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1639728552,
+        "narHash": "sha256-gHfxt4eNLaC9KNh3kC1zFNV42UcDipfyoiCnDHyyb+k=",
+        "owner": "status-im",
+        "repo": "nim-unittest2",
+        "rev": "4e2893eacb916c7678fdc4935ff7420f13bf3a9c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/tags/v0.0.3",
+        "repo": "nim-unittest2",
+        "type": "github"
+      }
+    },
+    "src-unittest2-v0_0_3_6": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1639728552,
+        "narHash": "sha256-gHfxt4eNLaC9KNh3kC1zFNV42UcDipfyoiCnDHyyb+k=",
+        "owner": "status-im",
+        "repo": "nim-unittest2",
+        "rev": "4e2893eacb916c7678fdc4935ff7420f13bf3a9c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/tags/v0.0.3",
+        "repo": "nim-unittest2",
+        "type": "github"
+      }
+    },
+    "src-unittest2-v0_0_3_7": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1639728552,
+        "narHash": "sha256-gHfxt4eNLaC9KNh3kC1zFNV42UcDipfyoiCnDHyyb+k=",
+        "owner": "status-im",
+        "repo": "nim-unittest2",
+        "rev": "4e2893eacb916c7678fdc4935ff7420f13bf3a9c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "status-im",
+        "ref": "refs/tags/v0.0.3",
+        "repo": "nim-unittest2",
+        "type": "github"
+      }
+    },
+    "src-unittest2-v0_0_3_8": {
       "flake": false,
       "locked": {
         "lastModified": 1639728552,
@@ -2543,14 +3002,12 @@
     "stew_10": {
       "inputs": {
         "flakeNimbleLib": [
-          "nimibook-v0_2_0",
-          "nimib",
+          "nimibook-main",
           "toml_serialization",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "nimibook-v0_2_0",
-          "nimib",
+          "nimibook-main",
           "toml_serialization",
           "nixpkgs"
         ],
@@ -2558,11 +3015,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1658018290,
-        "narHash": "sha256-MPgv/7iwt5WqEVTejBpTmV1Cszqr/amfVRs2omjeqD4=",
+        "lastModified": 1648163641,
+        "narHash": "sha256-o1mp1U2lK44+JZDk4wYL0ntUijy1+3WGRrAHyr8j/GU=",
         "owner": "nim-nix-pkgs",
         "repo": "stew",
-        "rev": "0915ef284846f71492453cb4935afb73e326f18b",
+        "rev": "2f74d82b8dbbd2144103f646070c06cdb1af35c6",
         "type": "github"
       },
       "original": {
@@ -2576,7 +3033,7 @@
     "stew_11": {
       "inputs": {
         "flakeNimbleLib": [
-          "nimibook-v0_2_1",
+          "nimibook-v0_2_0",
           "nimib",
           "toml_serialization",
           "serialization",
@@ -2586,7 +3043,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "nimibook-v0_2_1",
+          "nimibook-v0_2_0",
           "nimib",
           "toml_serialization",
           "serialization",
@@ -2617,7 +3074,7 @@
     "stew_12": {
       "inputs": {
         "flakeNimbleLib": [
-          "nimibook-v0_2_1",
+          "nimibook-v0_2_0",
           "nimib",
           "toml_serialization",
           "serialization",
@@ -2626,7 +3083,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "nimibook-v0_2_1",
+          "nimibook-v0_2_0",
           "nimib",
           "toml_serialization",
           "serialization",
@@ -2656,7 +3113,7 @@
     "stew_13": {
       "inputs": {
         "flakeNimbleLib": [
-          "nimibook-v0_2_1",
+          "nimibook-v0_2_0",
           "nimib",
           "toml_serialization",
           "serialization",
@@ -2664,7 +3121,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "nimibook-v0_2_1",
+          "nimibook-v0_2_0",
           "nimib",
           "toml_serialization",
           "serialization",
@@ -2693,14 +3150,14 @@
     "stew_14": {
       "inputs": {
         "flakeNimbleLib": [
-          "nimibook-v0_2_1",
+          "nimibook-v0_2_0",
           "nimib",
           "toml_serialization",
           "serialization",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "nimibook-v0_2_1",
+          "nimibook-v0_2_0",
           "nimib",
           "toml_serialization",
           "serialization",
@@ -2728,18 +3185,170 @@
     "stew_15": {
       "inputs": {
         "flakeNimbleLib": [
+          "nimibook-v0_2_0",
+          "nimib",
+          "toml_serialization",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimibook-v0_2_0",
+          "nimib",
+          "toml_serialization",
+          "nixpkgs"
+        ],
+        "src-stew-master": "src-stew-master_15"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1658018290,
+        "narHash": "sha256-MPgv/7iwt5WqEVTejBpTmV1Cszqr/amfVRs2omjeqD4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "stew",
+        "rev": "0915ef284846f71492453cb4935afb73e326f18b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "stew",
+        "type": "github"
+      }
+    },
+    "stew_16": {
+      "inputs": {
+        "flakeNimbleLib": [
           "nimibook-v0_2_1",
           "nimib",
           "toml_serialization",
+          "serialization",
+          "faststreams",
+          "chronos",
+          "httputils",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
           "nimibook-v0_2_1",
           "nimib",
           "toml_serialization",
+          "serialization",
+          "faststreams",
+          "chronos",
+          "httputils",
           "nixpkgs"
         ],
-        "src-stew-master": "src-stew-master_15"
+        "src-stew-master": "src-stew-master_16"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1658018290,
+        "narHash": "sha256-MPgv/7iwt5WqEVTejBpTmV1Cszqr/amfVRs2omjeqD4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "stew",
+        "rev": "0915ef284846f71492453cb4935afb73e326f18b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "stew",
+        "type": "github"
+      }
+    },
+    "stew_17": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimibook-v0_2_1",
+          "nimib",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "chronos",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimibook-v0_2_1",
+          "nimib",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "chronos",
+          "nixpkgs"
+        ],
+        "src-stew-master": "src-stew-master_17"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1658018290,
+        "narHash": "sha256-MPgv/7iwt5WqEVTejBpTmV1Cszqr/amfVRs2omjeqD4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "stew",
+        "rev": "0915ef284846f71492453cb4935afb73e326f18b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "stew",
+        "type": "github"
+      }
+    },
+    "stew_18": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimibook-v0_2_1",
+          "nimib",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimibook-v0_2_1",
+          "nimib",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "nixpkgs"
+        ],
+        "src-stew-master": "src-stew-master_18"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1658018290,
+        "narHash": "sha256-MPgv/7iwt5WqEVTejBpTmV1Cszqr/amfVRs2omjeqD4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "stew",
+        "rev": "0915ef284846f71492453cb4935afb73e326f18b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "stew",
+        "type": "github"
+      }
+    },
+    "stew_19": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimibook-v0_2_1",
+          "nimib",
+          "toml_serialization",
+          "serialization",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimibook-v0_2_1",
+          "nimib",
+          "toml_serialization",
+          "serialization",
+          "nixpkgs"
+        ],
+        "src-stew-master": "src-stew-master_19"
       },
       "locked": {
         "dir": "master",
@@ -2787,6 +3396,39 @@
         "owner": "nim-nix-pkgs",
         "repo": "stew",
         "rev": "2f74d82b8dbbd2144103f646070c06cdb1af35c6",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "stew",
+        "type": "github"
+      }
+    },
+    "stew_20": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimibook-v0_2_1",
+          "nimib",
+          "toml_serialization",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimibook-v0_2_1",
+          "nimib",
+          "toml_serialization",
+          "nixpkgs"
+        ],
+        "src-stew-master": "src-stew-master_20"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1658018290,
+        "narHash": "sha256-MPgv/7iwt5WqEVTejBpTmV1Cszqr/amfVRs2omjeqD4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "stew",
+        "rev": "0915ef284846f71492453cb4935afb73e326f18b",
         "type": "github"
       },
       "original": {
@@ -2905,8 +3547,7 @@
     "stew_6": {
       "inputs": {
         "flakeNimbleLib": [
-          "nimibook-v0_2_0",
-          "nimib",
+          "nimibook-main",
           "toml_serialization",
           "serialization",
           "faststreams",
@@ -2915,8 +3556,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "nimibook-v0_2_0",
-          "nimib",
+          "nimibook-main",
           "toml_serialization",
           "serialization",
           "faststreams",
@@ -2928,11 +3568,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1658018290,
-        "narHash": "sha256-MPgv/7iwt5WqEVTejBpTmV1Cszqr/amfVRs2omjeqD4=",
+        "lastModified": 1648163641,
+        "narHash": "sha256-o1mp1U2lK44+JZDk4wYL0ntUijy1+3WGRrAHyr8j/GU=",
         "owner": "nim-nix-pkgs",
         "repo": "stew",
-        "rev": "0915ef284846f71492453cb4935afb73e326f18b",
+        "rev": "2f74d82b8dbbd2144103f646070c06cdb1af35c6",
         "type": "github"
       },
       "original": {
@@ -2946,8 +3586,7 @@
     "stew_7": {
       "inputs": {
         "flakeNimbleLib": [
-          "nimibook-v0_2_0",
-          "nimib",
+          "nimibook-main",
           "toml_serialization",
           "serialization",
           "faststreams",
@@ -2955,8 +3594,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "nimibook-v0_2_0",
-          "nimib",
+          "nimibook-main",
           "toml_serialization",
           "serialization",
           "faststreams",
@@ -2967,11 +3605,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1658018290,
-        "narHash": "sha256-MPgv/7iwt5WqEVTejBpTmV1Cszqr/amfVRs2omjeqD4=",
+        "lastModified": 1648163641,
+        "narHash": "sha256-o1mp1U2lK44+JZDk4wYL0ntUijy1+3WGRrAHyr8j/GU=",
         "owner": "nim-nix-pkgs",
         "repo": "stew",
-        "rev": "0915ef284846f71492453cb4935afb73e326f18b",
+        "rev": "2f74d82b8dbbd2144103f646070c06cdb1af35c6",
         "type": "github"
       },
       "original": {
@@ -2985,16 +3623,14 @@
     "stew_8": {
       "inputs": {
         "flakeNimbleLib": [
-          "nimibook-v0_2_0",
-          "nimib",
+          "nimibook-main",
           "toml_serialization",
           "serialization",
           "faststreams",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "nimibook-v0_2_0",
-          "nimib",
+          "nimibook-main",
           "toml_serialization",
           "serialization",
           "faststreams",
@@ -3004,11 +3640,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1658018290,
-        "narHash": "sha256-MPgv/7iwt5WqEVTejBpTmV1Cszqr/amfVRs2omjeqD4=",
+        "lastModified": 1648163641,
+        "narHash": "sha256-o1mp1U2lK44+JZDk4wYL0ntUijy1+3WGRrAHyr8j/GU=",
         "owner": "nim-nix-pkgs",
         "repo": "stew",
-        "rev": "0915ef284846f71492453cb4935afb73e326f18b",
+        "rev": "2f74d82b8dbbd2144103f646070c06cdb1af35c6",
         "type": "github"
       },
       "original": {
@@ -3022,15 +3658,13 @@
     "stew_9": {
       "inputs": {
         "flakeNimbleLib": [
-          "nimibook-v0_2_0",
-          "nimib",
+          "nimibook-main",
           "toml_serialization",
           "serialization",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "nimibook-v0_2_0",
-          "nimib",
+          "nimibook-main",
           "toml_serialization",
           "serialization",
           "nixpkgs"
@@ -3039,11 +3673,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1658018290,
-        "narHash": "sha256-MPgv/7iwt5WqEVTejBpTmV1Cszqr/amfVRs2omjeqD4=",
+        "lastModified": 1648163641,
+        "narHash": "sha256-o1mp1U2lK44+JZDk4wYL0ntUijy1+3WGRrAHyr8j/GU=",
         "owner": "nim-nix-pkgs",
         "repo": "stew",
-        "rev": "0915ef284846f71492453cb4935afb73e326f18b",
+        "rev": "2f74d82b8dbbd2144103f646070c06cdb1af35c6",
         "type": "github"
       },
       "original": {
@@ -3187,6 +3821,41 @@
     "testutils_2": {
       "inputs": {
         "flakeNimbleLib": [
+          "nimibook-main",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimibook-main",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "nixpkgs"
+        ],
+        "src-testutils-v0_4_2": "src-testutils-v0_4_2_2"
+      },
+      "locked": {
+        "dir": "v0_4_2",
+        "lastModified": 1648163676,
+        "narHash": "sha256-C1Lpy0fxxD9/Am375To1u2fnvx5Xd4O3bG5PlFg51mI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "testutils",
+        "rev": "d6d1b623359a153248ae0c497431f53ab404a892",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_4_2",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "testutils",
+        "type": "github"
+      }
+    },
+    "testutils_3": {
+      "inputs": {
+        "flakeNimbleLib": [
           "nimibook-v0_2_0",
           "nimib",
           "toml_serialization",
@@ -3203,7 +3872,7 @@
           "nixpkgs"
         ],
         "src-testutils-v0_5_0": "src-testutils-v0_5_0",
-        "unittest2": "unittest2_9"
+        "unittest2": "unittest2_13"
       },
       "locked": {
         "dir": "v0_5_0",
@@ -3222,7 +3891,7 @@
         "type": "github"
       }
     },
-    "testutils_3": {
+    "testutils_4": {
       "inputs": {
         "flakeNimbleLib": [
           "nimibook-v0_2_1",
@@ -3241,7 +3910,7 @@
           "nixpkgs"
         ],
         "src-testutils-v0_5_0": "src-testutils-v0_5_0_2",
-        "unittest2": "unittest2_16"
+        "unittest2": "unittest2_20"
       },
       "locked": {
         "dir": "v0_5_0",
@@ -3297,6 +3966,37 @@
     "toml_serialization_2": {
       "inputs": {
         "flakeNimbleLib": [
+          "nimibook-main",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimibook-main",
+          "nixpkgs"
+        ],
+        "serialization": "serialization_2",
+        "src-toml_serialization-master": "src-toml_serialization-master_2",
+        "stew": "stew_10"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1669433128,
+        "narHash": "sha256-HQHmgQpbfPHmz8eTcNcRoXLwr7hGK2r6CncmsU8GaaM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "toml_serialization",
+        "rev": "e3297e63dd1f38026ab2ba1c1ad63c135a432483",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "toml_serialization",
+        "type": "github"
+      }
+    },
+    "toml_serialization_3": {
+      "inputs": {
+        "flakeNimbleLib": [
           "nimibook-v0_2_0",
           "nimib",
           "flakeNimbleLib"
@@ -3306,10 +4006,10 @@
           "nimib",
           "nixpkgs"
         ],
-        "serialization": "serialization_2",
-        "src-toml_serialization-master": "src-toml_serialization-master_2",
-        "stew": "stew_10",
-        "unittest2": "unittest2_12"
+        "serialization": "serialization_3",
+        "src-toml_serialization-master": "src-toml_serialization-master_3",
+        "stew": "stew_15",
+        "unittest2": "unittest2_16"
       },
       "locked": {
         "dir": "master",
@@ -3328,7 +4028,7 @@
         "type": "github"
       }
     },
-    "toml_serialization_3": {
+    "toml_serialization_4": {
       "inputs": {
         "flakeNimbleLib": [
           "nimibook-v0_2_1",
@@ -3340,10 +4040,10 @@
           "nimib",
           "nixpkgs"
         ],
-        "serialization": "serialization_3",
-        "src-toml_serialization-master": "src-toml_serialization-master_3",
-        "stew": "stew_15",
-        "unittest2": "unittest2_19"
+        "serialization": "serialization_4",
+        "src-toml_serialization-master": "src-toml_serialization-master_4",
+        "stew": "stew_20",
+        "unittest2": "unittest2_23"
       },
       "locked": {
         "dir": "master",
@@ -3411,6 +4111,166 @@
           "toml_serialization",
           "serialization",
           "faststreams",
+          "chronos",
+          "bearssl",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimibook-v0_2_0",
+          "nimib",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "chronos",
+          "bearssl",
+          "nixpkgs"
+        ],
+        "src-unittest2-v0_0_4": "src-unittest2-v0_0_4"
+      },
+      "locked": {
+        "dir": "v0_0_4",
+        "lastModified": 1658018340,
+        "narHash": "sha256-2q6T5JLVFMoeIJ9CZVdPJYBiTzx7nzQMXATyPHHdyTA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "unittest2",
+        "rev": "a697487f028c212388c5214f48a47efbe7aa3379",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_0_4",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "unittest2",
+        "type": "github"
+      }
+    },
+    "unittest2_11": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimibook-v0_2_0",
+          "nimib",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "chronos",
+          "httputils",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimibook-v0_2_0",
+          "nimib",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "chronos",
+          "httputils",
+          "nixpkgs"
+        ],
+        "src-unittest2-v0_0_4": "src-unittest2-v0_0_4_2"
+      },
+      "locked": {
+        "dir": "v0_0_4",
+        "lastModified": 1658018340,
+        "narHash": "sha256-2q6T5JLVFMoeIJ9CZVdPJYBiTzx7nzQMXATyPHHdyTA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "unittest2",
+        "rev": "a697487f028c212388c5214f48a47efbe7aa3379",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_0_4",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "unittest2",
+        "type": "github"
+      }
+    },
+    "unittest2_12": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimibook-v0_2_0",
+          "nimib",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "chronos",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimibook-v0_2_0",
+          "nimib",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "chronos",
+          "nixpkgs"
+        ],
+        "src-unittest2-v0_0_4": "src-unittest2-v0_0_4_3"
+      },
+      "locked": {
+        "dir": "v0_0_4",
+        "lastModified": 1658018340,
+        "narHash": "sha256-2q6T5JLVFMoeIJ9CZVdPJYBiTzx7nzQMXATyPHHdyTA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "unittest2",
+        "rev": "a697487f028c212388c5214f48a47efbe7aa3379",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_0_4",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "unittest2",
+        "type": "github"
+      }
+    },
+    "unittest2_13": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimibook-v0_2_0",
+          "nimib",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "testutils",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimibook-v0_2_0",
+          "nimib",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "testutils",
+          "nixpkgs"
+        ],
+        "src-unittest2-v0_0_4": "src-unittest2-v0_0_4_4"
+      },
+      "locked": {
+        "dir": "v0_0_4",
+        "lastModified": 1656747186,
+        "narHash": "sha256-rCXQ02oVg4sGWvYTNlQuJ7wi/31+vS+W1A4xETedjNw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "unittest2",
+        "rev": "b38243d1cb49b970fc2099a36370c60a7f3f50a9",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_0_4",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "unittest2",
+        "type": "github"
+      }
+    },
+    "unittest2_14": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimibook-v0_2_0",
+          "nimib",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
@@ -3440,7 +4300,7 @@
         "type": "github"
       }
     },
-    "unittest2_11": {
+    "unittest2_15": {
       "inputs": {
         "flakeNimbleLib": [
           "nimibook-v0_2_0",
@@ -3475,7 +4335,7 @@
         "type": "github"
       }
     },
-    "unittest2_12": {
+    "unittest2_16": {
       "inputs": {
         "flakeNimbleLib": [
           "nimibook-v0_2_0",
@@ -3508,7 +4368,7 @@
         "type": "github"
       }
     },
-    "unittest2_13": {
+    "unittest2_17": {
       "inputs": {
         "flakeNimbleLib": [
           "nimibook-v0_2_1",
@@ -3549,7 +4409,7 @@
         "type": "github"
       }
     },
-    "unittest2_14": {
+    "unittest2_18": {
       "inputs": {
         "flakeNimbleLib": [
           "nimibook-v0_2_1",
@@ -3590,7 +4450,7 @@
         "type": "github"
       }
     },
-    "unittest2_15": {
+    "unittest2_19": {
       "inputs": {
         "flakeNimbleLib": [
           "nimibook-v0_2_1",
@@ -3611,150 +4471,6 @@
           "nixpkgs"
         ],
         "src-unittest2-v0_0_4": "src-unittest2-v0_0_4_10"
-      },
-      "locked": {
-        "dir": "v0_0_4",
-        "lastModified": 1658018340,
-        "narHash": "sha256-2q6T5JLVFMoeIJ9CZVdPJYBiTzx7nzQMXATyPHHdyTA=",
-        "owner": "nim-nix-pkgs",
-        "repo": "unittest2",
-        "rev": "a697487f028c212388c5214f48a47efbe7aa3379",
-        "type": "github"
-      },
-      "original": {
-        "dir": "v0_0_4",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "unittest2",
-        "type": "github"
-      }
-    },
-    "unittest2_16": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "nimibook-v0_2_1",
-          "nimib",
-          "toml_serialization",
-          "serialization",
-          "faststreams",
-          "testutils",
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "nimibook-v0_2_1",
-          "nimib",
-          "toml_serialization",
-          "serialization",
-          "faststreams",
-          "testutils",
-          "nixpkgs"
-        ],
-        "src-unittest2-v0_0_4": "src-unittest2-v0_0_4_11"
-      },
-      "locked": {
-        "dir": "v0_0_4",
-        "lastModified": 1656747186,
-        "narHash": "sha256-rCXQ02oVg4sGWvYTNlQuJ7wi/31+vS+W1A4xETedjNw=",
-        "owner": "nim-nix-pkgs",
-        "repo": "unittest2",
-        "rev": "b38243d1cb49b970fc2099a36370c60a7f3f50a9",
-        "type": "github"
-      },
-      "original": {
-        "dir": "v0_0_4",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "unittest2",
-        "type": "github"
-      }
-    },
-    "unittest2_17": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "nimibook-v0_2_1",
-          "nimib",
-          "toml_serialization",
-          "serialization",
-          "faststreams",
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "nimibook-v0_2_1",
-          "nimib",
-          "toml_serialization",
-          "serialization",
-          "faststreams",
-          "nixpkgs"
-        ],
-        "src-unittest2-v0_0_4": "src-unittest2-v0_0_4_12"
-      },
-      "locked": {
-        "dir": "v0_0_4",
-        "lastModified": 1658018340,
-        "narHash": "sha256-2q6T5JLVFMoeIJ9CZVdPJYBiTzx7nzQMXATyPHHdyTA=",
-        "owner": "nim-nix-pkgs",
-        "repo": "unittest2",
-        "rev": "a697487f028c212388c5214f48a47efbe7aa3379",
-        "type": "github"
-      },
-      "original": {
-        "dir": "v0_0_4",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "unittest2",
-        "type": "github"
-      }
-    },
-    "unittest2_18": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "nimibook-v0_2_1",
-          "nimib",
-          "toml_serialization",
-          "serialization",
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "nimibook-v0_2_1",
-          "nimib",
-          "toml_serialization",
-          "serialization",
-          "nixpkgs"
-        ],
-        "src-unittest2-v0_0_4": "src-unittest2-v0_0_4_13"
-      },
-      "locked": {
-        "dir": "v0_0_4",
-        "lastModified": 1658018340,
-        "narHash": "sha256-2q6T5JLVFMoeIJ9CZVdPJYBiTzx7nzQMXATyPHHdyTA=",
-        "owner": "nim-nix-pkgs",
-        "repo": "unittest2",
-        "rev": "a697487f028c212388c5214f48a47efbe7aa3379",
-        "type": "github"
-      },
-      "original": {
-        "dir": "v0_0_4",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "unittest2",
-        "type": "github"
-      }
-    },
-    "unittest2_19": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "nimibook-v0_2_1",
-          "nimib",
-          "toml_serialization",
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "nimibook-v0_2_1",
-          "nimib",
-          "toml_serialization",
-          "nixpkgs"
-        ],
-        "src-unittest2-v0_0_4": "src-unittest2-v0_0_4_14"
       },
       "locked": {
         "dir": "v0_0_4",
@@ -3808,6 +4524,150 @@
       },
       "original": {
         "dir": "v0_0_3",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "unittest2",
+        "type": "github"
+      }
+    },
+    "unittest2_20": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimibook-v0_2_1",
+          "nimib",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "testutils",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimibook-v0_2_1",
+          "nimib",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "testutils",
+          "nixpkgs"
+        ],
+        "src-unittest2-v0_0_4": "src-unittest2-v0_0_4_11"
+      },
+      "locked": {
+        "dir": "v0_0_4",
+        "lastModified": 1656747186,
+        "narHash": "sha256-rCXQ02oVg4sGWvYTNlQuJ7wi/31+vS+W1A4xETedjNw=",
+        "owner": "nim-nix-pkgs",
+        "repo": "unittest2",
+        "rev": "b38243d1cb49b970fc2099a36370c60a7f3f50a9",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_0_4",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "unittest2",
+        "type": "github"
+      }
+    },
+    "unittest2_21": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimibook-v0_2_1",
+          "nimib",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimibook-v0_2_1",
+          "nimib",
+          "toml_serialization",
+          "serialization",
+          "faststreams",
+          "nixpkgs"
+        ],
+        "src-unittest2-v0_0_4": "src-unittest2-v0_0_4_12"
+      },
+      "locked": {
+        "dir": "v0_0_4",
+        "lastModified": 1658018340,
+        "narHash": "sha256-2q6T5JLVFMoeIJ9CZVdPJYBiTzx7nzQMXATyPHHdyTA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "unittest2",
+        "rev": "a697487f028c212388c5214f48a47efbe7aa3379",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_0_4",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "unittest2",
+        "type": "github"
+      }
+    },
+    "unittest2_22": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimibook-v0_2_1",
+          "nimib",
+          "toml_serialization",
+          "serialization",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimibook-v0_2_1",
+          "nimib",
+          "toml_serialization",
+          "serialization",
+          "nixpkgs"
+        ],
+        "src-unittest2-v0_0_4": "src-unittest2-v0_0_4_13"
+      },
+      "locked": {
+        "dir": "v0_0_4",
+        "lastModified": 1658018340,
+        "narHash": "sha256-2q6T5JLVFMoeIJ9CZVdPJYBiTzx7nzQMXATyPHHdyTA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "unittest2",
+        "rev": "a697487f028c212388c5214f48a47efbe7aa3379",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_0_4",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "unittest2",
+        "type": "github"
+      }
+    },
+    "unittest2_23": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nimibook-v0_2_1",
+          "nimib",
+          "toml_serialization",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nimibook-v0_2_1",
+          "nimib",
+          "toml_serialization",
+          "nixpkgs"
+        ],
+        "src-unittest2-v0_0_4": "src-unittest2-v0_0_4_14"
+      },
+      "locked": {
+        "dir": "v0_0_4",
+        "lastModified": 1658018340,
+        "narHash": "sha256-2q6T5JLVFMoeIJ9CZVdPJYBiTzx7nzQMXATyPHHdyTA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "unittest2",
+        "rev": "a697487f028c212388c5214f48a47efbe7aa3379",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_0_4",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "unittest2",
@@ -3922,8 +4782,7 @@
     "unittest2_6": {
       "inputs": {
         "flakeNimbleLib": [
-          "nimibook-v0_2_0",
-          "nimib",
+          "nimibook-main",
           "toml_serialization",
           "serialization",
           "faststreams",
@@ -3932,8 +4791,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "nimibook-v0_2_0",
-          "nimib",
+          "nimibook-main",
           "toml_serialization",
           "serialization",
           "faststreams",
@@ -3941,19 +4799,19 @@
           "bearssl",
           "nixpkgs"
         ],
-        "src-unittest2-v0_0_4": "src-unittest2-v0_0_4"
+        "src-unittest2-v0_0_3": "src-unittest2-v0_0_3_5"
       },
       "locked": {
-        "dir": "v0_0_4",
-        "lastModified": 1658018340,
-        "narHash": "sha256-2q6T5JLVFMoeIJ9CZVdPJYBiTzx7nzQMXATyPHHdyTA=",
+        "dir": "v0_0_3",
+        "lastModified": 1648163714,
+        "narHash": "sha256-2uFIB/e5j5/oirson4svtxDNOH4HyGWuOm7WTXle/nk=",
         "owner": "nim-nix-pkgs",
         "repo": "unittest2",
-        "rev": "a697487f028c212388c5214f48a47efbe7aa3379",
+        "rev": "f89316ae7912f6e7883021135d91efe039ea4866",
         "type": "github"
       },
       "original": {
-        "dir": "v0_0_4",
+        "dir": "v0_0_3",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "unittest2",
@@ -3963,8 +4821,7 @@
     "unittest2_7": {
       "inputs": {
         "flakeNimbleLib": [
-          "nimibook-v0_2_0",
-          "nimib",
+          "nimibook-main",
           "toml_serialization",
           "serialization",
           "faststreams",
@@ -3973,8 +4830,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "nimibook-v0_2_0",
-          "nimib",
+          "nimibook-main",
           "toml_serialization",
           "serialization",
           "faststreams",
@@ -3982,19 +4838,19 @@
           "httputils",
           "nixpkgs"
         ],
-        "src-unittest2-v0_0_4": "src-unittest2-v0_0_4_2"
+        "src-unittest2-v0_0_3": "src-unittest2-v0_0_3_6"
       },
       "locked": {
-        "dir": "v0_0_4",
-        "lastModified": 1658018340,
-        "narHash": "sha256-2q6T5JLVFMoeIJ9CZVdPJYBiTzx7nzQMXATyPHHdyTA=",
+        "dir": "v0_0_3",
+        "lastModified": 1648163714,
+        "narHash": "sha256-2uFIB/e5j5/oirson4svtxDNOH4HyGWuOm7WTXle/nk=",
         "owner": "nim-nix-pkgs",
         "repo": "unittest2",
-        "rev": "a697487f028c212388c5214f48a47efbe7aa3379",
+        "rev": "f89316ae7912f6e7883021135d91efe039ea4866",
         "type": "github"
       },
       "original": {
-        "dir": "v0_0_4",
+        "dir": "v0_0_3",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "unittest2",
@@ -4004,36 +4860,32 @@
     "unittest2_8": {
       "inputs": {
         "flakeNimbleLib": [
-          "nimibook-v0_2_0",
-          "nimib",
+          "nimibook-main",
           "toml_serialization",
           "serialization",
           "faststreams",
-          "chronos",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "nimibook-v0_2_0",
-          "nimib",
+          "nimibook-main",
           "toml_serialization",
           "serialization",
           "faststreams",
-          "chronos",
           "nixpkgs"
         ],
-        "src-unittest2-v0_0_4": "src-unittest2-v0_0_4_3"
+        "src-unittest2-v0_0_3": "src-unittest2-v0_0_3_7"
       },
       "locked": {
-        "dir": "v0_0_4",
-        "lastModified": 1658018340,
-        "narHash": "sha256-2q6T5JLVFMoeIJ9CZVdPJYBiTzx7nzQMXATyPHHdyTA=",
+        "dir": "v0_0_3",
+        "lastModified": 1648163714,
+        "narHash": "sha256-2uFIB/e5j5/oirson4svtxDNOH4HyGWuOm7WTXle/nk=",
         "owner": "nim-nix-pkgs",
         "repo": "unittest2",
-        "rev": "a697487f028c212388c5214f48a47efbe7aa3379",
+        "rev": "f89316ae7912f6e7883021135d91efe039ea4866",
         "type": "github"
       },
       "original": {
-        "dir": "v0_0_4",
+        "dir": "v0_0_3",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "unittest2",
@@ -4043,36 +4895,30 @@
     "unittest2_9": {
       "inputs": {
         "flakeNimbleLib": [
-          "nimibook-v0_2_0",
-          "nimib",
+          "nimibook-main",
           "toml_serialization",
           "serialization",
-          "faststreams",
-          "testutils",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "nimibook-v0_2_0",
-          "nimib",
+          "nimibook-main",
           "toml_serialization",
           "serialization",
-          "faststreams",
-          "testutils",
           "nixpkgs"
         ],
-        "src-unittest2-v0_0_4": "src-unittest2-v0_0_4_4"
+        "src-unittest2-v0_0_3": "src-unittest2-v0_0_3_8"
       },
       "locked": {
-        "dir": "v0_0_4",
-        "lastModified": 1656747186,
-        "narHash": "sha256-rCXQ02oVg4sGWvYTNlQuJ7wi/31+vS+W1A4xETedjNw=",
+        "dir": "v0_0_3",
+        "lastModified": 1648163714,
+        "narHash": "sha256-2uFIB/e5j5/oirson4svtxDNOH4HyGWuOm7WTXle/nk=",
         "owner": "nim-nix-pkgs",
         "repo": "unittest2",
-        "rev": "b38243d1cb49b970fc2099a36370c60a7f3f50a9",
+        "rev": "f89316ae7912f6e7883021135d91efe039ea4866",
         "type": "github"
       },
       "original": {
-        "dir": "v0_0_4",
+        "dir": "v0_0_3",
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "unittest2",

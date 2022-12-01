@@ -359,6 +359,14 @@
   inputs."ginger-v0_3_9".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ginger-v0_3_9".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."ginger-v0_4_0".dir   = "v0_4_0";
+  inputs."ginger-v0_4_0".owner = "nim-nix-pkgs";
+  inputs."ginger-v0_4_0".ref   = "master";
+  inputs."ginger-v0_4_0".repo  = "ginger";
+  inputs."ginger-v0_4_0".type  = "github";
+  inputs."ginger-v0_4_0".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ginger-v0_4_0".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

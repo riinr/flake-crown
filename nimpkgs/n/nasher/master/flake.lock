@@ -1,5 +1,32 @@
 {
   "nodes": {
+    "blarg": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-blarg-0_1_0": "src-blarg-0_1_0"
+      },
+      "locked": {
+        "dir": "0_1_0",
+        "lastModified": 1669437982,
+        "narHash": "sha256-WrbxNo1W/CgjtlaFPJuUTbGtW9IdfKd7+aQ2zYiXAhI=",
+        "owner": "nim-nix-pkgs",
+        "repo": "blarg",
+        "rev": "ceff92e66526d8b1a05b801ef75edd0945a14f42",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "blarg",
+        "type": "github"
+      }
+    },
     "devshell": {
       "inputs": {
         "flake-utils": [
@@ -230,11 +257,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1668435762,
-        "narHash": "sha256-4ArhSbDGEh1HtB4tG0zoUvp7558CfxUklJcsLemSn2w=",
+        "lastModified": 1669304833,
+        "narHash": "sha256-XUC/j0d3QjjTvkZRTjfGM/XfZHKQcLF70sg5Z2xXvLc=",
         "owner": "riinr",
         "repo": "nim-flakes-lib",
-        "rev": "4bebe53096d189c04ac618fc3c108d8082391344",
+        "rev": "53a35251b37bd6c886c3e3e20d4b9e2d966896b4",
         "type": "github"
       },
       "original": {
@@ -275,11 +302,11 @@
       },
       "locked": {
         "dir": "v0_11_2",
-        "lastModified": 1668756163,
-        "narHash": "sha256-J2ZkhcrfubyXxCUeqSz629+wnL5V47Eu2FD5dRzdu4E=",
+        "lastModified": 1669439310,
+        "narHash": "sha256-/QdbGvePqZLtWvhwoX2mj6xbae1YS3CuE2t/GD0Bt6k=",
         "owner": "nim-nix-pkgs",
         "repo": "glob",
-        "rev": "193eec03081c503672f9abf7baac3da4ccedfd5b",
+        "rev": "1dd2e644ae56132f090cc54873e321933428fbcc",
         "type": "github"
       },
       "original": {
@@ -303,11 +330,11 @@
       },
       "locked": {
         "dir": "1_5_8",
-        "lastModified": 1668756221,
-        "narHash": "sha256-8Ku+KCgQCzp0ero0h3JrVAHAEVUQ/jz7nxo1VWgOXJs=",
+        "lastModified": 1669439352,
+        "narHash": "sha256-ft2b7xDc8dOD4jhRgZoRWZwk4a+HD+rkGg6nIV4lENo=",
         "owner": "nim-nix-pkgs",
         "repo": "neverwinter",
-        "rev": "df9366c318c777691399062a1c6d20e7dfd01984",
+        "rev": "6dc20e1713a8fcebcecf0b4e60dd86dbc74fd1af",
         "type": "github"
       },
       "original": {
@@ -366,11 +393,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1668681245,
-        "narHash": "sha256-IH8t+b9hCfNwEvdC55UEymn8jL457Fo/hx3N/kNTZso=",
+        "lastModified": 1669387357,
+        "narHash": "sha256-z1azVj/5Em5kGhh9OgBOsjTEgMab7hXL/aRilH9tzyI=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "bd4bfd814e96488febb38b4b4d0549c56b840c7f",
+        "rev": "55b3f68bda6d4f4dc6092eed0508063f154fa4fd",
         "type": "github"
       },
       "original": {
@@ -392,11 +419,11 @@
       },
       "locked": {
         "dir": "v1_3_3",
-        "lastModified": 1668756609,
-        "narHash": "sha256-hv32kuS7Lnyx8VHgZHbwpTCK7okoCO4TQuqw4Y4I2gc=",
+        "lastModified": 1669439644,
+        "narHash": "sha256-/xGc9s7ek43MDEHivLtgZx20L5HCNRQkC4l4aNDsuls=",
         "owner": "nim-nix-pkgs",
         "repo": "nwnt",
-        "rev": "7d4c3875810809c2deb43015f9fb3a89e6948694",
+        "rev": "935439aaf6fdf837b5bb898e1db2e33340c6f0a9",
         "type": "github"
       },
       "original": {
@@ -537,12 +564,30 @@
     },
     "root": {
       "inputs": {
+        "blarg": "blarg",
         "flakeNimbleLib": "flakeNimbleLib",
         "glob": "glob",
         "neverwinter": "neverwinter",
         "nixpkgs": "nixpkgs_2",
         "nwnt": "nwnt",
         "src-nasher-master": "src-nasher-master"
+      }
+    },
+    "src-blarg-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1652348367,
+        "narHash": "sha256-SP7X6tkZZzxLofU9nXWqP37UwShLKQpe5zZOWa8+gJU=",
+        "owner": "squattingmonk",
+        "repo": "blarg",
+        "rev": "59ebae2ed50a177c0047359f9d49054a26992910",
+        "type": "github"
+      },
+      "original": {
+        "owner": "squattingmonk",
+        "ref": "refs/tags/0.1.0",
+        "repo": "blarg",
+        "type": "github"
       }
     },
     "src-docopt-v0_7_0": {

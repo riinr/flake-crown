@@ -551,6 +551,38 @@
   inputs."ggplotnim-v0_5_4".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ggplotnim-v0_5_4".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."ggplotnim-v0_5_5".dir   = "v0_5_5";
+  inputs."ggplotnim-v0_5_5".owner = "nim-nix-pkgs";
+  inputs."ggplotnim-v0_5_5".ref   = "master";
+  inputs."ggplotnim-v0_5_5".repo  = "ggplotnim";
+  inputs."ggplotnim-v0_5_5".type  = "github";
+  inputs."ggplotnim-v0_5_5".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ggplotnim-v0_5_5".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ggplotnim-v0_5_6".dir   = "v0_5_6";
+  inputs."ggplotnim-v0_5_6".owner = "nim-nix-pkgs";
+  inputs."ggplotnim-v0_5_6".ref   = "master";
+  inputs."ggplotnim-v0_5_6".repo  = "ggplotnim";
+  inputs."ggplotnim-v0_5_6".type  = "github";
+  inputs."ggplotnim-v0_5_6".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ggplotnim-v0_5_6".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ggplotnim-v0_5_7".dir   = "v0_5_7";
+  inputs."ggplotnim-v0_5_7".owner = "nim-nix-pkgs";
+  inputs."ggplotnim-v0_5_7".ref   = "master";
+  inputs."ggplotnim-v0_5_7".repo  = "ggplotnim";
+  inputs."ggplotnim-v0_5_7".type  = "github";
+  inputs."ggplotnim-v0_5_7".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ggplotnim-v0_5_7".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."ggplotnim-v0_5_8".dir   = "v0_5_8";
+  inputs."ggplotnim-v0_5_8".owner = "nim-nix-pkgs";
+  inputs."ggplotnim-v0_5_8".ref   = "master";
+  inputs."ggplotnim-v0_5_8".repo  = "ggplotnim";
+  inputs."ggplotnim-v0_5_8".type  = "github";
+  inputs."ggplotnim-v0_5_8".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."ggplotnim-v0_5_8".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;

@@ -138,11 +138,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1668435762,
-        "narHash": "sha256-4ArhSbDGEh1HtB4tG0zoUvp7558CfxUklJcsLemSn2w=",
+        "lastModified": 1669304833,
+        "narHash": "sha256-XUC/j0d3QjjTvkZRTjfGM/XfZHKQcLF70sg5Z2xXvLc=",
         "owner": "riinr",
         "repo": "nim-flakes-lib",
-        "rev": "4bebe53096d189c04ac618fc3c108d8082391344",
+        "rev": "53a35251b37bd6c886c3e3e20d4b9e2d966896b4",
         "type": "github"
       },
       "original": {
@@ -173,15 +173,45 @@
     "hashlib": {
       "inputs": {
         "flakeNimbleLib": [
-          "libpe-v0_2_0",
+          "libpe-master",
           "flakeNimbleLib"
         ],
         "nimcrypto": "nimcrypto",
         "nixpkgs": [
-          "libpe-v0_2_0",
+          "libpe-master",
           "nixpkgs"
         ],
         "src-hashlib-master": "src-hashlib-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1669431891,
+        "narHash": "sha256-0rjUekZbnUA7NwCj/5Be606YObY8Yp+pCAm5wzmdvEY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "hashlib",
+        "rev": "63331f747a2c2be405b22d1e0a6094b6e1f84353",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "hashlib",
+        "type": "github"
+      }
+    },
+    "hashlib_10": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "libpe-v0_3_6",
+          "flakeNimbleLib"
+        ],
+        "nimcrypto": "nimcrypto_10",
+        "nixpkgs": [
+          "libpe-v0_3_6",
+          "nixpkgs"
+        ],
+        "src-hashlib-master": "src-hashlib-master_10"
       },
       "locked": {
         "dir": "master",
@@ -203,12 +233,12 @@
     "hashlib_2": {
       "inputs": {
         "flakeNimbleLib": [
-          "libpe-v0_2_1",
+          "libpe-v0_2_0",
           "flakeNimbleLib"
         ],
         "nimcrypto": "nimcrypto_2",
         "nixpkgs": [
-          "libpe-v0_2_1",
+          "libpe-v0_2_0",
           "nixpkgs"
         ],
         "src-hashlib-master": "src-hashlib-master_2"
@@ -233,12 +263,12 @@
     "hashlib_3": {
       "inputs": {
         "flakeNimbleLib": [
-          "libpe-v0_3_0",
+          "libpe-v0_2_1",
           "flakeNimbleLib"
         ],
         "nimcrypto": "nimcrypto_3",
         "nixpkgs": [
-          "libpe-v0_3_0",
+          "libpe-v0_2_1",
           "nixpkgs"
         ],
         "src-hashlib-master": "src-hashlib-master_3"
@@ -263,12 +293,12 @@
     "hashlib_4": {
       "inputs": {
         "flakeNimbleLib": [
-          "libpe-v0_3_1",
+          "libpe-v0_3_0",
           "flakeNimbleLib"
         ],
         "nimcrypto": "nimcrypto_4",
         "nixpkgs": [
-          "libpe-v0_3_1",
+          "libpe-v0_3_0",
           "nixpkgs"
         ],
         "src-hashlib-master": "src-hashlib-master_4"
@@ -293,12 +323,12 @@
     "hashlib_5": {
       "inputs": {
         "flakeNimbleLib": [
-          "libpe-v0_3_2",
+          "libpe-v0_3_1",
           "flakeNimbleLib"
         ],
         "nimcrypto": "nimcrypto_5",
         "nixpkgs": [
-          "libpe-v0_3_2",
+          "libpe-v0_3_1",
           "nixpkgs"
         ],
         "src-hashlib-master": "src-hashlib-master_5"
@@ -323,12 +353,12 @@
     "hashlib_6": {
       "inputs": {
         "flakeNimbleLib": [
-          "libpe-v0_3_3",
+          "libpe-v0_3_2",
           "flakeNimbleLib"
         ],
         "nimcrypto": "nimcrypto_6",
         "nixpkgs": [
-          "libpe-v0_3_3",
+          "libpe-v0_3_2",
           "nixpkgs"
         ],
         "src-hashlib-master": "src-hashlib-master_6"
@@ -353,12 +383,12 @@
     "hashlib_7": {
       "inputs": {
         "flakeNimbleLib": [
-          "libpe-v0_3_4",
+          "libpe-v0_3_3",
           "flakeNimbleLib"
         ],
         "nimcrypto": "nimcrypto_7",
         "nixpkgs": [
-          "libpe-v0_3_4",
+          "libpe-v0_3_3",
           "nixpkgs"
         ],
         "src-hashlib-master": "src-hashlib-master_7"
@@ -383,12 +413,12 @@
     "hashlib_8": {
       "inputs": {
         "flakeNimbleLib": [
-          "libpe-v0_3_5",
+          "libpe-v0_3_4",
           "flakeNimbleLib"
         ],
         "nimcrypto": "nimcrypto_8",
         "nixpkgs": [
-          "libpe-v0_3_5",
+          "libpe-v0_3_4",
           "nixpkgs"
         ],
         "src-hashlib-master": "src-hashlib-master_8"
@@ -413,12 +443,12 @@
     "hashlib_9": {
       "inputs": {
         "flakeNimbleLib": [
-          "libpe-v0_3_6",
+          "libpe-v0_3_5",
           "flakeNimbleLib"
         ],
         "nimcrypto": "nimcrypto_9",
         "nixpkgs": [
-          "libpe-v0_3_6",
+          "libpe-v0_3_5",
           "nixpkgs"
         ],
         "src-hashlib-master": "src-hashlib-master_9"
@@ -441,6 +471,64 @@
       }
     },
     "libfuzzy": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "libpe-master",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "libpe-master",
+          "nixpkgs"
+        ],
+        "src-libfuzzy-v0_1_1": "src-libfuzzy-v0_1_1"
+      },
+      "locked": {
+        "dir": "v0_1_1",
+        "lastModified": 1669431174,
+        "narHash": "sha256-f7qwvVXsjb24Iuf2zuRVTG/847uA2EIFKe5vpGcqe9I=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libfuzzy",
+        "rev": "81e9e42fac4ea24c93b863f6ae0e1902f9fab61b",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libfuzzy",
+        "type": "github"
+      }
+    },
+    "libfuzzy_10": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "libpe-v0_3_6",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "libpe-v0_3_6",
+          "nixpkgs"
+        ],
+        "src-libfuzzy-v0_1_1": "src-libfuzzy-v0_1_1_4"
+      },
+      "locked": {
+        "dir": "v0_1_1",
+        "lastModified": 1667322389,
+        "narHash": "sha256-qOLv30kMKkpMp3UPqnDobF1nNHlisJw/kstkwS0njnM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "libfuzzy",
+        "rev": "7fbd901e5401a4392849666d9c450a70ddf897d2",
+        "type": "github"
+      },
+      "original": {
+        "dir": "v0_1_1",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "libfuzzy",
+        "type": "github"
+      }
+    },
+    "libfuzzy_2": {
       "inputs": {
         "flakeNimbleLib": [
           "libpe-v0_2_0",
@@ -469,7 +557,7 @@
         "type": "github"
       }
     },
-    "libfuzzy_2": {
+    "libfuzzy_3": {
       "inputs": {
         "flakeNimbleLib": [
           "libpe-v0_2_1",
@@ -498,7 +586,7 @@
         "type": "github"
       }
     },
-    "libfuzzy_3": {
+    "libfuzzy_4": {
       "inputs": {
         "flakeNimbleLib": [
           "libpe-v0_3_0",
@@ -527,7 +615,7 @@
         "type": "github"
       }
     },
-    "libfuzzy_4": {
+    "libfuzzy_5": {
       "inputs": {
         "flakeNimbleLib": [
           "libpe-v0_3_1",
@@ -556,7 +644,7 @@
         "type": "github"
       }
     },
-    "libfuzzy_5": {
+    "libfuzzy_6": {
       "inputs": {
         "flakeNimbleLib": [
           "libpe-v0_3_2",
@@ -585,7 +673,7 @@
         "type": "github"
       }
     },
-    "libfuzzy_6": {
+    "libfuzzy_7": {
       "inputs": {
         "flakeNimbleLib": [
           "libpe-v0_3_3",
@@ -614,43 +702,14 @@
         "type": "github"
       }
     },
-    "libfuzzy_7": {
-      "inputs": {
-        "flakeNimbleLib": [
-          "libpe-v0_3_4",
-          "flakeNimbleLib"
-        ],
-        "nixpkgs": [
-          "libpe-v0_3_4",
-          "nixpkgs"
-        ],
-        "src-libfuzzy-v0_1_1": "src-libfuzzy-v0_1_1"
-      },
-      "locked": {
-        "dir": "v0_1_1",
-        "lastModified": 1667322389,
-        "narHash": "sha256-qOLv30kMKkpMp3UPqnDobF1nNHlisJw/kstkwS0njnM=",
-        "owner": "nim-nix-pkgs",
-        "repo": "libfuzzy",
-        "rev": "7fbd901e5401a4392849666d9c450a70ddf897d2",
-        "type": "github"
-      },
-      "original": {
-        "dir": "v0_1_1",
-        "owner": "nim-nix-pkgs",
-        "ref": "master",
-        "repo": "libfuzzy",
-        "type": "github"
-      }
-    },
     "libfuzzy_8": {
       "inputs": {
         "flakeNimbleLib": [
-          "libpe-v0_3_5",
+          "libpe-v0_3_4",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "libpe-v0_3_5",
+          "libpe-v0_3_4",
           "nixpkgs"
         ],
         "src-libfuzzy-v0_1_1": "src-libfuzzy-v0_1_1_2"
@@ -675,11 +734,11 @@
     "libfuzzy_9": {
       "inputs": {
         "flakeNimbleLib": [
-          "libpe-v0_3_6",
+          "libpe-v0_3_5",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "libpe-v0_3_6",
+          "libpe-v0_3_5",
           "nixpkgs"
         ],
         "src-libfuzzy-v0_1_1": "src-libfuzzy-v0_1_1_3"
@@ -706,6 +765,8 @@
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
+        "hashlib": "hashlib",
+        "libfuzzy": "libfuzzy",
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -713,11 +774,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1668755905,
-        "narHash": "sha256-9j2PiBDz9EmD2E7WOpbo6aEqAPpkI2uZWK2tqv4mFrM=",
+        "lastModified": 1669432351,
+        "narHash": "sha256-nTmZG7pd6RprdP43GSjORvD4Fb9tPdzb2h+gFV5H9B8=",
         "owner": "nim-nix-pkgs",
         "repo": "libpe",
-        "rev": "0ee3b35fee1ef186f2319b24cfff90eb5e8f8a5a",
+        "rev": "1827872f542289aa63a566815de98ebf52212dd6",
         "type": "github"
       },
       "original": {
@@ -740,11 +801,11 @@
       },
       "locked": {
         "dir": "v0_1_0",
-        "lastModified": 1668755905,
-        "narHash": "sha256-9j2PiBDz9EmD2E7WOpbo6aEqAPpkI2uZWK2tqv4mFrM=",
+        "lastModified": 1669432351,
+        "narHash": "sha256-nTmZG7pd6RprdP43GSjORvD4Fb9tPdzb2h+gFV5H9B8=",
         "owner": "nim-nix-pkgs",
         "repo": "libpe",
-        "rev": "0ee3b35fee1ef186f2319b24cfff90eb5e8f8a5a",
+        "rev": "1827872f542289aa63a566815de98ebf52212dd6",
         "type": "github"
       },
       "original": {
@@ -767,11 +828,11 @@
       },
       "locked": {
         "dir": "v0_1_1",
-        "lastModified": 1668755905,
-        "narHash": "sha256-9j2PiBDz9EmD2E7WOpbo6aEqAPpkI2uZWK2tqv4mFrM=",
+        "lastModified": 1669432351,
+        "narHash": "sha256-nTmZG7pd6RprdP43GSjORvD4Fb9tPdzb2h+gFV5H9B8=",
         "owner": "nim-nix-pkgs",
         "repo": "libpe",
-        "rev": "0ee3b35fee1ef186f2319b24cfff90eb5e8f8a5a",
+        "rev": "1827872f542289aa63a566815de98ebf52212dd6",
         "type": "github"
       },
       "original": {
@@ -794,11 +855,11 @@
       },
       "locked": {
         "dir": "v0_1_2",
-        "lastModified": 1668755905,
-        "narHash": "sha256-9j2PiBDz9EmD2E7WOpbo6aEqAPpkI2uZWK2tqv4mFrM=",
+        "lastModified": 1669432351,
+        "narHash": "sha256-nTmZG7pd6RprdP43GSjORvD4Fb9tPdzb2h+gFV5H9B8=",
         "owner": "nim-nix-pkgs",
         "repo": "libpe",
-        "rev": "0ee3b35fee1ef186f2319b24cfff90eb5e8f8a5a",
+        "rev": "1827872f542289aa63a566815de98ebf52212dd6",
         "type": "github"
       },
       "original": {
@@ -821,11 +882,11 @@
       },
       "locked": {
         "dir": "v0_1_3",
-        "lastModified": 1668755905,
-        "narHash": "sha256-9j2PiBDz9EmD2E7WOpbo6aEqAPpkI2uZWK2tqv4mFrM=",
+        "lastModified": 1669432351,
+        "narHash": "sha256-nTmZG7pd6RprdP43GSjORvD4Fb9tPdzb2h+gFV5H9B8=",
         "owner": "nim-nix-pkgs",
         "repo": "libpe",
-        "rev": "0ee3b35fee1ef186f2319b24cfff90eb5e8f8a5a",
+        "rev": "1827872f542289aa63a566815de98ebf52212dd6",
         "type": "github"
       },
       "original": {
@@ -848,11 +909,11 @@
       },
       "locked": {
         "dir": "v0_1_4",
-        "lastModified": 1668755905,
-        "narHash": "sha256-9j2PiBDz9EmD2E7WOpbo6aEqAPpkI2uZWK2tqv4mFrM=",
+        "lastModified": 1669432351,
+        "narHash": "sha256-nTmZG7pd6RprdP43GSjORvD4Fb9tPdzb2h+gFV5H9B8=",
         "owner": "nim-nix-pkgs",
         "repo": "libpe",
-        "rev": "0ee3b35fee1ef186f2319b24cfff90eb5e8f8a5a",
+        "rev": "1827872f542289aa63a566815de98ebf52212dd6",
         "type": "github"
       },
       "original": {
@@ -868,8 +929,8 @@
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
-        "hashlib": "hashlib",
-        "libfuzzy": "libfuzzy",
+        "hashlib": "hashlib_2",
+        "libfuzzy": "libfuzzy_2",
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -877,11 +938,11 @@
       },
       "locked": {
         "dir": "v0_2_0",
-        "lastModified": 1668755905,
-        "narHash": "sha256-9j2PiBDz9EmD2E7WOpbo6aEqAPpkI2uZWK2tqv4mFrM=",
+        "lastModified": 1669432351,
+        "narHash": "sha256-nTmZG7pd6RprdP43GSjORvD4Fb9tPdzb2h+gFV5H9B8=",
         "owner": "nim-nix-pkgs",
         "repo": "libpe",
-        "rev": "0ee3b35fee1ef186f2319b24cfff90eb5e8f8a5a",
+        "rev": "1827872f542289aa63a566815de98ebf52212dd6",
         "type": "github"
       },
       "original": {
@@ -897,8 +958,8 @@
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
-        "hashlib": "hashlib_2",
-        "libfuzzy": "libfuzzy_2",
+        "hashlib": "hashlib_3",
+        "libfuzzy": "libfuzzy_3",
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -906,11 +967,11 @@
       },
       "locked": {
         "dir": "v0_2_1",
-        "lastModified": 1668755905,
-        "narHash": "sha256-9j2PiBDz9EmD2E7WOpbo6aEqAPpkI2uZWK2tqv4mFrM=",
+        "lastModified": 1669432351,
+        "narHash": "sha256-nTmZG7pd6RprdP43GSjORvD4Fb9tPdzb2h+gFV5H9B8=",
         "owner": "nim-nix-pkgs",
         "repo": "libpe",
-        "rev": "0ee3b35fee1ef186f2319b24cfff90eb5e8f8a5a",
+        "rev": "1827872f542289aa63a566815de98ebf52212dd6",
         "type": "github"
       },
       "original": {
@@ -926,8 +987,8 @@
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
-        "hashlib": "hashlib_3",
-        "libfuzzy": "libfuzzy_3",
+        "hashlib": "hashlib_4",
+        "libfuzzy": "libfuzzy_4",
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -935,11 +996,11 @@
       },
       "locked": {
         "dir": "v0_3_0",
-        "lastModified": 1668755905,
-        "narHash": "sha256-9j2PiBDz9EmD2E7WOpbo6aEqAPpkI2uZWK2tqv4mFrM=",
+        "lastModified": 1669432351,
+        "narHash": "sha256-nTmZG7pd6RprdP43GSjORvD4Fb9tPdzb2h+gFV5H9B8=",
         "owner": "nim-nix-pkgs",
         "repo": "libpe",
-        "rev": "0ee3b35fee1ef186f2319b24cfff90eb5e8f8a5a",
+        "rev": "1827872f542289aa63a566815de98ebf52212dd6",
         "type": "github"
       },
       "original": {
@@ -955,8 +1016,8 @@
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
-        "hashlib": "hashlib_4",
-        "libfuzzy": "libfuzzy_4",
+        "hashlib": "hashlib_5",
+        "libfuzzy": "libfuzzy_5",
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -964,11 +1025,11 @@
       },
       "locked": {
         "dir": "v0_3_1",
-        "lastModified": 1668755905,
-        "narHash": "sha256-9j2PiBDz9EmD2E7WOpbo6aEqAPpkI2uZWK2tqv4mFrM=",
+        "lastModified": 1669432351,
+        "narHash": "sha256-nTmZG7pd6RprdP43GSjORvD4Fb9tPdzb2h+gFV5H9B8=",
         "owner": "nim-nix-pkgs",
         "repo": "libpe",
-        "rev": "0ee3b35fee1ef186f2319b24cfff90eb5e8f8a5a",
+        "rev": "1827872f542289aa63a566815de98ebf52212dd6",
         "type": "github"
       },
       "original": {
@@ -984,8 +1045,8 @@
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
-        "hashlib": "hashlib_5",
-        "libfuzzy": "libfuzzy_5",
+        "hashlib": "hashlib_6",
+        "libfuzzy": "libfuzzy_6",
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -993,11 +1054,11 @@
       },
       "locked": {
         "dir": "v0_3_2",
-        "lastModified": 1668755905,
-        "narHash": "sha256-9j2PiBDz9EmD2E7WOpbo6aEqAPpkI2uZWK2tqv4mFrM=",
+        "lastModified": 1669432351,
+        "narHash": "sha256-nTmZG7pd6RprdP43GSjORvD4Fb9tPdzb2h+gFV5H9B8=",
         "owner": "nim-nix-pkgs",
         "repo": "libpe",
-        "rev": "0ee3b35fee1ef186f2319b24cfff90eb5e8f8a5a",
+        "rev": "1827872f542289aa63a566815de98ebf52212dd6",
         "type": "github"
       },
       "original": {
@@ -1013,8 +1074,8 @@
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
-        "hashlib": "hashlib_6",
-        "libfuzzy": "libfuzzy_6",
+        "hashlib": "hashlib_7",
+        "libfuzzy": "libfuzzy_7",
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -1022,11 +1083,11 @@
       },
       "locked": {
         "dir": "v0_3_3",
-        "lastModified": 1668755905,
-        "narHash": "sha256-9j2PiBDz9EmD2E7WOpbo6aEqAPpkI2uZWK2tqv4mFrM=",
+        "lastModified": 1669432351,
+        "narHash": "sha256-nTmZG7pd6RprdP43GSjORvD4Fb9tPdzb2h+gFV5H9B8=",
         "owner": "nim-nix-pkgs",
         "repo": "libpe",
-        "rev": "0ee3b35fee1ef186f2319b24cfff90eb5e8f8a5a",
+        "rev": "1827872f542289aa63a566815de98ebf52212dd6",
         "type": "github"
       },
       "original": {
@@ -1042,8 +1103,8 @@
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
-        "hashlib": "hashlib_7",
-        "libfuzzy": "libfuzzy_7",
+        "hashlib": "hashlib_8",
+        "libfuzzy": "libfuzzy_8",
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -1051,11 +1112,11 @@
       },
       "locked": {
         "dir": "v0_3_4",
-        "lastModified": 1668755905,
-        "narHash": "sha256-9j2PiBDz9EmD2E7WOpbo6aEqAPpkI2uZWK2tqv4mFrM=",
+        "lastModified": 1669432351,
+        "narHash": "sha256-nTmZG7pd6RprdP43GSjORvD4Fb9tPdzb2h+gFV5H9B8=",
         "owner": "nim-nix-pkgs",
         "repo": "libpe",
-        "rev": "0ee3b35fee1ef186f2319b24cfff90eb5e8f8a5a",
+        "rev": "1827872f542289aa63a566815de98ebf52212dd6",
         "type": "github"
       },
       "original": {
@@ -1071,8 +1132,8 @@
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
-        "hashlib": "hashlib_8",
-        "libfuzzy": "libfuzzy_8",
+        "hashlib": "hashlib_9",
+        "libfuzzy": "libfuzzy_9",
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -1080,11 +1141,11 @@
       },
       "locked": {
         "dir": "v0_3_5",
-        "lastModified": 1668755905,
-        "narHash": "sha256-9j2PiBDz9EmD2E7WOpbo6aEqAPpkI2uZWK2tqv4mFrM=",
+        "lastModified": 1669432351,
+        "narHash": "sha256-nTmZG7pd6RprdP43GSjORvD4Fb9tPdzb2h+gFV5H9B8=",
         "owner": "nim-nix-pkgs",
         "repo": "libpe",
-        "rev": "0ee3b35fee1ef186f2319b24cfff90eb5e8f8a5a",
+        "rev": "1827872f542289aa63a566815de98ebf52212dd6",
         "type": "github"
       },
       "original": {
@@ -1100,8 +1161,8 @@
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
-        "hashlib": "hashlib_9",
-        "libfuzzy": "libfuzzy_9",
+        "hashlib": "hashlib_10",
+        "libfuzzy": "libfuzzy_10",
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -1109,11 +1170,11 @@
       },
       "locked": {
         "dir": "v0_3_6",
-        "lastModified": 1668755905,
-        "narHash": "sha256-9j2PiBDz9EmD2E7WOpbo6aEqAPpkI2uZWK2tqv4mFrM=",
+        "lastModified": 1669432351,
+        "narHash": "sha256-nTmZG7pd6RprdP43GSjORvD4Fb9tPdzb2h+gFV5H9B8=",
         "owner": "nim-nix-pkgs",
         "repo": "libpe",
-        "rev": "0ee3b35fee1ef186f2319b24cfff90eb5e8f8a5a",
+        "rev": "1827872f542289aa63a566815de98ebf52212dd6",
         "type": "github"
       },
       "original": {
@@ -1127,16 +1188,47 @@
     "nimcrypto": {
       "inputs": {
         "flakeNimbleLib": [
-          "libpe-v0_2_0",
+          "libpe-master",
           "hashlib",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "libpe-v0_2_0",
+          "libpe-master",
           "hashlib",
           "nixpkgs"
         ],
         "src-nimcrypto-master": "src-nimcrypto-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1669431239,
+        "narHash": "sha256-xPnisrGeQKbdjQDI41S0QE5D6x5I6fZMYYNNXTqO93c=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimcrypto",
+        "rev": "bfb65b6479f1a364662ecbf46483c777bb3b2bf8",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimcrypto",
+        "type": "github"
+      }
+    },
+    "nimcrypto_10": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "libpe-v0_3_6",
+          "hashlib",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "libpe-v0_3_6",
+          "hashlib",
+          "nixpkgs"
+        ],
+        "src-nimcrypto-master": "src-nimcrypto-master_10"
       },
       "locked": {
         "dir": "master",
@@ -1158,12 +1250,12 @@
     "nimcrypto_2": {
       "inputs": {
         "flakeNimbleLib": [
-          "libpe-v0_2_1",
+          "libpe-v0_2_0",
           "hashlib",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "libpe-v0_2_1",
+          "libpe-v0_2_0",
           "hashlib",
           "nixpkgs"
         ],
@@ -1189,12 +1281,12 @@
     "nimcrypto_3": {
       "inputs": {
         "flakeNimbleLib": [
-          "libpe-v0_3_0",
+          "libpe-v0_2_1",
           "hashlib",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "libpe-v0_3_0",
+          "libpe-v0_2_1",
           "hashlib",
           "nixpkgs"
         ],
@@ -1220,12 +1312,12 @@
     "nimcrypto_4": {
       "inputs": {
         "flakeNimbleLib": [
-          "libpe-v0_3_1",
+          "libpe-v0_3_0",
           "hashlib",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "libpe-v0_3_1",
+          "libpe-v0_3_0",
           "hashlib",
           "nixpkgs"
         ],
@@ -1251,12 +1343,12 @@
     "nimcrypto_5": {
       "inputs": {
         "flakeNimbleLib": [
-          "libpe-v0_3_2",
+          "libpe-v0_3_1",
           "hashlib",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "libpe-v0_3_2",
+          "libpe-v0_3_1",
           "hashlib",
           "nixpkgs"
         ],
@@ -1282,12 +1374,12 @@
     "nimcrypto_6": {
       "inputs": {
         "flakeNimbleLib": [
-          "libpe-v0_3_3",
+          "libpe-v0_3_2",
           "hashlib",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "libpe-v0_3_3",
+          "libpe-v0_3_2",
           "hashlib",
           "nixpkgs"
         ],
@@ -1313,12 +1405,12 @@
     "nimcrypto_7": {
       "inputs": {
         "flakeNimbleLib": [
-          "libpe-v0_3_4",
+          "libpe-v0_3_3",
           "hashlib",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "libpe-v0_3_4",
+          "libpe-v0_3_3",
           "hashlib",
           "nixpkgs"
         ],
@@ -1344,12 +1436,12 @@
     "nimcrypto_8": {
       "inputs": {
         "flakeNimbleLib": [
-          "libpe-v0_3_5",
+          "libpe-v0_3_4",
           "hashlib",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "libpe-v0_3_5",
+          "libpe-v0_3_4",
           "hashlib",
           "nixpkgs"
         ],
@@ -1375,12 +1467,12 @@
     "nimcrypto_9": {
       "inputs": {
         "flakeNimbleLib": [
-          "libpe-v0_3_6",
+          "libpe-v0_3_5",
           "hashlib",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
-          "libpe-v0_3_6",
+          "libpe-v0_3_5",
           "hashlib",
           "nixpkgs"
         ],
@@ -1421,11 +1513,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1668681245,
-        "narHash": "sha256-IH8t+b9hCfNwEvdC55UEymn8jL457Fo/hx3N/kNTZso=",
+        "lastModified": 1669387357,
+        "narHash": "sha256-z1azVj/5Em5kGhh9OgBOsjTEgMab7hXL/aRilH9tzyI=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "bd4bfd814e96488febb38b4b4d0549c56b840c7f",
+        "rev": "55b3f68bda6d4f4dc6092eed0508063f154fa4fd",
         "type": "github"
       },
       "original": {
@@ -1455,6 +1547,23 @@
       }
     },
     "src-hashlib-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1620358621,
+        "narHash": "sha256-nWNThelCh0LPVU7ryZgS/23hRRvJDVL2xWbQibb+zN0=",
+        "owner": "khchen",
+        "repo": "hashlib",
+        "rev": "84e0247555e4488594975900401baaf5bbbfb531",
+        "type": "github"
+      },
+      "original": {
+        "owner": "khchen",
+        "ref": "refs/heads/master",
+        "repo": "hashlib",
+        "type": "github"
+      }
+    },
+    "src-hashlib-master_10": {
       "flake": false,
       "locked": {
         "lastModified": 1620358621,
@@ -1760,6 +1869,23 @@
         "type": "github"
       }
     },
+    "src-libfuzzy-v0_1_1_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1665000468,
+        "narHash": "sha256-8uzWqVYRvKkdeslbkMcIZ+BaKmyR5oFBVSoGZePDVO4=",
+        "owner": "srozb",
+        "repo": "nim-libfuzzy",
+        "rev": "362d39ac496754489e93dd441e3e7810a2ff91fa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "srozb",
+        "ref": "refs/tags/v0.1.1",
+        "repo": "nim-libfuzzy",
+        "type": "github"
+      }
+    },
     "src-libpe-master": {
       "flake": false,
       "locked": {
@@ -2016,6 +2142,23 @@
       }
     },
     "src-nimcrypto-master": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657063458,
+        "narHash": "sha256-KHCMS3ElOS0V3cBmsAuRZGivz8bq5WLUKZOHpg7/Kgg=",
+        "owner": "cheatfate",
+        "repo": "nimcrypto",
+        "rev": "24e006df85927f64916e60511620583b11403178",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cheatfate",
+        "ref": "refs/heads/master",
+        "repo": "nimcrypto",
+        "type": "github"
+      }
+    },
+    "src-nimcrypto-master_10": {
       "flake": false,
       "locked": {
         "lastModified": 1657063458,

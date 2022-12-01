@@ -24,7 +24,7 @@
   inputs."argparse".owner = "nim-nix-pkgs";
   inputs."argparse".ref   = "master";
   inputs."argparse".repo  = "argparse";
-  inputs."argparse".dir   = "v4_0_0";
+  inputs."argparse".dir   = "v4_0_1";
   inputs."argparse".type  = "github";
   inputs."argparse".inputs.nixpkgs.follows = "nixpkgs";
   inputs."argparse".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -32,7 +32,7 @@
   inputs."arraymancer".owner = "nim-nix-pkgs";
   inputs."arraymancer".ref   = "master";
   inputs."arraymancer".repo  = "arraymancer";
-  inputs."arraymancer".dir   = "v0_7_15";
+  inputs."arraymancer".dir   = "v0_7_16";
   inputs."arraymancer".type  = "github";
   inputs."arraymancer".inputs.nixpkgs.follows = "nixpkgs";
   inputs."arraymancer".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -248,7 +248,7 @@
   inputs."ggplotnim".owner = "nim-nix-pkgs";
   inputs."ggplotnim".ref   = "master";
   inputs."ggplotnim".repo  = "ggplotnim";
-  inputs."ggplotnim".dir   = "v0_5_4";
+  inputs."ggplotnim".dir   = "v0_5_8";
   inputs."ggplotnim".type  = "github";
   inputs."ggplotnim".inputs.nixpkgs.follows = "nixpkgs";
   inputs."ggplotnim".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -584,7 +584,7 @@
   inputs."npeg".owner = "nim-nix-pkgs";
   inputs."npeg".ref   = "master";
   inputs."npeg".repo  = "npeg";
-  inputs."npeg".dir   = "0_27_0";
+  inputs."npeg".dir   = "1_0_0";
   inputs."npeg".type  = "github";
   inputs."npeg".inputs.nixpkgs.follows = "nixpkgs";
   inputs."npeg".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -664,7 +664,7 @@
   inputs."prologue".owner = "nim-nix-pkgs";
   inputs."prologue".ref   = "master";
   inputs."prologue".repo  = "prologue";
-  inputs."prologue".dir   = "v0_6_2";
+  inputs."prologue".dir   = "v0_6_4";
   inputs."prologue".type  = "github";
   inputs."prologue".inputs.nixpkgs.follows = "nixpkgs";
   inputs."prologue".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
