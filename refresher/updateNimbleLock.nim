@@ -54,7 +54,7 @@ proc staticUrl(pkg: JsonNode, gitRef: string): seq[string] =
         tmpName
     nameLo  = name.toLower
     nameNN  = nameLo.replace("nim-", "")
-    uri     = pkg["url"].getStr.parseUri
+    uri     = pkg["url"].getStr.replace(".com:", ".com/").replace("git@", "https://").parseUri
     pth     = uri.path.replace(".git", "").strip(chars={'/'})
     subDir  =
       if uri.query.contains "subdir=":
@@ -113,7 +113,13 @@ proc staticUrl(pkg: JsonNode, gitRef: string): seq[string] =
       fmt"https://codeberg.org/{pth}/raw/{refTyp}/{tag}/{subDir}{nameLo}.nimble",
       fmt"https://codeberg.org/{pth}/raw/{refTyp}/{tag}/{subDir}{nameNN}.nimble"
     ]
-
+  if uri.hostname.contains "njoseph.me":
+    return @[
+      fmt"https://njoseph.me/{pth}.git/blob_plain/{gitRef}:/{subDir}nimble.lock",
+      fmt"https://njoseph.me/{pth}.git/blob_plain/{gitRef}:/{subDir}{name}.nimble",
+      fmt"https://njoseph.me/{pth}.git/blob_plain/{gitRef}:/{subDir}{nameLo}.nimble",
+      fmt"https://njoseph.me/{pth}.git/blob_plain/{gitRef}:/{subDir}{nameNN}.nimble"
+    ]
   let 
     tag    = gitRef.replace("refs/heads/", "").replace("refs/tags/", "")
   return @[
@@ -133,7 +139,7 @@ proc refName(refInfo: JsonNode): string =
 
 proc dirOf(pkg: JsonNode): string =
   let 
-    url  = pkg["url"].getStr.parseUri
+    url  = pkg["url"].getStr.replace(".com:", ".com/").replace("git@", "https://").parseUri
     name = pkg["name"].getStr.toLower
     pth  = url.path.splitFile[0].strip(chars={'/'})
   fmt"pkgslock/{url.hostname}/{pth}/{name}"
