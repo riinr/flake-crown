@@ -1,0 +1,46 @@
+{
+  "name": "ratel",
+  "version": "0.2.1",
+  "author": "Peter Munch-Ellingsen",
+  "desc": "Nim for microcontrollers",
+  "license": "MIT",
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [],
+  "installFiles": [],
+  "installExt": [
+    "nim"
+  ],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 1.6.4",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.6.4"
+      }
+    },
+    {
+      "name": "nimscripter",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
+    },
+    {
+      "name": "cligen",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
+    }
+  ],
+  "bin": [
+    "ratel"
+  ],
+  "binDir": "",
+  "srcDir": "src",
+  "backend": "c",
+  "ref": "refs/heads/master"
+}

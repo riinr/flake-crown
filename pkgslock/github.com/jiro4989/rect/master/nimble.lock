@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "packages": {
+    "unicodedb": {
+      "version": "0.11.1",
+      "vcsRevision": "7d3b449c44730804a3c9b4f4f3dbeca028212d05",
+      "url": "https://github.com/nitely/nim-unicodedb",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "83c3c2d4593df89a5ffc09a2b2d79b51cbc5007b"
+      }
+    },
+    "regex": {
+      "version": "0.20.0",
+      "vcsRevision": "ab98735539ddd8a1eaaa795fd2ca65293c1640b3",
+      "url": "https://github.com/nitely/nim-regex",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unicodedb"
+      ],
+      "checksums": {
+        "sha1": "28ffe0d41204273a97e16c231cb0ced1ad60ecbf"
+      }
+    },
+    "eastasianwidth": {
+      "version": "1.1.0",
+      "vcsRevision": "f277a3e2cf7261862900c381d4a8c3a978bb2704",
+      "url": "https://github.com/jiro4989/eastasianwidth",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "16026be66e552dc85360ebc87c017911f2cd13a2"
+      }
+    },
+    "docopt": {
+      "version": "0.7.0",
+      "vcsRevision": "d2ad95f4f95bae7d41493afa7a95c8aaab10b630",
+      "url": "https://github.com/docopt/docopt.nim",
+      "downloadMethod": "git",
+      "dependencies": [
+        "regex"
+      ],
+      "checksums": {
+        "sha1": "60fda67c990733c58ca227a09277c8e8e9dbfa70"
+      }
+    }
+  }
+}

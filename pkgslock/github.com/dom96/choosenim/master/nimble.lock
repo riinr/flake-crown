@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "packages": {
+    "nimble": {
+      "version": "0.12.0",
+      "vcsRevision": "8f7af860c5ce9634af880a7081c6435e1f2a5148",
+      "url": "https://github.com/nim-lang/nimble",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "7aa4f8f5d3b79013b9aa93f3069f4eaaebd24a48"
+      }
+    },
+    "zippy": {
+      "version": "0.10.4",
+      "vcsRevision": "17e23253693cf8e09683cd6088b18ebd2789245b",
+      "url": "https://github.com/guzba/zippy",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "be5f12785ba8e7f8b193de5abcc2707e534fbc54"
+      }
+    },
+    "isaac": {
+      "version": "0.1.3",
+      "vcsRevision": "45a5cbbd54ff59ba3ed94242620c818b9aad1b5b",
+      "url": "https://github.com/pragmagic/isaac/",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "05c3583a954715d84b0bf1be97f9a503249e9cdf"
+      }
+    },
+    "urlly": {
+      "version": "1.0.1",
+      "vcsRevision": "ec77b2c49a8d1918d27f2ef288da858957d49801",
+      "url": "https://github.com/treeform/urlly",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "8460d85e8c5ea6da152bea6a3f313c9b4e815778"
+      }
+    },
+    "libcurl": {
+      "version": "1.0.0",
+      "vcsRevision": "7a420498f60a31d99fc8513886ce36c4e8c3a4ae",
+      "url": "https://github.com/Araq/libcurl",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "07736a3c8817fefe865c3c658e3303f69e53f913"
+      }
+    },
+    "puppy": {
+      "version": "1.6.0",
+      "vcsRevision": "6ca68047194bae574dd50bb1bb708e26c426af47",
+      "url": "https://github.com/treeform/puppy",
+      "downloadMethod": "git",
+      "dependencies": [
+        "urlly",
+        "libcurl",
+        "zippy"
+      ],
+      "checksums": {
+        "sha1": "af5b9b87259b641df502b87d3e81436e98901319"
+      }
+    },
+    "uuids": {
+      "version": "0.1.11",
+      "vcsRevision": "8cb8720b567c6bcb261bd1c0f7491bdb5209ad06",
+      "url": "https://github.com/pragmagic/uuids/",
+      "downloadMethod": "git",
+      "dependencies": [
+        "isaac"
+      ],
+      "checksums": {
+        "sha1": "393f5fcefbc8ad3cf167e59760144208ff8f9f76"
+      }
+    },
+    "osinfo": {
+      "version": "0.3.2",
+      "vcsRevision": "574835154e48ee12dabc91a8ed052b7882cf9aa2",
+      "url": "https://github.com/nim-lang/osinfo.git",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "5d2a75ba4d33fe0e4c46e840fc02387a68db01d3"
+      }
+    },
+    "analytics": {
+      "version": "0.3.0",
+      "vcsRevision": "7bfefcfc0826c3137561902ae38fee9d48b49402",
+      "url": "https://github.com/dom96/analytics",
+      "downloadMethod": "git",
+      "dependencies": [
+        "uuids",
+        "osinfo",
+        "puppy"
+      ],
+      "checksums": {
+        "sha1": "0732e993a8dad3335b5c2e8f3eee9015b7e04374"
+      }
+    }
+  }
+}

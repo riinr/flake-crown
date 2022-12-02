@@ -1,0 +1,72 @@
+{
+  "name": "peni",
+  "version": "0.4.0",
+  "author": "srozb",
+  "desc": "PE tool based on libpe (with no S)",
+  "license": "MIT",
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [
+    "nim"
+  ],
+  "installDirs": [],
+  "installFiles": [],
+  "installExt": [],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 1.6.6",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.6.6"
+      }
+    },
+    {
+      "name": "libpe",
+      "str": ">= 0.3.4",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.3.4"
+      }
+    },
+    {
+      "name": "cligen",
+      "str": ">= 1.5.24",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.5.24"
+      }
+    },
+    {
+      "name": "nancy",
+      "str": ">= 0.1.0",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.1.0"
+      }
+    },
+    {
+      "name": "termstyle",
+      "str": ">= 0.1.0",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.1.0"
+      }
+    },
+    {
+      "name": "authenticode",
+      "str": ">= 0.1.1",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.1.1"
+      }
+    }
+  ],
+  "bin": [
+    "peni"
+  ],
+  "binDir": "release",
+  "srcDir": "src",
+  "backend": "c",
+  "ref": "refs/tags/v0.4.1"
+}

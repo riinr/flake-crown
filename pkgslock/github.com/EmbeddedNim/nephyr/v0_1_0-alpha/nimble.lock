@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "packages": {
+    "unittest2": {
+      "version": "0.0.5",
+      "vcsRevision": "da8398c45cafd5bd7772da1fc96e3924a18d3823",
+      "url": "https://github.com/status-im/nim-unittest2",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "b3f8493a4948989ef3e645a38b23aad77e851e26"
+      }
+    },
+    "stew": {
+      "version": "0.1.0",
+      "vcsRevision": "7184d2424dc3945657884646a72715d494917aad",
+      "url": "https://github.com/status-im/nim-stew",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unittest2"
+      ],
+      "checksums": {
+        "sha1": "f3125ed2fd126dfd3edbaea14275abd9fa57d703"
+      }
+    },
+    "progress": {
+      "version": "1.1.3",
+      "vcsRevision": "ef9406ff02d23499ae7c1a24aaa369a8c23cbce9",
+      "url": "https://github.com/euantorano/progress.nim",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "a7a7a2709980fb9cea97fef409e7a6629ec96dc9"
+      }
+    },
+    "msgpack4nim": {
+      "version": "0.3.1",
+      "vcsRevision": "472152dd56a8b282535647caeba4643f3c4992f8",
+      "url": "https://github.com/jangko/msgpack4nim",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "920c09058ca1db8a59eaf13ac1ea9c6504495a04"
+      }
+    },
+    "threading": {
+      "version": "0.1.0",
+      "vcsRevision": "49562fa0d393e765823b2ea96ca14fbb9889a566",
+      "url": "https://github.com/nim-lang/threading",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "d04764ce15e97a1e89bb92151405439900bf73bf"
+      }
+    },
+    "cligen": {
+      "version": "1.5.32",
+      "vcsRevision": "8fe620d7cd2fcae80c86db52f025e832d784cfeb",
+      "url": "https://github.com/c-blake/cligen.git",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "d7e5181fd0d428ac626abc7a3e4a3ba30026e4f6"
+      }
+    },
+    "persistent_enums": {
+      "version": "0.1.0",
+      "vcsRevision": "04eb935d339c90b4be264c1de67b9c27b06f5dad",
+      "url": "https://github.com/yglukhov/persistent_enums",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "0b6bfa0c8e9303f7cb3186eae8112ad764eafe25"
+      }
+    },
+    "mcu_utils": {
+      "version": "0.3.3",
+      "vcsRevision": "699a4aa077126f82b207657b63e43483519006ee",
+      "url": "https://github.com/EmbeddedNim/mcu_utils",
+      "downloadMethod": "git",
+      "dependencies": [
+        "threading",
+        "persistent_enums"
+      ],
+      "checksums": {
+        "sha1": "f7e969785a3219212a76dce58cb643fd3c5d8826"
+      }
+    },
+    "fastrpc": {
+      "version": "0.2.0",
+      "vcsRevision": "d0401b9440e1fdefc67b30c79af11d70011d689c",
+      "url": "https://github.com/EmbeddedNim/fast_rpc",
+      "downloadMethod": "git",
+      "dependencies": [
+        "stew",
+        "progress",
+        "msgpack4nim",
+        "threading",
+        "cligen",
+        "mcu_utils"
+      ],
+      "checksums": {
+        "sha1": "f9752eabcef247437c9a69770c205567048f85d3"
+      }
+    }
+  }
+}

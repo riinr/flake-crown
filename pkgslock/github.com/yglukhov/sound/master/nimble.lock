@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "packages": {
+    "wasmrt": {
+      "version": "0.1.0",
+      "vcsRevision": "9803d6bd0b9f0732afe768b2c1fe4ace971bd7df",
+      "url": "https://github.com/yglukhov/wasmrt",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "5c0646fe9463047bcb9ac91aaadd35bf6cdd2eb4"
+      }
+    },
+    "jsbind": {
+      "version": "0.1.1",
+      "vcsRevision": "f623de0db495ad7bcc948948e1fb38a090687834",
+      "url": "https://github.com/yglukhov/jsbind",
+      "downloadMethod": "git",
+      "dependencies": [
+        "wasmrt"
+      ],
+      "checksums": {
+        "sha1": "74d128e68fe77bb8020c23112464b3de116f10cb"
+      }
+    },
+    "jnim": {
+      "version": "0.5.1",
+      "vcsRevision": "68a9b21aa0b93ad77b390671325de3a77875c44a",
+      "url": "https://github.com/yglukhov/jnim",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "12537aa0d2820a5ba6971e0ea899e4470a04a874"
+      }
+    },
+    "android": {
+      "version": "0.1.0",
+      "vcsRevision": "f3b5b8aba7d1146ff1b5f866e073ea1086e760fa",
+      "url": "https://github.com/yglukhov/android.git",
+      "downloadMethod": "git",
+      "dependencies": [
+        "jnim"
+      ],
+      "checksums": {
+        "sha1": "5c67dff5b4148724a98c82cfcc8952c17ae41e30"
+      }
+    },
+    "async_http_request": {
+      "version": "0.1.4",
+      "vcsRevision": "351e68770aed11e4c22b8d3d1de1d0c35872a785",
+      "url": "https://github.com/yglukhov/async_http_request",
+      "downloadMethod": "git",
+      "dependencies": [
+        "jsbind"
+      ],
+      "checksums": {
+        "sha1": "2dd86115b232d5296d8f8d0a6eb0a1de05abae73"
+      }
+    }
+  }
+}

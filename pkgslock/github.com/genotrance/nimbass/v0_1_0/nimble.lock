@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "packages": {
+    "unicodedb": {
+      "version": "0.11.1",
+      "vcsRevision": "7d3b449c44730804a3c9b4f4f3dbeca028212d05",
+      "url": "https://github.com/nitely/nim-unicodedb",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "83c3c2d4593df89a5ffc09a2b2d79b51cbc5007b"
+      }
+    },
+    "regex": {
+      "version": "0.20.0",
+      "vcsRevision": "ab98735539ddd8a1eaaa795fd2ca65293c1640b3",
+      "url": "https://github.com/nitely/nim-regex",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unicodedb"
+      ],
+      "checksums": {
+        "sha1": "28ffe0d41204273a97e16c231cb0ced1ad60ecbf"
+      }
+    },
+    "c2nim": {
+      "version": "0.9.18",
+      "vcsRevision": "e0ae7240e624bfbd7a2b213318b36f113a13cdeb",
+      "url": "https://github.com/nim-lang/c2nim",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "7370b0909a554854f36a1248c6d03a4f309f661c"
+      }
+    },
+    "nimgen": {
+      "version": "0.3.0",
+      "vcsRevision": "dc9943a22c9c8f6a5a6a92f0055e1de4dfaf87d2",
+      "url": "https://github.com/genotrance/nimgen",
+      "downloadMethod": "git",
+      "dependencies": [
+        "c2nim",
+        "regex"
+      ],
+      "checksums": {
+        "sha1": "3a257c9d52962ec48a27b4477e02da36501ee285"
+      }
+    }
+  }
+}

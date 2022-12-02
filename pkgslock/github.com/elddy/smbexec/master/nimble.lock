@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "packages": {
+    "unicodedb": {
+      "version": "0.11.1",
+      "vcsRevision": "7d3b449c44730804a3c9b4f4f3dbeca028212d05",
+      "url": "https://github.com/nitely/nim-unicodedb",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "83c3c2d4593df89a5ffc09a2b2d79b51cbc5007b"
+      }
+    },
+    "nimcrypto": {
+      "version": "0.5.4",
+      "vcsRevision": "24e006df85927f64916e60511620583b11403178",
+      "url": "https://github.com/cheatfate/nimcrypto",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "a4db2105de265930f1578bb7957f49fa39b10d9b"
+      }
+    },
+    "hashlib": {
+      "version": "1.0.1",
+      "vcsRevision": "84e0247555e4488594975900401baaf5bbbfb531",
+      "url": "https://github.com/khchen/hashlib",
+      "downloadMethod": "git",
+      "dependencies": [
+        "nimcrypto"
+      ],
+      "checksums": {
+        "sha1": "22498f3ef7495a1962207bf7a66cd7970225d7a0"
+      }
+    },
+    "nimSHA2": {
+      "version": "0.1.1",
+      "vcsRevision": "b8f666069dff1ed0c5142dd1ca692f0e71434716",
+      "url": "https://github.com/jangko/nimSHA2",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "6765d9a04c328c64eb56b3fa90f45690294cc8fd"
+      }
+    },
+    "sha1": {
+      "version": "1.1",
+      "vcsRevision": "92ccc5800bb0ac4865b275a2ce3c1544e98b48bc",
+      "url": "https://github.com/onionhammer/sha1",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "2610d27cf248adf98fd9b86e906eb87781ba9d8c"
+      }
+    },
+    "hmac": {
+      "version": "0.2.0",
+      "vcsRevision": "371749453ed9800c72a7c7a251687d57b0c70430",
+      "url": "https://github.com/OpenSystemsLab/hmac.nim",
+      "downloadMethod": "git",
+      "dependencies": [
+        "nimSHA2",
+        "sha1",
+        "nimcrypto"
+      ],
+      "checksums": {
+        "sha1": "2daeda5b8608cccd644637122858d7445d0fb837"
+      }
+    },
+    "regex": {
+      "version": "0.20.0",
+      "vcsRevision": "ab98735539ddd8a1eaaa795fd2ca65293c1640b3",
+      "url": "https://github.com/nitely/nim-regex",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unicodedb"
+      ],
+      "checksums": {
+        "sha1": "28ffe0d41204273a97e16c231cb0ced1ad60ecbf"
+      }
+    }
+  }
+}

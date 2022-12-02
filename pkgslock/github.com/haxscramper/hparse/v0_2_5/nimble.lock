@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "packages": {
+    "benchy": {
+      "version": "0.0.1",
+      "vcsRevision": "280e64ed1324daaabe0456420a4fda588f7b3ae9",
+      "url": "https://github.com/treeform/benchy",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "57def54805ab56f94b69997dcd2b3f176f6fe851"
+      }
+    },
+    "jsony": {
+      "version": "1.1.3",
+      "vcsRevision": "2a2cc4331720b7695c8b66529dbfea6952727e7b",
+      "url": "https://github.com/treeform/jsony",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "3a1d109f9ac95c708549b976ceab7ace5b7ef558"
+      }
+    },
+    "unicodedb": {
+      "version": "0.11.1",
+      "vcsRevision": "7d3b449c44730804a3c9b4f4f3dbeca028212d05",
+      "url": "https://github.com/nitely/nim-unicodedb",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "83c3c2d4593df89a5ffc09a2b2d79b51cbc5007b"
+      }
+    },
+    "hmisc": {
+      "version": "0.14.6",
+      "vcsRevision": "4b316d9b59c6a64122bc310222bc66eefa068ce6",
+      "url": "https://github.com/haxscramper/hmisc",
+      "downloadMethod": "git",
+      "dependencies": [
+        "benchy",
+        "jsony",
+        "unicodedb"
+      ],
+      "checksums": {
+        "sha1": "024b64e8e8818388a83ca3c9f06c666360adec68"
+      }
+    },
+    "hdrawing": {
+      "version": "0.1.3",
+      "vcsRevision": "ef22931906eb23f18ef651701c9be7d8b1ca5b61",
+      "url": "https://github.com/haxscramper/hdrawing",
+      "downloadMethod": "git",
+      "dependencies": [
+        "hmisc"
+      ],
+      "checksums": {
+        "sha1": "2fb13bf736cb488b29934ca2aa9b82ad0aef221f"
+      }
+    },
+    "hnimast": {
+      "version": "0.4.2",
+      "vcsRevision": "19a04b87af2ae67b73af89cf1a4b939495e89a6a",
+      "url": "https://github.com/haxscramper/hnimast",
+      "downloadMethod": "git",
+      "dependencies": [
+        "hmisc"
+      ],
+      "checksums": {
+        "sha1": "ab53a93a2911399b8969aa0682d8e47dced82d2b"
+      }
+    },
+    "hpprint": {
+      "version": "0.2.18",
+      "vcsRevision": "05d5ef7f5676a9fd4652fedd0de61349f32fec36",
+      "url": "https://github.com/haxscramper/hpprint",
+      "downloadMethod": "git",
+      "dependencies": [
+        "hdrawing",
+        "hnimast",
+        "hmisc"
+      ],
+      "checksums": {
+        "sha1": "87fab610f89775eab34d178b71f217f04956a179"
+      }
+    },
+    "regex": {
+      "version": "0.20.0",
+      "vcsRevision": "ab98735539ddd8a1eaaa795fd2ca65293c1640b3",
+      "url": "https://github.com/nitely/nim-regex",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unicodedb"
+      ],
+      "checksums": {
+        "sha1": "28ffe0d41204273a97e16c231cb0ced1ad60ecbf"
+      }
+    },
+    "hasts": {
+      "version": "0.1.6",
+      "vcsRevision": "1edc57c9ce227f5584a5f2ef49517dad1a3f6698",
+      "url": "https://github.com/haxscramper/hasts",
+      "downloadMethod": "git",
+      "dependencies": [
+        "hmisc"
+      ],
+      "checksums": {
+        "sha1": "37f80469ed7e29a1f2e94ba9fe7708d0f47c19c8"
+      }
+    }
+  }
+}

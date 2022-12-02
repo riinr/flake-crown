@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "packages": {
+    "cairo": {
+      "version": "1.1.1",
+      "vcsRevision": "50ca8ed54554eae686024c0dc88490502af31cb8",
+      "url": "https://github.com/nim-lang/cairo",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "f2c13e59ce9658b2ae6fa0c89173f6012a23fafc"
+      }
+    },
+    "gtk2": {
+      "version": "1.4",
+      "vcsRevision": "f953f3a6a117e8a9dbdb5cc98adf564e6d8f6509",
+      "url": "https://github.com/nim-lang/gtk2",
+      "downloadMethod": "git",
+      "dependencies": [
+        "cairo"
+      ],
+      "checksums": {
+        "sha1": "8b0076e36dd4e9e2547d7cec6dc625ecc9337c43"
+      }
+    },
+    "fswatch": {
+      "version": "0.1.0",
+      "vcsRevision": "60d5190328d019cd53bc7ea58c3252db5036b4c7",
+      "url": "https://github.com/FedericoCeratto/nim-fswatch",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "68f1fc9e1435f5effe4338b2366911d372b38233"
+      }
+    },
+    "libnotify": {
+      "version": "0.0.2",
+      "vcsRevision": "c715ca5b23377a9bceba93529339526fbca11517",
+      "url": "https://github.com/FedericoCeratto/nim-libnotify.git",
+      "downloadMethod": "git",
+      "dependencies": [
+        "gtk2"
+      ],
+      "checksums": {
+        "sha1": "e2174bdce0fb07f90f181f03a1dd3193e9b72a03"
+      }
+    }
+  }
+}

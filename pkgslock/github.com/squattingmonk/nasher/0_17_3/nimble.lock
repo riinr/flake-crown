@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "packages": {
+    "unicodedb": {
+      "version": "0.11.1",
+      "vcsRevision": "7d3b449c44730804a3c9b4f4f3dbeca028212d05",
+      "url": "https://github.com/nitely/nim-unicodedb",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "83c3c2d4593df89a5ffc09a2b2d79b51cbc5007b"
+      }
+    },
+    "regex": {
+      "version": "0.20.0",
+      "vcsRevision": "ab98735539ddd8a1eaaa795fd2ca65293c1640b3",
+      "url": "https://github.com/nitely/nim-regex",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unicodedb"
+      ],
+      "checksums": {
+        "sha1": "28ffe0d41204273a97e16c231cb0ced1ad60ecbf"
+      }
+    },
+    "docopt": {
+      "version": "0.7.0",
+      "vcsRevision": "d2ad95f4f95bae7d41493afa7a95c8aaab10b630",
+      "url": "https://github.com/docopt/docopt.nim",
+      "downloadMethod": "git",
+      "dependencies": [
+        "regex"
+      ],
+      "checksums": {
+        "sha1": "60fda67c990733c58ca227a09277c8e8e9dbfa70"
+      }
+    },
+    "neverwinter": {
+      "version": "1.5.8",
+      "vcsRevision": "7c902ddaae332f23c652da30701a254632a74cf6",
+      "url": "https://github.com/niv/neverwinter.nim",
+      "downloadMethod": "git",
+      "dependencies": [
+        "docopt"
+      ],
+      "checksums": {
+        "sha1": "0bd8911ee46688f8c4d91877a18be525bb3a23e3"
+      }
+    },
+    "nwnt": {
+      "version": "1.3.3",
+      "vcsRevision": "bb94e1f98e8601a485680851ce5206194f7670f5",
+      "url": "https://github.com/WilliamDraco/NWNT",
+      "downloadMethod": "git",
+      "dependencies": [
+        "neverwinter",
+        "docopt"
+      ],
+      "checksums": {
+        "sha1": "2cff455689c736a2b560efcf0cdbe8d3cf5f7cc9"
+      }
+    },
+    "glob": {
+      "version": "0.11.2",
+      "vcsRevision": "286726e26ed9c4203bf41e6f1c41d2f0bc947122",
+      "url": "https://github.com/haltcase/glob",
+      "downloadMethod": "git",
+      "dependencies": [
+        "regex"
+      ],
+      "checksums": {
+        "sha1": "0e383626b94a7f8b9fcd9d0575bb3c2bfca63488"
+      }
+    }
+  }
+}

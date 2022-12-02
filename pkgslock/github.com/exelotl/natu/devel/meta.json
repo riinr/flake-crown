@@ -1,0 +1,45 @@
+{
+  "name": "natu",
+  "version": "0.1.2",
+  "author": "exelotl",
+  "desc": "Game Boy Advance development library",
+  "license": "zlib",
+  "skipDirs": [
+    "examples"
+  ],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [
+    "vendor"
+  ],
+  "installFiles": [],
+  "installExt": [
+    "nim"
+  ],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 1.4.2",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.4.2"
+      }
+    },
+    {
+      "name": "trick",
+      "str": ">= 0.1.4",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.1.4"
+      }
+    }
+  ],
+  "bin": [
+    "mmutil",
+    "natu"
+  ],
+  "binDir": "",
+  "srcDir": "",
+  "backend": "c",
+  "ref": "refs/heads/devel"
+}

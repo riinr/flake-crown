@@ -1,0 +1,48 @@
+{
+  "name": "fushin",
+  "version": "0.0.0",
+  "author": "eggplants",
+  "desc": "Fetch fushinsha serif data and save as csv files",
+  "license": "MIT",
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [],
+  "installFiles": [],
+  "installExt": [
+    "nim"
+  ],
+  "requires": [
+    {
+      "name": "cligen",
+      "str": ">= 1.5.24",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.5.24"
+      }
+    },
+    {
+      "name": "nim",
+      "str": ">= 1.6.6",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.6.6"
+      }
+    },
+    {
+      "name": "nimquery",
+      "str": ">= 2.0.0",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "2.0.0"
+      }
+    }
+  ],
+  "bin": [
+    "fushin"
+  ],
+  "binDir": "",
+  "srcDir": "src",
+  "backend": "c",
+  "ref": "refs/heads/master"
+}

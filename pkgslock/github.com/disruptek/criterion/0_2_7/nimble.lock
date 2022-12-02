@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "packages": {
+    "grok": {
+      "version": "0.6.3",
+      "vcsRevision": "20ded552bba7b835b00571c9aa33f4f82067d4f0",
+      "url": "https://github.com/disruptek/grok",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "8ef6ba7df78cba000d5c0fdb99871bbecbbecd12"
+      }
+    },
+    "npeg": {
+      "version": "0.27.0",
+      "vcsRevision": "4d0fc9b2c01c2d9e3582a916a09a139a3bc43e6e",
+      "url": "https://github.com/zevv/npeg",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "0b9a9283eb524e43afe625c845403cce60ee3472"
+      }
+    },
+    "ups": {
+      "version": "0.0.7",
+      "vcsRevision": "afd93b80bd8c7c1a786b0f649240797cc0f6b538",
+      "url": "https://github.com/disruptek/ups",
+      "downloadMethod": "git",
+      "dependencies": [
+        "npeg"
+      ],
+      "checksums": {
+        "sha1": "5295782a2d168ce6fd98745eaef2044867e91411"
+      }
+    },
+    "balls": {
+      "version": "2.7.0",
+      "vcsRevision": "abd093dba3a2e2d81b30da124fbec48cdaef9521",
+      "url": "https://github.com/disruptek/balls",
+      "downloadMethod": "git",
+      "dependencies": [
+        "grok",
+        "ups"
+      ],
+      "checksums": {
+        "sha1": "76d6b4f9caab296a8cf1ce50548bb451a5c3d1d2"
+      }
+    }
+  }
+}

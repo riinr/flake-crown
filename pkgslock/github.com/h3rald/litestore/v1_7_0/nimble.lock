@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "packages": {
+    "unittest2": {
+      "version": "0.0.5",
+      "vcsRevision": "da8398c45cafd5bd7772da1fc96e3924a18d3823",
+      "url": "https://github.com/status-im/nim-unittest2",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "b3f8493a4948989ef3e645a38b23aad77e851e26"
+      }
+    },
+    "bearssl": {
+      "version": "0.2.0",
+      "vcsRevision": "d0271920a734b8c02186785390e2fdf56624790b",
+      "url": "https://github.com/status-im/nim-bearssl",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unittest2"
+      ],
+      "checksums": {
+        "sha1": "37b69817fef413cd74094bcb00c365d7e98b3890"
+      }
+    },
+    "bearssl_pkey_decoder": {
+      "version": "0.1.0",
+      "vcsRevision": "fd2bc29d1283eb5d988a5c8a5660c1be9b9265f8",
+      "url": "https://github.com/yglukhov/bearssl_pkey_decoder",
+      "downloadMethod": "git",
+      "dependencies": [
+        "bearssl"
+      ],
+      "checksums": {
+        "sha1": "1db838bf5cc7e54228cf647b847eb1cb06349c64"
+      }
+    },
+    "jwt": {
+      "version": "0.2",
+      "vcsRevision": "adb9a46621813fbac7bed51db65f08078307a995",
+      "url": "https://github.com/yglukhov/nim-jwt.git",
+      "downloadMethod": "git",
+      "dependencies": [
+        "bearssl",
+        "bearssl_pkey_decoder"
+      ],
+      "checksums": {
+        "sha1": "a0c6845f63fc4ee24c3da59e517880a205163b62"
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "packages": {
+    "cairo": {
+      "version": "1.1.1",
+      "vcsRevision": "50ca8ed54554eae686024c0dc88490502af31cb8",
+      "url": "https://github.com/nim-lang/cairo",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "f2c13e59ce9658b2ae6fa0c89173f6012a23fafc"
+      }
+    },
+    "gtk2": {
+      "version": "1.4",
+      "vcsRevision": "f953f3a6a117e8a9dbdb5cc98adf564e6d8f6509",
+      "url": "https://github.com/nim-lang/gtk2",
+      "downloadMethod": "git",
+      "dependencies": [
+        "cairo"
+      ],
+      "checksums": {
+        "sha1": "8b0076e36dd4e9e2547d7cec6dc625ecc9337c43"
+      }
+    },
+    "dialogs": {
+      "version": "1.1.1",
+      "vcsRevision": "177b776f60255c3be8c38586be5f89c53d867e1a",
+      "url": "https://github.com/nim-lang/dialogs",
+      "downloadMethod": "git",
+      "dependencies": [
+        "gtk2"
+      ],
+      "checksums": {
+        "sha1": "b33dc5fbea8fa5d199da736e24deeb0ad535bf22"
+      }
+    }
+  }
+}

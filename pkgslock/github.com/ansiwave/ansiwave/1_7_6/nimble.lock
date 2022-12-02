@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "packages": {
+    "ansiutils": {
+      "version": "0.1.0",
+      "vcsRevision": "fc681228ecb51d82cfb65bb2c7fe47d90823321b",
+      "url": "https://github.com/ansiwave/ansiutils",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "7d215427d82912b585645ed7e4db28dbf5ecae36"
+      }
+    },
+    "illwave": {
+      "version": "0.5.0",
+      "vcsRevision": "9518433992ce89071942e77fbc00cafd3c913638",
+      "url": "https://github.com/ansiwave/illwave",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "b9219f06fc11c7ad32e5ae93f8110737a9a86afa"
+      }
+    },
+    "nimwave": {
+      "version": "0.8.0",
+      "vcsRevision": "4f1088406656feb3bf931e3b2f23ecbca702abd8",
+      "url": "https://github.com/ansiwave/nimwave",
+      "downloadMethod": "git",
+      "dependencies": [
+        "ansiutils",
+        "illwave"
+      ],
+      "checksums": {
+        "sha1": "ae83b52bee18b8859d2da6e4628f09650ce19d11"
+      }
+    },
+    "urlly": {
+      "version": "1.0.1",
+      "vcsRevision": "ec77b2c49a8d1918d27f2ef288da858957d49801",
+      "url": "https://github.com/treeform/urlly",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "8460d85e8c5ea6da152bea6a3f313c9b4e815778"
+      }
+    },
+    "libcurl": {
+      "version": "1.0.0",
+      "vcsRevision": "7a420498f60a31d99fc8513886ce36c4e8c3a4ae",
+      "url": "https://github.com/Araq/libcurl",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "07736a3c8817fefe865c3c658e3303f69e53f913"
+      }
+    },
+    "zippy": {
+      "version": "0.10.4",
+      "vcsRevision": "17e23253693cf8e09683cd6088b18ebd2789245b",
+      "url": "https://github.com/guzba/zippy",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "be5f12785ba8e7f8b193de5abcc2707e534fbc54"
+      }
+    },
+    "puppy": {
+      "version": "1.6.0",
+      "vcsRevision": "6ca68047194bae574dd50bb1bb708e26c426af47",
+      "url": "https://github.com/treeform/puppy",
+      "downloadMethod": "git",
+      "dependencies": [
+        "urlly",
+        "libcurl",
+        "zippy"
+      ],
+      "checksums": {
+        "sha1": "af5b9b87259b641df502b87d3e81436e98901319"
+      }
+    },
+    "flatty": {
+      "version": "0.3.4",
+      "vcsRevision": "07f6ba8ab96238e5bd1264cf0cea1d1746abb00c",
+      "url": "https://github.com/treeform/flatty",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "5775e6ea6ca339efc5bd37b082b8294342d49dc5"
+      }
+    },
+    "paramidi": {
+      "version": "0.6.0",
+      "vcsRevision": "9133bdf9819fd08fff113169fa28f90bbed2a601",
+      "url": "https://github.com/paranim/paramidi",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "3a9a859c4f6fe9cd9f3dc37f312d87e52fc7ef93"
+      }
+    },
+    "threading": {
+      "version": "0.1.0",
+      "vcsRevision": "49562fa0d393e765823b2ea96ca14fbb9889a566",
+      "url": "https://github.com/nim-lang/threading",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "d04764ce15e97a1e89bb92151405439900bf73bf"
+      }
+    },
+    "wavecore": {
+      "version": "0.7.1",
+      "vcsRevision": "30c11abb36aa584921585253278b1547c69994f7",
+      "url": "https://github.com/ansiwave/wavecore",
+      "downloadMethod": "git",
+      "dependencies": [
+        "urlly",
+        "puppy",
+        "flatty",
+        "paramidi",
+        "threading",
+        "ansiutils"
+      ],
+      "checksums": {
+        "sha1": "044c40c927401aede350031e0fc6b71e53eb5aed"
+      }
+    },
+    "paramidi_soundfonts": {
+      "version": "0.2.0",
+      "vcsRevision": "4bf5402917cdb81bbb1f6db9b5fe2fa663505841",
+      "url": "https://github.com/paranim/paramidi_soundfonts",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "9d2921f4ee85d0e20ff03ebfe6476a0d62e1a0e7"
+      }
+    },
+    "parasound": {
+      "version": "1.0.0",
+      "vcsRevision": "bccc7d37501225a4d6e7c806c81ed08f7a5bb72e",
+      "url": "https://github.com/paranim/parasound",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "859d023f4d93bbf08d2c6728efec1a5987dd6b7e"
+      }
+    },
+    "stb_image": {
+      "version": "2.5",
+      "vcsRevision": "ba5f45286bfa9bed93d8d6b941949cd6218ec888",
+      "url": "https://gitlab.com/define-private-public/stb_image-Nim.git",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "abf5fd03e72ee4c316c50a0538b973e355dcb175"
+      }
+    },
+    "chrono": {
+      "version": "0.3.0",
+      "vcsRevision": "9b9e622a54378b3dfb972f347fecbf3141c72e42",
+      "url": "https://github.com/treeform/chrono",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "c86ebad97436660f423cd1d14b3e48cb4f2c375c"
+      }
+    },
+    "pararules": {
+      "version": "1.1.0",
+      "vcsRevision": "d23c174ce31b437509b9a359a2430031393af5cc",
+      "url": "https://github.com/paranim/pararules",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "19dbcf51de43e53a08ace0ea0661db85c99a34e4"
+      }
+    }
+  }
+}

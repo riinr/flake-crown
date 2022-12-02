@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "packages": {
+    "upraises": {
+      "version": "0.1.0",
+      "vcsRevision": "d9f268db1021959fe0f2c7a5e49fba741f9932a0",
+      "url": "https://github.com/markspanbroek/upraises",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "176234f808b44a0be763df706ed634d6e8df17bb"
+      }
+    },
+    "unittest2": {
+      "version": "0.0.5",
+      "vcsRevision": "da8398c45cafd5bd7772da1fc96e3924a18d3823",
+      "url": "https://github.com/status-im/nim-unittest2",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "b3f8493a4948989ef3e645a38b23aad77e851e26"
+      }
+    },
+    "stew": {
+      "version": "0.1.0",
+      "vcsRevision": "7184d2424dc3945657884646a72715d494917aad",
+      "url": "https://github.com/status-im/nim-stew",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unittest2"
+      ],
+      "checksums": {
+        "sha1": "f3125ed2fd126dfd3edbaea14275abd9fa57d703"
+      }
+    },
+    "stint": {
+      "version": "0.0.1",
+      "vcsRevision": "f36623998fdc20349b887b319ca12d8b5a056459",
+      "url": "https://github.com/status-im/nim-stint",
+      "downloadMethod": "git",
+      "dependencies": [
+        "stew"
+      ],
+      "checksums": {
+        "sha1": "70a1ab1e0cd0b9aa2ed8005a0a639cc3c5539db6"
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "packages": {
+    "tempfile": {
+      "version": "0.1.7",
+      "vcsRevision": "26e0239441755e5edcfd170e9aa566bb9c9eb6f3",
+      "url": "https://github.com/OpenSystemsLab/tempfile.nim",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "d7c473819bbf0e38cad32e00598bd42366606e08"
+      }
+    },
+    "ranges": {
+      "version": "0.0.1",
+      "vcsRevision": "54792c5a26858b20a331f0ae38c18f21811b4b5c",
+      "url": "https://github.com/status-im/nim-ranges",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "699168611fb276c8d9facbd7c2a55dab196fa07a"
+      }
+    },
+    "rlp": {
+      "version": "1.0.1",
+      "vcsRevision": "1aab36302866ca8f50a98333663a1b9f1f9ff32b",
+      "url": "https://github.com/status-im/nim-rlp",
+      "downloadMethod": "git",
+      "dependencies": [
+        "ranges"
+      ],
+      "checksums": {
+        "sha1": "cbf148b85f8f3c5d942e0da1fbe6ae2ee9cb4bd7"
+      }
+    },
+    "byteutils": {
+      "version": "0.0.1",
+      "vcsRevision": "69ce66ef434b03cf8938be8aa5c658982aeccb40",
+      "url": "https://github.com/status-im/nim-byteutils",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "2701b5530a1abd424d9e27537e82ec12923cb074"
+      }
+    },
+    "unittest2": {
+      "version": "0.0.5",
+      "vcsRevision": "da8398c45cafd5bd7772da1fc96e3924a18d3823",
+      "url": "https://github.com/status-im/nim-unittest2",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "b3f8493a4948989ef3e645a38b23aad77e851e26"
+      }
+    },
+    "stew": {
+      "version": "0.1.0",
+      "vcsRevision": "7184d2424dc3945657884646a72715d494917aad",
+      "url": "https://github.com/status-im/nim-stew",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unittest2"
+      ],
+      "checksums": {
+        "sha1": "f3125ed2fd126dfd3edbaea14275abd9fa57d703"
+      }
+    },
+    "stint": {
+      "version": "0.0.1",
+      "vcsRevision": "f36623998fdc20349b887b319ca12d8b5a056459",
+      "url": "https://github.com/status-im/nim-stint",
+      "downloadMethod": "git",
+      "dependencies": [
+        "stew"
+      ],
+      "checksums": {
+        "sha1": "70a1ab1e0cd0b9aa2ed8005a0a639cc3c5539db6"
+      }
+    },
+    "rocksdb": {
+      "version": "0.3.1",
+      "vcsRevision": "b7f07282251b043fa07fc071405727dd17c61654",
+      "url": "https://github.com/status-im/nim-rocksdb",
+      "downloadMethod": "git",
+      "dependencies": [
+        "stew",
+        "tempfile"
+      ],
+      "checksums": {
+        "sha1": "cf000baf91bbd278f94d01d4b138119bac8e2c9d"
+      }
+    },
+    "nimcrypto": {
+      "version": "0.5.4",
+      "vcsRevision": "24e006df85927f64916e60511620583b11403178",
+      "url": "https://github.com/cheatfate/nimcrypto",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "a4db2105de265930f1578bb7957f49fa39b10d9b"
+      }
+    },
+    "eth_trie": {
+      "version": "1.0.0",
+      "vcsRevision": "d4175803b26540e880aef0e9c0e3df1604a77be9",
+      "url": "https://github.com/status-im/nim-eth-trie",
+      "downloadMethod": "git",
+      "dependencies": [
+        "rlp",
+        "nimcrypto",
+        "ranges",
+        "rocksdb"
+      ],
+      "checksums": {
+        "sha1": "d89c650b74fa709a5860fbecb32fd91bad69fee9"
+      }
+    }
+  }
+}

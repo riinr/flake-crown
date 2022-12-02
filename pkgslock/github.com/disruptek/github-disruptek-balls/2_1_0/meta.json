@@ -1,0 +1,57 @@
+{
+  "name": "balls",
+  "version": "2.1.0",
+  "author": "disruptek",
+  "desc": "a unittest framework with balls 🔴🟡🟢",
+  "license": "MIT",
+  "skipDirs": [
+    "tests"
+  ],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [],
+  "installFiles": [],
+  "installExt": [
+    "nim"
+  ],
+  "requires": [
+    {
+      "name": "https://github.com/disruptek/grok",
+      "str": ">= 0.3.0 & < 1.0.0",
+      "ver": {
+        "kind": "verIntersect",
+        "verILeft": {
+          "kind": "verEqLater",
+          "ver": "0.3.0"
+        },
+        "verIRight": {
+          "kind": "verEarlier",
+          "ver": "1.0.0"
+        }
+      }
+    },
+    {
+      "name": "https://github.com/disruptek/ups",
+      "str": "< 1.0.0",
+      "ver": {
+        "kind": "verEarlier",
+        "ver": "1.0.0"
+      }
+    },
+    {
+      "name": "https://github.com/xmonader/nim-terminaltables",
+      "str": "#37981f5d403fb55688e00d24ab9b1d56e252f52b",
+      "ver": {
+        "kind": "verSpecial",
+        "spe": "#37981f5d403fb55688e00d24ab9b1d56e252f52b"
+      }
+    }
+  ],
+  "bin": [
+    "balls"
+  ],
+  "binDir": "",
+  "srcDir": "",
+  "backend": "c",
+  "ref": "refs/tags/2.1.0"
+}

@@ -1,0 +1,81 @@
+{
+  "name": "mt",
+  "version": "0.2.0",
+  "author": "eqf0",
+  "desc": "simple TLDR pages client",
+  "license": "MIT",
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [
+    "nim"
+  ],
+  "installDirs": [
+    "mt"
+  ],
+  "installFiles": [
+    "mt.nim"
+  ],
+  "installExt": [],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 1.7.1",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.7.1"
+      }
+    },
+    {
+      "name": "zip",
+      "str": ">= 0.3.0 & < 1.0.0",
+      "ver": {
+        "kind": "verIntersect",
+        "verILeft": {
+          "kind": "verEqLater",
+          "ver": "0.3.0"
+        },
+        "verIRight": {
+          "kind": "verEarlier",
+          "ver": "1.0.0"
+        }
+      }
+    },
+    {
+      "name": "argparse",
+      "str": ">= 3.0.0 & < 4.0.0",
+      "ver": {
+        "kind": "verIntersect",
+        "verILeft": {
+          "kind": "verEqLater",
+          "ver": "3.0.0"
+        },
+        "verIRight": {
+          "kind": "verEarlier",
+          "ver": "4.0.0"
+        }
+      }
+    },
+    {
+      "name": "https://github.com/disruptek/cutelog",
+      "str": ">= 2.0.0 & < 3.0.0",
+      "ver": {
+        "kind": "verIntersect",
+        "verILeft": {
+          "kind": "verEqLater",
+          "ver": "2.0.0"
+        },
+        "verIRight": {
+          "kind": "verEarlier",
+          "ver": "3.0.0"
+        }
+      }
+    }
+  ],
+  "bin": [
+    "tldr"
+  ],
+  "binDir": "",
+  "srcDir": "",
+  "backend": "c",
+  "ref": "refs/tags/0.2.0"
+}

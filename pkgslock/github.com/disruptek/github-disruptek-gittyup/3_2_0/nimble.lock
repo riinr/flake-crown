@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "packages": {
+    "sync": {
+      "version": "1.5.0",
+      "vcsRevision": "9b8c2926286377aeca0cc41cd313eaf140ecea64",
+      "url": "https://github.com/planetis-m/sync",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "fb5b6a024c16e59a1acf4f36743d3b233e14e038"
+      }
+    },
+    "hlibssh2": {
+      "version": "0.1.5",
+      "vcsRevision": "2285da912acdb7b3a7459fe5b40d4cba223e8fa5",
+      "url": "https://github.com/haxscramper/hlibssh2.git",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "ab236d3191f5dab0b587423dfeebf2aca17c1407"
+      }
+    },
+    "hlibgit2": {
+      "version": "0.1.6",
+      "vcsRevision": "8c0547981e0d0900d58bcf4a7c7eefddaebd74a5",
+      "url": "https://github.com/haxscramper/hlibgit2",
+      "downloadMethod": "git",
+      "dependencies": [
+        "hlibssh2"
+      ],
+      "checksums": {
+        "sha1": "6d6ceeebacd594f1423ec28c54fb201c8f6d8b70"
+      }
+    },
+    "npeg": {
+      "version": "0.27.0",
+      "vcsRevision": "4d0fc9b2c01c2d9e3582a916a09a139a3bc43e6e",
+      "url": "https://github.com/zevv/npeg",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "0b9a9283eb524e43afe625c845403cce60ee3472"
+      }
+    },
+    "ups": {
+      "version": "0.0.7",
+      "vcsRevision": "afd93b80bd8c7c1a786b0f649240797cc0f6b538",
+      "url": "https://github.com/disruptek/ups",
+      "downloadMethod": "git",
+      "dependencies": [
+        "npeg"
+      ],
+      "checksums": {
+        "sha1": "5295782a2d168ce6fd98745eaef2044867e91411"
+      }
+    },
+    "grok": {
+      "version": "0.6.3",
+      "vcsRevision": "20ded552bba7b835b00571c9aa33f4f82067d4f0",
+      "url": "https://github.com/disruptek/grok",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "8ef6ba7df78cba000d5c0fdb99871bbecbbecd12"
+      }
+    },
+    "balls": {
+      "version": "3.7.2",
+      "vcsRevision": "b44a94b093f3680db44529251db419061dcca8b6",
+      "url": "https://github.com/disruptek/balls",
+      "downloadMethod": "git",
+      "dependencies": [
+        "grok",
+        "ups",
+        "sync"
+      ],
+      "checksums": {
+        "sha1": "6da0637486e085a12288e96bd144efdbceea8c9a"
+      }
+    },
+    "badresults": {
+      "version": "2.1.4",
+      "vcsRevision": "283f99881a8d2e6e8f3eec0944eaadabbcdf5851",
+      "url": "https://github.com/disruptek/badresults",
+      "downloadMethod": "git",
+      "dependencies": [
+        "balls"
+      ],
+      "checksums": {
+        "sha1": "250e3b54605b973f786cdeb4ff74961b33086efb"
+      }
+    }
+  }
+}

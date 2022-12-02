@@ -6,10 +6,19 @@ let
   GLOB_HEAD   = "${GLOB}/*/*/[a-zA-Z_][a-zA-Z_]*";
   GLOB_PROJS  = "${GLOB}/*/*";
   GLOB_TAG    = "${GLOB}/*/*/[0-9vV][0-9_]*";
-  nimble      = pkgs.runCommand "nimblePKG" {} ''
+  compiler    = pkgs.runCommand "compilerPKG" {} ''
+    mkdir -p $out/
+    cp -r ${inputs.nim-src or ./.}/compiler $out/compiler
+  '';
+  nimbleDep   = pkgs.runCommand "nimblePKG" {} ''
     mkdir -p $out/
     cp -r ${inputs.nimble-src or ./.}/src/nimblepkg $out/nimblepkg
   '';
+  nimbleDev   = pkgs.nimPackages.buildNimPackage {
+    pname = "nimble-master";
+    version = "0.13.0-master";
+    src = inputs.nimble-src;
+  };
 in
 {
   imports = [ ./packages_other.nix ./alias_other.nix ./nix_deps.nix ./stats.nix ];
@@ -17,12 +26,14 @@ in
   files.gitignore.pattern."result"           = true;
   files.gitignore.pattern."result-*"         = true;
   files.gitignore.pattern.".*"               = true;
+  files.gitignore.pattern.".nimble"          = true;
   files.gitignore.enable      = true;
   files.cmds.gcc              = true;
   files.cmds.git              = true;
   files.cmds.jq               = true;
   files.cmds.yj               = true;
   files.cmds.graphviz         = true;
+  files.alias.nimble-locker   = "${nimbleDev}/bin/nimble $@";
   files.alias.bin-results     = "find -L ${GLOB_PROJS} -type f -wholename '*/bin/*'";
   files.alias.pkg-descr       = "cat `pkg-dir $1`/meta.json|jq '.description'";
   files.alias.pkg-dir         = "echo ${GLOB}/`echo $1|cut -c1`/$1";
@@ -100,7 +111,8 @@ in
   '';
   files.nim.depWeight   = builtins.readFile ./depWeight.nim;
   files.nim.outprofiler = builtins.readFile ./outprofiler.nim;
-  files.nim.updateFlake = { src = builtins.readFile ./updateFlake.nim; deps = [ nimble ]; };
+  files.nim.updateFlake = { src = builtins.readFile ./updateFlake.nim; deps = [ nimbleDep ]; };
+  files.nim.updateNimbleLock = { src = builtins.readFile ./updateNimbleLock.nim; deps = [ compiler nimbleDep ]; };
   files.nim.updateLock  = builtins.readFile ./updateLock.nim;
   files.nim.updateMeta  = builtins.readFile ./updateMeta.nim;
   files.nim.depDots     = builtins.readFile ./depDots.nim;

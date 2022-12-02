@@ -1,0 +1,43 @@
+{
+  "name": "union",
+  "version": "0.1.2",
+  "author": "Leorize",
+  "desc": "Anonymous unions in Nim",
+  "license": "MIT",
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [],
+  "installFiles": [],
+  "installExt": [],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 1.5.1",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.5.1"
+      }
+    },
+    {
+      "name": "https://github.com/disruptek/balls",
+      "str": ">= 3.0.0 & < 4.0.0",
+      "ver": {
+        "kind": "verIntersect",
+        "verILeft": {
+          "kind": "verEqLater",
+          "ver": "3.0.0"
+        },
+        "verIRight": {
+          "kind": "verEarlier",
+          "ver": "4.0.0"
+        }
+      }
+    }
+  ],
+  "bin": [],
+  "binDir": "",
+  "srcDir": "",
+  "backend": "c",
+  "ref": "refs/heads/main"
+}

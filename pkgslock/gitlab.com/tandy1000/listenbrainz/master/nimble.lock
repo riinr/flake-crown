@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "packages": {
+    "sync": {
+      "version": "1.5.0",
+      "vcsRevision": "9b8c2926286377aeca0cc41cd313eaf140ecea64",
+      "url": "https://github.com/planetis-m/sync",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "fb5b6a024c16e59a1acf4f36743d3b233e14e038"
+      }
+    },
+    "asyncutils": {
+      "version": "0.1.0",
+      "vcsRevision": "75c968a7ccbe87aae515f2b9a59d9b22b1fb6aa2",
+      "url": "https://github.com/tandy-1000/asyncutils",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "6a30b8290972c554082107d02427bee95c96ffbc"
+      }
+    },
+    "jspf": {
+      "version": "0.1.0",
+      "vcsRevision": "7ae540bdeaef0d1cae5cb591ab80f581b0a06b6b",
+      "url": "https://github.com/tandy-1000/jspf-nim",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "0d9c4bacd0d199182af6deac45ba7fd70ea2c88b"
+      }
+    },
+    "grok": {
+      "version": "0.6.3",
+      "vcsRevision": "20ded552bba7b835b00571c9aa33f4f82067d4f0",
+      "url": "https://github.com/disruptek/grok",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "8ef6ba7df78cba000d5c0fdb99871bbecbbecd12"
+      }
+    },
+    "npeg": {
+      "version": "0.27.0",
+      "vcsRevision": "4d0fc9b2c01c2d9e3582a916a09a139a3bc43e6e",
+      "url": "https://github.com/zevv/npeg",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "0b9a9283eb524e43afe625c845403cce60ee3472"
+      }
+    },
+    "ups": {
+      "version": "0.0.7",
+      "vcsRevision": "afd93b80bd8c7c1a786b0f649240797cc0f6b538",
+      "url": "https://github.com/disruptek/ups",
+      "downloadMethod": "git",
+      "dependencies": [
+        "npeg"
+      ],
+      "checksums": {
+        "sha1": "5295782a2d168ce6fd98745eaef2044867e91411"
+      }
+    },
+    "balls": {
+      "version": "3.7.2",
+      "vcsRevision": "b44a94b093f3680db44529251db419061dcca8b6",
+      "url": "https://github.com/disruptek/balls",
+      "downloadMethod": "git",
+      "dependencies": [
+        "grok",
+        "ups",
+        "sync"
+      ],
+      "checksums": {
+        "sha1": "6da0637486e085a12288e96bd144efdbceea8c9a"
+      }
+    },
+    "union": {
+      "version": "0.1.2",
+      "vcsRevision": "e47850e6bf192d0627764b423c440c516d2eb654",
+      "url": "https://github.com/alaviss/union",
+      "downloadMethod": "git",
+      "dependencies": [
+        "balls"
+      ],
+      "checksums": {
+        "sha1": "6aac7bec6018476f7a5808cfd8b0c61caac9e04f"
+      }
+    },
+    "dotenv": {
+      "version": "2.0.1",
+      "vcsRevision": "4b8613cb4c46331729e88f594c5ae2b727381a57",
+      "url": "https://github.com/euantorano/dotenv.nim",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "9a9e39544f129e6666935796610da79fbe724510"
+      }
+    },
+    "nodejs": {
+      "version": "18.12.0",
+      "vcsRevision": "526316cbe10e50353e7739e2a9ae994847766371",
+      "url": "https://github.com/juancarlospaco/nodestdlib",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "ee6ea5913a3af95f0fce95e94e5fcd8d06431f22"
+      }
+    },
+    "jsony": {
+      "version": "1.1.3",
+      "vcsRevision": "2a2cc4331720b7695c8b66529dbfea6952727e7b",
+      "url": "https://github.com/treeform/jsony",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "3a1d109f9ac95c708549b976ceab7ace5b7ef558"
+      }
+    },
+    "uniony": {
+      "version": "0.1.0",
+      "vcsRevision": "a45868876dd793b9c43dd7e5df548a734cc5497c",
+      "url": "https://github.com/tandy-1000/uniony",
+      "downloadMethod": "git",
+      "dependencies": [
+        "jsony",
+        "union"
+      ],
+      "checksums": {
+        "sha1": "cd375ccfefc20ed6515e4e2dcf96828635bd6778"
+      }
+    }
+  }
+}

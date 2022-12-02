@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "packages": {
+    "cligen": {
+      "version": "2.0.1",
+      "vcsRevision": "7985e1da80a5c831f52b536c9d963e14d8b34795",
+      "url": "https://github.com/disruptek/cligen",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "abe20e6ae3c41506c1871c85ee31d71fc505d317"
+      }
+    },
+    "unicodedb": {
+      "version": "0.11.1",
+      "vcsRevision": "7d3b449c44730804a3c9b4f4f3dbeca028212d05",
+      "url": "https://github.com/nitely/nim-unicodedb",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "83c3c2d4593df89a5ffc09a2b2d79b51cbc5007b"
+      }
+    },
+    "regex": {
+      "version": "0.20.0",
+      "vcsRevision": "ab98735539ddd8a1eaaa795fd2ca65293c1640b3",
+      "url": "https://github.com/nitely/nim-regex",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unicodedb"
+      ],
+      "checksums": {
+        "sha1": "28ffe0d41204273a97e16c231cb0ced1ad60ecbf"
+      }
+    },
+    "nimterop": {
+      "version": "0.6.13",
+      "vcsRevision": "f7cee5c983650336f93fde5d4fea087863ac0e5e",
+      "url": "https://github.com/genotrance/nimterop",
+      "downloadMethod": "git",
+      "dependencies": [
+        "regex",
+        "cligen"
+      ],
+      "checksums": {
+        "sha1": "a93246b2ad5531db11e51de7b2d188c42d95576a"
+      }
+    },
+    "badresults": {
+      "version": "1.0.1",
+      "vcsRevision": "845a3e4bc34ea78e8acc6e186c5f6fb2ec2fe5d3",
+      "url": "https://github.com/disruptek/badresults",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "576598c08c31e59d03099d89422d4555ab499823"
+      }
+    },
+    "nimgit2": {
+      "version": "0.1.1",
+      "vcsRevision": "382dcc85e04c002f33ba8d248d955422698ce041",
+      "url": "https://github.com/genotrance/nimgit2",
+      "downloadMethod": "git",
+      "dependencies": [
+        "nimterop"
+      ],
+      "checksums": {
+        "sha1": "60d77f85c8c59b3da328ab8478fe851fcb0c0076"
+      }
+    }
+  }
+}

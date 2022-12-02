@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "packages": {
+    "nimSHA2": {
+      "version": "0.1.1",
+      "vcsRevision": "b8f666069dff1ed0c5142dd1ca692f0e71434716",
+      "url": "https://github.com/jangko/nimSHA2",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "6765d9a04c328c64eb56b3fa90f45690294cc8fd"
+      }
+    },
+    "sha1": {
+      "version": "1.1",
+      "vcsRevision": "92ccc5800bb0ac4865b275a2ce3c1544e98b48bc",
+      "url": "https://github.com/onionhammer/sha1",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "2610d27cf248adf98fd9b86e906eb87781ba9d8c"
+      }
+    },
+    "nimcrypto": {
+      "version": "0.5.4",
+      "vcsRevision": "24e006df85927f64916e60511620583b11403178",
+      "url": "https://github.com/cheatfate/nimcrypto",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "a4db2105de265930f1578bb7957f49fa39b10d9b"
+      }
+    },
+    "hmac": {
+      "version": "0.2.0",
+      "vcsRevision": "371749453ed9800c72a7c7a251687d57b0c70430",
+      "url": "https://github.com/OpenSystemsLab/hmac.nim",
+      "downloadMethod": "git",
+      "dependencies": [
+        "nimSHA2",
+        "sha1",
+        "nimcrypto"
+      ],
+      "checksums": {
+        "sha1": "2daeda5b8608cccd644637122858d7445d0fb837"
+      }
+    },
+    "scram": {
+      "version": "0.2.0",
+      "vcsRevision": "105d0943f25724edc6829b9ec7465431dd6ce33d",
+      "url": "https://github.com/rgv151/scram",
+      "downloadMethod": "git",
+      "dependencies": [
+        "hmac"
+      ],
+      "checksums": {
+        "sha1": "6091812b5f1cd5e4b210817c421917426fb18229"
+      }
+    }
+  }
+}

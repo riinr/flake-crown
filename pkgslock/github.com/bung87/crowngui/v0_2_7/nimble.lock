@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "packages": {
+    "zippy": {
+      "version": "0.10.4",
+      "vcsRevision": "17e23253693cf8e09683cd6088b18ebd2789245b",
+      "url": "https://github.com/guzba/zippy",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "be5f12785ba8e7f8b193de5abcc2707e534fbc54"
+      }
+    },
+    "finder": {
+      "version": "0.2.1",
+      "vcsRevision": "4e8586e5f7ba88a4947f3d5a2f22d8a71c95c656",
+      "url": "https://github.com/bung87/finder",
+      "downloadMethod": "git",
+      "dependencies": [
+        "zippy"
+      ],
+      "checksums": {
+        "sha1": "c848144c29cf8455348de006dc68a2e00f83bbf1"
+      }
+    },
+    "static_server": {
+      "version": "2.2.1",
+      "vcsRevision": "89cb7e33d353238dbc31f3f899dba6303feb71f1",
+      "url": "https://github.com/bung87/nimhttpd",
+      "downloadMethod": "git",
+      "dependencies": [
+        "finder"
+      ],
+      "checksums": {
+        "sha1": "5affcc4b433413f9e4c41bcd7656f96ed4ba037d"
+      }
+    },
+    "unicodedb": {
+      "version": "0.11.1",
+      "vcsRevision": "7d3b449c44730804a3c9b4f4f3dbeca028212d05",
+      "url": "https://github.com/nitely/nim-unicodedb",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "83c3c2d4593df89a5ffc09a2b2d79b51cbc5007b"
+      }
+    },
+    "regex": {
+      "version": "0.20.0",
+      "vcsRevision": "ab98735539ddd8a1eaaa795fd2ca65293c1640b3",
+      "url": "https://github.com/nitely/nim-regex",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unicodedb"
+      ],
+      "checksums": {
+        "sha1": "28ffe0d41204273a97e16c231cb0ced1ad60ecbf"
+      }
+    },
+    "xlsx": {
+      "version": "0.4.8",
+      "vcsRevision": "42d53d3c4ccec53c59573f6d23907afd0dfc9949",
+      "url": "https://github.com/ringabout/xlsx",
+      "downloadMethod": "git",
+      "dependencies": [
+        "zippy"
+      ],
+      "checksums": {
+        "sha1": "e9edb2a80bda1ed1b6dfe50236ca1444dd24d858"
+      }
+    },
+    "ast_pattern_matching": {
+      "version": "1.0.0",
+      "vcsRevision": "eb8b99d595517fd5d41ccc954edb896267f2db78",
+      "url": "https://github.com/nim-lang/ast-pattern-matching",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "e7d2f92c1a3390b4b2da00e021baf14b91ff5017"
+      }
+    },
+    "jsonschema": {
+      "version": "0.2.1",
+      "vcsRevision": "7b41c03e3e1a487d5a8f6b940ca8e764dc2cbabf",
+      "url": "https://github.com/PMunch/jsonschema",
+      "downloadMethod": "git",
+      "dependencies": [
+        "ast_pattern_matching"
+      ],
+      "checksums": {
+        "sha1": "8ae2ef3c6c97e9bf2fdf650436adf512ba2f5991"
+      }
+    }
+  }
+}

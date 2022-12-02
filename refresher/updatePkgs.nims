@@ -101,7 +101,7 @@ if defined process:
     """
     pkgs = parseJson pkgsJSON
     pkgItems = pkgs.items.toSeq
-
-  pkgItems.run "updateMeta"
-  pkgItems.run "updateFlake"
+  pkgItems.run "updateNimbleLock"
+  # pkgItems.run "updateMeta"
+  # pkgItems.run "updateFlake"
 

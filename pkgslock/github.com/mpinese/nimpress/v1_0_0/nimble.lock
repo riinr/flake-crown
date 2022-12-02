@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "packages": {
+    "hts": {
+      "version": "0.3.23",
+      "vcsRevision": "9cc901876e7d04a15c6179c2fa7fc658a016524e",
+      "url": "https://github.com/brentp/hts-nim",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "bf17f074ce5c44d6b11faccb68239af8c179c7e1"
+      }
+    },
+    "unicodedb": {
+      "version": "0.11.1",
+      "vcsRevision": "7d3b449c44730804a3c9b4f4f3dbeca028212d05",
+      "url": "https://github.com/nitely/nim-unicodedb",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "83c3c2d4593df89a5ffc09a2b2d79b51cbc5007b"
+      }
+    },
+    "regex": {
+      "version": "0.20.0",
+      "vcsRevision": "ab98735539ddd8a1eaaa795fd2ca65293c1640b3",
+      "url": "https://github.com/nitely/nim-regex",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unicodedb"
+      ],
+      "checksums": {
+        "sha1": "28ffe0d41204273a97e16c231cb0ced1ad60ecbf"
+      }
+    },
+    "lapper": {
+      "version": "0.1.7",
+      "vcsRevision": "36d12438d92bd90af0b4e592dc2ba6b6de21bb38",
+      "url": "https://github.com/brentp/nim-lapper",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "d6b2a932f7b8f786a40c452e763a837603c119ea"
+      }
+    },
+    "docopt": {
+      "version": "0.7.0",
+      "vcsRevision": "d2ad95f4f95bae7d41493afa7a95c8aaab10b630",
+      "url": "https://github.com/docopt/docopt.nim",
+      "downloadMethod": "git",
+      "dependencies": [
+        "regex"
+      ],
+      "checksums": {
+        "sha1": "60fda67c990733c58ca227a09277c8e8e9dbfa70"
+      }
+    }
+  }
+}

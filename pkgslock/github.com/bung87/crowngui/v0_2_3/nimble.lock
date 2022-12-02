@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "packages": {
+    "nimble": {
+      "version": "0.12.0",
+      "vcsRevision": "8f7af860c5ce9634af880a7081c6435e1f2a5148",
+      "url": "https://github.com/nim-lang/nimble",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "7aa4f8f5d3b79013b9aa93f3069f4eaaebd24a48"
+      }
+    },
+    "zippy": {
+      "version": "0.10.4",
+      "vcsRevision": "17e23253693cf8e09683cd6088b18ebd2789245b",
+      "url": "https://github.com/guzba/zippy",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "be5f12785ba8e7f8b193de5abcc2707e534fbc54"
+      }
+    },
+    "finder": {
+      "version": "0.2.1",
+      "vcsRevision": "4e8586e5f7ba88a4947f3d5a2f22d8a71c95c656",
+      "url": "https://github.com/bung87/finder",
+      "downloadMethod": "git",
+      "dependencies": [
+        "zippy"
+      ],
+      "checksums": {
+        "sha1": "c848144c29cf8455348de006dc68a2e00f83bbf1"
+      }
+    },
+    "static_server": {
+      "version": "2.2.1",
+      "vcsRevision": "89cb7e33d353238dbc31f3f899dba6303feb71f1",
+      "url": "https://github.com/bung87/nimhttpd",
+      "downloadMethod": "git",
+      "dependencies": [
+        "finder"
+      ],
+      "checksums": {
+        "sha1": "5affcc4b433413f9e4c41bcd7656f96ed4ba037d"
+      }
+    },
+    "darwin": {
+      "version": "0.1.1",
+      "vcsRevision": "19015f5d4c183f49e77b08317035a358163e8bb7",
+      "url": "https://github.com/yglukhov/darwin",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "49e29e4cb4a4aa9fbc39d323c134faa2a310a42d"
+      }
+    },
+    "plists": {
+      "version": "0.2.0",
+      "vcsRevision": "783f661aa38e8c93d88388d16b90ec35d38099c1",
+      "url": "https://github.com/yglukhov/plists",
+      "downloadMethod": "git",
+      "dependencies": [
+        "darwin"
+      ],
+      "checksums": {
+        "sha1": "2009f80653d24dc399e784aff27d057cdfc1a863"
+      }
+    },
+    "nimPNG": {
+      "version": "0.3.2",
+      "vcsRevision": "e49f3c7bd0f71f9843ad5469f2841e0caeccc120",
+      "url": "https://github.com/jangko/nimPNG",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "419e55d3ece9924592c2a2231a4e2dcd3fa570d1"
+      }
+    },
+    "struct": {
+      "version": "0.2.3",
+      "vcsRevision": "b00809c24f4d3e09558cce3d73f02195dda5e175",
+      "url": "https://github.com/OpenSystemsLab/struct.nim",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "b2f9491aeed1bdbf6da2d32dae91d65dc1469d76"
+      }
+    },
+    "icon": {
+      "version": "0.2.1",
+      "vcsRevision": "5db953456753544d3ff7302896e9295512737041",
+      "url": "https://github.com/bung87/icon",
+      "downloadMethod": "git",
+      "dependencies": [
+        "nimPNG",
+        "struct"
+      ],
+      "checksums": {
+        "sha1": "cbc63cd075f66885a696e2ead5080a3a7d784437"
+      }
+    },
+    "ast_pattern_matching": {
+      "version": "1.0.0",
+      "vcsRevision": "eb8b99d595517fd5d41ccc954edb896267f2db78",
+      "url": "https://github.com/nim-lang/ast-pattern-matching",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "e7d2f92c1a3390b4b2da00e021baf14b91ff5017"
+      }
+    },
+    "jsonschema": {
+      "version": "0.2.1",
+      "vcsRevision": "7b41c03e3e1a487d5a8f6b940ca8e764dc2cbabf",
+      "url": "https://github.com/PMunch/jsonschema",
+      "downloadMethod": "git",
+      "dependencies": [
+        "ast_pattern_matching"
+      ],
+      "checksums": {
+        "sha1": "8ae2ef3c6c97e9bf2fdf650436adf512ba2f5991"
+      }
+    },
+    "stb_image": {
+      "version": "2.5",
+      "vcsRevision": "ba5f45286bfa9bed93d8d6b941949cd6218ec888",
+      "url": "https://gitlab.com/define-private-public/stb_image-Nim.git",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "abf5fd03e72ee4c316c50a0538b973e355dcb175"
+      }
+    },
+    "rcedit": {
+      "version": "0.1.1",
+      "vcsRevision": "a769e4c9e35155ac104385dfc97aa07609ac885d",
+      "url": "https://github.com/bung87/rcedit",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "435808f1304bd75ca821c8ec92c6b1555c438c6f"
+      }
+    },
+    "zopflipng": {
+      "version": "0.1.4",
+      "vcsRevision": "4d0606ef6c9099f8df18f3ac49fdc593af028ab1",
+      "url": "https://github.com/bung87/zopflipng",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "fb003e9210ea6e0cc5c8a1e1f5e2a80571e5d407"
+      }
+    },
+    "imageman": {
+      "version": "0.8.2",
+      "vcsRevision": "fe9cf9f955587278203f5803bfb6872215af4741",
+      "url": "https://github.com/SolitudeSF/imageman",
+      "downloadMethod": "git",
+      "dependencies": [
+        "stb_image"
+      ],
+      "checksums": {
+        "sha1": "b599d113e59ccfa8dcbd2379fdcdac3641526a8c"
+      }
+    },
+    "cligen": {
+      "version": "1.5.32",
+      "vcsRevision": "8fe620d7cd2fcae80c86db52f025e832d784cfeb",
+      "url": "https://github.com/c-blake/cligen.git",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "d7e5181fd0d428ac626abc7a3e4a3ba30026e4f6"
+      }
+    }
+  }
+}

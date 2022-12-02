@@ -1,0 +1,53 @@
+{
+  "description": "Slurp C/C++ libraries into Nim world",
+  "license": "MIT",
+  "method": "git",
+  "name": "github-yglukhov-clurp",
+  "tags": [],
+  "url": "https://github.com/yglukhov/clurp",
+  "refs": [
+    "refs/heads/master",
+    ""
+  ],
+  "heads": [
+    {
+      "name": "clurp",
+      "version": "0.1.0",
+      "author": "Yuriy Glukhov",
+      "desc": "Slurp C/C++ libraries into Nim world",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.15.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.15.3"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "clurp"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/master"
+    }
+  ]
+}

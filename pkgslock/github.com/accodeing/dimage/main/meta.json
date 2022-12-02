@@ -1,0 +1,42 @@
+{
+  "name": "dimage",
+  "version": "0.1.0",
+  "author": "Jonas Schubert Erlandsson",
+  "desc": "Pure Nim, no external dependensies image dimension reader for all web supported image formats",
+  "license": "LGPL-3.0-only",
+  "skipDirs": [
+    "tests"
+  ],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [],
+  "installFiles": [],
+  "installExt": [
+    "nim"
+  ],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 1.6.0",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.6.0"
+      }
+    },
+    {
+      "name": "cligen",
+      "str": ">= 1.5.28",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.5.28"
+      }
+    }
+  ],
+  "bin": [
+    "dimage"
+  ],
+  "binDir": "",
+  "srcDir": "src",
+  "backend": "c",
+  "ref": "refs/heads/main"
+}

@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "packages": {
+    "asynctools": {
+      "version": "0.1.1",
+      "vcsRevision": "0e6bdc3ed5bae8c7cc9e03cfbf66b7c882a908a7",
+      "url": "https://github.com/cheatfate/asynctools",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "54314dceabb06b20908ecb0f2c007e9ff3aaa054"
+      }
+    },
+    "httpbeast": {
+      "version": "0.4.1",
+      "vcsRevision": "abc13d11c210b614960fe8760e581d44cfb2e3e9",
+      "url": "https://github.com/dom96/httpbeast",
+      "downloadMethod": "git",
+      "dependencies": [
+        "asynctools"
+      ],
+      "checksums": {
+        "sha1": "b23e57a401057dcb9b7fae1fb8279a6a2ce1d0b8"
+      }
+    },
+    "unicodedb": {
+      "version": "0.11.1",
+      "vcsRevision": "7d3b449c44730804a3c9b4f4f3dbeca028212d05",
+      "url": "https://github.com/nitely/nim-unicodedb",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "83c3c2d4593df89a5ffc09a2b2d79b51cbc5007b"
+      }
+    },
+    "ws": {
+      "version": "0.5.0",
+      "vcsRevision": "9536bf99ddf5948db221ccb7bb3663aa238a8e21",
+      "url": "https://github.com/treeform/ws",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "ae4daf4ae302d0431f3c2d385ae9d2fe767a3246"
+      }
+    },
+    "segmentation": {
+      "version": "0.1.0",
+      "vcsRevision": "6845c68cf00c1546f49d628ae11334acba966bfb",
+      "url": "https://github.com/nitely/nim-segmentation",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unicodedb"
+      ],
+      "checksums": {
+        "sha1": "39da98c2d5ab34887776801b67bc4a9111138e3a"
+      }
+    },
+    "unicodeplus": {
+      "version": "0.8.0",
+      "vcsRevision": "0788d4b917d057e2b3bc96478fb087a5ad2d8c7b",
+      "url": "https://github.com/nitely/nim-unicodeplus",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unicodedb",
+        "segmentation"
+      ],
+      "checksums": {
+        "sha1": "7e5880807cf077eff415b3129afdeb3eca367749"
+      }
+    },
+    "regex": {
+      "version": "0.13.1",
+      "vcsRevision": "2d96baba2bea1a7c23903149ec551228b516be80",
+      "url": "https://github.com/nitely/nim-regex",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unicodedb",
+        "unicodeplus"
+      ],
+      "checksums": {
+        "sha1": "07b1444e3b11f23af3b6882b7c31851e239d72b1"
+      }
+    },
+    "dotenv": {
+      "version": "2.0.1",
+      "vcsRevision": "4b8613cb4c46331729e88f594c5ae2b727381a57",
+      "url": "https://github.com/euantorano/dotenv.nim",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "9a9e39544f129e6666935796610da79fbe724510"
+      }
+    },
+    "karax": {
+      "version": "1.2.2",
+      "vcsRevision": "aab6357cd5b6c7c9588e0097616a5a2a339e7f37",
+      "url": "https://github.com/karaxnim/karax/",
+      "downloadMethod": "git",
+      "dependencies": [
+        "ws",
+        "dotenv"
+      ],
+      "checksums": {
+        "sha1": "7c74bcfa79cfc2b105269cc8c8bd3dd20effca8c"
+      }
+    },
+    "nimcrypto": {
+      "version": "0.5.4",
+      "vcsRevision": "24e006df85927f64916e60511620583b11403178",
+      "url": "https://github.com/cheatfate/nimcrypto",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "a4db2105de265930f1578bb7957f49fa39b10d9b"
+      }
+    },
+    "cookiejar": {
+      "version": "0.3.0",
+      "vcsRevision": "aa96ca83a7c154f08803c7715f054d77f2d623cf",
+      "url": "https://github.com/planety/cookiejar",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "41001886ccf9670f67bc511ae48ea07e7c95c25b"
+      }
+    }
+  }
+}

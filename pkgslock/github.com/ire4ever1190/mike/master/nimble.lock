@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "packages": {
+    "wepoll": {
+      "version": "0.1.0",
+      "vcsRevision": "c49c3280130bb724f1601b1d42f5b7deabad3198",
+      "url": "https://github.com/ringabout/wepoll",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "6a38977b5ca3949d853caa81be56dc65f463309e"
+      }
+    },
+    "ioselectors": {
+      "version": "0.1.8",
+      "vcsRevision": "6fcdbf3fddeb239885cd8bce15a0ab63c00647c0",
+      "url": "https://github.com/ringabout/ioselectors",
+      "downloadMethod": "git",
+      "dependencies": [
+        "wepoll"
+      ],
+      "checksums": {
+        "sha1": "762d1951145184bf95a3ac57d94cf9537a372955"
+      }
+    },
+    "httpx": {
+      "version": "0.3.4",
+      "vcsRevision": "92d04257d48adfd9ae86086001e8b01fa7fbe170",
+      "url": "https://github.com/ringabout/httpx",
+      "downloadMethod": "git",
+      "dependencies": [
+        "ioselectors"
+      ],
+      "checksums": {
+        "sha1": "57e5d8bcb3e7511b0c4f174f2ac6a03bb1a20e4a"
+      }
+    },
+    "zippy": {
+      "version": "0.10.4",
+      "vcsRevision": "17e23253693cf8e09683cd6088b18ebd2789245b",
+      "url": "https://github.com/guzba/zippy",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "be5f12785ba8e7f8b193de5abcc2707e534fbc54"
+      }
+    }
+  }
+}

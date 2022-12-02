@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "packages": {
+    "cligen": {
+      "version": "2.0.1",
+      "vcsRevision": "7985e1da80a5c831f52b536c9d963e14d8b34795",
+      "url": "https://github.com/disruptek/cligen",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "abe20e6ae3c41506c1871c85ee31d71fc505d317"
+      }
+    },
+    "unicodedb": {
+      "version": "0.11.1",
+      "vcsRevision": "7d3b449c44730804a3c9b4f4f3dbeca028212d05",
+      "url": "https://github.com/nitely/nim-unicodedb",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "83c3c2d4593df89a5ffc09a2b2d79b51cbc5007b"
+      }
+    },
+    "regex": {
+      "version": "0.20.0",
+      "vcsRevision": "ab98735539ddd8a1eaaa795fd2ca65293c1640b3",
+      "url": "https://github.com/nitely/nim-regex",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unicodedb"
+      ],
+      "checksums": {
+        "sha1": "28ffe0d41204273a97e16c231cb0ced1ad60ecbf"
+      }
+    },
+    "nimterop": {
+      "version": "0.5.9",
+      "vcsRevision": "68cb3ab0b449c6155d5a797bec4d715a80423f05",
+      "url": "https://github.com/genotrance/nimterop",
+      "downloadMethod": "git",
+      "dependencies": [
+        "regex",
+        "cligen"
+      ],
+      "checksums": {
+        "sha1": "d043202a13928f1ac5302f9ce6a38ed737b51891"
+      }
+    },
+    "sysrandom": {
+      "version": "1.1.0",
+      "vcsRevision": "1816816c5b765ffd7cd480830ce8cef1d6f5802d",
+      "url": "https://github.com/euantorano/sysrandom.nim",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "6f0b7fb028bff27310cac689198d7e888fe35ac7"
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "packages": {
+    "zippy": {
+      "version": "0.10.4",
+      "vcsRevision": "17e23253693cf8e09683cd6088b18ebd2789245b",
+      "url": "https://github.com/guzba/zippy",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "be5f12785ba8e7f8b193de5abcc2707e534fbc54"
+      }
+    },
+    "urlly": {
+      "version": "1.0.1",
+      "vcsRevision": "ec77b2c49a8d1918d27f2ef288da858957d49801",
+      "url": "https://github.com/treeform/urlly",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "8460d85e8c5ea6da152bea6a3f313c9b4e815778"
+      }
+    },
+    "libcurl": {
+      "version": "1.0.0",
+      "vcsRevision": "7a420498f60a31d99fc8513886ce36c4e8c3a4ae",
+      "url": "https://github.com/Araq/libcurl",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "07736a3c8817fefe865c3c658e3303f69e53f913"
+      }
+    },
+    "puppy": {
+      "version": "1.6.0",
+      "vcsRevision": "6ca68047194bae574dd50bb1bb708e26c426af47",
+      "url": "https://github.com/treeform/puppy",
+      "downloadMethod": "git",
+      "dependencies": [
+        "urlly",
+        "libcurl",
+        "zippy"
+      ],
+      "checksums": {
+        "sha1": "af5b9b87259b641df502b87d3e81436e98901319"
+      }
+    },
+    "elvis": {
+      "version": "0.5.0",
+      "vcsRevision": "f0632e830c264ccd2e8489596db9b29fd5d1cd67",
+      "url": "https://github.com/mattaylor/elvis",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "6dda8a8900192936698a7443e53bcbaf504f1402"
+      }
+    },
+    "classes": {
+      "version": "0.2.11",
+      "vcsRevision": "4c1b20b71f2034223b0a14b235bf477302e655b1",
+      "url": "https://github.com/jjv360/nim-classes",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "cd0d978647b284c7ab4d26a65647905b6df44917"
+      }
+    },
+    "termui": {
+      "version": "0.1.8",
+      "vcsRevision": "8c2a82c5919077a9e2a8546972387484ae37b8a5",
+      "url": "https://github.com/jjv360/nim-termui",
+      "downloadMethod": "git",
+      "dependencies": [
+        "classes",
+        "elvis"
+      ],
+      "checksums": {
+        "sha1": "779e219a2da9cf7e01bff4d2ed44061b896e1678"
+      }
+    }
+  }
+}

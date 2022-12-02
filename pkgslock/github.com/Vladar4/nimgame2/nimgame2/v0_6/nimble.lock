@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "packages": {
+    "winim": {
+      "version": "3.9.0",
+      "vcsRevision": "3abd0ae122cd41efd0ce6d45fea720ef7091e4ac",
+      "url": "https://github.com/khchen/winim",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "02cf5882b51550d7faddbce7eedac35c94dea729"
+      }
+    },
+    "x11": {
+      "version": "1.1",
+      "vcsRevision": "a33254a5ac0df76786ffdaf9d736add242179964",
+      "url": "https://github.com/SolitudeSF/x11",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "98eada2482123f39497b36bcac2094c618f5046a"
+      }
+    },
+    "sdl2_nim": {
+      "version": "2.0.14.3",
+      "vcsRevision": "bef9a610a6bf53fba4cca231631603a3679b5b98",
+      "url": "https://github.com/Vladar4/sdl2_nim",
+      "downloadMethod": "git",
+      "dependencies": [
+        "winim",
+        "x11"
+      ],
+      "checksums": {
+        "sha1": "796cebb03602e5db258e048ad3ab69d6c9dcd5b6"
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "packages": {
+    "unicodedb": {
+      "version": "0.11.1",
+      "vcsRevision": "7d3b449c44730804a3c9b4f4f3dbeca028212d05",
+      "url": "https://github.com/nitely/nim-unicodedb",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "83c3c2d4593df89a5ffc09a2b2d79b51cbc5007b"
+      }
+    },
+    "regex": {
+      "version": "0.20.0",
+      "vcsRevision": "ab98735539ddd8a1eaaa795fd2ca65293c1640b3",
+      "url": "https://github.com/nitely/nim-regex",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unicodedb"
+      ],
+      "checksums": {
+        "sha1": "28ffe0d41204273a97e16c231cb0ced1ad60ecbf"
+      }
+    },
+    "docopt": {
+      "version": "0.6.8",
+      "vcsRevision": "c53ca7b1a785b4a0ed70cb0fe9101b303e61a0dc",
+      "url": "https://github.com/PMunch/docopt.nim",
+      "downloadMethod": "git",
+      "dependencies": [
+        "regex"
+      ],
+      "checksums": {
+        "sha1": "61ff53f303ddbf112e7b4729dbfee7e7e3d8b6a5"
+      }
+    },
+    "nimPNG": {
+      "version": "0.3.2",
+      "vcsRevision": "e49f3c7bd0f71f9843ad5469f2841e0caeccc120",
+      "url": "https://github.com/jangko/nimPNG",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "419e55d3ece9924592c2a2231a4e2dcd3fa570d1"
+      }
+    },
+    "dbus": {
+      "version": "0.0.1",
+      "vcsRevision": "1eb820b874796ecb398b9274e60119ae1d1c93c8",
+      "url": "https://github.com/zielmicha/nim-dbus",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "622f0e96aba2559bc3ccb0c86af647134f970890"
+      }
+    }
+  }
+}

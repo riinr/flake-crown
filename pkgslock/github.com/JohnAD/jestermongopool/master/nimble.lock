@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "packages": {
+    "bson": {
+      "version": "1.1.2",
+      "vcsRevision": "9d54157ee9f4a2860582c79f579a9ba7d15f9f59",
+      "url": "https://github.com/JohnAD/bson",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "49cfbd9663948fab66928cc11fecdf0cccfd3158"
+      }
+    },
+    "nimSHA2": {
+      "version": "0.1.1",
+      "vcsRevision": "b8f666069dff1ed0c5142dd1ca692f0e71434716",
+      "url": "https://github.com/jangko/nimSHA2",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "6765d9a04c328c64eb56b3fa90f45690294cc8fd"
+      }
+    },
+    "sha1": {
+      "version": "1.1",
+      "vcsRevision": "92ccc5800bb0ac4865b275a2ce3c1544e98b48bc",
+      "url": "https://github.com/onionhammer/sha1",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "2610d27cf248adf98fd9b86e906eb87781ba9d8c"
+      }
+    },
+    "nimcrypto": {
+      "version": "0.5.4",
+      "vcsRevision": "24e006df85927f64916e60511620583b11403178",
+      "url": "https://github.com/cheatfate/nimcrypto",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "a4db2105de265930f1578bb7957f49fa39b10d9b"
+      }
+    },
+    "hmac": {
+      "version": "0.2.0",
+      "vcsRevision": "371749453ed9800c72a7c7a251687d57b0c70430",
+      "url": "https://github.com/OpenSystemsLab/hmac.nim",
+      "downloadMethod": "git",
+      "dependencies": [
+        "nimSHA2",
+        "sha1",
+        "nimcrypto"
+      ],
+      "checksums": {
+        "sha1": "2daeda5b8608cccd644637122858d7445d0fb837"
+      }
+    },
+    "scram": {
+      "version": "0.2.0",
+      "vcsRevision": "105d0943f25724edc6829b9ec7465431dd6ce33d",
+      "url": "https://github.com/rgv151/scram",
+      "downloadMethod": "git",
+      "dependencies": [
+        "hmac"
+      ],
+      "checksums": {
+        "sha1": "6091812b5f1cd5e4b210817c421917426fb18229"
+      }
+    },
+    "mongopool": {
+      "version": "1.0.1",
+      "vcsRevision": "5c2d5e39f19491411102406ba5fdf04e458de71a",
+      "url": "https://github.com/JohnAD/mongopool",
+      "downloadMethod": "git",
+      "dependencies": [
+        "bson",
+        "scram"
+      ],
+      "checksums": {
+        "sha1": "98c59b0be1311661712d77e1c62dbb5ab798cf90"
+      }
+    },
+    "asynctools": {
+      "version": "0.1.1",
+      "vcsRevision": "a314fb8d18a08954fc7ea43e40673acb348ce7cc",
+      "url": "https://github.com/timotheecour/asynctools",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "5e7df4178ee5c148532ff8c44a22015d576624d8"
+      }
+    },
+    "httpbeast": {
+      "version": "0.4.1",
+      "vcsRevision": "abc13d11c210b614960fe8760e581d44cfb2e3e9",
+      "url": "https://github.com/dom96/httpbeast",
+      "downloadMethod": "git",
+      "dependencies": [
+        "asynctools"
+      ],
+      "checksums": {
+        "sha1": "b23e57a401057dcb9b7fae1fb8279a6a2ce1d0b8"
+      }
+    },
+    "jesterwithplugins": {
+      "version": "0.5.2",
+      "vcsRevision": "149ad0cf0ab7c11b491a4684cfbe844ce25fd459",
+      "url": "https://github.com/JohnAD/jesterwithplugins/",
+      "downloadMethod": "git",
+      "dependencies": [
+        "httpbeast",
+        "asynctools"
+      ],
+      "checksums": {
+        "sha1": "4bd7061e2f68e141104b79dff52b49680b92dacc"
+      }
+    }
+  }
+}

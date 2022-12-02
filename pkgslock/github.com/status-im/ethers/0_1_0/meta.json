@@ -1,0 +1,101 @@
+{
+  "name": "ethers",
+  "version": "0.1.0",
+  "author": "Nim Ethers Authors",
+  "desc": "library for interacting with Ethereum",
+  "license": "MIT",
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [],
+  "installFiles": [],
+  "installExt": [],
+  "requires": [
+    {
+      "name": "chronos",
+      "str": ">= 3.0.0 & < 4.0.0",
+      "ver": {
+        "kind": "verIntersect",
+        "verILeft": {
+          "kind": "verEqLater",
+          "ver": "3.0.0"
+        },
+        "verIRight": {
+          "kind": "verEarlier",
+          "ver": "4.0.0"
+        }
+      }
+    },
+    {
+      "name": "contractabi",
+      "str": ">= 0.4.1 & < 0.5.0",
+      "ver": {
+        "kind": "verIntersect",
+        "verILeft": {
+          "kind": "verEqLater",
+          "ver": "0.4.1"
+        },
+        "verIRight": {
+          "kind": "verEarlier",
+          "ver": "0.5.0"
+        }
+      }
+    },
+    {
+      "name": "questionable",
+      "str": ">= 0.10.2 & < 0.11.0",
+      "ver": {
+        "kind": "verIntersect",
+        "verILeft": {
+          "kind": "verEqLater",
+          "ver": "0.10.2"
+        },
+        "verIRight": {
+          "kind": "verEarlier",
+          "ver": "0.11.0"
+        }
+      }
+    },
+    {
+      "name": "upraises",
+      "str": ">= 0.1.0 & < 0.2.0",
+      "ver": {
+        "kind": "verIntersect",
+        "verILeft": {
+          "kind": "verEqLater",
+          "ver": "0.1.0"
+        },
+        "verIRight": {
+          "kind": "verEarlier",
+          "ver": "0.2.0"
+        }
+      }
+    },
+    {
+      "name": "json_rpc",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
+    },
+    {
+      "name": "stint",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
+    },
+    {
+      "name": "stew",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
+    }
+  ],
+  "bin": [],
+  "binDir": "",
+  "srcDir": "",
+  "backend": "c",
+  "ref": "refs/tags/0.1.0"
+}

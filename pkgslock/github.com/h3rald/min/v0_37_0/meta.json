@@ -1,0 +1,50 @@
+{
+  "name": "min",
+  "version": "0.28.0",
+  "author": "Fabio Cevasco",
+  "desc": "A tiny concatenative programming language and shell.",
+  "license": "MIT",
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [
+    "minpkg"
+  ],
+  "installFiles": [
+    "min.yml",
+    "min.nim",
+    "prelude.min",
+    "help.json"
+  ],
+  "installExt": [
+    "nim",
+    "c",
+    "h",
+    "a"
+  ],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 1.6.2",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.6.2"
+      }
+    },
+    {
+      "name": "zippy",
+      "str": ">= 0.5.6",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.5.6"
+      }
+    }
+  ],
+  "bin": [
+    "min"
+  ],
+  "binDir": "",
+  "srcDir": "",
+  "backend": "c",
+  "ref": "refs/tags/v0.37.0"
+}

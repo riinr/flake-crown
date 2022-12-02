@@ -1,0 +1,69 @@
+{
+  "name": "snappy",
+  "url": "https://github.com/status-im/nim-snappy",
+  "method": "git",
+  "tags": [],
+  "description": "Nim implementation of Snappy compression algorithm",
+  "license": "MIT",
+  "web": "https://github.com/status-im/nim-snappy",
+  "refs": [
+    "refs/heads/broken-runway",
+    "refs/heads/fix_ci",
+    "refs/heads/master",
+    "refs/heads/nimRawSetjmp",
+    ""
+  ],
+  "heads": [
+    {
+      "name": "snappy",
+      "version": "0.1.0",
+      "author": "Andri Lim",
+      "desc": "Nim implementation of snappy compression algorithm",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "faststreams",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/master"
+    }
+  ]
+}

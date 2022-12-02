@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "packages": {
+    "sync": {
+      "version": "1.5.0",
+      "vcsRevision": "9b8c2926286377aeca0cc41cd313eaf140ecea64",
+      "url": "https://github.com/planetis-m/sync",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "fb5b6a024c16e59a1acf4f36743d3b233e14e038"
+      }
+    },
+    "cligen": {
+      "version": "2.0.1",
+      "vcsRevision": "7985e1da80a5c831f52b536c9d963e14d8b34795",
+      "url": "https://github.com/disruptek/cligen",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "abe20e6ae3c41506c1871c85ee31d71fc505d317"
+      }
+    },
+    "unicodedb": {
+      "version": "0.11.1",
+      "vcsRevision": "7d3b449c44730804a3c9b4f4f3dbeca028212d05",
+      "url": "https://github.com/nitely/nim-unicodedb",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "83c3c2d4593df89a5ffc09a2b2d79b51cbc5007b"
+      }
+    },
+    "regex": {
+      "version": "0.20.0",
+      "vcsRevision": "ab98735539ddd8a1eaaa795fd2ca65293c1640b3",
+      "url": "https://github.com/nitely/nim-regex",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unicodedb"
+      ],
+      "checksums": {
+        "sha1": "28ffe0d41204273a97e16c231cb0ced1ad60ecbf"
+      }
+    },
+    "npeg": {
+      "version": "0.27.0",
+      "vcsRevision": "4d0fc9b2c01c2d9e3582a916a09a139a3bc43e6e",
+      "url": "https://github.com/zevv/npeg",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "0b9a9283eb524e43afe625c845403cce60ee3472"
+      }
+    },
+    "ups": {
+      "version": "0.0.7",
+      "vcsRevision": "afd93b80bd8c7c1a786b0f649240797cc0f6b538",
+      "url": "https://github.com/disruptek/ups",
+      "downloadMethod": "git",
+      "dependencies": [
+        "npeg"
+      ],
+      "checksums": {
+        "sha1": "5295782a2d168ce6fd98745eaef2044867e91411"
+      }
+    },
+    "grok": {
+      "version": "0.6.3",
+      "vcsRevision": "20ded552bba7b835b00571c9aa33f4f82067d4f0",
+      "url": "https://github.com/disruptek/grok",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "8ef6ba7df78cba000d5c0fdb99871bbecbbecd12"
+      }
+    },
+    "nimterop": {
+      "version": "0.6.13",
+      "vcsRevision": "f7cee5c983650336f93fde5d4fea087863ac0e5e",
+      "url": "https://github.com/genotrance/nimterop",
+      "downloadMethod": "git",
+      "dependencies": [
+        "regex",
+        "cligen"
+      ],
+      "checksums": {
+        "sha1": "a93246b2ad5531db11e51de7b2d188c42d95576a"
+      }
+    },
+    "nimgit2": {
+      "version": "0.3.4",
+      "vcsRevision": "f217acf5dbecb887205f57b7c20e228009ac18f4",
+      "url": "https://github.com/genotrance/nimgit2",
+      "downloadMethod": "git",
+      "dependencies": [
+        "nimterop"
+      ],
+      "checksums": {
+        "sha1": "d427e76a61f51b04f6284c9b17ce60d92635acb5"
+      }
+    },
+    "balls": {
+      "version": "3.7.2",
+      "vcsRevision": "b44a94b093f3680db44529251db419061dcca8b6",
+      "url": "https://github.com/disruptek/balls",
+      "downloadMethod": "git",
+      "dependencies": [
+        "grok",
+        "ups",
+        "sync"
+      ],
+      "checksums": {
+        "sha1": "6da0637486e085a12288e96bd144efdbceea8c9a"
+      }
+    },
+    "badresults": {
+      "version": "2.1.4",
+      "vcsRevision": "283f99881a8d2e6e8f3eec0944eaadabbcdf5851",
+      "url": "https://github.com/disruptek/badresults",
+      "downloadMethod": "git",
+      "dependencies": [
+        "balls"
+      ],
+      "checksums": {
+        "sha1": "250e3b54605b973f786cdeb4ff74961b33086efb"
+      }
+    }
+  }
+}

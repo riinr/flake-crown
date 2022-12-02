@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "packages": {
+    "wepoll": {
+      "version": "0.1.0",
+      "vcsRevision": "c49c3280130bb724f1601b1d42f5b7deabad3198",
+      "url": "https://github.com/ringabout/wepoll",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "6a38977b5ca3949d853caa81be56dc65f463309e"
+      }
+    },
+    "ioselectors": {
+      "version": "0.1.8",
+      "vcsRevision": "6fcdbf3fddeb239885cd8bce15a0ab63c00647c0",
+      "url": "https://github.com/ringabout/ioselectors",
+      "downloadMethod": "git",
+      "dependencies": [
+        "wepoll"
+      ],
+      "checksums": {
+        "sha1": "762d1951145184bf95a3ac57d94cf9537a372955"
+      }
+    },
+    "httpx": {
+      "version": "0.3.4",
+      "vcsRevision": "92d04257d48adfd9ae86086001e8b01fa7fbe170",
+      "url": "https://github.com/ringabout/httpx",
+      "downloadMethod": "git",
+      "dependencies": [
+        "ioselectors"
+      ],
+      "checksums": {
+        "sha1": "57e5d8bcb3e7511b0c4f174f2ac6a03bb1a20e4a"
+      }
+    },
+    "ws": {
+      "version": "0.5.0",
+      "vcsRevision": "9536bf99ddf5948db221ccb7bb3663aa238a8e21",
+      "url": "https://github.com/treeform/ws",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "ae4daf4ae302d0431f3c2d385ae9d2fe767a3246"
+      }
+    },
+    "websocketx": {
+      "version": "0.1.2",
+      "vcsRevision": "b0ea475e3c50a31cc45cd7031f76707b55d7ebb4",
+      "url": "https://github.com/ringabout/websocketx",
+      "downloadMethod": "git",
+      "dependencies": [
+        "ws",
+        "httpx"
+      ],
+      "checksums": {
+        "sha1": "360af04be0163e1a56eadf7106564602a0bf1cfe"
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "packages": {
+    "wasmrt": {
+      "version": "0.1.0",
+      "vcsRevision": "9803d6bd0b9f0732afe768b2c1fe4ace971bd7df",
+      "url": "https://github.com/yglukhov/wasmrt",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "5c0646fe9463047bcb9ac91aaadd35bf6cdd2eb4"
+      }
+    },
+    "jsbind": {
+      "version": "0.1.1",
+      "vcsRevision": "f623de0db495ad7bcc948948e1fb38a090687834",
+      "url": "https://github.com/yglukhov/jsbind",
+      "downloadMethod": "git",
+      "dependencies": [
+        "wasmrt"
+      ],
+      "checksums": {
+        "sha1": "74d128e68fe77bb8020c23112464b3de116f10cb"
+      }
+    },
+    "ws": {
+      "version": "0.5.0",
+      "vcsRevision": "9536bf99ddf5948db221ccb7bb3663aa238a8e21",
+      "url": "https://github.com/treeform/ws",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "ae4daf4ae302d0431f3c2d385ae9d2fe767a3246"
+      }
+    },
+    "chroma": {
+      "version": "0.2.7",
+      "vcsRevision": "b2e71179174e040884ebf6a16cbac711c84620b9",
+      "url": "https://github.com/treeform/chroma",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "f873f4b97e87a82e27e0b85bf9130fe3e320a2b8"
+      }
+    },
+    "webview": {
+      "version": "0.1.0",
+      "vcsRevision": "ca3e25ee93a63c3a819a1bfa17386dad6ad41b1a",
+      "url": "https://github.com/oskca/webview",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "2d714d280055de9d0a33e6a730f1099feb1261aa"
+      }
+    },
+    "plotly": {
+      "version": "0.3.2",
+      "vcsRevision": "35f634279f1f52bbadccf5d9bb9ad55a3c89ea53",
+      "url": "https://github.com/SciNim/nim-plotly",
+      "downloadMethod": "git",
+      "dependencies": [
+        "chroma",
+        "jsbind",
+        "webview",
+        "ws"
+      ],
+      "checksums": {
+        "sha1": "d2463d490982d07920f44593c6edcdab385d76af"
+      }
+    },
+    "zip": {
+      "version": "0.3.1",
+      "vcsRevision": "bdc5783fefc1afb8eb622ff13d464a832ce1d507",
+      "url": "https://github.com/nim-lang/zip",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "747aab3c43ecb7b50671cdd0ec3b2edc2c83494c"
+      }
+    }
+  }
+}

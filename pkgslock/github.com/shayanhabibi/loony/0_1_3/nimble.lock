@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "packages": {
+    "sync": {
+      "version": "1.5.0",
+      "vcsRevision": "9b8c2926286377aeca0cc41cd313eaf140ecea64",
+      "url": "https://github.com/planetis-m/sync",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "fb5b6a024c16e59a1acf4f36743d3b233e14e038"
+      }
+    },
+    "npeg": {
+      "version": "0.27.0",
+      "vcsRevision": "4d0fc9b2c01c2d9e3582a916a09a139a3bc43e6e",
+      "url": "https://github.com/zevv/npeg",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "0b9a9283eb524e43afe625c845403cce60ee3472"
+      }
+    },
+    "ups": {
+      "version": "0.0.7",
+      "vcsRevision": "afd93b80bd8c7c1a786b0f649240797cc0f6b538",
+      "url": "https://github.com/disruptek/ups",
+      "downloadMethod": "git",
+      "dependencies": [
+        "npeg"
+      ],
+      "checksums": {
+        "sha1": "5295782a2d168ce6fd98745eaef2044867e91411"
+      }
+    },
+    "grok": {
+      "version": "0.6.3",
+      "vcsRevision": "20ded552bba7b835b00571c9aa33f4f82067d4f0",
+      "url": "https://github.com/disruptek/grok",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "8ef6ba7df78cba000d5c0fdb99871bbecbbecd12"
+      }
+    },
+    "balls": {
+      "version": "3.7.2",
+      "vcsRevision": "b44a94b093f3680db44529251db419061dcca8b6",
+      "url": "https://github.com/disruptek/balls",
+      "downloadMethod": "git",
+      "dependencies": [
+        "grok",
+        "ups",
+        "sync"
+      ],
+      "checksums": {
+        "sha1": "6da0637486e085a12288e96bd144efdbceea8c9a"
+      }
+    },
+    "cps": {
+      "version": "0.4.4",
+      "vcsRevision": "a7a8c56704f9f132096784c5871efd410c0d3617",
+      "url": "https://github.com/disruptek/cps",
+      "downloadMethod": "git",
+      "dependencies": [
+        "balls"
+      ],
+      "checksums": {
+        "sha1": "cb790c322f6b0f6b0a768a1bb00f98c6fc9cd869"
+      }
+    }
+  }
+}

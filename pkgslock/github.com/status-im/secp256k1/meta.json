@@ -1,0 +1,64 @@
+{
+  "name": "secp256k1",
+  "url": "https://github.com/status-im/nim-secp256k1",
+  "method": "git",
+  "tags": [],
+  "description": "A wrapper for the libsecp256k1 C library",
+  "license": "Apache License 2.0",
+  "web": "https://github.com/status-im/nim-secp256k1",
+  "refs": [
+    "refs/heads/ci-builds",
+    "refs/heads/cross",
+    "refs/heads/destructors",
+    "refs/heads/master",
+    ""
+  ],
+  "heads": [
+    {
+      "name": "secp256k1",
+      "version": "0.5.2",
+      "author": "Status Research & Development GmbH",
+      "desc": "A wrapper for the libsecp256k1 C library",
+      "license": "Apache License 2.0",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "secp256k1_wrapper"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/master"
+    }
+  ]
+}

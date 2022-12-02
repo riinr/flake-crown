@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "packages": {
+    "stdext": {
+      "version": "0.0.14",
+      "vcsRevision": "eed410519255baf2dad3502efc60561d468044a8",
+      "url": "https://github.com/zendbit/nim.stdext",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "cbd845ff8892e94a0301c6ff039eb83ce8e4f370"
+      }
+    },
+    "zfdbms": {
+      "version": "0.0.9",
+      "vcsRevision": "d1b111921b5f99a45329485d506ebcce65099803",
+      "url": "https://github.com/zendbit/nim.zfdbms",
+      "downloadMethod": "git",
+      "dependencies": [
+        "stdext"
+      ],
+      "checksums": {
+        "sha1": "4ad773dfe00b30f2ba0ccb81938962434d29a495"
+      }
+    },
+    "zip": {
+      "version": "0.3.1",
+      "vcsRevision": "bdc5783fefc1afb8eb622ff13d464a832ce1d507",
+      "url": "https://github.com/nim-lang/zip",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "747aab3c43ecb7b50671cdd0ec3b2edc2c83494c"
+      }
+    },
+    "uri3": {
+      "version": "0.1.7",
+      "vcsRevision": "36c5bded1da9ed29787e6c9b853b376d9aa0f66a",
+      "url": "https://github.com/zendbit/nim.uri3",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "bbec62fe8cf0bcad7c0cb299c863b303bf3aaf4c"
+      }
+    },
+    "sha1": {
+      "version": "1.1",
+      "vcsRevision": "92ccc5800bb0ac4865b275a2ce3c1544e98b48bc",
+      "url": "https://github.com/onionhammer/sha1",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "2610d27cf248adf98fd9b86e906eb87781ba9d8c"
+      }
+    },
+    "zfblast": {
+      "version": "0.2.8",
+      "vcsRevision": "c6d64d359fedcb1e726df31b117b63b61d7cbed6",
+      "url": "https://github.com/zendbit/nim.zfblast",
+      "downloadMethod": "git",
+      "dependencies": [
+        "uri3",
+        "sha1"
+      ],
+      "checksums": {
+        "sha1": "9a0ecc8483bdfdf963260335558c3325af783ee8"
+      }
+    },
+    "zfcore": {
+      "version": "1.1.18",
+      "vcsRevision": "6ce81eb776dbb171a5cbeec890f738f0340dae06",
+      "url": "https://github.com/zendbit/nim.zfcore",
+      "downloadMethod": "git",
+      "dependencies": [
+        "zfblast",
+        "uri3",
+        "stdext",
+        "zip"
+      ],
+      "checksums": {
+        "sha1": "39b6deed30b478b28fdac4608c36eba288c4671a"
+      }
+    },
+    "mustache": {
+      "version": "0.4.3",
+      "vcsRevision": "1677949a848fc126a0716a67bba2c6217205255c",
+      "url": "https://github.com/soasme/nim-mustache",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "9c7e49440ae9bb6494bd202eea6ef7405811c6bb"
+      }
+    }
+  }
+}

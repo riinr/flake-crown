@@ -1,0 +1,59 @@
+{
+  "name": "litestore",
+  "version": "1.5.1",
+  "author": "Fabio Cevasco",
+  "desc": "Self-contained, lightweight, RESTful document store.",
+  "license": "MIT",
+  "skipDirs": [
+    "test"
+  ],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [],
+  "installFiles": [],
+  "installExt": [
+    "nim",
+    "c",
+    "h",
+    "json",
+    "ico"
+  ],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 1.0.0",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.0.0"
+      }
+    },
+    {
+      "name": "jwt",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
+    },
+    {
+      "name": "nimgen",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
+    },
+    {
+      "name": "duktape",
+      "str": "any version",
+      "ver": {
+        "kind": "verAny"
+      }
+    }
+  ],
+  "bin": [
+    "litestore"
+  ],
+  "binDir": "",
+  "srcDir": "src",
+  "backend": "c",
+  "ref": "refs/tags/v1.9.0"
+}

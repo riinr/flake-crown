@@ -1,0 +1,57 @@
+{
+  "name": "nim_exodus",
+  "url": "https://github.com/shinriyo/nim_exodus",
+  "method": "git",
+  "tags": [],
+  "description": "Template generator for gester",
+  "license": "MIT",
+  "web": "https://github.com/shinriyo/nim_exodus",
+  "refs": [
+    "refs/heads/feature/alpha",
+    "refs/heads/master",
+    ""
+  ],
+  "heads": [
+    {
+      "name": "exodus",
+      "version": "0.0.1",
+      "author": "Shinsuke Sugita (@shinriyo)",
+      "desc": "Template generator for gester",
+      "license": "MIT",
+      "skipDirs": [
+        "sample"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.15.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.15.2"
+          }
+        },
+        {
+          "name": "jester",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "exodus"
+      ],
+      "binDir": "bin",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/master"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "packages": {
+    "cligen": {
+      "version": "2.0.1",
+      "vcsRevision": "7985e1da80a5c831f52b536c9d963e14d8b34795",
+      "url": "https://github.com/disruptek/cligen",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "abe20e6ae3c41506c1871c85ee31d71fc505d317"
+      }
+    },
+    "unicodedb": {
+      "version": "0.11.1",
+      "vcsRevision": "7d3b449c44730804a3c9b4f4f3dbeca028212d05",
+      "url": "https://github.com/nitely/nim-unicodedb",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "83c3c2d4593df89a5ffc09a2b2d79b51cbc5007b"
+      }
+    },
+    "regex": {
+      "version": "0.20.0",
+      "vcsRevision": "ab98735539ddd8a1eaaa795fd2ca65293c1640b3",
+      "url": "https://github.com/nitely/nim-regex",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unicodedb"
+      ],
+      "checksums": {
+        "sha1": "28ffe0d41204273a97e16c231cb0ced1ad60ecbf"
+      }
+    },
+    "glob": {
+      "version": "0.11.2",
+      "vcsRevision": "286726e26ed9c4203bf41e6f1c41d2f0bc947122",
+      "url": "https://github.com/haltcase/glob",
+      "downloadMethod": "git",
+      "dependencies": [
+        "regex"
+      ],
+      "checksums": {
+        "sha1": "0e383626b94a7f8b9fcd9d0575bb3c2bfca63488"
+      }
+    },
+    "coco": {
+      "version": "0.0.3",
+      "vcsRevision": "0d7b08c9acfd492db19538aceb71901da9e47def",
+      "url": "https://github.com/samuelroy/coco",
+      "downloadMethod": "git",
+      "dependencies": [
+        "cligen",
+        "glob"
+      ],
+      "checksums": {
+        "sha1": "67a431604f74a103964c81a6f22453fbcc4388be"
+      }
+    },
+    "argparse": {
+      "version": "4.0.1",
+      "vcsRevision": "98c7c99bfbcaae750ac515a6fd603f85ed68668f",
+      "url": "https://github.com/iffy/nim-argparse",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "e9c2ebe3f74b1dfc4df773686ae6dab7638a8662"
+      }
+    }
+  }
+}

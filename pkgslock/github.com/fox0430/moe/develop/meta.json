@@ -1,0 +1,56 @@
+{
+  "name": "moe",
+  "version": "0.3.0",
+  "author": "fox0430",
+  "desc": "A command lined based text editor",
+  "license": "GPLv3",
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [
+    "nim"
+  ],
+  "installDirs": [],
+  "installFiles": [],
+  "installExt": [],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 1.6.2",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.6.2"
+      }
+    },
+    {
+      "name": "ncurses",
+      "str": ">= 1.0.2",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.0.2"
+      }
+    },
+    {
+      "name": "unicodedb",
+      "str": ">= 0.11.1",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.11.1"
+      }
+    },
+    {
+      "name": "parsetoml",
+      "str": "#bb903611e91584efd03b7327493ade0859eeddea",
+      "ver": {
+        "kind": "verSpecial",
+        "spe": "#bb903611e91584efd03b7327493ade0859eeddea"
+      }
+    }
+  ],
+  "bin": [
+    "moe"
+  ],
+  "binDir": "",
+  "srcDir": "src",
+  "backend": "c",
+  "ref": "refs/heads/develop"
+}

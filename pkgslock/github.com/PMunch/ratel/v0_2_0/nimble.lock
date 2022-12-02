@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "packages": {
+    "sync": {
+      "version": "1.5.0",
+      "vcsRevision": "9b8c2926286377aeca0cc41cd313eaf140ecea64",
+      "url": "https://github.com/planetis-m/sync",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "fb5b6a024c16e59a1acf4f36743d3b233e14e038"
+      }
+    },
+    "cligen": {
+      "version": "2.0.1",
+      "vcsRevision": "7985e1da80a5c831f52b536c9d963e14d8b34795",
+      "url": "https://github.com/disruptek/cligen",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "abe20e6ae3c41506c1871c85ee31d71fc505d317"
+      }
+    },
+    "npeg": {
+      "version": "0.27.0",
+      "vcsRevision": "4d0fc9b2c01c2d9e3582a916a09a139a3bc43e6e",
+      "url": "https://github.com/zevv/npeg",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "0b9a9283eb524e43afe625c845403cce60ee3472"
+      }
+    },
+    "ups": {
+      "version": "0.0.7",
+      "vcsRevision": "afd93b80bd8c7c1a786b0f649240797cc0f6b538",
+      "url": "https://github.com/disruptek/ups",
+      "downloadMethod": "git",
+      "dependencies": [
+        "npeg"
+      ],
+      "checksums": {
+        "sha1": "5295782a2d168ce6fd98745eaef2044867e91411"
+      }
+    },
+    "grok": {
+      "version": "0.6.3",
+      "vcsRevision": "20ded552bba7b835b00571c9aa33f4f82067d4f0",
+      "url": "https://github.com/disruptek/grok",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "8ef6ba7df78cba000d5c0fdb99871bbecbbecd12"
+      }
+    },
+    "balls": {
+      "version": "3.7.2",
+      "vcsRevision": "b44a94b093f3680db44529251db419061dcca8b6",
+      "url": "https://github.com/disruptek/balls",
+      "downloadMethod": "git",
+      "dependencies": [
+        "grok",
+        "ups",
+        "sync"
+      ],
+      "checksums": {
+        "sha1": "6da0637486e085a12288e96bd144efdbceea8c9a"
+      }
+    },
+    "assume": {
+      "version": "0.6.0",
+      "vcsRevision": "bf5a149a3571b0e2596f9f02ac11631f5173e40c",
+      "url": "https://github.com/disruptek/assume",
+      "downloadMethod": "git",
+      "dependencies": [
+        "balls"
+      ],
+      "checksums": {
+        "sha1": "40256cd4d93adacec5d286f1306f04517eafe057"
+      }
+    },
+    "compiler": {
+      "version": "1.6.6",
+      "vcsRevision": "f1519259f85cbdf2d5ff617c6a5534fcd2ff6942",
+      "url": "https://github.com/nim-lang/Nim.git",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "0eca655ccaff61b99059071e65eced2c0c7af5dc"
+      }
+    },
+    "nimscripter": {
+      "version": "1.0.16",
+      "vcsRevision": "21367e6af82cbb74e5c54589660f2044bab5bdcd",
+      "url": "https://github.com/beef331/nimscripter",
+      "downloadMethod": "git",
+      "dependencies": [
+        "assume"
+      ],
+      "checksums": {
+        "sha1": "166dee23c119bfa065a2f497da02d0c09d5eace0"
+      }
+    }
+  }
+}

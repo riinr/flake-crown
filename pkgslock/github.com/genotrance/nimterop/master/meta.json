@@ -1,0 +1,49 @@
+{
+  "name": "nimterop",
+  "version": "0.6.13",
+  "author": "genotrance",
+  "desc": "C/C++ interop for Nim",
+  "license": "MIT",
+  "skipDirs": [],
+  "skipFiles": [],
+  "skipExt": [],
+  "installDirs": [
+    "nimterop"
+  ],
+  "installFiles": [],
+  "installExt": [],
+  "requires": [
+    {
+      "name": "nim",
+      "str": ">= 0.20.2",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.20.2"
+      }
+    },
+    {
+      "name": "regex",
+      "str": ">= 0.15.0",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "0.15.0"
+      }
+    },
+    {
+      "name": "cligen",
+      "str": ">= 1.0.0",
+      "ver": {
+        "kind": "verEqLater",
+        "ver": "1.0.0"
+      }
+    }
+  ],
+  "bin": [
+    "nimterop/loaf",
+    "nimterop/toast"
+  ],
+  "binDir": "",
+  "srcDir": "",
+  "backend": "c",
+  "ref": "refs/heads/master"
+}

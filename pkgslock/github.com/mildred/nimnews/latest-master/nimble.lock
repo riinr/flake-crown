@@ -1,0 +1,194 @@
+{
+  "version": 1,
+  "packages": {
+    "templates": {
+      "version": "0.5",
+      "vcsRevision": "9c18d46fc1ba70e86eed2515502da34377bee088",
+      "url": "https://github.com/onionhammer/nim-templates.git",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "65f731a0197c31920174deaab896f85d5c495c50"
+      }
+    },
+    "asynctools": {
+      "version": "0.1.1",
+      "vcsRevision": "a314fb8d18a08954fc7ea43e40673acb348ce7cc",
+      "url": "https://github.com/timotheecour/asynctools",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "5e7df4178ee5c148532ff8c44a22015d576624d8"
+      }
+    },
+    "httpbeast": {
+      "version": "0.4.1",
+      "vcsRevision": "abc13d11c210b614960fe8760e581d44cfb2e3e9",
+      "url": "https://github.com/dom96/httpbeast",
+      "downloadMethod": "git",
+      "dependencies": [
+        "asynctools"
+      ],
+      "checksums": {
+        "sha1": "b23e57a401057dcb9b7fae1fb8279a6a2ce1d0b8"
+      }
+    },
+    "unicodedb": {
+      "version": "0.11.1",
+      "vcsRevision": "7d3b449c44730804a3c9b4f4f3dbeca028212d05",
+      "url": "https://github.com/nitely/nim-unicodedb",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "83c3c2d4593df89a5ffc09a2b2d79b51cbc5007b"
+      }
+    },
+    "nimSHA2": {
+      "version": "0.1.1",
+      "vcsRevision": "b8f666069dff1ed0c5142dd1ca692f0e71434716",
+      "url": "https://github.com/jangko/nimSHA2",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "6765d9a04c328c64eb56b3fa90f45690294cc8fd"
+      }
+    },
+    "sha1": {
+      "version": "1.1",
+      "vcsRevision": "92ccc5800bb0ac4865b275a2ce3c1544e98b48bc",
+      "url": "https://github.com/onionhammer/sha1",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "2610d27cf248adf98fd9b86e906eb87781ba9d8c"
+      }
+    },
+    "nimcrypto": {
+      "version": "0.5.4",
+      "vcsRevision": "24e006df85927f64916e60511620583b11403178",
+      "url": "https://github.com/cheatfate/nimcrypto",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "a4db2105de265930f1578bb7957f49fa39b10d9b"
+      }
+    },
+    "hmac": {
+      "version": "0.2.0",
+      "vcsRevision": "371749453ed9800c72a7c7a251687d57b0c70430",
+      "url": "https://github.com/OpenSystemsLab/hmac.nim",
+      "downloadMethod": "git",
+      "dependencies": [
+        "nimSHA2",
+        "sha1",
+        "nimcrypto"
+      ],
+      "checksums": {
+        "sha1": "2daeda5b8608cccd644637122858d7445d0fb837"
+      }
+    },
+    "zstd": {
+      "version": "0.6.0",
+      "vcsRevision": "9e6cf86e357401044fd3b476520321eff268db12",
+      "url": "https://github.com/wltsmrz/nim_zstd",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "239209f862ae556be1def21dabe5c7d2a619ff93"
+      }
+    },
+    "nimassets": {
+      "version": "0.2.4",
+      "vcsRevision": "d06724dd7b80fb470542ab932f3a94af78fe2eb1",
+      "url": "https://github.com/xmonader/nimassets",
+      "downloadMethod": "git",
+      "dependencies": [
+        "zstd"
+      ],
+      "checksums": {
+        "sha1": "71d5510ad86a323fc0ad5dc6b774261e80fe0361"
+      }
+    },
+    "regex": {
+      "version": "0.20.0",
+      "vcsRevision": "ab98735539ddd8a1eaaa795fd2ca65293c1640b3",
+      "url": "https://github.com/nitely/nim-regex",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unicodedb"
+      ],
+      "checksums": {
+        "sha1": "28ffe0d41204273a97e16c231cb0ced1ad60ecbf"
+      }
+    },
+    "scram": {
+      "version": "0.2.0",
+      "vcsRevision": "105d0943f25724edc6829b9ec7465431dd6ce33d",
+      "url": "https://github.com/rgv151/scram",
+      "downloadMethod": "git",
+      "dependencies": [
+        "hmac"
+      ],
+      "checksums": {
+        "sha1": "6091812b5f1cd5e4b210817c421917426fb18229"
+      }
+    },
+    "passgen": {
+      "version": "0.2.0",
+      "vcsRevision": "0842adfc441c62cf9b7aa24c0d55c41b39ef50b2",
+      "url": "https://github.com/rustomax/nim-passgen",
+      "downloadMethod": "git",
+      "dependencies": [
+        "nimcrypto"
+      ],
+      "checksums": {
+        "sha1": "b50460d241a7cf0a323a13998a6ac965275683c9"
+      }
+    },
+    "npeg": {
+      "version": "1.0.0",
+      "vcsRevision": "ed0fb09c9033a0757a3d7911066a1fc5add10846",
+      "url": "https://github.com/zevv/npeg",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "4936fbcc92864829760ccba3580267190a3ffac3"
+      }
+    },
+    "nuuid": {
+      "version": "0.1.0",
+      "vcsRevision": "078f473fc811793119df55b766a3670a62f988c2",
+      "url": "https://github.com/yglukhov/nim-only-uuid",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "79806327bfc9a81cb6ad079339af3f86545af7db"
+      }
+    },
+    "docopt": {
+      "version": "0.7.0",
+      "vcsRevision": "d2ad95f4f95bae7d41493afa7a95c8aaab10b630",
+      "url": "https://github.com/docopt/docopt.nim",
+      "downloadMethod": "git",
+      "dependencies": [
+        "regex"
+      ],
+      "checksums": {
+        "sha1": "60fda67c990733c58ca227a09277c8e8e9dbfa70"
+      }
+    },
+    "jester": {
+      "version": "0.5.0",
+      "vcsRevision": "a21b36a02b7745d6cdcda32d4ab3fba328cda17a",
+      "url": "https://github.com/dom96/jester/",
+      "downloadMethod": "git",
+      "dependencies": [
+        "httpbeast",
+        "asynctools"
+      ],
+      "checksums": {
+        "sha1": "a192ca25bfc05d5de5c9a5fafca3b0cee47d82d2"
+      }
+    }
+  }
+}

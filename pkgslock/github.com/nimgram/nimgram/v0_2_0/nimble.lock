@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "packages": {
+    "zippy": {
+      "version": "0.10.4",
+      "vcsRevision": "17e23253693cf8e09683cd6088b18ebd2789245b",
+      "url": "https://github.com/guzba/zippy",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "be5f12785ba8e7f8b193de5abcc2707e534fbc54"
+      }
+    },
+    "crc32": {
+      "version": "0.5.2",
+      "vcsRevision": "c8ccad9ef1bc50eefc5f8822af48fed74e36238f",
+      "url": "https://github.com/juancarlospaco/nim-crc32",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "11a0af594700c6275389ef4f476c0d679cb4b192"
+      }
+    },
+    "tlparser": {
+      "version": "0.2.0",
+      "vcsRevision": "f451c8e6239bb31d52624ad393fd322a4090aed0",
+      "url": "https://github.com/nimgram/tl-parser",
+      "downloadMethod": "git",
+      "dependencies": [
+        "crc32"
+      ],
+      "checksums": {
+        "sha1": "faa69e17ded8d58edb5e9dc5cb04bf42ed78a9ac"
+      }
+    },
+    "unittest2": {
+      "version": "0.0.5",
+      "vcsRevision": "da8398c45cafd5bd7772da1fc96e3924a18d3823",
+      "url": "https://github.com/status-im/nim-unittest2",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "b3f8493a4948989ef3e645a38b23aad77e851e26"
+      }
+    },
+    "stew": {
+      "version": "0.1.0",
+      "vcsRevision": "7184d2424dc3945657884646a72715d494917aad",
+      "url": "https://github.com/status-im/nim-stew",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unittest2"
+      ],
+      "checksums": {
+        "sha1": "f3125ed2fd126dfd3edbaea14275abd9fa57d703"
+      }
+    },
+    "stint": {
+      "version": "0.0.1",
+      "vcsRevision": "f36623998fdc20349b887b319ca12d8b5a056459",
+      "url": "https://github.com/status-im/nim-stint",
+      "downloadMethod": "git",
+      "dependencies": [
+        "stew"
+      ],
+      "checksums": {
+        "sha1": "70a1ab1e0cd0b9aa2ed8005a0a639cc3c5539db6"
+      }
+    },
+    "tltypes": {
+      "version": "0.2.0",
+      "vcsRevision": "6189a6d708585b02ef8a909e98f1c4c5158185dd",
+      "url": "https://github.com/nimgram/tl-types",
+      "downloadMethod": "git",
+      "dependencies": [
+        "stint",
+        "zippy",
+        "tlparser"
+      ],
+      "checksums": {
+        "sha1": "c5ad7fe6f4cf453b4adbb327e83daae66a58ba79"
+      }
+    },
+    "ndb": {
+      "version": "0.19.9",
+      "vcsRevision": "f9c85711ffc2ba350fb3c64e5ce38ada47380742",
+      "url": "https://github.com/xzfc/ndb.nim",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "33c39596c3ece1128fa0c46ab8d4bed844b7032d"
+      }
+    },
+    "nimcrypto": {
+      "version": "0.5.4",
+      "vcsRevision": "a5742a9a214ac33f91615f3862c7b099aec43b00",
+      "url": "https://github.com/cheatfate/nimcrypto",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "f76c87707cd4e96355b8bb6ef27e7f8b0aac1e08"
+      }
+    },
+    "bigints": {
+      "version": "1.0.0",
+      "vcsRevision": "646d8578d232d9af4a8c7a7c4b3d45d86a442cc5",
+      "url": "https://github.com/dadadani/bigints",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "e66876204ac333cd6dc69514cbcdeaf878c94419"
+      }
+    },
+    "norm": {
+      "version": "2.5.2",
+      "vcsRevision": "c6c438b2d604c1201f9a29b3bd154cd6e50ea5c3",
+      "url": "https://github.com/moigagoo/norm",
+      "downloadMethod": "git",
+      "dependencies": [
+        "ndb"
+      ],
+      "checksums": {
+        "sha1": "2719043d0859cdc58e8bd52c5db802ad9fa8d4cb"
+      }
+    }
+  }
+}

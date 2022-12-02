@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "packages": {
+    "npeg": {
+      "version": "1.0.0",
+      "vcsRevision": "ed0fb09c9033a0757a3d7911066a1fc5add10846",
+      "url": "https://github.com/zevv/npeg",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "4936fbcc92864829760ccba3580267190a3ffac3"
+      }
+    },
+    "foreach": {
+      "version": "1.0.2",
+      "vcsRevision": "dedfdd415e8423378d74fa3986f9f25a1127ebf9",
+      "url": "https://github.com/disruptek/foreach",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "211b83e96b493fee47022ae8e6f90f8323c5da7d"
+      }
+    },
+    "openapi": {
+      "version": "2.0.1",
+      "vcsRevision": "e146b5443091e9268363a16f640efd1540184c3e",
+      "url": "https://github.com/disruptek/openapi",
+      "downloadMethod": "git",
+      "dependencies": [
+        "npeg",
+        "foreach"
+      ],
+      "checksums": {
+        "sha1": "f4695fb0c2ab4278e78ec66433973bd4061af024"
+      }
+    }
+  }
+}

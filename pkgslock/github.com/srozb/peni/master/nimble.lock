@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "packages": {
+    "cligen": {
+      "version": "2.0.1",
+      "vcsRevision": "7985e1da80a5c831f52b536c9d963e14d8b34795",
+      "url": "https://github.com/disruptek/cligen",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "abe20e6ae3c41506c1871c85ee31d71fc505d317"
+      }
+    },
+    "ansiparse": {
+      "version": "0.2.0",
+      "vcsRevision": "8bddf513441ecf454026038c5b2ae1f42732c6d5",
+      "url": "https://github.com/PMunch/ansiparse",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "cd60183d257a205bff143303b314effaca07e652"
+      }
+    },
+    "nancy": {
+      "version": "0.1.1",
+      "vcsRevision": "caabc8c44670c4d7208892af2bddbb4b0e569ce7",
+      "url": "https://github.com/PMunch/nancy",
+      "downloadMethod": "git",
+      "dependencies": [
+        "ansiparse"
+      ],
+      "checksums": {
+        "sha1": "c26f64977ff4c17d4a3dde890b386ab5716aed66"
+      }
+    },
+    "unicodedb": {
+      "version": "0.11.1",
+      "vcsRevision": "7d3b449c44730804a3c9b4f4f3dbeca028212d05",
+      "url": "https://github.com/nitely/nim-unicodedb",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "83c3c2d4593df89a5ffc09a2b2d79b51cbc5007b"
+      }
+    },
+    "nimcrypto": {
+      "version": "0.5.4",
+      "vcsRevision": "24e006df85927f64916e60511620583b11403178",
+      "url": "https://github.com/cheatfate/nimcrypto",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "a4db2105de265930f1578bb7957f49fa39b10d9b"
+      }
+    },
+    "hashlib": {
+      "version": "1.0.1",
+      "vcsRevision": "84e0247555e4488594975900401baaf5bbbfb531",
+      "url": "https://github.com/khchen/hashlib",
+      "downloadMethod": "git",
+      "dependencies": [
+        "nimcrypto"
+      ],
+      "checksums": {
+        "sha1": "22498f3ef7495a1962207bf7a66cd7970225d7a0"
+      }
+    },
+    "termstyle": {
+      "version": "0.1.0",
+      "vcsRevision": "eefd9f17071df2b8c13e18537cd799acd7f41501",
+      "url": "https://github.com/PMunch/termstyle",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "4641c9f9e587d5cf04ccd3ce0bf1ef0263a16299"
+      }
+    },
+    "regex": {
+      "version": "0.20.0",
+      "vcsRevision": "ab98735539ddd8a1eaaa795fd2ca65293c1640b3",
+      "url": "https://github.com/nitely/nim-regex",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unicodedb"
+      ],
+      "checksums": {
+        "sha1": "28ffe0d41204273a97e16c231cb0ced1ad60ecbf"
+      }
+    },
+    "authenticode": {
+      "version": "0.1.1",
+      "vcsRevision": "6c245c318311f2c51f5502bb8a628c1d3abd45ef",
+      "url": "https://github.com/srozb/authenticode",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "5863509efac7c3b58b36dce6c6f9c8ef65710f0d"
+      }
+    },
+    "libfuzzy": {
+      "version": "0.1.1",
+      "vcsRevision": "362d39ac496754489e93dd441e3e7810a2ff91fa",
+      "url": "https://github.com/srozb/nim-libfuzzy",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "8c34d8830b7574b72aad367c47d5e2c6f2c535d9"
+      }
+    },
+    "libpe": {
+      "version": "0.3.6",
+      "vcsRevision": "4c01a7f4b161493cf48138973505b97834f8bae2",
+      "url": "https://github.com/srozb/nim-libpe",
+      "downloadMethod": "git",
+      "dependencies": [
+        "hashlib",
+        "libfuzzy"
+      ],
+      "checksums": {
+        "sha1": "e643f51cc3b703f4cc98fd9a27e01802a4acff52"
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "packages": {
+    "unittest2": {
+      "version": "0.0.5",
+      "vcsRevision": "da8398c45cafd5bd7772da1fc96e3924a18d3823",
+      "url": "https://github.com/status-im/nim-unittest2",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "b3f8493a4948989ef3e645a38b23aad77e851e26"
+      }
+    },
+    "stew": {
+      "version": "0.1.0",
+      "vcsRevision": "7184d2424dc3945657884646a72715d494917aad",
+      "url": "https://github.com/status-im/nim-stew",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unittest2"
+      ],
+      "checksums": {
+        "sha1": "f3125ed2fd126dfd3edbaea14275abd9fa57d703"
+      }
+    },
+    "nimcrypto": {
+      "version": "0.5.4",
+      "vcsRevision": "24e006df85927f64916e60511620583b11403178",
+      "url": "https://github.com/cheatfate/nimcrypto",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "a4db2105de265930f1578bb7957f49fa39b10d9b"
+      }
+    },
+    "secp256k1": {
+      "version": "0.5.2",
+      "vcsRevision": "eb5868e06904b719d1e1d83a200bc3fb52ffce79",
+      "url": "https://github.com/status-im/nim-secp256k1",
+      "downloadMethod": "git",
+      "dependencies": [
+        "stew",
+        "nimcrypto"
+      ],
+      "checksums": {
+        "sha1": "b16cb7ffa9fc54e7e8d091a0a2f7e4ad4e48d978"
+      }
+    },
+    "eth_keys": {
+      "version": "0.0.2",
+      "vcsRevision": "b09f5ee894183d8e49c02b0d9c21c617a7d1ce6b",
+      "url": "https://github.com/status-im/nim-eth-keys",
+      "downloadMethod": "git",
+      "dependencies": [
+        "nimcrypto",
+        "secp256k1"
+      ],
+      "checksums": {
+        "sha1": "edb8fcfa2e417e9a4dabba083088584303cb314b"
+      }
+    }
+  }
+}
