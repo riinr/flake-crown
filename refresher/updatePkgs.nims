@@ -23,8 +23,8 @@ proc run(pkgItems: seq[JsonNode]; cmd: string) =
       exec "sleep 0.23"
       echo fmt"""Running {cmd} for {pkg["name"]}"""
       if DEBUG != "":
-        echo fmt"echo {pkgJSON.quoteShell}|{cmd} &"
-      exec fmt"echo {pkgJSON.quoteShell}|{cmd} &"
+        echo fmt"echo {pkgJSON.quoteShell}|{cmd}"
+      exec fmt"echo {pkgJSON.quoteShell}|{cmd}"
 
 
 if defined process:

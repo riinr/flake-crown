@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "packages": {
+    "nimcuda": {
+      "version": "0.1.8",
+      "vcsRevision": "eb9a7ad738fafed0eef36f57560f8098ca72fe8a",
+      "url": "https://github.com/andreaferretti/nimcuda",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "21d08820c520285d3ff1d715c1856dbee61ad16c"
+      }
+    },
+    "unittest2": {
+      "version": "0.0.5",
+      "vcsRevision": "da8398c45cafd5bd7772da1fc96e3924a18d3823",
+      "url": "https://github.com/status-im/nim-unittest2",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "b3f8493a4948989ef3e645a38b23aad77e851e26"
+      }
+    },
+    "stew": {
+      "version": "0.1.0",
+      "vcsRevision": "7184d2424dc3945657884646a72715d494917aad",
+      "url": "https://github.com/status-im/nim-stew",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unittest2"
+      ],
+      "checksums": {
+        "sha1": "f3125ed2fd126dfd3edbaea14275abd9fa57d703"
+      }
+    },
+    "stint": {
+      "version": "0.0.1",
+      "vcsRevision": "d1acb427434bf3aa8433acb6873228bbfd16b0f4",
+      "url": "https://github.com/status-im/nim-stint",
+      "downloadMethod": "git",
+      "dependencies": [
+        "stew"
+      ],
+      "checksums": {
+        "sha1": "762bf2816ec2b2669f7ec1dcb07cb8cb68954d06"
+      }
+    },
+    "nimblas": {
+      "version": "0.2.2",
+      "vcsRevision": "da7907887efed7bf2114f0ea48340d81a9d5c8ed",
+      "url": "https://github.com/andreaferretti/nimblas",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "bf7a368e3801dff08d1d71292c32db904a4c639b"
+      }
+    },
+    "nimlapack": {
+      "version": "0.2.1",
+      "vcsRevision": "983fa690c98814ddef92747de70586a50379a804",
+      "url": "https://github.com/andreaferretti/nimlapack",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "5847bfc910cc62fcfa4f53e7a3970c7a1dae0997"
+      }
+    },
+    "neo": {
+      "version": "0.3.3",
+      "vcsRevision": "089116c0bac441a3d52a7bfabf985e9063d7e4ea",
+      "url": "https://github.com/andreaferretti/neo",
+      "downloadMethod": "git",
+      "dependencies": [
+        "nimblas",
+        "nimcuda",
+        "nimlapack"
+      ],
+      "checksums": {
+        "sha1": "368fb97cf144d3792ed4ee34d8a0c79acb5777a2"
+      }
+    },
+    "bigints": {
+      "version": "1.0.0",
+      "vcsRevision": "646d8578d232d9af4a8c7a7c4b3d45d86a442cc5",
+      "url": "https://github.com/dadadani/bigints",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "e66876204ac333cd6dc69514cbcdeaf878c94419"
+      }
+    }
+  }
+}

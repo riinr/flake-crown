@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "packages": {
+    "asynctools": {
+      "version": "0.1.1",
+      "vcsRevision": "a314fb8d18a08954fc7ea43e40673acb348ce7cc",
+      "url": "https://github.com/timotheecour/asynctools",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "5e7df4178ee5c148532ff8c44a22015d576624d8"
+      }
+    },
+    "httpbeast": {
+      "version": "0.4.1",
+      "vcsRevision": "abc13d11c210b614960fe8760e581d44cfb2e3e9",
+      "url": "https://github.com/dom96/httpbeast",
+      "downloadMethod": "git",
+      "dependencies": [
+        "asynctools"
+      ],
+      "checksums": {
+        "sha1": "b23e57a401057dcb9b7fae1fb8279a6a2ce1d0b8"
+      }
+    },
+    "ws": {
+      "version": "0.5.0",
+      "vcsRevision": "9536bf99ddf5948db221ccb7bb3663aa238a8e21",
+      "url": "https://github.com/treeform/ws",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "ae4daf4ae302d0431f3c2d385ae9d2fe767a3246"
+      }
+    },
+    "unittest2": {
+      "version": "0.0.5",
+      "vcsRevision": "da8398c45cafd5bd7772da1fc96e3924a18d3823",
+      "url": "https://github.com/status-im/nim-unittest2",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "b3f8493a4948989ef3e645a38b23aad77e851e26"
+      }
+    },
+    "bearssl": {
+      "version": "0.2.0",
+      "vcsRevision": "d0271920a734b8c02186785390e2fdf56624790b",
+      "url": "https://github.com/status-im/nim-bearssl",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unittest2"
+      ],
+      "checksums": {
+        "sha1": "37b69817fef413cd74094bcb00c365d7e98b3890"
+      }
+    },
+    "bearssl_pkey_decoder": {
+      "version": "0.1.0",
+      "vcsRevision": "fd2bc29d1283eb5d988a5c8a5660c1be9b9265f8",
+      "url": "https://github.com/yglukhov/bearssl_pkey_decoder",
+      "downloadMethod": "git",
+      "dependencies": [
+        "bearssl"
+      ],
+      "checksums": {
+        "sha1": "1db838bf5cc7e54228cf647b847eb1cb06349c64"
+      }
+    },
+    "jwt": {
+      "version": "0.2",
+      "vcsRevision": "adb9a46621813fbac7bed51db65f08078307a995",
+      "url": "https://github.com/yglukhov/nim-jwt.git",
+      "downloadMethod": "git",
+      "dependencies": [
+        "bearssl",
+        "bearssl_pkey_decoder"
+      ],
+      "checksums": {
+        "sha1": "a0c6845f63fc4ee24c3da59e517880a205163b62"
+      }
+    },
+    "googleapi": {
+      "version": "0.1.4",
+      "vcsRevision": "70a04f1d6bc9542eab3107a272392811ec3a3fb8",
+      "url": "https://github.com/treeform/googleapi",
+      "downloadMethod": "git",
+      "dependencies": [
+        "jwt"
+      ],
+      "checksums": {
+        "sha1": "65c57b203ae26e72c1e613523dec58171bd09e80"
+      }
+    },
+    "mime": {
+      "version": "0.0.3",
+      "vcsRevision": "c078527fbea7390f19d79f995237cdfc93575a7c",
+      "url": "https://github.com/enthus1ast/nimMime",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "ba88fd1b56fc87b7da970f547f3eddf19274a995"
+      }
+    },
+    "jester": {
+      "version": "0.5.0",
+      "vcsRevision": "a21b36a02b7745d6cdcda32d4ab3fba328cda17a",
+      "url": "https://github.com/dom96/jester/",
+      "downloadMethod": "git",
+      "dependencies": [
+        "httpbeast",
+        "asynctools"
+      ],
+      "checksums": {
+        "sha1": "a192ca25bfc05d5de5c9a5fafca3b0cee47d82d2"
+      }
+    }
+  }
+}

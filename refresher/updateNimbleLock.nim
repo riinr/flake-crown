@@ -53,6 +53,11 @@ proc staticUrl(pkg: JsonNode, gitRef: string): seq[string] =
       else:
         tmpName
     nameLo  = name.toLower
+    alias   =
+      if pkg.hasKey "alias":
+        pkg["alias"].getStr
+      else:
+        nameLo
     nameNN  = nameLo.replace("nim-", "")
     uri     = pkg["url"].getStr.replace(".com:", ".com/").replace("git@", "https://").parseUri
     pth     = uri.path.replace(".git", "").strip(chars={'/'})
@@ -67,14 +72,16 @@ proc staticUrl(pkg: JsonNode, gitRef: string): seq[string] =
       fmt"https://raw.githubusercontent.com/{pth}/{gitRef}/{subDir}nimble.lock",
       fmt"https://raw.githubusercontent.com/{pth}/{gitRef}/{subDir}{name}.nimble",
       fmt"https://raw.githubusercontent.com/{pth}/{gitRef}/{subDir}{nameLo}.nimble",
-      fmt"https://raw.githubusercontent.com/{pth}/{gitRef}/{subDir}{nameNN}.nimble"
+      fmt"https://raw.githubusercontent.com/{pth}/{gitRef}/{subDir}{nameNN}.nimble",
+      fmt"https://raw.githubusercontent.com/{pth}/{gitRef}/{subDir}{alias}.nimble",
     ]
   if uri.hostname.contains "git.sr.ht":
     return @[
       fmt"https://git.sr.th/{pth}/blob/{gitRef}/{subDir}nimble.lock",
       fmt"https://git.sr.th/{pth}/blob/{gitRef}/{subDir}{name}.nimble",
       fmt"https://git.sr.th/{pth}/blob/{gitRef}/{subDir}{nameLo}.nimble",
-      fmt"https://git.sr.th/{pth}/blob/{gitRef}/{subDir}{nameNN}.nimble"
+      fmt"https://git.sr.th/{pth}/blob/{gitRef}/{subDir}{nameNN}.nimble",
+      fmt"https://git.sr.th/{pth}/blob/{gitRef}/{subDir}{alias}.nimble",
     ]
   if uri.hostname.contains "gitlab.com":
     let 
@@ -83,7 +90,8 @@ proc staticUrl(pkg: JsonNode, gitRef: string): seq[string] =
       fmt"https://gitlab.com/{pth}/-/raw/{tag}/{subDir}nimble.lock",
       fmt"https://gitlab.com/{pth}/-/raw/{tag}/{subDir}{name}.nimble",
       fmt"https://gitlab.com/{pth}/-/raw/{tag}/{subDir}{nameLo}.nimble",
-      fmt"https://gitlab.com/{pth}/-/raw/{tag}/{subDir}{nameNN}.nimble"
+      fmt"https://gitlab.com/{pth}/-/raw/{tag}/{subDir}{nameNN}.nimble",
+      fmt"https://gitlab.com/{pth}/-/raw/{tag}/{subDir}{alias}.nimble",
     ]
   if uri.hostname.contains "ozzuu.com":
     let 
@@ -97,7 +105,8 @@ proc staticUrl(pkg: JsonNode, gitRef: string): seq[string] =
       fmt"https://git.ozzuu.com/{pth}/raw/{refTyp}/{tag}/{subDir}nimble.lock",
       fmt"https://git.ozzuu.com/{pth}/raw/{refTyp}/{tag}/{subDir}{name}.nimble",
       fmt"https://git.ozzuu.com/{pth}/raw/{refTyp}/{tag}/{subDir}{nameLo}.nimble",
-      fmt"https://git.ozzuu.com/{pth}/raw/{refTyp}/{tag}/{subDir}{nameNN}.nimble"
+      fmt"https://git.ozzuu.com/{pth}/raw/{refTyp}/{tag}/{subDir}{nameNN}.nimble",
+      fmt"https://git.ozzuu.com/{pth}/raw/{refTyp}/{tag}/{subDir}{alias}.nimble",
     ]
   if uri.hostname.contains "codeberg.org":
     let 
@@ -111,14 +120,16 @@ proc staticUrl(pkg: JsonNode, gitRef: string): seq[string] =
       fmt"https://codeberg.org/{pth}/raw/{refTyp}/{tag}/{subDir}nimble.lock",
       fmt"https://codeberg.org/{pth}/raw/{refTyp}/{tag}/{subDir}{name}.nimble",
       fmt"https://codeberg.org/{pth}/raw/{refTyp}/{tag}/{subDir}{nameLo}.nimble",
-      fmt"https://codeberg.org/{pth}/raw/{refTyp}/{tag}/{subDir}{nameNN}.nimble"
+      fmt"https://codeberg.org/{pth}/raw/{refTyp}/{tag}/{subDir}{nameNN}.nimble",
+      fmt"https://codeberg.org/{pth}/raw/{refTyp}/{tag}/{subDir}{alias}.nimble",
     ]
   if uri.hostname.contains "njoseph.me":
     return @[
       fmt"https://njoseph.me/{pth}.git/blob_plain/{gitRef}:/{subDir}nimble.lock",
       fmt"https://njoseph.me/{pth}.git/blob_plain/{gitRef}:/{subDir}{name}.nimble",
       fmt"https://njoseph.me/{pth}.git/blob_plain/{gitRef}:/{subDir}{nameLo}.nimble",
-      fmt"https://njoseph.me/{pth}.git/blob_plain/{gitRef}:/{subDir}{nameNN}.nimble"
+      fmt"https://njoseph.me/{pth}.git/blob_plain/{gitRef}:/{subDir}{nameNN}.nimble",
+      fmt"https://njoseph.me/{pth}.git/blob_plain/{gitRef}:/{subDir}{alias}.nimble",
     ]
   let 
     tag    = gitRef.replace("refs/heads/", "").replace("refs/tags/", "")
@@ -126,7 +137,8 @@ proc staticUrl(pkg: JsonNode, gitRef: string): seq[string] =
     fmt"https://{uri.hostname}/{pth}/raw/{tag}/{subDir}nimble.lock",
     fmt"https://{uri.hostname}/{pth}/raw/{tag}/{subDir}{name}.nimble",
     fmt"https://{uri.hostname}/{pth}/raw/{tag}/{subDir}{nameLo}.nimble",
-    fmt"https://{uri.hostname}/{pth}/raw/{tag}/{subDir}{nameNN}.nimble"
+    fmt"https://{uri.hostname}/{pth}/raw/{tag}/{subDir}{nameNN}.nimble",
+    fmt"https://{uri.hostname}/{pth}/raw/{tag}/{subDir}{alias}.nimble",
   ]
 
 
@@ -224,7 +236,7 @@ proc refsMeta(pkg: JsonNode): auto =
       cp -u {tmpDir}/*.nimble {flakeDir}/ 2>/dev/null || true
       cp -u {tmpDir}/*.lock   {flakeDir}/ 2>/dev/null || true
       cd {flakedir}
-      [[ ! -f nimble.lock ]] && find . -name '*.nimble'  -execdir nimble-locker lock \;
+      [[ ! -f nimble.lock ]] && find . -name '*.nimble' -execdir nimble-locker --silent -y lock \;
     """
 
 proc projectMeta(pkg: JsonNode): auto =

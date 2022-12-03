@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "packages": {
+    "cligen": {
+      "version": "2.0.1",
+      "vcsRevision": "7985e1da80a5c831f52b536c9d963e14d8b34795",
+      "url": "https://github.com/disruptek/cligen",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "abe20e6ae3c41506c1871c85ee31d71fc505d317"
+      }
+    },
+    "unittest2": {
+      "version": "0.0.5",
+      "vcsRevision": "da8398c45cafd5bd7772da1fc96e3924a18d3823",
+      "url": "https://github.com/status-im/nim-unittest2",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "b3f8493a4948989ef3e645a38b23aad77e851e26"
+      }
+    },
+    "bearssl": {
+      "version": "0.2.0",
+      "vcsRevision": "d0271920a734b8c02186785390e2fdf56624790b",
+      "url": "https://github.com/status-im/nim-bearssl",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unittest2"
+      ],
+      "checksums": {
+        "sha1": "37b69817fef413cd74094bcb00c365d7e98b3890"
+      }
+    },
+    "npeg": {
+      "version": "0.27.0",
+      "vcsRevision": "4d0fc9b2c01c2d9e3582a916a09a139a3bc43e6e",
+      "url": "https://github.com/zevv/npeg",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "0b9a9283eb524e43afe625c845403cce60ee3472"
+      }
+    },
+    "foreach": {
+      "version": "1.0.2",
+      "vcsRevision": "dedfdd415e8423378d74fa3986f9f25a1127ebf9",
+      "url": "https://github.com/disruptek/foreach",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "211b83e96b493fee47022ae8e6f90f8323c5da7d"
+      }
+    },
+    "rest": {
+      "version": "1.0.5",
+      "vcsRevision": "6e7107d8bed70fd94e892453d337a3b042583684",
+      "url": "https://github.com/disruptek/rest.git",
+      "downloadMethod": "git",
+      "dependencies": [
+        "foreach"
+      ],
+      "checksums": {
+        "sha1": "154d8e5cede954d1dfd51c38b54239617e905a5a"
+      }
+    },
+    "openapi": {
+      "version": "3.3.1",
+      "vcsRevision": "6a4424fc184c61781b16d5f75cdd3d809736673f",
+      "url": "https://github.com/disruptek/openapi.git",
+      "downloadMethod": "git",
+      "dependencies": [
+        "npeg",
+        "foreach",
+        "rest"
+      ],
+      "checksums": {
+        "sha1": "019b7521a78791c692f1b17375accd9e64e00d57"
+      }
+    },
+    "linktools": {
+      "version": "0.1.0",
+      "vcsRevision": "e87ef761279e5b8687581e4763ec518b911113bf",
+      "url": "https://github.com/yglukhov/linktools",
+      "downloadMethod": "git",
+      "dependencies": [
+        "cligen"
+      ],
+      "checksums": {
+        "sha1": "9a3687bee56b122bc2f8b92c056c36594a03b693"
+      }
+    },
+    "bearssl_pkey_decoder": {
+      "version": "0.1.0",
+      "vcsRevision": "fd2bc29d1283eb5d988a5c8a5660c1be9b9265f8",
+      "url": "https://github.com/yglukhov/bearssl_pkey_decoder",
+      "downloadMethod": "git",
+      "dependencies": [
+        "bearssl"
+      ],
+      "checksums": {
+        "sha1": "1db838bf5cc7e54228cf647b847eb1cb06349c64"
+      }
+    },
+    "jwt": {
+      "version": "0.2",
+      "vcsRevision": "de8fcd3b6646807c9b27708d793b1dd9245f530a",
+      "url": "https://github.com/yglukhov/nim-jwt.git",
+      "downloadMethod": "git",
+      "dependencies": [
+        "linktools",
+        "bearssl",
+        "bearssl_pkey_decoder"
+      ],
+      "checksums": {
+        "sha1": "a7dbde1d4ab5f70b88178c7676eb29d31cc19d9b"
+      }
+    }
+  }
+}

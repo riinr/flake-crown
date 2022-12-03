@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "packages": {
+    "unittest2": {
+      "version": "0.0.5",
+      "vcsRevision": "da8398c45cafd5bd7772da1fc96e3924a18d3823",
+      "url": "https://github.com/status-im/nim-unittest2",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "b3f8493a4948989ef3e645a38b23aad77e851e26"
+      }
+    },
+    "stew": {
+      "version": "0.1.0",
+      "vcsRevision": "7184d2424dc3945657884646a72715d494917aad",
+      "url": "https://github.com/status-im/nim-stew",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unittest2"
+      ],
+      "checksums": {
+        "sha1": "f3125ed2fd126dfd3edbaea14275abd9fa57d703"
+      }
+    },
+    "stint": {
+      "version": "0.0.1",
+      "vcsRevision": "d1acb427434bf3aa8433acb6873228bbfd16b0f4",
+      "url": "https://github.com/status-im/nim-stint",
+      "downloadMethod": "git",
+      "dependencies": [
+        "stew"
+      ],
+      "checksums": {
+        "sha1": "762bf2816ec2b2669f7ec1dcb07cb8cb68954d06"
+      }
+    },
+    "bigints": {
+      "version": "1.0.0",
+      "vcsRevision": "646d8578d232d9af4a8c7a7c4b3d45d86a442cc5",
+      "url": "https://github.com/dadadani/bigints",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "e66876204ac333cd6dc69514cbcdeaf878c94419"
+      }
+    }
+  }
+}

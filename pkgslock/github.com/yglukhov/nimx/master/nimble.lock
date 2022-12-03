@@ -1,0 +1,289 @@
+{
+  "version": 1,
+  "packages": {
+    "cligen": {
+      "version": "2.0.1",
+      "vcsRevision": "7985e1da80a5c831f52b536c9d963e14d8b34795",
+      "url": "https://github.com/disruptek/cligen",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "abe20e6ae3c41506c1871c85ee31d71fc505d317"
+      }
+    },
+    "wasmrt": {
+      "version": "0.1.0",
+      "vcsRevision": "9803d6bd0b9f0732afe768b2c1fe4ace971bd7df",
+      "url": "https://github.com/yglukhov/wasmrt",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "5c0646fe9463047bcb9ac91aaadd35bf6cdd2eb4"
+      }
+    },
+    "jsbind": {
+      "version": "0.1.1",
+      "vcsRevision": "f623de0db495ad7bcc948948e1fb38a090687834",
+      "url": "https://github.com/yglukhov/jsbind",
+      "downloadMethod": "git",
+      "dependencies": [
+        "wasmrt"
+      ],
+      "checksums": {
+        "sha1": "74d128e68fe77bb8020c23112464b3de116f10cb"
+      }
+    },
+    "jnim": {
+      "version": "0.5.1",
+      "vcsRevision": "68a9b21aa0b93ad77b390671325de3a77875c44a",
+      "url": "https://github.com/yglukhov/jnim",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "12537aa0d2820a5ba6971e0ea899e4470a04a874"
+      }
+    },
+    "oldgtk3": {
+      "version": "0.1.0",
+      "vcsRevision": "4e60fd1c4c08241cc22336362fc4f487c633299c",
+      "url": "https://github.com/stefansalewski/oldgtk3",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "6d31de32a94eb25bf95b3e4269db0ee65f11d9d9"
+      }
+    },
+    "clurp": {
+      "version": "0.1.0",
+      "vcsRevision": "1f2f9e5f7b4da19c2dfe9d2052d19e5e344dad18",
+      "url": "https://github.com/yglukhov/clurp",
+      "downloadMethod": "git",
+      "dependencies": [
+        "cligen"
+      ],
+      "checksums": {
+        "sha1": "b9ff36dc646bd586a1496a709e30425f7b6ff668"
+      }
+    },
+    "nimsl": {
+      "version": "0.3.3",
+      "vcsRevision": "7ff6309ebe4bf9bc78338b71160802dabf0dfe7b",
+      "url": "https://github.com/yglukhov/nimsl",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "d904bd2ab4aae61d2d62939d9bc3b803df6d40e7"
+      }
+    },
+    "rect_packer": {
+      "version": "0.1.0",
+      "vcsRevision": "fd27778418523e634f0b9cab393d70564938c259",
+      "url": "https://github.com/yglukhov/rect_packer",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "228bd47b51b91dafe99beb732fc491de2cc95977"
+      }
+    },
+    "darwin": {
+      "version": "0.1.1",
+      "vcsRevision": "19015f5d4c183f49e77b08317035a358163e8bb7",
+      "url": "https://github.com/yglukhov/darwin",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "49e29e4cb4a4aa9fbc39d323c134faa2a310a42d"
+      }
+    },
+    "os_files": {
+      "version": "0.1.2",
+      "vcsRevision": "5c154b9f9b81d047938117c00c2579c0c3754d8b",
+      "url": "https://github.com/tormund/os_files",
+      "downloadMethod": "git",
+      "dependencies": [
+        "oldgtk3",
+        "jsbind",
+        "darwin"
+      ],
+      "checksums": {
+        "sha1": "fdcfd6b84d8956cbc018406a8c3c7022fc524909"
+      }
+    },
+    "x11": {
+      "version": "1.1",
+      "vcsRevision": "a33254a5ac0df76786ffdaf9d736add242179964",
+      "url": "https://github.com/SolitudeSF/x11",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "98eada2482123f39497b36bcac2094c618f5046a"
+      }
+    },
+    "sdl2": {
+      "version": "2.0.4",
+      "vcsRevision": "4b42141b97ee7683029de0f4e2ae3dc74d63bad7",
+      "url": "https://github.com/nim-lang/sdl2",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "ff413d7f590f1114d4ee7096257abcdf06d6e87e"
+      }
+    },
+    "android": {
+      "version": "0.1.0",
+      "vcsRevision": "f3b5b8aba7d1146ff1b5f866e073ea1086e760fa",
+      "url": "https://github.com/yglukhov/android.git",
+      "downloadMethod": "git",
+      "dependencies": [
+        "jnim"
+      ],
+      "checksums": {
+        "sha1": "5c67dff5b4148724a98c82cfcc8952c17ae41e30"
+      }
+    },
+    "closure_compiler": {
+      "version": "0.3.5",
+      "vcsRevision": "64d730ff207ec85a1bc7549d14e968cebe085ffe",
+      "url": "https://github.com/yglukhov/closure_compiler.git",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "b60db31ed38009981b3a380d23db9b1a62f080c6"
+      }
+    },
+    "plists": {
+      "version": "0.2.0",
+      "vcsRevision": "783f661aa38e8c93d88388d16b90ec35d38099c1",
+      "url": "https://github.com/yglukhov/plists",
+      "downloadMethod": "git",
+      "dependencies": [
+        "darwin"
+      ],
+      "checksums": {
+        "sha1": "2009f80653d24dc399e784aff27d057cdfc1a863"
+      }
+    },
+    "opengl": {
+      "version": "1.2.6",
+      "vcsRevision": "f1467126bd48d47a20d85115115ec3640f414165",
+      "url": "https://github.com/nim-lang/opengl",
+      "downloadMethod": "git",
+      "dependencies": [
+        "x11"
+      ],
+      "checksums": {
+        "sha1": "39bb76646d0726898b835593713cad3101cb19ee"
+      }
+    },
+    "nake": {
+      "version": "1.9.4",
+      "vcsRevision": "8bfbd2fd86ea5935858a1c21a368952998c5e32b",
+      "url": "https://github.com/fowlmouth/nake/",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "c05485d3fe838ad2a5baee52bdb56cbcda22364e"
+      }
+    },
+    "kiwi": {
+      "version": "0.1.0",
+      "vcsRevision": "acc45bb20c3e126a4f4f1bb046de008fc5253de8",
+      "url": "https://github.com/yglukhov/kiwi",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "0fc00b55fbae2fc80d4f17795b96dc65599bdeae"
+      }
+    },
+    "variant": {
+      "version": "0.2.12",
+      "vcsRevision": "4df11d38d59d4903b1b8366a513f9bb5a1bc8917",
+      "url": "https://github.com/yglukhov/variant.git",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "4fdf9813ad321bcae5843ac7eaeb5526479282e0"
+      }
+    },
+    "nest": {
+      "version": "0.1.0",
+      "vcsRevision": "03b9c54925965c991e83527b256423130657e87a",
+      "url": "https://github.com/kedean/nest",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "9d33bc3b3ffe50bfa746389c97a024284d0b0c38"
+      }
+    },
+    "nimBMP": {
+      "version": "0.1.8",
+      "vcsRevision": "d419da8dbe99c9b92f891b2ba13c767deeb94be6",
+      "url": "https://github.com/jangko/nimBMP",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "49964cc16945b9b4cc87b181201e6195b7df89d8"
+      }
+    },
+    "nimPNG": {
+      "version": "0.3.2",
+      "vcsRevision": "e49f3c7bd0f71f9843ad5469f2841e0caeccc120",
+      "url": "https://github.com/jangko/nimPNG",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "419e55d3ece9924592c2a2231a4e2dcd3fa570d1"
+      }
+    },
+    "ttf": {
+      "version": "0.2.12",
+      "vcsRevision": "ca93eecd11397df380f98704365690fa5dd17f5b",
+      "url": "https://github.com/yglukhov/ttf",
+      "downloadMethod": "git",
+      "dependencies": [
+        "nimBMP"
+      ],
+      "checksums": {
+        "sha1": "b1c7c07060c0d45009ad0686b24648971e73a9c8"
+      }
+    },
+    "nester": {
+      "version": "0.2.0",
+      "vcsRevision": "c1843733a2fdfe8068ce2375f07ffd4a9a40d026",
+      "url": "https://github.com/tormund/nester",
+      "downloadMethod": "git",
+      "dependencies": [
+        "nest",
+        "cligen"
+      ],
+      "checksums": {
+        "sha1": "56e9bd4a2d1d384bab0cd03e5184507e039a2b6e"
+      }
+    },
+    "nimwebp": {
+      "version": "0.1.0",
+      "vcsRevision": "3a254c10e085bb374fd653118f73dd2759bb81ca",
+      "url": "https://github.com/tormund/nimwebp",
+      "downloadMethod": "git",
+      "dependencies": [
+        "nimPNG",
+        "clurp"
+      ],
+      "checksums": {
+        "sha1": "0d1501a2df3d937918183af899eda88d15d4f604"
+      }
+    },
+    "async_http_request": {
+      "version": "0.1.4",
+      "vcsRevision": "351e68770aed11e4c22b8d3d1de1d0c35872a785",
+      "url": "https://github.com/yglukhov/async_http_request",
+      "downloadMethod": "git",
+      "dependencies": [
+        "jsbind"
+      ],
+      "checksums": {
+        "sha1": "2dd86115b232d5296d8f8d0a6eb0a1de05abae73"
+      }
+    }
+  }
+}
