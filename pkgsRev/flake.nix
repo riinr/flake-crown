@@ -36,6 +36,6 @@
       lib.head = pkgMames: builtins.listToAttrs (map heads pkgMames);
       lib.meta = nimMetas;
       lib.srcs = pkgNames: builtins.listToAttrs (map srcs  pkgNames);
-      lib.src  = pkgName:  srcOf pkgName;
+      lib.src  = srcOf;
     };
 }
