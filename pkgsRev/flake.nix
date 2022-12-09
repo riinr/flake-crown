@@ -33,10 +33,10 @@
       heads = name: { inherit name; value = srcOf name "HEAD"; };
       srcs  = name: { inherit name; value = srcOf name; };
     in {
+      lib.fetchGit = name: ref: builtins.fetchGit (srcOf name ref);
       lib.head = pkgMames: builtins.listToAttrs (map heads pkgMames);
       lib.meta = nimMetas;
-      lib.srcs = pkgNames: builtins.listToAttrs (map srcs  pkgNames);
       lib.src  = srcOf;
-      lib.fetchGit = name: ref: builtins.fetchGit (srcOf name ref);
+      lib.srcs = pkgNames: builtins.listToAttrs (map srcs  pkgNames);
     };
 }

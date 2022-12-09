@@ -6,16 +6,14 @@
 
   outputs = { self, nixpkgs, nfl, nimrevs, ...}@deps:
   let 
-    lib   = nfl.lib;
-    args  = ["self" "nixpkgs" "nfl" "nimrevs"];
-    toPkg = name: ref: val: lib.mkRefOutput {
+    toPkg = name: ref: val: nfl.lib.mkRefOutput {
       inherit self nixpkgs;
       deps = {};
-      src  = nimrevs.lib.fetchGit name ref;
       meta = val;
+      src  = nimrevs.lib.fetchGit name ref;
     };
     pkg   = name: builtins.mapAttrs (toPkg name) nimrevs.lib.meta.${name}.refs;
-    pkgs  = name:   lib.mkProjectOutput {
+    pkgs  = name: nfl.lib.mkProjectOutput {
       inherit self nixpkgs;
       meta = nimrevs.lib.meta.${name};
       refs = pkg name;
