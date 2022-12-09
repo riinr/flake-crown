@@ -22,7 +22,7 @@
                 then fromJSON ./${pkgUrl}/meta.json
                 else nimPkg;
               };
-      refToName = ref: builtins.replaceStrings ["refs/" "/" " " "."] ["" "_" "_" "_"];
+      refToName = builtins.replaceStrings ["refs/" "/" " " "."] ["" "_" "_" "_"];
       srcOf = name: ref:
       {
           name = "${name}-${refToName ref}-src";
@@ -36,5 +36,6 @@
       lib.head = pkgMames: builtins.listToAttrs (map heads pkgMames);
       lib.meta = nimMetas;
       lib.srcs = pkgNames: builtins.listToAttrs (map srcs  pkgNames);
+      lib.src  = pkgName:  srcOf pkgName;
     };
 }
