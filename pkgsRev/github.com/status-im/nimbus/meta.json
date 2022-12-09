@@ -144,7 +144,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "718f4991cfbdbe4ecf5344a73ae9218375d4cecc"
+      "rev": "179b4adac3a943462eb9945bae9557de447d73fa"
     },
     "refs/heads/Content-payload-sszlist": {
       "name": "nimbus",
@@ -492,120 +492,7 @@
       "ref": "refs/heads/async-vm2",
       "rev": "9d89c24d363879b015524064e836172440f0cec2"
     },
-    "refs/heads/caching-db-demo": {
-      "name": "nimbus",
-      "version": "0.1.0",
-      "author": "Status Research & Development GmbH",
-      "desc": "An Ethereum 2.0 Sharding Client for Resource-Restricted Devices",
-      "license": "Apache License 2.0",
-      "skipDirs": [
-        "tests",
-        "examples"
-      ],
-      "skipFiles": [],
-      "skipExt": [
-        "nim"
-      ],
-      "installDirs": [],
-      "installFiles": [],
-      "installExt": [],
-      "requires": [
-        {
-          "name": "nim",
-          "str": ">= 0.18.1",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "0.18.1"
-          }
-        },
-        {
-          "name": "nimcrypto",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "rlp",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "stint",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "rocksdb",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "eth_trie",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "eth_common",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "json_rpc",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "asyncdispatch2",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "eth_p2p",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "eth_keyfile",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "eth_keys",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        }
-      ],
-      "bin": [
-        "nimbus/nimbus"
-      ],
-      "binDir": "",
-      "srcDir": "",
-      "backend": "c",
-      "ref": "refs/heads/caching-db-demo",
-      "rev": "ba84e174c8a37051eeb70688323b772f29615c32"
-    },
-    "refs/heads/cleanup-txpool": {
+    "refs/heads/bump-deps": {
       "name": "nimbus",
       "version": "0.1.0",
       "author": "Status Research & Development GmbH",
@@ -739,8 +626,121 @@
       "binDir": "build",
       "srcDir": "",
       "backend": "c",
-      "ref": "refs/heads/cleanup-txpool",
-      "rev": "93725bdc02b1d13185842e9d8b1acba1ed0d7b9c"
+      "ref": "refs/heads/bump-deps",
+      "rev": "1b273b398307c9998dafb8ea74d55aa6ba114449"
+    },
+    "refs/heads/caching-db-demo": {
+      "name": "nimbus",
+      "version": "0.1.0",
+      "author": "Status Research & Development GmbH",
+      "desc": "An Ethereum 2.0 Sharding Client for Resource-Restricted Devices",
+      "license": "Apache License 2.0",
+      "skipDirs": [
+        "tests",
+        "examples"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.1"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "rlp",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "rocksdb",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "eth_trie",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "eth_common",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "json_rpc",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asyncdispatch2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "eth_p2p",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "eth_keyfile",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "eth_keys",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "nimbus/nimbus"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/caching-db-demo",
+      "rev": "ba84e174c8a37051eeb70688323b772f29615c32"
     },
     "refs/heads/debug": {
       "name": "nimbus",
@@ -1461,6 +1461,143 @@
       "backend": "c",
       "ref": "refs/heads/headerWithProof",
       "rev": "efaa55f11647ef62b94d675da2d0c5cc39805e8f"
+    },
+    "refs/heads/history-network-refactor-cleanup": {
+      "name": "nimbus",
+      "version": "0.1.0",
+      "author": "Status Research & Development GmbH",
+      "desc": "An Ethereum 2.0 Sharding Client for Resource-Restricted Devices",
+      "license": "Apache License 2.0",
+      "skipDirs": [
+        "tests",
+        "examples"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "bncurve",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "chronos",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "eth",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "json_rpc",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "libbacktrace",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "rocksdb",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "ethash",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "blscurve",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "evmc",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "web3",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "nimbus",
+        "fluffy",
+        "portalcli",
+        "lc_proxy"
+      ],
+      "binDir": "build",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/history-network-refactor-cleanup",
+      "rev": "3321a9defd4d3d7f74d1fe6eea71e82d819cc6bf"
     },
     "refs/heads/jl/evmc-dynamic-loader": {
       "name": "nimbus",
@@ -2350,7 +2487,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "718f4991cfbdbe4ecf5344a73ae9218375d4cecc"
+      "rev": "179b4adac3a943462eb9945bae9557de447d73fa"
     },
     "refs/heads/merge-interop-test": {
       "name": "nimbus",
@@ -3561,143 +3698,6 @@
       "backend": "c",
       "ref": "refs/tags/201903-testnet0",
       "rev": "692031cdf16dee98c5a73f42590d4762409e8e8a"
-    },
-    "refs/tags/nightly": {
-      "name": "nimbus",
-      "version": "0.1.0",
-      "author": "Status Research & Development GmbH",
-      "desc": "An Ethereum 2.0 Sharding Client for Resource-Restricted Devices",
-      "license": "Apache License 2.0",
-      "skipDirs": [
-        "tests",
-        "examples"
-      ],
-      "skipFiles": [],
-      "skipExt": [
-        "nim"
-      ],
-      "installDirs": [],
-      "installFiles": [],
-      "installExt": [],
-      "requires": [
-        {
-          "name": "nim",
-          "str": ">= 1.2.0",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "1.2.0"
-          }
-        },
-        {
-          "name": "bncurve",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "chronicles",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "chronos",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "eth",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "json_rpc",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "libbacktrace",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "nimcrypto",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "stew",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "stint",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "rocksdb",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "ethash",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "blscurve",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "evmc",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "web3",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        }
-      ],
-      "bin": [
-        "nimbus",
-        "fluffy",
-        "portalcli",
-        "lc_proxy"
-      ],
-      "binDir": "build",
-      "srcDir": "",
-      "backend": "c",
-      "ref": "refs/tags/nightly",
-      "rev": "3766eddf5abdbf83f4b7acf4780af4cbca8adf86"
     },
     "refs/tags/sim-stat": {
       "name": "nimbus",

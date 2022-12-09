@@ -22,17 +22,19 @@
                 then fromJSON ./${pkgUrl}/meta.json
                 else nimPkg;
            };
-      srcOf = name: {
+      srcOf = name: ref: {
         inherit name;
-        value = builtins.fetchGit {
-          url  = nimMetas.${name}.url;
-          name = "${name}-head-src";
-          rev  = nimMetas.${name}.refs.HEAD.rev;
+        value = {
+          name = "${name}-src";
           ref  = nimMetas.${name}.refs.HEAD.ref;
+          rev  = nimMetas.${name}.refs.HEAD.rev;
+          url  = nimMetas.${name}.url;
         };
       };
+      heads = name: srcOf name "HEAD";
     in builtins.trace (builtins.attrNames nimMetas.sdl2.refs) {
-      lib.nimMetas = nimMetas;
-      lib.srcs     = pkgMames: builtins.listToAttrs (map srcOf pkgMames);
+      lib.meta = nimMetas;
+      lib.src  = pkgMames: builtins.listToAttrs (map srcOf pkgMames);
+      lib.head = pkgMames: builtins.listToAttrs (map heads pkgMames);
     };
 }

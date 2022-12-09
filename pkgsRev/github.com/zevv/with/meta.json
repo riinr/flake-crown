@@ -12,7 +12,7 @@
   "refs": {
     "HEAD": {
       "name": "with",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "author": "zevv",
       "desc": "Simple 'with' macro for Nim",
       "license": "MIT",
@@ -41,11 +41,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "af8462d25a43e3ddecdaa5fb8368dbc13a576cd2"
+      "rev": "bd36a44410dd8365649e425ccade817178628e12"
     },
     "refs/heads/master": {
       "name": "with",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "author": "zevv",
       "desc": "Simple 'with' macro for Nim",
       "license": "MIT",
@@ -74,7 +74,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "af8462d25a43e3ddecdaa5fb8368dbc13a576cd2"
+      "rev": "bd36a44410dd8365649e425ccade817178628e12"
     },
     "refs/tags/0.4.0": {
       "name": "with",
@@ -174,6 +174,39 @@
       "backend": "c",
       "ref": "refs/tags/v0.2.0",
       "rev": "e4540f68ab52b67482cdb8b1b9bf2f07a09839de"
+    },
+    "refs/tags/v0.5.0": {
+      "name": "with",
+      "version": "0.5.0",
+      "author": "zevv",
+      "desc": "Simple 'with' macro for Nim",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "with.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.5.0",
+      "rev": "bd36a44410dd8365649e425ccade817178628e12"
     }
   }
 }
