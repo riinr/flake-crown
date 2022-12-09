@@ -1,0 +1,944 @@
+{
+  "name": "arturo",
+  "url": "https://github.com/arturo-lang/arturo",
+  "method": "git",
+  "tags": [
+    "nim",
+    "vm",
+    "programming",
+    "rebol",
+    "ruby",
+    "haskell",
+    "functional",
+    "homoiconic"
+  ],
+  "description": "Simple, modern and portable interpreted programming language for efficient scripting",
+  "license": "MIT",
+  "web": "http://arturo-lang.io/",
+  "doc": "http://arturo-lang.io/",
+  "refs": {
+    "HEAD": {
+      "rev": "4c1d20b282de0c1268fa2c87717c81007599fcc8",
+      "ref": "HEAD"
+    },
+    "refs/heads/Fix-functions-with-already-defined-param-as-a-function": {
+      "rev": "3692a0b5702d6438242e7becbe8deff6be7458c5",
+      "ref": "refs/heads/Fix-functions-with-already-defined-param-as-a-function"
+    },
+    "refs/heads/Fix-parsing-of-nested-paths": {
+      "rev": "8c7138109fb40f445d1ce4de56ec45888fe45b15",
+      "ref": "refs/heads/Fix-parsing-of-nested-paths"
+    },
+    "refs/heads/Fix-reflection-info-function": {
+      "rev": "2520fbfb887955529c2fff1ec9a2a77fde7a867d",
+      "ref": "refs/heads/Fix-reflection-info-function"
+    },
+    "refs/heads/add-HTTP-requests-to-stdlib": {
+      "rev": "0da6b091672396e3bd42b842476879e8a7b6a339",
+      "ref": "refs/heads/add-HTTP-requests-to-stdlib"
+    },
+    "refs/heads/add-basic-profiler": {
+      "rev": "53550d1f6094cc56217416ed5766eb1e56252262",
+      "ref": "refs/heads/add-basic-profiler"
+    },
+    "refs/heads/add-builtin-function-type": {
+      "name": "arturo",
+      "version": "0.9.4",
+      "author": "arturo-lang",
+      "desc": "Simple, modern and portable interpreted programming language for efficient scripting",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        }
+      ],
+      "bin": [
+        "arturo"
+      ],
+      "binDir": "bin",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/add-builtin-function-type",
+      "rev": "eb57cb6a224f462875d1ee3697f4bd65ce1fcc72"
+    },
+    "refs/heads/add-bytecode-optimizer": {
+      "rev": "ff22c250adbeb6d1a932ebb76f7afb1c586e0585",
+      "ref": "refs/heads/add-bytecode-optimizer"
+    },
+    "refs/heads/add-bytecode-support-for-executable-blocks": {
+      "rev": "4d9b13929b2215de6436379364d01f61cc7b8bb3",
+      "ref": "refs/heads/add-bytecode-support-for-executable-blocks"
+    },
+    "refs/heads/add-caching-to-workflows": {
+      "rev": "1ad5f5fad2e68409a65bb3c73af650c68963ac13",
+      "ref": "refs/heads/add-caching-to-workflows"
+    },
+    "refs/heads/add-color-value-type": {
+      "rev": "efdb3d785d27b07125712c036975919ce24e9127",
+      "ref": "refs/heads/add-color-value-type"
+    },
+    "refs/heads/add-complex-value-type": {
+      "rev": "1a8b208e17e7893046fae554a0bcb62091ddd053",
+      "ref": "refs/heads/add-complex-value-type"
+    },
+    "refs/heads/add-enforceNoRaises-where-applies": {
+      "rev": "3d3835b6c462bf6760d73223c6aede6fd63b1bc6",
+      "ref": "refs/heads/add-enforceNoRaises-where-applies"
+    },
+    "refs/heads/add-extensive-path-support": {
+      "rev": "ce0549de5cf9d7336e5a1e8dbe516620863b1976",
+      "ref": "refs/heads/add-extensive-path-support"
+    },
+    "refs/heads/add-likely-unlikely-branches": {
+      "rev": "4a4f25942e36116817fd592523c6ccf059ef1583",
+      "ref": "refs/heads/add-likely-unlikely-branches"
+    },
+    "refs/heads/add-line-number-tracking": {
+      "rev": "6e7f7523e93f27fcc1aab6106460c36417f52995",
+      "ref": "refs/heads/add-line-number-tracking"
+    },
+    "refs/heads/add-missing-.with-option-for-Iterators": {
+      "rev": "5ee3a36717ca70492a91e54c7137d8c25c0ab98f",
+      "ref": "refs/heads/add-missing-.with-option-for-Iterators"
+    },
+    "refs/heads/add-missing-examples": {
+      "rev": "a418ea9b97f990d44918b1e3f50dc726249c5cfd",
+      "ref": "refs/heads/add-missing-examples"
+    },
+    "refs/heads/add-missing-issues-as-TODOs": {
+      "rev": "8c9d5733cc50ebe6857986502d1a84d862e2b20a",
+      "ref": "refs/heads/add-missing-issues-as-TODOs"
+    },
+    "refs/heads/add-option-for-compressed-bytecode": {
+      "rev": "82512fb4c18ad40d53153a97a242a77084dfc235",
+      "ref": "refs/heads/add-option-for-compressed-bytecode"
+    },
+    "refs/heads/add-parsable-comments": {
+      "rev": "dfaab495601a37025960f1727d3009910f47ccac",
+      "ref": "refs/heads/add-parsable-comments"
+    },
+    "refs/heads/add-regex-core-type": {
+      "rev": "06aac11e694610f4301181ea037d33063a677873",
+      "ref": "refs/heads/add-regex-core-type"
+    },
+    "refs/heads/add-ruby-style-sort_by": {
+      "rev": "2f3d03a1cc01e5cd37c3c2c04595ea95e00a7802",
+      "ref": "refs/heads/add-ruby-style-sort_by"
+    },
+    "refs/heads/add-semver-type": {
+      "rev": "2dadef964ddcad1b1bdf5653ba6059c63d1acc0b",
+      "ref": "refs/heads/add-semver-type"
+    },
+    "refs/heads/add-support-for-big-floating-numbers": {
+      "rev": "79cdc55d3d50754320d3a8a5a8ee0916915830f7",
+      "ref": "refs/heads/add-support-for-big-floating-numbers"
+    },
+    "refs/heads/add-support-for-digraphs": {
+      "rev": "737510462054a6cf1ad0a97354f1865d0b35947c",
+      "ref": "refs/heads/add-support-for-digraphs"
+    },
+    "refs/heads/add-support-for-rational-type": {
+      "rev": "cd001845bac24fe77a424c7477cd47ccfad40928",
+      "ref": "refs/heads/add-support-for-rational-type"
+    },
+    "refs/heads/add-support-for-scientific-notation": {
+      "rev": "fa35e97979c262435c0d2d68e5b69e59f24ea8c0",
+      "ref": "refs/heads/add-support-for-scientific-notation"
+    },
+    "refs/heads/add-support-for-symbol-literals": {
+      "rev": "6c8142ac2f67582be75c3b8ff5cce9274a08947b",
+      "ref": "refs/heads/add-support-for-symbol-literals"
+    },
+    "refs/heads/add-support-for-type-blocks": {
+      "rev": "00e8386391b085385f6233858e1afc943111f3f5",
+      "ref": "refs/heads/add-support-for-type-blocks"
+    },
+    "refs/heads/any-type-dictionary-keys": {
+      "rev": "04221efdd8116eb15aefbee0f4069b76cbbf1304",
+      "ref": "refs/heads/any-type-dictionary-keys"
+    },
+    "refs/heads/benchmarks-and-optimization": {
+      "rev": "1dd56c266d112d0ac034a9a2b982b196361a06fe",
+      "ref": "refs/heads/benchmarks-and-optimization"
+    },
+    "refs/heads/better-date-builtin-functions": {
+      "rev": "ff71a8d61f802c094470ac0fc06e55d2c5028744",
+      "ref": "refs/heads/better-date-builtin-functions"
+    },
+    "refs/heads/better-formatting-for-function-examples": {
+      "rev": "e7d7107f949d0cb97c3d56c39e3b073cfa0b907e",
+      "ref": "refs/heads/better-formatting-for-function-examples"
+    },
+    "refs/heads/better-handling-of-commandline-args": {
+      "rev": "bb22dad996153f06065e4dfa8e032fd2b5a6ad57",
+      "ref": "refs/heads/better-handling-of-commandline-args"
+    },
+    "refs/heads/better-objects-with-define": {
+      "rev": "fd67d025fb1cd9ae29cd7d63aa27490c90b3a382",
+      "ref": "refs/heads/better-objects-with-define"
+    },
+    "refs/heads/better-support-for-Binary-values": {
+      "rev": "496dcfc6ac7e4a803de57b2a9d0726f3650ac0f4",
+      "ref": "refs/heads/better-support-for-Binary-values"
+    },
+    "refs/heads/better-system-execute-function": {
+      "rev": "20022d953a8a2bbbee88b3fd89ce86130281ed63",
+      "ref": "refs/heads/better-system-execute-function"
+    },
+    "refs/heads/better-unicode-sorting": {
+      "rev": "8c4cd0473a0328785a3751adc8b1603f8e0ad0b0",
+      "ref": "refs/heads/better-unicode-sorting"
+    },
+    "refs/heads/better-value-type-verification-and-identification": {
+      "rev": "a28bf9e2e1fdc23e6eaaf234f2922d94c29fce22",
+      "ref": "refs/heads/better-value-type-verification-and-identification"
+    },
+    "refs/heads/better-webview-and-ui": {
+      "rev": "1904bb210522e15db2c7b3220138c438930c90f3",
+      "ref": "refs/heads/better-webview-and-ui"
+    },
+    "refs/heads/bigints-for-web-build": {
+      "rev": "0ed4000716bca14d034dedaf0b15b65410180b36",
+      "ref": "refs/heads/bigints-for-web-build"
+    },
+    "refs/heads/binary-values-as-a-distinct-module": {
+      "rev": "f30a5971e42af0ea12b20ee71531a4ee49f82f98",
+      "ref": "refs/heads/binary-values-as-a-distinct-module"
+    },
+    "refs/heads/change-release-builds-configuration": {
+      "rev": "591780fbd7f81e2a5f9910cca0b48cbfcfe52231",
+      "ref": "refs/heads/change-release-builds-configuration"
+    },
+    "refs/heads/clean-up-execBlock": {
+      "rev": "f659c85c552fc85dbd404c742f03bcf5a4d9566a",
+      "ref": "refs/heads/clean-up-execBlock"
+    },
+    "refs/heads/cleaner-and-more-efficient-scoping-rules": {
+      "rev": "3272defcedec589bedb260ca2f981db6360c269f",
+      "ref": "refs/heads/cleaner-and-more-efficient-scoping-rules"
+    },
+    "refs/heads/cleanup-and-rewrite-RC-examples": {
+      "rev": "eb7df4339da6e31fcadb6770acc01bca7eb68938",
+      "ref": "refs/heads/cleanup-and-rewrite-RC-examples"
+    },
+    "refs/heads/cleanup-bytecode-dumps": {
+      "rev": "79311912569db58e73a2c48849f5d93519323c08",
+      "ref": "refs/heads/cleanup-bytecode-dumps"
+    },
+    "refs/heads/cleanup-examples": {
+      "rev": "81395bea35648b93eafe3665764ea811bda5c375",
+      "ref": "refs/heads/cleanup-examples"
+    },
+    "refs/heads/cleanup-installation-nimscript": {
+      "rev": "2c96e8323ce374e27d67e755a7fdaa9b57a7522c",
+      "ref": "refs/heads/cleanup-installation-nimscript"
+    },
+    "refs/heads/cleanup-webview-leftovers": {
+      "rev": "4caab2c3968abd6ecbbf4d0e56a66eae8b7edac3",
+      "ref": "refs/heads/cleanup-webview-leftovers"
+    },
+    "refs/heads/combinatorics-related-standard-library-functions": {
+      "rev": "f5f5c26a91147c10131e14f7d5767bcbc235c3cd",
+      "ref": "refs/heads/combinatorics-related-standard-library-functions"
+    },
+    "refs/heads/compilable-with-1.6.8": {
+      "rev": "db81fb6c6e99fae36479ae23afb48f0b400fb4db",
+      "ref": "refs/heads/compilable-with-1.6.8"
+    },
+    "refs/heads/convert-Translation-tuples-to-objects": {
+      "rev": "d4aeb5121e2c67dd5fa6260915640e097cc29020",
+      "ref": "refs/heads/convert-Translation-tuples-to-objects"
+    },
+    "refs/heads/convert-ValueDict-to-references": {
+      "rev": "4fdf132eb208d787e804bfe7df0b9fbe4246db53",
+      "ref": "refs/heads/convert-ValueDict-to-references"
+    },
+    "refs/heads/convert-booleans-to-ternary-logic-values": {
+      "rev": "738e2664e60070916ccf5ad93e0c65fbd4540a63",
+      "ref": "refs/heads/convert-booleans-to-ternary-logic-values"
+    },
+    "refs/heads/convert-custom-type-user-objects-to-disctinct-type": {
+      "rev": "dd54808a828097b1d2b721b849f7d8767703d4be",
+      "ref": "refs/heads/convert-custom-type-user-objects-to-disctinct-type"
+    },
+    "refs/heads/convert-error-context-descriptor-to-enum": {
+      "rev": "e97eed80121719d309c6b3e3c62b363f07fcdae6",
+      "ref": "refs/heads/convert-error-context-descriptor-to-enum"
+    },
+    "refs/heads/convert-procs-to-funcs": {
+      "rev": "f365a36f9b6669ca5bbd47f972f21b292513d4fd",
+      "ref": "refs/heads/convert-procs-to-funcs"
+    },
+    "refs/heads/convert-symtable-to-an-unordered-table": {
+      "rev": "dbe995b9d48529015229f829c5fbbedde2ea6887",
+      "ref": "refs/heads/convert-symtable-to-an-unordered-table"
+    },
+    "refs/heads/convert-unnecessary-empty-value-constructors-to-value-copies": {
+      "rev": "5dbb999aca1d185b5b7bdfeb0babe961a2265b43",
+      "ref": "refs/heads/convert-unnecessary-empty-value-constructors-to-value-copies"
+    },
+    "refs/heads/create-alphabet-function": {
+      "rev": "f4018d15a9814a179ba7abeb8c264501cfaa66aa",
+      "ref": "refs/heads/create-alphabet-function"
+    },
+    "refs/heads/create-new-quantity-type": {
+      "rev": "c818d05fb8ac8d535287baa93954578d5d48350c",
+      "ref": "refs/heads/create-new-quantity-type"
+    },
+    "refs/heads/create-new-values-when-pushing-onto-the-stack": {
+      "rev": "133a58c07a95180d94f3096715bd62986e296b44",
+      "ref": "refs/heads/create-new-values-when-pushing-onto-the-stack"
+    },
+    "refs/heads/create-real-benchmarking-tool": {
+      "rev": "f67bc6b6bd450fbffb2bd06b4cbd5a71fb5db720",
+      "ref": "refs/heads/create-real-benchmarking-tool"
+    },
+    "refs/heads/debug-and-fix-arrowright": {
+      "rev": "719eb39606597e73f4ad8f647a312c1241097ca5",
+      "ref": "refs/heads/debug-and-fix-arrowright"
+    },
+    "refs/heads/debug-and-fix-fatarrowright": {
+      "rev": "6dd1eafabe3bf3d3754567a5c9dc6b717de663e2",
+      "ref": "refs/heads/debug-and-fix-fatarrowright"
+    },
+    "refs/heads/drkameleon-devel": {
+      "name": "arturo",
+      "version": "0.9.4",
+      "author": "arturo-lang",
+      "desc": "Simple, modern and portable interpreted programming language for efficient scripting",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        }
+      ],
+      "bin": [
+        "arturo"
+      ],
+      "binDir": "bin",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/drkameleon-devel",
+      "rev": "3b243ee64bc2a5378a4283efcf9a147ef1c8b541"
+    },
+    "refs/heads/eagerly-evaluate-Path-blocks": {
+      "rev": "92ab7b1412d17f6b3b50e0da7ab3bc1894be2cec",
+      "ref": "refs/heads/eagerly-evaluate-Path-blocks"
+    },
+    "refs/heads/eliminate-unnecessary-copies-from-for-loops": {
+      "rev": "01a073e2ff99cc4dedbcd28c00e4eb9dc7435257",
+      "ref": "refs/heads/eliminate-unnecessary-copies-from-for-loops"
+    },
+    "refs/heads/eliminate-unnecessary-explicit-seq-initializations": {
+      "rev": "88530ea121bed45e272f3337c89cff0050fe95c9",
+      "ref": "refs/heads/eliminate-unnecessary-explicit-seq-initializations"
+    },
+    "refs/heads/enable-PORTABLE-mode-embeddable-strings": {
+      "rev": "7f0fdbd275f2b95aaf15ecee0ebe9a26e3760c8b",
+      "ref": "refs/heads/enable-PORTABLE-mode-embeddable-strings"
+    },
+    "refs/heads/enhance-sequence-handling-throughout": {
+      "rev": "0028f8e6dac8decb3209a56e5ff6b38b6bfedce2",
+      "ref": "refs/heads/enhance-sequence-handling-throughout"
+    },
+    "refs/heads/evaluator-optimizations": {
+      "rev": "6e8a09455ee0e14c18f4616f4e128c5c2dbd3802",
+      "ref": "refs/heads/evaluator-optimizations"
+    },
+    "refs/heads/experimental-ffi": {
+      "rev": "81cb39ef1252da0b532c96be4e0cef4bd9904449",
+      "ref": "refs/heads/experimental-ffi"
+    },
+    "refs/heads/faster-append-for-arrays": {
+      "rev": "e998da180e98fa85d91741fe43052ab77f07614d",
+      "ref": "refs/heads/faster-append-for-arrays"
+    },
+    "refs/heads/files-module-additions": {
+      "rev": "3ab459f9420ac1dfd11e1028e7a0413cf3c13cbb",
+      "ref": "refs/heads/files-module-additions"
+    },
+    "refs/heads/fix-Fold-function-in-iterators-module": {
+      "rev": "b9a3bc7e9ed85f2f2131c283c7fd45e8257e4f1e",
+      "ref": "refs/heads/fix-Fold-function-in-iterators-module"
+    },
+    "refs/heads/fix-branching": {
+      "rev": "d8a07e31ec0b267149d9f99b75e25abba311b987",
+      "ref": "refs/heads/fix-branching"
+    },
+    "refs/heads/fix-bug-with-array-construction": {
+      "rev": "c725219a510f748b01e77bbfc0c816c46a407fa8",
+      "ref": "refs/heads/fix-bug-with-array-construction"
+    },
+    "refs/heads/fix-custom-user-types": {
+      "rev": "82051badf8a6ab388f4b9d3dff7ed25fc2c5cb9a",
+      "ref": "refs/heads/fix-custom-user-types"
+    },
+    "refs/heads/fix-erroneous-stdlib-function-signatures": {
+      "rev": "aa87eba64f7b8facd4fba382a7c04bde6d379de7",
+      "ref": "refs/heads/fix-erroneous-stdlib-function-signatures"
+    },
+    "refs/heads/fix-error-handling": {
+      "rev": "e4ec6bf2792952d4b061c2a2c1c76a193926c484",
+      "ref": "refs/heads/fix-error-handling"
+    },
+    "refs/heads/fix-freebsd-workflow-and-fix-nim-to-1.6.6": {
+      "rev": "979042532128add8f4c53d934f11771631847200",
+      "ref": "refs/heads/fix-freebsd-workflow-and-fix-nim-to-1.6.6"
+    },
+    "refs/heads/fix-function-arity-handling": {
+      "rev": "af67bffce216bb742f37cbed4e146f706385c369",
+      "ref": "refs/heads/fix-function-arity-handling"
+    },
+    "refs/heads/fix-install-script": {
+      "name": "arturo",
+      "version": "0.9.4",
+      "author": "arturo-lang",
+      "desc": "Simple, modern and portable interpreted programming language for efficient scripting",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        }
+      ],
+      "bin": [
+        "arturo"
+      ],
+      "binDir": "bin",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/fix-install-script",
+      "rev": "c781e045a3dcd603b22f9dd43f9a0add91548593"
+    },
+    "refs/heads/fix-path-handling": {
+      "rev": "33f7d37643401e13619312f078e27972f6a10178",
+      "ref": "refs/heads/fix-path-handling"
+    },
+    "refs/heads/fix-pipe-operators": {
+      "rev": "a9a84eaa5b1588e87dd32e6a60e2f050caec85b7",
+      "ref": "refs/heads/fix-pipe-operators"
+    },
+    "refs/heads/fix-repl-autocompletion": {
+      "rev": "de6fdfab8a49fd30a72d94fe951bb4f4f8806d7d",
+      "ref": "refs/heads/fix-repl-autocompletion"
+    },
+    "refs/heads/fix-single-arrow-sugar": {
+      "rev": "f1d5c2f40739cdd1cf9556ad00ab2a2124983d23",
+      "ref": "refs/heads/fix-single-arrow-sugar"
+    },
+    "refs/heads/fix-templating-engine": {
+      "rev": "bddfb84854b1cb7b83c46976f1105430509ac801",
+      "ref": "refs/heads/fix-templating-engine"
+    },
+    "refs/heads/fix-windows-ci-workflow-and-dll-dependencies": {
+      "rev": "b6e22827900d7454a5d1345fe144c5eb8305c580",
+      "ref": "refs/heads/fix-windows-ci-workflow-and-dll-dependencies"
+    },
+    "refs/heads/further-enhancements-for-vm-exec": {
+      "rev": "1570e6be2a35c4c9a9626d297501f3b3bd49fd1a",
+      "ref": "refs/heads/further-enhancements-for-vm-exec"
+    },
+    "refs/heads/further-optimizations-for-Iterators": {
+      "rev": "75382ecff58bba3bc4420a16a4223132eb74c448",
+      "ref": "refs/heads/further-optimizations-for-Iterators"
+    },
+    "refs/heads/general-cleanup": {
+      "rev": "bb8aa365482598a65f0942a2f7ca6cf3f1a00dcd",
+      "ref": "refs/heads/general-cleanup"
+    },
+    "refs/heads/implement-custom-types": {
+      "rev": "6d14e88f34f55301652fdaf7617bcb66d2ad24b5",
+      "ref": "refs/heads/implement-custom-types"
+    },
+    "refs/heads/improve-`InPlace`-and-`InPlaced`": {
+      "rev": "e7e9df6a10177137031e2ec72e3c8fd400438747",
+      "ref": "refs/heads/improve-`InPlace`-and-`InPlaced`"
+    },
+    "refs/heads/improve-cleanBlock": {
+      "rev": "595de882d0764f64ba5733fd85484ceea9ee4c41",
+      "ref": "refs/heads/improve-cleanBlock"
+    },
+    "refs/heads/improve-type-safety": {
+      "rev": "513fd62e74e05cbdeaa8268f7083f545050735d5",
+      "ref": "refs/heads/improve-type-safety"
+    },
+    "refs/heads/improve-webview-and-ui": {
+      "rev": "a538045ae7ae8dbe17f52bbdf1b576bceed627a3",
+      "ref": "refs/heads/improve-webview-and-ui"
+    },
+    "refs/heads/introduce-clean-blocks": {
+      "rev": "237dfd77672b5465551afb37bb20c1b71fd86ef8",
+      "ref": "refs/heads/introduce-clean-blocks"
+    },
+    "refs/heads/introduce-leakless-functions": {
+      "rev": "69383d6c72ea7834b866fea17aeae10a5af309da",
+      "ref": "refs/heads/introduce-leakless-functions"
+    },
+    "refs/heads/introduce-new-Range-type": {
+      "rev": "cc40d754845973474910b48f5a101b98353156a4",
+      "ref": "refs/heads/introduce-new-Range-type"
+    },
+    "refs/heads/isolate-pure-values-in-separate-modules": {
+      "rev": "5585bb14fd530366b62a1515f55c1a1e7ecfa129",
+      "ref": "refs/heads/isolate-pure-values-in-separate-modules"
+    },
+    "refs/heads/isolate-value-types-in-a-distinct-module": {
+      "rev": "8fc2403f4012d23d9c7e73c86214253617948750",
+      "ref": "refs/heads/isolate-value-types-in-a-distinct-module"
+    },
+    "refs/heads/library-additions-and-fixes": {
+      "rev": "00a923f76355aea93a7ad5bc901c2aabdac884dc",
+      "ref": "refs/heads/library-additions-and-fixes"
+    },
+    "refs/heads/logical-values-as-a-distinct-module": {
+      "rev": "c7c6a60c7102058bb25075b23e92b653338e9741",
+      "ref": "refs/heads/logical-values-as-a-distinct-module"
+    },
+    "refs/heads/make-arturo-compilable-to-js": {
+      "rev": "a4837cecc7a687a42d650a523c9822d06f690ea9",
+      "ref": "refs/heads/make-arturo-compilable-to-js"
+    },
+    "refs/heads/make-builds-lighter": {
+      "rev": "58434d61291d3e6f64f405217abf62cb17e31ddc",
+      "ref": "refs/heads/make-builds-lighter"
+    },
+    "refs/heads/make-copyValue-work-for-all-values": {
+      "rev": "47f89330eb3b708666de2e830af3f75ece1b7c83",
+      "ref": "refs/heads/make-copyValue-work-for-all-values"
+    },
+    "refs/heads/make-dictionary-functions-callable": {
+      "rev": "7afa179595c72a14cb33eff612d03c0c85713014",
+      "ref": "refs/heads/make-dictionary-functions-callable"
+    },
+    "refs/heads/make-set-attributes-emit-a-single-bytecode-instruction": {
+      "rev": "fa9e99fb4536a7493b260b752c60d22fc630e865",
+      "ref": "refs/heads/make-set-attributes-emit-a-single-bytecode-instruction"
+    },
+    "refs/heads/make-vm-self-contained": {
+      "rev": "511e1c95dd2a2aabc664e065397f8031bd5c4388",
+      "ref": "refs/heads/make-vm-self-contained"
+    },
+    "refs/heads/master": {
+      "rev": "4c1d20b282de0c1268fa2c87717c81007599fcc8",
+      "ref": "refs/heads/master"
+    },
+    "refs/heads/merge-string-field-for-attributes": {
+      "rev": "2bc57601123fec64c7c6b7a7f08d33b3d07eac5e",
+      "ref": "refs/heads/merge-string-field-for-attributes"
+    },
+    "refs/heads/minor-enhancements-in-evaluator": {
+      "rev": "71c637063369dc8649a0a6b1c1dd4fbaa0818116",
+      "ref": "refs/heads/minor-enhancements-in-evaluator"
+    },
+    "refs/heads/misc-library-additions": {
+      "rev": "db9e56320fb847032b11f2dd6f947a141e144b76",
+      "ref": "refs/heads/misc-library-additions"
+    },
+    "refs/heads/misc-library-additions-and-cleanup": {
+      "rev": "7a5679b597bf47a6c697d7395cf7c38794126fa1",
+      "ref": "refs/heads/misc-library-additions-and-cleanup"
+    },
+    "refs/heads/more-iterator-additions-and-optimizations": {
+      "rev": "f1416bd0e8dab8962b90fbf8938b16f110f8dc29",
+      "ref": "refs/heads/more-iterator-additions-and-optimizations"
+    },
+    "refs/heads/more-performant-iterators": {
+      "rev": "48950e032ff1bbf776ac30213a7bde32a22db51b",
+      "ref": "refs/heads/more-performant-iterators"
+    },
+    "refs/heads/move-VVersion-values-to-a-separate-module": {
+      "rev": "feda74eaf565f9f42e7c2757d6fd642b813a5ada",
+      "ref": "refs/heads/move-VVersion-values-to-a-separate-module"
+    },
+    "refs/heads/no-gmp-mode": {
+      "rev": "c7530d85ed03d5d6642218cc225a9b2339d2483d",
+      "ref": "refs/heads/no-gmp-mode"
+    },
+    "refs/heads/no-sqlite-mode": {
+      "rev": "ba0269b371cfb7d74780d43fa210c18c9a140d27",
+      "ref": "refs/heads/no-sqlite-mode"
+    },
+    "refs/heads/normalize-type-conversion-syntax-throughout": {
+      "rev": "b94db9a7136b43bb087f720a4b546a0cb6909053",
+      "ref": "refs/heads/normalize-type-conversion-syntax-throughout"
+    },
+    "refs/heads/normalize-type-conversions": {
+      "rev": "cf67ac923e0a80d57298e626c62ce25c884403d3",
+      "ref": "refs/heads/normalize-type-conversions"
+    },
+    "refs/heads/parser-implementation-for-templating-engine": {
+      "rev": "4514ca3b8d80c3aa588ffe17bb6c4aef3cb8bb8e",
+      "ref": "refs/heads/parser-implementation-for-templating-engine"
+    },
+    "refs/heads/parser-optimization-and-cleanup": {
+      "rev": "8a754fd673a16dd27938eb72f4952dcdbb5f9eeb",
+      "ref": "refs/heads/parser-optimization-and-cleanup"
+    },
+    "refs/heads/per-block-script-dictionaries": {
+      "rev": "746e3f2bf0e6025ad682b96ceb722499f7c5bf47",
+      "ref": "refs/heads/per-block-script-dictionaries"
+    },
+    "refs/heads/project-restructuring-and-cleanup": {
+      "rev": "806aa3f7d2c3e330f6dc8a745196d6d4c3835667",
+      "ref": "refs/heads/project-restructuring-and-cleanup"
+    },
+    "refs/heads/remove-duplicate-`$`-overload-for-Values": {
+      "rev": "7d94abee8a05833bf752425e970269d285e7428f",
+      "ref": "refs/heads/remove-duplicate-`$`-overload-for-Values"
+    },
+    "refs/heads/remove-prefix-and-suffix-builtin-functions": {
+      "rev": "bf0592bb333e2a6e87d9bb83931f91f2aeb46149",
+      "ref": "refs/heads/remove-prefix-and-suffix-builtin-functions"
+    },
+    "refs/heads/remove-zippy": {
+      "rev": "1c7dc133ad9ad10ad0b6d711064c01ed61a0efc5",
+      "ref": "refs/heads/remove-zippy"
+    },
+    "refs/heads/rename-epsilon-constant-to-e": {
+      "rev": "550202db3d3b63d513e17feb9b36718759e40e24",
+      "ref": "refs/heads/rename-epsilon-constant-to-e"
+    },
+    "refs/heads/repl-linenoise-and-windows": {
+      "rev": "dc6af07411882b8c4ab74848bb9de2b397055fa1",
+      "ref": "refs/heads/repl-linenoise-and-windows"
+    },
+    "refs/heads/replace-all-Syms-assignments-with-SetSym": {
+      "rev": "b92ca7a35b702b1019b4984a1d3e6b09f24f81cd",
+      "ref": "refs/heads/replace-all-Syms-assignments-with-SetSym"
+    },
+    "refs/heads/replace-hasKey-on-dictionaries-with-getOrDefault": {
+      "rev": "6fa6f26218942e2c9a40cf910c111ed30051a1a4",
+      "ref": "refs/heads/replace-hasKey-on-dictionaries-with-getOrDefault"
+    },
+    "refs/heads/replace-internal-VNULLs-with-nil-references": {
+      "rev": "6ae2d51b53fdd9d81c5f5b3e294e21bcc641e418",
+      "ref": "refs/heads/replace-internal-VNULLs-with-nil-references"
+    },
+    "refs/heads/repo-housekeeping": {
+      "rev": "b64372021aaeb8a957a8f855bf6fd23c17a3a652",
+      "ref": "refs/heads/repo-housekeeping"
+    },
+    "refs/heads/resolve-pending-issues-and-cleanup": {
+      "rev": "e76403ef1825f5ad5bf21f2a4f71735190d5520c",
+      "ref": "refs/heads/resolve-pending-issues-and-cleanup"
+    },
+    "refs/heads/revisit-thick-arrow-right-operator": {
+      "rev": "0f857865cdf03b8b8953c497bd0ca9131bf0426c",
+      "ref": "refs/heads/revisit-thick-arrow-right-operator"
+    },
+    "refs/heads/rework-arity-checking-and-handling": {
+      "rev": "40ddf24626f30e115f9d592e325af1fe92686457",
+      "ref": "refs/heads/rework-arity-checking-and-handling"
+    },
+    "refs/heads/sanitize-Function-values": {
+      "rev": "99c6b0845268311c64e1b70261bd7a8dd6fab247",
+      "ref": "refs/heads/sanitize-Function-values"
+    },
+    "refs/heads/sanitize-Logical-values": {
+      "rev": "d234925fb4dc797fbf61ce8a6ea0cca99f182bd8",
+      "ref": "refs/heads/sanitize-Logical-values"
+    },
+    "refs/heads/sanitize-attribute-stack-and-handling": {
+      "rev": "4d915a4a04aeb17635094834bb0dd82e7da619b6",
+      "ref": "refs/heads/sanitize-attribute-stack-and-handling"
+    },
+    "refs/heads/sanitize-color-parsing": {
+      "rev": "3433e081c8377549c200196d776f7d4059dccd9c",
+      "ref": "refs/heads/sanitize-color-parsing"
+    },
+    "refs/heads/sanitize-command-line-options-and-errors": {
+      "rev": "1fe0a3b09a223f2622abc0da00df7c2cc907f6b5",
+      "ref": "refs/heads/sanitize-command-line-options-and-errors"
+    },
+    "refs/heads/sanitize-function-value-objects": {
+      "rev": "9a6e005cb56fc9a8c390b241c12040dffc074673",
+      "ref": "refs/heads/sanitize-function-value-objects"
+    },
+    "refs/heads/sanitize-opcodes-and-bytecode-handling": {
+      "rev": "463d22093db9a44805cc0b8320cd77406123acac",
+      "ref": "refs/heads/sanitize-opcodes-and-bytecode-handling"
+    },
+    "refs/heads/sanitize-required-parameters-handling": {
+      "rev": "8701e8bcd4b493c1602a252ec79f6f037d74bc04",
+      "ref": "refs/heads/sanitize-required-parameters-handling"
+    },
+    "refs/heads/selectively-enable-overflow-checks": {
+      "rev": "c15835a356857e323b9f1974efdc43624bf826f1",
+      "ref": "refs/heads/selectively-enable-overflow-checks"
+    },
+    "refs/heads/slimmer-web-version": {
+      "rev": "23efa3eb9285c69db0314c0d2c2cc26e5a0b9650",
+      "ref": "refs/heads/slimmer-web-version"
+    },
+    "refs/heads/solve-pending-issues-and-cleanup": {
+      "rev": "f7946bf3a6c3bb35159cb68071d9aa24a89afb56",
+      "ref": "refs/heads/solve-pending-issues-and-cleanup"
+    },
+    "refs/heads/symbol-values-as-a-distinct-module": {
+      "rev": "95aff82e90544349a363a88993572c966e0573c3",
+      "ref": "refs/heads/symbol-values-as-a-distinct-module"
+    },
+    "refs/heads/upgrade-webview-library": {
+      "rev": "29c666647a8520b087eab3bb4e8ca574d582635c",
+      "ref": "refs/heads/upgrade-webview-library"
+    },
+    "refs/heads/use-mimalloc": {
+      "rev": "b0d80c9b9e9ce85206db6625db3a7550584ebaad",
+      "ref": "refs/heads/use-mimalloc"
+    },
+    "refs/heads/use-newSeqOfCap-where-appropriate": {
+      "rev": "659c08a5398f87e8c45097695cd964ec728124fc",
+      "ref": "refs/heads/use-newSeqOfCap-where-appropriate"
+    },
+    "refs/heads/use-sink-constructors-for-complex-values": {
+      "rev": "426992f4f21ae9731191fa1b000fec396e0e307a",
+      "ref": "refs/heads/use-sink-constructors-for-complex-values"
+    },
+    "refs/tags/0.9.4": {
+      "rev": "99d2e79b518d5dc592de8c87343e5d6f8dd5299a",
+      "ref": "refs/tags/0.9.4"
+    },
+    "refs/tags/v0.3.1": {
+      "rev": "a233023f7777eebd469419c5c4e02470284bc338",
+      "ref": "refs/tags/v0.3.1"
+    },
+    "refs/tags/v0.3.3": {
+      "rev": "b15e94450b5cc2719d8f5d4a69f4d70657860490",
+      "ref": "refs/tags/v0.3.3"
+    },
+    "refs/tags/v0.3.4": {
+      "rev": "e0725188304cdd2af0ac332c209a8dbecb0b149f",
+      "ref": "refs/tags/v0.3.4"
+    },
+    "refs/tags/v0.3.5": {
+      "rev": "59957b2a96017e127457c461fce345e0b1d8c015",
+      "ref": "refs/tags/v0.3.5"
+    },
+    "refs/tags/v0.3.6": {
+      "rev": "b570b9cb3dc26d06fe17651cdc02072baf0e74ec",
+      "ref": "refs/tags/v0.3.6"
+    },
+    "refs/tags/v0.3.7": {
+      "rev": "7f28aa75929b65a2889547557aa2bccb18865caa",
+      "ref": "refs/tags/v0.3.7"
+    },
+    "refs/tags/v0.3.8": {
+      "rev": "8863eacd939c329d8fde9f1cf2ce188ab631104f",
+      "ref": "refs/tags/v0.3.8"
+    },
+    "refs/tags/v0.3.9": {
+      "rev": "7f231d250bc1ed38e13cfa01c521020316a5dd0e",
+      "ref": "refs/tags/v0.3.9"
+    },
+    "refs/tags/v0.4.0": {
+      "name": "nim",
+      "version": "0.3.9",
+      "author": "drkameleon",
+      "desc": "Simple, modern and powerful interpreted programming language for super-fast scripting",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.9",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.9"
+          }
+        }
+      ],
+      "bin": [
+        "arturo"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.0",
+      "rev": "040834e8deed826d2dfe0d86919a6211990665c1"
+    },
+    "refs/tags/v0.9.4.6": {
+      "rev": "f0089840fd4d1743eda70272337be1ebf7ccb5dc",
+      "ref": "refs/tags/v0.9.4.6"
+    },
+    "refs/tags/v0.9.5": {
+      "name": "arturo",
+      "version": "0.9.4",
+      "author": "arturo-lang",
+      "desc": "Simple, modern and portable interpreted programming language for efficient scripting",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        }
+      ],
+      "bin": [
+        "arturo"
+      ],
+      "binDir": "bin",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.9.5",
+      "rev": "ae9586b56d1a46594d97512cd004a79628599686"
+    },
+    "refs/tags/v0.9.6": {
+      "name": "arturo",
+      "version": "0.9.4",
+      "author": "arturo-lang",
+      "desc": "Simple, modern and portable interpreted programming language for efficient scripting",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        }
+      ],
+      "bin": [
+        "arturo"
+      ],
+      "binDir": "bin",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.9.6",
+      "rev": "a8c37eb25e97ffc42dd84234fccb73f0cfadcf93"
+    },
+    "refs/tags/v0.9.6.1": {
+      "name": "arturo",
+      "version": "0.9.4",
+      "author": "arturo-lang",
+      "desc": "Simple, modern and portable interpreted programming language for efficient scripting",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        }
+      ],
+      "bin": [
+        "arturo"
+      ],
+      "binDir": "bin",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.9.6.1",
+      "rev": "8bb7a1b55dd74192ba728092686e5481d0b050b5"
+    },
+    "refs/tags/v0.9.6.5": {
+      "rev": "a72d14d5d07a1f3930af84fdbcf431b2a49845ae",
+      "ref": "refs/tags/v0.9.6.5"
+    },
+    "refs/tags/v0.9.7": {
+      "rev": "1fb0e5da661c5455b8cc507c1d6e64c779bee247",
+      "ref": "refs/tags/v0.9.7"
+    },
+    "refs/tags/v0.9.7.2": {
+      "rev": "db5a8a213574961b7b6845c5be7bb4e30b342afe",
+      "ref": "refs/tags/v0.9.7.2"
+    },
+    "refs/tags/v0.9.7.4": {
+      "rev": "db2f7af6046c79e69a1823086825e258dd9d209c",
+      "ref": "refs/tags/v0.9.7.4"
+    },
+    "refs/tags/v0.9.75": {
+      "rev": "42b34de449dea3f37b0e05d33743b4df9c2a6255",
+      "ref": "refs/tags/v0.9.75"
+    },
+    "refs/tags/v0.9.76": {
+      "rev": "0f84ee183f3e738f47244fe5db4a9d36f6d5143b",
+      "ref": "refs/tags/v0.9.76"
+    },
+    "refs/tags/v0.9.77": {
+      "rev": "e42a48d475373502e47e2863dbdb8f555dbcf2fc",
+      "ref": "refs/tags/v0.9.77"
+    },
+    "refs/tags/v0.9.78": {
+      "rev": "36d91e4700c30c42702d0c851c618b0370da8d55",
+      "ref": "refs/tags/v0.9.78"
+    },
+    "refs/tags/v0.9.80": {
+      "rev": "68c99d148f940fdd7b5625b1638d68392916d6b6",
+      "ref": "refs/tags/v0.9.80"
+    }
+  }
+}

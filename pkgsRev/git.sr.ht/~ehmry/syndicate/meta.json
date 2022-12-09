@@ -1,0 +1,951 @@
+{
+  "name": "syndicate",
+  "url": "https://git.sr.ht/~ehmry/syndicate-nim",
+  "method": "git",
+  "tags": [
+    "actors",
+    "concurrency",
+    "dsl",
+    "library",
+    "rpc",
+    "syndicate"
+  ],
+  "description": "Syndicated actors for conversational concurrency",
+  "license": "ISC",
+  "web": "https://syndicate-lang.org/",
+  "refs": {
+    "HEAD": {
+      "name": "syndicate",
+      "version": "20221102",
+      "author": "Emery Hemingway",
+      "desc": "Syndicated actors for conversational concurrency",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "preserves",
+          "str": ">= 202210230",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "202210230"
+          }
+        }
+      ],
+      "bin": [
+        "syndicate/unix/swaybar_status_actor"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "e26c718142ad22c80bea89355f29a34bb3842a74"
+    },
+    "refs/heads/devel": {
+      "name": "syndicate",
+      "version": "0.0.0",
+      "author": "Emery Hemingway",
+      "desc": "Syndicated actors for conversational concurrency",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "preserves",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/devel",
+      "rev": "401d02e39b3153780b8e003819605bde3b8b6870"
+    },
+    "refs/heads/genode": {
+      "name": "syndicate",
+      "version": "20221031",
+      "author": "Emery Hemingway",
+      "desc": "Syndicated actors for conversational concurrency",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "preserves",
+          "str": ">= 202210230",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "202210230"
+          }
+        }
+      ],
+      "bin": [
+        "syndicate/unix/swaybar_status_actor"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/genode",
+      "rev": "a3ecd720898465eca587924183e4b37cfa68444d"
+    },
+    "refs/heads/net_mapper": {
+      "name": "syndicate",
+      "version": "20221021",
+      "author": "Emery Hemingway",
+      "desc": "Syndicated actors for conversational concurrency",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "preserves",
+          "str": ">= 20221013",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20221013"
+          }
+        }
+      ],
+      "bin": [
+        "syndicate/unix/net_mapper",
+        "syndicate/unix/swaybar_status_actor"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/net_mapper",
+      "rev": "17708055b151319342d919903e415b371ba5cee5"
+    },
+    "refs/heads/syndex_card": {
+      "name": "syndicate",
+      "version": "20221013",
+      "author": "Emery Hemingway",
+      "desc": "Syndicated actors for conversational concurrency",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "illwill",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "preserves",
+          "str": ">= 20221013",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20221013"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/syndex_card",
+      "rev": "cbc697d7b58252a2d2f6d3580979b2d4b55f0044"
+    },
+    "refs/heads/t420": {
+      "name": "syndicate",
+      "version": "0.0.0",
+      "author": "Emery Hemingway",
+      "desc": "Syndicated actors for conversational concurrency",
+      "license": "ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "preserves",
+          "str": ">= 0.3.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/t420",
+      "rev": "4ab7857835e0e873d689c40a3b1600fbd2564a81"
+    },
+    "refs/heads/trunk": {
+      "name": "syndicate",
+      "version": "20221102",
+      "author": "Emery Hemingway",
+      "desc": "Syndicated actors for conversational concurrency",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "preserves",
+          "str": ">= 202210230",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "202210230"
+          }
+        }
+      ],
+      "bin": [
+        "syndicate/unix/swaybar_status_actor"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/trunk",
+      "rev": "e26c718142ad22c80bea89355f29a34bb3842a74"
+    },
+    "refs/remotes/origin/devel": {
+      "rev": "401d02e39b3153780b8e003819605bde3b8b6870",
+      "ref": "refs/remotes/origin/devel"
+    },
+    "refs/remotes/origin/t420": {
+      "rev": "4ab7857835e0e873d689c40a3b1600fbd2564a81",
+      "ref": "refs/remotes/origin/t420"
+    },
+    "refs/remotes/origin/trunk": {
+      "rev": "1171b238ec314f2b8cbb03f86470e19952a40056",
+      "ref": "refs/remotes/origin/trunk"
+    },
+    "refs/tags/1.0.0": {
+      "name": "syndicate",
+      "version": "1.0.0",
+      "author": "Emery Hemingway",
+      "desc": "Syndicated actors for conversational concurrency",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "preserves",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.0.0",
+      "rev": "852306ca040ead244c7b8053d6886f7ca538282f"
+    },
+    "refs/tags/1.1.0": {
+      "name": "syndicate",
+      "version": "1.1.0",
+      "author": "Emery Hemingway",
+      "desc": "Syndicated actors for conversational concurrency",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "preserves",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.1.0",
+      "rev": "ef1d0cc3faaac1444df2a83c141b4e665aa8c80d"
+    },
+    "refs/tags/1.3.0": {
+      "name": "syndicate",
+      "version": "1.3.0",
+      "author": "Emery Hemingway",
+      "desc": "Syndicated actors for conversational concurrency",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "preserves",
+          "str": "> 3.2.0",
+          "ver": {
+            "kind": "verLater",
+            "ver": "3.2.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.3.0",
+      "rev": "964888499727798db28ab622bcf42bcaf193309a"
+    },
+    "refs/tags/1.3.1": {
+      "name": "syndicate",
+      "version": "1.3.1",
+      "author": "Emery Hemingway",
+      "desc": "Syndicated actors for conversational concurrency",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "preserves",
+          "str": "> 3.2.0",
+          "ver": {
+            "kind": "verLater",
+            "ver": "3.2.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.3.1",
+      "rev": "b4fd18ffcd66259d8987b96e214aba707534f63e"
+    },
+    "refs/tags/20220627": {
+      "name": "syndicate",
+      "version": "1.3.2",
+      "author": "Emery Hemingway",
+      "desc": "Syndicated actors for conversational concurrency",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "preserves",
+          "str": "> 3.2.0",
+          "ver": {
+            "kind": "verLater",
+            "ver": "3.2.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/20220627",
+      "rev": "6281f5467f133c2fc75e991de0f25bfb0ae41f88"
+    },
+    "refs/tags/20220829": {
+      "name": "syndicate",
+      "version": "1.3.2",
+      "author": "Emery Hemingway",
+      "desc": "Syndicated actors for conversational concurrency",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "preserves",
+          "str": "> 3.2.0",
+          "ver": {
+            "kind": "verLater",
+            "ver": "3.2.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/20220829",
+      "rev": "aa0386234c8fd59fe4f7207a2e7e5afead08fa36"
+    },
+    "refs/tags/20220830": {
+      "name": "syndicate",
+      "version": "20220830",
+      "author": "Emery Hemingway",
+      "desc": "Syndicated actors for conversational concurrency",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "preserves",
+          "str": ">= 20220709",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220709"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/20220830",
+      "rev": "a8e8eed61993fd657188a2039d82588d789cd025"
+    },
+    "refs/tags/20220904": {
+      "name": "syndicate",
+      "version": "20220904",
+      "author": "Emery Hemingway",
+      "desc": "Syndicated actors for conversational concurrency",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "preserves",
+          "str": ">= 20220709",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220709"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/20220904",
+      "rev": "96d3bbb5008627efcdb51b4d8d23e70343d06c0c"
+    },
+    "refs/tags/202210231": {
+      "name": "syndicate",
+      "version": "20221031",
+      "author": "Emery Hemingway",
+      "desc": "Syndicated actors for conversational concurrency",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "preserves",
+          "str": ">= 202210230",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "202210230"
+          }
+        }
+      ],
+      "bin": [
+        "syndicate/unix/swaybar_status_actor"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/202210231",
+      "rev": "2aeb20e95943392ed5c22a8953f0b2dff3c3091d"
+    },
+    "refs/tags/20221102": {
+      "name": "syndicate",
+      "version": "20221102",
+      "author": "Emery Hemingway",
+      "desc": "Syndicated actors for conversational concurrency",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "preserves",
+          "str": ">= 202210230",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "202210230"
+          }
+        }
+      ],
+      "bin": [
+        "syndicate/unix/swaybar_status_actor"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/20221102",
+      "rev": "e26c718142ad22c80bea89355f29a34bb3842a74"
+    },
+    "refs/tags/nim-syndicate-1.2.0": {
+      "name": "syndicate",
+      "version": "1.2.0",
+      "author": "Emery Hemingway",
+      "desc": "Syndicated actors for conversational concurrency",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "preserves",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/nim-syndicate-1.2.0",
+      "rev": "1171b238ec314f2b8cbb03f86470e19952a40056"
+    },
+    "refs/tags/nim-syndicate-1.3.0": {
+      "name": "syndicate",
+      "version": "1.3.0",
+      "author": "Emery Hemingway",
+      "desc": "Syndicated actors for conversational concurrency",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "preserves",
+          "str": "> 3.2.0",
+          "ver": {
+            "kind": "verLater",
+            "ver": "3.2.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/nim-syndicate-1.3.0",
+      "rev": "964888499727798db28ab622bcf42bcaf193309a"
+    },
+    "refs/tags/nim-syndicate-1.3.1": {
+      "name": "syndicate",
+      "version": "1.3.1",
+      "author": "Emery Hemingway",
+      "desc": "Syndicated actors for conversational concurrency",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "preserves",
+          "str": "> 3.2.0",
+          "ver": {
+            "kind": "verLater",
+            "ver": "3.2.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/nim-syndicate-1.3.1",
+      "rev": "b4fd18ffcd66259d8987b96e214aba707534f63e"
+    }
+  }
+}

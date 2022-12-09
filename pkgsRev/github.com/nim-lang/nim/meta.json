@@ -1,0 +1,4680 @@
+{
+  "name": "nim",
+  "url": "https://github.com/nim-lang/Nim.git",
+  "method": "git",
+  "tags": [
+    "library",
+    "compiler"
+  ],
+  "description": "Package providing the Nim compiler binaries plus all its source files that can be used as a library",
+  "license": "MIT",
+  "web": "https://github.com/nim-lang/Nim",
+  "refs": {
+    "HEAD": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "ef190f349d981f3cca38e6377953ccc24857215d"
+    },
+    "refs/heads/araq-adapt": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-adapt",
+      "rev": "703af9521ae81c780b45e7782d2e97b82983493a"
+    },
+    "refs/heads/araq-better-overloading": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-better-overloading",
+      "rev": "4078d57e65a4a58a29fe31eb41291f1e4b1aa166"
+    },
+    "refs/heads/araq-crazy": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-crazy",
+      "rev": "e80dffcd15311550f35d89966794adfacca96f46"
+    },
+    "refs/heads/araq-cyclic-imports": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-cyclic-imports",
+      "rev": "0e210c203b8f4dc612c2a390d97f74a089a4db36"
+    },
+    "refs/heads/araq-destructors": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-destructors",
+      "rev": "0f53a06e7d750e74d05d617eb648c12c3ca51059"
+    },
+    "refs/heads/araq-destructors2": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-destructors2",
+      "rev": "ea62a3df5445b8ced43ad0fe51676e7c4e5d2dba"
+    },
+    "refs/heads/araq-fixes-10837": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-fixes-10837",
+      "rev": "c8fa1be032f5b9edb74514c68e1dee72fae6e498"
+    },
+    "refs/heads/araq-fixes-14646-recursive-object": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-fixes-14646-recursive-object",
+      "rev": "0a8dd89283c1ffb3b92cf94c5b37ce9ecea97667"
+    },
+    "refs/heads/araq-fixes-15533": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-fixes-15533",
+      "rev": "039f57ec4bff170ca0379b638623e2a132342fe8"
+    },
+    "refs/heads/araq-fixes-15836": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-fixes-15836",
+      "rev": "eb5b6997686f93e6f04e2d6b9866ea32d313aa5d"
+    },
+    "refs/heads/araq-fixes-16736": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-fixes-16736",
+      "rev": "3dbeebbee92c36b792af92e3fa249cf3b3c33483"
+    },
+    "refs/heads/araq-fixes-17768": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-fixes-17768",
+      "rev": "8769a09e6963782b466754b30747acf923787467"
+    },
+    "refs/heads/araq-fixes-18683": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-fixes-18683",
+      "rev": "eea268b7b17868a86dc1b5c7ea16c659d26a2d60"
+    },
+    "refs/heads/araq-fixes-19364": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-fixes-19364",
+      "rev": "3bbc98a3b0d1d708e8646d66ad0bffa106563c38"
+    },
+    "refs/heads/araq-fixes-20604": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-fixes-20604",
+      "rev": "0496248951c020da68145524540aedeae8455a78"
+    },
+    "refs/heads/araq-fixes-20808": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-fixes-20808",
+      "rev": "66199552c43e76fb71fc6bdb995a6be41552bbab"
+    },
+    "refs/heads/araq-fixes-20865": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-fixes-20865",
+      "rev": "092d59216dfbb0066581abea10ee95e681f97209"
+    },
+    "refs/heads/araq-generic-inst-fix": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-generic-inst-fix",
+      "rev": "8aece149d46aabaf3cfde2a9f08a741a00feff86"
+    },
+    "refs/heads/araq-goto-exceptions-threads": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-goto-exceptions-threads",
+      "rev": "7762953233db119ab7c7085e9fb472b0be9558ec"
+    },
+    "refs/heads/araq-ic": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-ic",
+      "rev": "493b970edc7085b7b8cf5eb88f6da8da977304ea"
+    },
+    "refs/heads/araq-ic20": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-ic20",
+      "rev": "17f279eedfd259b29c4be6f6a8df803272dcbf53"
+    },
+    "refs/heads/araq-index-check-experiments": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-index-check-experiments",
+      "rev": "ae3ae69ea332213d0d46e341cbc4253eb1ff9da6"
+    },
+    "refs/heads/araq-iterative-json": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-iterative-json",
+      "rev": "3a7013ed2804a483c33239544023dd37c45c2b1f"
+    },
+    "refs/heads/araq-make-nimscript-more-robust": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-make-nimscript-more-robust",
+      "rev": "a6284a095000d936ae0134e4121855ee9af2a571"
+    },
+    "refs/heads/araq-make-notnil-experimental": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-make-notnil-experimental",
+      "rev": "80f76a57d73b093c144d07e82fe9e589412fca04"
+    },
+    "refs/heads/araq-more-cpp-testing": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-more-cpp-testing",
+      "rev": "244bf5f6515c992869b8140b0aa59835186ee166"
+    },
+    "refs/heads/araq-more-gensym-fixes": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-more-gensym-fixes",
+      "rev": "b3dd3b2dcc8b6d90b5aa9845a167c232c9e069eb"
+    },
+    "refs/heads/araq-nkerror": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-nkerror",
+      "rev": "9586c29254ec2a63e11f49e887a93dfe0703a01a"
+    },
+    "refs/heads/araq-no-nil": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-no-nil",
+      "rev": "d96af8b6bc88585918ac02b69d76fc60b45e6442"
+    },
+    "refs/heads/araq-nodekinds-by-string-comparisons": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-nodekinds-by-string-comparisons",
+      "rev": "8d2c9d7bb222e69d54e555208b8f57b43d20575c"
+    },
+    "refs/heads/araq-orc-api-extensions-2": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-orc-api-extensions-2",
+      "rev": "7d61aa3f3c61caad65bdeae66d746c81b98ee401"
+    },
+    "refs/heads/araq-orc-generations": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-orc-generations",
+      "rev": "047633de589777ba22c1c7563bbf0d022c4052a9"
+    },
+    "refs/heads/araq-pipeline": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-pipeline",
+      "rev": "8dfe5acac0b5159bbf3b259e9c01609b3f4f07ce"
+    },
+    "refs/heads/araq-poc-nilchecks-via-dfa": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-poc-nilchecks-via-dfa",
+      "rev": "4fd28c15abec469fd1ec3af6b77170fd306d32a8"
+    },
+    "refs/heads/araq-precise-stack-roots": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-precise-stack-roots",
+      "rev": "f58f8ee8d98965e3cdb2aa2f4d16f9b38b869945"
+    },
+    "refs/heads/araq-rtti-for-imported-types": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-rtti-for-imported-types",
+      "rev": "9186ba8e3f06dd82546a433232eee6421173ebcc"
+    },
+    "refs/heads/araq-runnable-runnable-examples": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-runnable-runnable-examples",
+      "rev": "a95feea130334cf71114e3191d2fdf59c2568229"
+    },
+    "refs/heads/araq-sandbox": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-sandbox",
+      "rev": "c27ad58ae65599e039009e89199d7a84fd14cc5d"
+    },
+    "refs/heads/araq-scope-extension": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-scope-extension",
+      "rev": "36df2e0b1b02208c9ad8d01db2dc4f5515672fbb"
+    },
+    "refs/heads/araq-scoped-borrows": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-scoped-borrows",
+      "rev": "331a8b05def8cc6c9da33a358cebd41fafa1bfdb"
+    },
+    "refs/heads/araq-ssl-version-check": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-ssl-version-check",
+      "rev": "5a32dbab5471b28af86179ffdc4846babccfa188"
+    },
+    "refs/heads/araq-unify-enums": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-unify-enums",
+      "rev": "e595229192ce280c5c3c43996726486bf4576116"
+    },
+    "refs/heads/devel": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/devel",
+      "rev": "ef190f349d981f3cca38e6377953ccc24857215d"
+    },
+    "refs/heads/fix-gensym": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fix-gensym",
+      "rev": "d38549fff4bcf7e8fe600a3eb259060039e623f7"
+    },
+    "refs/heads/fix-ios-compilation-many-modules": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fix-ios-compilation-many-modules",
+      "rev": "259ce3d314e430e424dddb5e68ba3c291fa7865a"
+    },
+    "refs/heads/fix_15097": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fix_15097",
+      "rev": "ef5d1ff907fe923d62e5a1f1fe6104e1e8318e74"
+    },
+    "refs/heads/fix_15959": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fix_15959",
+      "rev": "9ca06c1efc627727ad7c242f3ae1f82e3b2fba93"
+    },
+    "refs/heads/fix_16185": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fix_16185",
+      "rev": "778217926cc8c35d3ed7f3cdec2c1afb7e2fb544"
+    },
+    "refs/heads/fix_16246": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fix_16246",
+      "rev": "4c3be5074569e1a511850581306ab8a13454ba89"
+    },
+    "refs/heads/fix_16516": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fix_16516",
+      "rev": "9e53a25c362db4b8cb747fc70aca8cd432db7ef4"
+    },
+    "refs/heads/fix_vm_issue_15662": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fix_vm_issue_15662",
+      "rev": "1c7f90aa74755528f259dbd2ed8da8bb4ddc1f42"
+    },
+    "refs/heads/fixes-n_lib_import": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fixes-n_lib_import",
+      "rev": "9c001fb1c77f4988a89e9d4293159d769d7a0294"
+    },
+    "refs/heads/fixes_14007": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fixes_14007",
+      "rev": "b6893e3b75c625c6710f40c02757dad9e283eb6b"
+    },
+    "refs/heads/fx_16110": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fx_16110",
+      "rev": "2bab2a2cd8476423414819db3ad79309f6033e13"
+    },
+    "refs/heads/get-impl-generics": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/get-impl-generics",
+      "rev": "39910597414a0ce000d0850e5e1cc8e0695a3ea6"
+    },
+    "refs/heads/hot-code-reloading": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/hot-code-reloading",
+      "rev": "d317ba676e81cf2b5be096e5b21283a26a5581e6"
+    },
+    "refs/heads/immutable-strings": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/immutable-strings",
+      "rev": "b3be4e965b67b2bd4c153446e535dbdf6e4de7a2"
+    },
+    "refs/heads/improve_can_alias": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/improve_can_alias",
+      "rev": "405fb408a2548dc691c95f517a5db60af60af1e7"
+    },
+    "refs/heads/memregions": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/memregions",
+      "rev": "d9429bc396836d6a84c17606a9d96b9b2562c01e"
+    },
+    "refs/heads/miran-jsonrst2": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/miran-jsonrst2",
+      "rev": "e0f9004aa71ae46a39b12aa721b7f52fadc189aa"
+    },
+    "refs/heads/miran-raises": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/miran-raises",
+      "rev": "284fdb78d1a967ec7f40d420c6cec3011562d4aa"
+    },
+    "refs/heads/more_of_useMalloc": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/more_of_useMalloc",
+      "rev": "b15c9ba9b425b6e2de0bcb4ae7f1c723c5d7a53f"
+    },
+    "refs/heads/packaging-link": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/packaging-link",
+      "rev": "63a6653ccda204bd79ea0d0b64321df3aa5a0a5e"
+    },
+    "refs/heads/parser3": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/parser3",
+      "rev": "9c9e71146290b0c36e890a4cf1e1eb4cd0e42a2c"
+    },
+    "refs/heads/pr_10542": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/pr_10542",
+      "rev": "c8bcc3c9019f8c047de1967bdf4c3db0a94540dd"
+    },
+    "refs/heads/pr_16253": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/pr_16253",
+      "rev": "d274b562565f652726fffbb280af165dee3b0c64"
+    },
+    "refs/heads/pr_discardable": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/pr_discardable",
+      "rev": "141a963194241c23839e967a6ccd1f99069146e9"
+    },
+    "refs/heads/pr_fix_12282_vm_distinct_copy_followup": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/pr_fix_12282_vm_distinct_copy_followup",
+      "rev": "015243afa16105241606d82eb74088b0afcecc53"
+    },
+    "refs/heads/pr_fix_D20200425T141726_js_unsigned_dollar": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/pr_fix_D20200425T141726_js_unsigned_dollar",
+      "rev": "c00dc524a702e2dbcf1ed50463711766599e87eb"
+    },
+    "refs/heads/pr_foo": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/pr_foo",
+      "rev": "4c33ddfcebd7f688e845ad33b1275f0ad697ac06"
+    },
+    "refs/heads/pr_gendeps": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/pr_gendeps",
+      "rev": "103ffc55a88cb5ace78f936c52fbb1dc8d95f605"
+    },
+    "refs/heads/pr_macros_default": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/pr_macros_default",
+      "rev": "d5df10704f6d238408060162e1aa7991109d2a82"
+    },
+    "refs/heads/pr_macros_let": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/pr_macros_let",
+      "rev": "d30cf971a3b4f25a62f50edfdfdd947eabd63189"
+    },
+    "refs/heads/pr_metatype": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/pr_metatype",
+      "rev": "425cc30961943dff323477c1718a4be94662426b"
+    },
+    "refs/heads/pr_move_system": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/pr_move_system",
+      "rev": "3eddba8b5e542326440b5fe2bc53c1f3d18a14a1"
+    },
+    "refs/heads/pr_orc_generic": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/pr_orc_generic",
+      "rev": "d9ef4bc32560bf5b04f7dc9882271e2385610e3c"
+    },
+    "refs/heads/pr_type_expr": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/pr_type_expr",
+      "rev": "1f6213141c8d4066d88dac67238ddfbc0f23e9d6"
+    },
+    "refs/heads/pr_type_mismatch": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/pr_type_mismatch",
+      "rev": "e54b74fbaf346f72e3d848a9d6374cdb02499f20"
+    },
+    "refs/heads/pr_vtable": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/pr_vtable",
+      "rev": "f124ffe53934f107bc8d8ade2a9cb2bb4fb953bf"
+    },
+    "refs/heads/revert-18353-araq-orc-booting": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/revert-18353-araq-orc-booting",
+      "rev": "5ce34bcf76051354284d5b83af31ca00cb38cb3b"
+    },
+    "refs/heads/ringabout-patch-1": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/ringabout-patch-1",
+      "rev": "80df82e8926884f12f70618eae333910f9b39225"
+    },
+    "refs/heads/set_range_int": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/set_range_int",
+      "rev": "f5e9dbe21124f80fc875a0ddc82f7dadf852adcc"
+    },
+    "refs/heads/snake-fixes": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/snake-fixes",
+      "rev": "aad2dcd474c9cfbd929bc4b6e39a4e59be098751"
+    },
+    "refs/heads/spawn_for_arc": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/spawn_for_arc",
+      "rev": "1dc065fbe6353d32269659bdbb8d81bae005c2c4"
+    },
+    "refs/heads/ssl-cert-verify-gh-action": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/ssl-cert-verify-gh-action",
+      "rev": "01671b306871fc76db115f393f96bf96c39960b2"
+    },
+    "refs/heads/version-0-19": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/version-0-19",
+      "rev": "c6f601d48ec81e0d6e052ba0d19a195b55cc68f2"
+    },
+    "refs/heads/version-0-20": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/version-0-20",
+      "rev": "6af147ed1e2eeec2d01cc4a63371d23f9e93fb71"
+    },
+    "refs/heads/version-1-0": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/version-1-0",
+      "rev": "2a1f77cb1888a1ba83e2fa28d43a22b22fbd4443"
+    },
+    "refs/heads/version-1-2": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/version-1-2",
+      "rev": "82e9ec3b5ce3aeba969752137077cd32c72f2221"
+    },
+    "refs/heads/version-1-4": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/version-1-4",
+      "rev": "ce295d72431013e469f35ab371f13fdccab3bb78"
+    },
+    "refs/heads/version-1-6": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/version-1-6",
+      "rev": "76c347515aaf1201c1307422b64494514c6301f9"
+    },
+    "refs/remotes/origin/fixes-stall-on-closed-socket": {
+      "rev": "f0501b6d6c8f43b0309a3c856eba025c7fe0693a",
+      "ref": "refs/remotes/origin/fixes-stall-on-closed-socket"
+    },
+    "refs/tags/v0.10.2": {
+      "rev": "46d829f65086b487c08d522b8d0d3ad36f9a2197",
+      "ref": "refs/tags/v0.10.2"
+    },
+    "refs/tags/v0.11.0": {
+      "name": "compiler",
+      "version": "0.10.3",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "doc",
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.10.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.11.0",
+      "rev": "79cc0cc6e501c8984aeb5b217a274877ec5726bc"
+    },
+    "refs/tags/v0.11.2": {
+      "name": "compiler",
+      "version": "0.10.3",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "doc",
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.10.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.11.2",
+      "rev": "70789ef9c8c4a0541ba24927f2d99e106a6fe6cc"
+    },
+    "refs/tags/v0.12.0": {
+      "name": "compiler",
+      "version": "0.11.3",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "doc",
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.11.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.11.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.12.0",
+      "rev": "49bce0ebe941aafe19314438fb724c081ae891aa"
+    },
+    "refs/tags/v0.13.0": {
+      "name": "compiler",
+      "version": "0.13.0",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "doc",
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.12.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.12.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.13.0",
+      "rev": "7e50c5b56d5b5b7b96e56b6c7ab5e104124ae81b"
+    },
+    "refs/tags/v0.14.0": {
+      "name": "compiler",
+      "version": "0.14.0",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "doc",
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.13.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.13.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.14.0",
+      "rev": "5333f2e4cb073f9102f30aacc7b894c279393318"
+    },
+    "refs/tags/v0.14.2": {
+      "name": "compiler",
+      "version": "0.14.2",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "doc",
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.13.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.13.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.14.2",
+      "rev": "0a4854a0b7bcef184f060632f756f83454e9f9de"
+    },
+    "refs/tags/v0.15.0": {
+      "name": "compiler",
+      "version": "0.15.0",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "doc",
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.15.0",
+      "rev": "dbee7d55bc107b2624ecb6acde7cabe4cb3f5de4"
+    },
+    "refs/tags/v0.15.2": {
+      "name": "compiler",
+      "version": "0.15.2",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "doc",
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.15.2",
+      "rev": "48bd4d72c45f0f0202a0ab5ad9d851b05d363988"
+    },
+    "refs/tags/v0.16.0": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.16.0",
+      "rev": "f7f68de78e9f286b704304836ed8f20d65acc906"
+    },
+    "refs/tags/v0.17.0": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.17.0",
+      "rev": "2084650f7bf6f0db6003920f085e1a86f1ea2d11"
+    },
+    "refs/tags/v0.17.2": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.17.2",
+      "rev": "a713ffd346c376cc30f8cc13efaee7be1b8dfab9"
+    },
+    "refs/tags/v0.18.0": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.18.0",
+      "rev": "9c53787087e36b1c38ffd670a077903640d988a8"
+    },
+    "refs/tags/v0.19.0": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.19.0",
+      "rev": "79934561e8dde609332239fbc8b410633e490c61"
+    },
+    "refs/tags/v0.19.2": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.19.2",
+      "rev": "5cbc7f6322de8460cc4d395ed0df6486ae68004e"
+    },
+    "refs/tags/v0.19.4": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.19.4",
+      "rev": "be22a1f4e04b0fec14f7a668cbaf4e6d0be313cb"
+    },
+    "refs/tags/v0.19.6": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.19.6",
+      "rev": "1b512cc259b262d06143c4b34d20ebe220d7fb5c"
+    },
+    "refs/tags/v0.20.0": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.20.0",
+      "rev": "8ea451196bd8d77b3592b8b34e7a2c49eed784c9"
+    },
+    "refs/tags/v0.20.2": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.20.2",
+      "rev": "a202715d182ce6c47e19b3202e0c4011bece65d8"
+    },
+    "refs/tags/v0.8.14": {
+      "rev": "32b4192b3f0771af11e9d850046e5f3dd42a9a5f",
+      "ref": "refs/tags/v0.8.14"
+    },
+    "refs/tags/v0.9.0": {
+      "rev": "7a70058005c6c76c92addd5fc21b9706717c75e3",
+      "ref": "refs/tags/v0.9.0"
+    },
+    "refs/tags/v0.9.2": {
+      "rev": "220d35d9e19b0eae9e7cd1f1cac6e77e798dbc72",
+      "ref": "refs/tags/v0.9.2"
+    },
+    "refs/tags/v0.9.4": {
+      "rev": "6bf5b3d78c97ce4212e2dd4cf827d40800650c48",
+      "ref": "refs/tags/v0.9.4"
+    },
+    "refs/tags/v0.9.6": {
+      "rev": "9354d3de2e1ecc1747d6c42fbfa209fb824837c0",
+      "ref": "refs/tags/v0.9.6"
+    },
+    "refs/tags/v1.0.0": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.0.0",
+      "rev": "0b6866c0dc48b5ba06a4ce57758932fbc71fe4c2"
+    },
+    "refs/tags/v1.0.10": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.0.10",
+      "rev": "8b5888e0545ee3d931b7dd45d15a1d8f3d6426ef"
+    },
+    "refs/tags/v1.0.2": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.0.2",
+      "rev": "4c33037ef9d01905130b22a37ddb13748e27bb7c"
+    },
+    "refs/tags/v1.0.4": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.0.4",
+      "rev": "e826ff9b48af376fdc65ba22f7aa1c56dc169b94"
+    },
+    "refs/tags/v1.0.6": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.0.6",
+      "rev": "283a4137b6868f1c5bbf0dd9c36d850d086fa007"
+    },
+    "refs/tags/v1.0.8": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.0.8",
+      "rev": "7282e53cad6664d09e8c9efd0d7f263521eda238"
+    },
+    "refs/tags/v1.2.0": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.2.0",
+      "rev": "a8a4725850c443158f9cab38eae3e54a78a523fb"
+    },
+    "refs/tags/v1.2.10": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.2.10",
+      "rev": "6d914b7e6edc29c3b8ab8c0e255bd3622bc58bba"
+    },
+    "refs/tags/v1.2.12": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.2.12",
+      "rev": "ddfe3905964fe3db33d7798c6c6c4a493cbda6a3"
+    },
+    "refs/tags/v1.2.14": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.2.14",
+      "rev": "80d2206e68cd74020f61e23065c7a22376af8de5"
+    },
+    "refs/tags/v1.2.16": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.2.16",
+      "rev": "726e3bb1ffc6bacfaab0a0abf0209640acbac807"
+    },
+    "refs/tags/v1.2.18": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.2.18",
+      "rev": "1420d508dc4a3e51137647926d4db2f3fa62f43c"
+    },
+    "refs/tags/v1.2.2": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.2.2",
+      "rev": "8b03d39fd387f6a59c97c2acdec2518f0b18a230"
+    },
+    "refs/tags/v1.2.4": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.2.4",
+      "rev": "f9829089b36806ac0129c421bf601cbb30c2842c"
+    },
+    "refs/tags/v1.2.6": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.2.6",
+      "rev": "a5a0a9e3cb14e79d572ba377b6116053fc621f6d"
+    },
+    "refs/tags/v1.2.8": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.2.8",
+      "rev": "0d1a9f5933eab686ab3b527b36d0cebd3949a503"
+    },
+    "refs/tags/v1.4.0": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.4.0",
+      "rev": "01dd8c7a959adac4aa4d73abdf62cbc53ffed11b"
+    },
+    "refs/tags/v1.4.2": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.4.2",
+      "rev": "cd090a6151b452b99d65c5173400d4685916f970"
+    },
+    "refs/tags/v1.4.4": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.4.4",
+      "rev": "944c8e6d04a044611ed723391272f3c86781eadd"
+    },
+    "refs/tags/v1.4.6": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.4.6",
+      "rev": "4eb05ebab2b4d8b0cd00b19a72af35a2d767819a"
+    },
+    "refs/tags/v1.4.8": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.4.8",
+      "rev": "074f7159752b0da5306bdedb3a4e0470af1f85c0"
+    },
+    "refs/tags/v1.6.0": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.6.0",
+      "rev": "1a2a82e94269741b0d8ba012994dd85a53f36f2d"
+    },
+    "refs/tags/v1.6.10": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.6.10",
+      "rev": "b54236aaee2fc90200cb3a4e7070820ced9ce605"
+    },
+    "refs/tags/v1.6.2": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.6.2",
+      "rev": "ee18eda86eef2db0a49788bf0fc8e35996ba7f0d"
+    },
+    "refs/tags/v1.6.4": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.6.4",
+      "rev": "007bf1cb52eac412bc88b3ca2283127ad578ec04"
+    },
+    "refs/tags/v1.6.6": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.6.6",
+      "rev": "2f85924354af35278a801079b7ff3f8805ff1f5a"
+    },
+    "refs/tags/v1.6.8": {
+      "name": "compiler",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "compiler",
+        "nimsuggest"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.6.8",
+      "rev": "f06dc8ee3baf8f64cce67a28a6e6e8a8cd9bf04b"
+    }
+  }
+}

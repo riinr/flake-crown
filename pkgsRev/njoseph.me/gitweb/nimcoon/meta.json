@@ -1,0 +1,801 @@
+{
+  "name": "nimcoon",
+  "url": "https://njoseph.me/gitweb/nimcoon.git",
+  "method": "git",
+  "tags": [
+    "cli",
+    "youtube",
+    "streaming",
+    "downloader",
+    "magnet"
+  ],
+  "description": "A command-line YouTube player and more",
+  "license": "GPL-3.0",
+  "web": "https://gitlab.com/njoseph/nimcoon",
+  "refs": {
+    "HEAD": {
+      "name": "nimcoon",
+      "version": "0.9.0",
+      "author": "Joseph Nuthalapati",
+      "desc": "A command-line player for YouTube, PeerTube and more.",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "nimcoon"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "fc5bf33f392a1d189695ca7624e5320ec5c79ff0"
+    },
+    "refs/bugs/0272c1e9e0f94a0c92f87e1334b5d7ebd2931c42": {
+      "rev": "cf752f34b94a73a582a1075a0a08a0ef29fdeb73",
+      "ref": "refs/bugs/0272c1e9e0f94a0c92f87e1334b5d7ebd2931c42"
+    },
+    "refs/bugs/0beb21d8b30efcb1bf884d0bef49a84114cfead6": {
+      "rev": "cf0cd950b348a7ab1920e45c8f74b064e220ffe6",
+      "ref": "refs/bugs/0beb21d8b30efcb1bf884d0bef49a84114cfead6"
+    },
+    "refs/bugs/1521afd374f8ed3e6fba601192d7442a18eb26e0": {
+      "rev": "1521afd374f8ed3e6fba601192d7442a18eb26e0",
+      "ref": "refs/bugs/1521afd374f8ed3e6fba601192d7442a18eb26e0"
+    },
+    "refs/bugs/1948693e05d5c17fda53ffb97490273dbd8c36fd": {
+      "rev": "03aa20b9ccc822c253615c5c8f68e95a6663fe04",
+      "ref": "refs/bugs/1948693e05d5c17fda53ffb97490273dbd8c36fd"
+    },
+    "refs/bugs/1aa19077deb40a8d3a081771791f7518b779bccf": {
+      "rev": "1aa19077deb40a8d3a081771791f7518b779bccf",
+      "ref": "refs/bugs/1aa19077deb40a8d3a081771791f7518b779bccf"
+    },
+    "refs/bugs/1be41b288ada3805488d1928dd967c46cf6f788b": {
+      "rev": "18c4f8550791dba4d29e487c9251987fa78be7be",
+      "ref": "refs/bugs/1be41b288ada3805488d1928dd967c46cf6f788b"
+    },
+    "refs/bugs/1f18a6ada851c2a7aa67019a6b78226e7731cfcf": {
+      "rev": "5f78a31244573c5cac7f92b5113b1dfed1c463bf",
+      "ref": "refs/bugs/1f18a6ada851c2a7aa67019a6b78226e7731cfcf"
+    },
+    "refs/bugs/2ffbc7554518d60c854e793e566f5b3cca776095": {
+      "rev": "c3ef1ac76d4264dc4f63e258818edf54ce9c1bfe",
+      "ref": "refs/bugs/2ffbc7554518d60c854e793e566f5b3cca776095"
+    },
+    "refs/bugs/39219cdc933540b8b93d98283ddbb4ad5d1f2745": {
+      "rev": "b06f587de0e50f18944ad8e3a63cbd0633a7db51",
+      "ref": "refs/bugs/39219cdc933540b8b93d98283ddbb4ad5d1f2745"
+    },
+    "refs/bugs/57eea1d61efa5e790c8345287685fe1e7deb0c7a": {
+      "rev": "57eea1d61efa5e790c8345287685fe1e7deb0c7a",
+      "ref": "refs/bugs/57eea1d61efa5e790c8345287685fe1e7deb0c7a"
+    },
+    "refs/bugs/60441036e3db152f6fa86df39b4dac802cc37e1e": {
+      "rev": "bb96fea01e13c6a9363d2c9a55e19b8efcae40d9",
+      "ref": "refs/bugs/60441036e3db152f6fa86df39b4dac802cc37e1e"
+    },
+    "refs/bugs/737b55ae9d41e8f2ffe99114cbbdb5b2931298a8": {
+      "rev": "957e85105ee4fead98167f7e9cfb506463138ca5",
+      "ref": "refs/bugs/737b55ae9d41e8f2ffe99114cbbdb5b2931298a8"
+    },
+    "refs/bugs/83ff7cf109ffef6ec2ebe98454bd425aed004706": {
+      "rev": "647a8c835b4a0c6b1097505ffa26b256354a7c43",
+      "ref": "refs/bugs/83ff7cf109ffef6ec2ebe98454bd425aed004706"
+    },
+    "refs/bugs/884ac3af6cc4d3ac5b4c41b60d97a587c8d8c18b": {
+      "rev": "fe9b16f1d9a1a0f107caa0df1c9ef51f4c63155b",
+      "ref": "refs/bugs/884ac3af6cc4d3ac5b4c41b60d97a587c8d8c18b"
+    },
+    "refs/bugs/930839c326ff2d31e8c281068ee32886e105c7b3": {
+      "rev": "439d0046f83aef1976f1022a8b1ba230d4aef20b",
+      "ref": "refs/bugs/930839c326ff2d31e8c281068ee32886e105c7b3"
+    },
+    "refs/bugs/9dc86311036ff72eea611c9f8d8173a09f2792f4": {
+      "rev": "28260d700d0548a5066ae286323d8ea1f90a20e7",
+      "ref": "refs/bugs/9dc86311036ff72eea611c9f8d8173a09f2792f4"
+    },
+    "refs/bugs/b17d0f30dc1f5f5f0b3bee040f89bd27ad3ce3a1": {
+      "rev": "db2c26249918ff39b1a9b92a3373d4b6a951da7d",
+      "ref": "refs/bugs/b17d0f30dc1f5f5f0b3bee040f89bd27ad3ce3a1"
+    },
+    "refs/bugs/b518a9742e626ba3cf8f1690f202db48a03b0dca": {
+      "rev": "ac9238a387daf9925cccb2649312b1aa654e5d64",
+      "ref": "refs/bugs/b518a9742e626ba3cf8f1690f202db48a03b0dca"
+    },
+    "refs/bugs/b634bee923f0e837ca366ee9991a269770faa8a9": {
+      "rev": "ba39b77b0b674035c2d2ed799067dd4e5b6460bc",
+      "ref": "refs/bugs/b634bee923f0e837ca366ee9991a269770faa8a9"
+    },
+    "refs/bugs/c88f6ae9337d8798c4525ee74a5051bcf27e4e22": {
+      "rev": "c88f6ae9337d8798c4525ee74a5051bcf27e4e22",
+      "ref": "refs/bugs/c88f6ae9337d8798c4525ee74a5051bcf27e4e22"
+    },
+    "refs/bugs/ccdb93bf618f6d935773c98aad3b60fcbde61648": {
+      "rev": "7967dc22f1d7cc16ee5b48ff2db351988c7d11f1",
+      "ref": "refs/bugs/ccdb93bf618f6d935773c98aad3b60fcbde61648"
+    },
+    "refs/bugs/cf411364698465385f2164667a68a4662f3c1005": {
+      "rev": "50e96364078de5c1fd164ee4d48bf97e0bd0de4e",
+      "ref": "refs/bugs/cf411364698465385f2164667a68a4662f3c1005"
+    },
+    "refs/bugs/d8053bfd06c1c8cc9b0e1c27a117a080ae81ef11": {
+      "rev": "8c6fe5c202e9245c8d3ec3d0b5e5b45abdb2d99f",
+      "ref": "refs/bugs/d8053bfd06c1c8cc9b0e1c27a117a080ae81ef11"
+    },
+    "refs/bugs/db43d673ecdd87723098bc698fe27a64ab817bda": {
+      "rev": "84c243817747a902ccf5db42ce75703558c43479",
+      "ref": "refs/bugs/db43d673ecdd87723098bc698fe27a64ab817bda"
+    },
+    "refs/bugs/f9b7357f93be432b669954dbe7321447082f6327": {
+      "rev": "f9b7357f93be432b669954dbe7321447082f6327",
+      "ref": "refs/bugs/f9b7357f93be432b669954dbe7321447082f6327"
+    },
+    "refs/bugs/fb861ba4fdcee89b37f839ae63a9821dcf402236": {
+      "rev": "4eac6705c40751c3e9f90b27eaaf1dfa306597a4",
+      "ref": "refs/bugs/fb861ba4fdcee89b37f839ae63a9821dcf402236"
+    },
+    "refs/bugs/fbe814788fe701747ceffe30b02eff9e6738919a": {
+      "rev": "4948843b74c0b8c903b5326aceab846b74d4b821",
+      "ref": "refs/bugs/fbe814788fe701747ceffe30b02eff9e6738919a"
+    },
+    "refs/bugs/ffe704ddd406df7047e6073493d036deb8e80ac0": {
+      "rev": "8848b49d42a03113afdc01cc5aaa33b8da844e44",
+      "ref": "refs/bugs/ffe704ddd406df7047e6073493d036deb8e80ac0"
+    },
+    "refs/heads/master": {
+      "name": "nimcoon",
+      "version": "0.9.0",
+      "author": "Joseph Nuthalapati",
+      "desc": "A command-line player for YouTube, PeerTube and more.",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "nimcoon"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/master",
+      "rev": "fc5bf33f392a1d189695ca7624e5320ec5c79ff0"
+    },
+    "refs/identities/0a5df1a1dda1e97fca07e7e4252c7ad84bccf9bd": {
+      "rev": "0a5df1a1dda1e97fca07e7e4252c7ad84bccf9bd",
+      "ref": "refs/identities/0a5df1a1dda1e97fca07e7e4252c7ad84bccf9bd"
+    },
+    "refs/identities/6e733a87da82dcd1adcbb358f53626cdc378ccb3": {
+      "rev": "5a4ed193981d80d6dee315dce3e906f50aee27ca",
+      "ref": "refs/identities/6e733a87da82dcd1adcbb358f53626cdc378ccb3"
+    },
+    "refs/identities/9eedd41713583e91e7ab74a9fd7df7c0265ae96f": {
+      "rev": "9eedd41713583e91e7ab74a9fd7df7c0265ae96f",
+      "ref": "refs/identities/9eedd41713583e91e7ab74a9fd7df7c0265ae96f"
+    },
+    "refs/tags/0.1.0": {
+      "name": "nimcoon",
+      "version": "0.1.0",
+      "author": "Joseph Nuthalapati",
+      "desc": "A command-line YouTube player and more",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "nimcoon"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.0",
+      "rev": "8c631115d89f23b36469d80032893d935b3b54f9"
+    },
+    "refs/tags/0.2.0": {
+      "name": "nimcoon",
+      "version": "0.2.0",
+      "author": "Joseph Nuthalapati",
+      "desc": "A command-line YouTube player and more",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "nimcoon"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.2.0",
+      "rev": "703dad0edb1a7d13a5607c59dc3ee68e4f786822"
+    },
+    "refs/tags/0.2.1": {
+      "name": "nimcoon",
+      "version": "0.2.1",
+      "author": "Joseph Nuthalapati",
+      "desc": "A command-line YouTube player and more",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "nimcoon"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.2.1",
+      "rev": "8261789f3741cf2ac744295852f3c56de9a48621"
+    },
+    "refs/tags/0.2.2": {
+      "name": "nimcoon",
+      "version": "0.2.2",
+      "author": "Joseph Nuthalapati",
+      "desc": "A command-line YouTube player and more",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "nimcoon"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.2.2",
+      "rev": "56a1028f9e75fd0bb4ef2182b1e59ac9cffc38d9"
+    },
+    "refs/tags/0.3.0": {
+      "name": "nimcoon",
+      "version": "0.2.2",
+      "author": "Joseph Nuthalapati",
+      "desc": "A command-line YouTube player and more",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "nimcoon"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.3.0",
+      "rev": "e4f082d920c20319371df852923d488a2f3b701f"
+    },
+    "refs/tags/0.3.1": {
+      "name": "nimcoon",
+      "version": "0.3.1",
+      "author": "Joseph Nuthalapati",
+      "desc": "A command-line YouTube player and more",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "nimcoon"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.3.1",
+      "rev": "ede339f5fd328fd22e320a087f5b594b2c7b2038"
+    },
+    "refs/tags/0.3.2": {
+      "name": "nimcoon",
+      "version": "0.3.2",
+      "author": "Joseph Nuthalapati",
+      "desc": "A command-line YouTube player and more",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "nimcoon"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.3.2",
+      "rev": "59e0f961b4181f52ef8648b16d425518640bdd27"
+    },
+    "refs/tags/0.4.0": {
+      "name": "nimcoon",
+      "version": "0.4.0",
+      "author": "Joseph Nuthalapati",
+      "desc": "A command-line YouTube player and more",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "nimcoon"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.4.0",
+      "rev": "c9e986cae6624ca4300bddcd8fd73b6074145da7"
+    },
+    "refs/tags/0.5.0": {
+      "name": "nimcoon",
+      "version": "0.5.0",
+      "author": "Joseph Nuthalapati",
+      "desc": "A command-line YouTube player and more",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "nimcoon"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.5.0",
+      "rev": "76965ae0688a23c9456039d9474d6ae867dbe71b"
+    },
+    "refs/tags/0.5.1": {
+      "name": "nimcoon",
+      "version": "0.5.1",
+      "author": "Joseph Nuthalapati",
+      "desc": "A command-line YouTube player and more",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "nimcoon"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.5.1",
+      "rev": "22fff4dd672a532beb555bad7b57aecdd104af2e"
+    },
+    "refs/tags/0.6.0": {
+      "name": "nimcoon",
+      "version": "0.6.0",
+      "author": "Joseph Nuthalapati",
+      "desc": "A command-line YouTube player and more",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "nimcoon"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.6.0",
+      "rev": "16d771c40ce86b6fc551407d6dbb087a20bb7c78"
+    },
+    "refs/tags/0.6.1": {
+      "name": "nimcoon",
+      "version": "0.6.1",
+      "author": "Joseph Nuthalapati",
+      "desc": "A command-line YouTube player and more",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "nimcoon"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.6.1",
+      "rev": "fabf02942a6fbc3004f6fe5894a489cbbe84fe42"
+    },
+    "refs/tags/0.7.0": {
+      "name": "nimcoon",
+      "version": "0.7.0",
+      "author": "Joseph Nuthalapati",
+      "desc": "A command-line YouTube player and more",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "nimcoon"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.7.0",
+      "rev": "c4b35c271e5a018450a1f599c70969aa6d8a0061"
+    },
+    "refs/tags/0.8.0": {
+      "name": "nimcoon",
+      "version": "0.8.0",
+      "author": "Joseph Nuthalapati",
+      "desc": "A command-line YouTube player and more",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "nimcoon"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.8.0",
+      "rev": "d09270c390b7c8d2c6cc25f3f1a416b43c8c3387"
+    },
+    "refs/tags/0.8.1": {
+      "name": "nimcoon",
+      "version": "0.8.1",
+      "author": "Joseph Nuthalapati",
+      "desc": "A command-line YouTube player and more",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "nimcoon"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.8.1",
+      "rev": "bf46415bcf5fa20ba6ffa0940af2fae9488874a3"
+    },
+    "refs/tags/0.8.2": {
+      "name": "nimcoon",
+      "version": "0.8.2",
+      "author": "Joseph Nuthalapati",
+      "desc": "A command-line YouTube player and more",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "nimcoon"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.8.2",
+      "rev": "f1ba7a622ea9f05f87292c24e9dfc7acc67ed06d"
+    },
+    "refs/tags/0.8.3": {
+      "name": "nimcoon",
+      "version": "0.8.3",
+      "author": "Joseph Nuthalapati",
+      "desc": "A command-line YouTube player and more",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "nimcoon"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.8.3",
+      "rev": "ff0a15bf2f06bd2380dce5c5584c5d871346a3c9"
+    },
+    "refs/tags/0.9.0": {
+      "name": "nimcoon",
+      "version": "0.9.0",
+      "author": "Joseph Nuthalapati",
+      "desc": "A command-line player for YouTube, PeerTube and more.",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "nimcoon"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.9.0",
+      "rev": "fc5bf33f392a1d189695ca7624e5320ec5c79ff0"
+    }
+  }
+}

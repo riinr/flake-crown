@@ -1,0 +1,2211 @@
+{
+  "name": "libp2pdht",
+  "url": "https://github.com/status-im/nim-libp2p-dht",
+  "method": "git",
+  "tags": [
+    "library",
+    "networking",
+    "libp2p",
+    "dhs",
+    "kademlia"
+  ],
+  "description": "DHT based on the libp2p Kademlia spec",
+  "license": "Apache License 2.0",
+  "web": "https://github.com/status-im/nim-libp2p",
+  "refs": {
+    "HEAD": {
+      "name": "libp2pdht",
+      "version": "0.0.1",
+      "author": "Status Research & Development GmbH",
+      "desc": "DHT based on the libp2p Kademlia spec",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "libp2pdht.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2 & < 0.11.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.10.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.11.0"
+            }
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.11 & < 3.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "3.0.11"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "3.1.0"
+            }
+          }
+        },
+        {
+          "name": "libp2p",
+          "str": "#unstable",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#unstable"
+          }
+        },
+        {
+          "name": "metrics",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "protobufserialization",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": ">= 0.5.2 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "stew",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asynctest",
+          "str": ">= 0.3.1 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/status-im/nim-datastore",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "questionable",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "4375b9229815c332a3b1a9d0091d5cf5a74adb2e"
+    },
+    "refs/heads/add-findnode-by-id": {
+      "name": "libp2pdht",
+      "version": "0.0.1",
+      "author": "Status Research & Development GmbH",
+      "desc": "DHT based on the libp2p Kademlia spec",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "libp2pdht.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": ">= 0.1.5 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.5"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2 & < 0.11.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.10.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.11.0"
+            }
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.11 & < 3.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "3.0.11"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "3.1.0"
+            }
+          }
+        },
+        {
+          "name": "eth",
+          "str": ">= 1.0.0 & < 1.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.1.0"
+            }
+          }
+        },
+        {
+          "name": "libp2p",
+          "str": "#c7504d2446717a48a79c8b15e0f21bbfc84957ba",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#c7504d2446717a48a79c8b15e0f21bbfc84957ba"
+          }
+        },
+        {
+          "name": "metrics",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "protobufserialization",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": ">= 0.5.2 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "stew",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asynctest",
+          "str": ">= 0.3.1 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/add-findnode-by-id",
+      "rev": "667a8b91a4bf7996354c3921706bb6c760e8e6f5"
+    },
+    "refs/heads/build/add-ci-action-2": {
+      "name": "libp2pdht",
+      "version": "0.0.1",
+      "author": "Status Research & Development GmbH",
+      "desc": "DHT based on the libp2p Kademlia spec",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "libp2pdht.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": ">= 0.1.5 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.5"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2 & < 0.11.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.10.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.11.0"
+            }
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.11 & < 3.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "3.0.11"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "3.1.0"
+            }
+          }
+        },
+        {
+          "name": "eth",
+          "str": ">= 1.0.0 & < 1.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.1.0"
+            }
+          }
+        },
+        {
+          "name": "libp2p",
+          "str": "#unstable",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#unstable"
+          }
+        },
+        {
+          "name": "metrics",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "protobufserialization",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": ">= 0.5.2 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "stew",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asynctest",
+          "str": ">= 0.3.1 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/build/add-ci-action-2",
+      "rev": "3e39102e1cd5cf17a69bdae0aab2928b2a9270ac"
+    },
+    "refs/heads/feat/rlp-to-protobufs-fixer": {
+      "name": "libp2pdht",
+      "version": "0.0.1",
+      "author": "Status Research & Development GmbH",
+      "desc": "DHT based on the libp2p Kademlia spec",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "libp2pdht.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": ">= 0.1.5 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.5"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2 & < 0.11.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.10.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.11.0"
+            }
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.11 & < 3.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "3.0.11"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "3.1.0"
+            }
+          }
+        },
+        {
+          "name": "eth",
+          "str": ">= 1.0.0 & < 1.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.1.0"
+            }
+          }
+        },
+        {
+          "name": "libp2p",
+          "str": "#c7504d2446717a48a79c8b15e0f21bbfc84957ba",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#c7504d2446717a48a79c8b15e0f21bbfc84957ba"
+          }
+        },
+        {
+          "name": "metrics",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "protobufserialization",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": ">= 0.5.2 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "stew",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asynctest",
+          "str": ">= 0.3.1 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/feat/rlp-to-protobufs-fixer",
+      "rev": "8f1a220c66d73959be639f4a08bebbaeda937f35"
+    },
+    "refs/heads/feat/seqno-to-ttl": {
+      "name": "libp2pdht",
+      "version": "0.0.1",
+      "author": "Status Research & Development GmbH",
+      "desc": "DHT based on the libp2p Kademlia spec",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "libp2pdht.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": ">= 0.1.5 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.5"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2 & < 0.11.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.10.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.11.0"
+            }
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.11 & < 3.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "3.0.11"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "3.1.0"
+            }
+          }
+        },
+        {
+          "name": "eth",
+          "str": ">= 1.0.0 & < 1.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.1.0"
+            }
+          }
+        },
+        {
+          "name": "libp2p",
+          "str": "#c7504d2446717a48a79c8b15e0f21bbfc84957ba",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#c7504d2446717a48a79c8b15e0f21bbfc84957ba"
+          }
+        },
+        {
+          "name": "metrics",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "protobufserialization",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": ">= 0.5.2 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "stew",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asynctest",
+          "str": ">= 0.3.1 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/feat/seqno-to-ttl",
+      "rev": "cb2031d18129a65df2d02c634bbd75326135def0"
+    },
+    "refs/heads/feat/swap-enr-for-signedpeerrecord": {
+      "name": "libp2pdht",
+      "version": "0.0.1",
+      "author": "Status Research & Development GmbH",
+      "desc": "DHT based on the libp2p Kademlia spec",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "libp2pdht.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": ">= 0.1.5 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.5"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2 & < 0.11.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.10.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.11.0"
+            }
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.11 & < 3.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "3.0.11"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "3.1.0"
+            }
+          }
+        },
+        {
+          "name": "eth",
+          "str": ">= 1.0.0 & < 1.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.1.0"
+            }
+          }
+        },
+        {
+          "name": "libp2p",
+          "str": "#c7504d2446717a48a79c8b15e0f21bbfc84957ba",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#c7504d2446717a48a79c8b15e0f21bbfc84957ba"
+          }
+        },
+        {
+          "name": "metrics",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "protobufserialization",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": ">= 0.5.2 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "stew",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asynctest",
+          "str": ">= 0.3.1 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/feat/swap-enr-for-signedpeerrecord",
+      "rev": "2f474fa01078e90f67d20faabf8c64315f07a639"
+    },
+    "refs/heads/fix-bootstrap": {
+      "name": "libp2pdht",
+      "version": "0.0.1",
+      "author": "Status Research & Development GmbH",
+      "desc": "DHT based on the libp2p Kademlia spec",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "libp2pdht.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": ">= 0.1.5 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.5"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2 & < 0.11.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.10.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.11.0"
+            }
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.11 & < 3.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "3.0.11"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "3.1.0"
+            }
+          }
+        },
+        {
+          "name": "eth",
+          "str": ">= 1.0.0 & < 1.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.1.0"
+            }
+          }
+        },
+        {
+          "name": "libp2p",
+          "str": "#c7504d2446717a48a79c8b15e0f21bbfc84957ba",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#c7504d2446717a48a79c8b15e0f21bbfc84957ba"
+          }
+        },
+        {
+          "name": "metrics",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "protobufserialization",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": ">= 0.5.2 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "stew",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asynctest",
+          "str": ">= 0.3.1 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fix-bootstrap",
+      "rev": "4362c83a5680c2fd877b495d230b47653b0c4677"
+    },
+    "refs/heads/libp2p-peerrecord": {
+      "rev": "e91ae5452c164af86d647c606c1dbd222de55e91",
+      "ref": "refs/heads/libp2p-peerrecord"
+    },
+    "refs/heads/libp2pcrypto": {
+      "name": "libp2pdht",
+      "version": "0.0.1",
+      "author": "Status Research & Development GmbH",
+      "desc": "DHT based on the libp2p Kademlia spec",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "libp2pdht.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": ">= 0.1.5 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.5"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2 & < 0.11.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.10.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.11.0"
+            }
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.11 & < 3.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "3.0.11"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "3.1.0"
+            }
+          }
+        },
+        {
+          "name": "eth",
+          "str": ">= 1.0.0 & < 1.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.1.0"
+            }
+          }
+        },
+        {
+          "name": "libp2p",
+          "str": "#c7504d2446717a48a79c8b15e0f21bbfc84957ba",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#c7504d2446717a48a79c8b15e0f21bbfc84957ba"
+          }
+        },
+        {
+          "name": "metrics",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "protobufserialization",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": ">= 0.5.2 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "stew",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asynctest",
+          "str": ">= 0.3.1 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/libp2pcrypto",
+      "rev": "ae24e4c3abae009cebec698091dd0d5dffba0667"
+    },
+    "refs/heads/main": {
+      "name": "libp2pdht",
+      "version": "0.0.1",
+      "author": "Status Research & Development GmbH",
+      "desc": "DHT based on the libp2p Kademlia spec",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "libp2pdht.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2 & < 0.11.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.10.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.11.0"
+            }
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.11 & < 3.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "3.0.11"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "3.1.0"
+            }
+          }
+        },
+        {
+          "name": "libp2p",
+          "str": "#unstable",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#unstable"
+          }
+        },
+        {
+          "name": "metrics",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "protobufserialization",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": ">= 0.5.2 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "stew",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asynctest",
+          "str": ">= 0.3.1 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/status-im/nim-datastore",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "questionable",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/main",
+      "rev": "4375b9229815c332a3b1a9d0091d5cf5a74adb2e"
+    },
+    "refs/heads/peerrecord-as-enr": {
+      "name": "libp2pdht",
+      "version": "0.0.1",
+      "author": "Status Research & Development GmbH",
+      "desc": "DHT based on the libp2p Kademlia spec",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "libp2pdht.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": ">= 0.1.5 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.5"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2 & < 0.11.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.10.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.11.0"
+            }
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.11 & < 3.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "3.0.11"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "3.1.0"
+            }
+          }
+        },
+        {
+          "name": "eth",
+          "str": ">= 1.0.0 & < 1.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.1.0"
+            }
+          }
+        },
+        {
+          "name": "libp2p",
+          "str": "#unstable",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#unstable"
+          }
+        },
+        {
+          "name": "metrics",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "protobufserialization",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": ">= 0.5.2 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "stew",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asynctest",
+          "str": ">= 0.3.1 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/peerrecord-as-enr",
+      "rev": "cf658b667d85b1043a1402f53ff84cb8f55a2f6a"
+    },
+    "refs/heads/sqlite_datastore_persist_providers": {
+      "name": "libp2pdht",
+      "version": "0.0.1",
+      "author": "Status Research & Development GmbH",
+      "desc": "DHT based on the libp2p Kademlia spec",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "libp2pdht.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": ">= 0.1.5 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.5"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2 & < 0.11.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.10.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.11.0"
+            }
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.11 & < 3.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "3.0.11"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "3.1.0"
+            }
+          }
+        },
+        {
+          "name": "libp2p",
+          "str": "#c7504d2446717a48a79c8b15e0f21bbfc84957ba",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#c7504d2446717a48a79c8b15e0f21bbfc84957ba"
+          }
+        },
+        {
+          "name": "metrics",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "protobufserialization",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": ">= 0.5.2 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "stew",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asynctest",
+          "str": ">= 0.3.1 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        },
+        {
+          "name": "questionable",
+          "str": ">= 0.10.5 & < 0.11.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.10.5"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.11.0"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/status-im/nim-datastore",
+          "str": "#methods_close_query",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#methods_close_query"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/sqlite_datastore_persist_providers",
+      "rev": "6b0057dbfca60f6ac7669794bd00081930eff846"
+    },
+    "refs/heads/unstable": {
+      "name": "libp2pdht",
+      "version": "0.0.1",
+      "author": "Status Research & Development GmbH",
+      "desc": "DHT based on the libp2p Kademlia spec",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "libp2pdht.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": ">= 0.1.5 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.5"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2 & < 0.11.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.10.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.11.0"
+            }
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.11 & < 3.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "3.0.11"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "3.1.0"
+            }
+          }
+        },
+        {
+          "name": "eth",
+          "str": ">= 1.0.0 & < 1.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.1.0"
+            }
+          }
+        },
+        {
+          "name": "libp2p",
+          "str": "#c7504d2446717a48a79c8b15e0f21bbfc84957ba",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#c7504d2446717a48a79c8b15e0f21bbfc84957ba"
+          }
+        },
+        {
+          "name": "metrics",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "protobufserialization",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": ">= 0.5.2 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "stew",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asynctest",
+          "str": ">= 0.3.1 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/unstable",
+      "rev": "34d8165b1e9694b3e9078b830d518ccbffb10128"
+    }
+  }
+}

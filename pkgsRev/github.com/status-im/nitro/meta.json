@@ -1,0 +1,908 @@
+{
+  "name": "nitro",
+  "url": "https://github.com/status-im/nim-nitro",
+  "method": "git",
+  "tags": [
+    "state-channels",
+    "smart-contracts",
+    "blockchain",
+    "ethereum"
+  ],
+  "description": " Nitro state channels in Nim",
+  "license": "Apache License 2.0",
+  "web": "https://github.com/status-im/nim-nitro",
+  "refs": {
+    "HEAD": {
+      "name": "nitro",
+      "version": "0.5.1",
+      "author": "Nim Nitro developers",
+      "desc": "Nitro state channels",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nitro.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.6 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.2.6"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "questionable",
+          "str": ">= 0.10.1 & < 0.11.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.10.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.11.0"
+            }
+          }
+        },
+        {
+          "name": "upraises",
+          "str": ">= 0.1.0 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        },
+        {
+          "name": "contractabi",
+          "str": ">= 0.4.1 & < 0.5.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.4.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.5.0"
+            }
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "c13aba99422f11bc145d3de2c29cdd3c29272c31"
+    },
+    "refs/heads/main": {
+      "name": "nitro",
+      "version": "0.5.1",
+      "author": "Nim Nitro developers",
+      "desc": "Nitro state channels",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nitro.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.6 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.2.6"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "questionable",
+          "str": ">= 0.10.1 & < 0.11.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.10.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.11.0"
+            }
+          }
+        },
+        {
+          "name": "upraises",
+          "str": ">= 0.1.0 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        },
+        {
+          "name": "contractabi",
+          "str": ">= 0.4.1 & < 0.5.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.4.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.5.0"
+            }
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/main",
+      "rev": "c13aba99422f11bc145d3de2c29cdd3c29272c31"
+    },
+    "refs/tags/0.1.0": {
+      "name": "nitro",
+      "version": "0.1.0",
+      "author": "Nim Nitro developers",
+      "desc": "Nitro state channels",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nitro.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.6 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.2.6"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "questionable",
+          "str": ">= 0.4.3 & < 0.5.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.4.3"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.5.0"
+            }
+          }
+        },
+        {
+          "name": "upraises",
+          "str": ">= 0.1.0 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.1.0",
+      "rev": "f7d06a995b161686898d06bbc1a1c52236cd5e91"
+    },
+    "refs/tags/0.2.0": {
+      "name": "nitro",
+      "version": "0.2.0",
+      "author": "Nim Nitro developers",
+      "desc": "Nitro state channels",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nitro.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.6 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.2.6"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "questionable",
+          "str": ">= 0.5.0 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "upraises",
+          "str": ">= 0.1.0 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.2.0",
+      "rev": "04beab5b916e7dcba4a4889fe77a651e8a2f4f55"
+    },
+    "refs/tags/0.3.0": {
+      "name": "nitro",
+      "version": "0.3.0",
+      "author": "Nim Nitro developers",
+      "desc": "Nitro state channels",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nitro.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.6 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.2.6"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "questionable",
+          "str": ">= 0.6.2 & < 0.7.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.6.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.7.0"
+            }
+          }
+        },
+        {
+          "name": "upraises",
+          "str": ">= 0.1.0 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.3.0",
+      "rev": "85ffad6fb11d5305bbe05553017c7003dcf360cd"
+    },
+    "refs/tags/0.4.0": {
+      "name": "nitro",
+      "version": "0.4.0",
+      "author": "Nim Nitro developers",
+      "desc": "Nitro state channels",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nitro.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.6 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.2.6"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "questionable",
+          "str": ">= 0.9.1 & < 0.10.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.9.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.10.0"
+            }
+          }
+        },
+        {
+          "name": "upraises",
+          "str": ">= 0.1.0 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.4.0",
+      "rev": "adcd534eb57be1c2535c2b34c62c8dd45e9e8252"
+    },
+    "refs/tags/0.5.0": {
+      "name": "nitro",
+      "version": "0.5.0",
+      "author": "Nim Nitro developers",
+      "desc": "Nitro state channels",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nitro.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.6 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.2.6"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "questionable",
+          "str": ">= 0.9.1 & < 0.10.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.9.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.10.0"
+            }
+          }
+        },
+        {
+          "name": "upraises",
+          "str": ">= 0.1.0 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/status-im/nim-contract-abi",
+          "str": ">= 0.1.0 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.5.0",
+      "rev": "213551c5121e41e190df51563355d95bac6d7d39"
+    },
+    "refs/tags/0.5.1": {
+      "name": "nitro",
+      "version": "0.5.1",
+      "author": "Nim Nitro developers",
+      "desc": "Nitro state channels",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nitro.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.6 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.2.6"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "questionable",
+          "str": ">= 0.10.1 & < 0.11.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.10.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.11.0"
+            }
+          }
+        },
+        {
+          "name": "upraises",
+          "str": ">= 0.1.0 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        },
+        {
+          "name": "contractabi",
+          "str": ">= 0.4.1 & < 0.5.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.4.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.5.0"
+            }
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stint",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.5.1",
+      "rev": "6b4c455bf4dad7449c1580055733a1738fcd5aec"
+    }
+  }
+}

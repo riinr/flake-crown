@@ -1,0 +1,2667 @@
+{
+  "name": "jupyternim",
+  "url": "https://github.com/stisa/jupyternim",
+  "method": "git",
+  "tags": [
+    "jupyter",
+    "nteract",
+    "ipython",
+    "jupyter-kernel"
+  ],
+  "description": "A Jupyter kernel for nim.",
+  "license": "MIT",
+  "web": "https://github.com/stisa/jupyternim/blob/master/README.md",
+  "doc": "https://github.com/stisa/jupyternim",
+  "refs": {
+    "HEAD": {
+      "name": "jupyternim",
+      "version": "0.8.0",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 1.2.1 & < 1.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.2.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.3.0"
+            }
+          }
+        },
+        {
+          "name": "hmac",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "#b8f666069dff1ed0c5142dd1ca692f0e71434716",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#b8f666069dff1ed0c5142dd1ca692f0e71434716"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "#2dccf3e19ceb3fdf3f3f415e717d9d336d473a19",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#2dccf3e19ceb3fdf3f3f415e717d9d336d473a19"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "b155bf3d791183c561222d225ecf5f04f912c02e"
+    },
+    "refs/heads/QoL-improvements": {
+      "name": "jupyternim",
+      "version": "0.5.1",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/QoL-improvements",
+      "rev": "b5869d5063e2c91c5874cb393cee6a7cf4c5f594"
+    },
+    "refs/heads/bump-actions": {
+      "name": "jupyternim",
+      "version": "0.6.3",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/bump-actions",
+      "rev": "7560dba9406a294d79741e3a85efaf5e61c62537"
+    },
+    "refs/heads/bump-vers+ci-check": {
+      "name": "jupyternim",
+      "version": "0.6.3",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/bump-vers+ci-check",
+      "rev": "019c1546d4edcef82ab21f71503f4b71e2ef5df1"
+    },
+    "refs/heads/cosmetic": {
+      "name": "INim",
+      "version": "0.1.0",
+      "author": "Silvio T.",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "nimkernel"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/cosmetic",
+      "rev": "cf6ba293ad7f931f085d2ce5a4366623ade65b85"
+    },
+    "refs/heads/hcr": {
+      "name": "jupyternim",
+      "version": "0.5.1",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/hcr",
+      "rev": "97f63d962f2f6e9b8e763877945e4851d3eba876"
+    },
+    "refs/heads/highlight": {
+      "name": "jupyternim",
+      "version": "0.4.1",
+      "author": "Silvio T.",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "python3@",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/highlight",
+      "rev": "b678fd17acb56de7c8b4c2d1f69f2fc33c8bf350"
+    },
+    "refs/heads/inim-display": {
+      "name": "INim",
+      "version": "0.1.0",
+      "author": "Silvio T.",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "nimkernel"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/inim-display",
+      "rev": "97612b5382573f8fe186189f19d76ef799f0b5b3"
+    },
+    "refs/heads/master": {
+      "name": "jupyternim",
+      "version": "0.8.0",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 1.2.1 & < 1.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.2.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.3.0"
+            }
+          }
+        },
+        {
+          "name": "hmac",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "#b8f666069dff1ed0c5142dd1ca692f0e71434716",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#b8f666069dff1ed0c5142dd1ca692f0e71434716"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "#2dccf3e19ceb3fdf3f3f415e717d9d336d473a19",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#2dccf3e19ceb3fdf3f3f415e717d9d336d473a19"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/master",
+      "rev": "b155bf3d791183c561222d225ecf5f04f912c02e"
+    },
+    "refs/heads/stisa-fix-devel": {
+      "name": "jupyternim",
+      "version": "0.7.0",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 1.2.1 & < 1.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.2.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.3.0"
+            }
+          }
+        },
+        {
+          "name": "hmac",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "#b8f666069dff1ed0c5142dd1ca692f0e71434716",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#b8f666069dff1ed0c5142dd1ca692f0e71434716"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "#2dccf3e19ceb3fdf3f3f415e717d9d336d473a19",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#2dccf3e19ceb3fdf3f3f415e717d9d336d473a19"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/stisa-fix-devel",
+      "rev": "1717fa4a2bd800bdae48de852f1b6d644f71c9a5"
+    },
+    "refs/heads/stisa-patch-1": {
+      "name": "jupyternim",
+      "version": "0.6.1",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/stisa-patch-1",
+      "rev": "0b77dfa6d0cd19cd940d3ddd218162216392e2d1"
+    },
+    "refs/heads/stisa-patch-2": {
+      "name": "jupyternim",
+      "version": "0.6.1",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/stisa-patch-2",
+      "rev": "6c3a5c041b10b48c8acef769dc93b541b8d96f71"
+    },
+    "refs/heads/stisa-patch-3": {
+      "name": "jupyternim",
+      "version": "0.6.1",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/stisa-patch-3",
+      "rev": "c62d84d314fe4557274245bb67f1c3d5490dc39b"
+    },
+    "refs/heads/stisa-patch-4": {
+      "name": "jupyternim",
+      "version": "0.6.1",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/stisa-patch-4",
+      "rev": "de0ca6ab63d8f0ec0bd90f41cea3bd91c73b672e"
+    },
+    "refs/heads/stisa-patch-5": {
+      "name": "jupyternim",
+      "version": "0.8.0",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 1.2.1 & < 1.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.2.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.3.0"
+            }
+          }
+        },
+        {
+          "name": "hmac",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "#b8f666069dff1ed0c5142dd1ca692f0e71434716",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#b8f666069dff1ed0c5142dd1ca692f0e71434716"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "#2dccf3e19ceb3fdf3f3f415e717d9d336d473a19",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#2dccf3e19ceb3fdf3f3f415e717d9d336d473a19"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/stisa-patch-5",
+      "rev": "7ace2972d35074e322d0a5073e23bf837877773d"
+    },
+    "refs/heads/stisa-patch-6": {
+      "name": "jupyternim",
+      "version": "0.7.0",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 1.2.1 & < 1.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.2.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.3.0"
+            }
+          }
+        },
+        {
+          "name": "hmac",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "#b8f666069dff1ed0c5142dd1ca692f0e71434716",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#b8f666069dff1ed0c5142dd1ca692f0e71434716"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "#2dccf3e19ceb3fdf3f3f415e717d9d336d473a19",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#2dccf3e19ceb3fdf3f3f415e717d9d336d473a19"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/stisa-patch-6",
+      "rev": "949871978026c3d9e5979d7edbdda3c89c21aca5"
+    },
+    "refs/heads/stisa-patch-7": {
+      "name": "jupyternim",
+      "version": "0.8.0",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 1.2.1 & < 1.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.2.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.3.0"
+            }
+          }
+        },
+        {
+          "name": "hmac",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "#b8f666069dff1ed0c5142dd1ca692f0e71434716",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#b8f666069dff1ed0c5142dd1ca692f0e71434716"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "#2dccf3e19ceb3fdf3f3f415e717d9d336d473a19",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#2dccf3e19ceb3fdf3f3f415e717d9d336d473a19"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/stisa-patch-7",
+      "rev": "61ffc6e75c38d68b73df5f08ab34afbf908b41cf"
+    },
+    "refs/heads/tag-action": {
+      "name": "jupyternim",
+      "version": "0.4.1",
+      "author": "Silvio T.",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "python3@",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/tag-action",
+      "rev": "a244366890eb8efcf2f266fa0349660ca5e7aa2e"
+    },
+    "refs/heads/tcc-integration": {
+      "name": "INim",
+      "version": "0.1.0",
+      "author": "Silvio T.",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "nimkernel"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/tcc-integration",
+      "rev": "4e0677aac2be4a1558990f8691563f7c90975ec6"
+    },
+    "refs/tags/0.1.1": {
+      "name": "INim",
+      "version": "0.1.1",
+      "author": "Silvio T.",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "python3",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "nimkernel"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.1.1",
+      "rev": "554eb2110926fafe73cc529b679a0b57a6acfe8b"
+    },
+    "refs/tags/0.2.0": {
+      "name": "jupyternim",
+      "version": "0.2.0",
+      "author": "Silvio T.",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "python3",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.2.0",
+      "rev": "bb8672fd2a1cf8fe591506d8fb0861a11b4c16a9"
+    },
+    "refs/tags/0.4.1": {
+      "name": "jupyternim",
+      "version": "0.4.1",
+      "author": "Silvio T.",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "python3@",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.4.1",
+      "rev": "269266ae12f016790679cb6a5c2d9493b78dce78"
+    },
+    "refs/tags/0.4.2": {
+      "name": "jupyternim",
+      "version": "0.4.2",
+      "author": "Silvio T.",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "python3@",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.4.2",
+      "rev": "21d861d40898f9e044e6c5a6a1c88f8cee8498b2"
+    },
+    "refs/tags/0.5.0": {
+      "name": "jupyternim",
+      "version": "0.5.0",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.5.0",
+      "rev": "31452bd97be0b1efbf8389dcffaf25437ddd5691"
+    },
+    "refs/tags/0.5.1": {
+      "name": "jupyternim",
+      "version": "0.5.1",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.5.1",
+      "rev": "438e8755fe745a27d8a12a43ed2640e3d464b600"
+    },
+    "refs/tags/0.5.2": {
+      "name": "jupyternim",
+      "version": "0.5.2",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.5.2",
+      "rev": "f8be6e03febd99835428ffd6e32f1f49647e3be7"
+    },
+    "refs/tags/0.5.3": {
+      "name": "jupyternim",
+      "version": "0.5.3",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.5.3",
+      "rev": "696090a76d26f4d1270e63a5d1ce6fcb14def99e"
+    },
+    "refs/tags/0.5.4": {
+      "name": "jupyternim",
+      "version": "0.5.4",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.5.4",
+      "rev": "9baa1c642cc8db9defa67bb946eff41a8ace9980"
+    },
+    "refs/tags/0.5.5": {
+      "name": "jupyternim",
+      "version": "0.5.5",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.5.5",
+      "rev": "a7fa2057d2e605de9278605fb984b8123379047d"
+    },
+    "refs/tags/0.5.7": {
+      "name": "jupyternim",
+      "version": "0.5.7",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.5.7",
+      "rev": "a98a2ff47fd3103c289b1a58ffcbae49520ebbc5"
+    },
+    "refs/tags/0.5.8": {
+      "name": "jupyternim",
+      "version": "0.5.8",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.5.8",
+      "rev": "b0cbae12424633d901a62a691cf90157941f6bd1"
+    },
+    "refs/tags/0.6.0": {
+      "name": "jupyternim",
+      "version": "0.6.0",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.6.0",
+      "rev": "d51a5ed216d4083f73d8b764da0387aa9a547674"
+    },
+    "refs/tags/0.6.1": {
+      "name": "jupyternim",
+      "version": "0.6.1",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.6.1",
+      "rev": "9ee5ac7e6f9b48c336be64e9f9f74faefa6c64bf"
+    },
+    "refs/tags/0.6.2": {
+      "name": "jupyternim",
+      "version": "0.6.2",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.6.2",
+      "rev": "d7a29efa84b56b101ecb02f155c51d3c3f1d6602"
+    },
+    "refs/tags/0.6.3": {
+      "name": "jupyternim",
+      "version": "0.6.3",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.6.3",
+      "rev": "f0b47f544792c9dd37763ba0311fd4ffa1daab08"
+    },
+    "refs/tags/0.7.0": {
+      "name": "jupyternim",
+      "version": "0.7.0",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 1.2.1 & < 1.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.2.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.3.0"
+            }
+          }
+        },
+        {
+          "name": "hmac",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "#b8f666069dff1ed0c5142dd1ca692f0e71434716",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#b8f666069dff1ed0c5142dd1ca692f0e71434716"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": ">= 0.3.1 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.7.0",
+      "rev": "df5fb904ee00678dc2615451cc75fdca6632b238"
+    },
+    "refs/tags/0.8.0": {
+      "name": "jupyternim",
+      "version": "0.8.0",
+      "author": "stisa",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "jupyternimpkg",
+        "jupyternimspec"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 1.2.1 & < 1.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.2.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.3.0"
+            }
+          }
+        },
+        {
+          "name": "hmac",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "#b8f666069dff1ed0c5142dd1ca692f0e71434716",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#b8f666069dff1ed0c5142dd1ca692f0e71434716"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "#2dccf3e19ceb3fdf3f3f415e717d9d336d473a19",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#2dccf3e19ceb3fdf3f3f415e717d9d336d473a19"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.8.0",
+      "rev": "1e59c34fb2024884b317c84ab3303b31df67838e"
+    },
+    "refs/tags/v0.3.0": {
+      "name": "jupyternim",
+      "version": "0.3.0",
+      "author": "Silvio T.",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "python3",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.0",
+      "rev": "823eeb2d30f8b8dd105dca4817790188a572476a"
+    },
+    "refs/tags/v0.4.0": {
+      "name": "jupyternim",
+      "version": "0.4.0",
+      "author": "Silvio T.",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "python3",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.0",
+      "rev": "1bb84477c86946e5646a7745d0d5537f06f60b60"
+    },
+    "refs/tags/v0.4.1": {
+      "name": "jupyternim",
+      "version": "0.4.1",
+      "author": "Silvio T.",
+      "desc": "A Jupyter Kernel for Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zmq",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "hmac",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "python3@",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        }
+      ],
+      "bin": [
+        "jupyternim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.1",
+      "rev": "6c32b954dd9219f9919b7981954c3d0aa1544d3a"
+    }
+  }
+}

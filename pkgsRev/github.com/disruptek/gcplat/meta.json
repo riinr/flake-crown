@@ -1,0 +1,581 @@
+{
+  "name": "gcplat",
+  "url": "https://github.com/disruptek/gcplat",
+  "method": "git",
+  "tags": [
+    "google",
+    "cloud",
+    "platform",
+    "api",
+    "rest",
+    "openapi",
+    "web"
+  ],
+  "description": "Google Cloud Platform (GCP) APIs",
+  "license": "MIT",
+  "web": "https://github.com/disruptek/gcplat",
+  "refs": {
+    "HEAD": {
+      "name": "gcplat",
+      "version": "3.0.1",
+      "author": "disruptek",
+      "desc": "Google Cloud Platform (GCP) APIs",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/nim-jwt.git",
+          "str": "#de8fcd3b6646807c9b27708d793b1dd9245f530a",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#de8fcd3b6646807c9b27708d793b1dd9245f530a"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/openapi.git",
+          "str": ">= 3.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "3.1.3"
+          }
+        },
+        {
+          "name": "npeg",
+          "str": ">= 0.22.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.22.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "c43a88a1738f9852d377fafa366f2b2808acdb28"
+    },
+    "refs/heads/master": {
+      "name": "gcplat",
+      "version": "3.0.1",
+      "author": "disruptek",
+      "desc": "Google Cloud Platform (GCP) APIs",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/nim-jwt.git",
+          "str": "#de8fcd3b6646807c9b27708d793b1dd9245f530a",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#de8fcd3b6646807c9b27708d793b1dd9245f530a"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/openapi.git",
+          "str": ">= 3.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "3.1.3"
+          }
+        },
+        {
+          "name": "npeg",
+          "str": ">= 0.22.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.22.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/master",
+      "rev": "c43a88a1738f9852d377fafa366f2b2808acdb28"
+    },
+    "refs/tags/0.0.1": {
+      "name": "gcplat",
+      "version": "0.0.1",
+      "author": "disruptek",
+      "desc": "Google Cloud Platform (GCP) APIs",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "openapi",
+          "str": "2.0.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "2.0.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.0.1",
+      "rev": "59d6557dd2f8528276bf2ffc7acb2796f121f756"
+    },
+    "refs/tags/2.0.0": {
+      "name": "gcplat",
+      "version": "2.0.0",
+      "author": "disruptek",
+      "desc": "Google Cloud Platform (GCP) APIs",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "openapi",
+          "str": "3.1.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "3.1.0"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/nim-jwt.git",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.0.0",
+      "rev": "f9a9c59d8f8affa7d7cb327a7718883a8f50eaa7"
+    },
+    "refs/tags/2.0.1": {
+      "name": "gcplat",
+      "version": "2.0.1",
+      "author": "disruptek",
+      "desc": "Google Cloud Platform (GCP) APIs",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "openapi",
+          "str": "3.1.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "3.1.0"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/nim-jwt.git",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.0.1",
+      "rev": "b97aec5d148cf0df42e6f622abae6dee6cc29f53"
+    },
+    "refs/tags/2.0.2": {
+      "name": "gcplat",
+      "version": "2.0.2",
+      "author": "disruptek",
+      "desc": "Google Cloud Platform (GCP) APIs",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "openapi",
+          "str": "3.1.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "3.1.0"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/nim-jwt.git",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.0.2",
+      "rev": "1d75eba3ac12ebedc08aa7d15b30ac19796f0ff6"
+    },
+    "refs/tags/2.0.3": {
+      "name": "gcplat",
+      "version": "2.0.3",
+      "author": "disruptek",
+      "desc": "Google Cloud Platform (GCP) APIs",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "openapi",
+          "str": "3.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "3.1.2"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/nim-jwt.git",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.0.3",
+      "rev": "6cc585c7c09d0e4f3e4784db8114e3043cbf94ca"
+    },
+    "refs/tags/2.0.4": {
+      "name": "gcplat",
+      "version": "2.0.4",
+      "author": "disruptek",
+      "desc": "Google Cloud Platform (GCP) APIs",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/nim-jwt.git",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.0.4",
+      "rev": "8992f7dd8f4e783f0009c77f63c6680cba7416d0"
+    },
+    "refs/tags/2.0.5": {
+      "name": "gcplat",
+      "version": "2.0.5",
+      "author": "disruptek",
+      "desc": "Google Cloud Platform (GCP) APIs",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/nim-jwt.git",
+          "str": "#de8fcd3b6646807c9b27708d793b1dd9245f530a",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#de8fcd3b6646807c9b27708d793b1dd9245f530a"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.0.5",
+      "rev": "81c0a905ec0019ae123f9f83619bac0837060655"
+    },
+    "refs/tags/3.0.0": {
+      "name": "gcplat",
+      "version": "3.0.0",
+      "author": "disruptek",
+      "desc": "Google Cloud Platform (GCP) APIs",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/nim-jwt.git",
+          "str": "#de8fcd3b6646807c9b27708d793b1dd9245f530a",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#de8fcd3b6646807c9b27708d793b1dd9245f530a"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/3.0.0",
+      "rev": "948aace7e654373bcefee7c3aab8559108dceb8f"
+    },
+    "refs/tags/3.0.1": {
+      "name": "gcplat",
+      "version": "3.0.1",
+      "author": "disruptek",
+      "desc": "Google Cloud Platform (GCP) APIs",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/nim-jwt.git",
+          "str": "#de8fcd3b6646807c9b27708d793b1dd9245f530a",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#de8fcd3b6646807c9b27708d793b1dd9245f530a"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/openapi.git",
+          "str": ">= 3.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "3.1.3"
+          }
+        },
+        {
+          "name": "npeg",
+          "str": ">= 0.22.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.22.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/3.0.1",
+      "rev": "32a5e667a3f83c8b62e8dfed6270a4b29261e56a"
+    }
+  }
+}

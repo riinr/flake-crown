@@ -1,0 +1,2947 @@
+{
+  "name": "golden",
+  "url": "https://github.com/disruptek/golden",
+  "method": "git",
+  "tags": [
+    "benchmark",
+    "profile",
+    "golden",
+    "runtime",
+    "run",
+    "profiling",
+    "bench",
+    "speed"
+  ],
+  "description": "a benchmark tool",
+  "license": "MIT",
+  "web": "https://github.com/disruptek/golden",
+  "refs": {
+    "HEAD": {
+      "name": "golden",
+      "version": "3.0.15",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.4"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bump",
+          "str": ">= 1.8.15",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.8.15"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/gittyup",
+          "str": ">= 2.4.4 & < 3.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "2.4.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "3.0.0"
+            }
+          }
+        },
+        {
+          "name": "nimterop",
+          "str": ">= 0.6.2 & < 1.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.6.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.0.0"
+            }
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.40",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.40"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "17a40fbb43378249d53942cabde61836ab196651"
+    },
+    "refs/heads/master": {
+      "name": "golden",
+      "version": "3.0.15",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.4"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bump",
+          "str": ">= 1.8.15",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.8.15"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/gittyup",
+          "str": ">= 2.4.4 & < 3.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "2.4.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "3.0.0"
+            }
+          }
+        },
+        {
+          "name": "nimterop",
+          "str": ">= 0.6.2 & < 1.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.6.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.0.0"
+            }
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.40",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.40"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/master",
+      "rev": "17a40fbb43378249d53942cabde61836ab196651"
+    },
+    "refs/heads/travis": {
+      "name": "golden",
+      "version": "3.0.12",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.4"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bump",
+          "str": ">= 1.8.15",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.8.15"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/gittyup",
+          "str": "1.0.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.40",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.40"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/travis",
+      "rev": "b427ac937b80e9c807569259cec10e93ff844873"
+    },
+    "refs/tags/0.0.1": {
+      "name": "golden",
+      "version": "0.0.1",
+      "author": "disruptek",
+      "desc": "a nim benchmark",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "golden.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.38",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.38"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.0.1",
+      "rev": "03a2adb80105cc138149f2d5f6ca811b3a9dbe9e"
+    },
+    "refs/tags/1.0.1": {
+      "name": "golden",
+      "version": "1.0.1",
+      "author": "disruptek",
+      "desc": "a nim benchmark",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "golden.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.38",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.38"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/1.0.1",
+      "rev": "7e1b0c5158c3bc18e77a7133741ad10ebcb3c9f1"
+    },
+    "refs/tags/1.1.0": {
+      "name": "golden",
+      "version": "1.1.0",
+      "author": "disruptek",
+      "desc": "a nim benchmark",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "golden.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.38",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.38"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/1.1.0",
+      "rev": "9b65d1c68b59a7d7655073a47413252314449672"
+    },
+    "refs/tags/1.1.2": {
+      "name": "golden",
+      "version": "1.1.2",
+      "author": "disruptek",
+      "desc": "a nim benchmark",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.38",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.38"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "http://github.com/genotrance/nimgit2.git",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.1.2",
+      "rev": "6a7057c231d255c7b7409812cd259b5e1b20e10f"
+    },
+    "refs/tags/1.1.3": {
+      "name": "golden",
+      "version": "1.1.3",
+      "author": "disruptek",
+      "desc": "a nim benchmark",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.38",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.38"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "http://github.com/genotrance/nimgit2.git",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.1.3",
+      "rev": "b8018231ad442070459f4939facd065e1a79a0b4"
+    },
+    "refs/tags/2.0.0": {
+      "name": "golden",
+      "version": "2.0.0",
+      "author": "disruptek",
+      "desc": "a nim benchmark",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.38",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.38"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "http://github.com/genotrance/nimgit2.git",
+          "str": "0.1.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.0.0",
+      "rev": "73542890fde6933d8bc4871e8728a94d6d7580cf"
+    },
+    "refs/tags/2.1.0": {
+      "name": "golden",
+      "version": "2.1.0",
+      "author": "disruptek",
+      "desc": "a nim benchmark",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.38",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.38"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "http://github.com/genotrance/nimgit2.git",
+          "str": "0.1.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.1.0",
+      "rev": "b190f8140053476b70a69eca3e348c6f740b0357"
+    },
+    "refs/tags/2.2.0": {
+      "name": "golden",
+      "version": "2.2.0",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.38",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.38"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "http://github.com/genotrance/nimgit2.git",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.2.0",
+      "rev": "a14753defadf6fb7f42cfbc1153caed29ae9944b"
+    },
+    "refs/tags/2.3.0": {
+      "name": "golden",
+      "version": "2.3.0",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.38",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.38"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "http://github.com/genotrance/nimgit2.git",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.3.0",
+      "rev": "c4282531230a5cdfe08f406cbe44ae34dcc79aef"
+    },
+    "refs/tags/2.3.1": {
+      "name": "golden",
+      "version": "2.3.1",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.38",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.38"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "http://github.com/genotrance/nimgit2.git",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.3.1",
+      "rev": "7d5de151f7273035d8b8cae2f6bf5197f2f2c868"
+    },
+    "refs/tags/2.3.2": {
+      "name": "golden",
+      "version": "2.3.2",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.38",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.38"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "0.1.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "nimgit2",
+          "str": "0.1.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.3.2",
+      "rev": "eaef3854cb64a51fdcb5926c36059da52f2f311c"
+    },
+    "refs/tags/2.4.0": {
+      "name": "golden",
+      "version": "2.4.0",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.38",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.38"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "0.1.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "nimgit2",
+          "str": "0.1.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.4.0",
+      "rev": "23e65d5275525306b9b885dd5280fef478988e58"
+    },
+    "refs/tags/2.4.1": {
+      "name": "golden",
+      "version": "2.4.1",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.39",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.39"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "0.1.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "nimgit2",
+          "str": "0.1.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.4.1",
+      "rev": "47e697d759c2cc05dd1629eecbca72167dd4332b"
+    },
+    "refs/tags/2.5.1": {
+      "name": "golden",
+      "version": "2.5.1",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.39",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.39"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "0.1.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "nimgit2",
+          "str": "0.1.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.5.1",
+      "rev": "6fb2966747bf3d5d7c44a5e2eba0a21c7ded3a0c"
+    },
+    "refs/tags/2.5.2": {
+      "name": "golden",
+      "version": "2.5.2",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.39",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.39"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "0.1.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "nimgit2",
+          "str": "0.1.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.5.2",
+      "rev": "455e1c6d058105d18561fbf81ab3020fdf5635c9"
+    },
+    "refs/tags/3.0.0": {
+      "name": "golden",
+      "version": "3.0.0",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "0.1.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "nimgit2",
+          "str": "0.1.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.39",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.39"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/3.0.0",
+      "rev": "d0e4a12effb0ea970aa939b61a19ec3eba13b472"
+    },
+    "refs/tags/3.0.1": {
+      "name": "golden",
+      "version": "3.0.1",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "0.1.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "nimgit2",
+          "str": "0.1.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.40",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.40"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/3.0.1",
+      "rev": "95d1bc79f5b8a28d0b682f19975dac0234cb99e7"
+    },
+    "refs/tags/3.0.10": {
+      "name": "golden",
+      "version": "3.0.10",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bump",
+          "str": ">= 1.8.15",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.8.15"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19"
+          }
+        },
+        {
+          "name": "nimgit2",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.40",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.40"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/3.0.10",
+      "rev": "c482abe24fc2fd699bcecbd472fd1555d2b375e9"
+    },
+    "refs/tags/3.0.11": {
+      "name": "golden",
+      "version": "3.0.11",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bump",
+          "str": ">= 1.8.15",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.8.15"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/msgpack4nim",
+          "str": "#golden",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#golden"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19"
+          }
+        },
+        {
+          "name": "nimgit2",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.40",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.40"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/3.0.11",
+      "rev": "ef2a7cdfa4cdcc9202df4c538688afcd783d4ed6"
+    },
+    "refs/tags/3.0.12": {
+      "name": "golden",
+      "version": "3.0.12",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bump",
+          "str": ">= 1.8.15",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.8.15"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/msgpack4nim",
+          "str": "#golden",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#golden"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19"
+          }
+        },
+        {
+          "name": "nimgit2",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.40",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.40"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/3.0.12",
+      "rev": "caf25cb140ec78360b4c9d36e3fad32565ad053c"
+    },
+    "refs/tags/3.0.13": {
+      "name": "golden",
+      "version": "3.0.13",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.4"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bump",
+          "str": ">= 1.8.15",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.8.15"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/gittyup",
+          "str": ">= 2.1.13",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2.1.13"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.40",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.40"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/3.0.13",
+      "rev": "e2d016fab241b890057b9c41d56b61d3d4d4d923"
+    },
+    "refs/tags/3.0.14": {
+      "name": "golden",
+      "version": "3.0.14",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.4"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bump",
+          "str": ">= 1.8.15",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.8.15"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/gittyup",
+          "str": ">= 2.4.4 & < 3.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "2.4.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "3.0.0"
+            }
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.40",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.40"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/3.0.14",
+      "rev": "bdc83b62770388fab513ed81a87b8790254c73b9"
+    },
+    "refs/tags/3.0.15": {
+      "name": "golden",
+      "version": "3.0.15",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.4"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bump",
+          "str": ">= 1.8.15",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.8.15"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/gittyup",
+          "str": ">= 2.4.4 & < 3.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "2.4.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "3.0.0"
+            }
+          }
+        },
+        {
+          "name": "nimterop",
+          "str": ">= 0.6.2 & < 1.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.6.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.0.0"
+            }
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.40",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.40"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/3.0.15",
+      "rev": "f58b09041804c4bf86ae339358c6dadb156806a3"
+    },
+    "refs/tags/3.0.2": {
+      "name": "golden",
+      "version": "3.0.2",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bump",
+          "str": ">= 1.8.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.8.3"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/nim-terminaltables",
+          "str": "#nim111",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#nim111"
+          }
+        },
+        {
+          "name": "nimgit2",
+          "str": "0.1.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.40",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.40"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/3.0.2",
+      "rev": "2e3facd5ddcb9df8ba57a9154253c5f0c2875863"
+    },
+    "refs/tags/3.0.3": {
+      "name": "golden",
+      "version": "3.0.3",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bump",
+          "str": ">= 1.8.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.8.3"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": "#1db37f9508bfbd9ee2bde2e1485c5d0026fea5b4",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#1db37f9508bfbd9ee2bde2e1485c5d0026fea5b4"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/nim-terminaltables",
+          "str": "#nim111",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#nim111"
+          }
+        },
+        {
+          "name": "nimgit2",
+          "str": "0.1.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.40",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.40"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/3.0.3",
+      "rev": "7c9d620d3cebbf0a722340ac2635a772c248fd6a"
+    },
+    "refs/tags/3.0.4": {
+      "name": "golden",
+      "version": "3.0.4",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bump",
+          "str": ">= 1.8.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.8.3"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": "#1db37f9508bfbd9ee2bde2e1485c5d0026fea5b4",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#1db37f9508bfbd9ee2bde2e1485c5d0026fea5b4"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/nim-terminaltables",
+          "str": "#59ea26e64db5680e3a6c20329e32c0e297343e1a",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#59ea26e64db5680e3a6c20329e32c0e297343e1a"
+          }
+        },
+        {
+          "name": "nimgit2",
+          "str": "0.1.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.40",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.40"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/3.0.4",
+      "rev": "2a48c5a755567f82dfadd74f867229f531f7d140"
+    },
+    "refs/tags/3.0.5": {
+      "name": "golden",
+      "version": "3.0.5",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bump",
+          "str": ">= 1.8.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.8.3"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": "#1db37f9508bfbd9ee2bde2e1485c5d0026fea5b4",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#1db37f9508bfbd9ee2bde2e1485c5d0026fea5b4"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19"
+          }
+        },
+        {
+          "name": "nimgit2",
+          "str": "0.1.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.40",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.40"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/3.0.5",
+      "rev": "6daca2ff7f29f34d3e0ee5fbe6aa08089f9d0fcb"
+    },
+    "refs/tags/3.0.6": {
+      "name": "golden",
+      "version": "3.0.6",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bump",
+          "str": ">= 1.8.11",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.8.11"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": "#1db37f9508bfbd9ee2bde2e1485c5d0026fea5b4",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#1db37f9508bfbd9ee2bde2e1485c5d0026fea5b4"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19"
+          }
+        },
+        {
+          "name": "nimgit2",
+          "str": "0.1.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.40",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.40"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/3.0.6",
+      "rev": "c01bf9eb1bc37ab9c71fd0addf0f5f497d2465ff"
+    },
+    "refs/tags/3.0.7": {
+      "name": "golden",
+      "version": "3.0.7",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bump",
+          "str": ">= 1.8.11",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.8.11"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": "#1db37f9508bfbd9ee2bde2e1485c5d0026fea5b4",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#1db37f9508bfbd9ee2bde2e1485c5d0026fea5b4"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19"
+          }
+        },
+        {
+          "name": "nimgit2",
+          "str": "0.1.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.40",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.40"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/3.0.7",
+      "rev": "fe6ace57fa2f38e0be7410b7deaa799ee9aa9cae"
+    },
+    "refs/tags/3.0.8": {
+      "name": "golden",
+      "version": "3.0.8",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bump",
+          "str": ">= 1.8.11",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.8.11"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19"
+          }
+        },
+        {
+          "name": "nimgit2",
+          "str": "0.1.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.40",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.40"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/3.0.8",
+      "rev": "293d66806b46796514607e782f1222486c191781"
+    },
+    "refs/tags/3.0.9": {
+      "name": "golden",
+      "version": "3.0.9",
+      "author": "disruptek",
+      "desc": "a benchmark tool",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bump",
+          "str": ">= 1.8.11",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.8.11"
+          }
+        },
+        {
+          "name": "nimetry",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.2.9",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.9"
+          }
+        },
+        {
+          "name": "terminaltables",
+          "str": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#82ee5890c13e381de0f11c8ba6fe484d7c0c2f19"
+          }
+        },
+        {
+          "name": "nimgit2",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "0.1.2",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.1.2"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.40",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.40"
+          }
+        }
+      ],
+      "bin": [
+        "golden"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/3.0.9",
+      "rev": "c7ba4ffcdce9e06db36d8bbda89d5edaf983e24c"
+    }
+  }
+}

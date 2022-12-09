@@ -1,0 +1,701 @@
+{
+  "name": "cbor",
+  "url": "https://git.sr.ht/~ehmry/nim_cbor",
+  "method": "git",
+  "tags": [
+    "binary",
+    "cbor",
+    "library",
+    "serialization"
+  ],
+  "description": "Concise Binary Object Representation decoder (RFC7049).",
+  "license": "MIT",
+  "web": "https://git.sr.ht/~ehmry/nim_cbor",
+  "refs": {
+    "HEAD": {
+      "name": "cbor",
+      "version": "20221007",
+      "author": "Emery Hemingway",
+      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
+      "license": "ISC",
+      "skipDirs": [
+        "bin"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "bigints",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "bin/cbordiag"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "0085906108daf6a0e6444c88a2499c2c490ddd34"
+    },
+    "refs/heads/staging": {
+      "name": "cbor",
+      "version": "0.6.0",
+      "author": "Emery Hemingway",
+      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
+      "license": "ISC",
+      "skipDirs": [
+        "bin"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        }
+      ],
+      "bin": [
+        "bin/cbordiag"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/staging",
+      "rev": "08053469d5997e3bb181e85a23b146b5144cfff0"
+    },
+    "refs/heads/trunk": {
+      "name": "cbor",
+      "version": "20221007",
+      "author": "Emery Hemingway",
+      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
+      "license": "ISC",
+      "skipDirs": [
+        "bin"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "bigints",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "bin/cbordiag"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/trunk",
+      "rev": "0085906108daf6a0e6444c88a2499c2c490ddd34"
+    },
+    "refs/remotes/origin/master": {
+      "rev": "a77c79bfa4446183a1c7366e5e398fd19a58a561",
+      "ref": "refs/remotes/origin/master"
+    },
+    "refs/remotes/origin/staging": {
+      "rev": "08053469d5997e3bb181e85a23b146b5144cfff0",
+      "ref": "refs/remotes/origin/staging"
+    },
+    "refs/tags/0.5.0": {
+      "name": "cbor",
+      "version": "0.5.0",
+      "author": "Emery Hemingway",
+      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.5.0",
+      "rev": "5c08f7cb2a35acfd777c25348af651c5181c6371"
+    },
+    "refs/tags/0.9.0": {
+      "name": "cbor",
+      "version": "0.9.0",
+      "author": "Emery Hemingway",
+      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
+      "license": "ISC",
+      "skipDirs": [
+        "bin"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "bigints",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "bin/cbordiag"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.9.0",
+      "rev": "0eaf828238ab1c595a3851c319062e47886504e7"
+    },
+    "refs/tags/20220831": {
+      "name": "cbor",
+      "version": "20220831",
+      "author": "Emery Hemingway",
+      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
+      "license": "ISC",
+      "skipDirs": [
+        "bin"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "bigints",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "bin/cbordiag"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/20220831",
+      "rev": "6f7edf7dd79a841d47ec4bdb2bf92942abcf2af0"
+    },
+    "refs/tags/20221007": {
+      "name": "cbor",
+      "version": "20221007",
+      "author": "Emery Hemingway",
+      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
+      "license": "ISC",
+      "skipDirs": [
+        "bin"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "bigints",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "bin/cbordiag"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/20221007",
+      "rev": "0085906108daf6a0e6444c88a2499c2c490ddd34"
+    },
+    "refs/tags/nim-cbor-0.9.0": {
+      "name": "cbor",
+      "version": "0.9.0",
+      "author": "Emery Hemingway",
+      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
+      "license": "ISC",
+      "skipDirs": [
+        "bin"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "bigints",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "bin/cbordiag"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/nim-cbor-0.9.0",
+      "rev": "0eaf828238ab1c595a3851c319062e47886504e7"
+    },
+    "refs/tags/v0.1.0": {
+      "name": "cbor",
+      "version": "0.1.0",
+      "author": "Emery Hemingway",
+      "desc": "CBOR decoder (RFC7049).",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "cbor.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.17.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.17.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.1.0",
+      "rev": "0d0496544d66069f4ffe81289d7468f32ff4ac71"
+    },
+    "refs/tags/v0.2.0": {
+      "name": "cbor",
+      "version": "0.2.0",
+      "author": "Emery Hemingway",
+      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
+      "license": "MIT",
+      "skipDirs": [
+        "test"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "cbor.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.17.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.17.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.2.0",
+      "rev": "e08e07ef143a481c3f06546be86cbb1872663b01"
+    },
+    "refs/tags/v0.3.0": {
+      "name": "cbor",
+      "version": "0.3.0",
+      "author": "Emery Hemingway",
+      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
+      "license": "MIT",
+      "skipDirs": [
+        "test"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "cbor.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.17.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.17.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.0",
+      "rev": "61e84e06ab098014bbd006075aad97d9768a9804"
+    },
+    "refs/tags/v0.4.0": {
+      "name": "cbor",
+      "version": "0.4.0",
+      "author": "Emery Hemingway",
+      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.17.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.17.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.0",
+      "rev": "bc7c9a880055a3a2a3ac88878198e601f513da69"
+    },
+    "refs/tags/v0.4.1": {
+      "name": "cbor",
+      "version": "0.4.1",
+      "author": "Emery Hemingway",
+      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.1",
+      "rev": "817924bdd7f4816b199ab4008531fa5b9477f902"
+    },
+    "refs/tags/v0.5.1": {
+      "name": "cbor",
+      "version": "0.5.1",
+      "author": "Emery Hemingway",
+      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.5.1",
+      "rev": "03458b64c05ddbbc0948037439656ab36de6525c"
+    },
+    "refs/tags/v0.5.2": {
+      "name": "cbor",
+      "version": "0.5.2",
+      "author": "Emery Hemingway",
+      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.5.2",
+      "rev": "544bd47708c1cd18880c4179e5aa48526e77baf4"
+    },
+    "refs/tags/v0.6.0": {
+      "name": "cbor",
+      "version": "0.6.0",
+      "author": "Emery Hemingway",
+      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.6.0",
+      "rev": "7d0bd6fba190349ec888dbe09e63b4c1ebcc0c61"
+    },
+    "refs/tags/v0.7.0": {
+      "name": "cbor",
+      "version": "0.6.0",
+      "author": "Emery Hemingway",
+      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
+      "license": "ISC",
+      "skipDirs": [
+        "bin"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        }
+      ],
+      "bin": [
+        "bin/cbordiag"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.7.0",
+      "rev": "697fc846b35e59fab55635d565c7d804aeb08184"
+    },
+    "refs/tags/v0.8.0": {
+      "name": "cbor",
+      "version": "0.7.0",
+      "author": "Emery Hemingway",
+      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
+      "license": "ISC",
+      "skipDirs": [
+        "bin"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "bignum",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "bin/cbordiag"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.8.0",
+      "rev": "a77c79bfa4446183a1c7366e5e398fd19a58a561"
+    },
+    "refs/tags/v0.8.1": {
+      "name": "cbor",
+      "version": "0.8.1",
+      "author": "Emery Hemingway",
+      "desc": "Concise Binary Object Representation decoder and encoder (RFC7049).",
+      "license": "ISC",
+      "skipDirs": [
+        "bin"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "bigints",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "bin/cbordiag"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.8.1",
+      "rev": "1ae2ef2abfcc12ca30ba7852df322ca9efb73e0a"
+    }
+  }
+}

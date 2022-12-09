@@ -1,0 +1,693 @@
+{
+  "name": "nesm",
+  "url": "https://gitlab.com/xomachine/NESM.git",
+  "method": "git",
+  "tags": [
+    "metaprogramming",
+    "parser",
+    "pure",
+    "serialization"
+  ],
+  "description": "A macro for generating [de]serializers for given objects",
+  "license": "MIT",
+  "web": "https://xomachine.gitlab.io/NESM/",
+  "refs": {
+    "HEAD": {
+      "name": "nesm",
+      "version": "0.4.10",
+      "author": "xomachine (Fomichev Dmitriy)",
+      "desc": "NESM stands for Nim's Easy Serialization Macro. The macro allowing generation of serialization functions by one line of code!",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "demos"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nesm.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "5ee2aedef522a2840ab9d858f95f9c4f4818c3bb"
+    },
+    "refs/heads/0.17.3-devel-fix": {
+      "name": "nesm",
+      "version": "0.3.1",
+      "author": "xomachine (Fomichev Dmitriy)",
+      "desc": "NESM stands for Nim's Easy Serialization Macro. The macro allowing generation of serialization functions by one line of code!",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nesm.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/0.17.3-devel-fix",
+      "rev": "aad2ce36eef14d58ad5e098afc52c2907b959525"
+    },
+    "refs/heads/devel": {
+      "name": "nesm",
+      "version": "0.4.10",
+      "author": "xomachine (Fomichev Dmitriy)",
+      "desc": "NESM stands for Nim's Easy Serialization Macro. The macro allowing generation of serialization functions by one line of code!",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "demos"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nesm.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/devel",
+      "rev": "cd51357d1f26cffc86446e134fe3ef72f865e03c"
+    },
+    "refs/heads/master": {
+      "name": "nesm",
+      "version": "0.4.10",
+      "author": "xomachine (Fomichev Dmitriy)",
+      "desc": "NESM stands for Nim's Easy Serialization Macro. The macro allowing generation of serialization functions by one line of code!",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "demos"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nesm.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/master",
+      "rev": "5ee2aedef522a2840ab9d858f95f9c4f4818c3bb"
+    },
+    "refs/merge-requests/4/head": {
+      "rev": "d18773bd5cd7c41af299a7a0367a376fe142fdd6",
+      "ref": "refs/merge-requests/4/head"
+    },
+    "refs/merge-requests/4/merge": {
+      "rev": "f5ca49a77a65e1a11e9309e90c108a735baf500e",
+      "ref": "refs/merge-requests/4/merge"
+    },
+    "refs/tags/v0.1.0": {
+      "name": "nesm",
+      "version": "0.1.0",
+      "author": "xomachine (Fomichev Dmitriy)",
+      "desc": "NESM stands for Nim's Easy Serialization Macro. The macro allowing generation of serialization functions by one line of code!",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nesm.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.1.0",
+      "rev": "e9dad0083616699939093073b08781c5bad88831"
+    },
+    "refs/tags/v0.2.0": {
+      "name": "nesm",
+      "version": "0.2.0",
+      "author": "xomachine (Fomichev Dmitriy)",
+      "desc": "NESM stands for Nim's Easy Serialization Macro. The macro allowing generation of serialization functions by one line of code!",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nesm.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.2.0",
+      "rev": "afc10bcce8bf29cd631a99d38ed144360d5e7cca"
+    },
+    "refs/tags/v0.3.0": {
+      "name": "nesm",
+      "version": "0.3.0",
+      "author": "xomachine (Fomichev Dmitriy)",
+      "desc": "NESM stands for Nim's Easy Serialization Macro. The macro allowing generation of serialization functions by one line of code!",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nesm.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.0",
+      "rev": "4adfb54ea5a761d5e2ce750ab33f0ec517760956"
+    },
+    "refs/tags/v0.3.1": {
+      "name": "nesm",
+      "version": "0.3.1",
+      "author": "xomachine (Fomichev Dmitriy)",
+      "desc": "NESM stands for Nim's Easy Serialization Macro. The macro allowing generation of serialization functions by one line of code!",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nesm.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.1",
+      "rev": "befbad1f14391b9918735bde9ed139d6df243dcc"
+    },
+    "refs/tags/v0.3.2": {
+      "name": "nesm",
+      "version": "0.3.1",
+      "author": "xomachine (Fomichev Dmitriy)",
+      "desc": "NESM stands for Nim's Easy Serialization Macro. The macro allowing generation of serialization functions by one line of code!",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nesm.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.2",
+      "rev": "aad2ce36eef14d58ad5e098afc52c2907b959525"
+    },
+    "refs/tags/v0.4.0": {
+      "name": "nesm",
+      "version": "0.4.0",
+      "author": "xomachine (Fomichev Dmitriy)",
+      "desc": "NESM stands for Nim's Easy Serialization Macro. The macro allowing generation of serialization functions by one line of code!",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nesm.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.0",
+      "rev": "b28dbce12cbc7d338ed0d7594d0362b5802f91ec"
+    },
+    "refs/tags/v0.4.1": {
+      "name": "nesm",
+      "version": "0.4.1",
+      "author": "xomachine (Fomichev Dmitriy)",
+      "desc": "NESM stands for Nim's Easy Serialization Macro. The macro allowing generation of serialization functions by one line of code!",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "demos"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nesm.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.1",
+      "rev": "401fc9b3aaecb2529fb423b81055724d586b7c27"
+    },
+    "refs/tags/v0.4.10": {
+      "name": "nesm",
+      "version": "0.4.10",
+      "author": "xomachine (Fomichev Dmitriy)",
+      "desc": "NESM stands for Nim's Easy Serialization Macro. The macro allowing generation of serialization functions by one line of code!",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "demos"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nesm.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.10",
+      "rev": "5ee2aedef522a2840ab9d858f95f9c4f4818c3bb"
+    },
+    "refs/tags/v0.4.2": {
+      "name": "nesm",
+      "version": "0.4.1",
+      "author": "xomachine (Fomichev Dmitriy)",
+      "desc": "NESM stands for Nim's Easy Serialization Macro. The macro allowing generation of serialization functions by one line of code!",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "demos"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nesm.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.2",
+      "rev": "17d75f0ded1b7a63e411f12bc8f5971ee110f2dc"
+    },
+    "refs/tags/v0.4.3": {
+      "name": "nesm",
+      "version": "0.4.1",
+      "author": "xomachine (Fomichev Dmitriy)",
+      "desc": "NESM stands for Nim's Easy Serialization Macro. The macro allowing generation of serialization functions by one line of code!",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "demos"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nesm.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.3",
+      "rev": "b28a2e559d79cd04c983d8d6ec9c03a6287096ce"
+    },
+    "refs/tags/v0.4.4": {
+      "name": "nesm",
+      "version": "0.4.4",
+      "author": "xomachine (Fomichev Dmitriy)",
+      "desc": "NESM stands for Nim's Easy Serialization Macro. The macro allowing generation of serialization functions by one line of code!",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "demos"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nesm.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.4",
+      "rev": "af928f720038c379c8b6f9ee1a6485b929877f12"
+    },
+    "refs/tags/v0.4.5": {
+      "name": "nesm",
+      "version": "0.4.5",
+      "author": "xomachine (Fomichev Dmitriy)",
+      "desc": "NESM stands for Nim's Easy Serialization Macro. The macro allowing generation of serialization functions by one line of code!",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "demos"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nesm.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.5",
+      "rev": "38c0e039d6248a8dd5b63cb764118547aa949668"
+    },
+    "refs/tags/v0.4.6": {
+      "name": "nesm",
+      "version": "0.4.6",
+      "author": "xomachine (Fomichev Dmitriy)",
+      "desc": "NESM stands for Nim's Easy Serialization Macro. The macro allowing generation of serialization functions by one line of code!",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "demos"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nesm.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.6",
+      "rev": "ee79032f90196483b8d02e5a64b2d5cca630a1d6"
+    },
+    "refs/tags/v0.4.7": {
+      "name": "nesm",
+      "version": "0.4.7",
+      "author": "xomachine (Fomichev Dmitriy)",
+      "desc": "NESM stands for Nim's Easy Serialization Macro. The macro allowing generation of serialization functions by one line of code!",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "demos"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nesm.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.7",
+      "rev": "ce72048821aef5eaaf105abf48ee7f5967c65007"
+    },
+    "refs/tags/v0.4.8": {
+      "name": "nesm",
+      "version": "0.4.8",
+      "author": "xomachine (Fomichev Dmitriy)",
+      "desc": "NESM stands for Nim's Easy Serialization Macro. The macro allowing generation of serialization functions by one line of code!",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "demos"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nesm.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.8",
+      "rev": "9ff05bbb4b8441aed20c4db87c637b240ed41b4e"
+    },
+    "refs/tags/v0.4.9": {
+      "name": "nesm",
+      "version": "0.4.9",
+      "author": "xomachine (Fomichev Dmitriy)",
+      "desc": "NESM stands for Nim's Easy Serialization Macro. The macro allowing generation of serialization functions by one line of code!",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "demos"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nesm.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.14.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.9",
+      "rev": "9cbdb0635b9556b68639b052efd8a2186bd0aaf7"
+    }
+  }
+}

@@ -1,0 +1,966 @@
+{
+  "name": "websock",
+  "url": "https://github.com/status-im/nim-websock",
+  "method": "git",
+  "tags": [
+    "websocket",
+    "websocket-server",
+    "websocket-client",
+    "ws",
+    "wss",
+    "secure"
+  ],
+  "description": " Websocket server and client implementation",
+  "license": "Apache License 2.0",
+  "web": "https://github.com/status-im/nim-websock",
+  "refs": {
+    "HEAD": {
+      "name": "websock",
+      "version": "0.1.0",
+      "author": "Status Research & Development GmbH",
+      "desc": "WS protocol implementation",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "3.0.0"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.2"
+          }
+        },
+        {
+          "name": "stew",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zlib",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "691f069b209d372b1240d5ae1f57fb7bbafeaba7"
+    },
+    "refs/heads/autobahn_summary": {
+      "name": "ws",
+      "version": "0.1.0",
+      "author": "Status Research & Development GmbH",
+      "desc": "WS protocol implementation",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "test"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.6"
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "3.0.0"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.0"
+          }
+        },
+        {
+          "name": "stew",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "asynctest",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/autobahn_summary",
+      "rev": "5ea049267a5061a95fe5e9961bd37f8fbd31b4a5"
+    },
+    "refs/heads/betterasyncimo": {
+      "name": "websock",
+      "version": "0.1.0",
+      "author": "Status Research & Development GmbH",
+      "desc": "WS protocol implementation",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "3.0.0"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.2"
+          }
+        },
+        {
+          "name": "stew",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zlib",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/betterasyncimo",
+      "rev": "a4263867cc42903d64eaa7ccbba343cac22af38c"
+    },
+    "refs/heads/blockconcurrentreads": {
+      "name": "websock",
+      "version": "0.1.0",
+      "author": "Status Research & Development GmbH",
+      "desc": "WS protocol implementation",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "3.0.0"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.2"
+          }
+        },
+        {
+          "name": "stew",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "asynctest",
+          "str": ">= 0.3.0 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zlib",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/blockconcurrentreads",
+      "rev": "cf2094550091348bc51700627426dd21a566d734"
+    },
+    "refs/heads/fuzzing": {
+      "name": "websock",
+      "version": "0.1.0",
+      "author": "Status Research & Development GmbH",
+      "desc": "WS protocol implementation",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "3.0.0"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.2"
+          }
+        },
+        {
+          "name": "stew",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "asynctest",
+          "str": ">= 0.3.0 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zlib",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fuzzing",
+      "rev": "c7ad9ccfa81484c51bb5744cb93d65161a5d376e"
+    },
+    "refs/heads/jordan/update-utf8-processing": {
+      "name": "websock",
+      "version": "0.1.0",
+      "author": "Status Research & Development GmbH",
+      "desc": "WS protocol implementation",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "3.0.0"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": "#ba2817f1",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#ba2817f1"
+          }
+        },
+        {
+          "name": "stew",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "asynctest",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/status-im/nim-zlib",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/jordan/update-utf8-processing",
+      "rev": "99bf16048f20dba7ad069a5bac2c2ba90ce177e0"
+    },
+    "refs/heads/live-lock": {
+      "name": "websock",
+      "version": "0.1.0",
+      "author": "Status Research & Development GmbH",
+      "desc": "WS protocol implementation",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "3.0.0"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.2"
+          }
+        },
+        {
+          "name": "stew",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "asynctest",
+          "str": ">= 0.3.0 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zlib",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/live-lock",
+      "rev": "d46a15a4dc0a695ac8f74a2e5d95e40c57837f57"
+    },
+    "refs/heads/main": {
+      "name": "websock",
+      "version": "0.1.0",
+      "author": "Status Research & Development GmbH",
+      "desc": "WS protocol implementation",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "3.0.0"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.2"
+          }
+        },
+        {
+          "name": "stew",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zlib",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/main",
+      "rev": "691f069b209d372b1240d5ae1f57fb7bbafeaba7"
+    },
+    "refs/heads/message-sized-utf8": {
+      "name": "websock",
+      "version": "0.1.0",
+      "author": "Status Research & Development GmbH",
+      "desc": "WS protocol implementation",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "3.0.0"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": "#ba2817f1",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#ba2817f1"
+          }
+        },
+        {
+          "name": "stew",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "asynctest",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/status-im/nim-zlib",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/message-sized-utf8",
+      "rev": "d8d12cec84232c93cfbde50ef1860136a7fd87a1"
+    },
+    "refs/heads/removeasyncraises": {
+      "name": "websock",
+      "version": "0.1.0",
+      "author": "Status Research & Development GmbH",
+      "desc": "WS protocol implementation",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "3.0.0"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.2"
+          }
+        },
+        {
+          "name": "stew",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "asynctest",
+          "str": ">= 0.3.0 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zlib",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/removeasyncraises",
+      "rev": "b31ff99b9d5200eea175520c820a3c9f91093bbf"
+    }
+  }
+}

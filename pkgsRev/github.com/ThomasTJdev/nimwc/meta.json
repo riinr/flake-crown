@@ -1,0 +1,3912 @@
+{
+  "name": "nimwc",
+  "url": "https://github.com/ThomasTJdev/nim_websitecreator",
+  "method": "git",
+  "tags": [
+    "website",
+    "webpage",
+    "blog",
+    "binary"
+  ],
+  "description": "A website management tool. Run the file and access your webpage.",
+  "license": "PPL",
+  "web": "https://nimwc.org/",
+  "refs": {
+    "HEAD": {
+      "name": "nimwc",
+      "version": "6.1.3",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.3"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.3"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "packedjson",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "25da50c01a15338336d9a624c729f8f51c9697a0"
+    },
+    "refs/heads/benchmarks": {
+      "name": "nimwc",
+      "version": "5.0.0",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.4"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.2"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "libravatar",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/benchmarks",
+      "rev": "2666fb0708a5fc5ec3a6f5c56b8f13f03141edaf"
+    },
+    "refs/heads/githubAction": {
+      "name": "nimwc",
+      "version": "6.0.5",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.3"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "contra",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "libravatar",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.3"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "packedjson",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/githubAction",
+      "rev": "758fe122646558488a4147947204cee781eb3254"
+    },
+    "refs/heads/master": {
+      "name": "nimwc",
+      "version": "6.1.3",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.3"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.3"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "packedjson",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/master",
+      "rev": "25da50c01a15338336d9a624c729f8f51c9697a0"
+    },
+    "refs/heads/material": {
+      "name": "nimwc",
+      "version": "5.0.0",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.4"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.2"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "libravatar",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        },
+        {
+          "name": "html_tools",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/material",
+      "rev": "4406517ee669bdcbdd1e79a97f8290cc079f2e31"
+    },
+    "refs/heads/update": {
+      "name": "nimwc",
+      "version": "6.0.6",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.4"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.3"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.3"
+          }
+        },
+        {
+          "name": "packedjson",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "gatabase",
+          "str": ">= 0.9.9",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.9"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/update",
+      "rev": "6d5c7ab5330a644a46c8decd1cb5e5e104791610"
+    },
+    "refs/heads/various-fixes": {
+      "name": "nimwc",
+      "version": "6.1.3",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.3"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.3"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "packedjson",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/various-fixes",
+      "rev": "e78fe36b0ac97ab2126967c6524cdbccb85aaee8"
+    },
+    "refs/tags/v0.6.5": {
+      "name": "nimwc",
+      "version": "6.0.5",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.3"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "contra",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "libravatar",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.3"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "packedjson",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.6.5",
+      "rev": "ef7bc7c29d0db11c6f56a6208a4f360dc2b1b0b1"
+    },
+    "refs/tags/v3.0.0": {
+      "name": "nimwc",
+      "version": "3.0.0",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "GPLv3",
+      "skipDirs": [
+        "private",
+        "tmp"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v3.0.0",
+      "rev": "d261a3702484c031bad840550306150039e74bff"
+    },
+    "refs/tags/v3.0.1": {
+      "name": "nimwc",
+      "version": "3.0.0",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "GPLv3",
+      "skipDirs": [
+        "private",
+        "tmp"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v3.0.1",
+      "rev": "85aff99ba7ed6fc44794e368ba7f945745aa5f72"
+    },
+    "refs/tags/v3.0.2": {
+      "name": "nimwc",
+      "version": "3.0.2",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "GPLv3",
+      "skipDirs": [
+        "private",
+        "tmp"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v3.0.2",
+      "rev": "92b8accd52138648a1d42b086ba2bfbd1d87ee6d"
+    },
+    "refs/tags/v3.0.3": {
+      "name": "nimwc",
+      "version": "3.0.3",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "GPLv3",
+      "skipDirs": [
+        "private",
+        "tmp"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v3.0.3",
+      "rev": "4861614c121988a0f7f47c36db5c072a700f3a3b"
+    },
+    "refs/tags/v3.1.0": {
+      "name": "nimwc",
+      "version": "3.1.0",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "GPLv3",
+      "skipDirs": [
+        "private",
+        "tmp"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v3.1.0",
+      "rev": "786e8e149485f840c3331f48da8e213d39d8be60"
+    },
+    "refs/tags/v3.2.0": {
+      "name": "nimwc",
+      "version": "3.2.0",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "GPLv3",
+      "skipDirs": [
+        "private",
+        "tmp"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v3.2.0",
+      "rev": "957a344f3075348efad0ac1a07412de7d706ff39"
+    },
+    "refs/tags/v3.3.0": {
+      "name": "nimwc",
+      "version": "3.3.0",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "GPLv3",
+      "skipDirs": [
+        "private",
+        "tmp"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.1"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v3.3.0",
+      "rev": "2361565227065b5306378f4aba0cdc0113988a9e"
+    },
+    "refs/tags/v4.0.0": {
+      "name": "nimwc",
+      "version": "4.0.0",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "GPLv3",
+      "skipDirs": [
+        "private",
+        "tmp"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.1"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v4.0.0",
+      "rev": "9f014a9a752a4806f52f5597df1baeac0bb1aa09"
+    },
+    "refs/tags/v4.0.1": {
+      "name": "nimwc",
+      "version": "4.0.1",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "GPLv3",
+      "skipDirs": [
+        "private",
+        "tmp"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.1"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v4.0.1",
+      "rev": "2d2e68b1319004842f48ad7cb8732cdd57854338"
+    },
+    "refs/tags/v4.0.10": {
+      "name": "nimwc",
+      "version": "4.0.10",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "GPLv3",
+      "skipDirs": [
+        "private",
+        "tmp"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v4.0.10",
+      "rev": "3443e320f21f84c01f6cad0e63fa2e82209d1e77"
+    },
+    "refs/tags/v4.0.11": {
+      "name": "nimwc",
+      "version": "4.0.11",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "GPLv3",
+      "skipDirs": [
+        "private",
+        "tmp"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v4.0.11",
+      "rev": "6f109cd9f2e4c991ebc55ecb897734cd3a276711"
+    },
+    "refs/tags/v4.0.3": {
+      "name": "nimwc",
+      "version": "4.0.3",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "GPLv3",
+      "skipDirs": [
+        "private",
+        "tmp"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.1"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v4.0.3",
+      "rev": "56dc9565afc086571259e51b2a87be8605793233"
+    },
+    "refs/tags/v4.0.4": {
+      "name": "nimwc",
+      "version": "4.0.4",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "GPLv3",
+      "skipDirs": [
+        "private",
+        "tmp"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.1"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v4.0.4",
+      "rev": "04a697c257eb275c92eb591748f62adddc46f5da"
+    },
+    "refs/tags/v4.0.5": {
+      "name": "nimwc",
+      "version": "4.0.5",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "GPLv3",
+      "skipDirs": [
+        "private",
+        "tmp"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v4.0.5",
+      "rev": "10f286494c5eb7ec5f4749296fd36f5cd67df624"
+    },
+    "refs/tags/v4.0.6": {
+      "name": "nimwc",
+      "version": "4.0.6",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "GPLv3",
+      "skipDirs": [
+        "private",
+        "tmp"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v4.0.6",
+      "rev": "c7879a9559186c7c6dfb2e7c12ddb1536c84d7c9"
+    },
+    "refs/tags/v4.0.7": {
+      "name": "nimwc",
+      "version": "4.0.7",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "GPLv3",
+      "skipDirs": [
+        "private",
+        "tmp"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v4.0.7",
+      "rev": "a15fb03e34e5b4a10e6b6f106aa665a28e993904"
+    },
+    "refs/tags/v4.0.8": {
+      "name": "nimwc",
+      "version": "4.0.8",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "GPLv3",
+      "skipDirs": [
+        "private",
+        "tmp"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v4.0.8",
+      "rev": "e6c485f57bbc9497165ca326d8eae92b38f78938"
+    },
+    "refs/tags/v4.0.9": {
+      "name": "nimwc",
+      "version": "4.0.9",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "GPLv3",
+      "skipDirs": [
+        "private",
+        "tmp"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v4.0.9",
+      "rev": "8ebd8c52f323f9856383040f6bc12d2722eddab5"
+    },
+    "refs/tags/v5.0.0": {
+      "name": "nimwc",
+      "version": "5.0.0",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "GPLv3",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.4"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.2"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v5.0.0",
+      "rev": "6bf4b45a69761d57c83191da38841e212dfc6f34"
+    },
+    "refs/tags/v5.1.0": {
+      "name": "nimwc",
+      "version": "5.0.0",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.4"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.2"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "libravatar",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        },
+        {
+          "name": "html_tools",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v5.1.0",
+      "rev": "a4c90da2e82e50226fcc3954db40a9426481a6b8"
+    },
+    "refs/tags/v5.1.1": {
+      "name": "nimwc",
+      "version": "5.0.0",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.4"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.2"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "libravatar",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        },
+        {
+          "name": "html_tools",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v5.1.1",
+      "rev": "455389af1cb96d63a7bf2b0719d3002e867de3c0"
+    },
+    "refs/tags/v5.5.0": {
+      "name": "nimwc",
+      "version": "5.5.0",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.2"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.2"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "libravatar",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        },
+        {
+          "name": "contra",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v5.5.0",
+      "rev": "b19e180d16a1e51e458e354b35ad0fb829ded372"
+    },
+    "refs/tags/v5.5.1": {
+      "name": "nimwc",
+      "version": "5.5.1",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "contra",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.2"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "libravatar",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v5.5.1",
+      "rev": "047e0c25a1d8c4f5765b8662f91079eb8e168cec"
+    },
+    "refs/tags/v5.5.2": {
+      "name": "nimwc",
+      "version": "5.5.2",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.2"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "contra",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.2"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "libravatar",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v5.5.2",
+      "rev": "1f104756d5893c07fc921e65297027544a4021e8"
+    },
+    "refs/tags/v6.0.0": {
+      "name": "nimwc",
+      "version": "6.0.0",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.3"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "contra",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "libravatar",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "packedjson",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v6.0.0",
+      "rev": "e3c68ec5d14088771ce87d59192212eb07cba7a0"
+    },
+    "refs/tags/v6.0.1": {
+      "name": "nimwc",
+      "version": "6.0.1",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.3"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "contra",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "libravatar",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "packedjson",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v6.0.1",
+      "rev": "0d89defe82751a4e39c54cf4701c1d4f93f43841"
+    },
+    "refs/tags/v6.0.2": {
+      "name": "nimwc",
+      "version": "6.0.1",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.3"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "contra",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "libravatar",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "packedjson",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v6.0.2",
+      "rev": "07c6bdacebe501cbd69ef07cb9590762d2f0b3a2"
+    },
+    "refs/tags/v6.0.3": {
+      "name": "nimwc",
+      "version": "6.0.3",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.3"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "contra",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "libravatar",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "packedjson",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v6.0.3",
+      "rev": "4148d7f6e8092f8327dab6cea5df653b481594e9"
+    },
+    "refs/tags/v6.0.4": {
+      "name": "nimwc",
+      "version": "6.0.4",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.3"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "contra",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "libravatar",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "packedjson",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v6.0.4",
+      "rev": "a192a150b8145051be774481c6174fc5bf49e40e"
+    },
+    "refs/tags/v6.0.6": {
+      "name": "nimwc",
+      "version": "6.0.6",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.3"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "contra",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "libravatar",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.3"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "packedjson",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v6.0.6",
+      "rev": "23b666cd78f2dec8229b301524a8865f24d01dc0"
+    },
+    "refs/tags/v6.1.0": {
+      "name": "nimwc",
+      "version": "6.1.0",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.3"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "contra",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "libravatar",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.3"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "packedjson",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v6.1.0",
+      "rev": "04a484baf2d9df67e3311a0481b3707fe369b444"
+    },
+    "refs/tags/v6.1.1": {
+      "name": "nimwc",
+      "version": "6.1.1",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.3"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "contra",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "libravatar",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.3"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "packedjson",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v6.1.1",
+      "rev": "43ab6a1d2d5ba91c6346c809f30e7337bb2c3299"
+    },
+    "refs/tags/v6.1.2": {
+      "name": "nimwc",
+      "version": "6.1.2",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.3"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "contra",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "libravatar",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.3"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "packedjson",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v6.1.2",
+      "rev": "24076e92a1b97d0c846476be2bc5e41328ba68fa"
+    },
+    "refs/tags/v6.1.3": {
+      "name": "nimwc",
+      "version": "6.1.3",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev) & Juan Carlos (https://github.com/juancarlospaco)",
+      "desc": "Generate and host a website. Run the package and access your new webpage.",
+      "license": "PPL",
+      "skipDirs": [
+        "private",
+        "tmp",
+        "devops",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config",
+        "nimwcpkg",
+        "plugins",
+        "public"
+      ],
+      "installFiles": [
+        "nimwc.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "jester",
+          "str": ">= 0.4.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.3"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "datetime2human",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "firejail",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "otp",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "recaptcha",
+          "str": ">= 1.0.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.3"
+          }
+        },
+        {
+          "name": "webp",
+          "str": ">= 0.2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.5"
+          }
+        },
+        {
+          "name": "packedjson",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimwc"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v6.1.3",
+      "rev": "25da50c01a15338336d9a624c729f8f51c9697a0"
+    }
+  }
+}

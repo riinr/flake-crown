@@ -1,0 +1,636 @@
+{
+  "name": "cssgrid",
+  "url": "https://github.com/elcritch/cssgrid",
+  "method": "git",
+  "tags": [
+    "cssgrid",
+    "css",
+    "layout",
+    "grid",
+    "engine",
+    "ui",
+    "ux",
+    "gui"
+  ],
+  "description": "pure Nim CSS Grid layout engine",
+  "license": "MIT",
+  "web": "https://github.com/elcritch/cssgrid",
+  "refs": {
+    "HEAD": {
+      "name": "cssgrid",
+      "version": "0.2.10",
+      "author": "Jaremy Creechley",
+      "desc": "pure Nim CSS Grid layout engine",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2"
+          }
+        },
+        {
+          "name": "patty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "vmath",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "bumpy",
+          "str": ">= 1.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.0"
+          }
+        },
+        {
+          "name": "cdecl",
+          "str": ">= 0.7.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7.5"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "print",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "ecb4be9bcff2d73ff613f078df700268696dbcb3"
+    },
+    "refs/heads/exper-minmax": {
+      "name": "cssgrid",
+      "version": "0.1.0",
+      "author": "Jaremy Creechley",
+      "desc": "pure Nim CSS Grid layout engine",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2"
+          }
+        },
+        {
+          "name": "patty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "vmath",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "bumpy",
+          "str": ">= 1.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.0"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "print",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/exper-minmax",
+      "rev": "2d747975496c084def9ca38830a57e8b02aeb007"
+    },
+    "refs/heads/exper-minmax-v2-fix-recompute": {
+      "name": "cssgrid",
+      "version": "0.1.0",
+      "author": "Jaremy Creechley",
+      "desc": "pure Nim CSS Grid layout engine",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2"
+          }
+        },
+        {
+          "name": "patty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "vmath",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "bumpy",
+          "str": ">= 1.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.0"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "print",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/exper-minmax-v2-fix-recompute",
+      "rev": "34cc7ce23dadcb6b2a2d23fb3af257b4ce584f51"
+    },
+    "refs/heads/fix-spans": {
+      "name": "cssgrid",
+      "version": "0.2.5",
+      "author": "Jaremy Creechley",
+      "desc": "pure Nim CSS Grid layout engine",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2"
+          }
+        },
+        {
+          "name": "patty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "vmath",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "bumpy",
+          "str": ">= 1.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.0"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "print",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/fix-spans",
+      "rev": "d93f1772bf26260d4ae6e7208e570d05deb67cd2"
+    },
+    "refs/heads/main": {
+      "name": "cssgrid",
+      "version": "0.2.10",
+      "author": "Jaremy Creechley",
+      "desc": "pure Nim CSS Grid layout engine",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2"
+          }
+        },
+        {
+          "name": "patty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "vmath",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "bumpy",
+          "str": ">= 1.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.0"
+          }
+        },
+        {
+          "name": "cdecl",
+          "str": ">= 0.7.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7.5"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "print",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/main",
+      "rev": "ecb4be9bcff2d73ff613f078df700268696dbcb3"
+    },
+    "refs/heads/move-to-cssgrid": {
+      "name": "cssgrid",
+      "version": "0.2.0",
+      "author": "Jaremy Creechley",
+      "desc": "pure Nim CSS Grid layout engine",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2"
+          }
+        },
+        {
+          "name": "patty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "vmath",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "bumpy",
+          "str": ">= 1.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.0"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "print",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/move-to-cssgrid",
+      "rev": "75abe6c0d1837bbdbe90c82b5b84145c4ba003c1"
+    },
+    "refs/heads/move-to-cssgrid-v2": {
+      "name": "cssgrid",
+      "version": "0.2.0",
+      "author": "Jaremy Creechley",
+      "desc": "pure Nim CSS Grid layout engine",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2"
+          }
+        },
+        {
+          "name": "patty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "vmath",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "bumpy",
+          "str": ">= 1.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.0"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "print",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/move-to-cssgrid-v2",
+      "rev": "f476520486511d6ea632486dc2ca1b3dcc3dcc68"
+    },
+    "refs/heads/switch-to-atoms": {
+      "name": "cssgrid",
+      "version": "0.2.8",
+      "author": "Jaremy Creechley",
+      "desc": "pure Nim CSS Grid layout engine",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2"
+          }
+        },
+        {
+          "name": "patty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "vmath",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "bumpy",
+          "str": ">= 1.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.0"
+          }
+        },
+        {
+          "name": "cdecl",
+          "str": ">= 0.7.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7.1"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "print",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/switch-to-atoms",
+      "rev": "91be1edaf7855b5a8996eadcf3fa5fa1faac6383"
+    }
+  }
+}

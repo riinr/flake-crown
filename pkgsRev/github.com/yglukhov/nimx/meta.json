@@ -1,0 +1,2209 @@
+{
+  "name": "nimx",
+  "url": "https://github.com/yglukhov/nimx",
+  "method": "git",
+  "tags": [
+    "gui",
+    "ui",
+    "library"
+  ],
+  "description": "Cross-platform GUI framework",
+  "license": "MIT",
+  "web": "https://github.com/yglukhov/nimx",
+  "refs": {
+    "HEAD": {
+      "name": "nimx",
+      "version": "0.1",
+      "author": "Yuriy Glukhov",
+      "desc": "GUI framework",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "nimx",
+        "assets"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "sdl2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "opengl",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "nimsl",
+          "str": ">= 0.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3"
+          }
+        },
+        {
+          "name": "jnim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nake",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "closure_compiler",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "plists",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "variant",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "kiwi",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/ttf",
+          "str": ">= 0.2.9 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.9"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/async_http_request",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "jsbind",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "rect_packer",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/android",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/darwin",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "os_files",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/tormund/nester",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimwebp",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "52891504b2cebc84afb1c6d78ac6b939ee245986"
+    },
+    "refs/heads/android-no-sdl": {
+      "name": "nimx",
+      "version": "0.1",
+      "author": "Yuriy Glukhov",
+      "desc": "GUI framework",
+      "license": "MIT",
+      "skipDirs": [
+        "test/build",
+        "build",
+        "editor"
+      ],
+      "skipFiles": [
+        "nakefile.nim"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "sdl2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "opengl",
+          "str": ">= 1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1"
+          }
+        },
+        {
+          "name": "nimsl",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "jnim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nake",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "closure_compiler",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "plists",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "variant",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "jester",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/ttf",
+          "str": ">= 0.2.3 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.3"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/async_http_request",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "jsbind",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/android",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/android-no-sdl",
+      "rev": "e07c68ef32ee3edd9ed01d184fb3e7244794a289"
+    },
+    "refs/heads/appveyor": {
+      "name": "nimx",
+      "version": "0.1",
+      "author": "Yuriy Glukhov",
+      "desc": "GUI framework",
+      "license": "MIT",
+      "skipDirs": [
+        "test/build",
+        "build"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "sdl2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "opengl",
+          "str": ">= 1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1"
+          }
+        },
+        {
+          "name": "nimsl",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "jnim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nake",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "closure_compiler",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "plists",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "variant",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "jester",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/ttf",
+          "str": ">= 0.2.3 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.3"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/async_http_request",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "jsbind",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/appveyor",
+      "rev": "8e0fd9fde13443863877c5bdb29661e8753a8448"
+    },
+    "refs/heads/async-sdl": {
+      "name": "nimx",
+      "version": "0.1",
+      "author": "Yuriy Glukhov",
+      "desc": "GUI framework",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "nimx",
+        "assets"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "sdl2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "opengl",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "nimsl",
+          "str": ">= 0.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3"
+          }
+        },
+        {
+          "name": "jnim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nake",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "closure_compiler",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "plists",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "variant",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "kiwi",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/ttf",
+          "str": ">= 0.2.9 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.9"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/async_http_request",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "jsbind",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "rect_packer",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/android",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/darwin",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "os_files",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/tormund/nester",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimwebp",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/async-sdl",
+      "rev": "dec1c4c93eebdf7bd83fff7ca015c1296843616d"
+    },
+    "refs/heads/cosmetics": {
+      "name": "nimx",
+      "version": "0.1",
+      "author": "Yuriy Glukhov",
+      "desc": "GUI framework",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "nimx",
+        "assets"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "sdl2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "opengl",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "nimsl",
+          "str": ">= 0.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3"
+          }
+        },
+        {
+          "name": "jnim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nake",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "closure_compiler",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "plists",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "variant",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "kiwi",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/ttf",
+          "str": ">= 0.2.9 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.9"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/async_http_request",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "jsbind",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "rect_packer",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/android",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/darwin",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "os_files",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/tormund/nester",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimwebp",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/cosmetics",
+      "rev": "e214f5f17f9aef16b04880e8fd98720f7ef9236a"
+    },
+    "refs/heads/emccFixes": {
+      "name": "nimx",
+      "version": "0.1",
+      "author": "Yuriy Glukhov",
+      "desc": "GUI framework",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "nimx",
+        "assets"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "sdl2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "opengl",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "nimsl",
+          "str": ">= 0.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3"
+          }
+        },
+        {
+          "name": "jnim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nake",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "closure_compiler",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "plists",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "variant",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "kiwi",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/ttf",
+          "str": ">= 0.2.9 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.9"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/async_http_request",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "jsbind",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "rect_packer",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/android",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/darwin",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "os_files",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/tormund/nester",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimwebp",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/emccFixes",
+      "rev": "dcaf2189ba6b35f568040eac0da0bb3ba3d0282b"
+    },
+    "refs/heads/kiwi-views": {
+      "name": "nimx",
+      "version": "0.1",
+      "author": "Yuriy Glukhov",
+      "desc": "GUI framework",
+      "license": "MIT",
+      "skipDirs": [
+        "test/build",
+        "build"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "sdl2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "opengl",
+          "str": ">= 1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1"
+          }
+        },
+        {
+          "name": "nimsl",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "jnim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nake",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "closure_compiler",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "plists",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "variant",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "kiwi",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "jester",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/ttf",
+          "str": ">= 0.2.3 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.3"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/async_http_request",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "jsbind",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "oldwinapi",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "rect_packer",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/android",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/darwin",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/Tormund/file_dialog",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/kiwi-views",
+      "rev": "6ea3ba16ddbe108f78a5911769aee635f1c9086f"
+    },
+    "refs/heads/layout": {
+      "name": "nimx",
+      "version": "0.1",
+      "author": "Yuriy Glukhov",
+      "desc": "GUI framework",
+      "license": "BSD",
+      "skipDirs": [
+        "test/build"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "sdl2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "opengl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimsl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "jnim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nake",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "closure_compiler",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "plists",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "jester",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/ttf",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/async_http_request",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/layout",
+      "rev": "7190d3d487a65881614dac76b94905227ef7207e"
+    },
+    "refs/heads/master": {
+      "name": "nimx",
+      "version": "0.1",
+      "author": "Yuriy Glukhov",
+      "desc": "GUI framework",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "nimx",
+        "assets"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "sdl2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "opengl",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "nimsl",
+          "str": ">= 0.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3"
+          }
+        },
+        {
+          "name": "jnim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nake",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "closure_compiler",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "plists",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "variant",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "kiwi",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/ttf",
+          "str": ">= 0.2.9 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.9"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/async_http_request",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "jsbind",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "rect_packer",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/android",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/darwin",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "os_files",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/tormund/nester",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimwebp",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/master",
+      "rev": "52891504b2cebc84afb1c6d78ac6b939ee245986"
+    },
+    "refs/heads/notif-center-experiments": {
+      "name": "nimx",
+      "version": "0.1",
+      "author": "Yuriy Glukhov",
+      "desc": "GUI framework",
+      "license": "MIT",
+      "skipDirs": [
+        "test/build",
+        "build"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "sdl2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "opengl",
+          "str": ">= 1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1"
+          }
+        },
+        {
+          "name": "nimsl",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "jnim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nake",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "closure_compiler",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "plists",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "variant",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "jester",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/ttf",
+          "str": ">= 0.2.3 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.3"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/async_http_request",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "jsbind",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/notif-center-experiments",
+      "rev": "59eb1f2fb43e53012f783113b03e64fa74d93cfd"
+    },
+    "refs/heads/resdebug": {
+      "name": "nimx",
+      "version": "0.1",
+      "author": "Yuriy Glukhov",
+      "desc": "GUI framework",
+      "license": "MIT",
+      "skipDirs": [
+        "test/build",
+        "build"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "sdl2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "opengl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimsl",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "jnim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nake",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "closure_compiler",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "plists",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "variant",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "jester",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/ttf",
+          "str": ">= 0.2.3 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.3"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/async_http_request",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "jsbind",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/resdebug",
+      "rev": "20e23b16cb0e91198ad7ae956168c5e334b738c9"
+    },
+    "refs/heads/revert-468-optimize-system-font-of-size": {
+      "name": "nimx",
+      "version": "0.1",
+      "author": "Yuriy Glukhov",
+      "desc": "GUI framework",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "nimx",
+        "assets"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "sdl2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "opengl",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "nimsl",
+          "str": ">= 0.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3"
+          }
+        },
+        {
+          "name": "jnim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nake",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "closure_compiler",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "plists",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "variant",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "kiwi",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/ttf",
+          "str": ">= 0.2.9 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.9"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/async_http_request",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "jsbind",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "rect_packer",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/android",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/darwin",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "os_files",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/tormund/nester",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimwebp",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/revert-468-optimize-system-font-of-size",
+      "rev": "4537cbc599242b4842f95c83b6df5b0a4753311b"
+    },
+    "refs/heads/standalone-toolchain": {
+      "name": "nimx",
+      "version": "0.1",
+      "author": "Yuriy Glukhov",
+      "desc": "GUI framework",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "nimx",
+        "assets"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "sdl2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "opengl",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "nimsl",
+          "str": ">= 0.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3"
+          }
+        },
+        {
+          "name": "jnim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nake",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "closure_compiler",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "plists",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "variant",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "kiwi",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/ttf",
+          "str": ">= 0.2.9 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.9"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/async_http_request",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "jsbind",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "rect_packer",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/android",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/darwin",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "os_files",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/tormund/nester",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimwebp",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/standalone-toolchain",
+      "rev": "7ab24e6c83f2a250a49dee57e3633a04be310348"
+    },
+    "refs/heads/version-2": {
+      "name": "nimx",
+      "version": "0.1",
+      "author": "Yuriy Glukhov",
+      "desc": "GUI framework",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "nimx",
+        "assets"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "sdl2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "opengl",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "nimsl",
+          "str": ">= 0.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3"
+          }
+        },
+        {
+          "name": "jnim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nake",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "closure_compiler",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "plists",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "variant",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "kiwi",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/ttf",
+          "str": ">= 0.2.9 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.9"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/async_http_request",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "jsbind",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "rect_packer",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/android",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/darwin",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "os_files",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/tormund/nester",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimwebp",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/version-2",
+      "rev": "4c718e8b684f8bddd9b93cab9afaf2f36110ee49"
+    }
+  }
+}

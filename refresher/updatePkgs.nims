@@ -101,7 +101,17 @@ if defined process:
     """
     pkgs = parseJson pkgsJSON
     pkgItems = pkgs.items.toSeq
-  pkgItems.run "updateNimbleLock"
+
+  ## update ../pkgsRev
+  ## try to use git ls-remote for pinning (no deps resolution)
+  pkgItems.run "updateRevs"
+
+  ## update ../pkgslock
+  ## try to use nimble lock for pinning
+  # pkgItems.run "updateNimbleLock"
+  
+  ## update ../nimpkgs
+  ## try to use nix flake lock for pinning
   # pkgItems.run "updateMeta"
   # pkgItems.run "updateFlake"
 

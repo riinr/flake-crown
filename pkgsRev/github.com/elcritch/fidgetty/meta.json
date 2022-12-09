@@ -1,0 +1,1652 @@
+{
+  "name": "fidgetty",
+  "url": "https://github.com/elcritch/fidgets",
+  "method": "git",
+  "tags": [
+    "ui",
+    "widgets",
+    "widget",
+    "opengl",
+    "immediate",
+    "mode"
+  ],
+  "description": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+  "license": "MIT",
+  "web": "https://github.com/elcritch/fidgets",
+  "refs": {
+    "HEAD": {
+      "name": "fidgetty",
+      "version": "0.4.1",
+      "author": "Jaremy Creechley",
+      "desc": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": ">= 5.0.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "5.0.1"
+          }
+        },
+        {
+          "name": "cssgrid",
+          "str": ">= 0.2.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.10"
+          }
+        },
+        {
+          "name": "supersnappy",
+          "str": ">= 2.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2.1.3"
+          }
+        },
+        {
+          "name": "staticglfw",
+          "str": ">= 4.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "4.1.3"
+          }
+        },
+        {
+          "name": "typography",
+          "str": ">= 0.7.14",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7.14"
+          }
+        },
+        {
+          "name": "variant",
+          "str": ">= 0.2.12",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.12"
+          }
+        },
+        {
+          "name": "opengl",
+          "str": ">= 1.2.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.6"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        },
+        {
+          "name": "patty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "cdecl",
+          "str": ">= 0.7.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7.5"
+          }
+        },
+        {
+          "name": "asynctools",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "2d2a5adf138165c8f5c627afc41ec70cfddb3918"
+    },
+    "refs/heads/add-splitter": {
+      "name": "fidgetty",
+      "version": "0.3.1",
+      "author": "Jaremy Creechley",
+      "desc": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": ">= 5.0.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "5.0.1"
+          }
+        },
+        {
+          "name": "cssgrid",
+          "str": ">= 0.2.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.3"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        },
+        {
+          "name": "patty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "cdecl",
+          "str": ">= 0.5.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.10"
+          }
+        },
+        {
+          "name": "asynctools",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/add-splitter",
+      "rev": "0a5e2dbfcbea0ee3ba51369506c7f14e0c904c5e"
+    },
+    "refs/heads/add-splitter2": {
+      "name": "fidgetty",
+      "version": "0.3.1",
+      "author": "Jaremy Creechley",
+      "desc": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": ">= 5.0.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "5.0.1"
+          }
+        },
+        {
+          "name": "cssgrid",
+          "str": ">= 0.2.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.3"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        },
+        {
+          "name": "patty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "cdecl",
+          "str": ">= 0.5.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.10"
+          }
+        },
+        {
+          "name": "asynctools",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/add-splitter2",
+      "rev": "7e69c7d003e6189da2bf94e7b1dd789b9b785fd7"
+    },
+    "refs/heads/add-tab-view": {
+      "name": "fidgetty",
+      "version": "0.3.1",
+      "author": "Jaremy Creechley",
+      "desc": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": ">= 5.0.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "5.0.1"
+          }
+        },
+        {
+          "name": "cssgrid",
+          "str": ">= 0.2.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.3"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        },
+        {
+          "name": "patty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "cdecl",
+          "str": ">= 0.5.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.10"
+          }
+        },
+        {
+          "name": "asynctools",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/add-tab-view",
+      "rev": "2a3bd4f5385089c4bc80277f7f910a3d158c3f31"
+    },
+    "refs/heads/devel": {
+      "name": "fidgetty",
+      "version": "0.4.1",
+      "author": "Jaremy Creechley",
+      "desc": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": ">= 5.0.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "5.0.1"
+          }
+        },
+        {
+          "name": "cssgrid",
+          "str": ">= 0.2.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.10"
+          }
+        },
+        {
+          "name": "supersnappy",
+          "str": ">= 2.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2.1.3"
+          }
+        },
+        {
+          "name": "staticglfw",
+          "str": ">= 4.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "4.1.3"
+          }
+        },
+        {
+          "name": "typography",
+          "str": ">= 0.7.14",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7.14"
+          }
+        },
+        {
+          "name": "variant",
+          "str": ">= 0.2.12",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.12"
+          }
+        },
+        {
+          "name": "opengl",
+          "str": ">= 1.2.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.6"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        },
+        {
+          "name": "patty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "cdecl",
+          "str": ">= 0.7.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7.5"
+          }
+        },
+        {
+          "name": "asynctools",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/devel",
+      "rev": "717d85d07339ddb25fc01234177180b986172413"
+    },
+    "refs/heads/exper-alt-eq-syntax": {
+      "name": "fidgetty",
+      "version": "0.1.0",
+      "author": "Jaremy Creechley",
+      "desc": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "https://github.com/elcritch/fidget.git",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "memo",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "patty",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "cdecl",
+          "str": ">= 0.5.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.10"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/exper-alt-eq-syntax",
+      "rev": "9199383cbd1f9bd429592fdff009a27456a9051e"
+    },
+    "refs/heads/exper-cdecl-labels": {
+      "name": "fidgetty",
+      "version": "0.1.0",
+      "author": "Jaremy Creechley",
+      "desc": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "https://github.com/elcritch/fidget.git",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "memo",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "patty",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "cdecl",
+          "str": ">= 0.5.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.5"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/exper-cdecl-labels",
+      "rev": "095a471882dedb90d1441021396be646d9fee455"
+    },
+    "refs/heads/exper-text-boxes": {
+      "name": "fidgetty",
+      "version": "0.1.0",
+      "author": "Jaremy Creechley",
+      "desc": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "https://github.com/elcritch/fidget.git",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/exper-text-boxes",
+      "rev": "56add548077e5626fcc646ba4f4469c47224dff3"
+    },
+    "refs/heads/exper-textbox-alt-v3": {
+      "name": "fidgetty",
+      "version": "0.1.0",
+      "author": "Jaremy Creechley",
+      "desc": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "https://github.com/elcritch/fidget.git",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/exper-textbox-alt-v3",
+      "rev": "81204d0d8e5f26fb3028b9e6ec100243b2693c3a"
+    },
+    "refs/heads/exper-textinput": {
+      "name": "fidgetty",
+      "version": "0.1.0",
+      "author": "Jaremy Creechley",
+      "desc": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "https://github.com/elcritch/fidget.git",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/exper-textinput",
+      "rev": "657a544b41fc3b1fd085f3f4d33d9f409bfdaa60"
+    },
+    "refs/heads/exper-theme": {
+      "name": "fidgets",
+      "version": "0.1.0",
+      "author": "Jaremy Creechley",
+      "desc": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "https://github.com/elcritch/fidget.git",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/exper-theme",
+      "rev": "7e6c300f262ddadeba6be80c8ce1e52634164d59"
+    },
+    "refs/heads/exper-themed-widgets": {
+      "name": "fidgetty",
+      "version": "0.1.0",
+      "author": "Jaremy Creechley",
+      "desc": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "https://github.com/elcritch/fidget.git",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/exper-themed-widgets",
+      "rev": "cee4e03e139ebf809d6b2e1f8a9d93ae2c5e9385"
+    },
+    "refs/heads/main": {
+      "name": "fidgetty",
+      "version": "0.4.1",
+      "author": "Jaremy Creechley",
+      "desc": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": ">= 5.0.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "5.0.1"
+          }
+        },
+        {
+          "name": "cssgrid",
+          "str": ">= 0.2.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.10"
+          }
+        },
+        {
+          "name": "supersnappy",
+          "str": ">= 2.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2.1.3"
+          }
+        },
+        {
+          "name": "staticglfw",
+          "str": ">= 4.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "4.1.3"
+          }
+        },
+        {
+          "name": "typography",
+          "str": ">= 0.7.14",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7.14"
+          }
+        },
+        {
+          "name": "variant",
+          "str": ">= 0.2.12",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.12"
+          }
+        },
+        {
+          "name": "opengl",
+          "str": ">= 1.2.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.6"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        },
+        {
+          "name": "patty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "cdecl",
+          "str": ">= 0.7.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7.5"
+          }
+        },
+        {
+          "name": "asynctools",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/main",
+      "rev": "2d2a5adf138165c8f5c627afc41ec70cfddb3918"
+    },
+    "refs/heads/move-to-cssgrid": {
+      "name": "fidgetty",
+      "version": "0.3.0",
+      "author": "Jaremy Creechley",
+      "desc": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": ">= 5.0.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "5.0.1"
+          }
+        },
+        {
+          "name": "https://github.com/elcritch/fidget.git",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        },
+        {
+          "name": "patty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "cdecl",
+          "str": ">= 0.5.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.10"
+          }
+        },
+        {
+          "name": "asynctools",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/move-to-cssgrid",
+      "rev": "3838a01154846cdd56b86ebec391f65dda7186c1"
+    },
+    "refs/heads/pr-merge-fidget-dev-local": {
+      "name": "fidgetty",
+      "version": "0.3.1",
+      "author": "Jaremy Creechley",
+      "desc": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": ">= 5.0.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "5.0.1"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        },
+        {
+          "name": "patty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "cdecl",
+          "str": ">= 0.5.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.10"
+          }
+        },
+        {
+          "name": "asynctools",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/pr-merge-fidget-dev-local",
+      "rev": "0faae3eb22a52746105ee35c267d37476cd0419d"
+    },
+    "refs/heads/pr-refactor-themes": {
+      "name": "fidgetty",
+      "version": "0.4.1",
+      "author": "Jaremy Creechley",
+      "desc": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": ">= 5.0.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "5.0.1"
+          }
+        },
+        {
+          "name": "cssgrid",
+          "str": ">= 0.2.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.10"
+          }
+        },
+        {
+          "name": "supersnappy",
+          "str": ">= 2.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2.1.3"
+          }
+        },
+        {
+          "name": "staticglfw",
+          "str": ">= 4.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "4.1.3"
+          }
+        },
+        {
+          "name": "typography",
+          "str": ">= 0.7.14",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7.14"
+          }
+        },
+        {
+          "name": "variant",
+          "str": ">= 0.2.12",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.12"
+          }
+        },
+        {
+          "name": "opengl",
+          "str": ">= 1.2.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.6"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        },
+        {
+          "name": "patty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "cdecl",
+          "str": ">= 0.7.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7.5"
+          }
+        },
+        {
+          "name": "asynctools",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/pr-refactor-themes",
+      "rev": "dc54dc5cdbeec08701da158d7f40760953091949"
+    },
+    "refs/heads/pr-refactor-themes-v2": {
+      "name": "fidgetty",
+      "version": "0.4.1",
+      "author": "Jaremy Creechley",
+      "desc": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": ">= 5.0.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "5.0.1"
+          }
+        },
+        {
+          "name": "cssgrid",
+          "str": ">= 0.2.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.8"
+          }
+        },
+        {
+          "name": "supersnappy",
+          "str": ">= 2.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2.1.3"
+          }
+        },
+        {
+          "name": "staticglfw",
+          "str": ">= 4.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "4.1.3"
+          }
+        },
+        {
+          "name": "typography",
+          "str": ">= 0.7.14",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7.14"
+          }
+        },
+        {
+          "name": "variant",
+          "str": ">= 0.2.12",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.12"
+          }
+        },
+        {
+          "name": "opengl",
+          "str": ">= 1.2.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.6"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        },
+        {
+          "name": "patty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "cdecl",
+          "str": ">= 0.7.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7.1"
+          }
+        },
+        {
+          "name": "asynctools",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/pr-refactor-themes-v2",
+      "rev": "6c1059b722141e9a32d532ba0cae2f36e8d87c65"
+    },
+    "refs/heads/pr-refactor-themes-v3": {
+      "name": "fidgetty",
+      "version": "0.4.1",
+      "author": "Jaremy Creechley",
+      "desc": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": ">= 5.0.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "5.0.1"
+          }
+        },
+        {
+          "name": "cssgrid",
+          "str": ">= 0.2.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.8"
+          }
+        },
+        {
+          "name": "supersnappy",
+          "str": ">= 2.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2.1.3"
+          }
+        },
+        {
+          "name": "staticglfw",
+          "str": ">= 4.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "4.1.3"
+          }
+        },
+        {
+          "name": "typography",
+          "str": ">= 0.7.14",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7.14"
+          }
+        },
+        {
+          "name": "variant",
+          "str": ">= 0.2.12",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.12"
+          }
+        },
+        {
+          "name": "opengl",
+          "str": ">= 1.2.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.6"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        },
+        {
+          "name": "patty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "cdecl",
+          "str": ">= 0.7.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7.1"
+          }
+        },
+        {
+          "name": "asynctools",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/pr-refactor-themes-v3",
+      "rev": "bad155e3091dab61bbe87ceb0ed03ea1b9819612"
+    },
+    "refs/heads/refactor-widgets": {
+      "name": "fidgetty",
+      "version": "0.1.0",
+      "author": "Jaremy Creechley",
+      "desc": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "https://github.com/elcritch/fidget.git",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "memo",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "patty",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "cdecl",
+          "str": ">= 0.5.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.10"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/refactor-widgets",
+      "rev": "de3c5388f44ec1b6d0a17287f0e0847e18e3505d"
+    },
+    "refs/heads/rework-events-type": {
+      "name": "fidgetty",
+      "version": "0.3.1",
+      "author": "Jaremy Creechley",
+      "desc": "Widget library built on Fidget written in pure Nim and OpenGL rendered",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.5"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": ">= 5.0.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "5.0.1"
+          }
+        },
+        {
+          "name": "cssgrid",
+          "str": ">= 0.2.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.3"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        },
+        {
+          "name": "patty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "cdecl",
+          "str": ">= 0.5.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.10"
+          }
+        },
+        {
+          "name": "asynctools",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/rework-events-type",
+      "rev": "6be6d11fdcd52f0b53eea9d5b608b5ede63e155d"
+    }
+  }
+}

@@ -1,0 +1,967 @@
+{
+  "name": "nico",
+  "url": "https://github.com/ftsf/nico",
+  "method": "git",
+  "tags": [
+    "pico-8",
+    "game",
+    "library",
+    "ludum",
+    "dare"
+  ],
+  "description": "Nico game engine",
+  "license": "MIT",
+  "web": "https://github.com/ftsf/nico",
+  "refs": {
+    "HEAD": {
+      "name": "nico",
+      "version": "0.4.9",
+      "author": "Jez 'Impbox' Kabanov",
+      "desc": "Nico Game Engine",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests",
+        "android",
+        "tools"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "exampleApp"
+      ],
+      "installFiles": [
+        "nico.nim"
+      ],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "sdl2_nim",
+          "str": ">= 2.0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2.0.14.2"
+          }
+        },
+        {
+          "name": "gifenc",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.5.9",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.9"
+          }
+        }
+      ],
+      "bin": [
+        "nicosynth",
+        "nicoboot",
+        "nicoandroid"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "bdbe4f48ca8d2d58458e76897cf883a255479cf2"
+    },
+    "refs/heads/combinedjs": {
+      "name": "nico",
+      "version": "0.1.0",
+      "author": "Jez Kabanov",
+      "desc": "Nico Game Engine",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nico.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.16.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.16.0"
+          }
+        },
+        {
+          "name": "sdl2",
+          "str": ">= 1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1"
+          }
+        },
+        {
+          "name": "gifenc",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "stb_image",
+          "str": ">= 1.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2"
+          }
+        },
+        {
+          "name": "webaudio",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "html5_canvas",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "ajax",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/combinedjs",
+      "rev": "dab9f86337b06367a54d5f41c33e1e0e790f4682"
+    },
+    "refs/heads/fix-screenshot": {
+      "name": "nico",
+      "version": "0.4.8",
+      "author": "Jez 'Impbox' Kabanov",
+      "desc": "Nico Game Engine",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests",
+        "android",
+        "tools"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "exampleApp"
+      ],
+      "installFiles": [
+        "nico.nim"
+      ],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "sdl2_nim",
+          "str": ">= 2.0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2.0.14.2"
+          }
+        },
+        {
+          "name": "gifenc",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.5.9",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.9"
+          }
+        }
+      ],
+      "bin": [
+        "nicosynth",
+        "nicoboot",
+        "nicoandroid"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fix-screenshot",
+      "rev": "c4e6d2e2a23004fb0ddc5fe0110077054215f50e"
+    },
+    "refs/heads/fixNimPNGPalette": {
+      "name": "nico",
+      "version": "0.3.1",
+      "author": "Jez 'Impbox' Kabanov",
+      "desc": "Nico Game Engine",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests",
+        "android",
+        "tools"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "exampleApp"
+      ],
+      "installFiles": [
+        "nico.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "sdl2_nim",
+          "str": ">= 2.0.10.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2.0.10.0"
+          }
+        },
+        {
+          "name": "gifenc",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "webaudio",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "html5_canvas",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "ajax",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "nicoboot"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fixNimPNGPalette",
+      "rev": "c8e67e23772cbd14ab4705cfeac6c4615cc13c08"
+    },
+    "refs/heads/hexmap": {
+      "name": "nico",
+      "version": "0.1.0",
+      "author": "Jez Kabanov",
+      "desc": "Nico Game Engine",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests",
+        "android"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nico.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.16.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.16.0"
+          }
+        },
+        {
+          "name": "sdl2_nim",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "gifenc",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "webaudio",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "html5_canvas",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "ajax",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "sndfile",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/hexmap",
+      "rev": "2e6177a5b18ac3ba9b946fb18661fe2a045bd51b"
+    },
+    "refs/heads/js": {
+      "name": "nico",
+      "version": "0.1.0",
+      "author": "Jez Kabanov",
+      "desc": "Nico Game Engine",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nico.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.16.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.16.0"
+          }
+        },
+        {
+          "name": "sdl2",
+          "str": ">= 1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1"
+          }
+        },
+        {
+          "name": "gifenc",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/js",
+      "rev": "20ec24cc8353e9243e6bdba2b23137793b0ebcb2"
+    },
+    "refs/heads/main": {
+      "name": "nico",
+      "version": "0.4.9",
+      "author": "Jez 'Impbox' Kabanov",
+      "desc": "Nico Game Engine",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests",
+        "android",
+        "tools"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "exampleApp"
+      ],
+      "installFiles": [
+        "nico.nim"
+      ],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "sdl2_nim",
+          "str": ">= 2.0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2.0.14.2"
+          }
+        },
+        {
+          "name": "gifenc",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.5.9",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.9"
+          }
+        }
+      ],
+      "bin": [
+        "nicosynth",
+        "nicoboot",
+        "nicoandroid"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/main",
+      "rev": "bdbe4f48ca8d2d58458e76897cf883a255479cf2"
+    },
+    "refs/heads/nicoscripter": {
+      "name": "nico",
+      "version": "0.4.5",
+      "author": "Jez 'Impbox' Kabanov",
+      "desc": "Nico Game Engine",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests",
+        "android",
+        "tools"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "exampleApp"
+      ],
+      "installFiles": [
+        "nico.nim"
+      ],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "sdl2_nim",
+          "str": ">= 2.0.14.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2.0.14.2"
+          }
+        },
+        {
+          "name": "gifenc",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.5.9",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.9"
+          }
+        }
+      ],
+      "bin": [
+        "nicosynth",
+        "nicoboot",
+        "nicoandroid"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/nicoscripter",
+      "rev": "53f82e215a30d0382b2c6bd2e3ca6ad76f06623b"
+    },
+    "refs/heads/nim0.20.0": {
+      "name": "nico",
+      "version": "0.2.0",
+      "author": "Jez Kabanov",
+      "desc": "Nico Game Engine",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests",
+        "android"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nico.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "sdl2_nim",
+          "str": ">= 2.0.10.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2.0.10.0"
+          }
+        },
+        {
+          "name": "gifenc",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "webaudio",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "html5_canvas",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "ajax",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "sndfile",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/nim0.20.0",
+      "rev": "815bd7a589bb7a66dcf677bb7c5c42739163180a"
+    },
+    "refs/heads/removeJS": {
+      "name": "nico",
+      "version": "0.3.3",
+      "author": "Jez 'Impbox' Kabanov",
+      "desc": "Nico Game Engine",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests",
+        "android",
+        "tools"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "exampleApp"
+      ],
+      "installFiles": [
+        "nico.nim"
+      ],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "sdl2_nim",
+          "str": ">= 2.0.10.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2.0.10.0"
+          }
+        },
+        {
+          "name": "gifenc",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.5.9",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.9"
+          }
+        }
+      ],
+      "bin": [
+        "nicosynth",
+        "nicoboot",
+        "nicoandroid"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/removeJS",
+      "rev": "d9dff69a4188fd321e3f959e135a12d21e91cef9"
+    },
+    "refs/heads/synth": {
+      "name": "nico",
+      "version": "0.1.0",
+      "author": "Jez Kabanov",
+      "desc": "Nico Game Engine",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests",
+        "android"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nico.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.16.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.16.0"
+          }
+        },
+        {
+          "name": "sdl2_nim",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "gifenc",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "stb_image",
+          "str": ">= 1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.3"
+          }
+        },
+        {
+          "name": "webaudio",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "html5_canvas",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "ajax",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "sndfile",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/synth",
+      "rev": "0b70b44fe5497492f7c7533cb347cacfc0c12950"
+    },
+    "refs/heads/v0.3": {
+      "name": "nico",
+      "version": "0.3.2",
+      "author": "Jez 'Impbox' Kabanov",
+      "desc": "Nico Game Engine",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests",
+        "android",
+        "tools"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "exampleApp"
+      ],
+      "installFiles": [
+        "nico.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "sdl2_nim",
+          "str": ">= 2.0.10.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2.0.10.0"
+          }
+        },
+        {
+          "name": "gifenc",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "webaudio",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "html5_canvas",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "ajax",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        },
+        {
+          "name": "nimPNG",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "nicoboot"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/v0.3",
+      "rev": "786a37ca75ab636e60bb208843804c1e9b13ab95"
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "name": "nimpb_protoc",
+  "url": "https://github.com/oswjk/nimpb_protoc",
+  "method": "git",
+  "tags": [
+    "serialization",
+    "protocol-buffers",
+    "protobuf"
+  ],
+  "description": "Protocol Buffers compiler support package for nimpb",
+  "license": "MIT",
+  "web": "https://github.com/oswjk/nimpb_protoc",
+  "refs": {
+    "HEAD": {
+      "name": "nimpb_protoc",
+      "version": "0.1.0",
+      "author": "Oskari Timperi",
+      "desc": "Protocol Buffers compiler for nimpb",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "4a54eff46b816e7d2f1d69df24cc85780406e2f3"
+    },
+    "refs/heads/json-parsing": {
+      "name": "nimpb_build",
+      "version": "0.1.0",
+      "author": "Oskari Timperi",
+      "desc": "A Protocol Buffers code generator for nimpb",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        },
+        {
+          "name": "nimpb",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "nimpb_build"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/json-parsing",
+      "rev": "92ff48a071cbdd894a0ec3147cf6623c0e394365"
+    },
+    "refs/heads/master": {
+      "name": "nimpb_protoc",
+      "version": "0.1.0",
+      "author": "Oskari Timperi",
+      "desc": "Protocol Buffers compiler for nimpb",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/master",
+      "rev": "4a54eff46b816e7d2f1d69df24cc85780406e2f3"
+    }
+  }
+}

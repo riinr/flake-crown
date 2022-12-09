@@ -1,0 +1,907 @@
+{
+  "name": "baker",
+  "url": "https://github.com/jasonrbriggs/baker",
+  "method": "git",
+  "tags": [
+    "html",
+    "template",
+    "static",
+    "blog"
+  ],
+  "description": "Static website generation",
+  "license": "Apache-2.0",
+  "web": "https://github.com/jasonrbriggs/baker",
+  "refs": {
+    "HEAD": {
+      "name": "baker",
+      "version": "2.0.11",
+      "author": "Jason R Briggs",
+      "desc": "Static website generation",
+      "license": "Apache-2.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "proton",
+          "str": ">= 0.2.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.4"
+          }
+        },
+        {
+          "name": "docopt",
+          "str": ">= 0.6.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.8"
+          }
+        },
+        {
+          "name": "markdown",
+          "str": "#v0.8.1",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#v0.8.1"
+          }
+        },
+        {
+          "name": "zip",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "timezones",
+          "str": ">= 0.5.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.3"
+          }
+        },
+        {
+          "name": "ndb",
+          "str": ">= 0.19.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.4"
+          }
+        }
+      ],
+      "bin": [
+        "baker"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "683d6c9239b6abf7e85bed0b852ad6b4c635b7d2"
+    },
+    "refs/heads/dev": {
+      "name": "baker",
+      "version": "2.0.11",
+      "author": "Jason R Briggs",
+      "desc": "Static website generation",
+      "license": "Apache-2.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "proton",
+          "str": ">= 0.2.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.4"
+          }
+        },
+        {
+          "name": "docopt",
+          "str": ">= 0.6.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.8"
+          }
+        },
+        {
+          "name": "markdown",
+          "str": "#v0.8.1",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#v0.8.1"
+          }
+        },
+        {
+          "name": "zip",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "timezones",
+          "str": ">= 0.5.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.3"
+          }
+        },
+        {
+          "name": "ndb",
+          "str": ">= 0.19.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.4"
+          }
+        }
+      ],
+      "bin": [
+        "baker"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/dev",
+      "rev": "683d6c9239b6abf7e85bed0b852ad6b4c635b7d2"
+    },
+    "refs/heads/master": {
+      "name": "baker",
+      "version": "2.0.7",
+      "author": "Jason R Briggs",
+      "desc": "Static website generation",
+      "license": "Apache-2.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "proton",
+          "str": ">= 0.2.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.4"
+          }
+        },
+        {
+          "name": "https://github.com/docopt/docopt.nim",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "markdown",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "zip",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "timezones",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "ndb",
+          "str": ">= 0.19.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.4"
+          }
+        }
+      ],
+      "bin": [
+        "baker"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/master",
+      "rev": "1d45935b6da43fb60f5f6511edfb04090cc9e6b3"
+    },
+    "refs/tags/v1.6": {
+      "rev": "e508e5df2b224fc5abf688b0261c102427be6171",
+      "ref": "refs/tags/v1.6"
+    },
+    "refs/tags/v1.8": {
+      "rev": "9d7d0a39a184580a84d674748ec6a8d7f9e8e99a",
+      "ref": "refs/tags/v1.8"
+    },
+    "refs/tags/v1.8.2": {
+      "rev": "057a1eb12599757834afd2e958fc5f3ff3872824",
+      "ref": "refs/tags/v1.8.2"
+    },
+    "refs/tags/v1.8.3": {
+      "rev": "4a98aed0b34406e7004a2aeed9d61f8c0a4ba6c7",
+      "ref": "refs/tags/v1.8.3"
+    },
+    "refs/tags/v2.0.0": {
+      "name": "baker",
+      "version": "2.0.0",
+      "author": "Jason R Briggs",
+      "desc": "Static website generation",
+      "license": "Apache-2.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "proton",
+          "str": ">= 0.2.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.2"
+          }
+        },
+        {
+          "name": "https://github.com/docopt/docopt.nim",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "markdown",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "zip",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "timezones",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        }
+      ],
+      "bin": [
+        "baker"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v2.0.0",
+      "rev": "8c069e887a944489d434d3b4166a82f6a2e5307a"
+    },
+    "refs/tags/v2.0.1": {
+      "name": "baker",
+      "version": "2.0.1",
+      "author": "Jason R Briggs",
+      "desc": "Static website generation",
+      "license": "Apache-2.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "proton",
+          "str": ">= 0.2.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.2"
+          }
+        },
+        {
+          "name": "https://github.com/docopt/docopt.nim",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "markdown",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "zip",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "timezones",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        }
+      ],
+      "bin": [
+        "baker"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v2.0.1",
+      "rev": "e938cd64292e0d0755c5fd2c9ef91a7055da1f19"
+    },
+    "refs/tags/v2.0.2": {
+      "name": "baker",
+      "version": "2.0.2",
+      "author": "Jason R Briggs",
+      "desc": "Static website generation",
+      "license": "Apache-2.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "proton",
+          "str": ">= 0.2.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.4"
+          }
+        },
+        {
+          "name": "https://github.com/docopt/docopt.nim",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "markdown",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "zip",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "timezones",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "ndb",
+          "str": ">= 0.19.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.4"
+          }
+        }
+      ],
+      "bin": [
+        "baker"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v2.0.2",
+      "rev": "fe7518eb580779dc8bc768fa06dc40fca1d45cb8"
+    },
+    "refs/tags/v2.0.3": {
+      "name": "baker",
+      "version": "2.0.2",
+      "author": "Jason R Briggs",
+      "desc": "Static website generation",
+      "license": "Apache-2.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "proton",
+          "str": ">= 0.2.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.4"
+          }
+        },
+        {
+          "name": "https://github.com/docopt/docopt.nim",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "markdown",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "zip",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "timezones",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "ndb",
+          "str": ">= 0.19.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.4"
+          }
+        }
+      ],
+      "bin": [
+        "baker"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v2.0.3",
+      "rev": "c0ca825e47317de3114575792e10427c655f173b"
+    },
+    "refs/tags/v2.0.4": {
+      "name": "baker",
+      "version": "2.0.4",
+      "author": "Jason R Briggs",
+      "desc": "Static website generation",
+      "license": "Apache-2.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "proton",
+          "str": ">= 0.2.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.4"
+          }
+        },
+        {
+          "name": "https://github.com/docopt/docopt.nim",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "markdown",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "zip",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "timezones",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "ndb",
+          "str": ">= 0.19.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.4"
+          }
+        }
+      ],
+      "bin": [
+        "baker"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v2.0.4",
+      "rev": "d6d153813fe6cd4e312f911723ee95bb9e388de8"
+    },
+    "refs/tags/v2.0.5": {
+      "name": "baker",
+      "version": "2.0.5",
+      "author": "Jason R Briggs",
+      "desc": "Static website generation",
+      "license": "Apache-2.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "proton",
+          "str": ">= 0.2.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.4"
+          }
+        },
+        {
+          "name": "https://github.com/docopt/docopt.nim",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "markdown",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "zip",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "timezones",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "ndb",
+          "str": ">= 0.19.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.4"
+          }
+        }
+      ],
+      "bin": [
+        "baker"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v2.0.5",
+      "rev": "6fe28400d0b6b658a8429d0beead0780a44c06a0"
+    },
+    "refs/tags/v2.0.7": {
+      "name": "baker",
+      "version": "2.0.7",
+      "author": "Jason R Briggs",
+      "desc": "Static website generation",
+      "license": "Apache-2.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "proton",
+          "str": ">= 0.2.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.4"
+          }
+        },
+        {
+          "name": "https://github.com/docopt/docopt.nim",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "markdown",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "zip",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "timezones",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "ndb",
+          "str": ">= 0.19.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.4"
+          }
+        }
+      ],
+      "bin": [
+        "baker"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v2.0.7",
+      "rev": "4c4f11763bd97802206ce793da9519f54f00f0ce"
+    },
+    "refs/tags/v2.0.9": {
+      "name": "baker",
+      "version": "2.0.9",
+      "author": "Jason R Briggs",
+      "desc": "Static website generation",
+      "license": "Apache-2.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "proton",
+          "str": ">= 0.2.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.4"
+          }
+        },
+        {
+          "name": "docopt",
+          "str": ">= 0.6.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.8"
+          }
+        },
+        {
+          "name": "markdown",
+          "str": "#v0.8.1",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#v0.8.1"
+          }
+        },
+        {
+          "name": "zip",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "timezones",
+          "str": ">= 0.5.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.3"
+          }
+        },
+        {
+          "name": "ndb",
+          "str": ">= 0.19.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.4"
+          }
+        }
+      ],
+      "bin": [
+        "baker"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v2.0.9",
+      "rev": "7ec80e4ca4b19239c4ae6864bd5683d0e25f0857"
+    }
+  }
+}

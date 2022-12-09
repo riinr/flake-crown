@@ -1,0 +1,783 @@
+{
+  "name": "glob",
+  "url": "https://github.com/haltcase/glob",
+  "method": "git",
+  "tags": [
+    "glob",
+    "pattern",
+    "match",
+    "walk",
+    "filesystem",
+    "pure"
+  ],
+  "description": "Pure library for matching file paths against Unix style glob patterns.",
+  "license": "MIT",
+  "web": "https://github.com/haltcase/glob",
+  "refs": {
+    "HEAD": {
+      "name": "glob",
+      "version": "0.11.2",
+      "author": "Bo Lingen",
+      "desc": "Pure library for matching file paths against Unix style glob patterns.",
+      "license": "MIT",
+      "skipDirs": [
+        "docsrc"
+      ],
+      "skipFiles": [
+        "tests.nim"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "regex",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "64f71af2fa4572c2bdf8987a56a427c1d88fc34f"
+    },
+    "refs/heads/master": {
+      "name": "glob",
+      "version": "0.11.2",
+      "author": "Bo Lingen",
+      "desc": "Pure library for matching file paths against Unix style glob patterns.",
+      "license": "MIT",
+      "skipDirs": [
+        "docsrc"
+      ],
+      "skipFiles": [
+        "tests.nim"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "regex",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/master",
+      "rev": "64f71af2fa4572c2bdf8987a56a427c1d88fc34f"
+    },
+    "refs/tags/v0.1.0": {
+      "name": "glob",
+      "version": "0.1.0",
+      "author": "Bo Lingen",
+      "desc": "Pure library for matching file paths against Unix style glob patterns.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [
+        "tests.nim"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        },
+        {
+          "name": "regex",
+          "str": ">= 0.6.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.1.0",
+      "rev": "6f5c5f48d96cb2b34c443d6eaf0a3030dac6d672"
+    },
+    "refs/tags/v0.10.0": {
+      "name": "glob",
+      "version": "0.10.0",
+      "author": "Bo Lingen",
+      "desc": "Pure library for matching file paths against Unix style glob patterns.",
+      "license": "MIT",
+      "skipDirs": [
+        "docsrc"
+      ],
+      "skipFiles": [
+        "tests.nim"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "regex",
+          "str": ">= 0.17.1 & < 0.18.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.17.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.18.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.10.0",
+      "rev": "27a08a2aa3e7f00e65b8b32271aaf6acbce20497"
+    },
+    "refs/tags/v0.11.0": {
+      "name": "glob",
+      "version": "0.11.0",
+      "author": "Bo Lingen",
+      "desc": "Pure library for matching file paths against Unix style glob patterns.",
+      "license": "MIT",
+      "skipDirs": [
+        "docsrc"
+      ],
+      "skipFiles": [
+        "tests.nim"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "regex",
+          "str": ">= 0.19.0 & < 0.20.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.19.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.20.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.11.0",
+      "rev": "bdab5b171e616dc88b045f406f50e4157b1f7f6b"
+    },
+    "refs/tags/v0.11.1": {
+      "name": "glob",
+      "version": "0.11.1",
+      "author": "Bo Lingen",
+      "desc": "Pure library for matching file paths against Unix style glob patterns.",
+      "license": "MIT",
+      "skipDirs": [
+        "docsrc"
+      ],
+      "skipFiles": [
+        "tests.nim"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "regex",
+          "str": ">= 0.19.0 & < 0.20.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.19.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.20.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.11.1",
+      "rev": "be890f2ba54fd5a7472f2908edec0c1cd3d4fefd"
+    },
+    "refs/tags/v0.11.2": {
+      "name": "glob",
+      "version": "0.11.2",
+      "author": "Bo Lingen",
+      "desc": "Pure library for matching file paths against Unix style glob patterns.",
+      "license": "MIT",
+      "skipDirs": [
+        "docsrc"
+      ],
+      "skipFiles": [
+        "tests.nim"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "regex",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.11.2",
+      "rev": "6e70075871d0b9d11f9915afaf9691717485c4c3"
+    },
+    "refs/tags/v0.2.0": {
+      "name": "glob",
+      "version": "0.2.0",
+      "author": "Bo Lingen",
+      "desc": "Pure library for matching file paths against Unix style glob patterns.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [
+        "tests.nim"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        },
+        {
+          "name": "regex",
+          "str": ">= 0.6.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.2.0",
+      "rev": "90b1e78a446369b8a01466e132fff961d5d8a967"
+    },
+    "refs/tags/v0.3.0": {
+      "name": "glob",
+      "version": "0.3.0",
+      "author": "Bo Lingen",
+      "desc": "Pure library for matching file paths against Unix style glob patterns.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [
+        "tests.nim"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        },
+        {
+          "name": "regex",
+          "str": ">= 0.6.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.0",
+      "rev": "14407d7a0bf831d3aa91b3bbef7792d4fb334d63"
+    },
+    "refs/tags/v0.3.1": {
+      "name": "glob",
+      "version": "0.3.1",
+      "author": "Bo Lingen",
+      "desc": "Pure library for matching file paths against Unix style glob patterns.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [
+        "tests.nim"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        },
+        {
+          "name": "regex",
+          "str": ">= 0.6.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.1",
+      "rev": "3df63d81ec2684c5be2f2b949bbf081d2fcc1fc9"
+    },
+    "refs/tags/v0.4.0": {
+      "name": "glob",
+      "version": "0.4.0",
+      "author": "Bo Lingen",
+      "desc": "Pure library for matching file paths against Unix style glob patterns.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [
+        "tests.nim"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        },
+        {
+          "name": "regex",
+          "str": ">= 0.6.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.0",
+      "rev": "bfdc3be5d54d858f8c1dc9f67c0acb251fc1c379"
+    },
+    "refs/tags/v0.5.0": {
+      "name": "glob",
+      "version": "0.5.0",
+      "author": "Bo Lingen",
+      "desc": "Pure library for matching file paths against Unix style glob patterns.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [
+        "tests.nim"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        },
+        {
+          "name": "regex",
+          "str": ">= 0.6.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.5.0",
+      "rev": "ba811e790d6eda22ba55a769e4a097271792aaa9"
+    },
+    "refs/tags/v0.6.0": {
+      "name": "glob",
+      "version": "0.6.0",
+      "author": "Bo Lingen",
+      "desc": "Pure library for matching file paths against Unix style glob patterns.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [
+        "tests.nim"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        },
+        {
+          "name": "regex",
+          "str": ">= 0.6.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.6.0",
+      "rev": "1e1000f283087fae8c7ff8151765a243cb98ff85"
+    },
+    "refs/tags/v0.7.0": {
+      "name": "glob",
+      "version": "0.7.0",
+      "author": "Bo Lingen",
+      "desc": "Pure library for matching file paths against Unix style glob patterns.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [
+        "tests.nim"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        },
+        {
+          "name": "regex",
+          "str": ">= 0.6.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.7.0",
+      "rev": "ca0513dca6896972bf5277b4ec94202f51ba49a9"
+    },
+    "refs/tags/v0.8.0": {
+      "name": "glob",
+      "version": "0.8.0",
+      "author": "Bo Lingen",
+      "desc": "Pure library for matching file paths against Unix style glob patterns.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [
+        "tests.nim"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        },
+        {
+          "name": "regex",
+          "str": ">= 0.6.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.8.0",
+      "rev": "6fada01bd98f875c8e1decd49e397cbcf50dedd1"
+    },
+    "refs/tags/v0.8.1": {
+      "name": "glob",
+      "version": "0.8.0",
+      "author": "Bo Lingen",
+      "desc": "Pure library for matching file paths against Unix style glob patterns.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [
+        "tests.nim"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        },
+        {
+          "name": "regex",
+          "str": ">= 0.6.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.8.1",
+      "rev": "98a5c791ed1b024473c345b52b7e7810b8013017"
+    },
+    "refs/tags/v0.9.0": {
+      "name": "glob",
+      "version": "0.9.0",
+      "author": "Bo Lingen",
+      "desc": "Pure library for matching file paths against Unix style glob patterns.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [
+        "tests.nim"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        },
+        {
+          "name": "regex",
+          "str": ">= 0.7.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7.4"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.9.0",
+      "rev": "3b9945cde7ec652c5983166d0a4f9bb0fc763f91"
+    },
+    "refs/tags/v0.9.1": {
+      "name": "glob",
+      "version": "0.9.1",
+      "author": "Bo Lingen",
+      "desc": "Pure library for matching file paths against Unix style glob patterns.",
+      "license": "MIT",
+      "skipDirs": [
+        "docsrc"
+      ],
+      "skipFiles": [
+        "tests.nim"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        },
+        {
+          "name": "regex",
+          "str": ">= 0.17.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.17.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.9.1",
+      "rev": "0fbd1fd9d25663e0508a7516b5a4b4c2b8de8c1f"
+    }
+  }
+}

@@ -1,0 +1,482 @@
+{
+  "name": "NiMPC",
+  "url": "https://github.com/markspanbroek/nimpc",
+  "method": "git",
+  "tags": [
+    "multiparty",
+    "computation",
+    "mpc"
+  ],
+  "description": "Secure multi-party computation",
+  "license": "MIT",
+  "web": "https://github.com/markspanbroek/nimpc",
+  "refs": {
+    "HEAD": {
+      "name": "NiMPC",
+      "version": "0.4.1",
+      "author": "Mark Spanbroek",
+      "desc": "Secure multi-party computation",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0 & < 1.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.3.0"
+            }
+          }
+        },
+        {
+          "name": "sysrandom",
+          "str": ">= 1.1.0 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.1.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "simpleot",
+          "str": ">= 0.5.1 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "monocypher",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "fd3af16e025259ed1da11fb65e7c6e1af33384fc"
+    },
+    "refs/heads/master": {
+      "name": "NiMPC",
+      "version": "0.4.1",
+      "author": "Mark Spanbroek",
+      "desc": "Secure multi-party computation",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0 & < 1.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.3.0"
+            }
+          }
+        },
+        {
+          "name": "sysrandom",
+          "str": ">= 1.1.0 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.1.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "simpleot",
+          "str": ">= 0.5.1 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "monocypher",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/master",
+      "rev": "fd3af16e025259ed1da11fb65e7c6e1af33384fc"
+    },
+    "refs/tags/v0.1.0": {
+      "name": "NiMPC",
+      "version": "0.1.0",
+      "author": "Mark Spanbroek",
+      "desc": "Secure multi-party computation",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "sysrandom",
+          "str": ">= 1.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.0"
+          }
+        },
+        {
+          "name": "simpleot",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.1.0",
+      "rev": "fbade2555c9f95750e14299da6b94f91e540fa1d"
+    },
+    "refs/tags/v0.2.0": {
+      "name": "NiMPC",
+      "version": "0.2.0",
+      "author": "Mark Spanbroek",
+      "desc": "Secure multi-party computation",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "sysrandom",
+          "str": ">= 1.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.0"
+          }
+        },
+        {
+          "name": "simpleot",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.2.0",
+      "rev": "cb1e573168ac89f7c8a14f3281a448a8824e34c6"
+    },
+    "refs/tags/v0.3.0": {
+      "name": "NiMPC",
+      "version": "0.3.0",
+      "author": "Mark Spanbroek",
+      "desc": "Secure multi-party computation",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "sysrandom",
+          "str": ">= 1.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.0"
+          }
+        },
+        {
+          "name": "simpleot",
+          "str": ">= 0.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.2"
+          }
+        },
+        {
+          "name": "monocypher",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.0",
+      "rev": "e9dd38147e889da00a4851676cc6021264772947"
+    },
+    "refs/tags/v0.4.0": {
+      "name": "NiMPC",
+      "version": "0.4.0",
+      "author": "Mark Spanbroek",
+      "desc": "Secure multi-party computation",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0 & < 1.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.3.0"
+            }
+          }
+        },
+        {
+          "name": "sysrandom",
+          "str": ">= 1.1.0 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.1.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "simpleot",
+          "str": ">= 0.5.0 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "monocypher",
+          "str": ">= 0.1.0 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.0",
+      "rev": "866fe3c6c888a5ff995656fd6db169b5587d6a11"
+    },
+    "refs/tags/v0.4.1": {
+      "name": "NiMPC",
+      "version": "0.4.1",
+      "author": "Mark Spanbroek",
+      "desc": "Secure multi-party computation",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0 & < 1.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.3.0"
+            }
+          }
+        },
+        {
+          "name": "sysrandom",
+          "str": ">= 1.1.0 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.1.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "simpleot",
+          "str": ">= 0.5.1 & < 0.6.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6.0"
+            }
+          }
+        },
+        {
+          "name": "monocypher",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.1",
+      "rev": "2148a7a9fd618b2918f36d6e55e449eb61549a35"
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "description": "A jsony plugin to enable union support",
+  "license": "MIT",
+  "method": "git",
+  "name": "github-tandy-1000-uniony",
+  "tags": [
+    "json",
+    "union"
+  ],
+  "url": "https://github.com/tandy-1000/uniony",
+  "refs": {
+    "HEAD": {
+      "name": "uniony",
+      "version": "0.1.0",
+      "author": "tandy1000",
+      "desc": "A plugin library to enable `union` support in `jsony`",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "uniony.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "https://github.com/treeform/jsony",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/alaviss/union",
+          "str": ">= 0.1.0 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "a45868876dd793b9c43dd7e5df548a734cc5497c"
+    },
+    "refs/heads/devel": {
+      "name": "uniony",
+      "version": "0.1.0",
+      "author": "tandy1000",
+      "desc": "A plugin library to enable `union` support in `jsony`",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "uniony.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "https://github.com/treeform/jsony",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/alaviss/union",
+          "str": ">= 0.1.0 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/devel",
+      "rev": "a45868876dd793b9c43dd7e5df548a734cc5497c"
+    }
+  }
+}

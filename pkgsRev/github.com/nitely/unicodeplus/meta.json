@@ -1,0 +1,614 @@
+{
+  "name": "unicodeplus",
+  "url": "https://github.com/nitely/nim-unicodeplus",
+  "method": "git",
+  "tags": [
+    "unicode",
+    "isdigit",
+    "isalpha"
+  ],
+  "description": "Common unicode operations",
+  "license": "MIT",
+  "web": "https://github.com/nitely/nim-unicodeplus",
+  "refs": {
+    "HEAD": {
+      "name": "unicodeplus",
+      "version": "0.8.0",
+      "author": "Esteban Castro Borsani (@nitely)",
+      "desc": "Common unicode operations",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        },
+        {
+          "name": "unicodedb",
+          "str": ">= 0.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.8"
+          }
+        },
+        {
+          "name": "segmentation",
+          "str": ">= 0.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "fd553314df9d9a45aa0d14218e20e7c029f0baa1"
+    },
+    "refs/heads/fix_ascii_range": {
+      "name": "unicodeplus",
+      "version": "0.5.1",
+      "author": "Esteban Castro Borsani (@nitely)",
+      "desc": "Common unicode operations",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        },
+        {
+          "name": "unicodedb",
+          "str": ">= 0.7",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/fix_ascii_range",
+      "rev": "28d7413ee038be5a5cd386f18387db58743e11ed"
+    },
+    "refs/heads/master": {
+      "name": "unicodeplus",
+      "version": "0.8.0",
+      "author": "Esteban Castro Borsani (@nitely)",
+      "desc": "Common unicode operations",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        },
+        {
+          "name": "unicodedb",
+          "str": ">= 0.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.8"
+          }
+        },
+        {
+          "name": "segmentation",
+          "str": ">= 0.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/master",
+      "rev": "fd553314df9d9a45aa0d14218e20e7c029f0baa1"
+    },
+    "refs/tags/v0.1.0": {
+      "name": "unicodeplus",
+      "version": "0.1.0",
+      "author": "Esteban Castro Borsani (@nitely)",
+      "desc": "Common unicode operations",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.17.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.17.2"
+          }
+        },
+        {
+          "name": "unicodedb",
+          "str": ">= 0.2 & <= 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEqEarlier",
+              "ver": "0.3"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.1.0",
+      "rev": "3cddaaa0a5193b15cf6d74f25df2a28cb0921ef2"
+    },
+    "refs/tags/v0.1.1": {
+      "name": "unicodeplus",
+      "version": "0.1.1",
+      "author": "Esteban Castro Borsani (@nitely)",
+      "desc": "Common unicode operations",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.17.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.17.2"
+          }
+        },
+        {
+          "name": "unicodedb",
+          "str": ">= 0.2 & < 0.3",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.1.1",
+      "rev": "c9cef21838d739ad81d2c6e137871577a92d8a66"
+    },
+    "refs/tags/v0.2.0": {
+      "name": "unicodeplus",
+      "version": "0.2.0",
+      "author": "Esteban Castro Borsani (@nitely)",
+      "desc": "Common unicode operations",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.17.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.17.2"
+          }
+        },
+        {
+          "name": "unicodedb",
+          "str": ">= 0.4 & < 0.5",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.5"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.2.0",
+      "rev": "1e6980de5d1c82b3989a471a8a838e57a4dbb3c2"
+    },
+    "refs/tags/v0.3.0": {
+      "name": "unicodeplus",
+      "version": "0.3.0",
+      "author": "Esteban Castro Borsani (@nitely)",
+      "desc": "Common unicode operations",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.17.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.17.2"
+          }
+        },
+        {
+          "name": "unicodedb",
+          "str": ">= 0.4 & < 0.5",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.5"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.0",
+      "rev": "ce2ae5ac8b1dd8f716cc8e1517814b15603e67a5"
+    },
+    "refs/tags/v0.3.1": {
+      "name": "unicodeplus",
+      "version": "0.3.1",
+      "author": "Esteban Castro Borsani (@nitely)",
+      "desc": "Common unicode operations",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.17.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.17.2"
+          }
+        },
+        {
+          "name": "unicodedb",
+          "str": ">= 0.4 & < 0.6",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.1",
+      "rev": "9b13101cccd75a0bb6dfa57e2eccc12725402b90"
+    },
+    "refs/tags/v0.3.2": {
+      "name": "unicodeplus",
+      "version": "0.3.2",
+      "author": "Esteban Castro Borsani (@nitely)",
+      "desc": "Common unicode operations",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.17.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.17.2"
+          }
+        },
+        {
+          "name": "unicodedb",
+          "str": ">= 0.4 & < 0.6",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.4"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.6"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.2",
+      "rev": "8df4f6864490ddba201087289132fd3dee4ee918"
+    },
+    "refs/tags/v0.4.0": {
+      "name": "unicodeplus",
+      "version": "0.4.0",
+      "author": "Esteban Castro Borsani (@nitely)",
+      "desc": "Common unicode operations",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        },
+        {
+          "name": "unicodedb",
+          "str": ">= 0.6 & < 0.7",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.6"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.7"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.0",
+      "rev": "c9b89a465feee4096f8adde93c94a0616ee71c6a"
+    },
+    "refs/tags/v0.5.0": {
+      "name": "unicodeplus",
+      "version": "0.5.0",
+      "author": "Esteban Castro Borsani (@nitely)",
+      "desc": "Common unicode operations",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        },
+        {
+          "name": "unicodedb",
+          "str": ">= 0.7",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.5.0",
+      "rev": "59d7d199b5c7086a917f9783ca38759f59809a25"
+    },
+    "refs/tags/v0.5.1": {
+      "name": "unicodeplus",
+      "version": "0.5.1",
+      "author": "Esteban Castro Borsani (@nitely)",
+      "desc": "Common unicode operations",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        },
+        {
+          "name": "unicodedb",
+          "str": ">= 0.7",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.5.1",
+      "rev": "9ebe96bf2aeaad590f4e09d287f76fe74e7efb88"
+    },
+    "refs/tags/v0.6.0": {
+      "name": "unicodeplus",
+      "version": "0.6.0",
+      "author": "Esteban Castro Borsani (@nitely)",
+      "desc": "Common unicode operations",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        },
+        {
+          "name": "unicodedb",
+          "str": ">= 0.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.8"
+          }
+        },
+        {
+          "name": "segmentation",
+          "str": ">= 0.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.6.0",
+      "rev": "fcbbd7de2296b3b6ab126fc8fc65f0f6fdbcd97c"
+    },
+    "refs/tags/v0.8.0": {
+      "name": "unicodeplus",
+      "version": "0.8.0",
+      "author": "Esteban Castro Borsani (@nitely)",
+      "desc": "Common unicode operations",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        },
+        {
+          "name": "unicodedb",
+          "str": ">= 0.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.8"
+          }
+        },
+        {
+          "name": "segmentation",
+          "str": ">= 0.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.8.0",
+      "rev": "0788d4b917d057e2b3bc96478fb087a5ad2d8c7b"
+    }
+  }
+}

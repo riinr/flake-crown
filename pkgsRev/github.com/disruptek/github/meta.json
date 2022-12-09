@@ -1,0 +1,684 @@
+{
+  "name": "github",
+  "url": "https://github.com/disruptek/github",
+  "method": "git",
+  "tags": [
+    "github",
+    "api",
+    "rest",
+    "openapi",
+    "client",
+    "http",
+    "library"
+  ],
+  "description": "github api",
+  "license": "MIT",
+  "web": "https://github.com/disruptek/github",
+  "refs": {
+    "HEAD": {
+      "name": "github",
+      "version": "2.0.4",
+      "author": "disruptek",
+      "desc": "github api",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "npeg",
+          "str": "< 1.0.0",
+          "ver": {
+            "kind": "verEarlier",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.5 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.5"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "93eaa02c40e1ca63b49656ff2214da55b13c12df"
+    },
+    "refs/heads/devel": {
+      "name": "github",
+      "version": "2.0.1",
+      "author": "disruptek",
+      "desc": "github api",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.6 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.6"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "npeg",
+          "str": ">= 0.20.0 & < 0.23.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.20.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.23.0"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.0 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/devel",
+      "rev": "abfa18dd6b7fc8cad4cbe907c4b536592ad761f4"
+    },
+    "refs/heads/master": {
+      "name": "github",
+      "version": "2.0.4",
+      "author": "disruptek",
+      "desc": "github api",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "npeg",
+          "str": "< 1.0.0",
+          "ver": {
+            "kind": "verEarlier",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.5 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.5"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/master",
+      "rev": "93eaa02c40e1ca63b49656ff2214da55b13c12df"
+    },
+    "refs/tags/1.0.0": {
+      "name": "github",
+      "version": "1.0.0",
+      "author": "disruptek",
+      "desc": "github api",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "github.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "npeg",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/1.0.0",
+      "rev": "38b982a8f4f7c33b58e2e6ef7c9be341253c9dfe"
+    },
+    "refs/tags/1.0.1": {
+      "name": "github",
+      "version": "1.0.1",
+      "author": "disruptek",
+      "desc": "github api",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "src"
+      ],
+      "installFiles": [
+        "github.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "npeg",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/1.0.1",
+      "rev": "8ccffe8ad28377f3f57e33629f0da0925bf78f07"
+    },
+    "refs/tags/1.0.2": {
+      "name": "github",
+      "version": "1.0.2",
+      "author": "disruptek",
+      "desc": "github api",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "npeg",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.0.2",
+      "rev": "f87e5a498f01d39847d0b55ac63ae3f48596462a"
+    },
+    "refs/tags/1.0.3": {
+      "name": "github",
+      "version": "1.0.3",
+      "author": "disruptek",
+      "desc": "github api",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "npeg",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.0.3",
+      "rev": "bd4fa68ee89934aae98a147347a4af28ac44fa69"
+    },
+    "refs/tags/1.0.4": {
+      "name": "github",
+      "version": "1.0.4",
+      "author": "disruptek",
+      "desc": "github api",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "npeg",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.0.4",
+      "rev": "cba61dba617d8317068f886f376373c7bb3ff3a9"
+    },
+    "refs/tags/2.0.0": {
+      "name": "github",
+      "version": "2.0.0",
+      "author": "disruptek",
+      "desc": "github api",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "npeg",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.0.0",
+      "rev": "96be30748940b0ce35a7efdd289e5f8cc8604f26"
+    },
+    "refs/tags/2.0.1": {
+      "name": "github",
+      "version": "2.0.1",
+      "author": "disruptek",
+      "desc": "github api",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.6 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.6"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "npeg",
+          "str": ">= 0.20.0 & < 0.23.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.20.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.23.0"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.0 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.0.1",
+      "rev": "3005eed7180fb756d369b29da99ae7e9fd4f4df9"
+    },
+    "refs/tags/2.0.2": {
+      "name": "github",
+      "version": "2.0.2",
+      "author": "disruptek",
+      "desc": "github api",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.6 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.6"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "npeg",
+          "str": ">= 0.20.0 & < 0.23.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.20.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.23.0"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": "< 1.0.4",
+          "ver": {
+            "kind": "verEarlier",
+            "ver": "1.0.4"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.0.2",
+      "rev": "daa2a53091c874e985b9bc266f311d5a35c478a6"
+    },
+    "refs/tags/2.0.3": {
+      "name": "github",
+      "version": "2.0.3",
+      "author": "disruptek",
+      "desc": "github api",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.6 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.6"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "npeg",
+          "str": ">= 0.20.0 & < 0.23.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.20.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.23.0"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.5 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.5"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.0.3",
+      "rev": "ae2dbfe009192f049f93b98abab2a00ab62bbc6a"
+    },
+    "refs/tags/2.0.4": {
+      "name": "github",
+      "version": "2.0.4",
+      "author": "disruptek",
+      "desc": "github api",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "npeg",
+          "str": "< 1.0.0",
+          "ver": {
+            "kind": "verEarlier",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.5 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.5"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.0.4",
+      "rev": "6fc70f2503d6e7fde8632a03d828559d6312769c"
+    }
+  }
+}

@@ -16,12 +16,19 @@ let
   '';
   nimbleDev   = pkgs.nimPackages.buildNimPackage {
     pname = "nimble-master";
-    version = "0.13.0-master";
+    version = "0.14.0-master";
     src = inputs.nimble-src;
   };
 in
 {
   imports = [ ./packages_other.nix ./alias_other.nix ./nix_deps.nix ./stats.nix ];
+  env = [
+    { name = "NIMBLE_DIR"; eval = "$PRJ_DATA_DIR/nimble"; }
+  ];
+  devshell.startup.nimble-dir.text = ''
+    mkdir -p $NIMBLE_DIR
+  '';
+
   files.gitignore.pattern."refresher/*.json" = true;
   files.gitignore.pattern."result"           = true;
   files.gitignore.pattern."result-*"         = true;
@@ -112,7 +119,8 @@ in
   files.nim.depWeight   = builtins.readFile ./depWeight.nim;
   files.nim.outprofiler = builtins.readFile ./outprofiler.nim;
   files.nim.updateFlake = { src = builtins.readFile ./updateFlake.nim; deps = [ nimbleDep ]; };
-  files.nim.updateNimbleLock = { src = builtins.readFile ./updateNimbleLock.nim; deps = [ compiler nimbleDep ]; };
+  files.nim.updateNimbleLock   = { src = builtins.readFile ./updateNimbleLock.nim;   deps = [ compiler nimbleDep ]; };
+  files.nim.updateRevs  = { src = builtins.readFile ./updateRevs.nim; deps = [ compiler nimbleDep ]; };
   files.nim.updateLock  = builtins.readFile ./updateLock.nim;
   files.nim.updateMeta  = builtins.readFile ./updateMeta.nim;
   files.nim.depDots     = builtins.readFile ./depDots.nim;

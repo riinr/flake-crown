@@ -1,0 +1,829 @@
+{
+  "name": "omnimax",
+  "url": "https://github.com/vitreo12/omnimax",
+  "method": "git",
+  "tags": [
+    "dsl",
+    "dsp",
+    "audio",
+    "sound",
+    "maxmsp"
+  ],
+  "description": "Max wrapper for omni.",
+  "license": "MIT",
+  "web": "https://github.com/vitreo12/omnimax",
+  "refs": {
+    "HEAD": {
+      "name": "omnimax",
+      "version": "0.4.1",
+      "author": "Francesco Cameli",
+      "desc": "Max wrapper for omni.",
+      "license": "MIT",
+      "skipDirs": [
+        "omnimax_lang"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "omnimaxpkg/JIT",
+        "omnimaxpkg/Static",
+        "omnimaxpkg/deps/max-api/include",
+        "omnimaxpkg/deps/max-api/script",
+        "omnimaxpkg/deps/max-api/site",
+        "omnimaxpkg/deps/max-api/lib/mac/JitterAPI.framework/Versions/A"
+      ],
+      "installFiles": [
+        "omnimax.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.0"
+          }
+        },
+        {
+          "name": "omni",
+          "str": "0.4.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.4.1"
+          }
+        }
+      ],
+      "bin": [
+        "omnimax"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "1e9cfcc39e97926db12d06e1b2fca19dbdfc41d8"
+    },
+    "refs/heads/buffers": {
+      "name": "omnimax",
+      "version": "0.3.0",
+      "author": "Francesco Cameli",
+      "desc": "Max wrapper for omni.",
+      "license": "MIT",
+      "skipDirs": [
+        "omnimax_lang"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "omnimaxpkg/JIT",
+        "omnimaxpkg/Static",
+        "omnimaxpkg/deps/max-api/include",
+        "omnimaxpkg/deps/max-api/script",
+        "omnimaxpkg/deps/max-api/site",
+        "omnimaxpkg/deps/max-api/lib/mac/JitterAPI.framework/Versions/A"
+      ],
+      "installFiles": [
+        "omnimax.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "omni",
+          "str": "0.3.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.3.0"
+          }
+        }
+      ],
+      "bin": [
+        "omnimax"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/buffers",
+      "rev": "1194c09c64537d784e52581aef8cfa772b0c3565"
+    },
+    "refs/heads/develop": {
+      "name": "omnimax",
+      "version": "0.4.1",
+      "author": "Francesco Cameli",
+      "desc": "Max wrapper for omni.",
+      "license": "MIT",
+      "skipDirs": [
+        "omnimax_lang"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "omnimaxpkg/JIT",
+        "omnimaxpkg/Static",
+        "omnimaxpkg/deps/max-api/include",
+        "omnimaxpkg/deps/max-api/script",
+        "omnimaxpkg/deps/max-api/site",
+        "omnimaxpkg/deps/max-api/lib/mac/JitterAPI.framework/Versions/A"
+      ],
+      "installFiles": [
+        "omnimax.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.0"
+          }
+        },
+        {
+          "name": "omni",
+          "str": "0.4.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.4.1"
+          }
+        }
+      ],
+      "bin": [
+        "omnimax"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/develop",
+      "rev": "6c14cc717c48138c9a165b9d43990330a3f0cad5"
+    },
+    "refs/heads/master": {
+      "name": "omnimax",
+      "version": "0.4.1",
+      "author": "Francesco Cameli",
+      "desc": "Max wrapper for omni.",
+      "license": "MIT",
+      "skipDirs": [
+        "omnimax_lang"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "omnimaxpkg/JIT",
+        "omnimaxpkg/Static",
+        "omnimaxpkg/deps/max-api/include",
+        "omnimaxpkg/deps/max-api/script",
+        "omnimaxpkg/deps/max-api/site",
+        "omnimaxpkg/deps/max-api/lib/mac/JitterAPI.framework/Versions/A"
+      ],
+      "installFiles": [
+        "omnimax.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.0"
+          }
+        },
+        {
+          "name": "omni",
+          "str": "0.4.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.4.1"
+          }
+        }
+      ],
+      "bin": [
+        "omnimax"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/master",
+      "rev": "1e9cfcc39e97926db12d06e1b2fca19dbdfc41d8"
+    },
+    "refs/heads/modules-v2": {
+      "name": "omnimax",
+      "version": "0.1.0",
+      "author": "Francesco Cameli",
+      "desc": "Max wrapper for omni.",
+      "license": "MIT",
+      "skipDirs": [
+        "omnimax_lang"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "omnimaxpkg/JIT",
+        "omnimaxpkg/Static",
+        "omnimaxpkg/deps/max-api/include",
+        "omnimaxpkg/deps/max-api/script",
+        "omnimaxpkg/deps/max-api/site",
+        "omnimaxpkg/deps/max-api/lib/mac/JitterAPI.framework/Versions/A"
+      ],
+      "installFiles": [
+        "omnimax.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.41",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.41"
+          }
+        },
+        {
+          "name": "omni",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "omnimax"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/modules-v2",
+      "rev": "aa90bbae652b861ae85cf33297379570c173f9f5"
+    },
+    "refs/heads/parser-rewrite": {
+      "name": "omnimax",
+      "version": "0.1.0",
+      "author": "Francesco Cameli",
+      "desc": "Max wrapper for omni.",
+      "license": "MIT",
+      "skipDirs": [
+        "omnimax_lang"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "omnimaxpkg/JIT",
+        "omnimaxpkg/Static",
+        "omnimaxpkg/deps/max-api/include",
+        "omnimaxpkg/deps/max-api/script",
+        "omnimaxpkg/deps/max-api/site",
+        "omnimaxpkg/deps/max-api/lib/mac/JitterAPI.framework/Versions/A"
+      ],
+      "installFiles": [
+        "omnimax.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.41",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.41"
+          }
+        },
+        {
+          "name": "omni",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "omnimax"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/parser-rewrite",
+      "rev": "e3c6178e648830146ccf831e9819106e4800866f"
+    },
+    "refs/heads/windows": {
+      "name": "omnimax",
+      "version": "0.3.0",
+      "author": "Francesco Cameli",
+      "desc": "Max wrapper for omni.",
+      "license": "MIT",
+      "skipDirs": [
+        "omnimax_lang"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "omnimaxpkg/JIT",
+        "omnimaxpkg/Static",
+        "omnimaxpkg/deps/max-api/include",
+        "omnimaxpkg/deps/max-api/script",
+        "omnimaxpkg/deps/max-api/site",
+        "omnimaxpkg/deps/max-api/lib/mac/JitterAPI.framework/Versions/A"
+      ],
+      "installFiles": [
+        "omnimax.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.0"
+          }
+        },
+        {
+          "name": "omni",
+          "str": "0.3.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.3.0"
+          }
+        }
+      ],
+      "bin": [
+        "omnimax"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/windows",
+      "rev": "ea34f44113490eff4af5c4c5a75de071d655ad64"
+    },
+    "refs/tags/0.1.0": {
+      "name": "omnimax",
+      "version": "0.1.0",
+      "author": "Francesco Cameli",
+      "desc": "Max wrapper for omni.",
+      "license": "MIT",
+      "skipDirs": [
+        "omnimax_lang"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "omnimaxpkg/JIT",
+        "omnimaxpkg/Static",
+        "omnimaxpkg/deps/max-api/include",
+        "omnimaxpkg/deps/max-api/script",
+        "omnimaxpkg/deps/max-api/site",
+        "omnimaxpkg/deps/max-api/lib/mac/JitterAPI.framework/Versions/A"
+      ],
+      "installFiles": [
+        "omnimax.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.41",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.41"
+          }
+        },
+        {
+          "name": "omni",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "omnimax"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.1.0",
+      "rev": "cd226f7fb631cea37abec3378fe164730ae975fa"
+    },
+    "refs/tags/0.2.0": {
+      "name": "omnimax",
+      "version": "0.2.0",
+      "author": "Francesco Cameli",
+      "desc": "Max wrapper for omni.",
+      "license": "MIT",
+      "skipDirs": [
+        "omnimax_lang"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "omnimaxpkg/JIT",
+        "omnimaxpkg/Static",
+        "omnimaxpkg/deps/max-api/include",
+        "omnimaxpkg/deps/max-api/script",
+        "omnimaxpkg/deps/max-api/site",
+        "omnimaxpkg/deps/max-api/lib/mac/JitterAPI.framework/Versions/A"
+      ],
+      "installFiles": [
+        "omnimax.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.41",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.41"
+          }
+        },
+        {
+          "name": "omni",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        }
+      ],
+      "bin": [
+        "omnimax"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.2.0",
+      "rev": "d5709d7bd440b0df76e33054a82c6432ec1d5206"
+    },
+    "refs/tags/0.2.1": {
+      "name": "omnimax",
+      "version": "0.2.1",
+      "author": "Francesco Cameli",
+      "desc": "Max wrapper for omni.",
+      "license": "MIT",
+      "skipDirs": [
+        "omnimax_lang"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "omnimaxpkg/JIT",
+        "omnimaxpkg/Static",
+        "omnimaxpkg/deps/max-api/include",
+        "omnimaxpkg/deps/max-api/script",
+        "omnimaxpkg/deps/max-api/site",
+        "omnimaxpkg/deps/max-api/lib/mac/JitterAPI.framework/Versions/A"
+      ],
+      "installFiles": [
+        "omnimax.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.41",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.41"
+          }
+        },
+        {
+          "name": "omni",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        }
+      ],
+      "bin": [
+        "omnimax"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.2.1",
+      "rev": "c1bb42d745abc26515b3a743cd9c6fae60d4c489"
+    },
+    "refs/tags/0.2.2": {
+      "name": "omnimax",
+      "version": "0.2.2",
+      "author": "Francesco Cameli",
+      "desc": "Max wrapper for omni.",
+      "license": "MIT",
+      "skipDirs": [
+        "omnimax_lang"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "omnimaxpkg/JIT",
+        "omnimaxpkg/Static",
+        "omnimaxpkg/deps/max-api/include",
+        "omnimaxpkg/deps/max-api/script",
+        "omnimaxpkg/deps/max-api/site",
+        "omnimaxpkg/deps/max-api/lib/mac/JitterAPI.framework/Versions/A"
+      ],
+      "installFiles": [
+        "omnimax.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "omni",
+          "str": ">= 0.2.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.2"
+          }
+        }
+      ],
+      "bin": [
+        "omnimax"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.2.2",
+      "rev": "5258dd428f71e52b498d4a00705a05e4282617cd"
+    },
+    "refs/tags/0.2.3": {
+      "name": "omnimax",
+      "version": "0.2.3",
+      "author": "Francesco Cameli",
+      "desc": "Max wrapper for omni.",
+      "license": "MIT",
+      "skipDirs": [
+        "omnimax_lang"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "omnimaxpkg/JIT",
+        "omnimaxpkg/Static",
+        "omnimaxpkg/deps/max-api/include",
+        "omnimaxpkg/deps/max-api/script",
+        "omnimaxpkg/deps/max-api/site",
+        "omnimaxpkg/deps/max-api/lib/mac/JitterAPI.framework/Versions/A"
+      ],
+      "installFiles": [
+        "omnimax.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "omni",
+          "str": ">= 0.2.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.3"
+          }
+        }
+      ],
+      "bin": [
+        "omnimax"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.2.3",
+      "rev": "06480f99a4899ce52b8a69bafb2bbaaaa11c681f"
+    },
+    "refs/tags/0.4.0": {
+      "name": "omnimax",
+      "version": "0.4.0",
+      "author": "Francesco Cameli",
+      "desc": "Max wrapper for omni.",
+      "license": "MIT",
+      "skipDirs": [
+        "omnimax_lang"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "omnimaxpkg/JIT",
+        "omnimaxpkg/Static",
+        "omnimaxpkg/deps/max-api/include",
+        "omnimaxpkg/deps/max-api/script",
+        "omnimaxpkg/deps/max-api/site",
+        "omnimaxpkg/deps/max-api/lib/mac/JitterAPI.framework/Versions/A"
+      ],
+      "installFiles": [
+        "omnimax.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.0"
+          }
+        },
+        {
+          "name": "omni",
+          "str": "0.4.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.4.0"
+          }
+        }
+      ],
+      "bin": [
+        "omnimax"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.4.0",
+      "rev": "6400910431f36a69ba9e2bc58fcd292445134b5d"
+    },
+    "refs/tags/0.4.1": {
+      "name": "omnimax",
+      "version": "0.4.1",
+      "author": "Francesco Cameli",
+      "desc": "Max wrapper for omni.",
+      "license": "MIT",
+      "skipDirs": [
+        "omnimax_lang"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "omnimaxpkg/JIT",
+        "omnimaxpkg/Static",
+        "omnimaxpkg/deps/max-api/include",
+        "omnimaxpkg/deps/max-api/script",
+        "omnimaxpkg/deps/max-api/site",
+        "omnimaxpkg/deps/max-api/lib/mac/JitterAPI.framework/Versions/A"
+      ],
+      "installFiles": [
+        "omnimax.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.0"
+          }
+        },
+        {
+          "name": "omni",
+          "str": "0.4.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.4.1"
+          }
+        }
+      ],
+      "bin": [
+        "omnimax"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.4.1",
+      "rev": "1e9cfcc39e97926db12d06e1b2fca19dbdfc41d8"
+    }
+  }
+}

@@ -1,0 +1,1882 @@
+{
+  "name": "eris",
+  "url": "https://codeberg.org/eris/nim-eris",
+  "method": "git",
+  "tags": [
+    "eris"
+  ],
+  "description": "Encoding for Robust Immutable Storage (ERIS)",
+  "license": "ISC",
+  "web": "https://eris.codeberg.page",
+  "refs": {
+    "HEAD": {
+      "name": "eris",
+      "version": "20221006",
+      "author": "Endo Renberg",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        },
+        {
+          "name": "https://codeberg.org/eris/nim-coap.git",
+          "str": ">= 20220831",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220831"
+          }
+        },
+        {
+          "name": "cbor",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "coap",
+          "str": ">= 20220924",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220924"
+          }
+        },
+        {
+          "name": "syndicate",
+          "str": ">= 20220904",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220904"
+          }
+        },
+        {
+          "name": "tkrzw",
+          "str": ">= 20220910",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220910"
+          }
+        }
+      ],
+      "bin": [
+        "eris/eriscmd"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "cpp",
+      "ref": "HEAD",
+      "rev": "4c6bc1a870695f52f685f00f383854c604a839a6"
+    },
+    "refs/heads/base32check1": {
+      "name": "eris",
+      "version": "0.8.0",
+      "author": "Emery Hemingway",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/base32check1",
+      "rev": "1a51f59124447b1418295f567e3d2bd8736ac4a4"
+    },
+    "refs/heads/bloom": {
+      "name": "eris",
+      "version": "0.1.0",
+      "author": "Emery Hemingway",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/bloom",
+      "rev": "a63756f9a6f9f63ce82f219212d3331302180693"
+    },
+    "refs/heads/debug": {
+      "name": "eris",
+      "version": "0.3.0",
+      "author": "Emery Hemingway",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        },
+        {
+          "name": "taps",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "lmdb",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/debug",
+      "rev": "7c67a4bf8a4fac2fbc75b7992db6ef90d6065d31"
+    },
+    "refs/heads/filters": {
+      "name": "eris",
+      "version": "0.6.0",
+      "author": "Emery Hemingway",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/filters",
+      "rev": "4dd54533932b8002d7d6213c83178fb075ad74cd"
+    },
+    "refs/heads/network": {
+      "name": "eris",
+      "version": "0.1.0",
+      "author": "Emery Hemingway",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/network",
+      "rev": "e991f24b24df8f35c628fcd2849bacad6097cee7"
+    },
+    "refs/heads/syndicate": {
+      "name": "eris",
+      "version": "0.4.0",
+      "author": "Emery Hemingway",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        },
+        {
+          "name": "syndicate",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "taps",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "tkrzw",
+          "str": ">= 0.1.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "cpp",
+      "ref": "refs/heads/syndicate",
+      "rev": "deb59ede710bffa0c645566a1f31733f605c54ac"
+    },
+    "refs/heads/trees": {
+      "name": "eris",
+      "version": "0.4.0",
+      "author": "Emery Hemingway",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        },
+        {
+          "name": "taps",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "tkrzw",
+          "str": ">= 0.1.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "cpp",
+      "ref": "refs/heads/trees",
+      "rev": "3013b7f5463165e0726fa9f11b4e330dd64d3fa9"
+    },
+    "refs/heads/trunk": {
+      "name": "eris",
+      "version": "20221006",
+      "author": "Endo Renberg",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        },
+        {
+          "name": "https://codeberg.org/eris/nim-coap.git",
+          "str": ">= 20220831",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220831"
+          }
+        },
+        {
+          "name": "cbor",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "coap",
+          "str": ">= 20220924",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220924"
+          }
+        },
+        {
+          "name": "syndicate",
+          "str": ">= 20220904",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220904"
+          }
+        },
+        {
+          "name": "tkrzw",
+          "str": ">= 20220910",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220910"
+          }
+        }
+      ],
+      "bin": [
+        "eris/eriscmd"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "cpp",
+      "ref": "refs/heads/trunk",
+      "rev": "4c6bc1a870695f52f685f00f383854c604a839a6"
+    },
+    "refs/remotes/blackbox/trunk": {
+      "rev": "911cb393781b4ccf4ef06f3566978896e3390630",
+      "ref": "refs/remotes/blackbox/trunk"
+    },
+    "refs/remotes/origin/bloom": {
+      "rev": "a63756f9a6f9f63ce82f219212d3331302180693",
+      "ref": "refs/remotes/origin/bloom"
+    },
+    "refs/remotes/origin/debug": {
+      "rev": "7c67a4bf8a4fac2fbc75b7992db6ef90d6065d31",
+      "ref": "refs/remotes/origin/debug"
+    },
+    "refs/remotes/origin/filters": {
+      "rev": "4dd54533932b8002d7d6213c83178fb075ad74cd",
+      "ref": "refs/remotes/origin/filters"
+    },
+    "refs/remotes/origin/network": {
+      "rev": "e991f24b24df8f35c628fcd2849bacad6097cee7",
+      "ref": "refs/remotes/origin/network"
+    },
+    "refs/remotes/origin/syndicate": {
+      "rev": "deb59ede710bffa0c645566a1f31733f605c54ac",
+      "ref": "refs/remotes/origin/syndicate"
+    },
+    "refs/remotes/origin/trees": {
+      "rev": "3013b7f5463165e0726fa9f11b4e330dd64d3fa9",
+      "ref": "refs/remotes/origin/trees"
+    },
+    "refs/remotes/origin/trunk": {
+      "rev": "2311184f9ff890c538921a5e1ddef73a9c29713e",
+      "ref": "refs/remotes/origin/trunk"
+    },
+    "refs/tags/0.1.0": {
+      "name": "eris_utils",
+      "version": "0.1.0",
+      "author": "Emery Hemingway",
+      "desc": "Utilities for working with the Encoding for Robust Immutable Storage (ERIS)",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        },
+        {
+          "name": "eris",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "erissum"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.0",
+      "rev": "175997896a5e83e0433d65dd8a255f64e92552eb"
+    },
+    "refs/tags/0.1.1": {
+      "name": "eris_utils",
+      "version": "0.1.1",
+      "author": "Emery Hemingway",
+      "desc": "Utilities for working with the Encoding for Robust Immutable Storage (ERIS)",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        },
+        {
+          "name": "eris",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        }
+      ],
+      "bin": [
+        "erissum"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.1",
+      "rev": "dc42e1e22b46c8196132d04a7ff2239c63f6193b"
+    },
+    "refs/tags/0.1.2": {
+      "name": "eris_utils",
+      "version": "0.1.2",
+      "author": "Emery Hemingway",
+      "desc": "Utilities for working with the Encoding for Robust Immutable Storage (ERIS)",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        },
+        {
+          "name": "eris",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        }
+      ],
+      "bin": [
+        "erissum"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.2",
+      "rev": "37f1503a4a75286e3799a48ccffaf43362cbca8b"
+    },
+    "refs/tags/0.1.3": {
+      "name": "eris_utils",
+      "version": "0.1.3",
+      "author": "Emery Hemingway",
+      "desc": "Utilities for working with the Encoding for Robust Immutable Storage (ERIS)",
+      "license": "GPL-3.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        },
+        {
+          "name": "eris",
+          "str": ">= 0.3.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.0"
+          }
+        }
+      ],
+      "bin": [
+        "erisget",
+        "erisserver",
+        "erissum"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.3",
+      "rev": "cc782d2735ed455265b82e238d15b7aa2e801bc2"
+    },
+    "refs/tags/0.2.0": {
+      "name": "eris_utils",
+      "version": "0.2.0",
+      "author": "Emery Hemingway",
+      "desc": "Utilities for working with the Encoding for Robust Immutable Storage (ERIS)",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        },
+        {
+          "name": "eris",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        },
+        {
+          "name": "tkrzw",
+          "str": ">= 0.1.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.2"
+          }
+        }
+      ],
+      "bin": [
+        "erisdb",
+        "erishttpd",
+        "erissum"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "cpp",
+      "ref": "refs/tags/0.2.0",
+      "rev": "990f53ed9222c95124364d9152d9cebc1baf9abe"
+    },
+    "refs/tags/0.3.0": {
+      "name": "eris",
+      "version": "0.6.0",
+      "author": "Emery Hemingway",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.3.0",
+      "rev": "eec112c9028a765724894c74821802f8c8a2f77b"
+    },
+    "refs/tags/0.4.0": {
+      "name": "eris",
+      "version": "0.4.0",
+      "author": "Emery Hemingway",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.4.0",
+      "rev": "835563c1b5496a050c533b8d37cd161a74d8412c"
+    },
+    "refs/tags/0.4.1": {
+      "name": "eris",
+      "version": "0.4.1",
+      "author": "Emery Hemingway",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.4.1",
+      "rev": "ac0e5e161892608d0a7804f60d4cba6169ef4b0c"
+    },
+    "refs/tags/0.4.2": {
+      "name": "eris",
+      "version": "0.4.2",
+      "author": "Emery Hemingway",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.4.2",
+      "rev": "63d28bdcdf509d2e8a733299a3ddcb2ae4e495c7"
+    },
+    "refs/tags/20220518": {
+      "name": "eris_tkrzw",
+      "version": "0.4.1",
+      "author": "Emery Hemingway",
+      "desc": "Tkrzw database backend for ERIS",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "eris",
+          "str": ">= 0.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.0"
+          }
+        },
+        {
+          "name": "tkrzw",
+          "str": ">= 0.1.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "cpp",
+      "ref": "refs/tags/20220518",
+      "rev": "2959cd9f1b37b23e5204de73dc9bae43f5168ddc"
+    },
+    "refs/tags/20220615": {
+      "name": "eris",
+      "version": "0.4.3",
+      "author": "Emery Hemingway",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/20220615",
+      "rev": "dce47c1fe104167293f5c627d83b4716ead7a85c"
+    },
+    "refs/tags/20220824": {
+      "name": "eris",
+      "version": "0.4.3",
+      "author": "Endo Renberg",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/20220824",
+      "rev": "6857fdd6362a0b805409451acbdcd069ac4af95d"
+    },
+    "refs/tags/20220825": {
+      "name": "eris",
+      "version": "0.4.3",
+      "author": "Endo Renberg",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/20220825",
+      "rev": "6f840db60d2064d2df63846d24ed4726cb49816b"
+    },
+    "refs/tags/20220831": {
+      "name": "eris",
+      "version": "20220831",
+      "author": "Endo Renberg",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        },
+        {
+          "name": "cbor",
+          "str": ">= 20220831",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220831"
+          }
+        },
+        {
+          "name": "coap",
+          "str": ">= 20220827",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220827"
+          }
+        },
+        {
+          "name": "syndicate",
+          "str": ">= 20220830",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220830"
+          }
+        },
+        {
+          "name": "tkrzw",
+          "str": ">= 20220827",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220827"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "cpp",
+      "ref": "refs/tags/20220831",
+      "rev": "f73f99adc5eb502d2d441e013d9417554dc339ad"
+    },
+    "refs/tags/20220902": {
+      "name": "eris",
+      "version": "20220902",
+      "author": "Endo Renberg",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        },
+        {
+          "name": "cbor",
+          "str": ">= 20220831",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220831"
+          }
+        },
+        {
+          "name": "coap",
+          "str": ">= 20220827",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220827"
+          }
+        },
+        {
+          "name": "syndicate",
+          "str": ">= 20220830",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220830"
+          }
+        },
+        {
+          "name": "tkrzw",
+          "str": ">= 20220827",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220827"
+          }
+        }
+      ],
+      "bin": [
+        "eris/eriscmd"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "cpp",
+      "ref": "refs/tags/20220902",
+      "rev": "290da6ed1abcb538fe62b100507b3cf4efbf6bdf"
+    },
+    "refs/tags/20220904": {
+      "name": "eris",
+      "version": "20220904",
+      "author": "Endo Renberg",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        },
+        {
+          "name": "cbor",
+          "str": ">= 20220831",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220831"
+          }
+        },
+        {
+          "name": "coap",
+          "str": ">= 20220827",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220827"
+          }
+        },
+        {
+          "name": "syndicate",
+          "str": ">= 20220904",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220904"
+          }
+        },
+        {
+          "name": "tkrzw",
+          "str": ">= 20220827",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220827"
+          }
+        }
+      ],
+      "bin": [
+        "eris/eriscmd"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "cpp",
+      "ref": "refs/tags/20220904",
+      "rev": "f5dd9f48a6f2a6e173aac45d9f3fdfc7d6bcc3b1"
+    },
+    "refs/tags/20220912": {
+      "name": "eris",
+      "version": "20220912",
+      "author": "Endo Renberg",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        },
+        {
+          "name": "cbor",
+          "str": ">= 20220831",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220831"
+          }
+        },
+        {
+          "name": "coap",
+          "str": ">= 20220827",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220827"
+          }
+        },
+        {
+          "name": "syndicate",
+          "str": ">= 20220904",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220904"
+          }
+        },
+        {
+          "name": "tkrzw",
+          "str": ">= 20220910",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220910"
+          }
+        }
+      ],
+      "bin": [
+        "eris/eriscmd"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "cpp",
+      "ref": "refs/tags/20220912",
+      "rev": "ad4dd9ea12b570f9c4dc6283afb5baf253521b20"
+    },
+    "refs/tags/20220913": {
+      "name": "eris",
+      "version": "20220913",
+      "author": "Endo Renberg",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        },
+        {
+          "name": "cbor",
+          "str": ">= 20220831",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220831"
+          }
+        },
+        {
+          "name": "coap",
+          "str": ">= 20220913",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220913"
+          }
+        },
+        {
+          "name": "syndicate",
+          "str": ">= 20220904",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220904"
+          }
+        },
+        {
+          "name": "tkrzw",
+          "str": ">= 20220910",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220910"
+          }
+        }
+      ],
+      "bin": [
+        "eris/eriscmd"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "cpp",
+      "ref": "refs/tags/20220913",
+      "rev": "05cf521cbe4f056ca683684822c1612bb85fe6cd"
+    },
+    "refs/tags/20220921": {
+      "name": "eris",
+      "version": "20220921",
+      "author": "Endo Renberg",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        },
+        {
+          "name": "cbor",
+          "str": ">= 20220831",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220831"
+          }
+        },
+        {
+          "name": "coap",
+          "str": ">= 20220921",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220921"
+          }
+        },
+        {
+          "name": "syndicate",
+          "str": ">= 20220904",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220904"
+          }
+        },
+        {
+          "name": "tkrzw",
+          "str": ">= 20220910",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220910"
+          }
+        }
+      ],
+      "bin": [
+        "eris/eriscmd"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "cpp",
+      "ref": "refs/tags/20220921",
+      "rev": "1675b17be450c0211ccff84356eb0634280496b2"
+    },
+    "refs/tags/20220922": {
+      "name": "eris",
+      "version": "20220922",
+      "author": "Endo Renberg",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        },
+        {
+          "name": "cbor",
+          "str": ">= 20220831",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220831"
+          }
+        },
+        {
+          "name": "coap",
+          "str": ">= 20220921",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220921"
+          }
+        },
+        {
+          "name": "syndicate",
+          "str": ">= 20220904",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220904"
+          }
+        },
+        {
+          "name": "tkrzw",
+          "str": ">= 20220910",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220910"
+          }
+        }
+      ],
+      "bin": [
+        "eris/eriscmd"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "cpp",
+      "ref": "refs/tags/20220922",
+      "rev": "fc3ae3431bedaf2e943361f92917753462fb61e9"
+    },
+    "refs/tags/20220924": {
+      "name": "eris",
+      "version": "20220922",
+      "author": "Endo Renberg",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        },
+        {
+          "name": "cbor",
+          "str": ">= 20220831",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220831"
+          }
+        },
+        {
+          "name": "coap",
+          "str": ">= 20220924",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220924"
+          }
+        },
+        {
+          "name": "syndicate",
+          "str": ">= 20220904",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220904"
+          }
+        },
+        {
+          "name": "tkrzw",
+          "str": ">= 20220910",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220910"
+          }
+        }
+      ],
+      "bin": [
+        "eris/eriscmd"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "cpp",
+      "ref": "refs/tags/20220924",
+      "rev": "14f75a1331196c43c732c79a1c87ef36e46a8c6f"
+    },
+    "refs/tags/20221005": {
+      "name": "eris",
+      "version": "20221005",
+      "author": "Endo Renberg",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        },
+        {
+          "name": "cbor",
+          "str": ">= 20220831",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220831"
+          }
+        },
+        {
+          "name": "coap",
+          "str": ">= 20220924",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220924"
+          }
+        },
+        {
+          "name": "syndicate",
+          "str": ">= 20220904",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220904"
+          }
+        },
+        {
+          "name": "tkrzw",
+          "str": ">= 20220910",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220910"
+          }
+        }
+      ],
+      "bin": [
+        "eris/eriscmd"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "cpp",
+      "ref": "refs/tags/20221005",
+      "rev": "82c1c33e7a0fa8422e0434a49a090e1123d7689d"
+    },
+    "refs/tags/20221006": {
+      "name": "eris",
+      "version": "20221006",
+      "author": "Endo Renberg",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        },
+        {
+          "name": "https://codeberg.org/eris/nim-coap.git",
+          "str": ">= 20220831",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220831"
+          }
+        },
+        {
+          "name": "cbor",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "coap",
+          "str": ">= 20220924",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220924"
+          }
+        },
+        {
+          "name": "syndicate",
+          "str": ">= 20220904",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220904"
+          }
+        },
+        {
+          "name": "tkrzw",
+          "str": ">= 20220910",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220910"
+          }
+        }
+      ],
+      "bin": [
+        "eris/eriscmd"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "cpp",
+      "ref": "refs/tags/20221006",
+      "rev": "66587c13dc1589d3d5b7b4068449cb97b03ebc3f"
+    },
+    "refs/tags/nim-eris-0.4.0": {
+      "name": "eris",
+      "version": "0.4.0",
+      "author": "Emery Hemingway",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/nim-eris-0.4.0",
+      "rev": "835563c1b5496a050c533b8d37cd161a74d8412c"
+    },
+    "refs/tags/nim-eris-0.4.1": {
+      "name": "eris",
+      "version": "0.4.1",
+      "author": "Emery Hemingway",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/nim-eris-0.4.1",
+      "rev": "ac0e5e161892608d0a7804f60d4cba6169ef4b0c"
+    },
+    "refs/tags/nim-eris-0.4.2": {
+      "name": "eris",
+      "version": "0.4.2",
+      "author": "Emery Hemingway",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/nim-eris-0.4.2",
+      "rev": "63d28bdcdf509d2e8a733299a3ddcb2ae4e495c7"
+    }
+  }
+}
