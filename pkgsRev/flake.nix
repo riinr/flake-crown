@@ -19,7 +19,7 @@
               if pkgUrl == ""
               then nimPkg
               else if builtins.pathExists ./${pkgPath}/meta.json
-                then fromJSON ./${pkgUrl}/meta.json
+                then fromJSON ./${pkgPath}/meta.json
                 else nimPkg;
               };
       refToName = builtins.replaceStrings ["refs/" "/" " " "."] ["" "_" "_" "_"];

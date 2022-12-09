@@ -18,5 +18,5 @@
       meta = nimrevs.lib.meta.${name};
       refs = pkg name;
     };
-  in pkgs "maze";
+  in pkgs "bearssl";
 }
