@@ -7,7 +7,7 @@ List of Nim [Packages](https://github.com/nim-lang/packages/blob/master/packages
 
 ```nix
 {
-  inputs.nimrevs.url = "github:riinr/flake-crown?dir=pkgsRev";
+  inputs.nimrevs.url = "github:riinr/flake-crown/?dir=pkgsRev";
   inputs.nixpkgs.url = "github:NixOS/nixpkgs";
   inputs.nfl.url     = "github:riinr/nim-flakes-lib";
   inputs.nfl.inputs.nixpkgs.follows = "nixpkgs";

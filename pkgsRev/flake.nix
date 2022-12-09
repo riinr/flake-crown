@@ -21,20 +21,21 @@
               else if builtins.pathExists ./${pkgPath}/meta.json
                 then fromJSON ./${pkgUrl}/meta.json
                 else nimPkg;
-           };
+              };
+      refToName = ref: builtins.replaceStrings ["refs/" "/" " " "."] ["" "_" "_" "_"]
       srcOf = name: ref: {
         inherit name;
         value = {
-          name = "${name}-src";
-          ref  = nimMetas.${name}.refs.HEAD.ref;
-          rev  = nimMetas.${name}.refs.HEAD.rev;
+          name = "${name}-${refToName ref}-src";
+          ref  = nimMetas.${name}.refs.${ref}.ref;
+          rev  = nimMetas.${name}.refs.${ref}.rev;
           url  = nimMetas.${name}.url;
         };
       };
       heads = name: srcOf name "HEAD";
-    in builtins.trace (builtins.attrNames nimMetas.sdl2.refs) {
-      lib.meta = nimMetas;
-      lib.src  = pkgMames: builtins.listToAttrs (map srcOf pkgMames);
-      lib.head = pkgMames: builtins.listToAttrs (map heads pkgMames);
+    in {
+      lib.head  = pkgMames: builtins.listToAttrs (map heads pkgMames);
+      lib.meta  = nimMetas;
+      lib.srcOf = srcOf;
     };
 }
