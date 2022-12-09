@@ -22,20 +22,19 @@
                 then fromJSON ./${pkgUrl}/meta.json
                 else nimPkg;
               };
-      refToName = ref: builtins.replaceStrings ["refs/" "/" " " "."] ["" "_" "_" "_"]
-      srcOf = name: ref: {
-        inherit name;
-        value = {
+      refToName = ref: builtins.replaceStrings ["refs/" "/" " " "."] ["" "_" "_" "_"];
+      srcOf = name: ref:
+      {
           name = "${name}-${refToName ref}-src";
           ref  = nimMetas.${name}.refs.${ref}.ref;
           rev  = nimMetas.${name}.refs.${ref}.rev;
           url  = nimMetas.${name}.url;
-        };
       };
-      heads = name: srcOf name "HEAD";
+      heads = name: { inherit name; value = srcOf name "HEAD"; };
+      srcs  = name: { inherit name; value = srcOf name; };
     in {
-      lib.head  = pkgMames: builtins.listToAttrs (map heads pkgMames);
-      lib.meta  = nimMetas;
-      lib.srcOf = srcOf;
+      lib.head = pkgMames: builtins.listToAttrs (map heads pkgMames);
+      lib.meta = nimMetas;
+      lib.srcs = pkgNames: builtins.listToAttrs (map srcs  pkgNames);
     };
 }
