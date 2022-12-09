@@ -6,17 +6,40 @@
 
   outputs = { self, nixpkgs, nfl, nimrevs, ...}@deps:
   let 
-    toPkg = name: ref: val: nfl.lib.mkRefOutput {
+    refOut = name: ref: val: nfl.lib.mkRefOutput {
       inherit self nixpkgs;
       deps = {};
       meta = val;
       src  = nimrevs.lib.fetchGit name ref;
     };
-    pkg   = name: builtins.mapAttrs (toPkg name) nimrevs.lib.meta.${name}.refs;
-    pkgs  = name: nfl.lib.mkProjectOutput {
+    refs   = name: builtins.mapAttrs (refOut name) nimrevs.lib.meta.${name}.refs;
+    refsIn = name:
+    let 
+      refes     = refs name;
+      refsNames = builtins.attrNames refes;
+      lowerName = nixpkgs.lib.toLower name;
+      refName   = builtins.replaceStrings 
+        ["refs/" "heads/" "tags/v" "tags/" "."]
+        [""      ""       ""       ""      "_"];
+      refs'     = map (ref: {
+        name  = "${lowerName}-${refName ref}";
+        value = refes.${ref};
+      }) refsNames;
+    in builtins.listToAttrs refs';
+    prjOut = name: nfl.lib.mkProjectOutput {
       inherit self nixpkgs;
       meta = nimrevs.lib.meta.${name};
-      refs = pkg name;
+      refs = refsIn name;
     };
-  in pkgs "bearssl";
+    cligen = prjOut "cligen";
+    bear   = prjOut "bearssl";
+  in nfl.lib.mkRefOutput {
+    inherit self nixpkgs;
+    deps = { inherit cligen bear; };
+    src  = ./.;
+    meta.ref     = "master";
+    meta.version = "0.1.0";
+    meta.name    = "cligen-example";
+    meta.desc    = "Example of cligen";
+  };
 }
