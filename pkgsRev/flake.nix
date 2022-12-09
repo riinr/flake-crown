@@ -37,5 +37,6 @@
       lib.meta = nimMetas;
       lib.srcs = pkgNames: builtins.listToAttrs (map srcs  pkgNames);
       lib.src  = srcOf;
+      lib.fetchGit = name: ref: builtins.fetchGit (srcOf name ref);
     };
 }

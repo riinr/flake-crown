@@ -11,7 +11,7 @@
     toPkg = name: ref: val: lib.mkRefOutput {
       inherit self nixpkgs;
       deps = {};
-      src  = builtins.fetchGit (nimrevs.lib.src name ref);
+      src  = nimrevs.lib.fetchGit name ref;
       meta = val;
     };
     pkg   = name: builtins.mapAttrs (toPkg name) nimrevs.lib.meta.${name}.refs;
