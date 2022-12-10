@@ -15,7 +15,7 @@
   "refs": {
     "HEAD": {
       "name": "c2nim",
-      "version": "0.9.18",
+      "version": "0.9.19",
       "author": "Andreas Rumpf",
       "desc": "c2nim is a tool to translate Ansi C code to Nim.",
       "license": "MIT",
@@ -49,7 +49,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "3dfd742972c1caa73bdb73527af1801b3cb6f5d4"
+      "rev": "5753fa7658ed50432ea6c2df84f0a45e36bcb2ea"
     },
     "refs/heads/BigEpsilon-typenamedef": {
       "name": "c2nim",
@@ -172,7 +172,7 @@
     },
     "refs/heads/master": {
       "name": "c2nim",
-      "version": "0.9.18",
+      "version": "0.9.19",
       "author": "Andreas Rumpf",
       "desc": "c2nim is a tool to translate Ansi C code to Nim.",
       "license": "MIT",
@@ -206,7 +206,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "3dfd742972c1caa73bdb73527af1801b3cb6f5d4"
+      "rev": "5753fa7658ed50432ea6c2df84f0a45e36bcb2ea"
     },
     "refs/tags/0.9.15": {
       "name": "c2nim",
@@ -359,6 +359,44 @@
       "backend": "c",
       "ref": "refs/tags/0.9.18",
       "rev": "a20ccc7bc50d51e82f4e7dc25aa9506305051f9c"
+    },
+    "refs/tags/0.9.19": {
+      "name": "c2nim",
+      "version": "0.9.19",
+      "author": "Andreas Rumpf",
+      "desc": "c2nim is a tool to translate Ansi C code to Nim.",
+      "license": "MIT",
+      "skipDirs": [
+        "doc"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim",
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "c2nim.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        }
+      ],
+      "bin": [
+        "c2nim"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.9.19",
+      "rev": "5753fa7658ed50432ea6c2df84f0a45e36bcb2ea"
     }
   }
 }

@@ -87,6 +87,44 @@
       "ref": "refs/heads/coro",
       "rev": "87a4849fdbd7d18d7f4e947be12c1453f59ddb7e"
     },
+    "refs/heads/destructors": {
+      "name": "cps",
+      "version": "0.7.0",
+      "author": "disruptek",
+      "desc": "continuation-passing style",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "cps.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "https://github.com/disruptek/balls",
+          "str": ">= 3.9.0 & < 4.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "3.9.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "4.0.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/destructors",
+      "rev": "515cf0a8fa64593996ac67d912b618b6f9e555e7"
+    },
     "refs/heads/env-childless": {
       "name": "cps",
       "version": "0.2.2",

@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "mummy",
-      "version": "0.1.1",
+      "version": "0.2.0",
       "author": "Ryan Oldenburg",
       "desc": "Multithreaded HTTP + WebSocket server",
       "license": "MIT",
@@ -47,7 +47,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "ef220962e143e0b9b37ad6f83cb7166bc129748c"
+      "rev": "316362566a29a90f8ccdad9a641a00db3ce69b37"
     },
     "refs/heads/dev": {
       "name": "mummy",
@@ -199,7 +199,7 @@
     },
     "refs/heads/master": {
       "name": "mummy",
-      "version": "0.1.1",
+      "version": "0.2.0",
       "author": "Ryan Oldenburg",
       "desc": "Multithreaded HTTP + WebSocket server",
       "license": "MIT",
@@ -232,7 +232,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "ef220962e143e0b9b37ad6f83cb7166bc129748c"
+      "rev": "316362566a29a90f8ccdad9a641a00db3ce69b37"
     },
     "refs/heads/mummy": {
       "name": "mummy",
@@ -306,7 +306,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/ryan",
-      "rev": "1bccc5943476a35611feb93ee80b686ac2a55f9c"
+      "rev": "b1353d94a80489060221ed3fc5104a632ade42c5"
     },
     "refs/tags/0.1.0": {
       "name": "mummy",
@@ -381,6 +381,43 @@
       "backend": "c",
       "ref": "refs/tags/0.1.1",
       "rev": "c2c49cad73f5ab3147879f97fba4143126d21525"
+    },
+    "refs/tags/0.2.0": {
+      "name": "mummy",
+      "version": "0.2.0",
+      "author": "Ryan Oldenburg",
+      "desc": "Multithreaded HTTP + WebSocket server",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.8"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.2.0",
+      "rev": "4db385a2a6ef46ac4f5dca724d0525fc312b2169"
     }
   }
 }
