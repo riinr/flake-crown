@@ -4,6 +4,15 @@ proc isNotEmptyStr(x: string): bool =
 proc isNotPull(x: string): bool =
   not x.contains "refs/pull"
 
+proc isNotBug(x: string): bool =
+  not x.contains "refs/bugs"
+
+proc isNotMerge(x: string): bool =
+  not x.contains "refs/merge-requests"
+
+proc isNotPipeline(x: string): bool =
+  not x.contains "refs/pipelines"
+
 proc isNotFail(x: string): bool =
   not x.contains "printf quit=1"
 
@@ -63,6 +72,9 @@ proc getRefs(url: JsonNode): seq[JsonNode] =
     .filter(isNotEmptyStr)
     .filter(isNotFail)
     .filter(isNotPull)
+    .filter(isNotBug)
+    .filter(isNotMerge)
+    .filter(isNotPipeline)
     .filter(isRevRef)
     .map(refLintToJObject)
 
@@ -147,3 +159,125 @@ discard pkg["url"]
 
 discard  fmt"mkdir -p {metaDir}".execCmdEx
 fmt"{metaDir}/meta.json".writeFile pkg.pretty
+
+
+proc semVerToInt(semver: string): string =
+  let 
+    parts = semver.split(".")
+    major =
+      if parts.len > 0: parts[0].align(3, '0')
+      else: "000"
+    minor =
+      if parts.len > 1: parts[1].align(3, '0')
+      else: "000"
+    patch =
+      case parts.len
+        of 0: "001"
+        of 1: "000"
+        of 2: "000"
+        else: parts[2].align(3, '0')
+
+  (major[^3 .. ^1] &
+   minor[^3 .. ^1] &
+   patch[^3 .. ^1]).replace("000000000", "1")
+
+
+proc cudfDep(refDep: JsonNode): string =
+  var verKind = refDep["ver"]["kind"].getStr
+  let depName = refDep["name"]
+    .getStr
+    .replace("_", "")
+    .toLower
+    .strip(chars = AllChars - IdentChars)
+
+  if verKind == "verAny":
+    return depName & " >= 1"
+
+  if verKind == "verSpecial":
+    # TODO: this isn't correct
+    return depName & " >= 1"
+
+  if verKind == "verTilde" or verKind == "verCaret":
+    # TODO: this isn't correct
+    verKind = "verEqLater"
+
+  if verKind == "verIntersect":
+    return cudfDep(%* {
+      "name": %* depName,
+      "ver": {
+        "kind": refDep["ver"]["verILeft"]["kind"],
+        "ver":  refDep["ver"]["verILeft"]["ver"]
+      }
+    }) & ", " & cudfDep(%* {
+      "name": %* depName,
+      "ver": {
+        "kind": refDep["ver"]["verIRight"]["kind"],
+        "ver":  refDep["ver"]["verIRight"]["ver"]
+      }
+    })
+
+  let verNum = refDep["ver"]["ver"].getStr
+  let verOp  =
+    case verKind
+      of "verLater": ">"
+      of "verEarlier": "<"
+      of "verEqLater": ">="
+      of "verEqEarlier": "<="
+      else: "="
+
+  return fmt"{depName} {verOp} {verNum.semVerToInt}"
+
+
+proc cudfDeps(refMeta: JsonNode): string =
+  if not refMeta.hasKey("requires"):
+    return ""
+
+  let required = refMeta["requires"]
+    .items
+    .toSeq
+    .filterIt(
+      it.hasKey("name") and
+      it["name"].getStr.strip(chars = AllChars - IdentChars) notin ["nim", "nimrod"] and
+      not it["name"].getStr.contains(":"))
+  if required.len == 0:
+    return ""
+
+  let deps = required.map(cudfDep).join(", ")
+  return '\n' & fmt"depends:  {deps}"
+
+
+proc cudf(pkgMeta: JsonNode): string =
+  result = ""
+  for (refNam, refMeta) in pkgMeta["refs"].pairs:
+    if refNam.contains("refs/tag") and refMeta.hasKey("version"):
+      let version = refMeta["version"].getStr
+      let pkgName = refMeta["name"]
+        .getStr
+        .replace("_", "")
+        .toLower
+        .strip(chars = AllChars - IdentChars)
+      result.add fmt"""
+package:  {pkgName}
+version:  {version.semVerToInt}{refMeta.cudfDeps}
+
+
+"""
+  if result == "" and pkgMeta["refs"].hasKey("HEAD") and pkgMeta["refs"]["HEAD"].hasKey("version"):
+    let refMeta = pkgMeta["refs"]["HEAD"]
+    let version = refMeta["version"].getStr
+    let pkgName = refMeta["name"]
+      .getStr
+      .replace("_", "")
+      .toLower
+      .strip(chars = AllChars - IdentChars)
+    result.add fmt"""
+package:  {pkgName}
+version:  {version.semVerToInt}{refMeta.cudfDeps}
+
+
+"""
+
+fmt"{metaDir}/meta.cudf".writeFile pkg.cudf
+
+
+
