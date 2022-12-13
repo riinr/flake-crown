@@ -26,7 +26,7 @@
   "refs": {
     "HEAD": {
       "name": "pixie",
-      "version": "5.0.1",
+      "version": "5.0.2",
       "author": "Andre von Houck and Ryan Oldenburg",
       "desc": "Full-featured 2d graphics library for Nim.",
       "license": "MIT",
@@ -99,7 +99,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "64b5f0a31637d054bf67982f3c5731dcbae57650"
+      "rev": "a911e9d49883f05504cfb294e181bd6810a5c4ed"
     },
     "refs/heads/dev": {
       "name": "pixie",
@@ -407,11 +407,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/guzba",
-      "rev": "f9f2fe6e567c889cd01cb8f138e78412bd00a2c1"
+      "rev": "8986626b398e58882745d909cd76151a967c2798"
     },
     "refs/heads/master": {
       "name": "pixie",
-      "version": "5.0.1",
+      "version": "5.0.2",
       "author": "Andre von Houck and Ryan Oldenburg",
       "desc": "Full-featured 2d graphics library for Nim.",
       "license": "MIT",
@@ -484,7 +484,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "64b5f0a31637d054bf67982f3c5731dcbae57650"
+      "rev": "a911e9d49883f05504cfb294e181bd6810a5c4ed"
     },
     "refs/heads/osfont": {
       "name": "pixie",
@@ -5073,6 +5073,83 @@
       "backend": "c",
       "ref": "refs/tags/5.0.1",
       "rev": "d88da02bd8dadcda582ce4f09095a7f22e9575aa"
+    },
+    "refs/tags/5.0.2": {
+      "name": "pixie",
+      "version": "5.0.2",
+      "author": "Andre von Houck and Ryan Oldenburg",
+      "desc": "Full-featured 2d graphics library for Nim.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "vmath",
+          "str": ">= 1.1.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.4"
+          }
+        },
+        {
+          "name": "chroma",
+          "str": ">= 0.2.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.6"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.3"
+          }
+        },
+        {
+          "name": "flatty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "nimsimd",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "bumpy",
+          "str": ">= 1.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/5.0.2",
+      "rev": "a911e9d49883f05504cfb294e181bd6810a5c4ed"
     }
   }
 }

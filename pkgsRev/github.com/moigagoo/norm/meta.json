@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "norm",
-      "version": "2.6.0",
+      "version": "2.6.1",
       "author": "Constantine Molchanov",
       "desc": "Nim ORM for SQLite and PostgreSQL.",
       "license": "MIT",
@@ -49,11 +49,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "767e04c877f58fcb2894f5d20322c606b6559794"
+      "rev": "c779d9b115d8b38bd7df8483643919931092a351"
     },
     "refs/heads/develop": {
       "name": "norm",
-      "version": "2.6.0",
+      "version": "2.6.1",
       "author": "Constantine Molchanov",
       "desc": "Nim ORM for SQLite and PostgreSQL.",
       "license": "MIT",
@@ -89,7 +89,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/develop",
-      "rev": "767e04c877f58fcb2894f5d20322c606b6559794"
+      "rev": "c779d9b115d8b38bd7df8483643919931092a351"
     },
     "refs/heads/feature/json": {
       "name": "norm",
@@ -133,7 +133,7 @@
     },
     "refs/heads/master": {
       "name": "norm",
-      "version": "2.6.0",
+      "version": "2.6.1",
       "author": "Constantine Molchanov",
       "desc": "Nim ORM for SQLite and PostgreSQL.",
       "license": "MIT",
@@ -169,7 +169,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "38e97ae6dc23daed6cc9de7b2c9b2e2635779d1a"
+      "rev": "f8de3a194b76db765f5a1d0808717c8878fed57e"
     },
     "refs/tags/1.0.0": {
       "name": "norm",
@@ -2044,6 +2044,46 @@
       "backend": "c",
       "ref": "refs/tags/2.6.0",
       "rev": "c3dfdafcd50f26e3eb852d5a93bfa665f2b71d2b"
+    },
+    "refs/tags/2.6.1": {
+      "name": "norm",
+      "version": "2.6.1",
+      "author": "Constantine Molchanov",
+      "desc": "Nim ORM for SQLite and PostgreSQL.",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "htmldocs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "ndb",
+          "str": ">= 0.19.9",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.9"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.6.1",
+      "rev": "e918eda5c016bb47a5815807fdff6afab4dd25dc"
     }
   }
 }

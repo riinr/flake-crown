@@ -34,10 +34,17 @@
         },
         {
           "name": "https://github.com/disruptek/balls",
-          "str": ">= 3.0.0",
+          "str": ">= 3.0.0 & < 4.0.0",
           "ver": {
-            "kind": "verEqLater",
-            "ver": "3.0.0"
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "3.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "4.0.0"
+            }
           }
         }
       ],
@@ -46,7 +53,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "7406bffcfea9f1fefefee877de19b18d278bcd9e"
+      "rev": "4cdfe1def604dd6fab394cdd87789f8623cf576e"
     },
     "refs/heads/devel": {
       "name": "sigv4",
@@ -112,10 +119,17 @@
         },
         {
           "name": "https://github.com/disruptek/balls",
-          "str": ">= 3.0.0",
+          "str": ">= 3.0.0 & < 4.0.0",
           "ver": {
-            "kind": "verEqLater",
-            "ver": "3.0.0"
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "3.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "4.0.0"
+            }
           }
         }
       ],
@@ -124,7 +138,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "7406bffcfea9f1fefefee877de19b18d278bcd9e"
+      "rev": "4cdfe1def604dd6fab394cdd87789f8623cf576e"
     },
     "refs/heads/rmnc": {
       "name": "sigv4",

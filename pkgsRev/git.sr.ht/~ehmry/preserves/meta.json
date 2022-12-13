@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "preserves",
-      "version": "20221205",
+      "version": "20221208",
       "author": "Emery Hemingway",
       "desc": "data model and serialization format",
       "license": "Unlicense",
@@ -60,7 +60,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "cc0703c343a8ce298c633b90b80cd069ffa12d24"
+      "rev": "d5909e4df088d63e20967f2cbb301c93102414ac"
     },
     "refs/heads/blue": {
       "name": "preserves",
@@ -432,7 +432,7 @@
     },
     "refs/heads/trunk": {
       "name": "preserves",
-      "version": "20221205",
+      "version": "20221208",
       "author": "Emery Hemingway",
       "desc": "data model and serialization format",
       "license": "Unlicense",
@@ -478,7 +478,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/trunk",
-      "rev": "cc0703c343a8ce298c633b90b80cd069ffa12d24"
+      "rev": "d5909e4df088d63e20967f2cbb301c93102414ac"
     },
     "refs/heads/utilities": {
       "name": "preserves",
@@ -902,6 +902,56 @@
       "backend": "c",
       "ref": "refs/tags/20221102",
       "rev": "2d2df1f918f4e6ef5b6c51e139bf24bc28101634"
+    },
+    "refs/tags/20221208": {
+      "name": "preserves",
+      "version": "20221208",
+      "author": "Emery Hemingway",
+      "desc": "data model and serialization format",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "compiler",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "npeg",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "preserves/private/preserves_encode",
+        "preserves/preserves_schema_nim",
+        "preserves/schemac"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/20221208",
+      "rev": "d5909e4df088d63e20967f2cbb301c93102414ac"
     },
     "refs/tags/3.3.0": {
       "name": "preserves",
