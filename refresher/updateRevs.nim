@@ -1,3 +1,6 @@
+#compile-at-mkshell
+# update ../pkgsRev
+
 proc isNotEmptyStr(x: string): bool =
   x != ""
 
@@ -186,7 +189,12 @@ proc cudfDep(refDep: JsonNode): string =
   var verKind = refDep["ver"]["kind"].getStr
   let depName = refDep["name"]
     .getStr
-    .replace("_", "")
+    .replace("_"       , "")
+    .replace("~"       , "")
+    .replace("https://", "")
+    .replace(".com"    , "")
+    .replace("."       , "-")
+    .replace("/"       , "-")
     .toLower
     .strip(chars = AllChars - IdentChars)
 
@@ -194,14 +202,17 @@ proc cudfDep(refDep: JsonNode): string =
     return depName & " >= 1"
 
   if verKind == "verSpecial":
+    let spe = refDep["str"]
+      .getStr()
+      .replace("#", "-")
+      .replace("_", "")
+    if spe in @["-head", "-master", "-main", "-trunk"]:
+      return depName & " >= 1" # isn't correct but may work
     # TODO: this isn't correct
-    return depName & " >= 1"
+    # We don't add heads to CUDF :-/
+    return depName & spe & " = 1"
 
-  if verKind == "verTilde" or verKind == "verCaret":
-    # TODO: this isn't correct
-    verKind = "verEqLater"
-
-  if verKind == "verIntersect":
+  if verKind in @["verIntersect", "verTilde", "verCaret"]:
     return cudfDep(%* {
       "name": %* depName,
       "ver": {
@@ -237,8 +248,7 @@ proc cudfDeps(refMeta: JsonNode): string =
     .toSeq
     .filterIt(
       it.hasKey("name") and
-      it["name"].getStr.strip(chars = AllChars - IdentChars) notin ["nim", "nimrod"] and
-      not it["name"].getStr.contains(":"))
+      it["name"].getStr.strip(chars = AllChars - IdentChars) notin ["nim", "nimrod"])
   if required.len == 0:
     return ""
 
