@@ -191,6 +191,8 @@ proc cudfDep(refDep: JsonNode): string =
     .getStr
     .replace("_"       , "")
     .replace("~"       , "")
+    .replace("git://"  , "")
+    .replace("http://" , "")
     .replace("https://", "")
     .replace(".com"    , "")
     .replace("."       , "-")
