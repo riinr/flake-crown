@@ -6,7 +6,7 @@
   let
     pkgsOf = system: nixpkgs.legacyPackages.${system};
     pkgs   = pkgsOf "x86_64-linux";
-    deps   = nimrevs.lib.src { inherit pkgs; nimPkgs = ["cligen"];};
+    deps   = nimrevs.lib.srcs { inherit pkgs; nimPkgs = ["cligen"];};
   in
   {
     packages.x86_64-linux.default = pkgs.nimPackages.buildNimPackage {
