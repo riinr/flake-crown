@@ -52,7 +52,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "9a50033d5b09ec3263a53bd2bb4182a8a50e6f4d"
+      "rev": "91ce8c385d4ccbaab8048cf0393b01cd72282272"
     },
     "refs/heads/araq-adapt": {
       "name": "compiler",
@@ -1539,7 +1539,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/devel",
-      "rev": "9a50033d5b09ec3263a53bd2bb4182a8a50e6f4d"
+      "rev": "91ce8c385d4ccbaab8048cf0393b01cd72282272"
     },
     "refs/heads/fix-gensym": {
       "name": "compiler",
@@ -2297,6 +2297,50 @@
       "ref": "refs/heads/pr_16253",
       "rev": "d274b562565f652726fffbb280af165dee3b0c64"
     },
+    "refs/heads/pr_cast_sizes": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/pr_cast_sizes",
+      "rev": "e5cd512000912cc7092c3b2e20e278a99da32c36"
+    },
     "refs/heads/pr_discardable": {
       "name": "nim",
       "version": "1.6.6",
@@ -2820,50 +2864,6 @@
       "backend": "c",
       "ref": "refs/heads/pr_vtable",
       "rev": "f124ffe53934f107bc8d8ade2a9cb2bb4fb953bf"
-    },
-    "refs/heads/pr_warn_excpt": {
-      "name": "nim",
-      "version": "1.6.6",
-      "author": "Andreas Rumpf",
-      "desc": "Compiler package providing the compiler sources as a library.",
-      "license": "MIT",
-      "skipDirs": [
-        "build",
-        "changelogs",
-        "ci",
-        "csources_v1",
-        "drnim",
-        "nimdoc",
-        "testament"
-      ],
-      "skipFiles": [
-        "azure-pipelines.yml",
-        "build_all.bat",
-        "build_all.sh",
-        "build_nimble.bat",
-        "build_nimble.sh",
-        "changelog.md",
-        "koch.nim.cfg",
-        "nimblemeta.json",
-        "readme.md",
-        "security.md"
-      ],
-      "skipExt": [
-        "nim"
-      ],
-      "installDirs": [],
-      "installFiles": [],
-      "installExt": [],
-      "requires": [],
-      "bin": [
-        "compiler/nim",
-        "nimsuggest/nimsuggest"
-      ],
-      "binDir": "",
-      "srcDir": "",
-      "backend": "c",
-      "ref": "refs/heads/pr_warn_excpt",
-      "rev": "7159f22f8d590beebef84eb550f4c0a76e5cd457"
     },
     "refs/heads/revert-18353-araq-orc-booting": {
       "name": "compiler",
@@ -4719,6 +4719,19 @@
       "backend": "c",
       "ref": "refs/tags/v1.6.8",
       "rev": "f06dc8ee3baf8f64cce67a28a6e6e8a8cd9bf04b"
+    }
+  },
+  "cudf": {
+    "name": "nim",
+    "version": {
+      "10003": "refs/tags/v0.11.2",
+      "11003": "refs/tags/v0.12.0",
+      "13000": "refs/tags/v0.13.0",
+      "14000": "refs/tags/v0.14.0",
+      "14002": "refs/tags/v0.14.2",
+      "15000": "refs/tags/v0.15.0",
+      "15002": "refs/tags/v0.15.2",
+      "1006006": "refs/tags/v1.6.8"
     }
   }
 }

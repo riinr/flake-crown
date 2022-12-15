@@ -41,7 +41,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "7d3b449c44730804a3c9b4f4f3dbeca028212d05"
+      "rev": "1d249350087ee473cc50d54510a8c33318297602"
     },
     "refs/heads/fix-actions2": {
       "name": "unicodedb",
@@ -105,7 +105,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "7d3b449c44730804a3c9b4f4f3dbeca028212d05"
+      "rev": "1d249350087ee473cc50d54510a8c33318297602"
     },
     "refs/tags/0.11.1": {
       "name": "unicodedb",
@@ -138,6 +138,38 @@
       "backend": "c",
       "ref": "refs/tags/0.11.1",
       "rev": "7d3b449c44730804a3c9b4f4f3dbeca028212d05"
+    },
+    "refs/tags/0.11.2": {
+      "name": "unicodedb",
+      "version": "0.11.1",
+      "author": "Esteban Castro Borsani (@nitely)",
+      "desc": "Unicode Character Database (UCD) access for Nim",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "gen"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.11.2",
+      "rev": "1d249350087ee473cc50d54510a8c33318297602"
     },
     "refs/tags/v0.1": {
       "name": "unicodedb",
@@ -778,6 +810,32 @@
       "backend": "c",
       "ref": "refs/tags/v0.9.0",
       "rev": "7c6ee4bfc184d7121896a098d68b639a96df7af1"
+    }
+  },
+  "cudf": {
+    "name": "unicodedb",
+    "version": {
+      "11001": "refs/tags/0.11.2",
+      "1000": "refs/tags/v0.1",
+      "10000": "refs/tags/v0.10.0",
+      "2000": "refs/tags/v0.2",
+      "2001": "refs/tags/v0.2.1",
+      "2002": "refs/tags/v0.2.2",
+      "2003": "refs/tags/v0.2.3",
+      "2004": "refs/tags/v0.2.4",
+      "2005": "refs/tags/v0.2.5",
+      "3001": "refs/tags/v0.3.1",
+      "3002": "refs/tags/v0.3.2",
+      "4000": "refs/tags/v0.4.0",
+      "5000": "refs/tags/v0.5.0",
+      "5001": "refs/tags/v0.5.1",
+      "5002": "refs/tags/v0.5.2",
+      "6000": "refs/tags/v0.6.0",
+      "7000": "refs/tags/v0.7.0",
+      "7001": "refs/tags/v0.7.1",
+      "7002": "refs/tags/v0.7.2",
+      "8000": "refs/tags/v0.8.0",
+      "9000": "refs/tags/v0.9.0"
     }
   }
 }

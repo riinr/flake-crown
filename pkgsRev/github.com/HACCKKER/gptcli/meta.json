@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "gptcli",
-      "version": "1.3.1",
+      "version": "2.2.0",
       "author": "HACKKER",
       "desc": "OpenAI GPTs cli client written in nim",
       "license": "MIT",
@@ -28,10 +28,10 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.4.0",
+          "str": ">= 1.6.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.4.0"
+            "ver": "1.6.0"
           }
         },
         {
@@ -50,11 +50,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "eb55c83115218dccd893d0c4cf0851f1eb7daa2c"
+      "rev": "13511715b744cc0bac0ef3d2f9d155e8b972fb8d"
     },
     "refs/heads/main": {
       "name": "gptcli",
-      "version": "1.3.1",
+      "version": "2.2.0",
       "author": "HACKKER",
       "desc": "OpenAI GPTs cli client written in nim",
       "license": "MIT",
@@ -69,10 +69,10 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.4.0",
+          "str": ">= 1.6.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.4.0"
+            "ver": "1.6.0"
           }
         },
         {
@@ -91,7 +91,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "eb55c83115218dccd893d0c4cf0851f1eb7daa2c"
+      "rev": "13511715b744cc0bac0ef3d2f9d155e8b972fb8d"
     },
     "refs/tags/0.1.0": {
       "name": "gptcli",
@@ -199,6 +199,56 @@
       "backend": "c",
       "ref": "refs/tags/1.2.1",
       "rev": "862768790efec99ab18337756a35eb51fd66ba8e"
+    },
+    "refs/tags/2.2.0": {
+      "name": "gptcli",
+      "version": "2.2.0",
+      "author": "HACKKER",
+      "desc": "OpenAI GPTs cli client written in nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.32",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.32"
+          }
+        }
+      ],
+      "bin": [
+        "gptcli"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.2.0",
+      "rev": "13511715b744cc0bac0ef3d2f9d155e8b972fb8d"
+    }
+  },
+  "cudf": {
+    "name": "gptcli",
+    "version": {
+      "1000": "refs/tags/0.1.0",
+      "2000": "refs/tags/0.2.0",
+      "1002001": "refs/tags/1.2.1",
+      "2002000": "refs/tags/2.2.0"
     }
   }
 }

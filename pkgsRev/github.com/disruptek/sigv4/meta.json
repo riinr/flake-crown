@@ -11,7 +11,7 @@
   "refs": {
     "HEAD": {
       "name": "sigv4",
-      "version": "1.4.0",
+      "version": "1.4.1",
       "author": "disruptek",
       "desc": "Amazon Web Services Signature Version 4",
       "license": "MIT",
@@ -53,7 +53,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "4cdfe1def604dd6fab394cdd87789f8623cf576e"
+      "rev": "3cacded5921ff15fd1b3d2e2754df4a4a05010f0"
     },
     "refs/heads/devel": {
       "name": "sigv4",
@@ -96,7 +96,7 @@
     },
     "refs/heads/master": {
       "name": "sigv4",
-      "version": "1.4.0",
+      "version": "1.4.1",
       "author": "disruptek",
       "desc": "Amazon Web Services Signature Version 4",
       "license": "MIT",
@@ -138,7 +138,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "4cdfe1def604dd6fab394cdd87789f8623cf576e"
+      "rev": "3cacded5921ff15fd1b3d2e2754df4a4a05010f0"
     },
     "refs/heads/rmnc": {
       "name": "sigv4",
@@ -937,6 +937,77 @@
       "backend": "c",
       "ref": "refs/tags/1.4.0",
       "rev": "60592357349aba0f3475c9274ca46e249fd68ec4"
+    },
+    "refs/tags/1.4.1": {
+      "name": "sigv4",
+      "version": "1.4.1",
+      "author": "disruptek",
+      "desc": "Amazon Web Services Signature Version 4",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "sigv4.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "https://github.com/jangko/nimSHA2",
+          "str": "< 1.0.0",
+          "ver": {
+            "kind": "verEarlier",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/balls",
+          "str": ">= 3.0.0 & < 4.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "3.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "4.0.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/1.4.1",
+      "rev": "b8cff9898e96a8de9980e190de5ed6537855136a"
+    }
+  },
+  "cudf": {
+    "name": "sigv4",
+    "version": {
+      "1000000": "refs/tags/1.0.0",
+      "1000001": "refs/tags/1.0.1",
+      "1000010": "refs/tags/1.0.10",
+      "1000011": "refs/tags/1.0.11",
+      "1000012": "refs/tags/1.0.12",
+      "1000013": "refs/tags/1.0.13",
+      "1000002": "refs/tags/1.0.2",
+      "1000003": "refs/tags/1.0.3",
+      "1000004": "refs/tags/1.0.4",
+      "1000005": "refs/tags/1.0.5",
+      "1000006": "refs/tags/1.0.6",
+      "1000007": "refs/tags/1.0.7",
+      "1000008": "refs/tags/1.0.8",
+      "1000009": "refs/tags/1.0.9",
+      "1001000": "refs/tags/1.1.0",
+      "1002000": "refs/tags/1.2.0",
+      "1002001": "refs/tags/1.2.1",
+      "1003000": "refs/tags/1.3.0",
+      "1004000": "refs/tags/1.4.0",
+      "1004001": "refs/tags/1.4.1"
     }
   }
 }

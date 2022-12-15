@@ -1,5 +1,7 @@
 #compile-at-mkshell
 # update ../pkgsRev
+# It expect one package json from pacakges.json
+# can be called by ./updatePkgs.nims {pkgName} | {a z}
 
 proc isNotEmptyStr(x: string): bool =
   x != ""
@@ -144,27 +146,8 @@ proc setRefs(pkg: JsonNode): auto =
     pkg["refs"][versionInfo["ref"].getStr] = versionInfo
 
 
-if stdin.isATTY:
-  echo """Expect a json from stdin"""
-  quit 1
 
-let
-  inputJson = stdin.readAll
-  pkg       = inputJson.parseJson
-  metaDir   = fmt"../{pkg.dirOf}"
-
-pkg["refs"] = newJObject()
-discard pkg["url"]
-  .getRefs
-  .filter(isNotNull)
-  .map(fetchInfo pkg)
-  .map(setRefs pkg)
-
-discard  fmt"mkdir -p {metaDir}".execCmdEx
-fmt"{metaDir}/meta.json".writeFile pkg.pretty
-
-
-proc semVerToInt(semver: string): string =
+proc semVerToInt(semver: string): int =
   let 
     parts = semver.split(".")
     major =
@@ -180,15 +163,15 @@ proc semVerToInt(semver: string): string =
         of 2: "000"
         else: parts[2].align(3, '0')
 
-  (major[^3 .. ^1] &
-   minor[^3 .. ^1] &
-   patch[^3 .. ^1]).replace("000000000", "1")
+  (
+    major[^3 .. ^1] &
+    minor[^3 .. ^1] &
+    patch[^3 .. ^1]
+  ).replace("000000000", "1").parseInt
 
 
-proc cudfDep(refDep: JsonNode): string =
-  var verKind = refDep["ver"]["kind"].getStr
-  let depName = refDep["name"]
-    .getStr
+proc cudfPkgName(name: string; ver: string = ""): string =
+  let depName = name
     .replace("_"       , "")
     .replace("~"       , "")
     .replace("git://"  , "")
@@ -200,19 +183,25 @@ proc cudfDep(refDep: JsonNode): string =
     .toLower
     .strip(chars = AllChars - IdentChars)
 
+  if "#" in ver:
+    let spe = ver.replace("#", "-").replace("_", "")
+    if spe notin @["-head", "-master", "-main", "-trunk"]:
+      return depName & spe
+  return depName
+
+
+proc cudfDep(refDep: JsonNode): string =
+  var verKind = refDep["ver"]["kind"].getStr
+  let depStr  = (if refDep.hasKey "str": refDep["str"].getStr else: "")
+  let depName = cudfPkgName(refDep["name"].getStr, depStr)
+
   if verKind == "verAny":
     return depName & " >= 1"
 
   if verKind == "verSpecial":
-    let spe = refDep["str"]
-      .getStr()
-      .replace("#", "-")
-      .replace("_", "")
-    if spe in @["-head", "-master", "-main", "-trunk"]:
-      return depName & " >= 1" # isn't correct but may work
     # TODO: this isn't correct
     # We don't add heads to CUDF :-/
-    return depName & spe & " = 1"
+    return depName & " >= 1"
 
   if verKind in @["verIntersect", "verTilde", "verCaret"]:
     return cudfDep(%* {
@@ -260,36 +249,59 @@ proc cudfDeps(refMeta: JsonNode): string =
 
 proc cudf(pkgMeta: JsonNode): string =
   result = ""
+  if not pkgMeta.hasKey "cudf":
+    let pkgName = pkgMeta["name"].getStr.cudfPkgName
+    pkgMeta["cudf"] = %* {
+      "name":    %* pkgName,
+      "version": newJObject(),
+    }
+
   for (refNam, refMeta) in pkgMeta["refs"].pairs:
     if refNam.contains("refs/tag") and refMeta.hasKey("version"):
-      let version = refMeta["version"].getStr
-      let pkgName = refMeta["name"]
-        .getStr
-        .replace("_", "")
-        .toLower
-        .strip(chars = AllChars - IdentChars)
+      let version = refMeta["version"].getStr.semVerToInt
+      let pkgName = refMeta["name"].getStr.cudfPkgName()
+      pkgMeta["cudf"]["version"][$version] = %* refNam
       result.add fmt"""
 package:  {pkgName}
-version:  {version.semVerToInt}{refMeta.cudfDeps}
+version:  {version}{refMeta.cudfDeps}
 
 
 """
   if result == "" and pkgMeta["refs"].hasKey("HEAD") and pkgMeta["refs"]["HEAD"].hasKey("version"):
     let refMeta = pkgMeta["refs"]["HEAD"]
-    let version = refMeta["version"].getStr
-    let pkgName = refMeta["name"]
-      .getStr
-      .replace("_", "")
-      .toLower
-      .strip(chars = AllChars - IdentChars)
+    let version = refMeta["version"].getStr.semVerToInt
+    let pkgName = refMeta["name"].getStr.cudfPkgName
+    pkgMeta["cudf"]["version"][$version] = %* "HEAD"
     result.add fmt"""
 package:  {pkgName}
-version:  {version.semVerToInt}{refMeta.cudfDeps}
+version:  {version}{refMeta.cudfDeps}
 
 
 """
 
+
+if stdin.isATTY:
+  echo """Expect a json from stdin"""
+  quit 1
+
+let
+  inputJson = stdin.readAll
+  pkg       = inputJson.parseJson
+  metaDir   = fmt"../{pkg.dirOf}"
+  relative  = metaDir.replace("../pkgsRev/", "./")
+
+pkg["refs"] = newJObject()
+discard pkg["url"]
+  .getRefs
+  .filter(isNotNull)
+  .map(fetchInfo pkg)
+  .map(setRefs pkg)
+
+discard  fmt"mkdir -p {metaDir}".execCmdEx
 fmt"{metaDir}/meta.cudf".writeFile pkg.cudf
-
-
-
+fmt"{metaDir}/meta.json".writeFile pkg.pretty
+fmt"{metaDir}/glue.nix".writeFile  fmt"""
+{{
+  {pkg["cudf"]["name"]} = "{relative}/meta.json";
+}}
+"""

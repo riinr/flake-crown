@@ -3,40 +3,7 @@
   outputs = inputs: 
     let
       fromJSON = f: builtins.fromJSON (builtins.readFile f);
-      packages = fromJSON ./packages.json;
-      nimMetas = builtins.listToAttrs (map pkgMeta packages);
-      pkgMeta  = nimPkg: 
-        let 
-          pkgUrl  = builtins.replaceStrings [".com:" "git@" "https://" "http://"] [".com/" "" "" ""] (nimPkg.url or "");
-          name    = nimPkg.name or nimPkg.alias or "";
-          spltUrl = builtins.split "/" pkgUrl;
-          pkgDom  = builtins.head spltUrl;
-          pkgOwn  = builtins.head (builtins.split "/" (builtins.replaceStrings [ "${pkgDom}/"] [""] pkgUrl));
-          pkgPath = "${pkgDom}/${pkgOwn}/${name}";
-        in 
-          { inherit name;
-            value = 
-              if pkgUrl == ""
-              then nimPkg
-              else if builtins.pathExists ./${pkgPath}/meta.json
-                then fromJSON ./${pkgPath}/meta.json
-                else nimPkg;
-              };
-      refToName = builtins.replaceStrings ["refs/" "/" " " "."] ["" "_" "_" "_"];
-      srcOf = name: ref:
-      {
-          name = "${name}-${refToName ref}-src";
-          ref  = nimMetas.${name}.refs.${ref}.ref;
-          rev  = nimMetas.${name}.refs.${ref}.rev;
-          url  = nimMetas.${name}.url;
-      };
-      heads = name: { inherit name; value = srcOf name "HEAD"; };
-      srcs  = name: { inherit name; value = srcOf name; };
+      packages = import ./packages.nix;
     in {
-      lib.fetchGit = name: ref: builtins.fetchGit (srcOf name ref);
-      lib.head = pkgMames: builtins.listToAttrs (map heads pkgMames);
-      lib.meta = nimMetas;
-      lib.src  = srcOf;
-      lib.srcs = pkgNames: builtins.listToAttrs (map srcs  pkgNames);
     };
 }
