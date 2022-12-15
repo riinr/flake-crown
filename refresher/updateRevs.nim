@@ -288,7 +288,7 @@ let
   inputJson = stdin.readAll
   pkg       = inputJson.parseJson
   metaDir   = fmt"../{pkg.dirOf}"
-  relative  = metaDir.replace("../pkgsRev/", "./")
+  relative  = metaDir.replace("../pkgsRev/", "/")
 
 pkg["refs"] = newJObject()
 discard pkg["url"]

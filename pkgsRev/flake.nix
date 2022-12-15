@@ -1,9 +1,9 @@
 {
   description = "Nim Pkgs REV for fetchGit";
   outputs = inputs: 
-    let
-      fromJSON = f: builtins.fromJSON (builtins.readFile f);
-      packages = import ./packages.nix;
-    in {
-    };
+  {
+    lib.packages = import ./packages.nix;
+    lib.resolve  = import ./resolve.nix;
+    lib.srcs     = resolveArgs: builtins.map (v: v.src) (builtins.attrValues (inputs.self.lib.resolve resolveArgs));
+  };
 }
