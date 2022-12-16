@@ -1,27 +1,37 @@
 {
-  pkgs    ? import            <nixpkgs> {},     # nixpkgs
-  aspcud  ? pkgs.aspcud,                        # deps resolution program
-  cudf    ? builtins.readFile ./packages.cudf,  # input for aspcud
-  cudfMap ? import            ./packages.nix,   # map cudf names to meta files
-  nimPkgs ? [],                                 # name of pkgs to look
+  pkgs    ? import <nixpkgs> {},   # nixpkgs
+  aspcud  ? pkgs.aspcud,           # deps resolution program
+  cudf    ? ./packages.cudf,       # input for aspcud
+  cudfMap ? import ./packages.nix, # map cudf names to meta files
+  nimPkgs ? [],                    # name of pkgs to look
+  verbose ? false,                 # for debuging
   ...
 }:
 let 
-  cudfRequest = ''
-    ${cudf}
+  cudfRequest = 
+  ''
     request: 
     install: ${builtins.concatStringsSep ", " nimPkgs}
 
   '';
   cudfRespone = builtins.readFile (pkgs.runCommand "resolv-deps" {
-    inherit cudfRequest; 
-    passAsFile  = ["cudfRequest"];
-    buildInputs = [ aspcud ];
-  } ''aspcud $cudfRequestPath $out'');
+      inherit cudfRequest; 
+      passAsFile  = ["cudfRequest"];
+      buildInputs = [ aspcud ];
+    }
+    ''
+      cat ${cudf} $cudfRequestPath > request.cudf
+      aspcud -V 5 request.cudf result.cudf 2> debug.txt
+      touch fail.cudf
+      ${if verbose then "grep -q FAIL result.cudf && cat debug.txt > fail.cudf" else ""}
+      cat result.cudf fail.cudf > $out
+    '');
   validResp   = resp: builtins.typeOf resp == "string" && resp != "";
+  errMsg      = ''${cudfRespone}Unable to resolve dependecies: ${builtins.concatStringsSep ", " nimPkgs}'' +
+    (if verbose then "\n${cudfRequest}packages: ${cudf}" else "");
   responses   =
     if   builtins.match "FAIL.*" cudfRespone == []
-    then throw ''Unable to resolve dependecies: ${builtins.concatStringsSep ", " nimPkgs}''
+    then throw errMsg
     else builtins.filter validResp (builtins.split "\n\n+" cudfRespone);
   respToMeta  = resp:
     let 
@@ -33,16 +43,21 @@ let
       url      = meta.url;
       cudfName = pkg.package;
     };
-    metaToResult = meta: {
+    metaToResult = meta: 
+    let src = builtins.fetchGit {
+      name = "${meta.name}-src";
+      ref  = meta.ref;
+      rev  = meta.rev;
+      url  = meta.url;
+    };
+    in {
       name  = meta.name;
-      value = {
-        inherit meta;
-        src = builtins.fetchGit {
-          name = "${meta.name}-src";
-          ref  = meta.ref;
-          rev  = meta.rev;
-          url  = meta.url;
-        };
+      value.meta = meta;
+      value.src  = src; 
+      value.pkg  = pkgs.nimPackages.buildNimPackage {
+        pname   = meta.name;
+        src     = src;
+        version = meta.version;
       };
     };
 in builtins.listToAttrs (map metaToResult (map respToMeta responses))

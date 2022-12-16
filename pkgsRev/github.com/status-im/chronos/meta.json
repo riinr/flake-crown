@@ -1164,6 +1164,67 @@
       "ref": "refs/heads/fixasyncvoidingen",
       "rev": "7863d6d94225a5f3bae732f8398e921257fd2881"
     },
+    "refs/heads/fixflakyci": {
+      "name": "chronos",
+      "version": "3.0.11",
+      "author": "Status Research & Development GmbH",
+      "desc": "Networking framework with async/await support",
+      "license": "MIT or Apache License 2.0",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "chronos.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fixflakyci",
+      "rev": "af8fe1a861a8edae5290dc2d89aadcc80802cf1e"
+    },
     "refs/heads/fixfuturevar": {
       "name": "chronos",
       "version": "3.0.8",

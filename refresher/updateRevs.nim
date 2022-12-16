@@ -239,7 +239,7 @@ proc cudfDeps(refMeta: JsonNode): string =
     .toSeq
     .filterIt(
       it.hasKey("name") and
-      it["name"].getStr.strip(chars = AllChars - IdentChars) notin ["nim", "nimrod"])
+      it["name"].getStr.strip(chars = AllChars - IdentChars) notin ["nim", "nimrod", "compiler"])
   if required.len == 0:
     return ""
 
