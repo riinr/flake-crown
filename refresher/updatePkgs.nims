@@ -49,8 +49,7 @@ if defined process:
     pkgsURL = "https://raw.githubusercontent.com/nim-lang/packages/master/packages.json"
     prepare = gorge fmt"""
       # downloads packages.json
-      cat packages_main.json 2>/dev/null \
-        || curl -s {pkgsURL} \
+      curl -s {pkgsURL} \
           > packages_main.json
 
       # create packages_other.json
