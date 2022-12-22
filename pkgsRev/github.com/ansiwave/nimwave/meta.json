@@ -11,7 +11,7 @@
   "refs": {
     "HEAD": {
       "name": "nimwave",
-      "version": "0.8.0",
+      "version": "1.1.0",
       "author": "oakes",
       "desc": "A TUI -> GUI library",
       "license": "Public Domain",
@@ -40,10 +40,10 @@
         },
         {
           "name": "illwave",
-          "str": ">= 0.5.0",
+          "str": ">= 0.6.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.5.0"
+            "ver": "0.6.0"
           }
         }
       ],
@@ -52,11 +52,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "1ee167b726b0003caf5a829cfd33e1cf7af51276"
+      "rev": "3de06d0b8de05c1a9f752db45b64e50c00ad7f52"
     },
     "refs/heads/master": {
       "name": "nimwave",
-      "version": "0.8.0",
+      "version": "1.1.0",
       "author": "oakes",
       "desc": "A TUI -> GUI library",
       "license": "Public Domain",
@@ -85,10 +85,10 @@
         },
         {
           "name": "illwave",
-          "str": ">= 0.5.0",
+          "str": ">= 0.6.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.5.0"
+            "ver": "0.6.0"
           }
         }
       ],
@@ -97,7 +97,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "1ee167b726b0003caf5a829cfd33e1cf7af51276"
+      "rev": "3de06d0b8de05c1a9f752db45b64e50c00ad7f52"
     },
     "refs/tags/0.1.0": {
       "name": "nimwave",
@@ -458,6 +458,96 @@
       "backend": "c",
       "ref": "refs/tags/0.8.0",
       "rev": "6ed4b89cae3b75074a863aac0a02849d91270155"
+    },
+    "refs/tags/1.0.0": {
+      "name": "nimwave",
+      "version": "1.0.0",
+      "author": "oakes",
+      "desc": "A TUI -> GUI library",
+      "license": "Public Domain",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "ansiutils",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "illwave",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.0.0",
+      "rev": "0cc6c3c7d97e2c109bc45705d820c21fe25da681"
+    },
+    "refs/tags/1.1.0": {
+      "name": "nimwave",
+      "version": "1.1.0",
+      "author": "oakes",
+      "desc": "A TUI -> GUI library",
+      "license": "Public Domain",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "ansiutils",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "illwave",
+          "str": ">= 0.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.1.0",
+      "rev": "877f3aec56a79e59638aee0714c2bbdb41426c55"
     }
   },
   "cudf": {
@@ -470,7 +560,9 @@
       "5000": "refs/tags/0.5.0",
       "6000": "refs/tags/0.6.0",
       "7000": "refs/tags/0.7.0",
-      "8000": "refs/tags/0.8.0"
+      "8000": "refs/tags/0.8.0",
+      "1000000": "refs/tags/1.0.0",
+      "1001000": "refs/tags/1.1.0"
     }
   }
 }

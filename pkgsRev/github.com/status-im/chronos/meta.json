@@ -76,7 +76,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "75d030ff71264513fb9701c75a326cd36fcb4692"
+      "rev": "5d0c725463e08d5ba00b182f2baabcc181ff78b6"
     },
     "refs/heads/accept-temp": {
       "name": "chronos",
@@ -899,6 +899,67 @@
       "ref": "refs/heads/dev/etan/y",
       "rev": "b6d842af30e3e75eb82c9e9252bfaa60bc09e415"
     },
+    "refs/heads/first-completed-future": {
+      "name": "chronos",
+      "version": "3.0.11",
+      "author": "Status Research & Development GmbH",
+      "desc": "Networking framework with async/await support",
+      "license": "MIT or Apache License 2.0",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "chronos.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/first-completed-future",
+      "rev": "f93c5916a021cec2494c8239f8ea9116603df002"
+    },
     "refs/heads/fix-cancel-race": {
       "name": "chronos",
       "version": "3.0.5",
@@ -1223,7 +1284,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/fixflakyci",
-      "rev": "af8fe1a861a8edae5290dc2d89aadcc80802cf1e"
+      "rev": "c6b3d3114f56424f66c9cdc749467c1c13c6fe82"
     },
     "refs/heads/fixfuturevar": {
       "name": "chronos",
@@ -1555,7 +1616,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "75d030ff71264513fb9701c75a326cd36fcb4692"
+      "rev": "5d0c725463e08d5ba00b182f2baabcc181ff78b6"
     },
     "refs/heads/new-connection-leak": {
       "name": "chronos",
@@ -2592,6 +2653,67 @@
       "backend": "c",
       "ref": "refs/heads/tanguyfixcancelrace",
       "rev": "80f5230c5f7a61d268ab86642a5e18e3d051859b"
+    },
+    "refs/heads/tcpclientnodelay": {
+      "name": "chronos",
+      "version": "3.0.11",
+      "author": "Status Research & Development GmbH",
+      "desc": "Networking framework with async/await support",
+      "license": "MIT or Apache License 2.0",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "chronos.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/tcpclientnodelay",
+      "rev": "8b44843d416961f57786579533677c12a9876976"
     },
     "refs/heads/testfix": {
       "name": "chronos",

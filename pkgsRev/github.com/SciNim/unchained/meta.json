@@ -16,7 +16,7 @@
   "refs": {
     "HEAD": {
       "name": "unchained",
-      "version": "0.3.1",
+      "version": "0.3.5",
       "author": "Vindaar",
       "desc": "Fully type safe, compile time only units library",
       "license": "MIT",
@@ -41,7 +41,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "7a9be5a2a477bf55fdc569a35475915e5cf86a9c"
+      "rev": "07aae5153747e6507ba3114ae089a5abfdc95f7a"
     },
     "refs/heads/addBecquerel": {
       "name": "unchained",
@@ -129,6 +129,35 @@
       "backend": "c",
       "ref": "refs/heads/allowExport",
       "rev": "ca1c461a38da3628231d4f225cb1e2500494763c"
+    },
+    "refs/heads/allowFloatSizeChange": {
+      "name": "unchained",
+      "version": "0.3.2",
+      "author": "Vindaar",
+      "desc": "Fully type safe, compile time only units library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/allowFloatSizeChange",
+      "rev": "459f97264bd45e0e8ec29e193ab76d299671f7f3"
     },
     "refs/heads/declarativeQuantities": {
       "name": "unchained",
@@ -333,6 +362,35 @@
       "ref": "refs/heads/fixIssue16",
       "rev": "038874949fc438943c72abe4010486f06073144b"
     },
+    "refs/heads/fixMinIssue": {
+      "name": "unchained",
+      "version": "0.3.2",
+      "author": "Vindaar",
+      "desc": "Fully type safe, compile time only units library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/fixMinIssue",
+      "rev": "16312e5b4be40d58b37d8bd60c15bb5081964791"
+    },
     "refs/heads/fixMissingConversions": {
       "name": "unchained",
       "version": "0.2.3",
@@ -480,7 +538,7 @@
     },
     "refs/heads/master": {
       "name": "unchained",
-      "version": "0.3.1",
+      "version": "0.3.5",
       "author": "Vindaar",
       "desc": "Fully type safe, compile time only units library",
       "license": "MIT",
@@ -505,7 +563,36 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "7a9be5a2a477bf55fdc569a35475915e5cf86a9c"
+      "rev": "07aae5153747e6507ba3114ae089a5abfdc95f7a"
+    },
+    "refs/heads/moreAliases": {
+      "name": "unchained",
+      "version": "0.3.3",
+      "author": "Vindaar",
+      "desc": "Fully type safe, compile time only units library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/moreAliases",
+      "rev": "40cde714cfb2a7ab62ddd9fed8d994cfd502f2ba"
     },
     "refs/heads/moreCompoundFixes": {
       "name": "unchained",
@@ -680,6 +767,35 @@
       "backend": "c",
       "ref": "refs/heads/typedescsAndAliases",
       "rev": "5978f5fc7ea8ae0711d66adff44dd56eb33d628a"
+    },
+    "refs/heads/unitLessAliases": {
+      "name": "unchained",
+      "version": "0.3.4",
+      "author": "Vindaar",
+      "desc": "Fully type safe, compile time only units library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/unitLessAliases",
+      "rev": "813682e0c1a9c4df4d9edf99b6f9cd20835be543"
     },
     "refs/heads/unitsFromMacro": {
       "name": "unchained",
@@ -1202,6 +1318,151 @@
       "backend": "c",
       "ref": "refs/tags/v0.3.0",
       "rev": "6956150343fa9f738224fe8af4375266d3d2f3dc"
+    },
+    "refs/tags/v0.3.1": {
+      "name": "unchained",
+      "version": "0.3.1",
+      "author": "Vindaar",
+      "desc": "Fully type safe, compile time only units library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.1",
+      "rev": "7a9be5a2a477bf55fdc569a35475915e5cf86a9c"
+    },
+    "refs/tags/v0.3.2": {
+      "name": "unchained",
+      "version": "0.3.2",
+      "author": "Vindaar",
+      "desc": "Fully type safe, compile time only units library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.2",
+      "rev": "a6da74ab33705a37b3663e8565d99a94c67d6670"
+    },
+    "refs/tags/v0.3.3": {
+      "name": "unchained",
+      "version": "0.3.3",
+      "author": "Vindaar",
+      "desc": "Fully type safe, compile time only units library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.3",
+      "rev": "abda0f43aefae016f342d522dcc3b3c8c074b81b"
+    },
+    "refs/tags/v0.3.4": {
+      "name": "unchained",
+      "version": "0.3.4",
+      "author": "Vindaar",
+      "desc": "Fully type safe, compile time only units library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.4",
+      "rev": "f953cc11cf55047ca65d60ebd867dccd0cd5d50a"
+    },
+    "refs/tags/v0.3.5": {
+      "name": "unchained",
+      "version": "0.3.5",
+      "author": "Vindaar",
+      "desc": "Fully type safe, compile time only units library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.5",
+      "rev": "07aae5153747e6507ba3114ae089a5abfdc95f7a"
     }
   },
   "cudf": {
@@ -1222,7 +1483,12 @@
       "2003": "refs/tags/v0.2.3",
       "2004": "refs/tags/v0.2.4",
       "2005": "refs/tags/v0.2.5",
-      "3000": "refs/tags/v0.3.0"
+      "3000": "refs/tags/v0.3.0",
+      "3001": "refs/tags/v0.3.1",
+      "3002": "refs/tags/v0.3.2",
+      "3003": "refs/tags/v0.3.3",
+      "3004": "refs/tags/v0.3.4",
+      "3005": "refs/tags/v0.3.5"
     }
   }
 }

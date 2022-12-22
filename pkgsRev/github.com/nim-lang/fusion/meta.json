@@ -11,7 +11,7 @@
   "refs": {
     "HEAD": {
       "name": "fusion",
-      "version": "1.1",
+      "version": "1.2",
       "author": "Araq",
       "desc": "Extensions for Nim's stdlib",
       "license": "MIT",
@@ -36,11 +36,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "e8d70759c79989f662e2bfd536f3b56970dc2914"
+      "rev": "0b0a0273b8df860cd54e3fcca7bb4c617244ac77"
     },
     "refs/heads/master": {
       "name": "fusion",
-      "version": "1.1",
+      "version": "1.2",
       "author": "Araq",
       "desc": "Extensions for Nim's stdlib",
       "license": "MIT",
@@ -65,7 +65,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "e8d70759c79989f662e2bfd536f3b56970dc2914"
+      "rev": "0b0a0273b8df860cd54e3fcca7bb4c617244ac77"
     },
     "refs/heads/pr_fusion": {
       "name": "fusion",
@@ -153,13 +153,43 @@
       "backend": "c",
       "ref": "refs/tags/v1.1",
       "rev": "f35943a4da3f694bcd83c64cc133ce8db9aa708c"
+    },
+    "refs/tags/v1.2": {
+      "name": "fusion",
+      "version": "1.2",
+      "author": "Araq",
+      "desc": "Extensions for Nim's stdlib",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v1.2",
+      "rev": "0b0a0273b8df860cd54e3fcca7bb4c617244ac77"
     }
   },
   "cudf": {
     "name": "fusion",
     "version": {
       "1000000": "refs/tags/v1.0",
-      "1001000": "refs/tags/v1.1"
+      "1001000": "refs/tags/v1.1",
+      "1002000": "refs/tags/v1.2"
     }
   }
 }

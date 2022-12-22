@@ -19,7 +19,7 @@
   "refs": {
     "HEAD": {
       "name": "puppy",
-      "version": "1.6.2",
+      "version": "2.0.1",
       "author": "Andre von Houck",
       "desc": "Puppy fetches resources via HTTP and HTTPS.",
       "license": "MIT",
@@ -39,14 +39,6 @@
           }
         },
         {
-          "name": "urlly",
-          "str": ">= 1.1.0",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "1.1.0"
-          }
-        },
-        {
           "name": "libcurl",
           "str": ">= 1.0.0",
           "ver": {
@@ -61,6 +53,14 @@
             "kind": "verEqLater",
             "ver": "0.10.0"
           }
+        },
+        {
+          "name": "webby",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
         }
       ],
       "bin": [],
@@ -68,7 +68,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "b1388b989a2301656c664bf7cc62cdb4e315a625"
+      "rev": "44d93ad77e7828c237153ec8ab24be2ec73bca72"
     },
     "refs/heads/appkit": {
       "name": "puppy",
@@ -231,7 +231,7 @@
     },
     "refs/heads/guzba": {
       "name": "puppy",
-      "version": "1.6.2",
+      "version": "2.0.1",
       "author": "Andre von Houck",
       "desc": "Puppy fetches resources via HTTP and HTTPS.",
       "license": "MIT",
@@ -251,14 +251,6 @@
           }
         },
         {
-          "name": "urlly",
-          "str": ">= 1.1.0",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "1.1.0"
-          }
-        },
-        {
           "name": "libcurl",
           "str": ">= 1.0.0",
           "ver": {
@@ -272,6 +264,14 @@
           "ver": {
             "kind": "verEqLater",
             "ver": "0.10.0"
+          }
+        },
+        {
+          "name": "webby",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
           }
         }
       ],
@@ -280,11 +280,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/guzba",
-      "rev": "4bf38aa1a865eaf8684815abc1853bf66b1239f4"
+      "rev": "44d93ad77e7828c237153ec8ab24be2ec73bca72"
     },
     "refs/heads/master": {
       "name": "puppy",
-      "version": "1.6.2",
+      "version": "2.0.1",
       "author": "Andre von Houck",
       "desc": "Puppy fetches resources via HTTP and HTTPS.",
       "license": "MIT",
@@ -304,14 +304,6 @@
           }
         },
         {
-          "name": "urlly",
-          "str": ">= 1.1.0",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "1.1.0"
-          }
-        },
-        {
           "name": "libcurl",
           "str": ">= 1.0.0",
           "ver": {
@@ -326,6 +318,14 @@
             "kind": "verEqLater",
             "ver": "0.10.0"
           }
+        },
+        {
+          "name": "webby",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
         }
       ],
       "bin": [],
@@ -333,7 +333,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "b1388b989a2301656c664bf7cc62cdb4e315a625"
+      "rev": "44d93ad77e7828c237153ec8ab24be2ec73bca72"
     },
     "refs/heads/newReq": {
       "name": "puppy",
@@ -1585,6 +1585,112 @@
       "backend": "c",
       "ref": "refs/tags/1.6.2",
       "rev": "b1388b989a2301656c664bf7cc62cdb4e315a625"
+    },
+    "refs/tags/2.0.0": {
+      "name": "puppy",
+      "version": "2.0.0",
+      "author": "Andre von Houck",
+      "desc": "Puppy fetches resources via HTTP and HTTPS.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.2"
+          }
+        },
+        {
+          "name": "libcurl",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.0"
+          }
+        },
+        {
+          "name": "webby",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.0.0",
+      "rev": "9e58ce602ba1bda2d9c3afeb8fc818be73c8e85a"
+    },
+    "refs/tags/2.0.1": {
+      "name": "puppy",
+      "version": "2.0.1",
+      "author": "Andre von Houck",
+      "desc": "Puppy fetches resources via HTTP and HTTPS.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.2"
+          }
+        },
+        {
+          "name": "libcurl",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.0"
+          }
+        },
+        {
+          "name": "webby",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.0.1",
+      "rev": "44d93ad77e7828c237153ec8ab24be2ec73bca72"
     }
   },
   "cudf": {
@@ -1610,7 +1716,9 @@
       "1005005": "refs/tags/1.5.5",
       "1006000": "refs/tags/1.6.0",
       "1006001": "refs/tags/1.6.1",
-      "1006002": "refs/tags/1.6.2"
+      "1006002": "refs/tags/1.6.2",
+      "2000000": "refs/tags/2.0.0",
+      "2000001": "refs/tags/2.0.1"
     }
   }
 }

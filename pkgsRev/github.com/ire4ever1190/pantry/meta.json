@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "pantry",
-      "version": "0.3.1",
+      "version": "0.4.0",
       "author": "Jake Leahy",
       "desc": "Client library for https://getpantry.cloud/",
       "license": "MIT",
@@ -39,11 +39,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "88d42cfa56b8811328cefcd8a07bb6d9189466e6"
+      "rev": "e40f3542b693c3a49e8ee9d5aa35c5a830a274f6"
     },
     "refs/heads/master": {
       "name": "pantry",
-      "version": "0.3.1",
+      "version": "0.4.0",
       "author": "Jake Leahy",
       "desc": "Client library for https://getpantry.cloud/",
       "license": "MIT",
@@ -68,7 +68,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "88d42cfa56b8811328cefcd8a07bb6d9189466e6"
+      "rev": "e40f3542b693c3a49e8ee9d5aa35c5a830a274f6"
     },
     "refs/heads/support-js": {
       "name": "pantry",
@@ -214,6 +214,35 @@
       "backend": "c",
       "ref": "refs/tags/0.3.1",
       "rev": "7363893ad1741a15dc7ecd4bc18250d96e7e0162"
+    },
+    "refs/tags/0.4.0": {
+      "name": "pantry",
+      "version": "0.4.0",
+      "author": "Jake Leahy",
+      "desc": "Client library for https://getpantry.cloud/",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.4.0",
+      "rev": "fce08bebd3ab6da5f7ba62dfafdb4f244d02f271"
     }
   },
   "cudf": {
@@ -222,7 +251,8 @@
       "1000": "refs/tags/0.1.0",
       "2000": "refs/tags/0.2.0",
       "3000": "refs/tags/0.3.0",
-      "3001": "refs/tags/0.3.1"
+      "3001": "refs/tags/0.3.1",
+      "4000": "refs/tags/0.4.0"
     }
   }
 }

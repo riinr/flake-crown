@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "nimble",
-      "version": "0.14.0",
+      "version": "0.14.1",
       "author": "Dominik Picheta",
       "desc": "Nim package manager.",
       "license": "BSD",
@@ -43,7 +43,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "a0897553c974183cc5f69f1cedd39a9355dec93a"
+      "rev": "afd03bc000f4013c48f52381728327dabfccfc4c"
     },
     "refs/heads/araq-make-CI-green-again": {
       "name": "nimble",
@@ -261,7 +261,7 @@
     },
     "refs/heads/master": {
       "name": "nimble",
-      "version": "0.14.0",
+      "version": "0.14.1",
       "author": "Dominik Picheta",
       "desc": "Nim package manager.",
       "license": "BSD",
@@ -290,7 +290,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "a0897553c974183cc5f69f1cedd39a9355dec93a"
+      "rev": "afd03bc000f4013c48f52381728327dabfccfc4c"
     },
     "refs/heads/restore-ssl-verification": {
       "name": "nimble",
@@ -729,6 +729,39 @@
       "ref": "refs/tags/v0.14.0",
       "rev": "0777f33d1ddbd505b3aa7b714032125349323ceb"
     },
+    "refs/tags/v0.14.1": {
+      "name": "nimble",
+      "version": "0.14.1",
+      "author": "Dominik Picheta",
+      "desc": "Nim package manager.",
+      "license": "BSD",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.13.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.13.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimble"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.14.1",
+      "rev": "afd03bc000f4013c48f52381728327dabfccfc4c"
+    },
     "refs/tags/v0.2": {
       "name": "babel",
       "version": "0.2.0",
@@ -1128,6 +1161,7 @@
       "13000": "refs/tags/v0.13.0",
       "13001": "refs/tags/v0.13.1",
       "14000": "refs/tags/v0.14.0",
+      "14001": "refs/tags/v0.14.1",
       "2000": "refs/tags/v0.2",
       "4000": "refs/tags/v0.4",
       "6000": "refs/tags/v0.6",

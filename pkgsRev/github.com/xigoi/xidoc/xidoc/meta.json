@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "xidoc",
-      "version": "2022.11.24",
+      "version": "2022.12.19",
       "author": "Adam Blažek",
       "desc": "A consistent markup language",
       "license": "GPL-3.0-only",
@@ -66,7 +66,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "ce1562bb22ce37a08dc06eed2d89675973a97c6e"
+      "rev": "6d31417bac2bc881e1648c1bb5858ed4f3233a5f"
     },
     "refs/heads/commands-refactor": {
       "name": "xidoc",
@@ -225,7 +225,7 @@
     },
     "refs/heads/master": {
       "name": "xidoc",
-      "version": "2022.11.24",
+      "version": "2022.12.19",
       "author": "Adam Blažek",
       "desc": "A consistent markup language",
       "license": "GPL-3.0-only",
@@ -278,7 +278,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "ce1562bb22ce37a08dc06eed2d89675973a97c6e"
+      "rev": "6d31417bac2bc881e1648c1bb5858ed4f3233a5f"
     },
     "refs/heads/named-args": {
       "name": "xidoc",
@@ -2000,6 +2000,63 @@
       "ref": "refs/tags/2022.11.7",
       "rev": "74a67585c3267715bfe5bf662df736700a0b7955"
     },
+    "refs/tags/2022.12.19": {
+      "name": "xidoc",
+      "version": "2022.12.19",
+      "author": "Adam Blažek",
+      "desc": "A consistent markup language",
+      "license": "GPL-3.0-only",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "aspartame",
+          "str": ">= 2022.9.14",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2022.9.14"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.12",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.12"
+          }
+        },
+        {
+          "name": "matext",
+          "str": ">= 2022.9.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2022.9.3"
+          }
+        }
+      ],
+      "bin": [
+        "xidoc"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2022.12.19",
+      "rev": "41cdddd03b5d571bde4285b46be4f572c9a7db71"
+    },
     "refs/tags/2022.2.19": {
       "name": "xidoc",
       "version": "2022.2.19",
@@ -3125,6 +3182,7 @@
       "22011003": "refs/tags/2022.11.3",
       "22011006": "refs/tags/2022.11.6",
       "22011007": "refs/tags/2022.11.7",
+      "22012019": "refs/tags/2022.12.19",
       "22002019": "refs/tags/2022.2.19",
       "22002020": "refs/tags/2022.2.20",
       "22002006": "refs/tags/2022.2.6",
