@@ -3,15 +3,16 @@
   inputs.nixpkgsMast.url = "github:NixOS/nixpkgs";
   inputs.nixpkgs2205.url = "github:NixOS/nixpkgs/22.05";
   inputs.nixpkgs2211.url = "github:NixOS/nixpkgs/22.11";
+  inputs.nixpkgsClin.url = "github:vbgl/nixpkgs/clasp-is-clingo";
 
-  outputs = { self, nixpkgsMast, nixpkgs2205, nixpkgs2211, nimrevs, ...}:
+  outputs = inputs:
   let
     pkgsOf = nixpkgsVersion: nixpkgsVersion.legacyPackages.x86_64-linux;
     mkPkg  = nixpkgsVersion:
     let
       pkgs   = pkgsOf nixpkgsVersion;
       toFlag = builtins.map (src: "-p:${src}");
-      deps   = nimrevs.lib.srcs {
+      deps   = inputs.nimrevs.lib.srcs {
         inherit pkgs;
         nimPkgs = [
           "cligen"  # this is ok   http://www.plantuml.com/plantuml/uml/SoWkIImgoStCIybDBE3IKaZEoKnFpUDoI0KAG0Jp00==
@@ -34,9 +35,10 @@
     };
   in
   {
-    packages.x86_64-linux.default     = mkPkg nixpkgs2205;
-    packages.x86_64-linux.nixpkgs2211 = mkPkg nixpkgs2211;
-    packages.x86_64-linux.nixpkgsMast = mkPkg nixpkgsMast;
-    packages.x86_64-linux.nixpkgs2205 = mkPkg nixpkgs2205;
+    packages.x86_64-linux.default     = mkPkg inputs.nixpkgs2205;
+    packages.x86_64-linux.nixpkgs2211 = mkPkg inputs.nixpkgs2211;
+    packages.x86_64-linux.nixpkgsMast = mkPkg inputs.nixpkgsMast;
+    packages.x86_64-linux.nixpkgs2205 = mkPkg inputs.nixpkgs2205;
+    packages.x86_64-linux.nixpkgsClin = mkPkg inputs.nixpkgsClin;
   };
 }
