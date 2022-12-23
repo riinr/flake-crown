@@ -12,7 +12,7 @@
   "refs": {
     "HEAD": {
       "name": "getdns",
-      "version": "20220928",
+      "version": "20221222",
       "author": "Emery Hemingway",
       "desc": "Wrapper over the getdns C library",
       "license": "BSD-3-Clause",
@@ -37,11 +37,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "113be2f1c1eea13230f7ebdb3b0861f43985b99a"
+      "rev": "c73cbe288d9f9480586b8fa87f6d794ffb6a6ce6"
     },
     "refs/heads/trunk": {
       "name": "getdns",
-      "version": "20220928",
+      "version": "20221222",
       "author": "Emery Hemingway",
       "desc": "Wrapper over the getdns C library",
       "license": "BSD-3-Clause",
@@ -66,7 +66,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/trunk",
-      "rev": "113be2f1c1eea13230f7ebdb3b0861f43985b99a"
+      "rev": "c73cbe288d9f9480586b8fa87f6d794ffb6a6ce6"
     },
     "refs/tags/20220913": {
       "name": "getdns",
@@ -183,6 +183,35 @@
       "backend": "c",
       "ref": "refs/tags/20220928",
       "rev": "113be2f1c1eea13230f7ebdb3b0861f43985b99a"
+    },
+    "refs/tags/20221222": {
+      "name": "getdns",
+      "version": "20221222",
+      "author": "Emery Hemingway",
+      "desc": "Wrapper over the getdns C library",
+      "license": "BSD-3-Clause",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.6"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/20221222",
+      "rev": "c73cbe288d9f9480586b8fa87f6d794ffb6a6ce6"
     }
   },
   "cudf": {
@@ -191,7 +220,8 @@
       "913000000": "refs/tags/20220913",
       "921000000": "refs/tags/20220921",
       "927000000": "refs/tags/20220927",
-      "928000000": "refs/tags/20220928"
+      "928000000": "refs/tags/20220928",
+      "222000000": "refs/tags/20221222"
     }
   }
 }

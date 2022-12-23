@@ -11,7 +11,7 @@
   "refs": {
     "HEAD": {
       "name": "wavecore",
-      "version": "0.7.1",
+      "version": "0.8.0",
       "author": "oakes",
       "desc": "Server and client utils for ANSIWAVE BBS",
       "license": "Public Domain",
@@ -35,27 +35,19 @@
           }
         },
         {
-          "name": "urlly",
-          "str": ">= 1.0.0",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "1.0.0"
-          }
-        },
-        {
           "name": "puppy",
-          "str": ">= 1.5.3",
+          "str": ">= 2.0.1",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.5.3"
+            "ver": "2.0.1"
           }
         },
         {
           "name": "flatty",
-          "str": ">= 0.2.4",
+          "str": ">= 0.3.4",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.2.4"
+            "ver": "0.3.4"
           }
         },
         {
@@ -76,10 +68,10 @@
         },
         {
           "name": "ansiutils",
-          "str": ">= 0.1.0",
+          "str": ">= 0.2.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.1.0"
+            "ver": "0.2.0"
           }
         }
       ],
@@ -90,11 +82,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "30c11abb36aa584921585253278b1547c69994f7"
+      "rev": "af375a9d560b1a0e9b95764666d078920ea2d47f"
     },
     "refs/heads/master": {
       "name": "wavecore",
-      "version": "0.7.1",
+      "version": "0.8.0",
       "author": "oakes",
       "desc": "Server and client utils for ANSIWAVE BBS",
       "license": "Public Domain",
@@ -118,27 +110,19 @@
           }
         },
         {
-          "name": "urlly",
-          "str": ">= 1.0.0",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "1.0.0"
-          }
-        },
-        {
           "name": "puppy",
-          "str": ">= 1.5.3",
+          "str": ">= 2.0.1",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.5.3"
+            "ver": "2.0.1"
           }
         },
         {
           "name": "flatty",
-          "str": ">= 0.2.4",
+          "str": ">= 0.3.4",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.2.4"
+            "ver": "0.3.4"
           }
         },
         {
@@ -159,10 +143,10 @@
         },
         {
           "name": "ansiutils",
-          "str": ">= 0.1.0",
+          "str": ">= 0.2.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.1.0"
+            "ver": "0.2.0"
           }
         }
       ],
@@ -173,7 +157,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "30c11abb36aa584921585253278b1547c69994f7"
+      "rev": "af375a9d560b1a0e9b95764666d078920ea2d47f"
     },
     "refs/tags/0.1.0": {
       "name": "wavecore",
@@ -1864,6 +1848,81 @@
       "backend": "c",
       "ref": "refs/tags/0.7.1",
       "rev": "6f8bdb02c394707a7a276256d016e51668053d66"
+    },
+    "refs/tags/0.8.0": {
+      "name": "wavecore",
+      "version": "0.8.0",
+      "author": "oakes",
+      "desc": "Server and client utils for ANSIWAVE BBS",
+      "license": "Public Domain",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim",
+        "c",
+        "h"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.6"
+          }
+        },
+        {
+          "name": "puppy",
+          "str": ">= 2.0.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2.0.1"
+          }
+        },
+        {
+          "name": "flatty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "paramidi",
+          "str": ">= 0.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.0"
+          }
+        },
+        {
+          "name": "threading",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "ansiutils",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        }
+      ],
+      "bin": [
+        "wavecore"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.8.0",
+      "rev": "af375a9d560b1a0e9b95764666d078920ea2d47f"
     }
   },
   "cudf": {
@@ -1890,7 +1949,8 @@
       "5000": "refs/tags/0.5.0",
       "6000": "refs/tags/0.6.0",
       "7000": "refs/tags/0.7.0",
-      "7001": "refs/tags/0.7.1"
+      "7001": "refs/tags/0.7.1",
+      "8000": "refs/tags/0.8.0"
     }
   }
 }

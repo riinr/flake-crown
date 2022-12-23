@@ -11,7 +11,7 @@
   "refs": {
     "HEAD": {
       "name": "paravim",
-      "version": "0.18.3",
+      "version": "0.18.4",
       "author": "oakes",
       "desc": "A parasitic editor",
       "license": "Public Domain",
@@ -48,10 +48,10 @@
         },
         {
           "name": "pararules",
-          "str": ">= 1.1.0",
+          "str": ">= 1.2.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.1.0"
+            "ver": "1.2.0"
           }
         },
         {
@@ -76,7 +76,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "83466fe87d242583655249ad2997c692140e8b77"
+      "rev": "9dd786c5d44e37b9c89e51bbff7cda4952cb6c0d"
     },
     "refs/heads/ffi_crash": {
       "name": "paravim",
@@ -149,7 +149,7 @@
     },
     "refs/heads/master": {
       "name": "paravim",
-      "version": "0.18.3",
+      "version": "0.18.4",
       "author": "oakes",
       "desc": "A parasitic editor",
       "license": "Public Domain",
@@ -186,10 +186,10 @@
         },
         {
           "name": "pararules",
-          "str": ">= 1.1.0",
+          "str": ">= 1.2.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.1.0"
+            "ver": "1.2.0"
           }
         },
         {
@@ -214,7 +214,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "83466fe87d242583655249ad2997c692140e8b77"
+      "rev": "9dd786c5d44e37b9c89e51bbff7cda4952cb6c0d"
     },
     "refs/tags/0.10.0": {
       "name": "paravim",
@@ -1094,6 +1094,75 @@
       "ref": "refs/tags/0.18.3",
       "rev": "9cfdeb4ab2ac96b2dffc23bc66a70221a21fe571"
     },
+    "refs/tags/0.18.4": {
+      "name": "paravim",
+      "version": "0.18.4",
+      "author": "oakes",
+      "desc": "A parasitic editor",
+      "license": "Public Domain",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim",
+        "txt",
+        "ttf",
+        "glsl",
+        "c",
+        "h",
+        "so"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.6"
+          }
+        },
+        {
+          "name": "paranim",
+          "str": ">= 0.12.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.12.0"
+          }
+        },
+        {
+          "name": "pararules",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "paratext",
+          "str": ">= 0.13.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.13.0"
+          }
+        },
+        {
+          "name": "illwill",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.18.4",
+      "rev": "9dd786c5d44e37b9c89e51bbff7cda4952cb6c0d"
+    },
     "refs/tags/0.2.0": {
       "name": "paravim",
       "version": "0.2.0",
@@ -1598,6 +1667,7 @@
       "18001": "refs/tags/0.18.1",
       "18002": "refs/tags/0.18.2",
       "18003": "refs/tags/0.18.3",
+      "18004": "refs/tags/0.18.4",
       "2000": "refs/tags/0.2.0",
       "3000": "refs/tags/0.3.0",
       "4000": "refs/tags/0.4.0",

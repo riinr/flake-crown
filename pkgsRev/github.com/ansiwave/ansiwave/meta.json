@@ -11,7 +11,7 @@
   "refs": {
     "HEAD": {
       "name": "ansiwave",
-      "version": "1.7.11",
+      "version": "1.8.0",
       "author": "oakes",
       "desc": "ANSI art + MIDI music",
       "license": "Public Domain",
@@ -38,10 +38,10 @@
         },
         {
           "name": "pararules",
-          "str": ">= 1.1.0",
+          "str": ">= 1.2.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.1.0"
+            "ver": "1.2.0"
           }
         },
         {
@@ -70,10 +70,10 @@
         },
         {
           "name": "zippy",
-          "str": ">= 0.7.3",
+          "str": ">= 0.10.5",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.7.3"
+            "ver": "0.10.5"
           }
         },
         {
@@ -86,18 +86,18 @@
         },
         {
           "name": "wavecore",
-          "str": ">= 0.7.1",
+          "str": ">= 0.8.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.7.1"
+            "ver": "0.8.0"
           }
         },
         {
           "name": "chrono",
-          "str": ">= 0.3.0",
+          "str": ">= 0.3.1",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.3.0"
+            "ver": "0.3.1"
           }
         },
         {
@@ -116,11 +116,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "30b13c9c330dedd8081f7036d7b145804db7cd78"
+      "rev": "f47bac0716a40bcdd7eed73fea08d5ab9d07236d"
     },
     "refs/heads/master": {
       "name": "ansiwave",
-      "version": "1.7.11",
+      "version": "1.8.0",
       "author": "oakes",
       "desc": "ANSI art + MIDI music",
       "license": "Public Domain",
@@ -147,10 +147,10 @@
         },
         {
           "name": "pararules",
-          "str": ">= 1.1.0",
+          "str": ">= 1.2.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.1.0"
+            "ver": "1.2.0"
           }
         },
         {
@@ -179,10 +179,10 @@
         },
         {
           "name": "zippy",
-          "str": ">= 0.7.3",
+          "str": ">= 0.10.5",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.7.3"
+            "ver": "0.10.5"
           }
         },
         {
@@ -195,18 +195,18 @@
         },
         {
           "name": "wavecore",
-          "str": ">= 0.7.1",
+          "str": ">= 0.8.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.7.1"
+            "ver": "0.8.0"
           }
         },
         {
           "name": "chrono",
-          "str": ">= 0.3.0",
+          "str": ">= 0.3.1",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.3.0"
+            "ver": "0.3.1"
           }
         },
         {
@@ -225,7 +225,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "30b13c9c330dedd8081f7036d7b145804db7cd78"
+      "rev": "f47bac0716a40bcdd7eed73fea08d5ab9d07236d"
     },
     "refs/tags/0.1.0": {
       "name": "ansiwave",
@@ -14470,6 +14470,442 @@
       "backend": "c",
       "ref": "refs/tags/1.7.9-windows",
       "rev": "04dd3475503989e62cc1ed9ec39afe9a4a1ba9b6"
+    },
+    "refs/tags/1.8.0": {
+      "name": "ansiwave",
+      "version": "1.8.0",
+      "author": "oakes",
+      "desc": "ANSI art + MIDI music",
+      "license": "Public Domain",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim",
+        "ansiwave",
+        "c",
+        "h",
+        "m"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        },
+        {
+          "name": "pararules",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "paramidi",
+          "str": ">= 0.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.0"
+          }
+        },
+        {
+          "name": "paramidi_soundfonts",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "parasound",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.5"
+          }
+        },
+        {
+          "name": "stb_image",
+          "str": ">= 2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2.5"
+          }
+        },
+        {
+          "name": "wavecore",
+          "str": ">= 0.8.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.8.0"
+          }
+        },
+        {
+          "name": "chrono",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "nimwave",
+          "str": ">= 1.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "ansiwave"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.8.0",
+      "rev": "f47bac0716a40bcdd7eed73fea08d5ab9d07236d"
+    },
+    "refs/tags/1.8.0-linux": {
+      "name": "ansiwave",
+      "version": "1.8.0",
+      "author": "oakes",
+      "desc": "ANSI art + MIDI music",
+      "license": "Public Domain",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim",
+        "ansiwave",
+        "c",
+        "h",
+        "m"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        },
+        {
+          "name": "pararules",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "paramidi",
+          "str": ">= 0.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.0"
+          }
+        },
+        {
+          "name": "paramidi_soundfonts",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "parasound",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.5"
+          }
+        },
+        {
+          "name": "stb_image",
+          "str": ">= 2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2.5"
+          }
+        },
+        {
+          "name": "wavecore",
+          "str": ">= 0.8.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.8.0"
+          }
+        },
+        {
+          "name": "chrono",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "nimwave",
+          "str": ">= 1.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "ansiwave"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.8.0-linux",
+      "rev": "289c598817141c01cd5eb3cbdd12bc5c686a750a"
+    },
+    "refs/tags/1.8.0-macos": {
+      "name": "ansiwave",
+      "version": "1.8.0",
+      "author": "oakes",
+      "desc": "ANSI art + MIDI music",
+      "license": "Public Domain",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim",
+        "ansiwave",
+        "c",
+        "h",
+        "m"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        },
+        {
+          "name": "pararules",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "paramidi",
+          "str": ">= 0.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.0"
+          }
+        },
+        {
+          "name": "paramidi_soundfonts",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "parasound",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.5"
+          }
+        },
+        {
+          "name": "stb_image",
+          "str": ">= 2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2.5"
+          }
+        },
+        {
+          "name": "wavecore",
+          "str": ">= 0.8.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.8.0"
+          }
+        },
+        {
+          "name": "chrono",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "nimwave",
+          "str": ">= 1.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "ansiwave"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.8.0-macos",
+      "rev": "1929a2a82ee2205b5fb05bfc86fd14e5afd6e2a1"
+    },
+    "refs/tags/1.8.0-windows": {
+      "name": "ansiwave",
+      "version": "1.8.0",
+      "author": "oakes",
+      "desc": "ANSI art + MIDI music",
+      "license": "Public Domain",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim",
+        "ansiwave",
+        "c",
+        "h",
+        "m"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        },
+        {
+          "name": "pararules",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "paramidi",
+          "str": ">= 0.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.0"
+          }
+        },
+        {
+          "name": "paramidi_soundfonts",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "parasound",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.5"
+          }
+        },
+        {
+          "name": "stb_image",
+          "str": ">= 2.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2.5"
+          }
+        },
+        {
+          "name": "wavecore",
+          "str": ">= 0.8.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.8.0"
+          }
+        },
+        {
+          "name": "chrono",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
+          }
+        },
+        {
+          "name": "nimwave",
+          "str": ">= 1.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "ansiwave"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.8.0-windows",
+      "rev": "5730784b71f569647d94f9c8c16d3753f2bf8363"
     }
   },
   "cudf": {
@@ -14515,7 +14951,8 @@
       "1007006": "refs/tags/1.7.6",
       "1007007": "refs/tags/1.7.7-windows",
       "1007008": "refs/tags/1.7.8",
-      "1007009": "refs/tags/1.7.9-windows"
+      "1007009": "refs/tags/1.7.9-windows",
+      "1008000": "refs/tags/1.8.0-windows"
     }
   }
 }

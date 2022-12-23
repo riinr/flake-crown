@@ -11,7 +11,7 @@
   "refs": {
     "HEAD": {
       "name": "ansiutils",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": "oakes",
       "desc": "Utilities for parsing CP437 and ANSI escape codes",
       "license": "Public Domain",
@@ -38,11 +38,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "96339ee3c42d466411ffd03101bb0efe3d1dc91f"
+      "rev": "65811c1556cd103a060dcf0e08d2d5090633b8fd"
     },
     "refs/heads/master": {
       "name": "ansiutils",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": "oakes",
       "desc": "Utilities for parsing CP437 and ANSI escape codes",
       "license": "Public Domain",
@@ -69,7 +69,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "96339ee3c42d466411ffd03101bb0efe3d1dc91f"
+      "rev": "65811c1556cd103a060dcf0e08d2d5090633b8fd"
     },
     "refs/tags/0.1.0": {
       "name": "ansiutils",
@@ -101,12 +101,44 @@
       "backend": "c",
       "ref": "refs/tags/0.1.0",
       "rev": "7e8057e76b33d1fda59eba2c8f5a50e447615f80"
+    },
+    "refs/tags/0.2.0": {
+      "name": "ansiutils",
+      "version": "0.2.0",
+      "author": "oakes",
+      "desc": "Utilities for parsing CP437 and ANSI escape codes",
+      "license": "Public Domain",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.2.0",
+      "rev": "65811c1556cd103a060dcf0e08d2d5090633b8fd"
     }
   },
   "cudf": {
     "name": "ansiutils",
     "version": {
-      "1000": "refs/tags/0.1.0"
+      "1000": "refs/tags/0.1.0",
+      "2000": "refs/tags/0.2.0"
     }
   }
 }

@@ -11,7 +11,7 @@
   "refs": {
     "HEAD": {
       "name": "pvim",
-      "version": "0.18.3",
+      "version": "0.18.4",
       "author": "oakes",
       "desc": "A parasitic editor",
       "license": "Public Domain",
@@ -34,10 +34,10 @@
         },
         {
           "name": "paravim",
-          "str": ">= 0.18.3",
+          "str": ">= 0.18.4",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.18.3"
+            "ver": "0.18.4"
           }
         }
       ],
@@ -48,11 +48,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "6cb3869e6cd8f86d5c278370b6b5080f92923830"
+      "rev": "4c1a262aa861d887b450c350be196c231f40b7e6"
     },
     "refs/heads/master": {
       "name": "pvim",
-      "version": "0.18.3",
+      "version": "0.18.4",
       "author": "oakes",
       "desc": "A parasitic editor",
       "license": "Public Domain",
@@ -75,10 +75,10 @@
         },
         {
           "name": "paravim",
-          "str": ">= 0.18.3",
+          "str": ">= 0.18.4",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.18.3"
+            "ver": "0.18.4"
           }
         }
       ],
@@ -89,7 +89,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "6cb3869e6cd8f86d5c278370b6b5080f92923830"
+      "rev": "4c1a262aa861d887b450c350be196c231f40b7e6"
     },
     "refs/tags/0.1.0": {
       "name": "pvim",
@@ -724,6 +724,47 @@
       "ref": "refs/tags/0.18.3",
       "rev": "21697a82c2bcf82a0ff572386462ee35e47d4348"
     },
+    "refs/tags/0.18.4": {
+      "name": "pvim",
+      "version": "0.18.4",
+      "author": "oakes",
+      "desc": "A parasitic editor",
+      "license": "Public Domain",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "so"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.6"
+          }
+        },
+        {
+          "name": "paravim",
+          "str": ">= 0.18.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.4"
+          }
+        }
+      ],
+      "bin": [
+        "pvim"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.18.4",
+      "rev": "4c1a262aa861d887b450c350be196c231f40b7e6"
+    },
     "refs/tags/0.2.0": {
       "name": "pvim",
       "version": "0.2.0",
@@ -1071,6 +1112,7 @@
       "18001": "refs/tags/0.18.1",
       "18002": "refs/tags/0.18.2",
       "18003": "refs/tags/0.18.3",
+      "18004": "refs/tags/0.18.4",
       "2000": "refs/tags/0.2.0",
       "3000": "refs/tags/0.3.0",
       "4000": "refs/tags/0.4.0",
