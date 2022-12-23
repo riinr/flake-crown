@@ -41,12 +41,13 @@ let
         f'   = builtins.replaceStrings [".json"] [".toml"] f;
         json = builtins.fromJSON (builtins.readFile (./. + f ));
         toml = builtins.fromTOML (builtins.readFile (./. + f'));
-      in builtins.trace (f') builtins.trace (builtins.pathExists f') json // toml;
+      in json // { extra = toml; };
       meta     = fromMeta cudfMap.${pkg.package};
       ref      = meta.cudf.version.${pkg.version};
     in meta.refs.${ref} // {
       url      = meta.url;
       cudfName = pkg.package;
+      extra    = meta.extra;
     };
     metaToResult = meta: 
     let src = builtins.fetchGit {
@@ -54,7 +55,7 @@ let
       ref  = meta.ref;
       rev  = meta.rev;
       url  = meta.url;
-      submodules = builtins.trace (builtins.attrNames meta) true;
+      submodules = meta.extra ? submodules;
     };
     in {
       name  = meta.name;
