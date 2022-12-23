@@ -36,8 +36,13 @@ let
   respToMeta  = resp:
     let 
       pkg      = builtins.fromTOML (builtins.replaceStrings [": " "\n"] ['' = "'' "\"\n"] resp + ''"'');
-      fromJSON = f: builtins.fromJSON (builtins.readFile f);
-      meta     = fromJSON (./. + cudfMap.${pkg.package});
+      fromMeta = f:
+      let
+        f'   = builtins.replaceStrings [".json"] [".toml"] f;
+        json = builtins.fromJSON (builtins.readFile (./. + f ));
+        toml = builtins.fromTOML (builtins.readFile (./. + f'));
+      in builtins.trace (f') builtins.trace (builtins.pathExists f') json // toml;
+      meta     = fromMeta cudfMap.${pkg.package};
       ref      = meta.cudf.version.${pkg.version};
     in meta.refs.${ref} // {
       url      = meta.url;
@@ -49,6 +54,7 @@ let
       ref  = meta.ref;
       rev  = meta.rev;
       url  = meta.url;
+      submodules = builtins.trace (builtins.attrNames meta) true;
     };
     in {
       name  = meta.name;
