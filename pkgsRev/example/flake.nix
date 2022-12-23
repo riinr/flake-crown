@@ -1,16 +1,14 @@
 {
-  inputs.nimrevs.url = "github:riinr/flake-crown?dir=pkgsRev";
+  inputs.nimrevs.url     = "github:riinr/flake-crown?dir=pkgsRev";
   inputs.nixpkgsMast.url = "github:NixOS/nixpkgs";
   inputs.nixpkgs2205.url = "github:NixOS/nixpkgs/22.05";
   inputs.nixpkgs2211.url = "github:NixOS/nixpkgs/22.11";
   inputs.nixpkgsClin.url = "github:vbgl/nixpkgs/clasp-is-clingo";
 
   outputs = inputs:
-  let
-    pkgsOf = nixpkgsVersion: nixpkgsVersion.legacyPackages.x86_64-linux;
-    mkPkg  = nixpkgsVersion:
+  let mkPkg  = nixpkgsVersion:
     let
-      pkgs   = pkgsOf nixpkgsVersion;
+      pkgs   = nixpkgsVersion.legacyPackages.x86_64-linux;
       toFlag = builtins.map (src: "-p:${src}");
       deps   = inputs.nimrevs.lib.srcs {
         inherit pkgs;
