@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "htest",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": "Yandall",
       "desc": "Library to test html strings using css query selectors",
       "license": "MIT",
@@ -27,10 +27,10 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.6.8",
+          "str": ">= 0.20.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.6.8"
+            "ver": "0.20.0"
           }
         },
         {
@@ -46,11 +46,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "3e99ded58c9aabe44c05b5a1a747e146f7eabbbf"
+      "rev": "236f95e35e1946e86a0c3df9e416b461dd0e874c"
     },
     "refs/heads/main": {
       "name": "htest",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": "Yandall",
       "desc": "Library to test html strings using css query selectors",
       "license": "MIT",
@@ -63,10 +63,10 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.6.8",
+          "str": ">= 0.20.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.6.8"
+            "ver": "0.20.0"
           }
         },
         {
@@ -82,7 +82,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "3e99ded58c9aabe44c05b5a1a747e146f7eabbbf"
+      "rev": "236f95e35e1946e86a0c3df9e416b461dd0e874c"
     },
     "refs/tags/0.1.0": {
       "name": "htest",
@@ -119,12 +119,49 @@
       "backend": "c",
       "ref": "refs/tags/0.1.0",
       "rev": "3e99ded58c9aabe44c05b5a1a747e146f7eabbbf"
+    },
+    "refs/tags/0.1.1": {
+      "name": "htest",
+      "version": "0.1.1",
+      "author": "Yandall",
+      "desc": "Library to test html strings using css query selectors",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "nimquery",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.1",
+      "rev": "236f95e35e1946e86a0c3df9e416b461dd0e874c"
     }
   },
   "cudf": {
     "name": "htest",
     "version": {
-      "1000": "refs/tags/0.1.0"
+      "1000": "refs/tags/0.1.0",
+      "1001": "refs/tags/0.1.1"
     }
   }
 }

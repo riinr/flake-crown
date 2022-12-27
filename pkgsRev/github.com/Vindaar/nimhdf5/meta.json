@@ -35,18 +35,18 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.0.0",
+          "str": ">= 1.4.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.0.0"
+            "ver": "1.4.0"
           }
         },
         {
           "name": "https://github.com/vindaar/seqmath",
-          "str": ">= 0.1.12",
+          "str": ">= 0.1.17",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.1.12"
+            "ver": "0.1.17"
           }
         }
       ],
@@ -55,7 +55,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "91f9adc5c7c205fa25e388296b51d1223c29996d"
+      "rev": "136c0000ad436a4d8b109d0fabbb7d78c0c6e83d"
     },
     "refs/heads/addCI": {
       "name": "nimhdf5",
@@ -833,18 +833,18 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.0.0",
+          "str": ">= 1.4.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.0.0"
+            "ver": "1.4.0"
           }
         },
         {
           "name": "https://github.com/vindaar/seqmath",
-          "str": ">= 0.1.12",
+          "str": ">= 0.1.17",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.1.12"
+            "ver": "0.1.17"
           }
         }
       ],
@@ -853,7 +853,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "91f9adc5c7c205fa25e388296b51d1223c29996d"
+      "rev": "136c0000ad436a4d8b109d0fabbb7d78c0c6e83d"
     },
     "refs/heads/miscFixes": {
       "name": "nimhdf5",
@@ -896,6 +896,48 @@
       "backend": "c",
       "ref": "refs/heads/miscFixes",
       "rev": "de221eda100710625cd43cbb9e9c5a66b939df25"
+    },
+    "refs/heads/morePtrAccess": {
+      "name": "nimhdf5",
+      "version": "0.5.1",
+      "author": "Sebastian Schmidt",
+      "desc": "Bindings for the HDF5 data format C library",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "c_headers"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim~"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "https://github.com/vindaar/seqmath",
+          "str": ">= 0.1.17",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.17"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/morePtrAccess",
+      "rev": "15a057636fe97b54c80a3bb3df5f3abd9bd18b29"
     },
     "refs/heads/overwriteWrite": {
       "name": "nimhdf5",

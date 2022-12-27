@@ -11,7 +11,7 @@
   "refs": {
     "HEAD": {
       "name": "nimwave",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": "oakes",
       "desc": "A TUI -> GUI library",
       "license": "Public Domain",
@@ -52,11 +52,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "f8bccfdde67a3bbc341e22a5c386536e4f8fbe06"
+      "rev": "8021c4d4cc82e51e7160858bf902e123f6589511"
     },
     "refs/heads/master": {
       "name": "nimwave",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": "oakes",
       "desc": "A TUI -> GUI library",
       "license": "Public Domain",
@@ -97,7 +97,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "f8bccfdde67a3bbc341e22a5c386536e4f8fbe06"
+      "rev": "8021c4d4cc82e51e7160858bf902e123f6589511"
     },
     "refs/tags/0.1.0": {
       "name": "nimwave",
@@ -548,6 +548,51 @@
       "backend": "c",
       "ref": "refs/tags/1.1.0",
       "rev": "877f3aec56a79e59638aee0714c2bbdb41426c55"
+    },
+    "refs/tags/1.2.0": {
+      "name": "nimwave",
+      "version": "1.2.0",
+      "author": "oakes",
+      "desc": "A TUI -> GUI library",
+      "license": "Public Domain",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "ansiutils",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "illwave",
+          "str": ">= 0.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.2.0",
+      "rev": "8021c4d4cc82e51e7160858bf902e123f6589511"
     }
   },
   "cudf": {
@@ -562,7 +607,8 @@
       "7000": "refs/tags/0.7.0",
       "8000": "refs/tags/0.8.0",
       "1000000": "refs/tags/1.0.0",
-      "1001000": "refs/tags/1.1.0"
+      "1001000": "refs/tags/1.1.0",
+      "1002000": "refs/tags/1.2.0"
     }
   }
 }

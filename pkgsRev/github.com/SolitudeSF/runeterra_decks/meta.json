@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "runeterra_decks",
-      "version": "0.7.1",
+      "version": "0.8.0",
       "author": "SolitudeSF",
       "desc": "Legends of Runeterra deck/card code encoder/decoder",
       "license": "MIT",
@@ -46,11 +46,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "95e88ba9152a2d4900677b6f53a434a8fa81bfce"
+      "rev": "2bdbdc20ecd6692dd43aeeebbf7a2a9f9d253fbb"
     },
     "refs/heads/master": {
       "name": "runeterra_decks",
-      "version": "0.7.1",
+      "version": "0.8.0",
       "author": "SolitudeSF",
       "desc": "Legends of Runeterra deck/card code encoder/decoder",
       "license": "MIT",
@@ -82,7 +82,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "95e88ba9152a2d4900677b6f53a434a8fa81bfce"
+      "rev": "2bdbdc20ecd6692dd43aeeebbf7a2a9f9d253fbb"
     },
     "refs/tags/v0.1.0": {
       "name": "runeterra_decks",
@@ -515,6 +515,42 @@
       "backend": "c",
       "ref": "refs/tags/v0.7.1",
       "rev": "95e88ba9152a2d4900677b6f53a434a8fa81bfce"
+    },
+    "refs/tags/v0.8.0": {
+      "name": "runeterra_decks",
+      "version": "0.8.0",
+      "author": "SolitudeSF",
+      "desc": "Legends of Runeterra deck/card code encoder/decoder",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.8.0",
+      "rev": "2bdbdc20ecd6692dd43aeeebbf7a2a9f9d253fbb"
     }
   },
   "cudf": {
@@ -531,7 +567,8 @@
       "6000": "refs/tags/v0.6.0",
       "6001": "refs/tags/v0.6.1",
       "7000": "refs/tags/v0.7.0",
-      "7001": "refs/tags/v0.7.1"
+      "7001": "refs/tags/v0.7.1",
+      "8000": "refs/tags/v0.8.0"
     }
   }
 }

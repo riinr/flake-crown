@@ -10,7 +10,7 @@
   "refs": {
     "HEAD": {
       "name": "balls",
-      "version": "3.9.5",
+      "version": "3.9.8",
       "author": "disruptek",
       "desc": "a unittest framework with balls 🔴🟡🟢",
       "license": "MIT",
@@ -58,11 +58,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "f8e9c62b2341894c14b701b2e9bae9d2b790bb7d"
+      "rev": "2f5de562e42604009bc4b47f71cec0285b3b9681"
     },
     "refs/heads/master": {
       "name": "balls",
-      "version": "3.9.5",
+      "version": "3.9.8",
       "author": "disruptek",
       "desc": "a unittest framework with balls 🔴🟡🟢",
       "license": "MIT",
@@ -110,7 +110,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "f8e9c62b2341894c14b701b2e9bae9d2b790bb7d"
+      "rev": "2f5de562e42604009bc4b47f71cec0285b3b9681"
     },
     "refs/heads/tools": {
       "name": "balls",
@@ -181,7 +181,7 @@
     },
     "refs/heads/v4": {
       "name": "balls",
-      "version": "4.0.6",
+      "version": "4.0.8",
       "author": "disruptek",
       "desc": "a unittest framework with balls 🔴🟡🟢",
       "license": "MIT",
@@ -244,7 +244,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/v4",
-      "rev": "83e4cd60c024d850d6d2d98801d11bb146847e94"
+      "rev": "385dfeaa0ab9e22669c03ecbff50c5d88abec325"
     },
     "refs/tags/0.1.0": {
       "name": "testes",
@@ -7546,6 +7546,162 @@
       "ref": "refs/tags/3.9.5",
       "rev": "7efd9e921343f611bcd4c461e2d0aa341d5c2006"
     },
+    "refs/tags/3.9.6": {
+      "name": "balls",
+      "version": "3.9.6",
+      "author": "disruptek",
+      "desc": "a unittest framework with balls 🔴🟡🟢",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "balls.nim"
+      ],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "https://github.com/disruptek/grok",
+          "str": ">= 0.5.0 & < 1.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.0.0"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/ups",
+          "str": "< 1.0.0",
+          "ver": {
+            "kind": "verEarlier",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [
+        "balls"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/3.9.6",
+      "rev": "25b810aac57f9ec198e7ac4ccd91716e81720020"
+    },
+    "refs/tags/3.9.7": {
+      "name": "balls",
+      "version": "3.9.7",
+      "author": "disruptek",
+      "desc": "a unittest framework with balls 🔴🟡🟢",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "balls.nim"
+      ],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "https://github.com/disruptek/grok",
+          "str": ">= 0.5.0 & < 1.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.0.0"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/ups",
+          "str": "< 1.0.0",
+          "ver": {
+            "kind": "verEarlier",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [
+        "balls"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/3.9.7",
+      "rev": "9829c9b1bce1c3f78e62cdf399a4271b4abd2878"
+    },
+    "refs/tags/3.9.8": {
+      "name": "balls",
+      "version": "3.9.8",
+      "author": "disruptek",
+      "desc": "a unittest framework with balls 🔴🟡🟢",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "balls.nim"
+      ],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "https://github.com/disruptek/grok",
+          "str": ">= 0.5.0 & < 1.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.0.0"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/ups",
+          "str": "< 1.0.0",
+          "ver": {
+            "kind": "verEarlier",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [
+        "balls"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/3.9.8",
+      "rev": "6b58c5d32ad380f50d56a6f82c0f05f3d3125f19"
+    },
     "refs/tags/4.0.0": {
       "name": "balls",
       "version": "4.0.0",
@@ -7948,6 +8104,140 @@
       "ref": "refs/tags/4.0.5",
       "rev": "f044c414577e929f90723206a6d4011a7749cd62"
     },
+    "refs/tags/4.0.7": {
+      "name": "balls",
+      "version": "4.0.7",
+      "author": "disruptek",
+      "desc": "a unittest framework with balls 🔴🟡🟢",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "balls.nim"
+      ],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "https://github.com/disruptek/grok",
+          "str": ">= 0.5.0 & < 1.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.0.0"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/ups",
+          "str": "< 1.0.0",
+          "ver": {
+            "kind": "verEarlier",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/insideout",
+          "str": ">= 0.0.2 & < 1.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.0.0"
+            }
+          }
+        }
+      ],
+      "bin": [
+        "balls"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/4.0.7",
+      "rev": "42633d5a56116e2b0a11fb231b23550cea68953a"
+    },
+    "refs/tags/4.0.8": {
+      "name": "balls",
+      "version": "4.0.8",
+      "author": "disruptek",
+      "desc": "a unittest framework with balls 🔴🟡🟢",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "balls.nim"
+      ],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "https://github.com/disruptek/grok",
+          "str": ">= 0.5.0 & < 1.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.0.0"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/ups",
+          "str": "< 1.0.0",
+          "ver": {
+            "kind": "verEarlier",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/insideout",
+          "str": ">= 0.0.2 & < 1.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.0.0"
+            }
+          }
+        }
+      ],
+      "bin": [
+        "balls"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/4.0.8",
+      "rev": "11944adaa7886993b643dbbf9164931bcc97843a"
+    },
     "refs/tags/rc": {
       "name": "balls",
       "version": "2.4.5",
@@ -8130,11 +8420,16 @@
       "3009003": "refs/tags/3.9.3",
       "3009004": "refs/tags/3.9.4",
       "3009005": "refs/tags/3.9.5",
+      "3009006": "refs/tags/3.9.6",
+      "3009007": "refs/tags/3.9.7",
+      "3009008": "refs/tags/3.9.8",
       "4000000": "refs/tags/4.0.1",
       "4000002": "refs/tags/4.0.2",
       "4000003": "refs/tags/4.0.3",
       "4000004": "refs/tags/4.0.4",
-      "4000005": "refs/tags/4.0.5"
+      "4000005": "refs/tags/4.0.5",
+      "4000007": "refs/tags/4.0.7",
+      "4000008": "refs/tags/4.0.8"
     }
   }
 }

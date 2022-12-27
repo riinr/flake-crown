@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "notcurses",
-      "version": "3.0.7",
+      "version": "3.0.9",
       "author": "Michael Bradley, Jr.",
       "desc": "A wrapper for Notcurses",
       "license": "Apache License 2.0 or MIT",
@@ -51,11 +51,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "10c8fd9015181f7402b51bc8215a8b730c1c38e1"
+      "rev": "051556320d1bcc668fd5c4251d8357ffbdff2f3d"
     },
     "refs/heads/master": {
       "name": "notcurses",
-      "version": "3.0.7",
+      "version": "3.0.9",
       "author": "Michael Bradley, Jr.",
       "desc": "A wrapper for Notcurses",
       "license": "Apache License 2.0 or MIT",
@@ -93,11 +93,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "10c8fd9015181f7402b51bc8215a8b730c1c38e1"
+      "rev": "051556320d1bcc668fd5c4251d8357ffbdff2f3d"
     },
     "refs/heads/version_3_revamp": {
       "name": "notcurses",
-      "version": "3.0.7",
+      "version": "3.0.9",
       "author": "Michael Bradley, Jr.",
       "desc": "A wrapper for Notcurses",
       "license": "Apache License 2.0 or MIT",
@@ -124,7 +124,38 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/version_3_revamp",
-      "rev": "9509c045377cae41d46ae27c4270e8f426c021b3"
+      "rev": "c77f5b332170fde7ac3e41b413bdba33c15fd918"
+    },
+    "refs/heads/version_3_revamp_2": {
+      "name": "notcurses",
+      "version": "3.0.9",
+      "author": "Michael Bradley, Jr.",
+      "desc": "A wrapper for Notcurses",
+      "license": "Apache License 2.0 or MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "notcurses.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/version_3_revamp_2",
+      "rev": "f83a2f3fd743eacd6e2f61f67aea053febd03c9e"
     },
     "refs/tags/v2.3.13": {
       "name": "notcurses",
@@ -1133,6 +1164,90 @@
       "backend": "c",
       "ref": "refs/tags/v3.0.7",
       "rev": "10c8fd9015181f7402b51bc8215a8b730c1c38e1"
+    },
+    "refs/tags/v3.0.8": {
+      "name": "notcurses",
+      "version": "3.0.8",
+      "author": "Michael Bradley, Jr.",
+      "desc": "A wrapper for Notcurses",
+      "license": "Apache License 2.0 or MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "notcurses"
+      ],
+      "installFiles": [
+        "notcurses.nim",
+        "notcurses.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.12",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.12"
+          }
+        },
+        {
+          "name": "nimterop",
+          "str": ">= 0.6.13",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.13"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v3.0.8",
+      "rev": "8d0b6b6e934a711e2b14d98502a88f4ff725a1cb"
+    },
+    "refs/tags/v3.0.9": {
+      "name": "notcurses",
+      "version": "3.0.9",
+      "author": "Michael Bradley, Jr.",
+      "desc": "A wrapper for Notcurses",
+      "license": "Apache License 2.0 or MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "notcurses"
+      ],
+      "installFiles": [
+        "notcurses.nim",
+        "notcurses.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.12",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.12"
+          }
+        },
+        {
+          "name": "nimterop",
+          "str": ">= 0.6.13",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.13"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v3.0.9",
+      "rev": "051556320d1bcc668fd5c4251d8357ffbdff2f3d"
     }
   },
   "cudf": {
@@ -1161,7 +1276,9 @@
       "3000004": "refs/tags/v3.0.4",
       "3000005": "refs/tags/v3.0.5",
       "3000006": "refs/tags/v3.0.6",
-      "3000007": "refs/tags/v3.0.7"
+      "3000007": "refs/tags/v3.0.7",
+      "3000008": "refs/tags/v3.0.8",
+      "3000009": "refs/tags/v3.0.9"
     }
   }
 }

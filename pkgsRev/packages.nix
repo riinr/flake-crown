@@ -140,6 +140,7 @@
   "bipbuffer"                             = "/github.com/MarcAzar/bipbuffer/meta.json";
   "biscuits"                              = "/github.com/achesak/biscuits/meta.json";
   "bisect"                                = "/github.com/berquist/bisect/meta.json";
+  "bitables"                              = "/github.com/Retkid/bitables/meta.json";
   "bitarray"                              = "/github.com/onecodex/bitarray/meta.json";
   "bitcoinlightning"                      = "/github.com/juancarlospaco/bitcoinlightning/meta.json";
   "bitseqs"                               = "/github.com/adokitkat/bitseqs/meta.json";
@@ -331,6 +332,7 @@
   "denimuicairo"                          = "/github.com/nortero-code/denim_ui_cairo/meta.json";
   "denimuicanvas"                         = "/github.com/nortero-code/denim_ui_canvas/meta.json";
   "denimui"                               = "/github.com/nortero-code/denim_ui/meta.json";
+  "depot"                                 = "/github.com/guzba/depot/meta.json";
   "deriveables"                           = "/github.com/PMunch/deriveables/meta.json";
   "deser"                                 = "/github.com/gabbhack/deser/meta.json";
   "deserjson"                             = "/github.com/gabbhack/deser_json/meta.json";
@@ -679,6 +681,7 @@
   "hpprint"                               = "/github.com/haxscramper/hpprint/meta.json";
   "hpx"                                   = "/github.com/ct-clmsn/nim-hpx/hpx/meta.json";
   "hsluv"                                 = "/github.com/isthisnagee/hsluv/meta.json";
+  "htest"                                 = "/github.com/Yandall/HTest/htest/meta.json";
   "html2karax"                            = "/github.com/nim-lang-cn/html2karax/meta.json";
   "html5canvas"                           = "/gitlab.com/define-private-public/html5_canvas/meta.json";
   "htmlanticopy"                          = "/git.ozzuu.com/thisago/htmlanticopy/meta.json";
@@ -718,6 +721,7 @@
   "imstyle"                               = "/github.com/Patitotective/imstyle/meta.json";
   "influx"                                = "/github.com/samdmarshall/influx/meta.json";
   "inim"                                  = "/github.com/inim-repl/inim/meta.json";
+  "integers"                              = "/github.com/fsh/integers/meta.json";
   "intelhex"                              = "/github.com/keyme/intel_hex/meta.json";
   "interfaced"                            = "/github.com/andreaferretti/interfaced/meta.json";
   "interfaceimplements"                   = "/github.com/itsumura-h/interface_implements/meta.json";
@@ -1322,6 +1326,7 @@
   "onnxruntime"                           = "/github.com/YesDrX/onnxruntime/meta.json";
   "oolib"                                 = "/github.com/Glasses-Neo/oolib/meta.json";
   "ooputils"                              = "/github.com/bluenote10/oop_utils/meta.json";
+  "openai"                                = "/github.com/ThomasTJdev/openai/meta.json";
   "openal"                                = "/github.com/treeform/openal/meta.json";
   "openapi"                               = "/github.com/disruptek/openapi/meta.json";
   "opencl"                                = "/github.com/nim-lang/opencl/meta.json";
@@ -1572,6 +1577,7 @@
   "romans"                                = "/github.com/lcrees/romans/meta.json";
   "roots"                                 = "/github.com/BarrOff/roots/meta.json";
   "rosencrantz"                           = "/github.com/andreaferretti/rosencrantz/meta.json";
+  "rowdy"                                 = "/github.com/ajusa/rowdy/meta.json";
   "rpgsheet"                              = "/git.skylarhill.me/skylar/rpgsheet/meta.json";
   "rss"                                   = "/github.com/achesak/rss/meta.json";
   "rsvg"                                  = "/github.com/def-/rsvg/meta.json";
@@ -1873,6 +1879,7 @@
   "torm"                                  = "/github.com/enimatek-nl/torm/meta.json";
   "toxcore"                               = "/git.sr.ht/~ehmry/toxcore/meta.json";
   "tradingview"                           = "/github.com/juancarlospaco/tradingview/meta.json";
+  "tram"                                  = "/github.com/facorazza/tram/meta.json";
   "translation"                           = "/github.com/juancarlospaco/translation/meta.json";
   "trayx"                                 = "/github.com/teob97/trayx/meta.json";
   "treesitteragda"                        = "/github.com/genotrance/treesitter_agda/meta.json";
@@ -1899,6 +1906,7 @@
   "tsundoku"                              = "/github.com/FedericoCeratto/tsundoku/meta.json";
   "tsv2json"                              = "/github.com/hectormonacci/tsv2json/meta.json";
   "ttmath"                                = "/github.com/status-im/ttmath/meta.json";
+  "ttop"                                  = "/github.com/inv2004/ttop/meta.json";
   "tuples"                                = "/github.com/MasonMcGill/tuples/meta.json";
   "turnbasedgame"                         = "/github.com/JohnAD/turn_based_game/meta.json";
   "tweens"                                = "/github.com/RainbowAsteroids/tweens/meta.json";
@@ -1981,6 +1989,7 @@
   "weave"                                 = "/github.com/mratsim/weave/meta.json";
   "web3"                                  = "/github.com/status-im/web3/meta.json";
   "webaudio"                              = "/github.com/ftsf/webaudio/meta.json";
+  "webby"                                 = "/github.com/treeform/webby/webby/meta.json";
   "webdavclient"                          = "/github.com/beshrkayali/webdavclient/meta.json";
   "webdriver"                             = "/github.com/dom96/webdriver/meta.json";
   "webgl"                                 = "/github.com/stisa/webgl/meta.json";

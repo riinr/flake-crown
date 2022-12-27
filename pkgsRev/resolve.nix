@@ -65,6 +65,7 @@ let
         pname   = meta.name;
         src     = src;
         version = meta.version;
+        propagatedBuildInputs = map (v: pkgs.${v}) (meta.extra.runtime-dependencies or []);
       };
     };
 in builtins.listToAttrs (map metaToResult (map respToMeta responses))

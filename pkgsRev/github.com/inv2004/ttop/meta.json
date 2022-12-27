@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "ttop",
-      "version": "0.3.4",
+      "version": "0.3.5",
       "author": "inv2004",
       "desc": "Monitoring tool with historical snapshots",
       "license": "MIT",
@@ -64,11 +64,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "aca0f1a4f40ad89c980184d4bd179e03a50305dc"
+      "rev": "62dbf861f23bc03a151ffe4490ad83d6cb7e54e9"
     },
     "refs/heads/main": {
       "name": "ttop",
-      "version": "0.3.4",
+      "version": "0.3.5",
       "author": "inv2004",
       "desc": "Monitoring tool with historical snapshots",
       "license": "MIT",
@@ -118,7 +118,61 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "aca0f1a4f40ad89c980184d4bd179e03a50305dc"
+      "rev": "62dbf861f23bc03a151ffe4490ad83d6cb7e54e9"
+    },
+    "refs/heads/threads": {
+      "name": "ttop",
+      "version": "0.3.5",
+      "author": "inv2004",
+      "desc": "Monitoring tool with historical snapshots",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "illwill",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asciigraph",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "ttop"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/threads",
+      "rev": "1e061543437ec5fc89f1b6bd2379bb8e7d11badf"
     },
     "refs/tags/v0.3.1": {
       "name": "ttop",
@@ -335,6 +389,384 @@
       "backend": "c",
       "ref": "refs/tags/v0.3.4",
       "rev": "bb93a03feb0e915225b7da02d89f09dbdbc71d6a"
+    },
+    "refs/tags/v0.3.5": {
+      "name": "ttop",
+      "version": "0.3.4",
+      "author": "inv2004",
+      "desc": "Monitoring tool with historical snapshots",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "illwill",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asciigraph",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "ttop"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.5",
+      "rev": "9b1c1c3c7e800d6630ac337937574203c52961cf"
+    },
+    "refs/tags/v0.4.0": {
+      "name": "ttop",
+      "version": "0.3.5",
+      "author": "inv2004",
+      "desc": "Monitoring tool with historical snapshots",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "illwill",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asciigraph",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "ttop"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.0",
+      "rev": "1e061543437ec5fc89f1b6bd2379bb8e7d11badf"
+    },
+    "refs/tags/v0.4.1": {
+      "name": "ttop",
+      "version": "0.3.5",
+      "author": "inv2004",
+      "desc": "Monitoring tool with historical snapshots",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "illwill",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asciigraph",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "ttop"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.1",
+      "rev": "bd7f5270a1e52897ec6e7b5e8976fb67d65b66f2"
+    },
+    "refs/tags/v0.4.2": {
+      "name": "ttop",
+      "version": "0.3.5",
+      "author": "inv2004",
+      "desc": "Monitoring tool with historical snapshots",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "illwill",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asciigraph",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "ttop"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.2",
+      "rev": "bd42400c2d0022d9419d7f4a0080681334e7f213"
+    },
+    "refs/tags/v0.4.3": {
+      "name": "ttop",
+      "version": "0.3.5",
+      "author": "inv2004",
+      "desc": "Monitoring tool with historical snapshots",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "illwill",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asciigraph",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "ttop"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.3",
+      "rev": "d6d54611cd07a5a8d619d5871a0878c210bdf884"
+    },
+    "refs/tags/v0.4.4": {
+      "name": "ttop",
+      "version": "0.3.5",
+      "author": "inv2004",
+      "desc": "Monitoring tool with historical snapshots",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "illwill",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asciigraph",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "ttop"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.4",
+      "rev": "e48123a672c99b0c9aa18977a99c19524bf4c050"
+    },
+    "refs/tags/v0.4.5": {
+      "name": "ttop",
+      "version": "0.3.5",
+      "author": "inv2004",
+      "desc": "Monitoring tool with historical snapshots",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "illwill",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asciigraph",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "ttop"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.5",
+      "rev": "ca47f136b71622802a47cfa8d784195d8ac1ad11"
     }
   },
   "cudf": {
@@ -342,7 +774,8 @@
     "version": {
       "3001": "refs/tags/v0.3.1",
       "3002": "refs/tags/v0.3.3",
-      "3004": "refs/tags/v0.3.4"
+      "3004": "refs/tags/v0.3.5",
+      "3005": "refs/tags/v0.4.5"
     }
   }
 }

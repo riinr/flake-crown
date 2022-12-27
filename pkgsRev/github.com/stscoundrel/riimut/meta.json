@@ -19,7 +19,7 @@
   "refs": {
     "HEAD": {
       "name": "riimut",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "author": "stscoundrel / Sampo Silvennoinen",
       "desc": "Transform latin letters to runes &amp; vice versa",
       "license": "MIT",
@@ -44,11 +44,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "e9c329f10676c531a20f09c0286a76f4677d9de0"
+      "rev": "641c5c028d4bdd6aeac19b17e7b6f15acb063553"
     },
     "refs/heads/main": {
       "name": "riimut",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "author": "stscoundrel / Sampo Silvennoinen",
       "desc": "Transform latin letters to runes &amp; vice versa",
       "license": "MIT",
@@ -73,7 +73,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "e9c329f10676c531a20f09c0286a76f4677d9de0"
+      "rev": "641c5c028d4bdd6aeac19b17e7b6f15acb063553"
     },
     "refs/tags/v1.0.0": {
       "name": "riimut",
@@ -161,6 +161,35 @@
       "backend": "c",
       "ref": "refs/tags/v1.2.0",
       "rev": "e9c329f10676c531a20f09c0286a76f4677d9de0"
+    },
+    "refs/tags/v1.2.1": {
+      "name": "riimut",
+      "version": "1.2.1",
+      "author": "stscoundrel / Sampo Silvennoinen",
+      "desc": "Transform latin letters to runes &amp; vice versa",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v1.2.1",
+      "rev": "641c5c028d4bdd6aeac19b17e7b6f15acb063553"
     }
   },
   "cudf": {
@@ -168,7 +197,8 @@
     "version": {
       "1000000": "refs/tags/v1.0.0",
       "1001000": "refs/tags/v1.1.0",
-      "1002000": "refs/tags/v1.2.0"
+      "1002000": "refs/tags/v1.2.0",
+      "1002001": "refs/tags/v1.2.1"
     }
   }
 }
