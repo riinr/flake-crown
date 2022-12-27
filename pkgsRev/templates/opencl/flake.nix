@@ -1,4 +1,5 @@
 {
+  #inputs.nimrevs.url     = "github:riinr/flake-crown?dir=pkgsRev";
   inputs.nimrevs.url     = "../../";
   inputs.nixpkgs2205.url = "github:NixOS/nixpkgs/22.05";
 
