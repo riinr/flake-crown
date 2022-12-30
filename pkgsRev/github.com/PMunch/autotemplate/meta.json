@@ -52,7 +52,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "d4c14b8028bd181e4aa8ec818d99d24c8082b772"
+      "rev": "253c9fe83d27cce2e88e86a4f52009a358973fd8"
     },
     "refs/heads/master": {
       "name": "autotemplate",
@@ -96,13 +96,57 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "d4c14b8028bd181e4aa8ec818d99d24c8082b772"
+      "rev": "253c9fe83d27cce2e88e86a4f52009a358973fd8"
+    },
+    "refs/tags/v0.1.0": {
+      "name": "autotemplate",
+      "version": "0.3.0",
+      "author": "PMunch",
+      "desc": "Simple auto-templates library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "with",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "templates",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.1.0",
+      "rev": "29610948cc37eb233346b3630e38b1b5a1b650e2"
     }
   },
   "cudf": {
     "name": "autotemplate",
     "version": {
-      "3000": "HEAD"
+      "3000": "refs/tags/v0.1.0"
     }
   }
 }

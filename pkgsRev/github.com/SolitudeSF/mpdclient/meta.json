@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "mpdclient",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "author": "SolitudeSF",
       "desc": "MPD client library",
       "license": "MIT",
@@ -39,11 +39,40 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "580d53c9a903c47f9be2f0e1cc9b0501b3c538a4"
+      "rev": "c1781622e9bf259d890b9b2c5077ee90b71956cf"
+    },
+    "refs/heads/async": {
+      "name": "mpdclient",
+      "version": "0.1.6",
+      "author": "SolitudeSF",
+      "desc": "MPD client library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/async",
+      "rev": "0fb1e5b9ed97bae48306c8f28d40816ac450a7a5"
     },
     "refs/heads/master": {
       "name": "mpdclient",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "author": "SolitudeSF",
       "desc": "MPD client library",
       "license": "MIT",
@@ -68,7 +97,36 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "580d53c9a903c47f9be2f0e1cc9b0501b3c538a4"
+      "rev": "c1781622e9bf259d890b9b2c5077ee90b71956cf"
+    },
+    "refs/heads/view": {
+      "name": "mpdclient",
+      "version": "0.2.2",
+      "author": "SolitudeSF",
+      "desc": "MPD client library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/view",
+      "rev": "b566789edecd1ca559c24a8bf755de982d248e96"
     },
     "refs/tags/v0.1.0": {
       "name": "mpdclient",
@@ -417,6 +475,35 @@
       "backend": "c",
       "ref": "refs/tags/v0.3.0",
       "rev": "580d53c9a903c47f9be2f0e1cc9b0501b3c538a4"
+    },
+    "refs/tags/v0.3.1": {
+      "name": "mpdclient",
+      "version": "0.3.1",
+      "author": "SolitudeSF",
+      "desc": "MPD client library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.1",
+      "rev": "c1781622e9bf259d890b9b2c5077ee90b71956cf"
     }
   },
   "cudf": {
@@ -433,7 +520,8 @@
       "2000": "refs/tags/v0.2.0",
       "2001": "refs/tags/v0.2.1",
       "2002": "refs/tags/v0.2.2",
-      "3000": "refs/tags/v0.3.0"
+      "3000": "refs/tags/v0.3.0",
+      "3001": "refs/tags/v0.3.1"
     }
   }
 }

@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "nimlsp",
-      "version": "0.4.1",
+      "version": "0.4.2",
       "author": "PMunch",
       "desc": "Nim Language Server Protocol - nimlsp implements the Language Server Protocol",
       "license": "MIT",
@@ -44,9 +44,10 @@
         },
         {
           "name": "asynctools",
-          "str": "any version",
+          "str": ">= 0.1.1",
           "ver": {
-            "kind": "verAny"
+            "kind": "verEqLater",
+            "ver": "0.1.1"
           }
         }
       ],
@@ -57,7 +58,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "17ccf579934709e2b0136b8cdea5bd9e75d344ab"
+      "rev": "54a4dfd0a4aa1316a34939d6d7ec3c3b90c43a71"
     },
     "refs/heads/import-jsonschema": {
       "name": "nimlsp",
@@ -155,7 +156,7 @@
     },
     "refs/heads/master": {
       "name": "nimlsp",
-      "version": "0.4.1",
+      "version": "0.4.2",
       "author": "PMunch",
       "desc": "Nim Language Server Protocol - nimlsp implements the Language Server Protocol",
       "license": "MIT",
@@ -186,9 +187,10 @@
         },
         {
           "name": "asynctools",
-          "str": "any version",
+          "str": ">= 0.1.1",
           "ver": {
-            "kind": "verAny"
+            "kind": "verEqLater",
+            "ver": "0.1.1"
           }
         }
       ],
@@ -199,7 +201,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "17ccf579934709e2b0136b8cdea5bd9e75d344ab"
+      "rev": "54a4dfd0a4aa1316a34939d6d7ec3c3b90c43a71"
     },
     "refs/heads/nogitsubmodule": {
       "name": "nimlsp",
@@ -870,6 +872,55 @@
       "backend": "c",
       "ref": "refs/tags/v0.4.1",
       "rev": "869d78f57a87909537915c8570d72a81384666d1"
+    },
+    "refs/tags/v0.4.2": {
+      "name": "nimlsp",
+      "version": "0.4.2",
+      "author": "PMunch",
+      "desc": "Nim Language Server Protocol - nimlsp implements the Language Server Protocol",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "jsonschema",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "asynctools",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        }
+      ],
+      "bin": [
+        "nimlsp"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.2",
+      "rev": "cb38240ed985209403228cf84566cb341b15ec61"
     }
   },
   "cudf": {
@@ -883,7 +934,8 @@
       "2006": "refs/tags/v0.2.6",
       "3002": "refs/tags/v0.3.2",
       "4000": "refs/tags/v0.4.0",
-      "4001": "refs/tags/v0.4.1"
+      "4001": "refs/tags/v0.4.1",
+      "4002": "refs/tags/v0.4.2"
     }
   }
 }

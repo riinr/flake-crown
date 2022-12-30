@@ -7,10 +7,10 @@
   let mkPkg  = nixpkgsVersion:
     let
       pkgs   = nixpkgsVersion.legacyPackages.x86_64-linux;
-      toFlag = builtins.map (dep: "-p:${dep.src}/src");
+      toFlag = builtins.map (dep: "-p:${dep.src}/${dep.meta.srcDir}");
       deps   = inputs.nimrevs.lib.resolve {
         inherit pkgs;
-        nimPkgs = [ "opencl" ];
+        nimPkgs = [ "nimcl" ];
       };
     in
     pkgs.nimPackages.buildNimPackage {

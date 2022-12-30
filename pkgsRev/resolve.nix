@@ -50,13 +50,17 @@ let
       extra    = meta.extra;
     };
     metaToResult = meta: 
-    let src = builtins.fetchGit {
-      name = "${meta.name}-src";
-      ref  = meta.ref;
-      rev  = meta.rev;
-      url  = meta.url;
-      submodules = meta.extra ? submodules;
-    };
+    let 
+      src = builtins.fetchGit {
+        name = "${meta.name}-src";
+        ref  = meta.ref;
+        rev  = meta.rev;
+        url  = meta.url;
+        submodules = meta.extra ? submodules;
+      };
+      isNotNull  = v: v != null;
+      getAttr    = v: pkgs.lib.attrByPath (pkgs.lib.splitString "." v) null pkgs;
+      getNixPkgs = l: builtins.filter isNotNull (map getAttr l);
     in {
       name  = meta.name;
       value.meta = meta;
@@ -65,7 +69,7 @@ let
         pname   = meta.name;
         src     = src;
         version = meta.version;
-        propagatedBuildInputs = map (v: pkgs.${v}) (meta.extra.runtime-dependencies or []);
+        propagatedBuildInputs = getNixPkgs (meta.extra.runtime-dependencies or []);
       };
     };
 in builtins.listToAttrs (map metaToResult (map respToMeta responses))

@@ -13,8 +13,8 @@
   "refs": {
     "HEAD": {
       "name": "httpx",
-      "version": "0.3.4",
-      "author": "Zeshen Xing",
+      "version": "0.3.5",
+      "author": "ringabout",
       "desc": "A super-fast epoll-backed and parallel HTTP server.",
       "license": "Apache 2.0",
       "skipDirs": [],
@@ -46,12 +46,12 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "b3d746c50df5c386062f9711c65efb9b00d94a37"
+      "rev": "5b85d64c7689bf016fd4fc73427e5be8f6c0848b"
     },
     "refs/heads/master": {
       "name": "httpx",
-      "version": "0.3.4",
-      "author": "Zeshen Xing",
+      "version": "0.3.5",
+      "author": "ringabout",
       "desc": "A super-fast epoll-backed and parallel HTTP server.",
       "license": "Apache 2.0",
       "skipDirs": [],
@@ -83,7 +83,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "b3d746c50df5c386062f9711c65efb9b00d94a37"
+      "rev": "5b85d64c7689bf016fd4fc73427e5be8f6c0848b"
     },
     "refs/tags/v0.1.0": {
       "name": "httpx",
@@ -565,6 +565,43 @@
       "backend": "c",
       "ref": "refs/tags/v0.3.4",
       "rev": "cbf978243bfbd714f14bf219bb2aa6b620cd349c"
+    },
+    "refs/tags/v0.3.5": {
+      "name": "httpx",
+      "version": "0.3.5",
+      "author": "ringabout",
+      "desc": "A super-fast epoll-backed and parallel HTTP server.",
+      "license": "Apache 2.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.6"
+          }
+        },
+        {
+          "name": "ioselectors",
+          "str": ">= 0.1.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.6"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.5",
+      "rev": "5b85d64c7689bf016fd4fc73427e5be8f6c0848b"
     }
   },
   "cudf": {
@@ -582,7 +619,8 @@
       "2008": "refs/tags/v0.2.8",
       "3000": "refs/tags/v0.3.0",
       "3002": "refs/tags/v0.3.2",
-      "3004": "refs/tags/v0.3.4"
+      "3004": "refs/tags/v0.3.4",
+      "3005": "refs/tags/v0.3.5"
     }
   }
 }

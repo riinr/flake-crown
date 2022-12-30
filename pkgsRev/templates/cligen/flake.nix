@@ -1,6 +1,6 @@
 {
-  inputs.nimrevs.url     = "github:riinr/flake-crown?dir=pkgsRev";
-  inputs.nixpkgs2205.url = "github:NixOS/nixpkgs/22.05";
+  inputs.nimrevs.url = "github:riinr/flake-crown?dir=pkgsRev";
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/release-22.11";
 
   outputs = inputs:
   let mkPkg  = nixpkgsVersion:
@@ -25,6 +25,6 @@
     };
   in
   {
-    packages.x86_64-linux.default = mkPkg inputs.nixpkgs2205;
+    packages.x86_64-linux.default = mkPkg inputs.nixpkgs;
   };
 }

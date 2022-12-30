@@ -163,6 +163,7 @@
   "bncurve"                               = "/github.com/status-im/bncurve/meta.json";
   "bn"                                    = "/github.com/MerosCrypto/bn/meta.json";
   "boneio"                                = "/github.com/xyz32/boneio/meta.json";
+  "bossy"                                 = "/github.com/guzba/bossy/meta.json";
   "boxy"                                  = "/github.com/treeform/boxy/meta.json";
   "bped"                                  = "/github.com/twist-vector/bped/meta.json";
   "bpg"                                   = "/github.com/def-/bpg/meta.json";
@@ -403,6 +404,7 @@
   "emmy"                                  = "/github.com/andreaferretti/emmy/meta.json";
   "encode"                                = "/github.com/treeform/encode/meta.json";
   "enet"                                  = "/github.com/fowlmouth/nimrod-enet/enet/meta.json";
+  "engineio"                              = "/github.com/samc0de/engineio/meta.json";
   "ensem"                                 = "/github.com/JeffersonLab/ensem/meta.json";
   "entgrep"                               = "/github.com/srozb/entgrep/meta.json";
   "entoody"                               = "/bitbucket.org/fowlmouth/entoody/meta.json";
@@ -846,6 +848,7 @@
   "libovr"                                = "/github.com/bluenote10/libovr/meta.json";
   "libp2pdht"                             = "/github.com/status-im/libp2pdht/meta.json";
   "libp2p"                                = "/github.com/status-im/libp2p/meta.json";
+  "libpcap"                               = "/github.com/praetoriannero/libpcap/meta.json";
   "libpe"                                 = "/github.com/srozb/libpe/meta.json";
   "libplist"                              = "/github.com/samdmarshall/libplist/meta.json";
   "libravatar"                            = "/github.com/juancarlospaco/libravatar/meta.json";

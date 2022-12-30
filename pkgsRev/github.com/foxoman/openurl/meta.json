@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "openurl",
-      "version": "2.0.3",
+      "version": "2.0.4",
       "author": "Sultan Al Isaiee",
       "desc": "Open Any Url/File in the default desktop App / WebBrowser!",
       "license": "MIT",
@@ -29,17 +29,10 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.4.6",
+          "str": ">= 1.9.1",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.4.6"
-          }
-        },
-        {
-          "name": "figures",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
+            "ver": "1.9.1"
           }
         }
       ],
@@ -50,11 +43,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "8cbe7efd06768151b93cffa4d0d13b9d1edaf658"
+      "rev": "7320ee9b6220c731a6e46f7e567d8d988ef783a1"
     },
     "refs/heads/main": {
       "name": "openurl",
-      "version": "2.0.3",
+      "version": "2.0.4",
       "author": "Sultan Al Isaiee",
       "desc": "Open Any Url/File in the default desktop App / WebBrowser!",
       "license": "MIT",
@@ -69,17 +62,10 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.4.6",
+          "str": ">= 1.9.1",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.4.6"
-          }
-        },
-        {
-          "name": "figures",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
+            "ver": "1.9.1"
           }
         }
       ],
@@ -90,7 +76,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "8cbe7efd06768151b93cffa4d0d13b9d1edaf658"
+      "rev": "7320ee9b6220c731a6e46f7e567d8d988ef783a1"
     },
     "refs/tags/v2.0.0": {
       "name": "openurl",
@@ -251,6 +237,72 @@
       "backend": "c",
       "ref": "refs/tags/v2.0.3",
       "rev": "17f4d4f59cc31ddc4d0ad028850f68c32eb48ed9"
+    },
+    "refs/tags/v2.0.4": {
+      "name": "openurl",
+      "version": "2.0.4",
+      "author": "Sultan Al Isaiee",
+      "desc": "Open Any Url/File in the default desktop App / WebBrowser!",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.9.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.9.1"
+          }
+        }
+      ],
+      "bin": [
+        "openurl"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v2.0.4",
+      "rev": "54e750c89dec3201565ea5fe88022aab55bc1500"
+    },
+    "refs/tags/v2.0.4-1": {
+      "name": "openurl",
+      "version": "2.0.4",
+      "author": "Sultan Al Isaiee",
+      "desc": "Open Any Url/File in the default desktop App / WebBrowser!",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.9.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.9.1"
+          }
+        }
+      ],
+      "bin": [
+        "openurl"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v2.0.4-1",
+      "rev": "1a3dfb89fc09049b29f2c89d48eb447dd78360f9"
     }
   },
   "cudf": {
@@ -258,7 +310,8 @@
     "version": {
       "2000000": "refs/tags/v2.0.0",
       "2000001": "refs/tags/v2.0.2",
-      "2000003": "refs/tags/v2.0.3"
+      "2000003": "refs/tags/v2.0.3",
+      "2000004": "refs/tags/v2.0.4-1"
     }
   }
 }

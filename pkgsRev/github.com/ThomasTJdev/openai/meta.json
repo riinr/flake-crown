@@ -12,7 +12,7 @@
   "refs": {
     "HEAD": {
       "name": "openai",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": "ThomasTJdev",
       "desc": "OpenAI API",
       "license": "MIT",
@@ -37,11 +37,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "a71c3f44383bc33565cf798d4f329cd75e7725ea"
+      "rev": "0af4f3c2e3289fddaef615bfc848216fe9ec22e4"
     },
     "refs/heads/main": {
       "name": "openai",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": "ThomasTJdev",
       "desc": "OpenAI API",
       "license": "MIT",
@@ -66,7 +66,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "a71c3f44383bc33565cf798d4f329cd75e7725ea"
+      "rev": "0af4f3c2e3289fddaef615bfc848216fe9ec22e4"
     },
     "refs/tags/v0.1.0": {
       "name": "openai",
@@ -96,12 +96,72 @@
       "backend": "c",
       "ref": "refs/tags/v0.1.0",
       "rev": "a71c3f44383bc33565cf798d4f329cd75e7725ea"
+    },
+    "refs/tags/v0.1.1": {
+      "name": "openai",
+      "version": "0.1.1",
+      "author": "ThomasTJdev",
+      "desc": "OpenAI API",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.10"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.1.1",
+      "rev": "0af4f3c2e3289fddaef615bfc848216fe9ec22e4"
+    },
+    "refs/tags/v0.1.2": {
+      "name": "openai",
+      "version": "0.1.2",
+      "author": "ThomasTJdev",
+      "desc": "OpenAI API",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.10"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.1.2",
+      "rev": "fa0ff2ee3d788f31ae17a2a748d3975531c5aeb9"
     }
   },
   "cudf": {
     "name": "openai",
     "version": {
-      "1000": "refs/tags/v0.1.0"
+      "1000": "refs/tags/v0.1.0",
+      "1001": "refs/tags/v0.1.1",
+      "1002": "refs/tags/v0.1.2"
     }
   }
 }
