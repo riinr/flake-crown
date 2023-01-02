@@ -11,7 +11,7 @@
   "refs": {
     "HEAD": {
       "name": "union",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "author": "Leorize",
       "desc": "Anonymous unions in Nim",
       "license": "MIT",
@@ -53,7 +53,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "55a259b3b911142b959d0631df412f4b78558b3d"
+      "rev": "16f0af5654495eacc768ca81478ae858d17ac7bc"
     },
     "refs/heads/dependabot/github_actions/actions/checkout-3.2.0": {
       "name": "union",
@@ -103,7 +103,7 @@
     },
     "refs/heads/main": {
       "name": "union",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "author": "Leorize",
       "desc": "Anonymous unions in Nim",
       "license": "MIT",
@@ -145,7 +145,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "55a259b3b911142b959d0631df412f4b78558b3d"
+      "rev": "16f0af5654495eacc768ca81478ae858d17ac7bc"
     },
     "refs/tags/0.1.0": {
       "name": "union",
@@ -284,6 +284,52 @@
       "backend": "c",
       "ref": "refs/tags/0.1.2",
       "rev": "aa6190af779dad2647df6a8963bb574c3b6b7a1d"
+    },
+    "refs/tags/0.1.3": {
+      "name": "union",
+      "version": "0.1.3",
+      "author": "Leorize",
+      "desc": "Anonymous unions in Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "union.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/balls",
+          "str": ">= 3.0.0 & < 4.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "3.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "4.0.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.1.3",
+      "rev": "b89aead3b41944c3abd504b7c800f0b895ad18b0"
     }
   },
   "cudf": {
@@ -291,7 +337,8 @@
     "version": {
       "1000": "refs/tags/0.1.0",
       "1001": "refs/tags/0.1.1",
-      "1002": "refs/tags/0.1.2"
+      "1002": "refs/tags/0.1.2",
+      "1003": "refs/tags/0.1.3"
     }
   }
 }

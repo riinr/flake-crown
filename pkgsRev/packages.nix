@@ -1368,6 +1368,7 @@
   "owo"                                   = "/github.com/lmariscal/owo/meta.json";
   "owoifynim"                             = "/github.com/deadshot465/owoifynim/meta.json";
   "p4ztagtojson"                          = "/github.com/kaushalmodi/p4ztag_to_json/meta.json";
+  "p5nim"                                 = "/github.com/pietroppeter/p5nim/meta.json";
   "packagevisibletypes"                   = "/github.com/zah/package_visible_types/meta.json";
   "packedargs"                            = "/github.com/hamidb80/packedargs/meta.json";
   "packedjson"                            = "/github.com/Araq/packedjson/meta.json";
@@ -1474,6 +1475,7 @@
   "proxyproto"                            = "/github.com/ba0f3/proxyproto/meta.json";
   "psutil"                                = "/github.com/juancarlospaco/psutil/meta.json";
   "psutilim"                              = "/github.com/KittyTechnoProgrammer/psutilim/meta.json";
+  "psutilim"                              = "/github.com/Techno-Fox/psutilim/meta.json";
   "psy"                                   = "/github.com/psypac/psy/meta.json";
   "ptest"                                 = "/github.com/treeform/ptest/meta.json";
   "ptrace"                                = "/github.com/ba0f3/ptrace/meta.json";
@@ -1879,6 +1881,7 @@
   "torch"                                 = "/github.com/fragcolor-xyz/torch/meta.json";
   "tor"                                   = "/github.com/FedericoCeratto/tor/meta.json";
   "torim"                                 = "/github.com/KittyTechnoProgrammer/torim/meta.json";
+  "torim"                                 = "/github.com/Techno-Fox/torim/meta.json";
   "torm"                                  = "/github.com/enimatek-nl/torm/meta.json";
   "toxcore"                               = "/git.sr.ht/~ehmry/toxcore/meta.json";
   "tradingview"                           = "/github.com/juancarlospaco/tradingview/meta.json";

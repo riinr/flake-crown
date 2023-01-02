@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "blarg",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": "Michael A. Sinclair",
       "desc": "A basic little argument parser",
       "license": "MIT",
@@ -39,11 +39,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "ba0c3cf32c9c6b247843232e82ca211529d80a5a"
+      "rev": "dbc661f9bd1391013fb2de5d3309ea87d6d6375d"
     },
     "refs/heads/main": {
       "name": "blarg",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": "Michael A. Sinclair",
       "desc": "A basic little argument parser",
       "license": "MIT",
@@ -68,7 +68,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "ba0c3cf32c9c6b247843232e82ca211529d80a5a"
+      "rev": "dbc661f9bd1391013fb2de5d3309ea87d6d6375d"
     },
     "refs/tags/0.1.0": {
       "name": "blarg",
@@ -98,12 +98,42 @@
       "backend": "c",
       "ref": "refs/tags/0.1.0",
       "rev": "59ebae2ed50a177c0047359f9d49054a26992910"
+    },
+    "refs/tags/0.1.1": {
+      "name": "blarg",
+      "version": "0.1.1",
+      "author": "Michael A. Sinclair",
+      "desc": "A basic little argument parser",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.1",
+      "rev": "1ef340a141c57c3ff7368507599c09c05cbf7fcf"
     }
   },
   "cudf": {
     "name": "blarg",
     "version": {
-      "1000": "refs/tags/0.1.0"
+      "1000": "refs/tags/0.1.0",
+      "1001": "refs/tags/0.1.1"
     }
   }
 }

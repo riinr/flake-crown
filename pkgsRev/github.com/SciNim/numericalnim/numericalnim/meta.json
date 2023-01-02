@@ -15,7 +15,7 @@
   "refs": {
     "HEAD": {
       "name": "numericalnim",
-      "version": "0.8.1",
+      "version": "0.8.5",
       "author": "Hugo Granström",
       "desc": "A collection of numerical methods written in Nim. Current features: integration, ode, optimization.",
       "license": "MIT",
@@ -56,7 +56,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "aaa7bb646da83c1136c4a2c775065623b43d130f"
+      "rev": "5c88d16297589daebd85e9a284f4a1c3a8015c58"
     },
     "refs/heads/datasetDuplicates": {
       "name": "numericalnim",
@@ -314,7 +314,7 @@
     },
     "refs/heads/master": {
       "name": "numericalnim",
-      "version": "0.8.1",
+      "version": "0.8.5",
       "author": "Hugo Granström",
       "desc": "A collection of numerical methods written in Nim. Current features: integration, ode, optimization.",
       "license": "MIT",
@@ -355,7 +355,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "aaa7bb646da83c1136c4a2c775065623b43d130f"
+      "rev": "5c88d16297589daebd85e9a284f4a1c3a8015c58"
     },
     "refs/heads/newErrorCalc": {
       "name": "numericalnim",
@@ -474,7 +474,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/rbf",
-      "rev": "6b8ac4f9d862119f501ae796b2e47c2e11777296"
+      "rev": "75a8774681ad5edef6bfda6c68ca13d02e2469e2"
     },
     "refs/heads/spline-problems": {
       "name": "numericalnim",
@@ -1308,6 +1308,96 @@
       "backend": "c",
       "ref": "refs/tags/v0.8.3",
       "rev": "aaa7bb646da83c1136c4a2c775065623b43d130f"
+    },
+    "refs/tags/v0.8.4": {
+      "name": "numericalnim",
+      "version": "0.8.1",
+      "author": "Hugo Granström",
+      "desc": "A collection of numerical methods written in Nim. Current features: integration, ode, optimization.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0"
+          }
+        },
+        {
+          "name": "arraymancer",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "https://github.com/HugoGranstrom/cdt",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.8.4",
+      "rev": "a17b80c204f87a1351b19a99194bc99cbac372ee"
+    },
+    "refs/tags/v0.8.5": {
+      "name": "numericalnim",
+      "version": "0.8.5",
+      "author": "Hugo Granström",
+      "desc": "A collection of numerical methods written in Nim. Current features: integration, ode, optimization.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0"
+          }
+        },
+        {
+          "name": "arraymancer",
+          "str": ">= 0.5.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.0"
+          }
+        },
+        {
+          "name": "https://github.com/HugoGranstrom/cdt",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.8.5",
+      "rev": "5c88d16297589daebd85e9a284f4a1c3a8015c58"
     }
   },
   "cudf": {
@@ -1325,7 +1415,8 @@
       "7000": "refs/tags/v0.7.0",
       "7001": "refs/tags/v0.7.1",
       "8000": "refs/tags/v0.8.0",
-      "8001": "refs/tags/v0.8.3"
+      "8001": "refs/tags/v0.8.4",
+      "8005": "refs/tags/v0.8.5"
     }
   }
 }

@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "nimlsp",
-      "version": "0.4.2",
+      "version": "0.4.4",
       "author": "PMunch",
       "desc": "Nim Language Server Protocol - nimlsp implements the Language Server Protocol",
       "license": "MIT",
@@ -52,13 +52,14 @@
         }
       ],
       "bin": [
+        "nimlsp_debug",
         "nimlsp"
       ],
       "binDir": "",
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "54a4dfd0a4aa1316a34939d6d7ec3c3b90c43a71"
+      "rev": "bba60b785188592b8d9966e75ff7c9ef6a759b0f"
     },
     "refs/heads/import-jsonschema": {
       "name": "nimlsp",
@@ -156,7 +157,7 @@
     },
     "refs/heads/master": {
       "name": "nimlsp",
-      "version": "0.4.2",
+      "version": "0.4.4",
       "author": "PMunch",
       "desc": "Nim Language Server Protocol - nimlsp implements the Language Server Protocol",
       "license": "MIT",
@@ -195,13 +196,14 @@
         }
       ],
       "bin": [
+        "nimlsp_debug",
         "nimlsp"
       ],
       "binDir": "",
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "54a4dfd0a4aa1316a34939d6d7ec3c3b90c43a71"
+      "rev": "bba60b785188592b8d9966e75ff7c9ef6a759b0f"
     },
     "refs/heads/nogitsubmodule": {
       "name": "nimlsp",
@@ -921,6 +923,105 @@
       "backend": "c",
       "ref": "refs/tags/v0.4.2",
       "rev": "cb38240ed985209403228cf84566cb341b15ec61"
+    },
+    "refs/tags/v0.4.3": {
+      "name": "nimlsp",
+      "version": "0.4.3",
+      "author": "PMunch",
+      "desc": "Nim Language Server Protocol - nimlsp implements the Language Server Protocol",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "jsonschema",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "asynctools",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        }
+      ],
+      "bin": [
+        "nimlsp"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.3",
+      "rev": "a6f12557fe66938241b2b14fcd7f6705ba3f729c"
+    },
+    "refs/tags/v0.4.4": {
+      "name": "nimlsp",
+      "version": "0.4.4",
+      "author": "PMunch",
+      "desc": "Nim Language Server Protocol - nimlsp implements the Language Server Protocol",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "jsonschema",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "asynctools",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        }
+      ],
+      "bin": [
+        "nimlsp_debug",
+        "nimlsp"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.4",
+      "rev": "ce9126af0e98ee65ab42c932a87a551b4afd9d35"
     }
   },
   "cudf": {
@@ -935,7 +1036,9 @@
       "3002": "refs/tags/v0.3.2",
       "4000": "refs/tags/v0.4.0",
       "4001": "refs/tags/v0.4.1",
-      "4002": "refs/tags/v0.4.2"
+      "4002": "refs/tags/v0.4.2",
+      "4003": "refs/tags/v0.4.3",
+      "4004": "refs/tags/v0.4.4"
     }
   }
 }

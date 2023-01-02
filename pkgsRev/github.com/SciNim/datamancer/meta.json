@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "datamancer",
-      "version": "0.3.9",
+      "version": "0.3.10",
       "author": "Vindaar",
       "desc": "A dataframe library with a dplyr like API",
       "license": "MIT",
@@ -55,7 +55,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "36d2a24389d5a4231db03ccad40654dbac762d73"
+      "rev": "df02b2d837a228622f659834333c34bd40bb2eb7"
     },
     "refs/heads/addSpread": {
       "name": "datamancer",
@@ -959,7 +959,7 @@
     },
     "refs/heads/master": {
       "name": "datamancer",
-      "version": "0.3.9",
+      "version": "0.3.10",
       "author": "Vindaar",
       "desc": "A dataframe library with a dplyr like API",
       "license": "MIT",
@@ -1000,7 +1000,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "36d2a24389d5a4231db03ccad40654dbac762d73"
+      "rev": "df02b2d837a228622f659834333c34bd40bb2eb7"
     },
     "refs/heads/miscAdditions": {
       "name": "datamancer",
@@ -2712,6 +2712,51 @@
       "ref": "refs/tags/v0.3.1",
       "rev": "a30e2a30bda37ac2ee4e7825ec81238cd04eb634"
     },
+    "refs/tags/v0.3.10": {
+      "name": "datamancer",
+      "version": "0.3.10",
+      "author": "Vindaar",
+      "desc": "A dataframe library with a dplyr like API",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "https://github.com/Vindaar/seqmath",
+          "str": ">= 0.1.11",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.11"
+          }
+        },
+        {
+          "name": "arraymancer",
+          "str": ">= 0.7.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.10",
+      "rev": "df02b2d837a228622f659834333c34bd40bb2eb7"
+    },
     "refs/tags/v0.3.2": {
       "name": "datamancer",
       "version": "0.3.2",
@@ -3099,6 +3144,7 @@
       "2009": "refs/tags/v0.2.9",
       "3000": "refs/tags/v0.3.0",
       "3001": "refs/tags/v0.3.1",
+      "3010": "refs/tags/v0.3.10",
       "3002": "refs/tags/v0.3.2",
       "3003": "refs/tags/v0.3.3",
       "3004": "refs/tags/v0.3.4",
