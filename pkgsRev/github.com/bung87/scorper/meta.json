@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "scorper",
-      "version": "1.0.26",
+      "version": "1.1.0",
       "author": "bung87",
       "desc": "micro and elegant web framework",
       "license": "Apache License 2.0",
@@ -99,7 +99,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "200e49cf8c1e7d281b32a91a63d4d57fd789fabc"
+      "rev": "7f4107652aee15621de5c952a106fc453320537f"
     },
     "refs/heads/asynctest": {
       "name": "scorper",
@@ -195,7 +195,7 @@
     },
     "refs/heads/devel": {
       "name": "scorper",
-      "version": "1.0.26",
+      "version": "1.1.0",
       "author": "bung87",
       "desc": "micro and elegant web framework",
       "license": "Apache License 2.0",
@@ -281,7 +281,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/devel",
-      "rev": "200e49cf8c1e7d281b32a91a63d4d57fd789fabc"
+      "rev": "7f4107652aee15621de5c952a106fc453320537f"
     },
     "refs/heads/https": {
       "name": "scorper",
@@ -3129,6 +3129,96 @@
       "backend": "c",
       "ref": "refs/tags/v1.0.9",
       "rev": "605259f3c3b8ab7accfd12542d06ee488cfbfeda"
+    },
+    "refs/tags/v1.1.0": {
+      "name": "scorper",
+      "version": "1.1.0",
+      "author": "bung87",
+      "desc": "micro and elegant web framework",
+      "license": "Apache License 2.0",
+      "skipDirs": [
+        "tests",
+        "examples",
+        "experiments",
+        "benchmark",
+        "artwork"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.3.1"
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "3.0.2"
+          }
+        },
+        {
+          "name": "npeg",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "jsony",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "urlly",
+          "str": ">= 0.2.0 & < 0.3.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.2.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.3.0"
+            }
+          }
+        }
+      ],
+      "bin": [
+        "routermacros"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v1.1.0",
+      "rev": "7f4107652aee15621de5c952a106fc453320537f"
     }
   },
   "cudf": {
@@ -3158,7 +3248,8 @@
       "1000006": "refs/tags/v1.0.6",
       "1000007": "refs/tags/v1.0.7",
       "1000008": "refs/tags/v1.0.8",
-      "1000009": "refs/tags/v1.0.9"
+      "1000009": "refs/tags/v1.0.9",
+      "1001000": "refs/tags/v1.1.0"
     }
   }
 }

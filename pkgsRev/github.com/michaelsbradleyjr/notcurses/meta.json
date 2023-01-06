@@ -148,6 +148,13 @@
             "kind": "verEqLater",
             "ver": "1.2.0"
           }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
         }
       ],
       "bin": [],
@@ -155,7 +162,76 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/version_3_revamp_2",
-      "rev": "9737df7173eba61b434e57ab73286480f6ca3fe8"
+      "rev": "9368d6ac19dc8867a7cf036cb170d3d59f9ab505"
+    },
+    "refs/heads/version_3_revamp_3": {
+      "name": "notcurses",
+      "version": "3.0.9",
+      "author": "Michael Bradley, Jr.",
+      "desc": "A wrapper for Notcurses",
+      "license": "Apache License 2.0 or MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "notcurses.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "questionable",
+          "str": ">= 0.10.7 & < 0.11.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.10.7"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.11.0"
+            }
+          }
+        },
+        {
+          "name": "stew",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "upraises",
+          "str": ">= 0.1.0 & < 0.2.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.1.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.2.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/version_3_revamp_3",
+      "rev": "ed70619a42cbf28c8b563ca23a01c762b564ad36"
     },
     "refs/tags/v2.3.13": {
       "name": "notcurses",

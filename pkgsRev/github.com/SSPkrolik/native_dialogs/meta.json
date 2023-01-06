@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "native_dialogs",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": "Rostyslav Dzinko (rostislav.dzinko@gmail.com)",
       "desc": "Implements framework-agnostic native operating system dialogs calls",
       "license": "MIT",
@@ -34,10 +34,39 @@
           }
         },
         {
-          "name": "oldwinapi",
+          "name": "gtk2",
           "str": "any version",
           "ver": {
             "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "de021f1f3915f648a036b9a6642762db2ca763e4"
+    },
+    "refs/heads/master": {
+      "name": "native_dialogs",
+      "version": "0.2.0",
+      "author": "Rostyslav Dzinko (rostislav.dzinko@gmail.com)",
+      "desc": "Implements framework-agnostic native operating system dialogs calls",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.10.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.0"
           }
         },
         {
@@ -52,10 +81,10 @@
       "binDir": "",
       "srcDir": "src",
       "backend": "c",
-      "ref": "HEAD",
-      "rev": "1270bb9a8d1f1f1f1732f36734164bba2f9c5f22"
+      "ref": "refs/heads/master",
+      "rev": "de021f1f3915f648a036b9a6642762db2ca763e4"
     },
-    "refs/heads/master": {
+    "refs/tags/v0.1.0": {
       "name": "native_dialogs",
       "version": "0.1.0",
       "author": "Rostyslav Dzinko (rostislav.dzinko@gmail.com)",
@@ -95,14 +124,51 @@
       "binDir": "",
       "srcDir": "src",
       "backend": "c",
-      "ref": "refs/heads/master",
+      "ref": "refs/tags/v0.1.0",
       "rev": "1270bb9a8d1f1f1f1732f36734164bba2f9c5f22"
+    },
+    "refs/tags/v0.2.0": {
+      "name": "native_dialogs",
+      "version": "0.2.0",
+      "author": "Rostyslav Dzinko (rostislav.dzinko@gmail.com)",
+      "desc": "Implements framework-agnostic native operating system dialogs calls",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.10.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.0"
+          }
+        },
+        {
+          "name": "gtk2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.2.0",
+      "rev": "2ed026959abdaf9c50d897907b4bc825d70788f1"
     }
   },
   "cudf": {
     "name": "nativedialogs",
     "version": {
-      "1000": "HEAD"
+      "1000": "refs/tags/v0.1.0",
+      "2000": "refs/tags/v0.2.0"
     }
   }
 }

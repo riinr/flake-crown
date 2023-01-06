@@ -986,6 +986,11 @@ depends:  stdext >= 1001006
 
 
 package:  zfdbms
+version:  10
+depends:  stdext >= 15
+
+
+package:  zfdbms
 version:  2
 depends:  stdext >= 10
 
@@ -1089,6 +1094,14 @@ version:  14
 
 
 package:  stdext
+version:  15
+
+
+package:  stdext
+version:  16
+
+
+package:  stdext
 version:  4
 
 
@@ -1176,6 +1189,11 @@ depends:  zfdbms >= 8, zfcore >= 1001009, mustache >= 4003
 
 
 package:  zfplugs
+version:  1019
+depends:  zfdbms >= 10, zfcore >= 1001020, mustache >= 4003
+
+
+package:  zfplugs
 version:  1005
 depends:  zfcore >= 1001002, moustachu >= 14000
 
@@ -1208,6 +1226,11 @@ depends:  zfdbms >= 8, zfcore >= 1001015, mustache >= 4003
 package:  zfplugs
 version:  1017
 depends:  zfdbms >= 9, zfcore >= 1001016, mustache >= 4003
+
+
+package:  zfplugs
+version:  1018
+depends:  zfdbms >= 10, zfcore >= 1001020, mustache >= 4003
 
 
 package:  zfplugs
@@ -1348,6 +1371,11 @@ depends:  zfblast >= 2008, uri3 >= 1007, stdext >= 14, zip >= 3001
 package:  zfcore
 version:  1001019
 depends:  zfblast >= 2008, uri3 >= 1007, stdext >= 14, zip >= 3001
+
+
+package:  zfcore
+version:  1001020
+depends:  zfblast >= 2008, uri3 >= 1007, stdext >= 15, zip >= 3001
 
 
 package:  zfcore
@@ -2947,6 +2975,10 @@ package:  capstone
 version:  1001
 
 
+package:  pape
+version:  2
+
+
 package:  nimkov
 version:  1000004
 
@@ -3571,6 +3603,11 @@ depends:  dbus >= 1
 
 package:  keyring
 version:  3001
+depends:  dbus >= 1
+
+
+package:  keyring
+version:  4000
 depends:  dbus >= 1
 
 
@@ -5200,6 +5237,11 @@ version:  1000009
 depends:  chronos >= 3000002, npeg >= 1, github-nortero-code-rx-nim-git >= 1, zippy >= 1, result >= 1
 
 
+package:  scorper
+version:  1001000
+depends:  chronos >= 3000002, npeg >= 1, zippy >= 1, jsony >= 1, stew >= 1, urlly >= 2000, urlly < 3000
+
+
 package:  finder
 version:  1001
 depends:  zip >= 1
@@ -6673,6 +6715,10 @@ version:  1001000
 
 package:  pararules
 version:  1002000
+
+
+package:  pararules
+version:  1003000
 
 
 package:  parasound
@@ -11165,6 +11211,10 @@ package:  cutelog
 version:  2000001
 
 
+package:  cutelog
+version:  3000000
+
+
 package:  criterion
 version:  1000
 
@@ -12585,6 +12635,16 @@ depends:  github-disruptek-grok >= 5000, github-disruptek-grok < 1000000, github
 package:  balls
 version:  4000011
 depends:  github-disruptek-grok >= 5000, github-disruptek-grok < 1000000, github-disruptek-ups < 1000000, github-disruptek-insideout >= 16, github-disruptek-insideout < 1000000
+
+
+package:  balls
+version:  4000012
+depends:  github-disruptek-grok >= 5000, github-disruptek-grok < 1000000, github-disruptek-ups < 1000000, github-disruptek-insideout >= 16, github-disruptek-insideout < 1000000
+
+
+package:  balls
+version:  4000013
+depends:  github-disruptek-grok >= 5000, github-disruptek-grok < 1000000, github-disruptek-ups < 1000000, github-disruptek-insideout >= 19, github-disruptek-insideout < 1000000
 
 
 package:  balls
@@ -17116,6 +17176,11 @@ depends:  chroma >= 1000, github-vindaar-seqmath >= 1007, cairo >= 1001001, gith
 
 package:  ginger
 version:  4000
+depends:  chroma >= 1000, github-vindaar-seqmath >= 1007, cairo >= 1001001, github-vindaar-latexdsl >= 1005, pixie >= 4004000, shell >= 1, github-zetashift-fontim >= 2000
+
+
+package:  ginger
+version:  4001
 depends:  chroma >= 1000, github-vindaar-seqmath >= 1007, cairo >= 1001001, github-vindaar-latexdsl >= 1005, pixie >= 4004000, shell >= 1, github-zetashift-fontim >= 2000
 
 
@@ -24022,6 +24087,18 @@ version:  1005033
 
 
 package:  cligen
+version:  1005034
+
+
+package:  cligen
+version:  1005034
+
+
+package:  cligen
+version:  1005036
+
+
+package:  cligen
 version:  1005004
 
 
@@ -24258,6 +24335,31 @@ version:  5000
 depends:  cligen >= 1005033
 
 
+package:  bu
+version:  5005
+depends:  cligen >= 1005034
+
+
+package:  bu
+version:  5005
+depends:  cligen >= 1005034
+
+
+package:  bu
+version:  5007
+depends:  cligen >= 1005035
+
+
+package:  bu
+version:  5007
+depends:  cligen >= 1005035
+
+
+package:  bu
+version:  5009
+depends:  cligen >= 1005036
+
+
 package:  kslog
 version:  5000
 depends:  cligen >= 9042
@@ -24485,6 +24587,11 @@ version:  1000
 
 package:  vector
 version:  1001
+
+
+package:  nimcorpora
+version:  1000
+depends:  zippy >= 1, fab >= 1
 
 
 package:  matrix
@@ -33628,6 +33735,16 @@ version:  8005
 depends:  arraymancer >= 5000, github-hugogranstrom-cdt >= 1
 
 
+package:  numericalnim
+version:  8006
+depends:  arraymancer >= 5000, github-hugogranstrom-cdt >= 1
+
+
+package:  numericalnim
+version:  8007
+depends:  arraymancer >= 5000, github-hugogranstrom-cdt >= 1
+
+
 package:  unchained
 version:  1000
 
@@ -34159,6 +34276,11 @@ version:  1000
 
 package:  ndns
 version:  1000
+depends:  dnsprotocol >= 1, stew >= 1
+
+
+package:  ndns
+version:  1001
 depends:  dnsprotocol >= 1, stew >= 1
 
 
@@ -35638,6 +35760,11 @@ depends:  neverwinter >= 1002005, glob >= 9000
 
 
 package:  nasher
+version:  20000
+depends:  neverwinter >= 1005005, glob >= 11001, nwnt >= 1003003, blarg >= 1000
+
+
+package:  nasher
 version:  3000
 depends:  neverwinter >= 1002005, glob >= 9000
 
@@ -36332,6 +36459,11 @@ version:  1000
 depends:  bncurve >= 1, chronicles >= 1, chronos >= 1, eth >= 1, jsonrpc >= 1, libbacktrace >= 1, nimcrypto >= 1, stew >= 1, stint >= 1, rocksdb >= 1, ethash >= 1, blscurve >= 1, evmc >= 1, web3 >= 1
 
 
+package:  nimbus
+version:  1000
+depends:  bncurve >= 1, chronicles >= 1, chronos >= 1, eth >= 1, jsonrpc >= 1, libbacktrace >= 1, nimcrypto >= 1, stew >= 1, stint >= 1, rocksdb >= 1, ethash >= 1, blscurve >= 1, evmc >= 1, web3 >= 1
+
+
 package:  bearssl
 version:  2000
 depends:  unittest2 >= 1
@@ -36564,6 +36696,11 @@ version:  2001
 package:  coinbasepro
 version:  1003
 depends:  ws >= 1, decimal >= 1, uuids >= 1
+
+
+package:  ttop
+version:  3005
+depends:  illwill >= 1, zippy >= 1, asciigraph >= 1
 
 
 package:  ttop
@@ -39657,13 +39794,18 @@ version:  1001
 
 
 package:  nimscripter
-version:  1000016
+version:  1000017
 depends:  github-disruptek-assume >= 4000
 
 
 package:  nativedialogs
 version:  1000
 depends:  oldwinapi >= 1, gtk2 >= 1
+
+
+package:  nativedialogs
+version:  2000
+depends:  gtk2 >= 1
 
 
 package:  nimongo
@@ -39902,7 +40044,7 @@ depends:  scraper >= 1, gitlab-lurlo-useragent >= 1
 
 
 package:  util
-version:  1009001
+version:  1010001
 
 
 package:  simplediff
@@ -40260,6 +40402,11 @@ depends:  getdns >= 913000000
 
 package:  taps
 version:  928000000
+depends:  getdns >= 928000000
+
+
+package:  taps
+version:  228000000
 depends:  getdns >= 928000000
 
 
@@ -40654,6 +40801,11 @@ depends:  base32 >= 1003, cbor >= 831000000, coap >= 924000000, syndicate >= 904
 
 package:  eris
 version:  6000000
+depends:  base32 >= 1003, codeberg-org-eris-nim-coap-git >= 831000000, cbor >= 1, coap >= 924000000, syndicate >= 904000000, tkrzw >= 910000000
+
+
+package:  eris
+version:  102000000
 depends:  base32 >= 1003, codeberg-org-eris-nim-coap-git >= 831000000, cbor >= 1, coap >= 924000000, syndicate >= 904000000, tkrzw >= 910000000
 
 

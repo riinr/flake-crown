@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "ginger",
-      "version": "0.4.0",
+      "version": "0.4.1",
       "author": "Vindaar",
       "desc": "A Grid (R) like package in Nim",
       "license": "MIT",
@@ -94,7 +94,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "92daf4b6374605ad1f93e2f0c52ac4fb2b317632"
+      "rev": "2104f8d3eb3ca056b6d43c79b1865bc41cbffc07"
     },
     "refs/heads/addDummyBackend": {
       "name": "ginger",
@@ -1284,7 +1284,7 @@
     },
     "refs/heads/master": {
       "name": "ginger",
-      "version": "0.4.0",
+      "version": "0.4.1",
       "author": "Vindaar",
       "desc": "A Grid (R) like package in Nim",
       "license": "MIT",
@@ -1364,7 +1364,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "92daf4b6374605ad1f93e2f0c52ac4fb2b317632"
+      "rev": "2104f8d3eb3ca056b6d43c79b1865bc41cbffc07"
     },
     "refs/heads/miscChanges": {
       "name": "ginger",
@@ -1793,6 +1793,90 @@
       "backend": "c",
       "ref": "refs/heads/reduceTikZfootprint",
       "rev": "24151b15062beac27869029e37423337045deb48"
+    },
+    "refs/heads/relativeEmbed": {
+      "name": "ginger",
+      "version": "0.4.0",
+      "author": "Vindaar",
+      "desc": "A Grid (R) like package in Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "chroma",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "https://github.com/Vindaar/seqmath",
+          "str": ">= 0.1.7",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.7"
+          }
+        },
+        {
+          "name": "cairo",
+          "str": ">= 1.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.1"
+          }
+        },
+        {
+          "name": "https://github.com/Vindaar/LatexDSL",
+          "str": ">= 0.1.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.5"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": ">= 4.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "4.4.0"
+          }
+        },
+        {
+          "name": "shell",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/zetashift/fontim",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/relativeEmbed",
+      "rev": "0541d2f16bf20b1a7ae565c31cbf3898c38e8eef"
     },
     "refs/heads/tickFormat_CoordMath": {
       "name": "ginger",
@@ -4525,6 +4609,90 @@
       "backend": "c",
       "ref": "refs/tags/v0.4.0",
       "rev": "92daf4b6374605ad1f93e2f0c52ac4fb2b317632"
+    },
+    "refs/tags/v0.4.1": {
+      "name": "ginger",
+      "version": "0.4.1",
+      "author": "Vindaar",
+      "desc": "A Grid (R) like package in Nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "chroma",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        },
+        {
+          "name": "https://github.com/Vindaar/seqmath",
+          "str": ">= 0.1.7",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.7"
+          }
+        },
+        {
+          "name": "cairo",
+          "str": ">= 1.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.1"
+          }
+        },
+        {
+          "name": "https://github.com/Vindaar/LatexDSL",
+          "str": ">= 0.1.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.5"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": ">= 4.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "4.4.0"
+          }
+        },
+        {
+          "name": "shell",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/zetashift/fontim",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.1",
+      "rev": "2104f8d3eb3ca056b6d43c79b1865bc41cbffc07"
     }
   },
   "cudf": {
@@ -4573,7 +4741,8 @@
       "3007": "refs/tags/v0.3.7",
       "3008": "refs/tags/v0.3.8",
       "3009": "refs/tags/v0.3.9",
-      "4000": "refs/tags/v0.4.0"
+      "4000": "refs/tags/v0.4.0",
+      "4001": "refs/tags/v0.4.1"
     }
   }
 }

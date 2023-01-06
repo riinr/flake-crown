@@ -1100,6 +1100,7 @@
   "nimcmaes"                              = "/github.com/zevv/nimcmaes/meta.json";
   "nimcolor"                              = "/github.com/JessaTehCrow/nimcolor/meta.json";
   "nimcoon"                               = "/njoseph.me/gitweb/nimcoon/meta.json";
+  "nimcorpora"                            = "/github.com/neroist/nimcorpora/meta.json";
   "nimcr"                                 = "/github.com/PMunch/nimcr/meta.json";
   "nimcrypt"                              = "/github.com/napalu/nimcrypt/meta.json";
   "nimcrypto"                             = "/github.com/cheatfate/nimcrypto/meta.json";
@@ -1377,6 +1378,7 @@
   "pager"                                 = "/git.sr.ht/~reesmichael1/pager/meta.json";
   "palette"                               = "/github.com/momeemt/palette/meta.json";
   "pantry"                                = "/github.com/ire4ever1190/pantry/meta.json";
+  "pape"                                  = "/github.com/hdbg/pape/meta.json";
   "paramidib"                             = "/github.com/pietroppeter/paramidib/meta.json";
   "paramidi"                              = "/github.com/paranim/paramidi/meta.json";
   "paramidisoundfonts"                    = "/github.com/paranim/paramidi_soundfonts/meta.json";

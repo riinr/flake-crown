@@ -130,6 +130,53 @@
       "ref": "refs/heads/fix-json-logging",
       "rev": "563a0e81958c0500f5b9a6ff7ab2c709899d0118"
     },
+    "refs/heads/fixbarewarning": {
+      "name": "chronicles",
+      "version": "0.10.3",
+      "author": "Status Research & Development GmbH",
+      "desc": "A crafty implementation of structured logging for Nim",
+      "license": "Apache License 2.0",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "chronicles.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "testutils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "json_serialization",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fixbarewarning",
+      "rev": "5917b67e1c3ca6190e4be23222b5777585656de2"
+    },
     "refs/heads/flavors": {
       "name": "chronicles",
       "version": "0.10.0",

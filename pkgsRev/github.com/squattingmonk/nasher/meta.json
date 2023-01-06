@@ -16,7 +16,7 @@
   "refs": {
     "HEAD": {
       "name": "nasher",
-      "version": "0.19.0",
+      "version": "0.20.0",
       "author": "Michael A. Sinclair",
       "desc": "A build tool for Neverwinter Nights projects",
       "license": "MIT",
@@ -77,11 +77,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "46696ff754f11609a0015c85953b2af2b6910b92"
+      "rev": "9b6fda86ab91439801a214e28aac99a223f19ca4"
     },
     "refs/heads/master": {
       "name": "nasher",
-      "version": "0.19.0",
+      "version": "0.20.0",
       "author": "Michael A. Sinclair",
       "desc": "A build tool for Neverwinter Nights projects",
       "license": "MIT",
@@ -142,7 +142,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "46696ff754f11609a0015c85953b2af2b6910b92"
+      "rev": "9b6fda86ab91439801a214e28aac99a223f19ca4"
     },
     "refs/heads/toml": {
       "name": "nasher",
@@ -2450,6 +2450,71 @@
       "ref": "refs/tags/0.2.1",
       "rev": "93e30454c4d835b6deac23f7b1c2ab610ee32428"
     },
+    "refs/tags/0.20.0": {
+      "name": "nasher",
+      "version": "0.20.0",
+      "author": "Michael A. Sinclair",
+      "desc": "A build tool for Neverwinter Nights projects",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "neverwinter",
+          "str": ">= 1.5.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.5"
+          }
+        },
+        {
+          "name": "glob",
+          "str": ">= 0.11.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.11.1"
+          }
+        },
+        {
+          "name": "nwnt",
+          "str": ">= 1.3.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.3.3"
+          }
+        },
+        {
+          "name": "blarg",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [
+        "nasher"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.20.0",
+      "rev": "b7c124513fdaa847c951f64f00ccd9a1c2463834"
+    },
     "refs/tags/0.3.0": {
       "name": "nasher",
       "version": "0.3.0",
@@ -3725,6 +3790,7 @@
       "19000": "refs/tags/0.19.0",
       "2000": "refs/tags/0.2.0",
       "2001": "refs/tags/0.2.1",
+      "20000": "refs/tags/0.20.0",
       "3000": "refs/tags/0.3.0",
       "4000": "refs/tags/0.4.0",
       "4001": "refs/tags/0.4.1",
