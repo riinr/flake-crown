@@ -20,7 +20,7 @@
   "refs": {
     "HEAD": {
       "name": "npeg",
-      "version": "1.0.1",
+      "version": "1.1.1",
       "author": "Ico Doornekamp",
       "desc": "a PEG library",
       "license": "MIT",
@@ -47,7 +47,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "8ed85bb6e395f625ffa3c10ec2b9abb2665d6db1"
+      "rev": "f680e40f6cc7e026f53e4e9e68f496d6a7f5840a"
     },
     "refs/heads/backtrace": {
       "name": "npeg",
@@ -204,6 +204,37 @@
       "ref": "refs/heads/choice",
       "rev": "182f51ead2f2500df857969961cf06d24cd7ada0"
     },
+    "refs/heads/ci": {
+      "name": "npeg",
+      "version": "1.1.1",
+      "author": "Ico Doornekamp",
+      "desc": "a PEG library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/ci",
+      "rev": "f7dec8f8bcb80db2bb3a721aa9aeaed713b34b92"
+    },
     "refs/heads/drop-json-ast": {
       "name": "npeg",
       "version": "0.20.0",
@@ -330,7 +361,7 @@
     },
     "refs/heads/master": {
       "name": "npeg",
-      "version": "1.0.1",
+      "version": "1.1.1",
       "author": "Ico Doornekamp",
       "desc": "a PEG library",
       "license": "MIT",
@@ -357,7 +388,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "8ed85bb6e395f625ffa3c10ec2b9abb2665d6db1"
+      "rev": "f680e40f6cc7e026f53e4e9e68f496d6a7f5840a"
     },
     "refs/heads/no-computed-goto-for-large-grammars": {
       "name": "npeg",
@@ -2032,6 +2063,99 @@
       "backend": "c",
       "ref": "refs/tags/1.0.1",
       "rev": "1d54c2ffa57600ab0d797179790e1113e91c28a3"
+    },
+    "refs/tags/1.1.0": {
+      "name": "npeg",
+      "version": "1.1.0",
+      "author": "Ico Doornekamp",
+      "desc": "a PEG library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.1.0",
+      "rev": "0bd4219a2c88e891f6a3837acb208a5b1346b60e"
+    },
+    "refs/tags/1.1.1": {
+      "name": "npeg",
+      "version": "1.1.1",
+      "author": "Ico Doornekamp",
+      "desc": "a PEG library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.1.1",
+      "rev": "f680e40f6cc7e026f53e4e9e68f496d6a7f5840a"
+    },
+    "refs/tags/1.1.2": {
+      "name": "npeg",
+      "version": "1.1.2",
+      "author": "Ico Doornekamp",
+      "desc": "a PEG library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.1.2",
+      "rev": "ae1fa58af94477c40456414aa2a975cf26d5c9bc"
     }
   },
   "cudf": {
@@ -2074,7 +2198,10 @@
       "8000": "refs/tags/0.8.0",
       "9000": "refs/tags/0.9.0",
       "1000000": "refs/tags/1.0.0",
-      "1000001": "refs/tags/1.0.1"
+      "1000001": "refs/tags/1.0.1",
+      "1001000": "refs/tags/1.1.0",
+      "1001001": "refs/tags/1.1.1",
+      "1001002": "refs/tags/1.1.2"
     }
   }
 }

@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "todoist",
-      "version": "0.1.1",
+      "version": "0.2.0",
       "author": "Rui Vieira",
       "desc": "A Nim client for Todoist's REST API",
       "license": "Apache-2.0",
@@ -27,10 +27,17 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.4.8",
+          "str": ">= 1.6.6",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.4.8"
+            "ver": "1.6.6"
+          }
+        },
+        {
+          "name": "jsony",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
           }
         }
       ],
@@ -39,11 +46,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "8d5d8641c4b00c4844f3b3a1c7ab18852a410ca3"
+      "rev": "ff444663fca6a23f79b0a4f5dc214f38eccb0a80"
     },
     "refs/heads/main": {
       "name": "todoist",
-      "version": "0.1.1",
+      "version": "0.2.0",
       "author": "Rui Vieira",
       "desc": "A Nim client for Todoist's REST API",
       "license": "Apache-2.0",
@@ -56,10 +63,17 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.4.8",
+          "str": ">= 1.6.6",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.4.8"
+            "ver": "1.6.6"
+          }
+        },
+        {
+          "name": "jsony",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
           }
         }
       ],
@@ -68,7 +82,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "8d5d8641c4b00c4844f3b3a1c7ab18852a410ca3"
+      "rev": "ff444663fca6a23f79b0a4f5dc214f38eccb0a80"
     },
     "refs/tags/v0.1.0": {
       "name": "todoist",
@@ -127,13 +141,50 @@
       "backend": "c",
       "ref": "refs/tags/v0.1.1",
       "rev": "9f5dc6feea72ef8999cf9b7b587b62c9f0ac6414"
+    },
+    "refs/tags/v0.2.0": {
+      "name": "todoist",
+      "version": "0.2.0",
+      "author": "Rui Vieira",
+      "desc": "A Nim client for Todoist's REST API",
+      "license": "Apache-2.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.6"
+          }
+        },
+        {
+          "name": "jsony",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.2.0",
+      "rev": "c3582aee38dfeeabecea7f995b2ef296b74151b7"
     }
   },
   "cudf": {
     "name": "todoist",
     "version": {
       "1000": "refs/tags/v0.1.0",
-      "1001": "refs/tags/v0.1.1"
+      "1001": "refs/tags/v0.1.1",
+      "2000": "refs/tags/v0.2.0"
     }
   }
 }

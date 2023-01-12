@@ -291,6 +291,7 @@
   "crosscompile"                          = "/github.com/juancarlospaco/crosscompile/meta.json";
   "crowncalc"                             = "/github.com/RainbowAsteroids/crowncalc/meta.json";
   "crowngui"                              = "/github.com/bung87/crowngui/meta.json";
+  "crunchy"                               = "/github.com/guzba/crunchy/meta.json";
   "csfml"                                 = "/github.com/oprypin/csfml/meta.json";
   "cssgrid"                               = "/github.com/elcritch/cssgrid/meta.json";
   "csshtmlminify"                         = "/github.com/juancarlospaco/css_html_minify/meta.json";
@@ -302,6 +303,7 @@
   "csvtools"                              = "/github.com/andreaferretti/csvtools/meta.json";
   "ctrulib"                               = "/github.com/skyforce77/ctrulib/meta.json";
   "cucumber"                              = "/github.com/shaunc/cucumber/meta.json";
+  "curly"                                 = "/github.com/guzba/curly/meta.json";
   "currying"                              = "/github.com/t8m8/currying/meta.json";
   "d3"                                    = "/github.com/hiteshjasani/d3/meta.json";
   "daemon"                                = "/github.com/status-im/daemon/meta.json";
@@ -628,6 +630,7 @@
   "golib"                                 = "/github.com/stefantalpalaru/golib/meta.json";
   "googleapi"                             = "/github.com/treeform/googleapi/meta.json";
   "googlesearch"                          = "/github.com/xyb/googlesearch/meta.json";
+  "googletranslate"                       = "/git.ozzuu.com/thisago/googletranslate/meta.json";
   "govee"                                 = "/github.com/nonimportant/govee/meta.json";
   "gplay"                                 = "/github.com/yglukhov/gplay/meta.json";
   "gptcli"                                = "/github.com/HACCKKER/gptcli/meta.json";
@@ -1389,6 +1392,7 @@
   "paravim"                               = "/github.com/paranim/paravim/meta.json";
   "parazoa"                               = "/github.com/paranim/parazoa/meta.json";
   "pari"                                  = "/github.com/lompik/pari/meta.json";
+  "parlexgen"                             = "/github.com/choltreppe/parlexgen/meta.json";
   "parsefixed"                            = "/github.com/jlp765/parsefixed/meta.json";
   "parsegemini"                           = "/github.com/autumngray/parsegemini/meta.json";
   "parseini"                              = "/github.com/lihf8515/parseini/meta.json";
@@ -2047,6 +2051,7 @@
   "xdo"                                   = "/github.com/juancarlospaco/xdo/meta.json";
   "xevloop"                               = "/github.com/PMunch/xevloop/meta.json";
   "xgboost-nim"                           = "/github.com/jackhftang/xgboost.nim/meta.json";
+  "xgui"                                  = "/github.com/thatrandomperson5/xgui/meta.json";
   "xiaomi"                                = "/github.com/ThomasTJdev/xiaomi/meta.json";
   "xidoc"                                 = "/github.com/xigoi/xidoc/xidoc/meta.json";
   "xio"                                   = "/github.com/ringabout/xio/meta.json";

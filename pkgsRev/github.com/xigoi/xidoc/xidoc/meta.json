@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "xidoc",
-      "version": "2022.12.19",
+      "version": "2023.1.9",
       "author": "Adam Blažek",
       "desc": "A consistent markup language",
       "license": "GPL-3.0-only",
@@ -66,7 +66,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "3651b4f23b3308f7225890f32047e83bda1e4a31"
+      "rev": "219f53f8cc85beb22371536716f454df679ef970"
     },
     "refs/heads/commands-refactor": {
       "name": "xidoc",
@@ -225,7 +225,7 @@
     },
     "refs/heads/master": {
       "name": "xidoc",
-      "version": "2022.12.19",
+      "version": "2023.1.9",
       "author": "Adam Blažek",
       "desc": "A consistent markup language",
       "license": "GPL-3.0-only",
@@ -278,7 +278,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "3651b4f23b3308f7225890f32047e83bda1e4a31"
+      "rev": "219f53f8cc85beb22371536716f454df679ef970"
     },
     "refs/heads/named-args": {
       "name": "xidoc",
@@ -393,6 +393,63 @@
       "backend": "c",
       "ref": "refs/heads/position",
       "rev": "13634f7e75760d512134031a5f0d2d0430db8f89"
+    },
+    "refs/heads/string-view": {
+      "name": "xidoc",
+      "version": "2022.12.19",
+      "author": "Adam Blažek",
+      "desc": "A consistent markup language",
+      "license": "GPL-3.0-only",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "aspartame",
+          "str": ">= 2022.9.14",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2022.9.14"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.12",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.12"
+          }
+        },
+        {
+          "name": "matext",
+          "str": ">= 2022.9.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2022.9.3"
+          }
+        }
+      ],
+      "bin": [
+        "xidoc"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/string-view",
+      "rev": "3155e68be743665d27daca0ed04c9e774f122680"
     },
     "refs/heads/table-of-contents": {
       "name": "xidoc",
@@ -3148,6 +3205,120 @@
       "backend": "c",
       "ref": "refs/tags/2022.9.6",
       "rev": "81f6b35683ea68339e91ae394ee848951d769be4"
+    },
+    "refs/tags/2023.1.8": {
+      "name": "xidoc",
+      "version": "2023.1.8",
+      "author": "Adam Blažek",
+      "desc": "A consistent markup language",
+      "license": "GPL-3.0-only",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "aspartame",
+          "str": ">= 2022.9.14",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2022.9.14"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.12",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.12"
+          }
+        },
+        {
+          "name": "matext",
+          "str": ">= 2022.9.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2022.9.3"
+          }
+        }
+      ],
+      "bin": [
+        "xidoc"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2023.1.8",
+      "rev": "dca04857b75013780821a053ef21e3efff4ed9d7"
+    },
+    "refs/tags/2023.1.9": {
+      "name": "xidoc",
+      "version": "2023.1.9",
+      "author": "Adam Blažek",
+      "desc": "A consistent markup language",
+      "license": "GPL-3.0-only",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "aspartame",
+          "str": ">= 2022.9.14",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2022.9.14"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.12",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.12"
+          }
+        },
+        {
+          "name": "matext",
+          "str": ">= 2022.9.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2022.9.3"
+          }
+        }
+      ],
+      "bin": [
+        "xidoc"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2023.1.9",
+      "rev": "32ec880a629e11617b29e46090ff1fc6e59f01bb"
     }
   },
   "cudf": {
@@ -3202,7 +3373,9 @@
       "22009020": "refs/tags/2022.9.20",
       "22009021": "refs/tags/2022.9.21",
       "22009003": "refs/tags/2022.9.3",
-      "22009006": "refs/tags/2022.9.6"
+      "22009006": "refs/tags/2022.9.6",
+      "23001008": "refs/tags/2023.1.8",
+      "23001009": "refs/tags/2023.1.9"
     }
   }
 }

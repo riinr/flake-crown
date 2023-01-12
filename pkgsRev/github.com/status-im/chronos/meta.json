@@ -76,7 +76,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "e9f8baa6ee2e21ff8e6b6c0ce0c22368cdd9e758"
+      "rev": "945c304197a0e34b1126cb073df64d2df7ce57dd"
     },
     "refs/heads/accept-temp": {
       "name": "chronos",
@@ -150,67 +150,6 @@
       "backend": "c",
       "ref": "refs/heads/achannels",
       "rev": "7b75ee61c6e09600a7eda2e999f28853b69e60c4"
-    },
-    "refs/heads/address-329": {
-      "name": "chronos",
-      "version": "3.0.11",
-      "author": "Status Research & Development GmbH",
-      "desc": "Chronos",
-      "license": "Apache License 2.0 or MIT",
-      "skipDirs": [
-        "tests"
-      ],
-      "skipFiles": [],
-      "skipExt": [],
-      "installDirs": [],
-      "installFiles": [
-        "chronos.nim"
-      ],
-      "installExt": [],
-      "requires": [
-        {
-          "name": "nim",
-          "str": "> 1.2.0",
-          "ver": {
-            "kind": "verLater",
-            "ver": "1.2.0"
-          }
-        },
-        {
-          "name": "stew",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "bearssl",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "httputils",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "unittest2",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        }
-      ],
-      "bin": [],
-      "binDir": "",
-      "srcDir": "",
-      "backend": "c",
-      "ref": "refs/heads/address-329",
-      "rev": "f6a1d3327f84429df4f9be84f918f3eaf812d6ae"
     },
     "refs/heads/allowclosedispatcher": {
       "name": "chronos",
@@ -655,6 +594,128 @@
       "backend": "c",
       "ref": "refs/heads/benchmarks",
       "rev": "4fa3b6e3c7096cc72c33264c4174abe8334c064b"
+    },
+    "refs/heads/bind-to-local-addr": {
+      "name": "chronos",
+      "version": "3.0.11",
+      "author": "Status Research & Development GmbH",
+      "desc": "Networking framework with async/await support",
+      "license": "MIT or Apache License 2.0",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "chronos.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/bind-to-local-addr",
+      "rev": "e7e8a84e3018f624d7cf161e8b83931cf71a311a"
+    },
+    "refs/heads/bind-to-local-addr-new-connect": {
+      "name": "chronos",
+      "version": "3.0.11",
+      "author": "Status Research & Development GmbH",
+      "desc": "Networking framework with async/await support",
+      "license": "MIT or Apache License 2.0",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "chronos.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/bind-to-local-addr-new-connect",
+      "rev": "688b70c64073a68bd4dab02a7a39445350505c46"
     },
     "refs/heads/cleanup-deleted-timers": {
       "name": "chronos",
@@ -1616,7 +1677,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "e9f8baa6ee2e21ff8e6b6c0ce0c22368cdd9e758"
+      "rev": "945c304197a0e34b1126cb073df64d2df7ce57dd"
     },
     "refs/heads/new-connection-leak": {
       "name": "chronos",
@@ -2713,7 +2774,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/tcpclientnodelay",
-      "rev": "8b44843d416961f57786579533677c12a9876976"
+      "rev": "6b0a727d7412c749e8237308d1eea55a6074fe04"
     },
     "refs/heads/testfix": {
       "name": "chronos",

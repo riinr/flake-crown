@@ -42,7 +42,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "06e3e04ad75c4eef82a99bd3497dd9a28bee5155"
+      "rev": "a7798d98db91f71bad8481a1050cc68fc627c906"
     },
     "refs/heads/main": {
       "name": "cli",
@@ -75,7 +75,40 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "06e3e04ad75c4eef82a99bd3497dd9a28bee5155"
+      "rev": "a7798d98db91f71bad8481a1050cc68fc627c906"
+    },
+    "refs/heads/renovate/major-semantic-release-monorepo": {
+      "name": "cli",
+      "version": "1.5.0",
+      "author": "Jonah Snider",
+      "desc": "A CLI to interact with ZWS",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        }
+      ],
+      "bin": [
+        "zws"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/renovate/major-semantic-release-monorepo",
+      "rev": "0f54cc771e217b354e4d684c999d3af02a19fcea"
     },
     "refs/notes/semantic-release": {
       "rev": "74ba37449857898828cbd4eef4db0595fd26d05b",

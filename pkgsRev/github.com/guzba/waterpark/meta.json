@@ -15,9 +15,9 @@
   "refs": {
     "HEAD": {
       "name": "waterpark",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": "Ryan Oldenburg",
-      "desc": "Thread-safe database connection pools",
+      "desc": "Thread-safe object pools",
       "license": "MIT",
       "skipDirs": [],
       "skipFiles": [],
@@ -40,13 +40,13 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "d06253d8fc5592cd3c205308088bd1df28466c88"
+      "rev": "7f8b26d72cb5c45ec87780903c98760c958938d2"
     },
     "refs/heads/master": {
       "name": "waterpark",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": "Ryan Oldenburg",
-      "desc": "Thread-safe database connection pools",
+      "desc": "Thread-safe object pools",
       "license": "MIT",
       "skipDirs": [],
       "skipFiles": [],
@@ -69,7 +69,36 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "d06253d8fc5592cd3c205308088bd1df28466c88"
+      "rev": "7f8b26d72cb5c45ec87780903c98760c958938d2"
+    },
+    "refs/heads/ryan": {
+      "name": "waterpark",
+      "version": "0.1.1",
+      "author": "Ryan Oldenburg",
+      "desc": "Thread-safe object pools",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.8"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/ryan",
+      "rev": "567d981e1110b1f47275aef56e0309a67dac44f1"
     },
     "refs/tags/0.1.0": {
       "name": "waterpark",
@@ -99,12 +128,42 @@
       "backend": "c",
       "ref": "refs/tags/0.1.0",
       "rev": "d06253d8fc5592cd3c205308088bd1df28466c88"
+    },
+    "refs/tags/0.1.1": {
+      "name": "waterpark",
+      "version": "0.1.1",
+      "author": "Ryan Oldenburg",
+      "desc": "Thread-safe object pools",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.8"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.1",
+      "rev": "7f8b26d72cb5c45ec87780903c98760c958938d2"
     }
   },
   "cudf": {
     "name": "waterpark",
     "version": {
-      "1000": "refs/tags/0.1.0"
+      "1000": "refs/tags/0.1.0",
+      "1001": "refs/tags/0.1.1"
     }
   }
 }

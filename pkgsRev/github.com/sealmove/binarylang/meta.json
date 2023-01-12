@@ -17,7 +17,7 @@
   "refs": {
     "HEAD": {
       "name": "binarylang",
-      "version": "0.5.1",
+      "version": "0.7.0",
       "author": "Stefanos Mandalas",
       "desc": "Binary parser/encoder DSL",
       "license": "MIT",
@@ -32,10 +32,10 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.4",
+          "str": ">= 1.6.10",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.4"
+            "ver": "1.6.10"
           }
         },
         {
@@ -51,11 +51,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "10a368caf6afca98851b9e8f6553274c9765501f"
+      "rev": "8024b2233ef42d420b2685d718381218b7f71e93"
     },
     "refs/heads/main": {
       "name": "binarylang",
-      "version": "0.5.1",
+      "version": "0.7.0",
       "author": "Stefanos Mandalas",
       "desc": "Binary parser/encoder DSL",
       "license": "MIT",
@@ -70,10 +70,10 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.4",
+          "str": ">= 1.6.10",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.4"
+            "ver": "1.6.10"
           }
         },
         {
@@ -89,7 +89,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "10a368caf6afca98851b9e8f6553274c9765501f"
+      "rev": "8024b2233ef42d420b2685d718381218b7f71e93"
     },
     "refs/tags/v0.2.0": {
       "name": "binarylang",
@@ -318,6 +318,82 @@
       "backend": "c",
       "ref": "refs/tags/v0.5.1",
       "rev": "5767e79481ec13af3fed61007ebf2f5e6a3c305e"
+    },
+    "refs/tags/v0.6.0": {
+      "name": "binarylang",
+      "version": "0.6.0",
+      "author": "Stefanos Mandalas",
+      "desc": "Binary parser/encoder DSL",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "binarylang.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.10"
+          }
+        },
+        {
+          "name": "bitstreams",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.6.0",
+      "rev": "a25d402e29b49dc194799d0f0b4c4f9e50ce2f44"
+    },
+    "refs/tags/v0.7.0": {
+      "name": "binarylang",
+      "version": "0.7.0",
+      "author": "Stefanos Mandalas",
+      "desc": "Binary parser/encoder DSL",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "binarylang.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.10"
+          }
+        },
+        {
+          "name": "bitstreams",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.7.0",
+      "rev": "8a37c44daad677a4f079ee41947d7fdfc20c36bb"
     }
   },
   "cudf": {
@@ -328,7 +404,9 @@
       "3001": "refs/tags/v0.3.1",
       "3002": "refs/tags/v0.3.2",
       "5000": "refs/tags/v0.5.0",
-      "5001": "refs/tags/v0.5.1"
+      "5001": "refs/tags/v0.5.1",
+      "6000": "refs/tags/v0.6.0",
+      "7000": "refs/tags/v0.7.0"
     }
   }
 }

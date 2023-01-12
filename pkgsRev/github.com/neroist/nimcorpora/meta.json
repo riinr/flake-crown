@@ -12,7 +12,7 @@
   "refs": {
     "HEAD": {
       "name": "nimcorpora",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": "Jasmine",
       "desc": "A Nim interface for Darius Kazemi's Corpora Project.",
       "license": "GPL-3.0-only",
@@ -28,10 +28,10 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.6.10",
+          "str": ">= 1.4.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.6.10"
+            "ver": "1.4.0"
           }
         },
         {
@@ -54,11 +54,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "1a23ebfa9b2e580638d8fa2b96db6a92111a04f3"
+      "rev": "43f0edf3637ab6817a2f9621fcb5ec7523d46769"
     },
     "refs/heads/main": {
       "name": "nimcorpora",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": "Jasmine",
       "desc": "A Nim interface for Darius Kazemi's Corpora Project.",
       "license": "GPL-3.0-only",
@@ -74,10 +74,10 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.6.10",
+          "str": ">= 1.4.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.6.10"
+            "ver": "1.4.0"
           }
         },
         {
@@ -100,7 +100,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "1a23ebfa9b2e580638d8fa2b96db6a92111a04f3"
+      "rev": "43f0edf3637ab6817a2f9621fcb5ec7523d46769"
     },
     "refs/tags/0.1.0": {
       "name": "nimcorpora",
@@ -147,12 +147,59 @@
       "backend": "c",
       "ref": "refs/tags/0.1.0",
       "rev": "1a23ebfa9b2e580638d8fa2b96db6a92111a04f3"
+    },
+    "refs/tags/0.1.1": {
+      "name": "nimcorpora",
+      "version": "0.1.1",
+      "author": "Jasmine",
+      "desc": "A Nim interface for Darius Kazemi's Corpora Project.",
+      "license": "GPL-3.0-only",
+      "skipDirs": [
+        "examples",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "fab",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.1",
+      "rev": "118e340c6fa95e816e702283620d46f396d3d8a7"
     }
   },
   "cudf": {
     "name": "nimcorpora",
     "version": {
-      "1000": "refs/tags/0.1.0"
+      "1000": "refs/tags/0.1.0",
+      "1001": "refs/tags/0.1.1"
     }
   }
 }

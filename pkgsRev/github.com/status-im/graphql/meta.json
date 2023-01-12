@@ -91,6 +91,85 @@
       "ref": "HEAD",
       "rev": "4ef25a2d036da25c8e568b0bba426cc591fe7f19"
     },
+    "refs/heads/fix-ci": {
+      "name": "graphql",
+      "version": "0.2.24",
+      "author": "Status Research & Development GmbH",
+      "desc": "GraphQL parser, server and client implementation",
+      "license": "Apache License 2.0",
+      "skipDirs": [
+        "tests",
+        "resources",
+        "fuzzer",
+        "docs",
+        "playground"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "graphql.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "faststreams",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "json_serialization",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/status-im/nim-zlib",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/status-im/nim-unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fix-ci",
+      "rev": "b0e1bbb09142471aaf30bb67520a40dd38c4bec1"
+    },
     "refs/heads/master": {
       "name": "graphql",
       "version": "0.2.24",
@@ -234,6 +313,85 @@
       "backend": "c",
       "ref": "refs/heads/mocha_test_report",
       "rev": "9ea810d20e005205f2ab156f9f48971a175db10b"
+    },
+    "refs/heads/v3": {
+      "name": "graphql",
+      "version": "0.2.24",
+      "author": "Status Research & Development GmbH",
+      "desc": "GraphQL parser, server and client implementation",
+      "license": "Apache License 2.0",
+      "skipDirs": [
+        "tests",
+        "resources",
+        "fuzzer",
+        "docs",
+        "playground"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "graphql.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "faststreams",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "json_serialization",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/status-im/nim-zlib",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/status-im/nim-unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/v3",
+      "rev": "69592f4e5aaa73e850084d59256f1b168bd67c00"
     }
   },
   "cudf": {

@@ -26,7 +26,7 @@
   "refs": {
     "HEAD": {
       "name": "pixie",
-      "version": "5.0.4",
+      "version": "5.0.5",
       "author": "Andre von Houck and Ryan Oldenburg",
       "desc": "Full-featured 2d graphics library for Nim.",
       "license": "MIT",
@@ -92,6 +92,14 @@
             "kind": "verEqLater",
             "ver": "1.1.1"
           }
+        },
+        {
+          "name": "crunchy",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
         }
       ],
       "bin": [],
@@ -99,7 +107,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "17c6d60e0cae144cfdc556f0ad0d9eb95e1275a8"
+      "rev": "9619cc4e540b6eac7917d8af08a9efb1408d4155"
     },
     "refs/heads/dev": {
       "name": "pixie",
@@ -334,7 +342,7 @@
     },
     "refs/heads/guzba": {
       "name": "pixie",
-      "version": "5.0.4",
+      "version": "5.0.5",
       "author": "Andre von Houck and Ryan Oldenburg",
       "desc": "Full-featured 2d graphics library for Nim.",
       "license": "MIT",
@@ -399,6 +407,14 @@
           "ver": {
             "kind": "verEqLater",
             "ver": "1.1.1"
+          }
+        },
+        {
+          "name": "crunchy",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
           }
         }
       ],
@@ -407,11 +423,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/guzba",
-      "rev": "e4b0327cfc7f2d3871d0de940578c847358e3cf4"
+      "rev": "2f8c21a6a9059a44d1d6504df9eaca6994006bdb"
     },
     "refs/heads/master": {
       "name": "pixie",
-      "version": "5.0.4",
+      "version": "5.0.5",
       "author": "Andre von Houck and Ryan Oldenburg",
       "desc": "Full-featured 2d graphics library for Nim.",
       "license": "MIT",
@@ -477,6 +493,14 @@
             "kind": "verEqLater",
             "ver": "1.1.1"
           }
+        },
+        {
+          "name": "crunchy",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
         }
       ],
       "bin": [],
@@ -484,7 +508,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "17c6d60e0cae144cfdc556f0ad0d9eb95e1275a8"
+      "rev": "9619cc4e540b6eac7917d8af08a9efb1408d4155"
     },
     "refs/heads/osfont": {
       "name": "pixie",
@@ -5304,6 +5328,91 @@
       "backend": "c",
       "ref": "refs/tags/5.0.4",
       "rev": "e4b0327cfc7f2d3871d0de940578c847358e3cf4"
+    },
+    "refs/tags/5.0.5": {
+      "name": "pixie",
+      "version": "5.0.5",
+      "author": "Andre von Houck and Ryan Oldenburg",
+      "desc": "Full-featured 2d graphics library for Nim.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "vmath",
+          "str": ">= 1.1.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.4"
+          }
+        },
+        {
+          "name": "chroma",
+          "str": ">= 0.2.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.6"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.3"
+          }
+        },
+        {
+          "name": "flatty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "nimsimd",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "bumpy",
+          "str": ">= 1.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.1"
+          }
+        },
+        {
+          "name": "crunchy",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/5.0.5",
+      "rev": "9619cc4e540b6eac7917d8af08a9efb1408d4155"
     }
   },
   "cudf": {
@@ -5368,7 +5477,8 @@
       "5000001": "refs/tags/5.0.1",
       "5000002": "refs/tags/5.0.2",
       "5000003": "refs/tags/5.0.3",
-      "5000004": "refs/tags/5.0.4"
+      "5000004": "refs/tags/5.0.4",
+      "5000005": "refs/tags/5.0.5"
     }
   }
 }

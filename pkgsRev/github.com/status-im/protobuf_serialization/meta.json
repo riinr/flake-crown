@@ -15,128 +15,6 @@
   "refs": {
     "HEAD": {
       "name": "protobuf_serialization",
-      "version": "0.2.0",
-      "author": "Joey Yakimowich-Payne",
-      "desc": "Protobuf implementation compatible with the nim-serialization framework.",
-      "license": "MIT",
-      "skipDirs": [
-        "tests"
-      ],
-      "skipFiles": [],
-      "skipExt": [],
-      "installDirs": [],
-      "installFiles": [
-        "protobuf_serialization.nim"
-      ],
-      "installExt": [],
-      "requires": [
-        {
-          "name": "nim",
-          "str": ">= 1.2.0",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "1.2.0"
-          }
-        },
-        {
-          "name": "stew",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "faststreams",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "serialization",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "combparser",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        }
-      ],
-      "bin": [],
-      "binDir": "",
-      "srcDir": "",
-      "backend": "c",
-      "ref": "HEAD",
-      "rev": "27b400fdf3bd8ce7120ca66fc1de39d3f1a5804a"
-    },
-    "refs/heads/ci-bump": {
-      "name": "protobuf_serialization",
-      "version": "0.2.0",
-      "author": "Joey Yakimowich-Payne",
-      "desc": "Protobuf implementation compatible with the nim-serialization framework.",
-      "license": "MIT",
-      "skipDirs": [
-        "tests"
-      ],
-      "skipFiles": [],
-      "skipExt": [],
-      "installDirs": [],
-      "installFiles": [
-        "protobuf_serialization.nim"
-      ],
-      "installExt": [],
-      "requires": [
-        {
-          "name": "nim",
-          "str": ">= 1.2.0",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "1.2.0"
-          }
-        },
-        {
-          "name": "stew",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "faststreams",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "serialization",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "combparser",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        }
-      ],
-      "bin": [],
-      "binDir": "",
-      "srcDir": "",
-      "backend": "c",
-      "ref": "refs/heads/ci-bump",
-      "rev": "7954908e860b4ab84a42d5b434f0bde5b9f04407"
-    },
-    "refs/heads/cleanup": {
-      "name": "protobuf_serialization",
       "version": "0.3.0",
       "author": "Status",
       "desc": "Protobuf implementation compatible with the nim-serialization framework.",
@@ -200,10 +78,10 @@
       "binDir": "",
       "srcDir": "",
       "backend": "c",
-      "ref": "refs/heads/cleanup",
-      "rev": "cd883399842a4cd0d529d9d3597a3df26328e143"
+      "ref": "HEAD",
+      "rev": "039007fda3731b695a9a64234c890eca28afef11"
     },
-    "refs/heads/fix-26": {
+    "refs/heads/ci-bump": {
       "name": "protobuf_serialization",
       "version": "0.2.0",
       "author": "Joey Yakimowich-Payne",
@@ -261,8 +139,8 @@
       "binDir": "",
       "srcDir": "",
       "backend": "c",
-      "ref": "refs/heads/fix-26",
-      "rev": "05d84ed9ff080e389b16a0163c3958032c258b31"
+      "ref": "refs/heads/ci-bump",
+      "rev": "7954908e860b4ab84a42d5b434f0bde5b9f04407"
     },
     "refs/heads/fix-enum-rangedefect": {
       "name": "protobuf_serialization",
@@ -449,8 +327,8 @@
     },
     "refs/heads/master": {
       "name": "protobuf_serialization",
-      "version": "0.2.0",
-      "author": "Joey Yakimowich-Payne",
+      "version": "0.3.0",
+      "author": "Status",
       "desc": "Protobuf implementation compatible with the nim-serialization framework.",
       "license": "MIT",
       "skipDirs": [
@@ -499,6 +377,13 @@
           "ver": {
             "kind": "verAny"
           }
+        },
+        {
+          "name": "unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
         }
       ],
       "bin": [],
@@ -506,7 +391,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "27b400fdf3bd8ce7120ca66fc1de39d3f1a5804a"
+      "rev": "039007fda3731b695a9a64234c890eca28afef11"
     },
     "refs/heads/stylecheck": {
       "name": "protobuf_serialization",
@@ -573,7 +458,7 @@
   "cudf": {
     "name": "protobufserialization",
     "version": {
-      "2000": "HEAD"
+      "3000": "HEAD"
     }
   }
 }

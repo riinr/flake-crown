@@ -17,7 +17,7 @@
   "refs": {
     "HEAD": {
       "name": "github",
-      "version": "2.0.4",
+      "version": "2.0.5",
       "author": "disruptek",
       "desc": "github api",
       "license": "MIT",
@@ -28,14 +28,6 @@
       "installFiles": [],
       "installExt": [],
       "requires": [
-        {
-          "name": "npeg",
-          "str": "< 1.0.0",
-          "ver": {
-            "kind": "verEarlier",
-            "ver": "1.0.0"
-          }
-        },
         {
           "name": "https://github.com/disruptek/rest.git",
           "str": ">= 1.0.5 & < 2.0.0",
@@ -57,7 +49,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "93eaa02c40e1ca63b49656ff2214da55b13c12df"
+      "rev": "881ced17259a6d138cf0e77bc4733e1f898d95fc"
     },
     "refs/heads/devel": {
       "name": "github",
@@ -127,7 +119,7 @@
     },
     "refs/heads/master": {
       "name": "github",
-      "version": "2.0.4",
+      "version": "2.0.5",
       "author": "disruptek",
       "desc": "github api",
       "license": "MIT",
@@ -138,14 +130,6 @@
       "installFiles": [],
       "installExt": [],
       "requires": [
-        {
-          "name": "npeg",
-          "str": "< 1.0.0",
-          "ver": {
-            "kind": "verEarlier",
-            "ver": "1.0.0"
-          }
-        },
         {
           "name": "https://github.com/disruptek/rest.git",
           "str": ">= 1.0.5 & < 2.0.0",
@@ -167,7 +151,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "93eaa02c40e1ca63b49656ff2214da55b13c12df"
+      "rev": "881ced17259a6d138cf0e77bc4733e1f898d95fc"
     },
     "refs/tags/1.0.0": {
       "name": "github",
@@ -679,6 +663,42 @@
       "backend": "c",
       "ref": "refs/tags/2.0.4",
       "rev": "6fc70f2503d6e7fde8632a03d828559d6312769c"
+    },
+    "refs/tags/2.0.5": {
+      "name": "github",
+      "version": "2.0.5",
+      "author": "disruptek",
+      "desc": "github api",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.5 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.5"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.0.5",
+      "rev": "1a03b280ddb508ba80e27315c44d77afdd428d4d"
     }
   },
   "cudf": {
@@ -693,7 +713,8 @@
       "2000001": "refs/tags/2.0.1",
       "2000002": "refs/tags/2.0.2",
       "2000003": "refs/tags/2.0.3",
-      "2000004": "refs/tags/2.0.4"
+      "2000004": "refs/tags/2.0.4",
+      "2000005": "refs/tags/2.0.5"
     }
   }
 }

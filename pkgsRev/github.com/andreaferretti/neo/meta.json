@@ -16,7 +16,7 @@
   "refs": {
     "HEAD": {
       "name": "neo",
-      "version": "0.3.3",
+      "version": "0.3.4",
       "author": "Andrea Ferretti",
       "desc": "Linear Algebra for Nim",
       "license": "Apache2",
@@ -73,11 +73,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "089116c0bac441a3d52a7bfabf985e9063d7e4ea"
+      "rev": "6f015e4252bfd111dc522ac8d3f9919bad66b0b7"
     },
     "refs/heads/master": {
       "name": "neo",
-      "version": "0.3.3",
+      "version": "0.3.4",
       "author": "Andrea Ferretti",
       "desc": "Linear Algebra for Nim",
       "license": "Apache2",
@@ -134,7 +134,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "089116c0bac441a3d52a7bfabf985e9063d7e4ea"
+      "rev": "6f015e4252bfd111dc522ac8d3f9919bad66b0b7"
     },
     "refs/heads/newtypes": {
       "name": "neo",
@@ -1231,6 +1231,67 @@
       "backend": "c",
       "ref": "refs/tags/0.3.3",
       "rev": "089116c0bac441a3d52a7bfabf985e9063d7e4ea"
+    },
+    "refs/tags/0.3.4": {
+      "name": "neo",
+      "version": "0.3.4",
+      "author": "Andrea Ferretti",
+      "desc": "Linear Algebra for Nim",
+      "license": "Apache2",
+      "skipDirs": [
+        "tests",
+        "benchmarks",
+        "htmldocs"
+      ],
+      "skipFiles": [
+        "_config.yml"
+      ],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "neo.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        },
+        {
+          "name": "nimblas",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "nimcuda",
+          "str": ">= 0.1.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.6"
+          }
+        },
+        {
+          "name": "nimlapack",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.3.4",
+      "rev": "6f015e4252bfd111dc522ac8d3f9919bad66b0b7"
     }
   },
   "cudf": {
@@ -1251,7 +1312,8 @@
       "3000": "refs/tags/0.3.0",
       "3001": "refs/tags/0.3.1",
       "3002": "refs/tags/0.3.2",
-      "3003": "refs/tags/0.3.3"
+      "3003": "refs/tags/0.3.3",
+      "3004": "refs/tags/0.3.4"
     }
   }
 }

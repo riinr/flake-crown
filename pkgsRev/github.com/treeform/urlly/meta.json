@@ -12,7 +12,7 @@
   "refs": {
     "HEAD": {
       "name": "urlly",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": "Andre von Houck",
       "desc": "URI and URL parsing for Nim for C/JS backends. Similar API to browsers's `window.location`.",
       "license": "MIT",
@@ -37,11 +37,40 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "9bc4d1acd7ecb972590cf20a2c8244e9930719eb"
+      "rev": "94e9f864115c64debcfcce5db04c636838a4b408"
+    },
+    "refs/heads/dev": {
+      "name": "urlly",
+      "version": "1.1.1",
+      "author": "Andre von Houck",
+      "desc": "URI and URL parsing for Nim for C/JS backends. Similar API to browsers's `window.location`.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/dev",
+      "rev": "ddc9381ee90019219109f6739c864044cde1602b"
     },
     "refs/heads/master": {
       "name": "urlly",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": "Andre von Houck",
       "desc": "URI and URL parsing for Nim for C/JS backends. Similar API to browsers's `window.location`.",
       "license": "MIT",
@@ -66,7 +95,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "9bc4d1acd7ecb972590cf20a2c8244e9930719eb"
+      "rev": "94e9f864115c64debcfcce5db04c636838a4b408"
     },
     "refs/heads/ryan": {
       "name": "urlly",
@@ -270,6 +299,35 @@
       "backend": "c",
       "ref": "refs/tags/1.1.0",
       "rev": "e9ca434540f409ba67f37f570e9de6c5eba71624"
+    },
+    "refs/tags/1.1.1": {
+      "name": "urlly",
+      "version": "1.1.1",
+      "author": "Andre von Houck",
+      "desc": "URI and URL parsing for Nim for C/JS backends. Similar API to browsers's `window.location`.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.1.1",
+      "rev": "94e9f864115c64debcfcce5db04c636838a4b408"
     }
   },
   "cudf": {
@@ -280,7 +338,8 @@
       "3000": "refs/tags/0.3.0",
       "1000000": "refs/tags/1.0.0",
       "1000001": "refs/tags/1.0.1",
-      "1001000": "refs/tags/1.1.0"
+      "1001000": "refs/tags/1.1.0",
+      "1001001": "refs/tags/1.1.1"
     }
   }
 }

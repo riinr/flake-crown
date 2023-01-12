@@ -10,7 +10,7 @@
   "refs": {
     "HEAD": {
       "name": "ups",
-      "version": "0.0.7",
+      "version": "0.0.8",
       "author": "disruptek",
       "desc": "a package handler",
       "license": "MIT",
@@ -25,7 +25,7 @@
       "requires": [
         {
           "name": "npeg",
-          "str": ">= 0.23.2 & < 1.0.0",
+          "str": ">= 0.23.2 & < 2.0.0",
           "ver": {
             "kind": "verIntersect",
             "verILeft": {
@@ -34,7 +34,7 @@
             },
             "verIRight": {
               "kind": "verEarlier",
-              "ver": "1.0.0"
+              "ver": "2.0.0"
             }
           }
         }
@@ -44,11 +44,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "afd93b80bd8c7c1a786b0f649240797cc0f6b538"
+      "rev": "44be6ee0a254b340dbfe444212b5964121214618"
     },
     "refs/heads/master": {
       "name": "ups",
-      "version": "0.0.7",
+      "version": "0.0.8",
       "author": "disruptek",
       "desc": "a package handler",
       "license": "MIT",
@@ -63,7 +63,7 @@
       "requires": [
         {
           "name": "npeg",
-          "str": ">= 0.23.2 & < 1.0.0",
+          "str": ">= 0.23.2 & < 2.0.0",
           "ver": {
             "kind": "verIntersect",
             "verILeft": {
@@ -72,7 +72,7 @@
             },
             "verIRight": {
               "kind": "verEarlier",
-              "ver": "1.0.0"
+              "ver": "2.0.0"
             }
           }
         }
@@ -82,7 +82,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "afd93b80bd8c7c1a786b0f649240797cc0f6b538"
+      "rev": "44be6ee0a254b340dbfe444212b5964121214618"
     },
     "refs/tags/0.0.2": {
       "name": "ups",
@@ -326,6 +326,44 @@
       "backend": "c",
       "ref": "refs/tags/0.0.7",
       "rev": "fd303913b22b121dc42f332109e9c44950b9acd4"
+    },
+    "refs/tags/0.0.8": {
+      "name": "ups",
+      "version": "0.0.8",
+      "author": "disruptek",
+      "desc": "a package handler",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "ups.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "npeg",
+          "str": ">= 0.23.2 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.23.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.0.8",
+      "rev": "c61edc4e475cc7cb4bb9567b78790a2eea291cdc"
     }
   },
   "cudf": {
@@ -336,7 +374,8 @@
       "4": "refs/tags/0.0.4",
       "5": "refs/tags/0.0.5",
       "6": "refs/tags/0.0.6",
-      "7": "refs/tags/0.0.7"
+      "7": "refs/tags/0.0.7",
+      "8": "refs/tags/0.0.8"
     }
   }
 }

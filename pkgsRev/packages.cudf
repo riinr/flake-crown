@@ -421,6 +421,11 @@ version:  2001
 depends:  nimib >= 3003, tomlserialization >= 2000
 
 
+package:  nimislides
+version:  2002
+depends:  nimib >= 3003, tomlserialization >= 2000
+
+
 package:  symbolicnim
 version:  1000
 
@@ -1858,10 +1863,6 @@ package:  dik
 version:  1000000
 
 
-package:  cliche
-version:  1000000
-
-
 package:  hackpad
 version:  1000
 depends:  jester >= 1, zip >= 1
@@ -2840,6 +2841,11 @@ package:  todoist
 version:  1001
 
 
+package:  todoist
+version:  2000
+depends:  jsony >= 1
+
+
 package:  holst
 version:  1000
 
@@ -3369,6 +3375,16 @@ version:  1000
 
 package:  splitmix64
 version:  1000
+
+
+package:  xgui
+version:  1000
+depends:  nigui >= 1
+
+
+package:  xgui
+version:  1000
+depends:  nigui >= 1, regex >= 1
 
 
 package:  html2karax
@@ -8230,6 +8246,26 @@ version:  6001
 depends:  github-pmunch-libclang-nim >= 1, termstyle >= 1, macroutils >= 1
 
 
+package:  futhark
+version:  7000
+depends:  github-pmunch-libclang-nim >= 1, termstyle >= 1, macroutils >= 1
+
+
+package:  futhark
+version:  7001
+depends:  github-pmunch-libclang-nim >= 1, termstyle >= 1, macroutils >= 1
+
+
+package:  futhark
+version:  7002
+depends:  github-pmunch-libclang-nim >= 1, termstyle >= 1, macroutils >= 1
+
+
+package:  futhark
+version:  7003
+depends:  github-pmunch-libclang-nim >= 1, termstyle >= 1, macroutils >= 1
+
+
 package:  pcap
 version:  1000
 
@@ -11215,6 +11251,10 @@ package:  cutelog
 version:  3000000
 
 
+package:  cutelog
+version:  3000001
+
+
 package:  criterion
 version:  1000
 
@@ -11296,6 +11336,11 @@ depends:  npeg >= 23002, npeg < 1000000
 package:  ups
 version:  7
 depends:  npeg >= 23002, npeg < 1000000
+
+
+package:  ups
+version:  8
+depends:  npeg >= 23002, npeg < 2000000
 
 
 package:  openapi
@@ -11721,6 +11766,11 @@ depends:  npeg >= 20000, npeg < 23000, github-disruptek-rest-git >= 1000005, git
 package:  github
 version:  2000004
 depends:  npeg < 1000000, github-disruptek-rest-git >= 1000005, github-disruptek-rest-git < 2000000
+
+
+package:  github
+version:  2000005
+depends:  github-disruptek-rest-git >= 1000005, github-disruptek-rest-git < 2000000
 
 
 package:  gittyup
@@ -15427,6 +15477,16 @@ package:  nimsimd
 version:  1002002
 
 
+package:  curly
+version:  1000
+depends:  libcurl >= 1000000, zippy >= 10006, waterpark >= 1001, webby >= 1003
+
+
+package:  curly
+version:  1001
+depends:  libcurl >= 1000000, zippy >= 10006, waterpark >= 1001, webby >= 1003
+
+
 package:  zippy
 version:  1000
 
@@ -15789,6 +15849,11 @@ version:  2004
 depends:  zippy >= 10004, webby >= 1003
 
 
+package:  mummy
+version:  2005
+depends:  zippy >= 10004, webby >= 1003
+
+
 package:  depot
 version:  1000
 depends:  nimsimd >= 1002002, webby >= 1003
@@ -15797,6 +15862,21 @@ depends:  nimsimd >= 1002002, webby >= 1003
 package:  depot
 version:  2000
 depends:  nimsimd >= 1002002, webby >= 1003
+
+
+package:  depot
+version:  2001
+depends:  nimsimd >= 1002002, webby >= 1003
+
+
+package:  depot
+version:  2002
+depends:  nimsimd >= 1002002, webby >= 1003, crunchy >= 1000
+
+
+package:  crunchy
+version:  1000
+depends:  nimsimd >= 1002002
 
 
 package:  stbtruetype
@@ -15845,6 +15925,10 @@ depends:  nimsimd >= 4003
 
 package:  waterpark
 version:  1000
+
+
+package:  waterpark
+version:  1001
 
 
 package:  cirruwriter
@@ -19109,6 +19193,16 @@ version:  5001
 depends:  bitstreams >= 1
 
 
+package:  binarylang
+version:  6000
+depends:  bitstreams >= 1
+
+
+package:  binarylang
+version:  7000
+depends:  bitstreams >= 1
+
+
 package:  bitstreams
 version:  1000
 
@@ -19587,6 +19681,11 @@ depends:  nimblas >= 2000, nimcuda >= 1006, nimlapack >= 1001
 
 package:  neo
 version:  3003
+depends:  nimblas >= 2000, nimcuda >= 1006, nimlapack >= 1001
+
+
+package:  neo
+version:  3004
 depends:  nimblas >= 2000, nimcuda >= 1006, nimlapack >= 1001
 
 
@@ -24594,6 +24693,11 @@ version:  1000
 depends:  zippy >= 1, fab >= 1
 
 
+package:  nimcorpora
+version:  1001
+depends:  zippy >= 1, fab >= 1
+
+
 package:  matrix
 version:  1000
 depends:  jsony = 1000005
@@ -25392,6 +25496,10 @@ package:  webby
 version:  1003
 
 
+package:  webby
+version:  1004
+
+
 package:  dumpincludes
 version:  1
 depends:  cligen >= 1003002
@@ -25956,6 +26064,11 @@ version:  5000004
 depends:  vmath >= 1001004, chroma >= 2006, zippy >= 10003, flatty >= 3004, nimsimd >= 1002000, bumpy >= 1001001
 
 
+package:  pixie
+version:  5000005
+depends:  vmath >= 1001004, chroma >= 2006, zippy >= 10003, flatty >= 3004, nimsimd >= 1002000, bumpy >= 1001001, crunchy >= 1000
+
+
 package:  steamworks
 version:  1001
 
@@ -26050,6 +26163,10 @@ version:  1000001
 
 package:  urlly
 version:  1001000
+
+
+package:  urlly
+version:  1001001
 
 
 package:  benchy
@@ -26197,6 +26314,11 @@ depends:  libcurl >= 1000000, zippy >= 10000, webby >= 1003
 
 package:  puppy
 version:  2000001
+depends:  libcurl >= 1000000, zippy >= 10000, webby >= 1003
+
+
+package:  puppy
+version:  2000002
 depends:  libcurl >= 1000000, zippy >= 10000, webby >= 1003
 
 
@@ -32408,6 +32530,18 @@ package:  npeg
 version:  1000001
 
 
+package:  npeg
+version:  1001000
+
+
+package:  npeg
+version:  1001001
+
+
+package:  npeg
+version:  1001002
+
+
 package:  with
 version:  4000
 
@@ -36309,8 +36443,8 @@ version:  1009
 
 
 package:  protobufserialization
-version:  2000
-depends:  stew >= 1, faststreams >= 1, serialization >= 1, combparser >= 1
+version:  3000
+depends:  stew >= 1, faststreams >= 1, serialization >= 1, combparser >= 1, unittest2 >= 1
 
 
 package:  evmc
@@ -36452,11 +36586,6 @@ depends:  nimcrypto >= 4001, dnsclient >= 3000, dnsclient < 4000, bearssl >= 100
 package:  nimbus
 version:  1000
 depends:  chronicles >= 1, nimcrypto >= 1, stint >= 1, jsonrpc >= 1, chronos >= 1, bncurve >= 1, eth >= 1, stdshims >= 1
-
-
-package:  nimbus
-version:  1000
-depends:  bncurve >= 1, chronicles >= 1, chronos >= 1, eth >= 1, jsonrpc >= 1, libbacktrace >= 1, nimcrypto >= 1, stew >= 1, stint >= 1, rocksdb >= 1, ethash >= 1, blscurve >= 1, evmc >= 1, web3 >= 1
 
 
 package:  nimbus
@@ -36696,6 +36825,41 @@ version:  2001
 package:  coinbasepro
 version:  1003
 depends:  ws >= 1, decimal >= 1, uuids >= 1
+
+
+package:  ttop
+version:  3005
+depends:  illwill >= 1, zippy >= 1, asciigraph >= 1
+
+
+package:  ttop
+version:  3005
+depends:  illwill >= 1, zippy >= 1, asciigraph >= 1
+
+
+package:  ttop
+version:  3005
+depends:  illwill >= 1, zippy >= 1, asciigraph >= 1
+
+
+package:  ttop
+version:  3005
+depends:  illwill >= 1, zippy >= 1, asciigraph >= 1
+
+
+package:  ttop
+version:  3005
+depends:  illwill >= 1, zippy >= 1, asciigraph >= 1
+
+
+package:  ttop
+version:  3005
+depends:  illwill >= 1, zippy >= 1, asciigraph >= 1
+
+
+package:  ttop
+version:  3005
+depends:  illwill >= 1, zippy >= 1, asciigraph >= 1
 
 
 package:  ttop
@@ -38330,6 +38494,16 @@ version:  22009006
 depends:  cligen >= 1005012, matext >= 22009003, npeg >= 24001
 
 
+package:  xidoc
+version:  23001008
+depends:  aspartame >= 22009014, cligen >= 1005012, matext >= 22009003
+
+
+package:  xidoc
+version:  23001009
+depends:  aspartame >= 22009014, cligen >= 1005012, matext >= 22009003
+
+
 package:  integers
 version:  1001
 
@@ -38385,6 +38559,16 @@ version:  1000
 
 package:  receq
 version:  1000
+
+
+package:  parlexgen
+version:  1000
+depends:  fusion >= 1001000
+
+
+package:  parlexgen
+version:  1001
+depends:  fusion >= 1001000
 
 
 package:  nimsearches
@@ -40041,6 +40225,10 @@ depends:  cligen >= 1, util >= 1, github-thisago-brightcove >= 1
 package:  duckduckgo
 version:  1004
 depends:  scraper >= 1, gitlab-lurlo-useragent >= 1
+
+
+package:  googletranslate
+version:  1000
 
 
 package:  util

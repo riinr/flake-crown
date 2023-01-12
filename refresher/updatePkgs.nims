@@ -7,6 +7,7 @@ let DEBUG = getEnv("DEBUG", "")
 proc maxRunning(cmd: string, maxProcs: int) =
   let query = fmt"ps h -C .{cmd} -o pid|wc -l"
   while gorge(query).parseInt > maxProcs:
+    echo fmt"sleep, 6 items"
     exec "sleep 0.05"
 
 proc preCompile(cmd: string) =
@@ -17,14 +18,14 @@ proc run(pkgItems: seq[JsonNode]; cmd: string) =
   defer: maxRunning cmd, 0
   preCompile cmd
   for pkg in pkgItems:
-    maxRunning cmd, 2
+    maxRunning cmd, 14
     if pkg.hasKey("url") and "git" == pkg["method"].getStr:
       let pkgJSON = $pkg
-      exec "sleep 0.23"
+      # exec "sleep 0.01"
       echo fmt"""Running {cmd} for {pkg["name"]}"""
       if DEBUG != "":
         echo fmt"echo {pkgJSON.quoteShell}|{cmd}"
-      exec fmt"echo {pkgJSON.quoteShell}|{cmd}"
+      exec fmt"echo {pkgJSON.quoteShell}|{cmd} &"
 
 
 if defined process:
