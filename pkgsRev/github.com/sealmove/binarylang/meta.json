@@ -17,7 +17,7 @@
   "refs": {
     "HEAD": {
       "name": "binarylang",
-      "version": "0.7.0",
+      "version": "0.8.0",
       "author": "Stefanos Mandalas",
       "desc": "Binary parser/encoder DSL",
       "license": "MIT",
@@ -51,11 +51,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "8024b2233ef42d420b2685d718381218b7f71e93"
+      "rev": "70c68e33b831725b076a9e42228f45f28a6da273"
     },
     "refs/heads/main": {
       "name": "binarylang",
-      "version": "0.7.0",
+      "version": "0.8.0",
       "author": "Stefanos Mandalas",
       "desc": "Binary parser/encoder DSL",
       "license": "MIT",
@@ -89,7 +89,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "8024b2233ef42d420b2685d718381218b7f71e93"
+      "rev": "70c68e33b831725b076a9e42228f45f28a6da273"
     },
     "refs/tags/v0.2.0": {
       "name": "binarylang",
@@ -394,6 +394,44 @@
       "backend": "c",
       "ref": "refs/tags/v0.7.0",
       "rev": "8a37c44daad677a4f079ee41947d7fdfc20c36bb"
+    },
+    "refs/tags/v0.8.0": {
+      "name": "binarylang",
+      "version": "0.8.0",
+      "author": "Stefanos Mandalas",
+      "desc": "Binary parser/encoder DSL",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "binarylang.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.10"
+          }
+        },
+        {
+          "name": "bitstreams",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.8.0",
+      "rev": "2bca6f1de3937ea0f62e5d42102c77209b3098c0"
     }
   },
   "cudf": {
@@ -406,7 +444,8 @@
       "5000": "refs/tags/v0.5.0",
       "5001": "refs/tags/v0.5.1",
       "6000": "refs/tags/v0.6.0",
-      "7000": "refs/tags/v0.7.0"
+      "7000": "refs/tags/v0.7.0",
+      "8000": "refs/tags/v0.8.0"
     }
   }
 }

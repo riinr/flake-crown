@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "cppstl",
-      "version": "0.6.1",
+      "version": "0.6.2",
       "author": "Clonkk",
       "desc": "Bindings for the C++ Standard Template Library (STL)",
       "license": "MIT",
@@ -40,11 +40,11 @@
       "srcDir": "",
       "backend": "cpp",
       "ref": "HEAD",
-      "rev": "3ac25b4ca3df461b2b913a33899fd09fbc252a8b"
+      "rev": "914d41b7521221be05706e2317f85d6f77728d66"
     },
     "refs/heads/master": {
       "name": "cppstl",
-      "version": "0.6.1",
+      "version": "0.6.2",
       "author": "Clonkk",
       "desc": "Bindings for the C++ Standard Template Library (STL)",
       "license": "MIT",
@@ -71,7 +71,7 @@
       "srcDir": "",
       "backend": "cpp",
       "ref": "refs/heads/master",
-      "rev": "3ac25b4ca3df461b2b913a33899fd09fbc252a8b"
+      "rev": "914d41b7521221be05706e2317f85d6f77728d66"
     },
     "refs/tags/v0.2.2": {
       "name": "cppstl",
@@ -320,6 +320,37 @@
       "backend": "cpp",
       "ref": "refs/tags/v0.6.1",
       "rev": "3ac25b4ca3df461b2b913a33899fd09fbc252a8b"
+    },
+    "refs/tags/v0.6.2": {
+      "name": "cppstl",
+      "version": "0.6.2",
+      "author": "Clonkk",
+      "desc": "Bindings for the C++ Standard Template Library (STL)",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "cppstl.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "cpp",
+      "ref": "refs/tags/v0.6.2",
+      "rev": "914d41b7521221be05706e2317f85d6f77728d66"
     }
   },
   "cudf": {
@@ -330,7 +361,8 @@
       "4001": "refs/tags/v0.4.1",
       "5000": "refs/tags/v0.5.0",
       "6000": "refs/tags/v0.6.0",
-      "6001": "refs/tags/v0.6.1"
+      "6001": "refs/tags/v0.6.1",
+      "6002": "refs/tags/v0.6.2"
     }
   }
 }
