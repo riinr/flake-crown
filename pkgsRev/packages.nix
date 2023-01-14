@@ -275,6 +275,7 @@
   "conventionalsemver"                    = "/gitlab.com/SimplyZ/conventional_semver/meta.json";
   "convertkana"                           = "/github.com/z-kk/convertkana/meta.json";
   "cookiejar"                             = "/github.com/planety/cookiejar/meta.json";
+  "couchdbapi"                            = "/github.com/zendbit/couchdbapi/meta.json";
   "couchdb"                               = "/github.com/theAkito/couchdb/meta.json";
   "coverage"                              = "/github.com/yglukhov/coverage/meta.json";
   "coverartarchive"                       = "/github.com/achesak/coverartarchive/meta.json";
@@ -2072,6 +2073,7 @@
   "xxtea"                                 = "/github.com/xxtea/xxtea/meta.json";
   "yahooweather"                          = "/github.com/achesak/yahooweather/meta.json";
   "yaml"                                  = "/github.com/flyx/yaml/meta.json";
+  "yawd"                                  = "/github.com/zendbit/yawd/meta.json";
   "ytcc"                                  = "/git.ozzuu.com/thisago/ytcc/meta.json";
   "ytextractor"                           = "/git.ozzuu.com/thisago/ytextractor/meta.json";
   "yukiko"                                = "/github.com/ethosa/yukiko/meta.json";
