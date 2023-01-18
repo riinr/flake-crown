@@ -20,7 +20,7 @@
   "refs": {
     "HEAD": {
       "name": "npeg",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "author": "Ico Doornekamp",
       "desc": "a PEG library",
       "license": "MIT",
@@ -47,7 +47,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "f680e40f6cc7e026f53e4e9e68f496d6a7f5840a"
+      "rev": "ed7c60e15e0e9f088a77ffa76fa83e9723086173"
     },
     "refs/heads/backtrace": {
       "name": "npeg",
@@ -266,6 +266,37 @@
       "ref": "refs/heads/drop-json-ast",
       "rev": "141d0afd44c3235c80163db596b18c81a550e671"
     },
+    "refs/heads/exception": {
+      "name": "npeg",
+      "version": "1.1.1",
+      "author": "Ico Doornekamp",
+      "desc": "a PEG library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/exception",
+      "rev": "c4af9c7b4edd68b910e10a8a24b5fdb1ae289941"
+    },
     "refs/heads/gcsafe": {
       "name": "npeg",
       "version": "0.23.2",
@@ -361,7 +392,7 @@
     },
     "refs/heads/master": {
       "name": "npeg",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "author": "Ico Doornekamp",
       "desc": "a PEG library",
       "license": "MIT",
@@ -388,7 +419,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "f680e40f6cc7e026f53e4e9e68f496d6a7f5840a"
+      "rev": "ed7c60e15e0e9f088a77ffa76fa83e9723086173"
     },
     "refs/heads/no-computed-goto-for-large-grammars": {
       "name": "npeg",
@@ -2156,6 +2187,37 @@
       "backend": "c",
       "ref": "refs/tags/1.1.2",
       "rev": "ae1fa58af94477c40456414aa2a975cf26d5c9bc"
+    },
+    "refs/tags/1.2.0": {
+      "name": "npeg",
+      "version": "1.2.0",
+      "author": "Ico Doornekamp",
+      "desc": "a PEG library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.2.0",
+      "rev": "ed7c60e15e0e9f088a77ffa76fa83e9723086173"
     }
   },
   "cudf": {
@@ -2201,7 +2263,8 @@
       "1000001": "refs/tags/1.0.1",
       "1001000": "refs/tags/1.1.0",
       "1001001": "refs/tags/1.1.1",
-      "1001002": "refs/tags/1.1.2"
+      "1001002": "refs/tags/1.1.2",
+      "1002000": "refs/tags/1.2.0"
     }
   }
 }

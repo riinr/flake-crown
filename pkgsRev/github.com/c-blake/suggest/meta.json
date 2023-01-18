@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "suggest",
-      "version": "1.2",
+      "version": "1.3",
       "author": "Charles Blake",
       "desc": "mmap-persistent SymSpell spell checking algorithm",
       "license": "MIT/ISC",
@@ -30,18 +30,18 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 0.19.2",
+          "str": ">= 1.2.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.19.2"
+            "ver": "1.2.0"
           }
         },
         {
           "name": "cligen",
-          "str": ">= 0.9.34",
+          "str": ">= 1.5.37",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.9.34"
+            "ver": "1.5.37"
           }
         }
       ],
@@ -50,11 +50,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "6c600e6e6a944a2e17f740d2625e148b57183e77"
+      "rev": "8984bd4528aef767e04cc6c23fd162913757d087"
     },
     "refs/heads/master": {
       "name": "suggest",
-      "version": "1.2",
+      "version": "1.3",
       "author": "Charles Blake",
       "desc": "mmap-persistent SymSpell spell checking algorithm",
       "license": "MIT/ISC",
@@ -71,18 +71,18 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 0.19.2",
+          "str": ">= 1.2.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.19.2"
+            "ver": "1.2.0"
           }
         },
         {
           "name": "cligen",
-          "str": ">= 0.9.34",
+          "str": ">= 1.5.37",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.9.34"
+            "ver": "1.5.37"
           }
         }
       ],
@@ -91,7 +91,48 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "6c600e6e6a944a2e17f740d2625e148b57183e77"
+      "rev": "8984bd4528aef767e04cc6c23fd162913757d087"
+    },
+    "refs/tags/v.13": {
+      "name": "suggest",
+      "version": "1.3",
+      "author": "Charles Blake",
+      "desc": "mmap-persistent SymSpell spell checking algorithm",
+      "license": "MIT/ISC",
+      "skipDirs": [
+        "data"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "suggest.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.37",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.37"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v.13",
+      "rev": "8984bd4528aef767e04cc6c23fd162913757d087"
     },
     "refs/tags/v1.0": {
       "name": "suggest",
@@ -220,6 +261,7 @@
   "cudf": {
     "name": "suggest",
     "version": {
+      "1003000": "refs/tags/v.13",
       "5000": "refs/tags/v1.0",
       "1001000": "refs/tags/v1.1",
       "1002000": "refs/tags/v1.2"

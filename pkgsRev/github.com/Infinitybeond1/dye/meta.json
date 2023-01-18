@@ -16,7 +16,7 @@
   "refs": {
     "HEAD": {
       "name": "dye",
-      "version": "1.1.9",
+      "version": "1.2.1",
       "author": "Luke",
       "desc": "An image colorizer",
       "license": "GPL-3.0-or-later",
@@ -68,11 +68,10 @@
           }
         },
         {
-          "name": "harpoon",
-          "str": "#head",
+          "name": "puppy",
+          "str": "any version",
           "ver": {
-            "kind": "verSpecial",
-            "spe": "#head"
+            "kind": "verAny"
           }
         },
         {
@@ -90,7 +89,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "5083cfc63d11ddbf397b6cfcf79d5e57a19b1d93"
+      "rev": "997b3688149b0a087f0dd0221168c3d617094052"
     },
     "refs/heads/dart": {
       "rev": "9a2bbd23873d28324b241d874e938d2fa7fa56b3",
@@ -102,7 +101,7 @@
     },
     "refs/heads/main": {
       "name": "dye",
-      "version": "1.1.9",
+      "version": "1.2.1",
       "author": "Luke",
       "desc": "An image colorizer",
       "license": "GPL-3.0-or-later",
@@ -154,11 +153,10 @@
           }
         },
         {
-          "name": "harpoon",
-          "str": "#head",
+          "name": "puppy",
+          "str": "any version",
           "ver": {
-            "kind": "verSpecial",
-            "spe": "#head"
+            "kind": "verAny"
           }
         },
         {
@@ -176,7 +174,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "5083cfc63d11ddbf397b6cfcf79d5e57a19b1d93"
+      "rev": "997b3688149b0a087f0dd0221168c3d617094052"
     },
     "refs/tags/v1.0.0": {
       "name": "dye",
@@ -1000,6 +998,160 @@
       "backend": "c",
       "ref": "refs/tags/v1.1.9",
       "rev": "660f580d86e6a20a3688bbe6441eac4fffaa2fd4"
+    },
+    "refs/tags/v1.2.0": {
+      "name": "dye",
+      "version": "1.2.0",
+      "author": "Luke",
+      "desc": "An image colorizer",
+      "license": "GPL-3.0-or-later",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "progress",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "chroma",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "therapist",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "puppy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "dye"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v1.2.0",
+      "rev": "6a1743082a63858a1498c4996eb4aa6d1e2839c0"
+    },
+    "refs/tags/v1.2.1": {
+      "name": "dye",
+      "version": "1.2.1",
+      "author": "Luke",
+      "desc": "An image colorizer",
+      "license": "GPL-3.0-or-later",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "progress",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "pixie",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "chroma",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "therapist",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "puppy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "dye"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v1.2.1",
+      "rev": "997b3688149b0a087f0dd0221168c3d617094052"
     }
   },
   "cudf": {
@@ -1016,7 +1168,9 @@
       "1001006": "refs/tags/v1.1.6",
       "1001007": "refs/tags/v1.1.7",
       "1001008": "refs/tags/v1.1.8",
-      "1001009": "refs/tags/v1.1.9"
+      "1001009": "refs/tags/v1.1.9",
+      "1002000": "refs/tags/v1.2.0",
+      "1002001": "refs/tags/v1.2.1"
     }
   }
 }

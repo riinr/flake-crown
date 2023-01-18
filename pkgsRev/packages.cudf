@@ -1464,6 +1464,11 @@ version:  1008
 depends:  classes >= 2000, elvis >= 2000
 
 
+package:  simpledb
+version:  1000
+depends:  classes >= 2013
+
+
 package:  asciitext
 version:  1
 
@@ -3010,7 +3015,7 @@ version:  1001
 
 
 package:  pape
-version:  2
+version:  3
 
 
 package:  nimkov
@@ -5590,6 +5595,16 @@ version:  1001009
 depends:  progress >= 1, pixie >= 1, chroma >= 1, therapist >= 1, harpoon >= 1, zippy >= 1
 
 
+package:  dye
+version:  1002000
+depends:  progress >= 1, pixie >= 1, chroma >= 1, therapist >= 1, puppy >= 1, zippy >= 1
+
+
+package:  dye
+version:  1002001
+depends:  progress >= 1, pixie >= 1, chroma >= 1, therapist >= 1, puppy >= 1, zippy >= 1
+
+
 package:  findtests
 version:  1000
 
@@ -6763,6 +6778,10 @@ version:  1002000
 
 package:  pararules
 version:  1003000
+
+
+package:  pararules
+version:  1004000
 
 
 package:  parasound
@@ -9120,6 +9139,10 @@ version:  2012
 
 
 package:  variant
+version:  2013
+
+
+package:  variant
 version:  2002
 
 
@@ -9881,6 +9904,11 @@ depends:  fusion >= 1
 
 package:  localize
 version:  2000
+depends:  fusion >= 1
+
+
+package:  localize
+version:  3000
 depends:  fusion >= 1
 
 
@@ -20801,6 +20829,20 @@ package:  ed25519
 version:  1001
 
 
+package:  necsus
+version:  1000
+depends:  threading >= 1000, sync >= 1005000
+
+
+package:  necsus
+version:  2000
+depends:  threading >= 1000, sync >= 1005000
+
+
+package:  necsus
+version:  2001
+
+
 package:  filesize
 version:  1000000
 
@@ -21481,7 +21523,7 @@ version:  1000
 
 package:  tim
 version:  1000
-depends:  pkginfo >= 1, toktok >= 1, jsony >= 1, bson >= 1, watchout >= 1, nyml >= 1, klymene >= 1
+depends:  pkginfo >= 1, toktok >= 1, jsony >= 1, bson >= 1, watchout >= 1, sass >= 1, nyml >= 1, klymene >= 1
 
 
 package:  watchout
@@ -21490,6 +21532,11 @@ version:  1000
 
 package:  nyml
 version:  1000
+depends:  toktok >= 1, pkginfo >= 1
+
+
+package:  nyml
+version:  1001
 depends:  toktok >= 1, pkginfo >= 1
 
 
@@ -23898,6 +23945,16 @@ version:  4000
 depends:  cligen >= 1005027
 
 
+package:  thes
+version:  4001
+depends:  cligen >= 1005037, gralg >= 4001
+
+
+package:  thes
+version:  4002
+depends:  cligen >= 1005037, gralg >= 4002
+
+
 package:  spfun
 version:  2000
 
@@ -23932,6 +23989,11 @@ version:  4004
 
 package:  adix
 version:  4004
+
+
+package:  adix
+version:  4006
+depends:  cligen >= 1005037
 
 
 package:  cligen
@@ -24251,6 +24313,10 @@ version:  1005036
 
 
 package:  cligen
+version:  1005037
+
+
+package:  cligen
 version:  1005004
 
 
@@ -24299,6 +24365,16 @@ version:  3000
 depends:  cligen >= 1005027
 
 
+package:  gralg
+version:  3001
+depends:  cligen >= 1005037
+
+
+package:  gralg
+version:  4002
+depends:  cligen >= 1005037
+
+
 package:  hldiff
 version:  1000
 depends:  cligen >= 1
@@ -24339,6 +24415,11 @@ version:  8000
 depends:  cligen >= 1005003, adix >= 4004
 
 
+package:  hldiff
+version:  8001
+depends:  cligen >= 1005037, adix >= 4006
+
+
 package:  fitl
 version:  1001
 depends:  spfun >= 3000, cligen >= 1005020
@@ -24356,6 +24437,11 @@ depends:  spfun >= 3000, cligen >= 1005024
 
 package:  fitl
 version:  3000
+depends:  cligen >= 1005024, spfun >= 3000
+
+
+package:  fitl
+version:  3001
 depends:  cligen >= 1005024, spfun >= 3000
 
 
@@ -24377,6 +24463,21 @@ depends:  cligen >= 1005024
 package:  procs
 version:  5000
 depends:  cligen >= 1005024
+
+
+package:  procs
+version:  5000
+depends:  cligen >= 1005024
+
+
+package:  procs
+version:  5002
+depends:  cligen >= 1005024
+
+
+package:  procs
+version:  5003
+depends:  cligen >= 1005037
 
 
 package:  ndup
@@ -24439,12 +24540,26 @@ version:  9002
 depends:  cligen >= 1005024
 
 
+package:  lc
+version:  9003
+depends:  cligen >= 1005037
+
+
 package:  nimp
 version:  1000
 
 
 package:  nimp
 version:  2000
+
+
+package:  nimp
+version:  2001
+
+
+package:  suggest
+version:  1003000
+depends:  cligen >= 1005037
 
 
 package:  suggest
@@ -24488,6 +24603,11 @@ depends:  cligen >= 1005033
 
 
 package:  bu
+version:  5010
+depends:  cligen >= 1005036
+
+
+package:  bu
 version:  5005
 depends:  cligen >= 1005034
 
@@ -24512,6 +24632,21 @@ version:  5009
 depends:  cligen >= 1005036
 
 
+package:  bu
+version:  6000
+depends:  cligen >= 1005036
+
+
+package:  bu
+version:  6001
+depends:  cligen >= 1005036
+
+
+package:  bu
+version:  6002
+depends:  cligen >= 1005036
+
+
 package:  kslog
 version:  5000
 depends:  cligen >= 9042
@@ -24519,6 +24654,11 @@ depends:  cligen >= 9042
 
 package:  kslog
 version:  6000
+depends:  cligen >= 9042
+
+
+package:  kslog
+version:  7000
 depends:  cligen >= 9042
 
 
@@ -25553,6 +25693,14 @@ package:  webby
 version:  1004
 
 
+package:  webby
+version:  1005
+
+
+package:  webby
+version:  1006
+
+
 package:  dumpincludes
 version:  1
 depends:  cligen >= 1003002
@@ -26373,6 +26521,11 @@ depends:  libcurl >= 1000000, zippy >= 10000, webby >= 1003
 package:  puppy
 version:  2000002
 depends:  libcurl >= 1000000, zippy >= 10000, webby >= 1003
+
+
+package:  puppy
+version:  2000003
+depends:  libcurl >= 1000000, zippy >= 10000, webby >= 1006
 
 
 package:  mpeg
@@ -32595,6 +32748,10 @@ package:  npeg
 version:  1001002
 
 
+package:  npeg
+version:  1002000
+
+
 package:  with
 version:  4000
 
@@ -32648,6 +32805,11 @@ depends:  cligen >= 9045, bcrypt >= 2001
 
 package:  nmqtt
 version:  1000004
+depends:  cligen >= 9045, bcrypt >= 2001
+
+
+package:  nmqtt
+version:  1000005
 depends:  cligen >= 9045, bcrypt >= 2001
 
 
@@ -34452,6 +34614,14 @@ package:  nint128
 version:  2001
 
 
+package:  nint128
+version:  3000
+
+
+package:  nint128
+version:  3001
+
+
 package:  dnsprotocol
 version:  1000
 depends:  stew >= 1
@@ -34471,12 +34641,21 @@ version:  1001
 depends:  dnsprotocol >= 1, stew >= 1
 
 
+package:  ndns
+version:  1002
+depends:  dnsprotocol >= 1, stew >= 1
+
+
 package:  winversion
 version:  1001
 
 
 package:  winversion
 version:  1002
+
+
+package:  winversion
+version:  1003
 
 
 package:  iputils
@@ -34499,7 +34678,7 @@ depends:  cpuwhat >= 1
 
 
 package:  pcgbasic
-version:  1002
+version:  1003
 
 
 package:  classy
@@ -36887,6 +37066,20 @@ version:  2001
 package:  coinbasepro
 version:  1003
 depends:  ws >= 1, decimal >= 1, uuids >= 1
+
+
+package:  sensors
+version:  2000
+
+
+package:  ttop
+version:  3005
+depends:  illwill >= 1, zippy >= 1, asciigraph >= 1
+
+
+package:  ttop
+version:  3005
+depends:  illwill >= 1, zippy >= 1, asciigraph >= 1
 
 
 package:  ttop
@@ -40027,7 +40220,7 @@ version:  3001
 
 
 package:  constructor
-version:  1000006
+version:  1001001
 depends:  github-beef331-micros >= 1006
 
 
@@ -40103,6 +40296,11 @@ depends:  cligen >= 1, vimeo >= 1, util >= 1
 package:  nbcnews
 version:  1000006
 depends:  github-thisago-useragent >= 1, util >= 1, cligen >= 1
+
+
+package:  subscribestar
+version:  1002002
+depends:  useragent >= 1, util >= 1
 
 
 package:  htmlanticopy
@@ -40276,6 +40474,11 @@ depends:  nimscripter >= 1, cligen >= 1, yaml >= 1, util >= 1
 
 package:  ezscr
 version:  4001000
+depends:  nimscripter >= 1, cligen >= 1, yaml >= 1, util >= 1
+
+
+package:  ezscr
+version:  4003000
 depends:  nimscripter >= 1, cligen >= 1, yaml >= 1, util >= 1
 
 

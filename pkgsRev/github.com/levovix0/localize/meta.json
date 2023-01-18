@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "localize",
-      "version": "0.2.0",
+      "version": "0.3",
       "author": "levovix0",
       "desc": "Compile time localization for applications",
       "license": "MIT",
@@ -26,10 +26,10 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.4.8",
+          "str": ">= 1.6.10",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.4.8"
+            "ver": "1.6.10"
           }
         },
         {
@@ -45,11 +45,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "430eefbe550253e3307d1ab04f1015d2e2e19d88"
+      "rev": "a0b37684a5819c0113d0dae4213d86a2ddf4e2a8"
     },
     "refs/heads/master": {
       "name": "localize",
-      "version": "0.2.0",
+      "version": "0.3",
       "author": "levovix0",
       "desc": "Compile time localization for applications",
       "license": "MIT",
@@ -62,10 +62,10 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.4.8",
+          "str": ">= 1.6.10",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.4.8"
+            "ver": "1.6.10"
           }
         },
         {
@@ -81,7 +81,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "430eefbe550253e3307d1ab04f1015d2e2e19d88"
+      "rev": "a0b37684a5819c0113d0dae4213d86a2ddf4e2a8"
     },
     "refs/tags/0.1": {
       "name": "localize",
@@ -154,13 +154,50 @@
       "backend": "c",
       "ref": "refs/tags/0.2",
       "rev": "430eefbe550253e3307d1ab04f1015d2e2e19d88"
+    },
+    "refs/tags/0.3": {
+      "name": "localize",
+      "version": "0.3",
+      "author": "levovix0",
+      "desc": "Compile time localization for applications",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.10"
+          }
+        },
+        {
+          "name": "fusion",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.3",
+      "rev": "7b5cfe7fcfde00c1913de46b5be932a7f49b811c"
     }
   },
   "cudf": {
     "name": "localize",
     "version": {
       "1000": "refs/tags/0.1",
-      "2000": "refs/tags/0.2"
+      "2000": "refs/tags/0.2",
+      "3000": "refs/tags/0.3"
     }
   }
 }

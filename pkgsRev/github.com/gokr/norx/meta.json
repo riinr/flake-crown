@@ -130,7 +130,7 @@
     },
     "refs/heads/remapping-stuff": {
       "name": "norx",
-      "version": "0.4.2",
+      "version": "0.6.0",
       "author": "Göran Krampe",
       "desc": "A wrapper of the ORX 2.5D game engine",
       "license": "Zlib",
@@ -143,10 +143,24 @@
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.2.0",
+          "str": ">= 1.6.10",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.2.0"
+            "ver": "1.6.10"
+          }
+        },
+        {
+          "name": "https://github.com/yglukhov/android",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "jnim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
           }
         }
       ],
@@ -155,7 +169,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/remapping-stuff",
-      "rev": "8b7af82cbfdf4360a526e9965cf49e7d6c4db5c8"
+      "rev": "3c2868750e190c6e25a50314ade58406f64e66b6"
     },
     "refs/tags/0.4.2": {
       "name": "norx",

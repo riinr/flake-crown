@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "ezscr",
-      "version": "4.1.0",
+      "version": "4.3.0",
       "author": "Thiago Navarro",
       "desc": "Portable and easy Nimscript runner. Nim compiler not needed",
       "license": "mit",
@@ -71,11 +71,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "3d4bf83533cbe1a5274b8e7962b44a98c4b467f6"
+      "rev": "231e1605fcac3266b4b3d6ff9ac38e1c232016cf"
     },
     "refs/heads/master": {
       "name": "ezscr",
-      "version": "4.1.0",
+      "version": "4.3.0",
       "author": "Thiago Navarro",
       "desc": "Portable and easy Nimscript runner. Nim compiler not needed",
       "license": "mit",
@@ -132,7 +132,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "3d4bf83533cbe1a5274b8e7962b44a98c4b467f6"
+      "rev": "231e1605fcac3266b4b3d6ff9ac38e1c232016cf"
     },
     "refs/tags/1.0.0": {
       "name": "ezscr",
@@ -1055,6 +1055,67 @@
       "backend": "c",
       "ref": "refs/tags/4.1.0",
       "rev": "346dbafd1055f3e18e1e280f12ae718b7dbf974e"
+    },
+    "refs/tags/4.3.0": {
+      "name": "ezscr",
+      "version": "4.3.0",
+      "author": "Thiago Navarro",
+      "desc": "Portable and easy Nimscript runner. Nim compiler not needed",
+      "license": "mit",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "nimscripter",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "yaml",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "util",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "ezscr"
+      ],
+      "binDir": "build",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/4.3.0",
+      "rev": "231e1605fcac3266b4b3d6ff9ac38e1c232016cf"
     }
   },
   "cudf": {
@@ -1073,7 +1134,8 @@
       "3004001": "refs/tags/3.4.1",
       "4000001": "refs/tags/4.0.1",
       "4000002": "refs/tags/4.0.2",
-      "4001000": "refs/tags/4.1.0"
+      "4001000": "refs/tags/4.1.0",
+      "4003000": "refs/tags/4.3.0"
     }
   }
 }

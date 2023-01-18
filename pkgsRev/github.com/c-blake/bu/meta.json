@@ -20,7 +20,7 @@
   "refs": {
     "HEAD": {
       "name": "bu",
-      "version": "0.5.9",
+      "version": "0.6.2",
       "author": "Charles Blake",
       "desc": "B)asic|But-For U)tility Code/Programs (Usually Nim & With Unix/POSIX/Linux Context)",
       "license": "MIT/ISC",
@@ -70,6 +70,7 @@
         "ru",
         "jointr",
         "okpaths",
+        "nrel",
         "bu/colSort",
         "cfold",
         "crp",
@@ -98,11 +99,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "dcc166cc9fa8e5ac4565124739bf82df1df11119"
+      "rev": "49e9f51fe59eef0aed483b3c7f943ea7fd141bc0"
     },
     "refs/heads/main": {
       "name": "bu",
-      "version": "0.5.9",
+      "version": "0.6.2",
       "author": "Charles Blake",
       "desc": "B)asic|But-For U)tility Code/Programs (Usually Nim & With Unix/POSIX/Linux Context)",
       "license": "MIT/ISC",
@@ -152,6 +153,7 @@
         "ru",
         "jointr",
         "okpaths",
+        "nrel",
         "bu/colSort",
         "cfold",
         "crp",
@@ -180,7 +182,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "dcc166cc9fa8e5ac4565124739bf82df1df11119"
+      "rev": "49e9f51fe59eef0aed483b3c7f943ea7fd141bc0"
     },
     "refs/tags/0.2.0": {
       "name": "bu",
@@ -545,6 +547,89 @@
       "backend": "c",
       "ref": "refs/tags/0.5.0",
       "rev": "05de8d7d8defea5f30ef0d0090ca8227758bfd50"
+    },
+    "refs/tags/0.5.10": {
+      "name": "bu",
+      "version": "0.5.10",
+      "author": "Charles Blake",
+      "desc": "B)asic|But-For U)tility Code/Programs (Usually Nim & With Unix/POSIX/Linux Context)",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.36",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.36"
+          }
+        }
+      ],
+      "bin": [
+        "align",
+        "only",
+        "newest",
+        "bu/eve",
+        "du",
+        "since",
+        "ww",
+        "fage",
+        "tattr",
+        "dirq",
+        "funnel",
+        "stripe",
+        "pid2",
+        "dfr",
+        "memlat",
+        "wsz",
+        "ru",
+        "jointr",
+        "okpaths",
+        "nrel",
+        "bu/colSort",
+        "cfold",
+        "crp",
+        "cbtm",
+        "tim",
+        "fread",
+        "cols",
+        "notIn",
+        "fkindc",
+        "tails",
+        "sr",
+        "ft",
+        "thermctl",
+        "rr",
+        "chom",
+        "dirt",
+        "rp",
+        "etr",
+        "fsids",
+        "dups",
+        "saft",
+        "lncs",
+        "unfold"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.5.10",
+      "rev": "2fe087c5ce7424fba6f221fe7dfc06fa6456cabd"
     },
     "refs/tags/0.5.5": {
       "name": "bu",
@@ -955,6 +1040,255 @@
       "backend": "c",
       "ref": "refs/tags/0.5.9",
       "rev": "25b18a6365b46cf1e8aa6f21ea9a4dea575357c7"
+    },
+    "refs/tags/0.6.0": {
+      "name": "bu",
+      "version": "0.6.0",
+      "author": "Charles Blake",
+      "desc": "B)asic|But-For U)tility Code/Programs (Usually Nim & With Unix/POSIX/Linux Context)",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.36",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.36"
+          }
+        }
+      ],
+      "bin": [
+        "align",
+        "only",
+        "newest",
+        "bu/eve",
+        "du",
+        "since",
+        "ww",
+        "fage",
+        "tattr",
+        "dirq",
+        "funnel",
+        "stripe",
+        "pid2",
+        "dfr",
+        "memlat",
+        "wsz",
+        "ru",
+        "jointr",
+        "okpaths",
+        "nrel",
+        "bu/colSort",
+        "cfold",
+        "crp",
+        "cbtm",
+        "tim",
+        "fread",
+        "cols",
+        "notIn",
+        "fkindc",
+        "tails",
+        "sr",
+        "ft",
+        "thermctl",
+        "rr",
+        "chom",
+        "dirt",
+        "rp",
+        "etr",
+        "fsids",
+        "dups",
+        "saft",
+        "lncs",
+        "unfold"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.6.0",
+      "rev": "ec23ad0af8b0d9f053a4955f9e4f1d13693f2965"
+    },
+    "refs/tags/0.6.1": {
+      "name": "bu",
+      "version": "0.6.1",
+      "author": "Charles Blake",
+      "desc": "B)asic|But-For U)tility Code/Programs (Usually Nim & With Unix/POSIX/Linux Context)",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.36",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.36"
+          }
+        }
+      ],
+      "bin": [
+        "align",
+        "only",
+        "newest",
+        "bu/eve",
+        "du",
+        "since",
+        "ww",
+        "fage",
+        "tattr",
+        "dirq",
+        "funnel",
+        "stripe",
+        "pid2",
+        "dfr",
+        "memlat",
+        "wsz",
+        "ru",
+        "jointr",
+        "okpaths",
+        "nrel",
+        "bu/colSort",
+        "cfold",
+        "crp",
+        "cbtm",
+        "tim",
+        "fread",
+        "cols",
+        "notIn",
+        "fkindc",
+        "tails",
+        "sr",
+        "ft",
+        "thermctl",
+        "rr",
+        "chom",
+        "dirt",
+        "rp",
+        "etr",
+        "fsids",
+        "dups",
+        "saft",
+        "lncs",
+        "unfold"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.6.1",
+      "rev": "08c0537df7b7badbdcdd23297bc24484591ee109"
+    },
+    "refs/tags/0.6.2": {
+      "name": "bu",
+      "version": "0.6.2",
+      "author": "Charles Blake",
+      "desc": "B)asic|But-For U)tility Code/Programs (Usually Nim & With Unix/POSIX/Linux Context)",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.36",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.36"
+          }
+        }
+      ],
+      "bin": [
+        "align",
+        "only",
+        "newest",
+        "bu/eve",
+        "du",
+        "since",
+        "ww",
+        "fage",
+        "tattr",
+        "dirq",
+        "funnel",
+        "stripe",
+        "pid2",
+        "dfr",
+        "memlat",
+        "wsz",
+        "ru",
+        "jointr",
+        "okpaths",
+        "nrel",
+        "bu/colSort",
+        "cfold",
+        "crp",
+        "cbtm",
+        "tim",
+        "fread",
+        "cols",
+        "notIn",
+        "fkindc",
+        "tails",
+        "sr",
+        "ft",
+        "thermctl",
+        "rr",
+        "chom",
+        "dirt",
+        "rp",
+        "etr",
+        "fsids",
+        "dups",
+        "saft",
+        "lncs",
+        "unfold"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.6.2",
+      "rev": "49e9f51fe59eef0aed483b3c7f943ea7fd141bc0"
     }
   },
   "cudf": {
@@ -965,9 +1299,13 @@
       "3001": "refs/tags/0.3.1",
       "4000": "refs/tags/0.4.0",
       "5000": "refs/tags/0.5.0",
+      "5010": "refs/tags/0.5.10",
       "5005": "refs/tags/0.5.6",
       "5007": "refs/tags/0.5.8",
-      "5009": "refs/tags/0.5.9"
+      "5009": "refs/tags/0.5.9",
+      "6000": "refs/tags/0.6.0",
+      "6001": "refs/tags/0.6.1",
+      "6002": "refs/tags/0.6.2"
     }
   }
 }

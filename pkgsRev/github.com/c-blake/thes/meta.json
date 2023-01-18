@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "thes",
-      "version": "0.4.0",
+      "version": "0.4.2",
       "author": "Charles Blake",
       "desc": "Thesaurus CLI/Library & Analyzer in Nim",
       "license": "MIT/ISC",
@@ -39,10 +39,18 @@
         },
         {
           "name": "cligen",
-          "str": ">= 1.5.27",
+          "str": ">= 1.5.37",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.5.27"
+            "ver": "1.5.37"
+          }
+        },
+        {
+          "name": "gralg",
+          "str": ">= 0.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.2"
           }
         }
       ],
@@ -51,11 +59,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "3080547d78492564cc1d99d7149f932b488b94e5"
+      "rev": "38b83d3bcca89a1cd8139887cf7b044b95f3f06e"
     },
     "refs/heads/main": {
       "name": "thes",
-      "version": "0.4.0",
+      "version": "0.4.2",
       "author": "Charles Blake",
       "desc": "Thesaurus CLI/Library & Analyzer in Nim",
       "license": "MIT/ISC",
@@ -80,10 +88,18 @@
         },
         {
           "name": "cligen",
-          "str": ">= 1.5.27",
+          "str": ">= 1.5.37",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.5.27"
+            "ver": "1.5.37"
+          }
+        },
+        {
+          "name": "gralg",
+          "str": ">= 0.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.2"
           }
         }
       ],
@@ -92,7 +108,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "3080547d78492564cc1d99d7149f932b488b94e5"
+      "rev": "38b83d3bcca89a1cd8139887cf7b044b95f3f06e"
     },
     "refs/tags/0.1": {
       "rev": "0d8300fe1cc3b36a81bf0afedc4fc33fb99d7008",
@@ -296,6 +312,104 @@
       "backend": "c",
       "ref": "refs/tags/0.4.0",
       "rev": "308329b9225798af51bbcef76cdc77a4cd83cd14"
+    },
+    "refs/tags/0.4.1": {
+      "name": "thes",
+      "version": "0.4.1",
+      "author": "Charles Blake",
+      "desc": "Thesaurus CLI/Library & Analyzer in Nim",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "util"
+      ],
+      "installFiles": [
+        "thes.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.37",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.37"
+          }
+        },
+        {
+          "name": "gralg",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.4.1",
+      "rev": "a577adb41d0296d86067bb3dce9410bafcb7c568"
+    },
+    "refs/tags/0.4.2": {
+      "name": "thes",
+      "version": "0.4.2",
+      "author": "Charles Blake",
+      "desc": "Thesaurus CLI/Library & Analyzer in Nim",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "util"
+      ],
+      "installFiles": [
+        "thes.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.37",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.37"
+          }
+        },
+        {
+          "name": "gralg",
+          "str": ">= 0.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.2"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.4.2",
+      "rev": "38b83d3bcca89a1cd8139887cf7b044b95f3f06e"
     }
   },
   "cudf": {
@@ -304,7 +418,9 @@
       "1001": "refs/tags/0.2",
       "2001": "refs/tags/0.2.1",
       "3000": "refs/tags/0.3.0",
-      "4000": "refs/tags/0.4.0"
+      "4000": "refs/tags/0.4.0",
+      "4001": "refs/tags/0.4.1",
+      "4002": "refs/tags/0.4.2"
     }
   }
 }

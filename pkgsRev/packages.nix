@@ -1025,6 +1025,7 @@
   "ndf"                                   = "/github.com/rustomax/ndf/meta.json";
   "ndns"                                  = "/github.com/rockcavera/ndns/meta.json";
   "ndup"                                  = "/github.com/c-blake/ndup/meta.json";
+  "necsus"                                = "/github.com/NecsusECS/necsus/meta.json";
   "neel"                                  = "/github.com/Niminem/neel/meta.json";
   "negamax"                               = "/github.com/JohnAD/negamax/meta.json";
   "neo"                                   = "/github.com/andreaferretti/neo/meta.json";
@@ -1628,6 +1629,7 @@
   "segmentation"                          = "/github.com/nitely/segmentation/meta.json";
   "selenimum"                             = "/github.com/myamyu/selenimum/meta.json";
   "semver"                                = "/github.com/euantorano/semver/meta.json";
+  "sensors"                               = "/github.com/inv2004/sensors/meta.json";
   "seq2d"                                 = "/github.com/avahe-kellenberger/seq2d/meta.json";
   "seqmath"                               = "/github.com/jlp765/seqmath/meta.json";
   "sequester"                             = "/github.com/fallingduck/sequester/meta.json";
@@ -1670,6 +1672,7 @@
   "simhash"                               = "/github.com/bung87/simhash/meta.json";
   "simpleargs"                            = "/github.com/HTGenomeAnalysisUnit/simpleargs/meta.json";
   "simpleast"                             = "/github.com/lguzzon-NIM/simpleast/meta.json";
+  "simpledb"                              = "/github.com/jjv360/simpledb/meta.json";
   "simpledecimal"                         = "/github.com/pigmej/simpledecimal/meta.json";
   "simplediff"                            = "/git.sr.ht/~reesmichael1/simplediff/meta.json";
   "simpleflake"                           = "/github.com/aisk/simpleflake/meta.json";
@@ -1787,6 +1790,7 @@
   "subfield"                              = "/github.com/jyapayne/subfield/meta.json";
   "subhook"                               = "/github.com/ba0f3/subhook/meta.json";
   "subnet"                                = "/github.com/jiro4989/subnet/meta.json";
+  "subscribestar"                         = "/git.ozzuu.com/thisago/subscribestar/meta.json";
   "subviewer"                             = "/github.com/achesak/subviewer/meta.json";
   "sue"                                   = "/github.com/theAkito/sue/meta.json";
   "suffer"                                = "/github.com/emekoi/suffer/meta.json";

@@ -36,7 +36,7 @@
   "refs": {
     "HEAD": {
       "name": "fitl",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "author": "Charles Blake",
       "desc": "Self-contained fit of linear models with regression diagnostics",
       "license": "MIT/ISC",
@@ -87,11 +87,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "4ca8c8ac7c4d96d7551e37c24d9549c9320c3e91"
+      "rev": "9c39213928b270c64492c3b24dad13ff88ba3b86"
     },
     "refs/heads/main": {
       "name": "fitl",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "author": "Charles Blake",
       "desc": "Self-contained fit of linear models with regression diagnostics",
       "license": "MIT/ISC",
@@ -142,7 +142,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "4ca8c8ac7c4d96d7551e37c24d9549c9320c3e91"
+      "rev": "9c39213928b270c64492c3b24dad13ff88ba3b86"
     },
     "refs/tags/0.1.1": {
       "name": "fitl",
@@ -351,6 +351,61 @@
       "backend": "c",
       "ref": "refs/tags/0.3.0",
       "rev": "22ad82b92f6e4a5e4c23ddfcc17ee4e107a2eaa9"
+    },
+    "refs/tags/0.3.1": {
+      "name": "fitl",
+      "version": "0.3.1",
+      "author": "Charles Blake",
+      "desc": "Self-contained fit of linear models with regression diagnostics",
+      "license": "MIT/ISC",
+      "skipDirs": [
+        "fitl"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "fitl.nim"
+      ],
+      "installExt": [
+        ".nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.24",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.24"
+          }
+        },
+        {
+          "name": "spfun",
+          "str": ">= 0.3.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.0"
+          }
+        }
+      ],
+      "bin": [
+        "fitl/gof",
+        "fitl",
+        "fitl/qtl"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.3.1",
+      "rev": "9c39213928b270c64492c3b24dad13ff88ba3b86"
     }
   },
   "cudf": {
@@ -359,7 +414,8 @@
       "1001": "refs/tags/0.1.1",
       "1002": "refs/tags/0.1.2",
       "2000": "refs/tags/0.2.0",
-      "3000": "refs/tags/0.3.0"
+      "3000": "refs/tags/0.3.0",
+      "3001": "refs/tags/0.3.1"
     }
   }
 }

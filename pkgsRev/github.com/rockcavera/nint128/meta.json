@@ -15,7 +15,7 @@
   "refs": {
     "HEAD": {
       "name": "nint128",
-      "version": "0.2.1",
+      "version": "0.3.1",
       "author": "rockcavera",
       "desc": "128-bit integers",
       "license": "MIT",
@@ -40,11 +40,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "f88047b26121bd0ae5cda35cb266083e4b0f36e3"
+      "rev": "2c456e4551076a1fa9fb51036e9aea2eb95a9dc4"
     },
     "refs/heads/main": {
       "name": "nint128",
-      "version": "0.2.1",
+      "version": "0.3.1",
       "author": "rockcavera",
       "desc": "128-bit integers",
       "license": "MIT",
@@ -69,7 +69,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "f88047b26121bd0ae5cda35cb266083e4b0f36e3"
+      "rev": "2c456e4551076a1fa9fb51036e9aea2eb95a9dc4"
     },
     "refs/heads/v0.1.0": {
       "name": "nint128",
@@ -186,6 +186,64 @@
       "backend": "c",
       "ref": "refs/tags/v0.2.1",
       "rev": "f88047b26121bd0ae5cda35cb266083e4b0f36e3"
+    },
+    "refs/tags/v0.3.0": {
+      "name": "nint128",
+      "version": "0.3.0",
+      "author": "rockcavera",
+      "desc": "128-bit integers",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.0",
+      "rev": "20ed7bebacc513a2049c9a73ed2dce9fa47029d1"
+    },
+    "refs/tags/v0.3.1": {
+      "name": "nint128",
+      "version": "0.3.1",
+      "author": "rockcavera",
+      "desc": "128-bit integers",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.1",
+      "rev": "2c456e4551076a1fa9fb51036e9aea2eb95a9dc4"
     }
   },
   "cudf": {
@@ -193,7 +251,9 @@
     "version": {
       "1000": "refs/tags/v0.1.0",
       "2000": "refs/tags/v0.2.0",
-      "2001": "refs/tags/v0.2.1"
+      "2001": "refs/tags/v0.2.1",
+      "3000": "refs/tags/v0.3.0",
+      "3001": "refs/tags/v0.3.1"
     }
   }
 }

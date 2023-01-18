@@ -20,7 +20,7 @@
   "refs": {
     "HEAD": {
       "name": "adix",
-      "version": "0.4.4",
+      "version": "0.4.6",
       "author": "Charles Blake",
       "desc": "An Adaptive Index Library for Nim",
       "license": "MIT/ISC",
@@ -28,7 +28,9 @@
         "tests"
       ],
       "skipFiles": [],
-      "skipExt": [],
+      "skipExt": [
+        "nim"
+      ],
       "installDirs": [],
       "installFiles": [
         "adix.nim"
@@ -42,18 +44,29 @@
             "kind": "verEqLater",
             "ver": "1.2.0"
           }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.37",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.37"
+          }
         }
       ],
-      "bin": [],
+      "bin": [
+        "util/cstats",
+        "util/lfreq"
+      ],
       "binDir": "",
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "8696fc8d62bd96040f5ebc399a174e8898a29173"
+      "rev": "b32535a9241c99a4623332631798ea18046548a0"
     },
     "refs/heads/master": {
       "name": "adix",
-      "version": "0.4.4",
+      "version": "0.4.6",
       "author": "Charles Blake",
       "desc": "An Adaptive Index Library for Nim",
       "license": "MIT/ISC",
@@ -61,7 +74,9 @@
         "tests"
       ],
       "skipFiles": [],
-      "skipExt": [],
+      "skipExt": [
+        "nim"
+      ],
       "installDirs": [],
       "installFiles": [
         "adix.nim"
@@ -75,14 +90,25 @@
             "kind": "verEqLater",
             "ver": "1.2.0"
           }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.37",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.37"
+          }
         }
       ],
-      "bin": [],
+      "bin": [
+        "util/cstats",
+        "util/lfreq"
+      ],
       "binDir": "",
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "8696fc8d62bd96040f5ebc399a174e8898a29173"
+      "rev": "b32535a9241c99a4623332631798ea18046548a0"
     },
     "refs/tags/0.2.0": {
       "name": "adix",
@@ -310,6 +336,52 @@
       "backend": "c",
       "ref": "refs/tags/v0.4.5",
       "rev": "f48bfdb1bf151615a44de2e1aa29b8a6b2c3024f"
+    },
+    "refs/tags/v0.4.6": {
+      "name": "adix",
+      "version": "0.4.6",
+      "author": "Charles Blake",
+      "desc": "An Adaptive Index Library for Nim",
+      "license": "MIT/ISC",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "adix.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.37",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.37"
+          }
+        }
+      ],
+      "bin": [
+        "util/cstats",
+        "util/lfreq"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.6",
+      "rev": "c7686beb14941a139e66f73e324eb40e3e5ac5de"
     }
   },
   "cudf": {
@@ -320,7 +392,8 @@
       "4000": "refs/tags/0.4.0",
       "3000": "refs/tags/v0.3.0",
       "4001": "refs/tags/v0.4.1",
-      "4004": "refs/tags/v0.4.5"
+      "4004": "refs/tags/v0.4.5",
+      "4006": "refs/tags/v0.4.6"
     }
   }
 }

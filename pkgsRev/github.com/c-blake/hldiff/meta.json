@@ -19,7 +19,7 @@
   "refs": {
     "HEAD": {
       "name": "hldiff",
-      "version": "0.8",
+      "version": "0.8.1",
       "author": "Charles Blake",
       "desc": "A port of Python difflib to compute & (re)highlight diff output intraline",
       "license": "MIT/ISC",
@@ -44,18 +44,18 @@
         },
         {
           "name": "cligen",
-          "str": ">= 1.5.3",
+          "str": ">= 1.5.37",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.5.3"
+            "ver": "1.5.37"
           }
         },
         {
           "name": "adix",
-          "str": ">= 0.4.4",
+          "str": ">= 0.4.6",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.4.4"
+            "ver": "0.4.6"
           }
         }
       ],
@@ -67,11 +67,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "b289705f03ccb9315847acc3a8e492a681d5931f"
+      "rev": "fde4b231457e8a32bc2b929e8cd8106d65a5c6a9"
     },
     "refs/heads/master": {
       "name": "hldiff",
-      "version": "0.8",
+      "version": "0.8.1",
       "author": "Charles Blake",
       "desc": "A port of Python difflib to compute & (re)highlight diff output intraline",
       "license": "MIT/ISC",
@@ -96,18 +96,18 @@
         },
         {
           "name": "cligen",
-          "str": ">= 1.5.3",
+          "str": ">= 1.5.37",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.5.3"
+            "ver": "1.5.37"
           }
         },
         {
           "name": "adix",
-          "str": ">= 0.4.4",
+          "str": ">= 0.4.6",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.4.4"
+            "ver": "0.4.6"
           }
         }
       ],
@@ -119,7 +119,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "b289705f03ccb9315847acc3a8e492a681d5931f"
+      "rev": "fde4b231457e8a32bc2b929e8cd8106d65a5c6a9"
     },
     "refs/tags/v0.1": {
       "name": "hldiff",
@@ -478,6 +478,58 @@
       "backend": "c",
       "ref": "refs/tags/v0.8",
       "rev": "25da67ecee78723c0ccb944f2d8bcc0ad8b2e6f0"
+    },
+    "refs/tags/v0.8.1": {
+      "name": "hldiff",
+      "version": "0.8.1",
+      "author": "Charles Blake",
+      "desc": "A port of Python difflib to compute & (re)highlight diff output intraline",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "hldiff.nim"
+      ],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.20.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.2"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.37",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.37"
+          }
+        },
+        {
+          "name": "adix",
+          "str": ">= 0.4.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.6"
+          }
+        }
+      ],
+      "bin": [
+        "hldiff",
+        "hldiffpkg/edits"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.8.1",
+      "rev": "fde4b231457e8a32bc2b929e8cd8106d65a5c6a9"
     }
   },
   "cudf": {
@@ -489,7 +541,8 @@
       "4000": "refs/tags/v0.5",
       "6000": "refs/tags/v0.6",
       "7000": "refs/tags/v0.7",
-      "8000": "refs/tags/v0.8"
+      "8000": "refs/tags/v0.8",
+      "8001": "refs/tags/v0.8.1"
     }
   }
 }

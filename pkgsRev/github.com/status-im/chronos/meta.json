@@ -256,8 +256,8 @@
       "name": "chronos",
       "version": "3.0.11",
       "author": "Status Research & Development GmbH",
-      "desc": "Chronos",
-      "license": "Apache License 2.0 or MIT",
+      "desc": "Networking framework with async/await support",
+      "license": "MIT or Apache License 2.0",
       "skipDirs": [
         "tests"
       ],
@@ -271,9 +271,9 @@
       "requires": [
         {
           "name": "nim",
-          "str": "> 1.2.0",
+          "str": ">= 1.2.0",
           "ver": {
-            "kind": "verLater",
+            "kind": "verEqLater",
             "ver": "1.2.0"
           }
         },
@@ -311,7 +311,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/asyncproc",
-      "rev": "75f6f15c22ca1c18a8fd1a415586dd3308835c0d"
+      "rev": "fe74e5a42ee3eed90809acd1289281ebf8bec09a"
     },
     "refs/heads/asyncproc-rebased": {
       "name": "chronos",
@@ -715,7 +715,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/bind-to-local-addr-new-connect",
-      "rev": "07e2dee835bc50f7297bac5d6257bdbd08499e72"
+      "rev": "63edcbc4119ea4ddafd56f9bd63da1e3d37304b3"
     },
     "refs/heads/cleanup-deleted-timers": {
       "name": "chronos",
@@ -1345,7 +1345,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/fixflakyci",
-      "rev": "c6b3d3114f56424f66c9cdc749467c1c13c6fe82"
+      "rev": "66a2af154bcfb66db0244c863f8aa40161e59211"
     },
     "refs/heads/fixfuturevar": {
       "name": "chronos",
@@ -1896,6 +1896,67 @@
       "backend": "c",
       "ref": "refs/heads/orphaned-moment-fix",
       "rev": "a5bc5ca996ab72c1c5dda7d5b922b536f39f603e"
+    },
+    "refs/heads/procty": {
+      "name": "chronos",
+      "version": "3.0.11",
+      "author": "Status Research & Development GmbH",
+      "desc": "Networking framework with async/await support",
+      "license": "MIT or Apache License 2.0",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "chronos.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/procty",
+      "rev": "91c45bd048c258da514655217d5622074a571016"
     },
     "refs/heads/raisetracking": {
       "name": "chronos",

@@ -16,7 +16,7 @@
   "refs": {
     "HEAD": {
       "name": "nimp",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "author": "Charles Blake",
       "desc": "A package manager that delegates to package authors",
       "license": "MIT/ISC",
@@ -43,11 +43,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "75ca851ccb51a3adb493a6d34eb2fc8858cd5acd"
+      "rev": "82f061b1f4c2819b6060ae9a6ccd5fa41e6ab2bf"
     },
     "refs/heads/master": {
       "name": "nimp",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "author": "Charles Blake",
       "desc": "A package manager that delegates to package authors",
       "license": "MIT/ISC",
@@ -74,7 +74,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "75ca851ccb51a3adb493a6d34eb2fc8858cd5acd"
+      "rev": "82f061b1f4c2819b6060ae9a6ccd5fa41e6ab2bf"
     },
     "refs/tags/v0.1.0": {
       "name": "nimp",
@@ -137,13 +137,45 @@
       "backend": "c",
       "ref": "refs/tags/v0.2.0",
       "rev": "1130307914daddf1e029ff7b8000fa5b004dd718"
+    },
+    "refs/tags/v0.2.1": {
+      "name": "nimp",
+      "version": "0.2.1",
+      "author": "Charles Blake",
+      "desc": "A package manager that delegates to package authors",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nimp.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.2.1",
+      "rev": "82f061b1f4c2819b6060ae9a6ccd5fa41e6ab2bf"
     }
   },
   "cudf": {
     "name": "nimp",
     "version": {
       "1000": "refs/tags/v0.1.0",
-      "2000": "refs/tags/v0.2.0"
+      "2000": "refs/tags/v0.2.0",
+      "2001": "refs/tags/v0.2.1"
     }
   }
 }

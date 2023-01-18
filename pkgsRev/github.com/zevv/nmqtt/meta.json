@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "nmqtt",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "author": "zevv & ThomasTJdev",
       "desc": "Native MQTT library and binaries for publishing, subscribing and broker",
       "license": "MIT",
@@ -67,7 +67,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "4791cba33a8170e14838b0dbc3e2d6e56059de80"
+      "rev": "2bc6c765471ddd2a134a76345f52288ead32db02"
     },
     "refs/heads/asyncimprove": {
       "name": "nmqtt",
@@ -171,7 +171,7 @@
     },
     "refs/heads/master": {
       "name": "nmqtt",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "author": "zevv & ThomasTJdev",
       "desc": "Native MQTT library and binaries for publishing, subscribing and broker",
       "license": "MIT",
@@ -225,7 +225,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "4791cba33a8170e14838b0dbc3e2d6e56059de80"
+      "rev": "2bc6c765471ddd2a134a76345f52288ead32db02"
     },
     "refs/heads/pubRelErrQos2": {
       "name": "nmqtt",
@@ -541,6 +541,64 @@
       "backend": "c",
       "ref": "refs/tags/v1.0.4",
       "rev": "4791cba33a8170e14838b0dbc3e2d6e56059de80"
+    },
+    "refs/tags/v1.0.5": {
+      "name": "nmqtt",
+      "version": "1.0.5",
+      "author": "zevv & ThomasTJdev",
+      "desc": "Native MQTT library and binaries for publishing, subscribing and broker",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "nmqtt"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "config"
+      ],
+      "installFiles": [
+        "nmqtt.nim",
+        "nmqtt.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.6"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 0.9.45",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.9.45"
+          }
+        },
+        {
+          "name": "bcrypt",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        }
+      ],
+      "bin": [
+        "nmqtt/nmqtt_password",
+        "nmqtt/nmqtt",
+        "nmqtt/nmqtt_pub",
+        "nmqtt/nmqtt_sub"
+      ],
+      "binDir": "bin",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.0.5",
+      "rev": "2bc6c765471ddd2a134a76345f52288ead32db02"
     }
   },
   "cudf": {
@@ -550,7 +608,8 @@
       "1000000": "refs/tags/v1.0.0",
       "1000002": "refs/tags/v1.0.2",
       "1000003": "refs/tags/v1.0.3",
-      "1000004": "refs/tags/v1.0.4"
+      "1000004": "refs/tags/v1.0.4",
+      "1000005": "refs/tags/v1.0.5"
     }
   }
 }

@@ -100,7 +100,7 @@
     },
     "refs/heads/version-1": {
       "name": "ndns",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "author": "rockcavera",
       "desc": "A pure Nim Domain Name System (DNS) client",
       "license": "MIT",
@@ -139,7 +139,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/version-1",
-      "rev": "5645b02a746e51a814f6a94515d830de77d03228"
+      "rev": "d18d1c96280a015ed46a1fe7b18ae3e1a10b7ce3"
     },
     "refs/tags/v0.1.0": {
       "name": "ndns",
@@ -226,13 +226,57 @@
       "backend": "c",
       "ref": "refs/tags/v0.1.1",
       "rev": "5645b02a746e51a814f6a94515d830de77d03228"
+    },
+    "refs/tags/v0.1.2": {
+      "name": "ndns",
+      "version": "0.1.2",
+      "author": "rockcavera",
+      "desc": "A pure Nim Domain Name System (DNS) client",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "dnsprotocol",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.1.2",
+      "rev": "d18d1c96280a015ed46a1fe7b18ae3e1a10b7ce3"
     }
   },
   "cudf": {
     "name": "ndns",
     "version": {
       "1000": "refs/tags/v0.1.0",
-      "1001": "refs/tags/v0.1.1"
+      "1001": "refs/tags/v0.1.1",
+      "1002": "refs/tags/v0.1.2"
     }
   }
 }
