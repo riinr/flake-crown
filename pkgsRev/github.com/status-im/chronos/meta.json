@@ -76,7 +76,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "945c304197a0e34b1126cb073df64d2df7ce57dd"
+      "rev": "40143f8798e49e036179fbe066b0b32138ecfd85"
     },
     "refs/heads/accept-temp": {
       "name": "chronos",
@@ -311,7 +311,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/asyncproc",
-      "rev": "fe74e5a42ee3eed90809acd1289281ebf8bec09a"
+      "rev": "a3210c7f3b0f4bb9fbbcd86ed16c47cc6e6a36bd"
     },
     "refs/heads/asyncproc-rebased": {
       "name": "chronos",
@@ -715,7 +715,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/bind-to-local-addr-new-connect",
-      "rev": "63edcbc4119ea4ddafd56f9bd63da1e3d37304b3"
+      "rev": "f178df0d53e0effb03c88e95d83c295661e76970"
     },
     "refs/heads/cleanup-deleted-timers": {
       "name": "chronos",
@@ -1286,67 +1286,6 @@
       "ref": "refs/heads/fixasyncvoidingen",
       "rev": "7863d6d94225a5f3bae732f8398e921257fd2881"
     },
-    "refs/heads/fixflakyci": {
-      "name": "chronos",
-      "version": "3.0.11",
-      "author": "Status Research & Development GmbH",
-      "desc": "Networking framework with async/await support",
-      "license": "MIT or Apache License 2.0",
-      "skipDirs": [
-        "tests"
-      ],
-      "skipFiles": [],
-      "skipExt": [],
-      "installDirs": [],
-      "installFiles": [
-        "chronos.nim"
-      ],
-      "installExt": [],
-      "requires": [
-        {
-          "name": "nim",
-          "str": ">= 1.2.0",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "1.2.0"
-          }
-        },
-        {
-          "name": "stew",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "bearssl",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "httputils",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "unittest2",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        }
-      ],
-      "bin": [],
-      "binDir": "",
-      "srcDir": "",
-      "backend": "c",
-      "ref": "refs/heads/fixflakyci",
-      "rev": "66a2af154bcfb66db0244c863f8aa40161e59211"
-    },
     "refs/heads/fixfuturevar": {
       "name": "chronos",
       "version": "3.0.8",
@@ -1517,6 +1456,67 @@
       "ref": "refs/heads/http-client-idle-connections",
       "rev": "9dfb66e7fbe0f1a981b155fa4226af23a356b11a"
     },
+    "refs/heads/implicit-return": {
+      "name": "chronos",
+      "version": "3.0.11",
+      "author": "Status Research & Development GmbH",
+      "desc": "Networking framework with async/await support",
+      "license": "MIT or Apache License 2.0",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "chronos.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/implicit-return",
+      "rev": "276665b49abd6e2501009f2e0f438f4d11da9a5a"
+    },
     "refs/heads/interval": {
       "name": "chronos",
       "version": "2.3.4",
@@ -1677,7 +1677,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "945c304197a0e34b1126cb073df64d2df7ce57dd"
+      "rev": "40143f8798e49e036179fbe066b0b32138ecfd85"
     },
     "refs/heads/new-connection-leak": {
       "name": "chronos",
@@ -1897,7 +1897,7 @@
       "ref": "refs/heads/orphaned-moment-fix",
       "rev": "a5bc5ca996ab72c1c5dda7d5b922b536f39f603e"
     },
-    "refs/heads/procty": {
+    "refs/heads/raisetracking": {
       "name": "chronos",
       "version": "3.0.11",
       "author": "Status Research & Development GmbH",
@@ -1955,69 +1955,8 @@
       "binDir": "",
       "srcDir": "",
       "backend": "c",
-      "ref": "refs/heads/procty",
-      "rev": "91c45bd048c258da514655217d5622074a571016"
-    },
-    "refs/heads/raisetracking": {
-      "name": "chronos",
-      "version": "3.0.11",
-      "author": "Status Research & Development GmbH",
-      "desc": "Chronos",
-      "license": "Apache License 2.0 or MIT",
-      "skipDirs": [
-        "tests"
-      ],
-      "skipFiles": [],
-      "skipExt": [],
-      "installDirs": [],
-      "installFiles": [
-        "chronos.nim"
-      ],
-      "installExt": [],
-      "requires": [
-        {
-          "name": "nim",
-          "str": "> 1.2.0",
-          "ver": {
-            "kind": "verLater",
-            "ver": "1.2.0"
-          }
-        },
-        {
-          "name": "stew",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "bearssl",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "httputils",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "unittest2",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        }
-      ],
-      "bin": [],
-      "binDir": "",
-      "srcDir": "",
-      "backend": "c",
       "ref": "refs/heads/raisetracking",
-      "rev": "c3aa399f621a511420063debf256d301ae6e33d7"
+      "rev": "b9780af4e6882440fe1b3d87dd89c5a0b8928494"
     },
     "refs/heads/raisetracking2": {
       "name": "chronos",

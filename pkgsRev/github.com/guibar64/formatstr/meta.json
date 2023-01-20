@@ -37,7 +37,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "b372238c0cbf7d8a53b4cbfe141aa87cd6499307"
+      "rev": "6e04abf1f4f778e5bfb75d8d040947971a305f0e"
     },
     "refs/heads/main": {
       "name": "formatstr",
@@ -66,7 +66,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "b372238c0cbf7d8a53b4cbfe141aa87cd6499307"
+      "rev": "6e04abf1f4f778e5bfb75d8d040947971a305f0e"
     },
     "refs/heads/string-args": {
       "name": "formatstr",
@@ -154,13 +154,43 @@
       "backend": "c",
       "ref": "refs/tags/v0.2.0",
       "rev": "b372238c0cbf7d8a53b4cbfe141aa87cd6499307"
+    },
+    "refs/tags/v0.2.1": {
+      "name": "formatstr",
+      "version": "0.2.1",
+      "author": "G. Bareigts",
+      "desc": "string interpolation, complement of std/strformat for runtime strings",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.2.1",
+      "rev": "12a32b2ca919797268c1277da81975c7f93cf7ce"
     }
   },
   "cudf": {
     "name": "formatstr",
     "version": {
       "1000": "refs/tags/v0.1.0",
-      "2000": "refs/tags/v0.2.0"
+      "2000": "refs/tags/v0.2.0",
+      "2001": "refs/tags/v0.2.1"
     }
   }
 }

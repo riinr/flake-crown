@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "sensors",
-      "version": "0.2.0",
+      "version": "0.2.2",
       "author": "inv2004",
       "desc": "libsensors wrapper",
       "license": "MIT",
@@ -39,11 +39,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "51ae100ac582d285278031c6bb89b1ff7867adad"
+      "rev": "9423415d8be89988ca9f6caca26ea69ee802b321"
     },
     "refs/heads/main": {
       "name": "sensors",
-      "version": "0.2.0",
+      "version": "0.2.2",
       "author": "inv2004",
       "desc": "libsensors wrapper",
       "license": "MIT",
@@ -68,13 +68,42 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "51ae100ac582d285278031c6bb89b1ff7867adad"
+      "rev": "9423415d8be89988ca9f6caca26ea69ee802b321"
+    },
+    "refs/tags/v0.2.2": {
+      "name": "sensors",
+      "version": "0.2.2",
+      "author": "inv2004",
+      "desc": "libsensors wrapper",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.8"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.2.2",
+      "rev": "9423415d8be89988ca9f6caca26ea69ee802b321"
     }
   },
   "cudf": {
     "name": "sensors",
     "version": {
-      "2000": "HEAD"
+      "2002": "refs/tags/v0.2.2"
     }
   }
 }

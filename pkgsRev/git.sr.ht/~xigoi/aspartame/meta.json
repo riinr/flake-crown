@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "aspartame",
-      "version": "2022.11.23",
+      "version": "2023.1.19",
       "author": "Adam Blažek",
       "desc": "More syntactic sugar for Nim",
       "license": "GPL-3.0-or-later",
@@ -40,9 +40,40 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "12a47ad950889d1b03ef1952130bf220800275cb"
+      "rev": "e449e4ed59611b3431f032907b7e1d2db051c95e"
     },
     "refs/heads/master": {
+      "name": "aspartame",
+      "version": "2023.1.19",
+      "author": "Adam Blažek",
+      "desc": "More syntactic sugar for Nim",
+      "license": "GPL-3.0-or-later",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "aspartame.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/master",
+      "rev": "e449e4ed59611b3431f032907b7e1d2db051c95e"
+    },
+    "refs/tags/2022.11.23": {
       "name": "aspartame",
       "version": "2022.11.23",
       "author": "Adam Blažek",
@@ -70,14 +101,46 @@
       "binDir": "",
       "srcDir": "",
       "backend": "c",
-      "ref": "refs/heads/master",
-      "rev": "12a47ad950889d1b03ef1952130bf220800275cb"
+      "ref": "refs/tags/2022.11.23",
+      "rev": "26ea6640e62b23b531e63c25cf8ca744a4269dbb"
+    },
+    "refs/tags/2023.1.19": {
+      "name": "aspartame",
+      "version": "2023.1.19",
+      "author": "Adam Blažek",
+      "desc": "More syntactic sugar for Nim",
+      "license": "GPL-3.0-or-later",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "aspartame.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/2023.1.19",
+      "rev": "8a30f8543191cb39fdf7db8289c65c53e97d9231"
     }
   },
   "cudf": {
     "name": "aspartame",
     "version": {
-      "22011023": "HEAD"
+      "22011023": "refs/tags/2022.11.23",
+      "23001019": "refs/tags/2023.1.19"
     }
   }
 }

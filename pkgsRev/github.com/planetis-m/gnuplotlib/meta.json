@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "gnuplot",
-      "version": "2.7.0",
+      "version": "2.7.1",
       "author": "Antonis Geralis",
       "desc": "Nim gnuplot interface",
       "license": "MIT",
@@ -44,11 +44,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "7dc92ab2e1343184aff8da045fe821c702f7bab7"
+      "rev": "60bbcbd293dc12d287311d2fcfbb8a23c74894c7"
     },
     "refs/heads/main": {
       "name": "gnuplot",
-      "version": "2.7.0",
+      "version": "2.7.1",
       "author": "Antonis Geralis",
       "desc": "Nim gnuplot interface",
       "license": "MIT",
@@ -78,7 +78,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "7dc92ab2e1343184aff8da045fe821c702f7bab7"
+      "rev": "60bbcbd293dc12d287311d2fcfbb8a23c74894c7"
     },
     "refs/heads/ref-figures": {
       "rev": "b602a10e664f7e72b574ec7051f18b42aadd2764",
@@ -133,12 +133,47 @@
       "backend": "c",
       "ref": "refs/tags/v2.6.1",
       "rev": "a81e1c243a7113b48c9b14edcdaf6262615970c6"
+    },
+    "refs/tags/v2.7.1": {
+      "name": "gnuplot",
+      "version": "2.7.1",
+      "author": "Antonis Geralis",
+      "desc": "Nim gnuplot interface",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "gnuplot.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v2.7.1",
+      "rev": "60bbcbd293dc12d287311d2fcfbb8a23c74894c7"
     }
   },
   "cudf": {
     "name": "gnuplotlib",
     "version": {
-      "2006001": "refs/tags/v2.6.1"
+      "2006001": "refs/tags/v2.6.1",
+      "2007001": "refs/tags/v2.7.1"
     }
   }
 }
