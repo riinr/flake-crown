@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "csv2dbsrc",
-      "version": "0.3.1",
+      "version": "0.4.0",
       "author": "z-kk",
       "desc": "create db util sources from csv",
       "license": "MIT",
@@ -42,11 +42,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "2f224bca6fcc995ade4da15945db9c1b53d2fc9d"
+      "rev": "397d61d086dff6c1879ebc89d2be3f23ab196e0d"
     },
     "refs/heads/devel": {
       "name": "csv2dbsrc",
-      "version": "0.3.1",
+      "version": "0.4.0",
       "author": "z-kk",
       "desc": "create db util sources from csv",
       "license": "MIT",
@@ -75,11 +75,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/devel",
-      "rev": "7c773fed7eab0747b208be9a805019190b1602ba"
+      "rev": "6b93459bdc4053836a3a81c70432a92494a596f7"
     },
     "refs/heads/master": {
       "name": "csv2dbsrc",
-      "version": "0.3.1",
+      "version": "0.4.0",
       "author": "z-kk",
       "desc": "create db util sources from csv",
       "license": "MIT",
@@ -108,7 +108,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "2f224bca6fcc995ade4da15945db9c1b53d2fc9d"
+      "rev": "397d61d086dff6c1879ebc89d2be3f23ab196e0d"
     },
     "refs/tags/v0.1.0": {
       "name": "csv2dbsrc",
@@ -406,6 +406,39 @@
       "backend": "c",
       "ref": "refs/tags/v0.3.1",
       "rev": "2f224bca6fcc995ade4da15945db9c1b53d2fc9d"
+    },
+    "refs/tags/v0.4.0": {
+      "name": "csv2dbsrc",
+      "version": "0.4.0",
+      "author": "z-kk",
+      "desc": "create db util sources from csv",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        }
+      ],
+      "bin": [
+        "csv2dbsrc"
+      ],
+      "binDir": "bin",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.0",
+      "rev": "397d61d086dff6c1879ebc89d2be3f23ab196e0d"
     }
   },
   "cudf": {
@@ -419,7 +452,8 @@
       "2003": "refs/tags/v0.2.3",
       "2004": "refs/tags/v0.2.4",
       "3000": "refs/tags/v0.3.0",
-      "3001": "refs/tags/v0.3.1"
+      "3001": "refs/tags/v0.3.1",
+      "4000": "refs/tags/v0.4.0"
     }
   }
 }

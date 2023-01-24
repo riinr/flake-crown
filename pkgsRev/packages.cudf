@@ -1460,8 +1460,8 @@ version:  2009
 
 
 package:  termui
-version:  1008
-depends:  classes >= 2000, elvis >= 2000
+version:  1009
+depends:  classes >= 2013, elvis >= 5000
 
 
 package:  simpledb
@@ -2915,6 +2915,15 @@ depends:  tempfile >= 1, nimpy >= 1
 
 package:  slimdown
 version:  1
+
+
+package:  vikunja
+version:  1000
+
+
+package:  vikunja
+version:  1001
+depends:  jsony >= 1
 
 
 package:  cppstl
@@ -7484,6 +7493,11 @@ version:  8
 depends:  nimcrypto >= 5004
 
 
+package:  nimcrypt
+version:  1000000
+depends:  nimcrypto >= 5004
+
+
 package:  pymod
 version:  1000
 
@@ -9037,6 +9051,14 @@ version:  2001
 
 package:  tinypool
 version:  3001
+
+
+package:  tinypool
+version:  1000001
+
+
+package:  tinypool
+version:  1000003
 
 
 package:  tinypool
@@ -14294,6 +14316,10 @@ package:  csv2dbsrc
 version:  3001
 
 
+package:  csv2dbsrc
+version:  4000
+
+
 package:  bloom
 version:  1000
 
@@ -15533,6 +15559,10 @@ package:  nimsimd
 version:  1002002
 
 
+package:  nimsimd
+version:  1002004
+
+
 package:  curly
 version:  1000
 depends:  libcurl >= 1000000, zippy >= 10006, waterpark >= 1001, webby >= 1003
@@ -15910,6 +15940,16 @@ version:  2005
 depends:  zippy >= 10004, webby >= 1003
 
 
+package:  mummy
+version:  2006
+depends:  zippy >= 10004, webby >= 1003
+
+
+package:  mummy
+version:  2007
+depends:  zippy >= 10004, webby >= 1003
+
+
 package:  depot
 version:  1000
 depends:  nimsimd >= 1002002, webby >= 1003
@@ -15940,6 +15980,11 @@ version:  2004
 depends:  nimsimd >= 1002002, webby >= 1003, crunchy >= 1002
 
 
+package:  depot
+version:  2005
+depends:  webby >= 1003, crunchy >= 1002
+
+
 package:  crunchy
 version:  1000
 depends:  nimsimd >= 1002002
@@ -15953,6 +15998,11 @@ depends:  nimsimd >= 1002002
 package:  crunchy
 version:  1002
 depends:  nimsimd >= 1002002
+
+
+package:  crunchy
+version:  1003
+depends:  nimsimd >= 1002004
 
 
 package:  stbtruetype
@@ -20843,6 +20893,10 @@ package:  necsus
 version:  2001
 
 
+package:  necsus
+version:  2002
+
+
 package:  filesize
 version:  1000000
 
@@ -21515,6 +21569,10 @@ depends:  nre >= 2000000, timezones >= 5000
 package:  config
 version:  1001
 depends:  nre >= 2000000, timezones >= 5000
+
+
+package:  fblib
+version:  1000
 
 
 package:  toktok
@@ -28544,6 +28602,10 @@ version:  1011002
 
 
 package:  naylib
+version:  1012000
+
+
+package:  naylib
 version:  1002000
 depends:  eminim >= 2008002
 
@@ -31767,6 +31829,10 @@ version:  1002
 package:  playground
 version:  1000
 depends:  jester >= 1000
+
+
+package:  testdiff
+version:  1000000
 
 
 package:  wren
@@ -36841,11 +36907,6 @@ version:  1000
 depends:  bncurve >= 1, chronicles >= 1, chronos >= 1, eth >= 1, jsonrpc >= 1, libbacktrace >= 1, nimcrypto >= 1, stew >= 1, stint >= 1, rocksdb >= 1, ethash >= 1, blscurve >= 1, evmc >= 1, web3 >= 1
 
 
-package:  nimbus
-version:  1000
-depends:  bncurve >= 1, chronicles >= 1, chronos >= 1, eth >= 1, jsonrpc >= 1, libbacktrace >= 1, nimcrypto >= 1, stew >= 1, stint >= 1, rocksdb >= 1, ethash >= 1, blscurve >= 1, evmc >= 1, web3 >= 1
-
-
 package:  bearssl
 version:  2000
 depends:  unittest2 >= 1
@@ -37084,6 +37145,14 @@ package:  sensors
 version:  2002
 
 
+package:  sensors
+version:  2003
+
+
+package:  sensors
+version:  2004
+
+
 package:  ttop
 version:  3005
 depends:  illwill >= 1, zippy >= 1, asciigraph >= 1
@@ -37157,6 +37226,21 @@ depends:  illwill >= 1, zippy >= 1, asciigraph >= 1, sensors >= 1
 package:  ttop
 version:  3005
 depends:  illwill >= 1, zippy >= 1, asciigraph >= 1, sensors >= 1
+
+
+package:  ttop
+version:  3005
+depends:  illwill >= 1, zippy >= 1, asciigraph >= 1, sensors >= 2003
+
+
+package:  ttop
+version:  6004
+depends:  illwill >= 1, zippy >= 1, asciigraph >= 1, sensors >= 2003
+
+
+package:  ttop
+version:  6004
+depends:  illwill >= 1, zippy >= 1, asciigraph >= 1, sensors >= 2003
 
 
 package:  logit
@@ -38473,6 +38557,11 @@ version:  1003002
 
 package:  asciigraph
 version:  1002
+
+
+package:  enkodo
+version:  1000
+depends:  flatty >= 1, monocypher >= 1
 
 
 package:  sharedmempool
@@ -40902,6 +40991,11 @@ package:  taps
 version:  2000
 
 
+package:  freedesktoporg
+version:  120000000
+depends:  github-ehmry-nim-configparser-git >= 1
+
+
 package:  preserves
 version:  999000000
 depends:  npeg >= 1
@@ -41294,6 +41388,16 @@ depends:  base32 >= 1003, codeberg-org-eris-nim-coap-git >= 831000000, cbor >= 1
 
 
 package:  eris
+version:  121000000
+depends:  base32 >= 1003, codeberg-org-eris-nim-coap-git >= 831000000, cbor >= 1, coap >= 924000000, freedesktoporg >= 1, syndicate >= 904000000, tkrzw >= 910000000
+
+
+package:  eris
+version:  122000000
+depends:  base32 >= 1003, codeberg-org-eris-nim-coap-git >= 831000000, cbor >= 1, coap >= 924000000, freedesktoporg >= 1, syndicate >= 904000000, tkrzw >= 910000000
+
+
+package:  eris
 version:  4000
 depends:  base32 >= 1003
 
@@ -41306,6 +41410,46 @@ depends:  base32 >= 1003
 package:  eris
 version:  4002
 depends:  base32 >= 1003
+
+
+package:  coap
+version:  1
+depends:  taps >= 2003
+
+
+package:  coap
+version:  826000000
+depends:  taps >= 2003
+
+
+package:  coap
+version:  912000000
+depends:  taps >= 2003
+
+
+package:  coap
+version:  913000000
+depends:  taps >= 913000000
+
+
+package:  coap
+version:  921000000
+depends:  taps >= 913000000
+
+
+package:  coap
+version:  924000000
+depends:  taps >= 913000000
+
+
+package:  coap
+version:  228000000
+depends:  taps >= 913000000
+
+
+package:  coap
+version:  118000000
+depends:  taps >= 913000000
 
 
 package:  pipexp

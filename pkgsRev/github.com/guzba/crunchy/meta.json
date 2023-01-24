@@ -20,7 +20,7 @@
   "refs": {
     "HEAD": {
       "name": "crunchy",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "author": "Ryan Oldenburg",
       "desc": "SIMD-optimized hashing, checksums and CRCs",
       "license": "MIT",
@@ -41,10 +41,10 @@
         },
         {
           "name": "nimsimd",
-          "str": ">= 1.2.2",
+          "str": ">= 1.2.4",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.2.2"
+            "ver": "1.2.4"
           }
         }
       ],
@@ -53,11 +53,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "4a89ce8a9d175188e4b328b0156137e7e2176008"
+      "rev": "52e334326d506bc70bc082aa9c79c478b8dba21a"
     },
     "refs/heads/master": {
       "name": "crunchy",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "author": "Ryan Oldenburg",
       "desc": "SIMD-optimized hashing, checksums and CRCs",
       "license": "MIT",
@@ -78,10 +78,10 @@
         },
         {
           "name": "nimsimd",
-          "str": ">= 1.2.2",
+          "str": ">= 1.2.4",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.2.2"
+            "ver": "1.2.4"
           }
         }
       ],
@@ -90,11 +90,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "4a89ce8a9d175188e4b328b0156137e7e2176008"
+      "rev": "52e334326d506bc70bc082aa9c79c478b8dba21a"
     },
     "refs/heads/ryan": {
       "name": "crunchy",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "author": "Ryan Oldenburg",
       "desc": "SIMD-optimized hashing, checksums and CRCs",
       "license": "MIT",
@@ -115,10 +115,10 @@
         },
         {
           "name": "nimsimd",
-          "str": ">= 1.2.2",
+          "str": ">= 1.2.4",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.2.2"
+            "ver": "1.2.4"
           }
         }
       ],
@@ -127,7 +127,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/ryan",
-      "rev": "7b014ac89a346baff5b5904d7c245dbf5418e053"
+      "rev": "c653d0f67688556b0a8ae42f17bd2d5584707cad"
     },
     "refs/tags/0.1.0": {
       "name": "crunchy",
@@ -239,6 +239,43 @@
       "backend": "c",
       "ref": "refs/tags/0.1.2",
       "rev": "4a89ce8a9d175188e4b328b0156137e7e2176008"
+    },
+    "refs/tags/0.1.3": {
+      "name": "crunchy",
+      "version": "0.1.3",
+      "author": "Ryan Oldenburg",
+      "desc": "SIMD-optimized hashing, checksums and CRCs",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimsimd",
+          "str": ">= 1.2.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.4"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.3",
+      "rev": "a8aee95a83abe7282ef71c6a36c8b461fa97a563"
     }
   },
   "cudf": {
@@ -246,7 +283,8 @@
     "version": {
       "1000": "refs/tags/0.1.0",
       "1001": "refs/tags/0.1.1",
-      "1002": "refs/tags/0.1.2"
+      "1002": "refs/tags/0.1.2",
+      "1003": "refs/tags/0.1.3"
     }
   }
 }

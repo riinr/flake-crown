@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "sensors",
-      "version": "0.2.2",
+      "version": "0.2.4",
       "author": "inv2004",
       "desc": "libsensors wrapper",
       "license": "MIT",
@@ -39,11 +39,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "9423415d8be89988ca9f6caca26ea69ee802b321"
+      "rev": "94affc14aa003ec3fe19a5286026e0472e51bc8f"
     },
     "refs/heads/main": {
       "name": "sensors",
-      "version": "0.2.2",
+      "version": "0.2.4",
       "author": "inv2004",
       "desc": "libsensors wrapper",
       "license": "MIT",
@@ -68,7 +68,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "9423415d8be89988ca9f6caca26ea69ee802b321"
+      "rev": "94affc14aa003ec3fe19a5286026e0472e51bc8f"
     },
     "refs/tags/v0.2.2": {
       "name": "sensors",
@@ -98,12 +98,72 @@
       "backend": "c",
       "ref": "refs/tags/v0.2.2",
       "rev": "9423415d8be89988ca9f6caca26ea69ee802b321"
+    },
+    "refs/tags/v0.2.3": {
+      "name": "sensors",
+      "version": "0.2.3",
+      "author": "inv2004",
+      "desc": "libsensors wrapper",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.8"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.2.3",
+      "rev": "f3efbae17c29c42d06e8d3dda7648f620ddd439c"
+    },
+    "refs/tags/v0.2.4": {
+      "name": "sensors",
+      "version": "0.2.4",
+      "author": "inv2004",
+      "desc": "libsensors wrapper",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.8"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.2.4",
+      "rev": "94affc14aa003ec3fe19a5286026e0472e51bc8f"
     }
   },
   "cudf": {
     "name": "sensors",
     "version": {
-      "2002": "refs/tags/v0.2.2"
+      "2002": "refs/tags/v0.2.2",
+      "2003": "refs/tags/v0.2.3",
+      "2004": "refs/tags/v0.2.4"
     }
   }
 }

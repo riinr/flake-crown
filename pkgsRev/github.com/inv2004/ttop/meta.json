@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "ttop",
-      "version": "0.3.5",
+      "version": "0.6.4",
       "author": "inv2004",
       "desc": "Monitoring tool with historical snapshots",
       "license": "MIT",
@@ -58,9 +58,10 @@
         },
         {
           "name": "sensors",
-          "str": "any version",
+          "str": ">= 0.2.3",
           "ver": {
-            "kind": "verAny"
+            "kind": "verEqLater",
+            "ver": "0.2.3"
           }
         }
       ],
@@ -71,11 +72,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "2ac67c25e49f747b320224833deee3daf4aa10f1"
+      "rev": "0b25bd8112e32a67b407cee7756c336a53b0eaed"
     },
     "refs/heads/main": {
       "name": "ttop",
-      "version": "0.3.5",
+      "version": "0.6.4",
       "author": "inv2004",
       "desc": "Monitoring tool with historical snapshots",
       "license": "MIT",
@@ -119,9 +120,10 @@
         },
         {
           "name": "sensors",
-          "str": "any version",
+          "str": ">= 0.2.3",
           "ver": {
-            "kind": "verAny"
+            "kind": "verEqLater",
+            "ver": "0.2.3"
           }
         }
       ],
@@ -132,7 +134,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "2ac67c25e49f747b320224833deee3daf4aa10f1"
+      "rev": "0b25bd8112e32a67b407cee7756c336a53b0eaed"
     },
     "refs/heads/tel": {
       "name": "ttop",
@@ -1072,12 +1074,199 @@
       "backend": "c",
       "ref": "refs/tags/v0.6.2",
       "rev": "75f02e0b7efee1d576fbc4d4defe7f62f5607c49"
+    },
+    "refs/tags/v0.6.3": {
+      "name": "ttop",
+      "version": "0.3.5",
+      "author": "inv2004",
+      "desc": "Monitoring tool with historical snapshots",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "illwill",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asciigraph",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "sensors",
+          "str": ">= 0.2.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.3"
+          }
+        }
+      ],
+      "bin": [
+        "ttop"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.6.3",
+      "rev": "5b59329498b1736cef0c203429af98f2a2c66903"
+    },
+    "refs/tags/v0.6.4": {
+      "name": "ttop",
+      "version": "0.6.4",
+      "author": "inv2004",
+      "desc": "Monitoring tool with historical snapshots",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "illwill",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asciigraph",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "sensors",
+          "str": ">= 0.2.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.3"
+          }
+        }
+      ],
+      "bin": [
+        "ttop"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.6.4",
+      "rev": "068f96636e9d1df05bfdc3f858d9d7960978b469"
+    },
+    "refs/tags/v0.6.5": {
+      "name": "ttop",
+      "version": "0.6.4",
+      "author": "inv2004",
+      "desc": "Monitoring tool with historical snapshots",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "illwill",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asciigraph",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "sensors",
+          "str": ">= 0.2.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.3"
+          }
+        }
+      ],
+      "bin": [
+        "ttop"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.6.5",
+      "rev": "0b25bd8112e32a67b407cee7756c336a53b0eaed"
     }
   },
   "cudf": {
     "name": "ttop",
     "version": {
-      "3005": "refs/tags/v0.6.2"
+      "3005": "refs/tags/v0.6.3",
+      "6004": "refs/tags/v0.6.5"
     }
   }
 }

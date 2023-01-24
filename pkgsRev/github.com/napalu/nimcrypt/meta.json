@@ -19,7 +19,7 @@
   "refs": {
     "HEAD": {
       "name": "nimcrypt",
-      "version": "0.0.8",
+      "version": "1.0.0",
       "author": "Florent Heyworth",
       "desc": "Nim implementation of MD5, SHA-256 and SHA-512 Unix crypt",
       "license": "MIT",
@@ -57,11 +57,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "35cdc9d5eb06aa9e023c91deaa3d9aafd8112330"
+      "rev": "bc16acaeede4833563ec35f2237bd4ff09282c26"
     },
     "refs/heads/main": {
       "name": "nimcrypt",
-      "version": "0.0.8",
+      "version": "1.0.0",
       "author": "Florent Heyworth",
       "desc": "Nim implementation of MD5, SHA-256 and SHA-512 Unix crypt",
       "license": "MIT",
@@ -99,7 +99,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "35cdc9d5eb06aa9e023c91deaa3d9aafd8112330"
+      "rev": "bc16acaeede4833563ec35f2237bd4ff09282c26"
     },
     "refs/tags/v0.0.6": {
       "name": "nimcrypt",
@@ -226,13 +226,56 @@
       "backend": "c",
       "ref": "refs/tags/v0.0.8",
       "rev": "301f351c887b46c793c6df176dd683e866fe1743"
+    },
+    "refs/tags/v1.0.0": {
+      "name": "nimcrypt",
+      "version": "1.0.0",
+      "author": "Florent Heyworth",
+      "desc": "Nim implementation of MD5, SHA-256 and SHA-512 Unix crypt",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nimcrypt.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.4"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v1.0.0",
+      "rev": "bc16acaeede4833563ec35f2237bd4ff09282c26"
     }
   },
   "cudf": {
     "name": "nimcrypt",
     "version": {
       "6": "refs/tags/v0.0.7",
-      "8": "refs/tags/v0.0.8"
+      "8": "refs/tags/v0.0.8",
+      "1000000": "refs/tags/v1.0.0"
     }
   }
 }

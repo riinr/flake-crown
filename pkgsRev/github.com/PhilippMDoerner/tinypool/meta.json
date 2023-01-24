@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "tinypool",
-      "version": "1.0.1",
+      "version": "1.0.3",
       "author": "PhilippMDoerner",
       "desc": "A minimalistic connection pooling package for sqlite",
       "license": "MIT",
@@ -38,7 +38,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "1172d65473a0c5eff4e42504bb6851845c6b5904"
+      "rev": "80ccfb21d511ee66a1e6f476b8a095d045e57043"
     },
     "refs/heads/devel": {
       "name": "tinypool",
@@ -60,13 +60,6 @@
             "kind": "verEqLater",
             "ver": "1.6.4"
           }
-        },
-        {
-          "name": "dbconnector",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
         }
       ],
       "bin": [],
@@ -74,11 +67,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/devel",
-      "rev": "2e78809b84ddf6c658e1e41aeca650e94b221127"
+      "rev": "6af6fee783ff04c1042b3ca04a5491c3b1743fcf"
     },
     "refs/heads/master": {
       "name": "tinypool",
-      "version": "1.0.1",
+      "version": "1.0.3",
       "author": "PhilippMDoerner",
       "desc": "A minimalistic connection pooling package for sqlite",
       "license": "MIT",
@@ -103,7 +96,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "1172d65473a0c5eff4e42504bb6851845c6b5904"
+      "rev": "80ccfb21d511ee66a1e6f476b8a095d045e57043"
     },
     "refs/heads/nim2": {
       "name": "tinypool",
@@ -132,7 +125,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/nim2",
-      "rev": "ac77bb58e27123b03140c003b9f560cb61fe07a9"
+      "rev": "3bee7477a8cc35e5595237cd72b86c76e18eb4e2"
     },
     "refs/tags/0.2.0": {
       "name": "tinypool",
@@ -250,6 +243,64 @@
       "ref": "refs/tags/0.3.1",
       "rev": "eeae2474818d9d4b8f42bb734d852a524900e3f6"
     },
+    "refs/tags/1.0.2": {
+      "name": "tinypool",
+      "version": "1.0.1",
+      "author": "PhilippMDoerner",
+      "desc": "A minimalistic connection pooling package for sqlite",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.0.2",
+      "rev": "6542b0b5084a064819401fc674100b33f2dba4a2"
+    },
+    "refs/tags/1.0.3": {
+      "name": "tinypool",
+      "version": "1.0.3",
+      "author": "PhilippMDoerner",
+      "desc": "A minimalistic connection pooling package for sqlite",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.0.3",
+      "rev": "80ccfb21d511ee66a1e6f476b8a095d045e57043"
+    },
     "refs/tags/v1.0.0": {
       "name": "tinypool",
       "version": "1.0.0",
@@ -315,6 +366,8 @@
       "1000": "refs/tags/0.2.0",
       "2001": "refs/tags/0.3.0",
       "3001": "refs/tags/0.3.1",
+      "1000001": "refs/tags/1.0.2",
+      "1000003": "refs/tags/1.0.3",
       "1000000": "refs/tags/v1.0.1"
     }
   }

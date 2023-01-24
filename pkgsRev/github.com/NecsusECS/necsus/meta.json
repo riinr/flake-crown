@@ -15,7 +15,7 @@
   "refs": {
     "HEAD": {
       "name": "necsus",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "author": "Nycto",
       "desc": "Entity Component System",
       "license": "MIT",
@@ -40,7 +40,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "c5287f1b91251e4980f670ed1b72019309dcf98c"
+      "rev": "eec865d0d5b1ac81aedb14659528e15b9db3c57f"
     },
     "refs/heads/collections": {
       "name": "necsus",
@@ -89,7 +89,7 @@
     },
     "refs/heads/main": {
       "name": "necsus",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "author": "Nycto",
       "desc": "Entity Component System",
       "license": "MIT",
@@ -114,7 +114,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "c5287f1b91251e4980f670ed1b72019309dcf98c"
+      "rev": "eec865d0d5b1ac81aedb14659528e15b9db3c57f"
     },
     "refs/tags/0.1.0": {
       "name": "necsus",
@@ -234,6 +234,35 @@
       "backend": "c",
       "ref": "refs/tags/0.2.1",
       "rev": "b0b7e587c4853669316fd4cb822d26cefadef913"
+    },
+    "refs/tags/0.2.2": {
+      "name": "necsus",
+      "version": "0.2.2",
+      "author": "Nycto",
+      "desc": "Entity Component System",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.2.2",
+      "rev": "ba439115530424abde21b7537094d2cfbd18b79e"
     }
   },
   "cudf": {
@@ -241,7 +270,8 @@
     "version": {
       "1000": "refs/tags/0.1.0",
       "2000": "refs/tags/0.2.0",
-      "2001": "refs/tags/0.2.1"
+      "2001": "refs/tags/0.2.1",
+      "2002": "refs/tags/0.2.2"
     }
   }
 }

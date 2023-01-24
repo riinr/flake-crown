@@ -408,6 +408,7 @@
   "encode"                                = "/github.com/treeform/encode/meta.json";
   "enet"                                  = "/github.com/fowlmouth/nimrod-enet/enet/meta.json";
   "engineio"                              = "/github.com/samc0de/engineio/meta.json";
+  "enkodo"                                = "/github.com/hortinstein/enkodo/meta.json";
   "ensem"                                 = "/github.com/JeffersonLab/ensem/meta.json";
   "entgrep"                               = "/github.com/srozb/entgrep/meta.json";
   "entoody"                               = "/bitbucket.org/fowlmouth/entoody/meta.json";
@@ -449,6 +450,7 @@
   "faststreams"                           = "/github.com/status-im/faststreams/meta.json";
   "fasttext"                              = "/github.com/bung87/fasttext/meta.json";
   "fastxreader"                           = "/github.com/ahcm/fastx_reader/meta.json";
+  "fblib"                                 = "/github.com/survivorm/fblib/meta.json";
   "feednim"                               = "/github.com/johnconway/feednim/meta.json";
   "feta"                                  = "/github.com/FlorianRauls/feta/meta.json";
   "ffbookmarks"                           = "/github.com/achesak/ffbookmarks/meta.json";
@@ -489,6 +491,7 @@
   "fpn"                                   = "/gitlab.com/lbartoletti/fpn/meta.json";
   "frag"                                  = "/github.com/fragworks/frag/meta.json";
   "fragments"                             = "/github.com/sinkingsugar/fragments/meta.json";
+  "freedesktoporg"                        = "/git.sr.ht/~ehmry/freedesktop_org/meta.json";
   "freegeoip"                             = "/github.com/achesak/freegeoip/meta.json";
   "freeimage"                             = "/github.com/barcharcraz/freeimage/meta.json";
   "freetype"                              = "/github.com/jangko/freetype/meta.json";
@@ -1824,6 +1827,7 @@
   "tagger"                                = "/github.com/aruZeta/tagger/meta.json";
   "taglib"                                = "/github.com/alex-laskin/taglib/meta.json";
   "tam"                                   = "/github.com/SolitudeSF/tam/meta.json";
+  "tapscoap"                              = "/codeberg.org/eris/taps_coap/meta.json";
   "taps"                                  = "/git.sr.ht/~ehmry/taps/meta.json";
   "taskman"                               = "/github.com/ire4ever1190/taskman/meta.json";
   "taskpools"                             = "/github.com/status-im/taskpools/meta.json";
@@ -1844,6 +1848,7 @@
   "termstyle"                             = "/github.com/PMunch/termstyle/meta.json";
   "termui"                                = "/github.com/jjv360/termui/meta.json";
   "ternarytree"                           = "/github.com/calcit-lang/ternary_tree/meta.json";
+  "testdiff"                              = "/github.com/geotre/testdiff/meta.json";
   "testify"                               = "/github.com/sealmove/testify/meta.json";
   "testrunner"                            = "/github.com/FedericoCeratto/testrunner/meta.json";
   "testutils"                             = "/github.com/status-im/testutils/meta.json";
@@ -1985,6 +1990,7 @@
   "vector"                                = "/github.com/tontinton/vector/meta.json";
   "vectors"                               = "/github.com/blamestross/vectors/meta.json";
   "vidhdr"                                = "/github.com/achesak/vidhdr/meta.json";
+  "vikunja"                               = "/github.com/ruivieira/vikunja/meta.json";
   "vimeo"                                 = "/git.ozzuu.com/thisago/vimeo/meta.json";
   "vkapi"                                 = "/github.com/Yardanico/vkapi/meta.json";
   "vla"                                   = "/github.com/bpr/vla/meta.json";
