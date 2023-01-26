@@ -16,7 +16,7 @@
   "refs": {
     "HEAD": {
       "name": "pkginfo",
-      "version": "0.1.0",
+      "version": "0.1.2",
       "author": "George Lemon",
       "desc": "A tiny utility package to extract Nimble information from any project",
       "license": "MIT",
@@ -49,11 +49,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "1d2a080be7ae951ae71455531370dafb83f8ef85"
+      "rev": "462f11a5ec15444407b407bc4a4d041691de25eb"
     },
     "refs/heads/main": {
       "name": "pkginfo",
-      "version": "0.1.0",
+      "version": "0.1.2",
       "author": "George Lemon",
       "desc": "A tiny utility package to extract Nimble information from any project",
       "license": "MIT",
@@ -86,7 +86,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "1d2a080be7ae951ae71455531370dafb83f8ef85"
+      "rev": "462f11a5ec15444407b407bc4a4d041691de25eb"
     },
     "refs/tags/0.1.1": {
       "name": "pkginfo",
@@ -124,6 +124,43 @@
       "backend": "c",
       "ref": "refs/tags/0.1.1",
       "rev": "768357527f8e863c9c7dc5505744d238ab34ce92"
+    },
+    "refs/tags/0.1.2": {
+      "name": "pkginfo",
+      "version": "0.1.2",
+      "author": "George Lemon",
+      "desc": "A tiny utility package to extract Nimble information from any project",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "semver",
+          "str": ">= 1.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.2",
+      "rev": "462f11a5ec15444407b407bc4a4d041691de25eb"
     },
     "refs/tags/v0.1.0": {
       "name": "pkginfo",
@@ -166,7 +203,8 @@
   "cudf": {
     "name": "pkginfo",
     "version": {
-      "1000": "refs/tags/v0.1.0"
+      "1000": "refs/tags/v0.1.0",
+      "1002": "refs/tags/0.1.2"
     }
   }
 }

@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "coap",
-      "version": "20230118",
+      "version": "20230125",
       "author": "Emery Hemingway",
       "desc": "CoAP endpoint libary",
       "license": "Unlicense",
@@ -47,11 +47,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "bec05d6046cd029b979a6549d864e92916ebaea8"
+      "rev": "e04040cb899f6048ea86af7f37e6e1d518b1d6a5"
     },
     "refs/heads/trunk": {
       "name": "coap",
-      "version": "20230118",
+      "version": "20230125",
       "author": "Emery Hemingway",
       "desc": "CoAP endpoint libary",
       "license": "Unlicense",
@@ -84,7 +84,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/trunk",
-      "rev": "bec05d6046cd029b979a6549d864e92916ebaea8"
+      "rev": "e04040cb899f6048ea86af7f37e6e1d518b1d6a5"
     },
     "refs/heads/udp": {
       "name": "coap",
@@ -434,6 +434,43 @@
       "backend": "c",
       "ref": "refs/tags/20230118",
       "rev": "bec05d6046cd029b979a6549d864e92916ebaea8"
+    },
+    "refs/tags/20230125": {
+      "name": "coap",
+      "version": "20230125",
+      "author": "Emery Hemingway",
+      "desc": "CoAP endpoint libary",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.2"
+          }
+        },
+        {
+          "name": "taps",
+          "str": ">= 20220913",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220913"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/20230125",
+      "rev": "e04040cb899f6048ea86af7f37e6e1d518b1d6a5"
     }
   },
   "cudf": {
@@ -446,7 +483,8 @@
       "921000000": "refs/tags/20220921",
       "924000000": "refs/tags/20220924",
       "228000000": "refs/tags/20221228",
-      "118000000": "refs/tags/20230118"
+      "118000000": "refs/tags/20230118",
+      "125000000": "refs/tags/20230125"
     }
   }
 }

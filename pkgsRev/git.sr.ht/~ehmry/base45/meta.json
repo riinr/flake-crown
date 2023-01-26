@@ -11,13 +11,15 @@
   "refs": {
     "HEAD": {
       "name": "base45",
-      "version": "1.0.0",
+      "version": "20230124",
       "author": "Emery Hemingway",
       "desc": "Base45 encoder and decoder.",
       "license": "Unlicense",
       "skipDirs": [],
       "skipFiles": [],
-      "skipExt": [],
+      "skipExt": [
+        "nim"
+      ],
       "installDirs": [],
       "installFiles": [],
       "installExt": [],
@@ -31,22 +33,26 @@
           }
         }
       ],
-      "bin": [],
+      "bin": [
+        "base45"
+      ],
       "binDir": "",
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "fe4c6599276c4df351f31a338de2aaa79c74dd64"
+      "rev": "57d13f45f3669f9331b1d3d4696a79c5e39821c2"
     },
     "refs/heads/trunk": {
       "name": "base45",
-      "version": "1.0.0",
+      "version": "20230124",
       "author": "Emery Hemingway",
       "desc": "Base45 encoder and decoder.",
       "license": "Unlicense",
       "skipDirs": [],
       "skipFiles": [],
-      "skipExt": [],
+      "skipExt": [
+        "nim"
+      ],
       "installDirs": [],
       "installFiles": [],
       "installExt": [],
@@ -60,12 +66,22 @@
           }
         }
       ],
-      "bin": [],
+      "bin": [
+        "base45"
+      ],
       "binDir": "",
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/trunk",
-      "rev": "fe4c6599276c4df351f31a338de2aaa79c74dd64"
+      "rev": "57d13f45f3669f9331b1d3d4696a79c5e39821c2"
+    },
+    "refs/remotes/origin/HEAD": {
+      "rev": "bd08df5ab8095e468d17654084564762dc09e1a1",
+      "ref": "refs/remotes/origin/HEAD"
+    },
+    "refs/remotes/origin/trunk": {
+      "rev": "bd08df5ab8095e468d17654084564762dc09e1a1",
+      "ref": "refs/remotes/origin/trunk"
     },
     "refs/tags/0.1.0": {
       "name": "base45",
@@ -124,13 +140,47 @@
       "backend": "c",
       "ref": "refs/tags/1.0.0",
       "rev": "fe4c6599276c4df351f31a338de2aaa79c74dd64"
+    },
+    "refs/tags/20230124": {
+      "name": "base45",
+      "version": "20230124",
+      "author": "Emery Hemingway",
+      "desc": "Base45 encoder and decoder.",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        }
+      ],
+      "bin": [
+        "base45"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/20230124",
+      "rev": "57d13f45f3669f9331b1d3d4696a79c5e39821c2"
     }
   },
   "cudf": {
     "name": "base45",
     "version": {
       "1000": "refs/tags/0.1.0",
-      "1000000": "refs/tags/1.0.0"
+      "1000000": "refs/tags/1.0.0",
+      "124000000": "refs/tags/20230124"
     }
   }
 }

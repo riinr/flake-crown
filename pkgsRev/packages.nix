@@ -454,6 +454,7 @@
   "feednim"                               = "/github.com/johnconway/feednim/meta.json";
   "feta"                                  = "/github.com/FlorianRauls/feta/meta.json";
   "ffbookmarks"                           = "/github.com/achesak/ffbookmarks/meta.json";
+  "ffmpegcli"                             = "/git.termer.net/termer/ffmpeg_cli/meta.json";
   "ffmpeg"                                = "/github.com/momeemt/ffmpeg/meta.json";
   "ffpass"                                = "/github.com/bunkford/ffpass/meta.json";
   "fftw3"                                 = "/github.com/SciNim/fftw3/meta.json";
@@ -794,6 +795,7 @@
   "jswebsockets"                          = "/github.com/stisa/jswebsockets/meta.json";
   "jtr"                                   = "/github.com/u1and0/jtr/meta.json";
   "jupyternim"                            = "/github.com/stisa/jupyternim/meta.json";
+  "jwtea"                                 = "/github.com/guzba/jwtea/meta.json";
   "jwt"                                   = "/github.com/yglukhov/jwt/meta.json";
   "kaitaistructnimruntime"                = "/github.com/kaitai-io/kaitai_struct_nim_runtime/meta.json";
   "karax"                                 = "/github.com/karaxnim/karax/karax/meta.json";
@@ -1084,6 +1086,7 @@
   "nimblegui"                             = "/github.com/ThomasTJdev/nimblegui/meta.json";
   "nimbleimgui"                           = "/github.com/qb-0/nimbleimgui/meta.json";
   "nimbler"                               = "/github.com/paul-nameless/nimbler/meta.json";
+  "nimblex"                               = "/github.com/jjv360/nimblex/meta.json";
   "nimbluez"                              = "/github.com/Electric-Blue/nimbluez/meta.json";
   "nimbmp"                                = "/github.com/jangko/nimbmp/meta.json";
   "nimbomb"                               = "/github.com/Tyler-Yocolano/nimbomb/meta.json";
@@ -1460,6 +1463,7 @@
   "polynumeric"                           = "/github.com/SciNim/polynumeric/meta.json";
   "polypbren"                             = "/github.com/guibar64/polypbren/meta.json";
   "pomtimer"                              = "/github.com/MnlPhlp/pomtimer/meta.json";
+  "ponairi"                               = "/github.com/ire4ever1190/ponairi/meta.json";
   "pop3"                                  = "/github.com/FedericoCeratto/pop3/meta.json";
   "porter"                                = "/github.com/iourinski/porter/meta.json";
   "ppm"                                   = "/github.com/LemonHX/ppm/meta.json";

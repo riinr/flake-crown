@@ -76,7 +76,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "3d532b6d4a8336f1cc5f7195767df8b98db9e28c"
+      "rev": "8fcbe716b2f069480277aa6781782d3e311ee2c0"
     },
     "refs/heads/accept-temp": {
       "name": "chronos",
@@ -311,7 +311,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/asyncproc",
-      "rev": "cc629795b3338fd40174868c38b43abbd047ee14"
+      "rev": "5ddfb0ce38ad4b38cc970c2ad87d344f21c5024d"
     },
     "refs/heads/asyncproc-rebased": {
       "name": "chronos",
@@ -496,67 +496,6 @@
       "backend": "c",
       "ref": "refs/heads/autoinjecttry",
       "rev": "8646c1380a48d082a0c72a358d453f52cce23cf3"
-    },
-    "refs/heads/basic-auth-verbose": {
-      "name": "chronos",
-      "version": "3.0.11",
-      "author": "Status Research & Development GmbH",
-      "desc": "Networking framework with async/await support",
-      "license": "MIT or Apache License 2.0",
-      "skipDirs": [
-        "tests"
-      ],
-      "skipFiles": [],
-      "skipExt": [],
-      "installDirs": [],
-      "installFiles": [
-        "chronos.nim"
-      ],
-      "installExt": [],
-      "requires": [
-        {
-          "name": "nim",
-          "str": ">= 1.2.0",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "1.2.0"
-          }
-        },
-        {
-          "name": "stew",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "bearssl",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "httputils",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "unittest2",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        }
-      ],
-      "bin": [],
-      "binDir": "",
-      "srcDir": "",
-      "backend": "c",
-      "ref": "refs/heads/basic-auth-verbose",
-      "rev": "3b47447c5e16da76cc5661a67dc026495544d7d7"
     },
     "refs/heads/benchmark": {
       "name": "chronos",
@@ -776,7 +715,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/bind-to-local-addr-new-connect",
-      "rev": "f178df0d53e0effb03c88e95d83c295661e76970"
+      "rev": "4f811b0acec3e046e461fb14ea899dd99d90c522"
     },
     "refs/heads/cleanup-deleted-timers": {
       "name": "chronos",
@@ -1406,7 +1345,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/futures",
-      "rev": "d7ce188b7167000f5261d886f1222e570599d686"
+      "rev": "57fa66f5acf0eee00fa486a0de7430c8e0f8ae9f"
     },
     "refs/heads/gc-orc": {
       "name": "chronos",
@@ -1617,6 +1556,67 @@
       "ref": "refs/heads/interval",
       "rev": "f1e6158fe89dfd9c3b10005b32ca6f7e6004cd09"
     },
+    "refs/heads/is-public-addr": {
+      "name": "chronos",
+      "version": "3.0.11",
+      "author": "Status Research & Development GmbH",
+      "desc": "Networking framework with async/await support",
+      "license": "MIT or Apache License 2.0",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "chronos.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/is-public-addr",
+      "rev": "0c55a186fddb6d7a9e0fc8d19c8b01f55323beb7"
+    },
     "refs/heads/lents": {
       "name": "chronos",
       "version": "3.0.11",
@@ -1737,7 +1737,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "3d532b6d4a8336f1cc5f7195767df8b98db9e28c"
+      "rev": "8fcbe716b2f069480277aa6781782d3e311ee2c0"
     },
     "refs/heads/new-connection-leak": {
       "name": "chronos",
@@ -2774,6 +2774,67 @@
       "backend": "c",
       "ref": "refs/heads/tanguyfixcancelrace",
       "rev": "80f5230c5f7a61d268ab86642a5e18e3d051859b"
+    },
+    "refs/heads/tcpwritecancel": {
+      "name": "chronos",
+      "version": "3.0.11",
+      "author": "Status Research & Development GmbH",
+      "desc": "Networking framework with async/await support",
+      "license": "MIT or Apache License 2.0",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "chronos.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/tcpwritecancel",
+      "rev": "17a8484afce028a7e93bb507e3c8470ff5ec0d31"
     },
     "refs/heads/testfix": {
       "name": "chronos",

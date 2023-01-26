@@ -1464,6 +1464,10 @@ version:  1009
 depends:  classes >= 2013, elvis >= 5000
 
 
+package:  nimblex
+version:  1000
+
+
 package:  simpledb
 version:  1000
 depends:  classes >= 2013
@@ -2050,6 +2054,11 @@ version:  9000
 
 package:  mossnim
 version:  1000
+
+
+package:  ponairi
+version:  1000
+depends:  github-philippmdoerner-ndb-nim-59043f7 >= 1
 
 
 package:  anano
@@ -2923,6 +2932,11 @@ version:  1000
 
 package:  vikunja
 version:  1001
+depends:  jsony >= 1
+
+
+package:  vikunja
+version:  1002
 depends:  jsony >= 1
 
 
@@ -15395,18 +15409,6 @@ package:  httpstat
 version:  1000
 
 
-package:  httpstat
-version:  1000
-
-
-package:  httpstat
-version:  1000
-
-
-package:  httpstat
-version:  1000
-
-
 package:  luhncheck
 version:  1000
 
@@ -15615,6 +15617,10 @@ version:  10005
 
 package:  zippy
 version:  10006
+
+
+package:  zippy
+version:  10007
 
 
 package:  zippy
@@ -15985,6 +15991,16 @@ version:  2005
 depends:  webby >= 1003, crunchy >= 1002
 
 
+package:  jwtea
+version:  1000
+depends:  crunchy >= 1003
+
+
+package:  jwtea
+version:  1001
+depends:  crunchy >= 1005
+
+
 package:  crunchy
 version:  1000
 depends:  nimsimd >= 1002002
@@ -16002,6 +16018,21 @@ depends:  nimsimd >= 1002002
 
 package:  crunchy
 version:  1003
+depends:  nimsimd >= 1002004
+
+
+package:  crunchy
+version:  1004
+depends:  nimsimd >= 1002004
+
+
+package:  crunchy
+version:  1005
+depends:  nimsimd >= 1002004
+
+
+package:  crunchy
+version:  1006
 depends:  nimsimd >= 1002004
 
 
@@ -21572,7 +21603,7 @@ depends:  nre >= 2000000, timezones >= 5000
 
 
 package:  fblib
-version:  1000
+version:  2000
 
 
 package:  toktok
@@ -21598,8 +21629,18 @@ version:  1001
 depends:  toktok >= 1, pkginfo >= 1
 
 
+package:  nyml
+version:  1002
+depends:  toktok >= 1, pkginfo >= 1
+
+
 package:  pkginfo
 version:  1000
+depends:  semver >= 1001001
+
+
+package:  pkginfo
+version:  1002
 depends:  semver >= 1001001
 
 
@@ -24054,6 +24095,11 @@ version:  4006
 depends:  cligen >= 1005037
 
 
+package:  adix
+version:  4007
+depends:  cligen >= 1005038
+
+
 package:  cligen
 version:  9006
 
@@ -24372,6 +24418,10 @@ version:  1005036
 
 package:  cligen
 version:  1005037
+
+
+package:  cligen
+version:  1005038
 
 
 package:  cligen
@@ -26326,6 +26376,11 @@ depends:  vmath >= 1001004, chroma >= 2006, zippy >= 10003, flatty >= 3004, nims
 package:  pixie
 version:  5000005
 depends:  vmath >= 1001004, chroma >= 2006, zippy >= 10003, flatty >= 3004, nimsimd >= 1002000, bumpy >= 1001001, crunchy >= 1000
+
+
+package:  pixie
+version:  5000006
+depends:  vmath >= 1001004, chroma >= 2006, zippy >= 10003, flatty >= 3004, nimsimd >= 1002004, bumpy >= 1001001, crunchy >= 1000
 
 
 package:  steamworks
@@ -36758,7 +36813,7 @@ version:  1009
 
 package:  protobufserialization
 version:  3000
-depends:  stew >= 1, faststreams >= 1, serialization >= 1, combparser >= 1, unittest2 >= 1
+depends:  stew >= 1, faststreams >= 1, serialization >= 1, npeg-22449099 >= 1, unittest2 >= 1
 
 
 package:  evmc
@@ -37240,6 +37295,21 @@ depends:  illwill >= 1, zippy >= 1, asciigraph >= 1, sensors >= 2003
 
 package:  ttop
 version:  6004
+depends:  illwill >= 1, zippy >= 1, asciigraph >= 1, sensors >= 2003
+
+
+package:  ttop
+version:  6004
+depends:  illwill >= 1, zippy >= 1, asciigraph >= 1, sensors >= 2003
+
+
+package:  ttop
+version:  6004
+depends:  illwill >= 1, zippy >= 1, asciigraph >= 1, sensors >= 2003
+
+
+package:  ttop
+version:  7002
 depends:  illwill >= 1, zippy >= 1, asciigraph >= 1, sensors >= 2003
 
 
@@ -38561,6 +38631,31 @@ version:  1002
 
 package:  enkodo
 version:  1000
+depends:  flatty >= 1, monocypher >= 1
+
+
+package:  enkodo
+version:  1000
+depends:  flatty >= 1, monocypher >= 1
+
+
+package:  enkodo
+version:  1000
+depends:  flatty >= 1, monocypher >= 1
+
+
+package:  enkodo
+version:  1000
+depends:  flatty >= 1, monocypher >= 1
+
+
+package:  enkodo
+version:  1003
+depends:  flatty >= 1, monocypher >= 1
+
+
+package:  enkodo
+version:  1005
 depends:  flatty >= 1, monocypher >= 1
 
 
@@ -40385,6 +40480,10 @@ package:  echon
 version:  1007
 
 
+package:  ffmpegcli
+version:  1000
+
+
 package:  dataurl
 version:  1003001
 depends:  cligen >= 1
@@ -40872,6 +40971,10 @@ version:  1000
 
 package:  base45
 version:  1000000
+
+
+package:  base45
+version:  124000000
 
 
 package:  opusenc
@@ -41398,6 +41501,11 @@ depends:  base32 >= 1003, codeberg-org-eris-nim-coap-git >= 831000000, cbor >= 1
 
 
 package:  eris
+version:  125000000
+depends:  base32 >= 1003, codeberg-org-eris-nim-coap-git >= 831000000, cbor >= 1, coap >= 924000000, freedesktoporg >= 1, syndicate >= 904000000, tkrzw >= 910000000
+
+
+package:  eris
 version:  4000
 depends:  base32 >= 1003
 
@@ -41449,6 +41557,11 @@ depends:  taps >= 913000000
 
 package:  coap
 version:  118000000
+depends:  taps >= 913000000
+
+
+package:  coap
+version:  125000000
 depends:  taps >= 913000000
 
 

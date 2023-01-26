@@ -60,10 +60,11 @@
           }
         },
         {
-          "name": "combparser",
-          "str": "any version",
+          "name": "npeg",
+          "str": "#22449099",
           "ver": {
-            "kind": "verAny"
+            "kind": "verSpecial",
+            "spe": "#22449099"
           }
         },
         {
@@ -79,7 +80,76 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "039007fda3731b695a9a64234c890eca28afef11"
+      "rev": "bd4520d96d0017df67490eeec6d3912b2d3f23a4"
+    },
+    "refs/heads/add-enum-support": {
+      "name": "protobuf_serialization",
+      "version": "0.3.0",
+      "author": "Status",
+      "desc": "Protobuf implementation compatible with the nim-serialization framework.",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "protobuf_serialization.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "faststreams",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "serialization",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "npeg",
+          "str": "#22449099",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#22449099"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/add-enum-support",
+      "rev": "d7ba7a1074bd21c55b5e85ec2a0f1dc267d24143"
     },
     "refs/heads/ci-bump": {
       "name": "protobuf_serialization",
@@ -440,10 +510,11 @@
           }
         },
         {
-          "name": "combparser",
-          "str": "any version",
+          "name": "npeg",
+          "str": "#22449099",
           "ver": {
-            "kind": "verAny"
+            "kind": "verSpecial",
+            "spe": "#22449099"
           }
         },
         {
@@ -459,75 +530,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "039007fda3731b695a9a64234c890eca28afef11"
-    },
-    "refs/heads/newparser": {
-      "name": "protobuf_serialization",
-      "version": "0.3.0",
-      "author": "Status",
-      "desc": "Protobuf implementation compatible with the nim-serialization framework.",
-      "license": "MIT",
-      "skipDirs": [
-        "tests"
-      ],
-      "skipFiles": [],
-      "skipExt": [],
-      "installDirs": [],
-      "installFiles": [
-        "protobuf_serialization.nim"
-      ],
-      "installExt": [],
-      "requires": [
-        {
-          "name": "nim",
-          "str": ">= 1.2.0",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "1.2.0"
-          }
-        },
-        {
-          "name": "stew",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "faststreams",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "serialization",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "npeg",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "unittest2",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        }
-      ],
-      "bin": [],
-      "binDir": "",
-      "srcDir": "",
-      "backend": "c",
-      "ref": "refs/heads/newparser",
-      "rev": "c1a6de2c1d52f0be23b8abc6b3f3478ce40df2f8"
+      "rev": "bd4520d96d0017df67490eeec6d3912b2d3f23a4"
     },
     "refs/heads/stylecheck": {
       "name": "protobuf_serialization",

@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "vikunja",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "author": "Rui Vieira",
       "desc": "Nim Vikunja client",
       "license": "Apache-2.0",
@@ -45,11 +45,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "328c5534a7954f5204fd9f1c1f6227502a58b87f"
+      "rev": "cab20213869bc9ed5fc0543c4d283fe3d5c28232"
     },
     "refs/heads/main": {
       "name": "vikunja",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "author": "Rui Vieira",
       "desc": "Nim Vikunja client",
       "license": "Apache-2.0",
@@ -81,7 +81,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "328c5534a7954f5204fd9f1c1f6227502a58b87f"
+      "rev": "cab20213869bc9ed5fc0543c4d283fe3d5c28232"
     },
     "refs/tags/v0.1.0": {
       "name": "vikunja",
@@ -147,13 +147,50 @@
       "backend": "c",
       "ref": "refs/tags/v0.1.1",
       "rev": "ad36592680fe69a30585f5411de8a5c04314302a"
+    },
+    "refs/tags/v0.1.2": {
+      "name": "vikunja",
+      "version": "0.1.2",
+      "author": "Rui Vieira",
+      "desc": "Nim Vikunja client",
+      "license": "Apache-2.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.10"
+          }
+        },
+        {
+          "name": "jsony",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.1.2",
+      "rev": "6be3649bba61a4b5cc88f462bad19446ba40b715"
     }
   },
   "cudf": {
     "name": "vikunja",
     "version": {
       "1000": "refs/tags/v0.1.0",
-      "1001": "refs/tags/v0.1.1"
+      "1001": "refs/tags/v0.1.1",
+      "1002": "refs/tags/v0.1.2"
     }
   }
 }

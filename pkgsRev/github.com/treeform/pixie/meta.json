@@ -26,7 +26,7 @@
   "refs": {
     "HEAD": {
       "name": "pixie",
-      "version": "5.0.5",
+      "version": "5.0.6",
       "author": "Andre von Houck and Ryan Oldenburg",
       "desc": "Full-featured 2d graphics library for Nim.",
       "license": "MIT",
@@ -79,10 +79,10 @@
         },
         {
           "name": "nimsimd",
-          "str": ">= 1.2.0",
+          "str": ">= 1.2.4",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.2.0"
+            "ver": "1.2.4"
           }
         },
         {
@@ -107,7 +107,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "6c8d142cbf455226c07b3914c177d51fea090f8e"
+      "rev": "f3e73f722fbb0e5d496fbc59ee860a9fd49983de"
     },
     "refs/heads/dev": {
       "name": "pixie",
@@ -435,7 +435,7 @@
     },
     "refs/heads/master": {
       "name": "pixie",
-      "version": "5.0.5",
+      "version": "5.0.6",
       "author": "Andre von Houck and Ryan Oldenburg",
       "desc": "Full-featured 2d graphics library for Nim.",
       "license": "MIT",
@@ -488,10 +488,10 @@
         },
         {
           "name": "nimsimd",
-          "str": ">= 1.2.0",
+          "str": ">= 1.2.4",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.2.0"
+            "ver": "1.2.4"
           }
         },
         {
@@ -516,7 +516,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "6c8d142cbf455226c07b3914c177d51fea090f8e"
+      "rev": "f3e73f722fbb0e5d496fbc59ee860a9fd49983de"
     },
     "refs/heads/osfont": {
       "name": "pixie",
@@ -5421,6 +5421,91 @@
       "backend": "c",
       "ref": "refs/tags/5.0.5",
       "rev": "9619cc4e540b6eac7917d8af08a9efb1408d4155"
+    },
+    "refs/tags/5.0.6": {
+      "name": "pixie",
+      "version": "5.0.6",
+      "author": "Andre von Houck and Ryan Oldenburg",
+      "desc": "Full-featured 2d graphics library for Nim.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "vmath",
+          "str": ">= 1.1.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.4"
+          }
+        },
+        {
+          "name": "chroma",
+          "str": ">= 0.2.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.6"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.3"
+          }
+        },
+        {
+          "name": "flatty",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "nimsimd",
+          "str": ">= 1.2.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.4"
+          }
+        },
+        {
+          "name": "bumpy",
+          "str": ">= 1.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.1"
+          }
+        },
+        {
+          "name": "crunchy",
+          "str": ">= 0.1.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/5.0.6",
+      "rev": "f3e73f722fbb0e5d496fbc59ee860a9fd49983de"
     }
   },
   "cudf": {
@@ -5486,7 +5571,8 @@
       "5000002": "refs/tags/5.0.2",
       "5000003": "refs/tags/5.0.3",
       "5000004": "refs/tags/5.0.4",
-      "5000005": "refs/tags/5.0.5"
+      "5000005": "refs/tags/5.0.5",
+      "5000006": "refs/tags/5.0.6"
     }
   }
 }

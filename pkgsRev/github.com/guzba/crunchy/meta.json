@@ -20,7 +20,7 @@
   "refs": {
     "HEAD": {
       "name": "crunchy",
-      "version": "0.1.3",
+      "version": "0.1.6",
       "author": "Ryan Oldenburg",
       "desc": "SIMD-optimized hashing, checksums and CRCs",
       "license": "MIT",
@@ -53,11 +53,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "52e334326d506bc70bc082aa9c79c478b8dba21a"
+      "rev": "a282a89d0eabb723ddb34f16c61ea1758ee9ccf4"
     },
     "refs/heads/master": {
       "name": "crunchy",
-      "version": "0.1.3",
+      "version": "0.1.6",
       "author": "Ryan Oldenburg",
       "desc": "SIMD-optimized hashing, checksums and CRCs",
       "license": "MIT",
@@ -90,11 +90,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "52e334326d506bc70bc082aa9c79c478b8dba21a"
+      "rev": "a282a89d0eabb723ddb34f16c61ea1758ee9ccf4"
     },
     "refs/heads/ryan": {
       "name": "crunchy",
-      "version": "0.1.3",
+      "version": "0.1.6",
       "author": "Ryan Oldenburg",
       "desc": "SIMD-optimized hashing, checksums and CRCs",
       "license": "MIT",
@@ -127,7 +127,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/ryan",
-      "rev": "c653d0f67688556b0a8ae42f17bd2d5584707cad"
+      "rev": "2b5630960a54b74f0a09d66f7e11c7def84febe3"
     },
     "refs/tags/0.1.0": {
       "name": "crunchy",
@@ -276,6 +276,117 @@
       "backend": "c",
       "ref": "refs/tags/0.1.3",
       "rev": "a8aee95a83abe7282ef71c6a36c8b461fa97a563"
+    },
+    "refs/tags/0.1.4": {
+      "name": "crunchy",
+      "version": "0.1.4",
+      "author": "Ryan Oldenburg",
+      "desc": "SIMD-optimized hashing, checksums and CRCs",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimsimd",
+          "str": ">= 1.2.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.4"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.4",
+      "rev": "bdd20cb6f6d872938ecefab3619bad96a5b834eb"
+    },
+    "refs/tags/0.1.5": {
+      "name": "crunchy",
+      "version": "0.1.5",
+      "author": "Ryan Oldenburg",
+      "desc": "SIMD-optimized hashing, checksums and CRCs",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimsimd",
+          "str": ">= 1.2.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.4"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.5",
+      "rev": "5b14d59c29d0d650c8cc78a969c25937af438669"
+    },
+    "refs/tags/0.1.6": {
+      "name": "crunchy",
+      "version": "0.1.6",
+      "author": "Ryan Oldenburg",
+      "desc": "SIMD-optimized hashing, checksums and CRCs",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "nimsimd",
+          "str": ">= 1.2.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.4"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.6",
+      "rev": "a282a89d0eabb723ddb34f16c61ea1758ee9ccf4"
     }
   },
   "cudf": {
@@ -284,7 +395,10 @@
       "1000": "refs/tags/0.1.0",
       "1001": "refs/tags/0.1.1",
       "1002": "refs/tags/0.1.2",
-      "1003": "refs/tags/0.1.3"
+      "1003": "refs/tags/0.1.3",
+      "1004": "refs/tags/0.1.4",
+      "1005": "refs/tags/0.1.5",
+      "1006": "refs/tags/0.1.6"
     }
   }
 }

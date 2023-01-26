@@ -15,7 +15,7 @@
   "refs": {
     "HEAD": {
       "name": "zippy",
-      "version": "0.10.6",
+      "version": "0.10.7",
       "author": "Ryan Oldenburg",
       "desc": "Pure Nim implementation of deflate, zlib, gzip and zip.",
       "license": "MIT",
@@ -40,11 +40,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "72e7c61e1cdfecca2c3244bbb6cd00927ba842c9"
+      "rev": "ca5989a1ba8bdba897d7906dfd6ccda2580d9a5a"
     },
     "refs/heads/master": {
       "name": "zippy",
-      "version": "0.10.6",
+      "version": "0.10.7",
       "author": "Ryan Oldenburg",
       "desc": "Pure Nim implementation of deflate, zlib, gzip and zip.",
       "license": "MIT",
@@ -69,7 +69,36 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "72e7c61e1cdfecca2c3244bbb6cd00927ba842c9"
+      "rev": "ca5989a1ba8bdba897d7906dfd6ccda2580d9a5a"
+    },
+    "refs/heads/ryan": {
+      "name": "zippy",
+      "version": "0.10.7",
+      "author": "Ryan Oldenburg",
+      "desc": "Pure Nim implementation of deflate, zlib, gzip and zip.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.10"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/ryan",
+      "rev": "ed9a498857a25709ed0e29b7893d69869dc9d0f9"
     },
     "refs/tags/0.1.0": {
       "name": "zippy",
@@ -389,6 +418,35 @@
       "backend": "c",
       "ref": "refs/tags/0.10.6",
       "rev": "123cd593f513d584526f119e7ccb65a7baefa8fa"
+    },
+    "refs/tags/0.10.7": {
+      "name": "zippy",
+      "version": "0.10.7",
+      "author": "Ryan Oldenburg",
+      "desc": "Pure Nim implementation of deflate, zlib, gzip and zip.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.10"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.10.7",
+      "rev": "ca5989a1ba8bdba897d7906dfd6ccda2580d9a5a"
     },
     "refs/tags/0.2.0": {
       "name": "zippy",
@@ -2173,6 +2231,7 @@
       "10004": "refs/tags/0.10.4",
       "10005": "refs/tags/0.10.5",
       "10006": "refs/tags/0.10.6",
+      "10007": "refs/tags/0.10.7",
       "2000": "refs/tags/0.2.0",
       "2001": "refs/tags/0.2.1",
       "2002": "refs/tags/0.2.2",

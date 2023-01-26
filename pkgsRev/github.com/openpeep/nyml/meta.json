@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "nyml",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "author": "George Lemon",
       "desc": "A stupid simple YAML Parser. From YAML to stringified JSON (fastest) or JsonNode",
       "license": "MIT",
@@ -53,11 +53,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "a4106cb2e8b666a884c3e76a34d0948237a2da7f"
+      "rev": "dbad8e03949df7a5efc4f3650ad30adc95dd5368"
     },
     "refs/heads/main": {
       "name": "nyml",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "author": "George Lemon",
       "desc": "A stupid simple YAML Parser. From YAML to stringified JSON (fastest) or JsonNode",
       "license": "MIT",
@@ -96,7 +96,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "a4106cb2e8b666a884c3e76a34d0948237a2da7f"
+      "rev": "dbad8e03949df7a5efc4f3650ad30adc95dd5368"
     },
     "refs/tags/0.1.0": {
       "name": "nyml",
@@ -183,13 +183,57 @@
       "backend": "c",
       "ref": "refs/tags/0.1.1",
       "rev": "b2dc5102d4fc2f9699e64a5eea529d56c6b60e91"
+    },
+    "refs/tags/0.1.2": {
+      "name": "nyml",
+      "version": "0.1.2",
+      "author": "George Lemon",
+      "desc": "A stupid simple YAML Parser. From YAML to stringified JSON (fastest) or JsonNode",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "toktok",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "pkginfo",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.2",
+      "rev": "dbad8e03949df7a5efc4f3650ad30adc95dd5368"
     }
   },
   "cudf": {
     "name": "nyml",
     "version": {
       "1000": "refs/tags/0.1.0",
-      "1001": "refs/tags/0.1.1"
+      "1001": "refs/tags/0.1.1",
+      "1002": "refs/tags/0.1.2"
     }
   }
 }

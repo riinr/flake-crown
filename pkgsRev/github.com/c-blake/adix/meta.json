@@ -20,7 +20,7 @@
   "refs": {
     "HEAD": {
       "name": "adix",
-      "version": "0.4.6",
+      "version": "0.4.7",
       "author": "Charles Blake",
       "desc": "An Adaptive Index Library for Nim",
       "license": "MIT/ISC",
@@ -47,10 +47,10 @@
         },
         {
           "name": "cligen",
-          "str": ">= 1.5.37",
+          "str": ">= 1.5.38",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.5.37"
+            "ver": "1.5.38"
           }
         }
       ],
@@ -62,11 +62,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "e046e516b2f6219331c08d8f13805d5ad0cdb763"
+      "rev": "817b7ce22c278e410f049aa7b7550683391fc66d"
     },
     "refs/heads/master": {
       "name": "adix",
-      "version": "0.4.6",
+      "version": "0.4.7",
       "author": "Charles Blake",
       "desc": "An Adaptive Index Library for Nim",
       "license": "MIT/ISC",
@@ -93,10 +93,10 @@
         },
         {
           "name": "cligen",
-          "str": ">= 1.5.37",
+          "str": ">= 1.5.38",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.5.37"
+            "ver": "1.5.38"
           }
         }
       ],
@@ -108,7 +108,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "e046e516b2f6219331c08d8f13805d5ad0cdb763"
+      "rev": "817b7ce22c278e410f049aa7b7550683391fc66d"
     },
     "refs/tags/0.2.0": {
       "name": "adix",
@@ -382,6 +382,52 @@
       "backend": "c",
       "ref": "refs/tags/v0.4.6",
       "rev": "c7686beb14941a139e66f73e324eb40e3e5ac5de"
+    },
+    "refs/tags/v0.4.7": {
+      "name": "adix",
+      "version": "0.4.7",
+      "author": "Charles Blake",
+      "desc": "An Adaptive Index Library for Nim",
+      "license": "MIT/ISC",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "adix.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.38",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.38"
+          }
+        }
+      ],
+      "bin": [
+        "util/cstats",
+        "util/lfreq"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.7",
+      "rev": "817b7ce22c278e410f049aa7b7550683391fc66d"
     }
   },
   "cudf": {
@@ -393,7 +439,8 @@
       "3000": "refs/tags/v0.3.0",
       "4001": "refs/tags/v0.4.1",
       "4004": "refs/tags/v0.4.5",
-      "4006": "refs/tags/v0.4.6"
+      "4006": "refs/tags/v0.4.6",
+      "4007": "refs/tags/v0.4.7"
     }
   }
 }
