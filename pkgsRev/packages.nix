@@ -1550,6 +1550,7 @@
   "reactorfuse"                           = "/github.com/zielmicha/reactorfuse/meta.json";
   "reactor"                               = "/github.com/zielmicha/reactor/meta.json";
   "readfq"                                = "/github.com/andreas-wilm/readfq/meta.json";
+  "ready"                                 = "/github.com/guzba/ready/meta.json";
   "recaptcha"                             = "/github.com/euantorano/recaptcha/meta.json";
   "receq"                                 = "/github.com/choltreppe/receq/meta.json";
   "records"                               = "/github.com/rotu/records/meta.json";

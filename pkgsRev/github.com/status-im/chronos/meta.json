@@ -1556,6 +1556,67 @@
       "ref": "refs/heads/interval",
       "rev": "f1e6158fe89dfd9c3b10005b32ca6f7e6004cd09"
     },
+    "refs/heads/ipnet-rework": {
+      "name": "chronos",
+      "version": "3.0.11",
+      "author": "Status Research & Development GmbH",
+      "desc": "Networking framework with async/await support",
+      "license": "MIT or Apache License 2.0",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "chronos.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/ipnet-rework",
+      "rev": "9d3da1184a2e2a241012a9c24b3915696b7548b1"
+    },
     "refs/heads/is-public-addr": {
       "name": "chronos",
       "version": "3.0.11",

@@ -15,8 +15,8 @@
   "refs": {
     "HEAD": {
       "name": "nimib",
-      "version": "0.3.4",
-      "author": "Pietro Peterlongo",
+      "version": "0.3.5",
+      "author": "Pietro Peterlongo & Hugo Granström",
       "desc": "nimib 🐳 - nim 👑 driven ⛵ publishing ✍",
       "license": "MIT",
       "skipDirs": [],
@@ -72,7 +72,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "ad0e44beb926f8b1348ad3146dd1ec491e1da436"
+      "rev": "2e0c2223cef10423fc43fc3be9626890a6bb4779"
     },
     "refs/heads/add-contributing-md": {
       "name": "nimib",
@@ -503,8 +503,8 @@
     },
     "refs/heads/main": {
       "name": "nimib",
-      "version": "0.3.4",
-      "author": "Pietro Peterlongo",
+      "version": "0.3.5",
+      "author": "Pietro Peterlongo & Hugo Granström",
       "desc": "nimib 🐳 - nim 👑 driven ⛵ publishing ✍",
       "license": "MIT",
       "skipDirs": [],
@@ -560,7 +560,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "ad0e44beb926f8b1348ad3146dd1ec491e1da436"
+      "rev": "2e0c2223cef10423fc43fc3be9626890a6bb4779"
     },
     "refs/heads/rawhtml-and-0.3.1": {
       "name": "nimib",
@@ -1664,6 +1664,67 @@
       "backend": "c",
       "ref": "refs/tags/v0.3.4",
       "rev": "ad0e44beb926f8b1348ad3146dd1ec491e1da436"
+    },
+    "refs/tags/v0.3.5": {
+      "name": "nimib",
+      "version": "0.3.5",
+      "author": "Pietro Peterlongo & Hugo Granström",
+      "desc": "nimib 🐳 - nim 👑 driven ⛵ publishing ✍",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "tempfile",
+          "str": ">= 0.1.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.6"
+          }
+        },
+        {
+          "name": "markdown",
+          "str": ">= 0.8.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.8.1"
+          }
+        },
+        {
+          "name": "mustache",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "toml_serialization",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.5",
+      "rev": "c7f3e95f1f29dda3624477620d99b4a7ba06050f"
     }
   },
   "cudf": {
@@ -1683,7 +1744,8 @@
       "3001": "refs/tags/v0.3.1",
       "3002": "refs/tags/v0.3.2",
       "3003": "refs/tags/v0.3.3",
-      "3004": "refs/tags/v0.3.4"
+      "3004": "refs/tags/v0.3.4",
+      "3005": "refs/tags/v0.3.5"
     }
   }
 }

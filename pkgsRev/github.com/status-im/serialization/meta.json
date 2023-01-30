@@ -212,6 +212,60 @@
       "ref": "refs/heads/master",
       "rev": "d77417cba6896c26287a68e6a95762e45a1b87e5"
     },
+    "refs/heads/nim-devel-workaround": {
+      "name": "serialization",
+      "version": "0.1.0",
+      "author": "Status Research & Development GmbH",
+      "desc": "A modern and extensible serialization framework for Nim",
+      "license": "Apache License 2.0",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "serialization.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "faststreams",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/nim-devel-workaround",
+      "rev": "7d6800a0b9fc3af709c38405511ec26863ff6021"
+    },
     "refs/heads/ref-fixes": {
       "name": "serialization",
       "version": "0.1.0",

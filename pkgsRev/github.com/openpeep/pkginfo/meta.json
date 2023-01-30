@@ -16,7 +16,7 @@
   "refs": {
     "HEAD": {
       "name": "pkginfo",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "author": "George Lemon",
       "desc": "A tiny utility package to extract Nimble information from any project",
       "license": "MIT",
@@ -49,11 +49,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "462f11a5ec15444407b407bc4a4d041691de25eb"
+      "rev": "bc194357b6bc098282ab7c64ed0fdf7353fedb1d"
     },
     "refs/heads/main": {
       "name": "pkginfo",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "author": "George Lemon",
       "desc": "A tiny utility package to extract Nimble information from any project",
       "license": "MIT",
@@ -86,7 +86,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "462f11a5ec15444407b407bc4a4d041691de25eb"
+      "rev": "bc194357b6bc098282ab7c64ed0fdf7353fedb1d"
     },
     "refs/tags/0.1.1": {
       "name": "pkginfo",
@@ -162,6 +162,43 @@
       "ref": "refs/tags/0.1.2",
       "rev": "462f11a5ec15444407b407bc4a4d041691de25eb"
     },
+    "refs/tags/0.1.3": {
+      "name": "pkginfo",
+      "version": "0.1.3",
+      "author": "George Lemon",
+      "desc": "A tiny utility package to extract Nimble information from any project",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "semver",
+          "str": ">= 1.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.3",
+      "rev": "bc194357b6bc098282ab7c64ed0fdf7353fedb1d"
+    },
     "refs/tags/v0.1.0": {
       "name": "pkginfo",
       "version": "0.1.0",
@@ -204,7 +241,8 @@
     "name": "pkginfo",
     "version": {
       "1000": "refs/tags/v0.1.0",
-      "1002": "refs/tags/0.1.2"
+      "1002": "refs/tags/0.1.2",
+      "1003": "refs/tags/0.1.3"
     }
   }
 }

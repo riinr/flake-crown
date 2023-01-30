@@ -532,6 +532,75 @@
       "ref": "refs/heads/master",
       "rev": "bd4520d96d0017df67490eeec6d3912b2d3f23a4"
     },
+    "refs/heads/parsingfailline": {
+      "name": "protobuf_serialization",
+      "version": "0.3.0",
+      "author": "Status",
+      "desc": "Protobuf implementation compatible with the nim-serialization framework.",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "protobuf_serialization.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "faststreams",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "serialization",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "npeg",
+          "str": "#22449099",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#22449099"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/parsingfailline",
+      "rev": "e874898fbe8a2f418076d3c73e3e91bdcf6ac9f3"
+    },
     "refs/heads/stylecheck": {
       "name": "protobuf_serialization",
       "version": "0.2.0",
