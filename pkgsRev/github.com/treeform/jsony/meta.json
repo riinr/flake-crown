@@ -11,7 +11,7 @@
   "refs": {
     "HEAD": {
       "name": "jsony",
-      "version": "1.1.3",
+      "version": "1.1.4",
       "author": "Andre von Houck",
       "desc": "A loose direct to object json parser with hooks.",
       "license": "MIT",
@@ -36,7 +36,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "d0e69bddf83874e15b5c2f52f8b1386ac080b443"
+      "rev": "cd02b166f167aaaec0148745c23e795ff2773452"
     },
     "refs/heads/context": {
       "name": "jsony",
@@ -67,9 +67,38 @@
       "ref": "refs/heads/context",
       "rev": "dc418916da2a892272342ff00099a40c9aa88fff"
     },
+    "refs/heads/dev": {
+      "name": "jsony",
+      "version": "1.1.4",
+      "author": "Andre von Houck",
+      "desc": "A loose direct to object json parser with hooks.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/dev",
+      "rev": "5736b35364a3c2282c6d27e76448dc308187dc44"
+    },
     "refs/heads/master": {
       "name": "jsony",
-      "version": "1.1.3",
+      "version": "1.1.4",
       "author": "Andre von Houck",
       "desc": "A loose direct to object json parser with hooks.",
       "license": "MIT",
@@ -94,7 +123,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "d0e69bddf83874e15b5c2f52f8b1386ac080b443"
+      "rev": "cd02b166f167aaaec0148745c23e795ff2773452"
     },
     "refs/heads/strspeed": {
       "name": "jsony",
@@ -588,6 +617,35 @@
       "backend": "c",
       "ref": "refs/tags/1.1.3",
       "rev": "2a2cc4331720b7695c8b66529dbfea6952727e7b"
+    },
+    "refs/tags/1.1.4": {
+      "name": "jsony",
+      "version": "1.1.4",
+      "author": "Andre von Houck",
+      "desc": "A loose direct to object json parser with hooks.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.1.4",
+      "rev": "981f868cfca6e2ccde820cc20bb18d835d283233"
     }
   },
   "cudf": {
@@ -605,7 +663,8 @@
       "1001000": "refs/tags/1.1.0",
       "1001001": "refs/tags/1.1.1",
       "1001002": "refs/tags/1.1.2",
-      "1001003": "refs/tags/1.1.3"
+      "1001003": "refs/tags/1.1.3",
+      "1001004": "refs/tags/1.1.4"
     }
   }
 }

@@ -12,7 +12,7 @@
   "refs": {
     "HEAD": {
       "name": "freedesktop_org",
-      "version": "20230120",
+      "version": "20230201",
       "author": "Emery Hemingway",
       "desc": "Library implementation of some Freedesktop.org standards",
       "license": "Unlicense",
@@ -44,11 +44,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "ed3b44fbcd9792b7084d1494e0dd8846383c6fa2"
+      "rev": "3e410a1cad8f8d70a43f9e8d1bca6b373e9b5b85"
     },
     "refs/heads/trunk": {
       "name": "freedesktop_org",
-      "version": "20230120",
+      "version": "20230201",
       "author": "Emery Hemingway",
       "desc": "Library implementation of some Freedesktop.org standards",
       "license": "Unlicense",
@@ -80,13 +80,49 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/trunk",
-      "rev": "ed3b44fbcd9792b7084d1494e0dd8846383c6fa2"
+      "rev": "3e410a1cad8f8d70a43f9e8d1bca6b373e9b5b85"
+    },
+    "refs/tags/20230201": {
+      "name": "freedesktop_org",
+      "version": "20230201",
+      "author": "Emery Hemingway",
+      "desc": "Library implementation of some Freedesktop.org standards",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.10"
+          }
+        },
+        {
+          "name": "https://github.com/ehmry/nim-configparser.git",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/20230201",
+      "rev": "7304b988057d73b7fc71c422822aca44345b1a65"
     }
   },
   "cudf": {
     "name": "freedesktoporg",
     "version": {
-      "120000000": "HEAD"
+      "201000000": "refs/tags/20230201"
     }
   }
 }

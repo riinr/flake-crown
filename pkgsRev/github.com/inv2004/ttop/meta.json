@@ -57,14 +57,6 @@
           }
         },
         {
-          "name": "sensors",
-          "str": ">= 0.2.3",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "0.2.3"
-          }
-        },
-        {
           "name": "parsetoml",
           "str": "any version",
           "ver": {
@@ -79,7 +71,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "47ccc803ba69984b0bd48c040f73d5fca2308eaa"
+      "rev": "ed1962b87e9718414d8f4cebd1fec21cc150f541"
     },
     "refs/heads/main": {
       "name": "ttop",
@@ -126,14 +118,6 @@
           }
         },
         {
-          "name": "sensors",
-          "str": ">= 0.2.3",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "0.2.3"
-          }
-        },
-        {
           "name": "parsetoml",
           "str": "any version",
           "ver": {
@@ -148,7 +132,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "47ccc803ba69984b0bd48c040f73d5fca2308eaa"
+      "rev": "ed1962b87e9718414d8f4cebd1fec21cc150f541"
     },
     "refs/heads/tel": {
       "name": "ttop",
@@ -1598,6 +1582,128 @@
       "backend": "c",
       "ref": "refs/tags/v0.8.2",
       "rev": "47ccc803ba69984b0bd48c040f73d5fca2308eaa"
+    },
+    "refs/tags/v0.8.3": {
+      "name": "ttop",
+      "version": "0.8.1",
+      "author": "inv2004",
+      "desc": "Monitoring tool with historical snapshots and alerts",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "illwill",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asciigraph",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "parsetoml",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "ttop"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.8.3",
+      "rev": "f5d65af72b2ca2828e7a76023acb6ff8e9b8e8eb"
+    },
+    "refs/tags/v0.8.4": {
+      "name": "ttop",
+      "version": "0.8.1",
+      "author": "inv2004",
+      "desc": "Monitoring tool with historical snapshots and alerts",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "illwill",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "asciigraph",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "parsetoml",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "ttop"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.8.4",
+      "rev": "f7344490894088c53a08f9ab6565e1e2d1eff645"
     }
   },
   "cudf": {
@@ -1606,7 +1712,7 @@
       "3005": "refs/tags/v0.6.3",
       "6004": "refs/tags/v0.6.7",
       "7002": "refs/tags/v0.7.2",
-      "8001": "refs/tags/v0.8.2"
+      "8001": "refs/tags/v0.8.4"
     }
   }
 }

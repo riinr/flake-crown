@@ -15,7 +15,7 @@
   "refs": {
     "HEAD": {
       "name": "waterpark",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "author": "Ryan Oldenburg",
       "desc": "Thread-safe object pools",
       "license": "MIT",
@@ -40,11 +40,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "7f8b26d72cb5c45ec87780903c98760c958938d2"
+      "rev": "35fdc72c973297303e8d5aa963ae0717a7a18d16"
     },
     "refs/heads/master": {
       "name": "waterpark",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "author": "Ryan Oldenburg",
       "desc": "Thread-safe object pools",
       "license": "MIT",
@@ -69,11 +69,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "7f8b26d72cb5c45ec87780903c98760c958938d2"
+      "rev": "35fdc72c973297303e8d5aa963ae0717a7a18d16"
     },
     "refs/heads/ryan": {
       "name": "waterpark",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "author": "Ryan Oldenburg",
       "desc": "Thread-safe object pools",
       "license": "MIT",
@@ -98,7 +98,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/ryan",
-      "rev": "567d981e1110b1f47275aef56e0309a67dac44f1"
+      "rev": "d021c13486d8707b130c726637e19be46f986377"
     },
     "refs/tags/0.1.0": {
       "name": "waterpark",
@@ -157,13 +157,43 @@
       "backend": "c",
       "ref": "refs/tags/0.1.1",
       "rev": "7f8b26d72cb5c45ec87780903c98760c958938d2"
+    },
+    "refs/tags/0.1.2": {
+      "name": "waterpark",
+      "version": "0.1.2",
+      "author": "Ryan Oldenburg",
+      "desc": "Thread-safe object pools",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.8"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.2",
+      "rev": "35fdc72c973297303e8d5aa963ae0717a7a18d16"
     }
   },
   "cudf": {
     "name": "waterpark",
     "version": {
       "1000": "refs/tags/0.1.0",
-      "1001": "refs/tags/0.1.1"
+      "1001": "refs/tags/0.1.1",
+      "1002": "refs/tags/0.1.2"
     }
   }
 }

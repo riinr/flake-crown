@@ -58,7 +58,55 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "a243648f241c205b5b7fc72abb0f9c14a2812b3a"
+      "rev": "b189c104f7eeb2c8c2cdc9d103415dc7a6a36037"
+    },
+    "refs/heads/fix-crash": {
+      "name": "toml_serialization",
+      "version": "0.2.3",
+      "author": "Status Research & Development GmbH",
+      "desc": "Flexible TOML serialization [not] relying on run-time type information",
+      "license": "Apache License 2.0",
+      "skipDirs": [
+        "tests",
+        "assets"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "toml_serialization.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.1.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.2"
+          }
+        },
+        {
+          "name": "serialization",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fix-crash",
+      "rev": "2c46429b822347aa2db04e04671988de734d2b78"
     },
     "refs/heads/master": {
       "name": "toml_serialization",
@@ -106,7 +154,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "a243648f241c205b5b7fc72abb0f9c14a2812b3a"
+      "rev": "b189c104f7eeb2c8c2cdc9d103415dc7a6a36037"
     }
   },
   "cudf": {

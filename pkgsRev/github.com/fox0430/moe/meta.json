@@ -69,7 +69,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "c44fcd8c9f8e2369b055d89685a45eaf65b1226f"
+      "rev": "0baef02fb3645e95cd6eff456070f81b26d78859"
     },
     "refs/heads/develop": {
       "name": "moe",
@@ -126,7 +126,64 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/develop",
-      "rev": "c44fcd8c9f8e2369b055d89685a45eaf65b1226f"
+      "rev": "0baef02fb3645e95cd6eff456070f81b26d78859"
+    },
+    "refs/heads/fix#1609": {
+      "name": "moe",
+      "version": "0.3.0",
+      "author": "fox0430",
+      "desc": "A command lined based text editor",
+      "license": "GPLv3",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.2"
+          }
+        },
+        {
+          "name": "ncurses",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "unicodedb",
+          "str": ">= 0.11.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.11.2"
+          }
+        },
+        {
+          "name": "parsetoml",
+          "str": "#bb903611e91584efd03b7327493ade0859eeddea",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#bb903611e91584efd03b7327493ade0859eeddea"
+          }
+        }
+      ],
+      "bin": [
+        "moe"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/fix#1609",
+      "rev": "db66e778f9cc1f686cf72010929115b65743226e"
     },
     "refs/heads/init-support-lsp": {
       "name": "moe",

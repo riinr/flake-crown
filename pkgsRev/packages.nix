@@ -268,6 +268,7 @@
   "constants"                             = "/github.com/juancarlospaco/constants/meta.json";
   "constructor"                           = "/github.com/beef331/constructor/meta.json";
   "consul"                                = "/github.com/makingspace/consul/meta.json";
+  "containertools"                        = "/github.com/ilmanzo/containertools/meta.json";
   "contractabi"                           = "/github.com/status-im/contractabi/meta.json";
   "contracts"                             = "/github.com/Udiknedormin/contracts/meta.json";
   "contra"                                = "/github.com/juancarlospaco/contra/meta.json";
@@ -1263,6 +1264,7 @@
   "nimwc"                                 = "/github.com/ThomasTJdev/nimwc/meta.json";
   "nimwebp"                               = "/github.com/tormund/nimwebp/meta.json";
   "nimwin"                                = "/github.com/TriedAngle/nimwin/meta.json";
+  "nimword"                               = "/github.com/PhilippMDoerner/nimword/meta.json";
   "nimx"                                  = "/github.com/yglukhov/nimx/meta.json";
   "nimzbar"                               = "/github.com/genotrance/nimzbar/meta.json";
   "nimzend"                               = "/github.com/metatexx/nimzend/meta.json";
@@ -1941,8 +1943,10 @@
   "typelists"                             = "/github.com/yglukhov/typelists/meta.json";
   "typography"                            = "/github.com/treeform/typography/meta.json";
   "uap"                                   = "/gitlab.com/artemklevtsov/uap/meta.json";
+  "uf2lib"                                = "/github.com/patrick-skamarak/uf2lib/meta.json";
   "uibuilder"                             = "/github.com/ba0f3/uibuilder/meta.json";
   "ui"                                    = "/github.com/nim-lang/ui/meta.json";
+  "uing"                                  = "/github.com/neroist/uing/meta.json";
   "ulid"                                  = "/github.com/adelq/ulid/meta.json";
   "unalix"                                = "/github.com/AmanoTeam/unalix/meta.json";
   "unchained"                             = "/github.com/SciNim/unchained/meta.json";
