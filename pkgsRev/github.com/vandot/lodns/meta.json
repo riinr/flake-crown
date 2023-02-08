@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "lodns",
-      "version": "0.1.3",
+      "version": "0.1.5",
       "author": "vandot",
       "desc": "Simple DNS server for local development",
       "license": "MIT",
@@ -22,12 +22,12 @@
         ".github"
       ],
       "skipFiles": [],
-      "skipExt": [
-        "nim"
-      ],
+      "skipExt": [],
       "installDirs": [],
       "installFiles": [],
-      "installExt": [],
+      "installExt": [
+        "nim"
+      ],
       "requires": [
         {
           "name": "nim",
@@ -53,11 +53,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "5c558fb22bc94bb15e5ebcaafcfe90c2a900f1bc"
+      "rev": "c5186e44d9ec7394900c5c010908e6694fc5f3e5"
     },
     "refs/heads/main": {
       "name": "lodns",
-      "version": "0.1.3",
+      "version": "0.1.5",
       "author": "vandot",
       "desc": "Simple DNS server for local development",
       "license": "MIT",
@@ -65,12 +65,12 @@
         ".github"
       ],
       "skipFiles": [],
-      "skipExt": [
-        "nim"
-      ],
+      "skipExt": [],
       "installDirs": [],
       "installFiles": [],
-      "installExt": [],
+      "installExt": [
+        "nim"
+      ],
       "requires": [
         {
           "name": "nim",
@@ -96,7 +96,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "5c558fb22bc94bb15e5ebcaafcfe90c2a900f1bc"
+      "rev": "c5186e44d9ec7394900c5c010908e6694fc5f3e5"
     },
     "refs/tags/0.1.0": {
       "name": "lodns",
@@ -269,6 +269,92 @@
       "backend": "c",
       "ref": "refs/tags/0.1.3",
       "rev": "94083b7b4212a3124aa4a80618e973ec513b76d4"
+    },
+    "refs/tags/0.1.4": {
+      "name": "lodns",
+      "version": "0.1.4",
+      "author": "vandot",
+      "desc": "Simple DNS server for local development",
+      "license": "MIT",
+      "skipDirs": [
+        ".github"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.6"
+          }
+        },
+        {
+          "name": "https://github.com/rockcavera/nim-dnsprotocol",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        }
+      ],
+      "bin": [
+        "lodns"
+      ],
+      "binDir": "build",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.4",
+      "rev": "24fbd0b9bde32a7b448db8651fc970ca2e44e596"
+    },
+    "refs/tags/0.1.5": {
+      "name": "lodns",
+      "version": "0.1.5",
+      "author": "vandot",
+      "desc": "Simple DNS server for local development",
+      "license": "MIT",
+      "skipDirs": [
+        ".github"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.6"
+          }
+        },
+        {
+          "name": "https://github.com/rockcavera/nim-dnsprotocol",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        }
+      ],
+      "bin": [
+        "lodns"
+      ],
+      "binDir": "build",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.5",
+      "rev": "f638d9ec65c4dde47fb78a212ef4841d5183adef"
     }
   },
   "cudf": {
@@ -277,7 +363,9 @@
       "1000": "refs/tags/0.1.0",
       "1001": "refs/tags/0.1.1",
       "1002": "refs/tags/0.1.2",
-      "1003": "refs/tags/0.1.3"
+      "1003": "refs/tags/0.1.3",
+      "1004": "refs/tags/0.1.4",
+      "1005": "refs/tags/0.1.5"
     }
   }
 }

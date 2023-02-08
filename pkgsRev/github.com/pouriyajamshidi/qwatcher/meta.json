@@ -45,7 +45,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "f10aec0dfd0dae887466e170937c21cf8f66161a"
+      "rev": "0aee20484a446925cb72e53db0a2002cef7f0740"
     },
     "refs/heads/master": {
       "name": "qwatcher",
@@ -78,7 +78,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "f10aec0dfd0dae887466e170937c21cf8f66161a"
+      "rev": "0aee20484a446925cb72e53db0a2002cef7f0740"
     },
     "refs/tags/v0.1.0": {
       "name": "qwatcher",
@@ -145,12 +145,46 @@
       "backend": "c",
       "ref": "refs/tags/v0.2.0",
       "rev": "c67db071227075ce13f0dca28b47444bac9b79f8"
+    },
+    "refs/tags/v0.2.1": {
+      "name": "qwatcher",
+      "version": "0.2.0",
+      "author": "Pouriya Jamshidi",
+      "desc": "Linux Queue Watcher",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.6"
+          }
+        }
+      ],
+      "bin": [
+        "qwatcher"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.2.1",
+      "rev": "f10aec0dfd0dae887466e170937c21cf8f66161a"
     }
   },
   "cudf": {
     "name": "qwatcher",
     "version": {
-      "1000": "refs/tags/v0.2.0"
+      "1000": "refs/tags/v0.2.0",
+      "2000": "refs/tags/v0.2.1"
     }
   }
 }

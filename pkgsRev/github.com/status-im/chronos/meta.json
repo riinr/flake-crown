@@ -311,7 +311,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/asyncproc",
-      "rev": "5ddfb0ce38ad4b38cc970c2ad87d344f21c5024d"
+      "rev": "40263fd5eda7f5306cf95898238a65aed1dc5b6e"
     },
     "refs/heads/asyncproc-rebased": {
       "name": "chronos",
@@ -1115,6 +1115,67 @@
       "backend": "c",
       "ref": "refs/heads/fix-rlpx",
       "rev": "bfc8c1b71944d543f0ec8a1f73c9bd6bd24b3e87"
+    },
+    "refs/heads/fix-sigbus": {
+      "name": "chronos",
+      "version": "3.0.11",
+      "author": "Status Research & Development GmbH",
+      "desc": "Networking framework with async/await support",
+      "license": "MIT or Apache License 2.0",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "chronos.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fix-sigbus",
+      "rev": "c843db28084841d3f20c2cc2f9b6f676a54659a7"
     },
     "refs/heads/fix-srcloc": {
       "name": "chronos",
@@ -3114,6 +3175,67 @@
       "backend": "c",
       "ref": "refs/heads/warnmissingcatch",
       "rev": "65f4943671deee74f157b33f27524fa43cf0fa9c"
+    },
+    "refs/heads/windows-signals": {
+      "name": "chronos",
+      "version": "3.0.11",
+      "author": "Status Research & Development GmbH",
+      "desc": "Networking framework with async/await support",
+      "license": "MIT or Apache License 2.0",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "chronos.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/windows-signals",
+      "rev": "ef733b2bdcafca854af4cbf6a3e63016361031b1"
     },
     "refs/heads/winlibs-ci": {
       "name": "chronos",

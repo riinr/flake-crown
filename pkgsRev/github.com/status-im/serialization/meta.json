@@ -111,6 +111,60 @@
       "ref": "refs/heads/fix-json-logging",
       "rev": "5ef8130c79d1fb5b3105cd3a294e8ee85c1a5c5b"
     },
+    "refs/heads/fix-result-initialization": {
+      "name": "serialization",
+      "version": "0.1.0",
+      "author": "Status Research & Development GmbH",
+      "desc": "A modern and extensible serialization framework for Nim",
+      "license": "Apache License 2.0",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "serialization.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "faststreams",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fix-result-initialization",
+      "rev": "5b7cea55efeb074daa8abd8146a03a34adb4521a"
+    },
     "refs/heads/gc-workaround": {
       "name": "serialization",
       "version": "0.1.0",

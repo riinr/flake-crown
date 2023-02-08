@@ -12,7 +12,7 @@
   "refs": {
     "HEAD": {
       "name": "keyring",
-      "version": "0.4.0",
+      "version": "0.4.1",
       "author": "Matt Haggard",
       "desc": "Cross-platform OS keyring interface",
       "license": "MIT",
@@ -45,7 +45,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "2cae1514de9e80ef1a10e419611bed3b1efd23c2"
+      "rev": "72c566ff199e66584ea8a8cea33a8832a186d1a0"
     },
     "refs/heads/markspanbroek-fix-memory-leaks": {
       "name": "keyring",
@@ -86,7 +86,7 @@
     },
     "refs/heads/master": {
       "name": "keyring",
-      "version": "0.4.0",
+      "version": "0.4.1",
       "author": "Matt Haggard",
       "desc": "Cross-platform OS keyring interface",
       "license": "MIT",
@@ -119,7 +119,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "2cae1514de9e80ef1a10e419611bed3b1efd23c2"
+      "rev": "72c566ff199e66584ea8a8cea33a8832a186d1a0"
     },
     "refs/tags/v0.1.0": {
       "name": "keyring",
@@ -416,6 +416,43 @@
       "backend": "c",
       "ref": "refs/tags/v0.4.0",
       "rev": "2cae1514de9e80ef1a10e419611bed3b1efd23c2"
+    },
+    "refs/tags/v0.4.1": {
+      "name": "keyring",
+      "version": "0.4.1",
+      "author": "Matt Haggard",
+      "desc": "Cross-platform OS keyring interface",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "dbus",
+          "str": ">= 0.0.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.0.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.4.1",
+      "rev": "72c566ff199e66584ea8a8cea33a8832a186d1a0"
     }
   },
   "cudf": {
@@ -428,7 +465,8 @@
       "2002": "refs/tags/v0.2.2",
       "3000": "refs/tags/v0.3.0",
       "3001": "refs/tags/v0.3.1",
-      "4000": "refs/tags/v0.4.0"
+      "4000": "refs/tags/v0.4.0",
+      "4001": "refs/tags/v0.4.1"
     }
   }
 }

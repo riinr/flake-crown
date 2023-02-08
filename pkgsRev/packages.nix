@@ -399,6 +399,7 @@
   "edn"                                   = "/github.com/rosado/edn/meta.json";
   "egl"                                   = "/github.com/nimious/egl/meta.json";
   "einheit"                               = "/github.com/jyapayne/einheit/meta.json";
+  "elfcore"                               = "/github.com/patrick-skamarak/elfcore/meta.json";
   "eloverblik"                            = "/github.com/ThomasTJdev/eloverblik/meta.json";
   "elvis"                                 = "/github.com/mattaylor/elvis/meta.json";
   "emath"                                 = "/github.com/hamidb80/emath/meta.json";
@@ -468,6 +469,7 @@
   "finalseg"                              = "/github.com/bung87/finalseg/meta.json";
   "finals"                                = "/github.com/quelklef/finals/meta.json";
   "finder"                                = "/github.com/bung87/finder/meta.json";
+  "find"                                  = "/github.com/openpeep/find/meta.json";
   "findtests"                             = "/github.com/jackvandrunen/findtests/meta.json";
   "firejail"                              = "/github.com/juancarlospaco/firejail/meta.json";
   "fision"                                = "/github.com/juancarlospaco/fision/meta.json";
@@ -955,6 +957,7 @@
   "metrics"                               = "/github.com/status-im/metrics/meta.json";
   "microasynchttpserver"                  = "/github.com/philip-wernersbach/microasynchttpserver/meta.json";
   "microparsec"                           = "/github.com/schneiderfelipe/microparsec/meta.json";
+  "micros"                                = "/github.com/beef331/micros/meta.json";
   "midnightdynamite"                      = "/github.com/Araq/midnight_dynamite/meta.json";
   "migrate"                               = "/github.com/euantorano/migrate/meta.json";
   "mike"                                  = "/github.com/ire4ever1190/mike/meta.json";
@@ -1446,6 +1449,7 @@
   "pkginfo"                               = "/github.com/openpeep/pkginfo/meta.json";
   "pl0t"                                  = "/github.com/al6x/pl0t/meta.json";
   "platformer"                            = "/github.com/def-/platformer/meta.json";
+  "playdate"                              = "/github.com/samdze/playdate/meta.json";
   "playground"                            = "/github.com/theduke/playground/meta.json";
   "playlists"                             = "/github.com/achesak/playlists/meta.json";
   "pledge"                                = "/github.com/euantorano/pledge/meta.json";
@@ -1988,6 +1992,7 @@
   "validateip"                            = "/github.com/theAkito/validateip/meta.json";
   "validation"                            = "/github.com/captainbland/validation/meta.json";
   "validator"                             = "/github.com/Adeohluwa/validator/meta.json";
+  "valido"                                = "/github.com/openpeep/valido/meta.json";
   "values"                                = "/github.com/nim-appkit/values/meta.json";
   "variant"                               = "/github.com/yglukhov/variant/meta.json";
   "variantkey"                            = "/github.com/brentp/variantkey/meta.json";
