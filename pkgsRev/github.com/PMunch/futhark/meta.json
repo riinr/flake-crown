@@ -16,7 +16,7 @@
   "refs": {
     "HEAD": {
       "name": "futhark",
-      "version": "0.7.4",
+      "version": "0.8.0",
       "author": "PMunch",
       "desc": "A package which uses libclang to parse C headers into Nim files for easy interop",
       "license": "MIT",
@@ -67,7 +67,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "29bee0baad65a65e9abbcc0efa482ee5bf1618d4"
+      "rev": "3a1b6deeddbea0bfba059b0268d43f5d03b8fa7a"
     },
     "refs/heads/int128test": {
       "name": "futhark",
@@ -126,7 +126,7 @@
     },
     "refs/heads/master": {
       "name": "futhark",
-      "version": "0.7.4",
+      "version": "0.8.0",
       "author": "PMunch",
       "desc": "A package which uses libclang to parse C headers into Nim files for easy interop",
       "license": "MIT",
@@ -177,7 +177,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "29bee0baad65a65e9abbcc0efa482ee5bf1618d4"
+      "rev": "3a1b6deeddbea0bfba059b0268d43f5d03b8fa7a"
     },
     "refs/heads/packedargs": {
       "name": "futhark",
@@ -1003,6 +1003,61 @@
       "backend": "c",
       "ref": "refs/tags/v0.7.4",
       "rev": "e5660db881a7b2ae20f7b1015b39c60d81526170"
+    },
+    "refs/tags/v0.8.0": {
+      "name": "futhark",
+      "version": "0.8.0",
+      "author": "PMunch",
+      "desc": "A package which uses libclang to parse C headers into Nim files for easy interop",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "https://github.com/PMunch/libclang-nim",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "termstyle",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "opir"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.8.0",
+      "rev": "9b9283330c95ce4cd7abb14ed06217ddd5f2fa2c"
     }
   },
   "cudf": {
@@ -1018,7 +1073,8 @@
       "7001": "refs/tags/v0.7.1",
       "7002": "refs/tags/v0.7.2",
       "7003": "refs/tags/v0.7.3",
-      "7004": "refs/tags/v0.7.4"
+      "7004": "refs/tags/v0.7.4",
+      "8000": "refs/tags/v0.8.0"
     }
   }
 }

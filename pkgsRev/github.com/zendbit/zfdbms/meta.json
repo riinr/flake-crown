@@ -19,7 +19,7 @@
   "refs": {
     "HEAD": {
       "name": "zfdbms",
-      "version": "0.0.10",
+      "version": "0.1.0",
       "author": "Amru Rosyada",
       "desc": "Simple database generator, connector and query tools.",
       "license": "BSD",
@@ -52,11 +52,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "55f6c1de02294e29ebbeb78031d2e6321f00e3c2"
+      "rev": "d85c5942f159d1f96a0eee11bd816b49e5d23f2e"
     },
     "refs/heads/main": {
       "name": "zfdbms",
-      "version": "0.0.10",
+      "version": "0.1.0",
       "author": "Amru Rosyada",
       "desc": "Simple database generator, connector and query tools.",
       "license": "BSD",
@@ -89,7 +89,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "55f6c1de02294e29ebbeb78031d2e6321f00e3c2"
+      "rev": "d85c5942f159d1f96a0eee11bd816b49e5d23f2e"
     },
     "refs/tags/v0.0.1": {
       "name": "zfdbms",
@@ -423,6 +423,43 @@
       "backend": "c",
       "ref": "refs/tags/v0.0.9",
       "rev": "d1b111921b5f99a45329485d506ebcce65099803"
+    },
+    "refs/tags/v0.1.0": {
+      "name": "zfdbms",
+      "version": "0.1.0",
+      "author": "Amru Rosyada",
+      "desc": "Simple database generator, connector and query tools.",
+      "license": "BSD",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "stdext",
+          "str": ">= 0.0.15",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.0.15"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.1.0",
+      "rev": "d85c5942f159d1f96a0eee11bd816b49e5d23f2e"
     }
   },
   "cudf": {
@@ -436,7 +473,8 @@
       "5": "refs/tags/v0.0.5",
       "6": "refs/tags/v0.0.6",
       "7": "refs/tags/v0.0.7",
-      "9": "refs/tags/v0.0.9"
+      "9": "refs/tags/v0.0.9",
+      "1000": "refs/tags/v0.1.0"
     }
   }
 }

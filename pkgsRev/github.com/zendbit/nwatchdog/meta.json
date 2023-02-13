@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "nwatchdog",
-      "version": "0.0.9",
+      "version": "0.1.0",
       "author": "Amru Rosyada",
       "desc": "Simple watchdog (watch file changes modified, deleted, created) in nim lang.",
       "license": "BSD",
@@ -40,11 +40,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "0e6e7caf1d30d707e42443aca48f5872398472ed"
+      "rev": "5ddaa0d36f6f26bec68016f068424d53e1359efc"
     },
     "refs/heads/master": {
       "name": "nwatchdog",
-      "version": "0.0.9",
+      "version": "0.1.0",
       "author": "Amru Rosyada",
       "desc": "Simple watchdog (watch file changes modified, deleted, created) in nim lang.",
       "license": "BSD",
@@ -71,7 +71,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "0e6e7caf1d30d707e42443aca48f5872398472ed"
+      "rev": "5ddaa0d36f6f26bec68016f068424d53e1359efc"
     },
     "refs/tags/0.0.5": {
       "name": "nwatchdog",
@@ -196,6 +196,37 @@
       "backend": "c",
       "ref": "refs/tags/v0.0.8",
       "rev": "1b2e508cdc0c31a6eb175c066b7d8a4d4176d268"
+    },
+    "refs/tags/v0.1.0": {
+      "name": "nwatchdog",
+      "version": "0.1.0",
+      "author": "Amru Rosyada",
+      "desc": "Simple watchdog (watch file changes modified, deleted, created) in nim lang.",
+      "license": "BSD",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nwatchdog.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.1.0",
+      "rev": "5ddaa0d36f6f26bec68016f068424d53e1359efc"
     }
   },
   "cudf": {
@@ -203,7 +234,8 @@
     "version": {
       "4": "refs/tags/0.0.5",
       "7": "refs/tags/v0.0.7",
-      "8": "refs/tags/v0.0.8"
+      "8": "refs/tags/v0.0.8",
+      "1000": "refs/tags/v0.1.0"
     }
   }
 }

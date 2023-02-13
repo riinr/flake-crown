@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "zfblast",
-      "version": "0.2.8",
+      "version": "0.3.1",
       "author": "Amru Rosyada",
       "desc": "High performance http server (https://tools.ietf.org/html/rfc2616) with persistent connection for nim language",
       "license": "BSD",
@@ -54,11 +54,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "c6d64d359fedcb1e726df31b117b63b61d7cbed6"
+      "rev": "01ee0db1548fe5adb0968502ef60c8ebba4f60e0"
     },
     "refs/heads/master": {
       "name": "zfblast",
-      "version": "0.2.8",
+      "version": "0.3.1",
       "author": "Amru Rosyada",
       "desc": "High performance http server (https://tools.ietf.org/html/rfc2616) with persistent connection for nim language",
       "license": "BSD",
@@ -98,7 +98,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "c6d64d359fedcb1e726df31b117b63b61d7cbed6"
+      "rev": "01ee0db1548fe5adb0968502ef60c8ebba4f60e0"
     },
     "refs/tags/0.1.19": {
       "name": "zfblast",
@@ -1089,6 +1089,94 @@
       "backend": "c",
       "ref": "refs/tags/v0.2.8",
       "rev": "c6d64d359fedcb1e726df31b117b63b61d7cbed6"
+    },
+    "refs/tags/v0.3.0": {
+      "name": "zfblast",
+      "version": "0.3.0",
+      "author": "Amru Rosyada",
+      "desc": "High performance http server (https://tools.ietf.org/html/rfc2616) with persistent connection for nim language",
+      "license": "BSD",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "uri3",
+          "str": ">= 0.1.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.5"
+          }
+        },
+        {
+          "name": "sha1",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.0",
+      "rev": "bc6bd510fa6893d3b48d6efdb28a0e954e87240b"
+    },
+    "refs/tags/v0.3.1": {
+      "name": "zfblast",
+      "version": "0.3.1",
+      "author": "Amru Rosyada",
+      "desc": "High performance http server (https://tools.ietf.org/html/rfc2616) with persistent connection for nim language",
+      "license": "BSD",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "uri3",
+          "str": ">= 0.1.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.5"
+          }
+        },
+        {
+          "name": "sha1",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.1",
+      "rev": "01ee0db1548fe5adb0968502ef60c8ebba4f60e0"
     }
   },
   "cudf": {
@@ -1110,7 +1198,9 @@
       "2005": "refs/tags/v0.2.5",
       "2006": "refs/tags/v0.2.6",
       "2007": "refs/tags/v0.2.7",
-      "2008": "refs/tags/v0.2.8"
+      "2008": "refs/tags/v0.2.8",
+      "3000": "refs/tags/v0.3.0",
+      "3001": "refs/tags/v0.3.1"
     }
   }
 }

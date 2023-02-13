@@ -12,7 +12,7 @@
   "refs": {
     "HEAD": {
       "name": "freedesktop_org",
-      "version": "20230201",
+      "version": "20230210",
       "author": "Emery Hemingway",
       "desc": "Library implementation of some Freedesktop.org standards",
       "license": "Unlicense",
@@ -44,11 +44,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "3e410a1cad8f8d70a43f9e8d1bca6b373e9b5b85"
+      "rev": "fb04d0862aca4be2edcc0eafa94b1840030231c8"
     },
     "refs/heads/trunk": {
       "name": "freedesktop_org",
-      "version": "20230201",
+      "version": "20230210",
       "author": "Emery Hemingway",
       "desc": "Library implementation of some Freedesktop.org standards",
       "license": "Unlicense",
@@ -80,7 +80,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/trunk",
-      "rev": "3e410a1cad8f8d70a43f9e8d1bca6b373e9b5b85"
+      "rev": "fb04d0862aca4be2edcc0eafa94b1840030231c8"
     },
     "refs/tags/20230201": {
       "name": "freedesktop_org",
@@ -117,12 +117,49 @@
       "backend": "c",
       "ref": "refs/tags/20230201",
       "rev": "7304b988057d73b7fc71c422822aca44345b1a65"
+    },
+    "refs/tags/20230210": {
+      "name": "freedesktop_org",
+      "version": "20230210",
+      "author": "Emery Hemingway",
+      "desc": "Library implementation of some Freedesktop.org standards",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.10"
+          }
+        },
+        {
+          "name": "https://github.com/ehmry/nim-configparser.git",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/20230210",
+      "rev": "539152e09aec81e9d224407e686899480b47ffc4"
     }
   },
   "cudf": {
     "name": "freedesktoporg",
     "version": {
-      "201000000": "refs/tags/20230201"
+      "201000000": "refs/tags/20230201",
+      "210000000": "refs/tags/20230210"
     }
   }
 }

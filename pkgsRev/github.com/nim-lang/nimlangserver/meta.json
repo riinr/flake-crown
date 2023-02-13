@@ -77,7 +77,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "4025b9699f52b7680df7a2dfc1bc84c347449aff"
+      "rev": "07a31cf9915793cfd1fbde816bb0b9dbca905f94"
     },
     "refs/heads/master": {
       "name": "nimlangserver",
@@ -144,7 +144,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "4025b9699f52b7680df7a2dfc1bc84c347449aff"
+      "rev": "07a31cf9915793cfd1fbde816bb0b9dbca905f94"
     },
     "refs/heads/v0.1.0-wip": {
       "name": "langserver",
@@ -195,12 +195,79 @@
       "backend": "c",
       "ref": "refs/heads/v0.1.0-wip",
       "rev": "1b1cd6fe745e7ec75c6918dbb7bd745bee4eeba7"
+    },
+    "refs/tags/latest": {
+      "name": "nimlangserver",
+      "version": "0.1.0",
+      "author": "The core Nim team",
+      "desc": "Nim language server for IDEs",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "nimlangserver.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "https://github.com/yyoncho/asynctools",
+          "str": "#non-blocking",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#non-blocking"
+          }
+        },
+        {
+          "name": "https://github.com/yyoncho/nim-json-rpc",
+          "str": "#notif-changes",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#notif-changes"
+          }
+        },
+        {
+          "name": "with",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "nimlangserver"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/latest",
+      "rev": "07a31cf9915793cfd1fbde816bb0b9dbca905f94"
     }
   },
   "cudf": {
     "name": "nimlangserver",
     "version": {
-      "1000": "HEAD"
+      "1000": "refs/tags/latest"
     }
   }
 }

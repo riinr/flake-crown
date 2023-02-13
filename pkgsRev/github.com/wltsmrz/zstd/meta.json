@@ -12,7 +12,7 @@
   "refs": {
     "HEAD": {
       "name": "zstd",
-      "version": "0.7.0",
+      "version": "0.8.0",
       "author": "wltsmrz",
       "desc": "Nim bindings for zstd",
       "license": "MIT",
@@ -43,11 +43,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "a171f516031688d94d740098f69fe4ebcb8035c1"
+      "rev": "52f06accebde9a45e0592ef8f4c659b00ce5a14f"
     },
     "refs/heads/develop": {
       "name": "zstd",
-      "version": "0.7.0",
+      "version": "0.8.0",
       "author": "wltsmrz",
       "desc": "Nim bindings for zstd",
       "license": "MIT",
@@ -78,11 +78,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/develop",
-      "rev": "a171f516031688d94d740098f69fe4ebcb8035c1"
+      "rev": "52f06accebde9a45e0592ef8f4c659b00ce5a14f"
     },
     "refs/heads/master": {
       "name": "zstd",
-      "version": "0.7.0",
+      "version": "0.8.0",
       "author": "wltsmrz",
       "desc": "Nim bindings for zstd",
       "license": "MIT",
@@ -113,7 +113,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "930014d469956f6eb687855b7b4c037dca4d1e18"
+      "rev": "52f06accebde9a45e0592ef8f4c659b00ce5a14f"
     },
     "refs/tags/v0.2": {
       "name": "zstd",
@@ -328,6 +328,41 @@
       "backend": "c",
       "ref": "refs/tags/v0.7",
       "rev": "88868d742b7a2edf32fa2141f27b09e659624192"
+    },
+    "refs/tags/v0.8": {
+      "name": "zstd",
+      "version": "0.8.0",
+      "author": "wltsmrz",
+      "desc": "Nim bindings for zstd",
+      "license": "MIT",
+      "skipDirs": [
+        "examples"
+      ],
+      "skipFiles": [
+        "README.md"
+      ],
+      "skipExt": [],
+      "installDirs": [
+        "zstd"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.8",
+      "rev": "52f06accebde9a45e0592ef8f4c659b00ce5a14f"
     }
   },
   "cudf": {
@@ -338,7 +373,8 @@
       "4000": "refs/tags/v0.4",
       "5000": "refs/tags/v0.5",
       "6000": "refs/tags/v0.6",
-      "7000": "refs/tags/v0.7"
+      "7000": "refs/tags/v0.7",
+      "8000": "refs/tags/v0.8"
     }
   }
 }

@@ -52,7 +52,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "9f651f05d56407f63b9334917fecad975bdd49b4"
+      "rev": "6c15958a835b645f3acdc3d1d012b10d0df43454"
     },
     "refs/heads/araq-adapt": {
       "name": "compiler",
@@ -666,6 +666,50 @@
       "backend": "c",
       "ref": "refs/heads/araq-fixes-20865",
       "rev": "b33ff0b60a377ab0e5487c91c537e1e44345b3a2"
+    },
+    "refs/heads/araq-fixes-21306": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v2",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/araq-fixes-21306",
+      "rev": "5e4cbc70086ca6ed96df30bd4f217e521aee13cd"
     },
     "refs/heads/araq-generic-inst-fix": {
       "name": "compiler",
@@ -1539,7 +1583,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/devel",
-      "rev": "9f651f05d56407f63b9334917fecad975bdd49b4"
+      "rev": "6c15958a835b645f3acdc3d1d012b10d0df43454"
     },
     "refs/heads/fix-gensym": {
       "name": "compiler",
@@ -2693,6 +2737,50 @@
       "ref": "refs/heads/pr_iter",
       "rev": "ddbb6b22d672617d919dd7deeb0ea7b858ca9c56"
     },
+    "refs/heads/pr_macrocache": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v2",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/pr_macrocache",
+      "rev": "dc9a79a6c7700ed13e38ee3a0aee17b53fee3335"
+    },
     "refs/heads/pr_macros_default": {
       "name": "nim",
       "version": "1.6.6",
@@ -2943,7 +3031,51 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/pr_refine_raises",
-      "rev": "0767ed2540ba4af9fd7da489785e9510a39c14cd"
+      "rev": "c852ad49c7e40fdc1454552221640acef6fca10b"
+    },
+    "refs/heads/pr_reimpl_methods": {
+      "name": "nim",
+      "version": "1.6.6",
+      "author": "Andreas Rumpf",
+      "desc": "Compiler package providing the compiler sources as a library.",
+      "license": "MIT",
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v2",
+        "drnim",
+        "nimdoc",
+        "testament"
+      ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/pr_reimpl_methods",
+      "rev": "a7830fa4d591c184bddc21ce7b121cd58a988faa"
     },
     "refs/heads/pr_remove_pipeline": {
       "name": "nim",
@@ -3163,9 +3295,9 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/pr_vm_bitabs",
-      "rev": "0e3a5a49b0613bc1ede5c2a42a4dbf3ac04390c2"
+      "rev": "307a5585d212cd91e0ebd7e3da67372f4cc8bb7f"
     },
-    "refs/heads/pr_vtable": {
+    "refs/heads/pr_vm_init": {
       "name": "nim",
       "version": "1.6.6",
       "author": "Andreas Rumpf",
@@ -3206,8 +3338,8 @@
       "binDir": "",
       "srcDir": "",
       "backend": "c",
-      "ref": "refs/heads/pr_vtable",
-      "rev": "aa2bec62c6fcde8cac80a14a4185da4726529f18"
+      "ref": "refs/heads/pr_vm_init",
+      "rev": "bec0183950c85a9fc73aac2fe0fccbc7b65afeac"
     },
     "refs/heads/pr_wasmoved": {
       "name": "nim",
@@ -3251,7 +3383,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/pr_wasmoved",
-      "rev": "2472ce45ee7da3fec80f42174e29a7d11f79d255"
+      "rev": "95b2032f1c91a94883ac7ee5cfa6dc1cc5b8bed2"
     },
     "refs/heads/pr_xmltree": {
       "name": "nim",
@@ -3340,50 +3472,6 @@
       "backend": "c",
       "ref": "refs/heads/revert-21096-fix12122_2",
       "rev": "150dd7c4d154b6fa6e03c7ef0ec263f794f35465"
-    },
-    "refs/heads/ringabout-patch-1": {
-      "name": "nim",
-      "version": "1.6.6",
-      "author": "Andreas Rumpf",
-      "desc": "Compiler package providing the compiler sources as a library.",
-      "license": "MIT",
-      "skipDirs": [
-        "build",
-        "changelogs",
-        "ci",
-        "csources_v1",
-        "drnim",
-        "nimdoc",
-        "testament"
-      ],
-      "skipFiles": [
-        "azure-pipelines.yml",
-        "build_all.bat",
-        "build_all.sh",
-        "build_nimble.bat",
-        "build_nimble.sh",
-        "changelog.md",
-        "koch.nim.cfg",
-        "nimblemeta.json",
-        "readme.md",
-        "security.md"
-      ],
-      "skipExt": [
-        "nim"
-      ],
-      "installDirs": [],
-      "installFiles": [],
-      "installExt": [],
-      "requires": [],
-      "bin": [
-        "compiler/nim",
-        "nimsuggest/nimsuggest"
-      ],
-      "binDir": "",
-      "srcDir": "",
-      "backend": "c",
-      "ref": "refs/heads/ringabout-patch-1",
-      "rev": "80df82e8926884f12f70618eae333910f9b39225"
     },
     "refs/heads/ringabout-patch-2": {
       "name": "nim",
@@ -3717,36 +3805,48 @@
       "rev": "ce295d72431013e469f35ab371f13fdccab3bb78"
     },
     "refs/heads/version-1-6": {
-      "name": "compiler",
+      "name": "nim",
       "version": "1.6.6",
       "author": "Andreas Rumpf",
       "desc": "Compiler package providing the compiler sources as a library.",
       "license": "MIT",
-      "skipDirs": [],
-      "skipFiles": [],
-      "skipExt": [],
-      "installDirs": [
-        "compiler",
-        "nimsuggest"
+      "skipDirs": [
+        "build",
+        "changelogs",
+        "ci",
+        "csources_v1",
+        "drnim",
+        "nimdoc",
+        "testament"
       ],
+      "skipFiles": [
+        "azure-pipelines.yml",
+        "build_all.bat",
+        "build_all.sh",
+        "build_nimble.bat",
+        "build_nimble.sh",
+        "changelog.md",
+        "koch.nim.cfg",
+        "nimblemeta.json",
+        "readme.md",
+        "security.md"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
       "installFiles": [],
       "installExt": [],
-      "requires": [
-        {
-          "name": "nim",
-          "str": ">= 0.14.0",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "0.14.0"
-          }
-        }
+      "requires": [],
+      "bin": [
+        "compiler/nim",
+        "nimsuggest/nimsuggest"
       ],
-      "bin": [],
       "binDir": "",
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/version-1-6",
-      "rev": "e0328e28ee6b3fbfea812ffc2ce435ff76ccbc5a"
+      "rev": "032512cebdd3b0242f20466d19a0ff547f6e6302"
     },
     "refs/heads/version-2-0": {
       "name": "nim",

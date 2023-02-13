@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "norm",
-      "version": "2.6.1",
+      "version": "2.6.2",
       "author": "Constantine Molchanov",
       "desc": "Nim ORM for SQLite and PostgreSQL.",
       "license": "MIT",
@@ -49,11 +49,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "31e230fc7c4f161535d0d69d07a729914f02eaa2"
+      "rev": "4479240e6a3347fa8990839b7240d346c4b686a6"
     },
     "refs/heads/develop": {
       "name": "norm",
-      "version": "2.6.1",
+      "version": "2.6.2",
       "author": "Constantine Molchanov",
       "desc": "Nim ORM for SQLite and PostgreSQL.",
       "license": "MIT",
@@ -89,7 +89,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/develop",
-      "rev": "31e230fc7c4f161535d0d69d07a729914f02eaa2"
+      "rev": "4479240e6a3347fa8990839b7240d346c4b686a6"
     },
     "refs/heads/feature/json": {
       "name": "norm",
@@ -131,7 +131,7 @@
       "ref": "refs/heads/feature/json",
       "rev": "52e5b59eae2dfb93286619989cda3eb37bb7949b"
     },
-    "refs/heads/master": {
+    "refs/heads/fix_sqlite_pragma_issue": {
       "name": "norm",
       "version": "2.6.1",
       "author": "Constantine Molchanov",
@@ -168,8 +168,48 @@
       "binDir": "",
       "srcDir": "src",
       "backend": "c",
+      "ref": "refs/heads/fix_sqlite_pragma_issue",
+      "rev": "8047ff44dedfe24b3db9d2de31180a43261fbb02"
+    },
+    "refs/heads/master": {
+      "name": "norm",
+      "version": "2.6.2",
+      "author": "Constantine Molchanov",
+      "desc": "Nim ORM for SQLite and PostgreSQL.",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "htmldocs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "ndb",
+          "str": ">= 0.19.9",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.9"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "f8de3a194b76db765f5a1d0808717c8878fed57e"
+      "rev": "1bdebdfa4ea64600fd3940d9fdfa0ac697c42393"
     },
     "refs/tags/1.0.0": {
       "name": "norm",
@@ -2084,6 +2124,46 @@
       "backend": "c",
       "ref": "refs/tags/2.6.1",
       "rev": "e918eda5c016bb47a5815807fdff6afab4dd25dc"
+    },
+    "refs/tags/2.6.2": {
+      "name": "norm",
+      "version": "2.6.2",
+      "author": "Constantine Molchanov",
+      "desc": "Nim ORM for SQLite and PostgreSQL.",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "htmldocs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "ndb",
+          "str": ">= 0.19.9",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.9"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.6.2",
+      "rev": "1552b2ec05eb99fa50f733d013bd08f2bc483e0f"
     }
   },
   "cudf": {
@@ -2138,7 +2218,8 @@
       "2005001": "refs/tags/2.5.1",
       "2005002": "refs/tags/2.5.2",
       "2006000": "refs/tags/2.6.0",
-      "2006001": "refs/tags/2.6.1"
+      "2006001": "refs/tags/2.6.1",
+      "2006002": "refs/tags/2.6.2"
     }
   }
 }

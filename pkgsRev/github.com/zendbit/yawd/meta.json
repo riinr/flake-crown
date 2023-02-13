@@ -12,7 +12,7 @@
   "refs": {
     "HEAD": {
       "name": "yawd",
-      "version": "0.0.1",
+      "version": "0.1.0",
       "author": "Amru Rosyada",
       "desc": "YAWD (Yet Another WebDriver) for nim lang.",
       "license": "BSD",
@@ -37,11 +37,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "dafe0428d3de39000e181c48c3ec8e7f0f0b17a8"
+      "rev": "56b24e8ee039188d9aa7c9612ed848c14a3355a3"
     },
     "refs/heads/main": {
       "name": "yawd",
-      "version": "0.0.1",
+      "version": "0.1.0",
       "author": "Amru Rosyada",
       "desc": "YAWD (Yet Another WebDriver) for nim lang.",
       "license": "BSD",
@@ -66,7 +66,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "dafe0428d3de39000e181c48c3ec8e7f0f0b17a8"
+      "rev": "56b24e8ee039188d9aa7c9612ed848c14a3355a3"
     },
     "refs/tags/v0.0.1": {
       "name": "yawd",
@@ -96,12 +96,42 @@
       "backend": "c",
       "ref": "refs/tags/v0.0.1",
       "rev": "dafe0428d3de39000e181c48c3ec8e7f0f0b17a8"
+    },
+    "refs/tags/v0.1.0": {
+      "name": "yawd",
+      "version": "0.1.0",
+      "author": "Amru Rosyada",
+      "desc": "YAWD (Yet Another WebDriver) for nim lang.",
+      "license": "BSD",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.1.0",
+      "rev": "56b24e8ee039188d9aa7c9612ed848c14a3355a3"
     }
   },
   "cudf": {
     "name": "yawd",
     "version": {
-      "1": "refs/tags/v0.0.1"
+      "1": "refs/tags/v0.0.1",
+      "1000": "refs/tags/v0.1.0"
     }
   }
 }

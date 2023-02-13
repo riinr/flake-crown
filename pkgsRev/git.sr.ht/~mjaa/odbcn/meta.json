@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "odbcn",
-      "version": "0.5.1",
+      "version": "0.5.2",
       "author": "Håvard Mjaavatten",
       "desc": "Abstraction of ODBC",
       "license": "MIT",
@@ -43,7 +43,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "a1abf2518f751677f68a4a7dbc9c2783d51550b6"
+      "rev": "f5d06061ba7b62d03c19c3a335971251de1cea1b"
     },
     "refs/heads/feature/new_bindparams": {
       "name": "odbcn",
@@ -80,7 +80,7 @@
     },
     "refs/heads/master": {
       "name": "odbcn",
-      "version": "0.5.1",
+      "version": "0.5.2",
       "author": "Håvard Mjaavatten",
       "desc": "Abstraction of ODBC",
       "license": "MIT",
@@ -109,7 +109,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "a1abf2518f751677f68a4a7dbc9c2783d51550b6"
+      "rev": "f5d06061ba7b62d03c19c3a335971251de1cea1b"
     },
     "refs/tags/v0.1.1": {
       "name": "odbcn",
@@ -506,6 +506,39 @@
       "backend": "c",
       "ref": "refs/tags/v0.5.1",
       "rev": "65fa9809a5c2cfbb2049894cab8c4bc8d77e18ca"
+    },
+    "refs/tags/v0.5.2": {
+      "name": "odbcn",
+      "version": "0.5.2",
+      "author": "Håvard Mjaavatten",
+      "desc": "Abstraction of ODBC",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.2"
+          }
+        }
+      ],
+      "bin": [
+        "odbcn/odbcn_describeqry"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.5.2",
+      "rev": "47d651a52621c78c160f831f2fa682298c4b5abb"
     }
   },
   "cudf": {
@@ -522,7 +555,8 @@
       "4000": "refs/tags/v0.4.0",
       "4001": "refs/tags/v0.4.1",
       "5000": "refs/tags/v0.5.0",
-      "5001": "refs/tags/v0.5.1"
+      "5001": "refs/tags/v0.5.1",
+      "5002": "refs/tags/v0.5.2"
     }
   }
 }

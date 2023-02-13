@@ -15,7 +15,7 @@
   "refs": {
     "HEAD": {
       "name": "parlexgen",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "author": "Joel Lienhard",
       "desc": "parser/lexer generator (LALR)",
       "license": "MIT",
@@ -48,7 +48,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "18bf03ef9d7a17f6ae24ea637acc53e5d57d5147"
+      "rev": "eb1fcd1ab8b442817604aaac4be0777d6defa0f5"
     },
     "refs/heads/devel": {
       "name": "parlexgen",
@@ -89,7 +89,7 @@
     },
     "refs/heads/main": {
       "name": "parlexgen",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "author": "Joel Lienhard",
       "desc": "parser/lexer generator (LALR)",
       "license": "MIT",
@@ -122,7 +122,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "18bf03ef9d7a17f6ae24ea637acc53e5d57d5147"
+      "rev": "eb1fcd1ab8b442817604aaac4be0777d6defa0f5"
     },
     "refs/tags/0.1.0": {
       "name": "parlexgen",
@@ -197,13 +197,51 @@
       "backend": "c",
       "ref": "refs/tags/0.1.1",
       "rev": "18bf03ef9d7a17f6ae24ea637acc53e5d57d5147"
+    },
+    "refs/tags/0.1.2": {
+      "name": "parlexgen",
+      "version": "0.1.2",
+      "author": "Joel Lienhard",
+      "desc": "parser/lexer generator (LALR)",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.6"
+          }
+        },
+        {
+          "name": "fusion",
+          "str": ">= 1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.2",
+      "rev": "eb1fcd1ab8b442817604aaac4be0777d6defa0f5"
     }
   },
   "cudf": {
     "name": "parlexgen",
     "version": {
       "1000": "refs/tags/0.1.0",
-      "1001": "refs/tags/0.1.1"
+      "1001": "refs/tags/0.1.1",
+      "1002": "refs/tags/0.1.2"
     }
   }
 }

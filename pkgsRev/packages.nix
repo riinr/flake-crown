@@ -98,6 +98,7 @@
   "azuretranslate"                        = "/github.com/williamhatcher/azure_translate/meta.json";
   "backoff"                               = "/github.com/CORDEA/backoff/meta.json";
   "badgemaker"                            = "/github.com/ethosa/badgemaker/meta.json";
+  "bag"                                   = "/github.com/openpeep/bag/meta.json";
   "baker"                                 = "/github.com/jasonrbriggs/baker/meta.json";
   "ballenaitcher"                         = "/github.com/juancarlospaco/ballena_itcher/meta.json";
   "ballpark"                              = "/github.com/Mihara/ballpark/meta.json";
@@ -719,6 +720,7 @@
   "i18n"                                  = "/github.com/Parashurama/i18n/meta.json";
   "i3ipc"                                 = "/github.com/FedericoCeratto/i3ipc/meta.json";
   "icon"                                  = "/github.com/bung87/icon/meta.json";
+  "iconim"                                = "/github.com/openpeep/iconim/meta.json";
   "ikeahomesmart"                         = "/github.com/PMunch/ikeahomesmart/meta.json";
   "illwave"                               = "/github.com/ansiwave/illwave/meta.json";
   "illwill"                               = "/github.com/johnnovak/illwill/meta.json";
@@ -821,6 +823,7 @@
   "kslog"                                 = "/github.com/c-blake/kslog/meta.json";
   "kview"                                 = "/github.com/planety/kview/meta.json";
   "kwin"                                  = "/github.com/reactormonk/kwin/meta.json";
+  "labeledtypes"                          = "/github.com/hamidb80/labeledtypes/meta.json";
   "ladder"                                = "/gitlab.com/ryukoposting/ladder/meta.json";
   "lapper"                                = "/github.com/brentp/lapper/meta.json";
   "lapp"                                  = "/gitlab.3dicc.com/gokr/lapp/meta.json";
@@ -883,6 +886,7 @@
   "linearmodels"                          = "/github.com/ayman-albaz/linear_models/meta.json";
   "linenoise"                             = "/github.com/fallingduck/linenoise/meta.json";
   "linuxfb"                               = "/github.com/luked99/linuxfb/meta.json";
+  "lis3dhtr"                              = "/github.com/garrettkinman/lis3dhtr/meta.json";
   "listcomprehension"                     = "/github.com/nim-lang/list_comprehension/meta.json";
   "listenbrainz"                          = "/gitlab.com/tandy1000/listenbrainz/meta.json";
   "listsv"                                = "/github.com/srwiley/listsv/meta.json";
