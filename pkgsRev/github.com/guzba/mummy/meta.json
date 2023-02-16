@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "mummy",
-      "version": "0.2.10",
+      "version": "0.2.11",
       "author": "Ryan Oldenburg",
       "desc": "Multithreaded HTTP + WebSocket server",
       "license": "MIT",
@@ -55,7 +55,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "89d49a1076cb4a2436d44000543bd0a3b069cf55"
+      "rev": "762c1768066db5690e08afc43d91d182de1833f3"
     },
     "refs/heads/dev": {
       "name": "mummy",
@@ -244,7 +244,7 @@
     },
     "refs/heads/master": {
       "name": "mummy",
-      "version": "0.2.10",
+      "version": "0.2.11",
       "author": "Ryan Oldenburg",
       "desc": "Multithreaded HTTP + WebSocket server",
       "license": "MIT",
@@ -285,11 +285,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "89d49a1076cb4a2436d44000543bd0a3b069cf55"
+      "rev": "762c1768066db5690e08afc43d91d182de1833f3"
     },
     "refs/heads/ryan": {
       "name": "mummy",
-      "version": "0.2.10",
+      "version": "0.2.11",
       "author": "Ryan Oldenburg",
       "desc": "Multithreaded HTTP + WebSocket server",
       "license": "MIT",
@@ -330,7 +330,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/ryan",
-      "rev": "13b33ca2bef6316c066e06d29f0a7b9c2a9d3ae5"
+      "rev": "8deeaf0fa206817b5087a36107a4abbdb0a99b8c"
     },
     "refs/tags/0.1.0": {
       "name": "mummy",
@@ -532,6 +532,51 @@
       "backend": "c",
       "ref": "refs/tags/0.2.10",
       "rev": "89d49a1076cb4a2436d44000543bd0a3b069cf55"
+    },
+    "refs/tags/0.2.11": {
+      "name": "mummy",
+      "version": "0.2.11",
+      "author": "Ryan Oldenburg",
+      "desc": "Multithreaded HTTP + WebSocket server",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.8"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        },
+        {
+          "name": "webby",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.2.11",
+      "rev": "762c1768066db5690e08afc43d91d182de1833f3"
     },
     "refs/tags/0.2.3": {
       "name": "mummy",
@@ -857,6 +902,7 @@
       "2000": "refs/tags/0.2.0",
       "2001": "refs/tags/0.2.1",
       "2010": "refs/tags/0.2.10",
+      "2011": "refs/tags/0.2.11",
       "2003": "refs/tags/0.2.3",
       "2004": "refs/tags/0.2.4",
       "2005": "refs/tags/0.2.5",

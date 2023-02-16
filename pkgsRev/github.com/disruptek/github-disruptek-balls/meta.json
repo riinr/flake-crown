@@ -181,7 +181,7 @@
     },
     "refs/heads/v4": {
       "name": "balls",
-      "version": "4.0.16",
+      "version": "4.0.17",
       "author": "disruptek",
       "desc": "a unittest framework with balls 🔴🟡🟢",
       "license": "MIT",
@@ -236,7 +236,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/v4",
-      "rev": "808cf58fdc497cbdfe5f187926bfdab3000ff206"
+      "rev": "0cd6d44539ff965fbe10cb1caf070149a903d912"
     },
     "refs/tags/0.1.0": {
       "name": "testes",
@@ -8139,6 +8139,65 @@
       "ref": "refs/tags/4.0.16",
       "rev": "825d0e7308b92cf8f49d64847b23912893c04c33"
     },
+    "refs/tags/4.0.17": {
+      "name": "balls",
+      "version": "4.0.17",
+      "author": "disruptek",
+      "desc": "a unittest framework with balls 🔴🟡🟢",
+      "license": "MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "balls.nim"
+      ],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "https://github.com/disruptek/grok",
+          "str": ">= 0.5.0 & < 1.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.5.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "1.0.0"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/ups",
+          "str": "< 1.0.0",
+          "ver": {
+            "kind": "verEarlier",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/insideout",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "balls"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/4.0.17",
+      "rev": "c63cad229cc39a6ddb2dd7ea396e937f98f4aa07"
+    },
     "refs/tags/4.0.8": {
       "name": "balls",
       "version": "4.0.8",
@@ -8465,6 +8524,7 @@
       "4000014": "refs/tags/4.0.14",
       "4000015": "refs/tags/4.0.15",
       "4000016": "refs/tags/4.0.16",
+      "4000017": "refs/tags/4.0.17",
       "4000008": "refs/tags/4.0.8",
       "4000009": "refs/tags/4.0.9"
     }

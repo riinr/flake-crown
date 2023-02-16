@@ -140,7 +140,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "f14ada3dcf966b4d265a423bcf6a43fa360c5d20"
+      "rev": "408dcf12bdf44dcd6f9021a6c795c472679d6d02"
     },
     "refs/heads/addraises": {
       "name": "libp2p",
@@ -1312,7 +1312,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/dcutr",
-      "rev": "783efd12fac3cafca0bb5419c6eb8fdf790b7aa6"
+      "rev": "cee7c365c773cc80720f632553c00b57bea3804b"
     },
     "refs/heads/dev/etan/eb-dandelion": {
       "name": "libp2p",
@@ -2625,6 +2625,264 @@
       "ref": "refs/heads/fix/nested-dials",
       "rev": "bf8d7a85e1d68a5e6c8fd57daa093f0acb0b7f98"
     },
+    "refs/heads/fixci": {
+      "name": "libp2p",
+      "version": "1.0.0",
+      "author": "Status Research & Development GmbH",
+      "desc": "LibP2P implementation",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "examples",
+        "Nim",
+        "tools",
+        "scripts",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "libp2p.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "dnsclient",
+          "str": ">= 0.3.0 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": ">= 0.1.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.4"
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.2"
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "3.0.6"
+          }
+        },
+        {
+          "name": "metrics",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "websock",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": ">= 0.0.5 & < 0.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.0.5"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.1.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fixci",
+      "rev": "642dd2f78c956736f5a93e11c7dd5445646b1076"
+    },
+    "refs/heads/fixcilogs": {
+      "name": "libp2p",
+      "version": "1.0.0",
+      "author": "Status Research & Development GmbH",
+      "desc": "LibP2P implementation",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "examples",
+        "Nim",
+        "tools",
+        "scripts",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "libp2p.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "dnsclient",
+          "str": ">= 0.3.0 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": ">= 0.1.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.4"
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.2"
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "3.0.6"
+          }
+        },
+        {
+          "name": "metrics",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "websock",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": ">= 0.0.5 & < 0.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.0.5"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.1.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/fixcilogs",
+      "rev": "dd5d0d31d4c5dc7d3394165acd7d498e2a2eacbd"
+    },
     "refs/heads/fixnimdevel": {
       "name": "libp2p",
       "version": "1.0.0",
@@ -2753,135 +3011,6 @@
       "backend": "c",
       "ref": "refs/heads/fixnimdevel",
       "rev": "d56f498bbdd30010cc9fb2ecd19ab78421f60ccc"
-    },
-    "refs/heads/fixnodelay": {
-      "name": "libp2p",
-      "version": "1.0.0",
-      "author": "Status Research & Development GmbH",
-      "desc": "LibP2P implementation",
-      "license": "MIT",
-      "skipDirs": [
-        "tests",
-        "examples",
-        "Nim",
-        "tools",
-        "scripts",
-        "docs"
-      ],
-      "skipFiles": [],
-      "skipExt": [],
-      "installDirs": [],
-      "installFiles": [
-        "libp2p.nim"
-      ],
-      "installExt": [],
-      "requires": [
-        {
-          "name": "nim",
-          "str": ">= 1.2.0",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "1.2.0"
-          }
-        },
-        {
-          "name": "nimcrypto",
-          "str": ">= 0.4.1",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "0.4.1"
-          }
-        },
-        {
-          "name": "dnsclient",
-          "str": ">= 0.3.0 & < 0.4.0",
-          "ver": {
-            "kind": "verIntersect",
-            "verILeft": {
-              "kind": "verEqLater",
-              "ver": "0.3.0"
-            },
-            "verIRight": {
-              "kind": "verEarlier",
-              "ver": "0.4.0"
-            }
-          }
-        },
-        {
-          "name": "bearssl",
-          "str": ">= 0.1.4",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "0.1.4"
-          }
-        },
-        {
-          "name": "chronicles",
-          "str": ">= 0.10.2",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "0.10.2"
-          }
-        },
-        {
-          "name": "chronos",
-          "str": ">= 3.0.6",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "3.0.6"
-          }
-        },
-        {
-          "name": "metrics",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "secp256k1",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "stew",
-          "str": "#head",
-          "ver": {
-            "kind": "verSpecial",
-            "spe": "#head"
-          }
-        },
-        {
-          "name": "websock",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "unittest2",
-          "str": ">= 0.0.5 & < 0.1.0",
-          "ver": {
-            "kind": "verIntersect",
-            "verILeft": {
-              "kind": "verEqLater",
-              "ver": "0.0.5"
-            },
-            "verIRight": {
-              "kind": "verEarlier",
-              "ver": "0.1.0"
-            }
-          }
-        }
-      ],
-      "bin": [],
-      "binDir": "",
-      "srcDir": "",
-      "backend": "c",
-      "ref": "refs/heads/fixnodelay",
-      "rev": "0c55c2a8261dda9b86b877297e0f1d6f6fa8ac80"
     },
     "refs/heads/fixplaintext": {
       "name": "libp2p",
@@ -3854,7 +3983,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/hole-punching",
-      "rev": "705fcfdd3353216603a1c180eb9f625cbeaa4734"
+      "rev": "922a8a20bc0476a71f734b95113d9856939f04e3"
     },
     "refs/heads/instrumentation-optick": {
       "name": "libp2p",
@@ -5555,6 +5684,135 @@
       "backend": "c",
       "ref": "refs/heads/pubsub-reconnect",
       "rev": "8f90af8a799bfa9710d175caeab046f19b71419b"
+    },
+    "refs/heads/queuedsendbytes": {
+      "name": "libp2p",
+      "version": "1.0.0",
+      "author": "Status Research & Development GmbH",
+      "desc": "LibP2P implementation",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "examples",
+        "Nim",
+        "tools",
+        "scripts",
+        "docs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "libp2p.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.4.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.4.1"
+          }
+        },
+        {
+          "name": "dnsclient",
+          "str": ">= 0.3.0 & < 0.4.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.3.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.4.0"
+            }
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": ">= 0.1.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.4"
+          }
+        },
+        {
+          "name": "chronicles",
+          "str": ">= 0.10.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.2"
+          }
+        },
+        {
+          "name": "chronos",
+          "str": ">= 3.0.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "3.0.6"
+          }
+        },
+        {
+          "name": "metrics",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "secp256k1",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "websock",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": ">= 0.0.5 & < 0.1.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "0.0.5"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "0.1.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/queuedsendbytes",
+      "rev": "ae67a9b3f6a77b1c8aaf2245a44597ecebf7fd7f"
     },
     "refs/heads/quic": {
       "name": "libp2p",
@@ -7885,7 +8143,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/unstable",
-      "rev": "f14ada3dcf966b4d265a423bcf6a43fa360c5d20"
+      "rev": "408dcf12bdf44dcd6f9021a6c795c472679d6d02"
     },
     "refs/heads/upgraderefacto": {
       "name": "libp2p",

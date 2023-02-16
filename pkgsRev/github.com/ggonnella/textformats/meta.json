@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "textformats",
-      "version": "1.2.2",
+      "version": "1.2.3",
       "author": "Giorgio Gonnella",
       "desc": "Easy specification of text formats for structured data",
       "license": "ISC",
@@ -86,11 +86,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "105cb1cb5e5b0a8ea0ebc57de1bebfb6d51dbe2d"
+      "rev": "0f1dabc713eb6e63a8fde53b52c2765b6f03ade0"
     },
     "refs/heads/main": {
       "name": "textformats",
-      "version": "1.2.2",
+      "version": "1.2.3",
       "author": "Giorgio Gonnella",
       "desc": "Easy specification of text formats for structured data",
       "license": "ISC",
@@ -162,7 +162,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "105cb1cb5e5b0a8ea0ebc57de1bebfb6d51dbe2d"
+      "rev": "0f1dabc713eb6e63a8fde53b52c2765b6f03ade0"
     },
     "refs/tags/1.2.0": {
       "name": "textformats",
@@ -532,6 +532,82 @@
       "backend": "c",
       "ref": "refs/tags/v1.2.2",
       "rev": "341798a71d6bfd43b9b604faba0554c0f52375f2"
+    },
+    "refs/tags/v1.2.3": {
+      "name": "textformats",
+      "version": "1.2.3",
+      "author": "Giorgio Gonnella",
+      "desc": "Easy specification of text formats for structured data",
+      "license": "ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": "1.5.19",
+          "ver": {
+            "kind": "verEq",
+            "ver": "1.5.19"
+          }
+        },
+        {
+          "name": "yaml",
+          "str": "0.16.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.16.0"
+          }
+        },
+        {
+          "name": "regex",
+          "str": "0.19.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.19.0"
+          }
+        },
+        {
+          "name": "nimpy",
+          "str": "0.2.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "msgpack4nim",
+          "str": "0.3.1",
+          "ver": {
+            "kind": "verEq",
+            "ver": "0.3.1"
+          }
+        }
+      ],
+      "bin": [
+        "tf_spec",
+        "tf_validate",
+        "tf_decode",
+        "tf_encode"
+      ],
+      "binDir": "cli",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v1.2.3",
+      "rev": "21582760ef24167a27241d0608180b3b0f20910e"
     }
   },
   "cudf": {
@@ -541,7 +617,8 @@
       "1000000": "refs/tags/v1.0.0",
       "1001000": "refs/tags/v1.1.0",
       "1002001": "refs/tags/v1.2.1",
-      "1002002": "refs/tags/v1.2.2"
+      "1002002": "refs/tags/v1.2.2",
+      "1002003": "refs/tags/v1.2.3"
     }
   }
 }
