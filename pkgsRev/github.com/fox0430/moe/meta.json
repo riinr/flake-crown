@@ -69,7 +69,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "60f3747e05389e0f88d1ed8fc95964dfa86270e5"
+      "rev": "1afcd207b059fca2e8d078998506a44de0eca3e5"
     },
     "refs/heads/develop": {
       "name": "moe",
@@ -126,7 +126,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/develop",
-      "rev": "60f3747e05389e0f88d1ed8fc95964dfa86270e5"
+      "rev": "1afcd207b059fca2e8d078998506a44de0eca3e5"
     },
     "refs/heads/init-support-lsp": {
       "name": "moe",
@@ -249,6 +249,63 @@
       "backend": "c",
       "ref": "refs/heads/master",
       "rev": "b246c84fe533d81ecfaab8d3dfccadecef22a2df"
+    },
+    "refs/heads/refactor/suggestionwindow": {
+      "name": "moe",
+      "version": "0.3.0",
+      "author": "fox0430",
+      "desc": "A command lined based text editor",
+      "license": "GPLv3",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.2"
+          }
+        },
+        {
+          "name": "ncurses",
+          "str": ">= 1.0.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.2"
+          }
+        },
+        {
+          "name": "unicodedb",
+          "str": ">= 0.11.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.11.2"
+          }
+        },
+        {
+          "name": "parsetoml",
+          "str": "#bb903611e91584efd03b7327493ade0859eeddea",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#bb903611e91584efd03b7327493ade0859eeddea"
+          }
+        }
+      ],
+      "bin": [
+        "moe"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/refactor/suggestionwindow",
+      "rev": "dfc820226f2cda38b12c01d93256b573745f91ab"
     },
     "refs/heads/remove-ncurses": {
       "name": "moe",

@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "xidoc",
-      "version": "2023.1.9",
+      "version": "2023.2.20",
       "author": "Adam Blažek",
       "desc": "A consistent markup language",
       "license": "GPL-3.0-only",
@@ -57,6 +57,13 @@
             "kind": "verEqLater",
             "ver": "2022.9.3"
           }
+        },
+        {
+          "name": "https://git.sr.ht/~xigoi/heine",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
         }
       ],
       "bin": [
@@ -66,7 +73,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "219f53f8cc85beb22371536716f454df679ef970"
+      "rev": "95bc9b48f88cbaa59bc62e0160c14cea24134e7f"
     },
     "refs/heads/commands-refactor": {
       "name": "xidoc",
@@ -225,7 +232,7 @@
     },
     "refs/heads/master": {
       "name": "xidoc",
-      "version": "2023.1.9",
+      "version": "2023.2.20",
       "author": "Adam Blažek",
       "desc": "A consistent markup language",
       "license": "GPL-3.0-only",
@@ -269,6 +276,13 @@
             "kind": "verEqLater",
             "ver": "2022.9.3"
           }
+        },
+        {
+          "name": "https://git.sr.ht/~xigoi/heine",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
         }
       ],
       "bin": [
@@ -278,7 +292,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "219f53f8cc85beb22371536716f454df679ef970"
+      "rev": "95bc9b48f88cbaa59bc62e0160c14cea24134e7f"
     },
     "refs/heads/named-args": {
       "name": "xidoc",
@@ -3319,6 +3333,70 @@
       "backend": "c",
       "ref": "refs/tags/2023.1.9",
       "rev": "32ec880a629e11617b29e46090ff1fc6e59f01bb"
+    },
+    "refs/tags/2023.2.20": {
+      "name": "xidoc",
+      "version": "2023.2.20",
+      "author": "Adam Blažek",
+      "desc": "A consistent markup language",
+      "license": "GPL-3.0-only",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "aspartame",
+          "str": ">= 2022.9.14",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2022.9.14"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.12",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.12"
+          }
+        },
+        {
+          "name": "matext",
+          "str": ">= 2022.9.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2022.9.3"
+          }
+        },
+        {
+          "name": "https://git.sr.ht/~xigoi/heine",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "xidoc"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2023.2.20",
+      "rev": "258b66c602adda8bad514f2d32a8e8dbc002897e"
     }
   },
   "cudf": {
@@ -3375,7 +3453,8 @@
       "22009003": "refs/tags/2022.9.3",
       "22009006": "refs/tags/2022.9.6",
       "23001008": "refs/tags/2023.1.8",
-      "23001009": "refs/tags/2023.1.9"
+      "23001009": "refs/tags/2023.1.9",
+      "23002020": "refs/tags/2023.2.20"
     }
   }
 }

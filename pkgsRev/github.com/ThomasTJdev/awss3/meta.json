@@ -60,6 +60,76 @@
       "ref": "HEAD",
       "rev": "c89b1952f0919a5da8854f8a5f84d46247675d80"
     },
+    "refs/heads/lantos-lgtm": {
+      "name": "awsS3",
+      "version": "3.0.0",
+      "author": "Thomas T. Jarløv (https://github.com/ThomasTJdev)",
+      "desc": "Amazon S3 REST API (basic)",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "src"
+      ],
+      "installFiles": [
+        "awsS3.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        },
+        {
+          "name": "sigv4",
+          "str": "1.3.0",
+          "ver": {
+            "kind": "verEq",
+            "ver": "1.3.0"
+          }
+        },
+        {
+          "name": "awsSTS",
+          "str": ">= 1.0.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.3"
+          }
+        },
+        {
+          "name": "jsony",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "nimSHA2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "dotenv",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/lantos-lgtm",
+      "rev": "7470571f6b86e7a0b3d5cf46435b16c1ea7c7ba8"
+    },
     "refs/heads/main": {
       "name": "awsS3",
       "version": "2.0.1",

@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "nimjl",
-      "version": "0.7.5",
+      "version": "0.7.6",
       "author": "Regis Caillaud",
       "desc": "Nim Julia bridge",
       "license": "MIT",
@@ -48,11 +48,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "2873619d00b5f803ece5c797a09eae1c9bd0e064"
+      "rev": "b010273dcafa2b76dbe26fb76af361586c4d9069"
     },
     "refs/heads/master": {
       "name": "nimjl",
-      "version": "0.7.5",
+      "version": "0.7.6",
       "author": "Regis Caillaud",
       "desc": "Nim Julia bridge",
       "license": "MIT",
@@ -87,7 +87,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "2873619d00b5f803ece5c797a09eae1c9bd0e064"
+      "rev": "b010273dcafa2b76dbe26fb76af361586c4d9069"
     },
     "refs/tags/v0.3.0": {
       "name": "nimjl",
@@ -1124,6 +1124,45 @@
       "backend": "c",
       "ref": "refs/tags/v0.7.5",
       "rev": "2873619d00b5f803ece5c797a09eae1c9bd0e064"
+    },
+    "refs/tags/v0.7.6": {
+      "name": "nimjl",
+      "version": "0.7.6",
+      "author": "Regis Caillaud",
+      "desc": "Nim Julia bridge",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nimjl.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "arraymancer",
+          "str": ">= 0.7.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v0.7.6",
+      "rev": "b010273dcafa2b76dbe26fb76af361586c4d9069"
     }
   },
   "cudf": {
@@ -1155,7 +1194,8 @@
       "7002": "refs/tags/v0.7.2",
       "7003": "refs/tags/v0.7.3",
       "7004": "refs/tags/v0.7.4",
-      "7005": "refs/tags/v0.7.5"
+      "7005": "refs/tags/v0.7.5",
+      "7006": "refs/tags/v0.7.6"
     }
   }
 }

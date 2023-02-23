@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "sqlite3_abi",
-      "version": "3.34.0",
+      "version": "3.40.1.1",
       "author": "Status Research & Development GmbH",
       "desc": "A wrapper for SQLite",
       "license": "Apache License 2.0 or MIT",
@@ -44,11 +44,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "b99d1fe7709e0df0dd100774c4e9ea2c316272fc"
+      "rev": "362e1bd9f689ad9f5380d9d27f0705b3d4dfc7d3"
     },
     "refs/heads/master": {
       "name": "sqlite3_abi",
-      "version": "3.34.0",
+      "version": "3.40.1.1",
       "author": "Status Research & Development GmbH",
       "desc": "A wrapper for SQLite",
       "license": "Apache License 2.0 or MIT",
@@ -79,13 +79,83 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "b99d1fe7709e0df0dd100774c4e9ea2c316272fc"
+      "rev": "362e1bd9f689ad9f5380d9d27f0705b3d4dfc7d3"
+    },
+    "refs/tags/v3.40.1.0": {
+      "name": "sqlite3_abi",
+      "version": "3.40.1.0",
+      "author": "Status Research & Development GmbH",
+      "desc": "A wrapper for SQLite",
+      "license": "Apache License 2.0 or MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "sqlite3_abi.nim",
+        "sqlite3_abi/sqlite3_gen.nim",
+        "sqlite3_abi/sqlite3.c",
+        "sqlite3_abi/sqlite3.h",
+        "sqlite3_abi.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v3.40.1.0",
+      "rev": "1c8a822274e0dac72979067be136f57c250ee530"
+    },
+    "refs/tags/v3.40.1.1": {
+      "name": "sqlite3_abi",
+      "version": "3.40.1.1",
+      "author": "Status Research & Development GmbH",
+      "desc": "A wrapper for SQLite",
+      "license": "Apache License 2.0 or MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "sqlite3_abi.nim",
+        "sqlite3_abi/sqlite3_gen.nim",
+        "sqlite3_abi/sqlite3.c",
+        "sqlite3_abi/sqlite3.h",
+        "sqlite3_abi.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/v3.40.1.1",
+      "rev": "362e1bd9f689ad9f5380d9d27f0705b3d4dfc7d3"
     }
   },
   "cudf": {
     "name": "sqlite3abi",
     "version": {
-      "3034000": "HEAD"
+      "3040001": "refs/tags/v3.40.1.1"
     }
   }
 }

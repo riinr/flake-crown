@@ -76,7 +76,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "5d3da66e563d21277b57a9b601744273c083a01b"
+      "rev": "1b69b5e8081e6afb748b401f4e28db6056a53c9a"
     },
     "refs/heads/accept-temp": {
       "name": "chronos",
@@ -764,6 +764,67 @@
       "ref": "refs/heads/cleanup-deleted-timers",
       "rev": "d53c069541753c4508d91333dadfecd13b9f2328"
     },
+    "refs/heads/connectlocaladdress": {
+      "name": "chronos",
+      "version": "3.0.11",
+      "author": "Status Research & Development GmbH",
+      "desc": "Networking framework with async/await support",
+      "license": "MIT or Apache License 2.0",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "chronos.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/connectlocaladdress",
+      "rev": "995e8dff6ae489212b06baf0a97063f1edc1e6ab"
+    },
     "refs/heads/datagramrace": {
       "name": "chronos",
       "version": "2.2.2",
@@ -1345,7 +1406,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/futures",
-      "rev": "4c8c990c9cfc322fa9e1cc0c391c4ddd08da1e36"
+      "rev": "cf6be4f4c8435cf5c86d903d6dc55bcf0000611e"
     },
     "refs/heads/gc-orc": {
       "name": "chronos",
@@ -1556,7 +1617,7 @@
       "ref": "refs/heads/interval",
       "rev": "f1e6158fe89dfd9c3b10005b32ca6f7e6004cd09"
     },
-    "refs/heads/ipnet-rework": {
+    "refs/heads/ipnet-fix": {
       "name": "chronos",
       "version": "3.0.11",
       "author": "Status Research & Development GmbH",
@@ -1614,8 +1675,8 @@
       "binDir": "",
       "srcDir": "",
       "backend": "c",
-      "ref": "refs/heads/ipnet-rework",
-      "rev": "9d3da1184a2e2a241012a9c24b3915696b7548b1"
+      "ref": "refs/heads/ipnet-fix",
+      "rev": "f42d98b091fd2889fcb5252b7cd14daa12b0334e"
     },
     "refs/heads/is-public-addr": {
       "name": "chronos",
@@ -1798,7 +1859,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "5d3da66e563d21277b57a9b601744273c083a01b"
+      "rev": "1b69b5e8081e6afb748b401f4e28db6056a53c9a"
     },
     "refs/heads/new-connection-leak": {
       "name": "chronos",
@@ -2619,6 +2680,67 @@
       "ref": "refs/heads/restoretlstest",
       "rev": "69a3dcc89a0b66ba2c01724053f86a13312fc43f"
     },
+    "refs/heads/selectors-refactor": {
+      "name": "chronos",
+      "version": "3.0.11",
+      "author": "Status Research & Development GmbH",
+      "desc": "Networking framework with async/await support",
+      "license": "MIT or Apache License 2.0",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "chronos.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "httputils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "unittest2",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/selectors-refactor",
+      "rev": "8160d5e791606e002559ce318fe2b720a4ba8bd6"
+    },
     "refs/heads/semaphore": {
       "name": "chronos",
       "version": "2.5.2",
@@ -2665,6 +2787,53 @@
       "backend": "c",
       "ref": "refs/heads/semaphore",
       "rev": "491ddff2a2385d8982e86c72e631f9e58bf669e4"
+    },
+    "refs/heads/status-desktop-task-runner": {
+      "name": "chronos",
+      "version": "2.5.2",
+      "author": "Status Research & Development GmbH",
+      "desc": "Chronos",
+      "license": "Apache License 2.0 or MIT",
+      "skipDirs": [
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "chronos.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": "> 1.2.0",
+          "ver": {
+            "kind": "verLater",
+            "ver": "1.2.0"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "bearssl",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/status-desktop-task-runner",
+      "rev": "c066bfcb16482d82ef5b6fdbac85ec8f7565d56c"
     },
     "refs/heads/streamServerBug": {
       "name": "chronos",

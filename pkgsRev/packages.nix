@@ -123,8 +123,10 @@
   "bearssl"                               = "/github.com/status-im/bearssl/meta.json";
   "benchy"                                = "/github.com/treeform/benchy/meta.json";
   "bencode"                               = "/github.com/FedericoCeratto/bencode/meta.json";
+  "bezier"                                = "/github.com/Nycto/bezier/meta.json";
   "bgfxdotnim"                            = "/github.com/zacharycarter/bgfxdotnim/meta.json";
   "bgfx"                                  = "/github.com/Halsys/bgfx/meta.json";
+  "bibletools"                            = "/git.ozzuu.com/thisago/bibletools/meta.json";
   "bibliotecaguarrilla"                   = "/github.com/juancarlospaco/biblioteca_guarrilla/meta.json";
   "bigints"                               = "/github.com/nim-lang/bigints/meta.json";
   "bignum"                                = "/github.com/SciNim/bignum/meta.json";
@@ -534,6 +536,7 @@
   "geocoding"                             = "/github.com/saratchandra92/geocoding/meta.json";
   "geohash"                               = "/github.com/twist-vector/geohash/meta.json";
   "geoip"                                 = "/github.com/achesak/geoip/meta.json";
+  "geolocation"                           = "/github.com/HazeCS/geolocation/meta.json";
   "geomancer"                             = "/github.com/VitorGoatman/geomancer/meta.json";
   "geometrymath"                          = "/github.com/can-lehmann/geometrymath/meta.json";
   "geometryutils"                         = "/github.com/pseudo-random/geometryutils/meta.json";
@@ -820,6 +823,7 @@
   "kmer"                                  = "/github.com/brentp/kmer/meta.json";
   "kmod"                                  = "/github.com/alaviss/kmod/meta.json";
   "kombinator"                            = "/gitlab.com/EchoPouet/kombinator/meta.json";
+  "kroutes"                               = "/github.com/ryukoposting/kroutes/meta.json";
   "kslog"                                 = "/github.com/c-blake/kslog/meta.json";
   "kview"                                 = "/github.com/planety/kview/meta.json";
   "kwin"                                  = "/github.com/reactormonk/kwin/meta.json";
@@ -906,6 +910,7 @@
   "loony"                                 = "/github.com/shayanhabibi/loony/meta.json";
   "looper"                                = "/github.com/planetis-m/looper/meta.json";
   "loopfusion"                            = "/github.com/numforge/loopfusion/meta.json";
+  "lowdb"                                 = "/github.com/PhilippMDoerner/lowdb/meta.json";
   "lq"                                    = "/github.com/madprops/lq/meta.json";
   "lrparser"                              = "/github.com/vanyle/lrparser/lrparser/meta.json";
   "lrucache"                              = "/github.com/jackhftang/lrucache/meta.json";
@@ -1041,6 +1046,7 @@
   "necsus"                                = "/github.com/NecsusECS/necsus/meta.json";
   "neel"                                  = "/github.com/Niminem/neel/meta.json";
   "negamax"                               = "/github.com/JohnAD/negamax/meta.json";
+  "nemini"                                = "/codeberg.org/pswilde/nemini/meta.json";
   "neo"                                   = "/github.com/andreaferretti/neo/meta.json";
   "neoid"                                 = "/github.com/theAkito/neoid/meta.json";
   "nephyr"                                = "/github.com/EmbeddedNim/nephyr/meta.json";
@@ -1272,6 +1278,7 @@
   "nimwebp"                               = "/github.com/tormund/nimwebp/meta.json";
   "nimwin"                                = "/github.com/TriedAngle/nimwin/meta.json";
   "nimword"                               = "/github.com/PhilippMDoerner/nimword/meta.json";
+  "nimx2"                                 = "/github.com/777shuang/nimx2/meta.json";
   "nimx"                                  = "/github.com/yglukhov/nimx/meta.json";
   "nimzbar"                               = "/github.com/genotrance/nimzbar/meta.json";
   "nimzend"                               = "/github.com/metatexx/nimzend/meta.json";

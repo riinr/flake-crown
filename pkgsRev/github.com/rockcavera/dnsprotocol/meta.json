@@ -12,7 +12,7 @@
   "refs": {
     "HEAD": {
       "name": "dnsprotocol",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": "rockcavera",
       "desc": "Domain Name System (DNS) protocol for Nim programming language",
       "license": "MIT",
@@ -44,11 +44,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "d31aa694ac236966bdbb5a6533e8def6fd17ad11"
+      "rev": "d449aa02321dea3aa1187378578600f35fe12d2e"
     },
     "refs/heads/main": {
       "name": "dnsprotocol",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": "rockcavera",
       "desc": "Domain Name System (DNS) protocol for Nim programming language",
       "license": "MIT",
@@ -80,7 +80,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "d31aa694ac236966bdbb5a6533e8def6fd17ad11"
+      "rev": "d449aa02321dea3aa1187378578600f35fe12d2e"
     },
     "refs/heads/version-0.1": {
       "name": "dnsprotocol",
@@ -116,13 +116,86 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/version-0.1",
-      "rev": "d31aa694ac236966bdbb5a6533e8def6fd17ad11"
+      "rev": "e07a8af6bef5f804f12746bf56894de64e573625"
+    },
+    "refs/tags/v0.1.0": {
+      "name": "dnsprotocol",
+      "version": "0.1.0",
+      "author": "rockcavera",
+      "desc": "Domain Name System (DNS) protocol for Nim programming language",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.1.0",
+      "rev": "e07a8af6bef5f804f12746bf56894de64e573625"
+    },
+    "refs/tags/v0.2.0": {
+      "name": "dnsprotocol",
+      "version": "0.2.0",
+      "author": "rockcavera",
+      "desc": "Domain Name System (DNS) protocol for Nim programming language",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "stew",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.2.0",
+      "rev": "d449aa02321dea3aa1187378578600f35fe12d2e"
     }
   },
   "cudf": {
     "name": "dnsprotocol",
     "version": {
-      "1000": "HEAD"
+      "1000": "refs/tags/v0.1.0",
+      "2000": "refs/tags/v0.2.0"
     }
   }
 }

@@ -35,26 +35,18 @@
         },
         {
           "name": "nimib",
-          "str": ">= 0.3.5",
+          "str": ">= 0.3.6",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.3.5"
+            "ver": "0.3.6"
           }
         },
         {
           "name": "jsony",
-          "str": ">= 1.0.3",
+          "str": ">= 1.1.5",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.0.3"
-          }
-        },
-        {
-          "name": "toml_serialization",
-          "str": ">= 0.2.0",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "0.2.0"
+            "ver": "1.1.5"
           }
         }
       ],
@@ -63,7 +55,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "2fc938d751a2c1a0d56ba29b054c90cf859a1213"
+      "rev": "f263e117cc846cb4036d0b1eb56330ca1b8587e5"
     },
     "refs/heads/main": {
       "name": "nimibook",
@@ -88,26 +80,18 @@
         },
         {
           "name": "nimib",
-          "str": ">= 0.3.5",
+          "str": ">= 0.3.6",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.3.5"
+            "ver": "0.3.6"
           }
         },
         {
           "name": "jsony",
-          "str": ">= 1.0.3",
+          "str": ">= 1.1.5",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.0.3"
-          }
-        },
-        {
-          "name": "toml_serialization",
-          "str": ">= 0.2.0",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "0.2.0"
+            "ver": "1.1.5"
           }
         }
       ],
@@ -116,7 +100,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "2fc938d751a2c1a0d56ba29b054c90cf859a1213"
+      "rev": "f263e117cc846cb4036d0b1eb56330ca1b8587e5"
     },
     "refs/tags/v0.2.0": {
       "name": "nimibook",
@@ -207,13 +191,59 @@
       "backend": "c",
       "ref": "refs/tags/v0.2.1",
       "rev": "81733b417ebb4dd5a9d72f59e007084b5ca015b5"
+    },
+    "refs/tags/v0.3.0": {
+      "name": "nimibook",
+      "version": "0.3.0",
+      "author": "Pietro Peterlongo",
+      "desc": "A port of mdbook to nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "nimib",
+          "str": ">= 0.3.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.6"
+          }
+        },
+        {
+          "name": "jsony",
+          "str": ">= 1.1.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.5"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.0",
+      "rev": "797d0c1f910b276c0de2f1b548fd746072889305"
     }
   },
   "cudf": {
     "name": "nimibook",
     "version": {
       "2000": "refs/tags/v0.2.0",
-      "2001": "refs/tags/v0.2.1"
+      "2001": "refs/tags/v0.2.1",
+      "3000": "refs/tags/v0.3.0"
     }
   }
 }
