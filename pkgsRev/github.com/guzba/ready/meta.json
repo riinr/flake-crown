@@ -11,7 +11,7 @@
   "refs": {
     "HEAD": {
       "name": "ready",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": "Ryan Oldenburg",
       "desc": "A Redis client for multi-threaded servers",
       "license": "MIT",
@@ -44,11 +44,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "45f4c0b2e654f95427635e5ce60591c1d0d7888f"
+      "rev": "d53a92631f85939714ab2af90604a438a7902824"
     },
     "refs/heads/master": {
       "name": "ready",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": "Ryan Oldenburg",
       "desc": "A Redis client for multi-threaded servers",
       "license": "MIT",
@@ -81,7 +81,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "45f4c0b2e654f95427635e5ce60591c1d0d7888f"
+      "rev": "d53a92631f85939714ab2af90604a438a7902824"
     },
     "refs/tags/0.1.0": {
       "name": "ready",
@@ -119,12 +119,50 @@
       "backend": "c",
       "ref": "refs/tags/0.1.0",
       "rev": "a7ff603a72fef898208d5ab9a29615429b389a90"
+    },
+    "refs/tags/0.1.1": {
+      "name": "ready",
+      "version": "0.1.1",
+      "author": "Ryan Oldenburg",
+      "desc": "A Redis client for multi-threaded servers",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.10"
+          }
+        },
+        {
+          "name": "waterpark",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.1",
+      "rev": "d53a92631f85939714ab2af90604a438a7902824"
     }
   },
   "cudf": {
     "name": "ready",
     "version": {
-      "1000": "refs/tags/0.1.0"
+      "1000": "refs/tags/0.1.0",
+      "1001": "refs/tags/0.1.1"
     }
   }
 }

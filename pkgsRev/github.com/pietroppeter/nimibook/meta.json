@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "nimibook",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "author": "Pietro Peterlongo",
       "desc": "A port of mdbook to nim",
       "license": "MIT",
@@ -35,10 +35,10 @@
         },
         {
           "name": "nimib",
-          "str": ">= 0.3.6",
+          "str": ">= 0.3.7",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.3.6"
+            "ver": "0.3.7"
           }
         },
         {
@@ -55,11 +55,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "f263e117cc846cb4036d0b1eb56330ca1b8587e5"
+      "rev": "1405553199b12915a502df8b871ffe86dcfc5e91"
     },
     "refs/heads/main": {
       "name": "nimibook",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "author": "Pietro Peterlongo",
       "desc": "A port of mdbook to nim",
       "license": "MIT",
@@ -80,10 +80,10 @@
         },
         {
           "name": "nimib",
-          "str": ">= 0.3.6",
+          "str": ">= 0.3.7",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.3.6"
+            "ver": "0.3.7"
           }
         },
         {
@@ -100,7 +100,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "f263e117cc846cb4036d0b1eb56330ca1b8587e5"
+      "rev": "1405553199b12915a502df8b871ffe86dcfc5e91"
     },
     "refs/tags/v0.2.0": {
       "name": "nimibook",
@@ -236,6 +236,51 @@
       "backend": "c",
       "ref": "refs/tags/v0.3.0",
       "rev": "797d0c1f910b276c0de2f1b548fd746072889305"
+    },
+    "refs/tags/v0.3.1": {
+      "name": "nimibook",
+      "version": "0.3.1",
+      "author": "Pietro Peterlongo",
+      "desc": "A port of mdbook to nim",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "nimib",
+          "str": ">= 0.3.7",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.7"
+          }
+        },
+        {
+          "name": "jsony",
+          "str": ">= 1.1.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.5"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.1",
+      "rev": "1405553199b12915a502df8b871ffe86dcfc5e91"
     }
   },
   "cudf": {
@@ -243,7 +288,8 @@
     "version": {
       "2000": "refs/tags/v0.2.0",
       "2001": "refs/tags/v0.2.1",
-      "3000": "refs/tags/v0.3.0"
+      "3000": "refs/tags/v0.3.0",
+      "3001": "refs/tags/v0.3.1"
     }
   }
 }

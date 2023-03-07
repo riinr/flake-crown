@@ -14,13 +14,11 @@
   "refs": {
     "HEAD": {
       "name": "apt_brain",
-      "version": "1.1.0",
+      "version": "1.4.2",
       "author": "777shuang",
       "desc": "apt for SHARP Brain",
       "license": "GPL-3.0-or-later",
-      "skipDirs": [
-        "packages"
-      ],
+      "skipDirs": [],
       "skipFiles": [
         "package.json"
       ],
@@ -41,18 +39,23 @@
         },
         {
           "name": "puppy",
-          "str": ">= 1.6.0",
+          "str": "any version",
           "ver": {
-            "kind": "verEqLater",
-            "ver": "1.6.0"
+            "kind": "verAny"
           }
         },
         {
           "name": "zippy",
-          "str": ">= 0.10.4",
+          "str": "any version",
           "ver": {
-            "kind": "verEqLater",
-            "ver": "0.10.4"
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/777shuang/Lim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
           }
         }
       ],
@@ -63,17 +66,15 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "1bd7dbc5d32e06912e59dc056211b01c43f4ce8b"
+      "rev": "1d9891dd52c962246473a001f94d93dd9d27811b"
     },
     "refs/heads/main": {
       "name": "apt_brain",
-      "version": "1.1.0",
+      "version": "1.4.2",
       "author": "777shuang",
       "desc": "apt for SHARP Brain",
       "license": "GPL-3.0-or-later",
-      "skipDirs": [
-        "packages"
-      ],
+      "skipDirs": [],
       "skipFiles": [
         "package.json"
       ],
@@ -94,18 +95,23 @@
         },
         {
           "name": "puppy",
-          "str": ">= 1.6.0",
+          "str": "any version",
           "ver": {
-            "kind": "verEqLater",
-            "ver": "1.6.0"
+            "kind": "verAny"
           }
         },
         {
           "name": "zippy",
-          "str": ">= 0.10.4",
+          "str": "any version",
           "ver": {
-            "kind": "verEqLater",
-            "ver": "0.10.4"
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/777shuang/Lim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
           }
         }
       ],
@@ -116,7 +122,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "1bd7dbc5d32e06912e59dc056211b01c43f4ce8b"
+      "rev": "1d9891dd52c962246473a001f94d93dd9d27811b"
     },
     "refs/tags/0.1.0": {
       "rev": "a7297c928e34fc2d532b75c1732dcbd3429e8126",
@@ -498,6 +504,635 @@
       "backend": "c",
       "ref": "refs/tags/1.1.0",
       "rev": "f13d42354fb8ae1282f3a380c2ac679e56e031e3"
+    },
+    "refs/tags/1.2.0": {
+      "name": "apt_brain",
+      "version": "1.2.0",
+      "author": "777shuang",
+      "desc": "apt for SHARP Brain",
+      "license": "GPL-3.0-or-later",
+      "skipDirs": [
+        "packages"
+      ],
+      "skipFiles": [
+        "package.json"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        },
+        {
+          "name": "puppy",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        }
+      ],
+      "bin": [
+        "apt-brain"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.2.0",
+      "rev": "9ab96edf3c4b22f635fe1c35653746498ec40f54"
+    },
+    "refs/tags/1.2.1": {
+      "name": "apt_brain",
+      "version": "1.2.1",
+      "author": "777shuang",
+      "desc": "apt for SHARP Brain",
+      "license": "GPL-3.0-or-later",
+      "skipDirs": [],
+      "skipFiles": [
+        "package.json",
+        "package.nim"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        },
+        {
+          "name": "puppy",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        }
+      ],
+      "bin": [
+        "apt-brain"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.2.1",
+      "rev": "1adec156e4de79e2b915ca32dda4927782198218"
+    },
+    "refs/tags/1.2.2": {
+      "name": "apt_brain",
+      "version": "1.2.2",
+      "author": "777shuang",
+      "desc": "apt for SHARP Brain",
+      "license": "GPL-3.0-or-later",
+      "skipDirs": [],
+      "skipFiles": [
+        "package.json",
+        "package.nim"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        },
+        {
+          "name": "puppy",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        },
+        {
+          "name": "https://github.com/777shuang/Lim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "apt-brain"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.2.2",
+      "rev": "a461d693e812469e3b3e6e23874cc8da53bdee5e"
+    },
+    "refs/tags/1.2.3": {
+      "name": "apt_brain",
+      "version": "1.2.2",
+      "author": "777shuang",
+      "desc": "apt for SHARP Brain",
+      "license": "GPL-3.0-or-later",
+      "skipDirs": [],
+      "skipFiles": [
+        "package.json",
+        "package.nim"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        },
+        {
+          "name": "puppy",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        },
+        {
+          "name": "https://github.com/777shuang/Lim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "apt-brain"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.2.3",
+      "rev": "17b95298d47cbac5a7addd1fa2c7ad0e90a44c64"
+    },
+    "refs/tags/1.3.0": {
+      "name": "apt_brain",
+      "version": "1.3.0",
+      "author": "777shuang",
+      "desc": "apt for SHARP Brain",
+      "license": "GPL-3.0-or-later",
+      "skipDirs": [],
+      "skipFiles": [
+        "package.json",
+        "package.nim"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        },
+        {
+          "name": "puppy",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        },
+        {
+          "name": "https://github.com/777shuang/Lim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "apt-brain"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.3.0",
+      "rev": "2f60f64dba7f6db12f02626473ea382b9b240fb7"
+    },
+    "refs/tags/1.3.1": {
+      "name": "apt_brain",
+      "version": "1.3.1",
+      "author": "777shuang",
+      "desc": "apt for SHARP Brain",
+      "license": "GPL-3.0-or-later",
+      "skipDirs": [],
+      "skipFiles": [
+        "package.json",
+        "package.nim"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        },
+        {
+          "name": "puppy",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        },
+        {
+          "name": "https://github.com/777shuang/Lim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "apt-brain"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.3.1",
+      "rev": "02833c4d6ffe4d45c45594f8f7495362de4b723c"
+    },
+    "refs/tags/1.3.2": {
+      "name": "apt_brain",
+      "version": "1.3.2",
+      "author": "777shuang",
+      "desc": "apt for SHARP Brain",
+      "license": "GPL-3.0-or-later",
+      "skipDirs": [],
+      "skipFiles": [
+        "package.json",
+        "package.nim"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        },
+        {
+          "name": "puppy",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        },
+        {
+          "name": "https://github.com/777shuang/Lim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "apt-brain"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.3.2",
+      "rev": "50456099e447e10b7a8d71098dcf2573cdb9d573"
+    },
+    "refs/tags/1.3.3": {
+      "name": "apt_brain",
+      "version": "1.3.3",
+      "author": "777shuang",
+      "desc": "apt for SHARP Brain",
+      "license": "GPL-3.0-or-later",
+      "skipDirs": [],
+      "skipFiles": [
+        "package.json",
+        "package.nim"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        },
+        {
+          "name": "puppy",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": ">= 0.10.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.10.4"
+          }
+        },
+        {
+          "name": "https://github.com/777shuang/Lim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "apt-brain"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.3.3",
+      "rev": "0f2dfd7b3d738d7b5bd72f9b81738890eb975494"
+    },
+    "refs/tags/1.4.0": {
+      "name": "apt_brain",
+      "version": "1.4.0",
+      "author": "777shuang",
+      "desc": "apt for SHARP Brain",
+      "license": "GPL-3.0-or-later",
+      "skipDirs": [],
+      "skipFiles": [
+        "package.json",
+        "package.nim"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        },
+        {
+          "name": "puppy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/777shuang/Lim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "apt-brain"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.4.0",
+      "rev": "9176bfd9f2777d5abbcdebad38fde657f4aa91d7"
+    },
+    "refs/tags/1.4.1": {
+      "name": "apt_brain",
+      "version": "1.4.1",
+      "author": "777shuang",
+      "desc": "apt for SHARP Brain",
+      "license": "GPL-3.0-or-later",
+      "skipDirs": [],
+      "skipFiles": [
+        "package.json",
+        "package.nim"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        },
+        {
+          "name": "puppy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/777shuang/Lim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "apt-brain"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.4.1",
+      "rev": "f74efdd49644d17748729c756722c266094f71da"
+    },
+    "refs/tags/1.4.2": {
+      "name": "apt_brain",
+      "version": "1.4.2",
+      "author": "777shuang",
+      "desc": "apt for SHARP Brain",
+      "license": "GPL-3.0-or-later",
+      "skipDirs": [],
+      "skipFiles": [
+        "package.json"
+      ],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.2"
+          }
+        },
+        {
+          "name": "puppy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "zippy",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "https://github.com/777shuang/Lim",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "apt-brain"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.4.2",
+      "rev": "1d9891dd52c962246473a001f94d93dd9d27811b"
     }
   },
   "cudf": {
@@ -508,7 +1143,17 @@
       "2004": "refs/tags/0.2.4",
       "2005": "refs/tags/0.2.5",
       "1000000": "refs/tags/1.0.1",
-      "1001000": "refs/tags/1.1.0"
+      "1001000": "refs/tags/1.1.0",
+      "1002000": "refs/tags/1.2.0",
+      "1002001": "refs/tags/1.2.1",
+      "1002002": "refs/tags/1.2.3",
+      "1003000": "refs/tags/1.3.0",
+      "1003001": "refs/tags/1.3.1",
+      "1003002": "refs/tags/1.3.2",
+      "1003003": "refs/tags/1.3.3",
+      "1004000": "refs/tags/1.4.0",
+      "1004001": "refs/tags/1.4.1",
+      "1004002": "refs/tags/1.4.2"
     }
   }
 }

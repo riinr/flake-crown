@@ -15,65 +15,61 @@
   "refs": {
     "HEAD": {
       "name": "ArrayFireNim",
-      "version": "0.2.3",
+      "version": "0.3.2",
       "author": "bitstorm",
-      "desc": "Arrayfire wrapper for nim",
-      "license": "BSD",
+      "desc": "Nim wrapper for ArrayFire",
+      "license": "BSD-3-Clause",
       "skipDirs": [],
       "skipFiles": [],
       "skipExt": [],
       "installDirs": [],
-      "installFiles": [
-        "ArrayFireNim.nim"
-      ],
+      "installFiles": [],
       "installExt": [],
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.2.0",
+          "str": ">= 1.6.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.2.0"
+            "ver": "1.6.0"
           }
         }
       ],
       "bin": [],
       "binDir": "",
-      "srcDir": "",
-      "backend": "c",
+      "srcDir": "src",
+      "backend": "cpp",
       "ref": "HEAD",
-      "rev": "acaef42ba059daa0e495bdf2e34c3fa0f8969409"
+      "rev": "d28d4cf79977b85d8cae0435fe12cdafce57f5fb"
     },
     "refs/heads/master": {
       "name": "ArrayFireNim",
-      "version": "0.2.3",
+      "version": "0.3.2",
       "author": "bitstorm",
-      "desc": "Arrayfire wrapper for nim",
-      "license": "BSD",
+      "desc": "Nim wrapper for ArrayFire",
+      "license": "BSD-3-Clause",
       "skipDirs": [],
       "skipFiles": [],
       "skipExt": [],
       "installDirs": [],
-      "installFiles": [
-        "ArrayFireNim.nim"
-      ],
+      "installFiles": [],
       "installExt": [],
       "requires": [
         {
           "name": "nim",
-          "str": ">= 1.2.0",
+          "str": ">= 1.6.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "1.2.0"
+            "ver": "1.6.0"
           }
         }
       ],
       "bin": [],
       "binDir": "",
-      "srcDir": "",
-      "backend": "c",
+      "srcDir": "src",
+      "backend": "cpp",
       "ref": "refs/heads/master",
-      "rev": "acaef42ba059daa0e495bdf2e34c3fa0f8969409"
+      "rev": "d28d4cf79977b85d8cae0435fe12cdafce57f5fb"
     },
     "refs/tags/v0.1.0": {
       "name": "ArrayFireNim",
@@ -229,6 +225,93 @@
       "backend": "c",
       "ref": "refs/tags/v0.2.3",
       "rev": "58a61e599d34ad5003b0452cab1a0b1f12744999"
+    },
+    "refs/tags/v0.3.0": {
+      "name": "ArrayFireNim",
+      "version": "0.3.0",
+      "author": "bitstorm",
+      "desc": "Nim wrapper for ArrayFire",
+      "license": "BSD-3-Clause",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.10"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "cpp",
+      "ref": "refs/tags/v0.3.0",
+      "rev": "3310a62faaef032f5aeabb04a9292c042e595243"
+    },
+    "refs/tags/v0.3.1": {
+      "name": "ArrayFireNim",
+      "version": "0.3.1",
+      "author": "bitstorm",
+      "desc": "Nim wrapper for ArrayFire",
+      "license": "BSD-3-Clause",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "cpp",
+      "ref": "refs/tags/v0.3.1",
+      "rev": "f176906bf383a7821628b8e4c70444213e4ad718"
+    },
+    "refs/tags/v0.3.2": {
+      "name": "ArrayFireNim",
+      "version": "0.3.2",
+      "author": "bitstorm",
+      "desc": "Nim wrapper for ArrayFire",
+      "license": "BSD-3-Clause",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "cpp",
+      "ref": "refs/tags/v0.3.2",
+      "rev": "d28d4cf79977b85d8cae0435fe12cdafce57f5fb"
     }
   },
   "cudf": {
@@ -237,7 +320,10 @@
       "1000": "refs/tags/v0.2.0",
       "2001": "refs/tags/v0.2.1",
       "2002": "refs/tags/v0.2.2",
-      "2003": "refs/tags/v0.2.3"
+      "2003": "refs/tags/v0.2.3",
+      "3000": "refs/tags/v0.3.0",
+      "3001": "refs/tags/v0.3.1",
+      "3002": "refs/tags/v0.3.2"
     }
   }
 }

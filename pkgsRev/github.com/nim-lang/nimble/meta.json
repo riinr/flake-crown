@@ -43,7 +43,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "47531a69e8a9c499fe467efbd764d9a10c67c02e"
+      "rev": "d59150faf4fd5f4cccd2d63f32d17f0e25e61af2"
     },
     "refs/heads/araq-make-CI-green-again": {
       "name": "nimble",
@@ -290,7 +290,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "47531a69e8a9c499fe467efbd764d9a10c67c02e"
+      "rev": "d59150faf4fd5f4cccd2d63f32d17f0e25e61af2"
     },
     "refs/heads/restore-ssl-verification": {
       "name": "nimble",
@@ -324,6 +324,39 @@
       "backend": "c",
       "ref": "refs/heads/restore-ssl-verification",
       "rev": "827466a4034e601ef13c7ee5b5f083cb9e9515ea"
+    },
+    "refs/heads/revert-1041-patch-1": {
+      "name": "nimble",
+      "version": "0.14.2",
+      "author": "Dominik Picheta",
+      "desc": "Nim package manager.",
+      "license": "BSD",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.13.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.13.0"
+          }
+        }
+      ],
+      "bin": [
+        "nimble"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/revert-1041-patch-1",
+      "rev": "3e82c613f1b0a615a2a8380c14f5af76b45ca774"
     },
     "refs/heads/revert-613-x1": {
       "rev": "d19dffda48c9a4a6b7b6558a987e8c230e42b184",

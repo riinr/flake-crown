@@ -16,7 +16,7 @@
   "refs": {
     "HEAD": {
       "name": "futhark",
-      "version": "0.9.0",
+      "version": "0.9.1",
       "author": "PMunch",
       "desc": "A package which uses libclang to parse C headers into Nim files for easy interop",
       "license": "MIT",
@@ -67,7 +67,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "cd230678306564fd5c3a9b54a9b0cd16284305a4"
+      "rev": "37272fdf689ed5c2fa8673299a5708999b9550fc"
     },
     "refs/heads/int128test": {
       "name": "futhark",
@@ -126,7 +126,7 @@
     },
     "refs/heads/master": {
       "name": "futhark",
-      "version": "0.9.0",
+      "version": "0.9.1",
       "author": "PMunch",
       "desc": "A package which uses libclang to parse C headers into Nim files for easy interop",
       "license": "MIT",
@@ -177,7 +177,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "cd230678306564fd5c3a9b54a9b0cd16284305a4"
+      "rev": "37272fdf689ed5c2fa8673299a5708999b9550fc"
     },
     "refs/heads/packedargs": {
       "name": "futhark",
@@ -1058,6 +1058,116 @@
       "backend": "c",
       "ref": "refs/tags/v0.8.0",
       "rev": "9b9283330c95ce4cd7abb14ed06217ddd5f2fa2c"
+    },
+    "refs/tags/v0.9.0": {
+      "name": "futhark",
+      "version": "0.9.0",
+      "author": "PMunch",
+      "desc": "A package which uses libclang to parse C headers into Nim files for easy interop",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "https://github.com/PMunch/libclang-nim",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "termstyle",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "opir"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.9.0",
+      "rev": "7399516aebcfc6f8e6e32f443d2964db88ae76d6"
+    },
+    "refs/tags/v0.9.1": {
+      "name": "futhark",
+      "version": "0.9.1",
+      "author": "PMunch",
+      "desc": "A package which uses libclang to parse C headers into Nim files for easy interop",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "https://github.com/PMunch/libclang-nim",
+          "str": "#head",
+          "ver": {
+            "kind": "verSpecial",
+            "spe": "#head"
+          }
+        },
+        {
+          "name": "termstyle",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "macroutils",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [
+        "opir"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.9.1",
+      "rev": "76af738690b6ab0f3cbc88bc7046255aeddccd48"
     }
   },
   "cudf": {
@@ -1074,7 +1184,9 @@
       "7002": "refs/tags/v0.7.2",
       "7003": "refs/tags/v0.7.3",
       "7004": "refs/tags/v0.7.4",
-      "8000": "refs/tags/v0.8.0"
+      "8000": "refs/tags/v0.8.0",
+      "9000": "refs/tags/v0.9.0",
+      "9001": "refs/tags/v0.9.1"
     }
   }
 }

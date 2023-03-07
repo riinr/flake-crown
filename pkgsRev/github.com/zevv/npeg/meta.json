@@ -20,7 +20,7 @@
   "refs": {
     "HEAD": {
       "name": "npeg",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "author": "Ico Doornekamp",
       "desc": "a PEG library",
       "license": "MIT",
@@ -47,7 +47,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "22449099d92d8bbd535fcd950287274c8d11daed"
+      "rev": "b7e2f8b6ba00e2d6471c41ef66df08bf903932ed"
     },
     "refs/heads/backtrace": {
       "name": "npeg",
@@ -392,7 +392,7 @@
     },
     "refs/heads/master": {
       "name": "npeg",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "author": "Ico Doornekamp",
       "desc": "a PEG library",
       "license": "MIT",
@@ -419,7 +419,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "22449099d92d8bbd535fcd950287274c8d11daed"
+      "rev": "b7e2f8b6ba00e2d6471c41ef66df08bf903932ed"
     },
     "refs/heads/no-computed-goto-for-large-grammars": {
       "name": "npeg",
@@ -2218,6 +2218,37 @@
       "backend": "c",
       "ref": "refs/tags/1.2.0",
       "rev": "ed7c60e15e0e9f088a77ffa76fa83e9723086173"
+    },
+    "refs/tags/1.2.1": {
+      "name": "npeg",
+      "version": "1.2.1",
+      "author": "Ico Doornekamp",
+      "desc": "a PEG library",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.19.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.19.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.2.1",
+      "rev": "26d62fdc40feb84c6533956dc11d5ee9ea9b6c09"
     }
   },
   "cudf": {
@@ -2264,7 +2295,8 @@
       "1001000": "refs/tags/1.1.0",
       "1001001": "refs/tags/1.1.1",
       "1001002": "refs/tags/1.1.2",
-      "1002000": "refs/tags/1.2.0"
+      "1002000": "refs/tags/1.2.0",
+      "1002001": "refs/tags/1.2.1"
     }
   }
 }

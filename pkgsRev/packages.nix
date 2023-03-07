@@ -29,6 +29,7 @@
   "ansiutils"                             = "/github.com/ansiwave/ansiutils/meta.json";
   "ansiwave"                              = "/github.com/ansiwave/ansiwave/meta.json";
   "antlr4nim"                             = "/github.com/jan0sc/antlr4nim/meta.json";
+  "ants"                                  = "/github.com/elcritch/ants/meta.json";
   "anttweakbar"                           = "/github.com/krux02/anttweakbar/meta.json";
   "anybar"                                = "/github.com/ba0f3/anybar/meta.json";
   "anycase"                               = "/github.com/lamartire/anycase/meta.json";
@@ -234,9 +235,11 @@
   "clibpp"                                = "/github.com/onionhammer/clibpp/meta.json";
   "cliche"                                = "/github.com/juancarlospaco/cliche/meta.json";
   "cligen"                                = "/github.com/c-blake/cligen/meta.json";
+  "climate"                               = "/github.com/moigagoo/climate/meta.json";
   "climenu"                               = "/github.com/MnlPhlp/cli_menu/meta.json";
   "clipper2"                              = "/github.com/scemino/clipper2/meta.json";
   "cliptomania"                           = "/github.com/Guevara-chan/cliptomania/meta.json";
+  "cliseqselector"                        = "/github.com/z-kk/cliseqselector/meta.json";
   "closurecompiler"                       = "/github.com/yglukhov/closure_compiler/meta.json";
   "cloudbet"                              = "/github.com/juancarlospaco/cloudbet/meta.json";
   "clownlimiter"                          = "/github.com/C-NERD/clown_limiter/meta.json";
@@ -643,6 +646,7 @@
   "googleapi"                             = "/github.com/treeform/googleapi/meta.json";
   "googlesearch"                          = "/github.com/xyb/googlesearch/meta.json";
   "googletranslate"                       = "/git.ozzuu.com/thisago/googletranslate/meta.json";
+  "govee"                                 = "/github.com/neroist/govee/meta.json";
   "govee"                                 = "/github.com/nonimportant/govee/meta.json";
   "gplay"                                 = "/github.com/yglukhov/gplay/meta.json";
   "gptcli"                                = "/github.com/HACCKKER/gptcli/meta.json";
@@ -678,6 +682,7 @@
   "hayaa"                                 = "/github.com/angus-lherrou/hayaa/meta.json";
   "hcparse"                               = "/github.com/haxscramper/hcparse/meta.json";
   "hdrawing"                              = "/github.com/haxscramper/hdrawing/meta.json";
+  "heine"                                 = "/git.sr.ht/~xigoi/heine/meta.json";
   "hexclock"                              = "/github.com/RainbowAsteroids/hexclock/meta.json";
   "hex"                                   = "/github.com/esbullington/hex/meta.json";
   "highlight"                             = "/github.com/RaimundHuebel/highlight/meta.json";
@@ -793,6 +798,7 @@
   "jsmn"                                  = "/github.com/OpenSystemsLab/jsmn/meta.json";
   "json2xml"                              = "/github.com/MhedhebiIssam/json2xml/meta.json";
   "jsonbuilder"                           = "/github.com/undecided/json_builder/meta.json";
+  "jsonfmt"                               = "/github.com/fkdosilovic/jsonfmt/meta.json";
   "jsonob"                                = "/github.com/cjxgm/jsonob/meta.json";
   "jsonrpc"                               = "/github.com/status-im/json_rpc/meta.json";
   "jsonschema"                            = "/github.com/PMunch/jsonschema/meta.json";
@@ -823,6 +829,7 @@
   "kmer"                                  = "/github.com/brentp/kmer/meta.json";
   "kmod"                                  = "/github.com/alaviss/kmod/meta.json";
   "kombinator"                            = "/gitlab.com/EchoPouet/kombinator/meta.json";
+  "kraut"                                 = "/github.com/moigagoo/kraut/meta.json";
   "kroutes"                               = "/github.com/ryukoposting/kroutes/meta.json";
   "kslog"                                 = "/github.com/c-blake/kslog/meta.json";
   "kview"                                 = "/github.com/planety/kview/meta.json";
@@ -842,6 +849,7 @@
   "lc"                                    = "/github.com/c-blake/lc/meta.json";
   "lda"                                   = "/github.com/andreaferretti/lda/meta.json";
   "leopard"                               = "/github.com/status-im/leopard/meta.json";
+  "letutils"                              = "/github.com/SirNickolas/letutils/meta.json";
   "leveldb"                               = "/github.com/zielmicha/leveldb/meta.json";
   "libarchibi"                            = "/github.com/juancarlospaco/libarchibi/meta.json";
   "libbacktrace"                          = "/github.com/status-im/libbacktrace/meta.json";
@@ -900,6 +908,7 @@
   "loadenv"                               = "/github.com/xmonader/loadenv/meta.json";
   "locale"                                = "/github.com/Amrykid/nim-locale/locale/meta.json";
   "localize"                              = "/github.com/levovix0/localize/meta.json";
+  "locert"                                = "/github.com/vandot/locert/meta.json";
   "lockfreequeues"                        = "/github.com/elijahr/lockfreequeues/meta.json";
   "loco"                                  = "/github.com/moigagoo/loco/meta.json";
   "lodns"                                 = "/github.com/vandot/lodns/meta.json";
@@ -958,6 +967,7 @@
   "mentat"                                = "/github.com/ruivieira/mentat/meta.json";
   "meow"                                  = "/github.com/disruptek/meow/meta.json";
   "mersal"                                = "/github.com/foxoman/mersal/meta.json";
+  "metacall"                              = "/github.com/metacall/metacall/meta.json";
   "meta"                                  = "/github.com/RainbowAsteroids/meta/meta.json";
   "metar"                                 = "/github.com/flenniken/metar/meta.json";
   "metatag"                               = "/github.com/sauerbread/metatag/meta.json";
@@ -1069,6 +1079,7 @@
   "ngtcp2"                                = "/github.com/status-im/ngtcp2/meta.json";
   "ngxcmod"                               = "/github.com/ba0f3/ngxcmod/meta.json";
   "nhsl"                                  = "/github.com/twist-vector/nhsl/meta.json";
+  "ni18n"                                 = "/github.com/heinthanth/ni18n/meta.json";
   "nico"                                  = "/github.com/ftsf/nico/meta.json";
   "nicoru"                                = "/github.com/fox0430/nicoru/meta.json";
   "nicy"                                  = "/github.com/icyphox/nicy/meta.json";
@@ -1225,6 +1236,7 @@
   "nimpmda"                               = "/github.com/jasonk000/nimpmda/meta.json";
   "nimpng"                                = "/github.com/jangko/nimpng/meta.json";
   "nimpress"                              = "/github.com/mpinese/nimpress/meta.json";
+  "nimprotect"                            = "/github.com/itaymigdal/nimprotect/meta.json";
   "nimpy"                                 = "/github.com/yglukhov/nimpy/meta.json";
   "nimqbittorrent"                        = "/github.com/faulander/nimqbittorrent/meta.json";
   "nimqml"                                = "/github.com/filcuc/nimqml/meta.json";
@@ -1283,6 +1295,7 @@
   "nimzbar"                               = "/github.com/genotrance/nimzbar/meta.json";
   "nimzend"                               = "/github.com/metatexx/nimzend/meta.json";
   "nint128"                               = "/github.com/rockcavera/nint128/meta.json";
+  "nio"                                   = "/github.com/c-blake/nio/meta.json";
   "nio"                                   = "/github.com/KayraG/nio/meta.json";
   "niprefs"                               = "/github.com/Patitotective/niprefs/meta.json";
   "nish"                                  = "/github.com/owlinux1000/nish/meta.json";
@@ -1404,6 +1417,7 @@
   "packy"                                 = "/github.com/xrfez/packy/meta.json";
   "pager"                                 = "/git.sr.ht/~reesmichael1/pager/meta.json";
   "palette"                               = "/github.com/momeemt/palette/meta.json";
+  "palladian"                             = "/github.com/itsumura-h/palladian/meta.json";
   "pantry"                                = "/github.com/ire4ever1190/pantry/meta.json";
   "pape"                                  = "/github.com/hdbg/pape/meta.json";
   "paramidib"                             = "/github.com/pietroppeter/paramidib/meta.json";
@@ -1483,6 +1497,7 @@
   "ponairi"                               = "/github.com/ire4ever1190/ponairi/meta.json";
   "pop3"                                  = "/github.com/FedericoCeratto/pop3/meta.json";
   "porter"                                = "/github.com/iourinski/porter/meta.json";
+  "powernim"                              = "/codeberg.org/wreed/powernim/meta.json";
   "ppm"                                   = "/github.com/LemonHX/ppm/meta.json";
   "preprod"                               = "/github.com/j-a-s-d/preprod/meta.json";
   "preserves"                             = "/git.sr.ht/~ehmry/preserves/meta.json";
@@ -1491,6 +1506,7 @@
   "prettystr"                             = "/github.com/prettybauble/prettystr/meta.json";
   "prettyvec"                             = "/github.com/prettybauble/prettyvec/meta.json";
   "pricecsv"                              = "/git.ozzuu.com/thisago/pricecsv/meta.json";
+  "primes"                                = "/github.com/wokibe/primes/meta.json";
   "primme"                                = "/github.com/jxy/primme/meta.json";
   "printdebug"                            = "/github.com/juancarlospaco/printdebug/meta.json";
   "print"                                 = "/github.com/treeform/print/meta.json";
@@ -1623,17 +1639,20 @@
   "ruby"                                  = "/github.com/ryukoposting/ruby/meta.json";
   "runeterradecks"                        = "/github.com/SolitudeSF/runeterra_decks/meta.json";
   "runexe"                                = "/github.com/V0idMatr1x/run_exe/meta.json";
+  "runned"                                = "/github.com/Gael-Lopes-Da-Silva/runned/meta.json";
   "rwlocks"                               = "/github.com/tdely/rwlocks/meta.json";
   "rxnim"                                 = "/github.com/nortero-code/rx_nim/meta.json";
   "safeset"                               = "/github.com/avahe-kellenberger/safeset/meta.json";
   "sam"                                   = "/github.com/OpenSystemsLab/sam/meta.json";
   "sampletodolist"                        = "/github.com/momeemt/sampletodolist/meta.json";
+  "samprotocol"                           = "/github.com/gabbhack/sam_protocol/meta.json";
   "samson"                                = "/github.com/GULPF/samson/meta.json";
   "sas"                                   = "/github.com/xcodz-dot/sas/meta.json";
   "sass"                                  = "/github.com/dom96/sass/meta.json";
   "saya"                                  = "/github.com/Ethosa/saya/meta.json";
   "sayhissatsuwaza"                       = "/github.com/jiro4989/sayhissatsuwaza/meta.json";
   "sbttl"                                 = "/github.com/hamidb80/sbttl/meta.json";
+  "scfg"                                  = "/codeberg.org/xoich/scfg/meta.json";
   "scgi"                                  = "/github.com/nim-lang/scgi/meta.json";
   "schedules"                             = "/github.com/soasme/schedules/meta.json";
   "science"                               = "/github.com/ruivieira/science/meta.json";
@@ -1737,6 +1756,7 @@
   "snekim"                                = "/codeberg.org/annaaurora/snekim/meta.json";
   "snip"                                  = "/github.com/genotrance/snip/meta.json";
   "snorlogue"                             = "/github.com/PhilippMDoerner/snorlogue/meta.json";
+  "socks5"                                = "/github.com/FedericoCeratto/socks5/meta.json";
   "socks"                                 = "/github.com/FedericoCeratto/socks/meta.json";
   "sodium"                                = "/github.com/zielmicha/sodium/meta.json";
   "sol"                                   = "/github.com/davidgarland/sol/meta.json";
@@ -1761,6 +1781,7 @@
   "sphinx"                                = "/github.com/Araq/sphinx/meta.json";
   "spills"                                = "/github.com/andreaferretti/spills/meta.json";
   "spinner"                               = "/github.com/tonogram/spinner/meta.json";
+  "spinners"                              = "/github.com/thechampagne/spinners/meta.json";
   "spinny"                                = "/github.com/Yardanico/spinny/meta.json";
   "splitmix64"                            = "/github.com/IcedQuinn/splitmix64/meta.json";
   "spotify"                               = "/github.com/CORDEA/spotify/meta.json";
@@ -1966,6 +1987,7 @@
   "unalix"                                = "/github.com/AmanoTeam/unalix/meta.json";
   "unchained"                             = "/github.com/SciNim/unchained/meta.json";
   "uncomment"                             = "/github.com/hamidb80/uncomment/meta.json";
+  "unibs"                                 = "/github.com/choltreppe/unibs/meta.json";
   "unicodedb"                             = "/github.com/nitely/unicodedb/meta.json";
   "unicodenumbers"                        = "/github.com/Aearnus/unicode_numbers/meta.json";
   "unicodeplus"                           = "/github.com/nitely/unicodeplus/meta.json";
@@ -2014,6 +2036,7 @@
   "vecmath"                               = "/github.com/barcharcraz/vecmath/meta.json";
   "vector"                                = "/github.com/tontinton/vector/meta.json";
   "vectors"                               = "/github.com/blamestross/vectors/meta.json";
+  "versicles"                             = "/git.ozzuu.com/thisago/versicles/meta.json";
   "vidhdr"                                = "/github.com/achesak/vidhdr/meta.json";
   "vikunja"                               = "/github.com/ruivieira/vikunja/meta.json";
   "vimeo"                                 = "/git.ozzuu.com/thisago/vimeo/meta.json";

@@ -15,7 +15,7 @@
   "refs": {
     "HEAD": {
       "name": "nimib",
-      "version": "0.3.7",
+      "version": "0.3.9",
       "author": "Pietro Peterlongo & Hugo Granström",
       "desc": "nimib 🐳 - nim 👑 driven ⛵ publishing ✍",
       "license": "MIT",
@@ -80,7 +80,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "d72664c2d3fada34b878f14e8b40d1298fcee13d"
+      "rev": "dd7217021c11cb2aadc7c24de1ebfba27ac6b4cf"
     },
     "refs/heads/add-contributing-md": {
       "name": "nimib",
@@ -511,7 +511,7 @@
     },
     "refs/heads/main": {
       "name": "nimib",
-      "version": "0.3.7",
+      "version": "0.3.9",
       "author": "Pietro Peterlongo & Hugo Granström",
       "desc": "nimib 🐳 - nim 👑 driven ⛵ publishing ✍",
       "license": "MIT",
@@ -576,7 +576,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "d72664c2d3fada34b878f14e8b40d1298fcee13d"
+      "rev": "dd7217021c11cb2aadc7c24de1ebfba27ac6b4cf"
     },
     "refs/heads/pietroppeter-add-devel-ci": {
       "name": "nimib",
@@ -1879,6 +1879,144 @@
       "backend": "c",
       "ref": "refs/tags/v0.3.6",
       "rev": "e25ee44e99481cf10947f5ab760d1434e457322d"
+    },
+    "refs/tags/v0.3.7": {
+      "name": "nimib",
+      "version": "0.3.7",
+      "author": "Pietro Peterlongo & Hugo Granström",
+      "desc": "nimib 🐳 - nim 👑 driven ⛵ publishing ✍",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "tempfile",
+          "str": ">= 0.1.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.6"
+          }
+        },
+        {
+          "name": "markdown",
+          "str": ">= 0.8.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.8.1"
+          }
+        },
+        {
+          "name": "mustache",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "parsetoml",
+          "str": ">= 0.7.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7.0"
+          }
+        },
+        {
+          "name": "jsony",
+          "str": ">= 1.1.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.5"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.7",
+      "rev": "d144ac5efb8db8d1667372972c4653e1b13fbf0e"
+    },
+    "refs/tags/v0.3.8": {
+      "name": "nimib",
+      "version": "0.3.8",
+      "author": "Pietro Peterlongo & Hugo Granström",
+      "desc": "nimib 🐳 - nim 👑 driven ⛵ publishing ✍",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "tempfile",
+          "str": ">= 0.1.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.6"
+          }
+        },
+        {
+          "name": "markdown",
+          "str": ">= 0.8.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.8.1"
+          }
+        },
+        {
+          "name": "mustache",
+          "str": ">= 0.2.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.1"
+          }
+        },
+        {
+          "name": "parsetoml",
+          "str": ">= 0.7.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.7.0"
+          }
+        },
+        {
+          "name": "jsony",
+          "str": ">= 1.1.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1.5"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.3.8",
+      "rev": "ed0775f556dc8bf5965cef4e0fe564eafa7db5b4"
     }
   },
   "cudf": {
@@ -1900,7 +2038,9 @@
       "3003": "refs/tags/v0.3.3",
       "3004": "refs/tags/v0.3.4",
       "3005": "refs/tags/v0.3.5",
-      "3006": "refs/tags/v0.3.6"
+      "3006": "refs/tags/v0.3.6",
+      "3007": "refs/tags/v0.3.7",
+      "3008": "refs/tags/v0.3.8"
     }
   }
 }

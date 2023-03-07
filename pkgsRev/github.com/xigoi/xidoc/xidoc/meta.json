@@ -9,11 +9,11 @@
   ],
   "description": "A consistent markup language",
   "license": "GPL-3.0",
-  "web": "http://xidoc.nim.town/",
+  "web": "https://xidoc.nim.town/",
   "refs": {
     "HEAD": {
       "name": "xidoc",
-      "version": "2023.2.20",
+      "version": "2023.301.0",
       "author": "Adam Blažek",
       "desc": "A consistent markup language",
       "license": "GPL-3.0-only",
@@ -59,10 +59,11 @@
           }
         },
         {
-          "name": "https://git.sr.ht/~xigoi/heine",
-          "str": "any version",
+          "name": "heine",
+          "str": ">= 2023.225.2",
           "ver": {
-            "kind": "verAny"
+            "kind": "verEqLater",
+            "ver": "2023.225.2"
           }
         }
       ],
@@ -73,7 +74,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "95bc9b48f88cbaa59bc62e0160c14cea24134e7f"
+      "rev": "cba7e7bed1f82ada084471d2888dd6ee5f39890c"
     },
     "refs/heads/commands-refactor": {
       "name": "xidoc",
@@ -232,7 +233,7 @@
     },
     "refs/heads/master": {
       "name": "xidoc",
-      "version": "2023.2.20",
+      "version": "2023.301.0",
       "author": "Adam Blažek",
       "desc": "A consistent markup language",
       "license": "GPL-3.0-only",
@@ -278,10 +279,11 @@
           }
         },
         {
-          "name": "https://git.sr.ht/~xigoi/heine",
-          "str": "any version",
+          "name": "heine",
+          "str": ">= 2023.225.2",
           "ver": {
-            "kind": "verAny"
+            "kind": "verEqLater",
+            "ver": "2023.225.2"
           }
         }
       ],
@@ -292,7 +294,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "95bc9b48f88cbaa59bc62e0160c14cea24134e7f"
+      "rev": "cba7e7bed1f82ada084471d2888dd6ee5f39890c"
     },
     "refs/heads/named-args": {
       "name": "xidoc",
@@ -3397,6 +3399,71 @@
       "backend": "c",
       "ref": "refs/tags/2023.2.20",
       "rev": "258b66c602adda8bad514f2d32a8e8dbc002897e"
+    },
+    "refs/tags/2023.301.0": {
+      "name": "xidoc",
+      "version": "2023.301.0",
+      "author": "Adam Blažek",
+      "desc": "A consistent markup language",
+      "license": "GPL-3.0-only",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.8"
+          }
+        },
+        {
+          "name": "aspartame",
+          "str": ">= 2022.9.14",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2022.9.14"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.12",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.12"
+          }
+        },
+        {
+          "name": "matext",
+          "str": ">= 2022.9.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2022.9.3"
+          }
+        },
+        {
+          "name": "heine",
+          "str": ">= 2023.225.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2023.225.2"
+          }
+        }
+      ],
+      "bin": [
+        "xidoc"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2023.301.0",
+      "rev": "e8ac5bb78b28baac12c43447d21389897db74464"
     }
   },
   "cudf": {
@@ -3454,7 +3521,8 @@
       "22009006": "refs/tags/2022.9.6",
       "23001008": "refs/tags/2023.1.8",
       "23001009": "refs/tags/2023.1.9",
-      "23002020": "refs/tags/2023.2.20"
+      "23002020": "refs/tags/2023.2.20",
+      "23301000": "refs/tags/2023.301.0"
     }
   }
 }

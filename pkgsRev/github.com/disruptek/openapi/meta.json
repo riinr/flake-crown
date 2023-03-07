@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "openapi",
-      "version": "3.3.1",
+      "version": "4.0.0",
       "author": "disruptek",
       "desc": "OpenAPI Code Generator",
       "license": "MIT",
@@ -22,7 +22,9 @@
       "skipFiles": [],
       "skipExt": [],
       "installDirs": [],
-      "installFiles": [],
+      "installFiles": [
+        "openapi.nim"
+      ],
       "installExt": [],
       "requires": [
         {
@@ -50,12 +52,12 @@
         },
         {
           "name": "https://github.com/disruptek/rest.git",
-          "str": ">= 1.0.3 & < 2.0.0",
+          "str": ">= 1.0.5 & < 2.0.0",
           "ver": {
             "kind": "verIntersect",
             "verILeft": {
               "kind": "verEqLater",
-              "ver": "1.0.3"
+              "ver": "1.0.5"
             },
             "verIRight": {
               "kind": "verEarlier",
@@ -66,10 +68,10 @@
       ],
       "bin": [],
       "binDir": "",
-      "srcDir": "src",
+      "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "6a4424fc184c61781b16d5f75cdd3d809736673f"
+      "rev": "65f77486593e27cfd85f622b7eb04ce25af28885"
     },
     "refs/heads/devel": {
       "name": "openapi",
@@ -126,7 +128,7 @@
     },
     "refs/heads/master": {
       "name": "openapi",
-      "version": "3.3.1",
+      "version": "4.0.0",
       "author": "disruptek",
       "desc": "OpenAPI Code Generator",
       "license": "MIT",
@@ -134,7 +136,9 @@
       "skipFiles": [],
       "skipExt": [],
       "installDirs": [],
-      "installFiles": [],
+      "installFiles": [
+        "openapi.nim"
+      ],
       "installExt": [],
       "requires": [
         {
@@ -162,12 +166,12 @@
         },
         {
           "name": "https://github.com/disruptek/rest.git",
-          "str": ">= 1.0.3 & < 2.0.0",
+          "str": ">= 1.0.5 & < 2.0.0",
           "ver": {
             "kind": "verIntersect",
             "verILeft": {
               "kind": "verEqLater",
-              "ver": "1.0.3"
+              "ver": "1.0.5"
             },
             "verIRight": {
               "kind": "verEarlier",
@@ -178,10 +182,10 @@
       ],
       "bin": [],
       "binDir": "",
-      "srcDir": "src",
+      "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "6a4424fc184c61781b16d5f75cdd3d809736673f"
+      "rev": "65f77486593e27cfd85f622b7eb04ce25af28885"
     },
     "refs/tags/1.0.0": {
       "name": "openapi",
@@ -1256,6 +1260,67 @@
       "backend": "c",
       "ref": "refs/tags/3.3.1",
       "rev": "b6b4a861acd968abd297e79a9b98d939e93c39b2"
+    },
+    "refs/tags/4.0.0": {
+      "name": "openapi",
+      "version": "4.0.0",
+      "author": "disruptek",
+      "desc": "OpenAPI Code Generator",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "openapi.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "npeg",
+          "str": "< 1.0.0",
+          "ver": {
+            "kind": "verEarlier",
+            "ver": "1.0.0"
+          }
+        },
+        {
+          "name": "foreach",
+          "str": ">= 1.0.1 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.1"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/rest.git",
+          "str": ">= 1.0.5 & < 2.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "1.0.5"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "2.0.0"
+            }
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/4.0.0",
+      "rev": "b22f23de143cc550b4a322bf022893caa8e5bacc"
     }
   },
   "cudf": {
@@ -1281,7 +1346,8 @@
       "3002001": "refs/tags/3.2.1",
       "3002002": "refs/tags/3.2.2",
       "3003000": "refs/tags/3.3.0",
-      "3003001": "refs/tags/3.3.1"
+      "3003001": "refs/tags/3.3.1",
+      "4000000": "refs/tags/4.0.0"
     }
   }
 }

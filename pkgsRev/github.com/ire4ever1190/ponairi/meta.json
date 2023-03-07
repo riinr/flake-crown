@@ -14,7 +14,7 @@
   "refs": {
     "HEAD": {
       "name": "ponairi",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": "Jake Leahy",
       "desc": "Simple ORM for sqlite",
       "license": "MIT",
@@ -34,11 +34,11 @@
           }
         },
         {
-          "name": "https://github.com/PhilippMDoerner/ndb.nim",
-          "str": "#59043f7",
+          "name": "lowdb",
+          "str": ">= 0.1.1",
           "ver": {
-            "kind": "verSpecial",
-            "spe": "#59043f7"
+            "kind": "verEqLater",
+            "ver": "0.1.1"
           }
         }
       ],
@@ -47,11 +47,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "0b413a1f4d2fd506ba86cd81fb60349c2c553120"
+      "rev": "91304287482064d4c71edbaeadd5d6fe0baa5e92"
     },
     "refs/heads/master": {
       "name": "ponairi",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": "Jake Leahy",
       "desc": "Simple ORM for sqlite",
       "license": "MIT",
@@ -71,11 +71,11 @@
           }
         },
         {
-          "name": "https://github.com/PhilippMDoerner/ndb.nim",
-          "str": "#59043f7",
+          "name": "lowdb",
+          "str": ">= 0.1.1",
           "ver": {
-            "kind": "verSpecial",
-            "spe": "#59043f7"
+            "kind": "verEqLater",
+            "ver": "0.1.1"
           }
         }
       ],
@@ -84,7 +84,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "0b413a1f4d2fd506ba86cd81fb60349c2c553120"
+      "rev": "91304287482064d4c71edbaeadd5d6fe0baa5e92"
     },
     "refs/heads/query-builder": {
       "name": "ponairi",
@@ -159,12 +159,50 @@
       "backend": "c",
       "ref": "refs/tags/0.1.0",
       "rev": "b0cc969856fc8164ef810aaca84ffca85c6907fa"
+    },
+    "refs/tags/0.2.0": {
+      "name": "ponairi",
+      "version": "0.2.0",
+      "author": "Jake Leahy",
+      "desc": "Simple ORM for sqlite",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "lowdb",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.2.0",
+      "rev": "713038b27376e9009a8fcecd57fda44577b9ed71"
     }
   },
   "cudf": {
     "name": "ponairi",
     "version": {
-      "1000": "refs/tags/0.1.0"
+      "1000": "refs/tags/0.1.0",
+      "2000": "refs/tags/0.2.0"
     }
   }
 }

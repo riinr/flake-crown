@@ -62,7 +62,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "32c6139db04905ab2596e66846cd5911b461939d"
+      "rev": "5418c93c56ae6e56a5058b0be7e88cdc818f9fbf"
     },
     "refs/heads/benchmarks": {
       "name": "karax",
@@ -242,7 +242,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "32c6139db04905ab2596e66846cd5911b461939d"
+      "rev": "5418c93c56ae6e56a5058b0be7e88cdc818f9fbf"
     },
     "refs/heads/nextgen": {
       "name": "karax",
@@ -886,6 +886,58 @@
       "backend": "c",
       "ref": "refs/tags/1.2.2",
       "rev": "559dde99c7615282ad5e40a4ebc9b615306a6b95"
+    },
+    "refs/tags/1.2.3": {
+      "name": "karax",
+      "version": "1.2.3",
+      "author": "Andreas Rumpf",
+      "desc": "Karax is a framework for developing single page applications in Nim.",
+      "license": "MIT",
+      "skipDirs": [
+        "examples",
+        "experiments",
+        "tests"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 0.18.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.18.0"
+          }
+        },
+        {
+          "name": "ws",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "dotenv",
+          "str": ">= 2.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "2.0.0"
+          }
+        }
+      ],
+      "bin": [
+        "karax/tools/karun"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/1.2.3",
+      "rev": "5418c93c56ae6e56a5058b0be7e88cdc818f9fbf"
     }
   },
   "cudf": {
@@ -899,7 +951,8 @@
       "1001002": "refs/tags/1.1.2",
       "1001003": "refs/tags/1.1.3",
       "1002001": "refs/tags/1.2.1",
-      "1002002": "refs/tags/1.2.2"
+      "1002002": "refs/tags/1.2.2",
+      "1002003": "refs/tags/1.2.3"
     }
   }
 }

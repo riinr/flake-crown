@@ -17,7 +17,7 @@
   "refs": {
     "HEAD": {
       "name": "allographer",
-      "version": "0.24.0",
+      "version": "0.24.1",
       "author": "Hidenobu Itsumura @dumblepytech1 as 'medy'",
       "desc": "A Nim query builder library inspired by Laravel/PHP and Orator/Python",
       "license": "MIT",
@@ -42,7 +42,36 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "daad04d4c60332044e2e4ffa8801c0b185ba4968"
+      "rev": "e89b66458e5d79f5a08a852f970e70e1959da4d9"
+    },
+    "refs/heads/226-support-surrealdb": {
+      "name": "allographer",
+      "version": "0.24.1",
+      "author": "Hidenobu Itsumura @dumblepytech1 as 'medy'",
+      "desc": "A Nim query builder library inspired by Laravel/PHP and Orator/Python",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/heads/226-support-surrealdb",
+      "rev": "e89b66458e5d79f5a08a852f970e70e1959da4d9"
     },
     "refs/heads/fix_async_pg_structure": {
       "name": "allographer",
@@ -105,7 +134,7 @@
     },
     "refs/heads/main": {
       "name": "allographer",
-      "version": "0.24.0",
+      "version": "0.24.1",
       "author": "Hidenobu Itsumura @dumblepytech1 as 'medy'",
       "desc": "A Nim query builder library inspired by Laravel/PHP and Orator/Python",
       "license": "MIT",
@@ -130,7 +159,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "daad04d4c60332044e2e4ffa8801c0b185ba4968"
+      "rev": "e89b66458e5d79f5a08a852f970e70e1959da4d9"
     },
     "refs/tags/v0.11.0": {
       "name": "allographer",
@@ -1800,6 +1829,35 @@
       "ref": "refs/tags/v0.24.0",
       "rev": "aa0c5c06972782fae63418683771438d02bdd789"
     },
+    "refs/tags/v0.24.1": {
+      "name": "allographer",
+      "version": "0.24.1",
+      "author": "Hidenobu Itsumura @dumblepytech1 as 'medy'",
+      "desc": "A Nim query builder library inspired by Laravel/PHP and Orator/Python",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.24.1",
+      "rev": "e89b66458e5d79f5a08a852f970e70e1959da4d9"
+    },
     "refs/tags/v0.7.0": {
       "name": "allographer",
       "version": "0.7.1",
@@ -2092,6 +2150,7 @@
       "23003": "refs/tags/v0.23.3",
       "23004": "refs/tags/v0.23.4",
       "24000": "refs/tags/v0.24.0",
+      "24001": "refs/tags/v0.24.1",
       "7001": "refs/tags/v0.7.1",
       "7002": "refs/tags/v0.7.2",
       "8000": "refs/tags/v0.8.0",

@@ -16,7 +16,7 @@
   "refs": {
     "HEAD": {
       "name": "bump",
-      "version": "1.8.32",
+      "version": "1.8.33",
       "author": "disruptek",
       "desc": "a tiny tool to bump nimble versions",
       "license": "MIT",
@@ -48,12 +48,12 @@
         },
         {
           "name": "https://github.com/disruptek/cligen",
-          "str": ">= 2.0.1 & < 3.0.0",
+          "str": ">= 2.0.2 & < 3.0.0",
           "ver": {
             "kind": "verIntersect",
             "verILeft": {
               "kind": "verEqLater",
-              "ver": "2.0.1"
+              "ver": "2.0.2"
             },
             "verIRight": {
               "kind": "verEarlier",
@@ -69,11 +69,11 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "24bdc0d625f47ffbeabaacede140fd1731b30dcb"
+      "rev": "5eb03226235aba6023bcef39d15a6245a670227e"
     },
     "refs/heads/master": {
       "name": "bump",
-      "version": "1.8.32",
+      "version": "1.8.33",
       "author": "disruptek",
       "desc": "a tiny tool to bump nimble versions",
       "license": "MIT",
@@ -105,12 +105,12 @@
         },
         {
           "name": "https://github.com/disruptek/cligen",
-          "str": ">= 2.0.1 & < 3.0.0",
+          "str": ">= 2.0.2 & < 3.0.0",
           "ver": {
             "kind": "verIntersect",
             "verILeft": {
               "kind": "verEqLater",
-              "ver": "2.0.1"
+              "ver": "2.0.2"
             },
             "verIRight": {
               "kind": "verEarlier",
@@ -126,7 +126,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "24bdc0d625f47ffbeabaacede140fd1731b30dcb"
+      "rev": "5eb03226235aba6023bcef39d15a6245a670227e"
     },
     "refs/tags/1.0.0": {
       "name": "bump",
@@ -2905,6 +2905,63 @@
       "ref": "refs/tags/1.8.32",
       "rev": "010bdbe459bdd6dc81981ba3c93bc8232f19266b"
     },
+    "refs/tags/1.8.33": {
+      "name": "bump",
+      "version": "1.8.33",
+      "author": "disruptek",
+      "desc": "a tiny tool to bump nimble versions",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "bump.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "https://github.com/disruptek/cutelog",
+          "str": ">= 2.0.0 & < 3.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "2.0.0"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "3.0.0"
+            }
+          }
+        },
+        {
+          "name": "https://github.com/disruptek/cligen",
+          "str": ">= 2.0.2 & < 3.0.0",
+          "ver": {
+            "kind": "verIntersect",
+            "verILeft": {
+              "kind": "verEqLater",
+              "ver": "2.0.2"
+            },
+            "verIRight": {
+              "kind": "verEarlier",
+              "ver": "3.0.0"
+            }
+          }
+        }
+      ],
+      "bin": [
+        "bump"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/1.8.33",
+      "rev": "a8ed30229ecdd8f397dc0f949489ca4d9c993324"
+    },
     "refs/tags/1.8.4": {
       "name": "bump",
       "version": "1.8.4",
@@ -3223,6 +3280,7 @@
       "1008030": "refs/tags/1.8.30",
       "1008031": "refs/tags/1.8.31",
       "1008032": "refs/tags/1.8.32",
+      "1008033": "refs/tags/1.8.33",
       "1008004": "refs/tags/1.8.4",
       "1008005": "refs/tags/1.8.5",
       "1008006": "refs/tags/1.8.6",

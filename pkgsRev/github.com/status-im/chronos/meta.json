@@ -76,7 +76,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "1b69b5e8081e6afb748b401f4e28db6056a53c9a"
+      "rev": "f7835a192b45c37e97614d865141f21eea8c156e"
     },
     "refs/heads/accept-temp": {
       "name": "chronos",
@@ -823,7 +823,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/connectlocaladdress",
-      "rev": "995e8dff6ae489212b06baf0a97063f1edc1e6ab"
+      "rev": "0240dd8b8a7fc54676b8d494a9126b5ffbbb4adf"
     },
     "refs/heads/datagramrace": {
       "name": "chronos",
@@ -1459,8 +1459,8 @@
       "name": "chronos",
       "version": "3.0.11",
       "author": "Status Research & Development GmbH",
-      "desc": "Chronos",
-      "license": "Apache License 2.0 or MIT",
+      "desc": "Networking framework with async/await support",
+      "license": "MIT or Apache License 2.0",
       "skipDirs": [
         "tests"
       ],
@@ -1474,9 +1474,9 @@
       "requires": [
         {
           "name": "nim",
-          "str": "> 1.2.0",
+          "str": ">= 1.2.0",
           "ver": {
-            "kind": "verLater",
+            "kind": "verEqLater",
             "ver": "1.2.0"
           }
         },
@@ -1514,7 +1514,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/http-client-idle-connections",
-      "rev": "9dfb66e7fbe0f1a981b155fa4226af23a356b11a"
+      "rev": "605a8a868c443e6de15bb277443389569e9760e7"
     },
     "refs/heads/implicit-return": {
       "name": "chronos",
@@ -1616,67 +1616,6 @@
       "backend": "c",
       "ref": "refs/heads/interval",
       "rev": "f1e6158fe89dfd9c3b10005b32ca6f7e6004cd09"
-    },
-    "refs/heads/ipnet-fix": {
-      "name": "chronos",
-      "version": "3.0.11",
-      "author": "Status Research & Development GmbH",
-      "desc": "Networking framework with async/await support",
-      "license": "MIT or Apache License 2.0",
-      "skipDirs": [
-        "tests"
-      ],
-      "skipFiles": [],
-      "skipExt": [],
-      "installDirs": [],
-      "installFiles": [
-        "chronos.nim"
-      ],
-      "installExt": [],
-      "requires": [
-        {
-          "name": "nim",
-          "str": ">= 1.2.0",
-          "ver": {
-            "kind": "verEqLater",
-            "ver": "1.2.0"
-          }
-        },
-        {
-          "name": "stew",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "bearssl",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "httputils",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        },
-        {
-          "name": "unittest2",
-          "str": "any version",
-          "ver": {
-            "kind": "verAny"
-          }
-        }
-      ],
-      "bin": [],
-      "binDir": "",
-      "srcDir": "",
-      "backend": "c",
-      "ref": "refs/heads/ipnet-fix",
-      "rev": "f42d98b091fd2889fcb5252b7cd14daa12b0334e"
     },
     "refs/heads/is-public-addr": {
       "name": "chronos",
@@ -1859,7 +1798,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "1b69b5e8081e6afb748b401f4e28db6056a53c9a"
+      "rev": "f7835a192b45c37e97614d865141f21eea8c156e"
     },
     "refs/heads/new-connection-leak": {
       "name": "chronos",
@@ -2739,7 +2678,7 @@
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/selectors-refactor",
-      "rev": "8160d5e791606e002559ce318fe2b720a4ba8bd6"
+      "rev": "1b642493267c18dd5a8f909ebeb19cfac4ce06d4"
     },
     "refs/heads/semaphore": {
       "name": "chronos",

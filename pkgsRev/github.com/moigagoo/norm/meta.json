@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "norm",
-      "version": "2.6.2",
+      "version": "2.7.0",
       "author": "Constantine Molchanov",
       "desc": "Nim ORM for SQLite and PostgreSQL.",
       "license": "MIT",
@@ -36,11 +36,29 @@
           }
         },
         {
-          "name": "ndb",
-          "str": ">= 0.19.9",
+          "name": "lowdb",
+          "str": ">= 0.1.1",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.19.9"
+            "ver": "0.1.1"
+          }
+        }
+      ],
+      "setupbookRequires": [
+        {
+          "name": "nimib",
+          "str": ">= 0.3.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.8"
+          }
+        },
+        {
+          "name": "nimibook",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
           }
         }
       ],
@@ -49,11 +67,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "4479240e6a3347fa8990839b7240d346c4b686a6"
+      "rev": "48d2393463ee9d25d5e133659c7dfe392b6be88e"
     },
     "refs/heads/develop": {
       "name": "norm",
-      "version": "2.6.2",
+      "version": "2.7.0",
       "author": "Constantine Molchanov",
       "desc": "Nim ORM for SQLite and PostgreSQL.",
       "license": "MIT",
@@ -76,11 +94,29 @@
           }
         },
         {
-          "name": "ndb",
-          "str": ">= 0.19.9",
+          "name": "lowdb",
+          "str": ">= 0.1.1",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.19.9"
+            "ver": "0.1.1"
+          }
+        }
+      ],
+      "setupbookRequires": [
+        {
+          "name": "nimib",
+          "str": ">= 0.3.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.8"
+          }
+        },
+        {
+          "name": "nimibook",
+          "str": ">= 0.3.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.1"
           }
         }
       ],
@@ -89,7 +125,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/develop",
-      "rev": "4479240e6a3347fa8990839b7240d346c4b686a6"
+      "rev": "48d2393463ee9d25d5e133659c7dfe392b6be88e"
     },
     "refs/heads/feature/json": {
       "name": "norm",
@@ -173,7 +209,7 @@
     },
     "refs/heads/master": {
       "name": "norm",
-      "version": "2.6.2",
+      "version": "2.7.0",
       "author": "Constantine Molchanov",
       "desc": "Nim ORM for SQLite and PostgreSQL.",
       "license": "MIT",
@@ -196,11 +232,11 @@
           }
         },
         {
-          "name": "ndb",
-          "str": ">= 0.19.9",
+          "name": "lowdb",
+          "str": ">= 0.1.1",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.19.9"
+            "ver": "0.1.1"
           }
         }
       ],
@@ -209,7 +245,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "1bdebdfa4ea64600fd3940d9fdfa0ac697c42393"
+      "rev": "5803340f1910edff343d266d504fc5b48226fb55"
     },
     "refs/tags/1.0.0": {
       "name": "norm",
@@ -2164,6 +2200,46 @@
       "backend": "c",
       "ref": "refs/tags/2.6.2",
       "rev": "1552b2ec05eb99fa50f733d013bd08f2bc483e0f"
+    },
+    "refs/tags/2.7.0": {
+      "name": "norm",
+      "version": "2.7.0",
+      "author": "Constantine Molchanov",
+      "desc": "Nim ORM for SQLite and PostgreSQL.",
+      "license": "MIT",
+      "skipDirs": [
+        "tests",
+        "htmldocs"
+      ],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "lowdb",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2.7.0",
+      "rev": "386849aad47ad1fd69419a1553b6b8fc7bf60c55"
     }
   },
   "cudf": {
@@ -2219,7 +2295,8 @@
       "2005002": "refs/tags/2.5.2",
       "2006000": "refs/tags/2.6.0",
       "2006001": "refs/tags/2.6.1",
-      "2006002": "refs/tags/2.6.2"
+      "2006002": "refs/tags/2.6.2",
+      "2007000": "refs/tags/2.7.0"
     }
   }
 }

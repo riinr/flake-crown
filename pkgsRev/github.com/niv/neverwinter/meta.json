@@ -18,7 +18,7 @@
   "refs": {
     "HEAD": {
       "name": "neverwinter",
-      "version": "1.5.8",
+      "version": "1.5.9",
       "author": "Bernhard Stöckner <n@e-ix.net>",
       "desc": "Neverwinter Nights 1: Enhanced Edition data accessor library and utilities",
       "license": "MIT",
@@ -49,7 +49,7 @@
         }
       ],
       "bin": [
-        "nwn_resman_diff",
+        "nwn_resman_cat",
         "nwn_gff",
         "nwn_net",
         "nwn_key_pack",
@@ -64,16 +64,16 @@
         "nwn_twoda",
         "nwn_compressedbuf",
         "nwn_resman_pkg",
-        "nwn_key_shadows",
         "nwn_key_transparent",
+        "nwn_key_shadows",
         "nwn_resman_stats",
-        "nwn_resman_cat"
+        "nwn_resman_diff"
       ],
       "binDir": "bin/",
       "srcDir": "",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "7c902ddaae332f23c652da30701a254632a74cf6"
+      "rev": "35706536038afaf4266c6aa441a41035f4fa98e6"
     },
     "refs/heads/legacy": {
       "name": "neverwinter",
@@ -108,7 +108,7 @@
     },
     "refs/heads/master": {
       "name": "neverwinter",
-      "version": "1.5.8",
+      "version": "1.5.9",
       "author": "Bernhard Stöckner <n@e-ix.net>",
       "desc": "Neverwinter Nights 1: Enhanced Edition data accessor library and utilities",
       "license": "MIT",
@@ -139,7 +139,7 @@
         }
       ],
       "bin": [
-        "nwn_resman_diff",
+        "nwn_resman_cat",
         "nwn_gff",
         "nwn_net",
         "nwn_key_pack",
@@ -154,16 +154,16 @@
         "nwn_twoda",
         "nwn_compressedbuf",
         "nwn_resman_pkg",
-        "nwn_key_shadows",
         "nwn_key_transparent",
+        "nwn_key_shadows",
         "nwn_resman_stats",
-        "nwn_resman_cat"
+        "nwn_resman_diff"
       ],
       "binDir": "bin/",
       "srcDir": "",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "7c902ddaae332f23c652da30701a254632a74cf6"
+      "rev": "35706536038afaf4266c6aa441a41035f4fa98e6"
     },
     "refs/heads/normalize-floats": {
       "name": "neverwinter",
@@ -1840,6 +1840,65 @@
       "ref": "refs/tags/1.5.8",
       "rev": "7c902ddaae332f23c652da30701a254632a74cf6"
     },
+    "refs/tags/1.5.9": {
+      "name": "neverwinter",
+      "version": "1.5.9",
+      "author": "Bernhard Stöckner <n@e-ix.net>",
+      "desc": "Neverwinter Nights 1: Enhanced Edition data accessor library and utilities",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [
+        "neverwinter"
+      ],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "docopt",
+          "str": ">= 0.6.8",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.6.8"
+          }
+        }
+      ],
+      "bin": [
+        "nwn_resman_cat",
+        "nwn_gff",
+        "nwn_net",
+        "nwn_key_pack",
+        "nwn_asm",
+        "nwn_tlk",
+        "nwn_ssf",
+        "nwn_erf",
+        "nwn_erf_tlkify",
+        "nwn_resman_grep",
+        "nwn_resman_extract",
+        "nwn_key_unpack",
+        "nwn_twoda",
+        "nwn_compressedbuf",
+        "nwn_resman_pkg",
+        "nwn_key_transparent",
+        "nwn_key_shadows",
+        "nwn_resman_stats",
+        "nwn_resman_diff"
+      ],
+      "binDir": "bin/",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/1.5.9",
+      "rev": "35706536038afaf4266c6aa441a41035f4fa98e6"
+    },
     "refs/tags/v1.0.0": {
       "name": "neverwinter_utils",
       "version": "0.1.0",
@@ -1930,6 +1989,7 @@
       "1005006": "refs/tags/1.5.6",
       "1005007": "refs/tags/1.5.7",
       "1005008": "refs/tags/1.5.8",
+      "1005009": "refs/tags/1.5.9",
       "1000": "refs/tags/v1.1.0"
     }
   }

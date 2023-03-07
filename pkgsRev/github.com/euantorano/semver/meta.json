@@ -38,9 +38,9 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "c459e4bf945fc572e01a413636df836c03ab4bd9"
+      "rev": "11a49067315c2ba5b8bcbf6f620442004c419817"
     },
-    "refs/heads/master": {
+    "refs/heads/main": {
       "name": "semver",
       "version": "1.2.0",
       "author": "Euan T",
@@ -66,8 +66,8 @@
       "binDir": "",
       "srcDir": "src",
       "backend": "c",
-      "ref": "refs/heads/master",
-      "rev": "c459e4bf945fc572e01a413636df836c03ab4bd9"
+      "ref": "refs/heads/main",
+      "rev": "11a49067315c2ba5b8bcbf6f620442004c419817"
     },
     "refs/tags/v.1.0.2": {
       "name": "semver",
@@ -308,6 +308,35 @@
       "backend": "c",
       "ref": "refs/tags/v1.1.1",
       "rev": "3b7ace48704236329363290c62ce43f4d35f684d"
+    },
+    "refs/tags/v1.2.0": {
+      "name": "semver",
+      "version": "1.2.0",
+      "author": "Euan T",
+      "desc": "Semantic versioning parser for Nim",
+      "license": "BSD3",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.0.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.0.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v1.2.0",
+      "rev": "72d174a8ab62eb12af2e473c0a4d809158e87cd8"
     }
   },
   "cudf": {
@@ -317,7 +346,8 @@
       "1000003": "refs/tags/v1.0.3",
       "1000004": "refs/tags/v1.0.4",
       "1001000": "refs/tags/v1.1.0",
-      "1001001": "refs/tags/v1.1.1"
+      "1001001": "refs/tags/v1.1.1",
+      "1002000": "refs/tags/v1.2.0"
     }
   }
 }

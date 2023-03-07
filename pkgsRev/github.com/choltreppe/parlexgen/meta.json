@@ -15,7 +15,7 @@
   "refs": {
     "HEAD": {
       "name": "parlexgen",
-      "version": "0.1.3",
+      "version": "0.1.5",
       "author": "Joel Lienhard",
       "desc": "parser/lexer generator (LALR)",
       "license": "MIT",
@@ -43,10 +43,11 @@
           }
         },
         {
-          "name": "jsony",
-          "str": "any version",
+          "name": "unibs",
+          "str": ">= 0.1.1",
           "ver": {
-            "kind": "verAny"
+            "kind": "verEqLater",
+            "ver": "0.1.1"
           }
         }
       ],
@@ -55,7 +56,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "4f9973b0d44da62da83f194dedc5b3b297827941"
+      "rev": "f01134ff46af2cfcb96c71b38555d73bf6fe394f"
     },
     "refs/heads/devel": {
       "name": "parlexgen",
@@ -96,7 +97,7 @@
     },
     "refs/heads/main": {
       "name": "parlexgen",
-      "version": "0.1.3",
+      "version": "0.1.5",
       "author": "Joel Lienhard",
       "desc": "parser/lexer generator (LALR)",
       "license": "MIT",
@@ -124,10 +125,11 @@
           }
         },
         {
-          "name": "jsony",
-          "str": "any version",
+          "name": "unibs",
+          "str": ">= 0.1.1",
           "ver": {
-            "kind": "verAny"
+            "kind": "verEqLater",
+            "ver": "0.1.1"
           }
         }
       ],
@@ -136,7 +138,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/main",
-      "rev": "4f9973b0d44da62da83f194dedc5b3b297827941"
+      "rev": "f01134ff46af2cfcb96c71b38555d73bf6fe394f"
     },
     "refs/tags/0.1.0": {
       "name": "parlexgen",
@@ -292,6 +294,95 @@
       "backend": "c",
       "ref": "refs/tags/0.1.3",
       "rev": "4636edb6df87fda6f2a5b2045f716ebf21df9a19"
+    },
+    "refs/tags/0.1.4": {
+      "name": "parlexgen",
+      "version": "0.1.4",
+      "author": "Joel Lienhard",
+      "desc": "parser/lexer generator (LALR)",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.6"
+          }
+        },
+        {
+          "name": "fusion",
+          "str": ">= 1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1"
+          }
+        },
+        {
+          "name": "jsony",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.4",
+      "rev": "be586a88b5bcc39e267a490e4368a0b2cf2649fe"
+    },
+    "refs/tags/0.1.5": {
+      "name": "parlexgen",
+      "version": "0.1.5",
+      "author": "Joel Lienhard",
+      "desc": "parser/lexer generator (LALR)",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.6"
+          }
+        },
+        {
+          "name": "fusion",
+          "str": ">= 1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.1"
+          }
+        },
+        {
+          "name": "unibs",
+          "str": ">= 0.1.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.1"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/0.1.5",
+      "rev": "f01134ff46af2cfcb96c71b38555d73bf6fe394f"
     }
   },
   "cudf": {
@@ -300,7 +391,9 @@
       "1000": "refs/tags/0.1.0",
       "1001": "refs/tags/0.1.1",
       "1002": "refs/tags/0.1.2",
-      "1003": "refs/tags/0.1.3"
+      "1003": "refs/tags/0.1.3",
+      "1004": "refs/tags/0.1.4",
+      "1005": "refs/tags/0.1.5"
     }
   }
 }
