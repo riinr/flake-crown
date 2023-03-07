@@ -1,0 +1,997 @@
+{
+  "name": "nio",
+  "url": "https://github.com/c-blake/nio",
+  "method": "git",
+  "tags": [
+    "mmap",
+    "memory-mapping",
+    "binary data",
+    "data compiling",
+    "data debugging",
+    "serialize",
+    "serialization",
+    "deserialize",
+    "deserialization",
+    "marshal",
+    "unmarshal",
+    "marshalling",
+    "dataframe",
+    "file arrays",
+    "file format",
+    "file extension convention",
+    "hdf5",
+    "ndarray",
+    "multidimensional-array",
+    "string interning",
+    "open architecture",
+    "column-oriented",
+    "row-oriented",
+    "database",
+    "timeseries",
+    "headerless teafiles",
+    "DBMS",
+    "tables",
+    "SQL",
+    "CSV",
+    "TSV",
+    "extract-transform-load",
+    "ETL",
+    "magic number-keyed decompressor",
+    "command-line",
+    "data engineering",
+    "pipelines",
+    "library"
+  ],
+  "description": "Low Overhead Numerical/Native IO library & tools",
+  "license": "MIT",
+  "web": "https://github.com/c-blake/nio",
+  "refs": {
+    "HEAD": {
+      "name": "nio",
+      "version": "0.6.2",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.41",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.41"
+          }
+        }
+      ],
+      "bin": [
+        "utils/lp2term",
+        "utils/labs2sv",
+        "utils/c2tsv",
+        "utils/c2tsvs",
+        "utils/catz",
+        "utils/nmatch",
+        "utils/transpose",
+        "utils/addEmpty",
+        "nio",
+        "utils/lab2sv"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "HEAD",
+      "rev": "9352f2b25058f7f1ff5b5bf8c6f9a5faf30a5a80"
+    },
+    "refs/heads/main": {
+      "name": "nio",
+      "version": "0.6.2",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.41",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.41"
+          }
+        }
+      ],
+      "bin": [
+        "utils/lp2term",
+        "utils/labs2sv",
+        "utils/c2tsv",
+        "utils/c2tsvs",
+        "utils/catz",
+        "utils/nmatch",
+        "utils/transpose",
+        "utils/addEmpty",
+        "nio",
+        "utils/lab2sv"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/heads/main",
+      "rev": "9352f2b25058f7f1ff5b5bf8c6f9a5faf30a5a80"
+    },
+    "refs/tags/0.1.1": {
+      "name": "nio",
+      "version": "0.1.1",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.6",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.6"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.4"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.1.1",
+      "rev": "bfed3aecf2564b694360e4a9528b18a27b388038"
+    },
+    "refs/tags/0.1.2": {
+      "name": "nio",
+      "version": "0.1.2",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.5"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.1.2",
+      "rev": "84982c31dd2759d6f4d04ea2931ecc65a6ae60dc"
+    },
+    "refs/tags/0.1.3": {
+      "name": "nio",
+      "version": "0.1.3",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.5"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.1.3",
+      "rev": "218e5e8c22a0fae403d953927655f0128e0eab28"
+    },
+    "refs/tags/0.1.4": {
+      "name": "nio",
+      "version": "0.1.4",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.5"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.1.4",
+      "rev": "b341e14f671f9ae7dab624c465f0343fcad47206"
+    },
+    "refs/tags/0.1.5": {
+      "name": "nio",
+      "version": "0.1.5",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.5"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.1.5",
+      "rev": "9ce594b3d053378bbb92c0851824ce84e9ecae1f"
+    },
+    "refs/tags/0.1.6": {
+      "name": "nio",
+      "version": "0.1.6",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.5",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.5"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.1.6",
+      "rev": "77a3083f65d67a538a8d58c45efcb99f3e527a35"
+    },
+    "refs/tags/0.1.7": {
+      "name": "nio",
+      "version": "0.1.7",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.10"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.1.7",
+      "rev": "bc77e0a54d3c9e433e6f7ad821987a7dad3110e9"
+    },
+    "refs/tags/0.1.8": {
+      "name": "nio",
+      "version": "0.1.8",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.10"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.1.8",
+      "rev": "a205ac9a5042ae170574b9ce9eeac05e3bf274be"
+    },
+    "refs/tags/0.1.9": {
+      "name": "nio",
+      "version": "0.1.9",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.10"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.1.9",
+      "rev": "1588cc81d08d9e05ec53fe32118bb562ebf36049"
+    },
+    "refs/tags/0.2.0": {
+      "name": "nio",
+      "version": "0.1.9",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.10"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.2.0",
+      "rev": "3bb684631443e611379359112aab0f4dd2a2ca90"
+    },
+    "refs/tags/0.2.1": {
+      "name": "nio",
+      "version": "0.2.1",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.10"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.2.1",
+      "rev": "a23188bf22dc9feb95185b1f3c872d306c6712aa"
+    },
+    "refs/tags/0.3.0": {
+      "name": "nio",
+      "version": "0.3.0",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.10"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.3.0",
+      "rev": "fb146bb1506601ec99bd420af31d34752ec24363"
+    },
+    "refs/tags/0.3.1": {
+      "name": "nio",
+      "version": "0.3.1",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.10"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.3.1",
+      "rev": "90993128ef7bb54265c63b0191e3c5e91b0459aa"
+    },
+    "refs/tags/0.4.0": {
+      "name": "nio",
+      "version": "0.4.0",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.10"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.4.0",
+      "rev": "312dfd3296b974a55d88f522859eb024f3769a1e"
+    },
+    "refs/tags/0.4.1": {
+      "name": "nio",
+      "version": "0.4.1",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.10"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.4.1",
+      "rev": "bca76da329ea8daa16df30ba15d50aff2497afac"
+    },
+    "refs/tags/0.4.2": {
+      "name": "nio",
+      "version": "0.4.2",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.10"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.4.2",
+      "rev": "f444ab9b2ac10a2ca76855c26794daa6c76b441c"
+    },
+    "refs/tags/0.5.0": {
+      "name": "nio",
+      "version": "0.5.0",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.10"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.5.0",
+      "rev": "051f8dc2348184a31146aaa4b5b6e17706679dbf"
+    },
+    "refs/tags/0.6.0": {
+      "name": "nio",
+      "version": "0.6.0",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.10",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.10"
+          }
+        }
+      ],
+      "bin": [
+        "utils/lp2term",
+        "utils/labs2sv",
+        "utils/c2tsv",
+        "utils/c2tsvs",
+        "utils/catz",
+        "utils/nmatch",
+        "utils/transpose",
+        "utils/addEmpty",
+        "nio",
+        "utils/lab2sv"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.6.0",
+      "rev": "1ddd209fd977e089682bb64ac73b16ceec2d4eb6"
+    },
+    "refs/tags/0.6.1": {
+      "name": "nio",
+      "version": "0.6.1",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.37",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.37"
+          }
+        }
+      ],
+      "bin": [
+        "utils/lp2term",
+        "utils/labs2sv",
+        "utils/c2tsv",
+        "utils/c2tsvs",
+        "utils/catz",
+        "utils/nmatch",
+        "utils/transpose",
+        "utils/addEmpty",
+        "nio",
+        "utils/lab2sv"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.6.1",
+      "rev": "119a77e5f8b2d0e684b4f4c1a6c5d2dd839b0bce"
+    },
+    "refs/tags/0.6.2": {
+      "name": "nio",
+      "version": "0.6.2",
+      "author": "Charles Blake",
+      "desc": "Low Overhead Numerical/Native IO library & tools",
+      "license": "MIT/ISC",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [
+        "nio.nim"
+      ],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.5.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.1"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.41",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.41"
+          }
+        }
+      ],
+      "bin": [
+        "utils/lp2term",
+        "utils/labs2sv",
+        "utils/c2tsv",
+        "utils/c2tsvs",
+        "utils/catz",
+        "utils/nmatch",
+        "utils/transpose",
+        "utils/addEmpty",
+        "nio",
+        "utils/lab2sv"
+      ],
+      "binDir": "",
+      "srcDir": "",
+      "backend": "c",
+      "ref": "refs/tags/0.6.2",
+      "rev": "9352f2b25058f7f1ff5b5bf8c6f9a5faf30a5a80"
+    }
+  },
+  "cudf": {
+    "name": "nio",
+    "version": {
+      "1001": "refs/tags/0.1.1",
+      "1002": "refs/tags/0.1.2",
+      "1003": "refs/tags/0.1.3",
+      "1004": "refs/tags/0.1.4",
+      "1005": "refs/tags/0.1.5",
+      "1006": "refs/tags/0.1.6",
+      "1007": "refs/tags/0.1.7",
+      "1008": "refs/tags/0.1.8",
+      "1009": "refs/tags/0.2.0",
+      "2001": "refs/tags/0.2.1",
+      "3000": "refs/tags/0.3.0",
+      "3001": "refs/tags/0.3.1",
+      "4000": "refs/tags/0.4.0",
+      "4001": "refs/tags/0.4.1",
+      "4002": "refs/tags/0.4.2",
+      "5000": "refs/tags/0.5.0",
+      "6000": "refs/tags/0.6.0",
+      "6001": "refs/tags/0.6.1",
+      "6002": "refs/tags/0.6.2"
+    }
+  }
+}
