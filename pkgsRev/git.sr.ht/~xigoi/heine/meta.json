@@ -13,7 +13,7 @@
   "refs": {
     "HEAD": {
       "name": "heine",
-      "version": "2023.302.0",
+      "version": "2023.308.1",
       "author": "Adam Blažek",
       "desc": "A compact notation for math that transpiles to LaTeX",
       "license": "GPL-3.0-or-later",
@@ -58,11 +58,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "b79d59ab894aa21efe40db0cf26d400d1acfcdc6"
+      "rev": "55c182df7605318b684a532af51c3ddf2ad29e25"
     },
     "refs/heads/master": {
       "name": "heine",
-      "version": "2023.302.0",
+      "version": "2023.308.1",
       "author": "Adam Blažek",
       "desc": "A compact notation for math that transpiles to LaTeX",
       "license": "GPL-3.0-or-later",
@@ -107,7 +107,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "b79d59ab894aa21efe40db0cf26d400d1acfcdc6"
+      "rev": "55c182df7605318b684a532af51c3ddf2ad29e25"
     },
     "refs/tags/2023.2.20": {
       "name": "heine",
@@ -745,6 +745,104 @@
       "backend": "c",
       "ref": "refs/tags/2023.302.0",
       "rev": "e81439c2539824e0de8ffa04d3d56937ea2940ab"
+    },
+    "refs/tags/2023.308.0": {
+      "name": "heine",
+      "version": "2023.308.0",
+      "author": "Adam Blažek",
+      "desc": "A compact notation for math that transpiles to LaTeX",
+      "license": "GPL-3.0-or-later",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.21",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.21"
+          }
+        },
+        {
+          "name": "honeycomb",
+          "str": ">= 0.1.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.2"
+          }
+        }
+      ],
+      "bin": [
+        "heine"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2023.308.0",
+      "rev": "1c65dcb2f2449fe0a5329561c2fb19caf5cb11fd"
+    },
+    "refs/tags/2023.308.1": {
+      "name": "heine",
+      "version": "2023.308.1",
+      "author": "Adam Blažek",
+      "desc": "A compact notation for math that transpiles to LaTeX",
+      "license": "GPL-3.0-or-later",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [
+        "nim"
+      ],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.4"
+          }
+        },
+        {
+          "name": "cligen",
+          "str": ">= 1.5.21",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.5.21"
+          }
+        },
+        {
+          "name": "honeycomb",
+          "str": ">= 0.1.2",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.2"
+          }
+        }
+      ],
+      "bin": [
+        "heine"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/2023.308.1",
+      "rev": "5da0b1f40b0bf5860c2234dff6fa1e8fe5319baa"
     }
   },
   "cudf": {
@@ -762,7 +860,9 @@
       "23226000": "refs/tags/2023.226.0",
       "23301000": "refs/tags/2023.301.0",
       "23301001": "refs/tags/2023.301.1",
-      "23302000": "refs/tags/2023.302.0"
+      "23302000": "refs/tags/2023.302.0",
+      "23308000": "refs/tags/2023.308.0",
+      "23308001": "refs/tags/2023.308.1"
     }
   }
 }

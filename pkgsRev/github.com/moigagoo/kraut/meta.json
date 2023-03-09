@@ -15,7 +15,7 @@
   "refs": {
     "HEAD": {
       "name": "kraut",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "Constantine Molchanov",
       "desc": "Router for Karax frontend framework.",
       "license": "MIT",
@@ -48,11 +48,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "HEAD",
-      "rev": "9a12a8ea44e4caf75c4e5fba02c889c5a208d641"
+      "rev": "12c911f9cf6659f3c36200f65b6c7d535e454d98"
     },
     "refs/heads/develop": {
       "name": "kraut",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "Constantine Molchanov",
       "desc": "Router for Karax frontend framework.",
       "license": "MIT",
@@ -85,11 +85,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/develop",
-      "rev": "9a12a8ea44e4caf75c4e5fba02c889c5a208d641"
+      "rev": "12c911f9cf6659f3c36200f65b6c7d535e454d98"
     },
     "refs/heads/master": {
       "name": "kraut",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "Constantine Molchanov",
       "desc": "Router for Karax frontend framework.",
       "license": "MIT",
@@ -122,7 +122,7 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/heads/master",
-      "rev": "6dc338626ae637ab0e71e60e13ded5ab333d5414"
+      "rev": "28a62a1b8257663c12f034e57f8833f4c728595f"
     },
     "refs/tags/1.0.0": {
       "name": "kraut",
@@ -160,12 +160,50 @@
       "backend": "c",
       "ref": "refs/tags/1.0.0",
       "rev": "faf52550798b7f594d760d5e44b71aaac7276b0b"
+    },
+    "refs/tags/1.0.1": {
+      "name": "kraut",
+      "version": "1.0.1",
+      "author": "Constantine Molchanov",
+      "desc": "Router for Karax frontend framework.",
+      "license": "MIT",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.9.1",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.9.1"
+          }
+        },
+        {
+          "name": "karax",
+          "str": ">= 1.2.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.2.3"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/1.0.1",
+      "rev": "9f1129a2067c8d72b8ff2cdda3e18cf42a982ae5"
     }
   },
   "cudf": {
     "name": "kraut",
     "version": {
-      "1000000": "refs/tags/1.0.0"
+      "1000000": "refs/tags/1.0.0",
+      "1000001": "refs/tags/1.0.1"
     }
   }
 }

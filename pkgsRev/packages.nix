@@ -70,6 +70,7 @@
   "asyncdocker"                           = "/github.com/tulayang/asyncdocker/meta.json";
   "asyncevents"                           = "/github.com/tulayang/asyncevents/meta.json";
   "asyncftpclient"                        = "/github.com/nim-lang/asyncftpclient/meta.json";
+  "asynciters"                            = "/github.com/SirNickolas/asynciters/meta.json";
   "asyncmysql"                            = "/github.com/tulayang/asyncmysql/meta.json";
   "asyncpg"                               = "/github.com/cheatfate/asyncpg/meta.json";
   "asyncpythonfile"                       = "/github.com/fallingduck/asyncpythonfile/meta.json";
@@ -421,6 +422,7 @@
   "entgrep"                               = "/github.com/srozb/entgrep/meta.json";
   "entoody"                               = "/bitbucket.org/fowlmouth/entoody/meta.json";
   "envconfig"                             = "/github.com/jiro4989/envconfig/meta.json";
+  "epub2gpub"                             = "/gitlab.com/mars2klb/epub2gpub/meta.json";
   "epub"                                  = "/github.com/achesak/epub/meta.json";
   "eris"                                  = "/codeberg.org/eris/eris/meta.json";
   "espeak"                                = "/github.com/juancarlospaco/espeak/meta.json";
@@ -1649,6 +1651,7 @@
   "samson"                                = "/github.com/GULPF/samson/meta.json";
   "sas"                                   = "/github.com/xcodz-dot/sas/meta.json";
   "sass"                                  = "/github.com/dom96/sass/meta.json";
+  "sauer"                                 = "/github.com/moigagoo/sauer/meta.json";
   "saya"                                  = "/github.com/Ethosa/saya/meta.json";
   "sayhissatsuwaza"                       = "/github.com/jiro4989/sayhissatsuwaza/meta.json";
   "sbttl"                                 = "/github.com/hamidb80/sbttl/meta.json";
@@ -2078,6 +2081,7 @@
   "whip"                                  = "/github.com/mattaylor/whip/meta.json";
   "whois"                                 = "/git.ozzuu.com/thisago/whois/meta.json";
   "wiki2text"                             = "/github.com/rspeer/wiki2text/meta.json";
+  "wilayahindonesia"                      = "/github.com/nekoding/wilayahindonesia/meta.json";
   "windy"                                 = "/github.com/treeform/windy/meta.json";
   "wings"                                 = "/github.com/binhonglee/wings/meta.json";
   "winim"                                 = "/github.com/khchen/winim/meta.json";

@@ -11,7 +11,7 @@
   "refs": {
     "HEAD": {
       "name": "eris",
-      "version": "20230212",
+      "version": "20230307",
       "author": "Endo Renberg",
       "desc": "Encoding for Robust Immutable Storage",
       "license": "Unlicense",
@@ -96,7 +96,7 @@
       "srcDir": "src",
       "backend": "cpp",
       "ref": "HEAD",
-      "rev": "16c5fa62995740be11e5469a5af35487103a9504"
+      "rev": "dc93b85adc536fab5afcded923a77bb55deddb00"
     },
     "refs/heads/base32check1": {
       "name": "eris",
@@ -631,7 +631,7 @@
     },
     "refs/heads/trunk": {
       "name": "eris",
-      "version": "20230212",
+      "version": "20230307",
       "author": "Endo Renberg",
       "desc": "Encoding for Robust Immutable Storage",
       "license": "Unlicense",
@@ -716,7 +716,7 @@
       "srcDir": "src",
       "backend": "cpp",
       "ref": "refs/heads/trunk",
-      "rev": "16c5fa62995740be11e5469a5af35487103a9504"
+      "rev": "dc93b85adc536fab5afcded923a77bb55deddb00"
     },
     "refs/remotes/blackbox/trunk": {
       "rev": "911cb393781b4ccf4ef06f3566978896e3390630",
@@ -2695,6 +2695,95 @@
       "ref": "refs/tags/20230212",
       "rev": "360f3426d9d3bbf9d9f29a2bac2565228854ff3b"
     },
+    "refs/tags/20230307": {
+      "name": "eris",
+      "version": "20230307",
+      "author": "Endo Renberg",
+      "desc": "Encoding for Robust Immutable Storage",
+      "license": "Unlicense",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [
+        "nim"
+      ],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.4.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.4.0"
+          }
+        },
+        {
+          "name": "base32",
+          "str": ">= 0.1.3",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.1.3"
+          }
+        },
+        {
+          "name": "https://codeberg.org/eris/nim-coap.git",
+          "str": ">= 20220831",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220831"
+          }
+        },
+        {
+          "name": "cbor",
+          "str": "any version",
+          "ver": {
+            "kind": "verAny"
+          }
+        },
+        {
+          "name": "coap",
+          "str": ">= 20220924",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220924"
+          }
+        },
+        {
+          "name": "freedesktop_org",
+          "str": ">= 20230201",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20230201"
+          }
+        },
+        {
+          "name": "syndicate",
+          "str": ">= 20220904",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220904"
+          }
+        },
+        {
+          "name": "tkrzw",
+          "str": ">= 20220910",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "20220910"
+          }
+        }
+      ],
+      "bin": [
+        "eris/helpers/rclerislink",
+        "eris/eriscmd"
+      ],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "cpp",
+      "ref": "refs/tags/20230307",
+      "rev": "dc93b85adc536fab5afcded923a77bb55deddb00"
+    },
     "refs/tags/nim-eris-0.4.0": {
       "name": "eris",
       "version": "0.4.0",
@@ -2836,7 +2925,8 @@
       "126000000": "refs/tags/20230126",
       "131000000": "refs/tags/20230131",
       "201000000": "refs/tags/20230201",
-      "212000000": "refs/tags/20230212"
+      "212000000": "refs/tags/20230212",
+      "307000000": "refs/tags/20230307"
     }
   }
 }

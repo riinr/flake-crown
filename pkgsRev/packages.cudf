@@ -69,7 +69,7 @@ depends:  useragent >= 1, util >= 1
 
 
 package:  versicles
-version:  7001
+version:  7002
 depends:  cligen >= 1, util >= 1, bibletools >= 1
 
 
@@ -217,7 +217,7 @@ depends:  cligen >= 1, util >= 1
 
 
 package:  util
-version:  1012000
+version:  1014001
 
 
 package:  numtoword
@@ -6155,6 +6155,16 @@ package:  letutils
 version:  1001001
 
 
+package:  asynciters
+version:  1000000
+depends:  letutils >= 1001001, letutils < 2000000
+
+
+package:  asynciters
+version:  1001000
+depends:  letutils >= 1001001, letutils < 2000000
+
+
 package:  nimbleimgui
 version:  1000000
 depends:  nimgl >= 1
@@ -10475,6 +10485,10 @@ version:  1
 depends:  opencl >= 1
 
 
+package:  wilayahindonesia
+version:  1000000
+
+
 package:  ulid
 version:  2000
 depends:  random = 5003
@@ -10517,8 +10531,18 @@ package:  conio
 version:  1000
 
 
+package:  sauer
+version:  1000000
+depends:  climate >= 1000001
+
+
 package:  kraut
 version:  1000000
+depends:  karax >= 1002003
+
+
+package:  kraut
+version:  1000001
 depends:  karax >= 1002003
 
 
@@ -15350,7 +15374,7 @@ version:  1001
 
 
 package:  unibs
-version:  1001
+version:  1004
 
 
 package:  parlexgen
@@ -30417,6 +30441,10 @@ package:  classes
 version:  2009
 
 
+package:  classes
+version:  3016
+
+
 package:  simpledb
 version:  1000
 depends:  classes >= 2013
@@ -34518,7 +34546,7 @@ version:  1000000
 
 
 package:  gtkgenui
-version:  2000
+version:  2001
 depends:  gtk2 >= 1000000
 
 
@@ -41898,6 +41926,16 @@ version:  23302000
 depends:  cligen >= 1005021, honeycomb >= 1002
 
 
+package:  heine
+version:  23308000
+depends:  cligen >= 1005021, honeycomb >= 1002
+
+
+package:  heine
+version:  23308001
+depends:  cligen >= 1005021, honeycomb >= 1002
+
+
 package:  pager
 version:  1000
 
@@ -42766,6 +42804,11 @@ package:  remizstd
 version:  1001
 
 
+package:  epub2gpub
+version:  2000
+depends:  zippy >= 10005, commandant >= 15000
+
+
 package:  nim0
 version:  1000000
 
@@ -43109,6 +43152,11 @@ depends:  base32 >= 1003, codeberg-org-eris-nim-coap-git >= 831000000, cbor >= 1
 
 package:  eris
 version:  212000000
+depends:  base32 >= 1003, codeberg-org-eris-nim-coap-git >= 831000000, cbor >= 1, coap >= 924000000, freedesktoporg >= 201000000, syndicate >= 904000000, tkrzw >= 910000000
+
+
+package:  eris
+version:  307000000
 depends:  base32 >= 1003, codeberg-org-eris-nim-coap-git >= 831000000, cbor >= 1, coap >= 924000000, freedesktoporg >= 201000000, syndicate >= 904000000, tkrzw >= 910000000
 
 
